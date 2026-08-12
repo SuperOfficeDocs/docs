@@ -1,38 +1,37 @@
 ---
-uid: table-ProjType
 title: ProjType table
 description: ProjType list table. List of valid Project types.
 generated: true
-keywords: ['database table ProjType']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Projtype from "./includes/projtype.md";
+import Projtype from "./includes/projtype.mdx";
 
-# ProjType Table (85)
+## ProjType Table (85)
 
 ProjType MDO list item table.
 ProjType list table. List of valid Project types.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|ProjType\_id|Primary key|PK| |
-|name|The list item|String(239)| |
-|rank|Rank order|UShort|&#x25CF;|
-|tooltip|Tooltip or other description|String(254)|&#x25CF;|
-|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|projectDuration|Expected duration of project, in given units|Int|&#x25CF;|
-|durationUnit|Units for the duration|Enum [DurationUnit](./enums/durationunit)|&#x25CF;|
-|hasGuide|Does this project type have a guide attached|Bool|&#x25CF;|
-|isAutoAdvance|Does the project status advance automatically, when the last guided activity in a status is completed?|Bool|&#x25CF;|
+|ProjType\_id|Primary key|PK|No|
+|name|The list item|String(239)|No|
+|rank|Rank order|UShort|Yes|
+|tooltip|Tooltip or other description|String(254)|Yes|
+|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|projectDuration|Expected duration of project, in given units|Int|Yes|
+|durationUnit|Units for the duration|Enum [DurationUnit](./enums/durationunit.mdx)|Yes|
+|hasGuide|Does this project type have a guide attached|Bool|Yes|
+|isAutoAdvance|Does the project status advance automatically, when the last guided activity in a status is completed?|Bool|Yes|
+
 
 ![ProjType table relationship diagram](/media/loc/en/database/tables/ProjType.png)
 
@@ -54,6 +53,7 @@ ProjType list table. List of valid Project types.
 |[ProjTypeGroupLink](./projtypegrouplink)  |User group link table for ProjType, for MDO item hiding |
 |[ProjTypeHeadingLink](./projtypeheadinglink)  |Heading link table for ProjType, for MDO headers |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -63,3 +63,4 @@ ProjType list table. List of valid Project types.
 ## Security Flags
 
 * No access control via user's Role.
+

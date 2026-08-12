@@ -1,28 +1,27 @@
 ---
-uid: table-ticket_attachment
 title: ticket_attachment table
 description: This table connects an attachment to a message. It references the entry in the attachment table, and the message.
 generated: true
-keywords: ['database table ticket_attachment']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import TicketAttachment from "./includes/ticket-attachment.md";
+import TicketAttachment from "./includes/ticket-attachment.mdx";
 
-# ticket\_attachment Table (256)
+## ticket\_attachment Table (256)
 
 This table connects an attachment to a message. It references the entry in the attachment table, and the message.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|attachment\_id|The attachment.id this reference is connected to.|FK [attachment](./attachment)|&#x25CF;|
-|message\_id|The message.id this reference is connected to.|FK [ej_message](./ej-message)| |
-|content\_id|The content_id of this attachment, used for inline images|String(255)|&#x25CF;|
-|inline\_image|True if this attachment is inlined in the html_body.|Bool| |
+|id|The primary key (auto-incremented)|PK|No|
+|attachment\_id|The attachment.id this reference is connected to.|FK [attachment](./attachment.mdx)|Yes|
+|message\_id|The message.id this reference is connected to.|FK [ej_message](./ej-message.mdx)|No|
+|content\_id|The content_id of this attachment, used for inline images|String(255)|Yes|
+|inline\_image|True if this attachment is inlined in the html_body.|Bool|No|
+
 
 ![ticket_attachment table relationship diagram](/media/loc/en/database/tables/ticket_attachment.png)
 
@@ -42,6 +41,7 @@ This table connects an attachment to a message. It references the entry in the a
 |[attachment](./attachment)  |This table contains metadata for attachments. The actual attachments are stored directly on disk, with filenames based on the the primary key for this table. |
 |[ej\_message](./ej-message)  |This table contains the messages listed under tickets. |
 
+
 ## Replication Flags
 
 * None
@@ -49,3 +49,4 @@ This table connects an attachment to a message. It references the entry in the a
 ## Security Flags
 
 * No access control via user's Role.
+

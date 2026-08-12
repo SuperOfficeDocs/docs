@@ -1,42 +1,41 @@
 ---
-uid: table-BatchTask
 title: BatchTask table
 description: Batch task request details, corresponding to the message body of a batch request message
 generated: true
-keywords: ['database table BatchTask']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Batchtask from "./includes/batchtask.md";
+import Batchtask from "./includes/batchtask.mdx";
 
-# BatchTask Table (243)
+## BatchTask Table (243)
 
 Batch task request details, corresponding to the message body of a batch request message
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|BatchTask\_id|Primary key|PK| |
-|BatchTaskDefinition\_id|Batch task definition, which is populated from code attributes|FK [BatchTaskDefinition](./batchtaskdefinition)|&#x25CF;|
-|description|Description of task (for monitoring and debugging)|String(254)| |
-|dbTag|Database tag that this task applies to, to ensure tasks are execute on the correct database only|String(39)| |
-|state|0=Unknown; 1=New; 2=Assigned; 3=Started; 4=Succeeded; 5=Failed|Int| |
-|detailsTable|Optional table containing further details that will not fit in the standard request/response fields|TableNumber|&#x25CF;|
-|detailsRecord|Optional record containing further details that will not fit in the standard request/response fields|RecordId|&#x25CF;|
-|request|The batch request, specifying what to do|String(254)|&#x25CF;|
-|response|The response from the batch task processor|String(254)|&#x25CF;|
-|startCount|Number of times this batch task has been started (0 for tasks that have never been executed)|Id|&#x25CF;|
-|lastStarted|When was this job last started|DateTime|&#x25CF;|
-|progressPercent|Task progress, in percent of estimated total|UShort|&#x25CF;|
-|progressDescription|Descriptive text for the current stage|String(254)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|&apos;heartbeat&apos; that is updated once a minute by the batch task process|UtcDateTime| |
-|updated\_associate\_id|&apos;heartbeat&apos; that is updated once a minute by the batch task process|FK [associate](./associate)| |
-|updatedCount|&apos;heartbeat&apos; that is updated once a minute by the batch task process|UShort| |
-|FileName|The filename related to the batchtask.|String(260)|&#x25CF;|
+|BatchTask\_id|Primary key|PK|No|
+|BatchTaskDefinition\_id|Batch task definition, which is populated from code attributes|FK [BatchTaskDefinition](./batchtaskdefinition.mdx)|Yes|
+|description|Description of task (for monitoring and debugging)|String(254)|No|
+|dbTag|Database tag that this task applies to, to ensure tasks are execute on the correct database only|String(39)|No|
+|state|0=Unknown; 1=New; 2=Assigned; 3=Started; 4=Succeeded; 5=Failed|Int|No|
+|detailsTable|Optional table containing further details that will not fit in the standard request/response fields|TableNumber|Yes|
+|detailsRecord|Optional record containing further details that will not fit in the standard request/response fields|RecordId|Yes|
+|request|The batch request, specifying what to do|String(254)|Yes|
+|response|The response from the batch task processor|String(254)|Yes|
+|startCount|Number of times this batch task has been started (0 for tasks that have never been executed)|Id|Yes|
+|lastStarted|When was this job last started|DateTime|Yes|
+|progressPercent|Task progress, in percent of estimated total|UShort|Yes|
+|progressDescription|Descriptive text for the current stage|String(254)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|&apos;heartbeat&apos; that is updated once a minute by the batch task process|UtcDateTime|No|
+|updated\_associate\_id|&apos;heartbeat&apos; that is updated once a minute by the batch task process|FK [associate](./associate.mdx)|No|
+|updatedCount|&apos;heartbeat&apos; that is updated once a minute by the batch task process|UShort|No|
+|FileName|The filename related to the batchtask.|String(260)|Yes|
+
 
 ![BatchTask table relationship diagram](/media/loc/en/database/tables/BatchTask.png)
 
@@ -56,6 +55,7 @@ Batch task request details, corresponding to the message body of a batch request
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[BatchTaskDefinition](./batchtaskdefinition)  |Batch task definitiopns, populated from the SuperOffice.CRM.BatchProcessing.BatchTask attribute |
 
+
 ## Replication Flags
 
 * None
@@ -63,3 +63,4 @@ Batch task request details, corresponding to the message body of a batch request
 ## Security Flags
 
 * No access control via user's Role.
+

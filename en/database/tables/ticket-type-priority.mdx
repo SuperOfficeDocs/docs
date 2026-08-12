@@ -1,31 +1,30 @@
 ---
-uid: table-ticket_type_priority
 title: ticket_type_priority table
 description: Link table defining what Priorities are relevant to a particular Ticket type
 generated: true
-keywords: ['database table ticket_type_priority']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import TicketTypePriority from "./includes/ticket-type-priority.md";
+import TicketTypePriority from "./includes/ticket-type-priority.mdx";
 
-# ticket\_type\_priority Table (552)
+## ticket\_type\_priority Table (553)
 
 Link table defining what Priorities are relevant to a particular Ticket type
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|ticket\_type\_priority\_id|Primary key|PK| |
-|ticket\_type\_id|Ticket type |FK [ticket_type](./ticket-type)| |
-|ticket\_priority\_id|Ticket priority|FK [ticket_priority](./ticket-priority)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|ticket\_type\_priority\_id|Primary key|PK|No|
+|ticket\_type\_id|Ticket type |FK [ticket_type](./ticket-type.mdx)|No|
+|ticket\_priority\_id|Ticket priority|FK [ticket_priority](./ticket-priority.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![ticket_type_priority table relationship diagram](/media/loc/en/database/tables/ticket_type_priority.png)
 
@@ -44,6 +43,7 @@ Link table defining what Priorities are relevant to a particular Ticket type
 |[ticket\_priority](./ticket-priority)  |This table contains the ticket priorities. |
 |[ticket\_type](./ticket-type)  |A ticket (request) type |
 
+
 ## Replication Flags
 
 * None
@@ -51,3 +51,4 @@ Link table defining what Priorities are relevant to a particular Ticket type
 ## Security Flags
 
 * No access control via user's Role.
+

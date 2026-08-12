@@ -1,34 +1,33 @@
 ---
-uid: table-TZStdRule
 title: TZStdRule table
 description: Time zone rule for standard time
 generated: true
-keywords: ['database table TZStdRule']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Tzstdrule from "./includes/tzstdrule.md";
+import Tzstdrule from "./includes/tzstdrule.mdx";
 
-# TZStdRule Table (246)
+## TZStdRule Table (246)
 
 Time zone rule for standard time
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|TZStdRule\_id|Primary key|PK| |
-|TZLocationId|Location that this rule is valid for - one location has at least one rule; multiple rules are discerned by their validFrom dates|FK [TZLocation](./tzlocation)| |
-|validFrom|Date this rule is valid from|DateTime| |
-|bias|number of minutes bias relative to UTC time|Short| |
-|description|Description, for identifying the rule in SoAdmin|String(2047)|&#x25CF;|
-|isBuiltIn|Is this row part of SuperOffice priming data|Bool|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|TZStdRule\_id|Primary key|PK|No|
+|TZLocationId|Location that this rule is valid for - one location has at least one rule; multiple rules are discerned by their validFrom dates|FK [TZLocation](./tzlocation.mdx)|No|
+|validFrom|Date this rule is valid from|DateTime|No|
+|bias|number of minutes bias relative to UTC time|Short|No|
+|description|Description, for identifying the rule in SoAdmin|String(2047)|Yes|
+|isBuiltIn|Is this row part of SuperOffice priming data|Bool|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![TZStdRule table relationship diagram](/media/loc/en/database/tables/TZStdRule.png)
 
@@ -47,6 +46,7 @@ Time zone rule for standard time
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[TZLocation](./tzlocation)  |Time zone location |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -56,3 +56,4 @@ Time zone rule for standard time
 ## Security Flags
 
 * No access control via user's Role.
+

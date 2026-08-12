@@ -1,31 +1,30 @@
 ---
-uid: table-DocTmplHeadingLink
 title: DocTmplHeadingLink table
 description: Heading link table for DocTmpl, for MDO headers
 generated: true
-keywords: ['database table DocTmplHeadingLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Doctmplheadinglink from "./includes/doctmplheadinglink.md";
+import Doctmplheadinglink from "./includes/doctmplheadinglink.mdx";
 
-# DocTmplHeadingLink Table (132)
+## DocTmplHeadingLink Table (132)
 
 Heading link table for DocTmpl, for MDO headers
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|doctmplheadinglink\_id|Primary key|PK| |
-|doctmpl\_id|Link to DocTmpl list table|FK [DocTmpl](./doctmpl)| |
-|heading\_id|Link to Heading table|FK [Heading](./heading)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|doctmplheadinglink\_id|Primary key|PK|No|
+|doctmpl\_id|Link to DocTmpl list table|FK [DocTmpl](./doctmpl.mdx)|No|
+|heading\_id|Link to Heading table|FK [Heading](./heading.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![DocTmplHeadingLink table relationship diagram](/media/loc/en/database/tables/DocTmplHeadingLink.png)
 
@@ -46,6 +45,7 @@ Heading link table for DocTmpl, for MDO headers
 |[DocTmpl](./doctmpl)  |DocTmpl list table. Describes templates available for writing new documents. |
 |[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ Heading link table for DocTmpl, for MDO headers
 ## Security Flags
 
 * No access control via user's Role.
+

@@ -1,31 +1,30 @@
 ---
-uid: table-SubscriptionUnitHeadingLink
 title: SubscriptionUnitHeadingLink table
 description: Heading link table for SubscriptionUnit, for MDO item headings
 generated: true
-keywords: ['database table SubscriptionUnitHeadingLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Subscriptionunitheadinglink from "./includes/subscriptionunitheadinglink.md";
+import Subscriptionunitheadinglink from "./includes/subscriptionunitheadinglink.mdx";
 
-# SubscriptionUnitHeadingLink Table (444)
+## SubscriptionUnitHeadingLink Table (444)
 
 Heading link table for SubscriptionUnit, for MDO item headings
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|subscriptionunitheadinglink\_id|Primary key|PK| |
-|subscriptionunit\_id|Link to SubscriptionUnit list table|FK [SubscriptionUnit](./subscriptionunit)| |
-|heading\_id|Link to Heading table|FK [Heading](./heading)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|subscriptionunitheadinglink\_id|Primary key|PK|No|
+|subscriptionunit\_id|Link to SubscriptionUnit list table|FK [SubscriptionUnit](./subscriptionunit.mdx)|No|
+|heading\_id|Link to Heading table|FK [Heading](./heading.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![SubscriptionUnitHeadingLink table relationship diagram](/media/loc/en/database/tables/SubscriptionUnitHeadingLink.png)
 
@@ -46,6 +45,7 @@ Heading link table for SubscriptionUnit, for MDO item headings
 |[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
 |[SubscriptionUnit](./subscriptionunit)  |The list of Subscription units, in the internal product register (year/quarter/month etc., or perhaps amounts if volume-based subscription) |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ Heading link table for SubscriptionUnit, for MDO item headings
 ## Security Flags
 
 * No access control via user's Role.
+

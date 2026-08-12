@@ -1,30 +1,29 @@
 ---
-uid: table-attachment_location
 title: attachment_location table
 description: A location for storing attachments
 generated: true
-keywords: ['database table attachment_location']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import AttachmentLocation from "./includes/attachment-location.md";
+import AttachmentLocation from "./includes/attachment-location.mdx";
 
-# attachment\_location Table (478)
+## attachment\_location Table (478)
 
 A location for storing attachments
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|attachment\_location\_id|Primary key|PK| |
-|path|The path for this location|String(4000)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|attachment\_location\_id|Primary key|PK|No|
+|path|The path for this location|String(4000)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![attachment_location table relationship diagram](/media/loc/en/database/tables/attachment_location.png)
 
@@ -42,6 +41,7 @@ A location for storing attachments
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[attachment](./attachment)  |This table contains metadata for attachments. The actual attachments are stored directly on disk, with filenames based on the the primary key for this table. |
 
+
 ## Replication Flags
 
 * None
@@ -49,3 +49,4 @@ A location for storing attachments
 ## Security Flags
 
 * No access control via user's Role.
+

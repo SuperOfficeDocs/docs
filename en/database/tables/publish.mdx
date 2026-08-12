@@ -1,36 +1,35 @@
 ---
-uid: table-Publish
 title: Publish table
 description: Publishing system for external users
 generated: true
-keywords: ['database table Publish']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Publish from "./includes/publish.md";
+import Publish from "./includes/publish.mdx";
 
-# Publish Table (200)
+## Publish Table (200)
 
 Publishing system for external users
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|Publish\_id|Primary key|PK| |
-|tableNumber|Table number this record refers to|TableNumber| |
-|recordId|Record number that has been published|RecordId|&#x25CF;|
-|publishType|Type of publishing action, 0 = Unknown, 1 = to external persons|Enum [PublishType](./enums/publishtype)|&#x25CF;|
-|publishFrom|Publication valid from (inclusive)|DateTime|&#x25CF;|
-|publishTo|Publication valid to (inclusive)|DateTime|&#x25CF;|
-|eventDate|The date an event actually happens; you may want to have some special processing around that date|DateTime|&#x25CF;|
-|encryptedCheck|Encrypted data, to detect unwanted changes|String(254)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|Publish\_id|Primary key|PK|No|
+|tableNumber|Table number this record refers to|TableNumber|No|
+|recordId|Record number that has been published|RecordId|Yes|
+|publishType|Type of publishing action, 0 = Unknown, 1 = to external persons|Enum [PublishType](./enums/publishtype.mdx)|Yes|
+|publishFrom|Publication valid from (inclusive)|DateTime|Yes|
+|publishTo|Publication valid to (inclusive)|DateTime|Yes|
+|eventDate|The date an event actually happens; you may want to have some special processing around that date|DateTime|Yes|
+|encryptedCheck|Encrypted data, to detect unwanted changes|String(254)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![Publish table relationship diagram](/media/loc/en/database/tables/Publish.png)
 
@@ -49,6 +48,7 @@ Publishing system for external users
 |------|-------------|
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -58,3 +58,4 @@ Publishing system for external users
 ## Security Flags
 
 * No access control via user's Role.
+

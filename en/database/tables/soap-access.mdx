@@ -1,27 +1,26 @@
 ---
-uid: table-soap_access
 title: soap_access table
 description: Table that contains constraints on the access to the soap interface
 generated: true
-keywords: ['database table soap_access']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import SoapAccess from "./includes/soap-access.md";
+import SoapAccess from "./includes/soap-access.mdx";
 
-# soap\_access Table (362)
+## soap\_access Table (362)
 
 Table that contains constraints on the access to the soap interface
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|address\_from|IP address range from address|String(255)|&#x25CF;|
-|address\_to|IP address range to address|String(255)|&#x25CF;|
-|type|Type: customer, ticket, admin etc|Int|&#x25CF;|
+|id|Primary key|PK|No|
+|address\_from|IP address range from address|String(255)|Yes|
+|address\_to|IP address range to address|String(255)|Yes|
+|type|Type: customer, ticket, admin etc|Int|Yes|
+
 
 ![soap_access table relationship diagram](/media/loc/en/database/tables/soap_access.png)
 
@@ -39,3 +38,4 @@ Table that contains constraints on the access to the soap interface
 ## Security Flags
 
 * No access control via user's Role.
+

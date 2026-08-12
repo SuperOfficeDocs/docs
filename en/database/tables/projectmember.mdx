@@ -1,36 +1,35 @@
 ---
-uid: table-projectmember
 title: projectmember table
 description: Project members. Link-table between person and project
 generated: true
-keywords: ['database table projectmember']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Projectmember from "./includes/projectmember.md";
+import Projectmember from "./includes/projectmember.mdx";
 
-# projectmember Table (12)
+## projectmember Table (12)
 
 Project members. Link-table between person and project
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|projectmember\_id|Primary key|PK| |
-|project\_id|Parent project|FK [project](./project)|&#x25CF;|
-|contact\_id|Contact ID of person who is the project member (slight denormalization)|FK [contact](./contact)|&#x25CF;|
-|person\_id|Person ID of person who is the project member|FK [person](./person)|&#x25CF;|
-|rank|Rank in list|UShort|&#x25CF;|
-|mtype\_idx|Member type link|FK [PMembType](./pmembtype)|&#x25CF;|
-|text\_id|Optional comment|FK [text](./text)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|event\_participant\_status|Reserved field for Lyyti event participants.|Enum [ProjectMemberEventParticipantStatus](./enums/projectmembereventparticipantstatus)| |
+|projectmember\_id|Primary key|PK|No|
+|project\_id|Parent project|FK [project](./project.mdx)|Yes|
+|contact\_id|Contact ID of person who is the project member (slight denormalization)|FK [contact](./contact.mdx)|Yes|
+|person\_id|Person ID of person who is the project member|FK [person](./person.mdx)|Yes|
+|rank|Rank in list|UShort|Yes|
+|mtype\_idx|Member type link|FK [PMembType](./pmembtype.mdx)|Yes|
+|text\_id|Optional comment|FK [text](./text.mdx)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|event\_participant\_status|Reserved field for Lyyti event participants.|Enum [ProjectMemberEventParticipantStatus](./enums/projectmembereventparticipantstatus.mdx)|No|
+
 
 ![projectmember table relationship diagram](/media/loc/en/database/tables/projectmember.png)
 
@@ -56,6 +55,7 @@ Project members. Link-table between person and project
 |[project](./project)  |Projects |
 |[text](./text)  |Long text fields from all over the system |
 
+
 ## Replication Flags
 
 * Area Management controlled table. Contents replicated to satellites and traveller databases.
@@ -66,3 +66,4 @@ Project members. Link-table between person and project
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix on the table's parent.
+

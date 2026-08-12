@@ -1,37 +1,36 @@
 ---
-uid: table-BatchTaskDefinition
 title: BatchTaskDefinition table
 description: Batch task definitiopns, populated from the SuperOffice.CRM.BatchProcessing.BatchTask attribute
 generated: true
-keywords: ['database table BatchTaskDefinition']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Batchtaskdefinition from "./includes/batchtaskdefinition.md";
+import Batchtaskdefinition from "./includes/batchtaskdefinition.mdx";
 
-# BatchTaskDefinition Table (244)
+## BatchTaskDefinition Table (244)
 
 Batch task definitiopns, populated from the SuperOffice.CRM.BatchProcessing.BatchTask attribute
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|BatchTaskDefinition\_id|Primary key|PK| |
-|name|Name of task (for monitoring and debugging)|String(254)| |
-|description|Description of task (for monitoring and debugging)|String(254)| |
-|isMultiPass|Is this a multipass job (inner implementationis run repeatedly by the batch task framework)|Bool| |
-|startInterval|Minimum interval between successive starts; starts never overlap|Int| |
-|minimumSleepTime|Minimum sleep interval between the end of one run and start of the next one|Int| |
-|timeout|Maximum allowed execution time; jobs are killed if they exceed their timeout; 0=no timeout|Int| |
-|autoRestartCount|Number of times the whole batch task should be restarted; -1 means infinite, which is useful for things like Travel Gateway that should &apos;always&apos; be available|Int| |
-|assemblyVersion|Version of the assembly that contains the code this batch task definition was populated from|String(49)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|&apos;heartbeat&apos; that is updated once a minute by the batch task process|UtcDateTime| |
-|updated\_associate\_id|&apos;heartbeat&apos; that is updated once a minute by the batch task process|FK [associate](./associate)| |
-|updatedCount|heartbeat&apos; that is updated once a minute by the batch task process|UShort| |
+|BatchTaskDefinition\_id|Primary key|PK|No|
+|name|Name of task (for monitoring and debugging)|String(254)|No|
+|description|Description of task (for monitoring and debugging)|String(254)|No|
+|isMultiPass|Is this a multipass job (inner implementationis run repeatedly by the batch task framework)|Bool|No|
+|startInterval|Minimum interval between successive starts; starts never overlap|Int|No|
+|minimumSleepTime|Minimum sleep interval between the end of one run and start of the next one|Int|No|
+|timeout|Maximum allowed execution time; jobs are killed if they exceed their timeout; 0=no timeout|Int|No|
+|autoRestartCount|Number of times the whole batch task should be restarted; -1 means infinite, which is useful for things like Travel Gateway that should &apos;always&apos; be available|Int|No|
+|assemblyVersion|Version of the assembly that contains the code this batch task definition was populated from|String(49)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|&apos;heartbeat&apos; that is updated once a minute by the batch task process|UtcDateTime|No|
+|updated\_associate\_id|&apos;heartbeat&apos; that is updated once a minute by the batch task process|FK [associate](./associate.mdx)|No|
+|updatedCount|heartbeat&apos; that is updated once a minute by the batch task process|UShort|No|
+
 
 ![BatchTaskDefinition table relationship diagram](/media/loc/en/database/tables/BatchTaskDefinition.png)
 
@@ -51,6 +50,7 @@ Batch task definitiopns, populated from the SuperOffice.CRM.BatchProcessing.Batc
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[BatchTask](./batchtask)  |Batch task request details, corresponding to the message body of a batch request message |
 
+
 ## Replication Flags
 
 * None
@@ -58,3 +58,4 @@ Batch task definitiopns, populated from the SuperOffice.CRM.BatchProcessing.Batc
 ## Security Flags
 
 * No access control via user's Role.
+

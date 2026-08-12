@@ -1,31 +1,30 @@
 ---
-uid: table-StakeholderRoleGroupLink
 title: StakeholderRoleGroupLink table
 description: User group link table for StakeholderRole, for MDO item hiding
 generated: true
-keywords: ['database table StakeholderRoleGroupLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Stakeholderrolegrouplink from "./includes/stakeholderrolegrouplink.md";
+import Stakeholderrolegrouplink from "./includes/stakeholderrolegrouplink.mdx";
 
-# StakeholderRoleGroupLink Table (123)
+## StakeholderRoleGroupLink Table (123)
 
 User group link table for StakeholderRole, for MDO item hiding
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|stakeholderrolegrouplink\_id|Primary key|PK| |
-|stakeholderrole\_id|Link to StakeholderRole list table|FK [StakeholderRole](./stakeholderrole)| |
-|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|stakeholderrolegrouplink\_id|Primary key|PK|No|
+|stakeholderrole\_id|Link to StakeholderRole list table|FK [StakeholderRole](./stakeholderrole.mdx)|No|
+|group\_id|Link to Group table|FK [UserGroup](./usergroup.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![StakeholderRoleGroupLink table relationship diagram](/media/loc/en/database/tables/StakeholderRoleGroupLink.png)
 
@@ -46,6 +45,7 @@ User group link table for StakeholderRole, for MDO item hiding
 |[StakeholderRole](./stakeholderrole)  |Role a stakeholder has in a sale |
 |[UserGroup](./usergroup)  |Secondary user groups |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ User group link table for StakeholderRole, for MDO item hiding
 ## Security Flags
 
 * No access control via user's Role.
+

@@ -1,0 +1,57 @@
+---
+title: navigation_history table
+description: Per-associate navigation state; Current (persisted soprotocol) and Recent navigation entries, keyed by client and key
+generated: true
+content_type: reference
+envir: online
+---
+
+import NavigationHistory from "./includes/navigation-history.mdx";
+
+## navigation\_history Table (502)
+
+Per-associate navigation state; Current (persisted soprotocol) and Recent navigation entries, keyed by client and key
+
+## Fields
+
+| Name | Description | Type | Nullable |
+|------|-------------|------|:----:|
+|navigation\_history\_id|Primary key|PK|No|
+|associate\_id|The associate that owns this navigation entry|FK [associate](./associate.mdx)|No|
+|client|The client the entry belongs to, e.g. Crm or Admin|String(50)|No|
+|kind|Current (persisted navigation state) or Recent (recent-navigation entry)|Enum [NavigationKind](./enums/navigationkind.mdx)|No|
+|rank|Ordering for Recent entries (highest = most recent); 0 for Current|Int|No|
+|key|Navigation key; identifies the screen/panel for Current, or the entry for Recent|String(199)|No|
+|navigation\_value|The navigation value (soprotocol string)|String(4000)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
+
+![navigation_history table relationship diagram](/media/loc/en/database/tables/navigation_history.png)
+
+<NavigationHistory />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|associate\_id, client, kind, key |FK, String(50), Enum, String(199) |Unique |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* No access control via user's Role.
+

@@ -1,27 +1,26 @@
 ---
-uid: table-kb_http_link
 title: kb_http_link table
 description: This table contains URL&amp;apos;s associated with a single FAQ entry.
 generated: true
-keywords: ['database table kb_http_link']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import KbHttpLink from "./includes/kb-http-link.md";
+import KbHttpLink from "./includes/kb-http-link.mdx";
 
-# kb\_http\_link Table (285)
+## kb\_http\_link Table (285)
 
 This table contains URL&amp;apos;s associated with a single FAQ entry.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|entry\_id|The id of the kb entry this entry is connected to.|FK [kb_entry](./kb-entry)| |
-|name|The name for this link.|String(255)| |
-|http\_link|The URL for this link.|String(255)| |
+|id|The primary key (auto-incremented)|PK|No|
+|entry\_id|The id of the kb entry this entry is connected to.|FK [kb_entry](./kb-entry.mdx)|No|
+|name|The name for this link.|String(255)|No|
+|http\_link|The URL for this link.|String(255)|No|
+
 
 ![kb_http_link table relationship diagram](/media/loc/en/database/tables/kb_http_link.png)
 
@@ -39,6 +38,7 @@ This table contains URL&amp;apos;s associated with a single FAQ entry.
 |------|-------------|
 |[kb\_entry](./kb-entry)  |This table contains FAQ entries. |
 
+
 ## Replication Flags
 
 * None
@@ -46,3 +46,4 @@ This table contains URL&amp;apos;s associated with a single FAQ entry.
 ## Security Flags
 
 * No access control via user's Role.
+

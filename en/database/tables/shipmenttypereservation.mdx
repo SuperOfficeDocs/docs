@@ -1,31 +1,30 @@
 ---
-uid: table-ShipmentTypeReservation
 title: ShipmentTypeReservation table
 description: ShipmentTypes a person has reserved against. Note that the absense of a record here implies acceptance of a mailings of this type
 generated: true
-keywords: ['database table ShipmentTypeReservation']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Shipmenttypereservation from "./includes/shipmenttypereservation.md";
+import Shipmenttypereservation from "./includes/shipmenttypereservation.mdx";
 
-# ShipmentTypeReservation Table (512)
+## ShipmentTypeReservation Table (513)
 
 ShipmentTypes a person has reserved against. Note that the absense of a record here implies acceptance of a mailings of this type
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|ShipmentTypeReservation\_id|Primary key|PK| |
-|person\_id|Owning person|FK [person](./person)| |
-|ShipmentType\_id|Shipment type to reserve against|FK [ShipmentType](./shipmenttype)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|ShipmentTypeReservation\_id|Primary key|PK|No|
+|person\_id|Owning person|FK [person](./person.mdx)|No|
+|ShipmentType\_id|Shipment type to reserve against|FK [ShipmentType](./shipmenttype.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![ShipmentTypeReservation table relationship diagram](/media/loc/en/database/tables/ShipmentTypeReservation.png)
 
@@ -46,6 +45,7 @@ ShipmentTypes a person has reserved against. Note that the absense of a record h
 |[person](./person)  |Persons |
 |[ShipmentType](./shipmenttype)  |Shipment type list table. Classification of a mailing, allowing recipients to subscribe to lists |
 
+
 ## Replication Flags
 
 * Area Management controlled table. Contents replicated to satellites and traveller databases.
@@ -55,3 +55,4 @@ ShipmentTypes a person has reserved against. Note that the absense of a record h
 ## Security Flags
 
 * No access control via user's Role.
+

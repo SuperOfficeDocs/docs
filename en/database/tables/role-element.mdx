@@ -1,27 +1,26 @@
 ---
-uid: table-role_element
 title: role_element table
 description: Profiles associated with a role
 generated: true
-keywords: ['database table role_element']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import RoleElement from "./includes/role-element.md";
+import RoleElement from "./includes/role-element.mdx";
 
-# role\_element Table (326)
+## role\_element Table (326)
 
 Profiles associated with a role
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|role|The id of the group. Deprecated.|FK [ej_role](./ej-role)| |
-|element\_profile|The id of the element_profile.|FK [element_profile](./element-profile)| |
-|crm\_role|Link to Role|FK [Role](./role)|&#x25CF;|
+|id|The primary key (auto-incremented)|PK|No|
+|role|The id of the group. Deprecated.|FK [ej_role](./ej-role.mdx)|No|
+|element\_profile|The id of the element_profile.|FK [element_profile](./element-profile.mdx)|No|
+|crm\_role|Link to Role|FK [Role](./role.mdx)|Yes|
+
 
 ![role_element table relationship diagram](/media/loc/en/database/tables/role_element.png)
 
@@ -43,6 +42,7 @@ Profiles associated with a role
 |[element\_profile](./element-profile)  |The new (4.0) profile table. Contains profile for a single Html-element. Connected through element_profile_link |
 |[Role](./role)  |User roles for role-based security, names and tooltips are in LocaleText. For more information regarding role based security, see http://techdoc.superoffice.com |
 
+
 ## Replication Flags
 
 * None
@@ -50,3 +50,4 @@ Profiles associated with a role
 ## Security Flags
 
 * No access control via user's Role.
+

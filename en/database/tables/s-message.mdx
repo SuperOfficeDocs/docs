@@ -1,44 +1,43 @@
 ---
-uid: table-s_message
 title: s_message table
 description: A message used in a shipment. Can be html and/or plain text
 generated: true
-keywords: ['database table s_message']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import SMessage from "./includes/s-message.md";
+import SMessage from "./includes/s-message.mdx";
 
-# s\_message Table (335)
+## s\_message Table (335)
 
 A message used in a shipment. Can be html and/or plain text
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|plain\_message|Plain message text of this message|Clob|&#x25CF;|
-|html\_message|HTML formatted text of this message|Clob|&#x25CF;|
-|sms\_message|SMS version of this message|Clob|&#x25CF;|
-|description|Describes this message|String(255)|&#x25CF;|
-|subject|The mail subject field of the message|String(255)|&#x25CF;|
-|header\_field|Extra header fields added to mail. Must be formatted correctly|Clob|&#x25CF;|
-|flags|Identifies if HTML or plain message is included in message.|Enum [ShipmentMessageType](./enums/shipmentmessagetype)| |
-|folder\_id|The folder which this message belongs to. -1 indicates that the message is on the root|Int| |
-|inline\_images|Should images be included inline?|Bool|&#x25CF;|
-|register\_views|Register message views?|Bool|&#x25CF;|
-|access\_key|Key used for access verification|String(255)|&#x25CF;|
-|registered|Registered when|UtcDateTime|&#x25CF;|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)|&#x25CF;|
-|updated|Last updated when|UtcDateTime|&#x25CF;|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|&#x25CF;|
-|updatedCount|Number of updates made to this record|UShort|&#x25CF;|
-|document\_message|The SM document used as template for this mailing|FK [document](./document)|&#x25CF;|
-|long\_description|A field for a long description of this template|String(4000)|&#x25CF;|
-|design|Will contain the design part of a message. The format will vary based on the type of designer used to create the message|Clob|&#x25CF;|
-|designtype|Enum containing the type of the design|Enum [DesignType](./enums/designtype)| |
+|id|Primary key|PK|No|
+|plain\_message|Plain message text of this message|Clob|Yes|
+|html\_message|HTML formatted text of this message|Clob|Yes|
+|sms\_message|SMS version of this message|Clob|Yes|
+|description|Describes this message|String(255)|Yes|
+|subject|The mail subject field of the message|String(255)|Yes|
+|header\_field|Extra header fields added to mail. Must be formatted correctly|Clob|Yes|
+|flags|Identifies if HTML or plain message is included in message.|Enum [ShipmentMessageType](./enums/shipmentmessagetype.mdx)|No|
+|folder\_id|The folder which this message belongs to. -1 indicates that the message is on the root|Int|No|
+|inline\_images|Should images be included inline?|Bool|Yes|
+|register\_views|Register message views?|Bool|Yes|
+|access\_key|Key used for access verification|String(255)|Yes|
+|registered|Registered when|UtcDateTime|Yes|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|Yes|
+|updated|Last updated when|UtcDateTime|Yes|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|Yes|
+|updatedCount|Number of updates made to this record|UShort|Yes|
+|document\_message|The SM document used as template for this mailing|FK [document](./document.mdx)|Yes|
+|long\_description|A field for a long description of this template|String(4000)|Yes|
+|design|Will contain the design part of a message. The format will vary based on the type of designer used to create the message|Clob|Yes|
+|designtype|Enum containing the type of the design|Enum [DesignType](./enums/designtype.mdx)|No|
+
 
 ![s_message table relationship diagram](/media/loc/en/database/tables/s_message.png)
 
@@ -63,6 +62,7 @@ A message used in a shipment. Can be html and/or plain text
 |[s\_sent\_message](./s-sent-message)  |Emarketeer message control |
 |[s\_shipment](./s-shipment)  |Contains info about one shipment. The addresses are stored in s_shipment_addr |
 
+
 ## Replication Flags
 
 * None
@@ -70,3 +70,4 @@ A message used in a shipment. Can be html and/or plain text
 ## Security Flags
 
 * No access control via user's Role.
+

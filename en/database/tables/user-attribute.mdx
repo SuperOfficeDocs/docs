@@ -1,27 +1,26 @@
 ---
-uid: table-user_attribute
 title: user_attribute table
 description: This table is used for storing various attributes for users.
 generated: true
-keywords: ['database table user_attribute']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import UserAttribute from "./includes/user-attribute.md";
+import UserAttribute from "./includes/user-attribute.mdx";
 
-# user\_attribute Table (403)
+## user\_attribute Table (403)
 
 This table is used for storing various attributes for users.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|user\_id|The user associated with this attribute.|FK [ejuser](./ejuser)| |
-|att\_key|An identifying string key for the entry|String(255)| |
-|att\_value|The value of the attribute.|Clob|&#x25CF;|
+|id|The primary key (auto-incremented)|PK|No|
+|user\_id|The user associated with this attribute.|FK [ejuser](./ejuser.mdx)|No|
+|att\_key|An identifying string key for the entry|String(255)|No|
+|att\_value|The value of the attribute.|Clob|Yes|
+
 
 ![user_attribute table relationship diagram](/media/loc/en/database/tables/user_attribute.png)
 
@@ -40,6 +39,7 @@ This table is used for storing various attributes for users.
 |------|-------------|
 |[ejuser](./ejuser)  |This table contains entries for the users of the system. |
 
+
 ## Replication Flags
 
 * None
@@ -47,3 +47,4 @@ This table is used for storing various attributes for users.
 ## Security Flags
 
 * No access control via user's Role.
+
