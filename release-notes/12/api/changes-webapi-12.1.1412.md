@@ -1,9 +1,20 @@
 ---
-uid: version_12.1.1412_changes_webapi
-date: 19.06.2026
+title: WebAPI changes in SuperOffice 12.1
+sidebarTitle: "12.1 WebAPI - API changelog"
+description: WebAPI release notes for SuperOffice 12.1
+keywords: ['API changes', 'webapi']
+author: SuperOffice AS - Product and Engineering
+generated: true
+date: 06.19.2026
+version: 12.1.1412
+content_type: release-note
+category: api
+language: en
 ---
 
-Changes from v12.0.342 to v12.1.1412
+Generated on 19 juni 2026.
+
+Compared versions: v12.0.342 to v12.1.1412.
 
 ## Web API
 

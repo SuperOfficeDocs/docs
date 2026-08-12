@@ -1,3 +1,0 @@
-extends: ../../.markdownlint.yaml
-MD024: false
-MD013: false
