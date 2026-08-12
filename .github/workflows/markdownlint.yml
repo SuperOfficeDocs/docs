@@ -39,6 +39,7 @@ jobs:
             blueprint-templates/**
             api-sources/**
             downloads/**
+            tools/benchmarks/results/**
 
       - name: Set up Node
         if: steps.changed.outputs.any_changed == 'true'

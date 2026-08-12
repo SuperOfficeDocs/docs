@@ -1,0 +1,13 @@
+{
+  "_comment": "Representative page sample for issue #90's pre-cutover baseline. Reused byte-for-byte post-cutover for #91's comparison — see contribute/performance-benchmarking.mdx. Chosen for content-type diversity (landing pages, generated DB reference, an integration subpage, release notes, image+video-heavy content, tables-only content) rather than just nav breadth.",
+  "pages": [
+    { "id": "home", "url": "https://docs.superoffice.com/" },
+    { "id": "online-landing", "url": "https://docs.superoffice.com/en/online/index.html" },
+    { "id": "mobile", "url": "https://docs.superoffice.com/en/mobile/index.html" },
+    { "id": "database-table-ticket", "url": "https://docs.superoffice.com/en/database/tables/ticket.html" },
+    { "id": "integrations-outlook-settings", "url": "https://docs.superoffice.com/integrations/superoffice-for-outlook/settings.html" },
+    { "id": "release-notes-12", "url": "https://docs.superoffice.com/release-notes/12/index.html" },
+    { "id": "developer-portal-create-app", "url": "https://docs.superoffice.com/en/developer-portal/create-app/index.html" },
+    { "id": "marketing-flows-step-settings", "url": "https://docs.superoffice.com/en/marketing/flows/learn/step-settings.html" }
+  ]
+}

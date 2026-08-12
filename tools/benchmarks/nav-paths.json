@@ -1,0 +1,84 @@
+{
+  "_comment": "Representative navigation-click sample for issue #90. Each hop is clicked in sequence starting from the site's startUrl. `selector` is the timed navigation click - a CSS/Playwright selector matching the literal href/text as authored on that specific page (verified against the live DocFx site, not guessed). An optional `openSelector` is clicked first, untimed, to open a click-toggled dropdown menu (Developer Guide, Languages) before the timed click on `selector` - opening a local UI menu isn't a page navigation, so only the actual link click is timed. Reused post-cutover for #91 - on Mintlify's client-side-routed nav, expect the plain hops to drop sharply since that's exactly the behavior change being measured; the dropdown-based hops (`openSelector`) will need re-verifying since Mintlify's nav markup won't match DocFx's Bootstrap dropdown-toggle pattern.",
+  "navPaths": [
+    {
+      "id": "home-to-learn-article",
+      "startUrl": "https://docs.superoffice.com/",
+      "hops": [
+        { "selector": "a[href=\"/en/learn/\"]", "label": "Home -> Learn landing" },
+        { "selector": "a[href=\"../diary/learn/index.html\"]", "label": "Learn landing -> Diary learn article" }
+      ]
+    },
+    {
+      "id": "home-to-online-subtopic",
+      "startUrl": "https://docs.superoffice.com/",
+      "hops": [
+        { "selector": "a[href=\"/en/online/\"]", "label": "Home -> CRM Online landing" },
+        { "selector": "a[href=\"system-requirements.html\"]", "label": "CRM Online landing -> System requirements" }
+      ]
+    },
+    {
+      "id": "home-to-api-deep-leaf",
+      "startUrl": "https://docs.superoffice.com/",
+      "hops": [
+        { "selector": "a[href=\"/en/api/\"]", "label": "Home -> API landing" },
+        { "selector": "a[href=\"netserver/web-services/index.html\"]", "label": "API landing -> Web Services" }
+      ]
+    },
+    {
+      "id": "home-to-release-notes-12",
+      "startUrl": "https://docs.superoffice.com/",
+      "hops": [
+        { "selector": "a[href=\"/release-notes/\"]", "label": "Home -> Release notes landing" },
+        { "selector": "a[href=\"12/index.html\"]", "label": "Release notes landing -> SuperOffice 12" }
+      ]
+    },
+    {
+      "id": "home-to-company-card-variable",
+      "startUrl": "https://docs.superoffice.com/",
+      "hops": [
+        { "selector": "a[href=\"/en/document/\"]", "label": "Home -> Document landing" },
+        { "selector": "a[href=\"templates/learn/index.html\"]", "label": "Document landing -> Document templates" },
+        { "selector": "a[href=\"template-variables.html\"]", "label": "Document templates -> Template variables" },
+        { "selector": "a[href=\"../../../learn/../document/templates/variables/index.html\"]", "label": "Template variables -> Reference" },
+        { "selector": "a[href=\"../../../learn/../document/templates/variables/from-company-card.html\"]", "label": "Reference -> Company (deep leaf, 5 hops from home)" }
+      ]
+    },
+    {
+      "id": "learn-toc-sibling",
+      "startUrl": "https://docs.superoffice.com/en/learn/intro.html",
+      "hops": [
+        { "selector": "a[href=\"getting-started/index.html\"]", "label": "Learn: Introduction -> Get started (same left-side TOC)" }
+      ]
+    },
+    {
+      "id": "learn-to-integrations-cross-toc",
+      "startUrl": "https://docs.superoffice.com/en/learn/intro.html",
+      "hops": [
+        { "selector": "a[href=\"../../integrations/index.html\"]", "label": "Learn -> Integrations (top nav, different TOC)" }
+      ]
+    },
+    {
+      "id": "learn-to-api-cross-toc",
+      "startUrl": "https://docs.superoffice.com/en/learn/intro.html",
+      "hops": [
+        {
+          "openSelector": "text=\"Developer Guide\"",
+          "selector": "a[href=\"../../en/api/index.html\"]",
+          "label": "Learn -> API Overview (Developer Guide dropdown, different TOC)"
+        }
+      ]
+    },
+    {
+      "id": "switch-language",
+      "startUrl": "https://docs.superoffice.com/en/learn/intro.html",
+      "hops": [
+        {
+          "openSelector": "text=\"Languages\"",
+          "selector": "a[href=\"/da/learn/intro.html\"]",
+          "label": "Learn (EN) -> Learn (Danish) via language switcher"
+        }
+      ]
+    }
+  ]
+}

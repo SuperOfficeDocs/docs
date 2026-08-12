@@ -1,0 +1,438 @@
+{
+  "generatedAt": "2026-08-12T10:19:34.591Z",
+  "runsPerUrl": 15,
+  "results": {
+    "home": {
+      "url": "https://docs.superoffice.com/",
+      "runCount": 15,
+      "metrics": {
+        "largest-contentful-paint": {
+          "label": "LCP (ms)",
+          "n": 15,
+          "min": 8911.5185,
+          "p50": 8976.251,
+          "p95": 9477.099000000002,
+          "max": 9477.099000000002
+        },
+        "first-contentful-paint": {
+          "label": "FCP (ms)",
+          "n": 15,
+          "min": 7711.5185,
+          "p50": 8162.7400000000025,
+          "p95": 8222.101999999999,
+          "max": 8222.101999999999
+        },
+        "server-response-time": {
+          "label": "TTFB (ms)",
+          "n": 15,
+          "min": 5.9510000000000005,
+          "p50": 6.974000000000004,
+          "p95": 17.579,
+          "max": 17.579
+        },
+        "total-blocking-time": {
+          "label": "TBT (ms)",
+          "n": 15,
+          "min": 143.48099999999795,
+          "p50": 217,
+          "p95": 333.4999999999982,
+          "max": 333.4999999999982
+        },
+        "interactive": {
+          "label": "TTI (ms)",
+          "n": 15,
+          "min": 19558.397900000004,
+          "p50": 19723.481000000007,
+          "p95": 20031.072000000007,
+          "max": 20031.072000000007
+        },
+        "cumulative-layout-shift": {
+          "label": "CLS",
+          "n": 15,
+          "min": 0.00304115736616903,
+          "p50": 0.05174671626000054,
+          "p95": 0.08087996060969754,
+          "max": 0.08087996060969754
+        }
+      }
+    },
+    "online-landing": {
+      "url": "https://docs.superoffice.com/en/online/index.html",
+      "runCount": 15,
+      "metrics": {
+        "largest-contentful-paint": {
+          "label": "LCP (ms)",
+          "n": 15,
+          "min": 9110.401000000002,
+          "p50": 9209.580999999998,
+          "p95": 9792.805000000002,
+          "max": 9792.805000000002
+        },
+        "first-contentful-paint": {
+          "label": "FCP (ms)",
+          "n": 15,
+          "min": 7786.861000000001,
+          "p50": 8454.343499999999,
+          "p95": 8587.749499999998,
+          "max": 8587.749499999998
+        },
+        "server-response-time": {
+          "label": "TTFB (ms)",
+          "n": 15,
+          "min": 5.623000000000001,
+          "p50": 6.984999999999999,
+          "p95": 16.717,
+          "max": 16.717
+        },
+        "total-blocking-time": {
+          "label": "TBT (ms)",
+          "n": 15,
+          "min": 131.2464999999993,
+          "p50": 232,
+          "p95": 303,
+          "max": 303
+        },
+        "interactive": {
+          "label": "TTI (ms)",
+          "n": 15,
+          "min": 19659.808000000005,
+          "p50": 20018.767,
+          "p95": 20670.12395,
+          "max": 20670.12395
+        },
+        "cumulative-layout-shift": {
+          "label": "CLS",
+          "n": 15,
+          "min": 0.027120281510668823,
+          "p50": 0.03246919990711087,
+          "p95": 0.06160244425680788,
+          "max": 0.06160244425680788
+        }
+      }
+    },
+    "mobile": {
+      "url": "https://docs.superoffice.com/en/mobile/index.html",
+      "runCount": 15,
+      "metrics": {
+        "largest-contentful-paint": {
+          "label": "LCP (ms)",
+          "n": 15,
+          "min": 11683.358,
+          "p50": 11827.807999999999,
+          "p95": 11853.984999999997,
+          "max": 11853.984999999997
+        },
+        "first-contentful-paint": {
+          "label": "FCP (ms)",
+          "n": 15,
+          "min": 8303.743999999999,
+          "p50": 8316.198,
+          "p95": 8463.068,
+          "max": 8463.068
+        },
+        "server-response-time": {
+          "label": "TTFB (ms)",
+          "n": 15,
+          "min": 6.131999999999998,
+          "p50": 7.859999999999999,
+          "p95": 13.214000000000006,
+          "max": 13.214000000000006
+        },
+        "total-blocking-time": {
+          "label": "TBT (ms)",
+          "n": 15,
+          "min": 92,
+          "p50": 108,
+          "p95": 130,
+          "max": 130
+        },
+        "interactive": {
+          "label": "TTI (ms)",
+          "n": 15,
+          "min": 16317.8459,
+          "p50": 16488.581,
+          "p95": 16677.676200000005,
+          "max": 16677.676200000005
+        },
+        "cumulative-layout-shift": {
+          "label": "CLS",
+          "n": 15,
+          "min": 0.06029283040335176,
+          "p50": 0.06029283040335176,
+          "p95": 0.06029283040335176,
+          "max": 0.06029283040335176
+        }
+      }
+    },
+    "database-table-ticket": {
+      "url": "https://docs.superoffice.com/en/database/tables/ticket.html",
+      "runCount": 15,
+      "metrics": {
+        "largest-contentful-paint": {
+          "label": "LCP (ms)",
+          "n": 15,
+          "min": 9375.044,
+          "p50": 9577.954999999998,
+          "p95": 10189.813999999998,
+          "max": 10189.813999999998
+        },
+        "first-contentful-paint": {
+          "label": "FCP (ms)",
+          "n": 15,
+          "min": 7579.402000000002,
+          "p50": 8172.456,
+          "p95": 8226.699999999999,
+          "max": 8226.699999999999
+        },
+        "server-response-time": {
+          "label": "TTFB (ms)",
+          "n": 15,
+          "min": 7.509999999999998,
+          "p50": 7.933,
+          "p95": 10.803000000000004,
+          "max": 10.803000000000004
+        },
+        "total-blocking-time": {
+          "label": "TBT (ms)",
+          "n": 15,
+          "min": 231.5,
+          "p50": 260.5,
+          "p95": 353.5,
+          "max": 353.5
+        },
+        "interactive": {
+          "label": "TTI (ms)",
+          "n": 15,
+          "min": 21413.025999999998,
+          "p50": 21566.252,
+          "p95": 21805.688649999996,
+          "max": 21805.688649999996
+        },
+        "cumulative-layout-shift": {
+          "label": "CLS",
+          "n": 15,
+          "min": 0.07534637268163233,
+          "p50": 0.07534637268163233,
+          "p95": 0.07557233180679439,
+          "max": 0.07557233180679439
+        }
+      }
+    },
+    "integrations-outlook-settings": {
+      "url": "https://docs.superoffice.com/integrations/superoffice-for-outlook/settings.html",
+      "runCount": 15,
+      "metrics": {
+        "largest-contentful-paint": {
+          "label": "LCP (ms)",
+          "n": 15,
+          "min": 9341.3975,
+          "p50": 10106.658500000001,
+          "p95": 10896.45800000001,
+          "max": 10896.45800000001
+        },
+        "first-contentful-paint": {
+          "label": "FCP (ms)",
+          "n": 15,
+          "min": 4071.1920000000005,
+          "p50": 7611.439999999999,
+          "p95": 8938.190500000004,
+          "max": 8938.190500000004
+        },
+        "server-response-time": {
+          "label": "TTFB (ms)",
+          "n": 15,
+          "min": 6.6370000000000005,
+          "p50": 7.729000000000003,
+          "p95": 9.370000000000005,
+          "max": 9.370000000000005
+        },
+        "total-blocking-time": {
+          "label": "TBT (ms)",
+          "n": 15,
+          "min": 99.5,
+          "p50": 113,
+          "p95": 139.5,
+          "max": 139.5
+        },
+        "interactive": {
+          "label": "TTI (ms)",
+          "n": 15,
+          "min": 20727.115499999996,
+          "p50": 20857.27385,
+          "p95": 21503.898150000005,
+          "max": 21503.898150000005
+        },
+        "cumulative-layout-shift": {
+          "label": "CLS",
+          "n": 15,
+          "min": 0.01915722179930572,
+          "p50": 0.09349000184093326,
+          "p95": 0.12262324619063027,
+          "max": 0.12262324619063027
+        }
+      }
+    },
+    "release-notes-12": {
+      "url": "https://docs.superoffice.com/release-notes/12/index.html",
+      "runCount": 15,
+      "metrics": {
+        "largest-contentful-paint": {
+          "label": "LCP (ms)",
+          "n": 15,
+          "min": 9367.778000000002,
+          "p50": 9505.04,
+          "p95": 9877.003000000002,
+          "max": 9877.003000000002
+        },
+        "first-contentful-paint": {
+          "label": "FCP (ms)",
+          "n": 15,
+          "min": 3907.2149999999992,
+          "p50": 8019.704,
+          "p95": 8496.665,
+          "max": 8496.665
+        },
+        "server-response-time": {
+          "label": "TTFB (ms)",
+          "n": 15,
+          "min": 6.856000000000002,
+          "p50": 8.038999999999998,
+          "p95": 9.401000000000003,
+          "max": 9.401000000000003
+        },
+        "total-blocking-time": {
+          "label": "TBT (ms)",
+          "n": 15,
+          "min": 215.5,
+          "p50": 262,
+          "p95": 332.9999999999982,
+          "max": 332.9999999999982
+        },
+        "interactive": {
+          "label": "TTI (ms)",
+          "n": 15,
+          "min": 21449.940000000002,
+          "p50": 21535.21345,
+          "p95": 21679.484350000002,
+          "max": 21679.484350000002
+        },
+        "cumulative-layout-shift": {
+          "label": "CLS",
+          "n": 15,
+          "min": 0.0038892784318922493,
+          "p50": 0.05305395702004435,
+          "p95": 0.08218720136974136,
+          "max": 0.08218720136974136
+        }
+      }
+    },
+    "developer-portal-create-app": {
+      "url": "https://docs.superoffice.com/en/developer-portal/create-app/index.html",
+      "runCount": 15,
+      "metrics": {
+        "largest-contentful-paint": {
+          "label": "LCP (ms)",
+          "n": 15,
+          "min": 10559.57475,
+          "p50": 10756.323799999998,
+          "p95": 12370.29465,
+          "max": 12370.29465
+        },
+        "first-contentful-paint": {
+          "label": "FCP (ms)",
+          "n": 15,
+          "min": 8629.110499999999,
+          "p50": 8790.264,
+          "p95": 9844.723800000002,
+          "max": 9844.723800000002
+        },
+        "server-response-time": {
+          "label": "TTFB (ms)",
+          "n": 15,
+          "min": 6.740000000000002,
+          "p50": 7.552999999999997,
+          "p95": 8.698,
+          "max": 8.698
+        },
+        "total-blocking-time": {
+          "label": "TBT (ms)",
+          "n": 15,
+          "min": 129.5,
+          "p50": 152,
+          "p95": 186,
+          "max": 186
+        },
+        "interactive": {
+          "label": "TTI (ms)",
+          "n": 15,
+          "min": 25972.20530000001,
+          "p50": 26113.441835,
+          "p95": 26472.590985000006,
+          "max": 26472.590985000006
+        },
+        "cumulative-layout-shift": {
+          "label": "CLS",
+          "n": 15,
+          "min": 0.07694119534283027,
+          "p50": 0.07710899965247486,
+          "p95": 0.15144177969410239,
+          "max": 0.15144177969410239
+        }
+      }
+    },
+    "marketing-flows-step-settings": {
+      "url": "https://docs.superoffice.com/en/marketing/flows/learn/step-settings.html",
+      "runCount": 15,
+      "metrics": {
+        "largest-contentful-paint": {
+          "label": "LCP (ms)",
+          "n": 15,
+          "min": 11025.592999999999,
+          "p50": 11150.145999999999,
+          "p95": 11213.483499999998,
+          "max": 11213.483499999998
+        },
+        "first-contentful-paint": {
+          "label": "FCP (ms)",
+          "n": 15,
+          "min": 3923.7960000000003,
+          "p50": 7594.702499999999,
+          "p95": 9512.053500000002,
+          "max": 9512.053500000002
+        },
+        "server-response-time": {
+          "label": "TTFB (ms)",
+          "n": 15,
+          "min": 7.026000000000003,
+          "p50": 8.085,
+          "p95": 68.244,
+          "max": 68.244
+        },
+        "total-blocking-time": {
+          "label": "TBT (ms)",
+          "n": 15,
+          "min": 213.5,
+          "p50": 262,
+          "p95": 360,
+          "max": 360
+        },
+        "interactive": {
+          "label": "TTI (ms)",
+          "n": 15,
+          "min": 16597.195,
+          "p50": 16823.555,
+          "p95": 17212.134000000002,
+          "max": 17212.134000000002
+        },
+        "cumulative-layout-shift": {
+          "label": "CLS",
+          "n": 15,
+          "min": 0.08759132342965022,
+          "p50": 0.08989579164793529,
+          "p95": 0.0911609165089381,
+          "max": 0.0911609165089381
+        }
+      }
+    }
+  }
+}

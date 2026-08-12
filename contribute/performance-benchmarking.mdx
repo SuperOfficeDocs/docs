@@ -1,0 +1,102 @@
+---
+uid: performance-benchmarking
+title: Performance benchmarking
+description: How the pre-cutover DocFx performance baseline was captured (issue #90) and how to rerun the exact same methodology post-cutover for the Performance Verification Period comparison (issue #91).
+keywords: ['performance', 'benchmark', 'lighthouse', 'playwright', 'search latency', 'pvp']
+author: digitaldiina
+date: 08.12.2026
+content_type: concept
+language: en
+---
+
+A post-launch **Performance Verification Period (PVP)** checks that the new platform performs acceptably once it's live and under real traffic. That check needs something real to compare against - this page documents how the pre-cutover baseline was captured, and how to rerun the same methodology once Mintlify is live so the comparison is methodologically sound.
+
+This is a manual, periodic exercise, not a CI check, so it lives here rather than in [Automated tests][1]. The scripts themselves are in `tools/benchmarks/` - see that folder's `README.md` for the full script-by-script reference and the captured results.
+
+## Reading the numbers
+
+Every metric on this page is reported as **p50** and **p95** - percentiles across many repeated runs, not a single measurement. **p50** (the median) is the typical experience: half the runs were faster than this, half slower. **p95** is the near-worst-case: only 5% of runs were slower than this - useful for catching occasional bad experiences that an average would smooth over and hide. A page with a fast p50 but a much slower p95 is inconsistent (fast most of the time, but with a real minority of slow loads); a page where p50 and p95 sit close together is consistently fast or consistently slow, with little variance either way.
+
+## Setup and running
+
+The scripts are plain Node - nothing about them is tied to the machine they were first run on. To run them (on any machine with a clone of this repo):
+
+```bash
+cd tools/benchmarks
+npm install
+npx playwright install chromium
+```
+
+Then run any script directly, for example:
+
+```bash
+node run-pageload-benchmark.mjs
+node search-latency-raw.mjs
+node search-latency.mjs
+node nav-responsiveness.mjs
+```
+
+Each writes into `results/<label>/`, defaulting to today's date - set `RUN_LABEL` to control it explicitly (`RUN_LABEL=2026-09-05 node run-pageload-benchmark.mjs`). **Never set `RUN_LABEL=baseline`** for a later run - `results/baseline/` is the pre-cutover reference capture and must stay untouched for the [#91][3] comparison to mean anything.
+
+`npm install` and `npx playwright install chromium` both download their own tooling fresh each time (from npm's registry and Playwright's browser CDN respectively) - nothing from a previous run needs to be copied over, and nothing under `tools/benchmarks/` outside of `results/` needs to survive between machines.
+
+## Scope
+
+The PVP's full scope (page load, search latency, navigation, CDN geography across the EU, concurrency/traffic-based performance, error rates under load) needs real production traffic and infrastructure that doesn't exist before cutover. The pre-cutover baseline ([issue #90][2]) scopes that down to the three metrics that can be measured meaningfully on the current site: **page load (p50/p95)**, **search latency**, and **navigation responsiveness**.
+
+## How the current site's search actually works
+
+Before choosing a search-latency method, it's worth knowing what's actually being measured. `docs.superoffice.com`'s search calls a separate backend service rather than using a client-side search index.
+
+<Warning>
+That backend can have significant cold-start latency after a period of inactivity. Any script measuring it must run one untimed warmup request first, or a cold start will wreck the p95.
+</Warning>
+
+Mintlify's search after cutover is a **completely different backend** - the current one goes away entirely. That means a raw server-response-time comparison won't carry over, but an **end-to-end perceived-latency** measurement (type a query, click Search, measure until results render) is backend-agnostic - it measures the same user-visible behavior regardless of what powers it. That's why two separate search scripts exist: one DocFx-only diagnostic, one number that actually carries forward to #91.
+
+## Tools and metrics
+
+| Metric | Tool | What it measures |
+|---|---|---|
+| Page load | Lighthouse CI (`lhci collect`) | LCP, FCP, TTFB, TBT, TTI, CLS - p50/p95 across N runs per URL |
+| Search latency (server-side) | Direct `fetch()` timing | Round-trip time against the search API directly - DocFx-only diagnostic, not comparable post-cutover |
+| Search latency (end-to-end) | Playwright | Perceived latency: fill + click Search to results rendered - the number that carries forward to #91 |
+| Navigation responsiveness | Playwright | Click-to-load time per hop, walking representative nav paths |
+
+Lighthouse CI was chosen over WebPageTest or the PageSpeed Insights API because CDN geography and multi-location testing are explicitly out of scope here (that's #91's job) - a single consistent vantage point is enough, and Lighthouse CI needs no signup or API key and stays fully checked into this repo. Lighthouse's default simulated-mobile throttling is left as-is deliberately - whatever settings are used for the baseline must stay identical for the post-cutover rerun, not tuned for "more realistic" numbers now.
+
+## Sample set
+
+`tools/benchmarks/urls.json`, `queries.json`, and `nav-paths.json` hold the representative pages, search terms, and click-paths. The scripts just read from this JSON config, so it can be swapped or extended without touching any script. **Keep this config identical between the pre- and post-cutover runs** - that is what makes the comparison valid.
+
+`urls.json`'s page-load sample is chosen for **content-type diversity** rather than nav breadth: a generated database-reference table, an integration subpage, a release-notes index, a page with both images and an embedded video, and a page with tables but no images, alongside a few plain landing pages. Different content shapes stress page load differently (a video embed vs. a large generated table vs. a plain landing page), and content type is invariant across the DocFx-to-Mintlify cutover even though the URLs themselves may move.
+
+`nav-paths.json` covers the navigation *shapes* that behave differently depending on the site's routing model, not just a handful of arbitrary click-throughs:
+
+* A deep multi-hop click into content (`home-to-company-card-variable`, 5 hops) - stress-tests a realistic "user drills down through several levels" journey.
+* Navigating between two sibling pages **within the same left-side TOC** (`learn-toc-sibling`).
+* Navigating **across a TOC boundary** - Learn to Integrations (top nav) and Learn to API (via the Developer Guide dropdown) - `learn-to-integrations-cross-toc` / `learn-to-api-cross-toc`.
+* **Switching language** via the language dropdown (`switch-language`) - a DocFx full-page reload today; likely a much cheaper operation on Mintlify.
+
+The last three all start from a click-toggled dropdown menu (Bootstrap `dropdown-toggle`, not a CSS `:hover` menu - confirmed by inspecting the live DOM, not assumed). `nav-paths.json`'s hop schema supports this via an `openSelector` field: clicked first, untimed, to reveal the menu, before the real (timed) navigation click on `selector`. See that file's own comment for the exact mechanics, and `nav-responsiveness.mjs` for the implementation.
+
+## Where the actual numbers live
+
+The captured baseline (p50/p95 for every page, query, and nav hop) is **not reproduced on this page**. Captured figures live in `tools/benchmarks/results/baseline/` in this repo - raw JSON plus a summary `.md` table per script - alongside notes on anything that stood out (an unusually slow content area, an outlier run worth re-checking, and so on). `tools/benchmarks/README.md` explains how to read them and how `results/<label>/` keeps a rerun from ever overwriting `results/baseline/`.
+
+## Rerunning for #91
+
+1. Confirm `tools/benchmarks/urls.json`, `queries.json`, and `nav-paths.json` are unchanged from the baseline capture (or, if the sample set was deliberately updated, note that in the new results write-up - a changed sample set is no longer an apples-to-apples comparison).
+2. `nav-paths.json`'s hop selectors match DocFx's literal `href` markup - they will need re-verifying against the equivalent Mintlify pages first, since Mintlify's markup won't match.
+3. Run all four scripts per `tools/benchmarks/README.md` against the live Mintlify site.
+4. Compare against `results/baseline/` (see above). Flag the server-side search-latency script's numbers as non-comparable (different backend) - only the end-to-end search number, the page-load metrics, and the navigation numbers are valid before/after comparisons.
+
+## Related content
+
+* [Automated tests][1] - the per-PR and scheduled checks this page's manual exercise complements.
+* [Issue #90][2] - the pre-cutover baseline task this page documents.
+* [Issue #91][3] - the post-launch Performance Verification Period this baseline feeds.
+
+[1]: ./automated-tests
+[2]: https://github.com/SuperOfficeDocs/docs/issues/90
+[3]: https://github.com/SuperOfficeDocs/docs/issues/91
