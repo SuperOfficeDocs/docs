@@ -11,28 +11,14 @@
       "release-notes/12/index",
       {
         "group": "API",
+        "root": "release-notes/12/api/index",
         "pages": [
-          {
-            "group": "12.2 update",
-            "pages": [
-              "release-notes/12/api/12.2/12.2-webapi-update",
-              "release-notes/database/changes-12.2.2072"
-            ]
-          },
-          {
-            "group": "12.1 update",
-            "pages": [
-              "release-notes/12/api/12.1/12.1-webapi-update",
-              "release-notes/database/changes-12.1.1412"
-            ]
-          },
-          {
-            "group": "12.0 update",
-            "pages": [
-              "release-notes/12/api/12.0/12.0-webapi-update",
-              "release-notes/database/changes-12.0.342"
-            ]
-          }
+          "release-notes/12/api/changes-webapi-12.2.2072.0",
+          "release-notes/database/changes-12.2.2072",
+          "release-notes/12/api/changes-webapi-12.1.1412",
+          "release-notes/database/changes-12.1.1412",
+          "release-notes/12/api/changes-webapi-12.0.342.0",
+          "release-notes/database/changes-12.0.342"
         ]
       }
     ]

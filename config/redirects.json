@@ -9040,6 +9040,18 @@
     "destination": "/release-notes/12"
   },
   {
+    "source": "/release-notes/12/api/12.0/*",
+    "destination": "/release-notes/12/api/changes-webapi-12.0.342.0"
+  },
+  {
+    "source": "/release-notes/12/api/12.1/*",
+    "destination": "/release-notes/12/api/changes-webapi-12.1.1412"
+  },
+  {
+    "source": "/release-notes/12/api/12.2/*",
+    "destination": "/release-notes/12/api/changes-webapi-12.2.2072.0"
+  },
+  {
     "source": "/release-notes/8.5/office-integrations/*",
     "destination": "/release-notes/integrations/mail-link"
   },
