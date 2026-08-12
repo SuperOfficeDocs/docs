@@ -1,10 +1,10 @@
 ---
 uid: automated-tests
 title: Automated tests
-description: Every check that runs against a PR or on a schedule for this repo - markdownlint, Vale, build validation, and broken-link checking - what each covers, whether it blocks a merge, and where to look when one flags something.
-keywords: ['ci', 'automated tests', 'markdownlint', 'vale', 'broken links', 'mint validate', 'automations']
+description: Every check that runs against a PR or on a schedule for this repo - markdownlint, Vale, build validation, broken-link checking, and the CRMScript reference drift check - what each covers, whether it blocks a merge, and where to look when one flags something.
+keywords: ['ci', 'automated tests', 'markdownlint', 'vale', 'broken links', 'mint validate', 'automations', 'crmscript']
 author: digitaldiina
-date: 08.10.2026
+date: 08.12.2026
 content_type: concept
 language: en
 ---
@@ -19,6 +19,7 @@ This page is the single reference for every automatic check that runs against th
 | Vale | Mintlify CI Checks add-on | No - Warning level | Mintlify dashboard (Add-ons > CI Checks), using this repo's `.vale.ini` |
 | Build validation | Mintlify preview deployment | Yes - a failed build shows as a red "Mintlify Deployment" check | Mintlify, automatic on every PR (see [Deploy trigger mechanics][2]) |
 | Broken links (internal) | Mintlify CI Checks add-on | No - Warning level | Mintlify dashboard (Add-ons > CI Checks) |
+| CRMScript reference drift | GitHub Action (`.github/workflows/crmscript-drift.yml`) | Yes - fails the check | This repo, `tools/check-crmscript-drift.ps1` |
 
 ### Markdownlint
 
@@ -39,6 +40,10 @@ Mintlify's Broken Links add-on scans the whole site's internal links (not extern
 <Note>
 A Mintlify community report (October 2025) describes a case where a page serving a 404 still returned an HTTP 200 status, which could make this check under-report a real broken link. Do not treat "no broken links flagged" here as a guarantee - see the scheduled check and fallback tool below for a second opinion.
 </Note>
+
+### CRMScript reference drift
+
+Only triggers on a PR touching `api-sources/crmscript/**`, the generated `en/automation/crmscript/reference/**`, or either generator script - not on every PR like the checks above. It regenerates the reference fresh from source and fails if the result does not match what is committed, catching both directions of drift with one mechanism: a source `.yml` edited without regenerating, and a generated `.mdx` hand-edited directly without touching its source. The failure message names the specific source file to check. See [Update the CRMScript reference][7] for the full mechanism and why this one is blocking rather than advisory - `api-sources/crmscript/*.yml` also feeds the CRMScript interpreter's own built-in intellisense, so a stale source is a product-facing risk, not just a docs one.
 
 ## Scheduled check: repo-wide broken-link detection
 
@@ -72,6 +77,7 @@ mint automations create --name "Broken link detection" --type broken-link-detect
 * [Mintlify deployment and CI/CD][1] - the deploy pipeline and PR preview mechanics these checks build on.
 * [markdownlint][3] - rule details and local usage.
 * [Reviewing a PR][6] - the review checklist that links back here.
+* [Update the CRMScript reference][7] - the regeneration workflow the drift check enforces.
 
 [1]: ./deployment
 [2]: ./deployment#deploy-trigger-mechanics
@@ -79,3 +85,4 @@ mint automations create --name "Broken link detection" --type broken-link-detect
 [4]: https://github.com/SuperOfficeDocs/docs/issues/81
 [5]: https://github.com/SuperOfficeDocs/docs/issues/129
 [6]: ./review/index
+[7]: ./how-to-update-crmscript-reference
