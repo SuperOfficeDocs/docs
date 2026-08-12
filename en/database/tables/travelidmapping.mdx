@@ -1,35 +1,34 @@
 ---
-uid: table-travelidmapping
 title: travelidmapping table
-description: Mapping of primary keys between Travel databases and the mother database  All travel database transactions get a high id to be able to see that this entry came from a database outside the central database. When update files are read into the central database, they get a normal low id. This table remembers the high travel id to map it to the low central id as long as this travel user is travelling.
+description: Mapping of primary keys between Travel databases and the mother database  All travel database transactions get a high id to be able to see that this entry came from a database outside the central database. When update files are read into the central database, they get a normal low id. This table remembers the high travel id to map it to the low central id as long as this travel user is travelling. 
 generated: true
-keywords: ['database table travelidmapping']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Travelidmapping from "./includes/travelidmapping.md";
+import Travelidmapping from "./includes/travelidmapping.mdx";
 
-# travelidmapping Table (43)
+## travelidmapping Table (43)
 
-Mapping of primary keys between Travel databases and the mother database  All travel database transactions get a high id to be able to see that this entry came from a database outside the central database. When update files are read into the central database, they get a normal low id. This table remembers the high travel id to map it to the low central id as long as this travel user is travelling.
+Mapping of primary keys between Travel databases and the mother database  All travel database transactions get a high id to be able to see that this entry came from a database outside the central database. When update files are read into the central database, they get a normal low id. This table remembers the high travel id to map it to the low central id as long as this travel user is travelling. 
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|travelidmapping\_id|Primary key|PK| |
-|associate\_id|Associate id (traveller)|FK [associate](./associate)| |
-|table\_number|Database table number|TableNumber| |
-|local\_id|ID on traveller|Id| |
-|parent\_id|ID on parent database|Id| |
-|counter|How many consecutive ID&apos;s|UInt|&#x25CF;|
-|cdbName|Conceptual database name if != standard database|String(29)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|travelidmapping\_id|Primary key|PK|No|
+|associate\_id|Associate id (traveller)|FK [associate](./associate.mdx)|No|
+|table\_number|Database table number|TableNumber|No|
+|local\_id|ID on traveller|Id|No|
+|parent\_id|ID on parent database|Id|No|
+|counter|How many consecutive ID&apos;s|UInt|Yes|
+|cdbName|Conceptual database name if != standard database|String(29)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![travelidmapping table relationship diagram](/media/loc/en/database/tables/travelidmapping.png)
 
@@ -48,6 +47,7 @@ Mapping of primary keys between Travel databases and the mother database  All tr
 |------|-------------|
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 
+
 ## Replication Flags
 
 * None
@@ -55,3 +55,4 @@ Mapping of primary keys between Travel databases and the mother database  All tr
 ## Security Flags
 
 * No access control via user's Role.
+

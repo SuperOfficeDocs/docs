@@ -1,29 +1,28 @@
 ---
-uid: table-session_object
 title: session_object table
 description: Generic session object, accessible from ejscript etc, typically xml or name=value syntax, may be stored over several rows if big
 generated: true
-keywords: ['database table session_object']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import SessionObject from "./includes/session-object.md";
+import SessionObject from "./includes/session-object.mdx";
 
-# session\_object Table (254)
+## session\_object Table (254)
 
 Generic session object, accessible from ejscript etc, typically xml or name=value syntax, may be stored over several rows if big
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|login\_id|The id of the login session owning this session object|FK [login](./login)| |
-|name|A unique name for the entry|String(255)| |
-|part|Part number used to concatinate long values|Int| |
-|value|The object value|Clob|&#x25CF;|
-|created\_at|When the object was posted.|DateTime|&#x25CF;|
+|id|The primary key (auto-incremented)|PK|No|
+|login\_id|The id of the login session owning this session object|FK [login](./login.mdx)|No|
+|name|A unique name for the entry|String(255)|No|
+|part|Part number used to concatinate long values|Int|No|
+|value|The object value|Clob|Yes|
+|created\_at|When the object was posted.|DateTime|Yes|
+
 
 ![session_object table relationship diagram](/media/loc/en/database/tables/session_object.png)
 
@@ -42,6 +41,7 @@ Generic session object, accessible from ejscript etc, typically xml or name=valu
 |------|-------------|
 |[login](./login)  |This table contains entries for the user sessions.  |
 
+
 ## Replication Flags
 
 * None
@@ -49,3 +49,4 @@ Generic session object, accessible from ejscript etc, typically xml or name=valu
 ## Security Flags
 
 * No access control via user's Role.
+

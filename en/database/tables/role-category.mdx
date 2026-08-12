@@ -1,27 +1,26 @@
 ---
-uid: table-role_category
 title: role_category table
 description: Category membership associated with a role
 generated: true
-keywords: ['database table role_category']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import RoleCategory from "./includes/role-category.md";
+import RoleCategory from "./includes/role-category.mdx";
 
-# role\_category Table (325)
+## role\_category Table (325)
 
 Category membership associated with a role
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|role|The id of the group. Deprecated.|FK [ej_role](./ej-role)| |
-|category|The id of the category.|FK [ej_category](./ej-category)| |
-|crm\_role|Link to Role|FK [Role](./role)|&#x25CF;|
+|id|The primary key (auto-incremented)|PK|No|
+|role|The id of the group. Deprecated.|FK [ej_role](./ej-role.mdx)|No|
+|category|The id of the category.|FK [ej_category](./ej-category.mdx)|No|
+|crm\_role|Link to Role|FK [Role](./role.mdx)|Yes|
+
 
 ![role_category table relationship diagram](/media/loc/en/database/tables/role_category.png)
 
@@ -43,6 +42,7 @@ Category membership associated with a role
 |[ej\_role](./ej-role)  |Define access rights, memberships and other properties for role user members |
 |[Role](./role)  |User roles for role-based security, names and tooltips are in LocaleText. For more information regarding role based security, see http://techdoc.superoffice.com |
 
+
 ## Replication Flags
 
 * None
@@ -50,3 +50,4 @@ Category membership associated with a role
 ## Security Flags
 
 * No access control via user's Role.
+

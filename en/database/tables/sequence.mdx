@@ -1,27 +1,26 @@
 ---
-uid: table-sequence
 title: sequence table
 description: next_id to be used for each table
 generated: true
-keywords: ['database table sequence']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Sequence from "./includes/sequence.md";
+import Sequence from "./includes/sequence.mdx";
 
-# sequence Table (0)
+## sequence Table (0)
 
 next_id to be used for each table
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Sequence-id of host table|PK| |
-|next\_id|Next id to be used for table|Id|&#x25CF;|
-|TableName|The name of the table this row concerns|String(255)|&#x25CF;|
-|TableNumber|The table number for this table, constant over the table&apos;s lifetime (but possibly different from one database to another|Int|&#x25CF;|
+|id|Sequence-id of host table|PK|No|
+|next\_id|Next id to be used for table|Id|Yes|
+|TableName|The name of the table this row concerns|String(255)|Yes|
+|TableNumber|The table number for this table, constant over the table&apos;s lifetime (but possibly different from one database to another|Int|Yes|
+
 
 ![sequence table relationship diagram](/media/loc/en/database/tables/sequence.png)
 
@@ -41,3 +40,4 @@ next_id to be used for each table
 ## Security Flags
 
 * No access control via user's Role.
+

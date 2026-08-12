@@ -1,85 +1,84 @@
 ---
-uid: table-AddressFormat
 title: AddressFormat table
 description: Address formats for GUI and labels. See more information; Addressformat on http;//techdoc.superoffice.com
 generated: true
-keywords: ['database table AddressFormat']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
 import Addressformat from "./includes/addressformat.mdx";
 
-# AddressFormat Table (57)
+## AddressFormat Table (57)
 
 Address formats for GUI and labels. See more information; Addressformat on http;//techdoc.superoffice.com
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|addressformat\_id|Primary key|PK| |
-|name|Name of address format (descriptive, multi-language)|String(239)| |
-|layout\_id|Corresponds to Country.layout_id|ShortId| |
-|atype\_idx|Corresponds to Address.atype_idx|UShort| |
-|address1\_line|Line no. for address1 field, 0 if not shown|UShort| |
-|address1\_subpos|Position within line for address1 field|UShort| |
-|address1\_leadtext|Lead text resource ID for address1 field, 0 = no leadtext|Id| |
-|address1\_zip|Zip lookup functionality for address1 field: 0 = none, 1 = source, 2 = target|UShort| |
-|address1\_length|Field length in characters for address1 field|UShort| |
-|address1\_flags|Field flags for address1 field: See EAddrFormatFlags enum|UShort| |
-|address1\_mask|Formatting mask for address1 field|String(9)| |
-|address2\_line|Line no. for address2 field, 0 if not shown|UShort| |
-|address2\_subpos|Position within line for address2 field|UShort| |
-|address2\_leadtext|Lead text resource ID for address2 field, 0 = no leadtext|Id| |
-|address2\_zip|Zip lookup functionality for address2 field: 0 = none, 1 = source, 2 = target|UShort| |
-|address2\_length|Field length in characters for address2 field|UShort| |
-|address2\_flags|Field flags for address2 field: See EAddrFormatFlags enum|UShort| |
-|address2\_mask|Formatting mask for address2 field|String(9)| |
-|address3\_line|Line no. for address3 field, 0 if not shown|UShort| |
-|address3\_subpos|Position within line for address3 field|UShort| |
-|address3\_leadtext|Lead text resource ID for address3 field, 0 = no leadtext|Id| |
-|address3\_zip|Zip lookup functionality for address3 field: 0 = none, 1 = source, 2 = target|UShort| |
-|address3\_length|Field length in characters for address3 field|UShort| |
-|address3\_flags|Field flags for address3 field: See EAddrFormatFlags enum|UShort| |
-|address3\_mask|Formatting mask for address3 field|String(9)| |
-|city\_line|Line no. for city field, 0 if not shown|UShort| |
-|city\_subpos|Position within line for city field|UShort| |
-|city\_leadtext|Lead text resource ID for city field, 0 = no leadtext|Id| |
-|city\_zip|Zip lookup functionality for city field: 0 = none, 1 = source, 2 = target|UShort| |
-|city\_length|Field length in characters for city field|UShort| |
-|city\_flags|Field flags for city field: See EAddrFormatFlags enum|UShort| |
-|city\_mask|Formatting mask for city field|String(9)| |
-|county\_line|Line no. for county field, 0 if not shown|UShort| |
-|county\_subpos|Position within line for county field|UShort| |
-|county\_leadtext|Lead text resource ID for county field, 0 = no leadtext|Id| |
-|county\_zip|Zip lookup functionality for county field: 0 = none, 1 = source, 2 = target|UShort| |
-|county\_length|Field length in characters for county field|UShort| |
-|county\_flags|Field flags for county field: See EAddrFormatFlags enum|UShort| |
-|county\_mask|Formatting mask for county field|String(9)| |
-|state\_line|Line no. for state field, 0 if not shown|UShort| |
-|state\_subpos|Position within line for state field|UShort| |
-|state\_leadtext|Lead text resource ID for state field, 0 = no leadtext|Id| |
-|state\_zip|Zip lookup functionality for state field: 0 = none, 1 = source, 2 = target|UShort| |
-|state\_length|Field length in characters for state field|UShort| |
-|state\_flags|Field flags for state field: See EAddrFormatFlags enum|UShort| |
-|state\_mask|Formatting mask for state field|String(9)| |
-|zip\_line|Line no. for zip field, 0 if not shown|UShort| |
-|zip\_subpos|Position within line for zip field|UShort| |
-|zip\_leadtext|Lead text resource ID for zip field, 0 = no leadtext|Id| |
-|zip\_zip|Zip lookup functionality for zip field: 0 = none, 1 = source, 2 = target|UShort| |
-|zip\_length|Field length in characters for zip field|UShort| |
-|zip\_flags|Field flags for zip field: See EAddrFormatFlags enum|UShort| |
-|zip\_mask|Formatting mask for zip field|String(9)| |
-|extraFlags|OBSOLETE: Extra flags for tag substitution mechanism, see idb.h. This function has been taken over by the tag-based formatting, controlled by the labelLayout and labelLayout2 fields|UInt| |
-|labelLayout|Format specification for labels, uses standard tags|String(254)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|labelLayout2|Part two of format specification, concatenated with part one above|String(254)|&#x25CF;|
-|isBuiltIn|Is this row populated by SuperOffice?|Bool|&#x25CF;|
+|addressformat\_id|Primary key|PK|No|
+|name|Name of address format (descriptive, multi-language)|String(239)|No|
+|layout\_id|Corresponds to Country.layout_id|ShortId|No|
+|atype\_idx|Corresponds to Address.atype_idx|UShort|No|
+|address1\_line|Line no. for address1 field, 0 if not shown|UShort|No|
+|address1\_subpos|Position within line for address1 field|UShort|No|
+|address1\_leadtext|Lead text resource ID for address1 field, 0 = no leadtext|Id|No|
+|address1\_zip|Zip lookup functionality for address1 field: 0 = none, 1 = source, 2 = target|UShort|No|
+|address1\_length|Field length in characters for address1 field|UShort|No|
+|address1\_flags|Field flags for address1 field: See EAddrFormatFlags enum|UShort|No|
+|address1\_mask|Formatting mask for address1 field|String(9)|No|
+|address2\_line|Line no. for address2 field, 0 if not shown|UShort|No|
+|address2\_subpos|Position within line for address2 field|UShort|No|
+|address2\_leadtext|Lead text resource ID for address2 field, 0 = no leadtext|Id|No|
+|address2\_zip|Zip lookup functionality for address2 field: 0 = none, 1 = source, 2 = target|UShort|No|
+|address2\_length|Field length in characters for address2 field|UShort|No|
+|address2\_flags|Field flags for address2 field: See EAddrFormatFlags enum|UShort|No|
+|address2\_mask|Formatting mask for address2 field|String(9)|No|
+|address3\_line|Line no. for address3 field, 0 if not shown|UShort|No|
+|address3\_subpos|Position within line for address3 field|UShort|No|
+|address3\_leadtext|Lead text resource ID for address3 field, 0 = no leadtext|Id|No|
+|address3\_zip|Zip lookup functionality for address3 field: 0 = none, 1 = source, 2 = target|UShort|No|
+|address3\_length|Field length in characters for address3 field|UShort|No|
+|address3\_flags|Field flags for address3 field: See EAddrFormatFlags enum|UShort|No|
+|address3\_mask|Formatting mask for address3 field|String(9)|No|
+|city\_line|Line no. for city field, 0 if not shown|UShort|No|
+|city\_subpos|Position within line for city field|UShort|No|
+|city\_leadtext|Lead text resource ID for city field, 0 = no leadtext|Id|No|
+|city\_zip|Zip lookup functionality for city field: 0 = none, 1 = source, 2 = target|UShort|No|
+|city\_length|Field length in characters for city field|UShort|No|
+|city\_flags|Field flags for city field: See EAddrFormatFlags enum|UShort|No|
+|city\_mask|Formatting mask for city field|String(9)|No|
+|county\_line|Line no. for county field, 0 if not shown|UShort|No|
+|county\_subpos|Position within line for county field|UShort|No|
+|county\_leadtext|Lead text resource ID for county field, 0 = no leadtext|Id|No|
+|county\_zip|Zip lookup functionality for county field: 0 = none, 1 = source, 2 = target|UShort|No|
+|county\_length|Field length in characters for county field|UShort|No|
+|county\_flags|Field flags for county field: See EAddrFormatFlags enum|UShort|No|
+|county\_mask|Formatting mask for county field|String(9)|No|
+|state\_line|Line no. for state field, 0 if not shown|UShort|No|
+|state\_subpos|Position within line for state field|UShort|No|
+|state\_leadtext|Lead text resource ID for state field, 0 = no leadtext|Id|No|
+|state\_zip|Zip lookup functionality for state field: 0 = none, 1 = source, 2 = target|UShort|No|
+|state\_length|Field length in characters for state field|UShort|No|
+|state\_flags|Field flags for state field: See EAddrFormatFlags enum|UShort|No|
+|state\_mask|Formatting mask for state field|String(9)|No|
+|zip\_line|Line no. for zip field, 0 if not shown|UShort|No|
+|zip\_subpos|Position within line for zip field|UShort|No|
+|zip\_leadtext|Lead text resource ID for zip field, 0 = no leadtext|Id|No|
+|zip\_zip|Zip lookup functionality for zip field: 0 = none, 1 = source, 2 = target|UShort|No|
+|zip\_length|Field length in characters for zip field|UShort|No|
+|zip\_flags|Field flags for zip field: See EAddrFormatFlags enum|UShort|No|
+|zip\_mask|Formatting mask for zip field|String(9)|No|
+|extraFlags|OBSOLETE: Extra flags for tag substitution mechanism, see idb.h. This function has been taken over by the tag-based formatting, controlled by the labelLayout and labelLayout2 fields|UInt|No|
+|labelLayout|Format specification for labels, uses standard tags|String(254)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|labelLayout2|Part two of format specification, concatenated with part one above|String(254)|Yes|
+|isBuiltIn|Is this row populated by SuperOffice?|Bool|Yes|
+
 
 ![AddressFormat table relationship diagram](/media/loc/en/database/tables/AddressFormat.png)
 
@@ -96,6 +95,7 @@ Address formats for GUI and labels. See more information; Addressformat on http;
 |------|-------------|
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -105,3 +105,4 @@ Address formats for GUI and labels. See more information; Addressformat on http;
 ## Security Flags
 
 * No access control via user's Role.
+

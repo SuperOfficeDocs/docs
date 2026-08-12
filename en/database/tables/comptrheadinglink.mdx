@@ -1,31 +1,30 @@
 ---
-uid: table-ComptrHeadingLink
 title: ComptrHeadingLink table
 description: Heading link table for Comptr, for MDO headers
 generated: true
-keywords: ['database table ComptrHeadingLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Comptrheadinglink from "./includes/comptrheadinglink.md";
+import Comptrheadinglink from "./includes/comptrheadinglink.mdx";
 
-# ComptrHeadingLink Table (111)
+## ComptrHeadingLink Table (111)
 
 Heading link table for Comptr, for MDO headers
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|comptrheadinglink\_id|Primary key|PK| |
-|comptr\_id|Link to Comptr list table|FK [Comptr](./comptr)| |
-|heading\_id|Link to Heading table|FK [Heading](./heading)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|comptrheadinglink\_id|Primary key|PK|No|
+|comptr\_id|Link to Comptr list table|FK [Comptr](./comptr.mdx)|No|
+|heading\_id|Link to Heading table|FK [Heading](./heading.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![ComptrHeadingLink table relationship diagram](/media/loc/en/database/tables/ComptrHeadingLink.png)
 
@@ -46,6 +45,7 @@ Heading link table for Comptr, for MDO headers
 |[Comptr](./comptr)  |Comptr list table. List of all possible competitors (sale). |
 |[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ Heading link table for Comptr, for MDO headers
 ## Security Flags
 
 * No access control via user's Role.
+

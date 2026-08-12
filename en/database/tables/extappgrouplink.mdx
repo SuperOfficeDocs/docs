@@ -1,31 +1,30 @@
 ---
-uid: table-ExtAppGroupLink
 title: ExtAppGroupLink table
 description: User group link table for ExtApp, for MDO item hiding
 generated: true
-keywords: ['database table ExtAppGroupLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Extappgrouplink from "./includes/extappgrouplink.md";
+import Extappgrouplink from "./includes/extappgrouplink.mdx";
 
-# ExtAppGroupLink Table (134)
+## ExtAppGroupLink Table (134)
 
 User group link table for ExtApp, for MDO item hiding
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|extappgrouplink\_id|Primary key|PK| |
-|extapp\_id|Link to ExtApp list table|FK [ExtApp](./extapp)| |
-|group\_id|Link to Group table|FK [UserGroup](./usergroup)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|extappgrouplink\_id|Primary key|PK|No|
+|extapp\_id|Link to ExtApp list table|FK [ExtApp](./extapp.mdx)|No|
+|group\_id|Link to Group table|FK [UserGroup](./usergroup.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![ExtAppGroupLink table relationship diagram](/media/loc/en/database/tables/ExtAppGroupLink.png)
 
@@ -46,6 +45,7 @@ User group link table for ExtApp, for MDO item hiding
 |[ExtApp](./extapp)  |ExtApp list table. Applications startable from SuperOffice |
 |[UserGroup](./usergroup)  |Secondary user groups |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ User group link table for ExtApp, for MDO item hiding
 ## Security Flags
 
 * No access control via user's Role.
+

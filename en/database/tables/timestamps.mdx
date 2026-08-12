@@ -1,37 +1,36 @@
 ---
-uid: table-timestamps
 title: timestamps table
 description: Timestamp information
 generated: true
-keywords: ['database table timestamps']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Timestamps from "./includes/timestamps.md";
+import Timestamps from "./includes/timestamps.mdx";
 
-# timestamps Table (300)
+## timestamps Table (300)
 
 Timestamp information
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|mail\_filter|Timestamp for the last time importMail was started.|DateTime|&#x25CF;|
-|mail\_sender|Timestamp for the last time mailSender was started.|DateTime|&#x25CF;|
-|ejournal\_cron|Timestamp for the last time ejournalCron was started.|DateTime|&#x25CF;|
-|autologout|Timestamp for when users should be checked for automatic logout.|DateTime|&#x25CF;|
-|activate\_tickets|Timestamp for when tickets should be checked for activation.|DateTime|&#x25CF;|
-|ticket\_alert|Timestamp for when tickets should be checked for escalation.|DateTime|&#x25CF;|
-|delete\_temp\_ticket|Timestamp for when tickets should be checked for deletion.|DateTime|&#x25CF;|
-|active\_tickets||DateTime|&#x25CF;|
-|critical\_email|Timestamp for when we last emailed a critical email to panic_email (usually error@superoffice.com).|DateTime|&#x25CF;|
-|last\_ticketdel|Timestamp for when we last physically removed tickets tagged for deletion.|DateTime|&#x25CF;|
-|build\_faq|Timestamp for when the FAQ search tree was last rebuilt.|DateTime|&#x25CF;|
-|week\_stat|Timestamp for when the week statistics was last sent.|DateTime|&#x25CF;|
-|mailsync|Timestamp for syncing crm inbox2 email accounts|DateTime|&#x25CF;|
+|id|The primary key (auto-incremented)|PK|No|
+|mail\_filter|Timestamp for the last time importMail was started.|DateTime|Yes|
+|mail\_sender|Timestamp for the last time mailSender was started.|DateTime|Yes|
+|ejournal\_cron|Timestamp for the last time ejournalCron was started.|DateTime|Yes|
+|autologout|Timestamp for when users should be checked for automatic logout.|DateTime|Yes|
+|activate\_tickets|Timestamp for when tickets should be checked for activation.|DateTime|Yes|
+|ticket\_alert|Timestamp for when tickets should be checked for escalation.|DateTime|Yes|
+|delete\_temp\_ticket|Timestamp for when tickets should be checked for deletion.|DateTime|Yes|
+|active\_tickets||DateTime|Yes|
+|critical\_email|Timestamp for when we last emailed a critical email to panic_email (usually error@superoffice.com).|DateTime|Yes|
+|last\_ticketdel|Timestamp for when we last physically removed tickets tagged for deletion.|DateTime|Yes|
+|build\_faq|Timestamp for when the FAQ search tree was last rebuilt.|DateTime|Yes|
+|week\_stat|Timestamp for when the week statistics was last sent.|DateTime|Yes|
+|mailsync|Timestamp for syncing crm inbox2 email accounts|DateTime|Yes|
+
 
 ![timestamps table relationship diagram](/media/loc/en/database/tables/timestamps.png)
 
@@ -49,3 +48,4 @@ Timestamp information
 ## Security Flags
 
 * No access control via user's Role.
+

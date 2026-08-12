@@ -1,28 +1,27 @@
 ---
-uid: table-s_washing
 title: s_washing table
 description: Register of all bounced mail to enabel washing
 generated: true
-keywords: ['database table s_washing']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import SWashing from "./includes/s-washing.md";
+import SWashing from "./includes/s-washing.mdx";
 
-# s\_washing Table (341)
+## s\_washing Table (341)
 
 Register of all bounced mail to enabel washing
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|email\_addr|The bounced email address|String(255)| |
-|bounce|How many bounces we have received on this address.|Int| |
-|shipments|How many times we have sent to this address|Int| |
-|type|Type of customer (internal/external)|type|&#x25CF;|
+|id|Primary key|PK|No|
+|email\_addr|The bounced email address|String(255)|No|
+|bounce|How many bounces we have received on this address.|Int|No|
+|shipments|How many times we have sent to this address|Int|No|
+|type|Type of customer (internal/external)|type|Yes|
+
 
 ![s_washing table relationship diagram](/media/loc/en/database/tables/s_washing.png)
 
@@ -40,3 +39,4 @@ Register of all bounced mail to enabel washing
 ## Security Flags
 
 * No access control via user's Role.
+

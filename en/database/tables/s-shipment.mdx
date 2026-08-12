@@ -1,69 +1,68 @@
 ---
-uid: table-s_shipment
 title: s_shipment table
 description: Contains info about one shipment. The addresses are stored in s_shipment_addr
 generated: true
-keywords: ['database table s_shipment']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import SShipment from "./includes/s-shipment.md";
+import SShipment from "./includes/s-shipment.mdx";
 
-# s\_shipment Table (334)
+## s\_shipment Table (334)
 
 Contains info about one shipment. The addresses are stored in s_shipment_addr
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|description|Describes the shipment|String(255)|&#x25CF;|
-|message\_id|The id of the message that is sent in this shipment|FK [s_message](./s-message)| |
-|start\_date|The date and time when to start this shipment|DateTime|&#x25CF;|
-|end\_date|Is set when this shipment is ended|DateTime|&#x25CF;|
-|from\_addr|Email address to put in the From header of the messages|String(255)| |
-|reply\_addr|Email address to put in the Reply To: header of the messages|String(255)|&#x25CF;|
-|envelope\_from|Email address for the MTA envelope (where bounces are returned)|String(255)|&#x25CF;|
-|smtp\_serv|The server to use for this shipment.|String(255)|&#x25CF;|
-|smtp\_port|The port of the SMTP server to use for this shipment.|Int| |
-|send\_rate|Maximum number of messages sent per minute. |Int| |
-|status|Sending/stopped/failed etc.|Enum [ShipmentStatus](./enums/shipmentstatus)| |
-|recipients|The total number of recipients to send message to.|Int| |
-|actual\_rate|The actual rate of messages per minute. can be lower than send_rate|Int| |
-|actual\_time|The time of the last checkpoint|DateTime|&#x25CF;|
-|actual\_count|Number of emails sent at the last checkpoint|Int| |
-|current\_sender|Timestamp to identify which ejsender that owns this shipment|Int|&#x25CF;|
-|ticket\_owner|The owner of the ticket if any is created while sending out a shipment. -1 if no ticket should be automatically delegated, 1 if the ticket is unassigned, &amp;gt;1 for all others|Int|&#x25CF;|
-|ticket\_category|The category of tickets created while sending out if any. -1 if no ticket should be created|Int|&#x25CF;|
-|flags|Various flags for a shipment|UInt|&#x25CF;|
-|folder\_id|The folder which this shipment belongs to. -1 indicates that the shipment is on the root|Int| |
-|configuration|This field indicates what kind of shipment this is.|Int| |
-|selection\_id|Set if this shipment should be related to a Selection|FK [selection](./selection)|&#x25CF;|
-|project\_id|Set if this shipment should be related to a Project|FK [project](./project)|&#x25CF;|
-|generated\_document\_id|ID of the merged document that is the result of the shipment|FK [document](./document)|&#x25CF;|
-|registered|Registered when|UtcDateTime|&#x25CF;|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)|&#x25CF;|
-|updated|Last updated when|UtcDateTime|&#x25CF;|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|&#x25CF;|
-|updatedCount|Number of updates made to this record|UShort|&#x25CF;|
-|active\_pane|The currently active pane in the mailing wizard|Int|&#x25CF;|
-|sorting|Which sorting should be used on the document mailing recipient list, used when generating PDF|Enum [RecipientSorting](./enums/recipientsorting)| |
-|delivered\_num|Number of mails sent minus bounces|Int|&#x25CF;|
-|open\_num|Number of opened emails count|Int|&#x25CF;|
-|open\_rate|Open rate % (open_num / delivered_num)|Double|&#x25CF;|
-|click\_num|Number of links clicked|Int|&#x25CF;|
-|click\_rate|Click rate % (click_num / delivered_num)|Double|&#x25CF;|
-|hardbounce\_num|Number of hard bounces|Int|&#x25CF;|
-|hardbounce\_rate|Hard bounce rate % (hardbounce_num / number_transmitted)|Double|&#x25CF;|
-|softbounce\_num|Number of soft bounces|Int|&#x25CF;|
-|softbounce\_rate|Soft bounce rate % (softbounce_num / number_transmitted)|Double|&#x25CF;|
-|totalbounce\_num|Total number of bounces|Int|&#x25CF;|
-|totalbounce\_rate|Total bounce rate % (totalbounce_num / number_transmitted)|Double|&#x25CF;|
-|are\_statistics\_dirty|Indicates if shipment needs statistics calculation, set by code that changes the shipment or receives clicks/opens|Bool| |
-|sent\_num|Number of mails sent|Int|&#x25CF;|
-|shipmenttype\_id|Id of subscriptionType that this shipment has, so we may check for reservations|FK [ShipmentType](./shipmenttype)|&#x25CF;|
+|id|Primary key|PK|No|
+|description|Describes the shipment|String(255)|Yes|
+|message\_id|The id of the message that is sent in this shipment|FK [s_message](./s-message.mdx)|No|
+|start\_date|The date and time when to start this shipment|DateTime|Yes|
+|end\_date|Is set when this shipment is ended|DateTime|Yes|
+|from\_addr|Email address to put in the From header of the messages|String(255)|No|
+|reply\_addr|Email address to put in the Reply To: header of the messages|String(255)|Yes|
+|envelope\_from|Email address for the MTA envelope (where bounces are returned)|String(255)|Yes|
+|smtp\_serv|The server to use for this shipment.|String(255)|Yes|
+|smtp\_port|The port of the SMTP server to use for this shipment.|Int|No|
+|send\_rate|Maximum number of messages sent per minute. |Int|No|
+|status|Sending/stopped/failed etc.|Enum [ShipmentStatus](./enums/shipmentstatus.mdx)|No|
+|recipients|The total number of recipients to send message to.|Int|No|
+|actual\_rate|The actual rate of messages per minute. can be lower than send_rate|Int|No|
+|actual\_time|The time of the last checkpoint|DateTime|Yes|
+|actual\_count|Number of emails sent at the last checkpoint|Int|No|
+|current\_sender|Timestamp to identify which ejsender that owns this shipment|Int|Yes|
+|ticket\_owner|The owner of the ticket if any is created while sending out a shipment. -1 if no ticket should be automatically delegated, 1 if the ticket is unassigned, &amp;gt;1 for all others|Int|Yes|
+|ticket\_category|The category of tickets created while sending out if any. -1 if no ticket should be created|Int|Yes|
+|flags|Various flags for a shipment|UInt|Yes|
+|folder\_id|The folder which this shipment belongs to. -1 indicates that the shipment is on the root|Int|No|
+|configuration|This field indicates what kind of shipment this is.|Int|No|
+|selection\_id|Set if this shipment should be related to a Selection|FK [selection](./selection.mdx)|Yes|
+|project\_id|Set if this shipment should be related to a Project|FK [project](./project.mdx)|Yes|
+|generated\_document\_id|ID of the merged document that is the result of the shipment|FK [document](./document.mdx)|Yes|
+|registered|Registered when|UtcDateTime|Yes|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|Yes|
+|updated|Last updated when|UtcDateTime|Yes|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|Yes|
+|updatedCount|Number of updates made to this record|UShort|Yes|
+|active\_pane|The currently active pane in the mailing wizard|Int|Yes|
+|sorting|Which sorting should be used on the document mailing recipient list, used when generating PDF|Enum [RecipientSorting](./enums/recipientsorting.mdx)|No|
+|delivered\_num|Number of mails sent minus bounces|Int|Yes|
+|open\_num|Number of opened emails count|Int|Yes|
+|open\_rate|Open rate % (open_num / delivered_num)|Double|Yes|
+|click\_num|Number of links clicked|Int|Yes|
+|click\_rate|Click rate % (click_num / delivered_num)|Double|Yes|
+|hardbounce\_num|Number of hard bounces|Int|Yes|
+|hardbounce\_rate|Hard bounce rate % (hardbounce_num / number_transmitted)|Double|Yes|
+|softbounce\_num|Number of soft bounces|Int|Yes|
+|softbounce\_rate|Soft bounce rate % (softbounce_num / number_transmitted)|Double|Yes|
+|totalbounce\_num|Total number of bounces|Int|Yes|
+|totalbounce\_rate|Total bounce rate % (totalbounce_num / number_transmitted)|Double|Yes|
+|are\_statistics\_dirty|Indicates if shipment needs statistics calculation, set by code that changes the shipment or receives clicks/opens|Bool|No|
+|sent\_num|Number of mails sent|Int|Yes|
+|shipmenttype\_id|Id of subscriptionType that this shipment has, so we may check for reservations|FK [ShipmentType](./shipmenttype.mdx)|Yes|
+
 
 ![s_shipment table relationship diagram](/media/loc/en/database/tables/s_shipment.png)
 
@@ -96,6 +95,7 @@ Contains info about one shipment. The addresses are stored in s_shipment_addr
 |[ShipmentType](./shipmenttype)  |Shipment type list table. Classification of a mailing, allowing recipients to subscribe to lists |
 |[sms](./sms)  |This table will hold outgoing sms messages when transmitted with WebServices |
 
+
 ## Replication Flags
 
 * None
@@ -103,3 +103,4 @@ Contains info about one shipment. The addresses are stored in s_shipment_addr
 ## Security Flags
 
 * No access control via user's Role.
+

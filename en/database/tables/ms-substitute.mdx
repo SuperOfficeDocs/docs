@@ -1,29 +1,28 @@
 ---
-uid: table-ms_substitute
 title: ms_substitute table
 description: Regexp for extracting info from emails when they enter they system
 generated: true
-keywords: ['database table ms_substitute']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import MsSubstitute from "./includes/ms-substitute.md";
+import MsSubstitute from "./includes/ms-substitute.mdx";
 
-# ms\_substitute Table (313)
+## ms\_substitute Table (313)
 
 Regexp for extracting info from emails when they enter they system
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|ms\_filter\_id||FK [ms_filter](./ms-filter)| |
-|parser\_name|The name of the variable as used in the parser.|String(255)|&#x25CF;|
-|the\_regexp|The regular expression searched for.|String(255)|&#x25CF;|
-|subst\_type|Enum indicating the target domain for this regexp (customer connection, parser, etc).|subst_type|&#x25CF;|
-|flags|Bitmap for flags for this entry.|Int|&#x25CF;|
+|id|The primary key (auto-incremented)|PK|No|
+|ms\_filter\_id||FK [ms_filter](./ms-filter.mdx)|No|
+|parser\_name|The name of the variable as used in the parser.|String(255)|Yes|
+|the\_regexp|The regular expression searched for.|String(255)|Yes|
+|subst\_type|Enum indicating the target domain for this regexp (customer connection, parser, etc).|subst_type|Yes|
+|flags|Bitmap for flags for this entry.|Int|Yes|
+
 
 ![ms_substitute table relationship diagram](/media/loc/en/database/tables/ms_substitute.png)
 
@@ -41,6 +40,7 @@ Regexp for extracting info from emails when they enter they system
 |------|-------------|
 |[ms\_filter](./ms-filter)  |This table contains email filters. These are the filters allowing you to do advanced parsing of incomming emails. |
 
+
 ## Replication Flags
 
 * None
@@ -48,3 +48,4 @@ Regexp for extracting info from emails when they enter they system
 ## Security Flags
 
 * No access control via user's Role.
+

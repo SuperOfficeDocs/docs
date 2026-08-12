@@ -1,0 +1,22 @@
+---
+title: Enum values for NavigationKind
+description: Lists the enum values for NavigationKind.
+generated: true
+keywords: database enum
+content_type: reference
+envir: online
+---
+
+## NavigationKind Enum
+
+Current (persisted navigation state) or Recent (recent-navigation entry)
+
+| Name | Value | Description |
+|------|-------|-------------|
+|Unknown|0|Unknown - used when initializing|
+|Current|1|Persisted current navigation state (the soprotocol trace)|
+|Recent|2|A recent-navigation entry, ordered by rank (highest = most recent)|
+
+## Usage
+
+* [navigation_history](../navigation-history).kind - Per-associate navigation state: Current (persisted soprotocol) and Recent navigation entries, keyed by client and key

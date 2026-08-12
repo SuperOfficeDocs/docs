@@ -1,35 +1,34 @@
 ---
-uid: table-ImportRelation
 title: ImportRelation table
 description: Relations between import objects
 generated: true
-keywords: ['database table ImportRelation']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Importrelation from "./includes/importrelation.md";
+import Importrelation from "./includes/importrelation.mdx";
 
-# ImportRelation Table (188)
+## ImportRelation Table (188)
 
 Relations between import objects
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|ImportRelation\_id|Primary key|PK| |
-|source|The dependent object (source of relation edge)|FK [ImportObject](./importobject)| |
-|target|The primary object (target of relation edge)|FK [ImportObject](./importobject)| |
-|edgeColour|1=Red, 2=Black|UShort| |
-|foreignKey|The database field ID of the foreign key field in the dependent table. NOTE If it is 0, it means this relation should NOT lead to an edge in the graph.|FieldId| |
-|forcePrimary|1=Forces creation of primary object as soon as dependent is created|UShort| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|isBuiltin|1 = This row populated and maintained by SuperOffice|UShort|&#x25CF;|
+|ImportRelation\_id|Primary key|PK|No|
+|source|The dependent object (source of relation edge)|FK [ImportObject](./importobject.mdx)|No|
+|target|The primary object (target of relation edge)|FK [ImportObject](./importobject.mdx)|No|
+|edgeColour|1=Red, 2=Black|UShort|No|
+|foreignKey|The database field ID of the foreign key field in the dependent table. NOTE If it is 0, it means this relation should NOT lead to an edge in the graph.|FieldId|No|
+|forcePrimary|1=Forces creation of primary object as soon as dependent is created|UShort|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|isBuiltin|1 = This row populated and maintained by SuperOffice|UShort|Yes|
+
 
 ![ImportRelation table relationship diagram](/media/loc/en/database/tables/ImportRelation.png)
 
@@ -49,6 +48,7 @@ Relations between import objects
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[ImportObject](./importobject)  |Import object types - see localetext for names. |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -58,3 +58,4 @@ Relations between import objects
 ## Security Flags
 
 * No access control via user's Role.
+

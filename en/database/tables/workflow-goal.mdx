@@ -1,31 +1,30 @@
 ---
-uid: table-workflow_goal
 title: workflow_goal table
 description: A set of goals related to a workflow. Some goals will have search criterias associated with it to determine if the goal has been reached.
 generated: true
-keywords: ['database table workflow_goal']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import WorkflowGoal from "./includes/workflow-goal.md";
+import WorkflowGoal from "./includes/workflow-goal.mdx";
 
-# workflow\_goal Table (528)
+## workflow\_goal Table (529)
 
 A set of goals related to a workflow. Some goals will have search criterias associated with it to determine if the goal has been reached.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|workflow\_goal\_id|Primary key|PK| |
-|workflow\_id|The flow this goal belongs to|FK [workflow](./workflow)|&#x25CF;|
-|goal\_type|A goal that will conclude the workflow|Enum [WorkflowGoalType](./enums/workflowgoaltype)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|workflow\_goal\_id|Primary key|PK|No|
+|workflow\_id|The flow this goal belongs to|FK [workflow](./workflow.mdx)|Yes|
+|goal\_type|A goal that will conclude the workflow|Enum [WorkflowGoalType](./enums/workflowgoaltype.mdx)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![workflow_goal table relationship diagram](/media/loc/en/database/tables/workflow_goal.png)
 
@@ -43,6 +42,7 @@ A set of goals related to a workflow. Some goals will have search criterias asso
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[workflow](./workflow)  |SuperOffice specific info about a workflow |
 
+
 ## Replication Flags
 
 * None
@@ -50,3 +50,4 @@ A set of goals related to a workflow. Some goals will have search criterias asso
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix on the table's parent.
+

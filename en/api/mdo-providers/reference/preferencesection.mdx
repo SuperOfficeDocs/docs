@@ -1,0 +1,89 @@
+---
+title: preferencesection
+keywords: mdoprovider mdo provider preferencesection
+description: MDO Provider that retrieves a list of preference sections
+generated: true
+content_type: reference
+envir: online
+---
+
+## "preferencesection" MDO List
+MDO Provider that retrieves a list of preference sections
+
+Preferences are described in the prefdesc table. This provider will retrieve descriptions for all sections.
+
+
+If addidionalInfo contains crmgui and/or admingui, only sections with any of the named access flags are
+returned (default, when neither is given: crmgui OR admingui).
+
+
+Each item contains the programmatic section name in the extraInfo field.
+
+Implemented by the <see cref="T:SuperOffice.CRM.Lists.PreferenceSectionProvider">PreferenceSectionProvider</see> class.
+The name of the MDO list is 'preferencesection'.
+
+## Additional Attributes
+
+| Description | Name | Example Value |
+|-----|-----|------|
+|Optional ';'-separated tokens: crmgui and/or admingui to restrict to sections that have any of the named GUI access flags (default: both)| |admingui|
+
+
+
+
+
+## Sample Request
+
+```http!
+GET /api/v1/MDOList/preferencesection
+Authorization: Basic dGplMDpUamUw
+Accept: application/json; charset=utf-8
+Accept-Language: *
+
+```
+
+## Sample Code
+```cs
+var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("preferencesection", forceFlatList: true);
+foreach (var item in listProvider.RootItems) {
+    Console.WriteLine("{0} {1} {2} {3}", 
+         item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
+}
+```
+
+## Sample Output
+
+|Id   | Name  |StyleHint|ExtraInfo |
+| --- | ----- | ------- | -------- |
+|1000541|AI||AI|
+|1000010|Customer Centre password policy||ccAuthentication|
+|1000007|Client||Client|
+|1000545|SuperOffice Workspace Assist||Copilot|
+|1000020|Statistics||DataCollection|
+|1000032|Default values||Defaults|
+|1000067|Diary||DiaryView|
+|1000317|Notifications for e-mail||emailNotification|
+|1000094|Filter Dialog||FilterDialog|
+|1000096|Freetext search||Freetext|
+|1000100|Functions||Functions|
+|1000536|In-app communication||InApp|
+|1000156|E-mail||Mail|
+|1000214|Marketing||Mailing|
+|1000222|Grouped lists||MDOList|
+|1000533|Data mirroring||Mirroring|
+|1000293|Web Services||NetServices|
+|1000323|Notifications via popup||notification|
+|1000331|Notifications via e-mail||notificationEmail|
+|1000339|Notifications via SMS||notificationSms|
+|1000355|Contact||Person|
+
+
+## Related MDO Lists
+
+* "preferencesectionheadings"
+* "preferencesectionheadingswithallitem"
+* "preferencesectionheadingswithallitemwithnoselection"
+* "preferencesectionheadingswithnoselection"
+* "preferencesectionwithallitem"
+* "preferencesectionwithallitemwithnoselection"
+* "preferencesectionwithnoselection"

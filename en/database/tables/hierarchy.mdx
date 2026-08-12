@@ -1,33 +1,32 @@
 ---
-uid: table-hierarchy
 title: hierarchy table
 description: This table contains folders used to group the extra tables in the system.
 generated: true
-keywords: ['database table hierarchy']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Hierarchy from "./includes/hierarchy.md";
+import Hierarchy from "./includes/hierarchy.mdx";
 
-# hierarchy Table (306)
+## hierarchy Table (306)
 
 This table contains folders used to group the extra tables in the system.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|domain|Domain seperating the different hierarchy|Int| |
-|parent\_id|Parent table|FK [hierarchy](./hierarchy)| |
-|name|Name of this hierarchy folder.|String(128)| |
-|fullname|The full name of this category, i.e. Foo/bar/test.|Clob|&#x25CF;|
-|registered|Registered when|UtcDateTime|&#x25CF;|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)|&#x25CF;|
-|updated|Last updated when|UtcDateTime|&#x25CF;|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|&#x25CF;|
-|updatedCount|Number of updates made to this record|UShort|&#x25CF;|
+|id|The primary key (auto-incremented)|PK|No|
+|domain|Domain seperating the different hierarchy|Int|No|
+|parent\_id|Parent table|FK [hierarchy](./hierarchy.mdx)|No|
+|name|Name of this hierarchy folder.|String(128)|No|
+|fullname|The full name of this category, i.e. Foo/bar/test.|Clob|Yes|
+|registered|Registered when|UtcDateTime|Yes|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|Yes|
+|updated|Last updated when|UtcDateTime|Yes|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|Yes|
+|updatedCount|Number of updates made to this record|UShort|Yes|
+
 
 ![hierarchy table relationship diagram](/media/loc/en/database/tables/hierarchy.png)
 
@@ -56,6 +55,7 @@ This table contains folders used to group the extra tables in the system.
 |[hierarchy](./hierarchy)  |This table contains folders used to group the extra tables in the system. |
 |[screen\_definition](./screen-definition)  |A configurable screen |
 
+
 ## Replication Flags
 
 * None
@@ -63,3 +63,4 @@ This table contains folders used to group the extra tables in the system.
 ## Security Flags
 
 * No access control via user's Role.
+

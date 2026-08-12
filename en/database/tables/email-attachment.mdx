@@ -1,32 +1,31 @@
 ---
-uid: table-email_attachment
 title: email_attachment table
 description: Attachment info related to an email_item
 generated: true
-keywords: ['database table email_attachment']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import EmailAttachment from "./includes/email-attachment.md";
+import EmailAttachment from "./includes/email-attachment.mdx";
 
-# email\_attachment Table (495)
+## email\_attachment Table (495)
 
 Attachment info related to an email_item
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|email\_attachment\_id|Primary key|PK| |
-|email\_item\_id|Id of the email_item|FK [email_item](./email-item)|&#x25CF;|
-|cid|The actual cid or the index of the mime part (an integer)|String(255)|&#x25CF;|
-|description|Attachment description|String(255)|&#x25CF;|
-|filename|Filename of attachment|String(255)|&#x25CF;|
-|disposition|Attachment disposition|String(255)|&#x25CF;|
-|type|Attachment type|String(255)|&#x25CF;|
-|encoding|The attachment encoding|String(255)|&#x25CF;|
-|size|Attachment file size|Int|&#x25CF;|
+|email\_attachment\_id|Primary key|PK|No|
+|email\_item\_id|Id of the email_item|FK [email_item](./email-item.mdx)|Yes|
+|cid|The actual cid or the index of the mime part (an integer)|String(255)|Yes|
+|description|Attachment description|String(255)|Yes|
+|filename|Filename of attachment|String(255)|Yes|
+|disposition|Attachment disposition|String(255)|Yes|
+|type|Attachment type|String(255)|Yes|
+|encoding|The attachment encoding|String(255)|Yes|
+|size|Attachment file size|Int|Yes|
+
 
 ![email_attachment table relationship diagram](/media/loc/en/database/tables/email_attachment.png)
 
@@ -44,6 +43,7 @@ Attachment info related to an email_item
 |------|-------------|
 |[email\_item](./email-item)  |Email data |
 
+
 ## Replication Flags
 
 * None
@@ -51,3 +51,4 @@ Attachment info related to an email_item
 ## Security Flags
 
 * No access control via user's Role.
+
