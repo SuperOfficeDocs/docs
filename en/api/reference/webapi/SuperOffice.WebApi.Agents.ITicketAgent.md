@@ -1,0 +1,2192 @@
+# <a id="SuperOffice_WebApi_Agents_ITicketAgent"></a> Interface ITicketAgent
+
+Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Assembly: SuperOffice.WebApi.dll  
+
+Agent used for Ticket functions
+
+```csharp
+public interface ITicketAgent : IAgentBase, IDisposable
+```
+
+#### Implements
+
+[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
+
+## Methods
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_AcceptTicketsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> AcceptTicketsAsync\(int\[\], RequestOptions\)
+
+Accepts tickets by their ids. Sets owner to current user
+
+```csharp
+Task AcceptTicketsAsync(int[] ticketIds, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketIds` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
+
+Ids of tickets to be accepted.
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
+
+This method has no return value
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_AddAttachmentsAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> AddAttachmentsAsync\(int, int\[\], RequestOptions\)
+
+Connect existing attachments with this TicketMessage. Can connect multiple attachments
+
+```csharp
+Task AddAttachmentsAsync(int ticketMessageEntityId, int[] attachmentIds, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketMessageEntityId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket message to connect the attachments to
+
+`attachmentIds` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
+
+An array of attachments to connect to this TicketMessage
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_BatchForwardAsync_System_Int32___System_String___System_String___System_String___System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> BatchForwardAsync\(int\[\], string\[\], string\[\], string\[\], string, bool, RequestOptions\)
+
+Forwards selected tickets to specified recipients. This method starts a batch task.
+
+```csharp
+Task<int> BatchForwardAsync(int[] ticketIds, string[] to, string[] cc, string[] bcc, string comment, bool closeTicket, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketIds` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
+
+Ids of tickets to be forwarded.
+
+`to` [string](https://learn.microsoft.com/dotnet/api/system.string)\[\]
+
+The To-recipients. Each recipient must be in correct mailbox format (john@example.com or John Doe &lt;john@example.com&gt;).
+
+`cc` [string](https://learn.microsoft.com/dotnet/api/system.string)\[\]
+
+The Cc-recipients. Each recipient must be in correct mailbox format (john@example.com or John Doe &lt;john@example.com&gt;).
+
+`bcc` [string](https://learn.microsoft.com/dotnet/api/system.string)\[\]
+
+The Bcc-recipients. Each recipient must be in correct mailbox format (john@example.com or John Doe &lt;john@example.com&gt;).
+
+`comment` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+Comment will be included before ticket messages. Might be empty
+
+`closeTicket` [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+If true, ticket will be closed after forwarding
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
+
+ID of the new batch task.
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_BatchReplyAsync_SuperOffice_WebApi_Data_TicketBatchReplyData_SuperOffice_WebApi_RequestOptions_"></a> BatchReplyAsync\(TicketBatchReplyData, RequestOptions\)
+
+Replies to the specified tickets. This method starts a batch task.
+
+```csharp
+Task<int> BatchReplyAsync(TicketBatchReplyData batchReplyData, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`batchReplyData` [TicketBatchReplyData](SuperOffice.WebApi.Data.TicketBatchReplyData.md)
+
+All data needed to initiate a mass ticket reply sending.
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
+
+ID of the new batch task.
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_CalculateMessageRecipientsAsync_System_Int32_SuperOffice_WebApi_Data_MessageActionType_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> CalculateMessageRecipientsAsync\(int, MessageActionType, int, RequestOptions\)
+
+Gets recipients for new message
+
+```csharp
+Task<Recipient[]> CalculateMessageRecipientsAsync(int ticketId, MessageActionType actionType, int messageId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket
+
+`actionType` [MessageActionType](SuperOffice.WebApi.Data.MessageActionType.md)
+
+Message action
+
+`messageId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+Optional ID of message being replied. Value &lt;= 0 ignores parameter
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Recipient](SuperOffice.WebApi.Data.Recipient.md)\[\]\>
+
+An array with Recipient objects
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_ClearNotifyAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> ClearNotifyAsync\(int\[\], RequestOptions\)
+
+Clear notification status for one or more tickets.
+
+```csharp
+Task ClearNotifyAsync(int[] ids, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ids` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
+
+List of notify IDs.
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
+
+This method has no return value
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_CopyFromCRMDocumentAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> CopyFromCRMDocumentAsync\(int, RequestOptions\)
+
+Copy CRM document to an attachment
+
+```csharp
+Task<AttachmentEntity> CopyFromCRMDocumentAsync(int documentId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`documentId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the document to copy to an attachment
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[AttachmentEntity](SuperOffice.WebApi.Data.AttachmentEntity.md)\>
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_CopyToTempFileAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> CopyToTempFileAsync\(string, int, RequestOptions\)
+
+Copy ticket attachment to temporary file. Needed for existing document dialog compatibility
+
+```csharp
+Task<string> CopyToTempFileAsync(string filename, int attachmentId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`filename` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+Preferred filename
+
+`attachmentId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the attachment to copy
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+
+Temporary document filename
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_CreateDefaultAttachmentEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultAttachmentEntityAsync\(RequestOptions\)
+
+Set default values into a new AttachmentEntity.
+NetServer calculates default values on the entity, which is required when creating/storing a new instance
+
+```csharp
+Task<AttachmentEntity> CreateDefaultAttachmentEntityAsync(RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[AttachmentEntity](SuperOffice.WebApi.Data.AttachmentEntity.md)\>
+
+A blank AttachmentEntity
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_CreateDefaultForTicketTypeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultForTicketTypeAsync\(int, RequestOptions\)
+
+Create default ticket entity for particular TicketType
+
+```csharp
+Task<TicketEntity> CreateDefaultForTicketTypeAsync(int ticketTypeId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketTypeId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+ID of ticket type
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)\>
+
+Default ticket entity
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_CreateDefaultTicketEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultTicketEntityAsync\(RequestOptions\)
+
+Set default values into a new TicketEntity.
+NetServer calculates default values on the entity, which is required when creating/storing a new instance
+
+```csharp
+Task<TicketEntity> CreateDefaultTicketEntityAsync(RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)\>
+
+A blank TicketEntity
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_CreateDefaultTicketMessageEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultTicketMessageEntityAsync\(RequestOptions\)
+
+Set default values into a new TicketMessageEntity.
+NetServer calculates default values on the entity, which is required when creating/storing a new instance
+
+```csharp
+Task<TicketMessageEntity> CreateDefaultTicketMessageEntityAsync(RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)\>
+
+A blank TicketMessageEntity
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_CreateDefaultTicketRelationEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultTicketRelationEntityAsync\(RequestOptions\)
+
+Set default values into a new TicketRelationEntity.
+NetServer calculates default values on the entity, which is required when creating/storing a new instance
+
+```csharp
+Task<TicketRelationEntity> CreateDefaultTicketRelationEntityAsync(RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketRelationEntity](SuperOffice.WebApi.Data.TicketRelationEntity.md)\>
+
+A blank TicketRelationEntity
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_CreateTicketRelationsAsync_System_Int32___System_Int32_SuperOffice_WebApi_Data_TicketRelationType_System_String_SuperOffice_WebApi_RequestOptions_"></a> CreateTicketRelationsAsync\(int\[\], int, TicketRelationType, string, RequestOptions\)
+
+Create multiple ticket relations in a single call. Returns a result per source ticket indicating success or failure.
+
+```csharp
+Task<TicketRelationResult[]> CreateTicketRelationsAsync(int[] sourceTicketIds, int destinationTicketId, TicketRelationType relationType, string comment, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`sourceTicketIds` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
+
+The ids of the tickets to relate to the destination ticket.
+
+`destinationTicketId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket that the source tickets will be related to.
+
+`relationType` [TicketRelationType](SuperOffice.WebApi.Data.TicketRelationType.md)
+
+The type of relation to create.
+
+`comment` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+Optional comment to store on each relation.
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketRelationResult](SuperOffice.WebApi.Data.TicketRelationResult.md)\[\]\>
+
+Creation results, one per source ticket id.
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_DeleteMessageHeadersAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> DeleteMessageHeadersAsync\(int\[\], RequestOptions\)
+
+Removes headers from the message as specified in the collection of entity ids. The ids are message header ids (message header primary key)
+
+```csharp
+Task DeleteMessageHeadersAsync(int[] headerIds, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`headerIds` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
+
+Message header primary keys
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
+
+This method has no return value
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_DeleteTicketEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteTicketEntityAsync\(int, RequestOptions\)
+
+Delete a ticket
+
+```csharp
+Task DeleteTicketEntityAsync(int ticketEntityId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketEntityId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The ticket to delete
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
+
+This method has no return value
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_DeleteTicketMessageEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteTicketMessageEntityAsync\(int, RequestOptions\)
+
+Delete a ticket message
+
+```csharp
+Task DeleteTicketMessageEntityAsync(int ticketMessageEntityId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketMessageEntityId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The ticket message to delete
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
+
+This method has no return value
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_DeleteTicketRelationEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteTicketRelationEntityAsync\(int, RequestOptions\)
+
+Deletes the TicketRelationEntity
+
+```csharp
+Task DeleteTicketRelationEntityAsync(int ticketRelationEntityId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketRelationEntityId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The identity of the TicketRelationEntity
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_DoEscalatingAsync_System_Int32_SuperOffice_WebApi_Data_TicketPriorityEscalateAction_SuperOffice_WebApi_RequestOptions_"></a> DoEscalatingAsync\(int, TicketPriorityEscalateAction, RequestOptions\)
+
+Checks if the ticket should change its alert level based on the priority and action. If it is to change, the alert level and alert timeout for the ticket will be updated.
+
+```csharp
+Task DoEscalatingAsync(int ticketId, TicketPriorityEscalateAction action, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of ticket
+
+`action` [TicketPriorityEscalateAction](SuperOffice.WebApi.Data.TicketPriorityEscalateAction.md)
+
+The action to use when calculating the escalation
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
+
+This method has no return value
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetAttachmentEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetAttachmentEntityAsync\(int, RequestOptions\)
+
+Gets a specific AttachmentEntity object.
+
+```csharp
+Task<AttachmentEntity> GetAttachmentEntityAsync(int attachmentEntityId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`attachmentEntityId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The identifier of the AttachmentEntity object
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[AttachmentEntity](SuperOffice.WebApi.Data.AttachmentEntity.md)\>
+
+AttachmentEntity
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetAttachmentInfoAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetAttachmentInfoAsync\(int, RequestOptions\)
+
+Get a list with meta data for all attached attachments
+
+```csharp
+Task<AttachmentEntity[]> GetAttachmentInfoAsync(int ticketMessageEntityId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketMessageEntityId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket message to get attachment infos for
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[AttachmentEntity](SuperOffice.WebApi.Data.AttachmentEntity.md)\[\]\>
+
+An array with AttachmentEntity objects, describing each attachment
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetAttachmentInfoNonInlineAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetAttachmentInfoNonInlineAsync\(int, RequestOptions\)
+
+Get a list with meta data for all attached attachments, EXCEPT those marked as inline
+
+```csharp
+Task<AttachmentEntity[]> GetAttachmentInfoNonInlineAsync(int ticketMessageEntityId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketMessageEntityId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket message to get attachment infos for
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[AttachmentEntity](SuperOffice.WebApi.Data.AttachmentEntity.md)\[\]\>
+
+An array with AttachmentEntity objects, describing each attachment; those marked as INLINE will be skipped
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetAttachmentPreviewAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetAttachmentPreviewAsync\(int, RequestOptions\)
+
+Retrieve an attachment from ticket message. The returned data is intended to be used for a preview. The returned data is sanitized.
+
+```csharp
+Task<AttachmentPreview> GetAttachmentPreviewAsync(int attachmentId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`attachmentId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the attachment to retrieve
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[AttachmentPreview](SuperOffice.WebApi.Data.AttachmentPreview.md)\>
+
+Sanitized preview version of the attachment and additional metadata, if available
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetAttachmentStreamAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetAttachmentStreamAsync\(int, string, RequestOptions\)
+
+Get the content of an attachment
+
+```csharp
+Task<byte[]> GetAttachmentStreamAsync(int attachmentId, string returnContentType = "application/octet-stream", RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`attachmentId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the attachment to retrieve
+
+`returnContentType` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+
+A stream to the attachment content
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetDefaultMessageContentAsync_System_Int32_SuperOffice_WebApi_Data_MessageActionType_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetDefaultMessageContentAsync\(int, MessageActionType, int, RequestOptions\)
+
+Obsolete, use GetDefaultMessageContentFull instead
+
+```csharp
+Task<string> GetDefaultMessageContentAsync(int ticketId, MessageActionType messageActionType, int ticketMessageId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket
+
+`messageActionType` [MessageActionType](SuperOffice.WebApi.Data.MessageActionType.md)
+
+Message action type: None/Reply/ReplyAll/Forward
+
+`ticketMessageId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the message to quote in the returned content. 0 to skip/ignore
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+
+Sanitized HTML content
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetDefaultMessageContentFullAsync_System_Int32_SuperOffice_WebApi_Data_MessageActionType_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetDefaultMessageContentFullAsync\(int, MessageActionType, int, int, RequestOptions\)
+
+Generate a default message content: attachments and body as sanitized HTML
+
+```csharp
+Task<TicketMessageContent> GetDefaultMessageContentFullAsync(int ticketId, MessageActionType messageActionType, int ticketMessageId, int ticketTypeId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket
+
+`messageActionType` [MessageActionType](SuperOffice.WebApi.Data.MessageActionType.md)
+
+Message action type: None/Reply/ReplyAll/Forward
+
+`ticketMessageId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the message to quote in the returned content. 0 to skip/ignore
+
+`ticketTypeId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket type to look for reply template. 0 to use current ticket type
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketMessageContent](SuperOffice.WebApi.Data.TicketMessageContent.md)\>
+
+Generated default message content
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetDefaultMessageContentWithOptionsAsync_System_Int32_SuperOffice_WebApi_Data_MessageActionType_System_Int32_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetDefaultMessageContentWithOptionsAsync\(int, MessageActionType, int, int, bool, RequestOptions\)
+
+Generate a default message content with option to exclude signature: attachments and body as sanitized HTML
+
+```csharp
+Task<TicketMessageContent> GetDefaultMessageContentWithOptionsAsync(int ticketId, MessageActionType messageActionType, int ticketMessageId, int ticketTypeId, bool excludeSignature, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket
+
+`messageActionType` [MessageActionType](SuperOffice.WebApi.Data.MessageActionType.md)
+
+Message action type: None/Reply/ReplyAll/Forward
+
+`ticketMessageId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the message to quote in the returned content. 0 to skip/ignore
+
+`ticketTypeId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket type to look for reply template. 0 to use current ticket type
+
+`excludeSignature` [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+Flag to exclude a signature when generating the return content
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketMessageContent](SuperOffice.WebApi.Data.TicketMessageContent.md)\>
+
+Generated default message content
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetForRmUiAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetForRmUiAsync\(int, RequestOptions\)
+
+Get a ticket entity, adapted to the specific needs of the Request Management UI. WARNING: This endpoint is not guaranteed to be stable/compatible between versions
+
+```csharp
+Task<TicketEntity> GetForRmUiAsync(int ticketId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+Primary key of ticket to fetch
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)\>
+
+The ticket entity. Information is filtered/adapted to the current needs of the UI
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetHotlistEjUsersAsync_System_Int32_System_Int32___SuperOffice_WebApi_Data_NotifyType_SuperOffice_WebApi_Data_NotifyChannel_SuperOffice_WebApi_RequestOptions_"></a> GetHotlistEjUsersAsync\(int, int\[\], NotifyType, NotifyChannel, RequestOptions\)
+
+Get a list of ej_user ids who should receive hotlist notification based on request and notification type
+
+```csharp
+Task<int[]> GetHotlistEjUsersAsync(int ticketId, int[] skipAssociateIds, NotifyType notifyType, NotifyChannel channel, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket
+
+`skipAssociateIds` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
+
+A list of associate ids to skip when calculating whom to get the notification
+
+`notifyType` [NotifyType](SuperOffice.WebApi.Data.NotifyType.md)
+
+The notification type we want to check for
+
+`channel` [NotifyChannel](SuperOffice.WebApi.Data.NotifyChannel.md)
+
+The channel which we should check for
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]\>
+
+List of matching ej_user ids
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetNextInQueueAsync_SuperOffice_WebApi_RequestOptions_"></a> GetNextInQueueAsync\(RequestOptions\)
+
+Assign a ticket to the caller based on intelligent queue system
+
+```csharp
+Task<TicketEntity> GetNextInQueueAsync(RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)\>
+
+The ticket entity after assigning it to the caller
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetPreviewAttachmentStreamAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPreviewAttachmentStreamAsync\(int, RequestOptions\)
+
+Deprecated, see GetPreviewAttachment instead. Retrieve an attachment from ticket message. The returned data is intended to be used for a preview. The returned data is sanitized.
+
+```csharp
+Task<DocumentPreview> GetPreviewAttachmentStreamAsync(int attachmentId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`attachmentId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the attachment to retrieve
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentPreview](SuperOffice.WebApi.Data.DocumentPreview.md)\>
+
+Sanitized preview version of the attachment
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetRfcAttachmentStreamAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetRfcAttachmentStreamAsync\(int, int, string, RequestOptions\)
+
+Get the content of an attachment which is part of RFC822 email attachment
+
+```csharp
+Task<byte[]> GetRfcAttachmentStreamAsync(int attachmentId, int position, string returnContentType = "application/octet-stream", RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`attachmentId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the root attachment
+
+`position` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The position (index) of the attachment within the root attachment. Numbering starts from 0
+
+`returnContentType` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+
+RFC822 attachment content as a Stream
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetTicketAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTicketAsync\(int, RequestOptions\)
+
+Gets a specific Ticket object.
+
+```csharp
+Task<Ticket> GetTicketAsync(int ticketId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The identifier of the Ticket object
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Ticket](SuperOffice.WebApi.Data.Ticket.md)\>
+
+Ticket
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetTicketAttachmentsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTicketAttachmentsAsync\(int, RequestOptions\)
+
+Get attachment infos for all attachments connected to messages in specified ticket
+
+```csharp
+Task<AttachmentEntity[]> GetTicketAttachmentsAsync(int ticketEntityId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketEntityId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket to get attachment infos from
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[AttachmentEntity](SuperOffice.WebApi.Data.AttachmentEntity.md)\[\]\>
+
+An array containing attachment info objects for all the attachments
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetTicketEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTicketEntityAsync\(int, RequestOptions\)
+
+Gets a specific TicketEntity object.
+
+```csharp
+Task<TicketEntity> GetTicketEntityAsync(int ticketEntityId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketEntityId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The identifier of the TicketEntity object
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)\>
+
+TicketEntity
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetTicketMessageAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTicketMessageAsync\(int, RequestOptions\)
+
+Gets a specific TicketMessage object.
+
+```csharp
+Task<TicketMessage> GetTicketMessageAsync(int ticketMessageId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketMessageId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The identifier of the TicketMessage object
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketMessage](SuperOffice.WebApi.Data.TicketMessage.md)\>
+
+TicketMessage
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetTicketMessageEntitiesAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetTicketMessageEntitiesAsync\(int, int\[\], RequestOptions\)
+
+Get ticket message entities with attachment info for given ticket
+
+```csharp
+Task<TicketMessageEntity[]> GetTicketMessageEntitiesAsync(int ticketId, int[] messageIds, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket to get message entities from
+
+`messageIds` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
+
+Optional ids of message entities to get. If not provided, all ticket message entities will be returned.
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)\[\]\>
+
+An array containing ticket message entities
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetTicketMessageEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTicketMessageEntityAsync\(int, RequestOptions\)
+
+Gets a specific TicketMessageEntity object.
+
+```csharp
+Task<TicketMessageEntity> GetTicketMessageEntityAsync(int ticketMessageEntityId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketMessageEntityId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The identifier of the TicketMessageEntity object
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)\>
+
+TicketMessageEntity
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetTicketMessageWithEmbeddedDataAsync_System_Int32_SuperOffice_WebApi_Data_ImageEmbedType_SuperOffice_WebApi_RequestOptions_"></a> GetTicketMessageWithEmbeddedDataAsync\(int, ImageEmbedType, RequestOptions\)
+
+Get a ticket message entity with posibillity to change embedded images to be represented with inline data within the HTML body. If using inline data, be sure not to save this back to the database.
+
+```csharp
+Task<TicketMessageEntity> GetTicketMessageWithEmbeddedDataAsync(int id, ImageEmbedType embedImages, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`id` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket message entity
+
+`embedImages` [ImageEmbedType](SuperOffice.WebApi.Data.ImageEmbedType.md)
+
+If set to Inline, then use inline base64 data to represent the images in the HTML body. Default: Link will use link to the image.
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)\>
+
+The entity to get
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetTicketMessageWithOptionsAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetTicketMessageWithOptionsAsync\(int, bool, RequestOptions\)
+
+Get a ticket message entity with additional options.
+
+```csharp
+Task<TicketMessageEntity> GetTicketMessageWithOptionsAsync(int ticketMessageEntityId, bool includeNonInlineAttachmentsInfo, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketMessageEntityId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket message entity
+
+`includeNonInlineAttachmentsInfo` [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+If true, then non inline attachments info will be loaded into TicketMessageEntity
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)\>
+
+The entity to get
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetTicketParentIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTicketParentIdAsync\(int, RequestOptions\)
+
+Get the parent ticket id. Returns 0 if the ticket has no parent.
+
+```csharp
+Task<int> GetTicketParentIdAsync(int ticketId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket to get the parent for.
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
+
+The id of the parent ticket, or 0 if there is no parent.
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetTicketRelationActionsAsync_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTicketRelationActionsAsync\(int, int, int, RequestOptions\)
+
+Get the relation-driven actions that apply to a ticket, such as whether to offer closing the parent or whether open children are blocking the ticket from being closed.
+
+```csharp
+Task<TicketRelationAction> GetTicketRelationActionsAsync(int ticketId, int parentTicketId, int ticketTypeId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket being evaluated.
+
+`parentTicketId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the parent ticket, if any. Pass 0 if there is no parent.
+
+`ticketTypeId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket type.
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketRelationAction](SuperOffice.WebApi.Data.TicketRelationAction.md)\>
+
+The relation-driven actions applicable to the ticket.
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetTicketRelationEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTicketRelationEntityAsync\(int, RequestOptions\)
+
+Gets a specific TicketRelationEntity object.
+
+```csharp
+Task<TicketRelationEntity> GetTicketRelationEntityAsync(int ticketRelationEntityId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketRelationEntityId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The identifier of the TicketRelationEntity object
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketRelationEntity](SuperOffice.WebApi.Data.TicketRelationEntity.md)\>
+
+TicketRelationEntity
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetTicketRelationsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTicketRelationsAsync\(int, RequestOptions\)
+
+Get all relations for a ticket.
+
+```csharp
+Task<TicketRelationItem[]> GetTicketRelationsAsync(int ticketId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket to get relations for.
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketRelationItem](SuperOffice.WebApi.Data.TicketRelationItem.md)\[\]\>
+
+All relations for the ticket. Each item carries its RelationType (Parent, Child, or Related).
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetTicketSummariesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetTicketSummariesAsync\(int\[\], RequestOptions\)
+
+Get an array of summaryitem for the given tickets
+
+```csharp
+Task<TicketSummaryItem[]> GetTicketSummariesAsync(int[] ticketIds, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketIds` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
+
+The tickets to fetch summaries for
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketSummaryItem](SuperOffice.WebApi.Data.TicketSummaryItem.md)\[\]\>
+
+Summary items for the given id's, in no particular order
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_GetTicketsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetTicketsAsync\(int\[\], RequestOptions\)
+
+Get multiple tickets
+
+```csharp
+Task<Ticket[]> GetTicketsAsync(int[] ticketIds, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketIds` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
+
+The ids of tickets to get
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Ticket](SuperOffice.WebApi.Data.Ticket.md)\[\]\>
+
+Returns array of tickets in same order as input ids
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_Html2TextAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> Html2TextAsync\(string, RequestOptions\)
+
+Create a plain text version of the html, suitable for email
+
+```csharp
+Task<string> Html2TextAsync(string content, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`content` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+The html version
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+
+The plain text version
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_MergeTicketsAsync_SuperOffice_WebApi_Data_TicketEntity_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> MergeTicketsAsync\(TicketEntity, int\[\], RequestOptions\)
+
+Merge one or more tickets into one primary ticket
+
+```csharp
+Task<TicketEntity> MergeTicketsAsync(TicketEntity mergedTicketEntity, int[] secondaryTicketIds, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`mergedTicketEntity` [TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)
+
+Merged ticket entity
+
+`secondaryTicketIds` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
+
+Ids of secondary tickets
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)\>
+
+The newly merged entity
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_NotifyNewTicketAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> NotifyNewTicketAsync\(int, RequestOptions\)
+
+Notify user agents about the creation of a new ticket
+
+```csharp
+Task NotifyNewTicketAsync(int ticketEntityId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketEntityId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket to notify about
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
+
+This method has no return value
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_NotifyNewTicketMessageAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> NotifyNewTicketMessageAsync\(int, RequestOptions\)
+
+Notify user agents about the creation of a new message on a ticket
+
+```csharp
+Task NotifyNewTicketMessageAsync(int ticketEntityId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketEntityId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket to notify about
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
+
+This method has no return value
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_ProcessTicketWhenReadAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> ProcessTicketWhenReadAsync\(int, RequestOptions\)
+
+When a user view/read a ticket, a number of action should be performed: set read status, escalation handling, remove notifications, etc. Which actions will be performed depends on owner, caller and configuration
+
+```csharp
+Task<TicketEntity> ProcessTicketWhenReadAsync(int ticketEntityId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketEntityId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket to mark as read
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)\>
+
+The ticket entity after marking it as read
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_RemoveMessageAttachmentsAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> RemoveMessageAttachmentsAsync\(int, int\[\], RequestOptions\)
+
+Removes attachments from the message as specified in the collection of entity ids. The ids are attachment ids (attachment primary key)
+
+```csharp
+Task RemoveMessageAttachmentsAsync(int ticketMessageEntityId, int[] attachmentIds, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketMessageEntityId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket message to remove attachments from
+
+`attachmentIds` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
+
+Attachment primary keys
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
+
+This method has no return value
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_ResolveTicketIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> ResolveTicketIdAsync\(int, RequestOptions\)
+
+Ticket can be connected (merged) to another ticket. This method traverses through its connection(s) and returns proper ticketId
+
+```csharp
+Task<int> ResolveTicketIdAsync(int ticketId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+Potentially correct ticketId
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
+
+Correct ticketId. Returns 0 in case ticket does not exists
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_SanitizeMailContentAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> SanitizeMailContentAsync\(string, RequestOptions\)
+
+Remove harmful HTML tags and attributes from an email
+
+```csharp
+Task<string> SanitizeMailContentAsync(string content, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`content` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+The email content to sanitize
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+
+The sanitized email content
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_SanitizeMailContentWithOptionsAsync_System_String_SuperOffice_WebApi_Data_HtmlSanitizerOptions_SuperOffice_WebApi_RequestOptions_"></a> SanitizeMailContentWithOptionsAsync\(string, HtmlSanitizerOptions, RequestOptions\)
+
+Remove harmful HTML tags and attributes from an email, using specified options
+
+```csharp
+Task<string> SanitizeMailContentWithOptionsAsync(string content, HtmlSanitizerOptions options, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`content` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+The email content to sanitize
+
+`options` [HtmlSanitizerOptions](SuperOffice.WebApi.Data.HtmlSanitizerOptions.md)
+
+The options for the sanitizer engine
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+
+The sanitized email content
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_SanitizeMailContentsAsync_System_String___SuperOffice_WebApi_RequestOptions_"></a> SanitizeMailContentsAsync\(string\[\], RequestOptions\)
+
+Remove harmful HTML tags and attributes from an email
+
+```csharp
+Task<string[]> SanitizeMailContentsAsync(string[] contents, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`contents` [string](https://learn.microsoft.com/dotnet/api/system.string)\[\]
+
+The email contents to sanitize
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\[\]\>
+
+The sanitized email contents
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_SaveAttachmentEntityAsync_SuperOffice_WebApi_Data_AttachmentEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveAttachmentEntityAsync\(AttachmentEntity, RequestOptions\)
+
+Updates the existing AttachmentEntity or creates a new AttachmentEntity if the id parameter is 0.
+
+```csharp
+Task<AttachmentEntity> SaveAttachmentEntityAsync(AttachmentEntity attachmentEntity, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`attachmentEntity` [AttachmentEntity](SuperOffice.WebApi.Data.AttachmentEntity.md)
+
+The AttachmentEntity that is saved.
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[AttachmentEntity](SuperOffice.WebApi.Data.AttachmentEntity.md)\>
+
+New or updated AttachmentEntity
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_SaveTicketEntityAsync_SuperOffice_WebApi_Data_TicketEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveTicketEntityAsync\(TicketEntity, RequestOptions\)
+
+Updates the existing TicketEntity or creates a new TicketEntity if the id parameter is 0. Does not notify users of save.
+
+```csharp
+Task<TicketEntity> SaveTicketEntityAsync(TicketEntity ticketEntity, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketEntity` [TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)
+
+The TicketEntity that is saved.
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)\>
+
+New or updated TicketEntity
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_SaveTicketEntityWithNotifyAsync_SuperOffice_WebApi_Data_TicketEntity_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> SaveTicketEntityWithNotifyAsync\(TicketEntity, bool, RequestOptions\)
+
+Saves a ticket and performs any user notifications
+
+```csharp
+Task<TicketEntity> SaveTicketEntityWithNotifyAsync(TicketEntity newEntity, bool notify, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`newEntity` [TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)
+
+The ticket to save
+
+`notify` [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+If true, then the notifications will be sent
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)\>
+
+The newly saved entity
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_SaveTicketMessageEntityAsync_SuperOffice_WebApi_Data_TicketMessageEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveTicketMessageEntityAsync\(TicketMessageEntity, RequestOptions\)
+
+Updates the existing TicketMessageEntity or creates a new TicketMessageEntity if the id parameter is 0. Does not notify users of save.
+
+```csharp
+Task<TicketMessageEntity> SaveTicketMessageEntityAsync(TicketMessageEntity ticketMessageEntity, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketMessageEntity` [TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)
+
+The TicketMessageEntity that is saved.
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)\>
+
+New or updated TicketMessageEntity
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_SaveTicketMessageEntityWithNotifyAsync_SuperOffice_WebApi_Data_TicketMessageEntity_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> SaveTicketMessageEntityWithNotifyAsync\(TicketMessageEntity, bool, RequestOptions\)
+
+Saves a ticket message and performs any user notifications
+
+```csharp
+Task<TicketMessageEntity> SaveTicketMessageEntityWithNotifyAsync(TicketMessageEntity newEntity, bool notify, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`newEntity` [TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)
+
+The ticket message to save
+
+`notify` [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+If true, then the notification will be sent along with the save
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)\>
+
+The saved entity
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_SaveTicketMessageEntityWithOptionsAsync_SuperOffice_WebApi_Data_TicketMessageEntity_System_Boolean_System_Int32___System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> SaveTicketMessageEntityWithOptionsAsync\(TicketMessageEntity, bool, int\[\], bool, RequestOptions\)
+
+Saves a ticket message and performs additional actions
+
+```csharp
+Task<TicketMessageEntity> SaveTicketMessageEntityWithOptionsAsync(TicketMessageEntity entity, bool notify, int[] attachmentIds, bool updateRepliedAt, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`entity` [TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)
+
+The ticket message to save
+
+`notify` [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+If true, then the notification will be sent along with the save
+
+`attachmentIds` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
+
+An array of attachments to connect to this TicketMessage
+
+`updateRepliedAt` [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+Updates ticket's replied_at field if needed
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)\>
+
+The saved entity
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_SaveTicketRelationEntityAsync_SuperOffice_WebApi_Data_TicketRelationEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveTicketRelationEntityAsync\(TicketRelationEntity, RequestOptions\)
+
+Updates the existing TicketRelationEntity or creates a new TicketRelationEntity if the id parameter is 0.
+
+```csharp
+Task<TicketRelationEntity> SaveTicketRelationEntityAsync(TicketRelationEntity ticketRelationEntity, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketRelationEntity` [TicketRelationEntity](SuperOffice.WebApi.Data.TicketRelationEntity.md)
+
+The TicketRelationEntity that is saved.
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketRelationEntity](SuperOffice.WebApi.Data.TicketRelationEntity.md)\>
+
+New or updated TicketRelationEntity
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_SendTicketMessageAsync_System_Int32_System_String___System_String___System_String___System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> SendTicketMessageAsync\(int, string\[\], string\[\], string\[\], string, int, string, RequestOptions\)
+
+Send a message to recipients by email
+
+```csharp
+Task SendTicketMessageAsync(int ticketMessageEntityId, string[] to, string[] cc, string[] bcc, string subject, int replyTemplateId, string gdprSource, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketMessageEntityId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket message to send
+
+`to` [string](https://learn.microsoft.com/dotnet/api/system.string)\[\]
+
+The To-recipients. Each recipient must be in correct format
+
+`cc` [string](https://learn.microsoft.com/dotnet/api/system.string)\[\]
+
+The Cc-recipients. Each recipient must be in correct format
+
+`bcc` [string](https://learn.microsoft.com/dotnet/api/system.string)\[\]
+
+The Bcc-recipients. Each recipient must be in correct format
+
+`subject` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+The subject
+
+`replyTemplateId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+Optional ID of reply template to merge message with. &lt;= 0 to skip.
+
+`gdprSource` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+Obsolete
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
+
+This method has no return value
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_SendTicketMessageSmsAsync_System_Int32_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_"></a> SendTicketMessageSmsAsync\(int, int, string\[\], RequestOptions\)
+
+Send a message to recipients by sms
+
+```csharp
+Task SendTicketMessageSmsAsync(int ticketMessageEntityId, int replyTemplateId, string[] sms, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketMessageEntityId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket message to send
+
+`replyTemplateId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+Optional ID of reply template to merge message with. &lt;= 0 to skip.
+
+`sms` [string](https://learn.microsoft.com/dotnet/api/system.string)\[\]
+
+The Sms-recipients. Each recipient must be in correct format
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
+
+This method has no return value
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_SetDeletedStatusByIdsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> SetDeletedStatusByIdsAsync\(int\[\], RequestOptions\)
+
+Sets tickets' status to Deleted. After a grace period these tickets will be deleted by a background job.
+
+```csharp
+Task<int[]> SetDeletedStatusByIdsAsync(int[] ticketIds, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketIds` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
+
+Ids of tickets to be set for deletion.
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]\>
+
+Ids of tickets set for deletion.
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_SetDeletedStatusByProviderAsync_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___SuperOffice_WebApi_RequestOptions_"></a> SetDeletedStatusByProviderAsync\(string, ArchiveRestrictionInfo\[\], RequestOptions\)
+
+Sets tickets' status to Deleted. After a grace period these tickets will be deleted by a background job.
+
+```csharp
+Task<int[]> SetDeletedStatusByProviderAsync(string providerName, ArchiveRestrictionInfo[] restrictions, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`providerName` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+Name of the provider that returns ticket rows.
+
+`restrictions` [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
+
+Query restrictions to be added to provider. Fixed providers, such as LastTicketsProvider, FavouriteTicketsProvider etc. already have mandatory restrictions setup - in such case extra restrictions will be combined, however for general use case for fixed providers you can pass an empty array and provider will return default results. For selection providers generally you should pass selectionId as a restriction.
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]\>
+
+Ids of tickets set for deletion.
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_SetSpamStatusByIdsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> SetSpamStatusByIdsAsync\(int\[\], RequestOptions\)
+
+Sets tickets' status to SPAM. After a grace period these tickets will be deleted by a background job.
+
+```csharp
+Task<int[]> SetSpamStatusByIdsAsync(int[] ticketIds, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketIds` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
+
+Ids of tickets to be set for SPAM.
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]\>
+
+Ids of tickets set for SPAM.
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_SetSpamStatusByProviderAsync_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___SuperOffice_WebApi_RequestOptions_"></a> SetSpamStatusByProviderAsync\(string, ArchiveRestrictionInfo\[\], RequestOptions\)
+
+Sets tickets' status to SPAM. After a grace period these tickets will be deleted by a background job.
+
+```csharp
+Task<int[]> SetSpamStatusByProviderAsync(string providerName, ArchiveRestrictionInfo[] restrictions, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`providerName` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+Name of the provider that returns ticket rows.
+
+`restrictions` [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
+
+Query restrictions to be added to provider. Fixed providers, such as LastTicketsProvider, FavouriteTicketsProvider etc. already have mandatory restrictions setup - in such case extra restrictions will be combined, however for general use case for fixed providers you can pass an empty array and provider will return default results. For selection providers generally you should pass selectionId as a restriction.
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]\>
+
+Ids of tickets set for deletion.
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_SetTicketMessageImportantAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> SetTicketMessageImportantAsync\(int, bool, RequestOptions\)
+
+Set the important flag on or off for a ticket message
+
+```csharp
+Task SetTicketMessageImportantAsync(int ticketMessageId, bool important, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketMessageId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket message to set the important flag on
+
+`important` [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+Turn on or off the important flag
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
+
+This method has no return value
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_SetTicketParentAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> SetTicketParentAsync\(int, int, string, RequestOptions\)
+
+Set the parent of a ticket. If the ticket already has a parent, it will be overwritten.
+
+```csharp
+Task SetTicketParentAsync(int ticketId, int parentTicketId, string comment, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket to set the parent on.
+
+`parentTicketId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket to set as parent.
+
+`comment` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+Optional comment to store on the relation.
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
+
+This method has no return value
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_SetTicketReadByOwnerAsync_System_Int32_SuperOffice_WebApi_Data_TicketReadStatus_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> SetTicketReadByOwnerAsync\(int, TicketReadStatus, bool, RequestOptions\)
+
+Set the ReadByOwner status for a ticket. It will only have an effect if the calling user is the same as the owner of the ticket
+
+```csharp
+Task<TicketEntity> SetTicketReadByOwnerAsync(int ticketEntityId, TicketReadStatus readStatus, bool checkEscalating, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketEntityId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket to set
+
+`readStatus` [TicketReadStatus](SuperOffice.WebApi.Data.TicketReadStatus.md)
+
+The read status to set. See the enum for explanation of the different colors. Setting Unknown does nothing
+
+`checkEscalating` [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+If true, then the escalation system will be called and executed when setting the ReadByOwner
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)\>
+
+The ticket entity after setting the ReadByOwner
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_SplitTicketAsync_System_Int32_System_Int32_System_DateTime_System_Int32___SuperOffice_WebApi_Data_TicketEntity_SuperOffice_WebApi_RequestOptions_"></a> SplitTicketAsync\(int, int, DateTime, int\[\], TicketEntity, RequestOptions\)
+
+Save new ticket and move/copy data from existing ticket in a single request. Specified messages will be moved.
+
+```csharp
+Task<TicketEntity> SplitTicketAsync(int sourceTicketEntityId, int sourceTicketEntityStatusId, DateTime sourceTicketEntityActivate, int[] transferMessageIds, TicketEntity newTicketEntity, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`sourceTicketEntityId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket to split
+
+`sourceTicketEntityStatusId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the source ticket's status
+
+`sourceTicketEntityActivate` [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
+
+The activate date of the source ticket
+
+`transferMessageIds` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
+
+IDs of messages that should be transferred from the original ticket to the new one
+
+`newTicketEntity` [TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)
+
+The new ticket to save. Includes new values for simple properties like title, category, status, etc., but not messages.
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)\>
+
+The newly created entity
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_SplitTicketMessageAsync_SuperOffice_WebApi_Data_TicketMessageEntity_SuperOffice_WebApi_Data_TicketEntity_SuperOffice_WebApi_Data_TicketMessageEntity_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> SplitTicketMessageAsync\(TicketMessageEntity, TicketEntity, TicketMessageEntity, int\[\], RequestOptions\)
+
+Create new ticket and move/copy data from existing ticket in addition update old message and save new message in a single request.
+
+```csharp
+Task<TicketEntity> SplitTicketMessageAsync(TicketMessageEntity sourceTicketMessage, TicketEntity newTicketEntity, TicketMessageEntity newTicketMessage, int[] transferAttachmentsIds, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`sourceTicketMessage` [TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)
+
+The message being splitted, content can be modified as part of the split.
+
+`newTicketEntity` [TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)
+
+The new ticket to save. Includes new values for simple properties like title, category, status, etc., but not messages.
+
+`newTicketMessage` [TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)
+
+The new message to be saved
+
+`transferAttachmentsIds` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
+
+IDs of attachments that should be transferred from the original message to the new one
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)\>
+
+The newly created entity
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_UndeleteByIdsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> UndeleteByIdsAsync\(int\[\], RequestOptions\)
+
+Restores deleted tickets by their ids. Status is set to a default open status defined in Registry table
+
+```csharp
+Task UndeleteByIdsAsync(int[] ticketIds, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketIds` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
+
+Ids of tickets to be restored.
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
+
+This method has no return value
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_UpdateTicketsReadStatusAsync_System_Int32___SuperOffice_WebApi_Data_TicketReadStatus_SuperOffice_WebApi_RequestOptions_"></a> UpdateTicketsReadStatusAsync\(int\[\], TicketReadStatus, RequestOptions\)
+
+This method changes multiple tickets' read status
+
+```csharp
+Task<int[]> UpdateTicketsReadStatusAsync(int[] ticketIds, TicketReadStatus newStatus, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`ticketIds` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
+
+Ticket ids to be updated
+
+`newStatus` [TicketReadStatus](SuperOffice.WebApi.Data.TicketReadStatus.md)
+
+New read status
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]\>
+
+Updated ticket ids
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_UpdateTicketsReadStatusByProviderAsync_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___SuperOffice_WebApi_Data_TicketReadStatus_SuperOffice_WebApi_RequestOptions_"></a> UpdateTicketsReadStatusByProviderAsync\(string, ArchiveRestrictionInfo\[\], TicketReadStatus, RequestOptions\)
+
+This method changes multiple tickets' read status
+
+```csharp
+Task<int[]> UpdateTicketsReadStatusByProviderAsync(string provider, ArchiveRestrictionInfo[] restrictions, TicketReadStatus newStatus, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`provider` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+Name of the provider that returns ticket rows.
+
+`restrictions` [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
+
+Query restrictions to be added to provider. Fixed providers, such as LastTicketsProvider, FavouriteTicketsProvider etc. already have mandatory restrictions setup - in such case extra restrictions will be combined, however for general use case for fixed providers you can pass an empty array and provider will return default results. For selection providers generally you should pass selectionId as a restriction.
+
+`newStatus` [TicketReadStatus](SuperOffice.WebApi.Data.TicketReadStatus.md)
+
+New read status
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]\>
+
+Updated ticket ids
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_UploadAttachmentAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_"></a> UploadAttachmentAsync\(int, byte\[\], RequestOptions\)
+
+Upload the content for an attachment
+
+```csharp
+Task UploadAttachmentAsync(int attachmentId, byte[] content, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`attachmentId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the attachment row, for which to attach the upload data
+
+`content` [byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]
+
+A stream to the content to be uploaded
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
+
+This method has no return value
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_ValidateAttachmentsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> ValidateAttachmentsAsync\(int\[\], RequestOptions\)
+
+Check attachments, return validation result for each item
+
+```csharp
+Task<AttachmentValidationResult[]> ValidateAttachmentsAsync(int[] attachmentIds, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`attachmentIds` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
+
+The IDs of the attachments to validate
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[AttachmentValidationResult](SuperOffice.WebApi.Data.AttachmentValidationResult.md)\[\]\>
+
+Validation result
+
+### <a id="SuperOffice_WebApi_Agents_ITicketAgent_ValidateTicketRelationsAsync_System_Int32___System_Int32_SuperOffice_WebApi_Data_TicketRelationType_SuperOffice_WebApi_RequestOptions_"></a> ValidateTicketRelationsAsync\(int\[\], int, TicketRelationType, RequestOptions\)
+
+Validate proposed ticket relations without saving them. Returns a result per source ticket indicating whether the relation is valid.
+
+```csharp
+Task<TicketRelationResult[]> ValidateTicketRelationsAsync(int[] sourceTicketIds, int destinationTicketId, TicketRelationType relationType, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`sourceTicketIds` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
+
+The ids of the tickets to relate to the destination ticket.
+
+`destinationTicketId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The id of the ticket that the source tickets will be related to.
+
+`relationType` [TicketRelationType](SuperOffice.WebApi.Data.TicketRelationType.md)
+
+The type of relation to create.
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketRelationResult](SuperOffice.WebApi.Data.TicketRelationResult.md)\[\]\>
+
+Validation results, one per source ticket id.
+

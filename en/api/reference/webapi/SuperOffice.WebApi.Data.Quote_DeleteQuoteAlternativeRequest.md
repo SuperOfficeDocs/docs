@@ -1,0 +1,44 @@
+# <a id="SuperOffice_WebApi_Data_Quote_DeleteQuoteAlternativeRequest"></a> Class Quote\_DeleteQuoteAlternativeRequest
+
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Assembly: SuperOffice.WebApi.dll  
+
+```csharp
+public class Quote_DeleteQuoteAlternativeRequest
+```
+
+#### Inheritance
+
+[object](https://learn.microsoft.com/dotnet/api/system.object) ← 
+[Quote\_DeleteQuoteAlternativeRequest](SuperOffice.WebApi.Data.Quote\_DeleteQuoteAlternativeRequest.md)
+
+#### Inherited Members
+
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
+[object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
+[object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
+[object.ReferenceEquals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode), 
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[object.MemberwiseClone\(\)](https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone)
+
+## Constructors
+
+### <a id="SuperOffice_WebApi_Data_Quote_DeleteQuoteAlternativeRequest__ctor"></a> Quote\_DeleteQuoteAlternativeRequest\(\)
+
+```csharp
+public Quote_DeleteQuoteAlternativeRequest()
+```
+
+## Properties
+
+### <a id="SuperOffice_WebApi_Data_Quote_DeleteQuoteAlternativeRequest_QuoteAlternativeId"></a> QuoteAlternativeId
+
+```csharp
+public int QuoteAlternativeId { get; set; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
