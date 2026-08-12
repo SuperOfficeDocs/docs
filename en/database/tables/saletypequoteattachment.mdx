@@ -1,32 +1,31 @@
 ---
-uid: table-SaleTypeQuoteAttachment
 title: SaleTypeQuoteAttachment table
 description: Default attachments to quotes linked to sales of this type
 generated: true
-keywords: ['database table SaleTypeQuoteAttachment']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Saletypequoteattachment from "./includes/saletypequoteattachment.md";
+import Saletypequoteattachment from "./includes/saletypequoteattachment.mdx";
 
-# SaleTypeQuoteAttachment Table (446)
+## SaleTypeQuoteAttachment Table (446)
 
 Default attachments to quotes linked to sales of this type
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|saletypequoteattachment\_id|Primary key|PK| |
-|SaleTypeId|Link to sale type|FK [SaleType](./saletype)| |
-|DocumentId|Link to document|FK [document](./document)| |
-|DefaultIncluded|Should this be a standard attachment (default state is &apos;include&apos;)|Bool|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|saletypequoteattachment\_id|Primary key|PK|No|
+|SaleTypeId|Link to sale type|FK [SaleType](./saletype.mdx)|No|
+|DocumentId|Link to document|FK [document](./document.mdx)|No|
+|DefaultIncluded|Should this be a standard attachment (default state is &apos;include&apos;)|Bool|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![SaleTypeQuoteAttachment table relationship diagram](/media/loc/en/database/tables/SaleTypeQuoteAttachment.png)
 
@@ -45,6 +44,7 @@ Default attachments to quotes linked to sales of this type
 |[document](./document)  |Documents, this table is an extension of the Appointment table.  There is always a corresponding appointment record; the relation between appointment and document is navigable in both directions. A document-type appointment record always has a corresponding document record and a record in VisibleFor specifying who may see this.   |
 |[SaleType](./saletype)  |Type of sale - large solution, incremental, whatever fits the organization |
 
+
 ## Replication Flags
 
 * None
@@ -52,3 +52,4 @@ Default attachments to quotes linked to sales of this type
 ## Security Flags
 
 * No access control via user's Role.
+

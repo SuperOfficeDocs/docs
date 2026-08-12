@@ -1,27 +1,26 @@
 ---
-uid: table-kb_workflow
 title: kb_workflow table
 description: Knowledge base workflow steps
 generated: true
-keywords: ['database table kb_workflow']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import KbWorkflow from "./includes/kb-workflow.md";
+import KbWorkflow from "./includes/kb-workflow.mdx";
 
-# kb\_workflow Table (292)
+## kb\_workflow Table (292)
 
 Knowledge base workflow steps
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|next|The next workflow phase.|FK [kb_workflow](./kb-workflow)| |
-|previous|The previous workflow phase.|FK [kb_workflow](./kb-workflow)| |
-|name||String(255)|&#x25CF;|
+|id|The primary key (auto-incremented)|PK|No|
+|next|The next workflow phase.|FK [kb_workflow](./kb-workflow.mdx)|No|
+|previous|The previous workflow phase.|FK [kb_workflow](./kb-workflow.mdx)|No|
+|name||String(255)|Yes|
+
 
 ![kb_workflow table relationship diagram](/media/loc/en/database/tables/kb_workflow.png)
 
@@ -43,6 +42,7 @@ Knowledge base workflow steps
 |[kb\_workflow\_access](./kb-workflow-access)  |Control of who can do what in a knowledge base workflow step |
 |[role\_workflow](./role-workflow)  |Knowledge base workflow access rights associated with a role |
 
+
 ## Replication Flags
 
 * None
@@ -50,3 +50,4 @@ Knowledge base workflow steps
 ## Security Flags
 
 * No access control via user's Role.
+

@@ -1,49 +1,48 @@
 ---
-uid: table-ExtApp
 title: ExtApp table
 description: ExtApp list table. Applications startable from SuperOffice
 generated: true
-keywords: ['database table ExtApp']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Extapp from "./includes/extapp.md";
+import Extapp from "./includes/extapp.mdx";
 
-# ExtApp Table (133)
+## ExtApp Table (133)
 
 ExtApp MDO list item table.
 ExtApp list table. Applications startable from SuperOffice
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|ExtApp\_id|Primary key|PK| |
-|name|The list item|String(239)| |
-|rank|Rank order|UShort|&#x25CF;|
-|tooltip|Tooltip or other description|String(254)|&#x25CF;|
-|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|&#x25CF;|
-|path|Path where the programfile is located; if empty, PATH is used|String(239)|&#x25CF;|
-|filename|Filename of the programfile|String(239)| |
-|parameters|&lt;template variable&gt; &lt;other template variable&gt;|String(239)|&#x25CF;|
-|workdir|Directory set to current when loading the application, if different from application&apos;s own|String(239)|&#x25CF;|
-|icon|0 indicates default Icon (from app exe file), otherwise reference to a predefined icon resource in SO|UShort|&#x25CF;|
-|availableInState|When should this application be available from SO: 0=always, 1=on central db, 2=on travel db,4 on satellite. The value 5 (1+4) indicates that this application is available when logged in to a central or satellite db|Enum [AppAvailState](./enums/appavailstate)| |
-|executeOnEvent|Events that cause automatic execution of this app|Enum [ExecuteOnEvent](./enums/executeonevent)| |
-|navigation|0=from menu, 1 = from Navigator(integration), 2 = From navigator|Enum [Navigation](./enums/navigation)| |
-|showState|Maximized / minimized / restored|Enum [ShowState](./enums/showstate)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|appType|Application type: 1 = exe, 2 = integrated html, 3 = integrated url, 4 = browser url, 5 = external url|Enum [AppType](./enums/apptype)|&#x25CF;|
-|waitToFinish|If 1, we wait synchronously for the pplication to finish before we go on|Bool|&#x25CF;|
-|windowName|The window which the URL address is to open in (webpanel only)|String(254)|&#x25CF;|
-|url1|URL, supports long strings up to 1k|String(1023)|&#x25CF;|
-|url2|Obsolete - do not use this field|String(254)|&#x25CF;|
-|configInfo|Extra configuration information|String(2047)|&#x25CF;|
+|ExtApp\_id|Primary key|PK|No|
+|name|The list item|String(239)|No|
+|rank|Rank order|UShort|Yes|
+|tooltip|Tooltip or other description|String(254)|Yes|
+|deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|Yes|
+|path|Path where the programfile is located; if empty, PATH is used|String(239)|Yes|
+|filename|Filename of the programfile|String(239)|No|
+|parameters|&lt;template variable&gt; &lt;other template variable&gt;|String(239)|Yes|
+|workdir|Directory set to current when loading the application, if different from application&apos;s own|String(239)|Yes|
+|icon|0 indicates default Icon (from app exe file), otherwise reference to a predefined icon resource in SO|UShort|Yes|
+|availableInState|When should this application be available from SO: 0=always, 1=on central db, 2=on travel db,4 on satellite. The value 5 (1+4) indicates that this application is available when logged in to a central or satellite db|Enum [AppAvailState](./enums/appavailstate.mdx)|No|
+|executeOnEvent|Events that cause automatic execution of this app|Enum [ExecuteOnEvent](./enums/executeonevent.mdx)|No|
+|navigation|0=from menu, 1 = from Navigator(integration), 2 = From navigator|Enum [Navigation](./enums/navigation.mdx)|No|
+|showState|Maximized / minimized / restored|Enum [ShowState](./enums/showstate.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|appType|Application type: 1 = exe, 2 = integrated html, 3 = integrated url, 4 = browser url, 5 = external url|Enum [AppType](./enums/apptype.mdx)|Yes|
+|waitToFinish|If 1, we wait synchronously for the pplication to finish before we go on|Bool|Yes|
+|windowName|The window which the URL address is to open in (webpanel only)|String(254)|Yes|
+|url1|URL, supports long strings up to 1k|String(1023)|Yes|
+|url2|Obsolete - do not use this field|String(254)|Yes|
+|configInfo|Extra configuration information|String(2047)|Yes|
+
 
 ![ExtApp table relationship diagram](/media/loc/en/database/tables/ExtApp.png)
 
@@ -64,6 +63,7 @@ ExtApp list table. Applications startable from SuperOffice
 |[ExtAppGroupLink](./extappgrouplink)  |User group link table for ExtApp, for MDO item hiding |
 |[ExtAppHeadingLink](./extappheadinglink)  |Heading link table for ExtApp, for MDO headers |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -73,3 +73,4 @@ ExtApp list table. Applications startable from SuperOffice
 ## Security Flags
 
 * No access control via user's Role.
+

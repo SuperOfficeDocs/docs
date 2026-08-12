@@ -1,33 +1,32 @@
 ---
-uid: table-ejpackage
 title: ejpackage table
 description: This table stores packages on the system.
 generated: true
-keywords: ['database table ejpackage']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Ejpackage from "./includes/ejpackage.md";
+import Ejpackage from "./includes/ejpackage.mdx";
 
-# ejpackage Table (384)
+## ejpackage Table (384)
 
 This table stores packages on the system.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|name|The name of this package|String(255)|&#x25CF;|
-|ej\_version|The oldest eJournal version this package can be installed on|String(255)|&#x25CF;|
-|package\_version|Version of the created package|String(255)|&#x25CF;|
-|description|Description/comment|String(255)|&#x25CF;|
-|attachment\_id|The attachment.id for the attachment containing the xml|FK [attachment](./attachment)| |
-|uploaded\_at|Time of upload of this package|DateTime|&#x25CF;|
-|uploaded\_by|Uploaded by|FK [ejuser](./ejuser)| |
-|install\_script|Installation script|Clob|&#x25CF;|
-|locked|Locked package - components should not be modified by users|Bool| |
+|id|Primary key|PK|No|
+|name|The name of this package|String(255)|Yes|
+|ej\_version|The oldest eJournal version this package can be installed on|String(255)|Yes|
+|package\_version|Version of the created package|String(255)|Yes|
+|description|Description/comment|String(255)|Yes|
+|attachment\_id|The attachment.id for the attachment containing the xml|FK [attachment](./attachment.mdx)|No|
+|uploaded\_at|Time of upload of this package|DateTime|Yes|
+|uploaded\_by|Uploaded by|FK [ejuser](./ejuser.mdx)|No|
+|install\_script|Installation script|Clob|Yes|
+|locked|Locked package - components should not be modified by users|Bool|No|
+
 
 ![ejpackage table relationship diagram](/media/loc/en/database/tables/ejpackage.png)
 
@@ -48,6 +47,7 @@ This table stores packages on the system.
 |[ejpackage\_item](./ejpackage-item)  |This table stores info on installed packages in the system |
 |[ejuser](./ejuser)  |This table contains entries for the users of the system. |
 
+
 ## Replication Flags
 
 * None
@@ -55,3 +55,4 @@ This table stores packages on the system.
 ## Security Flags
 
 * No access control via user's Role.
+

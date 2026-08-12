@@ -1,35 +1,34 @@
 ---
-uid: table-ErpSyncLog
 title: ErpSyncLog table
 description: Record all field changes done by the Erp Sync
 generated: true
-keywords: ['database table ErpSyncLog']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Erpsynclog from "./includes/erpsynclog.md";
+import Erpsynclog from "./includes/erpsynclog.mdx";
 
-# ErpSyncLog Table (426)
+## ErpSyncLog Table (426)
 
 Record all field changes done by the Erp Sync
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|erpsynclog\_id|Primary key|PK| |
-|ErpExternalKeyId|Link to the external key, indirectly also to the connection and internal key|FK [ErpExternalKey](./erpexternalkey)|&#x25CF;|
-|ErpFieldKey|ERP field name/key|String(254)|&#x25CF;|
-|CrmFieldKey|CRM field name/key|String(254)|&#x25CF;|
-|TargetIsCrm|Was the CRM field the target of the change? If false, then it was the ERP field that was changed by this sync operation|Bool|&#x25CF;|
-|OldValue|The old value of the target field|String(254)|&#x25CF;|
-|NewValue|The new value of the target field|String(254)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|erpsynclog\_id|Primary key|PK|No|
+|ErpExternalKeyId|Link to the external key, indirectly also to the connection and internal key|FK [ErpExternalKey](./erpexternalkey.mdx)|Yes|
+|ErpFieldKey|ERP field name/key|String(254)|Yes|
+|CrmFieldKey|CRM field name/key|String(254)|Yes|
+|TargetIsCrm|Was the CRM field the target of the change? If false, then it was the ERP field that was changed by this sync operation|Bool|Yes|
+|OldValue|The old value of the target field|String(254)|Yes|
+|NewValue|The new value of the target field|String(254)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![ErpSyncLog table relationship diagram](/media/loc/en/database/tables/ErpSyncLog.png)
 
@@ -47,6 +46,7 @@ Record all field changes done by the Erp Sync
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[ErpExternalKey](./erpexternalkey)  |The external (ERP-facing) key related to a synchronized record / connection |
 
+
 ## Replication Flags
 
 * None
@@ -54,3 +54,4 @@ Record all field changes done by the Erp Sync
 ## Security Flags
 
 * No access control via user's Role.
+

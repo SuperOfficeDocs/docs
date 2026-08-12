@@ -1,33 +1,32 @@
 ---
-uid: table-satellite
 title: satellite table
 description: Definition of Satellites
 generated: true
-keywords: ['database table satellite']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Satellite from "./includes/satellite.md";
+import Satellite from "./includes/satellite.mdx";
 
-# satellite Table (42)
+## satellite Table (42)
 
 Definition of Satellites
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|satellite\_id|Primary key|PK| |
-|area\_id|Area this satellite is based on (mandatory != 0)|FK [area](./area)| |
-|contact\_id|Contact card that owns this satellite|FK [contact](./contact)| |
-|encryptedComm|Use encryption for this Satellite?|UShort|&#x25CF;|
-|DSN|Data source name last used for this satellite|String(254)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|satellite\_id|Primary key|PK|No|
+|area\_id|Area this satellite is based on (mandatory != 0)|FK [area](./area.mdx)|No|
+|contact\_id|Contact card that owns this satellite|FK [contact](./contact.mdx)|No|
+|encryptedComm|Use encryption for this Satellite?|UShort|Yes|
+|DSN|Data source name last used for this satellite|String(254)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![satellite table relationship diagram](/media/loc/en/database/tables/satellite.png)
 
@@ -47,6 +46,7 @@ Definition of Satellites
 |[contact](./contact)  |Companies and Organizations. |
 |[LicenseSatlLink](./licensesatllink)  |Link between License and Satellite, for per-database licenses |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ Definition of Satellites
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix.
+

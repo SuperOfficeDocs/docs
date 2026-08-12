@@ -1,34 +1,33 @@
 ---
-uid: table-TrayApp
 title: TrayApp table
 description: Tray application presence. SuperOffice CRM web extensions.
 generated: true
-keywords: ['database table TrayApp']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Trayapp from "./includes/trayapp.md";
+import Trayapp from "./includes/trayapp.mdx";
 
-# TrayApp Table (252)
+## TrayApp Table (252)
 
 Tray application presence. SuperOffice CRM web extensions.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|TrayApp\_id|Primary key|PK| |
-|associateId|Associate id that the tray app is being detected for|FK [associate](./associate)| |
-|pageGenerated|When was the web page generated that contained the trayapp link|DateTime| |
-|presenceDetected|When was the presence last detected|DateTime|&#x25CF;|
-|guid|TrayApp unique GUID included in presence detection link|String(253)| |
-|lcid|Language ID passed to tray app|Id|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|TrayApp\_id|Primary key|PK|No|
+|associateId|Associate id that the tray app is being detected for|FK [associate](./associate.mdx)|No|
+|pageGenerated|When was the web page generated that contained the trayapp link|DateTime|No|
+|presenceDetected|When was the presence last detected|DateTime|Yes|
+|guid|TrayApp unique GUID included in presence detection link|String(253)|No|
+|lcid|Language ID passed to tray app|Id|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![TrayApp table relationship diagram](/media/loc/en/database/tables/TrayApp.png)
 
@@ -47,6 +46,7 @@ Tray application presence. SuperOffice CRM web extensions.
 |------|-------------|
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 
+
 ## Replication Flags
 
 * None
@@ -54,3 +54,4 @@ Tray application presence. SuperOffice CRM web extensions.
 ## Security Flags
 
 * No access control via user's Role.
+

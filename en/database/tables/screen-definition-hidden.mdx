@@ -1,26 +1,25 @@
 ---
-uid: table-screen_definition_hidden
 title: screen_definition_hidden table
 description: The name of a hidden variable to keep for this screen
 generated: true
-keywords: ['database table screen_definition_hidden']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import ScreenDefinitionHidden from "./includes/screen-definition-hidden.md";
+import ScreenDefinitionHidden from "./includes/screen-definition-hidden.mdx";
 
-# screen\_definition\_hidden Table (373)
+## screen\_definition\_hidden Table (373)
 
 The name of a hidden variable to keep for this screen
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|screen\_definition|The screen-definition this element belongs to|FK [screen_definition](./screen-definition)|&#x25CF;|
-|variable|The name of the variable to keep|String(255)|&#x25CF;|
+|id|Primary key|PK|No|
+|screen\_definition|The screen-definition this element belongs to|FK [screen_definition](./screen-definition.mdx)|Yes|
+|variable|The name of the variable to keep|String(255)|Yes|
+
 
 ![screen_definition_hidden table relationship diagram](/media/loc/en/database/tables/screen_definition_hidden.png)
 
@@ -38,6 +37,7 @@ The name of a hidden variable to keep for this screen
 |------|-------------|
 |[screen\_definition](./screen-definition)  |A configurable screen |
 
+
 ## Replication Flags
 
 * None
@@ -45,3 +45,4 @@ The name of a hidden variable to keep for this screen
 ## Security Flags
 
 * No access control via user's Role.
+

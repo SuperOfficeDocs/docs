@@ -1,54 +1,53 @@
 ---
-uid: table-selection
 title: selection table
 description: Selections
 generated: true
-keywords: ['database table selection']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Selection from "./includes/selection.md";
+import Selection from "./includes/selection.mdx";
 
-# selection Table (23)
+## selection Table (23)
 
 Selections
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|selection\_id|Primary key|PK| |
-|associate\_id|Associate who owns the selection|FK [associate](./associate)| |
-|group\_idx|Original primary user group of associate|FK [UserGroup](./usergroup)| |
-|name|Name, freetext indexed|String(219)| |
-|text\_id|Description text|FK [text](./text)|&#x25CF;|
-|postitText\_Id|Postit text|FK [text](./text)|&#x25CF;|
-|visibility|Obsolete, but still maintained denormalization of visiblefor|UShort|&#x25CF;|
-|seltype|0 = static selection, 1 = dynamic selection, 2 = combined selection. See the &apos;SystemType&apos; field to disnguish between user selections, and Temporary or other system-managed kinds of selection|UShort|&#x25CF;|
-|searchCat\_id|Search category (list)|FK [SearchCat](./searchcat)|&#x25CF;|
-|companyUnique|Only one person from a company may be selected as a member|UShort|&#x25CF;|
-|soundEx|What the name sounds like, for duplicate detection|String(9)|&#x25CF;|
-|source|How did we get this selection? For future integration needs|UShort|&#x25CF;|
-|memberCount|How many selectionmembers (for progress bar)|UInt|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|includePerson|0 = Include first person, 1 = Include all persons, 2 = Include no persons|Int|&#x25CF;|
-|targetTableNumber|Table number that this is a selection of (contact, sale, appointment, ....)|TableNumber| |
-|done|Done (0=false, 1=true). Status implies changes in which fields are shown in GUI, as well as which fields can be updated|Bool|&#x25CF;|
-|combinationType|How should the inputs of a combined selection be combined|Enum [SelectionUnionType](./enums/selectionuniontype)|&#x25CF;|
-|leftSelectionId|ID of the left selection of a combined selection|FK [selection](./selection)|&#x25CF;|
-|rightSelectionId|ID of the right selection of a combined selection|FK [selection](./selection)|&#x25CF;|
-|dashboard\_tile\_definition\_id|The associated tile definition|FK [dashboard_tile_definition](./dashboard-tile-definition)|&#x25CF;|
-|SystemType|Selection system type - defines if this selection is one that is managed by the system, and what kind it is|Enum [SelectionSystemType](./enums/selectionsystemtype)|&#x25CF;|
-|chartKey|ID/key of the last-used chart tile on this selection|String(254)|&#x25CF;|
-|lastLoaded|The date/time this selection was last loaded (selectionentity fetched)|DateTime|&#x25CF;|
-|lastLoadedBy|Who last loaded this selection|FK [associate](./associate)|&#x25CF;|
-|lastMembershipChange|The date/time the membership the selection last changed. Dynamic: change of criteria; Static: add/remove members; Combined: change of algorithm|DateTime|&#x25CF;|
-|lastMembershipChangeBy|Who last changed the membership|FK [associate](./associate)|&#x25CF;|
+|selection\_id|Primary key|PK|No|
+|associate\_id|Associate who owns the selection|FK [associate](./associate.mdx)|No|
+|group\_idx|Original primary user group of associate|FK [UserGroup](./usergroup.mdx)|No|
+|name|Name, freetext indexed|String(219)|No|
+|text\_id|Description text|FK [text](./text.mdx)|Yes|
+|postitText\_Id|Postit text|FK [text](./text.mdx)|Yes|
+|visibility|Obsolete, but still maintained denormalization of visiblefor|UShort|Yes|
+|seltype|0 = static selection, 1 = dynamic selection, 2 = combined selection. See the &apos;SystemType&apos; field to disnguish between user selections, and Temporary or other system-managed kinds of selection|UShort|Yes|
+|searchCat\_id|Search category (list)|FK [SearchCat](./searchcat.mdx)|Yes|
+|companyUnique|Only one person from a company may be selected as a member|UShort|Yes|
+|soundEx|What the name sounds like, for duplicate detection|String(9)|Yes|
+|source|How did we get this selection? For future integration needs|UShort|Yes|
+|memberCount|How many selectionmembers (for progress bar)|UInt|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|includePerson|0 = Include first person, 1 = Include all persons, 2 = Include no persons|Int|Yes|
+|targetTableNumber|Table number that this is a selection of (contact, sale, appointment, ....)|TableNumber|No|
+|done|Done (0=false, 1=true). Status implies changes in which fields are shown in GUI, as well as which fields can be updated|Bool|Yes|
+|combinationType|How should the inputs of a combined selection be combined|Enum [SelectionUnionType](./enums/selectionuniontype.mdx)|Yes|
+|leftSelectionId|ID of the left selection of a combined selection|FK [selection](./selection.mdx)|Yes|
+|rightSelectionId|ID of the right selection of a combined selection|FK [selection](./selection.mdx)|Yes|
+|dashboard\_tile\_definition\_id|The associated tile definition|FK [dashboard_tile_definition](./dashboard-tile-definition.mdx)|Yes|
+|SystemType|Selection system type - defines if this selection is one that is managed by the system, and what kind it is|Enum [SelectionSystemType](./enums/selectionsystemtype.mdx)|Yes|
+|chartKey|ID/key of the last-used chart tile on this selection|String(254)|Yes|
+|lastLoaded|The date/time this selection was last loaded (selectionentity fetched)|DateTime|Yes|
+|lastLoadedBy|Who last loaded this selection|FK [associate](./associate.mdx)|Yes|
+|lastMembershipChange|The date/time the membership the selection last changed. Dynamic: change of criteria; Static: add/remove members; Combined: change of algorithm|DateTime|Yes|
+|lastMembershipChangeBy|Who last changed the membership|FK [associate](./associate.mdx)|Yes|
+
 
 ![selection table relationship diagram](/media/loc/en/database/tables/selection.png)
 
@@ -83,6 +82,7 @@ Selections
 |[VisibleFor](./visiblefor)  |Visible for rights, who may see this appointment/document, sale,  salehist or selection |
 |[workflow](./workflow)  |SuperOffice specific info about a workflow |
 
+
 ## Replication Flags
 
 * None
@@ -91,3 +91,4 @@ Selections
 
 * Sentry controls access to items in this table using user's Role and data rights matrix.
 * Visibility controlled via matching [VisibleFor](./visiblefor) row.
+

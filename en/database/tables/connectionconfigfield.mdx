@@ -1,33 +1,32 @@
 ---
-uid: table-ConnectionConfigField
 title: ConnectionConfigField table
 description: Configuration data for Erp and Quote Connections
 generated: true
-keywords: ['database table ConnectionConfigField']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Connectionconfigfield from "./includes/connectionconfigfield.md";
+import Connectionconfigfield from "./includes/connectionconfigfield.mdx";
 
-# ConnectionConfigField Table (421)
+## ConnectionConfigField Table (421)
 
 Configuration data for Erp and Quote Connections
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|connectionconfigfield\_id|Primary key|PK| |
-|ErpConnectionId|Erp connection, if this row belongs to an ERP Connector|FK [ErpConnection](./erpconnection)|&#x25CF;|
-|QuoteConnectionId|Quote connection, if this row belongs to a Quote Connector|FK [QuoteConnection](./quoteconnection)|&#x25CF;|
-|FieldKey|The key that identifies the field, taken from the connector&apos;s metadata|String(254)|&#x25CF;|
-|FieldValue|The field value, formatted for transport as a string using CultureDataFormatter|String(1023)|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|connectionconfigfield\_id|Primary key|PK|No|
+|ErpConnectionId|Erp connection, if this row belongs to an ERP Connector|FK [ErpConnection](./erpconnection.mdx)|Yes|
+|QuoteConnectionId|Quote connection, if this row belongs to a Quote Connector|FK [QuoteConnection](./quoteconnection.mdx)|Yes|
+|FieldKey|The key that identifies the field, taken from the connector&apos;s metadata|String(254)|Yes|
+|FieldValue|The field value, formatted for transport as a string using CultureDataFormatter|String(1023)|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![ConnectionConfigField table relationship diagram](/media/loc/en/database/tables/ConnectionConfigField.png)
 
@@ -48,6 +47,7 @@ Configuration data for Erp and Quote Connections
 |[ErpConnection](./erpconnection)  |One connection to an ERP connector, specifying Client and other required information |
 |[QuoteConnection](./quoteconnection)  |Primary key in the CRM database. Definition of a connection to an external system, for the Quote system. |
 
+
 ## Replication Flags
 
 * None
@@ -55,3 +55,4 @@ Configuration data for Erp and Quote Connections
 ## Security Flags
 
 * No access control via user's Role.
+

@@ -1,33 +1,32 @@
 ---
-uid: table-ResourceOverride
 title: ResourceOverride table
 description: Generic mechanism for overriding (or even defining new) text resources, in multiple languages
 generated: true
-keywords: ['database table ResourceOverride']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Resourceoverride from "./includes/resourceoverride.md";
+import Resourceoverride from "./includes/resourceoverride.mdx";
 
-# ResourceOverride Table (448)
+## ResourceOverride Table (448)
 
 Generic mechanism for overriding (or even defining new) text resources, in multiple languages
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|resourceoverride\_id|Primary key|PK| |
-|ResourceName|The name of the resource, without any brackets or braces - example: SR_CONTACT|String(254)|&#x25CF;|
-|Culture|.NET-style culture code, such as NB-NO or EN-UK|String(9)|&#x25CF;|
-|ResourceValue|The value of the resource in the given culture|String(2047)|&#x25CF;|
-|IsActive|Is this override active|Bool|&#x25CF;|
-|registered|Registered when|UtcDateTime|&#x25CF;|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)|&#x25CF;|
-|updated|Last updated when|UtcDateTime|&#x25CF;|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|&#x25CF;|
-|updatedCount|Number of updates made to this record|UShort|&#x25CF;|
+|resourceoverride\_id|Primary key|PK|No|
+|ResourceName|The name of the resource, without any brackets or braces - example: SR_CONTACT|String(254)|Yes|
+|Culture|.NET-style culture code, such as NB-NO or EN-UK|String(9)|Yes|
+|ResourceValue|The value of the resource in the given culture|String(2047)|Yes|
+|IsActive|Is this override active|Bool|Yes|
+|registered|Registered when|UtcDateTime|Yes|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|Yes|
+|updated|Last updated when|UtcDateTime|Yes|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|Yes|
+|updatedCount|Number of updates made to this record|UShort|Yes|
+
 
 ![ResourceOverride table relationship diagram](/media/loc/en/database/tables/ResourceOverride.png)
 
@@ -45,6 +44,7 @@ Generic mechanism for overriding (or even defining new) text resources, in multi
 |------|-------------|
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -54,3 +54,4 @@ Generic mechanism for overriding (or even defining new) text resources, in multi
 ## Security Flags
 
 * No access control via user's Role.
+

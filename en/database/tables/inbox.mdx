@@ -1,34 +1,33 @@
 ---
-uid: table-inbox
 title: inbox table
 description: Info and status for safe email import
 generated: true
-keywords: ['database table inbox']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Inbox from "./includes/inbox.md";
+import Inbox from "./includes/inbox.mdx";
 
-# inbox Table (352)
+## inbox Table (352)
 
 Info and status for safe email import
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|mail\_in\_filter|A reference to the id of the mail box|FK [mail_in_filter](./mail-in-filter)| |
-|locking\_id|A reference to the id of lock|FK [locking](./locking)| |
-|uidl|The uidl of the message. Stored before the retrieval starts to prevent double import. For locking purposes|String(2047)|&#x25CF;|
-|created|When the mail was created|DateTime|&#x25CF;|
-|imported|When the mail was imported|DateTime| |
-|status|Status enum|Int| |
-|mail\_size|The size of the mail in bytes|Int| |
-|next\_retry|When is the next time we should try again?|DateTime|&#x25CF;|
-|plugin|Name of plugin that created this inbox entry|String(255)| |
-|format|Format of the inbox entry|String(255)| |
+|id|Primary key|PK|No|
+|mail\_in\_filter|A reference to the id of the mail box|FK [mail_in_filter](./mail-in-filter.mdx)|No|
+|locking\_id|A reference to the id of lock|FK [locking](./locking.mdx)|No|
+|uidl|The uidl of the message. Stored before the retrieval starts to prevent double import. For locking purposes|String(2047)|Yes|
+|created|When the mail was created|DateTime|Yes|
+|imported|When the mail was imported|DateTime|No|
+|status|Status enum|Int|No|
+|mail\_size|The size of the mail in bytes|Int|No|
+|next\_retry|When is the next time we should try again?|DateTime|Yes|
+|plugin|Name of plugin that created this inbox entry|String(255)|No|
+|format|Format of the inbox entry|String(255)|No|
+
 
 ![inbox table relationship diagram](/media/loc/en/database/tables/inbox.png)
 
@@ -51,6 +50,7 @@ Info and status for safe email import
 |[locking](./locking)  |Generic locking and error messages |
 |[mail\_in\_filter](./mail-in-filter)  |This table contains entries for the mailboxes the eJournal system is fetching mail from (POP3 or IMAP). |
 
+
 ## Replication Flags
 
 * None
@@ -58,3 +58,4 @@ Info and status for safe email import
 ## Security Flags
 
 * No access control via user's Role.
+

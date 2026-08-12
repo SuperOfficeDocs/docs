@@ -1,33 +1,32 @@
 ---
-uid: table-quick_reply
 title: quick_reply table
 description: Personal quick reply text fragments
 generated: true
-keywords: ['database table quick_reply']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import QuickReply from "./includes/quick-reply.md";
+import QuickReply from "./includes/quick-reply.mdx";
 
-# quick\_reply Table (462)
+## quick\_reply Table (462)
 
 Personal quick reply text fragments
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|quick\_reply\_id|Primary key|PK| |
-|associate\_id|Associate who owns this quick reply|FK [associate](./associate)|&#x25CF;|
-|name|The short name of the quick reply|String(255)|&#x25CF;|
-|html\_body|The html body of the quick reply|Clob|&#x25CF;|
-|rank|Rank order in lists|UShort| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|quick\_reply\_id|Primary key|PK|No|
+|associate\_id|Associate who owns this quick reply|FK [associate](./associate.mdx)|Yes|
+|name|The short name of the quick reply|String(255)|Yes|
+|html\_body|The html body of the quick reply|Clob|Yes|
+|rank|Rank order in lists|UShort|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![quick_reply table relationship diagram](/media/loc/en/database/tables/quick_reply.png)
 
@@ -45,6 +44,7 @@ Personal quick reply text fragments
 |------|-------------|
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 
+
 ## Replication Flags
 
 * None
@@ -52,3 +52,4 @@ Personal quick reply text fragments
 ## Security Flags
 
 * No access control via user's Role.
+

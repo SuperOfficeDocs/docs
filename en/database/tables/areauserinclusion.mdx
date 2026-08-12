@@ -1,31 +1,30 @@
 ---
-uid: table-areauserinclusion
 title: areauserinclusion table
 description: Link table incidated whose data should be included in this area. If Include all data in Area (no filtering) is ticket then there will be no rows for this area in this table.
 generated: true
-keywords: ['database table areauserinclusion']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Areauserinclusion from "./includes/areauserinclusion.md";
+import Areauserinclusion from "./includes/areauserinclusion.mdx";
 
-# areauserinclusion Table (41)
+## areauserinclusion Table (41)
 
 Link table incidated whose data should be included in this area. If Include all data in Area (no filtering) is ticket then there will be no rows for this area in this table.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|areauserinclusion\_id|Primary key|PK| |
-|area\_id|Parent area ID|FK [area](./area)| |
-|associate\_id|ID of associate whose data should be in this area|FK [associate](./associate)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|areauserinclusion\_id|Primary key|PK|No|
+|area\_id|Parent area ID|FK [area](./area.mdx)|No|
+|associate\_id|ID of associate whose data should be in this area|FK [associate](./associate.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![areauserinclusion table relationship diagram](/media/loc/en/database/tables/areauserinclusion.png)
 
@@ -45,6 +44,7 @@ Link table incidated whose data should be included in this area. If Include all 
 |[area](./area)  |Definition of an Area (database subset for satellite and travel) |
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -54,3 +54,4 @@ Link table incidated whose data should be included in this area. If Include all 
 ## Security Flags
 
 * No access control via user's Role.
+

@@ -1,39 +1,38 @@
 ---
-uid: table-TZLocation
 title: TZLocation table
 description: Time zone location
 generated: true
-keywords: ['database table TZLocation']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Tzlocation from "./includes/tzlocation.md";
+import Tzlocation from "./includes/tzlocation.mdx";
 
-# TZLocation Table (245)
+## TZLocation Table (245)
 
 Time zone location
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|TZLocation\_id|Primary key|PK| |
-|countryId|Country that this timezone location is defined for|FK [country](./country)| |
-|locationCode|Code, such as CA-NT, identifying the timezone location in the imported data. Unique, NOT equal to the culture codes of Windows|String(29)| |
-|groupName|Group (heading) name for timezone locations that do not have a country (such as the EU zones)|String(254)|&#x25CF;|
-|regionName|Name of region, such as Northwest Territories. Future localization via localeText resource type 31|String(254)| |
-|cities|Cities, comma-separated list. Future localization via localeText resource type 32|String(2047)| |
-|shortName|Short name, such as CET (Central European Time); future localization via localeText resource type 33|String(254)| |
-|description|Dcescription, only visible in Admin contexts|String(254)|&#x25CF;|
-|isBuiltIn|Is this row part of SuperOffice priming data|Bool|&#x25CF;|
-|isActive|Is this field visible in the standard drop-down list in the GUI? If no, it can still be used and searched for, but won&apos;t be visible directly in the dropdown list.|Bool|&#x25CF;|
-|isDeleted|Is this row &apos;deleted&apos; (invisible in lists)|Bool|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|TZLocation\_id|Primary key|PK|No|
+|countryId|Country that this timezone location is defined for|FK [country](./country.mdx)|No|
+|locationCode|Code, such as CA-NT, identifying the timezone location in the imported data. Unique, NOT equal to the culture codes of Windows|String(29)|No|
+|groupName|Group (heading) name for timezone locations that do not have a country (such as the EU zones)|String(254)|Yes|
+|regionName|Name of region, such as Northwest Territories. Future localization via localeText resource type 31|String(254)|No|
+|cities|Cities, comma-separated list. Future localization via localeText resource type 32|String(2047)|No|
+|shortName|Short name, such as CET (Central European Time); future localization via localeText resource type 33|String(254)|No|
+|description|Dcescription, only visible in Admin contexts|String(254)|Yes|
+|isBuiltIn|Is this row part of SuperOffice priming data|Bool|Yes|
+|isActive|Is this field visible in the standard drop-down list in the GUI? If no, it can still be used and searched for, but won&apos;t be visible directly in the dropdown list.|Bool|Yes|
+|isDeleted|Is this row &apos;deleted&apos; (invisible in lists)|Bool|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![TZLocation table relationship diagram](/media/loc/en/database/tables/TZLocation.png)
 
@@ -62,6 +61,7 @@ Time zone location
 |[TZStdRule](./tzstdrule)  |Time zone rule for standard time |
 |[workflow](./workflow)  |SuperOffice specific info about a workflow |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -71,3 +71,4 @@ Time zone location
 ## Security Flags
 
 * No access control via user's Role.
+
