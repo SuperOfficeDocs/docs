@@ -1,0 +1,35 @@
+name: CRMScript reference drift check
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'api-sources/crmscript/**'
+      - 'en/automation/crmscript/reference/**'
+      - 'config/nav-crmscript-ref.json'
+      - 'tools/transform-crmscript.ps1'
+      - 'tools/generate-crmscript-nav.ps1'
+
+# Automatically cancel in-progress runs on the same branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  drift-check:
+    name: Verify reference matches api-sources/crmscript
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Check for drift between api-sources/crmscript and the generated reference
+        run: pwsh tools/check-crmscript-drift.ps1

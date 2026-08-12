@@ -228,6 +228,17 @@ function Build-Line {
     return $Parts -join ''
 }
 
+# The hand-rolled YAML parser captures raw text after a field's colon, which is
+# truthy in a later `if ($item.summary)` check even when the source YAML actually
+# means "empty" -- either an explicit `summary: ""`, or a bare `summary:` followed
+# only by a `# TODO` comment (which Clean-Description already treats as empty, but
+# only after the truthiness check has already let it through). Used at every raw
+# summary/remarks/description capture point so "empty" is decided once, see #189.
+function Test-EmptyRawField {
+    param([string]$Text)
+    return ($Text -eq '""') -or ($Text -match '^#?\s*TODO\s*$')
+}
+
 # Parse YAML manually (safe line-by-line parsing)
 function Get-YamlItems {
     param([string[]]$Lines)
@@ -269,6 +280,7 @@ function Get-YamlItems {
                 $sum += " " + $Matches[1].Trim()
                 $j++
             }
+            if (Test-EmptyRawField $sum) { $sum = '' }
             $currentItem.summary = $sum
         }
         elseif ($line -match '^\s{2}remarks:\s*(.*)$') {
@@ -278,6 +290,7 @@ function Get-YamlItems {
                 $rem += " " + $Matches[1].Trim()
                 $j++
             }
+            if (Test-EmptyRawField $rem) { $rem = '' }
             $currentItem.remarks = $rem
         }
         elseif ($line -match '^\s{2}children:\s*$') {
@@ -306,6 +319,7 @@ function Get-YamlItems {
                         $desc += " " + $Matches[1].Trim()
                         $m++
                     }
+                    if (Test-EmptyRawField $desc) { $desc = '' }
                     $param.description = $desc
                 }
                 $k++
@@ -326,6 +340,7 @@ function Get-YamlItems {
                         $desc += " " + $Matches[1].Trim()
                         $k++
                     }
+                    if (Test-EmptyRawField $desc) { $desc = '' }
                     $ret.description = $desc
                 }
                 $j++
@@ -702,11 +717,29 @@ foreach ($yamlFile in $yamlFiles) {
     
     } # End if/else for Namespace vs Class
     
-    # Write file
-    $content = $mdx -join [Environment]::NewLine
-    # Remove lines with only whitespace
-    $content = $content -replace '(?m)^\s+$', ''
-    $content | Out-File -FilePath $outputFilePath -Encoding UTF8 -NoNewline
+    # Write file. Line endings and BOM are hardcoded rather than left to
+    # [Environment]::NewLine / Out-File -Encoding UTF8 defaults, which are both
+    # version- and platform-dependent (Windows PowerShell 5.1: CRLF, BOM;
+    # PowerShell Core/pwsh: LF, no BOM by default). The actual bytes this repo stores
+    # are LF with a BOM -- confirmed via `git cat-file -p HEAD:<path>`, which bypasses
+    # any checkout-time filter, since local `core.autocrlf=true` round-trips every
+    # commit's line endings to LF in the object database regardless of what the
+    # working tree (or this script) wrote, then converts back to CRLF on checkout on
+    # this Windows machine. That round-trip masked the generator's real output for
+    # years -- inspecting the working tree (or a plain file read) shows CRLF, but the
+    # stored blob, and what a checkout with no such conversion (e.g. CI's pwsh on
+    # ubuntu-latest, see #189) actually sees, is LF. Writing LF directly here matches
+    # that canonical stored form on every platform, with no filter to rely on.
+    $content = $mdx -join "`n"
+    # Remove lines with only whitespace. Matches only spaces/tabs, not newlines.
+    $content = $content -replace '(?m)^[ \t]+$', ''
+    # Collapse 3+ consecutive blank lines into 1. The HTML->markdown helpers above
+    # (heading/list/table conversion) each pad their own blank-line margins; when two
+    # converted blocks sit directly adjacent in the source with no prose between them
+    # (e.g. `<h3>Row operators</h3><table>...`), their margins stack into 2-3 blank
+    # lines instead of 1. See #189.
+    $content = $content -replace '\n{3,}', "`n`n"
+    [System.IO.File]::WriteAllText($outputFilePath, $content, (New-Object System.Text.UTF8Encoding($true)))
     
     Write-Host ('  Generated: ' + $outputFileName) -ForegroundColor Green
 }

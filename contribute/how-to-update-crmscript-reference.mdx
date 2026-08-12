@@ -5,7 +5,7 @@ sidebarTitle: Update CRMScript reference
 description: How to regenerate the CRMScript reference from its source YAML when a method, property, or class changes.
 keywords: ['CRMScript', 'reference', 'transform-crmscript', 'generate-crmscript-nav', 'YAML']
 author: digitaldiina
-date: 08.04.2026
+date: 08.12.2026
 content_type: howto
 language: en
 ---
@@ -16,10 +16,11 @@ Use this guide when you need to update *en/automation/crmscript/reference/*, the
 
 The reference isn't hand-written. It's generated from hand-maintained DocFx `YamlMime:ManagedReference` YAML files in *api-sources/crmscript/*. Each YAML file describes one class, namespace, or enum, and produces exactly one *.mdx* file with the same name.
 
-Two tools do the work:
+Three tools do the work:
 
 * *tools/transform-crmscript.ps1* converts the YAML into the reference *.mdx* files.
 * *tools/generate-crmscript-nav.ps1* lists the generated *.mdx* files and writes *config/nav-crmscript-ref.json*, the flat page array that *nav-en.json*'s **CRMScript Reference** tab pulls in as `$ref`.
+* *tools/regenerate-crmscript-reference.ps1* runs both of the above, then `tools/verify-nav-paths.py`, in one step — the command to reach for in the how-tos below unless you specifically need just one stage.
 
 <Note>
 *transform-crmscript.ps1* always reprocesses every file in *api-sources/crmscript/* — there's no option to target a single file. It preserves each output file's existing `date` and `version` frontmatter by reading the current *.mdx* before overwriting it, so a file you didn't mean to touch should come out byte-identical. Run `git diff --stat` after every regeneration, and treat any change outside the files you intended to edit as something to investigate, not something to commit blindly.
@@ -28,7 +29,7 @@ Two tools do the work:
 ## Edit an existing method, property, or class
 
 1. Edit the relevant *.yml* file in *api-sources/crmscript/*.
-1. Run `tools/transform-crmscript.ps1` from the repo root.
+1. Run `tools/regenerate-crmscript-reference.ps1` from the repo root.
 1. Check `git diff --stat` — only the one *.mdx* file for the class you edited should show a change.
 1. Run `markdownlint-cli2` against the regenerated file.
 1. Commit the source *.yml* and the generated *.mdx* together.
@@ -36,9 +37,7 @@ Two tools do the work:
 ## Add a new class
 
 1. Add the new *.yml* file to *api-sources/crmscript/*.
-1. Run `tools/transform-crmscript.ps1` to generate the new *.mdx* file.
-1. Run `tools/generate-crmscript-nav.ps1` to regenerate *config/nav-crmscript-ref.json*. The new page is picked up automatically from the directory listing and sorted case-insensitively — no manual nav edit needed.
-1. Run `tools/verify-nav-paths.py config/nav-crmscript-ref.json` to confirm the new entry resolves to a real file.
+1. Run `tools/regenerate-crmscript-reference.ps1`. It generates the new *.mdx* file, regenerates *config/nav-crmscript-ref.json* (the new page is picked up automatically from the directory listing and sorted case-insensitively — no manual nav edit needed), and confirms every nav entry resolves to a real file.
 
 <Note>
 *en/automation/crmscript/reference/index.mdx* is hand-written, not generated. It only curates the **Global**, **Data Structures**, and **Native** sections. Add a link there only if the new class belongs in one of those three groups — NetServer and other classes are reachable through the left-hand accordion nav alone and don't need an *index.mdx* edit.
@@ -56,11 +55,21 @@ Two tools do the work:
 
 *.mintignore* currently excludes `en/automation/crmscript/reference/**` (except *index.mdx*) as one of several workarounds for `mint dev`/`mint validate` hitting an `EMFILE: too many open files` ceiling on Windows at this repo's current page count. To preview or validate CRMScript reference content locally, temporarily remove that exclusion block — and because the EMFILE limit is real, swap in a different exclusion in its place (for example, one of the language folders) rather than just adding more unignored content on top.
 
+## Automated drift check
+
+A [GitHub Action][2] regenerates the reference from *api-sources/crmscript/* on every pull request that touches that folder, the generated reference, or either generator script, and fails if the result doesn't match what's committed. This catches both directions of drift with one mechanism, since regeneration is deterministic: a source *.yml* edited without regenerating, and a generated *.mdx* hand-edited directly without touching its source (that edit is silently lost the next time someone else runs a real regeneration). The failure message names the specific *api-sources/crmscript/&lt;Name&gt;.yml* source file to check.
+
+<Warning>
+The YAML files in *api-sources/crmscript/* aren't only docs source material — many entries carry an `so.intellisense` key that feeds the CRMScript interpreter's own [built-in intellisense][3]. Treat a drift-check failure as "go check both the doc and the source," not as a formatting nit to wave through.
+</Warning>
+
+This doesn't catch a *.yml* file being deleted without its *.mdx* counterpart — that's a different kind of drift (a stale, orphaned generated page with no live source), tracked separately in [issue #216][1].
+
 ## Known gotchas
 
-### PowerShell encoding
+### Garbled characters after regenerating
 
-Windows PowerShell 5.1 doesn't default to UTF-8: `Get-Content` and `Out-File` without an explicit `-Encoding UTF8` flag use the system code page instead, silently corrupting multi-byte characters (smart quotes, accented and non-Latin names) on read and write. PowerShell Core (`pwsh`) doesn't have this problem, but isn't guaranteed to be installed everywhere this pipeline runs. Both scripts already pass `-Encoding UTF8` — if this bug resurfaces, for example after copying a command without the flag, the symptom is garbled characters in the diff, not an error message.
+If a regenerated file shows corrupted multi-byte characters (smart quotes, accented or non-Latin names) in the diff, that's a PowerShell read-encoding issue, not a real content change — don't commit it. See [`tools/README.md`][4] for the underlying cause and the write-side conventions these scripts follow.
 
 ### HTML-escaped remarks
 
@@ -70,6 +79,7 @@ HTML markup embedded in a class's `<remarks>` field (for example `<ul><li>`) is 
 
 *en/automation/trigger/reference/CRMScript.Event.Trigger.mdx* and *CRMScript.Event.mdx* were a one-off manual conversion from raw DocFx YAML, done with the same tool pointed at different source and output paths. They aren't wired into any repeatable pipeline run today — treat them as hand-maintained pages, separate from the regeneration flow described above.
 
-There's currently no automated check that catches the source YAML and the generated reference drifting out of sync — see [issue #189][1] for that follow-up.
-
-[1]: https://github.com/SuperOfficeDocs/docs/issues/189
+[1]: https://github.com/SuperOfficeDocs/docs/issues/216
+[2]: https://github.com/SuperOfficeDocs/docs/blob/main/.github/workflows/crmscript-drift.yml
+[3]: https://github.com/SuperOfficeDocs/docs/blob/main/en/automation/crmscript/code-quality/intellisense.mdx
+[4]: https://github.com/SuperOfficeDocs/docs/blob/main/tools/README.md

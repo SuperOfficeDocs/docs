@@ -7,7 +7,11 @@
     Lists en/automation/crmscript/reference/*.mdx, converts each filename to its
     Mintlify page path, sorts case-insensitively, and writes a bare JSON array
     matching the format of config/nav-archive-providers.json (2-space indent,
-    CRLF line endings, no BOM, trailing newline, index page first).
+    LF line endings, no BOM, trailing newline, index page first). Line endings are
+    hardcoded rather than left to platform defaults -- verified against the actual
+    git blob (git cat-file -p HEAD:<path>), not a working-tree read, which
+    core.autocrlf=true renders as CRLF on this Windows machine regardless of what's
+    really stored. See #189.
 
 .PARAMETER SourcePath
     Path to the generated MDX reference files. Default: en/automation/crmscript/reference
@@ -49,7 +53,7 @@ for ($i = 0; $i -lt $pages.Count; $i++) {
 }
 $lines += "]"
 
-$content = ($lines -join "`r`n") + "`r`n"
+$content = ($lines -join "`n") + "`n"
 [System.IO.File]::WriteAllText($OutputFile, $content, (New-Object System.Text.UTF8Encoding($false)))
 
 Write-Host "Wrote $($pages.Count) pages to $OutputFile" -ForegroundColor Green
