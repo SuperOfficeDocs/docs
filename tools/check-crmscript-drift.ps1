@@ -40,6 +40,13 @@ try {
         exit 0
     }
 
+    # TEMP DEBUG -- diagnosing an unexpected cross-platform mismatch, remove before merge.
+    Write-Host "===DEBUG=== raw byte diff for first flagged file:"
+    $firstPath = (($dirty -split "`n")[0]).TrimEnd("`r").Substring(3).Trim('"')
+    Write-Host "===DEBUG=== file: $firstPath"
+    git --no-pager diff --no-color -- $firstPath | Select-Object -First 60
+    Write-Host "===DEBUG=== end"
+
     Write-Host "::error::The CRMScript reference is out of sync with api-sources/crmscript."
     Write-Host ""
     Write-Host "Files that don't match a fresh regeneration:"
