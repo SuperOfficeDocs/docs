@@ -1,0 +1,37 @@
+name: Stale generated pages check
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'en/api/archive-providers/reference/**'
+      - 'en/api/mdo-providers/reference/**'
+      - 'en/database/tables/**'
+      - 'config/nav-archive-providers.json'
+      - 'config/nav-mdo-providers.json'
+      - 'config/nav-database-tables.json'
+      - 'tools/find-stale-generated-pages.py'
+
+# Automatically cancel in-progress runs on the same branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  stale-check:
+    name: Find generated pages no longer referenced by their nav file
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Check for stale generated reference pages
+        run: python tools/find-stale-generated-pages.py
