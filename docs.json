@@ -62,6 +62,12 @@
       "defaults": "required"
     }
   },
+  "errors": {
+    "404": {
+      "redirect": false,
+      "description": "<img src=\"/images/404-hugo-board.png\" alt=\"Hugo the SuperOffice owl holding a blank sign\" className=\"block dark:hidden\" style={{width: \"200px\", margin: \"0 auto\"}} noZoom />\n<img src=\"/images/404-hugo-sad.png\" alt=\"Hugo the SuperOffice owl, looking sad\" className=\"hidden dark:block\" style={{width: \"200px\", margin: \"0 auto\"}} noZoom />\n\nSorry, we could not find that page. Head back to the [homepage](/), or use search to find what you were looking for."
+    }
+  },
   "navigation": {
     "$ref": "./config/navigation.json"
   },

@@ -66,7 +66,7 @@ Media files aren't split per-folder. They live in one centralized location at th
 
 ## Images folder
 
-`/images/` holds site-wide branding/config assets referenced directly by `docs.json` (currently `og-background.png`, the social-preview thumbnail background — see [SEO and social previews][4]). This is different from `/media/loc/en/<topic>/`, which holds per-topic content images, and from `/logo/`, which holds only the two required, fixed-filename logo files.
+`/images/` holds site-wide branding/config assets referenced directly by `docs.json` — `og-background.png`, the social-preview thumbnail background (see [SEO and social previews][4]), and the `404-hugo-board.png`/`404-hugo-sad.png` light/dark mascot pair shown on the custom 404 page (see [Configuring Mintlify][5]). This is different from `/media/loc/en/<topic>/`, which holds per-topic content images, and from `/logo/`, which holds only the two required, fixed-filename logo files.
 
 ## Includes subfolder
 
@@ -80,3 +80,4 @@ We use the [Blueprint extension][2] for Visual Studio Code. Available templates 
 [2]: ./markdown-guide/using-blueprint-templates
 [3]: https://mdxjs.com/docs/what-is-mdx/
 [4]: ./seo
+[5]: ./configure-mintlify
