@@ -1,15 +1,15 @@
-**Many contacts are shown without an icon. Does this mean they will not be imported?**
+**Veel contactpersonen worden weergegeven zonder pictogram. Betekent dit dat ze niet worden geïmporteerd?**
 
-Rows without icons are not imported. If you see that many contacts are not being imported, this may be because they are not linked to a company. In that case, you can do one of the following:
+Rijen zonder pictogrammen worden niet geïmporteerd. Als u ziet dat veel contactpersonen niet worden geïmporteerd, kan dit zijn omdat ze niet aan een bedrijf zijn gekoppeld. In dat geval kunt u een van de volgende dingen doen:
 
-* If the contact is actually linked to a company, you return to the import source (Gmail, Outlook or Excel) and specify a company for the contact. Then start the import afresh.
+* Als de contactpersoon daadwerkelijk aan een bedrijf is gekoppeld, gaat u terug naar de importbron (Gmail, Outlook of Excel) en geeft u een bedrijf op voor de contactpersoon. Start de import daarna opnieuw.
 
-* If the contact is not linked to a company, but should be registered under their own name in SuperOffice, set up the person as a company:
+* Als de contactpersoon niet aan een bedrijf is gekoppeld, maar onder zijn/haar eigen naam in SuperOffice moet worden geregistreerd, stelt u de persoon in als bedrijf:
 
-    1. Click **Previous** and **Configure import settings**.
-    2. Click the **If no company name** list under **Contact**.
-    3. Select **Create company using contact name**.
-    4. Click **Save**.
-    5. Click **Next**, and check that the [New company icon][img1] icon is displayed next to the contact. The person is registered as a company in SuperOffice CRM with themselves as the only contact.
+    1. Klik op **Vorige** en **Importinstellingen configureren**.
+    2. Klik op de lijst **Als geen bedrijfsnaam** onder **Contactpersoon**.
+    3. Selecteer **Bedrijf maken op basis van contactnaam**.
+    4. Klik op **Opslaan**.
+    5. Klik op **Volgende** en controleer of het pictogram [Nieuw bedrijf][img1] naast de contactpersoon wordt weergegeven. De persoon wordt geregistreerd als bedrijf in SuperOffice CRM, met zichzelf als enige contactpersoon.
 
 [img1]: ../../../../media/icons/admin/import-preview-icon-company-new.png

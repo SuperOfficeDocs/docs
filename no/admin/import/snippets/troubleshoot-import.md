@@ -1,15 +1,15 @@
-**Many contacts are shown without an icon. Does this mean they will not be imported?**
+**Mange personer vises uten ikon. Betyr det at de ikke blir importert?**
 
-Rows without icons are not imported. If you see that many contacts are not being imported, this may be because they are not linked to a company. In that case, you can do one of the following:
+Rader uten ikoner importeres ikke. Hvis du ser at mange personer ikke blir importert, kan det være fordi de ikke er koblet til et firma. I så fall kan du gjøre ett av følgende:
 
-* If the contact is actually linked to a company, you return to the import source (Gmail, Outlook or Excel) and specify a company for the contact. Then start the import afresh.
+* Hvis personen faktisk er koblet til et firma, går du tilbake til importkilden (Gmail, Outlook eller Excel) og angir et firma for personen. Start deretter importen på nytt.
 
-* If the contact is not linked to a company, but should be registered under their own name in SuperOffice, set up the person as a company:
+* Hvis personen ikke er koblet til et firma, men skal registreres under eget navn i SuperOffice, setter du opp personen som et firma:
 
-    1. Click **Previous** and **Configure import settings**.
-    2. Click the **If no company name** list under **Contact**.
-    3. Select **Create company using contact name**.
-    4. Click **Save**.
-    5. Click **Next**, and check that the [New company icon][img1] icon is displayed next to the contact. The person is registered as a company in SuperOffice CRM with themselves as the only contact.
+    1. Klikk på **Forrige** og **Konfigurer importinnstillinger**.
+    2. Klikk på listen **Hvis ingen firmanavn** under **Person**.
+    3. Velg **Opprett firma med personens navn**.
+    4. Klikk på **Lagre**.
+    5. Klikk på **Neste**, og kontroller at ikonet [Nytt firma][img1] vises ved siden av personen. Personen registreres som et firma i SuperOffice CRM med seg selv som eneste person.
 
 [img1]: ../../../../media/icons/admin/import-preview-icon-company-new.png

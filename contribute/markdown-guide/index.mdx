@@ -313,7 +313,7 @@ See [Files and folders][13] for the `.md` vs. `.mdx` extension rule.
 The repository-root */snippets* folder has a few subfolders, each holding a group of related fragments reused the same way:
 
 * */snippets/license* — plan and license requirement blurbs. Sourced by English content directly; da, de, nl, no, and sv each have their own translated equivalents instead of importing this folder — see the next section for why.
-* */snippets/merge-field* and */snippets/variable* — merge-field reference tables, imported identically by all 6 languages. This is the repository-root pattern working as intended.
+* */snippets/merge-field*, */snippets/variable*, and */snippets/functional-rights* — reference tables of literal system-defined names (merge-field tags, template variables, functional right names), imported identically by all 6 languages. This is the repository-root pattern working as intended.
 
 There's no `/snippets/release-notes` folder today — release notes live at the top-level `/release-notes` folder, unrelated to `/snippets`.
 
@@ -324,6 +324,8 @@ Create a new subfolder when you have multiple related fragments reused the same 
 English's plan and license snippets live at `/snippets/license`. Each of da, de, nl, no, and sv has its own language-root *snippets* folder (for example `de/snippets`) holding translated equivalents of the same fragments — but not all of them exist in every language yet.
 
 This split is deliberate, not a bug: translated text can't live in one shared, root-relative file the way a language-agnostic reference table can — each language needs its own wording. But nothing enforces parity between the English source and the translated copies — that's exactly how [3 files ended up untranslated in all 5 languages][14]. When you add a new file to `/snippets/license`, also add (or file a translation task for) the matching file in each language's own `snippets` folder.
+
+Contrast this with `/snippets/functional-rights`: the table lists literal permission names defined by the SuperOffice product itself, not translatable prose, so there's nothing to translate accurately without duplicating the product's own (English) terminology. Each language's page imports the one English table directly and adds a translated `<Note>` explaining why — see [issue #244][15] for the case that established this pattern.
 
 ## Links
 
@@ -427,6 +429,7 @@ Here are a few resources to help with Markdown to help get you started:
 [12]: ../files-and-folders#media-folder
 [13]: ../files-and-folders#file-names-and-file-extensions
 [14]: https://github.com/SuperOfficeDocs/docs/issues/235
+[15]: https://github.com/SuperOfficeDocs/docs/issues/244
 
 [img1]: /media/loc/en/contribute/plain-action-buttons.png
 [img2]: /media/loc/en/mobile/allow-call-identification.png

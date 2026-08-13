@@ -1,24 +1,3 @@
----
-uid: help-nl-functional-right
-title: Functional rights in SuperOffice
-description: What are all available functional rights in SuperOffice and what each of them mean?
-keywords: ['user management', 'role', 'access', 'rights']
-author: PhilipYates, digitaldiina
-date: 06.11.2026
-version: 12.0
-content_type: reference
-tier: starter
-category: identity management
-topic: role
-audience: settings
-audience_tooltip: Settings and maintenance
-redirect_from: /nl/admin/user-management/learn/role/functional-rights
-userflow_index: true
-language: nl
----
-
-Using [role-based security][3], we can [customize roles][2] to give access to different functions of SuperOffice CRM.
-
 | Functional right | Description | Comment |
 |---|---|---|
 | Administrate FAQ | The user may publish FAQ entries. | They will also be notified of unpublished and expired FAQ entries. |
@@ -85,12 +64,3 @@ Using [role-based security][3], we can [customize roles][2] to give access to di
 | View selections | The user may view selections. | **Legacy Service client only** |
 | View statistics | Grants access to the statistics module. | **Legacy Service client only** |
 | Workflow administrator | Grants limited access to Settings and maintenance. The user may edit workflow (sales or project guide). | To edit lists, the user must also have rights to edit lists or be a general administrator. |
-
-## Gerelateerde inhoud
-
-* [Rol maken][1]
-* [Gegevensrechten voor rol instellen][2]
-
-[1]: ./create-role
-[2]: ./set-data-rights-for-role
-[3]: ./index

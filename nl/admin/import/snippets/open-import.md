@@ -1,1 +1,1 @@
-Open the Import screen by clicking <i class="ph ph-file-arrow-up" aria-hidden="true"></i> **Import** in the Navigator.
+Ga naar het scherm Importeren door op de knop Importeren (<i class="ph ph-file-arrow-up" aria-hidden="true"></i>) in de Navigator te klikken.

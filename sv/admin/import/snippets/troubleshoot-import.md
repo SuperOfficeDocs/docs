@@ -1,15 +1,15 @@
-**Many contacts are shown without an icon. Does this mean they will not be imported?**
+**Många kontakter visas utan ikon. Innebär det att de inte importeras?**
 
-Rows without icons are not imported. If you see that many contacts are not being imported, this may be because they are not linked to a company. In that case, you can do one of the following:
+Rader utan ikoner importeras inte. Om du ser att många kontakter inte importeras kan det bero på att de inte är kopplade till ett företag. I så fall kan du göra något av följande:
 
-* If the contact is actually linked to a company, you return to the import source (Gmail, Outlook or Excel) and specify a company for the contact. Then start the import afresh.
+* Om kontakten faktiskt är kopplad till ett företag går du tillbaka till importkällan (Gmail, Outlook eller Excel) och anger ett företag för kontakten. Starta sedan importen på nytt.
 
-* If the contact is not linked to a company, but should be registered under their own name in SuperOffice, set up the person as a company:
+* Om kontakten inte är kopplad till ett företag, men ska registreras under sitt eget namn i SuperOffice, ställer du in personen som ett företag:
 
-    1. Click **Previous** and **Configure import settings**.
-    2. Click the **If no company name** list under **Contact**.
-    3. Select **Create company using contact name**.
-    4. Click **Save**.
-    5. Click **Next**, and check that the [New company icon][img1] icon is displayed next to the contact. The person is registered as a company in SuperOffice CRM with themselves as the only contact.
+    1. Klicka på **Föregående** och **Konfigurera importinställningar**.
+    2. Klicka på listan **Om inget företagsnamn** under **Kontakt**.
+    3. Välj **Skapa företag med kontaktens namn**.
+    4. Klicka på **Spara**.
+    5. Klicka på **Nästa** och kontrollera att ikonen [Nytt företag][img1] visas bredvid kontakten. Personen registreras som ett företag i SuperOffice CRM med sig själv som enda kontakt.
 
 [img1]: ../../../../media/icons/admin/import-preview-icon-company-new.png

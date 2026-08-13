@@ -1,3 +1,3 @@
-Click **Configure import settings** and [adjust the import settings][1].
+Klikk på **Konfigurer importinnstillinger** og [juster importinnstillingene][1].
 
 [1]: ../settings
