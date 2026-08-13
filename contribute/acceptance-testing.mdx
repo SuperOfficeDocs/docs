@@ -9,11 +9,11 @@ content_type: how-to
 language: en
 ---
 
-This is the checklist to run after any change big enough to risk breaking something across the site - a folder move, a nav overhaul, a design change, or a pre-launch pass. It complements [Automated tests][2], which covers what runs automatically on every PR - everything here is run on demand, against a live deployment (a softlaunch environment or a PR preview), never `mint dev`.
+This is the checklist to run after any change big enough to risk breaking something across the site - a folder move, a nav overhaul, a design change, or a pre-launch pass. It complements [Automated tests][2], which covers what runs automatically on every PR - everything here is run on demand, against a live deployment (the site or a PR preview).
 
 ## Automated checks
 
-These run from the repository root with no browser needed. Several use the Vale CLI or `mint` CLI directly - both already used elsewhere in this repo (see [Automated tests][2]).
+These run from the repository root with no browser needed. Several use the Vale CLI or `mint` CLI directly - both already used elsewhere in this repo.
 
 | Check | Command | Covers |
 |---|---|---|
@@ -27,7 +27,7 @@ These run from the repository root with no browser needed. Several use the Vale 
 
 ### Known limitations
 
-The language-leakage check has a real blind spot: Danish, Norwegian Bokmal, and Swedish share enough vocabulary that a paragraph of one leaking into another may not add many extra misspellings, since the words can still be valid-ish in the wrong dictionary. It works far better for a leak with little shared vocabulary, such as German into Dutch. Treat an outlier as worth a 30-second look, and pair it with the manual per-language skim below for the Nordic-language direction specifically.
+The language-leakage check has a real blind spot: Danish, Norwegian, and Swedish share enough vocabulary that a paragraph of one leaking into another may not add many extra misspellings, since the words can still be valid-ish in the wrong dictionary. It works far better for a leak with little shared vocabulary, such as German into Dutch. Treat an outlier as worth a 30-second look, and pair it with the manual per-language skim below for the Nordic-language direction specifically.
 
 `tools/check-redirects-live.py` can only test wildcard entries (about 8% of `config/redirects.json`) with a partial sanity check on the destination's own prefix, and only when that prefix is itself a real path (`/foo/*`, not a filename-prefix pattern like `/foo/bar-*`). A wildcard rule reported clean has not been proven correct for every possible match, only that its target namespace is alive.
 
@@ -62,7 +62,6 @@ File anything confirmed real as its own GitHub issue rather than fixing it in th
 
 ## Related content
 
-* [Automated tests][2] - everything that runs automatically on every PR or on a schedule; this page only covers on-demand checks.
 * [Mintlify deployment and CI/CD][4] - how to reach a live PR preview to test against.
 * [Performance benchmarking][5] - the sibling `tools/benchmarks/` scripts this page's Playwright sweep reuses.
 
