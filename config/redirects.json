@@ -20,10 +20,6 @@
     "destination": "/da/erp/learn/index"
   },
   {
-    "source": "/da/admin/getting-started/index",
-    "destination": "/da/admin/getting-started"
-  },
-  {
     "source": "/da/admin/getting-started/onboard-users",
     "destination": "/da/admin/getting-started"
   },
@@ -700,16 +696,8 @@
     "destination": "/da/custom-objects/admin/create-extra-table"
   },
   {
-    "source": "/da/custom-objects/learn/extra-table/index",
-    "destination": "/da/custom-objects/learn/extra-table"
-  },
-  {
     "source": "/da/custom-objects/learn/udef/add",
     "destination": "/da/custom-objects/admin/add-udef"
-  },
-  {
-    "source": "/da/custom-objects/learn/udef/index",
-    "destination": "/da/custom-objects/learn/udef"
   },
   {
     "source": "/da/customer-center/admin/index",
@@ -1508,10 +1496,6 @@
     "destination": "/da/search-options/selection/learn/create"
   },
   {
-    "source": "/da/search-options/selection/learn/create/index",
-    "destination": "/da/search-options/selection/learn/create"
-  },
-  {
     "source": "/da/search-options/selection/learn/create/tutorial",
     "destination": "/da/search-options/selection/learn/create"
   },
@@ -1549,10 +1533,6 @@
   },
   {
     "source": "/da/search-options/selection/learn/update/delete",
-    "destination": "/da/search-options/selection/learn/update"
-  },
-  {
-    "source": "/da/search-options/selection/learn/update/index",
     "destination": "/da/search-options/selection/learn/update"
   },
   {
@@ -1602,10 +1582,6 @@
   {
     "source": "/de/admin/erp/learn/screen/erp-tab",
     "destination": "/de/erp/learn/index"
-  },
-  {
-    "source": "/de/admin/getting-started/index",
-    "destination": "/de/admin/getting-started"
   },
   {
     "source": "/de/admin/getting-started/onboard-users",
@@ -2280,16 +2256,8 @@
     "destination": "/de/custom-objects/admin/create-extra-table"
   },
   {
-    "source": "/de/custom-objects/learn/extra-table/index",
-    "destination": "/de/custom-objects/learn/extra-table"
-  },
-  {
     "source": "/de/custom-objects/learn/udef/add",
     "destination": "/de/custom-objects/admin/add-udef"
-  },
-  {
-    "source": "/de/custom-objects/learn/udef/index",
-    "destination": "/de/custom-objects/learn/udef"
   },
   {
     "source": "/de/customer-center/admin/index",
@@ -3084,10 +3052,6 @@
     "destination": "/de/search-options/selection/learn/create"
   },
   {
-    "source": "/de/search-options/selection/learn/create/index",
-    "destination": "/de/search-options/selection/learn/create"
-  },
-  {
     "source": "/de/search-options/selection/learn/create/tutorial",
     "destination": "/de/search-options/selection/learn/create"
   },
@@ -3125,10 +3089,6 @@
   },
   {
     "source": "/de/search-options/selection/learn/update/delete",
-    "destination": "/de/search-options/selection/learn/update"
-  },
-  {
-    "source": "/de/search-options/selection/learn/update/index",
     "destination": "/de/search-options/selection/learn/update"
   },
   {
@@ -3178,10 +3138,6 @@
   {
     "source": "/en/admin/erp/learn/screen/erp-tab",
     "destination": "/en/erp/learn/index"
-  },
-  {
-    "source": "/en/admin/getting-started/index",
-    "destination": "/en/admin/getting-started"
   },
   {
     "source": "/en/admin/getting-started/onboard-users",
@@ -3266,10 +3222,6 @@
   {
     "source": "/en/admin/license/change-user-plan",
     "destination": "/en/admin/license/user-plans"
-  },
-  {
-    "source": "/en/admin/license/expander-services/index",
-    "destination": "/en/admin/license/expander-services"
   },
   {
     "source": "/en/admin/license/expander-services/tool-box",
@@ -4028,7 +3980,7 @@
     "destination": "/en/chat/learn/link-to-person"
   },
   {
-    "source": "/en/chat/learn/create-quick-reply.md",
+    "source": "/en/chat/learn/create-quick-reply",
     "destination": "/en/chat/learn/respond"
   },
   {
@@ -4236,16 +4188,8 @@
     "destination": "/en/custom-objects/admin/create-extra-table"
   },
   {
-    "source": "/en/custom-objects/learn/extra-table/index",
-    "destination": "/en/custom-objects/learn/extra-table"
-  },
-  {
     "source": "/en/custom-objects/learn/udef/add",
     "destination": "/en/custom-objects/admin/add-udef"
-  },
-  {
-    "source": "/en/custom-objects/learn/udef/index",
-    "destination": "/en/custom-objects/learn/udef"
   },
   {
     "source": "/en/custom-objects/overview",
@@ -5576,10 +5520,6 @@
     "destination": "/en/search-options/selection/learn/create"
   },
   {
-    "source": "/en/search-options/selection/learn/create/index",
-    "destination": "/en/search-options/selection/learn/create"
-  },
-  {
     "source": "/en/search-options/selection/learn/create/tutorial",
     "destination": "/en/search-options/selection/learn/create"
   },
@@ -5617,10 +5557,6 @@
   },
   {
     "source": "/en/search-options/selection/learn/update/delete",
-    "destination": "/en/search-options/selection/learn/update"
-  },
-  {
-    "source": "/en/search-options/selection/learn/update/index",
     "destination": "/en/search-options/selection/learn/update"
   },
   {
@@ -5858,10 +5794,6 @@
   {
     "source": "/nl/admin/erp/learn/screen/erp-tab",
     "destination": "/nl/erp/learn/index"
-  },
-  {
-    "source": "/nl/admin/getting-started/index",
-    "destination": "/nl/admin/getting-started"
   },
   {
     "source": "/nl/admin/getting-started/onboard-users",
@@ -6536,16 +6468,8 @@
     "destination": "/nl/custom-objects/admin/create-extra-table"
   },
   {
-    "source": "/nl/custom-objects/learn/extra-table/index",
-    "destination": "/nl/custom-objects/learn/extra-table"
-  },
-  {
     "source": "/nl/custom-objects/learn/udef/add",
     "destination": "/nl/custom-objects/admin/add-udef"
-  },
-  {
-    "source": "/nl/custom-objects/learn/udef/index",
-    "destination": "/nl/custom-objects/learn/udef"
   },
   {
     "source": "/nl/customer-center/admin/index",
@@ -7340,10 +7264,6 @@
     "destination": "/nl/search-options/selection/learn/create"
   },
   {
-    "source": "/nl/search-options/selection/learn/create/index",
-    "destination": "/nl/search-options/selection/learn/create"
-  },
-  {
     "source": "/nl/search-options/selection/learn/create/tutorial",
     "destination": "/nl/search-options/selection/learn/create"
   },
@@ -7381,10 +7301,6 @@
   },
   {
     "source": "/nl/search-options/selection/learn/update/delete",
-    "destination": "/nl/search-options/selection/learn/update"
-  },
-  {
-    "source": "/nl/search-options/selection/learn/update/index",
     "destination": "/nl/search-options/selection/learn/update"
   },
   {
@@ -7434,10 +7350,6 @@
   {
     "source": "/no/admin/erp/learn/screen/erp-tab",
     "destination": "/no/erp/learn/index"
-  },
-  {
-    "source": "/no/admin/getting-started/index",
-    "destination": "/no/admin/getting-started"
   },
   {
     "source": "/no/admin/getting-started/onboard-users",
@@ -8112,16 +8024,8 @@
     "destination": "/no/custom-objects/admin/create-extra-table"
   },
   {
-    "source": "/no/custom-objects/learn/extra-table/index",
-    "destination": "/no/custom-objects/learn/extra-table"
-  },
-  {
     "source": "/no/custom-objects/learn/udef/add",
     "destination": "/no/custom-objects/admin/add-udef"
-  },
-  {
-    "source": "/no/custom-objects/learn/udef/index",
-    "destination": "/no/custom-objects/learn/udef"
   },
   {
     "source": "/no/customer-center/admin/index",
@@ -8916,10 +8820,6 @@
     "destination": "/no/search-options/selection/learn/create"
   },
   {
-    "source": "/no/search-options/selection/learn/create/index",
-    "destination": "/no/search-options/selection/learn/create"
-  },
-  {
     "source": "/no/search-options/selection/learn/create/tutorial",
     "destination": "/no/search-options/selection/learn/create"
   },
@@ -8957,10 +8857,6 @@
   },
   {
     "source": "/no/search-options/selection/learn/update/delete",
-    "destination": "/no/search-options/selection/learn/update"
-  },
-  {
-    "source": "/no/search-options/selection/learn/update/index",
     "destination": "/no/search-options/selection/learn/update"
   },
   {
@@ -9086,10 +8982,6 @@
   {
     "source": "/sv/admin/erp/learn/screen/erp-tab",
     "destination": "/sv/erp/learn/index"
-  },
-  {
-    "source": "/sv/admin/getting-started/index",
-    "destination": "/sv/admin/getting-started"
   },
   {
     "source": "/sv/admin/getting-started/onboard-users",
@@ -9760,16 +9652,8 @@
     "destination": "/sv/custom-objects/admin/create-extra-table"
   },
   {
-    "source": "/sv/custom-objects/learn/extra-table/index",
-    "destination": "/sv/custom-objects/learn/extra-table"
-  },
-  {
     "source": "/sv/custom-objects/learn/udef/add",
     "destination": "/sv/custom-objects/admin/add-udef"
-  },
-  {
-    "source": "/sv/custom-objects/learn/udef/index",
-    "destination": "/sv/custom-objects/learn/udef"
   },
   {
     "source": "/sv/customer-center/admin/index",
@@ -10229,7 +10113,7 @@
   },
   {
     "source": "/sv/project/learn/screen/project-guide-tab",
-    "destination": "/sv/project/learn/project-guide/project-guide-tab"
+    "destination": "/sv/project/learn/project-guides"
   },
   {
     "source": "/sv/project/learn/screen/project-status-admin",
@@ -10568,10 +10452,6 @@
     "destination": "/sv/search-options/selection/learn/create"
   },
   {
-    "source": "/sv/search-options/selection/learn/create/index",
-    "destination": "/sv/search-options/selection/learn/create"
-  },
-  {
     "source": "/sv/search-options/selection/learn/create/tutorial",
     "destination": "/sv/search-options/selection/learn/create"
   },
@@ -10609,10 +10489,6 @@
   },
   {
     "source": "/sv/search-options/selection/learn/update/delete",
-    "destination": "/sv/search-options/selection/learn/update"
-  },
-  {
-    "source": "/sv/search-options/selection/learn/update/index",
     "destination": "/sv/search-options/selection/learn/update"
   },
   {
