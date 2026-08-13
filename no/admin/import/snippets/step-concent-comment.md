@@ -1,1 +1,1 @@
-In the **Consent comment** field, enter a comment about why you are registering these contacts in SuperOffice (purpose) and how/where you obtained their consent
+I feltet **Samtykkekommentar** skriver du en kommentar om hvorfor du registrerer disse personene i SuperOffice (formål), og hvordan/hvor du har innhentet samtykket deres

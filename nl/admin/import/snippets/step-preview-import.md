@@ -1,14 +1,14 @@
-1. Click **Next**. The **Preview import** window will appear.
+1. Klik op **Next**. Het venster **Importvoorbeeld** wordt weergegeven.
 
-1. In **Preview import** you can browse through the import data before the import begins.
+1. In **Importvoorbeeld** kunt u de importgegevens doorbladeren voordat de import begint.
 
-    | Icon | Description |
+    | Pictogram | Beschrijving |
     |:-:|---|
-    | ![Icon - company new][img1] | The company does not exist and will be added. |
-    | ![Icon - company changed][img2] | The company already exists and will be updated. |
-    | ![Icon - person new][img3] | The contact does not exist and will be added. |
-    | ![Icon - person changed][img4] | The contact already exists and will be updated. |
-    | empty | No updating. |
+    | ![Pictogram - nieuw bedrijf][img1] | Het bedrijf bestaat niet en wordt toegevoegd. |
+    | ![Pictogram - bedrijf gewijzigd][img2] | Het bedrijf bestaat al en wordt bijgewerkt. |
+    | ![Pictogram - nieuwe contactpersoon][img3] | De contactpersoon bestaat niet en wordt toegevoegd. |
+    | ![Pictogram - contactpersoon gewijzigd][img4] | De contactpersoon bestaat al en wordt bijgewerkt. |
+    | leeg | Geen update. |
 
 [img1]: ../../../../media/icons/admin/import-preview-icon-company-new.png
 [img2]: ../../../../media/icons/admin/import-preview-icon-company-changed.png

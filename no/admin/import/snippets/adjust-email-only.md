@@ -1,7 +1,7 @@
-By default, all the columns with companies/contacts from the email application concerned (Outlook or Gmail) are linked to a SuperOffice field, but if you wish you can:
+Som standard er alle kolonnene med firmaer/personer fra den aktuelle e-postapplikasjonen (Outlook eller Gmail) koblet til et SuperOffice-felt, men hvis du vil, kan du:
 
-* Click a column heading and edit the SuperOffice field that the data in the column should be imported to.
-* Click a column heading and select **(None selected)** if you do not wish to import the data in the column.
+* Klikke på en kolonneoverskrift og redigere SuperOffice-feltet som dataene i kolonnen skal importeres til.
+* Klikke på en kolonneoverskrift og velge **(Ingen valgt)** hvis du ikke vil importere dataene i kolonnen.
 
 1. <ConfigureImportSettings />
 

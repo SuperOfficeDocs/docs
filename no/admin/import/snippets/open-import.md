@@ -1,1 +1,1 @@
-Open the Import screen by clicking <i class="ph ph-file-arrow-up" aria-hidden="true"></i> **Import** in the Navigator.
+Gå til skjermbildet Importer ved å klikke på knappen Importer (<i class="ph ph-file-arrow-up" aria-hidden="true"></i>) i Navigatoren.

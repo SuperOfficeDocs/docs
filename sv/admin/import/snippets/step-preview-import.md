@@ -1,14 +1,14 @@
-1. Click **Next**. The **Preview import** window will appear.
+1. Klicka på **Next**. Fönstret **Förhandsgranska import** visas.
 
-1. In **Preview import** you can browse through the import data before the import begins.
+1. I **Förhandsgranska import** kan du bläddra igenom importuppgifterna innan importen börjar.
 
-    | Icon | Description |
+    | Ikon | Beskrivning |
     |:-:|---|
-    | ![Icon - company new][img1] | The company does not exist and will be added. |
-    | ![Icon - company changed][img2] | The company already exists and will be updated. |
-    | ![Icon - person new][img3] | The contact does not exist and will be added. |
-    | ![Icon - person changed][img4] | The contact already exists and will be updated. |
-    | empty | No updating. |
+    | ![Ikon - nytt företag][img1] | Företaget finns inte och kommer att läggas till. |
+    | ![Ikon - företag ändrat][img2] | Företaget finns redan och kommer att uppdateras. |
+    | ![Ikon - ny kontakt][img3] | Kontakten finns inte och kommer att läggas till. |
+    | ![Ikon - kontakt ändrad][img4] | Kontakten finns redan och kommer att uppdateras. |
+    | tom | Ingen uppdatering. |
 
 [img1]: ../../../../media/icons/admin/import-preview-icon-company-new.png
 [img2]: ../../../../media/icons/admin/import-preview-icon-company-changed.png
