@@ -1,0 +1,71 @@
+---
+uid: acceptance-testing
+title: Acceptance testing
+description: The repeatable checklist to run after any refactor, design change, or site reorg - what's automated (link/redirect/image/accessibility/encoding checks, a scripted page sweep), what needs a manual look, and the known blind spots of each.
+keywords: ['acceptance testing', 'smoke test', 'broken links', 'redirects', 'accessibility', 'a11y', 'language leakage', 'encoding']
+author: digitaldiina
+date: 08.13.2026
+content_type: how-to
+language: en
+---
+
+This is the checklist to run after any change big enough to risk breaking something across the site - a folder move, a nav overhaul, a design change, or a pre-launch pass. It complements [Automated tests][2], which covers what runs automatically on every PR - everything here is run on demand, against a live deployment (the site or a PR preview).
+
+## Automated checks
+
+These run from the repository root with no browser needed. Several use the Vale CLI or `mint` CLI directly - both already used elsewhere in this repo.
+
+| Check | Command | Covers |
+|---|---|---|
+| Internal/external/redirect links | `mint broken-links --check-anchors --check-external --check-redirects --check-snippets` | Every link type the CLI supports, run in one pass instead of the per-PR add-on's internal-only default |
+| Accessibility | `mint a11y` | Color-contrast ratios against `docs.json`'s theme colors, and missing alt text on images/videos |
+| Image references | `python tools/check-image-references.py` | Every markdown/reference-style/HTML image reference resolves to a real file - catches the leftover-relative-path class of bug the root-absolute media convention should have eliminated |
+| Encoding corruption | `python tools/check-encoding.py` | Invalid UTF-8 and mojibake substrings (double-encoded accented characters, corrupted smart quotes) across every language |
+| Language leakage (proxy) | `python tools/check-vale-spelling-density.py --vale <path-to-vale.exe>` | Flags files whose per-language Hunspell spelling-alert density is a statistical outlier versus that language's own median - a real signal without adding a new dependency |
+| Redirects against a live site | `python tools/check-redirects-live.py --base-url <site-url>` | Every non-wildcard `config/redirects.json` entry actually resolves, and lands on the expected page - not just that the JSON is well-formed |
+| Nav paths resolve | `python tools/verify-nav-paths.py <config/nav-*.json>` | Every page referenced in nav exists on disk (already used elsewhere, listed here for completeness) |
+
+### Known limitations
+
+The language-leakage check has a real blind spot: Danish, Norwegian, and Swedish share enough vocabulary that a paragraph of one leaking into another may not add many extra misspellings, since the words can still be valid-ish in the wrong dictionary. It works far better for a leak with little shared vocabulary, such as German into Dutch. Treat an outlier as worth a 30-second look, and pair it with the manual per-language skim below for the Nordic-language direction specifically.
+
+`tools/check-redirects-live.py` can only test wildcard entries (about 8% of `config/redirects.json`) with a partial sanity check on the destination's own prefix, and only when that prefix is itself a real path (`/foo/*`, not a filename-prefix pattern like `/foo/bar-*`). A wildcard rule reported clean has not been proven correct for every possible match, only that its target namespace is alive.
+
+## Scripted page sweep
+
+`tools/benchmarks/smoke-test-pages.mjs` (reuses this folder's existing Playwright dependency - run `npm install` in `tools/benchmarks/` first if `node_modules` is missing) navigates a fixed set of pages against a live URL and writes one report instead of requiring an interactive session per page:
+
+```sh
+SMOKE_BASE_URL=<site-url> RUN_LABEL=<label> node smoke-test-pages.mjs
+```
+
+For each page it captures console errors, failed network requests (any response 400 or above), and a screenshot at both a desktop and a narrower width. It also runs one keyboard tab-order trace, checking how many focusable elements are reachable and whether each has a visible focus outline - a check `mint a11y` does not perform.
+
+Edit the page list at the top of the script to change what's covered - by default it's 1 landing and 1 deep page per language, a handful of content-type-diverse English pages, and any page identified as a candidate for a layout complaint (for example, a deeply nested reference section suspected of causing a cramped sidebar).
+
+<Note>
+An embedded third-party video (for example, a YouTube `nocookie` embed) can show up as a failed request under headless Chromium even though it loads fine in a real browser - confirmed by curling the same URL directly. Don't take a single repeated failed request at face value; check whether it is the same third-party embed on every affected page before treating it as a real break.
+</Note>
+
+## Manual review
+
+Reading every screenshot the script produces defeats the point of scripting it. Only open the ones a judgment call actually needs:
+
+* **Layout/sidebar candidates:** the screenshots for pages flagged as deep-nesting/long-label candidates, at both widths captured.
+* **Per-language landing pages:** a quick skim for anything that reads as an obvious untranslated stub or broken layout. This is a backstop for the language-leakage blind spot above, not a substitute for it.
+* **Search relevance:** run a fixed list of representative queries and read the returned titles; the automated check only confirms a query returns *some* results, not that they're the *right* results.
+* **Keyboard tab order:** the script reports how many elements were reached and whether each had a visible outline; whether the *order* makes sense is a human judgment the trace alone cannot make.
+
+## Reporting what you find
+
+File anything confirmed real as its own GitHub issue rather than fixing it in the same pass that found it, unless the fix is genuinely trivial. See [Reviewing a PR][3] for the general review conventions this checklist feeds into.
+
+## Related content
+
+* [Mintlify deployment and CI/CD][4] - how to reach a live PR preview to test against.
+* [Performance benchmarking][5] - the sibling `tools/benchmarks/` scripts this page's Playwright sweep reuses.
+
+[2]: ./automated-tests
+[3]: ./review/index
+[4]: ./deployment
+[5]: ./performance-benchmarking
