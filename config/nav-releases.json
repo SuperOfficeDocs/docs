@@ -575,21 +575,11 @@
       "release-notes/database/changeslog",
       {
         "group": "12",
-        "root": "release-notes/database/changes-11.13.921",
+        "root": "release-notes/database/changes-12.2.2072",
         "pages": [
-          "release-notes/database/changes-11.13.921",
-          "release-notes/database/changes-11.12.675",
-          "release-notes/database/changes-11.11.589",
-          "release-notes/database/changes-11.10.705",
-          "release-notes/database/changes-11.9.1204",
-          "release-notes/database/changes-11.8.788",
-          "release-notes/database/changes-11.7.727",
-          "release-notes/database/changes-11.6.943",
-          "release-notes/database/changes-11.5.755",
-          "release-notes/database/changes-11.4.1157",
-          "release-notes/database/changes-11.3.1348",
-          "release-notes/database/changes-11.2.664",
-          "release-notes/database/changes-11.1.447"
+          "release-notes/database/changes-12.2.2072",
+          "release-notes/database/changes-12.1.1412",
+          "release-notes/database/changes-12.0.342"
         ]
       },
       {
