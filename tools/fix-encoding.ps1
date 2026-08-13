@@ -1,4 +1,4 @@
-# Fix UTF-8 encoding corruption in files
+﻿# Fix UTF-8 encoding corruption in files
 # Usage: .\fix-encoding.ps1 <path> [-Fix] [-Quiet]
 
 param(
@@ -66,6 +66,8 @@ foreach ($file in $files) {
     $content = $content -replace 'Ã«', 'ë'
     $content = $content -replace 'Ã‹', 'Ë'
     $content = $content -replace 'Ã¯', 'ï'
+    $content = $content -replace 'Ã©', 'é'
+    $content = $content -replace 'Ã‰', 'É'
     $content = $content -replace 'Ã', 'Ï'
     # German
     $content = $content -replace 'ÃŸ', 'ß'
