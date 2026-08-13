@@ -22,7 +22,7 @@ kept on relative sibling links by design, so a resolving link there is
 confirmed-good, not unconfirmed markdown syntax like everything else in
 needs-review.
 
-Output: scratch-broken-links-{true,blocked,ignored,false-positives,db-tables-relative,needs-review}.txt
+Output: scratch-broken-links-{true,blocked,ignored,false-positives,external-false-positives,db-tables-relative,needs-review}.txt
 
 By default this reuses the cached raw report from the last real run
 (scratch-broken-links-triage.txt) instead of re-invoking `mint broken-links`,
@@ -78,6 +78,40 @@ KNOWN_BLOCKED = [
     ("en/automation/crmscript/reference/", 108),
     ("en/api/reference/restful/", 111),
 ]
+
+# External (http/https) targets that mint's own --check-external reports as
+# unreachable but that resolve fine when opened in a real browser -- confirmed
+# manually, not assumed. Matched by substring against the raw target. Not a
+# .mintignore case (that only ever applies to internal repo files) and not
+# the raw-<a>-anchor checker bug below (these are genuine external URLs).
+EXTERNAL_FALSE_POSITIVES = [
+    (
+        "marketplace.visualstudio.com",
+        "VS Code Marketplace blocks the checker's automated request (bot/anti-automation "
+        "detection) -- every link opens fine in a real browser, confirmed manually",
+    ),
+    (
+        "github.com/SuperOffice/devnet-database-mirroring",
+        "resolves fine in a real browser -- likely GitHub blocking the checker's "
+        "unauthenticated/automated request",
+    ),
+    (
+        "techdoc.superoffice.com",
+        "dead domain baked into en/database/tables/ by the external ADO-hosted table "
+        "generator -- not fixable in this repo, tracked as a generated-data bug",
+    ),
+]
+
+
+def is_external(raw_target):
+    return raw_target.startswith("http://") or raw_target.startswith("https://")
+
+
+def match_external_false_positive(raw_target):
+    for substring, reason in EXTERNAL_FALSE_POSITIVES:
+        if substring in raw_target:
+            return reason
+    return None
 
 
 def run_broken_links():
@@ -387,11 +421,19 @@ def main():
         "blocked": [],
         "ignored": [],
         "false_positive": [],
+        "external_false_positive": [],
         "db_tables_relative": [],
         "needs_review": [],
     }
 
     for source_file, raw_target in pairs:
+        if is_external(raw_target):
+            reason = match_external_false_positive(raw_target)
+            if reason:
+                buckets["external_false_positive"].append((source_file, raw_target, reason))
+            else:
+                buckets["true_broken"].append((source_file, raw_target, "external link, mint reports unreachable"))
+            continue
         resolved, reason, fragment, base = resolve_target(source_file, raw_target, tracked_exact, tracked_lower)
         if resolved is None:
             blocked_hit = next((issue for prefix, issue in KNOWN_BLOCKED if base.startswith(prefix)), None)
@@ -426,6 +468,7 @@ def main():
     print(f"Blocked on tracked issue:            {len(buckets['blocked'])}")
     print(f"Ignored (.mintignore, by design):   {len(buckets['ignored'])}")
     print(f"False positive (raw <a>, checker):  {len(buckets['false_positive'])}")
+    print(f"External false positive (checker):  {len(buckets['external_false_positive'])}")
     print(f"DB-tables relative (by design):     {len(buckets['db_tables_relative'])}")
     print(f"Needs review (unconfirmed syntax):  {len(buckets['needs_review'])}")
 
@@ -440,6 +483,11 @@ def main():
         "false-positives",
         buckets["false_positive"],
         lambda r: f"{r[0]}\t{r[1]}\t{r[2]}\t{r[3]}",
+    )
+    write_bucket(
+        "external-false-positives",
+        buckets["external_false_positive"],
+        lambda r: f"{r[0]}\t{r[1]}\t{r[2]}",
     )
     write_bucket(
         "db-tables-relative",
