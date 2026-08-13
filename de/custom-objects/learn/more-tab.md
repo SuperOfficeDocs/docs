@@ -53,7 +53,7 @@ Klicken Sie auf <i class="ph ph-pencil-simple" aria-label="Edit"></i>, um die In
 
 * **Benutzerdefinierte Felder anpassen**: Das Hinzufügen benutzerdefinierter Felder oder die Anpassung von Layouts erfordert administrative Zugriffsrechte und in einigen Fällen eine **Development Tools**-Lizenz oder den **Core**-Plan.
 
-## Verwandte Themen
+## Verwandte Inhalte
 
 * [Benutzerdefinierte Felder Übersicht][1]
 * [Benutzerdefinierte Felder hinzufügen][2]

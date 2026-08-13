@@ -43,7 +43,7 @@ Wenn ein Kunde dieses Formular ausfüllt, werden die Informationen und Details a
 
 ![Web-Formular auf der Seite Kontakt -screenshot][img4]
 
-## Verwandte Themen
+## Verwandte Inhalte
 
 * [Kundenzentrum konfigurieren][2]
 * [Mit Formularen arbeiten][1]
