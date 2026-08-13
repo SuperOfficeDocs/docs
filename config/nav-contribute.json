@@ -60,5 +60,6 @@
   "contribute/seo",
   "contribute/deployment",
   "contribute/automated-tests",
+  "contribute/acceptance-testing",
   "contribute/performance-benchmarking"
 ]
