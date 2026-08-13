@@ -40,4 +40,4 @@ You can turn SCIM rules on and off and also rearrange the order in which they ar
 
 [1]: ../sign-in-to-scim
 
-[img1]: ../media/image84sls.png
+[img1]: /media/loc/en/online/image84sls.png
