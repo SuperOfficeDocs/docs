@@ -62,4 +62,4 @@ All config variables are available using `getVariable()`.
 | element_getFieldValue          | String |             | Returns a value or attribute from your element |
 | element_toString               | String |             | Converts a simple value to a string            |
 
-[1]: ../../../automation/crmscript/reference/CRMScript.Native.HtmlElement.yml
+[1]: ../../../automation/crmscript/reference/CRMScript.Native.HtmlElement

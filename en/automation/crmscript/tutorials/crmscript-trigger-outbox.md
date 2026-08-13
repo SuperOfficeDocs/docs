@@ -95,4 +95,4 @@ ed.setOutputValue("outbox.header.0.name", "X-our-header");
 ed.setOutputValue("outbox.header.0.value", "Email processed by CRMScript");
 ```
 
-[1]: ../../trigger/reference/CRMScript.Event.Trigger.yml#CRMScript_Event_Trigger_OutboxItemCreated
+[1]: ../../trigger/reference/CRMScript.Event.Trigger#outboxitemcreated

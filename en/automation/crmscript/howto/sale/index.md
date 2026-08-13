@@ -68,10 +68,10 @@ For a complete list of fields, see the [database reference][20].
 [6]: ./guides
 [7]: ./currency
 [8]: ./samples
-[10]: ../../reference/CRMScript.NetServer.NSSaleAgent.yml
-[11]: ../../reference/CRMScript.NetServer.NSSale.yml
-[12]: ../../reference/CRMScript.NetServer.NSSaleEntity.yml
-[13]: ../../reference/CRMScript.NetServer.NSSaleStakeholder.yml
-[14]: ../../reference/CRMScript.NetServer.NSSaleStageEntity.yml
-[15]: ../../reference/CRMScript.NetServer.NSSaleType.yml
+[10]: ../../reference/CRMScript.NetServer.NSSaleAgent
+[11]: ../../reference/CRMScript.NetServer.NSSale
+[12]: ../../reference/CRMScript.NetServer.NSSaleEntity
+[13]: ../../reference/CRMScript.NetServer.NSSaleStakeholder
+[14]: ../../reference/CRMScript.NetServer.NSSaleStageEntity
+[15]: ../../reference/CRMScript.NetServer.NSSaleType
 [20]: ../../../../database/tables/sale
