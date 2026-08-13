@@ -312,7 +312,7 @@ Für Details zum Wert jedes Feldes siehe [Datenbankreferenz][23].
 * Links
 * Mehr
 
-## Verwandte Themen
+## Verwandte Inhalte
 
 * [Arbeiten mit Feldern][1]
 * [Adressformate][20]

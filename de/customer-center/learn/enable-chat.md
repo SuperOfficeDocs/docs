@@ -34,7 +34,7 @@ Sie müssen Ihr [Chat-Widget einrichten][3], bevor Sie es zu Ihrem Kundenzentrum
 
 1. Klicken Sie auf **Speichern**, um die neuen Einstellungen zu speichern.
 
-## Verwandte Themen
+## Verwandte Inhalte
 
 * [Kundenzentrum konfigurieren][2]
 * [Kundensprachen][1]

@@ -51,7 +51,7 @@ Damit Sie mit Ihren Kunden in deren Sprache kommunizieren können (sofern mögli
 1. In Einstellungen und Verwaltung die [Dokumentvorlage hinzufügen und definieren][6].
 1. Machen Sie die Dokumentvorlage [in den gewünschten Benutzergruppen verfügbar][5].
 
-## Related content
+## Verwandte Inhalte
 
 * [Vorlage bearbeiten][2]
 * [Vorlagendokument erstellen][4]
