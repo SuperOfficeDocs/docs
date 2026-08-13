@@ -39,4 +39,4 @@ If you have configured **notifications** for meetings, a **pop-up alert** will a
 [1]: ../manage-notifications
 [2]: ../../diary/learn/video-meetings
 
-[img3]: /release-notes/mobile/media/92-6.png
+[img3]: /media/loc/en/release-notes/mobile/92-6.png

@@ -124,4 +124,4 @@ The [steps to update all App Store information][3] are the same.
 [27]: ../../best-practices/tenant-status/index
 [28]: ../../best-practices/error-emails
 
-[img1]: ../../media/app-overview.png
+[img1]: /media/loc/en/developer-portal/app-overview.png

@@ -127,4 +127,4 @@ Here it tells us the config data for the rest of the page exists in the files th
 [1]: ../data-binding
 [2]: ./panel
 
-[img1]: ../media/image001.gif
+[img1]: /media/loc/en/ui/image001.gif

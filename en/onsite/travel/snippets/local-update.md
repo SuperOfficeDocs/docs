@@ -4,5 +4,5 @@ As long as you are logging in to the local database on Travel, the icon will loo
 
 [1]: ../update-prototype
 
-[img1]: ../media/travelicon.jpg
-[img2]: ../media/travelopen.jpg
+[img1]: /media/loc/en/onsite/travelicon.jpg
+[img2]: /media/loc/en/onsite/travelopen.jpg

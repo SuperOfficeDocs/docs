@@ -28,5 +28,5 @@ platform: web
 [1]: ../create-app/request-to-publish
 [2]: ../create-app/versioning
 
-[img1]: ../media/integration-settings.png
+[img1]: /media/loc/en/developer-portal/integration-settings.png
 [img2]: /media/loc/en/developer-portal/endpoint-toggle.png

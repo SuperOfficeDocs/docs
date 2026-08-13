@@ -55,13 +55,25 @@ def mask_fenced_code(text):
     Example doc that needs this: an <img src="..."> inside a ```html fence
     demonstrating an API URL pattern (e.g. "/api/v1/Person/{id}/Image") is
     prose illustration, not a real site asset reference.
+
+    A line can also be a self-closed, single-line fence (e.g. a literal URL
+    shown as ```http://example.com/path```, opening and closing backticks on
+    the same line) -- that's not a real fence delimiter and must not toggle
+    in_fence, or every real fence delimiter after it flips parity and the
+    mask silently blanks unrelated content (including real reference-style
+    link definitions) further down the file.
     """
     lines = text.split("\n")
     in_fence = False
     for i, line in enumerate(lines):
-        if FENCE_LINE_RE.match(line):
+        m = FENCE_LINE_RE.match(line)
+        if m:
+            fence_char = m.group(1)[0]
+            rest = line[m.end():]
+            self_closed = re.search(re.escape(fence_char) + "{3,}", rest)
             lines[i] = ""
-            in_fence = not in_fence
+            if not self_closed:
+                in_fence = not in_fence
             continue
         if in_fence:
             lines[i] = ""
