@@ -1,6 +1,0 @@
-items:
-- name: Service
-  href: index.yml
-- name: Customer center
-  href: ../customer-center/toc.yml
-  topicHref: ../customer-center/index.yml
