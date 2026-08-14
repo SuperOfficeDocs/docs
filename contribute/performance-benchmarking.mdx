@@ -15,7 +15,7 @@ This is a manual, periodic exercise, not a CI check, so it lives here rather tha
 
 ## Reading the numbers
 
-Every metric on this page is reported as **p50** and **p95** - percentiles across many repeated runs, not a single measurement. **p50** (the median) is the typical experience: half the runs were faster than this, half slower. **p95** is the near-worst-case: only 5% of runs were slower than this - useful for catching occasional bad experiences that an average would smooth over and hide. A page with a fast p50 but a much slower p95 is inconsistent (fast most of the time, but with a real minority of slow loads); a page where p50 and p95 sit close together is consistently fast or consistently slow, with little variance either way.
+Every metric on this page is reported as **p50** and **p95** - percentiles across many repeated runs, not a single measurement. **p50** (the median) is the typical experience: half the runs were faster than this, half slower. **p95** is the near-worst-case: only 5% of runs were slower than this - useful for catching occasional bad experiences that an average would smooth over and hide. A page with a fast p50 but a much slower p95 is inconsistent (fast most of the time, but with a real minority of slow loads). A page where p50 and p95 sit close together is consistently fast or consistently slow, with little variance either way.
 
 ## Setup and running
 
@@ -46,13 +46,13 @@ The PVP's full scope (page load, search latency, navigation, CDN geography acros
 
 ## How the current site's search actually works
 
-Before choosing a search-latency method, it's worth knowing what's actually being measured. `docs.superoffice.com`'s search calls a separate backend service rather than using a client-side search index.
+Before choosing a search-latency method, it's worth knowing what's actually being measured. `docs.superoffice.com`'s search calls a separate back-end service rather than using a client-side search index.
 
 <Warning>
-That backend can have significant cold-start latency after a period of inactivity. Any script measuring it must run one untimed warmup request first, or a cold start will wreck the p95.
+That back end can have significant cold-start latency after a period of inactivity. Any script measuring it must run one untimed warmup request first, or a cold start will wreck the p95.
 </Warning>
 
-Mintlify's search after cutover is a **completely different backend** - the current one goes away entirely. That means a raw server-response-time comparison won't carry over, but an **end-to-end perceived-latency** measurement (type a query, click Search, measure until results render) is backend-agnostic - it measures the same user-visible behavior regardless of what powers it. That's why two separate search scripts exist: one DocFx-only diagnostic, one number that actually carries forward to #91.
+Mintlify's search after cutover is a **completely different back end** - the current one goes away entirely. That means a raw server-response-time comparison won't carry over, but an **end-to-end perceived-latency** measurement (type a query, click Search, measure until results render) is back-end-agnostic - it measures the same user-visible behavior regardless of what powers it. That's why two separate search scripts exist: one DocFx-only diagnostic, one number that actually carries forward to #91.
 
 ## Tools and metrics
 
@@ -69,7 +69,7 @@ Lighthouse CI was chosen over WebPageTest or the PageSpeed Insights API because 
 
 `tools/benchmarks/urls.json`, `queries.json`, and `nav-paths.json` hold the representative pages, search terms, and click-paths. The scripts just read from this JSON config, so it can be swapped or extended without touching any script. **Keep this config identical between the pre- and post-cutover runs** - that is what makes the comparison valid.
 
-`urls.json`'s page-load sample is chosen for **content-type diversity** rather than nav breadth: a generated database-reference table, an integration subpage, a release-notes index, a page with both images and an embedded video, and a page with tables but no images, alongside a few plain landing pages. Different content shapes stress page load differently (a video embed vs. a large generated table vs. a plain landing page), and content type is invariant across the DocFx-to-Mintlify cutover even though the URLs themselves may move.
+`urls.json`'s page-load sample is chosen for **content-type diversity** rather than nav breadth: a generated database-reference table, an integration subpage, a release-notes index, a page with both images and an embedded video, and a page with tables but no images, alongside a few plain landing pages. Different content shapes stress page load differently (a video embed versus a large generated table versus a plain landing page), and content type is invariant across the DocFx-to-Mintlify cutover even though the URLs themselves may move.
 
 `nav-paths.json` covers the navigation *shapes* that behave differently depending on the site's routing model, not just a handful of arbitrary click-throughs:
 
@@ -89,7 +89,7 @@ The captured baseline (p50/p95 for every page, query, and nav hop) is **not repr
 1. Confirm `tools/benchmarks/urls.json`, `queries.json`, and `nav-paths.json` are unchanged from the baseline capture (or, if the sample set was deliberately updated, note that in the new results write-up - a changed sample set is no longer an apples-to-apples comparison).
 2. `nav-paths.json`'s hop selectors match DocFx's literal `href` markup - they will need re-verifying against the equivalent Mintlify pages first, since Mintlify's markup won't match.
 3. Run all four scripts per `tools/benchmarks/README.md` against the live Mintlify site.
-4. Compare against `results/baseline/` (see above). Flag the server-side search-latency script's numbers as non-comparable (different backend) - only the end-to-end search number, the page-load metrics, and the navigation numbers are valid before/after comparisons.
+4. Compare against `results/baseline/` (see above). Flag the server-side search-latency script's numbers as non-comparable (different back end) - only the end-to-end search number, the page-load metrics, and the navigation numbers are valid before/after comparisons.
 
 ## Related content
 

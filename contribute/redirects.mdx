@@ -35,7 +35,7 @@ redirect_from:
 
 It's the second-to-last frontmatter property, only followed by `language`.
 
-During the Mintlify migration, `redirect_from` declarations across the repo are what generated the `redirects` array in the first place - that's why the two line up so closely throughout this repo's history. That generation step is migration-time tooling, though, not an ongoing one. The array itself originally lived inline in `docs.json`; it now lives in `config/redirects.json`, which `docs.json` reaches via a `$ref` (see [Configuring Mintlify][3]).
+During the Mintlify migration, `redirect_from` declarations across the repo are what generated the `redirects` array in the first place - that's why the two line up so closely throughout this repo's history. That generation step is migration-time tooling, though, not an ongoing one. The array itself originally lived inline in `docs.json`. It now lives in `config/redirects.json`, which `docs.json` reaches via a `$ref` (see [Configuring Mintlify][3]).
 
 <Note>
 **Going forward, `config/redirects.json` is the actual source of truth - `redirect_from` is informative only.** Adding it to a file's frontmatter does **not** by itself create a working redirect. To make a redirect happen, add the entry to `config/redirects.json` directly (see below).
@@ -70,9 +70,9 @@ Every row below means: add the entry to `config/redirects.json`, and add the mat
 }
 ```
 
-Redirects default to permanent (308 - search engines transfer ranking, browsers cache it). Add `"permanent": false` for a temporary (307) one. Sources can't include an anchor or query string; destinations can include an anchor.
+Redirects default to permanent (308 - search engines transfer ranking, browsers cache it). Add `"permanent": false` for a temporary (307) one. Sources can't include an anchor or query string. Destinations can include an anchor.
 
-A trailing `/` on a source is equivalent to `/index` - `/release-notes/8.5/pocket-crm/` and `/release-notes/8.5/pocket-crm/index` are the same rule. Don't add both; it's dead weight.
+A trailing `/` on a source is equivalent to `/index` - `/release-notes/8.5/pocket-crm/` and `/release-notes/8.5/pocket-crm/index` are the same rule. Don't add both. It's dead weight.
 
 <Danger>
 **Never add a redirect whose `source` is `<page>/index` (or `<page>/`) when the `destination` is `<page>` itself.** Confirmed live via [#242](https://github.com/SuperOfficeDocs/docs/issues/242): Mintlify's redirect matcher treats a trailing `/index` (and, per the equivalence above, a trailing `/`) as interchangeable with the bare parent path when evaluating *sources* - not only when serving ordinary requests. If the destination is that same bare path, the platform ends up applying the rule to itself, and the live page 308-redirects to itself forever. `config/redirects.json` looks completely fine in this case - there's no textual loop for `process-redirects.ps1`'s own loop check to catch, since `source` and `destination` are literally different strings.
@@ -142,7 +142,7 @@ Multiple redirects sharing a destination are tempting to collapse, but a wildcar
 **Don't** compact when the sources don't share a literal prefix at all - most "several old pages now land on one new page" groups are content consolidations with no structural relationship, and can't be expressed as a wildcard regardless of how many sources point at that destination.
 
 <Danger>
-**A wildcard with even one exception sharing its prefix doesn't just risk the wrong page winning - Mintlify silently drops the wildcard rule entirely.** Confirmed directly (curl against a live `mint dev` instance, not inferred): if any other redirect's `source` shares a wildcard's exact prefix, the wildcard never makes it into the compiled config. The literal exception still works; every URL the wildcard was supposed to cover 404s instead. This isn't a precedence question - the wildcard just isn't there.
+**A wildcard with even one exception sharing its prefix doesn't just risk the wrong page winning - Mintlify silently drops the wildcard rule entirely.** Confirmed directly (curl against a live `mint dev` instance, not inferred): if any other redirect's `source` shares a wildcard's exact prefix, the wildcard never makes it into the compiled config. The literal exception still works. Every URL the wildcard was supposed to cover 404s instead. This isn't a precedence question - the wildcard just isn't there.
 
 This means: a majority-pattern group with a handful of exceptions (say, 90% of sources rename cleanly, 10% don't) **cannot** be compacted with capture-and-reuse plus literal exceptions, no matter how tempting the high match rate looks. Your real options, in order of preference:
 
@@ -156,9 +156,9 @@ This means: a majority-pattern group with a handful of exceptions (say, 90% of s
 
 A full collapse trades real precision for array health, so it needs a real reason, not just convenience:
 
-* **The content is demonstrably being phased out**, evidenced by something already **public** on the destination page itself - a `<Warning>`/`<Danger>` block, a page titled "(LEGACY)", version-gated deprecation language. Never justify this by non-public/internal-only knowledge, even if you have it - if it isn't visible on the page, it isn't usable as justification here.
+* **The content is demonstrably being phased out**, evidenced by something already **public** on the destination page itself - a `<Warning>`/`<Danger>` block, a page titled "(LEGACY)," version-gated deprecation language. Never justify this by non-public/internal-only knowledge, even if you have it - if it isn't visible on the page, it isn't usable as justification here.
 
-* **The content moved as part of a folder-level site restructuring** (e.g. into `integrations/`) - landing on the new folder's index is an acceptable trade when the destination is genuinely the right general topic area for the whole group, not a broad, unrelated hub.
+* **The content moved as part of a folder-level site restructuring** (for example, into `integrations/`) - landing on the new folder's index is an acceptable trade when the destination is genuinely the right general topic area for the whole group, not a broad, unrelated hub.
 
 Either way, this is fundamentally a "the needs of the many outweigh the needs of the few" call: a small number of visitors with an old bookmark lose exact precision so the array as a whole stays healthy and maintainable. State which justification applies in the commit message.
 </Danger>
@@ -169,7 +169,7 @@ A full collapse is a live-routing decision, not a content-history one - it doesn
 
 Two scripts in `tools/` support ongoing redirect hygiene - reusable, not one-off. Both take `config/redirects.json` as their positional argument:
 
-* **`tools/compact-redirects.py config/redirects.json`** - `--report [--min-size N] [--depth D]` groups `redirects` by source-prefix depth and ranks candidate wildcard clusters by match % against a majority transform, flagging live-content collisions. `--apply <prefix1,prefix2,...>` mechanically compacts named, gate-clear clusters. It refuses (unless `--force`) to apply any cluster with exceptions, per the confirmed drop-bug above - review its report output yourself before choosing which clusters to apply, and how (leave uncompacted vs. full collapse).
+* **`tools/compact-redirects.py config/redirects.json`** - `--report [--min-size N] [--depth D]` groups `redirects` by source-prefix depth and ranks candidate wildcard clusters by match % against a majority transform, flagging live-content collisions. `--apply <prefix1,prefix2,...>` mechanically compacts named, gate-clear clusters. It refuses (unless `--force`) to apply any cluster with exceptions, per the confirmed drop-bug above - review its report output yourself before choosing which clusters to apply, and how (leave uncompacted versus full collapse).
 
 * **`tools/sort-redirects.py config/redirects.json`** - stable-sorts the array alphabetically by `source`. Contributors should keep appending new redirects at the end (no need to insert in sorted position); run this periodically to restore order. `--check` for a dry-run/exit-code check, `--diff` to preview what would move without writing.
 
@@ -177,7 +177,7 @@ Neither is a commit hook - both are meant to be run by hand, periodically, as th
 
 ## Verify
 
-After editing `config/redirects.json`, spot-check in `mint dev`: visit the old URL and confirm it lands where you expect, including any edge case you're relying on (a bare folder path, an external `.html` link, a capture-and-reuse filename). For a `/index`-suffixed or trailing-slash source specifically, `mint dev` isn't enough - see the danger callout above; check it against a live deployment (a PR preview) too.
+After editing `config/redirects.json`, spot-check in `mint dev`: visit the old URL and confirm it lands where you expect, including any edge case you're relying on (a bare folder path, an external `.html` link, a capture-and-reuse filename). For a `/index`-suffixed or trailing-slash source specifically, `mint dev` isn't enough - see the danger callout above. Check it against a live deployment (a PR preview) too.
 
 [1]: #external-destinations-need-html
 [2]: #wildcards

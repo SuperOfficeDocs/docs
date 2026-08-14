@@ -50,7 +50,7 @@ To find the URL:
 <Tab title="Git Bash command line">
 1. Go to the folder you want to create the copy.
 
-2. Run `git clone [INSERT REPO URL]`:
+1. Run `git clone [INSERT REPO URL]`:
 
     ```bash
     git clone https://github.com/SuperOfficeDocs/contribute.git
@@ -58,11 +58,12 @@ To find the URL:
 
     You can right-click to paste the URL to the command line.
 
-3. Open the repo folder:
+1. Open the repo folder:
 
     ```bash
     cd contribute
     ```
+
 </Tab>
 
 <Tab title="VS Code">
@@ -83,7 +84,7 @@ At the beginning of the workday, it is good practice to always get the latest up
 <Tab title="Git Bash command line">
 1. Go to the repo folder.
 
-2. Run `git pull`:
+1. Run `git pull`:
 
     ```bash
     git pull
@@ -97,7 +98,7 @@ At the beginning of the workday, it is good practice to always get the latest up
 2. Expand **SOURCE CONTROL** and click the three dots to show more actions.
 3. Select **Pull**.
 
-    ![VS Code pull -screenshot][img4]
+![VS Code pull -screenshot][img4]
 </Tab>
 </Tabs>
 
@@ -119,7 +120,7 @@ You can now **create a new branch:**
 <Tab title="Git Bash command line">
 1. Go to the repo folder.
 
-2. Run `git switch`:
+1. Run `git switch`:
 
     ```bash
     git switch -c [INSERT NEW BRANCH NAME]
@@ -150,6 +151,7 @@ You can now **create a new branch:**
     ![VS Code create branch -screenshot][img7]
 
 4. Enter the name of your new branch.
+
 </Tab>
 </Tabs>
 
@@ -184,7 +186,7 @@ Adding the issue number (for example #256) somewhere in the commit message autom
 <Tab title="Git Bash command line">
 1. Go to the repo folder.
 
-2. Run `git add`:
+1. Run `git add`:
 
     ```bash
     git add .
@@ -192,7 +194,7 @@ Adding the issue number (for example #256) somewhere in the commit message autom
 
     The dot means *add all changes*. See also this [how-to for more fine-grained staging][5].
 
-3. Run `git commit`
+1. Run `git commit`
 
     ```bash
     git commit -m "[INSERT MESSAGE]"
@@ -223,6 +225,7 @@ Adding the issue number (for example #256) somewhere in the commit message autom
 3. Click the **+ sign** on the heading to stage all changes. Click the + sign on individual files to stage just those.
 4. Click the **checkmark** on the Source control heading to commit.
 5. Enter a commit message.
+
 </Tab>
 </Tabs>
 
@@ -234,7 +237,7 @@ The last step before your team-mates see your updates is to sync to the cloud (*
 <Tab title="Git Bash command line">
 1. Go to the repo folder.
 
-2. Run `git push`
+1. Run `git push`
 
     ```bash
     git push -u origin "[INSERT NEW BRANCH NAME]"
@@ -271,6 +274,7 @@ The last step before your team-mates see your updates is to sync to the cloud (*
 4. Confirm the action:
 
     ![VS Code confirm commit -screenshot][img14]
+
 </Tab>
 </Tabs>
 
@@ -300,22 +304,24 @@ Sometimes you'll need to suspend your current work in progress to deal with some
 <Tab title="Git Bash command line">
 1. Go to the repo folder.
 
-2. Switch to main and pull:
+1. Switch to main and pull:
 
     ```bash
     git switch main
     git pull
     ```
 
-3. Switch to the next branch and pull:
+1. Switch to the next branch and pull:
 
     ```bash
     git switch "[INSERT BRANCH NAME]"
     git pull
     ```
+
 </Tab>
 
 <Tab title="VS Code">
+
 1. Click the source control icon.
 2. Expand **BRANCHES**
 3. Click the curved arrow icon.
@@ -324,6 +330,7 @@ Sometimes you'll need to suspend your current work in progress to deal with some
 
 4. Select a branch to switch to.
 5. Pull.
+
 </Tab>
 </Tabs>
 

@@ -9,7 +9,7 @@ content_type: concept
 language: en
 ---
 
-`docs.json` is the root of every Mintlify setting for this site - theme, fonts, navigation, redirects, and more. It used to be a single 21,000+ line file. Its two largest pieces, `navigation` and `redirects`, are now split out into their own files under `config/`, using Mintlify's [split-configuration `$ref` support][1]. This page covers how that split works and where to make a given change; for redirect-specific guidance see [Redirects and redirect_from][2].
+`docs.json` is the root of every Mintlify setting for this site - theme, fonts, navigation, redirects, and more. It used to be a single 21,000+ line file. Its two largest pieces, `navigation` and `redirects`, are now split out into their own files under `config/`, using Mintlify's [split-configuration `$ref` support][1]. This page covers how that split works and where to make a given change. For redirect-specific guidance, see [Redirects and redirect_from][2].
 
 ## What lives where
 
@@ -91,7 +91,7 @@ The script needs a UTF-8-BOM'd `.ps1` file to correctly parse its own non-ASCII 
 
 ## Editing redirects
 
-`config/redirects.json` holds the array; `docs.json` only points at it. See [Redirects and redirect_from][2] for the full guide - `redirect_from` frontmatter, wildcards, and the maintenance scripts (`tools/sort-redirects.py`, `tools/compact-redirects.py`) all work the same way, just against `config/redirects.json` instead of `docs.json`.
+`config/redirects.json` holds the array. `docs.json` only points at it. See [Redirects and redirect_from][2] for the full guide - `redirect_from` frontmatter, wildcards, and the maintenance scripts (`tools/sort-redirects.py`, `tools/compact-redirects.py`) all work the same way, just against `config/redirects.json` instead of `docs.json`.
 
 ## Error pages
 

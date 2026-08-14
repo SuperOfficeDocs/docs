@@ -48,7 +48,7 @@ We need to add 'crmscript' to the UID to make it unique. However, there is no ne
 
 ### Markdown (.md) vs MDX (.mdx)
 
-Most content pages use the `.mdx` extension, since they use Mintlify's JSX components (`<Note>`, `<Tabs>`, and so on — see the [Markdown guide][1]). Plain `.md` is reserved for files with no JSX/component syntax at all — mainly snippets and a handful of pages that haven't needed a component yet.
+Most content pages use the `.mdx` extension, since they use Mintlify's JSX components (`<Note>`, `<Tabs>`, and so on: see the [Markdown guide][1]). Plain `.md` is reserved for files with no JSX/component syntax at all: mainly snippets and a handful of pages that haven't needed a component yet.
 
 If you add a component to a `.md` file, rename it to `.mdx` in the same change.
 

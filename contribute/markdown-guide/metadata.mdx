@@ -40,21 +40,21 @@ language: en
 
 ## Property reference
 
-Product content pages (everything outside `contribute/`) use a larger property set than the example above. Write properties in this order — omit any that don't apply, and never leave one empty:
+Product content pages (everything outside `contribute/`) use a larger property set than the example above. Write properties in this order. Omit any that don't apply, and never leave one empty:
 
 | # | Property | Required | Notes |
 |---|---|---|---|
 | 1 | `uid` | Always | Unique identifier, hyphenated lowercase |
-| 2 | `title` | Always | The page's only title — rendered in the page header. No H1 in the body (see [Markdown guide][2]) |
+| 2 | `title` | Always | The page's only title: rendered in the page header. No H1 in the body (see [Markdown guide][2]) |
 | 3 | `description` | Always | Plain sentence, no quotes |
-| 4 | `keywords` | Always | YAML array of single-quoted search-term strings, e.g. `['term one', 'term two']` — Mintlify's internal-search format |
-| 5 | `author` | Always | GitHub alias — default `digitaldiina` |
+| 4 | `keywords` | Always | YAML array of single-quoted search-term strings, for example `['term one', 'term two']`: Mintlify's internal-search format |
+| 5 | `author` | Always | GitHub alias: default `digitaldiina` |
 | 6 | `date` | Always | Last modified, format `MM.DD.YYYY` |
-| 7 | `so_version` | Handcrafted docs | Product version — see defaults below; omit in generated files. Named `so_version`, not `version` — Mintlify's search backend treats `version` as a reserved filter field and 400s on non-string values (see [issue #254][4]) |
-| 8 | `content_type` | Always | `concept`, `howto`, `reference`, or `release-note` — omit in generated files |
+| 7 | `so_version` | Handcrafted docs | Product version: see defaults below; omit in generated files. Named `so_version`, not `version`: Mintlify's search back end treats `version` as a reserved filter field and 400s on non-string values (see [issue #254][4]) |
+| 8 | `content_type` | Always | `concept`, `howto`, `reference`, or `release-note`: omit in generated files |
 | 9 | `functional_right` | If present | Required functional right |
 | 10 | `license` | If present | Required license |
-| 11 | `tier` | If present | `starter`, `core`, `growth`, `plus`, or `super` — never translated |
+| 11 | `tier` | If present | `starter`, `core`, `growth`, `plus`, or `super`: never translated |
 | 12 | `category` | If present | Content category |
 | 13 | `topic` | If present | Specific topic |
 | 14 | `platform` | If present | Target platform |
@@ -63,12 +63,12 @@ Product content pages (everything outside `contribute/`) use a larger property s
 | 17 | `audience` | If present | Target audience |
 | 18 | `audience_tooltip` | If present | Audience tooltip |
 | 19 | `redirect_from` | If present | Old URL(s) that should redirect here |
-| 20 | `hidden` | If present | `true` to remove the page from sidebar navigation (still reachable by URL, not search-indexed). Used when consolidating several pages into one — pair with `redirect_from` and a `docs.json` redirect. Never set to `false`. |
+| 20 | `hidden` | If present | `true` to remove the page from sidebar navigation (still reachable by URL, not search-indexed). Used when consolidating several pages into one: pair with `redirect_from` and a `docs.json` redirect. Never set to `false`. |
 | 21 | `userflow_index` | If present | `true` if the page is outside a *learn* folder and should be included in the per-language userhelp sitemap Userflow's in-app Resource Center reads (see [SEO and social previews][3]) |
-| 22 | `language` | Always | Language code — always last |
+| 22 | `language` | Always | Language code: always last |
 
 <Note>
-`contribute/` pages (like this one) only use `uid`/`title`/`description`/`keywords`/`author`/`date`/`content_type`/`language` — the rest describe product features and don't apply here.
+`contribute/` pages (like this one) only use `uid`/`title`/`description`/`keywords`/`author`/`date`/`content_type`/`language`: the rest describe product features and don't apply here.
 </Note>
 
 ### Default so_version by section
@@ -80,7 +80,7 @@ Product content pages (everything outside `contribute/`) use a larger property s
 | User guide (learn) | `12.3` |
 | Developer portal | `2.15` |
 | Mobile CRM | `11.1.13` |
-| Integrations | Ask — uses its own versioning |
+| Integrations | Ask: uses its own versioning |
 
 If you're writing release-notes content, or don't know which version or date applies, ask the technical writer rather than guessing.
 
@@ -88,7 +88,7 @@ If you're writing release-notes content, or don't know which version or date app
 
 If you're creating a new document, fill in as much of the metadata as you can.
 
-If you're editing an existing document, update `date` to the day you made the change, and update `author` if you're not the original author (list multiple contributors comma-separated). If your edit changes which product version the content applies to, update `so_version` too — don't leave these stale.
+If you're editing an existing document, update `date` to the day you made the change, and update `author` if you're not the original author (list multiple contributors comma-separated). If your edit changes which product version the content applies to, update `so_version` too. Don't leave these stale.
 
 <Tip>
 To get a prompt for what metadata to add, we recommend [Blueprint templates for VS Code][1].

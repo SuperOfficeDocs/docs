@@ -44,7 +44,7 @@ For each page it captures console errors, failed network requests (any response 
 Edit the page list at the top of the script to change what's covered - by default it's 1 landing and 1 deep page per language, a handful of content-type-diverse English pages, and any page identified as a candidate for a layout complaint (for example, a deeply nested reference section suspected of causing a cramped sidebar).
 
 <Note>
-An embedded third-party video (for example, a YouTube `nocookie` embed) can show up as a failed request under headless Chromium even though it loads fine in a real browser - confirmed by curling the same URL directly. Don't take a single repeated failed request at face value; check whether it is the same third-party embed on every affected page before treating it as a real break.
+An embedded third-party video (for example, a YouTube `nocookie` embed) can show up as a failed request under headless Chromium even though it loads fine in a real browser - confirmed by curling the same URL directly. Don't take a single repeated failed request at face value. Check whether it is the same third-party embed on every affected page before treating it as a real break.
 </Note>
 
 ## Manual review

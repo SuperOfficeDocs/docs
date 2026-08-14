@@ -130,6 +130,10 @@ Don't stack multiple call-outs directly after each other.
 Markdownlint's link and image checks (MD034, MD045, MD051, MD052, MD053) don't look inside HTML/JSX tags like `<Note>`, `<Tip>`, `<Warning>`, or `<Danger>`. Links and images inside call-outs are still caught by `mint validate`, but not by markdownlint.
 </Note>
 
+<Note>
+`.vale.ini` has folder-scoped overrides for `contribute/`: `Microsoft.Contractions` is off, since contractions are allowed here, and `Microsoft.GeneralURL` is off, since *URL* is the correct term for this technical audience rather than *address*. Separately, a `BlockIgnores` pattern excludes raw MDX `import ... from "...";` lines, including inside fenced ` ```mdx ` examples, from `Microsoft.Semicolon`. Without it, Vale parses the JS import statement as an English sentence.
+</Note>
+
 ## Headings
 
 * Start the line with 1 or more \#. The number of hashes determines the heading level. For example, \#\# means H2.
@@ -152,7 +156,7 @@ Even though Markdown supports inline HTML, we (generally) don't use it on `docs.
 
 You can use either *.png* or *.jpg* images. Image files must be less than 20 MB. Place images in the appropriate *media* sub folder.
 
-Reference images with a root-relative path — `/media/loc/en/{topic}/{filename}` (or `/media/loc/en/{topic}/{subfolder}/{filename}` for topics large enough to need one). Unlike [page links][6], images are always root-relative, with no same-topic exception: the *media* folder is one shared location, not duplicated per language or per topic, so there's no "close by" case to be relative to — and a root-relative path resolves the same way no matter which page, or which language's translated include, references it.
+Reference images with a root-relative path: `/media/loc/en/{topic}/{filename}` (or `/media/loc/en/{topic}/{subfolder}/{filename}` for topics large enough to need one). Unlike [page links][6], images are always root-relative, with no same-topic exception: the *media* folder is one shared location, not duplicated per language or per topic, so there's no "close by" case to be relative to, and a root-relative path resolves the same way no matter which page, or which language's translated include, references it.
 
 **Format:**
 
@@ -227,7 +231,7 @@ You can style icons with `i.ph`.
 
 The VS Code Markdown preview loads `.vscode/markdown.css`, which imports the Phosphor icon font so icons render while you edit.
 
-Don't put an icon on an H1. The page H1 is hidden from view (the title already shows in the page header), but the heading text — icon markup included — still feeds the "On this page" sidebar, where it would show up as raw tag text instead of a rendered icon.
+Don't put an icon on an H1. The page H1 is hidden from view (the title already shows in the page header), but the heading text (icon markup included) still feeds the "On this page" sidebar, where it would show up as raw tag text instead of a rendered icon.
 
 #### Accessibility
 
@@ -258,7 +262,7 @@ See [Mintlify's video embed docs][9] for the full reference, including hosting y
 
 One of the core principles of software development is DRY (Don't Repeat Yourself). It applies to documentation too. If you find yourself repeating the same content in multiple places, create a snippet to keep it in sync.
 
-A snippet is a Markdown file placed in a folder named *snippets* — either next to the pages that use it, for content shared within one topic, or at the repository root, */snippets*, for content shared across many topics or languages. Both levels use the same folder name; what differs is *where* the folder sits, not what it's called.
+A snippet is a Markdown file placed in a folder named *snippets*: either next to the pages that use it, for content shared within one topic, or at the repository root, */snippets*, for content shared across many topics or languages. Both levels use the same folder name; what differs is *where* the folder sits, not what it's called.
 
 ### Snippets syntax
 
@@ -270,8 +274,8 @@ import Foo from "./snippets/foo.md";
 Text before <Foo /> and after.
 ```
 
-* The import path (the string after `from`) is a JSX import, not a content link — it stays a literal relative path to the file (for example, `./snippets/foo.md`), regardless of the root-relative rule for content links described below.
-* The component name (`Foo` above) can be anything [valid as a JSX identifier][10] — pick something that describes the content.
+* The import path (the string after `from`) is a JSX import, not a content link: it stays a literal relative path to the file (for example, `./snippets/foo.md`), regardless of the root-relative rule for content links described below.
+* The component name (`Foo` above) can be anything [valid as a JSX identifier][10]: pick something that describes the content.
 * You can import and use the same component more than once on a page.
 
 Here are requirements and considerations for snippet files.
@@ -286,9 +290,9 @@ Here are requirements and considerations for snippet files.
 
 * Don't add metadata or HTML comments at the top of a snippet file.
 
-* A relative link inside a snippet resolves against the snippet's own location, not the page that imports it — so a topic-local snippet can follow that topic's normal relative-link rule, but a repository-root snippet reused across different topics or languages should use root-relative links, since it has no single "close by" tree to be relative to. See [page links][6] for the general rule.
+* A relative link inside a snippet resolves against the snippet's own location, not the page that imports it, so a topic-local snippet can follow that topic's normal relative-link rule, but a repository-root snippet reused across different topics or languages should use root-relative links, since it has no single "close by" tree to be relative to. See [page links][6] for the general rule.
 
-### Local vs. repository-root snippets
+### Local versus repository-root snippets
 
 Reused only within one topic or section? Put it in that topic's own *snippets* folder. Reused across multiple topics, sections, or languages? Put it in the repository-root */snippets* folder instead.
 
@@ -296,36 +300,36 @@ Because both levels share the same folder name, the way to tell them apart is th
 
 ### Naming conventions
 
-Name a snippet file for what it *is*, not for what page uses it — that's what keeps it reusable. Existing snippets follow a small set of prefixes:
+Name a snippet file for what it *is*, not for what page uses it: that's what keeps it reusable. Existing snippets follow a small set of prefixes:
 
-* `req-` — a plan or feature requirement (`req-cep.mdx`)
-* `note-` — a `<Note>` callout (`note-req-saint.mdx`)
-* `warn-` — a `<Warning>` callout (`warn-company-table.mdx`)
-* `lim-` — a limitation (`lim-starter.mdx`)
-* `table-` — a reference table (`table-misc.md`)
-* `tip-` — a `<Tip>` callout
-* `step-` / `goto-` — a UI navigation step
+* `req-`: a plan or feature requirement (`req-cep.mdx`)
+* `note-`: a `<Note>` callout (`note-req-saint.mdx`)
+* `warn-`: a `<Warning>` callout (`warn-company-table.mdx`)
+* `lim-`: a limitation (`lim-starter.mdx`)
+* `table-`: a reference table (`table-misc.md`)
+* `tip-`: a `<Tip>` callout
+* `step-` / `goto-`: a UI navigation step
 
-See [Files and folders][13] for the `.md` vs. `.mdx` extension rule.
+See [Files and folders][13] for the `.md` versus `.mdx` extension rule.
 
 ### The /snippets subfolders
 
 The repository-root */snippets* folder has a few subfolders, each holding a group of related fragments reused the same way:
 
-* */snippets/license* — plan and license requirement blurbs. Sourced by English content directly; da, de, nl, no, and sv each have their own translated equivalents instead of importing this folder — see the next section for why.
-* */snippets/merge-field*, */snippets/variable*, and */snippets/functional-rights* — reference tables of literal system-defined names (merge-field tags, template variables, functional right names), imported identically by all 6 languages. This is the repository-root pattern working as intended.
+* */snippets/license*: plan and license requirement blurbs. Sourced by English content directly; da, de, nl, no, and sv each have their own translated equivalents instead of importing this folder: see the next section for why.
+* */snippets/merge-field*, */snippets/variable*, and */snippets/functional-rights*: reference tables of literal system-defined names (merge-field tags, template variables, functional right names), imported identically by all 6 languages. This is the repository-root pattern working as intended.
 
-There's no `/snippets/release-notes` folder today — release notes live at the top-level `/release-notes` folder, unrelated to `/snippets`.
+There's no `/snippets/release-notes` folder today: release notes live at the top-level `/release-notes` folder, unrelated to `/snippets`.
 
 Create a new subfolder when you have multiple related fragments reused the same way (mirroring `license`, `merge-field`, or `variable`). A single one-off fragment goes directly at the `/snippets` root instead.
 
 ### Why license snippets exist per language
 
-English's plan and license snippets live at `/snippets/license`. Each of da, de, nl, no, and sv has its own language-root *snippets* folder (for example `de/snippets`) holding translated equivalents of the same fragments — but not all of them exist in every language yet.
+English's plan and license snippets live at `/snippets/license`. Each of da, de, nl, no, and sv has its own language-root *snippets* folder (for example `de/snippets`) holding translated equivalents of the same fragments, but not all of them exist in every language yet.
 
-This split is deliberate, not a bug: translated text can't live in one shared, root-relative file the way a language-agnostic reference table can — each language needs its own wording. But nothing enforces parity between the English source and the translated copies — that's exactly how [3 files ended up untranslated in all 5 languages][14]. When you add a new file to `/snippets/license`, also add (or file a translation task for) the matching file in each language's own `snippets` folder.
+This split is deliberate, not a bug: translated text can't live in one shared, root-relative file the way a language-agnostic reference table can: each language needs its own wording. But nothing enforces parity between the English source and the translated copies: that's exactly how [3 files ended up untranslated in all 5 languages][14]. When you add a new file to `/snippets/license`, also add (or file a translation task for) the matching file in each language's own `snippets` folder.
 
-Contrast this with `/snippets/functional-rights`: the table lists literal permission names defined by the SuperOffice product itself, not translatable prose, so there's nothing to translate accurately without duplicating the product's own (English) terminology. Each language's page imports the one English table directly and adds a translated `<Note>` explaining why — see [issue #244][15] for the case that established this pattern.
+Contrast this with `/snippets/functional-rights`: the table lists literal permission names defined by the SuperOffice product itself, not translatable prose, so there's nothing to translate accurately without duplicating the product's own (English) terminology. Each language's page imports the one English table directly and adds a translated `<Note>` explaining why: see [issue #244][15] for the case that established this pattern.
 
 ## Links
 
@@ -338,7 +342,7 @@ For information about the syntax for links, see [How to use links in docs][6].
 
 To include an image, a call-out, a new paragraph, or a child list (without breaking the continuity of the list), indent that content **4** spaces relative to the list item it belongs to.
 
-**Exception:** if the child list is the *same type* as its parent — numbered inside numbered, or bulleted inside bulleted — indent it **2** spaces instead.
+**Exception:** if the child list is the *same type* as its parent (numbered inside numbered, or bulleted inside bulleted), indent it **2** spaces instead.
 
 ## Metadata (front-matter)
 

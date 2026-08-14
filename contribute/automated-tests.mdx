@@ -29,15 +29,15 @@ Lints only the `.md`/`.mdx` files changed in a PR (or pushed directly to `main`)
 
 ### Reserved version frontmatter guard
 
-Checks only the `.md`/`.mdx` files changed in a PR (or pushed directly to `main`) for a `version:` frontmatter key. Mintlify's search backend treats `version` as a reserved search-filter field and 400s on the non-string value our own `version` property produced - so the property was renamed to `so_version` repo-wide (see [issue #254][9]). This check exists so the old key does not quietly come back (a copy-pasted frontmatter block from a stale branch, or muscle memory). It never fails the check - a hit shows up as a warning annotation on the relevant line in the PR's Files Changed tab, suggesting `so_version` instead.
+Checks only the `.md`/`.mdx` files changed in a PR (or pushed directly to `main`) for a `version:` frontmatter key. Mintlify's search back end treats `version` as a reserved search-filter field and 400s on the non-string value our own `version` property produced - so the property was renamed to `so_version` repo-wide (see [issue #254][9]). This check exists so the old key does not quietly come back (a copy-pasted frontmatter block from a stale branch, or muscle memory). It never fails the check - a hit shows up as a warning annotation on the relevant line in the PR's Files Changed tab, suggesting `so_version` instead.
 
 ### Vale
 
-Prose-style linting (tone, terminology, formatting), configured entirely by this repo's `.vale.ini` - no separate setup needed once the add-on is toggled on in the Mintlify dashboard. Set to Warning level to match markdownlint's advisory-only posture; results show on the PR's checks list from Mintlify's own GitHub App.
+Prose-style linting (tone, terminology, formatting), configured entirely by this repo's `.vale.ini` - no separate setup needed once the add-on is toggled on in the Mintlify dashboard. Set to Warning level to match markdownlint's advisory-only posture. Results show on the PR's checks list from Mintlify's own GitHub App.
 
 ### Build validation - why there is no separate `mint validate` step
 
-`mint validate` is a build/schema validator (`docs.json` schema, MDX parse errors, OpenAPI spec validation) - it is unrelated to Vale and does not check broken links or accessibility; those are separate CLI commands (`mint broken-links`, `mint a11y`). It is not run as its own GitHub Action here because the PR preview deployment already performs the equivalent build validation on every PR, live, as part of generating the preview - adding a duplicate `mint validate` Action would just re-check what the preview build already checked. A failed build already surfaces as the red "Mintlify Deployment" check described in [Deployment][2].
+`mint validate` is a build/schema validator (`docs.json` schema, MDX parse errors, OpenAPI spec validation) - it is unrelated to Vale and does not check broken links or accessibility. Those are separate CLI commands (`mint broken-links`, `mint a11y`). It is not run as its own GitHub Action here because the PR preview deployment already performs the equivalent build validation on every PR, live, as part of generating the preview - adding a duplicate `mint validate` Action would just re-check what the preview build already checked. A failed build already surfaces as the red "Mintlify Deployment" check described in [Deployment][2].
 
 ### Broken links (per-PR)
 

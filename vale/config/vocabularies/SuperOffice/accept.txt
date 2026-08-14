@@ -20,7 +20,7 @@ OSQL
 (?i)soap
 (?i)webapi
 (?i)frontmatter
-(?i)subfolder
+(?i)subfolders?
 (?i)yaml
 Agresso
 MDOAgent
@@ -37,3 +37,61 @@ Category
 Business
 Row
 Entity
+
+# Proper nouns / specific-casing terms found while screening Vale.Spelling
+# hits for issue #246, confirmed real (people, product names, this repo's
+# own GitHub handle, GitHub's own example org, code identifiers), not typos.
+Chacon
+digitaldiina
+doSomething
+PVP's
+Yaktocat
+
+# General technical/product vocabulary found the same way (issue #246): repo
+# and tooling jargon, not misspellings. Case-insensitive since both casings
+# occur across prose vs. headings/code.
+(?i)backfilling
+(?i)backport
+(?i)blockquotes
+(?i)callouts?
+(?i)config
+(?i)cron
+(?i)cutover
+(?i)dev
+(?i)don'ts
+(?i)dumbing
+(?i)else's
+(?i)enum
+(?i)findability
+(?i)focusable
+(?i)footer's
+(?i)frontload
+(?i)howto
+(?i)hrefs?
+(?i)intellisense
+(?i)linklist
+(?i)markdownlint('s)?
+(?i)mojibake
+(?i)namespace
+(?i)navbar
+(?i)npm's
+(?i)onboarding
+(?i)redirect's
+(?i)redirect_from
+(?i)repo
+(?i)runtimes
+(?i)seo
+(?i)signup
+(?i)so_version
+(?i)subpage
+(?i)substrings
+(?i)sv
+(?i)teamchilla
+(?i)toc
+(?i)tooltip
+(?i)uncompacted
+(?i)undraft
+(?i)unignored
+(?i)untimed
+(?i)userflow('s)?
+(?i)userhelp

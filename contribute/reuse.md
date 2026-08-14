@@ -35,7 +35,7 @@ In topic-based writing, a topic could for example be *How to create a sale* whil
 Often, you identify smaller pieces of information as recurring. For example:
 
 * A note stating which license a task requires.
-* A single task step repeated in multiple procedures, such as "Click the **Save** button".
+* A single task step repeated in multiple procedures, such as "Click the **Save** button."
 * A list of something, such as follow-up statuses.
 
 These pieces go by many names: snippet, fragment, chunk, component, excerpt. In the following, let's call them **fragments** as a reminder that they are not published on their own. They are designed to be embedded into other content.
@@ -75,7 +75,7 @@ Without a strategy, content reuse can quickly become confusing and frustrating.
 
 If people can't find the reusable topics and fragments, they'll rewrite it from scratch.
 
-It is a good practice to sign-post reusable content. For SuperOfficeDocs we use folders named *snippets*. Establishing a file naming convention doesn't hurt either — see the [Markdown guide's snippets section][2] for the naming conventions and folder structure already in use.
+It is a good practice to sign-post reusable content. For SuperOfficeDocs we use folders named *snippets*. Establishing a file naming convention doesn't hurt either: see the [Markdown guide's snippets section][2] for the naming conventions and folder structure already in use.
 
 There is a compromise between usability for contributors and optimization for hard-core authors. Just because you can extract it, doesn't mean you should. What you want to avoid is making your source so complex and cryptic that it requires specialized training to do something as trivial as fixing a typo. If people are overwhelmed, they stop contributing.
 
@@ -100,7 +100,7 @@ Minimize similar content. Instead of having 3 similar pages, either consolidate 
 **Don'ts:**
 
 * Don't Repeat Yourself (DRY): if you catch yourself thinking you've written something before, stop and look for reuse opportunities.
-* Avoid contextual phrases such as "in the previous section".
+* Avoid contextual phrases such as "in the previous section."
 * Don't overdo it. How small is small enough? How small is too small?
 * Don't nest fragments.
 

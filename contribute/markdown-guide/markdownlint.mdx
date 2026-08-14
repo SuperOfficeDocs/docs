@@ -57,9 +57,9 @@ Click the first link in the **Quick Fix** dialog to read more about the rule.
 
 ### HTML comments aren't supported in MDX
 
-Don't use HTML comments (`<!-- like this -->`) to turn off a rule for a single line, a group of lines, or a file. That was a DocFx-era pattern — in `.mdx` files an HTML comment can break the build, since MDX parses the page as JSX rather than plain Markdown.
+Don't use HTML comments (`<!-- like this -->`) to turn off a rule for a single line, a group of lines, or a file. That was a DocFx-era pattern: in `.mdx` files an HTML comment can break the build, since MDX parses the page as JSX rather than plain Markdown.
 
-`.markdownlint.yaml` is already tuned to avoid needing most per-file overrides (for example, `MD013`'s line-length limits are generous and `MD041` doesn't require a specific front-matter title). If you hit a rule that genuinely needs a one-off exception, check with the DX team first rather than reaching for an HTML comment — the current MDX-safe mechanism for disabling a rule inline hasn't been established yet.
+`.markdownlint.yaml` is already tuned to avoid needing most per-file overrides (for example, `MD013`'s line-length limits are generous and `MD041` doesn't require a specific front-matter title). If you hit a rule that genuinely needs a one-off exception, check with the DX team first rather than reaching for an HTML comment: the current MDX-safe mechanism for disabling a rule inline hasn't been established yet.
 
 ## Runs automatically on every pull request
 

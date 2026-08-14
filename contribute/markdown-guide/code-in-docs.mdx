@@ -75,9 +75,9 @@ Fenced code blocks can be copied and pasted and they're indexed by search engine
 
 ## Include native source code
 
-Mintlify doesn't support DocFX's line/range-sliced code snippets (`[!code-csharp[CS](file.cs?range=1,3)]`) — there's no equivalent that pulls just part of a source file into a code block. See [Mintlify's code component docs][3] for what's actually supported.
+Mintlify doesn't support DocFX's line/range-sliced code snippets (`[!code-csharp[CS](file.cs?range=1,3)]`): there's no equivalent that pulls just part of a source file into a code block. See [Mintlify's code component docs][3] for what's actually supported.
 
-A raw source file (like a `.cs` file) can't be imported directly as a component — only Markdown/MDX can. For a whole reusable code sample, wrap it in a fenced code block inside a `.md`/`.mdx` file in the *snippets* folder, then import it the same way as [Markdown snippets][4]:
+A raw source file (like a `.cs` file) can't be imported directly as a component. Only Markdown/MDX can. For a whole reusable code sample, wrap it in a fenced code block inside a `.md`/`.mdx` file in the *snippets* folder, then import it the same way as [Markdown snippets][4]:
 
 **`snippets/hello-world.mdx`:**
 
@@ -95,7 +95,7 @@ import HelloWorld from "./snippets/hello-world.mdx";
 <HelloWorld />
 ```
 
-If you only need to show a snippet once (not reuse it), just paste the code directly into a fenced code block instead — see [fenced code blocks](#fenced-code-blocks) above.
+If you only need to show a snippet once (not reuse it), just paste the code directly into a fenced code block instead: see [fenced code blocks](#fenced-code-blocks) above.
 
 ### When to use code includes
 
@@ -120,7 +120,7 @@ Use the `<Tabs>` and `<Tab>` components to organize content into switchable pane
 ### Syntax
 
 * Wrap the whole group in `<Tabs>`.
-* Each tab is a `<Tab title="...">` with any content inside — text, code blocks, images, or lists.
+* Each tab is a `<Tab title="...">` with any content inside: text, code blocks, images, or lists.
 
 ### Examples
 
@@ -283,7 +283,7 @@ Categorize and assign the request.
 
 ### Tab synchronization
 
-Tabs with matching titles stay in sync across the page. If a page has multiple tab groups that share titles — for example, **REST** and **SOAP** — selecting a tab in one group automatically selects it in the others. This also syncs with code groups.
+Tabs with matching titles stay in sync across the page. If a page has multiple tab groups that share titles (for example, **REST** and **SOAP**), selecting a tab in one group automatically selects it in the others. This also syncs with code groups.
 
 To opt out, set `sync={false}` on the `<Tabs>` wrapper:
 
