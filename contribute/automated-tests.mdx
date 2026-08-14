@@ -34,7 +34,7 @@ Checks only the `.md`/`.mdx` files changed in a PR (or pushed directly to `main`
 
 ### Landing page template guard
 
-Checks only the `.mdx` files changed in a PR (or pushed directly to `main`) for a `mode: "custom"` landing page that mixes the two custom-landing Blueprint templates' card-body markup: a `category-landing` page (`id="category-landing"`) containing a subcategory-style `linklist` block, or a `subcategory` page (`id="subcategory"`) containing a category-landing-style `concept-links` list. `style.css` only styles `.linklist` under `#subcategory`, so a mismatch like this renders with unstyled, browser-default markup instead of the intended layout - exactly what happened to all 6 language copies of `learn/index.mdx` (see [issue #257][10]) without tripping any other check, since the two templates are only inconsistent with each other, not individually invalid MDX. It never fails the check - a hit shows up as a warning annotation on the relevant line in the PR's Files Changed tab.
+Checks only the `.mdx` files changed in a PR (or pushed directly to `main`) for a `mode: "custom"` landing page that mixes the two custom-landing Blueprint templates' card-body markup: a `category-landing` page (`id="category-landing"`) containing a subcategory-style `linklist` block, or a `subcategory` page (`id="subcategory"`) containing a category-landing-style `concept-links` list. `style.css` only styles `.linklist` under `#subcategory`, so a mismatch like this renders with unstyled, browser-default markup instead of the intended layout, without tripping any other check, since the two templates are only inconsistent with each other, not individually invalid MDX. It never fails the check - a hit shows up as a warning annotation on the relevant line in the PR's Files Changed tab.
 
 ### Vale
 
@@ -104,4 +104,3 @@ mint automations create --name "Broken link detection" --type broken-link-detect
 [7]: ./how-to-update-crmscript-reference
 [8]: ./acceptance-testing
 [9]: https://github.com/SuperOfficeDocs/docs/issues/254
-[10]: https://github.com/SuperOfficeDocs/docs/issues/257
