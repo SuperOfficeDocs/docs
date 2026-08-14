@@ -13,16 +13,16 @@ This is advisory only -- it never fails the build. It emits a GitHub
 Actions warning annotation per hit so it shows up on the PR's Files
 Changed tab without blocking anything.
 
-Frontmatter is isolated the same way as tools/rename-version-property.py
-(and tools/reformat-keywords.py/tools/sync-title-h1.py before it): match
+Frontmatter is isolated the same way as tools/migration/rename-version-property.py
+(and tools/migration/reformat-keywords.py/tools/migration/sync-title-h1.py before it): match
 `^(---\n)(.*?\n)(---\n?)(.*)$` (DOTALL, non-greedy) against the file with
 CRLF normalized to LF first, and only ever look inside group 2 -- so a
 `version:` example living inside a fenced code sample in a page body
 (e.g. contribute/markdown-guide/metadata.mdx) is correctly ignored.
 
 Usage:
-    python tools/check-reserved-version-property.py <file> [<file> ...]
-    python tools/check-reserved-version-property.py --path en
+    python tools/ci/check-reserved-version-property.py <file> [<file> ...]
+    python tools/ci/check-reserved-version-property.py --path en
 """
 
 import argparse
@@ -31,7 +31,7 @@ import re
 import sys
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 
 FM_RE = re.compile(r"^(---\n)(.*?\n)(---\n?)(.*)$", re.DOTALL)
 VERSION_LINE_RE = re.compile(r"(?m)^version:")

@@ -28,11 +28,12 @@
 
 $ErrorActionPreference = 'Stop'
 $ScriptRoot = Split-Path -Parent $PSCommandPath
-$RepoRoot = Split-Path -Parent $ScriptRoot
+$ToolsRoot = Split-Path -Parent $ScriptRoot
+$RepoRoot = Split-Path -Parent $ToolsRoot
 Push-Location $RepoRoot
 
 try {
-    & "$ScriptRoot/regenerate-crmscript-reference.ps1"
+    & "$ToolsRoot/regenerate-crmscript-reference.ps1"
 
     $dirty = git status --porcelain -- en/automation/crmscript/reference config/nav-crmscript-ref.json
     if (-not $dirty) {

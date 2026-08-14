@@ -14,7 +14,8 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { summarize, toMarkdownTable } from "./lib/stats.mjs";
 import { resultsDir } from "./lib/output.mjs";
 
-const SEARCH_API_URL = "https://sodocsindexer.bravefield-9fd965e6.northeurope.azurecontainerapps.io/search";
+// Overridable via env var since this points at a specific backend instance - see README.md.
+const SEARCH_API_URL = process.env.SO_SEARCH_API_URL || "https://sodocsindexer.bravefield-9fd965e6.northeurope.azurecontainerapps.io/search";
 const RUNS_PER_QUERY = 20;
 const DELAY_BETWEEN_REQUESTS_MS = 400;
 

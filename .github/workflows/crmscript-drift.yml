@@ -32,4 +32,4 @@ jobs:
           python-version: '3.x'
 
       - name: Check for drift between api-sources/crmscript and the generated reference
-        run: pwsh tools/check-crmscript-drift.ps1
+        run: pwsh tools/ci/check-crmscript-drift.ps1

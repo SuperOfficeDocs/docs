@@ -1,5 +1,41 @@
-﻿# Fix UTF-8 encoding corruption in files
-# Usage: .\fix-encoding.ps1 <path> [-Fix] [-Quiet]
+﻿#!/usr/bin/env pwsh
+<#
+.SYNOPSIS
+    Scans for (and optionally fixes) double-encoded UTF-8 mojibake in content files.
+
+.DESCRIPTION
+    Detects the "Ã©"-style corruption pattern that results from UTF-8 bytes being
+    misread as Windows-1252 and re-saved as UTF-8 - the double-encoding mojibake
+    common in translated content edited outside a UTF-8-aware tool. Covers the
+    Nordic/German/Dutch accented character set plus stray ' Unicode escapes.
+
+    Report-only by default; pass -Fix to write corrected files. Runs a BOM check
+    after each fix, matching this folder's write-side conventions (see README.md).
+
+    Still actively used for real translation fixes (e.g. issue #244) - not
+    superseded by check-encoding.py, which is audit-only and covers a different,
+    stricter mojibake-detection method.
+
+.PARAMETER Path
+    File or folder to check.
+
+.PARAMETER Filter
+    Comma-separated glob filters when Path is a folder. Default: *.json,*.mdx,*.md
+
+.PARAMETER Fix
+    Write corrected content instead of only reporting.
+
+.PARAMETER Quiet
+    Suppress per-file output; only print the summary.
+
+.EXAMPLE
+    .\fix-encoding.ps1 nl/admin/import/snippets -Fix
+
+.NOTES
+    - Uses UTF-8 without BOM encoding, then runs check-bom.ps1 -RemoveBOM
+    - See tools/README.md for the cross-platform PowerShell encoding conventions
+      this script must follow
+#>
 
 param(
     [Parameter(Mandatory=$true)]

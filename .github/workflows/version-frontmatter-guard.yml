@@ -49,4 +49,4 @@ jobs:
 
       - name: "Check changed files for reserved version: property"
         if: steps.changed.outputs.any_changed == 'true'
-        run: python tools/check-reserved-version-property.py ${{ steps.changed.outputs.all_changed_files }}
+        run: python tools/ci/check-reserved-version-property.py ${{ steps.changed.outputs.all_changed_files }}

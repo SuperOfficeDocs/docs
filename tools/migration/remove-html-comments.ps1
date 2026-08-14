@@ -64,7 +64,7 @@ function Remove-ConsecutiveBlankLines {
 }
 
 # Resolve path (handle relative paths from repo root)
-$repoRoot = Split-Path -Parent $PSScriptRoot
+$repoRoot = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
 if (-not [System.IO.Path]::IsPathRooted($Path)) {
     $Path = Join-Path $repoRoot $Path
 }

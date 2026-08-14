@@ -9,8 +9,8 @@ concepts, which it has nothing to do with -- renamed to `userflow_index` to
 remove that ambiguity. Value is never touched, only the key (confirmed no
 `index: false` or other stray values exist at the time of writing).
 
-Frontmatter is isolated the same way as tools/sync-title-h1.py and
-tools/reformat-keywords.py: match `^(---\n)(.*?\n)(---\n?)(.*)$` (DOTALL,
+Frontmatter is isolated the same way as sync-title-h1.py and
+reformat-keywords.py (both also in tools/migration/): match `^(---\n)(.*?\n)(---\n?)(.*)$` (DOTALL,
 non-greedy) and only ever edit group 2 (the frontmatter block itself) -- so
 an `index:` example living inside a fenced code sample in the body (e.g.
 contribute/markdown-guide/metadata.mdx) is structurally untouched.
@@ -27,8 +27,8 @@ Modes:
   --apply: performs the writes.
 
 Usage:
-    python tools/rename-userflow-index.py            # audit, whole repo
-    python tools/rename-userflow-index.py --apply     # perform the rename
+    python tools/migration/rename-userflow-index.py            # audit, whole repo
+    python tools/migration/rename-userflow-index.py --apply     # perform the rename
 """
 
 import argparse
@@ -36,7 +36,7 @@ import re
 import subprocess
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 
 FM_RE = re.compile(r"^(---\n)(.*?\n)(---\n?)(.*)$", re.DOTALL)
 INDEX_LINE_RE = re.compile(r"^index:(\s*.*)$")

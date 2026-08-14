@@ -23,7 +23,7 @@ Per-file classification (see issue #170):
   - already-array -> left untouched (idempotent; safe to re-run for future
                     audits without reformatting the same file twice).
 
-Frontmatter is isolated the same way as tools/sync-title-h1.py: match
+Frontmatter is isolated the same way as sync-title-h1.py (also in tools/migration/): match
 `^(---\n)(.*?\n)(---\n?)(.*)$` (DOTALL, non-greedy) and only ever edit
 group 2 (the frontmatter block itself) -- so a `keywords:` example living
 inside a fenced code sample in the body (e.g.
@@ -44,9 +44,9 @@ Modes:
   cluster commit rollout.
 
 Usage:
-    python tools/reformat-keywords.py                    # audit, whole repo
-    python tools/reformat-keywords.py --path en           # audit, one folder
-    python tools/reformat-keywords.py --path da --apply    # convert one folder
+    python tools/migration/reformat-keywords.py                    # audit, whole repo
+    python tools/migration/reformat-keywords.py --path en           # audit, one folder
+    python tools/migration/reformat-keywords.py --path da --apply    # convert one folder
 """
 
 import argparse
@@ -54,7 +54,7 @@ import re
 import subprocess
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 REPORT_PATH = REPO_ROOT / "scratch-keywords-audit.txt"
 
 FM_RE = re.compile(r"^(---\n)(.*?\n)(---\n?)(.*)$", re.DOTALL)

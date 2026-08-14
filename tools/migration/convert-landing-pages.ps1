@@ -274,7 +274,7 @@ function Resolve-UrlPath {
     }
 
     # Get the directory path relative to repo root
-    $repoRoot = Split-Path -Parent $PSScriptRoot
+    $repoRoot = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
     $relativePath = $currentFilePath.Replace($repoRoot, '').TrimStart('\', '/')
     $currentDir = Split-Path -Parent $relativePath -ErrorAction SilentlyContinue
     if ([string]::IsNullOrEmpty($currentDir)) {
@@ -907,7 +907,7 @@ function ConvertTo-SubCategoryMdx {
 }
 
 # Resolve path
-$repoRoot = Split-Path -Parent $PSScriptRoot
+$repoRoot = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
 if (-not [System.IO.Path]::IsPathRooted($Path)) {
     $Path = Join-Path $repoRoot $Path
 }

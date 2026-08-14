@@ -17,13 +17,19 @@
     so this script refuses langCode 'en'; use splice-nav-groups.py or a manual
     edit instead.
 
-    Validates that paths do not contain the bergfrid-tmp/ prefix before proceeding.
+    Validates that paths do not contain a personal scratch-folder prefix before proceeding
+    (see -ScratchPathDenylist).
     Uses UTF-8 without BOM encoding to prevent corruption of multi-byte characters.
     Runs BOM check after writing to ensure file integrity.
 
 .PARAMETER TocPath
     Path to the language-specific TOC JSON file to graft into config/nav-<lang>.json.
     This is a positional parameter - can be used without the -TocPath flag.
+
+.PARAMETER ScratchPathDenylist
+    Path substrings that indicate a personal/local scratch folder and should never end up
+    in committed content. Defaults to the "-tmp/" suffix convention contributors use for
+    their own scratch folders (e.g. "<name>-tmp/").
 
 .EXAMPLE
     .\update-docs-navigation.ps1 toc-sv-learn.json
@@ -32,14 +38,16 @@
     - Modifies config/nav-<lang>.json in place (use git to revert if needed);
       docs.json itself is untouched
     - Automatically detects language from TOC file
-    - Rejects TOC files containing bergfrid-tmp/ prefix in paths
+    - Rejects TOC files containing a personal scratch-folder prefix in paths
     - Uses UTF-8 without BOM encoding
     - Run 'Format Document' in VSCode after to optimize whitespace
 #>
 
 param(
     [Parameter(Mandatory=$true, Position=0)]
-    [string]$TocPath
+    [string]$TocPath,
+
+    [string[]]$ScratchPathDenylist = @('-tmp/')
 )
 
 $ErrorActionPreference = "Stop"
@@ -70,14 +78,16 @@ if ($langCode -eq 'en') {
     exit 1
 }
 
-# Check for bergfrid-tmp prefix in paths
-Write-Host "Checking for bergfrid-tmp prefix in paths..." -ForegroundColor Cyan
+# Check for a personal scratch-folder prefix in paths
+Write-Host "Checking for scratch-folder prefixes in paths..." -ForegroundColor Cyan
 $tocJson = $tocContent
-if ($tocJson -match 'bergfrid-tmp/') {
-    Write-Host ""
-    Write-Host "ERROR: Found 'bergfrid-tmp/' prefix in TOC file" -ForegroundColor Red
-    Write-Host "Please remove the prefix before running this script." -ForegroundColor Yellow
-    exit 1
+foreach ($pattern in $ScratchPathDenylist) {
+    if ($tocJson -match [regex]::Escape($pattern)) {
+        Write-Host ""
+        Write-Host "ERROR: Found scratch-folder pattern '$pattern' in TOC file" -ForegroundColor Red
+        Write-Host "Please remove any personal/local scratch-folder prefix before running this script." -ForegroundColor Yellow
+        exit 1
+    }
 }
 
 # Target file: config/nav-<lang>.json holds this language's bare tabs array
@@ -101,7 +111,7 @@ $utf8NoBom = New-Object System.Text.UTF8Encoding $false
 
 Write-Host ""
 Write-Host "Running BOM check..." -ForegroundColor Cyan
-& "$PSScriptRoot\check-bom.ps1" -Path $navJsonPath
+& "$(Split-Path -Parent $PSScriptRoot)\check-bom.ps1" -Path $navJsonPath
 
 Write-Host ""
 Write-Host "SUCCESS: Updated $langCode tabs in $navJsonPath" -ForegroundColor Green

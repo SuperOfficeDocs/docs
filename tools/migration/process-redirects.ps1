@@ -48,7 +48,7 @@ param(
 )
 
 # Resolve paths
-$repoRoot = Split-Path -Parent $PSScriptRoot
+$repoRoot = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
 $docsJsonPath = Join-Path $repoRoot "docs.json"
 $redirectsJsonPath = Join-Path $repoRoot "config/redirects.json"
 
@@ -537,7 +537,7 @@ $utf8NoBom = New-Object System.Text.UTF8Encoding $false
 [System.IO.File]::WriteAllText($redirectsJsonPath, $redirectsJsonContent, $utf8NoBom)
 
 # Check and fix BOM in config/redirects.json
-& "$PSScriptRoot\check-bom.ps1" -Path $redirectsJsonPath -RemoveBOM | Out-Null
+& "$(Split-Path -Parent $PSScriptRoot)\check-bom.ps1" -Path $redirectsJsonPath -RemoveBOM | Out-Null
 
 # Report
 Write-Host "`nComplete!" -ForegroundColor Green

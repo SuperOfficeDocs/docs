@@ -14,15 +14,15 @@ These are the pipeline's source of truth. Do not edit by hand — they are overw
 
 ## Conversion pipeline
 
-**Script:** `tools/convert-swagger-to-openapi.ps1`
+**Script:** `tools/migration/convert-swagger-to-openapi.ps1`
 **Tool:** `swagger2openapi` (npm)
 **Output:** `openapi/agent/openapi-v3-{Name}.json` and `openapi/rest/openapi-v3-{Name}.json`
 
 Run example:
 
 ```powershell
-tools\convert-swagger-to-openapi.ps1 -SourcePath "api-sources/openapi/agent" -DestinationPath "openapi/agent"
-tools\convert-swagger-to-openapi.ps1 -SourcePath "api-sources/openapi/rest" -DestinationPath "openapi/rest"
+tools\migration\convert-swagger-to-openapi.ps1 -SourcePath "api-sources/openapi/agent" -DestinationPath "openapi/agent"
+tools\migration\convert-swagger-to-openapi.ps1 -SourcePath "api-sources/openapi/rest" -DestinationPath "openapi/rest"
 ```
 
 Requires Node.js on PATH.
@@ -157,7 +157,7 @@ Ask for:
 1. **Windows-safe slugs/titles** (or at minimum no filename-illegal chars in title-driving fields).
 1. Optional but useful: emit a conversion/validation report artifact from pipeline for every build.
 
-If dev can deliver this, `tools/convert-swagger-to-openapi.ps1` can be reduced or retired.
+If dev can deliver this, `tools/migration/convert-swagger-to-openapi.ps1` can be reduced or retired.
 
 ## Mintlify cache issue on Windows
 

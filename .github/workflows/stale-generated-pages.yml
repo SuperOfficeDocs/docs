@@ -10,7 +10,7 @@ on:
       - 'config/nav-archive-providers.json'
       - 'config/nav-mdo-providers.json'
       - 'config/nav-database-tables.json'
-      - 'tools/find-stale-generated-pages.py'
+      - 'tools/ci/find-stale-generated-pages.py'
 
 # Automatically cancel in-progress runs on the same branch
 concurrency:
@@ -34,4 +34,4 @@ jobs:
           python-version: '3.x'
 
       - name: Check for stale generated reference pages
-        run: python tools/find-stale-generated-pages.py
+        run: python tools/ci/find-stale-generated-pages.py

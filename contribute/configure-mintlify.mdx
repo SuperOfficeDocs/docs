@@ -59,7 +59,7 @@ Find the right file before editing:
 | Change | File |
 |---|---|
 | Add/edit a page in a non-English language's existing tab | `config/nav-<lang>.json` |
-| Regenerate a whole non-English language's nav from `toc.yml` | `tools/update-docs-navigation.ps1` (writes `config/nav-<lang>.json` directly; refuses `en`) |
+| Regenerate a whole non-English language's nav from `toc.yml` | `tools/migration/update-docs-navigation.ps1` (writes `config/nav-<lang>.json` directly; refuses `en`) |
 | Fill in or insert a menu item's `groups` (any language, including English tabs not split further) | `tools/splice-nav-groups.py` against the relevant `config/nav-<lang>.json` |
 | Edit Mobile, Integrations, or Release Notes content | `config/nav-mobile.json`, `config/nav-integrations.json`, or `config/nav-releases.json` directly |
 | Regenerate the database-tables reference | whatever produces `config/nav-database-tables.json`'s `pages` array (DB schema pipeline) |

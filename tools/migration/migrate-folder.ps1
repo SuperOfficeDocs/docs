@@ -49,7 +49,8 @@ param(
 )
 
 # Resolve paths
-$toolsDir = $PSScriptRoot
+$migrationDir = $PSScriptRoot
+$toolsDir = Split-Path -Parent $migrationDir
 $repoRoot = Split-Path -Parent $toolsDir
 
 if (-not [System.IO.Path]::IsPathRooted($Path)) {
@@ -95,7 +96,7 @@ $successCount = 0
 for ($i = 0; $i -lt $scripts.Count; $i++) {
     $script = $scripts[$i]
     $stepNum = $i + 1
-    $scriptPath = Join-Path $toolsDir $script.Name
+    $scriptPath = Join-Path $migrationDir $script.Name
 
     Write-Host "---------------------------------------------------------" -ForegroundColor DarkGray
     Write-Host "> Step $stepNum/$($scripts.Count): $($script.Description)" -ForegroundColor Cyan
@@ -157,6 +158,7 @@ else {
     Write-Host ""
     Write-Host "Checking docs.json for BOM..." -ForegroundColor Cyan
     & "$toolsDir\check-bom.ps1" -Path "$repoRoot\docs.json" -RemoveBOM
+    # Note: check-bom.ps1 stays at the top level of tools/ (shared/utility), not migration/
 
     Write-Host ""
     Write-Host "Next steps:" -ForegroundColor Cyan

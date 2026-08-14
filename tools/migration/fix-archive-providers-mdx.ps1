@@ -16,7 +16,7 @@
     Preview changes without writing files.
 #>
 param(
-    [string]$Path = (Join-Path $PSScriptRoot "..\en\api\archive-providers\reference"),
+    [string]$Path = (Join-Path (Split-Path -Parent $PSScriptRoot) "..\en\api\archive-providers\reference"),
     [switch]$WhatIf
 )
 

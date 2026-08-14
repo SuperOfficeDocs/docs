@@ -16,8 +16,8 @@ docs.json/config/*.json (a different, currently-unused Mintlify nav concept)
 are out of scope and structurally can't be matched by this script (it only
 touches *.md/*.mdx frontmatter blocks).
 
-Frontmatter is isolated the same way as tools/reformat-keywords.py and
-tools/sync-title-h1.py: match `^(---\n)(.*?\n)(---\n?)(.*)$` (DOTALL,
+Frontmatter is isolated the same way as reformat-keywords.py and
+sync-title-h1.py (both also in tools/migration/): match `^(---\n)(.*?\n)(---\n?)(.*)$` (DOTALL,
 non-greedy) and only ever edit group 2 (the frontmatter block itself) -- so
 a `version:` example living inside a fenced code sample in a page body
 (e.g. contribute/markdown-guide/metadata.mdx) is structurally untouched.
@@ -36,9 +36,9 @@ Modes:
   `release-notes`, `blueprint-templates`) instead of the whole repo.
 
 Usage:
-    python tools/rename-version-property.py                 # audit, whole repo
-    python tools/rename-version-property.py --path en        # audit, one folder
-    python tools/rename-version-property.py --apply           # rename, whole repo
+    python tools/migration/rename-version-property.py                 # audit, whole repo
+    python tools/migration/rename-version-property.py --path en        # audit, one folder
+    python tools/migration/rename-version-property.py --apply           # rename, whole repo
 """
 
 import argparse
@@ -46,7 +46,7 @@ import re
 import subprocess
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 REPORT_PATH = REPO_ROOT / "scratch-version-rename-audit.txt"
 
 FM_RE = re.compile(r"^(---\n)(.*?\n)(---\n?)(.*)$", re.DOTALL)

@@ -966,15 +966,17 @@ Write-Host "Deleted $deletedCount toc.yml file(s)" -ForegroundColor Green
 #>
 
 # Check and fix BOM in docs.json if this conversion modified it
-if (Test-Path "$PSScriptRoot\..\docs.json") {
-    & "$PSScriptRoot\check-bom.ps1" -Path "$PSScriptRoot\..\docs.json" -RemoveBOM | Out-Null
+$toolsDir = Split-Path -Parent $PSScriptRoot
+$repoRootForBomCheck = Split-Path -Parent $toolsDir
+if (Test-Path "$repoRootForBomCheck\docs.json") {
+    & "$toolsDir\check-bom.ps1" -Path "$repoRootForBomCheck\docs.json" -RemoveBOM | Out-Null
 }
 
 # Also check the modular-config split files this output typically gets
 # grafted into (update-docs-navigation.ps1 / splice-nav-groups.py)
-$configDir = "$PSScriptRoot\..\config"
+$configDir = "$repoRootForBomCheck\config"
 if (Test-Path $configDir) {
-    & "$PSScriptRoot\check-bom.ps1" -Path $configDir -Pattern "*.json" -Recurse -RemoveBOM | Out-Null
+    & "$toolsDir\check-bom.ps1" -Path $configDir -Pattern "*.json" -Recurse -RemoveBOM | Out-Null
 }
 
 exit 0

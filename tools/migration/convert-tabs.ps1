@@ -39,7 +39,7 @@ param(
 )
 
 # Resolve path
-$repoRoot = Split-Path -Parent $PSScriptRoot
+$repoRoot = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
 if (-not [System.IO.Path]::IsPathRooted($Path)) {
     $Path = Join-Path $repoRoot $Path
 }
@@ -279,7 +279,7 @@ Write-Host "  Files with tabs converted: $processed" -ForegroundColor Cyan
 # Convert modified files to .mdx if needed
 if ($processed -gt 0) {
     Write-Host "`nRunning convert-md-to-mdx.ps1..." -ForegroundColor Cyan
-    $mdxScript = Join-Path (Split-Path -Parent $PSScriptRoot) "tools\convert-md-to-mdx.ps1"
+    $mdxScript = Join-Path $PSScriptRoot "convert-md-to-mdx.ps1"
     if (Test-Path $mdxScript) {
         & $mdxScript $Path -SkipReference:$SkipReference
     }
