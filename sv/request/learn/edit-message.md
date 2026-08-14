@@ -5,7 +5,7 @@ description: Så här redigerar du ett meddelande i ett ärende i SuperOffice
 keywords: ['redigera meddelande', 'uppdatera meddelande', 'ändra meddelande', 'ärende']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: howto
 functional_right: general administrator
 license: serviceessentials

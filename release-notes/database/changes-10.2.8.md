@@ -5,7 +5,7 @@ sidebarTitle: "10.2.8 - database changelog"
 description: What's new in database version 10.2.8.655.
 author: SuperOffice Product and Engineering
 generated: true
-version: 10.2.8
+so_version: 10.2.8
 content_type: release-note
 deployment: onsite, online
 category: database

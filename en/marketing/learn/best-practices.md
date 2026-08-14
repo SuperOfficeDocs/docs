@@ -5,7 +5,7 @@ description: Best practices
 keywords: ['Marketing']
 author: Bergfrid Dias, Jeanette Small Strøm
 date: 09.26.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 license: marketingessentials
 tier: growth

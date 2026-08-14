@@ -5,7 +5,7 @@ description: Mit SuperOffice CRM können Sie Ihre E-Mails auf verschiedene Arten
 keywords: ['E-Mail', 'Posteingang']
 author: SuperOffice Product and Engineering
 date: 05.04.2026
-version: 11.13
+so_version: 11.13
 content_type: concept
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter

@@ -5,7 +5,7 @@ description: Sample code for working with projects in CRMScript.
 keywords: ['sale', 'SearchEngine']
 author: Bergfrid Dias
 date: 06.09.2023
-version: 10
+so_version: 10
 content_type: howto
 redirect_from: /en/sale/howto/crmscript/samples
 ---

@@ -5,7 +5,7 @@ description: How to update, move, and delete appointments; mark an appointment a
 keywords: ['CRMScript', 'calendar', 'diary', 'appointments', 'follow-up']
 author: Bergfrid Skaara Dias
 date: 03.18.2022
-version: 10
+so_version: 10
 content_type: howto
 redirect_from: /en/diary/howto/crmscript/update-appointment
 ---

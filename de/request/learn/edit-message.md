@@ -5,7 +5,7 @@ description: Wie man eine Nachricht in einer Anfrage in SuperOffice bearbeitet
 keywords: ['Nachricht bearbeiten', 'Nachrichteneigenschaften aktualisieren', 'Nachrichteneigenschaften ändern', 'Nachricht aktualisieren', 'Anfrage']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: howto
 functional_right: general administrator
 license: serviceessentials

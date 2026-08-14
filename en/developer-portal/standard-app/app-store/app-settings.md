@@ -5,7 +5,7 @@ description: Reference of application settings in the SuperOffice Developer Port
 keywords: ['apps', 'Developer Portal']
 author: Bergfrid Dias
 date: 07.07.2026
-version: 2.0
+so_version: 2.0
 version_devportal: 2.0
 content_type: reference
 deployment: online

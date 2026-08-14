@@ -5,7 +5,7 @@ description: Visualiser utvalg med tavlevisning med gruppering, filtre og dra-og
 keywords: ['tavlevisning', 'utvalgsvisning', 'utvalg', 'salgstavle', 'prosjekttavle', 'sakstavle', 'kanban', 'gruppér etter', 'verktøylinje for filter', 'salgsdato-merke', 'dager i fase', 'dager siden registrert']
 author: digitaldiina
 date: 12.02.2025
-version: 11.7
+so_version: 11.7
 content_type: howto
 license: salespremium, servicepremium, marketingessentials
 tier: core

@@ -6,7 +6,7 @@ description: In dieser Anleitung lernen Sie, wie Sie Ihre Besucher nachverfolgen
 keywords: ['Marketing', 'Google Analytics', 'verfolgen', 'Kampagne', 'Aussendung', 'Datenverfolgungsstrategie']
 author: Bergfrid Dias
 date: 09.26.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 license: marketingessentials
 tier: growth

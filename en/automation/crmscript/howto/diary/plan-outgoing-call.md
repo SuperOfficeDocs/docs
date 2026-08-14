@@ -5,7 +5,7 @@ description: How to plan an outgoing call with CRMScript
 keywords: ['CRMScript', 'calendar', 'diary', 'call', 'follow-up', 'direction']
 author: Bergfrid Skaara Dias
 date: 03.21.2022
-version: 10
+so_version: 10
 content_type: howto
 redirect_from: /en/diary/howto/crmscript/plan-outgoing-call
 ---

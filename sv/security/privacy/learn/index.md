@@ -5,7 +5,7 @@ description: Med Integritet-funktionen i SuperOffice kan du skydda kundens perso
 keywords: ['integritet', 'GDPR', 'e-marknadsföring', 'samtycke', 'rättslig grund']
 author: digitaldiina
 date: 11.06.2025
-version: 11.6
+so_version: 11.6
 content_type: concept
 tier: starter
 category: privacy

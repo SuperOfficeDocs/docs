@@ -6,7 +6,7 @@ description: This is a formal announcement of end of life for our SuperOffice Lo
 keywords: ['Lotus Notes Link', 'EOL']
 author: Mikael Månsson
 date: 11.07.2023
-version: 10.2
+so_version: 10.2
 content_type: release-note
 deployment: onsite
 language: en

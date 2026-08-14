@@ -5,7 +5,7 @@ description: Verzoekstatus maken
 keywords: ['verzoek', 'status', 'interne status', 'wachtrijstatus', 'tijd traceren']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: howto
 tier: starter
 audience: settings

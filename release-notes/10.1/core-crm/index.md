@@ -5,7 +5,7 @@ sidebarTitle: "Overview"
 description: Release notes. What's new in SuperOffice Core CRM 10.1
 author: SuperOffice AS - Product and Engineering
 date: 06.15.2022
-version: 10.1
+so_version: 10.1
 content_type: release-note
 category: core crm
 language: en

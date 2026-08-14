@@ -5,7 +5,7 @@ sidebarTitle: "Map users to AD"
 description: Mapping SuperOffice users to Active Directory in 7.0 SR3 and 7.1
 author: Jens M. Glattetre
 date: 03.30.2012
-version: 12
+so_version: 12
 content_type: howto
 deployment: onsite
 userflow_index: true

@@ -5,7 +5,7 @@ description: How to look up customers with CRMScript
 keywords: ['CRMScript', 'customer', 'person', 'contact']
 author: Bergfrid Skaara Dias
 date: 15.02.2021
-version: 10
+so_version: 10
 content_type: howto
 redirect_from: /en/contact/howto/crmscript/find-customer
 ---

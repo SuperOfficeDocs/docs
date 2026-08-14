@@ -5,7 +5,7 @@ description: Conceptual overview of the legacy WCF-based Database Mirroring serv
 keywords: ['legacy', 'WCF', 'mirroring']
 author: Tony Yates
 date: 04.20.2016
-version: 11
+so_version: 11
 content_type: concept
 platform: web
 deployment: online

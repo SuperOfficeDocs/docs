@@ -5,7 +5,7 @@ description: Read the LocalizedAddress
 keywords: ['globalization', 'address']
 author: Tony Yates
 date: 05.15.2017
-version: 8
+so_version: 8
 content_type: howto
 redirect_from:
   - /en/globalization-and-localization/address/howto/services/get-localized-address

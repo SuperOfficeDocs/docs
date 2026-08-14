@@ -5,7 +5,7 @@ description: Guide to federated sign-in
 keywords: ['SuperID', 'Microsoft Entra ID']
 author: digitaldiina
 date: 01.15.2024
-version: 12
+so_version: 12
 content_type: tutorial
 platform: web
 deployment: online

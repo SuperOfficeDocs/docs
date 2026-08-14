@@ -6,7 +6,7 @@ description: Erfahren Sie, wie Sie Verkaufsprozesse in SuperOffice CRM mit Verka
 keywords: ['Verkaufsleitfaden', 'Verkaufsstufe', 'Verkaufstyp', 'Workflow', 'Verkauf']
 author: digitaldiina
 date: 11.06.2025
-version: 11.6
+so_version: 11.6
 content_type: howto
 tier: core
 audience: settings

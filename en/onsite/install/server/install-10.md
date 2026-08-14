@@ -5,7 +5,7 @@ description: Install SuperOffice Server versions 8-10
 keywords: ['install SuperOffice 10', 'install SuperOffice 9', 'install SuperOffice 8']
 author: SuperOffice Product and Engineering
 date: 12.01.2025
-version: 10
+so_version: 10
 content_type: howto
 deployment: onsite
 ---

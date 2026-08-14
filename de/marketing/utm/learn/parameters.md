@@ -5,7 +5,7 @@ description: UTM-Parameter
 keywords: ['UTM-Parameter', 'Link', 'Kampagne', 'Tracking', 'SuperOffice Marketing']
 author: digitaldiina
 date: 11.06.2025
-version: 11.6
+so_version: 11.6
 content_type: concept
 license: marketingpremium
 tier: plus

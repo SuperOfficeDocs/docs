@@ -6,7 +6,7 @@ description: Snelkoppelingen maken naar items in CRM
 keywords: ['snelkoppeling kopiëren']
 author: SuperOffice Product and Engineering
 date: 09.17.2025
-version: 11.3
+so_version: 11.3
 content_type: concept
 tier: starter
 audience: person

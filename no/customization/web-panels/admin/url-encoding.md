@@ -5,7 +5,7 @@ description: URL-koding i webpaneler
 keywords: ['webpanel', 'URL-koding']
 author: digitaldiina
 date: 10.13.2025
-version: 11.5
+so_version: 11.5
 content_type: concept
 tier: core
 category: customization

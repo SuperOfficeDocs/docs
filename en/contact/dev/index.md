@@ -5,7 +5,7 @@ description: SuperOffice view of the world and working with persons. The associa
 keywords: ['person', 'contact', 'associate', 'blob']
 author: Bergfrid Skaara Dias
 date: 10.25.2024
-version: 10
+so_version: 10
 topic: concept
 redirect_from:
   - /en/contact/associate

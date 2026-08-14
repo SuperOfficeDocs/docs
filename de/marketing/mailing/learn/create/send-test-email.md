@@ -6,7 +6,7 @@ description: In dieser Anleitung lernen Sie, wie Sie eine Testkampagne senden.
 keywords: ['Test-E-Mail']
 author: SuperOffice Product and Engineering
 date: 09.26.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 license: marketingessentials
 tier: growth

@@ -5,7 +5,7 @@ description: Sign in to SuperOffice Identity Manager
 keywords: ['IdP', 'Microsoft Entra', 'ME-ID', 'AAD', 'SCIM']
 author: SuperOffice Product and Engineering
 date: 01.15.2024
-version: 12
+so_version: 12
 content_type: howto
 platform: web
 deployment: online

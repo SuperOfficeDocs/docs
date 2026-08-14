@@ -5,7 +5,7 @@ description: Learn how to create a request in SuperOffice Service based on an em
 keywords: ['create request', 'inbox', 'service', 'ticket', 'customer service', 'email', 'request']
 author: Bergfrid Dias
 date: 05.28.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 license: serviceessentials
 tier: core

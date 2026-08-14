@@ -5,7 +5,7 @@ description: Eigenschaften des Pakets
 keywords: ['Paket', 'Eigenschaften']
 author: SuperOffice Product and Engineering
 date: 07.10.2025
-version: 10.5
+so_version: 10.5
 content_type: reference
 tier: core
 category: customization

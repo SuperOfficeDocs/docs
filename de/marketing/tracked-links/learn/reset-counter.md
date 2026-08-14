@@ -5,7 +5,7 @@ description: Zähler für Links zurückstellen
 keywords: ['Marketing', 'Aussendung']
 author: SuperOffice Product and Engineering
 date: 09.26.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 license: marketingessentials
 tier: growth

@@ -6,7 +6,7 @@ description: Introduction to custom objects and fields
 keywords: ['custom object', 'custom field', 'extra table', 'extra field', 'udef', 'user-defined field']
 author: Eivind Fasting
 date: 12.18.2025
-version: 11
+so_version: 11
 content_type: concept
 audience: api
 audience_tooltip: SuperOffice APIs and database

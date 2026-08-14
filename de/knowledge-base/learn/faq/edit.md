@@ -5,7 +5,7 @@ description: FAQ-Einträge bearbeiten oder löschen
 keywords: ['FAQ bearbeiten', 'FAQ löschen']
 author: SuperOffice Product and Engineering
 date: 07.15.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 functional_right: knowledge-base
 license: servicepremium

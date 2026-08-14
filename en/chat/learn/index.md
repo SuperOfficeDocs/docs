@@ -5,7 +5,7 @@ description: Communicate with and help existing or potential customers through a
 keywords: ['chat', 'ongoing chats']
 author: SuperOffice Product and Engineering
 date: 09.25.2025
-version: 10.5
+so_version: 10.5
 content_type: concept
 license: cep
 tier: growth

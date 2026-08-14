@@ -5,7 +5,7 @@ description: Når en kunde sender en forespørgsel via chatwidgetten på hjemmes
 keywords: ['link chat til person', 'foreslået person', 'opret ny person']
 author: SuperOffice Product and Engineering
 date: 09.25.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 license: cep
 tier: growth

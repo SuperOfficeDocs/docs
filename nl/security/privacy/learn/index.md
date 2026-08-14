@@ -5,7 +5,7 @@ description: De functie Privacy in SuperOffice helpt u de gegevensprivacy van uw
 keywords: ['privacy', 'GDPR', 'e-marketing', 'toestemming', 'rechtsgrondslag']
 author: digitaldiina
 date: 11.06.2025
-version: 11.6
+so_version: 11.6
 content_type: concept
 tier: starter
 category: privacy

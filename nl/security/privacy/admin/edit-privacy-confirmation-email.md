@@ -5,7 +5,7 @@ description: In deze gids staat u hoe u de e-mail met de privacybevestiging kunt
 keywords: ['E-mail met privacybevestiging', 'e-mail sjabloon']
 author: Bergfrid Dias
 date: 12.19.2024
-version: 10
+so_version: 10
 content_type: howto
 tier: starter
 category: privacy

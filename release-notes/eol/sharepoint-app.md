@@ -6,7 +6,7 @@ description: This is a formal announcement of end of life for our Microsoft 365 
 keywords: ['Microsoft 365 Document Integration (Sharepoint v1.0)', 'EOLIntegration (Sharepoint v1.0).']
 author: Mikael Månsson
 date: 03.12.2024
-version: 10.3
+so_version: 10.3
 content_type: release-note
 deployment: online
 language: en

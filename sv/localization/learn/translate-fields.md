@@ -5,7 +5,7 @@ description: Översättning av fält i SuperOffice
 keywords: ['översättning', 'översätta']
 author: digitaldiina
 date: 10.09.2025
-version: 11.5
+so_version: 11.5
 content_type: howto
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter

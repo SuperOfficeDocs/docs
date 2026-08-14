@@ -5,7 +5,7 @@ description: How the Database Mirroring client handles common situations - new c
 keywords: ['database mirroring', 'replication', 'scenarios', 'backup', 'restore', 'snapshot']
 author: SuperOffice Product and Engineering
 date: 05.27.2026
-version: 12
+so_version: 12
 content_type: reference
 platform: web
 deployment: online

@@ -5,7 +5,7 @@ description: Lær hvordan du bruger Mere-fanen i SuperOffice CRM til at se og ad
 keywords: ['Mere-fane', 'fanen Mere', 'brugerdefineret felt', 'ekstra felt', 'tilpasset felt']
 author: Bergfrid Skaara Dias
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: howto
 tier: core
 audience: person

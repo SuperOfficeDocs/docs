@@ -1,0 +1,52 @@
+name: Reserved version frontmatter guard
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+# Automatically cancel in-progress runs on the same branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  version-frontmatter-guard:
+    name: "Warn on reintroduced version: frontmatter"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get changed files
+        id: changed
+        uses: tj-actions/changed-files@v45
+        with:
+          files: |
+            **/*.md
+            **/*.mdx
+          files_ignore: |
+            **/reference/**
+            en/database/tables/**
+            release-notes/api/**
+            release-notes/database/**
+            blueprint-templates/**
+            api-sources/**
+            downloads/**
+            tools/benchmarks/results/**
+
+      - name: Set up Python
+        if: steps.changed.outputs.any_changed == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: "Check changed files for reserved version: property"
+        if: steps.changed.outputs.any_changed == 'true'
+        run: python tools/check-reserved-version-property.py ${{ steps.changed.outputs.all_changed_files }}

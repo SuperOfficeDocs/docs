@@ -5,7 +5,7 @@ description: Oprette sporede links i SuperOffice. Disse links vil derefter være
 keywords: ['Marketing', 'sporede links', 'udsendelse']
 author: Bergfrid Dias
 date: 09.26.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 license: marketingessentials
 tier: growth

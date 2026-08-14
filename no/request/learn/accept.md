@@ -5,7 +5,7 @@ description: Hvordan overta en sak for å unngå at andre svarer på den samtidi
 keywords: ['overta sak', 'godta', 'ansvar', 'saksbehandler', 'neste i køen', 'sak']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: howto
 license: serviceessentials
 tier: starter

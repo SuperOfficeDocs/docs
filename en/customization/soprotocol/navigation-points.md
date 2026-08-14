@@ -5,7 +5,7 @@ description: SoProtocol navigation targets, dialog targets, query parameters, an
 keywords: ['soprotocol', 'deeplinking', 'navigation', 'targets']
 author: Michel Krohn-Dale, digitaldiina, MargretheR
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: reference
 category: customization
 topic: soprotocol

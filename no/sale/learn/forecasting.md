@@ -6,7 +6,7 @@ description: Hvordan overvåke salgstrakten og prognostisere salget ditt ved hje
 keywords: ['salg', 'prognose', 'pipeline']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: howto
 license: salesessentials
 tier: starter

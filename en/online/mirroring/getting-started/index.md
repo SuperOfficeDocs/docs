@@ -6,7 +6,7 @@ description: Getting started with the legacy WCF-based Database Mirroring servic
 keywords: ['legacy', 'WCF', 'mirroring']
 author: Tony Yates
 date: 04.20.2016
-version: 12
+so_version: 12
 content_type: tutorial
 platform: web
 deployment: online

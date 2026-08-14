@@ -8,7 +8,7 @@ author: Bergfrid Dias
 keywords: ['config', 'NetServer', 'web.config', 'SoIntellisyncConnector']
 content_type: reference
 deployment: onsite
-version: 6
+so_version: 6
 redirect_from: /en/api/netserver/config/intellisyncconnector
 ---
 

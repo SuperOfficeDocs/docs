@@ -4,7 +4,7 @@ title: Settings and maintenance
 description: Release notes. What's new in SuperOffice Settings and maintenance 8.5
 author: SuperOffice AS - Product and Engineering
 date: 12.18.2020
-version: 8.5
+so_version: 8.5
 platform: web
 deployment: onsite
 content_type: release-note

@@ -5,7 +5,7 @@ description: Skærmbilledet Person giver et øjebliksbillede af al kommunikation
 keywords: ['skærmbilledet Person', 'kontaktperson', 'person']
 author: Bergfrid Dias
 date: 03.07.2025
-version: 10.5.2
+so_version: 10.5.2
 content_type: concept
 tier: starter
 audience: person

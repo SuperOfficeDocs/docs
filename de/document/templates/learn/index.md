@@ -5,7 +5,7 @@ description: Dokumentvorlage
 keywords: ['Dokumentvorlage', 'Dokument', 'Vorlage']
 author: Bergfrid Dias
 date: 07.11.2024
-version: 10.3
+so_version: 10.3
 content_type: concept
 tier: starter
 redirect_from: /de/admin/lists/learn/document-template

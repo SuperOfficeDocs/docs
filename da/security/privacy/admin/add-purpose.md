@@ -6,7 +6,7 @@ description: Få flere oplysninger om, hvordan du konfigurerer indstillingerne f
 keywords: ['personbeskyttelsesindstilling', 'tilføj formål', 'ekstern personbeskyttelseserklæring']
 author: SuperOffice Product and Engineering
 date: 09.01.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 functional_right: list administrator, general administrator
 tier: starter

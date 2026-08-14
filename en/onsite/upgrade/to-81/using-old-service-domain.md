@@ -7,7 +7,7 @@ author: Martin Pavlas
 date: 12.17.2021
 keywords: ['upgrade', 'Service', 'SetupExe.exe', 'SuperOffice.CustomerService.exe', 'Setup.exe', 'SuperOffice Product Configuration', 'nsEndPoint']
 content_type: howto
-version: 8.1
+so_version: 8.1
 deployment: onsite
 ---
 

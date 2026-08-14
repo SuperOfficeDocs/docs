@@ -5,7 +5,7 @@ description: Lær, hvordan du opdeler en meddelelse i en sag i SuperOffice.
 keywords: ['opdel meddelelse', 'sag', 'meddelelse']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: howto
 license: serviceessentials
 tier: starter

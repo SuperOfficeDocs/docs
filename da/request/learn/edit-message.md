@@ -5,7 +5,7 @@ description: Sådan redigerer du en meddelelse i en sag i SuperOffice
 keywords: ['rediger meddelelsesegenskaber', 'opdater meddelelsesegenskaber', 'ændr meddelelsesegenskaber', 'rediger meddelelse', 'opdater meddelelse', 'sag']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: howto
 functional_right: general administrator
 license: serviceessentials

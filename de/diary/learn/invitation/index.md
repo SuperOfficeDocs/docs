@@ -6,7 +6,7 @@ description: Folgeaufgaben bei anderen Mitarbeitern eintragen
 keywords: ['Kalender', 'Folgeaufgabe', 'Einladung', 'Besprechung', 'Teilnehmer', 'einladen']
 author: digitaldiina
 date: 03.27.2026
-version: 11.11
+so_version: 11.11
 content_type: concept
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter

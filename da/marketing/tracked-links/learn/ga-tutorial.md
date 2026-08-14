@@ -6,7 +6,7 @@ description: Denne vejledning vil forklare, hvordan du kan spore resultater fra 
 keywords: ['Marketing', 'udsendelse', 'Google Analytics', 'sporing', 'sporingslinks', 'UTM', 'kampagne', 'nyhedsbrev']
 author: Alex Pelan
 date: 09.26.2025
-version: 10.5
+so_version: 10.5
 content_type: tutorial
 license: marketingessentials
 tier: growth

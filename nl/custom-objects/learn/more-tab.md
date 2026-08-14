@@ -5,7 +5,7 @@ description: Leer hoe u het tabblad Meer in SuperOffice CRM gebruikt om door de 
 keywords: ['tabblad Meer', 'Meer-tabblad', 'udef', 'door de gebruiker gedefinieerd veld', 'extra veld', 'aangepast veld']
 author: Bergfrid Skaara Dias
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: howto
 tier: core
 audience: person

@@ -5,7 +5,7 @@ description: CrmSetup.exe and CrmTask.exe utilities
 keywords: ['crmsetup', 'crmsetup.exe', 'crmtask', 'crmtask.exe']
 author: pavlas77
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: concept
 deployment: onsite
 ---

@@ -5,7 +5,7 @@ description: Prerequisites for running the Database Mirroring client on a custom
 keywords: ['database mirroring', 'requirements', 'prerequisites', '.NET 8', 'SQL Server']
 author: SuperOffice Product and Engineering
 date: 05.27.2026
-version: 12
+so_version: 12
 content_type: reference
 platform: web
 deployment: online

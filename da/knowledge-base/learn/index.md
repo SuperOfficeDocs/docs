@@ -5,7 +5,7 @@ description: Vidensbase
 keywords: ['sag', 'vidensbase']
 author: SuperOffice Product and Engineering
 date: 03.24.2023
-version: 10.5
+so_version: 10.5
 content_type: reference
 functional_right: knowledge-base
 license: serviceessentials

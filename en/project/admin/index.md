@@ -6,7 +6,7 @@ description: Learn how to manage project workflows in SuperOffice CRM with proje
 keywords: ['project guide', 'project status', 'project type', 'workflow', 'project']
 author: Bergfrid Dias
 date: 01.03.2025
-version: 10
+so_version: 10
 content_type: howto
 license: salespremium, servicepremium, marketingessentials
 tier: core

@@ -6,7 +6,7 @@ description: Lernen Sie, wie man die Datenschutzlisten in dieser Anleitung ände
 keywords: ['Datenschutz Nachweis Liste', 'Datenschutz Nachweis hinzufügen']
 author: SuperOffice Product and Engineering
 date: 09.02.2025
-version: 10.3
+so_version: 10.3
 content_type: howto
 functional_right: list administrator, general administrator
 tier: starter

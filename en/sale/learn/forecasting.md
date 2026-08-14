@@ -5,7 +5,7 @@ description: How to monitor your sales pipeline and forecast your sales with the
 keywords: ['sale', 'forecast', 'pipeline']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: howto
 license: salesessentials
 tier: starter

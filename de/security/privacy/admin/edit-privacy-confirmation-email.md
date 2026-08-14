@@ -6,7 +6,7 @@ description: In dieser Anleitung lernen Sie, wie Sie die E-Mail für die Datensc
 keywords: ['E-Mail zur Datenschutzbestätigung', 'E-Mail Vorlage']
 author: Bergfrid Dias
 date: 12.19.2024
-version: 10
+so_version: 10
 content_type: howto
 tier: starter
 category: privacy

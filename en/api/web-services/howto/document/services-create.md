@@ -5,7 +5,7 @@ description: How to create a new document in SO_ARC from template.
 keywords: ['document', 'API', 'services', 'document agent', 'DocumentAgent.SaveDocumentEntity', 'DocumentEntity', 'CreateNewPhysicalDocumentFromTemplate']
 author: Tony Yates
 date: 06.11.2008
-version: 10
+so_version: 10
 content_type: howto
 audience: api
 audience_tooltip: SuperOffice APIs and database

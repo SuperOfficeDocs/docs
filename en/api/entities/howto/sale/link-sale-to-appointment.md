@@ -6,7 +6,7 @@ description: How to link a sale to a follow-up using entities
 keywords: ['sale', 'API', 'entity', 'ActivityLinksHelper', 'appointment', 'follow-up']
 author: Bergfrid Skaara Dias
 date: 11.05.2021
-version: 10
+so_version: 10
 content_type: howto
 redirect_from:
   - /en/sale/howto/entity/link-sale-to-appointment

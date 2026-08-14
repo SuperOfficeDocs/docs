@@ -3,7 +3,7 @@ uid: database-changes-in-7
 title: What's new in the SuperOffice 7 database
 description: What's new in the SuperOffice 7 database
 author: SuperOffice Product and Engineering
-version: 7
+so_version: 7
 content_type: release-note
 deployment: onsite
 category: database

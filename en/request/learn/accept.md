@@ -5,7 +5,7 @@ description: How to accept a request to avoid someone else answering the request
 keywords: ['accept request', 'accept', 'responsibility', 'request owner', 'next in queue', 'request']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: howto
 license: serviceessentials
 tier: starter

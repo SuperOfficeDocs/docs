@@ -5,7 +5,7 @@ description: Översikt av de 5 SuperOffice CRM Suite-planerna, hantering av plat
 keywords: ['CRM Suite', 'plan', 'Starter', 'Core', 'Growth', 'Plus', 'Super', 'plangränser', 'fencing', 'skalering', 'plats', 'prenumeration']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: concept
 tier: starter
 category: Inställningar och underhåll

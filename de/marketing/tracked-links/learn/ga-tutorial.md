@@ -6,7 +6,7 @@ description: Diese Anleitung wird erklären, wie Sie die Ergebnisse eines Mailin
 keywords: ['Marketing', 'Mailing', 'Google Analytics', 'verfolgen', 'Überwachte Links', 'Tracking-ID', 'UTM', 'Kampagne', 'Newsletter']
 author: Alex Pelan
 date: 09.26.2025
-version: 10.5
+so_version: 10.5
 content_type: tutorial
 license: marketingessentials
 tier: growth

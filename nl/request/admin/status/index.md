@@ -5,7 +5,7 @@ description: Verzoekstatus
 keywords: ['verzoek', 'status', 'verzoekstatus', 'tabblad Verzoekstatus']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: concept
 tier: starter
 audience: settings

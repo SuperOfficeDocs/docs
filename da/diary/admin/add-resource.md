@@ -5,7 +5,7 @@ description: Tilføjelse af forekomster på listen Ressource
 keywords: ['ressource', 'listen Generelt - Ressource']
 author: digitaldiina
 date: 10.27.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 tier: starter
 audience: settings

@@ -5,7 +5,7 @@ description: How to customize the design and text of the subscription page to al
 keywords: ['subscription page', 'unsubscribe', 'confirmation page']
 author: digitaldiina
 date: 03.17.2026
-version: 11.11
+so_version: 11.11
 content_type: howto
 tier: growth
 audience: settings

@@ -5,7 +5,7 @@ description: How to create a quote alternative with CRMScript.
 keywords: ['CRMScript', 'quote', 'QuoteAgent', 'sale', 'alternative']
 author: Bergfrid Skaara Dias
 date: 09.12.2023
-version: 10
+so_version: 10
 content_type: howto
 redirect_from: /en/quote/howto/crmscript/add-alternative
 ---

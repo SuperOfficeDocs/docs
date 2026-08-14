@@ -50,7 +50,7 @@ Product content pages (everything outside `contribute/`) use a larger property s
 | 4 | `keywords` | Always | YAML array of single-quoted search-term strings, e.g. `['term one', 'term two']` — Mintlify's internal-search format |
 | 5 | `author` | Always | GitHub alias — default `digitaldiina` |
 | 6 | `date` | Always | Last modified, format `MM.DD.YYYY` |
-| 7 | `version` | Handcrafted docs | Product version — see defaults below; omit in generated files |
+| 7 | `so_version` | Handcrafted docs | Product version — see defaults below; omit in generated files. Named `so_version`, not `version` — Mintlify's search backend treats `version` as a reserved filter field and 400s on non-string values (see [issue #254][4]) |
 | 8 | `content_type` | Always | `concept`, `howto`, `reference`, or `release-note` — omit in generated files |
 | 9 | `functional_right` | If present | Required functional right |
 | 10 | `license` | If present | Required license |
@@ -71,9 +71,9 @@ Product content pages (everything outside `contribute/`) use a larger property s
 `contribute/` pages (like this one) only use `uid`/`title`/`description`/`keywords`/`author`/`date`/`content_type`/`language` — the rest describe product features and don't apply here.
 </Note>
 
-### Default version by section
+### Default so_version by section
 
-`version` is required in handcrafted docs, omitted in generated ones (the `reference/` and `table/` folders).
+`so_version` is required in handcrafted docs, omitted in generated ones (the `reference/` and `table/` folders).
 
 | Section | Default version |
 |---|---|
@@ -88,7 +88,7 @@ If you're writing release-notes content, or don't know which version or date app
 
 If you're creating a new document, fill in as much of the metadata as you can.
 
-If you're editing an existing document, update `date` to the day you made the change, and update `author` if you're not the original author (list multiple contributors comma-separated). If your edit changes which product version the content applies to, update `version` too — don't leave these stale.
+If you're editing an existing document, update `date` to the day you made the change, and update `author` if you're not the original author (list multiple contributors comma-separated). If your edit changes which product version the content applies to, update `so_version` too — don't leave these stale.
 
 <Tip>
 To get a prompt for what metadata to add, we recommend [Blueprint templates for VS Code][1].
@@ -99,3 +99,4 @@ Before any updates get merged in the repo, the reviewers will check this section
 [1]: ./using-blueprint-templates
 [2]: ./index
 [3]: ../seo
+[4]: https://github.com/SuperOfficeDocs/docs/issues/254

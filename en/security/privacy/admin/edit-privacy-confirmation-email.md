@@ -5,7 +5,7 @@ description: In this how-to guide you will learn how to edit the privacy confirm
 keywords: ['privacy confirmation email', 'email template', 'Confirmation - Contact added']
 author: Bergfrid Dias
 date: 12.19.2024
-version: 10
+so_version: 10
 content_type: howto
 functional_right: list administrator, general administrator
 tier: starter

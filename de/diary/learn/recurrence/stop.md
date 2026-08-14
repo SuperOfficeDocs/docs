@@ -5,7 +5,7 @@ description: So stoppen Sie eine wiederkehrende Folgeaufgabe.
 keywords: ['Wiederholung stoppen', 'zukünftige Instanzen', 'wiederkehrende Folgeaufgabe', 'Wiederholen', 'Wiederkehren', 'Frequenz', 'Planung', 'Muster', 'Kalender', 'Folgeaufgabe', 'regelmäßig']
 author: Bergfrid Dias
 date: 02.11.2025
-version: 10.5.2
+so_version: 10.5.2
 content_type: howto
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter

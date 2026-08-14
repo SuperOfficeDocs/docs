@@ -5,7 +5,7 @@ description: How to work with quote documents in CRMScript.
 keywords: ['quote', 'sale', 'document']
 author: Bergfrid Dias
 date: 06.12.2023
-version: 10
+so_version: 10
 content_type: howto
 redirect_from: /en/quote/howto/crmscript/quote-document
 ---

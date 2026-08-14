@@ -5,7 +5,7 @@ description: Sådan overtager du en sag for at undgå, at andre svarer på sagen
 keywords: ['overtag sag', 'acceptér', 'ansvar', 'sagsbehandler', 'næste i køen', 'sag']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: howto
 license: serviceessentials
 tier: starter

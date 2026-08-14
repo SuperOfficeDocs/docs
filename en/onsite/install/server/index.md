@@ -5,7 +5,7 @@ description: Install SuperOffice Win Server
 keywords: ['install', 'server']
 author: SuperOffice Product and Engineering
 date: 12.01.2025
-version: 11
+so_version: 11
 content_type: howto
 deployment: onsite
 ---

@@ -5,7 +5,7 @@ description: Referenz der im Ansichtsdesigner in Einstellungen und Verwaltung ve
 keywords: ['Ansichtsdesigner Felder', 'Standardfeld', 'Standard-Registerkarte']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: reference
 license: development-tools
 tier: core

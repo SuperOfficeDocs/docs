@@ -5,7 +5,7 @@ description: UTM-parametrar
 keywords: ['UTM-parametrar', 'länk', 'kampanj', 'spårning', 'SuperOffice Marketing']
 author: digitaldiina
 date: 11.06.2025
-version: 11.6
+so_version: 11.6
 content_type: concept
 license: marketingpremium
 tier: plus

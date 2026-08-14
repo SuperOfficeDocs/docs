@@ -5,7 +5,7 @@ description: Referentie van elementen beschikbaar in de Schermontwerper in Inste
 keywords: ['Schermontwerper velden', 'standaardveld', 'standaardtabblad']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: reference
 license: development-tools
 tier: core

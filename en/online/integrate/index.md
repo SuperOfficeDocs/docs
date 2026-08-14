@@ -6,7 +6,7 @@ description: Integration in the online Web client
 keywords: ['API', 'integration point', 'online']
 author: AtonyYates
 date: 11.25.2021
-version: 12
+so_version: 12
 content_type: concept
 platform: web
 deployment: online

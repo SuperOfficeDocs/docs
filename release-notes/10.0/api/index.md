@@ -5,7 +5,7 @@ description: API changes released across the SuperOffice 10.0 update, including 
 keywords: ['API changes']
 author: SuperOffice AS - Product and Engineering
 date: 03.14.2022
-version: 10.0.7
+so_version: 10.0.7
 content_type: release-note
 category: api
 redirect_from:

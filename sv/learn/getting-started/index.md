@@ -5,7 +5,7 @@ description: Lär dig hur du aktiverar ditt användarkonto, ansluter e-post och 
 keywords: ['CRM', 'komma igång']
 author: Bergfrid Skaara Dias
 date: 05.04.2026
-version: 11.13
+so_version: 11.13
 content_type: concept
 tier: starter
 audience: person

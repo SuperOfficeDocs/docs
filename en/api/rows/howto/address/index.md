@@ -5,7 +5,7 @@ description: Working with addresses as rows.
 keywords: ['address']
 author: Bergfrid Dias
 date: 02.16.2022
-version: 9
+so_version: 9
 content_type: howto
 redirect_from:
   - /en/globalization-and-localization/address/howto/rows/index

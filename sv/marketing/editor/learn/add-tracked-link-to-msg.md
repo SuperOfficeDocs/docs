@@ -5,7 +5,7 @@ description: Det finns två sätt att konfigurera dina länkar. Du kan antingen 
 keywords: ['Marknadsföring']
 author: SuperOffice Product and Engineering
 date: 09.26.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 license: marketingessentials
 tier: growth

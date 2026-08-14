@@ -5,7 +5,7 @@ description: Gevolgde links maken
 keywords: ['Marketing', 'koppelingen', 'mailing', 'gevolgde links']
 author: Bergfrid Dias
 date: 09.26.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 license: marketingessentials
 tier: growth

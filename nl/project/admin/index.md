@@ -6,7 +6,7 @@ description: Leer hoe u projectworkflows in SuperOffice CRM beheert met projectt
 keywords: ['projectgids', 'projectstatus', 'projecttype', 'workflow', 'project']
 author: Bergfrid Dias
 date: 03.14.2025
-version: 10.5.2
+so_version: 10.5.2
 content_type: howto
 license: salespremium, servicepremium, marketingessentials
 tier: core

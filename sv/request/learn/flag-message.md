@@ -5,7 +5,7 @@ description: Hålla koll på meddelanden
 keywords: ['filtrera meddelanden', 'flaggknappen', 'ärende', 'meddelande', 'flaggat', 'flagga']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: howto
 license: serviceessentials
 tier: starter

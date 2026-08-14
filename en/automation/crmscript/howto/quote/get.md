@@ -5,7 +5,7 @@ description: How to retrieve quote info with CRMScript, including versions, alte
 keywords: ['CRMScript', 'quote', 'sale', 'QuoteAgent', 'version']
 author: Bergfrid Skaara Dias
 date: 09.12.2023
-version: 10
+so_version: 10
 content_type: howto
 redirect_from: /en/quote/howto/crmscript/get
 ---

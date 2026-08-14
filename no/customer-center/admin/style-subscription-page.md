@@ -5,7 +5,7 @@ description: Hvordan tilpasse design og tekst på abonnementssiden slik at den s
 keywords: ['abonnementsside', 'avmelding', 'bekreftelsesside']
 author: digitaldiina
 date: 03.17.2026
-version: 11.11
+so_version: 11.11
 content_type: howto
 tier: growth
 audience: settings

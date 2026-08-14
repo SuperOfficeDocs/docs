@@ -6,7 +6,7 @@ description: Shortcuts zu Einträgen in CRM erstellen
 keywords: ['Shortcut kopieren']
 author: SuperOffice Product and Engineering
 date: 09.17.2025
-version: 11.3
+so_version: 11.3
 content_type: concept
 tier: starter
 audience: person

@@ -5,7 +5,7 @@ description: How to use a reply template in CRMScript.
 keywords: ['crmscript', 'reply template', 'service', 'template', 'load', 'parse']
 author: Bergfrid Skaara Dias
 date: 05.30.2023
-version: 10
+so_version: 10
 content_type: howto
 redirect_from: /en/request/reply-templates/howto/crmscript/index
 ---

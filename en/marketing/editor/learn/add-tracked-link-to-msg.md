@@ -5,7 +5,7 @@ description: Learn how to add a tracked link to a mailing. Either use a preset t
 keywords: ['Marketing', 'mailing', 'tracked link', 'special link']
 author: SuperOffice Product and Engineering
 date: 09.26.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 license: marketingessentials
 tier: growth

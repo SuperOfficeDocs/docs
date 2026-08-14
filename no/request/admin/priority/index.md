@@ -5,7 +5,7 @@ description: Saksprioriteter
 keywords: ['saksprioritet', 'prioritet', 'eskalering', 'sak']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: concept
 license: serviceessentials
 tier: starter

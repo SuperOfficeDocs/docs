@@ -5,7 +5,7 @@ description: I den här guiden förklarar vi hur du får en snabb överblick öv
 keywords: ['dashboard', 'ärende']
 author: digitaldiina
 date: 11.21.2025
-version: 11.6
+so_version: 11.6
 content_type: howto
 tier: core
 audience: person

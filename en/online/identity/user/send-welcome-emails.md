@@ -4,7 +4,7 @@ title: Send welcome emails to new users
 description: Send welcome emails to new users
 author: digitaldiina
 date: 07.31.2026
-version: 12
+so_version: 12
 content_type: howto
 userflow_index: true
 language: en

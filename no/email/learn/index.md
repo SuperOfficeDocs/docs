@@ -5,7 +5,7 @@ description: Med SuperOffice CRM kan du velge √• lagre og dele e-postene dine p√
 keywords: ['e-post', 'innboks']
 author: SuperOffice Product and Engineering
 date: 05.04.2026
-version: 11.13
+so_version: 11.13
 content_type: concept
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter

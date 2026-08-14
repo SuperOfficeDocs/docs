@@ -6,7 +6,7 @@ description: Prepare CRM Server computer
 keywords: ['install']
 author: SuperOffice Product and Engineering
 date: 12.01.2025
-version: 11
+so_version: 11
 content_type: howto
 deployment: onsite
 ---

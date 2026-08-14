@@ -5,7 +5,7 @@ description: How to use FastSearcher in the Navigator in SuperOffice
 keywords: ['search', 'FastSearcher']
 author: Bergfrid Dias
 date: 01.20.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 tier: starter
 audience: person

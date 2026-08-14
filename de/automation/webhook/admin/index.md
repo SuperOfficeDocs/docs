@@ -5,7 +5,7 @@ description: Webhooks in Einstellungen und Verwaltung anzeigen, verwalten und ü
 keywords: ['Webhook-Panel', 'Webhook-Status', 'deaktivierter Webhook', 'Webhook neu starten', 'Webhooks überwachen']
 author: digitaldiina
 date: 06.16.2026
-version: 12.1
+so_version: 12.1
 content_type: concept
 tier: core
 category: automation

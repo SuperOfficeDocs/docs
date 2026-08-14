@@ -5,7 +5,7 @@ description: Hvordan opprette sporede koblinger i SuperOffice CRM. Disse lenkene
 keywords: ['Markedsføring', 'sporet kobling']
 author: Bergfrid Dias
 date: 09.26.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 license: marketingessentials
 tier: growth

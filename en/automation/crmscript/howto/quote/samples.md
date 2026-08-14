@@ -5,7 +5,7 @@ description: Working with quotes in CRMScript
 keywords: ['sale', 'quote', 'quoteconnection']
 author: Bergfrid Dias
 date: 06.12.2023
-version: 10
+so_version: 10
 content_type: howto
 redirect_from: /en/quote/howto/crmscript/samples
 ---

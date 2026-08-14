@@ -5,7 +5,7 @@ description: Legg til eller endre et prosjektbilde
 keywords: ['legg til bilde', 'prosjektbilde', 'prosjekt', 'fanen Bilde']
 author: Bergfrid Dias
 date: 01.30.2025
-version: 10.5.1
+so_version: 10.5.1
 content_type: howto
 tier: core
 audience: person

@@ -5,7 +5,7 @@ description: Working with documents via SuperOffice APIs.
 keywords: ['document', 'API']
 author: Bergfrid Skaara Dias
 date: 07.11.2024
-version: 10
+so_version: 10
 content_type: concept
 audience: api
 audience_tooltip: SuperOffice APIs and database

@@ -5,7 +5,7 @@ description: SuperOffice webhooks push event notifications to external systems i
 keywords: ['automation', 'webhook', 'integration', 'event', 'notification']
 author: digitaldiina
 date: 06.15.2026
-version: 12.1
+so_version: 12.1
 content_type: concept
 tier: core
 userflow_index: true

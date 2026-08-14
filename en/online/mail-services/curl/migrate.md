@@ -5,7 +5,7 @@ description: Migrate to SuperOffice CRM Online with Service mailboxes
 keywords: ['migration', 'mailbox', 'Service email address']
 author: SuperOffice Product and Engineering
 date: 01.07.2026
-version: 12
+so_version: 12
 content_type: concept
 category: email
 topic: curl

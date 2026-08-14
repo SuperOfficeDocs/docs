@@ -5,7 +5,7 @@ description: Sagsprioriteter i SuperOffice bruges til at angive vigtigheden af e
 keywords: ['sag', 'prioritet']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: howto
 license: serviceessentials
 tier: starter
