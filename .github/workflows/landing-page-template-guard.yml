@@ -1,0 +1,44 @@
+name: Landing page template guard
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+# Automatically cancel in-progress runs on the same branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  landing-page-template-guard:
+    name: "Warn on mixed landing-page template markup"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get changed files
+        id: changed
+        uses: tj-actions/changed-files@v45
+        with:
+          files: |
+            **/*.mdx
+          files_ignore: |
+            blueprint-templates/**
+
+      - name: Set up Python
+        if: steps.changed.outputs.any_changed == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: "Check changed files for mixed landing-page template markup"
+        if: steps.changed.outputs.any_changed == 'true'
+        run: python tools/ci/check-landing-page-templates.py ${{ steps.changed.outputs.all_changed_files }}
