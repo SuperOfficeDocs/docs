@@ -6,7 +6,7 @@ description: Release notes. What's new in SuperOffice Customer engagement platfo
 keywords: ['CEP', 'Customer engagement platform']
 author: SuperOffice AS - Product and Engineering
 date: 06.15.2022
-version: 10.1.3
+so_version: 10.1.3
 content_type: release-note
 category: cep
 language: en

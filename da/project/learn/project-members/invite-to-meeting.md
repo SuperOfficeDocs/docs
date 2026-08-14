@@ -6,7 +6,7 @@ description: Sådan inviterer du en projektdeltager til et møde i SuperOffice
 keywords: ['Anmod om et møde', 'inviter projektdeltager', 'invitation', 'projektdeltager', 'projekt']
 author: Bergfrid Dias
 date: 02.25.2025
-version: 10.5.2
+so_version: 10.5.2
 content_type: howto
 tier: core
 audience: person

@@ -5,7 +5,7 @@ description: Overview of the 5 SuperOffice CRM Suite plans, seat management, pla
 keywords: ['CRM Suite', 'Starter', 'Core', 'Growth', 'Plus', 'Super', 'plan', 'license', 'fencing', 'scaling', 'seat', 'subscription', 'limit']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: concept
 tier: starter
 category: Settings and maintenance

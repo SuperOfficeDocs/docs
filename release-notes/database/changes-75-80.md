@@ -3,7 +3,7 @@ uid: database-changes-75-to-80
 title: Table changes from 7.5 to 8.0
 description: Changes in SuperOffice from 7.5 to 8.0
 author: SuperOffice Product and Engineering
-version: 8.0
+so_version: 8.0
 content_type: release-note
 deployment: onsite
 category: database

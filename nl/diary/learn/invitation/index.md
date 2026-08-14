@@ -6,7 +6,7 @@ description: Vervolgactiviteiten met andere medewerkers maken
 keywords: ['agenda', 'vervolgactiviteit', 'uitnodiging', 'weergegeven']
 author: digitaldiina
 date: 03.27.2026
-version: 11.11
+so_version: 11.11
 content_type: concept
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter

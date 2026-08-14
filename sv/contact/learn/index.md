@@ -5,7 +5,7 @@ description: Fönstret Kontakt ger en snabb överblick över all kommunikation o
 keywords: ['kontaktkort', 'kontaktperson', 'kontakt', 'GDPR', 'aktivitet']
 author: Bergfrid Dias
 date: 02.25.2025
-version: 10.5.2
+so_version: 10.5.2
 content_type: concept
 tier: starter
 audience: person

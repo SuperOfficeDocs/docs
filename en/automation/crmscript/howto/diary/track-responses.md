@@ -5,7 +5,7 @@ description: How to track responses to an invitation with CRMScript
 keywords: ['CRMScript', 'calendar', 'diary', 'appointments', 'follow-up', 'invitation']
 author: Bergfrid Skaara Dias
 date: 03.21.2022
-version: 10
+so_version: 10
 content_type: howto
 redirect_from: /en/diary/howto/crmscript/track-responses
 ---

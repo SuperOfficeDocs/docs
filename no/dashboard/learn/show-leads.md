@@ -5,7 +5,7 @@ description: Opprett dashbord for salgsleads for å spore og analysere ytelse, t
 keywords: ['dashbord', 'leads', 'salg', 'UTM-data', 'leadfigur']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: howto
 tier: growth
 category: sale

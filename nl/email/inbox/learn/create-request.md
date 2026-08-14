@@ -5,7 +5,7 @@ description: Leer hoe u een verzoek maakt in SuperOffice Service op basis van ee
 keywords: ['verzoek maken', 'postvak in', 'klantenservice', 'e-mail', 'verzoek', 'service', 'ticket']
 author: Bergfrid Dias
 date: 05.28.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 license: serviceessentials
 tier: core

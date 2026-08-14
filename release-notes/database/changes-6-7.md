@@ -3,7 +3,7 @@ uid: database-changes-6-to-7
 title: Table changes from SuperOffice 6.3 to 7.0
 description: Table changes from SuperOffice 6 to 7
 author: SuperOffice Product and Engineering
-version: 7
+so_version: 7
 content_type: release-note
 deployment: onsite
 category: database

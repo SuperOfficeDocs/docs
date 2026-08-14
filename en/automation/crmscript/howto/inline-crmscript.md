@@ -5,7 +5,7 @@ description: Inline CRMScript
 keywords: ['Customer Center', 'CEP', 'CRMScript']
 author: SuperOffice Product and Engineering
 date: 12.04.2025
-version: 11.7
+so_version: 11.7
 content_type: concept
 category: automation
 topic: howto

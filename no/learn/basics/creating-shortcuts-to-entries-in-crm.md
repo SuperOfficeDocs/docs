@@ -6,7 +6,7 @@ description: Lage snarveier til oppføringer i CRM
 keywords: ['kopier snarvei']
 author: SuperOffice Product and Engineering
 date: 09.17.2025
-version: 11.3
+so_version: 11.3
 content_type: concept
 tier: starter
 audience: person

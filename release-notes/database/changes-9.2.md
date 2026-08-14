@@ -5,7 +5,7 @@ description: What's new in the latest database version.
 author: SuperOffice Product and Engineering
 generated: true
 date: 03.22.2021
-version: 9.2
+so_version: 9.2
 content_type: release-note
 deployment: onsite, online
 category: database

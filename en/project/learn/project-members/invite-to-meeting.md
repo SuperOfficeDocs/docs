@@ -6,7 +6,7 @@ description: How to invite a project member to a meeting in SuperOffice
 keywords: ['Request a meeting', 'invite project member', 'invitation', 'project member', 'project']
 author: SuperOffice RnD
 date: 01.06.2025
-version: 10
+so_version: 10
 content_type: howto
 tier: core
 audience: person

@@ -4,7 +4,7 @@ title: Tutorial - generate RSS feed in VB.Net
 description: In this tutorial, you will create a feed that displays all activities created by other users on the current user's contact. A feed displays information. Each item in the feed includes metadata about that item.
 keywords: ['rss', 'diary']
 date: 03.21.2022
-version: 10
+so_version: 10
 content_type: tutorial
 language: en
 redirect_from: /en/diary/tutorials/rss-feed-vb/index

@@ -5,7 +5,7 @@ description: How do I automatically create a new contact in the Mobile CRM app f
 keywords: ['business card', 'contact']
 author: digitaldiina
 date: 06.10.2026
-version: 11.1.3
+so_version: 11.1.3
 content_type: howto
 tier: core
 platform: mobile

@@ -6,7 +6,7 @@ description: I denne vejledning lærer du, hvordan du bruger en webformular.
 keywords: ['test-e-mail']
 author: SuperOffice Product and Engineering
 date: 09.26.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 license: marketingessentials
 tier: growth

@@ -6,7 +6,7 @@ description: Spåra formulärinlämningar och visa statistik
 keywords: ['Formulär']
 author: Bergfrid Dias
 date: 09.26.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 license: marketingessentials
 tier: growth

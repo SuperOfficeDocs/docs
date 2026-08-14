@@ -5,7 +5,7 @@ description: Enable automatic sync to SuperOffice
 keywords: ['SCIM', 'Microsoft Entra', 'ME-ID', 'AAD', 'enterprise app']
 author: SuperOffice Product and Engineering
 date: 01.15.2024
-version: 12
+so_version: 12
 content_type: howto
 platform: web
 deployment: online

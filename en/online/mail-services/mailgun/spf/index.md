@@ -5,7 +5,7 @@ description: SPF record for Mailgun
 keywords: ['SPF', 'email', 'DNS', 'MX record', 'security']
 author: SuperOffice Product and Engineering
 date: 01.07.2026
-version: 12
+so_version: 12
 category: email
 topic: mailgun
 redirect_from: /en/email/mailgun/spf/index

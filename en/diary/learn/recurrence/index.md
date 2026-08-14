@@ -5,7 +5,7 @@ description: Recurring follow-ups
 keywords: ['repeating follow-up', 'repeat', 'recur', 'frequency', 'pattern', 'every workday', 'monthly', 'daily', 'diary', 'follow-up']
 author: Bergfrid Dias
 date: 01.13.2025
-version: 10.5
+so_version: 10.5
 content_type: concept
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter

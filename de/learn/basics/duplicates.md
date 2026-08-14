@@ -5,7 +5,7 @@ description: Duplikate
 keywords: ['Duplikat']
 author: SuperOffice RnD
 date: 02.11.2025
-version: 10.5.2
+so_version: 10.5.2
 content_type: concept
 tier: starter
 language: de

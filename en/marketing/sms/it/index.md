@@ -5,7 +5,7 @@ description: NetServer SMS connectors for SuperOffice
 keywords: ['SMS connector', 'SMS plugin', 'SMS plug-in', 'SMS']
 author: digitalidiina
 date: 10.07.2025
-version: 11.5
+so_version: 11.5
 content_type: concept
 category: Marketing
 topic: SMS

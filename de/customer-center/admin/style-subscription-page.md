@@ -5,7 +5,7 @@ description: So passen Sie das Design und den Text der Abonnementseite an Ihre M
 keywords: ['Abonnementseite', 'Abmelden', 'Bestätigungsseite']
 author: digitaldiina
 date: 03.17.2026
-version: 11.11
+so_version: 11.11
 content_type: howto
 tier: growth
 audience: settings

@@ -6,7 +6,7 @@ description: Release notes. What's new in SuperOffice Core CRM 10.5
 keywords: ['new UI']
 author: SuperOffice AS - Product and Engineering
 date: 05.05.2025
-version: 10.5
+so_version: 10.5
 content_type: release-note
 category: core crm
 audience: person

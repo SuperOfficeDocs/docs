@@ -5,7 +5,7 @@ description: Create an EmailFlow object
 keywords: ['flow', 'EmailFlow', 'CreateDefaultEmailFlow']
 author: Eivind Fasting
 date: 06.12.2024
-version: 10.3.5
+so_version: 10.3.5
 content_type: howto
 audience: api
 audience_tooltip: SuperOffice APIs and database

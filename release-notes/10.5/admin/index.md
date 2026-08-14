@@ -5,7 +5,7 @@ sidebarTitle: "Overview"
 description: Release notes. What's new in SuperOffice 10.5
 author: SuperOffice AS - Product and Engineering
 date: 05.05.2025
-version: 10.5
+so_version: 10.5
 content_type: release-note
 category: Settings and maintenance
 audience: settings

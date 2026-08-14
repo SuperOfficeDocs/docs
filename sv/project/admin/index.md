@@ -6,7 +6,7 @@ description: Lär dig hur du hanterar projektarbetsflöden i SuperOffice CRM med
 keywords: ['projektguide', 'projektstatus', 'projekttyp', 'arbetsflöde', 'projekt']
 author: Bergfrid Dias
 date: 02.25.2025
-version: 10
+so_version: 10
 content_type: howto
 license: salespremium, servicepremium, marketingessentials
 tier: core

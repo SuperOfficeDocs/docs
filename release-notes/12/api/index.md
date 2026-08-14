@@ -5,7 +5,7 @@ description: Release notes. What's new in SuperOffice 12 APIs
 keywords: ['API changes', 'database changes']
 author: SuperOffice AS - Product and Engineering
 date: 07.07.2026
-version: 12
+so_version: 12
 content_type: release-note
 category: api
 language: en

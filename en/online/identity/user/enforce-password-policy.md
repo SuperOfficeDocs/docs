@@ -5,7 +5,7 @@ description: Enforce password policy
 keywords: ['SuperID', 'password', 'password policy']
 author: digitaldiina
 date: 04.28.2026
-version: 12
+so_version: 12
 content_type: howto
 platform: web
 deployment: online

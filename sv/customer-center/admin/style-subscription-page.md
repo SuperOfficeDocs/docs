@@ -5,7 +5,7 @@ description: Hur du anpassar design och text på prenumerationssidan så att den
 keywords: ['prenumerationssida', 'avregistrering', 'bekräftelsesida']
 author: digitaldiina
 date: 03.17.2026
-version: 11.11
+so_version: 11.11
 content_type: howto
 tier: growth
 audience: settings

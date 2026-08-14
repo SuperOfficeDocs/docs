@@ -6,7 +6,7 @@
 .DESCRIPTION
     Converts DocFx YAML files (YamlMime:ManagedReference) to Mintlify MDX documentation.
     Uses safe string handling to avoid PowerShell parsing issues.
-    Preserves date and version from existing MDX files.
+    Preserves date and so_version from existing MDX files.
 
 .PARAMETER SourcePath
     Path to YAML files. Default: api-sources/crmscript
@@ -415,16 +415,16 @@ foreach ($yamlFile in $yamlFiles) {
     $outputFileName = $yamlFile.Name -replace '\.yml$', '.mdx'
     $outputFilePath = Join-Path $OutputPath $outputFileName
     
-    # Preserve existing date/version
+    # Preserve existing date/so_version
     $existDate = "01.08.2026"
     $existVer = "11.7"
-    
+
     if (Test-Path $outputFilePath) {
         $existContent = Get-Content $outputFilePath -Raw
         if ($existContent -match 'date:\s*([^\r\n]+)') {
             $existDate = $Matches[1].Trim()
         }
-        if ($existContent -match 'version:\s*([^\r\n]+)') {
+        if ($existContent -match 'so_version:\s*([^\r\n]+)') {
             $existVer = $Matches[1].Trim()
         }
     }
@@ -470,7 +470,7 @@ foreach ($yamlFile in $yamlFiles) {
     Add-Line $mdx (Build-Line @("keywords: ['CRMScript', '", $className, "', 'API reference']"))
     Add-Line $mdx 'author: SuperOffice Product and Engineering'
     Add-Line $mdx (Build-Line @('date: ', $existDate))
-    Add-Line $mdx (Build-Line @('version: ', $existVer))
+    Add-Line $mdx (Build-Line @('so_version: ', $existVer))
     Add-Line $mdx 'generated: true'
     Add-Line $mdx 'content_type: reference'
     Add-Line $mdx 'language: en'

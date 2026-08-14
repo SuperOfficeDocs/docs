@@ -5,7 +5,7 @@ description: Visualiseer selecties met de boardweergave met groepering, filters 
 keywords: ['boardweergave', 'board-weergave', 'selectieoverzicht', 'selectie', 'verkoopboard', 'projectboard', 'verzoekboard', 'kanban', 'groeperen op', 'filterwerkbalk', 'verkoopdatum badge', 'dagen in fase', 'dagen sinds registratie']
 author: digitaldiina
 date: 12.02.2025
-version: 11.7
+so_version: 11.7
 content_type: howto
 license: salespremium, servicepremium, marketingessentials
 tier: core

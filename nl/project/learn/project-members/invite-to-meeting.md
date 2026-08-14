@@ -6,7 +6,7 @@ description: Zo nodigt u in SuperOffice een projectlid voor een vergadering
 keywords: ['Vergadering aanvragen', 'projectlid uitnodigen', 'uitnodiging', 'projectlid', 'project', 'vervolgactiviteit']
 author: Bergfrid Dias
 date: 03.14.2025
-version: 10.5.2
+so_version: 10.5.2
 content_type: howto
 tier: core
 audience: person

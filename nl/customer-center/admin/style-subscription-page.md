@@ -5,7 +5,7 @@ description: Hoe u het ontwerp en de tekst van de abonnementspagina kunt aanpass
 keywords: ['abonnementspagina', 'uitschrijven', 'bevestigingspagina']
 author: digitaldiina
 date: 03.17.2026
-version: 11.11
+so_version: 11.11
 content_type: howto
 tier: growth
 audience: settings

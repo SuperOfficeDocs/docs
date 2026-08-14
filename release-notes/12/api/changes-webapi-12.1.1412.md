@@ -6,7 +6,7 @@ keywords: ['API changes', 'webapi']
 author: SuperOffice AS - Product and Engineering
 generated: true
 date: 06.19.2026
-version: 12.1.1412
+so_version: 12.1.1412
 content_type: release-note
 category: api
 language: en

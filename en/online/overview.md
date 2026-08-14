@@ -5,7 +5,7 @@ description: "Introduction to CRM Online: requirements, access, sign-in services
 keywords: ['online', 'App Store']
 author: digitaldiina
 date: 07.31.2026
-version: 12
+so_version: 12
 content_type: concept
 platform: web
 deployment: online

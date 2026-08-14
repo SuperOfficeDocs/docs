@@ -5,7 +5,7 @@ description: CRMScript is a feature that allows you to automate tasks in or modi
 keywords: ['CRMScript']
 author: digitaldiina
 date: 11.26.2025
-version: 11.6
+so_version: 11.6
 content_type: concept
 tier: core
 category: automation

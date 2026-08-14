@@ -5,7 +5,7 @@ description: How to see who's technical contact of which app and update which ap
 keywords: ['Developer Portal', 'technical contact', 'contact person']
 author: Bergfrid Dias
 date: 02.26.2025
-version: 2.0
+so_version: 2.0
 version_devportal: 2.0
 content_type: howto
 deployment: online

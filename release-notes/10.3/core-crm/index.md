@@ -5,7 +5,7 @@ sidebarTitle: "Overview"
 description: Release notes. What's new in SuperOffice Core CRM 10.3
 author: SuperOffice AS - Product and Engineering
 date: 11.19.2024
-version: 10.3
+so_version: 10.3
 content_type: release-note
 category: core crm
 audience: person

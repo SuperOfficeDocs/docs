@@ -5,7 +5,7 @@ description: I den här guiden förklarar vi hur du visar chattstatistik både p
 keywords: ['chattstatistik', 'dashboard']
 author: SuperOffice Product and Engineering
 date: 09.25.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 license: cep
 tier: growth

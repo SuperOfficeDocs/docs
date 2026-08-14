@@ -5,7 +5,7 @@ description: Återkommande händelser
 keywords: ['återkommande händelse', 'återkommande möte', 'återkommande avtal', 'repetera', 'upprepa', 'mötesfrekvens', 'händelsesmönster', 'mötesserie', 'kalender', 'händelse', 'återkomma', 'förekomst']
 author: Bergfrid Dias
 date: 02.21.2025
-version: 10.5.2
+so_version: 10.5.2
 content_type: concept
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter

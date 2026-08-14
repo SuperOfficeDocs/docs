@@ -5,7 +5,7 @@ description: How to load and get info about a request message with CRMScript.
 keywords: ['CRMScript', 'Service', 'ticket', 'request', 'message', 'load', 'getValue', 'attachment']
 author: Bergfrid Skaara Dias
 date: 05.26.2023
-version: 10
+so_version: 10
 content_type: howto
 redirect_from: /en/request/howto/crmscript/get-message-info
 ---

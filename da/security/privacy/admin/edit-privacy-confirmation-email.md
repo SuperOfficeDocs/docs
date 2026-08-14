@@ -6,7 +6,7 @@ description: I denne vejledning lærer du, hvordan du redigerer e-mailen med bek
 keywords: ['bekræftelse om personbeskyttelse', 'e-mail skabelon']
 author: Bergfrid Dias
 date: 12.19.2024
-version: 10
+so_version: 10
 content_type: howto
 functional_right: list administrator, general administrator
 tier: starter

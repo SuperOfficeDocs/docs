@@ -6,7 +6,7 @@ description: Oprettelse af opfølgninger med dine medarbejdere
 keywords: ['dagbog', 'opfølgning', 'invitation', 'møde']
 author: digitaldiina
 date: 03.27.2026
-version: 11.11
+so_version: 11.11
 content_type: concept
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter

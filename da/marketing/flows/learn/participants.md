@@ -5,7 +5,7 @@ description: Et komplet overblik over alle deltagere inden for flowet.
 keywords: ['Marketing', 'flow', 'flowdeltager', 'deltager']
 author: Bergfrid Dias, Trude Lien Smedbråten
 date: 09.26.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 license: marketingpremium
 tier: plus

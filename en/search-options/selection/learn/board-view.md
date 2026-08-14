@@ -5,7 +5,7 @@ description: Visualize selections using board view with grouping, filters, and d
 keywords: ['board view', 'selection view', 'selection', 'sales board', 'project board', 'request board', 'kanban', 'group by', 'filter toolbar', 'sale date badge', 'days in stage', 'days since registered']
 author: digitaldiina
 date: 12.02.2025
-version: 11.7
+so_version: 11.7
 content_type: howto
 license: salespremium, servicepremium, marketingessentials
 tier: core

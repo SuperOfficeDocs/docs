@@ -5,7 +5,7 @@ description: Ringe personer; Telefonpreferanser
 keywords: ['dagbok', 'oppfølging', 'telefon', 'samtale', 'ringe']
 author: digitaldiina
 date: 12.05.2025
-version: 11
+so_version: 11
 content_type: howto
 tier: starter
 audience: person

@@ -6,7 +6,7 @@ description: I den här guiden lär du dig hur du redigerar e-postbekräftelse o
 keywords: ['e-postbekräftelse om personskydd', 'e-post mall']
 author: Bergfrid Dias
 date: 12.19.2024
-version: 10
+so_version: 10
 content_type: howto
 tier: starter
 category: privacy

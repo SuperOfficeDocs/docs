@@ -6,7 +6,7 @@ description: Overview of Marketing improvements released across the SuperOffice 
 keywords: ['marketing', 'mailing']
 author: SuperOffice AS - Product and Engineering
 date: 02.22.2022
-version: 10
+so_version: 10
 content_type: release-note
 category: marketing
 language: en

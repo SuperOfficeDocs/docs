@@ -5,7 +5,7 @@ description: How to work with the SuperOffice APIs - web services and REST
 keywords: ['API', 'web services', 'REST']
 author: Bergfrid Dias
 date: 07.11.2024
-version: 10.3
+so_version: 10.3
 content_type: howto
 audience: api
 audience_tooltip: SuperOffice APIs and database

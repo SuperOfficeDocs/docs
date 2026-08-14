@@ -6,7 +6,7 @@ description: Een projectafbeelding toevoegen of wijzigen
 keywords: ['tabblad Afbeelding', 'projectafbeelding', 'project']
 author: Bergfrid Dias
 date: 03.14.2025
-version: 10.5.2
+so_version: 10.5.2
 content_type: howto
 tier: core
 audience: person

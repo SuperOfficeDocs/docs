@@ -1,11 +1,11 @@
 /**
- * SOMetadata - Displays page metadata (version, audience, platform, deployment)
+ * SOMetadata - Displays page metadata (so_version, audience, platform, deployment)
  *
- * Shows version number with appropriate icon based on audience/platform/deployment.
+ * Shows product version number with appropriate icon based on audience/platform/deployment.
  * Rendered in a light blue callout below the page title.
  *
  * @param {Object} props
- * @param {string} [props.version] - Product version number (e.g., "11.3")
+ * @param {string} [props.so_version] - Product version number (e.g., "11.3")
  * @param {string} [props.audience] - Target audience: "person" or "settings"
  * @param {string} [props.platform] - Platform type: "mobile", "pocket", "web", or "win"
  * @param {string} [props.deployment] - Deployment type: "onsite" or "online"
@@ -14,15 +14,15 @@
  * import SOMetadata from "/components/so-metadata.jsx";
  *
  * // User guide page
- * <SOMetadata version="11.3" audience="person" />
+ * <SOMetadata so_version="11.3" audience="person" />
  *
  * // Mobile page
- * <SOMetadata version="11.1" platform="mobile" />
+ * <SOMetadata so_version="11.1" platform="mobile" />
  *
  * // Onsite installation page
- * <SOMetadata version="11" deployment="onsite" />
+ * <SOMetadata so_version="11" deployment="onsite" />
  */
-const SOMetadata = ({ version, audience, platform, deployment }) => {
+const SOMetadata = ({ so_version, audience, platform, deployment }) => {
   // Determine icon based on priority: platform > audience > deployment
   let icon = null;
   let badgeText = null;
@@ -44,7 +44,7 @@ const SOMetadata = ({ version, audience, platform, deployment }) => {
   }
 
   // Don't render if no version and no icon
-  if (!version && !icon) {
+  if (!so_version && !icon) {
     return null;
   }
 
@@ -57,8 +57,8 @@ const SOMetadata = ({ version, audience, platform, deployment }) => {
               <Icon icon={icon} />
             </li>
           )}
-          {version && (
-            <li>Version {version}</li>
+          {so_version && (
+            <li>Version {so_version}</li>
           )}
           {badgeText && (
             <li>{badgeText}</li>

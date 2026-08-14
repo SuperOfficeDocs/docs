@@ -5,7 +5,7 @@ description: Overzicht van de 5 SuperOffice CRM Suite-plannen, seatbeheer, planl
 keywords: ['CRM Suite', 'plan', 'Starter', 'Core', 'Growth', 'Plus', 'Super', 'planlimieten', 'fencing', 'schalen', 'seat', 'abonnement']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: concept
 tier: starter
 category: Instellingen en onderhoud

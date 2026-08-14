@@ -5,7 +5,7 @@ description: Koblinger
 keywords: ['Legg til kobling', 'fanen Koblinger', 'kobling', 'lenke', 'link']
 author: Bergfrid Dias
 date: 01.29.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 tier: starter
 audience: person

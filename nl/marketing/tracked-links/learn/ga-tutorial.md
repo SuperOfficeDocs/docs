@@ -6,7 +6,7 @@ description: Deze handleiding zal uitleggen hoe je resultaten van een mailing ku
 keywords: ['Marketing', 'mailing', 'Google Analytics', 'e-mailtracking', 'gevolgde links', 'tracking-ID', 'UTM', 'campagne', 'nieuwsbrief']
 author: Alex Pelan
 date: 09.26.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 license: marketingessentials
 tier: growth

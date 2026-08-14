@@ -5,7 +5,7 @@ description: An explanation of the SharePoint document migration wizard and over
 keywords: ['SharePoint', 'document']
 author: Frode Berntsen, digitaldiina
 date: 11.02.2023
-version:
+so_version:
 content_type: reference
 category: integration
 topic: SharePoint documents

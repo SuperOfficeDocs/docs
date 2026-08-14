@@ -5,7 +5,7 @@ description: Kommunizieren Sie mit bestehenden oder potenziellen Kunden und helf
 keywords: ['Chat', 'laufende Chats']
 author: SuperOffice Product and Engineering
 date: 09.25.2025
-version: 10.5
+so_version: 10.5
 content_type: concept
 license: cep
 tier: growth

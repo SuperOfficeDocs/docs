@@ -5,7 +5,7 @@ description: How to configure document access
 keywords: ['document', 'API', 'services', 'document agent', 'SO_ARC', 'ArchivePath', 'TemporaryPath', 'ImpersonateUser']
 author: Tony Yates
 date: 12.08.2021
-version: 10
+so_version: 10
 content_type: howto
 audience: api
 audience_tooltip: SuperOffice APIs and database

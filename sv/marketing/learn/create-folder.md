@@ -5,7 +5,7 @@ description: Så här skapar du en mapp i Marknadsföring
 keywords: ['lägg till mapp']
 author: SuperOffice Product and Engineering
 date: 09.26.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 license: marketingessentials
 tier: growth

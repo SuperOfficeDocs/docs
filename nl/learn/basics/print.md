@@ -6,7 +6,7 @@ description: This guide provides an overview of how to print records such as com
 keywords: ['afdrukken']
 author: Bergfrid Dias
 date: 03.14.2025
-version: 10.5.2
+so_version: 10.5.2
 content_type: howto
 tier: starter
 audience: person

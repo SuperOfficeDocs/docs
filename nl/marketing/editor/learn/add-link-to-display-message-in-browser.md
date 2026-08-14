@@ -6,7 +6,7 @@ description: Een koppeling toevoegen om het bericht weer te geven in een browser
 keywords: ['Marketing', 'koppeling', 'mailing']
 author: SuperOffice Product and Engineering
 date: 09.26.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 license: marketingessentials
 tier: growth

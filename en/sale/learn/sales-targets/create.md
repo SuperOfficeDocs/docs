@@ -5,7 +5,7 @@ description: Keep track of your budgets by setting up sales targets. This will h
 keywords: ['sales targets']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: howto
 license: salespremium
 tier: growth

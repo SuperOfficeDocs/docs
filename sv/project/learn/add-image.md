@@ -5,7 +5,7 @@ description: Lägg till eller ändra en projektbild
 keywords: ['projekt']
 author: Bergfrid Dias
 date: 10.08.2024
-version: 10.3.10
+so_version: 10.3.10
 content_type: howto
 tier: core
 audience: person

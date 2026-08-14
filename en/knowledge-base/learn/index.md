@@ -5,7 +5,7 @@ description: Knowledge Base
 keywords: ['knowledge base']
 author: Kirsti Aakerholt
 date: 07.05.2023
-version: 10.5
+so_version: 10.5
 content_type: reference
 functional_right: knowledge-base
 license: serviceessentials

@@ -5,7 +5,7 @@ description: Regelmäßige Folgeaufgabe
 keywords: ['Häufigkeit', 'Regelmäßige Folgeaufgabe', 'Wiederkehrende Folgeaufgabe', 'Wiederkehrendes Meeting', 'Wiederkehrender Termin', 'Wiederholen', 'Erneuern', 'Meetingfrequenz', 'Folgeaufgabenmuster', 'Meetingserie', 'Kalender', 'Folgeaufgabe', 'Wiederholung', 'regelmäßig', 'planen']
 author: Bergfrid Dias
 date: 02.11.2025
-version: 10.5.2
+so_version: 10.5.2
 content_type: concept
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter

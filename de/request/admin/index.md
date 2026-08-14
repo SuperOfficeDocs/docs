@@ -6,7 +6,7 @@ description: Systemeinstellungen
 keywords: ['Service']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: reference
 license: serviceessentials
 tier: starter

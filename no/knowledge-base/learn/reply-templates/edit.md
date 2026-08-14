@@ -5,7 +5,7 @@ description: Lær hvordan du redigerer eller sletter en svarmal.
 keywords: ['rediger svarmal', 'slett svarmal', 'svarmal', 'mal']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: howto
 functional_right: knowledge-base
 license: serviceessentials

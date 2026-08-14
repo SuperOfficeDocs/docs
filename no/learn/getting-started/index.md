@@ -5,7 +5,7 @@ description: Finn ut hvordan du aktiverer brukerkontoen din, kobler til e-post o
 keywords: ['CRM']
 author: Bergfrid Dias
 date: 05.04.2026
-version: 11.13
+so_version: 11.13
 content_type: concept
 tier: starter
 audience: person

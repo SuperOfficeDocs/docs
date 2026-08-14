@@ -5,7 +5,7 @@ description: Security and best practices for Mailgun
 keywords: ['email security', 'spam', 'DKIM', 'SPF', 'DMARC', 'blocklist', 'email authentication', 'spoofing']
 author: SuperOffice Product and Engineering
 date: 01.07.2026
-version: 12
+so_version: 12
 content_type: reference
 category: email
 topic: mailgun

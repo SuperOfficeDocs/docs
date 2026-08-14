@@ -5,7 +5,7 @@ description: Working with SAINT.
 keywords: ['sale', 'SAINT', 'API', 'row']
 author: Bergfrid Skaara Dias
 date: 06.09.2023
-version: 10
+so_version: 10
 content_type: howto
 redirect_from:
   - /en/sale/saint/howto/row/index

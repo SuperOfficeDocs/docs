@@ -6,7 +6,7 @@ description: What's new in database version 10.1.5
 author: SuperOffice Product and Engineering
 generated: true
 date: 08.26.2022
-version: 10.1.5
+so_version: 10.1.5
 content_type: release-note
 deployment: onsite, online
 category: database

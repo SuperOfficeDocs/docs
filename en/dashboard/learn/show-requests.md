@@ -5,7 +5,7 @@ description: In this how-to guide you will learn how to get a quick overview of 
 keywords: ['dashboard', 'request', 'tile']
 author: digitaldiina
 date: 11.21.2025
-version: 11.6
+so_version: 11.6
 content_type: howto
 tier: core
 audience: person

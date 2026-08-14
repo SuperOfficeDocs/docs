@@ -5,7 +5,7 @@ description: Learn how to activating your user account, connect your email and d
 keywords: ['CRM']
 author: Bergfrid Dias, Kirsti Aakerholt
 date: 05.04.2026
-version: 11.13
+so_version: 11.13
 content_type: concept
 tier: starter
 audience: person

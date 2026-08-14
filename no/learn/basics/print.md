@@ -5,7 +5,7 @@ description: Denne veiledningen gir en oversikt over hvordan du skriver ut poste
 keywords: ['skriv ut', 'utskrift']
 author: Bergfrid Dias
 date: 01.29.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 tier: starter
 audience: person

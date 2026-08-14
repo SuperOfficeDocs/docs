@@ -5,7 +5,7 @@ description: Projektdeltagare
 keywords: ['Fliken projektdeltagare', 'projektdeltagare', 'projekt']
 author: SuperOffice RnD
 date: 02.25.2025
-version: 10.5.2
+so_version: 10.5.2
 content_type: concept
 tier: core
 audience: person

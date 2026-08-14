@@ -6,7 +6,7 @@ description: This is a formal announcement of end of life for our SuperOffice Se
 keywords: ['Service', 'request', 'mobile', 'compact mode', 'CompactMode', 'Mobile CRM']
 author: kirstiaa
 date: 01.13.2026
-version: 11.8
+so_version: 11.8
 content_type: release-note
 category: mobile
 platform: mobile

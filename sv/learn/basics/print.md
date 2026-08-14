@@ -5,7 +5,7 @@ description: Den här guiden ger en översikt över hur du skriver ut poster så
 keywords: ['skriv ut', 'utskrift']
 author: Bergfrid Skaara Dias
 date: 02.25.2025
-version: 10.5.2
+so_version: 10.5.2
 content_type: howto
 tier: starter
 audience: person

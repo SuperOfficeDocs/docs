@@ -6,7 +6,7 @@ description: Leer hoe u antwoordsjablonen kunt bewerken of verwijderen in SuperO
 keywords: ['sjabloon']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: howto
 functional_right: knowledge-base
 license: serviceessentials

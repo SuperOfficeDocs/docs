@@ -6,7 +6,7 @@ description: Mailgun sub-processor information
 keywords: ['email', 'mailgun', 'DPA', 'sub-processor', 'privacy', 'GDPR']
 author: digitaldiina
 date: 05.20.2022
-version: 12
+so_version: 12
 content_type: reference
 category: email
 topic: mailgun

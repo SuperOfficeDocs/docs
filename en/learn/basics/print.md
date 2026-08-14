@@ -5,7 +5,7 @@ description: This guide provides an overview of how to print records such as com
 keywords: ['print']
 author: Bergfrid Dias
 date: 01.20.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 tier: starter
 audience: person

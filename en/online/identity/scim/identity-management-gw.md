@@ -5,7 +5,7 @@ description: The Identity Management Gateway Architecture, User interface, and P
 keywords: ['Identity', 'Management', 'Gateway', 'Architecture', 'SuperID', 'Microsoft Entra', 'ME-ID', 'AAD']
 author:
 date: 01.15.2024
-version: 12
+so_version: 12
 content_type: reference
 platform: web
 deployment: online

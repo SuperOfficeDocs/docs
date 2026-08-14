@@ -6,7 +6,7 @@ description: Mobile CRM security in CRM Online
 keywords: ['mobile', 'pocket']
 author: Martin Pavlas
 date: 06.10.2026
-version: 11.1
+so_version: 11.1
 content_type: concept
 tier: core
 platform: mobile

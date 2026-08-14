@@ -6,7 +6,7 @@ description: Finn ut hvordan du konfigurerer personverninnstillingene for firmae
 keywords: ['personverninnstilling', 'legg til formål', 'ekstern personvernerklæring']
 author: SuperOffice Product and Engineering
 date: 09.01.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 functional_right: list administrator, general administrator
 tier: starter

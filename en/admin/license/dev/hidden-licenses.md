@@ -5,7 +5,7 @@ description: Hiding module licenses, showing user plans.
 keywords: ['hidden license', 'license package']
 author: xt1
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: concept
 tier: starter
 category: Settings and maintenance

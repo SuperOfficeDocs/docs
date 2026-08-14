@@ -5,7 +5,7 @@ description: Each product belongs to a single price list. How to work with produ
 keywords: ['sale', 'quote', 'product', 'QuoteAgent']
 author: Bergfrid Skaara Dias
 date: 06.12.2023
-version: 10
+so_version: 10
 content_type: howto
 redirect_from: /en/quote/howto/crmscript/products
 ---

@@ -8,7 +8,7 @@ date: 12.08.2021
 keywords: ['upgrade']
 content_type: howto
 deployment: onsite
-version: 8.1
+so_version: 8.1
 ---
 
 ![Move both Sales web client and Service to a new domain -screenshot][img8]

@@ -6,7 +6,7 @@ description: SuperOffice Operation Center for customer administrators with a pro
 keywords: ['production sandbox', 'test environment', 'OC', 'clone']
 author: digitaldiina
 date: 12.06.2021
-version: 12
+so_version: 12
 content_type: howto
 platform: web
 deployment: online

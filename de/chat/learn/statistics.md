@@ -5,7 +5,7 @@ description: In dieser Anleitung erfahren Sie, wie Sie Chat-Statistiken sowohl i
 keywords: ['Chat-Statistik', 'Chat-Dashboard']
 author: SuperOffice Product and Engineering
 date: 09.25.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 license: cep
 tier: growth

@@ -5,7 +5,7 @@ description: How to trace a CRMScript.
 keywords: ['Trace script', 'trace CRMScript', 'debug CRMScript']
 author: digitaldiina
 date: 11.26.2025
-version: 11.6
+so_version: 11.6
 content_type: howto
 audience: settings
 audience_tooltip: Settings and maintenance

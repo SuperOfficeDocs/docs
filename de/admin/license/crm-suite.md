@@ -5,7 +5,7 @@ description: Übersicht über die 5 SuperOffice CRM Suite-Pläne, Verwaltung von
 keywords: ['CRM Suite', 'Plan', 'Starter', 'Core', 'Growth', 'Plus', 'Super', 'Plangrenzen', 'Fencing', 'Skalierung', 'Benutzerplatz', 'Abonnement']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: concept
 tier: starter
 category: Einstellungen und Verwaltung

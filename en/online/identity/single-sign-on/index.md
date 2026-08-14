@@ -5,7 +5,7 @@ description: Single sign-on
 keywords: ['SSO']
 author: SuperOffice Product and Engineering
 date: 07.31.2026
-version: 12
+so_version: 12
 content_type: concept
 language: en
 ---

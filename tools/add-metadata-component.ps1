@@ -5,7 +5,7 @@
 
 .DESCRIPTION
     Recursively processes .md and .mdx files, parsing frontmatter to extract
-    version, audience, platform, and deployment metadata. Adds the SOMetadata
+    so_version, audience, platform, and deployment metadata. Adds the SOMetadata
     component with appropriate props after the H1 heading or last import statement.
 
     Files are automatically renamed from .md to .mdx when the component is added.
@@ -83,13 +83,13 @@ foreach ($file in $files) {
     $frontmatter = $frontmatterMatch.Groups[1].Value
 
     # Parse metadata
-    $version = if ($frontmatter -match '(?m)^version:\s*(.+)$') { $matches[1].Trim() } else { "" }
+    $soVersion = if ($frontmatter -match '(?m)^so_version:\s*(.+)$') { $matches[1].Trim() } else { "" }
     $audience = if ($frontmatter -match '(?m)^audience:\s*(.+)$') { $matches[1].Trim() } else { "" }
     $platform = if ($frontmatter -match '(?m)^platform:\s*(.+)$') { $matches[1].Trim() } else { "" }
     $deployment = if ($frontmatter -match '(?m)^deployment:\s*(.+)$') { $matches[1].Trim() } else { "" }
 
     # Skip if no relevant metadata
-    if (-not $version -and -not $audience -and -not $platform -and -not $deployment) {
+    if (-not $soVersion -and -not $audience -and -not $platform -and -not $deployment) {
         Write-Verbose "  $($file.Name): No relevant metadata, skipping"
         $filesSkipped++
         continue
@@ -97,7 +97,7 @@ foreach ($file in $files) {
 
     # Build component props
     $props = @()
-    if ($version) { $props += "version=`"$version`"" }
+    if ($soVersion) { $props += "so_version=`"$soVersion`"" }
     if ($audience) { $props += "audience=`"$audience`"" }
     if ($platform) { $props += "platform=`"$platform`"" }
     if ($deployment) { $props += "deployment=`"$deployment`"" }

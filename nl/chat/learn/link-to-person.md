@@ -6,7 +6,7 @@ description: Wanneer een klant een vraag verstuurt via de chatwidget op de websi
 keywords: ['chat koppelen aan contactpersoon', 'voorgestelde contactpersoon', 'nieuwe contactpersoon maken']
 author: SuperOffice Product and Engineering
 date: 09.25.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 license: cep
 tier: growth

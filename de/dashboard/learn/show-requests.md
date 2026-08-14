@@ -5,7 +5,7 @@ description: In dieser Anleitung lernen Sie, wie Sie sich einen schnellen Überb
 keywords: ['Dashboard', 'Anfrage']
 author: digitaldiina
 date: 11.21.2025
-version: 11.6
+so_version: 11.6
 content_type: howto
 tier: core
 audience: person

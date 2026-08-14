@@ -6,7 +6,7 @@ description: Lär dig hur du konfigurerar integritetsinställningarna för ditt 
 keywords: ['integritetsInställning', 'lägg till syfte', 'extern integritetsförklaring']
 author: SuperOffice Product and Engineering
 date: 09.01.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 functional_right: list administrator, general administrator
 tier: starter

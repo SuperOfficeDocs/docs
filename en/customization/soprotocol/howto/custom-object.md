@@ -6,7 +6,7 @@ description: How to show or create a custom object with or without prefilled val
 keywords: ['soprotocol', 'custom object']
 author: Michel Krohn-Dale
 date: 09.24.2024
-version: 10.3.8
+so_version: 10.3.8
 content_type: howto
 category: customization
 topic: soprotocol

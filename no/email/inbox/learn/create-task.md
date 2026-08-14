@@ -5,7 +5,7 @@ description: Lær hvordan du oppretter en oppgave i SuperOffice CRM basert på e
 keywords: ['oppgave', 'oppfølging', 'arkivere e-post', 'innboks', 'opprett oppgave', 'oppfølging fra e-post', 'e-post']
 author: Bergfrid Dias
 date: 05.28.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter

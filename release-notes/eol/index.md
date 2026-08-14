@@ -5,7 +5,7 @@ description: This section provides crucial notifications and information about p
 keywords: ['end-of-life', 'EOL', 'phased out', 'discontinued', 'deprecated', 'legacy']
 author: digitaldiina
 date: 07.06.2026
-version: 12.2
+so_version: 12.2
 content_type: release-note
 language: en
 ---

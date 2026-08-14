@@ -5,7 +5,7 @@ description: In deze handleiding leert u hoe u een snel overzicht krijgt van all
 keywords: ['dashboard', 'verzoek']
 author: digitaldiina
 date: 11.21.2025
-version: 11.6
+so_version: 11.6
 content_type: howto
 tier: core
 audience: person

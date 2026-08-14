@@ -5,7 +5,7 @@ description: The Privacy feature in SuperOffice will assist you in protecting th
 keywords: ['privacy', 'GDPR', 'e-marketing', 'consent', 'legal basis']
 author: digitaldiina
 date: 11.06.2025
-version: 11.6
+so_version: 11.6
 content_type: concept
 tier: starter
 category: privacy

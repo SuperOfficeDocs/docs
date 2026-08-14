@@ -6,7 +6,7 @@ description: Lær, hvordan du administrerer salgsarbejdsgange i SuperOffice CRM 
 keywords: ['salgsguide', 'salgsfase', 'salgstype', 'arbejdsgang', 'salg']
 author: digitaldiina
 date: 11.06.2025
-version: 11.6
+so_version: 11.6
 content_type: howto
 tier: core
 audience: settings

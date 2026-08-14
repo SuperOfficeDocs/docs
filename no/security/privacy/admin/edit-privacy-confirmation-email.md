@@ -5,7 +5,7 @@ description: I denne veiledningen lærer du hvordan du redigerer e-postbekreftel
 keywords: ['e-post med personvernbekreftelse', 'e-post mal']
 author: Bergfrid Dias
 date: 12.19.2024
-version: 10
+so_version: 10
 content_type: howto
 functional_right: list administrator, general administrator
 tier: starter

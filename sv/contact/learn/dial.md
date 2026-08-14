@@ -5,7 +5,7 @@ description: Ringa till kontakter; Telefoninställningar
 keywords: ['kalender', 'händelse', 'telefon', 'ringa upp', 'ringa']
 author: digitaldiina
 date: 12.05.2025
-version: 11
+so_version: 11
 content_type: howto
 tier: starter
 audience: person

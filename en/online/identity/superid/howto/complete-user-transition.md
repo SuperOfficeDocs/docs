@@ -6,7 +6,7 @@ description: Complete user account transition from password to federated login
 keywords: ['federated login']
 author: digitaldiina
 date: 12.18.2025
-version: 12
+so_version: 12
 content_type: howto
 userflow_index: true
 language: en

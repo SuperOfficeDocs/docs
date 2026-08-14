@@ -6,7 +6,7 @@ description: Multiple DKIM records in Mailgun
 keywords: ['Mailgun', 'DKIM', 'DMARC', 'SMTP', 'bounce', 'consent']
 author: Martin Pavlas
 date: 09.12.2023
-version: 12
+so_version: 12
 content_type: howto
 category: email
 topic: mailgun

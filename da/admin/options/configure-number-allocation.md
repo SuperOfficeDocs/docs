@@ -5,7 +5,7 @@ description: Angivelse af nummertildeling
 keywords: ['nummerallokering', 'tæller', 'firmanummer']
 author: digitaldiina
 date: 10.21.2025
-version: 11.5
+so_version: 11.5
 content_type: howto
 tier: starter
 category: Settings and maintenance

@@ -5,7 +5,7 @@ description: Wenn ein Kunde eine Anfrage über das Chat-Widget auf der Website s
 keywords: ['chat mit person verknüpfen', 'vorgeschlagene person', 'neue person erstellen']
 author: SuperOffice Product and Engineering
 date: 09.25.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 license: cep
 tier: growth

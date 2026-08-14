@@ -5,7 +5,7 @@ description: Vis, administrer og overvåk webhooks fra Innstillinger og vedlikeh
 keywords: ['webhook-panel', 'webhook-status', 'deaktivert webhook', 'genstart webhook', 'overvåk webhooks']
 author: digitaldiina
 date: 06.16.2026
-version: 12.1
+so_version: 12.1
 content_type: concept
 tier: core
 category: automation

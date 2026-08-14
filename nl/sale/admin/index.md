@@ -5,7 +5,7 @@ description: Leer hoe je verkoopprocessen beheert in SuperOffice CRM met verkoop
 keywords: ['verkoopgids', 'verkoopfase', 'verkooptype', 'workflow', 'verkoop']
 author: digitaldiina
 date: 11.06.2025
-version: 11.6
+so_version: 11.6
 content_type: howto
 tier: core
 audience: settings

@@ -5,7 +5,7 @@ description: Duplicaten
 keywords: ['duplicaat']
 author: SuperOffice RnD
 date: 03.14.2025
-version: 10.5.2
+so_version: 10.5.2
 content_type: concept
 tier: starter
 audience: person

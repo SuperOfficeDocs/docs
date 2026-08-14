@@ -5,7 +5,7 @@ description: SCIM rules for how users shall be configured in SuperOffice CRM.
 keywords: ['SCIM', 'IdP', 'Microsoft Entra', 'ME-ID', 'AAD', 'Azure']
 author: digitaldiina, Oleg Deribas
 date: 10.02.2025
-version: 12
+so_version: 12
 content_type: concepts
 category: identity management
 topic: scim

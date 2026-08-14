@@ -5,7 +5,7 @@ description: Kommunicera med och hjälp befintliga eller potentiella kunder via 
 keywords: ['chatt', 'pågående chats']
 author: SuperOffice Product and Engineering
 date: 09.25.2025
-version: 10.5
+so_version: 10.5
 content_type: concept
 tier: growth
 audience: person

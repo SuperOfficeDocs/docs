@@ -5,7 +5,7 @@ description: Communiceer met en help bestaande of potentiële klanten via een ch
 keywords: ['chatten', 'lopende chats']
 author: SuperOffice Product and Engineering
 date: 09.25.2025
-version: 10.5
+so_version: 10.5
 content_type: concept
 license: cep
 tier: growth

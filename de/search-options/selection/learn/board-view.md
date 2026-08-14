@@ -5,7 +5,7 @@ description: Selektionen mit der Board-Ansicht visualisieren - mit Gruppierung, 
 keywords: ['Board-Ansicht', 'Selektionsansicht', 'Selektion', 'Verkaufsboard', 'Projektboard', 'Anfrageboard', 'Kanban', 'gruppieren nach', 'Filterleiste', 'Verkaufsdatum-Badge', 'Tage in Phase', 'Tage seit Registrierung']
 author: digitaldiina
 date: 12.02.2025
-version: 11.7
+so_version: 11.7
 content_type: howto
 license: salespremium, servicepremium, marketingessentials
 tier: core

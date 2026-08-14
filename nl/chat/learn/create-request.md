@@ -5,7 +5,7 @@ description: In deze handleiding leert u hoe u een verzoek maakt in SuperOffice 
 keywords: ['verzoek maken', 'niet oplossen via chat']
 author: SuperOffice Product and Engineering
 date: 09.25.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 license: cep
 tier: growth

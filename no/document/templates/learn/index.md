@@ -5,7 +5,7 @@ description: Introduksjon til dokumentmaler
 keywords: ['dokumentmal', 'document', 'mal']
 author: Bergfrid Dias
 date: 07.11.2024
-version: 10.3
+so_version: 10.3
 content_type: concept
 tier: starter
 redirect_from: /no/admin/lists/learn/document-template

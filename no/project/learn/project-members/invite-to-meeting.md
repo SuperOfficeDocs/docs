@@ -6,7 +6,7 @@ description: Slik inviterer du en prosjektdeltaker til et møte i SuperOffice
 keywords: ['be om møte', 'inviter prosjektdeltaker', 'prosjektdeltaker', 'prosjekt', 'deltaker', 'invitere', 'oppfølging']
 author: SuperOffice RnD
 date: 01.31.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 tier: core
 audience: person

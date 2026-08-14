@@ -5,7 +5,7 @@ description: How to update a sale in SuperOffice Mobile CRM.
 keywords: ['open', 'sold', 'lost', 'stalled', 'stage', 'sale']
 author: digitaldiina
 date: 06.10.2026
-version: 11.1
+so_version: 11.1
 content_type: howto
 tier: core
 platform: mobile

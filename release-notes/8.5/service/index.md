@@ -3,7 +3,7 @@ uid: news-service-8.5
 title: Service
 author: SuperOffice AS - Product and Engineering
 date: 12.18.2020
-version: 8.5
+so_version: 8.5
 platform: web
 deployment: onsite
 content_type: release-note

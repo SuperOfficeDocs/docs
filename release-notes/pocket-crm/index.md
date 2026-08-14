@@ -5,7 +5,7 @@ description: Release notes for the legacy Pocket CRM app, used with SuperOffice 
 keywords: ['Pocket CRM']
 author: SuperOffice AS - Product and engineering
 date: 12.18.2020
-version: 9.1.6
+so_version: 9.1.6
 content_type: release-note
 category: mobile
 topic: Pocket CRM

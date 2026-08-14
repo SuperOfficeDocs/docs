@@ -5,7 +5,7 @@ description: Leer hoe u een bericht in een verzoek kunt opsplitsen in SuperOffic
 keywords: ['verzoek', 'bericht', 'opsplitsen']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: howto
 tier: starter
 audience: person

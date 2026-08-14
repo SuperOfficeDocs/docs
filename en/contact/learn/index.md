@@ -5,7 +5,7 @@ description: The Contact screen provides an instant snapshot of all communicatio
 keywords: ['Contact screen', 'person', 'contact']
 author: Bergfrid Dias
 date: 12.17.2024
-version: 10
+so_version: 10
 content_type: concept
 tier: starter
 audience: person

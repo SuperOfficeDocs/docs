@@ -5,7 +5,7 @@ description: IMirrorClientService interface
 keywords: ['IMirrorClientService', 'mirroring', 'WCF', 'legacy']
 author: SuperOffice Product and Engineering
 date: 06.05.2026
-version: 12
+so_version: 12
 content_type: reference
 platform: web
 deployment: online

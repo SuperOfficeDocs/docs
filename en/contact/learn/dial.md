@@ -5,7 +5,7 @@ description: Dialling contacts; Phone preferences
 keywords: ['diary', 'follow-up', 'phone', 'call', 'dial']
 author: digitaldiina
 date: 12.05.2025
-version: 11
+so_version: 11
 content_type: howto
 tier: starter
 audience: person

@@ -5,7 +5,7 @@ description: Lær, hvordan du opretter og sletter noter i SuperOffice CRM.
 keywords: ['fanen Bemærkning', 'tage noter', 'oprette noter', 'slette noter']
 author: SuperOffice RnD
 date: 03.07.2025
-version: 10.5.2
+so_version: 10.5.2
 content_type: howto
 tier: starter
 audience: person

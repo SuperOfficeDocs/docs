@@ -6,7 +6,7 @@ description: Add a link to display the message in a browser
 keywords: ['Marketing', 'link', 'mailing']
 author: SuperOffice Product and Engineering
 date: 09.26.2025
-version: 10.5
+so_version: 10.5
 content_type: howto
 license: marketingessentials
 tier: growth

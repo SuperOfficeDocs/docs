@@ -6,7 +6,7 @@ description: Wie man ein Projektmitglied zu einer Besprechung in SuperOffice ein
 keywords: ['Besprechung anfordern', 'Meeting anfordern', 'Projektteilnehmer einladen', 'Projektteilnehmer', 'Teilnehmer', 'Folgeaufgabe', 'Projekt', 'Mitglied', 'Einladen']
 author: SuperOffice RnD
 date: 02.11.2025
-version: 10.5.2
+so_version: 10.5.2
 content_type: howto
 tier: core
 audience: person

@@ -5,7 +5,7 @@ description: Lær, hvordan du opretter en ny sagsstatus i Indstillinger og vedli
 keywords: ['sagsstatus', 'status', 'opret sagsstatus']
 author: digitaldiina
 date: 06.10.2026
-version: 12.0
+so_version: 12.0
 content_type: howto
 license: serviceessentials
 tier: starter
