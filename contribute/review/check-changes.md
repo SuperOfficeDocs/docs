@@ -24,26 +24,26 @@ A PR with no bot comment is usually not a build failure - it is most likely a PR
 ## Open the PR for viewing
 
 1. Go to [the repository][1] and click **Pull requests**.
-2. Select a PR from the list.
+1. Select a PR from the list.
 
 ## Leave a general comment
 
 1. Select the **Conversations** tab.
 
-2. Scroll to the bottom of the page, write your feedback, and click **Comment**.
+1. Scroll to the bottom of the page, write your feedback, and click **Comment**.
 
     ![GitHub PR comment field -screenshot][img1]
 
 ## Comment on a specific line
 
 1. Select the **Files changed** tab.
-2. Locate the file and specific line you want to comment on.
-3. Put you mouse on the line and click the blue plus icon.
+1. Locate the file and specific line you want to comment on.
+1. Put you mouse on the line and click the blue plus icon.
 
     ![GitHub PR line comment -screenshot][img2]
 
-4. Type your comment.
-5. Click **Add single comment**.
+1. Type your comment.
+1. Click **Add single comment**.
 
 ## Start and submit review
 

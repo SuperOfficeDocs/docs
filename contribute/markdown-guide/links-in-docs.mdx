@@ -59,6 +59,7 @@ Two different things carry a link target in this repo: **markdown links** (`[tex
 Relative paths like these are the right default as long as both pages stay within the same main topic: the whole `en/developer-portal/` tree, the whole `de/company/` tree, this whole `contribute/` tree, and so on. Two patterns worth naming directly:
 
 * **The parent folder's own landing page** is `../index`: the same "page in the parent folder" pattern above, just naming its `index`.
+
 * **A self-contained generated reference tree** (`en/database/tables/`, the archive-provider/MDO-provider reference) stays relative by its own generator's convention: see the note below.
 
 **Link to an absolute path beginning at the root of the repository:**
@@ -129,6 +130,7 @@ Bookmark links go to a specific heading on the current or another page.
 **Link to a heading on another page:**
 
 * Use whichever link form (relative or root-relative, per the rule above) that page would normally get, plus a hash symbol (#), followed by the lowercase words of the heading.
+
 * Remove any punctuation and replace spaces with dashes.
 
 ```markdown
@@ -152,7 +154,7 @@ On **translated pages**, always add an explicit anchor to any heading you link t
 ## Link to download a file
 
 1. Place the file to be downloaded in the *downloads* folder at the repository root.
-2. Format the link like this:
+1. Format the link like this:
 
     ```markdown
     <a href="/downloads/FILE" download>LINKTEXT</a>

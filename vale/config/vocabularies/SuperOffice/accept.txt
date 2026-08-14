@@ -22,11 +22,15 @@ OSQL
 (?i)frontmatter
 (?i)subfolders?
 (?i)yaml
-Agresso
 MDOAgent
+Chacon
+digitaldiina
+doSomething
+PVP's
+Yaktocat
 
 # Database table / API concept names left untranslated in linklist cards
-# (e.g. en/company/index.mdx's "Database tables" card, mirrored per-language)
+# (for example, en/company/index.mdx's "Database tables" card, mirrored per-language)
 Contact
 Person
 Associate
@@ -37,15 +41,6 @@ Category
 Business
 Row
 Entity
-
-# Proper nouns / specific-casing terms found while screening Vale.Spelling
-# hits for issue #246, confirmed real (people, product names, this repo's
-# own GitHub handle, GitHub's own example org, code identifiers), not typos.
-Chacon
-digitaldiina
-doSomething
-PVP's
-Yaktocat
 
 # General technical/product vocabulary found the same way (issue #246): repo
 # and tooling jargon, not misspellings. Case-insensitive since both casings
@@ -90,7 +85,6 @@ Yaktocat
 (?i)toc
 (?i)tooltip
 (?i)uncompacted
-(?i)undraft
 (?i)unignored
 (?i)untimed
 (?i)userflow('s)?

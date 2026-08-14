@@ -75,7 +75,7 @@ Redirects default to permanent (308 - search engines transfer ranking, browsers 
 A trailing `/` on a source is equivalent to `/index` - `/release-notes/8.5/pocket-crm/` and `/release-notes/8.5/pocket-crm/index` are the same rule. Don't add both. It's dead weight.
 
 <Danger>
-**Never add a redirect whose `source` is `<page>/index` (or `<page>/`) when the `destination` is `<page>` itself.** Confirmed live via [#242](https://github.com/SuperOfficeDocs/docs/issues/242): Mintlify's redirect matcher treats a trailing `/index` (and, per the equivalence above, a trailing `/`) as interchangeable with the bare parent path when evaluating *sources* - not only when serving ordinary requests. If the destination is that same bare path, the platform ends up applying the rule to itself, and the live page 308-redirects to itself forever. `config/redirects.json` looks completely fine in this case - there's no textual loop for `process-redirects.ps1`'s own loop check to catch, since `source` and `destination` are literally different strings.
+**Never add a redirect whose `source` is `<page>/index` (or `<page>/`) when the `destination` is `<page>` itself.** Confirmed live via [#242][5]: Mintlify's redirect matcher treats a trailing `/index` (and, per the equivalence above, a trailing `/`) as interchangeable with the bare parent path when evaluating *sources* - not only when serving ordinary requests. If the destination is that same bare path, the platform ends up applying the rule to itself, and the live page 308-redirects to itself forever. `config/redirects.json` looks completely fine in this case - there's no textual loop for `process-redirects.ps1`'s own loop check to catch, since `source` and `destination` are literally different strings.
 
 This shape shows up specifically when a folder's `index.md` gets flattened into a same-named file one level up (`foo/index.md` -> `foo.mdx`) and someone adds `redirect_from: /section/foo/index` to the new flat file, expecting the old folder URL to keep resolving. The resulting entry - `"source": "/section/foo/index"`, `"destination": "/section/foo"` - is exactly the shape that loops. We hit this for real on 6 pages across all 6 languages (31 redirect entries) before it was caught.
 
@@ -131,13 +131,13 @@ Multiple redirects sharing a destination are tempting to collapse, but a wildcar
 
 1. **The sources share a real literal prefix** - not just the same destination. Two paths that happen to end up on the same page but look nothing alike can't be expressed as a wildcard at all, no matter how many of them there are.
 
-2. **Nothing else in the whole array shares that prefix but points elsewhere.** Check the full file, not just the group you're looking at - a prefix that looks like it belongs to one topic can quietly fan out to several unrelated destinations (we found a real one: a single folder-level prefix that, unchecked, would have fanned out to 9 different pages).
+1. **Nothing else in the whole array shares that prefix but points elsewhere.** Check the full file, not just the group you're looking at - a prefix that looks like it belongs to one topic can quietly fan out to several unrelated destinations (we found a real one: a single folder-level prefix that, unchecked, would have fanned out to 9 different pages).
 
-3. **The prefix doesn't shadow a page that's live today.** Check the actual file tree, not just the redirects array. A wildcard matches on URL shape alone - if real content sits under that path, the rule redirects requests to it too.
+1. **The prefix doesn't shadow a page that's live today.** Check the actual file tree, not just the redirects array. A wildcard matches on URL shape alone - if real content sits under that path, the rule redirects requests to it too.
 
-4. **If using the capture-and-reuse form, confirm the filename genuinely carried over unchanged.** Don't assume it from the folder move alone - verify against the real files. We found one case where a prefix got dropped during a move (`sofo-6.0-update` became `6.0-update`), which would have silently sent that one visitor to a page that doesn't exist.
+1. **If using the capture-and-reuse form, confirm the filename genuinely carried over unchanged.** Don't assume it from the folder move alone - verify against the real files. We found one case where a prefix got dropped during a move (`sofo-6.0-update` became `6.0-update`), which would have silently sent that one visitor to a page that doesn't exist.
 
-5. **Check whether the content was actually merged into one page, or just relocated.** If several old pages' content now lives as sections on one consolidated page, a many-to-one collapse is correct. If each old page has its own matching new page, use the capture-and-reuse form instead - **unless the group has any exceptions (see the warning below), in which case capture-and-reuse is unsafe and you're choosing between leaving the group uncompacted or a full collapse.** (We found a real bug of exactly this shape - a set of dated pages that should each redirect to their own matching page were all funneling to one index instead.)
+1. **Check whether the content was actually merged into one page, or just relocated.** If several old pages' content now lives as sections on one consolidated page, a many-to-one collapse is correct. If each old page has its own matching new page, use the capture-and-reuse form instead - **unless the group has any exceptions (see the warning below), in which case capture-and-reuse is unsafe and you're choosing between leaving the group uncompacted or a full collapse.** (We found a real bug of exactly this shape - a set of dated pages that should each redirect to their own matching page were all funneling to one index instead.)
 
 **Don't** compact when the sources don't share a literal prefix at all - most "several old pages now land on one new page" groups are content consolidations with no structural relationship, and can't be expressed as a wildcard regardless of how many sources point at that destination.
 
@@ -156,7 +156,7 @@ This means: a majority-pattern group with a handful of exceptions (say, 90% of s
 
 A full collapse trades real precision for array health, so it needs a real reason, not just convenience:
 
-* **The content is demonstrably being phased out**, evidenced by something already **public** on the destination page itself - a `<Warning>`/`<Danger>` block, a page titled "(LEGACY)," version-gated deprecation language. Never justify this by non-public/internal-only knowledge, even if you have it - if it isn't visible on the page, it isn't usable as justification here.
+* **The content is demonstrably being phased out**, evidenced by something already **public** on the destination page itself - a `<Warning>`/`<Danger>` block, a page titled "(LEGACY)", version-gated deprecation language. Never justify this by non-public/internal-only knowledge, even if you have it - if it isn't visible on the page, it isn't usable as justification here.
 
 * **The content moved as part of a folder-level site restructuring** (for example, into `integrations/`) - landing on the new folder's index is an acceptable trade when the destination is genuinely the right general topic area for the whole group, not a broad, unrelated hub.
 
@@ -183,3 +183,4 @@ After editing `config/redirects.json`, spot-check in `mint dev`: visit the old U
 [2]: #wildcards
 [3]: ./configure-mintlify
 [4]: ./retention-policy
+[5]: https://github.com/SuperOfficeDocs/docs/issues/242

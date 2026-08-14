@@ -107,7 +107,9 @@ The script needs a UTF-8-BOM'd `.ps1` file to correctly parse its own non-ASCII 
 ```
 
 * `redirect` defaults to `true` - Mintlify sends every unmatched URL straight to the homepage. Set to `false` to show an actual 404 page instead; this site's previous DocFx-based 404 page never redirected, so this setting keeps that behavior.
+
 * `title` and `description` can replace Mintlify's default heading and copy, but this site only sets `description` - Mintlify already renders its own large "404" numeral above the heading, so a custom `title` of `"404!"` just repeated it. Leaving `title` unset keeps Mintlify's own default heading next to that numeral.
+
 * `description` supports MDX, including components - this site uses it to show a Hugo mascot illustration through an `<img>` tag rather than plain `![]()` markdown, for the `style`/`noZoom` control that gives. There's no dedicated light/dark prop on `<img>`, so two separate tags cover that: `images/404-hugo-board.png` (see [Files and folders][4]) with `className="block dark:hidden"` for light mode, and `images/404-hugo-sad.png` with `className="hidden dark:block"` for dark mode.
 
 There is no dedicated `.mdx` file or custom-HTML override for this page - `errors.404` is the entire surface Mintlify exposes for it.

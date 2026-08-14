@@ -39,15 +39,16 @@ If you don't have Git installed, you will need to install Git first. You can fin
 To find the URL:
 
 1. Browse to the repo on GitHub.
-2. Select the **Code** tab.
-3. Click to expand the green **Code** button.
+1. Select the **Code** tab.
+1. Click to expand the green **Code** button.
 
     ![GitHub clone repo -screenshot][img1]
 
-4. Copy the HTTPS URL to the clipboard.
+1. Copy the HTTPS URL to the clipboard.
 
 <Tabs>
 <Tab title="Git Bash command line">
+
 1. Go to the folder you want to create the copy.
 
 1. Run `git clone [INSERT REPO URL]`:
@@ -67,10 +68,11 @@ To find the URL:
 </Tab>
 
 <Tab title="VS Code">
+
 1. Click the source control icon.
-2. Expand **SOURCE CONTROL** and click the three dots to show more actions.
-3. Select **Clone**.
-4. Paste the repo URL you copied above.
+1. Expand **SOURCE CONTROL** and click the three dots to show more actions.
+1. Select **Clone**.
+1. Paste the repo URL you copied above.
 
 ![VS Code clone repo -screenshot][img2]
 </Tab>
@@ -82,6 +84,7 @@ At the beginning of the workday, it is good practice to always get the latest up
 
 <Tabs>
 <Tab title="Git Bash command line">
+
 1. Go to the repo folder.
 
 1. Run `git pull`:
@@ -94,9 +97,10 @@ At the beginning of the workday, it is good practice to always get the latest up
 </Tab>
 
 <Tab title="VS Code">
+
 1. Click the source control icon.
-2. Expand **SOURCE CONTROL** and click the three dots to show more actions.
-3. Select **Pull**.
+1. Expand **SOURCE CONTROL** and click the three dots to show more actions.
+1. Select **Pull**.
 
 ![VS Code pull -screenshot][img4]
 </Tab>
@@ -111,13 +115,14 @@ To start something new, you need a **GitHub issue** and a **Git branch**.
 Let's assume the issue is already on the backlog and assigned to you.
 
 1. Go to GitHub.
-2. Move the issue from **To do** to **In progress** to let your peers know what you are working on.
-3. Note the **issue number**.
+1. Move the issue from **To do** to **In progress** to let your peers know what you are working on.
+1. Note the **issue number**.
 
 You can now **create a new branch:**
 
 <Tabs>
 <Tab title="Git Bash command line">
+
 1. Go to the repo folder.
 
 1. Run `git switch`:
@@ -130,27 +135,28 @@ You can now **create a new branch:**
 </Tab>
 
 <Tab title="VS Code">
+
 **Option 1:**
 
 1. Click the source control icon.
-2. Expand **SOURCE CONTROL** and click the three dots to show more actions.
-3. Point to **Branch** and then select **Create branch**.
+1. Expand **SOURCE CONTROL** and click the three dots to show more actions.
+1. Point to **Branch** and then select **Create branch**.
 
     ![VS Code create branch -screenshot][img5]
 
-4. Enter the name of your new branch.
+1. Enter the name of your new branch.
 
     ![VS Code create branch -screenshot][img6]
 
 **Option 2:**
 
 1. Click the source control icon.
-2. Expand **BRANCHES**
-3. Click the + sign.
+1. Expand **BRANCHES**
+1. Click the + sign.
 
     ![VS Code create branch -screenshot][img7]
 
-4. Enter the name of your new branch.
+1. Enter the name of your new branch.
 
 </Tab>
 </Tabs>
@@ -171,10 +177,10 @@ If you're not ready to commit yet, you can **stash** the changes for later.
 Saving your changes is a three-step process:
 
 1. Save the changes to your local disk (normal **Save file**).
-2. Save the changes to your local Git repo (the clone). In Git terms, this is to **stage** and **commit**.
+1. Save the changes to your local Git repo (the clone). In Git terms, this is to **stage** and **commit**.
     * Stage (add) means to prepare the set of changes you want to add to Git version control.
     * Commit means to create a **snapshot** of those changes, adding a new version of those files to the Git history.
-3. Publish the changes to GitHub (sync to cloud). In Git terms, **push**.
+1. Publish the changes to GitHub (sync to cloud). In Git terms, **push**.
 
 <Tip>
 Adding the issue number (for example #256) somewhere in the commit message automatically links your changes to the issue and lets others see what has been done.
@@ -184,6 +190,7 @@ Adding the issue number (for example #256) somewhere in the commit message autom
 
 <Tabs>
 <Tab title="Git Bash command line">
+
 1. Go to the repo folder.
 
 1. Run `git add`:
@@ -204,27 +211,28 @@ Adding the issue number (for example #256) somewhere in the commit message autom
 </Tab>
 
 <Tab title="VS Code">
+
 **Option 1:**
 
 1. Click the source control icon.
-2. Expand **SOURCE CONTROL** and click the three dots to show more actions.
-3. Point to **Changes** and then select **Stage All Changes**.
+1. Expand **SOURCE CONTROL** and click the three dots to show more actions.
+1. Point to **Changes** and then select **Stage All Changes**.
 
     ![VS Code stage all changes -screenshot][img8]
 
-4. Click the three dots again, point to **Commit**, and then select **Commit Staged**.
+1. Click the three dots again, point to **Commit**, and then select **Commit Staged**.
 
     ![VS Code commit -screenshot][img9]
 
-5. Enter a commit message.
+1. Enter a commit message.
 
 **Option 2:**
 
 1. Click the source control icon.
-2. Expand **SOURCE CONTROL**. Then expand **Changes**.
-3. Click the **+ sign** on the heading to stage all changes. Click the + sign on individual files to stage just those.
-4. Click the **checkmark** on the Source control heading to commit.
-5. Enter a commit message.
+1. Expand **SOURCE CONTROL**. Then expand **Changes**.
+1. Click the **+ sign** on the heading to stage all changes. Click the + sign on individual files to stage just those.
+1. Click the **checkmark** on the Source control heading to commit.
+1. Enter a commit message.
 
 </Tab>
 </Tabs>
@@ -235,6 +243,7 @@ The last step before your team-mates see your updates is to sync to the cloud (*
 
 <Tabs>
 <Tab title="Git Bash command line">
+
 1. Go to the repo folder.
 
 1. Run `git push`
@@ -250,28 +259,28 @@ The last step before your team-mates see your updates is to sync to the cloud (*
 **Option 1 (all changes committed but not pushed):**
 
 1. Click the source control icon.
-2. Expand **SOURCE CONTROL**.
-3. Click **Sync Changes**.
+1. Expand **SOURCE CONTROL**.
+1. Click **Sync Changes**.
 
     ![VS Code sync changes -screenshot][img15]
 
 **Option 2:**
 
 1. Click the source control icon.
-2. Expand **SOURCE CONTROL** and click the three dots to show more actions.
-3. Select **Push**.
+1. Expand **SOURCE CONTROL** and click the three dots to show more actions.
+1. Select **Push**.
 
     ![VS Code push -screenshot][img16]
 
 **Option 3:**
 
 1. Click the source control icon.
-2. Expand **COMMITS**.
-3. Click the upward-arrow icon on the heading.
+1. Expand **COMMITS**.
+1. Click the upward-arrow icon on the heading.
 
     ![VS Code push commit -screenshot][img13]
 
-4. Confirm the action:
+1. Confirm the action:
 
     ![VS Code confirm commit -screenshot][img14]
 
@@ -294,9 +303,9 @@ Sometimes you'll need to suspend your current work in progress to deal with some
 
     If this is inconvenient, use **Stash**.
 
-2. Switch to the main branch and pull.
+1. Switch to the main branch and pull.
 
-3. [Start a new issue](#branch) or switch to an existing branch (and pull).
+1. [Start a new issue](#branch) or switch to an existing branch (and pull).
 
 ### Switching between branches
 
@@ -323,13 +332,13 @@ Sometimes you'll need to suspend your current work in progress to deal with some
 <Tab title="VS Code">
 
 1. Click the source control icon.
-2. Expand **BRANCHES**
-3. Click the curved arrow icon.
+1. Expand **BRANCHES**
+1. Click the curved arrow icon.
 
     ![VS Code switch branch -screenshot][img12]
 
-4. Select a branch to switch to.
-5. Pull.
+1. Select a branch to switch to.
+1. Pull.
 
 </Tab>
 </Tabs>

@@ -12,8 +12,8 @@ language: en
 Content reuse is to use the same pieces of content in multiple places without copying. It works like this:
 
 1. Write a piece of content and save it in a common place.
-2. Embed this content in one or more locations **by reference**.
-3. Any changes to the content can be done in one place and the updates are automatically applied wherever that piece is used.
+1. Embed this content in one or more locations **by reference**.
+1. Any changes to the content can be done in one place and the updates are automatically applied wherever that piece is used.
 
 ## Benefits
 
@@ -35,7 +35,7 @@ In topic-based writing, a topic could for example be *How to create a sale* whil
 Often, you identify smaller pieces of information as recurring. For example:
 
 * A note stating which license a task requires.
-* A single task step repeated in multiple procedures, such as "Click the **Save** button."
+* A single task step repeated in multiple procedures, such as "Click the **Save** button".
 * A list of something, such as follow-up statuses.
 
 These pieces go by many names: snippet, fragment, chunk, component, excerpt. In the following, let's call them **fragments** as a reminder that they are not published on their own. They are designed to be embedded into other content.
@@ -89,7 +89,7 @@ Minimize similar content. Instead of having 3 similar pages, either consolidate 
 
 **Fragments** should be placed in dedicated folders and formulated more generic than you'd normally would without reuse. For example, if you can reach a page in 3 different ways, it's better to say "Go to the **Sale** page" rather than stating a specific navigation path. The latter significantly reduces the reuse potential.
 
-**Dos:**
+**Do:**
 
 * Say the same thing, the same way, everywhere you say it.
 * Aim to make your topics stand alone without breaking the single responsibility principle.
@@ -97,10 +97,10 @@ Minimize similar content. Instead of having 3 similar pages, either consolidate 
 * Standardize terminology. Use consistent grammar and style.
 * Favor brevity and simplicity.
 
-**Don'ts:**
+**Don't:**
 
 * Don't Repeat Yourself (DRY): if you catch yourself thinking you've written something before, stop and look for reuse opportunities.
-* Avoid contextual phrases such as "in the previous section."
+* Avoid contextual phrases such as "in the previous section".
 * Don't overdo it. How small is small enough? How small is too small?
 * Don't nest fragments.
 

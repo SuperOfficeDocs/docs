@@ -87,9 +87,12 @@ The captured baseline (p50/p95 for every page, query, and nav hop) is **not repr
 ## Rerunning for #91
 
 1. Confirm `tools/benchmarks/urls.json`, `queries.json`, and `nav-paths.json` are unchanged from the baseline capture (or, if the sample set was deliberately updated, note that in the new results write-up - a changed sample set is no longer an apples-to-apples comparison).
-2. `nav-paths.json`'s hop selectors match DocFx's literal `href` markup - they will need re-verifying against the equivalent Mintlify pages first, since Mintlify's markup won't match.
-3. Run all four scripts per `tools/benchmarks/README.md` against the live Mintlify site.
-4. Compare against `results/baseline/` (see above). Flag the server-side search-latency script's numbers as non-comparable (different back end) - only the end-to-end search number, the page-load metrics, and the navigation numbers are valid before/after comparisons.
+
+1. `nav-paths.json`'s hop selectors match DocFx's literal `href` markup - they will need re-verifying against the equivalent Mintlify pages first, since Mintlify's markup won't match.
+
+1. Run all four scripts per `tools/benchmarks/README.md` against the live Mintlify site.
+
+1. Compare against `results/baseline/` (see above). Flag the server-side search-latency script's numbers as non-comparable (different back end) - only the end-to-end search number, the page-load metrics, and the navigation numbers are valid before/after comparisons.
 
 ## Related content
 
