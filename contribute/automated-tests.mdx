@@ -16,6 +16,7 @@ This page is the single reference for every automatic check that runs against th
 | Check | Runs via | Blocking? | Configured in |
 |---|---|---|---|
 | Markdownlint | GitHub Action (`.github/workflows/markdownlint.yml`) | No - advisory | This repo, `.markdownlint.yaml` / `.markdownlintignore` |
+| Legacy `version` frontmatter guard | GitHub Action (`.github/workflows/version-frontmatter-guard.yml`) | No - advisory (warns only) | This repo, `tools/check-legacy-version-property.py` |
 | Vale | Mintlify CI Checks add-on | No - Warning level | Mintlify dashboard (Add-ons > CI Checks), using this repo's `.vale.ini` |
 | Build validation | Mintlify preview deployment | Yes - a failed build shows as a red "Mintlify Deployment" check | Mintlify, automatic on every PR (see [Deploy trigger mechanics][2]) |
 | Broken links (internal) | Mintlify CI Checks add-on | No - Warning level | Mintlify dashboard (Add-ons > CI Checks) |
@@ -25,6 +26,10 @@ This page is the single reference for every automatic check that runs against th
 ### Markdownlint
 
 Lints only the `.md`/`.mdx` files changed in a PR (or pushed directly to `main`) using this repo's own `.markdownlint.yaml` rules. Results appear in the workflow run's log in the GitHub Actions tab - a flagged line does not block the merge, but is worth fixing before requesting review. See [markdownlint][3] for how to interpret and fix a specific rule violation, and how to run the same linter locally.
+
+### Legacy version frontmatter guard
+
+Checks only the `.md`/`.mdx` files changed in a PR (or pushed directly to `main`) for a `version:` frontmatter key. Mintlify's search backend treats `version` as a reserved search-filter field and 400s on the non-string value our own `version` property produced, which was one of the causes behind broken site search - so the property was renamed to `so_version` repo-wide (see [issue #254][9]). This check exists so the old key does not quietly come back (a copy-pasted frontmatter block from a stale branch, or muscle memory). It never fails the check - a hit shows up as a warning annotation on the relevant line in the PR's Files Changed tab, suggesting `so_version` instead.
 
 ### Vale
 
@@ -93,3 +98,4 @@ mint automations create --name "Broken link detection" --type broken-link-detect
 [6]: ./review/index
 [7]: ./how-to-update-crmscript-reference
 [8]: ./acceptance-testing
+[9]: https://github.com/SuperOfficeDocs/docs/issues/254
