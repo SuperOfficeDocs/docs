@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Warn (never fail) when a changed file's frontmatter reintroduces the
-legacy `version:` property instead of `so_version:` (see issue #254).
+reserved `version:` property instead of `so_version:` (see issue #254).
 
 Mintlify's search backend treats `version` as a reserved search-filter
 field and 400s on the non-string value our own `version:` frontmatter
@@ -21,8 +21,8 @@ CRLF normalized to LF first, and only ever look inside group 2 -- so a
 (e.g. contribute/markdown-guide/metadata.mdx) is correctly ignored.
 
 Usage:
-    python tools/check-legacy-version-property.py <file> [<file> ...]
-    python tools/check-legacy-version-property.py --path en
+    python tools/check-reserved-version-property.py <file> [<file> ...]
+    python tools/check-reserved-version-property.py --path en
 """
 
 import argparse
@@ -92,13 +92,13 @@ def main():
         if line_no is None:
             continue
         hits += 1
-        message = "Legacy 'version' property found -- did you mean 'so_version'? (see issue #254)"
+        message = "Reserved 'version' property found -- did you mean 'so_version'? (see issue #254)"
         print(f"::warning file={rel_path},line={line_no}::{message}")
 
     if hits:
-        print(f"\n{hits} file(s) still use the legacy 'version:' frontmatter property -- see warnings above.")
+        print(f"\n{hits} file(s) still use the reserved 'version:' frontmatter property -- see warnings above.")
     else:
-        print("No legacy 'version:' frontmatter property found in the checked files.")
+        print("No reserved 'version:' frontmatter property found in the checked files.")
 
     # Advisory only -- never fail the build.
     return 0

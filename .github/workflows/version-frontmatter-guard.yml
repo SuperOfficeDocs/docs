@@ -1,4 +1,4 @@
-name: Legacy version frontmatter guard
+name: Reserved version frontmatter guard
 
 on:
   push:
@@ -47,6 +47,6 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: "Check changed files for legacy version: property"
+      - name: "Check changed files for reserved version: property"
         if: steps.changed.outputs.any_changed == 'true'
-        run: python tools/check-legacy-version-property.py ${{ steps.changed.outputs.all_changed_files }}
+        run: python tools/check-reserved-version-property.py ${{ steps.changed.outputs.all_changed_files }}
