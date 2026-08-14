@@ -9,11 +9,11 @@ content_type: concept
 language: en
 ---
 
-`docs.json`'s `seo` key controls how this site behaves in search engines and in link previews on other platforms (Slack, LinkedIn, and so on). This page covers what's configured today; expect it to grow as more of Mintlify's `seo.*` options get used.
+`docs.json`'s `seo` key controls how this site behaves in search engines and in link previews on other platforms (Slack, LinkedIn, and so on). This page covers what's configured today. Expect it to grow as more of Mintlify's `seo.*` options get used.
 
 ## Automatic per-page social previews
 
-Every page automatically gets `og:title`, `og:description`, `og:image`, and matching `twitter:*` meta tags, with no per-page configuration required. Mintlify renders these directly from that page's own frontmatter `title` and `description` — see [Metadata][1] for how those fields are written. Improving a page's link-preview text is a metadata edit, not an `seo` setting.
+Every page automatically gets `og:title`, `og:description`, `og:image`, and matching `twitter:*` meta tags, with no per-page configuration required. Mintlify renders these directly from that page's own frontmatter `title` and `description`. See [Metadata][1] for how those fields are written. Improving a page's link-preview text is a metadata edit, not an `seo` setting.
 
 ## Custom background
 
@@ -39,7 +39,7 @@ The auto-generated preview image renders the title and description onto a backgr
 }
 ```
 
-`canonical` is a base domain, not a fixed single URL — Mintlify appends each page's own path to it automatically.
+`canonical` is a base domain, not a fixed single URL. Mintlify appends each page's own path to it automatically.
 
 ## Structured data and organization
 
@@ -47,27 +47,28 @@ Not yet configured. Mintlify can publish a `seo.organization` block (name, logo,
 
 ## Indexing controls
 
-Mintlify generates a standard `sitemap.xml` and `robots.txt` automatically, listing only pages included in `docs.json`'s navigation. Either file can be overridden by placing a same-named file at the project root. There is no per-language variant and no filtering hook beyond that — a hidden page (`hidden: true` frontmatter) is excluded from both by default unless `seo.indexing` is added to `docs.json`.
+Mintlify generates a standard `sitemap.xml` and `robots.txt` automatically, listing only pages included in `docs.json`'s navigation. Either file can be overridden by placing a same-named file at the project root. There is no per-language variant and no filtering hook beyond that: a hidden page (`hidden: true` frontmatter) is excluded from both by default unless `seo.indexing` is added to `docs.json`.
 
-This native sitemap is unrelated to the userhelp sitemap below — one is for search-engine crawling, the other feeds a third-party in-app tool.
+This native sitemap is unrelated to the Userflow sitemap below: one is for search-engine crawling, the other feeds a third-party in-app tool.
 
-## Userflow's userhelp sitemap
+## Userflow's sitemap
 
-Userflow — the in-app onboarding tool built into the CRM product — has a Resource Center knowledge-base search block per language, each configured with a **Knowledge base URL** pointed at `docs.superoffice.com/learn-<lang>.html`. That URL has to keep resolving to a flat list of current help-article links for its language, independent of Mintlify's own sitemap.
+Userflow (the in-app onboarding tool built into the CRM product) has a Resource Center knowledge-base search block per language, each configured with a **Knowledge base URL** pointed at `docs.superoffice.com/learn-<lang>.html`. That URL has to keep resolving to a flat list of current help-article links for its language, independent of Mintlify's own sitemap.
 
 Six hidden pages, `learn-<lang>.mdx` at the repo root, serve this today. Each is a flat `<a href='URL'>URL</a><br />` list, matching the legacy DocFx pipeline's format. Each lists:
 
-* every page under that language's own `*/learn/*` folders
-* every page anywhere in the repo flagged `userflow_index: true` in frontmatter (see [Metadata][1]) — a hand-curated addition for pages outside a `learn` folder, such as `admin/` how-tos. A flagged page with no language prefix (for example `integrations/`) is treated as shared and appears in every language's list.
+* Every page under that language's own `*/learn/*` folders
 
-`tools/build-learn-sitemaps.py` regenerates all six pages from the current content tree and nav config — no dependency on a built site, so it is safe to re-run any time a `learn` or `userflow_index` page changes. The old `/learn-<lang>.html` URLs redirect to the new pages via `config/redirects.json`, so nothing needs to change in Userflow's own settings.
+* Every page anywhere in the repo flagged `userflow_index: true` in frontmatter (see [Metadata][1]): a hand-curated addition for pages outside a `learn` folder, such as `admin/` how-tos. A flagged page with no language prefix (for example `integrations/`) is treated as shared and appears in every language's list.
 
-No scheduled automation regenerates these pages yet, unlike the broken-link-detection automation in [Automated tests][3] — re-run the tool by hand for now.
+`tools/build-learn-sitemaps.py` regenerates all six pages from the current content tree and nav config: no dependency on a built site, so it is safe to re-run any time a `learn` or `userflow_index` page changes. The old `/learn-<lang>.html` URLs redirect to the new pages via `config/redirects.json`, so nothing needs to change in Userflow's own settings.
+
+No scheduled automation regenerates these pages yet, unlike the broken-link-detection automation in [Automated tests][3]. Re-run the tool by hand for now.
 
 ## Related content
 
-* [Metadata][1] — the frontmatter fields that feed every page's automatic social preview, and the `userflow_index`/`hidden` properties.
-* [Configuring Mintlify][2] — where `seo` sits inside `docs.json`'s overall layout.
+* [Metadata][1]: the frontmatter fields that feed every page's automatic social preview, and the `userflow_index`/`hidden` properties.
+* [Configuring Mintlify][2]: where `seo` sits inside `docs.json`'s overall layout.
 
 [1]: ./markdown-guide/metadata
 [2]: ./configure-mintlify

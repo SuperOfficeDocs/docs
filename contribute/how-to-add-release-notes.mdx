@@ -15,7 +15,7 @@ Use this guide when you add or update files in *release-notes/*.
 
 * SuperOffice **12 and newer** (the current major version) use the Mintlify [Update component][2] in the major-version `index.mdx` page, such as *release-notes/12/index.mdx*, and are the only version line that gets real content edits.
 
-* SuperOffice **11 and earlier**, and **Pocket CRM**, should receive formatting updates only — do not make content edits there. This applies regardless of which structural format a version happens to use: SuperOffice 11 now uses the same Update+Badge component as 12 (see `release-notes/11/index.mdx`), but it's a historical version, so it stays formatting-only just like 10.x and earlier.
+* SuperOffice **11 and earlier**, and **Pocket CRM**, should receive formatting updates only. Do not make content edits there. This applies regardless of which structural format a version happens to use: SuperOffice 11 now uses the same Update+Badge component as 12 (see `release-notes/11/index.mdx`), but it's a historical version, so it stays formatting-only just like 10.x and earlier.
 
 * **Mobile CRM** uses the Update component too, split across *release-notes/mobile/v11.mdx* and *release-notes/mobile/v10.mdx*. See [Update mobile release notes](#update-mobile-release-notes) below.
 
@@ -68,9 +68,9 @@ Each feature H3 can also define a [Mintlify anchor override][2] so you can deep-
 
 For Mobile CRM:
 
-* Add **one `<Update>` block** to *release-notes/mobile/v11.mdx* (or *v10.mdx* for a v10.x backport), latest at the top. No new file and no new nav entry is needed for a routine update — both files are already wired into *config/nav-releases.json*.
+* Add **one `<Update>` block** to *release-notes/mobile/v11.mdx* (or *v10.mdx* for a v10.x backport), latest at the top. No new file and no new nav entry is needed for a routine update: both files are already wired into *config/nav-releases.json*.
 
-* Add **one H3 heading** per feature inside that update, matching the plain-heading style already used there (no `<Badge>` — Mobile CRM is one product line, not a multi-module system, so it doesn't need a module badge per feature the way SuperOffice 12 and newer do).
+* Add **one H3 heading** per feature inside that update, matching the plain-heading style already used there (no `<Badge>`: Mobile CRM is one product line, not a multi-module system, so it doesn't need a module badge per feature the way SuperOffice 12 and newer do).
 
 * Use the file's existing `tags={[...]}` convention for filtering (for example `["Diary", "Follow-ups"]`), carried over from what used to be the file's `category`/`topic` frontmatter.
 

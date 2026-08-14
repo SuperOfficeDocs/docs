@@ -21,7 +21,7 @@ language: en
 
 ## Create a new Markdown file
 
-This creates a single `.md` file with a standard metadata header. The frontmatter `title` is the page's only title — there's no H1 in the body (see [Metadata][6]).
+This creates a single `.md` file with a standard metadata header. The frontmatter `title` is the page's only title: there's no H1 in the body (see [Metadata][6]).
 
 The name you enter becomes the file name in kebab case and the `uid` in kebab case.
 
@@ -43,7 +43,7 @@ The name you enter becomes the file name in kebab case and the `uid` in kebab ca
 
 ## Create a landing page (no sidebar)
 
-Use this template for top-level category landing pages — pages that show a visual grid of sections without a left-side navigation panel.
+Use this template for top-level category landing pages: pages that show a visual grid of sections without a left-side navigation panel.
 
 The template uses `mode: "custom"` and includes:
 
@@ -58,7 +58,7 @@ The template uses `mode: "custom"` and includes:
 
 ## Create a subcategory landing page (with sidebar)
 
-Use this template for subcategory overview pages — pages that sit inside a navigation tree and show grouped how-to links and references.
+Use this template for subcategory overview pages: pages that sit inside a navigation tree and show grouped how-to links and references.
 
 The template uses `mode: "custom"` and the `subcategory` div structure with linklist cards.
 

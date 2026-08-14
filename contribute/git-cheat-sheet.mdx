@@ -69,7 +69,7 @@ git log
     git add --all
     ```
 
-    * Everything in your current directory and below only — not the same as `--all` if you're sitting in a subfolder:
+    * Everything in your current directory and below only, not the same as `--all` if you're sitting in a subfolder:
 
     ```sh
     git add .
@@ -91,13 +91,13 @@ git log
     If you have moved or renamed a file without using `git mv`, you must add both the old and the new file or folder name!
     </Note>
 
-2. Commit your saved changes to your local repository. End the message with the issue ID in parentheses — see [branch strategy][1] for why.
+1. Commit your saved changes to your local repository. End the message with the issue ID in parentheses: see [branch strategy][1] for why.
 
     ```sh
     git commit -m "Short description of changes (#[ISSUE ID])"
     ```
 
-3. Send your changes to GitHub.
+1. Send your changes to GitHub.
 
     ```sh
     git push

@@ -30,7 +30,7 @@ Lints only the `.md`/`.mdx` files changed in a PR (or pushed directly to `main`)
 
 ### Reserved version frontmatter guard
 
-Checks only the `.md`/`.mdx` files changed in a PR (or pushed directly to `main`) for a `version:` frontmatter key. Mintlify's search backend treats `version` as a reserved search-filter field and 400s on the non-string value our own `version` property produced - so the property was renamed to `so_version` repo-wide (see [issue #254][9]). This check exists so the old key does not quietly come back (a copy-pasted frontmatter block from a stale branch, or muscle memory). It never fails the check - a hit shows up as a warning annotation on the relevant line in the PR's Files Changed tab, suggesting `so_version` instead.
+Checks only the `.md`/`.mdx` files changed in a PR (or pushed directly to `main`) for a `version:` frontmatter key. Mintlify's search back end treats `version` as a reserved search-filter field and 400s on the non-string value our own `version` property produced - so the property was renamed to `so_version` repo-wide (see [issue #254][9]). This check exists so the old key does not quietly come back (a copy-pasted frontmatter block from a stale branch, or muscle memory). It never fails the check - a hit shows up as a warning annotation on the relevant line in the PR's Files Changed tab, suggesting `so_version` instead.
 
 ### Landing page template guard
 
@@ -38,11 +38,11 @@ Checks only the `.mdx` files changed in a PR (or pushed directly to `main`) for 
 
 ### Vale
 
-Prose-style linting (tone, terminology, formatting), configured entirely by this repo's `.vale.ini` - no separate setup needed once the add-on is toggled on in the Mintlify dashboard. Set to Warning level to match markdownlint's advisory-only posture; results show on the PR's checks list from Mintlify's own GitHub App.
+Prose-style linting (tone, terminology, formatting), configured entirely by this repo's `.vale.ini` - no separate setup needed once the add-on is toggled on in the Mintlify dashboard. Set to Warning level to match markdownlint's advisory-only posture. Results show on the PR's checks list from Mintlify's own GitHub App.
 
 ### Build validation - why there is no separate `mint validate` step
 
-`mint validate` is a build/schema validator (`docs.json` schema, MDX parse errors, OpenAPI spec validation) - it is unrelated to Vale and does not check broken links or accessibility; those are separate CLI commands (`mint broken-links`, `mint a11y`). It is not run as its own GitHub Action here because the PR preview deployment already performs the equivalent build validation on every PR, live, as part of generating the preview - adding a duplicate `mint validate` Action would just re-check what the preview build already checked. A failed build already surfaces as the red "Mintlify Deployment" check described in [Deployment][2].
+`mint validate` is a build/schema validator (`docs.json` schema, MDX parse errors, OpenAPI spec validation) - it is unrelated to Vale and does not check broken links or accessibility. Those are separate CLI commands (`mint broken-links`, `mint a11y`). It is not run as its own GitHub Action here because the PR preview deployment already performs the equivalent build validation on every PR, live, as part of generating the preview - adding a duplicate `mint validate` Action would just re-check what the preview build already checked. A failed build already surfaces as the red "Mintlify Deployment" check described in [Deployment][2].
 
 ### Broken links (per-PR)
 
@@ -67,9 +67,13 @@ A per-PR link check only catches breaks introduced by that PR. A separate, Mintl
 **Active** since August 11, 2026, first run August 15, 2026 (`nextRunAt` confirmed via `mint automations list`).
 
 * **Type:** `broken-link-detection`
+
 * **Cadence:** `0 6 1,15 * *` - the 1st and 15th of each month, run at 06:00. Standard cron has no native "every 2 weeks" field; this is the closest non-drifting approximation of a biweekly cadence (actual gaps land at 13-16 days depending on the month).
+
 * **Auto-merge:** off. When the automation finds and fixes a broken link, it opens a PR like any other change - it goes through the same manual review as everything else in this repo, it does not merge itself.
+
 * **What it does:** for each broken internal link, it checks whether the target page was renamed or moved and updates the link, or - if the target was removed entirely - edits the surrounding copy to remove or replace the reference.
+
 * **Cost:** billed in Mintlify credits per run (rough public estimate: ~285 credits/run) - a real operating cost, not a free background job.
 
 Setup record (issue [#81][4]):

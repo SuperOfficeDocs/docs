@@ -19,6 +19,7 @@ This page replaces DocFx's manual, week-long release cycle with a git-triggered 
 | `SuperOfficeDevNet/mintlify-docs` | `main` | Superseded | Prototype era (predates this repo's forklift) |
 
 * **`SuperOfficeDocs/docs`:** added via Mintlify dashboard Git settings (required an org-owner-approved GitHub App repository-access grant - see Authority below), then promoted to "Base" the same day. First deploy triggered manually; reachable at the default `superofficeas.mintlify.site`/`.app` domain. No custom domain configured yet - an early soft-launch, not the final public `docs.superoffice.com` cutover.
+
 * **`SuperOfficeDevNet/mintlify-docs`:** leftover from early Mintlify prototyping, in a different GitHub org (`SuperOfficeDevNet`) entirely, superseded 2026-08-06. No longer production.
 
 Connection history matters here as much as current state - an audit will ask what changed and when, not just what's true today.
@@ -33,7 +34,7 @@ Connection history matters here as much as current state - an audit will ask wha
 
 ## GitHub App permissions
 
-Requested by the Mintlify GitHub App on `SuperOfficeDocs` (see [Mintlify's GitHub integration docs][1] for what each permission is for in general; this table only lists what's granted here):
+Requested by the Mintlify GitHub App on `SuperOfficeDocs` (see [Mintlify's GitHub integration docs][1] for what each permission is for in general. This table only lists what's granted here):
 
 | Permission | Access |
 |---|---|
@@ -45,7 +46,7 @@ Requested by the Mintlify GitHub App on `SuperOfficeDocs` (see [Mintlify's GitHu
 
 ## Deploy trigger mechanics
 
-A push to the connected branch (`main`) triggers an automatic production deploy; a pull request against it gets its own preview deployment and check. A manual **Deploy** button in the dashboard exists as a fallback. See [Deployments][2] for the full mechanics - not duplicated here.
+A push to the connected branch (`main`) triggers an automatic production deploy. A pull request against it gets its own preview deployment and check. A manual **Deploy** button in the dashboard exists as a fallback. See [Deployments][2] for the full mechanics - not duplicated here.
 
 ## PR preview deployments {#previews}
 
@@ -62,16 +63,17 @@ A **Preview authentication** toggle (dashboard > **Add-ons** > **Previews**) can
 Use a manual preview when a PR came from a fork, or to preview a branch outside of any PR.
 
 1. Push the branch into `SuperOfficeDocs/docs` itself, under the naming convention `preview/pr-<PR#>` to avoid collisions between concurrent manual previews - Mintlify's GitHub App only resolves branches it already has access to, so a fork's branch needs pushing in first: `git fetch origin pull/<PR#>/head:preview/pr-<PR#> && git push origin preview/pr-<PR#>`.
-2. In the Mintlify dashboard, go to **Previews** > **Create custom preview**, enter that branch name, and create it.
+
+1. In the Mintlify dashboard, go to **Previews** > **Create custom preview**, enter that branch name, and create it.
 
     ![Mintlify dashboard Previews panel with Create custom preview -screenshot][img1]
 
-3. Share the resulting link on the PR.
+1. Share the resulting link on the PR.
 
 **Manual previews stay live until someone deletes them.** Unlike automatic previews, they do not expire on their own. Delete from the same dashboard **Previews** list once no longer needed.
 
 <Note>
-Requesting a manual preview costs the docs lead's time and is not instant - it depends on their availability. If you are iterating on a fork PR, mark it **draft**, make the full round of changes, then undraft and `@`-mention the docs lead to request **one** preview, not a fresh request after every small fix.
+Requesting a manual preview costs the docs lead's time and is not instant - it depends on their availability. If you are iterating on a fork PR, mark it **draft**, make the full round of changes, then click **Ready for review** and `@`-mention the docs lead to request **one** preview, not a fresh request after every small fix.
 </Note>
 
 ## Where to look when something's wrong

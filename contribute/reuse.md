@@ -12,8 +12,8 @@ language: en
 Content reuse is to use the same pieces of content in multiple places without copying. It works like this:
 
 1. Write a piece of content and save it in a common place.
-2. Embed this content in one or more locations **by reference**.
-3. Any changes to the content can be done in one place and the updates are automatically applied wherever that piece is used.
+1. Embed this content in one or more locations **by reference**.
+1. Any changes to the content can be done in one place and the updates are automatically applied wherever that piece is used.
 
 ## Benefits
 
@@ -75,7 +75,7 @@ Without a strategy, content reuse can quickly become confusing and frustrating.
 
 If people can't find the reusable topics and fragments, they'll rewrite it from scratch.
 
-It is a good practice to sign-post reusable content. For SuperOfficeDocs we use folders named *snippets*. Establishing a file naming convention doesn't hurt either — see the [Markdown guide's snippets section][2] for the naming conventions and folder structure already in use.
+It is a good practice to sign-post reusable content. For SuperOfficeDocs we use folders named *snippets*. Establishing a file naming convention doesn't hurt either: see the [Markdown guide's snippets section][2] for the naming conventions and folder structure already in use.
 
 There is a compromise between usability for contributors and optimization for hard-core authors. Just because you can extract it, doesn't mean you should. What you want to avoid is making your source so complex and cryptic that it requires specialized training to do something as trivial as fixing a typo. If people are overwhelmed, they stop contributing.
 
@@ -89,7 +89,7 @@ Minimize similar content. Instead of having 3 similar pages, either consolidate 
 
 **Fragments** should be placed in dedicated folders and formulated more generic than you'd normally would without reuse. For example, if you can reach a page in 3 different ways, it's better to say "Go to the **Sale** page" rather than stating a specific navigation path. The latter significantly reduces the reuse potential.
 
-**Dos:**
+**Do:**
 
 * Say the same thing, the same way, everywhere you say it.
 * Aim to make your topics stand alone without breaking the single responsibility principle.
@@ -97,7 +97,7 @@ Minimize similar content. Instead of having 3 similar pages, either consolidate 
 * Standardize terminology. Use consistent grammar and style.
 * Favor brevity and simplicity.
 
-**Don'ts:**
+**Don't:**
 
 * Don't Repeat Yourself (DRY): if you catch yourself thinking you've written something before, stop and look for reuse opportunities.
 * Avoid contextual phrases such as "in the previous section".
