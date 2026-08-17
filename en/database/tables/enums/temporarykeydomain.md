@@ -1,6 +1,7 @@
 ---
 uid: enum-temporarykeydomain
 title: Enum values for TemporaryKeyDomain
+sidebarTitle: "TemporaryKeyDomain"
 description: Lists the enum values for TemporaryKeyDomain.
 generated: true
 keywords: ['database enum']

@@ -1,6 +1,7 @@
 ---
 uid: enum-ttlflags
 title: Enum values for TtlFlags
+sidebarTitle: "TtlFlags"
 description: Lists the enum values for TtlFlags.
 generated: true
 keywords: ['database enum']

@@ -1,6 +1,7 @@
 ---
 uid: enum-ticketpriorityescalateevent
 title: Enum values for TicketPriorityEscalateEvent
+sidebarTitle: "TicketPriorityEscalateEvent"
 description: Lists the enum values for TicketPriorityEscalateEvent.
 generated: true
 keywords: ['database enum']

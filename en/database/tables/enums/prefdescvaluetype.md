@@ -1,6 +1,7 @@
 ---
 uid: enum-prefdescvaluetype
 title: Enum values for PrefDescValueType
+sidebarTitle: "PrefDescValueType"
 description: Lists the enum values for PrefDescValueType.
 generated: true
 keywords: ['database enum']

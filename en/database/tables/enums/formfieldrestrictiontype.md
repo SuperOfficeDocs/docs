@@ -1,6 +1,7 @@
 ---
 uid: enum-formfieldrestrictiontype
 title: Enum values for FormFieldRestrictionType
+sidebarTitle: "FormFieldRestrictionType"
 description: Lists the enum values for FormFieldRestrictionType.
 generated: true
 keywords: ['database enum']

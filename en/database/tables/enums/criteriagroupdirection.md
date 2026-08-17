@@ -1,6 +1,7 @@
 ---
 uid: enum-criteriagroupdirection
 title: Enum values for CriteriaGroupDirection
+sidebarTitle: "CriteriaGroupDirection"
 description: Lists the enum values for CriteriaGroupDirection.
 generated: true
 keywords: ['database enum']

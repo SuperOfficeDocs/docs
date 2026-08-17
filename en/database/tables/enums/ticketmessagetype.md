@@ -1,6 +1,7 @@
 ---
 uid: enum-ticketmessagetype
 title: Enum values for TicketMessageType
+sidebarTitle: "TicketMessageType"
 description: Lists the enum values for TicketMessageType.
 generated: true
 keywords: ['database enum']

@@ -1,6 +1,7 @@
 ---
 uid: enum-crmactortype
 title: Enum values for CrmActorType
+sidebarTitle: "CrmActorType"
 description: Lists the enum values for CrmActorType.
 generated: true
 keywords: ['database enum']

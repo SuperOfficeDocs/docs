@@ -1,6 +1,7 @@
 ---
 uid: enum-travelencryptionchild
 title: Enum values for TravelEncryptionChild
+sidebarTitle: "TravelEncryptionChild"
 description: Lists the enum values for TravelEncryptionChild.
 generated: true
 keywords: ['database enum']

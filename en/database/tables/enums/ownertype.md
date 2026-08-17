@@ -1,6 +1,7 @@
 ---
 uid: enum-ownertype
 title: Enum values for OwnerType
+sidebarTitle: "OwnerType"
 description: Lists the enum values for OwnerType.
 generated: true
 keywords: ['database enum']

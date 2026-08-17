@@ -1,6 +1,7 @@
 ---
 uid: enum-quotestatus
 title: Enum values for QuoteStatus
+sidebarTitle: "QuoteStatus"
 description: Lists the enum values for QuoteStatus.
 generated: true
 keywords: ['database enum']

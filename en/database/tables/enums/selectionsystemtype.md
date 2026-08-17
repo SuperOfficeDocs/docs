@@ -1,6 +1,7 @@
 ---
 uid: enum-selectionsystemtype
 title: Enum values for SelectionSystemType
+sidebarTitle: "SelectionSystemType"
 description: Lists the enum values for SelectionSystemType.
 generated: true
 keywords: ['database enum']

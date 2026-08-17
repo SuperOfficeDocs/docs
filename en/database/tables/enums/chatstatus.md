@@ -1,6 +1,7 @@
 ---
 uid: enum-chatstatus
 title: Enum values for ChatStatus
+sidebarTitle: "ChatStatus"
 description: Lists the enum values for ChatStatus.
 generated: true
 keywords: ['database enum']

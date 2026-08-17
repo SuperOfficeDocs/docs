@@ -1,6 +1,7 @@
 ---
 uid: enum-webhooknotifyvia
 title: Enum values for WebhookNotifyVia
+sidebarTitle: "WebhookNotifyVia"
 description: Lists the enum values for WebhookNotifyVia.
 generated: true
 keywords: ['database enum']

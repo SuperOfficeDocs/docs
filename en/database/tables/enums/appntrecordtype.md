@@ -1,6 +1,7 @@
 ---
 uid: enum-appntrecordtype
 title: Enum values for AppntRecordType
+sidebarTitle: "AppntRecordType"
 description: Lists the enum values for AppntRecordType.
 generated: true
 keywords: ['database enum']

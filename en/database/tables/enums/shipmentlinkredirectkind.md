@@ -1,6 +1,7 @@
 ---
 uid: enum-shipmentlinkredirectkind
 title: Enum values for ShipmentLinkRedirectKind
+sidebarTitle: "ShipmentLinkRedirectKind"
 description: Lists the enum values for ShipmentLinkRedirectKind.
 generated: true
 keywords: ['database enum']

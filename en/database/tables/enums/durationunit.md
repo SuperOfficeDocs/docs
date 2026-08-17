@@ -1,6 +1,7 @@
 ---
 uid: enum-durationunit
 title: Enum values for DurationUnit
+sidebarTitle: "DurationUnit"
 description: Lists the enum values for DurationUnit.
 generated: true
 keywords: ['database enum']

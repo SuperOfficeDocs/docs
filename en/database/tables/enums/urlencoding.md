@@ -1,6 +1,7 @@
 ---
 uid: enum-urlencoding
 title: Enum values for UrlEncoding
+sidebarTitle: "UrlEncoding"
 description: Lists the enum values for UrlEncoding.
 generated: true
 keywords: ['database enum']

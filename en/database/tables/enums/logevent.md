@@ -1,6 +1,7 @@
 ---
 uid: enum-logevent
 title: Enum values for LogEvent
+sidebarTitle: "LogEvent"
 description: Lists the enum values for LogEvent.
 generated: true
 keywords: ['database enum']

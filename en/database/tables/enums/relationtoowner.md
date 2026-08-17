@@ -1,6 +1,7 @@
 ---
 uid: enum-relationtoowner
 title: Enum values for RelationToOwner
+sidebarTitle: "RelationToOwner"
 description: Lists the enum values for RelationToOwner.
 generated: true
 keywords: ['database enum']

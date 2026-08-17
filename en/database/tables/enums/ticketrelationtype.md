@@ -1,6 +1,7 @@
 ---
 uid: enum-ticketrelationtype
 title: Enum values for TicketRelationType
+sidebarTitle: "TicketRelationType"
 description: Lists the enum values for TicketRelationType.
 generated: true
 keywords: ['database enum']

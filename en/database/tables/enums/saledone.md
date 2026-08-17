@@ -1,6 +1,7 @@
 ---
 uid: enum-saledone
 title: Enum values for SaleDone
+sidebarTitle: "SaleDone"
 description: Lists the enum values for SaleDone.
 generated: true
 keywords: ['database enum']

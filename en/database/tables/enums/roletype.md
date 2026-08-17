@@ -1,6 +1,7 @@
 ---
 uid: enum-roletype
 title: Enum values for RoleType
+sidebarTitle: "RoleType"
 description: Lists the enum values for RoleType.
 generated: true
 keywords: ['database enum']

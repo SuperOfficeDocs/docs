@@ -1,6 +1,7 @@
 ---
 uid: enum-trlogtranstype
 title: Enum values for TrlogTransType
+sidebarTitle: "TrlogTransType"
 description: Lists the enum values for TrlogTransType.
 generated: true
 keywords: ['database enum']

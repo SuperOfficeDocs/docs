@@ -1,6 +1,7 @@
 ---
 uid: enum-dashtileentitytype
 title: Enum values for DashTileEntityType
+sidebarTitle: "DashTileEntityType"
 description: Lists the enum values for DashTileEntityType.
 generated: true
 keywords: ['database enum']

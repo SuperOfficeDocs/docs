@@ -1,6 +1,7 @@
 ---
 uid: enum-freebusy
 title: Enum values for FreeBusy
+sidebarTitle: "FreeBusy"
 description: Lists the enum values for FreeBusy.
 generated: true
 keywords: ['database enum']

@@ -1,6 +1,7 @@
 ---
 uid: enum-officiallanguage
 title: Enum values for OfficialLanguage
+sidebarTitle: "OfficialLanguage"
 description: Lists the enum values for OfficialLanguage.
 generated: true
 keywords: ['database enum']

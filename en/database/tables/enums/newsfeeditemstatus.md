@@ -1,6 +1,7 @@
 ---
 uid: enum-newsfeeditemstatus
 title: Enum values for NewsFeedItemStatus
+sidebarTitle: "NewsFeedItemStatus"
 description: Lists the enum values for NewsFeedItemStatus.
 generated: true
 keywords: ['database enum']

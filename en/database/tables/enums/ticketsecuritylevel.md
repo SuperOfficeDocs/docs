@@ -1,6 +1,7 @@
 ---
 uid: enum-ticketsecuritylevel
 title: Enum values for TicketSecurityLevel
+sidebarTitle: "TicketSecurityLevel"
 description: Lists the enum values for TicketSecurityLevel.
 generated: true
 keywords: ['database enum']

@@ -1,6 +1,7 @@
 ---
 uid: enum-tasklistitemtype
 title: Enum values for TaskListItemType
+sidebarTitle: "TaskListItemType"
 description: Lists the enum values for TaskListItemType.
 generated: true
 keywords: ['database enum']

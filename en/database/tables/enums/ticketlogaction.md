@@ -1,6 +1,7 @@
 ---
 uid: enum-ticketlogaction
 title: Enum values for TicketLogAction
+sidebarTitle: "TicketLogAction"
 description: Lists the enum values for TicketLogAction.
 generated: true
 keywords: ['database enum']

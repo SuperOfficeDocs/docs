@@ -1,6 +1,7 @@
 ---
 uid: enum-fieldmetadatatype
 title: Enum values for FieldMetadataType
+sidebarTitle: "FieldMetadataType"
 description: Lists the enum values for FieldMetadataType.
 generated: true
 keywords: ['database enum']

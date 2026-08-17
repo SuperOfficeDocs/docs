@@ -1,6 +1,7 @@
 ---
 uid: enum-designtype
 title: Enum values for DesignType
+sidebarTitle: "DesignType"
 description: Lists the enum values for DesignType.
 generated: true
 keywords: ['database enum']

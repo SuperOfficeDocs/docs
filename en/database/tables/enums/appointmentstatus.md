@@ -1,6 +1,7 @@
 ---
 uid: enum-appointmentstatus
 title: Enum values for AppointmentStatus
+sidebarTitle: "AppointmentStatus"
 description: Lists the enum values for AppointmentStatus.
 generated: true
 keywords: ['database enum']

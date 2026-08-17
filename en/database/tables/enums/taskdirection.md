@@ -1,6 +1,7 @@
 ---
 uid: enum-taskdirection
 title: Enum values for TaskDirection
+sidebarTitle: "TaskDirection"
 description: Lists the enum values for TaskDirection.
 generated: true
 keywords: ['database enum']

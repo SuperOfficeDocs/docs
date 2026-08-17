@@ -1,6 +1,7 @@
 ---
 uid: enum-categoryupdatetrigger
 title: Enum values for CategoryUpdateTrigger
+sidebarTitle: "CategoryUpdateTrigger"
 description: Lists the enum values for CategoryUpdateTrigger.
 generated: true
 keywords: ['database enum']

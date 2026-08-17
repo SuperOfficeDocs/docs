@@ -1,6 +1,7 @@
 ---
 uid: enum-workflowwaitforactiontype
 title: Enum values for WorkflowWaitForActionType
+sidebarTitle: "WorkflowWaitForActionType"
 description: Lists the enum values for WorkflowWaitForActionType.
 generated: true
 keywords: ['database enum']

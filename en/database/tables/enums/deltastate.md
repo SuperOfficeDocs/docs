@@ -1,6 +1,7 @@
 ---
 uid: enum-deltastate
 title: Enum values for DeltaState
+sidebarTitle: "DeltaState"
 description: Lists the enum values for DeltaState.
 generated: true
 keywords: ['database enum']

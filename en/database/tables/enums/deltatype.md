@@ -1,6 +1,7 @@
 ---
 uid: enum-deltatype
 title: Enum values for DeltaType
+sidebarTitle: "DeltaType"
 description: Lists the enum values for DeltaType.
 generated: true
 keywords: ['database enum']

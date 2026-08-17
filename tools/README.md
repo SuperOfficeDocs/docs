@@ -43,6 +43,7 @@ Scripts that convert, generate, or verify content for this repo. Not published t
 | `sync-title-h1.py` | migration | Syncs frontmatter `title` from H1, removes redundant H1 | Not yet — rollout still in progress on 3 ADO-owned generator trees |
 | `update-docs-navigation.ps1` | migration | Replaces one non-English language's nav tabs array from a TOC-derived JSON | Occasionally — per-language nav rebuilds |
 | `update-rest-directories.ps1` | migration | Historical/one-off `docs.json` REST directory collapse | No — kept for reference only, see its own header |
+| `add-database-enum-sidebar-titles.py` | ci | Auto-fixes: adds `sidebarTitle` to `en/database/tables/enums/` pages, commits back to the PR | Yes |
 | `check-crmscript-drift.ps1` | ci | Regenerates CRMScript reference, fails the PR if it drifts from source | Yes |
 | `check-reserved-version-property.py` | ci | Warns (never fails) if a changed file reintroduces `version:` frontmatter | Yes |
 | `find-stale-generated-pages.py` | ci | Finds generated reference pages dropped from their tree's nav | Yes |

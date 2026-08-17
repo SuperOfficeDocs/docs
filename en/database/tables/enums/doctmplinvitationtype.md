@@ -1,6 +1,7 @@
 ---
 uid: enum-doctmplinvitationtype
 title: Enum values for DocTmplInvitationType
+sidebarTitle: "DocTmplInvitationType"
 description: Lists the enum values for DocTmplInvitationType.
 generated: true
 keywords: ['database enum']

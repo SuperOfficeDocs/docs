@@ -1,6 +1,7 @@
 ---
 uid: enum-criterionoperator
 title: Enum values for CriterionOperator
+sidebarTitle: "CriterionOperator"
 description: Lists the enum values for CriterionOperator.
 generated: true
 keywords: ['database enum']

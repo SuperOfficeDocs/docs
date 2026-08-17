@@ -1,6 +1,7 @@
 ---
 uid: enum-weekday
 title: Enum values for Weekday
+sidebarTitle: "Weekday"
 description: Lists the enum values for Weekday.
 generated: true
 keywords: ['database enum']

@@ -1,6 +1,7 @@
 ---
 uid: enum-showwindowstate
 title: Enum values for ShowWindowState
+sidebarTitle: "ShowWindowState"
 description: Lists the enum values for ShowWindowState.
 generated: true
 keywords: ['database enum']

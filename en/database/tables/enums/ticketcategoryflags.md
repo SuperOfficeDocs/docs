@@ -1,6 +1,7 @@
 ---
 uid: enum-ticketcategoryflags
 title: Enum values for TicketCategoryFlags
+sidebarTitle: "TicketCategoryFlags"
 description: Lists the enum values for TicketCategoryFlags.
 generated: true
 keywords: ['database enum']

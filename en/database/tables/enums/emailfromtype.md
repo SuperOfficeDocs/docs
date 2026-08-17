@@ -1,6 +1,7 @@
 ---
 uid: enum-emailfromtype
 title: Enum values for EmailFromType
+sidebarTitle: "EmailFromType"
 description: Lists the enum values for EmailFromType.
 generated: true
 keywords: ['database enum']

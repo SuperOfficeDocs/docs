@@ -1,6 +1,7 @@
 ---
 uid: enum-webhooknotifywhen
 title: Enum values for WebhookNotifyWhen
+sidebarTitle: "WebhookNotifyWhen"
 description: Lists the enum values for WebhookNotifyWhen.
 generated: true
 keywords: ['database enum']

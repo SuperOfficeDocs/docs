@@ -1,6 +1,7 @@
 ---
 uid: enum-bloblinktype
 title: Enum values for BlobLinkType
+sidebarTitle: "BlobLinkType"
 description: Lists the enum values for BlobLinkType.
 generated: true
 keywords: ['database enum']

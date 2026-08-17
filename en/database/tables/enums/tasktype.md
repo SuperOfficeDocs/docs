@@ -1,6 +1,7 @@
 ---
 uid: enum-tasktype
 title: Enum values for TaskType
+sidebarTitle: "TaskType"
 description: Lists the enum values for TaskType.
 generated: true
 keywords: ['database enum']

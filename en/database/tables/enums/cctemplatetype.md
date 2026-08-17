@@ -1,6 +1,7 @@
 ---
 uid: enum-cctemplatetype
 title: Enum values for CcTemplateType
+sidebarTitle: "CcTemplateType"
 description: Lists the enum values for CcTemplateType.
 generated: true
 keywords: ['database enum']

@@ -1,6 +1,7 @@
 ---
 uid: enum-boardviewentitytype
 title: Enum values for BoardViewEntityType
+sidebarTitle: "BoardViewEntityType"
 description: Lists the enum values for BoardViewEntityType.
 generated: true
 keywords: ['database enum']

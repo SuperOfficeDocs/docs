@@ -1,6 +1,7 @@
 ---
 uid: enum-formsubmissionstatus
 title: Enum values for FormSubmissionStatus
+sidebarTitle: "FormSubmissionStatus"
 description: Lists the enum values for FormSubmissionStatus.
 generated: true
 keywords: ['database enum']

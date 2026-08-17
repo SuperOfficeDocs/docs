@@ -1,6 +1,7 @@
 ---
 uid: enum-alldayevent
 title: Enum values for AllDayEvent
+sidebarTitle: "AllDayEvent"
 description: Lists the enum values for AllDayEvent.
 generated: true
 keywords: ['database enum']

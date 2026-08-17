@@ -1,6 +1,7 @@
 ---
 uid: enum-ctaflavor
 title: Enum values for CtaFlavor
+sidebarTitle: "CtaFlavor"
 description: Lists the enum values for CtaFlavor.
 generated: true
 keywords: ['database enum']

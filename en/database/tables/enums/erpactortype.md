@@ -1,6 +1,7 @@
 ---
 uid: enum-erpactortype
 title: Enum values for ErpActorType
+sidebarTitle: "ErpActorType"
 description: Lists the enum values for ErpActorType.
 generated: true
 keywords: ['database enum']

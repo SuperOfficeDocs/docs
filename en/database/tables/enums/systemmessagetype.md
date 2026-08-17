@@ -1,6 +1,7 @@
 ---
 uid: enum-systemmessagetype
 title: Enum values for SystemMessageType
+sidebarTitle: "SystemMessageType"
 description: Lists the enum values for SystemMessageType.
 generated: true
 keywords: ['database enum']

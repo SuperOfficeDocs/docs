@@ -1,6 +1,7 @@
 ---
 uid: enum-licensetype
 title: Enum values for LicenseType
+sidebarTitle: "LicenseType"
 description: Lists the enum values for LicenseType.
 generated: true
 keywords: ['database enum']

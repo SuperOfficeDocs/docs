@@ -1,6 +1,7 @@
 ---
 uid: enum-widgettheme
 title: Enum values for WidgetTheme
+sidebarTitle: "WidgetTheme"
 description: Lists the enum values for WidgetTheme.
 generated: true
 keywords: ['database enum']

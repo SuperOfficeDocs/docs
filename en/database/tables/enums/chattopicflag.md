@@ -1,6 +1,7 @@
 ---
 uid: enum-chattopicflag
 title: Enum values for ChatTopicFlag
+sidebarTitle: "ChatTopicFlag"
 description: Lists the enum values for ChatTopicFlag.
 generated: true
 keywords: ['database enum']

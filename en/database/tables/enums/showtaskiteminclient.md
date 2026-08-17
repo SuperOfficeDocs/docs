@@ -1,6 +1,7 @@
 ---
 uid: enum-showtaskiteminclient
 title: Enum values for ShowTaskItemInClient
+sidebarTitle: "ShowTaskItemInClient"
 description: Lists the enum values for ShowTaskItemInClient.
 generated: true
 keywords: ['database enum']

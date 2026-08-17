@@ -1,6 +1,7 @@
 ---
 uid: enum-refcountflags
 title: Enum values for RefcountFlags
+sidebarTitle: "RefcountFlags"
 description: Lists the enum values for RefcountFlags.
 generated: true
 keywords: ['database enum']

@@ -1,6 +1,7 @@
 ---
 uid: enum-appointmentcautionwarning
 title: Enum values for AppointmentCautionWarning
+sidebarTitle: "AppointmentCautionWarning"
 description: Lists the enum values for AppointmentCautionWarning.
 generated: true
 keywords: ['database enum']

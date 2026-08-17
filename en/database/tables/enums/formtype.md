@@ -1,6 +1,7 @@
 ---
 uid: enum-formtype
 title: Enum values for FormType
+sidebarTitle: "FormType"
 description: Lists the enum values for FormType.
 generated: true
 keywords: ['database enum']

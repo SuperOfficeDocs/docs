@@ -1,6 +1,7 @@
 ---
 uid: enum-configtype
 title: Enum values for ConfigType
+sidebarTitle: "ConfigType"
 description: Lists the enum values for ConfigType.
 generated: true
 keywords: ['database enum']

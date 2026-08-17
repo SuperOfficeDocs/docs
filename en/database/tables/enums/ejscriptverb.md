@@ -1,6 +1,7 @@
 ---
 uid: enum-ejscriptverb
 title: Enum values for EjScriptVerb
+sidebarTitle: "EjScriptVerb"
 description: Lists the enum values for EjScriptVerb.
 generated: true
 keywords: ['database enum']
