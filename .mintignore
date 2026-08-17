@@ -46,15 +46,15 @@ en/mobile/includes/icon-reference.md
 #!sv/**/index.mdx
 
 # Ignore database tables except index files
-en/database/tables/**
-!en/database/tables/index.mdx
+#en/database/tables/**
+#!en/database/tables/index.mdx
 
 # Ignore CRMScript reference
-en/automation/crmscript/reference/**
-!en/automation/crmscript/reference/index.mdx
+#en/automation/crmscript/reference/**
+#!en/automation/crmscript/reference/index.mdx
 
 # Ignore archive providers reference
-en/api/archive-providers/reference/**
+#en/api/archive-providers/reference/**
 
 # Ignore MDO providers reference
-en/api/mdo-providers/reference/**
+#en/api/mdo-providers/reference/**
