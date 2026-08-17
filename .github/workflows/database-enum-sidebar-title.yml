@@ -44,10 +44,14 @@ jobs:
 
       - name: Add missing sidebarTitle to changed enum pages
         if: steps.changed.outputs.any_changed == 'true'
-        run: python tools/ci/add-database-enum-sidebar-titles.py --apply ${{ steps.changed.outputs.all_changed_files }}
+        env:
+          CHANGED_FILES: ${{ steps.changed.outputs.all_changed_files }}
+        run: python tools/ci/add-database-enum-sidebar-titles.py --apply $CHANGED_FILES
 
       - name: Commit and push fix, if any
         if: steps.changed.outputs.any_changed == 'true'
+        env:
+          HEAD_REF: ${{ github.event.pull_request.head.ref }}
         run: |
           if git diff --quiet; then
             echo "No sidebarTitle changes needed."
@@ -57,4 +61,4 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add en/database/tables/enums
           git commit -m "Add sidebarTitle to database-reference enum pages (#260)"
-          git push origin HEAD:${{ github.event.pull_request.head.ref }}
+          git push origin "HEAD:$HEAD_REF"
