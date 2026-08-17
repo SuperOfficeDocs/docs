@@ -10718,5 +10718,9 @@
   {
     "source": "/learn-sv.html",
     "destination": "/learn-sv"
+  },
+  {
+    "source": "/en/automation/netserver-scripting/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/automation/netserver-scripting"
   }
 ]
