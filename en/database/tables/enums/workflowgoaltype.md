@@ -1,6 +1,7 @@
 ---
 uid: enum-workflowgoaltype
 title: Enum values for WorkflowGoalType
+sidebarTitle: "WorkflowGoalType"
 description: Lists the enum values for WorkflowGoalType.
 generated: true
 keywords: ['database enum']

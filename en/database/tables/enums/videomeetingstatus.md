@@ -1,6 +1,7 @@
 ---
 uid: enum-videomeetingstatus
 title: Enum values for VideoMeetingStatus
+sidebarTitle: "VideoMeetingStatus"
 description: Lists the enum values for VideoMeetingStatus.
 generated: true
 keywords: ['database enum']

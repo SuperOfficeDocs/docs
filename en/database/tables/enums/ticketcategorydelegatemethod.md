@@ -1,6 +1,7 @@
 ---
 uid: enum-ticketcategorydelegatemethod
 title: Enum values for TicketCategoryDelegateMethod
+sidebarTitle: "TicketCategoryDelegateMethod"
 description: Lists the enum values for TicketCategoryDelegateMethod.
 generated: true
 keywords: ['database enum']

@@ -1,6 +1,7 @@
 ---
 uid: enum-widgetrequiredfields
 title: Enum values for WidgetRequiredFields
+sidebarTitle: "WidgetRequiredFields"
 description: Lists the enum values for WidgetRequiredFields.
 generated: true
 keywords: ['database enum']

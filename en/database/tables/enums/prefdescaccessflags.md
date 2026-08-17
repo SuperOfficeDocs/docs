@@ -1,6 +1,7 @@
 ---
 uid: enum-prefdescaccessflags
 title: Enum values for PrefDescAccessFlags
+sidebarTitle: "PrefDescAccessFlags"
 description: Lists the enum values for PrefDescAccessFlags.
 generated: true
 keywords: ['database enum']

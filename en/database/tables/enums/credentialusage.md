@@ -1,6 +1,7 @@
 ---
 uid: enum-credentialusage
 title: Enum values for CredentialUsage
+sidebarTitle: "CredentialUsage"
 description: Lists the enum values for CredentialUsage.
 generated: true
 keywords: ['database enum']

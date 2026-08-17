@@ -1,6 +1,7 @@
 ---
 uid: enum-addresstype
 title: Enum values for AddressType
+sidebarTitle: "AddressType"
 description: Lists the enum values for AddressType.
 generated: true
 keywords: ['database enum']
@@ -24,3 +25,4 @@ Bit mask, combines address type (EAddressType) and owner type (EOwnerType)
 ## Usage
 
 * [address](../address).atype_idx - Contact and Person addresses
+

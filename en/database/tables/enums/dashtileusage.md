@@ -1,6 +1,7 @@
 ---
 uid: enum-dashtileusage
 title: Enum values for DashTileUsage
+sidebarTitle: "DashTileUsage"
 description: Lists the enum values for DashTileUsage.
 generated: true
 keywords: ['database enum']

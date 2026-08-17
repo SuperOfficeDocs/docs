@@ -1,6 +1,7 @@
 ---
 uid: enum-badgetype
 title: Enum values for BadgeType
+sidebarTitle: "BadgeType"
 description: Lists the enum values for BadgeType.
 generated: true
 keywords: ['database enum']

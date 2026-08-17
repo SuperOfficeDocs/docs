@@ -1,6 +1,7 @@
 ---
 uid: enum-associatetype
 title: Enum values for AssociateType
+sidebarTitle: "AssociateType"
 description: Lists the enum values for AssociateType.
 generated: true
 keywords: ['database enum']

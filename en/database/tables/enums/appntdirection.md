@@ -1,6 +1,7 @@
 ---
 uid: enum-appntdirection
 title: Enum values for AppntDirection
+sidebarTitle: "AppntDirection"
 description: Lists the enum values for AppntDirection.
 generated: true
 keywords: ['database enum']

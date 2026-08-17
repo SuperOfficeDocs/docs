@@ -1,6 +1,7 @@
 ---
 uid: enum-shipmentlinktype
 title: Enum values for ShipmentLinkType
+sidebarTitle: "ShipmentLinkType"
 description: Lists the enum values for ShipmentLinkType.
 generated: true
 keywords: ['database enum']

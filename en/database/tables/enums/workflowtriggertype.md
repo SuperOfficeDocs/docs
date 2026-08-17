@@ -1,6 +1,7 @@
 ---
 uid: enum-workflowtriggertype
 title: Enum values for WorkflowTriggerType
+sidebarTitle: "WorkflowTriggerType"
 description: Lists the enum values for WorkflowTriggerType.
 generated: true
 keywords: ['database enum']

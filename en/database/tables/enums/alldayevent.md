@@ -1,6 +1,7 @@
 ---
 uid: enum-alldayevent
 title: Enum values for AllDayEvent
+sidebarTitle: "AllDayEvent"
 description: Lists the enum values for AllDayEvent.
 generated: true
 keywords: ['database enum']
@@ -21,3 +22,4 @@ Default value for alldayEvent flag
 
 * [appointment](../appointment).alldayEvent - Tasks, appointments, followups, phone calls; and documents (document_id != 0). An appointment always has a corresponding record in VisibleFor specifying who may see this.
 * [Task](../task).defaultAlldayEvent - Task list table, activity types, like Phone, Meeting
+

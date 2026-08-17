@@ -1,6 +1,7 @@
 ---
 uid: enum-targetentitytype
 title: Enum values for TargetEntityType
+sidebarTitle: "TargetEntityType"
 description: Lists the enum values for TargetEntityType.
 generated: true
 keywords: ['database enum']

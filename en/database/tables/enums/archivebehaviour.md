@@ -1,6 +1,7 @@
 ---
 uid: enum-archivebehaviour
 title: Enum values for ArchiveBehaviour
+sidebarTitle: "ArchiveBehaviour"
 description: Lists the enum values for ArchiveBehaviour.
 generated: true
 keywords: ['database enum']

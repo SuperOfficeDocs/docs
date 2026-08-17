@@ -1,6 +1,7 @@
 ---
 uid: enum-preferencelevel
 title: Enum values for PreferenceLevel
+sidebarTitle: "PreferenceLevel"
 description: Lists the enum values for PreferenceLevel.
 generated: true
 keywords: ['database enum']

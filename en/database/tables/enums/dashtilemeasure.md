@@ -1,6 +1,7 @@
 ---
 uid: enum-dashtilemeasure
 title: Enum values for DashTileMeasure
+sidebarTitle: "DashTileMeasure"
 description: Lists the enum values for DashTileMeasure.
 generated: true
 keywords: ['database enum']

@@ -1,6 +1,7 @@
 ---
 uid: enum-timekeepingtype
 title: Enum values for TimeKeepingType
+sidebarTitle: "TimeKeepingType"
 description: Lists the enum values for TimeKeepingType.
 generated: true
 keywords: ['database enum']

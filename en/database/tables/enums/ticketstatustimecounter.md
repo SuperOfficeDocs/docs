@@ -1,6 +1,7 @@
 ---
 uid: enum-ticketstatustimecounter
 title: Enum values for TicketStatusTimeCounter
+sidebarTitle: "TicketStatusTimeCounter"
 description: Lists the enum values for TicketStatusTimeCounter.
 generated: true
 keywords: ['database enum']

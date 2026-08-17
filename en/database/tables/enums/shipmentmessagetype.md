@@ -1,6 +1,7 @@
 ---
 uid: enum-shipmentmessagetype
 title: Enum values for ShipmentMessageType
+sidebarTitle: "ShipmentMessageType"
 description: Lists the enum values for ShipmentMessageType.
 generated: true
 keywords: ['database enum']

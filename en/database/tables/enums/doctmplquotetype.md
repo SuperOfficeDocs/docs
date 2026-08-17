@@ -1,6 +1,7 @@
 ---
 uid: enum-doctmplquotetype
 title: Enum values for DocTmplQuoteType
+sidebarTitle: "DocTmplQuoteType"
 description: Lists the enum values for DocTmplQuoteType.
 generated: true
 keywords: ['database enum']

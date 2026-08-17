@@ -1,6 +1,7 @@
 ---
 uid: enum-targetmeasurementunit
 title: Enum values for TargetMeasurementUnit
+sidebarTitle: "TargetMeasurementUnit"
 description: Lists the enum values for TargetMeasurementUnit.
 generated: true
 keywords: ['database enum']

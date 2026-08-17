@@ -1,6 +1,7 @@
 ---
 uid: enum-sendermailmode
 title: Enum values for SenderMailMode
+sidebarTitle: "SenderMailMode"
 description: Lists the enum values for SenderMailMode.
 generated: true
 keywords: ['database enum']

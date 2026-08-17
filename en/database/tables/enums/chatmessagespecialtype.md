@@ -1,6 +1,7 @@
 ---
 uid: enum-chatmessagespecialtype
 title: Enum values for ChatMessageSpecialType
+sidebarTitle: "ChatMessageSpecialType"
 description: Lists the enum values for ChatMessageSpecialType.
 generated: true
 keywords: ['database enum']

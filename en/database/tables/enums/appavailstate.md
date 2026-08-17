@@ -1,6 +1,7 @@
 ---
 uid: enum-appavailstate
 title: Enum values for AppAvailState
+sidebarTitle: "AppAvailState"
 description: Lists the enum values for AppAvailState.
 generated: true
 keywords: ['database enum']

@@ -1,6 +1,7 @@
 ---
 uid: enum-elementstatus
 title: Enum values for ElementStatus
+sidebarTitle: "ElementStatus"
 description: Lists the enum values for ElementStatus.
 generated: true
 keywords: ['database enum']

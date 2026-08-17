@@ -1,6 +1,7 @@
 ---
 uid: enum-appointmentprivate
 title: Enum values for AppointmentPrivate
+sidebarTitle: "AppointmentPrivate"
 description: Lists the enum values for AppointmentPrivate.
 generated: true
 keywords: ['database enum']

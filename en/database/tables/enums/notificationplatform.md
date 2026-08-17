@@ -1,6 +1,7 @@
 ---
 uid: enum-notificationplatform
 title: Enum values for NotificationPlatform
+sidebarTitle: "NotificationPlatform"
 description: Lists the enum values for NotificationPlatform.
 generated: true
 keywords: ['database enum']

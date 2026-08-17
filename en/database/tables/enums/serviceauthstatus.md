@@ -1,6 +1,7 @@
 ---
 uid: enum-serviceauthstatus
 title: Enum values for ServiceAuthStatus
+sidebarTitle: "ServiceAuthStatus"
 description: Lists the enum values for ServiceAuthStatus.
 generated: true
 keywords: ['database enum']

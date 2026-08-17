@@ -1,6 +1,7 @@
 ---
 uid: enum-modifiedappointmentfields
 title: Enum values for ModifiedAppointmentFields
+sidebarTitle: "ModifiedAppointmentFields"
 description: Lists the enum values for ModifiedAppointmentFields.
 generated: true
 keywords: ['database enum']

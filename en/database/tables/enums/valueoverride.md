@@ -1,6 +1,7 @@
 ---
 uid: enum-valueoverride
 title: Enum values for ValueOverride
+sidebarTitle: "ValueOverride"
 description: Lists the enum values for ValueOverride.
 generated: true
 keywords: ['database enum']

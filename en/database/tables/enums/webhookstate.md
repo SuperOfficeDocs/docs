@@ -1,6 +1,7 @@
 ---
 uid: enum-webhookstate
 title: Enum values for WebhookState
+sidebarTitle: "WebhookState"
 description: Lists the enum values for WebhookState.
 generated: true
 keywords: ['database enum']

@@ -1,6 +1,7 @@
 ---
 uid: enum-functionrighttype
 title: Enum values for FunctionRightType
+sidebarTitle: "FunctionRightType"
 description: Lists the enum values for FunctionRightType.
 generated: true
 keywords: ['database enum']

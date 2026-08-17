@@ -1,6 +1,7 @@
 ---
 uid: enum-emailflags
 title: Enum values for EMailFlags
+sidebarTitle: "EMailFlags"
 description: Lists the enum values for EMailFlags.
 generated: true
 keywords: ['database enum']

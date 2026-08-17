@@ -1,6 +1,7 @@
 ---
 uid: enum-ticketreadstatus
 title: Enum values for TicketReadStatus
+sidebarTitle: "TicketReadStatus"
 description: Lists the enum values for TicketReadStatus.
 generated: true
 keywords: ['database enum']

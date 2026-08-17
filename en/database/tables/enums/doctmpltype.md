@@ -1,6 +1,7 @@
 ---
 uid: enum-doctmpltype
 title: Enum values for DocTmplType
+sidebarTitle: "DocTmplType"
 description: Lists the enum values for DocTmplType.
 generated: true
 keywords: ['database enum']

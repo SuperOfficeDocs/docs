@@ -1,6 +1,7 @@
 ---
 uid: enum-udefjustification
 title: Enum values for UdefJustification
+sidebarTitle: "UdefJustification"
 description: Lists the enum values for UdefJustification.
 generated: true
 keywords: ['database enum']

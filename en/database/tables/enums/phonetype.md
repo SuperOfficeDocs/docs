@@ -1,6 +1,7 @@
 ---
 uid: enum-phonetype
 title: Enum values for PhoneType
+sidebarTitle: "PhoneType"
 description: Lists the enum values for PhoneType.
 generated: true
 keywords: ['database enum']

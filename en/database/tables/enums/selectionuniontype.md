@@ -1,6 +1,7 @@
 ---
 uid: enum-selectionuniontype
 title: Enum values for SelectionUnionType
+sidebarTitle: "SelectionUnionType"
 description: Lists the enum values for SelectionUnionType.
 generated: true
 keywords: ['database enum']

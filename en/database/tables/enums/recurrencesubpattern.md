@@ -1,6 +1,7 @@
 ---
 uid: enum-recurrencesubpattern
 title: Enum values for RecurrenceSubPattern
+sidebarTitle: "RecurrenceSubPattern"
 description: Lists the enum values for RecurrenceSubPattern.
 generated: true
 keywords: ['database enum']

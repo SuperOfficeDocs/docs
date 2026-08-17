@@ -1,6 +1,7 @@
 ---
 uid: enum-scripttype
 title: Enum values for ScriptType
+sidebarTitle: "ScriptType"
 description: Lists the enum values for ScriptType.
 generated: true
 keywords: ['database enum']

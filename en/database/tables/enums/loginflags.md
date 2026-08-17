@@ -1,6 +1,7 @@
 ---
 uid: enum-loginflags
 title: Enum values for LoginFlags
+sidebarTitle: "LoginFlags"
 description: Lists the enum values for LoginFlags.
 generated: true
 keywords: ['database enum']

@@ -1,6 +1,7 @@
 ---
 uid: enum-publishtype
 title: Enum values for PublishType
+sidebarTitle: "PublishType"
 description: Lists the enum values for PublishType.
 generated: true
 keywords: ['database enum']

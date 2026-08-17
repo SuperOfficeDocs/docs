@@ -1,6 +1,7 @@
 ---
 uid: enum-apptype
 title: Enum values for AppType
+sidebarTitle: "AppType"
 description: Lists the enum values for AppType.
 generated: true
 keywords: ['database enum']

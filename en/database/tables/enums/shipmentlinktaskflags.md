@@ -1,6 +1,7 @@
 ---
 uid: enum-shipmentlinktaskflags
 title: Enum values for ShipmentLinkTaskFlags
+sidebarTitle: "ShipmentLinkTaskFlags"
 description: Lists the enum values for ShipmentLinkTaskFlags.
 generated: true
 keywords: ['database enum']

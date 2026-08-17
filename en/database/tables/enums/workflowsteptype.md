@@ -1,6 +1,7 @@
 ---
 uid: enum-workflowsteptype
 title: Enum values for WorkflowStepType
+sidebarTitle: "WorkflowStepType"
 description: Lists the enum values for WorkflowStepType.
 generated: true
 keywords: ['database enum']

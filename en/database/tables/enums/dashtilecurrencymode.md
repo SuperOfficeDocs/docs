@@ -1,6 +1,7 @@
 ---
 uid: enum-dashtilecurrencymode
 title: Enum values for DashTileCurrencyMode
+sidebarTitle: "DashTileCurrencyMode"
 description: Lists the enum values for DashTileCurrencyMode.
 generated: true
 keywords: ['database enum']

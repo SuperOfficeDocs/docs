@@ -1,6 +1,7 @@
 ---
 uid: enum-quoteversionstate
 title: Enum values for QuoteVersionState
+sidebarTitle: "QuoteVersionState"
 description: Lists the enum values for QuoteVersionState.
 generated: true
 keywords: ['database enum']

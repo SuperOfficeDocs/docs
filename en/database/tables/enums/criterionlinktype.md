@@ -1,6 +1,7 @@
 ---
 uid: enum-criterionlinktype
 title: Enum values for CriterionLinkType
+sidebarTitle: "CriterionLinkType"
 description: Lists the enum values for CriterionLinkType.
 generated: true
 keywords: ['database enum']

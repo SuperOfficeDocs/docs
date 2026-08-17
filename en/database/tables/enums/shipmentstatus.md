@@ -1,6 +1,7 @@
 ---
 uid: enum-shipmentstatus
 title: Enum values for ShipmentStatus
+sidebarTitle: "ShipmentStatus"
 description: Lists the enum values for ShipmentStatus.
 generated: true
 keywords: ['database enum']

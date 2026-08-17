@@ -1,6 +1,7 @@
 ---
 uid: enum-ticketorigin
 title: Enum values for TicketOrigin
+sidebarTitle: "TicketOrigin"
 description: Lists the enum values for TicketOrigin.
 generated: true
 keywords: ['database enum']

@@ -1,6 +1,7 @@
 ---
 uid: enum-projectmembereventparticipantstatus
 title: Enum values for ProjectMemberEventParticipantStatus
+sidebarTitle: "ProjectMemberEventParticipantStatus"
 description: Lists the enum values for ProjectMemberEventParticipantStatus.
 generated: true
 keywords: ['database enum']

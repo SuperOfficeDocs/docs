@@ -1,6 +1,7 @@
 ---
 uid: enum-fieldaccess
 title: Enum values for FieldAccess
+sidebarTitle: "FieldAccess"
 description: Lists the enum values for FieldAccess.
 generated: true
 keywords: ['database enum']

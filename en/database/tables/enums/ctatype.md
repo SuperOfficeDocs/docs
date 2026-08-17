@@ -1,6 +1,7 @@
 ---
 uid: enum-ctatype
 title: Enum values for CtaType
+sidebarTitle: "CtaType"
 description: Lists the enum values for CtaType.
 generated: true
 keywords: ['database enum']

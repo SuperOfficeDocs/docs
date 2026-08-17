@@ -1,6 +1,7 @@
 ---
 uid: enum-navigation
 title: Enum values for Navigation
+sidebarTitle: "Navigation"
 description: Lists the enum values for Navigation.
 generated: true
 keywords: ['database enum']

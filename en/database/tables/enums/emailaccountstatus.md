@@ -1,6 +1,7 @@
 ---
 uid: enum-emailaccountstatus
 title: Enum values for EmailAccountStatus
+sidebarTitle: "EmailAccountStatus"
 description: Lists the enum values for EmailAccountStatus.
 generated: true
 keywords: ['database enum']

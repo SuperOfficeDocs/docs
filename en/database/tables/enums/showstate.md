@@ -1,6 +1,7 @@
 ---
 uid: enum-showstate
 title: Enum values for ShowState
+sidebarTitle: "ShowState"
 description: Lists the enum values for ShowState.
 generated: true
 keywords: ['database enum']

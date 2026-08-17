@@ -1,6 +1,7 @@
 ---
 uid: enum-targetperiodtype
 title: Enum values for TargetPeriodType
+sidebarTitle: "TargetPeriodType"
 description: Lists the enum values for TargetPeriodType.
 generated: true
 keywords: ['database enum']

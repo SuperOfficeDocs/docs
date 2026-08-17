@@ -1,6 +1,7 @@
 ---
 uid: enum-recurrencepattern
 title: Enum values for RecurrencePattern
+sidebarTitle: "RecurrencePattern"
 description: Lists the enum values for RecurrencePattern.
 generated: true
 keywords: ['database enum']

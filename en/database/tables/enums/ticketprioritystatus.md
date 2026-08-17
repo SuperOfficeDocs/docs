@@ -1,6 +1,7 @@
 ---
 uid: enum-ticketprioritystatus
 title: Enum values for TicketPriorityStatus
+sidebarTitle: "TicketPriorityStatus"
 description: Lists the enum values for TicketPriorityStatus.
 generated: true
 keywords: ['database enum']

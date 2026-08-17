@@ -1,6 +1,7 @@
 ---
 uid: enum-travelencryptionown
 title: Enum values for TravelEncryptionOwn
+sidebarTitle: "TravelEncryptionOwn"
 description: Lists the enum values for TravelEncryptionOwn.
 generated: true
 keywords: ['database enum']

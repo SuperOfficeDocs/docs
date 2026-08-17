@@ -1,6 +1,7 @@
 ---
 uid: enum-meteringeventtype
 title: Enum values for MeteringEventType
+sidebarTitle: "MeteringEventType"
 description: Lists the enum values for MeteringEventType.
 generated: true
 keywords: ['database enum']

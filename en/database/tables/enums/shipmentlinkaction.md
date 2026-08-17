@@ -1,6 +1,7 @@
 ---
 uid: enum-shipmentlinkaction
 title: Enum values for ShipmentLinkAction
+sidebarTitle: "ShipmentLinkAction"
 description: Lists the enum values for ShipmentLinkAction.
 generated: true
 keywords: ['database enum']

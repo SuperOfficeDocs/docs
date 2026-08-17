@@ -1,6 +1,7 @@
 ---
 uid: enum-copilotdatasourcetype
 title: Enum values for CopilotDataSourceType
+sidebarTitle: "CopilotDataSourceType"
 description: Lists the enum values for CopilotDataSourceType.
 generated: true
 keywords: ['database enum']

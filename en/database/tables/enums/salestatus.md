@@ -1,6 +1,7 @@
 ---
 uid: enum-salestatus
 title: Enum values for SaleStatus
+sidebarTitle: "SaleStatus"
 description: Lists the enum values for SaleStatus.
 generated: true
 keywords: ['database enum']

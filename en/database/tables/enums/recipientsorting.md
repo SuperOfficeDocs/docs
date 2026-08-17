@@ -1,6 +1,7 @@
 ---
 uid: enum-recipientsorting
 title: Enum values for RecipientSorting
+sidebarTitle: "RecipientSorting"
 description: Lists the enum values for RecipientSorting.
 generated: true
 keywords: ['database enum']

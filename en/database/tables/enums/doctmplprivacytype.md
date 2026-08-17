@@ -1,6 +1,7 @@
 ---
 uid: enum-doctmplprivacytype
 title: Enum values for DocTmplPrivacyType
+sidebarTitle: "DocTmplPrivacyType"
 description: Lists the enum values for DocTmplPrivacyType.
 generated: true
 keywords: ['database enum']

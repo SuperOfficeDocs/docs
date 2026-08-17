@@ -1,6 +1,7 @@
 ---
 uid: enum-appointmenttype
 title: Enum values for AppointmentType
+sidebarTitle: "AppointmentType"
 description: Lists the enum values for AppointmentType.
 generated: true
 keywords: ['database enum']

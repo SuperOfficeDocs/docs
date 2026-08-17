@@ -1,6 +1,7 @@
 ---
 uid: enum-externalowner
 title: Enum values for ExternalOwner
+sidebarTitle: "ExternalOwner"
 description: Lists the enum values for ExternalOwner.
 generated: true
 keywords: ['database enum']

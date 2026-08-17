@@ -1,6 +1,7 @@
 ---
 uid: enum-emailpriority
 title: Enum values for EMailPriority
+sidebarTitle: "EMailPriority"
 description: Lists the enum values for EMailPriority.
 generated: true
 keywords: ['database enum']

@@ -1,6 +1,7 @@
 ---
 uid: enum-persongender
 title: Enum values for PersonGender
+sidebarTitle: "PersonGender"
 description: Lists the enum values for PersonGender.
 generated: true
 keywords: ['database enum']

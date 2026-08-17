@@ -1,6 +1,7 @@
 ---
 uid: enum-targetassignementlevel
 title: Enum values for TargetAssignementLevel
+sidebarTitle: "TargetAssignementLevel"
 description: Lists the enum values for TargetAssignementLevel.
 generated: true
 keywords: ['database enum']

@@ -1,6 +1,7 @@
 ---
 uid: enum-appointmentexternalowner
 title: Enum values for AppointmentExternalOwner
+sidebarTitle: "AppointmentExternalOwner"
 description: Lists the enum values for AppointmentExternalOwner.
 generated: true
 keywords: ['database enum']

@@ -1,6 +1,7 @@
 ---
 uid: enum-workflowinstancestatus
 title: Enum values for WorkflowInstanceStatus
+sidebarTitle: "WorkflowInstanceStatus"
 description: Lists the enum values for WorkflowInstanceStatus.
 generated: true
 keywords: ['database enum']

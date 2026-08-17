@@ -1,6 +1,7 @@
 ---
 uid: enum-categorygroup
 title: Enum values for CategoryGroup
+sidebarTitle: "CategoryGroup"
 description: Lists the enum values for CategoryGroup.
 generated: true
 keywords: ['database enum']

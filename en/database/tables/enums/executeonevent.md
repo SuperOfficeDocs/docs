@@ -1,6 +1,7 @@
 ---
 uid: enum-executeonevent
 title: Enum values for ExecuteOnEvent
+sidebarTitle: "ExecuteOnEvent"
 description: Lists the enum values for ExecuteOnEvent.
 generated: true
 keywords: ['database enum']
