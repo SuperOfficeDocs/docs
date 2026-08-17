@@ -510,14 +510,6 @@
                 ]
               },
               {
-                "group": "NetServer Script Engine",
-                "pages": [
-                  "en/automation/netserver-scripting/configure",
-                  "en/automation/netserver-scripting/basic-scripting",
-                  "en/automation/netserver-scripting/run-scripts"
-                ]
-              },
-              {
                 "group": "Trigger",
                 "pages": [
                   "en/automation/trigger/create-trigger-macro",
