@@ -1,0 +1,60 @@
+name: MDO-provider sidebarTitle auto-fix
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'en/api/mdo-providers/reference/**'
+
+# Automatically cancel in-progress runs on the same branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  add-sidebar-title:
+    name: "Add sidebarTitle to changed MDO-provider pages"
+    runs-on: ubuntu-latest
+    # A fork PR's default token can't push back to the fork - skip cleanly
+    # rather than fail loudly. Same-repo branches (the normal case for this
+    # ADO-pipeline-generated tree) proceed as usual.
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    steps:
+      - name: Checkout PR head
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+
+      - name: Get changed files
+        id: changed
+        uses: tj-actions/changed-files@v45
+        with:
+          files: |
+            en/api/mdo-providers/reference/**/*.md
+
+      - name: Set up Python
+        if: steps.changed.outputs.any_changed == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Add missing sidebarTitle to changed MDO-provider pages
+        if: steps.changed.outputs.any_changed == 'true'
+        run: python tools/ci/add-mdo-provider-sidebar-titles.py --apply ${{ steps.changed.outputs.all_changed_files }}
+
+      - name: Commit and push fix, if any
+        if: steps.changed.outputs.any_changed == 'true'
+        run: |
+          if git diff --quiet; then
+            echo "No sidebarTitle changes needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add en/api/mdo-providers/reference
+          git commit -m "Add sidebarTitle to MDO-provider pages (#261)"
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}

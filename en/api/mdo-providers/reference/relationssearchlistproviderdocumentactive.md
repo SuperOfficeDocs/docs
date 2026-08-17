@@ -1,6 +1,7 @@
 ---
 uid: relationssearchlistproviderdocumentactive
 title: relationssearchlistproviderdocumentactive
+sidebarTitle: "Document Active"
 keywords: ['mdoprovider mdo provider relationssearchlistproviderdocumentactive']
 description: Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).
 generated: true
