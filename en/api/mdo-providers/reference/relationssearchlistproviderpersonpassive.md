@@ -1,6 +1,7 @@
 ---
 uid: relationssearchlistproviderpersonpassive
-title: relationssearchlistproviderpersonpassive
+title: RelationsSearchListProviderPersonPassive
+sidebarTitle: "Person Passive"
 keywords: ['mdoprovider mdo provider relationssearchlistproviderpersonpassive']
 description: Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).
 generated: true

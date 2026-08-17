@@ -1,6 +1,7 @@
 ---
 uid: relationssearchlistprovidercontactcontactactive
-title: relationssearchlistprovidercontactcontactactive
+title: RelationsSearchListProviderContactContactActive
+sidebarTitle: "Contact Contact Active"
 keywords: ['mdoprovider mdo provider relationssearchlistprovidercontactcontactactive']
 description: Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).
 generated: true
@@ -59,3 +60,4 @@ foreach (var item in listProvider.RootItems) {
 * "relationssearchlistprovidercontactcontactactivewithallitem"
 * "relationssearchlistprovidercontactcontactactivewithallitemwithnoselection"
 * "relationssearchlistprovidercontactcontactactivewithnoselection"
+

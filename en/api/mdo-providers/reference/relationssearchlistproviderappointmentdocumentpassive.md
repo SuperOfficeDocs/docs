@@ -1,6 +1,7 @@
 ---
 uid: relationssearchlistproviderappointmentdocumentpassive
-title: relationssearchlistproviderappointmentdocumentpassive
+title: RelationsSearchListProviderAppointmentDocumentPassive
+sidebarTitle: "Appointment Document Passive"
 keywords: ['mdoprovider mdo provider relationssearchlistproviderappointmentdocumentpassive']
 description: Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).
 generated: true
