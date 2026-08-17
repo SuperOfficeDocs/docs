@@ -1,6 +1,7 @@
 ---
 uid: enum-addresstype
 title: Enum values for AddressType
+sidebarTitle: "AddressType"
 description: Lists the enum values for AddressType.
 generated: true
 keywords: ['database enum']
