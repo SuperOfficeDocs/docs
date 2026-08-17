@@ -24,3 +24,4 @@ Bit mask, combines address type (EAddressType) and owner type (EOwnerType)
 ## Usage
 
 * [address](../address).atype_idx - Contact and Person addresses
+
