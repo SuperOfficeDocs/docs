@@ -1,6 +1,6 @@
 ---
 uid: relationssearchlistprovidercontactpersonactive
-title: relationssearchlistprovidercontactpersonactive
+title: RelationsSearchListProviderContactPersonActive
 sidebarTitle: "Contact Person Active"
 keywords: ['mdoprovider mdo provider relationssearchlistprovidercontactpersonactive']
 description: Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).

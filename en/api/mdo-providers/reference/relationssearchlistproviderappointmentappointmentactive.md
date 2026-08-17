@@ -1,6 +1,6 @@
 ---
 uid: relationssearchlistproviderappointmentappointmentactive
-title: relationssearchlistproviderappointmentappointmentactive
+title: RelationsSearchListProviderAppointmentAppointmentActive
 sidebarTitle: "Appointment Appointment Active"
 keywords: ['mdoprovider mdo provider relationssearchlistproviderappointmentappointmentactive']
 description: Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).
