@@ -10738,5 +10738,41 @@
   {
     "source": "/en/api/tutorials/*",
     "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/tutorials"
+  },
+  {
+    "source": "/en/api/archive-providers/architecture",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/archive-providers/architecture.md"
+  },
+  {
+    "source": "/en/api/archive-providers/interfaces",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/archive-providers/interfaces.md"
+  },
+  {
+    "source": "/en/api/archive-providers/data-classes",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/archive-providers/data-classes.md"
+  },
+  {
+    "source": "/en/api/archive-providers/scenarios",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/archive-providers/scenarios.md"
+  },
+  {
+    "source": "/en/api/archive-providers/metadata",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/archive-providers/metadata.md"
+  },
+  {
+    "source": "/en/api/archive-providers/providers",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/archive-providers/providers.md"
+  },
+  {
+    "source": "/en/api/archive-providers/extenders",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/archive-providers/extenders.md"
+  },
+  {
+    "source": "/en/api/archive-providers/joiners",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/archive-providers/joiners.md"
+  },
+  {
+    "source": "/en/api/archive-providers/base-and-helper-classes",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/archive-providers/base-and-helper-classes.md"
   }
 ]

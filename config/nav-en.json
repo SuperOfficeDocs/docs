@@ -1081,19 +1081,6 @@
                 ]
               },
               {
-                "group": "Archive provider architecture",
-                "pages": [
-                  "en/api/archive-providers/interfaces",
-                  "en/api/archive-providers/data-classes",
-                  "en/api/archive-providers/scenarios",
-                  "en/api/archive-providers/metadata",
-                  "en/api/archive-providers/providers",
-                  "en/api/archive-providers/extenders",
-                  "en/api/archive-providers/joiners",
-                  "en/api/archive-providers/base-and-helper-classes"
-                ]
-              },
-              {
                 "group": "ArchiveAgent samples",
                 "pages": [
                   "en/api/archive-providers/howto/diary/invitation-archive"
