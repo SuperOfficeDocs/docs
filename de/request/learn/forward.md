@@ -62,7 +62,7 @@ Sie können eine komplexe oder problematische Anfrage per E-Mail an eine externe
 * [Mitteilung bearbeiten][4]
 
 [1]: ./index#open
-[2]: ./create#message
+[2]: ./create#fields
 [3]: ./reply
 [4]: ./edit-message
 
