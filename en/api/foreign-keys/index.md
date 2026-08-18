@@ -3,7 +3,7 @@ title: Foreign keys
 uid: foreign_keys
 description: Foreign keys
 author: SuperOffice Product and Engineering
-date: 06.24.2016
+date: 08.18.2026
 content_type: concept
 redirect_from: /en/api/netserver/foreign-keys/index
 ---

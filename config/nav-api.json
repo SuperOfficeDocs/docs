@@ -1,32 +1,13 @@
 [
-  {
-    "group": "SuperOffice APIs",
-    "pages": [
-      "en/api/overview/index"
-    ]
-  },
-  {
-    "group": "Develop Apps or Integrations",
-    "pages": [
-      "en/api/overview/develop-apps-or-integrations"
-    ]
-  },
-  {
-    "group": "NetServer fundamentals",
-    "pages": [
-      "en/api/overview/netserver"
-    ]
-  },
-  {
-    "group": "Quick-start",
-    "pages": [
-      "en/api/overview/quickstart"
-    ]
-  },
+  "en/api/overview/index",
+  "en/api/overview/develop-apps-or-integrations",
+  "en/api/overview/netserver",
+  "en/api/overview/quickstart",
   {
     "group": "NuGet packages",
     "root": "en/api/nuget/index",
     "pages": [
+      "en/api/nuget/index",
       "en/api/nuget/nuget-reference",
       "en/api/nuget/update-nuget",
       "en/api/nuget/crm-online-core",
@@ -39,52 +20,50 @@
   },
   {
     "group": "Authentication",
+    "root": "en/api/authentication/index",
     "pages": [
+      "en/api/authentication/index",
       "en/api/authentication/overview",
+      "en/api/authentication/online/which-flow-to-use",
+      "en/api/authentication/online/which-user-to-use",
+      "en/api/authentication/online/api",
       {
-        "group": "Online authentication",
+        "group": "Sign in user (front-channel)",
         "pages": [
-          "en/api/authentication/online/which-flow-to-use",
-          "en/api/authentication/online/which-user-to-use",
-          "en/api/authentication/online/api",
-          {
-            "group": "Sign in user (front-channel)",
-            "pages": [
-              "en/api/authentication/online/sign-in-user/auth-code-flow",
-              "en/api/authentication/online/sign-in-user/hybrid-flow",
-              "en/api/authentication/online/sign-in-user/implicit-flow",
-              "en/api/authentication/online/sign-in-user/native-apps",
-              "en/api/authentication/online/sign-in-user/legacy"
-            ]
-          },
-          {
-            "group": "System user (back-channel)",
-            "pages": [
-              "en/api/authentication/online/auth-application/sign-system-user-token",
-              "en/api/authentication/online/auth-application/get-system-user-ticket"
-            ]
-          },
-          "en/api/authentication/online/validate-security-tokens",
-          {
-            "group": "Troubleshooting",
-            "pages": [
-              "en/api/authentication/online/troubleshooting/iframe-idp-auth"
-            ]
-          },
-          {
-            "group": "Certificates",
-            "pages": [
-              "en/api/authentication/online/certificates/add-certificate-snap-in",
-              "en/api/authentication/online/certificates/configure",
-              "en/api/authentication/online/certificates/override-resolver"
-            ]
-          }
+          "en/api/authentication/online/sign-in-user/auth-code-flow",
+          "en/api/authentication/online/sign-in-user/hybrid-flow",
+          "en/api/authentication/online/sign-in-user/implicit-flow",
+          "en/api/authentication/online/sign-in-user/native-apps",
+          "en/api/authentication/online/sign-in-user/legacy"
+        ]
+      },
+      {
+        "group": "System user (back-channel)",
+        "pages": [
+          "en/api/authentication/online/auth-application/sign-system-user-token",
+          "en/api/authentication/online/auth-application/get-system-user-ticket"
+        ]
+      },
+      "en/api/authentication/online/validate-security-tokens",
+      {
+        "group": "Troubleshooting",
+        "pages": [
+          "en/api/authentication/online/troubleshooting/iframe-idp-auth"
+        ]
+      },
+      {
+        "group": "Certificates",
+        "pages": [
+          "en/api/authentication/online/certificates/add-certificate-snap-in",
+          "en/api/authentication/online/certificates/configure",
+          "en/api/authentication/online/certificates/override-resolver"
         ]
       }
     ]
   },
   {
     "group": "Localization",
+    "root": "en/api/localization/index",
     "pages": [
       "en/api/localization/index",
       "en/api/localization/personnameformatter",
@@ -120,7 +99,9 @@
   },
   {
     "group": "Lists",
+    "root": "en/api/lists/index",
     "pages": [
+      "en/api/lists/index",
       {
         "group": "List web services",
         "pages": [
@@ -141,22 +122,24 @@
           }
         ]
       }
-    ],
-    "root": "en/api/lists/index"
+    ]
   },
   {
     "group": "Web Services",
+    "root": "en/api/web-services/index",
     "pages": [
+      "en/api/web-services/index",
       {
         "group": "Endpoints",
+        "root": "en/api/web-services/endpoints/index",
         "pages": [
+          "en/api/web-services/endpoints/index",
           "en/api/web-services/endpoints/agents-webapi/index",
           "en/api/web-services/endpoints/rest-webapi/index",
           "en/api/web-services/endpoints/get-webapi-version",
           "en/api/web-services/endpoints/http-headers",
           "en/api/web-services/endpoints/soap/index"
-        ],
-        "root": "en/api/web-services/endpoints/index"
+        ]
       },
       {
         "group": "Reference",
@@ -324,12 +307,13 @@
           }
         ]
       }
-    ],
-    "root": "en/api/web-services/index"
+    ]
   },
   {
     "group": "Bulk Operation",
+    "root": "en/api/bulk-operations/index",
     "pages": [
+      "en/api/bulk-operations/index",
       {
         "group": "Bulk Update",
         "pages": [
@@ -365,13 +349,13 @@
           "en/api/bulk-operations/mass-operations/protected-tables"
         ]
       }
-    ],
-    "root": "en/api/bulk-operations/index"
+    ]
   },
   {
     "group": "Foreign keys",
     "root": "en/api/foreign-keys/index",
     "pages": [
+      "en/api/foreign-keys/index",
       "en/api/foreign-keys/foreignkey",
       "en/api/foreign-keys/erp-integration",
       "en/api/foreign-keys/set-and-get"
@@ -379,11 +363,15 @@
   },
   {
     "group": "Search APIs",
+    "root": "en/api/search/index",
     "pages": [
+      "en/api/search/index",
       "en/api/search/full-text-search",
       {
         "group": "Find Selection API",
+        "root": "en/api/search/find-selection/index",
         "pages": [
+          "en/api/search/find-selection/index",
           "en/api/search/find-selection/terminology",
           "en/api/search/find-selection/how-to-search",
           "en/api/search/find-selection/populate-selectable-columns",
@@ -391,19 +379,19 @@
           "en/api/search/find-selection/date-range-as-criteria",
           "en/api/search/find-selection/typical-search",
           "en/api/search/find-selection/import-export-typical-search"
-        ],
-        "root": "en/api/search/find-selection/index"
+        ]
       },
       {
         "group": "Archive provider fundamentals",
+        "root": "en/api/archive-providers/index",
         "pages": [
+          "en/api/archive-providers/index",
           "en/api/archive-providers/encoded-values",
           "en/api/archive-providers/how-to-query",
           "en/api/archive-providers/data-aggregation",
           "en/api/archive-providers/aggregate-groupby",
           "en/api/archive-providers/nested-aggregate-functions"
-        ],
-        "root": "en/api/archive-providers/index"
+        ]
       },
       {
         "group": "ArchiveAgent samples",
@@ -415,6 +403,7 @@
         "group": "IArchiveAgent",
         "root": "en/api/search/iarchiveagent/index",
         "pages": [
+          "en/api/search/iarchiveagent/index",
           "en/api/search/iarchiveagent/iarchiveagent",
           "en/api/search/iarchiveagent/using-activityarchive-filters",
           "en/api/search/iarchiveagent/using-criteria"
@@ -424,6 +413,7 @@
         "group": "IFindAgent",
         "root": "en/api/search/ifindagent/index",
         "pages": [
+          "en/api/search/ifindagent/index",
           "en/api/search/ifindagent/dump-result",
           "en/api/search/ifindagent/find-project-by-name",
           "en/api/search/ifindagent/using-criteria"
@@ -433,6 +423,7 @@
         "group": "Selections",
         "root": "en/api/search/selection/index",
         "pages": [
+          "en/api/search/selection/index",
           "en/api/search/selection/dynamic-selections",
           "en/api/search/selection/entity/add-member-to-static-selection-entities",
           "en/api/search/selection/entity/create-dynamic-entity",
@@ -446,24 +437,26 @@
       },
       {
         "group": "Archive provider reference",
+        "root": "en/api/archive-providers/reference/index",
+        "directory": "accordion",
         "pages": {
           "$ref": "./nav-archive-providers.json"
-        },
-        "root": "en/api/archive-providers/reference/index",
-        "directory": "accordion"
+        }
       },
       "en/api/mdo-providers/index",
       {
         "group": "MDO provider reference",
+        "root": "en/api/mdo-providers/reference/index",
+        "directory": "accordion",
         "pages": {
           "$ref": "./nav-mdo-providers.json"
-        },
-        "root": "en/api/mdo-providers/reference/index",
-        "directory": "accordion"
+        }
       },
       {
         "group": "OData Search in WebApi",
+        "root": "en/api/search/odata/index",
         "pages": [
+          "en/api/search/odata/index",
           "en/api/search/odata/metadata",
           "en/api/search/odata/associate",
           "en/api/search/odata/boolean",
@@ -475,15 +468,15 @@
           "en/api/search/odata/unary",
           "en/api/search/odata/using-filters",
           "en/api/search/odata/dynamic-provider"
-        ],
-        "root": "en/api/search/odata/index"
+        ]
       }
-    ],
-    "root": "en/api/search/index"
+    ]
   },
   {
     "group": "Plug-ins",
+    "root": "en/api/plugins/index",
     "pages": [
+      "en/api/plugins/index",
       {
         "group": "Quote Connector",
         "pages": [
@@ -638,7 +631,6 @@
           "en/api/plugins/erp-connectors/sample"
         ]
       }
-    ],
-    "root": "en/api/plugins/index"
+    ]
   }
 ]
