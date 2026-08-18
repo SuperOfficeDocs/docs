@@ -231,6 +231,17 @@
     ]
   },
   {
+    "group": "Logging",
+    "root": "en/onsite/logging/index",
+    "pages": [
+      "en/onsite/logging/filter-logs",
+      "en/onsite/logging/standard-netserver-log",
+      "en/onsite/logging/serilog",
+      "en/onsite/logging/configure-serilog",
+      "en/onsite/logging/create-custom-logger"
+    ]
+  },
+  {
     "group": "Integrate",
     "pages": [
       "en/onsite/integrate/web-client/index",

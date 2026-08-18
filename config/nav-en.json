@@ -725,16 +725,6 @@
             ]
           },
           {
-            "group": "Logging",
-            "pages": [
-              "en/api/logging/filter-logs",
-              "en/api/logging/standard-netserver-log",
-              "en/api/logging/serilog",
-              "en/api/logging/configure-serilog",
-              "en/api/logging/create-custom-logger"
-            ]
-          },
-          {
             "group": "Lists",
             "pages": [
               {

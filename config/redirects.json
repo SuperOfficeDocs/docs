@@ -10718,5 +10718,9 @@
   {
     "source": "/en/api/config/*",
     "destination": "/en/onsite/web-config/*"
+  },
+  {
+    "source": "/en/api/logging/*",
+    "destination": "/en/onsite/logging/*"
   }
 ]
