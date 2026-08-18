@@ -1336,33 +1336,16 @@
           {
             "group": "Security",
             "pages": [
-              "en/api/security/role-based",
-              "en/api/security/encryption",
               {
                 "group": "Sentry",
                 "pages": [
-                  {
-                    "group": "Overrides",
-                    "pages": [
-                      "en/api/security/sentry/com/set-override-com"
-                    ]
-                  },
                   {
                     "group": "Web services",
                     "pages": [
                       "en/api/security/sentry/services/fieldproperties",
                       "en/api/security/sentry/services/tableright"
                     ]
-                  },
-                  {
-                    "group": "Entities",
-                    "pages": [
-                      "en/api/security/sentry/entity/visible-for-flag"
-                    ]
-                  },
-                  "en/api/security/sentry/rows/index",
-                  "en/api/security/sentry/osql/distinct",
-                  "en/api/security/sentry/sql/set-override-sql"
+                  }
                 ]
               }
             ]
