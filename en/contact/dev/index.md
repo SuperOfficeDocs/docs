@@ -149,9 +149,6 @@ Without the link record, the picture will not appear.
 * [Working with contacts in CRMScript][10]
 * [Working with contacts in web NetServer services and REST][25]
 * [Working with contacts at the data layer (entities)][26]
-* [Working with contacts using rows][27]
-* [Working with contacts in Objectified SQL][28]
-* [Raw SQL queries][29]
 * [Addresses][6]
 
 [1]: ../../document/index
@@ -167,15 +164,12 @@ Without the link record, the picture will not appear.
 [13]: /en/database/tables/binaryobject
 [14]: /en/database/tables/binaryobjectlink
 
-[19]: /en/api/caching/associate-cache
+[19]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/caching/associate-cache.mdx
 [21]: /en/api/web-services/howto/contact/get-person-image-rest
 [22]: /en/api/web-services/howto/contact/update-person-image-rest
 [23]: /en/api/web-services/howto/contact/display-person-image-ws
 [24]: /en/api/web-services/howto/contact/display-image-from-blob-table-services
 [25]: /en/api/web-services/howto/contact/index
 [26]: /en/api/entities/howto/contact/index
-[27]: /en/api/rows/howto/contact/index
-[28]: /en/api/osql/howto/contact/index
-[29]: /en/api/sql/howto/contact/index
 
 [img1]: /media/loc/en/contact/edit-person.png

@@ -3669,7 +3669,7 @@
   },
   {
     "source": "/en/admin/user-preferences/add-prefdesc",
-    "destination": "/en/api/sql/howto/user-preferences/add-prefdesc"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/sql/howto/user-preferences/add-prefdesc.md"
   },
   {
     "source": "/en/admin/user-preferences/howto/get-preferences-preferenceagent",
@@ -3748,14 +3748,6 @@
     "destination": "/en/api/web-services/howto/custom-objects/index"
   },
   {
-    "source": "/en/api/lists/row/index",
-    "destination": "/en/api/lists/row/how-to/add-list-item"
-  },
-  {
-    "source": "/en/api/lists/sql/index",
-    "destination": "/en/api/lists/sql/add-list-item-sql"
-  },
-  {
     "source": "/en/api/localization/culture/index",
     "destination": "/en/api/localization/culture/culturedataformatter"
   },
@@ -3766,10 +3758,6 @@
   {
     "source": "/en/api/netserver/*",
     "destination": "/en/api/*"
-  },
-  {
-    "source": "/en/api/osql/howto/index",
-    "destination": "/en/api/osql/howto/company/index"
   },
   {
     "source": "/en/api/plugins/quote-connectors/api/enums/index",
@@ -3861,7 +3849,7 @@
   },
   {
     "source": "/en/authentication/onsite/*",
-    "destination": "/en/api/authentication/onsite/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/authentication/onsite"
   },
   {
     "source": "/en/authentication/overview",
@@ -3956,10 +3944,6 @@
     "destination": "/en/automation/webhook/dev/tutorials/add-msg-to-ticket/index"
   },
   {
-    "source": "/en/automation/windows/index",
-    "destination": "/en/automation/windows/win-script-event-system"
-  },
-  {
     "source": "/en/automation/zapier/*",
     "destination": "/integrations/zapier/index"
   },
@@ -4005,11 +3989,11 @@
   },
   {
     "source": "/en/company/howto/osql/*",
-    "destination": "/en/api/osql/howto/company/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/osql/howto/company"
   },
   {
     "source": "/en/company/howto/row/*",
-    "destination": "/en/api/rows/howto/company/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/rows/howto/company"
   },
   {
     "source": "/en/company/howto/services/*",
@@ -4017,7 +4001,7 @@
   },
   {
     "source": "/en/company/howto/sql/*",
-    "destination": "/en/api/sql/howto/company/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/sql/howto/company"
   },
   {
     "source": "/en/company/interests",
@@ -4093,11 +4077,11 @@
   },
   {
     "source": "/en/contact/howto/osql/*",
-    "destination": "/en/api/osql/howto/contact/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/osql/howto/contact"
   },
   {
     "source": "/en/contact/howto/row/*",
-    "destination": "/en/api/rows/howto/contact/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/rows/howto/contact"
   },
   {
     "source": "/en/contact/howto/services/*",
@@ -4105,7 +4089,7 @@
   },
   {
     "source": "/en/contact/howto/sql/*",
-    "destination": "/en/api/sql/howto/contact/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/sql/howto/contact"
   },
   {
     "source": "/en/contact/learn/add-relation",
@@ -4201,7 +4185,7 @@
   },
   {
     "source": "/en/custom-objects/udef/howto/sql/*",
-    "destination": "/en/api/sql/howto/custom-objects/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/sql/howto/custom-objects"
   },
   {
     "source": "/en/custom-objects/udef/index",
@@ -4353,11 +4337,11 @@
   },
   {
     "source": "/en/diary/howto/osql/*",
-    "destination": "/en/api/osql/howto/diary/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/osql/howto/diary"
   },
   {
     "source": "/en/diary/howto/row/*",
-    "destination": "/en/api/rows/howto/diary/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/rows/howto/diary"
   },
   {
     "source": "/en/diary/howto/services/*",
@@ -4365,7 +4349,7 @@
   },
   {
     "source": "/en/diary/howto/sql/*",
-    "destination": "/en/api/sql/howto/diary/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/sql/howto/diary"
   },
   {
     "source": "/en/diary/invitations",
@@ -4413,7 +4397,7 @@
   },
   {
     "source": "/en/diary/tutorials/*",
-    "destination": "/en/api/tutorials/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/tutorials"
   },
   {
     "source": "/en/diary/video-meetings/*",
@@ -4789,7 +4773,7 @@
   },
   {
     "source": "/en/globalization-and-localization/address/howto/rows/*",
-    "destination": "/en/api/rows/howto/address/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/rows/howto/address"
   },
   {
     "source": "/en/globalization-and-localization/address/howto/services/*",
@@ -5061,7 +5045,7 @@
   },
   {
     "source": "/en/project/howto/sql/*",
-    "destination": "/en/api/sql/howto/project/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/sql/howto/project"
   },
   {
     "source": "/en/project/learn/add-links",
@@ -5401,7 +5385,7 @@
   },
   {
     "source": "/en/sale/howto/sql/stakeholders",
-    "destination": "/en/api/sql/howto/sale/stakeholders"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/sql/howto/sale/stakeholders.md"
   },
   {
     "source": "/en/sale/learn/delete",
@@ -5477,11 +5461,11 @@
   },
   {
     "source": "/en/sale/saint/howto/row/*",
-    "destination": "/en/api/rows/howto/saint/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/rows/howto/saint"
   },
   {
     "source": "/en/sale/saint/howto/sql/*",
-    "destination": "/en/api/sql/howto/saint/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/sql/howto/saint"
   },
   {
     "source": "/en/sale/saint/learn/",
@@ -10718,5 +10702,113 @@
   {
     "source": "/en/api/security/*",
     "destination": "/en/admin/user-management/role"
+  },
+  {
+    "source": "/en/api/rows/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/rows"
+  },
+  {
+    "source": "/en/api/sql/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/sql"
+  },
+  {
+    "source": "/en/api/osql/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/osql"
+  },
+  {
+    "source": "/en/api/caching/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/caching"
+  },
+  {
+    "source": "/en/api/web-extensions/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/web-extensions"
+  },
+  {
+    "source": "/en/api/tutorials/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/tutorials"
+  },
+  {
+    "source": "/en/api/archive-providers/architecture",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/archive-providers/architecture.md"
+  },
+  {
+    "source": "/en/api/archive-providers/interfaces",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/archive-providers/interfaces.md"
+  },
+  {
+    "source": "/en/api/archive-providers/data-classes",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/archive-providers/data-classes.md"
+  },
+  {
+    "source": "/en/api/archive-providers/scenarios",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/archive-providers/scenarios.md"
+  },
+  {
+    "source": "/en/api/archive-providers/metadata",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/archive-providers/metadata.md"
+  },
+  {
+    "source": "/en/api/archive-providers/providers",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/archive-providers/providers.md"
+  },
+  {
+    "source": "/en/api/archive-providers/extenders",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/archive-providers/extenders.md"
+  },
+  {
+    "source": "/en/api/archive-providers/joiners",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/archive-providers/joiners.md"
+  },
+  {
+    "source": "/en/api/archive-providers/base-and-helper-classes",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/archive-providers/base-and-helper-classes.md"
+  },
+  {
+    "source": "/en/api/lists/entity/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/lists/entity"
+  },
+  {
+    "source": "/en/api/lists/row/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/lists/row"
+  },
+  {
+    "source": "/en/api/lists/sql/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/lists/sql"
+  },
+  {
+    "source": "/en/api/authentication/onsite/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/authentication/onsite"
+  },
+  {
+    "source": "/en/api/reference/netserver/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/reference/netserver"
+  },
+  {
+    "source": "/en/api/reference/web/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/reference/web"
+  },
+  {
+    "source": "/en/api/reference/soap/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/reference/soap"
+  },
+  {
+    "source": "/en/api/tooltip/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/tooltip"
+  },
+  {
+    "source": "/en/service/data-exchange/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/service/data-exchange"
+  },
+  {
+    "source": "/en/api/plugins/document/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/plugins/document/soarc-document-plugin.md"
+  },
+  {
+    "source": "/en/api/plugins/sentry/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/plugins/sentry"
+  },
+  {
+    "source": "/en/automation/windows/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/automation/windows"
   }
 ]

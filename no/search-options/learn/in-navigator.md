@@ -24,7 +24,7 @@ Navigatorens hurtigsøk utfører to parallelle søk.
 
 * Et standard *begynner-med*-søk, eventuelt med jokertegn (%). Det lengste ordet i en frase slås opp først.
 
-* Et *perfekt-treff* *hørest-ut-som* ([SoundEx][2]) søk. Hvis det er mange korte ord i en frase trengs flere ord før oppslag starter. Resultatet vises bare hvis det ikke er noen treff på standard søk.
+* Et *perfekt-treff* *hørest-ut-som* (SoundEx) søk. Hvis det er mange korte ord i en frase trengs flere ord før oppslag starter. Resultatet vises bare hvis det ikke er noen treff på standard søk.
 
 ## Eksempler
 
@@ -33,6 +33,5 @@ Navigatorens hurtigsøk utfører to parallelle søk.
 * Du kan søke etter en person i hurtigsøkfeltet for **Firma** i navigatoren.
 
 [1]: ../../learn/basics/history
-[2]: ../../../en/api/osql/soundx
 
 [img1]: ../../../media/loc/en/search-options/search-find-fastsearcher.png

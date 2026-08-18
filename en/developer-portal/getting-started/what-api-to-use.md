@@ -121,7 +121,7 @@ SuperOffice does, however, issue refresh tokens, and in that way does support a 
 
 [13]: ./user-contexts
 [2]: ../../api/reference/restful/rest/index
-[3]: ../../api/reference/soap/index
+[3]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/reference/soap/index.md
 [6]: ../../api/authentication/online/index
 
 [1]: https://stackoverflow.com/questions/19884295/soap-vs-rest-differences

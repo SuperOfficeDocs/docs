@@ -568,8 +568,7 @@
                     ]
                   }
                 ]
-              },
-              "en/automation/windows/win-script-event-system"
+              }
             ]
           }
         ]
@@ -645,36 +644,6 @@
                     ]
                   }
                 ]
-              },
-              {
-                "group": "Onsite authentication",
-                "pages": [
-                  "en/api/authentication/onsite/users-and-associates",
-                  "en/api/authentication/onsite/terminology",
-                  {
-                    "group": "SoSession",
-                    "pages": [
-                      "en/api/authentication/onsite/sosession/switch",
-                      "en/api/authentication/onsite/sosession/using-soap"
-                    ]
-                  },
-                  "en/api/authentication/onsite/custom-proxies/index",
-                  {
-                    "group": "Configuration",
-                    "pages": [
-                      "en/api/authentication/onsite/config-anonymous-user",
-                      "en/api/authentication/onsite/config-external-user"
-                    ]
-                  },
-                  "en/api/authentication/onsite/pipeline",
-                  {
-                    "group": "Legacy",
-                    "pages": [
-                      "en/api/authentication/onsite/com/index",
-                      "en/api/authentication/onsite/from-secret-to-ticket"
-                    ]
-                  }
-                ]
               }
             ]
           },
@@ -714,17 +683,6 @@
             ]
           },
           {
-            "group": "Caching",
-            "pages": [
-              "en/api/caching/superoffice-crm-cache",
-              "en/api/caching/associate-cache",
-              "en/api/caching/category-cache",
-              "en/api/caching/superoffice-crm-security",
-              "en/api/caching/cached-tables",
-              "en/api/caching/flush-cache"
-            ]
-          },
-          {
             "group": "Lists",
             "pages": [
               {
@@ -743,23 +701,6 @@
                       "en/api/lists/services/how-to/delete-list",
                       "en/api/lists/services/how-to/create-list-item",
                       "en/api/lists/services/how-to/delete-list-item"
-                    ]
-                  }
-                ]
-              },
-              "en/api/lists/row/how-to/add-list-item",
-              {
-                "group": "NetServer lists",
-                "pages": [
-                  "en/api/lists/entity/typed-list",
-                  "en/api/lists/entity/udef-list",
-                  "en/api/lists/entity/group-view",
-                  "en/api/lists/entity/generic-list",
-                  {
-                    "group": "How-to",
-                    "pages": [
-                      "en/api/lists/entity/how-to/create-list-plugin",
-                      "en/api/lists/entity/how-to/get-list"
                     ]
                   }
                 ]
@@ -947,29 +888,6 @@
             ]
           },
           {
-            "group": "Web Extensions",
-            "pages": [
-              {
-                "group": "Web extensions",
-                "pages": [
-                  {
-                    "group": "MailArchiveHelper",
-                    "pages": [
-                      "en/api/web-extensions/mailarchivehelper/getting-started",
-                      "en/api/web-extensions/mailarchivehelper/registry",
-                      "en/api/web-extensions/mailarchivehelper/preference-dialog",
-                      "en/api/web-extensions/mailarchivehelper/logging",
-                      "en/api/web-extensions/mailarchivehelper/com-interop-and-dotnet",
-                      "en/api/web-extensions/mailarchivehelper/mail-protocol",
-                      "en/api/web-extensions/mailarchivehelper/find-contact-from-email",
-                      "en/api/web-extensions/mailarchivehelper/archive-email"
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "group": "Entities",
             "pages": [
               "en/api/entities/collections",
@@ -1051,176 +969,6 @@
             ]
           },
           {
-            "group": "Rows",
-            "pages": [
-              "en/api/rows/index",
-              "en/api/rows/customsearch",
-              "en/api/rows/events",
-              {
-                "group": "How to...",
-                "pages": [
-                  "en/api/rows/get-row",
-                  "en/api/rows/get-row-from-entity",
-                  "en/api/rows/create-row",
-                  "en/api/rows/create-row-in-entity",
-                  "en/api/rows/update-row",
-                  "en/api/rows/update-row-in-entity",
-                  "en/api/rows/delete-row",
-                  "en/api/rows/delete-row-from-entity",
-                  {
-                    "group": "Address",
-                    "pages": [
-                      "en/api/rows/howto/address/update-address"
-                    ]
-                  },
-                  {
-                    "group": "Company",
-                    "pages": [
-                      "en/api/rows/howto/company/create-contact-row",
-                      "en/api/rows/howto/company/create-contact-rows",
-                      "en/api/rows/howto/company/add-new-contact-interest",
-                      "en/api/rows/howto/company/get-catlist-categoryrows"
-                    ]
-                  },
-                  {
-                    "group": "Contact (person)",
-                    "pages": [
-                      "en/api/rows/howto/contact/get-persons-from-contact-rows",
-                      "en/api/rows/howto/contact/update-person-rows",
-                      "en/api/rows/howto/contact/collection"
-                    ]
-                  },
-                  {
-                    "group": "Diary",
-                    "pages": [
-                      "en/api/rows/howto/diary/create-apt-row",
-                      "en/api/rows/howto/diary/create-apt-rows"
-                    ]
-                  },
-                  {
-                    "group": "SAINT",
-                    "pages": [
-                      "en/api/rows/howto/saint/search-saint-contactrow-customsearch"
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "group": "Objectified SQL",
-            "pages": [
-              "en/api/osql/index",
-              "en/api/osql/osql-evolution",
-              "en/api/osql/join",
-              "en/api/osql/outerjoin",
-              "en/api/osql/like",
-              "en/api/osql/and-clause",
-              "en/api/osql/alias",
-              "en/api/osql/groupby",
-              "en/api/osql/orderby",
-              "en/api/osql/insert",
-              "en/api/osql/update",
-              "en/api/osql/delete",
-              {
-                "group": "Functions",
-                "pages": [
-                  "en/api/osql/count",
-                  "en/api/osql/upper",
-                  "en/api/osql/soundx"
-                ]
-              },
-              {
-                "group": "How to...",
-                "pages": [
-                  {
-                    "group": "Company",
-                    "pages": [
-                      "en/api/osql/howto/company/create-contact-osql",
-                      "en/api/osql/howto/company/get-catlist-sodatareader"
-                    ]
-                  },
-                  {
-                    "group": "Contact (person)",
-                    "pages": [
-                      "en/api/osql/howto/contact/get-persons-from-contact-sodatareader",
-                      "en/api/osql/howto/contact/update-person-osql"
-                    ]
-                  },
-                  {
-                    "group": "Diary",
-                    "pages": [
-                      "en/api/osql/howto/diary/create-apt-osql"
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "group": "Raw SQL queries",
-            "pages": [
-              {
-                "group": "Company",
-                "pages": [
-                  "en/api/sql/howto/company/create-contact-sql",
-                  "en/api/sql/howto/company/get-contact-details-sql",
-                  "en/api/sql/howto/company/get-interests-sql",
-                  "en/api/sql/howto/company/get-catlist-sql"
-                ]
-              },
-              {
-                "group": "Contact (person)",
-                "pages": [
-                  "en/api/sql/howto/contact/get-persons-from-contact-sql",
-                  "en/api/sql/howto/contact/update-person-sql",
-                  "en/api/sql/howto/contact/add-person-picture-blobs-sql"
-                ]
-              },
-              {
-                "group": "Custom fields",
-                "pages": [
-                  "en/api/sql/howto/custom-objects/set-udef"
-                ]
-              },
-              {
-                "group": "Diary",
-                "pages": [
-                  "en/api/sql/howto/diary/create-apt-sql",
-                  "en/api/sql/howto/diary/create-invitation-sql",
-                  "en/api/sql/howto/diary/accept-invitation-sql"
-                ]
-              },
-              {
-                "group": "Project",
-                "pages": [
-                  "en/api/sql/howto/project/create",
-                  "en/api/sql/howto/project/text-table",
-                  "en/api/sql/howto/project/project-guide"
-                ]
-              },
-              {
-                "group": "SAINT",
-                "pages": [
-                  "en/api/sql/howto/saint/get-contact-by-saint-value",
-                  "en/api/sql/howto/saint/search-saint-values"
-                ]
-              },
-              {
-                "group": "Sale",
-                "pages": [
-                  "en/api/sql/howto/sale/stakeholders"
-                ]
-              },
-              {
-                "group": "User preferences",
-                "pages": [
-                  "en/api/sql/howto/user-preferences/add-prefdesc"
-                ]
-              }
-            ]
-          },
-          {
             "group": "Bulk Operation",
             "pages": [
               {
@@ -1285,19 +1033,6 @@
                 ]
               },
               {
-                "group": "Archive provider architecture",
-                "pages": [
-                  "en/api/archive-providers/interfaces",
-                  "en/api/archive-providers/data-classes",
-                  "en/api/archive-providers/scenarios",
-                  "en/api/archive-providers/metadata",
-                  "en/api/archive-providers/providers",
-                  "en/api/archive-providers/extenders",
-                  "en/api/archive-providers/joiners",
-                  "en/api/archive-providers/base-and-helper-classes"
-                ]
-              },
-              {
                 "group": "ArchiveAgent samples",
                 "pages": [
                   "en/api/archive-providers/howto/diary/invitation-archive"
@@ -1353,7 +1088,6 @@
           {
             "group": "Plug-ins",
             "pages": [
-              "en/api/plugins/document/soarc-document-plugin",
               {
                 "group": "Quote Connector",
                 "pages": [
@@ -1507,22 +1241,7 @@
                   "en/api/plugins/erp-connectors/helpers",
                   "en/api/plugins/erp-connectors/sample"
                 ]
-              },
-              {
-                "group": "Sentry plug-in",
-                "pages": [
-                  "en/api/plugins/sentry/create-sentry-plugin",
-                  "en/api/plugins/sentry/use-sentry-plugin"
-                ]
               }
-            ]
-          },
-          {
-            "group": "Tutorials",
-            "pages": [
-              "en/api/tutorials/itunes-like-activities/index",
-              "en/api/tutorials/so-ical-feed/index",
-              "en/api/tutorials/rss-feed-vb/index"
             ]
           }
         ]
