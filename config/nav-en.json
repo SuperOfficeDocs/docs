@@ -714,17 +714,6 @@
             ]
           },
           {
-            "group": "Caching",
-            "pages": [
-              "en/api/caching/superoffice-crm-cache",
-              "en/api/caching/associate-cache",
-              "en/api/caching/category-cache",
-              "en/api/caching/superoffice-crm-security",
-              "en/api/caching/cached-tables",
-              "en/api/caching/flush-cache"
-            ]
-          },
-          {
             "group": "Lists",
             "pages": [
               {

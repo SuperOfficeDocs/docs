@@ -10726,5 +10726,9 @@
   {
     "source": "/en/api/osql/*",
     "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/osql"
+  },
+  {
+    "source": "/en/api/caching/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/caching"
   }
 ]

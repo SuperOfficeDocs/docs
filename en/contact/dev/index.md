@@ -167,7 +167,7 @@ Without the link record, the picture will not appear.
 [13]: /en/database/tables/binaryobject
 [14]: /en/database/tables/binaryobjectlink
 
-[19]: /en/api/caching/associate-cache
+[19]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/caching/associate-cache.mdx
 [21]: /en/api/web-services/howto/contact/get-person-image-rest
 [22]: /en/api/web-services/howto/contact/update-person-image-rest
 [23]: /en/api/web-services/howto/contact/display-person-image-ws
