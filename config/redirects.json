@@ -10714,5 +10714,9 @@
   {
     "source": "/en/automation/netserver-scripting/*",
     "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/automation/netserver-scripting"
+  },
+  {
+    "source": "/en/api/config/*",
+    "destination": "/en/onsite/web-config/*"
   }
 ]

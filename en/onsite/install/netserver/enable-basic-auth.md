@@ -97,7 +97,7 @@ This returns the contact info
 ```
 
 [1]: https://www.getpostman.com/
-[2]: ../../../api/config/webapi
+[2]: ../../web-config/webapi
 
 [img1]: /media/loc/en/onsite/iis-config-site.png
 [img2]: /media/loc/en/onsite/iis-authentication-anonymous.png

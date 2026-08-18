@@ -159,7 +159,7 @@ Read section [Mail logging][1].
 [1]: /en/onsite/debug/web-client
 [2]: https://cs.superoffice.com/scripts/customer.fcgi?_sf=0&custSessionKey=&customerLang=en&noCookies=true&action=viewKbEntry&id=166
 [3]: https://cs.superoffice.com/
-[4]: /en/api/config/mail
+[4]: /en/onsite/web-config/mail
 [5]: ../learn/index
 [6]: https://www.codetwo.com/kb/upn/#exchange
 [7]: https://www.codetwo.com/kb/upn/#office-365
