@@ -1281,7 +1281,6 @@
           {
             "group": "Reference",
             "root": "en/automation/crmscript/reference/index",
-            "directory": "accordion",
             "pages": {
               "$ref": "./nav-crmscript-ref.json"
             }
