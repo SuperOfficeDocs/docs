@@ -645,36 +645,6 @@
                     ]
                   }
                 ]
-              },
-              {
-                "group": "Onsite authentication",
-                "pages": [
-                  "en/api/authentication/onsite/users-and-associates",
-                  "en/api/authentication/onsite/terminology",
-                  {
-                    "group": "SoSession",
-                    "pages": [
-                      "en/api/authentication/onsite/sosession/switch",
-                      "en/api/authentication/onsite/sosession/using-soap"
-                    ]
-                  },
-                  "en/api/authentication/onsite/custom-proxies/index",
-                  {
-                    "group": "Configuration",
-                    "pages": [
-                      "en/api/authentication/onsite/config-anonymous-user",
-                      "en/api/authentication/onsite/config-external-user"
-                    ]
-                  },
-                  "en/api/authentication/onsite/pipeline",
-                  {
-                    "group": "Legacy",
-                    "pages": [
-                      "en/api/authentication/onsite/com/index",
-                      "en/api/authentication/onsite/from-secret-to-ticket"
-                    ]
-                  }
-                ]
               }
             ]
           },

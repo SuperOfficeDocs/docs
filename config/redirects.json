@@ -3849,7 +3849,7 @@
   },
   {
     "source": "/en/authentication/onsite/*",
-    "destination": "/en/api/authentication/onsite/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/authentication/onsite"
   },
   {
     "source": "/en/authentication/overview",
@@ -10778,5 +10778,9 @@
   {
     "source": "/en/api/lists/sql/*",
     "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/lists/sql"
+  },
+  {
+    "source": "/en/api/authentication/onsite/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/authentication/onsite"
   }
 ]
