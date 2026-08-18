@@ -3944,10 +3944,6 @@
     "destination": "/en/automation/webhook/dev/tutorials/add-msg-to-ticket/index"
   },
   {
-    "source": "/en/automation/windows/index",
-    "destination": "/en/automation/windows/win-script-event-system"
-  },
-  {
     "source": "/en/automation/zapier/*",
     "destination": "/integrations/zapier/index"
   },
@@ -10810,5 +10806,9 @@
   {
     "source": "/en/api/plugins/sentry/*",
     "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/plugins/sentry"
+  },
+  {
+    "source": "/en/automation/windows/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/automation/windows"
   }
 ]
