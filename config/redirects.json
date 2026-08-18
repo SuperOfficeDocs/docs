@@ -3748,14 +3748,6 @@
     "destination": "/en/api/web-services/howto/custom-objects/index"
   },
   {
-    "source": "/en/api/lists/row/index",
-    "destination": "/en/api/lists/row/how-to/add-list-item"
-  },
-  {
-    "source": "/en/api/lists/sql/index",
-    "destination": "/en/api/lists/sql/add-list-item-sql"
-  },
-  {
     "source": "/en/api/localization/culture/index",
     "destination": "/en/api/localization/culture/culturedataformatter"
   },
@@ -10774,5 +10766,17 @@
   {
     "source": "/en/api/archive-providers/base-and-helper-classes",
     "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/archive-providers/base-and-helper-classes.md"
+  },
+  {
+    "source": "/en/api/lists/entity/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/lists/entity"
+  },
+  {
+    "source": "/en/api/lists/row/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/lists/row"
+  },
+  {
+    "source": "/en/api/lists/sql/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/lists/sql"
   }
 ]

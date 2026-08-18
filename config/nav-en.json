@@ -735,23 +735,6 @@
                     ]
                   }
                 ]
-              },
-              "en/api/lists/row/how-to/add-list-item",
-              {
-                "group": "NetServer lists",
-                "pages": [
-                  "en/api/lists/entity/typed-list",
-                  "en/api/lists/entity/udef-list",
-                  "en/api/lists/entity/group-view",
-                  "en/api/lists/entity/generic-list",
-                  {
-                    "group": "How-to",
-                    "pages": [
-                      "en/api/lists/entity/how-to/create-list-plugin",
-                      "en/api/lists/entity/how-to/get-list"
-                    ]
-                  }
-                ]
               }
             ]
           },
