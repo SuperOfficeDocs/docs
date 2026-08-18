@@ -10782,5 +10782,17 @@
   {
     "source": "/en/api/authentication/onsite/*",
     "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/authentication/onsite"
+  },
+  {
+    "source": "/en/api/reference/netserver/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/reference/netserver"
+  },
+  {
+    "source": "/en/api/reference/web/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/reference/web"
+  },
+  {
+    "source": "/en/api/reference/soap/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/reference/soap"
   }
 ]
