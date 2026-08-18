@@ -10730,5 +10730,9 @@
   {
     "source": "/en/api/caching/*",
     "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/caching"
+  },
+  {
+    "source": "/en/api/web-extensions/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/web-extensions"
   }
 ]

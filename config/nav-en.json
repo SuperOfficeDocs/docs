@@ -936,29 +936,6 @@
             ]
           },
           {
-            "group": "Web Extensions",
-            "pages": [
-              {
-                "group": "Web extensions",
-                "pages": [
-                  {
-                    "group": "MailArchiveHelper",
-                    "pages": [
-                      "en/api/web-extensions/mailarchivehelper/getting-started",
-                      "en/api/web-extensions/mailarchivehelper/registry",
-                      "en/api/web-extensions/mailarchivehelper/preference-dialog",
-                      "en/api/web-extensions/mailarchivehelper/logging",
-                      "en/api/web-extensions/mailarchivehelper/com-interop-and-dotnet",
-                      "en/api/web-extensions/mailarchivehelper/mail-protocol",
-                      "en/api/web-extensions/mailarchivehelper/find-contact-from-email",
-                      "en/api/web-extensions/mailarchivehelper/archive-email"
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "group": "Entities",
             "pages": [
               "en/api/entities/collections",
