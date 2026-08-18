@@ -33,6 +33,6 @@ The Navigator FastSearcher runs two parallel searches:
 * Du kan søge efter en person i hurtigsøgningsfeltet for **Firma** i navigatoren.
 
 [1]: ../../learn/basics/history
-[2]: ../../../en/api/osql/soundx
+[2]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/osql/soundx.md
 
 [img1]: ../../../media/loc/en/search-options/search-find-fastsearcher.png

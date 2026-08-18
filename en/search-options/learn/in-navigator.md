@@ -36,6 +36,6 @@ The Navigator FastSearcher runs two parallel searches:
 * You can search for a contact in the FastSearcher field for **Companies** in the Navigator.
 
 [1]: ../../learn/basics/history
-[2]: /en/api/osql/soundx
+[2]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/osql/soundx.md
 
 [img1]: /media/loc/en/search-options/search-find-fastsearcher.png

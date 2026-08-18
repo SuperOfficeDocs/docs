@@ -3669,7 +3669,7 @@
   },
   {
     "source": "/en/admin/user-preferences/add-prefdesc",
-    "destination": "/en/api/sql/howto/user-preferences/add-prefdesc"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/sql/howto/user-preferences/add-prefdesc.md"
   },
   {
     "source": "/en/admin/user-preferences/howto/get-preferences-preferenceagent",
@@ -3766,10 +3766,6 @@
   {
     "source": "/en/api/netserver/*",
     "destination": "/en/api/*"
-  },
-  {
-    "source": "/en/api/osql/howto/index",
-    "destination": "/en/api/osql/howto/company/index"
   },
   {
     "source": "/en/api/plugins/quote-connectors/api/enums/index",
@@ -4005,11 +4001,11 @@
   },
   {
     "source": "/en/company/howto/osql/*",
-    "destination": "/en/api/osql/howto/company/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/osql/howto/company"
   },
   {
     "source": "/en/company/howto/row/*",
-    "destination": "/en/api/rows/howto/company/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/rows/howto/company"
   },
   {
     "source": "/en/company/howto/services/*",
@@ -4017,7 +4013,7 @@
   },
   {
     "source": "/en/company/howto/sql/*",
-    "destination": "/en/api/sql/howto/company/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/sql/howto/company"
   },
   {
     "source": "/en/company/interests",
@@ -4093,11 +4089,11 @@
   },
   {
     "source": "/en/contact/howto/osql/*",
-    "destination": "/en/api/osql/howto/contact/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/osql/howto/contact"
   },
   {
     "source": "/en/contact/howto/row/*",
-    "destination": "/en/api/rows/howto/contact/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/rows/howto/contact"
   },
   {
     "source": "/en/contact/howto/services/*",
@@ -4105,7 +4101,7 @@
   },
   {
     "source": "/en/contact/howto/sql/*",
-    "destination": "/en/api/sql/howto/contact/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/sql/howto/contact"
   },
   {
     "source": "/en/contact/learn/add-relation",
@@ -4201,7 +4197,7 @@
   },
   {
     "source": "/en/custom-objects/udef/howto/sql/*",
-    "destination": "/en/api/sql/howto/custom-objects/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/sql/howto/custom-objects"
   },
   {
     "source": "/en/custom-objects/udef/index",
@@ -4353,11 +4349,11 @@
   },
   {
     "source": "/en/diary/howto/osql/*",
-    "destination": "/en/api/osql/howto/diary/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/osql/howto/diary"
   },
   {
     "source": "/en/diary/howto/row/*",
-    "destination": "/en/api/rows/howto/diary/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/rows/howto/diary"
   },
   {
     "source": "/en/diary/howto/services/*",
@@ -4365,7 +4361,7 @@
   },
   {
     "source": "/en/diary/howto/sql/*",
-    "destination": "/en/api/sql/howto/diary/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/sql/howto/diary"
   },
   {
     "source": "/en/diary/invitations",
@@ -4789,7 +4785,7 @@
   },
   {
     "source": "/en/globalization-and-localization/address/howto/rows/*",
-    "destination": "/en/api/rows/howto/address/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/rows/howto/address"
   },
   {
     "source": "/en/globalization-and-localization/address/howto/services/*",
@@ -5061,7 +5057,7 @@
   },
   {
     "source": "/en/project/howto/sql/*",
-    "destination": "/en/api/sql/howto/project/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/sql/howto/project"
   },
   {
     "source": "/en/project/learn/add-links",
@@ -5401,7 +5397,7 @@
   },
   {
     "source": "/en/sale/howto/sql/stakeholders",
-    "destination": "/en/api/sql/howto/sale/stakeholders"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/sql/howto/sale/stakeholders.md"
   },
   {
     "source": "/en/sale/learn/delete",
@@ -5477,11 +5473,11 @@
   },
   {
     "source": "/en/sale/saint/howto/row/*",
-    "destination": "/en/api/rows/howto/saint/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/rows/howto/saint"
   },
   {
     "source": "/en/sale/saint/howto/sql/*",
-    "destination": "/en/api/sql/howto/saint/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/sql/howto/saint"
   },
   {
     "source": "/en/sale/saint/learn/",
@@ -10718,5 +10714,17 @@
   {
     "source": "/en/api/security/*",
     "destination": "/en/admin/user-management/role"
+  },
+  {
+    "source": "/en/api/rows/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/rows"
+  },
+  {
+    "source": "/en/api/sql/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/sql"
+  },
+  {
+    "source": "/en/api/osql/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/osql"
   }
 ]

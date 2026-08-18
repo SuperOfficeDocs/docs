@@ -174,8 +174,8 @@ Without the link record, the picture will not appear.
 [24]: /en/api/web-services/howto/contact/display-image-from-blob-table-services
 [25]: /en/api/web-services/howto/contact/index
 [26]: /en/api/entities/howto/contact/index
-[27]: /en/api/rows/howto/contact/index
-[28]: /en/api/osql/howto/contact/index
-[29]: /en/api/sql/howto/contact/index
+[27]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/rows/howto/contact/index.md
+[28]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/osql/howto/contact/index.md
+[29]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/sql/howto/contact/index.md
 
 [img1]: /media/loc/en/contact/edit-person.png
