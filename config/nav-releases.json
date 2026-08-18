@@ -570,11 +570,18 @@
     ]
   },
   {
-    "group": "Database",
+    "group": "Database changelog",
     "pages": [
-      "release-notes/database/changes-12.2.2072",
-      "release-notes/database/changes-12.1.1412",
-      "release-notes/database/changes-12.0.342",
+      "release-notes/database/changeslog",
+      {
+        "group": "12",
+        "root": "release-notes/database/changes-12.2.2072",
+        "pages": [
+          "release-notes/database/changes-12.2.2072",
+          "release-notes/database/changes-12.1.1412",
+          "release-notes/database/changes-12.0.342"
+        ]
+      },
       {
         "group": "11",
         "root": "release-notes/database/changes-11.13.921",
