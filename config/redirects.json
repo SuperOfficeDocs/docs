@@ -10798,5 +10798,9 @@
   {
     "source": "/en/api/tooltip/*",
     "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/tooltip"
+  },
+  {
+    "source": "/en/service/data-exchange/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/service/data-exchange"
   }
 ]
