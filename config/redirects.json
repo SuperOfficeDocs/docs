@@ -10716,43 +10716,7 @@
     "destination": "/en/onsite/logging/*"
   },
   {
-    "source": "/en/api/security/index",
-    "destination": "/en/admin/user-management/role"
-  },
-  {
-    "source": "/en/api/security/role-based",
-    "destination": "/en/admin/user-management/role"
-  },
-  {
-    "source": "/en/api/security/encryption",
-    "destination": "/en/admin/user-management/role"
-  },
-  {
-    "source": "/en/api/security/sentry/index",
-    "destination": "/en/admin/user-management/role"
-  },
-  {
-    "source": "/en/api/security/sentry/overrides",
-    "destination": "/en/admin/user-management/role"
-  },
-  {
-    "source": "/en/api/security/sentry/com/*",
-    "destination": "/en/admin/user-management/role"
-  },
-  {
-    "source": "/en/api/security/sentry/entity/*",
-    "destination": "/en/admin/user-management/role"
-  },
-  {
-    "source": "/en/api/security/sentry/osql/*",
-    "destination": "/en/admin/user-management/role"
-  },
-  {
-    "source": "/en/api/security/sentry/rows/*",
-    "destination": "/en/admin/user-management/role"
-  },
-  {
-    "source": "/en/api/security/sentry/sql/*",
+    "source": "/en/api/security/*",
     "destination": "/en/admin/user-management/role"
   }
 ]
