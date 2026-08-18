@@ -4300,8 +4300,16 @@
     "destination": "/en/dashboard/learn/working-with-tiles"
   },
   {
+    "source": "/en/database/dictionary/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/database/dictionary"
+  },
+  {
     "source": "/en/database/getting-started/main-tables",
     "destination": "/en/database/getting-started#the-main-tables"
+  },
+  {
+    "source": "/en/database/getting-started/special-tables",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/database/getting-started/special-tables.md"
   },
   {
     "source": "/en/database/getting-started/overview",

@@ -15,7 +15,7 @@ The new design is one of the major changes for SuperOffice 8.1.
 
 ## Dictionary changes
 
-In SuperOffice 8.1, the dictionary has been changed. The new [CDD (Continuous Database Development)][1] dictionary allows partners and SuperOffice to add and modify tables without rebuilding the entire product.
+In SuperOffice 8.1, the dictionary has been changed. The new CDD (Continuous Database Development) dictionary allows partners and SuperOffice to add and modify tables without rebuilding the entire product.
 
 ## New tables
 
@@ -37,5 +37,4 @@ We have also added new fields on several tables and increased field length on ot
 
 Read more about changes in the database from [7.5 to 8.0][2].
 
-[1]: ../../en/database/dictionary/index
 [2]: ./changes-75-80

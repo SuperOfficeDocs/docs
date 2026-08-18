@@ -1609,20 +1609,8 @@
             "group": "Getting started",
             "pages": [
               "en/database/getting-started/index",
-              "en/database/getting-started/special-tables",
               "en/database/getting-started/naming-conventions",
               "en/database/getting-started/table-id-sequence"
-            ]
-          },
-          {
-            "group": "Dictionary",
-            "pages": [
-              "en/database/dictionary/dictionary-steps",
-              "en/database/dictionary/howto-make-db-changes",
-              "en/database/dictionary/imp-file-format",
-              "en/database/dictionary/custompriming-method",
-              "en/database/dictionary/impfilenames-method",
-              "en/database/dictionary/structure-method"
             ]
           },
           {
