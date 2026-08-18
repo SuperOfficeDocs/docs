@@ -2,7 +2,7 @@
 title: System integration
 uid: foreign_keys_integration
 description: Foreign keys integration
-author:
+author: SuperOffice Product and Engineering
 date: 08.18.2026
 keywords: ['database', 'ERP', 'foreignapp', 'FK']
 content_type: concept
