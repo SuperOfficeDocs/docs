@@ -576,7 +576,7 @@
       {
         "item": "API",
         "icon": "brackets-curly",
-        "pages": {
+        "groups": {
           "$ref": "./nav-api.json"
         }
       },
