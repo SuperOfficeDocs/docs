@@ -1,0 +1,661 @@
+[
+  {
+    "group": "SuperOffice APIs",
+    "pages": [
+      "en/api/overview/index"
+    ]
+  },
+  {
+    "group": "Develop Apps or Integrations",
+    "pages": [
+      "en/api/overview/develop-apps-or-integrations"
+    ]
+  },
+  {
+    "group": "NetServer fundamentals",
+    "pages": [
+      "en/api/overview/netserver"
+    ]
+  },
+  {
+    "group": "Quick-start",
+    "pages": [
+      "en/api/overview/quickstart"
+    ]
+  },
+  {
+    "group": "NuGet packages",
+    "root": "en/api/nuget/index",
+    "pages": [
+      "en/api/nuget/nuget-reference",
+      "en/api/nuget/update-nuget",
+      "en/api/nuget/crm-online-core",
+      "en/api/nuget/crm-online-mirroring",
+      "en/api/nuget/crm-online-winclient",
+      "en/api/nuget/crm-web",
+      "en/api/nuget/netserver-core",
+      "en/api/nuget/netserver-services"
+    ]
+  },
+  {
+    "group": "Authentication",
+    "pages": [
+      "en/api/authentication/overview",
+      {
+        "group": "Online authentication",
+        "pages": [
+          "en/api/authentication/online/which-flow-to-use",
+          "en/api/authentication/online/which-user-to-use",
+          "en/api/authentication/online/api",
+          {
+            "group": "Sign in user (front-channel)",
+            "pages": [
+              "en/api/authentication/online/sign-in-user/auth-code-flow",
+              "en/api/authentication/online/sign-in-user/hybrid-flow",
+              "en/api/authentication/online/sign-in-user/implicit-flow",
+              "en/api/authentication/online/sign-in-user/native-apps",
+              "en/api/authentication/online/sign-in-user/legacy"
+            ]
+          },
+          {
+            "group": "System user (back-channel)",
+            "pages": [
+              "en/api/authentication/online/auth-application/sign-system-user-token",
+              "en/api/authentication/online/auth-application/get-system-user-ticket"
+            ]
+          },
+          "en/api/authentication/online/validate-security-tokens",
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "en/api/authentication/online/troubleshooting/iframe-idp-auth"
+            ]
+          },
+          {
+            "group": "Certificates",
+            "pages": [
+              "en/api/authentication/online/certificates/add-certificate-snap-in",
+              "en/api/authentication/online/certificates/configure",
+              "en/api/authentication/online/certificates/override-resolver"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "group": "Localization",
+    "pages": [
+      "en/api/localization/index",
+      "en/api/localization/personnameformatter",
+      "en/api/localization/phoneformatter",
+      "en/api/localization/superoffice-crm-globalization",
+      "en/api/localization/superoffice-globalization",
+      {
+        "group": "Address",
+        "pages": [
+          "en/api/localization/address/addressformatter",
+          "en/api/localization/address/addresshelper"
+        ]
+      },
+      {
+        "group": "Culture",
+        "pages": [
+          "en/api/localization/culture/culturesettinghelper",
+          "en/api/localization/culture/culturedataformatter",
+          "en/api/localization/culture/display-in-current-culture",
+          "en/api/localization/culture/parse-values"
+        ]
+      },
+      {
+        "group": "Language",
+        "pages": [
+          "en/api/localization/language/create-resx-file",
+          "en/api/localization/language/create-resource-provider",
+          "en/api/localization/language/resource-providers",
+          "en/api/localization/language/translate-strings"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "Lists",
+    "pages": [
+      {
+        "group": "List web services",
+        "pages": [
+          "en/api/lists/services/listagent/index",
+          "en/api/lists/services/mdoagent/index",
+          {
+            "group": "How to",
+            "pages": [
+              "en/api/lists/services/how-to/get-all-lists",
+              "en/api/lists/services/how-to/get-list-entity",
+              "en/api/lists/services/how-to/get-list-item",
+              "en/api/lists/services/how-to/get-list-items",
+              "en/api/lists/services/how-to/create-list",
+              "en/api/lists/services/how-to/delete-list",
+              "en/api/lists/services/how-to/create-list-item",
+              "en/api/lists/services/how-to/delete-list-item"
+            ]
+          }
+        ]
+      }
+    ],
+    "root": "en/api/lists/index"
+  },
+  {
+    "group": "Web Services",
+    "pages": [
+      {
+        "group": "Endpoints",
+        "pages": [
+          "en/api/web-services/endpoints/agents-webapi/index",
+          "en/api/web-services/endpoints/rest-webapi/index",
+          "en/api/web-services/endpoints/get-webapi-version",
+          "en/api/web-services/endpoints/http-headers",
+          "en/api/web-services/endpoints/soap/index"
+        ],
+        "root": "en/api/web-services/endpoints/index"
+      },
+      {
+        "group": "Reference",
+        "pages": [
+          "en/api/reference/restful/index",
+          {
+            "group": "HTTP RPC Agent API",
+            "pages": [
+              "en/api/reference/restful/agent/index",
+              {
+                "group": "Operations",
+                "pages": {
+                  "$ref": "./nav-restful-agent-openapi.json"
+                }
+              }
+            ]
+          },
+          {
+            "group": "RESTful REST API",
+            "pages": [
+              "en/api/reference/restful/rest/index",
+              {
+                "group": "Operations",
+                "pages": {
+                  "$ref": "./nav-restful-rest-openapi.json"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Proxies",
+        "pages": [
+          {
+            "group": "Using WebAPI client",
+            "pages": [
+              "en/api/web-services/proxies/superoffice-webapi/index",
+              "en/api/web-services/proxies/superoffice-webapi/iauthorization",
+              "en/api/web-services/proxies/superoffice-webapi/systemuserclient",
+              "en/api/web-services/webapi/index"
+            ]
+          },
+          "en/api/web-services/proxies/built-in",
+          "en/api/web-services/proxies/custom"
+        ]
+      },
+      "en/api/web-services/so-timezone",
+      "en/onsite/install/netserver/setup-rest",
+      {
+        "group": "How to...",
+        "pages": [
+          {
+            "group": "Address",
+            "pages": [
+              "en/api/web-services/howto/address/get-localized-address",
+              "en/api/web-services/howto/address/set-localized-address"
+            ]
+          },
+          {
+            "group": "Company",
+            "pages": [
+              "en/api/web-services/howto/company/create-contact",
+              "en/api/web-services/howto/company/get-contact-via-services-layer",
+              "en/api/web-services/howto/company/get-all-contacts-rest",
+              "en/api/web-services/howto/company/get-interests-for-contact-services",
+              "en/api/web-services/howto/company/set-interest-on-off-services",
+              "en/api/web-services/howto/company/add-catlist-item-rest",
+              "en/api/web-services/howto/company/add-catlist-item-webapi-agents",
+              "en/api/web-services/howto/company/get-catlist-listagent",
+              "en/api/web-services/howto/company/get-catlist-mdoagent",
+              "en/api/web-services/howto/company/get-set-category-mdoagent"
+            ]
+          },
+          {
+            "group": "Contact (person)",
+            "pages": [
+              "en/api/web-services/howto/contact/get-persons-contactagent",
+              "en/api/web-services/howto/contact/get-persons-personagent",
+              "en/api/web-services/howto/contact/update-person-services",
+              "en/api/web-services/howto/contact/get-person-image-rest",
+              "en/api/web-services/howto/contact/get-person-image-options",
+              "en/api/web-services/howto/contact/update-person-image-rest",
+              "en/api/web-services/howto/contact/display-person-image-ws",
+              "en/api/web-services/howto/contact/display-image-from-blob-table-services"
+            ]
+          },
+          {
+            "group": "Custom objects",
+            "pages": [
+              {
+                "group": "Extra tables",
+                "pages": [
+                  "en/api/web-services/howto/custom-objects/rest-add-custom-object-row",
+                  "en/api/web-services/howto/custom-objects/rest-update-custom-object-row",
+                  "en/api/web-services/howto/custom-objects/rest-get-custom-object-row",
+                  "en/api/web-services/howto/custom-objects/rest-delete-custom-object-row",
+                  "en/api/web-services/howto/custom-objects/custom-objects-search"
+                ]
+              },
+              {
+                "group": "User-defined fields",
+                "pages": [
+                  "en/api/web-services/howto/custom-objects/rest-get-all-udef-fields",
+                  "en/api/web-services/howto/custom-objects/rest-create-udef-field",
+                  "en/api/web-services/howto/custom-objects/rest-update-udef-field",
+                  "en/api/web-services/howto/custom-objects/rest-delete-udef-field",
+                  "en/api/web-services/howto/custom-objects/set-udef-listitem-value",
+                  "en/api/web-services/howto/custom-objects/get-udef-list-and-values",
+                  "en/api/web-services/howto/custom-objects/find-contact-by-udef"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Dashboard",
+            "pages": [
+              "en/api/web-services/howto/dashboard/get-dashboard-rest"
+            ]
+          },
+          {
+            "group": "Diary",
+            "pages": [
+              "en/api/web-services/howto/diary/create-apt-services",
+              "en/api/web-services/howto/diary/create-recurring-appointment-services",
+              "en/api/web-services/howto/diary/create-invitation-services",
+              "en/api/web-services/howto/diary/get-invitations-services",
+              "en/api/web-services/howto/diary/accept-invitation-services",
+              "en/api/web-services/howto/diary/rest-create-videomeeting",
+              "en/api/web-services/howto/diary/rest-delete-videomeeting"
+            ]
+          },
+          {
+            "group": "Documents",
+            "pages": [
+              "en/api/web-services/howto/document/rest-add-document-template",
+              "en/api/web-services/howto/document/rest-generate-document",
+              "en/api/web-services/howto/document/services-create",
+              "en/api/web-services/howto/document/services-download",
+              "en/api/web-services/howto/document/services-update",
+              "en/api/web-services/howto/document/services-configure-access"
+            ]
+          },
+          {
+            "group": "Flows",
+            "pages": [
+              "en/api/web-services/howto/flows/rest-create-default-email-flow",
+              "en/api/web-services/howto/flows/rest-create-flow-trigger",
+              "en/api/web-services/howto/flows/rest-create-flow-step",
+              "en/api/web-services/howto/flows/rest-save-flow"
+            ]
+          },
+          {
+            "group": "Sale",
+            "pages": [
+              "en/api/web-services/howto/sale/link-sale-to-appointment"
+            ]
+          },
+          {
+            "group": "User preferences",
+            "pages": [
+              "en/api/web-services/howto/user-preferences/get-preferences-preferenceagent",
+              "en/api/web-services/howto/user-preferences/set-preferences-preferenceagent"
+            ]
+          }
+        ]
+      }
+    ],
+    "root": "en/api/web-services/index"
+  },
+  {
+    "group": "Bulk Operation",
+    "pages": [
+      {
+        "group": "Bulk Update",
+        "pages": [
+          "en/api/bulk-operations/bulk-update/using-bulk-update",
+          "en/api/bulk-operations/bulk-update/field-value-info",
+          "en/api/bulk-operations/bulk-update/operations-and-values",
+          "en/api/bulk-operations/bulk-update/entities-field-types",
+          "en/api/bulk-operations/bulk-update/ns-core-examples",
+          {
+            "group": "Reference",
+            "pages": [
+              "en/api/bulk-operations/bulk-update/reference/appointment-table",
+              "en/api/bulk-operations/bulk-update/reference/contact-table",
+              "en/api/bulk-operations/bulk-update/reference/document-table",
+              "en/api/bulk-operations/bulk-update/reference/person-table",
+              "en/api/bulk-operations/bulk-update/reference/project-table",
+              "en/api/bulk-operations/bulk-update/reference/sale-table",
+              "en/api/bulk-operations/bulk-update/reference/selection-table",
+              "en/api/bulk-operations/bulk-update/reference/ticket-table",
+              "en/api/bulk-operations/bulk-update/reference/extra-fields",
+              "en/api/bulk-operations/bulk-update/reference/user-defined-fields"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Mass Operations",
+        "pages": [
+          "en/api/bulk-operations/mass-operations/delete",
+          "en/api/bulk-operations/mass-operations/insert",
+          "en/api/bulk-operations/mass-operations/truncate",
+          "en/api/bulk-operations/mass-operations/upsert",
+          "en/api/bulk-operations/mass-operations/protected-tables"
+        ]
+      }
+    ],
+    "root": "en/api/bulk-operations/index"
+  },
+  {
+    "group": "Foreign keys",
+    "root": "en/api/foreign-keys/index",
+    "pages": [
+      "en/api/foreign-keys/foreignkey",
+      "en/api/foreign-keys/erp-integration",
+      "en/api/foreign-keys/set-and-get"
+    ]
+  },
+  {
+    "group": "Search APIs",
+    "pages": [
+      "en/api/search/full-text-search",
+      {
+        "group": "Find Selection API",
+        "pages": [
+          "en/api/search/find-selection/terminology",
+          "en/api/search/find-selection/how-to-search",
+          "en/api/search/find-selection/populate-selectable-columns",
+          "en/api/search/find-selection/operators",
+          "en/api/search/find-selection/date-range-as-criteria",
+          "en/api/search/find-selection/typical-search",
+          "en/api/search/find-selection/import-export-typical-search"
+        ],
+        "root": "en/api/search/find-selection/index"
+      },
+      {
+        "group": "Archive provider fundamentals",
+        "pages": [
+          "en/api/archive-providers/encoded-values",
+          "en/api/archive-providers/how-to-query",
+          "en/api/archive-providers/data-aggregation",
+          "en/api/archive-providers/aggregate-groupby",
+          "en/api/archive-providers/nested-aggregate-functions"
+        ],
+        "root": "en/api/archive-providers/index"
+      },
+      {
+        "group": "ArchiveAgent samples",
+        "pages": [
+          "en/api/archive-providers/howto/diary/invitation-archive"
+        ]
+      },
+      {
+        "group": "IArchiveAgent",
+        "root": "en/api/search/iarchiveagent/index",
+        "pages": [
+          "en/api/search/iarchiveagent/iarchiveagent",
+          "en/api/search/iarchiveagent/using-activityarchive-filters",
+          "en/api/search/iarchiveagent/using-criteria"
+        ]
+      },
+      {
+        "group": "IFindAgent",
+        "root": "en/api/search/ifindagent/index",
+        "pages": [
+          "en/api/search/ifindagent/dump-result",
+          "en/api/search/ifindagent/find-project-by-name",
+          "en/api/search/ifindagent/using-criteria"
+        ]
+      },
+      {
+        "group": "Selections",
+        "root": "en/api/search/selection/index",
+        "pages": [
+          "en/api/search/selection/dynamic-selections",
+          "en/api/search/selection/entity/add-member-to-static-selection-entities",
+          "en/api/search/selection/entity/create-dynamic-entity",
+          "en/api/search/selection/entity/get-selection-members-entity",
+          "en/api/search/selection/archive/get-selection-members-provider",
+          "en/api/search/selection/osql/add-member-to-static-selection-osql",
+          "en/api/search/selection/services/create-dynamic-services",
+          "en/api/search/selection/services/get-selection-members-services",
+          "en/api/search/selection/sql/add-person-to-selection"
+        ]
+      },
+      {
+        "group": "Archive provider reference",
+        "pages": {
+          "$ref": "./nav-archive-providers.json"
+        },
+        "root": "en/api/archive-providers/reference/index",
+        "directory": "accordion"
+      },
+      "en/api/mdo-providers/index",
+      {
+        "group": "MDO provider reference",
+        "pages": {
+          "$ref": "./nav-mdo-providers.json"
+        },
+        "root": "en/api/mdo-providers/reference/index",
+        "directory": "accordion"
+      },
+      {
+        "group": "OData Search in WebApi",
+        "pages": [
+          "en/api/search/odata/metadata",
+          "en/api/search/odata/associate",
+          "en/api/search/odata/boolean",
+          "en/api/search/odata/date",
+          "en/api/search/odata/datetime",
+          "en/api/search/odata/lists",
+          "en/api/search/odata/numbers",
+          "en/api/search/odata/strings",
+          "en/api/search/odata/unary",
+          "en/api/search/odata/using-filters",
+          "en/api/search/odata/dynamic-provider"
+        ],
+        "root": "en/api/search/odata/index"
+      }
+    ],
+    "root": "en/api/search/index"
+  },
+  {
+    "group": "Security",
+    "pages": [
+      {
+        "group": "Sentry",
+        "pages": [
+          {
+            "group": "Web services",
+            "pages": [
+              "en/api/security/sentry/services/fieldproperties",
+              "en/api/security/sentry/services/tableright"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "group": "Plug-ins",
+    "pages": [
+      {
+        "group": "Quote Connector",
+        "pages": [
+          "en/api/plugins/quote-connectors/implementation-guide",
+          {
+            "group": "Administration",
+            "pages": [
+              "en/api/plugins/quote-connectors/set-up",
+              "en/api/plugins/quote-connectors/edit-connection",
+              "en/api/plugins/quote-connectors/error-system"
+            ]
+          },
+          {
+            "group": "Connector use",
+            "pages": [
+              "en/api/plugins/quote-connectors/start-client",
+              "en/api/plugins/quote-connectors/capability-names",
+              "en/api/plugins/quote-connectors/create-quote",
+              "en/api/plugins/quote-connectors/adding-products",
+              "en/api/plugins/quote-connectors/find-product",
+              "en/api/plugins/quote-connectors/calc-price",
+              "en/api/plugins/quote-connectors/discounts",
+              "en/api/plugins/quote-connectors/save-quote",
+              "en/api/plugins/quote-connectors/send-quote",
+              "en/api/plugins/quote-connectors/approve-quote",
+              "en/api/plugins/quote-connectors/place-order",
+              "en/api/plugins/quote-connectors/addresses"
+            ]
+          },
+          {
+            "group": "API",
+            "pages": [
+              {
+                "group": "Online SOAP API",
+                "pages": [
+                  "en/api/plugins/quote-connectors/online-quote-connectors/soap-quote-connector-api",
+                  "en/api/plugins/quote-connectors/online-quote-connectors/rest-quote-connector-api"
+                ]
+              },
+              {
+                "group": "Onsite API",
+                "pages": [
+                  "en/api/plugins/quote-connectors/api/iquoteconnector",
+                  "en/api/plugins/quote-connectors/api/iquoteconnector2",
+                  "en/api/plugins/quote-connectors/api/iproductregistercache",
+                  "en/api/plugins/quote-connectors/api/reason-fields",
+                  "en/api/plugins/quote-connectors/api/rights-field",
+                  "en/api/plugins/quote-connectors/api/iarchiveprovider",
+                  "en/api/plugins/quote-connectors/api/quoteconnectorbase",
+                  "en/api/plugins/quote-connectors/api/quoteconnectorextender"
+                ]
+              },
+              {
+                "group": "Data Carrier definitions",
+                "pages": [
+                  "en/api/plugins/quote-connectors/api/data-carriers/addressinfo",
+                  "en/api/plugins/quote-connectors/api/data-carriers/extradatafieldtypeinfo",
+                  "en/api/plugins/quote-connectors/api/data-carriers/fieldmetadatainfo",
+                  "en/api/plugins/quote-connectors/api/data-carriers/isaleinfo",
+                  "en/api/plugins/quote-connectors/api/data-carriers/orderresponseinfo",
+                  "en/api/plugins/quote-connectors/api/data-carriers/placeorderresponseinfo",
+                  "en/api/plugins/quote-connectors/api/data-carriers/pluginresponseinfo",
+                  "en/api/plugins/quote-connectors/api/data-carriers/pricelistinfo",
+                  "en/api/plugins/quote-connectors/api/data-carriers/productextradatafieldinfo",
+                  "en/api/plugins/quote-connectors/api/data-carriers/productinfo",
+                  "en/api/plugins/quote-connectors/api/data-carriers/quotealternativecontextinfo",
+                  "en/api/plugins/quote-connectors/api/data-carriers/quotealternativeinfo",
+                  "en/api/plugins/quote-connectors/api/data-carriers/quotealternativewithlinesinfo",
+                  "en/api/plugins/quote-connectors/api/data-carriers/quoteconnectioninfo",
+                  "en/api/plugins/quote-connectors/api/data-carriers/quoteinfo",
+                  "en/api/plugins/quote-connectors/api/data-carriers/quotelineinfo",
+                  "en/api/plugins/quote-connectors/api/data-carriers/quotelistiteminfo",
+                  "en/api/plugins/quote-connectors/api/data-carriers/quotesentresponseinfo",
+                  "en/api/plugins/quote-connectors/api/data-carriers/quoteversioncontextinfo",
+                  "en/api/plugins/quote-connectors/api/data-carriers/quoteversioninfo",
+                  "en/api/plugins/quote-connectors/api/data-carriers/quoteversionresponseinfo",
+                  "en/api/plugins/quote-connectors/api/data-carriers/quoteversionstateinfo"
+                ]
+              },
+              {
+                "group": "Enums",
+                "pages": [
+                  "en/api/plugins/quote-connectors/api/enums/configfieldtype",
+                  "en/api/plugins/quote-connectors/api/enums/fieldaccessinfo",
+                  "en/api/plugins/quote-connectors/api/enums/quoteaction",
+                  "en/api/plugins/quote-connectors/api/enums/quotestatus",
+                  "en/api/plugins/quote-connectors/api/enums/valueoverrideinfo"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Scenarios",
+            "pages": [
+              "en/api/plugins/quote-connectors/scenarios/add-product",
+              "en/api/plugins/quote-connectors/scenarios/customer-specific-product-codes"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "ERP Connector",
+        "pages": [
+          "en/api/plugins/erp-connectors/terminology",
+          "en/api/plugins/erp-connectors/sync-operation",
+          "en/api/plugins/erp-connectors/automatic-field-mapping",
+          "en/api/plugins/erp-connectors/client-gui",
+          {
+            "group": "Architecture",
+            "pages": [
+              "en/api/plugins/erp-connectors/architecture/sync-service",
+              "en/api/plugins/erp-connectors/architecture/soap-service",
+              "en/api/plugins/erp-connectors/architecture/wcf-host"
+            ]
+          },
+          {
+            "group": "Working with ERP Sync onsite",
+            "pages": [
+              "en/api/plugins/erp-connectors/setup-connection",
+              "en/api/plugins/erp-connectors/search/show-fields",
+              "en/api/plugins/erp-connectors/setup-mapping",
+              "en/api/plugins/erp-connectors/setup-defaults",
+              "en/api/plugins/erp-connectors/ranking-fields",
+              "en/api/plugins/erp-connectors/import",
+              "en/api/plugins/erp-connectors/tutorial"
+            ]
+          },
+          {
+            "group": "Working with ERP Sync Online",
+            "pages": [
+              "en/api/plugins/erp-connectors/online/secure-in-online",
+              "en/api/plugins/erp-connectors/online/example-api"
+            ]
+          },
+          {
+            "group": "API reference",
+            "pages": [
+              "en/api/plugins/erp-connectors/api/ierpconnector",
+              "en/api/plugins/erp-connectors/api/field-meta-data-carrier",
+              "en/api/plugins/erp-connectors/api/erp-actor-carrier",
+              "en/api/plugins/erp-connectors/api/pluginresponseinfo",
+              "en/api/plugins/erp-connectors/api/field-value-formats-and-conventions"
+            ]
+          },
+          {
+            "group": "How-to search for actors",
+            "pages": [
+              "en/api/plugins/erp-connectors/search/search-operators"
+            ]
+          },
+          "en/api/plugins/erp-connectors/helpers",
+          "en/api/plugins/erp-connectors/sample"
+        ]
+      }
+    ],
+    "root": "en/api/plugins/index"
+  }
+]
