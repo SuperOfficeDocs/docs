@@ -6,7 +6,6 @@ author: SuperOffice Product and Engineering
 date:
 content_type: howto
 redirect_from: /en/api/netserver/foreign-keys/set-and-get
-hidden: true
 ---
 
 The following example shows how to set a foreign key to a Contact and how to retrieve a Contact using its foreign key.

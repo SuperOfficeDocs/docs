@@ -482,23 +482,6 @@
     "root": "en/api/search/index"
   },
   {
-    "group": "Security",
-    "pages": [
-      {
-        "group": "Sentry",
-        "pages": [
-          {
-            "group": "Web services",
-            "pages": [
-              "en/api/security/sentry/services/fieldproperties",
-              "en/api/security/sentry/services/tableright"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
     "group": "Plug-ins",
     "pages": [
       {

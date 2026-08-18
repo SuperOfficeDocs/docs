@@ -6,7 +6,6 @@ author: SuperOffice Product and Engineering
 date: 06.24.2016
 content_type: concept
 redirect_from: /en/api/netserver/foreign-keys/index
-hidden: true
 ---
 
 Foreign keys are designed to make it easy for 3rd parties to store extra keys needed by their application in the SuperOffice database. The `ForeignKey` property exists on the following objects:
