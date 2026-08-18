@@ -1,8 +1,28 @@
 [
-  "en/api/overview/index",
-  "en/api/overview/develop-apps-or-integrations",
-  "en/api/overview/netserver",
-  "en/api/overview/quickstart",
+  {
+    "group": "SuperOffice APIs",
+    "pages": [
+      "en/api/overview/index"
+    ]
+  },
+  {
+    "group": "Develop Apps or Integrations",
+    "pages": [
+      "en/api/overview/develop-apps-or-integrations"
+    ]
+  },
+  {
+    "group": "NetServer fundamentals",
+    "pages": [
+      "en/api/overview/netserver"
+    ]
+  },
+  {
+    "group": "Quick-start",
+    "pages": [
+      "en/api/overview/quickstart"
+    ]
+  },
   {
     "group": "NuGet packages",
     "root": "en/api/nuget/index",
