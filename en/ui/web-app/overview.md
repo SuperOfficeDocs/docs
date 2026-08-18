@@ -17,8 +17,8 @@ After you have installed the SuperOffice web application, you will see that the 
 
 The major components in the GUI are:
 
-* The [page builder framework][4] used in CRM.web. This means the config files for the framework and the many components and interfaces that the **PageBuilder** uses.
-* The [page, panel, card, and archive components][5] used to render the pages.
+* The page builder framework used in CRM.web. This means the config files for the framework and the many components and interfaces that the **PageBuilder** uses.
+* The page, panel, card, and archive components used to render the pages.
 * The [AJAX libraries][6] that integrate the web front end with the web server.
 
 ## Background
@@ -38,8 +38,6 @@ When creating your own controls and assemblies to be used by the application, yo
 [1]: https://www.nuget.org/packages/SuperOffice.Crm.Web/
 [2]: https://www.nuget.org/packages/SuperOffice.NetServer.Services/
 [3]: https://www.nuget.org/packages/SuperOffice.NetServer.Core/
-[4]: ./pagebuilder/index
-[5]: ./pagebuilder/config/index
 [6]: ./custom-ajax-methods
 [7]: ./strategic-goals
 [8]: ./technical-info

@@ -11,7 +11,7 @@ deployment: onsite
 
 ## Configuration Manager
 
-When accessed for the first time, the **Configuration Manager** loads and parses a base set of [system configuration files][3] that declare every page and dialog, type of control, interactive action, and menus that appear throughout the application.
+When accessed for the first time, the **Configuration Manager** loads and parses a base set of system configuration files that declare every page and dialog, type of control, interactive action, and menus that appear throughout the application.
 
 ![Web client page framework][img1]
 
@@ -21,7 +21,7 @@ The Configuration Manager builds a **large object graph** that represents a comp
 
 All configuration definitions are SOML configuration files that represent system pages defining all dependencies and UI pages defining all user-interface elements.
 
-Each request to the *default.aspx* page invokes the PageBuilder framework and uses [SuperState][2] to determine which panels, cards, views, and controls are shown.
+Each request to the *default.aspx* page invokes the PageBuilder framework and uses SuperState to determine which panels, cards, views, and controls are shown.
 
 **The components in a typical CRM web page:**
 
@@ -40,7 +40,7 @@ At the core of a UI page, its' definition declares the root page element, which 
 </page>
 ```
 
-The `data` element contains all [data-handler][6] elements used for data binding and persisting data changes. The example below references the `ContactEntityDataHandler`, used to retrieve and persist all company-related data.
+The `data` element contains all data-handler elements used for data binding and persisting data changes. The example below references the `ContactEntityDataHandler`, used to retrieve and persist all company-related data.
 
 ```XML
 <data>
@@ -75,7 +75,7 @@ When viewing the *SoMenuPanel.config* file, the contents begin with the base ele
 </panel>
 ```
 
-Panels have child elements called **cards**, which have child elements called **views**, which have child elements called **controls**, and so on. Page configurations are detailed in the [Web client page configuration][3] section.
+Panels have child elements called **cards**, which have child elements called **views**, which have child elements called **controls**, and so on. Page configurations are detailed in the Web client page configuration section.
 
 ## Filters
 
@@ -129,7 +129,7 @@ Filter filename: `SoFilterList.config`
 
 ## PageBuilder
 
-After completing the filter process, [PageBuilder][3] uses the final SOML structure of a page to, as the name applies, build the page. It uses implementations of a panel, card, view, control, and datahander to set up the different panels, cards, views, and controls in the right combination. 99 percent of the visible UI are the controls.
+After completing the filter process, PageBuilder uses the final SOML structure of a page to, as the name applies, build the page. It uses implementations of a panel, card, view, control, and datahander to set up the different panels, cards, views, and controls in the right combination. 99 percent of the visible UI are the controls.
 
 In addition to building the page, PageBuilder also makes sure the data handlers populate, collect form data, and perform page saves.
 
@@ -139,9 +139,9 @@ In addition to building the page, PageBuilder also makes sure the data handlers 
 
 One of the biggest challenges with the page framework was to recreate the dynamics and responsiveness of the Windows client. The Web client must be able to seamlessly reflect changes in not just the UI but in the current and supermode(SuperState) cache as well.
 
-Using a combination of configuration and [SuperState][2], the Web client can prevent full-page postbacks (causing flickering, lost focus, and position) by using the server-side callback mechanism in ASP.NET.
+Using a combination of configuration and SuperState, the Web client can prevent full-page postbacks (causing flickering, lost focus, and position) by using the server-side callback mechanism in ASP.NET.
 
-**SoProtocol** has everything needed to perform the necessary calculations that determine what, and what not, to update in the UI. Callback requests arrive as [SoProtocol][2] containing querystring key-value parameters. A module called **SoProtocolModule** parses SoProtocol strings and updates current SuperState changes with the parameters in the last request.
+**SoProtocol** has everything needed to perform the necessary calculations that determine what, and what not, to update in the UI. Callback requests arrive as SoProtocol containing querystring key-value parameters. A module called **SoProtocolModule** parses SoProtocol strings and updates current SuperState changes with the parameters in the last request.
 
 SoProtocol value changes are used by the **ContextFilter** to modify the configuration. Parts of the configuration that are not affected by the changes in SuperState/Current are removed. This means that almost all unnecessary parsing and rendering are eliminated.
 
@@ -185,10 +185,7 @@ Before the unchanged parts of the page are stripped away, we need to build the e
 
 5. Last but not least the context filter and many other filters. The main purpose is to reduce client output, enforce rules(rights) based on client state/user.
 
-[2]: ../pagebuilder/superstate/index
-[3]: ../pagebuilder/config/index
 [4]: ./change-page-config
-[6]: ../pagebuilder/datahandlers/index
 
 [img1]: /media/loc/en/ui/web-client-page-framework.png
 [img2]: /media/loc/en/ui/web-client-pagebuilder-framework2-1.png

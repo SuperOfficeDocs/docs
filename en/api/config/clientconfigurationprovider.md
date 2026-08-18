@@ -51,14 +51,12 @@ Multiple custom paths are a means to organize and separate features and third-pa
 
 Files in a custom path folder take **precedence** and override standard web-client configuration files. This means that if a file called *SoApplicationConfiguration.config* exists in a custom path, it will take priority and be used instead of the default *SoApplicationConfiguration.config* in the web applications installation folder.
 
-If the decision is to use a copy of the original file in a custom path, try to use one common folder that is shared among third-parties to ensure you do not override each other's settings. That said, it's recommended to use a [merge file][3] instead.
+If the decision is to use a copy of the original file in a custom path, try to use one common folder that is shared among third-parties to ensure you do not override each other's settings. That said, it's recommended to use a merge file instead.
 
 ## ValidateConfigurations
 
-[SOML][2] is PageBuilder XML that must conform to a well-defined schema. When set to true, `ValidateConfigurations` will validate all configurations based on respective schemas to ensure all markup is well-formed. Any errors found are shown in the browser.
+SOML is PageBuilder XML that must conform to a well-defined schema. When set to true, `ValidateConfigurations` will validate all configurations based on respective schemas to ensure all markup is well-formed. Any errors found are shown in the browser.
 
 See the [NetServer Core reference][1] for details about handling this programmatically.
 
 [1]: <xref:SuperOffice.Configuration.ConfigFile.ClientConfigurationProvider>
-[2]: ../../ui/web-app/pagebuilder/config/soml
-[3]: ../../ui/web-app/pagebuilder/config/merge-files-and-actions

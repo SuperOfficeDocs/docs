@@ -49,7 +49,7 @@ Examples:
 
 ## SoProtocol and SuperState
 
-SoProtocol drives the [SuperState][1], meaning when you set an [entity]_id equal to a value, the current representation of that entity is set by the ID. The SuperState is defined by the SoProtocol URL together with the values of SuperState history. If no SoProtocol is given, the last valid SuperState history will be used.
+SoProtocol drives the SuperState, meaning when you set an [entity]_id equal to a value, the current representation of that entity is set by the ID. The SuperState is defined by the SoProtocol URL together with the values of SuperState history. If no SoProtocol is given, the last valid SuperState history will be used.
 
 ## Find current state
 
@@ -88,7 +88,6 @@ To simplify executing `soprotocol` through a webpanel hosted inside of SuperOffi
 * [Open existing project][11]
 * [Create new project][12]
 
-[1]: /en/ui/web-app/pagebuilder/superstate/index
 [2]: ./navigation-points
 [4]: ./in-crmscript
 

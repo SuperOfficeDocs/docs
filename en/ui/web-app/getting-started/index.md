@@ -32,13 +32,13 @@ Like similar platforms, SuperOffice Web is comprised of several components that 
 
 Nearly all customizations involve changing at least one of the configuration files so that's the best place to continue this discussion.
 
-* [Page configuration][5] - the SuperOffice Markup Language (SOML) is the cornerstone of SuperOffice web client and used to define the structure of the web application.
+* Page configuration - the SuperOffice Markup Language (SOML) is the cornerstone of SuperOffice web client and used to define the structure of the web application.
 
   * Learn how to [change system config files][11]
 
 * [User controls][6] - how to create a user control that will be put inside two new panels in the Sale dialog.
 
-* [Data handlers][7] - to have control over what happens when data is retrieved and stored from a page, you will need to create your own data handler.
+* Data handlers - to have control over what happens when data is retrieved and stored from a page, you will need to create your own data handler.
 
 * [Custom MDO controls][8] you can create your own MDOs containing anything, whether that would be static data, data from another system, or specific data from SuperOffice. These controls have a lot built-in, like search capabilities and history.
 
@@ -54,9 +54,7 @@ To debug, use the developer tools of your browser and the SuperOffice [Diagnosti
 [2]: ./debug
 [3]: ./architecture
 [4]: ./set-up-custom-folder
-[5]: ../pagebuilder/config/soml
 [6]: ../tutorials/sale-foreignkeys/index
-[7]: ../pagebuilder/datahandlers/index
 [8]: ../tutorials/sale-foreignkeys/3-create-custom-mdo-control
 [9]: ../tutorials/custom-archive-control/index
 [10]: ../custom-ajax-methods
