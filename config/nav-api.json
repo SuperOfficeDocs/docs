@@ -7,7 +7,6 @@
     "group": "NuGet packages",
     "root": "en/api/nuget/index",
     "pages": [
-      "en/api/nuget/index",
       "en/api/nuget/nuget-reference",
       "en/api/nuget/update-nuget",
       "en/api/nuget/crm-online-core",
@@ -22,7 +21,6 @@
     "group": "Authentication",
     "root": "en/api/authentication/index",
     "pages": [
-      "en/api/authentication/index",
       "en/api/authentication/overview",
       "en/api/authentication/online/which-flow-to-use",
       "en/api/authentication/online/which-user-to-use",
@@ -65,7 +63,6 @@
     "group": "Localization",
     "root": "en/api/localization/index",
     "pages": [
-      "en/api/localization/index",
       "en/api/localization/personnameformatter",
       "en/api/localization/phoneformatter",
       "en/api/localization/superoffice-crm-globalization",
@@ -101,7 +98,6 @@
     "group": "Lists",
     "root": "en/api/lists/index",
     "pages": [
-      "en/api/lists/index",
       {
         "group": "List web services",
         "pages": [
@@ -128,12 +124,10 @@
     "group": "Web Services",
     "root": "en/api/web-services/index",
     "pages": [
-      "en/api/web-services/index",
       {
         "group": "Endpoints",
         "root": "en/api/web-services/endpoints/index",
         "pages": [
-          "en/api/web-services/endpoints/index",
           "en/api/web-services/endpoints/agents-webapi/index",
           "en/api/web-services/endpoints/rest-webapi/index",
           "en/api/web-services/endpoints/get-webapi-version",
@@ -313,7 +307,6 @@
     "group": "Bulk Operation",
     "root": "en/api/bulk-operations/index",
     "pages": [
-      "en/api/bulk-operations/index",
       {
         "group": "Bulk Update",
         "pages": [
@@ -355,7 +348,6 @@
     "group": "Foreign keys",
     "root": "en/api/foreign-keys/index",
     "pages": [
-      "en/api/foreign-keys/index",
       "en/api/foreign-keys/foreignkey",
       "en/api/foreign-keys/erp-integration",
       "en/api/foreign-keys/set-and-get"
@@ -365,13 +357,11 @@
     "group": "Search APIs",
     "root": "en/api/search/index",
     "pages": [
-      "en/api/search/index",
       "en/api/search/full-text-search",
       {
         "group": "Find Selection API",
         "root": "en/api/search/find-selection/index",
         "pages": [
-          "en/api/search/find-selection/index",
           "en/api/search/find-selection/terminology",
           "en/api/search/find-selection/how-to-search",
           "en/api/search/find-selection/populate-selectable-columns",
@@ -385,7 +375,6 @@
         "group": "Archive provider fundamentals",
         "root": "en/api/archive-providers/index",
         "pages": [
-          "en/api/archive-providers/index",
           "en/api/archive-providers/encoded-values",
           "en/api/archive-providers/how-to-query",
           "en/api/archive-providers/data-aggregation",
@@ -403,7 +392,6 @@
         "group": "IArchiveAgent",
         "root": "en/api/search/iarchiveagent/index",
         "pages": [
-          "en/api/search/iarchiveagent/index",
           "en/api/search/iarchiveagent/iarchiveagent",
           "en/api/search/iarchiveagent/using-activityarchive-filters",
           "en/api/search/iarchiveagent/using-criteria"
@@ -413,7 +401,6 @@
         "group": "IFindAgent",
         "root": "en/api/search/ifindagent/index",
         "pages": [
-          "en/api/search/ifindagent/index",
           "en/api/search/ifindagent/dump-result",
           "en/api/search/ifindagent/find-project-by-name",
           "en/api/search/ifindagent/using-criteria"
@@ -423,7 +410,6 @@
         "group": "Selections",
         "root": "en/api/search/selection/index",
         "pages": [
-          "en/api/search/selection/index",
           "en/api/search/selection/dynamic-selections",
           "en/api/search/selection/entity/add-member-to-static-selection-entities",
           "en/api/search/selection/entity/create-dynamic-entity",
@@ -456,7 +442,6 @@
         "group": "OData Search in WebApi",
         "root": "en/api/search/odata/index",
         "pages": [
-          "en/api/search/odata/index",
           "en/api/search/odata/metadata",
           "en/api/search/odata/associate",
           "en/api/search/odata/boolean",
@@ -476,7 +461,6 @@
     "group": "Plug-ins",
     "root": "en/api/plugins/index",
     "pages": [
-      "en/api/plugins/index",
       {
         "group": "Quote Connector",
         "pages": [
