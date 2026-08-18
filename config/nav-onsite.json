@@ -189,6 +189,59 @@
     ]
   },
   {
+    "group": "Web.config",
+    "root": "en/onsite/web-config/index",
+    "pages": [
+      "en/onsite/web-config/accessgateway",
+      "en/onsite/web-config/batchservice",
+      "en/onsite/web-config/client",
+      "en/onsite/web-config/clientconfigurationprovider",
+      "en/onsite/web-config/cloud",
+      "en/onsite/web-config/csssprite",
+      "en/onsite/web-config/customerservice",
+      "en/onsite/web-config/customproxy",
+      "en/onsite/web-config/data",
+      "en/onsite/web-config/diagnostics",
+      "en/onsite/web-config/documents",
+      "en/onsite/web-config/downloads",
+      "en/onsite/web-config/factory",
+      "en/onsite/web-config/featuretoggles",
+      "en/onsite/web-config/globalization",
+      "en/onsite/web-config/googlerecaptcha",
+      "en/onsite/web-config/infrastructure",
+      "en/onsite/web-config/intellisyncconnector",
+      "en/onsite/web-config/mail",
+      "en/onsite/web-config/messaging",
+      "en/onsite/web-config/oidclogin",
+      "en/onsite/web-config/pocket",
+      "en/onsite/web-config/reporter",
+      "en/onsite/web-config/scripting",
+      "en/onsite/web-config/security",
+      "en/onsite/web-config/services",
+      "en/onsite/web-config/soformsauthentication",
+      "en/onsite/web-config/subclients",
+      "en/onsite/web-config/superid",
+      "en/onsite/web-config/suspendedsite",
+      "en/onsite/web-config/sync",
+      "en/onsite/web-config/threading",
+      "en/onsite/web-config/timezone",
+      "en/onsite/web-config/webapi",
+      "en/onsite/web-config/webhooks",
+      "en/onsite/web-config/webservices"
+    ]
+  },
+  {
+    "group": "Logging",
+    "root": "en/onsite/logging/index",
+    "pages": [
+      "en/onsite/logging/filter-logs",
+      "en/onsite/logging/standard-netserver-log",
+      "en/onsite/logging/serilog",
+      "en/onsite/logging/configure-serilog",
+      "en/onsite/logging/create-custom-logger"
+    ]
+  },
+  {
     "group": "Integrate",
     "pages": [
       "en/onsite/integrate/web-client/index",

@@ -25,6 +25,6 @@ This path must resolve to the same location for farms/clusters. -->
 <add key="TemporaryPath" value="C:\temp-path" />
 ```
 
-[1]: ../../api/config/documents
+[1]: ../web-config/documents
 
 [img4]: /media/loc/en/onsite/allow-log-on-locally.png

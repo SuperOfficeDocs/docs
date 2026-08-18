@@ -91,7 +91,7 @@ By specifying the full name of this Organization Unit in the SuperOffice.config 
 
 ![image][img10]
 
-[1]: /en/api/config/security
+[1]: /en/onsite/web-config/security
 
 [img1]: /media/loc/en/online/1642-1987.jpg
 [img2]: /media/loc/en/online/1644-1989.jpg
