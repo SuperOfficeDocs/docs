@@ -53,7 +53,7 @@ Three tools do the work:
 
 ## Preview or validate the reference locally
 
-*.mintignore*'s "Exclude selected content folders" section, including the `en/automation/crmscript/reference/**` block, ships **fully commented out** by default — nothing in that section is actually excluded in the checked-in file. It's a set of workarounds for `mint dev`/`mint validate` hitting an `EMFILE: too many open files` ceiling on Windows, meant to be uncommented **locally and temporarily** by a contributor who actually hits that error, never committed active (see the `### Do not commit changes to this section without approval ###` marker above it). Re-verified 2026-08-18 with this tree fully unignored: `mint dev` reached "preview ready" with no EMFILE error at this repo's current page count, so this workaround isn't currently needed for CRMScript reference content specifically — if a future page-count increase brings the EMFILE ceiling back, swap in a different exclusion (for example, one of the language folders) rather than just adding more unignored content on top.
+CRMScript reference content previews normally with `mint dev`/`mint validate`. If you hit an `EMFILE: too many open files` error at this repo's current page count, exclude a different content folder in *.mintignore* instead (for example, one of the language folders) rather than adding more exclusions on top, and don't commit that change.
 
 ## Automated drift check
 
