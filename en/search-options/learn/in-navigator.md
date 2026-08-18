@@ -27,7 +27,7 @@ The Navigator FastSearcher runs two parallel searches:
 
 * A standard *begins-with* search with optional wildcard (%). In a phrase, the longest word is looked up first.
 
-* An *exact-match* *sounds-like* ([SoundEx][2]) search. If the phrase contains short words, multiple words are needed before look-up starts. The result is shown only if the standard search has 0 matches.
+* An *exact-match* *sounds-like* (SoundEx) search. If the phrase contains short words, multiple words are needed before look-up starts. The result is shown only if the standard search has 0 matches.
 
 ## Examples
 
@@ -36,6 +36,5 @@ The Navigator FastSearcher runs two parallel searches:
 * You can search for a contact in the FastSearcher field for **Companies** in the Navigator.
 
 [1]: ../../learn/basics/history
-[2]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/osql/soundx.md
 
 [img1]: /media/loc/en/search-options/search-find-fastsearcher.png
