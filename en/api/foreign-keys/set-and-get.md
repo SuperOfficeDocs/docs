@@ -3,10 +3,9 @@ title: How to set and get foreign keys
 uid: foreign_key_set_get
 description: How to set and get foreign keys
 author: SuperOffice Product and Engineering
-date:
+date: 08.18.2026
 content_type: howto
 redirect_from: /en/api/netserver/foreign-keys/set-and-get
-hidden: true
 ---
 
 The following example shows how to set a foreign key to a Contact and how to retrieve a Contact using its foreign key.

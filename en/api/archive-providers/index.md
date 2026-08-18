@@ -3,7 +3,7 @@ title: NetServer archive providers
 uid: archive_providers
 description: NetServer archive providers
 author: Tony Yates
-date: 12.02.2021
+date: 08.18.2026
 keywords: ['archive provider', 'NetServer', 'search']
 content_type: concept
 category: api
@@ -72,16 +72,6 @@ Namespace is `SuperOffice.CRM.ArchiveLists`.
 * [How to perform an archive provider query][3]
 * [Aggregation][4]
 
-## Deep dive
-
-* [Architecture][5]
-* [Interface definition and composition][10]
-* [Data classes][11]
-* [Client usage scenarios][12]
-* [Metadata][13]
-* [Providers][6], [Extenders][7], and [Joiners][8]
-* [Base and helper classes][9]
-
 ## Example
 
 The example below shows how we can read the name+department as one field, and the postal address city as a separate field. Unlike an entity, the archive will not load categories or email addresses unless they are requested.
@@ -119,12 +109,3 @@ using(SoSession newSession = SoSession.Authenticate("SAL0", ""))
 [2]: ./encoded-values
 [3]: ./how-to-query
 [4]: ./data-aggregation
-[5]: ./architecture
-[6]: ./providers
-[7]: ./extenders
-[8]: ./joiners
-[9]: ./base-and-helper-classes
-[10]: ./interfaces
-[11]: ./data-classes
-[12]: ./scenarios
-[13]: ./metadata

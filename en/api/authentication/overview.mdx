@@ -3,7 +3,7 @@ title: SuperOffice Authentication
 uid: authentication_overview
 description: Overview of SuperOffice API authentication.
 author: AnthonyYates
-date: 05.08.2018
+date: 08.18.2026
 keywords: ['security', 'identity']
 content_type: concept
 deployment: online, onsite
@@ -31,7 +31,7 @@ SuperOffice **Customer Service** (CS) capabilities are vast, but most functional
 
 SuperOffice **NetServer SOAP web services** are a complete set of service endpoints that support 100% of the SuperOffice web-client functionality. Both the CS and Windows client depend on NetServer web services as well.
 
-At NetServers' core are business entity and table row collections. They provide easy intuitive APIs for data access which most of web services depend on. What services don't use entity and row collections leverage NetServer's [Objectified SQL (OSQL)][2] classes for fast DB access, and is responsible for generating the database-vendor-specific SQL.
+At NetServers' core are business entity and table row collections. They provide easy intuitive APIs for data access which most of web services depend on. What services don't use entity and row collections leverage NetServer's Objectified SQL (OSQL) classes for fast DB access, and is responsible for generating the database-vendor-specific SQL.
 
 ### Reading advice
 
@@ -42,9 +42,6 @@ The objective here is to introduce you to the APIs and help get you past the fir
 * [About SuperOffice Online Identity Provider][3]
   * [How to authenticate using OAuth 2.0 / OpenID Connect][16]
 * [SuperOffice REST / WebAPI web services][8]
-* [NetServer web service custom proxies][9]
-* [NetServer Core & Service proxy authentication using SoSession][7]
-* [COM][6]
 
 ## NetServer configuration
 
@@ -53,31 +50,18 @@ All integrations that use one of the following nuget packages require an [applic
 * SuperOffice.NetServer.Core
 * SuperOffice.NetServer.Services
 
-This is not the case for integrations that use the [SuperOffice.WebApi][8] nuget package, or generate their own web service proxies from [SOAP WSDL][13] or [REST Swagger][14] files.
+This is not the case for integrations that use the [SuperOffice.WebApi][8] nuget package, or generate their own web service proxies from [REST Swagger][14] files.
 
 <Danger>
-The database connection settings are defined in the [Data element][1] of the application configuration. This is often the cause of connectivity issue, so if necessary consult the [NetServer configuration docs][15] to better understand those settings.
+The database connection settings are defined in the [Data element][1] of the application configuration. This is often the cause of connectivity issue, so if necessary consult the [NetServer configuration docs][10] to better understand those settings.
 </Danger>
 
-You might also be interested in:
-
-* [Configuring the anonymous user][4] (deprecated in version 9)
-* [Configuring the external user][5]
-
-[1]: ../config/data
-[2]: ../osql/index
+[1]: /en/onsite/web-config/data
 [3]: ../../online/identity/federated-auth
-[4]: ./onsite/config-anonymous-user
-[5]: ./onsite/config-external-user
-[6]: ./onsite/com/index
-[7]: ./onsite/sosession/index
 [8]: ../web-services/webapi/index
-[9]: ./onsite/custom-proxies/index
-[10]: ../config/index
+[10]: /en/onsite/web-config/index
 [11]: ../../automation/overview
-[13]: ../reference/soap/index
 [14]: ../web-services/endpoints/index
-[15]: ../config/index
 [16]: ../authentication/online/index
 
 [img1]: /media/loc/en/api/authentication/authenticate-overview.png

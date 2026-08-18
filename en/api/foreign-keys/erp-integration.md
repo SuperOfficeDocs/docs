@@ -3,11 +3,10 @@ title: System integration
 uid: foreign_keys_integration
 description: Foreign keys integration
 author:
-date: 11.08.2021
+date: 08.18.2026
 keywords: ['database', 'ERP', 'foreignapp', 'FK']
 content_type: concept
 redirect_from: /en/api/netserver/foreign-keys/erp-integration
-hidden: true
 ---
 
 Often a system integration approach will use the **Number fields** (for example, `Contact.Number1` or `Project.Number`).
