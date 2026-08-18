@@ -10802,5 +10802,13 @@
   {
     "source": "/en/service/data-exchange/*",
     "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/service/data-exchange"
+  },
+  {
+    "source": "/en/api/plugins/document/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/plugins/document/soarc-document-plugin.md"
+  },
+  {
+    "source": "/en/api/plugins/sentry/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/plugins/sentry"
   }
 ]

@@ -1089,7 +1089,6 @@
           {
             "group": "Plug-ins",
             "pages": [
-              "en/api/plugins/document/soarc-document-plugin",
               {
                 "group": "Quote Connector",
                 "pages": [
@@ -1242,13 +1241,6 @@
                   },
                   "en/api/plugins/erp-connectors/helpers",
                   "en/api/plugins/erp-connectors/sample"
-                ]
-              },
-              {
-                "group": "Sentry plug-in",
-                "pages": [
-                  "en/api/plugins/sentry/create-sentry-plugin",
-                  "en/api/plugins/sentry/use-sentry-plugin"
                 ]
               }
             ]
