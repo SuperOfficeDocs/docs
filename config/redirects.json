@@ -3832,14 +3832,6 @@
     "destination": "/en/api/search/selection/sql/add-person-to-selection"
   },
   {
-    "source": "/en/api/security/sentry/osql/index",
-    "destination": "/en/api/security/sentry/osql/distinct"
-  },
-  {
-    "source": "/en/api/security/sentry/sql/index",
-    "destination": "/en/api/security/sentry/sql/set-override-sql"
-  },
-  {
     "source": "/en/api/web-services/howto/company/create-contact-rest",
     "destination": "/en/api/web-services/howto/company/create-contact"
   },
@@ -10722,5 +10714,9 @@
   {
     "source": "/en/api/logging/*",
     "destination": "/en/onsite/logging/*"
+  },
+  {
+    "source": "/en/api/security/*",
+    "destination": "/en/admin/user-management/role"
   }
 ]
