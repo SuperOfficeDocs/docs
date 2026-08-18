@@ -10794,5 +10794,9 @@
   {
     "source": "/en/api/reference/soap/*",
     "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/reference/soap"
+  },
+  {
+    "source": "/en/api/tooltip/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/tooltip"
   }
 ]
