@@ -57,7 +57,7 @@ Du kan vidarebefordra ett komplext eller problematiskt ärende till en extern ko
 ![Lägg till mottagare vid massvidarebefordran av ärenden -screenshot][img1]
 
 [1]: ./index#open
-[2]: ./create#message
+[2]: ./create#fields
 
 [img1]: ../../../media/loc/en/request/forward-multiple-requests.png
 [img2]: ../../../media/loc/en/request/forward-add-recipient.png
