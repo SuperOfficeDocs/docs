@@ -19,7 +19,7 @@ The reference isn't hand-written. It's generated from hand-maintained DocFx `Yam
 Three tools do the work:
 
 * *tools/transform-crmscript.ps1* converts the YAML into the reference *.mdx* files.
-* *tools/generate-crmscript-nav.ps1* lists the generated *.mdx* files and writes *config/nav-crmscript-ref.json*, the flat page array that *nav-en.json*'s **CRMScript Reference** tab pulls in as `$ref`.
+* *tools/generate-crmscript-nav.ps1* lists the generated *.mdx* files, classifies each one by namespace and by its source YAML `type:` field (`Namespace`/`Class`/`Enum`), and writes *config/nav-crmscript-ref.json* — a nested Mintlify nav structure (**Global functions**, **Basic data types**, **Data Structures**, **Native**, and **NetServer** split into **Classes**/**Enums** sub-groups, matching the old DocFx site's taxonomy) that *nav-en.json*'s **CRMScript Reference** tab pulls in as `$ref`.
 * *tools/regenerate-crmscript-reference.ps1* runs both of the above, then `tools/verify-nav-paths.py`, in one step: the command to reach for in the how-tos below unless you specifically need just one stage.
 
 <Note>
@@ -37,23 +37,23 @@ Three tools do the work:
 ## Add a new class
 
 1. Add the new *.yml* file to *api-sources/crmscript/*.
-1. Run `tools/regenerate-crmscript-reference.ps1`. It generates the new *.mdx* file, regenerates *config/nav-crmscript-ref.json* (the new page is picked up automatically from the directory listing and sorted case-insensitively: no manual nav edit needed), and confirms every nav entry resolves to a real file.
+1. Run `tools/regenerate-crmscript-reference.ps1`. It generates the new *.mdx* file, regenerates *config/nav-crmscript-ref.json* (the new page is classified into the correct group automatically — by its filename's namespace prefix, and by its source YAML's `type:` field for the NetServer Classes/Enums split — and sorted case-insensitively within that group: no manual nav edit needed), and confirms every nav entry resolves to a real file.
 
 <Note>
-*en/automation/crmscript/reference/index.mdx* is hand-written, not generated. It only curates the **Global**, **Data Structures**, and **Native** sections. Add a link there only if the new class belongs in one of those three groups. NetServer and other classes are reachable through the left-hand accordion nav alone and don't need an *index.mdx* edit.
+*en/automation/crmscript/reference/index.mdx* is hand-written, not generated. It only curates the **Global**, **Data Structures**, and **Native** sections. Add a link there only if the new class belongs in one of those three groups. NetServer and other classes are reachable through the left-hand sidebar nav's own named groups alone and don't need an *index.mdx* edit.
 </Note>
 
 ## Remove a class
 
 1. Delete the *.yml* file from *api-sources/crmscript/*.
 1. Delete the corresponding *.mdx* file from *en/automation/crmscript/reference/* by hand. *transform-crmscript.ps1* only generates and updates files: it never deletes orphaned output.
-1. Either re-run `tools/generate-crmscript-nav.ps1` to regenerate *config/nav-crmscript-ref.json* without the removed page, or remove that one entry from the file by hand. Both are equally valid: the script is a convenience for the common case, not the only way to update the array.
+1. Either re-run `tools/generate-crmscript-nav.ps1` to regenerate *config/nav-crmscript-ref.json* without the removed page, or remove that one entry from the file by hand (it now lives inside one of the nested `pages` arrays, not a single flat list — find it by group first). Both are equally valid: the script is a convenience for the common case, not the only way to update the file.
 1. Remove any hand-written link from *index.mdx* if the class was listed there.
 1. Run `tools/verify-nav-paths.py config/nav-crmscript-ref.json` to confirm nothing still points at the removed page.
 
 ## Preview or validate the reference locally
 
-*.mintignore* currently excludes `en/automation/crmscript/reference/**` (except *index.mdx*) as one of several workarounds for `mint dev`/`mint validate` hitting an `EMFILE: too many open files` ceiling on Windows at this repo's current page count. To preview or validate CRMScript reference content locally, temporarily remove that exclusion block, and because the EMFILE limit is real, swap in a different exclusion in its place (for example, one of the language folders) rather than just adding more unignored content on top.
+CRMScript reference content previews normally with `mint dev`/`mint validate`. If you hit an `EMFILE: too many open files` error at this repo's current page count, exclude a different content folder in *.mintignore* instead (for example, one of the language folders) rather than adding more exclusions on top, and don't commit that change.
 
 ## Automated drift check
 

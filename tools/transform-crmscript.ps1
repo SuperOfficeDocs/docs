@@ -456,6 +456,10 @@ foreach ($yamlFile in $yamlFiles) {
     Add-Line $mdx (Build-Line @('uid: ', $mainUid.ToLower()))
     if ($isNamespace) {
         Add-Line $mdx (Build-Line @('title: Namespace ', $className))
+        # "Namespace" is a DocFx ManagedReference construct, not a real CRMScript
+        # language concept -- keep it out of the sidebar label (see #262).
+        $namespaceShortName = $className.Split('.')[-1]
+        Add-Line $mdx (Build-Line @('sidebarTitle: ', $namespaceShortName))
     } elseif ($isEnum) {
         Add-Line $mdx (Build-Line @('title: Enum ', $className))
     } else {
@@ -479,38 +483,67 @@ foreach ($yamlFile in $yamlFiles) {
 
     # Handle Namespace vs Enum vs Class differently
     if ($isNamespace) {
-        # Namespace format: list of child classes
+        # Namespace format: list of child classes and enums, under separate headings
         if ($mainItem.summary) {
             Add-Line $mdx (Clean-Description $mainItem.summary)
             Add-Line $mdx
         }
-        
-        Add-Line $mdx "## Classes"
-        Add-Line $mdx
-        
-        # Loop through children and create links with descriptions
-        foreach ($childUid in $mainItem.children) {
-            $childName = $childUid.Split('.')[-1]
-            $childLink = Get-TypeLink -Type $childUid
-            
-            # Try to read summary from child's YAML file
+
+        # Look up each child's real type up front so classes and enums can be
+        # rendered under separate headings instead of one "Classes" list that
+        # silently included enums too (see #262).
+        $childRecords = foreach ($childUid in $mainItem.children) {
             $childYamlFile = Join-Path $SourcePath ($childUid + '.yml')
+            $childType = $null
             $childSummary = ""
-            
+
             if (Test-Path $childYamlFile) {
                 $childLines = Get-Content $childYamlFile -Encoding UTF8
                 $childItems = Get-YamlItems -Lines $childLines
                 $childMainItem = $childItems | Where-Object { $_.uid -eq $childUid } | Select-Object -First 1
-                if ($childMainItem -and $childMainItem.summary) {
-                    $childSummary = $childMainItem.summary
+                if ($childMainItem) {
+                    $childType = $childMainItem.type
+                    if ($childMainItem.summary) {
+                        $childSummary = $childMainItem.summary
+                    }
                 }
             }
-            
+
+            [PSCustomObject]@{
+                Uid     = $childUid
+                Type    = $childType
+                Summary = $childSummary
+            }
+        }
+
+        $childClasses = $childRecords | Where-Object { $_.Type -ne 'Enum' }
+        $childEnums = $childRecords | Where-Object { $_.Type -eq 'Enum' }
+
+        Add-Line $mdx "## Classes"
+        Add-Line $mdx
+
+        foreach ($child in $childClasses) {
+            $childLink = Get-TypeLink -Type $child.Uid
             Add-Line $mdx (Build-Line @('### ', $childLink))
             Add-Line $mdx
-            if ($childSummary) {
-                Add-Line $mdx (Clean-Description $childSummary)
+            if ($child.Summary) {
+                Add-Line $mdx (Clean-Description $child.Summary)
                 Add-Line $mdx
+            }
+        }
+
+        if ($childEnums.Count -gt 0) {
+            Add-Line $mdx "## Enums"
+            Add-Line $mdx
+
+            foreach ($child in $childEnums) {
+                $childLink = Get-TypeLink -Type $child.Uid
+                Add-Line $mdx (Build-Line @('### ', $childLink))
+                Add-Line $mdx
+                if ($child.Summary) {
+                    Add-Line $mdx (Clean-Description $child.Summary)
+                    Add-Line $mdx
+                }
             }
         }
     } elseif ($isEnum) {
