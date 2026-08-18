@@ -1,27 +1,26 @@
 ---
-uid: table-kb_category_log
 title: kb_category_log table
 description: Who and when, if somebody edits a knowledge base folder
 generated: true
-keywords: ['database table kb_category_log']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import KbCategoryLog from "./includes/kb-category-log.md";
+import KbCategoryLog from "./includes/kb-category-log.mdx";
 
-# kb\_category\_log Table (291)
+## kb\_category\_log Table (291)
 
 Who and when, if somebody edits a knowledge base folder
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|kb\_category\_id|The id of the kb_category that triggered this action.|FK [kb_category](./kb-category)| |
-|user\_id|The id of the user that created this comment.|FK [ejuser](./ejuser)| |
-|log\_when|When the action occured.|DateTime|&#x25CF;|
+|id|The primary key (auto-incremented)|PK|No|
+|kb\_category\_id|The id of the kb_category that triggered this action.|FK [kb_category](./kb-category.mdx)|No|
+|user\_id|The id of the user that created this comment.|FK [ejuser](./ejuser.mdx)|No|
+|log\_when|When the action occured.|DateTime|Yes|
+
 
 ![kb_category_log table relationship diagram](/media/loc/en/database/tables/kb_category_log.png)
 
@@ -41,6 +40,7 @@ Who and when, if somebody edits a knowledge base folder
 |[ejuser](./ejuser)  |This table contains entries for the users of the system. |
 |[kb\_category](./kb-category)  |Knowledge base folder hierarchy |
 
+
 ## Replication Flags
 
 * None
@@ -48,3 +48,4 @@ Who and when, if somebody edits a knowledge base folder
 ## Security Flags
 
 * No access control via user's Role.
+

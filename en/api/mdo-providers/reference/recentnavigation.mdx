@@ -1,0 +1,89 @@
+---
+title: recentnavigation
+keywords: mdoprovider mdo provider recentnavigation
+description: MDO list provider for the Recent navigation history of the current associate - the ranked list of recently visited entities written by the ViewState agent's <c>UpsertRecentNavigation</c> operation. Items are returned most-recent first (descending <c>navigation_history.rank</c>). Keys of the form <c>&lt;table&gt;|&lt;pkfield&gt;=&lt;id&gt;</c> (e.g. <c>person|person_id=123</c>) are resolved to display names for known tables (currently contact, person, dashboard, email_flow, selection, project, sale, ticket and the virtual mailitem); anything else falls back to the raw key as name. An entry of a known table that resolves to nothing — the record was deleted, or the associate's rights changed and the sentry-filtered lookup no longer sees it — is left OUT of the list - it can no longer be opened, so it must not linger as a raw key. (The stored row stays; it ages out.) A key of a table with no resolver here is still returned raw, but the CRM client drops any entity key it receives still labelled with its own key — so a newly recorded entity table needs a resolver in one of the two layers or its entries never reach the user. That drop rule makes the return-field order load-bearing - row-level access filtering happens on the FIRST return field's table (<c>SoDataReader</c> checks <c>RF</c> on it), so every fetcher below puts the entity's own primary key first. Reordering <c>ReturnFields</c> would move the sentry onto a joined table and silently change which entries survive, not just how they are labelled. The name follows the functional spec's entry format (§4.1-4.9) - the record's own name followed by its context in parentheses — "Rema 1000 (Purchasing)", "John Smith (Rema 1000)". A record whose icon carries information of its own (the company's country flag §4.2, the sale's Sold/Lost/Stalled marker §4.4) also returns an <see cref="P:SuperOffice.CRM.Lists.ISoListItem.IconHint" /> that replaces the generic entity icon.
+generated: true
+content_type: reference
+envir: online
+---
+
+## "recentnavigation" MDO List
+MDO list provider for the Recent navigation history of the current associate: the ranked list of
+recently visited entities written by the ViewState agent's <c>UpsertRecentNavigation</c> operation.
+
+
+Items are returned most-recent first (descending <c>navigation_history.rank</c>). Keys of the form
+<c>&lt;table&gt;|&lt;pkfield&gt;=&lt;id&gt;</c> (e.g. <c>person|person_id=123</c>) are resolved to display
+names for known tables (currently contact, person, dashboard, email_flow, selection, project, sale,
+ticket and the virtual mailitem); anything else falls back to the raw key as name.
+
+
+An entry of a known table that resolves to nothing — the record was deleted, or the associate's
+rights changed and the sentry-filtered lookup no longer sees it — is left OUT of the list: it can
+no longer be opened, so it must not linger as a raw key. (The stored row stays; it ages out.)
+A key of a table with no resolver here is still returned raw, but the CRM client drops any entity
+key it receives still labelled with its own key — so a newly recorded entity table needs a resolver
+in one of the two layers or its entries never reach the user.
+
+
+That drop rule makes the return-field order load-bearing: row-level access filtering happens on the
+FIRST return field's table (<c>SoDataReader</c> checks <c>RF</c> on it), so every fetcher below puts
+the entity's own primary key first. Reordering <c>ReturnFields</c> would move the sentry onto a
+joined table and silently change which entries survive, not just how they are labelled.
+
+
+The name follows the functional spec's entry format (§4.1-4.9): the record's own name followed by
+its context in parentheses — "Rema 1000 (Purchasing)", "John Smith (Rema 1000)". A record whose
+icon carries information of its own (the company's country flag §4.2, the sale's Sold/Lost/Stalled
+marker §4.4) also returns an <see cref="P:SuperOffice.CRM.Lists.ISoListItem.IconHint" /> that replaces the generic entity icon.
+
+
+
+Implemented by the <see cref="T:SuperOffice.CRM.Lists.RecentNavigationListProvider">RecentNavigationListProvider</see> class.
+The name of the MDO list is 'recentnavigation'.
+
+## Additional Attributes
+
+| Description | Name | Example Value |
+|-----|-----|------|
+|Client whose recent navigation to fetch| client|Crm|
+
+
+
+
+
+## Sample Request
+
+```http!
+GET /api/v1/MDOList/recentnavigation
+Authorization: Basic dGplMDpUamUw
+Accept: application/json; charset=utf-8
+Accept-Language: *
+
+```
+
+## Sample Code
+```cs
+var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("recentnavigation", forceFlatList: true);
+foreach (var item in listProvider.RootItems) {
+    Console.WriteLine("{0} {1} {2} {3}", 
+         item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
+}
+```
+
+## Sample Output
+
+|Id   | Name  |StyleHint|ExtraInfo |
+| --- | ----- | ------- | -------- |
+| 2 | Example | | |
+
+
+## Related MDO Lists
+
+* "recentnavigationheadings"
+* "recentnavigationheadingswithallitem"
+* "recentnavigationheadingswithallitemwithnoselection"
+* "recentnavigationheadingswithnoselection"
+* "recentnavigationwithallitem"
+* "recentnavigationwithallitemwithnoselection"
+* "recentnavigationwithnoselection"

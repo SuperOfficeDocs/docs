@@ -1,30 +1,29 @@
 ---
-uid: table-message_header
 title: message_header table
 description: This table contains small pieces of information which is listed over the body for each message.
 generated: true
-keywords: ['database table message_header']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import MessageHeader from "./includes/message-header.md";
+import MessageHeader from "./includes/message-header.mdx";
 
-# message\_header Table (259)
+## message\_header Table (259)
 
 This table contains small pieces of information which is listed over the body for each message.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|message\_id|The id of the message this header entry is connected to.|FK [ej_message](./ej-message)| |
-|type|The type for this header entry.|type|&#x25CF;|
-|name|A name for this entry.|String(64)|&#x25CF;|
-|value|A value for this entry.|Clob|&#x25CF;|
-|std\_item|If this has a value, it indicates that a standard header text from the language database should be used - and witch one to use.       |std_item|&#x25CF;|
-|std\_item\_col|If this is 1, concatenate the standard item text with header name field, if 2 use header value field instead. If this col is 0, use the empty field - preferably the value column.       |std_item_col|&#x25CF;|
+|id|The primary key (auto-incremented)|PK|No|
+|message\_id|The id of the message this header entry is connected to.|FK [ej_message](./ej-message.mdx)|No|
+|type|The type for this header entry.|type|Yes|
+|name|A name for this entry.|String(64)|Yes|
+|value|A value for this entry.|Clob|Yes|
+|std\_item|If this has a value, it indicates that a standard header text from the language database should be used - and witch one to use.       |std_item|Yes|
+|std\_item\_col|If this is 1, concatenate the standard item text with header name field, if 2 use header value field instead. If this col is 0, use the empty field - preferably the value column.       |std_item_col|Yes|
+
 
 ![message_header table relationship diagram](/media/loc/en/database/tables/message_header.png)
 
@@ -42,6 +41,7 @@ This table contains small pieces of information which is listed over the body fo
 |------|-------------|
 |[ej\_message](./ej-message)  |This table contains the messages listed under tickets. |
 
+
 ## Replication Flags
 
 * None
@@ -49,3 +49,4 @@ This table contains small pieces of information which is listed over the body fo
 ## Security Flags
 
 * No access control via user's Role.
+

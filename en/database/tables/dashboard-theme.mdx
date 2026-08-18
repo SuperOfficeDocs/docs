@@ -1,35 +1,34 @@
 ---
-uid: table-dashboard_theme
 title: dashboard_theme table
 description: A set of style rules for the Dashboard
 generated: true
-keywords: ['database table dashboard_theme']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import DashboardTheme from "./includes/dashboard-theme.md";
+import DashboardTheme from "./includes/dashboard-theme.mdx";
 
-# dashboard\_theme Table (482)
+## dashboard\_theme Table (482)
 
 A set of style rules for the Dashboard
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|dashboard\_theme\_id|Primary key|PK| |
-|name|The name of this theme|String(4000)|&#x25CF;|
-|config|The JSON clob-formatted config|Clob|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|rank|Rank order|UShort|&#x25CF;|
-|client|Name of client(s) this theme is available to|String(255)|&#x25CF;|
-|isBuiltIn|Is this row populated by SuperOffice?|Bool|&#x25CF;|
-|style|Style value - for example &apos;light&apos; or &apos;dark&apos;|String(255)|&#x25CF;|
+|dashboard\_theme\_id|Primary key|PK|No|
+|name|The name of this theme|String(4000)|Yes|
+|config|The JSON clob-formatted config|Clob|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|rank|Rank order|UShort|Yes|
+|client|Name of client(s) this theme is available to|String(255)|Yes|
+|isBuiltIn|Is this row populated by SuperOffice?|Bool|Yes|
+|style|Style value - for example &apos;light&apos; or &apos;dark&apos;|String(255)|Yes|
+
 
 ![dashboard_theme table relationship diagram](/media/loc/en/database/tables/dashboard_theme.png)
 
@@ -47,6 +46,7 @@ A set of style rules for the Dashboard
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[dashboard](./dashboard)  |Describes a dashboard |
 
+
 ## Replication Flags
 
 * None
@@ -54,3 +54,4 @@ A set of style rules for the Dashboard
 ## Security Flags
 
 * No access control via user's Role.
+

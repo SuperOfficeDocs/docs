@@ -1,31 +1,30 @@
 ---
-uid: table-PaymentTermsHeadingLink
 title: PaymentTermsHeadingLink table
 description: Heading link table for PaymentTerms, for MDO item headings
 generated: true
-keywords: ['database table PaymentTermsHeadingLink']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Paymenttermsheadinglink from "./includes/paymenttermsheadinglink.md";
+import Paymenttermsheadinglink from "./includes/paymenttermsheadinglink.mdx";
 
-# PaymentTermsHeadingLink Table (429)
+## PaymentTermsHeadingLink Table (429)
 
 Heading link table for PaymentTerms, for MDO item headings
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|paymenttermsheadinglink\_id|Primary key|PK| |
-|paymentterms\_id|Link to PaymentTerms list table|FK [PaymentTerms](./paymentterms)| |
-|heading\_id|Link to Heading table|FK [Heading](./heading)| |
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|paymenttermsheadinglink\_id|Primary key|PK|No|
+|paymentterms\_id|Link to PaymentTerms list table|FK [PaymentTerms](./paymentterms.mdx)|No|
+|heading\_id|Link to Heading table|FK [Heading](./heading.mdx)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![PaymentTermsHeadingLink table relationship diagram](/media/loc/en/database/tables/PaymentTermsHeadingLink.png)
 
@@ -46,6 +45,7 @@ Heading link table for PaymentTerms, for MDO item headings
 |[Heading](./heading)  |Heading items for all MDO lists, lists that are grouped and filtered. |
 |[PaymentTerms](./paymentterms)  |The list of payment terms, in the internal product register |
 
+
 ## Replication Flags
 
 * Replicate changes DOWN from central to satellites and travellers.
@@ -55,3 +55,4 @@ Heading link table for PaymentTerms, for MDO item headings
 ## Security Flags
 
 * No access control via user's Role.
+

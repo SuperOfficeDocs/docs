@@ -1,34 +1,33 @@
 ---
-uid: table-kb_entry_comment
 title: kb_entry_comment table
 description: Comments to entries in the knowledge base, typically made by customers
 generated: true
-keywords: ['database table kb_entry_comment']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import KbEntryComment from "./includes/kb-entry-comment.md";
+import KbEntryComment from "./includes/kb-entry-comment.mdx";
 
-# kb\_entry\_comment Table (289)
+## kb\_entry\_comment Table (289)
 
 Comments to entries in the knowledge base, typically made by customers
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|kb\_entry\_id|The id of the kb_entry which this comment belongs to.|FK [kb_entry](./kb-entry)| |
-|time\_posted|When the comment was posted.|DateTime| |
-|publish\_status|Publish status of comment. 0 is undefined, 1 is not published, 2 is published|publish_status| |
-|author|The author of the entry|String(255)|&#x25CF;|
-|customer\_id|The id of the customer that created this comment.|FK [person](./person)| |
-|body|The contents of the comment.|Clob|&#x25CF;|
-|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent)| |
-|dbi\_key|The primary key for the integrated entry in the external datasource.|String(255)| |
-|dbi\_last\_syncronized|Last external syncronization.|DateTime| |
-|dbi\_last\_modified|When the entry was last modified.|DateTime| |
+|id|The primary key (auto-incremented)|PK|No|
+|kb\_entry\_id|The id of the kb_entry which this comment belongs to.|FK [kb_entry](./kb-entry.mdx)|No|
+|time\_posted|When the comment was posted.|DateTime|No|
+|publish\_status|Publish status of comment. 0 is undefined, 1 is not published, 2 is published|publish_status|No|
+|author|The author of the entry|String(255)|Yes|
+|customer\_id|The id of the customer that created this comment.|FK [person](./person.mdx)|No|
+|body|The contents of the comment.|Clob|Yes|
+|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent.mdx)|No|
+|dbi\_key|The primary key for the integrated entry in the external datasource.|String(255)|No|
+|dbi\_last\_syncronized|Last external syncronization.|DateTime|No|
+|dbi\_last\_modified|When the entry was last modified.|DateTime|No|
+
 
 ![kb_entry_comment table relationship diagram](/media/loc/en/database/tables/kb_entry_comment.png)
 
@@ -53,6 +52,7 @@ Comments to entries in the knowledge base, typically made by customers
 |[kb\_entry](./kb-entry)  |This table contains FAQ entries. |
 |[person](./person)  |Persons |
 
+
 ## Replication Flags
 
 * None
@@ -60,3 +60,4 @@ Comments to entries in the knowledge base, typically made by customers
 ## Security Flags
 
 * No access control via user's Role.
+

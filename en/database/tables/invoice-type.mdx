@@ -1,28 +1,27 @@
 ---
-uid: table-invoice_type
 title: invoice_type table
 description: A invoiceable item category (a product or service) that provides default invoice line values
 generated: true
-keywords: ['database table invoice_type']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import InvoiceType from "./includes/invoice-type.md";
+import InvoiceType from "./includes/invoice-type.mdx";
 
-# invoice\_type Table (361)
+## invoice\_type Table (361)
 
 A invoiceable item category (a product or service) that provides default invoice line values
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|name|A name for this invoice type|String(255)| |
-|description|A description of this invoice type|String(255)|&#x25CF;|
-|price\_pr\_unit|Price per unit|Int| |
-|flags|Various flags|UInt|&#x25CF;|
+|id|Primary key|PK|No|
+|name|A name for this invoice type|String(255)|No|
+|description|A description of this invoice type|String(255)|Yes|
+|price\_pr\_unit|Price per unit|Int|No|
+|flags|Various flags|UInt|Yes|
+
 
 ![invoice_type table relationship diagram](/media/loc/en/database/tables/invoice_type.png)
 
@@ -39,6 +38,7 @@ A invoiceable item category (a product or service) that provides default invoice
 |------|-------------|
 |[invoice\_entry](./invoice-entry)  |This table contain all invoices, connected to a message |
 
+
 ## Replication Flags
 
 * None
@@ -46,3 +46,4 @@ A invoiceable item category (a product or service) that provides default invoice
 ## Security Flags
 
 * No access control via user's Role.
+

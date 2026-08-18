@@ -1,26 +1,25 @@
 ---
-uid: table-hotlist
 title: hotlist table
 description: The table is used by the hotlist to store the relationship between tickets and users
 generated: true
-keywords: ['database table hotlist']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import Hotlist from "./includes/hotlist.md";
+import Hotlist from "./includes/hotlist.mdx";
 
-# hotlist Table (363)
+## hotlist Table (363)
 
 The table is used by the hotlist to store the relationship between tickets and users
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|The primary key (auto-incremented)|PK| |
-|user\_id|The reference to the user.|FK [ejuser](./ejuser)| |
-|ticket\_id|The ticket the user what to have in his hotlist|FK [ticket](./ticket)| |
+|id|The primary key (auto-incremented)|PK|No|
+|user\_id|The reference to the user.|FK [ejuser](./ejuser.mdx)|No|
+|ticket\_id|The ticket the user what to have in his hotlist|FK [ticket](./ticket.mdx)|No|
+
 
 ![hotlist table relationship diagram](/media/loc/en/database/tables/hotlist.png)
 
@@ -40,6 +39,7 @@ The table is used by the hotlist to store the relationship between tickets and u
 |[ejuser](./ejuser)  |This table contains entries for the users of the system. |
 |[ticket](./ticket)  |This table contains the tickets (requests) of the system. Its purpose should be evident. |
 
+
 ## Replication Flags
 
 * None
@@ -47,3 +47,4 @@ The table is used by the hotlist to store the relationship between tickets and u
 ## Security Flags
 
 * No access control via user's Role.
+

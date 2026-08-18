@@ -1,32 +1,31 @@
 ---
-uid: table-workflow_wait_for_action
 title: workflow_wait_for_action table
 description: Some steps wait for actions, this is info about those actions
 generated: true
-keywords: ['database table workflow_wait_for_action']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import WorkflowWaitForAction from "./includes/workflow-wait-for-action.md";
+import WorkflowWaitForAction from "./includes/workflow-wait-for-action.mdx";
 
-# workflow\_wait\_for\_action Table (535)
+## workflow\_wait\_for\_action Table (536)
 
 Some steps wait for actions, this is info about those actions
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|workflow\_wait\_for\_action\_id|Primary key|PK| |
-|workflow\_step\_id|The workflow step this instance belongs to|FK [workflow_step](./workflow-step)|&#x25CF;|
-|ActionType|The type of action|Enum [WorkflowWaitForActionType](./enums/workflowwaitforactiontype)|&#x25CF;|
-|rank|The rank of this action|Int|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
+|workflow\_wait\_for\_action\_id|Primary key|PK|No|
+|workflow\_step\_id|The workflow step this instance belongs to|FK [workflow_step](./workflow-step.mdx)|Yes|
+|ActionType|The type of action|Enum [WorkflowWaitForActionType](./enums/workflowwaitforactiontype.mdx)|Yes|
+|rank|The rank of this action|Int|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
 
 ![workflow_wait_for_action table relationship diagram](/media/loc/en/database/tables/workflow_wait_for_action.png)
 
@@ -44,6 +43,7 @@ Some steps wait for actions, this is info about those actions
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 |[workflow\_step](./workflow-step)  |A set of steps related to a workflow. |
 
+
 ## Replication Flags
 
 * None
@@ -51,3 +51,4 @@ Some steps wait for actions, this is info about those actions
 ## Security Flags
 
 * Sentry controls access to items in this table using user's Role and data rights matrix on the table's parent.
+

@@ -1,29 +1,28 @@
 ---
-uid: table-mail_in_uidl
 title: mail_in_uidl table
 description: This table is used to avoid spamming the system by importing the same message several times (normally a result of a crash somewhere). When a mailbox is openede, then unique id for each message is stored in this table, and then removed only when the message has been correctly imported and deleted from mailbox.
 generated: true
-keywords: ['database table mail_in_uidl']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import MailInUidl from "./includes/mail-in-uidl.md";
+import MailInUidl from "./includes/mail-in-uidl.mdx";
 
-# mail\_in\_uidl Table (272)
+## mail\_in\_uidl Table (272)
 
 This table is used to avoid spamming the system by importing the same message several times (normally a result of a crash somewhere). When a mailbox is openede, then unique id for each message is stored in this table, and then removed only when the message has been correctly imported and deleted from mailbox.
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|id|Primary key|PK| |
-|filter\_id|The mailbox for this UIDL entry.|FK [mail_in_filter](./mail-in-filter)| |
-|uidl|The actual UIDL (i.e. the unique string identifying a specific message).|String(2047)|&#x25CF;|
-|last\_checked|The last time this message was attempted to be imported.|DateTime|&#x25CF;|
-|status|The status of this UIDL entry (enum).|status|&#x25CF;|
-|retries|The number of attempts for importing this message.|Int|&#x25CF;|
+|id|Primary key|PK|No|
+|filter\_id|The mailbox for this UIDL entry.|FK [mail_in_filter](./mail-in-filter.mdx)|No|
+|uidl|The actual UIDL (i.e. the unique string identifying a specific message).|String(2047)|Yes|
+|last\_checked|The last time this message was attempted to be imported.|DateTime|Yes|
+|status|The status of this UIDL entry (enum).|status|Yes|
+|retries|The number of attempts for importing this message.|Int|Yes|
+
 
 ![mail_in_uidl table relationship diagram](/media/loc/en/database/tables/mail_in_uidl.png)
 
@@ -41,6 +40,7 @@ This table is used to avoid spamming the system by importing the same message se
 |------|-------------|
 |[mail\_in\_filter](./mail-in-filter)  |This table contains entries for the mailboxes the eJournal system is fetching mail from (POP3 or IMAP). |
 
+
 ## Replication Flags
 
 * None
@@ -48,3 +48,4 @@ This table is used to avoid spamming the system by importing the same message se
 ## Security Flags
 
 * No access control via user's Role.
+

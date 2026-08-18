@@ -1,35 +1,34 @@
 ---
-uid: table-time_keeping
 title: time_keeping table
 description: Time keeping for how much time a sale or project or other entity has spent in a given stage or other state
 generated: true
-keywords: ['database table time_keeping']
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
-import TimeKeeping from "./includes/time-keeping.md";
+import TimeKeeping from "./includes/time-keeping.mdx";
 
-# time\_keeping Table (504)
+## time\_keeping Table (505)
 
 Time keeping for how much time a sale or project or other entity has spent in a given stage or other state
 
 ## Fields
 
-| Name | Description | Type | Null |
+| Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
-|time\_keeping\_id|Primary key|PK| |
-|time\_keeping\_type|What we are keeping time of|Enum [TimeKeepingType](./enums/timekeepingtype)|&#x25CF;|
-|state\_id|The id of the state we are keeping time of (a sale stage, or other thing - given by time_keeping_type)|Int|&#x25CF;|
-|start\_time|When the time keeping started for the last change, not yet finished/accumulated - The time since start_time must be added to the accumulation of time. When accumulation is done start_time will be set to the minimum value. start_time &gt; min implies this is the current state (stage).|DateTime|&#x25CF;|
-|accumulated\_minutes|The previously accumulated time in minutes for the given state|Int|&#x25CF;|
-|registered|Registered when|UtcDateTime| |
-|registered\_associate\_id|Registered by whom|FK [associate](./associate)| |
-|updated|Last updated when|UtcDateTime| |
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate)| |
-|updatedCount|Number of updates made to this record|UShort| |
-|ownerTable|The table that is the owning entity|TableNumber| |
-|ownerRecord|Optional owner record id, if layout is bound to an owner|RecordId|&#x25CF;|
+|time\_keeping\_id|Primary key|PK|No|
+|time\_keeping\_type|What we are keeping time of|Enum [TimeKeepingType](./enums/timekeepingtype.mdx)|Yes|
+|state\_id|The id of the state we are keeping time of (a sale stage, or other thing - given by time_keeping_type)|Int|Yes|
+|start\_time|When the time keeping started for the last change, not yet finished/accumulated - The time since start_time must be added to the accumulation of time. When accumulation is done start_time will be set to the minimum value. start_time &gt; min implies this is the current state (stage).|DateTime|Yes|
+|accumulated\_minutes|The previously accumulated time in minutes for the given state|Int|Yes|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+|ownerTable|The table that is the owning entity|TableNumber|No|
+|ownerRecord|Optional owner record id, if layout is bound to an owner|RecordId|Yes|
+
 
 ![time_keeping table relationship diagram](/media/loc/en/database/tables/time_keeping.png)
 
@@ -47,6 +46,7 @@ Time keeping for how much time a sale or project or other entity has spent in a 
 |------|-------------|
 |[associate](./associate)  |Employees, resources and other users - except for External persons |
 
+
 ## Replication Flags
 
 * None
@@ -54,3 +54,4 @@ Time keeping for how much time a sale or project or other entity has spent in a 
 ## Security Flags
 
 * No access control via user's Role.
+
