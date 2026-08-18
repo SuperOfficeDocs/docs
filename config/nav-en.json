@@ -1312,14 +1312,6 @@
                 ]
               }
             ]
-          },
-          {
-            "group": "Tutorials",
-            "pages": [
-              "en/api/tutorials/itunes-like-activities/index",
-              "en/api/tutorials/so-ical-feed/index",
-              "en/api/tutorials/rss-feed-vb/index"
-            ]
           }
         ]
       },

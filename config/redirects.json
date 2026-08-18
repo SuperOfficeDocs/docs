@@ -4409,7 +4409,7 @@
   },
   {
     "source": "/en/diary/tutorials/*",
-    "destination": "/en/api/tutorials/*"
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/tutorials"
   },
   {
     "source": "/en/diary/video-meetings/*",
@@ -10734,5 +10734,9 @@
   {
     "source": "/en/api/web-extensions/*",
     "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/web-extensions"
+  },
+  {
+    "source": "/en/api/tutorials/*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/tree/main/docs/en/api/tutorials"
   }
 ]

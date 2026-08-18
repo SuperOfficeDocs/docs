@@ -141,5 +141,5 @@ Supported in version **Services86** and higher, when used in SOAP requests, the 
 [1]: ../../online/identity/federated-auth
 [2]: ../../api/authentication/online/auth-application/index
 [4]: ../../api/authentication/online/index
-[7]: ../../api/tutorials/minimal-csharp-app/overview
+[7]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/tutorials/minimal-csharp-app/overview.mdx
 [10]: https://online.superoffice.com/login/
