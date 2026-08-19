@@ -1473,3 +1473,96 @@ html:not(.dark) .prose td {
 .dark .cmf-social:hover img {
   opacity: 1;
 }
+
+/* ─── WIDE VIEWPORT LAYOUT (#268) ─────────────────────────── */
+/* Mintlify's Aspen theme caps the whole 3-column shell at a fixed
+ * `max-w-8xl` (92rem/1472px, `#body-content`), with the sidebar
+ * (`#sidebar-content`, 18rem) and TOC (`#table-of-contents-layout`,
+ * 19rem) further fixed in absolute width - confirmed live via DOM
+ * measurement (2026-08-19): the shell stops growing well before very
+ * wide viewports (1920px+), leaving hundreds of pixels of unused margin
+ * on each side. No documented Mintlify config lever exists for this
+ * (checked docs.json's schema and Mintlify's Settings/Themes docs) - this
+ * overrides their internal, undocumented container ids/classes directly,
+ * so re-verify these selectors still exist after any Mintlify platform
+ * upgrade rather than assuming this silently keeps working.
+ *
+ * Gated behind a min-width well above the point where the un-widened
+ * shell already reaches its own natural maximum, so every breakpoint at
+ * or below it - including the existing 1024px/tablet/mobile responsive
+ * behavior - is completely untouched.
+ *
+ * All three columns scale by the exact same 1.2x factor rather than only
+ * widening content against fixed sidebar/TOC widths - preserving the
+ * current visual proportions is what an earlier, abandoned attempt at
+ * this got wrong (independently resizing just the content column
+ * produced wide empty gutters or an unbalanced layout against the
+ * still-fixed sidebar/TOC). The 8 `max-width: 80rem` rules used by
+ * `mode: "custom"` landing/header/footer pages are the one deliberate
+ * exception - see their own rule below for why. */
+@media (min-width: 1536px) {
+  /* Real regression caught live (2026-08-19): #body-content and
+   * #content-area both render on `mode: "custom"` pages too (home,
+   * Guides welcome, Integrations, Release Notes index) with DIFFERENT,
+   * mutually exclusive intended behavior there - #body-content's real
+   * class is a Tailwind peer-variant, `peer-[.is-custom]:max-w-none
+   * peer-[.is-not-custom]:max-w-8xl` (not the literal class `max-w-8xl`
+   * a first pass assumed), and #content-area's class on a custom page is
+   * a completely different `w-full` with no `calc(100% - 28rem)` at all.
+   * `max-width: none` on custom pages is what lets their full-bleed
+   * calc(-50vw...) hero-band background span edge-to-edge - an
+   * unconditional override broke that, gluing the whole page to the left
+   * with a large blank gap on the right. Fixed by replicating the same
+   * peer condition Tailwind uses: `#navbar` is the peer, carrying
+   * `is-custom`/`is-not-custom` as a sibling of #body-content, so only
+   * apply when navbar is confirmed `is-not-custom`. */
+  #navbar.is-not-custom ~ #body-content {
+    max-width: 110.4rem !important; /* 92rem * 1.2 */
+  }
+
+  #content-container.max-w-6xl {
+    max-width: 86.4rem !important; /* 72rem * 1.2 */
+  }
+
+  #sidebar-content {
+    width: 21.6rem !important; /* 18rem * 1.2 */
+  }
+
+  #table-of-contents-layout {
+    width: 22.8rem !important; /* 19rem * 1.2 */
+  }
+
+  /* #content-area's own Tailwind width is `calc(100% - 28rem)`, reserving
+   * space for the TOC-side column - kept in sync with
+   * #content-side-layout's own scaled max-width below, since both encode
+   * the same 28rem reservation independently. Same peer-guard as
+   * #body-content above - custom pages' own #content-area is a
+   * different `w-full` element with no reservation to keep in sync. */
+  #content-side-layout {
+    max-width: 33.6rem !important; /* 28rem * 1.2 */
+  }
+
+  #navbar.is-not-custom ~ #body-content #content-area {
+    width: calc(100% - 33.6rem) !important;
+  }
+
+  /* Deliberately widened beyond the 1.2x factor applied everywhere else
+   * in this file (direct instruction, 2026-08-19): these 8 rules'
+   * original 80rem vs. the shell's own 92rem was already a ~13% gap on
+   * live `main` today (custom pages read narrower than regular content
+   * pages) - scaling both by the same 1.2x preserved that exact ratio,
+   * just at a bigger, more visually noticeable absolute gap (287px vs.
+   * 192px). Matched to 110.4rem - the same scaled value as
+   * #body-content's own shell width above - so custom and regular pages
+   * read as the same width instead of preserving the pre-existing gap. */
+  #home-content,
+  #subcategory,
+  #category-hero h1,
+  #category-hero p,
+  #category-landing,
+  .conceptual-content h2,
+  .conceptual-content [class*="Columns"],
+  #custom-mode-footer-inner {
+    max-width: 110.4rem !important; /* matches #body-content's shell width, not 80rem * 1.2 */
+  }
+}
