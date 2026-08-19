@@ -15,6 +15,12 @@ left untouched and reported separately, since inventing a fallback for an
 unknown shape risks a wrong or misleading label reappearing on every future
 regen unnoticed.
 
+Scans both `.md` and `.mdx` (fixed 2026-08-19, #266): this tree moved to
+`.mdx` the day after this fix originally landed (#232, one day after
+#272), and the workflow's `git ls-files -- '*.md'` filter meant it had
+been silently inert against every `.mdx` regen since - confirmed live
+that `sidebarTitle` was in fact missing again on the `.mdx` files.
+
 Frontmatter is isolated the same way as tools/migration/rename-version-property.py
 (and reformat-keywords.py before it): match `^(---\\n)(.*?\\n)(---\\n?)(.*)$`
 (DOTALL, non-greedy) against the file with CRLF normalized to LF first, and
@@ -51,7 +57,7 @@ ENUM_TITLE_RE = re.compile(r"^Enum values for (.+)$")
 
 def list_path_files(scope):
     out = subprocess.run(
-        ["git", "ls-files", "--", "*.md"],
+        ["git", "ls-files", "--", "*.md", "*.mdx"],
         cwd=REPO_ROOT,
         capture_output=True,
         text=True,
@@ -64,7 +70,7 @@ def list_path_files(scope):
 def process_file(rel_path, apply_changes):
     """Returns a dict describing the outcome, or None if out of scope."""
     path = REPO_ROOT / rel_path
-    if not path.is_file() or path.suffix != ".md":
+    if not path.is_file() or path.suffix not in (".md", ".mdx"):
         return None
 
     raw = path.read_bytes()

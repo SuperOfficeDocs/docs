@@ -37,6 +37,12 @@ scope unasked, not an oversight.
 file that already has the correct `title` but not yet `sidebarTitle` (or
 vice versa) only gets the missing piece written.
 
+Scans both `.md` and `.mdx` (fixed 2026-08-19, #266): this tree moved to
+`.mdx` the day after this fix originally landed (#232, one day after
+#273), and the workflow's `git ls-files -- '*.md'` filter meant it had
+been silently inert against every `.mdx` regen since - confirmed live
+that both fields were in fact missing again on the `.mdx` files.
+
 Frontmatter is isolated the same way as tools/migration/rename-version-property.py:
 match `^(---\\n)(.*?\\n)(---\\n?)(.*)$` (DOTALL, non-greedy) against the file
 with CRLF normalized to LF first, and only ever edit group 2. BOM is
@@ -81,7 +87,7 @@ SEGMENT_RE = re.compile(
 
 def list_path_files(scope):
     out = subprocess.run(
-        ["git", "ls-files", "--", "*.md"],
+        ["git", "ls-files", "--", "*.md", "*.mdx"],
         cwd=REPO_ROOT,
         capture_output=True,
         text=True,
@@ -107,7 +113,7 @@ def derive_names(title):
 def process_file(rel_path, apply_changes):
     """Returns a dict describing the outcome, or None if out of scope."""
     path = REPO_ROOT / rel_path
-    if not path.is_file() or path.suffix != ".md":
+    if not path.is_file() or path.suffix not in (".md", ".mdx"):
         return None
 
     raw = path.read_bytes()

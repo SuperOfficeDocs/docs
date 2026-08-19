@@ -35,6 +35,7 @@ jobs:
         with:
           files: |
             en/api/mdo-providers/reference/**/*.md
+            en/api/mdo-providers/reference/**/*.mdx
 
       - name: Set up Python
         if: steps.changed.outputs.any_changed == 'true'
