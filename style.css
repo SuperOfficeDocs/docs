@@ -936,6 +936,32 @@ body:has(#content > h1) #table-of-contents-content > li.toc-item:first-child {
   color: var(--dune-white) !important;
 }
 
+/* Wrap long single-line code samples instead of scrolling horizontally
+ * (#266). Scoped to an explicit `.wrap-code-samples` marker div (see
+ * tools/ci/apply-code-wrap.py) rather than applied globally, since most
+ * multi-line indented code elsewhere in the docs relies on the default
+ * `white-space: pre` to preserve exact formatting without unexpected
+ * mid-line breaks.
+ *
+ * Verified live: `white-space: pre-wrap` alone isn't enough. Mintlify's
+ * Shiki-rendered `<code>` has no width constraint of its own (sizes to its
+ * unwrapped content, here 1359px, wider than `<pre>`'s 423px, since `<pre>`
+ * itself uses `overflow-x: visible` rather than clipping/scrolling its
+ * child) - so `pre-wrap` never gets a narrower box to actually wrap text
+ * within. Constraining `<code>` to 100% of `<pre>`'s width is what makes
+ * the wrap take visual effect. `!important` throughout: needed to reliably
+ * beat Mintlify's own Shiki code-block styles. */
+.wrap-code-samples pre,
+.wrap-code-samples pre code {
+  white-space: pre-wrap !important;
+  overflow-wrap: break-word !important;
+}
+
+.wrap-code-samples pre code {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
 /* ─── TABLES ───────────────────────────────────────────────── */
 /* LM only: alternating row colours + green header.
  * DM: explicit resets so none of the LM rules bleed through. */

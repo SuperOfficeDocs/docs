@@ -1,0 +1,63 @@
+name: Generated reference overflow auto-fix
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'tools/ci/wide-mode-pages.txt'
+      - 'tools/ci/code-wrap-pages.txt'
+      - 'en/database/tables/**'
+      - 'en/api/archive-providers/reference/**'
+      - 'en/api/mdo-providers/reference/**'
+
+# Automatically cancel in-progress runs on the same branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  apply-fixes:
+    name: "Apply mode:\"wide\" and code-wrap to the maintained page lists"
+    runs-on: ubuntu-latest
+    # A fork PR's default token can't push back to the fork - skip cleanly
+    # rather than fail loudly.
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    steps:
+      - name: Checkout PR head
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # Re-checks every page on both maintained lists, not just this PR's
+      # changed files - the point is the invariant "every listed page has
+      # the fix", regardless of whether an ADO regen touched the page
+      # itself or a human edited a list. Both lists are small, so this is
+      # cheap to run in full every time.
+      - name: Apply mode:"wide" to listed pages
+        run: python tools/ci/apply-wide-mode.py --apply
+
+      - name: Apply code-sample wrapping to listed pages
+        run: python tools/ci/apply-code-wrap.py --apply
+
+      - name: Commit and push fixes, if any
+        env:
+          HEAD_REF: ${{ github.event.pull_request.head.ref }}
+        run: |
+          if git diff --quiet; then
+            echo "No overflow-fix changes needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add en/database/tables en/api/archive-providers/reference en/api/mdo-providers/reference
+          git commit -m "Apply mode:\"wide\" / code-wrap to listed overflow pages (#266)"
+          git push origin "HEAD:$HEAD_REF"

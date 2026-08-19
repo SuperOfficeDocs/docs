@@ -21,10 +21,27 @@ only ever needs to check one direction.
 
 Only files whose frontmatter has `generated: true` are ever reported as
 delete candidates - the same signal #164/#165 already use to distinguish
-this content from hand-authored pages that happen to live alongside it
-(e.g. `en/database/tables/index-by-id.mdx` is linked from `index.mdx` but
-was missing from nav - a real nav gap, not stale content; fixed directly in
-config/nav-database-tables.json rather than ever being a delete candidate).
+this content from hand-authored pages that happen to live alongside it.
+
+One exemption, found live (2026-08-19) as a false positive rather than a
+real gap: a page with `hidden: true` frontmatter (e.g.
+`en/database/tables/index-by-id`, linked from `index`'s own body but
+deliberately excluded from the sidebar/search index) is reachable by
+design without a nav-*.json entry at all - exempted outright rather than
+reported.
+
+Note on each tree's own root/landing page (e.g. `.../reference/index`):
+this script only ever reads a tree's own dedicated `nav-<tree>.json`
+(a flat pages list), never the parent file (`nav-api.json`/`nav-en.json`)
+that wires that tree's group into the sidebar via a `"root"` reference -
+so a root page is only recognized as nav-reachable if it's *also*
+listed inside its own tree's `nav-<tree>.json`, matching the convention
+`nav-archive-providers.json`/`nav-mdo-providers.json` already follow
+(both redundantly list their own `.../reference/index` as an ordinary
+entry). `nav-database-tables.json` was missing that same entry -
+fixed there directly rather than adding cross-file `root` resolution to
+this script for a pattern only one tree needed.
+
 Anything stale-looking but not marked `generated: true` is reported
 separately, for manual review, and never deleted.
 
@@ -52,6 +69,7 @@ TREES = [
 PAGE_EXTENSIONS = (".md", ".mdx")
 SKIP_DIRS = {"includes"}  # MDX-imported snippet fragments, not standalone pages
 GENERATED_RE = re.compile(r"^generated:\s*true\s*$", re.MULTILINE)
+HIDDEN_RE = re.compile(r"^hidden:\s*true\s*$", re.MULTILINE)
 
 
 def find_page_strings(node, out):
@@ -86,15 +104,22 @@ def collect_files(folder, repo_root):
     return files
 
 
-def is_generated(path):
+def read_frontmatter(path):
     with open(path, "rb") as f:
         raw = f.read()
     text = raw.decode("utf-8-sig", errors="replace")
     if not text.startswith("---"):
-        return False
+        return ""
     end = text.find("\n---", 3)
-    frontmatter = text[:end] if end != -1 else text
+    return text[:end] if end != -1 else text
+
+
+def is_generated(frontmatter):
     return bool(GENERATED_RE.search(frontmatter))
+
+
+def is_hidden(frontmatter):
+    return bool(HIDDEN_RE.search(frontmatter))
 
 
 def main():
@@ -120,7 +145,10 @@ def main():
         for key, path in sorted(files.items()):
             if key in nav_set:
                 continue
-            if is_generated(path):
+            frontmatter = read_frontmatter(path)
+            if is_hidden(frontmatter):
+                continue
+            if is_generated(frontmatter):
                 stale_generated.append((key, path))
             else:
                 stale_unmarked.append((key, path))

@@ -1,0 +1,11 @@
+# Maintained list of generated reference pages whose fenced code samples
+# should wrap long lines instead of scrolling horizontally (see issue #266).
+#
+# These pages are deliberately NOT given `mode: "wide"` (see
+# tools/ci/wide-mode-pages.txt) - losing the right TOC column was judged
+# worse than a long code line wrapping, for this content specifically.
+# One repo-relative page path per line, no extension. Comments (#) and
+# blank lines are ignored. Append as more overflowing code samples are
+# found/reported.
+
+en/api/mdo-providers/reference/activelanguage
