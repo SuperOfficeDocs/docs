@@ -372,7 +372,7 @@
           "FreeText_Agent"
         ],
         "summary": "Regenerate Index",
-        "description": "Wipe and regenerate the freetext index by scanning the database (freetext\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Wipe and regenerate the freetext index by scanning the database (freetext search will be unavailable while this operation runs\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1FreeTextAgent_RegenerateIndex",
         "parameters": [
           {
@@ -606,10 +606,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {

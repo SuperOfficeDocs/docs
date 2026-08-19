@@ -167,7 +167,7 @@
           "Sentry_Agent"
         ],
         "summary": "Get Table Right By Ownership",
-        "description": "Return the TableRight from the relationship between the current user and the\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Return the TableRight from the relationship between the current user and the given user and group.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1SentryAgent_GetTableRightByOwnership",
         "parameters": [
           {
@@ -317,7 +317,7 @@
           "Sentry_Agent"
         ],
         "summary": "Get Function Rights",
-        "description": "Get a string array of all functions rights for the role of the current\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Get a string array of all functions rights for the role of the current associate.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1SentryAgent_GetFunctionRights",
         "parameters": [
           {
@@ -594,7 +594,7 @@
           "Sentry_Agent"
         ],
         "summary": "Can Create Appointment In Associate Diaries",
-        "description": "CanCreateAppointmentInAssociateDiaries will check if the current associate can\n\nCanCreateAppointmentInAssociateDiaries will only check against associates that are diary owners. If none of the associates listed in the associateIds parameter is a diary owner, the method will return true.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "CanCreateAppointmentInAssociateDiaries will check if the current associate can create appointments in diaries belonging to the associates listed in associateIds.\n\nCanCreateAppointmentInAssociateDiaries will only check against associates that are diary owners. If none of the associates listed in the associateIds parameter is a diary owner, the method will return true.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1SentryAgent_CanCreateAppointmentInAssociateDiaries",
         "parameters": [
           {
@@ -744,7 +744,7 @@
           "Sentry_Agent"
         ],
         "summary": "Can Create Appointment In Each Associates Diary",
-        "description": "CanCreateAppointmentInEachAssociateDiary will check if the current associate\n\nCanCreateAppointmentInEachAssociateDiary will only check against associates that are diary owners. If none of the associates listed in the associateIds parameter is a diary owner, the method will return true.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "CanCreateAppointmentInEachAssociateDiary will check if the current associate can create appointments in diaries belonging to the associates listed in associateIds.\n\nCanCreateAppointmentInEachAssociateDiary will only check against associates that are diary owners. If none of the associates listed in the associateIds parameter is a diary owner, the method will return true.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1SentryAgent_CanCreateAppointmentInEachAssociatesDiary",
         "parameters": [
           {
@@ -912,7 +912,7 @@
           "Sentry_Agent"
         ],
         "summary": "Can Create Appointment In All Diaries",
-        "description": "CanCreateAppointmentInAllDiaries will check if the current associate can create\n\nCanCreateAppointmentInAssociateDiaries will only check against associates that are diary owners.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "CanCreateAppointmentInAllDiaries will check if the current associate can create appointments in diaries belonging all other associates.\n\nCanCreateAppointmentInAssociateDiaries will only check against associates that are diary owners.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1SentryAgent_CanCreateAppointmentInAllDiaries",
         "parameters": [
           {
@@ -1021,7 +1021,7 @@
           "Sentry_Agent"
         ],
         "summary": "Get Table Right By Contact Ownership",
-        "description": "Return the TableRight from the relationship between the current user and the\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Return the TableRight from the relationship between the current user and the given user and group.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1SentryAgent_GetTableRightByContactOwnership",
         "parameters": [
           {
@@ -1173,10 +1173,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {

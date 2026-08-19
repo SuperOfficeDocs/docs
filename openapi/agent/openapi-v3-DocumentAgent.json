@@ -17,7 +17,7 @@
           "Document_Agent"
         ],
         "summary": "Get Contact Documents By Template Type",
-        "description": "Method that returns a specified number of document appointments within a time\n\nThe document appointments belong to the contact specified. \r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of document appointments within a time range, filtered by document template type.\n\nThe document appointments belong to the contact specified. \r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_GetContactDocumentsByTemplateType",
         "parameters": [
           {
@@ -185,7 +185,7 @@
           "Document_Agent"
         ],
         "summary": "Get Contact Documents By Template Heading",
-        "description": "Method that returns a specified number of document appointments within a time\n\nThe document appointments belong to the contact specified. The heading represents a grouping or filtering of document templates.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of document appointments within a time range, filtered by the document template heading.\n\nThe document appointments belong to the contact specified. The heading represents a grouping or filtering of document templates.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_GetContactDocumentsByTemplateHeading",
         "parameters": [
           {
@@ -353,7 +353,7 @@
           "Document_Agent"
         ],
         "summary": "Get Contact Documents",
-        "description": "Method that returns a specified number of document appointments within a time\n\nThe document appointments belong to the contact specified. \r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of document appointments within a time range.\n\nThe document appointments belong to the contact specified. \r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_GetContactDocuments",
         "parameters": [
           {
@@ -521,7 +521,7 @@
           "Document_Agent"
         ],
         "summary": "Get Published Person Documents By Date",
-        "description": "Method that returns a specified number of published document appointments\n\nThe document appointments belong to the person specified or the document is in a project the person belongs to. \r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of published document appointments within a time range.\n\nThe document appointments belong to the person specified or the document is in a project the person belongs to. \r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_GetPublishedPersonDocumentsByDate",
         "parameters": [
           {
@@ -857,7 +857,7 @@
           "Document_Agent"
         ],
         "summary": "Get Project Member Documents By Template Types",
-        "description": "Method that returns a specified number of document appointments within a time\n\nThe document appointments belong to the project member specified. \r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of document appointments within a time range, filtered by document template types.\n\nThe document appointments belong to the project member specified. \r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_GetProjectMemberDocumentsByTemplateTypes",
         "parameters": [
           {
@@ -1025,7 +1025,7 @@
           "Document_Agent"
         ],
         "summary": "Get Project Member Documents By Template Type",
-        "description": "Method that returns a specified number of document appointments within a time\n\nThe document appointments belong to the project member specified. \r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of document appointments within a time range, filtered by document template type.\n\nThe document appointments belong to the project member specified. \r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_GetProjectMemberDocumentsByTemplateType",
         "parameters": [
           {
@@ -1193,7 +1193,7 @@
           "Document_Agent"
         ],
         "summary": "Get Project Member Documents By Template Heading",
-        "description": "Method that returns a specified number of document appointments within a time\n\nThe document appointments belong to the project member specified. The heading represents a grouping or filtering of document templates.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of document appointments within a time range, filtered by document template heading.\n\nThe document appointments belong to the project member specified. The heading represents a grouping or filtering of document templates.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_GetProjectMemberDocumentsByTemplateHeading",
         "parameters": [
           {
@@ -1361,7 +1361,7 @@
           "Document_Agent"
         ],
         "summary": "Get Project Member Documents",
-        "description": "Method that returns a specified number of document appointments within a time\n\nThe document appointments belong to the project member specified. \r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of document appointments within a time range.\n\nThe document appointments belong to the project member specified. \r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_GetProjectMemberDocuments",
         "parameters": [
           {
@@ -1529,7 +1529,7 @@
           "Document_Agent"
         ],
         "summary": "Get Project Documents By Template Types",
-        "description": "Method that returns a specified number of document appointments within a time\n\nThe document appointments belong to the project specified. \r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of document appointments within a time range, filtered by document template types.\n\nThe document appointments belong to the project specified. \r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_GetProjectDocumentsByTemplateTypes",
         "parameters": [
           {
@@ -1697,7 +1697,7 @@
           "Document_Agent"
         ],
         "summary": "Get Project Documents By Template Type",
-        "description": "Method that returns a specified number of document appointments within a time\n\nThe document appointments belong to the project specified. \r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of document appointments within a time range, filtered by document template type.\n\nThe document appointments belong to the project specified. \r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_GetProjectDocumentsByTemplateType",
         "parameters": [
           {
@@ -1865,7 +1865,7 @@
           "Document_Agent"
         ],
         "summary": "Get Project Documents By Template Heading",
-        "description": "Method that returns a specified number of document appointments within a time\n\nThe document appointments belong to the project specified. The heading represents a grouping or filtering of document templates.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of document appointments within a time range, filtered by document template heading.\n\nThe document appointments belong to the project specified. The heading represents a grouping or filtering of document templates.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_GetProjectDocumentsByTemplateHeading",
         "parameters": [
           {
@@ -2033,7 +2033,7 @@
           "Document_Agent"
         ],
         "summary": "Get Project Documents",
-        "description": "Method that returns a specified number of document appointments within a time\n\nThe document appointments belong to the project specified. \r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of document appointments within a time range.\n\nThe document appointments belong to the project specified. \r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_GetProjectDocuments",
         "parameters": [
           {
@@ -2201,7 +2201,7 @@
           "Document_Agent"
         ],
         "summary": "Get Person Documents By Template Types",
-        "description": "Method that returns a specified number of document appointments within a time\n\nThe document appointments belong to the person specified. \r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of document appointments within a time range, filtered by document template types.\n\nThe document appointments belong to the person specified. \r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_GetPersonDocumentsByTemplateTypes",
         "parameters": [
           {
@@ -2369,7 +2369,7 @@
           "Document_Agent"
         ],
         "summary": "Get Person Documents By Template Type",
-        "description": "Method that returns a specified number of document appointments within a time\n\nThe document appointments belong to the person specified. \r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of document appointments within a time range, filtered by document template type.\n\nThe document appointments belong to the person specified. \r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_GetPersonDocumentsByTemplateType",
         "parameters": [
           {
@@ -2537,7 +2537,7 @@
           "Document_Agent"
         ],
         "summary": "Get Person Documents By Template Heading",
-        "description": "Method that returns a specified number of document appointments within a time\n\nThe document appointments belong to the person specified. The heading represents a grouping or filtering of document templates.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of document appointments within a time range, filtered by document template heading.\n\nThe document appointments belong to the person specified. The heading represents a grouping or filtering of document templates.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_GetPersonDocumentsByTemplateHeading",
         "parameters": [
           {
@@ -2705,7 +2705,7 @@
           "Document_Agent"
         ],
         "summary": "Get Person Documents By Date",
-        "description": "Method that returns a specified number of document appointments within a time\n\nThe document appointments belong to the person specified. \r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of document appointments within a time range.\n\nThe document appointments belong to the person specified. \r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_GetPersonDocumentsByDate",
         "parameters": [
           {
@@ -2873,7 +2873,7 @@
           "Document_Agent"
         ],
         "summary": "Get Documents By Template Heading",
-        "description": "Method that returns document appointments, filtered by the document template\n\nThe heading represents a grouping or filtering of document templates.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns document appointments, filtered by the document template heading.\n\nThe heading represents a grouping or filtering of document templates.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_GetDocumentsByTemplateHeading",
         "parameters": [
           {
@@ -3241,7 +3241,7 @@
           "Document_Agent"
         ],
         "summary": "Save Suggested Document Entity",
-        "description": "Updates the existing SuggestedDocumentEntity or creates a new\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Updates the existing SuggestedDocumentEntity or creates a new SuggestedDocumentEntity if the id parameter is 0.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_SaveSuggestedDocumentEntity",
         "parameters": [
           {
@@ -3820,7 +3820,7 @@
           "Document_Agent"
         ],
         "summary": "Save Document Entity",
-        "description": "Updates the existing DocumentEntity or creates a new DocumentEntity if the id\n\nSave the document entity. If the entity already exists and the file name of the incoming entity is different from the existing one, a corresponding renaming of the physical document will be attempted. This may cause an amended file name to be substituted into the document entity, since a document plugin may have aribitrary rules on file names and collisions. Clients should always inspect the return value from this call and not assume that what they sent for saving is the final truth.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Updates the existing DocumentEntity or creates a new DocumentEntity if the id parameter is 0.\n\nSave the document entity. If the entity already exists and the file name of the incoming entity is different from the existing one, a corresponding renaming of the physical document will be attempted. This may cause an amended file name to be substituted into the document entity, since a document plugin may have aribitrary rules on file names and collisions. Clients should always inspect the return value from this call and not assume that what they sent for saving is the final truth.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_SaveDocumentEntity",
         "parameters": [
           {
@@ -6264,7 +6264,7 @@
           "Document_Agent"
         ],
         "summary": "Create New Physical Document From Template With Custom Tags",
-        "description": "Create a new physical document based on a document template and store it in the\n\nTags are substituted according to the provided id's.  Use GetDocumentStream to obtain the created document content. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Create a new physical document based on a document template and store it in the document archive.\n\nTags are substituted according to the provided id's.  Use GetDocumentStream to obtain the created document content. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_CreateNewPhysicalDocumentFromTemplateWithCustomTags",
         "parameters": [
           {
@@ -6414,7 +6414,7 @@
           "Document_Agent"
         ],
         "summary": "Create New Physical Document From Template With Custom Tags2",
-        "description": "Create a new physical document based on a document template and store it in the\n\nTags are substituted according to the provided id's.  Use GetDocumentStream to obtain the created document content. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Create a new physical document based on a document template and store it in the document archive.\n\nTags are substituted according to the provided id's.  Use GetDocumentStream to obtain the created document content. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_CreateNewPhysicalDocumentFromTemplateWithCustomTags2",
         "parameters": [
           {
@@ -6564,7 +6564,7 @@
           "Document_Agent"
         ],
         "summary": "Substitute Template Variables",
-        "description": "Parse the source string, and replace any template variable tags with their\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Parse the source string, and replace any template variable tags with their values, based on the ID's given in the other parameters.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_SubstituteTemplateVariables",
         "parameters": [
           {
@@ -6714,7 +6714,7 @@
           "Document_Agent"
         ],
         "summary": "Substitute Template Variables With Custom Tags",
-        "description": "Parse the source string, and replace any template variable tags with their\n\n<p/>This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Parse the source string, and replace any template variable tags with their values, based on the ID's given in the other parameters.\n\n<p/>This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_SubstituteTemplateVariablesWithCustomTags",
         "parameters": [
           {
@@ -6864,7 +6864,7 @@
           "Document_Agent"
         ],
         "summary": "Substitute Template Variables With Custom Tags2",
-        "description": "Parse the source string, and replace any template variable tags with their\n\n<p/>This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Parse the source string, and replace any template variable tags with their values, based on the ID's given in the other parameters.\n\n<p/>This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_SubstituteTemplateVariablesWithCustomTags2",
         "parameters": [
           {
@@ -7592,7 +7592,7 @@
           "Document_Agent"
         ],
         "summary": "Create New Physical Document From Template",
-        "description": "Create a new document content based on a document template and store it in the\n\nTags are substituted according to the provided id's.  Use GetDocumentStream to obtain the created document. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Create a new document content based on a document template and store it in the document archive.\n\nTags are substituted according to the provided id's.  Use GetDocumentStream to obtain the created document. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_CreateNewPhysicalDocumentFromTemplate",
         "parameters": [
           {
@@ -7742,7 +7742,7 @@
           "Document_Agent"
         ],
         "summary": "Substitute Merge Document Template Variables",
-        "description": "Parse the source document, and replace any template variable tags with their\n\n<p/> The source document should be of type MergeDraft. This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Parse the source document, and replace any template variable tags with their values, based on the associate Id.\n\n<p/> The source document should be of type MergeDraft. This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_SubstituteMergeDocumentTemplateVariables",
         "parameters": [
           {
@@ -8006,7 +8006,7 @@
           "Document_Agent"
         ],
         "summary": "Substitute Merge Document Template Variables2",
-        "description": "Parse the source document, and replace any template variable tags with their\n\n<p/> The source document should be of type MergeDraft. This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Parse the source document, and replace any template variable tags with their values, based on the associate Id.\n\n<p/> The source document should be of type MergeDraft. This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_SubstituteMergeDocumentTemplateVariables2",
         "parameters": [
           {
@@ -8270,7 +8270,7 @@
           "Document_Agent"
         ],
         "summary": "Substitute Template Variables Ex",
-        "description": "Parse the source string, and replace any template variable tags with their\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Parse the source string, and replace any template variable tags with their values, based on the identities, custom values and entities specified in the other parameters.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_SubstituteTemplateVariablesEx",
         "parameters": [
           {
@@ -8420,7 +8420,7 @@
           "Document_Agent"
         ],
         "summary": "Verify Get Document Stream",
-        "description": "Verify that the requested document stream exists, and that we can access it,\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Verify that the requested document stream exists, and that we can access it, without actually getting the stream.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_VerifyGetDocumentStream",
         "parameters": [
           {
@@ -8502,7 +8502,7 @@
           "Document_Agent"
         ],
         "summary": "Substitute Merge Document Template Variables Ex",
-        "description": "Parse the source document, and replace any template variable tags with their\n\n<p/> The source document should be of type MergeDraft. This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Parse the source document, and replace any template variable tags with their values, based on the provided identifiers.\n\n<p/> The source document should be of type MergeDraft. This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_SubstituteMergeDocumentTemplateVariablesEx",
         "parameters": [
           {
@@ -8766,7 +8766,7 @@
           "Document_Agent"
         ],
         "summary": "Substitute Merge Document Template Variables Ex2",
-        "description": "Parse the source document, and replace any template variable tags with their\n\n<p/> The source document should be of type MergeDraft. This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Parse the source document, and replace any template variable tags with their values, based on the provided identifiers.\n\n<p/> The source document should be of type MergeDraft. This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_SubstituteMergeDocumentTemplateVariablesEx2",
         "parameters": [
           {
@@ -9480,7 +9480,7 @@
           "Document_Agent"
         ],
         "summary": "Get Checkout State",
-        "description": "Get the current checkout state for a document, relative to the user perforing\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Get the current checkout state for a document, relative to the user perforing the call.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_GetCheckoutState",
         "parameters": [
           {
@@ -10879,7 +10879,7 @@
           "Document_Agent"
         ],
         "summary": "Execute Document Command",
-        "description": "Execute a custom command on a particular document, optionally a particular\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Execute a custom command on a particular document, optionally a particular version\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_ExecuteDocumentCommand",
         "parameters": [
           {
@@ -11029,7 +11029,7 @@
           "Document_Agent"
         ],
         "summary": "Create Default Document Entity From Suggestion",
-        "description": "NsApiSlow threshold 2000 ms.",
+        "description": "NsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_CreateDefaultDocumentEntityFromSuggestion",
         "parameters": [
           {
@@ -13289,7 +13289,7 @@
           "Document_Agent"
         ],
         "summary": "Get My Published Documents",
-        "description": "NsApiSlow threshold 2000 ms.",
+        "description": "NsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_GetMyPublishedDocuments",
         "parameters": [
           {
@@ -13416,7 +13416,7 @@
           "Document_Agent"
         ],
         "summary": "Get Published Documents By Date",
-        "description": "Method that returns a specified number of published document appointments\n\nThe document appointments is visible to the person specified or the document is in a project the person belongs to. \r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of published document appointments within a time range.\n\nThe document appointments is visible to the person specified or the document is in a project the person belongs to. \r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_GetPublishedDocumentsByDate",
         "parameters": [
           {
@@ -13584,7 +13584,7 @@
           "Document_Agent"
         ],
         "summary": "Get Contact Documents By Template Types",
-        "description": "Method that returns a specified number of document appointments within a time\n\nThe document appointments belong to the contact specified. \r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of document appointments within a time range, filtered by document template types.\n\nThe document appointments belong to the contact specified. \r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DocumentAgent_GetContactDocumentsByTemplateTypes",
         "parameters": [
           {
@@ -13754,10 +13754,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -14433,7 +14433,7 @@
             "type": "string"
           },
           "Deleted": {
-            "description": "0 -&gt; record is active 1 -&gt; record is 'deleted' and should not be shown in lists",
+            "description": "0 -> record is active 1 -> record is 'deleted' and should not be shown in lists",
             "type": "boolean"
           },
           "DocTmpl": {
@@ -14505,7 +14505,7 @@
           },
           "Deleted": {
             "format": "int32",
-            "description": "0 -&gt; record is active 1 -&gt; record is 'deleted' and should not be shown in lists",
+            "description": "0 -> record is active 1 -> record is 'deleted' and should not be shown in lists",
             "type": "integer"
           },
           "Direction": {
@@ -15379,7 +15379,7 @@
             "$ref": "#/components/schemas/SuperOffice.CRM.Services.StructuredAddress"
           },
           "Formatted": {
-            "description": "Read-only formatted address multi-line string. Combines street and postal into one string. e.g.: &lt;c&gt;\"Postboks 123,\\nBrugata 123,\\n1234 OSLO\\n\"&lt;/c&gt; or &lt;c&gt;\"Postbox 123,\\nBridgelane 123,\\nWest Tooting,\\nEast Shire ES2 W31\\n\"&lt;/c&gt;.",
+            "description": "Read-only formatted address multi-line string. Combines street and postal into one string. e.g.: <c>\"Postboks 123,\\nBrugata 123,\\n1234 OSLO\\n\"</c> or <c>\"Postbox 123,\\nBridgelane 123,\\nWest Tooting,\\nEast Shire ES2 W31\\n\"</c>.",
             "type": "string"
           },
           "TableRight": {
@@ -15480,7 +15480,7 @@
             "type": "string"
           },
           "Formatted": {
-            "description": "Read-only formatted address multi-line string. e.g.: &lt;c&gt;\"Brugata 123,\\n1234 OSLO\\n\"&lt;/c&gt; or &lt;c&gt;\"Bridgelane 123,\\nWest Tooting,\\nThe Shire ES2 W31\\n\"&lt;/c&gt;.",
+            "description": "Read-only formatted address multi-line string. e.g.: <c>\"Brugata 123,\\n1234 OSLO\\n\"</c> or <c>\"Bridgelane 123,\\nWest Tooting,\\nThe Shire ES2 W31\\n\"</c>.",
             "type": "string"
           }
         }
@@ -16107,7 +16107,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.DocumentCarriers.SubstituteTemplateVariablesWithCustomTagsRequest": {
-        "description": "SubstituteTemplateVariablesWithCustomTags: Parse the source string, and replace any template variable tags with their values, based on the ID's given in the other parameters.&lt;p/&gt;This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.",
+        "description": "SubstituteTemplateVariablesWithCustomTags: Parse the source string, and replace any template variable tags with their values, based on the ID's given in the other parameters.<p/>This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.",
         "type": "object",
         "properties": {
           "Source": {
@@ -16179,7 +16179,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.DocumentCarriers.SubstituteTemplateVariablesWithCustomTags2Request": {
-        "description": "SubstituteTemplateVariablesWithCustomTags2: Parse the source string, and replace any template variable tags with their values, based on the ID's given in the other parameters.&lt;p/&gt;This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.",
+        "description": "SubstituteTemplateVariablesWithCustomTags2: Parse the source string, and replace any template variable tags with their values, based on the ID's given in the other parameters.<p/>This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.",
         "type": "object",
         "properties": {
           "Source": {
@@ -16329,7 +16329,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.DocumentCarriers.SubstituteMergeDocumentTemplateVariablesRequest": {
-        "description": "SubstituteMergeDocumentTemplateVariables: Parse the source document, and replace any template variable tags with their values, based on the associate Id.&lt;p/&gt; The source document should be of type MergeDraft. This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.",
+        "description": "SubstituteMergeDocumentTemplateVariables: Parse the source document, and replace any template variable tags with their values, based on the associate Id.<p/> The source document should be of type MergeDraft. This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.",
         "type": "object",
         "properties": {
           "DocumentId": {
@@ -16355,7 +16355,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.DocumentCarriers.SubstituteMergeDocumentTemplateVariables2Request": {
-        "description": "SubstituteMergeDocumentTemplateVariables2: Parse the source document, and replace any template variable tags with their values, based on the associate Id.&lt;p/&gt; The source document should be of type MergeDraft. This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.",
+        "description": "SubstituteMergeDocumentTemplateVariables2: Parse the source document, and replace any template variable tags with their values, based on the associate Id.<p/> The source document should be of type MergeDraft. This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.",
         "type": "object",
         "properties": {
           "DocumentId": {
@@ -16394,7 +16394,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.DocumentCarriers.SubstituteMergeDocumentTemplateVariablesExRequest": {
-        "description": "SubstituteMergeDocumentTemplateVariablesEx: Parse the source document, and replace any template variable tags with their values, based on the provided identifiers.&lt;p/&gt; The source document should be of type MergeDraft. This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.",
+        "description": "SubstituteMergeDocumentTemplateVariablesEx: Parse the source document, and replace any template variable tags with their values, based on the provided identifiers.<p/> The source document should be of type MergeDraft. This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.",
         "type": "object",
         "properties": {
           "MergeDocumentId": {
@@ -16444,7 +16444,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.DocumentCarriers.SubstituteMergeDocumentTemplateVariablesEx2Request": {
-        "description": "SubstituteMergeDocumentTemplateVariablesEx2: Parse the source document, and replace any template variable tags with their values, based on the provided identifiers.&lt;p/&gt; The source document should be of type MergeDraft. This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.",
+        "description": "SubstituteMergeDocumentTemplateVariablesEx2: Parse the source document, and replace any template variable tags with their values, based on the provided identifiers.<p/> The source document should be of type MergeDraft. This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.",
         "type": "object",
         "properties": {
           "MergeDocumentId": {
@@ -16488,7 +16488,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.DocumentCarriers.GetDocumentUrlRequest": {
-        "description": "GetDocumentUrl: Get a URL referring to the given document content.&lt;para/&gt;This URL may be passed to the ultimate client (text editor of some kind?), which is then responsible for all further operations.&lt;para/&gt;The returned string is a fully qualified URL.&lt;para/&gt;Not all documents and document plugins support this feature.",
+        "description": "GetDocumentUrl: Get a URL referring to the given document content.<para/>This URL may be passed to the ultimate client (text editor of some kind?), which is then responsible for all further operations.<para/>The returned string is a fully qualified URL.<para/>Not all documents and document plugins support this feature.",
         "type": "object",
         "properties": {
           "DocumentId": {
@@ -16700,7 +16700,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.DocumentCarriers.GetPluginCapabilitiesRequest": {
-        "description": "GetPluginCapabilities: Get a list of plugin-dependent capabilities for a given document archive plugin.&lt;br/&gt;A standard set of properties is defined in SuperOffice.CRM.Documents.Constants.Capabilities.",
+        "description": "GetPluginCapabilities: Get a list of plugin-dependent capabilities for a given document archive plugin.<br/>A standard set of properties is defined in SuperOffice.CRM.Documents.Constants.Capabilities.",
         "type": "object",
         "properties": {
           "PluginId": {

@@ -1,0 +1,113 @@
+name: OpenAPI conversion auto-fix
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'api-sources/openapi/agent/**'
+      - 'api-sources/openapi/rest/**'
+
+# Automatically cancel in-progress runs on the same branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  sync-openapi-output:
+    name: "Propagate api-sources/openapi changes to openapi/ and nav"
+    runs-on: ubuntu-latest
+    # A fork PR's default token can't push back to the fork - skip cleanly
+    # rather than fail loudly. Same-repo branches proceed as usual.
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    steps:
+      - name: Checkout PR head
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+
+      - name: Get changed Swagger source files
+        id: changed
+        uses: tj-actions/changed-files@v45
+        with:
+          files: |
+            api-sources/openapi/agent/Swagger-v1-*.json
+            api-sources/openapi/rest/Swagger-v1-*.json
+
+      - name: Set up Node
+        if: steps.changed.outputs.any_changed == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install swagger2openapi
+        if: steps.changed.outputs.any_changed == 'true'
+        run: npm install -g swagger2openapi@7.0.8
+
+      - name: Convert added/modified specs
+        if: steps.changed.outputs.any_changed == 'true'
+        env:
+          CHANGED_FILES: ${{ steps.changed.outputs.all_changed_files }}
+        run: |
+          agent_files=""
+          rest_files=""
+          for f in $CHANGED_FILES; do
+            case "$f" in
+              api-sources/openapi/agent/*) agent_files="$agent_files $f" ;;
+              api-sources/openapi/rest/*) rest_files="$rest_files $f" ;;
+            esac
+          done
+
+          if [ -n "$agent_files" ]; then
+            pwsh tools/convert-swagger-to-openapi.ps1 -SourcePath api-sources/openapi/agent -DestinationPath openapi/agent -Files $agent_files
+          fi
+          if [ -n "$rest_files" ]; then
+            pwsh tools/convert-swagger-to-openapi.ps1 -SourcePath api-sources/openapi/rest -DestinationPath openapi/rest -Files $rest_files
+          fi
+
+      - name: Remove output for deleted specs
+        if: steps.changed.outputs.any_deleted == 'true'
+        env:
+          DELETED_FILES: ${{ steps.changed.outputs.deleted_files }}
+        run: |
+          for f in $DELETED_FILES; do
+            name=$(basename "$f")
+            output_name="${name/Swagger-v1-/openapi-v3-}"
+            case "$f" in
+              api-sources/openapi/agent/*) output_path="openapi/agent/$output_name" ;;
+              api-sources/openapi/rest/*) output_path="openapi/rest/$output_name" ;;
+              *) continue ;;
+            esac
+            if [ -f "$output_path" ]; then
+              rm -f "$output_path"
+              echo "Removed orphaned output: $output_path"
+            fi
+          done
+
+      - name: Set up Python
+        if: steps.changed.outputs.any_changed == 'true' || steps.changed.outputs.any_deleted == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Regenerate OpenAPI nav files
+        if: steps.changed.outputs.any_changed == 'true' || steps.changed.outputs.any_deleted == 'true'
+        run: python tools/ci/generate-openapi-nav.py --apply
+
+      - name: Commit and push fix, if any
+        if: steps.changed.outputs.any_changed == 'true' || steps.changed.outputs.any_deleted == 'true'
+        env:
+          HEAD_REF: ${{ github.event.pull_request.head.ref }}
+        run: |
+          if git diff --quiet -- openapi config/nav-restful-agent-openapi.json config/nav-restful-rest-openapi.json; then
+            echo "No openapi/ or nav changes needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add openapi config/nav-restful-agent-openapi.json config/nav-restful-rest-openapi.json
+          git commit -m "Propagate api-sources/openapi changes to openapi/ and nav (#297)"
+          git push origin "HEAD:$HEAD_REF"

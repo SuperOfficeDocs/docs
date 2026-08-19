@@ -826,7 +826,7 @@
           "Marketing_Agent"
         ],
         "summary": "Save Form Entity",
-        "description": "Updates the existing FormEntity or creates a new FormEntity if the id parameter\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing FormEntity or creates a new FormEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1MarketingAgent_SaveFormEntity",
         "parameters": [
           {
@@ -1112,6 +1112,88 @@
                 }
               }
             }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Marketing/MoveFormsToFolder": {
+      "post": {
+        "tags": [
+          "Marketing_Agent"
+        ],
+        "summary": "Move Forms To Folder",
+        "description": "Move one or more forms into the given folder.\n\nFolderId -1 = root. Only the folder reference is written - Save would rewrite the whole form, including a re-sanitized Config, and would bump Updated (the thumbnail cache-buster).\r\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1MarketingAgent_MoveFormsToFolder",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MoveFormsToFolderRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MoveFormsToFolderRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MoveFormsToFolderRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MoveFormsToFolderRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MoveFormsToFolderRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MoveFormsToFolderRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MoveFormsToFolderRequest"
+              }
+            }
+          },
+          "description": "FormIds, FolderId",
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "No Content"
           }
         },
         "security": [
@@ -1460,7 +1542,7 @@
           "Marketing_Agent"
         ],
         "summary": "Save Form Submission Entity",
-        "description": "Updates the existing FormSubmissionEntity or creates a new FormSubmissionEntity\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing FormSubmissionEntity or creates a new FormSubmissionEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1MarketingAgent_SaveFormSubmissionEntity",
         "parameters": [
           {
@@ -1743,6 +1825,722 @@
               "application/merge-patch+json": {
                 "schema": {
                   "$ref": "#/components/schemas/SuperOffice.CRM.Services.FormSubmissionEntity"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Marketing/CreateDefaultMailingEntity": {
+      "post": {
+        "tags": [
+          "Marketing_Agent"
+        ],
+        "summary": "Create Default Mailing Entity",
+        "description": "Loading default values into a new MailingEntity.\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1MarketingAgent_CreateDefaultMailingEntity",
+        "parameters": [
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Marketing/SaveMailingEntity": {
+      "post": {
+        "tags": [
+          "Marketing_Agent"
+        ],
+        "summary": "Save Mailing Entity",
+        "description": "Updates the existing MailingEntity or creates a new MailingEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1MarketingAgent_SaveMailingEntity",
+        "parameters": [
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
+              }
+            }
+          },
+          "description": "The MailingEntity that is saved",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Marketing/DeleteMailingEntity": {
+      "post": {
+        "tags": [
+          "Marketing_Agent"
+        ],
+        "summary": "Delete Mailing Entity",
+        "description": "Deletes the MailingEntity\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1MarketingAgent_DeleteMailingEntity",
+        "parameters": [
+          {
+            "name": "mailingEntityId",
+            "in": "query",
+            "description": "The identity of the MailingEntity",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Marketing/GetMailingEntity": {
+      "post": {
+        "tags": [
+          "Marketing_Agent"
+        ],
+        "summary": "Get Mailing Entity",
+        "description": "Gets a MailingEntity object.\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1MarketingAgent_GetMailingEntity",
+        "parameters": [
+          {
+            "name": "mailingEntityId",
+            "in": "query",
+            "description": "The identifier of the MailingEntity object",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Marketing/MoveMailingsToFolder": {
+      "post": {
+        "tags": [
+          "Marketing_Agent"
+        ],
+        "summary": "Move Mailings To Folder",
+        "description": "Move one or more mailings (shipments) into the given folder.\n\nFolderId -1 = root.\r\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1MarketingAgent_MoveMailingsToFolder",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MoveMailingsToFolderRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MoveMailingsToFolderRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MoveMailingsToFolderRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MoveMailingsToFolderRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MoveMailingsToFolderRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MoveMailingsToFolderRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MoveMailingsToFolderRequest"
+              }
+            }
+          },
+          "description": "MailingIds, FolderId",
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Marketing/RenameMailingByMessageId": {
+      "post": {
+        "tags": [
+          "Marketing_Agent"
+        ],
+        "summary": "Rename Mailing By Message Id",
+        "description": "Change the mailing name (shipment description) that the given message (MessageId) belongs to\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1MarketingAgent_RenameMailingByMessageId",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.RenameMailingByMessageIdRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.RenameMailingByMessageIdRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.RenameMailingByMessageIdRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.RenameMailingByMessageIdRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.RenameMailingByMessageIdRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.RenameMailingByMessageIdRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.RenameMailingByMessageIdRequest"
+              }
+            }
+          },
+          "description": "MessageId, Name",
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Marketing/ReloadAndSendMailing": {
+      "post": {
+        "tags": [
+          "Marketing_Agent"
+        ],
+        "summary": "Reload And Send Mailing",
+        "description": "Reload and send a mailing\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1MarketingAgent_ReloadAndSendMailing",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ReloadAndSendMailingRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ReloadAndSendMailingRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ReloadAndSendMailingRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ReloadAndSendMailingRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ReloadAndSendMailingRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ReloadAndSendMailingRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ReloadAndSendMailingRequest"
+              }
+            }
+          },
+          "description": "MailingId",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "boolean"
                 }
               }
             }
@@ -2474,7 +3272,7 @@
           "Marketing_Agent"
         ],
         "summary": "Save Shipment Message Block Entity",
-        "description": "Updates the existing ShipmentMessageBlockEntity or creates a new\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing ShipmentMessageBlockEntity or creates a new ShipmentMessageBlockEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1MarketingAgent_SaveShipmentMessageBlockEntity",
         "parameters": [
           {
@@ -3044,7 +3842,7 @@
           "Marketing_Agent"
         ],
         "summary": "Save Shipment Message Entity",
-        "description": "Updates the existing ShipmentMessageEntity or creates a new\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing ShipmentMessageEntity or creates a new ShipmentMessageEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1MarketingAgent_SaveShipmentMessageEntity",
         "parameters": [
           {
@@ -3340,88 +4138,6 @@
         ]
       }
     },
-    "/api/v1/Agents/Marketing/RenameMailingByMessageId": {
-      "post": {
-        "tags": [
-          "Marketing_Agent"
-        ],
-        "summary": "Rename Mailing By Message Id",
-        "description": "Change the mailing name (shipment description) that the given message\n\nNsApiSlow threshold: 5000 ms.",
-        "operationId": "v1MarketingAgent_RenameMailingByMessageId",
-        "parameters": [
-          {
-            "name": "$select",
-            "in": "query",
-            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-AppToken",
-            "in": "header",
-            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.RenameMailingByMessageIdRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.RenameMailingByMessageIdRequest"
-              }
-            },
-            "application/xml": {
-              "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.RenameMailingByMessageIdRequest"
-              }
-            },
-            "text/xml": {
-              "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.RenameMailingByMessageIdRequest"
-              }
-            },
-            "application/x-www-form-urlencoded": {
-              "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.RenameMailingByMessageIdRequest"
-              }
-            },
-            "application/json-patch+json": {
-              "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.RenameMailingByMessageIdRequest"
-              }
-            },
-            "application/merge-patch+json": {
-              "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.RenameMailingByMessageIdRequest"
-              }
-            }
-          },
-          "description": "MessageId, Name",
-          "required": true
-        },
-        "responses": {
-          "204": {
-            "description": "No Content"
-          }
-        },
-        "security": [
-          {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
-          }
-        ]
-      }
-    },
     "/api/v1/Agents/Marketing/DeleteMessageAndShipment": {
       "post": {
         "tags": [
@@ -3512,10 +4228,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -3796,6 +4512,23 @@
           }
         }
       },
+      "SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MoveFormsToFolderRequest": {
+        "description": "MoveFormsToFolder: Move one or more forms into the given folder. FolderId -1 = root. Only the folder reference is written - Save would rewrite the whole form, including a re-sanitized Config, and would bump Updated (the thumbnail cache-buster).",
+        "type": "object",
+        "properties": {
+          "FormIds": {
+            "type": "array",
+            "items": {
+              "format": "int32",
+              "type": "integer"
+            }
+          },
+          "FolderId": {
+            "format": "int32",
+            "type": "integer"
+          }
+        }
+      },
       "SuperOffice.WebApi.v1.Carriers.MarketingCarriers.VerifyGoogleRecaptchaRequest": {
         "description": "VerifyGoogleRecaptcha: This method will try to verify a Google recaptcha token. The token is gained from the recaptcha frontend component",
         "type": "object",
@@ -3921,6 +4654,183 @@
             "additionalProperties": {
               "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
             }
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.MailingEntity": {
+        "description": "A mailing (shipment) — the run that sends a message to a set of recipients\r\n<para />\r\nCarrier object for MailingEntity.\r\nServices for the MailingEntity Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IMarketingAgent\">Marketing Agent</see>.",
+        "type": "object",
+        "properties": {
+          "MailingId": {
+            "format": "int32",
+            "description": "Primary key",
+            "type": "integer"
+          },
+          "Description": {
+            "description": "Describes the shipment",
+            "type": "string"
+          },
+          "MessageId": {
+            "format": "int32",
+            "description": "The id of the message that is sent in this shipment",
+            "type": "integer"
+          },
+          "FolderId": {
+            "format": "int32",
+            "description": "The folder which this shipment belongs to. -1 indicates that the shipment is on the root",
+            "type": "integer"
+          },
+          "StartDate": {
+            "format": "date-time",
+            "description": "The date and time when to start this shipment",
+            "type": "string"
+          },
+          "EndDate": {
+            "format": "date-time",
+            "description": "Is set when this shipment is ended",
+            "type": "string"
+          },
+          "FromAddr": {
+            "description": "Email address to put in the From header of the messages",
+            "type": "string"
+          },
+          "ReplyAddr": {
+            "description": "Email address to put in the Reply To: header of the messages",
+            "type": "string"
+          },
+          "EnvelopeFrom": {
+            "description": "Email address for the MTA envelope (where bounces are returned)",
+            "type": "string"
+          },
+          "Status": {
+            "description": "Sending/stopped/failed etc.",
+            "enum": [
+              "None",
+              "Ok",
+              "Canceled",
+              "Waiting",
+              "Started",
+              "StatusFailed",
+              "Retry",
+              "Populating",
+              "Deleted",
+              "AwaitPopulate",
+              "PopulatingOnly",
+              "PopulateAborted",
+              "PopulateError",
+              "TooManyRecipients"
+            ],
+            "type": "string"
+          },
+          "Recipients": {
+            "format": "int32",
+            "description": "The total number of recipients to send message to.",
+            "type": "integer"
+          },
+          "Configuration": {
+            "format": "int32",
+            "description": "This field indicates what kind of shipment this is.",
+            "type": "integer"
+          },
+          "SelectionId": {
+            "format": "int32",
+            "description": "Set if this shipment should be related to a Selection",
+            "type": "integer"
+          },
+          "ProjectId": {
+            "format": "int32",
+            "description": "Set if this shipment should be related to a Project",
+            "type": "integer"
+          },
+          "ShipmenttypeId": {
+            "format": "int32",
+            "description": "Id of subscriptionType that this shipment has, so we may check for reservations",
+            "type": "integer"
+          },
+          "SentNum": {
+            "format": "int32",
+            "description": "Number of mails sent",
+            "type": "integer"
+          },
+          "DeliveredNum": {
+            "format": "int32",
+            "description": "Number of mails sent minus bounces",
+            "type": "integer"
+          },
+          "Registered": {
+            "format": "date-time",
+            "description": "Registered when  in UTC.",
+            "type": "string"
+          },
+          "RegisteredAssociateId": {
+            "format": "int32",
+            "description": "Registered by whom",
+            "type": "integer"
+          },
+          "Updated": {
+            "format": "date-time",
+            "description": "Last updated when  in UTC.",
+            "type": "string"
+          },
+          "UpdatedAssociateId": {
+            "format": "int32",
+            "description": "Last updated by whom",
+            "type": "integer"
+          },
+          "UpdatedCount": {
+            "format": "int32",
+            "description": "Number of updates made to this record",
+            "type": "integer"
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "description": "Field property dictionary mapping field names to field access rights.",
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            }
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MoveMailingsToFolderRequest": {
+        "description": "MoveMailingsToFolder: Move one or more mailings (shipments) into the given folder. FolderId -1 = root.",
+        "type": "object",
+        "properties": {
+          "MailingIds": {
+            "type": "array",
+            "items": {
+              "format": "int32",
+              "type": "integer"
+            }
+          },
+          "FolderId": {
+            "format": "int32",
+            "type": "integer"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.MarketingCarriers.RenameMailingByMessageIdRequest": {
+        "description": "RenameMailingByMessageId: Change the mailing name (shipment description) that the given message (MessageId) belongs to",
+        "type": "object",
+        "properties": {
+          "MessageId": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "Name": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ReloadAndSendMailingRequest": {
+        "description": "ReloadAndSendMailing: Reload and send a mailing",
+        "type": "object",
+        "properties": {
+          "MailingId": {
+            "format": "int32",
+            "type": "integer"
           }
         }
       },
@@ -4367,19 +5277,6 @@
             "additionalProperties": {
               "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
             }
-          }
-        }
-      },
-      "SuperOffice.WebApi.v1.Carriers.MarketingCarriers.RenameMailingByMessageIdRequest": {
-        "description": "RenameMailingByMessageId: Change the mailing name (shipment description) that the given message (MessageId) belongs to",
-        "type": "object",
-        "properties": {
-          "MessageId": {
-            "format": "int32",
-            "type": "integer"
-          },
-          "Name": {
-            "type": "string"
           }
         }
       },

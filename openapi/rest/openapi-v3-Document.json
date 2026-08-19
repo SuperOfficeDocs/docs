@@ -1449,7 +1449,7 @@
           "Document"
         ],
         "summary": "Create New Physical Document From Template With Custom Tags2",
-        "description": "Create a new physical document based on a document template and store it in the\n\nTags are substituted according to the provided id's.  Use GetDocumentStream to obtain the created document content. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.",
+        "description": "Create a new physical document based on a document template and store it in the document archive.\n\nTags are substituted according to the provided id's.  Use GetDocumentStream to obtain the created document content. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.",
         "operationId": "v1DocumentEntity_CreateNewPhysicalDocumentFromTemplateWithCustomTags2",
         "parameters": [
           {
@@ -1704,7 +1704,7 @@
           {
             "name": "allowedReturnType",
             "in": "query",
-            "description": "List of return types that the client is prepared to handle, in case the document plugin needs to request additional processing. Standard allowed return types include 'None', 'Message', 'SoProtocol', 'CustomGui', 'Other'.&lt;br/&gt;An empty array implies that the client places no restriction on possible return action requests",
+            "description": "List of return types that the client is prepared to handle, in case the document plugin needs to request additional processing. Standard allowed return types include 'None', 'Message', 'SoProtocol', 'CustomGui', 'Other'.<br/>An empty array implies that the client places no restriction on possible return action requests",
             "required": false,
             "explode": true,
             "schema": {
@@ -2127,7 +2127,7 @@
           "Document"
         ],
         "summary": "Get Checkout State",
-        "description": "Get the current checkout state for a document, relative to the user perforing",
+        "description": "Get the current checkout state for a document, relative to the user perforing the call.",
         "operationId": "v1DocumentEntity_GetCheckoutState",
         "parameters": [
           {
@@ -2251,7 +2251,7 @@
           {
             "name": "allowedReturnTypes",
             "in": "query",
-            "description": "List of return types that the client is prepared to handle, in case the document plugin needs to request additional processing.&lt;br/&gt;Standard allowed return types include 'None', 'Message', 'SoProtocol', 'CustomGui', 'Other'.&lt;br/&gt;An empty array implies that the client places no restriction on possible return action requests.",
+            "description": "List of return types that the client is prepared to handle, in case the document plugin needs to request additional processing.<br/>Standard allowed return types include 'None', 'Message', 'SoProtocol', 'CustomGui', 'Other'.<br/>An empty array implies that the client places no restriction on possible return action requests.",
             "required": false,
             "explode": true,
             "schema": {
@@ -2394,7 +2394,7 @@
           {
             "name": "allowedReturnTypes",
             "in": "query",
-            "description": "List of return types that the client is prepared to handle, in case the document plugin needs to request additional processing.&lt;br/&gt;Standard allowed return types include 'None', 'Message', 'SoProtocol', 'CustomGui', 'Other'.&lt;br/&gt;An empty array implies that the client places no restriction on possible return action requests.",
+            "description": "List of return types that the client is prepared to handle, in case the document plugin needs to request additional processing.<br/>Standard allowed return types include 'None', 'Message', 'SoProtocol', 'CustomGui', 'Other'.<br/>An empty array implies that the client places no restriction on possible return action requests.",
             "required": false,
             "explode": true,
             "schema": {
@@ -2515,7 +2515,7 @@
           {
             "name": "allowedReturnTypes",
             "in": "query",
-            "description": "List of return types that the client is prepared to handle, in case the document plugin needs to request additional processing.&lt;br/&gt;Standard allowed return types include 'None', 'Message', 'SoProtocol', 'CustomGui', 'Other'.&lt;br/&gt;An empty array implies that the client places no restriction on possible return action requests.",
+            "description": "List of return types that the client is prepared to handle, in case the document plugin needs to request additional processing.<br/>Standard allowed return types include 'None', 'Message', 'SoProtocol', 'CustomGui', 'Other'.<br/>An empty array implies that the client places no restriction on possible return action requests.",
             "required": false,
             "explode": true,
             "schema": {
@@ -3117,7 +3117,7 @@
           {
             "name": "allowedReturnTypes",
             "in": "query",
-            "description": "List of return types that the client is prepared to handle, in case the document plugin needs to request additional processing.&lt;br/&gt;Standard allowed return types include 'None', 'Message', 'SoProtocol', 'CustomGui', 'Other'.&lt;br/&gt;An empty array implies that the client places no restriction on possible return action requests.&lt;br/&gt;In this context the parameter is used to filter the returned command list, so that commands that require return actions not supported, will not be included by the document plugin.",
+            "description": "List of return types that the client is prepared to handle, in case the document plugin needs to request additional processing.<br/>Standard allowed return types include 'None', 'Message', 'SoProtocol', 'CustomGui', 'Other'.<br/>An empty array implies that the client places no restriction on possible return action requests.<br/>In this context the parameter is used to filter the returned command list, so that commands that require return actions not supported, will not be included by the document plugin.",
             "required": false,
             "explode": true,
             "schema": {
@@ -3242,7 +3242,7 @@
           "Document"
         ],
         "summary": "Execute Document Command",
-        "description": "Execute a custom command on a particular document, optionally a particular",
+        "description": "Execute a custom command on a particular document, optionally a particular version",
         "operationId": "v1DocumentEntity_ExecuteDocumentCommand",
         "parameters": [
           {
@@ -3276,7 +3276,7 @@
           {
             "name": "allowedReturnTypes",
             "in": "query",
-            "description": "List of return types that the client is prepared to handle, in case the document plugin needs to request additional processing.&lt;br/&gt;Standard allowed return types include 'None', 'Message', 'SoProtocol', 'CustomGui', 'Other'.&lt;br/&gt;An empty array implies that the client places no restriction on possible return action requests.",
+            "description": "List of return types that the client is prepared to handle, in case the document plugin needs to request additional processing.<br/>Standard allowed return types include 'None', 'Message', 'SoProtocol', 'CustomGui', 'Other'.<br/>An empty array implies that the client places no restriction on possible return action requests.",
             "required": false,
             "explode": true,
             "schema": {
@@ -3289,7 +3289,7 @@
           {
             "name": "additionalData",
             "in": "query",
-            "description": "Any additional data that the document command needs. This parameter can be used as a tunnel between a custom-programmed GUI and its plugin.&lt;br/&gt;It is suggested that the format is name=value, with one such pair per array item.",
+            "description": "Any additional data that the document command needs. This parameter can be used as a tunnel between a custom-programmed GUI and its plugin.<br/>It is suggested that the format is name=value, with one such pair per array item.",
             "required": false,
             "explode": true,
             "schema": {
@@ -3680,7 +3680,7 @@
           "Document"
         ],
         "summary": "Get Custom Field Info List",
-        "description": "Custom fields meta-data (published user defined + extra fields) on\n\nExcludes standard fields.",
+        "description": "Custom fields meta-data (published user defined + extra fields) on DocumentEntity.\n\nExcludes standard fields.",
         "operationId": "v1DocumentEntity_GetCustomFieldInfoList",
         "parameters": [
           {
@@ -3798,7 +3798,7 @@
           "Document"
         ],
         "summary": "Get Custom Field Info",
-        "description": "Custom field meta-data (published user defined + extra fields) on\n\nExcludes standard fields.",
+        "description": "Custom field meta-data (published user defined + extra fields) on DocumentEntity.\n\nExcludes standard fields.",
         "operationId": "v1DocumentEntity_GetCustomFieldInfo",
         "parameters": [
           {
@@ -4547,7 +4547,7 @@
           "Document"
         ],
         "summary": "Delete Udef Field Info",
-        "description": "Delete a DocumentEntity user-defined field's details based on the prog-id or\n\nDeletes the admin version of the field. The layout needs to be published before the change is visible.",
+        "description": "Delete a DocumentEntity user-defined field's details based on the prog-id or label.\n\nDeletes the admin version of the field. The layout needs to be published before the change is visible.",
         "operationId": "v1DocumentEntity_DeleteUdefFieldInfo",
         "parameters": [
           {
@@ -4728,7 +4728,7 @@
           "Document"
         ],
         "summary": "Get Published Udef Field Info",
-        "description": "Get a published DocumentEntity user-defined field's details based on the",
+        "description": "Get a published DocumentEntity user-defined field's details based on the prog-id or label.",
         "operationId": "v1DocumentEntity_GetPublishedUdefFieldInfo",
         "parameters": [
           {
@@ -4840,7 +4840,7 @@
           "Document"
         ],
         "summary": "Detect Unpublished Changes",
-        "description": "Is the UDef Layout changed This may or may not involve moving data (which takes\n\nTrue if the DocumentEntity user-defined field layout has been changed.",
+        "description": "Is the UDef Layout changed? This may or may not involve moving data (which takes longer).\n\nTrue if the DocumentEntity user-defined field layout has been changed.",
         "operationId": "v1DocumentEntity_DetectUnpublishedChanges",
         "parameters": [
           {
@@ -4949,7 +4949,7 @@
           "Document"
         ],
         "summary": "Is Publish Udef Layout Active",
-        "description": "Is UDef Layout Publishing active\n\nTrue if the DocumentEntity user-defined field layout is being updated.",
+        "description": "Is UDef Layout Publishing active?\n\nTrue if the DocumentEntity user-defined field layout is being updated.",
         "operationId": "v1DocumentEntity_IsPublishUdefLayoutActive",
         "parameters": [
           {
@@ -5318,10 +5318,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -5758,7 +5758,7 @@
           },
           "Deleted": {
             "format": "int32",
-            "description": "0 -&gt; record is active 1 -&gt; record is 'deleted' and should not be shown in lists",
+            "description": "0 -> record is active 1 -> record is 'deleted' and should not be shown in lists",
             "type": "integer"
           },
           "Direction": {
@@ -6138,7 +6138,7 @@
             "$ref": "#/components/schemas/SuperOffice.CRM.Services.StructuredAddress"
           },
           "Formatted": {
-            "description": "Read-only formatted address multi-line string. Combines street and postal into one string. e.g.: &lt;c&gt;\"Postboks 123,\\nBrugata 123,\\n1234 OSLO\\n\"&lt;/c&gt; or &lt;c&gt;\"Postbox 123,\\nBridgelane 123,\\nWest Tooting,\\nEast Shire ES2 W31\\n\"&lt;/c&gt;.",
+            "description": "Read-only formatted address multi-line string. Combines street and postal into one string. e.g.: <c>\"Postboks 123,\\nBrugata 123,\\n1234 OSLO\\n\"</c> or <c>\"Postbox 123,\\nBridgelane 123,\\nWest Tooting,\\nEast Shire ES2 W31\\n\"</c>.",
             "type": "string"
           },
           "TableRight": {
@@ -6239,7 +6239,7 @@
             "type": "string"
           },
           "Formatted": {
-            "description": "Read-only formatted address multi-line string. e.g.: &lt;c&gt;\"Brugata 123,\\n1234 OSLO\\n\"&lt;/c&gt; or &lt;c&gt;\"Bridgelane 123,\\nWest Tooting,\\nThe Shire ES2 W31\\n\"&lt;/c&gt;.",
+            "description": "Read-only formatted address multi-line string. e.g.: <c>\"Brugata 123,\\n1234 OSLO\\n\"</c> or <c>\"Bridgelane 123,\\nWest Tooting,\\nThe Shire ES2 W31\\n\"</c>.",
             "type": "string"
           }
         }

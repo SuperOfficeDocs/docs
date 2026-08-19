@@ -17,7 +17,7 @@
           "License_Agent"
         ],
         "summary": "Get License For All Owners From D B",
-        "description": "Get all licenses, with usage, from all module owners as they are stored in the\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Get all licenses, with usage, from all module owners as they are stored in the database\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1LicenseAgent_GetLicenseForAllOwnersFromDB",
         "parameters": [
           {
@@ -144,7 +144,7 @@
           "License_Agent"
         ],
         "summary": "Get License From License Server",
-        "description": "NsApiSlow threshold 5000 ms.",
+        "description": "NsApiSlow threshold: 5000 ms.",
         "operationId": "v1LicenseAgent_GetLicenseFromLicenseServer",
         "parameters": [
           {
@@ -894,7 +894,7 @@
           "License_Agent"
         ],
         "summary": "Get License From D B",
-        "description": "Get license, with usage, as it is stored in the database for one particular\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Get license, with usage, as it is stored in the database for one particular module owner.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1LicenseAgent_GetLicenseFromDB",
         "parameters": [
           {
@@ -1044,7 +1044,7 @@
           "License_Agent"
         ],
         "summary": "Get User And Installation Licence Status",
-        "description": "Get status values for user licenses and installation license that can be used\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Get status values for user licenses and installation license that can be used for feedback to the user.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1LicenseAgent_GetUserAndInstallationLicenceStatus",
         "parameters": [
           {
@@ -2557,7 +2557,7 @@
           "License_Agent"
         ],
         "summary": "Get Third Party License Assignments",
-        "description": "Get license assignments for an associate for licenses belonging to an other\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Get license assignments for an associate for licenses belonging to an other module owner than SuperOffice\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1LicenseAgent_GetThirdPartyLicenseAssignments",
         "parameters": [
           {
@@ -3061,7 +3061,7 @@
           "License_Agent"
         ],
         "summary": "Get Central License",
-        "description": "NsApiSlow threshold 5000 ms.",
+        "description": "NsApiSlow threshold: 5000 ms.",
         "operationId": "v1LicenseAgent_GetCentralLicense",
         "parameters": [
           {
@@ -3188,7 +3188,7 @@
           "License_Agent"
         ],
         "summary": "Save Central License",
-        "description": "NsApiSlow threshold 5000 ms.",
+        "description": "NsApiSlow threshold: 5000 ms.",
         "operationId": "v1LicenseAgent_SaveCentralLicense",
         "parameters": [
           {
@@ -3467,10 +3467,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {

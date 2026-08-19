@@ -685,7 +685,7 @@
           "Messaging_Agent"
         ],
         "summary": "Get Plugins",
-        "description": "NsApiSlow threshold 5000 ms.\n\n<para />## Online Restricted: ## The Messaging agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "description": "NsApiSlow threshold: 5000 ms.\n\n<para />## Online Restricted: ## The Messaging agent is not available in Online by default. Access must be requested specifically when app is registered.",
         "operationId": "v1MessagingAgent_GetPlugins",
         "parameters": [
           {
@@ -814,10 +814,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {

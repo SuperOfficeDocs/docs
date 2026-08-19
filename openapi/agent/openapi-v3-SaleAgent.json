@@ -236,7 +236,7 @@
           "Sale_Agent"
         ],
         "summary": "Save Sale Entity",
-        "description": "Updates the existing SaleEntity or creates a new SaleEntity if the id parameter\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Updates the existing SaleEntity or creates a new SaleEntity if the id parameter is 0.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1SaleAgent_SaveSaleEntity",
         "parameters": [
           {
@@ -538,7 +538,7 @@
           "Sale_Agent"
         ],
         "summary": "Has Guide",
-        "description": "Does this sale have a sale guide associated with its sale type\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Does this sale have a sale guide associated with its sale type?\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1SaleAgent_HasGuide",
         "parameters": [
           {
@@ -1041,7 +1041,7 @@
           "Sale_Agent"
         ],
         "summary": "Has Guide Activities",
-        "description": "NsApiSlow threshold 2000 ms.",
+        "description": "NsApiSlow threshold: 2000 ms.",
         "operationId": "v1SaleAgent_HasGuideActivities",
         "parameters": [
           {
@@ -1191,7 +1191,7 @@
           "Sale_Agent"
         ],
         "summary": "Offer Auto Next Stage On Apppointment Completed",
-        "description": "NsApiSlow threshold 2000 ms.",
+        "description": "NsApiSlow threshold: 2000 ms.",
         "operationId": "v1SaleAgent_OfferAutoNextStageOnApppointmentCompleted",
         "parameters": [
           {
@@ -1647,7 +1647,7 @@
           "Sale_Agent"
         ],
         "summary": "Add Sale Stakeholders",
-        "description": "NsApiSlow threshold 2000 ms.",
+        "description": "NsApiSlow threshold: 2000 ms.",
         "operationId": "v1SaleAgent_AddSaleStakeholders",
         "parameters": [
           {
@@ -1729,7 +1729,7 @@
           "Sale_Agent"
         ],
         "summary": "Delete Sale Stakeholders",
-        "description": "NsApiSlow threshold 2000 ms.",
+        "description": "NsApiSlow threshold: 2000 ms.",
         "operationId": "v1SaleAgent_DeleteSaleStakeholders",
         "parameters": [
           {
@@ -1811,7 +1811,7 @@
           "Sale_Agent"
         ],
         "summary": "Has Stakeholder Setting",
-        "description": "NsApiSlow threshold 2000 ms.",
+        "description": "NsApiSlow threshold: 2000 ms.",
         "operationId": "v1SaleAgent_HasStakeholderSetting",
         "parameters": [
           {
@@ -2475,7 +2475,7 @@
           "Sale_Agent"
         ],
         "summary": "Get My Opportunities",
-        "description": "Returning the opportunities (open sales) belonging to the user currently logged\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Returning the opportunities (open sales) belonging to the user currently logged on\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1SaleAgent_GetMyOpportunities",
         "parameters": [
           {
@@ -4079,7 +4079,7 @@
           "Sale_Agent"
         ],
         "summary": "Save Sale Stakeholder",
-        "description": "Updates the existing SaleStakeholder or creates a new SaleStakeholder if the id\n\nNsApiSlow threshold: 1000 ms.",
+        "description": "Updates the existing SaleStakeholder or creates a new SaleStakeholder if the id parameter is 0.\n\nNsApiSlow threshold: 1000 ms.",
         "operationId": "v1SaleAgent_SaveSaleStakeholder",
         "parameters": [
           {
@@ -4577,7 +4577,7 @@
           "Sale_Agent"
         ],
         "summary": "Get Sale Stakeholders",
-        "description": "NsApiSlow threshold 2000 ms.",
+        "description": "NsApiSlow threshold: 2000 ms.",
         "operationId": "v1SaleAgent_GetSaleStakeholders",
         "parameters": [
           {
@@ -4745,7 +4745,7 @@
           "Sale_Agent"
         ],
         "summary": "Update Sale Stakeholders",
-        "description": "NsApiSlow threshold 2000 ms.",
+        "description": "NsApiSlow threshold: 2000 ms.",
         "operationId": "v1SaleAgent_UpdateSaleStakeholders",
         "parameters": [
           {
@@ -4913,7 +4913,7 @@
           "Sale_Agent"
         ],
         "summary": "Get Sale Stakeholder By Id",
-        "description": "NsApiSlow threshold 2000 ms.",
+        "description": "NsApiSlow threshold: 2000 ms.",
         "operationId": "v1SaleAgent_GetSaleStakeholderById",
         "parameters": [
           {
@@ -5181,7 +5181,7 @@
           "Sale_Agent"
         ],
         "summary": "Get Summary By Associate",
-        "description": "NsApiSlow threshold 3000 ms.",
+        "description": "NsApiSlow threshold: 3000 ms.",
         "operationId": "v1SaleAgent_GetSummaryByAssociate",
         "parameters": [
           {
@@ -5331,7 +5331,7 @@
           "Sale_Agent"
         ],
         "summary": "Get Summary By Group",
-        "description": "NsApiSlow threshold 3000 ms.",
+        "description": "NsApiSlow threshold: 3000 ms.",
         "operationId": "v1SaleAgent_GetSummaryByGroup",
         "parameters": [
           {
@@ -5481,7 +5481,7 @@
           "Sale_Agent"
         ],
         "summary": "Get Summary By Contact",
-        "description": "NsApiSlow threshold 3000 ms.",
+        "description": "NsApiSlow threshold: 3000 ms.",
         "operationId": "v1SaleAgent_GetSummaryByContact",
         "parameters": [
           {
@@ -5633,10 +5633,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -6215,7 +6215,7 @@
           },
           "ActiveDate": {
             "format": "date-time",
-            "description": "The date to be used for searching &amp; showing",
+            "description": "The date to be used for searching & showing",
             "type": "string"
           },
           "AssignmentStatus": {
@@ -6646,7 +6646,7 @@
             "$ref": "#/components/schemas/SuperOffice.CRM.Services.StructuredAddress"
           },
           "Formatted": {
-            "description": "Read-only formatted address multi-line string. Combines street and postal into one string. e.g.: &lt;c&gt;\"Postboks 123,\\nBrugata 123,\\n1234 OSLO\\n\"&lt;/c&gt; or &lt;c&gt;\"Postbox 123,\\nBridgelane 123,\\nWest Tooting,\\nEast Shire ES2 W31\\n\"&lt;/c&gt;.",
+            "description": "Read-only formatted address multi-line string. Combines street and postal into one string. e.g.: <c>\"Postboks 123,\\nBrugata 123,\\n1234 OSLO\\n\"</c> or <c>\"Postbox 123,\\nBridgelane 123,\\nWest Tooting,\\nEast Shire ES2 W31\\n\"</c>.",
             "type": "string"
           },
           "TableRight": {
@@ -6747,7 +6747,7 @@
             "type": "string"
           },
           "Formatted": {
-            "description": "Read-only formatted address multi-line string. e.g.: &lt;c&gt;\"Brugata 123,\\n1234 OSLO\\n\"&lt;/c&gt; or &lt;c&gt;\"Bridgelane 123,\\nWest Tooting,\\nThe Shire ES2 W31\\n\"&lt;/c&gt;.",
+            "description": "Read-only formatted address multi-line string. e.g.: <c>\"Brugata 123,\\n1234 OSLO\\n\"</c> or <c>\"Bridgelane 123,\\nWest Tooting,\\nThe Shire ES2 W31\\n\"</c>.",
             "type": "string"
           }
         }

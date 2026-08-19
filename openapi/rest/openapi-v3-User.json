@@ -2141,7 +2141,7 @@
           "User"
         ],
         "summary": "Get Current User",
-        "description": "Gets the currently logged in user's information username, personal name,\n\nBlocked in Online for safety. Calls the User agent service GetUser.",
+        "description": "Gets the currently logged in user's information: username, personal name, credentials, licenses.\n\nBlocked in Online for safety. Calls the User agent service GetUser.",
         "operationId": "v1User_GetCurrentUser",
         "parameters": [
           {
@@ -2341,7 +2341,7 @@
           "User"
         ],
         "summary": "Get Current Associate",
-        "description": "Gets the currently logged in user's associate information (username, associate\n\nCalls the Associate agent service GetAssociate.",
+        "description": "Gets the currently logged in user's associate information (username, associate id, role)\n\nCalls the Associate agent service GetAssociate.",
         "operationId": "v1User_GetCurrentAssociate",
         "parameters": [
           {
@@ -2543,10 +2543,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {

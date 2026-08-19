@@ -1203,7 +1203,7 @@
           "ErpSync_Agent"
         ],
         "summary": "Save Erp Connection Sync Priorities",
-        "description": "Takes an array of the ErpConnection ids and saves these as ordered sync\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.",
+        "description": "Takes an array of the ErpConnection ids and saves these as ordered sync priorities\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.",
         "operationId": "v1ErpSyncAgent_SaveErpConnectionSyncPriorities",
         "parameters": [
           {
@@ -3252,7 +3252,7 @@
           "ErpSync_Agent"
         ],
         "summary": "Get Actor Type Mapping",
-        "description": "Get the current mappings for one connection/actor; connection+actor type =\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.",
+        "description": "Get the current mappings for one connection/actor; connection+actor type = unique key\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.",
         "operationId": "v1ErpSyncAgent_GetActorTypeMapping",
         "parameters": [
           {
@@ -4002,7 +4002,7 @@
           "ErpSync_Agent"
         ],
         "summary": "Validate Archive Column Config",
-        "description": "Clear field info from table SUPERLISTCOLUMNSIZE if field mapping changed on\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.",
+        "description": "Clear field info from table SUPERLISTCOLUMNSIZE if field mapping changed on given connection\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.",
         "operationId": "v1ErpSyncAgent_ValidateArchiveColumnConfig",
         "parameters": [
           {
@@ -4084,7 +4084,7 @@
           "ErpSync_Agent"
         ],
         "summary": "Update Connection Fields",
-        "description": "Gets all supported actor types, and all fields for each actor type, and save\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.",
+        "description": "Gets all supported actor types, and all fields for each actor type, and save this state to the CRM database\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.",
         "operationId": "v1ErpSyncAgent_UpdateConnectionFields",
         "parameters": [
           {
@@ -4234,7 +4234,7 @@
           "ErpSync_Agent"
         ],
         "summary": "Get Crm Actor Type",
-        "description": "Retrieves the CrmActorType that are mapped to a specific ErpActorType for this\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.",
+        "description": "Retrieves the CrmActorType that are mapped to a specific ErpActorType for this connection\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.",
         "operationId": "v1ErpSyncAgent_GetCrmActorType",
         "parameters": [
           {
@@ -4676,7 +4676,7 @@
           "ErpSync_Agent"
         ],
         "summary": "Save Erp Sync Connector Entity",
-        "description": "Updates the existing ErpSyncConnectorEntity or creates a new\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.",
+        "description": "Updates the existing ErpSyncConnectorEntity or creates a new ErpSyncConnectorEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.",
         "operationId": "v1ErpSyncAgent_SaveErpSyncConnectorEntity",
         "parameters": [
           {
@@ -4978,7 +4978,7 @@
           "ErpSync_Agent"
         ],
         "summary": "Can Delete Erp Sync Connector Entity",
-        "description": "Can we delete the connector\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.",
+        "description": "Can we delete the connector?\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.",
         "operationId": "v1ErpSyncAgent_CanDeleteErpSyncConnectorEntity",
         "parameters": [
           {
@@ -6006,7 +6006,7 @@
           "ErpSync_Agent"
         ],
         "summary": "Force Resync No Blank Values",
-        "description": "Force resync from CRM or given Erp connection to all other connections and tell\n\nUseful on import.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.",
+        "description": "Force resync from CRM or given Erp connection to all other connections and tell the sync that you don't want blank values to overwrite non-blank values.\n\nUseful on import.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.",
         "operationId": "v1ErpSyncAgent_ForceResyncNoBlankValues",
         "parameters": [
           {
@@ -6156,7 +6156,7 @@
           "ErpSync_Agent"
         ],
         "summary": "Force Resync Batch Task",
-        "description": "Start batch task to force resync from CRM or given Erp connection to all other\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.",
+        "description": "Start batch task to force resync from CRM or given Erp connection to all other connections\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.",
         "operationId": "v1ErpSyncAgent_ForceResyncBatchTask",
         "parameters": [
           {
@@ -6238,7 +6238,7 @@
           "ErpSync_Agent"
         ],
         "summary": "Force Resync External",
-        "description": "Force resync from CRM or given Erp connection to all other connections, using\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.",
+        "description": "Force resync from CRM or given Erp connection to all other connections, using external keys\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.",
         "operationId": "v1ErpSyncAgent_ForceResyncExternal",
         "parameters": [
           {
@@ -6388,7 +6388,7 @@
           "ErpSync_Agent"
         ],
         "summary": "Force Resync External No Blank Values",
-        "description": "Force resync from CRM or given Erp connection to all other connections, using\n\nUseful on import.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.",
+        "description": "Force resync from CRM or given Erp connection to all other connections, using external keys, and tell the sync that you don't want blank values to overwrite non-blank values.\n\nUseful on import.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.",
         "operationId": "v1ErpSyncAgent_ForceResyncExternalNoBlankValues",
         "parameters": [
           {
@@ -6881,10 +6881,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -7817,7 +7817,7 @@
         }
       },
       "SuperOffice.CRM.Services.ErpSyncActorTypeMapping": {
-        "description": "Mapping information for one Actor, contains array of field mappings (ERP &lt;-&gt; SuperOffice)\r\n<para />\r\nCarrier object for ErpSyncActorTypeMapping.\r\nServices for the ErpSyncActorTypeMapping Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IErpSyncAgent\">ErpSync Agent</see>.",
+        "description": "Mapping information for one Actor, contains array of field mappings (ERP <-> SuperOffice)\r\n<para />\r\nCarrier object for ErpSyncActorTypeMapping.\r\nServices for the ErpSyncActorTypeMapping Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IErpSyncAgent\">ErpSync Agent</see>.",
         "type": "object",
         "properties": {
           "ErpConnectionId": {
@@ -7874,7 +7874,7 @@
         }
       },
       "SuperOffice.CRM.Services.ErpSyncFieldMapping": {
-        "description": "Mapping information for one field pair (ERP &lt;-&gt; SuperOffice)\r\n<para />\r\nCarrier object for ErpSyncFieldMapping.\r\nServices for the ErpSyncFieldMapping Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IErpSyncAgent\">ErpSync Agent</see>.",
+        "description": "Mapping information for one field pair (ERP <-> SuperOffice)\r\n<para />\r\nCarrier object for ErpSyncFieldMapping.\r\nServices for the ErpSyncFieldMapping Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IErpSyncAgent\">ErpSync Agent</see>.",
         "type": "object",
         "properties": {
           "ErpFieldId": {

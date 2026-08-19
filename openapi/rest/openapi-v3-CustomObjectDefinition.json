@@ -17,7 +17,7 @@
           "CustomObjectDefinition"
         ],
         "summary": "Get Custom Object Definition",
-        "description": "Returns the schema (table + field definitions) for a Custom Object Definition",
+        "description": "Returns the schema (table + field definitions) for a Custom Object Definition by its database table name.",
         "operationId": "v1CustomObjectDefinition_GetCustomObjectDefinition",
         "parameters": [
           {
@@ -126,7 +126,7 @@
           "CustomObjectDefinition"
         ],
         "summary": "Has Screen Chooser",
-        "description": "Returns true if a screen chooser is configured for the given Custom Object",
+        "description": "Returns true if a screen chooser is configured for the given Custom Object Definition and mode.",
         "operationId": "v1CustomObjectDefinition_HasScreenChooser",
         "parameters": [
           {
@@ -246,10 +246,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {

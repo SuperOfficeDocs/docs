@@ -117,7 +117,7 @@
           "NumberAllocation_Agent"
         ],
         "summary": "Save Ref Count Entity",
-        "description": "Updates the existing RefCountEntity or creates a new RefCountEntity if the id\n\nNsApiSlow threshold: 1000 ms.",
+        "description": "Updates the existing RefCountEntity or creates a new RefCountEntity if the id parameter is 0.\n\nNsApiSlow threshold: 1000 ms.",
         "operationId": "v1NumberAllocationAgent_SaveRefCountEntity",
         "parameters": [
           {
@@ -501,7 +501,7 @@
           "NumberAllocation_Agent"
         ],
         "summary": "Get Number Each Template",
-        "description": "Returns true or false if Automatically create new counters for new document\n\nNsApiSlow threshold: 1000 ms.",
+        "description": "Returns true or false if Automatically create new counters for new document templates\n\nNsApiSlow threshold: 1000 ms.",
         "operationId": "v1NumberAllocationAgent_GetNumberEachTemplate",
         "parameters": [
           {
@@ -610,7 +610,7 @@
           "NumberAllocation_Agent"
         ],
         "summary": "Set Number Each Template",
-        "description": "Saves true or false if Automatically create new counters for new document\n\nNsApiSlow threshold: 1000 ms.",
+        "description": "Saves true or false if Automatically create new counters for new document templates\n\nNsApiSlow threshold: 1000 ms.",
         "operationId": "v1NumberAllocationAgent_SetNumberEachTemplate",
         "parameters": [
           {
@@ -694,10 +694,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {

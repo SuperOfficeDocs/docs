@@ -17,7 +17,7 @@
           "UserDefinedFieldInfo_Agent"
         ],
         "summary": "Get Custom Field Info List",
-        "description": "Return information about all the custom fields (user-defined + extra) on a\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Return information about all the custom fields (user-defined + extra) on a particular table\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1UserDefinedFieldInfoAgent_GetCustomFieldInfoList",
         "parameters": [
           {
@@ -185,7 +185,7 @@
           "UserDefinedFieldInfo_Agent"
         ],
         "summary": "Get Custom Field Info",
-        "description": "Return information about a particular custom field (user-defined + extra) on a\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Return information about a particular custom field (user-defined + extra) on a particular table\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1UserDefinedFieldInfoAgent_GetCustomFieldInfo",
         "parameters": [
           {
@@ -435,7 +435,7 @@
           "UserDefinedFieldInfo_Agent"
         ],
         "summary": "Save User Defined Field Info",
-        "description": "Updates the existing UserDefinedFieldInfo or creates a new UserDefinedFieldInfo\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing UserDefinedFieldInfo or creates a new UserDefinedFieldInfo if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1UserDefinedFieldInfoAgent_SaveUserDefinedFieldInfo",
         "parameters": [
           {
@@ -737,7 +737,7 @@
           "UserDefinedFieldInfo_Agent"
         ],
         "summary": "Get User Defined Field List",
-        "description": "Return information about all the user defined fields on a particular owner type\n\nNote this may be different than the currently published fields.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Return information about all the user defined fields on a particular owner type (project, contact, person, etc).\n\nNote this may be different than the currently published fields.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1UserDefinedFieldInfoAgent_GetUserDefinedFieldList",
         "parameters": [
           {
@@ -905,7 +905,7 @@
           "UserDefinedFieldInfo_Agent"
         ],
         "summary": "Get Published User Defined Field List",
-        "description": "Return information about all the user defined fields on a particular owner type\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Return information about all the user defined fields on a particular owner type (project, contact, person, etc).\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1UserDefinedFieldInfoAgent_GetPublishedUserDefinedFieldList",
         "parameters": [
           {
@@ -1073,7 +1073,7 @@
           "UserDefinedFieldInfo_Agent"
         ],
         "summary": "Get User Defined Field From Field Label",
-        "description": "Return information about the given user defined field identified by the owner\n\nNote that field labels are fuzzy. Leading and trailing spaces and punctuation are ignored. Note this may be different than the currently published fields.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Return information about the given user defined field identified by the owner and the field label.\n\nNote that field labels are fuzzy. Leading and trailing spaces and punctuation are ignored. Note this may be different than the currently published fields.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1UserDefinedFieldInfoAgent_GetUserDefinedFieldFromFieldLabel",
         "parameters": [
           {
@@ -1223,7 +1223,7 @@
           "UserDefinedFieldInfo_Agent"
         ],
         "summary": "Get Published User Defined Field From Field Label",
-        "description": "Return information about the given user defined field identified by the owner\n\nNote that field labels are fuzzy. Leading and trailing spaces and punctuation are ignored.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Return information about the given user defined field identified by the owner and the field label.\n\nNote that field labels are fuzzy. Leading and trailing spaces and punctuation are ignored.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1UserDefinedFieldInfoAgent_GetPublishedUserDefinedFieldFromFieldLabel",
         "parameters": [
           {
@@ -1373,7 +1373,7 @@
           "UserDefinedFieldInfo_Agent"
         ],
         "summary": "Get User Defined Field From Prog Id",
-        "description": "Return information about the given user defined field identified by the owner\n\nThe prog-id is used as the key in the entity carriers. Note this may be different than the currently published fields.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Return information about the given user defined field identified by the owner and the prog-id.\n\nThe prog-id is used as the key in the entity carriers. Note this may be different than the currently published fields.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1UserDefinedFieldInfoAgent_GetUserDefinedFieldFromProgId",
         "parameters": [
           {
@@ -1523,7 +1523,7 @@
           "UserDefinedFieldInfo_Agent"
         ],
         "summary": "Get Published User Defined Field From Prog Id",
-        "description": "Return information about the given user defined field identified by the owner\n\nThe prog-id is used as the key in the entity carriers.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Return information about the given user defined field identified by the owner and the prog-id.\n\nThe prog-id is used as the key in the entity carriers.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1UserDefinedFieldInfoAgent_GetPublishedUserDefinedFieldFromProgId",
         "parameters": [
           {
@@ -1841,7 +1841,7 @@
           "UserDefinedFieldInfo_Agent"
         ],
         "summary": "Get User Defined Field From Prog Ids",
-        "description": "Return an given array user defined field identified by the owner and the\n\nThe prog-id is used as the key in the entity carriers. Note this may be different than the currently published field layout.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Return an given array user defined field identified by the owner and the prog-ids.\n\nThe prog-id is used as the key in the entity carriers. Note this may be different than the currently published field layout.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1UserDefinedFieldInfoAgent_GetUserDefinedFieldFromProgIds",
         "parameters": [
           {
@@ -2801,7 +2801,7 @@
           "UserDefinedFieldInfo_Agent"
         ],
         "summary": "Revert",
-        "description": "Revert changed Udef fields for the given owner type - all unpublished changes\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Revert changed Udef fields for the given owner type - all unpublished changes will be lost\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1UserDefinedFieldInfoAgent_Revert",
         "parameters": [
           {
@@ -4369,10 +4369,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {

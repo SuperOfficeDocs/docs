@@ -2,7 +2,7 @@
 uid: automated-tests
 title: Automated tests
 description: Every check that runs against a PR or on a schedule for this repo - markdownlint, Vale, build validation, broken-link checking, the CRMScript reference drift check, and the stale generated-pages check - what each covers, whether it blocks a merge, and where to look when one flags something.
-keywords: ['ci', 'automated tests', 'markdownlint', 'vale', 'broken links', 'mint validate', 'automations', 'crmscript', 'stale pages', 'generated pages', 'landing page', 'template guard', 'release notes']
+keywords: ['ci', 'automated tests', 'markdownlint', 'vale', 'broken links', 'mint validate', 'automations', 'crmscript', 'stale pages', 'generated pages', 'landing page', 'template guard', 'release notes', 'openapi', 'swagger']
 author: digitaldiina
 date: 08.19.2026
 content_type: concept
@@ -19,6 +19,7 @@ This page is the single reference for every automatic check that runs against th
 | MDO-provider title/sidebarTitle auto-fix | GitHub Action (`.github/workflows/mdo-provider-sidebar-title.yml`) | No - auto-fixes and pushes a commit | This repo, `tools/ci/add-mdo-provider-sidebar-titles.py` |
 | Reserved `version` frontmatter auto-fix | GitHub Action (`.github/workflows/version-frontmatter-guard.yml`) | No - auto-fixes and pushes a commit | This repo, `tools/ci/fix-reserved-version-property.py` |
 | Reference-page overflow auto-fix | GitHub Action (`.github/workflows/reference-overflow-guard.yml`) | No - auto-fixes and pushes a commit | This repo, `tools/ci/apply-wide-mode.py` + `tools/ci/apply-code-wrap.py` |
+| OpenAPI conversion auto-fix | GitHub Action (`.github/workflows/openapi-conversion-guard.yml`) | No - auto-fixes and pushes a commit | This repo, `tools/convert-swagger-to-openapi.ps1` + `tools/ci/generate-openapi-nav.py` |
 | Markdownlint | GitHub Action (`.github/workflows/markdownlint.yml`) | No - advisory | This repo, `.markdownlint.yaml` / `.markdownlintignore` |
 | Landing page template guard | GitHub Action (`.github/workflows/landing-page-template-guard.yml`) | No - advisory (warns only) | This repo, `tools/ci/check-landing-page-templates.py` |
 | Release-notes API structure guard | GitHub Action (`.github/workflows/release-notes-api-structure-guard.yml`) | No - advisory (warns only) | This repo, `tools/ci/check-release-notes-api-structure.py` |
@@ -64,6 +65,20 @@ Triggers on a PR touching either maintained list (`tools/ci/wide-mode-pages.txt`
 * `code-wrap-pages.txt` - pages whose fenced code blocks get wrapped in a `<div className="wrap-code-samples">` marker, which `style.css` scopes a `white-space: pre-wrap` override to. Used instead of `mode: "wide"` where losing the TOC was judged worse than a wrapped code line; deliberately not a site-wide CSS change, since most multi-line indented code elsewhere in the docs relies on the default `white-space: pre` to avoid unexpected mid-line breaks.
 
 Append a page path to either list (no extension - the tool resolves `.mdx`/`.md` itself, preferring `.mdx` if both exist) whenever a new overflowing page is found or reported. Both fixes are idempotent, and both are skipped entirely for PRs from a fork, since the default token can't push back to a fork's branch.
+
+<Note>
+On this repo (public), a workflow's own `GITHUB_TOKEN` push lands its own re-triggered run in "action required" instead of running automatically - GitHub gates it behind a one-click manual approval (Actions tab &gt; the pending run &gt; **Approve and run**) rather than silently re-running. This isn't a failure and doesn't mean anything is broken: the fix commit has already landed by this point, and approving just lets the check confirm (correctly) that there's nothing left to do. Safe to leave unapproved indefinitely if this check isn't a required status for merging.
+</Note>
+
+### OpenAPI conversion auto-fix
+
+Only triggers on a PR touching `api-sources/openapi/agent/**` or `api-sources/openapi/rest/**` - hand-maintained Swagger 2.0 sources refreshed by an external NetServer/ADO build, not authored in this repo. Mintlify renders OpenAPI 3, so every source file has a converted counterpart under `openapi/agent/` or `openapi/rest/`, plus an entry in `config/nav-restful-agent-openapi.json` or `config/nav-restful-rest-openapi.json` wiring it into navigation - both are workaround output this repo generates and commits ahead of [issue #147][11]'s native OpenAPI 3 pipeline. Before this check existed, a source refresh had no mechanism forcing the derived output to be regenerated in the same PR, so it silently went stale (confirmed on [PR #232][12], which refreshed every source file but left `openapi/` and both nav files untouched for days).
+
+For each PR, the check converts only the added/modified source files (not a full re-conversion of every spec) via `tools/convert-swagger-to-openapi.ps1`, removes the output for any deleted source file, then regenerates both nav files from the current `openapi/{agent,rest}/` directory listing so a newly added or removed spec is wired into (or dropped from) navigation without a manual edit. If any of that produces a real diff, it's pushed back onto the PR branch as a fix commit, same as the other auto-fix checks on this page.
+
+The converter also works around one known upstream bug: two source files (`Swagger-v1-QuoteAgent.json`, `Swagger-v1-Selection.json`) `$ref` a schema definition that the NetServer Swagger generator omits from the same file, which otherwise makes conversion fail outright. The converter copies the missing definition in from a sibling file that still has it, against a throwaway in-memory copy - the tracked `api-sources/` file itself is never edited, since that folder is pipeline-owned.
+
+This whole check, plus `tools/convert-swagger-to-openapi.ps1` itself, is a workaround for the lack of a native OpenAPI 3 pipeline output - see [issue #297][13]. Once #147 lands, delete this workflow and the converter script outright rather than trying to keep them in sync with a pipeline that no longer needs them; `tools/ci/generate-openapi-nav.py` is the one piece that may be worth keeping as a standing nav-drift check regardless of how the underlying specs get produced.
 
 <Note>
 On this repo (public), a workflow's own `GITHUB_TOKEN` push lands its own re-triggered run in "action required" instead of running automatically - GitHub gates it behind a one-click manual approval (Actions tab &gt; the pending run &gt; **Approve and run**) rather than silently re-running. This isn't a failure and doesn't mean anything is broken: the fix commit has already landed by this point, and approving just lets the check confirm (correctly) that there's nothing left to do. Safe to leave unapproved indefinitely if this check isn't a required status for merging.
@@ -154,3 +169,6 @@ mint automations create --name "Broken link detection" --type broken-link-detect
 [8]: ./acceptance-testing
 [9]: https://github.com/SuperOfficeDocs/docs/issues/254
 [10]: ./how-to-add-release-notes
+[11]: https://github.com/SuperOfficeDocs/docs/issues/147
+[12]: https://github.com/SuperOfficeDocs/docs/pull/232
+[13]: https://github.com/SuperOfficeDocs/docs/issues/297

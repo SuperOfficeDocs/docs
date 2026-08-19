@@ -147,6 +147,13 @@
     }
   },
   {
+    "group": "Mailing",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-Mailing.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
     "group": "MDOList",
     "openapi": {
       "source": "openapi/rest/openapi-v3-MDOList.json",
@@ -164,6 +171,13 @@
     "group": "Person",
     "openapi": {
       "source": "openapi/rest/openapi-v3-Person.json",
+      "directory": "en/api/reference/restful/rest"
+    }
+  },
+  {
+    "group": "PictureFolder",
+    "openapi": {
+      "source": "openapi/rest/openapi-v3-PictureFolder.json",
       "directory": "en/api/reference/restful/rest"
     }
   },

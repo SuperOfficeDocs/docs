@@ -17,7 +17,7 @@
           "Selection_Agent"
         ],
         "summary": "Create Default Board View Settings From Entity Type",
-        "description": "Creates a new carrier from the entity type given, with the right kind of\n\nNsApiSlow threshold: 1000 ms.",
+        "description": "Creates a new carrier from the entity type given, with the right kind of properties, defaults set.\n\nNsApiSlow threshold: 1000 ms.",
         "operationId": "v1SelectionAgent_CreateDefaultBoardViewSettingsFromEntityType",
         "parameters": [
           {
@@ -949,7 +949,7 @@
           "Selection_Agent"
         ],
         "summary": "Save Selection Entity",
-        "description": "Updates the existing SelectionEntity or creates a new SelectionEntity if the id\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing SelectionEntity or creates a new SelectionEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1SelectionAgent_SaveSelectionEntity",
         "parameters": [
           {
@@ -1209,7 +1209,7 @@
           "Selection_Agent"
         ],
         "summary": "Create Selection Entity",
-        "description": "Create (but do not save) a new selection entity, for the current user and the\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Create (but do not save) a new selection entity, for the current user and the given target table; other fields populated as by CreateDefaultSelectionEntity()\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1SelectionAgent_CreateSelectionEntity",
         "parameters": [
           {
@@ -1509,7 +1509,7 @@
           "Selection_Agent"
         ],
         "summary": "Create Temporary Contact Selection From Contact Person Ids",
-        "description": "Creates a temporary selection with members from a collection of ContactPerson\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Creates a temporary selection with members from a collection of ContactPerson id's.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1SelectionAgent_CreateTemporaryContactSelectionFromContactPersonIds",
         "parameters": [
           {
@@ -1741,7 +1741,7 @@
           "Selection_Agent"
         ],
         "summary": "Get Recipient Statistics",
-        "description": "Returns a RecipientStatistics object with a count of addresses, emailaddresses\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Returns a RecipientStatistics object with a count of addresses, emailaddresses and emailaddresses.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1SelectionAgent_GetRecipientStatistics",
         "parameters": [
           {
@@ -1891,7 +1891,7 @@
           "Selection_Agent"
         ],
         "summary": "Get Recipient Statistics From Project Members",
-        "description": "Returns a RecipientStatistics object with a count of addresses, emailaddresses\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Returns a RecipientStatistics object with a count of addresses, emailaddresses and emailaddresses based on members in a project.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1SelectionAgent_GetRecipientStatisticsFromProjectMembers",
         "parameters": [
           {
@@ -2041,7 +2041,7 @@
           "Selection_Agent"
         ],
         "summary": "Get Recipient Statistics From Contact Person Ids",
-        "description": "Returns a RecipientStatistics object with a count of addresses, emailaddresses\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Returns a RecipientStatistics object with a count of addresses, emailaddresses and emailaddresses based on contact and persons in a collection of ContactPersonId.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1SelectionAgent_GetRecipientStatisticsFromContactPersonIds",
         "parameters": [
           {
@@ -2273,7 +2273,7 @@
           "Selection_Agent"
         ],
         "summary": "Remove Contact Selection Members",
-        "description": "Removes members from the selection as  specified in the collection of\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Removes members from the selection as  specified in the collection of ContactPersonId.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1SelectionAgent_RemoveContactSelectionMembers",
         "parameters": [
           {
@@ -2858,7 +2858,7 @@
           "Selection_Agent"
         ],
         "summary": "Create Temporary Contact Selection From Selection Member Ids",
-        "description": "Creates a temporary selection with members from a collection of selectionmember\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Creates a temporary selection with members from a collection of selectionmember id's.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1SelectionAgent_CreateTemporaryContactSelectionFromSelectionMemberIds",
         "parameters": [
           {
@@ -3090,7 +3090,7 @@
           "Selection_Agent"
         ],
         "summary": "Edit Contact Selection Member Details",
-        "description": "Edit company and contact details in a selection based on contents in\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Edit company and contact details in a selection based on contents in selectionMemberEditValues.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1SelectionAgent_EditContactSelectionMemberDetails",
         "parameters": [
           {
@@ -3254,7 +3254,7 @@
           "Selection_Agent"
         ],
         "summary": "Export Selection Members",
-        "description": "ExportSelectionMembers will generate a string that is the result of\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "ExportSelectionMembers will generate a string that is the result of substituting the template variables with values from selectionmembers.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1SelectionAgent_ExportSelectionMembers",
         "parameters": [
           {
@@ -3518,7 +3518,7 @@
           "Selection_Agent"
         ],
         "summary": "Export Selection Members With Order By",
-        "description": "ExportSelectionMembers will generate a string that is the result of\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "ExportSelectionMembers will generate a string that is the result of substituting the template variables with values from selectionmembers.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1SelectionAgent_ExportSelectionMembersWithOrderBy",
         "parameters": [
           {
@@ -4553,7 +4553,7 @@
           "Selection_Agent"
         ],
         "summary": "Remove Selection Members",
-        "description": "Removes members from the selection as  specified in the collection of entity\n\nThe ids are selection member ids (selection member primary key)\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Removes members from the selection as  specified in the collection of entity ids.\n\nThe ids are selection member ids (selection member primary key)\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1SelectionAgent_RemoveSelectionMembers",
         "parameters": [
           {
@@ -5411,7 +5411,7 @@
           "Selection_Agent"
         ],
         "summary": "Create Contact Selection From Shadow Selection",
-        "description": "Creates a new contact selection based on contact selection members from an\n\nThe new selection will always be static even if the original selection is dynamic.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Creates a new contact selection based on contact selection members from an existing shadow sale, appointment, project or document selection.\n\nThe new selection will always be static even if the original selection is dynamic.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1SelectionAgent_CreateContactSelectionFromShadowSelection",
         "parameters": [
           {
@@ -5643,7 +5643,7 @@
           "Selection_Agent"
         ],
         "summary": "Get Parent Combined Selections",
-        "description": "Get a list of all selection ids where the given selection is used to create a\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Get a list of all selection ids where the given selection is used to create a combined selection.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1SelectionAgent_GetParentCombinedSelections",
         "parameters": [
           {
@@ -7325,7 +7325,7 @@
           "Selection_Agent"
         ],
         "summary": "Get Selection For Find",
-        "description": "Obtain a selection for the given entity, for the current user, of type\n\nOptionally populate criteria from the TypicalSearches system\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Obtain a selection for the given entity, for the current user, of type WorkingSetForFind.\n\nOptionally populate criteria from the TypicalSearches system\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1SelectionAgent_GetSelectionForFind",
         "parameters": [
           {
@@ -7795,10 +7795,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -9012,7 +9012,7 @@
           },
           "ActiveDate": {
             "format": "date-time",
-            "description": "The date to be used for searching &amp; showing",
+            "description": "The date to be used for searching & showing",
             "type": "string"
           },
           "HasConflict": {
@@ -9283,7 +9283,7 @@
             "$ref": "#/components/schemas/SuperOffice.CRM.Services.StructuredAddress"
           },
           "Formatted": {
-            "description": "Read-only formatted address multi-line string. Combines street and postal into one string. e.g.: &lt;c&gt;\"Postboks 123,\\nBrugata 123,\\n1234 OSLO\\n\"&lt;/c&gt; or &lt;c&gt;\"Postbox 123,\\nBridgelane 123,\\nWest Tooting,\\nEast Shire ES2 W31\\n\"&lt;/c&gt;.",
+            "description": "Read-only formatted address multi-line string. Combines street and postal into one string. e.g.: <c>\"Postboks 123,\\nBrugata 123,\\n1234 OSLO\\n\"</c> or <c>\"Postbox 123,\\nBridgelane 123,\\nWest Tooting,\\nEast Shire ES2 W31\\n\"</c>.",
             "type": "string"
           },
           "TableRight": {
@@ -9384,7 +9384,7 @@
             "type": "string"
           },
           "Formatted": {
-            "description": "Read-only formatted address multi-line string. e.g.: &lt;c&gt;\"Brugata 123,\\n1234 OSLO\\n\"&lt;/c&gt; or &lt;c&gt;\"Bridgelane 123,\\nWest Tooting,\\nThe Shire ES2 W31\\n\"&lt;/c&gt;.",
+            "description": "Read-only formatted address multi-line string. e.g.: <c>\"Brugata 123,\\n1234 OSLO\\n\"</c> or <c>\"Bridgelane 123,\\nWest Tooting,\\nThe Shire ES2 W31\\n\"</c>.",
             "type": "string"
           }
         }
@@ -10748,7 +10748,7 @@
             "type": "integer"
           },
           "ColumnData": {
-            "description": "Dictionary of column name - column data items. Each column data item contains a display value, a tooltip hint, a link hint, and an orderby value. &lt;para/&gt;The display value is encoded by the CultureDataFormatter and can be decoded / localized by that class; all other values are optional. &lt;para/&gt;Tooltip hints can be passed to the TooltipProvider (Tooltip service) to be translated into an actual tootip.",
+            "description": "Dictionary of column name - column data items. Each column data item contains a display value, a tooltip hint, a link hint, and an orderby value. <para/>The display value is encoded by the CultureDataFormatter and can be decoded / localized by that class; all other values are optional. <para/>Tooltip hints can be passed to the TooltipProvider (Tooltip service) to be translated into an actual tootip.",
             "type": "object",
             "additionalProperties": {
               "$ref": "#/components/schemas/SuperOffice.CRM.ArchiveLists.ArchiveColumnData"
@@ -10916,7 +10916,7 @@
             "type": "boolean"
           },
           "ExtraInfo": {
-            "description": "Example: \"navigator\" -&gt; Should this column be mapped to a hyperlinked navigator text type?",
+            "description": "Example: \"navigator\" -> Should this column be mapped to a hyperlinked navigator text type?",
             "type": "string"
           },
           "Width": {
@@ -11087,7 +11087,7 @@
             "type": "string"
           },
           "FilterScreenHeading": {
-            "description": "'Find sale', or whatever is appropriate for the Find &lt;entity&gt; filter page; this string will contain resource references",
+            "description": "'Find sale', or whatever is appropriate for the Find <entity> filter page; this string will contain resource references",
             "type": "string"
           },
           "SelectionEntityHeading": {

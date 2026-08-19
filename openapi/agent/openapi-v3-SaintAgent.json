@@ -117,7 +117,7 @@
           "Saint_Agent"
         ],
         "summary": "Save Saint Configuration",
-        "description": "Updates the existing SaintConfiguration or creates a new SaintConfiguration if\n\nNsApiSlow threshold: 1000 ms.",
+        "description": "Updates the existing SaintConfiguration or creates a new SaintConfiguration if the id parameter is 0.\n\nNsApiSlow threshold: 1000 ms.",
         "operationId": "v1SaintAgent_SaveSaintConfiguration",
         "parameters": [
           {
@@ -485,7 +485,7 @@
           "Saint_Agent"
         ],
         "summary": "Save Status Monitor",
-        "description": "Updates the existing StatusMonitor or creates a new StatusMonitor if the id\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing StatusMonitor or creates a new StatusMonitor if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1SaintAgent_SaveStatusMonitor",
         "parameters": [
           {
@@ -1508,7 +1508,7 @@
           "Saint_Agent"
         ],
         "summary": "Save Status Monitor Periods",
-        "description": "Updates the existing StatusMonitorPeriods or creates a new StatusMonitorPeriods\n\nNsApiSlow threshold: 1000 ms.",
+        "description": "Updates the existing StatusMonitorPeriods or creates a new StatusMonitorPeriods if the id parameter is 0.\n\nNsApiSlow threshold: 1000 ms.",
         "operationId": "v1SaintAgent_SaveStatusMonitorPeriods",
         "parameters": [
           {
@@ -1760,10 +1760,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {

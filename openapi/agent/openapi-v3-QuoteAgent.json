@@ -181,7 +181,7 @@
           "Quote_Agent"
         ],
         "summary": "Recalculate Quote Line",
-        "description": "When the user changes one or more values in a quoteline, the connector gets to\n\nShall be called when the user changes any of the following fields: Quantity, DiscountAmount, DiscountPercent, ListPrice (if allowed). Will calculate the TotalPrice and the VAT (if possible) for the line.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "When the user changes one or more values in a quoteline, the connector gets to change the QuoteLine, for instance calculate VAT.\n\nShall be called when the user changes any of the following fields: Quantity, DiscountAmount, DiscountPercent, ListPrice (if allowed). Will calculate the TotalPrice and the VAT (if possible) for the line.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1QuoteAgent_RecalculateQuoteLine",
         "parameters": [
           {
@@ -1527,7 +1527,7 @@
           "Quote_Agent"
         ],
         "summary": "Validate Quote Version",
-        "description": "When the user changes one or more values in a quoteline or a quoteAlternative,\n\nValidateQuoteVersion shall be called when the user presses the validate button, presses the send button or closes the quote dialog. RecalculateQuoteAlternative should typically validate all alternatives, set values in extrafields, and set the state in the version.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "When the user changes one or more values in a quoteline or a quoteAlternative, the connector gets to change the QuoteLines and the alternative, for instance calculate VAT.\n\nValidateQuoteVersion shall be called when the user presses the validate button, presses the send button or closes the quote dialog. RecalculateQuoteAlternative should typically validate all alternatives, set values in extrafields, and set the state in the version.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1QuoteAgent_ValidateQuoteVersion",
         "parameters": [
           {
@@ -2745,7 +2745,7 @@
           "Quote_Agent"
         ],
         "summary": "Generate Quote Documents",
-        "description": "Generate all the documents required to send the Quote as an email to the\n\nQuote version status is not changed by this method.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Generate all the documents required to send the Quote as an email to the prospect - or an Order Confirmation; it just depends on the template id's for the lines doc and mail body.\n\nQuote version status is not changed by this method.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1QuoteAgent_GenerateQuoteDocuments",
         "parameters": [
           {
@@ -2895,7 +2895,7 @@
           "Quote_Agent"
         ],
         "summary": "Get Order Confirmation",
-        "description": "Get a base64-encoded data stream that is just the order confirmation document,\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Get a base64-encoded data stream that is just the order confirmation document, for the given quote version; no permanent document is created or stored anywhere; the result is a PDF\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1QuoteAgent_GetOrderConfirmation",
         "parameters": [
           {
@@ -3195,7 +3195,7 @@
           "Quote_Agent"
         ],
         "summary": "Update Quote Version Prices",
-        "description": "Update price on the all the quotelines for each alternative in the current\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Update price on the all the quotelines for each alternative in the current quote version\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1QuoteAgent_UpdateQuoteVersionPrices",
         "parameters": [
           {
@@ -4245,7 +4245,7 @@
           "Quote_Agent"
         ],
         "summary": "Create Or Update Quote Version Attachments",
-        "description": "Look at the Quote version, related sale and sale type, and ensure that the\n\nThis method may create or delete records\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Look at the Quote version, related sale and sale type, and ensure that the correct QuoteVersionAttachment records exist.\n\nThis method may create or delete records\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1QuoteAgent_CreateOrUpdateQuoteVersionAttachments",
         "parameters": [
           {
@@ -4413,7 +4413,7 @@
           "Quote_Agent"
         ],
         "summary": "Include Quote Version Attachment",
-        "description": "Toggle the 'included' state of a quote version attachment; will throw\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Toggle the 'included' state of a quote version attachment; will throw exceptions if called on locked versions\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1QuoteAgent_IncludeQuoteVersionAttachment",
         "parameters": [
           {
@@ -5519,7 +5519,7 @@
           "Quote_Agent"
         ],
         "summary": "Save Price List",
-        "description": "Updates the existing PriceList or creates a new PriceList if the id parameter\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing PriceList or creates a new PriceList if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1QuoteAgent_SavePriceList",
         "parameters": [
           {
@@ -7586,7 +7586,7 @@
           "Quote_Agent"
         ],
         "summary": "Save Quote Alternative",
-        "description": "Updates the existing QuoteAlternative or creates a new QuoteAlternative if the\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing QuoteAlternative or creates a new QuoteAlternative if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1QuoteAgent_SaveQuoteAlternative",
         "parameters": [
           {
@@ -7846,7 +7846,7 @@
           "Quote_Agent"
         ],
         "summary": "Recalculate Quote Alternative",
-        "description": "When the user changes one or more values in a quoteline or a quoteAlternative,\n\nRecalculateQuoteAlternative shall be called when the user changes any of the following fields: Quantity, DiscountAmount, DiscountPercent, listprice (if allowed). RecalculateQuoteAlternative will calculate the TotalPrice and the VAT (if possible) for the lines and the alternative.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "When the user changes one or more values in a quoteline or a quoteAlternative, the connector gets to change the QuoteLines and the alternative, for instance calculate VAT.\n\nRecalculateQuoteAlternative shall be called when the user changes any of the following fields: Quantity, DiscountAmount, DiscountPercent, listprice (if allowed). RecalculateQuoteAlternative will calculate the TotalPrice and the VAT (if possible) for the lines and the alternative.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1QuoteAgent_RecalculateQuoteAlternative",
         "parameters": [
           {
@@ -11058,7 +11058,7 @@
           "Quote_Agent"
         ],
         "summary": "Get Connection Startup Errors",
-        "description": "Returns an array of PluginResponseInfos for all failed connection\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Returns an array of PluginResponseInfos for all failed connection initializations.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1QuoteAgent_GetConnectionStartupErrors",
         "parameters": [
           {
@@ -12271,7 +12271,7 @@
           "Quote_Agent"
         ],
         "summary": "Create And Save Quote From Sale",
-        "description": "Creates a copy the active version with connected alternatives and quotelines\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Creates a copy the active version with connected alternatives and quotelines from another sale.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1QuoteAgent_CreateAndSaveQuoteFromSale",
         "parameters": [
           {
@@ -12571,7 +12571,7 @@
           "Quote_Agent"
         ],
         "summary": "Get Order State",
-        "description": "If there is a problem with a quoteline, the error description shall be placed\n\nA summary of all the problems (if any) should be placed in the response object. Requires that the Create-Order capability is true.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "If there is a problem with a quoteline, the error description shall be placed in the status and reason fields of the quoteline, if there is a problem with the alternative, the error description shall be placed in the status and reason fields of the alternative.\n\nA summary of all the problems (if any) should be placed in the response object. Requires that the Create-Order capability is true.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1QuoteAgent_GetOrderState",
         "parameters": [
           {
@@ -13741,10 +13741,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -14013,7 +14013,7 @@
             "type": "number"
           },
           "Rights": {
-            "description": "Field1=right&amp;Field2=right, etc. of any fields that have non-standard field access rights. Rights can be one of: N (=None or Hidden), R (=Read-only), W (=Writeable), M (=Mandatory). The fields will mostly be from the Quoteline table, but some added fields that are conceptually part of the quoteline, like Image will also be possibly to set rights on. Will be used by SuperOffice to control the user interface when showing the record.",
+            "description": "Field1=right&Field2=right, etc. of any fields that have non-standard field access rights. Rights can be one of: N (=None or Hidden), R (=Read-only), W (=Writeable), M (=Mandatory). The fields will mostly be from the Quoteline table, but some added fields that are conceptually part of the quoteline, like Image will also be possibly to set rights on. Will be used by SuperOffice to control the user interface when showing the record.",
             "type": "string"
           },
           "Rule": {
@@ -14789,7 +14789,7 @@
           },
           "QuoteVersionId": {
             "format": "int32",
-            "description": "The version that owns this alternative (the chain is Sale 1-&gt;1 Quote 1-&gt;+ QuoteVersion 1-&gt;+ QuoteAlternative.",
+            "description": "The version that owns this alternative (the chain is Sale 1->1 Quote 1->+ QuoteVersion 1->+ QuoteAlternative.",
             "type": "integer"
           },
           "Name": {
@@ -15848,7 +15848,7 @@
             "type": "string"
           },
           "Rights": {
-            "description": "Field1=right&amp;Field2=right, etc. of any fields that have non-standard field access rights. Rights can be one of: N (=None or Hidden), R (=Read-only), W (=Writeable), M (=Mandatory). The fields will mostly be from the Quoteline table, but some added fields that are conceptually part of the quoteline, like Image will also be possibly to set rights on. Will be used by SuperOffice to control the user interface when showing the record.",
+            "description": "Field1=right&Field2=right, etc. of any fields that have non-standard field access rights. Rights can be one of: N (=None or Hidden), R (=Read-only), W (=Writeable), M (=Mandatory). The fields will mostly be from the Quoteline table, but some added fields that are conceptually part of the quoteline, like Image will also be possibly to set rights on. Will be used by SuperOffice to control the user interface when showing the record.",
             "type": "string"
           },
           "Rule": {

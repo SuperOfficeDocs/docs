@@ -942,7 +942,7 @@
           "BulkUpdate_Agent"
         ],
         "summary": "Remove Stored Fields And Get Default Fields",
-        "description": "Remove the stored settings of the bulk update for this table from this context,\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Remove the stored settings of the bulk update for this table from this context, to get the default settings instead\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1BulkUpdateAgent_RemoveStoredFieldsAndGetDefaultFields",
         "parameters": [
           {
@@ -1262,10 +1262,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {

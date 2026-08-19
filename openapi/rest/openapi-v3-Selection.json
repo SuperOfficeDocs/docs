@@ -801,7 +801,7 @@
           "Selection"
         ],
         "summary": "Remove Contact Selection Members",
-        "description": "Removes members from the selection as  specified in the collection of",
+        "description": "Removes members from the selection as  specified in the collection of ContactPersonId.",
         "operationId": "v1SelectionEntity_RemoveContactSelectionMembers",
         "parameters": [
           {
@@ -2497,10 +2497,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -3375,7 +3375,7 @@
             "type": "boolean"
           },
           "ExtraInfo": {
-            "description": "Example: \"navigator\" -&gt; Should this column be mapped to a hyperlinked navigator text type?",
+            "description": "Example: \"navigator\" -> Should this column be mapped to a hyperlinked navigator text type?",
             "type": "string"
           },
           "Width": {

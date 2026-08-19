@@ -117,7 +117,7 @@
           "ForeignSystem_Agent"
         ],
         "summary": "Save Foreign App Entity",
-        "description": "Updates the existing ForeignAppEntity or creates a new ForeignAppEntity if the\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing ForeignAppEntity or creates a new ForeignAppEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ForeignSystemAgent_SaveForeignAppEntity",
         "parameters": [
           {
@@ -737,7 +737,7 @@
           "ForeignSystem_Agent"
         ],
         "summary": "Get Device By Name",
-        "description": "Gets a ForeignDevice with deviceName that belongs to the application with\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Gets a ForeignDevice with deviceName that belongs to the application with applicationName.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ForeignSystemAgent_GetDeviceByName",
         "parameters": [
           {
@@ -887,7 +887,7 @@
           "ForeignSystem_Agent"
         ],
         "summary": "Get Device By Identifier",
-        "description": "Gets a ForeignDevice with deviceName and deviceIdentifier that belongs to the\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Gets a ForeignDevice with deviceName and deviceIdentifier that belongs to the application with applicationName.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ForeignSystemAgent_GetDeviceByIdentifier",
         "parameters": [
           {
@@ -1037,7 +1037,7 @@
           "ForeignSystem_Agent"
         ],
         "summary": "Add Device By Identifier",
-        "description": "Adds a new ForeignDevice with deviceName that belongs to the application with\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Adds a new ForeignDevice with deviceName that belongs to the application with applicationName, with an optional device-specific identifier.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ForeignSystemAgent_AddDeviceByIdentifier",
         "parameters": [
           {
@@ -1187,7 +1187,7 @@
           "ForeignSystem_Agent"
         ],
         "summary": "Save Device By Identifier",
-        "description": "Updates a ForeignDevice with deviceName that belongs to the application with\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates a ForeignDevice with deviceName that belongs to the application with applicationName.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ForeignSystemAgent_SaveDeviceByIdentifier",
         "parameters": [
           {
@@ -1337,7 +1337,7 @@
           "ForeignSystem_Agent"
         ],
         "summary": "Delete Device By Identifier",
-        "description": "Delete a ForeignDevice with deviceName and deviceIdentifier that belongs to the\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Delete a ForeignDevice with deviceName and deviceIdentifier that belongs to the application with applicationName.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ForeignSystemAgent_DeleteDeviceByIdentifier",
         "parameters": [
           {
@@ -1419,7 +1419,7 @@
           "ForeignSystem_Agent"
         ],
         "summary": "Get Key",
-        "description": "Returning a foreign key by its key name, that belongs to the specified device\n\nA table name and record ID can also be specified.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Returning a foreign key by its key name, that belongs to the specified device and application.\n\nA table name and record ID can also be specified.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ForeignSystemAgent_GetKey",
         "parameters": [
           {
@@ -1569,7 +1569,7 @@
           "ForeignSystem_Agent"
         ],
         "summary": "Get Key Value",
-        "description": "Gets the string value of a ForeignKey, that belongs to the specified device and\n\nThe table name and record ID must also be specified.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Gets the string value of a ForeignKey, that belongs to the specified device and application.\n\nThe table name and record ID must also be specified.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ForeignSystemAgent_GetKeyValue",
         "parameters": [
           {
@@ -1719,7 +1719,7 @@
           "ForeignSystem_Agent"
         ],
         "summary": "Get Key On Device Identifier",
-        "description": "Returning a foreign key by its key name and device identifier, that belongs to\n\nA table name and record ID can also be specified.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Returning a foreign key by its key name and device identifier, that belongs to the specified device and application.\n\nA table name and record ID can also be specified.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ForeignSystemAgent_GetKeyOnDeviceIdentifier",
         "parameters": [
           {
@@ -1869,7 +1869,7 @@
           "ForeignSystem_Agent"
         ],
         "summary": "Get Key Value On Device Identifier",
-        "description": "Returning a foreign key string value by its key name and device identifier,\n\nA table name and record ID can also be specified.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Returning a foreign key string value by its key name and device identifier, that belongs to the specified device and application.\n\nA table name and record ID can also be specified.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ForeignSystemAgent_GetKeyValueOnDeviceIdentifier",
         "parameters": [
           {
@@ -2319,7 +2319,7 @@
           "ForeignSystem_Agent"
         ],
         "summary": "Delete Foreign Key On Name",
-        "description": "Deletes all specified occurrences of a key, belonging to the ForeignApp and\n\nSpecifying a blank table name will delete ALL keys of the given name; specifying a recordId of 0 will delete ALL keys of the given name for the given table.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Deletes all specified occurrences of a key, belonging to the ForeignApp and ForeignDevice, table and record specified.\n\nSpecifying a blank table name will delete ALL keys of the given name; specifying a recordId of 0 will delete ALL keys of the given name for the given table.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ForeignSystemAgent_DeleteForeignKeyOnName",
         "parameters": [
           {
@@ -2401,7 +2401,7 @@
           "ForeignSystem_Agent"
         ],
         "summary": "Get Key By Value",
-        "description": "Get a foreignkey based on its name and value, that belongs to the specified\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Get a foreignkey based on its name and value, that belongs to the specified device and application.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ForeignSystemAgent_GetKeyByValue",
         "parameters": [
           {
@@ -2551,7 +2551,7 @@
           "ForeignSystem_Agent"
         ],
         "summary": "Get Key By Value And Identifier",
-        "description": "Get a foreignkey based on its name and value, that belongs to the specified\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Get a foreignkey based on its name and value, that belongs to the specified deviceId, device, and application.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ForeignSystemAgent_GetKeyByValueAndIdentifier",
         "parameters": [
           {
@@ -3220,7 +3220,7 @@
           "ForeignSystem_Agent"
         ],
         "summary": "Delete Foreign Key",
-        "description": "Deletes all specified occurrences of a key, belonging to the ForeignApp and\n\nSpecifying a blank table name will delete ALL keys of the given name; specifying a recordId of 0 will delete ALL keys of the given name for the given table.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Deletes all specified occurrences of a key, belonging to the ForeignApp and ForeignDevice, table and record specified.\n\nSpecifying a blank table name will delete ALL keys of the given name; specifying a recordId of 0 will delete ALL keys of the given name for the given table.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ForeignSystemAgent_DeleteForeignKey",
         "parameters": [
           {
@@ -3806,7 +3806,7 @@
           "ForeignSystem_Agent"
         ],
         "summary": "Get Device Keys On Device Identifier Table",
-        "description": "Returns all ForeignKeys that belong to a device with a given deviceIdentifier\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Returns all ForeignKeys that belong to a device with a given deviceIdentifier and table name.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ForeignSystemAgent_GetDeviceKeysOnDeviceIdentifierTable",
         "parameters": [
           {
@@ -3974,7 +3974,7 @@
           "ForeignSystem_Agent"
         ],
         "summary": "Get Device Keys On Device Identifier Table Record Id",
-        "description": "Returns all ForeignKeys that belong to a device with a given deviceIdentifier\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Returns all ForeignKeys that belong to a device with a given deviceIdentifier and table name, as well as record id.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ForeignSystemAgent_GetDeviceKeysOnDeviceIdentifierTableRecordId",
         "parameters": [
           {
@@ -4144,10 +4144,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {

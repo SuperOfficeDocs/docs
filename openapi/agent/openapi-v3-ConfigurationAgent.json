@@ -117,7 +117,7 @@
           "Configuration_Agent"
         ],
         "summary": "Save Configurable Screen Delta",
-        "description": "Updates the existing ConfigurableScreenDelta or creates a new\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing ConfigurableScreenDelta or creates a new ConfigurableScreenDelta if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ConfigurationAgent_SaveConfigurableScreenDelta",
         "parameters": [
           {
@@ -678,7 +678,7 @@
           "Configuration_Agent"
         ],
         "summary": "Get Configurable Screen Deltas By Delta",
-        "description": "This method will return a configurablescreen delta matching the properties\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "This method will return a configurablescreen delta matching the properties received from the incomming delta\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ConfigurationAgent_GetConfigurableScreenDeltasByDelta",
         "parameters": [
           {
@@ -846,7 +846,7 @@
           "Configuration_Agent"
         ],
         "summary": "Get Configurable Screen Deltas By Query",
-        "description": "This method will return a configurablescreen delta matching the properties\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "This method will return a configurablescreen delta matching the properties received from the incomming query\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ConfigurationAgent_GetConfigurableScreenDeltasByQuery",
         "parameters": [
           {
@@ -1328,7 +1328,7 @@
           "Configuration_Agent"
         ],
         "summary": "Get Recipe Applies To Mappings",
-        "description": "Return the a  dictionary with recipeId as key, and chosen appliesTo for that\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Return the a  dictionary with recipeId as key, and chosen appliesTo for that recipe, Like projecttype for projectcardrecipe\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ConfigurationAgent_GetRecipeAppliesToMappings",
         "parameters": [
           {
@@ -1987,7 +1987,7 @@
           "Configuration_Agent"
         ],
         "summary": "Get Filter List",
-        "description": "Get the list of filters to be used for processing the configuration data for\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Get the list of filters to be used for processing the configuration data for this application.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ConfigurationAgent_GetFilterList",
         "parameters": [
           {
@@ -2137,7 +2137,7 @@
           "Configuration_Agent"
         ],
         "summary": "Clear Configuration Cache",
-        "description": "Configuration XML's may be expensive to build and parse, and are therefore\n\n<para/>Cahcing is per application/instance/associate, and can be turned off through the config file. <para/>If caching is on, and the configuration is changed, it is necessary to clear the cached configurations from the database, through this call.<para/>Note that changes to the externalapplication table require cache invalidation. SoAdmin will do so automatically.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Configuration XML's may be expensive to build and parse, and are therefore cached to the database.\n\n<para/>Cahcing is per application/instance/associate, and can be turned off through the config file. <para/>If caching is on, and the configuration is changed, it is necessary to clear the cached configurations from the database, through this call.<para/>Note that changes to the externalapplication table require cache invalidation. SoAdmin will do so automatically.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ConfigurationAgent_ClearConfigurationCache",
         "parameters": [
           {
@@ -2219,7 +2219,7 @@
           "Configuration_Agent"
         ],
         "summary": "Get Any Configuration",
-        "description": "Get one defined configuration fragment, with full reference resolution and\n\nThis is essentially the same service as the GetPageConfiguration, except that this service is not locked to objects of type Page.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Get one defined configuration fragment, with full reference resolution and parsing applied.\n\nThis is essentially the same service as the GetPageConfiguration, except that this service is not locked to objects of type Page.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ConfigurationAgent_GetAnyConfiguration",
         "parameters": [
           {
@@ -2369,7 +2369,7 @@
           "Configuration_Agent"
         ],
         "summary": "Get E Marketing Url",
-        "description": "NsApiSlow threshold 5000 ms.",
+        "description": "NsApiSlow threshold: 5000 ms.",
         "operationId": "v1ConfigurationAgent_GetEMarketingUrl",
         "parameters": [
           {
@@ -3228,7 +3228,7 @@
           "Configuration_Agent"
         ],
         "summary": "Get Www Url",
-        "description": "Will get the default URL used for the logo, from the [NetServices] PageUrl\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Will get the default URL used for the logo, from the [NetServices] PageUrl preferencec, with tags substituted.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ConfigurationAgent_GetWwwUrl",
         "parameters": [
           {
@@ -3855,7 +3855,7 @@
           "Configuration_Agent"
         ],
         "summary": "Get Email Number Of Days",
-        "description": "NsApiSlow threshold 5000 ms.",
+        "description": "NsApiSlow threshold: 5000 ms.",
         "operationId": "v1ConfigurationAgent_GetEmailNumberOfDays",
         "parameters": [
           {
@@ -4524,7 +4524,7 @@
           "Configuration_Agent"
         ],
         "summary": "Save Diary View Entity",
-        "description": "Updates the existing DiaryViewEntity or creates a new DiaryViewEntity if the id\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing DiaryViewEntity or creates a new DiaryViewEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ConfigurationAgent_SaveDiaryViewEntity",
         "parameters": [
           {
@@ -4926,7 +4926,7 @@
           "Configuration_Agent"
         ],
         "summary": "Save Landing Page Entity",
-        "description": "Updates the existing LandingPageEntity or creates a new LandingPageEntity if\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing LandingPageEntity or creates a new LandingPageEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ConfigurationAgent_SaveLandingPageEntity",
         "parameters": [
           {
@@ -5228,7 +5228,7 @@
           "Configuration_Agent"
         ],
         "summary": "Get Landing Page",
-        "description": "Get the landing page configuration for an associate and entity table.\n\nCreates the landing page row if it does not exist.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Get the landing page configuration for an associate and entity table.\n\nCreates the landing page row if it does not exist.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## This method is experimental, subject to change, and not intended for partners.",
         "operationId": "v1ConfigurationAgent_GetLandingPage",
         "parameters": [
           {
@@ -5378,7 +5378,7 @@
           "Configuration_Agent"
         ],
         "summary": "Set Landing Page Pin For Associate",
-        "description": "Pin or unpin an entity or selection on the landing page identified by associate\n\nCreates the landing page row if it does not exist.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Pin or unpin an entity or selection on the landing page identified by associate and entity table.\n\nCreates the landing page row if it does not exist.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## This method is experimental, subject to change, and not intended for partners.",
         "operationId": "v1ConfigurationAgent_SetLandingPagePinForAssociate",
         "parameters": [
           {
@@ -5444,6 +5444,156 @@
         "responses": {
           "204": {
             "description": "No Content"
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Configuration/SaveLandingPageTabs": {
+      "post": {
+        "tags": [
+          "Configuration_Agent"
+        ],
+        "summary": "Save Landing Page Tabs",
+        "description": "Replace the full ordered set of tabs on the landing page identified by associate and entity table, reconciling against the existing rows.\n\nCreates the landing page row if it does not exist.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## This method is experimental, subject to change, and not intended for partners.",
+        "operationId": "v1ConfigurationAgent_SaveLandingPageTabs",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SaveLandingPageTabsRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SaveLandingPageTabsRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SaveLandingPageTabsRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SaveLandingPageTabsRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SaveLandingPageTabsRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SaveLandingPageTabsRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SaveLandingPageTabsRequest"
+              }
+            }
+          },
+          "description": "AssociateId, EntityTableName, Tabs",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.LandingPageEntity"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.LandingPageEntity"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.LandingPageEntity"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.LandingPageEntity"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.LandingPageEntity"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.LandingPageEntity"
+                }
+              }
+            }
           }
         },
         "security": [
@@ -5560,7 +5710,7 @@
           "Configuration_Agent"
         ],
         "summary": "Save System Event Entity",
-        "description": "Updates the existing SystemEventEntity or creates a new SystemEventEntity if\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing SystemEventEntity or creates a new SystemEventEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ConfigurationAgent_SaveSystemEventEntity",
         "parameters": [
           {
@@ -5862,7 +6012,7 @@
           "Configuration_Agent"
         ],
         "summary": "Exists System Event",
-        "description": "Is there a system event with the given key\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Is there a system event with the given key?\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ConfigurationAgent_ExistsSystemEvent",
         "parameters": [
           {
@@ -6559,7 +6709,7 @@
           "Configuration_Agent"
         ],
         "summary": "Get My Window Pos Sizes",
-        "description": "Gets the window and dialog position and size settings belonging to the\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Gets the window and dialog position and size settings belonging to the currently logged on user\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ConfigurationAgent_GetMyWindowPosSizes",
         "parameters": [
           {
@@ -6686,7 +6836,7 @@
           "Configuration_Agent"
         ],
         "summary": "Get Window Pos Sizes On Person Id",
-        "description": "Gets the window and dialog position and size settings belonging to the\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Gets the window and dialog position and size settings belonging to the specified person\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ConfigurationAgent_GetWindowPosSizesOnPersonId",
         "parameters": [
           {
@@ -6854,7 +7004,7 @@
           "Configuration_Agent"
         ],
         "summary": "Get Window Pos Sizes On Associate Id",
-        "description": "Gets the window and dialog position and size settings belonging to the\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Gets the window and dialog position and size settings belonging to the specified associate\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ConfigurationAgent_GetWindowPosSizesOnAssociateId",
         "parameters": [
           {
@@ -7192,10 +7342,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -7589,7 +7739,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.ClearConfigurationCacheRequest": {
-        "description": "ClearConfigurationCache: Configuration XML's may be expensive to build and parse, and are therefore cached to the database. &lt;para/&gt;Cahcing is per application/instance/associate, and can be turned off through the config file. &lt;para/&gt;If caching is on, and the configuration is changed, it is necessary to clear the cached configurations from the database, through this call.&lt;para/&gt;Note that changes to the externalapplication table require cache invalidation. SoAdmin will do so automatically.",
+        "description": "ClearConfigurationCache: Configuration XML's may be expensive to build and parse, and are therefore cached to the database. <para/>Cahcing is per application/instance/associate, and can be turned off through the config file. <para/>If caching is on, and the configuration is changed, it is necessary to clear the cached configurations from the database, through this call.<para/>Note that changes to the externalapplication table require cache invalidation. SoAdmin will do so automatically.",
         "type": "object",
         "properties": {
           "Application": {
@@ -7875,6 +8025,12 @@
               "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
             }
           },
+          "Tabs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.LandingPageTab"
+            }
+          },
           "TableRight": {
             "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
           },
@@ -7957,6 +8113,50 @@
           }
         }
       },
+      "SuperOffice.CRM.Services.LandingPageTab": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "Name": {
+            "type": "string"
+          },
+          "EntityType": {
+            "type": "string"
+          },
+          "TabType": {
+            "enum": [
+              "Unknown",
+              "Selection",
+              "Entity",
+              "Provider"
+            ],
+            "type": "string"
+          },
+          "Pinned": {
+            "type": "boolean"
+          },
+          "Rank": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "ProviderKey": {
+            "type": "string"
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "description": "Field property dictionary mapping field names to field access rights.",
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            }
+          }
+        }
+      },
       "SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.GetLandingPageRequest": {
         "description": "GetLandingPage: Get the landing page configuration for an associate and entity table. Creates the landing page row if it does not exist.",
         "type": "object",
@@ -7990,6 +8190,25 @@
           "RecordId": {
             "format": "int32",
             "type": "integer"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.ConfigurationCarriers.SaveLandingPageTabsRequest": {
+        "description": "SaveLandingPageTabs: Replace the full ordered set of tabs on the landing page identified by associate and entity table, reconciling against the existing rows. Creates the landing page row if it does not exist.",
+        "type": "object",
+        "properties": {
+          "AssociateId": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "EntityTableName": {
+            "type": "string"
+          },
+          "Tabs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.LandingPageTab"
+            }
           }
         }
       },

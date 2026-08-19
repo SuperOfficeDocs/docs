@@ -4232,7 +4232,7 @@
           "Contact"
         ],
         "summary": "Get Custom Field Info List",
-        "description": "Custom fields meta-data (published user defined + extra fields) on\n\nExcludes standard fields.",
+        "description": "Custom fields meta-data (published user defined + extra fields) on ContactEntity.\n\nExcludes standard fields.",
         "operationId": "v1ContactEntity_GetCustomFieldInfoList",
         "parameters": [
           {
@@ -5099,7 +5099,7 @@
           "Contact"
         ],
         "summary": "Delete Udef Field Info",
-        "description": "Delete a ContactEntity user-defined field's details based on the prog-id or\n\nDeletes the admin version of the field. The layout needs to be published before the change is visible.",
+        "description": "Delete a ContactEntity user-defined field's details based on the prog-id or label.\n\nDeletes the admin version of the field. The layout needs to be published before the change is visible.",
         "operationId": "v1ContactEntity_DeleteUdefFieldInfo",
         "parameters": [
           {
@@ -5280,7 +5280,7 @@
           "Contact"
         ],
         "summary": "Get Published Udef Field Info",
-        "description": "Get a published ContactEntity user-defined field's details based on the prog-id",
+        "description": "Get a published ContactEntity user-defined field's details based on the prog-id or label.",
         "operationId": "v1ContactEntity_GetPublishedUdefFieldInfo",
         "parameters": [
           {
@@ -5392,7 +5392,7 @@
           "Contact"
         ],
         "summary": "Detect Unpublished Changes",
-        "description": "Is the UDef Layout changed This may or may not involve moving data (which takes\n\nTrue if the ContactEntity user-defined field layout has been changed.",
+        "description": "Is the UDef Layout changed? This may or may not involve moving data (which takes longer).\n\nTrue if the ContactEntity user-defined field layout has been changed.",
         "operationId": "v1ContactEntity_DetectUnpublishedChanges",
         "parameters": [
           {
@@ -5501,7 +5501,7 @@
           "Contact"
         ],
         "summary": "Is Publish Udef Layout Active",
-        "description": "Is UDef Layout Publishing active\n\nTrue if the ContactEntity user-defined field layout is being updated.",
+        "description": "Is UDef Layout Publishing active?\n\nTrue if the ContactEntity user-defined field layout is being updated.",
         "operationId": "v1ContactEntity_IsPublishUdefLayoutActive",
         "parameters": [
           {
@@ -5870,10 +5870,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -6959,7 +6959,7 @@
             "$ref": "#/components/schemas/SuperOffice.CRM.Services.StructuredAddress"
           },
           "Formatted": {
-            "description": "Read-only formatted address multi-line string. Combines street and postal into one string. e.g.: &lt;c&gt;\"Postboks 123,\\nBrugata 123,\\n1234 OSLO\\n\"&lt;/c&gt; or &lt;c&gt;\"Postbox 123,\\nBridgelane 123,\\nWest Tooting,\\nEast Shire ES2 W31\\n\"&lt;/c&gt;.",
+            "description": "Read-only formatted address multi-line string. Combines street and postal into one string. e.g.: <c>\"Postboks 123,\\nBrugata 123,\\n1234 OSLO\\n\"</c> or <c>\"Postbox 123,\\nBridgelane 123,\\nWest Tooting,\\nEast Shire ES2 W31\\n\"</c>.",
             "type": "string"
           },
           "TableRight": {
@@ -7060,7 +7060,7 @@
             "type": "string"
           },
           "Formatted": {
-            "description": "Read-only formatted address multi-line string. e.g.: &lt;c&gt;\"Brugata 123,\\n1234 OSLO\\n\"&lt;/c&gt; or &lt;c&gt;\"Bridgelane 123,\\nWest Tooting,\\nThe Shire ES2 W31\\n\"&lt;/c&gt;.",
+            "description": "Read-only formatted address multi-line string. e.g.: <c>\"Brugata 123,\\n1234 OSLO\\n\"</c> or <c>\"Bridgelane 123,\\nWest Tooting,\\nThe Shire ES2 W31\\n\"</c>.",
             "type": "string"
           }
         }

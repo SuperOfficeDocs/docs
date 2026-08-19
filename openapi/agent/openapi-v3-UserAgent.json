@@ -785,7 +785,7 @@
           "User_Agent"
         ],
         "summary": "Is User Name Valid",
-        "description": "NsApiSlow threshold 2000 ms.\n\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
+        "description": "NsApiSlow threshold: 2000 ms.\n\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
         "operationId": "v1UserAgent_IsUserNameValid",
         "parameters": [
           {
@@ -935,7 +935,7 @@
           "User_Agent"
         ],
         "summary": "Is Password Valid",
-        "description": "NsApiSlow threshold 2000 ms.\n\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
+        "description": "NsApiSlow threshold: 2000 ms.\n\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
         "operationId": "v1UserAgent_IsPasswordValid",
         "parameters": [
           {
@@ -1085,7 +1085,7 @@
           "User_Agent"
         ],
         "summary": "Set Generated Password",
-        "description": "NsApiSlow threshold 2000 ms.\n\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
+        "description": "NsApiSlow threshold: 2000 ms.\n\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
         "operationId": "v1UserAgent_SetGeneratedPassword",
         "parameters": [
           {
@@ -1235,7 +1235,7 @@
           "User_Agent"
         ],
         "summary": "Set Generated Password From Name",
-        "description": "NsApiSlow threshold 2000 ms.\n\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
+        "description": "NsApiSlow threshold: 2000 ms.\n\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
         "operationId": "v1UserAgent_SetGeneratedPasswordFromName",
         "parameters": [
           {
@@ -1385,7 +1385,7 @@
           "User_Agent"
         ],
         "summary": "Is Password Valid With Reason",
-        "description": "NsApiSlow threshold 2000 ms.\n\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
+        "description": "NsApiSlow threshold: 2000 ms.\n\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
         "operationId": "v1UserAgent_IsPasswordValidWithReason",
         "parameters": [
           {
@@ -1535,7 +1535,7 @@
           "User_Agent"
         ],
         "summary": "Is User Name Valid With Reason",
-        "description": "NsApiSlow threshold 2000 ms.\n\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
+        "description": "NsApiSlow threshold: 2000 ms.\n\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
         "operationId": "v1UserAgent_IsUserNameValidWithReason",
         "parameters": [
           {
@@ -1835,7 +1835,7 @@
           "User_Agent"
         ],
         "summary": "Create Default User From User Type And Credential",
-        "description": "Creates a PersonEntity with default values based on the contactId and\n\nNsApiSlow threshold: 2000 ms.\r\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
+        "description": "Creates a PersonEntity with default values based on the contactId and credentials.\n\nNsApiSlow threshold: 2000 ms.\r\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
         "operationId": "v1UserAgent_CreateDefaultUserFromUserTypeAndCredential",
         "parameters": [
           {
@@ -1985,7 +1985,7 @@
           "User_Agent"
         ],
         "summary": "Get Valid User Name",
-        "description": "NsApiSlow threshold 2000 ms.\n\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
+        "description": "NsApiSlow threshold: 2000 ms.\n\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
         "operationId": "v1UserAgent_GetValidUserName",
         "parameters": [
           {
@@ -2299,7 +2299,7 @@
           "User_Agent"
         ],
         "summary": "Add Owner Contact",
-        "description": "NsApiSlow threshold 2000 ms.\n\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
+        "description": "NsApiSlow threshold: 2000 ms.\n\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
         "operationId": "v1UserAgent_AddOwnerContact",
         "parameters": [
           {
@@ -3063,7 +3063,7 @@
           "User_Agent"
         ],
         "summary": "Is Nick Name Unique",
-        "description": "NsApiSlow threshold 2000 ms.\n\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
+        "description": "NsApiSlow threshold: 2000 ms.\n\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
         "operationId": "v1UserAgent_IsNickNameUnique",
         "parameters": [
           {
@@ -4929,7 +4929,7 @@
           "User_Agent"
         ],
         "summary": "Get Or Register Access Gateway Info",
-        "description": "Returns accessgateway registration info and registers a new or adds the url if\n\nNsApiSlow threshold: 1000 ms.\r\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
+        "description": "Returns accessgateway registration info and registers a new or adds the url if necessary\n\nNsApiSlow threshold: 1000 ms.\r\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
         "operationId": "v1UserAgent_GetOrRegisterAccessGatewayInfo",
         "parameters": [
           {
@@ -5079,7 +5079,7 @@
           "User_Agent"
         ],
         "summary": "Register With Access Gateway",
-        "description": "Registers with access gateway if not already done, otherwise will attempt to\n\nNsApiSlow threshold: 1000 ms.\r\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
+        "description": "Registers with access gateway if not already done, otherwise will attempt to update\n\nNsApiSlow threshold: 1000 ms.\r\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
         "operationId": "v1UserAgent_RegisterWithAccessGateway",
         "parameters": [
           {
@@ -6475,7 +6475,7 @@
           "User_Agent"
         ],
         "summary": "Save Role Entity",
-        "description": "Updates the existing RoleEntity or creates a new RoleEntity if the id parameter\n\nNsApiSlow threshold: 2000 ms.\r\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
+        "description": "Updates the existing RoleEntity or creates a new RoleEntity if the id parameter is 0.\n\nNsApiSlow threshold: 2000 ms.\r\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
         "operationId": "v1UserAgent_SaveRoleEntity",
         "parameters": [
           {
@@ -6735,7 +6735,7 @@
           "User_Agent"
         ],
         "summary": "Delete Role",
-        "description": "Delete the specified role and move all users associated with the role to the\n\nNsApiSlow threshold: 2000 ms.\r\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
+        "description": "Delete the specified role and move all users associated with the role to the replacingRoleId\n\nNsApiSlow threshold: 2000 ms.\r\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
         "operationId": "v1UserAgent_DeleteRole",
         "parameters": [
           {
@@ -8737,7 +8737,7 @@
           "User_Agent"
         ],
         "summary": "Save Service Auth",
-        "description": "Updates the existing ServiceAuth or creates a new ServiceAuth if the id\n\nNsApiSlow threshold: 1000 ms.\r\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
+        "description": "Updates the existing ServiceAuth or creates a new ServiceAuth if the id parameter is 0.\n\nNsApiSlow threshold: 1000 ms.\r\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
         "operationId": "v1UserAgent_SaveServiceAuth",
         "parameters": [
           {
@@ -9039,7 +9039,7 @@
           "User_Agent"
         ],
         "summary": "Save External Tokens",
-        "description": "Saves the external tokens to the DB and returns a key that can be used to\n\nNsApiSlow threshold: 1000 ms.\r\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
+        "description": "Saves the external tokens to the DB and returns a key that can be used to retrieve them\n\nNsApiSlow threshold: 1000 ms.\r\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
         "operationId": "v1UserAgent_SaveExternalTokens",
         "parameters": [
           {
@@ -9189,7 +9189,7 @@
           "User_Agent"
         ],
         "summary": "Decrypt And Save External Tokens",
-        "description": "First asks AccessGateway to decrypt the tokens, then saves the external tokens\n\nNsApiSlow threshold: 1000 ms.\r\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
+        "description": "First asks AccessGateway to decrypt the tokens, then saves the external tokens to the DB and returns a key that can be used to retrieve them\n\nNsApiSlow threshold: 1000 ms.\r\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
         "operationId": "v1UserAgent_DecryptAndSaveExternalTokens",
         "parameters": [
           {
@@ -13223,10 +13223,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {

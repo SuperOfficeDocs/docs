@@ -694,7 +694,7 @@
           "Diagnostics_Agent"
         ],
         "summary": "Get Entity Counts For Current User",
-        "description": "Get an array of entities and number of entities created for the current\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Get an array of entities and number of entities created for the current associate\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DiagnosticsAgent_GetEntityCountsForCurrentUser",
         "parameters": [
           {
@@ -1424,7 +1424,7 @@
           "Diagnostics_Agent"
         ],
         "summary": "Collect Data Additions",
-        "description": "Collect and transmit usage statistics Database Additions.\n\nIf opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Collect and transmit usage statistics: Database Additions.\n\nIf opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DiagnosticsAgent_CollectDataAdditions",
         "parameters": [
           {
@@ -1465,7 +1465,7 @@
           "Diagnostics_Agent"
         ],
         "summary": "Collect Win Usage",
-        "description": "Collect and transmit usage statistics Windows CRM Client Usage.\n\nIf opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Collect and transmit usage statistics: Windows CRM Client Usage.\n\nIf opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DiagnosticsAgent_CollectWinUsage",
         "parameters": [
           {
@@ -1506,7 +1506,7 @@
           "Diagnostics_Agent"
         ],
         "summary": "Collect Web Usage",
-        "description": "Collect and transmit usage statistics Web-based clients Usage.\n\nIf opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Collect and transmit usage statistics: Web-based clients Usage.\n\nIf opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DiagnosticsAgent_CollectWebUsage",
         "parameters": [
           {
@@ -1547,7 +1547,7 @@
           "Diagnostics_Agent"
         ],
         "summary": "Collect Table Sizes",
-        "description": "Collect and transmit usage statistics Table Sizes.\n\nIf opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Collect and transmit usage statistics: Table Sizes.\n\nIf opted-out then this call does nothing. The call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DiagnosticsAgent_CollectTableSizes",
         "parameters": [
           {
@@ -1588,7 +1588,7 @@
           "Diagnostics_Agent"
         ],
         "summary": "Resync Users",
-        "description": "Resynchronize user information with SuperOffice Community, if opted-out then\n\nThe call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Resynchronize user information with SuperOffice Community, if opted-out then this call does nothing.\n\nThe call returns immediately (starting a background thread), and updates CS scheduler table to set the next run time.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DiagnosticsAgent_ResyncUsers",
         "parameters": [
           {
@@ -2084,7 +2084,7 @@
           "Diagnostics_Agent"
         ],
         "summary": "Get Next Table Number",
-        "description": "Increment save and return NextTableNumber, to be used when creating new extra\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Increment save and return NextTableNumber, to be used when creating new extra table\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1DiagnosticsAgent_GetNextTableNumber",
         "parameters": [
           {
@@ -2636,7 +2636,7 @@
           "Diagnostics_Agent"
         ],
         "summary": "Web App Usage Exists In Period",
-        "description": "Returns true if viewState has been clicked at least once since FromDate, if\n\nMinValue no restriction given for those parameters\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Returns true if viewState has been clicked at least once since FromDate, if asscoiateId < 0 or FromDate is DateTime.\n\nMinValue no restriction given for those parameters\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1DiagnosticsAgent_WebAppUsageExistsInPeriod",
         "parameters": [
           {
@@ -2956,10 +2956,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -3674,7 +3674,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.DiagnosticsCarriers.WebAppUsageExistsInPeriodRequest": {
-        "description": "WebAppUsageExistsInPeriod: Returns true if viewState has been clicked at least once since FromDate, if asscoiateId &lt; 0 or FromDate is DateTime.MinValue no restriction given for those parameters",
+        "description": "WebAppUsageExistsInPeriod: Returns true if viewState has been clicked at least once since FromDate, if asscoiateId < 0 or FromDate is DateTime.MinValue no restriction given for those parameters",
         "type": "object",
         "properties": {
           "AssociateId": {
