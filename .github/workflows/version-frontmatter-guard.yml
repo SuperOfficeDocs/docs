@@ -48,7 +48,7 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Rename reserved version: property on changed files
+      - name: "Rename reserved version: property on changed files"
         if: steps.changed.outputs.any_changed == 'true'
         env:
           CHANGED_FILES: ${{ steps.changed.outputs.all_changed_files }}
