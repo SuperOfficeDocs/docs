@@ -326,7 +326,7 @@
           "Chat_Agent"
         ],
         "summary": "Save Chat Session Entity",
-        "description": "Updates the existing ChatSessionEntity or creates a new ChatSessionEntity if\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing ChatSessionEntity or creates a new ChatSessionEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ChatAgent_SaveChatSessionEntity",
         "parameters": [
           {
@@ -905,7 +905,7 @@
           "Chat_Agent"
         ],
         "summary": "Accept Chat Session Transfer",
-        "description": "Accept the transfer assign the session to the user.\n\nIf the session is not being transferred, nothing happens.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Accept the transfer: assign the session to the user.\n\nIf the session is not being transferred, nothing happens.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ChatAgent_AcceptChatSessionTransfer",
         "parameters": [
           {
@@ -1205,7 +1205,7 @@
           "Chat_Agent"
         ],
         "summary": "Pick Up Chat Session",
-        "description": "'answer' the session assign the session to the user.\n\nThe welcome message is sent to the customer. Returns NULL if session was not in queue.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "'answer' the session: assign the session to the user.\n\nThe welcome message is sent to the customer. Returns NULL if session was not in queue.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ChatAgent_PickUpChatSession",
         "parameters": [
           {
@@ -1355,7 +1355,7 @@
           "Chat_Agent"
         ],
         "summary": "Pick Up First Chat Session",
-        "description": "'answer' the first available session from the queue assign the session to the\n\nThe welcome message is sent to the customer.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "'answer' the first available session from the queue: assign the session to the user.\n\nThe welcome message is sent to the customer.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ChatAgent_PickUpFirstChatSession",
         "parameters": [
           {
@@ -2282,7 +2282,7 @@
           "Chat_Agent"
         ],
         "summary": "Save Chat Topic Entity",
-        "description": "Updates the existing ChatTopicEntity or creates a new ChatTopicEntity if the id\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing ChatTopicEntity or creates a new ChatTopicEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ChatAgent_SaveChatTopicEntity",
         "parameters": [
           {
@@ -4049,10 +4049,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -4265,7 +4265,7 @@
           },
           "WhenFetched": {
             "format": "date-time",
-            "description": "The last time the customer&amp;apos;s client refetched the data. Used to detect &amp;apos;dead&amp;apos; session.",
+            "description": "The last time the customer&apos;s client refetched the data. Used to detect &apos;dead&apos; session.",
             "type": "string"
           },
           "SessionKey": {
@@ -4760,7 +4760,7 @@
             "$ref": "#/components/schemas/SuperOffice.CRM.Services.StructuredAddress"
           },
           "Formatted": {
-            "description": "Read-only formatted address multi-line string. Combines street and postal into one string. e.g.: &lt;c&gt;\"Postboks 123,\\nBrugata 123,\\n1234 OSLO\\n\"&lt;/c&gt; or &lt;c&gt;\"Postbox 123,\\nBridgelane 123,\\nWest Tooting,\\nEast Shire ES2 W31\\n\"&lt;/c&gt;.",
+            "description": "Read-only formatted address multi-line string. Combines street and postal into one string. e.g.: <c>\"Postboks 123,\\nBrugata 123,\\n1234 OSLO\\n\"</c> or <c>\"Postbox 123,\\nBridgelane 123,\\nWest Tooting,\\nEast Shire ES2 W31\\n\"</c>.",
             "type": "string"
           },
           "TableRight": {
@@ -4861,7 +4861,7 @@
             "type": "string"
           },
           "Formatted": {
-            "description": "Read-only formatted address multi-line string. e.g.: &lt;c&gt;\"Brugata 123,\\n1234 OSLO\\n\"&lt;/c&gt; or &lt;c&gt;\"Bridgelane 123,\\nWest Tooting,\\nThe Shire ES2 W31\\n\"&lt;/c&gt;.",
+            "description": "Read-only formatted address multi-line string. e.g.: <c>\"Brugata 123,\\n1234 OSLO\\n\"</c> or <c>\"Bridgelane 123,\\nWest Tooting,\\nThe Shire ES2 W31\\n\"</c>.",
             "type": "string"
           }
         }
@@ -5208,11 +5208,11 @@
             "type": "integer"
           },
           "CategoryName": {
-            "description": "The (short) name of this category. E.g. &amp;apos;support&amp;apos;.",
+            "description": "The (short) name of this category. E.g. &apos;support&apos;.",
             "type": "string"
           },
           "CategoryFullname": {
-            "description": "The fullname (compiled from parents&amp;apos; names) for this category. E.g. &amp;apos;norway/product A/support&amp;apos;.",
+            "description": "The fullname (compiled from parents&apos; names) for this category. E.g. &apos;norway/product A/support&apos;.",
             "type": "string"
           },
           "Slevel": {
@@ -5312,7 +5312,7 @@
           },
           "ConnectId": {
             "format": "int32",
-            "description": "If a ticket is connected to another ticket, this field is set to the id of the &amp;apos;master&amp;apos; ticket.",
+            "description": "If a ticket is connected to another ticket, this field is set to the id of the &apos;master&apos; ticket.",
             "type": "integer"
           },
           "ReadStatus": {
@@ -5327,7 +5327,7 @@
           },
           "TimeToReply": {
             "format": "int32",
-            "description": "The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&amp;apos;s timeframe.",
+            "description": "The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&apos;s timeframe.",
             "type": "integer"
           },
           "RealTimeToReply": {
@@ -5337,7 +5337,7 @@
           },
           "TimeToClose": {
             "format": "int32",
-            "description": "The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&amp;apos;s timeframe.",
+            "description": "The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&apos;s timeframe.",
             "type": "integer"
           },
           "RealTimeToClose": {
@@ -5377,7 +5377,7 @@
           },
           "TimeSpent": {
             "format": "int32",
-            "description": "The total time (minutes). Aggregated time spent from ticket&amp;apos;s messages. Read-only for external use.",
+            "description": "The total time (minutes). Aggregated time spent from ticket&apos;s messages. Read-only for external use.",
             "type": "integer"
           },
           "HasAttachment": {

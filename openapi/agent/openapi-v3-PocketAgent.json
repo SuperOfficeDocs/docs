@@ -17,7 +17,7 @@
           "Pocket_Agent"
         ],
         "summary": "Get My Caller I Ds",
-        "description": "Get caller ids that the current principal might be interested in (phone numbers\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Get caller ids that the current principal might be interested in (phone numbers of related persons in sales and appointments created/owned/touched by ourselves or colleagues in our primary group\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1PocketAgent_GetMyCallerIDs",
         "parameters": [
           {
@@ -317,7 +317,7 @@
           "Pocket_Agent"
         ],
         "summary": "Get Pocket Startup Data",
-        "description": "NsApiSlow threshold 5000 ms.",
+        "description": "NsApiSlow threshold: 5000 ms.",
         "operationId": "v1PocketAgent_GetPocketStartupData",
         "parameters": [
           {
@@ -467,7 +467,7 @@
           "Pocket_Agent"
         ],
         "summary": "Register Device For Push Notification",
-        "description": "Register a device that should receive push notifications when notable events\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Register a device that should receive push notifications when notable events occour\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1PocketAgent_RegisterDeviceForPushNotification",
         "parameters": [
           {
@@ -717,7 +717,7 @@
           "Pocket_Agent"
         ],
         "summary": "Set Push Notification Tags For Device",
-        "description": "Specify what kind of notification events a device should receive push\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Specify what kind of notification events a device should receive push notifications for\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1PocketAgent_SetPushNotificationTagsForDevice",
         "parameters": [
           {
@@ -799,7 +799,7 @@
           "Pocket_Agent"
         ],
         "summary": "Set Push Notification Tags For User",
-        "description": "Specify what kind of notification events a user should receive push\n\nThis will update all registerred devices for this user.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Specify what kind of notification events a user should receive push notifications for.\n\nThis will update all registerred devices for this user.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1PocketAgent_SetPushNotificationTagsForUser",
         "parameters": [
           {
@@ -1236,7 +1236,7 @@
           "Pocket_Agent"
         ],
         "summary": "Notification Handled",
-        "description": "Mark a notification as handled, so it can be cleaned up on other clients that\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Mark a notification as handled, so it can be cleaned up on other clients that have received the notification\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1PocketAgent_NotificationHandled",
         "parameters": [
           {
@@ -1318,7 +1318,7 @@
           "Pocket_Agent"
         ],
         "summary": "Notifications Handled",
-        "description": "Mark a set of notifications as handled, so they can be cleaned up on other\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Mark a set of notifications as handled, so they can be cleaned up on other clients that have received the notification\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1PocketAgent_NotificationsHandled",
         "parameters": [
           {
@@ -1402,10 +1402,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {

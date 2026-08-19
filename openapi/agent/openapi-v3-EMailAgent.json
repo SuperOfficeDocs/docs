@@ -17,7 +17,7 @@
           "EMail_Agent"
         ],
         "summary": "Get E Mail As Eml Stream",
-        "description": "Get an inbox e-mail (by its EmailItemId) serialized as an Outlook-openable\n\neml) stream. Works for both IMAP and Graph/Exchange-Online mailboxes because it serializes the loaded entity instead of re-fetching the raw message by server id.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "description": "Get an inbox e-mail (by its EmailItemId) serialized as an Outlook-openable RFC822 (.\n\neml) stream. Works for both IMAP and Graph/Exchange-Online mailboxes because it serializes the loaded entity instead of re-fetching the raw message by server id.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
         "operationId": "v1EMailAgent_GetEMailAsEmlStream",
         "parameters": [
           {
@@ -1331,7 +1331,7 @@
           "EMail_Agent"
         ],
         "summary": "Find Contact Or Person By Email Name",
-        "description": "NsApiSlow threshold 5000 ms.\n\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "description": "NsApiSlow threshold: 5000 ms.\n\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
         "operationId": "v1EMailAgent_FindContactOrPersonByEmailName",
         "parameters": [
           {
@@ -1499,7 +1499,7 @@
           "EMail_Agent"
         ],
         "summary": "Find Contact Or Person By Email Name With Limit",
-        "description": "NsApiSlow threshold 5000 ms.\n\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "description": "NsApiSlow threshold: 5000 ms.\n\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
         "operationId": "v1EMailAgent_FindContactOrPersonByEmailNameWithLimit",
         "parameters": [
           {
@@ -4873,7 +4873,7 @@
           "EMail_Agent"
         ],
         "summary": "Create Inline Html Header",
-        "description": "Create Outlook style HTML header to use in for instance reply entities and when\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "description": "Create Outlook style HTML header to use in for instance reply entities and when printing\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
         "operationId": "v1EMailAgent_CreateInlineHtmlHeader",
         "parameters": [
           {
@@ -5323,7 +5323,7 @@
           "EMail_Agent"
         ],
         "summary": "Get Participant Info From Email Address",
-        "description": "Get participant data associated with the participant in the emails iCal\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "description": "Get participant data associated with the participant in the emails iCal attachment\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
         "operationId": "v1EMailAgent_GetParticipantInfoFromEmailAddress",
         "parameters": [
           {
@@ -5473,7 +5473,7 @@
           "EMail_Agent"
         ],
         "summary": "Get Email Document As Mime Stream",
-        "description": "Gets a particular document, and tries to parse it, and returns it in\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "description": "Gets a particular document, and tries to parse it, and returns it in MIME/RFC822 format.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
         "operationId": "v1EMailAgent_GetEmailDocumentAsMimeStream",
         "parameters": [
           {
@@ -6042,7 +6042,7 @@
           "EMail_Agent"
         ],
         "summary": "Get Ready Sync Email Accounts",
-        "description": "Gets the list of SyncUserAccounts that should be synced, from mail server to\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "description": "Gets the list of SyncUserAccounts that should be synced, from mail server to SuperOffice database cache.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
         "operationId": "v1EMailAgent_GetReadySyncEmailAccounts",
         "parameters": [
           {
@@ -6251,7 +6251,7 @@
           "EMail_Agent"
         ],
         "summary": "Sync Email Accounts",
-        "description": "Start syncing of the given accounts, from mail server to SuperOffice database\n\nOnly one of these API calls may run at a time. If one is already active, we return after 1 (one) second, with no indication that the sync was not really started. This is a way to throttle sync'ing to avoid making the mail servers angry at us. <br/> There is an <b>additional</b> level of throttling within the implementation as well, limiting us to a maximum of 10 tasks, regardless of how many associates are to to be sync'ed. The outer, API-level lock is released when all those tasks are done.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "description": "Start syncing of the given accounts, from mail server to SuperOffice database cache.\n\nOnly one of these API calls may run at a time. If one is already active, we return after 1 (one) second, with no indication that the sync was not really started. This is a way to throttle sync'ing to avoid making the mail servers angry at us. <br/> There is an <b>additional</b> level of throttling within the implementation as well, limiting us to a maximum of 10 tasks, regardless of how many associates are to to be sync'ed. The outer, API-level lock is released when all those tasks are done.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
         "operationId": "v1EMailAgent_SyncEmailAccounts",
         "parameters": [
           {
@@ -6433,7 +6433,7 @@
           "EMail_Agent"
         ],
         "summary": "Save E Mail Account",
-        "description": "Updates the existing EMailAccount or creates a new EMailAccount if the id\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "description": "Updates the existing EMailAccount or creates a new EMailAccount if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
         "operationId": "v1EMailAgent_SaveEMailAccount",
         "parameters": [
           {
@@ -6735,7 +6735,7 @@
           "EMail_Agent"
         ],
         "summary": "Get E Mail Account From E Mail Address",
-        "description": "Returns the email account corresponding to this email address (for the current\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "description": "Returns the email account corresponding to this email address (for the current associate).\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
         "operationId": "v1EMailAgent_GetEMailAccountFromEMailAddress",
         "parameters": [
           {
@@ -6885,7 +6885,7 @@
           "EMail_Agent"
         ],
         "summary": "Get Current Account Id",
-        "description": "Get current accountId (last logged into should normally be current) for logged\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "description": "Get current accountId (last logged into should normally be current) for logged in associate\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
         "operationId": "v1EMailAgent_GetCurrentAccountId",
         "parameters": [
           {
@@ -7000,7 +7000,7 @@
           "EMail_Agent"
         ],
         "summary": "Get Current Account",
-        "description": "Get current account (last logged into should normally be current) for logged in\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "description": "Get current account (last logged into should normally be current) for logged in associate\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
         "operationId": "v1EMailAgent_GetCurrentAccount",
         "parameters": [
           {
@@ -7695,7 +7695,7 @@
           "EMail_Agent"
         ],
         "summary": "Has S P F Record",
-        "description": "Return true if target domain contains a SPF record which is under the given SPF\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "description": "Return true if target domain contains a SPF record which is under the given SPF record\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
         "operationId": "v1EMailAgent_HasSPFRecord",
         "parameters": [
           {
@@ -11143,7 +11143,7 @@
           "EMail_Agent"
         ],
         "summary": "Find Address",
-        "description": "Search for contacts and persons with the specified e-mail address (exact match\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "description": "Search for contacts and persons with the specified e-mail address (exact match on the email address string required)\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
         "operationId": "v1EMailAgent_FindAddress",
         "parameters": [
           {
@@ -13735,7 +13735,7 @@
           "EMail_Agent"
         ],
         "summary": "Get E Mail From Temp",
-        "description": "NsApiSlow threshold 5000 ms.\n\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "description": "NsApiSlow threshold: 5000 ms.\n\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
         "operationId": "v1EMailAgent_GetEMailFromTemp",
         "parameters": [
           {
@@ -13885,7 +13885,7 @@
           "EMail_Agent"
         ],
         "summary": "Authenticate",
-        "description": "NsApiSlow threshold 5000 ms.\n\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "description": "NsApiSlow threshold: 5000 ms.\n\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
         "operationId": "v1EMailAgent_Authenticate",
         "parameters": [
           {
@@ -14035,7 +14035,7 @@
           "EMail_Agent"
         ],
         "summary": "Get Email Message Ids",
-        "description": "NsApiSlow threshold 5000 ms.\n\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "description": "NsApiSlow threshold: 5000 ms.\n\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
         "operationId": "v1EMailAgent_GetEmailMessageIds",
         "parameters": [
           {
@@ -14203,7 +14203,7 @@
           "EMail_Agent"
         ],
         "summary": "Get Extended Email Message Ids",
-        "description": "Gets not only the Message-Id's but also the UID's and the uniquevalidity\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "description": "Gets not only the Message-Id's but also the UID's and the uniquevalidity property in this format-> uvalidity:uid:MsgId - and this format should be understood by GetEmailsAsString() and DeleteExtended().\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
         "operationId": "v1EMailAgent_GetExtendedEmailMessageIds",
         "parameters": [
           {
@@ -14371,7 +14371,7 @@
           "EMail_Agent"
         ],
         "summary": "Get Emails As String",
-        "description": "NsApiSlow threshold 5000 ms.\n\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "description": "NsApiSlow threshold: 5000 ms.\n\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
         "operationId": "v1EMailAgent_GetEmailsAsString",
         "parameters": [
           {
@@ -14539,7 +14539,7 @@
           "EMail_Agent"
         ],
         "summary": "Delete Extended",
-        "description": "NsApiSlow threshold 5000 ms.\n\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "description": "NsApiSlow threshold: 5000 ms.\n\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
         "operationId": "v1EMailAgent_DeleteExtended",
         "parameters": [
           {
@@ -14621,7 +14621,7 @@
           "EMail_Agent"
         ],
         "summary": "Relay Message",
-        "description": "NsApiSlow threshold 5000 ms.\n\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
+        "description": "NsApiSlow threshold: 5000 ms.\n\n<para />## Online Restricted: ## The EMail agent is not available in Online by default. Access must be requested specifically when app is registered.",
         "operationId": "v1EMailAgent_RelayMessage",
         "parameters": [
           {
@@ -14705,10 +14705,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -15912,7 +15912,7 @@
           },
           "Deleted": {
             "format": "int32",
-            "description": "0 -&gt; record is active 1 -&gt; record is 'deleted' and should not be shown in lists",
+            "description": "0 -> record is active 1 -> record is 'deleted' and should not be shown in lists",
             "type": "integer"
           },
           "Direction": {
@@ -16292,7 +16292,7 @@
             "$ref": "#/components/schemas/SuperOffice.CRM.Services.StructuredAddress"
           },
           "Formatted": {
-            "description": "Read-only formatted address multi-line string. Combines street and postal into one string. e.g.: &lt;c&gt;\"Postboks 123,\\nBrugata 123,\\n1234 OSLO\\n\"&lt;/c&gt; or &lt;c&gt;\"Postbox 123,\\nBridgelane 123,\\nWest Tooting,\\nEast Shire ES2 W31\\n\"&lt;/c&gt;.",
+            "description": "Read-only formatted address multi-line string. Combines street and postal into one string. e.g.: <c>\"Postboks 123,\\nBrugata 123,\\n1234 OSLO\\n\"</c> or <c>\"Postbox 123,\\nBridgelane 123,\\nWest Tooting,\\nEast Shire ES2 W31\\n\"</c>.",
             "type": "string"
           },
           "TableRight": {
@@ -16393,7 +16393,7 @@
             "type": "string"
           },
           "Formatted": {
-            "description": "Read-only formatted address multi-line string. e.g.: &lt;c&gt;\"Brugata 123,\\n1234 OSLO\\n\"&lt;/c&gt; or &lt;c&gt;\"Bridgelane 123,\\nWest Tooting,\\nThe Shire ES2 W31\\n\"&lt;/c&gt;.",
+            "description": "Read-only formatted address multi-line string. e.g.: <c>\"Brugata 123,\\n1234 OSLO\\n\"</c> or <c>\"Bridgelane 123,\\nWest Tooting,\\nThe Shire ES2 W31\\n\"</c>.",
             "type": "string"
           }
         }
@@ -17119,7 +17119,7 @@
           },
           "ActiveDate": {
             "format": "date-time",
-            "description": "The date to be used for searching &amp; showing",
+            "description": "The date to be used for searching & showing",
             "type": "string"
           },
           "AssignmentStatus": {
@@ -17631,7 +17631,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.EMailCarriers.SyncEmailAccountsRequest": {
-        "description": "SyncEmailAccounts: Start syncing of the given accounts, from mail server to SuperOffice database cache. Only one of these API calls may run at a time. If one is already active, we return after 1 (one) second, with no indication that the sync was not really started. This is a way to throttle sync'ing to avoid making the mail servers angry at us. &lt;br/&gt; There is an &lt;b&gt;additional&lt;/b&gt; level of throttling within the implementation as well, limiting us to a maximum of 10 tasks, regardless of how many associates are to to be sync'ed. The outer, API-level lock is released when all those tasks are done.",
+        "description": "SyncEmailAccounts: Start syncing of the given accounts, from mail server to SuperOffice database cache. Only one of these API calls may run at a time. If one is already active, we return after 1 (one) second, with no indication that the sync was not really started. This is a way to throttle sync'ing to avoid making the mail servers angry at us. <br/> There is an <b>additional</b> level of throttling within the implementation as well, limiting us to a maximum of 10 tasks, regardless of how many associates are to to be sync'ed. The outer, API-level lock is released when all those tasks are done.",
         "type": "object",
         "properties": {
           "SyncUserAccounts": {
@@ -17687,11 +17687,6 @@
           "SentFolder": {
             "description": "Sent email folder name if available in the db",
             "type": "string"
-          },
-          "SimpleMode": {
-            "format": "int32",
-            "description": "Simple mode used for sending and retrieving invitations, accept/decline etc. without the full Inbox GUI experience",
-            "type": "integer"
           },
           "LastFetch": {
             "format": "date-time",
@@ -19439,7 +19434,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.EMailCarriers.GetExtendedEmailMessageIdsRequest": {
-        "description": "GetExtendedEmailMessageIds: Gets not only the Message-Id's but also the UID's and the uniquevalidity property in this format-&gt; uvalidity:uid:MsgId - and this format should be understood by GetEmailsAsString() and DeleteExtended().",
+        "description": "GetExtendedEmailMessageIds: Gets not only the Message-Id's but also the UID's and the uniquevalidity property in this format-> uvalidity:uid:MsgId - and this format should be understood by GetEmailsAsString() and DeleteExtended().",
         "type": "object",
         "properties": {
           "ConnectionInfoExtended": {

@@ -17,7 +17,7 @@
           "Database_Agent"
         ],
         "summary": "Get Steps In Database",
-        "description": "Get information about the dictionary steps that are in the currently-loggedon\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Get information about the dictionary steps that are in the currently-loggedon database\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1DatabaseAgent_GetStepsInDatabase",
         "parameters": [
           {
@@ -273,10 +273,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {

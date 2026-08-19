@@ -764,7 +764,7 @@
           "NewsFeed_Agent"
         ],
         "summary": "Mark As Read",
-        "description": "Marks the news feed item as read, so it can be un-bolded in the current user's\n\nNsApiSlow threshold: 2000 ms.\r\n<para />## Experimental: ## The NewsFeed agent is experimental, subject to change, and not intended for partners.",
+        "description": "Marks the news feed item as read, so it can be un-bolded in the current user's feed.\n\nNsApiSlow threshold: 2000 ms.\r\n<para />## Experimental: ## The NewsFeed agent is experimental, subject to change, and not intended for partners.",
         "operationId": "v1NewsFeedAgent_MarkAsRead",
         "parameters": [
           {
@@ -1148,10 +1148,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -1284,6 +1284,15 @@
           "ApplicationId": {
             "description": "The id of the application that registered this news item. Used to resolve where any CTA should be posted when clicked.",
             "type": "string"
+          },
+          "Location": {
+            "description": "Place related to news item (city or city + country) (optional)",
+            "type": "string"
+          },
+          "RatingPercent": {
+            "format": "int32",
+            "description": "Rating as percentage (0-100). 0 = undefined. 1-9 = No stars, 10-30 = One star, Two stars = 31-50, 90-100 = Five stars. Client can render rating as stars, pie chart, thumbs up or down, however they want. Default 0 indicates no rating.",
+            "type": "integer"
           }
         }
       },
@@ -1310,7 +1319,7 @@
             "type": "string"
           },
           "CtaFlavor": {
-            "description": "The flavor of the CTA, which determines the style the CTA button renders its type. Info/Warning/Error/Accept/Reject",
+            "description": "The flavor of the CTA, which determines the style/color/icon the CTA button renders with. Info/Warning/Error/Accept/Reject",
             "enum": [
               "Normal",
               "Info",
@@ -1469,7 +1478,7 @@
             "$ref": "#/components/schemas/SuperOffice.CRM.Services.StructuredAddress"
           },
           "Formatted": {
-            "description": "Read-only formatted address multi-line string. Combines street and postal into one string. e.g.: &lt;c&gt;\"Postboks 123,\\nBrugata 123,\\n1234 OSLO\\n\"&lt;/c&gt; or &lt;c&gt;\"Postbox 123,\\nBridgelane 123,\\nWest Tooting,\\nEast Shire ES2 W31\\n\"&lt;/c&gt;.",
+            "description": "Read-only formatted address multi-line string. Combines street and postal into one string. e.g.: <c>\"Postboks 123,\\nBrugata 123,\\n1234 OSLO\\n\"</c> or <c>\"Postbox 123,\\nBridgelane 123,\\nWest Tooting,\\nEast Shire ES2 W31\\n\"</c>.",
             "type": "string"
           },
           "TableRight": {
@@ -1611,7 +1620,7 @@
             "type": "string"
           },
           "Formatted": {
-            "description": "Read-only formatted address multi-line string. e.g.: &lt;c&gt;\"Brugata 123,\\n1234 OSLO\\n\"&lt;/c&gt; or &lt;c&gt;\"Bridgelane 123,\\nWest Tooting,\\nThe Shire ES2 W31\\n\"&lt;/c&gt;.",
+            "description": "Read-only formatted address multi-line string. e.g.: <c>\"Brugata 123,\\n1234 OSLO\\n\"</c> or <c>\"Bridgelane 123,\\nWest Tooting,\\nThe Shire ES2 W31\\n\"</c>.",
             "type": "string"
           }
         }

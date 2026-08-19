@@ -544,7 +544,7 @@
           "Targets_Agent"
         ],
         "summary": "Create Default Target Assignment For Company With Dimension",
-        "description": "Returns a default target assignment for the owner company, for the specified\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Returns a default target assignment for the owner company, for the specified dimension.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1TargetsAgent_CreateDefaultTargetAssignmentForCompanyWithDimension",
         "parameters": [
           {
@@ -712,7 +712,7 @@
           "Targets_Agent"
         ],
         "summary": "Create Default Target Assignment For User Group With Dimension",
-        "description": "Returns a default target assignment for the specified usergroup, for the\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Returns a default target assignment for the specified usergroup, for the specified dimension.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1TargetsAgent_CreateDefaultTargetAssignmentForUserGroupWithDimension",
         "parameters": [
           {
@@ -1030,7 +1030,7 @@
           "Targets_Agent"
         ],
         "summary": "Create Default Target Assignment For Company With Year And Dimension",
-        "description": "Returns a default target assignment for the owner company, for the specified\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Returns a default target assignment for the owner company, for the specified year and dimension.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1TargetsAgent_CreateDefaultTargetAssignmentForCompanyWithYearAndDimension",
         "parameters": [
           {
@@ -1198,7 +1198,7 @@
           "Targets_Agent"
         ],
         "summary": "Create Default Target Assignment For User Group With Year And Dimension",
-        "description": "Returns a default target assignment for the specified usergroup, for the\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Returns a default target assignment for the specified usergroup, for the specified year and dimension.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1TargetsAgent_CreateDefaultTargetAssignmentForUserGroupWithYearAndDimension",
         "parameters": [
           {
@@ -1466,7 +1466,7 @@
           "Targets_Agent"
         ],
         "summary": "Save Target Dimension",
-        "description": "Updates the existing TargetDimension or creates a new TargetDimension if the id\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing TargetDimension or creates a new TargetDimension if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1TargetsAgent_SaveTargetDimension",
         "parameters": [
           {
@@ -2210,7 +2210,7 @@
           "Targets_Agent"
         ],
         "summary": "Save Target Group",
-        "description": "Updates the existing TargetGroup or creates a new TargetGroup if the id\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing TargetGroup or creates a new TargetGroup if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1TargetsAgent_SaveTargetGroup",
         "parameters": [
           {
@@ -2662,7 +2662,7 @@
           "Targets_Agent"
         ],
         "summary": "Export Target Group To Excel",
-        "description": "Renders the given targetgroup to excel, and returns the path to the temporary\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Renders the given targetgroup to excel, and returns the path to the temporary file.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1TargetsAgent_ExportTargetGroupToExcel",
         "parameters": [
           {
@@ -3162,7 +3162,7 @@
           "Targets_Agent"
         ],
         "summary": "Get Target Revision History",
-        "description": "Returns the revision history for a given TargetAssignmentInfo in chronological\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Returns the revision history for a given TargetAssignmentInfo in chronological order.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1TargetsAgent_GetTargetRevisionHistory",
         "parameters": [
           {
@@ -3314,10 +3314,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -3671,7 +3671,7 @@
             "$ref": "#/components/schemas/SuperOffice.CRM.Services.StructuredAddress"
           },
           "Formatted": {
-            "description": "Read-only formatted address multi-line string. Combines street and postal into one string. e.g.: &lt;c&gt;\"Postboks 123,\\nBrugata 123,\\n1234 OSLO\\n\"&lt;/c&gt; or &lt;c&gt;\"Postbox 123,\\nBridgelane 123,\\nWest Tooting,\\nEast Shire ES2 W31\\n\"&lt;/c&gt;.",
+            "description": "Read-only formatted address multi-line string. Combines street and postal into one string. e.g.: <c>\"Postboks 123,\\nBrugata 123,\\n1234 OSLO\\n\"</c> or <c>\"Postbox 123,\\nBridgelane 123,\\nWest Tooting,\\nEast Shire ES2 W31\\n\"</c>.",
             "type": "string"
           },
           "TableRight": {
@@ -3772,7 +3772,7 @@
             "type": "string"
           },
           "Formatted": {
-            "description": "Read-only formatted address multi-line string. e.g.: &lt;c&gt;\"Brugata 123,\\n1234 OSLO\\n\"&lt;/c&gt; or &lt;c&gt;\"Bridgelane 123,\\nWest Tooting,\\nThe Shire ES2 W31\\n\"&lt;/c&gt;.",
+            "description": "Read-only formatted address multi-line string. e.g.: <c>\"Brugata 123,\\n1234 OSLO\\n\"</c> or <c>\"Bridgelane 123,\\nWest Tooting,\\nThe Shire ES2 W31\\n\"</c>.",
             "type": "string"
           }
         }
@@ -4161,7 +4161,7 @@
         "properties": {
           "BatchTaskId": {
             "format": "int32",
-            "description": "Id of the BatchTask created. &lt;=0 if no BatchTask was created.",
+            "description": "Id of the BatchTask created. <=0 if no BatchTask was created.",
             "type": "integer"
           },
           "FileName": {

@@ -17,7 +17,7 @@
           "FieldInfoBase"
         ],
         "summary": "Get Custom Field Info List",
-        "description": "Return information about all the custom fields (user-defined + extra) on a",
+        "description": "Return information about all the custom fields (user-defined + extra) on a particular table",
         "operationId": "v1FieldInfoBase_GetCustomFieldInfoList",
         "parameters": [
           {
@@ -153,7 +153,7 @@
           "FieldInfoBase"
         ],
         "summary": "Get Custom Field Info",
-        "description": "Return information about a particular custom field (user-defined + extra) on a",
+        "description": "Return information about a particular custom field (user-defined + extra) on a particular table",
         "operationId": "v1FieldInfoBase_GetCustomFieldInfo",
         "parameters": [
           {
@@ -273,10 +273,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {

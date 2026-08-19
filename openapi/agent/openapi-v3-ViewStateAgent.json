@@ -1923,7 +1923,7 @@
           "ViewState_Agent"
         ],
         "summary": "Get Histories By Names And Ids",
-        "description": "Returns history data for the named entities and the given ids - which may not\n\n<para/>Use this method if you know exactly which items you need, regardless of whether they are in the current history or not.<para/>The history in the database is not changed or even looked at by this method.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Returns history data for the named entities and the given ids - which may not directly correspond to the current history records in the database.\n\n<para/>Use this method if you know exactly which items you need, regardless of whether they are in the current history or not.<para/>The history in the database is not changed or even looked at by this method.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ViewStateAgent_GetHistoriesByNamesAndIds",
         "parameters": [
           {
@@ -2075,6 +2075,88 @@
                 }
               }
             }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/ViewState/UpsertRecentNavigation": {
+      "post": {
+        "tags": [
+          "ViewState_Agent"
+        ],
+        "summary": "Upsert Recent Navigation",
+        "description": "Upsert Recent navigation entries for the logged-in associate and the given client.\n\nThe entries are ranked so that the first element in the array becomes the most recent. The list is capped by the RecentNavigationLimit preference; the oldest entries beyond the cap are removed.\r\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1ViewStateAgent_UpsertRecentNavigation",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ViewStateCarriers.UpsertRecentNavigationRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ViewStateCarriers.UpsertRecentNavigationRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ViewStateCarriers.UpsertRecentNavigationRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ViewStateCarriers.UpsertRecentNavigationRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ViewStateCarriers.UpsertRecentNavigationRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ViewStateCarriers.UpsertRecentNavigationRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ViewStateCarriers.UpsertRecentNavigationRequest"
+              }
+            }
+          },
+          "description": "Client, Elements",
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "No Content"
           }
         },
         "security": [
@@ -2252,6 +2334,156 @@
           }
         ]
       }
+    },
+    "/api/v1/Agents/ViewState/PublishAndSyncUiEvents": {
+      "post": {
+        "tags": [
+          "ViewState_Agent"
+        ],
+        "summary": "Publish And Sync Ui Events",
+        "description": "Publish zero or more events and return any new events since the given event id, exactly like PublishAndRetrieveUiEvents — and additionally answer, for each ticket version the client supplies, whether that ticket has changed since (and by whom).\n\nRequested tickets the user cannot see are omitted from the answer\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## This method is experimental, subject to change, and not intended for partners.",
+        "operationId": "v1ViewStateAgent_PublishAndSyncUiEvents",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ViewStateCarriers.PublishAndSyncUiEventsRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ViewStateCarriers.PublishAndSyncUiEventsRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ViewStateCarriers.PublishAndSyncUiEventsRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ViewStateCarriers.PublishAndSyncUiEventsRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ViewStateCarriers.PublishAndSyncUiEventsRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ViewStateCarriers.PublishAndSyncUiEventsRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.ViewStateCarriers.PublishAndSyncUiEventsRequest"
+              }
+            }
+          },
+          "description": "LatestKnownEventId, PublishEvents, Metrics, TicketVersions",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.LiveUiSyncResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.LiveUiSyncResult"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.LiveUiSyncResult"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.LiveUiSyncResult"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.LiveUiSyncResult"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.LiveUiSyncResult"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
     }
   },
   "tags": [],
@@ -2261,10 +2493,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -2516,7 +2748,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.ViewStateCarriers.GetHistoriesByNamesAndIdsRequest": {
-        "description": "GetHistoriesByNamesAndIds: Returns history data for the named entities and the given ids - which may not directly correspond to the current history records in the database.&lt;para/&gt;Use this method if you know exactly which items you need, regardless of whether they are in the current history or not.&lt;para/&gt;The history in the database is not changed or even looked at by this method.",
+        "description": "GetHistoriesByNamesAndIds: Returns history data for the named entities and the given ids - which may not directly correspond to the current history records in the database.<para/>Use this method if you know exactly which items you need, regardless of whether they are in the current history or not.<para/>The history in the database is not changed or even looked at by this method.",
         "type": "object",
         "properties": {
           "Requests": {
@@ -2543,6 +2775,45 @@
           "RequestForNewRecord": {
             "description": "Are we requesting insert rights? If true, then EntityorParentId is taken to mean parent id",
             "type": "boolean"
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "description": "Field property dictionary mapping field names to field access rights.",
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            }
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.ViewStateCarriers.UpsertRecentNavigationRequest": {
+        "description": "UpsertRecentNavigation: Upsert Recent navigation entries for the logged-in associate and the given client. The entries are ranked so that the first element in the array becomes the most recent. The list is capped by the RecentNavigationLimit preference; the oldest entries beyond the cap are removed.",
+        "type": "object",
+        "properties": {
+          "Client": {
+            "type": "string"
+          },
+          "Elements": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.NavigationElement"
+            }
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.NavigationElement": {
+        "description": "A single navigation entry - a key and its navigation value (soprotocol).\r\n<para />\r\nCarrier object for NavigationElement.\r\nServices for the NavigationElement Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IViewStateAgent\">ViewState Agent</see>.",
+        "type": "object",
+        "properties": {
+          "Key": {
+            "description": "Navigation key; identifies the screen/panel for Current, or the entry for Recent",
+            "type": "string"
+          },
+          "NavigationValue": {
+            "description": "The navigation value (soprotocol string)",
+            "type": "string"
           },
           "TableRight": {
             "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
@@ -2627,7 +2898,7 @@
         }
       },
       "SuperOffice.CRM.Services.MetricPair": {
-        "description": "Metric, in the form of string-&gt;int\r\n<para />\r\nCarrier object for MetricPair.",
+        "description": "Metric, in the form of string->int\r\n<para />\r\nCarrier object for MetricPair.",
         "type": "object",
         "properties": {
           "Name": {
@@ -2638,6 +2909,99 @@
             "format": "int32",
             "description": "The value of the metric",
             "type": "integer"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.ViewStateCarriers.PublishAndSyncUiEventsRequest": {
+        "description": "PublishAndSyncUiEvents: Publish zero or more events and return any new events since the given event id, exactly like PublishAndRetrieveUiEvents — and additionally answer, for each ticket version the client supplies, whether that ticket has changed since (and by whom). Requested tickets the user cannot see are omitted from the answer",
+        "type": "object",
+        "properties": {
+          "LatestKnownEventId": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "PublishEvents": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.UiEvent"
+            }
+          },
+          "Metrics": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.MetricPair"
+            }
+          },
+          "TicketVersions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketVersionInfo"
+            }
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.TicketVersionInfo": {
+        "description": "A ticket the client is showing, together with the last-changed value of the client's loaded copy. Sent to the server to ask whether that copy is out of date.\r\n<para />\r\nCarrier object for TicketVersionInfo.",
+        "type": "object",
+        "properties": {
+          "TicketId": {
+            "format": "int32",
+            "description": "The primary key (auto-incremented)",
+            "type": "integer"
+          },
+          "LastChanged": {
+            "format": "date-time",
+            "description": "The last-changed value of the copy the client has loaded. DateTime.MinValue (or omitted) means the client has no loaded copy and only wants the ticket's current value back.",
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.LiveUiSyncResult": {
+        "description": "The combined answer of one live UI sync call: new UI events, plus the sync state of the tickets the client asked about.\r\n<para />\r\nCarrier object for LiveUiSyncResult.",
+        "type": "object",
+        "properties": {
+          "Events": {
+            "description": "New events since the given event id — the same content the PublishAndRetrieveUiEvents operation returns.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.UiEvent"
+            }
+          },
+          "TicketStates": {
+            "description": "Sync state of each requested ticket the user is allowed to see. Requested tickets the user cannot see are omitted.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.TicketStateInfo"
+            }
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.TicketStateInfo": {
+        "description": "The sync state of one ticket: its current last-changed value on the server, whether the client's copy is out of date, and who last changed it.\r\n<para />\r\nCarrier object for TicketStateInfo.",
+        "type": "object",
+        "properties": {
+          "TicketId": {
+            "format": "int32",
+            "description": "The primary key (auto-incremented)",
+            "type": "integer"
+          },
+          "LastChanged": {
+            "format": "date-time",
+            "description": "The ticket's current last-changed value on the server. Clients store this and send it back as the version in later calls.",
+            "type": "string"
+          },
+          "IsStale": {
+            "description": "True when the ticket changed after the version the client sent. Always false when the client sent no version (DateTime.MinValue).",
+            "type": "boolean"
+          },
+          "ChangedById": {
+            "format": "int32",
+            "description": "The associate who made the latest change, when the ticket is stale and the change can be attributed; 0 otherwise.",
+            "type": "integer"
+          },
+          "ChangedByName": {
+            "description": "Full name of the associate who made the latest change; empty when unknown.",
+            "type": "string"
           }
         }
       }

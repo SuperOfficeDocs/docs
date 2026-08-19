@@ -7501,7 +7501,7 @@
           "List_Business"
         ],
         "summary": "Get M D O List",
-        "description": "Get the MDO list items for \"Business\" - with headings and filtering by user",
+        "description": "Get the MDO list items for \"Business\" - with headings and filtering by user group.",
         "operationId": "v1BusinessList_GetMDOList",
         "parameters": [
           {
@@ -9608,7 +9608,7 @@
           "List_Category"
         ],
         "summary": "Get M D O List",
-        "description": "Get the MDO list items for \"Category\" - with headings and filtering by user",
+        "description": "Get the MDO list items for \"Category\" - with headings and filtering by user group.",
         "operationId": "v1CategoryList_GetMDOList",
         "parameters": [
           {
@@ -13505,7 +13505,7 @@
           "List_ConsentPurpose"
         ],
         "summary": "Get M D O List",
-        "description": "Get the MDO list items for \"ConsentPurpose\" - with headings and filtering by",
+        "description": "Get the MDO list items for \"ConsentPurpose\" - with headings and filtering by user group.",
         "operationId": "v1ConsentPurposeList_GetMDOList",
         "parameters": [
           {
@@ -15295,7 +15295,7 @@
           "List_ConsentSource"
         ],
         "summary": "Get M D O List",
-        "description": "Get the MDO list items for \"ConsentSource\" - with headings and filtering by",
+        "description": "Get the MDO list items for \"ConsentSource\" - with headings and filtering by user group.",
         "operationId": "v1ConsentSourceList_GetMDOList",
         "parameters": [
           {
@@ -17093,7 +17093,7 @@
           "List_Country"
         ],
         "summary": "Get M D O List",
-        "description": "Get the MDO list items for \"Country\" - with headings and filtering by user",
+        "description": "Get the MDO list items for \"Country\" - with headings and filtering by user group.",
         "operationId": "v1CountryList_GetMDOList",
         "parameters": [
           {
@@ -19200,7 +19200,7 @@
           "List_Credited"
         ],
         "summary": "Get M D O List",
-        "description": "Get the MDO list items for \"Credited\" - with headings and filtering by user",
+        "description": "Get the MDO list items for \"Credited\" - with headings and filtering by user group.",
         "operationId": "v1CreditedList_GetMDOList",
         "parameters": [
           {
@@ -21098,7 +21098,7 @@
           "List_Currency"
         ],
         "summary": "Get M D O List",
-        "description": "Get the MDO list items for \"Currency\" - with headings and filtering by user",
+        "description": "Get the MDO list items for \"Currency\" - with headings and filtering by user group.",
         "operationId": "v1CurrencyList_GetMDOList",
         "parameters": [
           {
@@ -23205,7 +23205,7 @@
           "List_DeliveryTerms"
         ],
         "summary": "Get M D O List",
-        "description": "Get the MDO list items for \"DeliveryTerms\" - with headings and filtering by",
+        "description": "Get the MDO list items for \"DeliveryTerms\" - with headings and filtering by user group.",
         "operationId": "v1DeliveryTermsList_GetMDOList",
         "parameters": [
           {
@@ -25312,7 +25312,7 @@
           "List_DeliveryType"
         ],
         "summary": "Get M D O List",
-        "description": "Get the MDO list items for \"DeliveryType\" - with headings and filtering by user",
+        "description": "Get the MDO list items for \"DeliveryType\" - with headings and filtering by user group.",
         "operationId": "v1DeliveryTypeList_GetMDOList",
         "parameters": [
           {
@@ -27210,7 +27210,7 @@
           "List_DocumentTemplate"
         ],
         "summary": "Get M D O List",
-        "description": "Get the MDO list items for \"DocTmpl\" - with headings and filtering by user",
+        "description": "Get the MDO list items for \"DocTmpl\" - with headings and filtering by user group.",
         "operationId": "v1DocumentTemplateList_GetMDOList",
         "parameters": [
           {
@@ -30477,7 +30477,7 @@
           "List_LegalBase"
         ],
         "summary": "Get M D O List",
-        "description": "Get the MDO list items for \"LegalBase\" - with headings and filtering by user",
+        "description": "Get the MDO list items for \"LegalBase\" - with headings and filtering by user group.",
         "operationId": "v1LegalBaseList_GetMDOList",
         "parameters": [
           {
@@ -34691,7 +34691,7 @@
           "List_PaymentTerms"
         ],
         "summary": "Get M D O List",
-        "description": "Get the MDO list items for \"PaymentTerms\" - with headings and filtering by user",
+        "description": "Get the MDO list items for \"PaymentTerms\" - with headings and filtering by user group.",
         "operationId": "v1PaymentTermsList_GetMDOList",
         "parameters": [
           {
@@ -36798,7 +36798,7 @@
           "List_PaymentType"
         ],
         "summary": "Get M D O List",
-        "description": "Get the MDO list items for \"PaymentType\" - with headings and filtering by user",
+        "description": "Get the MDO list items for \"PaymentType\" - with headings and filtering by user group.",
         "operationId": "v1PaymentTypeList_GetMDOList",
         "parameters": [
           {
@@ -38905,7 +38905,7 @@
           "List_Position"
         ],
         "summary": "Get M D O List",
-        "description": "Get the MDO list items for \"PersPos\" - with headings and filtering by user",
+        "description": "Get the MDO list items for \"PersPos\" - with headings and filtering by user group.",
         "operationId": "v1PositionList_GetMDOList",
         "parameters": [
           {
@@ -41012,7 +41012,7 @@
           "List_Priority"
         ],
         "summary": "Get M D O List",
-        "description": "Get the MDO list items for \"Priority\" - with headings and filtering by user",
+        "description": "Get the MDO list items for \"Priority\" - with headings and filtering by user group.",
         "operationId": "v1PriorityList_GetMDOList",
         "parameters": [
           {
@@ -43119,7 +43119,7 @@
           "List_ProductCategory"
         ],
         "summary": "Get M D O List",
-        "description": "Get the MDO list items for \"ProductCategory\" - with headings and filtering by",
+        "description": "Get the MDO list items for \"ProductCategory\" - with headings and filtering by user group.",
         "operationId": "v1ProductCategoryList_GetMDOList",
         "parameters": [
           {
@@ -45226,7 +45226,7 @@
           "List_ProductFamily"
         ],
         "summary": "Get M D O List",
-        "description": "Get the MDO list items for \"ProductFamily\" - with headings and filtering by",
+        "description": "Get the MDO list items for \"ProductFamily\" - with headings and filtering by user group.",
         "operationId": "v1ProductFamilyList_GetMDOList",
         "parameters": [
           {
@@ -47333,7 +47333,7 @@
           "List_ProductType"
         ],
         "summary": "Get M D O List",
-        "description": "Get the MDO list items for \"ProductType\" - with headings and filtering by user",
+        "description": "Get the MDO list items for \"ProductType\" - with headings and filtering by user group.",
         "operationId": "v1ProductTypeList_GetMDOList",
         "parameters": [
           {
@@ -49440,7 +49440,7 @@
           "List_ProjectStatus"
         ],
         "summary": "Get M D O List",
-        "description": "Get the MDO list items for \"ProjStatus\" - with headings and filtering by user",
+        "description": "Get the MDO list items for \"ProjStatus\" - with headings and filtering by user group.",
         "operationId": "v1ProjectStatusList_GetMDOList",
         "parameters": [
           {
@@ -51547,7 +51547,7 @@
           "List_ProjectType"
         ],
         "summary": "Get M D O List",
-        "description": "Get the MDO list items for \"ProjType\" - with headings and filtering by user",
+        "description": "Get the MDO list items for \"ProjType\" - with headings and filtering by user group.",
         "operationId": "v1ProjectTypeList_GetMDOList",
         "parameters": [
           {
@@ -53654,7 +53654,7 @@
           "List_QuoteApproveReason"
         ],
         "summary": "Get M D O List",
-        "description": "Get the MDO list items for \"QuoteApprReason\" - with headings and filtering by",
+        "description": "Get the MDO list items for \"QuoteApprReason\" - with headings and filtering by user group.",
         "operationId": "v1QuoteApproveReasonList_GetMDOList",
         "parameters": [
           {
@@ -55761,7 +55761,7 @@
           "List_QuoteDenyReason"
         ],
         "summary": "Get M D O List",
-        "description": "Get the MDO list items for \"QuoteDenyReason\" - with headings and filtering by",
+        "description": "Get the MDO list items for \"QuoteDenyReason\" - with headings and filtering by user group.",
         "operationId": "v1QuoteDenyReasonList_GetMDOList",
         "parameters": [
           {
@@ -61873,7 +61873,7 @@
           "List_ReasonSold"
         ],
         "summary": "Get M D O List",
-        "description": "Get the MDO list items for \"ReasonSold\" - with headings and filtering by user",
+        "description": "Get the MDO list items for \"ReasonSold\" - with headings and filtering by user group.",
         "operationId": "v1ReasonSoldList_GetMDOList",
         "parameters": [
           {
@@ -63980,7 +63980,7 @@
           "List_ReasonStalled"
         ],
         "summary": "Get M D O List",
-        "description": "Get the MDO list items for \"ReasonStalled\" - with headings and filtering by",
+        "description": "Get the MDO list items for \"ReasonStalled\" - with headings and filtering by user group.",
         "operationId": "v1ReasonStalledList_GetMDOList",
         "parameters": [
           {
@@ -65878,7 +65878,7 @@
           "List_SaleType"
         ],
         "summary": "Get M D O List",
-        "description": "Get the MDO list items for \"SaleType\" - with headings and filtering by user",
+        "description": "Get the MDO list items for \"SaleType\" - with headings and filtering by user group.",
         "operationId": "v1SaleTypeList_GetMDOList",
         "parameters": [
           {
@@ -67985,7 +67985,7 @@
           "List_SelectionCategory"
         ],
         "summary": "Get M D O List",
-        "description": "Get the MDO list items for \"SearchCat\" - with headings and filtering by user",
+        "description": "Get the MDO list items for \"SearchCat\" - with headings and filtering by user group.",
         "operationId": "v1SelectionCategoryList_GetMDOList",
         "parameters": [
           {
@@ -78251,10 +78251,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -79786,7 +79786,7 @@
             "type": "number"
           },
           "Deleted": {
-            "description": "0 -&gt; record is active 1 -&gt; record is 'deleted' and should not be shown in lists",
+            "description": "0 -> record is active 1 -> record is 'deleted' and should not be shown in lists",
             "type": "boolean"
           },
           "TableRight": {
@@ -80124,7 +80124,7 @@
             "type": "integer"
           },
           "Deleted": {
-            "description": "0 -&gt; record is active 1 -&gt; record is 'deleted' and should not be shown in lists",
+            "description": "0 -> record is active 1 -> record is 'deleted' and should not be shown in lists",
             "type": "boolean"
           },
           "HasGuide": {
@@ -80342,11 +80342,11 @@
             "type": "integer"
           },
           "Name": {
-            "description": "The (short) name of this category. E.g. &amp;apos;support&amp;apos;.",
+            "description": "The (short) name of this category. E.g. &apos;support&apos;.",
             "type": "string"
           },
           "Fullname": {
-            "description": "The fullname (compiled from parents&amp;apos; names) for this category. E.g. &amp;apos;norway/product A/support&amp;apos;.",
+            "description": "The fullname (compiled from parents&apos; names) for this category. E.g. &apos;norway/product A/support&apos;.",
             "type": "string"
           },
           "CategoryMaster": {
@@ -80471,7 +80471,7 @@
             "type": "string"
           },
           "Status": {
-            "description": "The &amp;apos;classic&amp;apos; ticket status. I.e. active/closed/postponed/deleted",
+            "description": "The &apos;classic&apos; ticket status. I.e. active/closed/postponed/deleted",
             "enum": [
               "Unknown",
               "Active",

@@ -661,10 +661,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -983,7 +983,7 @@
             "type": "boolean"
           },
           "ExtraInfo": {
-            "description": "Example: \"navigator\" -&gt; Should this column be mapped to a hyperlinked navigator text type?",
+            "description": "Example: \"navigator\" -> Should this column be mapped to a hyperlinked navigator text type?",
             "type": "string"
           },
           "Width": {

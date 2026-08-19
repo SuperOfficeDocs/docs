@@ -959,7 +959,7 @@
           "Batch_Agent"
         ],
         "summary": "Get Batch Task Infos By Name And State",
-        "description": "Gets an array of user BatchTaskInfo with state defined by a BatchTaskState and\n\nNsApiSlow threshold: 3000 ms.",
+        "description": "Gets an array of user BatchTaskInfo with state defined by a BatchTaskState and the batchtask definition name.\n\nNsApiSlow threshold: 3000 ms.",
         "operationId": "v1BatchAgent_GetBatchTaskInfosByNameAndState",
         "parameters": [
           {
@@ -1127,7 +1127,7 @@
           "Batch_Agent"
         ],
         "summary": "Get Batch Task Infos By Name And Associates",
-        "description": "Get an array of BatchTaskInfo for the provided associate id's and batch task\n\nNsApiSlow threshold: 3000 ms.",
+        "description": "Get an array of BatchTaskInfo for the provided associate id's and batch task definition name.\n\nNsApiSlow threshold: 3000 ms.",
         "operationId": "v1BatchAgent_GetBatchTaskInfosByNameAndAssociates",
         "parameters": [
           {
@@ -1295,7 +1295,7 @@
           "Batch_Agent"
         ],
         "summary": "Get Batch Task Infos By Associates And State",
-        "description": "Get an array of BatchTaskInfo for the provided associate id's and batch task\n\nNsApiSlow threshold: 3000 ms.",
+        "description": "Get an array of BatchTaskInfo for the provided associate id's and batch task state.\n\nNsApiSlow threshold: 3000 ms.",
         "operationId": "v1BatchAgent_GetBatchTaskInfosByAssociatesAndState",
         "parameters": [
           {
@@ -1795,7 +1795,7 @@
           "Batch_Agent"
         ],
         "summary": "Get All Batch Task Infos By Name And State",
-        "description": "Get an array of system and user BatchTaskInfo for the provided task name and\n\nNsApiSlow threshold: 3000 ms.",
+        "description": "Get an array of system and user BatchTaskInfo for the provided task name and state.\n\nNsApiSlow threshold: 3000 ms.",
         "operationId": "v1BatchAgent_GetAllBatchTaskInfosByNameAndState",
         "parameters": [
           {
@@ -2301,10 +2301,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {

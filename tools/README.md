@@ -25,7 +25,6 @@ Scripts that convert, generate, or verify content for this repo. Not published t
 | `convert-md-to-mdx.ps1` | migration | Renames `.md` → `.mdx` when JSX/imports are present | No |
 | `convert-release-notes-to-updates.ps1` | migration | Converts release-notes pages into Mintlify `Update` components | No |
 | `convert-snippets.ps1` | migration | DocFx `[!include]` → Mintlify snippet imports | No |
-| `convert-swagger-to-openapi.ps1` | migration | Swagger 2.0 → OpenAPI 3.x conversion | No — retire once native OpenAPI rendering (issue #147) lands |
 | `convert-tabs.ps1` | migration | DocFx tab syntax → Mintlify `<Tabs>/<Tab>` | No |
 | `convert-toc-to-mintlify.ps1` | migration | `toc.yml` → Mintlify nav JSON | No — see Known issues below |
 | `convert-videos.ps1` | migration | DocFx video embeds → Mintlify `<Frame>`/iframe | No |
@@ -52,6 +51,7 @@ Scripts that convert, generate, or verify content for this repo. Not published t
 | `find-stale-generated-pages.py` | ci | Finds generated reference pages dropped from their tree's nav | Yes |
 | `apply-wide-mode.py` | ci | Auto-fixes: applies `mode: "wide"` to a maintained list of overflowing reference pages, commits back to the PR | Yes |
 | `apply-code-wrap.py` | ci | Auto-fixes: wraps fenced code blocks on a maintained list of pages in a `.wrap-code-samples` marker so long lines wrap instead of scrolling, commits back to the PR | Yes |
+| `generate-openapi-nav.py` | ci | Regenerates `config/nav-restful-{agent,rest}-openapi.json` from the current `openapi/{agent,rest}/` listing, commits back to the PR | Yes — until #147 lands; the underlying directory-listing approach may be worth keeping as a standing drift check even after |
 | `check-bom.ps1` | top level | Scans/optionally strips a UTF-8 BOM | Yes |
 | `check-encoding.py` | top level | Flags invalid UTF-8 / mojibake across `.md`/`.mdx` | Yes |
 | `check-image-references.py` | top level | Verifies every image reference resolves to a real file | Yes |
@@ -68,6 +68,7 @@ Scripts that convert, generate, or verify content for this repo. Not published t
 | `triage-broken-links.py` | top level | Separates real `mint broken-links` breaks from known false positives | Yes |
 | `verify-nav-paths.py` | top level | Verifies every nav page-path resolves to a real file | Yes |
 | `build-learn-sitemaps.py` | top level | Regenerates the per-language Userflow userhelp sitemap pages | Yes |
+| `convert-swagger-to-openapi.ps1` | top level | Swagger 2.0 → OpenAPI 3.x conversion, with a `-Files` mode and a known-missing-`$ref` fixup table for CI use | Yes — until #147 lands (see issue #297); moved out of `migration/` since it's now CI-invoked on every relevant PR, not one-time forklift cruft |
 | `benchmarks/*` | benchmarks/ | Page-load, search-latency, and nav-responsiveness benchmarking | Yes — see `benchmarks/README.md` |
 
 ## PowerShell script conventions
@@ -114,4 +115,4 @@ Findings from a review pass across this folder (2026-08), kept here rather than 
 * **`convert-toc-to-mintlify.ps1`** has three known, unresolved bugs: unresolved `../` path segments in some inputs, an infinite loop in its context-stack handling under certain nesting shapes, and 3+-level-deep nesting flattening incorrectly instead of preserving structure. No live content is currently affected (all existing `toc.yml` conversions already ran successfully before these were found), but don't reuse this script against a new, deeply-nested `toc.yml` without checking the output carefully.
 * **`generate-footer.ps1`** reads `docs.json` with a plain `Get-Content -Raw | ConvertFrom-Json` — no explicit encoding. Currently harmless because footer link/social labels are ASCII-only, but will corrupt non-English text the day footer labels are localized. Fix at that point by applying this folder's standard `-Encoding UTF8` convention (see above).
 * **`update-rest-directories.ps1`** is known-fragile (regex string-replace on `docs.json` instead of parse/mutate/serialize) and assumes it runs with the repo root as the working directory. Already executed and retired — see its own header for the full explanation. Not worth hardening a script that won't run again; don't reuse its approach for a new `docs.json` editing task.
-* **Reviewed and accepted, no change made**: a conditional `shell=True` in `triage-broken-links.py` (fixed argument list, not attacker-influenced), a template-literal `execSync` call in `benchmarks/run-pageload-benchmark.mjs` (URL comes from checked-in JSON config, not external input), and a static temp-file Node script execution in `convert-swagger-to-openapi.ps1` (script content is not dynamic). None of these take attacker-controlled input, so no exploit shape exists today — flagged here so a future reviewer doesn't have to re-derive the same conclusion from scratch.
+* **Reviewed and accepted, no change made**: a conditional `shell=True` in `triage-broken-links.py` (fixed argument list, not attacker-influenced), a template-literal `execSync` call in `benchmarks/run-pageload-benchmark.mjs` (URL comes from checked-in JSON config, not external input), and static temp-file Node script executions in `convert-swagger-to-openapi.ps1` (script content is not dynamic, including the known-ref fixup added for issue #297 — file paths and the definition name are passed as `process.argv`, never spliced into the script text). None of these take attacker-controlled input, so no exploit shape exists today — flagged here so a future reviewer doesn't have to re-derive the same conclusion from scratch.

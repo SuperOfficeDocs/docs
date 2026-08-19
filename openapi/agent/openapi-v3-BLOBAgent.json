@@ -117,7 +117,7 @@
           "BLOB_Agent"
         ],
         "summary": "Save Blob Entity",
-        "description": "Updates the existing BlobEntity or creates a new BlobEntity if the id parameter\n\nNsApiSlow threshold: 3000 ms.",
+        "description": "Updates the existing BlobEntity or creates a new BlobEntity if the id parameter is 0.\n\nNsApiSlow threshold: 3000 ms.",
         "operationId": "v1BLOBAgent_SaveBlobEntity",
         "parameters": [
           {
@@ -1197,7 +1197,7 @@
           "BLOB_Agent"
         ],
         "summary": "Save Project Image",
-        "description": "Saves a project image that is displayed in the CRM application's project image\n\nNsApiSlow threshold: 3000 ms.",
+        "description": "Saves a project image that is displayed in the CRM application's project image selection dialog to the database.\n\nNsApiSlow threshold: 3000 ms.",
         "operationId": "v1BLOBAgent_SaveProjectImage",
         "parameters": [
           {
@@ -1879,7 +1879,7 @@
           "BLOB_Agent"
         ],
         "summary": "Change Person Image",
-        "description": "NsApiSlow threshold 3000 ms.",
+        "description": "NsApiSlow threshold: 3000 ms.",
         "operationId": "v1BLOBAgent_ChangePersonImage",
         "parameters": [
           {
@@ -2695,7 +2695,7 @@
           "BLOB_Agent"
         ],
         "summary": "Change Product Image",
-        "description": "NsApiSlow threshold 3000 ms.",
+        "description": "NsApiSlow threshold: 3000 ms.",
         "operationId": "v1BLOBAgent_ChangeProductImage",
         "parameters": [
           {
@@ -2927,7 +2927,7 @@
           "BLOB_Agent"
         ],
         "summary": "Get Person Image With Size",
-        "description": "Returns the person image that is displayed in the CRM application with a\n\nNsApiSlow threshold: 3000 ms.",
+        "description": "Returns the person image that is displayed in the CRM application with a specified maximum size.\n\nNsApiSlow threshold: 3000 ms.",
         "operationId": "v1BLOBAgent_GetPersonImageWithSize",
         "parameters": [
           {
@@ -3191,7 +3191,7 @@
           "BLOB_Agent"
         ],
         "summary": "Get Project Image With Size",
-        "description": "Returns the project image that is displayed in the CRM application with a\n\nNsApiSlow threshold: 3000 ms.",
+        "description": "Returns the project image that is displayed in the CRM application with a specified maximum size.\n\nNsApiSlow threshold: 3000 ms.",
         "operationId": "v1BLOBAgent_GetProjectImageWithSize",
         "parameters": [
           {
@@ -4183,7 +4183,7 @@
           "BLOB_Agent"
         ],
         "summary": "Get Contact Image With Size",
-        "description": "Returns the contact image that is displayed in the CRM application with a\n\nNsApiSlow threshold: 3000 ms.",
+        "description": "Returns the contact image that is displayed in the CRM application with a specified maximum size.\n\nNsApiSlow threshold: 3000 ms.",
         "operationId": "v1BLOBAgent_GetContactImageWithSize",
         "parameters": [
           {
@@ -4711,7 +4711,7 @@
           "BLOB_Agent"
         ],
         "summary": "Cleanup Batch Task",
-        "description": "Removes the binary objects linked to the batch task, the links themselves and\n\nNsApiSlow threshold: 3000 ms.",
+        "description": "Removes the binary objects linked to the batch task, the links themselves and the batch task.\n\nNsApiSlow threshold: 3000 ms.",
         "operationId": "v1BLOBAgent_CleanupBatchTask",
         "parameters": [
           {
@@ -4795,10 +4795,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {

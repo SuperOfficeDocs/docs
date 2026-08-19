@@ -11,6 +11,566 @@
     }
   },
   "paths": {
+    "/api/v1/Agents/List/GetSource": {
+      "post": {
+        "tags": [
+          "List_Agent"
+        ],
+        "summary": "Get Source",
+        "description": "Gets a Source object.\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1ListAgent_GetSource",
+        "parameters": [
+          {
+            "name": "sourceId",
+            "in": "query",
+            "description": "The identifier of the Source object",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/List/GetSourceList": {
+      "post": {
+        "tags": [
+          "List_Agent"
+        ],
+        "summary": "Get Source List",
+        "description": "Gets an array of Source objects.\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1ListAgent_GetSourceList",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              }
+            }
+          },
+          "description": "The identifiers of the Source object",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/List/GetSources": {
+      "post": {
+        "tags": [
+          "List_Agent"
+        ],
+        "summary": "Get Sources",
+        "description": "Returns all sources\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1ListAgent_GetSources",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/List/GetTask": {
+      "post": {
+        "tags": [
+          "List_Agent"
+        ],
+        "summary": "Get So Task",
+        "description": "Gets a SoTask object.\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1ListAgent_GetSoTask",
+        "parameters": [
+          {
+            "name": "taskId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SoTask"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SoTask"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SoTask"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SoTask"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SoTask"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SoTask"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
     "/api/v1/Agents/List/GetDocumentTemplateTask": {
       "post": {
         "tags": [
@@ -490,7 +1050,7 @@
           "List_Agent"
         ],
         "summary": "Get Document Templates Tasks",
-        "description": "The appointment's task is a Document template item when the appointment is a\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "The appointment's task is a Document template item when the appointment is a document.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_GetDocumentTemplatesTasks",
         "parameters": [
           {
@@ -1004,7 +1564,7 @@
           "List_Agent"
         ],
         "summary": "Save Ticket Category Entity",
-        "description": "Updates the existing TicketCategoryEntity or creates a new TicketCategoryEntity\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing TicketCategoryEntity or creates a new TicketCategoryEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_SaveTicketCategoryEntity",
         "parameters": [
           {
@@ -1625,7 +2185,7 @@
           "List_Agent"
         ],
         "summary": "Get Ticket Categories",
-        "description": "NsApiSlow threshold 5000 ms.",
+        "description": "NsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_GetTicketCategories",
         "parameters": [
           {
@@ -2303,7 +2863,7 @@
           "List_Agent"
         ],
         "summary": "Save Ticket Priority Entity",
-        "description": "Updates the existing TicketPriorityEntity or creates a new TicketPriorityEntity\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing TicketPriorityEntity or creates a new TicketPriorityEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_SaveTicketPriorityEntity",
         "parameters": [
           {
@@ -2883,7 +3443,7 @@
           "List_Agent"
         ],
         "summary": "Get Ticket Priorities",
-        "description": "NsApiSlow threshold 5000 ms.",
+        "description": "NsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_GetTicketPriorities",
         "parameters": [
           {
@@ -3278,7 +3838,7 @@
           "List_Agent"
         ],
         "summary": "Save Ticket Relation Definition Entity",
-        "description": "Updates the existing TicketRelationDefinitionEntity or creates a new\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing TicketRelationDefinitionEntity or creates a new TicketRelationDefinitionEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_SaveTicketRelationDefinitionEntity",
         "parameters": [
           {
@@ -3662,7 +4222,7 @@
           "List_Agent"
         ],
         "summary": "Validate Ticket Relation Definition",
-        "description": "Validate a ticket relation definition against combinations of source and\n\nReturns one result per source/destination pair.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Validate a ticket relation definition against combinations of source and destination ticket types.\n\nReturns one result per source/destination pair.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## This method is experimental, subject to change, and not intended for partners.",
         "operationId": "v1ListAgent_ValidateTicketRelationDefinition",
         "parameters": [
           {
@@ -3830,7 +4390,7 @@
           "List_Agent"
         ],
         "summary": "Get All Ticket Relation Definition Entities",
-        "description": "Returns all non-built-in ticket relation definitions, including their source\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Returns all non-built-in ticket relation definitions, including their source and destination ticket type associations.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## This method is experimental, subject to change, and not intended for partners.",
         "operationId": "v1ListAgent_GetAllTicketRelationDefinitionEntities",
         "parameters": [
           {
@@ -4057,7 +4617,7 @@
           "List_Agent"
         ],
         "summary": "Save Ticket Status Entity",
-        "description": "Updates the existing TicketStatusEntity or creates a new TicketStatusEntity if\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing TicketStatusEntity or creates a new TicketStatusEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_SaveTicketStatusEntity",
         "parameters": [
           {
@@ -4719,7 +5279,7 @@
           "List_Agent"
         ],
         "summary": "Get Ticket Statuses",
-        "description": "NsApiSlow threshold 5000 ms.",
+        "description": "NsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_GetTicketStatuses",
         "parameters": [
           {
@@ -4946,7 +5506,7 @@
           "List_Agent"
         ],
         "summary": "Save Ticket Type Entity",
-        "description": "Updates the existing TicketTypeEntity or creates a new TicketTypeEntity if the\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing TicketTypeEntity or creates a new TicketTypeEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_SaveTicketTypeEntity",
         "parameters": [
           {
@@ -5835,7 +6395,7 @@
           "List_Agent"
         ],
         "summary": "Save Web Panel Entity",
-        "description": "Updates the existing WebPanelEntity or creates a new WebPanelEntity if the id\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing WebPanelEntity or creates a new WebPanelEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_SaveWebPanelEntity",
         "parameters": [
           {
@@ -6454,7 +7014,7 @@
           "List_Agent"
         ],
         "summary": "Get App Web Panels",
-        "description": "Get all web panels owned by your app; works in Online only, for registered Apps\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Get all web panels owned by your app; works in Online only, for registered Apps that send a valid ApplicationToken\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_GetAppWebPanels",
         "parameters": [
           {
@@ -6581,7 +7141,7 @@
           "List_Agent"
         ],
         "summary": "Delete App Web Panels",
-        "description": "Permanentely delete all web panels owned by your app; works in Online only, for\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Permanentely delete all web panels owned by your app; works in Online only, for registered Apps that send a valid ApplicationToken; otherwise nothing happens\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_DeleteAppWebPanels",
         "parameters": [
           {
@@ -6753,6 +7313,567 @@
               "application/merge-patch+json": {
                 "schema": {
                   "$ref": "#/components/schemas/SuperOffice.CRM.Services.WebPanelEntity"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/List/GetPictureFolderEntity": {
+      "post": {
+        "tags": [
+          "List_Agent"
+        ],
+        "summary": "Get Picture Folder Entity",
+        "description": "Gets a PictureFolderEntity object.\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1ListAgent_GetPictureFolderEntity",
+        "parameters": [
+          {
+            "name": "pictureFolderEntityId",
+            "in": "query",
+            "description": "The identifier of the PictureFolderEntity object",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PictureFolderEntity"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PictureFolderEntity"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PictureFolderEntity"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PictureFolderEntity"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PictureFolderEntity"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PictureFolderEntity"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/List/GetPosition": {
+      "post": {
+        "tags": [
+          "List_Agent"
+        ],
+        "summary": "Get Position",
+        "description": "Gets a Position object.\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1ListAgent_GetPosition",
+        "parameters": [
+          {
+            "name": "positionId",
+            "in": "query",
+            "description": "The identifier of the Position object",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/List/GetPositionList": {
+      "post": {
+        "tags": [
+          "List_Agent"
+        ],
+        "summary": "Get Position List",
+        "description": "Gets an array of Position objects.\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1ListAgent_GetPositionList",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              }
+            }
+          },
+          "description": "The identifiers of the Position object",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/List/GetPositions": {
+      "post": {
+        "tags": [
+          "List_Agent"
+        ],
+        "summary": "Get Positions",
+        "description": "Returns all the positions a person could have.\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1ListAgent_GetPositions",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
+                  }
                 }
               }
             }
@@ -8695,7 +9816,7 @@
           "List_Agent"
         ],
         "summary": "Save Project Type Entity",
-        "description": "Updates the existing ProjectTypeEntity or creates a new ProjectTypeEntity if\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing ProjectTypeEntity or creates a new ProjectTypeEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_SaveProjectTypeEntity",
         "parameters": [
           {
@@ -12407,7 +13528,7 @@
           "List_Agent"
         ],
         "summary": "Save Relation Definition Entity",
-        "description": "Updates the existing RelationDefinitionEntity or creates a new\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing RelationDefinitionEntity or creates a new RelationDefinitionEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_SaveRelationDefinitionEntity",
         "parameters": [
           {
@@ -12767,7 +13888,7 @@
           "List_Agent"
         ],
         "summary": "Save Resource Entity",
-        "description": "Updates the existing ResourceEntity or creates a new ResourceEntity if the id\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing ResourceEntity or creates a new ResourceEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_SaveResourceEntity",
         "parameters": [
           {
@@ -13169,7 +14290,7 @@
           "List_Agent"
         ],
         "summary": "Save Sale Stage Entity",
-        "description": "Updates the existing SaleStageEntity or creates a new SaleStageEntity if the id\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing SaleStageEntity or creates a new SaleStageEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_SaveSaleStageEntity",
         "parameters": [
           {
@@ -13648,7 +14769,7 @@
           "List_Agent"
         ],
         "summary": "Save Sale Type Entity",
-        "description": "Updates the existing SaleTypeEntity or creates a new SaleTypeEntity if the id\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing SaleTypeEntity or creates a new SaleTypeEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_SaveSaleTypeEntity",
         "parameters": [
           {
@@ -14822,566 +15943,6 @@
                   "items": {
                     "$ref": "#/components/schemas/SuperOffice.CRM.Services.SelectionCategory"
                   }
-                }
-              }
-            }
-          }
-        },
-        "security": [
-          {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
-          }
-        ]
-      }
-    },
-    "/api/v1/Agents/List/GetSource": {
-      "post": {
-        "tags": [
-          "List_Agent"
-        ],
-        "summary": "Get Source",
-        "description": "Gets a Source object.\n\nNsApiSlow threshold: 5000 ms.",
-        "operationId": "v1ListAgent_GetSource",
-        "parameters": [
-          {
-            "name": "sourceId",
-            "in": "query",
-            "description": "The identifier of the Source object",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "$select",
-            "in": "query",
-            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "Accept-Language",
-            "in": "header",
-            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-Language",
-            "in": "header",
-            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-Culture",
-            "in": "header",
-            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-TimeZone",
-            "in": "header",
-            "description": "Specify the timezone code that you would like date/time responses converted to.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-AppToken",
-            "in": "header",
-            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
-                }
-              },
-              "text/xml": {
-                "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
-                }
-              },
-              "application/json-patch+json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
-                }
-              },
-              "application/merge-patch+json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
-                }
-              }
-            }
-          }
-        },
-        "security": [
-          {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
-          }
-        ]
-      }
-    },
-    "/api/v1/Agents/List/GetSourceList": {
-      "post": {
-        "tags": [
-          "List_Agent"
-        ],
-        "summary": "Get Source List",
-        "description": "Gets an array of Source objects.\n\nNsApiSlow threshold: 5000 ms.",
-        "operationId": "v1ListAgent_GetSourceList",
-        "parameters": [
-          {
-            "name": "$select",
-            "in": "query",
-            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "Accept-Language",
-            "in": "header",
-            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-Language",
-            "in": "header",
-            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-Culture",
-            "in": "header",
-            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-TimeZone",
-            "in": "header",
-            "description": "Specify the timezone code that you would like date/time responses converted to.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-AppToken",
-            "in": "header",
-            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "array",
-                "items": {
-                  "format": "int32",
-                  "type": "integer"
-                }
-              }
-            },
-            "text/json": {
-              "schema": {
-                "type": "array",
-                "items": {
-                  "format": "int32",
-                  "type": "integer"
-                }
-              }
-            },
-            "application/xml": {
-              "schema": {
-                "type": "array",
-                "items": {
-                  "format": "int32",
-                  "type": "integer"
-                }
-              }
-            },
-            "text/xml": {
-              "schema": {
-                "type": "array",
-                "items": {
-                  "format": "int32",
-                  "type": "integer"
-                }
-              }
-            },
-            "application/x-www-form-urlencoded": {
-              "schema": {
-                "type": "array",
-                "items": {
-                  "format": "int32",
-                  "type": "integer"
-                }
-              }
-            },
-            "application/json-patch+json": {
-              "schema": {
-                "type": "array",
-                "items": {
-                  "format": "int32",
-                  "type": "integer"
-                }
-              }
-            },
-            "application/merge-patch+json": {
-              "schema": {
-                "type": "array",
-                "items": {
-                  "format": "int32",
-                  "type": "integer"
-                }
-              }
-            }
-          },
-          "description": "The identifiers of the Source object",
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
-                  }
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
-                  }
-                }
-              },
-              "text/xml": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
-                  }
-                }
-              },
-              "application/json-patch+json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
-                  }
-                }
-              },
-              "application/merge-patch+json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
-                  }
-                }
-              }
-            }
-          }
-        },
-        "security": [
-          {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
-          }
-        ]
-      }
-    },
-    "/api/v1/Agents/List/GetSources": {
-      "post": {
-        "tags": [
-          "List_Agent"
-        ],
-        "summary": "Get Sources",
-        "description": "Returns all sources\n\nNsApiSlow threshold: 5000 ms.",
-        "operationId": "v1ListAgent_GetSources",
-        "parameters": [
-          {
-            "name": "$select",
-            "in": "query",
-            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "Accept-Language",
-            "in": "header",
-            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-Language",
-            "in": "header",
-            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-Culture",
-            "in": "header",
-            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-TimeZone",
-            "in": "header",
-            "description": "Specify the timezone code that you would like date/time responses converted to.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-AppToken",
-            "in": "header",
-            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
-                  }
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
-                  }
-                }
-              },
-              "text/xml": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
-                  }
-                }
-              },
-              "application/json-patch+json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
-                  }
-                }
-              },
-              "application/merge-patch+json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Source"
-                  }
-                }
-              }
-            }
-          }
-        },
-        "security": [
-          {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
-          }
-        ]
-      }
-    },
-    "/api/v1/Agents/List/GetTask": {
-      "post": {
-        "tags": [
-          "List_Agent"
-        ],
-        "summary": "Get So Task",
-        "description": "Gets a SoTask object.\n\nNsApiSlow threshold: 5000 ms.",
-        "operationId": "v1ListAgent_GetSoTask",
-        "parameters": [
-          {
-            "name": "taskId",
-            "in": "query",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "$select",
-            "in": "query",
-            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "Accept-Language",
-            "in": "header",
-            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-Language",
-            "in": "header",
-            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-Culture",
-            "in": "header",
-            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-TimeZone",
-            "in": "header",
-            "description": "Specify the timezone code that you would like date/time responses converted to.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-AppToken",
-            "in": "header",
-            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SoTask"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SoTask"
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SoTask"
-                }
-              },
-              "text/xml": {
-                "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SoTask"
-                }
-              },
-              "application/json-patch+json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SoTask"
-                }
-              },
-              "application/merge-patch+json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SoTask"
                 }
               }
             }
@@ -23525,34 +24086,15 @@
         ]
       }
     },
-    "/api/v1/Agents/List/GetPosition": {
+    "/api/v1/Agents/List/CreateDefaultPictureFolderEntity": {
       "post": {
         "tags": [
           "List_Agent"
         ],
-        "summary": "Get Position",
-        "description": "Gets a Position object.\n\nNsApiSlow threshold: 5000 ms.",
-        "operationId": "v1ListAgent_GetPosition",
+        "summary": "Create Default Picture Folder Entity",
+        "description": "Loading default values into a new PictureFolderEntity.\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1ListAgent_CreateDefaultPictureFolderEntity",
         "parameters": [
-          {
-            "name": "positionId",
-            "in": "query",
-            "description": "The identifier of the Position object",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "$select",
-            "in": "query",
-            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
           {
             "name": "Accept-Language",
             "in": "header",
@@ -23605,32 +24147,32 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PictureFolderEntity"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PictureFolderEntity"
                 }
               },
               "application/xml": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PictureFolderEntity"
                 }
               },
               "text/xml": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PictureFolderEntity"
                 }
               },
               "application/json-patch+json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PictureFolderEntity"
                 }
               },
               "application/merge-patch+json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PictureFolderEntity"
                 }
               }
             }
@@ -23644,24 +24186,15 @@
         ]
       }
     },
-    "/api/v1/Agents/List/GetPositionList": {
+    "/api/v1/Agents/List/SavePictureFolderEntity": {
       "post": {
         "tags": [
           "List_Agent"
         ],
-        "summary": "Get Position List",
-        "description": "Gets an array of Position objects.\n\nNsApiSlow threshold: 5000 ms.",
-        "operationId": "v1ListAgent_GetPositionList",
+        "summary": "Save Picture Folder Entity",
+        "description": "Updates the existing PictureFolderEntity or creates a new PictureFolderEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1ListAgent_SavePictureFolderEntity",
         "parameters": [
-          {
-            "name": "$select",
-            "in": "query",
-            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
           {
             "name": "Accept-Language",
             "in": "header",
@@ -23712,69 +24245,41 @@
           "content": {
             "application/json": {
               "schema": {
-                "type": "array",
-                "items": {
-                  "format": "int32",
-                  "type": "integer"
-                }
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PictureFolderEntity"
               }
             },
             "text/json": {
               "schema": {
-                "type": "array",
-                "items": {
-                  "format": "int32",
-                  "type": "integer"
-                }
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PictureFolderEntity"
               }
             },
             "application/xml": {
               "schema": {
-                "type": "array",
-                "items": {
-                  "format": "int32",
-                  "type": "integer"
-                }
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PictureFolderEntity"
               }
             },
             "text/xml": {
               "schema": {
-                "type": "array",
-                "items": {
-                  "format": "int32",
-                  "type": "integer"
-                }
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PictureFolderEntity"
               }
             },
             "application/x-www-form-urlencoded": {
               "schema": {
-                "type": "array",
-                "items": {
-                  "format": "int32",
-                  "type": "integer"
-                }
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PictureFolderEntity"
               }
             },
             "application/json-patch+json": {
               "schema": {
-                "type": "array",
-                "items": {
-                  "format": "int32",
-                  "type": "integer"
-                }
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PictureFolderEntity"
               }
             },
             "application/merge-patch+json": {
               "schema": {
-                "type": "array",
-                "items": {
-                  "format": "int32",
-                  "type": "integer"
-                }
+                "$ref": "#/components/schemas/SuperOffice.CRM.Services.PictureFolderEntity"
               }
             }
           },
-          "description": "The identifiers of the Position object",
+          "description": "The PictureFolderEntity that is saved",
           "required": true
         },
         "responses": {
@@ -23783,50 +24288,32 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
-                  }
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PictureFolderEntity"
                 }
               },
               "text/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
-                  }
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PictureFolderEntity"
                 }
               },
               "application/xml": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
-                  }
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PictureFolderEntity"
                 }
               },
               "text/xml": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
-                  }
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PictureFolderEntity"
                 }
               },
               "application/json-patch+json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
-                  }
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PictureFolderEntity"
                 }
               },
               "application/merge-patch+json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
-                  }
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.PictureFolderEntity"
                 }
               }
             }
@@ -23840,58 +24327,23 @@
         ]
       }
     },
-    "/api/v1/Agents/List/GetPositions": {
+    "/api/v1/Agents/List/DeletePictureFolderEntity": {
       "post": {
         "tags": [
           "List_Agent"
         ],
-        "summary": "Get Positions",
-        "description": "Returns all the positions a person could have.\n\nNsApiSlow threshold: 5000 ms.",
-        "operationId": "v1ListAgent_GetPositions",
+        "summary": "Delete Picture Folder Entity",
+        "description": "Deletes the PictureFolderEntity\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1ListAgent_DeletePictureFolderEntity",
         "parameters": [
           {
-            "name": "$select",
+            "name": "pictureFolderEntityId",
             "in": "query",
-            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
-            "required": false,
+            "description": "The identity of the PictureFolderEntity",
+            "required": true,
             "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "Accept-Language",
-            "in": "header",
-            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-Language",
-            "in": "header",
-            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-Culture",
-            "in": "header",
-            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-TimeZone",
-            "in": "header",
-            "description": "Specify the timezone code that you would like date/time responses converted to.",
-            "required": false,
-            "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int32"
             }
           },
           {
@@ -23905,58 +24357,8 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
-                  }
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
-                  }
-                }
-              },
-              "text/xml": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
-                  }
-                }
-              },
-              "application/json-patch+json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
-                  }
-                }
-              },
-              "application/merge-patch+json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Position"
-                  }
-                }
-              }
-            }
+          "204": {
+            "description": "No Content"
           }
         },
         "security": [
@@ -24534,7 +24936,7 @@
           "List_Agent"
         ],
         "summary": "Get Departments",
-        "description": "Getting all departments/user groups for the internal phone list with the user's\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Getting all departments/user groups for the internal phone list with the user's colleagues.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_GetDepartments",
         "parameters": [
           {
@@ -24880,7 +25282,7 @@
           "List_Agent"
         ],
         "summary": "Save Document Template Entity",
-        "description": "Updates the existing DocumentTemplateEntity or creates a new\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing DocumentTemplateEntity or creates a new DocumentTemplateEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_SaveDocumentTemplateEntity",
         "parameters": [
           {
@@ -28126,7 +28528,7 @@
           "List_Agent"
         ],
         "summary": "Save Ext App Entity",
-        "description": "Updates the existing ExtAppEntity or creates a new ExtAppEntity if the id\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing ExtAppEntity or creates a new ExtAppEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_SaveExtAppEntity",
         "parameters": [
           {
@@ -28486,7 +28888,7 @@
           "List_Agent"
         ],
         "summary": "Save Heading Entity",
-        "description": "Updates the existing HeadingEntity or creates a new HeadingEntity if the id\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing HeadingEntity or creates a new HeadingEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_SaveHeadingEntity",
         "parameters": [
           {
@@ -28996,7 +29398,7 @@
           "List_Agent"
         ],
         "summary": "Save Hierarchy Entity",
-        "description": "Updates the existing HierarchyEntity or creates a new HierarchyEntity if the id\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing HierarchyEntity or creates a new HierarchyEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_SaveHierarchyEntity",
         "parameters": [
           {
@@ -30758,7 +31160,7 @@
           "List_Agent"
         ],
         "summary": "Save Legal Base",
-        "description": "NsApiSlow threshold 5000 ms.",
+        "description": "NsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_SaveLegalBase",
         "parameters": [
           {
@@ -31773,7 +32175,7 @@
           "List_Agent"
         ],
         "summary": "Save List Entity",
-        "description": "Updates the existing ListEntity or creates a new ListEntity if the id parameter\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing ListEntity or creates a new ListEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_SaveListEntity",
         "parameters": [
           {
@@ -32825,7 +33227,7 @@
           "List_Agent"
         ],
         "summary": "Save Amount Class Entity",
-        "description": "Updates the existing AmountClassEntity or creates a new AmountClassEntity if\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing AmountClassEntity or creates a new AmountClassEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_SaveAmountClassEntity",
         "parameters": [
           {
@@ -33380,7 +33782,7 @@
           "List_Agent"
         ],
         "summary": "Get Need Category Update For Sale",
-        "description": "Before saving a sale, call this to see if the current changes on the sale\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Before saving a sale, call this to see if the current changes on the sale should result in a userconfirmation dialog asking to automatically update category on contact or person\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_GetNeedCategoryUpdateForSale",
         "parameters": [
           {
@@ -33530,7 +33932,7 @@
           "List_Agent"
         ],
         "summary": "Get Need Category Update For Person",
-        "description": "Before saving a person with changed leadstatus, call this to see if we should\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Before saving a person with changed leadstatus, call this to see if we should ask for a userconfirmation to automatically update category on contact or person\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_GetNeedCategoryUpdateForPerson",
         "parameters": [
           {
@@ -34423,7 +34825,7 @@
           "List_Agent"
         ],
         "summary": "Save Category Entity",
-        "description": "Updates the existing CategoryEntity or creates a new CategoryEntity if the id\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing CategoryEntity or creates a new CategoryEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_SaveCategoryEntity",
         "parameters": [
           {
@@ -35548,7 +35950,7 @@
           "List_Agent"
         ],
         "summary": "Save Task Menu",
-        "description": "Updates the existing TaskMenu or creates a new TaskMenu if the id parameter is\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing TaskMenu or creates a new TaskMenu if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_SaveTaskMenu",
         "parameters": [
           {
@@ -35850,7 +36252,7 @@
           "List_Agent"
         ],
         "summary": "Get App Task Menus",
-        "description": "Get all task menus owned by your app; works in Online only, for registered Apps\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Get all task menus owned by your app; works in Online only, for registered Apps that send a valid ApplicationToken\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_GetAppTaskMenus",
         "parameters": [
           {
@@ -35977,7 +36379,7 @@
           "List_Agent"
         ],
         "summary": "Delete App Task Menus",
-        "description": "Permanentely delete all task menus owned by your app; works in Online only, for\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Permanentely delete all task menus owned by your app; works in Online only, for registered Apps that send a valid ApplicationToken; otherwise nothing happens\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_DeleteAppTaskMenus",
         "parameters": [
           {
@@ -36437,7 +36839,7 @@
           "List_Agent"
         ],
         "summary": "Set Emarketing Strict Mode",
-        "description": "Turn on the Emarketing strict mode, which will enable full GDPR rules\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Turn on the Emarketing strict mode, which will enable full GDPR rules concerning Emarketing consents and subscriptions\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_SetEmarketingStrictMode",
         "parameters": [
           {
@@ -37070,7 +37472,7 @@
           "List_Agent"
         ],
         "summary": "Save Consent Source",
-        "description": "NsApiSlow threshold 5000 ms.",
+        "description": "NsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_SaveConsentSource",
         "parameters": [
           {
@@ -39574,7 +39976,7 @@
           "List_Agent"
         ],
         "summary": "Save Currency Entity",
-        "description": "Updates the existing CurrencyEntity or creates a new CurrencyEntity if the id\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing CurrencyEntity or creates a new CurrencyEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_SaveCurrencyEntity",
         "parameters": [
           {
@@ -40749,7 +41151,7 @@
           "List_Agent"
         ],
         "summary": "Get Customer Languages",
-        "description": "NsApiSlow threshold 5000 ms.",
+        "description": "NsApiSlow threshold: 5000 ms.",
         "operationId": "v1ListAgent_GetCustomerLanguages",
         "parameters": [
           {
@@ -41124,10 +41526,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -41149,18 +41551,8 @@
       }
     },
     "schemas": {
-      "SuperOffice.WebApi.v1.Carriers.ListCarriers.GetDocumentTemplateTaskRequest": {
-        "description": "GetDocumentTemplateTask: Returns a Document Template list item as a TaskListItem. The appointment's task is a Document template item when the appointment is a document.",
-        "type": "object",
-        "properties": {
-          "DocumentTemplateId": {
-            "format": "int32",
-            "type": "integer"
-          }
-        }
-      },
-      "SuperOffice.CRM.Services.SoTask": {
-        "description": "Type of an appointment\r\n<para />\r\nCarrier object for SoTask.\r\nServices for the SoTask Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IListAgent\">List Agent</see>.",
+      "SuperOffice.CRM.Services.Source": {
+        "description": "Source of a sale\r\n<para />\r\nCarrier object for Source.\r\nServices for the Source Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IListAgent\">List Agent</see>.",
         "type": "object",
         "properties": {
           "Id": {
@@ -41226,6 +41618,45 @@
           },
           "Reason": {
             "type": "string"
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.SoTask": {
+        "description": "Type of an appointment\r\n<para />\r\nCarrier object for SoTask.\r\nServices for the SoTask Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IListAgent\">List Agent</see>.",
+        "type": "object",
+        "properties": {
+          "Id": {
+            "format": "int32",
+            "description": "The List Item Id",
+            "type": "integer"
+          },
+          "Value": {
+            "description": "The List Item Value",
+            "type": "string"
+          },
+          "Tooltip": {
+            "description": "The List Item Tooltip",
+            "type": "string"
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "description": "Field property dictionary mapping field names to field access rights.",
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            }
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.ListCarriers.GetDocumentTemplateTaskRequest": {
+        "description": "GetDocumentTemplateTask: Returns a Document Template list item as a TaskListItem. The appointment's task is a Document template item when the appointment is a document.",
+        "type": "object",
+        "properties": {
+          "DocumentTemplateId": {
+            "format": "int32",
+            "type": "integer"
           }
         }
       },
@@ -41404,11 +41835,11 @@
             "type": "integer"
           },
           "Name": {
-            "description": "The (short) name of this category. E.g. &amp;apos;support&amp;apos;.",
+            "description": "The (short) name of this category. E.g. &apos;support&apos;.",
             "type": "string"
           },
           "Fullname": {
-            "description": "The fullname (compiled from parents&amp;apos; names) for this category. E.g. &amp;apos;norway/product A/support&amp;apos;.",
+            "description": "The fullname (compiled from parents&apos; names) for this category. E.g. &apos;norway/product A/support&apos;.",
             "type": "string"
           },
           "CategoryMaster": {
@@ -41533,7 +41964,7 @@
             "type": "string"
           },
           "Status": {
-            "description": "The &amp;apos;classic&amp;apos; ticket status. I.e. active/closed/postponed/deleted",
+            "description": "The &apos;classic&apos; ticket status. I.e. active/closed/postponed/deleted",
             "enum": [
               "Unknown",
               "Active",
@@ -42805,6 +43236,101 @@
           }
         }
       },
+      "SuperOffice.CRM.Services.PictureFolderEntity": {
+        "description": "Picture/mailing folder (s_picture_folder)\r\n<para />\r\nCarrier object for PictureFolderEntity.\r\nServices for the PictureFolderEntity Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IListAgent\">List Agent</see>.",
+        "type": "object",
+        "properties": {
+          "SPictureFolderId": {
+            "format": "int32",
+            "description": "Primary key",
+            "type": "integer"
+          },
+          "Name": {
+            "description": "Name of folder",
+            "type": "string"
+          },
+          "ParentId": {
+            "format": "int32",
+            "description": "The parent id for this folder. -1 for root folders",
+            "type": "integer"
+          },
+          "Description": {
+            "description": "A description of the folder",
+            "type": "string"
+          },
+          "FolderType": {
+            "format": "int32",
+            "description": "Indicates which type of folder this is",
+            "type": "integer"
+          },
+          "Children": {
+            "description": "Sub-folders, if any.",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.PictureFolderEntity"
+            }
+          },
+          "Registered": {
+            "format": "date-time",
+            "description": "Registered when  in UTC.",
+            "type": "string"
+          },
+          "RegisteredAssociateId": {
+            "format": "int32",
+            "description": "Registered by whom",
+            "type": "integer"
+          },
+          "Updated": {
+            "format": "date-time",
+            "description": "Last updated when  in UTC.",
+            "type": "string"
+          },
+          "UpdatedAssociateId": {
+            "format": "int32",
+            "description": "Last updated by whom",
+            "type": "integer"
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "description": "Field property dictionary mapping field names to field access rights.",
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            }
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.Position": {
+        "description": "Carrier object for Position.\r\nServices for the Position Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IListAgent\">List Agent</see>.",
+        "type": "object",
+        "properties": {
+          "Id": {
+            "format": "int32",
+            "description": "The List Item Id",
+            "type": "integer"
+          },
+          "Value": {
+            "description": "The List Item Value",
+            "type": "string"
+          },
+          "Tooltip": {
+            "description": "The List Item Tooltip",
+            "type": "string"
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "description": "Field property dictionary mapping field names to field access rights.",
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            }
+          }
+        }
+      },
       "SuperOffice.CRM.Services.Priority": {
         "description": "Carrier object for Priority.\r\nServices for the Priority Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IListAgent\">List Agent</see>.",
         "type": "object",
@@ -43036,7 +43562,7 @@
             "type": "integer"
           },
           "Deleted": {
-            "description": "0 -&gt; record is active 1 -&gt; record is 'deleted' and should not be shown in lists",
+            "description": "0 -> record is active 1 -> record is 'deleted' and should not be shown in lists",
             "type": "boolean"
           },
           "HasGuide": {
@@ -43605,7 +44131,7 @@
             "type": "integer"
           },
           "Deleted": {
-            "description": "0 -&gt; record is active 1 -&gt; record is 'deleted' and should not be shown in lists",
+            "description": "0 -> record is active 1 -> record is 'deleted' and should not be shown in lists",
             "type": "boolean"
           },
           "HasGuide": {
@@ -43697,35 +44223,6 @@
       },
       "SuperOffice.CRM.Services.SelectionCategory": {
         "description": "Carrier object for SelectionCategory.\r\nServices for the SelectionCategory Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IListAgent\">List Agent</see>.",
-        "type": "object",
-        "properties": {
-          "Id": {
-            "format": "int32",
-            "description": "The List Item Id",
-            "type": "integer"
-          },
-          "Value": {
-            "description": "The List Item Value",
-            "type": "string"
-          },
-          "Tooltip": {
-            "description": "The List Item Tooltip",
-            "type": "string"
-          },
-          "TableRight": {
-            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
-          },
-          "FieldProperties": {
-            "description": "Field property dictionary mapping field names to field access rights.",
-            "type": "object",
-            "additionalProperties": {
-              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
-            }
-          }
-        }
-      },
-      "SuperOffice.CRM.Services.Source": {
-        "description": "Source of a sale\r\n<para />\r\nCarrier object for Source.\r\nServices for the Source Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IListAgent\">List Agent</see>.",
         "type": "object",
         "properties": {
           "Id": {
@@ -44808,35 +45305,6 @@
           }
         }
       },
-      "SuperOffice.CRM.Services.Position": {
-        "description": "Carrier object for Position.\r\nServices for the Position Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IListAgent\">List Agent</see>.",
-        "type": "object",
-        "properties": {
-          "Id": {
-            "format": "int32",
-            "description": "The List Item Id",
-            "type": "integer"
-          },
-          "Value": {
-            "description": "The List Item Value",
-            "type": "string"
-          },
-          "Tooltip": {
-            "description": "The List Item Tooltip",
-            "type": "string"
-          },
-          "TableRight": {
-            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
-          },
-          "FieldProperties": {
-            "description": "Field property dictionary mapping field names to field access rights.",
-            "type": "object",
-            "additionalProperties": {
-              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
-            }
-          }
-        }
-      },
       "SuperOffice.CRM.Services.DeliveryType": {
         "description": "The built-in delivery types list. Used by the SuperOffice Quote Connector in quote versions.\r\n<para />\r\nCarrier object for DeliveryType.\r\nServices for the DeliveryType Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IListAgent\">List Agent</see>.",
         "type": "object",
@@ -44943,7 +45411,7 @@
           },
           "Deleted": {
             "format": "int32",
-            "description": "0 -&gt; record is active 1 -&gt; record is 'deleted' and should not be shown in lists",
+            "description": "0 -> record is active 1 -> record is 'deleted' and should not be shown in lists",
             "type": "integer"
           },
           "Direction": {
@@ -45337,7 +45805,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.ListCarriers.GetPluginCapabilitiesRequest": {
-        "description": "GetPluginCapabilities: Get a list of plugin-dependent capabilities for a given document archive plugin.&lt;br/&gt;A standard set of properties is defined in SuperOffice.CRM.Documents.Constants.Capabilities.",
+        "description": "GetPluginCapabilities: Get a list of plugin-dependent capabilities for a given document archive plugin.<br/>A standard set of properties is defined in SuperOffice.CRM.Documents.Constants.Capabilities.",
         "type": "object",
         "properties": {
           "PluginId": {
@@ -45406,7 +45874,7 @@
             "type": "string"
           },
           "Parameters": {
-            "description": "&lt;template variable&gt; &lt;other template variable&gt;",
+            "description": "<template variable> <other template variable>",
             "type": "string"
           },
           "Workdir": {
@@ -46056,7 +46524,7 @@
             "type": "number"
           },
           "Deleted": {
-            "description": "0 -&gt; record is active 1 -&gt; record is 'deleted' and should not be shown in lists",
+            "description": "0 -> record is active 1 -> record is 'deleted' and should not be shown in lists",
             "type": "boolean"
           },
           "CurrencyId": {
@@ -46846,7 +47314,7 @@
             "type": "number"
           },
           "Deleted": {
-            "description": "0 -&gt; record is active 1 -&gt; record is 'deleted' and should not be shown in lists",
+            "description": "0 -> record is active 1 -> record is 'deleted' and should not be shown in lists",
             "type": "boolean"
           },
           "TableRight": {

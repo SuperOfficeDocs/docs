@@ -236,7 +236,7 @@
           "Project_Agent"
         ],
         "summary": "Save Project Entity",
-        "description": "Updates the existing ProjectEntity or creates a new ProjectEntity if the id\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Updates the existing ProjectEntity or creates a new ProjectEntity if the id parameter is 0.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1ProjectAgent_SaveProjectEntity",
         "parameters": [
           {
@@ -1781,7 +1781,7 @@
           "Project_Agent"
         ],
         "summary": "Has Guide",
-        "description": "Does this project have a guide associated with its project type\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Does this project have a guide associated with its project type?\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1ProjectAgent_HasGuide",
         "parameters": [
           {
@@ -2081,7 +2081,7 @@
           "Project_Agent"
         ],
         "summary": "Offer Auto Next Status On Apppointment Completed",
-        "description": "NsApiSlow threshold 2000 ms.",
+        "description": "NsApiSlow threshold: 2000 ms.",
         "operationId": "v1ProjectAgent_OfferAutoNextStatusOnApppointmentCompleted",
         "parameters": [
           {
@@ -2231,7 +2231,7 @@
           "Project_Agent"
         ],
         "summary": "Get Next Project Status",
-        "description": "NsApiSlow threshold 2000 ms.",
+        "description": "NsApiSlow threshold: 2000 ms.",
         "operationId": "v1ProjectAgent_GetNextProjectStatus",
         "parameters": [
           {
@@ -2387,7 +2387,7 @@
           "Project_Agent"
         ],
         "summary": "Has Guide Activities",
-        "description": "NsApiSlow threshold 2000 ms.",
+        "description": "NsApiSlow threshold: 2000 ms.",
         "operationId": "v1ProjectAgent_HasGuideActivities",
         "parameters": [
           {
@@ -3565,7 +3565,7 @@
           "Project_Agent"
         ],
         "summary": "Save Project Event Entity",
-        "description": "Updates the existing ProjectEventEntity or creates a new ProjectEventEntity if\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Updates the existing ProjectEventEntity or creates a new ProjectEventEntity if the id parameter is 0.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1ProjectAgent_SaveProjectEventEntity",
         "parameters": [
           {
@@ -6130,7 +6130,7 @@
           "Project_Agent"
         ],
         "summary": "Save Project Member",
-        "description": "Updates the existing ProjectMember or creates a new ProjectMember if the id\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Updates the existing ProjectMember or creates a new ProjectMember if the id parameter is 0.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1ProjectAgent_SaveProjectMember",
         "parameters": [
           {
@@ -7084,10 +7084,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -8145,7 +8145,7 @@
           },
           "ActiveDate": {
             "format": "date-time",
-            "description": "The date to be used for searching &amp; showing",
+            "description": "The date to be used for searching & showing",
             "type": "string"
           },
           "AssignmentStatus": {
@@ -8894,7 +8894,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.ProjectCarriers.UpdateProjectMembersRequest": {
-        "description": "UpdateProjectMembers: Update existing project members. Not creating new (only projectmember_id &gt; 0 accepted)",
+        "description": "UpdateProjectMembers: Update existing project members. Not creating new (only projectmember_id > 0 accepted)",
         "type": "object",
         "properties": {
           "ProjectId": {

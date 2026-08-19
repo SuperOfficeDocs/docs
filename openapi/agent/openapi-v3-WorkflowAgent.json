@@ -117,7 +117,7 @@
           "Workflow_Agent"
         ],
         "summary": "Save Email Flow",
-        "description": "Updates the existing EmailFlow or creates a new EmailFlow if the id parameter\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Updates the existing EmailFlow or creates a new EmailFlow if the id parameter is 0.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1WorkflowAgent_SaveEmailFlow",
         "parameters": [
           {
@@ -1063,7 +1063,7 @@
           "Workflow_Agent"
         ],
         "summary": "Update Form Submissions",
-        "description": "Attempt to update stored field values for up to the given number of form\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Attempt to update stored field values for up to the given number of form submissions\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1WorkflowAgent_UpdateFormSubmissions",
         "parameters": [
           {
@@ -2335,7 +2335,7 @@
           "Workflow_Agent"
         ],
         "summary": "Save Workflow Goal",
-        "description": "Updates the existing WorkflowGoal or creates a new WorkflowGoal if the id\n\nNsApiSlow threshold: 1500 ms.",
+        "description": "Updates the existing WorkflowGoal or creates a new WorkflowGoal if the id parameter is 0.\n\nNsApiSlow threshold: 1500 ms.",
         "operationId": "v1WorkflowAgent_SaveWorkflowGoal",
         "parameters": [
           {
@@ -2787,7 +2787,7 @@
           "Workflow_Agent"
         ],
         "summary": "Add After Workflow Step",
-        "description": "Add another step (and any of its substeps) after the given step id (which must\n\nNsApiSlow threshold: 3000 ms.",
+        "description": "Add another step (and any of its substeps) after the given step id (which must exist), and move any following steps in the workflow further down the line.\n\nNsApiSlow threshold: 3000 ms.",
         "operationId": "v1WorkflowAgent_AddAfterWorkflowStep",
         "parameters": [
           {
@@ -2937,7 +2937,7 @@
           "Workflow_Agent"
         ],
         "summary": "Create Default Workflow Step From Type",
-        "description": "Creates a new carrier from the step type given, with the right kind of\n\nNsApiSlow threshold: 3000 ms.",
+        "description": "Creates a new carrier from the step type given, with the right kind of properties, defaults set.\n\nNsApiSlow threshold: 3000 ms.",
         "operationId": "v1WorkflowAgent_CreateDefaultWorkflowStepFromType",
         "parameters": [
           {
@@ -3087,7 +3087,7 @@
           "Workflow_Agent"
         ],
         "summary": "Create Default Workflow Step Option From Type",
-        "description": "Creates a new carrier from the option type given, with the right kind of\n\nNsApiSlow threshold: 1000 ms.",
+        "description": "Creates a new carrier from the option type given, with the right kind of properties, defaults set.\n\nNsApiSlow threshold: 1000 ms.",
         "operationId": "v1WorkflowAgent_CreateDefaultWorkflowStepOptionFromType",
         "parameters": [
           {
@@ -3487,7 +3487,7 @@
           "Workflow_Agent"
         ],
         "summary": "Save Workflow Trigger",
-        "description": "Updates the existing WorkflowTrigger or creates a new WorkflowTrigger if the id\n\nNsApiSlow threshold: 1000 ms.",
+        "description": "Updates the existing WorkflowTrigger or creates a new WorkflowTrigger if the id parameter is 0.\n\nNsApiSlow threshold: 1000 ms.",
         "operationId": "v1WorkflowAgent_SaveWorkflowTrigger",
         "parameters": [
           {
@@ -3889,7 +3889,7 @@
           "Workflow_Agent"
         ],
         "summary": "Save Workflow Wait For Action",
-        "description": "Updates the existing WorkflowWaitForAction or creates a new\n\nNsApiSlow threshold: 1000 ms.",
+        "description": "Updates the existing WorkflowWaitForAction or creates a new WorkflowWaitForAction if the id parameter is 0.\n\nNsApiSlow threshold: 1000 ms.",
         "operationId": "v1WorkflowAgent_SaveWorkflowWaitForAction",
         "parameters": [
           {
@@ -4193,10 +4193,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -5027,7 +5027,7 @@
             "type": "boolean"
           },
           "ExtraInfo": {
-            "description": "Example: \"navigator\" -&gt; Should this column be mapped to a hyperlinked navigator text type?",
+            "description": "Example: \"navigator\" -> Should this column be mapped to a hyperlinked navigator text type?",
             "type": "string"
           },
           "Width": {

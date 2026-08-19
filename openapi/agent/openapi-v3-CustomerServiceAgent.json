@@ -1724,7 +1724,7 @@
           "CustomerService_Agent"
         ],
         "summary": "Report Session Active",
-        "description": "Report a session as being 'active'; will update the corresponding row in login\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Report a session as being 'active'; will update the corresponding row in login table, but not more than once per minute/session\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1CustomerServiceAgent_ReportSessionActive",
         "parameters": [
           {
@@ -1980,7 +1980,7 @@
           "CustomerService_Agent"
         ],
         "summary": "Save Customer Center Config",
-        "description": "Updates the existing CustomerCenterConfig or creates a new CustomerCenterConfig\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing CustomerCenterConfig or creates a new CustomerCenterConfig if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1CustomerServiceAgent_SaveCustomerCenterConfig",
         "parameters": [
           {
@@ -3009,7 +3009,7 @@
           "CustomerService_Agent"
         ],
         "summary": "Get Customer Service Startup By Owner",
-        "description": "Get the carrier with data that Service needs when starting up for a specific\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Get the carrier with data that Service needs when starting up for a specific user\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1CustomerServiceAgent_GetCustomerServiceStartupByOwner",
         "parameters": [
           {
@@ -3536,7 +3536,7 @@
           "CustomerService_Agent"
         ],
         "summary": "Save Mailbox Entity",
-        "description": "Updates the existing MailboxEntity or creates a new MailboxEntity if the id\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing MailboxEntity or creates a new MailboxEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1CustomerServiceAgent_SaveMailboxEntity",
         "parameters": [
           {
@@ -4246,7 +4246,7 @@
           "CustomerService_Agent"
         ],
         "summary": "Get Parsed Template",
-        "description": "Get a specific langauge version of the reply template, and run this trough the\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Get a specific langauge version of the reply template, and run this trough the parser\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1CustomerServiceAgent_GetParsedTemplate",
         "parameters": [
           {
@@ -4655,7 +4655,7 @@
           "CustomerService_Agent"
         ],
         "summary": "Test Smtp Server",
-        "description": "This method will do a test of a SMTP account, by sending an email to a special\n\ncom account\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "This method will do a test of a SMTP account, by sending an email to a special @superoffice.\n\ncom account\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1CustomerServiceAgent_TestSmtpServer",
         "parameters": [
           {
@@ -4805,7 +4805,7 @@
           "CustomerService_Agent"
         ],
         "summary": "Get Statistics",
-        "description": "Returns the calculated results for the required statistics for the Customer\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Returns the calculated results for the required statistics for the Customer Service Status Page\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1CustomerServiceAgent_GetStatistics",
         "parameters": [
           {
@@ -5232,7 +5232,7 @@
           "CustomerService_Agent"
         ],
         "summary": "Create Ticket From Mail Data",
-        "description": "This method create a new ticket in the same way as importMail would import an\n\nIt accepts RFC822 formatted data\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "This method create a new ticket in the same way as importMail would import an email.\n\nIt accepts RFC822 formatted data\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1CustomerServiceAgent_CreateTicketFromMailData",
         "parameters": [
           {
@@ -5382,7 +5382,7 @@
           "CustomerService_Agent"
         ],
         "summary": "Add Message From Mail Data",
-        "description": "This method will add a message to an existing request in the sam way as\n\nIt accepts RFC822 formatted data\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "This method will add a message to an existing request in the sam way as importMail would do it from an email.\n\nIt accepts RFC822 formatted data\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1CustomerServiceAgent_AddMessageFromMailData",
         "parameters": [
           {
@@ -5702,10 +5702,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -6937,7 +6937,7 @@
             "type": "string"
           },
           "ContentType": {
-            "description": "The content type for the attachment (e.g. &amp;apos;applaction/octet-stream&amp;apos; or &amp;apos;application/vnd.openxmlformats-officedocument.wordprocessingml.document&amp;apos;).",
+            "description": "The content type for the attachment (e.g. &apos;applaction/octet-stream&apos; or &apos;application/vnd.openxmlformats-officedocument.wordprocessingml.document&apos;).",
             "type": "string"
           },
           "AttSize": {

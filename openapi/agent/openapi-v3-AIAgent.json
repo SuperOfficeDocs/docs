@@ -467,7 +467,7 @@
           "AI_Agent"
         ],
         "summary": "Create Text For Appointment",
-        "description": "Generate agenda text for an appointment based on appointment's company\n\nNsApiSlow threshold: 2000 ms.\r\n<para />## Experimental: ## The AI agent is experimental, subject to change, and not intended for partners.",
+        "description": "Generate agenda text for an appointment based on appointment's company category, title, person, etc.\n\nNsApiSlow threshold: 2000 ms.\r\n<para />## Experimental: ## The AI agent is experimental, subject to change, and not intended for partners.",
         "operationId": "v1AIAgent_CreateTextForAppointment",
         "parameters": [
           {
@@ -1182,7 +1182,7 @@
           "AI_Agent"
         ],
         "summary": "Train Category Guesser",
-        "description": "The category guesser training API will be called with an array of\n\nNsApiSlow threshold: 2000 ms.\r\n<para />## Experimental: ## The AI agent is experimental, subject to change, and not intended for partners.",
+        "description": "The category guesser training API will be called with an array of CategorizationTrainingItem during the (background, Batch) execution of this call\n\nNsApiSlow threshold: 2000 ms.\r\n<para />## Experimental: ## The AI agent is experimental, subject to change, and not intended for partners.",
         "operationId": "v1AIAgent_TrainCategoryGuesser",
         "parameters": [
           {
@@ -1482,7 +1482,7 @@
           "AI_Agent"
         ],
         "summary": "Get Chatbot Prompt Suggestions",
-        "description": "Return one or more suggested prompts as actions to display in an empty chat\n\nNsApiSlow threshold: 2000 ms.\r\n<para />## Experimental: ## The AI agent is experimental, subject to change, and not intended for partners.",
+        "description": "Return one or more suggested prompts as actions to display in an empty chat window\n\nNsApiSlow threshold: 2000 ms.\r\n<para />## Experimental: ## The AI agent is experimental, subject to change, and not intended for partners.",
         "operationId": "v1AIAgent_GetChatbotPromptSuggestions",
         "parameters": [
           {
@@ -1982,7 +1982,7 @@
           "AI_Agent"
         ],
         "summary": "Save Copilot Data Source Entity",
-        "description": "Updates the existing CopilotDataSourceEntity or creates a new\n\nNsApiSlow threshold: 1000 ms.\r\n<para />## Experimental: ## The AI agent is experimental, subject to change, and not intended for partners.",
+        "description": "Updates the existing CopilotDataSourceEntity or creates a new CopilotDataSourceEntity if the id parameter is 0.\n\nNsApiSlow threshold: 1000 ms.\r\n<para />## Experimental: ## The AI agent is experimental, subject to change, and not intended for partners.",
         "operationId": "v1AIAgent_SaveCopilotDataSourceEntity",
         "parameters": [
           {
@@ -2384,7 +2384,7 @@
           "AI_Agent"
         ],
         "summary": "Save Copilot Entity",
-        "description": "Updates the existing CopilotEntity or creates a new CopilotEntity if the id\n\nNsApiSlow threshold: 1000 ms.\r\n<para />## Experimental: ## The AI agent is experimental, subject to change, and not intended for partners.",
+        "description": "Updates the existing CopilotEntity or creates a new CopilotEntity if the id parameter is 0.\n\nNsApiSlow threshold: 1000 ms.\r\n<para />## Experimental: ## The AI agent is experimental, subject to change, and not intended for partners.",
         "operationId": "v1AIAgent_SaveCopilotEntity",
         "parameters": [
           {
@@ -3322,7 +3322,7 @@
           "AI_Agent"
         ],
         "summary": "Get First Form Design Css From Image",
-        "description": "Starts a form design analysis from an image, returning the properties for a\n\nNsApiSlow threshold: 20000 ms.\r\n<para />## Experimental: ## The AI agent is experimental, subject to change, and not intended for partners.",
+        "description": "Starts a form design analysis from an image, returning the properties for a single CSS class.\n\nNsApiSlow threshold: 20000 ms.\r\n<para />## Experimental: ## The AI agent is experimental, subject to change, and not intended for partners.",
         "operationId": "v1AIAgent_GetFirstFormDesignCssFromImage",
         "parameters": [
           {
@@ -3472,7 +3472,7 @@
           "AI_Agent"
         ],
         "summary": "Get First Form Design Css From Url",
-        "description": "Starts a form design analysis from a URL, returning the properties for a single\n\nNsApiSlow threshold: 20000 ms.\r\n<para />## Experimental: ## The AI agent is experimental, subject to change, and not intended for partners.",
+        "description": "Starts a form design analysis from a URL, returning the properties for a single CSS class.\n\nNsApiSlow threshold: 20000 ms.\r\n<para />## Experimental: ## The AI agent is experimental, subject to change, and not intended for partners.",
         "operationId": "v1AIAgent_GetFirstFormDesignCssFromUrl",
         "parameters": [
           {
@@ -4936,7 +4936,7 @@
           "AI_Agent"
         ],
         "summary": "Answer Feedback",
-        "description": "Send feedback on answer - feedback is logged and used to improve the answer\n\nNsApiSlow threshold: 1000 ms.\r\n<para />## Experimental: ## The AI agent is experimental, subject to change, and not intended for partners.",
+        "description": "Send feedback on answer - feedback is logged and used to improve the answer algorithm.\n\nNsApiSlow threshold: 1000 ms.\r\n<para />## Experimental: ## The AI agent is experimental, subject to change, and not intended for partners.",
         "operationId": "v1AIAgent_AnswerFeedback",
         "parameters": [
           {
@@ -5018,7 +5018,7 @@
           "AI_Agent"
         ],
         "summary": "Answer Accepted",
-        "description": "Signal that answer was inserted into response- feedback is logged and used to\n\nNsApiSlow threshold: 1000 ms.\r\n<para />## Experimental: ## The AI agent is experimental, subject to change, and not intended for partners.",
+        "description": "Signal that answer was inserted into response- feedback is logged and used to improve the answer algorithm.\n\nNsApiSlow threshold: 1000 ms.\r\n<para />## Experimental: ## The AI agent is experimental, subject to change, and not intended for partners.",
         "operationId": "v1AIAgent_AnswerAccepted",
         "parameters": [
           {
@@ -6776,10 +6776,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -7079,7 +7079,7 @@
           },
           "ActiveDate": {
             "format": "date-time",
-            "description": "The date to be used for searching &amp; showing",
+            "description": "The date to be used for searching & showing",
             "type": "string"
           },
           "HasConflict": {
@@ -7482,7 +7482,7 @@
             "$ref": "#/components/schemas/SuperOffice.CRM.Services.StructuredAddress"
           },
           "Formatted": {
-            "description": "Read-only formatted address multi-line string. Combines street and postal into one string. e.g.: &lt;c&gt;\"Postboks 123,\\nBrugata 123,\\n1234 OSLO\\n\"&lt;/c&gt; or &lt;c&gt;\"Postbox 123,\\nBridgelane 123,\\nWest Tooting,\\nEast Shire ES2 W31\\n\"&lt;/c&gt;.",
+            "description": "Read-only formatted address multi-line string. Combines street and postal into one string. e.g.: <c>\"Postboks 123,\\nBrugata 123,\\n1234 OSLO\\n\"</c> or <c>\"Postbox 123,\\nBridgelane 123,\\nWest Tooting,\\nEast Shire ES2 W31\\n\"</c>.",
             "type": "string"
           },
           "TableRight": {
@@ -7583,7 +7583,7 @@
             "type": "string"
           },
           "Formatted": {
-            "description": "Read-only formatted address multi-line string. e.g.: &lt;c&gt;\"Brugata 123,\\n1234 OSLO\\n\"&lt;/c&gt; or &lt;c&gt;\"Bridgelane 123,\\nWest Tooting,\\nThe Shire ES2 W31\\n\"&lt;/c&gt;.",
+            "description": "Read-only formatted address multi-line string. e.g.: <c>\"Brugata 123,\\n1234 OSLO\\n\"</c> or <c>\"Bridgelane 123,\\nWest Tooting,\\nThe Shire ES2 W31\\n\"</c>.",
             "type": "string"
           }
         }
@@ -10521,7 +10521,7 @@
             "type": "boolean"
           },
           "ExtraInfo": {
-            "description": "Example: \"navigator\" -&gt; Should this column be mapped to a hyperlinked navigator text type?",
+            "description": "Example: \"navigator\" -> Should this column be mapped to a hyperlinked navigator text type?",
             "type": "string"
           },
           "Width": {

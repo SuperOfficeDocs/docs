@@ -185,7 +185,7 @@
           "Appointment_Agent"
         ],
         "summary": "Get Project Appointments By Type",
-        "description": "Method that returns a specified number of appointments of a specific\n\nThe appointments belong to the project specified.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of appointments of a specific appointment type within a time range.\n\nThe appointments belong to the project specified.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_GetProjectAppointmentsByType",
         "parameters": [
           {
@@ -521,7 +521,7 @@
           "Appointment_Agent"
         ],
         "summary": "Get Contact Appointments By Type",
-        "description": "Method that returns a specified number of appointments of a specific\n\nThe appointments belong to the contact specified. If the logged on user is not allowed to view this contacts appointments an exception is thrown.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of appointments of a specific appointment type within a time range.\n\nThe appointments belong to the contact specified. If the logged on user is not allowed to view this contacts appointments an exception is thrown.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_GetContactAppointmentsByType",
         "parameters": [
           {
@@ -857,7 +857,7 @@
           "Appointment_Agent"
         ],
         "summary": "Get Project Member Appointments By Type",
-        "description": "Method that returns a specified number of appointments of a specific\n\nThe appointments belong to the projects where the person specified is member.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of appointments of a specific appointment type within a time range.\n\nThe appointments belong to the projects where the person specified is member.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_GetProjectMemberAppointmentsByType",
         "parameters": [
           {
@@ -1025,7 +1025,7 @@
           "Appointment_Agent"
         ],
         "summary": "Get Person Appointments By Task",
-        "description": "Method that returns a specified number of appointments of a specific\n\nThe appointments belong to the person specified.  Task represents the different types of activities, like “Phone call”, “Meeting” and so on.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of appointments of a specific appointment task type within a time range.\n\nThe appointments belong to the person specified.  Task represents the different types of activities, like “Phone call”, “Meeting” and so on.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_GetPersonAppointmentsByTask",
         "parameters": [
           {
@@ -1193,7 +1193,7 @@
           "Appointment_Agent"
         ],
         "summary": "Get Person Appointments By Tasks",
-        "description": "Method that returns a specified number of appointments from a list of\n\nThe appointments belong to the person specified.  Task represents the different types of activities, like “Phone call”, “Meeting” and so on.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of appointments from a list of appointment task types within a time range.\n\nThe appointments belong to the person specified.  Task represents the different types of activities, like “Phone call”, “Meeting” and so on.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_GetPersonAppointmentsByTasks",
         "parameters": [
           {
@@ -1361,7 +1361,7 @@
           "Appointment_Agent"
         ],
         "summary": "Get Person Appointments By Task Heading",
-        "description": "Method that returns a specified number of appointments of a specific\n\nThe appointments belong to the person specified.  Task represents the different types of activities, like “Phone call”, “Meeting” and so on. The heading represents a grouping or filtering of tasks.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of appointments of a specific appointment task heading within a time range.\n\nThe appointments belong to the person specified.  Task represents the different types of activities, like “Phone call”, “Meeting” and so on. The heading represents a grouping or filtering of tasks.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_GetPersonAppointmentsByTaskHeading",
         "parameters": [
           {
@@ -1529,7 +1529,7 @@
           "Appointment_Agent"
         ],
         "summary": "Get Project Appointments By Task",
-        "description": "Method that returns a specified number of appointments of a specific\n\nThe appointments belong to the project specified.  Task represents the different types of activities, like “Phone call”, “Meeting” and so on.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of appointments of a specific appointment task type within a time range.\n\nThe appointments belong to the project specified.  Task represents the different types of activities, like “Phone call”, “Meeting” and so on.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_GetProjectAppointmentsByTask",
         "parameters": [
           {
@@ -1697,7 +1697,7 @@
           "Appointment_Agent"
         ],
         "summary": "Get Project Appointments By Tasks",
-        "description": "Method that returns a specified number of appointments matching the list of\n\nThe appointments belong to the project specified.  Task represents the different types of activities, like “Phone call”, “Meeting” and so on.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of appointments matching the list of appointment task types within a time range.\n\nThe appointments belong to the project specified.  Task represents the different types of activities, like “Phone call”, “Meeting” and so on.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_GetProjectAppointmentsByTasks",
         "parameters": [
           {
@@ -1865,7 +1865,7 @@
           "Appointment_Agent"
         ],
         "summary": "Get Project Appointments By Task Heading",
-        "description": "Method that returns a specified number of appointments of a specific\n\nThe appointments belong to the project specified.  Task represents the different types of activities, like “Phone call”, “Meeting” and so on. The heading represents a grouping or filtering of tasks.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of appointments of a specific appointment task heading within a time range.\n\nThe appointments belong to the project specified.  Task represents the different types of activities, like “Phone call”, “Meeting” and so on. The heading represents a grouping or filtering of tasks.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_GetProjectAppointmentsByTaskHeading",
         "parameters": [
           {
@@ -2033,7 +2033,7 @@
           "Appointment_Agent"
         ],
         "summary": "Get Project Member Appointments By Task",
-        "description": "Method that returns a specified number of appointments of a specific\n\nThe appointments belong to the projects where the person specified is member. Task represents the different types of activities, like “Phone call”, “Meeting” and so on.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of appointments of a specific appointment task type within a time range.\n\nThe appointments belong to the projects where the person specified is member. Task represents the different types of activities, like “Phone call”, “Meeting” and so on.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_GetProjectMemberAppointmentsByTask",
         "parameters": [
           {
@@ -2201,7 +2201,7 @@
           "Appointment_Agent"
         ],
         "summary": "Get Project Member Appointments By Tasks",
-        "description": "Method that returns a specified number of appointments matching a set of\n\nThe appointments belong to the projects where the person specified is member. Task represents the different types of activities, like “Phone call”, “Meeting” and so on.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of appointments matching a set of appointment task types within a time range.\n\nThe appointments belong to the projects where the person specified is member. Task represents the different types of activities, like “Phone call”, “Meeting” and so on.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_GetProjectMemberAppointmentsByTasks",
         "parameters": [
           {
@@ -2369,7 +2369,7 @@
           "Appointment_Agent"
         ],
         "summary": "Get Project Member Appointments By Task Heading",
-        "description": "Method that returns a specified number of appointments of a specific\n\nThe appointments belong to the projects where the person specified is member. Task represents the different types of activities, like “Phone call”, “Meeting” and so on. The heading represents a grouping or filtering of tasks.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of appointments of a specific appointment task heading within a time range.\n\nThe appointments belong to the projects where the person specified is member. Task represents the different types of activities, like “Phone call”, “Meeting” and so on. The heading represents a grouping or filtering of tasks.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_GetProjectMemberAppointmentsByTaskHeading",
         "parameters": [
           {
@@ -2537,7 +2537,7 @@
           "Appointment_Agent"
         ],
         "summary": "Get Contact Appointments By Task",
-        "description": "Method that returns a specified number of appointments of a specific\n\nThe appointments belong to the contact specified. Task represents the different types of activities, like “Phone call”, “Meeting” and so on.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of appointments of a specific appointment task type within a time range.\n\nThe appointments belong to the contact specified. Task represents the different types of activities, like “Phone call”, “Meeting” and so on.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_GetContactAppointmentsByTask",
         "parameters": [
           {
@@ -2705,7 +2705,7 @@
           "Appointment_Agent"
         ],
         "summary": "Get Contact Appointments By Tasks",
-        "description": "Method that returns a specified number of appointments belonging to an array of\n\nThe appointments belong to the contact specified. Task represents the different types of activities, like “Phone call”, “Meeting” and so on.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of appointments belonging to an array of appointment task types within a time range.\n\nThe appointments belong to the contact specified. Task represents the different types of activities, like “Phone call”, “Meeting” and so on.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_GetContactAppointmentsByTasks",
         "parameters": [
           {
@@ -2873,7 +2873,7 @@
           "Appointment_Agent"
         ],
         "summary": "Get Contact Appointments By Task Heading",
-        "description": "Method that returns a specified number of appointments of a specific\n\nThe appointments belong to the contact specified. Task represents the different types of activities, like “Phone call”, “Meeting” and so on. The heading represents a grouping or filtering of tasks.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of appointments of a specific appointment task heading within a time range.\n\nThe appointments belong to the contact specified. Task represents the different types of activities, like “Phone call”, “Meeting” and so on. The heading represents a grouping or filtering of tasks.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_GetContactAppointmentsByTaskHeading",
         "parameters": [
           {
@@ -3822,7 +3822,7 @@
           "Appointment_Agent"
         ],
         "summary": "Get Associate Diary",
-        "description": "NsApiSlow threshold 2000 ms.",
+        "description": "NsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_GetAssociateDiary",
         "parameters": [
           {
@@ -3990,7 +3990,7 @@
           "Appointment_Agent"
         ],
         "summary": "Get Diary By Group",
-        "description": "NsApiSlow threshold 2000 ms.",
+        "description": "NsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_GetDiaryByGroup",
         "parameters": [
           {
@@ -4308,7 +4308,7 @@
           "Appointment_Agent"
         ],
         "summary": "Update Appointment With Mode",
-        "description": "Updates an appointment record, taking the given recurrence update mode into\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Updates an appointment record, taking the given recurrence update mode into account.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_UpdateAppointmentWithMode",
         "parameters": [
           {
@@ -4458,7 +4458,7 @@
           "Appointment_Agent"
         ],
         "summary": "Update Appointment With Mode And Email",
-        "description": "Updates an appointment record, taking the given recurrence update mode into\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Updates an appointment record, taking the given recurrence update mode into account, possibly sending notification emails.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_UpdateAppointmentWithModeAndEmail",
         "parameters": [
           {
@@ -5280,7 +5280,7 @@
           "Appointment_Agent"
         ],
         "summary": "Get Day Information List By Dates And Associate",
-        "description": "Get combined day information (activity + redletter summary) for one or more\n\nThe time portion of the dates is ignored. Private appointments are counted, but may not be visible through tooltips or other more detailed services.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Get combined day information (activity + redletter summary) for one or more days according to the given date interval.\n\nThe time portion of the dates is ignored. Private appointments are counted, but may not be visible through tooltips or other more detailed services.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_GetDayInformationListByDatesAndAssociate",
         "parameters": [
           {
@@ -5448,7 +5448,7 @@
           "Appointment_Agent"
         ],
         "summary": "Get Activity Information List By Dates And Associate",
-        "description": "Get activity information for one or more days according to the given date\n\nThe time portion of the dates is ignored. Private appointments are counted, but may not be visible through tooltips or other more detailed services.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Get activity information for one or more days according to the given date interval.\n\nThe time portion of the dates is ignored. Private appointments are counted, but may not be visible through tooltips or other more detailed services.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_GetActivityInformationListByDatesAndAssociate",
         "parameters": [
           {
@@ -5616,7 +5616,7 @@
           "Appointment_Agent"
         ],
         "summary": "Get Red Letter Information List By Dates And Associate",
-        "description": "Get detailed red letter day information (redletter summary + individual day\n\nThe time portion of the dates is ignored. \r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Get detailed red letter day information (redletter summary + individual day texts) for one or more days according to the given date interval.\n\nThe time portion of the dates is ignored. \r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_GetRedLetterInformationListByDatesAndAssociate",
         "parameters": [
           {
@@ -5784,7 +5784,7 @@
           "Appointment_Agent"
         ],
         "summary": "Get Alarms",
-        "description": "NsApiSlow threshold 2000 ms.",
+        "description": "NsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_GetAlarms",
         "parameters": [
           {
@@ -6621,7 +6621,7 @@
           "Appointment_Agent"
         ],
         "summary": "Save Suggested Appointment Entity",
-        "description": "Updates the existing SuggestedAppointmentEntity or creates a new\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Updates the existing SuggestedAppointmentEntity or creates a new SuggestedAppointmentEntity if the id parameter is 0.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_SaveSuggestedAppointmentEntity",
         "parameters": [
           {
@@ -6981,7 +6981,7 @@
           "Appointment_Agent"
         ],
         "summary": "Save Task List Item",
-        "description": "Updates the existing TaskListItem or creates a new TaskListItem if the id\n\nNsApiSlow threshold: 1000 ms.",
+        "description": "Updates the existing TaskListItem or creates a new TaskListItem if the id parameter is 0.\n\nNsApiSlow threshold: 1000 ms.",
         "operationId": "v1AppointmentAgent_SaveTaskListItem",
         "parameters": [
           {
@@ -7828,7 +7828,7 @@
           "Appointment_Agent"
         ],
         "summary": "Toggle Appointment Status",
-        "description": "Sets an appointment's status to Completed if the appointment had a different\n\nNsApiSlow threshold: 1000 ms.",
+        "description": "Sets an appointment's status to Completed if the appointment had a different status, or sets the status to started if already set to completed.\n\nNsApiSlow threshold: 1000 ms.",
         "operationId": "v1AppointmentAgent_ToggleAppointmentStatus",
         "parameters": [
           {
@@ -8528,7 +8528,7 @@
           "Appointment_Agent"
         ],
         "summary": "Toggle And Set Activities",
-        "description": "Toggles the first activity and sets the rest of the activities to the result of\n\nHowever, there are some special rules for appointments that trigger a suggested appointment when they are completed. If more than one appointment in the set of identifiers triggers a suggestion, we will not toggle those appointments. This rule is only active when changing the status of an appointment to complete. There must be more than one appointment that triggers such an event for this rule to take effect.\r\nNsApiSlow threshold: 1000 ms.",
+        "description": "Toggles the first activity and sets the rest of the activities to the result of the first toggle.\n\nHowever, there are some special rules for appointments that trigger a suggested appointment when they are completed. If more than one appointment in the set of identifiers triggers a suggestion, we will not toggle those appointments. This rule is only active when changing the status of an appointment to complete. There must be more than one appointment that triggers such an event for this rule to take effect.\r\nNsApiSlow threshold: 1000 ms.",
         "operationId": "v1AppointmentAgent_ToggleAndSetActivities",
         "parameters": [
           {
@@ -8796,7 +8796,7 @@
           "Appointment_Agent"
         ],
         "summary": "Save Appointment Entity",
-        "description": "Updates the existing AppointmentEntity or creates a new AppointmentEntity if\n\nSave the appointment entity\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Updates the existing AppointmentEntity or creates a new AppointmentEntity if the id parameter is 0.\n\nSave the appointment entity\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_SaveAppointmentEntity",
         "parameters": [
           {
@@ -9098,7 +9098,7 @@
           "Appointment_Agent"
         ],
         "summary": "Create Default Appointment Entity By Type",
-        "description": "Creates an AppointmentEntity populated with the default values for the specific\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Creates an AppointmentEntity populated with the default values for the specific type.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_CreateDefaultAppointmentEntityByType",
         "parameters": [
           {
@@ -9562,7 +9562,7 @@
           "Appointment_Agent"
         ],
         "summary": "Accept With Email Confirmation",
-        "description": "Accepting an appointment invitation and send an email confirmation to the\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Accepting an appointment invitation and send an email confirmation to the meeting organizer.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_AcceptWithEmailConfirmation",
         "parameters": [
           {
@@ -9644,7 +9644,7 @@
           "Appointment_Agent"
         ],
         "summary": "Create And Accept With Email Confirmation",
-        "description": "Creating an appointment from an emailItem invitation and accepting it with\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Creating an appointment from an emailItem invitation and accepting it with email confirmation to the meeting organizer.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_CreateAndAcceptWithEmailConfirmation",
         "parameters": [
           {
@@ -9808,7 +9808,7 @@
           "Appointment_Agent"
         ],
         "summary": "Reject With Email Confirmation",
-        "description": "Rejecting an appointment invitation and send an email confirmation to the\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Rejecting an appointment invitation and send an email confirmation to the meeting organizer.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_RejectWithEmailConfirmation",
         "parameters": [
           {
@@ -9890,7 +9890,7 @@
           "Appointment_Agent"
         ],
         "summary": "Decline Invitation From Email Item",
-        "description": "Declining an appointment invitation where no tentative appointments have been\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Declining an appointment invitation where no tentative appointments have been created.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_DeclineInvitationFromEmailItem",
         "parameters": [
           {
@@ -10672,7 +10672,7 @@
           "Appointment_Agent"
         ],
         "summary": "Create Default Recurrence",
-        "description": "Creates a RecurrenceInfo object populated with the default values for the\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Creates a RecurrenceInfo object populated with the default values for the specific type.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_CreateDefaultRecurrence",
         "parameters": [
           {
@@ -11395,7 +11395,7 @@
           "Appointment_Agent"
         ],
         "summary": "Move Extended",
-        "description": "Moving a booking to another start time and with new info and possibly\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Moving a booking to another start time and with new info and possibly notifications.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_MoveExtended",
         "parameters": [
           {
@@ -11695,7 +11695,7 @@
           "Appointment_Agent"
         ],
         "summary": "Create Default Recurrence By Date",
-        "description": "Creates a RecurrenceInfo object populated with the default values for the\n\nUsing startDate as start date for the recurreing pattern.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Creates a RecurrenceInfo object populated with the default values for the specific type.\n\nUsing startDate as start date for the recurreing pattern.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_CreateDefaultRecurrenceByDate",
         "parameters": [
           {
@@ -11845,7 +11845,7 @@
           "Appointment_Agent"
         ],
         "summary": "Clean Up Booking Deleted",
-        "description": "Deletes all appointments(within the appointmentIds array) with status\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Deletes all appointments(within the appointmentIds array) with status BookingDeleted.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_CleanUpBookingDeleted",
         "parameters": [
           {
@@ -12001,7 +12001,7 @@
           "Appointment_Agent"
         ],
         "summary": "Clean Up Booking Deleted With Update Mode",
-        "description": "Deletes all appointments(within the appointmentIds array) with status\n\nAll appointments in the list will be deleted using the same recurrence update mode.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Deletes all appointments(within the appointmentIds array) with status BookingDeleted.\n\nAll appointments in the list will be deleted using the same recurrence update mode.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_CleanUpBookingDeletedWithUpdateMode",
         "parameters": [
           {
@@ -12198,7 +12198,7 @@
           "Appointment_Agent"
         ],
         "summary": "Create Default Appointment Entity By Type And Associate",
-        "description": "Creates a AppointmentEntity populated with the default values for the specific\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Creates a AppointmentEntity populated with the default values for the specific type and owner.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_CreateDefaultAppointmentEntityByTypeAndAssociate",
         "parameters": [
           {
@@ -12348,7 +12348,7 @@
           "Appointment_Agent"
         ],
         "summary": "Get Can Insert For Associates",
-        "description": "Check if current associate can create appointments in the diary of other\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Check if current associate can create appointments in the diary of other associates.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_GetCanInsertForAssociates",
         "parameters": [
           {
@@ -12516,7 +12516,7 @@
           "Appointment_Agent"
         ],
         "summary": "Get Appointment Have Participants With Email",
-        "description": "GetAppointmentHaveParticipantsWithEmail will check if any of the participants\n\nIf no participants are defined, false will be returned.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "GetAppointmentHaveParticipantsWithEmail will check if any of the participants is marked to receive emails on this appointment.\n\nIf no participants are defined, false will be returned.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_GetAppointmentHaveParticipantsWithEmail",
         "parameters": [
           {
@@ -12816,7 +12816,7 @@
           "Appointment_Agent"
         ],
         "summary": "Get Next Suggested Appointment By Sale",
-        "description": "Gets the next suggested appointment for a given sale (or rather a given sale's\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Gets the next suggested appointment for a given sale (or rather a given sale's guide).\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_GetNextSuggestedAppointmentBySale",
         "parameters": [
           {
@@ -12966,7 +12966,7 @@
           "Appointment_Agent"
         ],
         "summary": "Create Default Re Open Appointment",
-        "description": "A re-open appointment should be created as a reminder to re-open the sale at a\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "A re-open appointment should be created as a reminder to re-open the sale at a certain date with information regarding the stalled sale.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_CreateDefaultReOpenAppointment",
         "parameters": [
           {
@@ -13116,7 +13116,7 @@
           "Appointment_Agent"
         ],
         "summary": "Create Default Appointment Entity From Project Suggestion",
-        "description": "NsApiSlow threshold 2000 ms.",
+        "description": "NsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_CreateDefaultAppointmentEntityFromProjectSuggestion",
         "parameters": [
           {
@@ -13266,7 +13266,7 @@
           "Appointment_Agent"
         ],
         "summary": "Create Appointment For U I D",
-        "description": "Create an invitation record and an appointment with a given UID to reserve it\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Create an invitation record and an appointment with a given UID to reserve it if the UID is unused, otherwise null.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_CreateAppointmentForUID",
         "parameters": [
           {
@@ -13566,7 +13566,7 @@
           "Appointment_Agent"
         ],
         "summary": "Can Assign To Project Member",
-        "description": "NsApiSlow threshold 2000 ms.",
+        "description": "NsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_CanAssignToProjectMember",
         "parameters": [
           {
@@ -14184,7 +14184,7 @@
           "Appointment_Agent"
         ],
         "summary": "Will Send Email",
-        "description": "Returns true if the changes will trigger email sending on Save, so you can\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Returns true if the changes will trigger email sending on Save, so you can inform the user.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_WillSendEmail",
         "parameters": [
           {
@@ -14334,7 +14334,7 @@
           "Appointment_Agent"
         ],
         "summary": "Accept With Smtp Email Confirmation",
-        "description": "Accepting an appointment invitation and send an email confirmation to the\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Accepting an appointment invitation and send an email confirmation to the meeting organizer.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_AcceptWithSmtpEmailConfirmation",
         "parameters": [
           {
@@ -14416,7 +14416,7 @@
           "Appointment_Agent"
         ],
         "summary": "Reject With Smtp Email Confirmation",
-        "description": "Rejecting an appointment invitation and send an email confirmation to the\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Rejecting an appointment invitation and send an email confirmation to the meeting organizer.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_RejectWithSmtpEmailConfirmation",
         "parameters": [
           {
@@ -14498,7 +14498,7 @@
           "Appointment_Agent"
         ],
         "summary": "Get Appointment Email Invitation",
-        "description": "Create an EMailEntity (without an ical attachment) with the email sent to\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Create an EMailEntity (without an ical attachment) with the email sent to participants when the appointment is saved\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_GetAppointmentEmailInvitation",
         "parameters": [
           {
@@ -14798,7 +14798,7 @@
           "Appointment_Agent"
         ],
         "summary": "Convert Appointment To Task",
-        "description": "Convert appointment to task if certain criteria are met (participants  2)\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Convert appointment to task if certain criteria are met (participants < 2)\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_ConvertAppointmentToTask",
         "parameters": [
           {
@@ -16152,7 +16152,7 @@
           "Appointment_Agent"
         ],
         "summary": "Get Person Appointments By Type",
-        "description": "Method that returns a specified number of appointments of a specific\n\nThe appointments belong to the person specified.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Method that returns a specified number of appointments of a specific appointment type within a time range.\n\nThe appointments belong to the person specified.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AppointmentAgent_GetPersonAppointmentsByType",
         "parameters": [
           {
@@ -16322,10 +16322,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -16518,7 +16518,7 @@
           },
           "ActiveDate": {
             "format": "date-time",
-            "description": "The date to be used for searching &amp; showing",
+            "description": "The date to be used for searching & showing",
             "type": "string"
           },
           "AssignmentStatus": {
@@ -19119,7 +19119,7 @@
             "$ref": "#/components/schemas/SuperOffice.CRM.Services.StructuredAddress"
           },
           "Formatted": {
-            "description": "Read-only formatted address multi-line string. Combines street and postal into one string. e.g.: &lt;c&gt;\"Postboks 123,\\nBrugata 123,\\n1234 OSLO\\n\"&lt;/c&gt; or &lt;c&gt;\"Postbox 123,\\nBridgelane 123,\\nWest Tooting,\\nEast Shire ES2 W31\\n\"&lt;/c&gt;.",
+            "description": "Read-only formatted address multi-line string. Combines street and postal into one string. e.g.: <c>\"Postboks 123,\\nBrugata 123,\\n1234 OSLO\\n\"</c> or <c>\"Postbox 123,\\nBridgelane 123,\\nWest Tooting,\\nEast Shire ES2 W31\\n\"</c>.",
             "type": "string"
           },
           "TableRight": {
@@ -19220,7 +19220,7 @@
             "type": "string"
           },
           "Formatted": {
-            "description": "Read-only formatted address multi-line string. e.g.: &lt;c&gt;\"Brugata 123,\\n1234 OSLO\\n\"&lt;/c&gt; or &lt;c&gt;\"Bridgelane 123,\\nWest Tooting,\\nThe Shire ES2 W31\\n\"&lt;/c&gt;.",
+            "description": "Read-only formatted address multi-line string. e.g.: <c>\"Brugata 123,\\n1234 OSLO\\n\"</c> or <c>\"Bridgelane 123,\\nWest Tooting,\\nThe Shire ES2 W31\\n\"</c>.",
             "type": "string"
           }
         }
@@ -19459,7 +19459,7 @@
           },
           "Deleted": {
             "format": "int32",
-            "description": "0 -&gt; record is active 1 -&gt; record is 'deleted' and should not be shown in lists",
+            "description": "0 -> record is active 1 -> record is 'deleted' and should not be shown in lists",
             "type": "integer"
           },
           "DaysFuture": {
@@ -19643,7 +19643,7 @@
             "type": "integer"
           },
           "Deleted": {
-            "description": "0 -&gt; record is active 1 -&gt; record is 'deleted' and should not be shown in lists",
+            "description": "0 -> record is active 1 -> record is 'deleted' and should not be shown in lists",
             "type": "boolean"
           },
           "DaysFuture": {
@@ -20268,7 +20268,7 @@
           },
           "ActiveDate": {
             "format": "date-time",
-            "description": "The date to be used for searching &amp; showing",
+            "description": "The date to be used for searching & showing",
             "type": "string"
           },
           "HasConflict": {
@@ -22167,7 +22167,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.AppointmentCarriers.ConvertAppointmentToTaskRequest": {
-        "description": "ConvertAppointmentToTask: Convert appointment to task if certain criteria are met (participants &lt; 2)",
+        "description": "ConvertAppointmentToTask: Convert appointment to task if certain criteria are met (participants < 2)",
         "type": "object",
         "properties": {
           "AppointmentId": {

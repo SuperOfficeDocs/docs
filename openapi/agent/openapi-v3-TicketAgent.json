@@ -167,7 +167,7 @@
           "Ticket_Agent"
         ],
         "summary": "Get Default Message Content Full",
-        "description": "Generate a default message content attachments and body as sanitized HTML\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Generate a default message content: attachments and body as sanitized HTML\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1TicketAgent_GetDefaultMessageContentFull",
         "parameters": [
           {
@@ -317,7 +317,7 @@
           "Ticket_Agent"
         ],
         "summary": "Get Default Message Content With Options",
-        "description": "Generate a default message content with option to exclude signature attachments\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Generate a default message content with option to exclude signature: attachments and body as sanitized HTML\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1TicketAgent_GetDefaultMessageContentWithOptions",
         "parameters": [
           {
@@ -467,7 +467,7 @@
           "Ticket_Agent"
         ],
         "summary": "Get Ticket Message With Embedded Data",
-        "description": "Get a ticket message entity with posibillity to change embedded images to be\n\nIf using inline data, be sure not to save this back to the database.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Get a ticket message entity with posibillity to change embedded images to be represented with inline data within the HTML body.\n\nIf using inline data, be sure not to save this back to the database.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1TicketAgent_GetTicketMessageWithEmbeddedData",
         "parameters": [
           {
@@ -949,7 +949,7 @@
           "Ticket_Agent"
         ],
         "summary": "Save Ticket Relation Entity",
-        "description": "Updates the existing TicketRelationEntity or creates a new TicketRelationEntity\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing TicketRelationEntity or creates a new TicketRelationEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1TicketAgent_SaveTicketRelationEntity",
         "parameters": [
           {
@@ -1251,7 +1251,7 @@
           "Ticket_Agent"
         ],
         "summary": "Get Ticket Relations",
-        "description": "Get all relations for a ticket.\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Get all relations for a ticket.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## This method is experimental, subject to change, and not intended for partners.",
         "operationId": "v1TicketAgent_GetTicketRelations",
         "parameters": [
           {
@@ -1419,7 +1419,7 @@
           "Ticket_Agent"
         ],
         "summary": "Get Ticket Parent Id",
-        "description": "Get the parent ticket id.\n\nReturns 0 if the ticket has no parent.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Get the parent ticket id.\n\nReturns 0 if the ticket has no parent.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## This method is experimental, subject to change, and not intended for partners.",
         "operationId": "v1TicketAgent_GetTicketParentId",
         "parameters": [
           {
@@ -1575,7 +1575,7 @@
           "Ticket_Agent"
         ],
         "summary": "Set Ticket Parent",
-        "description": "Set the parent of a ticket.\n\nIf the ticket already has a parent, it will be overwritten.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Set the parent of a ticket.\n\nIf the ticket already has a parent, it will be overwritten.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## This method is experimental, subject to change, and not intended for partners.",
         "operationId": "v1TicketAgent_SetTicketParent",
         "parameters": [
           {
@@ -1657,7 +1657,7 @@
           "Ticket_Agent"
         ],
         "summary": "Validate Ticket Relations",
-        "description": "Validate proposed ticket relations without saving them.\n\nReturns a result per source ticket indicating whether the relation is valid.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Validate proposed ticket relations without saving them.\n\nReturns a result per source ticket indicating whether the relation is valid.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## This method is experimental, subject to change, and not intended for partners.",
         "operationId": "v1TicketAgent_ValidateTicketRelations",
         "parameters": [
           {
@@ -1825,7 +1825,7 @@
           "Ticket_Agent"
         ],
         "summary": "Create Ticket Relations",
-        "description": "Create multiple ticket relations in a single call.\n\nReturns a result per source ticket indicating success or failure.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Create multiple ticket relations in a single call.\n\nReturns a result per source ticket indicating success or failure.\r\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## This method is experimental, subject to change, and not intended for partners.",
         "operationId": "v1TicketAgent_CreateTicketRelations",
         "parameters": [
           {
@@ -1993,7 +1993,7 @@
           "Ticket_Agent"
         ],
         "summary": "Get Ticket Relation Actions",
-        "description": "Get the relation-driven actions that apply to a ticket, such as whether to\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Get the relation-driven actions that apply to a ticket, such as whether to offer closing the parent or whether open children are blocking the ticket from being closed.\n\nNsApiSlow threshold: 5000 ms.\r\n<para />## Experimental: ## This method is experimental, subject to change, and not intended for partners.",
         "operationId": "v1TicketAgent_GetTicketRelationActions",
         "parameters": [
           {
@@ -2411,7 +2411,7 @@
           "Ticket_Agent"
         ],
         "summary": "Save Attachment Entity",
-        "description": "Updates the existing AttachmentEntity or creates a new AttachmentEntity if the\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Updates the existing AttachmentEntity or creates a new AttachmentEntity if the id parameter is 0.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1TicketAgent_SaveAttachmentEntity",
         "parameters": [
           {
@@ -3590,7 +3590,7 @@
           "Ticket_Agent"
         ],
         "summary": "Save Ticket Entity",
-        "description": "Updates the existing TicketEntity or creates a new TicketEntity if the id\n\nDoes not notify users of save.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Updates the existing TicketEntity or creates a new TicketEntity if the id parameter is 0.\n\nDoes not notify users of save.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1TicketAgent_SaveTicketEntity",
         "parameters": [
           {
@@ -4246,7 +4246,7 @@
           "Ticket_Agent"
         ],
         "summary": "Get Ticket Attachments",
-        "description": "Get attachment infos for all attachments connected to messages in specified\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Get attachment infos for all attachments connected to messages in specified ticket\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1TicketAgent_GetTicketAttachments",
         "parameters": [
           {
@@ -4991,7 +4991,7 @@
           "Ticket_Agent"
         ],
         "summary": "Process Ticket When Read",
-        "description": "When a user view/read a ticket, a number of action should be performed set read\n\nWhich actions will be performed depends on owner, caller and configuration\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "When a user view/read a ticket, a number of action should be performed: set read status, escalation handling, remove notifications, etc.\n\nWhich actions will be performed depends on owner, caller and configuration\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1TicketAgent_ProcessTicketWhenRead",
         "parameters": [
           {
@@ -5291,7 +5291,7 @@
           "Ticket_Agent"
         ],
         "summary": "Split Ticket Message",
-        "description": "Create new ticket and move/copy data from existing ticket in addition update\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Create new ticket and move/copy data from existing ticket in addition update old message and save new message in a single request.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1TicketAgent_SplitTicketMessage",
         "parameters": [
           {
@@ -7237,7 +7237,7 @@
           "Ticket_Agent"
         ],
         "summary": "Do Escalating",
-        "description": "Checks if the ticket should change its alert level based on the priority and\n\nIf it is to change, the alert level and alert timeout for the ticket will be updated.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Checks if the ticket should change its alert level based on the priority and action.\n\nIf it is to change, the alert level and alert timeout for the ticket will be updated.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1TicketAgent_DoEscalating",
         "parameters": [
           {
@@ -7319,7 +7319,7 @@
           "Ticket_Agent"
         ],
         "summary": "Get Hotlist Ej Users",
-        "description": "Get a list of ej_user ids who should receive hotlist notification based on\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Get a list of ej_user ids who should receive hotlist notification based on request and notification type\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1TicketAgent_GetHotlistEjUsers",
         "parameters": [
           {
@@ -8142,7 +8142,7 @@
           "Ticket_Agent"
         ],
         "summary": "Save Ticket Message Entity",
-        "description": "Updates the existing TicketMessageEntity or creates a new TicketMessageEntity\n\nDoes not notify users of save.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Updates the existing TicketMessageEntity or creates a new TicketMessageEntity if the id parameter is 0.\n\nDoes not notify users of save.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1TicketAgent_SaveTicketMessageEntity",
         "parameters": [
           {
@@ -9270,7 +9270,7 @@
           "Ticket_Agent"
         ],
         "summary": "Get Attachment Info Non Inline",
-        "description": "Get a list with meta data for all attached attachments, EXCEPT those marked as\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Get a list with meta data for all attached attachments, EXCEPT those marked as inline\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1TicketAgent_GetAttachmentInfoNonInline",
         "parameters": [
           {
@@ -9520,7 +9520,7 @@
           "Ticket_Agent"
         ],
         "summary": "Remove Message Attachments",
-        "description": "Removes attachments from the message as specified in the collection of entity\n\nThe ids are attachment ids (attachment primary key)\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Removes attachments from the message as specified in the collection of entity ids.\n\nThe ids are attachment ids (attachment primary key)\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1TicketAgent_RemoveMessageAttachments",
         "parameters": [
           {
@@ -10768,10 +10768,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -10876,7 +10876,7 @@
             "type": "string"
           },
           "ContentType": {
-            "description": "The content type for the attachment (e.g. &amp;apos;applaction/octet-stream&amp;apos; or &amp;apos;application/vnd.openxmlformats-officedocument.wordprocessingml.document&amp;apos;).",
+            "description": "The content type for the attachment (e.g. &apos;applaction/octet-stream&apos; or &apos;application/vnd.openxmlformats-officedocument.wordprocessingml.document&apos;).",
             "type": "string"
           },
           "AttSize": {
@@ -11022,7 +11022,7 @@
             "$ref": "#/components/schemas/SuperOffice.CRM.Services.Associate"
           },
           "Author": {
-            "description": "A string representing the author of the message. Could be a user&amp;apos;s name, or a persons email address.",
+            "description": "A string representing the author of the message. Could be a user&apos;s name, or a persons email address.",
             "type": "string"
           },
           "Slevel": {
@@ -11069,7 +11069,7 @@
             "type": "string"
           },
           "MailSorter": {
-            "description": "The name of the mail sorter used when the email was imported. Note: We must use name instead of id since the id&amp;apos;s change every time one changes the mail sorter. :-0",
+            "description": "The name of the mail sorter used when the email was imported. Note: We must use name instead of id since the id&apos;s change every time one changes the mail sorter. :-0",
             "type": "string"
           },
           "MessageCategory": {
@@ -11249,11 +11249,11 @@
             "type": "integer"
           },
           "CategoryName": {
-            "description": "The (short) name of this category. E.g. &amp;apos;support&amp;apos;.",
+            "description": "The (short) name of this category. E.g. &apos;support&apos;.",
             "type": "string"
           },
           "CategoryFullname": {
-            "description": "The fullname (compiled from parents&amp;apos; names) for this category. E.g. &amp;apos;norway/product A/support&amp;apos;.",
+            "description": "The fullname (compiled from parents&apos; names) for this category. E.g. &apos;norway/product A/support&apos;.",
             "type": "string"
           },
           "Slevel": {
@@ -11353,7 +11353,7 @@
           },
           "ConnectId": {
             "format": "int32",
-            "description": "If a ticket is connected to another ticket, this field is set to the id of the &amp;apos;master&amp;apos; ticket.",
+            "description": "If a ticket is connected to another ticket, this field is set to the id of the &apos;master&apos; ticket.",
             "type": "integer"
           },
           "ReadStatus": {
@@ -11368,7 +11368,7 @@
           },
           "TimeToReply": {
             "format": "int32",
-            "description": "The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&amp;apos;s timeframe.",
+            "description": "The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&apos;s timeframe.",
             "type": "integer"
           },
           "RealTimeToReply": {
@@ -11378,7 +11378,7 @@
           },
           "TimeToClose": {
             "format": "int32",
-            "description": "The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&amp;apos;s timeframe.",
+            "description": "The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&apos;s timeframe.",
             "type": "integer"
           },
           "RealTimeToClose": {
@@ -11418,7 +11418,7 @@
           },
           "TimeSpent": {
             "format": "int32",
-            "description": "The total time (minutes). Aggregated time spent from ticket&amp;apos;s messages. Read-only for external use.",
+            "description": "The total time (minutes). Aggregated time spent from ticket&apos;s messages. Read-only for external use.",
             "type": "integer"
           },
           "HasAttachment": {
@@ -12445,7 +12445,7 @@
           },
           "ConnectId": {
             "format": "int32",
-            "description": "If a ticket is connected to another ticket, this field is set to the id of the &amp;apos;master&amp;apos; ticket.",
+            "description": "If a ticket is connected to another ticket, this field is set to the id of the &apos;master&apos; ticket.",
             "type": "integer"
           },
           "ReadStatus": {
@@ -12460,7 +12460,7 @@
           },
           "TimeToReply": {
             "format": "int32",
-            "description": "The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&amp;apos;s timeframe.",
+            "description": "The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&apos;s timeframe.",
             "type": "integer"
           },
           "RealTimeToReply": {
@@ -12470,7 +12470,7 @@
           },
           "TimeToClose": {
             "format": "int32",
-            "description": "The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&amp;apos;s timeframe.",
+            "description": "The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&apos;s timeframe.",
             "type": "integer"
           },
           "RealTimeToClose": {
@@ -12510,7 +12510,7 @@
           },
           "TimeSpent": {
             "format": "int32",
-            "description": "The total time (minutes). Aggregated time spent from ticket&amp;apos;s messages. Read-only for external use.",
+            "description": "The total time (minutes). Aggregated time spent from ticket&apos;s messages. Read-only for external use.",
             "type": "integer"
           },
           "HasAttachment": {
@@ -12635,11 +12635,11 @@
             "type": "integer"
           },
           "Name": {
-            "description": "The (short) name of this category. E.g. &amp;apos;support&amp;apos;.",
+            "description": "The (short) name of this category. E.g. &apos;support&apos;.",
             "type": "string"
           },
           "Fullname": {
-            "description": "The fullname (compiled from parents&amp;apos; names) for this category. E.g. &amp;apos;norway/product A/support&amp;apos;.",
+            "description": "The fullname (compiled from parents&apos; names) for this category. E.g. &apos;norway/product A/support&apos;.",
             "type": "string"
           },
           "CategoryMaster": {
@@ -12764,7 +12764,7 @@
             "type": "string"
           },
           "Status": {
-            "description": "The &amp;apos;classic&amp;apos; ticket status. I.e. active/closed/postponed/deleted",
+            "description": "The &apos;classic&apos; ticket status. I.e. active/closed/postponed/deleted",
             "enum": [
               "Unknown",
               "Active",
@@ -13139,7 +13139,7 @@
             "type": "boolean"
           },
           "Author": {
-            "description": "A string representing the author of the message. Could be a user&amp;apos;s name, or a persons email address.",
+            "description": "A string representing the author of the message. Could be a user&apos;s name, or a persons email address.",
             "type": "string"
           },
           "PersonId": {
@@ -13933,7 +13933,7 @@
             "type": "boolean"
           },
           "ExtraInfo": {
-            "description": "Example: \"navigator\" -&gt; Should this column be mapped to a hyperlinked navigator text type?",
+            "description": "Example: \"navigator\" -> Should this column be mapped to a hyperlinked navigator text type?",
             "type": "string"
           },
           "Width": {

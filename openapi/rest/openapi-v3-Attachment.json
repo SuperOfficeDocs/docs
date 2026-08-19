@@ -988,10 +988,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -1070,7 +1070,7 @@
             "type": "string"
           },
           "ContentType": {
-            "description": "The content type for the attachment (e.g. &amp;apos;applaction/octet-stream&amp;apos; or &amp;apos;application/vnd.openxmlformats-officedocument.wordprocessingml.document&amp;apos;).",
+            "description": "The content type for the attachment (e.g. &apos;applaction/octet-stream&apos; or &apos;application/vnd.openxmlformats-officedocument.wordprocessingml.document&apos;).",
             "type": "string"
           },
           "AttSize": {
@@ -1161,7 +1161,7 @@
             "type": "string"
           },
           "ContentType": {
-            "description": "The content type for the attachment (e.g. &amp;apos;applaction/octet-stream&amp;apos; or &amp;apos;application/vnd.openxmlformats-officedocument.wordprocessingml.document&amp;apos;).",
+            "description": "The content type for the attachment (e.g. &apos;applaction/octet-stream&apos; or &apos;application/vnd.openxmlformats-officedocument.wordprocessingml.document&apos;).",
             "type": "string"
           },
           "AttSize": {

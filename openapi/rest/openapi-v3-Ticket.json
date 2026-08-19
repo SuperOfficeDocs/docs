@@ -1056,7 +1056,7 @@
           "Ticket"
         ],
         "summary": "Get Ticket Attachments",
-        "description": "Get attachment infos for all attachments connected to messages in specified",
+        "description": "Get attachment infos for all attachments connected to messages in specified ticket",
         "operationId": "v1TicketEntity_GetTicketAttachments",
         "parameters": [
           {
@@ -1690,7 +1690,7 @@
           {
             "name": "mergedTicketEntity.category.name",
             "in": "query",
-            "description": "The (short) name of this category. E.g. &amp;apos;support&amp;apos;.",
+            "description": "The (short) name of this category. E.g. &apos;support&apos;.",
             "required": false,
             "schema": {
               "type": "string"
@@ -1699,7 +1699,7 @@
           {
             "name": "mergedTicketEntity.category.fullname",
             "in": "query",
-            "description": "The fullname (compiled from parents&amp;apos; names) for this category. E.g. &amp;apos;norway/product A/support&amp;apos;.",
+            "description": "The fullname (compiled from parents&apos; names) for this category. E.g. &apos;norway/product A/support&apos;.",
             "required": false,
             "schema": {
               "type": "string"
@@ -1843,7 +1843,7 @@
           {
             "name": "mergedTicketEntity.category.defaultTicketStatus.status",
             "in": "query",
-            "description": "The &amp;apos;classic&amp;apos; ticket status. I.e. active/closed/postponed/deleted",
+            "description": "The &apos;classic&apos; ticket status. I.e. active/closed/postponed/deleted",
             "required": false,
             "schema": {
               "type": "string",
@@ -1955,7 +1955,7 @@
           {
             "name": "mergedTicketEntity.category.defaultMessageStatus.status",
             "in": "query",
-            "description": "The &amp;apos;classic&amp;apos; ticket status. I.e. active/closed/postponed/deleted",
+            "description": "The &apos;classic&apos; ticket status. I.e. active/closed/postponed/deleted",
             "required": false,
             "schema": {
               "type": "string",
@@ -2508,7 +2508,7 @@
           {
             "name": "mergedTicketEntity.status.status",
             "in": "query",
-            "description": "The &amp;apos;classic&amp;apos; ticket status. I.e. active/closed/postponed/deleted",
+            "description": "The &apos;classic&apos; ticket status. I.e. active/closed/postponed/deleted",
             "required": false,
             "schema": {
               "type": "string",
@@ -3054,7 +3054,7 @@
           {
             "name": "mergedTicketEntity.connectId",
             "in": "query",
-            "description": "If a ticket is connected to another ticket, this field is set to the id of the &amp;apos;master&amp;apos; ticket.",
+            "description": "If a ticket is connected to another ticket, this field is set to the id of the &apos;master&apos; ticket.",
             "required": false,
             "schema": {
               "type": "integer",
@@ -3079,7 +3079,7 @@
           {
             "name": "mergedTicketEntity.timeToReply",
             "in": "query",
-            "description": "The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&amp;apos;s timeframe.",
+            "description": "The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&apos;s timeframe.",
             "required": false,
             "schema": {
               "type": "integer",
@@ -3099,7 +3099,7 @@
           {
             "name": "mergedTicketEntity.timeToClose",
             "in": "query",
-            "description": "The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&amp;apos;s timeframe.",
+            "description": "The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&apos;s timeframe.",
             "required": false,
             "schema": {
               "type": "integer",
@@ -3179,7 +3179,7 @@
           {
             "name": "mergedTicketEntity.timeSpent",
             "in": "query",
-            "description": "The total time (minutes). Aggregated time spent from ticket&amp;apos;s messages. Read-only for external use.",
+            "description": "The total time (minutes). Aggregated time spent from ticket&apos;s messages. Read-only for external use.",
             "required": false,
             "schema": {
               "type": "integer",
@@ -4616,10 +4616,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -4839,7 +4839,7 @@
           },
           "ConnectId": {
             "format": "int32",
-            "description": "If a ticket is connected to another ticket, this field is set to the id of the &amp;apos;master&amp;apos; ticket.",
+            "description": "If a ticket is connected to another ticket, this field is set to the id of the &apos;master&apos; ticket.",
             "type": "integer"
           },
           "ReadStatus": {
@@ -4854,7 +4854,7 @@
           },
           "TimeToReply": {
             "format": "int32",
-            "description": "The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&amp;apos;s timeframe.",
+            "description": "The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&apos;s timeframe.",
             "type": "integer"
           },
           "RealTimeToReply": {
@@ -4864,7 +4864,7 @@
           },
           "TimeToClose": {
             "format": "int32",
-            "description": "The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&amp;apos;s timeframe.",
+            "description": "The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&apos;s timeframe.",
             "type": "integer"
           },
           "RealTimeToClose": {
@@ -4904,7 +4904,7 @@
           },
           "TimeSpent": {
             "format": "int32",
-            "description": "The total time (minutes). Aggregated time spent from ticket&amp;apos;s messages. Read-only for external use.",
+            "description": "The total time (minutes). Aggregated time spent from ticket&apos;s messages. Read-only for external use.",
             "type": "integer"
           },
           "HasAttachment": {
@@ -5161,11 +5161,11 @@
             "type": "integer"
           },
           "Name": {
-            "description": "The (short) name of this category. E.g. &amp;apos;support&amp;apos;.",
+            "description": "The (short) name of this category. E.g. &apos;support&apos;.",
             "type": "string"
           },
           "Fullname": {
-            "description": "The fullname (compiled from parents&amp;apos; names) for this category. E.g. &amp;apos;norway/product A/support&amp;apos;.",
+            "description": "The fullname (compiled from parents&apos; names) for this category. E.g. &apos;norway/product A/support&apos;.",
             "type": "string"
           },
           "CategoryMaster": {
@@ -5290,7 +5290,7 @@
             "type": "string"
           },
           "Status": {
-            "description": "The &amp;apos;classic&amp;apos; ticket status. I.e. active/closed/postponed/deleted",
+            "description": "The &apos;classic&apos; ticket status. I.e. active/closed/postponed/deleted",
             "enum": [
               "Unknown",
               "Active",
@@ -5857,7 +5857,7 @@
             "type": "boolean"
           },
           "Author": {
-            "description": "A string representing the author of the message. Could be a user&amp;apos;s name, or a persons email address.",
+            "description": "A string representing the author of the message. Could be a user&apos;s name, or a persons email address.",
             "type": "string"
           },
           "PersonId": {
@@ -6556,7 +6556,7 @@
           },
           "ConnectId": {
             "format": "int32",
-            "description": "If a ticket is connected to another ticket, this field is set to the id of the &amp;apos;master&amp;apos; ticket.",
+            "description": "If a ticket is connected to another ticket, this field is set to the id of the &apos;master&apos; ticket.",
             "type": "integer"
           },
           "ReadStatus": {
@@ -6571,7 +6571,7 @@
           },
           "TimeToReply": {
             "format": "int32",
-            "description": "The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&amp;apos;s timeframe.",
+            "description": "The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&apos;s timeframe.",
             "type": "integer"
           },
           "RealTimeToReply": {
@@ -6581,7 +6581,7 @@
           },
           "TimeToClose": {
             "format": "int32",
-            "description": "The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&amp;apos;s timeframe.",
+            "description": "The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&apos;s timeframe.",
             "type": "integer"
           },
           "RealTimeToClose": {
@@ -6621,7 +6621,7 @@
           },
           "TimeSpent": {
             "format": "int32",
-            "description": "The total time (minutes). Aggregated time spent from ticket&amp;apos;s messages. Read-only for external use.",
+            "description": "The total time (minutes). Aggregated time spent from ticket&apos;s messages. Read-only for external use.",
             "type": "integer"
           },
           "HasAttachment": {
@@ -6751,7 +6751,7 @@
             "type": "string"
           },
           "ContentType": {
-            "description": "The content type for the attachment (e.g. &amp;apos;applaction/octet-stream&amp;apos; or &amp;apos;application/vnd.openxmlformats-officedocument.wordprocessingml.document&amp;apos;).",
+            "description": "The content type for the attachment (e.g. &apos;applaction/octet-stream&apos; or &apos;application/vnd.openxmlformats-officedocument.wordprocessingml.document&apos;).",
             "type": "string"
           },
           "AttSize": {
@@ -6878,11 +6878,11 @@
             "type": "integer"
           },
           "CategoryName": {
-            "description": "The (short) name of this category. E.g. &amp;apos;support&amp;apos;.",
+            "description": "The (short) name of this category. E.g. &apos;support&apos;.",
             "type": "string"
           },
           "CategoryFullname": {
-            "description": "The fullname (compiled from parents&amp;apos; names) for this category. E.g. &amp;apos;norway/product A/support&amp;apos;.",
+            "description": "The fullname (compiled from parents&apos; names) for this category. E.g. &apos;norway/product A/support&apos;.",
             "type": "string"
           },
           "Slevel": {
@@ -6982,7 +6982,7 @@
           },
           "ConnectId": {
             "format": "int32",
-            "description": "If a ticket is connected to another ticket, this field is set to the id of the &amp;apos;master&amp;apos; ticket.",
+            "description": "If a ticket is connected to another ticket, this field is set to the id of the &apos;master&apos; ticket.",
             "type": "integer"
           },
           "ReadStatus": {
@@ -6997,7 +6997,7 @@
           },
           "TimeToReply": {
             "format": "int32",
-            "description": "The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&amp;apos;s timeframe.",
+            "description": "The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&apos;s timeframe.",
             "type": "integer"
           },
           "RealTimeToReply": {
@@ -7007,7 +7007,7 @@
           },
           "TimeToClose": {
             "format": "int32",
-            "description": "The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&amp;apos;s timeframe.",
+            "description": "The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&apos;s timeframe.",
             "type": "integer"
           },
           "RealTimeToClose": {
@@ -7047,7 +7047,7 @@
           },
           "TimeSpent": {
             "format": "int32",
-            "description": "The total time (minutes). Aggregated time spent from ticket&amp;apos;s messages. Read-only for external use.",
+            "description": "The total time (minutes). Aggregated time spent from ticket&apos;s messages. Read-only for external use.",
             "type": "integer"
           },
           "HasAttachment": {

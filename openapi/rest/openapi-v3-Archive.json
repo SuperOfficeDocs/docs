@@ -17,7 +17,7 @@
           "Archive"
         ],
         "summary": "Get Archive",
-        "description": "Returns list of archive providers supported by the OData endpoint at\n\nUse the \"$metadata\" archive to get a list of all columns supported by the archive providers in XML format.",
+        "description": "Returns list of archive providers supported by the OData endpoint at api/Services80/archives.\n\nUse the \"$metadata\" archive to get a list of all columns supported by the archive providers in XML format.",
         "operationId": "v1Archive_GetArchive",
         "parameters": [
           {
@@ -385,7 +385,7 @@
           "Archive"
         ],
         "summary": "Post Archive",
-        "description": "Returns archive providers in OData format, accepting parameters as a\n\nUse this instead of GET when the query string would exceed URL length limits (e.g. many columns or filters).",
+        "description": "Returns archive providers in OData format, accepting parameters as a form-encoded request body.\n\nUse this instead of GET when the query string would exceed URL length limits (e.g. many columns or filters).",
         "operationId": "v1Archive_PostArchive",
         "parameters": [
           {
@@ -605,10 +605,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {

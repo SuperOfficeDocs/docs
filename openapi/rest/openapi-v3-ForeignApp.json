@@ -1192,7 +1192,7 @@
           "ForeignApp"
         ],
         "summary": "Get Device By Identifier",
-        "description": "Gets a ForeignDevice with deviceName and deviceIdentifier that belongs to the",
+        "description": "Gets a ForeignDevice with deviceName and deviceIdentifier that belongs to the application with applicationName.",
         "operationId": "v1ForeignAppEntity_GetDeviceByIdentifier",
         "parameters": [
           {
@@ -1317,7 +1317,7 @@
           "ForeignApp"
         ],
         "summary": "Save Device By Identifier",
-        "description": "Updates a ForeignDevice with deviceName that belongs to the application with",
+        "description": "Updates a ForeignDevice with deviceName that belongs to the application with applicationName.",
         "operationId": "v1ForeignAppEntity_SaveDeviceByIdentifier",
         "parameters": [
           {
@@ -1483,7 +1483,7 @@
           "ForeignApp"
         ],
         "summary": "Add Device By Identifier",
-        "description": "Adds a new ForeignDevice with deviceName that belongs to the application with",
+        "description": "Adds a new ForeignDevice with deviceName that belongs to the application with applicationName, with an optional device-specific identifier.",
         "operationId": "v1ForeignAppEntity_AddDeviceByIdentifier",
         "parameters": [
           {
@@ -1608,7 +1608,7 @@
           "ForeignApp"
         ],
         "summary": "Delete Device By Identifier",
-        "description": "Delete a ForeignDevice with deviceName and deviceIdentifier that belongs to the",
+        "description": "Delete a ForeignDevice with deviceName and deviceIdentifier that belongs to the application with applicationName.",
         "operationId": "v1ForeignAppEntity_DeleteDeviceByIdentifier",
         "parameters": [
           {
@@ -1667,7 +1667,7 @@
           "ForeignApp"
         ],
         "summary": "Get Key",
-        "description": "Returning a foreign key by its key name, that belongs to the specified device\n\nA table name and record ID can also be specified.",
+        "description": "Returning a foreign key by its key name, that belongs to the specified device and application.\n\nA table name and record ID can also be specified.",
         "operationId": "v1ForeignAppEntity_GetKey",
         "parameters": [
           {
@@ -1700,7 +1700,7 @@
           {
             "name": "tableName",
             "in": "path",
-            "description": "Table name, transformed to and from numeric table id by the service layer.&lt;p/&gt;Use an empty string to indicate that your key is not bound to any specific table.",
+            "description": "Table name, transformed to and from numeric table id by the service layer.<p/>Use an empty string to indicate that your key is not bound to any specific table.",
             "required": true,
             "schema": {
               "type": "string"
@@ -1813,7 +1813,7 @@
           "ForeignApp"
         ],
         "summary": "Get Key Value",
-        "description": "Gets the string value of a ForeignKey, that belongs to the specified device and\n\nThe table name and record ID must also be specified.",
+        "description": "Gets the string value of a ForeignKey, that belongs to the specified device and application.\n\nThe table name and record ID must also be specified.",
         "operationId": "v1ForeignAppEntity_GetKeyValue",
         "parameters": [
           {
@@ -1846,7 +1846,7 @@
           {
             "name": "tableName",
             "in": "path",
-            "description": "Table name, transformed to and from numeric table id by the service layer.&lt;p/&gt;Use an empty string to indicate that your key is not bound to any specific table.",
+            "description": "Table name, transformed to and from numeric table id by the service layer.<p/>Use an empty string to indicate that your key is not bound to any specific table.",
             "required": true,
             "schema": {
               "type": "string"
@@ -1959,7 +1959,7 @@
           "ForeignApp"
         ],
         "summary": "Get Key On Device Identifier",
-        "description": "Returning a foreign key by its key name and device identifier, that belongs to\n\nA table name and record ID can also be specified.",
+        "description": "Returning a foreign key by its key name and device identifier, that belongs to the specified device and application.\n\nA table name and record ID can also be specified.",
         "operationId": "v1ForeignAppEntity_GetKeyOnDeviceIdentifier",
         "parameters": [
           {
@@ -2001,7 +2001,7 @@
           {
             "name": "tableName",
             "in": "path",
-            "description": "Table name, transformed to and from numeric table id by the service layer.&lt;p/&gt;Use an empty string to indicate that your key is not bound to any specific table.",
+            "description": "Table name, transformed to and from numeric table id by the service layer.<p/>Use an empty string to indicate that your key is not bound to any specific table.",
             "required": true,
             "schema": {
               "type": "string"
@@ -2112,7 +2112,7 @@
           "ForeignApp"
         ],
         "summary": "Delete Foreign Key On Name",
-        "description": "Deletes all specified occurrences of a key, belonging to the ForeignApp and\n\nSpecifying a blank table name will delete ALL keys of the given name; specifying a recordId of 0 will delete ALL keys of the given name for the given table.",
+        "description": "Deletes all specified occurrences of a key, belonging to the ForeignApp and ForeignDevice, table and record specified.\n\nSpecifying a blank table name will delete ALL keys of the given name; specifying a recordId of 0 will delete ALL keys of the given name for the given table.",
         "operationId": "v1ForeignAppEntity_DeleteForeignKeyOnName",
         "parameters": [
           {
@@ -2154,7 +2154,7 @@
           {
             "name": "tableName",
             "in": "path",
-            "description": "Table name, transformed to and from numeric table id by the service layer.&lt;p/&gt;Use an empty string to delete ALL keys that otherwise match; this may be dangerous and can take a long time if there are many items to delete.",
+            "description": "Table name, transformed to and from numeric table id by the service layer.<p/>Use an empty string to delete ALL keys that otherwise match; this may be dangerous and can take a long time if there are many items to delete.",
             "required": true,
             "schema": {
               "type": "string"
@@ -2163,7 +2163,7 @@
           {
             "name": "recordId",
             "in": "path",
-            "description": "Id of record that this key refers to. If the table name was blank, then this parameter must be 0. It can also be 0 to mean that the foreign key record was not bound to any particular record of the target table.&lt;p/&gt;Specifying a zero recordId will remove the recordId restriction and delete all keys that otherwise match.",
+            "description": "Id of record that this key refers to. If the table name was blank, then this parameter must be 0. It can also be 0 to mean that the foreign key record was not bound to any particular record of the target table.<p/>Specifying a zero recordId will remove the recordId restriction and delete all keys that otherwise match.",
             "required": true,
             "schema": {
               "type": "integer",
@@ -2199,7 +2199,7 @@
           "ForeignApp"
         ],
         "summary": "Get Key Value On Device Identifier",
-        "description": "Returning a foreign key string value by its key name and device identifier,\n\nA table name and record ID can also be specified.",
+        "description": "Returning a foreign key string value by its key name and device identifier, that belongs to the specified device and application.\n\nA table name and record ID can also be specified.",
         "operationId": "v1ForeignAppEntity_GetKeyValueOnDeviceIdentifier",
         "parameters": [
           {
@@ -2241,7 +2241,7 @@
           {
             "name": "tableName",
             "in": "path",
-            "description": "Table name, transformed to and from numeric table id by the service layer.&lt;p/&gt;Use an empty string to indicate that your key is not bound to any specific table.",
+            "description": "Table name, transformed to and from numeric table id by the service layer.<p/>Use an empty string to indicate that your key is not bound to any specific table.",
             "required": true,
             "schema": {
               "type": "string"
@@ -2612,7 +2612,7 @@
           "ForeignApp"
         ],
         "summary": "Get Key By Value",
-        "description": "Get a foreignkey based on its name and value, that belongs to the specified",
+        "description": "Get a foreignkey based on its name and value, that belongs to the specified device and application.",
         "operationId": "v1ForeignAppEntity_GetKeyByValue",
         "parameters": [
           {
@@ -2654,7 +2654,7 @@
           {
             "name": "tableName",
             "in": "path",
-            "description": "Table name, transformed to and from numeric table id by the service layer.&lt;p/&gt;Use an empty string to indicate that your key is not bound to any specific table.",
+            "description": "Table name, transformed to and from numeric table id by the service layer.<p/>Use an empty string to indicate that your key is not bound to any specific table.",
             "required": true,
             "schema": {
               "type": "string"
@@ -2757,7 +2757,7 @@
           "ForeignApp"
         ],
         "summary": "Get Key By Value And Identifier",
-        "description": "Get a foreignkey based on its name and value, that belongs to the specified",
+        "description": "Get a foreignkey based on its name and value, that belongs to the specified deviceId, device, and application.",
         "operationId": "v1ForeignAppEntity_GetKeyByValueAndIdentifier",
         "parameters": [
           {
@@ -2808,7 +2808,7 @@
           {
             "name": "tableName",
             "in": "path",
-            "description": "Table name, transformed to and from numeric table id by the service layer.&lt;p/&gt;Use an empty string to indicate that your key is not bound to any specific table.",
+            "description": "Table name, transformed to and from numeric table id by the service layer.<p/>Use an empty string to indicate that your key is not bound to any specific table.",
             "required": true,
             "schema": {
               "type": "string"
@@ -2913,10 +2913,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {

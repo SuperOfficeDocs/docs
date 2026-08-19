@@ -691,7 +691,7 @@
           "Role"
         ],
         "summary": "Delete Role",
-        "description": "Delete the specified role and move all users associated with the role to the\n\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
+        "description": "Delete the specified role and move all users associated with the role to the replacingRoleId\n\n<para />## Online Restricted: ## The User agent is not available in Online by default. User management is not allowed for partner apps.",
         "operationId": "v1RoleEntity_DeleteRole",
         "parameters": [
           {
@@ -1992,10 +1992,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {

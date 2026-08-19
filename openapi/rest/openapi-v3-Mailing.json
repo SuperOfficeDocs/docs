@@ -3,7 +3,7 @@
   "info": {
     "version": "v1-REST",
     "title": "SuperOffice REST API v1",
-    "description": "SuperOffice REST API - ShipmentMessageBlock",
+    "description": "SuperOffice REST API - Mailing",
     "contact": {
       "name": "SuperOffice DevNet",
       "url": "https://docs.superoffice.com/en/api/index.html",
@@ -11,14 +11,14 @@
     }
   },
   "paths": {
-    "/api/v1/ShipmentMessageBlock/default": {
+    "/api/v1/Mailing/default": {
       "get": {
         "tags": [
-          "ShipmentMessageBlock"
+          "Mailing"
         ],
-        "summary": "Default Shipment Message Block Entity",
-        "description": "Set default values into a new ShipmentMessageBlockEntity.\n\nNetServer calculates default values on the entity, which is required when creating/storing a new instance Calls the Marketing agent service CreateDefaultShipmentMessageBlockEntity.\r\nNsApiSlow threshold: 5000 ms.",
-        "operationId": "v1ShipmentMessageBlockEntity_DefaultShipmentMessageBlockEntity",
+        "summary": "Default Mailing Entity",
+        "description": "Set default values into a new MailingEntity.\n\nNetServer calculates default values on the entity, which is required when creating/storing a new instance Calls the Marketing agent service CreateDefaultMailingEntity.\r\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1MailingEntity_DefaultMailingEntity",
         "parameters": [
           {
             "name": "Accept-Language",
@@ -72,32 +72,32 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ShipmentMessageBlockEntity"
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ShipmentMessageBlockEntity"
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
                 }
               },
               "application/xml": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ShipmentMessageBlockEntity"
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
                 }
               },
               "text/xml": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ShipmentMessageBlockEntity"
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
                 }
               },
               "application/json-patch+json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ShipmentMessageBlockEntity"
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
                 }
               },
               "application/merge-patch+json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.ShipmentMessageBlockEntity"
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
                 }
               }
             }
@@ -111,14 +111,14 @@
         ]
       }
     },
-    "/api/v1/ShipmentMessageBlock": {
+    "/api/v1/Mailing": {
       "post": {
         "tags": [
-          "ShipmentMessageBlock"
+          "Mailing"
         ],
-        "summary": "Post Shipment Message Block Entity",
-        "description": "Creates a new ShipmentMessageBlockEntity\n\nCalls the Marketing agent service SaveShipmentMessageBlockEntity.\r\nNsApiSlow threshold: 5000 ms.",
-        "operationId": "v1ShipmentMessageBlockEntity_PostShipmentMessageBlockEntity",
+        "summary": "Post Mailing Entity",
+        "description": "Creates a new MailingEntity\n\nCalls the Marketing agent service SaveMailingEntity.\r\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1MailingEntity_PostMailingEntity",
         "parameters": [
           {
             "name": "$select",
@@ -176,7 +176,7 @@
           }
         ],
         "requestBody": {
-          "$ref": "#/components/requestBodies/SuperOffice.CRM.Services.ShipmentMessageBlockEntity"
+          "$ref": "#/components/requestBodies/SuperOffice.CRM.Services.MailingEntity"
         },
         "responses": {
           "200": {
@@ -184,32 +184,32 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ShipmentMessageBlockEntityWithLinks"
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MailingEntityWithLinks"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ShipmentMessageBlockEntityWithLinks"
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MailingEntityWithLinks"
                 }
               },
               "application/xml": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ShipmentMessageBlockEntityWithLinks"
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MailingEntityWithLinks"
                 }
               },
               "text/xml": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ShipmentMessageBlockEntityWithLinks"
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MailingEntityWithLinks"
                 }
               },
               "application/json-patch+json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ShipmentMessageBlockEntityWithLinks"
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MailingEntityWithLinks"
                 }
               },
               "application/merge-patch+json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ShipmentMessageBlockEntityWithLinks"
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MailingEntityWithLinks"
                 }
               }
             }
@@ -223,19 +223,19 @@
         ]
       }
     },
-    "/api/v1/ShipmentMessageBlock/{id}": {
+    "/api/v1/Mailing/{id}": {
       "get": {
         "tags": [
-          "ShipmentMessageBlock"
+          "Mailing"
         ],
-        "summary": "Get Shipment Message Block Entity",
-        "description": "Gets a ShipmentMessageBlockEntity object.\n\nCalls the Marketing agent service GetShipmentMessageBlockEntity.\r\nNsApiSlow threshold: 5000 ms.",
-        "operationId": "v1ShipmentMessageBlockEntity_GetShipmentMessageBlockEntity",
+        "summary": "Get Mailing Entity",
+        "description": "Gets a MailingEntity object.\n\nCalls the Marketing agent service GetMailingEntity.\r\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1MailingEntity_GetMailingEntity",
         "parameters": [
           {
             "name": "id",
             "in": "path",
-            "description": "The id of the ShipmentMessageBlockEntity to return.",
+            "description": "The id of the MailingEntity to return.",
             "required": true,
             "schema": {
               "type": "integer",
@@ -299,36 +299,36 @@
         ],
         "responses": {
           "200": {
-            "description": "ShipmentMessageBlockEntity found.",
+            "description": "MailingEntity found.",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ShipmentMessageBlockEntityWithLinks"
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MailingEntityWithLinks"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ShipmentMessageBlockEntityWithLinks"
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MailingEntityWithLinks"
                 }
               },
               "application/xml": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ShipmentMessageBlockEntityWithLinks"
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MailingEntityWithLinks"
                 }
               },
               "text/xml": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ShipmentMessageBlockEntityWithLinks"
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MailingEntityWithLinks"
                 }
               },
               "application/json-patch+json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ShipmentMessageBlockEntityWithLinks"
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MailingEntityWithLinks"
                 }
               },
               "application/merge-patch+json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ShipmentMessageBlockEntityWithLinks"
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MailingEntityWithLinks"
                 }
               }
             }
@@ -346,16 +346,16 @@
       },
       "put": {
         "tags": [
-          "ShipmentMessageBlock"
+          "Mailing"
         ],
-        "summary": "Put Shipment Message Block Entity",
-        "description": "Updates the existing ShipmentMessageBlockEntity\n\nNsApiSlow threshold: 5000 ms.",
-        "operationId": "v1ShipmentMessageBlockEntity_PutShipmentMessageBlockEntity",
+        "summary": "Put Mailing Entity",
+        "description": "Updates the existing MailingEntity\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1MailingEntity_PutMailingEntity",
         "parameters": [
           {
             "name": "id",
             "in": "path",
-            "description": "The ShipmentMessageBlockEntity id to update.",
+            "description": "The MailingEntity id to update.",
             "required": true,
             "schema": {
               "type": "integer",
@@ -418,40 +418,40 @@
           }
         ],
         "requestBody": {
-          "$ref": "#/components/requestBodies/SuperOffice.CRM.Services.ShipmentMessageBlockEntity"
+          "$ref": "#/components/requestBodies/SuperOffice.CRM.Services.MailingEntity"
         },
         "responses": {
           "200": {
-            "description": "ShipmentMessageBlockEntity updated.",
+            "description": "MailingEntity updated.",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ShipmentMessageBlockEntityWithLinks"
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MailingEntityWithLinks"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ShipmentMessageBlockEntityWithLinks"
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MailingEntityWithLinks"
                 }
               },
               "application/xml": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ShipmentMessageBlockEntityWithLinks"
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MailingEntityWithLinks"
                 }
               },
               "text/xml": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ShipmentMessageBlockEntityWithLinks"
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MailingEntityWithLinks"
                 }
               },
               "application/json-patch+json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ShipmentMessageBlockEntityWithLinks"
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MailingEntityWithLinks"
                 }
               },
               "application/merge-patch+json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ShipmentMessageBlockEntityWithLinks"
+                  "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MailingEntityWithLinks"
                 }
               }
             }
@@ -469,16 +469,16 @@
       },
       "delete": {
         "tags": [
-          "ShipmentMessageBlock"
+          "Mailing"
         ],
-        "summary": "Delete Shipment Message Block Entity",
-        "description": "Deletes the ShipmentMessageBlockEntity\n\nCalls the Marketing agent service DeleteShipmentMessageBlockEntity.\r\nNsApiSlow threshold: 5000 ms.",
-        "operationId": "v1ShipmentMessageBlockEntity_DeleteShipmentMessageBlockEntity",
+        "summary": "Delete Mailing Entity",
+        "description": "Deletes the MailingEntity\n\nCalls the Marketing agent service DeleteMailingEntity.\r\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1MailingEntity_DeleteMailingEntity",
         "parameters": [
           {
             "name": "id",
             "in": "path",
-            "description": "The ShipmentMessageBlockEntity to be deleted.",
+            "description": "The MailingEntity to be deleted.",
             "required": true,
             "schema": {
               "type": "integer",
@@ -497,135 +497,7 @@
         ],
         "responses": {
           "204": {
-            "description": "ShipmentMessageBlockEntity deleted."
-          }
-        },
-        "security": [
-          {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
-          }
-        ]
-      }
-    },
-    "/api/v1/ShipmentMessageBlock/Associate/{associateId}": {
-      "get": {
-        "tags": [
-          "ShipmentMessageBlock"
-        ],
-        "summary": "Get User Blocks",
-        "description": "Get the saved user blocks to be used in a shipment/mailing message",
-        "operationId": "v1ShipmentMessageBlockEntity_GetUserBlocks",
-        "parameters": [
-          {
-            "name": "associateId",
-            "in": "path",
-            "description": "The associate id to get the user blocks. 0 will get all saved blocks",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "Accept-Language",
-            "in": "header",
-            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-Language",
-            "in": "header",
-            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-Culture",
-            "in": "header",
-            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-TimeZone",
-            "in": "header",
-            "description": "Specify the timezone code that you would like date/time responses converted to.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-AppToken",
-            "in": "header",
-            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.ShipmentMessageBlockEntity"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.ShipmentMessageBlockEntity"
-                  }
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.ShipmentMessageBlockEntity"
-                  }
-                }
-              },
-              "text/xml": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.ShipmentMessageBlockEntity"
-                  }
-                }
-              },
-              "application/json-patch+json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.ShipmentMessageBlockEntity"
-                  }
-                }
-              },
-              "application/merge-patch+json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.ShipmentMessageBlockEntity"
-                  }
-                }
-              }
-            }
+            "description": "MailingEntity deleted."
           }
         },
         "security": [
@@ -652,45 +524,45 @@
   ],
   "components": {
     "requestBodies": {
-      "SuperOffice.CRM.Services.ShipmentMessageBlockEntity": {
+      "SuperOffice.CRM.Services.MailingEntity": {
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/SuperOffice.CRM.Services.ShipmentMessageBlockEntity"
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
             }
           },
           "text/json": {
             "schema": {
-              "$ref": "#/components/schemas/SuperOffice.CRM.Services.ShipmentMessageBlockEntity"
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
             }
           },
           "application/xml": {
             "schema": {
-              "$ref": "#/components/schemas/SuperOffice.CRM.Services.ShipmentMessageBlockEntity"
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
             }
           },
           "text/xml": {
             "schema": {
-              "$ref": "#/components/schemas/SuperOffice.CRM.Services.ShipmentMessageBlockEntity"
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
             }
           },
           "application/x-www-form-urlencoded": {
             "schema": {
-              "$ref": "#/components/schemas/SuperOffice.CRM.Services.ShipmentMessageBlockEntity"
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
             }
           },
           "application/json-patch+json": {
             "schema": {
-              "$ref": "#/components/schemas/SuperOffice.CRM.Services.ShipmentMessageBlockEntity"
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
             }
           },
           "application/merge-patch+json": {
             "schema": {
-              "$ref": "#/components/schemas/SuperOffice.CRM.Services.ShipmentMessageBlockEntity"
+              "$ref": "#/components/schemas/SuperOffice.CRM.Services.MailingEntity"
             }
           }
         },
-        "description": "The ShipmentMessageBlockEntity to be saved.",
+        "description": "The MailingEntity to be saved.",
         "required": true
       }
     },
@@ -712,23 +584,105 @@
       }
     },
     "schemas": {
-      "SuperOffice.CRM.Services.ShipmentMessageBlockEntity": {
-        "description": "This entity contains information about design blocks that can be used in a shipment/mailing message\r\n<para />\r\nCarrier object for ShipmentMessageBlockEntity.\r\nServices for the ShipmentMessageBlockEntity Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IMarketingAgent\">Marketing Agent</see>.",
+      "SuperOffice.CRM.Services.MailingEntity": {
+        "description": "A mailing (shipment) — the run that sends a message to a set of recipients\r\n<para />\r\nCarrier object for MailingEntity.\r\nServices for the MailingEntity Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IMarketingAgent\">Marketing Agent</see>.",
         "type": "object",
         "properties": {
-          "ShipmentMessageBlockId": {
+          "MailingId": {
             "format": "int32",
             "description": "Primary key",
             "type": "integer"
           },
-          "AssociateId": {
+          "Description": {
+            "description": "Describes the shipment",
+            "type": "string"
+          },
+          "MessageId": {
             "format": "int32",
-            "description": "The associate that owns this block",
+            "description": "The id of the message that is sent in this shipment",
             "type": "integer"
           },
-          "Block": {
-            "description": "The block definition. Normally this will be a json structure",
+          "FolderId": {
+            "format": "int32",
+            "description": "The folder which this shipment belongs to. -1 indicates that the shipment is on the root",
+            "type": "integer"
+          },
+          "StartDate": {
+            "format": "date-time",
+            "description": "The date and time when to start this shipment",
             "type": "string"
+          },
+          "EndDate": {
+            "format": "date-time",
+            "description": "Is set when this shipment is ended",
+            "type": "string"
+          },
+          "FromAddr": {
+            "description": "Email address to put in the From header of the messages",
+            "type": "string"
+          },
+          "ReplyAddr": {
+            "description": "Email address to put in the Reply To: header of the messages",
+            "type": "string"
+          },
+          "EnvelopeFrom": {
+            "description": "Email address for the MTA envelope (where bounces are returned)",
+            "type": "string"
+          },
+          "Status": {
+            "description": "Sending/stopped/failed etc.",
+            "enum": [
+              "None",
+              "Ok",
+              "Canceled",
+              "Waiting",
+              "Started",
+              "StatusFailed",
+              "Retry",
+              "Populating",
+              "Deleted",
+              "AwaitPopulate",
+              "PopulatingOnly",
+              "PopulateAborted",
+              "PopulateError",
+              "TooManyRecipients"
+            ],
+            "type": "string"
+          },
+          "Recipients": {
+            "format": "int32",
+            "description": "The total number of recipients to send message to.",
+            "type": "integer"
+          },
+          "Configuration": {
+            "format": "int32",
+            "description": "This field indicates what kind of shipment this is.",
+            "type": "integer"
+          },
+          "SelectionId": {
+            "format": "int32",
+            "description": "Set if this shipment should be related to a Selection",
+            "type": "integer"
+          },
+          "ProjectId": {
+            "format": "int32",
+            "description": "Set if this shipment should be related to a Project",
+            "type": "integer"
+          },
+          "ShipmenttypeId": {
+            "format": "int32",
+            "description": "Id of subscriptionType that this shipment has, so we may check for reservations",
+            "type": "integer"
+          },
+          "SentNum": {
+            "format": "int32",
+            "description": "Number of mails sent",
+            "type": "integer"
+          },
+          "DeliveredNum": {
+            "format": "int32",
+            "description": "Number of mails sent minus bounces",
+            "type": "integer"
           },
           "Registered": {
             "format": "date-time",
@@ -808,23 +762,105 @@
           }
         }
       },
-      "SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ShipmentMessageBlockEntityWithLinks": {
-        "description": "This entity contains information about design blocks that can be used in a shipment/mailing message\r\n<para />\r\nShipmentMessageBlockEntity entity with API _Links added.",
+      "SuperOffice.WebApi.v1.Carriers.MarketingCarriers.MailingEntityWithLinks": {
+        "description": "A mailing (shipment) — the run that sends a message to a set of recipients\r\n<para />\r\nMailingEntity entity with API _Links added.",
         "type": "object",
         "properties": {
-          "ShipmentMessageBlockId": {
+          "MailingId": {
             "format": "int32",
             "description": "Primary key",
             "type": "integer"
           },
-          "AssociateId": {
+          "Description": {
+            "description": "Describes the shipment",
+            "type": "string"
+          },
+          "MessageId": {
             "format": "int32",
-            "description": "The associate that owns this block",
+            "description": "The id of the message that is sent in this shipment",
             "type": "integer"
           },
-          "Block": {
-            "description": "The block definition. Normally this will be a json structure",
+          "FolderId": {
+            "format": "int32",
+            "description": "The folder which this shipment belongs to. -1 indicates that the shipment is on the root",
+            "type": "integer"
+          },
+          "StartDate": {
+            "format": "date-time",
+            "description": "The date and time when to start this shipment",
             "type": "string"
+          },
+          "EndDate": {
+            "format": "date-time",
+            "description": "Is set when this shipment is ended",
+            "type": "string"
+          },
+          "FromAddr": {
+            "description": "Email address to put in the From header of the messages",
+            "type": "string"
+          },
+          "ReplyAddr": {
+            "description": "Email address to put in the Reply To: header of the messages",
+            "type": "string"
+          },
+          "EnvelopeFrom": {
+            "description": "Email address for the MTA envelope (where bounces are returned)",
+            "type": "string"
+          },
+          "Status": {
+            "description": "Sending/stopped/failed etc.",
+            "enum": [
+              "None",
+              "Ok",
+              "Canceled",
+              "Waiting",
+              "Started",
+              "StatusFailed",
+              "Retry",
+              "Populating",
+              "Deleted",
+              "AwaitPopulate",
+              "PopulatingOnly",
+              "PopulateAborted",
+              "PopulateError",
+              "TooManyRecipients"
+            ],
+            "type": "string"
+          },
+          "Recipients": {
+            "format": "int32",
+            "description": "The total number of recipients to send message to.",
+            "type": "integer"
+          },
+          "Configuration": {
+            "format": "int32",
+            "description": "This field indicates what kind of shipment this is.",
+            "type": "integer"
+          },
+          "SelectionId": {
+            "format": "int32",
+            "description": "Set if this shipment should be related to a Selection",
+            "type": "integer"
+          },
+          "ProjectId": {
+            "format": "int32",
+            "description": "Set if this shipment should be related to a Project",
+            "type": "integer"
+          },
+          "ShipmenttypeId": {
+            "format": "int32",
+            "description": "Id of subscriptionType that this shipment has, so we may check for reservations",
+            "type": "integer"
+          },
+          "SentNum": {
+            "format": "int32",
+            "description": "Number of mails sent",
+            "type": "integer"
+          },
+          "DeliveredNum": {
+            "format": "int32",
+            "description": "Number of mails sent minus bounces",
+            "type": "integer"
           },
           "Registered": {
             "format": "date-time",

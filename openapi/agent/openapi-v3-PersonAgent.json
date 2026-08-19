@@ -267,7 +267,7 @@
           "Person_Agent"
         ],
         "summary": "Save Consent Person",
-        "description": "Updates the existing ConsentPerson or creates a new ConsentPerson if the id\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Updates the existing ConsentPerson or creates a new ConsentPerson if the id parameter is 0.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1PersonAgent_SaveConsentPerson",
         "parameters": [
           {
@@ -688,7 +688,7 @@
           "Person_Agent"
         ],
         "summary": "Try Add Persons To Email Flow",
-        "description": "Try to add a participant to the EmailFlow, Same function available in\n\nNsApiSlow threshold: 1000 ms.",
+        "description": "Try to add a participant to the EmailFlow, Same function available in WorkflowAgent\n\nNsApiSlow threshold: 1000 ms.",
         "operationId": "v1PersonAgent_TryAddPersonsToEmailFlow",
         "parameters": [
           {
@@ -956,7 +956,7 @@
           "Person_Agent"
         ],
         "summary": "Save Person Entity",
-        "description": "Updates the existing PersonEntity or creates a new PersonEntity if the id\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Updates the existing PersonEntity or creates a new PersonEntity if the id parameter is 0.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1PersonAgent_SavePersonEntity",
         "parameters": [
           {
@@ -1767,7 +1767,7 @@
           "Person_Agent"
         ],
         "summary": "Change Country",
-        "description": "Change country regenerates the default values and localized information such as\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Change country regenerates the default values and localized information such as phone number and address format for this entity.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1PersonAgent_ChangeCountry",
         "parameters": [
           {
@@ -2763,7 +2763,7 @@
           "Person_Agent"
         ],
         "summary": "Create Default From Credential",
-        "description": "Creates a PersonEntity with default values based on the contactId and\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Creates a PersonEntity with default values based on the contactId and credentials.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1PersonAgent_CreateDefaultFromCredential",
         "parameters": [
           {
@@ -3545,7 +3545,7 @@
           "Person_Agent"
         ],
         "summary": "Send Consent Confirmation Email",
-        "description": "Send confirmation email to the provided person, email address (id), using the\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Send confirmation email to the provided person, email address (id), using the document template\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1PersonAgent_SendConsentConfirmationEmail",
         "parameters": [
           {
@@ -3777,7 +3777,7 @@
           "Person_Agent"
         ],
         "summary": "Add Email Address To Person",
-        "description": "Sets the primary email address on person, possibly re-ranking email addresses\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Sets the primary email address on person, possibly re-ranking email addresses accordingly.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1PersonAgent_AddEmailAddressToPerson",
         "parameters": [
           {
@@ -3859,7 +3859,7 @@
           "Person_Agent"
         ],
         "summary": "Create Temporary Key",
-        "description": "Create a temporary key in the database from the given parameters and return the\n\nUsed for temporary keys for accessing customer centric functionality, such as UpdateSubscriptions.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Create a temporary key in the database from the given parameters and return the key string.\n\nUsed for temporary keys for accessing customer centric functionality, such as UpdateSubscriptions.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1PersonAgent_CreateTemporaryKey",
         "parameters": [
           {
@@ -4009,7 +4009,7 @@
           "Person_Agent"
         ],
         "summary": "Create Temporary Key With Payload",
-        "description": "Create a temporary key in the database from the given parameters and return the\n\nUsed for temporary keys for accessing customer centric functionality, such as UpdateSubscriptions.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Create a temporary key in the database from the given parameters and return the key string.\n\nUsed for temporary keys for accessing customer centric functionality, such as UpdateSubscriptions.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1PersonAgent_CreateTemporaryKeyWithPayload",
         "parameters": [
           {
@@ -4159,7 +4159,7 @@
           "Person_Agent"
         ],
         "summary": "Check Temporary Key",
-        "description": "Check a temporary key for validity, and in case it is valid, return its domain,\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Check a temporary key for validity, and in case it is valid, return its domain, targetId and personId\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1PersonAgent_CheckTemporaryKey",
         "parameters": [
           {
@@ -4391,7 +4391,7 @@
           "Person_Agent"
         ],
         "summary": "Delete Expired",
-        "description": "Trigger deletion of persons that has been (soft) deleted and have timed out the\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Trigger deletion of persons that has been (soft) deleted and have timed out the expiry period (the SoftDeleteRetention preference).\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1PersonAgent_DeleteExpired",
         "parameters": [
           {
@@ -5064,7 +5064,7 @@
           "Person_Agent"
         ],
         "summary": "Add Bounce With Details",
-        "description": "Add a number of bounce counts on the email address if it exists, and with\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Add a number of bounce counts on the email address if it exists, and with possible bounce code and reason\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1PersonAgent_AddBounceWithDetails",
         "parameters": [
           {
@@ -5314,7 +5314,7 @@
           "Person_Agent"
         ],
         "summary": "Create Or Update User Candidate",
-        "description": "Creates a Customer Centre User (UserCandidate) for a given Contact (personId)\n\nIf the Customer Centre User already exists for a given Contact, the user is updated with the supplied parameters.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Creates a Customer Centre User (UserCandidate) for a given Contact (personId) with the supplied parameters.\n\nIf the Customer Centre User already exists for a given Contact, the user is updated with the supplied parameters.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1PersonAgent_CreateOrUpdateUserCandidate",
         "parameters": [
           {
@@ -6160,7 +6160,7 @@
           "Person_Agent"
         ],
         "summary": "Set Utm Created Person Contact For Form Submission",
-        "description": "Set created person and optinally contact on an UTM Parameters row related to a\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Set created person and optinally contact on an UTM Parameters row related to a form submission.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1PersonAgent_SetUtmCreatedPersonContactForFormSubmission",
         "parameters": [
           {
@@ -7083,7 +7083,7 @@
           "Person_Agent"
         ],
         "summary": "Get Colleagues By Department",
-        "description": "Gets the persons working in a specific department in the same company as the\n\nDepartments can be retrieved with the PhoneList.DepartmentList service.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Gets the persons working in a specific department in the same company as the logged on user.\n\nDepartments can be retrieved with the PhoneList.DepartmentList service.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1PersonAgent_GetColleaguesByDepartment",
         "parameters": [
           {
@@ -7834,7 +7834,7 @@
           "Person_Agent"
         ],
         "summary": "Set Person Rank",
-        "description": "Directly set the rank field of a person record, adjusting all other person\n\n<para/>This call may affect multiple records, potentially all person records belonging to one contact.<para/>You must have write access for to affected records for this method to succeed.\r\nNsApiSlow threshold: 2000 ms.",
+        "description": "Directly set the rank field of a person record, adjusting all other person records under the same contact as needed.\n\n<para/>This call may affect multiple records, potentially all person records belonging to one contact.<para/>You must have write access for to affected records for this method to succeed.\r\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1PersonAgent_SetPersonRank",
         "parameters": [
           {
@@ -7986,10 +7986,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -9096,7 +9096,7 @@
             "$ref": "#/components/schemas/SuperOffice.CRM.Services.StructuredAddress"
           },
           "Formatted": {
-            "description": "Read-only formatted address multi-line string. Combines street and postal into one string. e.g.: &lt;c&gt;\"Postboks 123,\\nBrugata 123,\\n1234 OSLO\\n\"&lt;/c&gt; or &lt;c&gt;\"Postbox 123,\\nBridgelane 123,\\nWest Tooting,\\nEast Shire ES2 W31\\n\"&lt;/c&gt;.",
+            "description": "Read-only formatted address multi-line string. Combines street and postal into one string. e.g.: <c>\"Postboks 123,\\nBrugata 123,\\n1234 OSLO\\n\"</c> or <c>\"Postbox 123,\\nBridgelane 123,\\nWest Tooting,\\nEast Shire ES2 W31\\n\"</c>.",
             "type": "string"
           },
           "TableRight": {
@@ -9197,7 +9197,7 @@
             "type": "string"
           },
           "Formatted": {
-            "description": "Read-only formatted address multi-line string. e.g.: &lt;c&gt;\"Brugata 123,\\n1234 OSLO\\n\"&lt;/c&gt; or &lt;c&gt;\"Bridgelane 123,\\nWest Tooting,\\nThe Shire ES2 W31\\n\"&lt;/c&gt;.",
+            "description": "Read-only formatted address multi-line string. e.g.: <c>\"Brugata 123,\\n1234 OSLO\\n\"</c> or <c>\"Bridgelane 123,\\nWest Tooting,\\nThe Shire ES2 W31\\n\"</c>.",
             "type": "string"
           }
         }
@@ -10697,7 +10697,7 @@
             "type": "string"
           },
           "ContentType": {
-            "description": "The content type for the attachment (e.g. &amp;apos;applaction/octet-stream&amp;apos; or &amp;apos;application/vnd.openxmlformats-officedocument.wordprocessingml.document&amp;apos;).",
+            "description": "The content type for the attachment (e.g. &apos;applaction/octet-stream&apos; or &apos;application/vnd.openxmlformats-officedocument.wordprocessingml.document&apos;).",
             "type": "string"
           },
           "AttSize": {
@@ -11043,7 +11043,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.PersonCarriers.ChangePersonRankRequest": {
-        "description": "ChangePersonRank: Move one person up or down in the ranking in the Person Archive, if possible.&lt;para/&gt;The person record that has rank = 1 is the primary contact for a company, and is the one used in situations where no person has been explicitly chosen (such as in selections).&lt;para/&gt;This method corresponds to the move up/move down functions in the person archive in the contact panel.&lt;para/&gt;This method always affects two records.",
+        "description": "ChangePersonRank: Move one person up or down in the ranking in the Person Archive, if possible.<para/>The person record that has rank = 1 is the primary contact for a company, and is the one used in situations where no person has been explicitly chosen (such as in selections).<para/>This method corresponds to the move up/move down functions in the person archive in the contact panel.<para/>This method always affects two records.",
         "type": "object",
         "properties": {
           "PersonId": {
@@ -11056,7 +11056,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.PersonCarriers.SetPersonRankRequest": {
-        "description": "SetPersonRank: Directly set the rank field of a person record, adjusting all other person records under the same contact as needed.&lt;para/&gt;This call may affect multiple records, potentially all person records belonging to one contact.&lt;para/&gt;You must have write access for to affected records for this method to succeed.",
+        "description": "SetPersonRank: Directly set the rank field of a person record, adjusting all other person records under the same contact as needed.<para/>This call may affect multiple records, potentially all person records belonging to one contact.<para/>You must have write access for to affected records for this method to succeed.",
         "type": "object",
         "properties": {
           "PersonId": {

@@ -536,7 +536,7 @@
           "Associate_Agent"
         ],
         "summary": "Get Encryption Key",
-        "description": "Get unique key made from AssociateId and dbTag used for local storage\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Get unique key made from AssociateId and dbTag used for local storage encryption operations.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1AssociateAgent_GetEncryptionKey",
         "parameters": [
           {
@@ -1093,10 +1093,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {

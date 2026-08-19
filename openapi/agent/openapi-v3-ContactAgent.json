@@ -404,7 +404,7 @@
           "Contact_Agent"
         ],
         "summary": "Save Contact Entity",
-        "description": "Updates the existing ContactEntity or creates a new ContactEntity if the id\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Updates the existing ContactEntity or creates a new ContactEntity if the id parameter is 0.\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1ContactAgent_SaveContactEntity",
         "parameters": [
           {
@@ -1324,7 +1324,7 @@
           "Contact_Agent"
         ],
         "summary": "Change Country",
-        "description": "Change country regenerates the default values and localized information such as\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Change country regenerates the default values and localized information such as phone number and address format\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1ContactAgent_ChangeCountry",
         "parameters": [
           {
@@ -3499,7 +3499,7 @@
           "Contact_Agent"
         ],
         "summary": "Delete Expired",
-        "description": "Trigger deletion of contacts (companies) that has been (soft) deleted and have\n\nNsApiSlow threshold: 2000 ms.",
+        "description": "Trigger deletion of contacts (companies) that has been (soft) deleted and have timed out the expiry period (the SoftDeleteRetention preference).\n\nNsApiSlow threshold: 2000 ms.",
         "operationId": "v1ContactAgent_DeleteExpired",
         "parameters": [
           {
@@ -4983,10 +4983,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -5154,7 +5154,7 @@
             "$ref": "#/components/schemas/SuperOffice.CRM.Services.StructuredAddress"
           },
           "Formatted": {
-            "description": "Read-only formatted address multi-line string. Combines street and postal into one string. e.g.: &lt;c&gt;\"Postboks 123,\\nBrugata 123,\\n1234 OSLO\\n\"&lt;/c&gt; or &lt;c&gt;\"Postbox 123,\\nBridgelane 123,\\nWest Tooting,\\nEast Shire ES2 W31\\n\"&lt;/c&gt;.",
+            "description": "Read-only formatted address multi-line string. Combines street and postal into one string. e.g.: <c>\"Postboks 123,\\nBrugata 123,\\n1234 OSLO\\n\"</c> or <c>\"Postbox 123,\\nBridgelane 123,\\nWest Tooting,\\nEast Shire ES2 W31\\n\"</c>.",
             "type": "string"
           },
           "TableRight": {
@@ -5296,7 +5296,7 @@
             "type": "string"
           },
           "Formatted": {
-            "description": "Read-only formatted address multi-line string. e.g.: &lt;c&gt;\"Brugata 123,\\n1234 OSLO\\n\"&lt;/c&gt; or &lt;c&gt;\"Bridgelane 123,\\nWest Tooting,\\nThe Shire ES2 W31\\n\"&lt;/c&gt;.",
+            "description": "Read-only formatted address multi-line string. e.g.: <c>\"Brugata 123,\\n1234 OSLO\\n\"</c> or <c>\"Bridgelane 123,\\nWest Tooting,\\nThe Shire ES2 W31\\n\"</c>.",
             "type": "string"
           }
         }

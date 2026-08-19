@@ -368,7 +368,7 @@
           "TimeZone_Agent"
         ],
         "summary": "Update Time Zone Data",
-        "description": "Retrieve time zone data from the SuperOffice server and update TimeZone data in\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Retrieve time zone data from the SuperOffice server and update TimeZone data in the database\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1TimeZoneAgent_UpdateTimeZoneData",
         "parameters": [
           {
@@ -1255,10 +1255,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -1281,7 +1281,7 @@
     },
     "schemas": {
       "SuperOffice.CRM.Services.PreferredTimeZone": {
-        "description": "This service support fetching of client interface configuration data. &lt;para/&gt; Client configuration data include Application configuration, which defines how an application is composed out of pages; and page configuration that defines how a page is built out of panels, cards, views and controls. &lt;para/&gt; Separate access points also exist for fetching object mappings and filter lists.\r\n<para />\r\nCarrier object for PreferredTimeZone.\r\nServices for the PreferredTimeZone Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.ITimeZoneAgent\">TimeZone Agent</see>.",
+        "description": "This service support fetching of client interface configuration data. <para/> Client configuration data include Application configuration, which defines how an application is composed out of pages; and page configuration that defines how a page is built out of panels, cards, views and controls. <para/> Separate access points also exist for fetching object mappings and filter lists.\r\n<para />\r\nCarrier object for PreferredTimeZone.\r\nServices for the PreferredTimeZone Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.ITimeZoneAgent\">TimeZone Agent</see>.",
         "type": "object",
         "properties": {
           "PreferenceId": {

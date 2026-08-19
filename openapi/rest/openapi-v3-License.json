@@ -17,7 +17,7 @@
           "License"
         ],
         "summary": "Get License For All Owners From D B",
-        "description": "Get all licenses, with usage, from all module owners as they are stored in the",
+        "description": "Get all licenses, with usage, from all module owners as they are stored in the database",
         "operationId": "v1License_GetLicenseForAllOwnersFromDB",
         "parameters": [
           {
@@ -279,7 +279,7 @@
           "License"
         ],
         "summary": "Get License From D B",
-        "description": "Get license, with usage, as it is stored in the database for one particular",
+        "description": "Get license, with usage, as it is stored in the database for one particular module owner.",
         "operationId": "v1License_GetLicenseFromDB",
         "parameters": [
           {
@@ -1180,7 +1180,7 @@
           "License"
         ],
         "summary": "Get Third Party License Assignments",
-        "description": "Get license assignments for an associate for licenses belonging to an other",
+        "description": "Get license assignments for an associate for licenses belonging to an other module owner than SuperOffice",
         "operationId": "v1License_GetThirdPartyLicenseAssignments",
         "parameters": [
           {
@@ -1677,10 +1677,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {

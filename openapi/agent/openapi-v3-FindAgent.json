@@ -317,7 +317,7 @@
           "Find_Agent"
         ],
         "summary": "Save Restrictions",
-        "description": "Save an array of restrictions for later use as search criteria (including as\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Save an array of restrictions for later use as search criteria (including as dynamic selection and Find).\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1FindAgent_SaveRestrictions",
         "parameters": [
           {
@@ -399,7 +399,7 @@
           "Find_Agent"
         ],
         "summary": "Save Restrictions With Context",
-        "description": "Save an array of restrictions for later use as search criteria (including as\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Save an array of restrictions for later use as search criteria (including as dynamic selection and Find).\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1FindAgent_SaveRestrictionsWithContext",
         "parameters": [
           {
@@ -481,7 +481,7 @@
           "Find_Agent"
         ],
         "summary": "Save Restriction Group",
-        "description": "Save an array of restrictions as a restriction group for later use as search\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Save an array of restrictions as a restriction group for later use as search criteria (including as dynamic selection and Find).\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1FindAgent_SaveRestrictionGroup",
         "parameters": [
           {
@@ -563,7 +563,7 @@
           "Find_Agent"
         ],
         "summary": "Save Restriction Groups",
-        "description": "Save and rerank an array of restriction groups, returning the possibly modified\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Save and rerank an array of restriction groups, returning the possibly modified array.\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1FindAgent_SaveRestrictionGroups",
         "parameters": [
           {
@@ -1281,7 +1281,7 @@
           "Find_Agent"
         ],
         "summary": "Save Restrictions And Get Criteria Information",
-        "description": "Save an array of restrictions for later use as search criteria (including as\n\nThen, return the same result as a call to GetCriteriaInformation would have done. The purpose is to encapsulate saving and updating of a GUI in one round trip.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Save an array of restrictions for later use as search criteria (including as dynamic selection and Find).\n\nThen, return the same result as a call to GetCriteriaInformation would have done. The purpose is to encapsulate saving and updating of a GUI in one round trip.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1FindAgent_SaveRestrictionsAndGetCriteriaInformation",
         "parameters": [
           {
@@ -1881,7 +1881,7 @@
           "Find_Agent"
         ],
         "summary": "Get Available Restriction Columns",
-        "description": "Get a list of the column names corresponding to available restrictions for a\n\nSuch columns have CanRestrict set to true, and are supported by the given restriction storage provider.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Get a list of the column names corresponding to available restrictions for a certain archive provider and restriction storage provider.\n\nSuch columns have CanRestrict set to true, and are supported by the given restriction storage provider.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1FindAgent_GetAvailableRestrictionColumns",
         "parameters": [
           {
@@ -2049,7 +2049,7 @@
           "Find_Agent"
         ],
         "summary": "Get Specified Criteria Information With Defaults",
-        "description": "Get criteria information from a set of saved criteria, for a specific set of\n\nThe result contains the restrictions in two forms: fully populated ArchiveRestrictionInfo objects, used to display details and for saving changes; and as a list suitable for an Archive control. ALL columns specified in the call will be present in the results; those that do not have corresponding criteria set will have empty values and the default (first) operator, with the IsActive flag set to false.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Get criteria information from a set of saved criteria, for a specific set of columns.\n\nThe result contains the restrictions in two forms: fully populated ArchiveRestrictionInfo objects, used to display details and for saving changes; and as a list suitable for an Archive control. ALL columns specified in the call will be present in the results; those that do not have corresponding criteria set will have empty values and the default (first) operator, with the IsActive flag set to false.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1FindAgent_GetSpecifiedCriteriaInformationWithDefaults",
         "parameters": [
           {
@@ -2199,7 +2199,7 @@
           "Find_Agent"
         ],
         "summary": "Get Specified Criteria Information With Defaults With Context",
-        "description": "Get criteria information from a set of saved criteria, for a specific set of\n\nThe result contains the restrictions in two forms: fully populated ArchiveRestrictionInfo objects, used to display details and for saving changes; and as a list suitable for an Archive control. ALL columns specified in the call will be present in the results; those that do not have corresponding criteria set will have empty values and the default (first) operator, with the IsActive flag set to false.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Get criteria information from a set of saved criteria, for a specific set of columns.\n\nThe result contains the restrictions in two forms: fully populated ArchiveRestrictionInfo objects, used to display details and for saving changes; and as a list suitable for an Archive control. ALL columns specified in the call will be present in the results; those that do not have corresponding criteria set will have empty values and the default (first) operator, with the IsActive flag set to false.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1FindAgent_GetSpecifiedCriteriaInformationWithDefaultsWithContext",
         "parameters": [
           {
@@ -2835,7 +2835,7 @@
           "Find_Agent"
         ],
         "summary": "Populate Restrictions",
-        "description": "Take an incoming set of minimally populated restrictions (name + operator is\n\nThis includes column information, display values (including list value lookup), and calculated/default values where the value hints specify read-only (R).\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Take an incoming set of minimally populated restrictions (name + operator is required), and populate all the other parts of the ArchiveRestrictionInfo structure.\n\nThis includes column information, display values (including list value lookup), and calculated/default values where the value hints specify read-only (R).\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1FindAgent_PopulateRestrictions",
         "parameters": [
           {
@@ -3003,7 +3003,7 @@
           "Find_Agent"
         ],
         "summary": "Populate Restriction Values",
-        "description": "Take an incoming set of Restrictions (name + operator + any user-entered\n\nUsed for dynamic date periods; perhaps others in the future\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Take an incoming set of Restrictions (name + operator + any user-entered values), and populate/expand all values as specified by the operator's ValueHints, taking into account any values already there.\n\nUsed for dynamic date periods; perhaps others in the future\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1FindAgent_PopulateRestrictionValues",
         "parameters": [
           {
@@ -3339,7 +3339,7 @@
           "Find_Agent"
         ],
         "summary": "Get Default Order By From Desired Columns",
-        "description": "Calculate the default orderby columns for a given provider and a set of desired\n\nThis is the same algorithm that is used by the Find service method.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Calculate the default orderby columns for a given provider and a set of desired columns.\n\nThis is the same algorithm that is used by the Find service method.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1FindAgent_GetDefaultOrderByFromDesiredColumns",
         "parameters": [
           {
@@ -3957,7 +3957,7 @@
           "Find_Agent"
         ],
         "summary": "Save Restrictions2",
-        "description": "Save an array of restrictions for later use as search criteria (including as\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Save an array of restrictions for later use as search criteria (including as dynamic selection and Find).\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1FindAgent_SaveRestrictions2",
         "parameters": [
           {
@@ -4039,7 +4039,7 @@
           "Find_Agent"
         ],
         "summary": "Save Restrictions With Context2",
-        "description": "Save an array of restrictions for later use as search criteria (including as\n\nNsApiSlow threshold: 5000 ms.",
+        "description": "Save an array of restrictions for later use as search criteria (including as dynamic selection and Find).\n\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1FindAgent_SaveRestrictionsWithContext2",
         "parameters": [
           {
@@ -4121,7 +4121,7 @@
           "Find_Agent"
         ],
         "summary": "Save Restrictions And Get Criteria Information2",
-        "description": "Save an array of restrictions for later use as search criteria (including as\n\nThen, return the same result as a call to GetCriteriaInformation would have done. The purpose is to encapsulate saving and updating of a GUI in one round trip.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "Save an array of restrictions for later use as search criteria (including as dynamic selection and Find).\n\nThen, return the same result as a call to GetCriteriaInformation would have done. The purpose is to encapsulate saving and updating of a GUI in one round trip.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1FindAgent_SaveRestrictionsAndGetCriteriaInformation2",
         "parameters": [
           {
@@ -5191,10 +5191,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:54464"
+      "url": "http://localhost:56350"
     },
     {
-      "url": "https://localhost:54464"
+      "url": "https://localhost:56350"
     }
   ],
   "components": {
@@ -5382,7 +5382,7 @@
             "type": "boolean"
           },
           "ExtraInfo": {
-            "description": "Example: \"navigator\" -&gt; Should this column be mapped to a hyperlinked navigator text type?",
+            "description": "Example: \"navigator\" -> Should this column be mapped to a hyperlinked navigator text type?",
             "type": "string"
           },
           "Width": {
@@ -5413,7 +5413,7 @@
             "type": "integer"
           },
           "ColumnData": {
-            "description": "Dictionary of column name - column data items. Each column data item contains a display value, a tooltip hint, a link hint, and an orderby value. &lt;para/&gt;The display value is encoded by the CultureDataFormatter and can be decoded / localized by that class; all other values are optional. &lt;para/&gt;Tooltip hints can be passed to the TooltipProvider (Tooltip service) to be translated into an actual tootip.",
+            "description": "Dictionary of column name - column data items. Each column data item contains a display value, a tooltip hint, a link hint, and an orderby value. <para/>The display value is encoded by the CultureDataFormatter and can be decoded / localized by that class; all other values are optional. <para/>Tooltip hints can be passed to the TooltipProvider (Tooltip service) to be translated into an actual tootip.",
             "type": "object",
             "additionalProperties": {
               "$ref": "#/components/schemas/SuperOffice.CRM.ArchiveLists.ArchiveColumnData"
@@ -5745,7 +5745,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.FindCarriers.FindRequest": {
-        "description": "Find: Execute a Find operation and return a page of results. The criteria for the Find are fetched from the restriction storage provider according to the given parameters. The columns of the result are calculated based on the restriction. The orderby columns are also calculated by the system.&lt;para/&gt;The other variants of the Find method allow you greater control over the individual aspects of the process.",
+        "description": "Find: Execute a Find operation and return a page of results. The criteria for the Find are fetched from the restriction storage provider according to the given parameters. The columns of the result are calculated based on the restriction. The orderby columns are also calculated by the system.<para/>The other variants of the Find method allow you greater control over the individual aspects of the process.",
         "type": "object",
         "properties": {
           "StorageType": {
@@ -5826,7 +5826,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.FindCarriers.FindFromRestrictionsColumnsRequest": {
-        "description": "FindFromRestrictionsColumns: Execute a Find operation and return a page of results. &lt;para/&gt;The criteria for the Find are passed in directly, not fetched by a restriction storage provider. &lt;para/&gt;The desired columns of the result set are also passed in directly.&lt;para/&gt;The orderby information is calculated by the system.&lt;para/&gt;Use the GetCriteriaInformation and GetDefaultDesiredColumns service methods to let the system calculate these values, if you want to use or modify them.",
+        "description": "FindFromRestrictionsColumns: Execute a Find operation and return a page of results. <para/>The criteria for the Find are passed in directly, not fetched by a restriction storage provider. <para/>The desired columns of the result set are also passed in directly.<para/>The orderby information is calculated by the system.<para/>Use the GetCriteriaInformation and GetDefaultDesiredColumns service methods to let the system calculate these values, if you want to use or modify them.",
         "type": "object",
         "properties": {
           "Restrictions": {
@@ -5924,7 +5924,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.FindCarriers.FindFromRestrictionsColumnsOrderByRequest": {
-        "description": "FindFromRestrictionsColumnsOrderBy: Execute a Find operation and return a page of results. &lt;para/&gt;The criteria for the Find are passed in directly, not fetched by a restriction storage provider. &lt;para/&gt;The desired columns of the result set are also passed in directly.&lt;para/&gt;The orderby information is also passed in directly.&lt;para/&gt;Use the GetCriteriaInformation, GetDefaultDesiredColumns and GetDefaultOrderBy service methods to let the system calculate these values, if you want to use or modify them.",
+        "description": "FindFromRestrictionsColumnsOrderBy: Execute a Find operation and return a page of results. <para/>The criteria for the Find are passed in directly, not fetched by a restriction storage provider. <para/>The desired columns of the result set are also passed in directly.<para/>The orderby information is also passed in directly.<para/>Use the GetCriteriaInformation, GetDefaultDesiredColumns and GetDefaultOrderBy service methods to let the system calculate these values, if you want to use or modify them.",
         "type": "object",
         "properties": {
           "Restrictions": {
@@ -6064,7 +6064,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.FindCarriers.FindOrderByRequest": {
-        "description": "FindOrderBy: Execute a Find operation and return a page of results. The criteria for the Find are fetched from the restriction storage provider according to the given parameters. The columns of the result are calculated based on the restriction. The orderby parameter is used for sorting the results.&lt;para/&gt;The other variants of the Find method allow you greater control over the individual aspects of the process.",
+        "description": "FindOrderBy: Execute a Find operation and return a page of results. The criteria for the Find are fetched from the restriction storage provider according to the given parameters. The columns of the result are calculated based on the restriction. The orderby parameter is used for sorting the results.<para/>The other variants of the Find method allow you greater control over the individual aspects of the process.",
         "type": "object",
         "properties": {
           "StorageType": {
@@ -6249,7 +6249,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.FindCarriers.FindFromRestrictionsColumns2Request": {
-        "description": "FindFromRestrictionsColumns2: Execute a Find operation and return a page of results. &lt;para/&gt;The criteria for the Find are passed in directly, not fetched by a restriction storage provider. &lt;para/&gt;The desired columns of the result set are also passed in directly.&lt;para/&gt;The orderby information is calculated by the system.&lt;para/&gt;Use the GetCriteriaInformation and GetDefaultDesiredColumns service methods to let the system calculate these values, if you want to use or modify them.",
+        "description": "FindFromRestrictionsColumns2: Execute a Find operation and return a page of results. <para/>The criteria for the Find are passed in directly, not fetched by a restriction storage provider. <para/>The desired columns of the result set are also passed in directly.<para/>The orderby information is calculated by the system.<para/>Use the GetCriteriaInformation and GetDefaultDesiredColumns service methods to let the system calculate these values, if you want to use or modify them.",
         "type": "object",
         "properties": {
           "Restrictions": {
@@ -6272,7 +6272,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.FindCarriers.FindFromRestrictionsColumnsOrderBy2Request": {
-        "description": "FindFromRestrictionsColumnsOrderBy2: Execute a Find operation and return a page of results. &lt;para/&gt;The criteria for the Find are passed in directly, not fetched by a restriction storage provider. &lt;para/&gt;The desired columns of the result set are also passed in directly.&lt;para/&gt;The orderby information is also passed in directly.&lt;para/&gt;Use the GetCriteriaInformation, GetDefaultDesiredColumns and GetDefaultOrderBy service methods to let the system calculate these values, if you want to use or modify them.",
+        "description": "FindFromRestrictionsColumnsOrderBy2: Execute a Find operation and return a page of results. <para/>The criteria for the Find are passed in directly, not fetched by a restriction storage provider. <para/>The desired columns of the result set are also passed in directly.<para/>The orderby information is also passed in directly.<para/>Use the GetCriteriaInformation, GetDefaultDesiredColumns and GetDefaultOrderBy service methods to let the system calculate these values, if you want to use or modify them.",
         "type": "object",
         "properties": {
           "Restrictions": {
@@ -6310,7 +6310,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.FindCarriers.FindOrderBy2Request": {
-        "description": "FindOrderBy2: Execute a Find operation and return a page of results. The criteria for the Find are fetched from the restriction storage provider according to the given parameters. The columns of the result are calculated based on the restriction. The orderby parameter is used for sorting the results.&lt;para/&gt;The other variants of the Find method allow you greater control over the individual aspects of the process.",
+        "description": "FindOrderBy2: Execute a Find operation and return a page of results. The criteria for the Find are fetched from the restriction storage provider according to the given parameters. The columns of the result are calculated based on the restriction. The orderby parameter is used for sorting the results.<para/>The other variants of the Find method allow you greater control over the individual aspects of the process.",
         "type": "object",
         "properties": {
           "StorageType": {
