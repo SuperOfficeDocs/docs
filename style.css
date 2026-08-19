@@ -1457,12 +1457,22 @@ html:not(.dark) .prose td {
  * just the content column produced wide empty gutters or an unbalanced
  * layout against the still-fixed sidebar/TOC). */
 @media (min-width: 1536px) {
-  /* Note: #body-content's actual max-width class is a Tailwind peer-variant
-   * (`peer-[.is-not-custom]:max-w-8xl`), not the literal class `max-w-8xl`
-   * - verified live that a compound `#body-content.max-w-8xl` selector
-   * never matched. Target the id alone, which already has enough
-   * specificity to win regardless of the class token's exact form. */
-  #body-content {
+  /* Real regression caught live (2026-08-19): #body-content and
+   * #content-area both render on `mode: "custom"` pages too (home,
+   * Guides welcome, Integrations, Release Notes index) with DIFFERENT,
+   * mutually exclusive intended behavior there - #body-content's real
+   * class is a Tailwind peer-variant, `peer-[.is-custom]:max-w-none
+   * peer-[.is-not-custom]:max-w-8xl` (not the literal class `max-w-8xl`
+   * a first pass assumed), and #content-area's class on a custom page is
+   * a completely different `w-full` with no `calc(100% - 28rem)` at all.
+   * `max-width: none` on custom pages is what lets their full-bleed
+   * calc(-50vw...) hero-band background span edge-to-edge - an
+   * unconditional override broke that, gluing the whole page to the left
+   * with a large blank gap on the right. Fixed by replicating the same
+   * peer condition Tailwind uses: `#navbar` is the peer, carrying
+   * `is-custom`/`is-not-custom` as a sibling of #body-content, so only
+   * apply when navbar is confirmed `is-not-custom`. */
+  #navbar.is-not-custom ~ #body-content {
     max-width: 110.4rem !important; /* 92rem * 1.2 */
   }
 
@@ -1481,12 +1491,14 @@ html:not(.dark) .prose td {
   /* #content-area's own Tailwind width is `calc(100% - 28rem)`, reserving
    * space for the TOC-side column - kept in sync with
    * #content-side-layout's own scaled max-width below, since both encode
-   * the same 28rem reservation independently. */
+   * the same 28rem reservation independently. Same peer-guard as
+   * #body-content above - custom pages' own #content-area is a
+   * different `w-full` element with no reservation to keep in sync. */
   #content-side-layout {
     max-width: 33.6rem !important; /* 28rem * 1.2 */
   }
 
-  #content-area {
+  #navbar.is-not-custom ~ #body-content #content-area {
     width: calc(100% - 33.6rem) !important;
   }
 
