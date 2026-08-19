@@ -924,11 +924,13 @@ body:has(#content > h1) #table-of-contents-content > li.toc-item:first-child {
  * tools/ci/apply-code-wrap.py) rather than applied globally, since most
  * multi-line indented code elsewhere in the docs relies on the default
  * `white-space: pre` to preserve exact formatting without unexpected
- * mid-line breaks. */
+ * mid-line breaks. `!important` needed: verified live that Mintlify's own
+ * Shiki-highlighted `<pre>` still renders unwrapped without it, despite
+ * the computed style otherwise showing `pre-wrap` correctly. */
 .wrap-code-samples pre,
 .wrap-code-samples pre code {
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
+  white-space: pre-wrap !important;
+  overflow-wrap: break-word !important;
 }
 
 /* ─── TABLES ───────────────────────────────────────────────── */
