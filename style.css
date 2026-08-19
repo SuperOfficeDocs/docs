@@ -919,6 +919,18 @@ body:has(#content > h1) #table-of-contents-content > li.toc-item:first-child {
   color: var(--dune-white) !important;
 }
 
+/* Wrap long single-line code samples instead of scrolling horizontally
+ * (#266). Scoped to an explicit `.wrap-code-samples` marker div (see
+ * tools/ci/apply-code-wrap.py) rather than applied globally, since most
+ * multi-line indented code elsewhere in the docs relies on the default
+ * `white-space: pre` to preserve exact formatting without unexpected
+ * mid-line breaks. */
+.wrap-code-samples pre,
+.wrap-code-samples pre code {
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
 /* ─── TABLES ───────────────────────────────────────────────── */
 /* LM only: alternating row colours + green header.
  * DM: explicit resets so none of the LM rules bleed through. */
