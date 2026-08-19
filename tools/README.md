@@ -50,6 +50,8 @@ Scripts that convert, generate, or verify content for this repo. Not published t
 | `check-landing-page-templates.py` | ci | Warns (never fails) if a `mode: "custom"` page mixes category-landing and subcategory template markup | Yes |
 | `check-release-notes-api-structure.py` | ci | Warns (never fails) if a changed file sits in a subfolder under `release-notes/{major}/api/` | Yes |
 | `find-stale-generated-pages.py` | ci | Finds generated reference pages dropped from their tree's nav | Yes |
+| `apply-wide-mode.py` | ci | Auto-fixes: applies `mode: "wide"` to a maintained list of overflowing reference pages, commits back to the PR | Yes |
+| `apply-code-wrap.py` | ci | Auto-fixes: wraps fenced code blocks on a maintained list of pages in a `.wrap-code-samples` marker so long lines wrap instead of scrolling, commits back to the PR | Yes |
 | `check-bom.ps1` | top level | Scans/optionally strips a UTF-8 BOM | Yes |
 | `check-encoding.py` | top level | Flags invalid UTF-8 / mojibake across `.md`/`.mdx` | Yes |
 | `check-image-references.py` | top level | Verifies every image reference resolves to a real file | Yes |
