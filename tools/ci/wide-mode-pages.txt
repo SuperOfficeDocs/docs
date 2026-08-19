@@ -1,0 +1,20 @@
+# Maintained list of generated reference pages that need `mode: "wide"`
+# frontmatter to stop their tables/code samples visually overflowing into
+# the right TOC column (see issue #266).
+#
+# One repo-relative page path per line, no extension (matches the config
+# nav files' own convention) - the tool resolves `.mdx` or `.md` itself.
+# Comments (#) and blank lines are ignored.
+#
+# This list is NOT an attempt to exhaustively classify every page in these
+# trees - overflow depends on each page's actual table/code content and
+# isn't reliably predictable from the outside (confirmed empirically: a
+# second database/tables page beyond the one originally reported also
+# overflows). Append to this list whenever a new overflowing page is found
+# or reported; the CI workflow re-applies `mode: "wide"` to everything
+# listed here on every PR touching these trees, so a future ADO regen
+# dropping the frontmatter gets it added back automatically.
+
+en/database/tables/index-by-id
+en/api/mdo-providers/reference/index
+en/api/archive-providers/reference/activity
