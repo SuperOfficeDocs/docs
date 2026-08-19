@@ -2,9 +2,9 @@
 uid: automated-tests
 title: Automated tests
 description: Every check that runs against a PR or on a schedule for this repo - markdownlint, Vale, build validation, broken-link checking, the CRMScript reference drift check, and the stale generated-pages check - what each covers, whether it blocks a merge, and where to look when one flags something.
-keywords: ['ci', 'automated tests', 'markdownlint', 'vale', 'broken links', 'mint validate', 'automations', 'crmscript', 'stale pages', 'generated pages', 'landing page', 'template guard']
+keywords: ['ci', 'automated tests', 'markdownlint', 'vale', 'broken links', 'mint validate', 'automations', 'crmscript', 'stale pages', 'generated pages', 'landing page', 'template guard', 'release notes']
 author: digitaldiina
-date: 08.14.2026
+date: 08.19.2026
 content_type: concept
 language: en
 ---
@@ -20,6 +20,7 @@ This page is the single reference for every automatic check that runs against th
 | Markdownlint | GitHub Action (`.github/workflows/markdownlint.yml`) | No - advisory | This repo, `.markdownlint.yaml` / `.markdownlintignore` |
 | Reserved `version` frontmatter guard | GitHub Action (`.github/workflows/version-frontmatter-guard.yml`) | No - advisory (warns only) | This repo, `tools/ci/check-reserved-version-property.py` |
 | Landing page template guard | GitHub Action (`.github/workflows/landing-page-template-guard.yml`) | No - advisory (warns only) | This repo, `tools/ci/check-landing-page-templates.py` |
+| Release-notes API structure guard | GitHub Action (`.github/workflows/release-notes-api-structure-guard.yml`) | No - advisory (warns only) | This repo, `tools/ci/check-release-notes-api-structure.py` |
 | Vale | Mintlify CI Checks add-on | No - Warning level | Mintlify dashboard (Add-ons > CI Checks), using this repo's `.vale.ini` |
 | Build validation | Mintlify preview deployment | Yes - a failed build shows as a red "Mintlify Deployment" check | Mintlify, automatic on every PR (see [Deploy trigger mechanics][2]) |
 | Broken links (internal) | Mintlify CI Checks add-on | No - Warning level | Mintlify dashboard (Add-ons > CI Checks) |
@@ -52,11 +53,19 @@ Lints only the `.md`/`.mdx` files changed in a PR (or pushed directly to `main`)
 
 ### Reserved version frontmatter guard
 
-Checks only the `.md`/`.mdx` files changed in a PR (or pushed directly to `main`) for a `version:` frontmatter key. Mintlify's search back end treats `version` as a reserved search-filter field and 400s on the non-string value our own `version` property produced - so the property was renamed to `so_version` repo-wide (see [issue #254][9]). This check exists so the old key does not quietly come back (a copy-pasted frontmatter block from a stale branch, or muscle memory). It never fails the check - a hit shows up as a warning annotation on the relevant line in the PR's Files Changed tab, suggesting `so_version` instead.
+Checks only the `.md`/`.mdx` files changed in a PR (or pushed directly to `main`) for a `version:` frontmatter key. Mintlify's search back end treats `version` as a reserved search-filter field and 400s on the non-string value our own `version` property produced - so the property was renamed to `so_version` repo-wide (see [issue #254][9]). This check exists so the old key does not quietly come back (a copy-pasted frontmatter block from a stale branch, or muscle memory). It never fails the check - a hit shows up as a warning annotation on the relevant line in the PR's Files Changed tab, suggesting `so_version` instead. Covers every changed `.md`/`.mdx` file, including `release-notes/database/` and `release-notes/{major}/api/` - both trees are fed by an external ADO pipeline (see #150) that has already reintroduced `version:` once.
 
 ### Landing page template guard
 
 Checks only the `.mdx` files changed in a PR (or pushed directly to `main`) for a `mode: "custom"` landing page that mixes the two custom-landing Blueprint templates' card-body markup: a `category-landing` page (`id="category-landing"`) containing a subcategory-style `linklist` block, or a `subcategory` page (`id="subcategory"`) containing a category-landing-style `concept-links` list. `style.css` only styles `.linklist` under `#subcategory`, so a mismatch like this renders with unstyled, browser-default markup instead of the intended layout, without tripping any other check, since the two templates are only inconsistent with each other, not individually invalid MDX. It never fails the check - a hit shows up as a warning annotation on the relevant line in the PR's Files Changed tab.
+
+### Release-notes API structure guard
+
+Only triggers on a PR touching `release-notes/*/api/**`, generated content fed by an external ADO pipeline (see #150). `release-notes/{major}/api/` uses a flat structure - generated files sit directly under `MAJOR/api/`, no per-minor-version subfolder (decided in #219, see [Add or update release notes][10]). This check warns when a changed file sits one directory level deeper than that - `release-notes/{major}/api/{subfolder}/...` - which is exactly the shape a first real generator PR landed (see #291) when it was built against a since-corrected, stale version of #150's own spec. Historical dotted-version trees (`release-notes/10.1/api/`, `release-notes/9.2/api/`, etc.) are excluded by design - the check's path match requires a digit-only major version, which those don't have. It never fails the check - a hit shows up as a warning annotation on the PR's Files Changed tab, naming the file.
+
+<Note>
+Added 2026-08-19, ahead of this pipeline's generator having a track record in this repo - see #291 for the regression that prompted it. Advisory-only for now; promoting it to a blocking check is a reasonable follow-up once it has run clean against a few real generator PRs.
+</Note>
 
 ### Vale
 
@@ -130,3 +139,4 @@ mint automations create --name "Broken link detection" --type broken-link-detect
 [7]: ./how-to-update-crmscript-reference
 [8]: ./acceptance-testing
 [9]: https://github.com/SuperOfficeDocs/docs/issues/254
+[10]: ./how-to-add-release-notes

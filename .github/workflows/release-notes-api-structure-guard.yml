@@ -1,4 +1,4 @@
-name: Reserved version frontmatter guard
+name: Release-notes API structure guard
 
 on:
   push:
@@ -15,8 +15,8 @@ permissions:
   contents: read
 
 jobs:
-  version-frontmatter-guard:
-    name: "Warn on reintroduced version: frontmatter"
+  release-notes-api-structure-guard:
+    name: "Warn on nested subfolders under release-notes/{major}/api/"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -29,16 +29,7 @@ jobs:
         uses: tj-actions/changed-files@v45
         with:
           files: |
-            **/*.md
-            **/*.mdx
-          files_ignore: |
-            **/reference/**
-            en/database/tables/**
-            release-notes/api/**
-            blueprint-templates/**
-            api-sources/**
-            downloads/**
-            tools/benchmarks/results/**
+            release-notes/*/api/**
 
       - name: Set up Python
         if: steps.changed.outputs.any_changed == 'true'
@@ -46,6 +37,6 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: "Check changed files for reserved version: property"
+      - name: "Check changed files for nested release-notes API subfolders"
         if: steps.changed.outputs.any_changed == 'true'
-        run: python tools/ci/check-reserved-version-property.py ${{ steps.changed.outputs.all_changed_files }}
+        run: python tools/ci/check-release-notes-api-structure.py ${{ steps.changed.outputs.all_changed_files }}
