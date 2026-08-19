@@ -46,7 +46,9 @@ Scripts that convert, generate, or verify content for this repo. Not published t
 | `add-database-enum-sidebar-titles.py` | ci | Auto-fixes: adds `sidebarTitle` to `en/database/tables/enums/` pages, commits back to the PR | Yes |
 | `add-mdo-provider-sidebar-titles.py` | ci | Auto-fixes: adds a proper-case `title` and a short `sidebarTitle` to long `relationssearchlistprovider*` MDO-provider pages, commits back to the PR | Yes |
 | `check-crmscript-drift.ps1` | ci | Regenerates CRMScript reference, fails the PR if it drifts from source | Yes |
-| `check-reserved-version-property.py` | ci | Warns (never fails) if a changed file reintroduces `version:` frontmatter | Yes |
+| `fix-reserved-version-property.py` | ci | Auto-fixes: renames `version:` to `so_version:` in a changed file's frontmatter, commits back to the PR | Yes |
+| `check-landing-page-templates.py` | ci | Warns (never fails) if a `mode: "custom"` page mixes category-landing and subcategory template markup | Yes |
+| `check-release-notes-api-structure.py` | ci | Warns (never fails) if a changed file sits in a subfolder under `release-notes/{major}/api/` | Yes |
 | `find-stale-generated-pages.py` | ci | Finds generated reference pages dropped from their tree's nav | Yes |
 | `check-bom.ps1` | top level | Scans/optionally strips a UTF-8 BOM | Yes |
 | `check-encoding.py` | top level | Flags invalid UTF-8 / mojibake across `.md`/`.mdx` | Yes |

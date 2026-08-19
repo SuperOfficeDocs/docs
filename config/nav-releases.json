@@ -572,7 +572,7 @@
   {
     "group": "Database changelog",
     "pages": [
-      "release-notes/database/changeslog",
+      "release-notes/database/changelog",
       {
         "group": "12",
         "root": "release-notes/database/changes-12.2.2072",

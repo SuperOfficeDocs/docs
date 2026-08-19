@@ -1,0 +1,44 @@
+name: Release-notes API structure guard
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+# Automatically cancel in-progress runs on the same branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  release-notes-api-structure-guard:
+    name: "Warn on nested subfolders under release-notes/{major}/api/"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get changed files
+        id: changed
+        uses: tj-actions/changed-files@v45
+        with:
+          files: |
+            release-notes/*/api/**
+
+      - name: Set up Python
+        if: steps.changed.outputs.any_changed == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: "Check changed files for nested release-notes API subfolders"
+        if: steps.changed.outputs.any_changed == 'true'
+        env:
+          CHANGED_FILES: ${{ steps.changed.outputs.all_changed_files }}
+        run: python tools/ci/check-release-notes-api-structure.py $CHANGED_FILES
