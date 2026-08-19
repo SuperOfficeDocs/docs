@@ -39,4 +39,6 @@ jobs:
 
       - name: "Check changed files for nested release-notes API subfolders"
         if: steps.changed.outputs.any_changed == 'true'
-        run: python tools/ci/check-release-notes-api-structure.py ${{ steps.changed.outputs.all_changed_files }}
+        env:
+          CHANGED_FILES: ${{ steps.changed.outputs.all_changed_files }}
+        run: python tools/ci/check-release-notes-api-structure.py $CHANGED_FILES

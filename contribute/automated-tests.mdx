@@ -17,8 +17,8 @@ This page is the single reference for every automatic check that runs against th
 |---|---|---|---|
 | Database enum sidebarTitle auto-fix | GitHub Action (`.github/workflows/database-enum-sidebar-title.yml`) | No - auto-fixes and pushes a commit | This repo, `tools/ci/add-database-enum-sidebar-titles.py` |
 | MDO-provider title/sidebarTitle auto-fix | GitHub Action (`.github/workflows/mdo-provider-sidebar-title.yml`) | No - auto-fixes and pushes a commit | This repo, `tools/ci/add-mdo-provider-sidebar-titles.py` |
+| Reserved `version` frontmatter auto-fix | GitHub Action (`.github/workflows/version-frontmatter-guard.yml`) | No - auto-fixes and pushes a commit | This repo, `tools/ci/fix-reserved-version-property.py` |
 | Markdownlint | GitHub Action (`.github/workflows/markdownlint.yml`) | No - advisory | This repo, `.markdownlint.yaml` / `.markdownlintignore` |
-| Reserved `version` frontmatter guard | GitHub Action (`.github/workflows/version-frontmatter-guard.yml`) | No - advisory (warns only) | This repo, `tools/ci/check-reserved-version-property.py` |
 | Landing page template guard | GitHub Action (`.github/workflows/landing-page-template-guard.yml`) | No - advisory (warns only) | This repo, `tools/ci/check-landing-page-templates.py` |
 | Release-notes API structure guard | GitHub Action (`.github/workflows/release-notes-api-structure-guard.yml`) | No - advisory (warns only) | This repo, `tools/ci/check-release-notes-api-structure.py` |
 | Vale | Mintlify CI Checks add-on | No - Warning level | Mintlify dashboard (Add-ons > CI Checks), using this repo's `.vale.ini` |
@@ -47,13 +47,17 @@ Only the confirmed `relationssearchlistprovider*` shape is touched - a handful o
 On this repo (public), a workflow's own `GITHUB_TOKEN` push lands its own re-triggered run in "action required" instead of running automatically - GitHub gates it behind a one-click manual approval (Actions tab &gt; the pending run &gt; **Approve and run**) rather than silently re-running. This isn't a failure and doesn't mean anything is broken: the fix commit has already landed by this point, and approving just lets the check confirm (correctly) that there's nothing left to do. Safe to leave unapproved indefinitely if this check isn't a required status for merging.
 </Note>
 
+### Reserved version frontmatter auto-fix
+
+Only triggers on a PR touching `.md`/`.mdx` files (repo-wide, apart from a short list of excluded generated/reference paths - see the workflow file for the current list). Mintlify's search back end treats `version` as a reserved search-filter field and 400s on the non-string value our own `version` property produced - so the property was renamed to `so_version` repo-wide (see [issue #254][9]). Like the two auto-fix checks above, this doesn't just warn - it rewrites `version:` to `so_version:` directly in any changed file's frontmatter and pushes a fix commit onto the PR branch, so an external pipeline that reintroduces the old key gets corrected automatically rather than needing a human to notice a warning and fix it by hand. The rename is a pure key swap - the value and every other frontmatter line are left untouched. Idempotent (a file that already uses `so_version:` is left alone, so the fix commit's own push produces no further commit), and skipped entirely for PRs from a fork, since the default token can't push back to a fork's branch.
+
+<Note>
+On this repo (public), a workflow's own `GITHUB_TOKEN` push lands its own re-triggered run in "action required" instead of running automatically - GitHub gates it behind a one-click manual approval (Actions tab &gt; the pending run &gt; **Approve and run**) rather than silently re-running. This isn't a failure and doesn't mean anything is broken: the fix commit has already landed by this point, and approving just lets the check confirm (correctly) that there's nothing left to do. Safe to leave unapproved indefinitely if this check isn't a required status for merging.
+</Note>
+
 ### Markdownlint
 
 Lints only the `.md`/`.mdx` files changed in a PR (or pushed directly to `main`) using this repo's own `.markdownlint.yaml` rules. Results appear in the workflow run's log in the GitHub Actions tab - a flagged line does not block the merge, but is worth fixing before requesting review. See [markdownlint][3] for how to interpret and fix a specific rule violation, and how to run the same linter locally.
-
-### Reserved version frontmatter guard
-
-Checks only the `.md`/`.mdx` files changed in a PR (or pushed directly to `main`) for a `version:` frontmatter key. Mintlify's search back end treats `version` as a reserved search-filter field and 400s on the non-string value our own `version` property produced - so the property was renamed to `so_version` repo-wide (see [issue #254][9]). This check exists so the old key does not quietly come back (a copy-pasted frontmatter block from a stale branch, or muscle memory). It never fails the check - a hit shows up as a warning annotation on the relevant line in the PR's Files Changed tab, suggesting `so_version` instead. Covers every changed `.md`/`.mdx` file, including `release-notes/database/` and `release-notes/{major}/api/` - both trees are fed by an external ADO pipeline (see #150) that has already reintroduced `version:` once.
 
 ### Landing page template guard
 
@@ -61,11 +65,7 @@ Checks only the `.mdx` files changed in a PR (or pushed directly to `main`) for 
 
 ### Release-notes API structure guard
 
-Only triggers on a PR touching `release-notes/*/api/**`, generated content fed by an external ADO pipeline (see #150). `release-notes/{major}/api/` uses a flat structure - generated files sit directly under `MAJOR/api/`, no per-minor-version subfolder (decided in #219, see [Add or update release notes][10]). This check warns when a changed file sits one directory level deeper than that - `release-notes/{major}/api/{subfolder}/...` - which is exactly the shape a first real generator PR landed (see #291) when it was built against a since-corrected, stale version of #150's own spec. Historical dotted-version trees (`release-notes/10.1/api/`, `release-notes/9.2/api/`, etc.) are excluded by design - the check's path match requires a digit-only major version, which those don't have. It never fails the check - a hit shows up as a warning annotation on the PR's Files Changed tab, naming the file.
-
-<Note>
-Added 2026-08-19, ahead of this pipeline's generator having a track record in this repo - see #291 for the regression that prompted it. Advisory-only for now; promoting it to a blocking check is a reasonable follow-up once it has run clean against a few real generator PRs.
-</Note>
+Only triggers on a PR touching `release-notes/*/api/**`. `release-notes/{major}/api/` uses a flat structure - generated files sit directly under `MAJOR/api/`, using their original generated filename, with no per-minor-version subfolder (see [Add or update release notes][10]). This check warns when a changed file sits one directory level deeper than that instead - `release-notes/{major}/api/{subfolder}/...`. Historical dotted-version trees (`release-notes/10.1/api/`, `release-notes/9.2/api/`, etc.) use their own, different, frozen structure and are excluded by design - the check's path match requires a digit-only major version, which those don't have. It never fails the check - a hit shows up as a warning annotation on the PR's Files Changed tab, naming the file.
 
 ### Vale
 
