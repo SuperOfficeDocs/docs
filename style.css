@@ -227,6 +227,23 @@ body {
   color: var(--dune-white) !important;
 }
 
+/* Keyboard focus outline (#271): Mintlify's own "menu"-shaped dropdown nav
+ * tabs (e.g. "Developer guide") ship with Tailwind's `outline-hidden`
+ * utility and no substitute focus indicator, so tabbing to one leaves no
+ * visible focus state at all — confirmed via real keyboard traversal, and
+ * confirmed this repo's own CSS wasn't the cause (no prior `outline` rule
+ * existed). Plain `<a>` nav tabs already show the browser's default focus
+ * ring, so this is deliberately scoped to all `.nav-tabs-item`s rather than
+ * just the dropdown button, both to restore the missing state and to make
+ * the ring consistent/on-brand across every top-nav item. Dune white for
+ * contrast against the navbar's dark background in both light (SO green)
+ * and dark (charcoal) mode.
+ */
+#navbar .nav-tabs-item:focus-visible {
+  outline: 2px solid var(--dune-white);
+  outline-offset: -2px;
+}
+
 /* Active nav item: full Dune white */
 #navbar .nav-tabs-item[data-active="true"] {
   color: var(--dune-white) !important;
