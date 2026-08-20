@@ -47,11 +47,4 @@ Om ett meddelande innehåller två frågor som bör hanteras separat, kan du del
 
 1. Klicka på **OK**. Meddelandet delas och det nya ärendet skapas.
 
-## Relaterat innehåll
-
-* [Dela ett ärende][2]
-* [Slå ihop ärenden][3]
-
 [1]: ./index#open
-[2]: ./split-request
-[3]: ./merge

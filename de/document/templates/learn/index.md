@@ -51,18 +51,7 @@ Damit Sie mit Ihren Kunden in deren Sprache kommunizieren können (sofern mögli
 1. In Einstellungen und Verwaltung die [Dokumentvorlage hinzufügen und definieren][6].
 1. Machen Sie die Dokumentvorlage [in den gewünschten Benutzergruppen verfügbar][5].
 
-## Verwandte Inhalte
-
-* [Vorlage bearbeiten][2]
-* [Vorlagendokument erstellen][4]
-* [Vorlagenvariablen anzeigen][1]
-* [Vorlagenvariablen (Service)][8]
-* [Angebotsvorlagen][7]
-
 [1]: ./template-variables
-[4]: ./create
 [2]: ../admin/update-template
 [6]: ../admin/link-template
 [5]: ../../../admin/lists/user-group-filtering
-[7]: ./quote-templates
-[8]: ../../../knowledge-base/learn/reply-templates/template-variables

@@ -54,13 +54,3 @@ Zum Beispiel können **Kundensupport- und Servicelevel-Vereinbarungen (SLA)** fe
 Jeder Priorität ist eine **Zugänglichkeitsoption** zugewiesen. Falls die Priorität einer Anfrage auf **Extern** gesetzt ist, kann sie über das **SuperOffice Kundenzentrum** ausgewählt werden.
 
 Falls mehr als zwei Prioritäten extern verfügbar sind, kann der Kunde die gewünschte Priorität für seine Anfrage auswählen. Dadurch kann es vorkommen, dass Kunden ihren Anfragen eine unnötig hohe Priorität zuweisen, um eine schnellere Antwort zu erhalten. Um dies zu vermeiden, sollten die höchsten Prioritäten auf **Intern** gesetzt werden, während **Mittel** und **Niedrig** extern verfügbar sind.
-
-## Verwandte Inhalte
-
-* [Priorität erstellen][1]
-* [Prioritäten löschen][2]
-* [Eskalationsstufen erstellen][3]
-
-[1]: ./create
-[2]: ./delete
-[3]: ./escalation-levels

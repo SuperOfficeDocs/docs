@@ -20,13 +20,6 @@ Sie können [FAQs erstellen][1], aus denen Ihre Service-Mitarbeiter auswählen k
 
 Ihre Kunden können diese FAQs sogar über das Kundenzentrum (Webportal) abrufen, ohne mit Ihnen in Kontakt zu treten. Auf diese Weise finden Ihre Kunden bequem und rund um die Uhr Antworten auf häufig gestellte Fragen, während Sie weniger Anfragen bearbeiten müssen.
 
-## Verwandte Inhalte
-
-* [Kundenzentrum konfigurieren][2]
-* [FAQ veröffentlichen][3]
-
 [1]: ../../knowledge-base/learn/faq/create
-[3]: ../../knowledge-base/learn/faq/publish
-[2]: ./config
 
 [img1]: ../../../media/loc/en/customer-center/set-up-a-faq.png

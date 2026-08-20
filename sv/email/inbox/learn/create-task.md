@@ -38,15 +38,6 @@ Du kan snabbt skapa en uppföljning (att göra) baserat på ett e-postmeddelande
 
 1. Klicka på **Spara** för att skapa uppgiften.
 
-## Relaterat innehåll
-
-* [Arkivera e-post och bilagor][1]
-* [Skapa ärende][2]
-* [Om händelser][4]
-
-[1]: ./archive
-[2]: ./create-request
 [3]: ../../../diary/learn/create-follow-up#fields
-[4]: ../../../diary/learn/follow-ups
 
 [img1]: ../../../../media/loc/en/email/inbox-create-task.png

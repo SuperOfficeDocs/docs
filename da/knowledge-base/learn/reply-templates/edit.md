@@ -17,6 +17,11 @@ audience_tooltip: SuperOffice Service
 redirect_from:
   - /da/request/reply-templates/learn/delete
   - /da/request/reply-templates/learn/edit
+related:
+  - title: "Opret en ny sprogversion af en svarskabelon"
+    href: "/da/knowledge-base/learn/reply-templates/new-language"
+  - title: "Kopier svarskabeloner"
+    href: "/da/knowledge-base/learn/reply-templates/create#copy"
 language: da
 ---
 
@@ -43,12 +48,5 @@ Når du redigerer en svarskabelon, kan det enten betyde:
 1. Klik på **Slet**-knappen nederst i skærmbilledet.
 1. Bekræft sletningen, når du bliver bedt om det. Svarskabelonen slettes med det samme.
 
-## Relateret indhold
-
-* [Opret en ny sprogversion af en svarskabelon][3]
-* [Kopier svarskabeloner][4]
-
 [1]: ../../../request/learn/reply
 [2]: ./create
-[4]: ./create#copy
-[3]: ./new-language

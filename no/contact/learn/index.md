@@ -48,21 +48,7 @@ Nederst i **Person**-bildet gir [detaljkort][16] rask tilgang til informasjon so
 | [Prosjekter][14] | Viser alle prosjekter der den aktive personen er medlem. |
 | [Relasjoner][15] | Viser koblinger mellom denne personen og andre personer eller firmaer. |
 
-## Relatert innhold
-
-* [Opprette en ny person][2]
-* [Redigere personverninnstillinger for en person][3]
-* [Flytte personer][4]
-* [Slå sammen personer][5]
-* [Slette personer][6]
-* [Sende e-post til en person][7]
-
 [2]: ./create
-[3]: ../../security/privacy/learn/edit-legal-base
-[4]: ./move
-[5]: ./merge-contacts
-[6]: ./delete
-[7]: ./send-email
 [8]: ../../company/learn/index
 
 [11]: ../../learn/section-tabs/activities-tab

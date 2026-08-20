@@ -87,12 +87,4 @@ Webhook'en återgår till Aktiv-status och återupptar normal leverans.
 
 Aviseringsmottagare ser en avisering i SuperOffice när en webhook automatiskt inaktiveras. Välj aviseringen för att öppna Webhooks-panelen.
 
-## Relaterat innehåll
-
-* [Skapa webhook][1]
-* [Webhooks utvecklarguide][2]
-
-[1]: ./create
-[2]: ../../../../en/automation/webhook/dev/index
-
 [img1]: ../../../../media/loc/en/admin/admin-system-design-webhook-overview.png

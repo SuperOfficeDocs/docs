@@ -10,6 +10,15 @@ content_type: howto
 tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - title: "Översikt över användardefinierade fält"
+    href: "/sv/custom-objects/learn/index"
+  - title: "Lägg till användardefinierade fält"
+    href: "/sv/custom-objects/admin/add-udef"
+  - title: "Lägg till extra fält"
+    href: "/sv/custom-objects/admin/create-extra-field"
+  - title: "Hantera anpassade layouter med Skärmdesignern"
+    href: "/sv/customization/screen-designer/admin/add-layout"
 language: sv
 ---
 
@@ -52,18 +61,6 @@ Klicka på <i class="ph ph-pencil-simple" aria-label="Edit"></i> för att redige
 ## Ytterligare tips
 
 * **Anpassa fält**: Att lägga till användardefinierade fält eller justera layout kräver administrativ tillgång och i vissa fall en licens för Development Tools eller **Core**-planen.
-
-## Relaterat innehåll
-
-* [Översikt över användardefinierade fält][1]
-* [Lägg till användardefinierade fält][2]
-* [Lägg till extra fält][3]
-* [Hantera anpassade layouter med Skärmdesignern][4]
-
-[1]: ./index
-[2]: ../admin/add-udef
-[3]: ../admin/create-extra-field
-[4]: ../../customization/screen-designer/admin/add-layout
 
 [img6]: ../../../media/loc/en/sale/sale-more.png
 [img4]: ../../../media/loc/en/project/project-more.png

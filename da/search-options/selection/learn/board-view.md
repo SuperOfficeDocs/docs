@@ -225,29 +225,8 @@ Brug gruppering kreativt for effektiv databehandling.
 
 * **Gem layout pr. anvendelse:** Vælg **Gem kun kolonner for det aktuelle udvalg** for at bevare en specifik opsætning for ét udvalg.
 
-## Relateret indhold
-
-* [Opret et udvalg][1]
-* [Opret et salg / felter i salgskortet][12]
-* [Konfigurér salgsfaser][13]
-* [Opret en sag / sagegenskaber][14]
-* [Opret sagsstatus][15]
-* [Opret sagskategori][16]
-* [Opret et projekt / felter i projektkortet][17]
-* [Konfigurér projektstatus][18]
-* [Konfigurér projekttyper][19]
-
-[1]: ./create
 [2]: ./index
 [11]: ../../../learn/getting-started/main-screen/side-panel
-[12]: ../../../sale/learn/create
-[13]: ../../../sale/admin/sale-stage
-[14]: ../../../request/learn/create
-[15]: ../../../request/admin/status/create
-[16]: ../../../request/admin/category/create
-[17]: ../../../project/learn/create
-[18]: ../../../project/admin/project-status
-[19]: ../../../project/admin/project-type
 
 [img1]: ../../../../media/loc/en/search-options/board-view-toggle.png
 [img2]: ../../../../media/loc/en/search-options/board-view.png

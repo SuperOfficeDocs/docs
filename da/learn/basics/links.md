@@ -75,19 +75,10 @@ Når du opretter eller redigerer en opfølgning eller et dokument, kan du tilfø
 
 ![Fanen for links i en opfølgning -screenshot][img1]
 
-## Relateret indhold
-
-* [Relationer-fanen][5]
-* [Forespørgsler-fanen][6]
-* [Kontakter-fanen][7]
-
 [1]: ../../project/learn/index
 [2]: ../../sale/learn/index
 [3]: ../../diary/learn/create-follow-up
 [4]: ../../document/learn/create
-[5]: ../section-tabs/relations-tab
-[6]: ../section-tabs/activities-tab
-[7]: ../section-tabs/contacts-tab
 [8]: ../../search-options/learn/find-screen
 
 [img1]: ../../../media/loc/en/diary/links.png

@@ -47,15 +47,4 @@ Volg deze richtlijnen om consistente en nauwkeurige UTM-tracking in SuperOffice 
 
 Lees hoe deze parameters worden gebruikt om leadbronnen te meten in SuperOffice CRM in [Conversietracking][1].
 
-## Gerelateerde inhoud
-
-* [UTM-tracking inschakelen voor formulierverzendingen][2]
-* [UTM-builder voor SuperOffice-formulieren][3]
-* [Google Analytics Campaign URL Builder][4]
-* [UTM Builder][5]
-
 [1]: ./index
-[2]: ../admin/set-up
-[3]: ../../forms/learn/publish
-[4]: https://ga-dev-tools.google/campaign-url-builder
-[5]: https://utmbuilder.net

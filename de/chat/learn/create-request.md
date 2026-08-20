@@ -13,6 +13,13 @@ category: Service
 topic: chat
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - title: "Chat mit Person in SuperOffice verknüpfen"
+    href: "/de/chat/learn/link-to-person"
+  - title: "Chat beantworten"
+    href: "/de/chat/learn/respond"
+  - title: "Informationen über Anfragen"
+    href: "/de/request/learn/index"
 language: de
 ---
 
@@ -23,13 +30,3 @@ Wenn Sie das Problem nicht über den Chat lösen können, können Sie eine Anfra
 3. Das Chatprotokoll wird der Anfrage hinzugefügt, aber Sie können hier bei Bedarf weitere Informationen hinzufügen.
 4. Klicken Sie auf **Speichern**.
 5. Eine kurze Nachricht mit der Anfrage-ID wird zum Textfeld im Chat hinzugefügt. Klicken Sie auf **Senden**, um diese an den Kunden zu senden.
-
-## Verwandte Inhalte
-
-* [Chat mit Person in SuperOffice verknüpfen][1]
-* [Chat beantworten][3]
-* [Informationen über Anfragen][4]
-
-[1]: ./link-to-person
-[3]: ./respond
-[4]: ../../request/learn/index

@@ -51,11 +51,4 @@ Find ud af, hvordan du tilføjer og redigerer formål med behandling af personop
 
 1. Klik på <i class="ph ph-translate" aria-label="Translate"></i> ud for et felt for at tilføje nye eller redigere eksisterende [oversættelser][1] af feltteksterne.
 
-## Relateret indhold
-
-* [Personbeskyttelse - Retsgrundlag][2]
-* [Personbeskyttelse - Kilde][3]
-
 [1]: ../../../localization/learn/translate-fields
-[2]: ../learn/index#legal-basis
-[3]: ../learn/index#source

@@ -79,11 +79,3 @@ Webpanelen laden dynamisch inhoud op basis van CRM-context en de URL die is gede
 1. Als de nieuwe URL anders is dan de vorige, verzendt het systeem een nieuw verzoek.
 1. De server reageert met de juiste webpagina: het ontvangt de URL, berekent de pagina met behulp van URL-parameters en retourneert het resultaat.
 1. Het paneel rendert de webpagina binnen SuperOffice CRM.
-
-## Gerelateerde inhoud
-
-* [Webpaneel toevoegen][1]
-* [Webpanelen bouwen][2]
-
-[1]: ./add-web-panel
-[2]: ../../../../en/customization/web-panels/dev/index

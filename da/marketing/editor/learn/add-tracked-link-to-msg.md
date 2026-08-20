@@ -43,18 +43,6 @@ Du kan tilføje almindelige (ikke-sporede) links. For tekstlinks skal du klikke 
 
 Hvis du senere beslutter dig for også at spore disse links, skal du vælge indstillingen **Spor alle links** under **Sporing** i Trin 1: Indstillinger. Disse links overvåges dog kun for den pågældende udsendelse og vil ikke være tilgængelige for andre udsendelser eller i flows.
 
-## Relateret indhold
-
-* [Oprette sporede links][5]
-* [Definere linkhandlinger][6]
-* [Link for at vise meddelelse i browser][1]
-* [Vedligehold abonnementer][3]
-* [Afmeldingslink (GDPR)][4]
-
-[1]: ./add-link-to-display-message-in-browser
-[4]: ./add-unsubscribe-link
-[3]: ../../recipients/learn/manage-email-subscriptions
 [5]: ../../tracked-links/learn/create-links
-[6]: ../../tracked-links/learn/define-link-actions
 
 [img2]: ../../../../media/loc/en/marketing/tracked-links-in-editor.png

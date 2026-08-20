@@ -79,13 +79,5 @@ Sie können auch Sprachen entfernen, die Sie nicht verwenden. Dies begrenzt die 
 
 Änderungen werden erst angewendet, wenn Sie auf **Speichern** klicken.
 
-## Verwandte Inhalte
-
-* [E-Mail zur Datenschutzbestätigung senden][2]
-* [Übersicht über Customer Centre][1]
-
-[1]: ../learn/index
-[2]: ../../security/privacy/learn/send-privacy-confirmation-email
-
 [img1]: ../../../media/loc/en/customer-center/subscription-page-styling.png
 [img2]: ../../../media/loc/en/customer-center/subscription-page-options.png

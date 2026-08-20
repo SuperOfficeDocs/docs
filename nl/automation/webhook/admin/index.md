@@ -87,12 +87,4 @@ De webhook keert terug naar de Actief-status en hervat de normale levering.
 
 Meldingsontvangers zien een melding in SuperOffice wanneer een webhook automatisch wordt gedeactiveerd. Selecteer de melding om het Webhooks-paneel te openen.
 
-## Gerelateerde inhoud
-
-* [Webhook aanmaken][1]
-* [Ontwikkelaarsgids voor webhooks][2]
-
-[1]: ./create
-[2]: ../../../../en/automation/webhook/dev/index
-
 [img1]: ../../../../media/loc/en/admin/admin-system-design-webhook-overview.png

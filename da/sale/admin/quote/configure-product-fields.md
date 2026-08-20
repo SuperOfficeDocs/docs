@@ -63,12 +63,4 @@ Disse indstillinger gælder globalt for alle ERP-links via quote connector og p�
 * Giv meningsfulde ledetekster og hjælpetekst for ekstra felter.
 * Ændringer i ledetekster træder i kraft efter næste login.
 
-## Relateret indhold
-
-* [Føj produkt til en prisliste][1]
-* [Tilføj/rediger et produkt i tilbuddet][2]
-
-[1]: ./price-list-and-products
-[2]: ../../learn/quote/create#add-products
-
 [img1]: ../../../../media/loc/en/sale/configure-product-dialog.png

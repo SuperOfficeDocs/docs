@@ -10,6 +10,15 @@ content_type: howto
 tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - title: "Oversigt over brugerdefinerede felter"
+    href: "/da/custom-objects/learn/index"
+  - title: "Tilføj brugerdefinerede felter"
+    href: "/da/custom-objects/admin/add-udef"
+  - title: "Tilføj ekstra felter"
+    href: "/da/custom-objects/admin/create-extra-field"
+  - title: "Administrer tilpassede layout med Skærmdesigner"
+    href: "/da/customization/screen-designer/admin/add-layout"
 language: da
 ---
 
@@ -52,18 +61,6 @@ Klik på <i class="ph ph-pencil-simple" aria-label="Edit"></i> for at redigere o
 ## Yderligere tips
 
 * **Tilpas felterne**: Tilføjelse af brugerdefinerede felter eller justering af layout kræver administrativ adgang og i nogle tilfælde en licens til Development Tools eller **Core**-planen.
-
-## Relateret indhold
-
-* [Oversigt over brugerdefinerede felter][1]
-* [Tilføj brugerdefinerede felter][2]
-* [Tilføj ekstra felter][3]
-* [Administrer tilpassede layout med Skærmdesigner][4]
-
-[1]: ./index
-[2]: ../admin/add-udef
-[3]: ../admin/create-extra-field
-[4]: ../../customization/screen-designer/admin/add-layout
 
 [img6]: ../../../media/loc/en/sale/sale-more.png
 [img4]: ../../../media/loc/en/project/project-more.png

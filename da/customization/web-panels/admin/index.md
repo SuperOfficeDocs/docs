@@ -79,11 +79,3 @@ Webpaneler indlæser dynamisk indhold baseret på CRM-kontekst og den URL, der e
 1. Hvis den nye URL er anderledes end den forrige, sender systemet en ny anmodning.
 1. Serveren svarer med den passende webside: den modtager URL'en, beregner siden ved hjælp af URL-parametre og returnerer resultatet.
 1. Panelet gengiver websiden inden for SuperOffice CRM.
-
-## Relateret indhold
-
-* [Tilføj webpanel][1]
-* [Opbygning af webpaneler][2]
-
-[1]: ./add-web-panel
-[2]: ../../../../en/customization/web-panels/dev/index

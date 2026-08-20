@@ -79,19 +79,9 @@ Her kan du matche kunden i chatten med en eksisterende kontakt i SuperOffice, el
 
 Hvis kunden findes i SuperOffice, kan du vise kontaktinformation, sager, salg, opfølgninger og tidligere chat-sessioner, der er blevet registreret.
 
-## Relateret indhold
-
-* [Svare på en chatsamtale][4]
-* [Visning af chatstatistik][5]
-* [Bruge chatfunktionen som en kunde][6]
-* [Tilknytning af chatsamtale til person i SuperOffice][7]
-
 [1]: ../../faq/learn/index
 [3]: ../../knowledge-base/learn/reply-templates/index
 [4]: ./respond
-[5]: ./statistics
-[6]: ./as-customer
-[7]: ./link-to-person
 [11]: ./create-request
 [12]: ./transfer-to-agent
 

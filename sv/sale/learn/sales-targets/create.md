@@ -12,6 +12,9 @@ tier: growth
 deployment: online
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - title: "Använda försäljningsmål i paneler"
+    href: "/sv/dashboard/learn/show-sales-targets"
 language: sv
 ---
 
@@ -132,12 +135,6 @@ För att visa ändringshistoriken för ett försäljningsmål (rad), klicka på 
 * För måltyper som innehåller undertyper, använd knappen **Filter** (<i class="ph ph-funnel" aria-hidden="true"></i>) för att visa eller arbeta med specifika element.
 
    ![Klicka på trattikonen för att filtrera försäljningsmål efter undertyp -screenshot][img4]
-
-## Relaterat innehåll
-
-* [Använda försäljningsmål i paneler][2]
-
-[2]: ../../../dashboard/learn/show-sales-targets
 
 [img1]: ../../../../media/loc/en/sale/targets-dialog-group-expanded.png
 [img2]: ../../../../media/loc/en/sale/target-line-menu.png

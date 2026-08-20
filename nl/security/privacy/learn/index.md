@@ -63,13 +63,5 @@ Als u deze optie selecteert, worden alleen personen die expliciet toestemming he
 
 Als u deze optie *niet* selecteert, worden alleen personen die **E-marketing** hebben ingesteld op **UIT** en de rechtsgrondslag op **Ingetrokken** uit de ontvangerslijst gefilterd. Dit werkt op dezelfde manier als bij **Geen mailings**.
 
-## Gerelateerde inhoud
-
-* [Items toevoegen aan de lijst Privacy - Rechtsgrondslag][3]
-* [Items toevoegen aan de lijst Privacy - Bron][4]
-* [Conversietracking (UTM)][5]
-
 [2]: ../admin/add-purpose
 [3]: ../admin/add-legal-base
-[4]: ../admin/add-source
-[5]: ../../../marketing/utm/learn/index

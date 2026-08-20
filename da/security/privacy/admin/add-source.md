@@ -44,9 +44,4 @@ Listen **Personbeskyttelse - Kilde** indeholder muligheder, som brugerne vælger
 
 1. Klik på **Gem** for at gemme ændringerne eller **Annuller** for at forkaste dem.
 
-## Relateret indhold
-
-* [Sådan tilføjes forekomster på listen Personbeskyttelse - Retsgrundlag][2]
-
 [1]: ../../../document/templates/admin/link-template
-[2]: ./add-legal-base

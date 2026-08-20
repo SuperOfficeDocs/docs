@@ -70,20 +70,6 @@ Hvis du bruker UTM-sporing (krever **Marketing Premium** eller **Growth**-planen
 * Bruk **dynamiske utvalg som figurer** når du trenger lister i stedet for diagrammer.
 * Opprett egne dashbord for **markedsføring**, **lead nurturing** og **salg** basert på behov.
 
-## Relatert innhold
-
-* [Legg til nytt dashbord][5]
-* [Arbeide med figurer][6]
-* [Leadhåndtering][7]
-* [Konverteringssporing (UTM-data)][8]
-* [Les mer om kriterier][2]
-
-[2]: ../../search-options/learn/search-criteria
-[5]: ./create
-[6]: ./working-with-tiles
-[7]: ../../lead/learn/index
-[8]: ../../marketing/utm/learn/index
-
 [img1]: ../../../media/loc/en/dashboard/lead-qualification.png
 [img2]: ../../../media/loc/en/dashboard/conversion-dashboard.png
 [img3]: ../../../media/loc/en/dashboard/new-leads-ytd.png

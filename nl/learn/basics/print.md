@@ -15,6 +15,15 @@ redirect_from:
   - /nl/company/learn/print
   - /nl/contact/learn/print
   - /nl/diary/learn/print
+related:
+  - title: "De Navigator gebruiken"
+    href: "/nl/learn/getting-started/main-screen/navigator"
+  - title: "Selectie afdruken"
+    href: "/nl/search-options/selection/learn/howto/print"
+  - title: "Labels afdrukken"
+    href: "/nl/search-options/selection/learn/howto/print-labels"
+  - title: "E-mails afdrukken"
+    href: "/nl/email/inbox/learn/preview#print"
 language: nl
 ---
 
@@ -56,14 +65,4 @@ De algemene stappen voor het afdrukken van een record in SuperOffice CRM zijn gr
 
 **Browserafdrukken:** Nadat u **Afdrukken** hebt geselecteerd, wordt het afdrukvenster van uw browser geopend. De opties die u ziet, zijn afhankelijk van welke browser u gebruikt en uw printerconfiguratie.
 
-## Gerelateerde inhoud
-
-* [De Navigator gebruiken][1]
-* [Selectie afdruken][2]
-* [Labels afdrukken][3]
-* [E-mails afdrukken][4]
-
 [1]: ../getting-started/main-screen/navigator
-[2]: ../../search-options/selection/learn/howto/print
-[3]: ../../search-options/selection/learn/howto/print-labels
-[4]: ../../email/inbox/learn/preview#print

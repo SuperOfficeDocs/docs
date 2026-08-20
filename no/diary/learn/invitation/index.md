@@ -47,11 +47,3 @@ Når du sender en invitasjon, kan mottakeren av invitasjonen enten godta eller a
 * Hvis mottakeren avslår invitasjonen, får du en Invitasjon avslått-melding. Klikk **Greit** for å bekrefte. Valgfritt, finn en ny passende tid og endre tidspunktet for oppfølgingen, eller tilordne oppfølgingen på nytt.
 
 * Hvis personen godtar invitasjonen, registreres den i SuperOffice CRM på vanlig måte.
-
-## Relatert innhold
-
-* [Legge til deltakere i oppfølginger][2]
-* [Opprett gruppeoversikter][1]
-
-[1]: ../group-view
-[2]: ./add-attendee

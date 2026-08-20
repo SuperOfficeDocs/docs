@@ -44,9 +44,4 @@ Listen **Personvern - Kilde** inneholder alternativer som brukere velger for å 
 
 1. Klikk **Lagre** for å lagre endringene eller **Avbryt** for å forkaste dem.
 
-## Relatert innhold
-
-* [Slik legger du til forekomster i listen Personvern - Hjemmel][2]
-
 [1]: ../../../document/templates/admin/link-template
-[2]: ./add-legal-base

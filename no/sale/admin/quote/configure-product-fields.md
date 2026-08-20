@@ -63,12 +63,4 @@ Disse innstillingene gjelder globalt for alle ERP-koblinger via quote connector 
 * Bruk beskrivende ledetekster og hjelpetekster for ekstrafelt.
 * Endringer i ledetekster vises først etter neste innlogging.
 
-## Relatert innhold
-
-* [Legge til produkt i en prisliste][1]
-* [Legge til/redigere produkter i tilbud][2]
-
-[1]: ./price-list-and-products
-[2]: ../../learn/quote/create#add-products
-
 [img1]: ../../../../media/loc/en/sale/configure-product-dialog.png

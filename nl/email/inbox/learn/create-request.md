@@ -11,6 +11,13 @@ license: serviceessentials
 tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - title: "E-mails en bijlagen archiveren"
+    href: "/nl/email/inbox/learn/archive"
+  - title: "Taak maken"
+    href: "/nl/email/inbox/learn/create-task"
+  - title: "Over verzoeken"
+    href: "/nl/request/learn/index"
 language: nl
 ---
 
@@ -34,15 +41,6 @@ U kunt een nieuw verzoek maken in SuperOffice Service op basis van de afzender e
     * Als de afzender wordt herkend, wordt het verzoek automatisch gekoppeld aan de correcte persoon en het correcte bedrijf.
     * Als de afzender niet wordt herkend, wordt deze geregistreerd als een nieuwe persoon in SuperOffice Service.
 
-## Gerelateerde inhoud
-
-* [E-mails en bijlagen archiveren][1]
-* [Taak maken][2]
-* [Over verzoeken][3]
-
-[1]: ./archive
-[2]: ./create-task
-[3]: ../../../request/learn/index
 [4]: ../../../request/learn/create#fields
 
 [img1]: ../../../../media/loc/en/email/inbox-create-request.png

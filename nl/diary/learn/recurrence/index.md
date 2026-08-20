@@ -56,13 +56,3 @@ Wanneer u **Jaarlijks** selecteert, kunt u opgeven op welke dag in welke maand d
 |---|---|---|
 | Dag &lt;number&gt; in &lt;month&gt; | De vervolgactiviteit moet altijd op dezelfde datum plaatsvinden. | Dag 13 in april. |
 | &lt;ordinal number&gt; &lt;weekday&gt; in &lt;month&gt; | De vervolgactiviteit moet altijd op dezelfde dag van de week plaatsvinden. | Vierde donderdag in augustus. |
-
-## Gerelateerde inhoud
-
-* [Een terugkerende vervolgactiviteit maken][4]
-* [Een herhalende vervolgactiviteit bewerken][1]
-* [Een herhalende vervolgactiviteit stoppen][3]
-
-[1]: ../edit-follow-up#repeat
-[3]: ./stop
-[4]: ./create

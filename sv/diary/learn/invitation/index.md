@@ -47,11 +47,3 @@ När du skickar en förfrågan kan mottagaren välja att acceptera eller avböja
 * Om mottagaren avböjer förfrågan får du en Inbjudan avvisades-avisering. Klicka på **Jag förstår** för att bekräfta. Om så önskas, hitta en ny lämplig tid och ändra tidpunkten för händelse, eller omfördela händelsen.
 
 * Om kontakten godtar förfrågan registreras den som vanligt i SuperOffice CRM.
-
-## Relaterat innehåll
-
-* [Lägga till deltagare i händelser][2]
-* [Skapa gruppöversikter][1]
-
-[1]: ../group-view
-[2]: ./add-attendee

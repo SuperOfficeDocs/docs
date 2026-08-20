@@ -75,19 +75,10 @@ När du skapar eller redigerar en händelse eller ett dokument kan du lägga til
 
 ![Fliken för länkar i en händelse -screenshot][img1]
 
-## Relaterat innehåll
-
-* [Relationsfliken][5]
-* [Ärendenfliken][6]
-* [Kontakterfliken][7]
-
 [1]: ../../project/learn/index
 [2]: ../../sale/learn/index
 [3]: ../../diary/learn/create-follow-up
 [4]: ../../document/learn/create
-[5]: ../section-tabs/relations-tab
-[6]: ../section-tabs/activities-tab
-[7]: ../section-tabs/contacts-tab
 [8]: ../../search-options/learn/find-screen
 
 [img1]: ../../../media/loc/en/diary/links.png

@@ -95,14 +95,4 @@ Organisaties die migreren van **SuperOffice CRM Online** (het modulaire abonneme
 | Service Premium | Growth |
 | Marketing Premium | Plus |
 
-## Gerelateerde inhoud
-
-* [CRM en licenties][1]
-* [Gebruikersplannen voor SuperOffice CRM Online][2]
-* [Licentie activeren][3]
-
-[1]: ./index
-[2]: ./user-plans
-[3]: ./activate
-
 [img1]: ../../../media/loc/en/admin/licenses-suite-core-with-upgrade.png

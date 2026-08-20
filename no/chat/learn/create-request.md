@@ -13,6 +13,13 @@ category: Service
 topic: chat
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - title: "Knytte chatsamtale til person i SuperOffice"
+    href: "/no/chat/learn/link-to-person"
+  - title: "Svare på en chat"
+    href: "/no/chat/learn/respond"
+  - title: "Finn ut mer om saker"
+    href: "/no/request/learn/index"
 language: no
 ---
 
@@ -23,13 +30,3 @@ Hvis du ikke kan løse spørsmålet via chatsamtalen, kan du opprette en sak som
 3. Chatloggen legges til saken, men du kan også legge til mer informasjon her hvis det er nødvendig.
 4. Klikk på **Lagre**.
 5. En kort melding som inneholder saks-IDen er lagt til i tekstfeltet i chatsamtalen. Klikk på **Send** for å sende denne til kunden.
-
-## Relatert innhold
-
-* [Knytte chatsamtale til person i SuperOffice][1]
-* [Svare på en chat][3]
-* [Finn ut mer om saker][4]
-
-[1]: ./link-to-person
-[3]: ./respond
-[4]: ../../request/learn/index

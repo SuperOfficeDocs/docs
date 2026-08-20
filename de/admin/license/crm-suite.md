@@ -95,14 +95,4 @@ Organisationen, die von **SuperOffice CRM Online** (dem modulbasierten Abonnemen
 | Service Premium | Growth |
 | Marketing Premium | Plus |
 
-## Verwandte Inhalte
-
-* [CRM und Lizenzen][1]
-* [SuperOffice CRM Online-Benutzerpläne][2]
-* [Lizenz aktivieren][3]
-
-[1]: ./index
-[2]: ./user-plans
-[3]: ./activate
-
 [img1]: ../../../media/loc/en/admin/licenses-suite-core-with-upgrade.png

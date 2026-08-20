@@ -47,11 +47,3 @@ Wanneer u een uitnodiging verzendt, kan de ontvanger deze accepteren of weigeren
 * Wanneer de ontvanger de uitnodiging weigert, ontvangt u een melding van uitnodiging geweigerd. Klik op **Duidelijk** om dit te bevestigen. Optioneel, zoek een nieuwe geschikte tijd en plan de vervolgactiviteit opnieuw in of opnieuw toewijzen.
 
 * Als de persoon de uitnodiging accepteert, wordt deze op de normale manier vastgelegd in SuperOffice CRM.
-
-## Gerelateerde inhoud
-
-* [Deelnemers toevoegen aan vervolgactiviteiten][2]
-* [Groepsweergaven maken][1]
-
-[1]: ../group-view
-[2]: ./add-attendee

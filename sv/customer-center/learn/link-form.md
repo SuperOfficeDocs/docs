@@ -42,14 +42,7 @@ När en kund fyller i formuläret sparas informationen och detaljerna automatisk
 
 ![Webbformulär på sidan Kontakta oss -screenshot][img4]
 
-## Relaterat innehåll
-
-* [Konfigurera Kundcenter][2]
-* [Arbeta med formulär][1]
-
-[1]: ../../marketing/forms/learn/index
 [3]: ../../marketing/forms/learn/create
-[2]: ./config
 
 [img1]: ../../../media/loc/en/customer-center/form-element.png
 [img2]: ../../../media/loc/en/customer-center/custom-form.png

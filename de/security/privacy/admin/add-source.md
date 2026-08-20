@@ -44,9 +44,4 @@ Die Liste **Datenschutz - Nachweis** enthält Optionen, die Benutzer auswählen,
 
 1. Klicken Sie auf **Speichern**, um die Änderungen zu speichern, oder auf **Abbrechen**, um sie zu verwerfen.
 
-## Verwandte Inhalte
-
-* [Wie man Objekte zur Liste Datenschutz - Rechtsgrundlage hinzufügt][2]
-
 [1]: ../../../document/templates/admin/link-template
-[2]: ./add-legal-base

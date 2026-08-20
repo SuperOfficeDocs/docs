@@ -81,9 +81,3 @@ De volgende tabel laat de gevolgen zien van de verschillende combinaties van de 
 | | x | | x | Er wordt geen nummer toegewezen. De gebruiker kan een nummer opgeven, maar dit moet uniek zijn. De database kan verschillende lege velden hebben. |
 | | | x | x | Er wordt geen nummer toegewezen en de gebruiker kan ook geen nummer opgeven. Dit is handig wanneer u tellers van andere leveranciers gebruikt. |
 | | | x | | Er wordt geen nummer toegewezen en de gebruiker kan ook geen nummer opgeven. De database kan slechts één leeg veld hebben. (niet aanbevolen). |
-
-## Gerelateerde inhoud
-
-* [Standaardwaarden voor nieuwe documentsjablonen opgeven][3]
-
-[3]: ../../document/templates/admin/document-template-defaults

@@ -43,14 +43,7 @@ Wenn ein Kunde dieses Formular ausfüllt, werden die Informationen und Details a
 
 ![Web-Formular auf der Seite Kontakt -screenshot][img4]
 
-## Verwandte Inhalte
-
-* [Kundenzentrum konfigurieren][2]
-* [Mit Formularen arbeiten][1]
-
-[1]: ../../marketing/forms/learn/index
 [3]: ../../marketing/forms/learn/create
-[2]: ./config
 
 [img1]: ../../../media/loc/en/customer-center/form-element.png
 [img2]: ../../../media/loc/en/customer-center/custom-form.png

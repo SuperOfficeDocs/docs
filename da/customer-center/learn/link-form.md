@@ -42,14 +42,7 @@ Når en kunde udfylder denne formular, gemmes oplysningerne og detaljerne automa
 
 ![Webformular på siden Kontakt os -screenshot][img4]
 
-## Relateret indhold
-
-* [Konfigurer kundecenter][2]
-* [Arbejde med formularer][1]
-
-[1]: ../../marketing/forms/learn/index
 [3]: ../../marketing/forms/learn/create
-[2]: ./config
 
 [img1]: ../../../media/loc/en/customer-center/form-element.png
 [img2]: ../../../media/loc/en/customer-center/custom-form.png

@@ -63,12 +63,4 @@ Dessa inställningar gäller globalt för alla ERP-kopplingar via Quote Connecto
 * Ange tydliga ledtexter och hjälptexter för eventuella extrafält.
 * Ledtextändringar träder i kraft vid nästa inloggning.
 
-## Relaterat innehåll
-
-* [Lägg till produkt i en prislista][1]
-* [Lägg till/redigera produkt i offert][2]
-
-[1]: ./price-list-and-products
-[2]: ../../learn/quote/create#add-products
-
 [img1]: ../../../../media/loc/en/sale/configure-product-dialog.png

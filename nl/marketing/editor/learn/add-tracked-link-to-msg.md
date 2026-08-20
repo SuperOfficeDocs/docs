@@ -44,18 +44,6 @@ U kunt gewone (niet-gevolgde) links toevoegen. Voor tekstkoppelingen klikt u op 
 
 Als u later besluit deze koppelingen ook te volgen, selecteert u de optie **Alle koppelingen traceren** onder **Traceren** in Stap 1: Instellingen. Deze koppelingen worden echter alleen gevolgd voor de betreffende mailing en zijn niet beschikbaar voor andere mailings of in flows.
 
-## Gerelateerde inhoud
-
-* [Gevolgde links maken][5]
-* [Linkacties definiëren][6]
-* [Bericht in browser weer te geven][1]
-* [E-mailabonnementen beheren][3]
-* [Afmelden][4]
-
-[1]: ./add-link-to-display-message-in-browser
-[4]: ./add-unsubscribe-link
-[3]: ../../recipients/learn/manage-email-subscriptions
 [5]: ../../tracked-links/learn/create-links
-[6]: ../../tracked-links/learn/define-link-actions
 
 [img2]: ../../../../media/loc/en/marketing/tracked-links-in-editor.png

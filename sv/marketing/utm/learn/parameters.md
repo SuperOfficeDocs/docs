@@ -47,15 +47,4 @@ Följ dessa riktlinjer för att säkerställa konsekvent och korrekt UTM-spårni
 
 Läs mer om hur dessa parametrar används för att mäta leadkällor i SuperOffice CRM i [Konverteringsspårning][1].
 
-## Relaterat innehåll
-
-* [Aktivera UTM-spårning för formulärinlämningar][2]
-* [UTM-byggare för SuperOffice-formulär][3]
-* [Google Analytics Campaign URL Builder][4]
-* [UTM Builder][5]
-
 [1]: ./index
-[2]: ../admin/set-up
-[3]: ../../forms/learn/publish
-[4]: https://ga-dev-tools.google/campaign-url-builder
-[5]: https://utmbuilder.net

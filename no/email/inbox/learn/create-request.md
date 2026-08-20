@@ -11,6 +11,13 @@ license: serviceessentials
 tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - title: "Arkivere e-post og vedlegg"
+    href: "/no/email/inbox/learn/archive"
+  - title: "Opprett oppgave"
+    href: "/no/email/inbox/learn/create-task"
+  - title: "Om saker"
+    href: "/no/request/learn/index"
 language: no
 ---
 
@@ -34,15 +41,6 @@ Du kan opprette en ny sak i SuperOffice Service basert på avsender og innhold i
     * Hvis avsenderen gjenkjennes, kobles saken automatisk til riktig person og firma.
     * Hvis ikke, registreres avsenderen som en ny person i SuperOffice Service.
 
-## Relatert innhold
-
-* [Arkivere e-post og vedlegg][1]
-* [Opprett oppgave][2]
-* [Om saker][3]
-
-[1]: ./archive
-[2]: ./create-task
-[3]: ../../../request/learn/index
 [4]: ../../../request/learn/create#fields
 
 [img1]: ../../../../media/loc/en/email/inbox-create-request.png

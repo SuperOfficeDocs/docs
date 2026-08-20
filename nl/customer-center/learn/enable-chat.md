@@ -34,13 +34,6 @@ U moet [uw chatwidget instellen][3] voordat u deze toevoegt aan uw klantencentru
 
 1. Klik op **Opslaan** om uw instellingen op te slaan.
 
-## Gerelateerde inhoud
-
-* [Klantencentrum configureren][2]
-* [Klanttalen][1]
-
-[1]: ../../localization/learn/customer-languages
 [3]: ../../chat/admin/channel-create
-[2]: ./config
 
 [img1]: ../../../media/loc/en/customer-center/connecting-widget.png

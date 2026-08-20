@@ -50,11 +50,4 @@ Ontdek hoe u doeleinden voor het verwerken van persoonsgegevens kunt toevoegen e
 
 1. Klik op <i class="ph ph-translate" aria-label="Translate"></i> naast een veld om nieuwe [vertalingen][1] van de veldteksten toe te voegen of bestaande te bewerken.
 
-## Gerelateerde inhoud
-
-* [Privacy - Rechtsgrondslag][2]
-* [Privacy - Bron][3]
-
 [1]: ../../../localization/learn/translate-fields
-[2]: ../learn/index#legal-basis
-[3]: ../learn/index#source

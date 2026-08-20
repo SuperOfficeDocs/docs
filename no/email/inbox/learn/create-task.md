@@ -38,15 +38,6 @@ Du kan raskt opprette en oppgave basert på en e-postmelding i SuperOffice-innbo
 
 1. Klikk på **Lagre** for å opprette oppgaven.
 
-## Relatert innhold
-
-* [Arkivere e-post og vedlegg][1]
-* [Opprett sak][2]
-* [Om oppfølginger][4]
-
-[1]: ./archive
-[2]: ./create-request
 [3]: ../../../diary/learn/create-follow-up#fields
-[4]: ../../../diary/learn/follow-ups
 
 [img1]: ../../../../media/loc/en/email/inbox-create-task.png

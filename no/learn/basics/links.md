@@ -75,19 +75,10 @@ Når du oppretter eller redigerer en oppfølging eller et dokument, kan du legge
 
 ![Fanen for lenker i en oppfølging -screenshot][img1]
 
-## Relatert innhold
-
-* [Relasjonsfanen][5]
-* [Saksfanen][6]
-* [Personfanen][7]
-
 [1]: ../../project/learn/index
 [2]: ../../sale/learn/index
 [3]: ../../diary/learn/create-follow-up
 [4]: ../../document/learn/create
-[5]: ../section-tabs/relations-tab
-[6]: ../section-tabs/activities-tab
-[7]: ../section-tabs/contacts-tab
 [8]: ../../search-options/learn/find-screen
 
 [img1]: ../../../media/loc/en/diary/links.png

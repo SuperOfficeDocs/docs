@@ -43,14 +43,7 @@ Wanneer een klant dit formulier invult, worden de informatie en details automati
 
 ![Webformulier op de pagina Contact met ons opnemen -screenshot][img4]
 
-## Gerelateerde inhoud
-
-* [Klantportaal configureren][2]
-* [Werken met formulieren][1]
-
-[1]: ../../marketing/forms/learn/index
 [3]: ../../marketing/forms/learn/create
-[2]: ./config
 
 [img1]: ../../../media/loc/en/customer-center/form-element.png
 [img2]: ../../../media/loc/en/customer-center/custom-form.png

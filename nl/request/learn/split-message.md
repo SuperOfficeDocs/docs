@@ -48,11 +48,4 @@ Als een bericht twee kwesties bevat die afzonderlijk moeten worden behandeld, ku
 
 1. Klik op **OK**. Het bericht wordt opgesplitst en het nieuwe verzoek wordt geopend.
 
-## Gerelateerde inhoud
-
-* [Verzoeken splitsen][2]
-* [Verzoeken samenvoegen][3]
-
 [1]: ./index#open
-[2]: ./split-request
-[3]: ./merge

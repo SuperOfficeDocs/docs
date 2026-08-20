@@ -48,28 +48,6 @@ SuperOffice CRM integrerer med certificerede e-mailsystemer og giver dig mulighe
 
 Opdag det fulde potentiale af SuperOffice CRM. Brug vores trin-for-trin vejledninger til at komme i gang, eller spring direkte til et specifikt emne i menuen for at lære mere. Tryk på **F1** i dit system for at få hjælp tilpasset din version og dit sprog.
 
-## Relateret indhold
-
-* [Log ind og aktiver SuperOffice CRM][6]
-* [Angiv dine personlige præferencer][7]
-* [Sådan opsætter du din konto med det rigtige sprog][15]
-* [Tilslut dine konti][8]
-* [Hovedskærmbilledet][2]
-* [Søg og find data][14]
-* [Foretrukne][11]
-* [Lær om aktiviteter (opfølgninger, dokumenter og e-mails)][13]
-* [Mobile CRM: Adgang til din CRM på farten][9]
-
 [1]: ./main-screen/navigator
-[2]: ./main-screen/index
-[6]: ./login
-[7]: ./preferences
-[8]: ./connect-your-accounts
-[9]: ../../../en/mobile/index
-
-[11]: ../basics/fav
-[13]: ../basics/activity
-[14]: ../../search-options/learn/index
-[15]: ./change-language
 
 [img1]: ../../../media/loc/en/learn/contact-screen-with-week.png

@@ -225,29 +225,8 @@ Nutzen Sie Gruppierung kreativ, um Daten effizient zu organisieren und zu nutzen
 
 * **Layout pro Anwendungsfall speichern:** Wählen Sie **Einstellungen nur für diese Selektion speichern**, wenn Sie ein bestimmtes Board-Layout, Filter oder Gruppierung nur für eine Selektion beibehalten möchten.
 
-## Verwandte Inhalte
-
-* [Eine Selektion erstellen][1]
-* [Einen Verkauf erstellen / Felder in der Verkaufskarte][12]
-* [VerkaufsStufen konfigurieren][13]
-* [Eine Anfrage erstellen / Anfrageeigenschaften][14]
-* [Anfragestatus erstellen][15]
-* [Anfragekategorie erstellen][16]
-* [Ein Projekt erstellen / Felder in der Projektkarte][17]
-* [Projektstatus konfigurieren][18]
-* [Projekttypen konfigurieren][19]
-
-[1]: ./create
 [2]: ./index
 [11]: ../../../learn/getting-started/main-screen/side-panel
-[12]: ../../../sale/learn/create
-[13]: ../../../sale/admin/sale-stage
-[14]: ../../../request/learn/create
-[15]: ../../../request/admin/status/create
-[16]: ../../../request/admin/category/create
-[17]: ../../../project/learn/create
-[18]: ../../../project/admin/project-status
-[19]: ../../../project/admin/project-type
 
 [img1]: ../../../../media/loc/en/search-options/board-view-toggle.png
 [img2]: ../../../../media/loc/en/search-options/board-view.png

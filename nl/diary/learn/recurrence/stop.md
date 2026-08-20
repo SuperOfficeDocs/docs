@@ -40,12 +40,4 @@ Je kunt ook een herhalende vervolgactiviteit stoppen door deze te selecteren in 
 
 ![Delete repeating follow-up dialog -screenshot][img1]
 
-## Gerelateerde inhoud
-
-* [Herhalende vervolgactiviteit maken][1]
-* [Herhalende vervolgactiviteit bewerken][2]
-
-[1]: ./create
-[2]: ../edit-follow-up#repeat
-
 [img1]: ../../../../media/loc/en/diary/delete-repeating-fo.png

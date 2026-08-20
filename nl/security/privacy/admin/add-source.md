@@ -44,9 +44,4 @@ De lijst **Privacy - Bron** bevat opties die gebruikers selecteren om aan te ton
 
 1. Klik op **Opslaan** om de wijzigingen op te slaan of **Annuleren** om ze te verwerpen.
 
-## Gerelateerde inhoud
-
-* [Items toevoegen aan de lijst Privacy - Rechtsgrondslag][2]
-
 [1]: ../../../document/templates/admin/link-template
-[2]: ./add-legal-base

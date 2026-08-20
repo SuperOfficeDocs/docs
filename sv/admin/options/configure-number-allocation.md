@@ -81,9 +81,3 @@ Tabellen nedan visar resultaten av olika kombinationer av värdena **Tilldela** 
 | | x | | x | Inget nummer tilldelas. Användaren kan ange ett nummer, men det måste vara unikt. Databasen kan innehålla ett obegränsat antal tomma fält. |
 | | | x | x | Inget nummer tilldelas och användaren får inte ange ett nummer. Det är praktiskt när räknare från tredjepartsleverantörer används. |
 | | | x | | Inget nummer tilldelas och användaren får inte ange ett nummer. Databasen kan bara innehålla ett tomt fält. (Rekommenderas inte.) |
-
-## Relaterat innehåll
-
-* [Ange standardvärden för nya dokumentmallar][3]
-
-[3]: ../../document/templates/admin/document-template-defaults

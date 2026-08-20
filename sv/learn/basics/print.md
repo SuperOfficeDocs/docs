@@ -14,6 +14,15 @@ redirect_from:
   - /sv/company/learn/print
   - /sv/contact/learn/print
   - /sv/diary/learn/print
+related:
+  - title: "Navigatorn"
+    href: "/sv/learn/getting-started/main-screen/navigator"
+  - title: "Skriv ut urval"
+    href: "/sv/search-options/selection/learn/howto/print"
+  - title: "Skriv ut etiketter"
+    href: "/sv/search-options/selection/learn/howto/print-labels"
+  - title: "Skriv ut e-post"
+    href: "/sv/email/inbox/learn/preview#print"
 language: sv
 ---
 
@@ -59,14 +68,4 @@ De allmänna stegen för att skriva ut en post i SuperOffice CRM är i stort set
 
 **Utskrift i webbläsare:** När du har valt **Skriv ut** öppnas utskriftsdialogen i din webbläsare. Alternativen du ser beror på vilken webbläsare du använder och din skrivarkonfiguration.
 
-## Relaterat innehåll
-
-* [Navigatorn][1]
-* [Skriv ut urval][2]
-* [Skriv ut etiketter][3]
-* [Skriv ut e-post][4]
-
 [1]: ../getting-started/main-screen/navigator
-[2]: ../../search-options/selection/learn/howto/print
-[3]: ../../search-options/selection/learn/howto/print-labels
-[4]: ../../email/inbox/learn/preview#print

@@ -14,6 +14,15 @@ redirect_from:
   - /da/company/learn/print
   - /da/contact/learn/print
   - /da/diary/learn/print
+related:
+  - title: "Navigatoren"
+    href: "/da/learn/getting-started/main-screen/navigator"
+  - title: "Udskriv udvalg"
+    href: "/da/search-options/selection/learn/howto/print"
+  - title: "Udskriv etiketter"
+    href: "/da/search-options/selection/learn/howto/print-labels"
+  - title: "Udskriv e-mail"
+    href: "/da/email/inbox/learn/preview#print"
 language: da
 ---
 
@@ -59,14 +68,4 @@ De generelle trin for udskrivning af en post i SuperOffice CRM er stort set de s
 
 **Browser-udskrivning:** Efter at have valgt **Udskriv** åbnes browserens udskriftsdialog. De viste muligheder afhænger af, hvilken browser du bruger, og din printerkonfiguration.
 
-## Relateret indhold
-
-* [Navigatoren][1]
-* [Udskriv udvalg][2]
-* [Udskriv etiketter][3]
-* [Udskriv e-mail][4]
-
 [1]: ../getting-started/main-screen/navigator
-[2]: ../../search-options/selection/learn/howto/print
-[3]: ../../search-options/selection/learn/howto/print-labels
-[4]: ../../email/inbox/learn/preview#print

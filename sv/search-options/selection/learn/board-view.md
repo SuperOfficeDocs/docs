@@ -225,29 +225,8 @@ Använd gruppering kreativt för effektiv datahantering.
 
 * **Spara layout per användning:** Välj **Spara kolumner endast för markerat urval** om du vill behålla en specifik layout, filter eller gruppering för ett urval.
 
-## Relaterat innehåll
-
-* [Skapa ett urval][1]
-* [Skapa en försäljning / fält i försäljningskortet][12]
-* [Konfigurera försäljningsfaser][13]
-* [Skapa ett ärende / ärendeegenskaper][14]
-* [Skapa ärendestatus][15]
-* [Skapa ärendekategori][16]
-* [Skapa ett projekt / fält i projektkortet][17]
-* [Konfigurera projektstatus][18]
-* [Konfigurera projekttyper][19]
-
-[1]: ./create
 [2]: ./index
 [11]: ../../../learn/getting-started/main-screen/side-panel
-[12]: ../../../sale/learn/create
-[13]: ../../../sale/admin/sale-stage
-[14]: ../../../request/learn/create
-[15]: ../../../request/admin/status/create
-[16]: ../../../request/admin/category/create
-[17]: ../../../project/learn/create
-[18]: ../../../project/admin/project-status
-[19]: ../../../project/admin/project-type
 
 [img1]: ../../../../media/loc/en/search-options/board-view-toggle.png
 [img2]: ../../../../media/loc/en/search-options/board-view.png

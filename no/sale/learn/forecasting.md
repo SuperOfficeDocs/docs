@@ -73,17 +73,7 @@ For å vise hvordan du kan bruke Finn-funksjonen til salgsprognoser, er her et e
 
 7. Klikk **Finn** nederst på skjermen for å se alle åpne salgs­muligheter med verdi over €5000.
 
-## Relatert innhold
-
-* [Visualiser salgsmål i dashbordfliser][7]
-* [Opprett et nytt salg][1]
-* [Vis et utvalg som et diagram][6]
-* [Bruke Finn-skjermen][5]
-
-[1]: ./create
 [5]: ../../search-options/learn/find-screen
-[6]: ../../search-options/selection/learn/howto/display-as-charts
-[7]: ../../dashboard/learn/show-sales-targets
 
 [img1]: ../../../media/loc/en/sale/forecasting.png
 [img7]: ../../../media/loc/en/search-options/typical-sale-searches.png

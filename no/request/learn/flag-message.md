@@ -33,15 +33,6 @@ For å gjøre det enklere å finne og sortere flere meldinger i en sak, kan du f
 
 ![Options to filter list of messages on a request -screenshot][img1]
 
-## Relatert innhold
-
-* [Opprette sak][2]
-* [Svare kunde][3]
-* [Redigere melding][4]
-
 [1]: ./index#open
-[2]: ./create
-[3]: ./reply
-[4]: ./edit-message
 
 [img1]: ../../../media/loc/en/request/filter-messages.png

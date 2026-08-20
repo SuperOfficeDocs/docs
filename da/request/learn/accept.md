@@ -42,18 +42,7 @@ Hvis du har brug for mere information, før du accepterer sagen, eller hvis du b
     * Klik på <i class="ph ph-dots-three-circle-vertical" aria-label="Opgavemenu"></i> og vælg **Acceptér**.
     * Eller vælg dig selv i feltet **Ejer**.
 
-## Relateret indhold
-
-* [Svar til en kunde][2]
-* [Bede en anden sagsbehandler om hjælp][3]
-* [Videresend meddelelser til eksterne parter][4]
-* [Luk sag][5]
-
 [1]: ./index#open
-[2]: ./reply
-[3]: ./transfer
-[4]: ./forward
-[5]: ./close
 [6]: ../admin/next-in-queue
 
 [img2]: ../../../media/loc/en/request/requests-accept.png

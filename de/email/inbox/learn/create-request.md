@@ -11,6 +11,13 @@ license: serviceessentials
 tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - title: "E-Mails und Anhänge archivieren"
+    href: "/de/email/inbox/learn/archive"
+  - title: "Aufgabe erstellen"
+    href: "/de/email/inbox/learn/create-task"
+  - title: "Über Anfragen"
+    href: "/de/request/learn/index"
 language: de
 ---
 
@@ -34,15 +41,6 @@ Sie können in SuperOffice Service eine neue Anfrage basierend auf dem Absender 
     * Wenn der Absender erkannt wird, wird die Anfrage automatisch mit der richtigen Person und Firma verknüpft.
     * Wenn nicht, wird der Absender als neue Person in SuperOffice Service erfasst.
 
-## Verwandte Inhalte
-
-* [E-Mails und Anhänge archivieren][1]
-* [Aufgabe erstellen][2]
-* [Über Anfragen][3]
-
-[1]: ./archive
-[2]: ./create-task
-[3]: ../../../request/learn/index
 [4]: ../../../request/learn/create#fields
 
 [img1]: ../../../../media/loc/en/email/inbox-create-request.png

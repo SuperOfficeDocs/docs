@@ -40,12 +40,4 @@ Sie können eine wiederkehrende Folgeaufgabe auch direkt im Kalender auswählen 
 
 ![Dialogfeld Wiederkehrende Folgeaufgabe löschen -screenshot][img1]
 
-## Verwandte Inhalte
-
-* [Regelmäßige Folgeaufgabe erstellen][1]
-* [Regelmäßige Folgeaufgabe bearbeiten][2]
-
-[1]: ./create
-[2]: ../edit-follow-up#repeat
-
 [img1]: ../../../../media/loc/en/diary/delete-repeating-fo.png

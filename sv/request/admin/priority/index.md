@@ -52,13 +52,3 @@ Till exempel specificerar support- och SLA-avtal att leverantören måste påbö
 Varje prioritet har en tillgänglighetsegenskap kopplad till sig. Om ärendets prioritet är inställd på **Externt**, blir prioriteten tillgänglig via SuperOffice Customer Centre.
 
 Om fler än två prioriteter är tillgängliga externt kan kunden välja vilken prioritet som ska gälla för ärendet. Detta kan leda till att ärendet får en högre prioritet än nödvändigt, eftersom kunden vill få ett svar så snabbt som möjligt och sannolikt väljer den högsta möjliga prioriteten. Därför bör de högsta prioriteterna ställas in som **Internt**, medan **Medel** och **Låg** görs tillgängliga externt.
-
-## Relaterat innehåll
-
-* [Skapa prioritet][1]
-* [Ta bort prioriteter][2]
-* [Skapa eskaleringsnivåer][3]
-
-[1]: ./create
-[2]: ./delete
-[3]: ./escalation-levels

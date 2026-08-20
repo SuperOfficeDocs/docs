@@ -48,21 +48,7 @@ Längst ned i fönstret **Kontakt** finns följande [detaljkort][16] som standar
 | [Projekt][14] | Visar alla projekt där den aktiva kontakten är projektdeltagare. |
 | [Relationer][15] | Visar eventuella kopplingar mellan den aktuella kontakten och andra kontakter eller företag. |
 
-## Relaterat innehåll
-
-* [Skapa en ny kontakt][2]
-* [Redigera integritetsinställningar för en kontakt][3]
-* [Flytta kontakter][4]
-* [Slå ihop kontakter][5]
-* [Ta bort kontakter][6]
-* [Skicka e-post till en kontakt][7]
-
 [2]: ./create
-[3]: ../../security/privacy/learn/edit-legal-base
-[4]: ./move
-[5]: ./merge-contacts
-[6]: ./delete
-[7]: ./send-email
 [8]: ../../company/learn/index
 
 [11]: ../../learn/section-tabs/activities-tab

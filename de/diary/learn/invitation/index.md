@@ -47,11 +47,3 @@ Wenn Sie eine Einladung versenden, kann der Empfänger sie annehmen oder ablehne
 * Bei einer Ablehnung erhalten Sie eine Einladung abgelehnt-Benachrichtigung. Klicken Sie auf **Alles klar**, um dies zu bestätigen. Sie sind jetzt der Eigentümer. Optional können Sie eine neue geeignete Zeit finden und die Folgeaufgabe neu planen, oder neu zuweisen.
 
 * Wenn die Person die Einladung annimmt, wird diese auf die übliche Art und Weise in SuperOffice erfasst.
-
-## Verwandte Inhalte
-
-* [Teilnehmer zu Folgeaufgaben hinzufügen][2]
-* [Gruppenansichten erstellen][1]
-
-[1]: ../group-view
-[2]: ./add-attendee

@@ -10,6 +10,15 @@ content_type: howto
 tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - title: "Overzicht van door de gebruiker gedefinieerde velden"
+    href: "/nl/custom-objects/learn/index"
+  - title: "Door de gebruiker gedefinieerde velden toevoegen"
+    href: "/nl/custom-objects/admin/add-udef"
+  - title: "Extra velden toevoegen"
+    href: "/nl/custom-objects/admin/create-extra-field"
+  - title: "Aangepaste lay-outs beheren met de Screen Designer"
+    href: "/nl/customization/screen-designer/admin/add-layout"
 language: nl
 ---
 
@@ -52,18 +61,6 @@ Klik op <i class="ph ph-pencil-simple" aria-label="Edit"></i> om de informatie i
 ## Extra tips
 
 * **Velden aanpassen**: Het toevoegen van door de gebruiker gedefinieerde velden of het aanpassen van de lay-outs vereist administratieve toegang en in sommige gevallen een licentie voor **Development Tools** of het **Core**-plan.
-
-## Gerelateerde inhoud
-
-* [Overzicht van door de gebruiker gedefinieerde velden][1]
-* [Door de gebruiker gedefinieerde velden toevoegen][2]
-* [Extra velden toevoegen][3]
-* [Aangepaste lay-outs beheren met de Screen Designer][4]
-
-[1]: ./index
-[2]: ../admin/add-udef
-[3]: ../admin/create-extra-field
-[4]: ../../customization/screen-designer/admin/add-layout
 
 [img6]: ../../../media/loc/en/sale/sale-more.png
 [img4]: ../../../media/loc/en/project/project-more.png

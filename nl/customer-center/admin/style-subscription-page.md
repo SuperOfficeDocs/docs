@@ -79,13 +79,5 @@ U kunt ook talen verwijderen die u niet gebruikt. Dit beperkt de talen die besch
 
 Wijzigingen worden pas toegepast als u op **Opslaan** klikt.
 
-## Gerelateerde inhoud
-
-* [E-mail met privacybevestiging verzenden][2]
-* [Overzicht Customer Centre][1]
-
-[1]: ../learn/index
-[2]: ../../security/privacy/learn/send-privacy-confirmation-email
-
 [img1]: ../../../media/loc/en/customer-center/subscription-page-styling.png
 [img2]: ../../../media/loc/en/customer-center/subscription-page-options.png

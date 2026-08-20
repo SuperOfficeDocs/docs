@@ -95,14 +95,4 @@ Organisationer, der migrerer fra **SuperOffice CRM Online** (det modulbaserede a
 | Service Premium | Growth |
 | Marketing Premium | Plus |
 
-## Relateret indhold
-
-* [CRM og licenser][1]
-* [Brugerplaner til SuperOffice CRM Online][2]
-* [Aktiver licens][3]
-
-[1]: ./index
-[2]: ./user-plans
-[3]: ./activate
-
 [img1]: ../../../media/loc/en/admin/licenses-suite-core-with-upgrade.png

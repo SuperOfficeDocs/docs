@@ -20,13 +20,6 @@ Du kan skapa [FAQ-artiklar][1] som dina servicehandläggare kan välja bland nä
 
 Dina kunder kommer åt FAQ-artiklarna via kundcentret (webbportalen) utan att behöva kontakta dig. Därmed blir det enklare för dina kunder att hitta svar på vanliga frågor dygnet runt samtidigt som du får färre ärenden att hantera.
 
-## Relaterat innehåll
-
-* [Konfigurera Kundcenter][2]
-* [Publicera en FAQ][3]
-
 [1]: ../../knowledge-base/learn/faq/create
-[3]: ../../knowledge-base/learn/faq/publish
-[2]: ./config
 
 [img1]: ../../../media/loc/en/customer-center/set-up-a-faq.png

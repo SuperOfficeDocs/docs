@@ -34,13 +34,6 @@ Du måste [konfigurera chattwidgeten][3] innan du lägger till den i ditt Kundce
 
 1. Klicka på **Spara** för att spara inställningarna.
 
-## Relaterat innehåll
-
-* [Konfigurera Kundcenter][2]
-* [Kundspråk][1]
-
-[1]: ../../localization/learn/customer-languages
 [3]: ../../chat/admin/channel-create
-[2]: ./config
 
 [img1]: ../../../media/loc/en/customer-center/connecting-widget.png

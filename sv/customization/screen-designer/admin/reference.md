@@ -312,33 +312,17 @@ För detaljer om värdet av varje fält, se [databasreferencen][23].
 * Länkar
 * Mer
 
-## Relaterat innehåll
-
-* [Arbeta med fält][1]
-* [Adressformat][20]
-* [Läs mer om försäljning][11]
-* [Läs mer om projekt][10]
-* [Läs mer om förfrågningar][14]
-* [Läs mer om händelser][16]
-* [Läs mer om dokument][21]
-
-[1]: ./working-with-fields
 [2]: ../../../../en/database/tables/contact
 [3]: ../../../../en/database/tables/person
 [4]: ../../../../en/database/tables/sale
 [5]: ../../../../en/database/tables/project
 [6]: ../../../../en/database/tables/ticket
 [7]: ../../../../en/database/tables/appointment
-[11]: ../../../../en/sale/dev/index
-[10]: ../../../../en/project/dev/index
 [13]: ../../../request/admin/type/index
-[14]: ../../../../en/request/dev/index
 [15]: ../../../diary/learn/invitation/add-attendee#availability
-[16]: ../../../diary/learn/follow-ups
 [17]: ../../../../en/company/dev/index#interests
 [18]: ../../../../en/company/dev/index#categorylist
 [20]: ../../../../en/api/localization/address/index
-[21]: ../../../document/learn/index
 [22]: ../../../document/templates/learn/index
 [23]: ../../../../en/database/tables/document
 [24]: ../../../marketing/utm/learn/index

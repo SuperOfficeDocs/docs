@@ -17,6 +17,11 @@ audience_tooltip: SuperOffice Service
 redirect_from:
   - /de/request/reply-templates/learn/delete
   - /de/request/reply-templates/learn/edit
+related:
+  - title: "Neue Sprachversion der Antwortvorlage erstellen"
+    href: "/de/knowledge-base/learn/reply-templates/new-language"
+  - title: "Antwortvorlagen kopieren"
+    href: "/de/knowledge-base/learn/reply-templates/create#copy"
 language: de
 ---
 
@@ -43,12 +48,5 @@ Die Bearbeitung einer Antwortvorlage kann auf zwei Arten erfolgen:
 1. Klicken Sie unten in der Ansicht auf die Schaltfläche **Löschen**.
 1. Bestätigen Sie die Löschung, wenn Sie dazu aufgefordert werden. Die Antwortvorlage wird sofort gelöscht.
 
-## Verwandte Inhalte
-
-* [Neue Sprachversion der Antwortvorlage erstellen][3]
-* [Antwortvorlagen kopieren][4]
-
 [1]: ../../../request/learn/reply
 [2]: ./create
-[3]: ./new-language
-[4]: ./create#copy

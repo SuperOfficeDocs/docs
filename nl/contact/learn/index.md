@@ -48,21 +48,7 @@ Onder de persoonskaart bieden [sectietabbladen][16] snelle toegang tot informati
 | [Projecten][14] | Toont alle projecten waarin de persoon een projectlid is. |
 | [Relaties][15] | Geeft eventuele connecties weer tussen de huidige persoon en andere personen of bedrijven. |
 
-## Gerelateerde inhoud
-
-* [Een nieuwe contactpersoon maken][2]
-* [Privacy-instellingen voor een persoon bewerken][3]
-* [Contactpersonen verplaatsen][4]
-* [Contactpersonen samenvoegen][5]
-* [Contactpersonen verwijderen][6]
-* [E-mail verzenden naar een contactpersoon][7]
-
 [2]: ./create
-[3]: ../../security/privacy/learn/edit-legal-base
-[4]: ./move
-[5]: ./merge-contacts
-[6]: ./delete
-[7]: ./send-email
 [8]: ../../company/learn/index
 
 [11]: ../../learn/section-tabs/activities-tab

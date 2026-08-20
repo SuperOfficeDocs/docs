@@ -33,15 +33,6 @@ Hvis du vil gøre det nemmere at finde og sortere flere meddelelser i en sag, ka
 
 ![Options to filter list of messages on a request -screenshot][img1]
 
-## Relateret indhold
-
-* [Opret sag][2]
-* [Svar til kunde][3]
-* [Rediger meddelelse][4]
-
 [1]: ./index#open
-[2]: ./create
-[3]: ./reply
-[4]: ./edit-message
 
 [img1]: ../../../media/loc/en/request/filter-messages.png

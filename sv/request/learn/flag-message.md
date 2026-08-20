@@ -33,15 +33,6 @@ För att göra det enklare att hitta och sortera flera meddelanden i ett ärende
 
 ![Options to filter list of messages on a request -screenshot][img1]
 
-## Relaterat innehåll
-
-* [Skapa ärende][2]
-* [Svara kund][3]
-* [Redigera meddelande][4]
-
 [1]: ./index#open
-[2]: ./create
-[3]: ./reply
-[4]: ./edit-message
 
 [img1]: ../../../media/loc/en/request/filter-messages.png

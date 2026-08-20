@@ -51,11 +51,4 @@ Lär dig hur du lägger till och redigerar syften för behandling av personuppgi
 
 1. Klicka på <i class="ph ph-translate" aria-label="Translate"></i> bredvid ett fält för att lägga till nya eller redigera befintliga [översättningar][1] av fälttexterna.
 
-## Relaterat innehåll
-
-* [Integritet - Rättslig grund][2]
-* [Integritet - Källa][3]
-
 [1]: ../../../localization/learn/translate-fields
-[2]: ../learn/index#legal-basis
-[3]: ../learn/index#source

@@ -63,13 +63,5 @@ Hvis du velger dette alternativet, vil bare personer som har gitt sitt samtykke 
 
 Hvis du *ikke* velger dette alternativet, vil bare personer med **E-markedsføring** satt til **AV** og hjemmel satt til **Trukket tilbake** filtreres bort fra mottakerlisten. Dette fungerer på samme måte som for **Ingen utsendelser**.
 
-## Relatert innhold
-
-* [Legg til elementer i listen Personvern - Hjemmel][3]
-* [Legge til elementer i listen Personvern - Kilde][4]
-* [Konverteringssporing (UTM)][5]
-
 [2]: ../admin/add-purpose
 [3]: ../admin/add-legal-base
-[4]: ../admin/add-source
-[5]: ../../../marketing/utm/learn/index

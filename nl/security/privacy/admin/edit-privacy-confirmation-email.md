@@ -35,11 +35,3 @@ De e-mailsjabloon voor privacybevestiging is een **e-mailsjabloon**, die op deze
 1. Klik nogmaals op **Opslaan** om terug te keren naar de lijst E-mailsjabloon.
 
     De nieuwe bewerkte versie is nu klaar en kan direct worden gebruikt.
-
-## Gerelateerde inhoud
-
-* [Een e-mailsjabloon toevoegen][1]
-* [Een privacy e-mail naar personen versturen voor het recht om geïnformeerd te worden][2]
-
-[1]: ../../../email/admin/add-email-template
-[2]: ../learn/send-privacy-confirmation-email

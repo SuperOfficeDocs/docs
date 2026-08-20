@@ -48,21 +48,7 @@ Unterhalb der Personenkarte bieten die [Bereichsregisterkarten][16] schnellen Zu
 | [Projekte][14] | Zeigt alle Projekte an, bei denen die Person Mitglied ist. |
 | [Beziehungen][15] | Zeigt vorhandene Verbindungen zwischen der aktuellen Person und anderen Personen oder Firmen. |
 
-## Verwandte Inhalte
-
-* [Neue Person erstellen][2]
-* [Datenschutzeinstellungen für eine Person bearbeiten][3]
-* [Personen verschieben][4]
-* [Personen zusammenführen][5]
-* [Personen löschen][6]
-* [E-Mail an eine Person senden][7]
-
 [2]: ./create
-[3]: ../../security/privacy/learn/edit-legal-base
-[4]: ./move
-[5]: ./merge-contacts
-[6]: ./delete
-[7]: ./send-email
 [8]: ../../company/learn/index
 
 [11]: ../../learn/section-tabs/activities-tab

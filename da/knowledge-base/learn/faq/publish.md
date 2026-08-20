@@ -15,6 +15,15 @@ topic: faq
 audience: person
 audience_tooltip: SuperOffice Service
 redirect_from: /da/faq/learn/publish
+related:
+  - title: "Arbejde med workflow"
+    href: "/da/knowledge-base/learn/faq/workflow"
+  - title: "Få mere at vide om sager"
+    href: "/da/request/learn/index"
+  - title: "Opret en FAQ"
+    href: "/da/knowledge-base/learn/faq/create"
+  - title: "Konfigurer flere sprog"
+    href: "/da/localization/learn/customer-languages"
 language: da
 ---
 
@@ -32,14 +41,5 @@ Når en sagsbehandler [opretter et forslag til en FAQ-post][1], vil det være ik
 1. Foretag eventuelle ændringer på fanen **Egenskaber**.
 1. Klik på **OK**. FAQ-posten er nu tilgængelig til brug.
 
-## Relateret indhold
-
-* [Arbejde med workflow][3]
-* [Få mere at vide om sager][2]
-* [Opret en FAQ][1]
-* [Konfigurer flere sprog][4]
-
 [1]: ./create
-[2]: ../../../request/learn/index
-[3]: ./workflow
 [4]: ../../../localization/learn/customer-languages

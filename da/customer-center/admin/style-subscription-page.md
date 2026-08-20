@@ -79,13 +79,5 @@ Du kan også fjerne sprog, som du ikke bruger. Dette begrænser de sprog, der er
 
 Ændringer anvendes ikke, før du klikker på **Gem**.
 
-## Relateret indhold
-
-* [Send e-mail med bekræftelse om personbeskyttelse][2]
-* [Oversigt over Customer Centre][1]
-
-[1]: ../learn/index
-[2]: ../../security/privacy/learn/send-privacy-confirmation-email
-
 [img1]: ../../../media/loc/en/customer-center/subscription-page-styling.png
 [img2]: ../../../media/loc/en/customer-center/subscription-page-options.png

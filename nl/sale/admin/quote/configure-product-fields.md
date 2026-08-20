@@ -63,12 +63,4 @@ Deze instellingen zijn van toepassing op alle ERP-verbindingen van de Quote Conn
 * Gebruik duidelijke en beschrijvende labels en knopinfo voor extra velden.
 * Labelwijzigingen worden actief na de volgende aanmelding.
 
-## Gerelateerde inhoud
-
-* [Een product toevoegen aan een prijslijst][1]
-* [Een product toevoegen/bewerken in een offerte][2]
-
-[1]: ./price-list-and-products
-[2]: ../../learn/quote/create#add-products
-
 [img1]: ../../../../media/loc/en/sale/configure-product-dialog.png

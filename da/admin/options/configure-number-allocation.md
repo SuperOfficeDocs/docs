@@ -81,9 +81,3 @@ Tabellen nedenfor viser konsekvenserne af forskellige kombinationer af værdiern
 | | x | | x | Der tildeles ikke noget nummer. Brugeren kan angive et nummer, men det skal være entydigt. Databasen kan have ubegrænsede tomme felter. |
 | | | x | x | Der tildeles ikke noget nummer, og brugeren må heller ikke angive et nummer. Nyttigt, når der bruges tællere fra tredjepartsleverandører. |
 | | | x | | Der tildeles ikke noget nummer, og brugeren må heller ikke angive et nummer. Databasen kan kun have ét tomt felt. (Ikke anbefalet.) |
-
-## Relateret indhold
-
-* [Angivelse af standardværdier for nye dokumentskabeloner][3]
-
-[3]: ../../document/templates/admin/document-template-defaults

@@ -17,6 +17,11 @@ audience_tooltip: SuperOffice Service
 redirect_from:
   - /sv/request/reply-templates/learn/delete
   - /sv/request/reply-templates/learn/edit
+related:
+  - title: "Skapa ny språkversion av svarsmall"
+    href: "/sv/knowledge-base/learn/reply-templates/new-language"
+  - title: "Kopiera svarsmallar"
+    href: "/sv/knowledge-base/learn/reply-templates/create#copy"
 language: sv
 ---
 
@@ -43,12 +48,5 @@ Att redigera en svarsmall kan innebära två olika saker:
 1. Klicka på **Ta bort** längst ned på skärmen.
 1. Bekräfta borttagningen när du uppmanas till det. Svarsmallen raderas omedelbart.
 
-## Relaterat innehåll
-
-* [Skapa ny språkversion av svarsmall][3]
-* [Kopiera svarsmallar][4]
-
 [1]: ../../../request/learn/reply
 [2]: ./create
-[4]: ./create#copy
-[3]: ./new-language

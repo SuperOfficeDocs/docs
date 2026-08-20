@@ -11,6 +11,13 @@ license: serviceessentials
 tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - title: "Arkiver e-mails og vedhæftede filer"
+    href: "/da/email/inbox/learn/archive"
+  - title: "Opret opgave"
+    href: "/da/email/inbox/learn/create-task"
+  - title: "Om sager"
+    href: "/da/request/learn/index"
 language: da
 ---
 
@@ -34,15 +41,6 @@ Du kan oprette en ny sag i SuperOffice Service baseret på afsenderen og indhold
     * Hvis afsenderen genkendes, knyttes sagen automatisk til den rigtige person og det rigtige firma.
     * Hvis ikke, registreres afsenderen som en ny person i SuperOffice Service.
 
-## Relateret indhold
-
-* [Arkiver e-mails og vedhæftede filer][1]
-* [Opret opgave][2]
-* [Om sager][3]
-
-[1]: ./archive
-[2]: ./create-task
-[3]: ../../../request/learn/index
 [4]: ../../../request/learn/create#fields
 
 [img1]: ../../../../media/loc/en/email/inbox-create-request.png

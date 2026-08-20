@@ -43,18 +43,7 @@ Als u meer informatie nodig hebt voordat u accepteert, of als u [Volgend verzoek
     * Klik op <i class="ph ph-dots-three-circle-vertical" aria-label="Taakmenu"></i> en selecteer **Accepteren**.
     * Of selecteer uzelf in het veld **Eigenaar**.
 
-## Gerelateerde inhoud
-
-* [Een klant beantwoorden][2]
-* [Andere verzoekbehandelaar om hulp vragen][3]
-* [Berichten doorsturen naar externe partijen][4]
-* [Verzoek sluiten][5]
-
 [1]: ./index#open
-[2]: ./reply
-[3]: ./transfer
-[4]: ./forward
-[5]: ./close
 [6]: ../admin/next-in-queue
 
 [img2]: ../../../media/loc/en/request/requests-accept.png

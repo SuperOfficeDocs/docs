@@ -18,6 +18,11 @@ audience_tooltip: SuperOffice Service
 redirect_from:
   - /nl/request/reply-templates/learn/delete
   - /nl/request/reply-templates/learn/edit
+related:
+  - title: "Antwoordsjabloon in een nieuwe taal maken"
+    href: "/nl/knowledge-base/learn/reply-templates/new-language"
+  - title: "Antwoordsjablonen kopiëren"
+    href: "/nl/knowledge-base/learn/reply-templates/create#copy"
 language: nl
 ---
 
@@ -44,12 +49,5 @@ Het bewerken van een antwoordsjabloon kan betrekking hebben op een van twee ding
 1. Klik op **Verwijderen** onder in het scherm.
 1. Bevestig de verwijdering wanneer hierom wordt gevraagd. De antwoordsjabloon wordt direct verwijderd.
 
-## Gerelateerde inhoud
-
-* [Antwoordsjabloon in een nieuwe taal maken][3]
-* [Antwoordsjablonen kopiëren][4]
-
 [1]: ../../../request/learn/reply
 [2]: ./create
-[3]: ./new-language
-[4]: ./create#copy

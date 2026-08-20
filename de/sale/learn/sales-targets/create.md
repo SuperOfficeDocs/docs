@@ -12,6 +12,9 @@ tier: growth
 deployment: online
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - title: "Verwenden von Vertriebszielen in Kacheln"
+    href: "/de/dashboard/learn/show-sales-targets"
 language: de
 ---
 
@@ -130,12 +133,6 @@ Zum Anzeigen des Revisionsverlaufs für ein Vertriebsziel (Zeile) klicken Sie au
 * Für Zieltypen, die Untertypen enthalten, verwenden Sie die Schaltfläche **Filter** (<i class="ph ph-funnel" aria-hidden="true"></i>), um bestimmte Elemente anzuzeigen oder damit zu arbeiten.
 
     ![Klicken Sie auf das Trichtersymbol, um Verkaufsziele nach Untertyp zu filtern -screenshot][img4]
-
-## Verwandte Inhalte
-
-* [Verwenden von Vertriebszielen in Kacheln][2]
-
-[2]: ../../../dashboard/learn/show-sales-targets
 
 [img1]: ../../../../media/loc/en/sale/targets-dialog-group-expanded.png
 [img2]: ../../../../media/loc/en/sale/target-line-menu.png

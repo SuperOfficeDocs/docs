@@ -56,13 +56,3 @@ Wenn Sie **Jährlich** auswählen, können Sie festlegen, an welchem Tag und in 
 |---|---|---|
 | Tag &lt;number&gt; im &lt;month&gt;| Die Folgeaufgabe immer am gleichen Datum stattfinden. | Tag 13 im April. |
 | &lt;ordinal number&gt; &lt;weekday&gt; im &lt;month&gt;| Die Folgeaufgabe immer am gleichen Wochentag stattfinden. | Am vierten Donnerstag im August. |
-
-## Verwandte Inhalte
-
-* [Wiederholende Folgeaufgabe erstellen][4]
-* [Regelmäßige Folgeaufgabe bearbeiten][1]
-* [Regelmäßige Folgeaufgabe stoppen][3]
-
-[1]: ../edit-follow-up#repeat
-[3]: ./stop
-[4]: ./create

@@ -15,6 +15,15 @@ redirect_from:
   - /de/company/learn/print
   - /de/contact/learn/print
   - /de/diary/learn/print
+related:
+  - title: "Navigator verwenden"
+    href: "/de/learn/getting-started/main-screen/navigator"
+  - title: "Druckauswahl"
+    href: "/de/search-options/selection/learn/howto/print"
+  - title: "Etiketten drucken"
+    href: "/de/search-options/selection/learn/howto/print-labels"
+  - title: "E-Mail drucken"
+    href: "/de/email/inbox/learn/preview#print"
 language: de
 ---
 
@@ -60,14 +69,4 @@ Die allgemeinen Schritte zum Drucken eines Datensatzes in SuperOffice CRM sind a
 
 **Drucken im Browser:** Nachdem Sie **Drucken** gewählt haben, öffnet sich das Druckdialogfeld Ihres Browsers. Die angezeigten Optionen hängen davon ab, welchen Browser Sie verwenden und wie Ihre Druckerkonfiguration eingestellt ist.
 
-## Verwandte Inhalte
-
-* [Navigator verwenden][1]
-* [Druckauswahl][2]
-* [Etiketten drucken][3]
-* [E-Mail drucken][4]
-
 [1]: ../getting-started/main-screen/navigator
-[2]: ../../search-options/selection/learn/howto/print
-[3]: ../../search-options/selection/learn/howto/print-labels
-[4]: ../../email/inbox/learn/preview#print

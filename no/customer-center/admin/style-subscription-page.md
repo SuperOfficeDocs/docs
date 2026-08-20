@@ -79,13 +79,5 @@ Du kan også fjerne språk som du ikke bruker. Dette begrenser språkene som er 
 
 Endringer brukes ikke før du klikker på **Lagre**.
 
-## Relatert innhold
-
-* [Send e-postbekreftelse for personvern][2]
-* [Oversikt over Kundeside][1]
-
-[1]: ../learn/index
-[2]: ../../security/privacy/learn/send-privacy-confirmation-email
-
 [img1]: ../../../media/loc/en/customer-center/subscription-page-styling.png
 [img2]: ../../../media/loc/en/customer-center/subscription-page-options.png

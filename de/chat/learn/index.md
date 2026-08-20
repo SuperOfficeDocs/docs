@@ -79,19 +79,9 @@ Hier können Sie den Kunden aus dem Chat einer vorhandenen Person in SuperOffice
 
 Wenn der Kunde in SuperOffice gefunden wird, können Sie Personeninformationen, Anfragen, Verkäufe, Folgeaufgaben und zuvor registrierte Chat-Sitzungen anzeigen.
 
-## Verwandte Inhalte
-
-* [Chat beantworten][4]
-* [Chat-Statistik anzeigen][5]
-* [Chatfunktion als Kunde benutzen][6]
-* [Chat mit Person in SuperOffice verknüpfen][7]
-
 [1]: ../../knowledge-base/learn/faq/index
 [3]: ../../knowledge-base/learn/reply-templates/index
 [4]: ./respond
-[5]: ./statistics
-[6]: ./as-customer
-[7]: ./link-to-person
 [11]: ./create-request
 [12]: ./transfer-to-agent
 

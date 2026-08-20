@@ -63,12 +63,4 @@ Diese Einstellungen gelten global für alle ERP-Verbindungen des Quote Connector
 * Verwenden Sie klare und beschreibende Bezeichnungen und QuickInfos für zusätzliche Felder.
 * Änderungen an den Bezeichnungen werden nach der nächsten Anmeldung wirksam.
 
-## Verwandte Inhalte
-
-* [Produkt zu einer Preisliste hinzufügen][1]
-* [Produkt in einem Angebot hinzufügen/bearbeiten][2]
-
-[1]: ./price-list-and-products
-[2]: ../../learn/quote/create#add-products
-
 [img1]: ../../../../media/loc/en/sale/configure-product-dialog.png
