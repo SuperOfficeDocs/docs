@@ -26,7 +26,7 @@ REST is best known for building fast responsive JSON-based online applications. 
 
 With [REST][2], API consumers simply use URLs to access SuperOffice resources and exchange JSON data.
 
-With [SOAP][3], API consumers commonly use proxies that simplify sending XML back and forth across the wire. People either generate their own proxies or optionally use proxies provided by SuperOffice.
+With SOAP, API consumers commonly use proxies that simplify sending XML back and forth across the wire. People either generate their own proxies or optionally use proxies provided by SuperOffice.
 
 Historically, SuperOffice proxies were included in the SDK, but are now available for download on [NuGet][4].
 
@@ -121,7 +121,6 @@ SuperOffice does, however, issue refresh tokens, and in that way does support a 
 
 [13]: ./user-contexts
 [2]: ../../api/reference/restful/rest/index
-[3]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/reference/soap/index.md
 [6]: ../../api/authentication/online/index
 
 [1]: https://stackoverflow.com/questions/19884295/soap-vs-rest-differences

@@ -80,7 +80,7 @@ SO-AppToken: Application_Token_Value
 
 System users have unlimited access to the database and are not subject to any security or sentry constraints. System users cannot impersonate other users in the online environment.
 
-See also the [system user MVC example][7].
+See also the system user MVC example.
 
 ## Semi-interactive scenario
 
@@ -141,5 +141,4 @@ Supported in version **Services86** and higher, when used in SOAP requests, the 
 [1]: ../../online/identity/federated-auth
 [2]: ../../api/authentication/online/auth-application/index
 [4]: ../../api/authentication/online/index
-[7]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/tutorials/minimal-csharp-app/overview.mdx
 [10]: https://online.superoffice.com/login/
