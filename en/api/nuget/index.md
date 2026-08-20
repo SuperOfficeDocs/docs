@@ -1,11 +1,12 @@
 ---
 title: Overview
-uid: so_nuget
 description: SuperOffice on NuGet
 author: Tony Yates
 date: 02.29.2016
 content_type: concept
 ---
+
+import OnsiteFreeze from "/snippets/onsite-feature-freeze-v11.md";
 
 I am pleased to announce SuperOffice now has NuGet packages targeting common development and integration
 scenarios! The available packages are only for SuperOffice version 8 and newer. Older SuperOffice version integrations must download and use the assemblies provided in the SDK.
@@ -31,7 +32,9 @@ Most SuperOffice packages include configuration transformations. If not already 
 
 ## Releases
 
-The release plan accommodates both onsite and online customers. Most packages will be in line with onsite releases. However, if SuperOffice publishes a newer package with fixes that target online, onsite releases will not be affected as onsite projects should reference specific versions that are in line with published onsite releases.
+<OnsiteFreeze/>
+
+Onsite projects are unaffected by new cloud packages and should keep referencing the specific package versions that match their onsite release.
 
 ## Available packagers
 

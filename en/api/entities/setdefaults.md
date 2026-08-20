@@ -1,14 +1,16 @@
 ---
 title: SetDefaults method
-uid: netserver_setdefaults
 description: SetDefaults method best practices
 author: SuperOffice Product and Engineering
 date: 11.05.2016
+so_version: 11
 keywords: ['entity', 'row']
 content_type: concept
 deployment: onsite
 redirect_from: /en/api/netserver/entities/setdefaults
 hidden: true
+deprecated: true
+language: en
 ---
 
 Using the `SetDefaults` method when inserting data either to Entity or Row types, could be identified as a good practice.

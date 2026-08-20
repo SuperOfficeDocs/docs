@@ -1,90 +1,53 @@
 ---
-mode: "custom"
-title: Authentication Options
-sidebarTitle: "Overview"
-description: "List of SuperOffice authentication options."
-author: SuperOffice Product and Engineering
-date: 07.17.2026
-language: en
+title: SuperOffice Authentication
+uid: authentication_overview
+description: Overview of SuperOffice API authentication.
+author: AnthonyYates
+date: 08.20.2026
+keywords: ['security', 'identity']
+content_type: concept
+deployment: online, onsite
+redirect_from:
+  - /en/authentication/index
+  - /en/authentication/overview
+  - /en/api/authentication/overview
+# Including redirect_from the subcategory since we can't set redirect_from in index.mdx
 ---
 
-<div id="subcategory">
+SuperOffice supports several different access points to SuperOffice APIs. Without knowing where to begin, it makes it almost impossible to successfully build an integration. The first place most applications must begin with is authentication, Once authentication is understood, and understanding at what data access level your application will integrate with SuperOffice, the remaining tasks should just be learning about the various entity and service APIs for reading and writing data to the SuperOffice database.
 
-<h1>Authentication Options</h1>
+## Introduction
 
-<p className="description">List of SuperOffice authentication options.</p>
+One of the hardest things about getting started with new technologies is knowing where to begin. When it comes to application development and integrations, the obvious place is authentication.
 
-<Columns cols={2}>
-<Card title="Online authentication">
+SuperOffice has multiple data access layers, so let's start with an overview of what the SuperOffice APIs have to offer.
 
-<div className="linklist">
-  <div className="linklist-header">
-    <Icon icon="graduation-cap" />
-    <span>Learn</span>
-  </div>
-  <ul>
-    <li><a href="/en/api/authentication/online/index">SuperOffice Online and SuperID</a></li>
-  </ul>
-</div>
+## Overview of common SuperOffice API surface
 
-***
+![auth][img1]
 
-<div className="linklist">
-  <div className="linklist-header">
-    <Icon icon="compass" />
-    <span>Concept</span>
-  </div>
-  <ul>
-    <li><a href="/en/api/authentication/online/api">OpenID Connect</a></li>
-    <li><a href="/en/api/authentication/online/sign-in-user/auth-code-flow">Authorization code flow</a></li>
-    <li><a href="/en/api/authentication/online/sign-in-user/hybrid-flow">Hybrid Flow</a></li>
-    <li><a href="/en/api/authentication/online/sign-in-user/implicit-flow">Implicit Flow</a></li>
-    <li><a href="/en/api/authentication/online/sign-in-user/native-apps">Native Apps</a></li>
-  </ul>
-</div>
+SuperOffice **COM APIs** have been around the longest. The 2 main interfaces, **IApplication** and **IDatabase**, facilitate access to the Windows client application and the database. While `IApplication` exposes the capabilities to drive the application, `IDatabase` provides the capability to read and write to and from the SuperOffice database without having the Windows client running.
 
-***
+SuperOffice **Customer Service** (CS) capabilities are vast, but most functionality revolves around processing support tickets and in-product automation tools. External API access is very limited, and what is there is considered legacy and obsolete. We recommend NetServer web services, which has a much larger API footprint that provides complete SuperOffice access. Therefore, CS is not mentioned in this article, but if interested read up on [automation tools][11] to learn more about CS and other in-product automation features.
 
-<div className="linklist">
-  <div className="linklist-header">
-    <Icon icon="graduation-cap" />
-    <span>Learn</span>
-  </div>
-  <ul>
-    <li><a href="/en/api/authentication/online/auth-application/index">System User (Backchannel)</a></li>
-  </ul>
-</div>
+SuperOffice **NetServer SOAP web services** are a complete set of service endpoints that support 100% of the SuperOffice web-client functionality. Both the CS and Windows client depend on NetServer web services as well.
 
-</Card>
+At NetServers' core are business entity and table row collections. They provide easy intuitive APIs for data access which most of web services depend on. What services don't use entity and row collections leverage NetServer's Objectified SQL (OSQL) classes for fast DB access, and is responsible for generating the database-vendor-specific SQL.
 
-<Card title="Onsite authentication">
+### Reading advice
 
-<div className="linklist">
-  <div className="linklist-header">
-    <Icon icon="graduation-cap" />
-    <span>Learn</span>
-  </div>
-  <ul>
-    <li><a href="/en/api/authentication/overview">Overview</a></li>
-  </ul>
-</div>
+The objective here is to introduce you to the APIs and help get you past the first hurdle, authentication. All of the following sections assume you have access to an online tenant. Each section defines the dependencies required to successfully authenticate with the corresponding API.
 
-***
+## Options
 
-<div className="linklist">
-  <div className="linklist-header">
-    <Icon icon="power-off" />
-    <span>Get started</span>
-  </div>
-  <ul>
-    <li><a href="https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/authentication/onsite/sosession/index.mdx">NetServer Core</a></li>
-    <li><a href="https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/authentication/onsite/custom-proxies/index.mdx">NetServer Custom Proxies</a></li>
-    <li><a href="https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/authentication/onsite/com/index.mdx">COM API</a></li>
-  </ul>
-</div>
+* [About SuperOffice Online Identity Provider][3]
+  * [How to authenticate using OAuth 2.0 / OpenID Connect][16]
+* [SuperOffice REST / WebAPI web services][8]
 
-</Card>
+[3]: ../../online/identity/federated-auth
+[8]: ../web-services/webapi/index
+[11]: ../../automation/overview
+[14]: ../web-services/endpoints/index
+[16]: ../authentication/online/index
 
-</Columns>
-
-</div>
+[img1]: /media/loc/en/api/authentication/authenticate-overview.png

@@ -1,15 +1,18 @@
 ---
-uid: create-appointment-entity
 title: Create an Appointment entity
 description: How to create an appointment entity.
 keywords: ['diary', 'calendar', 'appointment', 'API', 'entity', 'SuperOffice.CRM.Entities']
 author: Bergfrid Skaara Dias
 date: 11.04.2021
+so_version: 11
 content_type: howto
+deployment: onsite
 redirect_from:
   - /en/diary/howto/entity/create-apt-entity
   - /en/api/netserver/entities/howto/diary/create-apt-entity
 hidden: true
+deprecated: true
+language: en
 ---
 
 Using the `Appointment` [entity][1] exposed in the `SuperOffice.CRM.Entities` namespace is one of the easiest ways to create an appointment, as shown in the example below.

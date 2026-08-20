@@ -1,15 +1,18 @@
 ---
-uid: get-associate-list-entity
 title: Get the associate list
 description: How to retrieve the associate list
 keywords: ['associate', 'list', 'GetAssociateList']
 author: Tony Yates
 date: 02.22.2022
+so_version: 11
 content_type: howto
+deployment: onsite
 redirect_from:
   - /en/contact/howto/entity/get-associate-list
   - /en/api/netserver/entities/howto/contact/get-associate-list
 hidden: true
+deprecated: true
+language: en
 ---
 
 This is the mechanism of retrieving the associates from the database.

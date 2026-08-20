@@ -1,16 +1,19 @@
 ---
-uid: get-category-list-generic-provider
 title: Get a CategoryList through generic list providers
 sidebarTitle: "CategoryList via generic providers"
 description: Get a CategoryList through generic list providers
 keywords: ['category', 'list provider', 'CategoryList']
 author: Tony Yates
 date: 05.11.2016
+so_version: 11
 content_type: howto
+deployment: onsite
 redirect_from:
   - /en/company/howto/entity/get-catlist-generic-provider
   - /en/api/netserver/entities/howto/company/get-catlist-generic-provider
 hidden: true
+deprecated: true
+language: en
 ---
 
 ```csharp
