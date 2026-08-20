@@ -773,6 +773,7 @@
       {
         "group": "Aanpassing",
         "icon": "sliders",
+        "root": "nl/customization/screen-designer/admin/index",
         "pages": [
           "nl/customization/index",
           {
@@ -952,6 +953,7 @@
       {
         "group": "Taal, vertaling en tijdzones",
         "icon": "language",
+        "root": "nl/localization/learn/translate-fields",
         "pages": [
           "nl/localization/learn/customer-languages",
           "nl/localization/learn/translate-fields",

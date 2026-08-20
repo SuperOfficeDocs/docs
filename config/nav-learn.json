@@ -790,6 +790,7 @@
   {
     "group": "Customization",
     "icon": "sliders",
+    "root": "en/customization/screen-designer/admin/index",
     "pages": [
       "en/customization/index",
       {
@@ -1009,6 +1010,7 @@
   {
     "group": "Language, translation, and timezones",
     "icon": "language",
+    "root": "en/localization/learn/translate-fields",
     "pages": [
       "en/localization/learn/customer-languages",
       "en/localization/learn/translate-fields",

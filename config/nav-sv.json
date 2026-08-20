@@ -773,6 +773,7 @@
       {
         "group": "Anpassning",
         "icon": "sliders",
+        "root": "sv/customization/screen-designer/admin/index",
         "pages": [
           "sv/customization/index",
           {
@@ -952,6 +953,7 @@
       {
         "group": "Språk, översättning och tidszoner",
         "icon": "language",
+        "root": "sv/localization/learn/translate-fields",
         "pages": [
           "sv/localization/learn/customer-languages",
           "sv/localization/learn/translate-fields",

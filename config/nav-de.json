@@ -773,6 +773,7 @@
       {
         "group": "Anpassung",
         "icon": "sliders",
+        "root": "de/customization/screen-designer/admin/index",
         "pages": [
           "de/customization/index",
           {
@@ -952,6 +953,7 @@
       {
         "group": "Sprache, Übersetzung und Zeitzonen",
         "icon": "language",
+        "root": "de/localization/learn/translate-fields",
         "pages": [
           "de/localization/learn/customer-languages",
           "de/localization/learn/translate-fields",
