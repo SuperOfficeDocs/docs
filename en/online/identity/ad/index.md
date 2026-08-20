@@ -7,6 +7,8 @@ date: 05.08.2018
 so_version: 12
 content_type: concept
 userflow_index: true
+deployment: onsite
+hidden: true
 language: en
 ---
 
