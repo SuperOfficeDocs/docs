@@ -7,6 +7,15 @@ keywords: ['template', 'Blueprint', 'VS Code', 'Visual Studio Code', 'authoring'
 author: digitaldiina
 date: 07.24.2026
 content_type: reference
+related:
+  - title: "Markdown guide"
+    href: "/contribute/markdown-guide/index"
+  - title: "Edit an article"
+    href: "/contribute/how-to-edit-an-article"
+  - title: "Add or update release notes"
+    href: "/contribute/how-to-add-release-notes"
+  - title: "Metadata (YAML front-matter)"
+    href: "/contribute/markdown-guide/metadata"
 language: en
 ---
 

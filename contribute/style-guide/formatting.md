@@ -6,6 +6,9 @@ keywords: ['bold', 'italics', 'code style', 'formatting', 'keyboard shortcuts']
 author: digitaldiina
 date: 07.09.2026
 content_type: reference
+related:
+  - title: "Documentation style guide"
+    href: "/contribute/style-guide/index"
 language: en
 ---
 

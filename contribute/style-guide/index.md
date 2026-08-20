@@ -6,6 +6,7 @@ keywords: ['style guide', 'tone of voice', 'capitalization', 'headings', 'lists'
 author: digitaldiina
 date: 07.09.2026
 content_type: reference
+related: false
 language: en
 ---
 
