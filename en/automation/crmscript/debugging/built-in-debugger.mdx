@@ -1,5 +1,4 @@
 ---
-uid: crmscript-built-in-debugger
 title: Built-in debugger
 description: Use the built-in CRMScript debugger to step through code, inspect variables, and manage active debug sessions.
 keywords: ['debug CRMScript', 'debug script', 'debug sessions']
@@ -55,17 +54,6 @@ The **Debug sessions** tab lists all active debug sessions in the system. Select
 A session starts when you run a script in debug mode from the **Script** screen, or when a script calls `enableDebug(String key)`.
 
 You can also click **Start tracing scripts** to begin [tracing][2] the scripts in the list.
-
-## Debug panel (onsite)
-
-If you have an **onsite** tenant:
-
-1. Call `enableDebug(String)` in the script with ID matching value set in */bin/rms.exe?action=debug*.
-2. Then call `debugWait()` (consider it a breakpoint). This opens the **Debug** panel.
-
-Parameters set in the **Debug** panel are stored in browser cookies and apply to your session only. This lets you debug without disturbing other users and avoids crowding the log files.
-
-If the script is run from another browser (where the ID is different or not set), it will run as normal, ignoring all calls to `enableDebug()` and `debugWait()`. This allows you to debug in a "hot" environment.
 
 ## Related content
 
