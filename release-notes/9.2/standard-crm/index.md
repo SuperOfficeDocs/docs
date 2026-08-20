@@ -6,6 +6,8 @@ date: 04.28.2021
 so_version: 9.2
 content_type: release-note
 deployment: onsite
+related: false
+noindex: true
 language: en
 ---
 

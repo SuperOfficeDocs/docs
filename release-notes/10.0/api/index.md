@@ -13,6 +13,8 @@ redirect_from:
   - /release-notes/10.0/api/10.0.5-update
   - /release-notes/10.0/api/10.0.6-update
   - /release-notes/10.0/api/10.0.7-update
+related: false
+noindex: true
 language: en
 ---
 

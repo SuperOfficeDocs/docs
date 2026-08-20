@@ -10,6 +10,8 @@ content_type: release-note
 category: Settings and maintenance
 audience: settings
 audience_tooltip: Settings and maintenance
+related: false
+noindex: true
 language: en
 ---
 

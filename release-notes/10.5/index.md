@@ -9,6 +9,8 @@ date: 05.05.2025
 so_version: 10.5
 content_type: release-note
 category: crm
+related: false
+noindex: true
 language: en
 ---
 

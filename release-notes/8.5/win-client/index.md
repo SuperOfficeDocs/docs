@@ -6,6 +6,8 @@ date: 12.18.2020
 so_version: 8.5
 content_type: release-note
 deployment: onsite
+related: false
+noindex: true
 language: en
 ---
 
