@@ -9,6 +9,9 @@ content_type: howto
 category: integration
 topic: Zapier
 platform: Zapier
+related:
+  - title: "Insert the time your Zap runs into a field"
+    href: "https://help.zapier.com/hc/en-us/articles/8496275717261#adjusting-dates-and-times"
 language: en
 redirect_from: /en/automation/zapier/howto/datetime
 ---
@@ -42,12 +45,6 @@ The Formatter in Zapier provides three transformation options for handling date 
 1. **Format** - Converts a date or time value into a different format or style.
 
     ![Format -screenshot][img6]
-
-## Related content
-
-* [Insert the time your Zap runs into a field][1]
-
-[1]: https://help.zapier.com/hc/en-us/articles/8496275717261#adjusting-dates-and-times
 
 [img1]: /media/loc/en/integrations/zapier/formatter-step.png
 [img2]: /media/loc/en/integrations/zapier/select-formatter.png

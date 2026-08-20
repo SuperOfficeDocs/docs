@@ -9,6 +9,7 @@ content_type: reference
 category: integration
 topic: Zapier
 platform: Zapier
+related: false
 language: en
 userflow_index: true
 redirect_from: /en/automation/zapier/reference

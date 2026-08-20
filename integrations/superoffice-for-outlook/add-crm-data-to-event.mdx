@@ -11,6 +11,9 @@ category: integration
 topic: SuperOffice for Outlook
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - title: "What's new in SuperOffice for Outlook"
+    href: "/release-notes/integrations/sofo"
 language: en
 userflow_index: true
 redirect_from:
