@@ -65,12 +65,14 @@ Product content pages (everything outside `contribute/`) use a larger property s
 | 19 | `redirect_from` | If present | Old URL(s) that should redirect here |
 | 20 | `hidden` | If present | `true` to remove the page from sidebar navigation (still reachable by URL, not search-indexed). Used when consolidating several pages into one: pair with `redirect_from` and a `docs.json` redirect. Never set to `false`. |
 | 21 | `userflow_index` | If present | `true` if the page is outside a *learn* folder and should be included in the per-language userhelp sitemap Userflow's in-app Resource Center reads (see [SEO and social previews][3]) |
-| 22 | `icon` | If present | Font Awesome icon name shown next to the page's sidebar entry. On a subcategory map page (see the subcategory-landing-page blueprint template), always `"map"`, paired with `iconType` |
-| 23 | `iconType` | If present | Font Awesome style for `icon`: `regular`, `solid`, `light`, `thin`, `sharp-solid`, `duotone`, or `brands`. Subcategory map pages use `"regular"` |
-| 24 | `language` | Always | Language code: always last |
+| 22 | `language` | Always | Language code: always last |
 
 <Note>
 `contribute/` pages (like this one) only use `uid`/`title`/`description`/`keywords`/`author`/`date`/`content_type`/`language`: the rest describe product features and don't apply here.
+</Note>
+
+<Note>
+A subcategory map page (`mode: "custom"`, `<div id="subcategory">` in the body — the per-topic "map" page listing a Guides category's own sub-pages, for example `en/company/index.mdx`) uses its own smaller property set instead of the table above: `mode`, `title`, `sidebarTitle`, `description`, `icon`, `iconType`, `author`, `date`, `language`. `icon` is always `"map"` and `iconType` is always `"regular"` (Font Awesome, not Phosphor), positioned after `description` and before `author`. Translate `sidebarTitle` on non-English subcategory pages same as `title`/`description`. See the `subcategory-landing-page` blueprint template.
 </Note>
 
 ### Default so_version by section
