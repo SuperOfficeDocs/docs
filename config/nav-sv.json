@@ -31,7 +31,8 @@
           "sv/learn/getting-started/connect-your-accounts",
           "sv/learn/getting-started/edit-email-signature",
           "sv/learn/getting-started/change-language"
-        ]
+        ],
+        "icon": "rocket"
       },
       {
         "group": "Lär dig grunderna",
@@ -67,7 +68,8 @@
           "sv/learn/basics/relations",
           "sv/learn/basics/external-applications-and-url-addresses",
           "sv/learn/basics/creating-shortcuts-to-entries-in-crm"
-        ]
+        ],
+        "icon": "graduation-cap"
       },
       {
         "group": "Sökfunktioner",
@@ -85,7 +87,8 @@
               "sv/search-options/admin/stopwords"
             ]
           }
-        ]
+        ],
+        "icon": "magnifying-glass"
       },
       {
         "group": "Dashboard",
@@ -98,13 +101,14 @@
           "sv/dashboard/learn/show-sales-targets",
           "sv/dashboard/learn/show-marketing",
           "sv/dashboard/learn/show-requests"
-        ]
+        ],
+        "icon": "gauge"
       },
       {
         "group": "Företag",
-        "root": "sv/company/index",
-        "icon": "map",
+        "icon": "building",
         "pages": [
+          "sv/company/index",
           "sv/company/learn/index",
           "sv/company/learn/create",
           "sv/company/learn/edit",
@@ -116,9 +120,9 @@
       },
       {
         "group": "Kontakt",
-        "root": "sv/contact/index",
-        "icon": "map",
+        "icon": "circle-user",
         "pages": [
+          "sv/contact/index",
           "sv/contact/learn/index",
           "sv/contact/learn/create",
           "sv/contact/learn/edit",
@@ -131,9 +135,9 @@
       },
       {
         "group": "Kalender",
-        "root": "sv/diary/index",
-        "icon": "map",
+        "icon": "calendar",
         "pages": [
+          "sv/diary/index",
           "sv/diary/learn/index",
           "sv/diary/learn/follow-ups",
           "sv/diary/learn/video-meetings",
@@ -173,9 +177,9 @@
       },
       {
         "group": "Dokument",
-        "root": "sv/document/index",
-        "icon": "map",
+        "icon": "file-lines",
         "pages": [
+          "sv/document/index",
           "sv/document/learn/index",
           "sv/document/library/learn/index",
           {
@@ -252,9 +256,9 @@
       },
       {
         "group": "E-post",
-        "root": "sv/email/index",
-        "icon": "map",
+        "icon": "at",
         "pages": [
+          "sv/email/index",
           "sv/email/learn/index",
           "sv/email/learn/change-default-mail-client",
           {
@@ -291,9 +295,9 @@
       },
       {
         "group": "Försäljning",
-        "root": "sv/sale/index",
-        "icon": "map",
+        "icon": "circle-dollar-to-slot",
         "pages": [
+          "sv/sale/index",
           "sv/sale/learn/index",
           "sv/sale/learn/create",
           "sv/sale/learn/update",
@@ -351,9 +355,9 @@
       },
       {
         "group": "Projekt",
-        "root": "sv/project/index",
-        "icon": "map",
+        "icon": "clipboard-list",
         "pages": [
+          "sv/project/index",
           "sv/project/learn/index",
           "sv/project/learn/create",
           "sv/project/learn/add-image",
@@ -387,9 +391,9 @@
       },
       {
         "group": "Ärenden",
-        "root": "sv/request/index",
-        "icon": "map",
+        "icon": "ticket",
         "pages": [
+          "sv/request/index",
           "sv/request/learn/index",
           "sv/request/learn/handle-request-ai",
           "sv/request/learn/find",
@@ -456,8 +460,9 @@
       },
       {
         "group": "Egendefinierade objekt",
-        "root": "sv/custom-objects/learn/index",
         "pages": [
+          "sv/custom-objects/index",
+          "sv/custom-objects/learn/index",
           "sv/custom-objects/learn/more-tab",
           {
             "group": "Användardefinierade fält",
@@ -483,7 +488,8 @@
               "sv/custom-objects/admin/show-extra-field-on-request-details"
             ]
           }
-        ]
+        ],
+        "icon": "cube"
       },
       {
         "group": "Urval",
@@ -508,7 +514,8 @@
               "sv/search-options/selection/learn/howto/export"
             ]
           }
-        ]
+        ],
+        "icon": "square-minus"
       },
       {
         "group": "Chatt",
@@ -528,7 +535,8 @@
               "sv/chat/admin/add-javascript"
             ]
           }
-        ]
+        ],
+        "icon": "comment-dots"
       },
       {
         "group": "Marknadsföring",
@@ -639,7 +647,8 @@
               }
             ]
           }
-        ]
+        ],
+        "icon": "bullseye"
       },
       {
         "group": "Lead-administration",
@@ -655,7 +664,8 @@
               "sv/lead/admin/category-automation"
             ]
           }
-        ]
+        ],
+        "icon": "filter"
       },
       {
         "group": "Kunskapsbas",
@@ -684,7 +694,8 @@
           },
           "sv/knowledge-base/learn/email-addresses",
           "sv/knowledge-base/learn/external-document"
-        ]
+        ],
+        "icon": "book-bookmark"
       },
       {
         "group": "Integritetsinställningar och GDPR",
@@ -704,7 +715,8 @@
               "sv/security/privacy/admin/edit-privacy-confirmation-email"
             ]
           }
-        ]
+        ],
+        "icon": "shield"
       },
       {
         "group": "AI-tjänster",
@@ -719,7 +731,8 @@
               "sv/ai/admin/set-up-categorization"
             ]
           }
-        ]
+        ],
+        "icon": "wand-magic-sparkles"
       },
       {
         "group": "SAINT (försäljningsintelligens)",
@@ -735,7 +748,8 @@
               "sv/saint/admin/sale-amount-class"
             ]
           }
-        ]
+        ],
+        "icon": "chart-bar"
       },
       {
         "group": "ERP",
@@ -753,13 +767,14 @@
               "sv/erp/admin/resync-from-crm"
             ]
           }
-        ]
+        ],
+        "icon": "barcode"
       },
       {
         "group": "Anpassning",
-        "root": "sv/customization/index",
-        "icon": "map",
+        "icon": "sliders",
         "pages": [
+          "sv/customization/index",
           {
             "group": "Skärmdesigner",
             "root": "sv/customization/screen-designer/admin/index",
@@ -854,9 +869,9 @@
       },
       {
         "group": "Inställningar och underhåll",
-        "root": "sv/admin/index",
-        "icon": "map",
+        "icon": "gear",
         "pages": [
+          "sv/admin/index",
           "sv/admin/getting-started",
           "sv/admin/adjusting-views",
           {
@@ -948,7 +963,8 @@
               "sv/localization/admin/add-customer-language"
             ]
           }
-        ]
+        ],
+        "icon": "language"
       }
     ]
   },
