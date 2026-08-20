@@ -14,6 +14,7 @@
       "nl/learn/intro",
       {
         "group": "Aan de slag",
+        "icon": "rocket",
         "root": "nl/learn/getting-started/index",
         "pages": [
           {
@@ -35,6 +36,7 @@
       },
       {
         "group": "De basis leren",
+        "icon": "graduation-cap",
         "root": "nl/learn/basics/index",
         "pages": [
           "nl/learn/basics/notifications",
@@ -71,6 +73,7 @@
       },
       {
         "group": "Zoekopties",
+        "icon": "magnifying-glass",
         "root": "nl/search-options/learn/index",
         "pages": [
           "nl/search-options/learn/find-screen",
@@ -89,6 +92,7 @@
       },
       {
         "group": "Dashboard",
+        "icon": "gauge",
         "root": "nl/dashboard/learn/index",
         "pages": [
           "nl/dashboard/learn/create",
@@ -102,10 +106,10 @@
       },
       {
         "group": "Bedrijf",
-        "root": "nl/company/index",
-        "icon": "map",
+        "icon": "building",
+        "root": "nl/company/learn/index",
         "pages": [
-          "nl/company/learn/index",
+          "nl/company/index",
           "nl/company/learn/create",
           "nl/company/learn/edit",
           "nl/company/learn/copy",
@@ -116,10 +120,10 @@
       },
       {
         "group": "Persoon",
-        "root": "nl/contact/index",
-        "icon": "map",
+        "icon": "circle-user",
+        "root": "nl/contact/learn/index",
         "pages": [
-          "nl/contact/learn/index",
+          "nl/contact/index",
           "nl/contact/learn/create",
           "nl/contact/learn/edit",
           "nl/contact/learn/move",
@@ -131,10 +135,10 @@
       },
       {
         "group": "Agenda",
-        "root": "nl/diary/index",
-        "icon": "map",
+        "icon": "calendar",
+        "root": "nl/diary/learn/index",
         "pages": [
-          "nl/diary/learn/index",
+          "nl/diary/index",
           "nl/diary/learn/follow-ups",
           "nl/diary/learn/video-meetings",
           "nl/diary/learn/create-follow-up",
@@ -173,10 +177,10 @@
       },
       {
         "group": "Document",
-        "root": "nl/document/index",
-        "icon": "map",
+        "icon": "file-lines",
+        "root": "nl/document/learn/index",
         "pages": [
-          "nl/document/learn/index",
+          "nl/document/index",
           "nl/document/library/learn/index",
           {
             "group": "Werken met document",
@@ -252,10 +256,10 @@
       },
       {
         "group": "E-mail",
-        "root": "nl/email/index",
-        "icon": "map",
+        "icon": "at",
+        "root": "nl/email/learn/index",
         "pages": [
-          "nl/email/learn/index",
+          "nl/email/index",
           "nl/email/learn/change-default-mail-client",
           {
             "group": "Postvak IN",
@@ -291,10 +295,10 @@
       },
       {
         "group": "Verkoop",
-        "root": "nl/sale/index",
-        "icon": "map",
+        "icon": "circle-dollar-to-slot",
+        "root": "nl/sale/learn/index",
         "pages": [
-          "nl/sale/learn/index",
+          "nl/sale/index",
           "nl/sale/learn/create",
           "nl/sale/learn/update",
           "nl/sale/learn/sales-guides",
@@ -351,10 +355,10 @@
       },
       {
         "group": "Project",
-        "root": "nl/project/index",
-        "icon": "map",
+        "icon": "clipboard-list",
+        "root": "nl/project/learn/index",
         "pages": [
-          "nl/project/learn/index",
+          "nl/project/index",
           "nl/project/learn/create",
           "nl/project/learn/add-image",
           "nl/project/learn/edit",
@@ -387,10 +391,10 @@
       },
       {
         "group": "Verzoeken",
-        "root": "nl/request/index",
-        "icon": "map",
+        "icon": "ticket",
+        "root": "nl/request/learn/index",
         "pages": [
-          "nl/request/learn/index",
+          "nl/request/index",
           "nl/request/learn/handle-request-ai",
           "nl/request/learn/find",
           "nl/request/learn/create",
@@ -456,8 +460,10 @@
       },
       {
         "group": "Aangepaste objecten",
+        "icon": "cube",
         "root": "nl/custom-objects/learn/index",
         "pages": [
+          "nl/custom-objects/index",
           "nl/custom-objects/learn/more-tab",
           {
             "group": "Door gebruiker gedefinieerde velden",
@@ -487,6 +493,7 @@
       },
       {
         "group": "Selectie",
+        "icon": "square-minus",
         "root": "nl/search-options/selection/learn/index",
         "pages": [
           "nl/search-options/selection/learn/create",
@@ -512,6 +519,7 @@
       },
       {
         "group": "Chatten",
+        "icon": "comment-dots",
         "root": "nl/chat/learn/index",
         "pages": [
           "nl/chat/learn/statistics",
@@ -532,6 +540,7 @@
       },
       {
         "group": "Marketing",
+        "icon": "bullseye",
         "root": "nl/marketing/learn/index",
         "pages": [
           "nl/marketing/learn/create-folder",
@@ -643,6 +652,7 @@
       },
       {
         "group": "Leadbeheer",
+        "icon": "filter",
         "root": "nl/lead/learn/index",
         "pages": [
           "nl/lead/learn/work-with-leads",
@@ -659,6 +669,7 @@
       },
       {
         "group": "Kennisdatabase",
+        "icon": "book-bookmark",
         "root": "nl/knowledge-base/learn/index",
         "pages": [
           "nl/knowledge-base/learn/manage-folders",
@@ -688,6 +699,7 @@
       },
       {
         "group": "Privacy-instellingen en AVG",
+        "icon": "shield",
         "root": "nl/security/privacy/learn/index",
         "pages": [
           "nl/security/privacy/learn/edit-legal-base",
@@ -708,6 +720,7 @@
       },
       {
         "group": "AI-diensten",
+        "icon": "wand-magic-sparkles",
         "root": "nl/ai/learn/index",
         "pages": [
           "nl/ai/learn/text-analysis",
@@ -723,6 +736,7 @@
       },
       {
         "group": "SAINT (Sales Intelligence)",
+        "icon": "chart-bar",
         "root": "nl/saint/learn/index",
         "pages": [
           {
@@ -739,6 +753,7 @@
       },
       {
         "group": "ERP",
+        "icon": "barcode",
         "root": "nl/erp/learn/index",
         "pages": [
           "nl/erp/learn/connect",
@@ -757,9 +772,10 @@
       },
       {
         "group": "Aanpassing",
-        "root": "nl/customization/index",
-        "icon": "map",
+        "icon": "sliders",
+        "root": "nl/customization/screen-designer/admin/index",
         "pages": [
+          "nl/customization/index",
           {
             "group": "Schermontwerper",
             "root": "nl/customization/screen-designer/admin/index",
@@ -854,10 +870,10 @@
       },
       {
         "group": "Instellingen en onderhoud",
-        "root": "nl/admin/index",
-        "icon": "map",
+        "icon": "gear",
+        "root": "nl/admin/getting-started",
         "pages": [
-          "nl/admin/getting-started",
+          "nl/admin/index",
           "nl/admin/adjusting-views",
           {
             "group": "Licenties",
@@ -936,6 +952,8 @@
       },
       {
         "group": "Taal, vertaling en tijdzones",
+        "icon": "language",
+        "root": "nl/localization/learn/translate-fields",
         "pages": [
           "nl/localization/learn/customer-languages",
           "nl/localization/learn/translate-fields",

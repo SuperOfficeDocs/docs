@@ -71,6 +71,10 @@ Product content pages (everything outside `contribute/`) use a larger property s
 `contribute/` pages (like this one) only use `uid`/`title`/`description`/`keywords`/`author`/`date`/`content_type`/`language`: the rest describe product features and don't apply here.
 </Note>
 
+<Note>
+A subcategory map page (`mode: "custom"`, `<div id="subcategory">` in the body — the per-topic "map" page listing a Guides category's own sub-pages, for example `en/company/index.mdx`) uses its own smaller property set instead of the table above: `mode`, `title`, `sidebarTitle`, `description`, `icon`, `iconType`, `author`, `date`, `language`. `icon` is always `"map"` and `iconType` is always `"regular"` (Font Awesome, not Phosphor), positioned after `description` and before `author`. Translate `sidebarTitle` on non-English subcategory pages same as `title`/`description`. See the `subcategory-landing-page` blueprint template.
+</Note>
+
 ### Default so_version by section
 
 `so_version` is required in handcrafted docs, omitted in generated ones (the `reference/` and `table/` folders).

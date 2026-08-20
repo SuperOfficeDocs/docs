@@ -14,6 +14,7 @@
       "no/learn/intro",
       {
         "group": "Komme i gang",
+        "icon": "rocket",
         "root": "no/learn/getting-started/index",
         "pages": [
           {
@@ -35,6 +36,7 @@
       },
       {
         "group": "Lær det grunnleggende",
+        "icon": "graduation-cap",
         "root": "no/learn/basics/index",
         "pages": [
           "no/learn/basics/notifications",
@@ -71,6 +73,7 @@
       },
       {
         "group": "Søkealternativer",
+        "icon": "magnifying-glass",
         "root": "no/search-options/learn/index",
         "pages": [
           "no/search-options/learn/find-screen",
@@ -89,6 +92,7 @@
       },
       {
         "group": "Dashbord",
+        "icon": "gauge",
         "root": "no/dashboard/learn/index",
         "pages": [
           "no/dashboard/learn/create",
@@ -102,10 +106,10 @@
       },
       {
         "group": "Firma",
-        "root": "no/company/index",
-        "icon": "map",
+        "icon": "building",
+        "root": "no/company/learn/index",
         "pages": [
-          "no/company/learn/index",
+          "no/company/index",
           "no/company/learn/create",
           "no/company/learn/edit",
           "no/company/learn/copy",
@@ -116,10 +120,10 @@
       },
       {
         "group": "Person",
-        "root": "no/contact/index",
-        "icon": "map",
+        "icon": "circle-user",
+        "root": "no/contact/learn/index",
         "pages": [
-          "no/contact/learn/index",
+          "no/contact/index",
           "no/contact/learn/create",
           "no/contact/learn/edit",
           "no/contact/learn/move",
@@ -131,10 +135,10 @@
       },
       {
         "group": "Dagbok",
-        "root": "no/diary/index",
-        "icon": "map",
+        "icon": "calendar",
+        "root": "no/diary/learn/index",
         "pages": [
-          "no/diary/learn/index",
+          "no/diary/index",
           "no/diary/learn/follow-ups",
           "no/diary/learn/video-meetings",
           "no/diary/learn/create-follow-up",
@@ -173,10 +177,10 @@
       },
       {
         "group": "Dokument",
-        "root": "no/document/index",
-        "icon": "map",
+        "icon": "file-lines",
+        "root": "no/document/learn/index",
         "pages": [
-          "no/document/learn/index",
+          "no/document/index",
           "no/document/library/learn/index",
           {
             "group": "Arbeide med dokument",
@@ -252,10 +256,10 @@
       },
       {
         "group": "E-post",
-        "root": "no/email/index",
-        "icon": "map",
+        "icon": "at",
+        "root": "no/email/learn/index",
         "pages": [
-          "no/email/learn/index",
+          "no/email/index",
           "no/email/learn/change-default-mail-client",
           {
             "group": "Innboks",
@@ -291,10 +295,10 @@
       },
       {
         "group": "Salg",
-        "root": "no/sale/index",
-        "icon": "map",
+        "icon": "circle-dollar-to-slot",
+        "root": "no/sale/learn/index",
         "pages": [
-          "no/sale/learn/index",
+          "no/sale/index",
           "no/sale/learn/create",
           "no/sale/learn/update",
           "no/sale/learn/sales-guides",
@@ -351,10 +355,10 @@
       },
       {
         "group": "Prosjekt",
-        "root": "no/project/index",
-        "icon": "map",
+        "icon": "clipboard-list",
+        "root": "no/project/learn/index",
         "pages": [
-          "no/project/learn/index",
+          "no/project/index",
           "no/project/learn/create",
           "no/project/learn/add-image",
           "no/project/learn/edit",
@@ -387,10 +391,10 @@
       },
       {
         "group": "Saksbehandling",
-        "root": "no/request/index",
-        "icon": "map",
+        "icon": "ticket",
+        "root": "no/request/learn/index",
         "pages": [
-          "no/request/learn/index",
+          "no/request/index",
           "no/request/learn/handle-request-ai",
           "no/request/learn/find",
           "no/request/learn/create",
@@ -456,8 +460,10 @@
       },
       {
         "group": "Egendefinerte objekter",
+        "icon": "cube",
         "root": "no/custom-objects/learn/index",
         "pages": [
+          "no/custom-objects/index",
           "no/custom-objects/learn/more-tab",
           {
             "group": "Brukerdefinerte felt",
@@ -487,6 +493,7 @@
       },
       {
         "group": "Utvalg",
+        "icon": "square-minus",
         "root": "no/search-options/selection/learn/index",
         "pages": [
           "no/search-options/selection/learn/create",
@@ -512,6 +519,7 @@
       },
       {
         "group": "Chat",
+        "icon": "comment-dots",
         "root": "no/chat/learn/index",
         "pages": [
           "no/chat/learn/statistics",
@@ -532,6 +540,7 @@
       },
       {
         "group": "Markedsføring",
+        "icon": "bullseye",
         "root": "no/marketing/learn/index",
         "pages": [
           "no/marketing/learn/create-folder",
@@ -643,6 +652,7 @@
       },
       {
         "group": "Lead-administrasjon",
+        "icon": "filter",
         "root": "no/lead/learn/index",
         "pages": [
           "no/lead/learn/work-with-leads",
@@ -659,6 +669,7 @@
       },
       {
         "group": "Kunnskapsbase",
+        "icon": "book-bookmark",
         "root": "no/knowledge-base/learn/index",
         "pages": [
           "no/knowledge-base/learn/manage-folders",
@@ -688,6 +699,7 @@
       },
       {
         "group": "Personverninnstillinger og GDPR",
+        "icon": "shield",
         "root": "no/security/privacy/learn/index",
         "pages": [
           "no/security/privacy/learn/edit-legal-base",
@@ -708,6 +720,7 @@
       },
       {
         "group": "AI-tjenester",
+        "icon": "wand-magic-sparkles",
         "root": "no/ai/learn/index",
         "pages": [
           "no/ai/learn/text-analysis",
@@ -723,6 +736,7 @@
       },
       {
         "group": "SAINT (Sales intelligence)",
+        "icon": "chart-bar",
         "root": "no/saint/learn/index",
         "pages": [
           {
@@ -739,6 +753,7 @@
       },
       {
         "group": "ERP",
+        "icon": "barcode",
         "root": "no/erp/learn/index",
         "pages": [
           "no/erp/learn/connect",
@@ -757,9 +772,10 @@
       },
       {
         "group": "Tilpasning",
-        "root": "no/customization/index",
-        "icon": "map",
+        "icon": "sliders",
+        "root": "no/customization/screen-designer/admin/index",
         "pages": [
+          "no/customization/index",
           {
             "group": "Skjermdesigner",
             "root": "no/customization/screen-designer/admin/index",
@@ -854,10 +870,10 @@
       },
       {
         "group": "Innstillinger og vedlikehold",
-        "root": "no/admin/index",
-        "icon": "map",
+        "icon": "gear",
+        "root": "no/admin/getting-started",
         "pages": [
-          "no/admin/getting-started",
+          "no/admin/index",
           "no/admin/adjusting-views",
           {
             "group": "Lisenser",
@@ -936,6 +952,8 @@
       },
       {
         "group": "Språk, oversettelse og tidssoner",
+        "icon": "language",
+        "root": "no/localization/learn/translate-fields",
         "pages": [
           "no/localization/learn/customer-languages",
           "no/localization/learn/translate-fields",
