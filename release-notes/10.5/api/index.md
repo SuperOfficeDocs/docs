@@ -9,6 +9,8 @@ date:
 so_version: 10.5
 content_type: release-note
 category: api
+related: false
+noindex: true
 language: en
 ---
 

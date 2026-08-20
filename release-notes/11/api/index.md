@@ -9,6 +9,8 @@ date: 06.10.2025
 so_version: 11
 content_type: release-note
 category: api
+related: false
+noindex: true
 language: en
 ---
 
