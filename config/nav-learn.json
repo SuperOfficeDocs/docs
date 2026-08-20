@@ -1,12 +1,13 @@
 [
   {
     "group": "Overview",
-    "root": "en/learn/index",
-    "icon": "compass"
+    "icon": "compass",
+    "root": "en/learn/index"
   },
   "en/learn/intro",
   {
     "group": "Get started",
+    "icon": "rocket",
     "root": "en/learn/getting-started/index",
     "pages": [
       {
@@ -24,11 +25,11 @@
       "en/learn/getting-started/connect-your-accounts",
       "en/learn/getting-started/edit-email-signature",
       "en/learn/getting-started/change-language"
-    ],
-    "icon": "rocket"
+    ]
   },
   {
     "group": "Learn the basics",
+    "icon": "graduation-cap",
     "root": "en/learn/basics/index",
     "pages": [
       "en/learn/basics/notifications",
@@ -61,13 +62,12 @@
       "en/learn/basics/relations",
       "en/learn/basics/external-applications-and-url-addresses",
       "en/learn/basics/creating-shortcuts-to-entries-in-crm"
-    ],
-    "icon": "graduation-cap"
+    ]
   },
   {
     "group": "Search options",
-    "root": "en/search-options/index",
     "icon": "magnifying-glass",
+    "root": "en/search-options/index",
     "pages": [
       "en/search-options/learn/index",
       "en/search-options/learn/find-screen",
@@ -86,6 +86,7 @@
   },
   {
     "group": "Dashboard",
+    "icon": "gauge",
     "root": "en/dashboard/learn/index",
     "pages": [
       "en/dashboard/learn/create",
@@ -95,15 +96,14 @@
       "en/dashboard/learn/show-sales-targets",
       "en/dashboard/learn/show-marketing",
       "en/dashboard/learn/show-requests"
-    ],
-    "icon": "gauge"
+    ]
   },
   {
     "group": "Company",
     "icon": "building",
+    "root": "en/company/learn/index",
     "pages": [
       "en/company/index",
-      "en/company/learn/index",
       "en/company/learn/create",
       "en/company/learn/edit",
       "en/company/learn/copy",
@@ -116,9 +116,9 @@
   {
     "group": "Contact",
     "icon": "circle-user",
+    "root": "en/contact/learn/index",
     "pages": [
       "en/contact/index",
-      "en/contact/learn/index",
       "en/contact/learn/create",
       "en/contact/learn/edit",
       "en/contact/learn/move",
@@ -132,9 +132,9 @@
   {
     "group": "Diary",
     "icon": "calendar",
+    "root": "en/diary/learn/index",
     "pages": [
       "en/diary/index",
-      "en/diary/learn/index",
       "en/diary/learn/follow-ups",
       "en/diary/learn/video-meetings",
       "en/diary/learn/create-follow-up",
@@ -175,9 +175,9 @@
   {
     "group": "Document",
     "icon": "file-lines",
+    "root": "en/document/learn/index",
     "pages": [
       "en/document/index",
-      "en/document/learn/index",
       "en/document/library/learn/index",
       {
         "group": "Work with documents",
@@ -260,9 +260,9 @@
   {
     "group": "Email",
     "icon": "at",
+    "root": "en/email/learn/index",
     "pages": [
       "en/email/index",
-      "en/email/learn/index",
       "en/email/learn/change-default-mail-client",
       {
         "group": "Inbox",
@@ -299,9 +299,9 @@
   {
     "group": "Sale",
     "icon": "circle-dollar-to-slot",
+    "root": "en/sale/learn/index",
     "pages": [
       "en/sale/index",
-      "en/sale/learn/index",
       "en/sale/learn/create",
       "en/sale/learn/update",
       "en/sale/learn/sales-guides",
@@ -360,9 +360,9 @@
   {
     "group": "Project",
     "icon": "clipboard-list",
+    "root": "en/project/learn/index",
     "pages": [
       "en/project/index",
-      "en/project/learn/index",
       "en/project/learn/create",
       "en/project/learn/add-image",
       "en/project/learn/edit",
@@ -397,9 +397,9 @@
   {
     "group": "Requests",
     "icon": "ticket",
+    "root": "en/request/learn/index",
     "pages": [
       "en/request/index",
-      "en/request/learn/index",
       "en/request/learn/handle-request-ai",
       "en/request/learn/find",
       "en/request/learn/create",
@@ -467,9 +467,9 @@
   {
     "group": "Custom objects",
     "icon": "cube",
+    "root": "en/custom-objects/learn/index",
     "pages": [
       "en/custom-objects/index",
-      "en/custom-objects/learn/index",
       "en/custom-objects/learn/more-tab",
       {
         "group": "User-defined fields",
@@ -500,6 +500,7 @@
   },
   {
     "group": "Selection",
+    "icon": "square-minus",
     "root": "en/search-options/selection/learn/index",
     "pages": [
       "en/search-options/selection/learn/create",
@@ -521,11 +522,11 @@
           "en/search-options/selection/learn/howto/export"
         ]
       }
-    ],
-    "icon": "square-minus"
+    ]
   },
   {
     "group": "Chat",
+    "icon": "comment-dots",
     "root": "en/chat/learn/index",
     "pages": [
       "en/chat/learn/statistics",
@@ -542,11 +543,11 @@
           "en/chat/admin/add-javascript"
         ]
       }
-    ],
-    "icon": "comment-dots"
+    ]
   },
   {
     "group": "Marketing",
+    "icon": "bullseye",
     "root": "en/marketing/learn/index",
     "pages": [
       "en/marketing/learn/create-folder",
@@ -662,11 +663,11 @@
           }
         ]
       }
-    ],
-    "icon": "bullseye"
+    ]
   },
   {
     "group": "Lead management",
+    "icon": "filter",
     "root": "en/lead/learn/index",
     "pages": [
       "en/lead/learn/work-with-leads",
@@ -679,11 +680,11 @@
           "en/lead/admin/category-automation"
         ]
       }
-    ],
-    "icon": "filter"
+    ]
   },
   {
     "group": "Knowledge base",
+    "icon": "book-bookmark",
     "root": "en/knowledge-base/learn/index",
     "pages": [
       "en/knowledge-base/learn/manage-folders",
@@ -709,11 +710,11 @@
       },
       "en/knowledge-base/learn/email-addresses",
       "en/knowledge-base/learn/external-document"
-    ],
-    "icon": "book-bookmark"
+    ]
   },
   {
     "group": "Privacy settings and GDPR",
+    "icon": "shield",
     "root": "en/security/privacy/index",
     "pages": [
       "en/security/index",
@@ -732,11 +733,11 @@
           "en/security/privacy/admin/edit-privacy-confirmation-email"
         ]
       }
-    ],
-    "icon": "shield"
+    ]
   },
   {
     "group": "AI services",
+    "icon": "wand-magic-sparkles",
     "root": "en/ai/learn/index",
     "pages": [
       "en/ai/learn/text-analysis",
@@ -748,11 +749,11 @@
           "en/ai/admin/set-up-categorization"
         ]
       }
-    ],
-    "icon": "wand-magic-sparkles"
+    ]
   },
   {
     "group": "SAINT (Sales intelligence)",
+    "icon": "chart-bar",
     "root": "en/saint/learn/index",
     "pages": [
       {
@@ -765,11 +766,11 @@
           "en/saint/admin/sale-amount-class"
         ]
       }
-    ],
-    "icon": "chart-bar"
+    ]
   },
   {
     "group": "ERP",
+    "icon": "barcode",
     "root": "en/erp/learn/index",
     "pages": [
       "en/erp/learn/connect",
@@ -784,8 +785,7 @@
           "en/erp/admin/resync-from-crm"
         ]
       }
-    ],
-    "icon": "barcode"
+    ]
   },
   {
     "group": "Customization",
@@ -886,9 +886,9 @@
   {
     "group": "Settings and maintenance",
     "icon": "gear",
+    "root": "en/admin/getting-started",
     "pages": [
       "en/admin/index",
-      "en/admin/getting-started",
       "en/admin/adjusting-views",
       {
         "group": "Licenses",
@@ -1008,6 +1008,7 @@
   },
   {
     "group": "Language, translation, and timezones",
+    "icon": "language",
     "pages": [
       "en/localization/learn/customer-languages",
       "en/localization/learn/translate-fields",
@@ -1020,7 +1021,6 @@
           "en/localization/admin/add-customer-language"
         ]
       }
-    ],
-    "icon": "language"
+    ]
   }
 ]

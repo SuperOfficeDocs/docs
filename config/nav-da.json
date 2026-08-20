@@ -14,6 +14,7 @@
       "da/learn/intro",
       {
         "group": "Kom godt i gang",
+        "icon": "rocket",
         "root": "da/learn/getting-started/index",
         "pages": [
           {
@@ -31,11 +32,11 @@
           "da/learn/getting-started/connect-your-accounts",
           "da/learn/getting-started/edit-email-signature",
           "da/learn/getting-started/change-language"
-        ],
-        "icon": "rocket"
+        ]
       },
       {
         "group": "Lær det grundlæggende",
+        "icon": "graduation-cap",
         "root": "da/learn/basics/index",
         "pages": [
           "da/learn/basics/notifications",
@@ -68,11 +69,11 @@
           "da/learn/basics/relations",
           "da/learn/basics/external-applications-and-url-addresses",
           "da/learn/basics/creating-shortcuts-to-entries-in-crm"
-        ],
-        "icon": "graduation-cap"
+        ]
       },
       {
         "group": "Søgemuligheder",
+        "icon": "magnifying-glass",
         "root": "da/search-options/learn/index",
         "pages": [
           "da/search-options/learn/find-screen",
@@ -87,11 +88,11 @@
               "da/search-options/admin/stopwords"
             ]
           }
-        ],
-        "icon": "magnifying-glass"
+        ]
       },
       {
         "group": "Dashboard",
+        "icon": "gauge",
         "root": "da/dashboard/learn/index",
         "pages": [
           "da/dashboard/learn/create",
@@ -101,15 +102,14 @@
           "da/dashboard/learn/show-sales-targets",
           "da/dashboard/learn/show-marketing",
           "da/dashboard/learn/show-requests"
-        ],
-        "icon": "gauge"
+        ]
       },
       {
         "group": "Firma",
         "icon": "building",
+        "root": "da/company/learn/index",
         "pages": [
           "da/company/index",
-          "da/company/learn/index",
           "da/company/learn/create",
           "da/company/learn/edit",
           "da/company/learn/copy",
@@ -121,9 +121,9 @@
       {
         "group": "Person",
         "icon": "circle-user",
+        "root": "da/contact/learn/index",
         "pages": [
           "da/contact/index",
-          "da/contact/learn/index",
           "da/contact/learn/create",
           "da/contact/learn/edit",
           "da/contact/learn/move",
@@ -136,9 +136,9 @@
       {
         "group": "Dagbog",
         "icon": "calendar",
+        "root": "da/diary/learn/index",
         "pages": [
           "da/diary/index",
-          "da/diary/learn/index",
           "da/diary/learn/follow-ups",
           "da/diary/learn/video-meetings",
           "da/diary/learn/create-follow-up",
@@ -178,9 +178,9 @@
       {
         "group": "Dokument",
         "icon": "file-lines",
+        "root": "da/document/learn/index",
         "pages": [
           "da/document/index",
-          "da/document/learn/index",
           "da/document/library/learn/index",
           {
             "group": "Arbejd med dokument",
@@ -257,9 +257,9 @@
       {
         "group": "E-mail",
         "icon": "at",
+        "root": "da/email/learn/index",
         "pages": [
           "da/email/index",
-          "da/email/learn/index",
           "da/email/learn/change-default-mail-client",
           {
             "group": "Indbakke",
@@ -296,9 +296,9 @@
       {
         "group": "Salg",
         "icon": "circle-dollar-to-slot",
+        "root": "da/sale/learn/index",
         "pages": [
           "da/sale/index",
-          "da/sale/learn/index",
           "da/sale/learn/create",
           "da/sale/learn/update",
           "da/sale/learn/sales-guides",
@@ -356,9 +356,9 @@
       {
         "group": "Projekt",
         "icon": "clipboard-list",
+        "root": "da/project/learn/index",
         "pages": [
           "da/project/index",
-          "da/project/learn/index",
           "da/project/learn/create",
           "da/project/learn/add-image",
           "da/project/learn/edit",
@@ -392,9 +392,9 @@
       {
         "group": "Sager",
         "icon": "ticket",
+        "root": "da/request/learn/index",
         "pages": [
           "da/request/index",
-          "da/request/learn/index",
           "da/request/learn/handle-request-ai",
           "da/request/learn/find",
           "da/request/learn/create",
@@ -460,9 +460,10 @@
       },
       {
         "group": "Brugerdefinerede objekter",
+        "icon": "cube",
+        "root": "da/custom-objects/learn/index",
         "pages": [
           "da/custom-objects/index",
-          "da/custom-objects/learn/index",
           "da/custom-objects/learn/more-tab",
           {
             "group": "Brugerdefinerede felter",
@@ -488,11 +489,11 @@
               "da/custom-objects/admin/show-extra-field-on-request-details"
             ]
           }
-        ],
-        "icon": "cube"
+        ]
       },
       {
         "group": "Udvalg",
+        "icon": "square-minus",
         "root": "da/search-options/selection/learn/index",
         "pages": [
           "da/search-options/selection/learn/create",
@@ -514,11 +515,11 @@
               "da/search-options/selection/learn/howto/export"
             ]
           }
-        ],
-        "icon": "square-minus"
+        ]
       },
       {
         "group": "Chat",
+        "icon": "comment-dots",
         "root": "da/chat/learn/index",
         "pages": [
           "da/chat/learn/statistics",
@@ -535,11 +536,11 @@
               "da/chat/admin/add-javascript"
             ]
           }
-        ],
-        "icon": "comment-dots"
+        ]
       },
       {
         "group": "Marketing",
+        "icon": "bullseye",
         "root": "da/marketing/learn/index",
         "pages": [
           "da/marketing/learn/create-folder",
@@ -647,11 +648,11 @@
               }
             ]
           }
-        ],
-        "icon": "bullseye"
+        ]
       },
       {
         "group": "Lead-administration",
+        "icon": "filter",
         "root": "da/lead/learn/index",
         "pages": [
           "da/lead/learn/work-with-leads",
@@ -664,11 +665,11 @@
               "da/lead/admin/category-automation"
             ]
           }
-        ],
-        "icon": "filter"
+        ]
       },
       {
         "group": "Vidensbase",
+        "icon": "book-bookmark",
         "root": "da/knowledge-base/learn/index",
         "pages": [
           "da/knowledge-base/learn/manage-folders",
@@ -694,11 +695,11 @@
           },
           "da/knowledge-base/learn/email-addresses",
           "da/knowledge-base/learn/external-document"
-        ],
-        "icon": "book-bookmark"
+        ]
       },
       {
         "group": "Privacy-indstillinger og GDPR",
+        "icon": "shield",
         "root": "da/security/privacy/learn/index",
         "pages": [
           "da/security/privacy/learn/edit-legal-base",
@@ -715,11 +716,11 @@
               "da/security/privacy/admin/edit-privacy-confirmation-email"
             ]
           }
-        ],
-        "icon": "shield"
+        ]
       },
       {
         "group": "AI-tjenester",
+        "icon": "wand-magic-sparkles",
         "root": "da/ai/learn/index",
         "pages": [
           "da/ai/learn/text-analysis",
@@ -731,11 +732,11 @@
               "da/ai/admin/set-up-categorization"
             ]
           }
-        ],
-        "icon": "wand-magic-sparkles"
+        ]
       },
       {
         "group": "SAINT (Sales Intelligence)",
+        "icon": "chart-bar",
         "root": "da/saint/learn/index",
         "pages": [
           {
@@ -748,11 +749,11 @@
               "da/saint/admin/sale-amount-class"
             ]
           }
-        ],
-        "icon": "chart-bar"
+        ]
       },
       {
         "group": "ERP",
+        "icon": "barcode",
         "root": "da/erp/learn/index",
         "pages": [
           "da/erp/learn/connect",
@@ -767,8 +768,7 @@
               "da/erp/admin/resync-from-crm"
             ]
           }
-        ],
-        "icon": "barcode"
+        ]
       },
       {
         "group": "Tilpasning",
@@ -870,9 +870,9 @@
       {
         "group": "Indstillinger og vedligeholdelse",
         "icon": "gear",
+        "root": "da/admin/getting-started",
         "pages": [
           "da/admin/index",
-          "da/admin/getting-started",
           "da/admin/adjusting-views",
           {
             "group": "Licenser",
@@ -951,6 +951,7 @@
       },
       {
         "group": "Sprog, oversættelse og tidszoner",
+        "icon": "language",
         "pages": [
           "da/localization/learn/customer-languages",
           "da/localization/learn/translate-fields",
@@ -963,8 +964,7 @@
               "da/localization/admin/add-customer-language"
             ]
           }
-        ],
-        "icon": "language"
+        ]
       }
     ]
   },
