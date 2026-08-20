@@ -8,7 +8,6 @@ so_version: 12
 content_type: howto
 deployment: onsite
 hidden: true
-userflow_index: true
 language: en
 ---
 

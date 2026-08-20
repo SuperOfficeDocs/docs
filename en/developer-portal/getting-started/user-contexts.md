@@ -80,8 +80,6 @@ SO-AppToken: Application_Token_Value
 
 System users have unlimited access to the database and are not subject to any security or sentry constraints. System users cannot impersonate other users in the online environment.
 
-See also the system user MVC example.
-
 ## Semi-interactive scenario
 
 **Hybrid applications** can, as the name suggests, have some UI components inside SuperOffice CRM Online and can operate or be configured on a partner web portal. The majority of applications are hybrids.

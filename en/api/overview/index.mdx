@@ -48,7 +48,7 @@ NetServer web service data access is provided by the following types of [web ser
 * **[RESTful][8]**: ASP.NET WebAPI with modern HTTP-based APIs
 * **[SOAP][9]**: WCF-based IIS application for enterprise integrations
 
-SuperOffice publishes web service proxies that can be used by clients to access the service endpoints.
+SuperOffice publishes [web service proxies][16] that can be used by clients to access the service endpoints.
 
 An important aspect of NetServer web service development is its **deployment flexibility**. It's capable of being embedded in a domain-centric client, or used by a web application across the internet.
 
@@ -75,7 +75,7 @@ The first level of extensibility is exposed inside the **admin UI pages** of Sup
 The **scripting level** pertains to a few different features that provide similar functionality, albeit by different means:
 
 * **[CRMScript][3]**: A SuperOffice scripting dialect similar to JavaScript, managed inside the administrative pages
-* **NetServer scripting**: An Application Server capability that is accessible onsite only
+* **[NetServer scripting][16]**: An Application Server capability that is accessible onsite only
 
 ### External APIs
 
@@ -161,7 +161,7 @@ The list of available APIs for integrations decreases the closer they are to onl
 | [Web][6] | X | X | |
 | [Online][7] | X | | |
 
-* From [NetServer Core][32], Web supports NetServer script events only.
+* From [NetServer Core][32], Web supports [NetServer script events][16] only.
 * Using [NetServer web services][19], the [configuration][33] must be set to Local Mode for Windows and Local or Remote mode for Web.
 
 There are virtually no limitations as to which API you leverage when building an integration that targets just the Windows client. If, however, your requirements include both the Windows client and the Web client, the available API options decrease. This is not necessarily a bad thing though. Sometimes it just makes technological sense to build an integration using only one of the available APIs. For example, it doesn't make sense to use the COM-based API in today's web service architectures.
@@ -184,7 +184,7 @@ The list of available APIs for integrations decreases the closer they are to onl
 | [Web][6] | X | X | |
 | [Online][7] | X | | |
 
-* From [NetServer Core][32], Web supports NetServer script events only.
+* From [NetServer Core][32], Web supports [NetServer script events][16] only.
 * Using [NetServer web services][19], the [configuration][33] must be set to Local Mode for Windows and Local or Remote mode for Web.
 
 There are virtually no limitations as to which API you leverage when building an integration that targets just the Windows client. If, however, your requirements include both the Windows client and the Web client, the available API options decrease. This is not necessarily a bad thing though. Sometimes it just makes technological sense to build an integration using only one of the available APIs. For example, it doesn't make sense to use the COM-based API in today's web service architectures.
@@ -231,7 +231,7 @@ The following table compares some of the most common extensibility points and de
 |               | [Web panels][24]    | Sales, Service | X | X |
 |               | [Zapier][40]              | Sales, Service | | X |
 | Scripting     | [CRMScript][3]      | Service        | X | X |
-|               | NetServer Scripting | Sales, Service | X | |
+|               | [NetServer Scripting][16] | Sales, Service | X | |
 |               | Windows Client      | Sales          | X | |
 | External APIs | [SOAP][9]           | Sales, Service | X | X |
 |               | [Restful][8]        | Sales, Service | X | X |
@@ -245,8 +245,8 @@ The following table compares some of the most common extensibility points and de
 |               | Ajax Methods  | Sales          | X | |
 |               | [Archive Providers][28] | Sales          | X | |
 |               | [MDO Providers][29] | Sales          | X | |
-|               | Document Plugins | Sales          | X | |
-|               | Sentry Plugins | Sales          | X | |
+|               | [Document Plugins][35]    | Sales          | X | |
+|               | [Sentry Plugins][36]      | Sales          | X | |
 |               | [Batch Task Plugins][37]  | Sales          | X | |
 | Database      | Database access API | Sales, Service | X | X |
 |               | Continuous Database | Sales, Service | X | |
@@ -299,6 +299,7 @@ Assistance and guidance are available:
 [13]: ../authentication/index
 [14]: ../../automation/overview#languages
 [15]: ../web-services/endpoints/index
+[16]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/automation/netserver-scripting/index.md
 [17]: ../osql/index
 [18]: ../entities/index
 [19]: https://online.superoffice.com/appstore
@@ -315,6 +316,8 @@ Assistance and guidance are available:
 [32]: ./netserver#domain-level-apis-netserver-core
 [33]: ../config/services
 [34]: ../../automation/webhook/dev/index
+[35]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/plugins/document/soarc-document-plugin.md
+[36]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/plugins/sentry/index.md
 [37]: ../tutorials/sem-batch-processing/index
 [38]: ../lists/index
 [40]: https://zapier.com/apps/superofficecrm/integrations
