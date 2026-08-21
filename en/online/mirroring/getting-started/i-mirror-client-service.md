@@ -1,5 +1,4 @@
 ---
-uid: i_mirror_client_service
 title: IMirrorClientService interface (legacy)
 description: IMirrorClientService interface
 keywords: ['IMirrorClientService', 'mirroring', 'WCF', 'legacy']
@@ -9,13 +8,16 @@ so_version: 12
 content_type: reference
 platform: web
 deployment: online
+hidden: true
+deprecated: true
 language: en
 ---
 
-> [!IMPORTANT]
-> `IMirrorClientService` belongs to the **legacy WCF-based** mirroring service. It is the interface that a partner-hosted endpoint had to implement.
->
-> The current Database Mirroring implementation does **not** use this interface, the `SuperOffice.Crm.Online.Mirroring` NuGet package, or any WCF service. See [Set up the Database Mirroring client][3] for the current model and [Migrate from the legacy mirroring service][4] for the cutover procedure.
+<Note>
+`IMirrorClientService` belongs to the **legacy WCF-based** mirroring service. It is the interface that a partner-hosted endpoint had to implement.
+
+The current Database Mirroring implementation does **not** use this interface, the `SuperOffice.Crm.Online.Mirroring` NuGet package, or any WCF service. See [Set up the Database Mirroring client][3] for the current model and [Migrate from the legacy mirroring service][4] for the cutover procedure.
+</Note>
 
 SuperOffice NuGet implementation of `IMirrorClientService` interface for Microsoft SQL Server.
 

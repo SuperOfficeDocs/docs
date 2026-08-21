@@ -1,13 +1,16 @@
 ---
 title: Events in Entity objects
-uid: entity_events
 description: Events in Entity objects
 author: SuperOffice Product and Engineering
 date: 11.05.2016
+so_version: 11
 keywords: ['hook']
 content_type: concept
+deployment: onsite
 redirect_from: /en/api/netserver/entities/events
 hidden: true
+deprecated: true
+language: en
 ---
 
 Entities trigger two types of events:

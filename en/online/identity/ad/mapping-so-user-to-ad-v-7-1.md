@@ -1,5 +1,4 @@
 ---
-uid: mapping_so_user_to_ad_v_7_1
 title: Mapping SuperOffice users to Active Directory in 7.0 SR3 and 7.1
 sidebarTitle: "Map users to AD"
 description: Mapping SuperOffice users to Active Directory in 7.0 SR3 and 7.1
@@ -8,7 +7,7 @@ date: 03.30.2012
 so_version: 12
 content_type: howto
 deployment: onsite
-userflow_index: true
+hidden: true
 language: en
 ---
 

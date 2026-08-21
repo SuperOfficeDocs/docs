@@ -1,15 +1,18 @@
 ---
-uid: create-invitation-entity
 title: How to create an invitation (data layer)
 description: How to create an invitation using entities at the NetServer data layer.
 keywords: ['diary', 'calendar', 'appointment', 'API', 'entity', 'ParticipantInfo', 'AddParticipant', 'AppointmentMatrix']
 author: Bergfrid Skaara Dias
 date: 03.04.2022
+so_version: 11
 content_type: howto
+deployment: onsite
 redirect_from:
   - /en/diary/howto/entity/create-invitation-entity
   - /en/api/netserver/entities/howto/diary/create-invitation-entity
 hidden: true
+deprecated: true
+language: en
 ---
 
 After creating an appointment you may need to [invite members][2]. The following example demonstrates how this is done.

@@ -3841,7 +3841,7 @@
   },
   {
     "source": "/en/authentication/index",
-    "destination": "/en/api/authentication/overview"
+    "destination": "/en/api/authentication/index"
   },
   {
     "source": "/en/authentication/online/*",
@@ -3853,7 +3853,11 @@
   },
   {
     "source": "/en/authentication/overview",
-    "destination": "/en/api/authentication/overview"
+    "destination": "/en/api/authentication/index"
+  },
+  {
+    "source": "/en/api/authentication/overview",
+    "destination": "/en/api/authentication/index"
   },
   {
     "source": "/en/automation/crmscript/howto/marketing/index",

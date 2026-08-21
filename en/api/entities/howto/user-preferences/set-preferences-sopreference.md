@@ -1,11 +1,12 @@
 ---
-uid: set-preferences-datalayer
 title: SetPreference
 description: How to set preferences using SoPreference at the data layer
 keywords: ['preference', 'SoPreference']
 author: digitaldiina
 date: 02.22.2022
+so_version: 11
 content_type: howto
+deployment: onsite
 audience: api
 audience_tooltip: SuperOffice APIs and database
 category: settings
@@ -13,6 +14,7 @@ topic: user preferences
 language: en
 redirect_from: /en/admin/user-preferences/howto/set-preferences-sopreference
 hidden: true
+deprecated: true
 ---
 
 To find an overview of the available references, we may use methods such as `GetSections()` and `GetKeys()` exposed in the `SoPreference` class.

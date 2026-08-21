@@ -1,11 +1,10 @@
 ---
-uid: api-scenarios-web-online
-title: "Integration scenarios: Web client (online)"
+title: "Integration scenarios (cloud)"
 sidebarTitle: "Integration scenarios"
 description: Integration in the online Web client
-keywords: ['API', 'integration point', 'online']
+keywords: ['API', 'integration point', 'online', 'cloud']
 author: AtonyYates
-date: 11.25.2021
+date: 08.20.2026
 so_version: 12
 content_type: concept
 platform: web
@@ -14,13 +13,11 @@ userflow_index: true
 language: en
 ---
 
-Both SuperOffice onsite installations and CRM Online applications use the same NetServer web service APIs. The only difference between the two environments is how integrations are authenticated. While on-site integrations have a more direct approach, supplying credentials, CRM Online integrations must use [federated authentication][8].
+The SuperOffice App Store offers Business to Consumer (B2C) applications by SuperOffice and our partners. Most applications expose functionality inside SuperOffice by adding web panels in relevant areas, while others add a button that opens a web page to the application. All application vendors have their own cloud platforms to manage customers and tenant users.
 
-**Federated authentication** is a way SuperOffice can provide a single-sign-in experience for multi-tenant users and applications that serve multi-tenant installations.
+[Federated authentication][8] is a way SuperOffice can provide a single-sign-in experience for multi-tenant users and applications that serve multi-tenant installations.
 
-The SuperOffice CRM Online environment hosts an app store with several partner integrations. These integrations are comprised of Business to Consumer (B2C) applications. Most applications expose functionality inside SuperOffice by adding web panels in relevant areas, while others add a button that opens a web page to the application. All application vendors have their own cloud platforms to manage customers and tenant users.
-
-## Integration points (online)
+## Integration points
 
 * Custom lists
 * Custom list items
@@ -31,7 +28,7 @@ The SuperOffice CRM Online environment hosts an app store with several partner i
 
 ## Related SDK
 
-* [CRM Online SDK][9]
+* [WebAPI][9]
 
 [8]: ../identity/federated-auth
 [9]: /en/api/reference/webapi/index

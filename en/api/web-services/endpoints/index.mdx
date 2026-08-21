@@ -1,10 +1,9 @@
 ---
 title: Endpoints
-uid: ws_endpoints
 description: Endpoints
-author: Bergfrid Dias
-date: 12.02.2021
-keywords: ['API', 'web services', 'endpoints', 'WebAPI', 'SOAP', 'REST']
+author: digitaldiina
+date: 08.20.2026
+keywords: ['API', 'web services', 'endpoints', 'WebAPI', 'REST']
 content_type: concept
 redirect_from: /en/api/netserver/web-services/endpoints/index
 ---
@@ -39,24 +38,13 @@ If your installation is protected from the internet by a reverse proxy, the **UR
 
 ## SOAP
 
-* Learn about the SOAP API [endpoints][9] such as Services88.
-* Use a [built-in or custom proxy][10].
-* Check out the [latest reference][12].
-
-### Authorization (SOAP)
-
-* [Proxy authentication using SoSession][8]
-* [Direct authentication using a Ticket][11]
+We have initiated phase-out of SOAP proxy client and web service endpoints.Switch to SuperOffice.WebApi (REST). Read more in the [EOL notice][8]
 
 [3]: ../webapi/index#authorization-header-options
 [4]: ../webapi/index#x-xsrf-token
 [5]: ./http-headers#accept-language
 [6]: ./http-headers#content-type
 [7]: ./http-headers#modified-unmodified
-[8]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/authentication/onsite/sosession/index.mdx
-[9]: ./soap/index
-[10]: ../proxies/index
-[11]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/authentication/onsite/index.mdx#the-ticket
-[12]: ../../reference/soap/Services88/index
+[8]: /release-notes/eol/index
 [13]: ../../../onsite/install/iis/reverse-proxy#webapi
 [14]: ./get-webapi-version

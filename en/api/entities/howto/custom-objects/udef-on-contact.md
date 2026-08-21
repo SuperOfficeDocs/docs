@@ -1,16 +1,19 @@
 ---
 title: Udef on contact
-uid: udef_on_contact
 description: Udef on contact
 author: SuperOffice Product and Engineering
 keywords: ['entity']
+so_version: 11
 content_type: howto
+deployment: onsite
 audience: api
 audience_tooltip: SuperOffice APIs and database
 redirect_from:
   - /en/custom-objects/udef/howto/entity/udef-on-contact
   - /en/api/netserver/entities/howto/custom-objects/udef-on-contact
 hidden: true
+deprecated: true
+language: en
 ---
 
 The `UdefHelper` uses the `ProgId` field to identify a user-defined field. If `UdefField.ProgId` is blank, then the `UdefField.Identity` field is used, along with a prefix ("SuperOffice:").

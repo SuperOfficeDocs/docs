@@ -1,16 +1,19 @@
 ---
-uid: toggle-contact-interest-entity
 title: How to set an interest on or off for a contact (data layer)
 sidebarTitle: "Set interest on/off (entities)"
 description: How to set an interest on or off for a contact using entities
 keywords: ['contact', 'company', 'interest', 'entity', 'API', 'ContactInterestHelper', 'SetItemSelection']
 author: Tony Yates
 date: 05.11.2016
+so_version: 11
 content_type: howto
+deployment: onsite
 redirect_from:
   - /en/company/howto/entity/set-interest-on-off-entity
   - /en/api/netserver/entities/howto/company/set-interest-on-off-entity
 hidden: true
+deprecated: true
+language: en
 ---
 
 You can search for an [interest][1] and then set the interest to true or false. Here, we use the `ContactInterestHelper`.

@@ -1,12 +1,15 @@
 ---
 title: Update a basic property of an Entity
-uid: update_entity
 description: How to update an Entity
 author: SuperOffice Product and Engineering
 date: 11.05.2016
+so_version: 11
 content_type: howto
+deployment: onsite
 redirect_from: /en/api/netserver/entities/update-entity
 hidden: true
+deprecated: true
+language: en
 ---
 
 Before updating an Entity, it must be retrieved by using the `Idx` class.

@@ -1,12 +1,15 @@
 ---
 title: How to retrieve an Entity
-uid: get_entity
 description: How to retrieve an Entity
 author: SuperOffice Product and Engineering
 date: 11.05.2016
+so_version: 11
 content_type: howto
+deployment: onsite
 redirect_from: /en/api/netserver/entities/get-entity
 hidden: true
+deprecated: true
+language: en
 ---
 
 We need to retrieve an Entity for several purposes, viewing the properties of an Entity is one such purpose.

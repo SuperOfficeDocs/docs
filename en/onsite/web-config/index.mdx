@@ -192,6 +192,21 @@ View one of the available sections to learn more about the property settings ava
 Consider using the [ConfigFile utility class][1] to access the SuperOffice section in the config file.
 </Tip>
 
+## Authentication
+
+All integrations that use one of the following nuget packages require an application configuration file, *app.config* or *web.config*.
+
+* SuperOffice.NetServer.Core
+* SuperOffice.NetServer.Services
+
+This is not the case for integrations that use the [SuperOffice.WebApi][8] nuget package, or generate their own web service proxies from [REST Swagger][14] files.
+
+<Danger>
+The database connection settings are defined in the [Data element][1] of the application configuration. This is often the cause of connectivity issue, so if necessary consult the [NetServer configuration docs][10] to better understand those settings.
+</Danger>
+
 [1]: <xref:SuperOffice.Configuration.ConfigFile>
 [2]: <xref:netserver_core_api>
 [3]: <xref:netserver_services_api>
+[8]: /en/api/web-services/webapi/index
+[14]: /en/api/web-services/endpoints/index
