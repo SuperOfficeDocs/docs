@@ -97,19 +97,19 @@ Online applications are much more strict, and only have a subset of extensible c
 
 ![Online APIs][img3]
 
-### Onsite Installations
-
-With onsite installation, there is one web server hosting SuperOffice sites, and the owners can do whatever they like with their installation.
-
 ### Online Tenants
 
-Online tenants, on the other hand, share application file sets. Therefore, any compiled assemblies that are exposed to one installation would inadvertently expose those same customizations across all shared tenants.
+Online tenants share application file sets across all customers on that environment. Therefore, any compiled assemblies that are exposed to one installation would inadvertently expose those same customizations across all shared tenants.
 
 <Note>
 Since compiled assemblies can't be securely and effectively isolated, **no one is permitted to deploy custom compiled assemblies to an online tenant**.
 </Note>
 
 **Security and hosting restrictions** in Online force both standard and custom applications to adapt in ways that support the features and functions they can provide, and accept the limitations that restrict the things they can't.
+
+### Onsite Installations
+
+With onsite installation, there is one web server hosting SuperOffice sites, and the owners can do whatever they like with their installation.
 
 SuperOffice will continue to invest in research and development to deliver equivalent onsite customization capabilities to SuperOffice CRM Online. However, a timeline for this is not available. This policy decision is related to security reasons, and SuperOffice is not willing to compromise tenant security.
 
@@ -296,7 +296,7 @@ Assistance and guidance are available:
 [9]: ../../automation/webhook/index
 [11]: ../plugins/erp-connectors/index
 [12]: ../plugins/quote-connectors/index
-[13]: ../authentication/overview
+[13]: ../authentication/index
 [14]: ../../automation/overview#languages
 [15]: ../web-services/endpoints/index
 [16]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/automation/netserver-scripting/index.md

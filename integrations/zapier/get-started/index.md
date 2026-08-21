@@ -9,6 +9,9 @@ content_type: howto
 category: integration
 topic: Zapier
 platform: Zapier
+related:
+  - title: "Available triggers, actions, and pre-defined Zaps"
+    href: "/integrations/zapier/reference"
 language: en
 userflow_index: true
 redirect_from: /en/automation/zapier/get-started/index
@@ -19,10 +22,5 @@ You can start with SuperOffice CRM by choosing an existing Zap template from our
 1. [Set up a SuperOffice account to work with Zapier][2]
 2. [Make a Zap with SuperOffice CRM][3]
 
-## Related content
-
-* [Available triggers, actions, and pre-defined Zaps][1]
-
-[1]: ../reference
 [2]: ./set-up-account
 [3]: ./create-zap

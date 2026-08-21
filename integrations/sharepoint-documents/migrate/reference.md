@@ -11,6 +11,9 @@ category: integration
 topic: SharePoint documents
 deployment: online
 platform: web
+related:
+  - title: "Steps"
+    href: "/integrations/sharepoint-documents/migrate/steps"
 language: en
 redirect_from: /en/document/cloud/sharepoint-documents/migrate/reference
 userflow_index: true
@@ -82,12 +85,6 @@ The **Status** section shows a detailed status of ongoing and completed jobs. It
 ![SharePoint document migration, not moved -screenshot][img4]
 
 * **Owned by users that have not logged into CRM and given consent to store documents:** After configuring SharePoint, all users must log in and give their consent for the integration to store documents in SharePoint. Otherwise, documents belonging to those users will not be moved.
-
-## Related content
-
-* [Steps][1]
-
-[1]: ./steps
 
 [img1]: /media/loc/en/integrations/sharepoint-documents/migration-completed-with-failures.png
 [img3]: /media/loc/en/integrations/sharepoint-documents/migration-job-details.png

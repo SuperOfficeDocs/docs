@@ -1,16 +1,19 @@
 ---
-uid: create-recurring-appointment-entity
 title: How to create a recurring appointment (data layer)
 sidebarTitle: "Recurring appointment (entities)"
 description: How to create a recurring appointment using entities at the NetServer data layer.
 keywords: ['diary', 'calendar', 'appointment', 'API', 'entity', 'AppointmentMatrix', 'RecurrencePattern', 'RecurrenceDailyPattern']
 author: Bergfrid Skaara Dias
 date: 11.04.2021
+so_version: 11
 content_type: howto
+deployment: onsite
 redirect_from:
   - /en/diary/howto/entity/create-recurring-appointment-entity
   - /en/api/netserver/entities/howto/diary/create-recurring-appointment-entity
 hidden: true
+deprecated: true
+language: en
 ---
 
 This demonstrates the use of [AppointmentMatrix][1] to create [recurring appointments][2]. `SuperOffice.CRM.Entities.AppointmentMatrix` is a matrix holding information about repeating appointments and their attendees.

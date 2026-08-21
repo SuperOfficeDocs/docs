@@ -11,6 +11,13 @@ category: integration
 topic: SharePoint documents
 deployment: online
 platform: web
+related:
+  - title: "How to set up SharePoint permissions for documents"
+    href: "/integrations/sharepoint-documents/configure-permissions-documents"
+  - title: "Permissions for SuperOffice Document Library integration (app)"
+    href: "/integrations/sharepoint-documents/permissions-app"
+  - title: "About permissions in SharePoint"
+    href: "/integrations/sharepoint-documents/permissions-in-sharepoint"
 language: en
 redirect_from: /en/document/cloud/sharepoint-documents/configure-permissions-templates
 userflow_index: true

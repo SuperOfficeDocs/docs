@@ -28,8 +28,8 @@
     }
   },
   {
-    "tab": "Online",
-    "icon": "book",
+    "tab": "CRM Platform",
+    "icon": "cloud",
     "pages": {
       "$ref": "./nav-online.json"
     }

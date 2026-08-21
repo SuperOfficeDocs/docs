@@ -1,12 +1,15 @@
 ---
 title: Delete an Entity through an Entity
-uid: delete_entity_from_entity
 description: Delete an Entity through an Entity
 author: SuperOffice Product and Engineering
 date: 11.05.2016
+so_version: 11
 content_type: howto
+deployment: onsite
 redirect_from: /en/api/netserver/entities/delete-entity-from-entity
 hidden: true
+deprecated: true
+language: en
 ---
 
 Properties of Entities can themselves be Entities. Since we can access properties of such an entity, we can also delete the Entity.

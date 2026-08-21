@@ -14,6 +14,8 @@ redirect_from:
   - /release-notes/10.1/api/10.1.2-update
   - /release-notes/10.1/api/10.1.3-update
   - /release-notes/10.1/api/10.1.4-update
+related: false
+noindex: true
 language: en
 ---
 

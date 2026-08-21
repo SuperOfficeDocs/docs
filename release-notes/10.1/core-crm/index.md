@@ -8,6 +8,8 @@ date: 06.15.2022
 so_version: 10.1
 content_type: release-note
 category: core crm
+related: false
+noindex: true
 language: en
 ---
 

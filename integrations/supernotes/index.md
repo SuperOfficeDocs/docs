@@ -8,6 +8,21 @@ date: 02.04.2026
 content_type: concept
 category: integration
 topic: SuperNotes
+related:
+  - title: "Getting started - Setup and basic usage"
+    href: "/integrations/supernotes/getting-started"
+  - title: "Workspaces - Team collaboration and workspace management"
+    href: "/integrations/supernotes/workspaces"
+  - title: "Teams - Organizing workspace members into teams"
+    href: "/integrations/supernotes/teams"
+  - title: "Before meeting - Pre-meeting features and preparation"
+    href: "/integrations/supernotes/before-meeting"
+  - title: "Summaries - Meeting summaries and sharing"
+    href: "/integrations/supernotes/summaries"
+  - title: "Settings - Configuration options"
+    href: "/integrations/supernotes/settings"
+  - title: "Privacy and security - Data handling and security"
+    href: "/integrations/supernotes/privacy-security"
 language: en
 userflow_index: true
 ---
@@ -29,16 +44,6 @@ SuperNotes is an AI-powered meeting assistant that integrates with SuperOffice t
 1. [Join or create a workspace][2]
 1. [Configure your settings][3]
 
-## Related content
-
-* [Getting started][4] - Setup and basic usage
-* [Workspaces][2] - Team collaboration and workspace management
-* [Teams][6] - Organizing workspace members into teams
-* [Before meeting][7] - Pre-meeting features and preparation
-* [Summaries][8] - Meeting summaries and sharing
-* [Settings][3] - Configuration options
-* [Privacy and security][9] - Data handling and security
-
 ## Data and privacy
 
 * All data is processed and stored within the EU/EEA region.
@@ -50,8 +55,3 @@ SuperNotes is an AI-powered meeting assistant that integrates with SuperOffice t
 [1]: ./getting-started#connect-calendar
 [2]: ./workspaces
 [3]: ./settings
-[4]: ./getting-started
-[6]: ./teams
-[7]: ./before-meeting
-[8]: ./summaries
-[9]: ./privacy-security

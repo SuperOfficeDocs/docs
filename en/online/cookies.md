@@ -1,19 +1,18 @@
 ---
-uid: cookies_overview
 title: Cookies overview
 description: Cookies overview
 keywords: ['security', 'cookies']
 author: SuperOffice Product and Engineering
-date: 07.31.2026
+date: 08.20.2026
 so_version: 12
 content_type: reference
 userflow_index: true
 language: en
 ---
 
-Overview of cookies used in SuperOffice product offering both for Onsite and Online deployment.
+Overview of cookies used in SuperOffice CRM.
 
-## Online environment
+## Cloud environment
 
 Cookies specific to SuperOffice Online deployment.
 
@@ -29,9 +28,7 @@ Cookies specific to SuperOffice Online deployment.
 | ai_session | string | Online env. | Application Insights monitoring of the system - anonymized data for monitoring Online systems |
 | ai_user | string | Online env. | Application Insights monitoring of the system - anonymized data for monitoring Online systems |
 
-## Sales & Marketing
-
-Cookies used by Sales & Marketing client both in Online and Onsite deployment.
+## Sales and Marketing
 
 | Cookie name | Type | Usage | Description |
 |---|---|---|---|
@@ -43,8 +40,6 @@ Cookies used by Sales & Marketing client both in Online and Onsite deployment.
 | SoCrm75SR1FirstUse | boolean | CRM | Used to indicate first-time use of the client |
 
 ## Service
-
-Cookies used by the Service client both in Online and Onsite deployment.
 
 | Cookie name | Type | Usage | Description |
 |---|---|---|---|
@@ -95,3 +90,7 @@ Cookies used by the Service client both in Online and Onsite deployment.
 | debug.printExceptions | boolean | Service | Used for debugging option in Service |
 
 \* when embedded in the Customer Centre
+
+<Note>
+Onsite deployments use the same Service, Sales and Marketing cookies.
+</Note>

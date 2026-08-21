@@ -1,15 +1,18 @@
 ---
-uid: api-contact-entity
 title: Contact - entity
 description: Working with companies (contact) in API with entities.
 keywords: ['contact', 'company', 'entity', 'API']
 author: Bergfrid Skaara Dias
 date: 02.22.2022
+so_version: 11
 content_type: concept
+deployment: onsite
 redirect_from:
   - /en/company/howto/entity/index
   - /en/api/netserver/entities/howto/company/index
 hidden: true
+deprecated: true
+language: en
 ---
 
 * [Create contact][1]

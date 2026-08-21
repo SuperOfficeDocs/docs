@@ -85,13 +85,7 @@ For the helper-method to be re-useable, add it as its own CRMScript.
 2. Write `#include 'lib-log';` at the top of the new script.
 3. Use one of the included methods, for instance `log(406, 3, "foo");`.
 
-To view the contents of the log, go to **System design** > **Debug log**, or (for onsite) look in the database with a SQL statement:
-
-```sql
-select * from crm7.LOG_EVENTS
-where target_id='1544244' and var1 like '%Request feedback%'
-order by time_of_event
-```
+To view the contents of the log, go to **System design** > **Debug log**
 
 [1]: ./log-messages
-[2]: ../../../database/tables/log-events
+[2]: /en/database/tables/log-events

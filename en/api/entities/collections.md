@@ -1,15 +1,17 @@
 ---
 title: Collections
-uid: entity_collections
 description: Entity collections
 author: AnthonyYates
 date: 11.16.2021
+so_version: 11
 keywords: ['data access', 'entity', 'entities', 'RDB']
 content_type: concept
-deployment: online, onsite
+deployment: onsite
 platform: web, win
 redirect_from: /en/api/netserver/entities/collections
 hidden: true
+deprecated: true
+language: en
 ---
 
 Some Entities consist of a collection of Entities as one of its properties. The Entity layer exposes us to Entity collections as well.

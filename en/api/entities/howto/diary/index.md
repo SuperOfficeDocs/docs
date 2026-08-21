@@ -1,15 +1,18 @@
 ---
-uid: api-diary-entity
 title: Diary - entity
 description: Working with appointments via entities at the NetServer data layer.
 keywords: ['diary', 'calendar', 'appointment', 'API', 'entity']
 author: Bergfrid Skaara Dias
 date: 11.04.2021
+so_version: 11
 content_type: reference
+deployment: onsite
 redirect_from:
   - /en/diary/howto/entity/index
   - /en/api/netserver/entities/howto/diary/index
 hidden: true
+deprecated: true
+language: en
 ---
 
 ## Create appointments

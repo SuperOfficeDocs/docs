@@ -10,6 +10,7 @@ content_type: reference
 category: integration
 topic: SuperOffice for Teams
 pilot: yes
+related: false
 language: en
 ---
 

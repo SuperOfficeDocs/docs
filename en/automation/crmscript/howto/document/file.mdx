@@ -2,8 +2,8 @@
 uid: crmscript-document-file
 title: Document files
 description: How to create physical document from template; rename document; change file extension; edit document; delete document; check document in/out
-keywords: ['CRMScript', 'document', 'NSDocument', 'GetDocumentEntity', 'SaveDocumentEntity', 'RenameDocument', 'GetCheckoutState', 'CheckoutDocument', 'CheckinDocument', 'GetDocumentUrl', 'GetDocumentStream', 'SetDocumentStream']
-author: Bergfrid Skaara Dias
+keywords: ['CRMScript', 'document', 'NSDocument', 'GetDocumentEntity', 'SaveDocumentEntity', 'RenameDocument', 'GetCheckoutState', 'CheckoutDocument', 'CheckinDocument', 'GetDocumentUrl']
+author: digitaldiina
 date: 07.11.2024
 so_version: 10
 content_type: howto
@@ -143,106 +143,6 @@ printLine(url);
 ```
 
 This example gets a writable URL for the latest version of document 2.
-
-## Edit physical document - ONSITE ONLY
-
-This is a 3-step process: download, modify, upload.
-
-### Download document
-
-1. Get the NSDocumentEntity
-2. Generate a temporary filename for the local copy with the same extension as the original
-3. Get the actual file as a stream
-
-<Note>
-The extensions of both the original and the downloaded document must be the same!
-</Note>
-
-```crmscript
-Integer docId = 2;
-NSDocumentAgent agent;
-NSDocumentEntity doc = agent.GetDocumentEntity(docId);
-
-String tmpFilename = "tempFile." + doc.GetName().afterLast(".");
-NSStream stream = agent.GetDocumentStream(docId);
-
-String download = agent.CreateTempFile(tmpFilename, stream);
-```
-
-<Tip>
-Remember to call `DeleteTempFile()` when you're done.
-</Tip>
-
-### Open document
-
-**Read-only:**
-
-```crmscript
-File f;
-
-f.open("test.txt", "r");
-print(f.readAll());
-
-f.close();
-```
-
-**Read/write:**
-
-```crmscript
-File f;
-
-f.open("test.txt", "a+");
-f.write("test");
-
-f.close();
-```
-
-### Update document
-
-How you go about changing the document locally is completely up to you!
-
-### Upload document
-
-For **modified** documents, you must ensure that the document's status is not **Completed**. Set it to **0** to enable upload.
-To overwrite an existing file with the same name stored in the document archive, set the last parameter of `SetDocumentStream()` to **true**.
-
-```crmscript
-Integer docId = 2;
-String path = "C:\Temp\samplefile.docx";
-
-NSDocumentAgent agent;
-NSDocumentEntity doc = agent.GetDocumentEntity(docId);
-
-File f;
-f.open(path, "r");
-
-NSStream stream;
-stream.SetStream(f.readBinary());
-
-doc = agent.SetDocumentStream(doc, stream, true);
-
-f.close();
-```
-
-<Tip>
-For robust code, consider placing the file operations in an `if` statement.
-</Tip>
-
-For **new** SuperOffice documents based on a local file, you must **create and save the NSDocumentEntity before uploading**.
-
-Simply replace the line `NSDocumentEntity doc = agent.GetDocumentEntity(docId);` with the following code:
-
-```crmscript
-NSDocumentEntity doc = agent.CreateDefaultDocumentEntity();
-
-doc.SetName(path);
-doc.SetHeader(path);
-doc.SetDate(getCurrentDateTime());
-doc.SetDescription("document uploaded from CRMScript");
-NSAssociateAgent aAgent;
-doc.SetAssociate(aAgent.GetAssociate(1));
-doc = agent.SaveDocumentEntity(doc);
-```
 
 ## Delete physical document
 

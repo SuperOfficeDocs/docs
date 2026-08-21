@@ -10,6 +10,7 @@ category: integration
 topic: WebTools
 deployment: onsite
 platform: web
+related: false
 language: en
 userflow_index: true
 redirect_from: /en/document/webtools/upgrade

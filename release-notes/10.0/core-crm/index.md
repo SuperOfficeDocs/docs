@@ -7,6 +7,8 @@ author: SuperOffice AS - Product and Engineering
 date: 10.20.2021
 so_version: 10
 content_type: release-note
+related: false
+noindex: true
 language: en
 ---
 

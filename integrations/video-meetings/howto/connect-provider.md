@@ -11,6 +11,9 @@ category: integration
 topic: video meetings
 deployment: online
 platform: web
+related:
+  - title: "What's new in SuperOffice Video meetings integration"
+    href: "/release-notes/integrations/video-meetings"
 language: en
 redirect_from:
   - /en/diary/video-meetings/howto/connect-provider

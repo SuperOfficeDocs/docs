@@ -11,6 +11,8 @@ content_type: release-note
 category: core crm
 audience: person
 audience_tooltip: SuperOffice CRM
+related: false
+noindex: true
 language: en
 ---
 

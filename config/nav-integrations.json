@@ -3,6 +3,7 @@
   {
     "group": "Gmail Link",
     "root": "integrations/gmail-link/index",
+    "boost": 0.25,
     "pages": [
       "integrations/gmail-link/install",
       "integrations/gmail-link/settings",

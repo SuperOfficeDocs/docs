@@ -49,8 +49,8 @@ The authentication flow begins with SuperOffice issuing a signed authentication 
 
 The mirroring service must use one of the following certificate strategies to validate the authentication request.
 
-* [install the SuperOffice public certificates][2] in the server certificate store.
-* [overridden the certificate resolver][1] and load the certificate on demand.
+* [Install the SuperOffice public certificates][2] in the server certificate store.
+* [Override the certificate resolver][1] and load the certificate on demand.
 
 In return, the mirroring service must use its' private certificate to sign the response sent back to SuperOffice.SuperOffice uses the applications stored public certificate to verify the authentication response. Once successfully validated, the SuperOffice Database Mirroring service begin sending data to the application endpoint.
 

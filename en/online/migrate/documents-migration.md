@@ -1,5 +1,4 @@
 ---
-uid: document-migrate-to-online
 title: "Understanding document migration: reasons why some documents may not be migrated"
 sidebarTitle: "Document migration"
 description: Understanding document migration
@@ -14,7 +13,7 @@ language: en
 
 ## Introduction
 
-Migrating documents from an Onsite database to an Online Production environment is a critical step to ensure a smooth data transfer. However, some documents may be left behind. Let's examine why this happens and how to fix it.
+Migrating documents from an Onsite database to a cloud production environment is a critical step to ensure a smooth data transfer. However, some documents may be left behind. Let's examine why this happens and how to fix it.
 
 ### Blank document names
 
