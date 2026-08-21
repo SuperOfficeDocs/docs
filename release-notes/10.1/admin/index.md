@@ -8,6 +8,8 @@ date: 04.04.2022
 so_version: 10.1
 content_type: release-note
 category: Settings and maintenance
+related: false
+noindex: true
 language: en
 ---
 

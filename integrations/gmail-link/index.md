@@ -10,6 +10,25 @@ category: integration
 topic: Gmail Link
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - title: "Enable SuperOffice Gmail Link"
+    href: "/integrations/gmail-link/install"
+  - title: "Archive incoming email"
+    href: "/integrations/gmail-link/email-archive-incoming"
+  - title: "Archive outgoing email"
+    href: "/integrations/gmail-link/email-archive-outgoing"
+  - title: "Archive attachments"
+    href: "/integrations/gmail-link/archive-attachments"
+  - title: "Create activity"
+    href: "/integrations/gmail-link/archive-emails-as-activities"
+  - title: "Create request"
+    href: "/integrations/gmail-link/archive-emails-as-requests"
+  - title: "Look up sender in SuperOffice"
+    href: "/integrations/gmail-link/manage-senders"
+  - title: "Edit Gmail Link settings"
+    href: "/integrations/gmail-link/settings"
+  - title: "Connect your accounts"
+    href: "/en/learn/getting-started/connect-your-accounts"
 language: en
 redirect_from:
   - /en/email/gmail-link/learn/index
@@ -27,23 +46,3 @@ SuperOffice Gmail Link is a plug-in that links the Google Gmail client with Supe
 * Create diary activities in SuperOffice based on emails in Gmail.
 * Create requests based on emails in Gmail.
 * Look up senders in SuperOffice: easy-to-follow wizards that help you create a new company, contact or email address in your SuperOffice CRM database, if the sender is not unknown.
-
-## Related content
-
-* [Enable SuperOffice Gmail Link][1]
-* [Archive incoming email][3]
-* [Archive outgoing email][4]
-* [Archive attachments][2]
-* [Create activity][5]
-* [Create request][6]
-* [Look up sender in SuperOffice][7]
-* [Edit Gmail Link settings][8]
-
-[1]: ./install
-[2]: ./archive-attachments
-[3]: ./email-archive-incoming
-[4]: ./email-archive-outgoing
-[5]: ./archive-emails-as-activities
-[6]: ./archive-emails-as-requests
-[7]: ./manage-senders
-[8]: ./settings

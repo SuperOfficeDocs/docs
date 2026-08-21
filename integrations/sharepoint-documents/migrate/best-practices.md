@@ -11,6 +11,9 @@ category: integration
 topic: SharePoint documents
 deployment: online
 platform: web
+related:
+  - title: "Troubleshooting"
+    href: "/integrations/sharepoint-documents/migrate/troubleshooting"
 language: en
 redirect_from: /en/document/cloud/sharepoint-documents/migrate/best-practices
 userflow_index: true
@@ -43,9 +46,4 @@ Set aside time for corrections and re-runs.
 
 Inform your team members about the upcoming migration and provide them with the necessary training to effectively use SharePoint. Conduct workshops or webinars to educate users on SharePoint's features and functionalities.
 
-## Related content
-
-* [Troubleshooting][2]
-
 [1]: ./index#requirements
-[2]: ./troubleshooting

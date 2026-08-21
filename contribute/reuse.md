@@ -6,6 +6,13 @@ keywords: ['content reuse', 'single-sourcing', 'fragments', 'snippets', 'duplica
 author: digitaldiina
 date: 07.09.2026
 content_type: concept
+related:
+  - title: "Redirects and redirect_from"
+    href: "/contribute/redirects"
+  - title: "Content and redirect retention policy"
+    href: "/contribute/retention-policy"
+  - title: "Information architecture"
+    href: "/contribute/ia"
 language: en
 ---
 

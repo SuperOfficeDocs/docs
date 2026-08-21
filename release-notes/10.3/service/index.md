@@ -10,6 +10,8 @@ content_type: release-note
 category: service
 audience: person
 audience_tooltip: SuperOffice Service
+related: false
+noindex: true
 language: en
 ---
 

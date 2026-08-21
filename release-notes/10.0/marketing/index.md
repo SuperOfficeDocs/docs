@@ -9,6 +9,8 @@ date: 02.22.2022
 so_version: 10
 content_type: release-note
 category: marketing
+related: false
+noindex: true
 language: en
 ---
 

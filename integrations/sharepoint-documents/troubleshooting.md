@@ -10,6 +10,7 @@ category: integration
 topic: SharePoint documents
 deployment: online
 platform: web
+related: false
 language: en
 redirect_from: /en/document/cloud/sharepoint-documents/troubleshooting
 userflow_index: true

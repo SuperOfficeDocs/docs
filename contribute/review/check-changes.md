@@ -6,6 +6,15 @@ keywords: ['review', 'PR', 'comment', 'suggestion', 'preview']
 author: digitaldiina
 date: 08.10.2026
 content_type: howto
+related:
+  - title: "How to request a review"
+    href: "/contribute/review/request-review"
+  - title: "View and incorporate feedback on PR"
+    href: "/contribute/review/incorporate-feedback"
+  - title: "Mintlify deployment and CI/CD"
+    href: "/contribute/deployment"
+  - title: "Automated tests"
+    href: "/contribute/automated-tests"
 language: en
 ---
 

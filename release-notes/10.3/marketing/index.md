@@ -10,6 +10,8 @@ content_type: release-note
 category: marketing
 audience: person
 audience_tooltip: Marketing
+related: false
+noindex: true
 language: en
 ---
 

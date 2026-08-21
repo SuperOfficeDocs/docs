@@ -9,6 +9,7 @@ content_type: howto
 category: integration
 topic: Zapier
 platform: Zapier
+related: false
 language: en
 redirect_from: /en/automation/zapier/howto/listsource
 ---

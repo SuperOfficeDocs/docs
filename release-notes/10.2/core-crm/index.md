@@ -8,6 +8,8 @@ date: 12.12.2023
 so_version: 10.2
 content_type: release-note
 category: core crm
+related: false
+noindex: true
 language: en
 ---
 

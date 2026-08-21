@@ -8,6 +8,13 @@ date: 02.04.2026
 content_type: reference
 category: integration
 topic: SuperNotes
+related:
+  - title: "Getting started - Setup and basic usage"
+    href: "/integrations/supernotes/getting-started"
+  - title: "Settings - Configuration options"
+    href: "/integrations/supernotes/settings"
+  - title: "Workspaces - Team collaboration and workspace management"
+    href: "/integrations/supernotes/workspaces"
 language: en
 userflow_index: true
 ---
@@ -81,13 +88,4 @@ CO2 emissions per hour of transcription: 5-20 grams, depending on the data cente
 
 *Energy data provided by Gladia + MDPI 2025 study.*
 
-## Related content
-
-* [Getting started][1] - Setup and basic usage
-* [Settings][2] - Configuration options
-* [Workspaces][3] - Team collaboration and workspace management
-
-[1]: ./getting-started
-[2]: ./settings
-[3]: ./workspaces
 [4]: ./settings#retention-options
