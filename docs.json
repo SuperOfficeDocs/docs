@@ -48,6 +48,14 @@
       "background": "/images/og-background.png"
     }
   },
+  "integrations": {
+    "ga4": {
+        "measurementId": "ID G-J5XBFCGZ00"
+    },
+    "gtm": {
+        "tagId": "GTM-TCP8W5Z7"
+    }
+  },
   "api": {
     "playground": {
       "display": "none"
