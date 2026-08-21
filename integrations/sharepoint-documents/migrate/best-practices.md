@@ -12,8 +12,7 @@ topic: SharePoint documents
 deployment: online
 platform: web
 related:
-  - title: "Troubleshooting"
-    href: "/integrations/sharepoint-documents/migrate/troubleshooting"
+  - /integrations/sharepoint-documents/migrate/troubleshooting
 language: en
 redirect_from: /en/document/cloud/sharepoint-documents/migrate/best-practices
 userflow_index: true

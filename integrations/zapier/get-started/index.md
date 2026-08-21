@@ -10,8 +10,7 @@ category: integration
 topic: Zapier
 platform: Zapier
 related:
-  - title: "Available triggers, actions, and pre-defined Zaps"
-    href: "/integrations/zapier/reference"
+  - Available triggers, actions, and pre-defined Zaps: /integrations/zapier/reference
 language: en
 userflow_index: true
 redirect_from: /en/automation/zapier/get-started/index

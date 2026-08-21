@@ -9,20 +9,13 @@ content_type: concept
 category: integration
 topic: SuperNotes
 related:
-  - title: "Getting started - Setup and basic usage"
-    href: "/integrations/supernotes/getting-started"
-  - title: "Workspaces - Team collaboration and workspace management"
-    href: "/integrations/supernotes/workspaces"
-  - title: "Teams - Organizing workspace members into teams"
-    href: "/integrations/supernotes/teams"
-  - title: "Before meeting - Pre-meeting features and preparation"
-    href: "/integrations/supernotes/before-meeting"
-  - title: "Summaries - Meeting summaries and sharing"
-    href: "/integrations/supernotes/summaries"
-  - title: "Settings - Configuration options"
-    href: "/integrations/supernotes/settings"
-  - title: "Privacy and security - Data handling and security"
-    href: "/integrations/supernotes/privacy-security"
+  - Getting started - Setup and basic usage: /integrations/supernotes/getting-started
+  - Workspaces - Team collaboration and workspace management: /integrations/supernotes/workspaces
+  - Teams - Organizing workspace members into teams: /integrations/supernotes/teams
+  - Before meeting - Pre-meeting features and preparation: /integrations/supernotes/before-meeting
+  - Summaries - Meeting summaries and sharing: /integrations/supernotes/summaries
+  - Settings - Configuration options: /integrations/supernotes/settings
+  - Privacy and security - Data handling and security: /integrations/supernotes/privacy-security
 language: en
 userflow_index: true
 ---
