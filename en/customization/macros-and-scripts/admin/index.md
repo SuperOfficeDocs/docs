@@ -17,6 +17,12 @@ redirect_from:
   - /en/automation/crmscript/learn/screen/index
   - /en/automation/crmscript/learn/index
 userflow_index: true
+related:
+  - Create a script: /en/customization/macros-and-scripts/admin/create-script
+  - Create a macro: /en/customization/macros-and-scripts/admin/create-macro
+  - Create folder: /en/customization/macros-and-scripts/admin/create-script#folder
+  - Learn the CRMScript language: /en/automation/crmscript/overview/index
+  - CRMScript API reference: /en/automation/crmscript/reference/index
 language: en
 ---
 
@@ -80,20 +86,8 @@ When you click a script or macro in the **Macros and scripts** tab, the **Script
 | Debug script | Used to open the **Debugger** screen and run the selected script or macro in debug mode. The script stops at the first line. You can open a [debug session][4] from the **Debug sessions** tab. |
 | Trace script | Used to start [tracing the script or macro][5]. |
 
-## Related content
-
-* [Create a script][8]
-* [Create a macro][9]
-* [Create folder][10]
-* [Learn the CRMScript language][6]
-* [CRMScript API reference][7]
-
 [2]: ./trigger
 [3]: ./schedule-task
 [4]: /en/automation/crmscript/debugging/built-in-debugger
 [5]: /en/automation/crmscript/debugging/using-trace
-[6]: /en/automation/crmscript/overview/index
-[7]: /en/automation/crmscript/reference/index
 [8]: ./create-script
-[9]: ./create-macro
-[10]: ./create-script#folder

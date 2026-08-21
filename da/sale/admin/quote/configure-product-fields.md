@@ -14,6 +14,9 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /da/quote/learn/admin/product/configure
 userflow_index: true
+related:
+  - Føj produkt til en prisliste: /da/sale/admin/quote/price-list-and-products
+  - Tilføj/rediger et produkt i tilbuddet: /da/sale/learn/quote/create#add-products
 language: da
 ---
 
@@ -62,13 +65,5 @@ Disse indstillinger gælder globalt for alle ERP-links via quote connector og p�
 * Ikke alle felter behøver at være synlige. Skjul felter som eksempelvis leverandørkode, der ikke skal udfyldes af brugere.
 * Giv meningsfulde ledetekster og hjælpetekst for ekstra felter.
 * Ændringer i ledetekster træder i kraft efter næste login.
-
-## Relateret indhold
-
-* [Føj produkt til en prisliste][1]
-* [Tilføj/rediger et produkt i tilbuddet][2]
-
-[1]: ./price-list-and-products
-[2]: ../../learn/quote/create#add-products
 
 [img1]: ../../../../media/loc/en/sale/configure-product-dialog.png

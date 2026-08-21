@@ -12,6 +12,11 @@ tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
 redirect_from: /sv/request/learn/howto/accept
+related:
+  - Svara en kund: /sv/request/learn/reply
+  - /sv/request/learn/transfer
+  - Vidarebefordra meddelanden till externa personer: /sv/request/learn/forward
+  - Avsluta ärende: /sv/request/learn/close
 language: sv
 ---
 
@@ -42,18 +47,6 @@ Om du behöver mer information innan du accepterar, eller om du använder [Hämt
     * Klicka på <i class="ph ph-dots-three-circle-vertical" aria-label="Uppgiftsmeny"></i> och välj **Acceptera**.
     * Eller välj dig själv i fältet **Ägare**.
 
-## Relaterat innhåll
-
-* [Svara en kund][2]
-* [Be en annan ärendehandläggare om hjälp][3]
-* [Vidarebefordra meddelanden till externa personer][4]
-* [Avsluta ärende][5]
-
 [1]: ./index#open
-[2]: ./reply
-[3]: ./transfer
-[4]: ./forward
-[5]: ./close
 [6]: ../admin/next-in-queue
-
 [img2]: ../../../media/loc/en/request/requests-accept.png

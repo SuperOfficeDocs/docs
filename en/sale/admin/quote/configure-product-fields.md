@@ -14,6 +14,9 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /en/quote/learn/admin/product/configure
 userflow_index: true
+related:
+  - Add product to a price list: /en/sale/admin/quote/price-list-and-products
+  - Add/edit a product in the quote: /en/sale/learn/quote/create#add-products
 language: en
 ---
 
@@ -64,13 +67,5 @@ These settings apply globally to all quote connector ERP connections and affect 
 * Provide descriptive labels and tooltips for extra fields.
 
 * Label changes take effect after the next login.
-
-## Related content
-
-* [Add product to a price list][1]
-* [Add/edit a product in the quote][2]
-
-[1]: ./price-list-and-products
-[2]: ../../learn/quote/create#add-products
 
 [img1]: /media/loc/en/sale/configure-product-dialog.png

@@ -11,6 +11,11 @@ license: salesessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Visualiseer verkoopdoelen in dashboardtegels: /nl/dashboard/learn/show-sales-targets
+  - Nieuwe verkoop aanmaken: /nl/sale/learn/create
+  - Een selectie weergeven als grafiek: /nl/search-options/selection/learn/howto/display-as-charts
+  - Het Zoekscherm gebruiken: /nl/search-options/learn/find-screen
 language: nl
 ---
 
@@ -72,18 +77,7 @@ Om te laten zien hoe je de Zoekfunctie kunt gebruiken voor verkoopprognoses, vol
 
 7. Klik onderaan het scherm op **Zoeken** om alle open verkoopkansen met een waarde groter dan € 5000 te zien.
 
-## Gerelateerde inhoud
-
-* [Visualiseer verkoopdoelen in dashboardtegels][7]
-* [Nieuwe verkoop aanmaken][1]
-* [Een selectie weergeven als grafiek][6]
-* [Het Zoekscherm gebruiken][5]
-
-[1]: ./create
 [5]: ../../search-options/learn/find-screen
-[6]: ../../search-options/selection/learn/howto/display-as-charts
-[7]: ../../dashboard/learn/show-sales-targets
-
 [img1]: ../../../media/loc/en/sale/forecasting.png
 [img7]: ../../../media/loc/en/search-options/typical-sale-searches.png
 [img8]: ../../../media/loc/en/search-options/find-screen.png

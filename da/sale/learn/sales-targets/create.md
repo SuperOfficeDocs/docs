@@ -12,6 +12,8 @@ tier: growth
 deployment: online
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Brug af salgsmål i ruder: /da/dashboard/learn/show-sales-targets
 language: da
 ---
 
@@ -132,12 +134,6 @@ Hvis du vil have vist revisionshistorik for et salgsmål (række), skal du klikk
 * For måltyper, der indeholder undertyper, skal du bruge knappen **Filter** (<i class="ph ph-funnel" aria-hidden="true"></i>) til at vise eller arbejde med specifikke elementer.
 
     ![Klik på tragtikonet for at filtrere salgsmål efter undertype -screenshot][img4]
-
-## Relateret indhold
-
-* [Brug af salgsmål i ruder][2]
-
-[2]: ../../../dashboard/learn/show-sales-targets
 
 [img1]: ../../../../media/loc/en/sale/targets-dialog-group-expanded.png
 [img2]: ../../../../media/loc/en/sale/target-line-menu.png

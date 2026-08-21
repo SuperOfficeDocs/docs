@@ -12,6 +12,10 @@ tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
 redirect_from: /de/request/learn/howto/forward
+related:
+  - Anfrage erstellen: /de/request/learn/create#fields
+  - Antwort an Kunde senden: /de/request/learn/reply
+  - Mitteilung bearbeiten: /de/request/learn/edit-message
 language: de
 ---
 
@@ -55,17 +59,8 @@ Sie können eine komplexe oder problematische Anfrage per E-Mail an eine externe
 
 ![Mehrere Anfragen weiterleiten - screenshot][img1]
 
-## Verwandte Inhalte
-
-* [Anfrage erstellen][2]
-* [Antwort an Kunde senden][3]
-* [Mitteilung bearbeiten][4]
-
 [1]: ./index#open
 [2]: ./create#fields
-[3]: ./reply
-[4]: ./edit-message
-
 [img1]: ../../../media/loc/en/request/forward-multiple-requests.png
 [img2]: ../../../media/loc/en/request/forward-add-recipient.png
 [img3]: ../../../media/loc/en/request/forward-a-request.png

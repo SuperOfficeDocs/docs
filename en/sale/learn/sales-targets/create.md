@@ -12,6 +12,8 @@ tier: growth
 deployment: online
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Using sales targets in tiles: /en/dashboard/learn/show-sales-targets
 language: en
 ---
 
@@ -132,12 +134,6 @@ To view the revision history for a sales target (row), click <i class="ph ph-lis
 * For target types that include sub-types, use the **Filter** button (<i class="ph ph-funnel" aria-hidden="true"></i>) to display or work with specific items.
 
     ![Click the funnel icon to filter sales targets by sub-type -screenshot][img4]
-
-## Related content
-
-* [Using sales targets in tiles][2]
-
-[2]: ../../../dashboard/learn/show-sales-targets
 
 [img1]: /media/loc/en/sale/targets-dialog-group-expanded.png
 [img2]: /media/loc/en/sale/target-line-menu.png

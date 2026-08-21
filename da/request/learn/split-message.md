@@ -12,6 +12,9 @@ tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
 redirect_from: /da/request/learn/howto/split-message
+related:
+  - /da/request/learn/split-request
+  - /da/request/learn/merge
 language: da
 ---
 
@@ -49,11 +52,4 @@ Hvis en meddelelse indeholder to problemer, som skal håndteres særskilt, kan d
 
 1. Klik på **OK**. Meddelelsen opdeles, og den nye sag åbnes.
 
-## Relateret indhold
-
-* [Opdel en sag][2]
-* [Flet sager][3]
-
 [1]: ./index#open
-[2]: ./split-request
-[3]: ./merge

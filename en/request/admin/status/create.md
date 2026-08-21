@@ -13,6 +13,8 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /en/request/learn/status/create
 userflow_index: true
+related:
+  - /en/request/admin/next-in-queue
 language: en
 ---
 
@@ -43,9 +45,3 @@ language: en
 1. Click **Save**. The request status is created.
 
 1. If required, adjust the position of the status using the arrow buttons below the list of statuses. The rank here specifies the order in the **Status** list box when creating a new request. Place the most frequently used statuses at the top.
-
-## Related content
-
-* [How to set up Get next request in queue][1]
-
-[1]: ../next-in-queue

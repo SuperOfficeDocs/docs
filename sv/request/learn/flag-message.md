@@ -12,6 +12,10 @@ tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
 redirect_from: /sv/request/learn/howto/flag-message
+related:
+  - Skapa ärende: /sv/request/learn/create
+  - Svara kund: /sv/request/learn/reply
+  - /sv/request/learn/edit-message
 language: sv
 ---
 
@@ -33,15 +37,5 @@ För att göra det enklare att hitta och sortera flera meddelanden i ett ärende
 
 ![Options to filter list of messages on a request -screenshot][img1]
 
-## Relaterat innehåll
-
-* [Skapa ärende][2]
-* [Svara kund][3]
-* [Redigera meddelande][4]
-
 [1]: ./index#open
-[2]: ./create
-[3]: ./reply
-[4]: ./edit-message
-
 [img1]: ../../../media/loc/en/request/filter-messages.png

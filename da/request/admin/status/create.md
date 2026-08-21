@@ -13,6 +13,8 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /da/request/learn/status/create
 userflow_index: true
+related:
+  - /da/request/admin/next-in-queue
 language: da
 ---
 
@@ -43,9 +45,3 @@ language: da
 1. Klik på **Gem**. Sagsstatussen oprettes.
 
 1. Juster om nødvendigt statusens placering ved hjælp af pileknapperne under statuslisten. Rækkefølgen her bestemmer visningen i rullemenuen **Status** ved oprettelse af en ny sag. Placer de mest anvendte statusser øverst.
-
-## Relateret indhold
-
-* [Sådan konfigurerer du Hent næste sag i køen][1]
-
-[1]: ../next-in-queue

@@ -14,6 +14,9 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /no/quote/learn/admin/product/configure
 userflow_index: true
+related:
+  - Legge til produkt i en prisliste: /no/sale/admin/quote/price-list-and-products
+  - Legge til/redigere produkter i tilbud: /no/sale/learn/quote/create#add-products
 language: no
 ---
 
@@ -62,13 +65,5 @@ Disse innstillingene gjelder globalt for alle ERP-koblinger via quote connector 
 * Du trenger ikke vise alle felt. Skjul felter som ikke skal fylles ut, for eksempel leverandørkode.
 * Bruk beskrivende ledetekster og hjelpetekster for ekstrafelt.
 * Endringer i ledetekster vises først etter neste innlogging.
-
-## Relatert innhold
-
-* [Legge til produkt i en prisliste][1]
-* [Legge til/redigere produkter i tilbud][2]
-
-[1]: ./price-list-and-products
-[2]: ../../learn/quote/create#add-products
 
 [img1]: ../../../../media/loc/en/sale/configure-product-dialog.png

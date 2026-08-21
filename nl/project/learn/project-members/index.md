@@ -11,6 +11,10 @@ tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /nl/project/learn/screen/project-members-tab
+related:
+  - Een projectlid toevoegen: /nl/project/learn/project-members/add
+  - Een projectlid bewerken of verwijderen: /nl/project/learn/project-members/edit
+  - E-mail versturen naar projectleden: /nl/project/learn/project-members/send-email-to
 language: nl
 ---
 
@@ -19,13 +23,3 @@ Projectleden zijn de deelnemers aan een project. Voor elk lid heeft u toegang to
 ## Sectietabblad Projectleden
 
 **Projectleden** is een van de sectietabbladen onderaan het scherm Project. Dit tabblad bevat informatie over deelnemers aan het actieve project. Voor elk projectlid worden het bedrijf, de naam van de persoon, de functie in het project, commentaar, het e-mailadres en het telefoonnummer weergegeven.
-
-## Gerelateerde inhoud
-
-* [Een projectlid toevoegen][1]
-* [Een projectlid bewerken of verwijderen][3]
-* [E-mail versturen naar projectleden][4]
-
-[1]: ./add
-[3]: ./edit
-[4]: ./send-email-to

@@ -12,6 +12,8 @@ tier: starter
 audience: settings
 audience_tooltip: Inställningar och underhåll
 redirect_from: /sv/request/learn/status/create
+related:
+  - /sv/request/admin/next-in-queue
 language: sv
 ---
 
@@ -42,9 +44,3 @@ language: sv
 1. Klicka på **Spara**. Ärendestatusen skapas.
 
 1. Om det behövs kan du justera statusens placering med hjälp av pilknapparna under statuslistan. Rangordningen här avgör i vilken ordning statusvärden visas i listan **Status** när ett nytt ärende skapas. Placera de vanligaste statusarna högst upp.
-
-## Relaterat innehåll
-
-* [Så här konfigurerar du Hämta nästa ärende i kön][1]
-
-[1]: ../next-in-queue

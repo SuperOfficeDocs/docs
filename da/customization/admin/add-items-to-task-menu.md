@@ -14,6 +14,10 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /da/admin/lists/learn/add-items-to-task-menu
 userflow_index: true
+related:
+  - Tilføjelse af et webpanelelement: /da/customization/web-panels/admin/add-web-panel
+  - Tilføjelse af en oversættelse: /da/localization/learn/translate-fields
+  - /da/admin/lists/specialized-lists
 language: da
 ---
 
@@ -45,15 +49,7 @@ language: da
 
 Når du tilføjer en URL-adresse, kan det være nyttigt at bruge f.eks. skabelonvariablen for aktivt firma til at hente oplysninger fra andre programmer via en URL. URL-adressen skal angive parametre som i dette fiktive eksempel: `http://www.comlist.com/data/indiv/detail.jsp?orgno=<orgn>`. orgn er skabelonvariablen for organisationsnummer, men andre variabler, såsom firmanavn &lt;name&gt;, firmaets telefonnummer &lt;cpho&gt; eller personnavn &lt;attn&gt; kan også anvendes.
 
-## Relateret indhold
-
-* [Tilføjelse af et webpanelelement][1]
-* [Tilføjelse af en oversættelse][7]
-* [Specialiserede lister][3]
-
-[1]: ../web-panels/admin/add-web-panel
 [4]: ../web-panels/admin/url-encoding
-[3]: ../../admin/lists/specialized-lists
 [5]: ../macros-and-scripts/admin/index
 [6]: ../../../en/customization/soprotocol/index
 [7]: ../../localization/learn/translate-fields

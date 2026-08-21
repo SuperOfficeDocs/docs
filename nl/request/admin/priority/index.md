@@ -12,6 +12,10 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /nl/request/learn/priority/index
 userflow_index: true
+related:
+  - Prioriteit maken: /nl/request/admin/priority/create
+  - Prioriteiten verwijderen: /nl/request/admin/priority/delete
+  - Escalatieniveaus maken: /nl/request/admin/priority/escalation-levels
 language: nl
 ---
 
@@ -53,13 +57,3 @@ Bijvoorbeeld: gebruikersondersteuning en SLA-overeenkomsten kunnen vereisen dat 
 Elke prioriteit heeft een toegankelijkheidsinstelling. Als de prioriteit op **Extern** is ingesteld, is deze toegankelijk via het SuperOffice Customer Centre.
 
 Als er meer dan twee externe prioriteiten beschikbaar zijn, kan de klant de prioriteit van zijn verzoek zelf kiezen. Dit kan ertoe leiden dat klanten altijd de hoogste prioriteit selecteren om sneller een antwoord te krijgen. Daarom is het verstandig om de hoogste prioriteiten als **Intern** in te stellen en alleen **Gemiddeld** en **Laag** extern beschikbaar te maken.
-
-## Gerelateerde inhoud
-
-* [Prioriteit maken][1]
-* [Prioriteiten verwijderen][2]
-* [Escalatieniveaus maken][3]
-
-[1]: ./create
-[2]: ./delete
-[3]: ./escalation-levels

@@ -11,6 +11,9 @@ tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
 redirect_from: /nl/request/learn/howto/split-message
+related:
+  - /nl/request/learn/split-request
+  - /nl/request/learn/merge
 language: nl
 ---
 
@@ -48,11 +51,4 @@ Als een bericht twee kwesties bevat die afzonderlijk moeten worden behandeld, ku
 
 1. Klik op **OK**. Het bericht wordt opgesplitst en het nieuwe verzoek wordt geopend.
 
-## Gerelateerde inhoud
-
-* [Verzoeken splitsen][2]
-* [Verzoeken samenvoegen][3]
-
 [1]: ./index#open
-[2]: ./split-request
-[3]: ./merge

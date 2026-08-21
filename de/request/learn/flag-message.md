@@ -12,6 +12,10 @@ tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
 redirect_from: /de/request/learn/howto/flag-message
+related:
+  - /de/request/learn/create
+  - Antwort an Kunde: /de/request/learn/reply
+  - /de/request/learn/edit-message
 language: de
 ---
 
@@ -33,15 +37,5 @@ Um das Auffinden und Sortieren mehrerer Nachrichten in einer Anfrage zu erleicht
 
 ![Options to filter list of messages on a request -screenshot][img1]
 
-## Verwandte Inhalte
-
-* [Anfrage erstellen][2]
-* [Antwort an Kunde][3]
-* [Nachricht bearbeiten][4]
-
 [1]: ./index#open
-[2]: ./create
-[3]: ./reply
-[4]: ./edit-message
-
 [img1]: ../../../media/loc/en/request/filter-messages.png

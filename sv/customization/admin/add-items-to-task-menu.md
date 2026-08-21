@@ -13,6 +13,10 @@ audience: settings
 audience_tooltip: Inställningar och underhåll
 redirect_from: /sv/admin/lists/learn/add-items-to-task-menu
 userflow_index: true
+related:
+  - Lägg till en webbpanelpost: /sv/customization/web-panels/admin/add-web-panel
+  - Lägg till en översättning: /sv/localization/learn/translate-fields
+  - /sv/admin/lists/specialized-lists
 language: sv
 ---
 
@@ -44,14 +48,6 @@ language: sv
 
 När du lägger till en webbadress kan det vara praktiskt att använda till exempel mallvariabeln för aktivt företag för att hämta information från andra applikationer via webbadressen. Webbadressen måste innehålla parametrar som i det här fiktiva exemplet: `http://www.comlist.com/data/indiv/detail.jsp?orgno=<orgn>`. orgn är mallvariabeln för organisationsnummer, men andra variabler, t.ex. företagsnamn &lt;name&gt;, företagets telefonnummer &lt;cpho&gt; och kontaktnamn &lt;attn&gt;, kan också användas.
 
-## Relaterat innehåll
-
-* [Lägg till en webbpanelpost][1]
-* [Lägg till en översättning][7]
-* [Specialiserade listor][3]
-
-[1]: ../web-panels/admin/add-web-panel
-[3]: ../../admin/lists/specialized-lists
 [4]: ../web-panels/admin/url-encoding
 [5]: ../macros-and-scripts/admin/index
 [6]: ../../../en/customization/soprotocol/index

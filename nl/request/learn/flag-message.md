@@ -12,6 +12,10 @@ tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
 redirect_from: /nl/request/learn/howto/flag-message
+related:
+  - Verzoek maken: /nl/request/learn/create
+  - Klant beantwoorden: /nl/request/learn/reply
+  - /nl/request/learn/edit-message
 language: nl
 ---
 
@@ -33,15 +37,5 @@ Om het gemakkelijker te maken om meerdere berichten in een verzoek te vinden en 
 
 ![Options to filter list of messages on a request -screenshot][img1]
 
-## Gerelateerde inhoud
-
-* [Verzoek maken][2]
-* [Klant beantwoorden][3]
-* [Bericht bewerken][4]
-
 [1]: ./index#open
-[2]: ./create
-[3]: ./reply
-[4]: ./edit-message
-
 [img1]: ../../../media/loc/en/request/filter-messages.png

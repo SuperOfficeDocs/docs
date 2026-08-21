@@ -13,6 +13,10 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /nl/admin/lists/learn/add-items-to-task-menu
 userflow_index: true
+related:
+  - Een webpaneelitem toevoegen: /nl/customization/web-panels/admin/add-web-panel
+  - Een vertaling toevoegen: /nl/localization/learn/translate-fields
+  - /nl/admin/lists/specialized-lists
 language: nl
 ---
 
@@ -44,14 +48,6 @@ language: nl
 
 Als u een URL-adres toevoegt, kan het handig zijn meerdere sjabloonvariabelen te gebruiken voor het actieve bedrijf, bijvoorbeeld om informatie van andere toepassingen via een URL op te halen.  Het URL-adres moet bepaalde parameters bevatten, zoals in dit fictieve voorbeeld: `http://www.comlist.com/data/indiv/detail.jsp?orgno=<orgn>`. orgn is hier de sjabloonvariabele voor het organisatienummer, maar andere variabelen zoals bedrijfsnaam &lt;name&gt;, bedrijfstelefoonnummer &lt;cpho&gt;, persoonsnaam &lt;attn&gt;, kunnen ook gebruikt worden.
 
-## Gerelateerde inhoud
-
-* [Een webpaneelitem toevoegen][1]
-* [Een vertaling toevoegen][7]
-* [Gespecialiseerde lijsten][3]
-
-[1]: ../web-panels/admin/add-web-panel
-[3]: ../../admin/lists/specialized-lists
 [4]: ../web-panels/admin/url-encoding
 [5]: ../macros-and-scripts/admin/index
 [6]: ../../../en/customization/soprotocol/index

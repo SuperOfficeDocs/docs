@@ -13,6 +13,10 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /en/admin/lists/learn/add-items-to-task-menu
 userflow_index: true
+related:
+  - Add a web panel item: /en/customization/web-panels/admin/add-web-panel
+  - Add a translation: /en/localization/learn/translate-fields
+  - /en/admin/lists/specialized-lists
 language: en
 ---
 
@@ -44,14 +48,6 @@ language: en
 
 If you add a URL address, it may be useful to use template variables for the active company, for example, to retrieve information from other applications via an URL. The URL address must specify parameters, as in this fictitious example: `http://www.comlist.com/data/indiv/detail.jsp?orgno=<orgn>`. orgn here is the template variable for the organization number, but other variables like company name &lt;name&gt;, company phone number &lt;cpho&gt;, contact name &lt;attn&gt;, can also be used.
 
-## Related content
-
-* [Add a web panel item][1]
-* [Add a translation][7]
-* [Specialized lists][3]
-
-[1]: ../web-panels/admin/add-web-panel
-[3]: ../../admin/lists/specialized-lists
 [4]: ../web-panels/admin/url-encoding
 [5]: ../macros-and-scripts/admin/index
 [6]: ../../../en/customization/soprotocol/index

@@ -11,6 +11,10 @@ tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /no/project/learn/screen/project-members-tab
+related:
+  - Legge til prosjektdeltaker: /no/project/learn/project-members/add
+  - Redigere eller slette prosjektdeltaker: /no/project/learn/project-members/edit
+  - Sende e-post til prosjektdeltakere: /no/project/learn/project-members/send-email-to
 language: no
 ---
 
@@ -19,13 +23,3 @@ Prosjektdeltakere er deltakerne i et prosjekt. For hver deltaker kan du få tilg
 ## Detaljkortet Prosjektdeltakere
 
 **Prosjektdeltakere** er et av detaljkortene nederst i Prosjekt-bildet. Det inneholder opplysninger om personer som deltar i det aktive prosjektet. For hver prosjektdeltaker vises det informasjon om firma, personnavn, funksjon i prosjektet, eventuell kommentar, e-postadresse og telefonnummer.
-
-## Relatert innhold
-
-* [Legge til prosjektdeltaker][1]
-* [Redigere eller slette prosjektdeltaker][3]
-* [Sende e-post til prosjektdeltakere][4]
-
-[1]: ./add
-[3]: ./edit
-[4]: ./send-email-to

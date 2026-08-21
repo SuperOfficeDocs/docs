@@ -12,6 +12,8 @@ tier: growth
 deployment: online
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Verkooptargets gebruiken in tegels: /nl/dashboard/learn/show-sales-targets
 language: nl
 ---
 
@@ -132,12 +134,6 @@ Om de revisiegeschiedenis van een verkooptarget (rij) te bekijken, klikt u op <i
 * Voor targettypen die undertypen bevatten, gebruikt u de knop **Filter** (<i class="ph ph-funnel" aria-hidden="true"></i>) om specifieke elementen weer te geven of ermee te werken.
 
    ![Klik op het trechterpictogram om verkooptargets te filteren op subtype -screenshot][img4]
-
-## Gerelateerde inhoud
-
-* [Verkooptargets gebruiken in tegels][2]
-
-[2]: ../../../dashboard/learn/show-sales-targets
 
 [img1]: ../../../../media/loc/en/sale/targets-dialog-group-expanded.png
 [img2]: ../../../../media/loc/en/sale/target-line-menu.png

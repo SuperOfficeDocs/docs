@@ -17,6 +17,14 @@ redirect_from:
   - /en/ui/screen-designer/element-reference
   - /en/customization/screen-designer/reference
 userflow_index: true
+related:
+  - /en/customization/screen-designer/admin/working-with-fields
+  - /en/api/localization/address/index
+  - Learn more about sales: /en/sale/dev/index
+  - Learn more about projects: /en/project/dev/index
+  - Learn more about requests: /en/request/dev/index
+  - Learn more about follow-ups: /en/diary/learn/follow-ups
+  - Learn more about documents: /en/document/learn/index
 language: en
 ---
 
@@ -312,33 +320,17 @@ For details about the value of each field, see the [Document database table][23]
 * Links
 * More
 
-## Related content
-
-* [Working with fields][1]
-* [Address formats][20]
-* [Learn more about sales][11]
-* [Learn more about projects][10]
-* [Learn more about requests][14]
-* [Learn more about follow-ups][16]
-* [Learn more about documents][21]
-
-[1]: ./working-with-fields
 [2]: /en/database/tables/contact
 [3]: /en/database/tables/person
 [4]: /en/database/tables/sale
 [5]: /en/database/tables/project
 [6]: /en/database/tables/ticket
 [7]: /en/database/tables/appointment
-[11]: ../../../sale/dev/index
-[10]: ../../../project/dev/index
 [13]: ../../../request/admin/type/index
-[14]: ../../../request/dev/index
 [15]: ../../../diary/learn/invitation/add-attendee#availability
-[16]: ../../../diary/learn/follow-ups
 [17]: ../../../company/dev/index#interests
 [18]: ../../../company/dev/index#categorylist
 [20]: /en/api/localization/address/index
-[21]: ../../../document/learn/index
 [22]: ../../../document/templates/learn/index
 [23]: /en/database/tables/document
 [24]: ../../../marketing/utm/learn/index
