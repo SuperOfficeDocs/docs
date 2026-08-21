@@ -11,6 +11,9 @@ license: salesessentials, serviceessentials, marketingessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Herhalende vervolgactiviteit maken: /nl/diary/learn/recurrence/create
+  - Herhalende vervolgactiviteit bewerken: /nl/diary/learn/edit-follow-up#repeat
 language: nl
 ---
 
@@ -39,13 +42,5 @@ Je kunt ook een herhalende vervolgactiviteit stoppen door deze te selecteren in 
 4. Klik op **Ja** om te bevestigen.
 
 ![Delete repeating follow-up dialog -screenshot][img1]
-
-## Gerelateerde inhoud
-
-* [Herhalende vervolgactiviteit maken][1]
-* [Herhalende vervolgactiviteit bewerken][2]
-
-[1]: ./create
-[2]: ../edit-follow-up#repeat
 
 [img1]: ../../../../media/loc/en/diary/delete-repeating-fo.png

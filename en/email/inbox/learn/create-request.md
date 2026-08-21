@@ -11,6 +11,10 @@ license: serviceessentials
 tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Archive emails and attachments: /en/email/inbox/learn/archive
+  - /en/email/inbox/learn/create-task
+  - About requests: /en/request/learn/index
 language: en
 ---
 
@@ -34,15 +38,5 @@ You can create a new request in SuperOffice Service based on the sender and cont
     * If the sender is recognized, the request is automatically linked to the correct contact and company.
     * If not, the sender is registered as a new contact in SuperOffice Service.
 
-## Related content
-
-* [Archive emails and attachments][1]
-* [Create task][2]
-* [About requests][3]
-
-[1]: ./archive
-[2]: ./create-task
-[3]: ../../../request/learn/index
 [4]: ../../../request/learn/create#fields
-
 [img1]: /media/loc/en/email/inbox-create-request.png

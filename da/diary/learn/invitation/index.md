@@ -12,6 +12,9 @@ license: salesessentials, serviceessentials, marketingessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Tilføjelse af deltagere i opfølgninger: /da/diary/learn/invitation/add-attendee
+  - Oprettelse af gruppeoversigter: /da/diary/learn/group-view
 language: da
 ---
 
@@ -47,11 +50,3 @@ Når du sender en invitation, kan modtageren af invitationen enten acceptere ell
 * Hvis modtageren afviser invitationen, Klik på **Forstået** for at bekræfte. Valgfrit, find en ny passende tid og planlæg opfølgningen igen, eller tildele opfølgningen på ny.
 
 * Hvis personen accepterer invitationen, registreres den i SuperOffice CRM på normal vis.
-
-## Relateret indhold
-
-* [Tilføjelse af deltagere i opfølgninger][2]
-* [Oprettelse af gruppeoversigter][1]
-
-[1]: ../group-view
-[2]: ./add-attendee

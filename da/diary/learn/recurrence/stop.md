@@ -11,6 +11,9 @@ license: salesessentials, serviceessentials, marketingessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Oprettelse af gentagen opfølgning: /da/diary/learn/recurrence/create
+  - Rediger gentagne opfølgninger: /da/diary/learn/edit-follow-up#repeat
 language: da
 ---
 
@@ -39,13 +42,5 @@ Du kan også stoppe en gentagende opfølgning ved at vælge den i dagbogen og sl
 4. Klik på **Ja** for at bekræfte.
 
 ![Delete repeating follow-up dialog -screenshot][img1]
-
-## Relateret indhold
-
-* [Oprettelse af gentagen opfølgning][1]
-* [Rediger gentagne opfølgninger][2]
-
-[1]: ./create
-[2]: ../edit-follow-up#repeat
 
 [img1]: ../../../../media/loc/en/diary/delete-repeating-fo.png

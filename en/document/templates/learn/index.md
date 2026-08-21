@@ -9,6 +9,12 @@ so_version: 10.3
 content_type: concept
 tier: starter
 redirect_from: /en/admin/lists/learn/document-template
+related:
+  - Edit or replace a template: /en/document/templates/admin/update-template
+  - /en/document/templates/learn/create
+  - Look at template variables: /en/document/templates/learn/template-variables
+  - /en/knowledge-base/learn/reply-templates/template-variables
+  - Quote templates: /en/document/templates/learn/quote-templates
 language: en
 ---
 
@@ -51,18 +57,7 @@ To ensure that you can communicate with your clients in their own language (wher
 1. [Add and define the document template][6] in Settings and maintenance.
 1. [Specify user groups][5] for the document template.
 
-## Related content
-
-* [Edit or replace a template][2]
-* [Create a template document][4]
-* [Look at template variables][1]
-* [Reply template variables (Service)][8]
-* [Quote templates][7]
-
 [1]: ./template-variables
-[4]: ./create
 [2]: ../admin/update-template
 [6]: ../admin/link-template
 [5]: ../../../admin/lists/user-group-filtering
-[7]: ./quote-templates
-[8]: ../../../knowledge-base/learn/reply-templates/template-variables

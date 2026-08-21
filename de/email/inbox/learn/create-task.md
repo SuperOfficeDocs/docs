@@ -11,6 +11,10 @@ license: salesessentials, serviceessentials, marketingessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - E-Mails und Anhänge archivieren: /de/email/inbox/learn/archive
+  - /de/email/inbox/learn/create-request
+  - Über Folgeaufgaben: /de/diary/learn/follow-ups
 language: de
 ---
 
@@ -38,15 +42,5 @@ Sie können basierend auf einer E-Mail im SuperOffice-Posteingang schnell eine F
 
 1. Klicken Sie auf **Speichern**, um die Aufgabe zu erstellen.
 
-## Verwandte Inhalte
-
-* [E-Mails und Anhänge archivieren][1]
-* [Anfrage erstellen][2]
-* [Über Folgeaufgaben][4]
-
-[1]: ./archive
-[2]: ./create-request
 [3]: ../../../diary/learn/create-follow-up#fields
-[4]: ../../../diary/learn/follow-ups
-
 [img1]: ../../../../media/loc/en/email/inbox-create-task.png

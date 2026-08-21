@@ -11,6 +11,13 @@ tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /nl/contact/learn/screen/index
+related:
+  - Een nieuwe contactpersoon maken: /nl/contact/learn/create
+  - Privacy-instellingen voor een persoon bewerken: /nl/security/privacy/learn/edit-legal-base
+  - Contactpersonen verplaatsen: /nl/contact/learn/move
+  - Contactpersonen samenvoegen: /nl/contact/learn/merge-contacts
+  - Contactpersonen verwijderen: /nl/contact/learn/delete
+  - /nl/contact/learn/send-email
 language: nl
 ---
 
@@ -48,23 +55,8 @@ Onder de persoonskaart bieden [sectietabbladen][16] snelle toegang tot informati
 | [Projecten][14] | Toont alle projecten waarin de persoon een projectlid is. |
 | [Relaties][15] | Geeft eventuele connecties weer tussen de huidige persoon en andere personen of bedrijven. |
 
-## Gerelateerde inhoud
-
-* [Een nieuwe contactpersoon maken][2]
-* [Privacy-instellingen voor een persoon bewerken][3]
-* [Contactpersonen verplaatsen][4]
-* [Contactpersonen samenvoegen][5]
-* [Contactpersonen verwijderen][6]
-* [E-mail verzenden naar een contactpersoon][7]
-
 [2]: ./create
-[3]: ../../security/privacy/learn/edit-legal-base
-[4]: ./move
-[5]: ./merge-contacts
-[6]: ./delete
-[7]: ./send-email
 [8]: ../../company/learn/index
-
 [11]: ../../learn/section-tabs/activities-tab
 [12]: ../../learn/section-tabs/sales-tab
 [13]: ../../learn/section-tabs/requests-tab
@@ -75,5 +67,4 @@ Onder de persoonskaart bieden [sectietabbladen][16] snelle toegang tot informati
 [20]: ../../learn/basics/notes
 [21]: ../../customization/web-panels/admin/index#www
 [22]: ../../erp/learn/index
-
 [img3]: ../../../media/loc/en/contact/contact-screen.png

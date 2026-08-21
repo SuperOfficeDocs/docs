@@ -11,6 +11,13 @@ tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /no/contact/learn/screen/index
+related:
+  - Opprette en ny person: /no/contact/learn/create
+  - Redigere personverninnstillinger for en person: /no/security/privacy/learn/edit-legal-base
+  - Flytte personer: /no/contact/learn/move
+  - /no/contact/learn/merge-contacts
+  - Slette personer: /no/contact/learn/delete
+  - Sende e-post til en person: /no/contact/learn/send-email
 language: no
 ---
 
@@ -48,23 +55,8 @@ Nederst i **Person**-bildet gir [detaljkort][16] rask tilgang til informasjon so
 | [Prosjekter][14] | Viser alle prosjekter der den aktive personen er medlem. |
 | [Relasjoner][15] | Viser koblinger mellom denne personen og andre personer eller firmaer. |
 
-## Relatert innhold
-
-* [Opprette en ny person][2]
-* [Redigere personverninnstillinger for en person][3]
-* [Flytte personer][4]
-* [Slå sammen personer][5]
-* [Slette personer][6]
-* [Sende e-post til en person][7]
-
 [2]: ./create
-[3]: ../../security/privacy/learn/edit-legal-base
-[4]: ./move
-[5]: ./merge-contacts
-[6]: ./delete
-[7]: ./send-email
 [8]: ../../company/learn/index
-
 [11]: ../../learn/section-tabs/activities-tab
 [12]: ../../learn/section-tabs/sales-tab
 [13]: ../../learn/section-tabs/requests-tab
@@ -75,5 +67,4 @@ Nederst i **Person**-bildet gir [detaljkort][16] rask tilgang til informasjon so
 [20]: ../../learn/basics/notes
 [21]: ../../customization/web-panels/admin/index#www
 [22]: ../../erp/learn/index
-
 [img3]: ../../../media/loc/en/contact/contact-screen.png

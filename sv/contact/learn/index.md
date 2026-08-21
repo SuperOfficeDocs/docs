@@ -11,6 +11,13 @@ tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /sv/contact/learn/screen/index
+related:
+  - /sv/contact/learn/create
+  - Redigera integritetsinställningar för en kontakt: /sv/security/privacy/learn/edit-legal-base
+  - Flytta kontakter: /sv/contact/learn/move
+  - /sv/contact/learn/merge-contacts
+  - Ta bort kontakter: /sv/contact/learn/delete
+  - /sv/contact/learn/send-email
 language: sv
 ---
 
@@ -48,23 +55,8 @@ Längst ned i fönstret **Kontakt** finns följande [detaljkort][16] som standar
 | [Projekt][14] | Visar alla projekt där den aktiva kontakten är projektdeltagare. |
 | [Relationer][15] | Visar eventuella kopplingar mellan den aktuella kontakten och andra kontakter eller företag. |
 
-## Relaterat innehåll
-
-* [Skapa en ny kontakt][2]
-* [Redigera integritetsinställningar för en kontakt][3]
-* [Flytta kontakter][4]
-* [Slå ihop kontakter][5]
-* [Ta bort kontakter][6]
-* [Skicka e-post till en kontakt][7]
-
 [2]: ./create
-[3]: ../../security/privacy/learn/edit-legal-base
-[4]: ./move
-[5]: ./merge-contacts
-[6]: ./delete
-[7]: ./send-email
 [8]: ../../company/learn/index
-
 [11]: ../../learn/section-tabs/activities-tab
 [12]: ../../learn/section-tabs/sales-tab
 [13]: ../../learn/section-tabs/requests-tab
@@ -75,5 +67,4 @@ Längst ned i fönstret **Kontakt** finns följande [detaljkort][16] som standar
 [20]: ../../learn/basics/notes
 [21]: ../../customization/web-panels/admin/index#www
 [22]: ../../erp/learn/index
-
 [img3]: ../../../media/loc/en/contact/contact-screen.png

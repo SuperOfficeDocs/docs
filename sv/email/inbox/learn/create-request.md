@@ -11,6 +11,10 @@ license: serviceessentials
 tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Arkivera e-post och bilagor: /sv/email/inbox/learn/archive
+  - /sv/email/inbox/learn/create-task
+  - Om ärenden: /sv/request/learn/index
 language: sv
 ---
 
@@ -34,15 +38,5 @@ Du kan skapa ett nytt ärende i SuperOffice Service baserat på avsändaren och 
     * Om avsändaren känns igen kopplas ärendet automatiskt till rätt kontakt och företag.
     * Om inte, registreras avsändaren som en ny kontakt i SuperOffice Service.
 
-## Relaterat innehåll
-
-* [Arkivera e-post och bilagor][1]
-* [Skapa uppgift][2]
-* [Om ärenden][3]
-
-[1]: ./archive
-[2]: ./create-task
-[3]: ../../../request/learn/index
 [4]: ../../../request/learn/create#fields
-
 [img1]: ../../../../media/loc/en/email/inbox-create-request.png

@@ -11,6 +11,9 @@ license: salesessentials, serviceessentials, marketingessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Regelmäßige Folgeaufgabe erstellen: /de/diary/learn/recurrence/create
+  - Regelmäßige Folgeaufgabe bearbeiten: /de/diary/learn/edit-follow-up#repeat
 language: de
 ---
 
@@ -39,13 +42,5 @@ Sie können eine wiederkehrende Folgeaufgabe auch direkt im Kalender auswählen 
 4. Klicken Sie auf **Ja**, um zu bestätigen.
 
 ![Dialogfeld Wiederkehrende Folgeaufgabe löschen -screenshot][img1]
-
-## Verwandte Inhalte
-
-* [Regelmäßige Folgeaufgabe erstellen][1]
-* [Regelmäßige Folgeaufgabe bearbeiten][2]
-
-[1]: ./create
-[2]: ../edit-follow-up#repeat
 
 [img1]: ../../../../media/loc/en/diary/delete-repeating-fo.png

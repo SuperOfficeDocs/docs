@@ -12,6 +12,10 @@ tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /en/diary/recurring-appointments
+related:
+  - Create a recurring follow-up: /en/diary/learn/recurrence/create
+  - Edit a repeating follow-up: /en/diary/learn/edit-follow-up#repeat
+  - Stop a repeating follow-up: /en/diary/learn/recurrence/stop
 language: en
 ---
 
@@ -57,13 +61,3 @@ If you select **Yearly**, you can specify on which day and month the follow-up s
 |---|---|---|
 | Day &lt;number&gt; of &lt;month&gt; | The follow-up takes place on the same date each time. | Day 13 of April. |
 | &lt;ordinal number&gt; &lt;weekday&gt; of &lt;month&gt; | The follow-up takes place on the same weekday each time. | The fourth Thursday of August. |
-
-## Related content
-
-* [Create a recurring follow-up][4]
-* [Edit a repeating follow-up][1]
-* [Stop a repeating follow-up][3]
-
-[1]: ../edit-follow-up#repeat
-[3]: ./stop
-[4]: ./create

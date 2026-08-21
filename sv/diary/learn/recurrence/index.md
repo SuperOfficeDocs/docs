@@ -11,6 +11,10 @@ license: salesessentials, serviceessentials, marketingessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Skapa en återkommande händelse: /sv/diary/learn/recurrence/create
+  - Redigera en återkommande händelse: /sv/diary/learn/edit-follow-up#repeat
+  - Stoppa en återkommande händelse: /sv/diary/learn/recurrence/stop
 language: sv
 ---
 
@@ -56,13 +60,3 @@ Om du väljer **Årlig** kan du ange vilken dag och månad händelsen ska upprep
 |---|---|---|
 | Dag &lt;number&gt; i &lt;month&gt; | Händelsen inträffar på samma datum varje gång. | Dag 13 i april. |
 | &lt;ordinal number&gt; &lt;weekday&gt; i &lt;month&gt; | Händelsen inträffar på samma veckodag varje gång. | Den fjärde torsdagen i augusti. |
-
-## Relaterat innehåll
-
-* [Skapa en återkommande händelse][4]
-* [Redigera en återkommande händelse][1]
-* [Stoppa en återkommande händelse][3]
-
-[1]: ../edit-follow-up#repeat
-[3]: ./stop
-[4]: ./create

@@ -11,6 +11,13 @@ tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /en/contact/learn/screen/index
+related:
+  - /en/contact/learn/create
+  - Edit privacy settings for a contact: /en/security/privacy/learn/edit-legal-base
+  - Move contacts: /en/contact/learn/move
+  - /en/contact/learn/merge-contacts
+  - Delete contacts: /en/contact/learn/delete
+  - /en/contact/learn/send-email
 language: en
 ---
 
@@ -48,23 +55,8 @@ Below the Contact card, [section tabs][16] provide quick access to information c
 | [Projects][14] | Shows all the projects where the active contact is a project member. |
 | [Relations][15] | Displays any connections existing between the current contact and other contacts or companies. |
 
-## Related content
-
-* [Create a new contact][2]
-* [Edit privacy settings for a contact][3]
-* [Move contacts][4]
-* [Merge contacts][5]
-* [Delete contacts][6]
-* [Send email to a contact][7]
-
 [2]: ./create
-[3]: ../../security/privacy/learn/edit-legal-base
-[4]: ./move
-[5]: ./merge-contacts
-[6]: ./delete
-[7]: ./send-email
 [8]: ../../company/learn/index
-
 [11]: ../../learn/section-tabs/activities-tab
 [12]: ../../learn/section-tabs/sales-tab
 [13]: ../../learn/section-tabs/requests-tab
@@ -75,5 +67,4 @@ Below the Contact card, [section tabs][16] provide quick access to information c
 [20]: ../../learn/basics/notes
 [21]: ../../customization/web-panels/admin/index#www
 [22]: ../../erp/learn/index
-
 [img3]: /media/loc/en/contact/contact-screen.png
