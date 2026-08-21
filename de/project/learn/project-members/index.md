@@ -11,6 +11,10 @@ tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /de/project/learn/screen/project-members-tab
+related:
+  - Projektmitglied hinzufügen: /de/project/learn/project-members/add
+  - Projektmitglied bearbeiten oder löschen: /de/project/learn/project-members/edit
+  - E-Mail an Projektmitglieder senden: /de/project/learn/project-members/send-email-to
 language: de
 ---
 
@@ -19,13 +23,3 @@ Projektmitglieder sind die Teilnehmer in einem Projekt. Für jedes Projektmitgli
 ## Bereichsregisterkarte Projektmitglieder
 
 Die Bereichsregisterkarte **Projektmitglieder** ist eine der Bereichsregisterkarten unten in der Ansicht Projekt. Hier finden Sie Informationen über Personen, die an dem aktuellen Projekt beteiligt sind. Zu jedem Projektmitglied werden Informationen zu Firma, Person, Name, Funktion im Projekt sowie Kommentare, E-Mail-Adresse und Telefonnummer angezeigt.
-
-## Verwandte Inhalte
-
-* [Projektmitglied hinzufügen][1]
-* [Projektmitglied bearbeiten oder löschen][3]
-* [E-Mail an Projektmitglieder senden][4]
-
-[1]: ./add
-[3]: ./edit
-[4]: ./send-email-to

@@ -12,6 +12,11 @@ tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
 redirect_from: /en/request/learn/howto/accept
+related:
+  - Reply to a customer: /en/request/learn/reply
+  - /en/request/learn/transfer
+  - Forward messages to external parties: /en/request/learn/forward
+  - Close request: /en/request/learn/close
 language: en
 ---
 
@@ -42,18 +47,6 @@ If you need more information before accepting, or use [Get next request in queue
     * Click <i class="ph ph-dots-three-circle-vertical" aria-label="Task menu"></i> and select **Accept**.
     * Or, in the **Owner** field, select yourself.
 
-## Related content
-
-* [Reply to a customer][2]
-* [Ask another request handler for help][3]
-* [Forward messages to external parties][4]
-* [Close request][5]
-
 [1]: ./index#open
-[2]: ./reply
-[3]: ./transfer
-[4]: ./forward
-[5]: ./close
 [6]: ../admin/next-in-queue
-
 [img2]: /media/loc/en/request/requests-accept.png

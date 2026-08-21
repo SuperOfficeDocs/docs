@@ -14,6 +14,9 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /sv/quote/learn/admin/product/configure
 userflow_index: true
+related:
+  - Lägg till produkt i en prislista: /sv/sale/admin/quote/price-list-and-products
+  - Lägg till/redigera produkt i offert: /sv/sale/learn/quote/create#add-products
 language: sv
 ---
 
@@ -62,13 +65,5 @@ Dessa inställningar gäller globalt för alla ERP-kopplingar via Quote Connecto
 * Alla fält behöver inte visas. Du kan dölja fält som inte behöver fyllas i, till exempel leverantörskod.
 * Ange tydliga ledtexter och hjälptexter för eventuella extrafält.
 * Ledtextändringar träder i kraft vid nästa inloggning.
-
-## Relaterat innehåll
-
-* [Lägg till produkt i en prislista][1]
-* [Lägg till/redigera produkt i offert][2]
-
-[1]: ./price-list-and-products
-[2]: ../../learn/quote/create#add-products
 
 [img1]: ../../../../media/loc/en/sale/configure-product-dialog.png

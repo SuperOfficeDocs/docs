@@ -10,6 +10,10 @@ content_type: concept
 tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Redigera en projektdeltagare: /sv/project/learn/project-members/add
+  - Redigera eller ta bort en projektdeltagare: /sv/project/learn/project-members/edit
+  - Skicka e-post till projektdeltagare: /sv/project/learn/project-members/send-email-to
 language: sv
 ---
 
@@ -18,13 +22,3 @@ Projektdeltagare är deltagare i ett projekt. För varje deltagare kan du få ti
 ## Detaljkortet Projektdeltagare
 
 **Projektdeltagare** är ett av detaljkorten längst ned på projektskärmen. Den innehåller information om deltagare i det aktiva projektet. För varje projektdeltagare visas information om företag, kontaktnamn, funktion inom projektet, eventuella kommentarer, e-postadress och telefonnummer.
-
-## Relaterat innehåll
-
-* [Redigera en projektdeltagare][1]
-* [Redigera eller ta bort en projektdeltagare][3]
-* [Skicka e-post till projektdeltagare][4]
-
-[1]: ./add
-[3]: ./edit
-[4]: ./send-email-to

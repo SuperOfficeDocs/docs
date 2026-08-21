@@ -13,6 +13,11 @@ platform: mobile
 redirect_from:
  - /en/mobile/superoffice-mobile/index
  - /en/mobile/overview
+related:
+  - Using the Diary in Mobile CRM: /en/mobile/diary/index
+  - Sales and pipeline management: /en/mobile/sale/index
+  - Responding to requests: /en/mobile/request/index
+  - Create documents and log meetings: /en/mobile/document/index
 language: en
 userflow_index: true
 ---
@@ -89,23 +94,11 @@ New to the app? Here are your first steps:
 
 Already logged in? [Explore the interface][4] or [customize your settings][5].
 
-## Related content
-
-* [Using the Diary in Mobile CRM][6]
-* [Sales and pipeline management][7]
-* [Responding to requests][8]
-* [Create documents and log meetings][9]
-
 [1]: ./login
 [2]: ./set-up-email
 [3]: ./caller-id
 [4]: ./interface-guide
 [5]: ./settings
-[6]: ./diary/index
-[7]: ./sale/index
-[8]: ./request/index
-[9]: ./document/index
 [16]: https://apps.apple.com/us/app/superoffice-mobile-crm/id1516435957
 [17]: https://play.google.com/store/apps/details?id=no.superoffice.mobile&hl=no&gl=US&pli=1
-
 [img1]: /media/loc/en/mobile/3-screens.png

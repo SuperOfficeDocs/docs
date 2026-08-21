@@ -11,6 +11,11 @@ tier: growth
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /sv/chat/learn/screen/index
+related:
+  - /sv/chat/learn/respond
+  - /sv/chat/learn/statistics
+  - Använda chattfunktionen som kund: /sv/chat/learn/as-customer
+  - Knyta chattsamtal till kontakten i SuperOffice: /sv/chat/learn/link-to-person
 language: sv
 ---
 
@@ -76,20 +81,9 @@ Här kan du matcha kunden i chatten mot en befintlig kontakt i SuperOffice eller
 
 Om kunden finns i SuperOffice kan du visa kontaktinformation, ärenden, försäljning, händelser och tidigare registrerade chattsessioner.
 
-## Relaterat innehåll
-
-* [Svara på ett chattsamtal][4]
-* [Visa chattstatistik][5]
-* [Använda chattfunktionen som kund][6]
-* [Knyta chattsamtal till kontakten i SuperOffice][7]
-
 [1]: ../../knowledge-base/learn/faq/index
 [3]: ../../knowledge-base/learn/reply-templates/index
 [4]: ./respond
-[5]: ./statistics
-[6]: ./as-customer
-[7]: ./link-to-person
 [11]: ./create-request
 [12]: ./transfer-to-agent
-
 [img1]: ../../../media/loc/en/chat/10-chat-mainpage.png

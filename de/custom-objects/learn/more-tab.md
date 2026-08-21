@@ -10,6 +10,11 @@ content_type: howto
 tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Benutzerdefinierte Felder Übersicht: /de/custom-objects/learn/index
+  - Benutzerdefinierte Felder hinzufügen: /de/custom-objects/admin/add-udef
+  - Zusätzliche Felder hinzufügen: /de/custom-objects/admin/create-extra-field
+  - Anpassen von Layouts mit dem Screen Designer: /de/customization/screen-designer/admin/add-layout
 language: de
 ---
 
@@ -52,18 +57,6 @@ Klicken Sie auf <i class="ph ph-pencil-simple" aria-label="Edit"></i>, um die In
 ## Zusätzliche Tipps
 
 * **Benutzerdefinierte Felder anpassen**: Das Hinzufügen benutzerdefinierter Felder oder die Anpassung von Layouts erfordert administrative Zugriffsrechte und in einigen Fällen eine **Development Tools**-Lizenz oder den **Core**-Plan.
-
-## Verwandte Inhalte
-
-* [Benutzerdefinierte Felder Übersicht][1]
-* [Benutzerdefinierte Felder hinzufügen][2]
-* [Zusätzliche Felder hinzufügen][3]
-* [Anpassen von Layouts mit dem Screen Designer][4]
-
-[1]: ./index
-[2]: ../admin/add-udef
-[3]: ../admin/create-extra-field
-[4]: ../../customization/screen-designer/admin/add-layout
 
 [img6]: ../../../media/loc/en/sale/sale-more.png
 [img4]: ../../../media/loc/en/project/project-more.png

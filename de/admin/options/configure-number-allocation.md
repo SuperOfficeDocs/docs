@@ -16,6 +16,8 @@ redirect_from:
   - /de/admin/options/learn/number-allocation/index
   - /de/admin/options/learn/number-allocation/configure
 userflow_index: true
+related:
+  - Standardwerte für neue Dokumentvorlagen festlegen: /de/document/templates/admin/document-template-defaults
 language: de
 ---
 
@@ -81,9 +83,3 @@ Die nachfolgende Tabelle gibt an, wie sich die verschiedenen Kombinationen der a
 | | x | | x | Es wird keine Nummer zugewiesen. Der Benutzer kann eine Nummer festlegen, sie muss jedoch eindeutig sein. Die Datenbank darf unbegrenzt viele leere Felder enthalten. |
 | | | x | x | Es wird keine Nummer zugewiesen und der Benutzer kann auch keine Nummer festlegen. Dies ist nützlich, wenn Zähler von Drittherstellern verwendet werden. |
 | | | x | | Es wird keine Nummer zugewiesen und der Benutzer kann auch keine Nummer festlegen. Die Datenbank darf nur ein leeres Feld haben. (Nicht empfohlen.) |
-
-## Verwandte Inhalte
-
-* [Standardwerte für neue Dokumentvorlagen festlegen][3]
-
-[3]: ../../document/templates/admin/document-template-defaults

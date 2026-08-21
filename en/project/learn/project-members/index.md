@@ -11,6 +11,10 @@ tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /en/project/learn/screen/project-members-tab
+related:
+  - Add a project member: /en/project/learn/project-members/add
+  - Edit or delete a project member: /en/project/learn/project-members/edit
+  - Send email to project members: /en/project/learn/project-members/send-email-to
 language: en
 ---
 
@@ -19,13 +23,3 @@ Project members are the participants in a project. For each member, you can acce
 ## Project members section tab
 
 **Project members** is one of the section tabs at the bottom of the Project screen. It contains information about participants in the active project. For each project member, information about company, contact name, function in the project, any comments, email address and telephone number is displayed.
-
-## Related content
-
-* [Add a project member][1]
-* [Edit or delete a project member][3]
-* [Send email to project members][4]
-
-[1]: ./add
-[3]: ./edit
-[4]: ./send-email-to

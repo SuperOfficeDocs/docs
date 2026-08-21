@@ -14,6 +14,9 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /de/quote/learn/admin/product/configure
 userflow_index: true
+related:
+  - Produkt zu einer Preisliste hinzufügen: /de/sale/admin/quote/price-list-and-products
+  - Produkt in einem Angebot hinzufügen/bearbeiten: /de/sale/learn/quote/create#add-products
 language: de
 ---
 
@@ -62,13 +65,5 @@ Diese Einstellungen gelten global für alle ERP-Verbindungen des Quote Connector
 * Es müssen nicht alle Felder angezeigt werden. Sie können Felder ausblenden, die Benutzer nicht ausfüllen müssen, wie z.B. Lieferantencode.
 * Verwenden Sie klare und beschreibende Bezeichnungen und QuickInfos für zusätzliche Felder.
 * Änderungen an den Bezeichnungen werden nach der nächsten Anmeldung wirksam.
-
-## Verwandte Inhalte
-
-* [Produkt zu einer Preisliste hinzufügen][1]
-* [Produkt in einem Angebot hinzufügen/bearbeiten][2]
-
-[1]: ./price-list-and-products
-[2]: ../../learn/quote/create#add-products
 
 [img1]: ../../../../media/loc/en/sale/configure-product-dialog.png

@@ -12,6 +12,10 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /da/request/learn/status/index
 userflow_index: true
+related:
+  - /da/request/admin/status/create
+  - /da/request/admin/status/delete
+  - Opsæt Svar næste sag i køen: /da/request/admin/next-in-queue
 language: da
 ---
 
@@ -28,13 +32,3 @@ Du kan f.eks. oprette en ny status, der hedder "Venter på svar", og som er en m
 | Standard | Angiver, om dette er en standardstatus for den interne status. |
 | Køstatus | Angiver, om sager med denne status skal anbringes i køen. Dette er relevant, hvis du bruger funktionen **Svar næste sag i køen** . |
 | Registrer tid som | Bruges til at rapportere tidsforbrug i forskellige faser af sagsbehandlingen. Systemet beregner den brugte tid i forhold til definerede "åbningstider" og hele 24-timers perioden. Vælg mellem: i kø og afventer behandling; i den interne beslutningsfase; i den eksterne beslutningsfase |
-
-## Relateret inhold
-
-* [Opret sagsstatus][1]
-* [Slet sagsstatus][2]
-* [Opsæt Svar næste sag i køen][3]
-
-[1]: ./create
-[2]: ./delete
-[3]: ../next-in-queue

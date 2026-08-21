@@ -10,6 +10,10 @@ content_type: howto
 tier: core
 platform: mobile
 redirect_from: /en/mobile/superoffice-mobile/project/create
+related:
+  - /en/mobile/project/update
+  - /en/mobile/diary/create-appointment
+  - /en/mobile/document/create
 language: en
 ---
 
@@ -34,13 +38,4 @@ After saving, you can:
 * Link sales and requests
 * Track progress using project stages
 
-## Related content
-
-* [Update project][1]
-* [Create follow-up][2]
-* [Create document][5]
-
-[1]: ./update
 [4]: ./update#add-project-member
-[2]: ../diary/create-appointment
-[5]: ../document/create

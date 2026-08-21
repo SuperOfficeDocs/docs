@@ -16,6 +16,8 @@ redirect_from:
   - /no/admin/options/learn/number-allocation/index
   - /no/admin/options/learn/number-allocation/configure
 userflow_index: true
+related:
+  - Angi standardverdier for nye dokumentmaler: /no/document/templates/admin/document-template-defaults
 language: no
 ---
 
@@ -81,9 +83,3 @@ Tabellen nedenfor viser hvilke konsekvenser ulike kombinasjoner av verdiene **Ti
 | | x | | x | Det tildeles ikke noe nummer. Brukeren kan angi et nummer selv, men det må være unikt. Databasen kan ha flere tomme felt. |
 | | | x | x | Det tildeles ikke noe nummer, og brukeren kan heller ikke angi et nummer selv. Nyttig ved bruk av tellere fra tredjepartsleverandører. |
 | | | x | | Det tildeles ikke noe nummer, og brukeren kan heller ikke angi et nummer selv. Databasen kan bare ha ett tomt felt. (Anbefales ikke.) |
-
-## Relatert innhold
-
-* [Angi standardverdier for nye dokumentmaler][3]
-
-[3]: ../../document/templates/admin/document-template-defaults

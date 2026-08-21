@@ -11,6 +11,10 @@ license: salesessentials, serviceessentials, marketingessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Archive emails and attachments: /en/email/inbox/learn/archive
+  - /en/email/inbox/learn/create-request
+  - About follow-ups: /en/diary/learn/follow-ups
 language: en
 ---
 
@@ -38,15 +42,5 @@ You can quickly create a follow-up task (todo) based on an email message in the 
 
 1. Click **Save** to create the task.
 
-## Related content
-
-* [Archive emails and attachments][1]
-* [Create request][2]
-* [About follow-ups][4]
-
-[1]: ./archive
-[2]: ./create-request
 [3]: ../../../diary/learn/create-follow-up#fields
-[4]: ../../../diary/learn/follow-ups
-
 [img1]: /media/loc/en/email/inbox-create-task.png

@@ -13,6 +13,10 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /sv/request/learn/status/index
 userflow_index: true
+related:
+  - /sv/request/admin/status/create
+  - /sv/request/admin/status/delete
+  - Konfigurera Hämta nästa ärende i kön: /sv/request/admin/next-in-queue
 language: sv
 ---
 
@@ -29,13 +33,3 @@ Du kan exempelvis skapa en ny status kallad "Väntar på svar" som en mer detalj
 | Standard | Anger om detta är en standardstatus för intern status. |
 | Köstatus | Anger om ärenden med denna status ska placeras i kön. Aktuellt om du använder funktionen **Hämta nästa ärende i kön**. |
 | Spåra tid som | Används för att rapportera hur mycket tid som går åt i olika faser av ärendehanteringen. Systemet beräknar den använda tiden i förhållande till både definierade "öppettider" och hela 24-timmarsperioden. Välj mellan: i kö och väntar på handläggning; i intern beslutsfas; i extern beslutsfas |
-
-## Relaterat innhåll
-
-* [Skapa ärendestatus][1]
-* [Ta bort ärendestatus][2]
-* [Konfigurera Hämta nästa ärende i kön][3]
-
-[1]: ./create
-[2]: ./delete
-[3]: ../next-in-queue

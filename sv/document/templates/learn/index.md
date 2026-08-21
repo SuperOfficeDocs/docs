@@ -9,6 +9,12 @@ so_version: 10.3
 content_type: concept
 tier: starter
 redirect_from: /sv/admin/lists/learn/document-template
+related:
+  - Redigera mall: /sv/document/templates/admin/update-template
+  - /sv/document/templates/learn/create
+  - Visa mallvariabler: /sv/document/templates/learn/template-variables
+  - /sv/knowledge-base/learn/reply-templates/template-variables
+  - Offertmallar: /sv/document/templates/learn/quote-templates
 language: sv
 ---
 
@@ -51,18 +57,7 @@ För att säkerställa att du kan kommunicera med dina kunder på deras eget spr
 1. [Lägg till och definiera dokumentmallen][6] under Inställningar och underhåll.
 1. Gör dokumentmallen tillgänglig för de [användargrupper][5] som behöver använda den.
 
-## Related content
-
-* [Redigera mall][2]
-* [Skapa ett malldokument][4]
-* [Visa mallvariabler][1]
-* [Mallvariabler (Service)][8]
-* [Offertmallar][7]
-
 [1]: ./template-variables
-[4]: ./create
 [2]: ../admin/update-template
 [6]: ../admin/link-template
 [5]: ../../../admin/lists/user-group-filtering
-[7]: ./quote-templates
-[8]: ../../../knowledge-base/learn/reply-templates/template-variables

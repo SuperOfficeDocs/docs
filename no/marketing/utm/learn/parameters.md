@@ -13,6 +13,11 @@ category: marketing
 topic: conversion
 audience: person
 audience_tooltip: SuperOffice Marketing
+related:
+  - Aktiver UTM-sporing for skjemainnsendinger: /no/marketing/utm/admin/set-up
+  - UTM-bygger for SuperOffice-skjemaer: /no/marketing/forms/learn/publish
+  - Google Analytics Campaign URL Builder: https://ga-dev-tools.google/campaign-url-builder
+  - UTM Builder: https://utmbuilder.net
 language: no
 ---
 
@@ -47,15 +52,4 @@ Følg disse retningslinjene for å sikre konsekvent og nøyaktig UTM-sporing i S
 
 For å lære hvordan disse parameterne brukes til å måle lead-kilder i SuperOffice CRM, se [Konverteringssporing][1].
 
-## Relatert innhold
-
-* [Aktiver UTM-sporing for skjemainnsendinger][2]
-* [UTM-bygger for SuperOffice-skjemaer][3]
-* [Google Analytics Campaign URL Builder][4]
-* [UTM Builder][5]
-
 [1]: ./index
-[2]: ../admin/set-up
-[3]: ../../forms/learn/publish
-[4]: https://ga-dev-tools.google/campaign-url-builder
-[5]: https://utmbuilder.net

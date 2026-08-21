@@ -15,6 +15,8 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /de/admin/lists/learn/privacy-source-add
 userflow_index: true
+related:
+  - Wie man Objekte zur Liste Datenschutz - Rechtsgrundlage hinzufügt: /de/security/privacy/admin/add-legal-base
 language: de
 ---
 
@@ -44,9 +46,4 @@ Die Liste **Datenschutz - Nachweis** enthält Optionen, die Benutzer auswählen,
 
 1. Klicken Sie auf **Speichern**, um die Änderungen zu speichern, oder auf **Abbrechen**, um sie zu verwerfen.
 
-## Verwandte Inhalte
-
-* [Wie man Objekte zur Liste Datenschutz - Rechtsgrundlage hinzufügt][2]
-
 [1]: ../../../document/templates/admin/link-template
-[2]: ./add-legal-base

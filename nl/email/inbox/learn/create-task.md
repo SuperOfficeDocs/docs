@@ -11,6 +11,10 @@ license: salesessentials, serviceessentials, marketingessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - E-mails en bijlagen archiveren: /nl/email/inbox/learn/archive
+  - /nl/email/inbox/learn/create-request
+  - Over vervolgactiviteiten: /nl/diary/learn/follow-ups
 language: nl
 ---
 
@@ -38,15 +42,5 @@ U kunt snel een vervolgactiviteit (taak) maken op basis van een e-mailbericht in
 
 1. Klik op **Opslaan** om de taak te maken.
 
-## Gerelateerde inhoud
-
-* [E-mails en bijlagen archiveren][1]
-* [Verzoek maken][2]
-* [Over vervolgactiviteiten][4]
-
-[1]: ./archive
-[2]: ./create-request
 [3]: ../../../diary/learn/create-follow-up#fields
-[4]: ../../../diary/learn/follow-ups
-
 [img1]: ../../../../media/loc/en/email/inbox-create-task.png

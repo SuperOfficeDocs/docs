@@ -10,8 +10,7 @@ category: integration
 topic: Zapier
 platform: Zapier
 related:
-  - title: "Insert the time your Zap runs into a field"
-    href: "https://help.zapier.com/hc/en-us/articles/8496275717261#adjusting-dates-and-times"
+  - Insert the time your Zap runs into a field: https://help.zapier.com/hc/en-us/articles/8496275717261#adjusting-dates-and-times
 language: en
 redirect_from: /en/automation/zapier/howto/datetime
 ---

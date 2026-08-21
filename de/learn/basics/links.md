@@ -13,6 +13,10 @@ audience_tooltip: SuperOffice CRM
 redirect_from:
   - /de/diary/learn/linking-documents-to-follow-ups
   - /de/project/learn/add-links
+related:
+  - Registerkarte Beziehungen: /de/learn/section-tabs/relations-tab
+  - Registerkarte Anfragen: /de/learn/section-tabs/activities-tab
+  - Registerkarte Personen: /de/learn/section-tabs/contacts-tab
 language: de
 ---
 
@@ -75,19 +79,9 @@ Beim Erstellen oder Bearbeiten einer Folgeaufgabe oder eines Dokuments können S
 
 ![Registerkarte für Links einer Folgeaufgabe -screenshot][img1]
 
-## Verwandte Inhalte
-
-* [Registerkarte Beziehungen][5]
-* [Registerkarte Anfragen][6]
-* [Registerkarte Personen][7]
-
 [1]: ../../project/learn/index
 [2]: ../../sale/learn/index
 [3]: ../../diary/learn/create-follow-up
 [4]: ../../document/learn/create
-[5]: ../section-tabs/relations-tab
-[6]: ../section-tabs/activities-tab
-[7]: ../section-tabs/contacts-tab
 [8]: ../../search-options/learn/find-screen
-
 [img1]: ../../../media/loc/en/diary/links.png

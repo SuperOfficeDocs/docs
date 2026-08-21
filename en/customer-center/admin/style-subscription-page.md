@@ -12,6 +12,9 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /en/customer-center/admin/index
 userflow_index: true
+related:
+  - /en/security/privacy/learn/send-privacy-confirmation-email
+  - Customer center overview: /en/customer-center/learn/index
 language: en
 ---
 
@@ -78,14 +81,6 @@ If you clear a field, the default SuperOffice text is restored automatically.
 You can also remove languages that you do not use. This limits the languages available on the subscription page and reduces maintenance. You can add removed languages again later if needed.
 
 Changes are not applied until you click **Save**.
-
-## Related content
-
-* [Send privacy confirmation email][2]
-* [Customer center overview][1]
-
-[1]: ../learn/index
-[2]: ../../security/privacy/learn/send-privacy-confirmation-email
 
 [img1]: /media/loc/en/customer-center/subscription-page-styling.png
 [img2]: /media/loc/en/customer-center/subscription-page-options.png

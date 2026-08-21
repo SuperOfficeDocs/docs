@@ -13,6 +13,12 @@ category: marketing
 audience: person
 audience_tooltip: SuperOffice Marketing
 redirect_from: /en/marketing/tracked-links/learn/add-tracked-link-to-msg
+related:
+  - Create tracked links: /en/marketing/tracked-links/learn/create-links
+  - Define link actions: /en/marketing/tracked-links/learn/define-link-actions
+  - Link to view message online: /en/marketing/editor/learn/add-link-to-display-message-in-browser
+  - Manage subscriptions: /en/marketing/recipients/learn/manage-email-subscriptions
+  - Unsubscribe: /en/marketing/editor/learn/add-unsubscribe-link
 language: en
 ---
 
@@ -42,18 +48,5 @@ You can add regular (untracked) links. For text links, click <i class="ph ph-lin
 
 If you later decide you want to track these links also, select the **Track all links** option under **Tracking** in Step 1: Setup. However, these links are tracked only for the mailing in question, and will not be available for other mailings or in flows.
 
-## Related content
-
-* [Create tracked links][5]
-* [Define link actions][6]
-* [Link to view message online][1]
-* [Manage subscriptions][3]
-* [Unsubscribe][4]
-
-[1]: ./add-link-to-display-message-in-browser
-[4]: ./add-unsubscribe-link
-[3]: ../../recipients/learn/manage-email-subscriptions
 [5]: ../../tracked-links/learn/create-links
-[6]: ../../tracked-links/learn/define-link-actions
-
 [img2]: /media/loc/en/marketing/tracked-links-in-editor.png

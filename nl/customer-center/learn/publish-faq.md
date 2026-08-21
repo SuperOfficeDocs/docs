@@ -8,6 +8,9 @@ author: Bergfrid Dias
 date: 06.10.2026
 content_type: howto
 tier: growth
+related:
+  - Klantportaal configureren: /nl/customer-center/learn/config
+  - Veelgestelde vragen publiceren: /nl/knowledge-base/learn/faq/publish
 language: nl
 ---
 
@@ -21,13 +24,5 @@ U kunt [veelgestelde vragen][1] maken waaruit uw servicemedewerkers kunnen kieze
 
 Uw klanten hebben zelfs toegang tot deze veelgestelde vragen via het klantportaal (webportaal) zonder contact met u op te nemen. Dit maakt het handig voor uw klanten om de klok rond antwoorden te vinden op veelgestelde vragen. Terwijl u minder verzoeken krijgt om af te handelen.
 
-## Gerelateerde inhoud
-
-* [Klantportaal configureren][2]
-* [Veelgestelde vragen publiceren][3]
-
 [1]: ../../knowledge-base/learn/faq/create
-[3]: ../../knowledge-base/learn/faq/publish
-[2]: ./config
-
 [img1]: ../../../media/loc/en/customer-center/set-up-a-faq.png

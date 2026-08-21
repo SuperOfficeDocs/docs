@@ -13,6 +13,10 @@ category: Service
 topic: chat
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Knyta chattsamtal till kontakten i SuperOffice: /sv/chat/learn/link-to-person
+  - /sv/chat/learn/respond
+  - Lär dig om ärenden: /sv/request/learn/index
 language: sv
 ---
 
@@ -23,13 +27,3 @@ Om du inte kan lösa problemet via chatten kan du skapa ett ärende som hanteras
 3. Chattloggen läggs till i ärendet, men du kan lägga till mer information här om det behövs.
 4. Klicka på **Spara**.
 5. Ett kort meddelande som innehåller ärende-ID läggs till i textfältet i chatten. Klicka på **Skicka** för att skicka meddelandet till kunden.
-
-## Relaterat innehåll
-
-* [Knyta chattsamtal till kontakten i SuperOffice][1]
-* [Svara på ett chattsamtal][3]
-* [Lär dig om ärenden][4]
-
-[1]: ./link-to-person
-[3]: ./respond
-[4]: ../../request/learn/index

@@ -13,6 +13,9 @@ topic: webhook
 audience: settings
 audience_tooltip: Settings and maintenance
 userflow_index: true
+related:
+  - /en/automation/webhook/admin/create
+  - Webhooks developer guide: /en/automation/webhook/dev/index
 language: en
 ---
 
@@ -86,13 +89,5 @@ The webhook returns to Active status and resumes normal delivery.
 ## Notifications in SuperOffice
 
 Notification recipients see an alert in SuperOffice when a webhook is automatically deactivated. Select the alert to open the Webhooks panel.
-
-## Related content
-
-* [Create webhook][1]
-* [Webhooks developer guide][2]
-
-[1]: ./create
-[2]: ../dev/index
 
 [img1]: ../../../../media/loc/en/admin/admin-system-design-webhook-overview.png

@@ -15,6 +15,9 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /en/security/privacy/learn/admin/add-consent-purpose
 userflow_index: true
+related:
+  - Privacy - Legal basis: /en/security/privacy/learn/index#legal-basis
+  - Privacy - Source: /en/security/privacy/learn/index#source
 language: en
 ---
 
@@ -51,11 +54,4 @@ Find out how to add and edit purposes for processing personal data, activate def
 
 1. Click <i class="ph ph-translate" aria-label="Translate"></i> next to a field to add new or edit existing [translations][1] of the field texts.
 
-## Related content
-
-* [Privacy - Legal basis][2]
-* [Privacy - Source][3]
-
 [1]: ../../../localization/learn/translate-fields
-[2]: ../learn/index#legal-basis
-[3]: ../learn/index#source

@@ -15,6 +15,8 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /no/admin/lists/learn/privacy-source-add
 userflow_index: true
+related:
+  - Slik legger du til forekomster i listen Personvern - Hjemmel: /no/security/privacy/admin/add-legal-base
 language: no
 ---
 
@@ -44,9 +46,4 @@ Listen **Personvern - Kilde** inneholder alternativer som brukere velger for å 
 
 1. Klikk **Lagre** for å lagre endringene eller **Avbryt** for å forkaste dem.
 
-## Relatert innhold
-
-* [Slik legger du til forekomster i listen Personvern - Hjemmel][2]
-
 [1]: ../../../document/templates/admin/link-template
-[2]: ./add-legal-base

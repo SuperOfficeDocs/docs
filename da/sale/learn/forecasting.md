@@ -11,6 +11,11 @@ license: salesessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Visualiser salgsmål i dashboard-ruder: /da/dashboard/learn/show-sales-targets
+  - Opret et nyt salg: /da/sale/learn/create
+  - Vis et udvalg som et diagram: /da/search-options/selection/learn/howto/display-as-charts
+  - Brug af skærmbilledet Find: /da/search-options/learn/find-screen
 language: da
 ---
 
@@ -72,18 +77,7 @@ For at demonstrere, hvordan du kan bruge funktionen Find til salgsprognoser, er 
 
 7. Tryk på Find nederst i skærmbilledet for at se alle dine åbne salgsmuligheder, der har en værdi over € 5000.
 
-## Relateret indhold
-
-* [Visualiser salgsmål i dashboard-ruder][7]
-* [Opret et nyt salg][1]
-* [Vis et udvalg som et diagram][6]
-* [Brug af skærmbilledet Find][5]
-
-[1]: ./create
 [5]: ../../search-options/learn/find-screen
-[6]: ../../search-options/selection/learn/howto/display-as-charts
-[7]: ../../dashboard/learn/show-sales-targets
-
 [img1]: ../../../media/loc/en/sale/forecasting.png
 [img7]: ../../../media/loc/en/search-options/typical-sale-searches.png
 [img8]: ../../../media/loc/en/search-options/find-screen.png

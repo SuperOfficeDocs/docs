@@ -9,6 +9,12 @@ so_version: 10.3
 content_type: concept
 tier: starter
 redirect_from: /nl/admin/lists/learn/document-template
+related:
+  - /nl/document/templates/admin/update-template
+  - /nl/document/templates/learn/create
+  - Sjabloonvariabelen bekijken: /nl/document/templates/learn/template-variables
+  - /nl/knowledge-base/learn/reply-templates/template-variables
+  - Offertesjablonen: /nl/document/templates/learn/quote-templates
 language: nl
 ---
 
@@ -51,18 +57,7 @@ Om ervoor te zorgen dat u (waar mogelijk) met uw klanten kunt communiceren in hu
 1. [De documentsjabloon toevoegen en definiëren][6] in Instellingen en onderhoud.
 1. De documentsjabloon beschikbaar maken voor de [gebruikersgroepen][5].
 
-## Gerelateerde inhoud
-
-* [Sjabloon bewerken][2]
-* [Een sjabloondocument maken][4]
-* [Sjabloonvariabelen bekijken][1]
-* [Sjabloonvariabelen (Service)][8]
-* [Offertesjablonen][7]
-
 [1]: ./template-variables
-[4]: ./create
 [2]: ../admin/update-template
 [6]: ../admin/link-template
 [5]: ../../../admin/lists/user-group-filtering
-[7]: ./quote-templates
-[8]: ../../../knowledge-base/learn/reply-templates/template-variables

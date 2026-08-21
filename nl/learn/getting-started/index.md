@@ -10,6 +10,16 @@ content_type: concept
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Aanmelden en SuperOffice CRM activeren: /nl/learn/getting-started/login
+  - Uw persoonlijke voorkeuren instellen: /nl/learn/getting-started/preferences
+  - Uw account instellen met de juiste taal: /nl/learn/getting-started/change-language
+  - /nl/learn/getting-started/connect-your-accounts
+  - Het hoofdscherm: /nl/learn/getting-started/main-screen/index
+  - Gegevens zoeken en vinden: /nl/search-options/learn/index
+  - Favorieten: /nl/learn/basics/fav
+  - Meer informatie over activiteiten (vervolgactiviteiten, documenten en e-mails): /nl/learn/basics/activity
+  - "Mobile CRM: Onderweg toegang tot uw CRM": /en/mobile/index
 language: nl
 ---
 
@@ -48,28 +58,5 @@ SuperOffice CRM integreert met gecertificeerde e-mailsystemen en stelt u in staa
 
 Ontdek de volledige mogelijkheden van SuperOffice CRM. Gebruik onze stapsgewijze handleidingen om aan de slag te gaan of ga direct naar een specifiek onderwerp in het menu om meer te leren. Druk op **F1** in uw systeem voor hulp die is afgestemd op uw versie en taal.
 
-## Gerelateerde inhoud
-
-* [Aanmelden en SuperOffice CRM activeren][6]
-* [Uw persoonlijke voorkeuren instellen][7]
-* [Uw account instellen met de juiste taal][15]
-* [Accounts koppelen][8]
-* [Het hoofdscherm][2]
-* [Gegevens zoeken en vinden][14]
-* [Favorieten][11]
-* [Meer informatie over activiteiten (vervolgactiviteiten, documenten en e-mails)][13]
-* [Mobile CRM: Onderweg toegang tot uw CRM][9]
-
 [1]: ./main-screen/navigator
-[2]: ./main-screen/index
-[6]: ./login
-[7]: ./preferences
-[8]: ./connect-your-accounts
-[9]: ../../../en/mobile/index
-
-[11]: ../basics/fav
-[13]: ../basics/activity
-[14]: ../../search-options/learn/index
-[15]: ./change-language
-
 [img1]: ../../../media/loc/en/learn/contact-screen-with-week.png

@@ -12,8 +12,7 @@ topic: SharePoint documents
 deployment: online
 platform: web
 related:
-  - title: "Steps"
-    href: "/integrations/sharepoint-documents/migrate/steps"
+  - Steps: /integrations/sharepoint-documents/migrate/steps
 language: en
 redirect_from: /en/document/cloud/sharepoint-documents/migrate/reference
 userflow_index: true

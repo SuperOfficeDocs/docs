@@ -17,6 +17,9 @@ redirect_from:
   - /en/ui/web-panels/index
   - /en/admin/lists/learn/web-panel
 userflow_index: true
+related:
+  - /en/customization/web-panels/admin/add-web-panel
+  - /en/customization/web-panels/dev/index
 language: en
 ---
 
@@ -80,11 +83,3 @@ Web panels dynamically load content based on CRM context and the URL defined for
 1. If the new URL is different from the previous one, the system sends a new request.
 1. The server responds with the appropriate web page: it receives the URL, computes the page using URL parameters, and returns the result.
 1. The panel renders the web page inside SuperOffice CRM.
-
-## Related content
-
-* [Add web panel][1]
-* [Building web panels][2]
-
-[1]: ./add-web-panel
-[2]: ../../../../en/customization/web-panels/dev/index

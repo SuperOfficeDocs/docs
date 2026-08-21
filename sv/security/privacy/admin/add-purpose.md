@@ -15,6 +15,9 @@ audience: settings
 audience_tooltip: Inställningar och underhåll
 redirect_from: /sv/security/privacy/learn/admin/add-consent-purpose
 userflow_index: true
+related:
+  - Integritet - Rättslig grund: /sv/security/privacy/learn/index#legal-basis
+  - Integritet - Källa: /sv/security/privacy/learn/index#source
 language: sv
 ---
 
@@ -51,11 +54,4 @@ Lär dig hur du lägger till och redigerar syften för behandling av personuppgi
 
 1. Klicka på <i class="ph ph-translate" aria-label="Translate"></i> bredvid ett fält för att lägga till nya eller redigera befintliga [översättningar][1] av fälttexterna.
 
-## Relaterat innehåll
-
-* [Integritet - Rättslig grund][2]
-* [Integritet - Källa][3]
-
 [1]: ../../../localization/learn/translate-fields
-[2]: ../learn/index#legal-basis
-[3]: ../learn/index#source

@@ -14,6 +14,12 @@ category: marketing
 audience: person
 audience_tooltip: SuperOffice Marketing
 redirect_from: /nl/marketing/tracked-links/learn/add-tracked-link-to-msg
+related:
+  - /nl/marketing/tracked-links/learn/create-links
+  - Linkacties definiëren: /nl/marketing/tracked-links/learn/define-link-actions
+  - Bericht in browser weer te geven: /nl/marketing/editor/learn/add-link-to-display-message-in-browser
+  - /nl/marketing/recipients/learn/manage-email-subscriptions
+  - Afmelden: /nl/marketing/editor/learn/add-unsubscribe-link
 language: nl
 ---
 
@@ -44,18 +50,5 @@ U kunt gewone (niet-gevolgde) links toevoegen. Voor tekstkoppelingen klikt u op 
 
 Als u later besluit deze koppelingen ook te volgen, selecteert u de optie **Alle koppelingen traceren** onder **Traceren** in Stap 1: Instellingen. Deze koppelingen worden echter alleen gevolgd voor de betreffende mailing en zijn niet beschikbaar voor andere mailings of in flows.
 
-## Gerelateerde inhoud
-
-* [Gevolgde links maken][5]
-* [Linkacties definiëren][6]
-* [Bericht in browser weer te geven][1]
-* [E-mailabonnementen beheren][3]
-* [Afmelden][4]
-
-[1]: ./add-link-to-display-message-in-browser
-[4]: ./add-unsubscribe-link
-[3]: ../../recipients/learn/manage-email-subscriptions
 [5]: ../../tracked-links/learn/create-links
-[6]: ../../tracked-links/learn/define-link-actions
-
 [img2]: ../../../../media/loc/en/marketing/tracked-links-in-editor.png

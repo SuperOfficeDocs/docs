@@ -12,6 +12,9 @@ tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
 redirect_from: /en/request/learn/howto/split-message
+related:
+  - Split a requests: /en/request/learn/split-request
+  - /en/request/learn/merge
 language: en
 ---
 
@@ -49,11 +52,4 @@ If a message contains two issues that should be handled separately, you can spli
 
 1. Click **OK**. The message is split and the new request opens.
 
-## Related content
-
-* [Split a requests][2]
-* [Merge requests][3]
-
 [1]: ./index#open
-[2]: ./split-request
-[3]: ./merge

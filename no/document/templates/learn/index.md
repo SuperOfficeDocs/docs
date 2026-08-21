@@ -9,6 +9,12 @@ so_version: 10.3
 content_type: concept
 tier: starter
 redirect_from: /no/admin/lists/learn/document-template
+related:
+  - Redigere eller erstatte en mal: /no/document/templates/admin/update-template
+  - /no/document/templates/learn/create
+  - Se på malvariabler: /no/document/templates/learn/template-variables
+  - /no/knowledge-base/learn/reply-templates/template-variables
+  - Tilbudsmaler: /no/document/templates/learn/quote-templates
 language: no
 ---
 
@@ -51,18 +57,7 @@ For å sikre at du kan kommunisere med kundene dine på deres eget språk (der d
 1. [Legg til og definer dokumentmalen][6] i Innstillinger og vedlikehold.
 1. Gjør dokumentmalen tilgjengelig for de [ønskede brukergruppene][5].
 
-## Relatert
-
-* [Redigere eller erstatte en mal][2]
-* [Opprette et maldokument][4]
-* [Se på malvariabler][1]
-* [Malvariabler (Service)][8]
-* [Tilbudsmaler][7]
-
 [1]: ./template-variables
-[4]: ./create
 [2]: ../admin/update-template
 [6]: ../admin/link-template
 [5]: ../../../admin/lists/user-group-filtering
-[7]: ./quote-templates
-[8]: ../../../knowledge-base/learn/reply-templates/template-variables

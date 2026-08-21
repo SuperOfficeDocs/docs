@@ -8,6 +8,9 @@ author: Bergfrid Dias
 date: 06.10.2026
 content_type: howto
 tier: growth
+related:
+  - /da/customer-center/learn/config
+  - Publicer en FAQ: /da/knowledge-base/learn/faq/publish
 language: da
 ---
 
@@ -21,13 +24,5 @@ Du kan [oprette ofte stillede spørgsmål][1] som dine servicemedarbejdere kan v
 
 Dine kunder kan endda få adgang til disse ofte stillede spørgsmål via kundecentret (webportalen) uden at kontakte dig. Dette gør det praktisk for dine kunder at finde svar på ofte stillede spørgsmål døgnet rundt. Mens du får færre anmodninger at håndtere.
 
-## Relateret indhold
-
-* [Konfigurer kundecenter][2]
-* [Publicer en FAQ][3]
-
 [1]: ../../knowledge-base/learn/faq/create
-[3]: ../../knowledge-base/learn/faq/publish
-[2]: ./config
-
 [img1]: ../../../media/loc/en/customer-center/set-up-a-faq.png

@@ -11,6 +11,9 @@ license: salesessentials, serviceessentials, marketingessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Create repeating follow-up: /en/diary/learn/recurrence/create
+  - Edit repeating follow-up: /en/diary/learn/edit-follow-up#repeat
 language: en
 ---
 
@@ -39,13 +42,5 @@ You can also stop a repeating follow-up by selecting it in the diary and deletin
 4. Click **Yes** to confirm.
 
 ![Delete repeating follow-up dialog -screenshot][img1]
-
-## Related content
-
-* [Create repeating follow-up][1]
-* [Edit repeating follow-up][2]
-
-[1]: ./create
-[2]: ../edit-follow-up#repeat
 
 [img1]: /media/loc/en/diary/delete-repeating-fo.png

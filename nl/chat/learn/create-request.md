@@ -13,6 +13,10 @@ category: Service
 topic: chat
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Chat koppelen aan SuperOffice-persoon: /nl/chat/learn/link-to-person
+  - /nl/chat/learn/respond
+  - Meer informatie over verzoeken: /nl/request/learn/index
 language: nl
 ---
 
@@ -23,13 +27,3 @@ Als u het probleem niet kunt oplossen via de chat, kunt u een verzoek maken dat 
 3. Het chatlogboek wordt aan het verzoek toegevoegd, maar u kunt hier indien noodzakelijk meer gegevens toevoegen.
 4. Klik op **Opslaan**.
 5. Een kort bericht met de verzoek-ID wordt toegevoegd aan het tekstveld in de chat. Klik op **Verzenden** om dit naar de klant te verzenden.
-
-## Gerelateerde inhoud
-
-* [Chat koppelen aan SuperOffice-persoon][1]
-* [Antwoorden op een chat][3]
-* [Meer informatie over verzoeken][4]
-
-[1]: ./link-to-person
-[3]: ./respond
-[4]: ../../request/learn/index

@@ -13,6 +13,10 @@ audience_tooltip: SuperOffice CRM
 redirect_from:
   - /en/project/learn/add-links
   - /en/diary/learn/linking-documents-to-follow-ups
+related:
+  - Relations section tab: /en/learn/section-tabs/relations-tab
+  - Requests section tab: /en/learn/section-tabs/activities-tab
+  - Contacts section tab: /en/learn/section-tabs/contacts-tab
 language: en
 ---
 
@@ -75,19 +79,9 @@ When creating or editing a follow-up or document, you can add links as follows:
 
 ![Links tab of a follow-up -screenshot][img1]
 
-## Related content
-
-* [Relations section tab][5]
-* [Requests section tab][6]
-* [Contacts section tab][7]
-
 [1]: ../../project/learn/index
 [2]: ../../sale/learn/index
 [3]: ../../diary/learn/create-follow-up
 [4]: ../../document/learn/create
-[5]: ../section-tabs/relations-tab
-[6]: ../section-tabs/activities-tab
-[7]: ../section-tabs/contacts-tab
 [8]: ../../search-options/learn/find-screen
-
 [img1]: /media/loc/en/diary/links.png

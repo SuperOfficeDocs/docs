@@ -10,6 +10,12 @@ content_type: howto
 tier: core
 audience: person
 audience_tooltip: SuperOffice Service
+related:
+  - /da/dashboard/learn/create
+  - Rediger dashboardruder: /da/dashboard/learn/working-with-tiles
+  - /da/request/learn/create
+  - Sagshåndtering: /da/request/learn/index#request-mgt
+  - Find anmodninger: /da/request/learn/find
 language: da
 ---
 
@@ -57,19 +63,6 @@ Viser sager, der tilhører dig, og som har status **Åbn**. Med andre ord indeho
 
 Her vises de sager, som ingen er tildelt ansvaret for. Hvis du vil [overtage ansvaret for en af sagerne][2], er det vigtigt, at du klikker på **Accepter sag**. Ellers kan en anden besvare sagen på samme tid.
 
-## Relateret indhold
-
-* [Opret et nyt dashboard][1]
-* [Rediger dashboardruder][7]
-* [Opret en sag][4]
-* [Sagshåndtering][6]
-* [Find anmodninger][5]
-
 [1]: ./create
 [2]: ../../request/learn/accept
-[4]: ../../request/learn/create
-[5]: ../../request/learn/find
-[6]: ../../request/learn/index#request-mgt
-[7]: ./working-with-tiles
-
 [img1]: ../../../media/loc/en/request/service-dashboard.png

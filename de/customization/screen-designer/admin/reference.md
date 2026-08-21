@@ -15,6 +15,14 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /de/customization/screen-designer/reference
 userflow_index: true
+related:
+  - /de/customization/screen-designer/admin/working-with-fields
+  - Adressformate: /en/api/localization/address/index
+  - Erfahren Sie mehr über Verkäufe: /en/sale/dev/index
+  - Erfahren Sie mehr über Projekte: /en/project/dev/index
+  - Erfahren Sie mehr über Anfragen: /en/request/dev/index
+  - Erfahren Sie mehr über Folgeaufgaben: /de/diary/learn/follow-ups
+  - Erfahren Sie mehr über Dokumente: /de/document/learn/index
 language: de
 ---
 
@@ -312,33 +320,17 @@ Für Details zum Wert jedes Feldes siehe [Datenbankreferenz][23].
 * Links
 * Mehr
 
-## Verwandte Inhalte
-
-* [Arbeiten mit Feldern][1]
-* [Adressformate][20]
-* [Erfahren Sie mehr über Verkäufe][11]
-* [Erfahren Sie mehr über Projekte][10]
-* [Erfahren Sie mehr über Anfragen][14]
-* [Erfahren Sie mehr über Folgeaufgaben][16]
-* [Erfahren Sie mehr über Dokumente][21]
-
-[1]: ./working-with-fields
 [2]: ../../../../en/database/tables/contact
 [3]: ../../../../en/database/tables/person
 [4]: ../../../../en/database/tables/sale
 [5]: ../../../../en/database/tables/project
 [6]: ../../../../en/database/tables/ticket
 [7]: ../../../../en/database/tables/appointment
-[11]: ../../../../en/sale/dev/index
-[10]: ../../../../en/project/dev/index
 [13]: ../../../request/admin/type/index
-[14]: ../../../../en/request/dev/index
 [15]: ../../../diary/learn/invitation/add-attendee#availability
-[16]: ../../../diary/learn/follow-ups
 [17]: ../../../../en/company/dev/index#interests
 [18]: ../../../../en/company/dev/index#categorylist
 [20]: ../../../../en/api/localization/address/index
-[21]: ../../../document/learn/index
 [22]: ../../../document/templates/learn/index
 [23]: ../../../../en/database/tables/document
 [24]: ../../../marketing/utm/learn/index

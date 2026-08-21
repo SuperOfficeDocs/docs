@@ -13,6 +13,11 @@ category: marketing
 topic: conversion
 audience: person
 audience_tooltip: SuperOffice Marketing
+related:
+  - UTM-Tracking für Formularübermittlungen aktivieren: /de/marketing/utm/admin/set-up
+  - UTM-Builder für SuperOffice-Formulare: /de/marketing/forms/learn/publish
+  - Google Analytics Campaign URL Builder: https://ga-dev-tools.google/campaign-url-builder
+  - UTM Builder: https://utmbuilder.net
 language: de
 ---
 
@@ -47,15 +52,4 @@ Befolgen Sie diese Richtlinien, um konsistentes und genaues UTM-Tracking in Supe
 
 Erfahren Sie, wie diese Parameter verwendet werden, um Lead-Quellen in SuperOffice CRM zu messen, unter [Conversion-Tracking][1].
 
-## Verwandte Inhalte
-
-* [UTM-Tracking für Formularübermittlungen aktivieren][2]
-* [UTM-Builder für SuperOffice-Formulare][3]
-* [Google Analytics Campaign URL Builder][4]
-* [UTM Builder][5]
-
 [1]: ./index
-[2]: ../admin/set-up
-[3]: ../../forms/learn/publish
-[4]: https://ga-dev-tools.google/campaign-url-builder
-[5]: https://utmbuilder.net

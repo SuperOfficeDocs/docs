@@ -11,6 +11,10 @@ license: salesessentials, serviceessentials, marketingessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Opret en gentagen opfølgning: /da/diary/learn/recurrence/create
+  - Rediger en gentagen opfølgning: /da/diary/learn/edit-follow-up#repeat
+  - Stop en gentagen opfølgning: /da/diary/learn/recurrence/stop
 language: da
 ---
 
@@ -56,13 +60,3 @@ Hvis du vælger **Årligt**, kan du angive, hvilken dag og måned opfølgningen 
 |---|---|---|
 | Dag &lt;number&gt; i &lt;month&gt; | Opfølgningen finder sted på samme dato hver gang. | Dag 13 i april. |
 | &lt;ordinal number&gt; &lt;weekday&gt; i &lt;month&gt; | Opfølgningen finder sted på samme ugedag hver gang. | Den fjerde torsdag i august. |
-
-## Relateret indhold
-
-* [Opret en gentagen opfølgning][4]
-* [Rediger en gentagen opfølgning][1]
-* [Stop en gentagen opfølgning][3]
-
-[1]: ../edit-follow-up#repeat
-[3]: ./stop
-[4]: ./create

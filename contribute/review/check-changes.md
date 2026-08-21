@@ -7,14 +7,10 @@ author: digitaldiina
 date: 08.10.2026
 content_type: howto
 related:
-  - title: "How to request a review"
-    href: "/contribute/review/request-review"
-  - title: "View and incorporate feedback on PR"
-    href: "/contribute/review/incorporate-feedback"
-  - title: "Mintlify deployment and CI/CD"
-    href: "/contribute/deployment"
-  - title: "Automated tests"
-    href: "/contribute/automated-tests"
+  - /contribute/review/request-review
+  - /contribute/review/incorporate-feedback
+  - /contribute/deployment
+  - /contribute/automated-tests
 language: en
 ---
 

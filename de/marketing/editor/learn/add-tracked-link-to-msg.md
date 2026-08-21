@@ -14,6 +14,12 @@ category: marketing
 audience: person
 audience_tooltip: SuperOffice Marketing
 redirect_from: /de/marketing/tracked-links/learn/add-tracked-link-to-msg
+related:
+  - /de/marketing/tracked-links/learn/create-links
+  - Verknüpfungsaktionen definieren: /de/marketing/tracked-links/learn/define-link-actions
+  - Die Mitteilung im Browser anzuzeigen: /de/marketing/editor/learn/add-link-to-display-message-in-browser
+  - /de/marketing/recipients/learn/manage-email-subscriptions
+  - Abmeldelink (DSGVO): /de/marketing/editor/learn/add-unsubscribe-link
 language: de
 ---
 
@@ -44,18 +50,5 @@ Sie können reguläre (nicht überwachte) Links hinzufügen. Für Textlinks klic
 
 Wenn Sie später feststellen, diese Links ebenfalls überwachen, wählen Sie die Option **Alle Links überwachen** unter **überwachen** im Schritt 1: Einstellungen. Diese Links werden jedoch nur für die entsprechende Kampagne überwacht und sind nicht für andere Kampagnen verfügbar oder in Flows.
 
-## Verwandte Inhalte
-
-* [Überwachte Links erstellen][5]
-* [Verknüpfungsaktionen definieren][6]
-* [Die Mitteilung im Browser anzuzeigen][1]
-* [E-Mail-Abonnements verwalten][3]
-* [Abmeldelink (DSGVO)][4]
-
-[1]: ./add-link-to-display-message-in-browser
-[4]: ./add-unsubscribe-link
-[3]: ../../recipients/learn/manage-email-subscriptions
 [5]: ../../tracked-links/learn/create-links
-[6]: ../../tracked-links/learn/define-link-actions
-
 [img2]: ../../../../media/loc/en/marketing/tracked-links-in-editor.png

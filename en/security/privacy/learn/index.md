@@ -11,6 +11,10 @@ tier: starter
 category: privacy
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - /en/security/privacy/admin/add-legal-base
+  - /en/security/privacy/admin/add-source
+  - Conversion tracking (UTM): /en/marketing/utm/learn/index
 language: en
 ---
 
@@ -63,13 +67,5 @@ If you select this option, only persons who have given their explicit consent to
 
 If you do *not* select this option, only persons with **E-marketing** set to **OFF** and legal basis set to **Withdrawn** will be filtered out of the recipients list. This works the same way as **No mailings**.
 
-## Related content
-
-* [Add items to the Privacy - Legal basis list][3]
-* [Add items to the Privacy - Source list][4]
-* [Conversion tracking (UTM)][5]
-
 [2]: ../admin/add-purpose
 [3]: ../admin/add-legal-base
-[4]: ../admin/add-source
-[5]: ../../../marketing/utm/learn/index

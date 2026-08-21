@@ -13,6 +13,8 @@ topic: licenses
 audience: settings
 audience_tooltip: Settings and maintenance
 userflow_index: true
+related:
+  - SuperOffice CRM Suite plans: /en/admin/license/crm-suite
 language: en
 ---
 
@@ -125,12 +127,6 @@ Customers can combine plans that best fit their needs. They can also add or chan
 
 You should keep this flexibility in mind when integrating with specific features and deciding your pricing model.
 
-## Related content
-
-* [SuperOffice CRM Suite plans][3]
-
 [1]: ./hidden-licenses
 [2]: ./module-licenses
-[3]: ../crm-suite
-
 [img1]: /media/loc/en/admin/licenses-prereq.png

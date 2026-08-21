@@ -13,6 +13,10 @@ topic: licenses
 audience: settings
 audience_tooltip: Einstellungen und Verwaltung
 userflow_index: true
+related:
+  - CRM und Lizenzen: /de/admin/license/index
+  - SuperOffice CRM Online-Benutzerpläne: /de/admin/license/user-plans
+  - /de/admin/license/activate
 language: de
 ---
 
@@ -94,15 +98,5 @@ Organisationen, die von **SuperOffice CRM Online** (dem modulbasierten Abonnemen
 | Sales Premium | Growth |
 | Service Premium | Growth |
 | Marketing Premium | Plus |
-
-## Verwandte Inhalte
-
-* [CRM und Lizenzen][1]
-* [SuperOffice CRM Online-Benutzerpläne][2]
-* [Lizenz aktivieren][3]
-
-[1]: ./index
-[2]: ./user-plans
-[3]: ./activate
 
 [img1]: ../../../media/loc/en/admin/licenses-suite-core-with-upgrade.png

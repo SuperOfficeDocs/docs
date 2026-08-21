@@ -12,6 +12,9 @@ tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
 redirect_from: /de/request/learn/howto/split-message
+related:
+  - /de/request/learn/split-request
+  - /de/request/learn/merge
 language: de
 ---
 
@@ -53,11 +56,4 @@ Wenn eine Nachricht zwei verschiedene Anliegen enthält, die getrennt bearbeitet
 
 1. Klicken Sie auf **OK**. Die Nachricht wird aufgeteilt und die neue Anfrage wird erstellt und geöffnet.
 
-## Verwandte Inhalte
-
-* [Anfrage aufteilen][2]
-* [Anfragen zusammenführen][3]
-
 [1]: ./index#open
-[2]: ./split-request
-[3]: ./merge

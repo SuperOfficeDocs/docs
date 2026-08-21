@@ -13,6 +13,10 @@ topic: licenses
 audience: settings
 audience_tooltip: Settings and maintenance
 userflow_index: true
+related:
+  - CRM and licenses: /en/admin/license/index
+  - SuperOffice CRM Online user plans: /en/admin/license/user-plans
+  - /en/admin/license/activate
 language: en
 ---
 
@@ -94,15 +98,5 @@ Organizations migrating from **SuperOffice CRM Online** (the module-based subscr
 | Sales Premium | Growth |
 | Service Premium | Growth |
 | Marketing Premium | Plus |
-
-## Related content
-
-* [CRM and licenses][1]
-* [SuperOffice CRM Online user plans][2]
-* [Activate license][3]
-
-[1]: ./index
-[2]: ./user-plans
-[3]: ./activate
 
 [img1]: /media/loc/en/admin/licenses-suite-core-with-upgrade.png

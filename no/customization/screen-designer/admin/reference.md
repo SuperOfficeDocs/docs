@@ -15,6 +15,14 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /no/customization/screen-designer/reference
 userflow_index: true
+related:
+  - /no/customization/screen-designer/admin/working-with-fields
+  - Adresseformater: /en/api/localization/address/index
+  - Lær mer om salg: /en/sale/dev/index
+  - Lær mer om prosjekter: /en/project/dev/index
+  - Lær mer om saker: /en/request/dev/index
+  - Lær mer om avtaler: /no/diary/learn/follow-ups
+  - Lær mer om dokument: /no/document/learn/index
 language: no
 ---
 
@@ -312,33 +320,17 @@ For detaljer om verdien av hvert felt, se [databasereferansen][23].
 * Koblinger
 * Mer
 
-## Relatert innhold
-
-* [Arbeide med felt][1]
-* [Adresseformater][20]
-* [Lær mer om salg][11]
-* [Lær mer om prosjekter][10]
-* [Lær mer om saker][14]
-* [Lær mer om avtaler][16]
-* [Lær mer om dokument][21]
-
-[1]: ./working-with-fields
 [2]: ../../../../en/database/tables/contact
 [3]: ../../../../en/database/tables/person
 [4]: ../../../../en/database/tables/sale
 [5]: ../../../../en/database/tables/project
 [6]: ../../../../en/database/tables/ticket
 [7]: ../../../../en/database/tables/appointment
-[11]: ../../../../en/sale/dev/index
-[10]: ../../../../en/project/dev/index
 [13]: ../../../request/admin/type/index
-[14]: ../../../../en/request/dev/index
 [15]: ../../../diary/learn/invitation/add-attendee#availability
-[16]: ../../../diary/learn/follow-ups
 [17]: ../../../../en/company/dev/index#interests
 [18]: ../../../../en/company/dev/index#categorylist
 [20]: ../../../../en/api/localization/address/index
-[21]: ../../../document/learn/index
 [22]: ../../../document/templates/learn/index
 [23]: ../../../../en/database/tables/document
 [24]: ../../../marketing/utm/learn/index

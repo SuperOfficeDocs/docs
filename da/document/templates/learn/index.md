@@ -9,6 +9,12 @@ so_version: 10.3
 content_type: concept
 tier: starter
 redirect_from: /da/admin/lists/learn/document-template
+related:
+  - Rediger eller erstat skabelon: /da/document/templates/admin/update-template
+  - /da/document/templates/learn/create
+  - Visning af skabelonvariabler: /da/document/templates/learn/template-variables
+  - /da/knowledge-base/learn/reply-templates/template-variables
+  - Tilbudsskabeloner: /da/document/templates/learn/quote-templates
 language: da
 ---
 
@@ -51,18 +57,7 @@ For at sikre, at du kan kommunikere med dine kunder på deres eget sprog (hvor d
 1. [Tilføj og definere dokumentskabelonen][6] i Indstillinger og vedligeholdelse.
 1. [Gør skabelonen tilgængelig][5] for de ønskede brugergrupper.
 
-## Relateret
-
-* [Rediger eller erstat skabelon][2]
-* [Oprettelse af et skabelondokument][4]
-* [Visning af skabelonvariabler][1]
-* [Skabelonvariabler (Service)][8]
-* [Tilbudsskabeloner][7]
-
 [1]: ./template-variables
-[4]: ./create
 [2]: ../admin/update-template
 [6]: ../admin/link-template
 [5]: ../../../admin/lists/user-group-filtering
-[7]: ./quote-templates
-[8]: ../../../knowledge-base/learn/reply-templates/template-variables

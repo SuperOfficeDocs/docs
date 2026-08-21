@@ -7,8 +7,7 @@ author: digitaldiina
 date: 07.09.2026
 content_type: reference
 related:
-  - title: "Documentation style guide"
-    href: "/contribute/style-guide/index"
+  - /contribute/style-guide/index
 language: en
 ---
 

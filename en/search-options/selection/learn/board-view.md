@@ -11,6 +11,16 @@ license: salespremium, servicepremium, marketingessentials
 tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Create a selection: /en/search-options/selection/learn/create
+  - Create a sale / fields in the Sale card: /en/sale/learn/create
+  - Configure sale stages: /en/sale/admin/sale-stage
+  - Create a request / request properties: /en/request/learn/create
+  - /en/request/admin/status/create
+  - /en/request/admin/category/create
+  - Create a project / fields in the Project card: /en/project/learn/create
+  - Configure project status: /en/project/admin/project-status
+  - Configure project types: /en/project/admin/project-type
 language: en
 ---
 
@@ -225,30 +235,8 @@ Use grouping creatively to organize and act on data efficiently.
 
 * **Save layout per use case:** Select **Save settings for current selection only** if you want to preserve a specific board layout, filters, or grouping for one selection only.
 
-## Related content
-
-* [Create a selection][1]
-* [Create a sale / fields in the Sale card][12]
-* [Configure sale stages][13]
-* [Create a request / request properties][14]
-* [Create request status][15]
-* [Create request category][16]
-* [Create a project / fields in the Project card][17]
-* [Configure project status][18]
-* [Configure project types][19]
-
-[1]: ./create
 [2]: ./index
 [11]: ../../../learn/getting-started/main-screen/side-panel
-[12]: ../../../sale/learn/create
-[13]: ../../../sale/admin/sale-stage
-[14]: ../../../request/learn/create
-[15]: ../../../request/admin/status/create
-[16]: ../../../request/admin/category/create
-[17]: ../../../project/learn/create
-[18]: ../../../project/admin/project-status
-[19]: ../../../project/admin/project-type
-
 [img1]: /media/loc/en/search-options/board-view-toggle.png
 [img2]: /media/loc/en/search-options/board-view.png
 [img3]: /media/loc/en/search-options/board-view-preview-contact-on-hover.png

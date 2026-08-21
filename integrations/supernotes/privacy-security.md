@@ -9,12 +9,9 @@ content_type: reference
 category: integration
 topic: SuperNotes
 related:
-  - title: "Getting started - Setup and basic usage"
-    href: "/integrations/supernotes/getting-started"
-  - title: "Settings - Configuration options"
-    href: "/integrations/supernotes/settings"
-  - title: "Workspaces - Team collaboration and workspace management"
-    href: "/integrations/supernotes/workspaces"
+  - Getting started - Setup and basic usage: /integrations/supernotes/getting-started
+  - Settings - Configuration options: /integrations/supernotes/settings
+  - Workspaces - Team collaboration and workspace management: /integrations/supernotes/workspaces
 language: en
 userflow_index: true
 ---

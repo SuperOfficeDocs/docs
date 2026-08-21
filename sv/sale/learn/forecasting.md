@@ -12,6 +12,11 @@ license: salesessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Visualisera försäljningsmål i instrumentpanelsbrickor: /sv/dashboard/learn/show-sales-targets
+  - Skapa en ny försäljning: /sv/sale/learn/create
+  - Visa ett urval som ett diagram: /sv/search-options/selection/learn/howto/display-as-charts
+  - Använda Sök-skärmen: /sv/search-options/learn/find-screen
 language: sv
 ---
 
@@ -73,18 +78,7 @@ För att visa hur du kan använda Sök-funktionen för försäljningsprognoser �
 
 7. Klicka på **Sök** längst ner på skärmen för att se alla öppna försäljningsmöjligheter med ett värde större än 5 000 €.
 
-## Relaterat innehåll
-
-* [Visualisera försäljningsmål i instrumentpanelsbrickor][7]
-* [Skapa en ny försäljning][1]
-* [Visa ett urval som ett diagram][6]
-* [Använda Sök-skärmen][5]
-
-[1]: ./create
 [5]: ../../search-options/learn/find-screen
-[6]: ../../search-options/selection/learn/howto/display-as-charts
-[7]: ../../dashboard/learn/show-sales-targets
-
 [img1]: ../../../media/loc/en/sale/forecasting.png
 [img7]: ../../../media/loc/en/search-options/typical-sale-searches.png
 [img8]: ../../../media/loc/en/search-options/find-screen.png

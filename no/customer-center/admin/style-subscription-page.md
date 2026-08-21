@@ -12,6 +12,9 @@ audience: settings
 audience_tooltip: Innstillinger og vedlikehold
 redirect_from: /no/customer-center/admin/index
 userflow_index: true
+related:
+  - /no/security/privacy/learn/send-privacy-confirmation-email
+  - Oversikt over Kundeside: /no/customer-center/learn/index
 language: no
 ---
 
@@ -78,14 +81,6 @@ Hvis du tømmer et felt, gjenopprettes standard SuperOffice-teksten automatisk.
 Du kan også fjerne språk som du ikke bruker. Dette begrenser språkene som er tilgjengelige på abonnementssiden og reduserer vedlikeholdet. Du kan legge til fjernede språk igjen senere om nødvendig.
 
 Endringer brukes ikke før du klikker på **Lagre**.
-
-## Relatert innhold
-
-* [Send e-postbekreftelse for personvern][2]
-* [Oversikt over Kundeside][1]
-
-[1]: ../learn/index
-[2]: ../../security/privacy/learn/send-privacy-confirmation-email
 
 [img1]: ../../../media/loc/en/customer-center/subscription-page-styling.png
 [img2]: ../../../media/loc/en/customer-center/subscription-page-options.png

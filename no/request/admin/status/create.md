@@ -13,6 +13,8 @@ audience: settings
 audience_tooltip: Innstillinger og vedlikehold
 redirect_from: /no/request/learn/status/create
 userflow_index: true
+related:
+  - Sett opp Hent neste sak i køen: /no/request/admin/next-in-queue
 language: no
 ---
 
@@ -43,9 +45,3 @@ language: no
 1. Klikk på **Lagre**. Saksstatusen opprettes.
 
 1. Hvis nødvendig, juster plasseringen av statusen ved hjelp av pilknappene under listen over statuser. Rekkefølgen her bestemmer plasseringen i **Status**-listen når du oppretter en ny sak. Plasser de mest brukte statusene øverst.
-
-## Relatert innhold
-
-* [Sett opp Hent neste sak i køen][1]
-
-[1]: ../next-in-queue

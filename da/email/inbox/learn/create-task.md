@@ -11,6 +11,10 @@ license: salesessentials, serviceessentials, marketingessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Arkiver e-mails og vedhæftede filer: /da/email/inbox/learn/archive
+  - /da/email/inbox/learn/create-request
+  - Om opfølginger: /da/diary/learn/follow-ups
 language: da
 ---
 
@@ -38,15 +42,5 @@ Du kan hurtigt oprette en opfølgningsopgave baseret på en e-mail i SuperOffice
 
 1. Klik på **Gem** for at oprette opgaven.
 
-## Relateret indhold
-
-* [Arkiver e-mails og vedhæftede filer][1]
-* [Opret sag][2]
-* [Om opfølginger][4]
-
-[1]: ./archive
-[2]: ./create-request
 [3]: ../../../diary/learn/create-follow-up#fields
-[4]: ../../../diary/learn/follow-ups
-
 [img1]: ../../../../media/loc/en/email/inbox-create-task.png

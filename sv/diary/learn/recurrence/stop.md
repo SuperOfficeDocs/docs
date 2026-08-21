@@ -11,6 +11,9 @@ license: salesessentials, serviceessentials, marketingessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Skapa återkommande händelse: /sv/diary/learn/recurrence/create
+  - Redigera återkommande händelse: /sv/diary/learn/edit-follow-up#repeat
 language: sv
 ---
 
@@ -39,13 +42,5 @@ Du kan också stoppa en upprepande uppföljning genom att välja den i dagboken 
 4. Klicka på **Ja** för att bekräfta.
 
 ![Delete repeating follow-up dialog -screenshot][img1]
-
-## Relaterat innehåll
-
-* [Skapa återkommande händelse][1]
-* [Redigera återkommande händelse][2]
-
-[1]: ./create
-[2]: ../edit-follow-up#repeat
 
 [img1]: ../../../../media/loc/en/diary/delete-repeating-fo.png

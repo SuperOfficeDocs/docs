@@ -12,6 +12,8 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /nl/request/learn/status/create
 userflow_index: true
+related:
+  - /nl/request/admin/next-in-queue
 language: nl
 ---
 
@@ -42,9 +44,3 @@ language: nl
 1. Klik op **Opslaan**. De verzoekstatus wordt gemaakt.
 
 1. Pas indien nodig de positie van de status aan met behulp van de pijlknoppen onder de lijst met statussen. De rang geeft hier de volgorde aan in de keuzelijst **Status** wanneer er een nieuw verzoek wordt gemaakt. Plaats de meest gebruikte statussen bovenaan.
-
-## Gerelateerde inhoud
-
-* [Hoe 'Volgende verzoek in wachtrij ophalen' instellen][1]
-
-[1]: ../next-in-queue

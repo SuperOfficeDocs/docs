@@ -12,6 +12,8 @@ license: salesessentials, serviceessentials, marketingessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - SuperOffice Inbox: /en/email/inbox/learn/setup
 language: en
 ---
 
@@ -21,11 +23,5 @@ language: en
     * The next time you click **Inbox** in the navigator of SuperOffice CRM, the chosen mail client will open.
 
 ![Local settings dialog showing email client options -screenshot][img1]
-
-## Related content
-
-* [SuperOffice Inbox][1]
-
-[1]: ../inbox/learn/setup
 
 [img1]: /media/loc/en/email/local-settings-email-client.png

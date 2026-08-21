@@ -13,6 +13,16 @@ redirect_from:
   - /en/contact/overview
   - /en/contact/howto/index
   - /en/contact/reference/index
+related:
+  - Company - overview (contact table): /en/company/index
+  - Documents - overview: /en/document/index
+  - Follow-ups - overview (appointment table): /en/diary/index
+  - Projects - overview: /en/project/index
+  - Sales - overview: /en/sale/index
+  - Working with contacts in CRMScript: /en/automation/crmscript/howto/contact/index
+  - Working with contacts in web NetServer services and REST: /en/api/web-services/howto/contact/index
+  - Working with contacts at the data layer (entities): /en/api/entities/howto/contact/index
+  - Addresses: /en/api/localization/address/index
 language: en
 ---
 
@@ -139,37 +149,13 @@ Without the link record, the picture will not appear.
 * [Display person image (ImageUtility)][23]
 * [Display image from BLOB table (web services)][24]
 
-## Related content
-
-* [Company - overview][5] (contact table)
-* [Documents - overview][1]
-* [Follow-ups - overview][2] (appointment table)
-* [Projects - overview][3]
-* [Sales - overview][4]
-* [Working with contacts in CRMScript][10]
-* [Working with contacts in web NetServer services and REST][25]
-* [Working with contacts at the data layer (entities)][26]
-* [Addresses][6]
-
-[1]: ../../document/index
-[2]: ../../diary/index
-[3]: ../../project/index
-[4]: ../../sale/index
-[5]: ../../company/index
-[6]: /en/api/localization/address/index
-
-[10]: /en/automation/crmscript/howto/contact/index
 [11]: /en/database/getting-started#the-main-tables
 [12]: /en/database/tables/associate
 [13]: /en/database/tables/binaryobject
 [14]: /en/database/tables/binaryobjectlink
-
 [19]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/caching/associate-cache.mdx
 [21]: /en/api/web-services/howto/contact/get-person-image-rest
 [22]: /en/api/web-services/howto/contact/update-person-image-rest
 [23]: /en/api/web-services/howto/contact/display-person-image-ws
 [24]: /en/api/web-services/howto/contact/display-image-from-blob-table-services
-[25]: /en/api/web-services/howto/contact/index
-[26]: /en/api/entities/howto/contact/index
-
 [img1]: /media/loc/en/contact/edit-person.png

@@ -13,6 +13,10 @@ category: Service
 topic: chat
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Tilknytning af chatsamtale til person i SuperOffice: /da/chat/learn/link-to-person
+  - /da/chat/learn/respond
+  - Få mere at vide om sager: /da/request/learn/index
 language: da
 ---
 
@@ -23,13 +27,3 @@ Hvis du ikke kan løse problemet via chatten, kan du oprette en sag, der skal h�
 3. Chatloggen føjes til sagen, men du kan tilføje flere oplysninger her, hvis det er nødvendigt.
 4. Klik på **Gem**.
 5. En kort besked, der indeholder sags-id'et, føjes til tekstfeltet i chatten. Klik på **Send** for at sende dette til kunden.
-
-## Relateret indhold
-
-* [Tilknytning af chatsamtale til person i SuperOffice][1]
-* [Svare på en chatsamtale][3]
-* [Få mere at vide om sager][4]
-
-[1]: ./link-to-person
-[3]: ./respond
-[4]: ../../request/learn/index

@@ -12,6 +12,10 @@ tier: starter
 audience: person
 audience_tooltip: SuperOffice Service
 redirect_from: /en/request/learn/howto/flag-message
+related:
+  - Create request: /en/request/learn/create
+  - Reply to customer: /en/request/learn/reply
+  - /en/request/learn/edit-message
 language: en
 ---
 
@@ -33,15 +37,5 @@ To make it easier to find and sort multiple messages in a request, you can flag 
 
 ![Options to filter list of messages on a request -screenshot][img1]
 
-## Related content
-
-* [Create request][2]
-* [Reply to customer][3]
-* [Edit message][4]
-
 [1]: ./index#open
-[2]: ./create
-[3]: ./reply
-[4]: ./edit-message
-
 [img1]: /media/loc/en/request/filter-messages.png

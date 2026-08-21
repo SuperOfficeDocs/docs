@@ -11,6 +11,10 @@ tier: starter
 category: privacy
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - /da/security/privacy/admin/add-legal-base
+  - /da/security/privacy/admin/add-source
+  - Konverteringssporing (UTM): /da/marketing/utm/learn/index
 language: da
 ---
 
@@ -63,13 +67,5 @@ Hvis du vælger denne indstilling, vil kun personer, der har givet deres udtrykk
 
 Hvis du *ikke* vælger denne indstilling, vil kun personer med **E-markedsføring** indstillet til **OFF** og retsgrundlag indstillet til **Trukket tilbage** blive filtreret fra modtagerlisten. Dette fungerer på samme måde som **Ingen udsendelser**.
 
-## Relateret indhold
-
-* [Tilføjelse af forekomster på listen Personbeskyttelse - Retsgrundlag][3]
-* [Tilføjelse af forekomster på listen Personbeskyttelse - Kilde][4]
-* [Konverteringssporing (UTM)][5]
-
 [2]: ../admin/add-purpose
 [3]: ../admin/add-legal-base
-[4]: ../admin/add-source
-[5]: ../../../marketing/utm/learn/index

@@ -13,6 +13,10 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /en/service/sms/index
 userflow_index: true
+related:
+  - How to set up an outgoing SMS connector: /en/marketing/sms/it/set-up
+  - SMS configuration for mailings: /en/marketing/mailing/admin/define-settings-for-mailings#sms
+  - About SMS mailboxes: /en/email/admin/mailbox/index#sms-in
 language: en
 ---
 
@@ -36,14 +40,5 @@ To [configure SMS settings][6], go to **Settings and maintenance** > **Requests*
 
 Even if the plugin only supports sending SMS, you must still configure this mailbox. This is where you define settings such as the category for incoming messages.
 
-## Related content
-
-* [How to set up an outgoing SMS connector][4]
-* [SMS configuration for mailings][1]
-* [About SMS mailboxes][5]
-
-[1]: ../../mailing/admin/define-settings-for-mailings#sms
 [3]: /en/automation/crmscript/index
-[4]: ./set-up
-[5]: ../../../email/admin/mailbox/index#sms-in
 [6]: ../../../email/admin/mailbox/create-sms-mailbox

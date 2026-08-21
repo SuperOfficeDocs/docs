@@ -12,6 +12,12 @@ category: sale
 topic: lead
 audience: person
 audience_tooltip: SuperOffice Sales
+related:
+  - Legg til nytt dashbord: /no/dashboard/learn/create
+  - /no/dashboard/learn/working-with-tiles
+  - /no/lead/learn/index
+  - Konverteringssporing (UTM-data): /no/marketing/utm/learn/index
+  - Les mer om kriterier: /no/search-options/learn/search-criteria
 language: no
 ---
 
@@ -69,20 +75,6 @@ Hvis du bruker UTM-sporing (krever **Marketing Premium** eller **Growth**-planen
 * Legg til **filtre** (for eksempel etter medarbeider eller land) for å fokusere på de viktigste leadene.
 * Bruk **dynamiske utvalg som figurer** når du trenger lister i stedet for diagrammer.
 * Opprett egne dashbord for **markedsføring**, **lead nurturing** og **salg** basert på behov.
-
-## Relatert innhold
-
-* [Legg til nytt dashbord][5]
-* [Arbeide med figurer][6]
-* [Leadhåndtering][7]
-* [Konverteringssporing (UTM-data)][8]
-* [Les mer om kriterier][2]
-
-[2]: ../../search-options/learn/search-criteria
-[5]: ./create
-[6]: ./working-with-tiles
-[7]: ../../lead/learn/index
-[8]: ../../marketing/utm/learn/index
 
 [img1]: ../../../media/loc/en/dashboard/lead-qualification.png
 [img2]: ../../../media/loc/en/dashboard/conversion-dashboard.png

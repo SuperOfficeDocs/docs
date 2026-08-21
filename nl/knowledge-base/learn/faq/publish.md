@@ -12,6 +12,11 @@ tier: growth
 audience: person
 audience_tooltip: SuperOffice Service
 redirect_from: /nl/faq/learn/publish
+related:
+  - Werken met de workflow: /nl/knowledge-base/learn/faq/workflow
+  - Meer informatie over verzoeken: /nl/request/learn/index
+  - Veelgestelde vragen maken: /nl/knowledge-base/learn/faq/create
+  - Meerdere talen instellen: /nl/localization/learn/customer-languages
 language: nl
 ---
 
@@ -29,14 +34,5 @@ Wanneer een verzoekbehandelaar [een suggestie maakt voor een item in veelgesteld
 1. Voer eventuele andere gewenste wijzigingen door via het tabblad **Eigenschappen**.
 1. Klik op **OK**. Het item in Veelgestelde vragen is nu klaar voor gebruik.
 
-## Gerelateerde inhoud
-
-* [Werken met de workflow][3]
-* [Meer informatie over verzoeken][2]
-* [Veelgestelde vragen maken][1]
-* [Meerdere talen instellen][4]
-
 [1]: ./create
-[2]: ../../../request/learn/index
-[3]: ./workflow
 [4]: ../../../localization/learn/customer-languages

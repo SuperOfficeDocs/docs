@@ -11,6 +11,11 @@ license: salesessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Visualize sales targets in dashboard tiles: /en/dashboard/learn/show-sales-targets
+  - Create a new sale: /en/sale/learn/create
+  - Display a selection as a chart: /en/search-options/selection/learn/howto/display-as-charts
+  - Using the Find screen: /en/search-options/learn/find-screen
 language: en
 ---
 
@@ -72,18 +77,7 @@ To demonstrate how you can use the Find feature for sales forecasting, here is a
 
 7. Press **Find** at the bottom of the screen to see all your open sales opportunities with a value larger than €5000.
 
-## Related content
-
-* [Visualize sales targets in dashboard tiles][7]
-* [Create a new sale][1]
-* [Display a selection as a chart][6]
-* [Using the Find screen][5]
-
-[1]: ./create
 [5]: ../../search-options/learn/find-screen
-[6]: ../../search-options/selection/learn/howto/display-as-charts
-[7]: ../../dashboard/learn/show-sales-targets
-
 [img1]: /media/loc/en/sale/forecasting.png
 [img7]: /media/loc/en/search-options/typical-sale-searches.png
 [img8]: /media/loc/en/search-options/find-screen.png

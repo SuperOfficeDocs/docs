@@ -13,6 +13,10 @@ audience: settings
 audience_tooltip: Innstillinger og vedlikehold
 redirect_from: /no/request/learn/status/index
 userflow_index: true
+related:
+  - /no/request/admin/status/create
+  - /no/request/admin/status/delete
+  - Sett opp Hent neste sak i køen: /no/request/admin/next-in-queue
 language: no
 ---
 
@@ -31,13 +35,3 @@ For eksempel kan du opprette en ny status kalt "Venter på svar" som en mer deta
 | Standard | Angir om dette er standardstatusen for den interne statusen. |
 | Køstatus | Angir om saker med denne statusen skal plasseres i køen. Dette er relevant hvis du bruker funksjonen **Hent neste sak i køen**. |
 | Registrer tid som | Brukes til å rapportere tidsbruk i ulike faser av saksbehandlingen. Systemet beregner tidsbruk både ut fra fastsatte "åpningstider" og et 24-timers døgn. Velg mellom: i kø og venter på behandling, på internt beslutningsstadium, eller på eksternt beslutningsstadium. |
-
-## Relatert innhold
-
-* [Opprette saksstatus][1]
-* [Slette saksstatus][2]
-* [Sett opp Hent neste sak i køen][3]
-
-[1]: ./create
-[2]: ./delete
-[3]: ../next-in-queue

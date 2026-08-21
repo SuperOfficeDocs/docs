@@ -7,10 +7,8 @@ author: digitaldiina
 date: 08.20.2026
 content_type: concept
 related:
-  - title: "DocFx to Mintlify cheat sheet"
-    href: "/contribute/markdown-guide/docfx-to-mintlify-cheat-sheet"
-  - title: "Using Blueprint templates in Visual Studio Code"
-    href: "/contribute/markdown-guide/using-blueprint-templates"
+  - /contribute/markdown-guide/docfx-to-mintlify-cheat-sheet
+  - /contribute/markdown-guide/using-blueprint-templates
 language: en
 ---
 
@@ -70,7 +68,7 @@ Product content pages (everything outside `contribute/`) use a larger property s
 | 19 | `redirect_from` | If present | Old URL(s) that should redirect here |
 | 20 | `hidden` | If present | `true` to remove the page from sidebar navigation (still reachable by URL, not search-indexed). Used when consolidating several pages into one: pair with `redirect_from` and a `docs.json` redirect. Never set to `false`. |
 | 21 | `userflow_index` | If present | `true` if the page is outside a *learn* folder and should be included in the per-language userhelp sitemap Userflow's in-app Resource Center reads (see [SEO and social previews][3]) |
-| 22 | `related` | If present | Curated related-topics list, only where Mintlify's own automatic suggestions risk a bad match (for example a short, reused action verb repeated across many entities, or a broad hub topic). A YAML block sequence of `title`/`href` objects; omit entirely to let automatic suggestions run, or set to `false` to suppress the widget outright (generated-reference trees, release-notes, navigation hub pages) |
+| 22 | `related` | If present | Curated related-topics list, only where Mintlify's own automatic suggestions risk a bad match (for example a short, reused action verb repeated across many entities, or a broad hub topic). A YAML block sequence of items, each either a bare internal path (Mintlify infers the label from that page's own `title`) or a `Custom label: /path` mapping when the curated wording should differ from the target's title; external URLs always need the `Custom label:` form, since there's no page to infer from. Omit the property entirely to let automatic suggestions run, or set it to `false` to suppress the widget outright (generated-reference trees, release-notes, navigation hub pages) |
 | 23 | `noindex` | If present | `true` to exclude the page from search indexing. Used on old-version release notes and on category/subcategory navigation hub pages (link lists, not real content) |
 | 24 | `language` | Always | Language code: always last |
 

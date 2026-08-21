@@ -13,6 +13,10 @@ category: Service
 topic: chat
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Link chat to person: /en/chat/learn/link-to-person
+  - /en/chat/learn/respond
+  - Learn about requests: /en/request/learn/index
 language: en
 ---
 
@@ -23,13 +27,3 @@ If you cannot solve the issue via the chat, you can create a request to be handl
 3. The chat log is added to the request, but you can add more information here if necessary.
 4. Click **Save**.
 5. A short message containing the request ID is added to the text field in the chat. Click **Send** to send this to the customer.
-
-## Related content
-
-* [Link chat to person][1]
-* [Respond to a chat][3]
-* [Learn about requests][4]
-
-[1]: ./link-to-person
-[3]: ./respond
-[4]: ../../request/learn/index

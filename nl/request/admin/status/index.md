@@ -12,6 +12,10 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /nl/request/learn/status/index
 userflow_index: true
+related:
+  - /nl/request/admin/status/create
+  - /nl/request/admin/status/delete
+  - Instellen van Volgende verzoek in wachtrij ophalen.: /nl/request/admin/next-in-queue
 language: nl
 ---
 
@@ -28,13 +32,3 @@ U kunt bijvoorbeeld een nieuwe status maken met de naam 'Wacht op antwoord', als
 | Standaard | Geeft aan of dit een standaardstatus is voor de interne status. |
 | Wachtrijstatus | Geeft aan of verzoeken met deze status in de wachtrij geplaatst moeten worden. Dit is relevant als u de functie **Volgende in wachtrij ophalen** gebruikt. |
 | Tijd traceren als | Wordt gebruikt om tijdsgebruik in verschillende fasen van het verzoekbeheer te rapporteren. Het systeem berekent de tijd zowel in relatie tot bepaalde 'openingstijden' en de gehele periode van 24 uur. Kies uit: in de wachtrij en wachtend op verwerking, in de interne beslissingsfase, in de externe beslissingsfase |
-
-## Gerelateerde inhoud
-
-* [Verzoekstatus maken][1]
-* [Verzoekstatus verwijderen][2]
-* [Instellen van Volgende verzoek in wachtrij ophalen][3].
-
-[1]: ./create
-[2]: ./delete
-[3]: ../next-in-queue

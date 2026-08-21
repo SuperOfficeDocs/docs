@@ -12,6 +12,9 @@ audience: settings
 audience_tooltip: Einstellungen und Verwaltung
 redirect_from: /de/customer-center/admin/index
 userflow_index: true
+related:
+  - /de/security/privacy/learn/send-privacy-confirmation-email
+  - Übersicht über Customer Centre: /de/customer-center/learn/index
 language: de
 ---
 
@@ -78,14 +81,6 @@ Wenn Sie ein Feld löschen, wird der Standard-SuperOffice-Text automatisch wiede
 Sie können auch Sprachen entfernen, die Sie nicht verwenden. Dies begrenzt die auf der Abonnementseite verfügbaren Sprachen und reduziert den Wartungsaufwand. Sie können entfernte Sprachen später bei Bedarf wieder hinzufügen.
 
 Änderungen werden erst angewendet, wenn Sie auf **Speichern** klicken.
-
-## Verwandte Inhalte
-
-* [E-Mail zur Datenschutzbestätigung senden][2]
-* [Übersicht über Customer Centre][1]
-
-[1]: ../learn/index
-[2]: ../../security/privacy/learn/send-privacy-confirmation-email
 
 [img1]: ../../../media/loc/en/customer-center/subscription-page-styling.png
 [img2]: ../../../media/loc/en/customer-center/subscription-page-options.png

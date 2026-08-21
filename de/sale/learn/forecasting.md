@@ -12,6 +12,11 @@ license: salesessentials
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Verkaufsziele in Dashboard-Kacheln visualisieren: /de/dashboard/learn/show-sales-targets
+  - Neuen Verkauf erstellen: /de/sale/learn/create
+  - /de/search-options/selection/learn/howto/display-as-charts
+  - Verwenden der Suchansicht: /de/search-options/learn/find-screen
 language: de
 ---
 
@@ -73,18 +78,7 @@ Um zu veranschaulichen, wie Sie die Suchfunktion für Umsatzprognosen verwenden 
 
 7. Klicken Sie unten in der Anzeige auf Suchen, um alle Ihre offenen Verkaufschancen mit einem Wert von mehr als 5000 € anzuzeigen.
 
-## Verwandte Inhalte
-
-* [Verkaufsziele in Dashboard-Kacheln visualisieren][7]
-* [Neuen Verkauf erstellen][1]
-* [Selektion als Diagramm anzeigen][6]
-* [Verwenden der Suchansicht][5]
-
-[1]: ./create
 [5]: ../../search-options/learn/find-screen
-[6]: ../../search-options/selection/learn/howto/display-as-charts
-[7]: ../../dashboard/learn/show-sales-targets
-
 [img1]: ../../../media/loc/en/sale/forecasting.png
 [img7]: ../../../media/loc/en/search-options/typical-sale-searches.png
 [img8]: ../../../media/loc/en/search-options/find-screen.png

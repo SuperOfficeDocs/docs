@@ -10,6 +10,12 @@ content_type: howto
 tier: core
 audience: person
 audience_tooltip: SuperOffice Service
+related:
+  - Opprette et nytt dashbord: /no/dashboard/learn/create
+  - Redigere dashbordfigurer: /no/dashboard/learn/working-with-tiles
+  - /no/request/learn/create
+  - Håndtere sak: /no/request/learn/index#request-mgt
+  - Finne saker: /no/request/learn/find
 language: no
 ---
 
@@ -57,19 +63,6 @@ Her vises sakene som tilhører deg, og som har statusen **Åpen**. Denne listen 
 
 Viser saker som ingen har blitt tildelt ansvaret for. Hvis du vil [ta ansvar for en av sakene][2], må du klikke på **Godta sak**. Ellers kan flere svare på saken samtidig.
 
-## Relatert innhold
-
-* [Opprette et nytt dashbord][1]
-* [Redigere dashbordfigurer][7]
-* [Opprette en sak][4]
-* [Håndtere sak][6]
-* [Finne saker][5]
-
 [1]: ./create
 [2]: ../../request/learn/accept
-[4]: ../../request/learn/create
-[5]: ../../request/learn/find
-[6]: ../../request/learn/index#request-mgt
-[7]: ./working-with-tiles
-
 [img1]: ../../../media/loc/en/request/service-dashboard.png
