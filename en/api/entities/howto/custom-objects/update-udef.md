@@ -1,17 +1,20 @@
 ---
 title: How to update a Udef field
-uid: update_udef_entity
 description: How to update a user-defined field
 author: Tony Yates
 date: 11.05.2021
+so_version: 11
 keywords: ['udef', 'user-defined field', 'custom field', 'API', 'UdefHelper', 'UdefLarge', 'UdefSmall', 'progId', 'udeffield']
 content_type: howto
+deployment: onsite
 audience: api
 audience_tooltip: SuperOffice APIs and database
 redirect_from:
   - /en/custom-objects/udef/howto/entity/update-udef
   - /en/api/netserver/entities/howto/custom-objects/update-udef
 hidden: true
+deprecated: true
+language: en
 ---
 
 The contact has a property named `UdefHelper`, which lets you handle user-defined fields easily.

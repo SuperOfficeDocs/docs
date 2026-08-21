@@ -1,11 +1,14 @@
 ---
 title: CustomSearch
-uid: using_customsearch
 description: CustomSearch
 author: SuperOffice Product and Engineering
+so_version: 11
 content_type: howto
+deployment: onsite
 redirect_from: /en/api/netserver/entities/using-customsearch
 hidden: true
+deprecated: true
+language: en
 ---
 
 Another method of retrieving Entities or Entity Collections is using the `CustomSearch` class.

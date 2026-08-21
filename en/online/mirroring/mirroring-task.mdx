@@ -1,5 +1,4 @@
 ---
-uid: mirroring_task
 title: The database Mirroring Task (legacy)
 description: About the database Mirroring Task used by the legacy WCF-based mirroring service.
 keywords: ['Mirroring Task', 'mirror', 'legacy']
@@ -9,13 +8,16 @@ so_version: 12
 content_type: concept
 platform: web
 deployment: online
+hidden: true
+deprecated: true
 language: en
 ---
 
-> [!IMPORTANT]
-> This page describes the **legacy WCF-based mirroring service**, where SuperOffice scheduled a background task that pushed data to a customer-hosted endpoint on a fixed cadence.
->
-> The current Database Mirroring implementation works very differently: a customer-hosted **client** long-polls SuperOffice for changes streamed through Kafka, and there is no scheduled push from the cloud. See [Overview][1] and [Set up the Database Mirroring client][6] for the current model. If you are still running the legacy service, see [Migrate from the legacy mirroring service][7].
+<Note>
+This page describes the **legacy WCF-based mirroring service**, where SuperOffice scheduled a background task that pushed data to a customer-hosted endpoint on a fixed cadence.
+
+The current Database Mirroring implementation works very differently: a customer-hosted **client** long-polls SuperOffice for changes streamed through Kafka, and there is no scheduled push from the cloud. See [Overview][1] and [Set up the Database Mirroring client][6] for the current model. If you are still running the legacy service, see [Migrate from the legacy mirroring service][7].
+</Note>
 
 The Operation Center schedules the database Mirroring Task, running it periodically for each customer and application instance.
 

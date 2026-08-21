@@ -1,18 +1,21 @@
 ---
 title: How to set a user-defined list item on a Udef field
 sidebarTitle: "Set a Udef list item value"
-uid: set_udef_listitem_value_entity
 description: How to set a user-defined list item on a Udef field using entities.
 author: Tony Yates
 date: 11.05.2021
+so_version: 11
 keywords: ['udef', 'user-defined field', 'custom field', 'API', 'UdefHelper', 'ListTableId', 'TaskRows', 'GetFromCustomSearch']
 content_type: howto
+deployment: onsite
 audience: api
 audience_tooltip: SuperOffice APIs and database
 redirect_from:
   - /en/custom-objects/udef/howto/entity/set-udef-listitem-value
   - /en/api/netserver/entities/howto/custom-objects/set-udef-listitem-value
 hidden: true
+deprecated: true
+language: en
 ---
 
 This example demonstrates how to set a user-defined list item value on a user-defined field on a given **contact**.

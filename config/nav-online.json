@@ -78,6 +78,7 @@
       {
         "group": "Active Directory",
         "root": "en/online/identity/ad/index",
+        "hidden": true,
         "pages": [
           "en/online/identity/ad/set-up-ad-auth",
           "en/online/identity/ad/mapping-so-user-to-ad-v-7-1"
@@ -137,6 +138,7 @@
       },
       {
         "group": "Legacy (WCF) mirroring",
+        "hidden": true,
         "pages": [
           "en/online/mirroring/conceptual-overview-2016",
           "en/online/mirroring/mirroring-task",

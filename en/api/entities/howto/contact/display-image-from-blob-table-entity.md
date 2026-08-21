@@ -1,16 +1,19 @@
 ---
-uid: display-image-from-blob-entity
 title: How to display an image from the Blob table (data layer)
 sidebarTitle: "Display image from Blob table (entities)"
 description: How to display an image from the Blob table
 keywords: ['person', 'contact', 'entity', 'API', 'BinaryObject', 'BLOB', 'image', 'BinaryObjectRow', 'GetFromIdxMimeType']
 author: Bergfrid Skaara Dias
 date: 11.02.2021
+so_version: 11
 content_type: howto
+deployment: onsite
 redirect_from:
   - /en/contact/howto/entity/display-image-from-blob-table-entity
   - /en/api/netserver/entities/howto/contact/display-image-from-blob-table-entity
 hidden: true
+deprecated: true
+language: en
 ---
 
 All pictures are stored in the `BinaryObject` table in the database. You can retrieve such information using `SoCore` and `SoDatabase` DLLs.

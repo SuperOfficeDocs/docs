@@ -12,13 +12,13 @@ Reference for SuperOffice NuGet packages.
 
 ## SuperOffice.NetServer.Core
 
-SuperOffice's data access technology for new applications. This is for onsite installations with the same version. This also works with SuperOffice Online.
+SuperOffice's data access technology for new applications. This is for onsite installations with the same version.
 
 [View on nuget.org][1]
 
 ## SuperOffice.NetServer.Services
 
-SuperOffice's web service client proxies. This is for onsite installations with the same version. This also works with SuperOffice Online.
+SuperOffice's web service client proxies. This is for onsite installations with the same version.
 
 [View on nuget.org][2]
 
@@ -64,13 +64,13 @@ SuperOffice Integration Services are the partner-side web service interfaces for
 
 [View on nuget.org][9]
 
-## SuperOffice.Crm.Com
+## SuperOffice.Crm.Com (deprecated)
 
 SuperOffice CRM COM is for using the COM interfaces for interacting with SuperOffice Windows applications.
 
 [View on nuget.org][10]
 
-## SuperOffice.Crm.Com.Database
+## SuperOffice.Crm.Com.Database (deprecated)
 
 SuperOffice CRM COM Database is a 32 bit (x86) interop for using the SuperOfficeDB COM interface for reading from and writing to SuperOffice database.
 

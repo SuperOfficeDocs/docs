@@ -1,15 +1,18 @@
 ---
-uid: create-contact-entity
 title: Create a Contact entity
 description: Create a contact entity
 keywords: ['contact', 'company', 'entity', 'API', 'assert', 'SetDefaults']
 author: Bergfrid Dias
 date: 02.22.2022
+so_version: 11
 content_type: howto
+deployment: onsite
 redirect_from:
   - /en/company/howto/entity/create-contact-entity
   - /en/api/netserver/entities/howto/company/create-contact-entity
 hidden: true
+deprecated: true
+language: en
 ---
 
 Using the `Contact` [entity][1] exposed in the `SuperOffice.CRM.Entities` namespace is one of the easiest ways to create a follow-up, as shown in the example below.

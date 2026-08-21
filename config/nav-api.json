@@ -21,7 +21,6 @@
     "group": "Authentication",
     "root": "en/api/authentication/index",
     "pages": [
-      "en/api/authentication/overview",
       "en/api/authentication/online/which-flow-to-use",
       "en/api/authentication/online/which-user-to-use",
       "en/api/authentication/online/api",

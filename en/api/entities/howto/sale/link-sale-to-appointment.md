@@ -1,17 +1,19 @@
 ---
-uid: sale-link-appointment-entity
 title: How to link a sale to a follow-up (data layer)
 sidebarTitle: "Link a sale to a follow-up (entities)"
 description: How to link a sale to a follow-up using entities
 keywords: ['sale', 'API', 'entity', 'ActivityLinksHelper', 'appointment', 'follow-up']
 author: Bergfrid Skaara Dias
 date: 11.05.2021
-so_version: 10
+so_version: 11
 content_type: howto
+deployment: onsite
 redirect_from:
   - /en/sale/howto/entity/link-sale-to-appointment
   - /en/api/netserver/entities/howto/sale/link-sale-to-appointment
 hidden: true
+deprecated: true
+language: en
 ---
 
 This section shows how we can add a link using the `ActivityLinksHelper` class. The link to a related sale appears in the **Links** tab of the **Follow-up** dialog:

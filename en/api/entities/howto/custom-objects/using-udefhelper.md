@@ -1,17 +1,20 @@
 ---
 title: How to use the UDFHelper class
-uid: using_udefhelper
 description: How to use the UDFHelper class
 author: Tony Yates
 date: 11.05.2021
+so_version: 11
 keywords: ['udef', 'user-defined field', 'custom field', 'API', 'UDFHelper', 'UDFSearch', 'GetUDFInfo', 'GetUDFData']
 content_type: howto
+deployment: onsite
 audience: api
 audience_tooltip: SuperOffice APIs and database
 redirect_from:
   - /en/custom-objects/udef/howto/entity/using-udefhelper
   - /en/api/netserver/entities/howto/custom-objects/using-udefhelper
 hidden: true
+deprecated: true
+language: en
 ---
 
 This code demonstrates how to use the [UDFHelper][1] class to retrieve the value of all user-defined fields.

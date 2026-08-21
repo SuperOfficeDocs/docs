@@ -1,17 +1,20 @@
 ---
 title: Udef - entity layer
-uid: api_udef_entity
 description: Working with custom fields and entities.
 author: Bergfrid Skaara Dias
 date: 11.05.2021
+so_version: 11
 keywords: ['udef', 'user-defined field', 'custom field', 'API']
 content_type: concept
+deployment: onsite
 audience: api
 audience_tooltip: SuperOffice APIs and database
 redirect_from:
   - /en/custom-objects/udef/howto/entity/index
   - /en/api/netserver/entities/howto/custom-objects/index
 hidden: true
+deprecated: true
+language: en
 ---
 
 * [Set udef list-item value][1]
