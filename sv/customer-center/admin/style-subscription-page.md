@@ -12,6 +12,9 @@ audience: settings
 audience_tooltip: Inställningar och underhåll
 redirect_from: /sv/customer-center/admin/index
 userflow_index: true
+related:
+  - /sv/security/privacy/learn/send-privacy-confirmation-email
+  - Översikt Kundportal: /sv/customer-center/learn/index
 language: sv
 ---
 
@@ -78,14 +81,6 @@ Om du rensar ett fält återställs standard SuperOffice-texten automatiskt.
 Du kan också ta bort språk som du inte använder. Detta begränsar de språk som är tillgängliga på prenumerationssidan och minskar underhållet. Du kan lägga till borttagna språk igen senare om det behövs.
 
 Ändringar tillämpas inte förrän du klickar på **Spara**.
-
-## Relaterat innehåll
-
-* [Skicka e-postbekräftelse om personskydd][2]
-* [Översikt Kundportal][1]
-
-[1]: ../learn/index
-[2]: ../../security/privacy/learn/send-privacy-confirmation-email
 
 [img1]: ../../../media/loc/en/customer-center/subscription-page-styling.png
 [img2]: ../../../media/loc/en/customer-center/subscription-page-options.png

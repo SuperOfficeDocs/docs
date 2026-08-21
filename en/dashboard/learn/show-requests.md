@@ -10,6 +10,12 @@ content_type: howto
 tier: core
 audience: person
 audience_tooltip: SuperOffice Service
+related:
+  - /en/dashboard/learn/create
+  - Edit dashboard tiles: /en/dashboard/learn/working-with-tiles
+  - /en/request/learn/create
+  - Request management: /en/request/learn/index#request-mgt
+  - Find requests: /en/request/learn/find
 language: en
 ---
 
@@ -57,19 +63,6 @@ Shows requests that belong to you and that have the **Open** status. In other wo
 
 Lists requests that no-one is assigned responsibility for. To [take responsibility for one of the requests][2], it is important you click **Accept request**. Otherwise, someone else might answer the request at the same time.
 
-## Related content
-
-* [Create a new dashboard][1]
-* [Edit dashboard tiles][7]
-* [Create a request][4]
-* [Request management][6]
-* [Find requests][5]
-
 [1]: ./create
 [2]: ../../request/learn/accept
-[4]: ../../request/learn/create
-[5]: ../../request/learn/find
-[6]: ../../request/learn/index#request-mgt
-[7]: ./working-with-tiles
-
 [img1]: /media/loc/en/request/service-dashboard.png

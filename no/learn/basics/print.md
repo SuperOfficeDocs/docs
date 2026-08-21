@@ -14,6 +14,11 @@ redirect_from:
   - /no/company/learn/print
   - /no/contact/learn/print
   - /no/diary/learn/print
+related:
+  - /no/learn/getting-started/main-screen/navigator
+  - /no/search-options/selection/learn/howto/print
+  - /no/search-options/selection/learn/howto/print-labels
+  - Skriv ut e-post: /no/email/inbox/learn/preview#print
 language: no
 ---
 
@@ -59,14 +64,4 @@ De generelle trinnene for utskrift av en post i SuperOffice CRM er stort sett de
 
 * **Utskrift i nettleser:** Etter at du har valgt **Skriv ut**, åpnes utskriftsdialogen i nettleseren. Hvilke alternativer som vises avhenger av hvilken nettleser du bruker og din skriverkonfigurasjon.
 
-## Relatert innhold
-
-* [Navigatoren][1]
-* [Skriv ut utvalg][2]
-* [Skriv ut etiketter][3]
-* [Skriv ut e-post][4]
-
 [1]: ../getting-started/main-screen/navigator
-[2]: ../../search-options/selection/learn/howto/print
-[3]: ../../search-options/selection/learn/howto/print-labels
-[4]: ../../email/inbox/learn/preview#print

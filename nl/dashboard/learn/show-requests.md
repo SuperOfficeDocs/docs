@@ -10,6 +10,12 @@ content_type: howto
 tier: core
 audience: person
 audience_tooltip: SuperOffice Service
+related:
+  - /nl/dashboard/learn/create
+  - Dashboardtegels beverken: /nl/dashboard/learn/working-with-tiles
+  - /nl/request/learn/create
+  - Verzoekbeheer: /nl/request/learn/index#request-mgt
+  - Verzoeken zoeken: /nl/request/learn/find
 language: nl
 ---
 
@@ -57,19 +63,6 @@ Geeft verzoeken weer die bij u horen en die de status **Open** hebben. Met ander
 
 Toont verzoeken die aan niemand zijn toegewezen. Om [verantwoordelijkheid voor een van de verzoeken te nemen][2], is het belangrijk te klikken op **Verzoek accepteren**. Anders kan iemand anders het verzoek tegelijkertijd beantwoorden.
 
-## Gerelateerde inhoud
-
-* [Een nieuw dashboard maken][1]
-* [Dashboardtegels beverken][7]
-* [Een verzoek maken][4]
-* [Verzoekbeheer][6]
-* [Verzoeken zoeken][5]
-
 [1]: ./create
 [2]: ../../request/learn/accept
-[4]: ../../request/learn/create
-[5]: ../../request/learn/find
-[6]: ../../request/learn/index#request-mgt
-[7]: ./working-with-tiles
-
 [img1]: ../../../media/loc/en/request/service-dashboard.png

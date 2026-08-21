@@ -10,6 +10,16 @@ content_type: concept
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Logge på og aktivere SuperOffice CRM: /no/learn/getting-started/login
+  - Angi dine personlige preferanser: /no/learn/getting-started/preferences
+  - Slik konfigurerer du kontoen din med riktig språk: /no/learn/getting-started/change-language
+  - /no/learn/getting-started/connect-your-accounts
+  - Hovedskjermbildet: /no/learn/getting-started/main-screen/index
+  - Søk og finn data: /no/search-options/learn/index
+  - Favoritter: /no/learn/basics/fav
+  - Lær om aktiviteter (oppfølginger, dokumenter og e-poster): /no/learn/basics/activity
+  - "Mobil CRM: Tilgang til CRM på farten": /en/mobile/index
 language: no
 ---
 
@@ -46,28 +56,5 @@ SuperOffice CRM integreres med sertifiserte e-postsystemer og gjør det mulig å
 
 Oppdag hele potensialet til SuperOffice CRM. Bruk våre veiledninger for å komme i gang, eller gå til et spesifikt emne i menyen for å lære mer. Trykk på **F1** i systemet ditt for hjelp tilpasset din versjon og ditt språk.
 
-## Relatert innhold
-
-* [Logge på og aktivere SuperOffice CRM][6]
-* [Angi dine personlige preferanser][7]
-* [Slik konfigurerer du kontoen din med riktig språk][15]
-* [Koble til kontoene dine][8]
-* [Hovedskjermbildet][2]
-* [Søk og finn data][14]
-* [Favoritter][11]
-* [Lær om aktiviteter (oppfølginger, dokumenter og e-poster)][13]
-* [Mobil CRM: Tilgang til CRM på farten][9]
-
 [1]: ./main-screen/navigator
-[2]: ./main-screen/index
-[6]: ./login
-[7]: ./preferences
-[8]: ./connect-your-accounts
-[9]: ../../../en/mobile/index
-
-[11]: ../basics/fav
-[13]: ../basics/activity
-[14]: ../../search-options/learn/index
-[15]: ./change-language
-
 [img1]: ../../../media/loc/en/learn/getstarted-personalsettings.png

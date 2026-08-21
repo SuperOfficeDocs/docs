@@ -9,6 +9,9 @@ content_type: howto
 tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
+related:
+  - /da/customer-center/learn/config
+  - /da/marketing/forms/learn/index
 language: da
 ---
 
@@ -42,15 +45,7 @@ Når en kunde udfylder denne formular, gemmes oplysningerne og detaljerne automa
 
 ![Webformular på siden Kontakt os -screenshot][img4]
 
-## Relateret indhold
-
-* [Konfigurer kundecenter][2]
-* [Arbejde med formularer][1]
-
-[1]: ../../marketing/forms/learn/index
 [3]: ../../marketing/forms/learn/create
-[2]: ./config
-
 [img1]: ../../../media/loc/en/customer-center/form-element.png
 [img2]: ../../../media/loc/en/customer-center/custom-form.png
 [img3]: ../../../media/loc/en/customer-center/custcenter-choose-form.png

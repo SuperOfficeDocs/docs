@@ -10,6 +10,16 @@ content_type: concept
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Anmelden und SuperOffice CRM aktivieren: /de/learn/getting-started/login
+  - Persönliche Einstellungen festlegen: /de/learn/getting-started/preferences
+  - Wie Sie Ihr Konto mit der richtigen Sprache einrichten: /de/learn/getting-started/change-language
+  - /de/learn/getting-started/connect-your-accounts
+  - Der Hauptbildschirm: /de/learn/getting-started/main-screen/index
+  - Daten suchen und finden: /de/search-options/learn/index
+  - Favoriten: /de/learn/basics/fav
+  - Mehr über Aktivitäten erfahren (Folgeaufgaben, Dokumente und E-Mails): /de/learn/basics/activity
+  - "Mobile CRM: Zugriff auf Ihr CRM von unterwegs": /en/mobile/index
 language: de
 ---
 
@@ -46,28 +56,5 @@ SuperOffice CRM unterstützt zertifizierte E-Mail-Systeme und ermöglicht es Ihn
 
 Entdecken Sie das volle Potenzial von SuperOffice CRM! Nutzen Sie unsere Anleitungen, um sich schnell mit dem System vertraut zu machen, oder springen Sie direkt zu einem bestimmten Thema im Menü. Drücken Sie **F1** in Ihrem System, um Hilfe zu erhalten, die auf Ihre Version und Sprache zugeschnitten ist.
 
-## Verwandte Inhalte
-
-* [Anmelden und SuperOffice CRM aktivieren][6]
-* [Persönliche Einstellungen festlegen][7]
-* [Wie Sie Ihr Konto mit der richtigen Sprache einrichten][15]
-* [Konten verbinden][8]
-* [Der Hauptbildschirm][2]
-* [Daten suchen und finden][14]
-* [Favoriten][11]
-* [Mehr über Aktivitäten erfahren (Folgeaufgaben, Dokumente und E-Mails)][13]
-* [Mobile CRM: Zugriff auf Ihr CRM von unterwegs][9]
-
 [1]: ./main-screen/navigator
-[2]: ./main-screen/index
-[6]: ./login
-[7]: ./preferences
-[8]: ./connect-your-accounts
-[9]: ../../../en/mobile/index
-
-[11]: ../basics/fav
-[13]: ../basics/activity
-[14]: ../../search-options/learn/index
-[15]: ./change-language
-
 [img1]: ../../../media/loc/en/learn/contact-screen-with-week.png

@@ -17,6 +17,9 @@ audience_tooltip: SuperOffice Service
 redirect_from:
   - /en/request/reply-templates/learn/delete
   - /en/request/reply-templates/learn/edit
+related:
+  - /en/knowledge-base/learn/reply-templates/new-language
+  - Copy reply templates: /en/knowledge-base/learn/reply-templates/create#copy
 language: en
 ---
 
@@ -43,12 +46,5 @@ Editing a reply template can mean one of two things:
 1. Click the **Delete** button at the bottom of the screen.
 1. Confirm the deletion when prompted. The reply template is deleted immediately.
 
-## Related content
-
-* [Create new language version of reply template][3]
-* [Copy reply templates][4]
-
 [1]: ../../../request/learn/reply
 [2]: ./create
-[4]: ./create#copy
-[3]: ./new-language

@@ -15,6 +15,11 @@ topic: faq
 audience: person
 audience_tooltip: SuperOffice Service
 redirect_from: /en/faq/learn/publish
+related:
+  - Work with the workflow: /en/knowledge-base/learn/faq/workflow
+  - Learn about requests: /en/request/learn/index
+  - Create a FAQ: /en/knowledge-base/learn/faq/create
+  - Set up multiple languages: /en/localization/learn/customer-languages
 language: en
 ---
 
@@ -32,14 +37,5 @@ When a request handler [creates a suggestion for an FAQ entry][1], it is unpubli
 1. Make any other required changes in the **Properties** tab.
 1. Click **OK**. The FAQ entry is now available for use.
 
-## Related content
-
-* [Work with the workflow][3]
-* [Learn about requests][2]
-* [Create a FAQ][1]
-* [Set up multiple languages][4]
-
 [1]: ./create
-[2]: ../../../request/learn/index
-[3]: ./workflow
 [4]: ../../../localization/learn/customer-languages

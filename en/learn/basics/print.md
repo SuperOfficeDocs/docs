@@ -14,6 +14,11 @@ redirect_from:
   - /en/contact/learn/print
   - /en/company/learn/print
   - /en/diary/learn/print
+related:
+  - /en/learn/getting-started/main-screen/navigator
+  - /en/search-options/selection/learn/howto/print
+  - /en/search-options/selection/learn/howto/print-labels
+  - Print email: /en/email/inbox/learn/preview#print
 language: en
 ---
 
@@ -59,14 +64,4 @@ The general steps for printing a record in SuperOffice CRM are largely consisten
 
 **Browser printing:** After selecting **Print**, your browser's print dialog will open. The options you see will depend on which browser you are using and your printer configuration.
 
-## Related content
-
-* [The Navigator][1]
-* [Print selection][2]
-* [Print labels][3]
-* [Print email][4]
-
 [1]: ../getting-started/main-screen/navigator
-[2]: ../../search-options/selection/learn/howto/print
-[3]: ../../search-options/selection/learn/howto/print-labels
-[4]: ../../email/inbox/learn/preview#print

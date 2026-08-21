@@ -11,6 +11,16 @@ license: salespremium, servicepremium, marketingessentials
 tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Een selectie aanmaken: /nl/search-options/selection/learn/create
+  - Een verkoop aanmaken / velden in de verkoopkaart: /nl/sale/learn/create
+  - Verkoopfasen configureren: /nl/sale/admin/sale-stage
+  - Een verzoek aanmaken / verzoekeigenschappen: /nl/request/learn/create
+  - Verzoekstatus aanmaken: /nl/request/admin/status/create
+  - /nl/request/admin/category/create
+  - Een project aanmaken / velden in de projectkaart: /nl/project/learn/create
+  - Projectstatus configureren: /nl/project/admin/project-status
+  - Projecttypen configureren: /nl/project/admin/project-type
 language: nl
 ---
 
@@ -225,30 +235,8 @@ Gebruik groepering creatief om efficiënt met gegevens te werken.
 
 * **Layout per toepassing opslaan:** Kies **Instellingen alleen voor deze selectie opslaan** als je een specifieke boardindeling, filters of groepering wilt bewaren voor één selectie.
 
-## Gerelateerde inhoud
-
-* [Een selectie aanmaken][1]
-* [Een verkoop aanmaken / velden in de verkoopkaart][12]
-* [Verkoopfasen configureren][13]
-* [Een verzoek aanmaken / verzoekeigenschappen][14]
-* [Verzoekstatus aanmaken][15]
-* [Verzoekcategorie aanmaken][16]
-* [Een project aanmaken / velden in de projectkaart][17]
-* [Projectstatus configureren][18]
-* [Projecttypen configureren][19]
-
-[1]: ./create
 [2]: ./index
 [11]: ../../../learn/getting-started/main-screen/side-panel
-[12]: ../../../sale/learn/create
-[13]: ../../../sale/admin/sale-stage
-[14]: ../../../request/learn/create
-[15]: ../../../request/admin/status/create
-[16]: ../../../request/admin/category/create
-[17]: ../../../project/learn/create
-[18]: ../../../project/admin/project-status
-[19]: ../../../project/admin/project-type
-
 [img1]: ../../../../media/loc/en/search-options/board-view-toggle.png
 [img2]: ../../../../media/loc/en/search-options/board-view.png
 [img3]: ../../../../media/loc/en/search-options/board-view-preview-contact-on-hover.png

@@ -11,6 +11,16 @@ license: salespremium, servicepremium, marketingessentials
 tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Opret et udvalg: /da/search-options/selection/learn/create
+  - Opret et salg / felter i salgskortet: /da/sale/learn/create
+  - Konfigurér salgsfaser: /da/sale/admin/sale-stage
+  - Opret en sag / sagegenskaber: /da/request/learn/create
+  - /da/request/admin/status/create
+  - /da/request/admin/category/create
+  - Opret et projekt / felter i projektkortet: /da/project/learn/create
+  - Konfigurér projektstatus: /da/project/admin/project-status
+  - Konfigurér projekttyper: /da/project/admin/project-type
 language: da
 ---
 
@@ -225,30 +235,8 @@ Brug gruppering kreativt for effektiv databehandling.
 
 * **Gem layout pr. anvendelse:** Vælg **Gem kun kolonner for det aktuelle udvalg** for at bevare en specifik opsætning for ét udvalg.
 
-## Relateret indhold
-
-* [Opret et udvalg][1]
-* [Opret et salg / felter i salgskortet][12]
-* [Konfigurér salgsfaser][13]
-* [Opret en sag / sagegenskaber][14]
-* [Opret sagsstatus][15]
-* [Opret sagskategori][16]
-* [Opret et projekt / felter i projektkortet][17]
-* [Konfigurér projektstatus][18]
-* [Konfigurér projekttyper][19]
-
-[1]: ./create
 [2]: ./index
 [11]: ../../../learn/getting-started/main-screen/side-panel
-[12]: ../../../sale/learn/create
-[13]: ../../../sale/admin/sale-stage
-[14]: ../../../request/learn/create
-[15]: ../../../request/admin/status/create
-[16]: ../../../request/admin/category/create
-[17]: ../../../project/learn/create
-[18]: ../../../project/admin/project-status
-[19]: ../../../project/admin/project-type
-
 [img1]: ../../../../media/loc/en/search-options/board-view-toggle.png
 [img2]: ../../../../media/loc/en/search-options/board-view.png
 [img3]: ../../../../media/loc/en/search-options/board-view-preview-contact-on-hover.png

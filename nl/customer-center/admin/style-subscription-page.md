@@ -12,6 +12,9 @@ audience: settings
 audience_tooltip: Instellingen en onderhoud
 redirect_from: /nl/customer-center/admin/index
 userflow_index: true
+related:
+  - /nl/security/privacy/learn/send-privacy-confirmation-email
+  - Overzicht Customer Centre: /nl/customer-center/learn/index
 language: nl
 ---
 
@@ -78,14 +81,6 @@ Als u een veld wist, wordt de standaard SuperOffice-tekst automatisch hersteld.
 U kunt ook talen verwijderen die u niet gebruikt. Dit beperkt de talen die beschikbaar zijn op de abonnementspagina en vermindert het onderhoud. U kunt verwijderde talen later indien nodig opnieuw toevoegen.
 
 Wijzigingen worden pas toegepast als u op **Opslaan** klikt.
-
-## Gerelateerde inhoud
-
-* [E-mail met privacybevestiging verzenden][2]
-* [Overzicht Customer Centre][1]
-
-[1]: ../learn/index
-[2]: ../../security/privacy/learn/send-privacy-confirmation-email
 
 [img1]: ../../../media/loc/en/customer-center/subscription-page-styling.png
 [img2]: ../../../media/loc/en/customer-center/subscription-page-options.png

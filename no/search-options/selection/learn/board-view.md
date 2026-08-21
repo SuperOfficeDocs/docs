@@ -11,6 +11,16 @@ license: salespremium, servicepremium, marketingessentials
 tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Opprett et utvalg: /no/search-options/selection/learn/create
+  - Opprett et salg / felt i salgskortet: /no/sale/learn/create
+  - Konfigurer salgsfaser: /no/sale/admin/sale-stage
+  - Opprett en sak / sakseigenskaper: /no/request/learn/create
+  - Opprett saksstatus: /no/request/admin/status/create
+  - /no/request/admin/category/create
+  - Opprett et prosjekt / felt i prosjektkortet: /no/project/learn/create
+  - Konfigurer prosjektstatus: /no/project/admin/project-status
+  - Konfigurer prosjekttyper: /no/project/admin/project-type
 language: no
 ---
 
@@ -225,30 +235,8 @@ Bruk gruppering kreativt for å organisere og handle effektivt på data.
 
 * **Lagre oppsett per brukstilfelle:** Velg **Lagre innstillinger kun for valgt utvalg** hvis du vil bevare et spesifikt tavleoppsett, filtre eller gruppering for ett utvalg.
 
-## Relatert innhold
-
-* [Opprett et utvalg][1]
-* [Opprett et salg / felt i salgskortet][12]
-* [Konfigurer salgsfaser][13]
-* [Opprett en sak / sakseigenskaper][14]
-* [Opprett saksstatus][15]
-* [Opprett sakskategori][16]
-* [Opprett et prosjekt / felt i prosjektkortet][17]
-* [Konfigurer prosjektstatus][18]
-* [Konfigurer prosjekttyper][19]
-
-[1]: ./create
 [2]: ./index
 [11]: ../../../learn/getting-started/main-screen/side-panel
-[12]: ../../../sale/learn/create
-[13]: ../../../sale/admin/sale-stage
-[14]: ../../../request/learn/create
-[15]: ../../../request/admin/status/create
-[16]: ../../../request/admin/category/create
-[17]: ../../../project/learn/create
-[18]: ../../../project/admin/project-status
-[19]: ../../../project/admin/project-type
-
 [img1]: ../../../../media/loc/en/search-options/board-view-toggle.png
 [img2]: ../../../../media/loc/en/search-options/board-view.png
 [img3]: ../../../../media/loc/en/search-options/board-view-preview-contact-on-hover.png

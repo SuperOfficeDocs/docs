@@ -9,6 +9,9 @@ content_type: howto
 tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
+related:
+  - /da/customer-center/learn/config
+  - /da/localization/learn/customer-languages
 language: da
 ---
 
@@ -34,13 +37,5 @@ Du skal [konfigurere din chatwidget][3] før du føjer den til dit kundecenter.
 
 1. Klik på **Gem** for at gemme dine indstillinger.
 
-## Relateret indhold
-
-* [Konfigurer kundecenter][2]
-* [Kundesprog][1]
-
-[1]: ../../localization/learn/customer-languages
 [3]: ../../chat/admin/channel-create
-[2]: ./config
-
 [img1]: ../../../media/loc/en/customer-center/connecting-widget.png

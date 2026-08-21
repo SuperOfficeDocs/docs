@@ -17,6 +17,9 @@ audience_tooltip: SuperOffice Service
 redirect_from:
   - /no/request/reply-templates/learn/delete
   - /no/request/reply-templates/learn/edit
+related:
+  - /no/knowledge-base/learn/reply-templates/new-language
+  - Kopiere svarmaler: /no/knowledge-base/learn/reply-templates/create#copy
 language: no
 ---
 
@@ -43,12 +46,5 @@ Redigering av en svarmal kan bety to forskjellige ting:
 1. Klikk på **Slett**-knappen nederst i bildet.
 1. Bekreft slettingen når du blir bedt om det. Svarmalen slettes umiddelbart.
 
-## Relatert innhold
-
-* [Opprette ny språkversjon av svarmal][3]
-* [Kopiere svarmaler][4]
-
 [1]: ../../../request/learn/reply
 [2]: ./create
-[4]: ./create#copy
-[3]: ./new-language

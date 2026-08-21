@@ -10,6 +10,12 @@ content_type: howto
 tier: core
 audience: person
 audience_tooltip: SuperOffice Service
+related:
+  - /sv/dashboard/learn/create
+  - Redigera dashboard-paneler: /sv/dashboard/learn/working-with-tiles
+  - /sv/request/learn/create
+  - Hantera ärenden: /sv/request/learn/index#request-mgt
+  - Söka ärenden: /sv/request/learn/find
 language: sv
 ---
 
@@ -57,19 +63,6 @@ Visar ärenden som tillhör dig och som har status **Öppet**. Denna lista inneh
 
 En lista över ärenden som ingen har tilldelats ansvar för. Om du vill [ta ansvar för något av ärendena][2] är det viktigt att du klickar på **Ta över ärende**. Annars kan någon annan svara på ärendet samtidigt.
 
-## Relaterat innhåll
-
-* [Skapa en ny dashboard][1]
-* [Redigera dashboard-paneler][7]
-* [Skapa ett ärende][4]
-* [Hantera ärenden][6]
-* [Söka ärenden][5]
-
 [1]: ./create
 [2]: ../../request/learn/accept
-[4]: ../../request/learn/create
-[5]: ../../request/learn/find
-[6]: ../../request/learn/index#request-mgt
-[7]: ./working-with-tiles
-
 [img1]: ../../../media/loc/en/request/service-dashboard.png

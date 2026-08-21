@@ -13,6 +13,11 @@ category: marketing
 topic: conversion
 audience: person
 audience_tooltip: SuperOffice Marketing
+related:
+  - Enable UTM tracking for form submissions: /en/marketing/utm/admin/set-up
+  - UTM builder for SuperOffice forms: /en/marketing/forms/learn/publish
+  - Google Analytics Campaign URL Builder: https://ga-dev-tools.google/campaign-url-builder
+  - UTM Builder: https://utmbuilder.net
 language: en
 ---
 
@@ -52,15 +57,4 @@ Follow these guidelines to ensure consistent and accurate UTM tracking in SuperO
 
 To learn how these parameters are used to measure lead sources in SuperOffice CRM, see [Conversion tracking][1].
 
-## Related content
-
-* [Enable UTM tracking for form submissions][2]
-* [UTM builder for SuperOffice forms][3]
-* [Google Analytics Campaign URL Builder][4]
-* [UTM Builder][5]
-
 [1]: ./index
-[2]: ../admin/set-up
-[3]: ../../forms/learn/publish
-[4]: https://ga-dev-tools.google/campaign-url-builder
-[5]: https://utmbuilder.net

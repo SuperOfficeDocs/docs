@@ -10,6 +10,16 @@ content_type: concept
 tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Log in and activate SuperOffice CRM: /en/learn/getting-started/login
+  - Set your personal preferences: /en/learn/getting-started/preferences
+  - How to set up your account with the right language: /en/learn/getting-started/change-language
+  - /en/learn/getting-started/connect-your-accounts
+  - The Main screen: /en/learn/getting-started/main-screen/index
+  - Search and find data: /en/search-options/learn/index
+  - Favorites: /en/learn/basics/fav
+  - Learn about activities (follow-ups, documents and emails): /en/learn/basics/activity
+  - "Mobile CRM: Access your CRM on the go": /en/mobile/index
 language: en
 ---
 
@@ -48,28 +58,5 @@ SuperOffice CRM integrates with certified email systems and allows you to call, 
 
 Discover the full potential of SuperOffice CRM. Use our how-to guides to get started, or jump to a specific topic in the menu to learn more. Press **F1** in your system for help tailored to your version and language.
 
-## Related content
-
-* [Log in and activate SuperOffice CRM][6]
-* [Set your personal preferences][7]
-* [How to set up your account with the right language][15]
-* [Connect your accounts][8]
-* [The Main screen][2]
-* [Search and find data][14]
-* [Favorites][11]
-* [Learn about activities (follow-ups, documents and emails)][13]
-* [Mobile CRM: Access your CRM on the go][9]
-
 [1]: ./main-screen/navigator
-[2]: ./main-screen/index
-[6]: ./login
-[7]: ./preferences
-[8]: ./connect-your-accounts
-[9]: /en/mobile/index
-
-[11]: ../basics/fav
-[13]: ../basics/activity
-[14]: ../../search-options/learn/index
-[15]: ./change-language
-
 [img1]: /media/loc/en/learn/contact-screen-with-week.png

@@ -11,6 +11,16 @@ license: salespremium, servicepremium, marketingessentials
 tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
+related:
+  - Skapa ett urval: /sv/search-options/selection/learn/create
+  - Skapa en försäljning / fält i försäljningskortet: /sv/sale/learn/create
+  - Konfigurera försäljningsfaser: /sv/sale/admin/sale-stage
+  - Skapa ett ärende / ärendeegenskaper: /sv/request/learn/create
+  - /sv/request/admin/status/create
+  - /sv/request/admin/category/create
+  - Skapa ett projekt / fält i projektkortet: /sv/project/learn/create
+  - Konfigurera projektstatus: /sv/project/admin/project-status
+  - Konfigurera projekttyper: /sv/project/admin/project-type
 language: sv
 ---
 
@@ -225,30 +235,8 @@ Använd gruppering kreativt för effektiv datahantering.
 
 * **Spara layout per användning:** Välj **Spara kolumner endast för markerat urval** om du vill behålla en specifik layout, filter eller gruppering för ett urval.
 
-## Relaterat innehåll
-
-* [Skapa ett urval][1]
-* [Skapa en försäljning / fält i försäljningskortet][12]
-* [Konfigurera försäljningsfaser][13]
-* [Skapa ett ärende / ärendeegenskaper][14]
-* [Skapa ärendestatus][15]
-* [Skapa ärendekategori][16]
-* [Skapa ett projekt / fält i projektkortet][17]
-* [Konfigurera projektstatus][18]
-* [Konfigurera projekttyper][19]
-
-[1]: ./create
 [2]: ./index
 [11]: ../../../learn/getting-started/main-screen/side-panel
-[12]: ../../../sale/learn/create
-[13]: ../../../sale/admin/sale-stage
-[14]: ../../../request/learn/create
-[15]: ../../../request/admin/status/create
-[16]: ../../../request/admin/category/create
-[17]: ../../../project/learn/create
-[18]: ../../../project/admin/project-status
-[19]: ../../../project/admin/project-type
-
 [img1]: ../../../../media/loc/en/search-options/board-view-toggle.png
 [img2]: ../../../../media/loc/en/search-options/board-view.png
 [img3]: ../../../../media/loc/en/search-options/board-view-preview-contact-on-hover.png

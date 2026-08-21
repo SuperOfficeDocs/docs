@@ -13,6 +13,12 @@ category: marketing
 audience: person
 audience_tooltip: SuperOffice Marketing
 redirect_from: /sv/marketing/tracked-links/learn/add-tracked-link-to-msg
+related:
+  - /sv/marketing/tracked-links/learn/create-links
+  - Definiera länkningsåtgärder: /sv/marketing/tracked-links/learn/define-link-actions
+  - Länk för att visa meddelande i webbläsaren: /sv/marketing/editor/learn/add-link-to-display-message-in-browser
+  - avregistrering (GDPR): /sv/marketing/editor/learn/add-unsubscribe-link
+  - Hantera prenumerationer: /sv/marketing/recipients/learn/manage-email-subscriptions
 language: sv
 ---
 
@@ -43,18 +49,5 @@ Du kan lägga till vanliga (ospårade) länkar. För textlänkar, klicka på <i 
 
 Om du senare beslutar dig för att också spåra dessa länkar, välj alternativet **Spåra alla länkar** under **Spårning** i Steg 1: Konfiguration. Dessa länkar spåras dock endast för det aktuella utskicket och kommer inte att vara tillgängliga för andra utskick eller i flöden.
 
-## Relaterat innehåll
-
-* [Skapa spårade länkar][5]
-* [Definiera länkningsåtgärder][6]
-* [Länk för att visa meddelande i webbläsaren][1]
-* [avregistrering (GDPR)][4]
-* [Hantera prenumerationer][3]
-
-[1]: ./add-link-to-display-message-in-browser
-[4]: ./add-unsubscribe-link
-[3]: ../../recipients/learn/manage-email-subscriptions
 [5]: ../../tracked-links/learn/create-links
-[6]: ../../tracked-links/learn/define-link-actions
-
 [img2]: ../../../../media/loc/en/marketing/tracked-links-in-editor.png
