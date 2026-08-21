@@ -14,6 +14,9 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /no/security/privacy/learn/edit-privacy-confirmation-email
 userflow_index: true
+related:
+  - Slik legger du til en e-postmal: /no/email/admin/add-email-template
+  - Send en personvern-e-post for dine personers rett til å bli informert: /no/security/privacy/learn/send-privacy-confirmation-email
 language: no
 ---
 
@@ -36,11 +39,3 @@ Malen for e-postbekreftelse for personvern er en **e-postmal**, som opprettes og
 1. Klikk på **Lagre** på nytt for å gå tilbake til listen e-postmal.
 
     Den nye redigerte versjonen er nå klar og kan brukes umiddelbart.
-
-## Relatert innhold
-
-* [Slik legger du til en e-postmal][1]
-* [Send en personvern-e-post for dine personers rett til å bli informert][2]
-
-[1]: ../../../email/admin/add-email-template
-[2]: ../learn/send-privacy-confirmation-email

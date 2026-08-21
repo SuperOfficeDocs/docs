@@ -9,6 +9,8 @@ so_version: 11.6
 content_type: howto
 audience: settings
 audience_tooltip: Settings and maintenance
+related:
+  - /en/automation/crmscript/debugging/log-messages
 language: en
 userflow_index: true
 redirect_from:
@@ -100,10 +102,5 @@ Consider what you need to trace. The **Only trace when it is required** setting 
 
 If notifications are enabled, emails are sent after saving a trace run. To avoid excessive messages, you can limit the number of emails sent. The counter decreases with each email.
 
-## Related content
-
-* [Log messages][1]
-
 [1]: ./log-messages
-
 [img1]: ../../../../media/loc/en/automation/trace.png

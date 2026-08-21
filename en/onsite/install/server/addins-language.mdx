@@ -7,6 +7,8 @@ author: SuperOffice Product and Engineering
 keywords: ['ribbons maillink language change']
 content_type: howto
 deployment: onsite
+related:
+  - Complete list of languages: http://technet.microsoft.com/en-us/library/cc179219.aspx
 ---
 
 SuperOffice Ribbons and MailLink use the *HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\LanguageResources\UIFallback* to determine which language to use (the example is for Office 2016).
@@ -27,9 +29,3 @@ SuperOffice will choose the first valid value and if you have this language pack
 <Note>
 You need to do this for every user on the server as the setting is user-specific.
 </Note>
-
-## Related content
-
-* [Complete list of languages][2]
-
-[2]: http://technet.microsoft.com/en-us/library/cc179219.aspx

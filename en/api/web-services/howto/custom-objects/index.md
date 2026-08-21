@@ -14,6 +14,8 @@ redirect_from:
   - /en/api/custom-objects/index
   - /en/custom-objects/udef/howto/services/index
   - /en/api/netserver/web-services/howto/custom-objects/index
+related:
+  - Explore custom-object code examples on GitHub: https://github.com/SuperOffice/RESTful-HTTP-Queries/blob/main/src/CustomObjects.http
 ---
 
 Custom objects are how a customer can either create new entities or extend existing entities inside SuperOffice, and are available in most search areas inside SuperOffice, including the API.
@@ -45,18 +47,12 @@ The [learn section][1] contains additional conceptual information and instructio
 * [Delete row][5]
 * [Search][6] (based on relations)
 
-## Related content
-
-* [Explore custom-object code examples on GitHub][10]
-
 [1]: ../../../../custom-objects/reference/index
 [2]: ./rest-get-custom-object-row
 [3]: ./rest-add-custom-object-row
 [4]: ./rest-update-custom-object-row
 [5]: ./rest-delete-custom-object-row
 [6]: ./custom-objects-search
-[10]: https://github.com/SuperOffice/RESTful-HTTP-Queries/blob/main/src/CustomObjects.http
-
 [11]: ./set-udef-listitem-value
 [12]: ./get-udef-list-and-values
 [13]: ./find-contact-by-udef

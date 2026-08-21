@@ -14,6 +14,9 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /sv/security/privacy/learn/edit-privacy-confirmation-email
 userflow_index: true
+related:
+  - Så lägger du till en e-postmall: /sv/email/admin/add-email-template
+  - Skicka ett e-postmeddelande om integritet som tar upp dina kontakters rätt att bli informerade: /sv/security/privacy/learn/send-privacy-confirmation-email
 language: sv
 ---
 
@@ -36,11 +39,3 @@ Mallen för e-postbekräftelse om personskydd är en **e-postmall** som skapas o
 1. Klicka på **Spara** igen för att återgå till listan med e-postmallar.
 
     Den nya redigerade versionen är nu klar och kan användas omedelbart.
-
-## Relaterat innehåll
-
-* [Så lägger du till en e-postmall][1]
-* [Skicka ett e-postmeddelande om integritet som tar upp dina kontakters rätt att bli informerade][2]
-
-[1]: ../../../email/admin/add-email-template
-[2]: ../learn/send-privacy-confirmation-email

@@ -14,6 +14,9 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /en/security/privacy/learn/edit-privacy-confirmation-email
 userflow_index: true
+related:
+  - How to add an email template: /en/email/admin/add-email-template
+  - Send a privacy email for your contacts right to be informed: /en/security/privacy/learn/send-privacy-confirmation-email
 language: en
 ---
 
@@ -36,11 +39,3 @@ The privacy confirmation email template is an **email template**, which is creat
 1. Click **Save** again to return to the Email template list.
 
     The new edited version is now ready and can be used immediately.
-
-## Related content
-
-* [How to add an email template][1]
-* [Send a privacy email for your contacts right to be informed][2]
-
-[1]: ../../../email/admin/add-email-template
-[2]: ../learn/send-privacy-confirmation-email

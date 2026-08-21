@@ -15,6 +15,8 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /nl/admin/lists/learn/privacy-legal-base-add
 userflow_index: true
+related:
+  - /nl/security/privacy/admin/add-source
 language: nl
 ---
 
@@ -35,9 +37,3 @@ De lijst **Privacy - Rechtsgrondslag** bevat opties die gebruikers selecteren om
 1. Typ een beschrijving van het item in het veld **Beschrijving**.
 
 1. Klik op **Opslaan** om de wijzigingen op te slaan of **Annuleren** om ze te verwerpen.
-
-## Gerelateerde inhoud
-
-* [Items toevoegen aan de lijst Privacy - Bron][1]
-
-[1]: ./add-source

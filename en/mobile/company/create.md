@@ -10,6 +10,10 @@ content_type: howto
 tier: core
 platform: mobile
 redirect_from: /en/mobile/superoffice-mobile/company/create
+related:
+  - /en/mobile/contact/create
+  - /en/mobile/contact/scan-business-card
+  - /en/company/learn/merge-companies
 language: en
 ---
 
@@ -33,13 +37,4 @@ When you are out visiting, you can register companies directly from Mobile CRM.
 
 Updating company information is similar to [editing a contact][3]. Simply, tap the **Edit** icon (<i class="ph ph-pencil-simple" aria-label="true"></i>) in the upper-right corner.
 
-## Related content
-
-* [Add contact][1]
-* [Scan a business card][2]
-* [Merge companies][4]
-
-[1]: ../contact/create
-[2]: ../contact/scan-business-card
 [3]: ../contact/update
-[4]: ../../company/learn/merge-companies

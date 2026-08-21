@@ -13,6 +13,10 @@ topic: licenses
 audience: settings
 audience_tooltip: Indstillinger og vedligehold
 userflow_index: true
+related:
+  - CRM og licenser: /da/admin/license/index
+  - Brugerplaner til SuperOffice CRM Online: /da/admin/license/user-plans
+  - Aktiver licens: /da/admin/license/activate
 language: da
 ---
 
@@ -94,15 +98,5 @@ Organisationer, der migrerer fra **SuperOffice CRM Online** (det modulbaserede a
 | Sales Premium | Growth |
 | Service Premium | Growth |
 | Marketing Premium | Plus |
-
-## Relateret indhold
-
-* [CRM og licenser][1]
-* [Brugerplaner til SuperOffice CRM Online][2]
-* [Aktiver licens][3]
-
-[1]: ./index
-[2]: ./user-plans
-[3]: ./activate
 
 [img1]: ../../../media/loc/en/admin/licenses-suite-core-with-upgrade.png

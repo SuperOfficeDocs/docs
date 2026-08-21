@@ -16,6 +16,8 @@ redirect_from:
   - /en/admin/options/learn/number-allocation/index
   - /en/admin/options/learn/number-allocation/configure
 userflow_index: true
+related:
+  - Specify default values for new document templates: /en/document/templates/admin/document-template-defaults
 language: en
 ---
 
@@ -83,9 +85,3 @@ The table below shows the consequences of different combinations of the values *
 | | x | | x | No number is allocated. The user can specify a number, but it must be unique. The database can have unlimited empty fields. |
 | | | x | x | No number is allocated, nor may the user specify a number. Useful when using counters from third party suppliers. |
 | | | x | | No number is allocated, nor may the user specify a number. The database can have only one empty field. (Not recommended.) |
-
-## Related content
-
-* [Specify default values for new document templates][3]
-
-[3]: ../../document/templates/admin/document-template-defaults

@@ -14,6 +14,8 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /en/admin/lists/learn/privacy-source-add
 userflow_index: true
+related:
+  - How to add items to the Privacy - Legal base list: /en/security/privacy/admin/add-legal-base
 language: en
 ---
 
@@ -43,9 +45,4 @@ The **Privacy - Source** list contains options that users select to show how and
 
 1. Click **Save** to save the changes or **Cancel** to reject them.
 
-## Related content
-
-* [How to add items to the Privacy - Legal base list][2]
-
 [1]: ../../../document/templates/admin/link-template
-[2]: ./add-legal-base

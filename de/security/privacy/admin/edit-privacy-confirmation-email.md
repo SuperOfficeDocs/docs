@@ -14,6 +14,9 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /de/security/privacy/learn/edit-privacy-confirmation-email
 userflow_index: true
+related:
+  - Wie Sie eine E-Mail-Vorlage hinzufügen: /de/email/admin/add-email-template
+  - Datenschutz-E-Mail wegen des Rechts von Personen auf Information senden: /de/security/privacy/learn/send-privacy-confirmation-email
 language: de
 ---
 
@@ -36,11 +39,3 @@ Die E-Mail-Vorlage zur Datenschutzbestätigung ist eine **E-Mail-Vorlage**, die 
 1. Klicken Sie erneut auf **Speichern**, um zur Liste der E-Mail-Vorlagen zurückzukehren.
 
     Die neue bearbeitete Version ist jetzt fertig und kann sofort verwendet werden.
-
-## Verwandte Inhalte
-
-* [Wie Sie eine E-Mail-Vorlage hinzufügen][1]
-* [Datenschutz-E-Mail wegen des Rechts von Personen auf Information senden][2]
-
-[1]: ../../../email/admin/add-email-template
-[2]: ../learn/send-privacy-confirmation-email

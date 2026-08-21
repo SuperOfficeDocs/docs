@@ -12,6 +12,11 @@ platform: mobile
 redirect_from:
   - /en/mobile/superoffice-mobile/company-contact/update
   - /en/mobile/superoffice-mobile/contact/update
+related:
+  - Add a contact (in Mobile CRM): /en/mobile/contact/create
+  - Delete a contact (in SuperOffice CRM): /en/contact/learn/delete
+  - /en/contact/learn/move
+  - /en/contact/learn/merge-contacts
 language: en
 ---
 
@@ -40,15 +45,3 @@ language: en
 1. Tap **Edit subscription**.
 1. Tap to activate/deactivate a subscription.
 1. Save.
-
-## Related content
-
-* [Add a contact (in Mobile CRM)][1]
-* [Delete a contact (in SuperOffice CRM)][2]
-* [Move a contact to another company][3]
-* [Merge contacts][4]
-
-[1]: ./create
-[2]: ../../contact/learn/delete
-[3]: ../../contact/learn/move
-[4]: ../../contact/learn/merge-contacts

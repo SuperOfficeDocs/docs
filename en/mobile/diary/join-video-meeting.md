@@ -10,6 +10,9 @@ content_type: howto
 tier: core
 platform: mobile
 redirect_from: /en/mobile/superoffice-mobile/diary/join-video-meeting
+related:
+  - /en/mobile/manage-notifications
+  - About video meetings: /en/diary/learn/video-meetings
 language: en
 ---
 
@@ -30,13 +33,5 @@ If you have configured **notifications** for meetings, a **pop-up alert** will a
 * Simply tap **Join video meeting** in the notification to join instantly.
 
 ![Mobile CRM video meeting notification -app-screen][img3]
-
-## Related content
-
-* [Manage notifications][1]
-* [About video meetings][2]
-
-[1]: ../manage-notifications
-[2]: ../../diary/learn/video-meetings
 
 [img3]: /media/loc/en/release-notes/mobile/92-6.png

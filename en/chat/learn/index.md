@@ -14,6 +14,11 @@ topic: chat
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /en/chat/learn/screen/index
+related:
+  - /en/chat/learn/respond
+  - /en/chat/learn/statistics
+  - Use the chat function as a customer: /en/chat/learn/as-customer
+  - Link chat to SuperOffice contact: /en/chat/learn/link-to-person
 language: en
 ---
 
@@ -79,20 +84,9 @@ Here you can match the customer in the chat with an existing contact in SuperOff
 
 If the customer is found in SuperOffice, you can show contact information, requests, sales, follow-ups and previously registered chat sessions.
 
-## Related content
-
-* [Respond to a chat][4]
-* [View chat statistics][5]
-* [Use the chat function as a customer][6]
-* [Link chat to SuperOffice contact][7]
-
 [1]: ../../knowledge-base/learn/faq/index
 [3]: ../../knowledge-base/learn/reply-templates/index
 [4]: ./respond
-[5]: ./statistics
-[6]: ./as-customer
-[7]: ./link-to-person
 [11]: ./create-request
 [12]: ./transfer-to-agent
-
 [img1]: /media/loc/en/chat/10-chat-mainpage.png

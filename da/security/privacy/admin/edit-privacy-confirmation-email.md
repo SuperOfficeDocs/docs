@@ -15,6 +15,9 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /da/security/privacy/learn/edit-privacy-confirmation-email
 userflow_index: true
+related:
+  - Sådan tilføjer du en e-mailskabelon: /da/email/admin/add-email-template
+  - Send en privacy-e-mail om dine personers ret til at blive informeret: /da/security/privacy/learn/send-privacy-confirmation-email
 language: da
 ---
 
@@ -37,11 +40,3 @@ E-mailskabelonen med bekræftelse om personbeskyttelse er en **e-mailskabelon**,
 1. Klik på **Gem** igen for at vende tilbage til listen E-mailskabelon.
 
     Den nye redigerede version er nu klar og kan bruges med det samme.
-
-## Relateret indhold
-
-* [Sådan tilføjer du en e-mailskabelon][1]
-* [Send en privacy-e-mail om dine personers ret til at blive informeret][2]
-
-[1]: ../../../email/admin/add-email-template
-[2]: ../learn/send-privacy-confirmation-email

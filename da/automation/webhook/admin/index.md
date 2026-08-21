@@ -13,6 +13,9 @@ topic: webhook
 audience: settings
 audience_tooltip: Settings and maintenance
 userflow_index: true
+related:
+  - /da/automation/webhook/admin/create
+  - Webhooks-udviklervejledning: /en/automation/webhook/dev/index
 language: da
 ---
 
@@ -86,13 +89,5 @@ Webhook'en vender tilbage til Aktiv-status og genoptager normal levering.
 ## Beskeder i SuperOffice
 
 Notifikationsmodtagere ser en advarsel i SuperOffice, når en webhook automatisk deaktiveres. Vælg advarslen for at åbne Webhooks-panelet.
-
-## Relateret indhold
-
-* [Opret webhook][1]
-* [Webhooks-udviklervejledning][2]
-
-[1]: ./create
-[2]: ../../../../en/automation/webhook/dev/index
 
 [img1]: ../../../../media/loc/en/admin/admin-system-design-webhook-overview.png

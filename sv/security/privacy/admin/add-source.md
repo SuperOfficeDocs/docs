@@ -15,6 +15,8 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /sv/admin/lists/learn/privacy-source-add
 userflow_index: true
+related:
+  - Så lägger du till poster i listan Integritet - Rättslig grund: /sv/security/privacy/admin/add-legal-base
 language: sv
 ---
 
@@ -44,9 +46,4 @@ Listan **Integritet - Källa** innehåller alternativ som användare väljer fö
 
 1. Klicka på **Spara** för att spara ändringarna eller **Avbryt** för att ignorera dem.
 
-## Relaterat innehåll
-
-* [Så lägger du till poster i listan Integritet - Rättslig grund][2]
-
 [1]: ../../../document/templates/admin/link-template
-[2]: ./add-legal-base

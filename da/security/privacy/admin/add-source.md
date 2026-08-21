@@ -15,6 +15,8 @@ audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /da/admin/lists/learn/privacy-source-add
 userflow_index: true
+related:
+  - Sådan tilføjes forekomster på listen Personbeskyttelse - Retsgrundlag: /da/security/privacy/admin/add-legal-base
 language: da
 ---
 
@@ -44,9 +46,4 @@ Listen **Personbeskyttelse - Kilde** indeholder muligheder, som brugerne vælger
 
 1. Klik på **Gem** for at gemme ændringerne eller **Annuller** for at forkaste dem.
 
-## Relateret indhold
-
-* [Sådan tilføjes forekomster på listen Personbeskyttelse - Retsgrundlag][2]
-
 [1]: ../../../document/templates/admin/link-template
-[2]: ./add-legal-base

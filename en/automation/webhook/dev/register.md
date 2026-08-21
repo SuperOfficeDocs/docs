@@ -9,6 +9,8 @@ content_type: howto
 audience: api
 audience_tooltip: SuperOffice APIs and database
 redirect_from: /en/automation/webhook/register
+related:
+  - Webhooks panel in Settings and maintenance - create and manage webhooks without writing code: /en/automation/webhook/admin/index
 language: en
 ---
 
@@ -60,9 +62,3 @@ When the event(s) happen (`contact.changed` for example), then the target URL is
   "WebhookName":"Name you provided"
 }
 ```
-
-## Related content
-
-* [Webhooks panel in Settings and maintenance][1] - create and manage webhooks without writing code
-
-[1]: ../admin/index

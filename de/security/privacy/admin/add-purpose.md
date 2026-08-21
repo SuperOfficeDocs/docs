@@ -15,6 +15,9 @@ audience: settings
 audience_tooltip: Einstellungen und Verwaltung
 redirect_from: /de/security/privacy/learn/admin/add-consent-purpose
 userflow_index: true
+related:
+  - Datenschutz - Rechtsgrundlage: /de/security/privacy/learn/index#legal-basis
+  - Datenschutz - Nachweis: /de/security/privacy/learn/index#source
 language: de
 ---
 
@@ -51,11 +54,4 @@ Lernen Sie, wie Sie Zwecke für die Verarbeitung personenbezogener Daten hinzuf�
 
 1. Klicken Sie auf <i class="ph ph-translate" aria-label="Translate"></i> neben einem Feld, um neue [Übersetzungen][1] der Feldtexte hinzuzufügen oder vorhandene zu bearbeiten.
 
-## Verwandte Inhalte
-
-* [Datenschutz - Rechtsgrundlage][2]
-* [Datenschutz - Nachweis][3]
-
 [1]: ../../../localization/learn/translate-fields
-[2]: ../learn/index#legal-basis
-[3]: ../learn/index#source
