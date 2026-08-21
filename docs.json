@@ -49,9 +49,6 @@
     }
   },
   "integrations": {
-    "ga4": {
-        "measurementId": "G-J5XBFCGZ00"
-    },
     "gtm": {
         "tagId": "GTM-TCP8W5Z7"
     }
