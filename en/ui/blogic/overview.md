@@ -76,6 +76,6 @@ With scripts, you can:
 [11]: ./url-parameters
 [12]: ../../customization/web-panels/admin/index
 [13]: ../../customization/soprotocol/index
-[14]: <xref:CRMScript.Native.EventData>
-[15]: <xref:CRMScript.Native.HtmlElement>
-[16]: <xref:CRMScript.Native.MainMenu>
+[14]: /en/automation/crmscript/reference/CRMScript.Native.EventData
+[15]: /en/automation/crmscript/reference/CRMScript.Native.HtmlElement
+[16]: /en/automation/crmscript/reference/CRMScript.Native.MainMenu

@@ -29,4 +29,4 @@ t.load(2);
 print(t.getValue("ticketStatus"));
 ```
 
-[3]: <xref:CRMScript.Native.Ticket.getValue(String)>
+[3]: /en/automation/crmscript/reference/CRMScript.Native.Ticket#getvaluestring

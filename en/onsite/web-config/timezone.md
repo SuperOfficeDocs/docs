@@ -25,4 +25,4 @@ Configuration values related to TimeZone.
 
 See the [NetServer Core reference][1] for details about handling this programmatically.
 
-[1]: <xref:SuperOffice.Configuration.ConfigFile.TimeZone>
+[1]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/reference/netserver/core/SuperOffice.Configuration.ConfigFile.TimeZone.yml

@@ -81,4 +81,4 @@ If we have added more attendees, more records will be entered into the `appointm
 
 [1]: ../../../../database/tables/appointment
 [2]: ../../../../diary/learn/invitation/index
-[4]: <xref:SuperOffice.CRM.Services.ParticipantInfo>
+[4]: /en/api/reference/webapi/SuperOffice.WebApi.Data.ParticipantInfo

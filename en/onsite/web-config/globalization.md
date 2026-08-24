@@ -27,4 +27,4 @@ This configuration is used to access the Globalization section (user origin) in 
 
 See the [NetServer Core reference][1] for details about handling this programmatically.
 
-[1]: <xref:SuperOffice.Configuration.ConfigFile.Globalization>
+[1]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/reference/netserver/core/SuperOffice.Configuration.ConfigFile.Globalization.yml

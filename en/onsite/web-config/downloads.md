@@ -30,4 +30,4 @@ Configuration values related to Downloads.
 
 See the [NetServer Core reference][1] for details about handling this programmatically.
 
-[1]: <xref:SuperOffice.Configuration.ConfigFile.Downloads>
+[1]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/reference/netserver/core/SuperOffice.Configuration.ConfigFile.Downloads.yml

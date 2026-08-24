@@ -39,4 +39,4 @@ The `SoFormsAuthentication` group contains configuration settings used to contro
 
 See the [NetServer Core reference][1] for details about handling this programmatically.
 
-[1]: <xref:SuperOffice.Configuration.ConfigFile.SoFormsAuthentication>
+[1]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/reference/netserver/core/SuperOffice.Configuration.ConfigFile.SoFormsAuthentication.yml

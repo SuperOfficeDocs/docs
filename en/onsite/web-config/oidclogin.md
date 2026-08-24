@@ -21,4 +21,4 @@ Utility class to get access to values related to CRM OIDC login.
 
 See the [NetServer Core reference][1] for details about handling this programmatically.
 
-[1]: <xref:SuperOffice.Configuration.ConfigFile.OidcLogin>
+[1]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/reference/netserver/core/SuperOffice.Configuration.ConfigFile.OidcLogin.yml

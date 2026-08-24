@@ -30,4 +30,4 @@ Configuration for SuperOffice CRM Online. Used by SuperOffice only.
 
 See the [NetServer Core reference][1] for details about handling this programmatically.
 
-[1]: <xref:SuperOffice.Configuration.ConfigFile.Cloud>
+[1]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/reference/netserver/core/SuperOffice.Configuration.ConfigFile.Cloud.yml

@@ -47,6 +47,6 @@ appointmentAgent.Accept(242,0);
 Attendees may change only the priority, alarm, and completed fields. The rest is the responsibility of the meeting organizer. Updates are covered for [appointments][1] in general.
 
 [1]: ./update-appointment
-[2]: <xref:CRMScript.NetServer.NSAppointmentAgent.GetMyAppointments(Integer)>
-[3]: <xref:CRMScript.NetServer.NSAppointmentAgent.GetPersonDiary(Integer,Integer)>
+[2]: /en/automation/crmscript/reference/CRMScript.NetServer.NSAppointmentAgent#getmyappointmentsinteger
+[3]: /en/automation/crmscript/reference/CRMScript.NetServer.NSAppointmentAgent#getpersondiaryintegerinteger
 [4]: ../../../../diary/learn/invitation/index

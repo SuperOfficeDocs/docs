@@ -43,7 +43,7 @@ Configuration values related to the [WebAPI][2] web services.
 
 See the [NetServer Core reference][1] for details about handling this programmatically.
 
-[1]: <xref:SuperOffice.Configuration.ConfigFile.WebApi>
+[1]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/reference/netserver/core/SuperOffice.Configuration.ConfigFile.WebApi.yml
 [2]: ../reference/restful/index
 [3]: ../../onsite/install/netserver/setup-rest#integrated-with-active-directory
 [4]: ../../onsite/install/netserver/setup-rest#configure-basic-authentication-iis

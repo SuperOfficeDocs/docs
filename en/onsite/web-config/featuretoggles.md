@@ -27,4 +27,4 @@ Configuration values for feature toggles.
 * See the [NetServer Core reference][1] for details about handling this programmatically.
 * See the *SuperOffice.FeatureToggles.dll* assembly for definitions. Toggles not mentioned there will be OFF.
 
-[1]: <xref:SuperOffice.Configuration.ConfigFile.FeatureToggles>
+[1]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/reference/netserver/core/SuperOffice.Configuration.ConfigFile.FeatureToggles.yml
