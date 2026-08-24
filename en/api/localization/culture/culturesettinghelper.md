@@ -28,4 +28,4 @@ using( new CultureSettingHelper("es-ES") )
 
 Multiple overloads enable more behaviors. See the [CultureSettingsHelper reference][1] for more details.
 
-[1]: <xref:SuperOffice.Globalization.CultureSettingHelper>
+[1]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/reference/netserver/core/SuperOffice.Globalization.CultureSettingHelper.yml

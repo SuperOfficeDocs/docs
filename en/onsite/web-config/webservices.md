@@ -29,5 +29,5 @@ Configuration section used to define SuperOffice CRM web service settings.
 
 See the [NetServer Core reference][1] for details about handling this programmatically.
 
-[1]: <xref:SuperOffice.Configuration.ConfigFile.WebServices>
+[1]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/reference/netserver/core/SuperOffice.Configuration.ConfigFile.WebServices.yml
 [2]: ./services

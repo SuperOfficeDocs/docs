@@ -115,7 +115,7 @@ The travel license is unrestricted, so it does not have a counter to disable it.
 
 The sum of licenses assigned to any particular module is limited to the number in `ModuleLicense`. A new license set from SuperLicense will not be accepted if more than the acquired number is already assigned.
 
-[2]: <xref:SuperOffice.License.SoLicenseNames>
+[2]: /en/api/reference/webapi/SuperOffice.License.SoLicenseNames
 [3]: ./hidden-licenses
 [4]: /en/database/tables/ModuleOwner
 [5]: /en/database/tables/ModuleLicense

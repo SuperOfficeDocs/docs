@@ -60,7 +60,7 @@ The main classes are:
 These contain all the functions you need to localize your application. See the [Resource Providers][2] documentation to learn more about how to include more culture-specific resources for SuperOffice.
 
 [1]: ./language/resource-providers
-[2]: <xref:SuperOffice.Globalization.RC>
+[2]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/reference/netserver/core/SuperOffice.Globalization.RC.yml
 [3]: ./culture/culturesettinghelper
 [4]: ./address/addressformatter
 [5]: ./culture/culturedataformatter

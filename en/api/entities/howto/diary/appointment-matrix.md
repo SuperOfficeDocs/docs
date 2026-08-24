@@ -50,6 +50,6 @@ using (SoSession.Authenticate("tje3", "tje3"))
 }
 ```
 
-[1]: <xref:SuperOffice.CRM.Entities.AppointmentMatrix>
+[1]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/reference/netserver/core/SuperOffice.CRM.Entities.AppointmentMatrix.yml
 [2]: ../../../../diary/learn/invitation/index
 [3]: ../../../../diary/dev/index#frequency
