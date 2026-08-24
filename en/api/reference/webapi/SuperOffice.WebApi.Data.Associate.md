@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_Data_Associate"></a> Class Associate
+# &lt;a id="SuperOffice_WebApi_Data_Associate"&gt;&lt;/a&gt; Class Associate
 
 Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -30,13 +30,13 @@ public class Associate : Carrier
 ## Examples
 
 Get Associate 123 using the WebApi client:
-<pre><code class="lang-csharp">var configuration = new WebApiConfiguration(url);
+&lt;pre&gt;&lt;code class="lang-csharp"&gt;var configuration = new WebApiConfiguration(url);
 var agent = new AssociateAgent(configuration);
-var associate = agent.GetAssociate( 123 );</code></pre>
+var associate = agent.GetAssociate( 123 );&lt;/code&gt;&lt;/pre&gt;
 
 ## Constructors
 
-### <a id="SuperOffice_WebApi_Data_Associate__ctor"></a> Associate\(\)
+### &lt;a id="SuperOffice_WebApi_Data_Associate__ctor"&gt;&lt;/a&gt; Associate\(\)
 
 Default constructor - defaults any enum props to 0.
 
@@ -46,7 +46,7 @@ public Associate()
 
 ## Properties
 
-### <a id="SuperOffice_WebApi_Data_Associate_AssociateId"></a> AssociateId
+### &lt;a id="SuperOffice_WebApi_Data_Associate_AssociateId"&gt;&lt;/a&gt; AssociateId
 
 Primary key
 
@@ -58,11 +58,11 @@ public virtual int AssociateId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### <a id="SuperOffice_WebApi_Data_Associate_CustomFields"></a> CustomFields
+### &lt;a id="SuperOffice_WebApi_Data_Associate_CustomFields"&gt;&lt;/a&gt; CustomFields
 
 Udef + Extra fields added to the carrier. Extra fields as defined by changes to database schema + user-defined fields as defined by admin.
 Custom fields combines user defined fields and extra fields into one bucket. 
-The individual <xref href="SuperOffice.WebApi.Data.Associate.ExtraFields" data-throw-if-not-resolved="false"></xref> and UserDefinedFields properties are deprecated in favor of this
+The individual &lt;xref href="SuperOffice.WebApi.Data.Associate.ExtraFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; and UserDefinedFields properties are deprecated in favor of this
 combined collection.
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
 
@@ -77,15 +77,15 @@ public virtual StringDictionary CustomFields { get; set; }
 #### Remarks
 
 The naming convention of the key string is as follows:
-<table><tbody><tr><td class="term">Extra field data</td><td class="description">
-       [Extra field name]<p></p>
-       Example: <pre><code class="lang-csharp">'x_gorp' = '[I:123]'</code></pre>
-       </td></tr><tr><td class="term">User defined field data</td><td class="description">
-       [Prog-id name]<p></p>
-    Example: <pre><code class="lang-csharp">'SuperOffice:1' = '[I:123]'</code></pre><p></p>
-       </td></tr></tbody></table>
+&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="term"&gt;Extra field data&lt;/td&gt;&lt;td class="description"&gt;
+       [Extra field name]&lt;p&gt;&lt;/p&gt;
+       Example: &lt;pre&gt;&lt;code class="lang-csharp"&gt;'x_gorp' = '[I:123]'&lt;/code&gt;&lt;/pre&gt;
+       &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;User defined field data&lt;/td&gt;&lt;td class="description"&gt;
+       [Prog-id name]&lt;p&gt;&lt;/p&gt;
+    Example: &lt;pre&gt;&lt;code class="lang-csharp"&gt;'SuperOffice:1' = '[I:123]'&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
+       &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 
-### <a id="SuperOffice_WebApi_Data_Associate_Deleted"></a> Deleted
+### &lt;a id="SuperOffice_WebApi_Data_Associate_Deleted"&gt;&lt;/a&gt; Deleted
 
 If true, the user is retired and should have no rights, not appear in lists, etc.
 
@@ -97,7 +97,7 @@ public virtual bool Deleted { get; set; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-### <a id="SuperOffice_WebApi_Data_Associate_EjUserId"></a> EjUserId
+### &lt;a id="SuperOffice_WebApi_Data_Associate_EjUserId"&gt;&lt;/a&gt; EjUserId
 
 ID of the ej user record corresponding to this associate; 0 for associates that are not ej users
 
@@ -109,9 +109,9 @@ public virtual int EjUserId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### <a id="SuperOffice_WebApi_Data_Associate_ExtraFields"></a> ExtraFields
+### &lt;a id="SuperOffice_WebApi_Data_Associate_ExtraFields"&gt;&lt;/a&gt; ExtraFields
 
-Deprecated: Use <xref href="SuperOffice.WebApi.Data.Associate.CustomFields" data-throw-if-not-resolved="false"></xref> instead.
+Deprecated: Use &lt;xref href="SuperOffice.WebApi.Data.Associate.CustomFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instead.
 Extra fields added to the carrier. This could be data from Plug-ins, the foreign key system, external applications, etc.
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
 
@@ -126,23 +126,23 @@ public virtual StringDictionary ExtraFields { get; set; }
 #### Remarks
 
 The naming convention of the key string is as follows:
-<table><tbody><tr><td class="term">Plug-in data</td><td class="description">
+&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="term"&gt;Plug-in data&lt;/td&gt;&lt;td class="description"&gt;
        [Plug-in name].[Property name]
        Example: DocumentPlugin.DocumentType
-       </td></tr><tr><td class="term">Foreign key data</td><td class="description">
+       &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;Foreign key data&lt;/td&gt;&lt;td class="description"&gt;
        The device identity is appended directly to the device name if it exists. 
     This is not commonly used, but the database opens for this as a possibility to have several devices with the same name, 
     and hence we would ensure an unique key if this field is used.
     Example: Audience.SecretService.DefaultCountry
-    </td></tr><tr><td class="term">User defined table data</td><td class="description">
+    &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;User defined table data&lt;/td&gt;&lt;td class="description"&gt;
        [Table name].[Field name]
        Example: Phunneling.AggregatedSales
-       </td></tr><tr><td class="term">Other</td><td class="description">
+       &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;Other&lt;/td&gt;&lt;td class="description"&gt;
        Other data sources must ensure an unique name. If the key already exists we do not add the data to the dictionary. 
        We also ensure that SuperOffice data are added first, so that existing data doesnt change when more data sources are added (with duplicate data keys).
-       </td></tr></tbody></table>
+       &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 
-### <a id="SuperOffice_WebApi_Data_Associate_FormalName"></a> FormalName
+### &lt;a id="SuperOffice_WebApi_Data_Associate_FormalName"&gt;&lt;/a&gt; FormalName
 
 The associate's culture formatted formalname (firstname, middleName and lastname, title, mrmrs)
 
@@ -154,7 +154,7 @@ public virtual string FormalName { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_Associate_FullName"></a> FullName
+### &lt;a id="SuperOffice_WebApi_Data_Associate_FullName"&gt;&lt;/a&gt; FullName
 
 The associate's culture formatted fullname (firstname, middleName and lastname)
 
@@ -166,7 +166,7 @@ public virtual string FullName { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_Associate_GroupIdx"></a> GroupIdx
+### &lt;a id="SuperOffice_WebApi_Data_Associate_GroupIdx"&gt;&lt;/a&gt; GroupIdx
 
 Primary group membership, see UserGroupLink for secondary memberships
 
@@ -178,7 +178,7 @@ public virtual int GroupIdx { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### <a id="SuperOffice_WebApi_Data_Associate_Name"></a> Name
+### &lt;a id="SuperOffice_WebApi_Data_Associate_Name"&gt;&lt;/a&gt; Name
 
 Initials, also login name, possibly database user name
 
@@ -190,10 +190,10 @@ public virtual string Name { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_Associate_PersonId"></a> PersonId
+### &lt;a id="SuperOffice_WebApi_Data_Associate_PersonId"&gt;&lt;/a&gt; PersonId
 
 Owning person record
-<p>Use MDO List name "person" to get list items.</p>
+&lt;p&gt;Use MDO List name "person" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual int PersonId { get; set; }
@@ -203,7 +203,7 @@ public virtual int PersonId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### <a id="SuperOffice_WebApi_Data_Associate_Rank"></a> Rank
+### &lt;a id="SuperOffice_WebApi_Data_Associate_Rank"&gt;&lt;/a&gt; Rank
 
 Rank order
 
@@ -215,7 +215,7 @@ public virtual short Rank { get; set; }
 
  [short](https://learn.microsoft.com/dotnet/api/system.int16)
 
-### <a id="SuperOffice_WebApi_Data_Associate_Tooltip"></a> Tooltip
+### &lt;a id="SuperOffice_WebApi_Data_Associate_Tooltip"&gt;&lt;/a&gt; Tooltip
 
 Tooltip or other description
 
@@ -227,7 +227,7 @@ public virtual string Tooltip { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_Associate_Type"></a> Type
+### &lt;a id="SuperOffice_WebApi_Data_Associate_Type"&gt;&lt;/a&gt; Type
 
 User type - 1 = internal user, 2 = resource, 3 = external user, 4 = anonymous, 5 = system
 NULL if unknown enum value.
@@ -245,7 +245,7 @@ public UserType? Type { get; set; }
 
 [Associate](SuperOffice.WebApi.Data.Associate.md).[Type\_String](SuperOffice.WebApi.Data.Associate.md\#SuperOffice\_WebApi\_Data\_Associate\_Type\_String)
 
-### <a id="SuperOffice_WebApi_Data_Associate_Type_String"></a> Type\_String
+### &lt;a id="SuperOffice_WebApi_Data_Associate_Type_String"&gt;&lt;/a&gt; Type\_String
 
 User type - 1 = internal user, 2 = resource, 3 = external user, 4 = anonymous, 5 = system
 Raw string enum value.
@@ -263,7 +263,7 @@ public string Type_String { get; set; }
 
 [Associate](SuperOffice.WebApi.Data.Associate.md).[Type](SuperOffice.WebApi.Data.Associate.md\#SuperOffice\_WebApi\_Data\_Associate\_Type)
 
-### <a id="SuperOffice_WebApi_Data_Associate_UserName"></a> UserName
+### &lt;a id="SuperOffice_WebApi_Data_Associate_UserName"&gt;&lt;/a&gt; UserName
 
 User name
 

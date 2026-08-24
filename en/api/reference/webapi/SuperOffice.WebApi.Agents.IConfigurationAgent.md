@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_Agents_IConfigurationAgent"></a> Interface IConfigurationAgent
+# &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent"&gt;&lt;/a&gt; Interface IConfigurationAgent
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface IConfigurationAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_ClearConfigurationCacheAsync_System_String_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> ClearConfigurationCacheAsync\(string, string, bool, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_ClearConfigurationCacheAsync_System_String_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ClearConfigurationCacheAsync\(string, string, bool, RequestOptions\)
 
 Configuration XML's may be expensive to build and parse, and are therefore cached to the database. &lt;para/&gt;Cahcing is per application/instance/associate, and can be turned off through the config file. &lt;para/&gt;If caching is on, and the configuration is changed, it is necessary to clear the cached configurations from the database, through this call.&lt;para/&gt;Note that changes to the externalapplication table require cache invalidation. SoAdmin will do so automatically.
 
@@ -48,7 +48,7 @@ Override language/culture codes on this request.
 
 There is no return value.
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_CreateDefaultConfigurableScreenDeltaAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultConfigurableScreenDeltaAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_CreateDefaultConfigurableScreenDeltaAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultConfigurableScreenDeltaAsync\(RequestOptions\)
 
 Set default values into a new ConfigurableScreenDelta.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -65,11 +65,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md)\&gt;
 
 A blank ConfigurableScreenDelta
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_CreateDefaultDiaryViewEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultDiaryViewEntityAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_CreateDefaultDiaryViewEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultDiaryViewEntityAsync\(RequestOptions\)
 
 Set default values into a new DiaryViewEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -86,11 +86,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DiaryViewEntity](SuperOffice.WebApi.Data.DiaryViewEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DiaryViewEntity](SuperOffice.WebApi.Data.DiaryViewEntity.md)\&gt;
 
 A blank DiaryViewEntity
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_CreateDefaultLandingPageEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultLandingPageEntityAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_CreateDefaultLandingPageEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultLandingPageEntityAsync\(RequestOptions\)
 
 Set default values into a new LandingPageEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -107,11 +107,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LandingPageEntity](SuperOffice.WebApi.Data.LandingPageEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LandingPageEntity](SuperOffice.WebApi.Data.LandingPageEntity.md)\&gt;
 
 A blank LandingPageEntity
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_CreateDefaultSystemEventEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultSystemEventEntityAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_CreateDefaultSystemEventEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultSystemEventEntityAsync\(RequestOptions\)
 
 Set default values into a new SystemEventEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -128,11 +128,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SystemEventEntity](SuperOffice.WebApi.Data.SystemEventEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SystemEventEntity](SuperOffice.WebApi.Data.SystemEventEntity.md)\&gt;
 
 A blank SystemEventEntity
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_DeleteConfigurableScreenDeltaAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteConfigurableScreenDeltaAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_DeleteConfigurableScreenDeltaAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteConfigurableScreenDeltaAsync\(int, RequestOptions\)
 
 Deletes the ConfigurableScreenDelta
 
@@ -154,7 +154,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_DeleteDiaryViewEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteDiaryViewEntityAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_DeleteDiaryViewEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteDiaryViewEntityAsync\(int, RequestOptions\)
 
 Deletes the DiaryViewEntity
 
@@ -176,7 +176,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_DeleteLandingPageEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteLandingPageEntityAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_DeleteLandingPageEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteLandingPageEntityAsync\(int, RequestOptions\)
 
 Deletes the LandingPageEntity
 
@@ -198,7 +198,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_DeleteSystemEventEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteSystemEventEntityAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_DeleteSystemEventEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteSystemEventEntityAsync\(int, RequestOptions\)
 
 Deletes the SystemEventEntity
 
@@ -220,7 +220,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_DeleteWindowPosSizeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteWindowPosSizeAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_DeleteWindowPosSizeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteWindowPosSizeAsync\(int, RequestOptions\)
 
 Deletes a window and dialog position and size setting.
 
@@ -242,7 +242,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_ExistsSystemEventAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> ExistsSystemEventAsync\(string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_ExistsSystemEventAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ExistsSystemEventAsync\(string, RequestOptions\)
 
 Is there a system event with the given key?
 
@@ -262,11 +262,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 The system event
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetAllFeatureTogglesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetAllFeatureTogglesAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetAllFeatureTogglesAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAllFeatureTogglesAsync\(RequestOptions\)
 
 Get all the feature toggles with their state (on/off)
 
@@ -282,11 +282,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringBoolDictionary](SuperOffice.WebApi.Data.StringBoolDictionary.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringBoolDictionary](SuperOffice.WebApi.Data.StringBoolDictionary.md)\&gt;
 
 The feature toggles with their state (on/off)
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetAnyConfigurationAsync_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetAnyConfigurationAsync\(string, string, string, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetAnyConfigurationAsync_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAnyConfigurationAsync\(string, string, string, string, RequestOptions\)
 
 Get one defined configuration fragment, with full reference resolution and parsing applied. This is essentially the same service as the GetPageConfiguration, except that this service is not locked to objects of type Page.
 
@@ -318,11 +318,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Fully resolved and parsed configuration XML, as string.
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetApplicationConfigurationAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetApplicationConfigurationAsync\(string, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetApplicationConfigurationAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetApplicationConfigurationAsync\(string, string, RequestOptions\)
 
 Return the application configuration. This is a list of pages, with information about the name, main panel and preference mappings of each page.
 
@@ -346,11 +346,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 XML structure containing the application configuration
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetCRMUrlAsync_System_String_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetCRMUrlAsync\(string, string, bool, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetCRMUrlAsync_System_String_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCRMUrlAsync\(string, string, bool, RequestOptions\)
 
 Returns a valid url based in the soprotocol provided
 
@@ -378,11 +378,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Url with soprotocol
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetCSAuthUrlAsync_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetCSAuthUrlAsync\(string, string, string, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetCSAuthUrlAsync_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCSAuthUrlAsync\(string, string, string, string, RequestOptions\)
 
 Will generate an url to the emarketing module
 
@@ -414,11 +414,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Returns a valid CS URL composed of the give parameters.
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetCSRegistryValueAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetCSRegistryValueAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetCSRegistryValueAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCSRegistryValueAsync\(int, RequestOptions\)
 
 This method will get a value from the CS Registry table.
 
@@ -438,11 +438,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 The value of the specified Registry entry
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetCSWwwFolderAsync_SuperOffice_WebApi_RequestOptions_"></a> GetCSWwwFolderAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetCSWwwFolderAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCSWwwFolderAsync\(RequestOptions\)
 
 This method will get the www folder for CS
 
@@ -458,11 +458,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 The www folder for CS
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetConfigurableScreenDeltaAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetConfigurableScreenDeltaAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetConfigurableScreenDeltaAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetConfigurableScreenDeltaAsync\(int, RequestOptions\)
 
 Gets a specific ConfigurableScreenDelta object.
 
@@ -482,11 +482,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md)\&gt;
 
 ConfigurableScreenDelta
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetConfigurableScreenDeltasByDeltaAsync_SuperOffice_WebApi_Data_ConfigurableScreenDelta_SuperOffice_WebApi_RequestOptions_"></a> GetConfigurableScreenDeltasByDeltaAsync\(ConfigurableScreenDelta, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetConfigurableScreenDeltasByDeltaAsync_SuperOffice_WebApi_Data_ConfigurableScreenDelta_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetConfigurableScreenDeltasByDeltaAsync\(ConfigurableScreenDelta, RequestOptions\)
 
 This method will return a configurablescreen delta matching the properties received from the incomming delta
 
@@ -506,11 +506,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md)\[\]\&gt;
 
 An array of deltas matching the values of the incomming parameter-delta
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetConfigurableScreenDeltasByQueryAsync_SuperOffice_WebApi_Data_DeltaQuery_SuperOffice_WebApi_RequestOptions_"></a> GetConfigurableScreenDeltasByQueryAsync\(DeltaQuery, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetConfigurableScreenDeltasByQueryAsync_SuperOffice_WebApi_Data_DeltaQuery_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetConfigurableScreenDeltasByQueryAsync\(DeltaQuery, RequestOptions\)
 
 This method will return a configurablescreen delta matching the properties received from the incomming query
 
@@ -530,11 +530,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md)\[\]\&gt;
 
 An array of deltas matching the values of the incomming query
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetCsCgiUrlAsync_SuperOffice_WebApi_RequestOptions_"></a> GetCsCgiUrlAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetCsCgiUrlAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCsCgiUrlAsync\(RequestOptions\)
 
 This method will get the host name for external CS
 
@@ -550,11 +550,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Will get the host name for where CS Customer Center is installed
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetCsCgiUrlInternalAsync_SuperOffice_WebApi_RequestOptions_"></a> GetCsCgiUrlInternalAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetCsCgiUrlInternalAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCsCgiUrlInternalAsync\(RequestOptions\)
 
 This method will get the host name for CS
 
@@ -570,11 +570,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Will get the host name for where CS is installed
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetCsProgramUrlAsync_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetCsProgramUrlAsync\(string, string, string, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetCsProgramUrlAsync_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCsProgramUrlAsync\(string, string, string, string, RequestOptions\)
 
 This method will convert a module name into a CS URL.
 
@@ -606,11 +606,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Returns a valid CS URL composed of the give parameters.
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetCustomerUrlAsync_SuperOffice_WebApi_RequestOptions_"></a> GetCustomerUrlAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetCustomerUrlAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCustomerUrlAsync\(RequestOptions\)
 
 This method will get the URL for the external access to the customer center
 
@@ -626,11 +626,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 The URL to the customer center, without any actions
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetDiaryViewEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetDiaryViewEntityAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetDiaryViewEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDiaryViewEntityAsync\(int, RequestOptions\)
 
 Gets a specific DiaryViewEntity object.
 
@@ -650,11 +650,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DiaryViewEntity](SuperOffice.WebApi.Data.DiaryViewEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DiaryViewEntity](SuperOffice.WebApi.Data.DiaryViewEntity.md)\&gt;
 
 DiaryViewEntity
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetEMarketingUrlAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetEMarketingUrlAsync\(string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetEMarketingUrlAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetEMarketingUrlAsync\(string, RequestOptions\)
 
 ```csharp
 Task<string> GetEMarketingUrlAsync(string language, RequestOptions requestOptions = null)
@@ -670,9 +670,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetEmailNumberOfDaysAsync_SuperOffice_WebApi_RequestOptions_"></a> GetEmailNumberOfDaysAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetEmailNumberOfDaysAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetEmailNumberOfDaysAsync\(RequestOptions\)
 
 ```csharp
 Task<int> GetEmailNumberOfDaysAsync(RequestOptions requestOptions = null)
@@ -686,11 +686,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
 
 Number of days in the past for which we are fetching email
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetFilterListAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetFilterListAsync\(string, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetFilterListAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetFilterListAsync\(string, string, RequestOptions\)
 
 Get the list of filters to be used for processing the configuration data for this application.
 
@@ -714,11 +714,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 XML representing the list of filters and any configuration data they may need.
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetHelpDispatcherUrlAsync_SuperOffice_WebApi_RequestOptions_"></a> GetHelpDispatcherUrlAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetHelpDispatcherUrlAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetHelpDispatcherUrlAsync\(RequestOptions\)
 
 Will get the GetHelpDispatcherUrl used by the help system
 
@@ -734,11 +734,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 URL to be used by the help system
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetLandingPageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetLandingPageAsync\(int, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetLandingPageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetLandingPageAsync\(int, string, RequestOptions\)
 
 Get the landing page configuration for an associate and entity table. Creates the landing page row if it does not exist.
 
@@ -762,11 +762,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LandingPageEntity](SuperOffice.WebApi.Data.LandingPageEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LandingPageEntity](SuperOffice.WebApi.Data.LandingPageEntity.md)\&gt;
 
 The landing page for the given associate and entity table.
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetLandingPageEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetLandingPageEntityAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetLandingPageEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetLandingPageEntityAsync\(int, RequestOptions\)
 
 Gets a specific LandingPageEntity object.
 
@@ -786,11 +786,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LandingPageEntity](SuperOffice.WebApi.Data.LandingPageEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LandingPageEntity](SuperOffice.WebApi.Data.LandingPageEntity.md)\&gt;
 
 LandingPageEntity
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetMyWindowPosSizesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetMyWindowPosSizesAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetMyWindowPosSizesAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetMyWindowPosSizesAsync\(RequestOptions\)
 
 Gets the window and dialog position and size settings belonging to the currently logged on user
 
@@ -806,11 +806,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[WindowPosSize](SuperOffice.WebApi.Data.WindowPosSize.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WindowPosSize](SuperOffice.WebApi.Data.WindowPosSize.md)\[\]\&gt;
 
 Array of window and dialog position and size settings
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetObjectMappingAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetObjectMappingAsync\(string, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetObjectMappingAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetObjectMappingAsync\(string, string, RequestOptions\)
 
 Get the object mappings, i.e., the what code objects should be instantiated to handle the entities of the client configuration.
 
@@ -834,11 +834,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 XML containing the object mappings, including assembly and class names
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetPageConfigurationAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetPageConfigurationAsync\(string, string, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetPageConfigurationAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPageConfigurationAsync\(string, string, string, RequestOptions\)
 
 Get the configuration for one whole web page, including all its panels etc.  totally asynchronous items like menus are not included, but all references are resolved and all special processing is applied.
 
@@ -866,11 +866,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 XML containing the configuration for the given page, from the page down to the control level.
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetRecipeAppliesToMappingsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetRecipeAppliesToMappingsAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetRecipeAppliesToMappingsAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetRecipeAppliesToMappingsAsync\(RequestOptions\)
 
 Return the a  dictionary with recipeId as key, and chosen appliesTo for that recipe, Like projecttype for projectcardrecipe
 
@@ -886,11 +886,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\&gt;
 
 Mapping of recipeId and selected appliesToKey
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetRefreshedPageConfigurationAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetRefreshedPageConfigurationAsync\(string, string, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetRefreshedPageConfigurationAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetRefreshedPageConfigurationAsync\(string, string, string, RequestOptions\)
 
 Get the configuration for one whole web page, including all its panels etc.  totally asynchronous items like menus are not included, but all references are resolved and all special processing is applied. Does not use cache for fetching, but updates the cache with refreshed configuration.
 
@@ -918,11 +918,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 XML containing the configuration for the given page, from the page down to the control level.
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetScreenConfigurationDeltaAsync_SuperOffice_WebApi_Data_DeltaType_SuperOffice_WebApi_Data_DeltaState_SuperOffice_WebApi_RequestOptions_"></a> GetScreenConfigurationDeltaAsync\(DeltaType, DeltaState, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetScreenConfigurationDeltaAsync_SuperOffice_WebApi_Data_DeltaType_SuperOffice_WebApi_Data_DeltaState_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetScreenConfigurationDeltaAsync\(DeltaType, DeltaState, RequestOptions\)
 
 This method will return a json with all deltas for screen
 
@@ -946,11 +946,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 A string with recipe delta in json for logged in associate of given deltatype
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetScreenConfigurationDeltasAsync_SuperOffice_WebApi_RequestOptions_"></a> GetScreenConfigurationDeltasAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetScreenConfigurationDeltasAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetScreenConfigurationDeltasAsync\(RequestOptions\)
 
 This method will return a json with all deltas for screen
 
@@ -966,11 +966,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 A string with all recipe deltas in json for logged in associate
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetSpfDomainAsync_SuperOffice_WebApi_RequestOptions_"></a> GetSpfDomainAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetSpfDomainAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSpfDomainAsync\(RequestOptions\)
 
 Get the SPF domain defined for the mail cluster for this tenant (Online only)
 
@@ -986,11 +986,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 The configured SPF domain. Will return empty for Onsite installations or tenants in Online using custom SMTP
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetSystemEventEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetSystemEventEntityAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetSystemEventEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSystemEventEntityAsync\(int, RequestOptions\)
 
 Gets a specific SystemEventEntity object.
 
@@ -1010,11 +1010,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SystemEventEntity](SuperOffice.WebApi.Data.SystemEventEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SystemEventEntity](SuperOffice.WebApi.Data.SystemEventEntity.md)\&gt;
 
 SystemEventEntity
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetWindowPosSizeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetWindowPosSizeAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetWindowPosSizeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetWindowPosSizeAsync\(int, RequestOptions\)
 
 Gets a specific WindowPosSize object.
 
@@ -1034,11 +1034,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[WindowPosSize](SuperOffice.WebApi.Data.WindowPosSize.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WindowPosSize](SuperOffice.WebApi.Data.WindowPosSize.md)\&gt;
 
 WindowPosSize
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetWindowPosSizeListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetWindowPosSizeListAsync\(int\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetWindowPosSizeListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetWindowPosSizeListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific WindowPosSize objects.
 
@@ -1058,11 +1058,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[WindowPosSize](SuperOffice.WebApi.Data.WindowPosSize.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WindowPosSize](SuperOffice.WebApi.Data.WindowPosSize.md)\[\]\&gt;
 
 Array of WindowPosSize objects
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetWindowPosSizesOnAssociateIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetWindowPosSizesOnAssociateIdAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetWindowPosSizesOnAssociateIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetWindowPosSizesOnAssociateIdAsync\(int, RequestOptions\)
 
 Gets the window and dialog position and size settings belonging to the specified associate
 
@@ -1082,11 +1082,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[WindowPosSize](SuperOffice.WebApi.Data.WindowPosSize.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WindowPosSize](SuperOffice.WebApi.Data.WindowPosSize.md)\[\]\&gt;
 
 Array of window and dialog position and size settings
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetWindowPosSizesOnPersonIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetWindowPosSizesOnPersonIdAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetWindowPosSizesOnPersonIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetWindowPosSizesOnPersonIdAsync\(int, RequestOptions\)
 
 Gets the window and dialog position and size settings belonging to the specified person
 
@@ -1106,11 +1106,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[WindowPosSize](SuperOffice.WebApi.Data.WindowPosSize.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WindowPosSize](SuperOffice.WebApi.Data.WindowPosSize.md)\[\]\&gt;
 
 Array of window and dialog position and size settings
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetWwwUrlAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetWwwUrlAsync\(string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetWwwUrlAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetWwwUrlAsync\(string, RequestOptions\)
 
 Will get the default URL used for the logo, from the [NetServices] PageUrl preferencec, with tags substituted.
 
@@ -1130,11 +1130,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 URL to be used when clicking the logo
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetWwwUrlForSMWebAsync_SuperOffice_WebApi_RequestOptions_"></a> GetWwwUrlForSMWebAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_GetWwwUrlForSMWebAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetWwwUrlForSMWebAsync\(RequestOptions\)
 
 Returns the URL used for the logo by the SM.web client. Uses urldispatch.aspx
 
@@ -1150,11 +1150,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Link to urldispatch.aspx tagged with [SOSITEURL]
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_RebuildCustomObjectArchivePanelDeltasAsync_SuperOffice_WebApi_RequestOptions_"></a> RebuildCustomObjectArchivePanelDeltasAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_RebuildCustomObjectArchivePanelDeltasAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RebuildCustomObjectArchivePanelDeltasAsync\(RequestOptions\)
 
 Flush and rebuild CustomObjectArchivePanel deltas.
 
@@ -1174,7 +1174,7 @@ Override language/culture codes on this request.
 
 No return value
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_RebuildTaskMenuDeltasAsync_SuperOffice_WebApi_RequestOptions_"></a> RebuildTaskMenuDeltasAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_RebuildTaskMenuDeltasAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RebuildTaskMenuDeltasAsync\(RequestOptions\)
 
 Flush and rebuild TaskMenu deltas.
 
@@ -1194,7 +1194,7 @@ Override language/culture codes on this request.
 
 No return value
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_RebuildUdefDeltasAsync_SuperOffice_WebApi_RequestOptions_"></a> RebuildUdefDeltasAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_RebuildUdefDeltasAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RebuildUdefDeltasAsync\(RequestOptions\)
 
 Flush and rebuild userdefined field deltas. Mostly used after publishing udefs or adding/editing Customer Service extrafields
 
@@ -1214,7 +1214,7 @@ Override language/culture codes on this request.
 
 No return value
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_RebuildWebpanelDeltasAsync_SuperOffice_WebApi_RequestOptions_"></a> RebuildWebpanelDeltasAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_RebuildWebpanelDeltasAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RebuildWebpanelDeltasAsync\(RequestOptions\)
 
 Flush and rebuild webpanel deltas. Mostly used after adding/editing webpanels or change group visibility of them
 
@@ -1234,7 +1234,7 @@ Override language/culture codes on this request.
 
 No return value
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_SaveAndPublishAsync_SuperOffice_WebApi_Data_ConfigurableScreenDelta_SuperOffice_WebApi_RequestOptions_"></a> SaveAndPublishAsync\(ConfigurableScreenDelta, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_SaveAndPublishAsync_SuperOffice_WebApi_Data_ConfigurableScreenDelta_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveAndPublishAsync\(ConfigurableScreenDelta, RequestOptions\)
 
 Save the incomming draft and publish
 
@@ -1254,11 +1254,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md)\&gt;
 
 The newly published version of the ConfigurbleScreenDelta
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_SaveConfigurableScreenDeltaAsync_SuperOffice_WebApi_Data_ConfigurableScreenDelta_SuperOffice_WebApi_RequestOptions_"></a> SaveConfigurableScreenDeltaAsync\(ConfigurableScreenDelta, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_SaveConfigurableScreenDeltaAsync_SuperOffice_WebApi_Data_ConfigurableScreenDelta_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveConfigurableScreenDeltaAsync\(ConfigurableScreenDelta, RequestOptions\)
 
 Updates the existing ConfigurableScreenDelta or creates a new ConfigurableScreenDelta if the id parameter is 0.
 
@@ -1278,11 +1278,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md)\&gt;
 
 New or updated ConfigurableScreenDelta
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_SaveDiaryViewEntityAsync_SuperOffice_WebApi_Data_DiaryViewEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveDiaryViewEntityAsync\(DiaryViewEntity, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_SaveDiaryViewEntityAsync_SuperOffice_WebApi_Data_DiaryViewEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveDiaryViewEntityAsync\(DiaryViewEntity, RequestOptions\)
 
 Updates the existing DiaryViewEntity or creates a new DiaryViewEntity if the id parameter is 0.
 
@@ -1302,11 +1302,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DiaryViewEntity](SuperOffice.WebApi.Data.DiaryViewEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DiaryViewEntity](SuperOffice.WebApi.Data.DiaryViewEntity.md)\&gt;
 
 New or updated DiaryViewEntity
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_SaveLandingPageEntityAsync_SuperOffice_WebApi_Data_LandingPageEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveLandingPageEntityAsync\(LandingPageEntity, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_SaveLandingPageEntityAsync_SuperOffice_WebApi_Data_LandingPageEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveLandingPageEntityAsync\(LandingPageEntity, RequestOptions\)
 
 Updates the existing LandingPageEntity or creates a new LandingPageEntity if the id parameter is 0.
 
@@ -1326,11 +1326,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LandingPageEntity](SuperOffice.WebApi.Data.LandingPageEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LandingPageEntity](SuperOffice.WebApi.Data.LandingPageEntity.md)\&gt;
 
 New or updated LandingPageEntity
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_SaveSystemEventEntityAsync_SuperOffice_WebApi_Data_SystemEventEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveSystemEventEntityAsync\(SystemEventEntity, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_SaveSystemEventEntityAsync_SuperOffice_WebApi_Data_SystemEventEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveSystemEventEntityAsync\(SystemEventEntity, RequestOptions\)
 
 Updates the existing SystemEventEntity or creates a new SystemEventEntity if the id parameter is 0.
 
@@ -1350,11 +1350,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SystemEventEntity](SuperOffice.WebApi.Data.SystemEventEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SystemEventEntity](SuperOffice.WebApi.Data.SystemEventEntity.md)\&gt;
 
 New or updated SystemEventEntity
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_SaveWindowPosSizeAsync_SuperOffice_WebApi_Data_WindowPosSize_SuperOffice_WebApi_RequestOptions_"></a> SaveWindowPosSizeAsync\(WindowPosSize, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_SaveWindowPosSizeAsync_SuperOffice_WebApi_Data_WindowPosSize_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveWindowPosSizeAsync\(WindowPosSize, RequestOptions\)
 
 Saves a window and dialog position and size setting.
 
@@ -1374,11 +1374,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[WindowPosSize](SuperOffice.WebApi.Data.WindowPosSize.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WindowPosSize](SuperOffice.WebApi.Data.WindowPosSize.md)\&gt;
 
 The saved item
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_SaveWindowPosSizesAsync_SuperOffice_WebApi_Data_WindowPosSize___SuperOffice_WebApi_RequestOptions_"></a> SaveWindowPosSizesAsync\(WindowPosSize\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_SaveWindowPosSizesAsync_SuperOffice_WebApi_Data_WindowPosSize___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveWindowPosSizesAsync\(WindowPosSize\[\], RequestOptions\)
 
 Saves a set of window and dialog position and size settings.
 
@@ -1398,11 +1398,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[WindowPosSize](SuperOffice.WebApi.Data.WindowPosSize.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WindowPosSize](SuperOffice.WebApi.Data.WindowPosSize.md)\[\]\&gt;
 
 The saved items
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_SetAppliesToKeyAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> SetAppliesToKeyAsync\(string, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_SetAppliesToKeyAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetAppliesToKeyAsync\(string, string, RequestOptions\)
 
 Set the type of assignTo the deltas of the given recipe should have
 
@@ -1430,7 +1430,7 @@ Override language/culture codes on this request.
 
 Returns nothing
 
-### <a id="SuperOffice_WebApi_Agents_IConfigurationAgent_SetLandingPagePinForAssociateAsync_System_Boolean_System_Int32_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> SetLandingPagePinForAssociateAsync\(bool, int, string, string, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IConfigurationAgent_SetLandingPagePinForAssociateAsync_System_Boolean_System_Int32_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetLandingPagePinForAssociateAsync\(bool, int, string, string, int, RequestOptions\)
 
 Pin or unpin an entity or selection on the landing page identified by associate and entity table. Creates the landing page row if it does not exist.
 

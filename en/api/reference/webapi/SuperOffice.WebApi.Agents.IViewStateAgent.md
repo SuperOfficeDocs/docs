@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_Agents_IViewStateAgent"></a> Interface IViewStateAgent
+# &lt;a id="SuperOffice_WebApi_Agents_IViewStateAgent"&gt;&lt;/a&gt; Interface IViewStateAgent
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface IViewStateAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_IViewStateAgent_DeleteHistoryAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteHistoryAsync\(string, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IViewStateAgent_DeleteHistoryAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteHistoryAsync\(string, int, RequestOptions\)
 
 Deletes the history element
 
@@ -42,7 +42,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IViewStateAgent_GetCurrentAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetCurrentAsync\(string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IViewStateAgent_GetCurrentAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCurrentAsync\(string, RequestOptions\)
 
 Get the current (most recent) value of the history list. This is the item with rank = 1. If no item exists a default value is returned. This is usually the first item in the table representing the history list.
 
@@ -62,11 +62,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[History](SuperOffice.WebApi.Data.History.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[History](SuperOffice.WebApi.Data.History.md)\&gt;
 
 The current (most recent) history item
 
-### <a id="SuperOffice_WebApi_Agents_IViewStateAgent_GetHistoriesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetHistoriesAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IViewStateAgent_GetHistoriesAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetHistoriesAsync\(RequestOptions\)
 
 Returns all history items that belong to the currently logged in user
 
@@ -82,11 +82,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[History](SuperOffice.WebApi.Data.History.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[History](SuperOffice.WebApi.Data.History.md)\[\]\&gt;
 
 Array of History items
 
-### <a id="SuperOffice_WebApi_Agents_IViewStateAgent_GetHistoriesByNameAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetHistoriesByNameAsync\(string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IViewStateAgent_GetHistoriesByNameAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetHistoriesByNameAsync\(string, RequestOptions\)
 
 Returns the named history list that belong to the currently logged in user
 
@@ -106,11 +106,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[History](SuperOffice.WebApi.Data.History.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[History](SuperOffice.WebApi.Data.History.md)\[\]\&gt;
 
 Array of History items
 
-### <a id="SuperOffice_WebApi_Agents_IViewStateAgent_GetHistoriesByNamesAndIdsAsync_SuperOffice_WebApi_Data_HistoryRequest___SuperOffice_WebApi_RequestOptions_"></a> GetHistoriesByNamesAndIdsAsync\(HistoryRequest\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IViewStateAgent_GetHistoriesByNamesAndIdsAsync_SuperOffice_WebApi_Data_HistoryRequest___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetHistoriesByNamesAndIdsAsync\(HistoryRequest\[\], RequestOptions\)
 
 Returns history data for the named entities and the given ids - which may not directly correspond to the current history records in the database.&lt;para/&gt;Use this method if you know exactly which items you need, regardless of whether they are in the current history or not.&lt;para/&gt;The history in the database is not changed or even looked at by this method.
 
@@ -130,11 +130,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[History](SuperOffice.WebApi.Data.History.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[History](SuperOffice.WebApi.Data.History.md)\[\]\&gt;
 
 On history item for each history name/id pair specified, in exactly the same order as specified.&lt;para/&gt;If a specified item cannot be found in the database, its Id will be 0 and its name will be blank in the return array.
 
-### <a id="SuperOffice_WebApi_Agents_IViewStateAgent_GetHistoriesByNamesAsync_System_String___SuperOffice_WebApi_RequestOptions_"></a> GetHistoriesByNamesAsync\(string\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IViewStateAgent_GetHistoriesByNamesAsync_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetHistoriesByNamesAsync\(string\[\], RequestOptions\)
 
 Returns the named history lists that belong to the currently logged in user
 
@@ -154,11 +154,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[History](SuperOffice.WebApi.Data.History.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[History](SuperOffice.WebApi.Data.History.md)\[\]\&gt;
 
 Array of History items
 
-### <a id="SuperOffice_WebApi_Agents_IViewStateAgent_GetHistoryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetHistoryAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IViewStateAgent_GetHistoryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetHistoryAsync\(int, RequestOptions\)
 
 Gets a specific History object.
 
@@ -178,11 +178,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[History](SuperOffice.WebApi.Data.History.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[History](SuperOffice.WebApi.Data.History.md)\&gt;
 
 History
 
-### <a id="SuperOffice_WebApi_Agents_IViewStateAgent_GetHistoryLengthPrefValueAsync_SuperOffice_WebApi_RequestOptions_"></a> GetHistoryLengthPrefValueAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IViewStateAgent_GetHistoryLengthPrefValueAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetHistoryLengthPrefValueAsync\(RequestOptions\)
 
 Get the logged on user's preferred history list length. Will return the system preference if no user preferences are available.
 
@@ -198,11 +198,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
 
 The history list lenght
 
-### <a id="SuperOffice_WebApi_Agents_IViewStateAgent_GetLiveUiConfigAsync_SuperOffice_WebApi_RequestOptions_"></a> GetLiveUiConfigAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IViewStateAgent_GetLiveUiConfigAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetLiveUiConfigAsync\(RequestOptions\)
 
 Gets live UI configuration
 
@@ -218,11 +218,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LiveUiConfig](SuperOffice.WebApi.Data.LiveUiConfig.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LiveUiConfig](SuperOffice.WebApi.Data.LiveUiConfig.md)\&gt;
 
 Live UI configuration containing the parameters needed for live UI functionality
 
-### <a id="SuperOffice_WebApi_Agents_IViewStateAgent_GetNextCurrentAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetNextCurrentAsync\(string, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IViewStateAgent_GetNextCurrentAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetNextCurrentAsync\(string, int, RequestOptions\)
 
 Returns the next current item. If no item exists a default value is returned. This is usually the first item in the table representing the history list.
 
@@ -246,11 +246,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[History](SuperOffice.WebApi.Data.History.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[History](SuperOffice.WebApi.Data.History.md)\&gt;
 
 The current value.
 
-### <a id="SuperOffice_WebApi_Agents_IViewStateAgent_GetPreviousCurrentAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPreviousCurrentAsync\(string, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IViewStateAgent_GetPreviousCurrentAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPreviousCurrentAsync\(string, int, RequestOptions\)
 
 Returns the previous current item. If no item exists a default value is returned. This is usually the first item in the table representing the history list.
 
@@ -274,11 +274,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[History](SuperOffice.WebApi.Data.History.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[History](SuperOffice.WebApi.Data.History.md)\&gt;
 
 The current value.
 
-### <a id="SuperOffice_WebApi_Agents_IViewStateAgent_PublishAndRetrieveUiEventsAsync_System_Int32_SuperOffice_WebApi_Data_UiEvent___SuperOffice_WebApi_Data_MetricPair___SuperOffice_WebApi_RequestOptions_"></a> PublishAndRetrieveUiEventsAsync\(int, UiEvent\[\], MetricPair\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IViewStateAgent_PublishAndRetrieveUiEventsAsync_System_Int32_SuperOffice_WebApi_Data_UiEvent___SuperOffice_WebApi_Data_MetricPair___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; PublishAndRetrieveUiEventsAsync\(int, UiEvent\[\], MetricPair\[\], RequestOptions\)
 
 Publish zero or more events, and return any new events since the given event id. The initial implementation is in-memory only; applies solely to the front-end web server; and anything older than 20 minutes is discarded
 
@@ -306,11 +306,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UiEvent](SuperOffice.WebApi.Data.UiEvent.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UiEvent](SuperOffice.WebApi.Data.UiEvent.md)\[\]\&gt;
 
 Array of events since the given event ID; within the time span kept by the event mechanism. Event/primarykey combinations are not guaranteed to be unique, and events in the PublishEvents parameter are echoed back to the client
 
-### <a id="SuperOffice_WebApi_Agents_IViewStateAgent_SaveCurrentAsync_SuperOffice_WebApi_Data_History_SuperOffice_WebApi_RequestOptions_"></a> SaveCurrentAsync\(History, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IViewStateAgent_SaveCurrentAsync_SuperOffice_WebApi_Data_History_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveCurrentAsync\(History, RequestOptions\)
 
 Saving the current history item. This history item is saved with Rank = 1, and all the remaining elements rank values are shifted one down. The list is maintained with the max lenght of the History list length preference.
 
@@ -330,11 +330,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[History](SuperOffice.WebApi.Data.History.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[History](SuperOffice.WebApi.Data.History.md)\&gt;
 
 The current (most recent) history item
 
-### <a id="SuperOffice_WebApi_Agents_IViewStateAgent_SaveCurrentsAsync_SuperOffice_WebApi_Data_History___SuperOffice_WebApi_RequestOptions_"></a> SaveCurrentsAsync\(History\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IViewStateAgent_SaveCurrentsAsync_SuperOffice_WebApi_Data_History___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveCurrentsAsync\(History\[\], RequestOptions\)
 
 Saves the history elements as the current value for their respective lists. If more than one item is submitted for the same list, they are added sequently, meaning that the last one is the most current.
 
@@ -354,11 +354,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[History](SuperOffice.WebApi.Data.History.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[History](SuperOffice.WebApi.Data.History.md)\[\]\&gt;
 
 Array of the saved History items
 
-### <a id="SuperOffice_WebApi_Agents_IViewStateAgent_SaveHistoriesAsync_System_String_SuperOffice_WebApi_Data_History___SuperOffice_WebApi_RequestOptions_"></a> SaveHistoriesAsync\(string, History\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IViewStateAgent_SaveHistoriesAsync_System_String_SuperOffice_WebApi_Data_History___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveHistoriesAsync\(string, History\[\], RequestOptions\)
 
 Replaces the existing history-list for the currently logged in user. All elements must belong to the same history list. If not they are ignored.
 
@@ -380,11 +380,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[History](SuperOffice.WebApi.Data.History.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[History](SuperOffice.WebApi.Data.History.md)\[\]\&gt;
 
 Array of the saved History items
 
-### <a id="SuperOffice_WebApi_Agents_IViewStateAgent_SetHistoryLengthPrefValueAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> SetHistoryLengthPrefValueAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_IViewStateAgent_SetHistoryLengthPrefValueAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetHistoryLengthPrefValueAsync\(int, RequestOptions\)
 
 Set the logged on user's preferred history list length.
 
