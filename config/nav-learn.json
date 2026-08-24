@@ -550,6 +550,7 @@
     "icon": "bullseye",
     "root": "en/marketing/learn/index",
     "pages": [
+      "en/marketing/index",
       "en/marketing/learn/create-folder",
       "en/marketing/learn/add-images",
       "en/marketing/learn/message-templates",

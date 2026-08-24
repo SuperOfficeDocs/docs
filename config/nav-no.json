@@ -543,6 +543,7 @@
         "icon": "bullseye",
         "root": "no/marketing/learn/index",
         "pages": [
+          "no/marketing/index",
           "no/marketing/learn/create-folder",
           "no/marketing/learn/add-images",
           "no/marketing/learn/message-templates",
