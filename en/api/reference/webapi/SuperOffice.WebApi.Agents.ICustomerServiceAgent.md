@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent"></a> Interface ICustomerServiceAgent
+# &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent"&gt;&lt;/a&gt; Interface ICustomerServiceAgent
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface ICustomerServiceAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_AddMessageFromMailDataAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> AddMessageFromMailDataAsync\(int, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_AddMessageFromMailDataAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddMessageFromMailDataAsync\(int, string, RequestOptions\)
 
 This method will add a message to an existing request in the sam way as importMail would do it from an email. It accepts RFC822 formatted data
 
@@ -40,11 +40,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketInfo](SuperOffice.WebApi.Data.TicketInfo.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketInfo](SuperOffice.WebApi.Data.TicketInfo.md)\&gt;
 
 An object containing some meta data for the ticket
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_CheckIfCustomizedTemplatesAsync_SuperOffice_WebApi_RequestOptions_"></a> CheckIfCustomizedTemplatesAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_CheckIfCustomizedTemplatesAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CheckIfCustomizedTemplatesAsync\(RequestOptions\)
 
 Checks whether the core html templates are customized
 
@@ -60,11 +60,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 True if the templates are customized
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_CheckSymmetricEncryptionAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> CheckSymmetricEncryptionAsync\(string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_CheckSymmetricEncryptionAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CheckSymmetricEncryptionAsync\(string, RequestOptions\)
 
 Do a test to check that we are using the same encryption keys
 
@@ -84,11 +84,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Encrypted version of the string done by NetServer
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_CreateDefaultCustomerCenterConfigAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultCustomerCenterConfigAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_CreateDefaultCustomerCenterConfigAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultCustomerCenterConfigAsync\(RequestOptions\)
 
 Set default values into a new CustomerCenterConfig.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -105,11 +105,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomerCenterConfig](SuperOffice.WebApi.Data.CustomerCenterConfig.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CustomerCenterConfig](SuperOffice.WebApi.Data.CustomerCenterConfig.md)\&gt;
 
 A blank CustomerCenterConfig
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_CreateDefaultMailboxEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultMailboxEntityAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_CreateDefaultMailboxEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultMailboxEntityAsync\(RequestOptions\)
 
 Set default values into a new MailboxEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -126,11 +126,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MailboxEntity](SuperOffice.WebApi.Data.MailboxEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MailboxEntity](SuperOffice.WebApi.Data.MailboxEntity.md)\&gt;
 
 A blank MailboxEntity
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_CreateSessionAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> CreateSessionAsync\(string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_CreateSessionAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateSessionAsync\(string, RequestOptions\)
 
 Creates a login session for a CS user
 
@@ -150,11 +150,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CsSessionKey](SuperOffice.WebApi.Data.CsSessionKey.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CsSessionKey](SuperOffice.WebApi.Data.CsSessionKey.md)\&gt;
 
 The session key information
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_CreateTicketFromMailDataAsync_System_Int32_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> CreateTicketFromMailDataAsync\(int, string, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_CreateTicketFromMailDataAsync_System_Int32_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateTicketFromMailDataAsync\(int, string, int, RequestOptions\)
 
 This method create a new ticket in the same way as importMail would import an email. It accepts RFC822 formatted data
 
@@ -182,11 +182,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketInfo](SuperOffice.WebApi.Data.TicketInfo.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketInfo](SuperOffice.WebApi.Data.TicketInfo.md)\&gt;
 
 An object containing some meta data for the created ticket
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_DeleteCustomerCenterConfigAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteCustomerCenterConfigAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_DeleteCustomerCenterConfigAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteCustomerCenterConfigAsync\(int, RequestOptions\)
 
 Deletes the CustomerCenterConfig
 
@@ -208,7 +208,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_EventHandlerExistsAsync_SuperOffice_WebApi_Data_EventHandlerType_SuperOffice_WebApi_RequestOptions_"></a> EventHandlerExistsAsync\(EventHandlerType, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_EventHandlerExistsAsync_SuperOffice_WebApi_Data_EventHandlerType_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; EventHandlerExistsAsync\(EventHandlerType, RequestOptions\)
 
 Check if an eventhandler exists for a given enum
 
@@ -228,11 +228,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 True if it exists
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_EventHandlersExistsAsync_SuperOffice_WebApi_Data_EventHandlerType___SuperOffice_WebApi_RequestOptions_"></a> EventHandlersExistsAsync\(EventHandlerType\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_EventHandlersExistsAsync_SuperOffice_WebApi_Data_EventHandlerType___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; EventHandlersExistsAsync\(EventHandlerType\[\], RequestOptions\)
 
 Check if any given eventhandler exists
 
@@ -252,11 +252,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[EventHandlerType](SuperOffice.WebApi.Data.EventHandlerType.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EventHandlerType](SuperOffice.WebApi.Data.EventHandlerType.md)\[\]\&gt;
 
 The existing event handlers
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_ExecuteEventHandlersAsync_SuperOffice_WebApi_Data_EventData_SuperOffice_WebApi_RequestOptions_"></a> ExecuteEventHandlersAsync\(EventData, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_ExecuteEventHandlersAsync_SuperOffice_WebApi_Data_EventData_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ExecuteEventHandlersAsync\(EventData, RequestOptions\)
 
 This method will execute event handlers in CRMScript for a given event.
 
@@ -276,11 +276,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[EventData](SuperOffice.WebApi.Data.EventData.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EventData](SuperOffice.WebApi.Data.EventData.md)\&gt;
 
 The EventData instance after event handler execution
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_FindTicketsByTitleOrIdAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> FindTicketsByTitleOrIdAsync\(string, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_FindTicketsByTitleOrIdAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; FindTicketsByTitleOrIdAsync\(string, int, RequestOptions\)
 
 This method wil search for tickets matching title or id
 
@@ -304,11 +304,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketInfo](SuperOffice.WebApi.Data.TicketInfo.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketInfo](SuperOffice.WebApi.Data.TicketInfo.md)\[\]\&gt;
 
 An array of objects containing some meta data for matching tickets
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetAllCustomerCenterConfigsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetAllCustomerCenterConfigsAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetAllCustomerCenterConfigsAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAllCustomerCenterConfigsAsync\(RequestOptions\)
 
 Get all rows from cust_config as an array of CustomerCenterConfig entities
 
@@ -324,11 +324,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomerCenterConfig](SuperOffice.WebApi.Data.CustomerCenterConfig.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CustomerCenterConfig](SuperOffice.WebApi.Data.CustomerCenterConfig.md)\[\]\&gt;
 
 An array of CustomerCenterConfig entities
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetCustomerCenterConfigAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetCustomerCenterConfigAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetCustomerCenterConfigAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCustomerCenterConfigAsync\(int, RequestOptions\)
 
 Gets a specific CustomerCenterConfig object.
 
@@ -348,11 +348,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomerCenterConfig](SuperOffice.WebApi.Data.CustomerCenterConfig.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CustomerCenterConfig](SuperOffice.WebApi.Data.CustomerCenterConfig.md)\&gt;
 
 CustomerCenterConfig
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetCustomerServiceStartupAsync_SuperOffice_WebApi_RequestOptions_"></a> GetCustomerServiceStartupAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetCustomerServiceStartupAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCustomerServiceStartupAsync\(RequestOptions\)
 
 Get the carrier with data that Service needs when starting up
 
@@ -368,11 +368,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomerServiceStartup](SuperOffice.WebApi.Data.CustomerServiceStartup.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CustomerServiceStartup](SuperOffice.WebApi.Data.CustomerServiceStartup.md)\&gt;
 
 The carrier containing the startup data
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetCustomerServiceStartupByOwnerAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetCustomerServiceStartupByOwnerAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetCustomerServiceStartupByOwnerAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCustomerServiceStartupByOwnerAsync\(int, RequestOptions\)
 
 Get the carrier with data that Service needs when starting up for a specific user
 
@@ -392,11 +392,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomerServiceStartup](SuperOffice.WebApi.Data.CustomerServiceStartup.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CustomerServiceStartup](SuperOffice.WebApi.Data.CustomerServiceStartup.md)\&gt;
 
 The carrier containing the startup data
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetFaqForCustomerAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetFaqForCustomerAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetFaqForCustomerAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetFaqForCustomerAsync\(int, RequestOptions\)
 
 Get a FAQ entry, ment to be displayed for a customer. This can either be a link to the FAQ entry on Custom Center, or it can be the answer and question. This is dependent on Registry setting with reg_id=157
 
@@ -416,11 +416,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 The FAQ to show to the customer. Either a clickable link or the question/answer itself.
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetMailboxEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetMailboxEntityAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetMailboxEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetMailboxEntityAsync\(int, RequestOptions\)
 
 Gets a specific MailboxEntity object.
 
@@ -440,11 +440,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MailboxEntity](SuperOffice.WebApi.Data.MailboxEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MailboxEntity](SuperOffice.WebApi.Data.MailboxEntity.md)\&gt;
 
 MailboxEntity
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetMailboxesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetMailboxesAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetMailboxesAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetMailboxesAsync\(RequestOptions\)
 
 This method will get all registered mailboxes in Service
 
@@ -460,11 +460,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Mailbox](SuperOffice.WebApi.Data.Mailbox.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Mailbox](SuperOffice.WebApi.Data.Mailbox.md)\[\]\&gt;
 
 An array of Mailbox objects
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetParsedTemplateAsync_System_Int32_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetParsedTemplateAsync\(int, int, int, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetParsedTemplateAsync_System_Int32_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetParsedTemplateAsync\(int, int, int, int, RequestOptions\)
 
 Get a specific langauge version of the reply template, and run this trough the parser
 
@@ -496,11 +496,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ReplyTemplateParsed](SuperOffice.WebApi.Data.ReplyTemplateParsed.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ReplyTemplateParsed](SuperOffice.WebApi.Data.ReplyTemplateParsed.md)\&gt;
 
 The parsed reply template
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetPreviewFaqEntryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPreviewFaqEntryAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetPreviewFaqEntryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPreviewFaqEntryAsync\(int, RequestOptions\)
 
 Get a faq entry from its faq entry id
 
@@ -520,11 +520,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PreviewFaqEntry](SuperOffice.WebApi.Data.PreviewFaqEntry.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreviewFaqEntry](SuperOffice.WebApi.Data.PreviewFaqEntry.md)\&gt;
 
 FAQ entry suitable for preview
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetPreviewQuickReplyAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPreviewQuickReplyAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetPreviewQuickReplyAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPreviewQuickReplyAsync\(int, RequestOptions\)
 
 Get a quick reply from its quick reply id
 
@@ -544,11 +544,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PreviewQuickReply](SuperOffice.WebApi.Data.PreviewQuickReply.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreviewQuickReply](SuperOffice.WebApi.Data.PreviewQuickReply.md)\&gt;
 
 Quick reply suitable for preview
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetPreviewReplyTemplateAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPreviewReplyTemplateAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetPreviewReplyTemplateAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPreviewReplyTemplateAsync\(int, RequestOptions\)
 
 Get a reply template from its reply template id
 
@@ -568,11 +568,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PreviewReplyTemplate](SuperOffice.WebApi.Data.PreviewReplyTemplate.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreviewReplyTemplate](SuperOffice.WebApi.Data.PreviewReplyTemplate.md)\&gt;
 
 Reply template suitable for preview
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetProgramUrlAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetProgramUrlAsync\(string, bool, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetProgramUrlAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProgramUrlAsync\(string, bool, RequestOptions\)
 
 This method will convert a module name into a Service URL.
 
@@ -596,11 +596,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Returns a valid Service URL composed of the give parameters.
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetSmsConfigAsync_SuperOffice_WebApi_RequestOptions_"></a> GetSmsConfigAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetSmsConfigAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSmsConfigAsync\(RequestOptions\)
 
 Get the SmsConfig settings for Customer Service sms providers.
 
@@ -616,11 +616,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SmsConfig](SuperOffice.WebApi.Data.SmsConfig.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SmsConfig](SuperOffice.WebApi.Data.SmsConfig.md)\&gt;
 
 Current SMS configuration.
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetStatisticsAsync_SuperOffice_WebApi_Data_StatusScreenPanelType___SuperOffice_WebApi_RequestOptions_"></a> GetStatisticsAsync\(StatusScreenPanelType\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetStatisticsAsync_SuperOffice_WebApi_Data_StatusScreenPanelType___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetStatisticsAsync\(StatusScreenPanelType\[\], RequestOptions\)
 
 Returns the calculated results for the required statistics for the Customer Service Status Page
 
@@ -640,11 +640,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StatisticsDataSet](SuperOffice.WebApi.Data.StatisticsDataSet.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StatisticsDataSet](SuperOffice.WebApi.Data.StatisticsDataSet.md)\[\]\&gt;
 
 Array of StatisticsDataSet
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetSystemTemplateSettingsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetSystemTemplateSettingsAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetSystemTemplateSettingsAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSystemTemplateSettingsAsync\(RequestOptions\)
 
 Returns system template settings
 
@@ -660,11 +660,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SystemTemplateSettings](SuperOffice.WebApi.Data.SystemTemplateSettings.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SystemTemplateSettings](SuperOffice.WebApi.Data.SystemTemplateSettings.md)\&gt;
 
 System template settings item
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetUnparsedTemplateAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetUnparsedTemplateAsync\(int, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_GetUnparsedTemplateAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetUnparsedTemplateAsync\(int, int, RequestOptions\)
 
 Get a specific langauge version of the reply template. No parsing is performed.
 
@@ -688,11 +688,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ReplyTemplateParsed](SuperOffice.WebApi.Data.ReplyTemplateParsed.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ReplyTemplateParsed](SuperOffice.WebApi.Data.ReplyTemplateParsed.md)\&gt;
 
 The unparsed reply template, but using the same return data structure
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_HasChatNotifyAsync_SuperOffice_WebApi_RequestOptions_"></a> HasChatNotifyAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_HasChatNotifyAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; HasChatNotifyAsync\(RequestOptions\)
 
 Check if user has any chat notification
 
@@ -708,11 +708,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 True if the user has at least one notification setting on
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_RemoveSessionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> RemoveSessionAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_RemoveSessionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveSessionAsync\(int, RequestOptions\)
 
 Remove a login session for a CS user
 
@@ -734,7 +734,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_ReportSessionActiveAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> ReportSessionActiveAsync\(string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_ReportSessionActiveAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ReportSessionActiveAsync\(string, RequestOptions\)
 
 Report a session as being 'active'; will update the corresponding row in login table, but not more than once per minute/session
 
@@ -754,11 +754,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
 
 The ID of the login table row, or 0 if not found
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_SaveAllCustomerCenterConfigsAsync_SuperOffice_WebApi_Data_CustomerCenterConfig___SuperOffice_WebApi_RequestOptions_"></a> SaveAllCustomerCenterConfigsAsync\(CustomerCenterConfig\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_SaveAllCustomerCenterConfigsAsync_SuperOffice_WebApi_Data_CustomerCenterConfig___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveAllCustomerCenterConfigsAsync\(CustomerCenterConfig\[\], RequestOptions\)
 
 Save an array of CustomerCenterConfig entities to the database
 
@@ -782,7 +782,7 @@ Override language/culture codes on this request.
 
 void
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_SaveCustomerCenterConfigAsync_SuperOffice_WebApi_Data_CustomerCenterConfig_SuperOffice_WebApi_RequestOptions_"></a> SaveCustomerCenterConfigAsync\(CustomerCenterConfig, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_SaveCustomerCenterConfigAsync_SuperOffice_WebApi_Data_CustomerCenterConfig_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveCustomerCenterConfigAsync\(CustomerCenterConfig, RequestOptions\)
 
 Updates the existing CustomerCenterConfig or creates a new CustomerCenterConfig if the id parameter is 0.
 
@@ -802,11 +802,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomerCenterConfig](SuperOffice.WebApi.Data.CustomerCenterConfig.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CustomerCenterConfig](SuperOffice.WebApi.Data.CustomerCenterConfig.md)\&gt;
 
 New or updated CustomerCenterConfig
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_SaveMailboxEntityAsync_SuperOffice_WebApi_Data_MailboxEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveMailboxEntityAsync\(MailboxEntity, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_SaveMailboxEntityAsync_SuperOffice_WebApi_Data_MailboxEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveMailboxEntityAsync\(MailboxEntity, RequestOptions\)
 
 Updates the existing MailboxEntity or creates a new MailboxEntity if the id parameter is 0.
 
@@ -826,11 +826,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MailboxEntity](SuperOffice.WebApi.Data.MailboxEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MailboxEntity](SuperOffice.WebApi.Data.MailboxEntity.md)\&gt;
 
 New or updated MailboxEntity
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_SaveSystemTemplateSettingsAsync_SuperOffice_WebApi_Data_SystemTemplateSettings_SuperOffice_WebApi_RequestOptions_"></a> SaveSystemTemplateSettingsAsync\(SystemTemplateSettings, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_SaveSystemTemplateSettingsAsync_SuperOffice_WebApi_Data_SystemTemplateSettings_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveSystemTemplateSettingsAsync\(SystemTemplateSettings, RequestOptions\)
 
 Saves and validates updated system templates. Throws exception if validation fails
 
@@ -850,11 +850,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SystemTemplateSettings](SuperOffice.WebApi.Data.SystemTemplateSettings.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SystemTemplateSettings](SuperOffice.WebApi.Data.SystemTemplateSettings.md)\&gt;
 
 Updated system template settings
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_SessionIsValidAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> SessionIsValidAsync\(string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_SessionIsValidAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SessionIsValidAsync\(string, RequestOptions\)
 
 Check if a CS session is valid
 
@@ -874,11 +874,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 True if there is a valid CS session based on the session key
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_TestSmtpServerAsync_System_String_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> TestSmtpServerAsync\(string, string, bool, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_TestSmtpServerAsync_System_String_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; TestSmtpServerAsync\(string, string, bool, RequestOptions\)
 
 This method will do a test of a SMTP account, by sending an email to a special @superoffice.com account
 
@@ -906,11 +906,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SmtpTestResult](SuperOffice.WebApi.Data.SmtpTestResult.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SmtpTestResult](SuperOffice.WebApi.Data.SmtpTestResult.md)\&gt;
 
 Contains the result of the test
 
-### <a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_UpdateFeatureTogglesAsync_SuperOffice_WebApi_Data_CsFeatureToggle___SuperOffice_WebApi_RequestOptions_"></a> UpdateFeatureTogglesAsync\(CsFeatureToggle\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_ICustomerServiceAgent_UpdateFeatureTogglesAsync_SuperOffice_WebApi_Data_CsFeatureToggle___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; UpdateFeatureTogglesAsync\(CsFeatureToggle\[\], RequestOptions\)
 
 Update the cached FeatureToggles for CS
 

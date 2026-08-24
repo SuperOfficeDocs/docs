@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_Data_User"></a> Class User
+# &lt;a id="SuperOffice_WebApi_Data_User"&gt;&lt;/a&gt; Class User
 
 Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -31,18 +31,18 @@ public class User : Carrier
 ## Examples
 
 Get User 123 using the WebApi client:
-<pre><code class="lang-csharp">var configuration = new WebApiConfiguration(url);
+&lt;pre&gt;&lt;code class="lang-csharp"&gt;var configuration = new WebApiConfiguration(url);
 var agent = new UserAgent(configuration);
-var user = agent.GetUser( 123 );</code></pre>
+var user = agent.GetUser( 123 );&lt;/code&gt;&lt;/pre&gt;
 
 ## Remarks
 
-Use <xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" data-throw-if-not-resolved="false"></xref>:
-            All User: <pre><code class="lang-csharp">"AllUsers"</code></pre>
+Use &lt;xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;:
+            All User: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"AllUsers"&lt;/code&gt;&lt;/pre&gt;
 
 ## Constructors
 
-### <a id="SuperOffice_WebApi_Data_User__ctor"></a> User\(\)
+### &lt;a id="SuperOffice_WebApi_Data_User__ctor"&gt;&lt;/a&gt; User\(\)
 
 Default constructor - defaults any enum props to 0.
 
@@ -52,7 +52,7 @@ public User()
 
 ## Properties
 
-### <a id="SuperOffice_WebApi_Data_User_AssociateId"></a> AssociateId
+### &lt;a id="SuperOffice_WebApi_Data_User_AssociateId"&gt;&lt;/a&gt; AssociateId
 
 Primary key
 
@@ -64,7 +64,7 @@ public virtual int AssociateId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### <a id="SuperOffice_WebApi_Data_User_Credentials"></a> Credentials
+### &lt;a id="SuperOffice_WebApi_Data_User_Credentials"&gt;&lt;/a&gt; Credentials
 
 List of credentials registered for this user. i.e. valid authentication methods.
 
@@ -76,11 +76,11 @@ public virtual Credential[] Credentials { get; set; }
 
  [Credential](SuperOffice.WebApi.Data.Credential.md)\[\]
 
-### <a id="SuperOffice_WebApi_Data_User_CustomFields"></a> CustomFields
+### &lt;a id="SuperOffice_WebApi_Data_User_CustomFields"&gt;&lt;/a&gt; CustomFields
 
 Udef + Extra fields added to the carrier. Extra fields as defined by changes to database schema + user-defined fields as defined by admin.
 Custom fields combines user defined fields and extra fields into one bucket. 
-The individual <xref href="SuperOffice.WebApi.Data.User.ExtraFields" data-throw-if-not-resolved="false"></xref> and UserDefinedFields properties are deprecated in favor of this
+The individual &lt;xref href="SuperOffice.WebApi.Data.User.ExtraFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; and UserDefinedFields properties are deprecated in favor of this
 combined collection.
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
 
@@ -95,15 +95,15 @@ public virtual StringDictionary CustomFields { get; set; }
 #### Remarks
 
 The naming convention of the key string is as follows:
-<table><tbody><tr><td class="term">Extra field data</td><td class="description">
-       [Extra field name]<p></p>
-       Example: <pre><code class="lang-csharp">'x_gorp' = '[I:123]'</code></pre>
-       </td></tr><tr><td class="term">User defined field data</td><td class="description">
-       [Prog-id name]<p></p>
-    Example: <pre><code class="lang-csharp">'SuperOffice:1' = '[I:123]'</code></pre><p></p>
-       </td></tr></tbody></table>
+&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="term"&gt;Extra field data&lt;/td&gt;&lt;td class="description"&gt;
+       [Extra field name]&lt;p&gt;&lt;/p&gt;
+       Example: &lt;pre&gt;&lt;code class="lang-csharp"&gt;'x_gorp' = '[I:123]'&lt;/code&gt;&lt;/pre&gt;
+       &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;User defined field data&lt;/td&gt;&lt;td class="description"&gt;
+       [Prog-id name]&lt;p&gt;&lt;/p&gt;
+    Example: &lt;pre&gt;&lt;code class="lang-csharp"&gt;'SuperOffice:1' = '[I:123]'&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
+       &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 
-### <a id="SuperOffice_WebApi_Data_User_Deleted"></a> Deleted
+### &lt;a id="SuperOffice_WebApi_Data_User_Deleted"&gt;&lt;/a&gt; Deleted
 
 If true, the user is retired and should have no rights, not appear in lists, etc.
 
@@ -115,7 +115,7 @@ public virtual bool Deleted { get; set; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-### <a id="SuperOffice_WebApi_Data_User_EjUserId"></a> EjUserId
+### &lt;a id="SuperOffice_WebApi_Data_User_EjUserId"&gt;&lt;/a&gt; EjUserId
 
 ID of the ej user record corresponding to this associate; 0 for associates that are not ej users
 
@@ -127,9 +127,9 @@ public virtual int EjUserId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### <a id="SuperOffice_WebApi_Data_User_ExtraFields"></a> ExtraFields
+### &lt;a id="SuperOffice_WebApi_Data_User_ExtraFields"&gt;&lt;/a&gt; ExtraFields
 
-Deprecated: Use <xref href="SuperOffice.WebApi.Data.User.CustomFields" data-throw-if-not-resolved="false"></xref> instead.
+Deprecated: Use &lt;xref href="SuperOffice.WebApi.Data.User.CustomFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instead.
 Extra fields added to the carrier. This could be data from Plug-ins, the foreign key system, external applications, etc.
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
 
@@ -144,23 +144,23 @@ public virtual StringDictionary ExtraFields { get; set; }
 #### Remarks
 
 The naming convention of the key string is as follows:
-<table><tbody><tr><td class="term">Plug-in data</td><td class="description">
+&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="term"&gt;Plug-in data&lt;/td&gt;&lt;td class="description"&gt;
        [Plug-in name].[Property name]
        Example: DocumentPlugin.DocumentType
-       </td></tr><tr><td class="term">Foreign key data</td><td class="description">
+       &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;Foreign key data&lt;/td&gt;&lt;td class="description"&gt;
        The device identity is appended directly to the device name if it exists. 
     This is not commonly used, but the database opens for this as a possibility to have several devices with the same name, 
     and hence we would ensure an unique key if this field is used.
     Example: Audience.SecretService.DefaultCountry
-    </td></tr><tr><td class="term">User defined table data</td><td class="description">
+    &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;User defined table data&lt;/td&gt;&lt;td class="description"&gt;
        [Table name].[Field name]
        Example: Phunneling.AggregatedSales
-       </td></tr><tr><td class="term">Other</td><td class="description">
+       &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;Other&lt;/td&gt;&lt;td class="description"&gt;
        Other data sources must ensure an unique name. If the key already exists we do not add the data to the dictionary. 
        We also ensure that SuperOffice data are added first, so that existing data doesnt change when more data sources are added (with duplicate data keys).
-       </td></tr></tbody></table>
+       &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 
-### <a id="SuperOffice_WebApi_Data_User_IsOnTravel"></a> IsOnTravel
+### &lt;a id="SuperOffice_WebApi_Data_User_IsOnTravel"&gt;&lt;/a&gt; IsOnTravel
 
 True if the user is on travel.
 
@@ -172,7 +172,7 @@ public virtual bool IsOnTravel { get; set; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-### <a id="SuperOffice_WebApi_Data_User_IsPersonRetired"></a> IsPersonRetired
+### &lt;a id="SuperOffice_WebApi_Data_User_IsPersonRetired"&gt;&lt;/a&gt; IsPersonRetired
 
 True if the user is retired and should have no rights, not appear in lists, etc.
 
@@ -184,7 +184,7 @@ public virtual bool IsPersonRetired { get; set; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-### <a id="SuperOffice_WebApi_Data_User_Lastlogin"></a> Lastlogin
+### &lt;a id="SuperOffice_WebApi_Data_User_Lastlogin"&gt;&lt;/a&gt; Lastlogin
 
 Last login date
 
@@ -196,7 +196,7 @@ public virtual DateTime Lastlogin { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_User_Lastlogout"></a> Lastlogout
+### &lt;a id="SuperOffice_WebApi_Data_User_Lastlogout"&gt;&lt;/a&gt; Lastlogout
 
 Last logout date
 
@@ -208,7 +208,7 @@ public virtual DateTime Lastlogout { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_User_LicenseOwners"></a> LicenseOwners
+### &lt;a id="SuperOffice_WebApi_Data_User_LicenseOwners"&gt;&lt;/a&gt; LicenseOwners
 
 The restricted and unrestricted module licenses grouped by license owner. These module licenses are either assigned or unassigned to this user
 
@@ -220,7 +220,7 @@ public virtual LicenseOwner[] LicenseOwners { get; set; }
 
  [LicenseOwner](SuperOffice.WebApi.Data.LicenseOwner.md)\[\]
 
-### <a id="SuperOffice_WebApi_Data_User_Name"></a> Name
+### &lt;a id="SuperOffice_WebApi_Data_User_Name"&gt;&lt;/a&gt; Name
 
 Initials, UserId - also used as login name for on-site installations. Identifies user in archives.
 
@@ -232,7 +232,7 @@ public virtual string Name { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_User_NickName"></a> NickName
+### &lt;a id="SuperOffice_WebApi_Data_User_NickName"&gt;&lt;/a&gt; NickName
 
 The unique nick name for this user. Used in Service as an alias, similar to Name/Initials.
 
@@ -244,10 +244,10 @@ public virtual string NickName { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_User_OtherGroups"></a> OtherGroups
+### &lt;a id="SuperOffice_WebApi_Data_User_OtherGroups"&gt;&lt;/a&gt; OtherGroups
 
 The other groups this user is a member of, apart from the main user group.
-<p>Use MDO List name "usergroup" to get list items.</p>
+&lt;p&gt;Use MDO List name "usergroup" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual UserGroup[] OtherGroups { get; set; }
@@ -257,10 +257,10 @@ public virtual UserGroup[] OtherGroups { get; set; }
 
  [UserGroup](SuperOffice.WebApi.Data.UserGroup.md)\[\]
 
-### <a id="SuperOffice_WebApi_Data_User_Person"></a> Person
+### &lt;a id="SuperOffice_WebApi_Data_User_Person"&gt;&lt;/a&gt; Person
 
 The person associated with this user. Detailed information about the user
-<p>Use MDO List name "person_new" to get list items.</p>
+&lt;p&gt;Use MDO List name "person_new" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual Person Person { get; set; }
@@ -270,7 +270,7 @@ public virtual Person Person { get; set; }
 
  [Person](SuperOffice.WebApi.Data.Person.md)
 
-### <a id="SuperOffice_WebApi_Data_User_PostSaveCommands"></a> PostSaveCommands
+### &lt;a id="SuperOffice_WebApi_Data_User_PostSaveCommands"&gt;&lt;/a&gt; PostSaveCommands
 
 Post custom commands the client should execute after save has completed.
 
@@ -282,7 +282,7 @@ public virtual CustomCommand[] PostSaveCommands { get; set; }
 
  [CustomCommand](SuperOffice.WebApi.Data.CustomCommand.md)\[\]
 
-### <a id="SuperOffice_WebApi_Data_User_Rank"></a> Rank
+### &lt;a id="SuperOffice_WebApi_Data_User_Rank"&gt;&lt;/a&gt; Rank
 
 Rank order
 
@@ -294,7 +294,7 @@ public virtual short Rank { get; set; }
 
  [short](https://learn.microsoft.com/dotnet/api/system.int16)
 
-### <a id="SuperOffice_WebApi_Data_User_RequestSignature"></a> RequestSignature
+### &lt;a id="SuperOffice_WebApi_Data_User_RequestSignature"&gt;&lt;/a&gt; RequestSignature
 
 ej users request signature
 
@@ -306,7 +306,7 @@ public virtual string RequestSignature { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_User_Role"></a> Role
+### &lt;a id="SuperOffice_WebApi_Data_User_Role"&gt;&lt;/a&gt; Role
 
 Users role for role-based security. Determines permissions and access rights for the user.
 
@@ -318,10 +318,10 @@ public virtual Role Role { get; set; }
 
  [Role](SuperOffice.WebApi.Data.Role.md)
 
-### <a id="SuperOffice_WebApi_Data_User_TicketCategories"></a> TicketCategories
+### &lt;a id="SuperOffice_WebApi_Data_User_TicketCategories"&gt;&lt;/a&gt; TicketCategories
 
 Request Ticket Categories assigned to the user. 
-<p>Use MDO List name "ejCategory" to get list items.</p>
+&lt;p&gt;Use MDO List name "ejCategory" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual MDOListItem[] TicketCategories { get; set; }
@@ -331,7 +331,7 @@ public virtual MDOListItem[] TicketCategories { get; set; }
 
  [MDOListItem](SuperOffice.WebApi.Data.MDOListItem.md)\[\]
 
-### <a id="SuperOffice_WebApi_Data_User_Tooltip"></a> Tooltip
+### &lt;a id="SuperOffice_WebApi_Data_User_Tooltip"&gt;&lt;/a&gt; Tooltip
 
 Tooltip or other description
 
@@ -343,7 +343,7 @@ public virtual string Tooltip { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_User_Type"></a> Type
+### &lt;a id="SuperOffice_WebApi_Data_User_Type"&gt;&lt;/a&gt; Type
 
 User type: 1=InternalAssociate, 2=ResourceAssociate, 3=ExternalAssociate, 4=AnonymousAssociate, 5=SystemAssociate 
 NULL if unknown enum value.
@@ -361,7 +361,7 @@ public UserType? Type { get; set; }
 
 [User](SuperOffice.WebApi.Data.User.md).[Type\_String](SuperOffice.WebApi.Data.User.md\#SuperOffice\_WebApi\_Data\_User\_Type\_String)
 
-### <a id="SuperOffice_WebApi_Data_User_Type_String"></a> Type\_String
+### &lt;a id="SuperOffice_WebApi_Data_User_Type_String"&gt;&lt;/a&gt; Type\_String
 
 User type: 1=InternalAssociate, 2=ResourceAssociate, 3=ExternalAssociate, 4=AnonymousAssociate, 5=SystemAssociate 
 Raw string enum value.
@@ -379,10 +379,10 @@ public string Type_String { get; set; }
 
 [User](SuperOffice.WebApi.Data.User.md).[Type](SuperOffice.WebApi.Data.User.md\#SuperOffice\_WebApi\_Data\_User\_Type)
 
-### <a id="SuperOffice_WebApi_Data_User_UserGroup"></a> UserGroup
+### &lt;a id="SuperOffice_WebApi_Data_User_UserGroup"&gt;&lt;/a&gt; UserGroup
 
 The main user group that this user belongs to.
-<p>Use MDO List name "usergroup" to get list items.</p>
+&lt;p&gt;Use MDO List name "usergroup" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual UserGroup UserGroup { get; set; }
@@ -392,7 +392,7 @@ public virtual UserGroup UserGroup { get; set; }
 
  [UserGroup](SuperOffice.WebApi.Data.UserGroup.md)
 
-### <a id="SuperOffice_WebApi_Data_User_UserName"></a> UserName
+### &lt;a id="SuperOffice_WebApi_Data_User_UserName"&gt;&lt;/a&gt; UserName
 
 User name, a.k.a. Login name. This might be an e-mail address.
 
@@ -404,7 +404,7 @@ public virtual string UserName { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_User_WaitingForApproval"></a> WaitingForApproval
+### &lt;a id="SuperOffice_WebApi_Data_User_WaitingForApproval"&gt;&lt;/a&gt; WaitingForApproval
 
 The user is waiting for an administrator to approve/grant her/him access.
 

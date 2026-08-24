@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_ProgressListener"></a> Class ProgressListener
+# &lt;a id="SuperOffice_WebApi_ProgressListener"&gt;&lt;/a&gt; Class ProgressListener
 
 Namespace: [SuperOffice.WebApi](SuperOffice.WebApi.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -30,13 +30,13 @@ public class ProgressListener : IProgressListener
 
 ## Constructors
 
-### <a id="SuperOffice_WebApi_ProgressListener__ctor"></a> ProgressListener\(\)
+### &lt;a id="SuperOffice_WebApi_ProgressListener__ctor"&gt;&lt;/a&gt; ProgressListener\(\)
 
 ```csharp
 public ProgressListener()
 ```
 
-### <a id="SuperOffice_WebApi_ProgressListener__ctor_System_Action_System_String_System_Single__System_Action_System_String_System_Exception__"></a> ProgressListener\(Action<string, float\>, Action<string, Exception\>\)
+### &lt;a id="SuperOffice_WebApi_ProgressListener__ctor_System_Action_System_String_System_Single__System_Action_System_String_System_Exception__"&gt;&lt;/a&gt; ProgressListener\(Action&lt;string, float\&gt;, Action&lt;string, Exception\&gt;\)
 
 ```csharp
 public ProgressListener(Action<string, float> onProgress, Action<string, Exception> onError)
@@ -44,13 +44,13 @@ public ProgressListener(Action<string, float> onProgress, Action<string, Excepti
 
 #### Parameters
 
-`onProgress` [Action](https://learn.microsoft.com/dotnet/api/system.action\-2)<[string](https://learn.microsoft.com/dotnet/api/system.string), [float](https://learn.microsoft.com/dotnet/api/system.single)\>
+`onProgress` [Action](https://learn.microsoft.com/dotnet/api/system.action\-2)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string), [float](https://learn.microsoft.com/dotnet/api/system.single)\&gt;
 
-`onError` [Action](https://learn.microsoft.com/dotnet/api/system.action\-2)<[string](https://learn.microsoft.com/dotnet/api/system.string), [Exception](https://learn.microsoft.com/dotnet/api/system.exception)\>
+`onError` [Action](https://learn.microsoft.com/dotnet/api/system.action\-2)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string), [Exception](https://learn.microsoft.com/dotnet/api/system.exception)\&gt;
 
 ## Properties
 
-### <a id="SuperOffice_WebApi_ProgressListener_OnErrorDelegate"></a> OnErrorDelegate
+### &lt;a id="SuperOffice_WebApi_ProgressListener_OnErrorDelegate"&gt;&lt;/a&gt; OnErrorDelegate
 
 Triggered if request fails.
 
@@ -60,9 +60,9 @@ public Action<string, Exception> OnErrorDelegate { get; set; }
 
 #### Property Value
 
- [Action](https://learn.microsoft.com/dotnet/api/system.action\-2)<[string](https://learn.microsoft.com/dotnet/api/system.string), [Exception](https://learn.microsoft.com/dotnet/api/system.exception)\>
+ [Action](https://learn.microsoft.com/dotnet/api/system.action\-2)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string), [Exception](https://learn.microsoft.com/dotnet/api/system.exception)\&gt;
 
-### <a id="SuperOffice_WebApi_ProgressListener_OnProgressDelegate"></a> OnProgressDelegate
+### &lt;a id="SuperOffice_WebApi_ProgressListener_OnProgressDelegate"&gt;&lt;/a&gt; OnProgressDelegate
 
 Triggered when request has made progress.
 
@@ -72,11 +72,11 @@ public Action<string, float> OnProgressDelegate { get; set; }
 
 #### Property Value
 
- [Action](https://learn.microsoft.com/dotnet/api/system.action\-2)<[string](https://learn.microsoft.com/dotnet/api/system.string), [float](https://learn.microsoft.com/dotnet/api/system.single)\>
+ [Action](https://learn.microsoft.com/dotnet/api/system.action\-2)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string), [float](https://learn.microsoft.com/dotnet/api/system.single)\&gt;
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_ProgressListener_OnError_System_String_System_Exception_"></a> OnError\(string, Exception\)
+### &lt;a id="SuperOffice_WebApi_ProgressListener_OnError_System_String_System_Exception_"&gt;&lt;/a&gt; OnError\(string, Exception\)
 
 Called when request fails.
 
@@ -92,9 +92,9 @@ URL being loaded
 
 `errorMessage` [Exception](https://learn.microsoft.com/dotnet/api/system.exception)
 
-Exception that is being thrown. Probably a <xref href="SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiException" data-throw-if-not-resolved="false"></xref>.
+Exception that is being thrown. Probably a &lt;xref href="SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiException" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
 
-### <a id="SuperOffice_WebApi_ProgressListener_OnProgress_System_String_System_Single_"></a> OnProgress\(string, float\)
+### &lt;a id="SuperOffice_WebApi_ProgressListener_OnProgress_System_String_System_Single_"&gt;&lt;/a&gt; OnProgress\(string, float\)
 
 Called during upload/download, and at end to indicate completion.
 

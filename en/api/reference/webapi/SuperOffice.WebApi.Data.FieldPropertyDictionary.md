@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_Data_FieldPropertyDictionary"></a> Class FieldPropertyDictionary
+# &lt;a id="SuperOffice_WebApi_Data_FieldPropertyDictionary"&gt;&lt;/a&gt; Class FieldPropertyDictionary
 
 Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -13,43 +13,43 @@ public class FieldPropertyDictionary : Dictionary<string, FieldProperty>, IDicti
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Dictionary<string, FieldProperty\>](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2) ← 
+[Dictionary&lt;string, FieldProperty\&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2) ← 
 [FieldPropertyDictionary](SuperOffice.WebApi.Data.FieldPropertyDictionary.md)
 
 #### Implements
 
-[IDictionary<string, FieldProperty\>](https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary\-2), 
-[ICollection<KeyValuePair<string, FieldProperty\>\>](https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection\-1), 
+[IDictionary&lt;string, FieldProperty\&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary\-2), 
+[ICollection&lt;KeyValuePair&lt;string, FieldProperty\&gt;\&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection\-1), 
 [IDictionary](https://learn.microsoft.com/dotnet/api/system.collections.idictionary), 
 [ICollection](https://learn.microsoft.com/dotnet/api/system.collections.icollection), 
-[IReadOnlyDictionary<string, FieldProperty\>](https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary\-2), 
-[IReadOnlyCollection<KeyValuePair<string, FieldProperty\>\>](https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection\-1), 
-[IEnumerable<KeyValuePair<string, FieldProperty\>\>](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable\-1), 
+[IReadOnlyDictionary&lt;string, FieldProperty\&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary\-2), 
+[IReadOnlyCollection&lt;KeyValuePair&lt;string, FieldProperty\&gt;\&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection\-1), 
+[IEnumerable&lt;KeyValuePair&lt;string, FieldProperty\&gt;\&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable\-1), 
 [IEnumerable](https://learn.microsoft.com/dotnet/api/system.collections.ienumerable), 
 [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable), 
 [IDeserializationCallback](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.ideserializationcallback)
 
 #### Inherited Members
 
-[Dictionary<string, FieldProperty\>.Add\(string, FieldProperty\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.add), 
-[Dictionary<string, FieldProperty\>.Clear\(\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.clear), 
-[Dictionary<string, FieldProperty\>.ContainsKey\(string\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.containskey), 
-[Dictionary<string, FieldProperty\>.ContainsValue\(FieldProperty\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.containsvalue), 
-[Dictionary<string, FieldProperty\>.GetEnumerator\(\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.getenumerator), 
-[Dictionary<string, FieldProperty\>.GetObjectData\(SerializationInfo, StreamingContext\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.getobjectdata), 
-[Dictionary<string, FieldProperty\>.OnDeserialization\(object\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.ondeserialization), 
-[Dictionary<string, FieldProperty\>.Remove\(string\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.remove\#system\-collections\-generic\-dictionary\-2\-remove\(\-0\)), 
-[Dictionary<string, FieldProperty\>.Remove\(string, out FieldProperty\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.remove\#system\-collections\-generic\-dictionary\-2\-remove\(\-0\-1@\)), 
-[Dictionary<string, FieldProperty\>.TryGetValue\(string, out FieldProperty\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.trygetvalue), 
-[Dictionary<string, FieldProperty\>.TryAdd\(string, FieldProperty\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.tryadd), 
-[Dictionary<string, FieldProperty\>.EnsureCapacity\(int\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.ensurecapacity), 
-[Dictionary<string, FieldProperty\>.TrimExcess\(\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.trimexcess\#system\-collections\-generic\-dictionary\-2\-trimexcess), 
-[Dictionary<string, FieldProperty\>.TrimExcess\(int\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.trimexcess\#system\-collections\-generic\-dictionary\-2\-trimexcess\(system\-int32\)), 
-[Dictionary<string, FieldProperty\>.Comparer](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.comparer), 
-[Dictionary<string, FieldProperty\>.Count](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.count), 
-[Dictionary<string, FieldProperty\>.Keys](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.keys), 
-[Dictionary<string, FieldProperty\>.Values](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.values), 
-[Dictionary<string, FieldProperty\>.this\[string\]](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.item), 
+[Dictionary&lt;string, FieldProperty\&gt;.Add\(string, FieldProperty\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.add), 
+[Dictionary&lt;string, FieldProperty\&gt;.Clear\(\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.clear), 
+[Dictionary&lt;string, FieldProperty\&gt;.ContainsKey\(string\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.containskey), 
+[Dictionary&lt;string, FieldProperty\&gt;.ContainsValue\(FieldProperty\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.containsvalue), 
+[Dictionary&lt;string, FieldProperty\&gt;.GetEnumerator\(\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.getenumerator), 
+[Dictionary&lt;string, FieldProperty\&gt;.GetObjectData\(SerializationInfo, StreamingContext\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.getobjectdata), 
+[Dictionary&lt;string, FieldProperty\&gt;.OnDeserialization\(object\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.ondeserialization), 
+[Dictionary&lt;string, FieldProperty\&gt;.Remove\(string\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.remove\#system\-collections\-generic\-dictionary\-2\-remove\(\-0\)), 
+[Dictionary&lt;string, FieldProperty\&gt;.Remove\(string, out FieldProperty\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.remove\#system\-collections\-generic\-dictionary\-2\-remove\(\-0\-1@\)), 
+[Dictionary&lt;string, FieldProperty\&gt;.TryGetValue\(string, out FieldProperty\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.trygetvalue), 
+[Dictionary&lt;string, FieldProperty\&gt;.TryAdd\(string, FieldProperty\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.tryadd), 
+[Dictionary&lt;string, FieldProperty\&gt;.EnsureCapacity\(int\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.ensurecapacity), 
+[Dictionary&lt;string, FieldProperty\&gt;.TrimExcess\(\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.trimexcess\#system\-collections\-generic\-dictionary\-2\-trimexcess), 
+[Dictionary&lt;string, FieldProperty\&gt;.TrimExcess\(int\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.trimexcess\#system\-collections\-generic\-dictionary\-2\-trimexcess\(system\-int32\)), 
+[Dictionary&lt;string, FieldProperty\&gt;.Comparer](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.comparer), 
+[Dictionary&lt;string, FieldProperty\&gt;.Count](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.count), 
+[Dictionary&lt;string, FieldProperty\&gt;.Keys](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.keys), 
+[Dictionary&lt;string, FieldProperty\&gt;.Values](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.values), 
+[Dictionary&lt;string, FieldProperty\&gt;.this\[string\]](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.item), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -60,7 +60,7 @@ public class FieldPropertyDictionary : Dictionary<string, FieldProperty>, IDicti
 
 ## Constructors
 
-### <a id="SuperOffice_WebApi_Data_FieldPropertyDictionary__ctor"></a> FieldPropertyDictionary\(\)
+### &lt;a id="SuperOffice_WebApi_Data_FieldPropertyDictionary__ctor"&gt;&lt;/a&gt; FieldPropertyDictionary\(\)
 
 Default constructor
 
@@ -70,7 +70,7 @@ public FieldPropertyDictionary()
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Data_FieldPropertyDictionary_ToString_System_String_"></a> ToString\(string\)
+### &lt;a id="SuperOffice_WebApi_Data_FieldPropertyDictionary_ToString_System_String_"&gt;&lt;/a&gt; ToString\(string\)
 
 ```csharp
 public string ToString(string prefix)

@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_Agents_DatabaseAgent"></a> Class DatabaseAgent
+# &lt;a id="SuperOffice_WebApi_Agents_DatabaseAgent"&gt;&lt;/a&gt; Class DatabaseAgent
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -38,7 +38,7 @@ public class DatabaseAgent : AgentBase, IDatabaseAgent, IAgentBase, IDisposable
 [AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequestObjectWithStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
 [AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequest\_System\_Net\_Http\_HttpRequestMessage\_SuperOffice\_WebApi\_RequestOptions\_), 
 [AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ThrowOnResponseErrorAsync\_System\_Net\_Http\_HttpRequestMessage\_System\_Net\_Http\_HttpResponseMessage\_), 
-[AgentBase.ParseResponse<T\>\(HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseResponse\_\_1\_System\_Net\_Http\_HttpResponseMessage\_), 
+[AgentBase.ParseResponse&lt;T\&gt;\(HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseResponse\_\_1\_System\_Net\_Http\_HttpResponseMessage\_), 
 [AgentBase.Finally\(RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Finally\_SuperOffice\_WebApi\_RequestOptions\_), 
 [AgentBase.Dispose\(\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Dispose), 
 [AgentBase.Configuration](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Configuration), 
@@ -57,19 +57,19 @@ public class DatabaseAgent : AgentBase, IDatabaseAgent, IAgentBase, IDisposable
 
 ## Examples
 
-<pre><code class="lang-csharp">using SuperOffice.WebApi;
+&lt;pre&gt;&lt;code class="lang-csharp"&gt;using SuperOffice.WebApi;
 using SuperOffice.WebApi.Agents;
 
 var mySession = new WebApiOptions("http://example.com/super/api");
 mySession.Authorization = new AuthorizationUsernamePassword("user", "pass");
 using (DatabaseAgent agent = new DatabaseAgent(mySession))
-{
+\{
       // call methods on agent here...
-}</code></pre>
+\}&lt;/code&gt;&lt;/pre&gt;
 
 ## Constructors
 
-### <a id="SuperOffice_WebApi_Agents_DatabaseAgent__ctor_System_Net_Http_HttpClient_"></a> DatabaseAgent\(HttpClient\)
+### &lt;a id="SuperOffice_WebApi_Agents_DatabaseAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; DatabaseAgent\(HttpClient\)
 
 Constructor: Database schema queries and changes
 
@@ -83,7 +83,7 @@ public DatabaseAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### <a id="SuperOffice_WebApi_Agents_DatabaseAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"></a> DatabaseAgent\(WebApiOptions, HttpClient\)
+### &lt;a id="SuperOffice_WebApi_Agents_DatabaseAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; DatabaseAgent\(WebApiOptions, HttpClient\)
 
 Constructor: Database schema queries and changes
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_DatabaseAgent_GetStepsFromNetServerCodeAsync_SuperOffice_WebApi_RequestOptions_"></a> GetStepsFromNetServerCodeAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DatabaseAgent_GetStepsFromNetServerCodeAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetStepsFromNetServerCodeAsync\(RequestOptions\)
 
 Get information about the dictionary steps that NetServer was generated for
 
@@ -119,11 +119,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DictionaryStepInformation](SuperOffice.WebApi.Data.DictionaryStepInformation.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DictionaryStepInformation](SuperOffice.WebApi.Data.DictionaryStepInformation.md)\[\]\&gt;
 
 Array of dictionary steps used when NetServer was generated, listing only the highest number for each step
 
-### <a id="SuperOffice_WebApi_Agents_DatabaseAgent_GetStepsInDatabaseAsync_SuperOffice_WebApi_RequestOptions_"></a> GetStepsInDatabaseAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DatabaseAgent_GetStepsInDatabaseAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetStepsInDatabaseAsync\(RequestOptions\)
 
 Get information about the dictionary steps that are in the currently-loggedon database
 
@@ -139,7 +139,7 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DictionaryStepInformation](SuperOffice.WebApi.Data.DictionaryStepInformation.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DictionaryStepInformation](SuperOffice.WebApi.Data.DictionaryStepInformation.md)\[\]\&gt;
 
 Array of dictionary steps in the database, listing only the highest number for each step
 

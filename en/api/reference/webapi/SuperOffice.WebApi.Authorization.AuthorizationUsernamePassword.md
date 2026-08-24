@@ -1,9 +1,9 @@
-# <a id="SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword"></a> Class AuthorizationUsernamePassword
+# &lt;a id="SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword"&gt;&lt;/a&gt; Class AuthorizationUsernamePassword
 
 Namespace: [SuperOffice.WebApi.Authorization](SuperOffice.WebApi.Authorization.md)  
 Assembly: SuperOffice.WebApi.Authorization.dll  
 
-Username and password <xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"></xref> using Basic scheme.
+Username and password &lt;xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; using Basic scheme.
 
 ```csharp
 public class AuthorizationUsernamePassword : IAuthorization
@@ -30,7 +30,7 @@ public class AuthorizationUsernamePassword : IAuthorization
 
 ## Constructors
 
-### <a id="SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword__ctor_System_String_System_String_"></a> AuthorizationUsernamePassword\(string, string\)
+### &lt;a id="SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword__ctor_System_String_System_String_"&gt;&lt;/a&gt; AuthorizationUsernamePassword\(string, string\)
 
 UserNamePasswordAuthorization Constructor
 
@@ -50,9 +50,9 @@ Users password.
 
 ## Properties
 
-### <a id="SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword_RefreshAuthorizationAsync"></a> RefreshAuthorizationAsync
+### &lt;a id="SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword_RefreshAuthorizationAsync"&gt;&lt;/a&gt; RefreshAuthorizationAsync
 
-Try to refresh this <xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"></xref> instance.
+Try to refresh this &lt;xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instance.
 
 ```csharp
 public Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync { get; set; }
@@ -60,11 +60,11 @@ public Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync
 
 #### Property Value
 
- [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)<[ReAuthorizationArgs](SuperOffice.WebApi.Authorization.ReAuthorizationArgs.md), [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[IAuthorization](SuperOffice.WebApi.Authorization.IAuthorization.md)\>\>
+ [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)&lt;[ReAuthorizationArgs](SuperOffice.WebApi.Authorization.ReAuthorizationArgs.md), [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[IAuthorization](SuperOffice.WebApi.Authorization.IAuthorization.md)\&gt;\&gt;
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword_GetAuthorization"></a> GetAuthorization\(\)
+### &lt;a id="SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword_GetAuthorization"&gt;&lt;/a&gt; GetAuthorization\(\)
 
 Gets a tuple that represents authorization scheme and parameter for a base64 encoded username:password.
 
@@ -76,5 +76,5 @@ public AuthenticationHeaderValue GetAuthorization()
 
  [AuthenticationHeaderValue](https://learn.microsoft.com/dotnet/api/system.net.http.headers.authenticationheadervalue)
 
-Gets a <xref href="System.Tuple%602" data-throw-if-not-resolved="false"></xref> (string,string) where scheme is Basic and parameter is base64 encoded username:password.
+Gets a &lt;xref href="System.Tuple%602" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; (string,string) where scheme is Basic and parameter is base64 encoded username:password.
 

@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_Agents_DocumentAgent"></a> Class DocumentAgent
+# &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent"&gt;&lt;/a&gt; Class DocumentAgent
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -38,7 +38,7 @@ public class DocumentAgent : AgentBase, IDocumentAgent, IAgentBase, IDisposable
 [AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequestObjectWithStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
 [AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequest\_System\_Net\_Http\_HttpRequestMessage\_SuperOffice\_WebApi\_RequestOptions\_), 
 [AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ThrowOnResponseErrorAsync\_System\_Net\_Http\_HttpRequestMessage\_System\_Net\_Http\_HttpResponseMessage\_), 
-[AgentBase.ParseResponse<T\>\(HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseResponse\_\_1\_System\_Net\_Http\_HttpResponseMessage\_), 
+[AgentBase.ParseResponse&lt;T\&gt;\(HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseResponse\_\_1\_System\_Net\_Http\_HttpResponseMessage\_), 
 [AgentBase.Finally\(RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Finally\_SuperOffice\_WebApi\_RequestOptions\_), 
 [AgentBase.Dispose\(\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Dispose), 
 [AgentBase.Configuration](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Configuration), 
@@ -57,19 +57,19 @@ public class DocumentAgent : AgentBase, IDocumentAgent, IAgentBase, IDisposable
 
 ## Examples
 
-<pre><code class="lang-csharp">using SuperOffice.WebApi;
+&lt;pre&gt;&lt;code class="lang-csharp"&gt;using SuperOffice.WebApi;
 using SuperOffice.WebApi.Agents;
 
 var mySession = new WebApiOptions("http://example.com/super/api");
 mySession.Authorization = new AuthorizationUsernamePassword("user", "pass");
 using (DocumentAgent agent = new DocumentAgent(mySession))
-{
+\{
       // call methods on agent here...
-}</code></pre>
+\}&lt;/code&gt;&lt;/pre&gt;
 
 ## Constructors
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent__ctor_System_Net_Http_HttpClient_"></a> DocumentAgent\(HttpClient\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; DocumentAgent\(HttpClient\)
 
 Constructor: Collection of all services that works with Document data. This is services for the document information, not the physical document themselves. These are handled by the BLOB service methods.
 
@@ -83,7 +83,7 @@ public DocumentAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"></a> DocumentAgent\(WebApiOptions, HttpClient\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; DocumentAgent\(WebApiOptions, HttpClient\)
 
 Constructor: Collection of all services that works with Document data. This is services for the document information, not the physical document themselves. These are handled by the BLOB service methods.
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_CheckinDocumentAsync_System_Int32_System_String___System_String_System_String___SuperOffice_WebApi_RequestOptions_"></a> CheckinDocumentAsync\(int, string\[\], string, string\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_CheckinDocumentAsync_System_Int32_System_String___System_String_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CheckinDocumentAsync\(int, string\[\], string, string\[\], RequestOptions\)
 
 Check in a currently checked-out document
 
@@ -135,11 +135,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ReturnInfo](SuperOffice.WebApi.Data.ReturnInfo.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ReturnInfo](SuperOffice.WebApi.Data.ReturnInfo.md)\&gt;
 
 Return information, including possible requests for further processing ("Return Action"). Return actions are constrained by the allowedReturnTypes parameter.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_CheckoutDocumentAsync_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_"></a> CheckoutDocumentAsync\(int, string\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_CheckoutDocumentAsync_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CheckoutDocumentAsync\(int, string\[\], RequestOptions\)
 
 Check out a document for editing by the current user.
 
@@ -163,11 +163,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ReturnInfo](SuperOffice.WebApi.Data.ReturnInfo.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ReturnInfo](SuperOffice.WebApi.Data.ReturnInfo.md)\&gt;
 
 Return information, including possible requests for further processing ("Return Action"). Return actions are constrained by the allowedReturnTypes parameter.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_CopyDocumentToCsAttachmentAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> CopyDocumentToCsAttachmentAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_CopyDocumentToCsAttachmentAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CopyDocumentToCsAttachmentAsync\(int, RequestOptions\)
 
 Copy a crm document to cs attachemnt. For use in mailings
 
@@ -187,11 +187,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
 
 The primary key of the newly added attachment
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_CreateDefaultDocumentEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultDocumentEntityAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_CreateDefaultDocumentEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultDocumentEntityAsync\(RequestOptions\)
 
 Set default values into a new DocumentEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -208,11 +208,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)\&gt;
 
 A blank DocumentEntity
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_CreateDefaultDocumentEntityFromSuggestionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultDocumentEntityFromSuggestionAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_CreateDefaultDocumentEntityFromSuggestionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultDocumentEntityFromSuggestionAsync\(int, RequestOptions\)
 
 ```csharp
 public Task<DocumentEntity> CreateDefaultDocumentEntityFromSuggestionAsync(int suggestedDocumentId, RequestOptions requestOptions = null)
@@ -228,9 +228,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_CreateDefaultDocumentPreviewAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultDocumentPreviewAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_CreateDefaultDocumentPreviewAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultDocumentPreviewAsync\(RequestOptions\)
 
 Set default values into a new DocumentPreview.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -247,11 +247,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentPreview](SuperOffice.WebApi.Data.DocumentPreview.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentPreview](SuperOffice.WebApi.Data.DocumentPreview.md)\&gt;
 
 A blank DocumentPreview
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_CreateDefaultSuggestedDocumentEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultSuggestedDocumentEntityAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_CreateDefaultSuggestedDocumentEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultSuggestedDocumentEntityAsync\(RequestOptions\)
 
 Set default values into a new SuggestedDocumentEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -268,11 +268,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SuggestedDocumentEntity](SuperOffice.WebApi.Data.SuggestedDocumentEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SuggestedDocumentEntity](SuperOffice.WebApi.Data.SuggestedDocumentEntity.md)\&gt;
 
 A blank SuggestedDocumentEntity
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_CreateDefaultTemplateVariablesParametersAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultTemplateVariablesParametersAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_CreateDefaultTemplateVariablesParametersAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultTemplateVariablesParametersAsync\(RequestOptions\)
 
 Set default values into a new TemplateVariablesParameters.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -289,11 +289,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TemplateVariablesParameters](SuperOffice.WebApi.Data.TemplateVariablesParameters.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TemplateVariablesParameters](SuperOffice.WebApi.Data.TemplateVariablesParameters.md)\&gt;
 
 A blank TemplateVariablesParameters
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_CreateDocumentStreamAsync_SuperOffice_WebApi_Data_DocumentEntity_System_Boolean_System_String_SuperOffice_WebApi_RequestOptions_"></a> CreateDocumentStreamAsync\(DocumentEntity, bool, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_CreateDocumentStreamAsync_SuperOffice_WebApi_Data_DocumentEntity_System_Boolean_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDocumentStreamAsync\(DocumentEntity, bool, string, RequestOptions\)
 
 Creates a new Stream that can be used to store the document in the file archive.
 
@@ -321,11 +321,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 A writeable stream. When written and closed, the stream will become the new document content, subject to locking and versioning constraints.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_CreateNewPhysicalDocumentFromTemplateAsync_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> CreateNewPhysicalDocumentFromTemplateAsync\(int, int, int, int, int, int, int, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_CreateNewPhysicalDocumentFromTemplateAsync_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateNewPhysicalDocumentFromTemplateAsync\(int, int, int, int, int, int, int, string, RequestOptions\)
 
 Create a new document content based on a document template and store it in the document archive.  Tags are substituted according to the provided id's.  Use GetDocumentStream to obtain the created document. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.
 
@@ -373,11 +373,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)\&gt;
 
 The updated document entity, after creating the document content from the template.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_CreateNewPhysicalDocumentFromTemplateWithCustomTags2Async_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_Data_StringDictionary_System_String_SuperOffice_WebApi_RequestOptions_"></a> CreateNewPhysicalDocumentFromTemplateWithCustomTags2Async\(int, int, int, int, int, int, int, StringDictionary, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_CreateNewPhysicalDocumentFromTemplateWithCustomTags2Async_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_Data_StringDictionary_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateNewPhysicalDocumentFromTemplateWithCustomTags2Async\(int, int, int, int, int, int, int, StringDictionary, string, RequestOptions\)
 
 Create a new physical document based on a document template and store it in the document archive.  Tags are substituted according to the provided id's.  Use GetDocumentStream to obtain the created document content. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.
 
@@ -429,11 +429,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)\&gt;
 
 The document object with updated info after creating the document
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_CreateNewPhysicalDocumentFromTemplateWithCustomTagsAsync_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_String___System_String___System_String_SuperOffice_WebApi_RequestOptions_"></a> CreateNewPhysicalDocumentFromTemplateWithCustomTagsAsync\(int, int, int, int, int, int, int, string\[\], string\[\], string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_CreateNewPhysicalDocumentFromTemplateWithCustomTagsAsync_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_String___System_String___System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateNewPhysicalDocumentFromTemplateWithCustomTagsAsync\(int, int, int, int, int, int, int, string\[\], string\[\], string, RequestOptions\)
 
 Create a new physical document based on a document template and store it in the document archive.  Tags are substituted according to the provided id's.  Use GetDocumentStream to obtain the created document content. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.
 
@@ -489,11 +489,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)\&gt;
 
 The document object with updated info after creating the document
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_CreateNewPhysicalMailMergeDocumentFromTemplateAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> CreateNewPhysicalMailMergeDocumentFromTemplateAsync\(int, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_CreateNewPhysicalMailMergeDocumentFromTemplateAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateNewPhysicalMailMergeDocumentFromTemplateAsync\(int, string, RequestOptions\)
 
 Create a new physical document based on the documents template. Do not replace template tags, as the document is going to be used as a mail merge source. Use GetDocumentStream to obtain the created documents. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.
 
@@ -517,11 +517,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)\&gt;
 
 The document object with updated info after creating the document.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_CreateTempFileAsync_System_String_System_Byte___SuperOffice_WebApi_RequestOptions_"></a> CreateTempFileAsync\(string, byte\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_CreateTempFileAsync_System_String_System_Byte___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateTempFileAsync\(string, byte\[\], RequestOptions\)
 
 Create a new temporary file based on the provided stream.  Specified filename may be overridden, and actual name is returned.
 
@@ -545,11 +545,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Actual used filename.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_DeleteDocumentEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteDocumentEntityAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_DeleteDocumentEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteDocumentEntityAsync\(int, RequestOptions\)
 
 Deletes the DocumentEntity
 
@@ -571,7 +571,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_DeletePhysicalDocumentAsync_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_"></a> DeletePhysicalDocumentAsync\(int, string\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_DeletePhysicalDocumentAsync_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeletePhysicalDocumentAsync\(int, string\[\], RequestOptions\)
 
 Delete the document contents
 
@@ -595,11 +595,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ReturnInfo](SuperOffice.WebApi.Data.ReturnInfo.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ReturnInfo](SuperOffice.WebApi.Data.ReturnInfo.md)\&gt;
 
 Delete status - did removal succeed or not
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_DeleteTempFileAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> DeleteTempFileAsync\(string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_DeleteTempFileAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteTempFileAsync\(string, RequestOptions\)
 
 Delete a temporary file created with CreateTempFile.
 
@@ -621,7 +621,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_ExecuteDocumentCommandAsync_System_Int32_System_String_System_String___System_String_System_String___SuperOffice_WebApi_RequestOptions_"></a> ExecuteDocumentCommandAsync\(int, string, string\[\], string, string\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_ExecuteDocumentCommandAsync_System_Int32_System_String_System_String___System_String_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ExecuteDocumentCommandAsync\(int, string, string\[\], string, string\[\], RequestOptions\)
 
 Execute a custom command on a particular document, optionally a particular version
 
@@ -657,11 +657,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ReturnInfo](SuperOffice.WebApi.Data.ReturnInfo.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ReturnInfo](SuperOffice.WebApi.Data.ReturnInfo.md)\&gt;
 
 Return information, including possible requests for further processing ("Return Action"). Return actions are constrained by the allowedReturnTypes parameter.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetAppointmentDocumentsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetAppointmentDocumentsAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetAppointmentDocumentsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAppointmentDocumentsAsync\(int, RequestOptions\)
 
 Get all documents that are linked to the appointment. I.e. the documents that are listed in the appointment dialog.
 
@@ -681,11 +681,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\[\]\&gt;
 
 Array of documents
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetCheckoutStateAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetCheckoutStateAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetCheckoutStateAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCheckoutStateAsync\(int, RequestOptions\)
 
 Get the current checkout state for a document, relative to the user perforing the call.
 
@@ -705,11 +705,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CheckoutInfo](SuperOffice.WebApi.Data.CheckoutInfo.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CheckoutInfo](SuperOffice.WebApi.Data.CheckoutInfo.md)\&gt;
 
 Current checkout state of the document
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetContactDocumentsAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetContactDocumentsAsync\(int, DateTime, DateTime, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetContactDocumentsAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetContactDocumentsAsync\(int, DateTime, DateTime, int, RequestOptions\)
 
 Method that returns a specified number of document appointments within a time range. The document appointments belong to the contact specified.
 
@@ -741,11 +741,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\[\]\&gt;
 
 Array of Appointments.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetContactDocumentsByTemplateHeadingAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetContactDocumentsByTemplateHeadingAsync\(int, DateTime, DateTime, int, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetContactDocumentsByTemplateHeadingAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetContactDocumentsByTemplateHeadingAsync\(int, DateTime, DateTime, int, int, RequestOptions\)
 
 Method that returns a specified number of document appointments within a time range, filtered by the document template heading. The document appointments belong to the contact specified. The heading represents a grouping or filtering of document templates.
 
@@ -781,11 +781,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\[\]\&gt;
 
 Array of Appointments.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetContactDocumentsByTemplateTypeAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetContactDocumentsByTemplateTypeAsync\(int, DateTime, DateTime, int, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetContactDocumentsByTemplateTypeAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetContactDocumentsByTemplateTypeAsync\(int, DateTime, DateTime, int, int, RequestOptions\)
 
 Method that returns a specified number of document appointments within a time range, filtered by document template type. The document appointments belong to the contact specified.
 
@@ -821,11 +821,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\[\]\&gt;
 
 Array of Appointments.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetContactDocumentsByTemplateTypesAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetContactDocumentsByTemplateTypesAsync\(int, DateTime, DateTime, int, int\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetContactDocumentsByTemplateTypesAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetContactDocumentsByTemplateTypesAsync\(int, DateTime, DateTime, int, int\[\], RequestOptions\)
 
 Method that returns a specified number of document appointments within a time range, filtered by document template types. The document appointments belong to the contact specified.
 
@@ -861,11 +861,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\[\]\&gt;
 
 Array of Appointments.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetDocumentAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetDocumentAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetDocumentAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDocumentAsync\(int, RequestOptions\)
 
 Gets a specific Document object.
 
@@ -885,11 +885,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\&gt;
 
 Document
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetDocumentCommandsAsync_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_"></a> GetDocumentCommandsAsync\(int, string\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetDocumentCommandsAsync_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDocumentCommandsAsync\(int, string\[\], RequestOptions\)
 
 Get a list of custom commands valid for the specific document at this time. This information should not be cached by clients, as it may change between documents and over time.
 
@@ -913,11 +913,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CommandInfo](SuperOffice.WebApi.Data.CommandInfo.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CommandInfo](SuperOffice.WebApi.Data.CommandInfo.md)\[\]\&gt;
 
 Array of command information items. The command list is constrained by the allowedReturnTypes parameter.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetDocumentEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetDocumentEntityAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetDocumentEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDocumentEntityAsync\(int, RequestOptions\)
 
 Gets a specific DocumentEntity object.
 
@@ -937,11 +937,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)\&gt;
 
 DocumentEntity
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetDocumentLengthAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetDocumentLengthAsync\(int, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetDocumentLengthAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDocumentLengthAsync\(int, string, RequestOptions\)
 
 Get length of the document content in bytes.
 
@@ -965,11 +965,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[long](https://learn.microsoft.com/dotnet/api/system.int64)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[long](https://learn.microsoft.com/dotnet/api/system.int64)\&gt;
 
 The length of the document content in bytes.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetDocumentListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetDocumentListAsync\(int\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetDocumentListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDocumentListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific Document objects.
 
@@ -989,11 +989,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\[\]\&gt;
 
 Array of Document objects
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetDocumentPropertiesAsync_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_"></a> GetDocumentPropertiesAsync\(int, string\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetDocumentPropertiesAsync_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDocumentPropertiesAsync\(int, string\[\], RequestOptions\)
 
 Get plugin-dependent properties for the document. A number of standard properties that should be supported by all plugins are defined in SuperOffice.CRM.Documents.Constants.Properties.
 
@@ -1017,11 +1017,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\&gt;
 
 Dictionary of name=value pairs, corresponding to the requested properties.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetDocumentStreamAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetDocumentStreamAsync\(int, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetDocumentStreamAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDocumentStreamAsync\(int, string, RequestOptions\)
 
 Get the document content as a stream
 
@@ -1045,11 +1045,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 The document as a Stream. This stream can be read once and clients should not assume it remains valid after a ReadToEnd or Close.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetDocumentStreamFromEntityAsync_SuperOffice_WebApi_Data_DocumentEntity_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetDocumentStreamFromEntityAsync\(DocumentEntity, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetDocumentStreamFromEntityAsync_SuperOffice_WebApi_Data_DocumentEntity_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDocumentStreamFromEntityAsync\(DocumentEntity, string, RequestOptions\)
 
 Get the document as a stream
 
@@ -1073,11 +1073,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 The document as a Stream
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetDocumentUrlAsync_System_Int32_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetDocumentUrlAsync\(int, string, bool, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetDocumentUrlAsync_System_Int32_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDocumentUrlAsync\(int, string, bool, RequestOptions\)
 
 Get a URL referring to the given document content.&lt;para/&gt;This URL may be passed to the ultimate client (text editor of some kind?), which is then responsible for all further operations.&lt;para/&gt;The returned string is a fully qualified URL.&lt;para/&gt;Not all documents and document plugins support this feature.
 
@@ -1105,11 +1105,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Fully resolved URL referring to the document. May be NULL or blank if plugin does not support URLs.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetDocumentsByTemplateHeadingAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetDocumentsByTemplateHeadingAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetDocumentsByTemplateHeadingAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDocumentsByTemplateHeadingAsync\(int, RequestOptions\)
 
 Method that returns document appointments, filtered by the document template heading. The heading represents a grouping or filtering of document templates.
 
@@ -1129,11 +1129,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\[\]\&gt;
 
 Array of Appointments.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetMyPublishedDocumentsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetMyPublishedDocumentsAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetMyPublishedDocumentsAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetMyPublishedDocumentsAsync\(RequestOptions\)
 
 ```csharp
 public Task<Document[]> GetMyPublishedDocumentsAsync(RequestOptions requestOptions = null)
@@ -1147,11 +1147,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\[\]\&gt;
 
 Array of documents
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetPersonDocumentsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPersonDocumentsAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetPersonDocumentsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPersonDocumentsAsync\(int, RequestOptions\)
 
 Get all documents that are linked to the person. I.e. the documents that are listed in the person dialog.
 
@@ -1171,11 +1171,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\[\]\&gt;
 
 Array of documents
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetPersonDocumentsByDateAsync_System_Int32_System_Boolean_System_DateTime_System_DateTime_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPersonDocumentsByDateAsync\(int, bool, DateTime, DateTime, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetPersonDocumentsByDateAsync_System_Int32_System_Boolean_System_DateTime_System_DateTime_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPersonDocumentsByDateAsync\(int, bool, DateTime, DateTime, int, RequestOptions\)
 
 Method that returns a specified number of document appointments within a time range. The document appointments belong to the person specified.
 
@@ -1211,11 +1211,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\[\]\&gt;
 
 Array of Appointments.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetPersonDocumentsByTemplateHeadingAsync_System_Int32_System_Boolean_System_DateTime_System_DateTime_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPersonDocumentsByTemplateHeadingAsync\(int, bool, DateTime, DateTime, int, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetPersonDocumentsByTemplateHeadingAsync_System_Int32_System_Boolean_System_DateTime_System_DateTime_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPersonDocumentsByTemplateHeadingAsync\(int, bool, DateTime, DateTime, int, int, RequestOptions\)
 
 Method that returns a specified number of document appointments within a time range, filtered by document template heading. The document appointments belong to the person specified. The heading represents a grouping or filtering of document templates.
 
@@ -1255,11 +1255,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\[\]\&gt;
 
 Array of Appointments.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetPersonDocumentsByTemplateTypeAsync_System_Int32_System_Boolean_System_DateTime_System_DateTime_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPersonDocumentsByTemplateTypeAsync\(int, bool, DateTime, DateTime, int, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetPersonDocumentsByTemplateTypeAsync_System_Int32_System_Boolean_System_DateTime_System_DateTime_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPersonDocumentsByTemplateTypeAsync\(int, bool, DateTime, DateTime, int, int, RequestOptions\)
 
 Method that returns a specified number of document appointments within a time range, filtered by document template type. The document appointments belong to the person specified.
 
@@ -1299,11 +1299,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\[\]\&gt;
 
 Array of Appointments.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetPersonDocumentsByTemplateTypesAsync_System_Int32_System_Boolean_System_DateTime_System_DateTime_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetPersonDocumentsByTemplateTypesAsync\(int, bool, DateTime, DateTime, int, int\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetPersonDocumentsByTemplateTypesAsync_System_Int32_System_Boolean_System_DateTime_System_DateTime_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPersonDocumentsByTemplateTypesAsync\(int, bool, DateTime, DateTime, int, int\[\], RequestOptions\)
 
 Method that returns a specified number of document appointments within a time range, filtered by document template types. The document appointments belong to the person specified.
 
@@ -1343,11 +1343,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\[\]\&gt;
 
 Array of Appointments.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetPluginCapabilitiesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPluginCapabilitiesAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetPluginCapabilitiesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPluginCapabilitiesAsync\(int, RequestOptions\)
 
 Get a list of plugin-dependent capabilities for a given document archive plugin.&lt;br/&gt;A standard set of properties is defined in SuperOffice.CRM.Documents.Constants.Capabilities.
 
@@ -1367,11 +1367,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\&gt;
 
 Dictionary mapping capability names=values
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetPluginListAsync_SuperOffice_WebApi_RequestOptions_"></a> GetPluginListAsync\(RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetPluginListAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPluginListAsync\(RequestOptions\)
 
 Get a list of installed document plugins
 
@@ -1387,11 +1387,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\&gt;
 
 Dictionary mapping plugin id=plugin name
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetPreviewDocumentStreamAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPreviewDocumentStreamAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetPreviewDocumentStreamAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPreviewDocumentStreamAsync\(int, RequestOptions\)
 
 Get the preview version of the document content as a stream. Retrieves a sanitized version if possible
 
@@ -1411,11 +1411,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentPreview](SuperOffice.WebApi.Data.DocumentPreview.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentPreview](SuperOffice.WebApi.Data.DocumentPreview.md)\&gt;
 
 Preview version of the document
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetProjectDocumentsAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetProjectDocumentsAsync\(int, DateTime, DateTime, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetProjectDocumentsAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectDocumentsAsync\(int, DateTime, DateTime, int, RequestOptions\)
 
 Method that returns a specified number of document appointments within a time range. The document appointments belong to the project specified.
 
@@ -1447,11 +1447,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\[\]\&gt;
 
 Array of Appointments.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetProjectDocumentsByTemplateHeadingAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetProjectDocumentsByTemplateHeadingAsync\(int, DateTime, DateTime, int, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetProjectDocumentsByTemplateHeadingAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectDocumentsByTemplateHeadingAsync\(int, DateTime, DateTime, int, int, RequestOptions\)
 
 Method that returns a specified number of document appointments within a time range, filtered by document template heading. The document appointments belong to the project specified. The heading represents a grouping or filtering of document templates.
 
@@ -1487,11 +1487,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\[\]\&gt;
 
 Array of Appointments.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetProjectDocumentsByTemplateTypeAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetProjectDocumentsByTemplateTypeAsync\(int, DateTime, DateTime, int, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetProjectDocumentsByTemplateTypeAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectDocumentsByTemplateTypeAsync\(int, DateTime, DateTime, int, int, RequestOptions\)
 
 Method that returns a specified number of document appointments within a time range, filtered by document template type. The document appointments belong to the project specified.
 
@@ -1527,11 +1527,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\[\]\&gt;
 
 Array of Appointments.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetProjectDocumentsByTemplateTypesAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetProjectDocumentsByTemplateTypesAsync\(int, DateTime, DateTime, int, int\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetProjectDocumentsByTemplateTypesAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectDocumentsByTemplateTypesAsync\(int, DateTime, DateTime, int, int\[\], RequestOptions\)
 
 Method that returns a specified number of document appointments within a time range, filtered by document template types. The document appointments belong to the project specified.
 
@@ -1567,11 +1567,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\[\]\&gt;
 
 Array of Appointments.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetProjectMemberDocumentsAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetProjectMemberDocumentsAsync\(int, DateTime, DateTime, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetProjectMemberDocumentsAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectMemberDocumentsAsync\(int, DateTime, DateTime, int, RequestOptions\)
 
 Method that returns a specified number of document appointments within a time range. The document appointments belong to the project member specified.
 
@@ -1603,11 +1603,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\[\]\&gt;
 
 Array of Appointments.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetProjectMemberDocumentsByTemplateHeadingAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetProjectMemberDocumentsByTemplateHeadingAsync\(int, DateTime, DateTime, int, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetProjectMemberDocumentsByTemplateHeadingAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectMemberDocumentsByTemplateHeadingAsync\(int, DateTime, DateTime, int, int, RequestOptions\)
 
 Method that returns a specified number of document appointments within a time range, filtered by document template heading. The document appointments belong to the project member specified. The heading represents a grouping or filtering of document templates.
 
@@ -1643,11 +1643,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\[\]\&gt;
 
 Array of Appointments.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetProjectMemberDocumentsByTemplateTypeAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetProjectMemberDocumentsByTemplateTypeAsync\(int, DateTime, DateTime, int, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetProjectMemberDocumentsByTemplateTypeAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectMemberDocumentsByTemplateTypeAsync\(int, DateTime, DateTime, int, int, RequestOptions\)
 
 Method that returns a specified number of document appointments within a time range, filtered by document template type. The document appointments belong to the project member specified.
 
@@ -1683,11 +1683,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\[\]\&gt;
 
 Array of Appointments.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetProjectMemberDocumentsByTemplateTypesAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetProjectMemberDocumentsByTemplateTypesAsync\(int, DateTime, DateTime, int, int\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetProjectMemberDocumentsByTemplateTypesAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectMemberDocumentsByTemplateTypesAsync\(int, DateTime, DateTime, int, int\[\], RequestOptions\)
 
 Method that returns a specified number of document appointments within a time range, filtered by document template types. The document appointments belong to the project member specified.
 
@@ -1723,11 +1723,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\[\]\&gt;
 
 Array of Appointments.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetPublishedDocumentAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPublishedDocumentAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetPublishedDocumentAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPublishedDocumentAsync\(int, RequestOptions\)
 
 Get the document if it's published
 
@@ -1747,11 +1747,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\&gt;
 
 Document
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetPublishedDocumentsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetPublishedDocumentsAsync\(int\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetPublishedDocumentsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPublishedDocumentsAsync\(int\[\], RequestOptions\)
 
 Get the published documents from an array of doucment ids.
 
@@ -1771,11 +1771,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\[\]\&gt;
 
 Array of Document
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetPublishedDocumentsByDateAsync_System_Int32_System_Boolean_System_DateTime_System_DateTime_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPublishedDocumentsByDateAsync\(int, bool, DateTime, DateTime, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetPublishedDocumentsByDateAsync_System_Int32_System_Boolean_System_DateTime_System_DateTime_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPublishedDocumentsByDateAsync\(int, bool, DateTime, DateTime, int, RequestOptions\)
 
 Method that returns a specified number of published document appointments within a time range. The document appointments is visible to the person specified or the document is in a project the person belongs to.
 
@@ -1811,11 +1811,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\[\]\&gt;
 
 Array of Appointments.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetPublishedPersonDocumentsByDateAsync_System_Int32_System_Boolean_System_DateTime_System_DateTime_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPublishedPersonDocumentsByDateAsync\(int, bool, DateTime, DateTime, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetPublishedPersonDocumentsByDateAsync_System_Int32_System_Boolean_System_DateTime_System_DateTime_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPublishedPersonDocumentsByDateAsync\(int, bool, DateTime, DateTime, int, RequestOptions\)
 
 Method that returns a specified number of published document appointments within a time range. The document appointments belong to the person specified or the document is in a project the person belongs to.
 
@@ -1851,11 +1851,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\[\]\&gt;
 
 Array of Appointments.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetPublishedProjectDocumentsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPublishedProjectDocumentsAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetPublishedProjectDocumentsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPublishedProjectDocumentsAsync\(int, RequestOptions\)
 
 Get published appointment documents by project id.
 
@@ -1875,11 +1875,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\[\]\&gt;
 
 Array of Appointment
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetSaleDocumentsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetSaleDocumentsAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetSaleDocumentsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSaleDocumentsAsync\(int, RequestOptions\)
 
 Get all documents that are linked to the sale. I.e. the documents that are listed in the sale dialog.
 
@@ -1899,11 +1899,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Document](SuperOffice.WebApi.Data.Document.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Document](SuperOffice.WebApi.Data.Document.md)\[\]\&gt;
 
 Array of documents
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetSanitizedDocumentStreamAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetSanitizedDocumentStreamAsync\(int, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetSanitizedDocumentStreamAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSanitizedDocumentStreamAsync\(int, string, RequestOptions\)
 
 Get the document content as a stream. Retrieves a sanitized version if possible
 
@@ -1927,11 +1927,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 The document as a Stream. This stream can be read once and clients should not assume it remains valid after a ReadToEnd or Close.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetSanitizedTemplateStreamAsync_System_String_System_Boolean_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetSanitizedTemplateStreamAsync\(string, bool, string, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetSanitizedTemplateStreamAsync_System_String_System_Boolean_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSanitizedTemplateStreamAsync\(string, bool, string, string, RequestOptions\)
 
 Retrieve a stream to a mail template based on its name. Sanitizes the contents if possible.
 
@@ -1963,11 +1963,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 Open stream to the mail template
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetSanitizedTemplateStreamFromIdAsync_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetSanitizedTemplateStreamFromIdAsync\(int, string, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetSanitizedTemplateStreamFromIdAsync_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSanitizedTemplateStreamFromIdAsync\(int, string, string, RequestOptions\)
 
 Retrieve a stream to a document template based on its id. Sanitizes the contents if possible.
 
@@ -1995,11 +1995,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 Open stream to the template
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetSuggestedDocumentEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetSuggestedDocumentEntityAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetSuggestedDocumentEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSuggestedDocumentEntityAsync\(int, RequestOptions\)
 
 Gets a specific SuggestedDocumentEntity object.
 
@@ -2019,11 +2019,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SuggestedDocumentEntity](SuperOffice.WebApi.Data.SuggestedDocumentEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SuggestedDocumentEntity](SuperOffice.WebApi.Data.SuggestedDocumentEntity.md)\&gt;
 
 SuggestedDocumentEntity
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetTempFileAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetTempFileAsync\(string, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetTempFileAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTempFileAsync\(string, string, RequestOptions\)
 
 Get data stream for temporary file created with CreateTempFile.
 
@@ -2047,11 +2047,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 The document as a Stream
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetTemplateStreamAsync_System_String_System_Boolean_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetTemplateStreamAsync\(string, bool, string, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetTemplateStreamAsync_System_String_System_Boolean_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTemplateStreamAsync\(string, bool, string, string, RequestOptions\)
 
 Retrieve a stream to a mail template based on its name
 
@@ -2083,11 +2083,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 Open stream to the mail template
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetTemplateStreamFromIdAsync_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetTemplateStreamFromIdAsync\(int, string, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetTemplateStreamFromIdAsync_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTemplateStreamFromIdAsync\(int, string, string, RequestOptions\)
 
 Retrieve a stream to a document template based on its id
 
@@ -2115,11 +2115,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 Open stream to the template
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetUnsanitizedPreviewDocumentStreamAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetUnsanitizedPreviewDocumentStreamAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetUnsanitizedPreviewDocumentStreamAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetUnsanitizedPreviewDocumentStreamAsync\(int, RequestOptions\)
 
 Get the preview version of the document content as a stream. Retrieves an unsanitized version. This has less CPU impact but the caller must sanitize the content before presenting it to the user.
 
@@ -2139,11 +2139,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentPreview](SuperOffice.WebApi.Data.DocumentPreview.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentPreview](SuperOffice.WebApi.Data.DocumentPreview.md)\&gt;
 
 Unsanitized preview version of the document
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_GetVersionListAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetVersionListAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_GetVersionListAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetVersionListAsync\(int, RequestOptions\)
 
 Get a list of existing, committed  versions for a given document
 
@@ -2163,11 +2163,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[VersionInfo](SuperOffice.WebApi.Data.VersionInfo.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[VersionInfo](SuperOffice.WebApi.Data.VersionInfo.md)\[\]\&gt;
 
 Array of objects describing the existing, committed versions for this document
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_RenameDocumentAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> RenameDocumentAsync\(int, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_RenameDocumentAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RenameDocumentAsync\(int, string, RequestOptions\)
 
 Rename the physical document, i.e., change the file name or equivalent concept in the document archive.
 
@@ -2191,11 +2191,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 The actual, new "file" name. This will generally be derived from the suggested name, but may be amended.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_SaveDocumentEntityAsync_SuperOffice_WebApi_Data_DocumentEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveDocumentEntityAsync\(DocumentEntity, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_SaveDocumentEntityAsync_SuperOffice_WebApi_Data_DocumentEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveDocumentEntityAsync\(DocumentEntity, RequestOptions\)
 
 Updates the existing DocumentEntity or creates a new DocumentEntity if the id parameter is 0. Save the document entity. If the entity already exists and the file name of the incoming entity is different from the existing one, a corresponding renaming of the physical document will be attempted. This may cause an amended file name to be substituted into the document entity, since a document plugin may have aribitrary rules on file names and collisions. Clients should always inspect the return value from this call and not assume that what they sent for saving is the final truth.
 
@@ -2215,11 +2215,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)\&gt;
 
 New or updated DocumentEntity
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_SaveDocumentTemplateStreamAsync_System_Int32_System_Byte___System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> SaveDocumentTemplateStreamAsync\(int, byte\[\], string, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_SaveDocumentTemplateStreamAsync_System_Int32_System_Byte___System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveDocumentTemplateStreamAsync\(int, byte\[\], string, int, RequestOptions\)
 
 Saves content in stream to document template file
 
@@ -2251,11 +2251,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TemplateInfo](SuperOffice.WebApi.Data.TemplateInfo.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TemplateInfo](SuperOffice.WebApi.Data.TemplateInfo.md)\&gt;
 
 Template info
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_SavePrivacyReportAsync_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> SavePrivacyReportAsync\(string, string, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_SavePrivacyReportAsync_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SavePrivacyReportAsync\(string, string, int, RequestOptions\)
 
 Generates a Pdf from HTML and makes a document
 
@@ -2283,11 +2283,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
 
 Document id of saved report
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_SavePrivacyReportPdfAsync_System_Byte___System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> SavePrivacyReportPdfAsync\(byte\[\], string, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_SavePrivacyReportPdfAsync_System_Byte___System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SavePrivacyReportPdfAsync\(byte\[\], string, int, RequestOptions\)
 
 Saves a pdf stream, assigns file name, connects to given contact etc.
 
@@ -2315,11 +2315,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
 
 Document id of saved report
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_SaveSuggestedDocumentEntityAsync_SuperOffice_WebApi_Data_SuggestedDocumentEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveSuggestedDocumentEntityAsync\(SuggestedDocumentEntity, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_SaveSuggestedDocumentEntityAsync_SuperOffice_WebApi_Data_SuggestedDocumentEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveSuggestedDocumentEntityAsync\(SuggestedDocumentEntity, RequestOptions\)
 
 Updates the existing SuggestedDocumentEntity or creates a new SuggestedDocumentEntity if the id parameter is 0.
 
@@ -2339,11 +2339,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SuggestedDocumentEntity](SuperOffice.WebApi.Data.SuggestedDocumentEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SuggestedDocumentEntity](SuperOffice.WebApi.Data.SuggestedDocumentEntity.md)\&gt;
 
 New or updated SuggestedDocumentEntity
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_SetDocumentStreamAsync_SuperOffice_WebApi_Data_DocumentEntity_System_IO_Stream_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> SetDocumentStreamAsync\(DocumentEntity, Stream, bool, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_SetDocumentStreamAsync_SuperOffice_WebApi_Data_DocumentEntity_System_IO_Stream_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetDocumentStreamAsync\(DocumentEntity, Stream, bool, RequestOptions\)
 
 Store a document's contents from its stream. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.
 
@@ -2371,11 +2371,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)\&gt;
 
 Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_SetDocumentStreamAsync_SuperOffice_WebApi_Data_DocumentEntity_System_Byte___System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> SetDocumentStreamAsync\(DocumentEntity, byte\[\], bool, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_SetDocumentStreamAsync_SuperOffice_WebApi_Data_DocumentEntity_System_Byte___System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetDocumentStreamAsync\(DocumentEntity, byte\[\], bool, RequestOptions\)
 
 Store a document's contents from its stream. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.
 
@@ -2403,11 +2403,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)\&gt;
 
 Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_SetDocumentStreamFromIdAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_"></a> SetDocumentStreamFromIdAsync\(int, byte\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_SetDocumentStreamFromIdAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetDocumentStreamFromIdAsync\(int, byte\[\], RequestOptions\)
 
 Store document content from stream. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.
 
@@ -2431,11 +2431,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)\&gt;
 
 Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_SetTemplateStreamAsync_System_String_System_Boolean_System_Byte___SuperOffice_WebApi_RequestOptions_"></a> SetTemplateStreamAsync\(string, bool, byte\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_SetTemplateStreamAsync_System_String_System_Boolean_System_Byte___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetTemplateStreamAsync\(string, bool, byte\[\], RequestOptions\)
 
 Save a mail signature template to the document archive
 
@@ -2467,7 +2467,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_SubstituteMergeDocumentTemplateVariables2Async_System_Int32_System_Int32_SuperOffice_WebApi_Data_StringDictionary_System_String_SuperOffice_WebApi_RequestOptions_"></a> SubstituteMergeDocumentTemplateVariables2Async\(int, int, StringDictionary, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_SubstituteMergeDocumentTemplateVariables2Async_System_Int32_System_Int32_SuperOffice_WebApi_Data_StringDictionary_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SubstituteMergeDocumentTemplateVariables2Async\(int, int, StringDictionary, string, RequestOptions\)
 
 Parse the source document, and replace any template variable tags with their values, based on the associate Id.&lt;p/&gt; The source document should be of type MergeDraft. This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.
 
@@ -2499,11 +2499,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 The document as a Stream
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_SubstituteMergeDocumentTemplateVariablesAsync_System_Int32_System_Int32_System_String___System_String___System_String_SuperOffice_WebApi_RequestOptions_"></a> SubstituteMergeDocumentTemplateVariablesAsync\(int, int, string\[\], string\[\], string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_SubstituteMergeDocumentTemplateVariablesAsync_System_Int32_System_Int32_System_String___System_String___System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SubstituteMergeDocumentTemplateVariablesAsync\(int, int, string\[\], string\[\], string, RequestOptions\)
 
 Parse the source document, and replace any template variable tags with their values, based on the associate Id.&lt;p/&gt; The source document should be of type MergeDraft. This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.
 
@@ -2539,11 +2539,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 The document as a Stream
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_SubstituteMergeDocumentTemplateVariablesEx2Async_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_Data_StringDictionary_System_String_SuperOffice_WebApi_RequestOptions_"></a> SubstituteMergeDocumentTemplateVariablesEx2Async\(int, int, int, int, int, int, int, int, StringDictionary, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_SubstituteMergeDocumentTemplateVariablesEx2Async_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_Data_StringDictionary_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SubstituteMergeDocumentTemplateVariablesEx2Async\(int, int, int, int, int, int, int, int, StringDictionary, string, RequestOptions\)
 
 Parse the source document, and replace any template variable tags with their values, based on the provided identifiers.&lt;p/&gt; The source document should be of type MergeDraft. This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.
 
@@ -2599,11 +2599,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 The document as a Stream
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_SubstituteMergeDocumentTemplateVariablesExAsync_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_String___System_String___System_String_SuperOffice_WebApi_RequestOptions_"></a> SubstituteMergeDocumentTemplateVariablesExAsync\(int, int, int, int, int, int, int, int, string\[\], string\[\], string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_SubstituteMergeDocumentTemplateVariablesExAsync_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_String___System_String___System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SubstituteMergeDocumentTemplateVariablesExAsync\(int, int, int, int, int, int, int, int, string\[\], string\[\], string, RequestOptions\)
 
 Parse the source document, and replace any template variable tags with their values, based on the provided identifiers.&lt;p/&gt; The source document should be of type MergeDraft. This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.
 
@@ -2663,11 +2663,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 The document as a Stream
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_SubstituteTemplateVariablesAsync_System_String_SuperOffice_WebApi_Data_GeneratorEncoding_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> SubstituteTemplateVariablesAsync\(string, GeneratorEncoding, int, int, int, int, int, int, int, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_SubstituteTemplateVariablesAsync_System_String_SuperOffice_WebApi_Data_GeneratorEncoding_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SubstituteTemplateVariablesAsync\(string, GeneratorEncoding, int, int, int, int, int, int, int, string, RequestOptions\)
 
 Parse the source string, and replace any template variable tags with their values, based on the ID's given in the other parameters.
 
@@ -2723,11 +2723,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Source string with templates substituted, using the same encoding as for the source (binary data will be returned in Base64).
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_SubstituteTemplateVariablesExAsync_SuperOffice_WebApi_Data_TemplateVariablesParameters_SuperOffice_WebApi_RequestOptions_"></a> SubstituteTemplateVariablesExAsync\(TemplateVariablesParameters, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_SubstituteTemplateVariablesExAsync_SuperOffice_WebApi_Data_TemplateVariablesParameters_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SubstituteTemplateVariablesExAsync\(TemplateVariablesParameters, RequestOptions\)
 
 Parse the source string, and replace any template variable tags with their values, based on the identities, custom values and entities specified in the other parameters.
 
@@ -2747,11 +2747,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Source string with templates substituted, using the same encoding as for the source (binary data will be returned in Base64).
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_SubstituteTemplateVariablesWithCustomTags2Async_System_String_SuperOffice_WebApi_Data_GeneratorEncoding_SuperOffice_WebApi_Data_StringDictionary_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> SubstituteTemplateVariablesWithCustomTags2Async\(string, GeneratorEncoding, StringDictionary, int, int, int, int, int, int, int, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_SubstituteTemplateVariablesWithCustomTags2Async_System_String_SuperOffice_WebApi_Data_GeneratorEncoding_SuperOffice_WebApi_Data_StringDictionary_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SubstituteTemplateVariablesWithCustomTags2Async\(string, GeneratorEncoding, StringDictionary, int, int, int, int, int, int, int, string, RequestOptions\)
 
 Parse the source string, and replace any template variable tags with their values, based on the ID's given in the other parameters.&lt;p/&gt;This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.
 
@@ -2811,11 +2811,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Source string with templates substituted, using the same encoding as for the source (binary data will be returned in Base64).
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_SubstituteTemplateVariablesWithCustomTagsAsync_System_String_SuperOffice_WebApi_Data_GeneratorEncoding_System_String___System_String___System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> SubstituteTemplateVariablesWithCustomTagsAsync\(string, GeneratorEncoding, string\[\], string\[\], int, int, int, int, int, int, int, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_SubstituteTemplateVariablesWithCustomTagsAsync_System_String_SuperOffice_WebApi_Data_GeneratorEncoding_System_String___System_String___System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SubstituteTemplateVariablesWithCustomTagsAsync\(string, GeneratorEncoding, string\[\], string\[\], int, int, int, int, int, int, int, string, RequestOptions\)
 
 Parse the source string, and replace any template variable tags with their values, based on the ID's given in the other parameters.&lt;p/&gt;This method also takes a pair of arrays specifying custom tags and their values; these tags will be available during substitution in addition to all the existing tags. Custom values will override values otherwise set.
 
@@ -2879,11 +2879,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Source string with templates substituted, using the same encoding as for the source (binary data will be returned in Base64).
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_UndoCheckoutDocumentAsync_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_"></a> UndoCheckoutDocumentAsync\(int, string\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_UndoCheckoutDocumentAsync_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; UndoCheckoutDocumentAsync\(int, string\[\], RequestOptions\)
 
 Undo (abandon) a checkout
 
@@ -2907,11 +2907,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ReturnInfo](SuperOffice.WebApi.Data.ReturnInfo.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ReturnInfo](SuperOffice.WebApi.Data.ReturnInfo.md)\&gt;
 
 Return information, including possible requests for further processing ("Return Action"). Return actions are constrained by the allowedReturnTypes parameter.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_ValidateDocumentEntityAsync_SuperOffice_WebApi_Data_DocumentEntity_SuperOffice_WebApi_RequestOptions_"></a> ValidateDocumentEntityAsync\(DocumentEntity, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_ValidateDocumentEntityAsync_SuperOffice_WebApi_Data_DocumentEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ValidateDocumentEntityAsync\(DocumentEntity, RequestOptions\)
 
 Check that entity is ready for saving, return error messages by field.
 
@@ -2931,11 +2931,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\&gt;
 
 Error messages tagged by field.
 
-### <a id="SuperOffice_WebApi_Agents_DocumentAgent_VerifyGetDocumentStreamAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> VerifyGetDocumentStreamAsync\(int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_DocumentAgent_VerifyGetDocumentStreamAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; VerifyGetDocumentStreamAsync\(int, RequestOptions\)
 
 Verify that the requested document stream exists, and that we can access it, without actually getting the stream.
 

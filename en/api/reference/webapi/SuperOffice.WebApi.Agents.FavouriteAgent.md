@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_Agents_FavouriteAgent"></a> Class FavouriteAgent
+# &lt;a id="SuperOffice_WebApi_Agents_FavouriteAgent"&gt;&lt;/a&gt; Class FavouriteAgent
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -38,7 +38,7 @@ public class FavouriteAgent : AgentBase, IFavouriteAgent, IAgentBase, IDisposabl
 [AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequestObjectWithStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
 [AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequest\_System\_Net\_Http\_HttpRequestMessage\_SuperOffice\_WebApi\_RequestOptions\_), 
 [AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ThrowOnResponseErrorAsync\_System\_Net\_Http\_HttpRequestMessage\_System\_Net\_Http\_HttpResponseMessage\_), 
-[AgentBase.ParseResponse<T\>\(HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseResponse\_\_1\_System\_Net\_Http\_HttpResponseMessage\_), 
+[AgentBase.ParseResponse&lt;T\&gt;\(HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseResponse\_\_1\_System\_Net\_Http\_HttpResponseMessage\_), 
 [AgentBase.Finally\(RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Finally\_SuperOffice\_WebApi\_RequestOptions\_), 
 [AgentBase.Dispose\(\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Dispose), 
 [AgentBase.Configuration](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Configuration), 
@@ -57,19 +57,19 @@ public class FavouriteAgent : AgentBase, IFavouriteAgent, IAgentBase, IDisposabl
 
 ## Examples
 
-<pre><code class="lang-csharp">using SuperOffice.WebApi;
+&lt;pre&gt;&lt;code class="lang-csharp"&gt;using SuperOffice.WebApi;
 using SuperOffice.WebApi.Agents;
 
 var mySession = new WebApiOptions("http://example.com/super/api");
 mySession.Authorization = new AuthorizationUsernamePassword("user", "pass");
 using (FavouriteAgent agent = new FavouriteAgent(mySession))
-{
+\{
       // call methods on agent here...
-}</code></pre>
+\}&lt;/code&gt;&lt;/pre&gt;
 
 ## Constructors
 
-### <a id="SuperOffice_WebApi_Agents_FavouriteAgent__ctor_System_Net_Http_HttpClient_"></a> FavouriteAgent\(HttpClient\)
+### &lt;a id="SuperOffice_WebApi_Agents_FavouriteAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; FavouriteAgent\(HttpClient\)
 
 Constructor: Agent used for retrieveing and setting favourites
 
@@ -83,7 +83,7 @@ public FavouriteAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### <a id="SuperOffice_WebApi_Agents_FavouriteAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"></a> FavouriteAgent\(WebApiOptions, HttpClient\)
+### &lt;a id="SuperOffice_WebApi_Agents_FavouriteAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; FavouriteAgent\(WebApiOptions, HttpClient\)
 
 Constructor: Agent used for retrieveing and setting favourites
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_FavouriteAgent_AddFavouriteAsync_System_String_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> AddFavouriteAsync\(string, int, int, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_FavouriteAgent_AddFavouriteAsync_System_String_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddFavouriteAsync\(string, int, int, string, RequestOptions\)
 
 Add a record in a table as a favourite for an associate
 
@@ -139,7 +139,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_FavouriteAgent_AddFavouritesAsync_System_String_System_Int32___System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> AddFavouritesAsync\(string, int\[\], int, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_FavouriteAgent_AddFavouritesAsync_System_String_System_Int32___System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddFavouritesAsync\(string, int\[\], int, string, RequestOptions\)
 
 Add a list of record ids as favourites for an associate
 
@@ -175,7 +175,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_FavouriteAgent_AddTicketsToFavouritesByProviderAsync_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> AddTicketsToFavouritesByProviderAsync\(string, ArchiveRestrictionInfo\[\], int, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_FavouriteAgent_AddTicketsToFavouritesByProviderAsync_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddTicketsToFavouritesByProviderAsync\(string, ArchiveRestrictionInfo\[\], int, string, RequestOptions\)
 
 Add a list of tickets as favourites that are given by the ticket provider.
 
@@ -211,7 +211,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_FavouriteAgent_GetFavouritesAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetFavouritesAsync\(string, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_FavouriteAgent_GetFavouritesAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetFavouritesAsync\(string, int, RequestOptions\)
 
 Get all favourites for a table and associate
 
@@ -235,11 +235,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Favourite](SuperOffice.WebApi.Data.Favourite.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Favourite](SuperOffice.WebApi.Data.Favourite.md)\[\]\&gt;
 
 Requested favourites for a table and associate
 
-### <a id="SuperOffice_WebApi_Agents_FavouriteAgent_IsFavouriteAsync_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> IsFavouriteAsync\(string, int, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_FavouriteAgent_IsFavouriteAsync_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; IsFavouriteAsync\(string, int, int, RequestOptions\)
 
 Checks if a record in a table is a favourite for an associate
 
@@ -267,11 +267,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 Is Favourite?
 
-### <a id="SuperOffice_WebApi_Agents_FavouriteAgent_RemoveAllFavouritesAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> RemoveAllFavouritesAsync\(string, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_FavouriteAgent_RemoveAllFavouritesAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveAllFavouritesAsync\(string, int, RequestOptions\)
 
 Remove all favourites for a table and associate
 
@@ -299,7 +299,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_FavouriteAgent_RemoveFavouriteAsync_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> RemoveFavouriteAsync\(string, int, int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_FavouriteAgent_RemoveFavouriteAsync_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveFavouriteAsync\(string, int, int, RequestOptions\)
 
 Remove favourite for a table, record id and associate
 
@@ -331,7 +331,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_FavouriteAgent_RemoveFavouritesAsync_System_String_System_Int32___System_Int32_SuperOffice_WebApi_RequestOptions_"></a> RemoveFavouritesAsync\(string, int\[\], int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_FavouriteAgent_RemoveFavouritesAsync_System_String_System_Int32___System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveFavouritesAsync\(string, int\[\], int, RequestOptions\)
 
 Remove a list of record ids from favourites for an associate
 
@@ -363,7 +363,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_FavouriteAgent_RemoveFavouritesByIdAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> RemoveFavouritesByIdAsync\(int\[\], RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_FavouriteAgent_RemoveFavouritesByIdAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveFavouritesByIdAsync\(int\[\], RequestOptions\)
 
 Remove favourite using favourite id
 
@@ -387,7 +387,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_FavouriteAgent_RemoveTicketsFromFavouritesByProviderAsync_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_Int32_SuperOffice_WebApi_RequestOptions_"></a> RemoveTicketsFromFavouritesByProviderAsync\(string, ArchiveRestrictionInfo\[\], int, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_FavouriteAgent_RemoveTicketsFromFavouritesByProviderAsync_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveTicketsFromFavouritesByProviderAsync\(string, ArchiveRestrictionInfo\[\], int, RequestOptions\)
 
 Remove a list of tickets from favourites that are given by the ticket provider.
 
@@ -419,7 +419,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_FavouriteAgent_ToggleFavouriteAsync_System_String_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> ToggleFavouriteAsync\(string, int, int, string, RequestOptions\)
+### &lt;a id="SuperOffice_WebApi_Agents_FavouriteAgent_ToggleFavouriteAsync_System_String_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ToggleFavouriteAsync\(string, int, int, string, RequestOptions\)
 
 Toggle a record in a table as a favourite for an associate
 
@@ -451,7 +451,7 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 Return the new value, true if added, false if removed
 
