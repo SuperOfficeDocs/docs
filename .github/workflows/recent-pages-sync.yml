@@ -1,0 +1,53 @@
+name: Recent-pages sync
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'index.mdx'
+      - 'en/**'
+      - 'integrations/**'
+
+# Automatically cancel in-progress runs on the same branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  sync-recent-pages:
+    name: "Regenerate the homepage's what's new list"
+    runs-on: ubuntu-latest
+    # A fork PR's default token can't push back to the fork - skip cleanly
+    # rather than fail loudly. Same-repo branches proceed as usual.
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    steps:
+      - name: Checkout PR head
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Sync recent_pages frontmatter and the RecentPages call
+        run: python tools/ci/sync-recent-pages.py --base-ref origin/main --apply
+
+      - name: Commit and push, if changed
+        env:
+          HEAD_REF: ${{ github.event.pull_request.head.ref }}
+        run: |
+          if git diff --quiet; then
+            echo "No recent-pages changes needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.mdx
+          git commit -m "Sync homepage recent-pages list (#319)"
+          git push origin "HEAD:$HEAD_REF"
