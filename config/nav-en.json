@@ -14,20 +14,6 @@
     }
   },
   {
-    "tab": "Mobile",
-    "icon": "mobile-screen",
-    "pages": {
-      "$ref": "./nav-mobile.json"
-    }
-  },
-  {
-    "tab": "Integrations",
-    "icon": "plus",
-    "pages": {
-      "$ref": "./nav-integrations.json"
-    }
-  },
-  {
     "tab": "CRM Platform",
     "icon": "cloud",
     "pages": {
@@ -44,10 +30,24 @@
     }
   },
   {
-    "tab": "Release Notes",
-    "icon": "bullhorn",
-    "groups": {
-      "$ref": "./nav-releases.json"
+    "tab": "AI",
+    "icon": "wand-magic-sparkles",
+    "pages": [
+      "en/ai/learn/index"
+    ]
+  },
+  {
+    "tab": "Mobile",
+    "icon": "mobile-screen",
+    "pages": {
+      "$ref": "./nav-mobile.json"
+    }
+  },
+  {
+    "tab": "Integrations",
+    "icon": "plus",
+    "pages": {
+      "$ref": "./nav-integrations.json"
     }
   },
   {
@@ -622,6 +622,13 @@
         ]
       }
     ]
+  },
+  {
+    "tab": "Release Notes",
+    "icon": "bullhorn",
+    "groups": {
+      "$ref": "./nav-releases.json"
+    }
   },
   {
     "tab": "Contribute",
