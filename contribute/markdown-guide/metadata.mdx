@@ -2,9 +2,9 @@
 uid: markdown-metadata
 title: Metadata (YAML front-matter)
 description: Introduction to the YAML key-value front-matter metadata used at the top of SuperOfficeDocs markdown files.
-keywords: ['metadata', 'front matter', 'yaml', 'uid']
+keywords: ['metadata', 'front matter', 'yaml', 'uid', 'recent pages', 'homepage']
 author: digitaldiina
-date: 08.20.2026
+date: 08.25.2026
 content_type: concept
 related:
   - /contribute/markdown-guide/docfx-to-mintlify-cheat-sheet
@@ -80,6 +80,10 @@ Product content pages (everything outside `contribute/`) use a larger property s
 A subcategory map page (`mode: "custom"`, `<div id="subcategory">` in the body — the per-topic "map" page listing a Guides category's own sub-pages, for example `en/company/index.mdx`) uses its own smaller property set instead of the table above: `mode`, `title`, `sidebarTitle`, `description`, `icon`, `iconType`, `author`, `date`, `language`. `icon` is always `"map"` and `iconType` is always `"regular"` (Font Awesome, not Phosphor), positioned after `description` and before `author`. Translate `sidebarTitle` on non-English subcategory pages same as `title`/`description`. See the `subcategory-landing-page` blueprint template.
 </Note>
 
+<Note>
+`index.mdx` (the site homepage, `mode: "custom"`) carries one extra, homepage-only property: `recent_pages`, a YAML block sequence of `{path, pinned?, since?, title?}` entries driving the "What's new" list rendered by `<RecentPages>` (`components/recent-pages.jsx`). `path` is a root-relative URL; `pinned: true` exempts an entry from the 60-day age-out but it still counts against the 7-entry cap; `since` is this repo's usual `MM.DD.YYYY` date; `title` is an optional override shown instead of the target page's own frontmatter title (e.g. "Marketing landing page" for a page whose real title is just "Marketing" — clearer out of context on a homepage list). Don't hand-edit the resolved `<RecentPages items={[...]} />` call in the page body — `tools/ci/sync-recent-pages.py` (run automatically by `.github/workflows/recent-pages-sync.yml` on every PR touching `en/`/`integrations/`/`index.mdx`) regenerates it from the `recent_pages` frontmatter and will overwrite manual edits to that call on its next run. See [Automated tests][5] for what the workflow actually does.
+</Note>
+
 ### Default so_version by section
 
 `so_version` is required in handcrafted docs, omitted in generated ones (the `reference/` and `table/` folders).
@@ -109,3 +113,4 @@ Before any updates get merged in the repo, the reviewers will check this section
 [2]: ./index
 [3]: ../seo
 [4]: https://github.com/SuperOfficeDocs/docs/issues/254
+[5]: ../automated-tests

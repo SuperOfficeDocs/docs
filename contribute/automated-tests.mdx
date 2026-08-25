@@ -2,9 +2,9 @@
 uid: automated-tests
 title: Automated tests
 description: Every check that runs against a PR or on a schedule for this repo - markdownlint, Vale, build validation, broken-link checking, the CRMScript reference drift check, and the stale generated-pages check - what each covers, whether it blocks a merge, and where to look when one flags something.
-keywords: ['ci', 'automated tests', 'markdownlint', 'vale', 'broken links', 'mint validate', 'automations', 'crmscript', 'stale pages', 'generated pages', 'landing page', 'template guard', 'release notes', 'openapi', 'swagger']
+keywords: ['ci', 'automated tests', 'markdownlint', 'vale', 'broken links', 'mint validate', 'automations', 'crmscript', 'stale pages', 'generated pages', 'landing page', 'template guard', 'release notes', 'openapi', 'swagger', 'recent pages', 'homepage']
 author: digitaldiina
-date: 08.19.2026
+date: 08.25.2026
 content_type: concept
 related:
   - /contribute/deployment
@@ -24,6 +24,7 @@ This page is the single reference for every automatic check that runs against th
 | Reserved `version` frontmatter auto-fix | GitHub Action (`.github/workflows/version-frontmatter-guard.yml`) | No - auto-fixes and pushes a commit | This repo, `tools/ci/fix-reserved-version-property.py` |
 | Reference-page overflow auto-fix | GitHub Action (`.github/workflows/reference-overflow-guard.yml`) | No - auto-fixes and pushes a commit | This repo, `tools/ci/apply-wide-mode.py` + `tools/ci/apply-code-wrap.py` |
 | OpenAPI conversion auto-fix | GitHub Action (`.github/workflows/openapi-conversion-guard.yml`) | No - auto-fixes and pushes a commit | This repo, `tools/convert-swagger-to-openapi.ps1` + `tools/ci/generate-openapi-nav.py` |
+| Recent-pages sync auto-fix | GitHub Action (`.github/workflows/recent-pages-sync.yml`) | No - auto-fixes and pushes a commit | This repo, `tools/ci/sync-recent-pages.py` |
 | Markdownlint | GitHub Action (`.github/workflows/markdownlint.yml`) | No - advisory | This repo, `.markdownlint.yaml` / `.markdownlintignore` |
 | Landing page template guard | GitHub Action (`.github/workflows/landing-page-template-guard.yml`) | No - advisory (warns only) | This repo, `tools/ci/check-landing-page-templates.py` |
 | Release-notes API structure guard | GitHub Action (`.github/workflows/release-notes-api-structure-guard.yml`) | No - advisory (warns only) | This repo, `tools/ci/check-release-notes-api-structure.py` |
@@ -71,6 +72,12 @@ For each PR, the check converts only the added/modified source files (not a full
 The converter also works around one known upstream bug: two source files (`Swagger-v1-QuoteAgent.json`, `Swagger-v1-Selection.json`) `$ref` a schema definition that the NetServer Swagger generator omits from the same file, which otherwise makes conversion fail outright. The converter copies the missing definition in from a sibling file that still has it, against a throwaway in-memory copy - the tracked `api-sources/` file itself is never edited, since that folder is pipeline-owned.
 
 This whole check, plus `tools/convert-swagger-to-openapi.ps1` itself, is a workaround for the lack of a native OpenAPI 3 pipeline output - see [issue #297][13]. Once #147 lands, delete this workflow and the converter script outright rather than trying to keep them in sync with a pipeline that no longer needs them; `tools/ci/generate-openapi-nav.py` is the one piece that may be worth keeping as a standing nav-drift check regardless of how the underlying specs get produced.
+
+### Recent-pages sync auto-fix
+
+Triggers on a PR touching `index.mdx` itself, or anything under `en/**`/`integrations/**` (issue #319). The homepage's "What's new" list is driven by `index.mdx`'s own `recent_pages` frontmatter - see [Metadata properties][14] for the property's shape - but the list actually rendered by `<RecentPages>` (`components/recent-pages.jsx`) is a separate, resolved `<RecentPages items={[...]} />` call in the page body, since Mintlify's custom-component sandbox can't read a page's own frontmatter and its static file server doesn't serve arbitrary `.json` files (confirmed directly: a root-level `.json` 404s under `mint dev` even though `.ico`/`.png` at the same level serve fine) - a fetch-a-generated-file design didn't work, so the resolved list is baked into the page body as a literal prop instead.
+
+Each run: detects brand-new pages this PR added under `en/`/`integrations/` only (not repo-wide - reference trees like `database/`/`automation/crmscript/reference/` regenerate too often to be a useful signal) and adds them; stamps a missing `since` with today's date, and refreshes a *pinned* entry's `since` if this PR touched that entry's own target page; drops any entry whose target is `generated: true`; drops non-pinned entries older than 60 days; caps the combined list at 7, with pinned entries getting guaranteed slots that still count against the cap. If any of that changes either the frontmatter or the body call, both are rewritten and pushed back onto the PR branch as a fix commit, same as the other auto-fix checks on this page. Idempotent (a page already in sync produces no further commit), and skipped entirely for PRs from a fork, since the default token can't push back to a fork's branch.
 
 ### Markdownlint
 
@@ -160,3 +167,4 @@ mint automations create --name "Broken link detection" --type broken-link-detect
 [11]: https://github.com/SuperOfficeDocs/docs/issues/147
 [12]: https://github.com/SuperOfficeDocs/docs/pull/232
 [13]: https://github.com/SuperOfficeDocs/docs/issues/297
+[14]: ./markdown-guide/metadata
