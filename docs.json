@@ -60,9 +60,10 @@
     "examples": {
       "languages": [
         "csharp",
-        "javascript",
+        "javascript",        
         "php",
-        "python"
+        "python",
+        "typescript"
       ],
       "defaults": "required"
     }
