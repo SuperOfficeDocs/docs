@@ -194,9 +194,17 @@ function Get-TypeLink {
         'NSStream' = 'CRMScript.NetServer.NSStream'
     }
     
-    $isArray = $Type.EndsWith('[]')
-    $baseType = if ($isArray) { $Type.Substring(0, $Type.Length - 2) } else { $Type }
-    
+    # Strip every trailing "[]" level (not just one) -- a leftover "[]" on baseType
+    # still matches the CRMScript.* branch below and leaks into the href for
+    # array-of-array types like "NSLocalizedField[][]", which browsers then
+    # percent-encode into a broken URL. See #316.
+    $baseType = $Type
+    $arraySuffix = ""
+    while ($baseType.EndsWith('[]')) {
+        $baseType = $baseType.Substring(0, $baseType.Length - 2)
+        $arraySuffix += "[]"
+    }
+
     if ($typeMap.ContainsKey($baseType)) {
         $link = $typeMap[$baseType]
     }
@@ -206,11 +214,8 @@ function Get-TypeLink {
     else {
         return $Type
     }
-    
-    $result = "[$baseType]($link)"
-    if ($isArray) { $result += "[]" }
-    
-    return $result
+
+    return "[$baseType]($link)$arraySuffix"
 }
 
 # Helper to safely write a line (handles special chars)
