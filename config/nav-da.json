@@ -91,6 +91,22 @@
         ]
       },
       {
+        "group": "AI-tjenester",
+        "icon": "wand-magic-sparkles",
+        "root": "da/ai/learn/index",
+        "pages": [
+          "da/ai/learn/text-analysis",
+          "da/ai/learn/categorization",
+          "da/ai/learn/copilot",
+          {
+            "group": "For administratorer",
+            "pages": [
+              "da/ai/admin/set-up-categorization"
+            ]
+          }
+        ]
+      },
+      {
         "group": "Dashboard",
         "icon": "gauge",
         "root": "da/dashboard/learn/index",
@@ -354,191 +370,6 @@
         ]
       },
       {
-        "group": "Projekt",
-        "icon": "clipboard-list",
-        "root": "da/project/learn/index",
-        "pages": [
-          "da/project/index",
-          "da/project/learn/create",
-          "da/project/learn/add-image",
-          "da/project/learn/edit",
-          "da/project/learn/merge-projects",
-          "da/project/learn/delete",
-          {
-            "group": "Projektdeltagere",
-            "root": "da/project/learn/project-members/index",
-            "pages": [
-              "da/project/learn/project-members/add",
-              "da/project/learn/project-members/edit",
-              "da/project/learn/project-members/invite-to-meeting",
-              "da/project/learn/project-members/send-email-to",
-              "da/project/learn/project-members/create-mailing"
-            ]
-          },
-          "da/project/learn/project-guides",
-          "da/project/learn/tutorial",
-          {
-            "group": "For admins",
-            "root": "da/project/admin/index",
-            "pages": [
-              "da/project/admin/project-status",
-              "da/project/admin/project-type",
-              "da/project/admin/create-project-guide",
-              "da/project/admin/edit-project-guide"
-            ]
-          }
-        ]
-      },
-      {
-        "group": "Sager",
-        "icon": "ticket",
-        "root": "da/request/learn/index",
-        "pages": [
-          "da/request/index",
-          "da/request/learn/handle-request-ai",
-          "da/request/learn/find",
-          "da/request/learn/create",
-          "da/request/learn/edit-message",
-          "da/request/learn/assign",
-          "da/request/learn/spam",
-          "da/request/learn/accept",
-          "da/request/learn/transfer",
-          "da/request/learn/forward",
-          "da/request/learn/reply",
-          "da/request/learn/request-relations",
-          "da/request/learn/tags",
-          "da/request/learn/flag-message",
-          "da/request/learn/split-request",
-          "da/request/learn/merge",
-          "da/request/learn/split-message",
-          "da/request/learn/close",
-          "da/request/learn/delete",
-          {
-            "group": "For admins",
-            "root": "da/request/admin/index",
-            "pages": [
-              {
-                "group": "Sagstyper",
-                "root": "da/request/admin/type/index",
-                "pages": [
-                  "da/request/admin/type/create",
-                  "da/request/admin/type/delete"
-                ]
-              },
-              "da/request/admin/relation-rules",
-              {
-                "group": "Kategorier",
-                "root": "da/request/admin/category/index",
-                "pages": [
-                  "da/request/admin/category/create",
-                  "da/request/admin/category/delete",
-                  "da/request/admin/category/external-categories"
-                ]
-              },
-              {
-                "group": "Prioriteter",
-                "root": "da/request/admin/priority/index",
-                "pages": [
-                  "da/request/admin/priority/create",
-                  "da/request/admin/priority/delete",
-                  "da/request/admin/priority/escalation-levels"
-                ]
-              },
-              {
-                "group": "Sagsstatus",
-                "root": "da/request/admin/status/index",
-                "pages": [
-                  "da/request/admin/status/create",
-                  "da/request/admin/status/delete"
-                ]
-              },
-              "da/request/admin/next-in-queue",
-              "da/request/admin/system-templates"
-            ]
-          }
-        ]
-      },
-      {
-        "group": "Brugerdefinerede objekter",
-        "icon": "cube",
-        "root": "da/custom-objects/learn/index",
-        "pages": [
-          "da/custom-objects/index",
-          "da/custom-objects/learn/more-tab",
-          {
-            "group": "Brugerdefinerede felter",
-            "pages": [
-              "da/custom-objects/learn/udef",
-              "da/custom-objects/admin/add-udef",
-              "da/custom-objects/admin/edit-udef",
-              "da/custom-objects/admin/edit-udef-layout"
-            ]
-          },
-          {
-            "group": "Ekstra tabeller",
-            "pages": [
-              "da/custom-objects/learn/extra-table",
-              "da/custom-objects/admin/create-extra-table"
-            ]
-          },
-          {
-            "group": "Ekstrafelt",
-            "pages": [
-              "da/custom-objects/learn/extra-field",
-              "da/custom-objects/admin/create-extra-field",
-              "da/custom-objects/admin/show-extra-field-on-request-details"
-            ]
-          }
-        ]
-      },
-      {
-        "group": "Udvalg",
-        "icon": "square-minus",
-        "root": "da/search-options/selection/learn/index",
-        "pages": [
-          "da/search-options/selection/learn/create",
-          "da/search-options/selection/learn/update",
-          "da/search-options/selection/learn/combine",
-          "da/search-options/selection/learn/add-remove-members-static",
-          "da/search-options/selection/learn/copy-members-to",
-          "da/search-options/selection/learn/board-view",
-          {
-            "group": "Udfør opgaver ved hjælp af udvalg",
-            "root": "da/search-options/selection/learn/howto/index",
-            "pages": [
-              "da/search-options/selection/learn/howto/create-mailings",
-              "da/search-options/selection/learn/howto/send-email",
-              "da/search-options/selection/learn/howto/generate-follow-ups",
-              "da/search-options/selection/learn/howto/display-as-charts",
-              "da/search-options/selection/learn/howto/print-labels",
-              "da/search-options/selection/learn/howto/print",
-              "da/search-options/selection/learn/howto/export"
-            ]
-          }
-        ]
-      },
-      {
-        "group": "Chat",
-        "icon": "comment-dots",
-        "root": "da/chat/learn/index",
-        "pages": [
-          "da/chat/learn/statistics",
-          "da/chat/learn/respond",
-          "da/chat/learn/link-to-person",
-          "da/chat/learn/create-request",
-          "da/chat/learn/transfer-to-agent",
-          "da/chat/learn/as-customer",
-          {
-            "group": "For admins",
-            "root": "da/chat/admin/index",
-            "pages": [
-              "da/chat/admin/channel-create",
-              "da/chat/admin/add-javascript"
-            ]
-          }
-        ]
-      },
-      {
         "group": "Marketing",
         "icon": "bullseye",
         "root": "da/marketing/learn/index",
@@ -669,6 +500,111 @@
         ]
       },
       {
+        "group": "Projekt",
+        "icon": "clipboard-list",
+        "root": "da/project/learn/index",
+        "pages": [
+          "da/project/index",
+          "da/project/learn/create",
+          "da/project/learn/add-image",
+          "da/project/learn/edit",
+          "da/project/learn/merge-projects",
+          "da/project/learn/delete",
+          {
+            "group": "Projektdeltagere",
+            "root": "da/project/learn/project-members/index",
+            "pages": [
+              "da/project/learn/project-members/add",
+              "da/project/learn/project-members/edit",
+              "da/project/learn/project-members/invite-to-meeting",
+              "da/project/learn/project-members/send-email-to",
+              "da/project/learn/project-members/create-mailing"
+            ]
+          },
+          "da/project/learn/project-guides",
+          "da/project/learn/tutorial",
+          {
+            "group": "For admins",
+            "root": "da/project/admin/index",
+            "pages": [
+              "da/project/admin/project-status",
+              "da/project/admin/project-type",
+              "da/project/admin/create-project-guide",
+              "da/project/admin/edit-project-guide"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Sager",
+        "icon": "ticket",
+        "root": "da/request/learn/index",
+        "pages": [
+          "da/request/index",
+          "da/request/learn/handle-request-ai",
+          "da/request/learn/find",
+          "da/request/learn/create",
+          "da/request/learn/edit-message",
+          "da/request/learn/assign",
+          "da/request/learn/spam",
+          "da/request/learn/accept",
+          "da/request/learn/transfer",
+          "da/request/learn/forward",
+          "da/request/learn/reply",
+          "da/request/learn/request-relations",
+          "da/request/learn/tags",
+          "da/request/learn/flag-message",
+          "da/request/learn/split-request",
+          "da/request/learn/merge",
+          "da/request/learn/split-message",
+          "da/request/learn/close",
+          "da/request/learn/delete",
+          {
+            "group": "For admins",
+            "root": "da/request/admin/index",
+            "pages": [
+              {
+                "group": "Sagstyper",
+                "root": "da/request/admin/type/index",
+                "pages": [
+                  "da/request/admin/type/create",
+                  "da/request/admin/type/delete"
+                ]
+              },
+              "da/request/admin/relation-rules",
+              {
+                "group": "Kategorier",
+                "root": "da/request/admin/category/index",
+                "pages": [
+                  "da/request/admin/category/create",
+                  "da/request/admin/category/delete",
+                  "da/request/admin/category/external-categories"
+                ]
+              },
+              {
+                "group": "Prioriteter",
+                "root": "da/request/admin/priority/index",
+                "pages": [
+                  "da/request/admin/priority/create",
+                  "da/request/admin/priority/delete",
+                  "da/request/admin/priority/escalation-levels"
+                ]
+              },
+              {
+                "group": "Sagsstatus",
+                "root": "da/request/admin/status/index",
+                "pages": [
+                  "da/request/admin/status/create",
+                  "da/request/admin/status/delete"
+                ]
+              },
+              "da/request/admin/next-in-queue",
+              "da/request/admin/system-templates"
+            ]
+          }
+        ]
+      },
+      {
         "group": "Vidensbase",
         "icon": "book-bookmark",
         "root": "da/knowledge-base/learn/index",
@@ -699,6 +635,86 @@
         ]
       },
       {
+        "group": "Udvalg",
+        "icon": "square-minus",
+        "root": "da/search-options/selection/learn/index",
+        "pages": [
+          "da/search-options/selection/learn/create",
+          "da/search-options/selection/learn/update",
+          "da/search-options/selection/learn/combine",
+          "da/search-options/selection/learn/add-remove-members-static",
+          "da/search-options/selection/learn/copy-members-to",
+          "da/search-options/selection/learn/board-view",
+          {
+            "group": "Udfør opgaver ved hjælp af udvalg",
+            "root": "da/search-options/selection/learn/howto/index",
+            "pages": [
+              "da/search-options/selection/learn/howto/create-mailings",
+              "da/search-options/selection/learn/howto/send-email",
+              "da/search-options/selection/learn/howto/generate-follow-ups",
+              "da/search-options/selection/learn/howto/display-as-charts",
+              "da/search-options/selection/learn/howto/print-labels",
+              "da/search-options/selection/learn/howto/print",
+              "da/search-options/selection/learn/howto/export"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Brugerdefinerede objekter",
+        "icon": "cube",
+        "root": "da/custom-objects/learn/index",
+        "pages": [
+          "da/custom-objects/index",
+          "da/custom-objects/learn/more-tab",
+          {
+            "group": "Brugerdefinerede felter",
+            "pages": [
+              "da/custom-objects/learn/udef",
+              "da/custom-objects/admin/add-udef",
+              "da/custom-objects/admin/edit-udef",
+              "da/custom-objects/admin/edit-udef-layout"
+            ]
+          },
+          {
+            "group": "Ekstra tabeller",
+            "pages": [
+              "da/custom-objects/learn/extra-table",
+              "da/custom-objects/admin/create-extra-table"
+            ]
+          },
+          {
+            "group": "Ekstrafelt",
+            "pages": [
+              "da/custom-objects/learn/extra-field",
+              "da/custom-objects/admin/create-extra-field",
+              "da/custom-objects/admin/show-extra-field-on-request-details"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Chat",
+        "icon": "comment-dots",
+        "root": "da/chat/learn/index",
+        "pages": [
+          "da/chat/learn/statistics",
+          "da/chat/learn/respond",
+          "da/chat/learn/link-to-person",
+          "da/chat/learn/create-request",
+          "da/chat/learn/transfer-to-agent",
+          "da/chat/learn/as-customer",
+          {
+            "group": "For admins",
+            "root": "da/chat/admin/index",
+            "pages": [
+              "da/chat/admin/channel-create",
+              "da/chat/admin/add-javascript"
+            ]
+          }
+        ]
+      },
+      {
         "group": "Privacy-indstillinger og GDPR",
         "icon": "shield",
         "root": "da/security/privacy/learn/index",
@@ -715,22 +731,6 @@
               "da/security/privacy/admin/add-legal-base",
               "da/security/privacy/admin/add-source",
               "da/security/privacy/admin/edit-privacy-confirmation-email"
-            ]
-          }
-        ]
-      },
-      {
-        "group": "AI-tjenester",
-        "icon": "wand-magic-sparkles",
-        "root": "da/ai/learn/index",
-        "pages": [
-          "da/ai/learn/text-analysis",
-          "da/ai/learn/categorization",
-          "da/ai/learn/copilot",
-          {
-            "group": "For administratorer",
-            "pages": [
-              "da/ai/admin/set-up-categorization"
             ]
           }
         ]

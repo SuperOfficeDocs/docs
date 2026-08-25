@@ -91,6 +91,22 @@
         ]
       },
       {
+        "group": "AI-diensten",
+        "icon": "wand-magic-sparkles",
+        "root": "nl/ai/learn/index",
+        "pages": [
+          "nl/ai/learn/text-analysis",
+          "nl/ai/learn/categorization",
+          "nl/ai/learn/copilot",
+          {
+            "group": "Voor beheerders",
+            "pages": [
+              "nl/ai/admin/set-up-categorization"
+            ]
+          }
+        ]
+      },
+      {
         "group": "Dashboard",
         "icon": "gauge",
         "root": "nl/dashboard/learn/index",
@@ -354,191 +370,6 @@
         ]
       },
       {
-        "group": "Project",
-        "icon": "clipboard-list",
-        "root": "nl/project/learn/index",
-        "pages": [
-          "nl/project/index",
-          "nl/project/learn/create",
-          "nl/project/learn/add-image",
-          "nl/project/learn/edit",
-          "nl/project/learn/merge-projects",
-          "nl/project/learn/delete",
-          {
-            "group": "Projectleden",
-            "root": "nl/project/learn/project-members/index",
-            "pages": [
-              "nl/project/learn/project-members/add",
-              "nl/project/learn/project-members/edit",
-              "nl/project/learn/project-members/invite-to-meeting",
-              "nl/project/learn/project-members/send-email-to",
-              "nl/project/learn/project-members/create-mailing"
-            ]
-          },
-          "nl/project/learn/project-guides",
-          "nl/project/learn/tutorial",
-          {
-            "group": "Voor beheerders",
-            "root": "nl/project/admin/index",
-            "pages": [
-              "nl/project/admin/project-status",
-              "nl/project/admin/project-type",
-              "nl/project/admin/create-project-guide",
-              "nl/project/admin/edit-project-guide"
-            ]
-          }
-        ]
-      },
-      {
-        "group": "Verzoeken",
-        "icon": "ticket",
-        "root": "nl/request/learn/index",
-        "pages": [
-          "nl/request/index",
-          "nl/request/learn/handle-request-ai",
-          "nl/request/learn/find",
-          "nl/request/learn/create",
-          "nl/request/learn/edit-message",
-          "nl/request/learn/assign",
-          "nl/request/learn/spam",
-          "nl/request/learn/accept",
-          "nl/request/learn/transfer",
-          "nl/request/learn/forward",
-          "nl/request/learn/reply",
-          "nl/request/learn/request-relations",
-          "nl/request/learn/tags",
-          "nl/request/learn/flag-message",
-          "nl/request/learn/split-request",
-          "nl/request/learn/merge",
-          "nl/request/learn/split-message",
-          "nl/request/learn/close",
-          "nl/request/learn/delete",
-          {
-            "group": "Voor beheerders",
-            "root": "nl/request/admin/index",
-            "pages": [
-              {
-                "group": "Verzoektypen",
-                "root": "nl/request/admin/type/index",
-                "pages": [
-                  "nl/request/admin/type/create",
-                  "nl/request/admin/type/delete"
-                ]
-              },
-              "nl/request/admin/relation-rules",
-              {
-                "group": "Categorieën",
-                "root": "nl/request/admin/category/index",
-                "pages": [
-                  "nl/request/admin/category/create",
-                  "nl/request/admin/category/delete",
-                  "nl/request/admin/category/external-categories"
-                ]
-              },
-              {
-                "group": "Prioriteiten",
-                "root": "nl/request/admin/priority/index",
-                "pages": [
-                  "nl/request/admin/priority/create",
-                  "nl/request/admin/priority/delete",
-                  "nl/request/admin/priority/escalation-levels"
-                ]
-              },
-              {
-                "group": "Verzoekstatus",
-                "root": "nl/request/admin/status/index",
-                "pages": [
-                  "nl/request/admin/status/create",
-                  "nl/request/admin/status/delete"
-                ]
-              },
-              "nl/request/admin/next-in-queue",
-              "nl/request/admin/system-templates"
-            ]
-          }
-        ]
-      },
-      {
-        "group": "Aangepaste objecten",
-        "icon": "cube",
-        "root": "nl/custom-objects/learn/index",
-        "pages": [
-          "nl/custom-objects/index",
-          "nl/custom-objects/learn/more-tab",
-          {
-            "group": "Door gebruiker gedefinieerde velden",
-            "pages": [
-              "nl/custom-objects/learn/udef",
-              "nl/custom-objects/admin/add-udef",
-              "nl/custom-objects/admin/edit-udef",
-              "nl/custom-objects/admin/edit-udef-layout"
-            ]
-          },
-          {
-            "group": "Extra tabellen",
-            "pages": [
-              "nl/custom-objects/learn/extra-table",
-              "nl/custom-objects/admin/create-extra-table"
-            ]
-          },
-          {
-            "group": "Extra velden",
-            "pages": [
-              "nl/custom-objects/learn/extra-field",
-              "nl/custom-objects/admin/create-extra-field",
-              "nl/custom-objects/admin/show-extra-field-on-request-details"
-            ]
-          }
-        ]
-      },
-      {
-        "group": "Selectie",
-        "icon": "square-minus",
-        "root": "nl/search-options/selection/learn/index",
-        "pages": [
-          "nl/search-options/selection/learn/create",
-          "nl/search-options/selection/learn/update",
-          "nl/search-options/selection/learn/combine",
-          "nl/search-options/selection/learn/add-remove-members-static",
-          "nl/search-options/selection/learn/copy-members-to",
-          "nl/search-options/selection/learn/board-view",
-          {
-            "group": "Taken uitvoeren met selecties",
-            "root": "nl/search-options/selection/learn/howto/index",
-            "pages": [
-              "nl/search-options/selection/learn/howto/create-mailings",
-              "nl/search-options/selection/learn/howto/send-email",
-              "nl/search-options/selection/learn/howto/generate-follow-ups",
-              "nl/search-options/selection/learn/howto/display-as-charts",
-              "nl/search-options/selection/learn/howto/print-labels",
-              "nl/search-options/selection/learn/howto/print",
-              "nl/search-options/selection/learn/howto/export"
-            ]
-          }
-        ]
-      },
-      {
-        "group": "Chatten",
-        "icon": "comment-dots",
-        "root": "nl/chat/learn/index",
-        "pages": [
-          "nl/chat/learn/statistics",
-          "nl/chat/learn/respond",
-          "nl/chat/learn/link-to-person",
-          "nl/chat/learn/create-request",
-          "nl/chat/learn/transfer-to-agent",
-          "nl/chat/learn/as-customer",
-          {
-            "group": "Voor beheerders",
-            "root": "nl/chat/admin/index",
-            "pages": [
-              "nl/chat/admin/channel-create",
-              "nl/chat/admin/add-javascript"
-            ]
-          }
-        ]
-      },
-      {
         "group": "Marketing",
         "icon": "bullseye",
         "root": "nl/marketing/learn/index",
@@ -669,6 +500,111 @@
         ]
       },
       {
+        "group": "Project",
+        "icon": "clipboard-list",
+        "root": "nl/project/learn/index",
+        "pages": [
+          "nl/project/index",
+          "nl/project/learn/create",
+          "nl/project/learn/add-image",
+          "nl/project/learn/edit",
+          "nl/project/learn/merge-projects",
+          "nl/project/learn/delete",
+          {
+            "group": "Projectleden",
+            "root": "nl/project/learn/project-members/index",
+            "pages": [
+              "nl/project/learn/project-members/add",
+              "nl/project/learn/project-members/edit",
+              "nl/project/learn/project-members/invite-to-meeting",
+              "nl/project/learn/project-members/send-email-to",
+              "nl/project/learn/project-members/create-mailing"
+            ]
+          },
+          "nl/project/learn/project-guides",
+          "nl/project/learn/tutorial",
+          {
+            "group": "Voor beheerders",
+            "root": "nl/project/admin/index",
+            "pages": [
+              "nl/project/admin/project-status",
+              "nl/project/admin/project-type",
+              "nl/project/admin/create-project-guide",
+              "nl/project/admin/edit-project-guide"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Verzoeken",
+        "icon": "ticket",
+        "root": "nl/request/learn/index",
+        "pages": [
+          "nl/request/index",
+          "nl/request/learn/handle-request-ai",
+          "nl/request/learn/find",
+          "nl/request/learn/create",
+          "nl/request/learn/edit-message",
+          "nl/request/learn/assign",
+          "nl/request/learn/spam",
+          "nl/request/learn/accept",
+          "nl/request/learn/transfer",
+          "nl/request/learn/forward",
+          "nl/request/learn/reply",
+          "nl/request/learn/request-relations",
+          "nl/request/learn/tags",
+          "nl/request/learn/flag-message",
+          "nl/request/learn/split-request",
+          "nl/request/learn/merge",
+          "nl/request/learn/split-message",
+          "nl/request/learn/close",
+          "nl/request/learn/delete",
+          {
+            "group": "Voor beheerders",
+            "root": "nl/request/admin/index",
+            "pages": [
+              {
+                "group": "Verzoektypen",
+                "root": "nl/request/admin/type/index",
+                "pages": [
+                  "nl/request/admin/type/create",
+                  "nl/request/admin/type/delete"
+                ]
+              },
+              "nl/request/admin/relation-rules",
+              {
+                "group": "Categorieën",
+                "root": "nl/request/admin/category/index",
+                "pages": [
+                  "nl/request/admin/category/create",
+                  "nl/request/admin/category/delete",
+                  "nl/request/admin/category/external-categories"
+                ]
+              },
+              {
+                "group": "Prioriteiten",
+                "root": "nl/request/admin/priority/index",
+                "pages": [
+                  "nl/request/admin/priority/create",
+                  "nl/request/admin/priority/delete",
+                  "nl/request/admin/priority/escalation-levels"
+                ]
+              },
+              {
+                "group": "Verzoekstatus",
+                "root": "nl/request/admin/status/index",
+                "pages": [
+                  "nl/request/admin/status/create",
+                  "nl/request/admin/status/delete"
+                ]
+              },
+              "nl/request/admin/next-in-queue",
+              "nl/request/admin/system-templates"
+            ]
+          }
+        ]
+      },
+      {
         "group": "Kennisdatabase",
         "icon": "book-bookmark",
         "root": "nl/knowledge-base/learn/index",
@@ -699,6 +635,86 @@
         ]
       },
       {
+        "group": "Selectie",
+        "icon": "square-minus",
+        "root": "nl/search-options/selection/learn/index",
+        "pages": [
+          "nl/search-options/selection/learn/create",
+          "nl/search-options/selection/learn/update",
+          "nl/search-options/selection/learn/combine",
+          "nl/search-options/selection/learn/add-remove-members-static",
+          "nl/search-options/selection/learn/copy-members-to",
+          "nl/search-options/selection/learn/board-view",
+          {
+            "group": "Taken uitvoeren met selecties",
+            "root": "nl/search-options/selection/learn/howto/index",
+            "pages": [
+              "nl/search-options/selection/learn/howto/create-mailings",
+              "nl/search-options/selection/learn/howto/send-email",
+              "nl/search-options/selection/learn/howto/generate-follow-ups",
+              "nl/search-options/selection/learn/howto/display-as-charts",
+              "nl/search-options/selection/learn/howto/print-labels",
+              "nl/search-options/selection/learn/howto/print",
+              "nl/search-options/selection/learn/howto/export"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Aangepaste objecten",
+        "icon": "cube",
+        "root": "nl/custom-objects/learn/index",
+        "pages": [
+          "nl/custom-objects/index",
+          "nl/custom-objects/learn/more-tab",
+          {
+            "group": "Door gebruiker gedefinieerde velden",
+            "pages": [
+              "nl/custom-objects/learn/udef",
+              "nl/custom-objects/admin/add-udef",
+              "nl/custom-objects/admin/edit-udef",
+              "nl/custom-objects/admin/edit-udef-layout"
+            ]
+          },
+          {
+            "group": "Extra tabellen",
+            "pages": [
+              "nl/custom-objects/learn/extra-table",
+              "nl/custom-objects/admin/create-extra-table"
+            ]
+          },
+          {
+            "group": "Extra velden",
+            "pages": [
+              "nl/custom-objects/learn/extra-field",
+              "nl/custom-objects/admin/create-extra-field",
+              "nl/custom-objects/admin/show-extra-field-on-request-details"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Chatten",
+        "icon": "comment-dots",
+        "root": "nl/chat/learn/index",
+        "pages": [
+          "nl/chat/learn/statistics",
+          "nl/chat/learn/respond",
+          "nl/chat/learn/link-to-person",
+          "nl/chat/learn/create-request",
+          "nl/chat/learn/transfer-to-agent",
+          "nl/chat/learn/as-customer",
+          {
+            "group": "Voor beheerders",
+            "root": "nl/chat/admin/index",
+            "pages": [
+              "nl/chat/admin/channel-create",
+              "nl/chat/admin/add-javascript"
+            ]
+          }
+        ]
+      },
+      {
         "group": "Privacy-instellingen en AVG",
         "icon": "shield",
         "root": "nl/security/privacy/learn/index",
@@ -715,22 +731,6 @@
               "nl/security/privacy/admin/add-legal-base",
               "nl/security/privacy/admin/add-source",
               "nl/security/privacy/admin/edit-privacy-confirmation-email"
-            ]
-          }
-        ]
-      },
-      {
-        "group": "AI-diensten",
-        "icon": "wand-magic-sparkles",
-        "root": "nl/ai/learn/index",
-        "pages": [
-          "nl/ai/learn/text-analysis",
-          "nl/ai/learn/categorization",
-          "nl/ai/learn/copilot",
-          {
-            "group": "Voor beheerders",
-            "pages": [
-              "nl/ai/admin/set-up-categorization"
             ]
           }
         ]
