@@ -91,6 +91,22 @@
         ]
       },
       {
+        "group": "KI-Services",
+        "icon": "wand-magic-sparkles",
+        "root": "de/ai/learn/index",
+        "pages": [
+          "de/ai/learn/text-analysis",
+          "de/ai/learn/categorization",
+          "de/ai/learn/copilot",
+          {
+            "group": "Für Administratoren",
+            "pages": [
+              "de/ai/admin/set-up-categorization"
+            ]
+          }
+        ]
+      },
+      {
         "group": "Dashboard",
         "icon": "gauge",
         "root": "de/dashboard/learn/index",
@@ -354,191 +370,6 @@
         ]
       },
       {
-        "group": "Projekt",
-        "icon": "clipboard-list",
-        "root": "de/project/learn/index",
-        "pages": [
-          "de/project/index",
-          "de/project/learn/create",
-          "de/project/learn/add-image",
-          "de/project/learn/edit",
-          "de/project/learn/merge-projects",
-          "de/project/learn/delete",
-          {
-            "group": "Projektmitglieder",
-            "root": "de/project/learn/project-members/index",
-            "pages": [
-              "de/project/learn/project-members/add",
-              "de/project/learn/project-members/edit",
-              "de/project/learn/project-members/invite-to-meeting",
-              "de/project/learn/project-members/send-email-to",
-              "de/project/learn/project-members/create-mailing"
-            ]
-          },
-          "de/project/learn/project-guides",
-          "de/project/learn/tutorial",
-          {
-            "group": "Für Admins",
-            "root": "de/project/admin/index",
-            "pages": [
-              "de/project/admin/project-status",
-              "de/project/admin/project-type",
-              "de/project/admin/create-project-guide",
-              "de/project/admin/edit-project-guide"
-            ]
-          }
-        ]
-      },
-      {
-        "group": "Anfragen",
-        "icon": "ticket",
-        "root": "de/request/learn/index",
-        "pages": [
-          "de/request/index",
-          "de/request/learn/handle-request-ai",
-          "de/request/learn/find",
-          "de/request/learn/create",
-          "de/request/learn/edit-message",
-          "de/request/learn/assign",
-          "de/request/learn/spam",
-          "de/request/learn/accept",
-          "de/request/learn/transfer",
-          "de/request/learn/forward",
-          "de/request/learn/reply",
-          "de/request/learn/request-relations",
-          "de/request/learn/tags",
-          "de/request/learn/flag-message",
-          "de/request/learn/split-request",
-          "de/request/learn/merge",
-          "de/request/learn/split-message",
-          "de/request/learn/close",
-          "de/request/learn/delete",
-          {
-            "group": "Für Admins",
-            "root": "de/request/admin/index",
-            "pages": [
-              {
-                "group": "Anfragetypen",
-                "root": "de/request/admin/type/index",
-                "pages": [
-                  "de/request/admin/type/create",
-                  "de/request/admin/type/delete"
-                ]
-              },
-              "de/request/admin/relation-rules",
-              {
-                "group": "Kategorien",
-                "root": "de/request/admin/category/index",
-                "pages": [
-                  "de/request/admin/category/create",
-                  "de/request/admin/category/delete",
-                  "de/request/admin/category/external-categories"
-                ]
-              },
-              {
-                "group": "Prioritäten",
-                "root": "de/request/admin/priority/index",
-                "pages": [
-                  "de/request/admin/priority/create",
-                  "de/request/admin/priority/delete",
-                  "de/request/admin/priority/escalation-levels"
-                ]
-              },
-              {
-                "group": "Anfragestatus",
-                "root": "de/request/admin/status/index",
-                "pages": [
-                  "de/request/admin/status/create",
-                  "de/request/admin/status/delete"
-                ]
-              },
-              "de/request/admin/next-in-queue",
-              "de/request/admin/system-templates"
-            ]
-          }
-        ]
-      },
-      {
-        "group": "Benutzerdefinierte Objekte",
-        "icon": "cube",
-        "root": "de/custom-objects/learn/index",
-        "pages": [
-          "de/custom-objects/index",
-          "de/custom-objects/learn/more-tab",
-          {
-            "group": "Benutzerdefinierte Felder",
-            "pages": [
-              "de/custom-objects/learn/udef",
-              "de/custom-objects/admin/add-udef",
-              "de/custom-objects/admin/edit-udef",
-              "de/custom-objects/admin/edit-udef-layout"
-            ]
-          },
-          {
-            "group": "Zusatztabellen",
-            "pages": [
-              "de/custom-objects/learn/extra-table",
-              "de/custom-objects/admin/create-extra-table"
-            ]
-          },
-          {
-            "group": "Zusatzfelder",
-            "pages": [
-              "de/custom-objects/learn/extra-field",
-              "de/custom-objects/admin/create-extra-field",
-              "de/custom-objects/admin/show-extra-field-on-request-details"
-            ]
-          }
-        ]
-      },
-      {
-        "group": "Selektion",
-        "icon": "square-minus",
-        "root": "de/search-options/selection/learn/index",
-        "pages": [
-          "de/search-options/selection/learn/create",
-          "de/search-options/selection/learn/update",
-          "de/search-options/selection/learn/combine",
-          "de/search-options/selection/learn/add-remove-members-static",
-          "de/search-options/selection/learn/copy-members-to",
-          "de/search-options/selection/learn/board-view",
-          {
-            "group": "Aufgaben in der Ansicht Selektion ausführen",
-            "root": "de/search-options/selection/learn/howto/index",
-            "pages": [
-              "de/search-options/selection/learn/howto/create-mailings",
-              "de/search-options/selection/learn/howto/send-email",
-              "de/search-options/selection/learn/howto/generate-follow-ups",
-              "de/search-options/selection/learn/howto/display-as-charts",
-              "de/search-options/selection/learn/howto/print-labels",
-              "de/search-options/selection/learn/howto/print",
-              "de/search-options/selection/learn/howto/export"
-            ]
-          }
-        ]
-      },
-      {
-        "group": "Chat",
-        "icon": "comment-dots",
-        "root": "de/chat/learn/index",
-        "pages": [
-          "de/chat/learn/statistics",
-          "de/chat/learn/respond",
-          "de/chat/learn/link-to-person",
-          "de/chat/learn/create-request",
-          "de/chat/learn/transfer-to-agent",
-          "de/chat/learn/as-customer",
-          {
-            "group": "Für Admins",
-            "root": "de/chat/admin/index",
-            "pages": [
-              "de/chat/admin/channel-create",
-              "de/chat/admin/add-javascript"
-            ]
-          }
-        ]
-      },
-      {
         "group": "Marketing",
         "icon": "bullseye",
         "root": "de/marketing/learn/index",
@@ -669,6 +500,111 @@
         ]
       },
       {
+        "group": "Projekt",
+        "icon": "clipboard-list",
+        "root": "de/project/learn/index",
+        "pages": [
+          "de/project/index",
+          "de/project/learn/create",
+          "de/project/learn/add-image",
+          "de/project/learn/edit",
+          "de/project/learn/merge-projects",
+          "de/project/learn/delete",
+          {
+            "group": "Projektmitglieder",
+            "root": "de/project/learn/project-members/index",
+            "pages": [
+              "de/project/learn/project-members/add",
+              "de/project/learn/project-members/edit",
+              "de/project/learn/project-members/invite-to-meeting",
+              "de/project/learn/project-members/send-email-to",
+              "de/project/learn/project-members/create-mailing"
+            ]
+          },
+          "de/project/learn/project-guides",
+          "de/project/learn/tutorial",
+          {
+            "group": "Für Admins",
+            "root": "de/project/admin/index",
+            "pages": [
+              "de/project/admin/project-status",
+              "de/project/admin/project-type",
+              "de/project/admin/create-project-guide",
+              "de/project/admin/edit-project-guide"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Anfragen",
+        "icon": "ticket",
+        "root": "de/request/learn/index",
+        "pages": [
+          "de/request/index",
+          "de/request/learn/handle-request-ai",
+          "de/request/learn/find",
+          "de/request/learn/create",
+          "de/request/learn/edit-message",
+          "de/request/learn/assign",
+          "de/request/learn/spam",
+          "de/request/learn/accept",
+          "de/request/learn/transfer",
+          "de/request/learn/forward",
+          "de/request/learn/reply",
+          "de/request/learn/request-relations",
+          "de/request/learn/tags",
+          "de/request/learn/flag-message",
+          "de/request/learn/split-request",
+          "de/request/learn/merge",
+          "de/request/learn/split-message",
+          "de/request/learn/close",
+          "de/request/learn/delete",
+          {
+            "group": "Für Admins",
+            "root": "de/request/admin/index",
+            "pages": [
+              {
+                "group": "Anfragetypen",
+                "root": "de/request/admin/type/index",
+                "pages": [
+                  "de/request/admin/type/create",
+                  "de/request/admin/type/delete"
+                ]
+              },
+              "de/request/admin/relation-rules",
+              {
+                "group": "Kategorien",
+                "root": "de/request/admin/category/index",
+                "pages": [
+                  "de/request/admin/category/create",
+                  "de/request/admin/category/delete",
+                  "de/request/admin/category/external-categories"
+                ]
+              },
+              {
+                "group": "Prioritäten",
+                "root": "de/request/admin/priority/index",
+                "pages": [
+                  "de/request/admin/priority/create",
+                  "de/request/admin/priority/delete",
+                  "de/request/admin/priority/escalation-levels"
+                ]
+              },
+              {
+                "group": "Anfragestatus",
+                "root": "de/request/admin/status/index",
+                "pages": [
+                  "de/request/admin/status/create",
+                  "de/request/admin/status/delete"
+                ]
+              },
+              "de/request/admin/next-in-queue",
+              "de/request/admin/system-templates"
+            ]
+          }
+        ]
+      },
+      {
         "group": "Wissensdatenbank",
         "icon": "book-bookmark",
         "root": "de/knowledge-base/learn/index",
@@ -699,6 +635,86 @@
         ]
       },
       {
+        "group": "Selektion",
+        "icon": "square-minus",
+        "root": "de/search-options/selection/learn/index",
+        "pages": [
+          "de/search-options/selection/learn/create",
+          "de/search-options/selection/learn/update",
+          "de/search-options/selection/learn/combine",
+          "de/search-options/selection/learn/add-remove-members-static",
+          "de/search-options/selection/learn/copy-members-to",
+          "de/search-options/selection/learn/board-view",
+          {
+            "group": "Aufgaben in der Ansicht Selektion ausführen",
+            "root": "de/search-options/selection/learn/howto/index",
+            "pages": [
+              "de/search-options/selection/learn/howto/create-mailings",
+              "de/search-options/selection/learn/howto/send-email",
+              "de/search-options/selection/learn/howto/generate-follow-ups",
+              "de/search-options/selection/learn/howto/display-as-charts",
+              "de/search-options/selection/learn/howto/print-labels",
+              "de/search-options/selection/learn/howto/print",
+              "de/search-options/selection/learn/howto/export"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Benutzerdefinierte Objekte",
+        "icon": "cube",
+        "root": "de/custom-objects/learn/index",
+        "pages": [
+          "de/custom-objects/index",
+          "de/custom-objects/learn/more-tab",
+          {
+            "group": "Benutzerdefinierte Felder",
+            "pages": [
+              "de/custom-objects/learn/udef",
+              "de/custom-objects/admin/add-udef",
+              "de/custom-objects/admin/edit-udef",
+              "de/custom-objects/admin/edit-udef-layout"
+            ]
+          },
+          {
+            "group": "Zusatztabellen",
+            "pages": [
+              "de/custom-objects/learn/extra-table",
+              "de/custom-objects/admin/create-extra-table"
+            ]
+          },
+          {
+            "group": "Zusatzfelder",
+            "pages": [
+              "de/custom-objects/learn/extra-field",
+              "de/custom-objects/admin/create-extra-field",
+              "de/custom-objects/admin/show-extra-field-on-request-details"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Chat",
+        "icon": "comment-dots",
+        "root": "de/chat/learn/index",
+        "pages": [
+          "de/chat/learn/statistics",
+          "de/chat/learn/respond",
+          "de/chat/learn/link-to-person",
+          "de/chat/learn/create-request",
+          "de/chat/learn/transfer-to-agent",
+          "de/chat/learn/as-customer",
+          {
+            "group": "Für Admins",
+            "root": "de/chat/admin/index",
+            "pages": [
+              "de/chat/admin/channel-create",
+              "de/chat/admin/add-javascript"
+            ]
+          }
+        ]
+      },
+      {
         "group": "Datenschutzeinstellungen und DSGVO",
         "icon": "shield",
         "root": "de/security/privacy/learn/index",
@@ -715,22 +731,6 @@
               "de/security/privacy/admin/add-legal-base",
               "de/security/privacy/admin/add-source",
               "de/security/privacy/admin/edit-privacy-confirmation-email"
-            ]
-          }
-        ]
-      },
-      {
-        "group": "KI-Services",
-        "icon": "wand-magic-sparkles",
-        "root": "de/ai/learn/index",
-        "pages": [
-          "de/ai/learn/text-analysis",
-          "de/ai/learn/categorization",
-          "de/ai/learn/copilot",
-          {
-            "group": "Für Administratoren",
-            "pages": [
-              "de/ai/admin/set-up-categorization"
             ]
           }
         ]

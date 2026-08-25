@@ -91,6 +91,22 @@
         ]
       },
       {
+        "group": "AI-tjänster",
+        "icon": "wand-magic-sparkles",
+        "root": "sv/ai/learn/index",
+        "pages": [
+          "sv/ai/learn/text-analysis",
+          "sv/ai/learn/categorization",
+          "sv/ai/learn/copilot",
+          {
+            "group": "För administratörer",
+            "pages": [
+              "sv/ai/admin/set-up-categorization"
+            ]
+          }
+        ]
+      },
+      {
         "group": "Dashboard",
         "icon": "gauge",
         "root": "sv/dashboard/learn/index",
@@ -354,191 +370,6 @@
         ]
       },
       {
-        "group": "Projekt",
-        "icon": "clipboard-list",
-        "root": "sv/project/learn/index",
-        "pages": [
-          "sv/project/index",
-          "sv/project/learn/create",
-          "sv/project/learn/add-image",
-          "sv/project/learn/edit",
-          "sv/project/learn/merge-projects",
-          "sv/project/learn/delete",
-          {
-            "group": "Projektmedlemmar",
-            "root": "sv/project/learn/project-members/index",
-            "pages": [
-              "sv/project/learn/project-members/add",
-              "sv/project/learn/project-members/edit",
-              "sv/project/learn/project-members/invite-to-meeting",
-              "sv/project/learn/project-members/send-email-to",
-              "sv/project/learn/project-members/create-mailing"
-            ]
-          },
-          "sv/project/learn/project-guides",
-          "sv/project/learn/tutorial",
-          {
-            "group": "För administratörer",
-            "root": "sv/project/admin/index",
-            "pages": [
-              "sv/project/admin/project-status",
-              "sv/project/admin/project-type",
-              "sv/project/admin/create-project-guide",
-              "sv/project/admin/edit-project-guide"
-            ]
-          }
-        ]
-      },
-      {
-        "group": "Ärenden",
-        "icon": "ticket",
-        "root": "sv/request/learn/index",
-        "pages": [
-          "sv/request/index",
-          "sv/request/learn/handle-request-ai",
-          "sv/request/learn/find",
-          "sv/request/learn/create",
-          "sv/request/learn/edit-message",
-          "sv/request/learn/assign",
-          "sv/request/learn/spam",
-          "sv/request/learn/accept",
-          "sv/request/learn/transfer",
-          "sv/request/learn/forward",
-          "sv/request/learn/reply",
-          "sv/request/learn/request-relations",
-          "sv/request/learn/tags",
-          "sv/request/learn/flag-message",
-          "sv/request/learn/split-request",
-          "sv/request/learn/merge",
-          "sv/request/learn/split-message",
-          "sv/request/learn/close",
-          "sv/request/learn/delete",
-          {
-            "group": "För administratörer",
-            "root": "sv/request/admin/index",
-            "pages": [
-              {
-                "group": "Ärendetyper",
-                "root": "sv/request/admin/type/index",
-                "pages": [
-                  "sv/request/admin/type/create",
-                  "sv/request/admin/type/delete"
-                ]
-              },
-              "sv/request/admin/relation-rules",
-              {
-                "group": "Kategorier",
-                "root": "sv/request/admin/category/index",
-                "pages": [
-                  "sv/request/admin/category/create",
-                  "sv/request/admin/category/delete",
-                  "sv/request/admin/category/external-categories"
-                ]
-              },
-              {
-                "group": "Prioriteter",
-                "root": "sv/request/admin/priority/index",
-                "pages": [
-                  "sv/request/admin/priority/create",
-                  "sv/request/admin/priority/delete",
-                  "sv/request/admin/priority/escalation-levels"
-                ]
-              },
-              {
-                "group": "Ärendestatus",
-                "root": "sv/request/admin/status/index",
-                "pages": [
-                  "sv/request/admin/status/create",
-                  "sv/request/admin/status/delete"
-                ]
-              },
-              "sv/request/admin/next-in-queue",
-              "sv/request/admin/system-templates"
-            ]
-          }
-        ]
-      },
-      {
-        "group": "Egendefinierade objekt",
-        "icon": "cube",
-        "root": "sv/custom-objects/learn/index",
-        "pages": [
-          "sv/custom-objects/index",
-          "sv/custom-objects/learn/more-tab",
-          {
-            "group": "Användardefinierade fält",
-            "pages": [
-              "sv/custom-objects/learn/udef",
-              "sv/custom-objects/admin/add-udef",
-              "sv/custom-objects/admin/edit-udef",
-              "sv/custom-objects/admin/edit-udef-layout"
-            ]
-          },
-          {
-            "group": "Extratabeller",
-            "pages": [
-              "sv/custom-objects/learn/extra-table",
-              "sv/custom-objects/admin/create-extra-table"
-            ]
-          },
-          {
-            "group": "Extrafält",
-            "pages": [
-              "sv/custom-objects/learn/extra-field",
-              "sv/custom-objects/admin/create-extra-field",
-              "sv/custom-objects/admin/show-extra-field-on-request-details"
-            ]
-          }
-        ]
-      },
-      {
-        "group": "Urval",
-        "icon": "square-minus",
-        "root": "sv/search-options/selection/learn/index",
-        "pages": [
-          "sv/search-options/selection/learn/create",
-          "sv/search-options/selection/learn/update",
-          "sv/search-options/selection/learn/combine",
-          "sv/search-options/selection/learn/add-remove-members-static",
-          "sv/search-options/selection/learn/copy-members-to",
-          "sv/search-options/selection/learn/board-view",
-          {
-            "group": "Utföra uppgifter för urval",
-            "root": "sv/search-options/selection/learn/howto/index",
-            "pages": [
-              "sv/search-options/selection/learn/howto/create-mailings",
-              "sv/search-options/selection/learn/howto/send-email",
-              "sv/search-options/selection/learn/howto/generate-follow-ups",
-              "sv/search-options/selection/learn/howto/display-as-charts",
-              "sv/search-options/selection/learn/howto/print-labels",
-              "sv/search-options/selection/learn/howto/print",
-              "sv/search-options/selection/learn/howto/export"
-            ]
-          }
-        ]
-      },
-      {
-        "group": "Chatt",
-        "icon": "comment-dots",
-        "root": "sv/chat/learn/index",
-        "pages": [
-          "sv/chat/learn/statistics",
-          "sv/chat/learn/respond",
-          "sv/chat/learn/link-to-person",
-          "sv/chat/learn/create-request",
-          "sv/chat/learn/transfer-to-agent",
-          "sv/chat/learn/as-customer",
-          {
-            "group": "För administratörer",
-            "root": "sv/chat/admin/index",
-            "pages": [
-              "sv/chat/admin/channel-create",
-              "sv/chat/admin/add-javascript"
-            ]
-          }
-        ]
-      },
-      {
         "group": "Marknadsföring",
         "icon": "bullseye",
         "root": "sv/marketing/learn/index",
@@ -669,6 +500,111 @@
         ]
       },
       {
+        "group": "Projekt",
+        "icon": "clipboard-list",
+        "root": "sv/project/learn/index",
+        "pages": [
+          "sv/project/index",
+          "sv/project/learn/create",
+          "sv/project/learn/add-image",
+          "sv/project/learn/edit",
+          "sv/project/learn/merge-projects",
+          "sv/project/learn/delete",
+          {
+            "group": "Projektmedlemmar",
+            "root": "sv/project/learn/project-members/index",
+            "pages": [
+              "sv/project/learn/project-members/add",
+              "sv/project/learn/project-members/edit",
+              "sv/project/learn/project-members/invite-to-meeting",
+              "sv/project/learn/project-members/send-email-to",
+              "sv/project/learn/project-members/create-mailing"
+            ]
+          },
+          "sv/project/learn/project-guides",
+          "sv/project/learn/tutorial",
+          {
+            "group": "För administratörer",
+            "root": "sv/project/admin/index",
+            "pages": [
+              "sv/project/admin/project-status",
+              "sv/project/admin/project-type",
+              "sv/project/admin/create-project-guide",
+              "sv/project/admin/edit-project-guide"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Ärenden",
+        "icon": "ticket",
+        "root": "sv/request/learn/index",
+        "pages": [
+          "sv/request/index",
+          "sv/request/learn/handle-request-ai",
+          "sv/request/learn/find",
+          "sv/request/learn/create",
+          "sv/request/learn/edit-message",
+          "sv/request/learn/assign",
+          "sv/request/learn/spam",
+          "sv/request/learn/accept",
+          "sv/request/learn/transfer",
+          "sv/request/learn/forward",
+          "sv/request/learn/reply",
+          "sv/request/learn/request-relations",
+          "sv/request/learn/tags",
+          "sv/request/learn/flag-message",
+          "sv/request/learn/split-request",
+          "sv/request/learn/merge",
+          "sv/request/learn/split-message",
+          "sv/request/learn/close",
+          "sv/request/learn/delete",
+          {
+            "group": "För administratörer",
+            "root": "sv/request/admin/index",
+            "pages": [
+              {
+                "group": "Ärendetyper",
+                "root": "sv/request/admin/type/index",
+                "pages": [
+                  "sv/request/admin/type/create",
+                  "sv/request/admin/type/delete"
+                ]
+              },
+              "sv/request/admin/relation-rules",
+              {
+                "group": "Kategorier",
+                "root": "sv/request/admin/category/index",
+                "pages": [
+                  "sv/request/admin/category/create",
+                  "sv/request/admin/category/delete",
+                  "sv/request/admin/category/external-categories"
+                ]
+              },
+              {
+                "group": "Prioriteter",
+                "root": "sv/request/admin/priority/index",
+                "pages": [
+                  "sv/request/admin/priority/create",
+                  "sv/request/admin/priority/delete",
+                  "sv/request/admin/priority/escalation-levels"
+                ]
+              },
+              {
+                "group": "Ärendestatus",
+                "root": "sv/request/admin/status/index",
+                "pages": [
+                  "sv/request/admin/status/create",
+                  "sv/request/admin/status/delete"
+                ]
+              },
+              "sv/request/admin/next-in-queue",
+              "sv/request/admin/system-templates"
+            ]
+          }
+        ]
+      },
+      {
         "group": "Kunskapsbas",
         "icon": "book-bookmark",
         "root": "sv/knowledge-base/learn/index",
@@ -699,6 +635,86 @@
         ]
       },
       {
+        "group": "Urval",
+        "icon": "square-minus",
+        "root": "sv/search-options/selection/learn/index",
+        "pages": [
+          "sv/search-options/selection/learn/create",
+          "sv/search-options/selection/learn/update",
+          "sv/search-options/selection/learn/combine",
+          "sv/search-options/selection/learn/add-remove-members-static",
+          "sv/search-options/selection/learn/copy-members-to",
+          "sv/search-options/selection/learn/board-view",
+          {
+            "group": "Utföra uppgifter för urval",
+            "root": "sv/search-options/selection/learn/howto/index",
+            "pages": [
+              "sv/search-options/selection/learn/howto/create-mailings",
+              "sv/search-options/selection/learn/howto/send-email",
+              "sv/search-options/selection/learn/howto/generate-follow-ups",
+              "sv/search-options/selection/learn/howto/display-as-charts",
+              "sv/search-options/selection/learn/howto/print-labels",
+              "sv/search-options/selection/learn/howto/print",
+              "sv/search-options/selection/learn/howto/export"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Egendefinierade objekt",
+        "icon": "cube",
+        "root": "sv/custom-objects/learn/index",
+        "pages": [
+          "sv/custom-objects/index",
+          "sv/custom-objects/learn/more-tab",
+          {
+            "group": "Användardefinierade fält",
+            "pages": [
+              "sv/custom-objects/learn/udef",
+              "sv/custom-objects/admin/add-udef",
+              "sv/custom-objects/admin/edit-udef",
+              "sv/custom-objects/admin/edit-udef-layout"
+            ]
+          },
+          {
+            "group": "Extratabeller",
+            "pages": [
+              "sv/custom-objects/learn/extra-table",
+              "sv/custom-objects/admin/create-extra-table"
+            ]
+          },
+          {
+            "group": "Extrafält",
+            "pages": [
+              "sv/custom-objects/learn/extra-field",
+              "sv/custom-objects/admin/create-extra-field",
+              "sv/custom-objects/admin/show-extra-field-on-request-details"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Chatt",
+        "icon": "comment-dots",
+        "root": "sv/chat/learn/index",
+        "pages": [
+          "sv/chat/learn/statistics",
+          "sv/chat/learn/respond",
+          "sv/chat/learn/link-to-person",
+          "sv/chat/learn/create-request",
+          "sv/chat/learn/transfer-to-agent",
+          "sv/chat/learn/as-customer",
+          {
+            "group": "För administratörer",
+            "root": "sv/chat/admin/index",
+            "pages": [
+              "sv/chat/admin/channel-create",
+              "sv/chat/admin/add-javascript"
+            ]
+          }
+        ]
+      },
+      {
         "group": "Integritetsinställningar och GDPR",
         "icon": "shield",
         "root": "sv/security/privacy/learn/index",
@@ -715,22 +731,6 @@
               "sv/security/privacy/admin/add-legal-base",
               "sv/security/privacy/admin/add-source",
               "sv/security/privacy/admin/edit-privacy-confirmation-email"
-            ]
-          }
-        ]
-      },
-      {
-        "group": "AI-tjänster",
-        "icon": "wand-magic-sparkles",
-        "root": "sv/ai/learn/index",
-        "pages": [
-          "sv/ai/learn/text-analysis",
-          "sv/ai/learn/categorization",
-          "sv/ai/learn/copilot",
-          {
-            "group": "För administratörer",
-            "pages": [
-              "sv/ai/admin/set-up-categorization"
             ]
           }
         ]
