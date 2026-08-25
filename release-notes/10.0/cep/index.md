@@ -18,7 +18,7 @@ language: en
 * [Chat - When in queue keep writing a message (10.0.4)][4]
 * [Chat - Rating on a chat from the customer (10.0.5)][5]
 * [Chat - Better use of small screens like a mobile (10.0.6)][6]
-* [Languages - 5 new UI languages on all modules (10.0.6)][7]
+* [Languages - 5 new UI languages (10.0.6)][7]
 
 [2]: ./10.0.2-update
 [3]: ./10.0.3-update

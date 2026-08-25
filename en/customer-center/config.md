@@ -26,8 +26,8 @@ The following parser variables are common for all the templates:
 | AuthProgram | The same as `AuthProgramUnderscore`, except that it does not pay attention to CGI variables with an underscore |
 | CustSessionKey | The session key |
 | authenticated | True if the customer has been authenticated, false if not |
-| chat | True if the chat module is available |
-| faq | True if the FAQ module is available |
+| chat | True if chat functionality is available |
+| faq | True if FAQ functionality is available |
 | WwwRoot | The subdirectory that Customer Service might be installed to. Normally this will just be "/", but if installed in a subdirectory you must pay attention to this when referencing for example the graphic files |
 | GfxRoot | The virtual path to the graphic files |
 | GfxPath | The virtual path to the language-dependent graphic files. This variable pays attention to the language of the customer |

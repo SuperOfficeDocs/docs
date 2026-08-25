@@ -35,7 +35,7 @@ I denne delen kan du konfigurere innstillingene for Service for å skreddersy sy
 * [Konfigurasjon av kundesenter og kildefiler][21]
 * [Chat][23]
 * [Systemdesign][15]
-* [Profil][16] - endringer her vises ikke noe sted i SuperOffice CRM-modulen (kun i Service-modulen)
+* [Profil][16] - endringer her vises bare i det gamle Service-modulet
 
 [4]: ./category/index
 [5]: ./priority/index
