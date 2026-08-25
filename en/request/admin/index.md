@@ -35,7 +35,7 @@ In this section, you can configure the settings for Service to tailor it to your
 * [Customer centre configuration and source files][21]
 * [Chat][23]
 * [System design][15]
-* [Profile][16] - changes here will not show anywhere in SuperOffice CRM module (only in the Service module)
+* [Profile][16] - changes here will show only in the old Service module
 
 [4]: ./category/index
 [5]: ./priority/index

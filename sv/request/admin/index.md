@@ -34,7 +34,7 @@ I detta avsnitt kan du konfigurera inställningarna för Service så att de pass
 * [Konfigurering av kundcenter och källfiler][21]
 * [Chatt][23]
 * [Systemdesign][15]
-* [Profil][16] - ändringar här visas inte någonstans i SuperOffice CRM-modulen (endast i Service-modulen)
+* [Profil][16] - ändringar här visas endast i den gamla Service-modulen
 
 [4]: ./category/index
 [5]: ./priority/index

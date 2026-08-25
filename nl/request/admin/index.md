@@ -29,7 +29,7 @@ related:
   - Configuratie klantportaal en bronbestanden: /nl/customer-center/learn/index
   - Chatten: /nl/chat/admin/index
   - /nl/ui/blogic/learn/index
-  - Profiel - wijzigingen hier verschijnen nergens in de SuperOffice CRM-module (alleen in de servicemodule): /nl/ui/blogic/learn/profiles/index
+  - Profiel - wijzigingen hier verschijnen alleen in de oude servicemodule: /nl/ui/blogic/learn/profiles/index
 language: nl
 ---
 

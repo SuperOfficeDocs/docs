@@ -36,7 +36,7 @@ In diesem Bereich können Sie die Einstellungen für **Service** konfigurieren, 
 * [Kundenzentrum-Konfiguration und Quelldateien][21]
 * [Chat][23]
 * [Systemdesign][15]
-* [Profil][16] - Änderungen hier werden nirgendwo im SuperOffice CRM-Modul angezeigt (nur im Service-Modul)
+* [Profil][16] - Änderungen hier werden nur im alten Service-Modul angezeigt
 
 [4]: ./category/index
 [5]: ./priority/index

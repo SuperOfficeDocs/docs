@@ -35,7 +35,7 @@ I denne del af SuperOffice Service kan du konfigurere indstillingerne for Servic
 * [Kundecenterkonfiguration og kildefiler][21]
 * [Chat][23]
 * [Systemdesign][15]
-* [Profil][16] - ændringer her vises ingen steder i SuperOffice CRM-modulet (kun i Servicemodulet)
+* [Profil][16] - ændringer her vises kun i det gamle Servicemodul
 
 [4]: ./category/index
 [5]: ./priority/index
