@@ -437,11 +437,18 @@ body {
   background-color: var(--coast-blue) !important;
 }
 
-/* "What type of user are you?" — dune white bg, transparent border, shadow lift on hover */
+/* "What type of user are you?" — plum-red (maroon) cards, white text, shadow lift on hover.
+ * plum-red doubles as the Danger callout color elsewhere (#96/week 32) — this is a
+ * deliberate, separate decorative use, not a conflict with that semantic meaning. */
 #home-user-types .card {
-  background-color: var(--dune-white);
-  border-color: transparent !important;
+  background-color: var(--plum-red);
+  border-color: var(--plum-red) !important;
+  color: var(--white);
   transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+#home-user-types .card * {
+  color: var(--white) !important;
 }
 
 #home-user-types .card:hover {
@@ -449,44 +456,118 @@ body {
   transform: translateY(-2px);
 }
 
-/* Dark mode CTA: use coast blue on hover instead of green */
-.dark #home-user-types [data-component-part="card-cta"]:hover,
-.dark #home-user-types .card:hover [data-component-part="card-cta"] {
-  color: var(--coast-blue) !important;
-}
-
-/* Dark mode: no bg override (avoids transition blip), green border on hover only */
 .dark #home-user-types .card {
-  background-color: unset;
-  border-color: rgba(255, 255, 255, 0.1) !important;
+  background-color: var(--plum-red-darker);
+  border-color: var(--plum-red) !important;
 }
 
 .dark #home-user-types .card:hover {
   box-shadow: none;
   transform: none;
-  border-color: var(--so-green) !important;
+  border-color: var(--plum-red-lighter) !important;
 }
 
-/* Quick access shortcuts section — no background, blends into page */
-#home-quick-access a,
-#home-quick-access a:visited {
-  color: var(--so-green);
+.home-user-type-hugo {
+  width: 128px;
+  height: 128px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+/* "What's new" + team photo, side by side */
+#home-whats-new .card {
+  border-color: var(--dune-white-darker-1);
+}
+
+.dark #home-whats-new .card {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.recent-pages-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-pages-list .recent-pages-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 0.5rem;
+  border-radius: 8px;
+  border-bottom: none;
   text-decoration: none;
 }
 
-#home-quick-access a:hover {
-  text-decoration: underline;
-  opacity: 0.8;
+.recent-pages-list .recent-pages-item:hover {
+  background-color: var(--dune-white-darker-1);
+  border-bottom: none;
+  text-decoration: none;
 }
 
-.dark #home-quick-access a,
-.dark #home-quick-access a:visited {
+/* Mintlify's `.dark .prose a:not(h1 a):not(h2 a):not(h3 a):not(h4 a):not(h5 a):not(h6 a)`
+ * sets color + a background-image gradient (standing in for an underline) on every
+ * plain prose link, both with !important and huge specificity from its six chained
+ * :not() clauses. Matching !important isn't enough on its own -- specificity is the
+ * tiebreaker between two !important rules, and no chain of classes beats an ID, so
+ * these are qualified with #home-whats-new rather than just .recent-pages-item. */
+#home-whats-new .recent-pages-item {
+  color: var(--charcoal) !important;
+  background-image: none !important;
+}
+
+.dark #home-whats-new .recent-pages-item {
+  color: var(--dune-white) !important;
+}
+
+.dark .recent-pages-item:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.recent-pages-title {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.recent-pages-since {
+  margin-left: auto;
+  font-size: 0.75rem;
+  color: var(--so-green);
+  flex-shrink: 0;
+}
+
+.dark .recent-pages-since {
   color: var(--coast-blue);
 }
 
-.dark #home-quick-access a:hover {
-  opacity: 0.85;
+#home-team-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+#home-team-photo img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Centered Hugo banner between "Explore the docs" and "What type of user are you?" */
+#home-hugo-banner {
+  display: flex;
+  justify-content: center;
+  margin: 3.5rem 0;
+}
+
+#home-hugo-banner img {
+  width: 100%;
+  max-width: 56rem;
+  max-height: 22rem;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
 
 
 /* SubCategory landing pages */
@@ -1159,11 +1240,29 @@ html:not(.dark) .prose td {
 /* Heading color consistency (#83, light backgrounds only): Tailwind Typography's
  * default .prose heading color (a near-black gray, not our --charcoal) otherwise
  * wins over inherited body color. !important needed to beat it. H3 and smaller
- * are left alone — the brand ask only standardizes H1/H2. No dark-mode rule:
- * out of scope, the ask is explicitly for light backgrounds. */
+ * are left alone — the brand ask only standardizes H1/H2. */
 .prose h1,
 .prose h2 {
   color: var(--so-green) !important;
+}
+
+/* Dark-mode counterpart (a11y issue #325): #83's rule above had no dark-mode
+ * variant, deliberately deferred at the time ("the ask is explicitly for light
+ * backgrounds") — so every H1/H2 on every content page rendered --so-green
+ * (#06423E) against the dark charcoal background, a ~1.5:1 contrast ratio,
+ * nowhere close to WCAG AA's 4.5:1 minimum. Coast blue matches the rest of
+ * this repo's dark-mode heading/link treatment (see the anchor-link rules
+ * just below). Card titles are their own `h2` too (Mintlify's Card component)
+ * but read better as the same near-white used for the navbar's highlighted
+ * state than as another blue -- the `[data-component-part]` rule below wins
+ * on specificity for that one case. */
+.dark .prose h1,
+.dark .prose h2 {
+  color: var(--coast-blue) !important;
+}
+
+.dark .prose h2[data-component-part="card-title"] {
+  color: var(--dune-white) !important;
 }
 
 /* Heading anchor links — no underline at rest, reveal on hover.
