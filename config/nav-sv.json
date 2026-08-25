@@ -972,6 +972,13 @@
     ]
   },
   {
+    "tab": "AI",
+    "icon": "wand-magic-sparkles",
+    "pages": [
+      "sv/ai/learn/index"
+    ]
+  },
+  {
     "tab": "Mobile",
     "icon": "mobile-screen",
     "pages": [
