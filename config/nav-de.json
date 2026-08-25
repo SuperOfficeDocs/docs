@@ -311,7 +311,7 @@
       },
       {
         "group": "Verkauf",
-        "icon": "circle-dollar-to-slot",
+        "icon": "dollar-sign",
         "root": "de/sale/learn/index",
         "pages": [
           "de/sale/index",
@@ -636,7 +636,7 @@
       },
       {
         "group": "Selektion",
-        "icon": "square-minus",
+        "icon": "chart-simple",
         "root": "de/search-options/selection/learn/index",
         "pages": [
           "de/search-options/selection/learn/create",

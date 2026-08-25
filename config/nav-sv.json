@@ -311,7 +311,7 @@
       },
       {
         "group": "Försäljning",
-        "icon": "circle-dollar-to-slot",
+        "icon": "dollar-sign",
         "root": "sv/sale/learn/index",
         "pages": [
           "sv/sale/index",
@@ -636,7 +636,7 @@
       },
       {
         "group": "Urval",
-        "icon": "square-minus",
+        "icon": "chart-simple",
         "root": "sv/search-options/selection/learn/index",
         "pages": [
           "sv/search-options/selection/learn/create",

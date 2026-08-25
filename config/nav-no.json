@@ -311,7 +311,7 @@
       },
       {
         "group": "Salg",
-        "icon": "circle-dollar-to-slot",
+        "icon": "dollar-sign",
         "root": "no/sale/learn/index",
         "pages": [
           "no/sale/index",
@@ -636,7 +636,7 @@
       },
       {
         "group": "Utvalg",
-        "icon": "square-minus",
+        "icon": "chart-simple",
         "root": "no/search-options/selection/learn/index",
         "pages": [
           "no/search-options/selection/learn/create",

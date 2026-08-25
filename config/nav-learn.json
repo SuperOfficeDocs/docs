@@ -314,7 +314,7 @@
   },
   {
     "group": "Sale",
-    "icon": "circle-dollar-to-slot",
+    "icon": "dollar-sign",
     "root": "en/sale/learn/index",
     "pages": [
       "en/sale/index",
@@ -650,7 +650,7 @@
   },
   {
     "group": "Selection",
-    "icon": "square-minus",
+    "icon": "chart-simple",
     "root": "en/search-options/selection/learn/index",
     "pages": [
       "en/search-options/selection/learn/create",
