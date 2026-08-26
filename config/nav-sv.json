@@ -311,7 +311,7 @@
       },
       {
         "group": "Försäljning",
-        "icon": "circle-dollar-to-slot",
+        "icon": "dollar-sign",
         "root": "sv/sale/learn/index",
         "pages": [
           "sv/sale/index",
@@ -737,7 +737,7 @@
       },
       {
         "group": "SAINT (försäljningsintelligens)",
-        "icon": "chart-bar",
+        "icon": "chart-simple",
         "root": "sv/saint/learn/index",
         "pages": [
           {

@@ -311,7 +311,7 @@
       },
       {
         "group": "Salg",
-        "icon": "circle-dollar-to-slot",
+        "icon": "dollar-sign",
         "root": "da/sale/learn/index",
         "pages": [
           "da/sale/index",
@@ -737,7 +737,7 @@
       },
       {
         "group": "SAINT (Sales Intelligence)",
-        "icon": "chart-bar",
+        "icon": "chart-simple",
         "root": "da/saint/learn/index",
         "pages": [
           {

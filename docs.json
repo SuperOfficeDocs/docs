@@ -60,7 +60,7 @@
     "examples": {
       "languages": [
         "csharp",
-        "javascript",        
+        "javascript",
         "php",
         "python",
         "typescript"
@@ -126,6 +126,14 @@
           {
             "label": "Contribute",
             "href": "/contribute/"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "label": "Onsite (version 11 and older)",
+            "href": "/en/onsite/"
           }
         ]
       }

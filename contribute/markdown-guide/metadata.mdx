@@ -1,10 +1,10 @@
 ---
 uid: markdown-metadata
 title: Metadata (YAML front-matter)
-description: Introduction to the YAML key-value front-matter metadata used at the top of SuperOfficeDocs markdown files.
-keywords: ['metadata', 'front matter', 'yaml', 'uid']
+description: Every YAML front-matter property used across SuperOfficeDocs markdown files - uid, title, description, keywords, author, date, content_type, related, language, tier, license, so_version, and the homepage's own recent_pages block - what each does, when it's required, and how translated pages differ.
+keywords: ['metadata', 'front matter', 'yaml', 'uid', 'recent pages', 'homepage']
 author: digitaldiina
-date: 08.20.2026
+date: 08.25.2026
 content_type: concept
 related:
   - /contribute/markdown-guide/docfx-to-mintlify-cheat-sheet
@@ -80,6 +80,10 @@ Product content pages (everything outside `contribute/`) use a larger property s
 A subcategory map page (`mode: "custom"`, `<div id="subcategory">` in the body — the per-topic "map" page listing a Guides category's own sub-pages, for example `en/company/index.mdx`) uses its own smaller property set instead of the table above: `mode`, `title`, `sidebarTitle`, `description`, `icon`, `iconType`, `author`, `date`, `language`. `icon` is always `"map"` and `iconType` is always `"regular"` (Font Awesome, not Phosphor), positioned after `description` and before `author`. Translate `sidebarTitle` on non-English subcategory pages same as `title`/`description`. See the `subcategory-landing-page` blueprint template.
 </Note>
 
+<Note>
+`index.mdx` (the site homepage, `mode: "custom"`) carries one extra, homepage-only property: `recent_pages`, a YAML list of `{path, pinned?, since?, title?}` entries driving the "What's new" list. `pinned: true` exempts an entry from the 120-day age-out but it still counts against the 7-entry cap. `title` is an optional override, shown instead of the target page's own title when that reads oddly out of context. Don't hand-edit the resolved `<RecentPages items={[...]} />` call in the page body — `tools/ci/sync-recent-pages.py` regenerates it and will overwrite manual edits. See [Automated tests][5].
+</Note>
+
 ### Default so_version by section
 
 `so_version` is required in handcrafted docs, omitted in generated ones (the `reference/` and `table/` folders).
@@ -109,3 +113,4 @@ Before any updates get merged in the repo, the reviewers will check this section
 [2]: ./index
 [3]: ../seo
 [4]: https://github.com/SuperOfficeDocs/docs/issues/254
+[5]: ../automated-tests

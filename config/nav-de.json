@@ -311,7 +311,7 @@
       },
       {
         "group": "Verkauf",
-        "icon": "circle-dollar-to-slot",
+        "icon": "dollar-sign",
         "root": "de/sale/learn/index",
         "pages": [
           "de/sale/index",
@@ -737,7 +737,7 @@
       },
       {
         "group": "SAINT (Sales Intelligence)",
-        "icon": "chart-bar",
+        "icon": "chart-simple",
         "root": "de/saint/learn/index",
         "pages": [
           {

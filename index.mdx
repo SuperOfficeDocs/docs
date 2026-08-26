@@ -1,9 +1,26 @@
 ---
 mode: "custom"
 title: "SuperOffice Docs"
+recent_pages:
+  - path: /release-notes/12
+    pinned: true
+    since: 07.09.2026
+  - path: /en/marketing
+    since: 08.24.2026
+    title: Marketing landing page
+  - path: /en/automation/webhook
+    since: 06.15.2026
+    title: Webhooks administration
+  - path: /en/marketing/forms/admin/form-field-restrictions
+    since: 06.15.2026
+  - path: /en/request/admin/relation-rules
+    since: 06.15.2026
+  - path: /en/request/learn/request-relations
+    since: 06.15.2026
 ---
 
 import CustomFooter from '/components/custom-mode-footer.mdx'
+import RecentPages from '/components/recent-pages.jsx'
 
 <div id="home-hero" className="relative w-full flex items-center justify-center">
 
@@ -22,236 +39,83 @@ import CustomFooter from '/components/custom-mode-footer.mdx'
 </div>
 
 <div id="home-content">
+
 <Columns cols={4}>
-<Card title="Learn" href="/en/learn" icon="graduation-cap" >
+
+<Card title="User guides" href="/en/learn" icon="graduation-cap">
 Product knowledge-base to learn concepts, features and solve issues.
 </Card>
-<Card
-  title="CRM Online"
-  href="/en/online/"
-  icon="cloud"
->
-  Learn all about SuperOffice CRM offering for the cloud.
+
+<Card title="Sale" href="/en/sale" icon="dollar-sign">
+Manage your sales pipeline from lead to closed deal.
 </Card>
 
-<Card
-  title="CRM Onsite"
-  href="/en/onsite/"
-  icon="building"
->
-  Learn how to install SuperOffice in your on-premise organization.
+<Card title="Marketing" href="/en/marketing" icon="bullseye">
+Create mailings, forms, and marketing flows that convert.
 </Card>
 
-<Card
-  title="Release Notes"
-  href="/release-notes/"
-  icon="clipboard-list"
->
-  Contains the history of product and API changes.
+<Card title="Request management" href="/en/request" icon="ticket">
+Track and resolve customer requests efficiently.
 </Card>
 
-<Card
-  title="SuperOffice APIs"
-  href="/en/api/overview"
-  icon="code"
->
-  Introduction to all extensibility and integration points.
+<Card title="Email" href="/en/email" icon="at">
+Great customer relations start with great communication.
 </Card>
 
-<Card
-  title="Developer Portal"
-  href="/en/developer-portal/about"
-  icon="laptop"
->
-  Learn how to create online applications.
+<Card title="Document" href="/en/document" icon="file-lines">
+Store and organize documents alongside your customer data.
 </Card>
 
-<Card
-  title="Customer Service"
-  href="/en/service"
-  icon="headphones"
->
-  Learn all about SuperOffice Service.
+<Card title="WebTools" href="/integrations/webtools" icon="globe">
+Connect your website forms and pages to SuperOffice.
 </Card>
 
-<Card
-  title="Email and communication"
-  href="/en/email"
-  icon="message"
->
-  Great customer relations start with great communication.
+<Card title="Settings and maintenance" href="/en/admin" icon="gear">
+Configure and maintain your SuperOffice installation.
+</Card>
+
+<Card title="Customization" href="/en/customization" icon="sliders">
+Tailor SuperOffice to fit how your organization works.
+</Card>
+
+<Card title="Automation" href="/en/automation/overview" icon="microchip">
+Automate workflows with CRMScript, triggers, and webhooks.
+</Card>
+
+<Card title="Database Mirroring" href="/en/online/mirroring/overview" icon="database">
+Keep your on-premise database in sync with the cloud.
+</Card>
+
+<Card title="Developer portal" href="/en/developer-portal/about" icon="laptop">
+Learn how to create online applications.
 </Card>
 
 </Columns>
 
-<div className='my-12'>
-<h2 className='text-4xl font-bold'>Popular areas of interest</h2>
+<div id="home-hugo-banner">
+  <img src="/media/loc/en/home/hugo-fall-leaves.jpg" alt="Hugo, the SuperOffice mascot, standing among autumn leaves" />
 </div>
-<Columns cols={3}>
-<Card title="Admin" icon="user" horizontal href="/en/admin"/>
-
-<Card
-  title="Artificial Intelligence"
-  icon="brain"
-  horizontal
-  href="/en/ai/learn"
-/>
-
-<Card
-  title="Automation"
-  icon="microchip"
-  horizontal
-  href="/en/automation/overview"
-/>
-
-<Card
-  title="Company"
-  icon="building"
-  horizontal
-  href="/en/company"
-/>
-
-<Card
-  title="Contact"
-  icon="user"
-  horizontal
-  href="/en/contact"
-/>
-
-<Card
-  title="CRMScript"
-  icon="terminal"
-  horizontal
-  href="/en/automation/crmscript/overview"
-/>
-
-<Card
-  title="Customer Service"
-  icon="headphones"
-  horizontal
-  href="/en/service"
-/>
-
-<Card
-  title="Database Mirroring"
-  icon="database"
-  horizontal
-  href="/en/online/mirroring/overview"
-/>
-
-<Card
-  title="Diary"
-  icon="calendar"
-  horizontal
-  href="/en/diary"
-/>
-
-<Card
-  title="Document"
-  icon="file-text"
-  horizontal
-  href="/en/document"
-/>
-
-<Card
-  title="Localization"
-  icon="terminal"
-  horizontal
-  href="/en/api/localization"
-/>
-
-<Card
-  title="Mobile"
-  icon="mobile"
-  horizontal
-  href="/en/mobile"
-/>
-
-<Card
-  title="Project"
-  icon="folder-tree"
-  horizontal
-  href="/en/project"
-/>
-
-<Card
-  title="Request Management"
-  icon="circle-question"
-  horizontal
-  href="/en/request"
-/>
-
-<Card
-  title="Sale"
-  icon="shopping-cart"
-  horizontal
-  href="/en/sale"
-/>
-
-<Card
-  title="Security"
-  icon="shield"
-  horizontal
-  href="/en/security"
-/>
-
-<Card
-  title="Video Meetings"
-  icon="video"
-  horizontal
-  href="/integrations/video-meetings"
-/>
-
-<Card
-  title="WebTools"
-  icon="globe"
-  horizontal
-  href="/integrations/webtools"
-/>
-
-</Columns>
 
 <div className='my-12'>
 <h2 className='text-4xl font-bold'>What type of user are you?</h2>
 </div>
 
 <div id="home-user-types">
-<Columns cols={4}>
-<Card
-  title="SuperUser"
-  href="/en/customization"
-  cta="LEARN MORE"
-  icon="circle-user"
->
+<Columns cols={3}>
+
+<Card title="SuperUser" href="/en/admin" cta="LEARN MORE">
+  <img src="/media/loc/en/home/hugo-superuser.png" className="home-user-type-hugo" alt="Hugo wearing a medal, representing the SuperUser role" />
   A person who has system administrative privilege's and special functional and data access rights for managing how SuperOffice behaves. The friend you need to tweak the system!
 </Card>
 
-<Card
-  title="Administrator"
-  href="/en/onsite/"
-  cta="LEARN MORE"
-  icon="shield"
->
-  A person who is primarily responsible for the setup, configuration, and maintenance of SuperOffice in an organization.
-  The guy you call when shit hits the fan!
-</Card>
-
-<Card
-  title="Consultant"
-  href="/en/automation/overview"
-  cta="LEARN MORE"
-  icon="briefcase"
->
+<Card title="Consultant" href="/en/automation/overview" cta="LEARN MORE">
+  <img src="/media/loc/en/home/hugo-consultant.png" className="home-user-type-hugo" alt="Hugo holding a cup of coffee, representing the Consultant role" />
   A person who works with companies to improve their use of SuperOffice to achieve business goals.
   An expert in all technical aspects of SuperOffice—hired to provide advice, solve problems, and increase efficiency.
 </Card>
 
-<Card
-  title="Developer"
-  href="/en/api/overview"
-  cta="LEARN MORE"
-  icon="code"
->
+<Card title="Developer" href="/en/api/overview" cta="LEARN MORE">
+  <img src="/media/loc/en/home/hugo-developer.png" className="home-user-type-hugo" alt="Hugo holding a tablet, representing the Developer role" />
   A software engineer responsible for implementing application or integration requirements,
   or providing consultancy on how integrations should be built using current industry trends.
 </Card>
@@ -259,116 +123,23 @@ Product knowledge-base to learn concepts, features and solve issues.
 </Columns>
 </div>
 
-<div id="home-quick-access" className='my-12'>
-<div className='mb-12'>
-<h2 className='text-4xl font-bold'>Quick access shortcuts</h2>
+<div id="home-whats-new" className="my-12">
+<Columns cols={2}>
+
+<Card title="New content">
+<RecentPages items={[
+  { path: "/release-notes/12", title: "What's new in SuperOffice 12", since: "07.09.2026", pinned: true },
+  { path: "/en/marketing", title: "Marketing landing page", since: "08.24.2026" },
+  { path: "/en/automation/webhook", title: "Webhooks administration", since: "06.15.2026" },
+  { path: "/en/marketing/forms/admin/form-field-restrictions", title: "Form field restrictions", since: "06.15.2026" },
+  { path: "/en/request/admin/relation-rules", title: "Relation rules", since: "06.15.2026" },
+  { path: "/en/request/learn/request-relations", title: "Request relations", since: "06.15.2026" },
+]} />
+</Card>
+
+<div id="home-team-photo">
+  <img src="/media/loc/en/home/team-photo.jpg" alt="" />
 </div>
-<Columns cols={4}>
-<Card title="Getting Started" icon="rocket">
-<p className='mt-8 mb-4'>
-  <a href="/en/onsite/requirements">
-    * System requirements
-  </a>
-</p>
-<p className='my-4'>
-  <a href="/en/onsite/security/">
-    * Security concerns
-  </a>
-</p>
-
-<p className='my-4'>
-  <a href="/en/onsite/">
-    * Onsite topics
-  </a>
-</p>
-
-<p className='my-4'>
-  <a href="/en/online/migrate/">
-    * Online migration
-  </a>
-</p>
-
-</Card>
-
-
-<Card title="Installation" icon="download">
-
-  <p className='mt-8 mb-4'>
-    <a href="/en/onsite/install/server/">
-      * CRM Server
-    </a>
-  </p>
-
-  <p className='my-4'>
-    <a href="/en/onsite/install/web-client/">
-      * Web applications
-    </a>
-  </p>
-
-  <p className='my-4'>
-    <a href="/integrations/webtools">
-      * WebTools
-    </a>
-  </p>
-
-  <p className='my-4'>
-    <a href="/en/mobile">
-      * Mobile application
-    </a>
-  </p>
-
-</Card>
-
-
-<Card title="Configuration" icon="gear">
-
-  <p className='mt-8 mb-4'>
-    <a href="/en/onsite/web-config">
-      * NetServer Configuration
-    </a>
-  </p>
-
-  <p className='my-4'>
-    <a href="/en/document/templates/variables">
-      * Document template variables
-    </a>
-  </p>
-
-  <p className='my-4'>
-    <a href="/en/knowledge-base/learn/reply-templates">
-      * Service reply templates
-    </a>
-  </p>
-
-  <p className='my-4'>
-    <a href="/en/onsite/batch-task-server">
-      * Batch task service
-    </a>
-  </p>
-
-  <p className='my-4'>
-    <a href="/en/onsite/config/">
-      * INI files
-    </a>
-  </p>
-
-</Card>
-
-<Card title="Online Development" icon="cloud">
-
-  <p className='mt-8 mb-4'>
-    <a href="/en/developer-portal/getting-started/get-access-to-sod">
-      * Register online developer account
-    </a>
-  </p>
-
-  <p className='my-4'>
-    <a href="https://dev.superoffice.com/">
-      * Developer portal
-    </a>
-  </p>
-
-</Card>
 
 </Columns>
 </div>
