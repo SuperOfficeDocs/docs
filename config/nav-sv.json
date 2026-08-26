@@ -636,7 +636,7 @@
       },
       {
         "group": "Urval",
-        "icon": "chart-simple",
+        "icon": "square-minus",
         "root": "sv/search-options/selection/learn/index",
         "pages": [
           "sv/search-options/selection/learn/create",
@@ -737,7 +737,7 @@
       },
       {
         "group": "SAINT (försäljningsintelligens)",
-        "icon": "chart-bar",
+        "icon": "chart-simple",
         "root": "sv/saint/learn/index",
         "pages": [
           {

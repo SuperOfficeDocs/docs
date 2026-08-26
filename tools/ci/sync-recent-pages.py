@@ -18,7 +18,7 @@ context on a homepage list). This script:
      (e.g. the current release notes) should read as current, not stale,
      whenever their content actually changes.
   3. Drops any entry whose target has `generated: true` frontmatter.
-  4. Drops non-pinned entries whose `since` is more than 60 days old.
+  4. Drops non-pinned entries whose `since` is more than 120 days old.
   5. Caps the combined list at 7: pinned entries get guaranteed slots
      (they still count against the cap); the most recent eligible
      non-pinned entries fill whatever's left.
@@ -60,7 +60,7 @@ TITLE_RE = re.compile(r'(?m)^title:\s*"?(.*?)"?\s*$')
 GENERATED_RE = re.compile(r"(?m)^generated:\s*true\s*$")
 
 MAX_TOTAL = 7
-MAX_AGE_DAYS = 60
+MAX_AGE_DAYS = 120
 AUTO_DETECT_PREFIXES = ("en/", "integrations/")
 DATE_FMT = "%m.%d.%Y"
 

@@ -650,7 +650,7 @@
   },
   {
     "group": "Selection",
-    "icon": "chart-simple",
+    "icon": "square-minus",
     "root": "en/search-options/selection/learn/index",
     "pages": [
       "en/search-options/selection/learn/create",
@@ -754,7 +754,7 @@
   },
   {
     "group": "SAINT (Sales intelligence)",
-    "icon": "chart-bar",
+    "icon": "chart-simple",
     "root": "en/saint/learn/index",
     "pages": [
       {

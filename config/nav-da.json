@@ -636,7 +636,7 @@
       },
       {
         "group": "Udvalg",
-        "icon": "chart-simple",
+        "icon": "square-minus",
         "root": "da/search-options/selection/learn/index",
         "pages": [
           "da/search-options/selection/learn/create",
@@ -737,7 +737,7 @@
       },
       {
         "group": "SAINT (Sales Intelligence)",
-        "icon": "chart-bar",
+        "icon": "chart-simple",
         "root": "da/saint/learn/index",
         "pages": [
           {
