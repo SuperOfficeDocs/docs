@@ -389,10 +389,6 @@ public const string WhatsNewConfirmedPocket = "WhatsNewConfirmedPocket"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-#### Examples
-
-https://help.superoffice.com/news/pocket/8.0.10/default.htm
-
 ### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WhatsNewConfirmedWeb"&gt;&lt;/a&gt; WhatsNewConfirmedWeb
 
 WhatsNew Latest confirmed on web client. The latests WhatsNew URL the user has confirmed on the web client.
@@ -406,10 +402,6 @@ public const string WhatsNewConfirmedWeb = "WhatsNewConfirmedWeb"
 #### Field Value
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
-
-#### Examples
-
-https://help.superoffice.com/news/web/8.0.10/default.htm
 
 ### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WhatsNewConfirmedWin"&gt;&lt;/a&gt; WhatsNewConfirmedWin
 
@@ -425,10 +417,6 @@ public const string WhatsNewConfirmedWin = "WhatsNewConfirmedWin"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-#### Examples
-
-https://help.superoffice.com/news/win/8.0.10/default.htm
-
 ### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WhatsNewSeenPocket"&gt;&lt;/a&gt; WhatsNewSeenPocket
 
 WhatsNew Seen on Web client. The latest WhatsNew URL we have seen in the web client.
@@ -442,10 +430,6 @@ public const string WhatsNewSeenPocket = "WhatsNewSeenPocket"
 #### Field Value
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
-
-#### Examples
-
-https://help.superoffice.com/news/pocket/8.0.10/default.htm
 
 ### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WhatsNewSeenWeb"&gt;&lt;/a&gt; WhatsNewSeenWeb
 
@@ -461,10 +445,6 @@ public const string WhatsNewSeenWeb = "WhatsNewSeenWeb"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-#### Examples
-
-https://help.superoffice.com/news/web/8.0.10/default.htm
-
 ### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WhatsNewSeenWin"&gt;&lt;/a&gt; WhatsNewSeenWin
 
 WhatsNew Seen on Web client. The latest WhatsNew URL we have seen in the web client.
@@ -478,10 +458,6 @@ public const string WhatsNewSeenWin = "WhatsNewSeenWin"
 #### Field Value
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
-
-#### Examples
-
-https://help.superoffice.com/news/win/8.0.10/default.htm
 
 ### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WhatsNewUrl"&gt;&lt;/a&gt; WhatsNewUrl
 
@@ -504,5 +480,5 @@ public const string WhatsNewUrl = "WhatsNewUrl"
 
 https://help.superoffice.com/SODispatcher/v1/WhatsNew?ver=&lt;ver#&gt;&amp;langiso=&lt;lani&gt;
 returns JSON object when called:
-\{ url: "https://help.superoffice.com/news/web/8.0.10/default.htm" \}
+\{ url: "&lt;url&gt;" \}
 
