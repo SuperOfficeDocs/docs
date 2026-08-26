@@ -1,5 +1,3 @@
-import { useEffect, useRef } from 'react';
-
 /**
  * SOForm - Embeds SuperOffice CRM forms into documentation pages
  *
