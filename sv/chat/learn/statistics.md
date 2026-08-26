@@ -16,42 +16,42 @@ audience_tooltip: SuperOffice CRM
 language: sv
 ---
 
-The chat statistics can be used to improve the overall communication and agents' performance, as well as shorten the response time. You can view them in the **Dashboard** tab in the **Chat** screen.
+Chattstatistiken kan användas för att förbättra den övergripande kommunikationen och agenternas prestation, samt förkorta svarstiden. Du kan visa den på fliken **Dashboard** i **Chatt**-fönstret.
 
-![In the Chat Dashboard tab, you have a section showing the statistics of incoming chats -screenshot][img1]
+![På fliken Chattdashboard visas ett avsnitt med statistik för inkommande chattar -screenshot][img1]
 
-In addition to general statistics about chat sessions, you can monitor the following:
+Utöver allmän statistik om chattsessioner kan du övervaka följande:
 
-* How many people are waiting for an agent to respond.
-* How long they have waited.
-* How many agents are available.
-* How many chat sessions are active.
+* Hur många personer som väntar på att en agent ska svara.
+* Hur länge de har väntat.
+* Hur många agenter som är tillgängliga.
+* Hur många chattsessioner som är aktiva.
 
-By default statistics are shown for all available channels, but you can select a specific chat channel from the **Channel** list.
+Som standard visas statistik för alla tillgängliga kanaler, men du kan välja en specifik chattkanal i listan **Kanal**.
 
-## Create a dashboard for chat conversation
+## Skapa en dashboard för chattsamtal
 
-You can visualize statistics from chat conversations in a dashboard to get an informative overview of the data. After you [create a dashboard][2], you can add and edit tiles.
+Du kan visualisera statistik från chattsamtal i en dashboard för att få en informativ översikt över datan. När du har [skapat en dashboard][2] kan du lägga till och redigera paneler.
 
-### Examples - tiles you can add to your dashboard for chat conversations
+### Exempel - paneler du kan lägga till i din dashboard för chattsamtal
 
-* Use the **Agent with the best average rating this month tile** to see which agent that on average performed best that month. The tile can be used for motivation, or for internal competition.
+* Använd panelen **Agent med bäst genomsnittligt betyg denna månad** för att se vilken agent som i genomsnitt presterade bäst den månaden. Panelen kan användas för motivation eller för intern tävling.
 
-* The **Chat conversations per month** tile let you keep track of how many chats your company receives each month.
+* Panelen **Chattsamtal per månad** låter dig hålla koll på hur många chattar ditt företag tar emot varje månad.
 
-* By adding the **Most busy hour** tile, you can learn what hour of the day most customers contact your chat agents throughout the year. The tile can also be modified to show other time-frames.
+* Genom att lägga till panelen **Mest upptagna timme** kan du se vilken tid på dygnet flest kunder kontaktar dina chattagenter under året. Panelen kan även ändras för att visa andra tidsperioder.
 
-* With the **My average chat rating this month** tile you can follow the average rating score you receive from your customers. Use it as an indicator of how satisfied your customers are with your service, and as a motivation to improve or to keep doing the great work.
+* Med panelen **Mitt genomsnittliga chattbetyg denna månad** kan du följa det genomsnittliga betyg du får från dina kunder. Använd det som en indikator på hur nöjda dina kunder är med din service, och som en motivation att förbättra dig eller att fortsätta det fantastiska arbetet.
 
-![Example of different tiles for chat conversations -screenshot][img2]
+![Exempel på olika paneler för chattsamtal -screenshot][img2]
 
-## Respond to an incoming chat
+## Svara på en inkommande chatt
 
-Double-click a row in the Incoming chat list to [respond to that chat][1]. The chat opens in the **Chats** tab.
+Dubbelklicka på en rad i listan Inkommande chatt för att [svara på den chatten][1]. Chatten öppnas på fliken **Chattsamtal**.
 
-## Listen to an ongoing chat
+## Lyssna på ett pågående chattsamtal
 
-Double-click a row in the **Ongoing chat sessions** list to listen in on (watch) an ongoing chat. The agent will not be notified that you are monitoring to the chat. You cannot participate in the chat.
+Dubbelklicka på en rad i listan **Pågående chattsessioner** för att lyssna på (och följa) ett pågående chattsamtal. Agenten meddelas inte om att du övervakar chatten. Du kan inte delta i chatten.
 
 [1]: ./respond
 [2]: ../../dashboard/learn/create
