@@ -1246,16 +1246,11 @@ html:not(.dark) .prose td {
   color: var(--so-green) !important;
 }
 
-/* Dark-mode counterpart (a11y issue #325): #83's rule above had no dark-mode
- * variant, deliberately deferred at the time ("the ask is explicitly for light
- * backgrounds") — so every H1/H2 on every content page rendered --so-green
- * (#06423E) against the dark charcoal background, a ~1.5:1 contrast ratio,
- * nowhere close to WCAG AA's 4.5:1 minimum. Coast blue matches the rest of
- * this repo's dark-mode heading/link treatment (see the anchor-link rules
- * just below). Card titles are their own `h2` too (Mintlify's Card component)
- * but read better as the same near-white used for the navbar's highlighted
- * state than as another blue -- the `[data-component-part]` rule below wins
- * on specificity for that one case. */
+/* Dark-mode counterpart to the rule above (WCAG AA fix, issue #325). Coast
+ * blue matches this repo's other dark-mode heading/link treatment. Card
+ * titles are their own `h2` (Mintlify's Card component) but use dune-white
+ * instead, matching the navbar's highlighted state -- the
+ * `[data-component-part]` rule below wins on specificity for that case. */
 .dark .prose h1,
 .dark .prose h2 {
   color: var(--coast-blue) !important;
