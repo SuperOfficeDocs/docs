@@ -144,7 +144,6 @@
               "$ref": "./nav-api-webapi.json"
             }
           },
-          "en/api/reference/restful/index",
           {
             "group": "HTTP RPC Agent API",
             "pages": [
