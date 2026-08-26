@@ -1,7 +1,7 @@
 ---
 title: DocumentShadowDynamicSelectionSingleCriteriaGroup
 description: Shadow contact provider for the dynamic document provider.
-keywords: ['DocumentShadowDynamicSelectionSingleCriteriaGroup archive provider']
+keywords: DocumentShadowDynamicSelectionSingleCriteriaGroup archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -731,7 +731,7 @@ Shadow contact provider for the dynamic document provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/DocumentShadowDynamicSelectionSingleCriteriaGroup?$select=getAllRows,person/hasCompany,person/personAddress/wgs84longitude,person/subscription,person/consentSourceEmarketing
+GET /api/v1/archive/DocumentShadowDynamicSelectionSingleCriteriaGroup?$select=person/personUdef/SuperOffice:3,person/personExtra/x_person_appointment_relation,person/personAssociate/locationAddress,project/projectUdef/SuperOffice:4
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

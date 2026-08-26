@@ -1,7 +1,7 @@
 ---
 title: ProjectMember
 description: Provider for the Project Member archive under Project
-keywords: ['ProjectMember archive provider']
+keywords: ProjectMember archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -558,7 +558,7 @@ from the result.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectMember?$select=hasInfoText,project/project/infoText,person/personInfo/textId,person/personExtra/y_rental/y_equipment/x_name,contact/contactAssociate/ejStatus
+GET /api/v1/archive/ProjectMember?$select=project/projectUdef/SuperOffice:3,person/personAddress/wgs84longitude,person/restrictionAddress/line1,person/personExtra/x_person_shorttext,person/correspondingAssociate/role
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

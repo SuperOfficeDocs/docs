@@ -1,7 +1,7 @@
 ---
 title: ProjectShadowDynamicSelectionSingleCriteriaGroup
 description: Shadow contact provider for the dynamic Project provider.
-keywords: ['ProjectShadowDynamicSelectionSingleCriteriaGroup archive provider']
+keywords: ProjectShadowDynamicSelectionSingleCriteriaGroup archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -825,7 +825,7 @@ Shadow contact provider for the dynamic Project provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectShadowDynamicSelectionSingleCriteriaGroup?$select=projectAssociate/personEmail,sale/associate/otherGroups,appointment/appointmentId,projectMember/restrictionAddress/line3,projectMember/restrictionAddress/zip
+GET /api/v1/archive/ProjectShadowDynamicSelectionSingleCriteriaGroup?$select=projectAssociate/associateDbId,sale/type,appointment/appointmentUdef/SuperOffice:3,projectMember/email/emailAddress,projectMember/personExtra/x_person_time
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

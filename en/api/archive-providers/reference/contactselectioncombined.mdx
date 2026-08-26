@@ -1,7 +1,7 @@
 ---
 title: ContactSelectionCombined
 description: Implementation of the provider for the combined selection
-keywords: ['ContactSelectionCombined archive provider']
+keywords: ContactSelectionCombined archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -1268,7 +1268,7 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/ContactSelectionCombined?$select=personExtra/y_rental/x_end,personTargetRelation/birthMonth,personTargetRelation/personActiveErpLinks,request/priorityName,request/createdBy/usergroupId
+GET /api/v1/archive/ContactSelectionCombined?$select=selectionMemberId,saintTicketCategory,sourceRelation/associateId,sale/salePublish/publishedTo,sale/associate/contactDepartment
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

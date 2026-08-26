@@ -1,7 +1,7 @@
 ---
 title: ProjectActivity
 description: Activity archive provider for the Project card
-keywords: ['ProjectActivity archive provider']
+keywords: ProjectActivity archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -1282,7 +1282,7 @@ Activity archive provider for the Project card
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectActivity?$select=mailingAddr/contact/email/emailHasBounced,mailingAddr/contact/contactInterestIds,mailingAddr/person/personUpdatedBy,mailingAddr/person/personCategory,mailingAddr/person/personCategoryGroup
+GET /api/v1/archive/ProjectActivity?$select=mailingAddr/contact/registeredDate,mailingAddr/contact/contactAssociate/firstName,mailingAddr/person/birthdate,mailingAddr/person/supportAssociate,mailingAddr/person/personExtra/x_person_shorttext
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

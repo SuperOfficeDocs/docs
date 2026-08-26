@@ -1,7 +1,7 @@
 ---
 title: AppointmenthadowSelectionCombined
 description: Implementation of the provider for the combined selection
-keywords: ['AppointmenthadowSelectionCombined archive provider']
+keywords: AppointmenthadowSelectionCombined archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -759,7 +759,7 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/AppointmenthadowSelectionCombined?$select=type,contact/contactAssociate/contactFullName,sale/hasQuote,sale/salePublish/publishedTo,sale/associate/ejUserId
+GET /api/v1/archive/AppointmenthadowSelectionCombined?$select=contact/email/emailBounceCount,contact/restrictionAddress/wgs84longitude,person/legalBaseStore,project/NumberOfSalesInPeriod
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

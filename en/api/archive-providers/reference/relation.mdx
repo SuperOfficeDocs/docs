@@ -1,7 +1,7 @@
 ---
 title: Relation
 description: Data provider class for the 'Relation' archive under the company card. This class combines output from
-keywords: ['Relation archive provider']
+keywords: Relation archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -575,7 +575,7 @@ the up to eight basic sub-providers (CC, PC, PP and CP plus their reversed cousi
 ## Sample
 
 ```http!
-GET /api/v1/archive/Relation?$select=target/postAddress/line3,target/contactAssociate/otherGroups,target/contactUdef/SuperOffice:4,credentialType,target/leadStatus
+GET /api/v1/archive/Relation?$select=relationId,source/personAssociateFullName,target/contactExtra/x_contact_time,target/SaintStatus2,source/email/emailLastBounce
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

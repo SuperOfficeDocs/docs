@@ -1,7 +1,7 @@
 ---
 title: SaleShadowSelectionCombinedV2
 description: Implementation of the provider for the combined selection
-keywords: ['SaleShadowSelectionCombinedV2 archive provider']
+keywords: SaleShadowSelectionCombinedV2 archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -1350,7 +1350,7 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleShadowSelectionCombinedV2?$select=earningPercent,person/personUpdatedDate,person/personDirectPhone/description,person/correspondingAssociate/ejDisplayName,contact/restrictionAddress/formattedMultiLineAddress
+GET /api/v1/archive/SaleShadowSelectionCombinedV2?$select=stage,person/birthYear,person/personCategoryGroup,person/personUdef/SuperOffice:6,contact/code
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

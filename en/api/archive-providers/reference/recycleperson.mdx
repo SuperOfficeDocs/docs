@@ -1,7 +1,7 @@
 ---
 title: RecyclePerson
 description: 
-keywords: ['RecyclePerson archive provider']
+keywords: RecyclePerson archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -133,7 +133,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/RecyclePerson?$select=birthdate,personRegisteredDate,isProjectMember
+GET /api/v1/archive/RecyclePerson?$select=personContact/name,personRegisteredDate,isProjectMember
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

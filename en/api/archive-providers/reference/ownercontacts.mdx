@@ -1,7 +1,7 @@
 ---
 title: OwnerContacts
 description: Archive provider for the list of own contacts in SoAdmin
-keywords: ['OwnerContacts archive provider']
+keywords: OwnerContacts archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -367,7 +367,7 @@ Archive provider for the list of own contacts in SoAdmin
 ## Sample
 
 ```http!
-GET /api/v1/archive/OwnerContacts?$select=contactSupportPerson/birthMonth,NumberOfSales,contactAssociate/usergroup
+GET /api/v1/archive/OwnerContacts?$select=postAddress/wgs84latitude,contactInterestIds,contactAssociate/usergroup
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

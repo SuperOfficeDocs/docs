@@ -1,7 +1,7 @@
 ---
 title: ProjectShadowSelection
 description: Shadow contact provider for the Project provider.
-keywords: ['ProjectShadowSelection archive provider']
+keywords: ProjectShadowSelection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -832,7 +832,7 @@ Shadow contact provider for the Project provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectShadowSelection?$select=projectAssociate/personId,projectAssociate/assocName,sale/source,appointment/appointmentId,appointment/associate/simultaneousEjUser
+GET /api/v1/archive/ProjectShadowSelection?$select=projectPublish/isPublished,projectAssociate/lastName,sale/stageRank,appointment/booking,appointment/associate/associateDbId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

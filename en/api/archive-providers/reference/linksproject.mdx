@@ -1,7 +1,7 @@
 ---
 title: LinksProject
 description: 
-keywords: ['LinksProject archive provider']
+keywords: LinksProject archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -141,7 +141,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/LinksProject?$select=saintTicketStatus,projectPublish/publishedTo,projectAssociate/usergroup
+GET /api/v1/archive/LinksProject?$select=projectAssociate/ejUserId,projectUdef/SuperOffice:8,LastCompletedSale
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

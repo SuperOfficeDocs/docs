@@ -1,7 +1,7 @@
 ---
 title: ProjectGuide
 description: Provider for the Project Guide, common to both Appointment and Document guide items and instances
-keywords: ['ProjectGuide archive provider']
+keywords: ProjectGuide archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -1482,7 +1482,7 @@ This provider is a trivial aggregation of the Appointment and Document providers
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectGuide?$select=appointmentInstance/person/personAssociate/mrMrs,appointmentInstance/person/isMailingRecipient,appointmentInstance/sale/who,appointmentInstance/sale/associate/contactDepartment,appointmentInstance/sale/saleUdef/SuperOffice:4
+GET /api/v1/archive/ProjectGuide?$select=appointmentInstance/contact/restrictionAddress/line3,appointmentInstance/contact/contactAssociate/contactFullName,appointmentInstance/contact/contactAssociate/assocName,appointmentInstance/contact/contactAssociate/ejUserId,appointmentInstance/contact/SaintStatus1
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

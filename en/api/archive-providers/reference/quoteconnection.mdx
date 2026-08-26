@@ -1,7 +1,7 @@
 ---
 title: QuoteConnection
 description: This is the archive Provider for the QuoteConnection Archive in SoAdmin.
-keywords: ['QuoteConnection archive provider']
+keywords: QuoteConnection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -59,7 +59,7 @@ This is the archive Provider for the QuoteConnection Archive in SoAdmin.
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteConnection?$select=extraData,updatedDate,erpConnection/description
+GET /api/v1/archive/QuoteConnection?$select=updatedBy,updatedDate,erpConnection/description
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -1,7 +1,7 @@
 ---
 title: SaleFilteredWithStakeholder
 description: 
-keywords: ['SaleFilteredWithStakeholder archive provider']
+keywords: SaleFilteredWithStakeholder archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -1157,7 +1157,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleFilteredWithStakeholder?$select=originalStage,stalledComment,person/personCountryId,person/personAddress/wgs84longitude,person/personAssociate/lastName
+GET /api/v1/archive/SaleFilteredWithStakeholder?$select=saleStatus,salePublish/publishedFrom,person/leadStatus,person/personAddress/city,person/personAssociate/firstName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

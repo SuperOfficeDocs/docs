@@ -1,7 +1,7 @@
 ---
 title: QuoteLineShadowDynamicSelection
 description: Shadow contact provider for the dynamic quoteline provider.
-keywords: ['QuoteLineShadowDynamicSelection archive provider']
+keywords: QuoteLineShadowDynamicSelection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -776,7 +776,7 @@ Shadow contact provider for the dynamic quoteline provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteLineShadowDynamicSelection?$select=alternative/version/quote/sale/updatedDate,alternative/version/quote/sale/hasStakeholders,alternative/version/quote/sale/person/personExtra/x_person_request_relation,alternative/version/quote/sale/contact/email/emailProtocol,alternative/version/quote/sale/contact/postAddress/line3
+GET /api/v1/archive/QuoteLineShadowDynamicSelection?$select=alternative/version/quote/sale/person/supportAssociate,alternative/version/quote/sale/contact/contactNoMail,alternative/version/quote/sale/contact/contactAssociate/usergroup,alternative/version/quote/sale/project/projectAssociate/personId,alternative/version/quote/sale/project/projectAssociate/contactDepartment
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

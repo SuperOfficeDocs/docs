@@ -1,7 +1,7 @@
 ---
 title: FormSubmissionDynamicSelectionSingleCriteriaGroup
 description: FormSubmission selection archive using the selectionId as criterionmapping.
-keywords: ['FormSubmissionDynamicSelectionSingleCriteriaGroup archive provider']
+keywords: FormSubmissionDynamicSelectionSingleCriteriaGroup archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -486,7 +486,7 @@ FormSubmission selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormSubmissionDynamicSelectionSingleCriteriaGroup?$select=associate/contactCategory,person/associateType,person/personRegisteredDate,person/email/emailLastSent,person/personUrl/URLDescription
+GET /api/v1/archive/FormSubmissionDynamicSelectionSingleCriteriaGroup?$select=person/personAssociateId,person/personAssociate/isActiveText,person/restrictionAddress/county
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

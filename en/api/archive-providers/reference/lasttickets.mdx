@@ -1,7 +1,7 @@
 ---
 title: LastTickets
 description: 
-keywords: ['LastTickets archive provider']
+keywords: LastTickets archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -794,7 +794,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/LastTickets?$select=person/leadstatusRank,person/correspondingAssociate/lastName,contact/streetAddress/addressId,sale/associate/firstName,sale/associate/contactName
+GET /api/v1/archive/LastTickets?$select=person/hasInterests,contact/forceCompany,contact/email/emailDescription,contact/streetAddress/city
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

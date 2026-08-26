@@ -1,7 +1,7 @@
 ---
 title: FormSubmissionStaticSelectionV2
 description: 
-keywords: ['FormSubmissionStaticSelectionV2 archive provider']
+keywords: FormSubmissionStaticSelectionV2 archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -489,7 +489,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormSubmissionStaticSelectionV2?$select=formSubmissionEmail,person/firstName,person/contactId
+GET /api/v1/archive/FormSubmissionStaticSelectionV2?$select=personId,person/supportAssociate,person/restrictionAddress/wgs84latitude,person/personAssociate/contactName,person/correspondingAssociate/credentialType
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -1,10 +1,10 @@
 ---
 title: activelanguage
-keywords: ['mdoprovider mdo provider activelanguage']
+keywords: mdoprovider mdo provider activelanguage
 description: 
 generated: true
 content_type: reference
-envir: onsite, online
+envir: online
 ---
 
 ## "activelanguage" MDO List
@@ -20,8 +20,6 @@ The name of the MDO list is 'activelanguage'.
 
 ## Sample Request
 
-<div className="wrap-code-samples">
-
 ```http!
 GET /api/v1/MDOList/activelanguage
 Authorization: Basic dGplMDpUamUw
@@ -30,11 +28,7 @@ Accept-Language: *
 
 ```
 
-</div>
-
 ## Sample Code
-<div className="wrap-code-samples">
-
 ```cs
 var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("activelanguage", forceFlatList: true);
 foreach (var item in listProvider.RootItems) {
@@ -42,8 +36,6 @@ foreach (var item in listProvider.RootItems) {
          item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
 }
 ```
-
-</div>
 
 ## Sample Output
 

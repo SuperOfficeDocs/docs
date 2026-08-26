@@ -1,7 +1,7 @@
 ---
 title: ContactPersonSelectionCombinedV2
 description: Implementation of the provider for the combined selection
-keywords: ['ContactPersonSelectionCombinedV2 archive provider']
+keywords: ContactPersonSelectionCombinedV2 archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -1268,7 +1268,7 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/ContactPersonSelectionCombinedV2?$select=contactExtra/x_contact_float,sale/sale/textId,appointment/duration,personCategoryGroup,request/projectId
+GET /api/v1/archive/ContactPersonSelectionCombinedV2?$select=email/emailBounceCount,sale/text,sale/createdByWorkflow,sale/associate/ejUserId,sale/associate/isActiveText
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

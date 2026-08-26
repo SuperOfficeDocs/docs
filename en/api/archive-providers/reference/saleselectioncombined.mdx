@@ -1,7 +1,7 @@
 ---
 title: SaleSelectionCombined
 description: Implementation of the provider for the combined selection
-keywords: ['SaleSelectionCombined archive provider']
+keywords: SaleSelectionCombined archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -1350,7 +1350,7 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleSelectionCombined?$select=person/restrictionAddress/wgs84longitude,person/personUdef/SuperOffice:7,contact/activeErpLinks,contact/postAddress/state,contact/contactAssociate/simultaneousEjUser
+GET /api/v1/archive/SaleSelectionCombined?$select=appointment/recordType,document/documentUdef/SuperOffice:5,project/projectUdef/SuperOffice:4,saleStakeholder/person/personDirectPhone/formattedNumber,saleStakeholder/person/correspondingAssociate/personId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -1,7 +1,7 @@
 ---
 title: ConfigurableArchiveProject
 description: This is the archive Provider for the Configurable project Archive.
-keywords: ['ConfigurableArchiveProject archive provider']
+keywords: ConfigurableArchiveProject archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -817,7 +817,7 @@ This is the archive Provider for the Configurable project Archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ConfigurableArchiveProject?$select=projectMember/registered,projectMember/personRegisteredByFullName,projectMember/personInterestIds,projectMember/personAssociate/portraitThumbnail,projectMember/categoryGroup
+GET /api/v1/archive/ConfigurableArchiveProject?$select=NumberOfNotCompletedSalesInPeriod,sale/reopenDate,appointment/duration,projectMember/personAssociate/portraitThumbnail,projectMember/hasStoreConsent
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

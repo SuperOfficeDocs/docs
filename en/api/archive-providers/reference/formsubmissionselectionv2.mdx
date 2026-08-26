@@ -1,7 +1,7 @@
 ---
 title: FormSubmissionSelectionV2
 description: This is the archive Provider for the Selection FormSubmission archive.
-keywords: ['FormSubmissionSelectionV2 archive provider']
+keywords: FormSubmissionSelectionV2 archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -491,7 +491,7 @@ This is the archive Provider for the Selection FormSubmission archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormSubmissionSelectionV2?$select=icon,person/mrMrs,contact/postAddress/wgs84longitude
+GET /api/v1/archive/FormSubmissionSelectionV2?$select=person/correspondingAssociate/title,contact/contactDeleted,contact/saintSaleStatus
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -1,7 +1,7 @@
 ---
 title: ExplicitInvitation
 description: 
-keywords: ['ExplicitInvitation archive provider']
+keywords: ExplicitInvitation archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -756,7 +756,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/ExplicitInvitation?$select=icon,endDate,contact/email/emailLastBounce,contact/restrictionAddress/wgs84latitude,contact/contactAssociate/ejUserId
+GET /api/v1/archive/ExplicitInvitation?$select=cautionWarning,contact/contactExtra/x_contact_float,person/personExtra/x_person_hidden_integer,person/personAssociate/title,person/correspondingAssociate/middleName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -1,7 +1,7 @@
 ---
 title: SubContactPersonDynamicSelectionSingleCriteriaGroup
 description: Contact + Person selection archive using the selectionId as criterionmapping.
-keywords: ['SubContactPersonDynamicSelectionSingleCriteriaGroup archive provider']
+keywords: SubContactPersonDynamicSelectionSingleCriteriaGroup archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -1265,7 +1265,7 @@ Contact + Person selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/SubContactPersonDynamicSelectionSingleCriteriaGroup?$select=postAddress/formattedMultiLineAddress,contactUdef/SuperOffice:11,NumberOfSales,targetRelation/hasInfoText,targetRelation/csRelation
+GET /api/v1/archive/SubContactPersonDynamicSelectionSingleCriteriaGroup?$select=contactExtra/x_contact_contact_relation,appointment/rawType,document/associate/contactDepartment,birthMonth,personAssociate/lastName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -1,7 +1,7 @@
 ---
 title: TicketStaticSelection
 description: Static archive Provider for a Selection of tickets archive.
-keywords: ['TicketStaticSelection archive provider']
+keywords: TicketStaticSelection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -800,7 +800,7 @@ Static archive Provider for a Selection of tickets archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketStaticSelection?$select=realTimeSpentInternally,realTimeToClose,person/personAssociate/mrMrs,contact/contactAssociate/usergroupId,contact/contactAssociate/simultaneousEjUser
+GET /api/v1/archive/TicketStaticSelection?$select=realTimeSpentQueue,person/personAssociate/locationAddress,contact/contactAssociate/credentialType,project/projectUrl/URLDescription
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -1,7 +1,7 @@
 ---
 title: FavouriteTickets
 description: 
-keywords: ['FavouriteTickets archive provider']
+keywords: FavouriteTickets archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -795,7 +795,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/FavouriteTickets?$select=title,ownedBy/isActiveText,person/personAddress/wgs84longitude,person/personUdef/SuperOffice:5,person/personUdef/SuperOffice:7
+GET /api/v1/archive/FavouriteTickets?$select=categoryFullName,person/portraitThumbnail,person/restrictionAddress/zip,contact/streetAddress/wgs84latitude,contact/restrictionAddress/formattedMultiLineAddress
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

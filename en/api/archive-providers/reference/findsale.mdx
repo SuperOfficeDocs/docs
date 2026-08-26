@@ -1,7 +1,7 @@
 ---
 title: FindSale
 description: 
-keywords: ['FindSale archive provider']
+keywords: FindSale archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -1343,7 +1343,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/FindSale?$select=text,originalStage,contact/contactAssociate/contactFullName,contact/saintActivityType,appointment/associate/middleName
+GET /api/v1/archive/FindSale?$select=saleStatus,hasGuide,person/personRegisteredBy,person/personAddress/city,contact/postAddress/formattedAddress
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

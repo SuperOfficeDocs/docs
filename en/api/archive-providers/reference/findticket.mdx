@@ -1,7 +1,7 @@
 ---
 title: FindTicket
 description: Ticket provider for Find
-keywords: ['FindTicket archive provider']
+keywords: FindTicket archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -796,7 +796,7 @@ Ticket provider for Find
 ## Sample
 
 ```http!
-GET /api/v1/archive/FindTicket?$select=timeToReply,person/personAssociate/personId,person/correspondingAssociate/contactName,contact/contactExtra/x_contact_float,sale/associate/userName
+GET /api/v1/archive/FindTicket?$select=createdBy/contactId,person/hasInterests,person/personUdef/SuperOffice:1,contact/restrictionAddress/zip,sale/associate/usergroup
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

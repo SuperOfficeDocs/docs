@@ -1,7 +1,7 @@
 ---
 title: DocumentSelectionCombined
 description: Implementation of the provider for the combined selection
-keywords: ['DocumentSelectionCombined archive provider']
+keywords: DocumentSelectionCombined archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -736,7 +736,7 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/DocumentSelectionCombined?$select=person/personRegisteredDate,person/correspondingAssociate/locationAddress,contact/contactDeleted,contact/contactUdef/SuperOffice:2,sale/associate/otherGroups
+GET /api/v1/archive/DocumentSelectionCombined?$select=person/position,person/correspondingAssociate/contactDepartment,project/projectAssociate/role
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

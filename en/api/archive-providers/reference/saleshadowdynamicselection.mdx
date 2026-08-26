@@ -1,7 +1,7 @@
 ---
 title: SaleShadowDynamicSelection
 description: Shadow contact provider for the dynamic sale provider.
-keywords: ['SaleShadowDynamicSelection archive provider']
+keywords: SaleShadowDynamicSelection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -1347,7 +1347,7 @@ Shadow contact provider for the dynamic sale provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleShadowDynamicSelection?$select=saleNumber,person/personActiveErpLinks,person/personCategory,person/personInfo/textId,person/correspondingAssociate/lastName
+GET /api/v1/archive/SaleShadowDynamicSelection?$select=person/personExtra/x_person_priority_relation,contact/contactAssociate/contactDepartment,contact/contactUdef/SuperOffice:6,appointment/icon,appointment/joinVideomeetUrl
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

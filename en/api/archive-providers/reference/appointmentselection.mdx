@@ -1,7 +1,7 @@
 ---
 title: AppointmentSelection
 description: This is the archive Provider for the Selection appouintment archive.
-keywords: ['AppointmentSelection archive provider']
+keywords: AppointmentSelection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -760,7 +760,7 @@ This is the archive Provider for the Selection appouintment archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/AppointmentSelection?$select=updatedByFullName,contact/updatedByFullName,contact/streetAddress/line2,person/contactId,person/mrMrs
+GET /api/v1/archive/AppointmentSelection?$select=contact/activeErpLinks,contact/streetAddress/addressId,contact/streetAddress/state,person/correspondingAssociate/fullName,project/projectAssociate/usergroup
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

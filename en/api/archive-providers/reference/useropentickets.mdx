@@ -1,7 +1,7 @@
 ---
 title: UserOpenTickets
 description: 
-keywords: ['UserOpenTickets archive provider']
+keywords: UserOpenTickets archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -793,7 +793,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/UserOpenTickets?$select=person/personExtra/x_person_longtext,person/personExtra/x_person_shorttext_list,person/personAssociate/fullName,person/correspondingAssociate/assocName,contact/contactUdef/SuperOffice:5
+GET /api/v1/archive/UserOpenTickets?$select=readStatus,ownedBy/title,person/correspondingAssociate/associateDbId,person/correspondingAssociate/ejStatus,contact/registeredDate
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

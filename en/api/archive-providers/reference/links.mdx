@@ -1,7 +1,7 @@
 ---
 title: Links
 description: 
-keywords: ['Links archive provider']
+keywords: Links archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -1536,7 +1536,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/Links?$select=person/supportLanguage,person/personAssociate/assocTooltip,saleStakeholder/person/personExtra/x_person_boolean,saleStakeholder/person/personAssociate/simultaneousEjUser,saleStakeholder/contact/contactInterestIds
+GET /api/v1/archive/Links?$select=contact/companyCategoryRank,contact/updatedByFullName,contact/restrictionAddress/line2,contact/contactAssociate/locationAddress,contact/NumberOfTicketsInPeriod
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

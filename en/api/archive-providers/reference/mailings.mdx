@@ -1,7 +1,7 @@
 ---
 title: Mailings
 description: Archive provider for the list of mailings
-keywords: ['Mailings archive provider']
+keywords: Mailings archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -678,7 +678,7 @@ Archive provider for the list of mailings
 ## Sample
 
 ```http!
-GET /api/v1/archive/Mailings?$select=mailingAddr/contact/contactAssociate/isLocation,mailingAddr/contact/LastDoByTicket,mailingAddr/person/personCategoryRank
+GET /api/v1/archive/Mailings?$select=mailingAddr/contact/contactAssociate/isActive,mailingAddr/contact/contactAssociate/userName,mailingAddr/person/position,mailingAddr/person/personActiveErpLinks,mailingAddr/person/leadstatusRank
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

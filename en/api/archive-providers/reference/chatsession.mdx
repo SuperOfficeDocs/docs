@@ -1,7 +1,7 @@
 ---
 title: ChatSession
 description: Archive provider for listing chat session and related data to a chat
-keywords: ['ChatSession archive provider']
+keywords: ChatSession archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -493,7 +493,7 @@ Archive provider for listing chat session and related data to a chat
 ## Sample
 
 ```http!
-GET /api/v1/archive/ChatSession?$select=getNoRows,registeredDate,chatTopic/chatTopicId,person/personUdef/SuperOffice:1,person/personExtra/x_person_hidden_integer
+GET /api/v1/archive/ChatSession?$select=associateId,person/leadstatusRank,person/personAssociate/isActive,contact/contactAssociate/assocTooltip
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

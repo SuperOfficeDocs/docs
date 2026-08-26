@@ -1,7 +1,7 @@
 ---
 title: AssociateProjectDynamicSelectionV2
 description: 
-keywords: ['AssociateProjectDynamicSelectionV2 archive provider']
+keywords: AssociateProjectDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -87,7 +87,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/AssociateProjectDynamicSelectionV2?$select=statusRank,description,updatedByFullName
+GET /api/v1/archive/AssociateProjectDynamicSelectionV2?$select=registeredDate,projectAssociate/fullName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

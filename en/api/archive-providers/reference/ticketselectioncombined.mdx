@@ -1,7 +1,7 @@
 ---
 title: TicketSelectionCombined
 description: Implementation of the provider for the combined selection
-keywords: ['TicketSelectionCombined archive provider']
+keywords: TicketSelectionCombined archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -800,7 +800,7 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketSelectionCombined?$select=readStatus,realTimeSpentQueue,ownedBy/lastName,sale/saleId,sale/amount
+GET /api/v1/archive/TicketSelectionCombined?$select=createdBy/associateDbId,person/personCountry,person/retired,person/personAssociate/ejUserId,contact/contactAssociate/simultaneousEjUser
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

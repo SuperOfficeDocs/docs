@@ -1,7 +1,7 @@
 ---
 title: contactfavourites
 description: 
-keywords: ['contactfavourites archive provider']
+keywords: contactfavourites archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -210,7 +210,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/contactfavourites?$select=icon,contactAssociate/contactFullName,postAddress/formattedAddress
+GET /api/v1/archive/contactfavourites?$select=contactAssociate/contactName,postAddress/formattedAddress,contactAssociate/middleName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

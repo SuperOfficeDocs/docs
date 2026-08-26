@@ -1,7 +1,7 @@
 ---
 title: Invitation
 description: Invitation provider multichannel combiner, consisting of simple, cancelled, rejected, repeating and response invitations. You can also
-keywords: ['Invitation archive provider']
+keywords: Invitation archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -768,7 +768,7 @@ because someone may explicitly request an instance an a recurring booking, so th
 ## Sample
 
 ```http!
-GET /api/v1/archive/Invitation?$select=contact/mainContact,contact/postAddress/addressId,contact/saintSaleStatus,person/personAddress/wgs84longitude,sale/associate/fullName
+GET /api/v1/archive/Invitation?$select=saleId,excludeParticipants,person/leadstatusRank,person/personExtra/x_person_longtext,person/correspondingAssociate/locationAddress
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

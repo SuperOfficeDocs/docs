@@ -1,7 +1,7 @@
 ---
 title: SaleActivity
 description: Activity archive provider for the Sale card
-keywords: ['SaleActivity archive provider']
+keywords: SaleActivity archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -782,7 +782,7 @@ Activity archive provider for the Sale card
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleActivity?$select=visibleFor,person/correspondingAssociate/ejUserId,contact/streetAddress/wgs84longitude,contact/contactAssociate/role,contact/contactAssociate/otherGroups
+GET /api/v1/archive/SaleActivity?$select=contact/contactNoMail,project/projectAssociate/contactFullName,sale/updatedDate
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

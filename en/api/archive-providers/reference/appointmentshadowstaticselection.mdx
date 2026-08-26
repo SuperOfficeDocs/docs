@@ -1,7 +1,7 @@
 ---
 title: AppointmentShadowStaticSelection
 description: Shadow contact provider for the static appointment provider.
-keywords: ['AppointmentShadowStaticSelection archive provider']
+keywords: AppointmentShadowStaticSelection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -759,7 +759,7 @@ Shadow contact provider for the static appointment provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/AppointmentShadowStaticSelection?$select=time,contact/country,contact/streetAddress/city,person/correspondingAssociate/ejStatus,person/correspondingAssociate/personEmail
+GET /api/v1/archive/AppointmentShadowStaticSelection?$select=person/personSource,person/restrictionAddress/line2,person/personExtra/x_person_date,person/correspondingAssociate/lastName,project/projectAssociate/mrMrs
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

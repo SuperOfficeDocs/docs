@@ -1,7 +1,7 @@
 ---
 title: PersonRelation
 description: Data provider class for the 'Relation' archive under the person card. This class combines output from
-keywords: ['PersonRelation archive provider']
+keywords: PersonRelation archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -575,7 +575,7 @@ the eight basic sub-providers (CC, PC, PP and CP plus their reversed cousins) in
 ## Sample
 
 ```http!
-GET /api/v1/archive/PersonRelation?$select=source/contactSource,target/email/emailBounceCount,target/restrictionAddress/wgs84latitude,target/contactExtra/x_contact_time,source/postAddress/formattedMultiLineAddress
+GET /api/v1/archive/PersonRelation?$select=source/personBusiness,target/restrictionAddress/state,target/fullName,source/SaintStatus1
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -1,7 +1,7 @@
 ---
 title: TicketShadowDynamicSelection
 description: Shadow contact provider for the dynamic ticket provider.
-keywords: ['TicketShadowDynamicSelection archive provider']
+keywords: TicketShadowDynamicSelection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -797,7 +797,7 @@ Shadow contact provider for the dynamic ticket provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketShadowDynamicSelection?$select=person/birthYear,person/personExtra/y_rental/x_contact,contact/restrictionAddress/zip,contact/contactAssociate/contactId,contact/contactAssociate/ejStatus
+GET /api/v1/archive/TicketShadowDynamicSelection?$select=contact/department,contact/category,contact/postAddress/line2,project/projectAssociate/title
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

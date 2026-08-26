@@ -1,7 +1,7 @@
 ---
 title: ProjectDynamicSelectionSingleCriteriaGroup
 description: Project selection archive using the selectionId as criterionmapping.
-keywords: ['ProjectDynamicSelectionSingleCriteriaGroup archive provider']
+keywords: ProjectDynamicSelectionSingleCriteriaGroup archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -825,7 +825,7 @@ Project selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectDynamicSelectionSingleCriteriaGroup?$select=sale/probPercent,sale/associate/simultaneousEjUser,document/associate/portraitThumbnail,projectMember/personDirectPhone/description,projectMember/correspondingAssociate/portraitThumbnail
+GET /api/v1/archive/ProjectDynamicSelectionSingleCriteriaGroup?$select=document/subject,projectMember/function,projectMember/restrictionAddress/state,projectMember/stop
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

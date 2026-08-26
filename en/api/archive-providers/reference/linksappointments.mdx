@@ -1,7 +1,7 @@
 ---
 title: LinksAppointments
 description: Link data provider for appointments, handles both addressing by source or by destination (not both at the same time!)
-keywords: ['LinksAppointments archive provider']
+keywords: LinksAppointments archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -764,7 +764,7 @@ Link data provider for appointments, handles both addressing by source or by des
 ## Sample
 
 ```http!
-GET /api/v1/archive/LinksAppointments?$select=contact/restrictionAddress/state,contact/LastActivity,contact/saintTicketCategory,person/personUpdatedBy,person/createdByForm
+GET /api/v1/archive/LinksAppointments?$select=location,contact/restrictionAddress/line2,contact/NumberOfActivities,contact/saintActivityType,person/personExtra/y_rental/x_amount
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -1,7 +1,7 @@
 ---
 title: QuoteLineStaticSelection
 description: Static archive Provider for the Selection quoteline archive.
-keywords: ['QuoteLineStaticSelection archive provider']
+keywords: QuoteLineStaticSelection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -781,7 +781,7 @@ Static archive Provider for the Selection quoteline archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteLineStaticSelection?$select=alternative/version/quote/sale/currency,alternative/version/quote/sale/person/personExtra/x_person_datetime,alternative/version/quote/sale/contact/streetAddress/wgs84latitude,alternative/version/quote/sale/contact/contactAssociate/contactId,alternative/version/quote/sale/contact/contactExtra/x_contact_longtext
+GET /api/v1/archive/QuoteLineStaticSelection?$select=alternative/discountPercent,alternative/version/quote/registeredDate,alternative/version/quote/sale/stageId,alternative/version/quote/sale/person/useAsMailingAddress,alternative/version/quote/sale/person/correspondingAssociate/userName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

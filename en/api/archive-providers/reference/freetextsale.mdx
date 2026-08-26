@@ -1,7 +1,7 @@
 ---
 title: FreetextSale
 description: Archive provider for freetext search on the Sale entity.
-keywords: ['FreetextSale archive provider']
+keywords: FreetextSale archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -1170,7 +1170,7 @@ as well as before any ORDER BY, are applied.
 ## Sample
 
 ```http!
-GET /api/v1/archive/FreetextSale?$select=person/personInfo/infoText,person/personExtra/x_person_boolean,person/personAssociate/simultaneousEjUser,contact/deletedDate,contact/searchPhone/formattedNumber
+GET /api/v1/archive/FreetextSale?$select=person/personId,person/hasInfoText,project/projectAssociate/contactName,project/projectUdef/SuperOffice:7,saleStakeholder/person/personAssociateId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

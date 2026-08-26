@@ -1,7 +1,7 @@
 ---
 title: FreetextSelection
 description: Archive provider for freetext search on the Selection entity.
-keywords: ['FreetextSelection archive provider']
+keywords: FreetextSelection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -96,7 +96,7 @@ as well as before any ORDER BY, are applied.
 ## Sample
 
 ```http!
-GET /api/v1/archive/FreetextSelection?$select=lastLoadedByFullName,selectionAssociate/contactId
+GET /api/v1/archive/FreetextSelection?$select=lastLoadedBy,lastMembershipChangeBy,selectionAssociate/firstName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

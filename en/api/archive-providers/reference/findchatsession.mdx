@@ -1,7 +1,7 @@
 ---
 title: FindChatSession
 description: ChatSession provider for Find
-keywords: ['FindChatSession archive provider']
+keywords: FindChatSession archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -493,7 +493,7 @@ ChatSession provider for Find
 ## Sample
 
 ```http!
-GET /api/v1/archive/FindChatSession?$select=chatTopic/name,person/restrictionAddress/line3,contact/contactAssociate/ejUserId
+GET /api/v1/archive/FindChatSession?$select=person/rank,person/personAssociateId,person/correspondingAssociate/credentialType,contact/associateId,contact/number
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

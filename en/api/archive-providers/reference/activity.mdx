@@ -1,11 +1,10 @@
 ---
 title: Activity
 description: Activity archive provider that performs no filtering. This archive is not present anywhere in the standard six.web GUI.
-keywords: ['Activity archive provider']
+keywords: Activity archive provider
 generated: true
 content_type: reference
 envir: onsite, online
-mode: "wide"
 ---
 
 ## "Activity"
@@ -783,7 +782,7 @@ Activity archive provider that performs no filtering. This archive is not presen
 ## Sample
 
 ```http!
-GET /api/v1/archive/Activity?$select=person/personHasInterests,person/personAssociate/associateDbId,contact/restrictionAddress/county,associate/firstName,associate/contactId
+GET /api/v1/archive/Activity?$select=icon,person/personUrl/URLAddress,person/correspondingAssociate/locationAddress,contact/contactAssociate/personId,contact/contactAssociate/usergroupId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

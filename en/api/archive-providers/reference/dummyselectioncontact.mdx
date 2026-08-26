@@ -1,7 +1,7 @@
 ---
 title: DummySelectionContact
 description: 
-keywords: ['DummySelectionContact archive provider']
+keywords: DummySelectionContact archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -576,7 +576,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/DummySelectionContact?$select=contactUdef/SuperOffice:6,sourceRelation/number,appointment/associate/usergroup
+GET /api/v1/archive/DummySelectionContact?$select=sale/associate/assocTooltip,document/updatedDate,saintTicketStatus
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

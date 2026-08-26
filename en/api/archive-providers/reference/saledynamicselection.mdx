@@ -1,7 +1,7 @@
 ---
 title: SaleDynamicSelection
 description: Sale selection archive using the selectionId as criterionmapping.
-keywords: ['SaleDynamicSelection archive provider']
+keywords: SaleDynamicSelection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -1347,7 +1347,7 @@ Sale selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleDynamicSelection?$select=stakeholdersEnabled,person/personHasInterests,person/personRegisteredByFullName,person/personAssociate/firstName,person/personAssociate/ejDisplayName
+GET /api/v1/archive/SaleDynamicSelection?$select=person/personPrivate/formattedNumber,person/personAddress/addressId,person/personUdef/SuperOffice:4,contact/postAddress/city,contact/contactExtra/x_contact_float
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

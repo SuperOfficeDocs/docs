@@ -1,7 +1,7 @@
 ---
 title: ProjectSelectionCombinedV2
 description: Implementation of the provider for the combined selection
-keywords: ['ProjectSelectionCombinedV2 archive provider']
+keywords: ProjectSelectionCombinedV2 archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -824,7 +824,7 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectSelectionCombinedV2?$select=saintTicketCategory,appointment/priority,document/associate/credentialDisplayValue,projectMember/personCategoryGroup,projectMember/isStakeholder
+GET /api/v1/archive/ProjectSelectionCombinedV2?$select=projectAssociate/otherGroups,projectMember/birthMonth,projectMember/personUrl/URLDescription,projectMember/personExtra/x_person_user_relation,projectMember/streetAddress/zip
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

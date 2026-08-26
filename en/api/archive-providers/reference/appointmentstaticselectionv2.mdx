@@ -1,7 +1,7 @@
 ---
 title: AppointmentStaticSelectionV2
 description: 
-keywords: ['AppointmentStaticSelectionV2 archive provider']
+keywords: AppointmentStaticSelectionV2 archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -757,7 +757,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/AppointmentStaticSelectionV2?$select=isMilestone,contact/contactAssociate/isActiveText,person/personNoMail,person/phone/formattedNumber,person/personPrivate/description
+GET /api/v1/archive/AppointmentStaticSelectionV2?$select=contact/updatedByFullName,contact/postAddress/formattedMultiLineAddress,person/personAddress/county,person/personAssociate/personId,person/personAssociate/contactName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

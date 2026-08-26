@@ -1,7 +1,7 @@
 ---
 title: SaleShadowDynamicSelectionSingleCriteriaGroup
 description: Shadow contact provider for the dynamic sale provider.
-keywords: ['SaleShadowDynamicSelectionSingleCriteriaGroup archive provider']
+keywords: SaleShadowDynamicSelectionSingleCriteriaGroup archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -1345,7 +1345,7 @@ Shadow contact provider for the dynamic sale provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleShadowDynamicSelectionSingleCriteriaGroup?$select=heading,person/personHasInterests,person/hasStoreConsent,associate/firstName,appointment/priority
+GET /api/v1/archive/SaleShadowDynamicSelectionSingleCriteriaGroup?$select=person/personNumber,person/personExtra/x_person_hidden_integer,contact/contactAssociate/locationAddress,associate/ejStatus,project/projectUdef/SuperOffice:7
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
