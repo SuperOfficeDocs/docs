@@ -1,11 +1,11 @@
-# &lt;a id="SuperOffice_WebApi_AuthorizationUserToken"&gt;&lt;/a&gt; Class AuthorizationUserToken
+# <a id="SuperOffice_WebApi_AuthorizationUserToken"></a> Class AuthorizationUserToken
 
 Namespace: [SuperOffice.WebApi](SuperOffice.WebApi.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Username and password are used to get an access token from given username and password
 If the access token is invalidated, will try to authenticate with username and password to get a new access token.
-The current access token can be retrieved with &lt;pre&gt;&lt;code class="lang-csharp"&gt;var (_, accessToken) = authInstance.GetAuthorization();&lt;/code&gt;&lt;/pre&gt;
+The current access token can be retrieved with <pre><code class="lang-csharp">var (_, accessToken) = authInstance.GetAuthorization();</code></pre>
 
 ```csharp
 public class AuthorizationUserToken : IAuthorization
@@ -39,7 +39,7 @@ If the access token is omitted on construction, the first agent call will result
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_AuthorizationUserToken__ctor_System_String_System_String_System_String_"&gt;&lt;/a&gt; AuthorizationUserToken\(string, string, string\)
+### <a id="SuperOffice_WebApi_AuthorizationUserToken__ctor_System_String_System_String_System_String_"></a> AuthorizationUserToken\(string, string, string\)
 
 ```csharp
 public AuthorizationUserToken(string userName, string password, string accessToken = null)
@@ -61,9 +61,9 @@ Optional access token. Should be a 8A: style bearer token, same as what UserAgen
 
 ## Properties
 
-### &lt;a id="SuperOffice_WebApi_AuthorizationUserToken_RefreshAuthorizationAsync"&gt;&lt;/a&gt; RefreshAuthorizationAsync
+### <a id="SuperOffice_WebApi_AuthorizationUserToken_RefreshAuthorizationAsync"></a> RefreshAuthorizationAsync
 
-Try to refresh this &lt;xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instance.
+Try to refresh this <xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"></xref> instance.
 
 ```csharp
 public Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync { get; set; }
@@ -71,11 +71,11 @@ public Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync
 
 #### Property Value
 
- [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)&lt;ReAuthorizationArgs, [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;IAuthorization\&gt;\&gt;
+ [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)<ReAuthorizationArgs, [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<IAuthorization\>\>
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_AuthorizationUserToken_GetAuthorization"&gt;&lt;/a&gt; GetAuthorization\(\)
+### <a id="SuperOffice_WebApi_AuthorizationUserToken_GetAuthorization"></a> GetAuthorization\(\)
 
 ```csharp
 public AuthenticationHeaderValue GetAuthorization()

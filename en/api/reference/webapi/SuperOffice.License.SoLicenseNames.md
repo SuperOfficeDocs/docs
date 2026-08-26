@@ -202,11 +202,24 @@ public const string AiFormCopilot = "superoffice.ai-formcopilot"
 
 ### <a id="SuperOffice_License_SoLicenseNames_AiMcp"></a> AiMcp
 
-superoffice.ai-mcp: Enable MCP feature
+superoffice.ai-mcp: Enable MCP feature - read-only functions
 Site license.
 
 ```csharp
 public const string AiMcp = "superoffice.ai-mcp"
+```
+
+#### Field Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+### <a id="SuperOffice_License_SoLicenseNames_AiMcpPlus"></a> AiMcpPlus
+
+superoffice.ai-mcp-plus: Enable MCP Plus feature - write/update functions
+Site license.
+
+```csharp
+public const string AiMcpPlus = "superoffice.ai-mcp-plus"
 ```
 
 #### Field Value

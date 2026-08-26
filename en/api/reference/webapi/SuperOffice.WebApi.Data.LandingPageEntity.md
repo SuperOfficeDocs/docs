@@ -119,6 +119,18 @@ public virtual int SelectionId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
+### <a id="SuperOffice_WebApi_Data_LandingPageEntity_Tabs"></a> Tabs
+
+All tabs on this landing page (pinned and open), ordered by rank. Supersedes PinnedSelections/PinnedEntities and additionally carries open-state and provider tabs.
+
+```csharp
+public virtual LandingPageTab[] Tabs { get; set; }
+```
+
+#### Property Value
+
+ [LandingPageTab](SuperOffice.WebApi.Data.LandingPageTab.md)\[\]
+
 ## See Also
 
 [ConfigurationAgent](SuperOffice.WebApi.Agents.ConfigurationAgent.md)

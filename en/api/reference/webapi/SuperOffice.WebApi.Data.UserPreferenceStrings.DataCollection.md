@@ -26,6 +26,30 @@ public static class UserPreferenceStrings.DataCollection
 
 ## Fields
 
+### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_DataCollection_BirthdayAssociateNotifier"></a> BirthdayAssociateNotifier
+
+Opt-in preference for UpcomingBirthdayAssociateNotifierNightlyJob
+
+```csharp
+public const string BirthdayAssociateNotifier = "BirthdayAssociateNotifier"
+```
+
+#### Field Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_DataCollection_BirthdayContactNotifier"></a> BirthdayContactNotifier
+
+Opt-in preference for UpcomingBirthdayContactNotifierNightlyJob
+
+```csharp
+public const string BirthdayContactNotifier = "BirthdayContactNotifier"
+```
+
+#### Field Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
 ### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_DataCollection_CollectionUrl"></a> CollectionUrl
 
 Opt-in preference for UserSync
@@ -92,6 +116,18 @@ Data additions for specific tables: semicolon-separated list of table names; ini
 
 ```csharp
 public const string DataAddTables = "DataAddTables"
+```
+
+#### Field Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_DataCollection_NewsfeedCleanup"></a> NewsfeedCleanup
+
+Opt-in preference for NewsfeedCleanupNightlyJob
+
+```csharp
+public const string NewsfeedCleanup = "NewsfeedCleanup"
 ```
 
 #### Field Value

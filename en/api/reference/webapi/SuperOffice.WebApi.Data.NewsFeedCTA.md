@@ -39,7 +39,7 @@ public NewsFeedCTA()
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedCTA_CtaFlavor"></a> CtaFlavor
 
-The flavor of the CTA, which determines the style the CTA button renders its type. Info/Warning/Error/Accept/Reject
+The flavor of the CTA, which determines the style/color/icon the CTA button renders with. Info/Warning/Error/Accept/Reject
 NULL if unknown enum value.
 
 ```csharp
@@ -57,7 +57,7 @@ public CtaFlavor? CtaFlavor { get; set; }
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedCTA_CtaFlavor_String"></a> CtaFlavor\_String
 
-The flavor of the CTA, which determines the style the CTA button renders its type. Info/Warning/Error/Accept/Reject
+The flavor of the CTA, which determines the style/color/icon the CTA button renders with. Info/Warning/Error/Accept/Reject
 Raw string enum value.
 
 ```csharp
