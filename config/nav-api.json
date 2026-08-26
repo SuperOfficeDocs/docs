@@ -137,7 +137,13 @@
       {
         "group": "Reference",
         "pages": [
-          "en/api/reference/restful/index",
+          {
+            "group": "WebAPI class reference",
+            "root": "en/api/reference/webapi/index",
+            "pages": {
+              "$ref": "./nav-api-webapi.json"
+            }
+          },
           {
             "group": "HTTP RPC Agent API",
             "pages": [
