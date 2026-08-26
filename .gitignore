@@ -17,3 +17,4 @@ vale/.vale-config/
 tools/benchmarks/node_modules/
 tools/benchmarks/.lighthouseci/
 tools/benchmarks/*.log
+.scratch/
