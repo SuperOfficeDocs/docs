@@ -123,6 +123,10 @@ A page that never moved needs a self-redirect instead - `source` and `destinatio
 
 This is expected and safe, not the `/index` self-redirect loop covered in the danger callout above - that loop only happens when a source ending in `/index` (or a trailing slash) points at its own bare parent path. A plain `.html`-suffixed source pointing at the same page without `/index` is a different shape and doesn't trigger it.
 
+<Note>
+**Don't self-redirect a `snippets/` file.** Files under a `snippets/` folder are MDX-imported into other pages, not standalone routable pages themselves - Mintlify never renders them at their own URL, so a `.html` self-redirect for one has no real destination to land on. A first pass at the "current pages" self-redirect backfill (#341) mistakenly included these before the mistake was caught and reverted (528 entries).
+</Note>
+
 Three shapes are already covered and don't need a duplicate:
 
 * **Wildcard sources** (`/prefix/*`) - `*` already matches the `.html` form too.
