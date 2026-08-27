@@ -189,6 +189,7 @@
           "integrations/zapier/howto/datetime",
           {
             "group": "Actions",
+            "root": "integrations/zapier/howto/actions/index",
             "pages": [
               "integrations/zapier/howto/actions/create-appointment",
               "integrations/zapier/howto/actions/create-company",

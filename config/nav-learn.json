@@ -215,6 +215,7 @@
             "pages": [
               {
                 "group": "Reference",
+                "root": "en/document/templates/variables/index",
                 "pages": [
                   "en/document/templates/variables/from-company-card",
                   "en/document/templates/variables/from-senders-company-card",
@@ -267,6 +268,7 @@
       },
       {
         "group": "Technical reference",
+        "root": "en/document/library/it/index",
         "pages": [
           "en/document/library/it/odf"
         ]
