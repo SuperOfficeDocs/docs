@@ -160,42 +160,6 @@
     "destination": "/da/admin/import/settings"
   },
   {
-    "source": "/da/admin/import/snippets/adjust-email-only.html",
-    "destination": "/da/admin/import/snippets/adjust-email-only"
-  },
-  {
-    "source": "/da/admin/import/snippets/caution-backup-before-import.html",
-    "destination": "/da/admin/import/snippets/caution-backup-before-import"
-  },
-  {
-    "source": "/da/admin/import/snippets/configure-import-settings.html",
-    "destination": "/da/admin/import/snippets/configure-import-settings"
-  },
-  {
-    "source": "/da/admin/import/snippets/import-complete.html",
-    "destination": "/da/admin/import/snippets/import-complete"
-  },
-  {
-    "source": "/da/admin/import/snippets/missing-webtools.html",
-    "destination": "/da/admin/import/snippets/missing-webtools"
-  },
-  {
-    "source": "/da/admin/import/snippets/open-import.html",
-    "destination": "/da/admin/import/snippets/open-import"
-  },
-  {
-    "source": "/da/admin/import/snippets/step-concent-comment.html",
-    "destination": "/da/admin/import/snippets/step-concent-comment"
-  },
-  {
-    "source": "/da/admin/import/snippets/step-preview-import.html",
-    "destination": "/da/admin/import/snippets/step-preview-import"
-  },
-  {
-    "source": "/da/admin/import/snippets/troubleshoot-import.html",
-    "destination": "/da/admin/import/snippets/troubleshoot-import"
-  },
-  {
     "source": "/da/admin/learn/add-system-event",
     "destination": "https://help.superoffice.com/docs/11/da/admin/onsite/add-system-event.html"
   },
@@ -692,22 +656,6 @@
     "destination": "/da/admin/lists/restore"
   },
   {
-    "source": "/da/admin/lists/snippets/edit-list-item.html",
-    "destination": "/da/admin/lists/snippets/edit-list-item"
-  },
-  {
-    "source": "/da/admin/lists/snippets/expand-list.html",
-    "destination": "/da/admin/lists/snippets/expand-list"
-  },
-  {
-    "source": "/da/admin/lists/snippets/goto-lists.html",
-    "destination": "/da/admin/lists/snippets/goto-lists"
-  },
-  {
-    "source": "/da/admin/lists/snippets/save-or-cancel.html",
-    "destination": "/da/admin/lists/snippets/save-or-cancel"
-  },
-  {
     "source": "/da/admin/lists/specialized-lists.html",
     "destination": "/da/admin/lists/specialized-lists"
   },
@@ -1176,22 +1124,6 @@
     "destination": "/da/admin/user-management/role/update-role"
   },
   {
-    "source": "/da/admin/user-management/snippets/add-remove-right.html",
-    "destination": "/da/admin/user-management/snippets/add-remove-right"
-  },
-  {
-    "source": "/da/admin/user-management/snippets/goto-users.html",
-    "destination": "/da/admin/user-management/snippets/goto-users"
-  },
-  {
-    "source": "/da/admin/user-management/snippets/note-anon-req.html",
-    "destination": "/da/admin/user-management/snippets/note-anon-req"
-  },
-  {
-    "source": "/da/admin/user-management/snippets/open-roles.html",
-    "destination": "/da/admin/user-management/snippets/open-roles"
-  },
-  {
     "source": "/da/admin/user-management/update-user.html",
     "destination": "/da/admin/user-management/update-user"
   },
@@ -1600,14 +1532,6 @@
     "destination": "/da/custom-objects/admin/show-extra-field-on-request-details"
   },
   {
-    "source": "/da/custom-objects/admin/snippets/goto-fields.html",
-    "destination": "/da/custom-objects/admin/snippets/goto-fields"
-  },
-  {
-    "source": "/da/custom-objects/admin/snippets/goto-tables.html",
-    "destination": "/da/custom-objects/admin/snippets/goto-tables"
-  },
-  {
     "source": "/da/custom-objects/learn/extra-field.html",
     "destination": "/da/custom-objects/learn/extra-field"
   },
@@ -1840,10 +1764,6 @@
     "destination": "/da/customization/screen-designer/admin/working-with-tabs"
   },
   {
-    "source": "/da/customization/snippets/web-panels-and-https.html",
-    "destination": "/da/customization/snippets/web-panels-and-https"
-  },
-  {
     "source": "/da/customization/web-panels/admin/add-web-panel.html",
     "destination": "/da/customization/web-panels/admin/add-web-panel"
   },
@@ -2040,18 +1960,6 @@
     "destination": "/da/diary/learn/set-alarm"
   },
   {
-    "source": "/da/diary/learn/snippets/caution-do-not-change-recurring-date.html",
-    "destination": "/da/diary/learn/snippets/caution-do-not-change-recurring-date"
-  },
-  {
-    "source": "/da/diary/learn/snippets/note-edit-followup.html",
-    "destination": "/da/diary/learn/snippets/note-edit-followup"
-  },
-  {
-    "source": "/da/diary/learn/snippets/note-repetition.html",
-    "destination": "/da/diary/learn/snippets/note-repetition"
-  },
-  {
     "source": "/da/diary/learn/video-meetings.html",
     "destination": "/da/diary/learn/video-meetings"
   },
@@ -2098,10 +2006,6 @@
   {
     "source": "/da/document/learn/send-as-email.html",
     "destination": "/da/document/learn/send-as-email"
-  },
-  {
-    "source": "/da/document/learn/snippets/webtools-or-sharepoint.html",
-    "destination": "/da/document/learn/snippets/webtools-or-sharepoint"
   },
   {
     "source": "/da/document/learn/template-variables",
@@ -2290,14 +2194,6 @@
   {
     "source": "/da/email/admin/mailbox/delete-mailbox.html",
     "destination": "/da/email/admin/mailbox/delete-mailbox"
-  },
-  {
-    "source": "/da/email/admin/mailbox/snippets/goto-email.html",
-    "destination": "/da/email/admin/mailbox/snippets/goto-email"
-  },
-  {
-    "source": "/da/email/admin/mailbox/snippets/step-set-language.html",
-    "destination": "/da/email/admin/mailbox/snippets/step-set-language"
   },
   {
     "source": "/da/email/gmail-link/learn/*",
@@ -2584,10 +2480,6 @@
     "destination": "/da/localization/learn/translate-fields"
   },
   {
-    "source": "/da/globalization-and-localization/snippets/table-legacy-language-codes.html",
-    "destination": "/da/globalization-and-localization/snippets/table-legacy-language-codes"
-  },
-  {
     "source": "/da/knowledge-base/learn/email-addresses.html",
     "destination": "/da/knowledge-base/learn/email-addresses"
   },
@@ -2832,66 +2724,6 @@
     "destination": "/da/learn/section-tabs/send-email"
   },
   {
-    "source": "/da/learn/snippets/faq-vs-reply-template.html",
-    "destination": "/da/learn/snippets/faq-vs-reply-template"
-  },
-  {
-    "source": "/da/learn/snippets/goto-company.html",
-    "destination": "/da/learn/snippets/goto-company"
-  },
-  {
-    "source": "/da/learn/snippets/goto-contact.html",
-    "destination": "/da/learn/snippets/goto-contact"
-  },
-  {
-    "source": "/da/learn/snippets/goto-sm.html",
-    "destination": "/da/learn/snippets/goto-sm"
-  },
-  {
-    "source": "/da/learn/snippets/image-type-and-size.html",
-    "destination": "/da/learn/snippets/image-type-and-size"
-  },
-  {
-    "source": "/da/learn/snippets/more-tab.html",
-    "destination": "/da/learn/snippets/more-tab"
-  },
-  {
-    "source": "/da/learn/snippets/more-udef.html",
-    "destination": "/da/learn/snippets/more-udef"
-  },
-  {
-    "source": "/da/learn/snippets/note-insufficient-rights.html",
-    "destination": "/da/learn/snippets/note-insufficient-rights"
-  },
-  {
-    "source": "/da/learn/snippets/note-req-manage-entities.html",
-    "destination": "/da/learn/snippets/note-req-manage-entities"
-  },
-  {
-    "source": "/da/learn/snippets/note-restore.html",
-    "destination": "/da/learn/snippets/note-restore"
-  },
-  {
-    "source": "/da/learn/snippets/req-admin.html",
-    "destination": "/da/learn/snippets/req-admin"
-  },
-  {
-    "source": "/da/learn/snippets/select-action-on-activity.html",
-    "destination": "/da/learn/snippets/select-action-on-activity"
-  },
-  {
-    "source": "/da/learn/snippets/table-relations-tab-columns.html",
-    "destination": "/da/learn/snippets/table-relations-tab-columns"
-  },
-  {
-    "source": "/da/learn/snippets/tip-configure-columns.html",
-    "destination": "/da/learn/snippets/tip-configure-columns"
-  },
-  {
-    "source": "/da/learn/snippets/tip-deletion.html",
-    "destination": "/da/learn/snippets/tip-deletion"
-  },
-  {
     "source": "/da/localization/admin/add-customer-language.html",
     "destination": "/da/localization/admin/add-customer-language"
   },
@@ -3056,10 +2888,6 @@
     "destination": "/en/marketing/forms/learn/recaptcha"
   },
   {
-    "source": "/da/marketing/forms/learn/snippets/tip-show-toolbar-open-editor.html",
-    "destination": "/da/marketing/forms/learn/snippets/tip-show-toolbar-open-editor"
-  },
-  {
     "source": "/da/marketing/forms/learn/submissions/index",
     "destination": "/da/marketing/forms/learn/index"
   },
@@ -3144,14 +2972,6 @@
     "destination": "/da/marketing/learn/index"
   },
   {
-    "source": "/da/marketing/learn/snippets/mailing-settings-sms.html",
-    "destination": "/da/marketing/learn/snippets/mailing-settings-sms"
-  },
-  {
-    "source": "/da/marketing/learn/snippets/mailing-smtp-fields.html",
-    "destination": "/da/marketing/learn/snippets/mailing-smtp-fields"
-  },
-  {
     "source": "/da/marketing/learn/work-with-messages-and-templates",
     "destination": "/da/marketing/learn/message-templates"
   },
@@ -3178,34 +2998,6 @@
   {
     "source": "/da/marketing/mailing/learn/create/send-test-email.html",
     "destination": "/da/marketing/mailing/learn/create/send-test-email"
-  },
-  {
-    "source": "/da/marketing/mailing/learn/create/snippets/mailing-choose-template.html",
-    "destination": "/da/marketing/mailing/learn/create/snippets/mailing-choose-template"
-  },
-  {
-    "source": "/da/marketing/mailing/learn/create/snippets/mailing-tracking-options.html",
-    "destination": "/da/marketing/mailing/learn/create/snippets/mailing-tracking-options"
-  },
-  {
-    "source": "/da/marketing/mailing/learn/create/snippets/spf-look-up.html",
-    "destination": "/da/marketing/mailing/learn/create/snippets/spf-look-up"
-  },
-  {
-    "source": "/da/marketing/mailing/learn/create/snippets/step-3-content-email.html",
-    "destination": "/da/marketing/mailing/learn/create/snippets/step-3-content-email"
-  },
-  {
-    "source": "/da/marketing/mailing/learn/create/snippets/step-4-recipients.html",
-    "destination": "/da/marketing/mailing/learn/create/snippets/step-4-recipients"
-  },
-  {
-    "source": "/da/marketing/mailing/learn/create/snippets/step-5-confirm-and-send-mailing.html",
-    "destination": "/da/marketing/mailing/learn/create/snippets/step-5-confirm-and-send-mailing"
-  },
-  {
-    "source": "/da/marketing/mailing/learn/create/snippets/tip-mailing-save-draft.html",
-    "destination": "/da/marketing/mailing/learn/create/snippets/tip-mailing-save-draft"
   },
   {
     "source": "/da/marketing/mailing/learn/create/tutorial-document-mailing.html",
@@ -4304,10 +4096,6 @@
     "destination": "https://help.superoffice.com/docs/11/da/search-options/admin/regenerate-index.html"
   },
   {
-    "source": "/da/search-options/admin/snippets/goto-freetext.html",
-    "destination": "/da/search-options/admin/snippets/goto-freetext"
-  },
-  {
     "source": "/da/search-options/admin/stopwords.html",
     "destination": "/da/search-options/admin/stopwords"
   },
@@ -4330,18 +4118,6 @@
   {
     "source": "/da/search-options/learn/search-criteria.html",
     "destination": "/da/search-options/learn/search-criteria"
-  },
-  {
-    "source": "/da/search-options/learn/snippets/clear-criteria.html",
-    "destination": "/da/search-options/learn/snippets/clear-criteria"
-  },
-  {
-    "source": "/da/search-options/learn/snippets/run-search.html",
-    "destination": "/da/search-options/learn/snippets/run-search"
-  },
-  {
-    "source": "/da/search-options/learn/snippets/select-field.html",
-    "destination": "/da/search-options/learn/snippets/select-field"
   },
   {
     "source": "/da/search-options/selection/learn/add-remove-members-static.html",
@@ -4460,10 +4236,6 @@
     "destination": "/da/search-options/selection/learn/index"
   },
   {
-    "source": "/da/search-options/selection/learn/snippets/steps-start-task.html",
-    "destination": "/da/search-options/selection/learn/snippets/steps-start-task"
-  },
-  {
     "source": "/da/search-options/selection/learn/static-selections",
     "destination": "/da/search-options/selection/learn/index"
   },
@@ -4556,70 +4328,6 @@
     "destination": "/da/security/privacy/learn/send-privacy-confirmation-email"
   },
   {
-    "source": "/da/snippets/lim-starter.html",
-    "destination": "/da/snippets/lim-starter"
-  },
-  {
-    "source": "/da/snippets/note-req-project-mgt.html",
-    "destination": "/da/snippets/note-req-project-mgt"
-  },
-  {
-    "source": "/da/snippets/note-req-saint.html",
-    "destination": "/da/snippets/note-req-saint"
-  },
-  {
-    "source": "/da/snippets/req-2025-packaging.html",
-    "destination": "/da/snippets/req-2025-packaging"
-  },
-  {
-    "source": "/da/snippets/req-cep.html",
-    "destination": "/da/snippets/req-cep"
-  },
-  {
-    "source": "/da/snippets/req-core-transition-sales.html",
-    "destination": "/da/snippets/req-core-transition-sales"
-  },
-  {
-    "source": "/da/snippets/req-core.html",
-    "destination": "/da/snippets/req-core"
-  },
-  {
-    "source": "/da/snippets/req-dev-tools-transition.html",
-    "destination": "/da/snippets/req-dev-tools-transition"
-  },
-  {
-    "source": "/da/snippets/req-dev-tools.html",
-    "destination": "/da/snippets/req-dev-tools"
-  },
-  {
-    "source": "/da/snippets/req-growth-transition-sales.html",
-    "destination": "/da/snippets/req-growth-transition-sales"
-  },
-  {
-    "source": "/da/snippets/req-growth-transition-service.html",
-    "destination": "/da/snippets/req-growth-transition-service"
-  },
-  {
-    "source": "/da/snippets/req-growth.html",
-    "destination": "/da/snippets/req-growth"
-  },
-  {
-    "source": "/da/snippets/req-plus-transition-marketing.html",
-    "destination": "/da/snippets/req-plus-transition-marketing"
-  },
-  {
-    "source": "/da/snippets/req-plus.html",
-    "destination": "/da/snippets/req-plus"
-  },
-  {
-    "source": "/da/snippets/req-starter-transition-sales.html",
-    "destination": "/da/snippets/req-starter-transition-sales"
-  },
-  {
-    "source": "/da/snippets/starter-transition-service.html",
-    "destination": "/da/snippets/starter-transition-service"
-  },
-  {
     "source": "/da/ui/blogic/learn/extra-menus/actions.html",
     "destination": "/da/ui/blogic/learn/extra-menus/actions"
   },
@@ -4654,14 +4362,6 @@
   {
     "source": "/da/ui/blogic/learn/screen-properties.html",
     "destination": "/da/ui/blogic/learn/screen-properties"
-  },
-  {
-    "source": "/da/ui/blogic/learn/snippets/legacy-extra-menus.html",
-    "destination": "/da/ui/blogic/learn/snippets/legacy-extra-menus"
-  },
-  {
-    "source": "/da/ui/blogic/learn/snippets/legacy-profiles.html",
-    "destination": "/da/ui/blogic/learn/snippets/legacy-profiles"
   },
   {
     "source": "/da/ui/screen-designer/learn/add-new-layout",
@@ -4838,42 +4538,6 @@
   {
     "source": "/de/admin/import/settings.html",
     "destination": "/de/admin/import/settings"
-  },
-  {
-    "source": "/de/admin/import/snippets/adjust-email-only.html",
-    "destination": "/de/admin/import/snippets/adjust-email-only"
-  },
-  {
-    "source": "/de/admin/import/snippets/caution-backup-before-import.html",
-    "destination": "/de/admin/import/snippets/caution-backup-before-import"
-  },
-  {
-    "source": "/de/admin/import/snippets/configure-import-settings.html",
-    "destination": "/de/admin/import/snippets/configure-import-settings"
-  },
-  {
-    "source": "/de/admin/import/snippets/import-complete.html",
-    "destination": "/de/admin/import/snippets/import-complete"
-  },
-  {
-    "source": "/de/admin/import/snippets/missing-webtools.html",
-    "destination": "/de/admin/import/snippets/missing-webtools"
-  },
-  {
-    "source": "/de/admin/import/snippets/open-import.html",
-    "destination": "/de/admin/import/snippets/open-import"
-  },
-  {
-    "source": "/de/admin/import/snippets/step-concent-comment.html",
-    "destination": "/de/admin/import/snippets/step-concent-comment"
-  },
-  {
-    "source": "/de/admin/import/snippets/step-preview-import.html",
-    "destination": "/de/admin/import/snippets/step-preview-import"
-  },
-  {
-    "source": "/de/admin/import/snippets/troubleshoot-import.html",
-    "destination": "/de/admin/import/snippets/troubleshoot-import"
   },
   {
     "source": "/de/admin/learn/add-system-event",
@@ -5372,22 +5036,6 @@
     "destination": "/de/admin/lists/restore"
   },
   {
-    "source": "/de/admin/lists/snippets/edit-list-item.html",
-    "destination": "/de/admin/lists/snippets/edit-list-item"
-  },
-  {
-    "source": "/de/admin/lists/snippets/expand-list.html",
-    "destination": "/de/admin/lists/snippets/expand-list"
-  },
-  {
-    "source": "/de/admin/lists/snippets/goto-lists.html",
-    "destination": "/de/admin/lists/snippets/goto-lists"
-  },
-  {
-    "source": "/de/admin/lists/snippets/save-or-cancel.html",
-    "destination": "/de/admin/lists/snippets/save-or-cancel"
-  },
-  {
     "source": "/de/admin/lists/specialized-lists.html",
     "destination": "/de/admin/lists/specialized-lists"
   },
@@ -5856,22 +5504,6 @@
     "destination": "/de/admin/user-management/role/update-role"
   },
   {
-    "source": "/de/admin/user-management/snippets/add-remove-right.html",
-    "destination": "/de/admin/user-management/snippets/add-remove-right"
-  },
-  {
-    "source": "/de/admin/user-management/snippets/goto-users.html",
-    "destination": "/de/admin/user-management/snippets/goto-users"
-  },
-  {
-    "source": "/de/admin/user-management/snippets/note-anon-req.html",
-    "destination": "/de/admin/user-management/snippets/note-anon-req"
-  },
-  {
-    "source": "/de/admin/user-management/snippets/open-roles.html",
-    "destination": "/de/admin/user-management/snippets/open-roles"
-  },
-  {
     "source": "/de/admin/user-management/update-user.html",
     "destination": "/de/admin/user-management/update-user"
   },
@@ -6280,14 +5912,6 @@
     "destination": "/de/custom-objects/admin/show-extra-field-on-request-details"
   },
   {
-    "source": "/de/custom-objects/admin/snippets/goto-fields.html",
-    "destination": "/de/custom-objects/admin/snippets/goto-fields"
-  },
-  {
-    "source": "/de/custom-objects/admin/snippets/goto-tables.html",
-    "destination": "/de/custom-objects/admin/snippets/goto-tables"
-  },
-  {
     "source": "/de/custom-objects/learn/extra-field.html",
     "destination": "/de/custom-objects/learn/extra-field"
   },
@@ -6520,10 +6144,6 @@
     "destination": "/de/customization/screen-designer/admin/working-with-tabs"
   },
   {
-    "source": "/de/customization/snippets/web-panels-and-https.html",
-    "destination": "/de/customization/snippets/web-panels-and-https"
-  },
-  {
     "source": "/de/customization/web-panels/admin/add-web-panel.html",
     "destination": "/de/customization/web-panels/admin/add-web-panel"
   },
@@ -6720,18 +6340,6 @@
     "destination": "/de/diary/learn/set-alarm"
   },
   {
-    "source": "/de/diary/learn/snippets/caution-do-not-change-recurring-date.html",
-    "destination": "/de/diary/learn/snippets/caution-do-not-change-recurring-date"
-  },
-  {
-    "source": "/de/diary/learn/snippets/note-edit-followup.html",
-    "destination": "/de/diary/learn/snippets/note-edit-followup"
-  },
-  {
-    "source": "/de/diary/learn/snippets/note-repetition.html",
-    "destination": "/de/diary/learn/snippets/note-repetition"
-  },
-  {
     "source": "/de/diary/learn/video-meetings.html",
     "destination": "/de/diary/learn/video-meetings"
   },
@@ -6778,10 +6386,6 @@
   {
     "source": "/de/document/learn/send-as-email.html",
     "destination": "/de/document/learn/send-as-email"
-  },
-  {
-    "source": "/de/document/learn/snippets/webtools-or-sharepoint.html",
-    "destination": "/de/document/learn/snippets/webtools-or-sharepoint"
   },
   {
     "source": "/de/document/learn/template-variables",
@@ -6970,14 +6574,6 @@
   {
     "source": "/de/email/admin/mailbox/delete-mailbox.html",
     "destination": "/de/email/admin/mailbox/delete-mailbox"
-  },
-  {
-    "source": "/de/email/admin/mailbox/snippets/goto-email.html",
-    "destination": "/de/email/admin/mailbox/snippets/goto-email"
-  },
-  {
-    "source": "/de/email/admin/mailbox/snippets/step-set-language.html",
-    "destination": "/de/email/admin/mailbox/snippets/step-set-language"
   },
   {
     "source": "/de/email/gmail-link/learn/*",
@@ -7264,10 +6860,6 @@
     "destination": "/de/localization/learn/translate-fields"
   },
   {
-    "source": "/de/globalization-and-localization/snippets/table-legacy-language-codes.html",
-    "destination": "/de/globalization-and-localization/snippets/table-legacy-language-codes"
-  },
-  {
     "source": "/de/knowledge-base/learn/email-addresses.html",
     "destination": "/de/knowledge-base/learn/email-addresses"
   },
@@ -7512,66 +7104,6 @@
     "destination": "/de/learn/section-tabs/send-email"
   },
   {
-    "source": "/de/learn/snippets/faq-vs-reply-template.html",
-    "destination": "/de/learn/snippets/faq-vs-reply-template"
-  },
-  {
-    "source": "/de/learn/snippets/goto-company.html",
-    "destination": "/de/learn/snippets/goto-company"
-  },
-  {
-    "source": "/de/learn/snippets/goto-contact.html",
-    "destination": "/de/learn/snippets/goto-contact"
-  },
-  {
-    "source": "/de/learn/snippets/goto-sm.html",
-    "destination": "/de/learn/snippets/goto-sm"
-  },
-  {
-    "source": "/de/learn/snippets/image-type-and-size.html",
-    "destination": "/de/learn/snippets/image-type-and-size"
-  },
-  {
-    "source": "/de/learn/snippets/more-tab.html",
-    "destination": "/de/learn/snippets/more-tab"
-  },
-  {
-    "source": "/de/learn/snippets/more-udef.html",
-    "destination": "/de/learn/snippets/more-udef"
-  },
-  {
-    "source": "/de/learn/snippets/note-insufficient-rights.html",
-    "destination": "/de/learn/snippets/note-insufficient-rights"
-  },
-  {
-    "source": "/de/learn/snippets/note-req-manage-entities.html",
-    "destination": "/de/learn/snippets/note-req-manage-entities"
-  },
-  {
-    "source": "/de/learn/snippets/note-restore.html",
-    "destination": "/de/learn/snippets/note-restore"
-  },
-  {
-    "source": "/de/learn/snippets/req-admin.html",
-    "destination": "/de/learn/snippets/req-admin"
-  },
-  {
-    "source": "/de/learn/snippets/select-action-on-activity.html",
-    "destination": "/de/learn/snippets/select-action-on-activity"
-  },
-  {
-    "source": "/de/learn/snippets/table-relations-tab-columns.html",
-    "destination": "/de/learn/snippets/table-relations-tab-columns"
-  },
-  {
-    "source": "/de/learn/snippets/tip-configure-columns.html",
-    "destination": "/de/learn/snippets/tip-configure-columns"
-  },
-  {
-    "source": "/de/learn/snippets/tip-deletion.html",
-    "destination": "/de/learn/snippets/tip-deletion"
-  },
-  {
     "source": "/de/localization/admin/add-customer-language.html",
     "destination": "/de/localization/admin/add-customer-language"
   },
@@ -7736,10 +7268,6 @@
     "destination": "/en/marketing/forms/learn/recaptcha"
   },
   {
-    "source": "/de/marketing/forms/learn/snippets/tip-show-toolbar-open-editor.html",
-    "destination": "/de/marketing/forms/learn/snippets/tip-show-toolbar-open-editor"
-  },
-  {
     "source": "/de/marketing/forms/learn/submissions/index",
     "destination": "/de/marketing/forms/learn/index"
   },
@@ -7824,14 +7352,6 @@
     "destination": "/de/marketing/learn/index"
   },
   {
-    "source": "/de/marketing/learn/snippets/mailing-settings-sms.html",
-    "destination": "/de/marketing/learn/snippets/mailing-settings-sms"
-  },
-  {
-    "source": "/de/marketing/learn/snippets/mailing-smtp-fields.html",
-    "destination": "/de/marketing/learn/snippets/mailing-smtp-fields"
-  },
-  {
     "source": "/de/marketing/learn/work-with-messages-and-templates",
     "destination": "/de/marketing/learn/message-templates"
   },
@@ -7858,34 +7378,6 @@
   {
     "source": "/de/marketing/mailing/learn/create/send-test-email.html",
     "destination": "/de/marketing/mailing/learn/create/send-test-email"
-  },
-  {
-    "source": "/de/marketing/mailing/learn/create/snippets/mailing-choose-template.html",
-    "destination": "/de/marketing/mailing/learn/create/snippets/mailing-choose-template"
-  },
-  {
-    "source": "/de/marketing/mailing/learn/create/snippets/mailing-tracking-options.html",
-    "destination": "/de/marketing/mailing/learn/create/snippets/mailing-tracking-options"
-  },
-  {
-    "source": "/de/marketing/mailing/learn/create/snippets/spf-look-up.html",
-    "destination": "/de/marketing/mailing/learn/create/snippets/spf-look-up"
-  },
-  {
-    "source": "/de/marketing/mailing/learn/create/snippets/step-3-content-email.html",
-    "destination": "/de/marketing/mailing/learn/create/snippets/step-3-content-email"
-  },
-  {
-    "source": "/de/marketing/mailing/learn/create/snippets/step-4-recipients.html",
-    "destination": "/de/marketing/mailing/learn/create/snippets/step-4-recipients"
-  },
-  {
-    "source": "/de/marketing/mailing/learn/create/snippets/step-5-confirm-and-send-mailing.html",
-    "destination": "/de/marketing/mailing/learn/create/snippets/step-5-confirm-and-send-mailing"
-  },
-  {
-    "source": "/de/marketing/mailing/learn/create/snippets/tip-mailing-save-draft.html",
-    "destination": "/de/marketing/mailing/learn/create/snippets/tip-mailing-save-draft"
   },
   {
     "source": "/de/marketing/mailing/learn/create/tutorial-document-mailing.html",
@@ -8976,10 +8468,6 @@
     "destination": "https://help.superoffice.com/docs/11/de/search-options/admin/regenerate-index.html"
   },
   {
-    "source": "/de/search-options/admin/snippets/goto-freetext.html",
-    "destination": "/de/search-options/admin/snippets/goto-freetext"
-  },
-  {
     "source": "/de/search-options/admin/stopwords.html",
     "destination": "/de/search-options/admin/stopwords"
   },
@@ -9002,18 +8490,6 @@
   {
     "source": "/de/search-options/learn/search-criteria.html",
     "destination": "/de/search-options/learn/search-criteria"
-  },
-  {
-    "source": "/de/search-options/learn/snippets/clear-criteria.html",
-    "destination": "/de/search-options/learn/snippets/clear-criteria"
-  },
-  {
-    "source": "/de/search-options/learn/snippets/run-search.html",
-    "destination": "/de/search-options/learn/snippets/run-search"
-  },
-  {
-    "source": "/de/search-options/learn/snippets/select-field.html",
-    "destination": "/de/search-options/learn/snippets/select-field"
   },
   {
     "source": "/de/search-options/selection/learn/add-remove-members-static.html",
@@ -9132,10 +8608,6 @@
     "destination": "/de/search-options/selection/learn/index"
   },
   {
-    "source": "/de/search-options/selection/learn/snippets/steps-start-task.html",
-    "destination": "/de/search-options/selection/learn/snippets/steps-start-task"
-  },
-  {
     "source": "/de/search-options/selection/learn/static-selections",
     "destination": "/de/search-options/selection/learn/index"
   },
@@ -9228,70 +8700,6 @@
     "destination": "/de/security/privacy/learn/send-privacy-confirmation-email"
   },
   {
-    "source": "/de/snippets/lim-starter.html",
-    "destination": "/de/snippets/lim-starter"
-  },
-  {
-    "source": "/de/snippets/note-req-project-mgt.html",
-    "destination": "/de/snippets/note-req-project-mgt"
-  },
-  {
-    "source": "/de/snippets/note-req-saint.html",
-    "destination": "/de/snippets/note-req-saint"
-  },
-  {
-    "source": "/de/snippets/req-2025-packaging.html",
-    "destination": "/de/snippets/req-2025-packaging"
-  },
-  {
-    "source": "/de/snippets/req-cep.html",
-    "destination": "/de/snippets/req-cep"
-  },
-  {
-    "source": "/de/snippets/req-core-transition-sales.html",
-    "destination": "/de/snippets/req-core-transition-sales"
-  },
-  {
-    "source": "/de/snippets/req-core.html",
-    "destination": "/de/snippets/req-core"
-  },
-  {
-    "source": "/de/snippets/req-dev-tools-transition.html",
-    "destination": "/de/snippets/req-dev-tools-transition"
-  },
-  {
-    "source": "/de/snippets/req-dev-tools.html",
-    "destination": "/de/snippets/req-dev-tools"
-  },
-  {
-    "source": "/de/snippets/req-growth-transition-sales.html",
-    "destination": "/de/snippets/req-growth-transition-sales"
-  },
-  {
-    "source": "/de/snippets/req-growth-transition-service.html",
-    "destination": "/de/snippets/req-growth-transition-service"
-  },
-  {
-    "source": "/de/snippets/req-growth.html",
-    "destination": "/de/snippets/req-growth"
-  },
-  {
-    "source": "/de/snippets/req-plus-transition-marketing.html",
-    "destination": "/de/snippets/req-plus-transition-marketing"
-  },
-  {
-    "source": "/de/snippets/req-plus.html",
-    "destination": "/de/snippets/req-plus"
-  },
-  {
-    "source": "/de/snippets/req-starter-transition-sales.html",
-    "destination": "/de/snippets/req-starter-transition-sales"
-  },
-  {
-    "source": "/de/snippets/starter-transition-service.html",
-    "destination": "/de/snippets/starter-transition-service"
-  },
-  {
     "source": "/de/ui/blogic/learn/extra-menus/actions.html",
     "destination": "/de/ui/blogic/learn/extra-menus/actions"
   },
@@ -9326,14 +8734,6 @@
   {
     "source": "/de/ui/blogic/learn/screen-properties.html",
     "destination": "/de/ui/blogic/learn/screen-properties"
-  },
-  {
-    "source": "/de/ui/blogic/learn/snippets/legacy-extra-menus.html",
-    "destination": "/de/ui/blogic/learn/snippets/legacy-extra-menus"
-  },
-  {
-    "source": "/de/ui/blogic/learn/snippets/legacy-profiles.html",
-    "destination": "/de/ui/blogic/learn/snippets/legacy-profiles"
   },
   {
     "source": "/de/ui/screen-designer/learn/add-new-layout",
@@ -9518,38 +8918,6 @@
   {
     "source": "/en/admin/import/settings.html",
     "destination": "/en/admin/import/settings"
-  },
-  {
-    "source": "/en/admin/import/snippets/adjust-email-only.html",
-    "destination": "/en/admin/import/snippets/adjust-email-only"
-  },
-  {
-    "source": "/en/admin/import/snippets/caution-backup-before-import.html",
-    "destination": "/en/admin/import/snippets/caution-backup-before-import"
-  },
-  {
-    "source": "/en/admin/import/snippets/configure-import-settings.html",
-    "destination": "/en/admin/import/snippets/configure-import-settings"
-  },
-  {
-    "source": "/en/admin/import/snippets/import-complete.html",
-    "destination": "/en/admin/import/snippets/import-complete"
-  },
-  {
-    "source": "/en/admin/import/snippets/open-import.html",
-    "destination": "/en/admin/import/snippets/open-import"
-  },
-  {
-    "source": "/en/admin/import/snippets/step-concent-comment.html",
-    "destination": "/en/admin/import/snippets/step-concent-comment"
-  },
-  {
-    "source": "/en/admin/import/snippets/step-preview-import.html",
-    "destination": "/en/admin/import/snippets/step-preview-import"
-  },
-  {
-    "source": "/en/admin/import/snippets/troubleshoot-import.html",
-    "destination": "/en/admin/import/snippets/troubleshoot-import"
   },
   {
     "source": "/en/admin/learn/add-system-event",
@@ -10072,22 +9440,6 @@
     "destination": "/en/admin/lists/restore"
   },
   {
-    "source": "/en/admin/lists/snippets/edit-list-item.html",
-    "destination": "/en/admin/lists/snippets/edit-list-item"
-  },
-  {
-    "source": "/en/admin/lists/snippets/expand-list.html",
-    "destination": "/en/admin/lists/snippets/expand-list"
-  },
-  {
-    "source": "/en/admin/lists/snippets/goto-lists.html",
-    "destination": "/en/admin/lists/snippets/goto-lists"
-  },
-  {
-    "source": "/en/admin/lists/snippets/save-or-cancel.html",
-    "destination": "/en/admin/lists/snippets/save-or-cancel"
-  },
-  {
     "source": "/en/admin/lists/specialized-lists.html",
     "destination": "/en/admin/lists/specialized-lists"
   },
@@ -10572,22 +9924,6 @@
     "destination": "/en/admin/user-management/role/update-role"
   },
   {
-    "source": "/en/admin/user-management/snippets/add-remove-right.html",
-    "destination": "/en/admin/user-management/snippets/add-remove-right"
-  },
-  {
-    "source": "/en/admin/user-management/snippets/goto-users.html",
-    "destination": "/en/admin/user-management/snippets/goto-users"
-  },
-  {
-    "source": "/en/admin/user-management/snippets/note-anon-req.html",
-    "destination": "/en/admin/user-management/snippets/note-anon-req"
-  },
-  {
-    "source": "/en/admin/user-management/snippets/open-roles.html",
-    "destination": "/en/admin/user-management/snippets/open-roles"
-  },
-  {
     "source": "/en/admin/user-management/update-user.html",
     "destination": "/en/admin/user-management/update-user"
   },
@@ -10714,14 +10050,6 @@
   {
     "source": "/en/admin/user-preferences/reference/scripting.html",
     "destination": "/en/admin/user-preferences/reference/scripting"
-  },
-  {
-    "source": "/en/admin/user-preferences/reference/snippets/pref-filter.html",
-    "destination": "/en/admin/user-preferences/reference/snippets/pref-filter"
-  },
-  {
-    "source": "/en/admin/user-preferences/reference/snippets/to-view-pref.html",
-    "destination": "/en/admin/user-preferences/reference/snippets/to-view-pref"
   },
   {
     "source": "/en/admin/user-preferences/reference/sorting.html",
@@ -10934,10 +10262,6 @@
   {
     "source": "/en/api/authentication/online/sign-in-user/native-apps.html",
     "destination": "/en/api/authentication/online/sign-in-user/native-apps"
-  },
-  {
-    "source": "/en/api/authentication/online/snippets/implicit-hybrid-deprecated.html",
-    "destination": "/en/api/authentication/online/snippets/implicit-hybrid-deprecated"
   },
   {
     "source": "/en/api/authentication/online/troubleshooting/iframe-idp-auth.html",
@@ -11344,10 +10668,6 @@
     "destination": "/en/api/localization/address/addresshelper"
   },
   {
-    "source": "/en/api/localization/address/snippets/pre-defined-address-fields.html",
-    "destination": "/en/api/localization/address/snippets/pre-defined-address-fields"
-  },
-  {
     "source": "/en/api/localization/culture/culturedataformatter.html",
     "destination": "/en/api/localization/culture/culturedataformatter"
   },
@@ -11664,26 +10984,6 @@
     "destination": "/en/api/plugins/quote-connectors/api/data-carriers/quoteversionstateinfo"
   },
   {
-    "source": "/en/api/plugins/quote-connectors/api/data-carriers/snippets/erpkey.html",
-    "destination": "/en/api/plugins/quote-connectors/api/data-carriers/snippets/erpkey"
-  },
-  {
-    "source": "/en/api/plugins/quote-connectors/api/data-carriers/snippets/product-extrafield.html",
-    "destination": "/en/api/plugins/quote-connectors/api/data-carriers/snippets/product-extrafield"
-  },
-  {
-    "source": "/en/api/plugins/quote-connectors/api/data-carriers/snippets/quote-extrafield.html",
-    "destination": "/en/api/plugins/quote-connectors/api/data-carriers/snippets/quote-extrafield"
-  },
-  {
-    "source": "/en/api/plugins/quote-connectors/api/data-carriers/snippets/quotealt-extrafield.html",
-    "destination": "/en/api/plugins/quote-connectors/api/data-carriers/snippets/quotealt-extrafield"
-  },
-  {
-    "source": "/en/api/plugins/quote-connectors/api/data-carriers/snippets/quoteversion-extrafield.html",
-    "destination": "/en/api/plugins/quote-connectors/api/data-carriers/snippets/quoteversion-extrafield"
-  },
-  {
     "source": "/en/api/plugins/quote-connectors/api/enums/configfieldtype.html",
     "destination": "/en/api/plugins/quote-connectors/api/enums/configfieldtype"
   },
@@ -11738,10 +11038,6 @@
   {
     "source": "/en/api/plugins/quote-connectors/api/rights-field.html",
     "destination": "/en/api/plugins/quote-connectors/api/rights-field"
-  },
-  {
-    "source": "/en/api/plugins/quote-connectors/api/snippets/rights.html",
-    "destination": "/en/api/plugins/quote-connectors/api/snippets/rights"
   },
   {
     "source": "/en/api/plugins/quote-connectors/approve-quote.html",
@@ -12036,10 +11332,6 @@
     "destination": "/en/api/search/selection/services/create-dynamic-services"
   },
   {
-    "source": "/en/api/search/selection/snippets/note-hardcoding-id.html",
-    "destination": "/en/api/search/selection/snippets/note-hardcoding-id"
-  },
-  {
     "source": "/en/api/search/selection/sql",
     "destination": "/en/api/search/selection/sql/add-person-to-selection"
   },
@@ -12066,34 +11358,6 @@
   {
     "source": "/en/api/security/sentry/services/tableright.html",
     "destination": "/en/api/security/sentry/services/tableright"
-  },
-  {
-    "source": "/en/api/snippets/create-entity-options.html",
-    "destination": "/en/api/snippets/create-entity-options"
-  },
-  {
-    "source": "/en/api/snippets/get-help.html",
-    "destination": "/en/api/snippets/get-help"
-  },
-  {
-    "source": "/en/api/snippets/note-javascripty.html",
-    "destination": "/en/api/snippets/note-javascripty"
-  },
-  {
-    "source": "/en/api/snippets/note-using-sodatareader.html",
-    "destination": "/en/api/snippets/note-using-sodatareader"
-  },
-  {
-    "source": "/en/api/snippets/using-osql.html",
-    "destination": "/en/api/snippets/using-osql"
-  },
-  {
-    "source": "/en/api/snippets/webapi-client-intro.html",
-    "destination": "/en/api/snippets/webapi-client-intro"
-  },
-  {
-    "source": "/en/api/snippets/webapi-intro.html",
-    "destination": "/en/api/snippets/webapi-intro"
   },
   {
     "source": "/en/api/sql/*",
@@ -12270,10 +11534,6 @@
   {
     "source": "/en/api/web-services/howto/custom-objects/set-udef-listitem-value.html",
     "destination": "/en/api/web-services/howto/custom-objects/set-udef-listitem-value"
-  },
-  {
-    "source": "/en/api/web-services/howto/custom-objects/snippets/how-to-guide-steps-intro.html",
-    "destination": "/en/api/web-services/howto/custom-objects/snippets/how-to-guide-steps-intro"
   },
   {
     "source": "/en/api/web-services/howto/dashboard",
@@ -12478,10 +11738,6 @@
   {
     "source": "/en/automation/crmscript/datatypes/map-type.html",
     "destination": "/en/automation/crmscript/datatypes/map-type"
-  },
-  {
-    "source": "/en/automation/crmscript/datatypes/snippets/note-arrays.html",
-    "destination": "/en/automation/crmscript/datatypes/snippets/note-arrays"
   },
   {
     "source": "/en/automation/crmscript/datatypes/string-type.html",
@@ -13078,18 +12334,6 @@
   {
     "source": "/en/automation/overview.html",
     "destination": "/en/automation/overview"
-  },
-  {
-    "source": "/en/automation/snippets/automation-intro.html",
-    "destination": "/en/automation/snippets/automation-intro"
-  },
-  {
-    "source": "/en/automation/snippets/macro-intro.html",
-    "destination": "/en/automation/snippets/macro-intro"
-  },
-  {
-    "source": "/en/automation/snippets/restricted-crmscript-agents.html",
-    "destination": "/en/automation/snippets/restricted-crmscript-agents"
   },
   {
     "source": "/en/automation/trigger/create-trigger-macro.html",
@@ -13696,14 +12940,6 @@
     "destination": "/en/custom-objects/admin/show-extra-field-on-request-details"
   },
   {
-    "source": "/en/custom-objects/admin/snippets/goto-fields.html",
-    "destination": "/en/custom-objects/admin/snippets/goto-fields"
-  },
-  {
-    "source": "/en/custom-objects/admin/snippets/goto-tables.html",
-    "destination": "/en/custom-objects/admin/snippets/goto-tables"
-  },
-  {
     "source": "/en/custom-objects/extra-field/howto/crmscript/index",
     "destination": "/en/automation/crmscript/howto/custom-objects/extra-field"
   },
@@ -14052,10 +13288,6 @@
     "destination": "/en/customization/screen-designer/admin/working-with-tabs"
   },
   {
-    "source": "/en/customization/snippets/web-panels-and-https.html",
-    "destination": "/en/customization/snippets/web-panels-and-https"
-  },
-  {
     "source": "/en/customization/soprotocol/howto/create-contact.html",
     "destination": "/en/customization/soprotocol/howto/create-contact"
   },
@@ -14316,14 +13548,6 @@
     "destination": "/en/developer-portal/analytics/metrics-performance"
   },
   {
-    "source": "/en/developer-portal/analytics/snippets/def-metrics.html",
-    "destination": "/en/developer-portal/analytics/snippets/def-metrics"
-  },
-  {
-    "source": "/en/developer-portal/analytics/snippets/improve-performance.html",
-    "destination": "/en/developer-portal/analytics/snippets/improve-performance"
-  },
-  {
     "source": "/en/developer-portal/best-practices/error-emails.html",
     "destination": "/en/developer-portal/best-practices/error-emails"
   },
@@ -14364,14 +13588,6 @@
     "destination": "/en/developer-portal/create-app/config/redirects"
   },
   {
-    "source": "/en/developer-portal/create-app/config/snippets/note-clear-to-replace.html",
-    "destination": "/en/developer-portal/create-app/config/snippets/note-clear-to-replace"
-  },
-  {
-    "source": "/en/developer-portal/create-app/config/snippets/note-expiration.html",
-    "destination": "/en/developer-portal/create-app/config/snippets/note-expiration"
-  },
-  {
     "source": "/en/developer-portal/create-app/config/update-app-config.html",
     "destination": "/en/developer-portal/create-app/config/update-app-config"
   },
@@ -14410,26 +13626,6 @@
   {
     "source": "/en/developer-portal/create-app/server-to-server-app.html",
     "destination": "/en/developer-portal/create-app/server-to-server-app"
-  },
-  {
-    "source": "/en/developer-portal/create-app/snippets/cust-app-req-license.html",
-    "destination": "/en/developer-portal/create-app/snippets/cust-app-req-license"
-  },
-  {
-    "source": "/en/developer-portal/create-app/snippets/note-app-name.html",
-    "destination": "/en/developer-portal/create-app/snippets/note-app-name"
-  },
-  {
-    "source": "/en/developer-portal/create-app/snippets/ready-to-publish.html",
-    "destination": "/en/developer-portal/create-app/snippets/ready-to-publish"
-  },
-  {
-    "source": "/en/developer-portal/create-app/snippets/set-technical-contact.html",
-    "destination": "/en/developer-portal/create-app/snippets/set-technical-contact"
-  },
-  {
-    "source": "/en/developer-portal/create-app/snippets/what-to-publish.html",
-    "destination": "/en/developer-portal/create-app/snippets/what-to-publish"
   },
   {
     "source": "/en/developer-portal/create-app/sync-app.html",
@@ -14524,18 +13720,6 @@
     "destination": "/en/developer-portal/partner/remove-user"
   },
   {
-    "source": "/en/developer-portal/partner/snippets/note-cannot-update-superid.html",
-    "destination": "/en/developer-portal/partner/snippets/note-cannot-update-superid"
-  },
-  {
-    "source": "/en/developer-portal/partner/snippets/note-users-collection.html",
-    "destination": "/en/developer-portal/partner/snippets/note-users-collection"
-  },
-  {
-    "source": "/en/developer-portal/partner/snippets/see-user-settings.html",
-    "destination": "/en/developer-portal/partner/snippets/see-user-settings"
-  },
-  {
     "source": "/en/developer-portal/partner/update-partner-settings.html",
     "destination": "/en/developer-portal/partner/update-partner-settings"
   },
@@ -14562,66 +13746,6 @@
   {
     "source": "/en/developer-portal/provisioning/update-consent-text.html",
     "destination": "/en/developer-portal/provisioning/update-consent-text"
-  },
-  {
-    "source": "/en/developer-portal/snippets/app-envir-intro.html",
-    "destination": "/en/developer-portal/snippets/app-envir-intro"
-  },
-  {
-    "source": "/en/developer-portal/snippets/def-app-credentials.html",
-    "destination": "/en/developer-portal/snippets/def-app-credentials"
-  },
-  {
-    "source": "/en/developer-portal/snippets/def-app.html",
-    "destination": "/en/developer-portal/snippets/def-app"
-  },
-  {
-    "source": "/en/developer-portal/snippets/def-dp-user.html",
-    "destination": "/en/developer-portal/snippets/def-dp-user"
-  },
-  {
-    "source": "/en/developer-portal/snippets/explicit-consent.html",
-    "destination": "/en/developer-portal/snippets/explicit-consent"
-  },
-  {
-    "source": "/en/developer-portal/snippets/go-to-app-page.html",
-    "destination": "/en/developer-portal/snippets/go-to-app-page"
-  },
-  {
-    "source": "/en/developer-portal/snippets/has-integration.html",
-    "destination": "/en/developer-portal/snippets/has-integration"
-  },
-  {
-    "source": "/en/developer-portal/snippets/list-failure-types.html",
-    "destination": "/en/developer-portal/snippets/list-failure-types"
-  },
-  {
-    "source": "/en/developer-portal/snippets/list-of-test-period-info.html",
-    "destination": "/en/developer-portal/snippets/list-of-test-period-info"
-  },
-  {
-    "source": "/en/developer-portal/snippets/note-cannot-edit.html",
-    "destination": "/en/developer-portal/snippets/note-cannot-edit"
-  },
-  {
-    "source": "/en/developer-portal/snippets/protect-database.html",
-    "destination": "/en/developer-portal/snippets/protect-database"
-  },
-  {
-    "source": "/en/developer-portal/snippets/protect-webpanels.html",
-    "destination": "/en/developer-portal/snippets/protect-webpanels"
-  },
-  {
-    "source": "/en/developer-portal/snippets/security-checklist.html",
-    "destination": "/en/developer-portal/snippets/security-checklist"
-  },
-  {
-    "source": "/en/developer-portal/snippets/see-partner-settings.html",
-    "destination": "/en/developer-portal/snippets/see-partner-settings"
-  },
-  {
-    "source": "/en/developer-portal/snippets/std-vs-custom-app.html",
-    "destination": "/en/developer-portal/snippets/std-vs-custom-app"
   },
   {
     "source": "/en/developer-portal/standard-app/app-store/app-settings.html",
@@ -14710,10 +13834,6 @@
   {
     "source": "/en/developer-portal/standard-app/requirements/technical.html",
     "destination": "/en/developer-portal/standard-app/requirements/technical"
-  },
-  {
-    "source": "/en/developer-portal/standard-app/snippets/app-store-image-req.html",
-    "destination": "/en/developer-portal/standard-app/snippets/app-store-image-req"
   },
   {
     "source": "/en/developer-portal/tenants/authorization.html",
@@ -14882,18 +14002,6 @@
   {
     "source": "/en/diary/learn/set-alarm.html",
     "destination": "/en/diary/learn/set-alarm"
-  },
-  {
-    "source": "/en/diary/learn/snippets/caution-do-not-change-recurring-date.html",
-    "destination": "/en/diary/learn/snippets/caution-do-not-change-recurring-date"
-  },
-  {
-    "source": "/en/diary/learn/snippets/note-edit-followup.html",
-    "destination": "/en/diary/learn/snippets/note-edit-followup"
-  },
-  {
-    "source": "/en/diary/learn/snippets/note-repetition.html",
-    "destination": "/en/diary/learn/snippets/note-repetition"
   },
   {
     "source": "/en/diary/learn/video-meetings.html",
@@ -15106,10 +14214,6 @@
   {
     "source": "/en/document/learn/send-as-email.html",
     "destination": "/en/document/learn/send-as-email"
-  },
-  {
-    "source": "/en/document/learn/snippets/webtools-or-sharepoint.html",
-    "destination": "/en/document/learn/snippets/webtools-or-sharepoint"
   },
   {
     "source": "/en/document/learn/template-variables",
@@ -15430,14 +14534,6 @@
   {
     "source": "/en/email/admin/mailbox/delete-mailbox.html",
     "destination": "/en/email/admin/mailbox/delete-mailbox"
-  },
-  {
-    "source": "/en/email/admin/mailbox/snippets/goto-email.html",
-    "destination": "/en/email/admin/mailbox/snippets/goto-email"
-  },
-  {
-    "source": "/en/email/admin/mailbox/snippets/step-set-language.html",
-    "destination": "/en/email/admin/mailbox/snippets/step-set-language"
   },
   {
     "source": "/en/email/gmail-link/learn/*",
@@ -15848,10 +14944,6 @@
     "destination": "/en/api/localization/phoneformatter"
   },
   {
-    "source": "/en/globalization-and-localization/snippets/table-legacy-language-codes.html",
-    "destination": "/en/globalization-and-localization/snippets/table-legacy-language-codes"
-  },
-  {
     "source": "/en/globalization-and-localization/superoffice-crm-globalization",
     "destination": "/en/api/localization/superoffice-crm-globalization"
   },
@@ -16112,66 +15204,6 @@
     "destination": "/en/learn/section-tabs/send-email"
   },
   {
-    "source": "/en/learn/snippets/faq-vs-reply-template.html",
-    "destination": "/en/learn/snippets/faq-vs-reply-template"
-  },
-  {
-    "source": "/en/learn/snippets/goto-company.html",
-    "destination": "/en/learn/snippets/goto-company"
-  },
-  {
-    "source": "/en/learn/snippets/goto-contact.html",
-    "destination": "/en/learn/snippets/goto-contact"
-  },
-  {
-    "source": "/en/learn/snippets/goto-sm.html",
-    "destination": "/en/learn/snippets/goto-sm"
-  },
-  {
-    "source": "/en/learn/snippets/image-type-and-size.html",
-    "destination": "/en/learn/snippets/image-type-and-size"
-  },
-  {
-    "source": "/en/learn/snippets/more-tab.html",
-    "destination": "/en/learn/snippets/more-tab"
-  },
-  {
-    "source": "/en/learn/snippets/more-udef.html",
-    "destination": "/en/learn/snippets/more-udef"
-  },
-  {
-    "source": "/en/learn/snippets/note-insufficient-rights.html",
-    "destination": "/en/learn/snippets/note-insufficient-rights"
-  },
-  {
-    "source": "/en/learn/snippets/note-req-manage-entities.html",
-    "destination": "/en/learn/snippets/note-req-manage-entities"
-  },
-  {
-    "source": "/en/learn/snippets/note-restore.html",
-    "destination": "/en/learn/snippets/note-restore"
-  },
-  {
-    "source": "/en/learn/snippets/req-admin.html",
-    "destination": "/en/learn/snippets/req-admin"
-  },
-  {
-    "source": "/en/learn/snippets/select-action-on-activity.html",
-    "destination": "/en/learn/snippets/select-action-on-activity"
-  },
-  {
-    "source": "/en/learn/snippets/table-relations-tab-columns.html",
-    "destination": "/en/learn/snippets/table-relations-tab-columns"
-  },
-  {
-    "source": "/en/learn/snippets/tip-configure-columns.html",
-    "destination": "/en/learn/snippets/tip-configure-columns"
-  },
-  {
-    "source": "/en/learn/snippets/tip-deletion.html",
-    "destination": "/en/learn/snippets/tip-deletion"
-  },
-  {
     "source": "/en/localization/admin/add-customer-language.html",
     "destination": "/en/localization/admin/add-customer-language"
   },
@@ -16332,10 +15364,6 @@
     "destination": "/en/marketing/forms/learn/recaptcha"
   },
   {
-    "source": "/en/marketing/forms/learn/snippets/tip-show-toolbar-open-editor.html",
-    "destination": "/en/marketing/forms/learn/snippets/tip-show-toolbar-open-editor"
-  },
-  {
     "source": "/en/marketing/forms/learn/submissions/index",
     "destination": "/en/marketing/forms/learn/index"
   },
@@ -16428,14 +15456,6 @@
     "destination": "/en/marketing/learn/index"
   },
   {
-    "source": "/en/marketing/learn/snippets/mailing-settings-sms.html",
-    "destination": "/en/marketing/learn/snippets/mailing-settings-sms"
-  },
-  {
-    "source": "/en/marketing/learn/snippets/mailing-smtp-fields.html",
-    "destination": "/en/marketing/learn/snippets/mailing-smtp-fields"
-  },
-  {
     "source": "/en/marketing/learn/work-with-messages-and-templates",
     "destination": "/en/marketing/learn/message-templates"
   },
@@ -16462,34 +15482,6 @@
   {
     "source": "/en/marketing/mailing/learn/create/send-test-email.html",
     "destination": "/en/marketing/mailing/learn/create/send-test-email"
-  },
-  {
-    "source": "/en/marketing/mailing/learn/create/snippets/mailing-choose-template.html",
-    "destination": "/en/marketing/mailing/learn/create/snippets/mailing-choose-template"
-  },
-  {
-    "source": "/en/marketing/mailing/learn/create/snippets/mailing-tracking-options.html",
-    "destination": "/en/marketing/mailing/learn/create/snippets/mailing-tracking-options"
-  },
-  {
-    "source": "/en/marketing/mailing/learn/create/snippets/spf-look-up.html",
-    "destination": "/en/marketing/mailing/learn/create/snippets/spf-look-up"
-  },
-  {
-    "source": "/en/marketing/mailing/learn/create/snippets/step-3-content-email.html",
-    "destination": "/en/marketing/mailing/learn/create/snippets/step-3-content-email"
-  },
-  {
-    "source": "/en/marketing/mailing/learn/create/snippets/step-4-recipients.html",
-    "destination": "/en/marketing/mailing/learn/create/snippets/step-4-recipients"
-  },
-  {
-    "source": "/en/marketing/mailing/learn/create/snippets/step-5-confirm-and-send-mailing.html",
-    "destination": "/en/marketing/mailing/learn/create/snippets/step-5-confirm-and-send-mailing"
-  },
-  {
-    "source": "/en/marketing/mailing/learn/create/snippets/tip-mailing-save-draft.html",
-    "destination": "/en/marketing/mailing/learn/create/snippets/tip-mailing-save-draft"
   },
   {
     "source": "/en/marketing/mailing/learn/create/tutorial-document-mailing.html",
@@ -16796,18 +15788,6 @@
     "destination": "/en/mobile/settings"
   },
   {
-    "source": "/en/mobile/snippets/icon-reference.html",
-    "destination": "/en/mobile/snippets/icon-reference"
-  },
-  {
-    "source": "/en/mobile/snippets/list-of-tips.html",
-    "destination": "/en/mobile/snippets/list-of-tips"
-  },
-  {
-    "source": "/en/mobile/snippets/mobile-network-req.html",
-    "destination": "/en/mobile/snippets/mobile-network-req"
-  },
-  {
     "source": "/en/mobile/superoffice-mobile/*",
     "destination": "/en/mobile/*"
   },
@@ -17036,26 +16016,6 @@
     "destination": "/en/online/mail-services/mailgun/security"
   },
   {
-    "source": "/en/online/mail-services/mailgun/snippets/envir-google.html",
-    "destination": "/en/online/mail-services/mailgun/snippets/envir-google"
-  },
-  {
-    "source": "/en/online/mail-services/mailgun/snippets/hosted-by-enom.html",
-    "destination": "/en/online/mail-services/mailgun/snippets/hosted-by-enom"
-  },
-  {
-    "source": "/en/online/mail-services/mailgun/snippets/multiple-dkims.html",
-    "destination": "/en/online/mail-services/mailgun/snippets/multiple-dkims"
-  },
-  {
-    "source": "/en/online/mail-services/mailgun/snippets/note-dns-propagation-time.html",
-    "destination": "/en/online/mail-services/mailgun/snippets/note-dns-propagation-time"
-  },
-  {
-    "source": "/en/online/mail-services/mailgun/snippets/open-google-domain-settings.html",
-    "destination": "/en/online/mail-services/mailgun/snippets/open-google-domain-settings"
-  },
-  {
     "source": "/en/online/mail-services/mailgun/spf/set-up.html",
     "destination": "/en/online/mail-services/mailgun/spf/set-up"
   },
@@ -17232,22 +16192,6 @@
     "destination": "/en/onsite/compatibility/server-os"
   },
   {
-    "source": "/en/onsite/compatibility/snippets/caution-odbc-drivers.html",
-    "destination": "/en/onsite/compatibility/snippets/caution-odbc-drivers"
-  },
-  {
-    "source": "/en/onsite/compatibility/snippets/onsite-phased-out.html",
-    "destination": "/en/onsite/compatibility/snippets/onsite-phased-out"
-  },
-  {
-    "source": "/en/onsite/compatibility/snippets/oracle-18c-drivers.html",
-    "destination": "/en/onsite/compatibility/snippets/oracle-18c-drivers"
-  },
-  {
-    "source": "/en/onsite/compatibility/snippets/test-legend.html",
-    "destination": "/en/onsite/compatibility/snippets/test-legend"
-  },
-  {
     "source": "/en/onsite/config/service/attachment-location.html",
     "destination": "/en/onsite/config/service/attachment-location"
   },
@@ -17350,18 +16294,6 @@
   {
     "source": "/en/onsite/install/server/silent-serversetup.html",
     "destination": "/en/onsite/install/server/silent-serversetup"
-  },
-  {
-    "source": "/en/onsite/install/server/snippets/registry-deploy-ribbons.html",
-    "destination": "/en/onsite/install/server/snippets/registry-deploy-ribbons"
-  },
-  {
-    "source": "/en/onsite/install/server/snippets/registry-keys.html",
-    "destination": "/en/onsite/install/server/snippets/registry-keys"
-  },
-  {
-    "source": "/en/onsite/install/server/snippets/registry-propagation.html",
-    "destination": "/en/onsite/install/server/snippets/registry-propagation"
   },
   {
     "source": "/en/onsite/install/service/manual-steps.html",
@@ -17500,38 +16432,6 @@
     "destination": "/en/onsite/security/set-up-modsecurity"
   },
   {
-    "source": "/en/onsite/snippets/dotnet-requirements.html",
-    "destination": "/en/onsite/snippets/dotnet-requirements"
-  },
-  {
-    "source": "/en/onsite/snippets/mail-client-ports.html",
-    "destination": "/en/onsite/snippets/mail-client-ports"
-  },
-  {
-    "source": "/en/onsite/snippets/remote-netserver-web.html",
-    "destination": "/en/onsite/snippets/remote-netserver-web"
-  },
-  {
-    "source": "/en/onsite/snippets/service-webview.html",
-    "destination": "/en/onsite/snippets/service-webview"
-  },
-  {
-    "source": "/en/onsite/snippets/warn-dbsetup-discontinued.html",
-    "destination": "/en/onsite/snippets/warn-dbsetup-discontinued"
-  },
-  {
-    "source": "/en/onsite/snippets/warn-upgrade-all-to-same-version.html",
-    "destination": "/en/onsite/snippets/warn-upgrade-all-to-same-version"
-  },
-  {
-    "source": "/en/onsite/snippets/warn-web-client-https.html",
-    "destination": "/en/onsite/snippets/warn-web-client-https"
-  },
-  {
-    "source": "/en/onsite/snippets/warn-win-client-discontinued.html",
-    "destination": "/en/onsite/snippets/warn-win-client-discontinued"
-  },
-  {
     "source": "/en/onsite/travel/activate.html",
     "destination": "/en/onsite/travel/activate"
   },
@@ -17570,10 +16470,6 @@
   {
     "source": "/en/onsite/travel/satellite/troubleshooting.html",
     "destination": "/en/onsite/travel/satellite/troubleshooting"
-  },
-  {
-    "source": "/en/onsite/travel/snippets/local-update.html",
-    "destination": "/en/onsite/travel/snippets/local-update"
   },
   {
     "source": "/en/onsite/travel/sql-express/create-prototype.html",
@@ -17638,10 +16534,6 @@
   {
     "source": "/en/onsite/upgrade/75-to-8/netserver.html",
     "destination": "/en/onsite/upgrade/75-to-8/netserver"
-  },
-  {
-    "source": "/en/onsite/upgrade/75-to-8/snippets/has-no-cs-yet.html",
-    "destination": "/en/onsite/upgrade/75-to-8/snippets/has-no-cs-yet"
   },
   {
     "source": "/en/onsite/upgrade/75-to-8/web-client.html",
@@ -18876,10 +17768,6 @@
     "destination": "https://help.superoffice.com/docs/11/en/search-options/admin/regenerate-index.html"
   },
   {
-    "source": "/en/search-options/admin/snippets/goto-freetext.html",
-    "destination": "/en/search-options/admin/snippets/goto-freetext"
-  },
-  {
     "source": "/en/search-options/admin/stopwords.html",
     "destination": "/en/search-options/admin/stopwords"
   },
@@ -18902,18 +17790,6 @@
   {
     "source": "/en/search-options/learn/search-criteria.html",
     "destination": "/en/search-options/learn/search-criteria"
-  },
-  {
-    "source": "/en/search-options/learn/snippets/clear-criteria.html",
-    "destination": "/en/search-options/learn/snippets/clear-criteria"
-  },
-  {
-    "source": "/en/search-options/learn/snippets/run-search.html",
-    "destination": "/en/search-options/learn/snippets/run-search"
-  },
-  {
-    "source": "/en/search-options/learn/snippets/select-field.html",
-    "destination": "/en/search-options/learn/snippets/select-field"
   },
   {
     "source": "/en/search-options/selection/learn/add-remove-members-static.html",
@@ -19030,10 +17906,6 @@
   {
     "source": "/en/search-options/selection/learn/screen/index",
     "destination": "/en/search-options/selection/learn/index"
-  },
-  {
-    "source": "/en/search-options/selection/learn/snippets/steps-start-task.html",
-    "destination": "/en/search-options/selection/learn/snippets/steps-start-task"
   },
   {
     "source": "/en/search-options/selection/learn/static-selections",
@@ -19358,14 +18230,6 @@
   {
     "source": "/en/ui/blogic/learn/screen-properties.html",
     "destination": "/en/ui/blogic/learn/screen-properties"
-  },
-  {
-    "source": "/en/ui/blogic/learn/snippets/legacy-extra-menus.html",
-    "destination": "/en/ui/blogic/learn/snippets/legacy-extra-menus"
-  },
-  {
-    "source": "/en/ui/blogic/learn/snippets/legacy-profiles.html",
-    "destination": "/en/ui/blogic/learn/snippets/legacy-profiles"
   },
   {
     "source": "/en/ui/blogic/overview.html",
@@ -19804,10 +18668,6 @@
     "destination": "/integrations/g-suite/set-up"
   },
   {
-    "source": "/integrations/g-suite/snippets/g-suite-service-account-recommended.html",
-    "destination": "/integrations/g-suite/snippets/g-suite-service-account-recommended"
-  },
-  {
     "source": "/integrations/gmail-link/archive-attachments.html",
     "destination": "/integrations/gmail-link/archive-attachments"
   },
@@ -19838,10 +18698,6 @@
   {
     "source": "/integrations/gmail-link/settings.html",
     "destination": "/integrations/gmail-link/settings"
-  },
-  {
-    "source": "/integrations/gmail-link/snippets/gmail-archiving-options.html",
-    "destination": "/integrations/gmail-link/snippets/gmail-archiving-options"
   },
   {
     "source": "/integrations/mail-link/add-attachment.html",
@@ -19940,18 +18796,6 @@
     "destination": "/integrations/sharepoint-documents/set-up"
   },
   {
-    "source": "/integrations/sharepoint-documents/snippets/req-data-rights.html",
-    "destination": "/integrations/sharepoint-documents/snippets/req-data-rights"
-  },
-  {
-    "source": "/integrations/sharepoint-documents/snippets/req-general.html",
-    "destination": "/integrations/sharepoint-documents/snippets/req-general"
-  },
-  {
-    "source": "/integrations/sharepoint-documents/snippets/req-usage.html",
-    "destination": "/integrations/sharepoint-documents/snippets/req-usage"
-  },
-  {
     "source": "/integrations/sharepoint-documents/troubleshooting.html",
     "destination": "/integrations/sharepoint-documents/troubleshooting"
   },
@@ -20040,10 +18884,6 @@
     "destination": "/integrations/superoffice-for-outlook/shared-mailboxes"
   },
   {
-    "source": "/integrations/superoffice-for-outlook/snippets/note-visibility.html",
-    "destination": "/integrations/superoffice-for-outlook/snippets/note-visibility"
-  },
-  {
     "source": "/integrations/superoffice-for-outlook/view-contact-details.html",
     "destination": "/integrations/superoffice-for-outlook/view-contact-details"
   },
@@ -20084,10 +18924,6 @@
     "destination": "/integrations/superoffice-for-teams/security"
   },
   {
-    "source": "/integrations/superoffice-for-teams/snippets/not-supported.html",
-    "destination": "/integrations/superoffice-for-teams/snippets/not-supported"
-  },
-  {
     "source": "/integrations/superoffice-for-teams/troubleshooting.html",
     "destination": "/integrations/superoffice-for-teams/troubleshooting"
   },
@@ -20114,34 +18950,6 @@
   {
     "source": "/integrations/video-meetings/howto/join.html",
     "destination": "/integrations/video-meetings/howto/join"
-  },
-  {
-    "source": "/integrations/video-meetings/snippets/create-steps.html",
-    "destination": "/integrations/video-meetings/snippets/create-steps"
-  },
-  {
-    "source": "/integrations/video-meetings/snippets/disconnect-provider-steps.html",
-    "destination": "/integrations/video-meetings/snippets/disconnect-provider-steps"
-  },
-  {
-    "source": "/integrations/video-meetings/snippets/join-options.html",
-    "destination": "/integrations/video-meetings/snippets/join-options"
-  },
-  {
-    "source": "/integrations/video-meetings/snippets/note-firsttime-auth-user.html",
-    "destination": "/integrations/video-meetings/snippets/note-firsttime-auth-user"
-  },
-  {
-    "source": "/integrations/video-meetings/snippets/re-auth-steps.html",
-    "destination": "/integrations/video-meetings/snippets/re-auth-steps"
-  },
-  {
-    "source": "/integrations/video-meetings/snippets/req-email-config.html",
-    "destination": "/integrations/video-meetings/snippets/req-email-config"
-  },
-  {
-    "source": "/integrations/video-meetings/snippets/something-went-wrong.html",
-    "destination": "/integrations/video-meetings/snippets/something-went-wrong"
   },
   {
     "source": "/integrations/video-meetings/troubleshooting.html",
@@ -20360,26 +19168,6 @@
     "destination": "/integrations/zapier/reference"
   },
   {
-    "source": "/integrations/zapier/snippets/action.html",
-    "destination": "/integrations/zapier/snippets/action"
-  },
-  {
-    "source": "/integrations/zapier/snippets/initial-steps-new-action.html",
-    "destination": "/integrations/zapier/snippets/initial-steps-new-action"
-  },
-  {
-    "source": "/integrations/zapier/snippets/note-req-general-admin.html",
-    "destination": "/integrations/zapier/snippets/note-req-general-admin"
-  },
-  {
-    "source": "/integrations/zapier/snippets/search-for-so.html",
-    "destination": "/integrations/zapier/snippets/search-for-so"
-  },
-  {
-    "source": "/integrations/zapier/snippets/test.html",
-    "destination": "/integrations/zapier/snippets/test"
-  },
-  {
     "source": "/learn-da.html",
     "destination": "/learn-da"
   },
@@ -20550,42 +19338,6 @@
   {
     "source": "/nl/admin/import/settings.html",
     "destination": "/nl/admin/import/settings"
-  },
-  {
-    "source": "/nl/admin/import/snippets/adjust-email-only.html",
-    "destination": "/nl/admin/import/snippets/adjust-email-only"
-  },
-  {
-    "source": "/nl/admin/import/snippets/caution-backup-before-import.html",
-    "destination": "/nl/admin/import/snippets/caution-backup-before-import"
-  },
-  {
-    "source": "/nl/admin/import/snippets/configure-import-settings.html",
-    "destination": "/nl/admin/import/snippets/configure-import-settings"
-  },
-  {
-    "source": "/nl/admin/import/snippets/import-complete.html",
-    "destination": "/nl/admin/import/snippets/import-complete"
-  },
-  {
-    "source": "/nl/admin/import/snippets/missing-webtools.html",
-    "destination": "/nl/admin/import/snippets/missing-webtools"
-  },
-  {
-    "source": "/nl/admin/import/snippets/open-import.html",
-    "destination": "/nl/admin/import/snippets/open-import"
-  },
-  {
-    "source": "/nl/admin/import/snippets/step-concent-comment.html",
-    "destination": "/nl/admin/import/snippets/step-concent-comment"
-  },
-  {
-    "source": "/nl/admin/import/snippets/step-preview-import.html",
-    "destination": "/nl/admin/import/snippets/step-preview-import"
-  },
-  {
-    "source": "/nl/admin/import/snippets/troubleshoot-import.html",
-    "destination": "/nl/admin/import/snippets/troubleshoot-import"
   },
   {
     "source": "/nl/admin/learn/add-system-event",
@@ -21084,22 +19836,6 @@
     "destination": "/nl/admin/lists/restore"
   },
   {
-    "source": "/nl/admin/lists/snippets/edit-list-item.html",
-    "destination": "/nl/admin/lists/snippets/edit-list-item"
-  },
-  {
-    "source": "/nl/admin/lists/snippets/expand-list.html",
-    "destination": "/nl/admin/lists/snippets/expand-list"
-  },
-  {
-    "source": "/nl/admin/lists/snippets/goto-lists.html",
-    "destination": "/nl/admin/lists/snippets/goto-lists"
-  },
-  {
-    "source": "/nl/admin/lists/snippets/save-or-cancel.html",
-    "destination": "/nl/admin/lists/snippets/save-or-cancel"
-  },
-  {
     "source": "/nl/admin/lists/specialized-lists.html",
     "destination": "/nl/admin/lists/specialized-lists"
   },
@@ -21568,22 +20304,6 @@
     "destination": "/nl/admin/user-management/role/update-role"
   },
   {
-    "source": "/nl/admin/user-management/snippets/add-remove-right.html",
-    "destination": "/nl/admin/user-management/snippets/add-remove-right"
-  },
-  {
-    "source": "/nl/admin/user-management/snippets/goto-users.html",
-    "destination": "/nl/admin/user-management/snippets/goto-users"
-  },
-  {
-    "source": "/nl/admin/user-management/snippets/note-anon-req.html",
-    "destination": "/nl/admin/user-management/snippets/note-anon-req"
-  },
-  {
-    "source": "/nl/admin/user-management/snippets/open-roles.html",
-    "destination": "/nl/admin/user-management/snippets/open-roles"
-  },
-  {
     "source": "/nl/admin/user-management/update-user.html",
     "destination": "/nl/admin/user-management/update-user"
   },
@@ -21992,14 +20712,6 @@
     "destination": "/nl/custom-objects/admin/show-extra-field-on-request-details"
   },
   {
-    "source": "/nl/custom-objects/admin/snippets/goto-fields.html",
-    "destination": "/nl/custom-objects/admin/snippets/goto-fields"
-  },
-  {
-    "source": "/nl/custom-objects/admin/snippets/goto-tables.html",
-    "destination": "/nl/custom-objects/admin/snippets/goto-tables"
-  },
-  {
     "source": "/nl/custom-objects/learn/extra-field.html",
     "destination": "/nl/custom-objects/learn/extra-field"
   },
@@ -22232,10 +20944,6 @@
     "destination": "/nl/customization/screen-designer/admin/working-with-tabs"
   },
   {
-    "source": "/nl/customization/snippets/web-panels-and-https.html",
-    "destination": "/nl/customization/snippets/web-panels-and-https"
-  },
-  {
     "source": "/nl/customization/web-panels/admin/add-web-panel.html",
     "destination": "/nl/customization/web-panels/admin/add-web-panel"
   },
@@ -22432,18 +21140,6 @@
     "destination": "/nl/diary/learn/set-alarm"
   },
   {
-    "source": "/nl/diary/learn/snippets/caution-do-not-change-recurring-date.html",
-    "destination": "/nl/diary/learn/snippets/caution-do-not-change-recurring-date"
-  },
-  {
-    "source": "/nl/diary/learn/snippets/note-edit-followup.html",
-    "destination": "/nl/diary/learn/snippets/note-edit-followup"
-  },
-  {
-    "source": "/nl/diary/learn/snippets/note-repetition.html",
-    "destination": "/nl/diary/learn/snippets/note-repetition"
-  },
-  {
     "source": "/nl/diary/learn/video-meetings.html",
     "destination": "/nl/diary/learn/video-meetings"
   },
@@ -22490,10 +21186,6 @@
   {
     "source": "/nl/document/learn/send-as-email.html",
     "destination": "/nl/document/learn/send-as-email"
-  },
-  {
-    "source": "/nl/document/learn/snippets/webtools-or-sharepoint.html",
-    "destination": "/nl/document/learn/snippets/webtools-or-sharepoint"
   },
   {
     "source": "/nl/document/learn/template-variables",
@@ -22682,14 +21374,6 @@
   {
     "source": "/nl/email/admin/mailbox/delete-mailbox.html",
     "destination": "/nl/email/admin/mailbox/delete-mailbox"
-  },
-  {
-    "source": "/nl/email/admin/mailbox/snippets/goto-email.html",
-    "destination": "/nl/email/admin/mailbox/snippets/goto-email"
-  },
-  {
-    "source": "/nl/email/admin/mailbox/snippets/step-set-language.html",
-    "destination": "/nl/email/admin/mailbox/snippets/step-set-language"
   },
   {
     "source": "/nl/email/gmail-link/learn/*",
@@ -22976,10 +21660,6 @@
     "destination": "/nl/localization/learn/translate-fields"
   },
   {
-    "source": "/nl/globalization-and-localization/snippets/table-legacy-language-codes.html",
-    "destination": "/nl/globalization-and-localization/snippets/table-legacy-language-codes"
-  },
-  {
     "source": "/nl/knowledge-base/learn/email-addresses.html",
     "destination": "/nl/knowledge-base/learn/email-addresses"
   },
@@ -23224,66 +21904,6 @@
     "destination": "/nl/learn/section-tabs/send-email"
   },
   {
-    "source": "/nl/learn/snippets/faq-vs-reply-template.html",
-    "destination": "/nl/learn/snippets/faq-vs-reply-template"
-  },
-  {
-    "source": "/nl/learn/snippets/goto-company.html",
-    "destination": "/nl/learn/snippets/goto-company"
-  },
-  {
-    "source": "/nl/learn/snippets/goto-contact.html",
-    "destination": "/nl/learn/snippets/goto-contact"
-  },
-  {
-    "source": "/nl/learn/snippets/goto-sm.html",
-    "destination": "/nl/learn/snippets/goto-sm"
-  },
-  {
-    "source": "/nl/learn/snippets/image-type-and-size.html",
-    "destination": "/nl/learn/snippets/image-type-and-size"
-  },
-  {
-    "source": "/nl/learn/snippets/more-tab.html",
-    "destination": "/nl/learn/snippets/more-tab"
-  },
-  {
-    "source": "/nl/learn/snippets/more-udef.html",
-    "destination": "/nl/learn/snippets/more-udef"
-  },
-  {
-    "source": "/nl/learn/snippets/note-insufficient-rights.html",
-    "destination": "/nl/learn/snippets/note-insufficient-rights"
-  },
-  {
-    "source": "/nl/learn/snippets/note-req-manage-entities.html",
-    "destination": "/nl/learn/snippets/note-req-manage-entities"
-  },
-  {
-    "source": "/nl/learn/snippets/note-restore.html",
-    "destination": "/nl/learn/snippets/note-restore"
-  },
-  {
-    "source": "/nl/learn/snippets/req-admin.html",
-    "destination": "/nl/learn/snippets/req-admin"
-  },
-  {
-    "source": "/nl/learn/snippets/select-action-on-activity.html",
-    "destination": "/nl/learn/snippets/select-action-on-activity"
-  },
-  {
-    "source": "/nl/learn/snippets/table-relations-tab-columns.html",
-    "destination": "/nl/learn/snippets/table-relations-tab-columns"
-  },
-  {
-    "source": "/nl/learn/snippets/tip-configure-columns.html",
-    "destination": "/nl/learn/snippets/tip-configure-columns"
-  },
-  {
-    "source": "/nl/learn/snippets/tip-deletion.html",
-    "destination": "/nl/learn/snippets/tip-deletion"
-  },
-  {
     "source": "/nl/localization/admin/add-customer-language.html",
     "destination": "/nl/localization/admin/add-customer-language"
   },
@@ -23448,10 +22068,6 @@
     "destination": "/en/marketing/forms/learn/recaptcha"
   },
   {
-    "source": "/nl/marketing/forms/learn/snippets/tip-show-toolbar-open-editor.html",
-    "destination": "/nl/marketing/forms/learn/snippets/tip-show-toolbar-open-editor"
-  },
-  {
     "source": "/nl/marketing/forms/learn/submissions/index",
     "destination": "/nl/marketing/forms/learn/index"
   },
@@ -23536,14 +22152,6 @@
     "destination": "/nl/marketing/learn/index"
   },
   {
-    "source": "/nl/marketing/learn/snippets/mailing-settings-sms.html",
-    "destination": "/nl/marketing/learn/snippets/mailing-settings-sms"
-  },
-  {
-    "source": "/nl/marketing/learn/snippets/mailing-smtp-fields.html",
-    "destination": "/nl/marketing/learn/snippets/mailing-smtp-fields"
-  },
-  {
     "source": "/nl/marketing/learn/work-with-messages-and-templates",
     "destination": "/nl/marketing/learn/message-templates"
   },
@@ -23570,34 +22178,6 @@
   {
     "source": "/nl/marketing/mailing/learn/create/send-test-email.html",
     "destination": "/nl/marketing/mailing/learn/create/send-test-email"
-  },
-  {
-    "source": "/nl/marketing/mailing/learn/create/snippets/mailing-choose-template.html",
-    "destination": "/nl/marketing/mailing/learn/create/snippets/mailing-choose-template"
-  },
-  {
-    "source": "/nl/marketing/mailing/learn/create/snippets/mailing-tracking-options.html",
-    "destination": "/nl/marketing/mailing/learn/create/snippets/mailing-tracking-options"
-  },
-  {
-    "source": "/nl/marketing/mailing/learn/create/snippets/spf-look-up.html",
-    "destination": "/nl/marketing/mailing/learn/create/snippets/spf-look-up"
-  },
-  {
-    "source": "/nl/marketing/mailing/learn/create/snippets/step-3-content-email.html",
-    "destination": "/nl/marketing/mailing/learn/create/snippets/step-3-content-email"
-  },
-  {
-    "source": "/nl/marketing/mailing/learn/create/snippets/step-4-recipients.html",
-    "destination": "/nl/marketing/mailing/learn/create/snippets/step-4-recipients"
-  },
-  {
-    "source": "/nl/marketing/mailing/learn/create/snippets/step-5-confirm-and-send-mailing.html",
-    "destination": "/nl/marketing/mailing/learn/create/snippets/step-5-confirm-and-send-mailing"
-  },
-  {
-    "source": "/nl/marketing/mailing/learn/create/snippets/tip-mailing-save-draft.html",
-    "destination": "/nl/marketing/mailing/learn/create/snippets/tip-mailing-save-draft"
   },
   {
     "source": "/nl/marketing/mailing/learn/create/tutorial-document-mailing.html",
@@ -24688,10 +23268,6 @@
     "destination": "https://help.superoffice.com/docs/11/nl/search-options/admin/regenerate-index.html"
   },
   {
-    "source": "/nl/search-options/admin/snippets/goto-freetext.html",
-    "destination": "/nl/search-options/admin/snippets/goto-freetext"
-  },
-  {
     "source": "/nl/search-options/admin/stopwords.html",
     "destination": "/nl/search-options/admin/stopwords"
   },
@@ -24714,18 +23290,6 @@
   {
     "source": "/nl/search-options/learn/search-criteria.html",
     "destination": "/nl/search-options/learn/search-criteria"
-  },
-  {
-    "source": "/nl/search-options/learn/snippets/clear-criteria.html",
-    "destination": "/nl/search-options/learn/snippets/clear-criteria"
-  },
-  {
-    "source": "/nl/search-options/learn/snippets/run-search.html",
-    "destination": "/nl/search-options/learn/snippets/run-search"
-  },
-  {
-    "source": "/nl/search-options/learn/snippets/select-field.html",
-    "destination": "/nl/search-options/learn/snippets/select-field"
   },
   {
     "source": "/nl/search-options/selection/learn/add-remove-members-static.html",
@@ -24844,10 +23408,6 @@
     "destination": "/nl/search-options/selection/learn/index"
   },
   {
-    "source": "/nl/search-options/selection/learn/snippets/steps-start-task.html",
-    "destination": "/nl/search-options/selection/learn/snippets/steps-start-task"
-  },
-  {
     "source": "/nl/search-options/selection/learn/static-selections",
     "destination": "/nl/search-options/selection/learn/index"
   },
@@ -24940,70 +23500,6 @@
     "destination": "/nl/security/privacy/learn/send-privacy-confirmation-email"
   },
   {
-    "source": "/nl/snippets/lim-starter.html",
-    "destination": "/nl/snippets/lim-starter"
-  },
-  {
-    "source": "/nl/snippets/note-req-project-mgt.html",
-    "destination": "/nl/snippets/note-req-project-mgt"
-  },
-  {
-    "source": "/nl/snippets/note-req-saint.html",
-    "destination": "/nl/snippets/note-req-saint"
-  },
-  {
-    "source": "/nl/snippets/req-2025-packaging.html",
-    "destination": "/nl/snippets/req-2025-packaging"
-  },
-  {
-    "source": "/nl/snippets/req-cep.html",
-    "destination": "/nl/snippets/req-cep"
-  },
-  {
-    "source": "/nl/snippets/req-core-transition-sales.html",
-    "destination": "/nl/snippets/req-core-transition-sales"
-  },
-  {
-    "source": "/nl/snippets/req-core.html",
-    "destination": "/nl/snippets/req-core"
-  },
-  {
-    "source": "/nl/snippets/req-dev-tools-transition.html",
-    "destination": "/nl/snippets/req-dev-tools-transition"
-  },
-  {
-    "source": "/nl/snippets/req-dev-tools.html",
-    "destination": "/nl/snippets/req-dev-tools"
-  },
-  {
-    "source": "/nl/snippets/req-growth-transition-sales.html",
-    "destination": "/nl/snippets/req-growth-transition-sales"
-  },
-  {
-    "source": "/nl/snippets/req-growth-transition-service.html",
-    "destination": "/nl/snippets/req-growth-transition-service"
-  },
-  {
-    "source": "/nl/snippets/req-growth.html",
-    "destination": "/nl/snippets/req-growth"
-  },
-  {
-    "source": "/nl/snippets/req-plus-transition-marketing.html",
-    "destination": "/nl/snippets/req-plus-transition-marketing"
-  },
-  {
-    "source": "/nl/snippets/req-plus.html",
-    "destination": "/nl/snippets/req-plus"
-  },
-  {
-    "source": "/nl/snippets/req-starter-transition-sales.html",
-    "destination": "/nl/snippets/req-starter-transition-sales"
-  },
-  {
-    "source": "/nl/snippets/starter-transition-service.html",
-    "destination": "/nl/snippets/starter-transition-service"
-  },
-  {
     "source": "/nl/ui/blogic/learn/extra-menus/actions.html",
     "destination": "/nl/ui/blogic/learn/extra-menus/actions"
   },
@@ -25038,14 +23534,6 @@
   {
     "source": "/nl/ui/blogic/learn/screen-properties.html",
     "destination": "/nl/ui/blogic/learn/screen-properties"
-  },
-  {
-    "source": "/nl/ui/blogic/learn/snippets/legacy-extra-menus.html",
-    "destination": "/nl/ui/blogic/learn/snippets/legacy-extra-menus"
-  },
-  {
-    "source": "/nl/ui/blogic/learn/snippets/legacy-profiles.html",
-    "destination": "/nl/ui/blogic/learn/snippets/legacy-profiles"
   },
   {
     "source": "/nl/ui/screen-designer/learn/add-new-layout",
@@ -25222,42 +23710,6 @@
   {
     "source": "/no/admin/import/settings.html",
     "destination": "/no/admin/import/settings"
-  },
-  {
-    "source": "/no/admin/import/snippets/adjust-email-only.html",
-    "destination": "/no/admin/import/snippets/adjust-email-only"
-  },
-  {
-    "source": "/no/admin/import/snippets/caution-backup-before-import.html",
-    "destination": "/no/admin/import/snippets/caution-backup-before-import"
-  },
-  {
-    "source": "/no/admin/import/snippets/configure-import-settings.html",
-    "destination": "/no/admin/import/snippets/configure-import-settings"
-  },
-  {
-    "source": "/no/admin/import/snippets/import-complete.html",
-    "destination": "/no/admin/import/snippets/import-complete"
-  },
-  {
-    "source": "/no/admin/import/snippets/missing-webtools.html",
-    "destination": "/no/admin/import/snippets/missing-webtools"
-  },
-  {
-    "source": "/no/admin/import/snippets/open-import.html",
-    "destination": "/no/admin/import/snippets/open-import"
-  },
-  {
-    "source": "/no/admin/import/snippets/step-concent-comment.html",
-    "destination": "/no/admin/import/snippets/step-concent-comment"
-  },
-  {
-    "source": "/no/admin/import/snippets/step-preview-import.html",
-    "destination": "/no/admin/import/snippets/step-preview-import"
-  },
-  {
-    "source": "/no/admin/import/snippets/troubleshoot-import.html",
-    "destination": "/no/admin/import/snippets/troubleshoot-import"
   },
   {
     "source": "/no/admin/learn/add-system-event",
@@ -25756,22 +24208,6 @@
     "destination": "/no/admin/lists/restore"
   },
   {
-    "source": "/no/admin/lists/snippets/edit-list-item.html",
-    "destination": "/no/admin/lists/snippets/edit-list-item"
-  },
-  {
-    "source": "/no/admin/lists/snippets/expand-list.html",
-    "destination": "/no/admin/lists/snippets/expand-list"
-  },
-  {
-    "source": "/no/admin/lists/snippets/goto-lists.html",
-    "destination": "/no/admin/lists/snippets/goto-lists"
-  },
-  {
-    "source": "/no/admin/lists/snippets/save-or-cancel.html",
-    "destination": "/no/admin/lists/snippets/save-or-cancel"
-  },
-  {
     "source": "/no/admin/lists/specialized-lists.html",
     "destination": "/no/admin/lists/specialized-lists"
   },
@@ -26240,22 +24676,6 @@
     "destination": "/no/admin/user-management/role/update-role"
   },
   {
-    "source": "/no/admin/user-management/snippets/add-remove-right.html",
-    "destination": "/no/admin/user-management/snippets/add-remove-right"
-  },
-  {
-    "source": "/no/admin/user-management/snippets/goto-users.html",
-    "destination": "/no/admin/user-management/snippets/goto-users"
-  },
-  {
-    "source": "/no/admin/user-management/snippets/note-anon-req.html",
-    "destination": "/no/admin/user-management/snippets/note-anon-req"
-  },
-  {
-    "source": "/no/admin/user-management/snippets/open-roles.html",
-    "destination": "/no/admin/user-management/snippets/open-roles"
-  },
-  {
     "source": "/no/admin/user-management/update-user.html",
     "destination": "/no/admin/user-management/update-user"
   },
@@ -26664,14 +25084,6 @@
     "destination": "/no/custom-objects/admin/show-extra-field-on-request-details"
   },
   {
-    "source": "/no/custom-objects/admin/snippets/goto-fields.html",
-    "destination": "/no/custom-objects/admin/snippets/goto-fields"
-  },
-  {
-    "source": "/no/custom-objects/admin/snippets/goto-tables.html",
-    "destination": "/no/custom-objects/admin/snippets/goto-tables"
-  },
-  {
     "source": "/no/custom-objects/learn/extra-field.html",
     "destination": "/no/custom-objects/learn/extra-field"
   },
@@ -26904,10 +25316,6 @@
     "destination": "/no/customization/screen-designer/admin/working-with-tabs"
   },
   {
-    "source": "/no/customization/snippets/web-panels-and-https.html",
-    "destination": "/no/customization/snippets/web-panels-and-https"
-  },
-  {
     "source": "/no/customization/web-panels/admin/add-web-panel.html",
     "destination": "/no/customization/web-panels/admin/add-web-panel"
   },
@@ -27104,18 +25512,6 @@
     "destination": "/no/diary/learn/set-alarm"
   },
   {
-    "source": "/no/diary/learn/snippets/caution-do-not-change-recurring-date.html",
-    "destination": "/no/diary/learn/snippets/caution-do-not-change-recurring-date"
-  },
-  {
-    "source": "/no/diary/learn/snippets/note-edit-followup.html",
-    "destination": "/no/diary/learn/snippets/note-edit-followup"
-  },
-  {
-    "source": "/no/diary/learn/snippets/note-repetition.html",
-    "destination": "/no/diary/learn/snippets/note-repetition"
-  },
-  {
     "source": "/no/diary/learn/video-meetings.html",
     "destination": "/no/diary/learn/video-meetings"
   },
@@ -27162,10 +25558,6 @@
   {
     "source": "/no/document/learn/send-as-email.html",
     "destination": "/no/document/learn/send-as-email"
-  },
-  {
-    "source": "/no/document/learn/snippets/webtools-or-sharepoint.html",
-    "destination": "/no/document/learn/snippets/webtools-or-sharepoint"
   },
   {
     "source": "/no/document/learn/template-variables",
@@ -27354,14 +25746,6 @@
   {
     "source": "/no/email/admin/mailbox/delete-mailbox.html",
     "destination": "/no/email/admin/mailbox/delete-mailbox"
-  },
-  {
-    "source": "/no/email/admin/mailbox/snippets/goto-email.html",
-    "destination": "/no/email/admin/mailbox/snippets/goto-email"
-  },
-  {
-    "source": "/no/email/admin/mailbox/snippets/step-set-language.html",
-    "destination": "/no/email/admin/mailbox/snippets/step-set-language"
   },
   {
     "source": "/no/email/gmail-link/learn/*",
@@ -27648,10 +26032,6 @@
     "destination": "/no/localization/learn/translate-fields"
   },
   {
-    "source": "/no/globalization-and-localization/snippets/table-legacy-language-codes.html",
-    "destination": "/no/globalization-and-localization/snippets/table-legacy-language-codes"
-  },
-  {
     "source": "/no/knowledge-base/learn/email-addresses.html",
     "destination": "/no/knowledge-base/learn/email-addresses"
   },
@@ -27896,66 +26276,6 @@
     "destination": "/no/learn/section-tabs/send-email"
   },
   {
-    "source": "/no/learn/snippets/faq-vs-reply-template.html",
-    "destination": "/no/learn/snippets/faq-vs-reply-template"
-  },
-  {
-    "source": "/no/learn/snippets/goto-company.html",
-    "destination": "/no/learn/snippets/goto-company"
-  },
-  {
-    "source": "/no/learn/snippets/goto-contact.html",
-    "destination": "/no/learn/snippets/goto-contact"
-  },
-  {
-    "source": "/no/learn/snippets/goto-sm.html",
-    "destination": "/no/learn/snippets/goto-sm"
-  },
-  {
-    "source": "/no/learn/snippets/image-type-and-size.html",
-    "destination": "/no/learn/snippets/image-type-and-size"
-  },
-  {
-    "source": "/no/learn/snippets/more-tab.html",
-    "destination": "/no/learn/snippets/more-tab"
-  },
-  {
-    "source": "/no/learn/snippets/more-udef.html",
-    "destination": "/no/learn/snippets/more-udef"
-  },
-  {
-    "source": "/no/learn/snippets/note-insufficient-rights.html",
-    "destination": "/no/learn/snippets/note-insufficient-rights"
-  },
-  {
-    "source": "/no/learn/snippets/note-req-manage-entities.html",
-    "destination": "/no/learn/snippets/note-req-manage-entities"
-  },
-  {
-    "source": "/no/learn/snippets/note-restore.html",
-    "destination": "/no/learn/snippets/note-restore"
-  },
-  {
-    "source": "/no/learn/snippets/req-admin.html",
-    "destination": "/no/learn/snippets/req-admin"
-  },
-  {
-    "source": "/no/learn/snippets/select-action-on-activity.html",
-    "destination": "/no/learn/snippets/select-action-on-activity"
-  },
-  {
-    "source": "/no/learn/snippets/table-relations-tab-columns.html",
-    "destination": "/no/learn/snippets/table-relations-tab-columns"
-  },
-  {
-    "source": "/no/learn/snippets/tip-configure-columns.html",
-    "destination": "/no/learn/snippets/tip-configure-columns"
-  },
-  {
-    "source": "/no/learn/snippets/tip-deletion.html",
-    "destination": "/no/learn/snippets/tip-deletion"
-  },
-  {
     "source": "/no/localization/admin/add-customer-language.html",
     "destination": "/no/localization/admin/add-customer-language"
   },
@@ -28116,10 +26436,6 @@
     "destination": "/en/marketing/forms/learn/recaptcha"
   },
   {
-    "source": "/no/marketing/forms/learn/snippets/tip-show-toolbar-open-editor.html",
-    "destination": "/no/marketing/forms/learn/snippets/tip-show-toolbar-open-editor"
-  },
-  {
     "source": "/no/marketing/forms/learn/submissions/index",
     "destination": "/no/marketing/forms/learn/index"
   },
@@ -28204,14 +26520,6 @@
     "destination": "/no/marketing/learn/index"
   },
   {
-    "source": "/no/marketing/learn/snippets/mailing-settings-sms.html",
-    "destination": "/no/marketing/learn/snippets/mailing-settings-sms"
-  },
-  {
-    "source": "/no/marketing/learn/snippets/mailing-smtp-fields.html",
-    "destination": "/no/marketing/learn/snippets/mailing-smtp-fields"
-  },
-  {
     "source": "/no/marketing/learn/work-with-messages-and-templates",
     "destination": "/no/marketing/learn/message-templates"
   },
@@ -28238,34 +26546,6 @@
   {
     "source": "/no/marketing/mailing/learn/create/send-test-email.html",
     "destination": "/no/marketing/mailing/learn/create/send-test-email"
-  },
-  {
-    "source": "/no/marketing/mailing/learn/create/snippets/mailing-choose-template.html",
-    "destination": "/no/marketing/mailing/learn/create/snippets/mailing-choose-template"
-  },
-  {
-    "source": "/no/marketing/mailing/learn/create/snippets/mailing-tracking-options.html",
-    "destination": "/no/marketing/mailing/learn/create/snippets/mailing-tracking-options"
-  },
-  {
-    "source": "/no/marketing/mailing/learn/create/snippets/spf-look-up.html",
-    "destination": "/no/marketing/mailing/learn/create/snippets/spf-look-up"
-  },
-  {
-    "source": "/no/marketing/mailing/learn/create/snippets/step-3-content-email.html",
-    "destination": "/no/marketing/mailing/learn/create/snippets/step-3-content-email"
-  },
-  {
-    "source": "/no/marketing/mailing/learn/create/snippets/step-4-recipients.html",
-    "destination": "/no/marketing/mailing/learn/create/snippets/step-4-recipients"
-  },
-  {
-    "source": "/no/marketing/mailing/learn/create/snippets/step-5-confirm-and-send-mailing.html",
-    "destination": "/no/marketing/mailing/learn/create/snippets/step-5-confirm-and-send-mailing"
-  },
-  {
-    "source": "/no/marketing/mailing/learn/create/snippets/tip-mailing-save-draft.html",
-    "destination": "/no/marketing/mailing/learn/create/snippets/tip-mailing-save-draft"
   },
   {
     "source": "/no/marketing/mailing/learn/create/tutorial-document-mailing.html",
@@ -29364,10 +27644,6 @@
     "destination": "https://help.superoffice.com/docs/11/no/search-options/admin/regenerate-index.html"
   },
   {
-    "source": "/no/search-options/admin/snippets/goto-freetext.html",
-    "destination": "/no/search-options/admin/snippets/goto-freetext"
-  },
-  {
     "source": "/no/search-options/admin/stopwords.html",
     "destination": "/no/search-options/admin/stopwords"
   },
@@ -29390,18 +27666,6 @@
   {
     "source": "/no/search-options/learn/search-criteria.html",
     "destination": "/no/search-options/learn/search-criteria"
-  },
-  {
-    "source": "/no/search-options/learn/snippets/clear-criteria.html",
-    "destination": "/no/search-options/learn/snippets/clear-criteria"
-  },
-  {
-    "source": "/no/search-options/learn/snippets/run-search.html",
-    "destination": "/no/search-options/learn/snippets/run-search"
-  },
-  {
-    "source": "/no/search-options/learn/snippets/select-field.html",
-    "destination": "/no/search-options/learn/snippets/select-field"
   },
   {
     "source": "/no/search-options/selection/learn/add-remove-members-static.html",
@@ -29520,10 +27784,6 @@
     "destination": "/no/search-options/selection/learn/index"
   },
   {
-    "source": "/no/search-options/selection/learn/snippets/steps-start-task.html",
-    "destination": "/no/search-options/selection/learn/snippets/steps-start-task"
-  },
-  {
     "source": "/no/search-options/selection/learn/static-selections",
     "destination": "/no/search-options/selection/learn/index"
   },
@@ -29616,70 +27876,6 @@
     "destination": "/no/security/privacy/learn/send-privacy-confirmation-email"
   },
   {
-    "source": "/no/snippets/lim-starter.html",
-    "destination": "/no/snippets/lim-starter"
-  },
-  {
-    "source": "/no/snippets/note-req-project-mgt.html",
-    "destination": "/no/snippets/note-req-project-mgt"
-  },
-  {
-    "source": "/no/snippets/note-req-saint.html",
-    "destination": "/no/snippets/note-req-saint"
-  },
-  {
-    "source": "/no/snippets/req-2025-packaging.html",
-    "destination": "/no/snippets/req-2025-packaging"
-  },
-  {
-    "source": "/no/snippets/req-cep.html",
-    "destination": "/no/snippets/req-cep"
-  },
-  {
-    "source": "/no/snippets/req-core-transition-sales.html",
-    "destination": "/no/snippets/req-core-transition-sales"
-  },
-  {
-    "source": "/no/snippets/req-core.html",
-    "destination": "/no/snippets/req-core"
-  },
-  {
-    "source": "/no/snippets/req-dev-tools-transition.html",
-    "destination": "/no/snippets/req-dev-tools-transition"
-  },
-  {
-    "source": "/no/snippets/req-dev-tools.html",
-    "destination": "/no/snippets/req-dev-tools"
-  },
-  {
-    "source": "/no/snippets/req-growth-transition-sales.html",
-    "destination": "/no/snippets/req-growth-transition-sales"
-  },
-  {
-    "source": "/no/snippets/req-growth-transition-service.html",
-    "destination": "/no/snippets/req-growth-transition-service"
-  },
-  {
-    "source": "/no/snippets/req-growth.html",
-    "destination": "/no/snippets/req-growth"
-  },
-  {
-    "source": "/no/snippets/req-plus-transition-marketing.html",
-    "destination": "/no/snippets/req-plus-transition-marketing"
-  },
-  {
-    "source": "/no/snippets/req-plus.html",
-    "destination": "/no/snippets/req-plus"
-  },
-  {
-    "source": "/no/snippets/req-starter-transition-sales.html",
-    "destination": "/no/snippets/req-starter-transition-sales"
-  },
-  {
-    "source": "/no/snippets/starter-transition-service.html",
-    "destination": "/no/snippets/starter-transition-service"
-  },
-  {
     "source": "/no/ui/blogic/learn/extra-menus/actions.html",
     "destination": "/no/ui/blogic/learn/extra-menus/actions"
   },
@@ -29714,14 +27910,6 @@
   {
     "source": "/no/ui/blogic/learn/screen-properties.html",
     "destination": "/no/ui/blogic/learn/screen-properties"
-  },
-  {
-    "source": "/no/ui/blogic/learn/snippets/legacy-extra-menus.html",
-    "destination": "/no/ui/blogic/learn/snippets/legacy-extra-menus"
-  },
-  {
-    "source": "/no/ui/blogic/learn/snippets/legacy-profiles.html",
-    "destination": "/no/ui/blogic/learn/snippets/legacy-profiles"
   },
   {
     "source": "/no/ui/screen-designer/learn/add-new-layout",
@@ -30408,42 +28596,6 @@
     "destination": "/sv/admin/import/settings"
   },
   {
-    "source": "/sv/admin/import/snippets/adjust-email-only.html",
-    "destination": "/sv/admin/import/snippets/adjust-email-only"
-  },
-  {
-    "source": "/sv/admin/import/snippets/caution-backup-before-import.html",
-    "destination": "/sv/admin/import/snippets/caution-backup-before-import"
-  },
-  {
-    "source": "/sv/admin/import/snippets/configure-import-settings.html",
-    "destination": "/sv/admin/import/snippets/configure-import-settings"
-  },
-  {
-    "source": "/sv/admin/import/snippets/import-complete.html",
-    "destination": "/sv/admin/import/snippets/import-complete"
-  },
-  {
-    "source": "/sv/admin/import/snippets/missing-webtools.html",
-    "destination": "/sv/admin/import/snippets/missing-webtools"
-  },
-  {
-    "source": "/sv/admin/import/snippets/open-import.html",
-    "destination": "/sv/admin/import/snippets/open-import"
-  },
-  {
-    "source": "/sv/admin/import/snippets/step-concent-comment.html",
-    "destination": "/sv/admin/import/snippets/step-concent-comment"
-  },
-  {
-    "source": "/sv/admin/import/snippets/step-preview-import.html",
-    "destination": "/sv/admin/import/snippets/step-preview-import"
-  },
-  {
-    "source": "/sv/admin/import/snippets/troubleshoot-import.html",
-    "destination": "/sv/admin/import/snippets/troubleshoot-import"
-  },
-  {
     "source": "/sv/admin/learn/add-system-event",
     "destination": "https://help.superoffice.com/docs/11/sv/admin/onsite/add-system-event.html"
   },
@@ -30940,22 +29092,6 @@
     "destination": "/sv/admin/lists/restore"
   },
   {
-    "source": "/sv/admin/lists/snippets/edit-list-item.html",
-    "destination": "/sv/admin/lists/snippets/edit-list-item"
-  },
-  {
-    "source": "/sv/admin/lists/snippets/expand-list.html",
-    "destination": "/sv/admin/lists/snippets/expand-list"
-  },
-  {
-    "source": "/sv/admin/lists/snippets/goto-lists.html",
-    "destination": "/sv/admin/lists/snippets/goto-lists"
-  },
-  {
-    "source": "/sv/admin/lists/snippets/save-or-cancel.html",
-    "destination": "/sv/admin/lists/snippets/save-or-cancel"
-  },
-  {
     "source": "/sv/admin/lists/specialized-lists.html",
     "destination": "/sv/admin/lists/specialized-lists"
   },
@@ -31424,22 +29560,6 @@
     "destination": "/sv/admin/user-management/role/update-role"
   },
   {
-    "source": "/sv/admin/user-management/snippets/add-remove-right.html",
-    "destination": "/sv/admin/user-management/snippets/add-remove-right"
-  },
-  {
-    "source": "/sv/admin/user-management/snippets/goto-users.html",
-    "destination": "/sv/admin/user-management/snippets/goto-users"
-  },
-  {
-    "source": "/sv/admin/user-management/snippets/note-anon-req.html",
-    "destination": "/sv/admin/user-management/snippets/note-anon-req"
-  },
-  {
-    "source": "/sv/admin/user-management/snippets/open-roles.html",
-    "destination": "/sv/admin/user-management/snippets/open-roles"
-  },
-  {
     "source": "/sv/admin/user-management/update-user.html",
     "destination": "/sv/admin/user-management/update-user"
   },
@@ -31840,14 +29960,6 @@
     "destination": "/sv/custom-objects/admin/show-extra-field-on-request-details"
   },
   {
-    "source": "/sv/custom-objects/admin/snippets/goto-fields.html",
-    "destination": "/sv/custom-objects/admin/snippets/goto-fields"
-  },
-  {
-    "source": "/sv/custom-objects/admin/snippets/goto-tables.html",
-    "destination": "/sv/custom-objects/admin/snippets/goto-tables"
-  },
-  {
     "source": "/sv/custom-objects/learn/extra-field.html",
     "destination": "/sv/custom-objects/learn/extra-field"
   },
@@ -32080,10 +30192,6 @@
     "destination": "/sv/customization/screen-designer/admin/working-with-tabs"
   },
   {
-    "source": "/sv/customization/snippets/web-panels-and-https.html",
-    "destination": "/sv/customization/snippets/web-panels-and-https"
-  },
-  {
     "source": "/sv/customization/web-panels/admin/add-web-panel.html",
     "destination": "/sv/customization/web-panels/admin/add-web-panel"
   },
@@ -32280,18 +30388,6 @@
     "destination": "/sv/diary/learn/set-alarm"
   },
   {
-    "source": "/sv/diary/learn/snippets/caution-do-not-change-recurring-date.html",
-    "destination": "/sv/diary/learn/snippets/caution-do-not-change-recurring-date"
-  },
-  {
-    "source": "/sv/diary/learn/snippets/note-edit-followup.html",
-    "destination": "/sv/diary/learn/snippets/note-edit-followup"
-  },
-  {
-    "source": "/sv/diary/learn/snippets/note-repetition.html",
-    "destination": "/sv/diary/learn/snippets/note-repetition"
-  },
-  {
     "source": "/sv/diary/learn/video-meetings.html",
     "destination": "/sv/diary/learn/video-meetings"
   },
@@ -32338,10 +30434,6 @@
   {
     "source": "/sv/document/learn/send-as-email.html",
     "destination": "/sv/document/learn/send-as-email"
-  },
-  {
-    "source": "/sv/document/learn/snippets/webtools-or-sharepoint.html",
-    "destination": "/sv/document/learn/snippets/webtools-or-sharepoint"
   },
   {
     "source": "/sv/document/learn/template-variables",
@@ -32530,14 +30622,6 @@
   {
     "source": "/sv/email/admin/mailbox/delete-mailbox.html",
     "destination": "/sv/email/admin/mailbox/delete-mailbox"
-  },
-  {
-    "source": "/sv/email/admin/mailbox/snippets/goto-email.html",
-    "destination": "/sv/email/admin/mailbox/snippets/goto-email"
-  },
-  {
-    "source": "/sv/email/admin/mailbox/snippets/step-set-language.html",
-    "destination": "/sv/email/admin/mailbox/snippets/step-set-language"
   },
   {
     "source": "/sv/email/gmail-link/learn/*",
@@ -32824,10 +30908,6 @@
     "destination": "/sv/localization/learn/translate-fields"
   },
   {
-    "source": "/sv/globalization-and-localization/snippets/table-legacy-language-codes.html",
-    "destination": "/sv/globalization-and-localization/snippets/table-legacy-language-codes"
-  },
-  {
     "source": "/sv/knowledge-base/learn/email-addresses.html",
     "destination": "/sv/knowledge-base/learn/email-addresses"
   },
@@ -33072,66 +31152,6 @@
     "destination": "/sv/learn/section-tabs/send-email"
   },
   {
-    "source": "/sv/learn/snippets/faq-vs-reply-template.html",
-    "destination": "/sv/learn/snippets/faq-vs-reply-template"
-  },
-  {
-    "source": "/sv/learn/snippets/goto-company.html",
-    "destination": "/sv/learn/snippets/goto-company"
-  },
-  {
-    "source": "/sv/learn/snippets/goto-contact.html",
-    "destination": "/sv/learn/snippets/goto-contact"
-  },
-  {
-    "source": "/sv/learn/snippets/goto-sm.html",
-    "destination": "/sv/learn/snippets/goto-sm"
-  },
-  {
-    "source": "/sv/learn/snippets/image-type-and-size.html",
-    "destination": "/sv/learn/snippets/image-type-and-size"
-  },
-  {
-    "source": "/sv/learn/snippets/more-tab.html",
-    "destination": "/sv/learn/snippets/more-tab"
-  },
-  {
-    "source": "/sv/learn/snippets/more-udef.html",
-    "destination": "/sv/learn/snippets/more-udef"
-  },
-  {
-    "source": "/sv/learn/snippets/note-insufficient-rights.html",
-    "destination": "/sv/learn/snippets/note-insufficient-rights"
-  },
-  {
-    "source": "/sv/learn/snippets/note-req-manage-entities.html",
-    "destination": "/sv/learn/snippets/note-req-manage-entities"
-  },
-  {
-    "source": "/sv/learn/snippets/note-restore.html",
-    "destination": "/sv/learn/snippets/note-restore"
-  },
-  {
-    "source": "/sv/learn/snippets/req-admin.html",
-    "destination": "/sv/learn/snippets/req-admin"
-  },
-  {
-    "source": "/sv/learn/snippets/select-action-on-activity.html",
-    "destination": "/sv/learn/snippets/select-action-on-activity"
-  },
-  {
-    "source": "/sv/learn/snippets/table-relations-tab-columns.html",
-    "destination": "/sv/learn/snippets/table-relations-tab-columns"
-  },
-  {
-    "source": "/sv/learn/snippets/tip-configure-columns.html",
-    "destination": "/sv/learn/snippets/tip-configure-columns"
-  },
-  {
-    "source": "/sv/learn/snippets/tip-deletion.html",
-    "destination": "/sv/learn/snippets/tip-deletion"
-  },
-  {
     "source": "/sv/localization/admin/add-customer-language.html",
     "destination": "/sv/localization/admin/add-customer-language"
   },
@@ -33296,10 +31316,6 @@
     "destination": "/en/marketing/forms/learn/recaptcha"
   },
   {
-    "source": "/sv/marketing/forms/learn/snippets/tip-show-toolbar-open-editor.html",
-    "destination": "/sv/marketing/forms/learn/snippets/tip-show-toolbar-open-editor"
-  },
-  {
     "source": "/sv/marketing/forms/learn/submissions/index",
     "destination": "/sv/marketing/forms/learn/index"
   },
@@ -33384,14 +31400,6 @@
     "destination": "/sv/marketing/learn/index"
   },
   {
-    "source": "/sv/marketing/learn/snippets/mailing-settings-sms.html",
-    "destination": "/sv/marketing/learn/snippets/mailing-settings-sms"
-  },
-  {
-    "source": "/sv/marketing/learn/snippets/mailing-smtp-fields.html",
-    "destination": "/sv/marketing/learn/snippets/mailing-smtp-fields"
-  },
-  {
     "source": "/sv/marketing/learn/work-with-messages-and-templates",
     "destination": "/sv/marketing/learn/message-templates"
   },
@@ -33418,34 +31426,6 @@
   {
     "source": "/sv/marketing/mailing/learn/create/send-test-email.html",
     "destination": "/sv/marketing/mailing/learn/create/send-test-email"
-  },
-  {
-    "source": "/sv/marketing/mailing/learn/create/snippets/mailing-choose-template.html",
-    "destination": "/sv/marketing/mailing/learn/create/snippets/mailing-choose-template"
-  },
-  {
-    "source": "/sv/marketing/mailing/learn/create/snippets/mailing-tracking-options.html",
-    "destination": "/sv/marketing/mailing/learn/create/snippets/mailing-tracking-options"
-  },
-  {
-    "source": "/sv/marketing/mailing/learn/create/snippets/spf-look-up.html",
-    "destination": "/sv/marketing/mailing/learn/create/snippets/spf-look-up"
-  },
-  {
-    "source": "/sv/marketing/mailing/learn/create/snippets/step-3-content-email.html",
-    "destination": "/sv/marketing/mailing/learn/create/snippets/step-3-content-email"
-  },
-  {
-    "source": "/sv/marketing/mailing/learn/create/snippets/step-4-recipients.html",
-    "destination": "/sv/marketing/mailing/learn/create/snippets/step-4-recipients"
-  },
-  {
-    "source": "/sv/marketing/mailing/learn/create/snippets/step-5-confirm-and-send-mailing.html",
-    "destination": "/sv/marketing/mailing/learn/create/snippets/step-5-confirm-and-send-mailing"
-  },
-  {
-    "source": "/sv/marketing/mailing/learn/create/snippets/tip-mailing-save-draft.html",
-    "destination": "/sv/marketing/mailing/learn/create/snippets/tip-mailing-save-draft"
   },
   {
     "source": "/sv/marketing/mailing/learn/create/tutorial-document-mailing.html",
@@ -34544,10 +32524,6 @@
     "destination": "https://help.superoffice.com/docs/11/sv/search-options/admin/regenerate-index.html"
   },
   {
-    "source": "/sv/search-options/admin/snippets/goto-freetext.html",
-    "destination": "/sv/search-options/admin/snippets/goto-freetext"
-  },
-  {
     "source": "/sv/search-options/admin/stopwords.html",
     "destination": "/sv/search-options/admin/stopwords"
   },
@@ -34570,18 +32546,6 @@
   {
     "source": "/sv/search-options/learn/search-criteria.html",
     "destination": "/sv/search-options/learn/search-criteria"
-  },
-  {
-    "source": "/sv/search-options/learn/snippets/clear-criteria.html",
-    "destination": "/sv/search-options/learn/snippets/clear-criteria"
-  },
-  {
-    "source": "/sv/search-options/learn/snippets/run-search.html",
-    "destination": "/sv/search-options/learn/snippets/run-search"
-  },
-  {
-    "source": "/sv/search-options/learn/snippets/select-field.html",
-    "destination": "/sv/search-options/learn/snippets/select-field"
   },
   {
     "source": "/sv/search-options/selection/learn/add-remove-members-static.html",
@@ -34700,10 +32664,6 @@
     "destination": "/sv/search-options/selection/learn/index"
   },
   {
-    "source": "/sv/search-options/selection/learn/snippets/steps-start-task.html",
-    "destination": "/sv/search-options/selection/learn/snippets/steps-start-task"
-  },
-  {
     "source": "/sv/search-options/selection/learn/static-selections",
     "destination": "/sv/search-options/selection/learn/index"
   },
@@ -34796,70 +32756,6 @@
     "destination": "/sv/security/privacy/learn/send-privacy-confirmation-email"
   },
   {
-    "source": "/sv/snippets/lim-starter.html",
-    "destination": "/sv/snippets/lim-starter"
-  },
-  {
-    "source": "/sv/snippets/note-req-project-mgt.html",
-    "destination": "/sv/snippets/note-req-project-mgt"
-  },
-  {
-    "source": "/sv/snippets/note-req-saint.html",
-    "destination": "/sv/snippets/note-req-saint"
-  },
-  {
-    "source": "/sv/snippets/req-2025-packaging.html",
-    "destination": "/sv/snippets/req-2025-packaging"
-  },
-  {
-    "source": "/sv/snippets/req-cep.html",
-    "destination": "/sv/snippets/req-cep"
-  },
-  {
-    "source": "/sv/snippets/req-core-transition-sales.html",
-    "destination": "/sv/snippets/req-core-transition-sales"
-  },
-  {
-    "source": "/sv/snippets/req-core.html",
-    "destination": "/sv/snippets/req-core"
-  },
-  {
-    "source": "/sv/snippets/req-dev-tools-transition.html",
-    "destination": "/sv/snippets/req-dev-tools-transition"
-  },
-  {
-    "source": "/sv/snippets/req-dev-tools.html",
-    "destination": "/sv/snippets/req-dev-tools"
-  },
-  {
-    "source": "/sv/snippets/req-growth-transition-sales.html",
-    "destination": "/sv/snippets/req-growth-transition-sales"
-  },
-  {
-    "source": "/sv/snippets/req-growth-transition-service.html",
-    "destination": "/sv/snippets/req-growth-transition-service"
-  },
-  {
-    "source": "/sv/snippets/req-growth.html",
-    "destination": "/sv/snippets/req-growth"
-  },
-  {
-    "source": "/sv/snippets/req-plus-transition-marketing.html",
-    "destination": "/sv/snippets/req-plus-transition-marketing"
-  },
-  {
-    "source": "/sv/snippets/req-plus.html",
-    "destination": "/sv/snippets/req-plus"
-  },
-  {
-    "source": "/sv/snippets/req-starter-transition-sales.html",
-    "destination": "/sv/snippets/req-starter-transition-sales"
-  },
-  {
-    "source": "/sv/snippets/starter-transition-service.html",
-    "destination": "/sv/snippets/starter-transition-service"
-  },
-  {
     "source": "/sv/ui/blogic/learn/extra-menus/actions.html",
     "destination": "/sv/ui/blogic/learn/extra-menus/actions"
   },
@@ -34894,14 +32790,6 @@
   {
     "source": "/sv/ui/blogic/learn/screen-properties.html",
     "destination": "/sv/ui/blogic/learn/screen-properties"
-  },
-  {
-    "source": "/sv/ui/blogic/learn/snippets/legacy-extra-menus.html",
-    "destination": "/sv/ui/blogic/learn/snippets/legacy-extra-menus"
-  },
-  {
-    "source": "/sv/ui/blogic/learn/snippets/legacy-profiles.html",
-    "destination": "/sv/ui/blogic/learn/snippets/legacy-profiles"
   },
   {
     "source": "/sv/ui/screen-designer/learn/add-new-layout",
