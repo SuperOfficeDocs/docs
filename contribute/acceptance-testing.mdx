@@ -4,7 +4,7 @@ title: Acceptance testing
 description: The repeatable checklist to run after any refactor, design change, or site reorg - what's automated (link/redirect/image/accessibility/encoding checks, a scripted page sweep), what needs a manual look, and the known blind spots of each.
 keywords: ['acceptance testing', 'smoke test', 'broken links', 'redirects', 'accessibility', 'a11y', 'language leakage', 'encoding']
 author: digitaldiina
-date: 08.13.2026
+date: 08.27.2026
 content_type: how-to
 related:
   - /contribute/automated-tests
@@ -25,7 +25,7 @@ These run from the repository root with no browser needed. Several use the Vale 
 | Image references | `python tools/check-image-references.py` | Every markdown/reference-style/HTML image reference resolves to a real file - catches the leftover-relative-path class of bug the root-absolute media convention should have eliminated |
 | Encoding corruption | `python tools/check-encoding.py` | Invalid UTF-8 and mojibake substrings (double-encoded accented characters, corrupted smart quotes) across every language |
 | Language leakage (proxy) | `python tools/check-vale-spelling-density.py --vale <path-to-vale.exe>` | Flags files whose per-language Hunspell spelling-alert density is a statistical outlier versus that language's own median - a real signal without adding a new dependency |
-| Redirects against a live site | `python tools/check-redirects-live.py --base-url <site-url>` | Every non-wildcard `config/redirects.json` entry actually resolves, and lands on the expected page - not just that the JSON is well-formed |
+| Redirects against a live site | `python tools/check-redirects-live.py --base-url <site-url>` | Every non-wildcard `config/redirects.json` entry actually resolves and lands on the expected page - both the bare source and, where applicable, its `.html`-suffixed form - not just that the JSON is well-formed |
 | Nav paths resolve | `python tools/verify-nav-paths.py <config/nav-*.json>` | Every page referenced in nav exists on disk (already used elsewhere, listed here for completeness) |
 
 ### Known limitations
