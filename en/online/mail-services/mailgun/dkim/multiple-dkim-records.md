@@ -17,10 +17,10 @@ userflow_index: true
 language: en
 ---
 
-In SuperOffice Online using Mailgun, a tenant can request DKIM keys for multiple sending domains - for example separate brands or country-specific addresses - so each domain is signed by its own DKIM key instead of sharing one key across the environment. Without multiple DKIM, all outgoing mail is signed with a single domain's key, even when sent from a different brand or country-specific address, which weakens DKIM and DMARC verification for any other domain and can affect deliverability.
+In SuperOffice Online using Mailgun, a tenant can request DKIM keys for multiple sending domains, for example separate brands or country-specific addresses, so each domain is signed by its own DKIM key instead of sharing one key across the environment. Without multiple DKIM, all outgoing mail is signed with a single domain's key, even when sent from a different brand or country-specific address, which weakens DKIM and DMARC verification for any other domain and can affect deliverability.
 
 <Note>
-Multiple DKIM records is available as part of an ongoing pilot. Contact SuperOffice if you'd like to set this up for your organization.
+Multiple DKIM records is available as part of an ongoing pilot. Contact SuperOffice if you would like to set this up for your organization.
 </Note>
 
 [SPF][3] should be configured for all the domains a customer plans to use as a sender.
@@ -33,11 +33,11 @@ Switching away from Mailgun for outgoing emails complicates bounce and complaint
 
 ## Request multiple DKIM records
 
-1. [Fill in the DKIM order form][4] for each sending domain, listing every domain in the request - for example `brand1.com`, `brand2.com`, and `brand3.no`.
-2. SuperOffice creates the domains in Mailgun, generates a DKIM key for each one, and replies with the DNS records to add.
-3. Add the DNS records for each domain to your DNS, following the [DKIM][5] and [SPF][3] setup guides.
-4. SuperOffice confirms the records are valid once they've propagated.
-5. Add the domain in **Settings and maintenance** > **Lists** > **Mailing domains**, and add your mailbox in **Settings and maintenance** > **Requests** > **E-mail**.
+1. [Fill in the DKIM order form][4] for each sending domain, listing every domain in the request, for example `brand1.com`, `brand2.com`, and `brand3.no`.
+1. SuperOffice creates the domains in Mailgun, generates a DKIM key for each one, and replies with the DNS records to add.
+1. Add the DNS records for each domain to your DNS, following the [DKIM][5] and [SPF][3] setup guides.
+1. SuperOffice confirms the records are valid once they have propagated.
+1. Add the domain in **Settings and maintenance** > **Lists** > **Mailing domains**, and add your mailbox in **Settings and maintenance** > **Requests** > **E-mail**.
 
 ## Mailgun vs. custom SMTP
 
