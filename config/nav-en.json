@@ -60,11 +60,13 @@
         "groups": [
           {
             "group": "Developer portal",
+            "root": "en/developer-portal/index",
             "pages": [
               "en/developer-portal/about",
               "en/developer-portal/widgets/index",
               {
                 "group": "Getting started",
+                "root": "en/developer-portal/getting-started/index",
                 "pages": [
                   "en/developer-portal/getting-started/get-access-to-sod",
                   "en/developer-portal/getting-started/quickstart",
@@ -90,6 +92,7 @@
                   "en/developer-portal/create-app/versioning",
                   {
                     "group": "Configuration",
+                    "root": "en/developer-portal/create-app/config/index",
                     "pages": [
                       "en/developer-portal/create-app/config/find-clientid",
                       "en/developer-portal/create-app/config/get-client-secret",
@@ -108,6 +111,7 @@
               },
               {
                 "group": "Custom app",
+                "root": "en/developer-portal/custom-app/index",
                 "pages": [
                   "en/developer-portal/custom-app/checklist",
                   "en/developer-portal/custom-app/validate",
@@ -120,6 +124,7 @@
                   "en/developer-portal/standard-app/index",
                   {
                     "group": "Requirements",
+                    "root": "en/developer-portal/standard-app/requirements/index",
                     "pages": [
                       "en/developer-portal/standard-app/requirements/business",
                       "en/developer-portal/standard-app/requirements/design",
@@ -132,6 +137,7 @@
                   },
                   {
                     "group": "Certification",
+                    "root": "en/developer-portal/standard-app/certification/index",
                     "pages": [
                       "en/developer-portal/standard-app/certification/initial-security-eval",
                       "en/developer-portal/standard-app/certification/checklist",
@@ -141,6 +147,7 @@
                   },
                   {
                     "group": "App store",
+                    "root": "en/developer-portal/standard-app/app-store/index",
                     "pages": [
                       "en/developer-portal/standard-app/app-store/app-store-info",
                       "en/developer-portal/standard-app/app-store/update-partner-profile",
@@ -157,9 +164,11 @@
               },
               {
                 "group": "Best practices",
+                "root": "en/developer-portal/best-practices/index",
                 "pages": [
                   {
                     "group": "Tenant status",
+                    "root": "en/developer-portal/best-practices/tenant-status/index",
                     "pages": [
                       "en/developer-portal/best-practices/tenant-status/check-status",
                       "en/developer-portal/best-practices/tenant-status/get-notifications"
@@ -185,6 +194,7 @@
               },
               {
                 "group": "Provisioning",
+                "root": "en/developer-portal/provisioning/index",
                 "pages": [
                   "en/developer-portal/provisioning/consent",
                   "en/developer-portal/provisioning/get-consent",
@@ -194,6 +204,7 @@
               },
               {
                 "group": "Tenant management",
+                "root": "en/developer-portal/tenants/index",
                 "pages": [
                   "en/developer-portal/tenants/info",
                   "en/developer-portal/tenants/authorization",
@@ -211,6 +222,7 @@
               },
               {
                 "group": "FAQ",
+                "root": "en/developer-portal/faq/index",
                 "pages": [
                   "en/developer-portal/faq/format-text",
                   "en/developer-portal/faq/update-contact-person",
@@ -234,6 +246,7 @@
               "en/automation/overview",
               {
                 "group": "Chatbot",
+                "root": "en/automation/chatbot/index",
                 "pages": [
                   "en/automation/chatbot/registration",
                   "en/automation/chatbot/sessions",
@@ -243,6 +256,7 @@
               },
               {
                 "group": "CRMScript",
+                "root": "en/automation/crmscript/index",
                 "pages": [
                   {
                     "group": "Introduction",
@@ -312,6 +326,7 @@
                   },
                   {
                     "group": "Debugging",
+                    "root": "en/automation/crmscript/debugging/index",
                     "pages": [
                       "en/automation/crmscript/debugging/built-in-debugger",
                       "en/automation/crmscript/debugging/log-messages",
@@ -349,6 +364,7 @@
                       },
                       {
                         "group": "Addresses",
+                        "root": "en/automation/crmscript/howto/address/index",
                         "pages": [
                           "en/automation/crmscript/howto/address/get-address",
                           "en/automation/crmscript/howto/address/set-address"
@@ -356,6 +372,7 @@
                       },
                       {
                         "group": "Company",
+                        "root": "en/automation/crmscript/howto/company/index",
                         "pages": [
                           "en/automation/crmscript/howto/company/create-company",
                           "en/automation/crmscript/howto/company/get-company",
@@ -364,6 +381,7 @@
                       },
                       {
                         "group": "Contact (customer, person, user)",
+                        "root": "en/automation/crmscript/howto/contact/index",
                         "pages": [
                           "en/automation/crmscript/howto/contact/create-customer",
                           "en/automation/crmscript/howto/contact/get-customer",
@@ -384,6 +402,7 @@
                       },
                       {
                         "group": "Diary and follow-ups",
+                        "root": "en/automation/crmscript/howto/diary/index",
                         "pages": [
                           "en/automation/crmscript/howto/diary/get-appointment",
                           "en/automation/crmscript/howto/diary/create-appointment",
@@ -404,6 +423,7 @@
                       },
                       {
                         "group": "Documents",
+                        "root": "en/automation/crmscript/howto/document/index",
                         "pages": [
                           "en/automation/crmscript/howto/document/properties",
                           "en/automation/crmscript/howto/document/file",
@@ -426,6 +446,7 @@
                       },
                       {
                         "group": "Projects",
+                        "root": "en/automation/crmscript/howto/project/index",
                         "pages": [
                           "en/automation/crmscript/howto/project/create",
                           "en/automation/crmscript/howto/project/get",
@@ -437,6 +458,7 @@
                       },
                       {
                         "group": "Quote",
+                        "root": "en/automation/crmscript/howto/quote/index",
                         "pages": [
                           "en/automation/crmscript/howto/quote/create",
                           "en/automation/crmscript/howto/quote/add-alternative",
@@ -452,6 +474,7 @@
                       },
                       {
                         "group": "Request",
+                        "root": "en/automation/crmscript/howto/request/index",
                         "pages": [
                           "en/automation/crmscript/howto/request/create",
                           "en/automation/crmscript/howto/request/add-message",
@@ -469,6 +492,7 @@
                       },
                       {
                         "group": "Sale",
+                        "root": "en/automation/crmscript/howto/sale/index",
                         "pages": [
                           "en/automation/crmscript/howto/sale/create",
                           "en/automation/crmscript/howto/sale/get",
@@ -485,6 +509,7 @@
                   },
                   {
                     "group": "Tutorials",
+                    "root": "en/automation/crmscript/tutorials/index",
                     "pages": [
                       "en/automation/crmscript/tutorials/creating-lots-of-random-requests",
                       "en/automation/crmscript/tutorials/script-based-selections",
@@ -502,6 +527,7 @@
               },
               {
                 "group": "Event model",
+                "root": "en/automation/event-model/index",
                 "pages": [
                   "en/automation/event-model/email-filter",
                   "en/automation/event-model/mailbox-after-save",
@@ -511,6 +537,7 @@
               },
               {
                 "group": "Trigger",
+                "root": "en/automation/trigger/index",
                 "pages": [
                   "en/automation/trigger/create-trigger-macro",
                   "en/automation/trigger/create-trigger-script",
@@ -547,6 +574,7 @@
                   },
                   {
                     "group": "Event reference",
+                    "root": "en/automation/webhook/reference/index",
                     "pages": [
                       "en/automation/webhook/reference/activity-events",
                       "en/automation/webhook/reference/associate-events",

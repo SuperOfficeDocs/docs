@@ -2,9 +2,9 @@
 uid: redirects
 title: Redirects and redirect_from
 description: What redirect_from is for, how it becomes a live redirect in config/redirects.json, and when it's safe to compact a group of redirects into a wildcard.
-keywords: ['redirect_from', 'redirects', 'config/redirects.json', 'docs.json', 'wildcard', 'permanent redirect', 'moved page', 'deleted page', 'URL migration']
+keywords: ['redirect_from', 'redirects', 'config/redirects.json', 'docs.json', 'wildcard', 'permanent redirect', 'moved page', 'deleted page', 'URL migration', '.html suffix']
 author: digitaldiina
-date: 07.22.2026
+date: 08.27.2026
 content_type: concept
 related:
   - /contribute/retention-policy
@@ -101,6 +101,39 @@ A redirect to our own site uses a plain path (`/da/admin/import/create-spreadshe
 ```
 
 Easy to miss since every other destination in this file is a bare path.
+
+### Every current source needs a `.html` duplicate {#html-suffix-duplicates}
+
+The old DocFx site served every page with a literal `.html` extension. Mintlify's redirect matcher treats `.html` as part of the literal source string, not something it strips - a source written as `/foo/bar` never matches a request for `/foo/bar.html`.
+
+Any page reachable today needs two redirect entries for its `.html` form - one for pages that moved (the bare source pointing at the new destination, plus its `.html` duplicate), and one for pages that never moved but still need a **self-redirect** (`<path>.html` -> `<path>`, the page's own current URL) so a request for the old DocFx-style URL doesn't 404.
+
+A moved, renamed, or deleted page needs **two** entries pointing at the same destination - the bare source, and a second entry with `.html` appended:
+
+```json
+{ "source": "/da/admin/erp/learn/erp-connect", "destination": "/da/erp/learn/connect" },
+{ "source": "/da/admin/erp/learn/erp-connect.html", "destination": "/da/erp/learn/connect" }
+```
+
+A page that never moved needs a self-redirect instead - `source` and `destination` differ only by the `.html` suffix:
+
+```json
+{ "source": "/en/request/learn/create.html", "destination": "/en/request/learn/create" }
+```
+
+This is expected and safe, not the `/index` self-redirect loop covered in the danger callout above - that loop only happens when a source ending in `/index` (or a trailing slash) points at its own bare parent path. A plain `.html`-suffixed source pointing at the same page without `/index` is a different shape and doesn't trigger it.
+
+<Note>
+**Don't self-redirect a `snippets/` file.** Files under a `snippets/` folder are MDX-imported into other pages, not standalone routable pages themselves - Mintlify never renders them at their own URL, so a `.html` self-redirect for one has no real destination to land on. A first pass at the "current pages" self-redirect backfill (#341) mistakenly included these before the mistake was caught and reverted (528 entries).
+</Note>
+
+Three shapes are already covered and don't need a duplicate:
+
+* **Wildcard sources** (`/prefix/*`) - `*` already matches the `.html` form too.
+* **Sources ending in `/index` or a trailing slash** - Mintlify's hosting strips `.html` for `index.html` specifically, so these already resolve either way.
+* **A source that already ends in `.html`** - nothing to duplicate.
+
+`tools/check-redirects-live.py` requests both forms for every plain entry, so a missing duplicate shows up as a live-check failure rather than a broken link a visitor happens to hit first.
 
 ## Wildcards {#wildcards}
 

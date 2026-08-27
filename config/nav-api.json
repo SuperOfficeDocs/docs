@@ -26,6 +26,7 @@
       "en/api/authentication/online/api",
       {
         "group": "Sign in user (front-channel)",
+        "root": "en/api/authentication/online/sign-in-user/index",
         "pages": [
           "en/api/authentication/online/sign-in-user/auth-code-flow",
           "en/api/authentication/online/sign-in-user/hybrid-flow",
@@ -36,6 +37,7 @@
       },
       {
         "group": "System user (back-channel)",
+        "root": "en/api/authentication/online/auth-application/index",
         "pages": [
           "en/api/authentication/online/auth-application/sign-system-user-token",
           "en/api/authentication/online/auth-application/get-system-user-ticket"
@@ -44,12 +46,14 @@
       "en/api/authentication/online/validate-security-tokens",
       {
         "group": "Troubleshooting",
+        "root": "en/api/authentication/online/troubleshooting/index",
         "pages": [
           "en/api/authentication/online/troubleshooting/iframe-idp-auth"
         ]
       },
       {
         "group": "Certificates",
+        "root": "en/api/authentication/online/certificates/index",
         "pages": [
           "en/api/authentication/online/certificates/add-certificate-snap-in",
           "en/api/authentication/online/certificates/configure",
@@ -68,6 +72,7 @@
       "en/api/localization/superoffice-globalization",
       {
         "group": "Address",
+        "root": "en/api/localization/address/index",
         "pages": [
           "en/api/localization/address/addressformatter",
           "en/api/localization/address/addresshelper"
@@ -104,6 +109,7 @@
           "en/api/lists/services/mdoagent/index",
           {
             "group": "How to",
+            "root": "en/api/lists/services/how-to/index",
             "pages": [
               "en/api/lists/services/how-to/get-all-lists",
               "en/api/lists/services/how-to/get-list-entity",
@@ -172,6 +178,7 @@
       },
       {
         "group": "Proxies",
+        "root": "en/api/web-services/proxies/index",
         "pages": [
           {
             "group": "Using WebAPI client",
@@ -193,6 +200,7 @@
         "pages": [
           {
             "group": "Address",
+            "root": "en/api/web-services/howto/address/index",
             "pages": [
               "en/api/web-services/howto/address/get-localized-address",
               "en/api/web-services/howto/address/set-localized-address"
@@ -200,6 +208,7 @@
           },
           {
             "group": "Company",
+            "root": "en/api/web-services/howto/company/index",
             "pages": [
               "en/api/web-services/howto/company/create-contact",
               "en/api/web-services/howto/company/get-contact-via-services-layer",
@@ -215,6 +224,7 @@
           },
           {
             "group": "Contact (person)",
+            "root": "en/api/web-services/howto/contact/index",
             "pages": [
               "en/api/web-services/howto/contact/get-persons-contactagent",
               "en/api/web-services/howto/contact/get-persons-personagent",
@@ -228,6 +238,7 @@
           },
           {
             "group": "Custom objects",
+            "root": "en/api/web-services/howto/custom-objects/index",
             "pages": [
               {
                 "group": "Extra tables",
@@ -261,6 +272,7 @@
           },
           {
             "group": "Diary",
+            "root": "en/api/web-services/howto/diary/index",
             "pages": [
               "en/api/web-services/howto/diary/create-apt-services",
               "en/api/web-services/howto/diary/create-recurring-appointment-services",
@@ -273,6 +285,7 @@
           },
           {
             "group": "Documents",
+            "root": "en/api/web-services/howto/document/index",
             "pages": [
               "en/api/web-services/howto/document/rest-add-document-template",
               "en/api/web-services/howto/document/rest-generate-document",
@@ -284,6 +297,7 @@
           },
           {
             "group": "Flows",
+            "root": "en/api/web-services/howto/flows/index",
             "pages": [
               "en/api/web-services/howto/flows/rest-create-default-email-flow",
               "en/api/web-services/howto/flows/rest-create-flow-trigger",
@@ -293,6 +307,7 @@
           },
           {
             "group": "Sale",
+            "root": "en/api/web-services/howto/sale/index",
             "pages": [
               "en/api/web-services/howto/sale/link-sale-to-appointment"
             ]
@@ -314,6 +329,7 @@
     "pages": [
       {
         "group": "Bulk Update",
+        "root": "en/api/bulk-operations/bulk-update/index",
         "pages": [
           "en/api/bulk-operations/bulk-update/using-bulk-update",
           "en/api/bulk-operations/bulk-update/field-value-info",
@@ -322,6 +338,7 @@
           "en/api/bulk-operations/bulk-update/ns-core-examples",
           {
             "group": "Reference",
+            "root": "en/api/bulk-operations/bulk-update/reference/index",
             "pages": [
               "en/api/bulk-operations/bulk-update/reference/appointment-table",
               "en/api/bulk-operations/bulk-update/reference/contact-table",
@@ -339,6 +356,7 @@
       },
       {
         "group": "Mass Operations",
+        "root": "en/api/bulk-operations/mass-operations/index",
         "pages": [
           "en/api/bulk-operations/mass-operations/delete",
           "en/api/bulk-operations/mass-operations/insert",
@@ -389,6 +407,7 @@
       },
       {
         "group": "ArchiveAgent samples",
+        "root": "en/api/archive-providers/howto/diary/index",
         "pages": [
           "en/api/archive-providers/howto/diary/invitation-archive"
         ]
@@ -468,6 +487,7 @@
     "pages": [
       {
         "group": "Quote Connector",
+        "root": "en/api/plugins/quote-connectors/index",
         "pages": [
           "en/api/plugins/quote-connectors/implementation-guide",
           {
@@ -497,9 +517,11 @@
           },
           {
             "group": "API",
+            "root": "en/api/plugins/quote-connectors/api/index",
             "pages": [
               {
                 "group": "Online SOAP API",
+                "root": "en/api/plugins/quote-connectors/online-quote-connectors/index",
                 "pages": [
                   "en/api/plugins/quote-connectors/online-quote-connectors/soap-quote-connector-api",
                   "en/api/plugins/quote-connectors/online-quote-connectors/rest-quote-connector-api"
@@ -520,6 +542,7 @@
               },
               {
                 "group": "Data Carrier definitions",
+                "root": "en/api/plugins/quote-connectors/api/data-carriers/index",
                 "pages": [
                   "en/api/plugins/quote-connectors/api/data-carriers/addressinfo",
                   "en/api/plugins/quote-connectors/api/data-carriers/extradatafieldtypeinfo",
@@ -568,13 +591,16 @@
       },
       {
         "group": "ERP Connector",
+        "root": "en/api/plugins/erp-connectors/index",
         "pages": [
+          "en/api/plugins/erp-connectors/getting-started",
           "en/api/plugins/erp-connectors/terminology",
           "en/api/plugins/erp-connectors/sync-operation",
           "en/api/plugins/erp-connectors/automatic-field-mapping",
           "en/api/plugins/erp-connectors/client-gui",
           {
             "group": "Architecture",
+            "root": "en/api/plugins/erp-connectors/architecture/index",
             "pages": [
               "en/api/plugins/erp-connectors/architecture/sync-service",
               "en/api/plugins/erp-connectors/architecture/soap-service",
@@ -595,6 +621,7 @@
           },
           {
             "group": "Working with ERP Sync Online",
+            "root": "en/api/plugins/erp-connectors/online/index",
             "pages": [
               "en/api/plugins/erp-connectors/online/secure-in-online",
               "en/api/plugins/erp-connectors/online/example-api"
@@ -602,9 +629,11 @@
           },
           {
             "group": "API reference",
+            "root": "en/api/plugins/erp-connectors/api/index",
             "pages": [
               "en/api/plugins/erp-connectors/api/ierpconnector",
               "en/api/plugins/erp-connectors/api/field-meta-data-carrier",
+              "en/api/plugins/erp-connectors/default-values",
               "en/api/plugins/erp-connectors/api/erp-actor-carrier",
               "en/api/plugins/erp-connectors/api/pluginresponseinfo",
               "en/api/plugins/erp-connectors/api/field-value-formats-and-conventions"
@@ -612,6 +641,7 @@
           },
           {
             "group": "How-to search for actors",
+            "root": "en/api/plugins/erp-connectors/search/index",
             "pages": [
               "en/api/plugins/erp-connectors/search/search-operators"
             ]

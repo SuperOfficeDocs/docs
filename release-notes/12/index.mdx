@@ -4,7 +4,7 @@ title: What's new in SuperOffice 12
 description: Release notes. What's new in SuperOffice 12
 keywords: ['SuperOffice CRM 12']
 author: kirstiaa
-date: 07.09.2026
+date: 08.27.2026
 so_version: 12
 content_type: release-note
 audience: person
@@ -27,7 +27,28 @@ From this version, all feature updates are available to SuperOffice Online custo
 
 ## Feature updates
 
-<Update label="12.2" description="09.07.2026" tags={["Core CRM"]}>
+<Update label="12.3" description="27.08.2026" tags={["Settings and maintenance"]}>
+<a id="12.3"></a>
+
+### <Badge icon="gear" color="orange">Settings and maintenance</Badge> Multiple DKIM for Mailgun
+
+Send outgoing mail in Service and Marketing **from several domains** - such as separate brands or country-specific addresses - with each domain signed by its own DKIM key, instead of sharing one key across your SuperOffice environment.
+
+Without multiple DKIM, all outgoing mail is signed with a single domain's DKIM key, even when it is sent from a different brand or country-specific address. This **weakens DKIM and DMARC verification** for any domain other than the one the key belongs to, which can affect deliverability.
+
+To set this up, **request a DKIM setup** for each sending domain using the [Order DKIM key form][9], listing the domains involved - for example brand1.com, brand2.com, and brand3.no. **SuperOffice Operations** will create the domains in Mailgun, generate a DKIM key for each one, and send you the DNS records to add. Your DNS administrator adds these records following the [DKIM][10] and [SPF][11] setup guides. Once SuperOffice Operations **confirms the records are valid**, the domain is ready to use.
+
+<Note>
+Remember to add the different domains in **Settings and maintenance** > **Lists** > **Mailing domains**, and add your different mailboxes in **Settings and maintenance** > **Requests** > **E-mail**.
+</Note>
+
+![Settings and maintenance for multiple domains is set up in Requests > Email and Lists > Mailing domains -screenshot][img11]
+
+Learn more about [multiple DKIM records][12].
+
+</Update>
+
+<Update label="12.2" description="09.07.2026" tags={["Core CRM", "Marketing"]}>
 <a id="12.2"></a>
 
 ### <Badge icon="user" color="blue">Core CRM</Badge> Dashboard - Measure sale cycles {#12.2-core-1}
@@ -80,6 +101,24 @@ An email in the **Inbox** also has the **Download** option in the **Task** menu.
 ![Inbox shows Task menu with Download item -screenshot][img6]
 
 ![Download the email or document from Task button -screenshot][img7]
+
+### <Badge icon="bullseye" color="purple">Marketing</Badge> Mailing - View numbers with two decimal in Summary
+
+A mailing's **Open rate** and **Click-through rate** are shown to two decimal places, giving an exact read on how recipients responded rather than a rounded approximation.
+
+Rounding these rates to the nearest whole percentage can hide real differences in performance, especially for smaller mailings where each recipient shifts the percentage by several points. Showing the full two decimal places removes that ambiguity, so the number on screen matches the actual count of opens and clicks.
+
+Find these figures on the **Summary** tab of a mailing, under **Marketing** > **Mailings**.
+
+Both rates are calculated as a percentage of the number of recipients the mailing was sent to. For a mailing sent to seven recipients, five opens is shown as an **Open rate** of 71.43%, and two clicks is shown as a **Click-through rate** of 28.57%.
+
+![Mailing summary showing Open rate and Click-through rate to two decimal places -screenshot][img12]
+
+Learn more about [mailing reports][13].
+
+<Tip>
+You can also set up the **Dashboard tiles** (Mailing - Average xx tiles) with decimal to get more accurate numbers.
+</Tip>
 
 </Update>
 
@@ -155,6 +194,11 @@ Some features are available to selected customers as part of ongoing pilots. See
 [6]: https://community.superoffice.com/en/product-releases/release-notes/
 [7]: /en/automation/webhook/index
 [8]: /en/admin/user-management/role/functional-rights
+[9]: https://community.superoffice.com/order-dkim
+[10]: /en/online/mail-services/mailgun/dkim/set-up
+[11]: /en/online/mail-services/mailgun/spf/set-up
+[12]: /en/online/mail-services/mailgun/dkim/multiple-dkim-records
+[13]: /en/marketing/mailing/learn/view-statistics
 
 [img1]: /media/loc/en/dashboard/dashboard-sale-sycle-tiles.png
 [img2]: /media/loc/en/dashboard/dashboard-edit-sale-cycle-tile.png
@@ -166,3 +210,5 @@ Some features are available to selected customers as part of ongoing pilots. See
 [img8]: /media/loc/en/admin/admin-system-design-webhook-overview.png
 [img9]: /media/loc/en/admin/admin-system-design-webhook-edit.png
 [img10]: /media/loc/en/request/requests-list-mark-spam-context-menu.png
+[img11]: /media/loc/en/admin/admin-dkim-settings.png
+[img12]: /media/loc/en/marketing/marketing-mailing-view-summary.png
