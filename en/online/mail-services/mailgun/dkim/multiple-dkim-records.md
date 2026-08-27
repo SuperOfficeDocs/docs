@@ -5,8 +5,8 @@ sidebarTitle: "Multiple DKIM records"
 description: Multiple DKIM records in Mailgun
 keywords: ['Mailgun', 'DKIM', 'DMARC', 'SMTP', 'bounce', 'consent']
 author: Martin Pavlas
-date: 09.12.2023
-so_version: 12
+date: 08.27.2026
+so_version: 12.3
 content_type: howto
 category: email
 topic: mailgun
@@ -17,15 +17,27 @@ userflow_index: true
 language: en
 ---
 
-In SuperOffice Online using Mailgun each tenant can have only one DKIM key. This key is used to sign every email that is sent from SuperOffice Online. If a customer decides to send emails from several domains, having one DKIM only means all of them will be signed with the domain the DKIM was set up for.
+In SuperOffice Online using Mailgun, a tenant can request DKIM keys for multiple sending domains - for example separate brands or country-specific addresses - so each domain is signed by its own DKIM key instead of sharing one key across the environment. Without multiple DKIM, all outgoing mail is signed with a single domain's key, even when sent from a different brand or country-specific address, which weakens DKIM and DMARC verification for any other domain and can affect deliverability.
+
+<Note>
+Multiple DKIM records is available as part of an ongoing pilot. Contact SuperOffice if you'd like to set this up for your organization.
+</Note>
 
 [SPF][3] should be configured for all the domains a customer plans to use as a sender.
 
 Unless they [use a strict DMARC policy](#dmarc), where both the SPF and DKIM need to correspond with the sender's domain, all will be fine. Having different DKIM domain and sender's domain doesn't stop SuperOffice nor Mailgun from sending out the emails.
 
-We have also seen an approach where a customer decided to use a 3rd-party custom SMTP service, like Sendgrid, to overcome this limitation.
+As an alternative to requesting a DKIM per sending domain, we have also seen customers use a 3rd-party custom SMTP service, like Sendgrid, to send from multiple domains.
 
 Switching away from Mailgun for outgoing emails complicates bounce and complaint handling because there is no webhook from 3rd-party SMTP to SuperOffice Online to set an email as bounced. In this case, the only option is to import bounce emails to SuperOffice via inbox.
+
+## Request multiple DKIM records
+
+1. [Fill in the DKIM order form][4] for each sending domain, listing every domain in the request - for example `brand1.com`, `brand2.com`, and `brand3.no`.
+2. SuperOffice creates the domains in Mailgun, generates a DKIM key for each one, and replies with the DNS records to add.
+3. Add the DNS records for each domain to your DNS, following the [DKIM][5] and [SPF][3] setup guides.
+4. SuperOffice confirms the records are valid once they've propagated.
+5. Add the domain in **Settings and maintenance** > **Lists** > **Mailing domains**, and add your mailbox in **Settings and maintenance** > **Requests** > **E-mail**.
 
 ## Mailgun vs. custom SMTP
 
@@ -56,3 +68,5 @@ If a customer has a strict policy that states that only DKIM signatures pointing
 [1]: https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail
 [2]: https://dmarc.org/
 [3]: https://en.wikipedia.org/wiki/Sender_Policy_Framework
+[4]: ./order-key
+[5]: ./set-up
