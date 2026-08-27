@@ -5,8 +5,8 @@ sidebarTitle: "SuperOffice for Outlook"
 description: Release notes for the SuperOffice for Outlook integration.
 keywords: ['Outlook add-in', 'sofo']
 author: SuperOffice AS - Product and Engineering
-date: 07.09.2026
-so_version: 6.3
+date: 08.27.2026
+so_version: 6.4
 content_type: release-note
 category: email
 topic: outlook
@@ -30,6 +30,48 @@ redirect_from:
   - /release-notes/9.1/office-integrations/9.1-R01-update
 language: en
 ---
+
+<Update label="6.4" description="08.27.2026">
+
+## SuperOffice for Outlook 6.4.4
+
+### Email archive status
+
+Knowing whether an email has already been archived usually means switching over to SuperOffice to check. Email archive status uses an Outlook category to identify emails that have already been archived to SuperOffice, so the answer is visible right in your inbox.
+
+![Outlook archive shows a tag if the email are archived -screenshot][img6]
+
+You'll find the setting under **SuperOffice for Outlook** > **Settings** > **E-mail archive status** > **Show archive category in Outlook**. Choose when the category is applied: when opening archived emails, when using Send and Archive, and in shared mailboxes. Once applied, archived emails carry the **Archived in SuperOffice** category (the name is fixed), in a color you choose from the available palette.
+
+![SuperOffice for Outlook settings for the category -app-screen][img7]
+
+### Stay informed with in-app announcements
+
+Updates to SuperOffice for Outlook are also introduced through in-app announcements in the side panel, so you can learn what's changed as you work, without needing to go looking for it. (The look and feel of the announcement will vary with our computer OS.)
+
+![SuperOffice for Outlook shows an in-app announcement -app-screen][img8]
+
+<Note>
+Some of these features may require approval from your IT administrator in your [Microsoft Admin portal][3]. Once approved, it can take up to 72 hours before the feature becomes available in Outlook. During this time, some users may see it earlier than others. If you don't see the feature after 72 hours, please contact your IT administrator.
+</Note>
+
+## SuperOffice for Outlook 6.4.2
+
+### Archive reminder when sending email
+
+It's easy to hit send before an email or meeting invite is properly connected to the correct company or contact in SuperOffice, leaving the conversation disconnected from the customer record it belongs to. The archive reminder catches this before it happens, prompting you to archive before you send.
+
+You'll find the setting under **SuperOffice for Outlook** > **Settings** > **Archive reminder**, with separate toggles for **Remind me before sending e-mails** and **Remind me before sending meetings**. For emails, you can narrow it further to new emails, replies, forwards, or only messages going to external recipients.
+
+![In your Settings overview you set the wanted behavior when you click send before archived -app-screen][img9]
+
+When you send a new email, reply, forward, or meeting invite that isn't set to archive, a dialog appears with three choices: don't send, archive and send, or send anyway. Choose **Archive and send** to pick the company, contact, sale, or project before the message goes out, and the reminder won't appear again for that item.
+
+![Dialog for Archive this email in SuperOffice, yes, no, cancel -app-screen][img10]
+
+[Learn more about the archive reminder][7]
+
+</Update>
 
 <Update label="6.3" description="07.09.2026">
 
@@ -174,9 +216,15 @@ With the add-in, you can:
 [4]: https://community.superoffice.com/en/support-faqs/faq/superoffice-for-outlook-authorisation-guide/
 [5]: https://appstore.superoffice.com/superoffice-as/superoffice-for-outlook
 [6]: https://appsource.microsoft.com/en/product/office/wa200001597?tab=overview
+[7]: /integrations/superoffice-for-outlook/archive-reminder
 
 [img1]: /media/loc/en/release-notes/integrations/email-sofo-pin-contact-company-field.png
 [img2]: /media/loc/en/release-notes/integrations/sofo-install-online-onsite.png
 [img3]: /media/loc/en/release-notes/integrations/sofo-login.png
 [img4]: /media/loc/en/release-notes/integrations/sofo-100.jpg
 [img5]: /media/loc/en/release-notes/integrations/sofo-101.jpg
+[img6]: /media/loc/en/release-notes/integrations/sofo-mail-archive-status.png
+[img7]: /media/loc/en/release-notes/integrations/sofo-settings-category.png
+[img8]: /media/loc/en/release-notes/integrations/sofo-announcements-in-app.png
+[img9]: /media/loc/en/release-notes/integrations/sofo-settings-archive-reminder.png
+[img10]: /media/loc/en/release-notes/integrations/sofo-archive-reminder-dialog.png
