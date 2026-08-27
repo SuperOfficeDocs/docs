@@ -234,6 +234,7 @@
               "en/automation/overview",
               {
                 "group": "Chatbot",
+                "root": "en/automation/chatbot/index",
                 "pages": [
                   "en/automation/chatbot/registration",
                   "en/automation/chatbot/sessions",
