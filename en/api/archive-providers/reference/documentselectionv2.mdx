@@ -1,7 +1,7 @@
 ---
 title: DocumentSelectionV2
 description: This is the archive Provider for the Selection document archive.
-keywords: ['DocumentSelectionV2 archive provider']
+keywords: DocumentSelectionV2 archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -736,7 +736,7 @@ This is the archive Provider for the Selection document archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/DocumentSelectionV2?$select=recordType,recordTypeText,visibleFor,person/supportAssociateFullName,person/subscription
+GET /api/v1/archive/DocumentSelectionV2?$select=visibleFor,person/personBusiness,person/correspondingAssociate/isActive,contact/hasInterests,contact/postAddress/formattedMultiLineAddress
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

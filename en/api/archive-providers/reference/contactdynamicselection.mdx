@@ -1,7 +1,7 @@
 ---
 title: ContactDynamicSelection
 description: 
-keywords: ['ContactDynamicSelection archive provider']
+keywords: ContactDynamicSelection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -1265,7 +1265,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/ContactDynamicSelection?$select=contactAssociate/lastName,appointment/createdByWorkflow,kanaFirstName,kanaLastName,personRegisteredBy
+GET /api/v1/archive/ContactDynamicSelection?$select=sale/date,sale/registeredBy,appointment/type,appointment/endDate,supportAssociate
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

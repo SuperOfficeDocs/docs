@@ -1,7 +1,7 @@
 ---
 title: FreetextPerson
 description: Archive provider for freetext search on the Person entity.
-keywords: ['FreetextPerson archive provider']
+keywords: FreetextPerson archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -1086,7 +1086,7 @@ as well as before any ORDER BY, are applied.
 ## Sample
 
 ```http!
-GET /api/v1/archive/FreetextPerson?$select=personAddress/addressId,restrictionAddress/line1,personSourceRelation/personNoMail,personTargetRelation/restrictionContactId,correspondingAssociate/contactFullName
+GET /api/v1/archive/FreetextPerson?$select=personAddress/zip,personUdef/SuperOffice:11,personSourceRelation/title,personTargetRelation/birthDay,personContact/categoryGroup
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

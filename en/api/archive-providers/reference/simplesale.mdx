@@ -1,7 +1,7 @@
 ---
 title: SimpleSale
 description: 
-keywords: ['SimpleSale archive provider']
+keywords: SimpleSale archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -648,7 +648,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/SimpleSale?$select=person/leadstatusRank,person/correspondingAssociate/ejDisplayName,contact/contactExtra/y_organization/x_name,associate/associateDbId,associate/locationAddress
+GET /api/v1/archive/SimpleSale?$select=person/personExtra/x_person_date,person/hasEmarketingConsent,contact/contactExtra/x_contact_contact,project/projectAssociate/usergroup
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

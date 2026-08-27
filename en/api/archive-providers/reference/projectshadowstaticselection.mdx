@@ -1,7 +1,7 @@
 ---
 title: ProjectShadowStaticSelection
 description: Shadow contact provider for the static Project provider.
-keywords: ['ProjectShadowStaticSelection archive provider']
+keywords: ProjectShadowStaticSelection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -824,7 +824,7 @@ Shadow contact provider for the static Project provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectShadowStaticSelection?$select=getAllRows,sale/originalStage,sale/salePublish/isPublished,sale/saleUdef/SuperOffice:8,appointment/updatedBy
+GET /api/v1/archive/ProjectShadowStaticSelection?$select=sale/recordType,appointment/associate/personId,document/associate/ejStatus,projectMember/personCategory,projectMember/personInfo/infoText
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

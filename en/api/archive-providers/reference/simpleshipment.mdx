@@ -1,7 +1,7 @@
 ---
 title: simpleshipment
 description: Archive provider for the list of mailings
-keywords: ['simpleshipment archive provider']
+keywords: simpleshipment archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -678,7 +678,7 @@ Archive provider for the list of mailings
 ## Sample
 
 ```http!
-GET /api/v1/archive/simpleshipment?$select=mailingAddr/contact/contactExtra/x_contact_date,mailingAddr/contact/LastDoByActivity,mailingAddr/contact/NumberOfNotCompletedSales,mailingAddr/person/personBusiness,associate/userName
+GET /api/v1/archive/simpleshipment?$select=mailingAddr/contact/restrictionAddress/line2,mailingAddr/contact/NumberOfActivities,mailingAddr/contact/saintSaleStatus,mailingAddr/person/personRegisteredByFullName,project/projectAssociate/assocName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -1,7 +1,7 @@
 ---
 title: SelectionDynamicSelectionSingleCriteriaGroup
 description: Selection selection archive using the selectionId as criterionmapping.
-keywords: ['SelectionDynamicSelectionSingleCriteriaGroup archive provider']
+keywords: SelectionDynamicSelectionSingleCriteriaGroup archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -82,7 +82,7 @@ Selection selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/SelectionDynamicSelectionSingleCriteriaGroup?$select=lastMembershipChange,selectionAssociate/contactId
+GET /api/v1/archive/SelectionDynamicSelectionSingleCriteriaGroup?$select=selectionAssociate/ejUserId,lastMembershipChange,selectionAssociate/contactId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

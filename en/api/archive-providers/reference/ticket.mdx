@@ -1,7 +1,7 @@
 ---
 title: Ticket
 description: This is the archive Provide for the Person Archive of the Contact Panel - or to use GUI terminology, the Contact archive of the Company panel.
-keywords: ['Ticket archive provider']
+keywords: Ticket archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -798,7 +798,7 @@ table data; this will also pull in contact udef and related fields.
 ## Sample
 
 ```http!
-GET /api/v1/archive/Ticket?$select=createdBy/credentialType,ownedBy/title,project/projectUdef/SuperOffice:7
+GET /api/v1/archive/Ticket?$select=timeSpent,ownedBy/contactName,person/isStakeholder,person/personAssociate/contactFullName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

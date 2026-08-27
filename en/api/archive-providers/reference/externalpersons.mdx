@@ -1,7 +1,7 @@
 ---
 title: ExternalPersons
 description: 
-keywords: ['ExternalPersons archive provider']
+keywords: ExternalPersons archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -731,7 +731,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/ExternalPersons?$select=contactId,personNumber,personCountryId,personTargetRelation/personAssociateFullName,personTargetRelation/isProjectMember
+GET /api/v1/archive/ExternalPersons?$select=correspondingAssociate/mrMrs,correspondingAssociate/personEmail,request/readByCustomer,request/createdBy/personEmail,projectMembers/projectAssociate/assocName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

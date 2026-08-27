@@ -62,18 +62,6 @@ public const string EnableAgents = "EnableAgents"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_AI_LeadFeederApiKey"></a> LeadFeederApiKey
-
-Own Leadfeeder API key for AI functions. If empty, the system will use the SuperOffice API key (and charge extra)
-
-```csharp
-public const string LeadFeederApiKey = "LeadFeederApiKey"
-```
-
-#### Field Value
-
- [string](https://learn.microsoft.com/dotnet/api/system.string)
-
 ### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_AI_Section"></a> Section
 
 Section heading

@@ -1,7 +1,7 @@
 ---
 title: RelatedTickets
 description: 
-keywords: ['RelatedTickets archive provider']
+keywords: RelatedTickets archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -797,7 +797,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/RelatedTickets?$select=person/contactId,person/personRegisteredDate,person/personAssociate/personEmail,contact/saintTicketStatus
+GET /api/v1/archive/RelatedTickets?$select=createdByWorkflow,person/personUdef/SuperOffice:11,contact/activeErpLinks,contact/contactAssociate/isActive,sale/stageId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -1,7 +1,7 @@
 ---
 title: SaleHistory
 description: Sale histories. Contains all changes to the sale records over time.
-keywords: ['SaleHistory archive provider']
+keywords: SaleHistory archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -217,7 +217,7 @@ Sale histories. Contains all changes to the sale records over time.
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleHistory?$select=earning,person/birthMonth,associate/assocType
+GET /api/v1/archive/SaleHistory?$select=associate/assocType,person/birthdate
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

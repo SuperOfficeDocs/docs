@@ -1,7 +1,7 @@
 ---
 title: TicketShadowDynamicSelectionSingleCriteriaGroup
 description: Shadow contact provider for the dynamic ticket provider.
-keywords: ['TicketShadowDynamicSelectionSingleCriteriaGroup archive provider']
+keywords: TicketShadowDynamicSelectionSingleCriteriaGroup archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -795,7 +795,7 @@ Shadow contact provider for the dynamic ticket provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketShadowDynamicSelectionSingleCriteriaGroup?$select=firstReadByUser,closedAt,ownedBy/userName,person/personAddress/city,person/personAssociate/assocType
+GET /api/v1/archive/TicketShadowDynamicSelectionSingleCriteriaGroup?$select=createdBy/title,createdBy/credentialType,person/restrictionAddress/city,person/personUdef/SuperOffice:9,person/correspondingAssociate/userName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

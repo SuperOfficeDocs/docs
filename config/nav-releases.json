@@ -13,6 +13,8 @@
         "group": "API",
         "root": "release-notes/12/api/index",
         "pages": [
+          "release-notes/12/api/12.3.2570-update",
+          "release-notes/12/api/12.2/12.2.2115-update",
           "release-notes/12/api/changes-webapi-12.2.2072.0",
           "release-notes/12/api/changes-webapi-12.1.1412",
           "release-notes/12/api/changes-webapi-12.0.342.0"
@@ -589,6 +591,7 @@
           "release-notes/database/changes-11.13.921",
           "release-notes/database/changes-11.12.675",
           "release-notes/database/changes-11.11.589",
+          "release-notes/database/changes-11.10.725",
           "release-notes/database/changes-11.10.705",
           "release-notes/database/changes-11.9.1204",
           "release-notes/database/changes-11.8.788",

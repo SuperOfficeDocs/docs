@@ -1,7 +1,7 @@
 ---
 title: DocumentStaticSelectionV2
 description: 
-keywords: ['DocumentStaticSelectionV2 archive provider']
+keywords: DocumentStaticSelectionV2 archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -734,7 +734,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/DocumentStaticSelectionV2?$select=person/personAddress/city,person/personAssociate/contactFullName,contact/LastTicket,sale/saleId,sale/amountWeighted
+GET /api/v1/archive/DocumentStaticSelectionV2?$select=person/correspondingAssociate/isLocation,project/LastCompletedActivity,sale/userGroup
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

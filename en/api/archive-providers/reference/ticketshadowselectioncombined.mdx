@@ -1,7 +1,7 @@
 ---
 title: TicketShadowSelectionCombined
 description: Implementation of the provider for the combined selection
-keywords: ['TicketShadowSelectionCombined archive provider']
+keywords: TicketShadowSelectionCombined archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -800,7 +800,7 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketShadowSelectionCombined?$select=person/personDeletedDate,person/personDirectPhone/formattedNumber,contact/contactExtra/x_contact_date,sale/associate/personEmail,project/saintTicketCategory
+GET /api/v1/archive/TicketShadowSelectionCombined?$select=person/lastName,person/restrictionAddress/formattedMultiLineAddress,person/personExtra/x_person_float,person/withdrawnStoreConsent,contact/companyCategoryRank
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

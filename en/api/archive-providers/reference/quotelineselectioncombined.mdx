@@ -1,7 +1,7 @@
 ---
 title: QuoteLineSelectionCombined
 description: Implementation of the provider for the combined selection
-keywords: ['QuoteLineSelectionCombined archive provider']
+keywords: QuoteLineSelectionCombined archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -781,7 +781,7 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteLineSelectionCombined?$select=alternative/version/paymentTerms,alternative/version/quote/sale/saleType,alternative/version/quote/sale/person/personAssociate/userName,alternative/version/quote/sale/person/correspondingAssociate/credentialType,alternative/version/quote/sale/project/projectAssociate/credentialDisplayValue
+GET /api/v1/archive/QuoteLineSelectionCombined?$select=quoteAlternativeId,contactId,alternative/version/quote/sale/person/title,alternative/version/quote/sale/person/personAssociate/contactDepartment,alternative/version/quote/sale/contact/NumberOfNotCompletedSales
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

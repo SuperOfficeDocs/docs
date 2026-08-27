@@ -1,7 +1,7 @@
 ---
 title: FormSubmissionShadowDynamicSelectionSingleCriteriaGroup
 description: Shadow contact provider for the dynamic appointmnet provider.
-keywords: ['FormSubmissionShadowDynamicSelectionSingleCriteriaGroup archive provider']
+keywords: FormSubmissionShadowDynamicSelectionSingleCriteriaGroup archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -486,7 +486,7 @@ Shadow contact provider for the dynamic appointmnet provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormSubmissionShadowDynamicSelectionSingleCriteriaGroup?$select=icon,person/mrMrs,contact/postAddress/wgs84longitude
+GET /api/v1/archive/FormSubmissionShadowDynamicSelectionSingleCriteriaGroup?$select=person/correspondingAssociate/title,contact/contactDeleted,contact/saintSaleStatus
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

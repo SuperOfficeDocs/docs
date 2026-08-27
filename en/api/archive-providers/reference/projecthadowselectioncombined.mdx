@@ -1,7 +1,7 @@
 ---
 title: ProjecthadowSelectionCombined
 description: Implementation of the provider for the combined selection
-keywords: ['ProjecthadowSelectionCombined archive provider']
+keywords: ProjecthadowSelectionCombined archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -824,7 +824,7 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjecthadowSelectionCombined?$select=projectAssociate/title,projectAssociate/contactFullName,sale/associate/simultaneousEjUser,appointment/recordTypeText,document/personId
+GET /api/v1/archive/ProjecthadowSelectionCombined?$select=sale/saleCycle,appointment/type,projectMember/projectMemberId,projectMember/personAssociate/otherGroups,projectMember/contactFax/description
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

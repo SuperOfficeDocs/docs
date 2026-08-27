@@ -1,7 +1,7 @@
 ---
 title: QuoteLineDynamicSelection
 description: Quoteline selection archive using the selectionId as criterionmapping.
-keywords: ['QuoteLineDynamicSelection archive provider']
+keywords: QuoteLineDynamicSelection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -776,7 +776,7 @@ Quoteline selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteLineDynamicSelection?$select=totalPrice,alternative/version/quote/sale/person/supportLanguage,alternative/version/quote/sale/contact/contactPhone/description,alternative/version/quote/sale/associate/assocTooltip,alternative/version/quote/sale/project/NumberOfNotCompletedSalesInPeriod
+GET /api/v1/archive/QuoteLineDynamicSelection?$select=alternative/version/expiration,alternative/version/deliveryTerms,alternative/version/quote/sale/description,alternative/version/quote/sale/person/personAssociate/ejUserId,alternative/version/quote/sale/contact/business
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

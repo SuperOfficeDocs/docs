@@ -1,7 +1,7 @@
 ---
 title: SaleShadowSelection
 description: Shadow contact provider for the sale provider.
-keywords: ['SaleShadowSelection archive provider']
+keywords: SaleShadowSelection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -1350,7 +1350,7 @@ Shadow contact provider for the sale provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleShadowSelection?$select=person/kanaFirstName,person/personAddress/line3,person/personExtra/x_person_contact_relation,contact/contactSource,contact/contactExtra/x_contact_time
+GET /api/v1/archive/SaleShadowSelection?$select=credited,person/kanaFirstName,contact/contactUdef/SuperOffice:10,appointment/date,project/updatedByFullName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -1,7 +1,7 @@
 ---
 title: Appointment
 description: Activity archive provider which handles appointments
-keywords: ['Appointment archive provider']
+keywords: Appointment archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -758,7 +758,7 @@ subchannels, each split by a <see cref="!:DoneNotDoneSplitter" /> to get appoint
 ## Sample
 
 ```http!
-GET /api/v1/archive/Appointment?$select=contact/contactAssociate/firstName,contact/contactAssociate/fullName,contact/saintDirection,person/personExtra/x_person_shorttext,person/personAssociate/ejDisplayName
+GET /api/v1/archive/Appointment?$select=contact/countryId,contact/NumberOfTicketsInPeriod,person/personAddress/line2,associate/firstName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

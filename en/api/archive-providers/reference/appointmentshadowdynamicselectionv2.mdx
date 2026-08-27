@@ -1,7 +1,7 @@
 ---
 title: AppointmentShadowDynamicSelectionV2
 description: Appointment shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.AppointmentShadowSelectionDynamicProviderSingleCriteriaGroup" />.
-keywords: ['AppointmentShadowDynamicSelectionV2 archive provider']
+keywords: AppointmentShadowDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -757,7 +757,7 @@ Appointment shadow selection archive with OR-able selection groups. Each group i
 ## Sample
 
 ```http!
-GET /api/v1/archive/AppointmentShadowDynamicSelectionV2?$select=appointmentPublish/publishedFrom,contact/orgnr,contact/email/emailHasBounced,person/personCategoryRank,person/correspondingAssociate/ejDisplayName
+GET /api/v1/archive/AppointmentShadowDynamicSelectionV2?$select=appointmentId,contact/streetAddress/city,contact/contactAssociate/ejUserId,person/personPrivate/description,person/restrictionAddress/formattedAddress
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

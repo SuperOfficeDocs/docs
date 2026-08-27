@@ -1,7 +1,7 @@
 ---
 title: SimpleChatSession
 description: 
-keywords: ['SimpleChatSession archive provider']
+keywords: SimpleChatSession archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -491,7 +491,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/SimpleChatSession?$select=associate/firstName,person/hasCompany,person/personAddress/formattedMultiLineAddress,person/correspondingAssociate/otherGroups,contact/contactPhone/description
+GET /api/v1/archive/SimpleChatSession?$select=personId,person/personCountryId,person/subscription,contact/contactAssociate/title
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

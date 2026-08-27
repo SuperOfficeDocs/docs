@@ -1,7 +1,7 @@
 ---
 title: CRMScripts
 description: 
-keywords: ['CRMScripts archive provider']
+keywords: CRMScripts archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -48,7 +48,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/CRMScripts?$select=hierarchyFullname,registeredDate,includeId
+GET /api/v1/archive/CRMScripts?$select=path,extraMenuId,registeredDate
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

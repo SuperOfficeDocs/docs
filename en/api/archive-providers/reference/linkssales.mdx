@@ -1,7 +1,7 @@
 ---
 title: LinksSales
 description: Link data provider for sales, handles both addressing by source or by destination (not both at the same time!)
-keywords: ['LinksSales archive provider']
+keywords: LinksSales archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -1170,7 +1170,7 @@ Link data provider for sales, handles both addressing by source or by destinatio
 ## Sample
 
 ```http!
-GET /api/v1/archive/LinksSales?$select=person/personExtra/y_rental/x_amount,contact/name,saleStakeholder/person/personAssociate/personId,saleStakeholder/person/personAssociate/portraitThumbnail,saleStakeholder/person/personAssociate/locationAddress
+GET /api/v1/archive/LinksSales?$select=person/personSource,contact/email/emailDescription,associate/portraitThumbnail,project/projectUrl/URLAddress,saleStakeholder/contact/streetAddress/line3
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

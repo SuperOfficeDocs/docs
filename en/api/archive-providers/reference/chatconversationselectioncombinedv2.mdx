@@ -1,7 +1,7 @@
 ---
 title: ChatConversationSelectionCombinedV2
 description: Implementation of the provider for the combined selection
-keywords: ['ChatConversationSelectionCombinedV2 archive provider']
+keywords: ChatConversationSelectionCombinedV2 archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -498,7 +498,7 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/ChatConversationSelectionCombinedV2?$select=person/birthDay,person/personPager/formattedNumber,person/personUdef/SuperOffice:1,person/personAssociate/credentialType,person/correspondingAssociate/usergroupId
+GET /api/v1/archive/ChatConversationSelectionCombinedV2?$select=person/personId,person/email/emailAddress,person/personAddress/zip,contact/business,contact/postAddress/state
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

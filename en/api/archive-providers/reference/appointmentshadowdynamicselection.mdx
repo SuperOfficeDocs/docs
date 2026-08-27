@@ -1,7 +1,7 @@
 ---
 title: AppointmentShadowDynamicSelection
 description: Shadow contact provider for the dynamic appointmnet provider.
-keywords: ['AppointmentShadowDynamicSelection archive provider']
+keywords: AppointmentShadowDynamicSelection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -757,7 +757,7 @@ Shadow contact provider for the dynamic appointmnet provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/AppointmentShadowDynamicSelection?$select=contact/contactExtra/x_contact_longtext,contact/saintAmountClass,person/personPrivate/description,person/correspondingAssociate/title,project/startDate
+GET /api/v1/archive/AppointmentShadowDynamicSelection?$select=createdByWorkflow,contact/registeredDate,contact/contactAssociate/isLocation,contact/SaintStatus2,person/personCategoryGroup
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

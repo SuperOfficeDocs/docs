@@ -484,6 +484,27 @@ Override language/culture codes on this request.
 
 A blank ListItemEntity
 
+### CreateDefaultPictureFolderEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ListAgent_CreateDefaultPictureFolderEntityAsync_SuperOffice_WebApi_RequestOptions_}
+
+Set default values into a new PictureFolderEntity.
+NetServer calculates default values on the entity, which is required when creating/storing a new instance
+
+```csharp
+public Task<PictureFolderEntity> CreateDefaultPictureFolderEntityAsync(RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PictureFolderEntity](SuperOffice.WebApi.Data.PictureFolderEntity.md)\&gt;
+
+A blank PictureFolderEntity
+
 ### CreateDefaultProjectTypeEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ListAgent_CreateDefaultProjectTypeEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new ProjectTypeEntity.
@@ -1051,6 +1072,28 @@ Override language/culture codes on this request.
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
 This method has no return value
+
+### DeletePictureFolderEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ListAgent_DeletePictureFolderEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+
+Deletes the PictureFolderEntity
+
+```csharp
+public Task DeletePictureFolderEntityAsync(int pictureFolderEntityId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`pictureFolderEntityId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The identity of the PictureFolderEntity
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
 ### DeleteProjectStatusAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ListAgent_DeleteProjectStatusAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
@@ -4030,6 +4073,30 @@ Override language/culture codes on this request.
 
 An array of all available PaymentTypes
 
+### GetPictureFolderEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ListAgent_GetPictureFolderEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+
+Gets a specific PictureFolderEntity object.
+
+```csharp
+public Task<PictureFolderEntity> GetPictureFolderEntityAsync(int pictureFolderEntityId, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`pictureFolderEntityId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The identifier of the PictureFolderEntity object
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PictureFolderEntity](SuperOffice.WebApi.Data.PictureFolderEntity.md)\&gt;
+
+PictureFolderEntity
+
 ### GetPluginCapabilitiesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ListAgent_GetPluginCapabilitiesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a list of plugin-dependent capabilities for a given document archive plugin.&lt;br/&gt;A standard set of properties is defined in SuperOffice.CRM.Documents.Constants.Capabilities.
@@ -6595,6 +6662,30 @@ Override language/culture codes on this request.
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ListItemEntity](SuperOffice.WebApi.Data.ListItemEntity.md)\&gt;
 
 The saved ListItemEntity.
+
+### SavePictureFolderEntityAsync\(PictureFolderEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_ListAgent_SavePictureFolderEntityAsync_SuperOffice_WebApi_Data_PictureFolderEntity_SuperOffice_WebApi_RequestOptions_}
+
+Updates the existing PictureFolderEntity or creates a new PictureFolderEntity if the id parameter is 0.
+
+```csharp
+public Task<PictureFolderEntity> SavePictureFolderEntityAsync(PictureFolderEntity pictureFolderEntity, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`pictureFolderEntity` [PictureFolderEntity](SuperOffice.WebApi.Data.PictureFolderEntity.md)
+
+The PictureFolderEntity that is saved.
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PictureFolderEntity](SuperOffice.WebApi.Data.PictureFolderEntity.md)\&gt;
+
+New or updated PictureFolderEntity
 
 ### SaveProjectTypeEntityAsync\(ProjectTypeEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_ListAgent_SaveProjectTypeEntityAsync_SuperOffice_WebApi_Data_ProjectTypeEntity_SuperOffice_WebApi_RequestOptions_}
 

@@ -1,7 +1,7 @@
 ---
 title: FormSubmissionShadowStaticSelectionV2
 description: Shadow contact provider for the static FormSubmission provider.
-keywords: ['FormSubmissionShadowStaticSelectionV2 archive provider']
+keywords: FormSubmissionShadowStaticSelectionV2 archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -491,7 +491,7 @@ Shadow contact provider for the static FormSubmission provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormSubmissionShadowStaticSelectionV2?$select=associate/isActiveText,person/firstName,person/email/emailLastBounce,person/withdrawnStoreConsent,contact/NumberOfNotCompletedActivities
+GET /api/v1/archive/FormSubmissionShadowStaticSelectionV2?$select=person/searchPhone/description,person/personAddress/state,person/personExtra/x_person_appointment_relation,contact/LastActivity,contact/LastDoByActivity
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

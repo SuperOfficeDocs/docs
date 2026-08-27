@@ -157,6 +157,18 @@ public virtual bool IsRead { get; set; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
+### <a id="SuperOffice_WebApi_Data_NewsFeedItem_Location"></a> Location
+
+Place related to news item (city or city + country) (optional)
+
+```csharp
+public virtual string Location { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
 ### <a id="SuperOffice_WebApi_Data_NewsFeedItem_NewsFeedItemId"></a> NewsFeedItemId
 
 Primary key
@@ -240,6 +252,18 @@ public virtual Project Project { get; set; }
 #### Property Value
 
  [Project](SuperOffice.WebApi.Data.Project.md)
+
+### <a id="SuperOffice_WebApi_Data_NewsFeedItem_RatingPercent"></a> RatingPercent
+
+Rating as percentage (0-100). 0 = undefined. 1-9 = No stars, 10-30 = One star, Two stars = 31-50, 90-100 = Five stars. Client can render rating as stars, pie chart, thumbs up or down, however they want. Default 0 indicates no rating.
+
+```csharp
+public virtual int RatingPercent { get; set; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedItem_ReadAt"></a> ReadAt
 

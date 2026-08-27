@@ -1,7 +1,7 @@
 ---
 title: FormSubmission
 description: Archive provider for listing form submissions
-keywords: ['FormSubmission archive provider']
+keywords: FormSubmission archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -486,7 +486,7 @@ Archive provider for listing form submissions
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormSubmission?$select=registeredBy,person/personCategoryGroup,person/personCategoryRank,person/personExtra/y_rental/x_end
+GET /api/v1/archive/FormSubmission?$select=person/personAssociateId,person/personAssociate/isActiveText,person/restrictionAddress/county
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

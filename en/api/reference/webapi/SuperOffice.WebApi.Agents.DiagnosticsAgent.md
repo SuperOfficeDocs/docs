@@ -445,6 +445,26 @@ Override language/culture codes on this request.
 
 NextTableNumber of DatabaseModel
 
+### GetSystemInfoAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_GetSystemInfoAsync_SuperOffice_WebApi_RequestOptions_}
+
+Get system information
+
+```csharp
+public Task<SoSystemInfoCarrier> GetSystemInfoAsync(RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SoSystemInfoCarrier](SuperOffice.WebApi.Data.SoSystemInfoCarrier.md)\&gt;
+
+License and configuration information.
+
 ### GetSystemMessagesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_DiagnosticsAgent_GetSystemMessagesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Retrieves a list of system messages for a specific associate.

@@ -1,7 +1,7 @@
 ---
 title: MailingsAndFolders
 description: Combined archive of mailings (s_shipment) and mailing folders
-keywords: ['MailingsAndFolders archive provider']
+keywords: MailingsAndFolders archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -700,7 +700,7 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 ## Sample
 
 ```http!
-GET /api/v1/archive/MailingsAndFolders?$select=mailingFolderId,mailingAddr/contact/registeredByFullName,mailingAddr/contact/postAddress/wgs84longitude,mailingAddr/contact/contactExtra/x_contact_integer,mailingAddr/person/firstName
+GET /api/v1/archive/MailingsAndFolders?$select=mailingAddr/person/personAssociate/contactName,mailingAddr/person/correspondingAssociate/contactId,emailFlow/workflowDefinitionStatus,project/projectUdef/SuperOffice:5,project/projectUdef/SuperOffice:6
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

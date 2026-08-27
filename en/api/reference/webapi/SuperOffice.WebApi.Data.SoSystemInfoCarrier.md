@@ -4,7 +4,7 @@ Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for SoSystemInfoCarrier.
-Representation of a serialized exception that can be communicatyed over web services
+System Information - license, version, database type, language
 
 ```csharp
 public class SoSystemInfoCarrier : Carrier
@@ -126,7 +126,7 @@ public string BuildType_String { get; set; }
 
 ### <a id="SuperOffice_WebApi_Data_SoSystemInfoCarrier_CompanyId"></a> CompanyId
 
-License Info: Company name associated with license.
+License Info: Company (contact_id) associated with license.
 
 ```csharp
 public virtual int CompanyId { get; set; }
@@ -142,6 +142,18 @@ License Info: Company name associated with license.
 
 ```csharp
 public virtual string CompanyName { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+### <a id="SuperOffice_WebApi_Data_SoSystemInfoCarrier_DatabaseLanguage"></a> DatabaseLanguage
+
+Default language configured on the database (iso2 language code: en, sv, no, da, de, zh-cn, pt-br, de-ch, etc) - null if not configured
+
+```csharp
+public virtual string DatabaseLanguage { get; set; }
 ```
 
 #### Property Value

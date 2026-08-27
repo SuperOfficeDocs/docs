@@ -1,7 +1,7 @@
 ---
 title: ProjectGuideAppointment
 description: Specific provider for Project Guide Items of type Appointment
-keywords: ['ProjectGuideAppointment archive provider']
+keywords: ProjectGuideAppointment archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -777,7 +777,7 @@ to drive the sentry calculations, as well as the specialization with the correct
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectGuideAppointment?$select=appointmentInstance/contact/contactAssociate/credentialDisplayValue,appointmentInstance/contact/contactUdef/SuperOffice:1,appointmentInstance/project/projectEvent/isExternalEvent
+GET /api/v1/archive/ProjectGuideAppointment?$select=appointmentInstance/visibleFor,appointmentInstance/contact/contactDeleted,appointmentInstance/contact/contactAssociate/isLocation,appointmentInstance/person/birthdate,appointmentInstance/project/LastCompletedActivity
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

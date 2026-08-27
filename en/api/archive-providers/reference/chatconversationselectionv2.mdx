@@ -1,7 +1,7 @@
 ---
 title: ChatConversationSelectionV2
 description: This is the archive Provider for the Selection archive.
-keywords: ['ChatConversationSelectionV2 archive provider']
+keywords: ChatConversationSelectionV2 archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -498,7 +498,7 @@ This is the archive Provider for the Selection archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ChatConversationSelectionV2?$select=person/personUdef/SuperOffice:8,person/personExtra/x_person_timespan,contact/contactAssociate/ejDisplayName,contact/contactExtra/y_organization/x_name
+GET /api/v1/archive/ChatConversationSelectionV2?$select=person/personExtra/x_person_priority_relation,contact/NumberOfTickets,person/restrictionAddress/line1
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

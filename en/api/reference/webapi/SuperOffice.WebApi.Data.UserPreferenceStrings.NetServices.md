@@ -389,6 +389,10 @@ public const string WhatsNewConfirmedPocket = "WhatsNewConfirmedPocket"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
+#### Examples
+
+https://help.superoffice.com/news/pocket/8.0.10/default.htm
+
 ### WhatsNewConfirmedWeb {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WhatsNewConfirmedWeb}
 
 WhatsNew Latest confirmed on web client. The latests WhatsNew URL the user has confirmed on the web client.
@@ -402,6 +406,10 @@ public const string WhatsNewConfirmedWeb = "WhatsNewConfirmedWeb"
 #### Field Value
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+#### Examples
+
+https://help.superoffice.com/news/web/8.0.10/default.htm
 
 ### WhatsNewConfirmedWin {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WhatsNewConfirmedWin}
 
@@ -417,6 +425,10 @@ public const string WhatsNewConfirmedWin = "WhatsNewConfirmedWin"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
+#### Examples
+
+https://help.superoffice.com/news/win/8.0.10/default.htm
+
 ### WhatsNewSeenPocket {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WhatsNewSeenPocket}
 
 WhatsNew Seen on Web client. The latest WhatsNew URL we have seen in the web client.
@@ -430,6 +442,10 @@ public const string WhatsNewSeenPocket = "WhatsNewSeenPocket"
 #### Field Value
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+#### Examples
+
+https://help.superoffice.com/news/pocket/8.0.10/default.htm
 
 ### WhatsNewSeenWeb {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WhatsNewSeenWeb}
 
@@ -445,6 +461,10 @@ public const string WhatsNewSeenWeb = "WhatsNewSeenWeb"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
+#### Examples
+
+https://help.superoffice.com/news/web/8.0.10/default.htm
+
 ### WhatsNewSeenWin {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WhatsNewSeenWin}
 
 WhatsNew Seen on Web client. The latest WhatsNew URL we have seen in the web client.
@@ -458,6 +478,10 @@ public const string WhatsNewSeenWin = "WhatsNewSeenWin"
 #### Field Value
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+#### Examples
+
+https://help.superoffice.com/news/win/8.0.10/default.htm
 
 ### WhatsNewUrl {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WhatsNewUrl}
 
@@ -480,5 +504,5 @@ public const string WhatsNewUrl = "WhatsNewUrl"
 
 https://help.superoffice.com/SODispatcher/v1/WhatsNew?ver=&lt;ver#&gt;&amp;langiso=&lt;lani&gt;
 returns JSON object when called:
-\{ url: "&lt;url&gt;" \}
+\{ url: "https://help.superoffice.com/news/web/8.0.10/default.htm" \}
 

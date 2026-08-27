@@ -1,7 +1,7 @@
 ---
 title: FreetextTicket
 description: Combined multi-query ticket search provider supporting freetext and finding ticket by ID.
-keywords: ['FreetextTicket archive provider']
+keywords: FreetextTicket archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -796,7 +796,7 @@ Combined multi-query ticket search provider supporting freetext and finding tick
 ## Sample
 
 ```http!
-GET /api/v1/archive/FreetextTicket?$select=origin,person/hasInterests,person/personUdef/SuperOffice:10,contact/contactAssociate/assocName,project/projectAssociate/contactId
+GET /api/v1/archive/FreetextTicket?$select=createdDate,readByOwner,status,ownedBy/isLocation,person/personAddress/formattedMultiLineAddress
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -1,7 +1,7 @@
 ---
 title: FindContactWithoutPhoneAddressEmail
 description: 
-keywords: ['FindContactWithoutPhoneAddressEmail archive provider']
+keywords: FindContactWithoutPhoneAddressEmail archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -782,7 +782,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/FindContactWithoutPhoneAddressEmail?$select=categoryGroup,postAddress/addressId,streetAddress/city,saintActivityType,sale/updatedByFullName
+GET /api/v1/archive/FindContactWithoutPhoneAddressEmail?$select=contactExtra/x_contact_contact,appointment/associate/personEmail,firstName,personPager/description,correspondingAssociate/contactName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -179,18 +179,6 @@ public virtual string SentFolder { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_EMailAccount_SimpleMode"></a> SimpleMode
-
-Simple mode used for sending and retrieving invitations, accept/decline etc. without the full Inbox GUI experience
-
-```csharp
-public virtual short SimpleMode { get; set; }
-```
-
-#### Property Value
-
- [short](https://learn.microsoft.com/dotnet/api/system.int16)
-
 ### <a id="SuperOffice_WebApi_Data_EMailAccount_UseGraphApi"></a> UseGraphApi
 
 Use the GraphApi for this account

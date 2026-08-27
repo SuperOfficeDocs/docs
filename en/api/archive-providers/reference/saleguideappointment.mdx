@@ -1,7 +1,7 @@
 ---
 title: SaleGuideAppointment
 description: Specific provider for Sale Guide Items of type Appointment
-keywords: ['SaleGuideAppointment archive provider']
+keywords: SaleGuideAppointment archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -774,7 +774,7 @@ to drive the sentry calculations, as well as the specialization with the correct
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleGuideAppointment?$select=saleId,suggestedItemId,instanceItemId,appointmentInstance/person/personExtra/y_rental/id,appointmentInstance/person/personAssociate/lastName
+GET /api/v1/archive/SaleGuideAppointment?$select=appointmentInstance/contact/postAddress/addressId,appointmentInstance/person/correspondingAssociate/isLocation,appointmentInstance/appointmentUdef/SuperOffice:8,appointmentInstance/project/projectUrl/URLDescription,appointmentInstance/project/NumberOfActivitiesInPeriod
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

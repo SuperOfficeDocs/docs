@@ -1,7 +1,7 @@
 ---
 title: ProjectGuideDocument
 description: Specific provider for Project Guide Items of type Appointment
-keywords: ['ProjectGuideDocument archive provider']
+keywords: ProjectGuideDocument archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -751,7 +751,7 @@ to drive the sentry calculations, as well as the specialization with the correct
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectGuideDocument?$select=documentInstance/person/title,documentInstance/person/hasStoreConsent,documentInstance/contact/contactPhone/formattedNumber,documentInstance/contact/postAddress/zip,documentInstance/sale/associate/middleName
+GET /api/v1/archive/ProjectGuideDocument?$select=documentInstance/person/personHasInterests,documentInstance/person/supportAssociateFullName,documentInstance/person/personExtra/x_person_priority_relation,documentInstance/person/withdrawnStoreConsent,documentInstance/associate/middleName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

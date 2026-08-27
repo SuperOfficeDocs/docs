@@ -1,7 +1,7 @@
 ---
 title: SaleStakeholder
 description: 
-keywords: ['SaleStakeholder archive provider']
+keywords: SaleStakeholder archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -436,7 +436,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleStakeholder?$select=person/personExtra/x_person_user_relation,person/correspondingAssociate/simultaneousEjUser
+GET /api/v1/archive/SaleStakeholder?$select=person/personExtra/y_rental/x_amount,contact/streetAddress/line2,contact/contactAssociate/isActive,contact/contactAssociate/isLocation
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

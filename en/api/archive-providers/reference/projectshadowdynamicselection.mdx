@@ -1,7 +1,7 @@
 ---
 title: ProjectShadowDynamicSelection
 description: Shadow contact provider for the dynamic Project provider.
-keywords: ['ProjectShadowDynamicSelection archive provider']
+keywords: ProjectShadowDynamicSelection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -827,7 +827,7 @@ Shadow contact provider for the dynamic Project provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectShadowDynamicSelection?$select=completed,sale/saleNumber,appointment/saleId,appointment/excludeParticipants,projectMember/hasInfoText
+GET /api/v1/archive/ProjectShadowDynamicSelection?$select=sale/lossReason,sale/reopenDate,sale/associate/usergroup,sale/associate/assocName,projectMember/personNoMail
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

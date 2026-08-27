@@ -1,7 +1,7 @@
 ---
 title: EmailFlowEmailContent
 description: Email flow message content.
-keywords: ['EmailFlowEmailContent archive provider']
+keywords: EmailFlowEmailContent archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -268,7 +268,7 @@ Lists all email flow message content
 ## Sample
 
 ```http!
-GET /api/v1/archive/EmailFlowEmailContent?$select=shipment/mailingType,shipment/project/nextMilestone,shipment/project/activeErpLinks,shipment/project/project/infoText
+GET /api/v1/archive/EmailFlowEmailContent?$select=shipment/mailingType,shipment/date,shipment/emailFlow/workflowName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -1330,6 +1330,38 @@ Override language/culture codes on this request.
 
 New or updated LandingPageEntity
 
+### SaveLandingPageTabsAsync\(int, string, LandingPageTab\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IConfigurationAgent_SaveLandingPageTabsAsync_System_Int32_System_String_SuperOffice_WebApi_Data_LandingPageTab___SuperOffice_WebApi_RequestOptions_}
+
+Replace the full ordered set of tabs on the landing page identified by associate and entity table, reconciling against the existing rows. Creates the landing page row if it does not exist.
+
+```csharp
+Task<LandingPageEntity> SaveLandingPageTabsAsync(int associateId, string entityTableName, LandingPageTab[] tabs, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`associateId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+Id of the associate that owns the landing page.
+
+`entityTableName` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+Entity table name identifying which landing page (contact, person, sale, ...).
+
+`tabs` [LandingPageTab](SuperOffice.WebApi.Data.LandingPageTab.md)\[\]
+
+The complete ordered set of tabs to persist.
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LandingPageEntity](SuperOffice.WebApi.Data.LandingPageEntity.md)\&gt;
+
+The updated landing page.
+
 ### SaveSystemEventEntityAsync\(SystemEventEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IConfigurationAgent_SaveSystemEventEntityAsync_SuperOffice_WebApi_Data_SystemEventEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing SystemEventEntity or creates a new SystemEventEntity if the id parameter is 0.

@@ -1,7 +1,7 @@
 ---
 title: QuoteLineSelection
 description: This is the archive Provider for the Selection QuoteLine archive.
-keywords: ['QuoteLineSelection archive provider']
+keywords: QuoteLineSelection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -781,7 +781,7 @@ This is the archive Provider for the Selection QuoteLine archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteLineSelection?$select=vatAmount,alternative/version/quote/sale/person/mrMrs,alternative/version/quote/sale/person/personPager/formattedNumber,alternative/version/quote/sale/associate/lastName,alternative/version/quote/sale/saleUdef/SuperOffice:7
+GET /api/v1/archive/QuoteLineSelection?$select=alternative/version/quote/sale/contact/contactAssociate/credentialDisplayValue,alternative/version/quote/sale/contact/LastDoBySale,alternative/version/quote/sale/associate/firstName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

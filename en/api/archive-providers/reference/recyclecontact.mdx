@@ -1,7 +1,7 @@
 ---
 title: RecycleContact
 description: 
-keywords: ['RecycleContact archive provider']
+keywords: RecycleContact archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -207,7 +207,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/RecycleContact?$select=searchPhone/description,streetAddress/formattedAddress,streetAddress/addressId
+GET /api/v1/archive/RecycleContact?$select=streetAddress/wgs84longitude,contactExtra/x_contact_date,LastCompletedTicket
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

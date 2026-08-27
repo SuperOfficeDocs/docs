@@ -1,7 +1,7 @@
 ---
 title: FreetextAppointment
 description: Archive provider for freetext search on the Appointment entity (any kind of appointment, phone call, or task).
-keywords: ['FreetextAppointment archive provider']
+keywords: FreetextAppointment archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -771,7 +771,7 @@ Private appointments that are not fully readable will not be shown (they are ski
 ## Sample
 
 ```http!
-GET /api/v1/archive/FreetextAppointment?$select=contact/categoryGroup,person/email/emailId,person/restrictionAddress/formattedAddress,project/NumberOfSalesInPeriod,sale/associate/firstName
+GET /api/v1/archive/FreetextAppointment?$select=saleId,contact/email/emailAddress,contact/contactAssociate/assocTooltip,contact/NumberOfNotCompletedActivities,person/useAsMailingAddress
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

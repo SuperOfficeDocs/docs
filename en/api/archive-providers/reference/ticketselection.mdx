@@ -1,7 +1,7 @@
 ---
 title: TicketSelection
 description: This is the archive Provider for the Selection ticket archive.
-keywords: ['TicketSelection archive provider']
+keywords: TicketSelection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -800,7 +800,7 @@ This is the archive Provider for the Selection ticket archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketSelection?$select=person/personAssociate/usergroup,contact/contactAssociate/ejStatus,contact/contactUdef/SuperOffice:2,sale/saleTypeCategory
+GET /api/v1/archive/TicketSelection?$select=timeSpentInternally,createdBy/personId,createdBy/otherGroups,contact/streetAddress/formattedAddress,contact/contactAssociate/portraitThumbnail
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

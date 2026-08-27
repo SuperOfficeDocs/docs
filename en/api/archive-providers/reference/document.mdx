@@ -1,7 +1,7 @@
 ---
 title: Document
 description: Archive provider for Document type activities. This provider can be used on its own, or can form part of the
-keywords: ['Document archive provider']
+keywords: Document archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -732,7 +732,7 @@ Archive provider for Document type activities. This provider can be used on its 
 ## Sample
 
 ```http!
-GET /api/v1/archive/Document?$select=person/kanaFirstName,person/personAssociate/associateDbId,person/personAssociate/assocTooltip,person/correspondingAssociate/role,contact/companyCategoryRank
+GET /api/v1/archive/Document?$select=mailMergeDraft,person/personCategory,person/personAssociate/assocType,contact/url/URLAddress,contact/contactAssociate/portraitThumbnail
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

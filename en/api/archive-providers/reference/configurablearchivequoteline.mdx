@@ -1,7 +1,7 @@
 ---
 title: ConfigurableArchiveQuoteLine
 description: This is the archive Provider for the QuoteLine Archive.
-keywords: ['ConfigurableArchiveQuoteLine archive provider']
+keywords: ConfigurableArchiveQuoteLine archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -774,7 +774,7 @@ This is the archive Provider for the QuoteLine Archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ConfigurableArchiveQuoteLine?$select=alternative/version/quote/sale/heading,alternative/version/quote/sale/person/personAssociateFullName,alternative/version/quote/sale/person/personAssociate/isActiveText,alternative/version/quote/sale/person/correspondingAssociate/credentialType,alternative/version/quote/sale/contact/url/URLAddress
+GET /api/v1/archive/ConfigurableArchiveQuoteLine?$select=alternative/extraField1,alternative/version/quote/sale/who,alternative/version/quote/sale/person/personNoMail,alternative/version/quote/sale/person/personPrivate/description,alternative/version/quote/sale/person/personAssociate/personId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

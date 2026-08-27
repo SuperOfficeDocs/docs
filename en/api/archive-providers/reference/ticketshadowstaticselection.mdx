@@ -1,7 +1,7 @@
 ---
 title: TicketShadowStaticSelection
 description: Shadow contact provider for the static ticket provider.
-keywords: ['TicketShadowStaticSelection archive provider']
+keywords: TicketShadowStaticSelection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -800,7 +800,7 @@ Shadow contact provider for the static ticket provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketShadowStaticSelection?$select=person/personUdef/SuperOffice:3,person/personAssociate/middleName,contact/NumberOfActivitiesInPeriod,contact/saintTicketStatus,extra/x_ticket_shorttext_list
+GET /api/v1/archive/TicketShadowStaticSelection?$select=person/personActiveErpLinks,person/updatedByWorkflow,person/personExtra/x_person_date,contact/contactAssociate/isActive,contact/LastSale
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -397,6 +397,42 @@ Override language/culture codes on this request.
 
 Array of events since the given event ID; within the time span kept by the event mechanism. Event/primarykey combinations are not guaranteed to be unique, and events in the PublishEvents parameter are echoed back to the client
 
+### PublishAndSyncUiEventsAsync\(int, UiEvent\[\], MetricPair\[\], TicketVersionInfo\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ViewStateAgent_PublishAndSyncUiEventsAsync_System_Int32_SuperOffice_WebApi_Data_UiEvent___SuperOffice_WebApi_Data_MetricPair___SuperOffice_WebApi_Data_TicketVersionInfo___SuperOffice_WebApi_RequestOptions_}
+
+Publish zero or more events and return any new events since the given event id, exactly like PublishAndRetrieveUiEvents — and additionally answer, for each ticket version the client supplies, whether that ticket has changed since (and by whom). Requested tickets the user cannot see are omitted from the answer
+
+```csharp
+public Task<LiveUiSyncResult> PublishAndSyncUiEventsAsync(int latestKnownEventId, UiEvent[] publishEvents, MetricPair[] metrics, TicketVersionInfo[] ticketVersions, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`latestKnownEventId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+The last event ID that this client knows about. The return value will be any events occurring /after/ that point, numbered by the server. Clients need to keep track themselves of this number between calls
+
+`publishEvents` [UiEvent](SuperOffice.WebApi.Data.UiEvent.md)\[\]
+
+Array of events to publish. This can be empty if the client only wants to retrieve information
+
+`metrics` [MetricPair](SuperOffice.WebApi.Data.MetricPair.md)\[\]
+
+Optional statistical and performance metrics collected by the frontend. Can be null or empty. Metrics are sum-accumulated and reported once a minute; please do not report the same logical event twice
+
+`ticketVersions` [TicketVersionInfo](SuperOffice.WebApi.Data.TicketVersionInfo.md)\[\]
+
+The tickets the client is showing, each with the last-changed value of the client's loaded copy (DateTime.MinValue or omitted = no copy; the current value is then returned without a staleness verdict). At most 500 entries after removing duplicates
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LiveUiSyncResult](SuperOffice.WebApi.Data.LiveUiSyncResult.md)\&gt;
+
+New events since the given event id, plus the sync state of the requested tickets
+
 ### SaveCurrentAsync\(History, RequestOptions\) {#SuperOffice_WebApi_Agents_ViewStateAgent_SaveCurrentAsync_SuperOffice_WebApi_Data_History_SuperOffice_WebApi_RequestOptions_}
 
 Saving the current history item. This history item is saved with Rank = 1, and all the remaining elements rank values are shifted one down. The list is maintained with the max lenght of the History list length preference.
@@ -492,4 +528,32 @@ Override language/culture codes on this request.
 #### Returns
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
+
+### UpsertRecentNavigationAsync\(string, NavigationElement\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ViewStateAgent_UpsertRecentNavigationAsync_System_String_SuperOffice_WebApi_Data_NavigationElement___SuperOffice_WebApi_RequestOptions_}
+
+Upsert Recent navigation entries for the logged-in associate and the given client. The entries are ranked so that the first element in the array becomes the most recent. The list is capped by the RecentNavigationLimit preference; the oldest entries beyond the cap are removed.
+
+```csharp
+public Task UpsertRecentNavigationAsync(string client, NavigationElement[] elements, RequestOptions requestOptions = null)
+```
+
+#### Parameters
+
+`client` [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+The client the entries belong to, e.g. Crm, Admin or Mobile
+
+`elements` [NavigationElement](SuperOffice.WebApi.Data.NavigationElement.md)\[\]
+
+The navigation entries to upsert. The first element becomes the most recent; duplicate keys are collapsed keeping the first occurrence.
+
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+
+Override language/culture codes on this request.
+
+#### Returns
+
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
+
+This method has no return value
 

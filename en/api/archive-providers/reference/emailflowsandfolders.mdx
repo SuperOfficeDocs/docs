@@ -1,7 +1,7 @@
 ---
 title: EmailFlowsAndFolders
 description: Archive of EmailFlows and Folders.
-keywords: ['EmailFlowsAndFolders archive provider']
+keywords: EmailFlowsAndFolders archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -89,7 +89,7 @@ Combines all EmailFlows and EmailFlowFolders in one archive together.
 ## Sample
 
 ```http!
-GET /api/v1/archive/EmailFlowsAndFolders?$select=emailFlowHierarchyId,updatedBy,workflowAssociate/title
+GET /api/v1/archive/EmailFlowsAndFolders?$select=workflowAssociate/role,updatedBy,workflowAssociate/title
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

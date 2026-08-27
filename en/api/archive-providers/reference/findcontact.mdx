@@ -1,7 +1,7 @@
 ---
 title: FindContact
 description: 
-keywords: ['FindContact archive provider']
+keywords: FindContact archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -782,7 +782,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/FindContact?$select=mainContact,contactExtra/x_contact_datetime,saintAmountClass,targetRelation/countryId,sale/currencyId
+GET /api/v1/archive/FindContact?$select=contactExtra/x_contact_contact,appointment/associate/personEmail,firstName,personPager/description,correspondingAssociate/contactName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
