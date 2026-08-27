@@ -1418,6 +1418,115 @@
         ]
       }
     },
+    "/api/v1/Agents/Diagnostics/GetSystemInfo": {
+      "post": {
+        "tags": [
+          "Diagnostics_Agent"
+        ],
+        "summary": "Get System Info",
+        "description": "Get system information\n\nNsApiSlow threshold: 2000 ms.",
+        "operationId": "v1DiagnosticsAgent_GetSystemInfo",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SoSystemInfoCarrier"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SoSystemInfoCarrier"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SoSystemInfoCarrier"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SoSystemInfoCarrier"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SoSystemInfoCarrier"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.SoSystemInfoCarrier"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SuperOffice_Password": [],
+            "SuperId_Authentication": []
+          }
+        ]
+      }
+    },
     "/api/v1/Agents/Diagnostics/CollectDataAdditions": {
       "post": {
         "tags": [
@@ -2956,10 +3065,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:56350"
+      "url": "http://localhost:49843"
     },
     {
-      "url": "https://localhost:56350"
+      "url": "https://localhost:49843"
     }
   ],
   "components": {
@@ -3454,6 +3563,306 @@
             "additionalProperties": {
               "type": "string"
             }
+          }
+        }
+      },
+      "SuperOffice.CRM.Services.SoSystemInfoCarrier": {
+        "description": "Information about the current system.",
+        "type": "object",
+        "properties": {
+          "License": {
+            "$ref": "#/components/schemas/SuperOffice.License.LicenseInfo"
+          },
+          "WarningEnglish": {
+            "description": "Warning information to be displayed to the user in plain English",
+            "type": "string"
+          },
+          "WarningResource": {
+            "description": "Warning information to be displayed to the user in resource format.",
+            "type": "string"
+          },
+          "BranchName": {
+            "description": "Name of the branch the NetServer is built from.",
+            "type": "string"
+          },
+          "BuildLabel": {
+            "description": "Build label for NetServer.",
+            "type": "string"
+          },
+          "AssemblyVersion": {
+            "description": "AssemblyVersion of NetServer",
+            "type": "string"
+          },
+          "AccumulatedNextCheckDate": {
+            "format": "date-time",
+            "description": "The next date a new check of the license is to be performed, incremented daily if the check did not result in a new license.",
+            "type": "string"
+          },
+          "FileVersion": {
+            "description": "FileVersion of NetServer.",
+            "type": "string"
+          },
+          "Description": {
+            "description": "Description of the NetServer version.",
+            "type": "string"
+          },
+          "BuildType": {
+            "description": "Type of build.",
+            "enum": [
+              "Feature",
+              "Stable",
+              "Alpha",
+              "Beta",
+              "ReleaseCandidate",
+              "Release"
+            ],
+            "type": "string"
+          },
+          "DatabaseVersion": {
+            "format": "int32",
+            "description": "Database version number",
+            "type": "integer"
+          },
+          "IsUnicode": {
+            "description": "Is the database strings formatted as Unicode (i.e. NVARCHAR)",
+            "type": "boolean"
+          },
+          "CompanyName": {
+            "description": "License Info: Company name associated with license.",
+            "type": "string"
+          },
+          "CompanyId": {
+            "format": "int32",
+            "description": "License Info: Company name associated with license.",
+            "type": "integer"
+          },
+          "DatabaseType": {
+            "description": "Major name of database provider",
+            "type": "string"
+          },
+          "DatabaseMinor": {
+            "description": "Minor name of database provider",
+            "type": "string"
+          },
+          "DatabaseName": {
+            "description": "Name of database",
+            "type": "string"
+          },
+          "IsOnTravel": {
+            "description": "Is the current database on travel.",
+            "type": "boolean"
+          },
+          "IsSatellite": {
+            "description": "Is the current database a Satellite",
+            "type": "boolean"
+          },
+          "DatabaseLanguage": {
+            "description": "Default language of the current database as ISO code. This is the language used for document templates and default language for new users.",
+            "type": "string"
+          },
+          "TableRight": {
+            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
+          },
+          "FieldProperties": {
+            "description": "Field property dictionary mapping field names to field access rights.",
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
+            }
+          }
+        }
+      },
+      "SuperOffice.License.LicenseInfo": {
+        "type": "object",
+        "properties": {
+          "CompanyName": {
+            "type": "string"
+          },
+          "SerialNr": {
+            "type": "string"
+          },
+          "OwnerName": {
+            "type": "string"
+          },
+          "OwnerDescription": {
+            "type": "string"
+          },
+          "NextCheckDate": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "MaintenanceDate": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "AdminWarningDate": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "ExpiryDate": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "GraceDate": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "ExtraFlags": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "ExtraInfo": {
+            "type": "string"
+          },
+          "LicenseUrl": {
+            "type": "string"
+          },
+          "LicenseVersion": {
+            "type": "string"
+          },
+          "DeploymentType": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "ProductType": {
+            "type": "string"
+          },
+          "ProductDescription": {
+            "type": "string"
+          },
+          "ModuleLicenses": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SuperOffice.License.ModuleLicense"
+            }
+          },
+          "PublicKey": {
+            "$ref": "#/components/schemas/SuperOffice.License.SignedPublicKey"
+          },
+          "Signature": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.License.ModuleLicense": {
+        "type": "object",
+        "properties": {
+          "OwnerName": {
+            "type": "string"
+          },
+          "ModuleName": {
+            "type": "string"
+          },
+          "ModuleDescription": {
+            "type": "string"
+          },
+          "ModuleTooltip": {
+            "type": "string"
+          },
+          "ModuleVersion": {
+            "type": "string"
+          },
+          "LicenseType": {
+            "enum": [
+              "Unknown",
+              "SiteLicense",
+              "SatelliteLicense",
+              "UserLicense"
+            ],
+            "type": "string"
+          },
+          "Unrestricted": {
+            "type": "boolean"
+          },
+          "AllowedUserType": {
+            "enum": [
+              "Unknown",
+              "InternalAssociate",
+              "ResourceAssociate",
+              "ExternalAssociate",
+              "AnonymousAssociate",
+              "SystemAssociate"
+            ],
+            "type": "string"
+          },
+          "NumberOfLicenses": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "ExtraFlags": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "ExtraInfo": {
+            "type": "string"
+          },
+          "SortOrder": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "IsHidden": {
+            "type": "boolean"
+          },
+          "PrerequisiteModuleName": {
+            "type": "string"
+          },
+          "Signature": {
+            "type": "string"
+          }
+        }
+      },
+      "SuperOffice.License.SignedPublicKey": {
+        "type": "object",
+        "properties": {
+          "OwnerName": {
+            "type": "string"
+          },
+          "SignDate": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "ExpiryDate": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "Key": {
+            "$ref": "#/components/schemas/System.Security.Cryptography.DSAParameters"
+          },
+          "Signature": {
+            "type": "string"
+          }
+        }
+      },
+      "System.Security.Cryptography.DSAParameters": {
+        "type": "object",
+        "properties": {
+          "P": {
+            "format": "byte",
+            "type": "string"
+          },
+          "Q": {
+            "format": "byte",
+            "type": "string"
+          },
+          "G": {
+            "format": "byte",
+            "type": "string"
+          },
+          "Y": {
+            "format": "byte",
+            "type": "string"
+          },
+          "J": {
+            "format": "byte",
+            "type": "string"
+          },
+          "Seed": {
+            "format": "byte",
+            "type": "string"
+          },
+          "Counter": {
+            "format": "int32",
+            "type": "integer"
           }
         }
       },
