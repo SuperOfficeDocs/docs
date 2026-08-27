@@ -52,20 +52,25 @@ jobs:
         env:
           CHANGED_FILES: ${{ steps.changed.outputs.all_changed_files }}
         run: |
+          # Newline-joined and passed as one quoted arg, not space-joined/unquoted --
+          # PowerShell's CLI parameter binder only assigns the first bare value after
+          # -Files to the script's [string[]]$Files, so more than one file used to
+          # error with "A positional parameter cannot be found ..." (see #338).
+          # convert-swagger-to-openapi.ps1 splits this back into an array itself.
           agent_files=""
           rest_files=""
           for f in $CHANGED_FILES; do
             case "$f" in
-              api-sources/openapi/agent/*) agent_files="$agent_files $f" ;;
-              api-sources/openapi/rest/*) rest_files="$rest_files $f" ;;
+              api-sources/openapi/agent/*) agent_files="${agent_files}${f}"$'\n' ;;
+              api-sources/openapi/rest/*) rest_files="${rest_files}${f}"$'\n' ;;
             esac
           done
 
           if [ -n "$agent_files" ]; then
-            pwsh tools/convert-swagger-to-openapi.ps1 -SourcePath api-sources/openapi/agent -DestinationPath openapi/agent -Files $agent_files
+            pwsh tools/convert-swagger-to-openapi.ps1 -SourcePath api-sources/openapi/agent -DestinationPath openapi/agent -Files "$agent_files"
           fi
           if [ -n "$rest_files" ]; then
-            pwsh tools/convert-swagger-to-openapi.ps1 -SourcePath api-sources/openapi/rest -DestinationPath openapi/rest -Files $rest_files
+            pwsh tools/convert-swagger-to-openapi.ps1 -SourcePath api-sources/openapi/rest -DestinationPath openapi/rest -Files "$rest_files"
           fi
 
       - name: Remove output for deleted specs
