@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent"&gt;&lt;/a&gt; Class CustomerServiceAgent
+# Class CustomerServiceAgent {#SuperOffice_WebApi_Agents_CustomerServiceAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -69,7 +69,7 @@ using (CustomerServiceAgent agent = new CustomerServiceAgent(mySession))
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; CustomerServiceAgent\(HttpClient\)
+### CustomerServiceAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: Agent used for Customer Service methods
 
@@ -83,7 +83,7 @@ public CustomerServiceAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; CustomerServiceAgent\(WebApiOptions, HttpClient\)
+### CustomerServiceAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: Agent used for Customer Service methods
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_AddMessageFromMailDataAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddMessageFromMailDataAsync\(int, string, RequestOptions\)
+### AddMessageFromMailDataAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_AddMessageFromMailDataAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 This method will add a message to an existing request in the sam way as importMail would do it from an email. It accepts RFC822 formatted data
 
@@ -131,7 +131,7 @@ Override language/culture codes on this request.
 
 An object containing some meta data for the ticket
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_CheckIfCustomizedTemplatesAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CheckIfCustomizedTemplatesAsync\(RequestOptions\)
+### CheckIfCustomizedTemplatesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_CheckIfCustomizedTemplatesAsync_SuperOffice_WebApi_RequestOptions_}
 
 Checks whether the core html templates are customized
 
@@ -151,7 +151,7 @@ Override language/culture codes on this request.
 
 True if the templates are customized
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_CheckSymmetricEncryptionAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CheckSymmetricEncryptionAsync\(string, RequestOptions\)
+### CheckSymmetricEncryptionAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_CheckSymmetricEncryptionAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Do a test to check that we are using the same encryption keys
 
@@ -175,7 +175,7 @@ Override language/culture codes on this request.
 
 Encrypted version of the string done by NetServer
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_CreateDefaultCustomerCenterConfigAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultCustomerCenterConfigAsync\(RequestOptions\)
+### CreateDefaultCustomerCenterConfigAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_CreateDefaultCustomerCenterConfigAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new CustomerCenterConfig.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -196,7 +196,7 @@ Override language/culture codes on this request.
 
 A blank CustomerCenterConfig
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_CreateDefaultMailboxEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultMailboxEntityAsync\(RequestOptions\)
+### CreateDefaultMailboxEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_CreateDefaultMailboxEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new MailboxEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -217,7 +217,7 @@ Override language/culture codes on this request.
 
 A blank MailboxEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_CreateSessionAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateSessionAsync\(string, RequestOptions\)
+### CreateSessionAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_CreateSessionAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Creates a login session for a CS user
 
@@ -241,7 +241,7 @@ Override language/culture codes on this request.
 
 The session key information
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_CreateTicketFromMailDataAsync_System_Int32_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateTicketFromMailDataAsync\(int, string, int, RequestOptions\)
+### CreateTicketFromMailDataAsync\(int, string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_CreateTicketFromMailDataAsync_System_Int32_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 This method create a new ticket in the same way as importMail would import an email. It accepts RFC822 formatted data
 
@@ -273,7 +273,7 @@ Override language/culture codes on this request.
 
 An object containing some meta data for the created ticket
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_DeleteCustomerCenterConfigAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteCustomerCenterConfigAsync\(int, RequestOptions\)
+### DeleteCustomerCenterConfigAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_DeleteCustomerCenterConfigAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the CustomerCenterConfig
 
@@ -295,7 +295,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_EventHandlerExistsAsync_SuperOffice_WebApi_Data_EventHandlerType_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; EventHandlerExistsAsync\(EventHandlerType, RequestOptions\)
+### EventHandlerExistsAsync\(EventHandlerType, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_EventHandlerExistsAsync_SuperOffice_WebApi_Data_EventHandlerType_SuperOffice_WebApi_RequestOptions_}
 
 Check if an eventhandler exists for a given enum
 
@@ -319,7 +319,7 @@ Override language/culture codes on this request.
 
 True if it exists
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_EventHandlersExistsAsync_SuperOffice_WebApi_Data_EventHandlerType___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; EventHandlersExistsAsync\(EventHandlerType\[\], RequestOptions\)
+### EventHandlersExistsAsync\(EventHandlerType\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_EventHandlersExistsAsync_SuperOffice_WebApi_Data_EventHandlerType___SuperOffice_WebApi_RequestOptions_}
 
 Check if any given eventhandler exists
 
@@ -343,7 +343,7 @@ Override language/culture codes on this request.
 
 The existing event handlers
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_ExecuteEventHandlersAsync_SuperOffice_WebApi_Data_EventData_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ExecuteEventHandlersAsync\(EventData, RequestOptions\)
+### ExecuteEventHandlersAsync\(EventData, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_ExecuteEventHandlersAsync_SuperOffice_WebApi_Data_EventData_SuperOffice_WebApi_RequestOptions_}
 
 This method will execute event handlers in CRMScript for a given event.
 
@@ -367,7 +367,7 @@ Override language/culture codes on this request.
 
 The EventData instance after event handler execution
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_FindTicketsByTitleOrIdAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; FindTicketsByTitleOrIdAsync\(string, int, RequestOptions\)
+### FindTicketsByTitleOrIdAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_FindTicketsByTitleOrIdAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 This method wil search for tickets matching title or id
 
@@ -395,7 +395,7 @@ Override language/culture codes on this request.
 
 An array of objects containing some meta data for matching tickets
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_GetAllCustomerCenterConfigsAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAllCustomerCenterConfigsAsync\(RequestOptions\)
+### GetAllCustomerCenterConfigsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_GetAllCustomerCenterConfigsAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get all rows from cust_config as an array of CustomerCenterConfig entities
 
@@ -415,7 +415,7 @@ Override language/culture codes on this request.
 
 An array of CustomerCenterConfig entities
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_GetCustomerCenterConfigAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCustomerCenterConfigAsync\(int, RequestOptions\)
+### GetCustomerCenterConfigAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_GetCustomerCenterConfigAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific CustomerCenterConfig object.
 
@@ -439,7 +439,7 @@ Override language/culture codes on this request.
 
 CustomerCenterConfig
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_GetCustomerServiceStartupAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCustomerServiceStartupAsync\(RequestOptions\)
+### GetCustomerServiceStartupAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_GetCustomerServiceStartupAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get the carrier with data that Service needs when starting up
 
@@ -459,7 +459,7 @@ Override language/culture codes on this request.
 
 The carrier containing the startup data
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_GetCustomerServiceStartupByOwnerAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCustomerServiceStartupByOwnerAsync\(int, RequestOptions\)
+### GetCustomerServiceStartupByOwnerAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_GetCustomerServiceStartupByOwnerAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get the carrier with data that Service needs when starting up for a specific user
 
@@ -483,7 +483,7 @@ Override language/culture codes on this request.
 
 The carrier containing the startup data
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_GetFaqForCustomerAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetFaqForCustomerAsync\(int, RequestOptions\)
+### GetFaqForCustomerAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_GetFaqForCustomerAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a FAQ entry, ment to be displayed for a customer. This can either be a link to the FAQ entry on Custom Center, or it can be the answer and question. This is dependent on Registry setting with reg_id=157
 
@@ -507,7 +507,7 @@ Override language/culture codes on this request.
 
 The FAQ to show to the customer. Either a clickable link or the question/answer itself.
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_GetMailboxEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetMailboxEntityAsync\(int, RequestOptions\)
+### GetMailboxEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_GetMailboxEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific MailboxEntity object.
 
@@ -531,7 +531,7 @@ Override language/culture codes on this request.
 
 MailboxEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_GetMailboxesAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetMailboxesAsync\(RequestOptions\)
+### GetMailboxesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_GetMailboxesAsync_SuperOffice_WebApi_RequestOptions_}
 
 This method will get all registered mailboxes in Service
 
@@ -551,7 +551,7 @@ Override language/culture codes on this request.
 
 An array of Mailbox objects
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_GetParsedTemplateAsync_System_Int32_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetParsedTemplateAsync\(int, int, int, int, RequestOptions\)
+### GetParsedTemplateAsync\(int, int, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_GetParsedTemplateAsync_System_Int32_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a specific langauge version of the reply template, and run this trough the parser
 
@@ -587,7 +587,7 @@ Override language/culture codes on this request.
 
 The parsed reply template
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_GetPreviewFaqEntryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPreviewFaqEntryAsync\(int, RequestOptions\)
+### GetPreviewFaqEntryAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_GetPreviewFaqEntryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a faq entry from its faq entry id
 
@@ -611,7 +611,7 @@ Override language/culture codes on this request.
 
 FAQ entry suitable for preview
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_GetPreviewQuickReplyAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPreviewQuickReplyAsync\(int, RequestOptions\)
+### GetPreviewQuickReplyAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_GetPreviewQuickReplyAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a quick reply from its quick reply id
 
@@ -635,7 +635,7 @@ Override language/culture codes on this request.
 
 Quick reply suitable for preview
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_GetPreviewReplyTemplateAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPreviewReplyTemplateAsync\(int, RequestOptions\)
+### GetPreviewReplyTemplateAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_GetPreviewReplyTemplateAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a reply template from its reply template id
 
@@ -659,7 +659,7 @@ Override language/culture codes on this request.
 
 Reply template suitable for preview
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_GetProgramUrlAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProgramUrlAsync\(string, bool, RequestOptions\)
+### GetProgramUrlAsync\(string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_GetProgramUrlAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 This method will convert a module name into a Service URL.
 
@@ -687,7 +687,7 @@ Override language/culture codes on this request.
 
 Returns a valid Service URL composed of the give parameters.
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_GetSmsConfigAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSmsConfigAsync\(RequestOptions\)
+### GetSmsConfigAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_GetSmsConfigAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get the SmsConfig settings for Customer Service sms providers.
 
@@ -707,7 +707,7 @@ Override language/culture codes on this request.
 
 Current SMS configuration.
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_GetStatisticsAsync_SuperOffice_WebApi_Data_StatusScreenPanelType___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetStatisticsAsync\(StatusScreenPanelType\[\], RequestOptions\)
+### GetStatisticsAsync\(StatusScreenPanelType\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_GetStatisticsAsync_SuperOffice_WebApi_Data_StatusScreenPanelType___SuperOffice_WebApi_RequestOptions_}
 
 Returns the calculated results for the required statistics for the Customer Service Status Page
 
@@ -731,7 +731,7 @@ Override language/culture codes on this request.
 
 Array of StatisticsDataSet
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_GetSystemTemplateSettingsAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSystemTemplateSettingsAsync\(RequestOptions\)
+### GetSystemTemplateSettingsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_GetSystemTemplateSettingsAsync_SuperOffice_WebApi_RequestOptions_}
 
 Returns system template settings
 
@@ -751,7 +751,7 @@ Override language/culture codes on this request.
 
 System template settings item
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_GetUnparsedTemplateAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetUnparsedTemplateAsync\(int, int, RequestOptions\)
+### GetUnparsedTemplateAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_GetUnparsedTemplateAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a specific langauge version of the reply template. No parsing is performed.
 
@@ -779,7 +779,7 @@ Override language/culture codes on this request.
 
 The unparsed reply template, but using the same return data structure
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_HasChatNotifyAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; HasChatNotifyAsync\(RequestOptions\)
+### HasChatNotifyAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_HasChatNotifyAsync_SuperOffice_WebApi_RequestOptions_}
 
 Check if user has any chat notification
 
@@ -799,7 +799,7 @@ Override language/culture codes on this request.
 
 True if the user has at least one notification setting on
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_RemoveSessionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveSessionAsync\(int, RequestOptions\)
+### RemoveSessionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_RemoveSessionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Remove a login session for a CS user
 
@@ -821,7 +821,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_ReportSessionActiveAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ReportSessionActiveAsync\(string, RequestOptions\)
+### ReportSessionActiveAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_ReportSessionActiveAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Report a session as being 'active'; will update the corresponding row in login table, but not more than once per minute/session
 
@@ -845,7 +845,7 @@ Override language/culture codes on this request.
 
 The ID of the login table row, or 0 if not found
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_SaveAllCustomerCenterConfigsAsync_SuperOffice_WebApi_Data_CustomerCenterConfig___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveAllCustomerCenterConfigsAsync\(CustomerCenterConfig\[\], RequestOptions\)
+### SaveAllCustomerCenterConfigsAsync\(CustomerCenterConfig\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_SaveAllCustomerCenterConfigsAsync_SuperOffice_WebApi_Data_CustomerCenterConfig___SuperOffice_WebApi_RequestOptions_}
 
 Save an array of CustomerCenterConfig entities to the database
 
@@ -869,7 +869,7 @@ Override language/culture codes on this request.
 
 void
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_SaveCustomerCenterConfigAsync_SuperOffice_WebApi_Data_CustomerCenterConfig_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveCustomerCenterConfigAsync\(CustomerCenterConfig, RequestOptions\)
+### SaveCustomerCenterConfigAsync\(CustomerCenterConfig, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_SaveCustomerCenterConfigAsync_SuperOffice_WebApi_Data_CustomerCenterConfig_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing CustomerCenterConfig or creates a new CustomerCenterConfig if the id parameter is 0.
 
@@ -893,7 +893,7 @@ Override language/culture codes on this request.
 
 New or updated CustomerCenterConfig
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_SaveMailboxEntityAsync_SuperOffice_WebApi_Data_MailboxEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveMailboxEntityAsync\(MailboxEntity, RequestOptions\)
+### SaveMailboxEntityAsync\(MailboxEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_SaveMailboxEntityAsync_SuperOffice_WebApi_Data_MailboxEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing MailboxEntity or creates a new MailboxEntity if the id parameter is 0.
 
@@ -917,7 +917,7 @@ Override language/culture codes on this request.
 
 New or updated MailboxEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_SaveSystemTemplateSettingsAsync_SuperOffice_WebApi_Data_SystemTemplateSettings_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveSystemTemplateSettingsAsync\(SystemTemplateSettings, RequestOptions\)
+### SaveSystemTemplateSettingsAsync\(SystemTemplateSettings, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_SaveSystemTemplateSettingsAsync_SuperOffice_WebApi_Data_SystemTemplateSettings_SuperOffice_WebApi_RequestOptions_}
 
 Saves and validates updated system templates. Throws exception if validation fails
 
@@ -941,7 +941,7 @@ Override language/culture codes on this request.
 
 Updated system template settings
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_SessionIsValidAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SessionIsValidAsync\(string, RequestOptions\)
+### SessionIsValidAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_SessionIsValidAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Check if a CS session is valid
 
@@ -965,7 +965,7 @@ Override language/culture codes on this request.
 
 True if there is a valid CS session based on the session key
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_TestSmtpServerAsync_System_String_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; TestSmtpServerAsync\(string, string, bool, RequestOptions\)
+### TestSmtpServerAsync\(string, string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_TestSmtpServerAsync_System_String_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 This method will do a test of a SMTP account, by sending an email to a special @superoffice.com account
 
@@ -997,7 +997,7 @@ Override language/culture codes on this request.
 
 Contains the result of the test
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomerServiceAgent_UpdateFeatureTogglesAsync_SuperOffice_WebApi_Data_CsFeatureToggle___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; UpdateFeatureTogglesAsync\(CsFeatureToggle\[\], RequestOptions\)
+### UpdateFeatureTogglesAsync\(CsFeatureToggle\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_CustomerServiceAgent_UpdateFeatureTogglesAsync_SuperOffice_WebApi_Data_CsFeatureToggle___SuperOffice_WebApi_RequestOptions_}
 
 Update the cached FeatureToggles for CS
 

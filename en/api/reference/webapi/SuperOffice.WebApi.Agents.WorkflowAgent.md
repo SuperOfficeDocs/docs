@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent"&gt;&lt;/a&gt; Class WorkflowAgent
+# Class WorkflowAgent {#SuperOffice_WebApi_Agents_WorkflowAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -69,7 +69,7 @@ using (WorkflowAgent agent = new WorkflowAgent(mySession))
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; WorkflowAgent\(HttpClient\)
+### WorkflowAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_WorkflowAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: Agent lets you configure workflow automation
 
@@ -83,7 +83,7 @@ public WorkflowAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; WorkflowAgent\(WebApiOptions, HttpClient\)
+### WorkflowAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_WorkflowAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: Agent lets you configure workflow automation
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_AddAfterWorkflowStepAsync_System_Int32_SuperOffice_WebApi_Data_WorkflowStepBase_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddAfterWorkflowStepAsync\(int, WorkflowStepBase, RequestOptions\)
+### AddAfterWorkflowStepAsync\(int, WorkflowStepBase, RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_AddAfterWorkflowStepAsync_System_Int32_SuperOffice_WebApi_Data_WorkflowStepBase_SuperOffice_WebApi_RequestOptions_}
 
 Add another step (and any of its substeps) after the given step id (which must exist), and move any following steps in the workflow further down the line.
 
@@ -131,7 +131,7 @@ Override language/culture codes on this request.
 
 The added step
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_ConnectEmailFlowContentAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ConnectEmailFlowContentAsync\(int, int, RequestOptions\)
+### ConnectEmailFlowContentAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_ConnectEmailFlowContentAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Link any SMessage to the email flow. The SMessage (and any related SShipment etc) should probably not be used/visible elsewhere.
 
@@ -157,7 +157,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_CopyEmailFlowAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CopyEmailFlowAsync\(int, string, RequestOptions\)
+### CopyEmailFlowAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_CopyEmailFlowAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Copy an email flow.
 
@@ -185,7 +185,7 @@ Override language/culture codes on this request.
 
 Newly created email flow id for this content
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_CopyEmailFlowContentAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CopyEmailFlowContentAsync\(int, int, RequestOptions\)
+### CopyEmailFlowContentAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_CopyEmailFlowContentAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Copy smessage and connected shipment to the email flow. The SMessage (and any related SShipment etc) should probably not be used/visible elsewhere.
 
@@ -213,7 +213,7 @@ Override language/culture codes on this request.
 
 Newly created shipment id for this content
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_CreateDefaultEmailFlowAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultEmailFlowAsync\(RequestOptions\)
+### CreateDefaultEmailFlowAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_CreateDefaultEmailFlowAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new EmailFlow.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -234,7 +234,7 @@ Override language/culture codes on this request.
 
 A blank EmailFlow
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_CreateDefaultWorkflowEventAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultWorkflowEventAsync\(RequestOptions\)
+### CreateDefaultWorkflowEventAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_CreateDefaultWorkflowEventAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new WorkflowEvent.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -255,7 +255,7 @@ Override language/culture codes on this request.
 
 A blank WorkflowEvent
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_CreateDefaultWorkflowEventResultAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultWorkflowEventResultAsync\(RequestOptions\)
+### CreateDefaultWorkflowEventResultAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_CreateDefaultWorkflowEventResultAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new WorkflowEventResult.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -276,7 +276,7 @@ Override language/culture codes on this request.
 
 A blank WorkflowEventResult
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_CreateDefaultWorkflowFilterAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultWorkflowFilterAsync\(RequestOptions\)
+### CreateDefaultWorkflowFilterAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_CreateDefaultWorkflowFilterAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new WorkflowFilter.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -297,7 +297,7 @@ Override language/culture codes on this request.
 
 A blank WorkflowFilter
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_CreateDefaultWorkflowGoalAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultWorkflowGoalAsync\(RequestOptions\)
+### CreateDefaultWorkflowGoalAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_CreateDefaultWorkflowGoalAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new WorkflowGoal.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -318,7 +318,7 @@ Override language/culture codes on this request.
 
 A blank WorkflowGoal
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_CreateDefaultWorkflowStepFromTypeAsync_SuperOffice_WebApi_Data_WorkflowStepType_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultWorkflowStepFromTypeAsync\(WorkflowStepType, RequestOptions\)
+### CreateDefaultWorkflowStepFromTypeAsync\(WorkflowStepType, RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_CreateDefaultWorkflowStepFromTypeAsync_SuperOffice_WebApi_Data_WorkflowStepType_SuperOffice_WebApi_RequestOptions_}
 
 Creates a new carrier from the step type given, with the right kind of properties, defaults set.
 
@@ -340,7 +340,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WorkflowStepBase](SuperOffice.WebApi.Data.WorkflowStepBase.md)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_CreateDefaultWorkflowStepOptionFromTypeAsync_SuperOffice_WebApi_Data_WorkflowSplitOptionType_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultWorkflowStepOptionFromTypeAsync\(WorkflowSplitOptionType, RequestOptions\)
+### CreateDefaultWorkflowStepOptionFromTypeAsync\(WorkflowSplitOptionType, RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_CreateDefaultWorkflowStepOptionFromTypeAsync_SuperOffice_WebApi_Data_WorkflowSplitOptionType_SuperOffice_WebApi_RequestOptions_}
 
 Creates a new carrier from the option type given, with the right kind of properties, defaults set.
 
@@ -362,7 +362,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WorkflowStepOptionBase](SuperOffice.WebApi.Data.WorkflowStepOptionBase.md)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_CreateDefaultWorkflowTriggerAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultWorkflowTriggerAsync\(RequestOptions\)
+### CreateDefaultWorkflowTriggerAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_CreateDefaultWorkflowTriggerAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new WorkflowTrigger.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -383,7 +383,7 @@ Override language/culture codes on this request.
 
 A blank WorkflowTrigger
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_CreateDefaultWorkflowWaitForActionAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultWorkflowWaitForActionAsync\(RequestOptions\)
+### CreateDefaultWorkflowWaitForActionAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_CreateDefaultWorkflowWaitForActionAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new WorkflowWaitForAction.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -404,7 +404,7 @@ Override language/culture codes on this request.
 
 A blank WorkflowWaitForAction
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_CreateEmailFlowContentAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateEmailFlowContentAsync\(int, string, RequestOptions\)
+### CreateEmailFlowContentAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_CreateEmailFlowContentAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Create content to an email flow
 
@@ -432,7 +432,7 @@ Override language/culture codes on this request.
 
 Id of shipment created
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_DeleteEmailFlowAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteEmailFlowAsync\(int, RequestOptions\)
+### DeleteEmailFlowAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_DeleteEmailFlowAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the EmailFlow
 
@@ -454,7 +454,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_DeleteWorkflowGoalAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteWorkflowGoalAsync\(int, RequestOptions\)
+### DeleteWorkflowGoalAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_DeleteWorkflowGoalAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the WorkflowGoal
 
@@ -476,7 +476,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_DeleteWorkflowTriggerAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteWorkflowTriggerAsync\(int, RequestOptions\)
+### DeleteWorkflowTriggerAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_DeleteWorkflowTriggerAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the WorkflowTrigger
 
@@ -498,7 +498,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_DeleteWorkflowWaitForActionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteWorkflowWaitForActionAsync\(int, RequestOptions\)
+### DeleteWorkflowWaitForActionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_DeleteWorkflowWaitForActionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the WorkflowWaitForAction
 
@@ -520,7 +520,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_GetEmailFlowAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetEmailFlowAsync\(int, RequestOptions\)
+### GetEmailFlowAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_GetEmailFlowAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific EmailFlow object.
 
@@ -544,7 +544,7 @@ Override language/culture codes on this request.
 
 EmailFlow
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_GetWorkflowFencingInfoAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetWorkflowFencingInfoAsync\(RequestOptions\)
+### GetWorkflowFencingInfoAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_GetWorkflowFencingInfoAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get the current Workflow fencing status for the tenant
 
@@ -564,7 +564,7 @@ Override language/culture codes on this request.
 
 Current fencing status including count, maximum, and warning state
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_GetWorkflowGoalAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetWorkflowGoalAsync\(int, RequestOptions\)
+### GetWorkflowGoalAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_GetWorkflowGoalAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific WorkflowGoal object.
 
@@ -588,7 +588,7 @@ Override language/culture codes on this request.
 
 WorkflowGoal
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_GetWorkflowStepAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetWorkflowStepAsync\(int, RequestOptions\)
+### GetWorkflowStepAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_GetWorkflowStepAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get Workflowstep by ID
 
@@ -612,7 +612,7 @@ Override language/culture codes on this request.
 
 The Workflow step
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_GetWorkflowStepOptionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetWorkflowStepOptionAsync\(int, RequestOptions\)
+### GetWorkflowStepOptionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_GetWorkflowStepOptionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get WorkflowStepOption by ID
 
@@ -636,7 +636,7 @@ Override language/culture codes on this request.
 
 The Workflow step option
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_GetWorkflowTriggerAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetWorkflowTriggerAsync\(int, RequestOptions\)
+### GetWorkflowTriggerAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_GetWorkflowTriggerAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific WorkflowTrigger object.
 
@@ -660,7 +660,7 @@ Override language/culture codes on this request.
 
 WorkflowTrigger
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_GetWorkflowWaitForActionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetWorkflowWaitForActionAsync\(int, RequestOptions\)
+### GetWorkflowWaitForActionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_GetWorkflowWaitForActionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific WorkflowWaitForAction object.
 
@@ -684,7 +684,7 @@ Override language/culture codes on this request.
 
 WorkflowWaitForAction
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_RemoveParticipantsFromEmailFlowAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveParticipantsFromEmailFlowAsync\(int, int\[\], RequestOptions\)
+### RemoveParticipantsFromEmailFlowAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_RemoveParticipantsFromEmailFlowAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Remove participants (actually workflow instances) from the workflow
 
@@ -710,7 +710,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_RunAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RunAsync\(RequestOptions\)
+### RunAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_RunAsync_SuperOffice_WebApi_RequestOptions_}
 
 Run the workflow engine right now
 
@@ -730,7 +730,7 @@ Override language/culture codes on this request.
 
 Suggested time for next run
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_SaveEmailFlowAsync_SuperOffice_WebApi_Data_EmailFlow_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveEmailFlowAsync\(EmailFlow, RequestOptions\)
+### SaveEmailFlowAsync\(EmailFlow, RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_SaveEmailFlowAsync_SuperOffice_WebApi_Data_EmailFlow_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing EmailFlow or creates a new EmailFlow if the id parameter is 0.
 
@@ -754,7 +754,7 @@ Override language/culture codes on this request.
 
 New or updated EmailFlow
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_SaveWorkflowGoalAsync_SuperOffice_WebApi_Data_WorkflowGoal_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveWorkflowGoalAsync\(WorkflowGoal, RequestOptions\)
+### SaveWorkflowGoalAsync\(WorkflowGoal, RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_SaveWorkflowGoalAsync_SuperOffice_WebApi_Data_WorkflowGoal_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing WorkflowGoal or creates a new WorkflowGoal if the id parameter is 0.
 
@@ -778,7 +778,7 @@ Override language/culture codes on this request.
 
 New or updated WorkflowGoal
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_SaveWorkflowTriggerAsync_SuperOffice_WebApi_Data_WorkflowTrigger_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveWorkflowTriggerAsync\(WorkflowTrigger, RequestOptions\)
+### SaveWorkflowTriggerAsync\(WorkflowTrigger, RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_SaveWorkflowTriggerAsync_SuperOffice_WebApi_Data_WorkflowTrigger_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing WorkflowTrigger or creates a new WorkflowTrigger if the id parameter is 0.
 
@@ -802,7 +802,7 @@ Override language/culture codes on this request.
 
 New or updated WorkflowTrigger
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_SaveWorkflowWaitForActionAsync_SuperOffice_WebApi_Data_WorkflowWaitForAction_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveWorkflowWaitForActionAsync\(WorkflowWaitForAction, RequestOptions\)
+### SaveWorkflowWaitForActionAsync\(WorkflowWaitForAction, RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_SaveWorkflowWaitForActionAsync_SuperOffice_WebApi_Data_WorkflowWaitForAction_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing WorkflowWaitForAction or creates a new WorkflowWaitForAction if the id parameter is 0.
 
@@ -826,7 +826,7 @@ Override language/culture codes on this request.
 
 New or updated WorkflowWaitForAction
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_SendEventAsync_SuperOffice_WebApi_Data_WorkflowEvent_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SendEventAsync\(WorkflowEvent, RequestOptions\)
+### SendEventAsync\(WorkflowEvent, RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_SendEventAsync_SuperOffice_WebApi_Data_WorkflowEvent_SuperOffice_WebApi_RequestOptions_}
 
 Send a workflow event. Most event signaling will finish very quickly as they normally just change the state of a workflow instance
 
@@ -850,7 +850,7 @@ Override language/culture codes on this request.
 
 Any relevant info about the event
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_SetStatusOnWorkflowAsync_System_Int32_SuperOffice_WebApi_Data_WorkflowDefinitionStatus_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetStatusOnWorkflowAsync\(int, WorkflowDefinitionStatus, RequestOptions\)
+### SetStatusOnWorkflowAsync\(int, WorkflowDefinitionStatus, RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_SetStatusOnWorkflowAsync_System_Int32_SuperOffice_WebApi_Data_WorkflowDefinitionStatus_SuperOffice_WebApi_RequestOptions_}
 
 Set status on workflow, Run or pause flow
 
@@ -878,7 +878,7 @@ Override language/culture codes on this request.
 
 The new status
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_TryAddPersonsToEmailFlowAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; TryAddPersonsToEmailFlowAsync\(int, int\[\], RequestOptions\)
+### TryAddPersonsToEmailFlowAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_TryAddPersonsToEmailFlowAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Try to add a participant to the EmailFlow. Same function available in PersonAgent
 
@@ -906,7 +906,7 @@ Override language/culture codes on this request.
 
 True if the corresponding participant was successfully added, false if it could not be added because of filter criteria or other reason
 
-### &lt;a id="SuperOffice_WebApi_Agents_WorkflowAgent_UpdateFormSubmissionsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; UpdateFormSubmissionsAsync\(int, RequestOptions\)
+### UpdateFormSubmissionsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_WorkflowAgent_UpdateFormSubmissionsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Attempt to update stored field values for up to the given number of form submissions
 

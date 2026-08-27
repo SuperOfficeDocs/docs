@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_AgentBase"&gt;&lt;/a&gt; Class AgentBase
+# Class AgentBase {#SuperOffice_WebApi_Agents_AgentBase}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -98,7 +98,7 @@ Disposes of the client when the agent is disposed, if no client provided to ctor
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Agents_AgentBase__ctor_System_String_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; AgentBase\(string, HttpClient\)
+### AgentBase\(string, HttpClient\) {#SuperOffice_WebApi_Agents_AgentBase__ctor_System_String_System_Net_Http_HttpClient_}
 
 Agent base class.
 
@@ -116,7 +116,7 @@ URL to web API endpoint
 
 client to use to communicate with endpoint. Will make a default http client if nothing is provided.
 
-### &lt;a id="SuperOffice_WebApi_Agents_AgentBase__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; AgentBase\(WebApiOptions, HttpClient\)
+### AgentBase\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_AgentBase__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Agent base class.
 
@@ -136,7 +136,7 @@ client to use to communicate with endpoint. Will make a default http client if n
 
 ## Fields
 
-### &lt;a id="SuperOffice_WebApi_Agents_AgentBase__binary"&gt;&lt;/a&gt; \_binary
+### \_binary {#SuperOffice_WebApi_Agents_AgentBase__binary}
 
 ```csharp
 protected const string _binary = "application/octet-stream"
@@ -146,7 +146,7 @@ protected const string _binary = "application/octet-stream"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Agents_AgentBase__client"&gt;&lt;/a&gt; \_client
+### \_client {#SuperOffice_WebApi_Agents_AgentBase__client}
 
 ```csharp
 protected HttpClient _client
@@ -156,7 +156,7 @@ protected HttpClient _client
 
  [HttpClient](https://learn.microsoft.com/dotnet/api/system.net.http.httpclient)
 
-### &lt;a id="SuperOffice_WebApi_Agents_AgentBase__config"&gt;&lt;/a&gt; \_config
+### \_config {#SuperOffice_WebApi_Agents_AgentBase__config}
 
 ```csharp
 protected WebApiOptions _config
@@ -166,7 +166,7 @@ protected WebApiOptions _config
 
  [WebApiOptions](SuperOffice.WebApi.WebApiOptions.md)
 
-### &lt;a id="SuperOffice_WebApi_Agents_AgentBase__disposeClient"&gt;&lt;/a&gt; \_disposeClient
+### \_disposeClient {#SuperOffice_WebApi_Agents_AgentBase__disposeClient}
 
 ```csharp
 protected bool _disposeClient
@@ -176,7 +176,7 @@ protected bool _disposeClient
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-### &lt;a id="SuperOffice_WebApi_Agents_AgentBase__json"&gt;&lt;/a&gt; \_json
+### \_json {#SuperOffice_WebApi_Agents_AgentBase__json}
 
 ```csharp
 protected const string _json = "application/json"
@@ -188,7 +188,7 @@ protected const string _json = "application/json"
 
 ## Properties
 
-### &lt;a id="SuperOffice_WebApi_Agents_AgentBase_Client"&gt;&lt;/a&gt; Client
+### Client {#SuperOffice_WebApi_Agents_AgentBase_Client}
 
 The HTTP Client we are using.
 Create a default SO HttpClient if not specified in constructor.
@@ -201,7 +201,7 @@ protected HttpClient Client { get; }
 
  [HttpClient](https://learn.microsoft.com/dotnet/api/system.net.http.httpclient)
 
-### &lt;a id="SuperOffice_WebApi_Agents_AgentBase_ClientCancellationTokenSource"&gt;&lt;/a&gt; ClientCancellationTokenSource
+### ClientCancellationTokenSource {#SuperOffice_WebApi_Agents_AgentBase_ClientCancellationTokenSource}
 
 Used in SendRequest to allow clients to cancel requests.
 
@@ -213,7 +213,7 @@ protected CancellationTokenSource ClientCancellationTokenSource { get; set; }
 
  [CancellationTokenSource](https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource)
 
-### &lt;a id="SuperOffice_WebApi_Agents_AgentBase_Configuration"&gt;&lt;/a&gt; Configuration
+### Configuration {#SuperOffice_WebApi_Agents_AgentBase_Configuration}
 
 Configuration this agent was initalized with.
 
@@ -225,7 +225,7 @@ public WebApiOptions Configuration { get; }
 
  [WebApiOptions](SuperOffice.WebApi.WebApiOptions.md)
 
-### &lt;a id="SuperOffice_WebApi_Agents_AgentBase_HasRunningRequest"&gt;&lt;/a&gt; HasRunningRequest
+### HasRunningRequest {#SuperOffice_WebApi_Agents_AgentBase_HasRunningRequest}
 
 Is an HTTP request in flight?
 
@@ -237,7 +237,7 @@ public bool HasRunningRequest { get; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-### &lt;a id="SuperOffice_WebApi_Agents_AgentBase_ProgressListener"&gt;&lt;/a&gt; ProgressListener
+### ProgressListener {#SuperOffice_WebApi_Agents_AgentBase_ProgressListener}
 
 Progress callback receiver for downloads
 
@@ -249,7 +249,7 @@ public IProgressListener ProgressListener { get; set; }
 
  [IProgressListener](SuperOffice.WebApi.IProgressListener.md)
 
-### &lt;a id="SuperOffice_WebApi_Agents_AgentBase_UploadProgressListener"&gt;&lt;/a&gt; UploadProgressListener
+### UploadProgressListener {#SuperOffice_WebApi_Agents_AgentBase_UploadProgressListener}
 
 Progress callback receiver for uploads
 
@@ -263,7 +263,7 @@ public IProgressListener UploadProgressListener { get; set; }
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_"&gt;&lt;/a&gt; BuildRequestFromObject\(HttpMethod, string, object, WebApiOptions, string\)
+### BuildRequestFromObject\(HttpMethod, string, object, WebApiOptions, string\) {#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_}
 
 ```csharp
 protected HttpRequestMessage BuildRequestFromObject(HttpMethod method, string url, object body, WebApiOptions config, string contentType)
@@ -285,7 +285,7 @@ protected HttpRequestMessage BuildRequestFromObject(HttpMethod method, string ur
 
  [HttpRequestMessage](https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage)
 
-### &lt;a id="SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_"&gt;&lt;/a&gt; BuildRequestFromObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)
+### BuildRequestFromObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\) {#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_}
 
 ```csharp
 protected HttpRequestMessage BuildRequestFromObjectWithStream(HttpMethod method, string url, object body, Stream stream, WebApiOptions config, string contentType)
@@ -309,7 +309,7 @@ protected HttpRequestMessage BuildRequestFromObjectWithStream(HttpMethod method,
 
  [HttpRequestMessage](https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage)
 
-### &lt;a id="SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromStream_System_Net_Http_HttpMethod_System_String_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_"&gt;&lt;/a&gt; BuildRequestFromStream\(HttpMethod, string, Stream, WebApiOptions, string\)
+### BuildRequestFromStream\(HttpMethod, string, Stream, WebApiOptions, string\) {#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromStream_System_Net_Http_HttpMethod_System_String_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_}
 
 ```csharp
 protected HttpRequestMessage BuildRequestFromStream(HttpMethod method, string url, Stream body, WebApiOptions config, string contentType)
@@ -331,7 +331,7 @@ protected HttpRequestMessage BuildRequestFromStream(HttpMethod method, string ur
 
  [HttpRequestMessage](https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage)
 
-### &lt;a id="SuperOffice_WebApi_Agents_AgentBase_CancelRequest"&gt;&lt;/a&gt; CancelRequest\(\)
+### CancelRequest\(\) {#SuperOffice_WebApi_Agents_AgentBase_CancelRequest}
 
 Used by the client to terminate the current method call.
 
@@ -339,7 +339,7 @@ Used by the client to terminate the current method call.
 public void CancelRequest()
 ```
 
-### &lt;a id="SuperOffice_WebApi_Agents_AgentBase_Dispose"&gt;&lt;/a&gt; Dispose\(\)
+### Dispose\(\) {#SuperOffice_WebApi_Agents_AgentBase_Dispose}
 
 Disposes of the HTTP Client if we own it.
 
@@ -347,7 +347,7 @@ Disposes of the HTTP Client if we own it.
 public void Dispose()
 ```
 
-### &lt;a id="SuperOffice_WebApi_Agents_AgentBase_Finally_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; Finally\(RequestOptions\)
+### Finally\(RequestOptions\) {#SuperOffice_WebApi_Agents_AgentBase_Finally_SuperOffice_WebApi_RequestOptions_}
 
 ```csharp
 protected void Finally(RequestOptions options)
@@ -357,7 +357,7 @@ protected void Finally(RequestOptions options)
 
 `options` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
-### &lt;a id="SuperOffice_WebApi_Agents_AgentBase_Merge_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; Merge\(RequestOptions\)
+### Merge\(RequestOptions\) {#SuperOffice_WebApi_Agents_AgentBase_Merge_SuperOffice_WebApi_RequestOptions_}
 
 ```csharp
 protected WebApiOptions Merge(RequestOptions options)
@@ -371,7 +371,7 @@ protected WebApiOptions Merge(RequestOptions options)
 
  [WebApiOptions](SuperOffice.WebApi.WebApiOptions.md)
 
-### &lt;a id="SuperOffice_WebApi_Agents_AgentBase_ParseAuthorization_SuperOffice_WebApi_Authorization_IAuthorization_"&gt;&lt;/a&gt; ParseAuthorization\(IAuthorization\)
+### ParseAuthorization\(IAuthorization\) {#SuperOffice_WebApi_Agents_AgentBase_ParseAuthorization_SuperOffice_WebApi_Authorization_IAuthorization_}
 
 Creates authentication headers based on &lt;xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; scheme and parameter.
 
@@ -391,7 +391,7 @@ Contains authorization scheme and parameter values.
 
 Authorization header.
 
-### &lt;a id="SuperOffice_WebApi_Agents_AgentBase_ParseResponse__1_System_Net_Http_HttpResponseMessage_"&gt;&lt;/a&gt; ParseResponse&lt;T\&gt;\(HttpResponseMessage\)
+### ParseResponse&lt;T\&gt;\(HttpResponseMessage\) {#SuperOffice_WebApi_Agents_AgentBase_ParseResponse__1_System_Net_Http_HttpResponseMessage_}
 
 ```csharp
 protected Task<T> ParseResponse<T>(HttpResponseMessage response)
@@ -409,7 +409,7 @@ protected Task<T> ParseResponse<T>(HttpResponseMessage response)
 
 `T` 
 
-### &lt;a id="SuperOffice_WebApi_Agents_AgentBase_SendRequest_System_Net_Http_HttpRequestMessage_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SendRequest\(HttpRequestMessage, RequestOptions\)
+### SendRequest\(HttpRequestMessage, RequestOptions\) {#SuperOffice_WebApi_Agents_AgentBase_SendRequest_System_Net_Http_HttpRequestMessage_SuperOffice_WebApi_RequestOptions_}
 
 ```csharp
 protected Task<HttpResponseMessage> SendRequest(HttpRequestMessage request, RequestOptions config)
@@ -425,7 +425,7 @@ protected Task<HttpResponseMessage> SendRequest(HttpRequestMessage request, Requ
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[HttpResponseMessage](https://learn.microsoft.com/dotnet/api/system.net.http.httpresponsemessage)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_AgentBase_SendRequestObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_"&gt;&lt;/a&gt; SendRequestObject\(HttpMethod, string, object, WebApiOptions, string\)
+### SendRequestObject\(HttpMethod, string, object, WebApiOptions, string\) {#SuperOffice_WebApi_Agents_AgentBase_SendRequestObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_}
 
 ```csharp
 protected Task<HttpResponseMessage> SendRequestObject(HttpMethod method, string url, object args, WebApiOptions config, string contentType)
@@ -447,7 +447,7 @@ protected Task<HttpResponseMessage> SendRequestObject(HttpMethod method, string 
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[HttpResponseMessage](https://learn.microsoft.com/dotnet/api/system.net.http.httpresponsemessage)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_AgentBase_SendRequestObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_"&gt;&lt;/a&gt; SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)
+### SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\) {#SuperOffice_WebApi_Agents_AgentBase_SendRequestObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_}
 
 ```csharp
 protected Task<HttpResponseMessage> SendRequestObjectWithStream(HttpMethod method, string url, object args, Stream stream, WebApiOptions config, string contentType)
@@ -471,7 +471,7 @@ protected Task<HttpResponseMessage> SendRequestObjectWithStream(HttpMethod metho
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[HttpResponseMessage](https://learn.microsoft.com/dotnet/api/system.net.http.httpresponsemessage)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_AgentBase_ThrowOnResponseErrorAsync_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpResponseMessage_"&gt;&lt;/a&gt; ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)
+### ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\) {#SuperOffice_WebApi_Agents_AgentBase_ThrowOnResponseErrorAsync_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpResponseMessage_}
 
 Return NULL on NOT-FOUND errors
 

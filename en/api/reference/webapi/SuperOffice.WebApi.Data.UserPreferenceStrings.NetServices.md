@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices"&gt;&lt;/a&gt; Class UserPreferenceStrings.NetServices
+# Class UserPreferenceStrings.NetServices {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices}
 
 Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -26,7 +26,7 @@ public static class UserPreferenceStrings.NetServices
 
 ## Fields
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_CommunityUrl"&gt;&lt;/a&gt; CommunityUrl
+### CommunityUrl {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_CommunityUrl}
 
 Community URL - Link to the Customer Community homepage.
 Note that URL in this preference will have merge tags that need to
@@ -45,7 +45,7 @@ public const string CommunityUrl = "CommunityUrl"
 
 https://help.superoffice.com/SODispatcher/v1/Community?ver=&lt;ver#&gt;&amp;langiso=&lt;lani&gt;
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_ELearningUrl"&gt;&lt;/a&gt; ELearningUrl
+### ELearningUrl {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_ELearningUrl}
 
 URL to E-Learning
 &lt;p&gt;&lt;/p&gt;Control type: Text, access: Admin, Admin users, Wizard
@@ -58,7 +58,7 @@ public const string ELearningUrl = "ELearningUrl"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_EnableNetServicesOnCentral"&gt;&lt;/a&gt; EnableNetServicesOnCentral
+### EnableNetServicesOnCentral {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_EnableNetServicesOnCentral}
 
 Make Web Services available on your central and satellite databases. (Default = YES)
 &lt;p&gt;&lt;/p&gt;Control type: Bool, access: Admin, Admin users, Wizard
@@ -72,7 +72,7 @@ public const string EnableNetServicesOnCentral = "EnableNetServicesOnCentral"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_EnableNetServicesOnTravel"&gt;&lt;/a&gt; EnableNetServicesOnTravel
+### EnableNetServicesOnTravel {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_EnableNetServicesOnTravel}
 
 Make Web Services available on your Travel databases. (Default = YES)
 &lt;p&gt;&lt;/p&gt;Control type: Bool, access: Admin, Admin users, Wizard
@@ -86,7 +86,7 @@ public const string EnableNetServicesOnTravel = "EnableNetServicesOnTravel"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_FeedbackUrl"&gt;&lt;/a&gt; FeedbackUrl
+### FeedbackUrl {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_FeedbackUrl}
 
 Feedback URL - Link to the Feedback form.
 Note that URL in this preference will have merge tags that need to
@@ -105,7 +105,7 @@ public const string FeedbackUrl = "FeedbackUrl"
 
 https://help.superoffice.com/SODispatcher/v1/Feedback?ver=&lt;ver#&gt;&amp;langiso=&lt;lani&gt;
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_HelpIndexUrl"&gt;&lt;/a&gt; HelpIndexUrl
+### HelpIndexUrl {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_HelpIndexUrl}
 
 Help Index URL - Link to the Help home page.
 Note that URL in this preference will have merge tags that need to
@@ -124,7 +124,7 @@ public const string HelpIndexUrl = "HelpIndexUrl"
 
 https://help.superoffice.com/SODispatcher/v1/HelpIndex?ver=&lt;ver#&gt;&amp;langiso=&lt;lani&gt;
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_HelpUrl"&gt;&lt;/a&gt; HelpUrl
+### HelpUrl {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_HelpUrl}
 
 Help URL - Link to the context sensitive Help page.
 Note that URL in this preference will have merge tags that need to
@@ -143,7 +143,7 @@ public const string HelpUrl = "HelpUrl"
 
 https://help.superoffice.com/SODispatcher/v1/Help?ver=&lt;ver#&gt;&amp;langiso=&lt;lani&gt;
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_LastPage"&gt;&lt;/a&gt; LastPage
+### LastPage {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_LastPage}
 
 Last page read
 &lt;p&gt;&lt;/p&gt;Control type: Number, access: Wizard
@@ -157,7 +157,7 @@ public const string LastPage = "LastPage"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_MeteredServicesUrl"&gt;&lt;/a&gt; MeteredServicesUrl
+### MeteredServicesUrl {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_MeteredServicesUrl}
 
 ```csharp
 public const string MeteredServicesUrl = "MeteredServicesUrl"
@@ -167,7 +167,7 @@ public const string MeteredServicesUrl = "MeteredServicesUrl"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_NewsURL"&gt;&lt;/a&gt; NewsURL
+### NewsURL {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_NewsURL}
 
 News URL
 &lt;p&gt;&lt;/p&gt;Control type: Text, access: Wizard
@@ -181,7 +181,7 @@ public const string NewsURL = "NewsURL"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_NextDate"&gt;&lt;/a&gt; NextDate
+### NextDate {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_NextDate}
 
 Next date CRM should check for news on Web Services (yyyy.mm.dd)
 &lt;p&gt;&lt;/p&gt;Control type: Text, access: Wizard
@@ -194,7 +194,7 @@ public const string NextDate = "NextDate"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_PageURL"&gt;&lt;/a&gt; PageURL
+### PageURL {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_PageURL}
 
 WWW Page URL - show when the Logo clicked in the client.
 Note that URL in this preference will have merge tags that need to
@@ -213,7 +213,7 @@ public const string PageURL = "PageURL"
 
 https://help.superoffice.com/SODispatcher/v1/wwwPage?ver=&lt;ver#&gt;&amp;langiso=&lt;lani&gt;
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_ResourceCtrUrl"&gt;&lt;/a&gt; ResourceCtrUrl
+### ResourceCtrUrl {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_ResourceCtrUrl}
 
 Resource Center URL - Link to the Resource Center home page.
 Note that URL in this preference will have merge tags that need to
@@ -233,7 +233,7 @@ public const string ResourceCtrUrl = "ResourceCtrUrl"
 1
             https://help.superoffice.com/SODispatcher/v1/ResiyrceCtr?ver=&lt;ver#&gt;&amp;langiso=&lt;lani&gt;
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_Section"&gt;&lt;/a&gt; Section
+### Section {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_Section}
 
 Section heading.
 
@@ -245,7 +245,7 @@ public const string Section = "NetServices"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_SeenTeaserDlg"&gt;&lt;/a&gt; SeenTeaserDlg
+### SeenTeaserDlg {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_SeenTeaserDlg}
 
 The user has read the teaser from Web Services.
 &lt;p&gt;&lt;/p&gt;Control type: Bool, access: Wizard
@@ -259,7 +259,7 @@ public const string SeenTeaserDlg = "SeenTeaserDlg"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_ShowOnStartup"&gt;&lt;/a&gt; ShowOnStartup
+### ShowOnStartup {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_ShowOnStartup}
 
 Show news from SuperOffice Web Services on startup. (Default = YES)
 &lt;p&gt;&lt;/p&gt;Control type: Bool, access: Admin, Admin users, Wizard
@@ -273,7 +273,7 @@ public const string ShowOnStartup = "ShowOnStartup"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_StatusCheckTimeout"&gt;&lt;/a&gt; StatusCheckTimeout
+### StatusCheckTimeout {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_StatusCheckTimeout}
 
 Timeout for reading status from Web Services in seconds. (Default = 60)
 &lt;p&gt;&lt;/p&gt;Control type: Number, access: Admin, Admin users, Wizard
@@ -287,7 +287,7 @@ public const string StatusCheckTimeout = "StatusCheckTimeout"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_StatusURL"&gt;&lt;/a&gt; StatusURL
+### StatusURL {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_StatusURL}
 
 Status URL - returns XML or JSON with list of links to update NetServices preferences with.
 Note that URL in this preference will have merge tags that need to
@@ -306,7 +306,7 @@ public const string StatusURL = "StatusURL"
 
 https://help.superoffice.com/SODispatcher/v1/Status?ver=&lt;ver#&gt;&amp;langiso=&lt;lani&gt;
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_TeaserURL"&gt;&lt;/a&gt; TeaserURL
+### TeaserURL {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_TeaserURL}
 
 Teaser URL
 &lt;p&gt;&lt;/p&gt;Control type: Text, access: Wizard
@@ -320,7 +320,7 @@ public const string TeaserURL = "TeaserURL"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_TechSupportUrl"&gt;&lt;/a&gt; TechSupportUrl
+### TechSupportUrl {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_TechSupportUrl}
 
 Tech Support URL - Link to the Tech Support page.
 Note that URL in this preference will have merge tags that need to
@@ -339,7 +339,7 @@ public const string TechSupportUrl = "TechSupportUrl"
 
 https://help.superoffice.com/SODispatcher/v1/TechSupport?ver=&lt;ver#&gt;&amp;langiso=&lt;lani&gt;
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_TemplatesUrl"&gt;&lt;/a&gt; TemplatesUrl
+### TemplatesUrl {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_TemplatesUrl}
 
 ```csharp
 public const string TemplatesUrl = "TemplatesUrl"
@@ -349,7 +349,7 @@ public const string TemplatesUrl = "TemplatesUrl"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_UserPassportId"&gt;&lt;/a&gt; UserPassportId
+### UserPassportId {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_UserPassportId}
 
 The Microsoft Passport ID of this associate (not the e-mail address)
 &lt;p&gt;&lt;/p&gt;Control type: Text, access: Admin, Admin users, Wizard
@@ -363,7 +363,7 @@ public const string UserPassportId = "UserPassportId"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WebtoolsDownloadUrl"&gt;&lt;/a&gt; WebtoolsDownloadUrl
+### WebtoolsDownloadUrl {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WebtoolsDownloadUrl}
 
 Preferencekey for DownloadService dispatcher-provided URL template string.
 
@@ -375,7 +375,7 @@ public const string WebtoolsDownloadUrl = "WebtoolsDownloadUrl"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WhatsNewConfirmedPocket"&gt;&lt;/a&gt; WhatsNewConfirmedPocket
+### WhatsNewConfirmedPocket {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WhatsNewConfirmedPocket}
 
 WhatsNew Latest confirmed on web client. The latests WhatsNew URL the user has confirmed on the web client.
 Updated by the client when teh user clicks GOT IT in the whats new dialog.
@@ -389,7 +389,7 @@ public const string WhatsNewConfirmedPocket = "WhatsNewConfirmedPocket"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WhatsNewConfirmedWeb"&gt;&lt;/a&gt; WhatsNewConfirmedWeb
+### WhatsNewConfirmedWeb {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WhatsNewConfirmedWeb}
 
 WhatsNew Latest confirmed on web client. The latests WhatsNew URL the user has confirmed on the web client.
 Updated by the client when teh user clicks GOT IT in the whats new dialog.
@@ -403,7 +403,7 @@ public const string WhatsNewConfirmedWeb = "WhatsNewConfirmedWeb"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WhatsNewConfirmedWin"&gt;&lt;/a&gt; WhatsNewConfirmedWin
+### WhatsNewConfirmedWin {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WhatsNewConfirmedWin}
 
 WhatsNew Latest confirmed on web client. The latests WhatsNew URL the user has confirmed on the web client.
 Updated by the client when teh user clicks GOT IT in the whats new dialog.
@@ -417,7 +417,7 @@ public const string WhatsNewConfirmedWin = "WhatsNewConfirmedWin"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WhatsNewSeenPocket"&gt;&lt;/a&gt; WhatsNewSeenPocket
+### WhatsNewSeenPocket {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WhatsNewSeenPocket}
 
 WhatsNew Seen on Web client. The latest WhatsNew URL we have seen in the web client.
 Updated by the client when the WhatsNewUrl has been changed.
@@ -431,7 +431,7 @@ public const string WhatsNewSeenPocket = "WhatsNewSeenPocket"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WhatsNewSeenWeb"&gt;&lt;/a&gt; WhatsNewSeenWeb
+### WhatsNewSeenWeb {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WhatsNewSeenWeb}
 
 WhatsNew Seen on Web client. The latest WhatsNew URL we have seen in the web client.
 Updated by the client when the WhatsNewUrl has been changed.
@@ -445,7 +445,7 @@ public const string WhatsNewSeenWeb = "WhatsNewSeenWeb"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WhatsNewSeenWin"&gt;&lt;/a&gt; WhatsNewSeenWin
+### WhatsNewSeenWin {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WhatsNewSeenWin}
 
 WhatsNew Seen on Web client. The latest WhatsNew URL we have seen in the web client.
 Updated by the client when the WhatsNewUrl has been changed.
@@ -459,7 +459,7 @@ public const string WhatsNewSeenWin = "WhatsNewSeenWin"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WhatsNewUrl"&gt;&lt;/a&gt; WhatsNewUrl
+### WhatsNewUrl {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices_WhatsNewUrl}
 
 WhatsNew URL - call this to get the URL to the latest news page.
 Note that URL in this preference will have merge tags that need to

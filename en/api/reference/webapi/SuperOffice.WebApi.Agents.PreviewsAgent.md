@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_PreviewsAgent"&gt;&lt;/a&gt; Class PreviewsAgent
+# Class PreviewsAgent {#SuperOffice_WebApi_Agents_PreviewsAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -69,7 +69,7 @@ using (PreviewsAgent agent = new PreviewsAgent(mySession))
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Agents_PreviewsAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; PreviewsAgent\(HttpClient\)
+### PreviewsAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_PreviewsAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: Get preview strings from a hint
 
@@ -83,7 +83,7 @@ public PreviewsAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### &lt;a id="SuperOffice_WebApi_Agents_PreviewsAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; PreviewsAgent\(WebApiOptions, HttpClient\)
+### PreviewsAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_PreviewsAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: Get preview strings from a hint
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_PreviewsAgent_GetPreviewAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPreviewAsync\(string, RequestOptions\)
+### GetPreviewAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_PreviewsAgent_GetPreviewAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Parse a Preview hint and return a Preview. The returned Preview string may contain resource string identifiers (in square brackets), to be processed by the resource manager.&lt;para /&gt;The Preview hint is either a literal text, representing itself, or a set of key/value pairs enclosed in curly braces. Each key is separated from its value by an equals sign, and each pair from the next by an ampersand, according to usual conventions.&lt;para /&gt;A typical Preview hint could be \{contact_id=123\} or \{appointment_id=222&amp;amp;mode=simple\}
 

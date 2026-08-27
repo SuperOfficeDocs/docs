@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_ProgressListener"&gt;&lt;/a&gt; Class ProgressListener
+# Class ProgressListener {#SuperOffice_WebApi_ProgressListener}
 
 Namespace: [SuperOffice.WebApi](SuperOffice.WebApi.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -30,13 +30,13 @@ public class ProgressListener : IProgressListener
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_ProgressListener__ctor"&gt;&lt;/a&gt; ProgressListener\(\)
+### ProgressListener\(\) {#SuperOffice_WebApi_ProgressListener__ctor}
 
 ```csharp
 public ProgressListener()
 ```
 
-### &lt;a id="SuperOffice_WebApi_ProgressListener__ctor_System_Action_System_String_System_Single__System_Action_System_String_System_Exception__"&gt;&lt;/a&gt; ProgressListener\(Action&lt;string, float\&gt;, Action&lt;string, Exception\&gt;\)
+### ProgressListener\(Action&lt;string, float\&gt;, Action&lt;string, Exception\&gt;\) {#SuperOffice_WebApi_ProgressListener__ctor_System_Action_System_String_System_Single__System_Action_System_String_System_Exception__}
 
 ```csharp
 public ProgressListener(Action<string, float> onProgress, Action<string, Exception> onError)
@@ -50,7 +50,7 @@ public ProgressListener(Action<string, float> onProgress, Action<string, Excepti
 
 ## Properties
 
-### &lt;a id="SuperOffice_WebApi_ProgressListener_OnErrorDelegate"&gt;&lt;/a&gt; OnErrorDelegate
+### OnErrorDelegate {#SuperOffice_WebApi_ProgressListener_OnErrorDelegate}
 
 Triggered if request fails.
 
@@ -62,7 +62,7 @@ public Action<string, Exception> OnErrorDelegate { get; set; }
 
  [Action](https://learn.microsoft.com/dotnet/api/system.action\-2)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string), [Exception](https://learn.microsoft.com/dotnet/api/system.exception)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_ProgressListener_OnProgressDelegate"&gt;&lt;/a&gt; OnProgressDelegate
+### OnProgressDelegate {#SuperOffice_WebApi_ProgressListener_OnProgressDelegate}
 
 Triggered when request has made progress.
 
@@ -76,7 +76,7 @@ public Action<string, float> OnProgressDelegate { get; set; }
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_ProgressListener_OnError_System_String_System_Exception_"&gt;&lt;/a&gt; OnError\(string, Exception\)
+### OnError\(string, Exception\) {#SuperOffice_WebApi_ProgressListener_OnError_System_String_System_Exception_}
 
 Called when request fails.
 
@@ -94,7 +94,7 @@ URL being loaded
 
 Exception that is being thrown. Probably a &lt;xref href="SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiException" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
 
-### &lt;a id="SuperOffice_WebApi_ProgressListener_OnProgress_System_String_System_Single_"&gt;&lt;/a&gt; OnProgress\(string, float\)
+### OnProgress\(string, float\) {#SuperOffice_WebApi_ProgressListener_OnProgress_System_String_System_Single_}
 
 Called during upload/download, and at end to indicate completion.
 

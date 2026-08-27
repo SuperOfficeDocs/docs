@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Data_SoExtraInfo"&gt;&lt;/a&gt; Class SoExtraInfo
+# Class SoExtraInfo {#SuperOffice_WebApi_Data_SoExtraInfo}
 
 Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -60,7 +60,7 @@ public class SoExtraInfo : Dictionary<string, string>, IDictionary<string, strin
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Data_SoExtraInfo__ctor"&gt;&lt;/a&gt; SoExtraInfo\(\)
+### SoExtraInfo\(\) {#SuperOffice_WebApi_Data_SoExtraInfo__ctor}
 
 Default constructor
 
@@ -70,7 +70,7 @@ public SoExtraInfo()
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Data_SoExtraInfo_ToString_System_String_"&gt;&lt;/a&gt; ToString\(string\)
+### ToString\(string\) {#SuperOffice_WebApi_Data_SoExtraInfo_ToString_System_String_}
 
 ```csharp
 public string ToString(string prefix)

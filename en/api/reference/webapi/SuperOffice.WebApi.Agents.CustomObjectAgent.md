@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_CustomObjectAgent"&gt;&lt;/a&gt; Class CustomObjectAgent
+# Class CustomObjectAgent {#SuperOffice_WebApi_Agents_CustomObjectAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -69,7 +69,7 @@ using (CustomObjectAgent agent = new CustomObjectAgent(mySession))
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomObjectAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; CustomObjectAgent\(HttpClient\)
+### CustomObjectAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_CustomObjectAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: Agent for working with Custom Objects (extra tables): read schema and full CRUD over rows. Purpose-built replacement for using DatabaseTableAgent against custom objects.
 
@@ -83,7 +83,7 @@ public CustomObjectAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomObjectAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; CustomObjectAgent\(WebApiOptions, HttpClient\)
+### CustomObjectAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_CustomObjectAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: Agent for working with Custom Objects (extra tables): read schema and full CRUD over rows. Purpose-built replacement for using DatabaseTableAgent against custom objects.
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomObjectAgent_CreateDefaultCustomObjectAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultCustomObjectAsync\(string, RequestOptions\)
+### CreateDefaultCustomObjectAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomObjectAgent_CreateDefaultCustomObjectAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns a new Custom Object row pre-populated with the default values declared by the Custom Object Definition. The row is not yet persisted.
 
@@ -127,7 +127,7 @@ Override language/culture codes on this request.
 
 A new Custom Object row pre-populated with default values. Not yet persisted.
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomObjectAgent_CreateDefaultCustomObjectDefinitionAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultCustomObjectDefinitionAsync\(RequestOptions\)
+### CreateDefaultCustomObjectDefinitionAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_CustomObjectAgent_CreateDefaultCustomObjectDefinitionAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new CustomObjectDefinition.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -148,7 +148,7 @@ Override language/culture codes on this request.
 
 A blank CustomObjectDefinition
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomObjectAgent_DeleteCustomObjectAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteCustomObjectAsync\(string, int, RequestOptions\)
+### DeleteCustomObjectAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomObjectAgent_DeleteCustomObjectAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes a single Custom Object row by primary key.
 
@@ -176,7 +176,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomObjectAgent_GetCustomObjectAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCustomObjectAsync\(string, int, RequestOptions\)
+### GetCustomObjectAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomObjectAgent_GetCustomObjectAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns a single Custom Object row by definition name and primary key.
 
@@ -204,7 +204,7 @@ Override language/culture codes on this request.
 
 The Custom Object row, or null if no row with that id exists.
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomObjectAgent_GetCustomObjectDefinitionAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCustomObjectDefinitionAsync\(string, RequestOptions\)
+### GetCustomObjectDefinitionAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomObjectAgent_GetCustomObjectDefinitionAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the schema (table + field definitions) for a Custom Object Definition by its database table name.
 
@@ -228,7 +228,7 @@ Override language/culture codes on this request.
 
 The Custom Object Definition, or null if no definition with that name exists.
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomObjectAgent_GetCustomObjectsIconsAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCustomObjectsIconsAsync\(RequestOptions\)
+### GetCustomObjectsIconsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_CustomObjectAgent_GetCustomObjectsIconsAsync_SuperOffice_WebApi_RequestOptions_}
 
 Returns SVG icon data for all Custom Object tables, keyed by table name.
 
@@ -248,7 +248,7 @@ Override language/culture codes on this request.
 
 Map of table name to SVG icon data URI.
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomObjectAgent_GetCustomObjectsMetadataAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCustomObjectsMetadataAsync\(RequestOptions\)
+### GetCustomObjectsMetadataAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_CustomObjectAgent_GetCustomObjectsMetadataAsync_SuperOffice_WebApi_RequestOptions_}
 
 Returns bootstrap metadata for all Custom Object tables.
 
@@ -268,7 +268,7 @@ Override language/culture codes on this request.
 
 Metadata for all custom object tables.
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomObjectAgent_HasScreenChooserAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; HasScreenChooserAsync\(string, bool, RequestOptions\)
+### HasScreenChooserAsync\(string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomObjectAgent_HasScreenChooserAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Returns true if a screen chooser is configured for the given Custom Object Definition and mode.
 
@@ -296,7 +296,7 @@ Override language/culture codes on this request.
 
 True if a screen chooser (view or edit) is configured for this Custom Object.
 
-### &lt;a id="SuperOffice_WebApi_Agents_CustomObjectAgent_SaveCustomObjectAsync_System_String_SuperOffice_WebApi_Data_CustomObject_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveCustomObjectAsync\(string, CustomObject, RequestOptions\)
+### SaveCustomObjectAsync\(string, CustomObject, RequestOptions\) {#SuperOffice_WebApi_Agents_CustomObjectAgent_SaveCustomObjectAsync_System_String_SuperOffice_WebApi_Data_CustomObject_SuperOffice_WebApi_RequestOptions_}
 
 Saves a Custom Object row. If the row has a primary key set it will be updated, otherwise a new row is inserted.
 

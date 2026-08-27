@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_TicketAgent"&gt;&lt;/a&gt; Class TicketAgent
+# Class TicketAgent {#SuperOffice_WebApi_Agents_TicketAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -69,7 +69,7 @@ using (TicketAgent agent = new TicketAgent(mySession))
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; TicketAgent\(HttpClient\)
+### TicketAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_TicketAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: Agent used for Ticket functions
 
@@ -83,7 +83,7 @@ public TicketAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; TicketAgent\(WebApiOptions, HttpClient\)
+### TicketAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_TicketAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: Agent used for Ticket functions
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_AcceptTicketsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AcceptTicketsAsync\(int\[\], RequestOptions\)
+### AcceptTicketsAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_AcceptTicketsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Accepts tickets by their ids. Sets owner to current user
 
@@ -127,7 +127,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_AddAttachmentsAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddAttachmentsAsync\(int, int\[\], RequestOptions\)
+### AddAttachmentsAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_AddAttachmentsAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Connect existing attachments with this TicketMessage. Can connect multiple attachments
 
@@ -153,7 +153,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_BatchForwardAsync_System_Int32___System_String___System_String___System_String___System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; BatchForwardAsync\(int\[\], string\[\], string\[\], string\[\], string, bool, RequestOptions\)
+### BatchForwardAsync\(int\[\], string\[\], string\[\], string\[\], string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_BatchForwardAsync_System_Int32___System_String___System_String___System_String___System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Forwards selected tickets to specified recipients. This method starts a batch task.
 
@@ -197,7 +197,7 @@ Override language/culture codes on this request.
 
 ID of the new batch task.
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_BatchReplyAsync_SuperOffice_WebApi_Data_TicketBatchReplyData_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; BatchReplyAsync\(TicketBatchReplyData, RequestOptions\)
+### BatchReplyAsync\(TicketBatchReplyData, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_BatchReplyAsync_SuperOffice_WebApi_Data_TicketBatchReplyData_SuperOffice_WebApi_RequestOptions_}
 
 Replies to the specified tickets. This method starts a batch task.
 
@@ -221,7 +221,7 @@ Override language/culture codes on this request.
 
 ID of the new batch task.
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_CalculateMessageRecipientsAsync_System_Int32_SuperOffice_WebApi_Data_MessageActionType_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CalculateMessageRecipientsAsync\(int, MessageActionType, int, RequestOptions\)
+### CalculateMessageRecipientsAsync\(int, MessageActionType, int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_CalculateMessageRecipientsAsync_System_Int32_SuperOffice_WebApi_Data_MessageActionType_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets recipients for new message
 
@@ -253,7 +253,7 @@ Override language/culture codes on this request.
 
 An array with Recipient objects
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_ClearNotifyAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ClearNotifyAsync\(int\[\], RequestOptions\)
+### ClearNotifyAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_ClearNotifyAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Clear notification status for one or more tickets.
 
@@ -277,7 +277,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_CopyFromCRMDocumentAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CopyFromCRMDocumentAsync\(int, RequestOptions\)
+### CopyFromCRMDocumentAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_CopyFromCRMDocumentAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Copy CRM document to an attachment
 
@@ -299,7 +299,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AttachmentEntity](SuperOffice.WebApi.Data.AttachmentEntity.md)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_CopyToTempFileAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CopyToTempFileAsync\(string, int, RequestOptions\)
+### CopyToTempFileAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_CopyToTempFileAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Copy ticket attachment to temporary file. Needed for existing document dialog compatibility
 
@@ -327,7 +327,7 @@ Override language/culture codes on this request.
 
 Temporary document filename
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_CreateDefaultAttachmentEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultAttachmentEntityAsync\(RequestOptions\)
+### CreateDefaultAttachmentEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_CreateDefaultAttachmentEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new AttachmentEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -348,7 +348,7 @@ Override language/culture codes on this request.
 
 A blank AttachmentEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_CreateDefaultForTicketTypeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultForTicketTypeAsync\(int, RequestOptions\)
+### CreateDefaultForTicketTypeAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_CreateDefaultForTicketTypeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Create default ticket entity for particular TicketType
 
@@ -372,7 +372,7 @@ Override language/culture codes on this request.
 
 Default ticket entity
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_CreateDefaultTicketEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultTicketEntityAsync\(RequestOptions\)
+### CreateDefaultTicketEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_CreateDefaultTicketEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new TicketEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -393,7 +393,7 @@ Override language/culture codes on this request.
 
 A blank TicketEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_CreateDefaultTicketMessageEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultTicketMessageEntityAsync\(RequestOptions\)
+### CreateDefaultTicketMessageEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_CreateDefaultTicketMessageEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new TicketMessageEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -414,7 +414,7 @@ Override language/culture codes on this request.
 
 A blank TicketMessageEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_CreateDefaultTicketRelationEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultTicketRelationEntityAsync\(RequestOptions\)
+### CreateDefaultTicketRelationEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_CreateDefaultTicketRelationEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new TicketRelationEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -435,7 +435,7 @@ Override language/culture codes on this request.
 
 A blank TicketRelationEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_CreateTicketRelationsAsync_System_Int32___System_Int32_SuperOffice_WebApi_Data_TicketRelationType_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateTicketRelationsAsync\(int\[\], int, TicketRelationType, string, RequestOptions\)
+### CreateTicketRelationsAsync\(int\[\], int, TicketRelationType, string, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_CreateTicketRelationsAsync_System_Int32___System_Int32_SuperOffice_WebApi_Data_TicketRelationType_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Create multiple ticket relations in a single call. Returns a result per source ticket indicating success or failure.
 
@@ -471,7 +471,7 @@ Override language/culture codes on this request.
 
 Creation results, one per source ticket id.
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_DeleteMessageHeadersAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteMessageHeadersAsync\(int\[\], RequestOptions\)
+### DeleteMessageHeadersAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_DeleteMessageHeadersAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Removes headers from the message as specified in the collection of entity ids. The ids are message header ids (message header primary key)
 
@@ -495,7 +495,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_DeleteTicketEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteTicketEntityAsync\(int, RequestOptions\)
+### DeleteTicketEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_DeleteTicketEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Delete a ticket
 
@@ -519,7 +519,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_DeleteTicketMessageEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteTicketMessageEntityAsync\(int, RequestOptions\)
+### DeleteTicketMessageEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_DeleteTicketMessageEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Delete a ticket message
 
@@ -543,7 +543,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_DeleteTicketRelationEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteTicketRelationEntityAsync\(int, RequestOptions\)
+### DeleteTicketRelationEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_DeleteTicketRelationEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the TicketRelationEntity
 
@@ -565,7 +565,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_DoEscalatingAsync_System_Int32_SuperOffice_WebApi_Data_TicketPriorityEscalateAction_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DoEscalatingAsync\(int, TicketPriorityEscalateAction, RequestOptions\)
+### DoEscalatingAsync\(int, TicketPriorityEscalateAction, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_DoEscalatingAsync_System_Int32_SuperOffice_WebApi_Data_TicketPriorityEscalateAction_SuperOffice_WebApi_RequestOptions_}
 
 Checks if the ticket should change its alert level based on the priority and action. If it is to change, the alert level and alert timeout for the ticket will be updated.
 
@@ -593,7 +593,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetAttachmentEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAttachmentEntityAsync\(int, RequestOptions\)
+### GetAttachmentEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetAttachmentEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific AttachmentEntity object.
 
@@ -617,7 +617,7 @@ Override language/culture codes on this request.
 
 AttachmentEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetAttachmentInfoAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAttachmentInfoAsync\(int, RequestOptions\)
+### GetAttachmentInfoAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetAttachmentInfoAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a list with meta data for all attached attachments
 
@@ -641,7 +641,7 @@ Override language/culture codes on this request.
 
 An array with AttachmentEntity objects, describing each attachment
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetAttachmentInfoNonInlineAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAttachmentInfoNonInlineAsync\(int, RequestOptions\)
+### GetAttachmentInfoNonInlineAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetAttachmentInfoNonInlineAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a list with meta data for all attached attachments, EXCEPT those marked as inline
 
@@ -665,7 +665,7 @@ Override language/culture codes on this request.
 
 An array with AttachmentEntity objects, describing each attachment; those marked as INLINE will be skipped
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetAttachmentPreviewAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAttachmentPreviewAsync\(int, RequestOptions\)
+### GetAttachmentPreviewAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetAttachmentPreviewAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Retrieve an attachment from ticket message. The returned data is intended to be used for a preview. The returned data is sanitized.
 
@@ -689,7 +689,7 @@ Override language/culture codes on this request.
 
 Sanitized preview version of the attachment and additional metadata, if available
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetAttachmentStreamAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAttachmentStreamAsync\(int, string, RequestOptions\)
+### GetAttachmentStreamAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetAttachmentStreamAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get the content of an attachment
 
@@ -717,7 +717,7 @@ Override language/culture codes on this request.
 
 A stream to the attachment content
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetDefaultMessageContentAsync_System_Int32_SuperOffice_WebApi_Data_MessageActionType_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDefaultMessageContentAsync\(int, MessageActionType, int, RequestOptions\)
+### GetDefaultMessageContentAsync\(int, MessageActionType, int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetDefaultMessageContentAsync_System_Int32_SuperOffice_WebApi_Data_MessageActionType_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Obsolete, use GetDefaultMessageContentFull instead
 
@@ -749,7 +749,7 @@ Override language/culture codes on this request.
 
 Sanitized HTML content
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetDefaultMessageContentFullAsync_System_Int32_SuperOffice_WebApi_Data_MessageActionType_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDefaultMessageContentFullAsync\(int, MessageActionType, int, int, RequestOptions\)
+### GetDefaultMessageContentFullAsync\(int, MessageActionType, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetDefaultMessageContentFullAsync_System_Int32_SuperOffice_WebApi_Data_MessageActionType_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Generate a default message content: attachments and body as sanitized HTML
 
@@ -785,7 +785,7 @@ Override language/culture codes on this request.
 
 Generated default message content
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetDefaultMessageContentWithOptionsAsync_System_Int32_SuperOffice_WebApi_Data_MessageActionType_System_Int32_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDefaultMessageContentWithOptionsAsync\(int, MessageActionType, int, int, bool, RequestOptions\)
+### GetDefaultMessageContentWithOptionsAsync\(int, MessageActionType, int, int, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetDefaultMessageContentWithOptionsAsync_System_Int32_SuperOffice_WebApi_Data_MessageActionType_System_Int32_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Generate a default message content with option to exclude signature: attachments and body as sanitized HTML
 
@@ -825,7 +825,7 @@ Override language/culture codes on this request.
 
 Generated default message content
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetForRmUiAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetForRmUiAsync\(int, RequestOptions\)
+### GetForRmUiAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetForRmUiAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a ticket entity, adapted to the specific needs of the Request Management UI. WARNING: This endpoint is not guaranteed to be stable/compatible between versions
 
@@ -849,7 +849,7 @@ Override language/culture codes on this request.
 
 The ticket entity. Information is filtered/adapted to the current needs of the UI
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetHotlistEjUsersAsync_System_Int32_System_Int32___SuperOffice_WebApi_Data_NotifyType_SuperOffice_WebApi_Data_NotifyChannel_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetHotlistEjUsersAsync\(int, int\[\], NotifyType, NotifyChannel, RequestOptions\)
+### GetHotlistEjUsersAsync\(int, int\[\], NotifyType, NotifyChannel, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetHotlistEjUsersAsync_System_Int32_System_Int32___SuperOffice_WebApi_Data_NotifyType_SuperOffice_WebApi_Data_NotifyChannel_SuperOffice_WebApi_RequestOptions_}
 
 Get a list of ej_user ids who should receive hotlist notification based on request and notification type
 
@@ -885,7 +885,7 @@ Override language/culture codes on this request.
 
 List of matching ej_user ids
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetNextInQueueAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetNextInQueueAsync\(RequestOptions\)
+### GetNextInQueueAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetNextInQueueAsync_SuperOffice_WebApi_RequestOptions_}
 
 Assign a ticket to the caller based on intelligent queue system
 
@@ -905,7 +905,7 @@ Override language/culture codes on this request.
 
 The ticket entity after assigning it to the caller
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetPreviewAttachmentStreamAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPreviewAttachmentStreamAsync\(int, RequestOptions\)
+### GetPreviewAttachmentStreamAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetPreviewAttachmentStreamAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deprecated, see GetPreviewAttachment instead. Retrieve an attachment from ticket message. The returned data is intended to be used for a preview. The returned data is sanitized.
 
@@ -929,7 +929,7 @@ Override language/culture codes on this request.
 
 Sanitized preview version of the attachment
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetRfcAttachmentStreamAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetRfcAttachmentStreamAsync\(int, int, string, RequestOptions\)
+### GetRfcAttachmentStreamAsync\(int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetRfcAttachmentStreamAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get the content of an attachment which is part of RFC822 email attachment
 
@@ -961,7 +961,7 @@ Override language/culture codes on this request.
 
 RFC822 attachment content as a Stream
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetTicketAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTicketAsync\(int, RequestOptions\)
+### GetTicketAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetTicketAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific Ticket object.
 
@@ -985,7 +985,7 @@ Override language/culture codes on this request.
 
 Ticket
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetTicketAttachmentsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTicketAttachmentsAsync\(int, RequestOptions\)
+### GetTicketAttachmentsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetTicketAttachmentsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get attachment infos for all attachments connected to messages in specified ticket
 
@@ -1009,7 +1009,7 @@ Override language/culture codes on this request.
 
 An array containing attachment info objects for all the attachments
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetTicketEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTicketEntityAsync\(int, RequestOptions\)
+### GetTicketEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetTicketEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific TicketEntity object.
 
@@ -1033,7 +1033,7 @@ Override language/culture codes on this request.
 
 TicketEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetTicketMessageAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTicketMessageAsync\(int, RequestOptions\)
+### GetTicketMessageAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetTicketMessageAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific TicketMessage object.
 
@@ -1057,7 +1057,7 @@ Override language/culture codes on this request.
 
 TicketMessage
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetTicketMessageEntitiesAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTicketMessageEntitiesAsync\(int, int\[\], RequestOptions\)
+### GetTicketMessageEntitiesAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetTicketMessageEntitiesAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Get ticket message entities with attachment info for given ticket
 
@@ -1085,7 +1085,7 @@ Override language/culture codes on this request.
 
 An array containing ticket message entities
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetTicketMessageEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTicketMessageEntityAsync\(int, RequestOptions\)
+### GetTicketMessageEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetTicketMessageEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific TicketMessageEntity object.
 
@@ -1109,7 +1109,7 @@ Override language/culture codes on this request.
 
 TicketMessageEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetTicketMessageWithEmbeddedDataAsync_System_Int32_SuperOffice_WebApi_Data_ImageEmbedType_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTicketMessageWithEmbeddedDataAsync\(int, ImageEmbedType, RequestOptions\)
+### GetTicketMessageWithEmbeddedDataAsync\(int, ImageEmbedType, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetTicketMessageWithEmbeddedDataAsync_System_Int32_SuperOffice_WebApi_Data_ImageEmbedType_SuperOffice_WebApi_RequestOptions_}
 
 Get a ticket message entity with posibillity to change embedded images to be represented with inline data within the HTML body. If using inline data, be sure not to save this back to the database.
 
@@ -1137,7 +1137,7 @@ Override language/culture codes on this request.
 
 The entity to get
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetTicketMessageWithOptionsAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTicketMessageWithOptionsAsync\(int, bool, RequestOptions\)
+### GetTicketMessageWithOptionsAsync\(int, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetTicketMessageWithOptionsAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Get a ticket message entity with additional options.
 
@@ -1165,7 +1165,7 @@ Override language/culture codes on this request.
 
 The entity to get
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetTicketParentIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTicketParentIdAsync\(int, RequestOptions\)
+### GetTicketParentIdAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetTicketParentIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get the parent ticket id. Returns 0 if the ticket has no parent.
 
@@ -1189,7 +1189,7 @@ Override language/culture codes on this request.
 
 The id of the parent ticket, or 0 if there is no parent.
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetTicketRelationActionsAsync_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTicketRelationActionsAsync\(int, int, int, RequestOptions\)
+### GetTicketRelationActionsAsync\(int, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetTicketRelationActionsAsync_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get the relation-driven actions that apply to a ticket, such as whether to offer closing the parent or whether open children are blocking the ticket from being closed.
 
@@ -1221,7 +1221,7 @@ Override language/culture codes on this request.
 
 The relation-driven actions applicable to the ticket.
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetTicketRelationEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTicketRelationEntityAsync\(int, RequestOptions\)
+### GetTicketRelationEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetTicketRelationEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific TicketRelationEntity object.
 
@@ -1245,7 +1245,7 @@ Override language/culture codes on this request.
 
 TicketRelationEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetTicketRelationsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTicketRelationsAsync\(int, RequestOptions\)
+### GetTicketRelationsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetTicketRelationsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get all relations for a ticket.
 
@@ -1269,7 +1269,7 @@ Override language/culture codes on this request.
 
 All relations for the ticket. Each item carries its RelationType (Parent, Child, or Related).
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetTicketSummariesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTicketSummariesAsync\(int\[\], RequestOptions\)
+### GetTicketSummariesAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetTicketSummariesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Get an array of summaryitem for the given tickets
 
@@ -1293,7 +1293,7 @@ Override language/culture codes on this request.
 
 Summary items for the given id's, in no particular order
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_GetTicketsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTicketsAsync\(int\[\], RequestOptions\)
+### GetTicketsAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_GetTicketsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Get multiple tickets
 
@@ -1317,7 +1317,7 @@ Override language/culture codes on this request.
 
 Returns array of tickets in same order as input ids
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_Html2TextAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; Html2TextAsync\(string, RequestOptions\)
+### Html2TextAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_Html2TextAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Create a plain text version of the html, suitable for email
 
@@ -1341,7 +1341,7 @@ Override language/culture codes on this request.
 
 The plain text version
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_MergeTicketsAsync_SuperOffice_WebApi_Data_TicketEntity_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; MergeTicketsAsync\(TicketEntity, int\[\], RequestOptions\)
+### MergeTicketsAsync\(TicketEntity, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_MergeTicketsAsync_SuperOffice_WebApi_Data_TicketEntity_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Merge one or more tickets into one primary ticket
 
@@ -1369,7 +1369,7 @@ Override language/culture codes on this request.
 
 The newly merged entity
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_NotifyNewTicketAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; NotifyNewTicketAsync\(int, RequestOptions\)
+### NotifyNewTicketAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_NotifyNewTicketAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Notify user agents about the creation of a new ticket
 
@@ -1393,7 +1393,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_NotifyNewTicketMessageAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; NotifyNewTicketMessageAsync\(int, RequestOptions\)
+### NotifyNewTicketMessageAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_NotifyNewTicketMessageAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Notify user agents about the creation of a new message on a ticket
 
@@ -1417,7 +1417,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_ProcessTicketWhenReadAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ProcessTicketWhenReadAsync\(int, RequestOptions\)
+### ProcessTicketWhenReadAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_ProcessTicketWhenReadAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 When a user view/read a ticket, a number of action should be performed: set read status, escalation handling, remove notifications, etc. Which actions will be performed depends on owner, caller and configuration
 
@@ -1441,7 +1441,7 @@ Override language/culture codes on this request.
 
 The ticket entity after marking it as read
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_RemoveMessageAttachmentsAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveMessageAttachmentsAsync\(int, int\[\], RequestOptions\)
+### RemoveMessageAttachmentsAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_RemoveMessageAttachmentsAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Removes attachments from the message as specified in the collection of entity ids. The ids are attachment ids (attachment primary key)
 
@@ -1469,7 +1469,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_ResolveTicketIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ResolveTicketIdAsync\(int, RequestOptions\)
+### ResolveTicketIdAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_ResolveTicketIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Ticket can be connected (merged) to another ticket. This method traverses through its connection(s) and returns proper ticketId
 
@@ -1493,7 +1493,7 @@ Override language/culture codes on this request.
 
 Correct ticketId. Returns 0 in case ticket does not exists
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_SanitizeMailContentAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SanitizeMailContentAsync\(string, RequestOptions\)
+### SanitizeMailContentAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_SanitizeMailContentAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Remove harmful HTML tags and attributes from an email
 
@@ -1517,7 +1517,7 @@ Override language/culture codes on this request.
 
 The sanitized email content
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_SanitizeMailContentWithOptionsAsync_System_String_SuperOffice_WebApi_Data_HtmlSanitizerOptions_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SanitizeMailContentWithOptionsAsync\(string, HtmlSanitizerOptions, RequestOptions\)
+### SanitizeMailContentWithOptionsAsync\(string, HtmlSanitizerOptions, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_SanitizeMailContentWithOptionsAsync_System_String_SuperOffice_WebApi_Data_HtmlSanitizerOptions_SuperOffice_WebApi_RequestOptions_}
 
 Remove harmful HTML tags and attributes from an email, using specified options
 
@@ -1545,7 +1545,7 @@ Override language/culture codes on this request.
 
 The sanitized email content
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_SanitizeMailContentsAsync_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SanitizeMailContentsAsync\(string\[\], RequestOptions\)
+### SanitizeMailContentsAsync\(string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_SanitizeMailContentsAsync_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Remove harmful HTML tags and attributes from an email
 
@@ -1569,7 +1569,7 @@ Override language/culture codes on this request.
 
 The sanitized email contents
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_SaveAttachmentEntityAsync_SuperOffice_WebApi_Data_AttachmentEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveAttachmentEntityAsync\(AttachmentEntity, RequestOptions\)
+### SaveAttachmentEntityAsync\(AttachmentEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_SaveAttachmentEntityAsync_SuperOffice_WebApi_Data_AttachmentEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing AttachmentEntity or creates a new AttachmentEntity if the id parameter is 0.
 
@@ -1593,7 +1593,7 @@ Override language/culture codes on this request.
 
 New or updated AttachmentEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_SaveTicketEntityAsync_SuperOffice_WebApi_Data_TicketEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveTicketEntityAsync\(TicketEntity, RequestOptions\)
+### SaveTicketEntityAsync\(TicketEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_SaveTicketEntityAsync_SuperOffice_WebApi_Data_TicketEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing TicketEntity or creates a new TicketEntity if the id parameter is 0. Does not notify users of save.
 
@@ -1617,7 +1617,7 @@ Override language/culture codes on this request.
 
 New or updated TicketEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_SaveTicketEntityWithNotifyAsync_SuperOffice_WebApi_Data_TicketEntity_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveTicketEntityWithNotifyAsync\(TicketEntity, bool, RequestOptions\)
+### SaveTicketEntityWithNotifyAsync\(TicketEntity, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_SaveTicketEntityWithNotifyAsync_SuperOffice_WebApi_Data_TicketEntity_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Saves a ticket and performs any user notifications
 
@@ -1645,7 +1645,7 @@ Override language/culture codes on this request.
 
 The newly saved entity
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_SaveTicketMessageEntityAsync_SuperOffice_WebApi_Data_TicketMessageEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveTicketMessageEntityAsync\(TicketMessageEntity, RequestOptions\)
+### SaveTicketMessageEntityAsync\(TicketMessageEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_SaveTicketMessageEntityAsync_SuperOffice_WebApi_Data_TicketMessageEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing TicketMessageEntity or creates a new TicketMessageEntity if the id parameter is 0. Does not notify users of save.
 
@@ -1669,7 +1669,7 @@ Override language/culture codes on this request.
 
 New or updated TicketMessageEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_SaveTicketMessageEntityWithNotifyAsync_SuperOffice_WebApi_Data_TicketMessageEntity_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveTicketMessageEntityWithNotifyAsync\(TicketMessageEntity, bool, RequestOptions\)
+### SaveTicketMessageEntityWithNotifyAsync\(TicketMessageEntity, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_SaveTicketMessageEntityWithNotifyAsync_SuperOffice_WebApi_Data_TicketMessageEntity_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Saves a ticket message and performs any user notifications
 
@@ -1697,7 +1697,7 @@ Override language/culture codes on this request.
 
 The saved entity
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_SaveTicketMessageEntityWithOptionsAsync_SuperOffice_WebApi_Data_TicketMessageEntity_System_Boolean_System_Int32___System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveTicketMessageEntityWithOptionsAsync\(TicketMessageEntity, bool, int\[\], bool, RequestOptions\)
+### SaveTicketMessageEntityWithOptionsAsync\(TicketMessageEntity, bool, int\[\], bool, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_SaveTicketMessageEntityWithOptionsAsync_SuperOffice_WebApi_Data_TicketMessageEntity_System_Boolean_System_Int32___System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Saves a ticket message and performs additional actions
 
@@ -1733,7 +1733,7 @@ Override language/culture codes on this request.
 
 The saved entity
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_SaveTicketRelationEntityAsync_SuperOffice_WebApi_Data_TicketRelationEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveTicketRelationEntityAsync\(TicketRelationEntity, RequestOptions\)
+### SaveTicketRelationEntityAsync\(TicketRelationEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_SaveTicketRelationEntityAsync_SuperOffice_WebApi_Data_TicketRelationEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing TicketRelationEntity or creates a new TicketRelationEntity if the id parameter is 0.
 
@@ -1757,7 +1757,7 @@ Override language/culture codes on this request.
 
 New or updated TicketRelationEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_SendTicketMessageAsync_System_Int32_System_String___System_String___System_String___System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SendTicketMessageAsync\(int, string\[\], string\[\], string\[\], string, int, string, RequestOptions\)
+### SendTicketMessageAsync\(int, string\[\], string\[\], string\[\], string, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_SendTicketMessageAsync_System_Int32_System_String___System_String___System_String___System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Send a message to recipients by email
 
@@ -1805,7 +1805,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_SendTicketMessageSmsAsync_System_Int32_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SendTicketMessageSmsAsync\(int, int, string\[\], RequestOptions\)
+### SendTicketMessageSmsAsync\(int, int, string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_SendTicketMessageSmsAsync_System_Int32_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Send a message to recipients by sms
 
@@ -1837,7 +1837,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_SetDeletedStatusByIdsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetDeletedStatusByIdsAsync\(int\[\], RequestOptions\)
+### SetDeletedStatusByIdsAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_SetDeletedStatusByIdsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Sets tickets' status to Deleted. After a grace period these tickets will be deleted by a background job.
 
@@ -1861,7 +1861,7 @@ Override language/culture codes on this request.
 
 Ids of tickets set for deletion.
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_SetDeletedStatusByProviderAsync_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetDeletedStatusByProviderAsync\(string, ArchiveRestrictionInfo\[\], RequestOptions\)
+### SetDeletedStatusByProviderAsync\(string, ArchiveRestrictionInfo\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_SetDeletedStatusByProviderAsync_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___SuperOffice_WebApi_RequestOptions_}
 
 Sets tickets' status to Deleted. After a grace period these tickets will be deleted by a background job.
 
@@ -1889,7 +1889,7 @@ Override language/culture codes on this request.
 
 Ids of tickets set for deletion.
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_SetSpamStatusByIdsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetSpamStatusByIdsAsync\(int\[\], RequestOptions\)
+### SetSpamStatusByIdsAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_SetSpamStatusByIdsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Sets tickets' status to SPAM. After a grace period these tickets will be deleted by a background job.
 
@@ -1913,7 +1913,7 @@ Override language/culture codes on this request.
 
 Ids of tickets set for SPAM.
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_SetSpamStatusByProviderAsync_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetSpamStatusByProviderAsync\(string, ArchiveRestrictionInfo\[\], RequestOptions\)
+### SetSpamStatusByProviderAsync\(string, ArchiveRestrictionInfo\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_SetSpamStatusByProviderAsync_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___SuperOffice_WebApi_RequestOptions_}
 
 Sets tickets' status to SPAM. After a grace period these tickets will be deleted by a background job.
 
@@ -1941,7 +1941,7 @@ Override language/culture codes on this request.
 
 Ids of tickets set for deletion.
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_SetTicketMessageImportantAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetTicketMessageImportantAsync\(int, bool, RequestOptions\)
+### SetTicketMessageImportantAsync\(int, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_SetTicketMessageImportantAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Set the important flag on or off for a ticket message
 
@@ -1969,7 +1969,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_SetTicketParentAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetTicketParentAsync\(int, int, string, RequestOptions\)
+### SetTicketParentAsync\(int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_SetTicketParentAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Set the parent of a ticket. If the ticket already has a parent, it will be overwritten.
 
@@ -2001,7 +2001,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_SetTicketReadByOwnerAsync_System_Int32_SuperOffice_WebApi_Data_TicketReadStatus_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetTicketReadByOwnerAsync\(int, TicketReadStatus, bool, RequestOptions\)
+### SetTicketReadByOwnerAsync\(int, TicketReadStatus, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_SetTicketReadByOwnerAsync_System_Int32_SuperOffice_WebApi_Data_TicketReadStatus_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Set the ReadByOwner status for a ticket. It will only have an effect if the calling user is the same as the owner of the ticket
 
@@ -2033,7 +2033,7 @@ Override language/culture codes on this request.
 
 The ticket entity after setting the ReadByOwner
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_SplitTicketAsync_System_Int32_System_Int32_System_DateTime_System_Int32___SuperOffice_WebApi_Data_TicketEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SplitTicketAsync\(int, int, DateTime, int\[\], TicketEntity, RequestOptions\)
+### SplitTicketAsync\(int, int, DateTime, int\[\], TicketEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_SplitTicketAsync_System_Int32_System_Int32_System_DateTime_System_Int32___SuperOffice_WebApi_Data_TicketEntity_SuperOffice_WebApi_RequestOptions_}
 
 Save new ticket and move/copy data from existing ticket in a single request. Specified messages will be moved.
 
@@ -2073,7 +2073,7 @@ Override language/culture codes on this request.
 
 The newly created entity
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_SplitTicketMessageAsync_SuperOffice_WebApi_Data_TicketMessageEntity_SuperOffice_WebApi_Data_TicketEntity_SuperOffice_WebApi_Data_TicketMessageEntity_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SplitTicketMessageAsync\(TicketMessageEntity, TicketEntity, TicketMessageEntity, int\[\], RequestOptions\)
+### SplitTicketMessageAsync\(TicketMessageEntity, TicketEntity, TicketMessageEntity, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_SplitTicketMessageAsync_SuperOffice_WebApi_Data_TicketMessageEntity_SuperOffice_WebApi_Data_TicketEntity_SuperOffice_WebApi_Data_TicketMessageEntity_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Create new ticket and move/copy data from existing ticket in addition update old message and save new message in a single request.
 
@@ -2109,7 +2109,7 @@ Override language/culture codes on this request.
 
 The newly created entity
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_UndeleteByIdsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; UndeleteByIdsAsync\(int\[\], RequestOptions\)
+### UndeleteByIdsAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_UndeleteByIdsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Restores deleted tickets by their ids. Status is set to a default open status defined in Registry table
 
@@ -2133,7 +2133,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_UpdateTicketsReadStatusAsync_System_Int32___SuperOffice_WebApi_Data_TicketReadStatus_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; UpdateTicketsReadStatusAsync\(int\[\], TicketReadStatus, RequestOptions\)
+### UpdateTicketsReadStatusAsync\(int\[\], TicketReadStatus, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_UpdateTicketsReadStatusAsync_System_Int32___SuperOffice_WebApi_Data_TicketReadStatus_SuperOffice_WebApi_RequestOptions_}
 
 This method changes multiple tickets' read status
 
@@ -2161,7 +2161,7 @@ Override language/culture codes on this request.
 
 Updated ticket ids
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_UpdateTicketsReadStatusByProviderAsync_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___SuperOffice_WebApi_Data_TicketReadStatus_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; UpdateTicketsReadStatusByProviderAsync\(string, ArchiveRestrictionInfo\[\], TicketReadStatus, RequestOptions\)
+### UpdateTicketsReadStatusByProviderAsync\(string, ArchiveRestrictionInfo\[\], TicketReadStatus, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_UpdateTicketsReadStatusByProviderAsync_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___SuperOffice_WebApi_Data_TicketReadStatus_SuperOffice_WebApi_RequestOptions_}
 
 This method changes multiple tickets' read status
 
@@ -2193,7 +2193,7 @@ Override language/culture codes on this request.
 
 Updated ticket ids
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_UploadAttachmentAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; UploadAttachmentAsync\(int, byte\[\], RequestOptions\)
+### UploadAttachmentAsync\(int, byte\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_UploadAttachmentAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_}
 
 Upload the content for an attachment
 
@@ -2221,7 +2221,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_ValidateAttachmentsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ValidateAttachmentsAsync\(int\[\], RequestOptions\)
+### ValidateAttachmentsAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_ValidateAttachmentsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Check attachments, return validation result for each item
 
@@ -2245,7 +2245,7 @@ Override language/culture codes on this request.
 
 Validation result
 
-### &lt;a id="SuperOffice_WebApi_Agents_TicketAgent_ValidateTicketRelationsAsync_System_Int32___System_Int32_SuperOffice_WebApi_Data_TicketRelationType_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ValidateTicketRelationsAsync\(int\[\], int, TicketRelationType, RequestOptions\)
+### ValidateTicketRelationsAsync\(int\[\], int, TicketRelationType, RequestOptions\) {#SuperOffice_WebApi_Agents_TicketAgent_ValidateTicketRelationsAsync_System_Int32___System_Int32_SuperOffice_WebApi_Data_TicketRelationType_SuperOffice_WebApi_RequestOptions_}
 
 Validate proposed ticket relations without saving them. Returns a result per source ticket indicating whether the relation is valid.
 

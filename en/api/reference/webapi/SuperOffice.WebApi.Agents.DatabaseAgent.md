@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_DatabaseAgent"&gt;&lt;/a&gt; Class DatabaseAgent
+# Class DatabaseAgent {#SuperOffice_WebApi_Agents_DatabaseAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -69,7 +69,7 @@ using (DatabaseAgent agent = new DatabaseAgent(mySession))
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Agents_DatabaseAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; DatabaseAgent\(HttpClient\)
+### DatabaseAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_DatabaseAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: Database schema queries and changes
 
@@ -83,7 +83,7 @@ public DatabaseAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### &lt;a id="SuperOffice_WebApi_Agents_DatabaseAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; DatabaseAgent\(WebApiOptions, HttpClient\)
+### DatabaseAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_DatabaseAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: Database schema queries and changes
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_DatabaseAgent_GetStepsFromNetServerCodeAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetStepsFromNetServerCodeAsync\(RequestOptions\)
+### GetStepsFromNetServerCodeAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_DatabaseAgent_GetStepsFromNetServerCodeAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get information about the dictionary steps that NetServer was generated for
 
@@ -123,7 +123,7 @@ Override language/culture codes on this request.
 
 Array of dictionary steps used when NetServer was generated, listing only the highest number for each step
 
-### &lt;a id="SuperOffice_WebApi_Agents_DatabaseAgent_GetStepsInDatabaseAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetStepsInDatabaseAsync\(RequestOptions\)
+### GetStepsInDatabaseAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_DatabaseAgent_GetStepsInDatabaseAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get information about the dictionary steps that are in the currently-loggedon database
 

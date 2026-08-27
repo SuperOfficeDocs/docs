@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_ResourceAgent"&gt;&lt;/a&gt; Class ResourceAgent
+# Class ResourceAgent {#SuperOffice_WebApi_Agents_ResourceAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -69,7 +69,7 @@ using (ResourceAgent agent = new ResourceAgent(mySession))
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Agents_ResourceAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; ResourceAgent\(HttpClient\)
+### ResourceAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_ResourceAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: String resource substitution management.
 
@@ -83,7 +83,7 @@ public ResourceAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ResourceAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; ResourceAgent\(WebApiOptions, HttpClient\)
+### ResourceAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_ResourceAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: String resource substitution management.
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_ResourceAgent_ActivateResourceSubstitutionAsync_System_String_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ActivateResourceSubstitutionAsync\(string, string, bool, RequestOptions\)
+### ActivateResourceSubstitutionAsync\(string, string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_ResourceAgent_ActivateResourceSubstitutionAsync_System_String_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Activate or deactive a resource substitution for one or more cultures
 
@@ -135,7 +135,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_ResourceAgent_DeleteResourceSubstitutionAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteResourceSubstitutionAsync\(string, string, RequestOptions\)
+### DeleteResourceSubstitutionAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ResourceAgent_DeleteResourceSubstitutionAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Permanentely delete a resource substitution for one or more cultures
 
@@ -163,7 +163,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_ResourceAgent_GetResourceSubstitutionsAsync_System_String___System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetResourceSubstitutionsAsync\(string\[\], string, bool, RequestOptions\)
+### GetResourceSubstitutionsAsync\(string\[\], string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_ResourceAgent_GetResourceSubstitutionsAsync_System_String___System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Get substitutions for some or all resources for one culture
 
@@ -195,7 +195,7 @@ Override language/culture codes on this request.
 
 Array of override objects, empty if there are none
 
-### &lt;a id="SuperOffice_WebApi_Agents_ResourceAgent_IsResourceSubstitutionActiveAsync_System_String___System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; IsResourceSubstitutionActiveAsync\(string\[\], string, RequestOptions\)
+### IsResourceSubstitutionActiveAsync\(string\[\], string, RequestOptions\) {#SuperOffice_WebApi_Agents_ResourceAgent_IsResourceSubstitutionActiveAsync_System_String___System_String_SuperOffice_WebApi_RequestOptions_}
 
 Determine if resource substitution/override is active, globally or for a subset of resources/cultures
 
@@ -223,7 +223,7 @@ Override language/culture codes on this request.
 
 Array of override objects, empty if there are none; the ResourceValue member is not set by this call
 
-### &lt;a id="SuperOffice_WebApi_Agents_ResourceAgent_SetResourceSubstitutionAsync_System_String_System_String_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetResourceSubstitutionAsync\(string, string, string, bool, RequestOptions\)
+### SetResourceSubstitutionAsync\(string, string, string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_ResourceAgent_SetResourceSubstitutionAsync_System_String_System_String_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Create or update a resource substitution
 

@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Data_ColumnDataDictionary"&gt;&lt;/a&gt; Class ColumnDataDictionary
+# Class ColumnDataDictionary {#SuperOffice_WebApi_Data_ColumnDataDictionary}
 
 Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -60,7 +60,7 @@ public class ColumnDataDictionary : Dictionary<string, ArchiveColumnData>, IDict
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Data_ColumnDataDictionary__ctor"&gt;&lt;/a&gt; ColumnDataDictionary\(\)
+### ColumnDataDictionary\(\) {#SuperOffice_WebApi_Data_ColumnDataDictionary__ctor}
 
 Default constructor
 
@@ -70,7 +70,7 @@ public ColumnDataDictionary()
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Data_ColumnDataDictionary_ToString_System_String_"&gt;&lt;/a&gt; ToString\(string\)
+### ToString\(string\) {#SuperOffice_WebApi_Data_ColumnDataDictionary_ToString_System_String_}
 
 ```csharp
 public string ToString(string prefix)

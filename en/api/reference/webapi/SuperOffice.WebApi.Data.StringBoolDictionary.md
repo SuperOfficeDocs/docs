@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Data_StringBoolDictionary"&gt;&lt;/a&gt; Class StringBoolDictionary
+# Class StringBoolDictionary {#SuperOffice_WebApi_Data_StringBoolDictionary}
 
 Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -60,7 +60,7 @@ public class StringBoolDictionary : Dictionary<string, bool>, IDictionary<string
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Data_StringBoolDictionary__ctor"&gt;&lt;/a&gt; StringBoolDictionary\(\)
+### StringBoolDictionary\(\) {#SuperOffice_WebApi_Data_StringBoolDictionary__ctor}
 
 Default constructor
 
@@ -70,7 +70,7 @@ public StringBoolDictionary()
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Data_StringBoolDictionary_ToString_System_String_"&gt;&lt;/a&gt; ToString\(string\)
+### ToString\(string\) {#SuperOffice_WebApi_Data_StringBoolDictionary_ToString_System_String_}
 
 ```csharp
 public string ToString(string prefix)

@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_DatabaseTableAgent"&gt;&lt;/a&gt; Class DatabaseTableAgent
+# Class DatabaseTableAgent {#SuperOffice_WebApi_Agents_DatabaseTableAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -69,7 +69,7 @@ using (DatabaseTableAgent agent = new DatabaseTableAgent(mySession))
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Agents_DatabaseTableAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; DatabaseTableAgent\(HttpClient\)
+### DatabaseTableAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_DatabaseTableAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: Agent used for CRUD operations on database tables. Read, add, update, delete rows in tables.
 
@@ -83,7 +83,7 @@ public DatabaseTableAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### &lt;a id="SuperOffice_WebApi_Agents_DatabaseTableAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; DatabaseTableAgent\(WebApiOptions, HttpClient\)
+### DatabaseTableAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_DatabaseTableAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: Agent used for CRUD operations on database tables. Read, add, update, delete rows in tables.
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_DatabaseTableAgent_DeleteAsync_System_String_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteAsync\(string, int\[\], RequestOptions\)
+### DeleteAsync\(string, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_DatabaseTableAgent_DeleteAsync_System_String_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Delete rows, by primary key; traveltransactionlog and WebHooks are supported
 
@@ -131,7 +131,7 @@ Override language/culture codes on this request.
 
 Summary of results
 
-### &lt;a id="SuperOffice_WebApi_Agents_DatabaseTableAgent_DeleteRowAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteRowAsync\(string, int, RequestOptions\)
+### DeleteRowAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_DatabaseTableAgent_DeleteRowAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Delete a row from a table
 
@@ -157,7 +157,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_DatabaseTableAgent_InsertAsync_System_String_System_String___System_String_____SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; InsertAsync\(string, string\[\], string\[\]\[\], RequestOptions\)
+### InsertAsync\(string, string\[\], string\[\]\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_DatabaseTableAgent_InsertAsync_System_String_System_String___System_String_____SuperOffice_WebApi_RequestOptions_}
 
 Mass-insert rows, with or without primary keys specified. Works on physical tables with no special processing for udef etc.; traveltransactionlog and WebHooks are supported
 
@@ -189,7 +189,7 @@ Override language/culture codes on this request.
 
 Summary of results
 
-### &lt;a id="SuperOffice_WebApi_Agents_DatabaseTableAgent_InsertRowAsync_System_String_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; InsertRowAsync\(string, StringDictionary, RequestOptions\)
+### InsertRowAsync\(string, StringDictionary, RequestOptions\) {#SuperOffice_WebApi_Agents_DatabaseTableAgent_InsertRowAsync_System_String_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_}
 
 Insert a row into a table
 
@@ -217,7 +217,7 @@ Override language/culture codes on this request.
 
 The id of the newly inserted row
 
-### &lt;a id="SuperOffice_WebApi_Agents_DatabaseTableAgent_ReadRowAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ReadRowAsync\(string, int, RequestOptions\)
+### ReadRowAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_DatabaseTableAgent_ReadRowAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Read a row from a table
 
@@ -245,7 +245,7 @@ Override language/culture codes on this request.
 
 The row from the table
 
-### &lt;a id="SuperOffice_WebApi_Agents_DatabaseTableAgent_TruncateAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; TruncateAsync\(string, RequestOptions\)
+### TruncateAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_DatabaseTableAgent_TruncateAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Drop all rows in a table. This clearance is not individually logged in TravelTransactionlog or Webhook/script calls
 
@@ -269,7 +269,7 @@ Override language/culture codes on this request.
 
 Summary of results
 
-### &lt;a id="SuperOffice_WebApi_Agents_DatabaseTableAgent_UpdateRowAsync_System_String_System_Int32_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; UpdateRowAsync\(string, int, StringDictionary, RequestOptions\)
+### UpdateRowAsync\(string, int, StringDictionary, RequestOptions\) {#SuperOffice_WebApi_Agents_DatabaseTableAgent_UpdateRowAsync_System_String_System_Int32_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_}
 
 Update a row in a table
 
@@ -299,7 +299,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_DatabaseTableAgent_UpsertAsync_System_String_System_String___System_String___System_String_____SuperOffice_WebApi_Data_UpsertNomatchAction_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; UpsertAsync\(string, string\[\], string\[\], string\[\]\[\], UpsertNomatchAction, bool, RequestOptions\)
+### UpsertAsync\(string, string\[\], string\[\], string\[\]\[\], UpsertNomatchAction, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_DatabaseTableAgent_UpsertAsync_System_String_System_String___System_String___System_String_____SuperOffice_WebApi_Data_UpsertNomatchAction_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Insert or update rows, optionally deleting/zeroing 'leftover' rows. Special support for UDEF, as well as optional extensive information return. Traveltransactionlog and WebHooks are supported
 

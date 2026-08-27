@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_IApiAgent"&gt;&lt;/a&gt; Interface IApiAgent
+# Interface IApiAgent {#SuperOffice_WebApi_Agents_IApiAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface IApiAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_IApiAgent_GetApiVersionAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetApiVersionAsync\(RequestOptions\)
+### GetApiVersionAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IApiAgent_GetApiVersionAsync_SuperOffice_WebApi_RequestOptions_}
 
 Gets version info from base URL.
 
@@ -36,7 +36,7 @@ Override language/culture codes on this request.
 
 Dictionary containing meta-data: "NetServerVersion", "Services", "Version"
 
-### &lt;a id="SuperOffice_WebApi_Agents_IApiAgent_GetTenantStatusAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTenantStatusAsync\(string, string, RequestOptions\)
+### GetTenantStatusAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IApiAgent_GetTenantStatusAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the tenant status for a given customer, in a given environment. 
 Does not need base URL to be set.

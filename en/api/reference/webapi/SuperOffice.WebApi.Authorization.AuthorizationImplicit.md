@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Authorization_AuthorizationImplicit"&gt;&lt;/a&gt; Class AuthorizationImplicit
+# Class AuthorizationImplicit {#SuperOffice_WebApi_Authorization_AuthorizationImplicit}
 
 Namespace: [SuperOffice.WebApi.Authorization](SuperOffice.WebApi.Authorization.md)  
 Assembly: SuperOffice.WebApi.Authorization.dll  
@@ -31,7 +31,7 @@ public class AuthorizationImplicit : IAuthorization
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Authorization_AuthorizationImplicit__ctor"&gt;&lt;/a&gt; AuthorizationImplicit\(\)
+### AuthorizationImplicit\(\) {#SuperOffice_WebApi_Authorization_AuthorizationImplicit__ctor}
 
 ```csharp
 public AuthorizationImplicit()
@@ -39,7 +39,7 @@ public AuthorizationImplicit()
 
 ## Properties
 
-### &lt;a id="SuperOffice_WebApi_Authorization_AuthorizationImplicit_RefreshAuthorizationAsync"&gt;&lt;/a&gt; RefreshAuthorizationAsync
+### RefreshAuthorizationAsync {#SuperOffice_WebApi_Authorization_AuthorizationImplicit_RefreshAuthorizationAsync}
 
 Try to refresh this &lt;xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instance.
 
@@ -53,7 +53,7 @@ public Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Authorization_AuthorizationImplicit_GetAuthorization"&gt;&lt;/a&gt; GetAuthorization\(\)
+### GetAuthorization\(\) {#SuperOffice_WebApi_Authorization_AuthorizationImplicit_GetAuthorization}
 
 Returns an empty tuple. Signifies no authorization header - use NTLM/Negotiate with IIS.
 

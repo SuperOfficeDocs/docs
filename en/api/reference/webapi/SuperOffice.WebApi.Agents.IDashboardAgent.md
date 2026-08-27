@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_IDashboardAgent"&gt;&lt;/a&gt; Interface IDashboardAgent
+# Interface IDashboardAgent {#SuperOffice_WebApi_Agents_IDashboardAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface IDashboardAgent : IDisposable
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashboardAgent_CreateDefaultDashboardAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultDashboardAsync\(RequestOptions\)
+### CreateDefaultDashboardAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_CreateDefaultDashboardAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new Dashboard.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -37,7 +37,7 @@ Override language/culture codes on this request.
 
 A blank Dashboard
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashboardAgent_CreateDefaultDashboardTileAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultDashboardTileAsync\(RequestOptions\)
+### CreateDefaultDashboardTileAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_CreateDefaultDashboardTileAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new DashboardTile.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -58,7 +58,7 @@ Override language/culture codes on this request.
 
 A blank DashboardTile
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashboardAgent_CreateNewFromTemplateAsync_System_Int32_System_String_System_String_System_Int32_SuperOffice_WebApi_Data_VisibleFor___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateNewFromTemplateAsync\(int, string, string, int, VisibleFor\[\], RequestOptions\)
+### CreateNewFromTemplateAsync\(int, string, string, int, VisibleFor\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_CreateNewFromTemplateAsync_System_Int32_System_String_System_String_System_Int32_SuperOffice_WebApi_Data_VisibleFor___SuperOffice_WebApi_RequestOptions_}
 
 Create new tile from another tile used as template
 
@@ -98,7 +98,7 @@ Override language/culture codes on this request.
 
 The new tile
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashboardAgent_DeleteDashboardAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteDashboardAsync\(int, RequestOptions\)
+### DeleteDashboardAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_DeleteDashboardAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the Dashboard
 
@@ -120,7 +120,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashboardAgent_DeleteDashboardTileAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteDashboardTileAsync\(int, RequestOptions\)
+### DeleteDashboardTileAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_DeleteDashboardTileAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the DashboardTile
 
@@ -142,7 +142,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashboardAgent_GetDashboardAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDashboardAsync\(int, RequestOptions\)
+### GetDashboardAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_GetDashboardAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific Dashboard object.
 
@@ -166,7 +166,7 @@ Override language/culture codes on this request.
 
 Dashboard
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashboardAgent_GetDashboardTileAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDashboardTileAsync\(int, RequestOptions\)
+### GetDashboardTileAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_GetDashboardTileAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific DashboardTile object.
 
@@ -190,7 +190,7 @@ Override language/culture codes on this request.
 
 DashboardTile
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashboardAgent_GetDashboardTilesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDashboardTilesAsync\(int\[\], RequestOptions\)
+### GetDashboardTilesAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_GetDashboardTilesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Gets an array of dashboard tiles for the provided ids
 
@@ -214,7 +214,7 @@ Override language/culture codes on this request.
 
 Dashboard tiles
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashboardAgent_GetDashboardsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDashboardsAsync\(int, RequestOptions\)
+### GetDashboardsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_GetDashboardsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets all dashboards for an associate
 
@@ -238,7 +238,7 @@ Override language/culture codes on this request.
 
 All the users dashboards
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashboardAgent_GetDataAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDataAsync\(int, string, RequestOptions\)
+### GetDataAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_GetDataAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get data for this tile
 
@@ -266,7 +266,7 @@ Override language/culture codes on this request.
 
 The data
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashboardAgent_GetDataWithSelectionAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDataWithSelectionAsync\(int, int, string, RequestOptions\)
+### GetDataWithSelectionAsync\(int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_GetDataWithSelectionAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get data for this tile
 
@@ -298,7 +298,7 @@ Override language/culture codes on this request.
 
 The data
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashboardAgent_GetStandardDashboardTileFromChartIdAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetStandardDashboardTileFromChartIdAsync\(string, RequestOptions\)
+### GetStandardDashboardTileFromChartIdAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_GetStandardDashboardTileFromChartIdAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Gets the standard tile (not personal tile) corresponding to the given chart id
 
@@ -322,7 +322,7 @@ Override language/culture codes on this request.
 
 Standard tile
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashboardAgent_SaveDashboardAsync_SuperOffice_WebApi_Data_Dashboard_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveDashboardAsync\(Dashboard, RequestOptions\)
+### SaveDashboardAsync\(Dashboard, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_SaveDashboardAsync_SuperOffice_WebApi_Data_Dashboard_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing Dashboard or creates a new Dashboard if the id parameter is 0.
 
@@ -346,7 +346,7 @@ Override language/culture codes on this request.
 
 New or updated Dashboard
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashboardAgent_SaveDashboardTileAsync_SuperOffice_WebApi_Data_DashboardTile_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveDashboardTileAsync\(DashboardTile, RequestOptions\)
+### SaveDashboardTileAsync\(DashboardTile, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_SaveDashboardTileAsync_SuperOffice_WebApi_Data_DashboardTile_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing DashboardTile or creates a new DashboardTile if the id parameter is 0.
 
@@ -370,7 +370,7 @@ Override language/culture codes on this request.
 
 New or updated DashboardTile
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashboardAgent_SetTileAsync_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetTileAsync\(int, int, int, RequestOptions\)
+### SetTileAsync\(int, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_SetTileAsync_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Sets tile in the given dashboard position
 

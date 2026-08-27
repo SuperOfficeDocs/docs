@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent"&gt;&lt;/a&gt; Class ArchiveAgent
+# Class ArchiveAgent {#SuperOffice_WebApi_Agents_ArchiveAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -69,7 +69,7 @@ using (ArchiveAgent agent = new ArchiveAgent(mySession))
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; ArchiveAgent\(HttpClient\)
+### ArchiveAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_ArchiveAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: ArchiveList functions of all kinds
 
@@ -83,7 +83,7 @@ public ArchiveAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; ArchiveAgent\(WebApiOptions, HttpClient\)
+### ArchiveAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_ArchiveAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: ArchiveList functions of all kinds
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_CreateDefaultArchiveListResultAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultArchiveListResultAsync\(RequestOptions\)
+### CreateDefaultArchiveListResultAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_CreateDefaultArchiveListResultAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new ArchiveListResult.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -124,7 +124,7 @@ Override language/culture codes on this request.
 
 A blank ArchiveListResult
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_ExportArchiveAsync_System_String_System_String_System_String___System_String___SuperOffice_WebApi_Data_ArchiveOrderByInfo___SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String_System_String___System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ExportArchiveAsync\(string, string, string\[\], string\[\], ArchiveOrderByInfo\[\], ArchiveRestrictionInfo\[\], string, string\[\], int, RequestOptions\)
+### ExportArchiveAsync\(string, string, string\[\], string\[\], ArchiveOrderByInfo\[\], ArchiveRestrictionInfo\[\], string, string\[\], int, RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_ExportArchiveAsync_System_String_System_String_System_String___System_String___SuperOffice_WebApi_Data_ArchiveOrderByInfo___SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String_System_String___System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Exports the target archive to a downloadable format.
 
@@ -172,7 +172,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ExportArchiveResult](SuperOffice.WebApi.Data.ExportArchiveResult.md)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_GetActivityFilterAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetActivityFilterAsync\(RequestOptions\)
+### GetActivityFilterAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_GetActivityFilterAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get activity filter for the specified list.
 
@@ -192,7 +192,7 @@ Override language/culture codes on this request.
 
 The activity filter for the specified list
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveConfigurationAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetArchiveConfigurationAsync\(string, string, RequestOptions\)
+### GetArchiveConfigurationAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveConfigurationAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get the configuration for one archive. The configuration is keyed by a combination of archive provider name and gui name. The archive provider name must match an archive provider plugin; the gui name is an arbitrary string used to distinguish multiple occurrences of the same underlying provider in a gui.
 
@@ -220,7 +220,7 @@ Override language/culture codes on this request.
 
 Archive configuration consisting of column information, orderby information and entities
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveConfigurationV2Async_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetArchiveConfigurationV2Async\(string, string, string, string, RequestOptions\)
+### GetArchiveConfigurationV2Async\(string, string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveConfigurationV2Async_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get the configuration for one archive. The configuration is keyed by a combination of archive provider name (plus optional context), gui name, and optional table binding. The archive provider name must match an archive provider plugin; the gui name is an arbitrary string used to distinguish multiple occurrences of the same underlying provider in a gui.
 
@@ -256,7 +256,7 @@ Override language/culture codes on this request.
 
 Archive configuration consisting of column information, orderby information and entities
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveConfigurationWithContextAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetArchiveConfigurationWithContextAsync\(string, string, string, RequestOptions\)
+### GetArchiveConfigurationWithContextAsync\(string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveConfigurationWithContextAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get the configuration for one archive, with context parameter. The configuration is keyed by a combination of archive provider name and gui name. The archive provider name must match an archive provider plugin; the gui name is an arbitrary string used to distinguish multiple occurrences of the same underlying provider in a gui.
 
@@ -288,7 +288,7 @@ Override language/culture codes on this request.
 
 Archive configuration consisting of column information, orderby information and entities
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveList2Async_System_String_System_String_System_String_System_String_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetArchiveList2Async\(string, string, string, string, string, int, int, RequestOptions\)
+### GetArchiveList2Async\(string, string, string, string, string, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveList2Async_System_String_System_String_System_String_System_String_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a page of data for an archive using a restriction string. The columns returned will be those set as chosen columns, using either the SetChosenColumns service or the corresponding SelectableMDOList.SetSelected.
 
@@ -336,7 +336,7 @@ Override language/culture codes on this request.
 
 Array of archive list items, where each item represents one row of data (row level data + the requested columns)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveListAsync_System_String_System_String_SuperOffice_WebApi_Data_ArchiveOrderByInfo___SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String___System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetArchiveListAsync\(string, string, ArchiveOrderByInfo\[\], ArchiveRestrictionInfo\[\], string\[\], int, int, RequestOptions\)
+### GetArchiveListAsync\(string, string, ArchiveOrderByInfo\[\], ArchiveRestrictionInfo\[\], string\[\], int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveListAsync_System_String_System_String_SuperOffice_WebApi_Data_ArchiveOrderByInfo___SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String___System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a page of data for an archive. The columns returned will be those set as chosen columns, using either the SetChosenColumns service or the corresponding SelectableMDOList.SetSelected.
 
@@ -384,7 +384,7 @@ Override language/culture codes on this request.
 
 Array of archive list items, where each item represents one row of data (row level data + the requested columns)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveListByColumns2Async_System_String_System_String_System_String_System_String_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetArchiveListByColumns2Async\(string, string, string, string, string, int, int, RequestOptions\)
+### GetArchiveListByColumns2Async\(string, string, string, string, string, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveListByColumns2Async_System_String_System_String_System_String_System_String_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a page of results for an archive list, explicitly specifying the restrictions as a string, orderby and chosen columns.
 
@@ -432,7 +432,7 @@ Override language/culture codes on this request.
 
 Array of archive list items, where each item represents one row of data (row level data + the requested columns)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveListByColumnsAsync_System_String_System_String___SuperOffice_WebApi_Data_ArchiveOrderByInfo___SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String___System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetArchiveListByColumnsAsync\(string, string\[\], ArchiveOrderByInfo\[\], ArchiveRestrictionInfo\[\], string\[\], int, int, RequestOptions\)
+### GetArchiveListByColumnsAsync\(string, string\[\], ArchiveOrderByInfo\[\], ArchiveRestrictionInfo\[\], string\[\], int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveListByColumnsAsync_System_String_System_String___SuperOffice_WebApi_Data_ArchiveOrderByInfo___SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String___System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a page of results for an archive list, explicitly specifying the restrictions, orderby and chosen columns.
 
@@ -480,7 +480,7 @@ Override language/culture codes on this request.
 
 Array of archive list items, where each item represents one row of data (row level data + the requested columns)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveListByColumnsWithContext2Async_System_String_System_String_System_String_System_String_System_String_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetArchiveListByColumnsWithContext2Async\(string, string, string, string, string, int, int, string, RequestOptions\)
+### GetArchiveListByColumnsWithContext2Async\(string, string, string, string, string, int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveListByColumnsWithContext2Async_System_String_System_String_System_String_System_String_System_String_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get a page of results for an archive list with context parameter, explicitly specifying the restrictions as a string, orderby and chosen columns.
 
@@ -532,7 +532,7 @@ Override language/culture codes on this request.
 
 Array of archive list items, where each item represents one row of data (row level data + the requested columns)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveListByColumnsWithContextAsync_System_String_System_String___SuperOffice_WebApi_Data_ArchiveOrderByInfo___SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String___System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetArchiveListByColumnsWithContextAsync\(string, string\[\], ArchiveOrderByInfo\[\], ArchiveRestrictionInfo\[\], string\[\], int, int, string, RequestOptions\)
+### GetArchiveListByColumnsWithContextAsync\(string, string\[\], ArchiveOrderByInfo\[\], ArchiveRestrictionInfo\[\], string\[\], int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveListByColumnsWithContextAsync_System_String_System_String___SuperOffice_WebApi_Data_ArchiveOrderByInfo___SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String___System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get a page of results for an archive list with context parameter, explicitly specifying the restrictions, orderby and chosen columns.
 
@@ -584,7 +584,7 @@ Override language/culture codes on this request.
 
 Array of archive list items, where each item represents one row of data (row level data + the requested columns)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveListByColumnsWithHeader2Async_System_String_System_String_System_String_System_String_System_String_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetArchiveListByColumnsWithHeader2Async\(string, string, string, string, string, int, int, string, RequestOptions\)
+### GetArchiveListByColumnsWithHeader2Async\(string, string, string, string, string, int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveListByColumnsWithHeader2Async_System_String_System_String_System_String_System_String_System_String_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get a page of results for an archive list, explicitly specifying the restrictions as strings, orderby and chosen columns; as well as a name/value string formatted set of options. The return value includes a header that has various extra information, in addition to the actual rows.
 
@@ -636,7 +636,7 @@ Override language/culture codes on this request.
 
 Header with optional row count, plus array of archive list items, where each item represents one row of data (row level data + the requested columns)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveListByColumnsWithHeaderAsync_System_String_System_String___SuperOffice_WebApi_Data_ArchiveOrderByInfo___SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String___System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetArchiveListByColumnsWithHeaderAsync\(string, string\[\], ArchiveOrderByInfo\[\], ArchiveRestrictionInfo\[\], string\[\], int, int, string, RequestOptions\)
+### GetArchiveListByColumnsWithHeaderAsync\(string, string\[\], ArchiveOrderByInfo\[\], ArchiveRestrictionInfo\[\], string\[\], int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveListByColumnsWithHeaderAsync_System_String_System_String___SuperOffice_WebApi_Data_ArchiveOrderByInfo___SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String___System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get a page of results for an archive list, explicitly specifying the restrictions, orderby and chosen columns; as well as a name/value string formatted set of options. The return value includes a header that has various extra information, in addition to the actual rows.
 
@@ -688,7 +688,7 @@ Override language/culture codes on this request.
 
 Header with optional row count, plus array of archive list items, where each item represents one row of data (row level data + the requested columns)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveListByColumnsWithHeaderWithContext2Async_System_String_System_String_System_String_System_String_System_String_System_Int32_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetArchiveListByColumnsWithHeaderWithContext2Async\(string, string, string, string, string, int, int, string, string, RequestOptions\)
+### GetArchiveListByColumnsWithHeaderWithContext2Async\(string, string, string, string, string, int, int, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveListByColumnsWithHeaderWithContext2Async_System_String_System_String_System_String_System_String_System_String_System_Int32_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get a page of results for an archive list, with context parameter, explicitly specifying the restrictions as strings, orderby and chosen columns; as well as a name/value string formatted set of options. The return value includes a header that has various extra information, in addition to the actual rows.
 
@@ -744,7 +744,7 @@ Override language/culture codes on this request.
 
 Header with optional row count, plus array of archive list items, where each item represents one row of data (row level data + the requested columns)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveListByColumnsWithHeaderWithContextAsync_System_String_System_String___SuperOffice_WebApi_Data_ArchiveOrderByInfo___SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String___System_Int32_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetArchiveListByColumnsWithHeaderWithContextAsync\(string, string\[\], ArchiveOrderByInfo\[\], ArchiveRestrictionInfo\[\], string\[\], int, int, string, string, RequestOptions\)
+### GetArchiveListByColumnsWithHeaderWithContextAsync\(string, string\[\], ArchiveOrderByInfo\[\], ArchiveRestrictionInfo\[\], string\[\], int, int, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveListByColumnsWithHeaderWithContextAsync_System_String_System_String___SuperOffice_WebApi_Data_ArchiveOrderByInfo___SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String___System_Int32_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get a page of results for an archive list, with context parameter, explicitly specifying the restrictions, orderby and chosen columns; as well as a name/value string formatted set of options. The return value includes a header that has various extra information, in addition to the actual rows.
 
@@ -800,7 +800,7 @@ Override language/culture codes on this request.
 
 Header with optional row count, plus array of archive list items, where each item represents one row of data (row level data + the requested columns)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveListWithContext2Async_System_String_System_String_System_String_System_String_System_String_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetArchiveListWithContext2Async\(string, string, string, string, string, int, int, string, RequestOptions\)
+### GetArchiveListWithContext2Async\(string, string, string, string, string, int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveListWithContext2Async_System_String_System_String_System_String_System_String_System_String_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get a page of data for an archive using restrictions as strings, with context parameter. The columns returned will be those set as chosen columns, using either the SetChosenColumns service or the corresponding SelectableMDOList.SetSelected.
 
@@ -852,7 +852,7 @@ Override language/culture codes on this request.
 
 Array of archive list items, where each item represents one row of data (row level data + the requested columns)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveListWithContextAsync_System_String_System_String_SuperOffice_WebApi_Data_ArchiveOrderByInfo___SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String___System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetArchiveListWithContextAsync\(string, string, ArchiveOrderByInfo\[\], ArchiveRestrictionInfo\[\], string\[\], int, int, string, RequestOptions\)
+### GetArchiveListWithContextAsync\(string, string, ArchiveOrderByInfo\[\], ArchiveRestrictionInfo\[\], string\[\], int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_GetArchiveListWithContextAsync_System_String_System_String_SuperOffice_WebApi_Data_ArchiveOrderByInfo___SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String___System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get a page of data for an archive, with context parameter. The columns returned will be those set as chosen columns, using either the SetChosenColumns service or the corresponding SelectableMDOList.SetSelected.
 
@@ -904,7 +904,7 @@ Override language/culture codes on this request.
 
 Array of archive list items, where each item represents one row of data (row level data + the requested columns)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_GetAvailableColumnsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAvailableColumnsAsync\(string, string, RequestOptions\)
+### GetAvailableColumnsAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_GetAvailableColumnsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Return list of all columns supported by an archive provider. See also GetArchiveConfiguration.
 
@@ -932,7 +932,7 @@ Override language/culture codes on this request.
 
 Array of all columns supported by the archive provider.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_GetAvailableEntitiesAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAvailableEntitiesAsync\(string, string, RequestOptions\)
+### GetAvailableEntitiesAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_GetAvailableEntitiesAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Return list of all entities supported by an archive provider. See also GetArchiveConfiguration.
 
@@ -960,7 +960,7 @@ Override language/culture codes on this request.
 
 Array of all entity types supported by the archive provider. MDOListItem.Name = DisplayName, Tooltip = DisplayTooltip, Type = code name, StyleHint = optional/mandatory, IconHint=DefaultShow
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_GetGroupAssociateIdsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetGroupAssociateIdsAsync\(int\[\], RequestOptions\)
+### GetGroupAssociateIdsAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_GetGroupAssociateIdsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Returns the  associate ids that belongs to the given groups
 
@@ -984,7 +984,7 @@ Override language/culture codes on this request.
 
 Array of associate ids
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_GetProviderNamesAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProviderNamesAsync\(RequestOptions\)
+### GetProviderNamesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_GetProviderNamesAsync_SuperOffice_WebApi_RequestOptions_}
 
 Return list of all archive provider names
 
@@ -1004,7 +1004,7 @@ Override language/culture codes on this request.
 
 Array of all archive provider names.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_GetRelatedData2Async_System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetRelatedData2Async\(string, int, string, RequestOptions\)
+### GetRelatedData2Async\(string, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_GetRelatedData2Async_System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get data for fields related to a table record. While this method /can/ be used to fetch plain fields, that is not the intended usage and it does not replace the Entity.Get methods available for that purpose. Nor does it replace the generic DotSyntax/Dynamic archive provider.
 
@@ -1036,7 +1036,7 @@ Override language/culture codes on this request.
 
 Array of field =&gt; ArchiveColumnData objects
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_GetRelatedDataAsync_System_String_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetRelatedDataAsync\(string, int, string\[\], RequestOptions\)
+### GetRelatedDataAsync\(string, int, string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_GetRelatedDataAsync_System_String_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Get data for fields related to a table record. While this method /can/ be used to fetch plain fields, that is not the intended usage and it does not replace the Entity.Get methods available for that purpose. Nor does it replace the generic DotSyntax/Dynamic archive provider.
 
@@ -1068,7 +1068,7 @@ Override language/culture codes on this request.
 
 Array of field =&gt; ArchiveColumnData objects
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_SetActivityFilterAsync_SuperOffice_WebApi_Data_ActivityFilter_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetActivityFilterAsync\(ActivityFilter, RequestOptions\)
+### SetActivityFilterAsync\(ActivityFilter, RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_SetActivityFilterAsync_SuperOffice_WebApi_Data_ActivityFilter_SuperOffice_WebApi_RequestOptions_}
 
 Set activity filter for the specified list.
 
@@ -1090,7 +1090,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_SetChosenColumnsAsync_System_String_System_String_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetChosenColumnsAsync\(string, string, string\[\], RequestOptions\)
+### SetChosenColumnsAsync\(string, string, string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_SetChosenColumnsAsync_System_String_System_String_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Set the currently chosen columns for the given gui name/provider name combination. This service corresponds to the SetSelected method of the SelectableMDOList service, for a list called archiveColumns: plus the archive provider name and gui name as its additionalInfo.
 
@@ -1120,7 +1120,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_SetChosenColumnsV2Async_System_String_System_String_System_String_System_String_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetChosenColumnsV2Async\(string, string, string, string, string\[\], RequestOptions\)
+### SetChosenColumnsV2Async\(string, string, string, string, string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_SetChosenColumnsV2Async_System_String_System_String_System_String_System_String_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Set the currently chosen columns for the given gui name/provider name combination. This service corresponds to the SetSelected method of the SelectableMDOList service, for a list called archiveColumns: plus the archive provider name and gui name as its additionalInfo.
 
@@ -1158,7 +1158,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_SetChosenEntitiesAsync_System_String_System_String_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetChosenEntitiesAsync\(string, string, string\[\], RequestOptions\)
+### SetChosenEntitiesAsync\(string, string, string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_SetChosenEntitiesAsync_System_String_System_String_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Set the currently chosen entities for the given gui name/provider name combination. This service corresponds to the SetSelected method of the SelectableMDOList service, for a list called archiveEntities: plus the archive provider name and gui name as its additionalInfo.
 
@@ -1188,7 +1188,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_SetChosenEntitiesV2Async_System_String_System_String_System_String_System_String_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetChosenEntitiesV2Async\(string, string, string, string, string\[\], RequestOptions\)
+### SetChosenEntitiesV2Async\(string, string, string, string, string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_SetChosenEntitiesV2Async_System_String_System_String_System_String_System_String_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Set the currently chosen entities for the given gui name/provider name combination. This service corresponds to the SetSelected method of the SelectableMDOList service, for a list called archiveEntities: plus the archive provider name and gui name as its additionalInfo.
 
@@ -1226,7 +1226,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_SetColumnWidthsAsync_System_String_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetColumnWidthsAsync\(string, string\[\], RequestOptions\)
+### SetColumnWidthsAsync\(string, string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_SetColumnWidthsAsync_System_String_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Set the column widths for the given set of columns and GUI name.
 
@@ -1252,7 +1252,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ArchiveAgent_SetColumnWidthsV2Async_System_String_System_String_System_String_System_String_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetColumnWidthsV2Async\(string, string, string, string, string\[\], RequestOptions\)
+### SetColumnWidthsV2Async\(string, string, string, string, string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ArchiveAgent_SetColumnWidthsV2Async_System_String_System_String_System_String_System_String_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Set the column widths for the given set of columns and GUI name.
 

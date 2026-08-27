@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_IContactAgent"&gt;&lt;/a&gt; Interface IContactAgent
+# Interface IContactAgent {#SuperOffice_WebApi_Agents_IContactAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface IContactAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_AddPersonAsync_System_Int32_SuperOffice_WebApi_Data_PersonEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddPersonAsync\(int, PersonEntity, RequestOptions\)
+### AddPersonAsync\(int, PersonEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_AddPersonAsync_System_Int32_SuperOffice_WebApi_Data_PersonEntity_SuperOffice_WebApi_RequestOptions_}
 
 Add a person to the given contact
 
@@ -44,7 +44,7 @@ Override language/culture codes on this request.
 
 Updated person object
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_ChangeCountryAsync_SuperOffice_WebApi_Data_ContactEntity_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ChangeCountryAsync\(ContactEntity, int, RequestOptions\)
+### ChangeCountryAsync\(ContactEntity, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_ChangeCountryAsync_SuperOffice_WebApi_Data_ContactEntity_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Change country regenerates the default values and localized information such as phone number and address format
 
@@ -68,7 +68,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ContactEntity](SuperOffice.WebApi.Data.ContactEntity.md)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_CopyAsync_System_Int32_System_String_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CopyAsync\(int, string, string, bool, RequestOptions\)
+### CopyAsync\(int, string, string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_CopyAsync_System_Int32_System_String_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Copy a contact. Activities and related data will be ignored
 
@@ -104,7 +104,7 @@ Override language/culture codes on this request.
 
 Id of copied contact
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_CreateDefaultContactEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultContactEntityAsync\(RequestOptions\)
+### CreateDefaultContactEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_CreateDefaultContactEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new ContactEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -125,7 +125,7 @@ Override language/culture codes on this request.
 
 A blank ContactEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_CreateDefaultPreviewContactAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultPreviewContactAsync\(RequestOptions\)
+### CreateDefaultPreviewContactAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_CreateDefaultPreviewContactAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new PreviewContact.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -146,7 +146,7 @@ Override language/culture codes on this request.
 
 A blank PreviewContact
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_CreateNewEntryAsync_SuperOffice_WebApi_Data_DuplicateEntry_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateNewEntryAsync\(DuplicateEntry, RequestOptions\)
+### CreateNewEntryAsync\(DuplicateEntry, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_CreateNewEntryAsync_SuperOffice_WebApi_Data_DuplicateEntry_SuperOffice_WebApi_RequestOptions_}
 
 Creates a new contact based on external duplicate
 
@@ -170,7 +170,7 @@ Override language/culture codes on this request.
 
 The database identity of the newly created entry
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_DeleteContactEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteContactEntityAsync\(int, RequestOptions\)
+### DeleteContactEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_DeleteContactEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the ContactEntity
 
@@ -192,7 +192,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_DeleteExpiredAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteExpiredAsync\(RequestOptions\)
+### DeleteExpiredAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_DeleteExpiredAsync_SuperOffice_WebApi_RequestOptions_}
 
 Trigger deletion of contacts (companies) that has been (soft) deleted and have timed out the expiry period (the SoftDeleteRetention preference).
 
@@ -210,7 +210,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_EnrichContactEntityAsync_SuperOffice_WebApi_Data_ContactEntity_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; EnrichContactEntityAsync\(ContactEntity, string, RequestOptions\)
+### EnrichContactEntityAsync\(ContactEntity, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_EnrichContactEntityAsync_SuperOffice_WebApi_Data_ContactEntity_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Enrich a contact with data from the AI Enrichment service. This will update the contact with address, phone number, and email.
 
@@ -238,7 +238,7 @@ Override language/culture codes on this request.
 
 Enriched contact entity with address, phone number, and email updated.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_GetAddressAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAddressAsync\(int, RequestOptions\)
+### GetAddressAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_GetAddressAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets the contact's localized address.
 
@@ -262,7 +262,7 @@ Override language/culture codes on this request.
 
 The address as LocalizedField[][].
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_GetAddressByCountryAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAddressByCountryAsync\(int, int, RequestOptions\)
+### GetAddressByCountryAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_GetAddressByCountryAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets the contact's localized address.
 
@@ -288,7 +288,7 @@ Override language/culture codes on this request.
 
 The address as LocalizedField[][].
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_GetContactAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetContactAsync\(int, RequestOptions\)
+### GetContactAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_GetContactAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific Contact object.
 
@@ -312,7 +312,7 @@ Override language/culture codes on this request.
 
 Contact
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_GetContactEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetContactEntityAsync\(int, RequestOptions\)
+### GetContactEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_GetContactEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific ContactEntity object.
 
@@ -336,7 +336,7 @@ Override language/culture codes on this request.
 
 ContactEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_GetContactListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetContactListAsync\(int\[\], RequestOptions\)
+### GetContactListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_GetContactListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Gets an array of specific Contact objects.
 
@@ -360,7 +360,7 @@ Override language/culture codes on this request.
 
 Array of Contact objects
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_GetContactSummaryAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetContactSummaryAsync\(int, int, RequestOptions\)
+### GetContactSummaryAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_GetContactSummaryAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get summary of contact and its recent activity.
 
@@ -388,7 +388,7 @@ Override language/culture codes on this request.
 
 Summary of contact, with recent requests, sales, follow-ups, chats.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_GetContactWithPersonsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetContactWithPersonsAsync\(int, RequestOptions\)
+### GetContactWithPersonsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_GetContactWithPersonsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns the contact with all the contact persons belonging to the contact
 
@@ -412,7 +412,7 @@ Override language/culture codes on this request.
 
 ContactEntity with all data and persons.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_GetDomainDuplicatesAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDomainDuplicatesAsync\(string, RequestOptions\)
+### GetDomainDuplicatesAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_GetDomainDuplicatesAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get duplicates based on the domain
 
@@ -436,7 +436,7 @@ Override language/culture codes on this request.
 
 Any records matching the specified domain
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_GetDuplicateRulesAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDuplicateRulesAsync\(RequestOptions\)
+### GetDuplicateRulesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_GetDuplicateRulesAsync_SuperOffice_WebApi_RequestOptions_}
 
 Retrieve all available duplicate rules for contact
 
@@ -456,7 +456,7 @@ Override language/culture codes on this request.
 
 All available duplicate rules
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_GetDuplicatesAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDuplicatesAsync\(string, RequestOptions\)
+### GetDuplicatesAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_GetDuplicatesAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get duplicates (exact or similar in the database) based on the name
 
@@ -480,7 +480,7 @@ Override language/culture codes on this request.
 
 Any records matching the specified name
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_GetMyActiveContactsAsync_System_DateTime_System_Int32___SuperOffice_WebApi_Data_ContactAction_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetMyActiveContactsAsync\(DateTime, int\[\], ContactAction, RequestOptions\)
+### GetMyActiveContactsAsync\(DateTime, int\[\], ContactAction, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_GetMyActiveContactsAsync_System_DateTime_System_Int32___SuperOffice_WebApi_Data_ContactAction_SuperOffice_WebApi_RequestOptions_}
 
 Returns the contacts where there has been activity since activityStartTime. If activityStartTime is larger than the current date, all contacts with activity since last log-out are returned. The result set can be filtered by category and action type.
 
@@ -512,7 +512,7 @@ Override language/culture codes on this request.
 
 Array of contacts where there have been activity in the period.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_GetMyBizCardAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetMyBizCardAsync\(RequestOptions\)
+### GetMyBizCardAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_GetMyBizCardAsync_SuperOffice_WebApi_RequestOptions_}
 
 Returns all data needed to display the logged on person's business card. That is company, person, and company interest data.
 
@@ -532,7 +532,7 @@ Override language/culture codes on this request.
 
 The contact object with persons and interests
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_GetMyContactAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetMyContactAsync\(RequestOptions\)
+### GetMyContactAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_GetMyContactAsync_SuperOffice_WebApi_RequestOptions_}
 
 Gets the contact belonging to the currently logged on user.
 
@@ -552,7 +552,7 @@ Override language/culture codes on this request.
 
 The Contact
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_GetMyContactsAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetMyContactsAsync\(RequestOptions\)
+### GetMyContactsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_GetMyContactsAsync_SuperOffice_WebApi_RequestOptions_}
 
 Getting the contacts where the user currently logged in is set as contact owner.
 
@@ -572,7 +572,7 @@ Override language/culture codes on this request.
 
 Array of contacts
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_GetMyRecentContactsAsync_SuperOffice_WebApi_Data_ContactSourceType_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetMyRecentContactsAsync\(ContactSourceType, RequestOptions\)
+### GetMyRecentContactsAsync\(ContactSourceType, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_GetMyRecentContactsAsync_SuperOffice_WebApi_Data_ContactSourceType_SuperOffice_WebApi_RequestOptions_}
 
 Method that returns a set of initial contacts. This could be the contacts in a favorites selection, the history list, the diary, or from all sources. If retrieved from the diary it will get appointments for the current and the next day.
 
@@ -596,7 +596,7 @@ Override language/culture codes on this request.
 
 Arrayof contacts
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_GetNameDepartmentDuplicatesAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetNameDepartmentDuplicatesAsync\(string, string, RequestOptions\)
+### GetNameDepartmentDuplicatesAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_GetNameDepartmentDuplicatesAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get duplicates based on the contact name and department
 
@@ -624,7 +624,7 @@ Override language/culture codes on this request.
 
 Any records matching the specified name and department
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_GetPersonsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPersonsAsync\(int, RequestOptions\)
+### GetPersonsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_GetPersonsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns an array of all the contact persons for the company card.
 
@@ -646,7 +646,7 @@ Override language/culture codes on this request.
 
 Array of Persons
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_GetPreviewContactAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPreviewContactAsync\(int, RequestOptions\)
+### GetPreviewContactAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_GetPreviewContactAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a contact from its ID
 
@@ -670,7 +670,7 @@ Override language/culture codes on this request.
 
 Minimal contact suitable for preview
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_GetPreviewEnrichContactAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPreviewEnrichContactAsync\(string, RequestOptions\)
+### GetPreviewEnrichContactAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_GetPreviewEnrichContactAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get a contact from its ID
 
@@ -694,7 +694,7 @@ Override language/culture codes on this request.
 
 Minimal contact suitable for preview
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_GetQuoteVersionAddressesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetQuoteVersionAddressesAsync\(int, RequestOptions\)
+### GetQuoteVersionAddressesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_GetQuoteVersionAddressesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get the associated billing and invoice quote version addresses. These addresses might be address on the contact, or a custom address.
 
@@ -718,7 +718,7 @@ Override language/culture codes on this request.
 
 The quote version addresses. Invoice and billing address, in that order.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_IsNumberValidAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; IsNumberValidAsync\(int, string, RequestOptions\)
+### IsNumberValidAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_IsNumberValidAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Checks if the number is unique or required.  The setting is configured from admin under system options.
 
@@ -746,7 +746,7 @@ Override language/culture codes on this request.
 
 True if the number satisifies the configured rules for uniqueness.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_MergeAsync_System_Int32_System_Int32_System_Boolean_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; MergeAsync\(int, int, bool, bool, RequestOptions\)
+### MergeAsync\(int, int, bool, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_MergeAsync_System_Int32_System_Int32_System_Boolean_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Merge two contacts. The destination contact will remain.
 
@@ -780,7 +780,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_SaveContactEntityAsync_SuperOffice_WebApi_Data_ContactEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveContactEntityAsync\(ContactEntity, RequestOptions\)
+### SaveContactEntityAsync\(ContactEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_SaveContactEntityAsync_SuperOffice_WebApi_Data_ContactEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing ContactEntity or creates a new ContactEntity if the id parameter is 0.
 
@@ -804,7 +804,7 @@ Override language/culture codes on this request.
 
 New or updated ContactEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_SaveQuoteVersionAddressAsync_System_Int32_SuperOffice_WebApi_Data_Address_SuperOffice_WebApi_Data_AddressType_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveQuoteVersionAddressAsync\(int, Address, AddressType, int, RequestOptions\)
+### SaveQuoteVersionAddressAsync\(int, Address, AddressType, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_SaveQuoteVersionAddressAsync_System_Int32_SuperOffice_WebApi_Data_Address_SuperOffice_WebApi_Data_AddressType_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Save a custom quote version address.
 
@@ -840,7 +840,7 @@ Override language/culture codes on this request.
 
 The saved addresses.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_SetDuplicateRulesStatusAsync_SuperOffice_WebApi_Data_DuplicateRule___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetDuplicateRulesStatusAsync\(DuplicateRule\[\], RequestOptions\)
+### SetDuplicateRulesStatusAsync\(DuplicateRule\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_SetDuplicateRulesStatusAsync_SuperOffice_WebApi_Data_DuplicateRule___SuperOffice_WebApi_RequestOptions_}
 
 Set which duplicate rules should be active or not
 
@@ -862,7 +862,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_UndeleteAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; UndeleteAsync\(int, RequestOptions\)
+### UndeleteAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_UndeleteAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 This entity supports Soft Delete. Call this method to Undelete a previously soft-deleted record
 
@@ -886,7 +886,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_UpdateInterestsAsync_System_Int32_System_Int32___System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; UpdateInterestsAsync\(int, int\[\], int\[\], RequestOptions\)
+### UpdateInterestsAsync\(int, int\[\], int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_UpdateInterestsAsync_System_Int32_System_Int32___System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Update interests on contact. Will throw exception if id is in both arrays
 
@@ -918,7 +918,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IContactAgent_ValidateContactEntityAsync_SuperOffice_WebApi_Data_ContactEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ValidateContactEntityAsync\(ContactEntity, RequestOptions\)
+### ValidateContactEntityAsync\(ContactEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_ValidateContactEntityAsync_SuperOffice_WebApi_Data_ContactEntity_SuperOffice_WebApi_RequestOptions_}
 
 Check that entity is ready for saving, return error messages by field.
 

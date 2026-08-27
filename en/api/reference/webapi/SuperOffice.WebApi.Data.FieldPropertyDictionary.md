@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Data_FieldPropertyDictionary"&gt;&lt;/a&gt; Class FieldPropertyDictionary
+# Class FieldPropertyDictionary {#SuperOffice_WebApi_Data_FieldPropertyDictionary}
 
 Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -60,7 +60,7 @@ public class FieldPropertyDictionary : Dictionary<string, FieldProperty>, IDicti
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Data_FieldPropertyDictionary__ctor"&gt;&lt;/a&gt; FieldPropertyDictionary\(\)
+### FieldPropertyDictionary\(\) {#SuperOffice_WebApi_Data_FieldPropertyDictionary__ctor}
 
 Default constructor
 
@@ -70,7 +70,7 @@ public FieldPropertyDictionary()
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Data_FieldPropertyDictionary_ToString_System_String_"&gt;&lt;/a&gt; ToString\(string\)
+### ToString\(string\) {#SuperOffice_WebApi_Data_FieldPropertyDictionary_ToString_System_String_}
 
 ```csharp
 public string ToString(string prefix)

@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_IFindAgent"&gt;&lt;/a&gt; Interface IFindAgent
+# Interface IFindAgent {#SuperOffice_WebApi_Agents_IFindAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface IFindAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_CreateRestrictionGroupAsync_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateRestrictionGroupAsync\(string, string, string, string, RequestOptions\)
+### CreateRestrictionGroupAsync\(string, string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_CreateRestrictionGroupAsync_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Create a restriction group, initialized with next rank etc.
 
@@ -52,7 +52,7 @@ Override language/culture codes on this request.
 
 The new restriction group.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_DeleteRestrictionGroupAsync_System_String_System_String_System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteRestrictionGroupAsync\(string, string, string, int, string, RequestOptions\)
+### DeleteRestrictionGroupAsync\(string, string, string, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_DeleteRestrictionGroupAsync_System_String_System_String_System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Create a restriction group, initialized with next rank etc.
 
@@ -92,7 +92,7 @@ Override language/culture codes on this request.
 
 This service call just saves the restrictions.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_FindAsync_System_String_System_String_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; FindAsync\(string, string, string, int, int, RequestOptions\)
+### FindAsync\(string, string, string, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_FindAsync_System_String_System_String_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Execute a Find operation and return a page of results. The criteria for the Find are fetched from the restriction storage provider according to the given parameters. The columns of the result are calculated based on the restriction. The orderby columns are also calculated by the system.&lt;para/&gt;The other variants of the Find method allow you greater control over the individual aspects of the process.
 
@@ -132,7 +132,7 @@ Override language/culture codes on this request.
 
 Results from search, containing column information and result rows.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_FindFromRestrictions2Async_System_String_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; FindFromRestrictions2Async\(string, string, int, int, RequestOptions\)
+### FindFromRestrictions2Async\(string, string, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_FindFromRestrictions2Async_System_String_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Execute a Find operation and return a page of results. The criteria for the Find are passed in directly, not fetched by a restriction storage provider. The columns of the result are calculated based on the restriction.
 
@@ -168,7 +168,7 @@ Override language/culture codes on this request.
 
 Results from search, containing column information and result rows.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_FindFromRestrictionsAsync_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; FindFromRestrictionsAsync\(ArchiveRestrictionInfo\[\], string, int, int, RequestOptions\)
+### FindFromRestrictionsAsync\(ArchiveRestrictionInfo\[\], string, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_FindFromRestrictionsAsync_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Execute a Find operation and return a page of results. The criteria for the Find are passed in directly, not fetched by a restriction storage provider. The columns of the result are calculated based on the restriction.
 
@@ -204,7 +204,7 @@ Override language/culture codes on this request.
 
 Results from search, containing column information and result rows.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_FindFromRestrictionsColumns2Async_System_String_System_String_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; FindFromRestrictionsColumns2Async\(string, string, string, int, int, RequestOptions\)
+### FindFromRestrictionsColumns2Async\(string, string, string, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_FindFromRestrictionsColumns2Async_System_String_System_String_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Execute a Find operation and return a page of results. &lt;para/&gt;The criteria for the Find are passed in directly, not fetched by a restriction storage provider. &lt;para/&gt;The desired columns of the result set are also passed in directly.&lt;para/&gt;The orderby information is calculated by the system.&lt;para/&gt;Use the GetCriteriaInformation and GetDefaultDesiredColumns service methods to let the system calculate these values, if you want to use or modify them.
 
@@ -244,7 +244,7 @@ Override language/culture codes on this request.
 
 Results from search, containing column information and result rows.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_FindFromRestrictionsColumnsAsync_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String_System_String___System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; FindFromRestrictionsColumnsAsync\(ArchiveRestrictionInfo\[\], string, string\[\], int, int, RequestOptions\)
+### FindFromRestrictionsColumnsAsync\(ArchiveRestrictionInfo\[\], string, string\[\], int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_FindFromRestrictionsColumnsAsync_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String_System_String___System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Execute a Find operation and return a page of results. &lt;para/&gt;The criteria for the Find are passed in directly, not fetched by a restriction storage provider. &lt;para/&gt;The desired columns of the result set are also passed in directly.&lt;para/&gt;The orderby information is calculated by the system.&lt;para/&gt;Use the GetCriteriaInformation and GetDefaultDesiredColumns service methods to let the system calculate these values, if you want to use or modify them.
 
@@ -284,7 +284,7 @@ Override language/culture codes on this request.
 
 Results from search, containing column information and result rows.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_FindFromRestrictionsColumnsOrderBy2Async_System_String_System_String_System_String_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; FindFromRestrictionsColumnsOrderBy2Async\(string, string, string, string, int, int, RequestOptions\)
+### FindFromRestrictionsColumnsOrderBy2Async\(string, string, string, string, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_FindFromRestrictionsColumnsOrderBy2Async_System_String_System_String_System_String_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Execute a Find operation and return a page of results. &lt;para/&gt;The criteria for the Find are passed in directly, not fetched by a restriction storage provider. &lt;para/&gt;The desired columns of the result set are also passed in directly.&lt;para/&gt;The orderby information is also passed in directly.&lt;para/&gt;Use the GetCriteriaInformation, GetDefaultDesiredColumns and GetDefaultOrderBy service methods to let the system calculate these values, if you want to use or modify them.
 
@@ -328,7 +328,7 @@ Override language/culture codes on this request.
 
 Results from search, containing column information and result rows.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_FindFromRestrictionsColumnsOrderByAsync_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String_System_String___SuperOffice_WebApi_Data_ArchiveOrderByInfo___System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; FindFromRestrictionsColumnsOrderByAsync\(ArchiveRestrictionInfo\[\], string, string\[\], ArchiveOrderByInfo\[\], int, int, RequestOptions\)
+### FindFromRestrictionsColumnsOrderByAsync\(ArchiveRestrictionInfo\[\], string, string\[\], ArchiveOrderByInfo\[\], int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_FindFromRestrictionsColumnsOrderByAsync_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String_System_String___SuperOffice_WebApi_Data_ArchiveOrderByInfo___System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Execute a Find operation and return a page of results. &lt;para/&gt;The criteria for the Find are passed in directly, not fetched by a restriction storage provider. &lt;para/&gt;The desired columns of the result set are also passed in directly.&lt;para/&gt;The orderby information is also passed in directly.&lt;para/&gt;Use the GetCriteriaInformation, GetDefaultDesiredColumns and GetDefaultOrderBy service methods to let the system calculate these values, if you want to use or modify them.
 
@@ -372,7 +372,7 @@ Override language/culture codes on this request.
 
 Results from search, containing column information and result rows.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_FindOrderBy2Async_System_String_System_String_System_String_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; FindOrderBy2Async\(string, string, string, int, int, string, RequestOptions\)
+### FindOrderBy2Async\(string, string, string, int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_FindOrderBy2Async_System_String_System_String_System_String_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Execute a Find operation and return a page of results. The criteria for the Find are fetched from the restriction storage provider according to the given parameters. The columns of the result are calculated based on the restriction. The orderby parameter is used for sorting the results.&lt;para/&gt;The other variants of the Find method allow you greater control over the individual aspects of the process.
 
@@ -416,7 +416,7 @@ Override language/culture codes on this request.
 
 Results from search, containing column information and result rows.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_FindOrderByAsync_System_String_System_String_System_String_System_Int32_System_Int32_SuperOffice_WebApi_Data_ArchiveOrderByInfo___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; FindOrderByAsync\(string, string, string, int, int, ArchiveOrderByInfo\[\], RequestOptions\)
+### FindOrderByAsync\(string, string, string, int, int, ArchiveOrderByInfo\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_FindOrderByAsync_System_String_System_String_System_String_System_Int32_System_Int32_SuperOffice_WebApi_Data_ArchiveOrderByInfo___SuperOffice_WebApi_RequestOptions_}
 
 Execute a Find operation and return a page of results. The criteria for the Find are fetched from the restriction storage provider according to the given parameters. The columns of the result are calculated based on the restriction. The orderby parameter is used for sorting the results.&lt;para/&gt;The other variants of the Find method allow you greater control over the individual aspects of the process.
 
@@ -460,7 +460,7 @@ Override language/culture codes on this request.
 
 Results from search, containing column information and result rows.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_FindWithColumnsAsync_System_String_System_String_System_String_System_String___System_Int32_System_Int32_SuperOffice_WebApi_Data_ArchiveOrderByInfo___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; FindWithColumnsAsync\(string, string, string, string\[\], int, int, ArchiveOrderByInfo\[\], RequestOptions\)
+### FindWithColumnsAsync\(string, string, string, string\[\], int, int, ArchiveOrderByInfo\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_FindWithColumnsAsync_System_String_System_String_System_String_System_String___System_Int32_System_Int32_SuperOffice_WebApi_Data_ArchiveOrderByInfo___SuperOffice_WebApi_RequestOptions_}
 
 Execute a Find operation and return a page of results. The criteria for the Find are fetched from the restriction storage provider according to the given parameters.
 
@@ -508,7 +508,7 @@ Override language/culture codes on this request.
 
 Results from search, containing column information and result rows.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_FindWithExtraRestrictions2Async_System_String_System_String_System_String_System_String_System_String_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; FindWithExtraRestrictions2Async\(string, string, string, string, string, string, int, int, RequestOptions\)
+### FindWithExtraRestrictions2Async\(string, string, string, string, string, string, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_FindWithExtraRestrictions2Async_System_String_System_String_System_String_System_String_System_String_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Execute a Find operation and return a page of results. The criteria for the Find are fetched from the restriction storage provider according to the given parameters. In addition an extra set of restrictions can be added to the search. These restrictions will not be saved, they are only valid for the current search. Extra restrictions will override restrictions with the same key already stored on the storagekey.
 
@@ -560,7 +560,7 @@ Override language/culture codes on this request.
 
 Results from search, containing column information and result rows.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_FindWithExtraRestrictionsAsync_System_String_System_String_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___SuperOffice_WebApi_Data_ArchiveOrderByInfo___System_String___System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; FindWithExtraRestrictionsAsync\(string, string, string, ArchiveRestrictionInfo\[\], ArchiveOrderByInfo\[\], string\[\], int, int, RequestOptions\)
+### FindWithExtraRestrictionsAsync\(string, string, string, ArchiveRestrictionInfo\[\], ArchiveOrderByInfo\[\], string\[\], int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_FindWithExtraRestrictionsAsync_System_String_System_String_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___SuperOffice_WebApi_Data_ArchiveOrderByInfo___System_String___System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Execute a Find operation and return a page of results. The criteria for the Find are fetched from the restriction storage provider according to the given parameters. In addition an extra set of restrictions can be added to the search. These restrictions will not be saved, they are only valid for the current search. Extra restrictions will override restrictions with the same key already stored on the storagekey.
 
@@ -612,7 +612,7 @@ Override language/culture codes on this request.
 
 Results from search, containing column information and result rows.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_GetAvailableRestrictionColumnsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAvailableRestrictionColumnsAsync\(string, string, RequestOptions\)
+### GetAvailableRestrictionColumnsAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_GetAvailableRestrictionColumnsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get a list of the column names corresponding to available restrictions for a certain archive provider and restriction storage provider. Such columns have CanRestrict set to true, and are supported by the given restriction storage provider.
 
@@ -640,7 +640,7 @@ Override language/culture codes on this request.
 
 Array of column names, corresponding to support restrictions for the given archive and restriction storage providers.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_GetCriteriaInformationAsync_System_String_System_String_System_String_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCriteriaInformationAsync\(string, string, string, string\[\], RequestOptions\)
+### GetCriteriaInformationAsync\(string, string, string, string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_GetCriteriaInformationAsync_System_String_System_String_System_String_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Get criteria information from a set of saved criteria. The result contains the restrictions in two forms: fully populated ArchiveRestrictionInfo objects, used to display details and for saving changes; and as a list suitable for an Archive control
 
@@ -676,7 +676,7 @@ Override language/culture codes on this request.
 
 The result contains the restrictions in two forms: fully populated ArchiveRestrictionInfo objects, used to display details and for saving changes; and as a list suitable for an Archive control
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_GetCriteriaInformationWithContextAsync_System_String_System_String_System_String_System_String___System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCriteriaInformationWithContextAsync\(string, string, string, string\[\], string, RequestOptions\)
+### GetCriteriaInformationWithContextAsync\(string, string, string, string\[\], string, RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_GetCriteriaInformationWithContextAsync_System_String_System_String_System_String_System_String___System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get criteria information from a set of saved criteria. The result contains the restrictions in two forms: fully populated ArchiveRestrictionInfo objects, used to display details and for saving changes; and as a list suitable for an Archive control
 
@@ -716,7 +716,7 @@ Override language/culture codes on this request.
 
 The result contains the restrictions in two forms: fully populated ArchiveRestrictionInfo objects, used to display details and for saving changes; and as a list suitable for an Archive control
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_GetDefaultDesiredColumnsAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDefaultDesiredColumnsAsync\(string, string, string, RequestOptions\)
+### GetDefaultDesiredColumnsAsync\(string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_GetDefaultDesiredColumnsAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Calculate the default desired columns, i.e., the result columns for a given search. The search is defined by a storage type, provider name and storage key, which are used to fetch the corresponding restrictions from the database (in the same way as Find does). If you want to specify the restriction directly, use the GetDefaultDesiredColumnsFromRestrictions method instead. This is the algorithm that is used by the Find service method.
 
@@ -748,7 +748,7 @@ Override language/culture codes on this request.
 
 Column information for the default desired columns, fully populated. Percentage-specified column widths sum to exactly 100.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_GetDefaultDesiredColumnsFromRestrictions2Async_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDefaultDesiredColumnsFromRestrictions2Async\(string, string, RequestOptions\)
+### GetDefaultDesiredColumnsFromRestrictions2Async\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_GetDefaultDesiredColumnsFromRestrictions2Async_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Calculate the default desired columns, i.e., the result columns for a given search. The search is defined by a provider name and a set of restrictions. This is the algorithm that is used by the Find service method.
 
@@ -776,7 +776,7 @@ Override language/culture codes on this request.
 
 Column information for the default desired columns, fully populated. Percentage-specified column widths sum to exactly 100.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_GetDefaultDesiredColumnsFromRestrictionsAsync_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDefaultDesiredColumnsFromRestrictionsAsync\(string, ArchiveRestrictionInfo\[\], RequestOptions\)
+### GetDefaultDesiredColumnsFromRestrictionsAsync\(string, ArchiveRestrictionInfo\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_GetDefaultDesiredColumnsFromRestrictionsAsync_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___SuperOffice_WebApi_RequestOptions_}
 
 Calculate the default desired columns, i.e., the result columns for a given search. The search is defined by a provider name and a set of restrictions. This is the algorithm that is used by the Find service method.
 
@@ -804,7 +804,7 @@ Override language/culture codes on this request.
 
 Column information for the default desired columns, fully populated. Percentage-specified column widths sum to exactly 100.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_GetDefaultOrderByAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDefaultOrderByAsync\(string, string, string, RequestOptions\)
+### GetDefaultOrderByAsync\(string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_GetDefaultOrderByAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Calculate the default orderby columns for a given provider and a search. The search is specified by a storage type, provider name and storage key, and is fetched from the database. Default desired columns are then calculated for the search, and those columns are then used as the basis for calculating an order by. If you want to specify the desired columns directly, use the GetDefaultOrderByFromDesiredColumns method instead.  This is the same algorithm that is used by the Find service method.
 
@@ -836,7 +836,7 @@ Override language/culture codes on this request.
 
 Orderby information
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_GetDefaultOrderByFromDesiredColumnsAsync_System_String_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDefaultOrderByFromDesiredColumnsAsync\(string, string\[\], RequestOptions\)
+### GetDefaultOrderByFromDesiredColumnsAsync\(string, string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_GetDefaultOrderByFromDesiredColumnsAsync_System_String_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Calculate the default orderby columns for a given provider and a set of desired columns. This is the same algorithm that is used by the Find service method.
 
@@ -864,7 +864,7 @@ Override language/culture codes on this request.
 
 Orderby information
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_GetRestrictionGroupAsync_System_String_System_String_System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetRestrictionGroupAsync\(string, string, string, int, string, RequestOptions\)
+### GetRestrictionGroupAsync\(string, string, string, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_GetRestrictionGroupAsync_System_String_System_String_System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Return the restriction group with given rank or a blank carrier.
 
@@ -904,7 +904,7 @@ Override language/culture codes on this request.
 
 The new restriction group.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_GetRestrictionGroupsAsync_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetRestrictionGroupsAsync\(string, string, string, string, RequestOptions\)
+### GetRestrictionGroupsAsync\(string, string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_GetRestrictionGroupsAsync_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Return all the restriction groups.
 
@@ -940,7 +940,7 @@ Override language/culture codes on this request.
 
 The restriction groups.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_GetSpecifiedCriteriaInformationWithDefaultsAsync_System_String_System_String_System_String_System_String___System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSpecifiedCriteriaInformationWithDefaultsAsync\(string, string, string, string\[\], string\[\], RequestOptions\)
+### GetSpecifiedCriteriaInformationWithDefaultsAsync\(string, string, string, string\[\], string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_GetSpecifiedCriteriaInformationWithDefaultsAsync_System_String_System_String_System_String_System_String___System_String___SuperOffice_WebApi_RequestOptions_}
 
 Get criteria information from a set of saved criteria, for a specific set of columns. The result contains the restrictions in two forms: fully populated ArchiveRestrictionInfo objects, used to display details and for saving changes; and as a list suitable for an Archive control. ALL columns specified in the call will be present in the results; those that do not have corresponding criteria set will have empty values and the default (first) operator, with the IsActive flag set to false.
 
@@ -980,7 +980,7 @@ Override language/culture codes on this request.
 
 The result contains the restrictions in two forms: fully populated ArchiveRestrictionInfo objects, used to display details and for saving changes; and as a list suitable for an Archive control. ALL columns specified in the call will be present in the results; those that do not have corresponding criteria set will have empty values and the default (first) operator, with the IsActive flag set to false.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_GetSpecifiedCriteriaInformationWithDefaultsWithContextAsync_System_String_System_String_System_String_System_String___System_String___System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSpecifiedCriteriaInformationWithDefaultsWithContextAsync\(string, string, string, string\[\], string\[\], string, RequestOptions\)
+### GetSpecifiedCriteriaInformationWithDefaultsWithContextAsync\(string, string, string, string\[\], string\[\], string, RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_GetSpecifiedCriteriaInformationWithDefaultsWithContextAsync_System_String_System_String_System_String_System_String___System_String___System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get criteria information from a set of saved criteria, for a specific set of columns. The result contains the restrictions in two forms: fully populated ArchiveRestrictionInfo objects, used to display details and for saving changes; and as a list suitable for an Archive control. ALL columns specified in the call will be present in the results; those that do not have corresponding criteria set will have empty values and the default (first) operator, with the IsActive flag set to false.
 
@@ -1024,7 +1024,7 @@ Override language/culture codes on this request.
 
 The result contains the restrictions in two forms: fully populated ArchiveRestrictionInfo objects, used to display details and for saving changes; and as a list suitable for an Archive control. ALL columns specified in the call will be present in the results; those that do not have corresponding criteria set will have empty values and the default (first) operator, with the IsActive flag set to false.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_PopulateRestrictionValuesAsync_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; PopulateRestrictionValuesAsync\(ArchiveRestrictionInfo\[\], RequestOptions\)
+### PopulateRestrictionValuesAsync\(ArchiveRestrictionInfo\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_PopulateRestrictionValuesAsync_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___SuperOffice_WebApi_RequestOptions_}
 
 Take an incoming set of Restrictions (name + operator + any user-entered values), and populate/expand all values as specified by the operator's ValueHints, taking into account any values already there. Used for dynamic date periods; perhaps others in the future
 
@@ -1048,7 +1048,7 @@ Override language/culture codes on this request.
 
 Restrictions in the same order as the incoming restrictions, with all values expanded.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_PopulateRestrictionsAsync_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; PopulateRestrictionsAsync\(string, ArchiveRestrictionInfo\[\], RequestOptions\)
+### PopulateRestrictionsAsync\(string, ArchiveRestrictionInfo\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_PopulateRestrictionsAsync_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___SuperOffice_WebApi_RequestOptions_}
 
 Take an incoming set of minimally populated restrictions (name + operator is required), and populate all the other parts of the ArchiveRestrictionInfo structure. This includes column information, display values (including list value lookup), and calculated/default values where the value hints specify read-only (R).
 
@@ -1076,7 +1076,7 @@ Override language/culture codes on this request.
 
 Fully populated restrictions in the same order as the incoming restrictions.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_SaveRestrictionGroupAsync_System_String_System_String_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionGroup_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveRestrictionGroupAsync\(string, string, string, ArchiveRestrictionGroup, string, RequestOptions\)
+### SaveRestrictionGroupAsync\(string, string, string, ArchiveRestrictionGroup, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_SaveRestrictionGroupAsync_System_String_System_String_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionGroup_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Save an array of restrictions as a restriction group for later use as search criteria (including as dynamic selection and Find).
 
@@ -1116,7 +1116,7 @@ Override language/culture codes on this request.
 
 This service call just saves the restrictions.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_SaveRestrictionGroupsAsync_System_String_System_String_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionGroup___System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveRestrictionGroupsAsync\(string, string, string, ArchiveRestrictionGroup\[\], string, RequestOptions\)
+### SaveRestrictionGroupsAsync\(string, string, string, ArchiveRestrictionGroup\[\], string, RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_SaveRestrictionGroupsAsync_System_String_System_String_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionGroup___System_String_SuperOffice_WebApi_RequestOptions_}
 
 Save and rerank an array of restriction groups, returning the possibly modified array.
 
@@ -1156,7 +1156,7 @@ Override language/culture codes on this request.
 
 The new restriction group.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_SaveRestrictions2Async_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveRestrictions2Async\(string, string, string, string, RequestOptions\)
+### SaveRestrictions2Async\(string, string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_SaveRestrictions2Async_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Save an array of restrictions for later use as search criteria (including as dynamic selection and Find).
 
@@ -1192,7 +1192,7 @@ Override language/culture codes on this request.
 
 This service call just saves the restrictions. See SaveRestrictionsAndGetCriteriaInformation if you would like the restrictions returned as criteria immediately, in one roundtrip
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_SaveRestrictionsAndGetCriteriaInformation2Async_System_String_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveRestrictionsAndGetCriteriaInformation2Async\(string, string, string, string, string, RequestOptions\)
+### SaveRestrictionsAndGetCriteriaInformation2Async\(string, string, string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_SaveRestrictionsAndGetCriteriaInformation2Async_System_String_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Save an array of restrictions for later use as search criteria (including as dynamic selection and Find). Then, return the same result as a call to GetCriteriaInformation would have done. The purpose is to encapsulate saving and updating of a GUI in one round trip.
 
@@ -1232,7 +1232,7 @@ Override language/culture codes on this request.
 
 The result contains the restrictions in two forms: fully populated ArchiveRestrictionInfo objects, used to display details and for saving changes; and as a list suitable for an Archive control
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_SaveRestrictionsAndGetCriteriaInformationAsync_System_String_System_String_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveRestrictionsAndGetCriteriaInformationAsync\(string, string, string, ArchiveRestrictionInfo\[\], string\[\], RequestOptions\)
+### SaveRestrictionsAndGetCriteriaInformationAsync\(string, string, string, ArchiveRestrictionInfo\[\], string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_SaveRestrictionsAndGetCriteriaInformationAsync_System_String_System_String_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String___SuperOffice_WebApi_RequestOptions_}
 
 Save an array of restrictions for later use as search criteria (including as dynamic selection and Find). Then, return the same result as a call to GetCriteriaInformation would have done. The purpose is to encapsulate saving and updating of a GUI in one round trip.
 
@@ -1272,7 +1272,7 @@ Override language/culture codes on this request.
 
 The result contains the restrictions in two forms: fully populated ArchiveRestrictionInfo objects, used to display details and for saving changes; and as a list suitable for an Archive control
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_SaveRestrictionsAsync_System_String_System_String_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveRestrictionsAsync\(string, string, string, ArchiveRestrictionInfo\[\], RequestOptions\)
+### SaveRestrictionsAsync\(string, string, string, ArchiveRestrictionInfo\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_SaveRestrictionsAsync_System_String_System_String_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___SuperOffice_WebApi_RequestOptions_}
 
 Save an array of restrictions for later use as search criteria (including as dynamic selection and Find).
 
@@ -1308,7 +1308,7 @@ Override language/culture codes on this request.
 
 This service call just saves the restrictions. See SaveRestrictionsAndGetCriteriaInformation if you would like the restrictions returned as criteria immediately, in one roundtrip
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_SaveRestrictionsWithContext2Async_System_String_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveRestrictionsWithContext2Async\(string, string, string, string, string, RequestOptions\)
+### SaveRestrictionsWithContext2Async\(string, string, string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_SaveRestrictionsWithContext2Async_System_String_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Save an array of restrictions for later use as search criteria (including as dynamic selection and Find).
 
@@ -1348,7 +1348,7 @@ Override language/culture codes on this request.
 
 This service call just saves the restrictions. See SaveRestrictionsAndGetCriteriaInformation if you would like the restrictions returned as criteria immediately, in one roundtrip
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFindAgent_SaveRestrictionsWithContextAsync_System_String_System_String_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveRestrictionsWithContextAsync\(string, string, string, ArchiveRestrictionInfo\[\], string, RequestOptions\)
+### SaveRestrictionsWithContextAsync\(string, string, string, ArchiveRestrictionInfo\[\], string, RequestOptions\) {#SuperOffice_WebApi_Agents_IFindAgent_SaveRestrictionsWithContextAsync_System_String_System_String_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String_SuperOffice_WebApi_RequestOptions_}
 
 Save an array of restrictions for later use as search criteria (including as dynamic selection and Find).
 

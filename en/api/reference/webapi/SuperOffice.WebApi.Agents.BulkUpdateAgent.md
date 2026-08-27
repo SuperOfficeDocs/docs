@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_BulkUpdateAgent"&gt;&lt;/a&gt; Class BulkUpdateAgent
+# Class BulkUpdateAgent {#SuperOffice_WebApi_Agents_BulkUpdateAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -69,7 +69,7 @@ using (BulkUpdateAgent agent = new BulkUpdateAgent(mySession))
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Agents_BulkUpdateAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; BulkUpdateAgent\(HttpClient\)
+### BulkUpdateAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_BulkUpdateAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: Agent used for bulk update methods
 
@@ -83,7 +83,7 @@ public BulkUpdateAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### &lt;a id="SuperOffice_WebApi_Agents_BulkUpdateAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; BulkUpdateAgent\(WebApiOptions, HttpClient\)
+### BulkUpdateAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_BulkUpdateAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: Agent used for bulk update methods
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_BulkUpdateAgent_ExecuteByEntityIdsAsync_SuperOffice_WebApi_Data_FieldValueInfo___System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ExecuteByEntityIdsAsync\(FieldValueInfo\[\], string, string, string, RequestOptions\)
+### ExecuteByEntityIdsAsync\(FieldValueInfo\[\], string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_BulkUpdateAgent_ExecuteByEntityIdsAsync_SuperOffice_WebApi_Data_FieldValueInfo___System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Do the batchupdate on selected
 
@@ -139,7 +139,7 @@ Override language/culture codes on this request.
 
 Return batchtaskinfoid
 
-### &lt;a id="SuperOffice_WebApi_Agents_BulkUpdateAgent_ExecuteBySelectionIdAsync_SuperOffice_WebApi_Data_FieldValueInfo___System_String_System_String_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ExecuteBySelectionIdAsync\(FieldValueInfo\[\], string, string, int, bool, RequestOptions\)
+### ExecuteBySelectionIdAsync\(FieldValueInfo\[\], string, string, int, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_BulkUpdateAgent_ExecuteBySelectionIdAsync_SuperOffice_WebApi_Data_FieldValueInfo___System_String_System_String_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Do the batchupdate on this selection
 
@@ -179,7 +179,7 @@ Override language/culture codes on this request.
 
 Return batchtaskinfoid
 
-### &lt;a id="SuperOffice_WebApi_Agents_BulkUpdateAgent_GetAvailableFieldsAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAvailableFieldsAsync\(string, RequestOptions\)
+### GetAvailableFieldsAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_BulkUpdateAgent_GetAvailableFieldsAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get all available fields for a given tablename/entity
 
@@ -203,7 +203,7 @@ Override language/culture codes on this request.
 
 Returns array of the available fields for the given entity
 
-### &lt;a id="SuperOffice_WebApi_Agents_BulkUpdateAgent_GetJobResultAsJsonFromBinaryObjectIdAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetJobResultAsJsonFromBinaryObjectIdAsync\(string, int, RequestOptions\)
+### GetJobResultAsJsonFromBinaryObjectIdAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_BulkUpdateAgent_GetJobResultAsJsonFromBinaryObjectIdAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get result of the batchupdate job
 
@@ -231,7 +231,7 @@ Override language/culture codes on this request.
 
 Result of job as json
 
-### &lt;a id="SuperOffice_WebApi_Agents_BulkUpdateAgent_GetJobResultsFromStorageAsJsonAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetJobResultsFromStorageAsJsonAsync\(RequestOptions\)
+### GetJobResultsFromStorageAsJsonAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_BulkUpdateAgent_GetJobResultsFromStorageAsJsonAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get result of the batchupdate job
 
@@ -251,7 +251,7 @@ Override language/culture codes on this request.
 
 Result of job as json
 
-### &lt;a id="SuperOffice_WebApi_Agents_BulkUpdateAgent_GetStoredFieldsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetStoredFieldsAsync\(string, string, RequestOptions\)
+### GetStoredFieldsAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_BulkUpdateAgent_GetStoredFieldsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get all stored fields for a given tablename/entity and context
 
@@ -279,7 +279,7 @@ Override language/culture codes on this request.
 
 Returns array of the stored or default fields for the given entity
 
-### &lt;a id="SuperOffice_WebApi_Agents_BulkUpdateAgent_RemoveStoredFieldsAndGetDefaultFieldsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveStoredFieldsAndGetDefaultFieldsAsync\(string, string, RequestOptions\)
+### RemoveStoredFieldsAndGetDefaultFieldsAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_BulkUpdateAgent_RemoveStoredFieldsAndGetDefaultFieldsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Remove the stored settings of the bulk update for this table from this context, to get the default settings instead
 
@@ -307,7 +307,7 @@ Override language/culture codes on this request.
 
 Returns array of the available fields for the given tablename
 
-### &lt;a id="SuperOffice_WebApi_Agents_BulkUpdateAgent_RemoveStoredFieldsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveStoredFieldsAsync\(string, string, RequestOptions\)
+### RemoveStoredFieldsAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_BulkUpdateAgent_RemoveStoredFieldsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Remove the stored settings of the bulk update for this table from this context
 

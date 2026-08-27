@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_DocumentMigrationAgent"&gt;&lt;/a&gt; Class DocumentMigrationAgent
+# Class DocumentMigrationAgent {#SuperOffice_WebApi_Agents_DocumentMigrationAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -71,7 +71,7 @@ using (DocumentMigrationAgent agent = new DocumentMigrationAgent(mySession))
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Agents_DocumentMigrationAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; DocumentMigrationAgent\(HttpClient\)
+### DocumentMigrationAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_DocumentMigrationAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: Agent used to support migrating documents between different document-plugins, as single documents or batches.
 
@@ -85,7 +85,7 @@ public DocumentMigrationAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### &lt;a id="SuperOffice_WebApi_Agents_DocumentMigrationAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; DocumentMigrationAgent\(WebApiOptions, HttpClient\)
+### DocumentMigrationAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_DocumentMigrationAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: Agent used to support migrating documents between different document-plugins, as single documents or batches.
 
@@ -105,7 +105,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_DocumentMigrationAgent_CreateDefaultDocumentMigrationItemListAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultDocumentMigrationItemListAsync\(RequestOptions\)
+### CreateDefaultDocumentMigrationItemListAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_DocumentMigrationAgent_CreateDefaultDocumentMigrationItemListAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new DocumentMigrationItemList.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -126,7 +126,7 @@ Override language/culture codes on this request.
 
 A blank DocumentMigrationItemList
 
-### &lt;a id="SuperOffice_WebApi_Agents_DocumentMigrationAgent_CreateDefaultDocumentTemplateMigrationListAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultDocumentTemplateMigrationListAsync\(RequestOptions\)
+### CreateDefaultDocumentTemplateMigrationListAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_DocumentMigrationAgent_CreateDefaultDocumentTemplateMigrationListAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new DocumentTemplateMigrationList.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -147,7 +147,7 @@ Override language/culture codes on this request.
 
 A blank DocumentTemplateMigrationList
 
-### &lt;a id="SuperOffice_WebApi_Agents_DocumentMigrationAgent_GetForAllDocumentsAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetForAllDocumentsAsync\(int, bool, RequestOptions\)
+### GetForAllDocumentsAsync\(int, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_DocumentMigrationAgent_GetForAllDocumentsAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Gets a migration summary for all documents stored in CRM. Warning: Expensive!
 &lt;p&gt;&lt;/p&gt;
@@ -177,7 +177,7 @@ Override language/culture codes on this request.
 
 Never null.
 
-### &lt;a id="SuperOffice_WebApi_Agents_DocumentMigrationAgent_GetForDateRangeAsync_System_Int32_System_DateTime_System_DateTime_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetForDateRangeAsync\(int, DateTime, DateTime, bool, RequestOptions\)
+### GetForDateRangeAsync\(int, DateTime, DateTime, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_DocumentMigrationAgent_GetForDateRangeAsync_System_Int32_System_DateTime_System_DateTime_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Gets a migration summary for documents in the provided date-rage
 &lt;p&gt;&lt;/p&gt;
@@ -215,7 +215,7 @@ Override language/culture codes on this request.
 
 Never null.
 
-### &lt;a id="SuperOffice_WebApi_Agents_DocumentMigrationAgent_GetForSelectionAsync_System_Int32_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetForSelectionAsync\(int, int, bool, RequestOptions\)
+### GetForSelectionAsync\(int, int, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_DocumentMigrationAgent_GetForSelectionAsync_System_Int32_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Gets a migration summary for documents in the provided selection
 &lt;p&gt;&lt;/p&gt;
@@ -249,7 +249,7 @@ Override language/culture codes on this request.
 
 Never null.
 
-### &lt;a id="SuperOffice_WebApi_Agents_DocumentMigrationAgent_GetForTemplatesAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetForTemplatesAsync\(int, bool, RequestOptions\)
+### GetForTemplatesAsync\(int, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_DocumentMigrationAgent_GetForTemplatesAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Gets a migration summary for all templates stored in CRM.
 &lt;p&gt;&lt;/p&gt;
@@ -279,7 +279,7 @@ Override language/culture codes on this request.
 
 Never null.
 
-### &lt;a id="SuperOffice_WebApi_Agents_DocumentMigrationAgent_GetNumberOfConfidentialDocumentsAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetNumberOfConfidentialDocumentsAsync\(RequestOptions\)
+### GetNumberOfConfidentialDocumentsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_DocumentMigrationAgent_GetNumberOfConfidentialDocumentsAsync_SuperOffice_WebApi_RequestOptions_}
 
 Gets the total number of documents that is not visible to everyone
 &lt;p&gt;&lt;/p&gt;
@@ -301,7 +301,7 @@ Override language/culture codes on this request.
 
 Number of confidential documents.
 
-### &lt;a id="SuperOffice_WebApi_Agents_DocumentMigrationAgent_HasDocumentsToMigrateAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; HasDocumentsToMigrateAsync\(RequestOptions\)
+### HasDocumentsToMigrateAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_DocumentMigrationAgent_HasDocumentsToMigrateAsync_SuperOffice_WebApi_RequestOptions_}
 
 Checks if there are any documents in the current database stored using a non-default document-plugin, and which can be migrated.
 &lt;p&gt;&lt;/p&gt;
@@ -323,7 +323,7 @@ Override language/culture codes on this request.
 
 True if there are documents available to migrate.
 
-### &lt;a id="SuperOffice_WebApi_Agents_DocumentMigrationAgent_MigrateDocumentToNewDocPluginAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; MigrateDocumentToNewDocPluginAsync\(int, int, RequestOptions\)
+### MigrateDocumentToNewDocPluginAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_DocumentMigrationAgent_MigrateDocumentToNewDocPluginAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Migrates the document with the provided id to the specified document-plugin.
 &lt;p&gt;&lt;/p&gt;
@@ -353,7 +353,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_DocumentMigrationAgent_MigrateTemplateToNewDocPluginAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; MigrateTemplateToNewDocPluginAsync\(int, int, RequestOptions\)
+### MigrateTemplateToNewDocPluginAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_DocumentMigrationAgent_MigrateTemplateToNewDocPluginAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Migrates the template with the provided id to the specified document-plugin.
 &lt;p&gt;&lt;/p&gt;

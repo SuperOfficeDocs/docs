@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Authorization_AuthorizationTicket"&gt;&lt;/a&gt; Class AuthorizationTicket
+# Class AuthorizationTicket {#SuperOffice_WebApi_Authorization_AuthorizationTicket}
 
 Namespace: [SuperOffice.WebApi.Authorization](SuperOffice.WebApi.Authorization.md)  
 Assembly: SuperOffice.WebApi.Authorization.dll  
@@ -30,7 +30,7 @@ public class AuthorizationTicket : IAuthorization
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Authorization_AuthorizationTicket__ctor_System_String_"&gt;&lt;/a&gt; AuthorizationTicket\(string\)
+### AuthorizationTicket\(string\) {#SuperOffice_WebApi_Authorization_AuthorizationTicket__ctor_System_String_}
 
 Ticket Authorization constructor used in CRM onsite scenario's.
 
@@ -46,7 +46,7 @@ SOTicket string: "7T:abc123=="
 
 ## Properties
 
-### &lt;a id="SuperOffice_WebApi_Authorization_AuthorizationTicket_RefreshAuthorizationAsync"&gt;&lt;/a&gt; RefreshAuthorizationAsync
+### RefreshAuthorizationAsync {#SuperOffice_WebApi_Authorization_AuthorizationTicket_RefreshAuthorizationAsync}
 
 Try to refresh this &lt;xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instance.
 
@@ -58,7 +58,7 @@ public Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync
 
  [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)&lt;[ReAuthorizationArgs](SuperOffice.WebApi.Authorization.ReAuthorizationArgs.md), [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[IAuthorization](SuperOffice.WebApi.Authorization.IAuthorization.md)\&gt;\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Authorization_AuthorizationTicket_Ticket"&gt;&lt;/a&gt; Ticket
+### Ticket {#SuperOffice_WebApi_Authorization_AuthorizationTicket_Ticket}
 
 The SOTicket value.
 
@@ -72,7 +72,7 @@ protected string Ticket { get; set; }
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Authorization_AuthorizationTicket_GetAuthorization"&gt;&lt;/a&gt; GetAuthorization\(\)
+### GetAuthorization\(\) {#SuperOffice_WebApi_Authorization_AuthorizationTicket_GetAuthorization}
 
 Gets a tuple that represents authorization scheme and parameter for an SOTicket.
 

@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_INumberAllocationAgent"&gt;&lt;/a&gt; Interface INumberAllocationAgent
+# Interface INumberAllocationAgent {#SuperOffice_WebApi_Agents_INumberAllocationAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface INumberAllocationAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_INumberAllocationAgent_CreateDefaultRefCountEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultRefCountEntityAsync\(RequestOptions\)
+### CreateDefaultRefCountEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_INumberAllocationAgent_CreateDefaultRefCountEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new RefCountEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -37,7 +37,7 @@ Override language/culture codes on this request.
 
 A blank RefCountEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_INumberAllocationAgent_DeleteRefCountEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteRefCountEntityAsync\(int, RequestOptions\)
+### DeleteRefCountEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_INumberAllocationAgent_DeleteRefCountEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the RefCountEntity
 
@@ -59,7 +59,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_INumberAllocationAgent_GetNumberEachTemplateAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetNumberEachTemplateAsync\(RequestOptions\)
+### GetNumberEachTemplateAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_INumberAllocationAgent_GetNumberEachTemplateAsync_SuperOffice_WebApi_RequestOptions_}
 
 Returns true or false if Automatically create new counters for new document templates
 
@@ -79,7 +79,7 @@ Override language/culture codes on this request.
 
 Is NumberEachTemplate?
 
-### &lt;a id="SuperOffice_WebApi_Agents_INumberAllocationAgent_GetRefCountEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetRefCountEntityAsync\(int, RequestOptions\)
+### GetRefCountEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_INumberAllocationAgent_GetRefCountEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific RefCountEntity object.
 
@@ -103,7 +103,7 @@ Override language/culture codes on this request.
 
 RefCountEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_INumberAllocationAgent_SaveDefaultNumberingAsync_SuperOffice_WebApi_Data_RefCountEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveDefaultNumberingAsync\(RefCountEntity, RequestOptions\)
+### SaveDefaultNumberingAsync\(RefCountEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_INumberAllocationAgent_SaveDefaultNumberingAsync_SuperOffice_WebApi_Data_RefCountEntity_SuperOffice_WebApi_RequestOptions_}
 
 Saves default numbering values in preferences
 
@@ -127,7 +127,7 @@ Override language/culture codes on this request.
 
 void
 
-### &lt;a id="SuperOffice_WebApi_Agents_INumberAllocationAgent_SaveRefCountEntityAsync_SuperOffice_WebApi_Data_RefCountEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveRefCountEntityAsync\(RefCountEntity, RequestOptions\)
+### SaveRefCountEntityAsync\(RefCountEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_INumberAllocationAgent_SaveRefCountEntityAsync_SuperOffice_WebApi_Data_RefCountEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing RefCountEntity or creates a new RefCountEntity if the id parameter is 0.
 
@@ -151,7 +151,7 @@ Override language/culture codes on this request.
 
 New or updated RefCountEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_INumberAllocationAgent_SetNumberEachTemplateAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetNumberEachTemplateAsync\(bool, RequestOptions\)
+### SetNumberEachTemplateAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_INumberAllocationAgent_SetNumberEachTemplateAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Saves true or false if Automatically create new counters for new document templates
 

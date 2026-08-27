@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_UserAgent"&gt;&lt;/a&gt; Class UserAgent
+# Class UserAgent {#SuperOffice_WebApi_Agents_UserAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -71,7 +71,7 @@ using (UserAgent agent = new UserAgent(mySession))
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; UserAgent\(HttpClient\)
+### UserAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_UserAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: User administration
 
@@ -85,7 +85,7 @@ public UserAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; UserAgent\(WebApiOptions, HttpClient\)
+### UserAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_UserAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: User administration
 
@@ -105,7 +105,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_AddOwnerContactAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddOwnerContactAsync\(int, RequestOptions\)
+### AddOwnerContactAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_AddOwnerContactAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
@@ -128,7 +128,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_CanChangePasswordAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CanChangePasswordAsync\(int, RequestOptions\)
+### CanChangePasswordAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_CanChangePasswordAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Check if the current assoicate can change the password for an associate
 &lt;p&gt;&lt;/p&gt;
@@ -154,7 +154,7 @@ Override language/culture codes on this request.
 
 True if the associate can change the password
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_ChangeOwnPasswordAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ChangeOwnPasswordAsync\(string, string, RequestOptions\)
+### ChangeOwnPasswordAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_ChangeOwnPasswordAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Change password for a user.
 &lt;p&gt;&lt;/p&gt;
@@ -184,7 +184,7 @@ Override language/culture codes on this request.
 
 True if the password was successfully changed.
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_ChangePasswordAsync_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ChangePasswordAsync\(int, string, string, RequestOptions\)
+### ChangePasswordAsync\(int, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_ChangePasswordAsync_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Change password for a user.
 &lt;p&gt;&lt;/p&gt;
@@ -218,7 +218,7 @@ Override language/culture codes on this request.
 
 True if the password was successfully changed.
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_ChangePasswordFromNameAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ChangePasswordFromNameAsync\(string, string, string, RequestOptions\)
+### ChangePasswordFromNameAsync\(string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_ChangePasswordFromNameAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Change password for a user.
 &lt;p&gt;&lt;/p&gt;
@@ -252,7 +252,7 @@ Override language/culture codes on this request.
 
 True if the password was successfully changed.
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_ChangeUserTypeAsync_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_Data_UserType_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ChangeUserTypeAsync\(User, UserType, RequestOptions\)
+### ChangeUserTypeAsync\(User, UserType, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_ChangeUserTypeAsync_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_Data_UserType_SuperOffice_WebApi_RequestOptions_}
 
 Get a user from the user name.
 &lt;p&gt;&lt;/p&gt;
@@ -280,7 +280,7 @@ Override language/culture codes on this request.
 
 User retrieved by name
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_CheckAccessGatewayRegistrationAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CheckAccessGatewayRegistrationAsync\(RequestOptions\)
+### CheckAccessGatewayRegistrationAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_CheckAccessGatewayRegistrationAsync_SuperOffice_WebApi_RequestOptions_}
 
 Checks if AccessGatewayRegistration is valid
 &lt;p&gt;&lt;/p&gt;
@@ -302,7 +302,7 @@ Override language/culture codes on this request.
 
 True if the registration is usable
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_CreateDefaultRoleEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultRoleEntityAsync\(RequestOptions\)
+### CreateDefaultRoleEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_CreateDefaultRoleEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new RoleEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -323,7 +323,7 @@ Override language/culture codes on this request.
 
 A blank RoleEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_CreateDefaultRoleEntityFromTypeAsync_SuperOffice_WebApi_Data_RoleType_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultRoleEntityFromTypeAsync\(RoleType, RequestOptions\)
+### CreateDefaultRoleEntityFromTypeAsync\(RoleType, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_CreateDefaultRoleEntityFromTypeAsync_SuperOffice_WebApi_Data_RoleType_SuperOffice_WebApi_RequestOptions_}
 
 Create a new role entity of the specified role type. The role type cannot be changed after the entity is created.
 &lt;p&gt;&lt;/p&gt;
@@ -349,7 +349,7 @@ Override language/culture codes on this request.
 
 A blank role.
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_CreateDefaultServiceAuthAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultServiceAuthAsync\(RequestOptions\)
+### CreateDefaultServiceAuthAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_CreateDefaultServiceAuthAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new ServiceAuth.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -370,7 +370,7 @@ Override language/culture codes on this request.
 
 A blank ServiceAuth
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_CreateDefaultUntrustedCredentialsAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultUntrustedCredentialsAsync\(RequestOptions\)
+### CreateDefaultUntrustedCredentialsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_CreateDefaultUntrustedCredentialsAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new UntrustedCredentials.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -391,7 +391,7 @@ Override language/culture codes on this request.
 
 A blank UntrustedCredentials
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_CreateDefaultUserAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultUserAsync\(RequestOptions\)
+### CreateDefaultUserAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_CreateDefaultUserAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new User.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -412,7 +412,7 @@ Override language/culture codes on this request.
 
 A blank User
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_CreateDefaultUserFromUserTypeAndCredentialAsync_SuperOffice_WebApi_Data_UserType_System_Int32_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultUserFromUserTypeAndCredentialAsync\(UserType, int, string, string, string, RequestOptions\)
+### CreateDefaultUserFromUserTypeAndCredentialAsync\(UserType, int, string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_CreateDefaultUserFromUserTypeAndCredentialAsync_SuperOffice_WebApi_Data_UserType_System_Int32_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Creates a PersonEntity with default values based on the contactId and credentials.
 &lt;p&gt;&lt;/p&gt;
@@ -452,7 +452,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[User](SuperOffice.WebApi.Data.User.md)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_CreateDefaultUserFromUserTypeAndPersonIdAsync_SuperOffice_WebApi_Data_UserType_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultUserFromUserTypeAndPersonIdAsync\(UserType, int, RequestOptions\)
+### CreateDefaultUserFromUserTypeAndPersonIdAsync\(UserType, int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_CreateDefaultUserFromUserTypeAndPersonIdAsync_SuperOffice_WebApi_Data_UserType_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Create default User providing the associate type and person id.  System and Anonymous users can be created without an exsisting person and permits person id to be 0.
 &lt;p&gt;&lt;/p&gt;
@@ -482,7 +482,7 @@ Override language/culture codes on this request.
 
 New user object with defalt values set.
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_CreateDefaultUserFromUserTypeAsync_SuperOffice_WebApi_Data_UserType_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultUserFromUserTypeAsync\(UserType, RequestOptions\)
+### CreateDefaultUserFromUserTypeAsync\(UserType, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_CreateDefaultUserFromUserTypeAsync_SuperOffice_WebApi_Data_UserType_SuperOffice_WebApi_RequestOptions_}
 
 Create default User providing the user type.  Only System and Anonymous users can be created without an exsisting person.  Use CreateDefaultUserFromUserTypeAndPersonId to create internal (i.e. Employee) or external users.
 &lt;p&gt;&lt;/p&gt;
@@ -508,7 +508,7 @@ Override language/culture codes on this request.
 
 New user object with defalt values set.
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_CreateExternalUserAsync_System_Int32_System_String_System_String_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateExternalUserAsync\(int, string, string, int, bool, RequestOptions\)
+### CreateExternalUserAsync\(int, string, string, int, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_CreateExternalUserAsync_System_Int32_System_String_System_String_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Creates an associate of type external user.
 &lt;p&gt;&lt;/p&gt;
@@ -550,7 +550,7 @@ Override language/culture codes on this request.
 
 Returns the created associateId.
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_CreateUserGroupAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateUserGroupAsync\(RequestOptions\)
+### CreateUserGroupAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_CreateUserGroupAsync_SuperOffice_WebApi_RequestOptions_}
 
 Create UserGroup (Rank is assigned to the highest rank)
 &lt;p&gt;&lt;/p&gt;
@@ -570,7 +570,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserGroup](SuperOffice.WebApi.Data.UserGroup.md)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_DecryptAndSaveExternalTokensAsync_SuperOffice_WebApi_Data_TokenManagementInfo_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DecryptAndSaveExternalTokensAsync\(TokenManagementInfo, RequestOptions\)
+### DecryptAndSaveExternalTokensAsync\(TokenManagementInfo, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_DecryptAndSaveExternalTokensAsync_SuperOffice_WebApi_Data_TokenManagementInfo_SuperOffice_WebApi_RequestOptions_}
 
 First asks AccessGateway to decrypt the tokens, then saves the external tokens to the DB and returns a key that can be used to retrieve them
 &lt;p&gt;&lt;/p&gt;
@@ -596,7 +596,7 @@ Override language/culture codes on this request.
 
 Key that can be used to retrieve the tokens
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_DeleteCredentialAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteCredentialAsync\(int, string, RequestOptions\)
+### DeleteCredentialAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_DeleteCredentialAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Remove credential of a specific type for a user
 &lt;p&gt;&lt;/p&gt;
@@ -626,7 +626,7 @@ Override language/culture codes on this request.
 
 True if credential was sucessfully removed.
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_DeleteExternalUserAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteExternalUserAsync\(int, RequestOptions\)
+### DeleteExternalUserAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_DeleteExternalUserAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes an associate of type external user.
 &lt;p&gt;&lt;/p&gt;
@@ -650,7 +650,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_DeleteRoleAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteRoleAsync\(int, int, RequestOptions\)
+### DeleteRoleAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_DeleteRoleAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Delete the specified role and move all users associated with the role to the replacingRoleId
 &lt;p&gt;&lt;/p&gt;
@@ -678,7 +678,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_DeleteServiceAuthAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteServiceAuthAsync\(int, RequestOptions\)
+### DeleteServiceAuthAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_DeleteServiceAuthAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the ServiceAuth
 &lt;p&gt;&lt;/p&gt;
@@ -702,7 +702,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_DeleteUserAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteUserAsync\(int, RequestOptions\)
+### DeleteUserAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_DeleteUserAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the User
 &lt;p&gt;&lt;/p&gt;
@@ -726,7 +726,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_DeleteUserFromNameAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteUserFromNameAsync\(string, RequestOptions\)
+### DeleteUserFromNameAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_DeleteUserFromNameAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Delete a user, with lookup based on the user name.
 &lt;p&gt;&lt;/p&gt;
@@ -752,7 +752,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_DeleteUserGroupAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteUserGroupAsync\(int, int, RequestOptions\)
+### DeleteUserGroupAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_DeleteUserGroupAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Delete a usergroup and move its members to another usergroup
 &lt;p&gt;&lt;/p&gt;
@@ -780,7 +780,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_ExchangeCodeAndSaveTokensAsync_System_String_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ExchangeCodeAndSaveTokensAsync\(string, string, string, string, string, RequestOptions\)
+### ExchangeCodeAndSaveTokensAsync\(string, string, string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_ExchangeCodeAndSaveTokensAsync_System_String_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Exchanges an authorization code for tokens.
 &lt;p&gt;&lt;/p&gt;
@@ -822,7 +822,7 @@ Override language/culture codes on this request.
 
 Reference to the key for the tokens in the database, and extracted claims.
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_ExecuteUserCommandAsync_System_String_SuperOffice_WebApi_Data_CommandActionResult_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ExecuteUserCommandAsync\(string, CommandActionResult, User, RequestOptions\)
+### ExecuteUserCommandAsync\(string, CommandActionResult, User, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_ExecuteUserCommandAsync_System_String_SuperOffice_WebApi_Data_CommandActionResult_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_}
 
 Executes the custom command for User
 &lt;p&gt;&lt;/p&gt;
@@ -856,7 +856,7 @@ Override language/culture codes on this request.
 
 Result of the executed command
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_FindCredentialUsersAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; FindCredentialUsersAsync\(string, string, RequestOptions\)
+### FindCredentialUsersAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_FindCredentialUsersAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Find users matching the partial name.
 &lt;p&gt;&lt;/p&gt;
@@ -884,7 +884,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CredentialsGroupUsers](SuperOffice.WebApi.Data.CredentialsGroupUsers.md)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_FindCredentialsGroupsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; FindCredentialsGroupsAsync\(string, string, RequestOptions\)
+### FindCredentialsGroupsAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_FindCredentialsGroupsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get user groups holding users filtered by the searchString.  This method is only relevant if the CredentialType control is of type link.  There will allways be at least one groups even if the underlying provider does not support groups.
 &lt;p&gt;&lt;/p&gt;
@@ -912,7 +912,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CredentialsGroup](SuperOffice.WebApi.Data.CredentialsGroup.md)\[\]\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_FindRolesWithFunctionalRightAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; FindRolesWithFunctionalRightAsync\(string, RequestOptions\)
+### FindRolesWithFunctionalRightAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_FindRolesWithFunctionalRightAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Find all roles with a given functional right. The roles matched must contain the specified functional right. 
 &lt;p&gt;&lt;/p&gt;
@@ -938,7 +938,7 @@ Override language/culture codes on this request.
 
 Roles that contains the given functional right
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_FindRolesWithFunctionalRightsAsync_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; FindRolesWithFunctionalRightsAsync\(string\[\], RequestOptions\)
+### FindRolesWithFunctionalRightsAsync\(string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_FindRolesWithFunctionalRightsAsync_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Find all roles with a given set of functional rights. The roles matched must contain one or more of the specified functional rights. 
 &lt;p&gt;&lt;/p&gt;
@@ -964,7 +964,7 @@ Override language/culture codes on this request.
 
 Role ids that contains your functional rights
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_FindRolesWithoutFunctionalRightsAsync_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; FindRolesWithoutFunctionalRightsAsync\(string\[\], RequestOptions\)
+### FindRolesWithoutFunctionalRightsAsync\(string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_FindRolesWithoutFunctionalRightsAsync_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Find all roles without a given set of functional rights. The roles matched must not contain any of the specified functional rights. 
 &lt;p&gt;&lt;/p&gt;
@@ -990,7 +990,7 @@ Override language/culture codes on this request.
 
 Role ids that without your functional rights
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GenerateNewPasswordForExternalUserAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GenerateNewPasswordForExternalUserAsync\(string, RequestOptions\)
+### GenerateNewPasswordForExternalUserAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GenerateNewPasswordForExternalUserAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Generates a new password for an external user.
 &lt;p&gt;&lt;/p&gt;
@@ -1016,7 +1016,7 @@ Override language/culture codes on this request.
 
 Returns the generated password.
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetAccessGatewayInfoAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAccessGatewayInfoAsync\(RequestOptions\)
+### GetAccessGatewayInfoAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetAccessGatewayInfoAsync_SuperOffice_WebApi_RequestOptions_}
 
 Returns accessgateway registration info
 &lt;p&gt;&lt;/p&gt;
@@ -1036,7 +1036,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AccessGatewayInfo](SuperOffice.WebApi.Data.AccessGatewayInfo.md)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetAccessTokenAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAccessTokenAsync\(string, bool, RequestOptions\)
+### GetAccessTokenAsync\(string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetAccessTokenAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Get an access token based on the current user's session.
 &lt;p&gt;&lt;/p&gt;
@@ -1066,7 +1066,7 @@ Override language/culture codes on this request.
 
 An access token. "8A:xyz123=="
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetAllDataRightsAsync_System_Int32_SuperOffice_WebApi_Data_RoleRelationToOwner_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAllDataRightsAsync\(int, RoleRelationToOwner, RequestOptions\)
+### GetAllDataRightsAsync\(int, RoleRelationToOwner, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetAllDataRightsAsync_System_Int32_SuperOffice_WebApi_Data_RoleRelationToOwner_SuperOffice_WebApi_RequestOptions_}
 
 Get a list of all data rights for the given role, filtered by relation to owner. MDO List name = 'DataRights', extra='roleType=0'.
 &lt;p&gt;&lt;/p&gt;
@@ -1096,7 +1096,7 @@ Override language/culture codes on this request.
 
 The CRUD rights (C, CR, CRU, or CRUD) for each table related to the given role and relation to owner.
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetAllFunctionalRightsAsync_SuperOffice_WebApi_Data_RoleType_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAllFunctionalRightsAsync\(RoleType, RequestOptions\)
+### GetAllFunctionalRightsAsync\(RoleType, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetAllFunctionalRightsAsync_SuperOffice_WebApi_Data_RoleType_SuperOffice_WebApi_RequestOptions_}
 
 Get a list of all functional rights for the given type of role. MDO List name = 'FunctionRights', extra='roleType=0' 
 &lt;p&gt;&lt;/p&gt;
@@ -1122,7 +1122,7 @@ Override language/culture codes on this request.
 
 FunctionRight items with name and description. Code name for function right is in the extra-info property.
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetAllRolesAsync_SuperOffice_WebApi_Data_RoleType_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAllRolesAsync\(RoleType, RequestOptions\)
+### GetAllRolesAsync\(RoleType, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetAllRolesAsync_SuperOffice_WebApi_Data_RoleType_SuperOffice_WebApi_RequestOptions_}
 
 Get a list of all roles for the given type of role. MDO List name = 'Roles', extra='0' (roleType) 
 &lt;p&gt;&lt;/p&gt;
@@ -1148,7 +1148,7 @@ Override language/culture codes on this request.
 
 FunctionRight items with name and description. Code name for function right is in the extra-info property.
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetAllUserGroupsAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAllUserGroupsAsync\(bool, RequestOptions\)
+### GetAllUserGroupsAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetAllUserGroupsAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Get all user groups
 &lt;p&gt;&lt;/p&gt;
@@ -1174,7 +1174,7 @@ Override language/culture codes on this request.
 
 All user groups
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetCredentialTypesAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCredentialTypesAsync\(RequestOptions\)
+### GetCredentialTypesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetCredentialTypesAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get available credential types that can be used for authentication
 &lt;p&gt;&lt;/p&gt;
@@ -1196,7 +1196,7 @@ Override language/culture codes on this request.
 
 Credential types that can be used for authentication
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetCredentialTypesForUserTypeAsync_SuperOffice_WebApi_Data_UserType_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCredentialTypesForUserTypeAsync\(UserType, RequestOptions\)
+### GetCredentialTypesForUserTypeAsync\(UserType, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetCredentialTypesForUserTypeAsync_SuperOffice_WebApi_Data_UserType_SuperOffice_WebApi_RequestOptions_}
 
 Get available credential types that can be used for the specified user type.
 &lt;p&gt;&lt;/p&gt;
@@ -1222,7 +1222,7 @@ Override language/culture codes on this request.
 
 Credential types that can be used for authentication
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetCredentialUsersInGroupAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCredentialUsersInGroupAsync\(string, string, RequestOptions\)
+### GetCredentialUsersInGroupAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetCredentialUsersInGroupAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get credential users within a user group
 &lt;p&gt;&lt;/p&gt;
@@ -1250,7 +1250,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CredentialsGroupUsers](SuperOffice.WebApi.Data.CredentialsGroupUsers.md)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetCurrentPrincipal_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCurrentPrincipal\(RequestOptions\)
+### GetCurrentPrincipal\(RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetCurrentPrincipal_SuperOffice_WebApi_RequestOptions_}
 
 Get information about the currently logged in user in the form of a SoPrincipalCarrier
 
@@ -1266,7 +1266,7 @@ public Task<SoPrincipalCarrier> GetCurrentPrincipal(RequestOptions requestOption
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SoPrincipalCarrier](SuperOffice.WebApi.Data.SoPrincipalCarrier.md)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetCurrentToken_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCurrentToken\(RequestOptions\)
+### GetCurrentToken\(RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetCurrentToken_SuperOffice_WebApi_RequestOptions_}
 
 Get the current token for the currently logged in user
 
@@ -1282,7 +1282,7 @@ public Task<string> GetCurrentToken(RequestOptions requestOptions = null)
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetDataRightAsync_System_Int32_System_String_SuperOffice_WebApi_Data_RoleRelationToOwner_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDataRightAsync\(int, string, RoleRelationToOwner, RequestOptions\)
+### GetDataRightAsync\(int, string, RoleRelationToOwner, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetDataRightAsync_System_Int32_System_String_SuperOffice_WebApi_Data_RoleRelationToOwner_SuperOffice_WebApi_RequestOptions_}
 
 Read one specific data right at the given position. An exception will be thrown if non existing position is specified.
 &lt;p&gt;&lt;/p&gt;
@@ -1316,7 +1316,7 @@ Override language/culture codes on this request.
 
 The data right value at the specified position (C, CR, CRU, or CRUD)
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetDataRightsAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDataRightsAsync\(int, string, RequestOptions\)
+### GetDataRightsAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetDataRightsAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Read specific a set of data rights at the given row in the rights matrix. An exception will be thrown if non existing position is specified.
 &lt;p&gt;&lt;/p&gt;
@@ -1346,7 +1346,7 @@ Override language/culture codes on this request.
 
 The data right values for all the defined relationships (C, CR, CRU, or CRUD)
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetDefaultAssociateUserNameAsync_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDefaultAssociateUserNameAsync\(User, RequestOptions\)
+### GetDefaultAssociateUserNameAsync\(User, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetDefaultAssociateUserNameAsync_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_}
 
 Get the default username for a person
 &lt;p&gt;&lt;/p&gt;
@@ -1368,7 +1368,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetExternalTokensAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetExternalTokensAsync\(string, RequestOptions\)
+### GetExternalTokensAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetExternalTokensAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Retrieve the tokens from the DB based on the given key
 &lt;p&gt;&lt;/p&gt;
@@ -1394,7 +1394,7 @@ Override language/culture codes on this request.
 
 Key to retrieve tokens
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetFunctionalRightsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetFunctionalRightsAsync\(int, RequestOptions\)
+### GetFunctionalRightsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetFunctionalRightsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get all functional rights for the given role. Functional rights not set on the role are not included. MDO List name = 'FunctionRights', extra='role=123'
 &lt;p&gt;&lt;/p&gt;
@@ -1420,7 +1420,7 @@ Override language/culture codes on this request.
 
 FunctionRight items with name and description. Code name for function right is in the extra-info property.
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetOrRegisterAccessGatewayInfoAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetOrRegisterAccessGatewayInfoAsync\(string, RequestOptions\)
+### GetOrRegisterAccessGatewayInfoAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetOrRegisterAccessGatewayInfoAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns accessgateway registration info and registers a new or adds the url if necessary
 &lt;p&gt;&lt;/p&gt;
@@ -1444,7 +1444,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AccessGatewayInfo](SuperOffice.WebApi.Data.AccessGatewayInfo.md)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetRoleAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetRoleAsync\(int, RequestOptions\)
+### GetRoleAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetRoleAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific Role object.
 &lt;p&gt;&lt;/p&gt;
@@ -1470,7 +1470,7 @@ Override language/culture codes on this request.
 
 Role
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetRoleEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetRoleEntityAsync\(int, RequestOptions\)
+### GetRoleEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetRoleEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific RoleEntity object.
 &lt;p&gt;&lt;/p&gt;
@@ -1496,7 +1496,7 @@ Override language/culture codes on this request.
 
 RoleEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetServiceAuthAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetServiceAuthAsync\(int, RequestOptions\)
+### GetServiceAuthAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetServiceAuthAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific ServiceAuth object.
 &lt;p&gt;&lt;/p&gt;
@@ -1522,7 +1522,7 @@ Override language/culture codes on this request.
 
 ServiceAuth
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetSupportedChangePasswordTypesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSupportedChangePasswordTypesAsync\(int, RequestOptions\)
+### GetSupportedChangePasswordTypesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetSupportedChangePasswordTypesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get the different methods the user can use to change password
 &lt;p&gt;&lt;/p&gt;
@@ -1548,7 +1548,7 @@ Override language/culture codes on this request.
 
 List of types - empty if the user cannot change password in any way
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetUntrustedCredentialsAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetUntrustedCredentialsAsync\(string, RequestOptions\)
+### GetUntrustedCredentialsAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetUntrustedCredentialsAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get a set of credentials of a specified type for authenticated user.
 &lt;p&gt;&lt;/p&gt;
@@ -1574,7 +1574,7 @@ Override language/culture codes on this request.
 
 Array of credentials of the specified type.
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetUntrustedCredentialsForAssociateAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetUntrustedCredentialsForAssociateAsync\(int, string, RequestOptions\)
+### GetUntrustedCredentialsForAssociateAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetUntrustedCredentialsForAssociateAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get a set of credentials of a specified type for a specified user. SecretValue is only populated for authenticated user, and system users.
 &lt;p&gt;&lt;/p&gt;
@@ -1604,7 +1604,7 @@ Override language/culture codes on this request.
 
 Array of credentials of the specified type.
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetUserAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetUserAsync\(int, RequestOptions\)
+### GetUserAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetUserAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific User object.
 &lt;p&gt;&lt;/p&gt;
@@ -1630,7 +1630,7 @@ Override language/culture codes on this request.
 
 User
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetUserCommandsAsync_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetUserCommandsAsync\(User, RequestOptions\)
+### GetUserCommandsAsync\(User, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetUserCommandsAsync_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_}
 
 Get registered custom commands for User
 &lt;p&gt;&lt;/p&gt;
@@ -1656,7 +1656,7 @@ Override language/culture codes on this request.
 
 Custom commands for the User
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetUserFromEjUserIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetUserFromEjUserIdAsync\(int, RequestOptions\)
+### GetUserFromEjUserIdAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetUserFromEjUserIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get user from ejUserId - used for eJournal Legacy Support.
 &lt;p&gt;&lt;/p&gt;
@@ -1680,7 +1680,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[User](SuperOffice.WebApi.Data.User.md)\[\]\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetUserFromNameAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetUserFromNameAsync\(string, RequestOptions\)
+### GetUserFromNameAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetUserFromNameAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get a user, with lookup based on user name.
 &lt;p&gt;&lt;/p&gt;
@@ -1706,7 +1706,7 @@ Override language/culture codes on this request.
 
 User retrieved by name
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetUserFromPersonIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetUserFromPersonIdAsync\(int, RequestOptions\)
+### GetUserFromPersonIdAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetUserFromPersonIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns the user associated with the supplied person id
 &lt;p&gt;&lt;/p&gt;
@@ -1728,7 +1728,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[User](SuperOffice.WebApi.Data.User.md)\[\]\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetUserGroupAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetUserGroupAsync\(int, RequestOptions\)
+### GetUserGroupAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetUserGroupAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific UserGroup object.
 &lt;p&gt;&lt;/p&gt;
@@ -1754,7 +1754,7 @@ Override language/culture codes on this request.
 
 UserGroup
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetUserGroupListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetUserGroupListAsync\(int\[\], RequestOptions\)
+### GetUserGroupListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetUserGroupListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Gets an array of specific UserGroup objects.
 &lt;p&gt;&lt;/p&gt;
@@ -1780,7 +1780,7 @@ Override language/culture codes on this request.
 
 Array of UserGroup objects
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetUserInfoAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetUserInfoAsync\(int, RequestOptions\)
+### GetUserInfoAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetUserInfoAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific UserInfo object.
 &lt;p&gt;&lt;/p&gt;
@@ -1806,7 +1806,7 @@ Override language/culture codes on this request.
 
 UserInfo
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetUserInfoListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetUserInfoListAsync\(int\[\], RequestOptions\)
+### GetUserInfoListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetUserInfoListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Gets an array of specific UserInfo objects.
 &lt;p&gt;&lt;/p&gt;
@@ -1832,7 +1832,7 @@ Override language/culture codes on this request.
 
 Array of UserInfo objects
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetUserPresenceStatusAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetUserPresenceStatusAsync\(int, RequestOptions\)
+### GetUserPresenceStatusAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetUserPresenceStatusAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get user presence status
 &lt;p&gt;&lt;/p&gt;
@@ -1858,7 +1858,7 @@ Override language/culture codes on this request.
 
 User presence status
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetValidUserNameAsync_System_Int32_SuperOffice_WebApi_Data_UserType_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetValidUserNameAsync\(int, UserType, int, string, RequestOptions\)
+### GetValidUserNameAsync\(int, UserType, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetValidUserNameAsync_System_Int32_SuperOffice_WebApi_Data_UserType_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
@@ -1885,7 +1885,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_GetValidUserNameForNewUserAsync_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetValidUserNameForNewUserAsync\(User, RequestOptions\)
+### GetValidUserNameForNewUserAsync\(User, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_GetValidUserNameForNewUserAsync_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_}
 
 Generates a valid username for an unsaved user
 &lt;p&gt;&lt;/p&gt;
@@ -1907,7 +1907,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_IsNickNameUniqueAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; IsNickNameUniqueAsync\(int, string, RequestOptions\)
+### IsNickNameUniqueAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_IsNickNameUniqueAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
@@ -1930,7 +1930,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_IsPasswordValidAsync_System_Int32_SuperOffice_WebApi_Data_UserType_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; IsPasswordValidAsync\(int, UserType, int, string, RequestOptions\)
+### IsPasswordValidAsync\(int, UserType, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_IsPasswordValidAsync_System_Int32_SuperOffice_WebApi_Data_UserType_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
@@ -1957,7 +1957,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_IsPasswordValidWithReasonAsync_System_Int32_SuperOffice_WebApi_Data_UserType_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; IsPasswordValidWithReasonAsync\(int, UserType, int, string, RequestOptions\)
+### IsPasswordValidWithReasonAsync\(int, UserType, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_IsPasswordValidWithReasonAsync_System_Int32_SuperOffice_WebApi_Data_UserType_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
@@ -1984,7 +1984,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserValidationResult](SuperOffice.WebApi.Data.UserValidationResult.md)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_IsUserNameValidAsync_System_Int32_SuperOffice_WebApi_Data_UserType_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; IsUserNameValidAsync\(int, UserType, int, string, RequestOptions\)
+### IsUserNameValidAsync\(int, UserType, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_IsUserNameValidAsync_System_Int32_SuperOffice_WebApi_Data_UserType_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
@@ -2011,7 +2011,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_IsUserNameValidWithReasonAsync_System_Int32_SuperOffice_WebApi_Data_UserType_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; IsUserNameValidWithReasonAsync\(int, UserType, int, string, RequestOptions\)
+### IsUserNameValidWithReasonAsync\(int, UserType, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_IsUserNameValidWithReasonAsync_System_Int32_SuperOffice_WebApi_Data_UserType_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
@@ -2038,7 +2038,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserValidationResult](SuperOffice.WebApi.Data.UserValidationResult.md)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_MakeRetiredAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; MakeRetiredAsync\(int, bool, RequestOptions\)
+### MakeRetiredAsync\(int, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_MakeRetiredAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Retiring a user means to remove all licenses, setting person.retired=1 and associate.deleted=1. Unretiering a user means setting  person.retired=0 and associate.deleted=0
 &lt;p&gt;&lt;/p&gt;
@@ -2062,7 +2062,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_RegisterWithAccessGatewayAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RegisterWithAccessGatewayAsync\(string, RequestOptions\)
+### RegisterWithAccessGatewayAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_RegisterWithAccessGatewayAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Registers with access gateway if not already done, otherwise will attempt to update
 &lt;p&gt;&lt;/p&gt;
@@ -2086,7 +2086,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AccessGatewayInfo](SuperOffice.WebApi.Data.AccessGatewayInfo.md)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_RemoveLicensesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveLicensesAsync\(int, RequestOptions\)
+### RemoveLicensesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_RemoveLicensesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Remove all user licenses.
 &lt;p&gt;&lt;/p&gt;
@@ -2108,7 +2108,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_RemoveOwnerContactAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveOwnerContactAsync\(int, RequestOptions\)
+### RemoveOwnerContactAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_RemoveOwnerContactAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Remove a contact from the ownercontactlink table
 &lt;p&gt;&lt;/p&gt;
@@ -2132,7 +2132,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_RemoveUntrustedCredentialsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveUntrustedCredentialsAsync\(string, string, RequestOptions\)
+### RemoveUntrustedCredentialsAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_RemoveUntrustedCredentialsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Remove a credentials entry for authenticated user.
 &lt;p&gt;&lt;/p&gt;
@@ -2160,7 +2160,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_RemoveUntrustedCredentialsForAssociateAsync_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveUntrustedCredentialsForAssociateAsync\(int, string, string, RequestOptions\)
+### RemoveUntrustedCredentialsForAssociateAsync\(int, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_RemoveUntrustedCredentialsForAssociateAsync_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Remove a credentials entry for a specified user.
 &lt;p&gt;&lt;/p&gt;
@@ -2192,7 +2192,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_ResolveUserFromInfoAsync_System_Int32_System_String_System_String___System_String___SuperOffice_WebApi_Data_UserType_SuperOffice_WebApi_Data_Credential_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ResolveUserFromInfoAsync\(int, string, string\[\], string\[\], UserType, Credential, RequestOptions\)
+### ResolveUserFromInfoAsync\(int, string, string\[\], string\[\], UserType, Credential, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_ResolveUserFromInfoAsync_System_Int32_System_String_System_String___System_String___SuperOffice_WebApi_Data_UserType_SuperOffice_WebApi_Data_Credential_SuperOffice_WebApi_RequestOptions_}
 
 Get a user from the provided information. If the user or associated person does not exist, it will be created on demand.
 &lt;p&gt;&lt;/p&gt;
@@ -2238,7 +2238,7 @@ Override language/culture codes on this request.
 
 The results of the resolve-operation.
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_SaveCredentialAsync_System_Int32_SuperOffice_WebApi_Data_Credential_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveCredentialAsync\(int, Credential, RequestOptions\)
+### SaveCredentialAsync\(int, Credential, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_SaveCredentialAsync_System_Int32_SuperOffice_WebApi_Data_Credential_SuperOffice_WebApi_RequestOptions_}
 
 Save (adds/replaces) current credential of the same type for the user.
 &lt;p&gt;&lt;/p&gt;
@@ -2268,7 +2268,7 @@ Override language/culture codes on this request.
 
 True if the credential was successfully saved.
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_SaveExternalTokensAsync_SuperOffice_WebApi_Data_TokenManagementInfo_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveExternalTokensAsync\(TokenManagementInfo, RequestOptions\)
+### SaveExternalTokensAsync\(TokenManagementInfo, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_SaveExternalTokensAsync_SuperOffice_WebApi_Data_TokenManagementInfo_SuperOffice_WebApi_RequestOptions_}
 
 Saves the external tokens to the DB and returns a key that can be used to retrieve them
 &lt;p&gt;&lt;/p&gt;
@@ -2294,7 +2294,7 @@ Override language/culture codes on this request.
 
 Key that can be used to retrieve the tokens
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_SaveRoleEntityAsync_SuperOffice_WebApi_Data_RoleEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveRoleEntityAsync\(RoleEntity, RequestOptions\)
+### SaveRoleEntityAsync\(RoleEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_SaveRoleEntityAsync_SuperOffice_WebApi_Data_RoleEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing RoleEntity or creates a new RoleEntity if the id parameter is 0. 
 &lt;p&gt;&lt;/p&gt;
@@ -2320,7 +2320,7 @@ Override language/culture codes on this request.
 
 New or updated RoleEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_SaveServiceAuthAsync_SuperOffice_WebApi_Data_ServiceAuth_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveServiceAuthAsync\(ServiceAuth, RequestOptions\)
+### SaveServiceAuthAsync\(ServiceAuth, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_SaveServiceAuthAsync_SuperOffice_WebApi_Data_ServiceAuth_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing ServiceAuth or creates a new ServiceAuth if the id parameter is 0. 
 &lt;p&gt;&lt;/p&gt;
@@ -2346,7 +2346,7 @@ Override language/culture codes on this request.
 
 New or updated ServiceAuth
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_SaveUntrustedCredentialsAsync_System_String_SuperOffice_WebApi_Data_UntrustedCredentials_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveUntrustedCredentialsAsync\(string, UntrustedCredentials, RequestOptions\)
+### SaveUntrustedCredentialsAsync\(string, UntrustedCredentials, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_SaveUntrustedCredentialsAsync_System_String_SuperOffice_WebApi_Data_UntrustedCredentials_SuperOffice_WebApi_RequestOptions_}
 
 Save credentials for authenticated user.
 &lt;p&gt;&lt;/p&gt;
@@ -2374,7 +2374,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_SaveUntrustedCredentialsForAssociateAsync_System_Int32_System_String_SuperOffice_WebApi_Data_UntrustedCredentials_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveUntrustedCredentialsForAssociateAsync\(int, string, UntrustedCredentials, RequestOptions\)
+### SaveUntrustedCredentialsForAssociateAsync\(int, string, UntrustedCredentials, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_SaveUntrustedCredentialsForAssociateAsync_System_Int32_System_String_SuperOffice_WebApi_Data_UntrustedCredentials_SuperOffice_WebApi_RequestOptions_}
 
 Save credentials for a specified user.
 &lt;p&gt;&lt;/p&gt;
@@ -2406,7 +2406,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_SaveUserAsync_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveUserAsync\(User, RequestOptions\)
+### SaveUserAsync\(User, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_SaveUserAsync_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing User or creates a new User if the id parameter is 0. 
 &lt;p&gt;&lt;/p&gt;
@@ -2432,7 +2432,7 @@ Override language/culture codes on this request.
 
 New or updated User
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_SaveUserFromNameAsync_System_String_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveUserFromNameAsync\(string, User, RequestOptions\)
+### SaveUserFromNameAsync\(string, User, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_SaveUserFromNameAsync_System_String_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_}
 
 Save a user, with lookup based on the user name.
 &lt;p&gt;&lt;/p&gt;
@@ -2462,7 +2462,7 @@ Override language/culture codes on this request.
 
 User retrieved by name
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_SaveUserGroupAsync_SuperOffice_WebApi_Data_UserGroup_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveUserGroupAsync\(UserGroup, RequestOptions\)
+### SaveUserGroupAsync\(UserGroup, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_SaveUserGroupAsync_SuperOffice_WebApi_Data_UserGroup_SuperOffice_WebApi_RequestOptions_}
 
 Save a user group.  Set UserGroup.Deleted to mark a user group as deleted and invisible in the user interface.
 &lt;p&gt;&lt;/p&gt;
@@ -2488,7 +2488,7 @@ Override language/culture codes on this request.
 
 UserGroup as saved to the database
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_SendChangePasswordEMailAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SendChangePasswordEMailAsync\(int, RequestOptions\)
+### SendChangePasswordEMailAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_SendChangePasswordEMailAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Send a change password email to this users registered address.
 &lt;p&gt;&lt;/p&gt;
@@ -2514,7 +2514,7 @@ Override language/culture codes on this request.
 
 Result - with result flag and optional error reason.
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_SetDataRightAsync_System_Int32_System_String_SuperOffice_WebApi_Data_RoleRelationToOwner_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetDataRightAsync\(int, string, RoleRelationToOwner, string, RequestOptions\)
+### SetDataRightAsync\(int, string, RoleRelationToOwner, string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_SetDataRightAsync_System_Int32_System_String_SuperOffice_WebApi_Data_RoleRelationToOwner_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Set one specific data right at the given position. An exception will be thrown if non existing position is specified.
 &lt;p&gt;&lt;/p&gt;
@@ -2550,7 +2550,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_SetExternalUserInfoAsync_System_Int32_System_String_System_String_System_Boolean_System_Int32_SuperOffice_WebApi_Data_ExternalUserInfoModification_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetExternalUserInfoAsync\(int, string, string, bool, int, ExternalUserInfoModification, RequestOptions\)
+### SetExternalUserInfoAsync\(int, string, string, bool, int, ExternalUserInfoModification, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_SetExternalUserInfoAsync_System_Int32_System_String_System_String_System_Boolean_System_Int32_SuperOffice_WebApi_Data_ExternalUserInfoModification_SuperOffice_WebApi_RequestOptions_}
 
 Modifies an external user. Changes external users information according to the flags set in  externalUserInfoModification.
 &lt;p&gt;&lt;/p&gt;
@@ -2594,7 +2594,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_SetFunctionalRightsAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetFunctionalRightsAsync\(int, int\[\], RequestOptions\)
+### SetFunctionalRightsAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_SetFunctionalRightsAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Set all functional rights for the given role. Functional rights not specified here will be removed from the role. 
 &lt;p&gt;&lt;/p&gt;
@@ -2622,7 +2622,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_SetGeneratedPasswordAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetGeneratedPasswordAsync\(int, RequestOptions\)
+### SetGeneratedPasswordAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_SetGeneratedPasswordAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
@@ -2643,7 +2643,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_SetGeneratedPasswordFromNameAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetGeneratedPasswordFromNameAsync\(string, RequestOptions\)
+### SetGeneratedPasswordFromNameAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_SetGeneratedPasswordFromNameAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
@@ -2664,7 +2664,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_SetPasswordAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetPasswordAsync\(int, string, RequestOptions\)
+### SetPasswordAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_SetPasswordAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Change password for a user.
 &lt;p&gt;&lt;/p&gt;
@@ -2694,7 +2694,7 @@ Override language/culture codes on this request.
 
 Succeeded?
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_SetPasswordFromNameAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetPasswordFromNameAsync\(string, string, RequestOptions\)
+### SetPasswordFromNameAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_SetPasswordFromNameAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Change password for a user.
 &lt;p&gt;&lt;/p&gt;
@@ -2724,7 +2724,7 @@ Override language/culture codes on this request.
 
 Succeeded?
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_SetUserPresenceStatusAsync_System_Int32_SuperOffice_WebApi_Data_UserPresenceStatus_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetUserPresenceStatusAsync\(int, UserPresenceStatus, RequestOptions\)
+### SetUserPresenceStatusAsync\(int, UserPresenceStatus, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_SetUserPresenceStatusAsync_System_Int32_SuperOffice_WebApi_Data_UserPresenceStatus_SuperOffice_WebApi_RequestOptions_}
 
 Set user presence status
 &lt;p&gt;&lt;/p&gt;
@@ -2754,7 +2754,7 @@ Override language/culture codes on this request.
 
 User presence status
 
-### &lt;a id="SuperOffice_WebApi_Agents_UserAgent_ValidateUserAsync_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ValidateUserAsync\(User, RequestOptions\)
+### ValidateUserAsync\(User, RequestOptions\) {#SuperOffice_WebApi_Agents_UserAgent_ValidateUserAsync_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_}
 
 Check that entity is ready for saving, return error messages by field.
 &lt;p&gt;&lt;/p&gt;

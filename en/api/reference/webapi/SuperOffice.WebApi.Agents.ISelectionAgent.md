@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent"&gt;&lt;/a&gt; Interface ISelectionAgent
+# Interface ISelectionAgent {#SuperOffice_WebApi_Agents_ISelectionAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface ISelectionAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_AddContactSelectionMembersAsync_System_Int32_SuperOffice_WebApi_Data_ContactPersonId___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddContactSelectionMembersAsync\(int, ContactPersonId\[\], RequestOptions\)
+### AddContactSelectionMembersAsync\(int, ContactPersonId\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_AddContactSelectionMembersAsync_System_Int32_SuperOffice_WebApi_Data_ContactPersonId___SuperOffice_WebApi_RequestOptions_}
 
 Adds the collection of ContactPersonId as members to the static selection
 
@@ -42,7 +42,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_AddContactSelectionMembersFromSearchAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddContactSelectionMembersFromSearchAsync\(int, string, RequestOptions\)
+### AddContactSelectionMembersFromSearchAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_AddContactSelectionMembersFromSearchAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Adds members to the selection from the search result.
 
@@ -70,7 +70,7 @@ Override language/culture codes on this request.
 
 Number of members added
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_AddRemoveContactSelectionMemberInterestsAsync_System_Int32_System_Int32___System_Int32___System_Int32___System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddRemoveContactSelectionMemberInterestsAsync\(int, int\[\], int\[\], int\[\], int\[\], RequestOptions\)
+### AddRemoveContactSelectionMemberInterestsAsync\(int, int\[\], int\[\], int\[\], int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_AddRemoveContactSelectionMemberInterestsAsync_System_Int32_System_Int32___System_Int32___System_Int32___System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Adds or removes interests on companies and persons in a selection.
 
@@ -108,7 +108,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_AddSelectionMembersAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddSelectionMembersAsync\(int, int\[\], RequestOptions\)
+### AddSelectionMembersAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_AddSelectionMembersAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Add selection members to a static selection of type others than contacts.
 
@@ -136,7 +136,7 @@ Override language/culture codes on this request.
 
 Returns number of members added to the selection.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_AddSelectionMembersFromSearchAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddSelectionMembersFromSearchAsync\(int, string, RequestOptions\)
+### AddSelectionMembersFromSearchAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_AddSelectionMembersFromSearchAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Adds members from the selection using the search result.
 
@@ -164,7 +164,7 @@ Override language/culture codes on this request.
 
 Number of members added.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_CopyContactSelectionMembersAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CopyContactSelectionMembersAsync\(int, int, RequestOptions\)
+### CopyContactSelectionMembersAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_CopyContactSelectionMembersAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Copy contact selection members from selection into an existing selection.
 
@@ -190,7 +190,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_CopySelectionMembersAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CopySelectionMembersAsync\(int, int, RequestOptions\)
+### CopySelectionMembersAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_CopySelectionMembersAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Copy selection members from selection into an existing selection.
 
@@ -216,7 +216,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_CreateContactSelectionFromSelectionAsync_System_Int32_System_String_SuperOffice_WebApi_Data_SelectionType_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateContactSelectionFromSelectionAsync\(int, string, SelectionType, bool, RequestOptions\)
+### CreateContactSelectionFromSelectionAsync\(int, string, SelectionType, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_CreateContactSelectionFromSelectionAsync_System_Int32_System_String_SuperOffice_WebApi_Data_SelectionType_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Creates a new selection based on selection members from an existing selection.
 
@@ -252,7 +252,7 @@ Override language/culture codes on this request.
 
 Returns the newly created SelectionEntity.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_CreateContactSelectionFromShadowSelectionAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateContactSelectionFromShadowSelectionAsync\(int, string, RequestOptions\)
+### CreateContactSelectionFromShadowSelectionAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_CreateContactSelectionFromShadowSelectionAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Creates a new contact selection based on contact selection members from an existing shadow sale, appointment, project or document selection. The new selection will always be static even if the original selection is dynamic.
 
@@ -280,7 +280,7 @@ Override language/culture codes on this request.
 
 Returns the newly created SelectionEntity.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_CreateDefaultBoardViewSettingsFromEntityTypeAsync_SuperOffice_WebApi_Data_BoardViewEntityType_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultBoardViewSettingsFromEntityTypeAsync\(BoardViewEntityType, RequestOptions\)
+### CreateDefaultBoardViewSettingsFromEntityTypeAsync\(BoardViewEntityType, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_CreateDefaultBoardViewSettingsFromEntityTypeAsync_SuperOffice_WebApi_Data_BoardViewEntityType_SuperOffice_WebApi_RequestOptions_}
 
 Creates a new carrier from the entity type given, with the right kind of properties, defaults set.
 
@@ -302,7 +302,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BoardViewSettingsBase](SuperOffice.WebApi.Data.BoardViewSettingsBase.md)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_CreateDefaultSelectionEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultSelectionEntityAsync\(RequestOptions\)
+### CreateDefaultSelectionEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_CreateDefaultSelectionEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new SelectionEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -323,7 +323,7 @@ Override language/culture codes on this request.
 
 A blank SelectionEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_CreateNewEntryAsync_SuperOffice_WebApi_Data_DuplicateEntry_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateNewEntryAsync\(DuplicateEntry, RequestOptions\)
+### CreateNewEntryAsync\(DuplicateEntry, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_CreateNewEntryAsync_SuperOffice_WebApi_Data_DuplicateEntry_SuperOffice_WebApi_RequestOptions_}
 
 Creates a new selection based on external duplicate
 
@@ -347,7 +347,7 @@ Override language/culture codes on this request.
 
 The database identity of the newly created entry
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_CreateSelectionEntityAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateSelectionEntityAsync\(string, RequestOptions\)
+### CreateSelectionEntityAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_CreateSelectionEntityAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Create (but do not save) a new selection entity, for the current user and the given target table; other fields populated as by CreateDefaultSelectionEntity()
 
@@ -371,7 +371,7 @@ Override language/culture codes on this request.
 
 The new SelectionEntity, which has not yet been saved
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_CreateSelectionFromSelectionAsync_System_Int32_System_String_SuperOffice_WebApi_Data_SelectionType_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateSelectionFromSelectionAsync\(int, string, SelectionType, bool, RequestOptions\)
+### CreateSelectionFromSelectionAsync\(int, string, SelectionType, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_CreateSelectionFromSelectionAsync_System_Int32_System_String_SuperOffice_WebApi_Data_SelectionType_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Creates a new selection based on selection members from an existing selection.
 
@@ -407,7 +407,7 @@ Override language/culture codes on this request.
 
 Returns the newly created SelectionEntity.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_CreateTemporaryContactSelectionAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateTemporaryContactSelectionAsync\(RequestOptions\)
+### CreateTemporaryContactSelectionAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_CreateTemporaryContactSelectionAsync_SuperOffice_WebApi_RequestOptions_}
 
 Creates a temporary selection.
 
@@ -427,7 +427,7 @@ Override language/culture codes on this request.
 
 Returns the newly created SelectionEntity.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_CreateTemporaryContactSelectionFromContactPersonIdsAsync_SuperOffice_WebApi_Data_ContactPersonId___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateTemporaryContactSelectionFromContactPersonIdsAsync\(ContactPersonId\[\], RequestOptions\)
+### CreateTemporaryContactSelectionFromContactPersonIdsAsync\(ContactPersonId\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_CreateTemporaryContactSelectionFromContactPersonIdsAsync_SuperOffice_WebApi_Data_ContactPersonId___SuperOffice_WebApi_RequestOptions_}
 
 Creates a temporary selection with members from a collection of ContactPerson id's.
 
@@ -451,7 +451,7 @@ Override language/culture codes on this request.
 
 Returns the newly created SelectionEntity.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_CreateTemporaryContactSelectionFromSelectionMemberIdsAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateTemporaryContactSelectionFromSelectionMemberIdsAsync\(int, int\[\], RequestOptions\)
+### CreateTemporaryContactSelectionFromSelectionMemberIdsAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_CreateTemporaryContactSelectionFromSelectionMemberIdsAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Creates a temporary selection with members from a collection of selectionmember id's.
 
@@ -479,7 +479,7 @@ Override language/culture codes on this request.
 
 Returns the newly created SelectionEntity.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_CreateTemporarySelectionFromIdsAsync_System_Int32___System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateTemporarySelectionFromIdsAsync\(int\[\], int, RequestOptions\)
+### CreateTemporarySelectionFromIdsAsync\(int\[\], int, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_CreateTemporarySelectionFromIdsAsync_System_Int32___System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Creates a temporary selection with members from a collection of entity id's.
 
@@ -507,7 +507,7 @@ Override language/culture codes on this request.
 
 Returns the newly created SelectionEntity.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_DeleteBoardViewSettingsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteBoardViewSettingsAsync\(int, RequestOptions\)
+### DeleteBoardViewSettingsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_DeleteBoardViewSettingsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Delete BoardViewSettings
 
@@ -531,7 +531,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_DeleteContactsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteContactsAsync\(int, RequestOptions\)
+### DeleteContactsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_DeleteContactsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes all contacts from a selection. If a contact does not have delete rights, it will be skipped.
 
@@ -553,7 +553,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_DeleteEntitiesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteEntitiesAsync\(int, RequestOptions\)
+### DeleteEntitiesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_DeleteEntitiesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes all entities from a selection. If an entity does not have delete rights, it will be skipped.
 
@@ -575,7 +575,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_DeletePersonsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeletePersonsAsync\(int, RequestOptions\)
+### DeletePersonsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_DeletePersonsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes all persons from a selection. If a person does not have delete rights, it will be skipped.
 
@@ -597,7 +597,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_DeleteSelectionEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteSelectionEntityAsync\(int, RequestOptions\)
+### DeleteSelectionEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_DeleteSelectionEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the SelectionEntity
 
@@ -621,7 +621,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_EditContactSelectionMemberDetailsAsync_System_Int32_SuperOffice_WebApi_Data_SelectionMemberEditValues_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; EditContactSelectionMemberDetailsAsync\(int, SelectionMemberEditValues, RequestOptions\)
+### EditContactSelectionMemberDetailsAsync\(int, SelectionMemberEditValues, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_EditContactSelectionMemberDetailsAsync_System_Int32_SuperOffice_WebApi_Data_SelectionMemberEditValues_SuperOffice_WebApi_RequestOptions_}
 
 Edit company and contact details in a selection based on contents in selectionMemberEditValues.
 
@@ -647,7 +647,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_ExportSelectionMembersAsync_System_Int32_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ExportSelectionMembersAsync\(int, string, bool, RequestOptions\)
+### ExportSelectionMembersAsync\(int, string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_ExportSelectionMembersAsync_System_Int32_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 ExportSelectionMembers will generate a string that is the result of substituting the template variables with values from selectionmembers.
 
@@ -679,7 +679,7 @@ Override language/culture codes on this request.
 
 Returns a unicode byte array with the file to export to the user.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_ExportSelectionMembersWithOrderByAsync_System_Int32_System_String_System_Boolean_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ExportSelectionMembersWithOrderByAsync\(int, string, bool, string, RequestOptions\)
+### ExportSelectionMembersWithOrderByAsync\(int, string, bool, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_ExportSelectionMembersWithOrderByAsync_System_Int32_System_String_System_Boolean_System_String_SuperOffice_WebApi_RequestOptions_}
 
 ExportSelectionMembers will generate a string that is the result of substituting the template variables with values from selectionmembers.
 
@@ -715,7 +715,7 @@ Override language/culture codes on this request.
 
 Returns a unicode byte array with the file to export to the user.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_GenerateFollowUpsAsync_System_Int32_SuperOffice_WebApi_Data_AppointmentEntity_System_Int32_System_Boolean_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GenerateFollowUpsAsync\(int, AppointmentEntity, int, bool, bool, RequestOptions\)
+### GenerateFollowUpsAsync\(int, AppointmentEntity, int, bool, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_GenerateFollowUpsAsync_System_Int32_SuperOffice_WebApi_Data_AppointmentEntity_System_Int32_System_Boolean_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Generate follow-ups for members in the selection.
 
@@ -753,7 +753,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_GetBoardViewSettingsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetBoardViewSettingsAsync\(int, RequestOptions\)
+### GetBoardViewSettingsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_GetBoardViewSettingsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get BoardViewSettings by ID
 
@@ -777,7 +777,7 @@ Override language/culture codes on this request.
 
 The settings, of appropriate sub type
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_GetBoardViewSettingsForSelectionAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetBoardViewSettingsForSelectionAsync\(int, int, RequestOptions\)
+### GetBoardViewSettingsForSelectionAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_GetBoardViewSettingsForSelectionAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get BoardViewSettings by associate id and selection id
 
@@ -805,7 +805,7 @@ Override language/culture codes on this request.
 
 The settings, of appropriate sub type
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_GetDuplicateRulesAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDuplicateRulesAsync\(RequestOptions\)
+### GetDuplicateRulesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_GetDuplicateRulesAsync_SuperOffice_WebApi_RequestOptions_}
 
 Retrieve all available duplicate rules for selection
 
@@ -825,7 +825,7 @@ Override language/culture codes on this request.
 
 All available duplicate rules
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_GetDuplicatesAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDuplicatesAsync\(string, RequestOptions\)
+### GetDuplicatesAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_GetDuplicatesAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get duplicates(exact or similar in the database) based on the name
 
@@ -849,7 +849,7 @@ Override language/culture codes on this request.
 
 Any records matching the specified name
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_GetDynamicSelectionCriteriaAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDynamicSelectionCriteriaAsync\(int, RequestOptions\)
+### GetDynamicSelectionCriteriaAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_GetDynamicSelectionCriteriaAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get the criteria for this dynamic selection.
 
@@ -873,7 +873,7 @@ Override language/culture codes on this request.
 
 Criteria defining the selection result. NULL if selection does not exist, or if this is not a dynamic selection.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_GetDynamicSelectionCriteriaGroupsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDynamicSelectionCriteriaGroupsAsync\(int, RequestOptions\)
+### GetDynamicSelectionCriteriaGroupsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_GetDynamicSelectionCriteriaGroupsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get the criteria for this dynamic selection. This call supports multiple criteria groups.
 
@@ -897,7 +897,7 @@ Override language/culture codes on this request.
 
 Criteria groups defining the selection result. NULL if selection does not exist, or if this is not a dynamic selection.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_GetParentCombinedSelectionsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetParentCombinedSelectionsAsync\(int, RequestOptions\)
+### GetParentCombinedSelectionsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_GetParentCombinedSelectionsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a list of all selection ids where the given selection is used to create a combined selection.
 
@@ -921,7 +921,7 @@ Override language/culture codes on this request.
 
 Array of selectionIds.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_GetRecipientStatisticsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetRecipientStatisticsAsync\(int, RequestOptions\)
+### GetRecipientStatisticsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_GetRecipientStatisticsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns a RecipientStatistics object with a count of addresses, emailaddresses and emailaddresses.
 
@@ -945,7 +945,7 @@ Override language/culture codes on this request.
 
 Returns a RecipientStatistics object.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_GetRecipientStatisticsFromContactPersonIdsAsync_SuperOffice_WebApi_Data_ContactPersonId___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetRecipientStatisticsFromContactPersonIdsAsync\(ContactPersonId\[\], RequestOptions\)
+### GetRecipientStatisticsFromContactPersonIdsAsync\(ContactPersonId\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_GetRecipientStatisticsFromContactPersonIdsAsync_SuperOffice_WebApi_Data_ContactPersonId___SuperOffice_WebApi_RequestOptions_}
 
 Returns a RecipientStatistics object with a count of addresses, emailaddresses and emailaddresses based on contact and persons in a collection of ContactPersonId.
 
@@ -969,7 +969,7 @@ Override language/culture codes on this request.
 
 Returns a RecipientStatistics object.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_GetRecipientStatisticsFromProjectMembersAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetRecipientStatisticsFromProjectMembersAsync\(int, RequestOptions\)
+### GetRecipientStatisticsFromProjectMembersAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_GetRecipientStatisticsFromProjectMembersAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns a RecipientStatistics object with a count of addresses, emailaddresses and emailaddresses based on members in a project.
 
@@ -993,7 +993,7 @@ Override language/culture codes on this request.
 
 Returns a RecipientStatistics object.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_GetSelectionEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSelectionEntityAsync\(int, RequestOptions\)
+### GetSelectionEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_GetSelectionEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific SelectionEntity object.
 
@@ -1017,7 +1017,7 @@ Override language/culture codes on this request.
 
 SelectionEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_GetSelectionForFindAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSelectionForFindAsync\(string, int, RequestOptions\)
+### GetSelectionForFindAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_GetSelectionForFindAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Obtain a selection for the given entity, for the current user, of type WorkingSetForFind. Optionally populate criteria from the TypicalSearches system
 
@@ -1045,7 +1045,7 @@ Override language/culture codes on this request.
 
 Target selection id and provider name
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_GetSelectionMembersArchiveRowsAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSelectionMembersArchiveRowsAsync\(int, string, RequestOptions\)
+### GetSelectionMembersArchiveRowsAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_GetSelectionMembersArchiveRowsAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get the list of members in this selection. The type of members depends on the target table of the selection.
 
@@ -1073,7 +1073,7 @@ Override language/culture codes on this request.
 
 Array of archive rows, where each item represents one row of data (row level data + the requested columns). NULL if selection does not exist.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_GetSelectionShadowMembersArchiveRowsAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSelectionShadowMembersArchiveRowsAsync\(int, string, RequestOptions\)
+### GetSelectionShadowMembersArchiveRowsAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_GetSelectionShadowMembersArchiveRowsAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get the list of members in this selection's shadow (i.e. the list of contacts + persons referenced in the main selection).
 
@@ -1101,7 +1101,7 @@ Override language/culture codes on this request.
 
 Array of archive rows, where each item represents one row of data (row level data + the requested columns). NULL if selection does not exist.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_GetSelectionSummariesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSelectionSummariesAsync\(int\[\], RequestOptions\)
+### GetSelectionSummariesAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_GetSelectionSummariesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Get an array of summaryitem for the given selections
 
@@ -1125,7 +1125,7 @@ Override language/culture codes on this request.
 
 Summary items for the given id's, in no particular order
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_RemoveContactSelectionMembersAsync_System_Int32_SuperOffice_WebApi_Data_ContactPersonId___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveContactSelectionMembersAsync\(int, ContactPersonId\[\], RequestOptions\)
+### RemoveContactSelectionMembersAsync\(int, ContactPersonId\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_RemoveContactSelectionMembersAsync_System_Int32_SuperOffice_WebApi_Data_ContactPersonId___SuperOffice_WebApi_RequestOptions_}
 
 Removes members from the selection as  specified in the collection of ContactPersonId.
 
@@ -1151,7 +1151,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_RemoveContactSelectionMembersFromIdsAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveContactSelectionMembersFromIdsAsync\(int, int\[\], RequestOptions\)
+### RemoveContactSelectionMembersFromIdsAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_RemoveContactSelectionMembersFromIdsAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Removes members from the selection using a collection a selectionmember id's. Members can only be removed from single selection.
 
@@ -1177,7 +1177,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_RemoveContactSelectionMembersFromSearchAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveContactSelectionMembersFromSearchAsync\(int, string, RequestOptions\)
+### RemoveContactSelectionMembersFromSearchAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_RemoveContactSelectionMembersFromSearchAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Removes members from the selection using the search result.
 
@@ -1205,7 +1205,7 @@ Override language/culture codes on this request.
 
 Number of members removed
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_RemoveSelectionMembersAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveSelectionMembersAsync\(int, int\[\], RequestOptions\)
+### RemoveSelectionMembersAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_RemoveSelectionMembersAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Removes members from the selection as  specified in the collection of entity ids. The ids are selection member ids (selection member primary key)
 
@@ -1231,7 +1231,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_RemoveSelectionMembersByIdAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveSelectionMembersByIdAsync\(int, int\[\], RequestOptions\)
+### RemoveSelectionMembersByIdAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_RemoveSelectionMembersByIdAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Removes members from the selection as specified in the collection of entity ids. The ids can be a collection of sale ids, or other supported types.
 
@@ -1257,7 +1257,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_RemoveSelectionMembersFromSearchAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveSelectionMembersFromSearchAsync\(int, string, RequestOptions\)
+### RemoveSelectionMembersFromSearchAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_RemoveSelectionMembersFromSearchAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Removes members from the selection using the search result.
 
@@ -1285,7 +1285,7 @@ Override language/culture codes on this request.
 
 Number of members removed
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_SaveBoardViewSettingsAsync_SuperOffice_WebApi_Data_BoardViewSettingsBase_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveBoardViewSettingsAsync\(BoardViewSettingsBase, RequestOptions\)
+### SaveBoardViewSettingsAsync\(BoardViewSettingsBase, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_SaveBoardViewSettingsAsync_SuperOffice_WebApi_Data_BoardViewSettingsBase_SuperOffice_WebApi_RequestOptions_}
 
 Save BoardViewSettings
 
@@ -1309,7 +1309,7 @@ Override language/culture codes on this request.
 
 The settings, of appropriate sub type
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_SaveBoardViewSettingsForSelectionAndAssociateAsync_SuperOffice_WebApi_Data_BoardViewSettingsBase_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveBoardViewSettingsForSelectionAndAssociateAsync\(BoardViewSettingsBase, int, int, RequestOptions\)
+### SaveBoardViewSettingsForSelectionAndAssociateAsync\(BoardViewSettingsBase, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_SaveBoardViewSettingsForSelectionAndAssociateAsync_SuperOffice_WebApi_Data_BoardViewSettingsBase_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Save BoardViewSettings on the given selection/associate
 
@@ -1341,7 +1341,7 @@ Override language/culture codes on this request.
 
 The settings, of appropriate sub type
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_SaveSelectionEntityAsync_SuperOffice_WebApi_Data_SelectionEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveSelectionEntityAsync\(SelectionEntity, RequestOptions\)
+### SaveSelectionEntityAsync\(SelectionEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_SaveSelectionEntityAsync_SuperOffice_WebApi_Data_SelectionEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing SelectionEntity or creates a new SelectionEntity if the id parameter is 0.
 
@@ -1365,7 +1365,7 @@ Override language/culture codes on this request.
 
 New or updated SelectionEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_SetDuplicateRulesStatusAsync_SuperOffice_WebApi_Data_DuplicateRule___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetDuplicateRulesStatusAsync\(DuplicateRule\[\], RequestOptions\)
+### SetDuplicateRulesStatusAsync\(DuplicateRule\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_SetDuplicateRulesStatusAsync_SuperOffice_WebApi_Data_DuplicateRule___SuperOffice_WebApi_RequestOptions_}
 
 Set which duplicate rules should be active or not
 
@@ -1387,7 +1387,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_SetDynamicSelectionCriteria2Async_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetDynamicSelectionCriteria2Async\(int, string, RequestOptions\)
+### SetDynamicSelectionCriteria2Async\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_SetDynamicSelectionCriteria2Async_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Update the criteria for this dynamic selection using string. Criteria are parsed from the OData filter form: ''name startswith 'foo' and category in (1,2,3)''
 
@@ -1415,7 +1415,7 @@ Override language/culture codes on this request.
 
 Criteria defining the selection result. NULL if this is not a dynamic selection.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_SetDynamicSelectionCriteria3Async_System_Int32_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetDynamicSelectionCriteria3Async\(int, ArchiveRestrictionInfo\[\], string, RequestOptions\)
+### SetDynamicSelectionCriteria3Async\(int, ArchiveRestrictionInfo\[\], string, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_SetDynamicSelectionCriteria3Async_System_Int32_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String_SuperOffice_WebApi_RequestOptions_}
 
 Update the criteria for this dynamic selection. Use criteria as either restriction objects or OData string format. Criteria are parsed from the OData filter form: ''name startswith 'foo' and category in (1,2,3)''
 
@@ -1447,7 +1447,7 @@ Override language/culture codes on this request.
 
 Criteria defining the selection result. NULL if this is not a dynamic selection.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_SetDynamicSelectionCriteriaAsync_System_Int32_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetDynamicSelectionCriteriaAsync\(int, ArchiveRestrictionInfo\[\], RequestOptions\)
+### SetDynamicSelectionCriteriaAsync\(int, ArchiveRestrictionInfo\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_SetDynamicSelectionCriteriaAsync_System_Int32_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___SuperOffice_WebApi_RequestOptions_}
 
 Update the criteria for this dynamic selection. Replaces existing criteria with the new values.
 
@@ -1475,7 +1475,7 @@ Override language/culture codes on this request.
 
 Criteria defining the selection result. NULL if this is not a dynamic selection.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_SetDynamicSelectionCriteriaGroupsAsync_System_Int32_SuperOffice_WebApi_Data_ArchiveRestrictionGroup___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetDynamicSelectionCriteriaGroupsAsync\(int, ArchiveRestrictionGroup\[\], RequestOptions\)
+### SetDynamicSelectionCriteriaGroupsAsync\(int, ArchiveRestrictionGroup\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_SetDynamicSelectionCriteriaGroupsAsync_System_Int32_SuperOffice_WebApi_Data_ArchiveRestrictionGroup___SuperOffice_WebApi_RequestOptions_}
 
 Update the criteria for this dynamic selection. Replaces existing criteria with the new values. This call supports multiple criteria groups.
 
@@ -1503,7 +1503,7 @@ Override language/culture codes on this request.
 
 Criteria groups defining the selection result. NULL if this is not a dynamic selection.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISelectionAgent_UpdateTypicalSearchAsync_SuperOffice_WebApi_Data_TypicalSearches_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; UpdateTypicalSearchAsync\(TypicalSearches, RequestOptions\)
+### UpdateTypicalSearchAsync\(TypicalSearches, RequestOptions\) {#SuperOffice_WebApi_Agents_ISelectionAgent_UpdateTypicalSearchAsync_SuperOffice_WebApi_Data_TypicalSearches_SuperOffice_WebApi_RequestOptions_}
 
 Update (import) TypicalSearch information in the database
 

@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Data_TicketCategoryEntity"&gt;&lt;/a&gt; Class TicketCategoryEntity
+# Class TicketCategoryEntity {#SuperOffice_WebApi_Data_TicketCategoryEntity}
 
 Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -37,7 +37,7 @@ var ticketCategoryEntity = agent.GetTicketCategoryEntity( 123 );&lt;/code&gt;&lt
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketCategoryEntity__ctor"&gt;&lt;/a&gt; TicketCategoryEntity\(\)
+### TicketCategoryEntity\(\) {#SuperOffice_WebApi_Data_TicketCategoryEntity__ctor}
 
 Default constructor - defaults any enum props to 0.
 
@@ -47,7 +47,7 @@ public TicketCategoryEntity()
 
 ## Properties
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketCategoryEntity_AssignmentLag"&gt;&lt;/a&gt; AssignmentLag
+### AssignmentLag {#SuperOffice_WebApi_Data_TicketCategoryEntity_AssignmentLag}
 
 Number of minutes we shall override the assignment if a customer sends consecutive messages to this category
 
@@ -59,7 +59,7 @@ public virtual int AssignmentLag { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketCategoryEntity_CategoryMaster"&gt;&lt;/a&gt; CategoryMaster
+### CategoryMaster {#SuperOffice_WebApi_Data_TicketCategoryEntity_CategoryMaster}
 
 The user associated with this category.
 
@@ -71,7 +71,7 @@ public virtual int CategoryMaster { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketCategoryEntity_ClosingStatus"&gt;&lt;/a&gt; ClosingStatus
+### ClosingStatus {#SuperOffice_WebApi_Data_TicketCategoryEntity_ClosingStatus}
 
 Determines the default status used in the GUI when creating a ticket
 NULL if unknown enum value.
@@ -89,7 +89,7 @@ public TicketCategoryClosingStatus? ClosingStatus { get; set; }
 
 [TicketCategoryEntity](SuperOffice.WebApi.Data.TicketCategoryEntity.md).[ClosingStatus\_String](SuperOffice.WebApi.Data.TicketCategoryEntity.md\#SuperOffice\_WebApi\_Data\_TicketCategoryEntity\_ClosingStatus\_String)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketCategoryEntity_ClosingStatus_String"&gt;&lt;/a&gt; ClosingStatus\_String
+### ClosingStatus\_String {#SuperOffice_WebApi_Data_TicketCategoryEntity_ClosingStatus_String}
 
 Determines the default status used in the GUI when creating a ticket
 Raw string enum value.
@@ -107,7 +107,7 @@ public string ClosingStatus_String { get; set; }
 
 [TicketCategoryEntity](SuperOffice.WebApi.Data.TicketCategoryEntity.md).[ClosingStatus](SuperOffice.WebApi.Data.TicketCategoryEntity.md\#SuperOffice\_WebApi\_Data\_TicketCategoryEntity\_ClosingStatus)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketCategoryEntity_CustomFields"&gt;&lt;/a&gt; CustomFields
+### CustomFields {#SuperOffice_WebApi_Data_TicketCategoryEntity_CustomFields}
 
 Udef + Extra fields added to the carrier. Extra fields as defined by changes to database schema + user-defined fields as defined by admin.
 Custom fields combines user defined fields and extra fields into one bucket. 
@@ -134,7 +134,7 @@ The naming convention of the key string is as follows:
     Example: &lt;pre&gt;&lt;code class="lang-csharp"&gt;'SuperOffice:1' = '[I:123]'&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
        &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketCategoryEntity_DefaultMessageStatus"&gt;&lt;/a&gt; DefaultMessageStatus
+### DefaultMessageStatus {#SuperOffice_WebApi_Data_TicketCategoryEntity_DefaultMessageStatus}
 
 Default status for new messages, if 0 then there is a fallback to a user-dependent value
 
@@ -146,7 +146,7 @@ public virtual TicketStatusEntity DefaultMessageStatus { get; set; }
 
  [TicketStatusEntity](SuperOffice.WebApi.Data.TicketStatusEntity.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketCategoryEntity_DefaultTicketStatus"&gt;&lt;/a&gt; DefaultTicketStatus
+### DefaultTicketStatus {#SuperOffice_WebApi_Data_TicketCategoryEntity_DefaultTicketStatus}
 
 Default status for new tickets, if 0 then there is a fallback to a user-dependent value
 
@@ -158,7 +158,7 @@ public virtual TicketStatusEntity DefaultTicketStatus { get; set; }
 
  [TicketStatusEntity](SuperOffice.WebApi.Data.TicketStatusEntity.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketCategoryEntity_DelegateMethod"&gt;&lt;/a&gt; DelegateMethod
+### DelegateMethod {#SuperOffice_WebApi_Data_TicketCategoryEntity_DelegateMethod}
 
 An integer indicating the delegation method for this category.
 NULL if unknown enum value.
@@ -176,7 +176,7 @@ public TicketCategoryDelegateMethod? DelegateMethod { get; set; }
 
 [TicketCategoryEntity](SuperOffice.WebApi.Data.TicketCategoryEntity.md).[DelegateMethod\_String](SuperOffice.WebApi.Data.TicketCategoryEntity.md\#SuperOffice\_WebApi\_Data\_TicketCategoryEntity\_DelegateMethod\_String)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketCategoryEntity_DelegateMethod_String"&gt;&lt;/a&gt; DelegateMethod\_String
+### DelegateMethod\_String {#SuperOffice_WebApi_Data_TicketCategoryEntity_DelegateMethod_String}
 
 An integer indicating the delegation method for this category.
 Raw string enum value.
@@ -194,7 +194,7 @@ public string DelegateMethod_String { get; set; }
 
 [TicketCategoryEntity](SuperOffice.WebApi.Data.TicketCategoryEntity.md).[DelegateMethod](SuperOffice.WebApi.Data.TicketCategoryEntity.md\#SuperOffice\_WebApi\_Data\_TicketCategoryEntity\_DelegateMethod)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketCategoryEntity_EffectiveReplyTemplateId"&gt;&lt;/a&gt; EffectiveReplyTemplateId
+### EffectiveReplyTemplateId {#SuperOffice_WebApi_Data_TicketCategoryEntity_EffectiveReplyTemplateId}
 
 Id of reply template to merge into messages, whose ticket belongs to this category. Also takes into account 'Apply to subcategories' on parent categories. This is a calculated, readonly field.
 
@@ -206,7 +206,7 @@ public virtual int EffectiveReplyTemplateId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketCategoryEntity_ExternalName"&gt;&lt;/a&gt; ExternalName
+### ExternalName {#SuperOffice_WebApi_Data_TicketCategoryEntity_ExternalName}
 
 The external name for this category, used for the customer frontend.
 
@@ -218,7 +218,7 @@ public virtual string ExternalName { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketCategoryEntity_ExtraFields"&gt;&lt;/a&gt; ExtraFields
+### ExtraFields {#SuperOffice_WebApi_Data_TicketCategoryEntity_ExtraFields}
 
 Deprecated: Use &lt;xref href="SuperOffice.WebApi.Data.TicketCategoryEntity.CustomFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instead.
 Extra fields added to the carrier. This could be data from Plug-ins, the foreign key system, external applications, etc.
@@ -251,7 +251,7 @@ The naming convention of the key string is as follows:
        We also ensure that SuperOffice data are added first, so that existing data doesnt change when more data sources are added (with duplicate data keys).
        &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketCategoryEntity_Flags"&gt;&lt;/a&gt; Flags
+### Flags {#SuperOffice_WebApi_Data_TicketCategoryEntity_Flags}
 
 A bitmask representing flags for this category.
 NULL if unknown enum value.
@@ -269,7 +269,7 @@ public TicketCategoryFlags? Flags { get; set; }
 
 [TicketCategoryEntity](SuperOffice.WebApi.Data.TicketCategoryEntity.md).[Flags\_String](SuperOffice.WebApi.Data.TicketCategoryEntity.md\#SuperOffice\_WebApi\_Data\_TicketCategoryEntity\_Flags\_String)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketCategoryEntity_Flags_String"&gt;&lt;/a&gt; Flags\_String
+### Flags\_String {#SuperOffice_WebApi_Data_TicketCategoryEntity_Flags_String}
 
 A bitmask representing flags for this category.
 Raw string enum value.
@@ -287,7 +287,7 @@ public string Flags_String { get; set; }
 
 [TicketCategoryEntity](SuperOffice.WebApi.Data.TicketCategoryEntity.md).[Flags](SuperOffice.WebApi.Data.TicketCategoryEntity.md\#SuperOffice\_WebApi\_Data\_TicketCategoryEntity\_Flags)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketCategoryEntity_Fullname"&gt;&lt;/a&gt; Fullname
+### Fullname {#SuperOffice_WebApi_Data_TicketCategoryEntity_Fullname}
 
 The fullname (compiled from parents&amp;apos; names) for this category. E.g. &amp;apos;norway/product A/support&amp;apos;.
 
@@ -299,7 +299,7 @@ public virtual string Fullname { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketCategoryEntity_MsgClosingStatus"&gt;&lt;/a&gt; MsgClosingStatus
+### MsgClosingStatus {#SuperOffice_WebApi_Data_TicketCategoryEntity_MsgClosingStatus}
 
 Determines the default status used in the GUI when adding a request to a ticket
 NULL if unknown enum value.
@@ -317,7 +317,7 @@ public TicketCategoryClosingStatus? MsgClosingStatus { get; set; }
 
 [TicketCategoryEntity](SuperOffice.WebApi.Data.TicketCategoryEntity.md).[MsgClosingStatus\_String](SuperOffice.WebApi.Data.TicketCategoryEntity.md\#SuperOffice\_WebApi\_Data\_TicketCategoryEntity\_MsgClosingStatus\_String)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketCategoryEntity_MsgClosingStatus_String"&gt;&lt;/a&gt; MsgClosingStatus\_String
+### MsgClosingStatus\_String {#SuperOffice_WebApi_Data_TicketCategoryEntity_MsgClosingStatus_String}
 
 Determines the default status used in the GUI when adding a request to a ticket
 Raw string enum value.
@@ -335,7 +335,7 @@ public string MsgClosingStatus_String { get; set; }
 
 [TicketCategoryEntity](SuperOffice.WebApi.Data.TicketCategoryEntity.md).[MsgClosingStatus](SuperOffice.WebApi.Data.TicketCategoryEntity.md\#SuperOffice\_WebApi\_Data\_TicketCategoryEntity\_MsgClosingStatus)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketCategoryEntity_Name"&gt;&lt;/a&gt; Name
+### Name {#SuperOffice_WebApi_Data_TicketCategoryEntity_Name}
 
 The (short) name of this category. E.g. &amp;apos;support&amp;apos;.
 
@@ -347,7 +347,7 @@ public virtual string Name { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketCategoryEntity_NotificationEmail"&gt;&lt;/a&gt; NotificationEmail
+### NotificationEmail {#SuperOffice_WebApi_Data_TicketCategoryEntity_NotificationEmail}
 
 Comma separated list of addresses to notify when requests are redelegated to (unassigned) in this category.
 
@@ -359,7 +359,7 @@ public virtual string NotificationEmail { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketCategoryEntity_ParentId"&gt;&lt;/a&gt; ParentId
+### ParentId {#SuperOffice_WebApi_Data_TicketCategoryEntity_ParentId}
 
 The parent category for this category. -1 if this is a toplevel category.
 
@@ -371,7 +371,7 @@ public virtual int ParentId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketCategoryEntity_ReplyTemplate"&gt;&lt;/a&gt; ReplyTemplate
+### ReplyTemplate {#SuperOffice_WebApi_Data_TicketCategoryEntity_ReplyTemplate}
 
 Reply template to merge with messages posted in this category
 
@@ -383,7 +383,7 @@ public virtual int ReplyTemplate { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketCategoryEntity_TicketCategoryId"&gt;&lt;/a&gt; TicketCategoryId
+### TicketCategoryId {#SuperOffice_WebApi_Data_TicketCategoryEntity_TicketCategoryId}
 
 The id of the ticket category. (primary key)
 

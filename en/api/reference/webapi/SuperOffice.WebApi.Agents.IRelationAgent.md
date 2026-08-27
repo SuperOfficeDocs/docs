@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_IRelationAgent"&gt;&lt;/a&gt; Interface IRelationAgent
+# Interface IRelationAgent {#SuperOffice_WebApi_Agents_IRelationAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface IRelationAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_IRelationAgent_CreateDefaultContactRelationEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultContactRelationEntityAsync\(RequestOptions\)
+### CreateDefaultContactRelationEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IRelationAgent_CreateDefaultContactRelationEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new ContactRelationEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -37,7 +37,7 @@ Override language/culture codes on this request.
 
 A blank ContactRelationEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_IRelationAgent_DeleteContactRelationAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteContactRelationAsync\(int, RequestOptions\)
+### DeleteContactRelationAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IRelationAgent_DeleteContactRelationAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the spesified contact relation.
 
@@ -59,7 +59,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IRelationAgent_GetContactRelationEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetContactRelationEntityAsync\(int, RequestOptions\)
+### GetContactRelationEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IRelationAgent_GetContactRelationEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific ContactRelationEntity object.
 
@@ -83,7 +83,7 @@ Override language/culture codes on this request.
 
 ContactRelationEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_IRelationAgent_SaveContactRelationAsync_SuperOffice_WebApi_Data_ContactRelationEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveContactRelationAsync\(ContactRelationEntity, RequestOptions\)
+### SaveContactRelationAsync\(ContactRelationEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IRelationAgent_SaveContactRelationAsync_SuperOffice_WebApi_Data_ContactRelationEntity_SuperOffice_WebApi_RequestOptions_}
 
 Creates a new or updates an existing contact relation.
 

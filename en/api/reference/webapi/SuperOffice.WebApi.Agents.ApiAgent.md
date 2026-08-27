@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_ApiAgent"&gt;&lt;/a&gt; Class ApiAgent
+# Class ApiAgent {#SuperOffice_WebApi_Agents_ApiAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -68,7 +68,7 @@ using (ApiInfoAgent agent = new ApiInfoAgent(mySession))
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Agents_ApiAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; ApiAgent\(HttpClient\)
+### ApiAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_ApiAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: api status info
 
@@ -82,7 +82,7 @@ public ApiAgent(HttpClient httpClient = null)
 
 Use this HTTP client instead of making a new one. Client is disposed when agent is disposed.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ApiAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; ApiAgent\(WebApiOptions, HttpClient\)
+### ApiAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_ApiAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: api status info
 
@@ -102,7 +102,7 @@ Use this HTTP client instead of making a new one. Client is disposed when agent 
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_ApiAgent_GetApiVersionAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetApiVersionAsync\(RequestOptions\)
+### GetApiVersionAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ApiAgent_GetApiVersionAsync_SuperOffice_WebApi_RequestOptions_}
 
 Gets version info from base URL.
 
@@ -122,7 +122,7 @@ Override language/culture codes on this request.
 
 Dictionary containing meta-data: "NetServerVersion", "Services", "Version"
 
-### &lt;a id="SuperOffice_WebApi_Agents_ApiAgent_GetClientFileVersion"&gt;&lt;/a&gt; GetClientFileVersion\(\)
+### GetClientFileVersion\(\) {#SuperOffice_WebApi_Agents_ApiAgent_GetClientFileVersion}
 
 Get the client assembly's file version: "#.#.###.###"
 
@@ -136,7 +136,7 @@ public static string GetClientFileVersion()
 
 This assembly's file version: "#.#.###.###"
 
-### &lt;a id="SuperOffice_WebApi_Agents_ApiAgent_GetTenantStatusAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTenantStatusAsync\(string, string, RequestOptions\)
+### GetTenantStatusAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ApiAgent_GetTenantStatusAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the tenant status for a given customer, in a given environment. 
 Does not need base URL to be set.

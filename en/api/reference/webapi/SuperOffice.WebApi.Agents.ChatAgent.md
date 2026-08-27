@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_ChatAgent"&gt;&lt;/a&gt; Class ChatAgent
+# Class ChatAgent {#SuperOffice_WebApi_Agents_ChatAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -69,7 +69,7 @@ using (ChatAgent agent = new ChatAgent(mySession))
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; ChatAgent\(HttpClient\)
+### ChatAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_ChatAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: Chat functions. Manage chat channels, sessions and messages.
 
@@ -83,7 +83,7 @@ public ChatAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; ChatAgent\(WebApiOptions, HttpClient\)
+### ChatAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_ChatAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: Chat functions. Manage chat channels, sessions and messages.
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_AcceptChatSessionTransferAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AcceptChatSessionTransferAsync\(int, RequestOptions\)
+### AcceptChatSessionTransferAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_AcceptChatSessionTransferAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Accept the transfer: assign the session to the user. If the session is not being transferred, nothing happens.
 
@@ -127,7 +127,7 @@ Override language/culture codes on this request.
 
 The updated chat session
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_AddChatMessageAsync_System_Int32_SuperOffice_WebApi_Data_ChatMessage_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddChatMessageAsync\(int, ChatMessage, RequestOptions\)
+### AddChatMessageAsync\(int, ChatMessage, RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_AddChatMessageAsync_System_Int32_SuperOffice_WebApi_Data_ChatMessage_SuperOffice_WebApi_RequestOptions_}
 
 Add a new message to a chat session
 
@@ -155,7 +155,7 @@ Override language/culture codes on this request.
 
 The chat message added to the session
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_AddChatTopicUserAgentAsync_System_Int32_SuperOffice_WebApi_Data_ChatTopicAgent_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddChatTopicUserAgentAsync\(int, ChatTopicAgent, RequestOptions\)
+### AddChatTopicUserAgentAsync\(int, ChatTopicAgent, RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_AddChatTopicUserAgentAsync_System_Int32_SuperOffice_WebApi_Data_ChatTopicAgent_SuperOffice_WebApi_RequestOptions_}
 
 Add a user to a chat topic
 
@@ -183,7 +183,7 @@ Override language/culture codes on this request.
 
 The user's role within the chat topic.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_ChatSessionsForUserAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ChatSessionsForUserAsync\(RequestOptions\)
+### ChatSessionsForUserAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_ChatSessionsForUserAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get all chat sessions which this user is a member of. Members means that you have at least one of: Can Respond, Notifications, Listen or Manager
 
@@ -203,7 +203,7 @@ Override language/culture codes on this request.
 
 Array of chat sessions the current user can access
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_ChatTopicsForUserAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ChatTopicsForUserAsync\(RequestOptions\)
+### ChatTopicsForUserAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_ChatTopicsForUserAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get all chat topics which this user is a member of. Members means that you have at least one of: Can Respond, Notifications, Listen or Manager
 
@@ -223,7 +223,7 @@ Override language/culture codes on this request.
 
 Array of chat topics the current user can access
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_CreateChatSessionForTopicAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateChatSessionForTopicAsync\(int, RequestOptions\)
+### CreateChatSessionForTopicAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_CreateChatSessionForTopicAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Create a new session on a chat topic
 
@@ -247,7 +247,7 @@ Override language/culture codes on this request.
 
 The new chat session.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_CreateDefaultChatSessionEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultChatSessionEntityAsync\(RequestOptions\)
+### CreateDefaultChatSessionEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_CreateDefaultChatSessionEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new ChatSessionEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -268,7 +268,7 @@ Override language/culture codes on this request.
 
 A blank ChatSessionEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_CreateDefaultChatTopicAgentAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultChatTopicAgentAsync\(RequestOptions\)
+### CreateDefaultChatTopicAgentAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_CreateDefaultChatTopicAgentAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new ChatTopicAgent.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -289,7 +289,7 @@ Override language/culture codes on this request.
 
 A blank ChatTopicAgent
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_CreateDefaultChatTopicEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultChatTopicEntityAsync\(RequestOptions\)
+### CreateDefaultChatTopicEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_CreateDefaultChatTopicEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new ChatTopicEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -310,7 +310,7 @@ Override language/culture codes on this request.
 
 A blank ChatTopicEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_DeleteChatSessionEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteChatSessionEntityAsync\(int, RequestOptions\)
+### DeleteChatSessionEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_DeleteChatSessionEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the ChatSessionEntity
 
@@ -332,7 +332,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_DeleteChatTopicEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteChatTopicEntityAsync\(int, RequestOptions\)
+### DeleteChatTopicEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_DeleteChatTopicEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the ChatTopicEntity
 
@@ -354,7 +354,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_DeleteChatTopicUserAgentAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteChatTopicUserAgentAsync\(int, string, RequestOptions\)
+### DeleteChatTopicUserAgentAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_DeleteChatTopicUserAgentAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Remove a user from a topic
 
@@ -382,7 +382,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_GetChatMessagesAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetChatMessagesAsync\(int, int, RequestOptions\)
+### GetChatMessagesAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_GetChatMessagesAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get all or some of the messages in a chat session
 
@@ -410,7 +410,7 @@ Override language/culture codes on this request.
 
 Array of chat messages in the session
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_GetChatPresenceAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetChatPresenceAsync\(RequestOptions\)
+### GetChatPresenceAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_GetChatPresenceAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get the chat presence status for all chat users
 
@@ -430,7 +430,7 @@ Override language/culture codes on this request.
 
 An array with ChatPresence objects for each user
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_GetChatSessionEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetChatSessionEntityAsync\(int, RequestOptions\)
+### GetChatSessionEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_GetChatSessionEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific ChatSessionEntity object.
 
@@ -454,7 +454,7 @@ Override language/culture codes on this request.
 
 ChatSessionEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_GetChatTopicEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetChatTopicEntityAsync\(int, RequestOptions\)
+### GetChatTopicEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_GetChatTopicEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific ChatTopicEntity object.
 
@@ -478,7 +478,7 @@ Override language/culture codes on this request.
 
 ChatTopicEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_GetChatTopicUserAgentAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetChatTopicUserAgentAsync\(int, string, RequestOptions\)
+### GetChatTopicUserAgentAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_GetChatTopicUserAgentAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get a user assigned to a topic
 
@@ -506,7 +506,7 @@ Override language/culture codes on this request.
 
 The user's role within the chat topic.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_GetChatTopicUserAgentListAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetChatTopicUserAgentListAsync\(int, RequestOptions\)
+### GetChatTopicUserAgentListAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_GetChatTopicUserAgentListAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get list of users assigned to a chat topic
 
@@ -530,7 +530,7 @@ Override language/culture codes on this request.
 
 List of user agents assigned to chat topic.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_GetChatTranscriptAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetChatTranscriptAsync\(int, bool, RequestOptions\)
+### GetChatTranscriptAsync\(int, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_GetChatTranscriptAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Get the chat transcript, formatted as plain text or html
 
@@ -558,7 +558,7 @@ Override language/culture codes on this request.
 
 The transcript in text or HTML
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_GetUserAgentListAsync_System_Boolean_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetUserAgentListAsync\(bool, bool, RequestOptions\)
+### GetUserAgentListAsync\(bool, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_GetUserAgentListAsync_System_Boolean_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Get list of users that can be assigned to chat topics. Users with Chat-CALs from the MDO list 'chatuser'
 
@@ -586,7 +586,7 @@ Override language/culture codes on this request.
 
 List of user agents that can be assigned to chat topics, possibly grouped by usergroup.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_IsWithinOpeningHoursAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; IsWithinOpeningHoursAsync\(int, RequestOptions\)
+### IsWithinOpeningHoursAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_IsWithinOpeningHoursAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Check if we are right now within the opening hours of the given topic. Will use timezones to calculate if configured.
 
@@ -610,7 +610,7 @@ Override language/culture codes on this request.
 
 True if we are within opening hours, or if the topic does not use opening hours
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_PickUpChatSessionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; PickUpChatSessionAsync\(int, RequestOptions\)
+### PickUpChatSessionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_PickUpChatSessionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 'answer' the session: assign the session to the user. The welcome message is sent to the customer. Returns NULL if session was not in queue.
 
@@ -634,7 +634,7 @@ Override language/culture codes on this request.
 
 The chat session
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_PickUpFirstChatSessionAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; PickUpFirstChatSessionAsync\(RequestOptions\)
+### PickUpFirstChatSessionAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_PickUpFirstChatSessionAsync_SuperOffice_WebApi_RequestOptions_}
 
 'answer' the first available session from the queue: assign the session to the user. The welcome message is sent to the customer.
 
@@ -654,7 +654,7 @@ Override language/culture codes on this request.
 
 The picked-up chat session
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_RejectChatSessionTransferAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RejectChatSessionTransferAsync\(int, RequestOptions\)
+### RejectChatSessionTransferAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_RejectChatSessionTransferAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Do not want. Deny the transfer to the user. If the session is not being transferred, nothing happens.
 
@@ -678,7 +678,7 @@ Override language/culture codes on this request.
 
 The updated chat session
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_ResetChatSessionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ResetChatSessionAsync\(int, RequestOptions\)
+### ResetChatSessionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_ResetChatSessionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Reset chat session, put it back on the queue for pickup. Used by bots to hand off a session to human
 
@@ -702,7 +702,7 @@ Override language/culture codes on this request.
 
 The updated chat session
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_SaveChatPresenceAsync_SuperOffice_WebApi_Data_ChatPresence___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveChatPresenceAsync\(ChatPresence\[\], RequestOptions\)
+### SaveChatPresenceAsync\(ChatPresence\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_SaveChatPresenceAsync_SuperOffice_WebApi_Data_ChatPresence___SuperOffice_WebApi_RequestOptions_}
 
 Save the chat presence for specified users
 
@@ -726,7 +726,7 @@ Override language/culture codes on this request.
 
 void
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_SaveChatSessionEntityAsync_SuperOffice_WebApi_Data_ChatSessionEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveChatSessionEntityAsync\(ChatSessionEntity, RequestOptions\)
+### SaveChatSessionEntityAsync\(ChatSessionEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_SaveChatSessionEntityAsync_SuperOffice_WebApi_Data_ChatSessionEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing ChatSessionEntity or creates a new ChatSessionEntity if the id parameter is 0.
 
@@ -750,7 +750,7 @@ Override language/culture codes on this request.
 
 New or updated ChatSessionEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_SaveChatTopicEntityAsync_SuperOffice_WebApi_Data_ChatTopicEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveChatTopicEntityAsync\(ChatTopicEntity, RequestOptions\)
+### SaveChatTopicEntityAsync\(ChatTopicEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_SaveChatTopicEntityAsync_SuperOffice_WebApi_Data_ChatTopicEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing ChatTopicEntity or creates a new ChatTopicEntity if the id parameter is 0.
 
@@ -774,7 +774,7 @@ Override language/culture codes on this request.
 
 New or updated ChatTopicEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_TransferChatSessionAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; TransferChatSessionAsync\(int, string, RequestOptions\)
+### TransferChatSessionAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_TransferChatSessionAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Request to send the session to another user. If the session does not belong to the user, nothing happens.
 
@@ -802,7 +802,7 @@ Override language/culture codes on this request.
 
 The updated chat session
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_UpdateChatTopicUserAgentAsync_System_Int32_System_String_SuperOffice_WebApi_Data_ChatTopicAgent_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; UpdateChatTopicUserAgentAsync\(int, string, ChatTopicAgent, RequestOptions\)
+### UpdateChatTopicUserAgentAsync\(int, string, ChatTopicAgent, RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_UpdateChatTopicUserAgentAsync_System_Int32_System_String_SuperOffice_WebApi_Data_ChatTopicAgent_SuperOffice_WebApi_RequestOptions_}
 
 Update a user's role in a chat topic
 
@@ -834,7 +834,7 @@ Override language/culture codes on this request.
 
 The user's role within the chat topic.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ChatAgent_UpdateChatTopicUserAgentsAsync_System_Int32_SuperOffice_WebApi_Data_ChatTopicAgent___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; UpdateChatTopicUserAgentsAsync\(int, ChatTopicAgent\[\], RequestOptions\)
+### UpdateChatTopicUserAgentsAsync\(int, ChatTopicAgent\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ChatAgent_UpdateChatTopicUserAgentsAsync_System_Int32_SuperOffice_WebApi_Data_ChatTopicAgent___SuperOffice_WebApi_RequestOptions_}
 
 Update users roles in a chat topic
 

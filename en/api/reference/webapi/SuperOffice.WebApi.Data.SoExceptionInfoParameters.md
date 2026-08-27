@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Data_SoExceptionInfoParameters"&gt;&lt;/a&gt; Class SoExceptionInfoParameters
+# Class SoExceptionInfoParameters {#SuperOffice_WebApi_Data_SoExceptionInfoParameters}
 
 Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -60,7 +60,7 @@ public class SoExceptionInfoParameters : Dictionary<string, string>, IDictionary
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Data_SoExceptionInfoParameters__ctor"&gt;&lt;/a&gt; SoExceptionInfoParameters\(\)
+### SoExceptionInfoParameters\(\) {#SuperOffice_WebApi_Data_SoExceptionInfoParameters__ctor}
 
 Default constructor
 
@@ -70,7 +70,7 @@ public SoExceptionInfoParameters()
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Data_SoExceptionInfoParameters_ToString_System_String_"&gt;&lt;/a&gt; ToString\(string\)
+### ToString\(string\) {#SuperOffice_WebApi_Data_SoExceptionInfoParameters_ToString_System_String_}
 
 ```csharp
 public string ToString(string prefix)

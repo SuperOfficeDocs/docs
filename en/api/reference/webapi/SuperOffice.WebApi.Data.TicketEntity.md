@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Data_TicketEntity"&gt;&lt;/a&gt; Class TicketEntity
+# Class TicketEntity {#SuperOffice_WebApi_Data_TicketEntity}
 
 Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -43,7 +43,7 @@ Use &lt;xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" dat
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity__ctor"&gt;&lt;/a&gt; TicketEntity\(\)
+### TicketEntity\(\) {#SuperOffice_WebApi_Data_TicketEntity__ctor}
 
 Default constructor - defaults any enum props to 0.
 
@@ -53,7 +53,7 @@ public TicketEntity()
 
 ## Properties
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_Activate"&gt;&lt;/a&gt; Activate
+### Activate {#SuperOffice_WebApi_Data_TicketEntity_Activate}
 
 When the ticket should be activated, if it is postponed.
 
@@ -65,7 +65,7 @@ public virtual DateTime Activate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_ActiveStatusMonitorId"&gt;&lt;/a&gt; ActiveStatusMonitorId
+### ActiveStatusMonitorId {#SuperOffice_WebApi_Data_TicketEntity_ActiveStatusMonitorId}
 
 Active status monitor identity for related contact. This is a read-only property and is ignored on Save
 
@@ -77,7 +77,7 @@ public virtual int ActiveStatusMonitorId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_AlertLevel"&gt;&lt;/a&gt; AlertLevel
+### AlertLevel {#SuperOffice_WebApi_Data_TicketEntity_AlertLevel}
 
 The alert level for the ticket. Matches the level value of the ticket_alert table.
 
@@ -89,7 +89,7 @@ public virtual short AlertLevel { get; set; }
 
  [short](https://learn.microsoft.com/dotnet/api/system.int16)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_AlertTimeout"&gt;&lt;/a&gt; AlertTimeout
+### AlertTimeout {#SuperOffice_WebApi_Data_TicketEntity_AlertTimeout}
 
 The datetime for when the ticket should jump to the next alert_level.
 
@@ -101,7 +101,7 @@ public virtual DateTime AlertTimeout { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_Author"&gt;&lt;/a&gt; Author
+### Author {#SuperOffice_WebApi_Data_TicketEntity_Author}
 
 A string representing the author of the ticket (same as author of first message).
 
@@ -113,7 +113,7 @@ public virtual string Author { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_BaseStatus"&gt;&lt;/a&gt; BaseStatus
+### BaseStatus {#SuperOffice_WebApi_Data_TicketEntity_BaseStatus}
 
 The status of the ticket. I.e. active/closed/postponed/deleted
 NULL if unknown enum value.
@@ -131,7 +131,7 @@ public TicketBaseStatus? BaseStatus { get; set; }
 
 [TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md).[BaseStatus\_String](SuperOffice.WebApi.Data.TicketEntity.md\#SuperOffice\_WebApi\_Data\_TicketEntity\_BaseStatus\_String)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_BaseStatus_String"&gt;&lt;/a&gt; BaseStatus\_String
+### BaseStatus\_String {#SuperOffice_WebApi_Data_TicketEntity_BaseStatus_String}
 
 The status of the ticket. I.e. active/closed/postponed/deleted
 Raw string enum value.
@@ -149,7 +149,7 @@ public string BaseStatus_String { get; set; }
 
 [TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md).[BaseStatus](SuperOffice.WebApi.Data.TicketEntity.md\#SuperOffice\_WebApi\_Data\_TicketEntity\_BaseStatus)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_Category"&gt;&lt;/a&gt; Category
+### Category {#SuperOffice_WebApi_Data_TicketEntity_Category}
 
 The ticket category entity which this ticket is connected to
 &lt;p&gt;Use MDO List name "ejcategory" to get list items.&lt;/p&gt;
@@ -162,7 +162,7 @@ public virtual TicketCategoryEntity Category { get; set; }
 
  [TicketCategoryEntity](SuperOffice.WebApi.Data.TicketCategoryEntity.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_ClosedAt"&gt;&lt;/a&gt; ClosedAt
+### ClosedAt {#SuperOffice_WebApi_Data_TicketEntity_ClosedAt}
 
 When the ticket was closed.
 
@@ -174,7 +174,7 @@ public virtual DateTime ClosedAt { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_ConnectId"&gt;&lt;/a&gt; ConnectId
+### ConnectId {#SuperOffice_WebApi_Data_TicketEntity_ConnectId}
 
 If a ticket is connected to another ticket, this field is set to the id of the &amp;apos;master&amp;apos; ticket.
 
@@ -186,7 +186,7 @@ public virtual int ConnectId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_CreatedAt"&gt;&lt;/a&gt; CreatedAt
+### CreatedAt {#SuperOffice_WebApi_Data_TicketEntity_CreatedAt}
 
 When the ticket was created.
 
@@ -198,7 +198,7 @@ public virtual DateTime CreatedAt { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_CreatedBy"&gt;&lt;/a&gt; CreatedBy
+### CreatedBy {#SuperOffice_WebApi_Data_TicketEntity_CreatedBy}
 
 The associate who created this ticket
 
@@ -210,7 +210,7 @@ public virtual Associate CreatedBy { get; set; }
 
  [Associate](SuperOffice.WebApi.Data.Associate.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_CustomFields"&gt;&lt;/a&gt; CustomFields
+### CustomFields {#SuperOffice_WebApi_Data_TicketEntity_CustomFields}
 
 Udef + Extra fields added to the carrier. Extra fields as defined by changes to database schema + user-defined fields as defined by admin.
 Custom fields combines user defined fields and extra fields into one bucket. 
@@ -237,7 +237,7 @@ The naming convention of the key string is as follows:
     Example: &lt;pre&gt;&lt;code class="lang-csharp"&gt;'SuperOffice:1' = '[I:123]'&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
        &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_Deadline"&gt;&lt;/a&gt; Deadline
+### Deadline {#SuperOffice_WebApi_Data_TicketEntity_Deadline}
 
 Deadline for ticket.
 
@@ -249,7 +249,7 @@ public virtual DateTime Deadline { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_ExtraFields"&gt;&lt;/a&gt; ExtraFields
+### ExtraFields {#SuperOffice_WebApi_Data_TicketEntity_ExtraFields}
 
 Deprecated: Use &lt;xref href="SuperOffice.WebApi.Data.TicketEntity.CustomFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instead.
 Extra fields added to the carrier. This could be data from Plug-ins, the foreign key system, external applications, etc.
@@ -282,7 +282,7 @@ The naming convention of the key string is as follows:
        We also ensure that SuperOffice data are added first, so that existing data doesnt change when more data sources are added (with duplicate data keys).
        &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_FirstReadByOwner"&gt;&lt;/a&gt; FirstReadByOwner
+### FirstReadByOwner {#SuperOffice_WebApi_Data_TicketEntity_FirstReadByOwner}
 
 The datetime for when the ticket first was read by the current owner.
 
@@ -294,7 +294,7 @@ public virtual DateTime FirstReadByOwner { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_FirstReadByUser"&gt;&lt;/a&gt; FirstReadByUser
+### FirstReadByUser {#SuperOffice_WebApi_Data_TicketEntity_FirstReadByUser}
 
 The datetime for when the ticket first was read by a user.
 
@@ -306,7 +306,7 @@ public virtual DateTime FirstReadByUser { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_FormSubmission"&gt;&lt;/a&gt; FormSubmission
+### FormSubmission {#SuperOffice_WebApi_Data_TicketEntity_FormSubmission}
 
 The form submission that this ticket is connected to
 
@@ -318,7 +318,7 @@ public virtual TicketFormSubmission FormSubmission { get; set; }
 
  [TicketFormSubmission](SuperOffice.WebApi.Data.TicketFormSubmission.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_FromAddress"&gt;&lt;/a&gt; FromAddress
+### FromAddress {#SuperOffice_WebApi_Data_TicketEntity_FromAddress}
 
 The from-address used when this ticket got created, e.g. by email
 
@@ -330,7 +330,7 @@ public virtual string FromAddress { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_HasAttachment"&gt;&lt;/a&gt; HasAttachment
+### HasAttachment {#SuperOffice_WebApi_Data_TicketEntity_HasAttachment}
 
 Boolean indicating if this ticket has one or more attachments.
 
@@ -342,7 +342,7 @@ public virtual bool HasAttachment { get; set; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_IconHint"&gt;&lt;/a&gt; IconHint
+### IconHint {#SuperOffice_WebApi_Data_TicketEntity_IconHint}
 
 Icon representing ticket's state
 
@@ -354,7 +354,7 @@ public virtual string IconHint { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_Language"&gt;&lt;/a&gt; Language
+### Language {#SuperOffice_WebApi_Data_TicketEntity_Language}
 
 The language of the first external message
 
@@ -366,7 +366,7 @@ public virtual string Language { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_LastChanged"&gt;&lt;/a&gt; LastChanged
+### LastChanged {#SuperOffice_WebApi_Data_TicketEntity_LastChanged}
 
 The last time the ticket was modified.
 
@@ -378,7 +378,7 @@ public virtual DateTime LastChanged { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_Messages"&gt;&lt;/a&gt; Messages
+### Messages {#SuperOffice_WebApi_Data_TicketEntity_Messages}
 
 TicketMessageId,CreatedAt,SLevel and Important for all the messages connected to this ticket. For message body see the TicketMessageEntity or the TicketMessage archive.
 
@@ -390,7 +390,7 @@ public virtual TicketMessage[] Messages { get; set; }
 
  [TicketMessage](SuperOffice.WebApi.Data.TicketMessage.md)\[\]
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_NumMessages"&gt;&lt;/a&gt; NumMessages
+### NumMessages {#SuperOffice_WebApi_Data_TicketEntity_NumMessages}
 
 The total number of messages for this request.
 
@@ -402,7 +402,7 @@ public virtual int NumMessages { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_NumReplies"&gt;&lt;/a&gt; NumReplies
+### NumReplies {#SuperOffice_WebApi_Data_TicketEntity_NumReplies}
 
 The number of replies (messages) to the customer for this request.
 
@@ -414,7 +414,7 @@ public virtual int NumReplies { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_OrigHumanCategoryId"&gt;&lt;/a&gt; OrigHumanCategoryId
+### OrigHumanCategoryId {#SuperOffice_WebApi_Data_TicketEntity_OrigHumanCategoryId}
 
 Will contain the category id selected by the user, when having the choice of using the suggested category or manually selecting a category
 
@@ -426,7 +426,7 @@ public virtual int OrigHumanCategoryId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_Origin"&gt;&lt;/a&gt; Origin
+### Origin {#SuperOffice_WebApi_Data_TicketEntity_Origin}
 
 What is the origin of this ticket
 NULL if unknown enum value.
@@ -444,7 +444,7 @@ public TicketOrigin? Origin { get; set; }
 
 [TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md).[Origin\_String](SuperOffice.WebApi.Data.TicketEntity.md\#SuperOffice\_WebApi\_Data\_TicketEntity\_Origin\_String)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_Origin_String"&gt;&lt;/a&gt; Origin\_String
+### Origin\_String {#SuperOffice_WebApi_Data_TicketEntity_Origin_String}
 
 What is the origin of this ticket
 Raw string enum value.
@@ -462,7 +462,7 @@ public string Origin_String { get; set; }
 
 [TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md).[Origin](SuperOffice.WebApi.Data.TicketEntity.md\#SuperOffice\_WebApi\_Data\_TicketEntity\_Origin)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_OwnedBy"&gt;&lt;/a&gt; OwnedBy
+### OwnedBy {#SuperOffice_WebApi_Data_TicketEntity_OwnedBy}
 
 The associate who owns this ticket. Setting the id to 0 will make the ticket unassigned. Setting the id to 2147483647 (MaxInt) will make it automatically assigned according to the ticket category assignment rules.
 &lt;p&gt;Use MDO List name "associate" to get list items.&lt;/p&gt;
@@ -475,7 +475,7 @@ public virtual Associate OwnedBy { get; set; }
 
  [Associate](SuperOffice.WebApi.Data.Associate.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_Person"&gt;&lt;/a&gt; Person
+### Person {#SuperOffice_WebApi_Data_TicketEntity_Person}
 
 The primary person that this ticket is connected to
 &lt;p&gt;Use MDO List name "person_new" to get list items.&lt;/p&gt;
@@ -488,7 +488,7 @@ public virtual Person Person { get; set; }
 
  [Person](SuperOffice.WebApi.Data.Person.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_Priority"&gt;&lt;/a&gt; Priority
+### Priority {#SuperOffice_WebApi_Data_TicketEntity_Priority}
 
 The ticket priority entity which this ticket is connected to
 &lt;p&gt;Use MDO List name "ticketpriority" to get list items.&lt;/p&gt;
@@ -501,7 +501,7 @@ public virtual TicketPriorityEntity Priority { get; set; }
 
  [TicketPriorityEntity](SuperOffice.WebApi.Data.TicketPriorityEntity.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_Project"&gt;&lt;/a&gt; Project
+### Project {#SuperOffice_WebApi_Data_TicketEntity_Project}
 
 The project that this ticket is connected to
 &lt;p&gt;Use MDO List name "project" to get list items.&lt;/p&gt;
@@ -514,7 +514,7 @@ public virtual Project Project { get; set; }
 
  [Project](SuperOffice.WebApi.Data.Project.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_ReadByCustomer"&gt;&lt;/a&gt; ReadByCustomer
+### ReadByCustomer {#SuperOffice_WebApi_Data_TicketEntity_ReadByCustomer}
 
 The datetime for when the ticket was read by the customer.
 
@@ -526,7 +526,7 @@ public virtual DateTime ReadByCustomer { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_ReadByOwner"&gt;&lt;/a&gt; ReadByOwner
+### ReadByOwner {#SuperOffice_WebApi_Data_TicketEntity_ReadByOwner}
 
 The datetime for when the ticket last was read by the owner.
 
@@ -538,7 +538,7 @@ public virtual DateTime ReadByOwner { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_ReadStatus"&gt;&lt;/a&gt; ReadStatus
+### ReadStatus {#SuperOffice_WebApi_Data_TicketEntity_ReadStatus}
 
 Whether the owner has read the ticket or not (red, yellow, green).
 NULL if unknown enum value.
@@ -556,7 +556,7 @@ public TicketReadStatus? ReadStatus { get; set; }
 
 [TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md).[ReadStatus\_String](SuperOffice.WebApi.Data.TicketEntity.md\#SuperOffice\_WebApi\_Data\_TicketEntity\_ReadStatus\_String)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_ReadStatus_String"&gt;&lt;/a&gt; ReadStatus\_String
+### ReadStatus\_String {#SuperOffice_WebApi_Data_TicketEntity_ReadStatus_String}
 
 Whether the owner has read the ticket or not (red, yellow, green).
 Raw string enum value.
@@ -574,7 +574,7 @@ public string ReadStatus_String { get; set; }
 
 [TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md).[ReadStatus](SuperOffice.WebApi.Data.TicketEntity.md\#SuperOffice\_WebApi\_Data\_TicketEntity\_ReadStatus)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_RealTimeSpentExternally"&gt;&lt;/a&gt; RealTimeSpentExternally
+### RealTimeSpentExternally {#SuperOffice_WebApi_Data_TicketEntity_RealTimeSpentExternally}
 
 The total time (seconds) within 24x7 the ticket has been in a external waiting status (configurable), not including current state
 
@@ -586,7 +586,7 @@ public virtual int RealTimeSpentExternally { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_RealTimeSpentInternally"&gt;&lt;/a&gt; RealTimeSpentInternally
+### RealTimeSpentInternally {#SuperOffice_WebApi_Data_TicketEntity_RealTimeSpentInternally}
 
 The total time (seconds) within 24x7 the ticket has been in an open status (configurable), not including current state
 
@@ -598,7 +598,7 @@ public virtual int RealTimeSpentInternally { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_RealTimeSpentQueue"&gt;&lt;/a&gt; RealTimeSpentQueue
+### RealTimeSpentQueue {#SuperOffice_WebApi_Data_TicketEntity_RealTimeSpentQueue}
 
 The total time (seconds) within 24x7 hours the ticket has been in a queue status, not including current state
 
@@ -610,7 +610,7 @@ public virtual int RealTimeSpentQueue { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_RealTimeToClose"&gt;&lt;/a&gt; RealTimeToClose
+### RealTimeToClose {#SuperOffice_WebApi_Data_TicketEntity_RealTimeToClose}
 
 Same as time_to_close, but not calculated based on priority.
 
@@ -622,7 +622,7 @@ public virtual int RealTimeToClose { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_RealTimeToReply"&gt;&lt;/a&gt; RealTimeToReply
+### RealTimeToReply {#SuperOffice_WebApi_Data_TicketEntity_RealTimeToReply}
 
 Same as time_to_reply, but not calculated based on priority.
 
@@ -634,7 +634,7 @@ public virtual int RealTimeToReply { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_RepliedAt"&gt;&lt;/a&gt; RepliedAt
+### RepliedAt {#SuperOffice_WebApi_Data_TicketEntity_RepliedAt}
 
 The datetime for when the ticket was replied to. I.e. the first external message added to the ticket.
 
@@ -646,7 +646,7 @@ public virtual DateTime RepliedAt { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_Sale"&gt;&lt;/a&gt; Sale
+### Sale {#SuperOffice_WebApi_Data_TicketEntity_Sale}
 
 The sale that this ticket is connected to
 &lt;p&gt;Use MDO List name "sale" to get list items.&lt;/p&gt;
@@ -659,7 +659,7 @@ public virtual Sale Sale { get; set; }
 
  [Sale](SuperOffice.WebApi.Data.Sale.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_SecondaryPersons"&gt;&lt;/a&gt; SecondaryPersons
+### SecondaryPersons {#SuperOffice_WebApi_Data_TicketEntity_SecondaryPersons}
 
 The secondary persons this ticket is connected to
 &lt;p&gt;Use MDO List name "person_new" to get list items.&lt;/p&gt;
@@ -672,7 +672,7 @@ public virtual Person[] SecondaryPersons { get; set; }
 
  [Person](SuperOffice.WebApi.Data.Person.md)\[\]
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_Sentiment"&gt;&lt;/a&gt; Sentiment
+### Sentiment {#SuperOffice_WebApi_Data_TicketEntity_Sentiment}
 
 The sentiment index of the last external message
 
@@ -684,7 +684,7 @@ public virtual int Sentiment { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_SentimentConfidence"&gt;&lt;/a&gt; SentimentConfidence
+### SentimentConfidence {#SuperOffice_WebApi_Data_TicketEntity_SentimentConfidence}
 
 The sentiment confidence of the last external message
 
@@ -696,7 +696,7 @@ public virtual int SentimentConfidence { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_Slevel"&gt;&lt;/a&gt; Slevel
+### Slevel {#SuperOffice_WebApi_Data_TicketEntity_Slevel}
 
 The securitylevel of the ticket.
 NULL if unknown enum value.
@@ -714,7 +714,7 @@ public TicketSecurityLevel? Slevel { get; set; }
 
 [TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md).[Slevel\_String](SuperOffice.WebApi.Data.TicketEntity.md\#SuperOffice\_WebApi\_Data\_TicketEntity\_Slevel\_String)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_Slevel_String"&gt;&lt;/a&gt; Slevel\_String
+### Slevel\_String {#SuperOffice_WebApi_Data_TicketEntity_Slevel_String}
 
 The securitylevel of the ticket.
 Raw string enum value.
@@ -732,7 +732,7 @@ public string Slevel_String { get; set; }
 
 [TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md).[Slevel](SuperOffice.WebApi.Data.TicketEntity.md\#SuperOffice\_WebApi\_Data\_TicketEntity\_Slevel)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_Status"&gt;&lt;/a&gt; Status
+### Status {#SuperOffice_WebApi_Data_TicketEntity_Status}
 
 The ticket status entity which this ticket is connected to
 &lt;p&gt;Use MDO List name "ticketstatus" to get list items.&lt;/p&gt;
@@ -745,7 +745,7 @@ public virtual TicketStatusEntity Status { get; set; }
 
  [TicketStatusEntity](SuperOffice.WebApi.Data.TicketStatusEntity.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_SuggestedCategoryId"&gt;&lt;/a&gt; SuggestedCategoryId
+### SuggestedCategoryId {#SuperOffice_WebApi_Data_TicketEntity_SuggestedCategoryId}
 
 Suggestion for categorization, based on the text of the message (AI)
 
@@ -757,7 +757,7 @@ public virtual int SuggestedCategoryId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_SuggestedCategoryName"&gt;&lt;/a&gt; SuggestedCategoryName
+### SuggestedCategoryName {#SuperOffice_WebApi_Data_TicketEntity_SuggestedCategoryName}
 
 Suggested category from AI
 
@@ -769,7 +769,7 @@ public virtual string SuggestedCategoryName { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_Tags"&gt;&lt;/a&gt; Tags
+### Tags {#SuperOffice_WebApi_Data_TicketEntity_Tags}
 
 An array containing the tags assigned to this request
 
@@ -781,7 +781,7 @@ public virtual Tag[] Tags { get; set; }
 
  [Tag](SuperOffice.WebApi.Data.Tag.md)\[\]
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_TicketId"&gt;&lt;/a&gt; TicketId
+### TicketId {#SuperOffice_WebApi_Data_TicketEntity_TicketId}
 
 The primary key (auto-incremented)
 
@@ -793,7 +793,7 @@ public virtual int TicketId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_TicketType"&gt;&lt;/a&gt; TicketType
+### TicketType {#SuperOffice_WebApi_Data_TicketEntity_TicketType}
 
 Type of the Request
 &lt;p&gt;Use MDO List name "TicketType" to get list items.&lt;/p&gt;
@@ -806,7 +806,7 @@ public virtual TicketType TicketType { get; set; }
 
  [TicketType](SuperOffice.WebApi.Data.TicketType.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_TimeSpent"&gt;&lt;/a&gt; TimeSpent
+### TimeSpent {#SuperOffice_WebApi_Data_TicketEntity_TimeSpent}
 
 The total time (minutes). Aggregated time spent from ticket&amp;apos;s messages. Read-only for external use.
 
@@ -818,7 +818,7 @@ public virtual int TimeSpent { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_TimeSpentExternally"&gt;&lt;/a&gt; TimeSpentExternally
+### TimeSpentExternally {#SuperOffice_WebApi_Data_TicketEntity_TimeSpentExternally}
 
 The total time (seconds) within the priority's office hours the ticket has been in a external waiting status (configurable), not including current state
 
@@ -830,7 +830,7 @@ public virtual int TimeSpentExternally { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_TimeSpentInternally"&gt;&lt;/a&gt; TimeSpentInternally
+### TimeSpentInternally {#SuperOffice_WebApi_Data_TicketEntity_TimeSpentInternally}
 
 The total time (seconds) within the priority's office hours the ticket has been in an open status (configurable), not including current state
 
@@ -842,7 +842,7 @@ public virtual int TimeSpentInternally { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_TimeSpentQueue"&gt;&lt;/a&gt; TimeSpentQueue
+### TimeSpentQueue {#SuperOffice_WebApi_Data_TicketEntity_TimeSpentQueue}
 
 The total time (seconds) within the priority's office hours the ticket has been in a queue status, not including current state
 
@@ -854,7 +854,7 @@ public virtual int TimeSpentQueue { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_TimeToClose"&gt;&lt;/a&gt; TimeToClose
+### TimeToClose {#SuperOffice_WebApi_Data_TicketEntity_TimeToClose}
 
 The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority&amp;apos;s timeframe.
 
@@ -866,7 +866,7 @@ public virtual int TimeToClose { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_TimeToReply"&gt;&lt;/a&gt; TimeToReply
+### TimeToReply {#SuperOffice_WebApi_Data_TicketEntity_TimeToReply}
 
 The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority&amp;apos;s timeframe.
 
@@ -878,7 +878,7 @@ public virtual int TimeToReply { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_TicketEntity_Title"&gt;&lt;/a&gt; Title
+### Title {#SuperOffice_WebApi_Data_TicketEntity_Title}
 
 The title of the ticket.
 

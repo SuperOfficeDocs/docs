@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent"&gt;&lt;/a&gt; Class CRMScriptAgent
+# Class CRMScriptAgent {#SuperOffice_WebApi_Agents_CRMScriptAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -71,7 +71,7 @@ using (CRMScriptAgent agent = new CRMScriptAgent(mySession))
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; CRMScriptAgent\(HttpClient\)
+### CRMScriptAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_CRMScriptAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: Manage and execute CRMScript functions.
 
@@ -85,7 +85,7 @@ public CRMScriptAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; CRMScriptAgent\(WebApiOptions, HttpClient\)
+### CRMScriptAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_CRMScriptAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: Manage and execute CRMScript functions.
 
@@ -105,7 +105,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_CreateDefaultCRMScriptEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultCRMScriptEntityAsync\(RequestOptions\)
+### CreateDefaultCRMScriptEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_CreateDefaultCRMScriptEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new CRMScriptEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -126,7 +126,7 @@ Override language/culture codes on this request.
 
 A blank CRMScriptEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_CreateDefaultTriggerScriptEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultTriggerScriptEntityAsync\(RequestOptions\)
+### CreateDefaultTriggerScriptEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_CreateDefaultTriggerScriptEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new TriggerScriptEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -147,7 +147,7 @@ Override language/culture codes on this request.
 
 A blank TriggerScriptEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_DeleteCRMScriptByUniqueIdentifierAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteCRMScriptByUniqueIdentifierAsync\(string, RequestOptions\)
+### DeleteCRMScriptByUniqueIdentifierAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_DeleteCRMScriptByUniqueIdentifierAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Delete the CRMScript
 &lt;p&gt;&lt;/p&gt;
@@ -173,7 +173,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_DeleteCRMScriptEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteCRMScriptEntityAsync\(int, RequestOptions\)
+### DeleteCRMScriptEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_DeleteCRMScriptEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the CRMScriptEntity
 &lt;p&gt;&lt;/p&gt;
@@ -197,7 +197,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_DeleteTriggerScriptByUniqueIdAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteTriggerScriptByUniqueIdAsync\(string, RequestOptions\)
+### DeleteTriggerScriptByUniqueIdAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_DeleteTriggerScriptByUniqueIdAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Delete a trigger CRMScript.
 &lt;p&gt;&lt;/p&gt;
@@ -223,7 +223,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_DeleteTriggerScriptEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteTriggerScriptEntityAsync\(int, RequestOptions\)
+### DeleteTriggerScriptEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_DeleteTriggerScriptEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the TriggerScriptEntity
 &lt;p&gt;&lt;/p&gt;
@@ -247,7 +247,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_ExecuteScriptAsEventAsync_System_Int32_SuperOffice_WebApi_Data_EventData_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ExecuteScriptAsEventAsync\(int, EventData, RequestOptions\)
+### ExecuteScriptAsEventAsync\(int, EventData, RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_ExecuteScriptAsEventAsync_System_Int32_SuperOffice_WebApi_Data_EventData_SuperOffice_WebApi_RequestOptions_}
 
 Execute a CRMScript with event data as input. Returns event data with output variable values.
 &lt;p&gt;&lt;/p&gt;
@@ -277,7 +277,7 @@ Override language/culture codes on this request.
 
 The EventData instance after script execution with output values
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_ExecuteScriptAsEventByUniqueIdAsync_System_String_SuperOffice_WebApi_Data_EventData_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ExecuteScriptAsEventByUniqueIdAsync\(string, EventData, RequestOptions\)
+### ExecuteScriptAsEventByUniqueIdAsync\(string, EventData, RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_ExecuteScriptAsEventByUniqueIdAsync_System_String_SuperOffice_WebApi_Data_EventData_SuperOffice_WebApi_RequestOptions_}
 
 Execute a CRMScript with event data as input. Returns event data with output variable values.
 &lt;p&gt;&lt;/p&gt;
@@ -307,7 +307,7 @@ Override language/culture codes on this request.
 
 The EventData instance after script execution with output values
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_ExecuteScriptAsync_System_Int32_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ExecuteScriptAsync\(int, StringDictionary, RequestOptions\)
+### ExecuteScriptAsync\(int, StringDictionary, RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_ExecuteScriptAsync_System_Int32_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_}
 
 Execute a CRMScript with parameters, returning printed output value.
 &lt;p&gt;&lt;/p&gt;
@@ -337,7 +337,7 @@ Override language/culture codes on this request.
 
 The output produced by the CRMScript
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_ExecuteScriptByIncludeIdAsync_System_String_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ExecuteScriptByIncludeIdAsync\(string, StringDictionary, RequestOptions\)
+### ExecuteScriptByIncludeIdAsync\(string, StringDictionary, RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_ExecuteScriptByIncludeIdAsync_System_String_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_}
 
 Execute a CRMScript with parameters, returning printed output value.
 &lt;p&gt;&lt;/p&gt;
@@ -367,7 +367,7 @@ Override language/culture codes on this request.
 
 The output produced by the CRMScript
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_ExecuteScriptByStringAsync_System_String_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_Data_EventData_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ExecuteScriptByStringAsync\(string, StringDictionary, EventData, RequestOptions\)
+### ExecuteScriptByStringAsync\(string, StringDictionary, EventData, RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_ExecuteScriptByStringAsync_System_String_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_Data_EventData_SuperOffice_WebApi_RequestOptions_}
 
 Execute a CRMScript 2 (JavaScript), returning the printed output value.
 &lt;p&gt;&lt;/p&gt;
@@ -401,7 +401,7 @@ Override language/culture codes on this request.
 
 The output produced by the CRMScript
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_ExecuteScriptByUniqueIdAsync_System_String_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ExecuteScriptByUniqueIdAsync\(string, StringDictionary, RequestOptions\)
+### ExecuteScriptByUniqueIdAsync\(string, StringDictionary, RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_ExecuteScriptByUniqueIdAsync_System_String_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_}
 
 Execute a CRMScript with parameters, returning printed output value.
 &lt;p&gt;&lt;/p&gt;
@@ -431,7 +431,7 @@ Override language/culture codes on this request.
 
 The output produced by the CRMScript
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_GetCRMScriptByUniqueIdentifierAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCRMScriptByUniqueIdentifierAsync\(string, RequestOptions\)
+### GetCRMScriptByUniqueIdentifierAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_GetCRMScriptByUniqueIdentifierAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get information about a script from a unique identifier
 &lt;p&gt;&lt;/p&gt;
@@ -457,7 +457,7 @@ Override language/culture codes on this request.
 
 Information about CRMScript
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_GetCRMScriptEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCRMScriptEntityAsync\(int, RequestOptions\)
+### GetCRMScriptEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_GetCRMScriptEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific CRMScriptEntity object.
 &lt;p&gt;&lt;/p&gt;
@@ -483,7 +483,7 @@ Override language/culture codes on this request.
 
 CRMScriptEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_GetTriggerScriptByUniqueIdAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTriggerScriptByUniqueIdAsync\(string, RequestOptions\)
+### GetTriggerScriptByUniqueIdAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_GetTriggerScriptByUniqueIdAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get a trigger CRMScript.
 &lt;p&gt;&lt;/p&gt;
@@ -509,7 +509,7 @@ Override language/culture codes on this request.
 
 Trigger script details and source code.
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_GetTriggerScriptEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTriggerScriptEntityAsync\(int, RequestOptions\)
+### GetTriggerScriptEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_GetTriggerScriptEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific TriggerScriptEntity object.
 &lt;p&gt;&lt;/p&gt;
@@ -535,7 +535,7 @@ Override language/culture codes on this request.
 
 TriggerScriptEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_ResolveIncludesAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ResolveIncludesAsync\(string, bool, RequestOptions\)
+### ResolveIncludesAsync\(string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_ResolveIncludesAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Will resolve all includes for a TypeScript and return an array of the IDs
 &lt;p&gt;&lt;/p&gt;
@@ -565,7 +565,7 @@ Override language/culture codes on this request.
 
 The ids of all the included scripts
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_SaveCRMScriptByUniqueIdentifierAsync_System_String_SuperOffice_WebApi_Data_Script_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveCRMScriptByUniqueIdentifierAsync\(string, Script, RequestOptions\)
+### SaveCRMScriptByUniqueIdentifierAsync\(string, Script, RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_SaveCRMScriptByUniqueIdentifierAsync_System_String_SuperOffice_WebApi_Data_Script_SuperOffice_WebApi_RequestOptions_}
 
 Create or Update the CRMScript information
 &lt;p&gt;&lt;/p&gt;
@@ -595,7 +595,7 @@ Override language/culture codes on this request.
 
 Information about the CRMScript as saved in the database
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_SaveCRMScriptEntityAsync_SuperOffice_WebApi_Data_CRMScriptEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveCRMScriptEntityAsync\(CRMScriptEntity, RequestOptions\)
+### SaveCRMScriptEntityAsync\(CRMScriptEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_SaveCRMScriptEntityAsync_SuperOffice_WebApi_Data_CRMScriptEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing CRMScriptEntity or creates a new CRMScriptEntity if the id parameter is 0. 
 &lt;p&gt;&lt;/p&gt;
@@ -621,7 +621,7 @@ Override language/culture codes on this request.
 
 New or updated CRMScriptEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_SaveCRMScriptEntityWithoutCompileAsync_SuperOffice_WebApi_Data_CRMScriptEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveCRMScriptEntityWithoutCompileAsync\(CRMScriptEntity, RequestOptions\)
+### SaveCRMScriptEntityWithoutCompileAsync\(CRMScriptEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_SaveCRMScriptEntityWithoutCompileAsync_SuperOffice_WebApi_Data_CRMScriptEntity_SuperOffice_WebApi_RequestOptions_}
 
 Save the script directly without compiling TypeScript
 &lt;p&gt;&lt;/p&gt;
@@ -647,7 +647,7 @@ Override language/culture codes on this request.
 
 The saved entity
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_SaveTriggerScriptByUniqueIdAsync_System_String_SuperOffice_WebApi_Data_TriggerScriptEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveTriggerScriptByUniqueIdAsync\(string, TriggerScriptEntity, RequestOptions\)
+### SaveTriggerScriptByUniqueIdAsync\(string, TriggerScriptEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_SaveTriggerScriptByUniqueIdAsync_System_String_SuperOffice_WebApi_Data_TriggerScriptEntity_SuperOffice_WebApi_RequestOptions_}
 
 Validate a CRMScript. This will check that the syntax is correct
 &lt;p&gt;&lt;/p&gt;
@@ -677,7 +677,7 @@ Override language/culture codes on this request.
 
 Trigger script details and source code.
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_SaveTriggerScriptEntityAsync_SuperOffice_WebApi_Data_TriggerScriptEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveTriggerScriptEntityAsync\(TriggerScriptEntity, RequestOptions\)
+### SaveTriggerScriptEntityAsync\(TriggerScriptEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_SaveTriggerScriptEntityAsync_SuperOffice_WebApi_Data_TriggerScriptEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing TriggerScriptEntity or creates a new TriggerScriptEntity if the id parameter is 0. 
 &lt;p&gt;&lt;/p&gt;
@@ -703,7 +703,7 @@ Override language/culture codes on this request.
 
 New or updated TriggerScriptEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_ValidateScriptAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ValidateScriptAsync\(int, RequestOptions\)
+### ValidateScriptAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_ValidateScriptAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Validate a CRMScript. This will check that the syntax is correct
 &lt;p&gt;&lt;/p&gt;
@@ -729,7 +729,7 @@ Override language/culture codes on this request.
 
 True if the syntax is correct
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_ValidateScriptByIncludeIdAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ValidateScriptByIncludeIdAsync\(string, RequestOptions\)
+### ValidateScriptByIncludeIdAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_ValidateScriptByIncludeIdAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Validate a CRMScript. This will check that the syntax is correct
 &lt;p&gt;&lt;/p&gt;
@@ -755,7 +755,7 @@ Override language/culture codes on this request.
 
 True if the syntax is correct
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_ValidateScriptByStringAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ValidateScriptByStringAsync\(string, RequestOptions\)
+### ValidateScriptByStringAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_ValidateScriptByStringAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Validate a CRMScript 2 (JavaScript). This will check that the syntax is correct
 &lt;p&gt;&lt;/p&gt;
@@ -781,7 +781,7 @@ Override language/culture codes on this request.
 
 The result of the syntax check
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_ValidateScriptByUniqueIdAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ValidateScriptByUniqueIdAsync\(string, RequestOptions\)
+### ValidateScriptByUniqueIdAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_ValidateScriptByUniqueIdAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Validate a CRMScript. This will check that the syntax is correct
 &lt;p&gt;&lt;/p&gt;
@@ -807,7 +807,7 @@ Override language/culture codes on this request.
 
 True if the syntax is correct
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_ValidateTriggerScriptAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ValidateTriggerScriptAsync\(int, RequestOptions\)
+### ValidateTriggerScriptAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_ValidateTriggerScriptAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Validate a Trigger CRMScript. This will check that the syntax is correct, but not execute the script.
 &lt;p&gt;&lt;/p&gt;
@@ -833,7 +833,7 @@ Override language/culture codes on this request.
 
 True if the syntax is correct
 
-### &lt;a id="SuperOffice_WebApi_Agents_CRMScriptAgent_ValidateTriggerScriptByUniqueIdAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ValidateTriggerScriptByUniqueIdAsync\(string, RequestOptions\)
+### ValidateTriggerScriptByUniqueIdAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_CRMScriptAgent_ValidateTriggerScriptByUniqueIdAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Validate a Trigger CRMScript. This will check that the syntax is correct, but not execute the script.
 &lt;p&gt;&lt;/p&gt;

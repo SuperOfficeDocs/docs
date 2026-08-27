@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword"&gt;&lt;/a&gt; Class AuthorizationUsernamePassword
+# Class AuthorizationUsernamePassword {#SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword}
 
 Namespace: [SuperOffice.WebApi.Authorization](SuperOffice.WebApi.Authorization.md)  
 Assembly: SuperOffice.WebApi.Authorization.dll  
@@ -30,7 +30,7 @@ public class AuthorizationUsernamePassword : IAuthorization
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword__ctor_System_String_System_String_"&gt;&lt;/a&gt; AuthorizationUsernamePassword\(string, string\)
+### AuthorizationUsernamePassword\(string, string\) {#SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword__ctor_System_String_System_String_}
 
 UserNamePasswordAuthorization Constructor
 
@@ -50,7 +50,7 @@ Users password.
 
 ## Properties
 
-### &lt;a id="SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword_RefreshAuthorizationAsync"&gt;&lt;/a&gt; RefreshAuthorizationAsync
+### RefreshAuthorizationAsync {#SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword_RefreshAuthorizationAsync}
 
 Try to refresh this &lt;xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instance.
 
@@ -64,7 +64,7 @@ public Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword_GetAuthorization"&gt;&lt;/a&gt; GetAuthorization\(\)
+### GetAuthorization\(\) {#SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword_GetAuthorization}
 
 Gets a tuple that represents authorization scheme and parameter for a base64 encoded username:password.
 

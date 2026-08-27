@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_TooltipsAgent"&gt;&lt;/a&gt; Class TooltipsAgent
+# Class TooltipsAgent {#SuperOffice_WebApi_Agents_TooltipsAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -69,7 +69,7 @@ using (TooltipsAgent agent = new TooltipsAgent(mySession))
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Agents_TooltipsAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; TooltipsAgent\(HttpClient\)
+### TooltipsAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_TooltipsAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: Tooltip system, hint to text transformation
 
@@ -83,7 +83,7 @@ public TooltipsAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### &lt;a id="SuperOffice_WebApi_Agents_TooltipsAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; TooltipsAgent\(WebApiOptions, HttpClient\)
+### TooltipsAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_TooltipsAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: Tooltip system, hint to text transformation
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_TooltipsAgent_GetTooltipAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTooltipAsync\(string, RequestOptions\)
+### GetTooltipAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_TooltipsAgent_GetTooltipAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Parse a tooltip hint and return a tooltip. The returned tooltip string may contain resource string identifiers (in square brackets), to be processed by the resource manager.&lt;para /&gt;The tooltip hint is either a literal text, representing itself, or a set of key/value pairs enclosed in curly braces. Each key is separated from its value by an equals sign, and each pair from the next by an ampersand, according to usual conventions.&lt;para /&gt;A typical tooltip hint could be \{contact_id=123\} or \{appointment_id=222&amp;amp;mode=simple\}
 

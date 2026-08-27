@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Authorization_IAuthorization"&gt;&lt;/a&gt; Interface IAuthorization
+# Interface IAuthorization {#SuperOffice_WebApi_Authorization_IAuthorization}
 
 Namespace: [SuperOffice.WebApi.Authorization](SuperOffice.WebApi.Authorization.md)  
 Assembly: SuperOffice.WebApi.Authorization.dll  
@@ -13,7 +13,7 @@ public interface IAuthorization
 
 ## Properties
 
-### &lt;a id="SuperOffice_WebApi_Authorization_IAuthorization_RefreshAuthorizationAsync"&gt;&lt;/a&gt; RefreshAuthorizationAsync
+### RefreshAuthorizationAsync {#SuperOffice_WebApi_Authorization_IAuthorization_RefreshAuthorizationAsync}
 
 Delegate called when authentication fails. Use to acquire and return a new authentication header value.
 
@@ -27,7 +27,7 @@ Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync { get;
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Authorization_IAuthorization_GetAuthorization"&gt;&lt;/a&gt; GetAuthorization\(\)
+### GetAuthorization\(\) {#SuperOffice_WebApi_Authorization_IAuthorization_GetAuthorization}
 
 Return the HTTP Authorization scheme and parameters as an AuthenticationHeaderValue.
 

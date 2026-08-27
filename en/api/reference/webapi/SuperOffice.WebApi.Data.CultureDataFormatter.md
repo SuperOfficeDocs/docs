@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter"&gt;&lt;/a&gt; Class CultureDataFormatter
+# Class CultureDataFormatter {#SuperOffice_WebApi_Data_CultureDataFormatter}
 
 Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -43,7 +43,7 @@ to the current culture settings for the thread.
 
 ## Fields
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_BeginTag"&gt;&lt;/a&gt; BeginTag
+### BeginTag {#SuperOffice_WebApi_Data_CultureDataFormatter_BeginTag}
 
 ```csharp
 public const string BeginTag = "["
@@ -53,7 +53,7 @@ public const string BeginTag = "["
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_BinaryMarker"&gt;&lt;/a&gt; BinaryMarker
+### BinaryMarker {#SuperOffice_WebApi_Data_CultureDataFormatter_BinaryMarker}
 
 ```csharp
 public const string BinaryMarker = "B"
@@ -63,7 +63,7 @@ public const string BinaryMarker = "B"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_DateMarker"&gt;&lt;/a&gt; DateMarker
+### DateMarker {#SuperOffice_WebApi_Data_CultureDataFormatter_DateMarker}
 
 ```csharp
 public const string DateMarker = "D"
@@ -73,7 +73,7 @@ public const string DateMarker = "D"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_DateTimeMarker"&gt;&lt;/a&gt; DateTimeMarker
+### DateTimeMarker {#SuperOffice_WebApi_Data_CultureDataFormatter_DateTimeMarker}
 
 ```csharp
 public const string DateTimeMarker = "DT"
@@ -83,7 +83,7 @@ public const string DateTimeMarker = "DT"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_DoubleMarker"&gt;&lt;/a&gt; DoubleMarker
+### DoubleMarker {#SuperOffice_WebApi_Data_CultureDataFormatter_DoubleMarker}
 
 ```csharp
 public const string DoubleMarker = "F"
@@ -93,7 +93,7 @@ public const string DoubleMarker = "F"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_EndTag"&gt;&lt;/a&gt; EndTag
+### EndTag {#SuperOffice_WebApi_Data_CultureDataFormatter_EndTag}
 
 ```csharp
 public const string EndTag = "]"
@@ -103,7 +103,7 @@ public const string EndTag = "]"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_IntArrMarker"&gt;&lt;/a&gt; IntArrMarker
+### IntArrMarker {#SuperOffice_WebApi_Data_CultureDataFormatter_IntArrMarker}
 
 ```csharp
 public const string IntArrMarker = "A"
@@ -113,7 +113,7 @@ public const string IntArrMarker = "A"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_IntMarker"&gt;&lt;/a&gt; IntMarker
+### IntMarker {#SuperOffice_WebApi_Data_CultureDataFormatter_IntMarker}
 
 ```csharp
 public const string IntMarker = "I"
@@ -123,7 +123,7 @@ public const string IntMarker = "I"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_MarkerSeparator"&gt;&lt;/a&gt; MarkerSeparator
+### MarkerSeparator {#SuperOffice_WebApi_Data_CultureDataFormatter_MarkerSeparator}
 
 ```csharp
 public const char MarkerSeparator = ':'
@@ -133,7 +133,7 @@ public const char MarkerSeparator = ':'
 
  [char](https://learn.microsoft.com/dotnet/api/system.char)
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_MoneyMarker"&gt;&lt;/a&gt; MoneyMarker
+### MoneyMarker {#SuperOffice_WebApi_Data_CultureDataFormatter_MoneyMarker}
 
 ```csharp
 public const string MoneyMarker = "M"
@@ -143,7 +143,7 @@ public const string MoneyMarker = "M"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_TimeMarker"&gt;&lt;/a&gt; TimeMarker
+### TimeMarker {#SuperOffice_WebApi_Data_CultureDataFormatter_TimeMarker}
 
 ```csharp
 public const string TimeMarker = "T"
@@ -153,7 +153,7 @@ public const string TimeMarker = "T"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_TimeSpanMarker"&gt;&lt;/a&gt; TimeSpanMarker
+### TimeSpanMarker {#SuperOffice_WebApi_Data_CultureDataFormatter_TimeSpanMarker}
 
 ```csharp
 public const string TimeSpanMarker = "TS"
@@ -165,7 +165,7 @@ public const string TimeSpanMarker = "TS"
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_AddColon_System_String_"&gt;&lt;/a&gt; AddColon\(string\)
+### AddColon\(string\) {#SuperOffice_WebApi_Data_CultureDataFormatter_AddColon_System_String_}
 
 Add a colon to a string if it was not already there, strip any whitespace
 
@@ -185,7 +185,7 @@ String to process
 
 Original string, now guaranteed to end in exactly one colon
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_AddTerminator_System_String_System_String_"&gt;&lt;/a&gt; AddTerminator\(string, string\)
+### AddTerminator\(string, string\) {#SuperOffice_WebApi_Data_CultureDataFormatter_AddTerminator_System_String_System_String_}
 
 Add a terminator to a string. The string is first stripped, then the terminator is added at the end with no whitespace.
 
@@ -209,7 +209,7 @@ Terminator to add
 
 String, now ending with terminator and no white space
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_CompareEncoded_System_String_System_String_"&gt;&lt;/a&gt; CompareEncoded\(string, string\)
+### CompareEncoded\(string, string\) {#SuperOffice_WebApi_Data_CultureDataFormatter_CompareEncoded_System_String_System_String_}
 
 Compare two encoded strings, by parsing them into their underlying data datatype and comparing those
 
@@ -233,7 +233,7 @@ Formatted string
 
 -1, 0 or 1 depending on the ordering relation between x and y
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_Encode_System_Object_"&gt;&lt;/a&gt; Encode\(object\)
+### Encode\(object\) {#SuperOffice_WebApi_Data_CultureDataFormatter_Encode_System_Object_}
 
 Encode a object based on type. Types supported: DateTime, Double, Integer, String and Boolean
 
@@ -253,7 +253,7 @@ Object to be encoded
 
 Encoded object
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_EncodeBinary_System_IO_Stream_"&gt;&lt;/a&gt; EncodeBinary\(Stream\)
+### EncodeBinary\(Stream\) {#SuperOffice_WebApi_Data_CultureDataFormatter_EncodeBinary_System_IO_Stream_}
 
 Encode a block of binary data, such as an image
 
@@ -273,7 +273,7 @@ DateTime whose date component is to be encoded
 
 Encoded date
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_EncodeBinary_System_IO_Stream_System_Boolean_"&gt;&lt;/a&gt; EncodeBinary\(Stream, bool\)
+### EncodeBinary\(Stream, bool\) {#SuperOffice_WebApi_Data_CultureDataFormatter_EncodeBinary_System_IO_Stream_System_Boolean_}
 
 Encode a block of binary data, such as an image
 
@@ -299,7 +299,7 @@ If true, the input parameter is encoded to string. If false, an empty string is 
 
 Encoded date
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_EncodeBinaryNoTags_System_IO_Stream_"&gt;&lt;/a&gt; EncodeBinaryNoTags\(Stream\)
+### EncodeBinaryNoTags\(Stream\) {#SuperOffice_WebApi_Data_CultureDataFormatter_EncodeBinaryNoTags_System_IO_Stream_}
 
 ```csharp
 public static string EncodeBinaryNoTags(Stream data)
@@ -313,7 +313,7 @@ public static string EncodeBinaryNoTags(Stream data)
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_EncodeDate_System_DateTime_"&gt;&lt;/a&gt; EncodeDate\(DateTime\)
+### EncodeDate\(DateTime\) {#SuperOffice_WebApi_Data_CultureDataFormatter_EncodeDate_System_DateTime_}
 
 Encode a date, without a time part
 
@@ -333,7 +333,7 @@ DateTime whose date component is to be encoded
 
 Encoded date
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_EncodeDate_System_DateTime_System_Boolean_"&gt;&lt;/a&gt; EncodeDate\(DateTime, bool\)
+### EncodeDate\(DateTime, bool\) {#SuperOffice_WebApi_Data_CultureDataFormatter_EncodeDate_System_DateTime_System_Boolean_}
 
 Encode a date, without a time part.
 Optionally skip encoding and return an empty string instead.
@@ -360,7 +360,7 @@ If true, the input parameter is encoded to string. If false, an empty string is 
 
 Encoded date
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_EncodeDateTime_System_DateTime_"&gt;&lt;/a&gt; EncodeDateTime\(DateTime\)
+### EncodeDateTime\(DateTime\) {#SuperOffice_WebApi_Data_CultureDataFormatter_EncodeDateTime_System_DateTime_}
 
 Encode a date, with a time part.
 
@@ -380,7 +380,7 @@ DateTime whose date and time components are to be encoded
 
 Encoded date/time
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_EncodeDateTime_System_DateTime_System_Boolean_"&gt;&lt;/a&gt; EncodeDateTime\(DateTime, bool\)
+### EncodeDateTime\(DateTime, bool\) {#SuperOffice_WebApi_Data_CultureDataFormatter_EncodeDateTime_System_DateTime_System_Boolean_}
 
 Encode a date, with a time part.
 Optionally skip encoding and return an empty string instead.
@@ -407,7 +407,7 @@ If true, the input parameter is encoded to string. If false, an empty string is 
 
 Encoded date/time
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_EncodeDouble_System_Double_System_Int32_"&gt;&lt;/a&gt; EncodeDouble\(double, int\)
+### EncodeDouble\(double, int\) {#SuperOffice_WebApi_Data_CultureDataFormatter_EncodeDouble_System_Double_System_Int32_}
 
 Encode a double (decimal value), with the given number of decimals. Note that the full
 precision is included here, but rounded to the given number of decimals on (re)localization.
@@ -435,7 +435,7 @@ Final desired number of decimals
 
 Encoded value
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_EncodeDouble_System_Double_System_Int32_System_Boolean_"&gt;&lt;/a&gt; EncodeDouble\(double, int, bool\)
+### EncodeDouble\(double, int, bool\) {#SuperOffice_WebApi_Data_CultureDataFormatter_EncodeDouble_System_Double_System_Int32_System_Boolean_}
 
 Encode a double (decimal value), with the given number of decimals. Note that the full
 precision is included here, but rounded to the given number of decimals on (re)localization.
@@ -470,7 +470,7 @@ If true, the input parameter is encoded to string. If false, an empty string is 
 
 Encoded value
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_EncodeDouble_System_Double_"&gt;&lt;/a&gt; EncodeDouble\(double\)
+### EncodeDouble\(double\) {#SuperOffice_WebApi_Data_CultureDataFormatter_EncodeDouble_System_Double_}
 
 Encode a double (decimal value). On localization, the default number of decimal digits will be used.
 Also note that currency amounts should use the EncodeMoney method, if the cultural settings for 
@@ -493,7 +493,7 @@ Value to be encoded
 
 Encoded value
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_EncodeDouble_System_Double_System_Boolean_"&gt;&lt;/a&gt; EncodeDouble\(double, bool\)
+### EncodeDouble\(double, bool\) {#SuperOffice_WebApi_Data_CultureDataFormatter_EncodeDouble_System_Double_System_Boolean_}
 
 Encode a double (decimal value). On localization, the default number of decimal digits will be used.
 Also note that currency amounts should use the EncodeMoney method, if the cultural settings for 
@@ -523,7 +523,7 @@ If true, the input parameter is encoded to string. If false, an empty string is 
 
 Encoded value
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_EncodeInt_System_Int32_"&gt;&lt;/a&gt; EncodeInt\(int\)
+### EncodeInt\(int\) {#SuperOffice_WebApi_Data_CultureDataFormatter_EncodeInt_System_Int32_}
 
 Encode an integer. Integers are usually not culturally sensitive... but who knows.
 
@@ -543,7 +543,7 @@ Value to encode
 
 Encoded value
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_EncodeInt_System_Int32_System_Boolean_"&gt;&lt;/a&gt; EncodeInt\(int, bool\)
+### EncodeInt\(int, bool\) {#SuperOffice_WebApi_Data_CultureDataFormatter_EncodeInt_System_Int32_System_Boolean_}
 
 Encode an integer. Integers are usually not culturally sensitive... but who knows.
 Optionally skip encoding and return an empty string instead.
@@ -570,7 +570,7 @@ If true, the input parameter is encoded to string. If false, an empty string is 
 
 Encoded value
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_EncodeIntArr_System_Int32___"&gt;&lt;/a&gt; EncodeIntArr\(params int\[\]\)
+### EncodeIntArr\(params int\[\]\) {#SuperOffice_WebApi_Data_CultureDataFormatter_EncodeIntArr_System_Int32___}
 
 ```csharp
 public static string EncodeIntArr(params int[] intArr)
@@ -584,7 +584,7 @@ public static string EncodeIntArr(params int[] intArr)
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_EncodeMoney_System_Double_"&gt;&lt;/a&gt; EncodeMoney\(double\)
+### EncodeMoney\(double\) {#SuperOffice_WebApi_Data_CultureDataFormatter_EncodeMoney_System_Double_}
 
 Encode a double, for displaying it as money. The local user settings for currency, EXCEPT the currency
 symbol, will be used for display. No currency symbol will be display regardless of settings.
@@ -605,7 +605,7 @@ Value to encode
 
 Encoded value
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_EncodeMoney_System_Double_System_Boolean_"&gt;&lt;/a&gt; EncodeMoney\(double, bool\)
+### EncodeMoney\(double, bool\) {#SuperOffice_WebApi_Data_CultureDataFormatter_EncodeMoney_System_Double_System_Boolean_}
 
 Encode a double, for displaying it as money. The local user settings for currency, EXCEPT the currency
 symbol, will be used for display. No currency symbol will be display regardless of settings.
@@ -633,7 +633,7 @@ If true, the input parameter is encoded to string. If false, an empty string is 
 
 Encoded value
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_EncodeTime_System_DateTime_"&gt;&lt;/a&gt; EncodeTime\(DateTime\)
+### EncodeTime\(DateTime\) {#SuperOffice_WebApi_Data_CultureDataFormatter_EncodeTime_System_DateTime_}
 
 Encode a time, without a date part
 
@@ -653,7 +653,7 @@ DateTime whose time component is to be encoded
 
 Encoded time
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_EncodeTime_System_DateTime_System_Boolean_"&gt;&lt;/a&gt; EncodeTime\(DateTime, bool\)
+### EncodeTime\(DateTime, bool\) {#SuperOffice_WebApi_Data_CultureDataFormatter_EncodeTime_System_DateTime_System_Boolean_}
 
 Encode a time, without a date part.
 Optionally skip encoding and return an empty string instead.
@@ -680,7 +680,7 @@ If true, the input parameter is encoded to string. If false, an empty string is 
 
 Encoded time
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_EncodeTimeSpan_System_TimeSpan_System_Boolean_"&gt;&lt;/a&gt; EncodeTimeSpan\(TimeSpan, bool\)
+### EncodeTimeSpan\(TimeSpan, bool\) {#SuperOffice_WebApi_Data_CultureDataFormatter_EncodeTimeSpan_System_TimeSpan_System_Boolean_}
 
 Encode a timespan, encodes total number of seconds
 Optionally skip encoding and return an empty string instead.
@@ -707,7 +707,7 @@ If true, the input parameter is encoded to string. If false, an empty string is 
 
 Encoded time
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_EncodeTimeSpan_System_Int32_System_Boolean_"&gt;&lt;/a&gt; EncodeTimeSpan\(int, bool\)
+### EncodeTimeSpan\(int, bool\) {#SuperOffice_WebApi_Data_CultureDataFormatter_EncodeTimeSpan_System_Int32_System_Boolean_}
 
 Encode a timespan
 Optionally skip encoding and return an empty string instead.
@@ -734,7 +734,7 @@ If true, the input parameter is encoded to string. If false, an empty string is 
 
 Encoded time
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_GetCultureDisplayName_System_Globalization_CultureInfo_"&gt;&lt;/a&gt; GetCultureDisplayName\(CultureInfo\)
+### GetCultureDisplayName\(CultureInfo\) {#SuperOffice_WebApi_Data_CultureDataFormatter_GetCultureDisplayName_System_Globalization_CultureInfo_}
 
 ```csharp
 public static string GetCultureDisplayName(CultureInfo cultureInfo)
@@ -748,7 +748,7 @@ public static string GetCultureDisplayName(CultureInfo cultureInfo)
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_GetReadableTimeSpan_System_Int32_System_Boolean_System_String_System_String_System_String_System_String_System_String_"&gt;&lt;/a&gt; GetReadableTimeSpan\(int, bool, string, string, string, string, string\)
+### GetReadableTimeSpan\(int, bool, string, string, string, string, string\) {#SuperOffice_WebApi_Data_CultureDataFormatter_GetReadableTimeSpan_System_Int32_System_Boolean_System_String_System_String_System_String_System_String_System_String_}
 
 Convert the time/duration/timespan to a "readable" text - either seconds, or day/hour/minute/second
 
@@ -792,7 +792,7 @@ The suffix string to use when 0 seconds were passed. Empty string might be retur
 
 Formatted string
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_GetStringType_System_String_System_String__System_Int32__"&gt;&lt;/a&gt; GetStringType\(string, out string, out int\)
+### GetStringType\(string, out string, out int\) {#SuperOffice_WebApi_Data_CultureDataFormatter_GetStringType_System_String_System_String__System_Int32__}
 
 ```csharp
 public static string GetStringType(string encodedSomething, out string val, out int decimals)
@@ -810,7 +810,7 @@ public static string GetStringType(string encodedSomething, out string val, out 
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_GetSuperOfficeLanguages"&gt;&lt;/a&gt; GetSuperOfficeLanguages\(\)
+### GetSuperOfficeLanguages\(\) {#SuperOffice_WebApi_Data_CultureDataFormatter_GetSuperOfficeLanguages}
 
 Get all current supported superoffice languages, by superoffice language code (win legacy)
 
@@ -822,7 +822,7 @@ public static IEnumerable<string> GetSuperOfficeLanguages()
 
  [IEnumerable](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_LocalFormatDate_System_DateTime_"&gt;&lt;/a&gt; LocalFormatDate\(DateTime\)
+### LocalFormatDate\(DateTime\) {#SuperOffice_WebApi_Data_CultureDataFormatter_LocalFormatDate_System_DateTime_}
 
 Format a date (without time) according to current settings
 
@@ -842,7 +842,7 @@ DateTime to be formatted
 
 Formatted date
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_LocalFormatDateTime_System_DateTime_"&gt;&lt;/a&gt; LocalFormatDateTime\(DateTime\)
+### LocalFormatDateTime\(DateTime\) {#SuperOffice_WebApi_Data_CultureDataFormatter_LocalFormatDateTime_System_DateTime_}
 
 Format a date with time according to current settings
 
@@ -862,7 +862,7 @@ Datetime to be formatted
 
 Formatted date and time
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_LocalFormatDouble_System_Double_System_Int32_"&gt;&lt;/a&gt; LocalFormatDouble\(double, int\)
+### LocalFormatDouble\(double, int\) {#SuperOffice_WebApi_Data_CultureDataFormatter_LocalFormatDouble_System_Double_System_Int32_}
 
 Format a double, with the given number of decimal digits; otherwise the current settings will be followed
 
@@ -886,7 +886,7 @@ Desired number of decimals
 
 Formatted number
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_LocalFormatInt_System_Int32_"&gt;&lt;/a&gt; LocalFormatInt\(int\)
+### LocalFormatInt\(int\) {#SuperOffice_WebApi_Data_CultureDataFormatter_LocalFormatInt_System_Int32_}
 
 Format an integer according to current settings
 
@@ -906,7 +906,7 @@ int to be formatted
 
 Formatted integer
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_LocalFormatLongDate_System_DateTime_"&gt;&lt;/a&gt; LocalFormatLongDate\(DateTime\)
+### LocalFormatLongDate\(DateTime\) {#SuperOffice_WebApi_Data_CultureDataFormatter_LocalFormatLongDate_System_DateTime_}
 
 Format a long date (without time) according to current settings
 
@@ -926,7 +926,7 @@ DateTime to be formatted
 
 Formatted long date
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_LocalFormatLongDateTime_System_DateTime_"&gt;&lt;/a&gt; LocalFormatLongDateTime\(DateTime\)
+### LocalFormatLongDateTime\(DateTime\) {#SuperOffice_WebApi_Data_CultureDataFormatter_LocalFormatLongDateTime_System_DateTime_}
 
 Format a long date with a short time according to current settings
 
@@ -946,7 +946,7 @@ Datetime to be formatted
 
 Formatted long date and short time
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_LocalFormatMoney_System_Double_"&gt;&lt;/a&gt; LocalFormatMoney\(double\)
+### LocalFormatMoney\(double\) {#SuperOffice_WebApi_Data_CultureDataFormatter_LocalFormatMoney_System_Double_}
 
 Format a double as a currency value, though without a currency symbol. Other local settings for currencies will be followed.
 
@@ -966,7 +966,7 @@ Double to be formatted
 
 Formatted amount
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_LocalFormatTime_System_DateTime_"&gt;&lt;/a&gt; LocalFormatTime\(DateTime\)
+### LocalFormatTime\(DateTime\) {#SuperOffice_WebApi_Data_CultureDataFormatter_LocalFormatTime_System_DateTime_}
 
 Format a time without date according to current settings
 
@@ -986,7 +986,7 @@ DateTime to be formatted
 
 Formatted time, without date
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_LocalizeEncoded_System_String_"&gt;&lt;/a&gt; LocalizeEncoded\(string\)
+### LocalizeEncoded\(string\) {#SuperOffice_WebApi_Data_CultureDataFormatter_LocalizeEncoded_System_String_}
 
 Take an encoded value of any type, parse it, and reformat it to its localized (current culture) string form
 
@@ -1006,7 +1006,7 @@ Output from one of the Encode methods
 
 Equivalent, localized value
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_MapCsLanguageToSuperOfficeLanguage_System_String_"&gt;&lt;/a&gt; MapCsLanguageToSuperOfficeLanguage\(string\)
+### MapCsLanguageToSuperOfficeLanguage\(string\) {#SuperOffice_WebApi_Data_CultureDataFormatter_MapCsLanguageToSuperOfficeLanguage_System_String_}
 
 Convert a language code from cs to SuperOffice language code.
 
@@ -1024,7 +1024,7 @@ public static string MapCsLanguageToSuperOfficeLanguage(string csLang)
 
 SuperOffice languagecode or string.empty if none found
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_MapCultureToSuperOfficeLanguage_System_String_"&gt;&lt;/a&gt; MapCultureToSuperOfficeLanguage\(string\)
+### MapCultureToSuperOfficeLanguage\(string\) {#SuperOffice_WebApi_Data_CultureDataFormatter_MapCultureToSuperOfficeLanguage_System_String_}
 
 Converts .net Culture name ("sv-SE") to SuperOffice language code ("SW").
 
@@ -1056,7 +1056,7 @@ See also &lt;a href="http://msdn.microsoft.com/en-us/library/system.globalizatio
 
 [CultureDataFormatter](SuperOffice.WebApi.Data.CultureDataFormatter.md).[MapSuperOfficeLanguageToCulture](SuperOffice.WebApi.Data.CultureDataFormatter.md\#SuperOffice\_WebApi\_Data\_CultureDataFormatter\_MapSuperOfficeLanguageToCulture\_System\_String\_)\([string](https://learn.microsoft.com/dotnet/api/system.string)\)
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_MapLCIDToSuperOfficeLanguage_System_Int32_"&gt;&lt;/a&gt; MapLCIDToSuperOfficeLanguage\(int\)
+### MapLCIDToSuperOfficeLanguage\(int\) {#SuperOffice_WebApi_Data_CultureDataFormatter_MapLCIDToSuperOfficeLanguage_System_Int32_}
 
 Converts a .net culture LCID to SuperOffice Language Code
 
@@ -1076,7 +1076,7 @@ The LCID to convert
 
 The SuperOffice language code if defined - the two letter iso name if undefined
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_MapLanguageToCsLanguage_System_String_"&gt;&lt;/a&gt; MapLanguageToCsLanguage\(string\)
+### MapLanguageToCsLanguage\(string\) {#SuperOffice_WebApi_Data_CultureDataFormatter_MapLanguageToCsLanguage_System_String_}
 
 Convert a language code to the language code expected by CS.
 
@@ -1092,7 +1092,7 @@ public static string MapLanguageToCsLanguage(string languageCode)
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_MapSuperOfficeLanguageToCulture_System_String_"&gt;&lt;/a&gt; MapSuperOfficeLanguageToCulture\(string\)
+### MapSuperOfficeLanguageToCulture\(string\) {#SuperOffice_WebApi_Data_CultureDataFormatter_MapSuperOfficeLanguageToCulture_System_String_}
 
 Converts a SuperOffice language code ("SW") to a neutral .net culture name ("sv")
 
@@ -1122,7 +1122,7 @@ See also &lt;a href="http://msdn.microsoft.com/en-us/library/system.globalizatio
 
 [CultureDataFormatter](SuperOffice.WebApi.Data.CultureDataFormatter.md).[MapCultureToSuperOfficeLanguage](SuperOffice.WebApi.Data.CultureDataFormatter.md\#SuperOffice\_WebApi\_Data\_CultureDataFormatter\_MapCultureToSuperOfficeLanguage\_System\_String\_)\([string](https://learn.microsoft.com/dotnet/api/system.string)\)
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_ParseEncoded_System_String_"&gt;&lt;/a&gt; ParseEncoded\(string\)
+### ParseEncoded\(string\) {#SuperOffice_WebApi_Data_CultureDataFormatter_ParseEncoded_System_String_}
 
 Inspect the marker and parse the content, returning a strongly typed object (double, int, byte[], DateTime etc)
 
@@ -1138,7 +1138,7 @@ public static object ParseEncoded(string encodedSomething)
 
  [object](https://learn.microsoft.com/dotnet/api/system.object)
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_ParseEncodedBinary_System_String_"&gt;&lt;/a&gt; ParseEncodedBinary\(string\)
+### ParseEncodedBinary\(string\) {#SuperOffice_WebApi_Data_CultureDataFormatter_ParseEncodedBinary_System_String_}
 
 Parse/decode an encoded binary data block - either with a marker, or just a Base64 encoded string
 
@@ -1154,7 +1154,7 @@ public static byte[] ParseEncodedBinary(string encodedBinary)
 
  [byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_ParseEncodedDate_System_String_"&gt;&lt;/a&gt; ParseEncodedDate\(string\)
+### ParseEncodedDate\(string\) {#SuperOffice_WebApi_Data_CultureDataFormatter_ParseEncodedDate_System_String_}
 
 ```csharp
 public static DateTime ParseEncodedDate(string encodedDate)
@@ -1168,7 +1168,7 @@ public static DateTime ParseEncodedDate(string encodedDate)
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_ParseEncodedDecimal_System_String_"&gt;&lt;/a&gt; ParseEncodedDecimal\(string\)
+### ParseEncodedDecimal\(string\) {#SuperOffice_WebApi_Data_CultureDataFormatter_ParseEncodedDecimal_System_String_}
 
 Parse "123.4" and "[F:123.4]" into 123.4
 
@@ -1188,7 +1188,7 @@ public static decimal ParseEncodedDecimal(string encodedDecimal)
 
 The value or an exception if not a decimal
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_ParseEncodedDouble_System_String_"&gt;&lt;/a&gt; ParseEncodedDouble\(string\)
+### ParseEncodedDouble\(string\) {#SuperOffice_WebApi_Data_CultureDataFormatter_ParseEncodedDouble_System_String_}
 
 Parse "123.4" and "[F:123.4]" into 123.4
 
@@ -1208,7 +1208,7 @@ public static double ParseEncodedDouble(string encodedDouble)
 
 The value or an exception if not an double
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_ParseEncodedInt_System_String_"&gt;&lt;/a&gt; ParseEncodedInt\(string\)
+### ParseEncodedInt\(string\) {#SuperOffice_WebApi_Data_CultureDataFormatter_ParseEncodedInt_System_String_}
 
 Parse "123" and "[I:123]" into 123.
 Parse "abc" into 0.
@@ -1230,7 +1230,7 @@ public static int ParseEncodedInt(string encodedInt)
 
 The value as int, or 0 if not an integer
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_ParseEncodedInt_System_String_System_Boolean_"&gt;&lt;/a&gt; ParseEncodedInt\(string, bool\)
+### ParseEncodedInt\(string, bool\) {#SuperOffice_WebApi_Data_CultureDataFormatter_ParseEncodedInt_System_String_System_Boolean_}
 
 Parse "123" and "[I:123]" into 123.
 
@@ -1254,7 +1254,7 @@ If true, then throws instead of returning 0 for non-numbers
 
 The value or an exception if not an integer
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_ParseEncodedIntArr_System_String_"&gt;&lt;/a&gt; ParseEncodedIntArr\(string\)
+### ParseEncodedIntArr\(string\) {#SuperOffice_WebApi_Data_CultureDataFormatter_ParseEncodedIntArr_System_String_}
 
 ```csharp
 public static int[] ParseEncodedIntArr(string encodedIntArr)
@@ -1268,7 +1268,7 @@ public static int[] ParseEncodedIntArr(string encodedIntArr)
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_ParseEncodedTimeSpan_System_String_System_Boolean_"&gt;&lt;/a&gt; ParseEncodedTimeSpan\(string, bool\)
+### ParseEncodedTimeSpan\(string, bool\) {#SuperOffice_WebApi_Data_CultureDataFormatter_ParseEncodedTimeSpan_System_String_System_Boolean_}
 
 ```csharp
 public static int ParseEncodedTimeSpan(string encodedTimeSpan, bool strictly = false)
@@ -1284,7 +1284,7 @@ public static int ParseEncodedTimeSpan(string encodedTimeSpan, bool strictly = f
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_ParseInlineElements_System_String_System_String_"&gt;&lt;/a&gt; ParseInlineElements\(string, string\)
+### ParseInlineElements\(string, string\) {#SuperOffice_WebApi_Data_CultureDataFormatter_ParseInlineElements_System_String_System_String_}
 
 Parses a resource string with inline culture-sensitive data in the text, for instance dates... provided they have
 been encoded using the SuperOffice.CRM.Globalization.CultureDataFormatter in the first place.
@@ -1310,7 +1310,7 @@ The cultureName, typically en-US, nb-NO, but also US, NO is accepted
 
 Parsed resource string.
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_ParseInlineMultiLanguageString_System_String_System_String_System_Int32_"&gt;&lt;/a&gt; ParseInlineMultiLanguageString\(string, string, int\)
+### ParseInlineMultiLanguageString\(string, string, int\) {#SuperOffice_WebApi_Data_CultureDataFormatter_ParseInlineMultiLanguageString_System_String_System_String_System_Int32_}
 
 Parses the string for multilang strings and uses &lt;xref href="SuperOffice.WebApi.Data.CultureDataFormatter.ParseMultiLanguageString(System.String%2cSystem.String)" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;	to translate
 the fragment to a culture specific string part
@@ -1339,7 +1339,7 @@ The starting index for the parsing
 
 All culture specific string parts translated, or original string if there is a problem
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_ParseMultiLanguageString_System_String_System_String_"&gt;&lt;/a&gt; ParseMultiLanguageString\(string, string\)
+### ParseMultiLanguageString\(string, string\) {#SuperOffice_WebApi_Data_CultureDataFormatter_ParseMultiLanguageString_System_String_System_String_}
 
 Returns the string part of the specified culture from the multi language string
 These strings are typically used in SuperOffice list and description data
@@ -1374,7 +1374,7 @@ This version will also accept strings that have non-multilanguage text before an
 block, and even multiple multilanguage blocks (provided there is at least one non-conforming character between them),
 isolating them and parsing each one separately. Non-conforming text is kept in place in the output.
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_StripColon_System_String_"&gt;&lt;/a&gt; StripColon\(string\)
+### StripColon\(string\) {#SuperOffice_WebApi_Data_CultureDataFormatter_StripColon_System_String_}
 
 Strip a terminating colon from a string, and any whitespace
 
@@ -1394,7 +1394,7 @@ String to process
 
 String, without colon and without leading/trailing whitespace
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_StripCountrySpecificsFromLanguageName_System_String_"&gt;&lt;/a&gt; StripCountrySpecificsFromLanguageName\(string\)
+### StripCountrySpecificsFromLanguageName\(string\) {#SuperOffice_WebApi_Data_CultureDataFormatter_StripCountrySpecificsFromLanguageName_System_String_}
 
 Converts "English (Zimbabwe)" into plain "English" by removing anything in parenthesis and stripping spaces.
 
@@ -1414,7 +1414,7 @@ Human readable language name: "Norsk (Bokmål)" or "Francaise"
 
 Simplified language name with initial capital: "Norsk" or "Francaise"
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_StripTerminator_System_String_System_String_"&gt;&lt;/a&gt; StripTerminator\(string, string\)
+### StripTerminator\(string, string\) {#SuperOffice_WebApi_Data_CultureDataFormatter_StripTerminator_System_String_System_String_}
 
 Strip a terminator from a string. Whitespace is first trimmed from both sides of the string,
 the terminator is removed if present, and any whitespace now at the end of the string is also removed
@@ -1439,7 +1439,7 @@ Terminator to remove
 
 Original string minus terminator
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_TryParse_System_String_System_Int32__"&gt;&lt;/a&gt; TryParse\(string, out int\)
+### TryParse\(string, out int\) {#SuperOffice_WebApi_Data_CultureDataFormatter_TryParse_System_String_System_Int32__}
 
 Try to parse a string as an encoded or bare InvariantCulture Integer32
 
@@ -1463,7 +1463,7 @@ Int value, if return value is true; otherwise 0
 
 true if parsing succeeded
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_TryParse_System_String_System_Int32____"&gt;&lt;/a&gt; TryParse\(string, out int\[\]\)
+### TryParse\(string, out int\[\]\) {#SuperOffice_WebApi_Data_CultureDataFormatter_TryParse_System_String_System_Int32____}
 
 ```csharp
 public static bool TryParse(string encodedIntArr, out int[] result)
@@ -1479,7 +1479,7 @@ public static bool TryParse(string encodedIntArr, out int[] result)
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_TryParse_System_String_System_Double__"&gt;&lt;/a&gt; TryParse\(string, out double\)
+### TryParse\(string, out double\) {#SuperOffice_WebApi_Data_CultureDataFormatter_TryParse_System_String_System_Double__}
 
 Try to parse a string as an encoded or bare InvariantCulture Double
 
@@ -1503,7 +1503,7 @@ Double value, if return value is true; otherwise 0
 
 true if parsing succeeded
 
-### &lt;a id="SuperOffice_WebApi_Data_CultureDataFormatter_TryParse_System_String_System_DateTime__"&gt;&lt;/a&gt; TryParse\(string, out DateTime\)
+### TryParse\(string, out DateTime\) {#SuperOffice_WebApi_Data_CultureDataFormatter_TryParse_System_String_System_DateTime__}
 
 Try to parse a string as an encoded or bare InvariantCulture DateTime
 

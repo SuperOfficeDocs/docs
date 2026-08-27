@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_AssociateAgent"&gt;&lt;/a&gt; Class AssociateAgent
+# Class AssociateAgent {#SuperOffice_WebApi_Agents_AssociateAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -69,7 +69,7 @@ using (AssociateAgent agent = new AssociateAgent(mySession))
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Agents_AssociateAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; AssociateAgent\(HttpClient\)
+### AssociateAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_AssociateAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: Associate utilities, notes, not user admininstration
 
@@ -83,7 +83,7 @@ public AssociateAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### &lt;a id="SuperOffice_WebApi_Agents_AssociateAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; AssociateAgent\(WebApiOptions, HttpClient\)
+### AssociateAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_AssociateAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: Associate utilities, notes, not user admininstration
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_AssociateAgent_GetAssociateAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAssociateAsync\(int, RequestOptions\)
+### GetAssociateAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_AssociateAgent_GetAssociateAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific Associate object.
 
@@ -127,7 +127,7 @@ Override language/culture codes on this request.
 
 Associate
 
-### &lt;a id="SuperOffice_WebApi_Agents_AssociateAgent_GetAssociateByPersonIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAssociateByPersonIdAsync\(int, RequestOptions\)
+### GetAssociateByPersonIdAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_AssociateAgent_GetAssociateByPersonIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns the associate that belongs to this person if the person is an associate.
 
@@ -151,7 +151,7 @@ Override language/culture codes on this request.
 
 Associate if person is associate
 
-### &lt;a id="SuperOffice_WebApi_Agents_AssociateAgent_GetAssociateListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAssociateListAsync\(int\[\], RequestOptions\)
+### GetAssociateListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_AssociateAgent_GetAssociateListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Gets an array of specific Associate objects.
 
@@ -175,7 +175,7 @@ Override language/culture codes on this request.
 
 Array of Associate objects
 
-### &lt;a id="SuperOffice_WebApi_Agents_AssociateAgent_GetAssociatesByGroupAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAssociatesByGroupAsync\(int, int, RequestOptions\)
+### GetAssociatesByGroupAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_AssociateAgent_GetAssociatesByGroupAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Method that returns a array of associate , based on DiaryGroupType and groupId. The differernt types are, Userdefined, Usergroup and ResourceHeadings
 
@@ -203,7 +203,7 @@ Override language/culture codes on this request.
 
 Array of associate
 
-### &lt;a id="SuperOffice_WebApi_Agents_AssociateAgent_GetEncryptionKeyAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetEncryptionKeyAsync\(RequestOptions\)
+### GetEncryptionKeyAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_AssociateAgent_GetEncryptionKeyAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get unique key made from AssociateId and dbTag used for local storage encryption operations.
 
@@ -223,7 +223,7 @@ Override language/culture codes on this request.
 
 encryptionKey
 
-### &lt;a id="SuperOffice_WebApi_Agents_AssociateAgent_GetNoteAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetNoteAsync\(int, RequestOptions\)
+### GetNoteAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_AssociateAgent_GetNoteAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns an array of strings(notepad pages).
 
@@ -247,7 +247,7 @@ Override language/culture codes on this request.
 
 Returns an array of strings(notepad pages).
 
-### &lt;a id="SuperOffice_WebApi_Agents_AssociateAgent_LogOffWindowsUsersAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; LogOffWindowsUsersAsync\(int\[\], RequestOptions\)
+### LogOffWindowsUsersAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_AssociateAgent_LogOffWindowsUsersAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Method that logs off associates that are logged on to the win client
 
@@ -271,7 +271,7 @@ Override language/culture codes on this request.
 
 A void return
 
-### &lt;a id="SuperOffice_WebApi_Agents_AssociateAgent_SaveNoteAsync_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveNoteAsync\(int, string\[\], RequestOptions\)
+### SaveNoteAsync\(int, string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_AssociateAgent_SaveNoteAsync_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Saves an array of strings(notepad pages).
 

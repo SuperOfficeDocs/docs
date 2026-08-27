@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_SentryAgent"&gt;&lt;/a&gt; Class SentryAgent
+# Class SentryAgent {#SuperOffice_WebApi_Agents_SentryAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -69,7 +69,7 @@ using (SentryAgent agent = new SentryAgent(mySession))
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Agents_SentryAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; SentryAgent\(HttpClient\)
+### SentryAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_SentryAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: Data and function right queries
 
@@ -83,7 +83,7 @@ public SentryAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### &lt;a id="SuperOffice_WebApi_Agents_SentryAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; SentryAgent\(WebApiOptions, HttpClient\)
+### SentryAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_SentryAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: Data and function right queries
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_SentryAgent_CanCreateAppointmentInAllDiariesAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CanCreateAppointmentInAllDiariesAsync\(RequestOptions\)
+### CanCreateAppointmentInAllDiariesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_SentryAgent_CanCreateAppointmentInAllDiariesAsync_SuperOffice_WebApi_RequestOptions_}
 
 CanCreateAppointmentInAllDiaries will check if the current associate can create appointments in diaries belonging all other associates. CanCreateAppointmentInAssociateDiaries will only check against associates that are diary owners.
 
@@ -123,7 +123,7 @@ Override language/culture codes on this request.
 
 Returns true if the current associate can create appointments in the diary of all the other associates, otherwise false.
 
-### &lt;a id="SuperOffice_WebApi_Agents_SentryAgent_CanCreateAppointmentInAssociateDiariesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CanCreateAppointmentInAssociateDiariesAsync\(int\[\], RequestOptions\)
+### CanCreateAppointmentInAssociateDiariesAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_SentryAgent_CanCreateAppointmentInAssociateDiariesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 CanCreateAppointmentInAssociateDiaries will check if the current associate can create appointments in diaries belonging to the associates listed in associateIds. CanCreateAppointmentInAssociateDiaries will only check against associates that are diary owners. If none of the associates listed in the associateIds parameter is a diary owner, the method will return true.
 
@@ -147,7 +147,7 @@ Override language/culture codes on this request.
 
 Returns true if the current associate can create appointments in the diary of all the other associates, otherwise false.
 
-### &lt;a id="SuperOffice_WebApi_Agents_SentryAgent_CanCreateAppointmentInEachAssociatesDiaryAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CanCreateAppointmentInEachAssociatesDiaryAsync\(int\[\], RequestOptions\)
+### CanCreateAppointmentInEachAssociatesDiaryAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_SentryAgent_CanCreateAppointmentInEachAssociatesDiaryAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 CanCreateAppointmentInEachAssociateDiary will check if the current associate can create appointments in diaries belonging to the associates listed in associateIds. CanCreateAppointmentInEachAssociateDiary will only check against associates that are diary owners. If none of the associates listed in the associateIds parameter is a diary owner, the method will return true.
 
@@ -171,7 +171,7 @@ Override language/culture codes on this request.
 
 Returns true if for each given associate if the current associate can create appointments in that diary, otherwise false.
 
-### &lt;a id="SuperOffice_WebApi_Agents_SentryAgent_GetFunctionRightsAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetFunctionRightsAsync\(RequestOptions\)
+### GetFunctionRightsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_SentryAgent_GetFunctionRightsAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get a string array of all functions rights for the role of the current associate.
 
@@ -191,7 +191,7 @@ Override language/culture codes on this request.
 
 String array with the technical names of assigned function rights
 
-### &lt;a id="SuperOffice_WebApi_Agents_SentryAgent_GetNewTableRightAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetNewTableRightAsync\(string, RequestOptions\)
+### GetNewTableRightAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_SentryAgent_GetNewTableRightAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns a TableRight for a new row based on tableName parameter.
 
@@ -215,7 +215,7 @@ Override language/culture codes on this request.
 
 The TableRight
 
-### &lt;a id="SuperOffice_WebApi_Agents_SentryAgent_GetTableRightByContactOwnershipAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTableRightByContactOwnershipAsync\(string, int, RequestOptions\)
+### GetTableRightByContactOwnershipAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_SentryAgent_GetTableRightByContactOwnershipAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Return the TableRight from the relationship between the current user and the given user and group.
 
@@ -243,7 +243,7 @@ Override language/culture codes on this request.
 
 The TableRight
 
-### &lt;a id="SuperOffice_WebApi_Agents_SentryAgent_GetTableRightByOwnershipAsync_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTableRightByOwnershipAsync\(string, int, int, RequestOptions\)
+### GetTableRightByOwnershipAsync\(string, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_SentryAgent_GetTableRightByOwnershipAsync_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Return the TableRight from the relationship between the current user and the given user and group.
 
@@ -275,7 +275,7 @@ Override language/culture codes on this request.
 
 The TableRight
 
-### &lt;a id="SuperOffice_WebApi_Agents_SentryAgent_HasFunctionRightAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; HasFunctionRightAsync\(string, RequestOptions\)
+### HasFunctionRightAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_SentryAgent_HasFunctionRightAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get a boolean value indicating if the current user has the functional right.
 

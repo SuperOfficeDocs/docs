@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_IImportAgent"&gt;&lt;/a&gt; Interface IImportAgent
+# Interface IImportAgent {#SuperOffice_WebApi_Agents_IImportAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface IImportAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_IImportAgent_CreateDefaultImportLineAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultImportLineAsync\(int, RequestOptions\)
+### CreateDefaultImportLineAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IImportAgent_CreateDefaultImportLineAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Create a new empty import row with x count of values
 
@@ -40,7 +40,7 @@ Override language/culture codes on this request.
 
 A new ImportLine
 
-### &lt;a id="SuperOffice_WebApi_Agents_IImportAgent_CreateErpImportDataAsync_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String___System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateErpImportDataAsync\(ArchiveRestrictionInfo\[\], string\[\], int, ErpActorType, RequestOptions\)
+### CreateErpImportDataAsync\(ArchiveRestrictionInfo\[\], string\[\], int, ErpActorType, RequestOptions\) {#SuperOffice_WebApi_Agents_IImportAgent_CreateErpImportDataAsync_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String___System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_}
 
 Populates the ImportLines and columnDefs basedfrom erp system
 
@@ -76,7 +76,7 @@ Override language/culture codes on this request.
 
 The ImportLines and ColumnDefs
 
-### &lt;a id="SuperOffice_WebApi_Agents_IImportAgent_PreviewImportAsync_SuperOffice_WebApi_Data_ImportLine___System_String___System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; PreviewImportAsync\(ImportLine\[\], string\[\], string, string, RequestOptions\)
+### PreviewImportAsync\(ImportLine\[\], string\[\], string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IImportAgent_PreviewImportAsync_SuperOffice_WebApi_Data_ImportLine___System_String___System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Preview the import
 
@@ -112,7 +112,7 @@ Override language/culture codes on this request.
 
 An array of the the rows that can be imported, manipulated according to Import rules given
 
-### &lt;a id="SuperOffice_WebApi_Agents_IImportAgent_SaveImportAsync_SuperOffice_WebApi_Data_ImportLine___System_String___System_Boolean_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveImportAsync\(ImportLine\[\], string\[\], bool, string, string, RequestOptions\)
+### SaveImportAsync\(ImportLine\[\], string\[\], bool, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IImportAgent_SaveImportAsync_SuperOffice_WebApi_Data_ImportLine___System_String___System_Boolean_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Do the actual import
 

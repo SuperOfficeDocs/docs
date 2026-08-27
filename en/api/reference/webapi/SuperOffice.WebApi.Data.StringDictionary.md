@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Data_StringDictionary"&gt;&lt;/a&gt; Class StringDictionary
+# Class StringDictionary {#SuperOffice_WebApi_Data_StringDictionary}
 
 Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -60,7 +60,7 @@ public class StringDictionary : Dictionary<string, string>, IDictionary<string, 
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Data_StringDictionary__ctor"&gt;&lt;/a&gt; StringDictionary\(\)
+### StringDictionary\(\) {#SuperOffice_WebApi_Data_StringDictionary__ctor}
 
 Default constructor
 
@@ -70,7 +70,7 @@ public StringDictionary()
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Data_StringDictionary_ToString_System_String_"&gt;&lt;/a&gt; ToString\(string\)
+### ToString\(string\) {#SuperOffice_WebApi_Data_StringDictionary_ToString_System_String_}
 
 ```csharp
 public string ToString(string prefix)

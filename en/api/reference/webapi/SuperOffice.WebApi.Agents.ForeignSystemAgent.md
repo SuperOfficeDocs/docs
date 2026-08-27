@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent"&gt;&lt;/a&gt; Class ForeignSystemAgent
+# Class ForeignSystemAgent {#SuperOffice_WebApi_Agents_ForeignSystemAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -69,7 +69,7 @@ using (ForeignSystemAgent agent = new ForeignSystemAgent(mySession))
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; ForeignSystemAgent\(HttpClient\)
+### ForeignSystemAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: Collection of all services that works with Foreign key data (Key/Value pairs)
 
@@ -83,7 +83,7 @@ public ForeignSystemAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; ForeignSystemAgent\(WebApiOptions, HttpClient\)
+### ForeignSystemAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: Collection of all services that works with Foreign key data (Key/Value pairs)
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_AddDeviceByIdentifierAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddDeviceByIdentifierAsync\(string, string, string, RequestOptions\)
+### AddDeviceByIdentifierAsync\(string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_AddDeviceByIdentifierAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Adds a new ForeignDevice with deviceName that belongs to the application with applicationName, with an optional device-specific identifier.
 
@@ -135,7 +135,7 @@ Override language/culture codes on this request.
 
 The ForeignDevice.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_AddForeignKeyAsync_SuperOffice_WebApi_Data_ForeignKey_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddForeignKeyAsync\(ForeignKey, string, string, string, RequestOptions\)
+### AddForeignKeyAsync\(ForeignKey, string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_AddForeignKeyAsync_SuperOffice_WebApi_Data_ForeignKey_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Add a new key belonging to the ForeignApp and ForeignDevice specified.
 
@@ -171,7 +171,7 @@ Override language/culture codes on this request.
 
 The new or updated ForeignKey
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_CreateDefaultForeignAppEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultForeignAppEntityAsync\(RequestOptions\)
+### CreateDefaultForeignAppEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_CreateDefaultForeignAppEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new ForeignAppEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -192,7 +192,7 @@ Override language/culture codes on this request.
 
 A blank ForeignAppEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_DeleteDeviceByIdentifierAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteDeviceByIdentifierAsync\(string, string, string, RequestOptions\)
+### DeleteDeviceByIdentifierAsync\(string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_DeleteDeviceByIdentifierAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Delete a ForeignDevice with deviceName and deviceIdentifier that belongs to the application with applicationName.
 
@@ -224,7 +224,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_DeleteForeignAppEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteForeignAppEntityAsync\(int, RequestOptions\)
+### DeleteForeignAppEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_DeleteForeignAppEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the ForeignAppEntity
 
@@ -246,7 +246,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_DeleteForeignDeviceAsync_SuperOffice_WebApi_Data_ForeignDevice_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteForeignDeviceAsync\(ForeignDevice, string, RequestOptions\)
+### DeleteForeignDeviceAsync\(ForeignDevice, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_DeleteForeignDeviceAsync_SuperOffice_WebApi_Data_ForeignDevice_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Deletes a foreign device from an application
 
@@ -272,7 +272,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_DeleteForeignKeyAsync_SuperOffice_WebApi_Data_ForeignKey_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteForeignKeyAsync\(ForeignKey, string, string, string, string, int, RequestOptions\)
+### DeleteForeignKeyAsync\(ForeignKey, string, string, string, string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_DeleteForeignKeyAsync_SuperOffice_WebApi_Data_ForeignKey_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes all specified occurrences of a key, belonging to the ForeignApp and ForeignDevice, table and record specified. Specifying a blank table name will delete ALL keys of the given name; specifying a recordId of 0 will delete ALL keys of the given name for the given table.
 
@@ -316,7 +316,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_DeleteForeignKeyOnNameAsync_System_String_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteForeignKeyOnNameAsync\(string, string, string, string, string, int, RequestOptions\)
+### DeleteForeignKeyOnNameAsync\(string, string, string, string, string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_DeleteForeignKeyOnNameAsync_System_String_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes all specified occurrences of a key, belonging to the ForeignApp and ForeignDevice, table and record specified. Specifying a blank table name will delete ALL keys of the given name; specifying a recordId of 0 will delete ALL keys of the given name for the given table.
 
@@ -360,7 +360,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetAllForeignKeysOnEntityAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAllForeignKeysOnEntityAsync\(string, int, RequestOptions\)
+### GetAllForeignKeysOnEntityAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetAllForeignKeysOnEntityAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a list of foreignkeys ('app.device.key') and their values ('123') that belong to the specified entity.
 
@@ -388,7 +388,7 @@ Override language/culture codes on this request.
 
 Dictionary of 'appname.deviceid.keyname' = '123' key values
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetAppByNameAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAppByNameAsync\(string, RequestOptions\)
+### GetAppByNameAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetAppByNameAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Gets the ForeignApp with the given name.
 
@@ -412,7 +412,7 @@ Override language/culture codes on this request.
 
 The ForeignApp that matches the name.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetApplicationDevicesAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetApplicationDevicesAsync\(string, RequestOptions\)
+### GetApplicationDevicesAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetApplicationDevicesAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Gets all devices that belong to a foreign application.
 
@@ -436,7 +436,7 @@ Override language/culture codes on this request.
 
 Array of ForeignDevices
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetApplicationKeysAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetApplicationKeysAsync\(string, RequestOptions\)
+### GetApplicationKeysAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetApplicationKeysAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns all ForeignKeys that belong to an application.
 
@@ -460,7 +460,7 @@ Override language/culture codes on this request.
 
 Array of all ForeignKeys in the ForeignApp.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetDeviceByIdentifierAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDeviceByIdentifierAsync\(string, string, string, RequestOptions\)
+### GetDeviceByIdentifierAsync\(string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetDeviceByIdentifierAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Gets a ForeignDevice with deviceName and deviceIdentifier that belongs to the application with applicationName.
 
@@ -492,7 +492,7 @@ Override language/culture codes on this request.
 
 The ForeignDevice.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetDeviceByNameAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDeviceByNameAsync\(string, string, RequestOptions\)
+### GetDeviceByNameAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetDeviceByNameAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Gets a ForeignDevice with deviceName that belongs to the application with applicationName.
 
@@ -520,7 +520,7 @@ Override language/culture codes on this request.
 
 The ForeignDevice.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetDeviceKeysAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDeviceKeysAsync\(string, string, RequestOptions\)
+### GetDeviceKeysAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetDeviceKeysAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns all ForeignKeys that belong to a device.
 
@@ -548,7 +548,7 @@ Override language/culture codes on this request.
 
 Array of all ForeignKeys in the ForeignDevice.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetDeviceKeysOnDeviceIdentifierAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDeviceKeysOnDeviceIdentifierAsync\(string, string, string, RequestOptions\)
+### GetDeviceKeysOnDeviceIdentifierAsync\(string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetDeviceKeysOnDeviceIdentifierAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns all ForeignKeys that belong to a device with a given deviceIdentifier.
 
@@ -580,7 +580,7 @@ Override language/culture codes on this request.
 
 Array of all ForeignKeys in the ForeignDevice that belong to the DeviceIdentifier.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetDeviceKeysOnDeviceIdentifierTableAsync_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDeviceKeysOnDeviceIdentifierTableAsync\(string, string, string, string, RequestOptions\)
+### GetDeviceKeysOnDeviceIdentifierTableAsync\(string, string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetDeviceKeysOnDeviceIdentifierTableAsync_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns all ForeignKeys that belong to a device with a given deviceIdentifier and table name.
 
@@ -616,7 +616,7 @@ Override language/culture codes on this request.
 
 Array of all ForeignKeys in the ForeignDevice that belong to the DeviceIdentifier.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetDeviceKeysOnDeviceIdentifierTableRecordIdAsync_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDeviceKeysOnDeviceIdentifierTableRecordIdAsync\(string, string, string, string, int, RequestOptions\)
+### GetDeviceKeysOnDeviceIdentifierTableRecordIdAsync\(string, string, string, string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetDeviceKeysOnDeviceIdentifierTableRecordIdAsync_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns all ForeignKeys that belong to a device with a given deviceIdentifier and table name, as well as record id.
 
@@ -656,7 +656,7 @@ Override language/culture codes on this request.
 
 Array of all ForeignKeys in the ForeignDevice that match the criteria
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetForeignAppEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetForeignAppEntityAsync\(int, RequestOptions\)
+### GetForeignAppEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetForeignAppEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific ForeignAppEntity object.
 
@@ -680,7 +680,7 @@ Override language/culture codes on this request.
 
 ForeignAppEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetForeignDeviceAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetForeignDeviceAsync\(int, RequestOptions\)
+### GetForeignDeviceAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetForeignDeviceAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific ForeignDevice object.
 
@@ -704,7 +704,7 @@ Override language/culture codes on this request.
 
 ForeignDevice
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetKeyAsync_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetKeyAsync\(string, string, string, string, int, RequestOptions\)
+### GetKeyAsync\(string, string, string, string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetKeyAsync_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returning a foreign key by its key name, that belongs to the specified device and application. A table name and record ID can also be specified.
 
@@ -744,7 +744,7 @@ Override language/culture codes on this request.
 
 The ForeignKey.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetKeyByValueAndIdentifierAsync_System_String_System_String_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetKeyByValueAndIdentifierAsync\(string, string, string, string, string, string, RequestOptions\)
+### GetKeyByValueAndIdentifierAsync\(string, string, string, string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetKeyByValueAndIdentifierAsync_System_String_System_String_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get a foreignkey based on its name and value, that belongs to the specified deviceId, device, and application.
 
@@ -788,7 +788,7 @@ Override language/culture codes on this request.
 
 The ForeignKey.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetKeyByValueAsync_System_String_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetKeyByValueAsync\(string, string, string, string, string, RequestOptions\)
+### GetKeyByValueAsync\(string, string, string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetKeyByValueAsync_System_String_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get a foreignkey based on its name and value, that belongs to the specified device and application.
 
@@ -828,7 +828,7 @@ Override language/culture codes on this request.
 
 The ForeignKey.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetKeyOnDeviceIdentifierAsync_System_String_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetKeyOnDeviceIdentifierAsync\(string, string, string, string, string, int, RequestOptions\)
+### GetKeyOnDeviceIdentifierAsync\(string, string, string, string, string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetKeyOnDeviceIdentifierAsync_System_String_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returning a foreign key by its key name and device identifier, that belongs to the specified device and application. A table name and record ID can also be specified.
 
@@ -872,7 +872,7 @@ Override language/culture codes on this request.
 
 The ForeignKey.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetKeyValueAsync_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetKeyValueAsync\(string, string, string, string, int, RequestOptions\)
+### GetKeyValueAsync\(string, string, string, string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetKeyValueAsync_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets the string value of a ForeignKey, that belongs to the specified device and application. The table name and record ID must also be specified.
 
@@ -912,7 +912,7 @@ Override language/culture codes on this request.
 
 The ForeignKey value as string.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetKeyValueOnDeviceIdentifierAsync_System_String_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetKeyValueOnDeviceIdentifierAsync\(string, string, string, string, string, int, RequestOptions\)
+### GetKeyValueOnDeviceIdentifierAsync\(string, string, string, string, string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetKeyValueOnDeviceIdentifierAsync_System_String_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returning a foreign key string value by its key name and device identifier, that belongs to the specified device and application. A table name and record ID can also be specified.
 
@@ -956,7 +956,7 @@ Override language/culture codes on this request.
 
 The ForeignKey's string value.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_SaveDeviceByIdentifierAsync_System_String_System_String_System_String_SuperOffice_WebApi_Data_ForeignDevice_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveDeviceByIdentifierAsync\(string, string, string, ForeignDevice, RequestOptions\)
+### SaveDeviceByIdentifierAsync\(string, string, string, ForeignDevice, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_SaveDeviceByIdentifierAsync_System_String_System_String_System_String_SuperOffice_WebApi_Data_ForeignDevice_SuperOffice_WebApi_RequestOptions_}
 
 Updates a ForeignDevice with deviceName that belongs to the application with applicationName.
 
@@ -992,7 +992,7 @@ Override language/culture codes on this request.
 
 The ForeignDevice.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_SaveForeignAppEntityAsync_SuperOffice_WebApi_Data_ForeignAppEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveForeignAppEntityAsync\(ForeignAppEntity, RequestOptions\)
+### SaveForeignAppEntityAsync\(ForeignAppEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_SaveForeignAppEntityAsync_SuperOffice_WebApi_Data_ForeignAppEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing ForeignAppEntity or creates a new ForeignAppEntity if the id parameter is 0.
 
@@ -1016,7 +1016,7 @@ Override language/culture codes on this request.
 
 New or updated ForeignAppEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_SaveForeignDeviceAsync_SuperOffice_WebApi_Data_ForeignDevice_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveForeignDeviceAsync\(ForeignDevice, string, RequestOptions\)
+### SaveForeignDeviceAsync\(ForeignDevice, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_SaveForeignDeviceAsync_SuperOffice_WebApi_Data_ForeignDevice_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Saves a foreign device for an foreign application
 
@@ -1044,7 +1044,7 @@ Override language/culture codes on this request.
 
 Returns the saved foreign device
 
-### &lt;a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_SaveForeignKeyAsync_SuperOffice_WebApi_Data_ForeignKey_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveForeignKeyAsync\(ForeignKey, string, string, string, RequestOptions\)
+### SaveForeignKeyAsync\(ForeignKey, string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_SaveForeignKeyAsync_SuperOffice_WebApi_Data_ForeignKey_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Saves a key belonging to the ForeignApp and ForeignDevice specified.
 

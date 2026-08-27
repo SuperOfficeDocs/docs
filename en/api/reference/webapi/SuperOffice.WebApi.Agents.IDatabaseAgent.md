@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_IDatabaseAgent"&gt;&lt;/a&gt; Interface IDatabaseAgent
+# Interface IDatabaseAgent {#SuperOffice_WebApi_Agents_IDatabaseAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface IDatabaseAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDatabaseAgent_GetStepsFromNetServerCodeAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetStepsFromNetServerCodeAsync\(RequestOptions\)
+### GetStepsFromNetServerCodeAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IDatabaseAgent_GetStepsFromNetServerCodeAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get information about the dictionary steps that NetServer was generated for
 
@@ -36,7 +36,7 @@ Override language/culture codes on this request.
 
 Array of dictionary steps used when NetServer was generated, listing only the highest number for each step
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDatabaseAgent_GetStepsInDatabaseAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetStepsInDatabaseAsync\(RequestOptions\)
+### GetStepsInDatabaseAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IDatabaseAgent_GetStepsInDatabaseAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get information about the dictionary steps that are in the currently-loggedon database
 

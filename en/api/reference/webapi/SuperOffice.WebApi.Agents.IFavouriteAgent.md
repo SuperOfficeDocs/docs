@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_IFavouriteAgent"&gt;&lt;/a&gt; Interface IFavouriteAgent
+# Interface IFavouriteAgent {#SuperOffice_WebApi_Agents_IFavouriteAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface IFavouriteAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFavouriteAgent_AddFavouriteAsync_System_String_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddFavouriteAsync\(string, int, int, string, RequestOptions\)
+### AddFavouriteAsync\(string, int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IFavouriteAgent_AddFavouriteAsync_System_String_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Add a record in a table as a favourite for an associate
 
@@ -52,7 +52,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFavouriteAgent_AddFavouritesAsync_System_String_System_Int32___System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddFavouritesAsync\(string, int\[\], int, string, RequestOptions\)
+### AddFavouritesAsync\(string, int\[\], int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IFavouriteAgent_AddFavouritesAsync_System_String_System_Int32___System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Add a list of record ids as favourites for an associate
 
@@ -88,7 +88,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFavouriteAgent_AddTicketsToFavouritesByProviderAsync_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddTicketsToFavouritesByProviderAsync\(string, ArchiveRestrictionInfo\[\], int, string, RequestOptions\)
+### AddTicketsToFavouritesByProviderAsync\(string, ArchiveRestrictionInfo\[\], int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IFavouriteAgent_AddTicketsToFavouritesByProviderAsync_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Add a list of tickets as favourites that are given by the ticket provider.
 
@@ -124,7 +124,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFavouriteAgent_GetFavouritesAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetFavouritesAsync\(string, int, RequestOptions\)
+### GetFavouritesAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IFavouriteAgent_GetFavouritesAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get all favourites for a table and associate
 
@@ -152,7 +152,7 @@ Override language/culture codes on this request.
 
 Requested favourites for a table and associate
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFavouriteAgent_IsFavouriteAsync_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; IsFavouriteAsync\(string, int, int, RequestOptions\)
+### IsFavouriteAsync\(string, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IFavouriteAgent_IsFavouriteAsync_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Checks if a record in a table is a favourite for an associate
 
@@ -184,7 +184,7 @@ Override language/culture codes on this request.
 
 Is Favourite?
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFavouriteAgent_RemoveAllFavouritesAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveAllFavouritesAsync\(string, int, RequestOptions\)
+### RemoveAllFavouritesAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IFavouriteAgent_RemoveAllFavouritesAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Remove all favourites for a table and associate
 
@@ -212,7 +212,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFavouriteAgent_RemoveFavouriteAsync_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveFavouriteAsync\(string, int, int, RequestOptions\)
+### RemoveFavouriteAsync\(string, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IFavouriteAgent_RemoveFavouriteAsync_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Remove favourite for a table, record id and associate
 
@@ -244,7 +244,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFavouriteAgent_RemoveFavouritesAsync_System_String_System_Int32___System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveFavouritesAsync\(string, int\[\], int, RequestOptions\)
+### RemoveFavouritesAsync\(string, int\[\], int, RequestOptions\) {#SuperOffice_WebApi_Agents_IFavouriteAgent_RemoveFavouritesAsync_System_String_System_Int32___System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Remove a list of record ids from favourites for an associate
 
@@ -276,7 +276,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFavouriteAgent_RemoveFavouritesByIdAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveFavouritesByIdAsync\(int\[\], RequestOptions\)
+### RemoveFavouritesByIdAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IFavouriteAgent_RemoveFavouritesByIdAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Remove favourite using favourite id
 
@@ -300,7 +300,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFavouriteAgent_RemoveTicketsFromFavouritesByProviderAsync_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveTicketsFromFavouritesByProviderAsync\(string, ArchiveRestrictionInfo\[\], int, RequestOptions\)
+### RemoveTicketsFromFavouritesByProviderAsync\(string, ArchiveRestrictionInfo\[\], int, RequestOptions\) {#SuperOffice_WebApi_Agents_IFavouriteAgent_RemoveTicketsFromFavouritesByProviderAsync_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Remove a list of tickets from favourites that are given by the ticket provider.
 
@@ -332,7 +332,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IFavouriteAgent_ToggleFavouriteAsync_System_String_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ToggleFavouriteAsync\(string, int, int, string, RequestOptions\)
+### ToggleFavouriteAsync\(string, int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IFavouriteAgent_ToggleFavouriteAsync_System_String_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Toggle a record in a table as a favourite for an associate
 

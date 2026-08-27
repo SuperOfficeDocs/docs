@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent"&gt;&lt;/a&gt; Interface IErpSyncAgent
+# Interface IErpSyncAgent {#SuperOffice_WebApi_Agents_IErpSyncAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -18,7 +18,7 @@ public interface IErpSyncAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_BreakActorLinkAsync_System_Int32_System_Int32_SuperOffice_WebApi_Data_CrmActorType_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; BreakActorLinkAsync\(int, int, CrmActorType, RequestOptions\)
+### BreakActorLinkAsync\(int, int, CrmActorType, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_BreakActorLinkAsync_System_Int32_System_Int32_SuperOffice_WebApi_Data_CrmActorType_SuperOffice_WebApi_RequestOptions_}
 
 Remove the link between a CRM entity and an ERP entity
 &lt;p&gt;&lt;/p&gt;
@@ -52,7 +52,7 @@ Override language/culture codes on this request.
 
 True if success
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_CanDeleteErpSyncConnectorEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CanDeleteErpSyncConnectorEntityAsync\(int, RequestOptions\)
+### CanDeleteErpSyncConnectorEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_CanDeleteErpSyncConnectorEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Can we delete the connector?
 &lt;p&gt;&lt;/p&gt;
@@ -78,7 +78,7 @@ Override language/culture codes on this request.
 
 Enum response says ok or what is wrong
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_ChangeEngineIntervalAsync_System_TimeSpan_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ChangeEngineIntervalAsync\(TimeSpan, RequestOptions\)
+### ChangeEngineIntervalAsync\(TimeSpan, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_ChangeEngineIntervalAsync_System_TimeSpan_SuperOffice_WebApi_RequestOptions_}
 
 Change the interval for each run of the Sync Engine
 &lt;p&gt;&lt;/p&gt;
@@ -102,7 +102,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_ChangeEngineStatusAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ChangeEngineStatusAsync\(bool, RequestOptions\)
+### ChangeEngineStatusAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_ChangeEngineStatusAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Change the current running/stopped status of the Sync engine
 &lt;p&gt;&lt;/p&gt;
@@ -128,7 +128,7 @@ Override language/culture codes on this request.
 
 The current status of the engine
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_ConnectActorAsync_System_Int32_System_Int32_SuperOffice_WebApi_Data_CrmActorType_System_String_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_Data_ErpSyncFieldValue___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ConnectActorAsync\(int, int, CrmActorType, string, ErpActorType, ErpSyncFieldValue\[\], RequestOptions\)
+### ConnectActorAsync\(int, int, CrmActorType, string, ErpActorType, ErpSyncFieldValue\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_ConnectActorAsync_System_Int32_System_Int32_SuperOffice_WebApi_Data_CrmActorType_System_String_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_Data_ErpSyncFieldValue___SuperOffice_WebApi_RequestOptions_}
 
 Create a link between Erp and Crm and set default values
 &lt;p&gt;&lt;/p&gt;
@@ -170,7 +170,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_CreateActorLinkAsync_System_Int32_System_Int32_SuperOffice_WebApi_Data_CrmActorType_System_String_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateActorLinkAsync\(int, int, CrmActorType, string, ErpActorType, RequestOptions\)
+### CreateActorLinkAsync\(int, int, CrmActorType, string, ErpActorType, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_CreateActorLinkAsync_System_Int32_System_Int32_SuperOffice_WebApi_Data_CrmActorType_System_String_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_}
 
 Link a crm entity to an erp entity
 &lt;p&gt;&lt;/p&gt;
@@ -212,7 +212,7 @@ Override language/culture codes on this request.
 
 True if success
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_CreateDefaultErpSyncConnectorEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultErpSyncConnectorEntityAsync\(RequestOptions\)
+### CreateDefaultErpSyncConnectorEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_CreateDefaultErpSyncConnectorEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new ErpSyncConnectorEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -233,7 +233,7 @@ Override language/culture codes on this request.
 
 A blank ErpSyncConnectorEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_CreateErpActorFromCrmAsync_System_Int32_System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_Data_CrmActorType_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateErpActorFromCrmAsync\(int, int, ErpActorType, CrmActorType, StringDictionary, RequestOptions\)
+### CreateErpActorFromCrmAsync\(int, int, ErpActorType, CrmActorType, StringDictionary, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_CreateErpActorFromCrmAsync_System_Int32_System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_Data_CrmActorType_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_}
 
 Create ErpActor from crm entity
 &lt;p&gt;&lt;/p&gt;
@@ -275,7 +275,7 @@ Override language/culture codes on this request.
 
 Created ERP actor with success
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_DeleteConnectionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteConnectionAsync\(int, RequestOptions\)
+### DeleteConnectionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_DeleteConnectionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes a connection from the database.
 &lt;p&gt;&lt;/p&gt;
@@ -301,7 +301,7 @@ Override language/culture codes on this request.
 
 A void return
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_DeleteErpSyncConnectorEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteErpSyncConnectorEntityAsync\(int, RequestOptions\)
+### DeleteErpSyncConnectorEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_DeleteErpSyncConnectorEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the ErpSyncConnectorEntity
 &lt;p&gt;&lt;/p&gt;
@@ -325,7 +325,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_ForceResyncAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ForceResyncAsync\(int, int\[\], RequestOptions\)
+### ForceResyncAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_ForceResyncAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Force resync from CRM or given Erp connection to all other connections
 &lt;p&gt;&lt;/p&gt;
@@ -355,7 +355,7 @@ Override language/culture codes on this request.
 
 The response
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_ForceResyncBatchTaskAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ForceResyncBatchTaskAsync\(int, int\[\], RequestOptions\)
+### ForceResyncBatchTaskAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_ForceResyncBatchTaskAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Start batch task to force resync from CRM or given Erp connection to all other connections
 &lt;p&gt;&lt;/p&gt;
@@ -383,7 +383,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_ForceResyncExternalAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ForceResyncExternalAsync\(int, ErpActorType, string\[\], RequestOptions\)
+### ForceResyncExternalAsync\(int, ErpActorType, string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_ForceResyncExternalAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Force resync from CRM or given Erp connection to all other connections, using external keys
 &lt;p&gt;&lt;/p&gt;
@@ -417,7 +417,7 @@ Override language/culture codes on this request.
 
 The response
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_ForceResyncExternalNoBlankValuesAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ForceResyncExternalNoBlankValuesAsync\(int, ErpActorType, string\[\], RequestOptions\)
+### ForceResyncExternalNoBlankValuesAsync\(int, ErpActorType, string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_ForceResyncExternalNoBlankValuesAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Force resync from CRM or given Erp connection to all other connections, using external keys, and tell the sync that you don't want blank values to overwrite non-blank values. Useful on import.
 &lt;p&gt;&lt;/p&gt;
@@ -451,7 +451,7 @@ Override language/culture codes on this request.
 
 The response
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_ForceResyncNoBlankValuesAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ForceResyncNoBlankValuesAsync\(int, int\[\], RequestOptions\)
+### ForceResyncNoBlankValuesAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_ForceResyncNoBlankValuesAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Force resync from CRM or given Erp connection to all other connections and tell the sync that you don't want blank values to overwrite non-blank values. Useful on import.
 &lt;p&gt;&lt;/p&gt;
@@ -481,7 +481,7 @@ Override language/culture codes on this request.
 
 The response
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_ForceSyncAllAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ForceSyncAllAsync\(RequestOptions\)
+### ForceSyncAllAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_ForceSyncAllAsync_SuperOffice_WebApi_RequestOptions_}
 
 Sync all active connections even when automatic sync is off
 &lt;p&gt;&lt;/p&gt;
@@ -503,7 +503,7 @@ Override language/culture codes on this request.
 
 The response
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_GetActorTypeMappingAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetActorTypeMappingAsync\(int, ErpActorType, RequestOptions\)
+### GetActorTypeMappingAsync\(int, ErpActorType, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_GetActorTypeMappingAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_}
 
 Get the current mappings for one connection/actor; connection+actor type = unique key
 &lt;p&gt;&lt;/p&gt;
@@ -533,7 +533,7 @@ Override language/culture codes on this request.
 
 The current mapping from the database
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_GetAllConnectionsAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAllConnectionsAsync\(bool, RequestOptions\)
+### GetAllConnectionsAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_GetAllConnectionsAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Returns all ERP Sync connections without config field data. Uses the `ErpConnection` archive.
 &lt;p&gt;&lt;/p&gt;
@@ -559,7 +559,7 @@ Override language/culture codes on this request.
 
 The connection id, name, description
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_GetAllConnectorsAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAllConnectorsAsync\(RequestOptions\)
+### GetAllConnectorsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_GetAllConnectorsAsync_SuperOffice_WebApi_RequestOptions_}
 
 Returns all ERP Sync connectors. Uses the `ErpConnector` archive.
 &lt;p&gt;&lt;/p&gt;
@@ -581,7 +581,7 @@ Override language/culture codes on this request.
 
 The connector id, name, url
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_GetConfigurationFieldsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetConfigurationFieldsAsync\(int, RequestOptions\)
+### GetConfigurationFieldsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_GetConfigurationFieldsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns all fields needed to connect to the given connector
 &lt;p&gt;&lt;/p&gt;
@@ -607,7 +607,7 @@ Override language/culture codes on this request.
 
 The fields
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_GetConnectionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetConnectionAsync\(int, RequestOptions\)
+### GetConnectionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_GetConnectionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns the specified connection.
 &lt;p&gt;&lt;/p&gt;
@@ -633,7 +633,7 @@ Override language/culture codes on this request.
 
 The connection
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_GetConnectionListMappingsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetConnectionListMappingsAsync\(int, RequestOptions\)
+### GetConnectionListMappingsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_GetConnectionListMappingsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns the listmappings for the specified connection.
 &lt;p&gt;&lt;/p&gt;
@@ -659,7 +659,7 @@ Override language/culture codes on this request.
 
 The listmappings
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_GetConnectionsAndDisplayFieldsAsync_SuperOffice_WebApi_Data_CrmActorType_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetConnectionsAndDisplayFieldsAsync\(CrmActorType, int, RequestOptions\)
+### GetConnectionsAndDisplayFieldsAsync\(CrmActorType, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_GetConnectionsAndDisplayFieldsAsync_SuperOffice_WebApi_Data_CrmActorType_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get all connection statuses and fields for a given entity
 &lt;p&gt;&lt;/p&gt;
@@ -689,7 +689,7 @@ Override language/culture codes on this request.
 
 An array of ErpConnectionData carriers
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_GetCrmActorTypeAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCrmActorTypeAsync\(int, ErpActorType, RequestOptions\)
+### GetCrmActorTypeAsync\(int, ErpActorType, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_GetCrmActorTypeAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_}
 
 Retrieves the CrmActorType that are mapped to a specific ErpActorType for this connection
 &lt;p&gt;&lt;/p&gt;
@@ -719,7 +719,7 @@ Override language/culture codes on this request.
 
 The CrmActorType
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_GetDefaultValueInfoAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDefaultValueInfoAsync\(int, RequestOptions\)
+### GetDefaultValueInfoAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_GetDefaultValueInfoAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get information about default value for an ERP field
 &lt;p&gt;&lt;/p&gt;
@@ -745,7 +745,7 @@ Override language/culture codes on this request.
 
 Object with information about default values
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_GetEngineStatusAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetEngineStatusAsync\(RequestOptions\)
+### GetEngineStatusAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_GetEngineStatusAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get the current status of the Sync engine
 &lt;p&gt;&lt;/p&gt;
@@ -767,7 +767,7 @@ Override language/culture codes on this request.
 
 The current status of the engine
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_GetErpConnectionConfigFieldsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetErpConnectionConfigFieldsAsync\(int, RequestOptions\)
+### GetErpConnectionConfigFieldsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_GetErpConnectionConfigFieldsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns the config fields for the connection.
 &lt;p&gt;&lt;/p&gt;
@@ -793,7 +793,7 @@ Override language/culture codes on this request.
 
 Config Fields
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_GetErpFieldValuesAsync_System_Int32_SuperOffice_WebApi_Data_CrmActorType_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetErpFieldValuesAsync\(int, CrmActorType, int, string\[\], RequestOptions\)
+### GetErpFieldValuesAsync\(int, CrmActorType, int, string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_GetErpFieldValuesAsync_System_Int32_SuperOffice_WebApi_Data_CrmActorType_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Get the values for the specified fields from the ERP connection
 &lt;p&gt;&lt;/p&gt;
@@ -831,7 +831,7 @@ Override language/culture codes on this request.
 
 An array containing the values for the specified fields, in the same order
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_GetErpSyncConnectionSummaryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetErpSyncConnectionSummaryAsync\(int, RequestOptions\)
+### GetErpSyncConnectionSummaryAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_GetErpSyncConnectionSummaryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a summary of the current ErpSync configuration/setup
 &lt;p&gt;&lt;/p&gt;
@@ -857,7 +857,7 @@ Override language/culture codes on this request.
 
 Summary of connection information, and one summary element per configured actor type
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_GetErpSyncConnectorEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetErpSyncConnectorEntityAsync\(int, RequestOptions\)
+### GetErpSyncConnectorEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_GetErpSyncConnectorEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific ErpSyncConnectorEntity object.
 &lt;p&gt;&lt;/p&gt;
@@ -883,7 +883,7 @@ Override language/culture codes on this request.
 
 ErpSyncConnectorEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_GetFieldValuesFromCrmAsync_System_Int32_SuperOffice_WebApi_Data_CrmActorType_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetFieldValuesFromCrmAsync\(int, CrmActorType, RequestOptions\)
+### GetFieldValuesFromCrmAsync\(int, CrmActorType, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_GetFieldValuesFromCrmAsync_System_Int32_SuperOffice_WebApi_Data_CrmActorType_SuperOffice_WebApi_RequestOptions_}
 
 Get Crm Field values
 &lt;p&gt;&lt;/p&gt;
@@ -913,7 +913,7 @@ Override language/culture codes on this request.
 
 The Crm Fields
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_GetFieldValuesFromErpAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetFieldValuesFromErpAsync\(int, ErpActorType, string, RequestOptions\)
+### GetFieldValuesFromErpAsync\(int, ErpActorType, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_GetFieldValuesFromErpAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get Erp Field values
 &lt;p&gt;&lt;/p&gt;
@@ -947,7 +947,7 @@ Override language/culture codes on this request.
 
 The Erp Fields
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_GetFieldsForNewErpActorAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetFieldsForNewErpActorAsync\(int, ErpActorType, RequestOptions\)
+### GetFieldsForNewErpActorAsync\(int, ErpActorType, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_GetFieldsForNewErpActorAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_}
 
 Get the fields that must be filled out when creating a new ERP actor
 &lt;p&gt;&lt;/p&gt;
@@ -977,7 +977,7 @@ Override language/culture codes on this request.
 
 The fields that are required for the new ERP actor
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_MoveErpFieldItemAsync_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; MoveErpFieldItemAsync\(int, int, int, ErpActorType, RequestOptions\)
+### MoveErpFieldItemAsync\(int, int, int, ErpActorType, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_MoveErpFieldItemAsync_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_}
 
 Moves the rank of the erp field up or down
 &lt;p&gt;&lt;/p&gt;
@@ -1013,7 +1013,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_SaveActorTypeMappingAsync_SuperOffice_WebApi_Data_ErpSyncActorTypeMapping_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveActorTypeMappingAsync\(ErpSyncActorTypeMapping, RequestOptions\)
+### SaveActorTypeMappingAsync\(ErpSyncActorTypeMapping, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_SaveActorTypeMappingAsync_SuperOffice_WebApi_Data_ErpSyncActorTypeMapping_SuperOffice_WebApi_RequestOptions_}
 
 Save mappings for a connection/actor
 &lt;p&gt;&lt;/p&gt;
@@ -1039,7 +1039,7 @@ Override language/culture codes on this request.
 
 The current mapping from the database
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_SaveConnectionAsync_SuperOffice_WebApi_Data_ErpConnection_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveConnectionAsync\(ErpConnection, RequestOptions\)
+### SaveConnectionAsync\(ErpConnection, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_SaveConnectionAsync_SuperOffice_WebApi_Data_ErpConnection_SuperOffice_WebApi_RequestOptions_}
 
 Saves a connection to the database.
 &lt;p&gt;&lt;/p&gt;
@@ -1065,7 +1065,7 @@ Override language/culture codes on this request.
 
 The resulting connection.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_SaveConnectionListMappingsAsync_SuperOffice_WebApi_Data_ErpConnectionListMappingContainer_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveConnectionListMappingsAsync\(ErpConnectionListMappingContainer, RequestOptions\)
+### SaveConnectionListMappingsAsync\(ErpConnectionListMappingContainer, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_SaveConnectionListMappingsAsync_SuperOffice_WebApi_Data_ErpConnectionListMappingContainer_SuperOffice_WebApi_RequestOptions_}
 
 Saves a connection to the database.
 &lt;p&gt;&lt;/p&gt;
@@ -1091,7 +1091,7 @@ Override language/culture codes on this request.
 
 The saved list mappings.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_SaveDefaultValueInfoAsync_SuperOffice_WebApi_Data_ErpSyncDefaultValue_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveDefaultValueInfoAsync\(ErpSyncDefaultValue, RequestOptions\)
+### SaveDefaultValueInfoAsync\(ErpSyncDefaultValue, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_SaveDefaultValueInfoAsync_SuperOffice_WebApi_Data_ErpSyncDefaultValue_SuperOffice_WebApi_RequestOptions_}
 
 Save information about a default value for an ERP field
 &lt;p&gt;&lt;/p&gt;
@@ -1117,7 +1117,7 @@ Override language/culture codes on this request.
 
 The newly saved ErpSyncDefaultValue
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_SaveErpConnectionSyncPrioritiesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveErpConnectionSyncPrioritiesAsync\(int\[\], RequestOptions\)
+### SaveErpConnectionSyncPrioritiesAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_SaveErpConnectionSyncPrioritiesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Takes an array of the ErpConnection ids and saves these as ordered sync priorities
 &lt;p&gt;&lt;/p&gt;
@@ -1143,7 +1143,7 @@ Override language/culture codes on this request.
 
 Returns true if new sync priorities is saved
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_SaveErpSyncConnectorEntityAsync_SuperOffice_WebApi_Data_ErpSyncConnectorEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveErpSyncConnectorEntityAsync\(ErpSyncConnectorEntity, RequestOptions\)
+### SaveErpSyncConnectorEntityAsync\(ErpSyncConnectorEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_SaveErpSyncConnectorEntityAsync_SuperOffice_WebApi_Data_ErpSyncConnectorEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing ErpSyncConnectorEntity or creates a new ErpSyncConnectorEntity if the id parameter is 0. 
 &lt;p&gt;&lt;/p&gt;
@@ -1169,7 +1169,7 @@ Override language/culture codes on this request.
 
 New or updated ErpSyncConnectorEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_SupportsAdvancedSearchAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SupportsAdvancedSearchAsync\(int, ErpActorType, RequestOptions\)
+### SupportsAdvancedSearchAsync\(int, ErpActorType, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_SupportsAdvancedSearchAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_}
 
 Indicates if the connection supports advanced search for the given erp actor
 &lt;p&gt;&lt;/p&gt;
@@ -1199,7 +1199,7 @@ Override language/culture codes on this request.
 
 True if advanced search is supported
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_SyncAllAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SyncAllAsync\(RequestOptions\)
+### SyncAllAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_SyncAllAsync_SuperOffice_WebApi_RequestOptions_}
 
 Sync all active connections
 &lt;p&gt;&lt;/p&gt;
@@ -1221,7 +1221,7 @@ Override language/culture codes on this request.
 
 The response
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_TestConnectionByConfigAsync_System_Int32_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; TestConnectionByConfigAsync\(int, StringDictionary, RequestOptions\)
+### TestConnectionByConfigAsync\(int, StringDictionary, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_TestConnectionByConfigAsync_System_Int32_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_}
 
 Tests to see if the given connection has a valid connection to its connector
 &lt;p&gt;&lt;/p&gt;
@@ -1251,7 +1251,7 @@ Override language/culture codes on this request.
 
 Returns true if success
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_TestConnectionByIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; TestConnectionByIdAsync\(int, RequestOptions\)
+### TestConnectionByIdAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_TestConnectionByIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Tests to see if we can establish a connection with the given config fields
 &lt;p&gt;&lt;/p&gt;
@@ -1277,7 +1277,7 @@ Override language/culture codes on this request.
 
 Returns true if success
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_TestConnectorUrlAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; TestConnectorUrlAsync\(string, RequestOptions\)
+### TestConnectorUrlAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_TestConnectorUrlAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Test if connector urls anwers
 &lt;p&gt;&lt;/p&gt;
@@ -1303,7 +1303,7 @@ Override language/culture codes on this request.
 
 Enum response says ok or what is wrong
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_ToggleErpConnectionActiveAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ToggleErpConnectionActiveAsync\(int, RequestOptions\)
+### ToggleErpConnectionActiveAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_ToggleErpConnectionActiveAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Toggles the Active state of the connection
 &lt;p&gt;&lt;/p&gt;
@@ -1329,7 +1329,7 @@ Override language/culture codes on this request.
 
 Contains the reason for why the toggle failed. Empty if operation was successful
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_TryConnectActorAsync_System_Int32_System_Int32_SuperOffice_WebApi_Data_CrmActorType_System_String_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_Data_ErpSyncFieldValue___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; TryConnectActorAsync\(int, int, CrmActorType, string, ErpActorType, ErpSyncFieldValue\[\], RequestOptions\)
+### TryConnectActorAsync\(int, int, CrmActorType, string, ErpActorType, ErpSyncFieldValue\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_TryConnectActorAsync_System_Int32_System_Int32_SuperOffice_WebApi_Data_CrmActorType_System_String_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_Data_ErpSyncFieldValue___SuperOffice_WebApi_RequestOptions_}
 
 Create a link between Erp and Crm and set default values
 &lt;p&gt;&lt;/p&gt;
@@ -1371,7 +1371,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_UpdateConnectionFieldsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; UpdateConnectionFieldsAsync\(int, RequestOptions\)
+### UpdateConnectionFieldsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_UpdateConnectionFieldsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets all supported actor types, and all fields for each actor type, and save this state to the CRM database
 &lt;p&gt;&lt;/p&gt;
@@ -1397,7 +1397,7 @@ Override language/culture codes on this request.
 
 Success or fail
 
-### &lt;a id="SuperOffice_WebApi_Agents_IErpSyncAgent_ValidateArchiveColumnConfigAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ValidateArchiveColumnConfigAsync\(string, int, RequestOptions\)
+### ValidateArchiveColumnConfigAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IErpSyncAgent_ValidateArchiveColumnConfigAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Clear field info from table SUPERLISTCOLUMNSIZE if field mapping changed on given connection
 &lt;p&gt;&lt;/p&gt;

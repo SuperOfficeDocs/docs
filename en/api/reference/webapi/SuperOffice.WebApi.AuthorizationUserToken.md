@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_AuthorizationUserToken"&gt;&lt;/a&gt; Class AuthorizationUserToken
+# Class AuthorizationUserToken {#SuperOffice_WebApi_AuthorizationUserToken}
 
 Namespace: [SuperOffice.WebApi](SuperOffice.WebApi.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -39,7 +39,7 @@ If the access token is omitted on construction, the first agent call will result
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_AuthorizationUserToken__ctor_System_String_System_String_System_String_"&gt;&lt;/a&gt; AuthorizationUserToken\(string, string, string\)
+### AuthorizationUserToken\(string, string, string\) {#SuperOffice_WebApi_AuthorizationUserToken__ctor_System_String_System_String_System_String_}
 
 ```csharp
 public AuthorizationUserToken(string userName, string password, string accessToken = null)
@@ -61,7 +61,7 @@ Optional access token. Should be a 8A: style bearer token, same as what UserAgen
 
 ## Properties
 
-### &lt;a id="SuperOffice_WebApi_AuthorizationUserToken_RefreshAuthorizationAsync"&gt;&lt;/a&gt; RefreshAuthorizationAsync
+### RefreshAuthorizationAsync {#SuperOffice_WebApi_AuthorizationUserToken_RefreshAuthorizationAsync}
 
 Try to refresh this &lt;xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instance.
 
@@ -75,7 +75,7 @@ public Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_AuthorizationUserToken_GetAuthorization"&gt;&lt;/a&gt; GetAuthorization\(\)
+### GetAuthorization\(\) {#SuperOffice_WebApi_AuthorizationUserToken_GetAuthorization}
 
 ```csharp
 public AuthenticationHeaderValue GetAuthorization()

@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Data_Associate"&gt;&lt;/a&gt; Class Associate
+# Class Associate {#SuperOffice_WebApi_Data_Associate}
 
 Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -36,7 +36,7 @@ var associate = agent.GetAssociate( 123 );&lt;/code&gt;&lt;/pre&gt;
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Data_Associate__ctor"&gt;&lt;/a&gt; Associate\(\)
+### Associate\(\) {#SuperOffice_WebApi_Data_Associate__ctor}
 
 Default constructor - defaults any enum props to 0.
 
@@ -46,7 +46,7 @@ public Associate()
 
 ## Properties
 
-### &lt;a id="SuperOffice_WebApi_Data_Associate_AssociateId"&gt;&lt;/a&gt; AssociateId
+### AssociateId {#SuperOffice_WebApi_Data_Associate_AssociateId}
 
 Primary key
 
@@ -58,7 +58,7 @@ public virtual int AssociateId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_Associate_CustomFields"&gt;&lt;/a&gt; CustomFields
+### CustomFields {#SuperOffice_WebApi_Data_Associate_CustomFields}
 
 Udef + Extra fields added to the carrier. Extra fields as defined by changes to database schema + user-defined fields as defined by admin.
 Custom fields combines user defined fields and extra fields into one bucket. 
@@ -85,7 +85,7 @@ The naming convention of the key string is as follows:
     Example: &lt;pre&gt;&lt;code class="lang-csharp"&gt;'SuperOffice:1' = '[I:123]'&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
        &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 
-### &lt;a id="SuperOffice_WebApi_Data_Associate_Deleted"&gt;&lt;/a&gt; Deleted
+### Deleted {#SuperOffice_WebApi_Data_Associate_Deleted}
 
 If true, the user is retired and should have no rights, not appear in lists, etc.
 
@@ -97,7 +97,7 @@ public virtual bool Deleted { get; set; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-### &lt;a id="SuperOffice_WebApi_Data_Associate_EjUserId"&gt;&lt;/a&gt; EjUserId
+### EjUserId {#SuperOffice_WebApi_Data_Associate_EjUserId}
 
 ID of the ej user record corresponding to this associate; 0 for associates that are not ej users
 
@@ -109,7 +109,7 @@ public virtual int EjUserId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_Associate_ExtraFields"&gt;&lt;/a&gt; ExtraFields
+### ExtraFields {#SuperOffice_WebApi_Data_Associate_ExtraFields}
 
 Deprecated: Use &lt;xref href="SuperOffice.WebApi.Data.Associate.CustomFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instead.
 Extra fields added to the carrier. This could be data from Plug-ins, the foreign key system, external applications, etc.
@@ -142,7 +142,7 @@ The naming convention of the key string is as follows:
        We also ensure that SuperOffice data are added first, so that existing data doesnt change when more data sources are added (with duplicate data keys).
        &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 
-### &lt;a id="SuperOffice_WebApi_Data_Associate_FormalName"&gt;&lt;/a&gt; FormalName
+### FormalName {#SuperOffice_WebApi_Data_Associate_FormalName}
 
 The associate's culture formatted formalname (firstname, middleName and lastname, title, mrmrs)
 
@@ -154,7 +154,7 @@ public virtual string FormalName { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_Associate_FullName"&gt;&lt;/a&gt; FullName
+### FullName {#SuperOffice_WebApi_Data_Associate_FullName}
 
 The associate's culture formatted fullname (firstname, middleName and lastname)
 
@@ -166,7 +166,7 @@ public virtual string FullName { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_Associate_GroupIdx"&gt;&lt;/a&gt; GroupIdx
+### GroupIdx {#SuperOffice_WebApi_Data_Associate_GroupIdx}
 
 Primary group membership, see UserGroupLink for secondary memberships
 
@@ -178,7 +178,7 @@ public virtual int GroupIdx { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_Associate_Name"&gt;&lt;/a&gt; Name
+### Name {#SuperOffice_WebApi_Data_Associate_Name}
 
 Initials, also login name, possibly database user name
 
@@ -190,7 +190,7 @@ public virtual string Name { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_Associate_PersonId"&gt;&lt;/a&gt; PersonId
+### PersonId {#SuperOffice_WebApi_Data_Associate_PersonId}
 
 Owning person record
 &lt;p&gt;Use MDO List name "person" to get list items.&lt;/p&gt;
@@ -203,7 +203,7 @@ public virtual int PersonId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_Associate_Rank"&gt;&lt;/a&gt; Rank
+### Rank {#SuperOffice_WebApi_Data_Associate_Rank}
 
 Rank order
 
@@ -215,7 +215,7 @@ public virtual short Rank { get; set; }
 
  [short](https://learn.microsoft.com/dotnet/api/system.int16)
 
-### &lt;a id="SuperOffice_WebApi_Data_Associate_Tooltip"&gt;&lt;/a&gt; Tooltip
+### Tooltip {#SuperOffice_WebApi_Data_Associate_Tooltip}
 
 Tooltip or other description
 
@@ -227,7 +227,7 @@ public virtual string Tooltip { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_Associate_Type"&gt;&lt;/a&gt; Type
+### Type {#SuperOffice_WebApi_Data_Associate_Type}
 
 User type - 1 = internal user, 2 = resource, 3 = external user, 4 = anonymous, 5 = system
 NULL if unknown enum value.
@@ -245,7 +245,7 @@ public UserType? Type { get; set; }
 
 [Associate](SuperOffice.WebApi.Data.Associate.md).[Type\_String](SuperOffice.WebApi.Data.Associate.md\#SuperOffice\_WebApi\_Data\_Associate\_Type\_String)
 
-### &lt;a id="SuperOffice_WebApi_Data_Associate_Type_String"&gt;&lt;/a&gt; Type\_String
+### Type\_String {#SuperOffice_WebApi_Data_Associate_Type_String}
 
 User type - 1 = internal user, 2 = resource, 3 = external user, 4 = anonymous, 5 = system
 Raw string enum value.
@@ -263,7 +263,7 @@ public string Type_String { get; set; }
 
 [Associate](SuperOffice.WebApi.Data.Associate.md).[Type](SuperOffice.WebApi.Data.Associate.md\#SuperOffice\_WebApi\_Data\_Associate\_Type)
 
-### &lt;a id="SuperOffice_WebApi_Data_Associate_UserName"&gt;&lt;/a&gt; UserName
+### UserName {#SuperOffice_WebApi_Data_Associate_UserName}
 
 User name
 

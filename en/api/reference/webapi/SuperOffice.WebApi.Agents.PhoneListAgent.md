@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_PhoneListAgent"&gt;&lt;/a&gt; Class PhoneListAgent
+# Class PhoneListAgent {#SuperOffice_WebApi_Agents_PhoneListAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -69,7 +69,7 @@ using (PhoneListAgent agent = new PhoneListAgent(mySession))
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Agents_PhoneListAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; PhoneListAgent\(HttpClient\)
+### PhoneListAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_PhoneListAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: Collection of all services for searching for person or contact (company) phone numbers.
 
@@ -83,7 +83,7 @@ public PhoneListAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### &lt;a id="SuperOffice_WebApi_Agents_PhoneListAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; PhoneListAgent\(WebApiOptions, HttpClient\)
+### PhoneListAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_PhoneListAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: Collection of all services for searching for person or contact (company) phone numbers.
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_PhoneListAgent_AddToFavoritesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddToFavoritesAsync\(int, RequestOptions\)
+### AddToFavoritesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_PhoneListAgent_AddToFavoritesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Adds a new contact to the history/favorites. Returns the rank of the new history item. If the contact already existed in the history, it isn't added but the rank is updated.
 
@@ -127,7 +127,7 @@ Override language/culture codes on this request.
 
 The rank of the history item
 
-### &lt;a id="SuperOffice_WebApi_Agents_PhoneListAgent_GetContactPhonesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetContactPhonesAsync\(int, RequestOptions\)
+### GetContactPhonesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_PhoneListAgent_GetContactPhonesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns an array of phone list items for all the persons belonging to a contact (company). The in-parameter must be a valid contact-id.
 
@@ -151,7 +151,7 @@ Override language/culture codes on this request.
 
 The contacts phone list.
 
-### &lt;a id="SuperOffice_WebApi_Agents_PhoneListAgent_GetDepartmentPhonesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDepartmentPhonesAsync\(int, RequestOptions\)
+### GetDepartmentPhonesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_PhoneListAgent_GetDepartmentPhonesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns an array of phone list items with the in-parameter as restriction. The in-parameter must be a valid department id (UserGroupId).
 
@@ -175,7 +175,7 @@ Override language/culture codes on this request.
 
 The department phone list
 
-### &lt;a id="SuperOffice_WebApi_Agents_PhoneListAgent_GetFavoritesPhonesAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetFavoritesPhonesAsync\(RequestOptions\)
+### GetFavoritesPhonesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_PhoneListAgent_GetFavoritesPhonesAsync_SuperOffice_WebApi_RequestOptions_}
 
 Returns an array of phone list items with the Contacts in the users favorites dropdown list.
 
@@ -195,7 +195,7 @@ Override language/culture codes on this request.
 
 The favorite contact phone list
 
-### &lt;a id="SuperOffice_WebApi_Agents_PhoneListAgent_GetPreferencesAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPreferencesAsync\(RequestOptions\)
+### GetPreferencesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_PhoneListAgent_GetPreferencesAsync_SuperOffice_WebApi_RequestOptions_}
 
 Getting Phone List Preferences from the CRM 5 user preferences
 
@@ -215,7 +215,7 @@ Override language/culture codes on this request.
 
 The Phone List Preferences
 
-### &lt;a id="SuperOffice_WebApi_Agents_PhoneListAgent_SearchAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SearchAsync\(string, RequestOptions\)
+### SearchAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_PhoneListAgent_SearchAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Searching the phone list. Using default search preferences or the preferences already set by the PhoneListPreferences Service
 
@@ -239,7 +239,7 @@ Override language/culture codes on this request.
 
 The resulting phone list
 
-### &lt;a id="SuperOffice_WebApi_Agents_PhoneListAgent_SearchWithPreferencesAsync_System_String_SuperOffice_WebApi_Data_PhoneListPreferences_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SearchWithPreferencesAsync\(string, PhoneListPreferences, RequestOptions\)
+### SearchWithPreferencesAsync\(string, PhoneListPreferences, RequestOptions\) {#SuperOffice_WebApi_Agents_PhoneListAgent_SearchWithPreferencesAsync_System_String_SuperOffice_WebApi_Data_PhoneListPreferences_SuperOffice_WebApi_RequestOptions_}
 
 Searching the phone list. Search is based on the supplied preferences.
 
@@ -267,7 +267,7 @@ Override language/culture codes on this request.
 
 The resulting phone list.
 
-### &lt;a id="SuperOffice_WebApi_Agents_PhoneListAgent_SetPreferencesAsync_SuperOffice_WebApi_Data_PhoneListPreferences_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetPreferencesAsync\(PhoneListPreferences, RequestOptions\)
+### SetPreferencesAsync\(PhoneListPreferences, RequestOptions\) {#SuperOffice_WebApi_Agents_PhoneListAgent_SetPreferencesAsync_SuperOffice_WebApi_Data_PhoneListPreferences_SuperOffice_WebApi_RequestOptions_}
 
 Setting Phone List Preferences to the CRM 5 user preferences
 

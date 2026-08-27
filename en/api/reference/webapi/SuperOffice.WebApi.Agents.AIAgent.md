@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_AIAgent"&gt;&lt;/a&gt; Class AIAgent
+# Class AIAgent {#SuperOffice_WebApi_Agents_AIAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -69,7 +69,7 @@ using (AIAgent agent = new AIAgent(mySession))
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; AIAgent\(HttpClient\)
+### AIAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_AIAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: AI services, such as Translation, Statistics, Sentiment analysis, backed by calls to Public Cloud providers
 
@@ -83,7 +83,7 @@ public AIAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; AIAgent\(WebApiOptions, HttpClient\)
+### AIAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_AIAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: AI services, such as Translation, Statistics, Sentiment analysis, backed by calls to Public Cloud providers
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_AnalyzeBizCardImageAsync_System_Byte___System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AnalyzeBizCardImageAsync\(byte\[\], bool, RequestOptions\)
+### AnalyzeBizCardImageAsync\(byte\[\], bool, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_AnalyzeBizCardImageAsync_System_Byte___System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Returns contact and person information from an image. Merges results with matching database records if merge = true
 
@@ -131,7 +131,7 @@ Override language/culture codes on this request.
 
 Returns a Contact and a Person entity.
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_AnalyzeBizCardTextAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AnalyzeBizCardTextAsync\(string, bool, RequestOptions\)
+### AnalyzeBizCardTextAsync\(string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_AnalyzeBizCardTextAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Extract contact and person information from text. Merge results with matching database records if merge = true
 
@@ -159,7 +159,7 @@ Override language/culture codes on this request.
 
 Returns a Contact and a Person entity.
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_AnswerAcceptedAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AnswerAcceptedAsync\(string, RequestOptions\)
+### AnswerAcceptedAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_AnswerAcceptedAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Signal that answer was inserted into response- feedback is logged and used to improve the answer algorithm.
 
@@ -183,7 +183,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_AnswerAsync_System_String_System_String_SuperOffice_WebApi_Data_RagType_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AnswerAsync\(string, string, RagType, int, RequestOptions\)
+### AnswerAsync\(string, string, RagType, int, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_AnswerAsync_System_String_System_String_SuperOffice_WebApi_Data_RagType_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns an answer.
 
@@ -219,7 +219,7 @@ Override language/culture codes on this request.
 
 Generated answer based on query.
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_AnswerFeedbackAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AnswerFeedbackAsync\(string, bool, RequestOptions\)
+### AnswerFeedbackAsync\(string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_AnswerFeedbackAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Send feedback on answer - feedback is logged and used to improve the answer algorithm.
 
@@ -247,7 +247,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_AnswerUsingContextAsync_System_String_System_String_SuperOffice_WebApi_Data_RagContextIds_SuperOffice_WebApi_Data_RagType_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AnswerUsingContextAsync\(string, string, RagContextIds, RagType, int, RequestOptions\)
+### AnswerUsingContextAsync\(string, string, RagContextIds, RagType, int, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_AnswerUsingContextAsync_System_String_System_String_SuperOffice_WebApi_Data_RagContextIds_SuperOffice_WebApi_Data_RagType_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns an answer based on the query, and provided context.
 
@@ -287,7 +287,7 @@ Override language/culture codes on this request.
 
 Generated answer based on query.
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_CancelIndexingAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CancelIndexingAsync\(string, RequestOptions\)
+### CancelIndexingAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_CancelIndexingAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Cancel the current re-indexing job on a given namespace. Leaves data in inconsistent state, because removal of old data is skipped.
 
@@ -311,7 +311,7 @@ Override language/culture codes on this request.
 
 Status of the indexing run after cancellation.
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_ClearChatbotTurnsAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ClearChatbotTurnsAsync\(string, RequestOptions\)
+### ClearChatbotTurnsAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_ClearChatbotTurnsAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Clears the stored history of chat messages for a given chat_id. Chat_id is usually derived from soproto + current id, but could also be arbitrary name
 
@@ -335,7 +335,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_CreateDefaultCopilotDataSourceEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultCopilotDataSourceEntityAsync\(RequestOptions\)
+### CreateDefaultCopilotDataSourceEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_CreateDefaultCopilotDataSourceEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new CopilotDataSourceEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -356,7 +356,7 @@ Override language/culture codes on this request.
 
 A blank CopilotDataSourceEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_CreateDefaultCopilotEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultCopilotEntityAsync\(RequestOptions\)
+### CreateDefaultCopilotEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_CreateDefaultCopilotEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new CopilotEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -377,7 +377,7 @@ Override language/culture codes on this request.
 
 A blank CopilotEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_CreateTextForAppointmentAsync_SuperOffice_WebApi_Data_AppointmentEntity_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateTextForAppointmentAsync\(AppointmentEntity, string, RequestOptions\)
+### CreateTextForAppointmentAsync\(AppointmentEntity, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_CreateTextForAppointmentAsync_SuperOffice_WebApi_Data_AppointmentEntity_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Generate agenda text for an appointment based on appointment's company category, title, person, etc.
 
@@ -405,7 +405,7 @@ Override language/culture codes on this request.
 
 Agenda text in markdown format
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_DeleteCopilotDataSourceEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteCopilotDataSourceEntityAsync\(int, RequestOptions\)
+### DeleteCopilotDataSourceEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_DeleteCopilotDataSourceEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the CopilotDataSourceEntity
 
@@ -427,7 +427,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_DeleteCopilotEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteCopilotEntityAsync\(int, RequestOptions\)
+### DeleteCopilotEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_DeleteCopilotEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the CopilotEntity
 
@@ -449,7 +449,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_DetectLanguageAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DetectLanguageAsync\(string, RequestOptions\)
+### DetectLanguageAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_DetectLanguageAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Given a (reasonably short) text, detect the language it is written in
 
@@ -473,7 +473,7 @@ Override language/culture codes on this request.
 
 ISO Language code, such as NO, US, ES, FR
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_DetectSentimentAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DetectSentimentAsync\(string, RequestOptions\)
+### DetectSentimentAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_DetectSentimentAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Detect the sentiment of a (reasonably short) text. Sentiment analysis may cause a translation to be made, since sentiment analysis only supports a limited set of languages
 
@@ -497,7 +497,7 @@ Override language/culture codes on this request.
 
 The sentiment information: score (-100 to +100) and confidence
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_ExpandTextAsync_System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ExpandTextAsync\(string, int, string, RequestOptions\)
+### ExpandTextAsync\(string, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_ExpandTextAsync_System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Generate a longer version of a text
 
@@ -529,7 +529,7 @@ Override language/culture codes on this request.
 
 Expanded version of the text
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_GetChatbotPromptSuggestionsAsync_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetChatbotPromptSuggestionsAsync\(string, string, int, RequestOptions\)
+### GetChatbotPromptSuggestionsAsync\(string, string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetChatbotPromptSuggestionsAsync_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Return one or more suggested prompts as actions to display in an empty chat window
 
@@ -561,7 +561,7 @@ Override language/culture codes on this request.
 
 Contains zero or more BotActions, and welcome message in Bot response
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_GetChatbotResponseAsync_System_String_System_String_System_String_System_String_SuperOffice_WebApi_Data_ChatbotTurn___System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetChatbotResponseAsync\(string, string, string, string, ChatbotTurn\[\], string, RequestOptions\)
+### GetChatbotResponseAsync\(string, string, string, string, ChatbotTurn\[\], string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetChatbotResponseAsync_System_String_System_String_System_String_System_String_SuperOffice_WebApi_Data_ChatbotTurn___System_String_SuperOffice_WebApi_RequestOptions_}
 
 Return a chatbot response given prompt and previous turns. Stores the new turn in the history for the chatId
 
@@ -605,7 +605,7 @@ Override language/culture codes on this request.
 
 Returns new turn that client can append to its local history.
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_GetChatbotTurnsAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetChatbotTurnsAsync\(string, RequestOptions\)
+### GetChatbotTurnsAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetChatbotTurnsAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns stored history of chat messages for a given chat_id. Chat_id is usually derived from soproto + current id, but could also be arbitrary name.
 
@@ -629,7 +629,7 @@ Override language/culture codes on this request.
 
 Array containing zero or more turns. If you got zero turns, call GetChatbotPromptSuggestions to get an initial turn from the bot.
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_GetCopilotDataSourceEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCopilotDataSourceEntityAsync\(int, RequestOptions\)
+### GetCopilotDataSourceEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetCopilotDataSourceEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific CopilotDataSourceEntity object.
 
@@ -653,7 +653,7 @@ Override language/culture codes on this request.
 
 CopilotDataSourceEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_GetCopilotEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCopilotEntityAsync\(int, RequestOptions\)
+### GetCopilotEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetCopilotEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific CopilotEntity object.
 
@@ -677,7 +677,7 @@ Override language/culture codes on this request.
 
 CopilotEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_GetFirstFormDesignCssFromImageAsync_System_Byte___System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetFirstFormDesignCssFromImageAsync\(byte\[\], string, RequestOptions\)
+### GetFirstFormDesignCssFromImageAsync\(byte\[\], string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetFirstFormDesignCssFromImageAsync_System_Byte___System_String_SuperOffice_WebApi_RequestOptions_}
 
 Starts a form design analysis from an image, returning the properties for a single CSS class.
 
@@ -705,7 +705,7 @@ Override language/culture codes on this request.
 
 Returns CSS properties for a single CSS class, and the internal state for the analyzer.
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_GetFirstFormDesignCssFromUrlAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetFirstFormDesignCssFromUrlAsync\(string, string, RequestOptions\)
+### GetFirstFormDesignCssFromUrlAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetFirstFormDesignCssFromUrlAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Starts a form design analysis from a URL, returning the properties for a single CSS class.
 
@@ -733,7 +733,7 @@ Override language/culture codes on this request.
 
 Returns CSS properties for a single CSS class, and the internal state for the analyzer.
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_GetFormDesignCssFromImageAsync_System_Byte___System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetFormDesignCssFromImageAsync\(byte\[\], string\[\], RequestOptions\)
+### GetFormDesignCssFromImageAsync\(byte\[\], string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetFormDesignCssFromImageAsync_System_Byte___System_String___SuperOffice_WebApi_RequestOptions_}
 
 Returns Form Designer CSS based on the look of a picture
 
@@ -761,7 +761,7 @@ Override language/culture codes on this request.
 
 Returns CSS rules and confidence score.
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_GetFormDesignCssFromUrlAsync_System_String_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetFormDesignCssFromUrlAsync\(string, string\[\], RequestOptions\)
+### GetFormDesignCssFromUrlAsync\(string, string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetFormDesignCssFromUrlAsync_System_String_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Returns Form Designer properties based on the look of a web page
 
@@ -789,7 +789,7 @@ Override language/culture codes on this request.
 
 Returns CSS rules and confidence score.
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_GetFormDesignFromImageAsync_System_Byte___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetFormDesignFromImageAsync\(byte\[\], RequestOptions\)
+### GetFormDesignFromImageAsync\(byte\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetFormDesignFromImageAsync_System_Byte___SuperOffice_WebApi_RequestOptions_}
 
 Returns Form Designer properties based on the look of a picture
 
@@ -813,7 +813,7 @@ Override language/culture codes on this request.
 
 Returns a Form Designer properties.
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_GetFormDesignFromUrlAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetFormDesignFromUrlAsync\(string, RequestOptions\)
+### GetFormDesignFromUrlAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetFormDesignFromUrlAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns Form Designer properties based on the look of a web page
 
@@ -837,7 +837,7 @@ Override language/culture codes on this request.
 
 Returns a Form Designer properties.
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_GetIndexingStatusAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetIndexingStatusAsync\(string, RequestOptions\)
+### GetIndexingStatusAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetIndexingStatusAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get the current status.
 
@@ -861,7 +861,7 @@ Override language/culture codes on this request.
 
 Status of the indexing run - may be cancelled if another run is in progress.
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_GetNextFormDesignCssAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetNextFormDesignCssAsync\(string, string, RequestOptions\)
+### GetNextFormDesignCssAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetNextFormDesignCssAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns another CSS class, continuing the CSS generation, one class at a time.
 
@@ -889,7 +889,7 @@ Override language/culture codes on this request.
 
 Returns CSS properties for a single CSS class, and the updated internal state for the analyzer.
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_GetSummarizeContactPromptAsync_System_Int32_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSummarizeContactPromptAsync\(int, int, string, string, RequestOptions\)
+### GetSummarizeContactPromptAsync\(int, int, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetSummarizeContactPromptAsync_System_Int32_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Return the prompt used to get a short summary of the activities on a contact. Does not call the chatbot for a response. Used for transfering a summary to a chat session.
 
@@ -925,7 +925,7 @@ Override language/culture codes on this request.
 
 Display text and Prompt used to generate a short summary of the activities on a contact.
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_GetSummarizeSalePromptAsync_System_Int32_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSummarizeSalePromptAsync\(int, int, string, string, RequestOptions\)
+### GetSummarizeSalePromptAsync\(int, int, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetSummarizeSalePromptAsync_System_Int32_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Return the prompt used to get a short summary of the activities on a sale. Does not call the chatbot for a response. Used for transfering a summary to a chat session.
 
@@ -961,7 +961,7 @@ Override language/culture codes on this request.
 
 Display text and Prompt used to generate a short summary of the activities on a sale.
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_GetSummarizeTicketPromptAsync_System_Int32_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSummarizeTicketPromptAsync\(int, int, string, string, RequestOptions\)
+### GetSummarizeTicketPromptAsync\(int, int, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetSummarizeTicketPromptAsync_System_Int32_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Return the prompt used to get a short summary of the messages on a ticket. Does not call the chatbot for a response. Used for transfering a summary to a chat session.
 
@@ -997,7 +997,7 @@ Override language/culture codes on this request.
 
 Display text and Prompt used to generate a short summary of the messages on a ticket.
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_GetTrainingStatusAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTrainingStatusAsync\(RequestOptions\)
+### GetTrainingStatusAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GetTrainingStatusAsync_SuperOffice_WebApi_RequestOptions_}
 
 Calling the HugoAI endpoint to fetch the current training status.
 
@@ -1017,7 +1017,7 @@ Override language/culture codes on this request.
 
 Carrier to describe the current status of HugoAI categorization
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_GuessCategoryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GuessCategoryAsync\(int, RequestOptions\)
+### GuessCategoryAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_GuessCategoryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Given a ticket's id, guess the ticket category it should be placed in. Currently this is based on the first message in the ticket
 
@@ -1041,7 +1041,7 @@ Override language/culture codes on this request.
 
 Suggested ticket category ID
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_ParseQueryIntoRestrictionsAsync_System_String_System_String_SuperOffice_WebApi_Data_NaturalLanguageSearch_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ParseQueryIntoRestrictionsAsync\(string, string, NaturalLanguageSearch, RequestOptions\)
+### ParseQueryIntoRestrictionsAsync\(string, string, NaturalLanguageSearch, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_ParseQueryIntoRestrictionsAsync_System_String_System_String_SuperOffice_WebApi_Data_NaturalLanguageSearch_SuperOffice_WebApi_RequestOptions_}
 
 Return archive restrictions based on a natural language query.
 
@@ -1073,7 +1073,7 @@ Override language/culture codes on this request.
 
 Returns archive restrictions and columns for the query. Pass this result in as the previous query on the next call to continue the conversation.
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_RemovePhotoBackgroundAsync_System_Byte___System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemovePhotoBackgroundAsync\(byte\[\], string, RequestOptions\)
+### RemovePhotoBackgroundAsync\(byte\[\], string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_RemovePhotoBackgroundAsync_System_Byte___System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns an image with the background removed, leaving only the main subject
 
@@ -1101,7 +1101,7 @@ Override language/culture codes on this request.
 
 Image with background removed
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_RephraseTextAsync_System_String_SuperOffice_WebApi_Data_AiTextStyle_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RephraseTextAsync\(string, AiTextStyle, string, RequestOptions\)
+### RephraseTextAsync\(string, AiTextStyle, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_RephraseTextAsync_System_String_SuperOffice_WebApi_Data_AiTextStyle_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Generate a new version of a text
 
@@ -1133,7 +1133,7 @@ Override language/culture codes on this request.
 
 New version of the text
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_SaveCopilotDataSourceEntityAsync_SuperOffice_WebApi_Data_CopilotDataSourceEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveCopilotDataSourceEntityAsync\(CopilotDataSourceEntity, RequestOptions\)
+### SaveCopilotDataSourceEntityAsync\(CopilotDataSourceEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_SaveCopilotDataSourceEntityAsync_SuperOffice_WebApi_Data_CopilotDataSourceEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing CopilotDataSourceEntity or creates a new CopilotDataSourceEntity if the id parameter is 0.
 
@@ -1157,7 +1157,7 @@ Override language/culture codes on this request.
 
 New or updated CopilotDataSourceEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_SaveCopilotEntityAsync_SuperOffice_WebApi_Data_CopilotEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveCopilotEntityAsync\(CopilotEntity, RequestOptions\)
+### SaveCopilotEntityAsync\(CopilotEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_SaveCopilotEntityAsync_SuperOffice_WebApi_Data_CopilotEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing CopilotEntity or creates a new CopilotEntity if the id parameter is 0.
 
@@ -1181,7 +1181,7 @@ Override language/culture codes on this request.
 
 New or updated CopilotEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_SearchAsync_System_String_System_String_SuperOffice_WebApi_Data_RagType_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SearchAsync\(string, string, RagType, int, RequestOptions\)
+### SearchAsync\(string, string, RagType, int, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_SearchAsync_System_String_System_String_SuperOffice_WebApi_Data_RagType_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns semantic search results from vector database.
 
@@ -1217,7 +1217,7 @@ Override language/culture codes on this request.
 
 Array containing vector search results
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_StartRagIndexingAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; StartRagIndexingAsync\(string, string, RequestOptions\)
+### StartRagIndexingAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_StartRagIndexingAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Kicks off a batch task to update the RAG index
 
@@ -1245,7 +1245,7 @@ Override language/culture codes on this request.
 
 The batch task id
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_SummarizeContactAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SummarizeContactAsync\(int, int, string, RequestOptions\)
+### SummarizeContactAsync\(int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_SummarizeContactAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Generate a short summary of the activities on a contact
 
@@ -1277,7 +1277,7 @@ Override language/culture codes on this request.
 
 Short summary of the activities on a contact - in HTML.
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_SummarizeSaleAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SummarizeSaleAsync\(int, int, string, RequestOptions\)
+### SummarizeSaleAsync\(int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_SummarizeSaleAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Generate a short summary of the activities on a sale
 
@@ -1309,7 +1309,7 @@ Override language/culture codes on this request.
 
 Short summary of the activities on a sale - in HTML.
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_SummarizeTextAsync_System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SummarizeTextAsync\(string, int, string, RequestOptions\)
+### SummarizeTextAsync\(string, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_SummarizeTextAsync_System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Generate a short summary of a text
 
@@ -1341,7 +1341,7 @@ Override language/culture codes on this request.
 
 Short summary of the text
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_SummarizeTicketAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SummarizeTicketAsync\(int, int, string, RequestOptions\)
+### SummarizeTicketAsync\(int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_SummarizeTicketAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Generate a short summary of the messages on a ticket
 
@@ -1373,7 +1373,7 @@ Override language/culture codes on this request.
 
 Short summary of the messages on a ticket - in HTML.
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_TrainCategoryGuesserAsync_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; TrainCategoryGuesserAsync\(int, int, int, RequestOptions\)
+### TrainCategoryGuesserAsync\(int, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_TrainCategoryGuesserAsync_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 The category guesser training API will be called with an array of CategorizationTrainingItem during the (background, Batch) execution of this call
 
@@ -1405,7 +1405,7 @@ Override language/culture codes on this request.
 
 Placeholder for result...  should this be a BatchTaskId?  maybe not useful?
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_TranslateAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; TranslateAsync\(string, string, RequestOptions\)
+### TranslateAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_TranslateAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Translate a text from one language to another. Language of the text is automatically detected.
 
@@ -1433,7 +1433,7 @@ Override language/culture codes on this request.
 
 Translated text
 
-### &lt;a id="SuperOffice_WebApi_Agents_AIAgent_TranslateEntityAsync_System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; TranslateEntityAsync\(string, int, string, RequestOptions\)
+### TranslateEntityAsync\(string, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_AIAgent_TranslateEntityAsync_System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Retrieve, format and translate text for an entity to a specified language
 

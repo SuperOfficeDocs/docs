@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_NewsFeedAgent"&gt;&lt;/a&gt; Class NewsFeedAgent
+# Class NewsFeedAgent {#SuperOffice_WebApi_Agents_NewsFeedAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -69,7 +69,7 @@ using (NewsFeedAgent agent = new NewsFeedAgent(mySession))
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Agents_NewsFeedAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; NewsFeedAgent\(HttpClient\)
+### NewsFeedAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_NewsFeedAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: Posting and reading Newsfeed items, marking them as read or as handled.
 
@@ -83,7 +83,7 @@ public NewsFeedAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### &lt;a id="SuperOffice_WebApi_Agents_NewsFeedAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; NewsFeedAgent\(WebApiOptions, HttpClient\)
+### NewsFeedAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_NewsFeedAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: Posting and reading Newsfeed items, marking them as read or as handled.
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_NewsFeedAgent_CreateDefaultNewsFeedItemAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultNewsFeedItemAsync\(RequestOptions\)
+### CreateDefaultNewsFeedItemAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_NewsFeedAgent_CreateDefaultNewsFeedItemAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new NewsFeedItem.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -124,7 +124,7 @@ Override language/culture codes on this request.
 
 A blank NewsFeedItem
 
-### &lt;a id="SuperOffice_WebApi_Agents_NewsFeedAgent_DeleteNewsFeedItemAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteNewsFeedItemAsync\(int, RequestOptions\)
+### DeleteNewsFeedItemAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_NewsFeedAgent_DeleteNewsFeedItemAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the NewsFeedItem
 
@@ -146,7 +146,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_NewsFeedAgent_GetNewsFeedItemAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetNewsFeedItemAsync\(int, RequestOptions\)
+### GetNewsFeedItemAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_NewsFeedAgent_GetNewsFeedItemAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific NewsFeedItem object.
 
@@ -170,7 +170,7 @@ Override language/culture codes on this request.
 
 NewsFeedItem
 
-### &lt;a id="SuperOffice_WebApi_Agents_NewsFeedAgent_GetNewsFeedItemsByIdAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetNewsFeedItemsByIdAsync\(int\[\], RequestOptions\)
+### GetNewsFeedItemsByIdAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_NewsFeedAgent_GetNewsFeedItemsByIdAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Get an array of items from the newsfeed by id. If the current user cannot access a particular item, it will be excluded from the results.
 
@@ -194,7 +194,7 @@ Override language/culture codes on this request.
 
 The news feed items that was posted, or null if not found/not accessible by the user.
 
-### &lt;a id="SuperOffice_WebApi_Agents_NewsFeedAgent_GetNewsItemsForUserAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetNewsItemsForUserAsync\(int, DateTime, DateTime, int, int, RequestOptions\)
+### GetNewsItemsForUserAsync\(int, DateTime, DateTime, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_NewsFeedAgent_GetNewsItemsForUserAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a list of newsfeed items for a particular user between two dates. If the current user cannot access a particular item, it will be excluded from the results.
 
@@ -234,7 +234,7 @@ Override language/culture codes on this request.
 
 The news feed items that was posted, or null if not found/not accessible by the user.
 
-### &lt;a id="SuperOffice_WebApi_Agents_NewsFeedAgent_MarkAsHandledAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; MarkAsHandledAsync\(int, RequestOptions\)
+### MarkAsHandledAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_NewsFeedAgent_MarkAsHandledAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Marks the news feed item as handled, so it can be removed from the feed.
 
@@ -258,7 +258,7 @@ Override language/culture codes on this request.
 
 Indicates if the news feed item was successfully marked as handled. False if it was already handled.
 
-### &lt;a id="SuperOffice_WebApi_Agents_NewsFeedAgent_MarkAsReadAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; MarkAsReadAsync\(int, RequestOptions\)
+### MarkAsReadAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_NewsFeedAgent_MarkAsReadAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Marks the news feed item as read, so it can be un-bolded in the current user's feed.
 
@@ -282,7 +282,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_NewsFeedAgent_PostNewsFeedItemAsync_SuperOffice_WebApi_Data_NewsFeedItem_System_Int32___System_Int32___System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; PostNewsFeedItemAsync\(NewsFeedItem, int\[\], int\[\], bool, RequestOptions\)
+### PostNewsFeedItemAsync\(NewsFeedItem, int\[\], int\[\], bool, RequestOptions\) {#SuperOffice_WebApi_Agents_NewsFeedAgent_PostNewsFeedItemAsync_SuperOffice_WebApi_Data_NewsFeedItem_System_Int32___System_Int32___System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Saves a new item to the newsfeed, publishing it to the specified users.
 
@@ -318,7 +318,7 @@ Override language/culture codes on this request.
 
 The news feed item that was posted, including its new id.
 
-### &lt;a id="SuperOffice_WebApi_Agents_NewsFeedAgent_StartHandlingAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; StartHandlingAsync\(int, RequestOptions\)
+### StartHandlingAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_NewsFeedAgent_StartHandlingAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Marks the news feed item as being handled, that CTA processing has started. i.e. other users should not start handling it also.
 

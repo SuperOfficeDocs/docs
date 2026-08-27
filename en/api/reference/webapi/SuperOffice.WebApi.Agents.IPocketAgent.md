@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_IPocketAgent"&gt;&lt;/a&gt; Interface IPocketAgent
+# Interface IPocketAgent {#SuperOffice_WebApi_Agents_IPocketAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface IPocketAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPocketAgent_GetCallerIDsFromSelectionAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetCallerIDsFromSelectionAsync\(int, string, RequestOptions\)
+### GetCallerIDsFromSelectionAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IPocketAgent_GetCallerIDsFromSelectionAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get caller ids from a selection. Queries the shadow selection of persons and companies, so selections of any kind can be used
 
@@ -44,7 +44,7 @@ Override language/culture codes on this request.
 
 Collection of caller IDs, containing the hash of the caller ids
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPocketAgent_GetMyCallerIDsAsync_System_String_System_DateTime_System_DateTime_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetMyCallerIDsAsync\(string, DateTime, DateTime, RequestOptions\)
+### GetMyCallerIDsAsync\(string, DateTime, DateTime, RequestOptions\) {#SuperOffice_WebApi_Agents_IPocketAgent_GetMyCallerIDsAsync_System_String_System_DateTime_System_DateTime_SuperOffice_WebApi_RequestOptions_}
 
 Get caller ids that the current principal might be interested in (phone numbers of related persons in sales and appointments created/owned/touched by ourselves or colleagues in our primary group
 
@@ -76,7 +76,7 @@ Override language/culture codes on this request.
 
 Collection of caller IDs, containing the hash of the caller ids
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPocketAgent_GetPocketStartupDataAsync_System_String___System_DateTime_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPocketStartupDataAsync\(string\[\], DateTime, RequestOptions\)
+### GetPocketStartupDataAsync\(string\[\], DateTime, RequestOptions\) {#SuperOffice_WebApi_Agents_IPocketAgent_GetPocketStartupDataAsync_System_String___System_DateTime_SuperOffice_WebApi_RequestOptions_}
 
 ```csharp
 Task<PocketStartupData> GetPocketStartupDataAsync(string[] tables, DateTime currentClientTime, RequestOptions requestOptions = null)
@@ -102,7 +102,7 @@ Override language/culture codes on this request.
 
 Startup data for pocket
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPocketAgent_GetPushNotificationTagsForDeviceAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPushNotificationTagsForDeviceAsync\(string, RequestOptions\)
+### GetPushNotificationTagsForDeviceAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IPocketAgent_GetPushNotificationTagsForDeviceAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Retrieve current tag value for a device
 
@@ -126,7 +126,7 @@ Override language/culture codes on this request.
 
 A comma separated list of events this device should receive push events for
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPocketAgent_GetRegisteredDevicesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetRegisteredDevicesAsync\(int, RequestOptions\)
+### GetRegisteredDevicesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPocketAgent_GetRegisteredDevicesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Retrieve all registered devices for an associate
 
@@ -148,7 +148,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PocketDeviceInfo](SuperOffice.WebApi.Data.PocketDeviceInfo.md)\[\]\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPocketAgent_NotificationHandledAsync_SuperOffice_WebApi_Data_NotificationEventType_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; NotificationHandledAsync\(NotificationEventType, int, RequestOptions\)
+### NotificationHandledAsync\(NotificationEventType, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPocketAgent_NotificationHandledAsync_SuperOffice_WebApi_Data_NotificationEventType_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Mark a notification as handled, so it can be cleaned up on other clients that have received the notification
 
@@ -176,7 +176,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPocketAgent_NotificationsHandledAsync_SuperOffice_WebApi_Data_NotificationEvent___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; NotificationsHandledAsync\(NotificationEvent\[\], RequestOptions\)
+### NotificationsHandledAsync\(NotificationEvent\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IPocketAgent_NotificationsHandledAsync_SuperOffice_WebApi_Data_NotificationEvent___SuperOffice_WebApi_RequestOptions_}
 
 Mark a set of notifications as handled, so they can be cleaned up on other clients that have received the notification
 
@@ -200,7 +200,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPocketAgent_NotifyUsersAsync_SuperOffice_WebApi_Data_NotificationEventType_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; NotifyUsersAsync\(NotificationEventType, int, RequestOptions\)
+### NotifyUsersAsync\(NotificationEventType, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPocketAgent_NotifyUsersAsync_SuperOffice_WebApi_Data_NotificationEventType_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Notify users about a new or changed entity
 
@@ -228,7 +228,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPocketAgent_RegisterDeviceForPushNotificationAsync_SuperOffice_WebApi_Data_PocketDeviceInfo_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RegisterDeviceForPushNotificationAsync\(PocketDeviceInfo, RequestOptions\)
+### RegisterDeviceForPushNotificationAsync\(PocketDeviceInfo, RequestOptions\) {#SuperOffice_WebApi_Agents_IPocketAgent_RegisterDeviceForPushNotificationAsync_SuperOffice_WebApi_Data_PocketDeviceInfo_SuperOffice_WebApi_RequestOptions_}
 
 Register a device that should receive push notifications when notable events occour
 
@@ -252,7 +252,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPocketAgent_RunAppointmentAlarmBrokerAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RunAppointmentAlarmBrokerAsync\(RequestOptions\)
+### RunAppointmentAlarmBrokerAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IPocketAgent_RunAppointmentAlarmBrokerAsync_SuperOffice_WebApi_RequestOptions_}
 
 Execute the AppointmentAlarmBroker once
 
@@ -272,7 +272,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPocketAgent_SendPushNotificationAsync_System_Int32___SuperOffice_WebApi_Data_PocketNotificationMessage_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SendPushNotificationAsync\(int\[\], PocketNotificationMessage, RequestOptions\)
+### SendPushNotificationAsync\(int\[\], PocketNotificationMessage, RequestOptions\) {#SuperOffice_WebApi_Agents_IPocketAgent_SendPushNotificationAsync_System_Int32___SuperOffice_WebApi_Data_PocketNotificationMessage_SuperOffice_WebApi_RequestOptions_}
 
 Send a push notification to one or more associates
 
@@ -300,7 +300,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPocketAgent_SetPushNotificationTagsForDeviceAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetPushNotificationTagsForDeviceAsync\(string, string, RequestOptions\)
+### SetPushNotificationTagsForDeviceAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IPocketAgent_SetPushNotificationTagsForDeviceAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Specify what kind of notification events a device should receive push notifications for
 
@@ -328,7 +328,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPocketAgent_SetPushNotificationTagsForUserAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetPushNotificationTagsForUserAsync\(int, string, RequestOptions\)
+### SetPushNotificationTagsForUserAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IPocketAgent_SetPushNotificationTagsForUserAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Specify what kind of notification events a user should receive push notifications for.  This will update all registerred devices for this user.
 

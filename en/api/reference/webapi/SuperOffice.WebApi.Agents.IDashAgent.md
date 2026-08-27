@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_IDashAgent"&gt;&lt;/a&gt; Interface IDashAgent
+# Interface IDashAgent {#SuperOffice_WebApi_Agents_IDashAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface IDashAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_AddNewTileToDashboardAsync_System_Int32_SuperOffice_WebApi_Data_DashTileDefinition_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddNewTileToDashboardAsync\(int, DashTileDefinition, RequestOptions\)
+### AddNewTileToDashboardAsync\(int, DashTileDefinition, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_AddNewTileToDashboardAsync_System_Int32_SuperOffice_WebApi_Data_DashTileDefinition_SuperOffice_WebApi_RequestOptions_}
 
 Add a new tile to a dashboard with next rank
 
@@ -44,7 +44,7 @@ Override language/culture codes on this request.
 
 The newly added tile
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_AddTileToDashboardAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddTileToDashboardAsync\(int, int, RequestOptions\)
+### AddTileToDashboardAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_AddTileToDashboardAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Add a tile to a dashboard with next rank
 
@@ -72,7 +72,7 @@ Override language/culture codes on this request.
 
 The newly added tile
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_CopyTileSelectionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CopyTileSelectionAsync\(int, RequestOptions\)
+### CopyTileSelectionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_CopyTileSelectionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Copy Tile Selection for the dashboard
 
@@ -96,7 +96,7 @@ Override language/culture codes on this request.
 
 Selection Id
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_CreateDashTileSelectionFromEntityAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDashTileSelectionFromEntityAsync\(string, RequestOptions\)
+### CreateDashTileSelectionFromEntityAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_CreateDashTileSelectionFromEntityAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the id to a dashboard tile selection
 
@@ -120,7 +120,7 @@ Override language/culture codes on this request.
 
 Selection Id
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_CreateDefaultDashAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultDashAsync\(RequestOptions\)
+### CreateDefaultDashAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_CreateDefaultDashAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new Dash.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -141,7 +141,7 @@ Override language/culture codes on this request.
 
 A blank Dash
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_CreateDefaultDashCollectionAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultDashCollectionAsync\(RequestOptions\)
+### CreateDefaultDashCollectionAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_CreateDefaultDashCollectionAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new DashCollection.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -162,7 +162,7 @@ Override language/culture codes on this request.
 
 A blank DashCollection
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_CreateDefaultDashThemeAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultDashThemeAsync\(RequestOptions\)
+### CreateDefaultDashThemeAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_CreateDefaultDashThemeAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new DashTheme.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -183,7 +183,7 @@ Override language/culture codes on this request.
 
 A blank DashTheme
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_CreateDefaultDashTileAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultDashTileAsync\(RequestOptions\)
+### CreateDefaultDashTileAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_CreateDefaultDashTileAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new DashTile.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -204,7 +204,7 @@ Override language/culture codes on this request.
 
 A blank DashTile
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_CreateDefaultDashTileDefinitionAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultDashTileDefinitionAsync\(RequestOptions\)
+### CreateDefaultDashTileDefinitionAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_CreateDefaultDashTileDefinitionAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new DashTileDefinition.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -225,7 +225,7 @@ Override language/culture codes on this request.
 
 A blank DashTileDefinition
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_CreateDefaultPreviewDashAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultPreviewDashAsync\(RequestOptions\)
+### CreateDefaultPreviewDashAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_CreateDefaultPreviewDashAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new PreviewDash.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -246,7 +246,7 @@ Override language/culture codes on this request.
 
 A blank PreviewDash
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_CreateDefaultPreviewDashTileAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultPreviewDashTileAsync\(RequestOptions\)
+### CreateDefaultPreviewDashTileAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_CreateDefaultPreviewDashTileAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new PreviewDashTile.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -267,7 +267,7 @@ Override language/culture codes on this request.
 
 A blank PreviewDashTile
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_CreateDefaultTileDefinitionForEntityAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultTileDefinitionForEntityAsync\(string, RequestOptions\)
+### CreateDefaultTileDefinitionForEntityAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_CreateDefaultTileDefinitionForEntityAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Set Measure to CountAll and MeasureField to primary key field
 
@@ -291,7 +291,7 @@ Override language/culture codes on this request.
 
 Default
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_CreateDefaultTileForEntityAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultTileForEntityAsync\(string, RequestOptions\)
+### CreateDefaultTileForEntityAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_CreateDefaultTileForEntityAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Set Measure to CountAll and MeasureField to primary key field
 
@@ -315,7 +315,7 @@ Override language/culture codes on this request.
 
 Default
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_DeleteDashAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteDashAsync\(int, RequestOptions\)
+### DeleteDashAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_DeleteDashAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the Dash
 
@@ -337,7 +337,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_DeleteDashThemeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteDashThemeAsync\(int, RequestOptions\)
+### DeleteDashThemeAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_DeleteDashThemeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the DashTheme
 
@@ -359,7 +359,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_DeleteDashTileAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteDashTileAsync\(int, RequestOptions\)
+### DeleteDashTileAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_DeleteDashTileAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the DashTile
 
@@ -381,7 +381,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_DeleteDashTileDefinitionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteDashTileDefinitionAsync\(int, RequestOptions\)
+### DeleteDashTileDefinitionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_DeleteDashTileDefinitionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the DashTileDefinition
 
@@ -403,7 +403,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_DuplicateDashboardAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DuplicateDashboardAsync\(int, string, RequestOptions\)
+### DuplicateDashboardAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_DuplicateDashboardAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Duplicate for the dashboard and all the sub elements
 
@@ -431,7 +431,7 @@ Override language/culture codes on this request.
 
 New dashboard
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_DuplicateTileAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DuplicateTileAsync\(int, string, RequestOptions\)
+### DuplicateTileAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_DuplicateTileAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Duplicate for the tile and all the sub elements
 
@@ -459,7 +459,7 @@ Override language/culture codes on this request.
 
 New tile
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_GetDashAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDashAsync\(int, RequestOptions\)
+### GetDashAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_GetDashAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific Dash object.
 
@@ -483,7 +483,7 @@ Override language/culture codes on this request.
 
 Dash
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_GetDashCollectionAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDashCollectionAsync\(RequestOptions\)
+### GetDashCollectionAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_GetDashCollectionAsync_SuperOffice_WebApi_RequestOptions_}
 
 Gets a collection of dashboards for the current associate
 
@@ -503,7 +503,7 @@ Override language/culture codes on this request.
 
 Dashboard collection
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_GetDashListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDashListAsync\(int\[\], RequestOptions\)
+### GetDashListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_GetDashListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Gets the ordered list of dashboards
 
@@ -527,7 +527,7 @@ Override language/culture codes on this request.
 
 List of dashboards
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_GetDashQuickFiltersAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDashQuickFiltersAsync\(int, RequestOptions\)
+### GetDashQuickFiltersAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_GetDashQuickFiltersAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets the quick filters for this dashboard
 
@@ -551,7 +551,7 @@ Override language/culture codes on this request.
 
 List of quick filters for the given dashboard
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_GetDashThemeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDashThemeAsync\(int, RequestOptions\)
+### GetDashThemeAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_GetDashThemeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific DashTheme object.
 
@@ -575,7 +575,7 @@ Override language/culture codes on this request.
 
 DashTheme
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_GetDashTileAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDashTileAsync\(int, RequestOptions\)
+### GetDashTileAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_GetDashTileAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific DashTile object.
 
@@ -599,7 +599,7 @@ Override language/culture codes on this request.
 
 DashTile
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_GetDashTileDefinitionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDashTileDefinitionAsync\(int, RequestOptions\)
+### GetDashTileDefinitionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_GetDashTileDefinitionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific DashTileDefinition object.
 
@@ -623,7 +623,7 @@ Override language/culture codes on this request.
 
 DashTileDefinition
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_GetDashTileHtmlAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDashTileHtmlAsync\(int, string, RequestOptions\)
+### GetDashTileHtmlAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_GetDashTileHtmlAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get HTML for a dashboard tile definition with TileType = HTML
 
@@ -651,7 +651,7 @@ Override language/culture codes on this request.
 
 HTML data
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_GetDashTileHtmlListAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDashTileHtmlListAsync\(int, RequestOptions\)
+### GetDashTileHtmlListAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_GetDashTileHtmlListAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get HTML for a dashboard tile definition with TileType = HTML. Retrieve a list with all registered languages.
 
@@ -673,7 +673,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTileHtml](SuperOffice.WebApi.Data.DashTileHtml.md)\[\]\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_GetDashTilesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDashTilesAsync\(int, RequestOptions\)
+### GetDashTilesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_GetDashTilesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets the ordered list of tiles for a dashboard
 
@@ -697,7 +697,7 @@ Override language/culture codes on this request.
 
 Ordered list of dashboard tiles
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_GetDashboardFencingInfoAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDashboardFencingInfoAsync\(RequestOptions\)
+### GetDashboardFencingInfoAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_GetDashboardFencingInfoAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get the current dashboard fencing status for the tenant
 
@@ -717,7 +717,7 @@ Override language/culture codes on this request.
 
 Current fencing status including count, maximum, and warning state
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_GetPossibleDashQuickFiltersAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPossibleDashQuickFiltersAsync\(int, RequestOptions\)
+### GetPossibleDashQuickFiltersAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_GetPossibleDashQuickFiltersAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets the possible (not stored/selected) quick filters for this dashboard
 
@@ -741,7 +741,7 @@ Override language/culture codes on this request.
 
 List of possible quick filters for the given dashboard
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_GetPreviewDashAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPreviewDashAsync\(int, RequestOptions\)
+### GetPreviewDashAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_GetPreviewDashAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a dashboard from its id
 
@@ -765,7 +765,7 @@ Override language/culture codes on this request.
 
 Dashboard suitable for preview
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_GetSecondaryTempTileSelectionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSecondaryTempTileSelectionAsync\(int, RequestOptions\)
+### GetSecondaryTempTileSelectionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_GetSecondaryTempTileSelectionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Copy selection to secondary temporary personal tile selection
 
@@ -789,7 +789,7 @@ Override language/culture codes on this request.
 
 Selection Id
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_GetTempTileSelectionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTempTileSelectionAsync\(int, RequestOptions\)
+### GetTempTileSelectionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_GetTempTileSelectionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Copy selection to temporary personal tile selection
 
@@ -813,7 +813,7 @@ Override language/culture codes on this request.
 
 Selection Id
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_SaveDashAsync_SuperOffice_WebApi_Data_Dash_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveDashAsync\(Dash, RequestOptions\)
+### SaveDashAsync\(Dash, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_SaveDashAsync_SuperOffice_WebApi_Data_Dash_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing Dash or creates a new Dash if the id parameter is 0.
 
@@ -837,7 +837,7 @@ Override language/culture codes on this request.
 
 New or updated Dash
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_SaveDashQuickFiltersAsync_System_Int32_SuperOffice_WebApi_Data_QuickFilterInfo___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveDashQuickFiltersAsync\(int, QuickFilterInfo\[\], RequestOptions\)
+### SaveDashQuickFiltersAsync\(int, QuickFilterInfo\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_SaveDashQuickFiltersAsync_System_Int32_SuperOffice_WebApi_Data_QuickFilterInfo___SuperOffice_WebApi_RequestOptions_}
 
 Saves the quick filters for this dashboard
 
@@ -865,7 +865,7 @@ Override language/culture codes on this request.
 
 List of saved quick filters for the given dashboard
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_SaveDashThemeAsync_SuperOffice_WebApi_Data_DashTheme_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveDashThemeAsync\(DashTheme, RequestOptions\)
+### SaveDashThemeAsync\(DashTheme, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_SaveDashThemeAsync_SuperOffice_WebApi_Data_DashTheme_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing DashTheme or creates a new DashTheme if the id parameter is 0.
 
@@ -889,7 +889,7 @@ Override language/culture codes on this request.
 
 New or updated DashTheme
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_SaveDashTileAsync_SuperOffice_WebApi_Data_DashTile_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveDashTileAsync\(DashTile, RequestOptions\)
+### SaveDashTileAsync\(DashTile, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_SaveDashTileAsync_SuperOffice_WebApi_Data_DashTile_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing DashTile or creates a new DashTile if the id parameter is 0.
 
@@ -913,7 +913,7 @@ Override language/culture codes on this request.
 
 New or updated DashTile
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_SaveDashTileDefinitionAsync_SuperOffice_WebApi_Data_DashTileDefinition_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveDashTileDefinitionAsync\(DashTileDefinition, RequestOptions\)
+### SaveDashTileDefinitionAsync\(DashTileDefinition, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_SaveDashTileDefinitionAsync_SuperOffice_WebApi_Data_DashTileDefinition_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing DashTileDefinition or creates a new DashTileDefinition if the id parameter is 0.
 
@@ -937,7 +937,7 @@ Override language/culture codes on this request.
 
 New or updated DashTileDefinition
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_SaveDashTileHtmlListAsync_System_Int32_SuperOffice_WebApi_Data_DashTileHtml___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveDashTileHtmlListAsync\(int, DashTileHtml\[\], RequestOptions\)
+### SaveDashTileHtmlListAsync\(int, DashTileHtml\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_SaveDashTileHtmlListAsync_System_Int32_SuperOffice_WebApi_Data_DashTileHtml___SuperOffice_WebApi_RequestOptions_}
 
 Set the HTML data for a tile with TileType = HTML.
 
@@ -963,7 +963,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTileHtml](SuperOffice.WebApi.Data.DashTileHtml.md)\[\]\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_IDashAgent_SaveDashTilesAsync_System_Int32_SuperOffice_WebApi_Data_DashTile___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveDashTilesAsync\(int, DashTile\[\], RequestOptions\)
+### SaveDashTilesAsync\(int, DashTile\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_SaveDashTilesAsync_System_Int32_SuperOffice_WebApi_Data_DashTile___SuperOffice_WebApi_RequestOptions_}
 
 Saves the ordered list of tiles for a dashboard
 

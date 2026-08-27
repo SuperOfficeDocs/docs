@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_IMessagingAgent"&gt;&lt;/a&gt; Interface IMessagingAgent
+# Interface IMessagingAgent {#SuperOffice_WebApi_Agents_IMessagingAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -18,7 +18,7 @@ public interface IMessagingAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_IMessagingAgent_CreateMessageAsync_SuperOffice_WebApi_Data_IncomingMessage_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateMessageAsync\(IncomingMessage, RequestOptions\)
+### CreateMessageAsync\(IncomingMessage, RequestOptions\) {#SuperOffice_WebApi_Agents_IMessagingAgent_CreateMessageAsync_SuperOffice_WebApi_Data_IncomingMessage_SuperOffice_WebApi_RequestOptions_}
 
 Create a new message and insert it in the message queue. (inbox)
 &lt;p&gt;&lt;/p&gt;
@@ -40,7 +40,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IMessagingAgent_GetDeliveryStatusAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDeliveryStatusAsync\(int\[\], RequestOptions\)
+### GetDeliveryStatusAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IMessagingAgent_GetDeliveryStatusAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Get delivery status
 &lt;p&gt;&lt;/p&gt;
@@ -64,7 +64,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MessageDeliveryStatus](SuperOffice.WebApi.Data.MessageDeliveryStatus.md)\[\]\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_IMessagingAgent_GetPluginsAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPluginsAsync\(RequestOptions\)
+### GetPluginsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IMessagingAgent_GetPluginsAsync_SuperOffice_WebApi_RequestOptions_}
 
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt;Online Restricted:&lt;/b&gt; The Messaging agent is not available in Online by default. Access must be requested specifically when app is registered.
@@ -83,7 +83,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProviderInfo](SuperOffice.WebApi.Data.ProviderInfo.md)\[\]\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_IMessagingAgent_SendMessagesAsync_System_String_SuperOffice_WebApi_Data_OutgoingMessage___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SendMessagesAsync\(string, OutgoingMessage\[\], RequestOptions\)
+### SendMessagesAsync\(string, OutgoingMessage\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IMessagingAgent_SendMessagesAsync_System_String_SuperOffice_WebApi_Data_OutgoingMessage___SuperOffice_WebApi_RequestOptions_}
 
 Send an array of messages
 &lt;p&gt;&lt;/p&gt;
@@ -113,7 +113,7 @@ Override language/culture codes on this request.
 
 Array of MessageDeliveryStatus. Length of the array is equal to the number of outgoing messages.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IMessagingAgent_SendMessagesWithConfigAsync_System_String_SuperOffice_WebApi_Data_OutgoingMessage___SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SendMessagesWithConfigAsync\(string, OutgoingMessage\[\], StringDictionary, RequestOptions\)
+### SendMessagesWithConfigAsync\(string, OutgoingMessage\[\], StringDictionary, RequestOptions\) {#SuperOffice_WebApi_Agents_IMessagingAgent_SendMessagesWithConfigAsync_System_String_SuperOffice_WebApi_Data_OutgoingMessage___SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_}
 
 Send an array of messages using given config
 &lt;p&gt;&lt;/p&gt;
@@ -147,7 +147,7 @@ Override language/culture codes on this request.
 
 Array of MessageDeliveryStatus. Length of the array is equal to the number of outgoing messages.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IMessagingAgent_SetDeliveryStatusAsync_System_String_System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetDeliveryStatusAsync\(string, string, int, string, RequestOptions\)
+### SetDeliveryStatusAsync\(string, string, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IMessagingAgent_SetDeliveryStatusAsync_System_String_System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Set or change the delivery status on an outgoing messsage.
 &lt;p&gt;&lt;/p&gt;

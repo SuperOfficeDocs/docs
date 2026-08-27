@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_ISaintAgent"&gt;&lt;/a&gt; Interface ISaintAgent
+# Interface ISaintAgent {#SuperOffice_WebApi_Agents_ISaintAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface ISaintAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISaintAgent_CreateDefaultSaintConfigurationAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultSaintConfigurationAsync\(RequestOptions\)
+### CreateDefaultSaintConfigurationAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_CreateDefaultSaintConfigurationAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new SaintConfiguration.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -37,7 +37,7 @@ Override language/culture codes on this request.
 
 A blank SaintConfiguration
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISaintAgent_CreateDefaultStatusMonitorAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultStatusMonitorAsync\(RequestOptions\)
+### CreateDefaultStatusMonitorAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_CreateDefaultStatusMonitorAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new StatusMonitor.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -58,7 +58,7 @@ Override language/culture codes on this request.
 
 A blank StatusMonitor
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISaintAgent_CreateDefaultStatusMonitorPeriodsAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultStatusMonitorPeriodsAsync\(RequestOptions\)
+### CreateDefaultStatusMonitorPeriodsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_CreateDefaultStatusMonitorPeriodsAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new StatusMonitorPeriods.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -79,7 +79,7 @@ Override language/culture codes on this request.
 
 A blank StatusMonitorPeriods
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISaintAgent_GetSaintConfigurationsAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSaintConfigurationsAsync\(RequestOptions\)
+### GetSaintConfigurationsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_GetSaintConfigurationsAsync_SuperOffice_WebApi_RequestOptions_}
 
 Returns the StatusMonitorPeriods entity.
 
@@ -99,7 +99,7 @@ Override language/culture codes on this request.
 
 The SaintConfiguration for all entities
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISaintAgent_GetStatusMonitorAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetStatusMonitorAsync\(int, RequestOptions\)
+### GetStatusMonitorAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_GetStatusMonitorAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a single status monitor based on its identity
 
@@ -123,7 +123,7 @@ Override language/culture codes on this request.
 
 The requested status monitor
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISaintAgent_GetStatusMonitorPeriodsAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetStatusMonitorPeriodsAsync\(RequestOptions\)
+### GetStatusMonitorPeriodsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_GetStatusMonitorPeriodsAsync_SuperOffice_WebApi_RequestOptions_}
 
 Returns the StatusMonitorPeriods entity.
 
@@ -143,7 +143,7 @@ Override language/culture codes on this request.
 
 The StatusMonitorEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISaintAgent_GetStatusMonitorsAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetStatusMonitorsAsync\(int, string, RequestOptions\)
+### GetStatusMonitorsAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_GetStatusMonitorsAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get all active status monitors for a specified target
 
@@ -171,7 +171,7 @@ Override language/culture codes on this request.
 
 Active status monitors
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISaintAgent_RegenerateCountersAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RegenerateCountersAsync\(bool, RequestOptions\)
+### RegenerateCountersAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_RegenerateCountersAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Regenerate the Saint counters - this can take several minutes
 
@@ -195,7 +195,7 @@ Override language/culture codes on this request.
 
 Information about the batch task, if batch execution was requested. Otherwise null
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISaintAgent_RegenerateStatusMonitorAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RegenerateStatusMonitorAsync\(int, RequestOptions\)
+### RegenerateStatusMonitorAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_RegenerateStatusMonitorAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Regenerate the given status monitor
 
@@ -219,7 +219,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISaintAgent_RegenerateStatusMonitorsAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RegenerateStatusMonitorsAsync\(bool, RequestOptions\)
+### RegenerateStatusMonitorsAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_RegenerateStatusMonitorsAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Regenerate status monitors
 
@@ -243,7 +243,7 @@ Override language/culture codes on this request.
 
 Information about the batch task, if batch execution was requested. Otherwise null
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISaintAgent_SaveSaintConfigurationAsync_SuperOffice_WebApi_Data_SaintConfiguration_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveSaintConfigurationAsync\(SaintConfiguration, RequestOptions\)
+### SaveSaintConfigurationAsync\(SaintConfiguration, RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_SaveSaintConfigurationAsync_SuperOffice_WebApi_Data_SaintConfiguration_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing SaintConfiguration or creates a new SaintConfiguration if the id parameter is 0.
 
@@ -267,7 +267,7 @@ Override language/culture codes on this request.
 
 New or updated SaintConfiguration
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISaintAgent_SaveStatusMonitorAsync_SuperOffice_WebApi_Data_StatusMonitor_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveStatusMonitorAsync\(StatusMonitor, RequestOptions\)
+### SaveStatusMonitorAsync\(StatusMonitor, RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_SaveStatusMonitorAsync_SuperOffice_WebApi_Data_StatusMonitor_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing StatusMonitor or creates a new StatusMonitor if the id parameter is 0.
 
@@ -291,7 +291,7 @@ Override language/culture codes on this request.
 
 New or updated StatusMonitor
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISaintAgent_SaveStatusMonitorPeriodsAsync_SuperOffice_WebApi_Data_StatusMonitorPeriods_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveStatusMonitorPeriodsAsync\(StatusMonitorPeriods, RequestOptions\)
+### SaveStatusMonitorPeriodsAsync\(StatusMonitorPeriods, RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_SaveStatusMonitorPeriodsAsync_SuperOffice_WebApi_Data_StatusMonitorPeriods_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing StatusMonitorPeriods or creates a new StatusMonitorPeriods if the id parameter is 0.
 
@@ -315,7 +315,7 @@ Override language/culture codes on this request.
 
 New or updated StatusMonitorPeriods
 
-### &lt;a id="SuperOffice_WebApi_Agents_ISaintAgent_SetRankOnStatusMonitorsAsync_System_String_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetRankOnStatusMonitorsAsync\(string, int\[\], RequestOptions\)
+### SetRankOnStatusMonitorsAsync\(string, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_SetRankOnStatusMonitorsAsync_System_String_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Set rank order on status monitors
 

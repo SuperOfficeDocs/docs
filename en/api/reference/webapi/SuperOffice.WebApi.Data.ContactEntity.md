@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Data_ContactEntity"&gt;&lt;/a&gt; Class ContactEntity
+# Class ContactEntity {#SuperOffice_WebApi_Data_ContactEntity}
 
 Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -50,7 +50,7 @@ Use &lt;xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" dat
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity__ctor"&gt;&lt;/a&gt; ContactEntity\(\)
+### ContactEntity\(\) {#SuperOffice_WebApi_Data_ContactEntity__ctor}
 
 Default constructor - defaults any enum props to 0.
 
@@ -60,7 +60,7 @@ public ContactEntity()
 
 ## Properties
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_ActiveErpLinks"&gt;&lt;/a&gt; ActiveErpLinks
+### ActiveErpLinks {#SuperOffice_WebApi_Data_ContactEntity_ActiveErpLinks}
 
 The number of active erp links
 
@@ -72,7 +72,7 @@ public virtual int ActiveErpLinks { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_ActiveInterests"&gt;&lt;/a&gt; ActiveInterests
+### ActiveInterests {#SuperOffice_WebApi_Data_ContactEntity_ActiveInterests}
 
 The number of active interests.
 
@@ -84,7 +84,7 @@ public virtual int ActiveInterests { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_ActiveStatusMonitorId"&gt;&lt;/a&gt; ActiveStatusMonitorId
+### ActiveStatusMonitorId {#SuperOffice_WebApi_Data_ContactEntity_ActiveStatusMonitorId}
 
 Active status monitor identity with the lowest rank for contact
 
@@ -96,7 +96,7 @@ public virtual int ActiveStatusMonitorId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_Address"&gt;&lt;/a&gt; Address
+### Address {#SuperOffice_WebApi_Data_ContactEntity_Address}
 
 ```csharp
 public virtual Address Address { get; set; }
@@ -106,7 +106,7 @@ public virtual Address Address { get; set; }
 
  [Address](SuperOffice.WebApi.Data.Address.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_Associate"&gt;&lt;/a&gt; Associate
+### Associate {#SuperOffice_WebApi_Data_ContactEntity_Associate}
 
 The user that owns this contact.
 &lt;p&gt;Use MDO List name "associate" to get list items.&lt;/p&gt;
@@ -119,7 +119,7 @@ public virtual Associate Associate { get; set; }
 
  [Associate](SuperOffice.WebApi.Data.Associate.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_BounceEmails"&gt;&lt;/a&gt; BounceEmails
+### BounceEmails {#SuperOffice_WebApi_Data_ContactEntity_BounceEmails}
 
 Email addresses with a positive bounce counter.
 
@@ -131,7 +131,7 @@ public virtual string[] BounceEmails { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)\[\]
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_Business"&gt;&lt;/a&gt; Business
+### Business {#SuperOffice_WebApi_Data_ContactEntity_Business}
 
 The business that the contact is associated with. The GUI forces the user to enter a business type.
 &lt;p&gt;Use MDO List name "business" to get list items.&lt;/p&gt;
@@ -144,7 +144,7 @@ public virtual Business Business { get; set; }
 
  [Business](SuperOffice.WebApi.Data.Business.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_Category"&gt;&lt;/a&gt; Category
+### Category {#SuperOffice_WebApi_Data_ContactEntity_Category}
 
 The category that is set on the company. The GUI forces the user to enter a category type
 &lt;p&gt;Use MDO List name "category" to get list items.&lt;/p&gt;
@@ -157,7 +157,7 @@ public virtual Category Category { get; set; }
 
  [Category](SuperOffice.WebApi.Data.Category.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_ContactId"&gt;&lt;/a&gt; ContactId
+### ContactId {#SuperOffice_WebApi_Data_ContactEntity_ContactId}
 
 Primary key
 
@@ -169,7 +169,7 @@ public virtual int ContactId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_Country"&gt;&lt;/a&gt; Country
+### Country {#SuperOffice_WebApi_Data_ContactEntity_Country}
 
 The country this contact is located in. The country a contact is saved with, affects the phone number format, and the address layout.
 &lt;p&gt;Use MDO List name "country" to get list items.&lt;/p&gt;
@@ -182,7 +182,7 @@ public virtual Country Country { get; set; }
 
  [Country](SuperOffice.WebApi.Data.Country.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_CreatedBy"&gt;&lt;/a&gt; CreatedBy
+### CreatedBy {#SuperOffice_WebApi_Data_ContactEntity_CreatedBy}
 
 The user that created the contact
 
@@ -194,7 +194,7 @@ public virtual Associate CreatedBy { get; set; }
 
  [Associate](SuperOffice.WebApi.Data.Associate.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_CreatedDate"&gt;&lt;/a&gt; CreatedDate
+### CreatedDate {#SuperOffice_WebApi_Data_ContactEntity_CreatedDate}
 
 Date registered
 
@@ -206,7 +206,7 @@ public virtual DateTime CreatedDate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_CustomFields"&gt;&lt;/a&gt; CustomFields
+### CustomFields {#SuperOffice_WebApi_Data_ContactEntity_CustomFields}
 
 Udef + Extra fields added to the carrier. Extra fields as defined by changes to database schema + user-defined fields as defined by admin.
 Custom fields combines user defined fields and extra fields into one bucket. 
@@ -233,7 +233,7 @@ The naming convention of the key string is as follows:
     Example: &lt;pre&gt;&lt;code class="lang-csharp"&gt;'SuperOffice:1' = '[I:123]'&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
        &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_CustomerLanguage"&gt;&lt;/a&gt; CustomerLanguage
+### CustomerLanguage {#SuperOffice_WebApi_Data_ContactEntity_CustomerLanguage}
 
 customerlanguage
 
@@ -245,7 +245,7 @@ public virtual CustomerLanguage CustomerLanguage { get; set; }
 
  [CustomerLanguage](SuperOffice.WebApi.Data.CustomerLanguage.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_DbiAgentId"&gt;&lt;/a&gt; DbiAgentId
+### DbiAgentId {#SuperOffice_WebApi_Data_ContactEntity_DbiAgentId}
 
 Integration agent (eJournal)
 
@@ -257,7 +257,7 @@ public virtual int DbiAgentId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_DbiKey"&gt;&lt;/a&gt; DbiKey
+### DbiKey {#SuperOffice_WebApi_Data_ContactEntity_DbiKey}
 
 The primary key for the integrated entry in the external datasource.
 
@@ -269,7 +269,7 @@ public virtual string DbiKey { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_DbiLastModified"&gt;&lt;/a&gt; DbiLastModified
+### DbiLastModified {#SuperOffice_WebApi_Data_ContactEntity_DbiLastModified}
 
 When the entry was last modified.
 
@@ -281,7 +281,7 @@ public virtual DateTime DbiLastModified { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_DbiLastSyncronized"&gt;&lt;/a&gt; DbiLastSyncronized
+### DbiLastSyncronized {#SuperOffice_WebApi_Data_ContactEntity_DbiLastSyncronized}
 
 Last external syncronization.
 
@@ -293,7 +293,7 @@ public virtual DateTime DbiLastSyncronized { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_Deleted"&gt;&lt;/a&gt; Deleted
+### Deleted {#SuperOffice_WebApi_Data_ContactEntity_Deleted}
 
 If nonzero, then this contact is 'deleted' and should generally not be shown
 
@@ -305,7 +305,7 @@ public virtual short Deleted { get; set; }
 
  [short](https://learn.microsoft.com/dotnet/api/system.int16)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_Department"&gt;&lt;/a&gt; Department
+### Department {#SuperOffice_WebApi_Data_ContactEntity_Department}
 
 Department
 
@@ -317,7 +317,7 @@ public virtual string Department { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_Description"&gt;&lt;/a&gt; Description
+### Description {#SuperOffice_WebApi_Data_ContactEntity_Description}
 
 Description of the contact. Usually shown as a postit note.
 
@@ -329,7 +329,7 @@ public virtual string Description { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_Domains"&gt;&lt;/a&gt; Domains
+### Domains {#SuperOffice_WebApi_Data_ContactEntity_Domains}
 
 Web domains for this contact, ordered in array by rank
 
@@ -341,7 +341,7 @@ public virtual string[] Domains { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)\[\]
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_Emails"&gt;&lt;/a&gt; Emails
+### Emails {#SuperOffice_WebApi_Data_ContactEntity_Emails}
 
 The contact's email
 
@@ -353,7 +353,7 @@ public virtual EntityElement[] Emails { get; set; }
 
  [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_ExtraFields"&gt;&lt;/a&gt; ExtraFields
+### ExtraFields {#SuperOffice_WebApi_Data_ContactEntity_ExtraFields}
 
 Deprecated: Use &lt;xref href="SuperOffice.WebApi.Data.ContactEntity.CustomFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instead.
 Extra fields added to the carrier. This could be data from Plug-ins, the foreign key system, external applications, etc.
@@ -386,7 +386,7 @@ The naming convention of the key string is as follows:
        We also ensure that SuperOffice data are added first, so that existing data doesnt change when more data sources are added (with duplicate data keys).
        &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_Faxes"&gt;&lt;/a&gt; Faxes
+### Faxes {#SuperOffice_WebApi_Data_ContactEntity_Faxes}
 
 The contact's fax numbers
 
@@ -398,7 +398,7 @@ public virtual EntityElement[] Faxes { get; set; }
 
  [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_GroupId"&gt;&lt;/a&gt; GroupId
+### GroupId {#SuperOffice_WebApi_Data_ContactEntity_GroupId}
 
 Group id of original owning associate, semantics like appnt.grp_id
 
@@ -410,7 +410,7 @@ public virtual int GroupId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_Interests"&gt;&lt;/a&gt; Interests
+### Interests {#SuperOffice_WebApi_Data_ContactEntity_Interests}
 
 The contact's available and selected interests.
 &lt;p&gt;Use MDO List name "contint" to get list items.&lt;/p&gt;
@@ -423,7 +423,7 @@ public virtual SelectableMDOListItem[] Interests { get; set; }
 
  [SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_Kananame"&gt;&lt;/a&gt; Kananame
+### Kananame {#SuperOffice_WebApi_Data_ContactEntity_Kananame}
 
 Contact kana name, used in Japanese versions only
 
@@ -435,7 +435,7 @@ public virtual string Kananame { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_Name"&gt;&lt;/a&gt; Name
+### Name {#SuperOffice_WebApi_Data_ContactEntity_Name}
 
 Contact name
 
@@ -447,7 +447,7 @@ public virtual string Name { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_NoMailing"&gt;&lt;/a&gt; NoMailing
+### NoMailing {#SuperOffice_WebApi_Data_ContactEntity_NoMailing}
 
 Spam filter. Indicates if this contact should retrieve advertising.
 
@@ -459,7 +459,7 @@ public virtual bool NoMailing { get; set; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_Number1"&gt;&lt;/a&gt; Number1
+### Number1 {#SuperOffice_WebApi_Data_ContactEntity_Number1}
 
 Alphanumeric user field
 
@@ -471,7 +471,7 @@ public virtual string Number1 { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_Number2"&gt;&lt;/a&gt; Number2
+### Number2 {#SuperOffice_WebApi_Data_ContactEntity_Number2}
 
 Alphanumeric user field
 
@@ -483,7 +483,7 @@ public virtual string Number2 { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_OrgNr"&gt;&lt;/a&gt; OrgNr
+### OrgNr {#SuperOffice_WebApi_Data_ContactEntity_OrgNr}
 
 VAT number or similar
 
@@ -495,7 +495,7 @@ public virtual string OrgNr { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_Persons"&gt;&lt;/a&gt; Persons
+### Persons {#SuperOffice_WebApi_Data_ContactEntity_Persons}
 
 The persons belonging to the contact.
 
@@ -507,7 +507,7 @@ public virtual Person[] Persons { get; set; }
 
  [Person](SuperOffice.WebApi.Data.Person.md)\[\]
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_Phones"&gt;&lt;/a&gt; Phones
+### Phones {#SuperOffice_WebApi_Data_ContactEntity_Phones}
 
 The contact's phone numbers
 
@@ -519,7 +519,7 @@ public virtual EntityElement[] Phones { get; set; }
 
  [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_Source"&gt;&lt;/a&gt; Source
+### Source {#SuperOffice_WebApi_Data_ContactEntity_Source}
 
 How did we get this contact? For future integration needs
 
@@ -531,7 +531,7 @@ public virtual short Source { get; set; }
 
  [short](https://learn.microsoft.com/dotnet/api/system.int16)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_SupportAssociate"&gt;&lt;/a&gt; SupportAssociate
+### SupportAssociate {#SuperOffice_WebApi_Data_ContactEntity_SupportAssociate}
 
 &lt;p&gt;Use MDO List name "associate" to get list items.&lt;/p&gt;
 
@@ -543,7 +543,7 @@ public virtual Associate SupportAssociate { get; set; }
 
  [Associate](SuperOffice.WebApi.Data.Associate.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_SupportPerson"&gt;&lt;/a&gt; SupportPerson
+### SupportPerson {#SuperOffice_WebApi_Data_ContactEntity_SupportPerson}
 
 ```csharp
 public virtual Person SupportPerson { get; set; }
@@ -553,7 +553,7 @@ public virtual Person SupportPerson { get; set; }
 
  [Person](SuperOffice.WebApi.Data.Person.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_TicketPriority"&gt;&lt;/a&gt; TicketPriority
+### TicketPriority {#SuperOffice_WebApi_Data_ContactEntity_TicketPriority}
 
 &lt;p&gt;Use MDO List name "ticketpriority" to get list items.&lt;/p&gt;
 
@@ -565,7 +565,7 @@ public virtual TicketPriority TicketPriority { get; set; }
 
  [TicketPriority](SuperOffice.WebApi.Data.TicketPriority.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_UpdatedBy"&gt;&lt;/a&gt; UpdatedBy
+### UpdatedBy {#SuperOffice_WebApi_Data_ContactEntity_UpdatedBy}
 
 The user that last updated the contact
 
@@ -577,7 +577,7 @@ public virtual Associate UpdatedBy { get; set; }
 
  [Associate](SuperOffice.WebApi.Data.Associate.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_UpdatedDate"&gt;&lt;/a&gt; UpdatedDate
+### UpdatedDate {#SuperOffice_WebApi_Data_ContactEntity_UpdatedDate}
 
 Date last updated
 
@@ -589,7 +589,7 @@ public virtual DateTime UpdatedDate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_Urls"&gt;&lt;/a&gt; Urls
+### Urls {#SuperOffice_WebApi_Data_ContactEntity_Urls}
 
 The contact's internet adresses
 
@@ -601,7 +601,7 @@ public virtual EntityElement[] Urls { get; set; }
 
  [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_UserDefinedFields"&gt;&lt;/a&gt; UserDefinedFields
+### UserDefinedFields {#SuperOffice_WebApi_Data_ContactEntity_UserDefinedFields}
 
 Deprecated: Use &lt;xref href="SuperOffice.WebApi.Data.ContactEntity.CustomFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instead.
 Dictionary of user defined field data.
@@ -616,7 +616,7 @@ public virtual StringDictionary UserDefinedFields { get; set; }
 
  [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_UtmParameters"&gt;&lt;/a&gt; UtmParameters
+### UtmParameters {#SuperOffice_WebApi_Data_ContactEntity_UtmParameters}
 
 Utm parameters when creating first person and contact, readonly field
 
@@ -628,7 +628,7 @@ public virtual SavedUtmParameters UtmParameters { get; set; }
 
  [SavedUtmParameters](SuperOffice.WebApi.Data.SavedUtmParameters.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_ContactEntity_Xstop"&gt;&lt;/a&gt; Xstop
+### Xstop {#SuperOffice_WebApi_Data_ContactEntity_Xstop}
 
 STOP flag
 

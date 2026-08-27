@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_ITargetsAgent"&gt;&lt;/a&gt; Interface ITargetsAgent
+# Interface ITargetsAgent {#SuperOffice_WebApi_Agents_ITargetsAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface ITargetsAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_ITargetsAgent_CreateDefaultTargetAssignmentAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultTargetAssignmentAsync\(RequestOptions\)
+### CreateDefaultTargetAssignmentAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ITargetsAgent_CreateDefaultTargetAssignmentAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new TargetAssignment.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -37,7 +37,7 @@ Override language/culture codes on this request.
 
 A blank TargetAssignment
 
-### &lt;a id="SuperOffice_WebApi_Agents_ITargetsAgent_CreateDefaultTargetAssignmentForCompanyAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultTargetAssignmentForCompanyAsync\(RequestOptions\)
+### CreateDefaultTargetAssignmentForCompanyAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ITargetsAgent_CreateDefaultTargetAssignmentForCompanyAsync_SuperOffice_WebApi_RequestOptions_}
 
 Returns a default target assignment for the owner company.
 
@@ -57,7 +57,7 @@ Override language/culture codes on this request.
 
 Default target assignment for the owner company.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ITargetsAgent_CreateDefaultTargetAssignmentForCompanyWithDimensionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultTargetAssignmentForCompanyWithDimensionAsync\(int, RequestOptions\)
+### CreateDefaultTargetAssignmentForCompanyWithDimensionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ITargetsAgent_CreateDefaultTargetAssignmentForCompanyWithDimensionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns a default target assignment for the owner company, for the specified dimension.
 
@@ -81,7 +81,7 @@ Override language/culture codes on this request.
 
 Default target assignments for the owner company.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ITargetsAgent_CreateDefaultTargetAssignmentForCompanyWithYearAndDimensionAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultTargetAssignmentForCompanyWithYearAndDimensionAsync\(int, int, RequestOptions\)
+### CreateDefaultTargetAssignmentForCompanyWithYearAndDimensionAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ITargetsAgent_CreateDefaultTargetAssignmentForCompanyWithYearAndDimensionAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns a default target assignment for the owner company, for the specified year and dimension.
 
@@ -109,7 +109,7 @@ Override language/culture codes on this request.
 
 Default target assignments for the owner company.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ITargetsAgent_CreateDefaultTargetAssignmentForUserGroupAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultTargetAssignmentForUserGroupAsync\(int, RequestOptions\)
+### CreateDefaultTargetAssignmentForUserGroupAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ITargetsAgent_CreateDefaultTargetAssignmentForUserGroupAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns a default target assignment for the specified usergroup.
 
@@ -133,7 +133,7 @@ Override language/culture codes on this request.
 
 Default target assignment for the specified usergroup.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ITargetsAgent_CreateDefaultTargetAssignmentForUserGroupWithDimensionAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultTargetAssignmentForUserGroupWithDimensionAsync\(int, int, RequestOptions\)
+### CreateDefaultTargetAssignmentForUserGroupWithDimensionAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ITargetsAgent_CreateDefaultTargetAssignmentForUserGroupWithDimensionAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns a default target assignment for the specified usergroup, for the specified dimension.
 
@@ -161,7 +161,7 @@ Override language/culture codes on this request.
 
 Default target assignment for the specified usergroup.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ITargetsAgent_CreateDefaultTargetAssignmentForUserGroupWithYearAndDimensionAsync_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultTargetAssignmentForUserGroupWithYearAndDimensionAsync\(int, int, int, RequestOptions\)
+### CreateDefaultTargetAssignmentForUserGroupWithYearAndDimensionAsync\(int, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ITargetsAgent_CreateDefaultTargetAssignmentForUserGroupWithYearAndDimensionAsync_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns a default target assignment for the specified usergroup, for the specified year and dimension.
 
@@ -193,7 +193,7 @@ Override language/culture codes on this request.
 
 Default target assignment for the specified usergroup.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ITargetsAgent_CreateDefaultTargetDimensionAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultTargetDimensionAsync\(RequestOptions\)
+### CreateDefaultTargetDimensionAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ITargetsAgent_CreateDefaultTargetDimensionAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new TargetDimension.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -214,7 +214,7 @@ Override language/culture codes on this request.
 
 A blank TargetDimension
 
-### &lt;a id="SuperOffice_WebApi_Agents_ITargetsAgent_CreateDefaultTargetGroupAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultTargetGroupAsync\(RequestOptions\)
+### CreateDefaultTargetGroupAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ITargetsAgent_CreateDefaultTargetGroupAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new TargetGroup.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -235,7 +235,7 @@ Override language/culture codes on this request.
 
 A blank TargetGroup
 
-### &lt;a id="SuperOffice_WebApi_Agents_ITargetsAgent_CreateDefaultTargetRevisionAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultTargetRevisionAsync\(RequestOptions\)
+### CreateDefaultTargetRevisionAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ITargetsAgent_CreateDefaultTargetRevisionAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new TargetRevision.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -256,7 +256,7 @@ Override language/culture codes on this request.
 
 A blank TargetRevision
 
-### &lt;a id="SuperOffice_WebApi_Agents_ITargetsAgent_CreateDefaultTargetRevisionHistoryAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultTargetRevisionHistoryAsync\(RequestOptions\)
+### CreateDefaultTargetRevisionHistoryAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ITargetsAgent_CreateDefaultTargetRevisionHistoryAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new TargetRevisionHistory.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -277,7 +277,7 @@ Override language/culture codes on this request.
 
 A blank TargetRevisionHistory
 
-### &lt;a id="SuperOffice_WebApi_Agents_ITargetsAgent_DeleteTargetDimensionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteTargetDimensionAsync\(int, RequestOptions\)
+### DeleteTargetDimensionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ITargetsAgent_DeleteTargetDimensionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the TargetDimension
 
@@ -299,7 +299,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ITargetsAgent_DeleteTargetGroupAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteTargetGroupAsync\(int, RequestOptions\)
+### DeleteTargetGroupAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ITargetsAgent_DeleteTargetGroupAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the TargetGroup
 
@@ -321,7 +321,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_ITargetsAgent_ExportTargetGroupToExcelAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ExportTargetGroupToExcelAsync\(int, RequestOptions\)
+### ExportTargetGroupToExcelAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ITargetsAgent_ExportTargetGroupToExcelAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Renders the given targetgroup to excel, and returns the path to the temporary file.
 
@@ -343,7 +343,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ExportArchiveResult](SuperOffice.WebApi.Data.ExportArchiveResult.md)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_ITargetsAgent_GetTargetAssignmentForYearAndDimensionAsync_System_Int32_SuperOffice_WebApi_Data_TargetEntityType_SuperOffice_WebApi_Data_TargetLevel_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTargetAssignmentForYearAndDimensionAsync\(int, TargetEntityType, TargetLevel, int, int, RequestOptions\)
+### GetTargetAssignmentForYearAndDimensionAsync\(int, TargetEntityType, TargetLevel, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ITargetsAgent_GetTargetAssignmentForYearAndDimensionAsync_System_Int32_SuperOffice_WebApi_Data_TargetEntityType_SuperOffice_WebApi_Data_TargetLevel_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns the target assignment for the specified year, entity type and dimension.
 
@@ -383,7 +383,7 @@ Override language/culture codes on this request.
 
 Target assignment for a specified entity for year and entity type. Null if not found.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ITargetsAgent_GetTargetAssignmentForYearAsync_System_Int32_SuperOffice_WebApi_Data_TargetEntityType_SuperOffice_WebApi_Data_TargetLevel_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTargetAssignmentForYearAsync\(int, TargetEntityType, TargetLevel, int, RequestOptions\)
+### GetTargetAssignmentForYearAsync\(int, TargetEntityType, TargetLevel, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ITargetsAgent_GetTargetAssignmentForYearAsync_System_Int32_SuperOffice_WebApi_Data_TargetEntityType_SuperOffice_WebApi_Data_TargetLevel_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns the target assignment for the specified year and entity type.
 
@@ -419,7 +419,7 @@ Override language/culture codes on this request.
 
 Target assignment for a specified entity for year and entity type. Null if not found.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ITargetsAgent_GetTargetDimensionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTargetDimensionAsync\(int, RequestOptions\)
+### GetTargetDimensionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ITargetsAgent_GetTargetDimensionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific TargetDimension object.
 
@@ -443,7 +443,7 @@ Override language/culture codes on this request.
 
 TargetDimension
 
-### &lt;a id="SuperOffice_WebApi_Agents_ITargetsAgent_GetTargetDimensionsForEntityTypeAsync_SuperOffice_WebApi_Data_TargetEntityType_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTargetDimensionsForEntityTypeAsync\(TargetEntityType, RequestOptions\)
+### GetTargetDimensionsForEntityTypeAsync\(TargetEntityType, RequestOptions\) {#SuperOffice_WebApi_Agents_ITargetsAgent_GetTargetDimensionsForEntityTypeAsync_SuperOffice_WebApi_Data_TargetEntityType_SuperOffice_WebApi_RequestOptions_}
 
 Returns the target dimensions for the given entity type.
 
@@ -467,7 +467,7 @@ Override language/culture codes on this request.
 
 Target dimensions for year and entity type.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ITargetsAgent_GetTargetGroupAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTargetGroupAsync\(int, RequestOptions\)
+### GetTargetGroupAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ITargetsAgent_GetTargetGroupAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific TargetGroup object.
 
@@ -491,7 +491,7 @@ Override language/culture codes on this request.
 
 TargetGroup
 
-### &lt;a id="SuperOffice_WebApi_Agents_ITargetsAgent_GetTargetGroupForYearAndDimensionAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTargetGroupForYearAndDimensionAsync\(int, int, RequestOptions\)
+### GetTargetGroupForYearAndDimensionAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ITargetsAgent_GetTargetGroupForYearAndDimensionAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns the target group for the specified year and dimension.
 
@@ -519,7 +519,7 @@ Override language/culture codes on this request.
 
 Target Group for year and dimension.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ITargetsAgent_GetTargetGroupForYearAsync_System_Int32_SuperOffice_WebApi_Data_TargetEntityType_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTargetGroupForYearAsync\(int, TargetEntityType, RequestOptions\)
+### GetTargetGroupForYearAsync\(int, TargetEntityType, RequestOptions\) {#SuperOffice_WebApi_Agents_ITargetsAgent_GetTargetGroupForYearAsync_System_Int32_SuperOffice_WebApi_Data_TargetEntityType_SuperOffice_WebApi_RequestOptions_}
 
 Returns the target group for the specified year and entity type.
 
@@ -547,7 +547,7 @@ Override language/culture codes on this request.
 
 Target Group for year and entity type.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ITargetsAgent_GetTargetGroupIdsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTargetGroupIdsAsync\(int, RequestOptions\)
+### GetTargetGroupIdsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ITargetsAgent_GetTargetGroupIdsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns ids of the target groups that use this dimension.
 
@@ -571,7 +571,7 @@ Override language/culture codes on this request.
 
 Target group ids.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ITargetsAgent_GetTargetRevisionHistoryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTargetRevisionHistoryAsync\(int, RequestOptions\)
+### GetTargetRevisionHistoryAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ITargetsAgent_GetTargetRevisionHistoryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns the revision history for a given TargetAssignmentInfo in chronological order.
 
@@ -595,7 +595,7 @@ Override language/culture codes on this request.
 
 Target revision history for the given TargetAssignmentInfo
 
-### &lt;a id="SuperOffice_WebApi_Agents_ITargetsAgent_SaveTargetDimensionAsync_SuperOffice_WebApi_Data_TargetDimension_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveTargetDimensionAsync\(TargetDimension, RequestOptions\)
+### SaveTargetDimensionAsync\(TargetDimension, RequestOptions\) {#SuperOffice_WebApi_Agents_ITargetsAgent_SaveTargetDimensionAsync_SuperOffice_WebApi_Data_TargetDimension_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing TargetDimension or creates a new TargetDimension if the id parameter is 0.
 
@@ -619,7 +619,7 @@ Override language/culture codes on this request.
 
 New or updated TargetDimension
 
-### &lt;a id="SuperOffice_WebApi_Agents_ITargetsAgent_SaveTargetGroupAsync_SuperOffice_WebApi_Data_TargetGroup_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveTargetGroupAsync\(TargetGroup, RequestOptions\)
+### SaveTargetGroupAsync\(TargetGroup, RequestOptions\) {#SuperOffice_WebApi_Agents_ITargetsAgent_SaveTargetGroupAsync_SuperOffice_WebApi_Data_TargetGroup_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing TargetGroup or creates a new TargetGroup if the id parameter is 0.
 

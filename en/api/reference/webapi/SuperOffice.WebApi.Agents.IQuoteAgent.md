@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent"&gt;&lt;/a&gt; Interface IQuoteAgent
+# Interface IQuoteAgent {#SuperOffice_WebApi_Agents_IQuoteAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface IQuoteAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_AddSaleTypeQuoteAttachmentAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddSaleTypeQuoteAttachmentAsync\(int, int, RequestOptions\)
+### AddSaleTypeQuoteAttachmentAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_AddSaleTypeQuoteAttachmentAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Adds a new quote attachment document to a sale type
 
@@ -44,7 +44,7 @@ Override language/culture codes on this request.
 
 ID of the new sale type quote attachment row
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_ApproveQuoteVersionAsync_System_Int32_System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ApproveQuoteVersionAsync\(int, string, int, string, RequestOptions\)
+### ApproveQuoteVersionAsync\(int, string, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_ApproveQuoteVersionAsync_System_Int32_System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Approves a quote version
 
@@ -80,7 +80,7 @@ Override language/culture codes on this request.
 
 Response of the the operation
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_CanConnectorProvideCapabilityAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CanConnectorProvideCapabilityAsync\(int, string, RequestOptions\)
+### CanConnectorProvideCapabilityAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_CanConnectorProvideCapabilityAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Can the connector provide the capability
 
@@ -108,7 +108,7 @@ Override language/culture codes on this request.
 
 Capability name
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_CancelApprovalRequestAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CancelApprovalRequestAsync\(int, RequestOptions\)
+### CancelApprovalRequestAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_CancelApprovalRequestAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Cancel a pending quote approval request.
 
@@ -132,7 +132,7 @@ Override language/culture codes on this request.
 
 Response of the the operation
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_CopyQuoteAlternativeAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CopyQuoteAlternativeAsync\(int, int, string, RequestOptions\)
+### CopyQuoteAlternativeAsync\(int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_CopyQuoteAlternativeAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Copy a quote alternative from the same sale and adds it to a version.
 
@@ -164,7 +164,7 @@ Override language/culture codes on this request.
 
 The copied QuoteAlternative.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_CopySuperOfficePriceListAsync_System_Int32_System_String_System_DateTime_System_DateTime_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CopySuperOfficePriceListAsync\(int, string, DateTime, DateTime, int, bool, RequestOptions\)
+### CopySuperOfficePriceListAsync\(int, string, DateTime, DateTime, int, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_CopySuperOfficePriceListAsync_System_Int32_System_String_System_DateTime_System_DateTime_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Create a copy of a PriceList in the SuperOffice database
 
@@ -208,7 +208,7 @@ Override language/culture codes on this request.
 
 The copied PriceList
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_CreateAndSaveQuoteAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateAndSaveQuoteAsync\(int, int, string, RequestOptions\)
+### CreateAndSaveQuoteAsync\(int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_CreateAndSaveQuoteAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Creates a new quote on a sale.
 
@@ -240,7 +240,7 @@ Override language/culture codes on this request.
 
 Quote carrier
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_CreateAndSaveQuoteFromSaleAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateAndSaveQuoteFromSaleAsync\(int, int, RequestOptions\)
+### CreateAndSaveQuoteFromSaleAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_CreateAndSaveQuoteFromSaleAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Creates a copy the active version with connected alternatives and quotelines from another sale.
 
@@ -268,7 +268,7 @@ Override language/culture codes on this request.
 
 The created Quote
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_CreateAndSaveQuoteLinesAsync_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateAndSaveQuoteLinesAsync\(int, string\[\], RequestOptions\)
+### CreateAndSaveQuoteLinesAsync\(int, string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_CreateAndSaveQuoteLinesAsync_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Create and save quotelines based on the product keys added
 
@@ -296,7 +296,7 @@ Override language/culture codes on this request.
 
 Count of added quoteLines
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_CreateAndSaveQuoteVersionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateAndSaveQuoteVersionAsync\(int, RequestOptions\)
+### CreateAndSaveQuoteVersionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_CreateAndSaveQuoteVersionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Created a new QuoteVersion based on another QuoteVersion on the same Quote.
 
@@ -320,7 +320,7 @@ Override language/culture codes on this request.
 
 The Quote version
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_CreateConnectionFromConnectorNameAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateConnectionFromConnectorNameAsync\(string, RequestOptions\)
+### CreateConnectionFromConnectorNameAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_CreateConnectionFromConnectorNameAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Create a new connection.
 
@@ -344,7 +344,7 @@ Override language/culture codes on this request.
 
 The created connection
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_CreateDefaultPriceListAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultPriceListAsync\(RequestOptions\)
+### CreateDefaultPriceListAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_CreateDefaultPriceListAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new PriceList.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -365,7 +365,7 @@ Override language/culture codes on this request.
 
 A blank PriceList
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_CreateDefaultProductAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultProductAsync\(RequestOptions\)
+### CreateDefaultProductAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_CreateDefaultProductAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new Product.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -386,7 +386,7 @@ Override language/culture codes on this request.
 
 A blank Product
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_CreateDefaultQuoteAlternativeAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultQuoteAlternativeAsync\(RequestOptions\)
+### CreateDefaultQuoteAlternativeAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_CreateDefaultQuoteAlternativeAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new QuoteAlternative.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -407,7 +407,7 @@ Override language/culture codes on this request.
 
 A blank QuoteAlternative
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_CreateOrUpdateQuoteVersionAttachmentsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateOrUpdateQuoteVersionAttachmentsAsync\(int, RequestOptions\)
+### CreateOrUpdateQuoteVersionAttachmentsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_CreateOrUpdateQuoteVersionAttachmentsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Look at the Quote version, related sale and sale type, and ensure that the correct QuoteVersionAttachment records exist. This method may create or delete records
 
@@ -431,7 +431,7 @@ Override language/culture codes on this request.
 
 The current attachments for the given Quote version, after all updates have been completed
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_CreateQuoteAlternativeAsync_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateQuoteAlternativeAsync\(int, string, string, RequestOptions\)
+### CreateQuoteAlternativeAsync\(int, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_CreateQuoteAlternativeAsync_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Create a new quote alternative on a version.
 
@@ -463,7 +463,7 @@ Override language/culture codes on this request.
 
 The newly created QuoteAlternative.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_CreateQuoteLineAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateQuoteLineAsync\(int, string, RequestOptions\)
+### CreateQuoteLineAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_CreateQuoteLineAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Create a quoteline based on a product key.
 
@@ -491,7 +491,7 @@ Override language/culture codes on this request.
 
 The updated quote line.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_CreateQuoteLineFromProductAsync_System_Int32_SuperOffice_WebApi_Data_Product_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateQuoteLineFromProductAsync\(int, Product, RequestOptions\)
+### CreateQuoteLineFromProductAsync\(int, Product, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_CreateQuoteLineFromProductAsync_System_Int32_SuperOffice_WebApi_Data_Product_SuperOffice_WebApi_RequestOptions_}
 
 Create a quoteline based on a product.
 
@@ -519,7 +519,7 @@ Override language/culture codes on this request.
 
 The updated quote line.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_DeleteConnectionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteConnectionAsync\(int, RequestOptions\)
+### DeleteConnectionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_DeleteConnectionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Marks a connection as deleted.
 
@@ -543,7 +543,7 @@ Override language/culture codes on this request.
 
 A void return
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_DeletePriceListAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeletePriceListAsync\(int, RequestOptions\)
+### DeletePriceListAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_DeletePriceListAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the PriceList
 
@@ -565,7 +565,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_DeleteProductAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteProductAsync\(int, RequestOptions\)
+### DeleteProductAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_DeleteProductAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the Product
 
@@ -587,7 +587,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_DeleteQuoteAlternativeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteQuoteAlternativeAsync\(int, RequestOptions\)
+### DeleteQuoteAlternativeAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_DeleteQuoteAlternativeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Delete a quote alternative
 
@@ -611,7 +611,7 @@ Override language/culture codes on this request.
 
 A void return
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_DeleteQuoteAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteQuoteAsync\(int, RequestOptions\)
+### DeleteQuoteAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_DeleteQuoteAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Delete a Quote
 
@@ -633,7 +633,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_DeleteQuoteLineAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteQuoteLineAsync\(int, RequestOptions\)
+### DeleteQuoteLineAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_DeleteQuoteLineAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the QuoteLine in the SuperOffice database
 
@@ -657,7 +657,7 @@ Override language/culture codes on this request.
 
 Nothing
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_DeleteQuoteLinesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteQuoteLinesAsync\(int\[\], RequestOptions\)
+### DeleteQuoteLinesAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_DeleteQuoteLinesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Delete the QuoteLines in the SuperOffice database
 
@@ -681,7 +681,7 @@ Override language/culture codes on this request.
 
 Nothing
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_DeleteSaleTypeQuoteAttachmentAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteSaleTypeQuoteAttachmentAsync\(int, RequestOptions\)
+### DeleteSaleTypeQuoteAttachmentAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_DeleteSaleTypeQuoteAttachmentAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the sale type quote attachment with the given id
 
@@ -703,7 +703,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_FindProductAsync_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; FindProductAsync\(int, string, string, RequestOptions\)
+### FindProductAsync\(int, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_FindProductAsync_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Gets a product, from the ProductProvider
 
@@ -735,7 +735,7 @@ Override language/culture codes on this request.
 
 Product array
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GenerateQuoteDocumentsAsync_System_Int32_System_Int32_System_Boolean_System_Int32_System_Boolean_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GenerateQuoteDocumentsAsync\(int, int, bool, int, bool, string, RequestOptions\)
+### GenerateQuoteDocumentsAsync\(int, int, bool, int, bool, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GenerateQuoteDocumentsAsync_System_Int32_System_Int32_System_Boolean_System_Int32_System_Boolean_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Generate all the documents required to send the Quote as an email to the prospect - or an Order Confirmation; it just depends on the template id's for the lines doc and mail body. Quote version status is not changed by this method.
 
@@ -779,7 +779,7 @@ Override language/culture codes on this request.
 
 Carrier specifying the document id's of all the documents, as well as other results
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetActivePriceListsAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetActivePriceListsAsync\(int, string, RequestOptions\)
+### GetActivePriceListsAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetActivePriceListsAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Gets the available active PriceLists in a specific currency. Will return empty array if there is no PriceList with the stated currency available.
 
@@ -807,7 +807,7 @@ Override language/culture codes on this request.
 
 The PriceLists that supports a specific currency
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetActivePriceListsByCurrencyIdAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetActivePriceListsByCurrencyIdAsync\(int, int, RequestOptions\)
+### GetActivePriceListsByCurrencyIdAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetActivePriceListsByCurrencyIdAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets the available active PriceLists in a specific currency. Will return empty array if there is no PriceList with the stated currency available.
 
@@ -835,7 +835,7 @@ Override language/culture codes on this request.
 
 The PriceLists that supports a specific currency
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetAllAvailableQuoteConnectionsAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAllAvailableQuoteConnectionsAsync\(RequestOptions\)
+### GetAllAvailableQuoteConnectionsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetAllAvailableQuoteConnectionsAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get all available connections. Some installed connections may not be available to the user. Use GetAllAvailableQuoteConnectionsWithPriceLists if you need the pricelists on the connections as well.
 
@@ -855,7 +855,7 @@ Override language/culture codes on this request.
 
 List of connections
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetAllAvailableQuoteConnectionsWithPriceListsAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAllAvailableQuoteConnectionsWithPriceListsAsync\(RequestOptions\)
+### GetAllAvailableQuoteConnectionsWithPriceListsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetAllAvailableQuoteConnectionsWithPriceListsAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get all available connections. Some installed connections may not be available to the user. Includes pricelists for the connection. This is a heavy call
 
@@ -875,7 +875,7 @@ Override language/culture codes on this request.
 
 List of connections
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetAllInstalledQuoteConnectionsAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAllInstalledQuoteConnectionsAsync\(RequestOptions\)
+### GetAllInstalledQuoteConnectionsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetAllInstalledQuoteConnectionsAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get all installed connections. Some installed connections may not be available to the user.
 
@@ -895,7 +895,7 @@ Override language/culture codes on this request.
 
 List of connections
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetAllPriceListsAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAllPriceListsAsync\(int, string, RequestOptions\)
+### GetAllPriceListsAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetAllPriceListsAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Gets the all PriceLists in all currencies, including those inactive. Will return empty array if there is no PriceList available.
 
@@ -923,7 +923,7 @@ Override language/culture codes on this request.
 
 The PriceLists that supports a specific currency
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetAllPriceListsByCurrencyIdAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAllPriceListsByCurrencyIdAsync\(int, int, RequestOptions\)
+### GetAllPriceListsByCurrencyIdAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetAllPriceListsByCurrencyIdAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets the all PriceLists in all currencies, including those inactive. Will return empty array if there is no PriceList available.
 
@@ -951,7 +951,7 @@ Override language/culture codes on this request.
 
 The PriceLists that supports a specific currency
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetAllQuoteLineConfigurationsAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAllQuoteLineConfigurationsAsync\(RequestOptions\)
+### GetAllQuoteLineConfigurationsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetAllQuoteLineConfigurationsAsync_SuperOffice_WebApi_RequestOptions_}
 
 Returns all the configuration fields
 
@@ -971,7 +971,7 @@ Override language/culture codes on this request.
 
 Array of QuoteLineConfigurations
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetConfigurationFieldsAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetConfigurationFieldsAsync\(int, string, RequestOptions\)
+### GetConfigurationFieldsAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetConfigurationFieldsAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Used by ADMIN. Asks for metadata needed to populate admin dialog that takes in the information needed to create a connection to an ERP system. The values entered in the dialog are stored in SuperOffice db and used when InitializeConnector is called by the client.
 
@@ -999,7 +999,7 @@ Override language/culture codes on this request.
 
 carriers
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetConnectionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetConnectionAsync\(int, RequestOptions\)
+### GetConnectionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetConnectionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns the specified connection.
 
@@ -1023,7 +1023,7 @@ Override language/culture codes on this request.
 
 The connection
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetConnectionConfigFieldsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetConnectionConfigFieldsAsync\(int, RequestOptions\)
+### GetConnectionConfigFieldsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetConnectionConfigFieldsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns the config fields for the connection.
 
@@ -1047,7 +1047,7 @@ Override language/culture codes on this request.
 
 Config Fields
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetConnectionStartupErrorsAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetConnectionStartupErrorsAsync\(RequestOptions\)
+### GetConnectionStartupErrorsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetConnectionStartupErrorsAsync_SuperOffice_WebApi_RequestOptions_}
 
 Returns an array of PluginResponseInfos for all failed connection initializations.
 
@@ -1067,7 +1067,7 @@ Override language/culture codes on this request.
 
 Array of PluginResponseInfos for each failed connection initialization.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetConnectionStartupResponseAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetConnectionStartupResponseAsync\(int, RequestOptions\)
+### GetConnectionStartupResponseAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetConnectionStartupResponseAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns the PluginResponseInfo for the connection initialization. Does not initialize the connection, just returns what happened when initialize was called.
 
@@ -1091,7 +1091,7 @@ Override language/culture codes on this request.
 
 PluginResponseInfo for the connection initialization.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetConnectionsForAssociateAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetConnectionsForAssociateAsync\(int, RequestOptions\)
+### GetConnectionsForAssociateAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetConnectionsForAssociateAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns all connections available for the specified user.
 
@@ -1115,7 +1115,7 @@ Override language/culture codes on this request.
 
 The connections
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetConnectorCapabilitiesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetConnectorCapabilitiesAsync\(int, RequestOptions\)
+### GetConnectorCapabilitiesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetConnectorCapabilitiesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a list of connector capabilities
 
@@ -1139,7 +1139,7 @@ Override language/culture codes on this request.
 
 Capabilities
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetConnectorCapabilityNamesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetConnectorCapabilityNamesAsync\(int, RequestOptions\)
+### GetConnectorCapabilityNamesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetConnectorCapabilityNamesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a list of all possible connector capabilities
 
@@ -1163,7 +1163,7 @@ Override language/culture codes on this request.
 
 Capabilities names
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetExtraInfoAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetExtraInfoAsync\(string, RequestOptions\)
+### GetExtraInfoAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetExtraInfoAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Converts an xml string into an object representation.
 
@@ -1187,7 +1187,7 @@ Override language/culture codes on this request.
 
 An object representation on the xml
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetInUseQuoteLineConfigurationsAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetInUseQuoteLineConfigurationsAsync\(RequestOptions\)
+### GetInUseQuoteLineConfigurationsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetInUseQuoteLineConfigurationsAsync_SuperOffice_WebApi_RequestOptions_}
 
 Returns the configuration fields that should be visible in the GUI.
 
@@ -1207,7 +1207,7 @@ Override language/culture codes on this request.
 
 Array of QuoteLineConfigurations
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetOrderConfirmationAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetOrderConfirmationAsync\(int, int, RequestOptions\)
+### GetOrderConfirmationAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetOrderConfirmationAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a base64-encoded data stream that is just the order confirmation document, for the given quote version; no permanent document is created or stored anywhere; the result is a PDF
 
@@ -1235,7 +1235,7 @@ Override language/culture codes on this request.
 
 Base64-encoded binary data, that is in fact a PDF document that should be shown to the user
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetOrderStateAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetOrderStateAsync\(int, RequestOptions\)
+### GetOrderStateAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetOrderStateAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 If there is a problem with a quoteline, the error description shall be placed in the status and reason fields of the quoteline, if there is a problem with the alternative, the error description shall be placed in the status and reason fields of the alternative. A summary of all the problems (if any) should be placed in the response object. Requires that the Create-Order capability is true.
 
@@ -1259,7 +1259,7 @@ Override language/culture codes on this request.
 
 The order state. If a new quoteversion is created, the QuoteVersionId will be found in Changes.AddedRecords.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetPriceListAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPriceListAsync\(int, RequestOptions\)
+### GetPriceListAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetPriceListAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific PriceList object.
 
@@ -1283,7 +1283,7 @@ Override language/culture codes on this request.
 
 PriceList
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetProductAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProductAsync\(int, string, RequestOptions\)
+### GetProductAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetProductAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get a product with the given key
 
@@ -1309,7 +1309,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Product](SuperOffice.WebApi.Data.Product.md)\&gt;
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetProductFromDbIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProductFromDbIdAsync\(int, RequestOptions\)
+### GetProductFromDbIdAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetProductFromDbIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a product with the given database id
 
@@ -1333,7 +1333,7 @@ Override language/culture codes on this request.
 
 The product info
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetProductImageAsync_System_Int32_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProductImageAsync\(int, string, int, RequestOptions\)
+### GetProductImageAsync\(int, string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetProductImageAsync_System_Int32_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets an image connected to a product, from the ProductProvider
 
@@ -1365,7 +1365,7 @@ Override language/culture codes on this request.
 
 The base64 encoded image as a string.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteAlternativeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetQuoteAlternativeAsync\(int, RequestOptions\)
+### GetQuoteAlternativeAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteAlternativeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific QuoteAlternative object.
 
@@ -1389,7 +1389,7 @@ Override language/culture codes on this request.
 
 QuoteAlternative
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteAlternativesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetQuoteAlternativesAsync\(int, RequestOptions\)
+### GetQuoteAlternativesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteAlternativesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get all quote alternatives for a quote version
 
@@ -1413,7 +1413,7 @@ Override language/culture codes on this request.
 
 Array of Quote alternatives
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetQuoteAsync\(int, RequestOptions\)
+### GetQuoteAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a Quote
 
@@ -1437,7 +1437,7 @@ Override language/culture codes on this request.
 
 The Quote
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetQuoteEntityAsync\(int, RequestOptions\)
+### GetQuoteEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a Quote
 
@@ -1461,7 +1461,7 @@ Override language/culture codes on this request.
 
 The Quote
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteEntityFromSaleIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetQuoteEntityFromSaleIdAsync\(int, RequestOptions\)
+### GetQuoteEntityFromSaleIdAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteEntityFromSaleIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a Quote for a sale
 
@@ -1485,7 +1485,7 @@ Override language/culture codes on this request.
 
 The Quote
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteFromSaleIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetQuoteFromSaleIdAsync\(int, RequestOptions\)
+### GetQuoteFromSaleIdAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteFromSaleIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a Quote for a sale
 
@@ -1509,7 +1509,7 @@ Override language/culture codes on this request.
 
 The Quote
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteLineAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetQuoteLineAsync\(int, RequestOptions\)
+### GetQuoteLineAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteLineAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get QuoteLine from database
 
@@ -1533,7 +1533,7 @@ Override language/culture codes on this request.
 
 The updated quote line (If the quoteline was new, it returns with id's set.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteLineConfigurationAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetQuoteLineConfigurationAsync\(int, RequestOptions\)
+### GetQuoteLineConfigurationAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteLineConfigurationAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns the configuration field with the given id
 
@@ -1557,7 +1557,7 @@ Override language/culture codes on this request.
 
 QuoteLineConfiguration
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteLineConfigurationFromFieldNameAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetQuoteLineConfigurationFromFieldNameAsync\(string, RequestOptions\)
+### GetQuoteLineConfigurationFromFieldNameAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteLineConfigurationFromFieldNameAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the configuration field with the given field name
 
@@ -1581,7 +1581,7 @@ Override language/culture codes on this request.
 
 QuoteLineConfiguration
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteLinesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetQuoteLinesAsync\(int, RequestOptions\)
+### GetQuoteLinesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteLinesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get all QuoteLines from an alternative
 
@@ -1605,7 +1605,7 @@ Override language/culture codes on this request.
 
 QuoteLine array
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteVersionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetQuoteVersionAsync\(int, RequestOptions\)
+### GetQuoteVersionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteVersionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a QuoteVersion
 
@@ -1629,7 +1629,7 @@ Override language/culture codes on this request.
 
 Array of Quote versions
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteVersionWorkflowButtonStatesAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetQuoteVersionWorkflowButtonStatesAsync\(int, int, RequestOptions\)
+### GetQuoteVersionWorkflowButtonStatesAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteVersionWorkflowButtonStatesAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get all button states for the Quote version dialog.
 
@@ -1657,7 +1657,7 @@ Override language/culture codes on this request.
 
 Workflow state information
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteVersionWorkflowImageStateAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetQuoteVersionWorkflowImageStateAsync\(int, RequestOptions\)
+### GetQuoteVersionWorkflowImageStateAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteVersionWorkflowImageStateAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get state icon and name for the Quote version dialog header.
 
@@ -1681,7 +1681,7 @@ Override language/culture codes on this request.
 
 Image and state name information
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteVersionWorkflowStateAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetQuoteVersionWorkflowStateAsync\(int, int, RequestOptions\)
+### GetQuoteVersionWorkflowStateAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteVersionWorkflowStateAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get all button states for the Quote version dialog. Packages ImageState, Button states and status info into one call. Collects most important warnings/errors from across all quotelines/alternatives in this quote version.
 
@@ -1709,7 +1709,7 @@ Override language/culture codes on this request.
 
 Workflow state information
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteVersionWorkflowStatusInfoAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetQuoteVersionWorkflowStatusInfoAsync\(int, RequestOptions\)
+### GetQuoteVersionWorkflowStatusInfoAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteVersionWorkflowStatusInfoAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get status info for the Quote version dialog header. Collects most important warnings/errors from across all quotelines/alternatives in this quote version.
 
@@ -1733,7 +1733,7 @@ Override language/culture codes on this request.
 
 Most important status text + icon information.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteVersionsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetQuoteVersionsAsync\(int, RequestOptions\)
+### GetQuoteVersionsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_GetQuoteVersionsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get all quote versions for a sale
 
@@ -1757,7 +1757,7 @@ Override language/culture codes on this request.
 
 Array of Quote versions
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_HasConnectionsAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; HasConnectionsAsync\(RequestOptions\)
+### HasConnectionsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_HasConnectionsAsync_SuperOffice_WebApi_RequestOptions_}
 
 Whether or not the system has any connections available for this user.
 
@@ -1777,7 +1777,7 @@ Override language/culture codes on this request.
 
 The response
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_IncludeQuoteVersionAttachmentAsync_System_Int32_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; IncludeQuoteVersionAttachmentAsync\(int, int, bool, RequestOptions\)
+### IncludeQuoteVersionAttachmentAsync\(int, int, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_IncludeQuoteVersionAttachmentAsync_System_Int32_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Toggle the 'included' state of a quote version attachment; will throw exceptions if called on locked versions
 
@@ -1809,7 +1809,7 @@ Override language/culture codes on this request.
 
 The new state
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_MoveQuoteLineAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; MoveQuoteLineAsync\(int, bool, RequestOptions\)
+### MoveQuoteLineAsync\(int, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_MoveQuoteLineAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Move quote line rank up/down
 
@@ -1837,7 +1837,7 @@ Override language/culture codes on this request.
 
 Void return
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_PlaceOrderAsync_System_Int32_System_Boolean_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; PlaceOrderAsync\(int, bool, string, string, string, RequestOptions\)
+### PlaceOrderAsync\(int, bool, string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_PlaceOrderAsync_System_Int32_System_Boolean_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Place an order in the ERP system.
 
@@ -1877,7 +1877,7 @@ Override language/culture codes on this request.
 
 Status for the placed order: OkWithInfo / Warn / Error with message or URL to open.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_RecalculateQuoteAlternativeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RecalculateQuoteAlternativeAsync\(int, RequestOptions\)
+### RecalculateQuoteAlternativeAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_RecalculateQuoteAlternativeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 When the user changes one or more values in a quoteline or a quoteAlternative, the connector gets to change the QuoteLines and the alternative, for instance calculate VAT. RecalculateQuoteAlternative shall be called when the user changes any of the following fields: Quantity, DiscountAmount, DiscountPercent, listprice (if allowed). RecalculateQuoteAlternative will calculate the TotalPrice and the VAT (if possible) for the lines and the alternative.
 
@@ -1901,7 +1901,7 @@ Override language/culture codes on this request.
 
 The updated quote version.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_RecalculateQuoteLineAsync_SuperOffice_WebApi_Data_QuoteLine_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RecalculateQuoteLineAsync\(QuoteLine, string\[\], RequestOptions\)
+### RecalculateQuoteLineAsync\(QuoteLine, string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_RecalculateQuoteLineAsync_SuperOffice_WebApi_Data_QuoteLine_System_String___SuperOffice_WebApi_RequestOptions_}
 
 When the user changes one or more values in a quoteline, the connector gets to change the QuoteLine, for instance calculate VAT. Shall be called when the user changes any of the following fields: Quantity, DiscountAmount, DiscountPercent, ListPrice (if allowed). Will calculate the TotalPrice and the VAT (if possible) for the line.
 
@@ -1929,7 +1929,7 @@ Override language/culture codes on this request.
 
 The updated quote line.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_RejectQuoteVersionAsync_System_Int32_System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RejectQuoteVersionAsync\(int, string, int, string, RequestOptions\)
+### RejectQuoteVersionAsync\(int, string, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_RejectQuoteVersionAsync_System_Int32_System_String_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Rejects a quote version
 
@@ -1965,7 +1965,7 @@ Override language/culture codes on this request.
 
 Response of the the operation
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_RemoveProductAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveProductAsync\(int, RequestOptions\)
+### RemoveProductAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_RemoveProductAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Removes a product from the database
 
@@ -1987,7 +1987,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_RequestApprovalAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RequestApprovalAsync\(int, int, string, RequestOptions\)
+### RequestApprovalAsync\(int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_RequestApprovalAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Notifies specified associate that this quote needs approval.
 
@@ -2019,7 +2019,7 @@ Override language/culture codes on this request.
 
 Response of the the operation
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_RestoreConnectionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RestoreConnectionAsync\(int, RequestOptions\)
+### RestoreConnectionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_RestoreConnectionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Restores a connection marked as deleted.
 
@@ -2043,7 +2043,7 @@ Override language/culture codes on this request.
 
 A void return
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_SaveConnectionAsync_SuperOffice_WebApi_Data_QuoteConnection_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveConnectionAsync\(QuoteConnection, RequestOptions\)
+### SaveConnectionAsync\(QuoteConnection, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_SaveConnectionAsync_SuperOffice_WebApi_Data_QuoteConnection_SuperOffice_WebApi_RequestOptions_}
 
 Saves a connection to the database.
 
@@ -2067,7 +2067,7 @@ Override language/culture codes on this request.
 
 The resulting connection.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_SaveConnectionConfigFieldsAsync_System_Int32_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveConnectionConfigFieldsAsync\(int, StringDictionary, RequestOptions\)
+### SaveConnectionConfigFieldsAsync\(int, StringDictionary, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_SaveConnectionConfigFieldsAsync_System_Int32_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_}
 
 Saves the connection config fields
 
@@ -2095,7 +2095,7 @@ Override language/culture codes on this request.
 
 Config Fields
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_SavePriceListAsync_SuperOffice_WebApi_Data_PriceList_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SavePriceListAsync\(PriceList, RequestOptions\)
+### SavePriceListAsync\(PriceList, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_SavePriceListAsync_SuperOffice_WebApi_Data_PriceList_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing PriceList or creates a new PriceList if the id parameter is 0.
 
@@ -2119,7 +2119,7 @@ Override language/culture codes on this request.
 
 New or updated PriceList
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_SaveProductAsync_SuperOffice_WebApi_Data_Product_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveProductAsync\(Product, RequestOptions\)
+### SaveProductAsync\(Product, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_SaveProductAsync_SuperOffice_WebApi_Data_Product_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing Product or creates a new Product if the id parameter is 0.
 
@@ -2143,7 +2143,7 @@ Override language/culture codes on this request.
 
 New or updated Product
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_SaveQuoteAlternativeAsync_SuperOffice_WebApi_Data_QuoteAlternative_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveQuoteAlternativeAsync\(QuoteAlternative, RequestOptions\)
+### SaveQuoteAlternativeAsync\(QuoteAlternative, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_SaveQuoteAlternativeAsync_SuperOffice_WebApi_Data_QuoteAlternative_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing QuoteAlternative or creates a new QuoteAlternative if the id parameter is 0.
 
@@ -2167,7 +2167,7 @@ Override language/culture codes on this request.
 
 New or updated QuoteAlternative
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_SaveQuoteAsync_SuperOffice_WebApi_Data_Quote_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveQuoteAsync\(Quote, RequestOptions\)
+### SaveQuoteAsync\(Quote, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_SaveQuoteAsync_SuperOffice_WebApi_Data_Quote_SuperOffice_WebApi_RequestOptions_}
 
 Saves a Quote
 
@@ -2191,7 +2191,7 @@ Override language/culture codes on this request.
 
 The saved Quote
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_SaveQuoteEntityAsync_SuperOffice_WebApi_Data_QuoteEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveQuoteEntityAsync\(QuoteEntity, RequestOptions\)
+### SaveQuoteEntityAsync\(QuoteEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_SaveQuoteEntityAsync_SuperOffice_WebApi_Data_QuoteEntity_SuperOffice_WebApi_RequestOptions_}
 
 Saves a QuoteEntity. Versions and alternatives will not be saved by this call.
 
@@ -2215,7 +2215,7 @@ Override language/culture codes on this request.
 
 The saved Quote
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_SaveQuoteLineAsync_SuperOffice_WebApi_Data_QuoteLine_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveQuoteLineAsync\(QuoteLine, RequestOptions\)
+### SaveQuoteLineAsync\(QuoteLine, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_SaveQuoteLineAsync_SuperOffice_WebApi_Data_QuoteLine_SuperOffice_WebApi_RequestOptions_}
 
 Saves the QuoteLine in the SuperOffice database
 
@@ -2239,7 +2239,7 @@ Override language/culture codes on this request.
 
 The updated quote line (If the quoteline was new, it returns with id's set.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_SaveQuoteLineConfigurationAsync_SuperOffice_WebApi_Data_QuoteLineConfiguration_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveQuoteLineConfigurationAsync\(QuoteLineConfiguration, RequestOptions\)
+### SaveQuoteLineConfigurationAsync\(QuoteLineConfiguration, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_SaveQuoteLineConfigurationAsync_SuperOffice_WebApi_Data_QuoteLineConfiguration_SuperOffice_WebApi_RequestOptions_}
 
 Save a QuoteLineConfiguration object. It is not possible to add a new configuration.
 
@@ -2263,7 +2263,7 @@ Override language/culture codes on this request.
 
 The saved QuoteLineConfiguration.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_SaveQuoteLineConfigurationsAsync_SuperOffice_WebApi_Data_QuoteLineConfiguration___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveQuoteLineConfigurationsAsync\(QuoteLineConfiguration\[\], RequestOptions\)
+### SaveQuoteLineConfigurationsAsync\(QuoteLineConfiguration\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_SaveQuoteLineConfigurationsAsync_SuperOffice_WebApi_Data_QuoteLineConfiguration___SuperOffice_WebApi_RequestOptions_}
 
 Save a collection of QuoteLineConfigurations. It is not possible to add a new configurations.
 
@@ -2287,7 +2287,7 @@ Override language/culture codes on this request.
 
 The saved QuoteLineConfigurations.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_SaveQuoteLinesAsync_SuperOffice_WebApi_Data_QuoteLine___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveQuoteLinesAsync\(QuoteLine\[\], RequestOptions\)
+### SaveQuoteLinesAsync\(QuoteLine\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_SaveQuoteLinesAsync_SuperOffice_WebApi_Data_QuoteLine___SuperOffice_WebApi_RequestOptions_}
 
 Saves the QuoteLines in the SuperOffice database
 
@@ -2311,7 +2311,7 @@ Override language/culture codes on this request.
 
 The updated quote lines (If the quoteline was new, it returns with id's set.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_SaveQuoteVersionAsync_SuperOffice_WebApi_Data_QuoteVersion_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveQuoteVersionAsync\(QuoteVersion, RequestOptions\)
+### SaveQuoteVersionAsync\(QuoteVersion, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_SaveQuoteVersionAsync_SuperOffice_WebApi_Data_QuoteVersion_SuperOffice_WebApi_RequestOptions_}
 
 Saves a quote version
 
@@ -2335,7 +2335,7 @@ Override language/culture codes on this request.
 
 The saved quote version
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_SaveQuoteVersionNumberAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveQuoteVersionNumberAsync\(int, string, RequestOptions\)
+### SaveQuoteVersionNumberAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_SaveQuoteVersionNumberAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Save the quote version number if it is valid
 
@@ -2363,7 +2363,7 @@ Override language/culture codes on this request.
 
 True if the number was valid and then saved
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_SendQuoteVersionAsync_System_Int32_System_DateTime_System_DateTime_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SendQuoteVersionAsync\(int, DateTime, DateTime, string, string, RequestOptions\)
+### SendQuoteVersionAsync\(int, DateTime, DateTime, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_SendQuoteVersionAsync_System_Int32_System_DateTime_System_DateTime_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Send the quote to the user's customer. More parameters to be added later...
 
@@ -2403,7 +2403,7 @@ Override language/culture codes on this request.
 
 Response of the operation
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_TestConnectionAsync_System_String_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; TestConnectionAsync\(string, StringDictionary, RequestOptions\)
+### TestConnectionAsync\(string, StringDictionary, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_TestConnectionAsync_System_String_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_}
 
 Used by the Admin clients. Testing if the connection data is sufficient to get a connection with the ERP system. The Connector should try to do some operations to check if the connection has sufficient rights to run. The connection has not been created yet. TestConnection is called without InitializeConnector being called first.
 
@@ -2431,7 +2431,7 @@ Override language/culture codes on this request.
 
 How the test went
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_ToggleProductInAssortmentAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ToggleProductInAssortmentAsync\(int, RequestOptions\)
+### ToggleProductInAssortmentAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_ToggleProductInAssortmentAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Toggles if the prdouct is in assortment or not
 
@@ -2453,7 +2453,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_ToggleQuoteVersionAttachmentIncludedAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ToggleQuoteVersionAttachmentIncludedAsync\(int, RequestOptions\)
+### ToggleQuoteVersionAttachmentIncludedAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_ToggleQuoteVersionAttachmentIncludedAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Toggle the 'included' state of a quote version attachment
 
@@ -2477,7 +2477,7 @@ Override language/culture codes on this request.
 
 The new state
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_ToggleSaleTypeQuoteAttachmentDefaultIncludedAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ToggleSaleTypeQuoteAttachmentDefaultIncludedAsync\(int, RequestOptions\)
+### ToggleSaleTypeQuoteAttachmentDefaultIncludedAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_ToggleSaleTypeQuoteAttachmentDefaultIncludedAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Toggle the 'default included' state of a sale type quote attachment
 
@@ -2501,7 +2501,7 @@ Override language/culture codes on this request.
 
 The new state
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_UpdateQuoteVersionPricesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; UpdateQuoteVersionPricesAsync\(int, RequestOptions\)
+### UpdateQuoteVersionPricesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_UpdateQuoteVersionPricesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Update price on the all the quotelines for each alternative in the current quote version
 
@@ -2525,7 +2525,7 @@ Override language/culture codes on this request.
 
 The updated quote version.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IQuoteAgent_ValidateQuoteVersionAsync_System_Int32_SuperOffice_WebApi_Data_QuoteVersionButtonAction_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ValidateQuoteVersionAsync\(int, QuoteVersionButtonAction, RequestOptions\)
+### ValidateQuoteVersionAsync\(int, QuoteVersionButtonAction, RequestOptions\) {#SuperOffice_WebApi_Agents_IQuoteAgent_ValidateQuoteVersionAsync_System_Int32_SuperOffice_WebApi_Data_QuoteVersionButtonAction_SuperOffice_WebApi_RequestOptions_}
 
 When the user changes one or more values in a quoteline or a quoteAlternative, the connector gets to change the QuoteLines and the alternative, for instance calculate VAT. ValidateQuoteVersion shall be called when the user presses the validate button, presses the send button or closes the quote dialog. RecalculateQuoteAlternative should typically validate all alternatives, set values in extrafields, and set the state in the version.
 

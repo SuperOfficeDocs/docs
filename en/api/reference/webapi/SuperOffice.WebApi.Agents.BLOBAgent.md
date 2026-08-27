@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent"&gt;&lt;/a&gt; Class BLOBAgent
+# Class BLOBAgent {#SuperOffice_WebApi_Agents_BLOBAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -69,7 +69,7 @@ using (BLOBAgent agent = new BLOBAgent(mySession))
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; BLOBAgent\(HttpClient\)
+### BLOBAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_BLOBAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: Collection of all services that works with binary objects (BLOBS), e.g. Images and documents.
 
@@ -83,7 +83,7 @@ public BLOBAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; BLOBAgent\(WebApiOptions, HttpClient\)
+### BLOBAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_BLOBAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: Collection of all services that works with binary objects (BLOBS), e.g. Images and documents.
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_ChangeContactImageAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ChangeContactImageAsync\(int, int, RequestOptions\)
+### ChangeContactImageAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_ChangeContactImageAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Changes the contact image link. If the Binary object id is 0, any image link is removed from the contact.
 
@@ -129,7 +129,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_ChangePersonImageAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ChangePersonImageAsync\(int, int, RequestOptions\)
+### ChangePersonImageAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_ChangePersonImageAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 ```csharp
 public Task ChangePersonImageAsync(int personId, int blobId, RequestOptions requestOptions = null)
@@ -153,7 +153,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_ChangeProductImageAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ChangeProductImageAsync\(int, int, RequestOptions\)
+### ChangeProductImageAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_ChangeProductImageAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 ```csharp
 public Task ChangeProductImageAsync(int productId, int blobId, RequestOptions requestOptions = null)
@@ -177,7 +177,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_ChangeProjectImageAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ChangeProjectImageAsync\(int, int, RequestOptions\)
+### ChangeProjectImageAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_ChangeProjectImageAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Changes the project image link. If the Binary object id is 0, any image link is removed from the project.
 
@@ -203,7 +203,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_CleanupBatchTaskAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CleanupBatchTaskAsync\(int, RequestOptions\)
+### CleanupBatchTaskAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_CleanupBatchTaskAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Removes the binary objects linked to the batch task, the links themselves and the batch task.
 
@@ -225,7 +225,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_CreateDefaultBlobEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultBlobEntityAsync\(RequestOptions\)
+### CreateDefaultBlobEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_CreateDefaultBlobEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new BlobEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -246,7 +246,7 @@ Override language/culture codes on this request.
 
 A blank BlobEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_DeleteBlobEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteBlobEntityAsync\(int, RequestOptions\)
+### DeleteBlobEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_DeleteBlobEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the BlobEntity
 
@@ -268,7 +268,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_GetBlobEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetBlobEntityAsync\(int, RequestOptions\)
+### GetBlobEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_GetBlobEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific BlobEntity object.
 
@@ -292,7 +292,7 @@ Override language/culture codes on this request.
 
 BlobEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_GetBlobEntityOnContactAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetBlobEntityOnContactAsync\(int, RequestOptions\)
+### GetBlobEntityOnContactAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_GetBlobEntityOnContactAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets the blob entity that represents the contact image binary object.
 
@@ -316,7 +316,7 @@ Override language/culture codes on this request.
 
 BlobEntity object
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_GetBlobEntityOnCountryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetBlobEntityOnCountryAsync\(int, RequestOptions\)
+### GetBlobEntityOnCountryAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_GetBlobEntityOnCountryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets the blob entity that represents the country flag binary object.
 
@@ -340,7 +340,7 @@ Override language/culture codes on this request.
 
 BlobEntity object
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_GetBlobEntityOnPersonAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetBlobEntityOnPersonAsync\(int, RequestOptions\)
+### GetBlobEntityOnPersonAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_GetBlobEntityOnPersonAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets the blob entity that represents the person image binary object.
 
@@ -364,7 +364,7 @@ Override language/culture codes on this request.
 
 BlobEntity object
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_GetBlobEntityOnProductAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetBlobEntityOnProductAsync\(int, RequestOptions\)
+### GetBlobEntityOnProductAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_GetBlobEntityOnProductAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets the blob entity that represents the product image binary object.
 
@@ -388,7 +388,7 @@ Override language/culture codes on this request.
 
 BlobEntity object
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_GetBlobEntityOnProjectAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetBlobEntityOnProjectAsync\(int, RequestOptions\)
+### GetBlobEntityOnProjectAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_GetBlobEntityOnProjectAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets the blob entity that represents the project image binary object.
 
@@ -412,7 +412,7 @@ Override language/culture codes on this request.
 
 BlobEntity object
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_GetBlobStreamAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetBlobStreamAsync\(int, string, RequestOptions\)
+### GetBlobStreamAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_GetBlobStreamAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get the binary object as a stream
 
@@ -440,7 +440,7 @@ Override language/culture codes on this request.
 
 The binary object as a Stream
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_GetChatImageWithSizeAsync_System_Int32_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetChatImageWithSizeAsync\(int, int, int, string, RequestOptions\)
+### GetChatImageWithSizeAsync\(int, int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_GetChatImageWithSizeAsync_System_Int32_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the chat image that is displayed in chat with a specified maximum size.
 
@@ -476,7 +476,7 @@ Override language/culture codes on this request.
 
 The chat image.
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_GetContactImageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetContactImageAsync\(int, string, RequestOptions\)
+### GetContactImageAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_GetContactImageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the contact image that is displayed in the CRM application.
 
@@ -504,7 +504,7 @@ Override language/culture codes on this request.
 
 The contact image.
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_GetContactImageWithSizeAsync_System_Int32_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetContactImageWithSizeAsync\(int, int, int, string, RequestOptions\)
+### GetContactImageWithSizeAsync\(int, int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_GetContactImageWithSizeAsync_System_Int32_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the contact image that is displayed in the CRM application with a specified maximum size.
 
@@ -540,7 +540,7 @@ Override language/culture codes on this request.
 
 The contact image.
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_GetOutputFromBatchAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetOutputFromBatchAsync\(int, string, RequestOptions\)
+### GetOutputFromBatchAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_GetOutputFromBatchAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get the output of a batchtask as a stream
 
@@ -568,7 +568,7 @@ Override language/culture codes on this request.
 
 The binary object as a Stream.
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_GetPersonImageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPersonImageAsync\(int, string, RequestOptions\)
+### GetPersonImageAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_GetPersonImageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the person image that is displayed in the CRM application.
 
@@ -596,7 +596,7 @@ Override language/culture codes on this request.
 
 The person image.
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_GetPersonImageWithSizeAsync_System_Int32_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPersonImageWithSizeAsync\(int, int, int, string, RequestOptions\)
+### GetPersonImageWithSizeAsync\(int, int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_GetPersonImageWithSizeAsync_System_Int32_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the person image that is displayed in the CRM application with a specified maximum size.
 
@@ -632,7 +632,7 @@ Override language/culture codes on this request.
 
 The person image.
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_GetProductImageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProductImageAsync\(int, string, RequestOptions\)
+### GetProductImageAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_GetProductImageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the product image (rank=1) that is displayed in the CRM application.
 
@@ -660,7 +660,7 @@ Override language/culture codes on this request.
 
 The product image.
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_GetProductThumbnailAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProductThumbnailAsync\(int, string, RequestOptions\)
+### GetProductThumbnailAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_GetProductThumbnailAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the product thumbnail that is displayed in the CRM application.
 
@@ -688,7 +688,7 @@ Override language/culture codes on this request.
 
 The product thumbnail.
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_GetProjectImageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectImageAsync\(int, string, RequestOptions\)
+### GetProjectImageAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_GetProjectImageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the project image that is displayed in the CRM application.
 
@@ -716,7 +716,7 @@ Override language/culture codes on this request.
 
 The project image.
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_GetProjectImageWithSizeAsync_System_Int32_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectImageWithSizeAsync\(int, int, int, string, RequestOptions\)
+### GetProjectImageWithSizeAsync\(int, int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_GetProjectImageWithSizeAsync_System_Int32_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the project image that is displayed in the CRM application with a specified maximum size.
 
@@ -752,7 +752,7 @@ Override language/culture codes on this request.
 
 The project image.
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_GetQuoteLineImageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetQuoteLineImageAsync\(int, string, RequestOptions\)
+### GetQuoteLineImageAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_GetQuoteLineImageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the quoteline image (rank=1) that is displayed in the CRM application.
 
@@ -780,7 +780,7 @@ Override language/culture codes on this request.
 
 The quote line image.
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_SaveBlobEntityAsync_SuperOffice_WebApi_Data_BlobEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveBlobEntityAsync\(BlobEntity, RequestOptions\)
+### SaveBlobEntityAsync\(BlobEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_SaveBlobEntityAsync_SuperOffice_WebApi_Data_BlobEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing BlobEntity or creates a new BlobEntity if the id parameter is 0.
 
@@ -804,7 +804,7 @@ Override language/culture codes on this request.
 
 New or updated BlobEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_SaveImageStreamAsync_SuperOffice_WebApi_Data_BlobLinkType_System_Byte___System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveImageStreamAsync\(BlobLinkType, byte\[\], string, RequestOptions\)
+### SaveImageStreamAsync\(BlobLinkType, byte\[\], string, RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_SaveImageStreamAsync_SuperOffice_WebApi_Data_BlobLinkType_System_Byte___System_String_SuperOffice_WebApi_RequestOptions_}
 
 Stores an image in the database without linking it to a project or a person. It is possible to ChangePersonImage or ChangeProjectImage to attach image later.
 
@@ -836,7 +836,7 @@ Override language/culture codes on this request.
 
 The blob id.
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_SaveProjectImageAsync_System_String_System_Byte___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveProjectImageAsync\(string, byte\[\], RequestOptions\)
+### SaveProjectImageAsync\(string, byte\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_SaveProjectImageAsync_System_String_System_Byte___SuperOffice_WebApi_RequestOptions_}
 
 Saves a project image that is displayed in the CRM application's project image selection dialog to the database.
 
@@ -862,7 +862,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_SetBlobStreamAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetBlobStreamAsync\(int, byte\[\], RequestOptions\)
+### SetBlobStreamAsync\(int, byte\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_SetBlobStreamAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_}
 
 Store a binary object from it's stream
 
@@ -888,7 +888,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_SetContactImageAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetContactImageAsync\(int, byte\[\], RequestOptions\)
+### SetContactImageAsync\(int, byte\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_SetContactImageAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_}
 
 Stores the contact image that is displayed in the CRM application.
 
@@ -914,7 +914,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_SetPersonImageAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetPersonImageAsync\(int, byte\[\], RequestOptions\)
+### SetPersonImageAsync\(int, byte\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_SetPersonImageAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_}
 
 Stores the person image that is displayed in the CRM application.
 
@@ -940,7 +940,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_SetProductImageAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetProductImageAsync\(int, byte\[\], RequestOptions\)
+### SetProductImageAsync\(int, byte\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_SetProductImageAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_}
 
 Stores the product image that is displayed in the CRM application. The image is scaled down to max 1000x1000. This method operates only the main (rank=1) image; future extensions may support multiple images. A thumbnail of size 75x75 is also automatically set.
 
@@ -966,7 +966,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_SetProductThumbnailAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetProductThumbnailAsync\(int, byte\[\], RequestOptions\)
+### SetProductThumbnailAsync\(int, byte\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_SetProductThumbnailAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_}
 
 Stores the product thumbnail that is displayed in the CRM application. The image is scaled down to max 200x200 pixels.
 
@@ -992,7 +992,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_BLOBAgent_SetProjectImageAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetProjectImageAsync\(int, byte\[\], RequestOptions\)
+### SetProjectImageAsync\(int, byte\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_BLOBAgent_SetProjectImageAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_}
 
 Stores the project image that is displayed in the CRM application.
 

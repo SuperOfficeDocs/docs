@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Data_TimeZoneRuleDictionary"&gt;&lt;/a&gt; Class TimeZoneRuleDictionary
+# Class TimeZoneRuleDictionary {#SuperOffice_WebApi_Data_TimeZoneRuleDictionary}
 
 Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -60,7 +60,7 @@ public class TimeZoneRuleDictionary : Dictionary<DateTime, TimeZoneRule>, IDicti
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Data_TimeZoneRuleDictionary__ctor"&gt;&lt;/a&gt; TimeZoneRuleDictionary\(\)
+### TimeZoneRuleDictionary\(\) {#SuperOffice_WebApi_Data_TimeZoneRuleDictionary__ctor}
 
 Default constructor
 
@@ -70,7 +70,7 @@ public TimeZoneRuleDictionary()
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Data_TimeZoneRuleDictionary_ToString_System_String_"&gt;&lt;/a&gt; ToString\(string\)
+### ToString\(string\) {#SuperOffice_WebApi_Data_TimeZoneRuleDictionary_ToString_System_String_}
 
 ```csharp
 public string ToString(string prefix)

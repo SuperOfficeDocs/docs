@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_IBulkUpdateAgent"&gt;&lt;/a&gt; Interface IBulkUpdateAgent
+# Interface IBulkUpdateAgent {#SuperOffice_WebApi_Agents_IBulkUpdateAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface IBulkUpdateAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_IBulkUpdateAgent_ExecuteByEntityIdsAsync_SuperOffice_WebApi_Data_FieldValueInfo___System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ExecuteByEntityIdsAsync\(FieldValueInfo\[\], string, string, string, RequestOptions\)
+### ExecuteByEntityIdsAsync\(FieldValueInfo\[\], string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IBulkUpdateAgent_ExecuteByEntityIdsAsync_SuperOffice_WebApi_Data_FieldValueInfo___System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Do the batchupdate on selected
 
@@ -52,7 +52,7 @@ Override language/culture codes on this request.
 
 Return batchtaskinfoid
 
-### &lt;a id="SuperOffice_WebApi_Agents_IBulkUpdateAgent_ExecuteBySelectionIdAsync_SuperOffice_WebApi_Data_FieldValueInfo___System_String_System_String_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ExecuteBySelectionIdAsync\(FieldValueInfo\[\], string, string, int, bool, RequestOptions\)
+### ExecuteBySelectionIdAsync\(FieldValueInfo\[\], string, string, int, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IBulkUpdateAgent_ExecuteBySelectionIdAsync_SuperOffice_WebApi_Data_FieldValueInfo___System_String_System_String_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Do the batchupdate on this selection
 
@@ -92,7 +92,7 @@ Override language/culture codes on this request.
 
 Return batchtaskinfoid
 
-### &lt;a id="SuperOffice_WebApi_Agents_IBulkUpdateAgent_GetAvailableFieldsAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAvailableFieldsAsync\(string, RequestOptions\)
+### GetAvailableFieldsAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IBulkUpdateAgent_GetAvailableFieldsAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get all available fields for a given tablename/entity
 
@@ -116,7 +116,7 @@ Override language/culture codes on this request.
 
 Returns array of the available fields for the given entity
 
-### &lt;a id="SuperOffice_WebApi_Agents_IBulkUpdateAgent_GetJobResultAsJsonFromBinaryObjectIdAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetJobResultAsJsonFromBinaryObjectIdAsync\(string, int, RequestOptions\)
+### GetJobResultAsJsonFromBinaryObjectIdAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IBulkUpdateAgent_GetJobResultAsJsonFromBinaryObjectIdAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get result of the batchupdate job
 
@@ -144,7 +144,7 @@ Override language/culture codes on this request.
 
 Result of job as json
 
-### &lt;a id="SuperOffice_WebApi_Agents_IBulkUpdateAgent_GetJobResultsFromStorageAsJsonAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetJobResultsFromStorageAsJsonAsync\(RequestOptions\)
+### GetJobResultsFromStorageAsJsonAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IBulkUpdateAgent_GetJobResultsFromStorageAsJsonAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get result of the batchupdate job
 
@@ -164,7 +164,7 @@ Override language/culture codes on this request.
 
 Result of job as json
 
-### &lt;a id="SuperOffice_WebApi_Agents_IBulkUpdateAgent_GetStoredFieldsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetStoredFieldsAsync\(string, string, RequestOptions\)
+### GetStoredFieldsAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IBulkUpdateAgent_GetStoredFieldsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get all stored fields for a given tablename/entity and context
 
@@ -192,7 +192,7 @@ Override language/culture codes on this request.
 
 Returns array of the stored or default fields for the given entity
 
-### &lt;a id="SuperOffice_WebApi_Agents_IBulkUpdateAgent_RemoveStoredFieldsAndGetDefaultFieldsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveStoredFieldsAndGetDefaultFieldsAsync\(string, string, RequestOptions\)
+### RemoveStoredFieldsAndGetDefaultFieldsAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IBulkUpdateAgent_RemoveStoredFieldsAndGetDefaultFieldsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Remove the stored settings of the bulk update for this table from this context, to get the default settings instead
 
@@ -220,7 +220,7 @@ Override language/culture codes on this request.
 
 Returns array of the available fields for the given tablename
 
-### &lt;a id="SuperOffice_WebApi_Agents_IBulkUpdateAgent_RemoveStoredFieldsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; RemoveStoredFieldsAsync\(string, string, RequestOptions\)
+### RemoveStoredFieldsAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IBulkUpdateAgent_RemoveStoredFieldsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Remove the stored settings of the bulk update for this table from this context
 
