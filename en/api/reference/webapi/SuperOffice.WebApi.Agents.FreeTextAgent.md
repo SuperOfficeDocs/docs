@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_Agents_FreeTextAgent"></a> Class FreeTextAgent
+# Class FreeTextAgent {#SuperOffice_WebApi_Agents_FreeTextAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -38,7 +38,7 @@ public class FreeTextAgent : AgentBase, IFreeTextAgent, IAgentBase, IDisposable
 [AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequestObjectWithStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
 [AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequest\_System\_Net\_Http\_HttpRequestMessage\_SuperOffice\_WebApi\_RequestOptions\_), 
 [AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ThrowOnResponseErrorAsync\_System\_Net\_Http\_HttpRequestMessage\_System\_Net\_Http\_HttpResponseMessage\_), 
-[AgentBase.ParseResponse<T\>\(HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseResponse\_\_1\_System\_Net\_Http\_HttpResponseMessage\_), 
+[AgentBase.ParseResponse&lt;T\&gt;\(HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseResponse\_\_1\_System\_Net\_Http\_HttpResponseMessage\_), 
 [AgentBase.Finally\(RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Finally\_SuperOffice\_WebApi\_RequestOptions\_), 
 [AgentBase.Dispose\(\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Dispose), 
 [AgentBase.Configuration](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Configuration), 
@@ -57,19 +57,19 @@ public class FreeTextAgent : AgentBase, IFreeTextAgent, IAgentBase, IDisposable
 
 ## Examples
 
-<pre><code class="lang-csharp">using SuperOffice.WebApi;
+&lt;pre&gt;&lt;code class="lang-csharp"&gt;using SuperOffice.WebApi;
 using SuperOffice.WebApi.Agents;
 
 var mySession = new WebApiOptions("http://example.com/super/api");
 mySession.Authorization = new AuthorizationUsernamePassword("user", "pass");
 using (FreeTextAgent agent = new FreeTextAgent(mySession))
-{
+\{
       // call methods on agent here...
-}</code></pre>
+\}&lt;/code&gt;&lt;/pre&gt;
 
 ## Constructors
 
-### <a id="SuperOffice_WebApi_Agents_FreeTextAgent__ctor_System_Net_Http_HttpClient_"></a> FreeTextAgent\(HttpClient\)
+### FreeTextAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_FreeTextAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: This agent can be used to manage the free text system
 
@@ -83,7 +83,7 @@ public FreeTextAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### <a id="SuperOffice_WebApi_Agents_FreeTextAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"></a> FreeTextAgent\(WebApiOptions, HttpClient\)
+### FreeTextAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_FreeTextAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: This agent can be used to manage the free text system
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_FreeTextAgent_FreetextIndexRowsAsync_System_String_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> FreetextIndexRowsAsync\(string, int\[\], RequestOptions\)
+### FreetextIndexRowsAsync\(string, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_FreeTextAgent_FreetextIndexRowsAsync_System_String_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Update the freetext index for one or more rows from the same table
 
@@ -131,7 +131,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_FreeTextAgent_GetStatusAsync_SuperOffice_WebApi_RequestOptions_"></a> GetStatusAsync\(RequestOptions\)
+### GetStatusAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_FreeTextAgent_GetStatusAsync_SuperOffice_WebApi_RequestOptions_}
 
 Returns status for the freetext search words
 
@@ -147,11 +147,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FreeText](SuperOffice.WebApi.Data.FreeText.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FreeText](SuperOffice.WebApi.Data.FreeText.md)\&gt;
 
 The freetext status
 
-### <a id="SuperOffice_WebApi_Agents_FreeTextAgent_RegenerateIndexAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> RegenerateIndexAsync\(bool, RequestOptions\)
+### RegenerateIndexAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_FreeTextAgent_RegenerateIndexAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Wipe and regenerate the freetext index by scanning the database (freetext search will be unavailable while this operation runs
 
@@ -171,11 +171,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BatchTaskInfo](SuperOffice.WebApi.Data.BatchTaskInfo.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BatchTaskInfo](SuperOffice.WebApi.Data.BatchTaskInfo.md)\&gt;
 
 Information about the batch task, if batch execution was requested. Otherwise null
 
-### <a id="SuperOffice_WebApi_Agents_FreeTextAgent_SetEnabledAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> SetEnabledAsync\(bool, RequestOptions\)
+### SetEnabledAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_FreeTextAgent_SetEnabledAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Sets freetext search to enabled (true) or disabled (false)
 
@@ -199,7 +199,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_FreeTextAgent_SetMultiWordOperatorAsync_SuperOffice_WebApi_Data_FreeTextOperator_SuperOffice_WebApi_RequestOptions_"></a> SetMultiWordOperatorAsync\(FreeTextOperator, RequestOptions\)
+### SetMultiWordOperatorAsync\(FreeTextOperator, RequestOptions\) {#SuperOffice_WebApi_Agents_FreeTextAgent_SetMultiWordOperatorAsync_SuperOffice_WebApi_Data_FreeTextOperator_SuperOffice_WebApi_RequestOptions_}
 
 Sets the operator used when matching multiple words
 
@@ -223,7 +223,7 @@ Override language/culture codes on this request.
 
 No return value
 
-### <a id="SuperOffice_WebApi_Agents_FreeTextAgent_SetSingleWordOperatorAsync_SuperOffice_WebApi_Data_FreeTextOperator_SuperOffice_WebApi_RequestOptions_"></a> SetSingleWordOperatorAsync\(FreeTextOperator, RequestOptions\)
+### SetSingleWordOperatorAsync\(FreeTextOperator, RequestOptions\) {#SuperOffice_WebApi_Agents_FreeTextAgent_SetSingleWordOperatorAsync_SuperOffice_WebApi_Data_FreeTextOperator_SuperOffice_WebApi_RequestOptions_}
 
 Sets the operator used when matching single words
 

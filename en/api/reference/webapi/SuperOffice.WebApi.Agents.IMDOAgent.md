@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_Agents_IMDOAgent"></a> Interface IMDOAgent
+# Interface IMDOAgent {#SuperOffice_WebApi_Agents_IMDOAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface IMDOAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_IMDOAgent_GetListAsync_System_String_System_Boolean_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetListAsync\(string, bool, string, bool, RequestOptions\)
+### GetListAsync\(string, bool, string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IMDOAgent_GetListAsync_System_String_System_Boolean_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Method to get a MDO list.
 
@@ -48,11 +48,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MDOListItem](SuperOffice.WebApi.Data.MDOListItem.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MDOListItem](SuperOffice.WebApi.Data.MDOListItem.md)\[\]\&gt;
 
 Array of MDOListItem
 
-### <a id="SuperOffice_WebApi_Agents_IMDOAgent_GetListIdByListNameAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetListIdByListNameAsync\(string, RequestOptions\)
+### GetListIdByListNameAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IMDOAgent_GetListIdByListNameAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Retrieve the UdListDefinition id of a list, by its name. Not all lists have such an ID, but those that are based on tables do (the list name is then the same as the table name)
 
@@ -72,11 +72,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
 
 List id in the UdListDefinition table
 
-### <a id="SuperOffice_WebApi_Agents_IMDOAgent_GetListItemAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetListItemAsync\(string, int, RequestOptions\)
+### GetListItemAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IMDOAgent_GetListItemAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns a single list item
 
@@ -100,11 +100,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MDOListItem](SuperOffice.WebApi.Data.MDOListItem.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MDOListItem](SuperOffice.WebApi.Data.MDOListItem.md)\&gt;
 
 Single MDO list item
 
-### <a id="SuperOffice_WebApi_Agents_IMDOAgent_GetListNamesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetListNamesAsync\(RequestOptions\)
+### GetListNamesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IMDOAgent_GetListNamesAsync_SuperOffice_WebApi_RequestOptions_}
 
 Returns a list of all MDO List names. These names can also be used with the Archive agent as ProviderNames.
 
@@ -120,11 +120,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\[\]\&gt;
 
 Array of list names.
 
-### <a id="SuperOffice_WebApi_Agents_IMDOAgent_GetListWithHistoryAsync_System_String_System_Boolean_System_String_System_Int32___System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetListWithHistoryAsync\(string, bool, string, int\[\], bool, RequestOptions\)
+### GetListWithHistoryAsync\(string, bool, string, int\[\], bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IMDOAgent_GetListWithHistoryAsync_System_String_System_Boolean_System_String_System_Int32___System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Method to get a MDO list with own history list.
 
@@ -160,11 +160,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MDOListItem](SuperOffice.WebApi.Data.MDOListItem.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MDOListItem](SuperOffice.WebApi.Data.MDOListItem.md)\[\]\&gt;
 
 Array of MDOListItem
 
-### <a id="SuperOffice_WebApi_Agents_IMDOAgent_GetListWithRestrictionAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetListWithRestrictionAsync\(string, string, string, RequestOptions\)
+### GetListWithRestrictionAsync\(string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IMDOAgent_GetListWithRestrictionAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Method to get a MDO list with restrictions.
 
@@ -192,11 +192,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MDOListItem](SuperOffice.WebApi.Data.MDOListItem.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MDOListItem](SuperOffice.WebApi.Data.MDOListItem.md)\[\]\&gt;
 
 Array of MDOListItem
 
-### <a id="SuperOffice_WebApi_Agents_IMDOAgent_GetSelectableListAsync_System_String_System_Boolean_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetSelectableListAsync\(string, bool, string, bool, RequestOptions\)
+### GetSelectableListAsync\(string, bool, string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IMDOAgent_GetSelectableListAsync_System_String_System_Boolean_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Method to get a Selectable MDO list.
 
@@ -228,11 +228,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]\&gt;
 
 Array of SelectableMDOListItem
 
-### <a id="SuperOffice_WebApi_Agents_IMDOAgent_GetSelectableListWithHistoryAsync_System_String_System_Boolean_System_String_System_Int32___System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetSelectableListWithHistoryAsync\(string, bool, string, int\[\], bool, RequestOptions\)
+### GetSelectableListWithHistoryAsync\(string, bool, string, int\[\], bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IMDOAgent_GetSelectableListWithHistoryAsync_System_String_System_Boolean_System_String_System_Int32___System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Method to get a Selectable MDO list with own history list.
 
@@ -268,11 +268,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]\&gt;
 
 Array of SelectableMDOListItem
 
-### <a id="SuperOffice_WebApi_Agents_IMDOAgent_GetSelectableListWithRestrictionAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetSelectableListWithRestrictionAsync\(string, string, string, RequestOptions\)
+### GetSelectableListWithRestrictionAsync\(string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IMDOAgent_GetSelectableListWithRestrictionAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Method to get a Selectable MDO list with restrictions.
 
@@ -300,11 +300,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]\&gt;
 
 Array of SelectableMDOListItem
 
-### <a id="SuperOffice_WebApi_Agents_IMDOAgent_GetSelectableSimpleListAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetSelectableSimpleListAsync\(string, RequestOptions\)
+### GetSelectableSimpleListAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IMDOAgent_GetSelectableSimpleListAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Method returns a flat Selectable MDO List.
 
@@ -324,11 +324,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]\&gt;
 
 Array of SelectableMDOListItem
 
-### <a id="SuperOffice_WebApi_Agents_IMDOAgent_GetSimpleListAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetSimpleListAsync\(string, RequestOptions\)
+### GetSimpleListAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IMDOAgent_GetSimpleListAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Method returns a simple flat MDO List.
 
@@ -348,11 +348,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MDOListItem](SuperOffice.WebApi.Data.MDOListItem.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MDOListItem](SuperOffice.WebApi.Data.MDOListItem.md)\[\]\&gt;
 
 Array of MDOListItem
 
-### <a id="SuperOffice_WebApi_Agents_IMDOAgent_SetSelectedAsync_System_String_System_String_SuperOffice_WebApi_Data_SelectableMDOListItem___SuperOffice_WebApi_RequestOptions_"></a> SetSelectedAsync\(string, string, SelectableMDOListItem\[\], RequestOptions\)
+### SetSelectedAsync\(string, string, SelectableMDOListItem\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IMDOAgent_SetSelectedAsync_System_String_System_String_SuperOffice_WebApi_Data_SelectableMDOListItem___SuperOffice_WebApi_RequestOptions_}
 
 Saves the selected values as selected by their given list representation.
 
@@ -380,7 +380,7 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]\&gt;
 
 Array of updated SelectableMDOListItems
 

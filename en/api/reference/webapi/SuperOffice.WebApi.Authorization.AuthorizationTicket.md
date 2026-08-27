@@ -1,9 +1,9 @@
-# <a id="SuperOffice_WebApi_Authorization_AuthorizationTicket"></a> Class AuthorizationTicket
+# Class AuthorizationTicket {#SuperOffice_WebApi_Authorization_AuthorizationTicket}
 
 Namespace: [SuperOffice.WebApi.Authorization](SuperOffice.WebApi.Authorization.md)  
 Assembly: SuperOffice.WebApi.Authorization.dll  
 
-SOTicket for use in onsite scenarios. See also <xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"></xref>.
+SOTicket for use in onsite scenarios. See also &lt;xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
 
 ```csharp
 public class AuthorizationTicket : IAuthorization
@@ -30,7 +30,7 @@ public class AuthorizationTicket : IAuthorization
 
 ## Constructors
 
-### <a id="SuperOffice_WebApi_Authorization_AuthorizationTicket__ctor_System_String_"></a> AuthorizationTicket\(string\)
+### AuthorizationTicket\(string\) {#SuperOffice_WebApi_Authorization_AuthorizationTicket__ctor_System_String_}
 
 Ticket Authorization constructor used in CRM onsite scenario's.
 
@@ -46,9 +46,9 @@ SOTicket string: "7T:abc123=="
 
 ## Properties
 
-### <a id="SuperOffice_WebApi_Authorization_AuthorizationTicket_RefreshAuthorizationAsync"></a> RefreshAuthorizationAsync
+### RefreshAuthorizationAsync {#SuperOffice_WebApi_Authorization_AuthorizationTicket_RefreshAuthorizationAsync}
 
-Try to refresh this <xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"></xref> instance.
+Try to refresh this &lt;xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instance.
 
 ```csharp
 public Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync { get; set; }
@@ -56,9 +56,9 @@ public Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync
 
 #### Property Value
 
- [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)<[ReAuthorizationArgs](SuperOffice.WebApi.Authorization.ReAuthorizationArgs.md), [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[IAuthorization](SuperOffice.WebApi.Authorization.IAuthorization.md)\>\>
+ [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)&lt;[ReAuthorizationArgs](SuperOffice.WebApi.Authorization.ReAuthorizationArgs.md), [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[IAuthorization](SuperOffice.WebApi.Authorization.IAuthorization.md)\&gt;\&gt;
 
-### <a id="SuperOffice_WebApi_Authorization_AuthorizationTicket_Ticket"></a> Ticket
+### Ticket {#SuperOffice_WebApi_Authorization_AuthorizationTicket_Ticket}
 
 The SOTicket value.
 
@@ -72,7 +72,7 @@ protected string Ticket { get; set; }
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Authorization_AuthorizationTicket_GetAuthorization"></a> GetAuthorization\(\)
+### GetAuthorization\(\) {#SuperOffice_WebApi_Authorization_AuthorizationTicket_GetAuthorization}
 
 Gets a tuple that represents authorization scheme and parameter for an SOTicket.
 
@@ -84,5 +84,5 @@ public AuthenticationHeaderValue GetAuthorization()
 
  [AuthenticationHeaderValue](https://learn.microsoft.com/dotnet/api/system.net.http.headers.authenticationheadervalue)
 
-Gets a <xref href="System.Tuple%602" data-throw-if-not-resolved="false"></xref> (string,string) where scheme is SOTicket and parameter is SOTicket string.
+Gets a &lt;xref href="System.Tuple%602" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; (string,string) where scheme is SOTicket and parameter is SOTicket string.
 

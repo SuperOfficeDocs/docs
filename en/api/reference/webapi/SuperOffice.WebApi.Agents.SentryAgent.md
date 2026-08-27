@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_Agents_SentryAgent"></a> Class SentryAgent
+# Class SentryAgent {#SuperOffice_WebApi_Agents_SentryAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -38,7 +38,7 @@ public class SentryAgent : AgentBase, ISentryAgent, IAgentBase, IDisposable
 [AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequestObjectWithStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
 [AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequest\_System\_Net\_Http\_HttpRequestMessage\_SuperOffice\_WebApi\_RequestOptions\_), 
 [AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ThrowOnResponseErrorAsync\_System\_Net\_Http\_HttpRequestMessage\_System\_Net\_Http\_HttpResponseMessage\_), 
-[AgentBase.ParseResponse<T\>\(HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseResponse\_\_1\_System\_Net\_Http\_HttpResponseMessage\_), 
+[AgentBase.ParseResponse&lt;T\&gt;\(HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseResponse\_\_1\_System\_Net\_Http\_HttpResponseMessage\_), 
 [AgentBase.Finally\(RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Finally\_SuperOffice\_WebApi\_RequestOptions\_), 
 [AgentBase.Dispose\(\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Dispose), 
 [AgentBase.Configuration](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Configuration), 
@@ -57,19 +57,19 @@ public class SentryAgent : AgentBase, ISentryAgent, IAgentBase, IDisposable
 
 ## Examples
 
-<pre><code class="lang-csharp">using SuperOffice.WebApi;
+&lt;pre&gt;&lt;code class="lang-csharp"&gt;using SuperOffice.WebApi;
 using SuperOffice.WebApi.Agents;
 
 var mySession = new WebApiOptions("http://example.com/super/api");
 mySession.Authorization = new AuthorizationUsernamePassword("user", "pass");
 using (SentryAgent agent = new SentryAgent(mySession))
-{
+\{
       // call methods on agent here...
-}</code></pre>
+\}&lt;/code&gt;&lt;/pre&gt;
 
 ## Constructors
 
-### <a id="SuperOffice_WebApi_Agents_SentryAgent__ctor_System_Net_Http_HttpClient_"></a> SentryAgent\(HttpClient\)
+### SentryAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_SentryAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: Data and function right queries
 
@@ -83,7 +83,7 @@ public SentryAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### <a id="SuperOffice_WebApi_Agents_SentryAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"></a> SentryAgent\(WebApiOptions, HttpClient\)
+### SentryAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_SentryAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: Data and function right queries
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_SentryAgent_CanCreateAppointmentInAllDiariesAsync_SuperOffice_WebApi_RequestOptions_"></a> CanCreateAppointmentInAllDiariesAsync\(RequestOptions\)
+### CanCreateAppointmentInAllDiariesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_SentryAgent_CanCreateAppointmentInAllDiariesAsync_SuperOffice_WebApi_RequestOptions_}
 
 CanCreateAppointmentInAllDiaries will check if the current associate can create appointments in diaries belonging all other associates. CanCreateAppointmentInAssociateDiaries will only check against associates that are diary owners.
 
@@ -119,11 +119,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 Returns true if the current associate can create appointments in the diary of all the other associates, otherwise false.
 
-### <a id="SuperOffice_WebApi_Agents_SentryAgent_CanCreateAppointmentInAssociateDiariesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> CanCreateAppointmentInAssociateDiariesAsync\(int\[\], RequestOptions\)
+### CanCreateAppointmentInAssociateDiariesAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_SentryAgent_CanCreateAppointmentInAssociateDiariesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 CanCreateAppointmentInAssociateDiaries will check if the current associate can create appointments in diaries belonging to the associates listed in associateIds. CanCreateAppointmentInAssociateDiaries will only check against associates that are diary owners. If none of the associates listed in the associateIds parameter is a diary owner, the method will return true.
 
@@ -143,11 +143,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 Returns true if the current associate can create appointments in the diary of all the other associates, otherwise false.
 
-### <a id="SuperOffice_WebApi_Agents_SentryAgent_CanCreateAppointmentInEachAssociatesDiaryAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> CanCreateAppointmentInEachAssociatesDiaryAsync\(int\[\], RequestOptions\)
+### CanCreateAppointmentInEachAssociatesDiaryAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_SentryAgent_CanCreateAppointmentInEachAssociatesDiaryAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 CanCreateAppointmentInEachAssociateDiary will check if the current associate can create appointments in diaries belonging to the associates listed in associateIds. CanCreateAppointmentInEachAssociateDiary will only check against associates that are diary owners. If none of the associates listed in the associateIds parameter is a diary owner, the method will return true.
 
@@ -167,11 +167,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\[\]\&gt;
 
 Returns true if for each given associate if the current associate can create appointments in that diary, otherwise false.
 
-### <a id="SuperOffice_WebApi_Agents_SentryAgent_GetFunctionRightsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetFunctionRightsAsync\(RequestOptions\)
+### GetFunctionRightsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_SentryAgent_GetFunctionRightsAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get a string array of all functions rights for the role of the current associate.
 
@@ -187,11 +187,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\[\]\&gt;
 
 String array with the technical names of assigned function rights
 
-### <a id="SuperOffice_WebApi_Agents_SentryAgent_GetNewTableRightAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetNewTableRightAsync\(string, RequestOptions\)
+### GetNewTableRightAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_SentryAgent_GetNewTableRightAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns a TableRight for a new row based on tableName parameter.
 
@@ -211,11 +211,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TableRight](SuperOffice.WebApi.Data.TableRight.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TableRight](SuperOffice.WebApi.Data.TableRight.md)\&gt;
 
 The TableRight
 
-### <a id="SuperOffice_WebApi_Agents_SentryAgent_GetTableRightByContactOwnershipAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTableRightByContactOwnershipAsync\(string, int, RequestOptions\)
+### GetTableRightByContactOwnershipAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_SentryAgent_GetTableRightByContactOwnershipAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Return the TableRight from the relationship between the current user and the given user and group.
 
@@ -239,11 +239,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TableRight](SuperOffice.WebApi.Data.TableRight.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TableRight](SuperOffice.WebApi.Data.TableRight.md)\&gt;
 
 The TableRight
 
-### <a id="SuperOffice_WebApi_Agents_SentryAgent_GetTableRightByOwnershipAsync_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTableRightByOwnershipAsync\(string, int, int, RequestOptions\)
+### GetTableRightByOwnershipAsync\(string, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_SentryAgent_GetTableRightByOwnershipAsync_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Return the TableRight from the relationship between the current user and the given user and group.
 
@@ -271,11 +271,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TableRight](SuperOffice.WebApi.Data.TableRight.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TableRight](SuperOffice.WebApi.Data.TableRight.md)\&gt;
 
 The TableRight
 
-### <a id="SuperOffice_WebApi_Agents_SentryAgent_HasFunctionRightAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> HasFunctionRightAsync\(string, RequestOptions\)
+### HasFunctionRightAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_SentryAgent_HasFunctionRightAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get a boolean value indicating if the current user has the functional right.
 
@@ -295,5 +295,5 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 

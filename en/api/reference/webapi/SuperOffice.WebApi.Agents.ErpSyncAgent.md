@@ -1,11 +1,11 @@
-# <a id="SuperOffice_WebApi_Agents_ErpSyncAgent"></a> Class ErpSyncAgent
+# Class ErpSyncAgent {#SuperOffice_WebApi_Agents_ErpSyncAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Services for the ERP Integration Services feature
-<p></p>
-<b>Online Restricted:</b> This agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; This agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public class ErpSyncAgent : AgentBase, IErpSyncAgent, IAgentBase, IDisposable
@@ -40,7 +40,7 @@ public class ErpSyncAgent : AgentBase, IErpSyncAgent, IAgentBase, IDisposable
 [AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequestObjectWithStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
 [AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequest\_System\_Net\_Http\_HttpRequestMessage\_SuperOffice\_WebApi\_RequestOptions\_), 
 [AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ThrowOnResponseErrorAsync\_System\_Net\_Http\_HttpRequestMessage\_System\_Net\_Http\_HttpResponseMessage\_), 
-[AgentBase.ParseResponse<T\>\(HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseResponse\_\_1\_System\_Net\_Http\_HttpResponseMessage\_), 
+[AgentBase.ParseResponse&lt;T\&gt;\(HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseResponse\_\_1\_System\_Net\_Http\_HttpResponseMessage\_), 
 [AgentBase.Finally\(RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Finally\_SuperOffice\_WebApi\_RequestOptions\_), 
 [AgentBase.Dispose\(\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Dispose), 
 [AgentBase.Configuration](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Configuration), 
@@ -59,19 +59,19 @@ public class ErpSyncAgent : AgentBase, IErpSyncAgent, IAgentBase, IDisposable
 
 ## Examples
 
-<pre><code class="lang-csharp">using SuperOffice.WebApi;
+&lt;pre&gt;&lt;code class="lang-csharp"&gt;using SuperOffice.WebApi;
 using SuperOffice.WebApi.Agents;
 
 var mySession = new WebApiOptions("http://example.com/super/api");
 mySession.Authorization = new AuthorizationUsernamePassword("user", "pass");
 using (ErpSyncAgent agent = new ErpSyncAgent(mySession))
-{
+\{
       // call methods on agent here...
-}</code></pre>
+\}&lt;/code&gt;&lt;/pre&gt;
 
 ## Constructors
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent__ctor_System_Net_Http_HttpClient_"></a> ErpSyncAgent\(HttpClient\)
+### ErpSyncAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_ErpSyncAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: Services for the ERP Integration Services feature
 
@@ -85,7 +85,7 @@ public ErpSyncAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"></a> ErpSyncAgent\(WebApiOptions, HttpClient\)
+### ErpSyncAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_ErpSyncAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: Services for the ERP Integration Services feature
 
@@ -105,11 +105,11 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_BreakActorLinkAsync_System_Int32_System_Int32_SuperOffice_WebApi_Data_CrmActorType_SuperOffice_WebApi_RequestOptions_"></a> BreakActorLinkAsync\(int, int, CrmActorType, RequestOptions\)
+### BreakActorLinkAsync\(int, int, CrmActorType, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_BreakActorLinkAsync_System_Int32_System_Int32_SuperOffice_WebApi_Data_CrmActorType_SuperOffice_WebApi_RequestOptions_}
 
 Remove the link between a CRM entity and an ERP entity
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<bool> BreakActorLinkAsync(int erpConnectionId, int crmRecordId, CrmActorType crmActorType, RequestOptions requestOptions = null)
@@ -135,15 +135,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 True if success
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_CanDeleteErpSyncConnectorEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> CanDeleteErpSyncConnectorEntityAsync\(int, RequestOptions\)
+### CanDeleteErpSyncConnectorEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_CanDeleteErpSyncConnectorEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Can we delete the connector?
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<ErpSyncResponseCode> CanDeleteErpSyncConnectorEntityAsync(int erpSyncConnectorId, RequestOptions requestOptions = null)
@@ -161,15 +161,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ErpSyncResponseCode](SuperOffice.WebApi.Data.ErpSyncResponseCode.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncResponseCode](SuperOffice.WebApi.Data.ErpSyncResponseCode.md)\&gt;
 
 Enum response says ok or what is wrong
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_ChangeEngineIntervalAsync_System_TimeSpan_SuperOffice_WebApi_RequestOptions_"></a> ChangeEngineIntervalAsync\(TimeSpan, RequestOptions\)
+### ChangeEngineIntervalAsync\(TimeSpan, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_ChangeEngineIntervalAsync_System_TimeSpan_SuperOffice_WebApi_RequestOptions_}
 
 Change the interval for each run of the Sync Engine
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task ChangeEngineIntervalAsync(TimeSpan interval, RequestOptions requestOptions = null)
@@ -189,11 +189,11 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_ChangeEngineStatusAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> ChangeEngineStatusAsync\(bool, RequestOptions\)
+### ChangeEngineStatusAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_ChangeEngineStatusAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Change the current running/stopped status of the Sync engine
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<ErpSyncEngineStatus> ChangeEngineStatusAsync(bool run, RequestOptions requestOptions = null)
@@ -211,15 +211,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ErpSyncEngineStatus](SuperOffice.WebApi.Data.ErpSyncEngineStatus.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncEngineStatus](SuperOffice.WebApi.Data.ErpSyncEngineStatus.md)\&gt;
 
 The current status of the engine
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_ConnectActorAsync_System_Int32_System_Int32_SuperOffice_WebApi_Data_CrmActorType_System_String_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_Data_ErpSyncFieldValue___SuperOffice_WebApi_RequestOptions_"></a> ConnectActorAsync\(int, int, CrmActorType, string, ErpActorType, ErpSyncFieldValue\[\], RequestOptions\)
+### ConnectActorAsync\(int, int, CrmActorType, string, ErpActorType, ErpSyncFieldValue\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_ConnectActorAsync_System_Int32_System_Int32_SuperOffice_WebApi_Data_CrmActorType_System_String_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_Data_ErpSyncFieldValue___SuperOffice_WebApi_RequestOptions_}
 
 Create a link between Erp and Crm and set default values
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task ConnectActorAsync(int erpConnectionId, int crmRecordId, CrmActorType crmActorType, string erpKey, ErpActorType erpActorType, ErpSyncFieldValue[] fieldValues, RequestOptions requestOptions = null)
@@ -257,11 +257,11 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_CreateActorLinkAsync_System_Int32_System_Int32_SuperOffice_WebApi_Data_CrmActorType_System_String_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_"></a> CreateActorLinkAsync\(int, int, CrmActorType, string, ErpActorType, RequestOptions\)
+### CreateActorLinkAsync\(int, int, CrmActorType, string, ErpActorType, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_CreateActorLinkAsync_System_Int32_System_Int32_SuperOffice_WebApi_Data_CrmActorType_System_String_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_}
 
 Link a crm entity to an erp entity
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<bool> CreateActorLinkAsync(int erpConnectionId, int crmRecordId, CrmActorType crmActorType, string erpKey, ErpActorType erpActorType, RequestOptions requestOptions = null)
@@ -295,11 +295,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 True if success
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_CreateDefaultErpSyncConnectorEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultErpSyncConnectorEntityAsync\(RequestOptions\)
+### CreateDefaultErpSyncConnectorEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_CreateDefaultErpSyncConnectorEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new ErpSyncConnectorEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -316,15 +316,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ErpSyncConnectorEntity](SuperOffice.WebApi.Data.ErpSyncConnectorEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncConnectorEntity](SuperOffice.WebApi.Data.ErpSyncConnectorEntity.md)\&gt;
 
 A blank ErpSyncConnectorEntity
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_CreateErpActorFromCrmAsync_System_Int32_System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_Data_CrmActorType_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_"></a> CreateErpActorFromCrmAsync\(int, int, ErpActorType, CrmActorType, StringDictionary, RequestOptions\)
+### CreateErpActorFromCrmAsync\(int, int, ErpActorType, CrmActorType, StringDictionary, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_CreateErpActorFromCrmAsync_System_Int32_System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_Data_CrmActorType_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_}
 
 Create ErpActor from crm entity
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<bool> CreateErpActorFromCrmAsync(int connectionId, int crmEntityId, ErpActorType erpActorType, CrmActorType crmActorType, StringDictionary erpFieldKeyValues, RequestOptions requestOptions = null)
@@ -358,15 +358,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 Created ERP actor with success
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_DeleteConnectionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteConnectionAsync\(int, RequestOptions\)
+### DeleteConnectionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_DeleteConnectionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes a connection from the database.
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task DeleteConnectionAsync(int erpConnectionId, RequestOptions requestOptions = null)
@@ -388,11 +388,11 @@ Override language/culture codes on this request.
 
 A void return
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_DeleteErpSyncConnectorEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteErpSyncConnectorEntityAsync\(int, RequestOptions\)
+### DeleteErpSyncConnectorEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_DeleteErpSyncConnectorEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the ErpSyncConnectorEntity
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task DeleteErpSyncConnectorEntityAsync(int erpSyncConnectorEntityId, RequestOptions requestOptions = null)
@@ -412,11 +412,11 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_ForceResyncAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> ForceResyncAsync\(int, int\[\], RequestOptions\)
+### ForceResyncAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_ForceResyncAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Force resync from CRM or given Erp connection to all other connections
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<PluginResponse> ForceResyncAsync(int erpConnectionId, int[] internalKeyIds, RequestOptions requestOptions = null)
@@ -438,15 +438,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PluginResponse](SuperOffice.WebApi.Data.PluginResponse.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](SuperOffice.WebApi.Data.PluginResponse.md)\&gt;
 
 The response
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_ForceResyncBatchTaskAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> ForceResyncBatchTaskAsync\(int, int\[\], RequestOptions\)
+### ForceResyncBatchTaskAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_ForceResyncBatchTaskAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Start batch task to force resync from CRM or given Erp connection to all other connections
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task ForceResyncBatchTaskAsync(int erpConnectionId, int[] internalKeyIds, RequestOptions requestOptions = null)
@@ -470,11 +470,11 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_ForceResyncExternalAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_System_String___SuperOffice_WebApi_RequestOptions_"></a> ForceResyncExternalAsync\(int, ErpActorType, string\[\], RequestOptions\)
+### ForceResyncExternalAsync\(int, ErpActorType, string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_ForceResyncExternalAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Force resync from CRM or given Erp connection to all other connections, using external keys
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<PluginResponse> ForceResyncExternalAsync(int erpConnectionId, ErpActorType erpActorType, string[] externalKeys, RequestOptions requestOptions = null)
@@ -500,15 +500,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PluginResponse](SuperOffice.WebApi.Data.PluginResponse.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](SuperOffice.WebApi.Data.PluginResponse.md)\&gt;
 
 The response
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_ForceResyncExternalNoBlankValuesAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_System_String___SuperOffice_WebApi_RequestOptions_"></a> ForceResyncExternalNoBlankValuesAsync\(int, ErpActorType, string\[\], RequestOptions\)
+### ForceResyncExternalNoBlankValuesAsync\(int, ErpActorType, string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_ForceResyncExternalNoBlankValuesAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Force resync from CRM or given Erp connection to all other connections, using external keys, and tell the sync that you don't want blank values to overwrite non-blank values. Useful on import.
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<PluginResponse> ForceResyncExternalNoBlankValuesAsync(int erpConnectionId, ErpActorType erpActorType, string[] externalKeys, RequestOptions requestOptions = null)
@@ -534,15 +534,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PluginResponse](SuperOffice.WebApi.Data.PluginResponse.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](SuperOffice.WebApi.Data.PluginResponse.md)\&gt;
 
 The response
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_ForceResyncNoBlankValuesAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> ForceResyncNoBlankValuesAsync\(int, int\[\], RequestOptions\)
+### ForceResyncNoBlankValuesAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_ForceResyncNoBlankValuesAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Force resync from CRM or given Erp connection to all other connections and tell the sync that you don't want blank values to overwrite non-blank values. Useful on import.
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<PluginResponse> ForceResyncNoBlankValuesAsync(int erpConnectionId, int[] internalKeyIds, RequestOptions requestOptions = null)
@@ -564,15 +564,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PluginResponse](SuperOffice.WebApi.Data.PluginResponse.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](SuperOffice.WebApi.Data.PluginResponse.md)\&gt;
 
 The response
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_ForceSyncAllAsync_SuperOffice_WebApi_RequestOptions_"></a> ForceSyncAllAsync\(RequestOptions\)
+### ForceSyncAllAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_ForceSyncAllAsync_SuperOffice_WebApi_RequestOptions_}
 
 Sync all active connections even when automatic sync is off
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<PluginResponse> ForceSyncAllAsync(RequestOptions requestOptions = null)
@@ -586,15 +586,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PluginResponse](SuperOffice.WebApi.Data.PluginResponse.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](SuperOffice.WebApi.Data.PluginResponse.md)\&gt;
 
 The response
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_GetActorTypeMappingAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_"></a> GetActorTypeMappingAsync\(int, ErpActorType, RequestOptions\)
+### GetActorTypeMappingAsync\(int, ErpActorType, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_GetActorTypeMappingAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_}
 
 Get the current mappings for one connection/actor; connection+actor type = unique key
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<ErpSyncActorTypeMapping> GetActorTypeMappingAsync(int erpConnectionId, ErpActorType actorType, RequestOptions requestOptions = null)
@@ -616,15 +616,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ErpSyncActorTypeMapping](SuperOffice.WebApi.Data.ErpSyncActorTypeMapping.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncActorTypeMapping](SuperOffice.WebApi.Data.ErpSyncActorTypeMapping.md)\&gt;
 
 The current mapping from the database
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_GetAllConnectionsAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetAllConnectionsAsync\(bool, RequestOptions\)
+### GetAllConnectionsAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_GetAllConnectionsAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Returns all ERP Sync connections without config field data. Uses the `ErpConnection` archive.
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<ErpConnection[]> GetAllConnectionsAsync(bool includeDeleted, RequestOptions requestOptions = null)
@@ -642,15 +642,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ErpConnection](SuperOffice.WebApi.Data.ErpConnection.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpConnection](SuperOffice.WebApi.Data.ErpConnection.md)\[\]\&gt;
 
 The connection id, name, description
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_GetAllConnectorsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetAllConnectorsAsync\(RequestOptions\)
+### GetAllConnectorsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_GetAllConnectorsAsync_SuperOffice_WebApi_RequestOptions_}
 
 Returns all ERP Sync connectors. Uses the `ErpConnector` archive.
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<ListItem[]> GetAllConnectorsAsync(RequestOptions requestOptions = null)
@@ -664,15 +664,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ListItem](SuperOffice.WebApi.Data.ListItem.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ListItem](SuperOffice.WebApi.Data.ListItem.md)\[\]\&gt;
 
 The connector id, name, url
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_GetConfigurationFieldsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetConfigurationFieldsAsync\(int, RequestOptions\)
+### GetConfigurationFieldsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_GetConfigurationFieldsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns all fields needed to connect to the given connector
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<FieldMetadata[]> GetConfigurationFieldsAsync(int erpConnectorId, RequestOptions requestOptions = null)
@@ -690,15 +690,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FieldMetadata](SuperOffice.WebApi.Data.FieldMetadata.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FieldMetadata](SuperOffice.WebApi.Data.FieldMetadata.md)\[\]\&gt;
 
 The fields
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_GetConnectionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetConnectionAsync\(int, RequestOptions\)
+### GetConnectionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_GetConnectionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns the specified connection.
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<ErpConnection> GetConnectionAsync(int erpConnectionId, RequestOptions requestOptions = null)
@@ -716,15 +716,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ErpConnection](SuperOffice.WebApi.Data.ErpConnection.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpConnection](SuperOffice.WebApi.Data.ErpConnection.md)\&gt;
 
 The connection
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_GetConnectionListMappingsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetConnectionListMappingsAsync\(int, RequestOptions\)
+### GetConnectionListMappingsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_GetConnectionListMappingsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns the listmappings for the specified connection.
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<ErpConnectionListMappingContainer> GetConnectionListMappingsAsync(int erpConnectionId, RequestOptions requestOptions = null)
@@ -742,15 +742,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ErpConnectionListMappingContainer](SuperOffice.WebApi.Data.ErpConnectionListMappingContainer.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpConnectionListMappingContainer](SuperOffice.WebApi.Data.ErpConnectionListMappingContainer.md)\&gt;
 
 The listmappings
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_GetConnectionsAndDisplayFieldsAsync_SuperOffice_WebApi_Data_CrmActorType_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetConnectionsAndDisplayFieldsAsync\(CrmActorType, int, RequestOptions\)
+### GetConnectionsAndDisplayFieldsAsync\(CrmActorType, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_GetConnectionsAndDisplayFieldsAsync_SuperOffice_WebApi_Data_CrmActorType_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get all connection statuses and fields for a given entity
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<ErpConnectionData[]> GetConnectionsAndDisplayFieldsAsync(CrmActorType crmActorType, int entityId, RequestOptions requestOptions = null)
@@ -772,15 +772,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ErpConnectionData](SuperOffice.WebApi.Data.ErpConnectionData.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpConnectionData](SuperOffice.WebApi.Data.ErpConnectionData.md)\[\]\&gt;
 
 An array of ErpConnectionData carriers
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_GetCrmActorTypeAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_"></a> GetCrmActorTypeAsync\(int, ErpActorType, RequestOptions\)
+### GetCrmActorTypeAsync\(int, ErpActorType, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_GetCrmActorTypeAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_}
 
 Retrieves the CrmActorType that are mapped to a specific ErpActorType for this connection
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<CrmActorType> GetCrmActorTypeAsync(int erpConnectionId, ErpActorType erpActorType, RequestOptions requestOptions = null)
@@ -802,15 +802,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CrmActorType](SuperOffice.WebApi.Data.CrmActorType.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CrmActorType](SuperOffice.WebApi.Data.CrmActorType.md)\&gt;
 
 The CrmActorType
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_GetDefaultValueInfoAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetDefaultValueInfoAsync\(int, RequestOptions\)
+### GetDefaultValueInfoAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_GetDefaultValueInfoAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get information about default value for an ERP field
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<ErpSyncDefaultValue> GetDefaultValueInfoAsync(int erpFieldId, RequestOptions requestOptions = null)
@@ -828,15 +828,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ErpSyncDefaultValue](SuperOffice.WebApi.Data.ErpSyncDefaultValue.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncDefaultValue](SuperOffice.WebApi.Data.ErpSyncDefaultValue.md)\&gt;
 
 Object with information about default values
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_GetEngineStatusAsync_SuperOffice_WebApi_RequestOptions_"></a> GetEngineStatusAsync\(RequestOptions\)
+### GetEngineStatusAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_GetEngineStatusAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get the current status of the Sync engine
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<ErpSyncEngineStatus> GetEngineStatusAsync(RequestOptions requestOptions = null)
@@ -850,15 +850,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ErpSyncEngineStatus](SuperOffice.WebApi.Data.ErpSyncEngineStatus.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncEngineStatus](SuperOffice.WebApi.Data.ErpSyncEngineStatus.md)\&gt;
 
 The current status of the engine
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_GetErpConnectionConfigFieldsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetErpConnectionConfigFieldsAsync\(int, RequestOptions\)
+### GetErpConnectionConfigFieldsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_GetErpConnectionConfigFieldsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns the config fields for the connection.
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<StringDictionary> GetErpConnectionConfigFieldsAsync(int erpConnectionId, RequestOptions requestOptions = null)
@@ -876,15 +876,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\&gt;
 
 Config Fields
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_GetErpFieldValuesAsync_System_Int32_SuperOffice_WebApi_Data_CrmActorType_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_"></a> GetErpFieldValuesAsync\(int, CrmActorType, int, string\[\], RequestOptions\)
+### GetErpFieldValuesAsync\(int, CrmActorType, int, string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_GetErpFieldValuesAsync_System_Int32_SuperOffice_WebApi_Data_CrmActorType_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Get the values for the specified fields from the ERP connection
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<string[]> GetErpFieldValuesAsync(int erpConnectionId, CrmActorType crmActorType, int entityId, string[] fieldKeys, RequestOptions requestOptions = null)
@@ -914,15 +914,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\[\]\&gt;
 
 An array containing the values for the specified fields, in the same order
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_GetErpSyncConnectionSummaryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetErpSyncConnectionSummaryAsync\(int, RequestOptions\)
+### GetErpSyncConnectionSummaryAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_GetErpSyncConnectionSummaryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a summary of the current ErpSync configuration/setup
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<ErpSyncConnectionSummary> GetErpSyncConnectionSummaryAsync(int erpSyncConnectionId, RequestOptions requestOptions = null)
@@ -940,15 +940,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ErpSyncConnectionSummary](SuperOffice.WebApi.Data.ErpSyncConnectionSummary.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncConnectionSummary](SuperOffice.WebApi.Data.ErpSyncConnectionSummary.md)\&gt;
 
 Summary of connection information, and one summary element per configured actor type
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_GetErpSyncConnectorEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetErpSyncConnectorEntityAsync\(int, RequestOptions\)
+### GetErpSyncConnectorEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_GetErpSyncConnectorEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific ErpSyncConnectorEntity object.
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<ErpSyncConnectorEntity> GetErpSyncConnectorEntityAsync(int erpSyncConnectorEntityId, RequestOptions requestOptions = null)
@@ -966,15 +966,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ErpSyncConnectorEntity](SuperOffice.WebApi.Data.ErpSyncConnectorEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncConnectorEntity](SuperOffice.WebApi.Data.ErpSyncConnectorEntity.md)\&gt;
 
 ErpSyncConnectorEntity
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_GetFieldValuesFromCrmAsync_System_Int32_SuperOffice_WebApi_Data_CrmActorType_SuperOffice_WebApi_RequestOptions_"></a> GetFieldValuesFromCrmAsync\(int, CrmActorType, RequestOptions\)
+### GetFieldValuesFromCrmAsync\(int, CrmActorType, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_GetFieldValuesFromCrmAsync_System_Int32_SuperOffice_WebApi_Data_CrmActorType_SuperOffice_WebApi_RequestOptions_}
 
 Get Crm Field values
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<ErpSyncFieldValue[]> GetFieldValuesFromCrmAsync(int recordId, CrmActorType actorTypeCrm, RequestOptions requestOptions = null)
@@ -996,15 +996,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ErpSyncFieldValue](SuperOffice.WebApi.Data.ErpSyncFieldValue.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncFieldValue](SuperOffice.WebApi.Data.ErpSyncFieldValue.md)\[\]\&gt;
 
 The Crm Fields
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_GetFieldValuesFromErpAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetFieldValuesFromErpAsync\(int, ErpActorType, string, RequestOptions\)
+### GetFieldValuesFromErpAsync\(int, ErpActorType, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_GetFieldValuesFromErpAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get Erp Field values
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<ErpSyncFieldValue[]> GetFieldValuesFromErpAsync(int erpConnectionId, ErpActorType actorTypeErp, string erpKey, RequestOptions requestOptions = null)
@@ -1030,15 +1030,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ErpSyncFieldValue](SuperOffice.WebApi.Data.ErpSyncFieldValue.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncFieldValue](SuperOffice.WebApi.Data.ErpSyncFieldValue.md)\[\]\&gt;
 
 The Erp Fields
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_GetFieldsForNewErpActorAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_"></a> GetFieldsForNewErpActorAsync\(int, ErpActorType, RequestOptions\)
+### GetFieldsForNewErpActorAsync\(int, ErpActorType, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_GetFieldsForNewErpActorAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_}
 
 Get the fields that must be filled out when creating a new ERP actor
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<FieldMetadata[]> GetFieldsForNewErpActorAsync(int erpConnectionId, ErpActorType erpActorType, RequestOptions requestOptions = null)
@@ -1060,15 +1060,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FieldMetadata](SuperOffice.WebApi.Data.FieldMetadata.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FieldMetadata](SuperOffice.WebApi.Data.FieldMetadata.md)\[\]\&gt;
 
 The fields that are required for the new ERP actor
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_MoveErpFieldItemAsync_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_"></a> MoveErpFieldItemAsync\(int, int, int, ErpActorType, RequestOptions\)
+### MoveErpFieldItemAsync\(int, int, int, ErpActorType, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_MoveErpFieldItemAsync_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_}
 
 Moves the rank of the erp field up or down
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task MoveErpFieldItemAsync(int erpFieldId, int direction, int erpConnectionId, ErpActorType erpActorType, RequestOptions requestOptions = null)
@@ -1100,11 +1100,11 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_SaveActorTypeMappingAsync_SuperOffice_WebApi_Data_ErpSyncActorTypeMapping_SuperOffice_WebApi_RequestOptions_"></a> SaveActorTypeMappingAsync\(ErpSyncActorTypeMapping, RequestOptions\)
+### SaveActorTypeMappingAsync\(ErpSyncActorTypeMapping, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_SaveActorTypeMappingAsync_SuperOffice_WebApi_Data_ErpSyncActorTypeMapping_SuperOffice_WebApi_RequestOptions_}
 
 Save mappings for a connection/actor
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<ErpSyncActorTypeMapping> SaveActorTypeMappingAsync(ErpSyncActorTypeMapping mapping, RequestOptions requestOptions = null)
@@ -1122,15 +1122,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ErpSyncActorTypeMapping](SuperOffice.WebApi.Data.ErpSyncActorTypeMapping.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncActorTypeMapping](SuperOffice.WebApi.Data.ErpSyncActorTypeMapping.md)\&gt;
 
 The current mapping from the database
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_SaveConnectionAsync_SuperOffice_WebApi_Data_ErpConnection_SuperOffice_WebApi_RequestOptions_"></a> SaveConnectionAsync\(ErpConnection, RequestOptions\)
+### SaveConnectionAsync\(ErpConnection, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_SaveConnectionAsync_SuperOffice_WebApi_Data_ErpConnection_SuperOffice_WebApi_RequestOptions_}
 
 Saves a connection to the database.
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<ErpConnection> SaveConnectionAsync(ErpConnection connection, RequestOptions requestOptions = null)
@@ -1148,15 +1148,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ErpConnection](SuperOffice.WebApi.Data.ErpConnection.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpConnection](SuperOffice.WebApi.Data.ErpConnection.md)\&gt;
 
 The resulting connection.
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_SaveConnectionListMappingsAsync_SuperOffice_WebApi_Data_ErpConnectionListMappingContainer_SuperOffice_WebApi_RequestOptions_"></a> SaveConnectionListMappingsAsync\(ErpConnectionListMappingContainer, RequestOptions\)
+### SaveConnectionListMappingsAsync\(ErpConnectionListMappingContainer, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_SaveConnectionListMappingsAsync_SuperOffice_WebApi_Data_ErpConnectionListMappingContainer_SuperOffice_WebApi_RequestOptions_}
 
 Saves a connection to the database.
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<ErpConnectionListMappingContainer> SaveConnectionListMappingsAsync(ErpConnectionListMappingContainer listMapping, RequestOptions requestOptions = null)
@@ -1174,15 +1174,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ErpConnectionListMappingContainer](SuperOffice.WebApi.Data.ErpConnectionListMappingContainer.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpConnectionListMappingContainer](SuperOffice.WebApi.Data.ErpConnectionListMappingContainer.md)\&gt;
 
 The saved list mappings.
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_SaveDefaultValueInfoAsync_SuperOffice_WebApi_Data_ErpSyncDefaultValue_SuperOffice_WebApi_RequestOptions_"></a> SaveDefaultValueInfoAsync\(ErpSyncDefaultValue, RequestOptions\)
+### SaveDefaultValueInfoAsync\(ErpSyncDefaultValue, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_SaveDefaultValueInfoAsync_SuperOffice_WebApi_Data_ErpSyncDefaultValue_SuperOffice_WebApi_RequestOptions_}
 
 Save information about a default value for an ERP field
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<ErpSyncDefaultValue> SaveDefaultValueInfoAsync(ErpSyncDefaultValue erpSyncDefaultValue, RequestOptions requestOptions = null)
@@ -1200,15 +1200,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ErpSyncDefaultValue](SuperOffice.WebApi.Data.ErpSyncDefaultValue.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncDefaultValue](SuperOffice.WebApi.Data.ErpSyncDefaultValue.md)\&gt;
 
 The newly saved ErpSyncDefaultValue
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_SaveErpConnectionSyncPrioritiesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> SaveErpConnectionSyncPrioritiesAsync\(int\[\], RequestOptions\)
+### SaveErpConnectionSyncPrioritiesAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_SaveErpConnectionSyncPrioritiesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Takes an array of the ErpConnection ids and saves these as ordered sync priorities
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<bool> SaveErpConnectionSyncPrioritiesAsync(int[] erpConnectionIds, RequestOptions requestOptions = null)
@@ -1226,15 +1226,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 Returns true if new sync priorities is saved
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_SaveErpSyncConnectorEntityAsync_SuperOffice_WebApi_Data_ErpSyncConnectorEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveErpSyncConnectorEntityAsync\(ErpSyncConnectorEntity, RequestOptions\)
+### SaveErpSyncConnectorEntityAsync\(ErpSyncConnectorEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_SaveErpSyncConnectorEntityAsync_SuperOffice_WebApi_Data_ErpSyncConnectorEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing ErpSyncConnectorEntity or creates a new ErpSyncConnectorEntity if the id parameter is 0. 
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<ErpSyncConnectorEntity> SaveErpSyncConnectorEntityAsync(ErpSyncConnectorEntity erpSyncConnectorEntity, RequestOptions requestOptions = null)
@@ -1252,15 +1252,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ErpSyncConnectorEntity](SuperOffice.WebApi.Data.ErpSyncConnectorEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncConnectorEntity](SuperOffice.WebApi.Data.ErpSyncConnectorEntity.md)\&gt;
 
 New or updated ErpSyncConnectorEntity
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_SupportsAdvancedSearchAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_"></a> SupportsAdvancedSearchAsync\(int, ErpActorType, RequestOptions\)
+### SupportsAdvancedSearchAsync\(int, ErpActorType, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_SupportsAdvancedSearchAsync_System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_}
 
 Indicates if the connection supports advanced search for the given erp actor
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<bool> SupportsAdvancedSearchAsync(int erpConnectionId, ErpActorType erpActorType, RequestOptions requestOptions = null)
@@ -1282,15 +1282,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 True if advanced search is supported
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_SyncAllAsync_SuperOffice_WebApi_RequestOptions_"></a> SyncAllAsync\(RequestOptions\)
+### SyncAllAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_SyncAllAsync_SuperOffice_WebApi_RequestOptions_}
 
 Sync all active connections
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<PluginResponse> SyncAllAsync(RequestOptions requestOptions = null)
@@ -1304,15 +1304,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PluginResponse](SuperOffice.WebApi.Data.PluginResponse.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](SuperOffice.WebApi.Data.PluginResponse.md)\&gt;
 
 The response
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_TestConnectionByConfigAsync_System_Int32_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_"></a> TestConnectionByConfigAsync\(int, StringDictionary, RequestOptions\)
+### TestConnectionByConfigAsync\(int, StringDictionary, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_TestConnectionByConfigAsync_System_Int32_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_}
 
 Tests to see if the given connection has a valid connection to its connector
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<bool> TestConnectionByConfigAsync(int erpConnectionId, StringDictionary configFields, RequestOptions requestOptions = null)
@@ -1334,15 +1334,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 Returns true if success
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_TestConnectionByIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> TestConnectionByIdAsync\(int, RequestOptions\)
+### TestConnectionByIdAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_TestConnectionByIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Tests to see if we can establish a connection with the given config fields
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<bool> TestConnectionByIdAsync(int erpConnectionId, RequestOptions requestOptions = null)
@@ -1360,15 +1360,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 Returns true if success
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_TestConnectorUrlAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> TestConnectorUrlAsync\(string, RequestOptions\)
+### TestConnectorUrlAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_TestConnectorUrlAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Test if connector urls anwers
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<ErpSyncResponseCode> TestConnectorUrlAsync(string url, RequestOptions requestOptions = null)
@@ -1386,15 +1386,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ErpSyncResponseCode](SuperOffice.WebApi.Data.ErpSyncResponseCode.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncResponseCode](SuperOffice.WebApi.Data.ErpSyncResponseCode.md)\&gt;
 
 Enum response says ok or what is wrong
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_ToggleErpConnectionActiveAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> ToggleErpConnectionActiveAsync\(int, RequestOptions\)
+### ToggleErpConnectionActiveAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_ToggleErpConnectionActiveAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Toggles the Active state of the connection
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<string[]> ToggleErpConnectionActiveAsync(int erpConnectionId, RequestOptions requestOptions = null)
@@ -1412,15 +1412,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\[\]\&gt;
 
 Contains the reason for why the toggle failed. Empty if operation was successful
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_TryConnectActorAsync_System_Int32_System_Int32_SuperOffice_WebApi_Data_CrmActorType_System_String_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_Data_ErpSyncFieldValue___SuperOffice_WebApi_RequestOptions_"></a> TryConnectActorAsync\(int, int, CrmActorType, string, ErpActorType, ErpSyncFieldValue\[\], RequestOptions\)
+### TryConnectActorAsync\(int, int, CrmActorType, string, ErpActorType, ErpSyncFieldValue\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_TryConnectActorAsync_System_Int32_System_Int32_SuperOffice_WebApi_Data_CrmActorType_System_String_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_Data_ErpSyncFieldValue___SuperOffice_WebApi_RequestOptions_}
 
 Create a link between Erp and Crm and set default values
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<bool> TryConnectActorAsync(int erpConnectionId, int crmRecordId, CrmActorType crmActorType, string erpKey, ErpActorType erpActorType, ErpSyncFieldValue[] fieldValues, RequestOptions requestOptions = null)
@@ -1456,13 +1456,13 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_UpdateConnectionFieldsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> UpdateConnectionFieldsAsync\(int, RequestOptions\)
+### UpdateConnectionFieldsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_UpdateConnectionFieldsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets all supported actor types, and all fields for each actor type, and save this state to the CRM database
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task<bool> UpdateConnectionFieldsAsync(int erpConnectionId, RequestOptions requestOptions = null)
@@ -1480,15 +1480,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 Success or fail
 
-### <a id="SuperOffice_WebApi_Agents_ErpSyncAgent_ValidateArchiveColumnConfigAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> ValidateArchiveColumnConfigAsync\(string, int, RequestOptions\)
+### ValidateArchiveColumnConfigAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ErpSyncAgent_ValidateArchiveColumnConfigAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Clear field info from table SUPERLISTCOLUMNSIZE if field mapping changed on given connection
-<p></p>
-<b>Online Restricted:</b> The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The ErpSync agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
 ```csharp
 public Task ValidateArchiveColumnConfigAsync(string listOwner, int erpConnectionId, RequestOptions requestOptions = null)

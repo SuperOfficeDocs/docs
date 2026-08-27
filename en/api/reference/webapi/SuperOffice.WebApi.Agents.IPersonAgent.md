@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_Agents_IPersonAgent"></a> Interface IPersonAgent
+# Interface IPersonAgent {#SuperOffice_WebApi_Agents_IPersonAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface IPersonAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_AddBounceAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> AddBounceAsync\(string, RequestOptions\)
+### AddBounceAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_AddBounceAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Add a bounce count on the email address if it exists
 
@@ -38,7 +38,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_AddBounceWithCountAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> AddBounceWithCountAsync\(string, int, RequestOptions\)
+### AddBounceWithCountAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_AddBounceWithCountAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Add a number of bounce counts on the email address if it exists
 
@@ -64,7 +64,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_AddBounceWithDetailsAsync_System_String_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> AddBounceWithDetailsAsync\(string, int, int, string, RequestOptions\)
+### AddBounceWithDetailsAsync\(string, int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_AddBounceWithDetailsAsync_System_String_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Add a number of bounce counts on the email address if it exists, and with possible bounce code and reason
 
@@ -98,7 +98,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_AddEmailAddressToPersonAsync_System_Int32_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> AddEmailAddressToPersonAsync\(int, string, bool, RequestOptions\)
+### AddEmailAddressToPersonAsync\(int, string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_AddEmailAddressToPersonAsync_System_Int32_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Sets the primary email address on person, possibly re-ranking email addresses accordingly.
 
@@ -128,7 +128,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_ChangeCountryAsync_SuperOffice_WebApi_Data_PersonEntity_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> ChangeCountryAsync\(PersonEntity, int, RequestOptions\)
+### ChangeCountryAsync\(PersonEntity, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_ChangeCountryAsync_SuperOffice_WebApi_Data_PersonEntity_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Change country regenerates the default values and localized information such as phone number and address format for this entity.
 
@@ -152,11 +152,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PersonEntity](SuperOffice.WebApi.Data.PersonEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PersonEntity](SuperOffice.WebApi.Data.PersonEntity.md)\&gt;
 
 The PersonEntity
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_ChangePersonRankAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> ChangePersonRankAsync\(int, bool, RequestOptions\)
+### ChangePersonRankAsync\(int, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_ChangePersonRankAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Move one person up or down in the ranking in the Person Archive, if possible.&lt;para/&gt;The person record that has rank = 1 is the primary contact for a company, and is the one used in situations where no person has been explicitly chosen (such as in selections).&lt;para/&gt;This method corresponds to the move up/move down functions in the person archive in the contact panel.&lt;para/&gt;This method always affects two records.
 
@@ -180,11 +180,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
 
 If movement occurred, the return value will be the ID of the OTHER person that got moved. A GUI should switch the positions of the original person ID and this return value.&lt;para/&gt;If no movement occurred, for any reason,  0 is returned.
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_CheckTemporaryKeyAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> CheckTemporaryKeyAsync\(string, RequestOptions\)
+### CheckTemporaryKeyAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_CheckTemporaryKeyAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Check a temporary key for validity, and in case it is valid, return its domain, targetId and personId
 
@@ -204,11 +204,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TemporaryKeyInfo](SuperOffice.WebApi.Data.TemporaryKeyInfo.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TemporaryKeyInfo](SuperOffice.WebApi.Data.TemporaryKeyInfo.md)\&gt;
 
 The info about the temporary key. Domain will be Unknown if key is not valid.
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_CreateDefaultByContactIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultByContactIdAsync\(int, RequestOptions\)
+### CreateDefaultByContactIdAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_CreateDefaultByContactIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Creates a PersonEntity with default values based on the contactId.
 
@@ -228,9 +228,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PersonEntity](SuperOffice.WebApi.Data.PersonEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PersonEntity](SuperOffice.WebApi.Data.PersonEntity.md)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_CreateDefaultConsentPersonAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultConsentPersonAsync\(RequestOptions\)
+### CreateDefaultConsentPersonAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_CreateDefaultConsentPersonAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new ConsentPerson.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -247,11 +247,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ConsentPerson](SuperOffice.WebApi.Data.ConsentPerson.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConsentPerson](SuperOffice.WebApi.Data.ConsentPerson.md)\&gt;
 
 A blank ConsentPerson
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_CreateDefaultFromCredentialAsync_System_Int32_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultFromCredentialAsync\(int, string, string, string, RequestOptions\)
+### CreateDefaultFromCredentialAsync\(int, string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_CreateDefaultFromCredentialAsync_System_Int32_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Creates a PersonEntity with default values based on the contactId and credentials.
 
@@ -283,9 +283,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PersonEntity](SuperOffice.WebApi.Data.PersonEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PersonEntity](SuperOffice.WebApi.Data.PersonEntity.md)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_CreateDefaultPersonEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultPersonEntityAsync\(RequestOptions\)
+### CreateDefaultPersonEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_CreateDefaultPersonEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new PersonEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -302,11 +302,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PersonEntity](SuperOffice.WebApi.Data.PersonEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PersonEntity](SuperOffice.WebApi.Data.PersonEntity.md)\&gt;
 
 A blank PersonEntity
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_CreateDefaultPersonImageAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultPersonImageAsync\(RequestOptions\)
+### CreateDefaultPersonImageAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_CreateDefaultPersonImageAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new PersonImage.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -323,11 +323,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PersonImage](SuperOffice.WebApi.Data.PersonImage.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PersonImage](SuperOffice.WebApi.Data.PersonImage.md)\&gt;
 
 A blank PersonImage
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_CreateOrUpdateUserCandidateAsync_System_Int32_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> CreateOrUpdateUserCandidateAsync\(int, string, bool, RequestOptions\)
+### CreateOrUpdateUserCandidateAsync\(int, string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_CreateOrUpdateUserCandidateAsync_System_Int32_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Creates a Customer Centre User (UserCandidate) for a given Contact (personId) with the supplied parameters. If the Customer Centre User already exists for a given Contact, the user is updated with the supplied parameters.
 
@@ -355,11 +355,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserCandidate](SuperOffice.WebApi.Data.UserCandidate.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserCandidate](SuperOffice.WebApi.Data.UserCandidate.md)\&gt;
 
 UserCandidate created or updated.
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_CreateTemporaryKeyAsync_SuperOffice_WebApi_Data_TemporaryKeyDomain_System_Int32_System_Int32_System_DateTime_SuperOffice_WebApi_RequestOptions_"></a> CreateTemporaryKeyAsync\(TemporaryKeyDomain, int, int, DateTime, RequestOptions\)
+### CreateTemporaryKeyAsync\(TemporaryKeyDomain, int, int, DateTime, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_CreateTemporaryKeyAsync_SuperOffice_WebApi_Data_TemporaryKeyDomain_System_Int32_System_Int32_System_DateTime_SuperOffice_WebApi_RequestOptions_}
 
 Create a temporary key in the database from the given parameters and return the key string. Used for temporary keys for accessing customer centric functionality, such as UpdateSubscriptions.
 
@@ -391,11 +391,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 The key as base64, ready to be used e.g. in a URL
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_CreateTemporaryKeyWithPayloadAsync_SuperOffice_WebApi_Data_TemporaryKeyDomain_System_Int32_System_Int32_System_DateTime_System_String_SuperOffice_WebApi_RequestOptions_"></a> CreateTemporaryKeyWithPayloadAsync\(TemporaryKeyDomain, int, int, DateTime, string, RequestOptions\)
+### CreateTemporaryKeyWithPayloadAsync\(TemporaryKeyDomain, int, int, DateTime, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_CreateTemporaryKeyWithPayloadAsync_SuperOffice_WebApi_Data_TemporaryKeyDomain_System_Int32_System_Int32_System_DateTime_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Create a temporary key in the database from the given parameters and return the key string. Used for temporary keys for accessing customer centric functionality, such as UpdateSubscriptions.
 
@@ -431,11 +431,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 The key as base64, ready to be used e.g. in a URL
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_DeleteConsentPersonAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteConsentPersonAsync\(int, RequestOptions\)
+### DeleteConsentPersonAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_DeleteConsentPersonAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the ConsentPerson
 
@@ -457,7 +457,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_DeleteExpiredAsync_SuperOffice_WebApi_RequestOptions_"></a> DeleteExpiredAsync\(RequestOptions\)
+### DeleteExpiredAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_DeleteExpiredAsync_SuperOffice_WebApi_RequestOptions_}
 
 Trigger deletion of persons that has been (soft) deleted and have timed out the expiry period (the SoftDeleteRetention preference).
 
@@ -475,7 +475,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_DeletePersonEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeletePersonEntityAsync\(int, RequestOptions\)
+### DeletePersonEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_DeletePersonEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the PersonEntity
 
@@ -497,7 +497,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_DeleteTemporaryKeysOfDomainAsync_SuperOffice_WebApi_Data_TemporaryKeyDomain_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteTemporaryKeysOfDomainAsync\(TemporaryKeyDomain, int, RequestOptions\)
+### DeleteTemporaryKeysOfDomainAsync\(TemporaryKeyDomain, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_DeleteTemporaryKeysOfDomainAsync_SuperOffice_WebApi_Data_TemporaryKeyDomain_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Delete all temporary keys for a given domain and person
 
@@ -523,7 +523,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_GetAddressAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetAddressAsync\(int, RequestOptions\)
+### GetAddressAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_GetAddressAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets the person's localized address.
 
@@ -543,11 +543,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Address](SuperOffice.WebApi.Data.Address.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Address](SuperOffice.WebApi.Data.Address.md)\&gt;
 
 The address as LocalizedField[][].
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_GetAddressByCountryAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetAddressByCountryAsync\(int, int, RequestOptions\)
+### GetAddressByCountryAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_GetAddressByCountryAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets the person's localized address.
 
@@ -569,11 +569,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Address](SuperOffice.WebApi.Data.Address.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Address](SuperOffice.WebApi.Data.Address.md)\&gt;
 
 The address as LocalizedField[][].
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_GetBestSoLanguageForTemplateAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetBestSoLanguageForTemplateAsync\(int, int, RequestOptions\)
+### GetBestSoLanguageForTemplateAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_GetBestSoLanguageForTemplateAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get the best language for this person on this template
 
@@ -597,11 +597,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 The solang code for best language, empty string if no best language found
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_GetColleaguesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetColleaguesAsync\(RequestOptions\)
+### GetColleaguesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_GetColleaguesAsync_SuperOffice_WebApi_RequestOptions_}
 
 Gets the persons working in the same company as the logged on user.
 
@@ -617,11 +617,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Person](SuperOffice.WebApi.Data.Person.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Person](SuperOffice.WebApi.Data.Person.md)\[\]\&gt;
 
 Colleagues.
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_GetColleaguesByDepartmentAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetColleaguesByDepartmentAsync\(int, RequestOptions\)
+### GetColleaguesByDepartmentAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_GetColleaguesByDepartmentAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets the persons working in a specific department in the same company as the logged on user. Departments can be retrieved with the PhoneList.DepartmentList service.
 
@@ -641,11 +641,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Person](SuperOffice.WebApi.Data.Person.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Person](SuperOffice.WebApi.Data.Person.md)\[\]\&gt;
 
 PersonList with colleagues.
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_GetColleaguesBySourceAsync_SuperOffice_WebApi_Data_AssociateSourceType_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetColleaguesBySourceAsync\(AssociateSourceType, int, RequestOptions\)
+### GetColleaguesBySourceAsync\(AssociateSourceType, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_GetColleaguesBySourceAsync_SuperOffice_WebApi_Data_AssociateSourceType_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets the persons working in the same company as the logged on user. The list of person could be retrieved from the history list, the diary view list, or from all sources.
 
@@ -667,11 +667,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Person](SuperOffice.WebApi.Data.Person.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Person](SuperOffice.WebApi.Data.Person.md)\[\]\&gt;
 
 Colleagues.
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_GetConsentInfosAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetConsentInfosAsync\(int, RequestOptions\)
+### GetConsentInfosAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_GetConsentInfosAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get all consent information for a given person. May include withdrawn consents (check
 
@@ -691,11 +691,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ConsentInfo](SuperOffice.WebApi.Data.ConsentInfo.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConsentInfo](SuperOffice.WebApi.Data.ConsentInfo.md)\[\]\&gt;
 
 List of consents recorded on this person
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_GetConsentPersonAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetConsentPersonAsync\(int, RequestOptions\)
+### GetConsentPersonAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_GetConsentPersonAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific ConsentPerson object.
 
@@ -715,11 +715,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ConsentPerson](SuperOffice.WebApi.Data.ConsentPerson.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConsentPerson](SuperOffice.WebApi.Data.ConsentPerson.md)\&gt;
 
 ConsentPerson
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_GetCustomerCentrePasswordReplyTemplateAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetCustomerCentrePasswordReplyTemplateAsync\(int, RequestOptions\)
+### GetCustomerCentrePasswordReplyTemplateAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_GetCustomerCentrePasswordReplyTemplateAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a parsed Customer Centre password reply template for a particular customer
 
@@ -739,11 +739,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ReplyTemplateParsed](SuperOffice.WebApi.Data.ReplyTemplateParsed.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ReplyTemplateParsed](SuperOffice.WebApi.Data.ReplyTemplateParsed.md)\&gt;
 
 A parsed Customer Centre password reply template.
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_GetMyOwnerAsync_SuperOffice_WebApi_RequestOptions_"></a> GetMyOwnerAsync\(RequestOptions\)
+### GetMyOwnerAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_GetMyOwnerAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get the owner of the logged in person.
 
@@ -759,11 +759,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Person](SuperOffice.WebApi.Data.Person.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Person](SuperOffice.WebApi.Data.Person.md)\&gt;
 
 Person
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_GetMyPersonAsync_SuperOffice_WebApi_RequestOptions_"></a> GetMyPersonAsync\(RequestOptions\)
+### GetMyPersonAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_GetMyPersonAsync_SuperOffice_WebApi_RequestOptions_}
 
 Gets the person info belonging to the currently logged on user.
 
@@ -779,11 +779,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PersonEntity](SuperOffice.WebApi.Data.PersonEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PersonEntity](SuperOffice.WebApi.Data.PersonEntity.md)\&gt;
 
 The PersonEntity
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_GetOwnerOnPersonIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetOwnerOnPersonIdAsync\(int, RequestOptions\)
+### GetOwnerOnPersonIdAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_GetOwnerOnPersonIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get the owner of the person by id.
 
@@ -801,11 +801,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Person](SuperOffice.WebApi.Data.Person.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Person](SuperOffice.WebApi.Data.Person.md)\&gt;
 
 Person
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_GetPersonAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPersonAsync\(int, RequestOptions\)
+### GetPersonAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_GetPersonAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific Person object.
 
@@ -825,11 +825,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Person](SuperOffice.WebApi.Data.Person.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Person](SuperOffice.WebApi.Data.Person.md)\&gt;
 
 Person
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_GetPersonEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPersonEntityAsync\(int, RequestOptions\)
+### GetPersonEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_GetPersonEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific PersonEntity object.
 
@@ -849,11 +849,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PersonEntity](SuperOffice.WebApi.Data.PersonEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PersonEntity](SuperOffice.WebApi.Data.PersonEntity.md)\&gt;
 
 PersonEntity
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_GetPersonImageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetPersonImageAsync\(int, string, RequestOptions\)
+### GetPersonImageAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_GetPersonImageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the person image that is displayed in the CRM application.
 
@@ -877,11 +877,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
 
 The person image.
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_GetPersonImagesAsync_System_Int32___System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPersonImagesAsync\(int\[\], int, int, RequestOptions\)
+### GetPersonImagesAsync\(int\[\], int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_GetPersonImagesAsync_System_Int32___System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get the image for a set of persons scaled to a specific size. Returned images are in PNG format.
 
@@ -909,11 +909,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PersonImage](SuperOffice.WebApi.Data.PersonImage.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PersonImage](SuperOffice.WebApi.Data.PersonImage.md)\[\]\&gt;
 
 List of person images. Persons without an image are not present in this list.
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_GetPersonListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetPersonListAsync\(int\[\], RequestOptions\)
+### GetPersonListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_GetPersonListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Gets an array of specific Person objects.
 
@@ -933,11 +933,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Person](SuperOffice.WebApi.Data.Person.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Person](SuperOffice.WebApi.Data.Person.md)\[\]\&gt;
 
 Array of Person objects
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_GetPersonSummaryAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPersonSummaryAsync\(int, int, RequestOptions\)
+### GetPersonSummaryAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_GetPersonSummaryAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get summary of person and recent activity.
 
@@ -961,11 +961,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PersonSummary](SuperOffice.WebApi.Data.PersonSummary.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PersonSummary](SuperOffice.WebApi.Data.PersonSummary.md)\&gt;
 
 Summary of person, with recent requests, sales, follow-ups, chats.
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_GetPersonsFromContactAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPersonsFromContactAsync\(int, RequestOptions\)
+### GetPersonsFromContactAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_GetPersonsFromContactAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns all the persons belonging to a contact.
 
@@ -985,11 +985,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Person](SuperOffice.WebApi.Data.Person.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Person](SuperOffice.WebApi.Data.Person.md)\[\]\&gt;
 
 The persons belonging to a contact.
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_GetPersonsFromProjectAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPersonsFromProjectAsync\(int, RequestOptions\)
+### GetPersonsFromProjectAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_GetPersonsFromProjectAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns all the persons belonging to a project.
 
@@ -1009,11 +1009,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Person](SuperOffice.WebApi.Data.Person.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Person](SuperOffice.WebApi.Data.Person.md)\[\]\&gt;
 
 The persons belonging to a project.
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_GetPhonesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPhonesAsync\(int, RequestOptions\)
+### GetPhonesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_GetPhonesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returning all phones that belong to a person, ordered by the phone type.
 
@@ -1033,11 +1033,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]\&gt;
 
 An array of Phones
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_GetSalesRepAsync_System_String_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetSalesRepAsync\(string, string, string, string, string, RequestOptions\)
+### GetSalesRepAsync\(string, string, string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_GetSalesRepAsync_System_String_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns the sales representative for an external user. If this method is accessed with anonymous authentication the external user is recognized by contact and name, or by email, or phone number. If the external user is recognized as an CRM5 user (internal or external) the input fields can be left blank.
 
@@ -1073,11 +1073,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PersonEntity](SuperOffice.WebApi.Data.PersonEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PersonEntity](SuperOffice.WebApi.Data.PersonEntity.md)\&gt;
 
 The PersonEntity of the sales rep.
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_GetUserCandidateByPersonAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetUserCandidateByPersonAsync\(int, RequestOptions\)
+### GetUserCandidateByPersonAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_GetUserCandidateByPersonAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets user candidate linked to a person.
 
@@ -1097,11 +1097,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserCandidate](SuperOffice.WebApi.Data.UserCandidate.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserCandidate](SuperOffice.WebApi.Data.UserCandidate.md)\&gt;
 
 UserCandidate linked to a person.
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_GetUtmParametersAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetUtmParametersAsync\(int, RequestOptions\)
+### GetUtmParametersAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_GetUtmParametersAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get all UTM parameters for a given person.
 
@@ -1121,11 +1121,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UtmParameters](SuperOffice.WebApi.Data.UtmParameters.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UtmParameters](SuperOffice.WebApi.Data.UtmParameters.md)\&gt;
 
 UTM parameters recorded on this person
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_HasConsentAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> HasConsentAsync\(int, string, RequestOptions\)
+### HasConsentAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_HasConsentAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Check if consent has been given by a specified person, for a specific purpose. Withdraw consents return FALSE.
 
@@ -1149,11 +1149,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 True if the person has consented to the given purpose.
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_IsNumberValidAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> IsNumberValidAsync\(int, string, RequestOptions\)
+### IsNumberValidAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_IsNumberValidAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Checks if the number is unique or required.  The setting is configured from admin under system options.
 
@@ -1175,11 +1175,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 True if number is ok (passes uniqueness/required checks)
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_MergeAsync_System_Int32_System_Int32_System_DateTime_System_Boolean_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> MergeAsync\(int, int, DateTime, bool, bool, RequestOptions\)
+### MergeAsync\(int, int, DateTime, bool, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_MergeAsync_System_Int32_System_Int32_System_DateTime_System_Boolean_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Merge two persons. The destination person will remain. You must specify the date after which activities will be moved along with the person.
 
@@ -1217,7 +1217,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_MoveAsync_System_Int32_System_Int32_System_DateTime_SuperOffice_WebApi_RequestOptions_"></a> MoveAsync\(int, int, DateTime, RequestOptions\)
+### MoveAsync\(int, int, DateTime, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_MoveAsync_System_Int32_System_Int32_System_DateTime_SuperOffice_WebApi_RequestOptions_}
 
 Move a person to a specified contact. You must specify the date after which activities will be moved along with the person.
 
@@ -1247,7 +1247,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_NormalizeRanksAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> NormalizeRanksAsync\(int, RequestOptions\)
+### NormalizeRanksAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_NormalizeRanksAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Nomralize the ranks for all persons that belong to a contact. This means that the persons will be sorted according to their current rank values, and the ranks will be made monotonically increasing from 1.
 
@@ -1267,11 +1267,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 The reutrn value is true if the operation suceeded, either because all persons were already normalized, or because normalization was done. It is false if Sentry blocks any required changes.
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_RemoveConsentAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> RemoveConsentAsync\(int, string, RequestOptions\)
+### RemoveConsentAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_RemoveConsentAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Turn off consent for a specified person and purpose.
 
@@ -1297,7 +1297,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_ResolvePersonFromInfoAsync_System_Int32_System_String_System_String___System_String___SuperOffice_WebApi_RequestOptions_"></a> ResolvePersonFromInfoAsync\(int, string, string\[\], string\[\], RequestOptions\)
+### ResolvePersonFromInfoAsync\(int, string, string\[\], string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_ResolvePersonFromInfoAsync_System_Int32_System_String_System_String___System_String___SuperOffice_WebApi_RequestOptions_}
 
 Get a person from the provided information. If the person does not exist, it will be created on demand.
 
@@ -1329,11 +1329,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ResolvedPerson](SuperOffice.WebApi.Data.ResolvedPerson.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ResolvedPerson](SuperOffice.WebApi.Data.ResolvedPerson.md)\&gt;
 
 The results of the resolve-operation.
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_SaveConsentPersonAsync_SuperOffice_WebApi_Data_ConsentPerson_SuperOffice_WebApi_RequestOptions_"></a> SaveConsentPersonAsync\(ConsentPerson, RequestOptions\)
+### SaveConsentPersonAsync\(ConsentPerson, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_SaveConsentPersonAsync_SuperOffice_WebApi_Data_ConsentPerson_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing ConsentPerson or creates a new ConsentPerson if the id parameter is 0.
 
@@ -1353,11 +1353,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ConsentPerson](SuperOffice.WebApi.Data.ConsentPerson.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConsentPerson](SuperOffice.WebApi.Data.ConsentPerson.md)\&gt;
 
 New or updated ConsentPerson
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_SavePersonEntityAsync_SuperOffice_WebApi_Data_PersonEntity_SuperOffice_WebApi_RequestOptions_"></a> SavePersonEntityAsync\(PersonEntity, RequestOptions\)
+### SavePersonEntityAsync\(PersonEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_SavePersonEntityAsync_SuperOffice_WebApi_Data_PersonEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing PersonEntity or creates a new PersonEntity if the id parameter is 0.
 
@@ -1377,11 +1377,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PersonEntity](SuperOffice.WebApi.Data.PersonEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PersonEntity](SuperOffice.WebApi.Data.PersonEntity.md)\&gt;
 
 New or updated PersonEntity
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_SendConsentConfirmationEmailAsync_System_Int32_System_String_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> SendConsentConfirmationEmailAsync\(int, string, int, int, string, RequestOptions\)
+### SendConsentConfirmationEmailAsync\(int, string, int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_SendConsentConfirmationEmailAsync_System_Int32_System_String_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Send confirmation email to the provided person, email address (id), using the document template
 
@@ -1419,7 +1419,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_SendCustomerCentrePasswordEmailAsync_System_Int32_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> SendCustomerCentrePasswordEmailAsync\(int, string, string, string, RequestOptions\)
+### SendCustomerCentrePasswordEmailAsync\(int, string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_SendCustomerCentrePasswordEmailAsync_System_Int32_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Sends a Customer Centre password email based on the reply template.
 
@@ -1455,7 +1455,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_SendEmailAsync_System_String_System_String_System_String_System_String_System_String_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> SendEmailAsync\(string, string, string, string, string, int\[\], RequestOptions\)
+### SendEmailAsync\(string, string, string, string, string, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_SendEmailAsync_System_String_System_String_System_String_System_String_System_String_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Inserts into outbox an email with specified details.
 
@@ -1499,7 +1499,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_SendEmailWithEventNameAsync_System_String_System_String_System_String_System_String_System_String_System_Int32___System_String_SuperOffice_WebApi_RequestOptions_"></a> SendEmailWithEventNameAsync\(string, string, string, string, string, int\[\], string, RequestOptions\)
+### SendEmailWithEventNameAsync\(string, string, string, string, string, int\[\], string, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_SendEmailWithEventNameAsync_System_String_System_String_System_String_System_String_System_String_System_Int32___System_String_SuperOffice_WebApi_RequestOptions_}
 
 Inserts into outbox an email with specified details and event name.
 
@@ -1547,7 +1547,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_SetConsentAsync_System_Int32_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> SetConsentAsync\(int, string, string, string, string, RequestOptions\)
+### SetConsentAsync\(int, string, string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_SetConsentAsync_System_Int32_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Set a specified type of consent on the person.
 
@@ -1585,7 +1585,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_SetPersonImageAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_"></a> SetPersonImageAsync\(int, byte\[\], RequestOptions\)
+### SetPersonImageAsync\(int, byte\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_SetPersonImageAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_}
 
 Stores the person image that is displayed in the CRM application.
 
@@ -1611,7 +1611,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_SetPersonRankAsync_System_Int32_System_Int16_SuperOffice_WebApi_RequestOptions_"></a> SetPersonRankAsync\(int, short, RequestOptions\)
+### SetPersonRankAsync\(int, short, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_SetPersonRankAsync_System_Int32_System_Int16_SuperOffice_WebApi_RequestOptions_}
 
 Directly set the rank field of a person record, adjusting all other person records under the same contact as needed.&lt;para/&gt;This call may affect multiple records, potentially all person records belonging to one contact.&lt;para/&gt;You must have write access for to affected records for this method to succeed.
 
@@ -1635,11 +1635,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 If movement occurred, or the person already had exactly the desired rank value, then the return value will be true. If movement did not occur, for any other reason, the return value is false.
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_SetUtmCreatedPersonContactForFormSubmissionAsync_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> SetUtmCreatedPersonContactForFormSubmissionAsync\(int, int, int, RequestOptions\)
+### SetUtmCreatedPersonContactForFormSubmissionAsync\(int, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_SetUtmCreatedPersonContactForFormSubmissionAsync_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Set created person and optinally contact on an UTM Parameters row related to a form submission.
 
@@ -1671,7 +1671,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_TryAddPersonsToEmailFlowAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> TryAddPersonsToEmailFlowAsync\(int, int\[\], RequestOptions\)
+### TryAddPersonsToEmailFlowAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_TryAddPersonsToEmailFlowAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Try to add a participant to the EmailFlow, Same function available in WorkflowAgent
 
@@ -1695,11 +1695,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\[\]\&gt;
 
 True if the corresponding participant was successfully added, false if it could not be added because of filter criteria or other reason
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_UndeleteAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> UndeleteAsync\(int, RequestOptions\)
+### UndeleteAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_UndeleteAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 This entity supports Soft Delete. Call this method to Undelete a previously soft-deleted record
 
@@ -1723,7 +1723,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_UpdateInterestsAsync_System_Int32_System_Int32___System_Int32___SuperOffice_WebApi_RequestOptions_"></a> UpdateInterestsAsync\(int, int\[\], int\[\], RequestOptions\)
+### UpdateInterestsAsync\(int, int\[\], int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_UpdateInterestsAsync_System_Int32_System_Int32___System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Update interests on person. Will throw exception if id is in both arrays
 
@@ -1755,7 +1755,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_IPersonAgent_ValidatePersonEntityAsync_SuperOffice_WebApi_Data_PersonEntity_SuperOffice_WebApi_RequestOptions_"></a> ValidatePersonEntityAsync\(PersonEntity, RequestOptions\)
+### ValidatePersonEntityAsync\(PersonEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IPersonAgent_ValidatePersonEntityAsync_SuperOffice_WebApi_Data_PersonEntity_SuperOffice_WebApi_RequestOptions_}
 
 Check that entity is ready for saving, return error messages by field.
 
@@ -1775,7 +1775,7 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\&gt;
 
 Error messages tagged by field.
 

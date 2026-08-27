@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent"></a> Class UserDefinedFieldInfoAgent
+# Class UserDefinedFieldInfoAgent {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -38,7 +38,7 @@ public class UserDefinedFieldInfoAgent : AgentBase, IUserDefinedFieldInfoAgent, 
 [AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequestObjectWithStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
 [AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequest\_System\_Net\_Http\_HttpRequestMessage\_SuperOffice\_WebApi\_RequestOptions\_), 
 [AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ThrowOnResponseErrorAsync\_System\_Net\_Http\_HttpRequestMessage\_System\_Net\_Http\_HttpResponseMessage\_), 
-[AgentBase.ParseResponse<T\>\(HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseResponse\_\_1\_System\_Net\_Http\_HttpResponseMessage\_), 
+[AgentBase.ParseResponse&lt;T\&gt;\(HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseResponse\_\_1\_System\_Net\_Http\_HttpResponseMessage\_), 
 [AgentBase.Finally\(RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Finally\_SuperOffice\_WebApi\_RequestOptions\_), 
 [AgentBase.Dispose\(\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Dispose), 
 [AgentBase.Configuration](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Configuration), 
@@ -57,19 +57,19 @@ public class UserDefinedFieldInfoAgent : AgentBase, IUserDefinedFieldInfoAgent, 
 
 ## Examples
 
-<pre><code class="lang-csharp">using SuperOffice.WebApi;
+&lt;pre&gt;&lt;code class="lang-csharp"&gt;using SuperOffice.WebApi;
 using SuperOffice.WebApi.Agents;
 
 var mySession = new WebApiOptions("http://example.com/super/api");
 mySession.Authorization = new AuthorizationUsernamePassword("user", "pass");
 using (UserDefinedFieldInfoAgent agent = new UserDefinedFieldInfoAgent(mySession))
-{
+\{
       // call methods on agent here...
-}</code></pre>
+\}&lt;/code&gt;&lt;/pre&gt;
 
 ## Constructors
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent__ctor_System_Net_Http_HttpClient_"></a> UserDefinedFieldInfoAgent\(HttpClient\)
+### UserDefinedFieldInfoAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: Returns information about user-defined fields, like field type, field size, field label text, default value. Does not return the actual values in the user-defined fields. The values are returned on the entity objects.
 
@@ -83,7 +83,7 @@ public UserDefinedFieldInfoAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"></a> UserDefinedFieldInfoAgent\(WebApiOptions, HttpClient\)
+### UserDefinedFieldInfoAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: Returns information about user-defined fields, like field type, field size, field label text, default value. Does not return the actual values in the user-defined fields. The values are returned on the entity objects.
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_ChangeFieldTypeAsync_SuperOffice_WebApi_Data_UserDefinedFieldInfo_SuperOffice_WebApi_Data_UDefFieldType_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> ChangeFieldTypeAsync\(UserDefinedFieldInfo, UDefFieldType, bool, RequestOptions\)
+### ChangeFieldTypeAsync\(UserDefinedFieldInfo, UDefFieldType, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_ChangeFieldTypeAsync_SuperOffice_WebApi_Data_UserDefinedFieldInfo_SuperOffice_WebApi_Data_UDefFieldType_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Create a UserDefinedFieldInfo based on a owner-entity id
 
@@ -131,11 +131,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\&gt;
 
 Returns the user-defined field info carrier
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_ClearCachesAsync_SuperOffice_WebApi_RequestOptions_"></a> ClearCachesAsync\(RequestOptions\)
+### ClearCachesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_ClearCachesAsync_SuperOffice_WebApi_RequestOptions_}
 
 Clear all relevant caches. This is normally done automatically but can be useful in certain circumstances.
 
@@ -153,7 +153,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_CreateDefaultUserDefinedFieldInfoAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultUserDefinedFieldInfoAsync\(RequestOptions\)
+### CreateDefaultUserDefinedFieldInfoAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_CreateDefaultUserDefinedFieldInfoAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new UserDefinedFieldInfo.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -170,11 +170,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\&gt;
 
 A blank UserDefinedFieldInfo
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_CreateUserDefinedFieldInfoAsync_SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_Data_UDefFieldType_SuperOffice_WebApi_RequestOptions_"></a> CreateUserDefinedFieldInfoAsync\(UDefType, UDefFieldType, RequestOptions\)
+### CreateUserDefinedFieldInfoAsync\(UDefType, UDefFieldType, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_CreateUserDefinedFieldInfoAsync_SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_Data_UDefFieldType_SuperOffice_WebApi_RequestOptions_}
 
 Create a UserDefinedFieldInfo based on a owner-entity id
 
@@ -198,11 +198,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\&gt;
 
 Returns the user-defined field info carrier
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_DeleteUserDefinedFieldInfoAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteUserDefinedFieldInfoAsync\(int, RequestOptions\)
+### DeleteUserDefinedFieldInfoAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_DeleteUserDefinedFieldInfoAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the UserDefinedFieldInfo
 
@@ -224,7 +224,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_DetectColumnIdChangesAsync_SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_RequestOptions_"></a> DetectColumnIdChangesAsync\(UDefType, RequestOptions\)
+### DetectColumnIdChangesAsync\(UDefType, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_DetectColumnIdChangesAsync_SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_RequestOptions_}
 
 Detect columnid changes to the admin version (for determining publish warning)
 
@@ -244,11 +244,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 Returns true if columnid changes where found. i.e. if data needs to be moved during publishing.
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_DetectUnpublishedChangesAsync_SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_RequestOptions_"></a> DetectUnpublishedChangesAsync\(UDefType, RequestOptions\)
+### DetectUnpublishedChangesAsync\(UDefType, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_DetectUnpublishedChangesAsync_SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_RequestOptions_}
 
 Detect changes to the admin version (unpublished)
 
@@ -268,11 +268,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 Returns true if any changes were found. This includes cosmetic changes.
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_FigureOutListIdFromListTableIdAndUDListDefinitionIdAsync_SuperOffice_WebApi_Data_UserDefinedFieldInfo_SuperOffice_WebApi_RequestOptions_"></a> FigureOutListIdFromListTableIdAndUDListDefinitionIdAsync\(UserDefinedFieldInfo, RequestOptions\)
+### FigureOutListIdFromListTableIdAndUDListDefinitionIdAsync\(UserDefinedFieldInfo, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_FigureOutListIdFromListTableIdAndUDListDefinitionIdAsync_SuperOffice_WebApi_Data_UserDefinedFieldInfo_SuperOffice_WebApi_RequestOptions_}
 
 Kind of the reverse of SetListTableIdAndUDListDefinitionIdFromSelectedListId
 
@@ -290,9 +290,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetChangedPageOneFieldsAsync_SuperOffice_WebApi_Data_UDefType_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetChangedPageOneFieldsAsync\(UDefType, int, RequestOptions\)
+### GetChangedPageOneFieldsAsync\(UDefType, int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetChangedPageOneFieldsAsync_SuperOffice_WebApi_Data_UDefType_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets which page one fields have changed from the current version
 
@@ -316,9 +316,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\[\]\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetCustomFieldInfoAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetCustomFieldInfoAsync\(string, string, RequestOptions\)
+### GetCustomFieldInfoAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetCustomFieldInfoAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Return information about a particular custom field (user-defined + extra) on a particular table
 
@@ -342,11 +342,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FieldInfoBase](SuperOffice.WebApi.Data.FieldInfoBase.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FieldInfoBase](SuperOffice.WebApi.Data.FieldInfoBase.md)\&gt;
 
 user-defined or extra field info. Describes default values, mandatory, visiblity, labels and choices.
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetCustomFieldInfoListAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetCustomFieldInfoListAsync\(string, bool, RequestOptions\)
+### GetCustomFieldInfoListAsync\(string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetCustomFieldInfoListAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Return information about all the custom fields (user-defined + extra) on a particular table
 
@@ -370,11 +370,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FieldInfoBase](SuperOffice.WebApi.Data.FieldInfoBase.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FieldInfoBase](SuperOffice.WebApi.Data.FieldInfoBase.md)\[\]\&gt;
 
 Array of user-defined and extra field info in rank order. Describes default values, mandatory, visiblity, labels and choices.
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetPublishedUserDefinedFieldFromFieldLabelAsync_System_String_SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_RequestOptions_"></a> GetPublishedUserDefinedFieldFromFieldLabelAsync\(string, UDefType, RequestOptions\)
+### GetPublishedUserDefinedFieldFromFieldLabelAsync\(string, UDefType, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetPublishedUserDefinedFieldFromFieldLabelAsync_System_String_SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_RequestOptions_}
 
 Return information about the given user defined field identified by the owner and the field label. Note that field labels are fuzzy. Leading and trailing spaces and punctuation are ignored.
 
@@ -398,11 +398,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\&gt;
 
 Returns the user-defined field info carrier, or null if no matching field is found.
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetPublishedUserDefinedFieldFromProgIdAsync_System_String_SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_RequestOptions_"></a> GetPublishedUserDefinedFieldFromProgIdAsync\(string, UDefType, RequestOptions\)
+### GetPublishedUserDefinedFieldFromProgIdAsync\(string, UDefType, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetPublishedUserDefinedFieldFromProgIdAsync_System_String_SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_RequestOptions_}
 
 Return information about the given user defined field identified by the owner and the prog-id. The prog-id is used as the key in the entity carriers.
 
@@ -426,11 +426,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\&gt;
 
 Returns the user-defined field info carrier, or null if no matching field is found.
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetPublishedUserDefinedFieldListAsync_SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_RequestOptions_"></a> GetPublishedUserDefinedFieldListAsync\(UDefType, RequestOptions\)
+### GetPublishedUserDefinedFieldListAsync\(UDefType, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetPublishedUserDefinedFieldListAsync_SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_RequestOptions_}
 
 Return information about all the user defined fields on a particular owner type (project, contact, person, etc).
 
@@ -450,11 +450,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\[\]\&gt;
 
 Returns an array of user-defined field info carriers.
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetPublishedUserDefinedPageOneFieldsAsync_SuperOffice_WebApi_Data_UDefType_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPublishedUserDefinedPageOneFieldsAsync\(UDefType, int, RequestOptions\)
+### GetPublishedUserDefinedPageOneFieldsAsync\(UDefType, int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetPublishedUserDefinedPageOneFieldsAsync_SuperOffice_WebApi_Data_UDefType_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a list of page one fields for given Udef type and current user group
 
@@ -478,11 +478,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\[\]\&gt;
 
 Returns an array of page one user-defined field info carriers.
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetUserDefinedFieldFromFieldLabelAsync_System_String_SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_RequestOptions_"></a> GetUserDefinedFieldFromFieldLabelAsync\(string, UDefType, RequestOptions\)
+### GetUserDefinedFieldFromFieldLabelAsync\(string, UDefType, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetUserDefinedFieldFromFieldLabelAsync_System_String_SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_RequestOptions_}
 
 Return information about the given user defined field identified by the owner and the field label. Note that field labels are fuzzy. Leading and trailing spaces and punctuation are ignored. Note this may be different than the currently published fields.
 
@@ -506,11 +506,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\&gt;
 
 Returns the user-defined field info carrier, or null if no matching field is found.
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetUserDefinedFieldFromIdsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetUserDefinedFieldFromIdsAsync\(int\[\], RequestOptions\)
+### GetUserDefinedFieldFromIdsAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetUserDefinedFieldFromIdsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Return an given array of user defined field identified by the ids.
 
@@ -530,11 +530,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\[\]\&gt;
 
 Returns an array of user-defined field info carriers
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetUserDefinedFieldFromProgIdAsync_System_String_SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_RequestOptions_"></a> GetUserDefinedFieldFromProgIdAsync\(string, UDefType, RequestOptions\)
+### GetUserDefinedFieldFromProgIdAsync\(string, UDefType, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetUserDefinedFieldFromProgIdAsync_System_String_SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_RequestOptions_}
 
 Return information about the given user defined field identified by the owner and the prog-id. The prog-id is used as the key in the entity carriers. Note this may be different than the currently published fields.
 
@@ -558,11 +558,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\&gt;
 
 Returns the user-defined field info carrier, or null if no matching field is found.
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetUserDefinedFieldFromProgIdsAsync_System_String___SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_RequestOptions_"></a> GetUserDefinedFieldFromProgIdsAsync\(string\[\], UDefType, RequestOptions\)
+### GetUserDefinedFieldFromProgIdsAsync\(string\[\], UDefType, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetUserDefinedFieldFromProgIdsAsync_System_String___SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_RequestOptions_}
 
 Return an given array user defined field identified by the owner and the prog-ids. The prog-id is used as the key in the entity carriers. Note this may be different than the currently published field layout.
 
@@ -586,11 +586,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\[\]\&gt;
 
 Returns an array of user-defined field info carriers
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetUserDefinedFieldInfoAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetUserDefinedFieldInfoAsync\(int, RequestOptions\)
+### GetUserDefinedFieldInfoAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetUserDefinedFieldInfoAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific UserDefinedFieldInfo object.
 
@@ -610,11 +610,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\&gt;
 
 UserDefinedFieldInfo
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetUserDefinedFieldListAsync_SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_RequestOptions_"></a> GetUserDefinedFieldListAsync\(UDefType, RequestOptions\)
+### GetUserDefinedFieldListAsync\(UDefType, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetUserDefinedFieldListAsync_SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_RequestOptions_}
 
 Return information about all the user defined fields on a particular owner type (project, contact, person, etc). Note this may be different than the currently published fields.
 
@@ -634,11 +634,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\[\]\&gt;
 
 Returns an array of user-defined field info carriers.
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetUserDefinedPageOneFieldsAsync_SuperOffice_WebApi_Data_UDefType_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetUserDefinedPageOneFieldsAsync\(UDefType, int, RequestOptions\)
+### GetUserDefinedPageOneFieldsAsync\(UDefType, int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_GetUserDefinedPageOneFieldsAsync_SuperOffice_WebApi_Data_UDefType_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get a list of page one fields for given Udef type and current user group
 
@@ -662,11 +662,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\[\]\&gt;
 
 Returns an array of page one user-defined field info carriers.
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_IsAnyPublishEventActiveAsync_SuperOffice_WebApi_RequestOptions_"></a> IsAnyPublishEventActiveAsync\(RequestOptions\)
+### IsAnyPublishEventActiveAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_IsAnyPublishEventActiveAsync_SuperOffice_WebApi_RequestOptions_}
 
 Check if any publish events are active
 
@@ -682,9 +682,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_IsPublishEventActiveAsync_SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_RequestOptions_"></a> IsPublishEventActiveAsync\(UDefType, RequestOptions\)
+### IsPublishEventActiveAsync\(UDefType, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_IsPublishEventActiveAsync_SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_RequestOptions_}
 
 Check if the publish event is active for the given type
 
@@ -702,9 +702,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_PublishAsync_SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_RequestOptions_"></a> PublishAsync\(UDefType, RequestOptions\)
+### PublishAsync\(UDefType, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_PublishAsync_SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_RequestOptions_}
 
 Publish changed Udef fields for the given owner type
 
@@ -724,11 +724,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
 
 Batch task id or 0 that handles publishing.
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_RevertAsync_SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_RequestOptions_"></a> RevertAsync\(UDefType, RequestOptions\)
+### RevertAsync\(UDefType, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_RevertAsync_SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_RequestOptions_}
 
 Revert changed Udef fields for the given owner type - all unpublished changes will be lost
 
@@ -750,7 +750,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_SaveUserDefinedFieldInfoAsync_SuperOffice_WebApi_Data_UserDefinedFieldInfo_SuperOffice_WebApi_RequestOptions_"></a> SaveUserDefinedFieldInfoAsync\(UserDefinedFieldInfo, RequestOptions\)
+### SaveUserDefinedFieldInfoAsync\(UserDefinedFieldInfo, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_SaveUserDefinedFieldInfoAsync_SuperOffice_WebApi_Data_UserDefinedFieldInfo_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing UserDefinedFieldInfo or creates a new UserDefinedFieldInfo if the id parameter is 0.
 
@@ -770,11 +770,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\&gt;
 
 New or updated UserDefinedFieldInfo
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_SaveUserDefinedFieldInfosAsync_SuperOffice_WebApi_Data_UserDefinedFieldInfo___SuperOffice_WebApi_RequestOptions_"></a> SaveUserDefinedFieldInfosAsync\(UserDefinedFieldInfo\[\], RequestOptions\)
+### SaveUserDefinedFieldInfosAsync\(UserDefinedFieldInfo\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_SaveUserDefinedFieldInfosAsync_SuperOffice_WebApi_Data_UserDefinedFieldInfo___SuperOffice_WebApi_RequestOptions_}
 
 Save an array of user defined fields. This will update the unpublished layout.
 
@@ -796,7 +796,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_SetListTableIdAndUDListDefinitionIdFromSelectedListIdAsync_SuperOffice_WebApi_Data_UserDefinedFieldInfo_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> SetListTableIdAndUDListDefinitionIdFromSelectedListIdAsync\(UserDefinedFieldInfo, int, RequestOptions\)
+### SetListTableIdAndUDListDefinitionIdFromSelectedListIdAsync\(UserDefinedFieldInfo, int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_SetListTableIdAndUDListDefinitionIdFromSelectedListIdAsync_SuperOffice_WebApi_Data_UserDefinedFieldInfo_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Make stuff similar to what happens in the win client
 
@@ -816,9 +816,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserDefinedFieldInfo](SuperOffice.WebApi.Data.UserDefinedFieldInfo.md)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_SetPageOneFieldGroupingAsync_SuperOffice_WebApi_Data_UDefType_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> SetPageOneFieldGroupingAsync\(UDefType, bool, RequestOptions\)
+### SetPageOneFieldGroupingAsync\(UDefType, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_SetPageOneFieldGroupingAsync_SuperOffice_WebApi_Data_UDefType_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Sets the Page One Field grouping for a specific entity
 
@@ -844,7 +844,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_SetPublishStartSystemEventAsync_SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_RequestOptions_"></a> SetPublishStartSystemEventAsync\(UDefType, RequestOptions\)
+### SetPublishStartSystemEventAsync\(UDefType, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_SetPublishStartSystemEventAsync_SuperOffice_WebApi_Data_UDefType_SuperOffice_WebApi_RequestOptions_}
 
 Set the start flag for udef publishing. Must be called before PUBLISH, or PUBLISH will fail. Start flag is removed when publish process completes.
 
@@ -866,7 +866,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_SetRankOnFieldsAsync_SuperOffice_WebApi_Data_UDefType_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> SetRankOnFieldsAsync\(UDefType, int\[\], RequestOptions\)
+### SetRankOnFieldsAsync\(UDefType, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_SetRankOnFieldsAsync_SuperOffice_WebApi_Data_UDefType_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Change rank of user defined fields
 
@@ -892,7 +892,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_SetUserDefinedPageOneFieldAsync_SuperOffice_WebApi_Data_UDefType_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> SetUserDefinedPageOneFieldAsync\(UDefType, int, int, int, RequestOptions\)
+### SetUserDefinedPageOneFieldAsync\(UDefType, int, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_UserDefinedFieldInfoAgent_SetUserDefinedPageOneFieldAsync_SuperOffice_WebApi_Data_UDefType_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Sets a user defined fields as page one field.
 

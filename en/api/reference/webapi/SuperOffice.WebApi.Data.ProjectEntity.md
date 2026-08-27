@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_Data_ProjectEntity"></a> Class ProjectEntity
+# Class ProjectEntity {#SuperOffice_WebApi_Data_ProjectEntity}
 
 Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -31,23 +31,23 @@ public class ProjectEntity : Carrier
 ## Examples
 
 Get ProjectEntity 123 using the WebApi client:
-<pre><code class="lang-csharp">var configuration = new WebApiConfiguration(url);
+&lt;pre&gt;&lt;code class="lang-csharp"&gt;var configuration = new WebApiConfiguration(url);
 var agent = new ProjectAgent(configuration);
-var projectEntity = agent.GetProjectEntity( 123 );</code></pre>
+var projectEntity = agent.GetProjectEntity( 123 );&lt;/code&gt;&lt;/pre&gt;
 
 ## Remarks
 
-Use <xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" data-throw-if-not-resolved="false"></xref>:
-            All ProjectEntity: <pre><code class="lang-csharp">"FindProject"</code></pre>
-            Activities: <pre><code class="lang-csharp">"ProjectActivity"</code></pre> with restriction <pre><code class="lang-csharp">"projectId eq " + id</code></pre>.
-            Guide: <pre><code class="lang-csharp">"ProjectGuide"</code></pre> with restriction <pre><code class="lang-csharp">"projectId eq " + id</code></pre>.
-            Members: <pre><code class="lang-csharp">"ProjectMember"</code></pre> with restriction <pre><code class="lang-csharp">"projectId eq " + id</code></pre>.
-            Contacts: <pre><code class="lang-csharp">"ContactProjects"</code></pre> with restriction <pre><code class="lang-csharp">"projectId eq " + id</code></pre>.
-            Links: <pre><code class="lang-csharp">"Links"</code></pre> with restriction <pre><code class="lang-csharp">"sourceProjectRestrictionId eq " + id</code></pre>.
+Use &lt;xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;:
+            All ProjectEntity: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"FindProject"&lt;/code&gt;&lt;/pre&gt;
+            Activities: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"ProjectActivity"&lt;/code&gt;&lt;/pre&gt; with restriction &lt;pre&gt;&lt;code class="lang-csharp"&gt;"projectId eq " + id&lt;/code&gt;&lt;/pre&gt;.
+            Guide: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"ProjectGuide"&lt;/code&gt;&lt;/pre&gt; with restriction &lt;pre&gt;&lt;code class="lang-csharp"&gt;"projectId eq " + id&lt;/code&gt;&lt;/pre&gt;.
+            Members: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"ProjectMember"&lt;/code&gt;&lt;/pre&gt; with restriction &lt;pre&gt;&lt;code class="lang-csharp"&gt;"projectId eq " + id&lt;/code&gt;&lt;/pre&gt;.
+            Contacts: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"ContactProjects"&lt;/code&gt;&lt;/pre&gt; with restriction &lt;pre&gt;&lt;code class="lang-csharp"&gt;"projectId eq " + id&lt;/code&gt;&lt;/pre&gt;.
+            Links: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"Links"&lt;/code&gt;&lt;/pre&gt; with restriction &lt;pre&gt;&lt;code class="lang-csharp"&gt;"sourceProjectRestrictionId eq " + id&lt;/code&gt;&lt;/pre&gt;.
 
 ## Constructors
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity__ctor"></a> ProjectEntity\(\)
+### ProjectEntity\(\) {#SuperOffice_WebApi_Data_ProjectEntity__ctor}
 
 Default constructor - defaults any enum props to 0.
 
@@ -57,7 +57,7 @@ public ProjectEntity()
 
 ## Properties
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_ActiveErpLinks"></a> ActiveErpLinks
+### ActiveErpLinks {#SuperOffice_WebApi_Data_ProjectEntity_ActiveErpLinks}
 
 The number of active erp links
 
@@ -69,7 +69,7 @@ public virtual int ActiveErpLinks { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_ActiveLinks"></a> ActiveLinks
+### ActiveLinks {#SuperOffice_WebApi_Data_ProjectEntity_ActiveLinks}
 
 Number of active links to documents, other appointments, and such
 
@@ -81,7 +81,7 @@ public virtual uint ActiveLinks { get; set; }
 
  [uint](https://learn.microsoft.com/dotnet/api/system.uint32)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_ActiveStatusMonitorId"></a> ActiveStatusMonitorId
+### ActiveStatusMonitorId {#SuperOffice_WebApi_Data_ProjectEntity_ActiveStatusMonitorId}
 
 Active status monitor identity with the lowest rank for project
 
@@ -93,10 +93,10 @@ public virtual int ActiveStatusMonitorId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_Associate"></a> Associate
+### Associate {#SuperOffice_WebApi_Data_ProjectEntity_Associate}
 
 The person that created the project
-<p>Use MDO List name "associate" to get list items.</p>
+&lt;p&gt;Use MDO List name "associate" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual Associate Associate { get; set; }
@@ -106,7 +106,7 @@ public virtual Associate Associate { get; set; }
 
  [Associate](SuperOffice.WebApi.Data.Associate.md)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_Completed"></a> Completed
+### Completed {#SuperOffice_WebApi_Data_ProjectEntity_Completed}
 
 Done (0=false, 1=true). Status implies changes in which fields are shown in GUI, as well as which fields can be updated
 
@@ -118,7 +118,7 @@ public virtual bool Completed { get; set; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_CreatedBy"></a> CreatedBy
+### CreatedBy {#SuperOffice_WebApi_Data_ProjectEntity_CreatedBy}
 
 The person that created the project
 
@@ -130,7 +130,7 @@ public virtual Associate CreatedBy { get; set; }
 
  [Associate](SuperOffice.WebApi.Data.Associate.md)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_CreatedDate"></a> CreatedDate
+### CreatedDate {#SuperOffice_WebApi_Data_ProjectEntity_CreatedDate}
 
 Registered date
 
@@ -142,11 +142,11 @@ public virtual DateTime CreatedDate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_CustomFields"></a> CustomFields
+### CustomFields {#SuperOffice_WebApi_Data_ProjectEntity_CustomFields}
 
 Udef + Extra fields added to the carrier. Extra fields as defined by changes to database schema + user-defined fields as defined by admin.
 Custom fields combines user defined fields and extra fields into one bucket. 
-The individual <xref href="SuperOffice.WebApi.Data.ProjectEntity.ExtraFields" data-throw-if-not-resolved="false"></xref> and <xref href="SuperOffice.WebApi.Data.ProjectEntity.UserDefinedFields?text=UserDefinedFields" data-throw-if-not-resolved="false"></xref> properties are deprecated in favor of this
+The individual &lt;xref href="SuperOffice.WebApi.Data.ProjectEntity.ExtraFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; and &lt;xref href="SuperOffice.WebApi.Data.ProjectEntity.UserDefinedFields?text=UserDefinedFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; properties are deprecated in favor of this
 combined collection.
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
 
@@ -161,15 +161,15 @@ public virtual StringDictionary CustomFields { get; set; }
 #### Remarks
 
 The naming convention of the key string is as follows:
-<table><tbody><tr><td class="term">Extra field data</td><td class="description">
-       [Extra field name]<p></p>
-       Example: <pre><code class="lang-csharp">'x_gorp' = '[I:123]'</code></pre>
-       </td></tr><tr><td class="term">User defined field data</td><td class="description">
-       [Prog-id name]<p></p>
-    Example: <pre><code class="lang-csharp">'SuperOffice:1' = '[I:123]'</code></pre><p></p>
-       </td></tr></tbody></table>
+&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="term"&gt;Extra field data&lt;/td&gt;&lt;td class="description"&gt;
+       [Extra field name]&lt;p&gt;&lt;/p&gt;
+       Example: &lt;pre&gt;&lt;code class="lang-csharp"&gt;'x_gorp' = '[I:123]'&lt;/code&gt;&lt;/pre&gt;
+       &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;User defined field data&lt;/td&gt;&lt;td class="description"&gt;
+       [Prog-id name]&lt;p&gt;&lt;/p&gt;
+    Example: &lt;pre&gt;&lt;code class="lang-csharp"&gt;'SuperOffice:1' = '[I:123]'&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
+       &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_Description"></a> Description
+### Description {#SuperOffice_WebApi_Data_ProjectEntity_Description}
 
 The actual text, max 2047 significant characters even though it is stored as a larger data type on some databases
 
@@ -181,7 +181,7 @@ public virtual string Description { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_EndDate"></a> EndDate
+### EndDate {#SuperOffice_WebApi_Data_ProjectEntity_EndDate}
 
 Planned end date for project, inhertied from type and later editable
 
@@ -193,7 +193,7 @@ public virtual DateTime EndDate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_EventId"></a> EventId
+### EventId {#SuperOffice_WebApi_Data_ProjectEntity_EventId}
 
 Reserved field for Lyyti event when project is linked to an event.
 
@@ -205,9 +205,9 @@ public virtual int EventId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_ExtraFields"></a> ExtraFields
+### ExtraFields {#SuperOffice_WebApi_Data_ProjectEntity_ExtraFields}
 
-Deprecated: Use <xref href="SuperOffice.WebApi.Data.ProjectEntity.CustomFields" data-throw-if-not-resolved="false"></xref> instead.
+Deprecated: Use &lt;xref href="SuperOffice.WebApi.Data.ProjectEntity.CustomFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instead.
 Extra fields added to the carrier. This could be data from Plug-ins, the foreign key system, external applications, etc.
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
 
@@ -222,23 +222,23 @@ public virtual StringDictionary ExtraFields { get; set; }
 #### Remarks
 
 The naming convention of the key string is as follows:
-<table><tbody><tr><td class="term">Plug-in data</td><td class="description">
+&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="term"&gt;Plug-in data&lt;/td&gt;&lt;td class="description"&gt;
        [Plug-in name].[Property name]
        Example: DocumentPlugin.DocumentType
-       </td></tr><tr><td class="term">Foreign key data</td><td class="description">
+       &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;Foreign key data&lt;/td&gt;&lt;td class="description"&gt;
        The device identity is appended directly to the device name if it exists. 
     This is not commonly used, but the database opens for this as a possibility to have several devices with the same name, 
     and hence we would ensure an unique key if this field is used.
     Example: Audience.SecretService.DefaultCountry
-    </td></tr><tr><td class="term">User defined table data</td><td class="description">
+    &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;User defined table data&lt;/td&gt;&lt;td class="description"&gt;
        [Table name].[Field name]
        Example: Phunneling.AggregatedSales
-       </td></tr><tr><td class="term">Other</td><td class="description">
+       &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;Other&lt;/td&gt;&lt;td class="description"&gt;
        Other data sources must ensure an unique name. If the key already exists we do not add the data to the dictionary. 
        We also ensure that SuperOffice data are added first, so that existing data doesnt change when more data sources are added (with duplicate data keys).
-       </td></tr></tbody></table>
+       &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_HasImage"></a> HasImage
+### HasImage {#SuperOffice_WebApi_Data_ProjectEntity_HasImage}
 
 True if the project has an image. (This is the image that is displayed in the CRM client)
 
@@ -250,7 +250,7 @@ public virtual bool HasImage { get; set; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_ImageDescription"></a> ImageDescription
+### ImageDescription {#SuperOffice_WebApi_Data_ProjectEntity_ImageDescription}
 
 Description of the project image if it exists. (This is the image that is displayed in the CRM client)
 
@@ -262,7 +262,7 @@ public virtual string ImageDescription { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_IsPublished"></a> IsPublished
+### IsPublished {#SuperOffice_WebApi_Data_ProjectEntity_IsPublished}
 
 Publication is published
 
@@ -274,7 +274,7 @@ public virtual bool IsPublished { get; set; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_Links"></a> Links
+### Links {#SuperOffice_WebApi_Data_ProjectEntity_Links}
 
 List of all elements linked to the project
 
@@ -286,7 +286,7 @@ public virtual Link[] Links { get; set; }
 
  [Link](SuperOffice.WebApi.Data.Link.md)\[\]
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_Name"></a> Name
+### Name {#SuperOffice_WebApi_Data_ProjectEntity_Name}
 
 Project name
 
@@ -298,7 +298,7 @@ public virtual string Name { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_NextMilestoneDate"></a> NextMilestoneDate
+### NextMilestoneDate {#SuperOffice_WebApi_Data_ProjectEntity_NextMilestoneDate}
 
 Calculated date, reflects date of closest non-complete future milestone activity
 
@@ -310,7 +310,7 @@ public virtual DateTime NextMilestoneDate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_NmdAppointmentId"></a> NmdAppointmentId
+### NmdAppointmentId {#SuperOffice_WebApi_Data_ProjectEntity_NmdAppointmentId}
 
 ID of appointment that "caused" the nextMilestoneDate, can be 0
 
@@ -322,7 +322,7 @@ public virtual int NmdAppointmentId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_Postit"></a> Postit
+### Postit {#SuperOffice_WebApi_Data_ProjectEntity_Postit}
 
 The actual text, max 2047 significant characters even though it is stored as a larger data type on some databases
 
@@ -334,7 +334,7 @@ public virtual string Postit { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_ProjectId"></a> ProjectId
+### ProjectId {#SuperOffice_WebApi_Data_ProjectEntity_ProjectId}
 
 Primary key
 
@@ -346,7 +346,7 @@ public virtual int ProjectId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_ProjectMembers"></a> ProjectMembers
+### ProjectMembers {#SuperOffice_WebApi_Data_ProjectEntity_ProjectMembers}
 
 The persons which are members of the project
 
@@ -358,7 +358,7 @@ public virtual ProjectMember[] ProjectMembers { get; set; }
 
  [ProjectMember](SuperOffice.WebApi.Data.ProjectMember.md)\[\]
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_ProjectNumber"></a> ProjectNumber
+### ProjectNumber {#SuperOffice_WebApi_Data_ProjectEntity_ProjectNumber}
 
 Automatically generated number
 
@@ -370,10 +370,10 @@ public virtual string ProjectNumber { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_ProjectStatus"></a> ProjectStatus
+### ProjectStatus {#SuperOffice_WebApi_Data_ProjectEntity_ProjectStatus}
 
 Project status is a list defined by the database administrator. Different statuses of a project may be: “In planning”, “Started”, “Finished” and so on
-<p>Use MDO List name "projectstatus" to get list items.</p>
+&lt;p&gt;Use MDO List name "projectstatus" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual ProjectStatus ProjectStatus { get; set; }
@@ -383,10 +383,10 @@ public virtual ProjectStatus ProjectStatus { get; set; }
 
  [ProjectStatus](SuperOffice.WebApi.Data.ProjectStatus.md)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_ProjectType"></a> ProjectType
+### ProjectType {#SuperOffice_WebApi_Data_ProjectEntity_ProjectType}
 
 Project type is a list defined by the database admin. for example: 'Large', 'Small', 'Party'...
-<p>Use MDO List name "projecttype" to get list items.</p>
+&lt;p&gt;Use MDO List name "projecttype" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual ProjectType ProjectType { get; set; }
@@ -396,7 +396,7 @@ public virtual ProjectType ProjectType { get; set; }
 
  [ProjectType](SuperOffice.WebApi.Data.ProjectType.md)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_PublishEventDate"></a> PublishEventDate
+### PublishEventDate {#SuperOffice_WebApi_Data_ProjectEntity_PublishEventDate}
 
 Publish event date
 
@@ -408,7 +408,7 @@ public virtual DateTime PublishEventDate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_PublishFrom"></a> PublishFrom
+### PublishFrom {#SuperOffice_WebApi_Data_ProjectEntity_PublishFrom}
 
 Publication valid from (inclusive)
 
@@ -420,7 +420,7 @@ public virtual DateTime PublishFrom { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_PublishTo"></a> PublishTo
+### PublishTo {#SuperOffice_WebApi_Data_ProjectEntity_PublishTo}
 
 Publication valid to (inclusive)
 
@@ -432,7 +432,7 @@ public virtual DateTime PublishTo { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_StartDate"></a> StartDate
+### StartDate {#SuperOffice_WebApi_Data_ProjectEntity_StartDate}
 
 Reserved field for Lyyti event when project is linked to an event, is the event start date.
 
@@ -444,7 +444,7 @@ public virtual DateTime StartDate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_UpdatedBy"></a> UpdatedBy
+### UpdatedBy {#SuperOffice_WebApi_Data_ProjectEntity_UpdatedBy}
 
 The person that last updated the project
 
@@ -456,7 +456,7 @@ public virtual Associate UpdatedBy { get; set; }
 
  [Associate](SuperOffice.WebApi.Data.Associate.md)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_UpdatedDate"></a> UpdatedDate
+### UpdatedDate {#SuperOffice_WebApi_Data_ProjectEntity_UpdatedDate}
 
 Last updated date
 
@@ -468,7 +468,7 @@ public virtual DateTime UpdatedDate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_Urls"></a> Urls
+### Urls {#SuperOffice_WebApi_Data_ProjectEntity_Urls}
 
 The project's internet adresses
 
@@ -480,9 +480,9 @@ public virtual EntityElement[] Urls { get; set; }
 
  [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
 
-### <a id="SuperOffice_WebApi_Data_ProjectEntity_UserDefinedFields"></a> UserDefinedFields
+### UserDefinedFields {#SuperOffice_WebApi_Data_ProjectEntity_UserDefinedFields}
 
-Deprecated: Use <xref href="SuperOffice.WebApi.Data.ProjectEntity.CustomFields" data-throw-if-not-resolved="false"></xref> instead.
+Deprecated: Use &lt;xref href="SuperOffice.WebApi.Data.ProjectEntity.CustomFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instead.
 Dictionary of user defined field data.
 The key string is the ProgId of the UdefField, or if the ProgId is empty it is a string of the format "SuperOffice:[UdefFieldIdentity]", e.g. "SuperOffice:1234"
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".

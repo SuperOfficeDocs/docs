@@ -1,11 +1,11 @@
-# <a id="SuperOffice_WebApi_Agents_IUserAgent"></a> Interface IUserAgent
+# Interface IUserAgent {#SuperOffice_WebApi_Agents_IUserAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 User administration
-<p></p>
-<b>Online Restricted:</b> This agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; This agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 public interface IUserAgent : IAgentBase, IDisposable
@@ -18,10 +18,10 @@ public interface IUserAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_AddOwnerContactAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> AddOwnerContactAsync\(int, RequestOptions\)
+### AddOwnerContactAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_AddOwnerContactAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task AddOwnerContactAsync(int contactId, RequestOptions requestOptions = null)
@@ -41,11 +41,11 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_CanChangePasswordAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> CanChangePasswordAsync\(int, RequestOptions\)
+### CanChangePasswordAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_CanChangePasswordAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Check if the current assoicate can change the password for an associate
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<bool> CanChangePasswordAsync(int associateId, RequestOptions requestOptions = null)
@@ -63,15 +63,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 True if the associate can change the password
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_ChangeOwnPasswordAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> ChangeOwnPasswordAsync\(string, string, RequestOptions\)
+### ChangeOwnPasswordAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_ChangeOwnPasswordAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Change password for a user.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<bool> ChangeOwnPasswordAsync(string oldPassword, string newPassword, RequestOptions requestOptions = null)
@@ -93,15 +93,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 True if the password was successfully changed.
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_ChangePasswordAsync_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> ChangePasswordAsync\(int, string, string, RequestOptions\)
+### ChangePasswordAsync\(int, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_ChangePasswordAsync_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Change password for a user.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<bool> ChangePasswordAsync(int associateId, string oldPassword, string newPassword, RequestOptions requestOptions = null)
@@ -127,15 +127,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 True if the password was successfully changed.
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_ChangePasswordFromNameAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> ChangePasswordFromNameAsync\(string, string, string, RequestOptions\)
+### ChangePasswordFromNameAsync\(string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_ChangePasswordFromNameAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Change password for a user.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<bool> ChangePasswordFromNameAsync(string associateName, string oldPassword, string newPassword, RequestOptions requestOptions = null)
@@ -161,15 +161,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 True if the password was successfully changed.
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_ChangeUserTypeAsync_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_Data_UserType_SuperOffice_WebApi_RequestOptions_"></a> ChangeUserTypeAsync\(User, UserType, RequestOptions\)
+### ChangeUserTypeAsync\(User, UserType, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_ChangeUserTypeAsync_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_Data_UserType_SuperOffice_WebApi_RequestOptions_}
 
 Get a user from the user name.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<User> ChangeUserTypeAsync(User user, UserType userType, RequestOptions requestOptions = null)
@@ -189,15 +189,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[User](SuperOffice.WebApi.Data.User.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[User](SuperOffice.WebApi.Data.User.md)\&gt;
 
 User retrieved by name
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_CheckAccessGatewayRegistrationAsync_SuperOffice_WebApi_RequestOptions_"></a> CheckAccessGatewayRegistrationAsync\(RequestOptions\)
+### CheckAccessGatewayRegistrationAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_CheckAccessGatewayRegistrationAsync_SuperOffice_WebApi_RequestOptions_}
 
 Checks if AccessGatewayRegistration is valid
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<bool> CheckAccessGatewayRegistrationAsync(RequestOptions requestOptions = null)
@@ -211,11 +211,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 True if the registration is usable
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_CreateDefaultRoleEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultRoleEntityAsync\(RequestOptions\)
+### CreateDefaultRoleEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_CreateDefaultRoleEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new RoleEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -232,15 +232,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[RoleEntity](SuperOffice.WebApi.Data.RoleEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RoleEntity](SuperOffice.WebApi.Data.RoleEntity.md)\&gt;
 
 A blank RoleEntity
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_CreateDefaultRoleEntityFromTypeAsync_SuperOffice_WebApi_Data_RoleType_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultRoleEntityFromTypeAsync\(RoleType, RequestOptions\)
+### CreateDefaultRoleEntityFromTypeAsync\(RoleType, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_CreateDefaultRoleEntityFromTypeAsync_SuperOffice_WebApi_Data_RoleType_SuperOffice_WebApi_RequestOptions_}
 
 Create a new role entity of the specified role type. The role type cannot be changed after the entity is created.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<RoleEntity> CreateDefaultRoleEntityFromTypeAsync(RoleType type, RequestOptions requestOptions = null)
@@ -258,11 +258,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[RoleEntity](SuperOffice.WebApi.Data.RoleEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RoleEntity](SuperOffice.WebApi.Data.RoleEntity.md)\&gt;
 
 A blank role.
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_CreateDefaultServiceAuthAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultServiceAuthAsync\(RequestOptions\)
+### CreateDefaultServiceAuthAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_CreateDefaultServiceAuthAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new ServiceAuth.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -279,11 +279,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ServiceAuth](SuperOffice.WebApi.Data.ServiceAuth.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ServiceAuth](SuperOffice.WebApi.Data.ServiceAuth.md)\&gt;
 
 A blank ServiceAuth
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_CreateDefaultUntrustedCredentialsAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultUntrustedCredentialsAsync\(RequestOptions\)
+### CreateDefaultUntrustedCredentialsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_CreateDefaultUntrustedCredentialsAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new UntrustedCredentials.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -300,11 +300,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UntrustedCredentials](SuperOffice.WebApi.Data.UntrustedCredentials.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UntrustedCredentials](SuperOffice.WebApi.Data.UntrustedCredentials.md)\&gt;
 
 A blank UntrustedCredentials
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_CreateDefaultUserAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultUserAsync\(RequestOptions\)
+### CreateDefaultUserAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_CreateDefaultUserAsync_SuperOffice_WebApi_RequestOptions_}
 
 Set default values into a new User.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -321,15 +321,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[User](SuperOffice.WebApi.Data.User.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[User](SuperOffice.WebApi.Data.User.md)\&gt;
 
 A blank User
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_CreateDefaultUserFromUserTypeAndCredentialAsync_SuperOffice_WebApi_Data_UserType_System_Int32_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultUserFromUserTypeAndCredentialAsync\(UserType, int, string, string, string, RequestOptions\)
+### CreateDefaultUserFromUserTypeAndCredentialAsync\(UserType, int, string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_CreateDefaultUserFromUserTypeAndCredentialAsync_SuperOffice_WebApi_Data_UserType_System_Int32_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Creates a PersonEntity with default values based on the contactId and credentials.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<User> CreateDefaultUserFromUserTypeAndCredentialAsync(UserType userType, int contactId, string credentialType, string credentialValue, string credentialDisplayValue, RequestOptions requestOptions = null)
@@ -363,13 +363,13 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[User](SuperOffice.WebApi.Data.User.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[User](SuperOffice.WebApi.Data.User.md)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_CreateDefaultUserFromUserTypeAndPersonIdAsync_SuperOffice_WebApi_Data_UserType_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultUserFromUserTypeAndPersonIdAsync\(UserType, int, RequestOptions\)
+### CreateDefaultUserFromUserTypeAndPersonIdAsync\(UserType, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_CreateDefaultUserFromUserTypeAndPersonIdAsync_SuperOffice_WebApi_Data_UserType_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Create default User providing the associate type and person id.  System and Anonymous users can be created without an exsisting person and permits person id to be 0.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<User> CreateDefaultUserFromUserTypeAndPersonIdAsync(UserType userType, int personId, RequestOptions requestOptions = null)
@@ -391,15 +391,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[User](SuperOffice.WebApi.Data.User.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[User](SuperOffice.WebApi.Data.User.md)\&gt;
 
 New user object with defalt values set.
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_CreateDefaultUserFromUserTypeAsync_SuperOffice_WebApi_Data_UserType_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultUserFromUserTypeAsync\(UserType, RequestOptions\)
+### CreateDefaultUserFromUserTypeAsync\(UserType, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_CreateDefaultUserFromUserTypeAsync_SuperOffice_WebApi_Data_UserType_SuperOffice_WebApi_RequestOptions_}
 
 Create default User providing the user type.  Only System and Anonymous users can be created without an exsisting person.  Use CreateDefaultUserFromUserTypeAndPersonId to create internal (i.e. Employee) or external users.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<User> CreateDefaultUserFromUserTypeAsync(UserType userType, RequestOptions requestOptions = null)
@@ -417,15 +417,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[User](SuperOffice.WebApi.Data.User.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[User](SuperOffice.WebApi.Data.User.md)\&gt;
 
 New user object with defalt values set.
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_CreateExternalUserAsync_System_Int32_System_String_System_String_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> CreateExternalUserAsync\(int, string, string, int, bool, RequestOptions\)
+### CreateExternalUserAsync\(int, string, string, int, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_CreateExternalUserAsync_System_Int32_System_String_System_String_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Creates an associate of type external user.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<int> CreateExternalUserAsync(int personId, string userName, string password, int roleId, bool isActive, RequestOptions requestOptions = null)
@@ -459,15 +459,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
 
 Returns the created associateId.
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_CreateUserGroupAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateUserGroupAsync\(RequestOptions\)
+### CreateUserGroupAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_CreateUserGroupAsync_SuperOffice_WebApi_RequestOptions_}
 
 Create UserGroup (Rank is assigned to the highest rank)
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<UserGroup> CreateUserGroupAsync(RequestOptions requestOptions = null)
@@ -481,13 +481,13 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserGroup](SuperOffice.WebApi.Data.UserGroup.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserGroup](SuperOffice.WebApi.Data.UserGroup.md)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_DecryptAndSaveExternalTokensAsync_SuperOffice_WebApi_Data_TokenManagementInfo_SuperOffice_WebApi_RequestOptions_"></a> DecryptAndSaveExternalTokensAsync\(TokenManagementInfo, RequestOptions\)
+### DecryptAndSaveExternalTokensAsync\(TokenManagementInfo, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_DecryptAndSaveExternalTokensAsync_SuperOffice_WebApi_Data_TokenManagementInfo_SuperOffice_WebApi_RequestOptions_}
 
 First asks AccessGateway to decrypt the tokens, then saves the external tokens to the DB and returns a key that can be used to retrieve them
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<string> DecryptAndSaveExternalTokensAsync(TokenManagementInfo tokenManagementInfo, RequestOptions requestOptions = null)
@@ -505,15 +505,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Key that can be used to retrieve the tokens
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_DeleteCredentialAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> DeleteCredentialAsync\(int, string, RequestOptions\)
+### DeleteCredentialAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_DeleteCredentialAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Remove credential of a specific type for a user
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<bool> DeleteCredentialAsync(int userId, string credentialType, RequestOptions requestOptions = null)
@@ -535,15 +535,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 True if credential was sucessfully removed.
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_DeleteExternalUserAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteExternalUserAsync\(int, RequestOptions\)
+### DeleteExternalUserAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_DeleteExternalUserAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes an associate of type external user.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task DeleteExternalUserAsync(int associateId, RequestOptions requestOptions = null)
@@ -563,11 +563,11 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_DeleteRoleAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteRoleAsync\(int, int, RequestOptions\)
+### DeleteRoleAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_DeleteRoleAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Delete the specified role and move all users associated with the role to the replacingRoleId
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task DeleteRoleAsync(int roleIdToDelete, int replacingRoleId, RequestOptions requestOptions = null)
@@ -591,11 +591,11 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_DeleteServiceAuthAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteServiceAuthAsync\(int, RequestOptions\)
+### DeleteServiceAuthAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_DeleteServiceAuthAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the ServiceAuth
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task DeleteServiceAuthAsync(int serviceAuthId, RequestOptions requestOptions = null)
@@ -615,11 +615,11 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_DeleteUserAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteUserAsync\(int, RequestOptions\)
+### DeleteUserAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_DeleteUserAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Deletes the User
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task DeleteUserAsync(int userId, RequestOptions requestOptions = null)
@@ -639,11 +639,11 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_DeleteUserFromNameAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> DeleteUserFromNameAsync\(string, RequestOptions\)
+### DeleteUserFromNameAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_DeleteUserFromNameAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Delete a user, with lookup based on the user name.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task DeleteUserFromNameAsync(string userName, RequestOptions requestOptions = null)
@@ -665,11 +665,11 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_DeleteUserGroupAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteUserGroupAsync\(int, int, RequestOptions\)
+### DeleteUserGroupAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_DeleteUserGroupAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Delete a usergroup and move its members to another usergroup
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task DeleteUserGroupAsync(int userGroupToDelete, int userGroupToMoveTo, RequestOptions requestOptions = null)
@@ -693,11 +693,11 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_ExchangeCodeAndSaveTokensAsync_System_String_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> ExchangeCodeAndSaveTokensAsync\(string, string, string, string, string, RequestOptions\)
+### ExchangeCodeAndSaveTokensAsync\(string, string, string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_ExchangeCodeAndSaveTokensAsync_System_String_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Exchanges an authorization code for tokens.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<string> ExchangeCodeAndSaveTokensAsync(string provider, string authorizationCode, string nonce, string pkceVerifier, string redirectUri, RequestOptions requestOptions = null)
@@ -731,15 +731,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Reference to the key for the tokens in the database, and extracted claims.
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_ExecuteUserCommandAsync_System_String_SuperOffice_WebApi_Data_CommandActionResult_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_"></a> ExecuteUserCommandAsync\(string, CommandActionResult, User, RequestOptions\)
+### ExecuteUserCommandAsync\(string, CommandActionResult, User, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_ExecuteUserCommandAsync_System_String_SuperOffice_WebApi_Data_CommandActionResult_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_}
 
 Executes the custom command for User
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<CommandResult> ExecuteUserCommandAsync(string commandName, CommandActionResult actionResult, User user, RequestOptions requestOptions = null)
@@ -765,15 +765,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CommandResult](SuperOffice.WebApi.Data.CommandResult.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CommandResult](SuperOffice.WebApi.Data.CommandResult.md)\&gt;
 
 Result of the executed command
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_FindCredentialUsersAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> FindCredentialUsersAsync\(string, string, RequestOptions\)
+### FindCredentialUsersAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_FindCredentialUsersAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Find users matching the partial name.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<CredentialsGroupUsers> FindCredentialUsersAsync(string type, string searchString, RequestOptions requestOptions = null)
@@ -795,13 +795,13 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CredentialsGroupUsers](SuperOffice.WebApi.Data.CredentialsGroupUsers.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CredentialsGroupUsers](SuperOffice.WebApi.Data.CredentialsGroupUsers.md)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_FindCredentialsGroupsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> FindCredentialsGroupsAsync\(string, string, RequestOptions\)
+### FindCredentialsGroupsAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_FindCredentialsGroupsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get user groups holding users filtered by the searchString.  This method is only relevant if the CredentialType control is of type link.  There will allways be at least one groups even if the underlying provider does not support groups.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<CredentialsGroup[]> FindCredentialsGroupsAsync(string type, string searchString, RequestOptions requestOptions = null)
@@ -823,13 +823,13 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CredentialsGroup](SuperOffice.WebApi.Data.CredentialsGroup.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CredentialsGroup](SuperOffice.WebApi.Data.CredentialsGroup.md)\[\]\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_FindRolesWithFunctionalRightAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> FindRolesWithFunctionalRightAsync\(string, RequestOptions\)
+### FindRolesWithFunctionalRightAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_FindRolesWithFunctionalRightAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Find all roles with a given functional right. The roles matched must contain the specified functional right. 
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<MDOListItem[]> FindRolesWithFunctionalRightAsync(string functionalRightName, RequestOptions requestOptions = null)
@@ -847,15 +847,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MDOListItem](SuperOffice.WebApi.Data.MDOListItem.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MDOListItem](SuperOffice.WebApi.Data.MDOListItem.md)\[\]\&gt;
 
 Roles that contains the given functional right
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_FindRolesWithFunctionalRightsAsync_System_String___SuperOffice_WebApi_RequestOptions_"></a> FindRolesWithFunctionalRightsAsync\(string\[\], RequestOptions\)
+### FindRolesWithFunctionalRightsAsync\(string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_FindRolesWithFunctionalRightsAsync_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Find all roles with a given set of functional rights. The roles matched must contain one or more of the specified functional rights. 
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<int[]> FindRolesWithFunctionalRightsAsync(string[] functionalRightNames, RequestOptions requestOptions = null)
@@ -873,15 +873,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]\&gt;
 
 Role ids that contains your functional rights
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_FindRolesWithoutFunctionalRightsAsync_System_String___SuperOffice_WebApi_RequestOptions_"></a> FindRolesWithoutFunctionalRightsAsync\(string\[\], RequestOptions\)
+### FindRolesWithoutFunctionalRightsAsync\(string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_FindRolesWithoutFunctionalRightsAsync_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Find all roles without a given set of functional rights. The roles matched must not contain any of the specified functional rights. 
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<int[]> FindRolesWithoutFunctionalRightsAsync(string[] functionalRightNames, RequestOptions requestOptions = null)
@@ -899,15 +899,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]\&gt;
 
 Role ids that without your functional rights
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GenerateNewPasswordForExternalUserAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GenerateNewPasswordForExternalUserAsync\(string, RequestOptions\)
+### GenerateNewPasswordForExternalUserAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GenerateNewPasswordForExternalUserAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Generates a new password for an external user.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<string> GenerateNewPasswordForExternalUserAsync(string associateName, RequestOptions requestOptions = null)
@@ -925,15 +925,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Returns the generated password.
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetAccessGatewayInfoAsync_SuperOffice_WebApi_RequestOptions_"></a> GetAccessGatewayInfoAsync\(RequestOptions\)
+### GetAccessGatewayInfoAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetAccessGatewayInfoAsync_SuperOffice_WebApi_RequestOptions_}
 
 Returns accessgateway registration info
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<AccessGatewayInfo> GetAccessGatewayInfoAsync(RequestOptions requestOptions = null)
@@ -947,13 +947,13 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[AccessGatewayInfo](SuperOffice.WebApi.Data.AccessGatewayInfo.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AccessGatewayInfo](SuperOffice.WebApi.Data.AccessGatewayInfo.md)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetAccessTokenAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetAccessTokenAsync\(string, bool, RequestOptions\)
+### GetAccessTokenAsync\(string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetAccessTokenAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Get an access token based on the current user's session.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<string> GetAccessTokenAsync(string app_token, bool includeCsSession, RequestOptions requestOptions = null)
@@ -975,15 +975,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 An access token. "8A:xyz123=="
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetAllDataRightsAsync_System_Int32_SuperOffice_WebApi_Data_RoleRelationToOwner_SuperOffice_WebApi_RequestOptions_"></a> GetAllDataRightsAsync\(int, RoleRelationToOwner, RequestOptions\)
+### GetAllDataRightsAsync\(int, RoleRelationToOwner, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetAllDataRightsAsync_System_Int32_SuperOffice_WebApi_Data_RoleRelationToOwner_SuperOffice_WebApi_RequestOptions_}
 
 Get a list of all data rights for the given role, filtered by relation to owner. MDO List name = 'DataRights', extra='roleType=0'.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<StringDictionary> GetAllDataRightsAsync(int roleId, RoleRelationToOwner relationToOwner, RequestOptions requestOptions = null)
@@ -1005,15 +1005,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\&gt;
 
 The CRUD rights (C, CR, CRU, or CRUD) for each table related to the given role and relation to owner.
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetAllFunctionalRightsAsync_SuperOffice_WebApi_Data_RoleType_SuperOffice_WebApi_RequestOptions_"></a> GetAllFunctionalRightsAsync\(RoleType, RequestOptions\)
+### GetAllFunctionalRightsAsync\(RoleType, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetAllFunctionalRightsAsync_SuperOffice_WebApi_Data_RoleType_SuperOffice_WebApi_RequestOptions_}
 
 Get a list of all functional rights for the given type of role. MDO List name = 'FunctionRights', extra='roleType=0' 
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<SelectableMDOListItem[]> GetAllFunctionalRightsAsync(RoleType roleType, RequestOptions requestOptions = null)
@@ -1031,15 +1031,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]\&gt;
 
 FunctionRight items with name and description. Code name for function right is in the extra-info property.
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetAllRolesAsync_SuperOffice_WebApi_Data_RoleType_SuperOffice_WebApi_RequestOptions_"></a> GetAllRolesAsync\(RoleType, RequestOptions\)
+### GetAllRolesAsync\(RoleType, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetAllRolesAsync_SuperOffice_WebApi_Data_RoleType_SuperOffice_WebApi_RequestOptions_}
 
 Get a list of all roles for the given type of role. MDO List name = 'Roles', extra='0' (roleType) 
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<SelectableMDOListItem[]> GetAllRolesAsync(RoleType roleType, RequestOptions requestOptions = null)
@@ -1057,15 +1057,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]\&gt;
 
 FunctionRight items with name and description. Code name for function right is in the extra-info property.
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetAllUserGroupsAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetAllUserGroupsAsync\(bool, RequestOptions\)
+### GetAllUserGroupsAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetAllUserGroupsAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Get all user groups
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<UserGroup[]> GetAllUserGroupsAsync(bool includeDeleted, RequestOptions requestOptions = null)
@@ -1083,15 +1083,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserGroup](SuperOffice.WebApi.Data.UserGroup.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserGroup](SuperOffice.WebApi.Data.UserGroup.md)\[\]\&gt;
 
 All user groups
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetCredentialTypesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetCredentialTypesAsync\(RequestOptions\)
+### GetCredentialTypesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetCredentialTypesAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get available credential types that can be used for authentication
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<CredentialType[]> GetCredentialTypesAsync(RequestOptions requestOptions = null)
@@ -1105,15 +1105,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CredentialType](SuperOffice.WebApi.Data.CredentialType.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CredentialType](SuperOffice.WebApi.Data.CredentialType.md)\[\]\&gt;
 
 Credential types that can be used for authentication
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetCredentialTypesForUserTypeAsync_SuperOffice_WebApi_Data_UserType_SuperOffice_WebApi_RequestOptions_"></a> GetCredentialTypesForUserTypeAsync\(UserType, RequestOptions\)
+### GetCredentialTypesForUserTypeAsync\(UserType, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetCredentialTypesForUserTypeAsync_SuperOffice_WebApi_Data_UserType_SuperOffice_WebApi_RequestOptions_}
 
 Get available credential types that can be used for the specified user type.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<CredentialType[]> GetCredentialTypesForUserTypeAsync(UserType userType, RequestOptions requestOptions = null)
@@ -1131,15 +1131,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CredentialType](SuperOffice.WebApi.Data.CredentialType.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CredentialType](SuperOffice.WebApi.Data.CredentialType.md)\[\]\&gt;
 
 Credential types that can be used for authentication
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetCredentialUsersInGroupAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetCredentialUsersInGroupAsync\(string, string, RequestOptions\)
+### GetCredentialUsersInGroupAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetCredentialUsersInGroupAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get credential users within a user group
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<CredentialsGroupUsers> GetCredentialUsersInGroupAsync(string type, string groupName, RequestOptions requestOptions = null)
@@ -1161,9 +1161,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CredentialsGroupUsers](SuperOffice.WebApi.Data.CredentialsGroupUsers.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CredentialsGroupUsers](SuperOffice.WebApi.Data.CredentialsGroupUsers.md)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetCurrentPrincipal_SuperOffice_WebApi_RequestOptions_"></a> GetCurrentPrincipal\(RequestOptions\)
+### GetCurrentPrincipal\(RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetCurrentPrincipal_SuperOffice_WebApi_RequestOptions_}
 
 ```csharp
 Task<SoPrincipalCarrier> GetCurrentPrincipal(RequestOptions requestOptions = null)
@@ -1175,9 +1175,9 @@ Task<SoPrincipalCarrier> GetCurrentPrincipal(RequestOptions requestOptions = nul
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SoPrincipalCarrier](SuperOffice.WebApi.Data.SoPrincipalCarrier.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SoPrincipalCarrier](SuperOffice.WebApi.Data.SoPrincipalCarrier.md)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetCurrentToken_SuperOffice_WebApi_RequestOptions_"></a> GetCurrentToken\(RequestOptions\)
+### GetCurrentToken\(RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetCurrentToken_SuperOffice_WebApi_RequestOptions_}
 
 ```csharp
 Task<string> GetCurrentToken(RequestOptions requestOptions = null)
@@ -1189,13 +1189,13 @@ Task<string> GetCurrentToken(RequestOptions requestOptions = null)
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetDataRightAsync_System_Int32_System_String_SuperOffice_WebApi_Data_RoleRelationToOwner_SuperOffice_WebApi_RequestOptions_"></a> GetDataRightAsync\(int, string, RoleRelationToOwner, RequestOptions\)
+### GetDataRightAsync\(int, string, RoleRelationToOwner, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetDataRightAsync_System_Int32_System_String_SuperOffice_WebApi_Data_RoleRelationToOwner_SuperOffice_WebApi_RequestOptions_}
 
 Read one specific data right at the given position. An exception will be thrown if non existing position is specified.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<string> GetDataRightAsync(int roleId, string tableName, RoleRelationToOwner relationToOwner, RequestOptions requestOptions = null)
@@ -1221,15 +1221,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 The data right value at the specified position (C, CR, CRU, or CRUD)
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetDataRightsAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetDataRightsAsync\(int, string, RequestOptions\)
+### GetDataRightsAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetDataRightsAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Read specific a set of data rights at the given row in the rights matrix. An exception will be thrown if non existing position is specified.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<StringDictionary> GetDataRightsAsync(int roleId, string tableName, RequestOptions requestOptions = null)
@@ -1251,15 +1251,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\&gt;
 
 The data right values for all the defined relationships (C, CR, CRU, or CRUD)
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetDefaultAssociateUserNameAsync_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_"></a> GetDefaultAssociateUserNameAsync\(User, RequestOptions\)
+### GetDefaultAssociateUserNameAsync\(User, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetDefaultAssociateUserNameAsync_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_}
 
 Get the default username for a person
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<string> GetDefaultAssociateUserNameAsync(User user, RequestOptions requestOptions = null)
@@ -1275,13 +1275,13 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetExternalTokensAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetExternalTokensAsync\(string, RequestOptions\)
+### GetExternalTokensAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetExternalTokensAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Retrieve the tokens from the DB based on the given key
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<TokenManagementInfo> GetExternalTokensAsync(string key, RequestOptions requestOptions = null)
@@ -1299,15 +1299,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TokenManagementInfo](SuperOffice.WebApi.Data.TokenManagementInfo.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TokenManagementInfo](SuperOffice.WebApi.Data.TokenManagementInfo.md)\&gt;
 
 Key to retrieve tokens
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetFunctionalRightsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetFunctionalRightsAsync\(int, RequestOptions\)
+### GetFunctionalRightsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetFunctionalRightsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get all functional rights for the given role. Functional rights not set on the role are not included. MDO List name = 'FunctionRights', extra='role=123'
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<SelectableMDOListItem[]> GetFunctionalRightsAsync(int roleId, RequestOptions requestOptions = null)
@@ -1325,15 +1325,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]\&gt;
 
 FunctionRight items with name and description. Code name for function right is in the extra-info property.
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetOrRegisterAccessGatewayInfoAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetOrRegisterAccessGatewayInfoAsync\(string, RequestOptions\)
+### GetOrRegisterAccessGatewayInfoAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetOrRegisterAccessGatewayInfoAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Returns accessgateway registration info and registers a new or adds the url if necessary
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<AccessGatewayInfo> GetOrRegisterAccessGatewayInfoAsync(string redirectUri, RequestOptions requestOptions = null)
@@ -1351,13 +1351,13 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[AccessGatewayInfo](SuperOffice.WebApi.Data.AccessGatewayInfo.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AccessGatewayInfo](SuperOffice.WebApi.Data.AccessGatewayInfo.md)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetRoleAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetRoleAsync\(int, RequestOptions\)
+### GetRoleAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetRoleAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific Role object.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<Role> GetRoleAsync(int roleId, RequestOptions requestOptions = null)
@@ -1375,15 +1375,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Role](SuperOffice.WebApi.Data.Role.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Role](SuperOffice.WebApi.Data.Role.md)\&gt;
 
 Role
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetRoleEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetRoleEntityAsync\(int, RequestOptions\)
+### GetRoleEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetRoleEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific RoleEntity object.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<RoleEntity> GetRoleEntityAsync(int roleEntityId, RequestOptions requestOptions = null)
@@ -1401,15 +1401,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[RoleEntity](SuperOffice.WebApi.Data.RoleEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RoleEntity](SuperOffice.WebApi.Data.RoleEntity.md)\&gt;
 
 RoleEntity
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetServiceAuthAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetServiceAuthAsync\(int, RequestOptions\)
+### GetServiceAuthAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetServiceAuthAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific ServiceAuth object.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<ServiceAuth> GetServiceAuthAsync(int serviceAuthId, RequestOptions requestOptions = null)
@@ -1427,15 +1427,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ServiceAuth](SuperOffice.WebApi.Data.ServiceAuth.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ServiceAuth](SuperOffice.WebApi.Data.ServiceAuth.md)\&gt;
 
 ServiceAuth
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetSupportedChangePasswordTypesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetSupportedChangePasswordTypesAsync\(int, RequestOptions\)
+### GetSupportedChangePasswordTypesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetSupportedChangePasswordTypesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get the different methods the user can use to change password
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<ChangePasswordType[]> GetSupportedChangePasswordTypesAsync(int associateId, RequestOptions requestOptions = null)
@@ -1453,15 +1453,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ChangePasswordType](SuperOffice.WebApi.Data.ChangePasswordType.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChangePasswordType](SuperOffice.WebApi.Data.ChangePasswordType.md)\[\]\&gt;
 
 List of types - empty if the user cannot change password in any way
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetUntrustedCredentialsAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetUntrustedCredentialsAsync\(string, RequestOptions\)
+### GetUntrustedCredentialsAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetUntrustedCredentialsAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get a set of credentials of a specified type for authenticated user.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<UntrustedCredentials[]> GetUntrustedCredentialsAsync(string type, RequestOptions requestOptions = null)
@@ -1479,15 +1479,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UntrustedCredentials](SuperOffice.WebApi.Data.UntrustedCredentials.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UntrustedCredentials](SuperOffice.WebApi.Data.UntrustedCredentials.md)\[\]\&gt;
 
 Array of credentials of the specified type.
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetUntrustedCredentialsForAssociateAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetUntrustedCredentialsForAssociateAsync\(int, string, RequestOptions\)
+### GetUntrustedCredentialsForAssociateAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetUntrustedCredentialsForAssociateAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get a set of credentials of a specified type for a specified user. SecretValue is only populated for authenticated user, and system users.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<UntrustedCredentials[]> GetUntrustedCredentialsForAssociateAsync(int associateId, string type, RequestOptions requestOptions = null)
@@ -1509,15 +1509,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UntrustedCredentials](SuperOffice.WebApi.Data.UntrustedCredentials.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UntrustedCredentials](SuperOffice.WebApi.Data.UntrustedCredentials.md)\[\]\&gt;
 
 Array of credentials of the specified type.
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetUserAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetUserAsync\(int, RequestOptions\)
+### GetUserAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetUserAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific User object.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<User> GetUserAsync(int userId, RequestOptions requestOptions = null)
@@ -1535,15 +1535,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[User](SuperOffice.WebApi.Data.User.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[User](SuperOffice.WebApi.Data.User.md)\&gt;
 
 User
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetUserCommandsAsync_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_"></a> GetUserCommandsAsync\(User, RequestOptions\)
+### GetUserCommandsAsync\(User, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetUserCommandsAsync_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_}
 
 Get registered custom commands for User
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<CustomCommand[]> GetUserCommandsAsync(User user, RequestOptions requestOptions = null)
@@ -1561,15 +1561,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomCommand](SuperOffice.WebApi.Data.CustomCommand.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CustomCommand](SuperOffice.WebApi.Data.CustomCommand.md)\[\]\&gt;
 
 Custom commands for the User
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetUserFromEjUserIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetUserFromEjUserIdAsync\(int, RequestOptions\)
+### GetUserFromEjUserIdAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetUserFromEjUserIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get user from ejUserId - used for eJournal Legacy Support.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<User[]> GetUserFromEjUserIdAsync(int ejUserId, RequestOptions requestOptions = null)
@@ -1587,13 +1587,13 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[User](SuperOffice.WebApi.Data.User.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[User](SuperOffice.WebApi.Data.User.md)\[\]\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetUserFromNameAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetUserFromNameAsync\(string, RequestOptions\)
+### GetUserFromNameAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetUserFromNameAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get a user, with lookup based on user name.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<User> GetUserFromNameAsync(string userName, RequestOptions requestOptions = null)
@@ -1611,15 +1611,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[User](SuperOffice.WebApi.Data.User.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[User](SuperOffice.WebApi.Data.User.md)\&gt;
 
 User retrieved by name
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetUserFromPersonIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetUserFromPersonIdAsync\(int, RequestOptions\)
+### GetUserFromPersonIdAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetUserFromPersonIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Returns the user associated with the supplied person id
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<User[]> GetUserFromPersonIdAsync(int personId, RequestOptions requestOptions = null)
@@ -1635,13 +1635,13 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[User](SuperOffice.WebApi.Data.User.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[User](SuperOffice.WebApi.Data.User.md)\[\]\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetUserGroupAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetUserGroupAsync\(int, RequestOptions\)
+### GetUserGroupAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetUserGroupAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific UserGroup object.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<UserGroup> GetUserGroupAsync(int userGroupId, RequestOptions requestOptions = null)
@@ -1659,15 +1659,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserGroup](SuperOffice.WebApi.Data.UserGroup.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserGroup](SuperOffice.WebApi.Data.UserGroup.md)\&gt;
 
 UserGroup
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetUserGroupListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetUserGroupListAsync\(int\[\], RequestOptions\)
+### GetUserGroupListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetUserGroupListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Gets an array of specific UserGroup objects.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<UserGroup[]> GetUserGroupListAsync(int[] userGroupIds, RequestOptions requestOptions = null)
@@ -1685,15 +1685,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserGroup](SuperOffice.WebApi.Data.UserGroup.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserGroup](SuperOffice.WebApi.Data.UserGroup.md)\[\]\&gt;
 
 Array of UserGroup objects
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetUserInfoAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetUserInfoAsync\(int, RequestOptions\)
+### GetUserInfoAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetUserInfoAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Gets a specific UserInfo object.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<UserInfo> GetUserInfoAsync(int userInfoId, RequestOptions requestOptions = null)
@@ -1711,15 +1711,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserInfo](SuperOffice.WebApi.Data.UserInfo.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserInfo](SuperOffice.WebApi.Data.UserInfo.md)\&gt;
 
 UserInfo
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetUserInfoListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetUserInfoListAsync\(int\[\], RequestOptions\)
+### GetUserInfoListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetUserInfoListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Gets an array of specific UserInfo objects.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<UserInfo[]> GetUserInfoListAsync(int[] userInfoIds, RequestOptions requestOptions = null)
@@ -1737,15 +1737,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserInfo](SuperOffice.WebApi.Data.UserInfo.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserInfo](SuperOffice.WebApi.Data.UserInfo.md)\[\]\&gt;
 
 Array of UserInfo objects
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetUserPresenceStatusAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetUserPresenceStatusAsync\(int, RequestOptions\)
+### GetUserPresenceStatusAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetUserPresenceStatusAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get user presence status
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<UserPresenceStatus> GetUserPresenceStatusAsync(int associateId, RequestOptions requestOptions = null)
@@ -1763,14 +1763,14 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserPresenceStatus](SuperOffice.WebApi.Data.UserPresenceStatus.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserPresenceStatus](SuperOffice.WebApi.Data.UserPresenceStatus.md)\&gt;
 
 User presence status
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetValidUserNameAsync_System_Int32_SuperOffice_WebApi_Data_UserType_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetValidUserNameAsync\(int, UserType, int, string, RequestOptions\)
+### GetValidUserNameAsync\(int, UserType, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetValidUserNameAsync_System_Int32_SuperOffice_WebApi_Data_UserType_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<string> GetValidUserNameAsync(int associateId, UserType type, int personId, string userName, RequestOptions requestOptions = null)
@@ -1792,13 +1792,13 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_GetValidUserNameForNewUserAsync_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_"></a> GetValidUserNameForNewUserAsync\(User, RequestOptions\)
+### GetValidUserNameForNewUserAsync\(User, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_GetValidUserNameForNewUserAsync_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_}
 
 Generates a valid username for an unsaved user
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<string> GetValidUserNameForNewUserAsync(User user, RequestOptions requestOptions = null)
@@ -1814,12 +1814,12 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_IsNickNameUniqueAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> IsNickNameUniqueAsync\(int, string, RequestOptions\)
+### IsNickNameUniqueAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_IsNickNameUniqueAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<bool> IsNickNameUniqueAsync(int associateId, string nickName, RequestOptions requestOptions = null)
@@ -1837,12 +1837,12 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_IsPasswordValidAsync_System_Int32_SuperOffice_WebApi_Data_UserType_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> IsPasswordValidAsync\(int, UserType, int, string, RequestOptions\)
+### IsPasswordValidAsync\(int, UserType, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_IsPasswordValidAsync_System_Int32_SuperOffice_WebApi_Data_UserType_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<bool> IsPasswordValidAsync(int associateId, UserType type, int personId, string password, RequestOptions requestOptions = null)
@@ -1864,12 +1864,12 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_IsPasswordValidWithReasonAsync_System_Int32_SuperOffice_WebApi_Data_UserType_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> IsPasswordValidWithReasonAsync\(int, UserType, int, string, RequestOptions\)
+### IsPasswordValidWithReasonAsync\(int, UserType, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_IsPasswordValidWithReasonAsync_System_Int32_SuperOffice_WebApi_Data_UserType_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<UserValidationResult> IsPasswordValidWithReasonAsync(int associateId, UserType type, int personId, string password, RequestOptions requestOptions = null)
@@ -1891,12 +1891,12 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserValidationResult](SuperOffice.WebApi.Data.UserValidationResult.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserValidationResult](SuperOffice.WebApi.Data.UserValidationResult.md)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_IsUserNameValidAsync_System_Int32_SuperOffice_WebApi_Data_UserType_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> IsUserNameValidAsync\(int, UserType, int, string, RequestOptions\)
+### IsUserNameValidAsync\(int, UserType, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_IsUserNameValidAsync_System_Int32_SuperOffice_WebApi_Data_UserType_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<bool> IsUserNameValidAsync(int associateId, UserType type, int personId, string userName, RequestOptions requestOptions = null)
@@ -1918,12 +1918,12 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_IsUserNameValidWithReasonAsync_System_Int32_SuperOffice_WebApi_Data_UserType_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> IsUserNameValidWithReasonAsync\(int, UserType, int, string, RequestOptions\)
+### IsUserNameValidWithReasonAsync\(int, UserType, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_IsUserNameValidWithReasonAsync_System_Int32_SuperOffice_WebApi_Data_UserType_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<UserValidationResult> IsUserNameValidWithReasonAsync(int associateId, UserType type, int personId, string userName, RequestOptions requestOptions = null)
@@ -1945,13 +1945,13 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserValidationResult](SuperOffice.WebApi.Data.UserValidationResult.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserValidationResult](SuperOffice.WebApi.Data.UserValidationResult.md)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_MakeRetiredAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> MakeRetiredAsync\(int, bool, RequestOptions\)
+### MakeRetiredAsync\(int, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_MakeRetiredAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
 Retiring a user means to remove all licenses, setting person.retired=1 and associate.deleted=1. Unretiering a user means setting  person.retired=0 and associate.deleted=0
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task MakeRetiredAsync(int associateId, bool retired, RequestOptions requestOptions = null)
@@ -1971,11 +1971,11 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_RegisterWithAccessGatewayAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> RegisterWithAccessGatewayAsync\(string, RequestOptions\)
+### RegisterWithAccessGatewayAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_RegisterWithAccessGatewayAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Registers with access gateway if not already done, otherwise will attempt to update
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<AccessGatewayInfo> RegisterWithAccessGatewayAsync(string redirectUri, RequestOptions requestOptions = null)
@@ -1993,13 +1993,13 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[AccessGatewayInfo](SuperOffice.WebApi.Data.AccessGatewayInfo.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AccessGatewayInfo](SuperOffice.WebApi.Data.AccessGatewayInfo.md)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_RemoveLicensesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> RemoveLicensesAsync\(int, RequestOptions\)
+### RemoveLicensesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_RemoveLicensesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Remove all user licenses.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task RemoveLicensesAsync(int associateId, RequestOptions requestOptions = null)
@@ -2017,11 +2017,11 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_RemoveOwnerContactAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> RemoveOwnerContactAsync\(int, RequestOptions\)
+### RemoveOwnerContactAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_RemoveOwnerContactAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Remove a contact from the ownercontactlink table
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task RemoveOwnerContactAsync(int contactId, RequestOptions requestOptions = null)
@@ -2041,11 +2041,11 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_RemoveUntrustedCredentialsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> RemoveUntrustedCredentialsAsync\(string, string, RequestOptions\)
+### RemoveUntrustedCredentialsAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_RemoveUntrustedCredentialsAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Remove a credentials entry for authenticated user.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task RemoveUntrustedCredentialsAsync(string type, string publicValue, RequestOptions requestOptions = null)
@@ -2069,11 +2069,11 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_RemoveUntrustedCredentialsForAssociateAsync_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> RemoveUntrustedCredentialsForAssociateAsync\(int, string, string, RequestOptions\)
+### RemoveUntrustedCredentialsForAssociateAsync\(int, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_RemoveUntrustedCredentialsForAssociateAsync_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Remove a credentials entry for a specified user.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task RemoveUntrustedCredentialsForAssociateAsync(int associateId, string type, string publicValue, RequestOptions requestOptions = null)
@@ -2101,11 +2101,11 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_ResolveUserFromInfoAsync_System_Int32_System_String_System_String___System_String___SuperOffice_WebApi_Data_UserType_SuperOffice_WebApi_Data_Credential_SuperOffice_WebApi_RequestOptions_"></a> ResolveUserFromInfoAsync\(int, string, string\[\], string\[\], UserType, Credential, RequestOptions\)
+### ResolveUserFromInfoAsync\(int, string, string\[\], string\[\], UserType, Credential, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_ResolveUserFromInfoAsync_System_Int32_System_String_System_String___System_String___SuperOffice_WebApi_Data_UserType_SuperOffice_WebApi_Data_Credential_SuperOffice_WebApi_RequestOptions_}
 
 Get a user from the provided information. If the user or associated person does not exist, it will be created on demand.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<ResolvedUser> ResolveUserFromInfoAsync(int contactId, string personName, string[] phoneNumbers, string[] emails, UserType userType, Credential credential, RequestOptions requestOptions = null)
@@ -2143,15 +2143,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ResolvedUser](SuperOffice.WebApi.Data.ResolvedUser.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ResolvedUser](SuperOffice.WebApi.Data.ResolvedUser.md)\&gt;
 
 The results of the resolve-operation.
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_SaveCredentialAsync_System_Int32_SuperOffice_WebApi_Data_Credential_SuperOffice_WebApi_RequestOptions_"></a> SaveCredentialAsync\(int, Credential, RequestOptions\)
+### SaveCredentialAsync\(int, Credential, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_SaveCredentialAsync_System_Int32_SuperOffice_WebApi_Data_Credential_SuperOffice_WebApi_RequestOptions_}
 
 Save (adds/replaces) current credential of the same type for the user.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<bool> SaveCredentialAsync(int userId, Credential credential, RequestOptions requestOptions = null)
@@ -2173,15 +2173,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 True if the credential was successfully saved.
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_SaveExternalTokensAsync_SuperOffice_WebApi_Data_TokenManagementInfo_SuperOffice_WebApi_RequestOptions_"></a> SaveExternalTokensAsync\(TokenManagementInfo, RequestOptions\)
+### SaveExternalTokensAsync\(TokenManagementInfo, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_SaveExternalTokensAsync_SuperOffice_WebApi_Data_TokenManagementInfo_SuperOffice_WebApi_RequestOptions_}
 
 Saves the external tokens to the DB and returns a key that can be used to retrieve them
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<string> SaveExternalTokensAsync(TokenManagementInfo tokenManagementInfo, RequestOptions requestOptions = null)
@@ -2199,15 +2199,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Key that can be used to retrieve the tokens
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_SaveRoleEntityAsync_SuperOffice_WebApi_Data_RoleEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveRoleEntityAsync\(RoleEntity, RequestOptions\)
+### SaveRoleEntityAsync\(RoleEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_SaveRoleEntityAsync_SuperOffice_WebApi_Data_RoleEntity_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing RoleEntity or creates a new RoleEntity if the id parameter is 0. 
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<RoleEntity> SaveRoleEntityAsync(RoleEntity roleEntity, RequestOptions requestOptions = null)
@@ -2225,15 +2225,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[RoleEntity](SuperOffice.WebApi.Data.RoleEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RoleEntity](SuperOffice.WebApi.Data.RoleEntity.md)\&gt;
 
 New or updated RoleEntity
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_SaveServiceAuthAsync_SuperOffice_WebApi_Data_ServiceAuth_SuperOffice_WebApi_RequestOptions_"></a> SaveServiceAuthAsync\(ServiceAuth, RequestOptions\)
+### SaveServiceAuthAsync\(ServiceAuth, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_SaveServiceAuthAsync_SuperOffice_WebApi_Data_ServiceAuth_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing ServiceAuth or creates a new ServiceAuth if the id parameter is 0. 
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<ServiceAuth> SaveServiceAuthAsync(ServiceAuth serviceAuth, RequestOptions requestOptions = null)
@@ -2251,15 +2251,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ServiceAuth](SuperOffice.WebApi.Data.ServiceAuth.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ServiceAuth](SuperOffice.WebApi.Data.ServiceAuth.md)\&gt;
 
 New or updated ServiceAuth
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_SaveUntrustedCredentialsAsync_System_String_SuperOffice_WebApi_Data_UntrustedCredentials_SuperOffice_WebApi_RequestOptions_"></a> SaveUntrustedCredentialsAsync\(string, UntrustedCredentials, RequestOptions\)
+### SaveUntrustedCredentialsAsync\(string, UntrustedCredentials, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_SaveUntrustedCredentialsAsync_System_String_SuperOffice_WebApi_Data_UntrustedCredentials_SuperOffice_WebApi_RequestOptions_}
 
 Save credentials for authenticated user.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task SaveUntrustedCredentialsAsync(string type, UntrustedCredentials credentials, RequestOptions requestOptions = null)
@@ -2283,11 +2283,11 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_SaveUntrustedCredentialsForAssociateAsync_System_Int32_System_String_SuperOffice_WebApi_Data_UntrustedCredentials_SuperOffice_WebApi_RequestOptions_"></a> SaveUntrustedCredentialsForAssociateAsync\(int, string, UntrustedCredentials, RequestOptions\)
+### SaveUntrustedCredentialsForAssociateAsync\(int, string, UntrustedCredentials, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_SaveUntrustedCredentialsForAssociateAsync_System_Int32_System_String_SuperOffice_WebApi_Data_UntrustedCredentials_SuperOffice_WebApi_RequestOptions_}
 
 Save credentials for a specified user.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task SaveUntrustedCredentialsForAssociateAsync(int associateId, string type, UntrustedCredentials credentials, RequestOptions requestOptions = null)
@@ -2315,11 +2315,11 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_SaveUserAsync_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_"></a> SaveUserAsync\(User, RequestOptions\)
+### SaveUserAsync\(User, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_SaveUserAsync_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_}
 
 Updates the existing User or creates a new User if the id parameter is 0. 
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<User> SaveUserAsync(User user, RequestOptions requestOptions = null)
@@ -2337,15 +2337,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[User](SuperOffice.WebApi.Data.User.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[User](SuperOffice.WebApi.Data.User.md)\&gt;
 
 New or updated User
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_SaveUserFromNameAsync_System_String_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_"></a> SaveUserFromNameAsync\(string, User, RequestOptions\)
+### SaveUserFromNameAsync\(string, User, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_SaveUserFromNameAsync_System_String_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_}
 
 Save a user, with lookup based on the user name.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<User> SaveUserFromNameAsync(string userName, User user, RequestOptions requestOptions = null)
@@ -2367,15 +2367,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[User](SuperOffice.WebApi.Data.User.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[User](SuperOffice.WebApi.Data.User.md)\&gt;
 
 User retrieved by name
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_SaveUserGroupAsync_SuperOffice_WebApi_Data_UserGroup_SuperOffice_WebApi_RequestOptions_"></a> SaveUserGroupAsync\(UserGroup, RequestOptions\)
+### SaveUserGroupAsync\(UserGroup, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_SaveUserGroupAsync_SuperOffice_WebApi_Data_UserGroup_SuperOffice_WebApi_RequestOptions_}
 
 Save a user group.  Set UserGroup.Deleted to mark a user group as deleted and invisible in the user interface.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<UserGroup> SaveUserGroupAsync(UserGroup userGroup, RequestOptions requestOptions = null)
@@ -2393,15 +2393,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserGroup](SuperOffice.WebApi.Data.UserGroup.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserGroup](SuperOffice.WebApi.Data.UserGroup.md)\&gt;
 
 UserGroup as saved to the database
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_SendChangePasswordEMailAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> SendChangePasswordEMailAsync\(int, RequestOptions\)
+### SendChangePasswordEMailAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_SendChangePasswordEMailAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Send a change password email to this users registered address.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<OperationResult> SendChangePasswordEMailAsync(int associateId, RequestOptions requestOptions = null)
@@ -2419,15 +2419,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[OperationResult](SuperOffice.WebApi.Data.OperationResult.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[OperationResult](SuperOffice.WebApi.Data.OperationResult.md)\&gt;
 
 Result - with result flag and optional error reason.
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_SetDataRightAsync_System_Int32_System_String_SuperOffice_WebApi_Data_RoleRelationToOwner_System_String_SuperOffice_WebApi_RequestOptions_"></a> SetDataRightAsync\(int, string, RoleRelationToOwner, string, RequestOptions\)
+### SetDataRightAsync\(int, string, RoleRelationToOwner, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_SetDataRightAsync_System_Int32_System_String_SuperOffice_WebApi_Data_RoleRelationToOwner_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Set one specific data right at the given position. An exception will be thrown if non existing position is specified.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task SetDataRightAsync(int roleId, string tableName, RoleRelationToOwner relationToOwner, string dataRightValue, RequestOptions requestOptions = null)
@@ -2459,11 +2459,11 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_SetExternalUserInfoAsync_System_Int32_System_String_System_String_System_Boolean_System_Int32_SuperOffice_WebApi_Data_ExternalUserInfoModification_SuperOffice_WebApi_RequestOptions_"></a> SetExternalUserInfoAsync\(int, string, string, bool, int, ExternalUserInfoModification, RequestOptions\)
+### SetExternalUserInfoAsync\(int, string, string, bool, int, ExternalUserInfoModification, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_SetExternalUserInfoAsync_System_Int32_System_String_System_String_System_Boolean_System_Int32_SuperOffice_WebApi_Data_ExternalUserInfoModification_SuperOffice_WebApi_RequestOptions_}
 
 Modifies an external user. Changes external users information according to the flags set in  externalUserInfoModification.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task SetExternalUserInfoAsync(int associateId, string userName, string password, bool isActive, int roleId, ExternalUserInfoModification externalUserInfoModification, RequestOptions requestOptions = null)
@@ -2503,11 +2503,11 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_SetFunctionalRightsAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> SetFunctionalRightsAsync\(int, int\[\], RequestOptions\)
+### SetFunctionalRightsAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_SetFunctionalRightsAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
 Set all functional rights for the given role. Functional rights not specified here will be removed from the role. 
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task SetFunctionalRightsAsync(int roleId, int[] functionalRightIds, RequestOptions requestOptions = null)
@@ -2531,10 +2531,10 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_SetGeneratedPasswordAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> SetGeneratedPasswordAsync\(int, RequestOptions\)
+### SetGeneratedPasswordAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_SetGeneratedPasswordAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<string> SetGeneratedPasswordAsync(int associateId, RequestOptions requestOptions = null)
@@ -2550,12 +2550,12 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_SetGeneratedPasswordFromNameAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> SetGeneratedPasswordFromNameAsync\(string, RequestOptions\)
+### SetGeneratedPasswordFromNameAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_SetGeneratedPasswordFromNameAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<string> SetGeneratedPasswordFromNameAsync(string associateName, RequestOptions requestOptions = null)
@@ -2571,13 +2571,13 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_SetPasswordAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> SetPasswordAsync\(int, string, RequestOptions\)
+### SetPasswordAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_SetPasswordAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Change password for a user.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<bool> SetPasswordAsync(int associateId, string password, RequestOptions requestOptions = null)
@@ -2599,15 +2599,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 Succeeded?
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_SetPasswordFromNameAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> SetPasswordFromNameAsync\(string, string, RequestOptions\)
+### SetPasswordFromNameAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_SetPasswordFromNameAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Change password for a user.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<bool> SetPasswordFromNameAsync(string associateName, string password, RequestOptions requestOptions = null)
@@ -2629,15 +2629,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
 
 Succeeded?
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_SetUserPresenceStatusAsync_System_Int32_SuperOffice_WebApi_Data_UserPresenceStatus_SuperOffice_WebApi_RequestOptions_"></a> SetUserPresenceStatusAsync\(int, UserPresenceStatus, RequestOptions\)
+### SetUserPresenceStatusAsync\(int, UserPresenceStatus, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_SetUserPresenceStatusAsync_System_Int32_SuperOffice_WebApi_Data_UserPresenceStatus_SuperOffice_WebApi_RequestOptions_}
 
 Set user presence status
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<UserPresenceStatus> SetUserPresenceStatusAsync(int associateId, UserPresenceStatus userPresenceStatus, RequestOptions requestOptions = null)
@@ -2659,15 +2659,15 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserPresenceStatus](SuperOffice.WebApi.Data.UserPresenceStatus.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserPresenceStatus](SuperOffice.WebApi.Data.UserPresenceStatus.md)\&gt;
 
 User presence status
 
-### <a id="SuperOffice_WebApi_Agents_IUserAgent_ValidateUserAsync_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_"></a> ValidateUserAsync\(User, RequestOptions\)
+### ValidateUserAsync\(User, RequestOptions\) {#SuperOffice_WebApi_Agents_IUserAgent_ValidateUserAsync_SuperOffice_WebApi_Data_User_SuperOffice_WebApi_RequestOptions_}
 
 Check that entity is ready for saving, return error messages by field.
-<p></p>
-<b>Online Restricted:</b> The User agent is not available in Online by default. User management is not allowed for partner apps.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Online Restricted:&lt;/b&gt; The User agent is not available in Online by default. User management is not allowed for partner apps.
 
 ```csharp
 Task<StringDictionary> ValidateUserAsync(User user, RequestOptions requestOptions = null)
@@ -2685,7 +2685,7 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\&gt;
 
 Error messages tagged by field.
 

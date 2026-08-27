@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_Data_TicketMessageEntity"></a> Class TicketMessageEntity
+# Class TicketMessageEntity {#SuperOffice_WebApi_Data_TicketMessageEntity}
 
 Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -31,18 +31,18 @@ public class TicketMessageEntity : Carrier
 ## Examples
 
 Get TicketMessageEntity 123 using the WebApi client:
-<pre><code class="lang-csharp">var configuration = new WebApiConfiguration(url);
+&lt;pre&gt;&lt;code class="lang-csharp"&gt;var configuration = new WebApiConfiguration(url);
 var agent = new TicketAgent(configuration);
-var ticketMessageEntity = agent.GetTicketMessageEntity( 123 );</code></pre>
+var ticketMessageEntity = agent.GetTicketMessageEntity( 123 );&lt;/code&gt;&lt;/pre&gt;
 
 ## Remarks
 
-Use <xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" data-throw-if-not-resolved="false"></xref>:
-            All TicketMessageEntity: <pre><code class="lang-csharp">"TicketMessage"</code></pre>
+Use &lt;xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;:
+            All TicketMessageEntity: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"TicketMessage"&lt;/code&gt;&lt;/pre&gt;
 
 ## Constructors
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity__ctor"></a> TicketMessageEntity\(\)
+### TicketMessageEntity\(\) {#SuperOffice_WebApi_Data_TicketMessageEntity__ctor}
 
 Default constructor - defaults any enum props to 0.
 
@@ -52,7 +52,7 @@ public TicketMessageEntity()
 
 ## Properties
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_AttachmentsInfo"></a> AttachmentsInfo
+### AttachmentsInfo {#SuperOffice_WebApi_Data_TicketMessageEntity_AttachmentsInfo}
 
 Message attachments information
 
@@ -64,7 +64,7 @@ public virtual AttachmentEntity[] AttachmentsInfo { get; set; }
 
  [AttachmentEntity](SuperOffice.WebApi.Data.AttachmentEntity.md)\[\]
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_Author"></a> Author
+### Author {#SuperOffice_WebApi_Data_TicketMessageEntity_Author}
 
 A string representing the author of the message. Could be a user&amp;apos;s name, or a persons email address.
 
@@ -76,7 +76,7 @@ public virtual string Author { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_Badge"></a> Badge
+### Badge {#SuperOffice_WebApi_Data_TicketMessageEntity_Badge}
 
 Badge to explicitly determine how a message was generated
 NULL if unknown enum value.
@@ -94,7 +94,7 @@ public BadgeType? Badge { get; set; }
 
 [TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md).[Badge\_String](SuperOffice.WebApi.Data.TicketMessageEntity.md\#SuperOffice\_WebApi\_Data\_TicketMessageEntity\_Badge\_String)
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_Badge_String"></a> Badge\_String
+### Badge\_String {#SuperOffice_WebApi_Data_TicketMessageEntity_Badge_String}
 
 Badge to explicitly determine how a message was generated
 Raw string enum value.
@@ -112,7 +112,7 @@ public string Badge_String { get; set; }
 
 [TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md).[Badge](SuperOffice.WebApi.Data.TicketMessageEntity.md\#SuperOffice\_WebApi\_Data\_TicketMessageEntity\_Badge)
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_Body"></a> Body
+### Body {#SuperOffice_WebApi_Data_TicketMessageEntity_Body}
 
 The textbody for the message.
 
@@ -124,7 +124,7 @@ public virtual string Body { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_CreatedAt"></a> CreatedAt
+### CreatedAt {#SuperOffice_WebApi_Data_TicketMessageEntity_CreatedAt}
 
 When the message was posted.
 
@@ -136,7 +136,7 @@ public virtual DateTime CreatedAt { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_CreatedBy"></a> CreatedBy
+### CreatedBy {#SuperOffice_WebApi_Data_TicketMessageEntity_CreatedBy}
 
 The associate who created this ticket message
 
@@ -148,11 +148,11 @@ public virtual Associate CreatedBy { get; set; }
 
  [Associate](SuperOffice.WebApi.Data.Associate.md)
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_CustomFields"></a> CustomFields
+### CustomFields {#SuperOffice_WebApi_Data_TicketMessageEntity_CustomFields}
 
 Udef + Extra fields added to the carrier. Extra fields as defined by changes to database schema + user-defined fields as defined by admin.
 Custom fields combines user defined fields and extra fields into one bucket. 
-The individual <xref href="SuperOffice.WebApi.Data.TicketMessageEntity.ExtraFields" data-throw-if-not-resolved="false"></xref> and UserDefinedFields properties are deprecated in favor of this
+The individual &lt;xref href="SuperOffice.WebApi.Data.TicketMessageEntity.ExtraFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; and UserDefinedFields properties are deprecated in favor of this
 combined collection.
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
 
@@ -167,15 +167,15 @@ public virtual StringDictionary CustomFields { get; set; }
 #### Remarks
 
 The naming convention of the key string is as follows:
-<table><tbody><tr><td class="term">Extra field data</td><td class="description">
-       [Extra field name]<p></p>
-       Example: <pre><code class="lang-csharp">'x_gorp' = '[I:123]'</code></pre>
-       </td></tr><tr><td class="term">User defined field data</td><td class="description">
-       [Prog-id name]<p></p>
-    Example: <pre><code class="lang-csharp">'SuperOffice:1' = '[I:123]'</code></pre><p></p>
-       </td></tr></tbody></table>
+&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="term"&gt;Extra field data&lt;/td&gt;&lt;td class="description"&gt;
+       [Extra field name]&lt;p&gt;&lt;/p&gt;
+       Example: &lt;pre&gt;&lt;code class="lang-csharp"&gt;'x_gorp' = '[I:123]'&lt;/code&gt;&lt;/pre&gt;
+       &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;User defined field data&lt;/td&gt;&lt;td class="description"&gt;
+       [Prog-id name]&lt;p&gt;&lt;/p&gt;
+    Example: &lt;pre&gt;&lt;code class="lang-csharp"&gt;'SuperOffice:1' = '[I:123]'&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
+       &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_DebugInfo"></a> DebugInfo
+### DebugInfo {#SuperOffice_WebApi_Data_TicketMessageEntity_DebugInfo}
 
 The debug info for the message.
 
@@ -187,7 +187,7 @@ public virtual string DebugInfo { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_EjMessageId"></a> EjMessageId
+### EjMessageId {#SuperOffice_WebApi_Data_TicketMessageEntity_EjMessageId}
 
 The primary key (auto-incremented)
 
@@ -199,7 +199,7 @@ public virtual int EjMessageId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_EmailHeader"></a> EmailHeader
+### EmailHeader {#SuperOffice_WebApi_Data_TicketMessageEntity_EmailHeader}
 
 The email header is saved in this field as raw text
 
@@ -211,9 +211,9 @@ public virtual string EmailHeader { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_ExtraFields"></a> ExtraFields
+### ExtraFields {#SuperOffice_WebApi_Data_TicketMessageEntity_ExtraFields}
 
-Deprecated: Use <xref href="SuperOffice.WebApi.Data.TicketMessageEntity.CustomFields" data-throw-if-not-resolved="false"></xref> instead.
+Deprecated: Use &lt;xref href="SuperOffice.WebApi.Data.TicketMessageEntity.CustomFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instead.
 Extra fields added to the carrier. This could be data from Plug-ins, the foreign key system, external applications, etc.
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
 
@@ -228,23 +228,23 @@ public virtual StringDictionary ExtraFields { get; set; }
 #### Remarks
 
 The naming convention of the key string is as follows:
-<table><tbody><tr><td class="term">Plug-in data</td><td class="description">
+&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="term"&gt;Plug-in data&lt;/td&gt;&lt;td class="description"&gt;
        [Plug-in name].[Property name]
        Example: DocumentPlugin.DocumentType
-       </td></tr><tr><td class="term">Foreign key data</td><td class="description">
+       &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;Foreign key data&lt;/td&gt;&lt;td class="description"&gt;
        The device identity is appended directly to the device name if it exists. 
     This is not commonly used, but the database opens for this as a possibility to have several devices with the same name, 
     and hence we would ensure an unique key if this field is used.
     Example: Audience.SecretService.DefaultCountry
-    </td></tr><tr><td class="term">User defined table data</td><td class="description">
+    &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;User defined table data&lt;/td&gt;&lt;td class="description"&gt;
        [Table name].[Field name]
        Example: Phunneling.AggregatedSales
-       </td></tr><tr><td class="term">Other</td><td class="description">
+       &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;Other&lt;/td&gt;&lt;td class="description"&gt;
        Other data sources must ensure an unique name. If the key already exists we do not add the data to the dictionary. 
        We also ensure that SuperOffice data are added first, so that existing data doesnt change when more data sources are added (with duplicate data keys).
-       </td></tr></tbody></table>
+       &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_HtmlBody"></a> HtmlBody
+### HtmlBody {#SuperOffice_WebApi_Data_TicketMessageEntity_HtmlBody}
 
 The html body for the message (if any).
 
@@ -256,7 +256,7 @@ public virtual string HtmlBody { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_Important"></a> Important
+### Important {#SuperOffice_WebApi_Data_TicketMessageEntity_Important}
 
 If this message is important or not.
 
@@ -268,7 +268,7 @@ public virtual bool Important { get; set; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_Language"></a> Language
+### Language {#SuperOffice_WebApi_Data_TicketMessageEntity_Language}
 
 The language this message is in, based on some kind of analysis
 
@@ -280,7 +280,7 @@ public virtual string Language { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_MailSorter"></a> MailSorter
+### MailSorter {#SuperOffice_WebApi_Data_TicketMessageEntity_MailSorter}
 
 The name of the mail sorter used when the email was imported. Note: We must use name instead of id since the id&amp;apos;s change every time one changes the mail sorter. :-0
 
@@ -292,7 +292,7 @@ public virtual string MailSorter { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_MessageCategory"></a> MessageCategory
+### MessageCategory {#SuperOffice_WebApi_Data_TicketMessageEntity_MessageCategory}
 
 Defines what kind of message this is.
 NULL if unknown enum value.
@@ -310,7 +310,7 @@ public TicketMessageCategory? MessageCategory { get; set; }
 
 [TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md).[MessageCategory\_String](SuperOffice.WebApi.Data.TicketMessageEntity.md\#SuperOffice\_WebApi\_Data\_TicketMessageEntity\_MessageCategory\_String)
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_MessageCategory_String"></a> MessageCategory\_String
+### MessageCategory\_String {#SuperOffice_WebApi_Data_TicketMessageEntity_MessageCategory_String}
 
 Defines what kind of message this is.
 Raw string enum value.
@@ -328,7 +328,7 @@ public string MessageCategory_String { get; set; }
 
 [TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md).[MessageCategory](SuperOffice.WebApi.Data.TicketMessageEntity.md\#SuperOffice\_WebApi\_Data\_TicketMessageEntity\_MessageCategory)
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_MessageHeaders"></a> MessageHeaders
+### MessageHeaders {#SuperOffice_WebApi_Data_TicketMessageEntity_MessageHeaders}
 
 Contains the message headers, like To, Cc, Bcc information, or custom headers
 
@@ -340,7 +340,7 @@ public virtual TicketMessageHeader[] MessageHeaders { get; set; }
 
  [TicketMessageHeader](SuperOffice.WebApi.Data.TicketMessageHeader.md)\[\]
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_MessageId"></a> MessageId
+### MessageId {#SuperOffice_WebApi_Data_TicketMessageEntity_MessageId}
 
 The Message-Id header value from the email. Used for threading, i.e. connecting messages to existing tickets.
 
@@ -352,10 +352,10 @@ public virtual string MessageId { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_Person"></a> Person
+### Person {#SuperOffice_WebApi_Data_TicketMessageEntity_Person}
 
 If this is an incoming message, this will contain the person
-<p>Use MDO List name "person_new" to get list items.</p>
+&lt;p&gt;Use MDO List name "person_new" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual Person Person { get; set; }
@@ -365,7 +365,7 @@ public virtual Person Person { get; set; }
 
  [Person](SuperOffice.WebApi.Data.Person.md)
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_SearchTitle"></a> SearchTitle
+### SearchTitle {#SuperOffice_WebApi_Data_TicketMessageEntity_SearchTitle}
 
 A copy of the title of the ticket, for search optimisation and simpler reporting.
 
@@ -377,7 +377,7 @@ public virtual string SearchTitle { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_Sentiment"></a> Sentiment
+### Sentiment {#SuperOffice_WebApi_Data_TicketMessageEntity_Sentiment}
 
 Sentiment index, 100 = completely happy; -100 = suicidally unhappy; 0 = no idea
 
@@ -389,7 +389,7 @@ public virtual int Sentiment { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_SentimentConfidence"></a> SentimentConfidence
+### SentimentConfidence {#SuperOffice_WebApi_Data_TicketMessageEntity_SentimentConfidence}
 
 Confidence of sentiment index, 0 = no idea, 100 = completely sure
 
@@ -401,7 +401,7 @@ public virtual int SentimentConfidence { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_Slevel"></a> Slevel
+### Slevel {#SuperOffice_WebApi_Data_TicketMessageEntity_Slevel}
 
 The securitylevel of the message.
 NULL if unknown enum value.
@@ -419,7 +419,7 @@ public TicketSecurityLevel? Slevel { get; set; }
 
 [TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md).[Slevel\_String](SuperOffice.WebApi.Data.TicketMessageEntity.md\#SuperOffice\_WebApi\_Data\_TicketMessageEntity\_Slevel\_String)
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_Slevel_String"></a> Slevel\_String
+### Slevel\_String {#SuperOffice_WebApi_Data_TicketMessageEntity_Slevel_String}
 
 The securitylevel of the message.
 Raw string enum value.
@@ -437,7 +437,7 @@ public string Slevel_String { get; set; }
 
 [TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md).[Slevel](SuperOffice.WebApi.Data.TicketMessageEntity.md\#SuperOffice\_WebApi\_Data\_TicketMessageEntity\_Slevel)
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_Ticket"></a> Ticket
+### Ticket {#SuperOffice_WebApi_Data_TicketMessageEntity_Ticket}
 
 The connected ticket
 
@@ -449,7 +449,7 @@ public virtual Ticket Ticket { get; set; }
 
  [Ticket](SuperOffice.WebApi.Data.Ticket.md)
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_TimeSpent"></a> TimeSpent
+### TimeSpent {#SuperOffice_WebApi_Data_TicketMessageEntity_TimeSpent}
 
 The time spent (minutes) for this message.
 
@@ -461,7 +461,7 @@ public virtual int TimeSpent { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_Type"></a> Type
+### Type {#SuperOffice_WebApi_Data_TicketMessageEntity_Type}
 
 The type of the message (plaintext/html).
 NULL if unknown enum value.
@@ -479,7 +479,7 @@ public TicketMessageType? Type { get; set; }
 
 [TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md).[Type\_String](SuperOffice.WebApi.Data.TicketMessageEntity.md\#SuperOffice\_WebApi\_Data\_TicketMessageEntity\_Type\_String)
 
-### <a id="SuperOffice_WebApi_Data_TicketMessageEntity_Type_String"></a> Type\_String
+### Type\_String {#SuperOffice_WebApi_Data_TicketMessageEntity_Type_String}
 
 The type of the message (plaintext/html).
 Raw string enum value.

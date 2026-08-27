@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_Agents_IImportAgent"></a> Interface IImportAgent
+# Interface IImportAgent {#SuperOffice_WebApi_Agents_IImportAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface IImportAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_IImportAgent_CreateDefaultImportLineAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultImportLineAsync\(int, RequestOptions\)
+### CreateDefaultImportLineAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IImportAgent_CreateDefaultImportLineAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Create a new empty import row with x count of values
 
@@ -36,11 +36,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ImportLine](SuperOffice.WebApi.Data.ImportLine.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ImportLine](SuperOffice.WebApi.Data.ImportLine.md)\&gt;
 
 A new ImportLine
 
-### <a id="SuperOffice_WebApi_Agents_IImportAgent_CreateErpImportDataAsync_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String___System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_"></a> CreateErpImportDataAsync\(ArchiveRestrictionInfo\[\], string\[\], int, ErpActorType, RequestOptions\)
+### CreateErpImportDataAsync\(ArchiveRestrictionInfo\[\], string\[\], int, ErpActorType, RequestOptions\) {#SuperOffice_WebApi_Agents_IImportAgent_CreateErpImportDataAsync_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String___System_Int32_SuperOffice_WebApi_Data_ErpActorType_SuperOffice_WebApi_RequestOptions_}
 
 Populates the ImportLines and columnDefs basedfrom erp system
 
@@ -72,11 +72,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ImportErpData](SuperOffice.WebApi.Data.ImportErpData.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ImportErpData](SuperOffice.WebApi.Data.ImportErpData.md)\&gt;
 
 The ImportLines and ColumnDefs
 
-### <a id="SuperOffice_WebApi_Agents_IImportAgent_PreviewImportAsync_SuperOffice_WebApi_Data_ImportLine___System_String___System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> PreviewImportAsync\(ImportLine\[\], string\[\], string, string, RequestOptions\)
+### PreviewImportAsync\(ImportLine\[\], string\[\], string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IImportAgent_PreviewImportAsync_SuperOffice_WebApi_Data_ImportLine___System_String___System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Preview the import
 
@@ -108,11 +108,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ImportLine](SuperOffice.WebApi.Data.ImportLine.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ImportLine](SuperOffice.WebApi.Data.ImportLine.md)\[\]\&gt;
 
 An array of the the rows that can be imported, manipulated according to Import rules given
 
-### <a id="SuperOffice_WebApi_Agents_IImportAgent_SaveImportAsync_SuperOffice_WebApi_Data_ImportLine___System_String___System_Boolean_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> SaveImportAsync\(ImportLine\[\], string\[\], bool, string, string, RequestOptions\)
+### SaveImportAsync\(ImportLine\[\], string\[\], bool, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IImportAgent_SaveImportAsync_SuperOffice_WebApi_Data_ImportLine___System_String___System_Boolean_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Do the actual import
 
@@ -148,7 +148,7 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]\&gt;
 
 First part: the id of the selection created after the import, 0 if no selection is created. Second part: The number of rows actually imported
 

@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_Data_SaleEntity"></a> Class SaleEntity
+# Class SaleEntity {#SuperOffice_WebApi_Data_SaleEntity}
 
 Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -31,23 +31,23 @@ public class SaleEntity : Carrier
 ## Examples
 
 Get SaleEntity 123 using the WebApi client:
-<pre><code class="lang-csharp">var configuration = new WebApiConfiguration(url);
+&lt;pre&gt;&lt;code class="lang-csharp"&gt;var configuration = new WebApiConfiguration(url);
 var agent = new SaleAgent(configuration);
-var saleEntity = agent.GetSaleEntity( 123 );</code></pre>
+var saleEntity = agent.GetSaleEntity( 123 );&lt;/code&gt;&lt;/pre&gt;
 
 ## Remarks
 
-Use <xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" data-throw-if-not-resolved="false"></xref>:
-            All SaleEntity: <pre><code class="lang-csharp">"FindSale"</code></pre>
-            History: <pre><code class="lang-csharp">"SaleHistory"</code></pre> with restriction <pre><code class="lang-csharp">"saleId eq " + id</code></pre>.
-            Activities: <pre><code class="lang-csharp">"SaleActivity"</code></pre> with restriction <pre><code class="lang-csharp">"saleId eq " + id</code></pre>.
-            Guide: <pre><code class="lang-csharp">"SaleGuide"</code></pre> with restriction <pre><code class="lang-csharp">"saleId eq " + id</code></pre>.
-            Stakeholders: <pre><code class="lang-csharp">"SaleStakeholder"</code></pre> with restriction <pre><code class="lang-csharp">"saleId eq " + id</code></pre>.
-            Links: <pre><code class="lang-csharp">"Links"</code></pre> with restriction <pre><code class="lang-csharp">"sourceSaleRestrictionId eq " + id</code></pre>.
+Use &lt;xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;:
+            All SaleEntity: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"FindSale"&lt;/code&gt;&lt;/pre&gt;
+            History: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"SaleHistory"&lt;/code&gt;&lt;/pre&gt; with restriction &lt;pre&gt;&lt;code class="lang-csharp"&gt;"saleId eq " + id&lt;/code&gt;&lt;/pre&gt;.
+            Activities: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"SaleActivity"&lt;/code&gt;&lt;/pre&gt; with restriction &lt;pre&gt;&lt;code class="lang-csharp"&gt;"saleId eq " + id&lt;/code&gt;&lt;/pre&gt;.
+            Guide: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"SaleGuide"&lt;/code&gt;&lt;/pre&gt; with restriction &lt;pre&gt;&lt;code class="lang-csharp"&gt;"saleId eq " + id&lt;/code&gt;&lt;/pre&gt;.
+            Stakeholders: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"SaleStakeholder"&lt;/code&gt;&lt;/pre&gt; with restriction &lt;pre&gt;&lt;code class="lang-csharp"&gt;"saleId eq " + id&lt;/code&gt;&lt;/pre&gt;.
+            Links: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"Links"&lt;/code&gt;&lt;/pre&gt; with restriction &lt;pre&gt;&lt;code class="lang-csharp"&gt;"sourceSaleRestrictionId eq " + id&lt;/code&gt;&lt;/pre&gt;.
 
 ## Constructors
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity__ctor"></a> SaleEntity\(\)
+### SaleEntity\(\) {#SuperOffice_WebApi_Data_SaleEntity__ctor}
 
 Default constructor - defaults any enum props to 0.
 
@@ -57,7 +57,7 @@ public SaleEntity()
 
 ## Properties
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_ActiveErpLinks"></a> ActiveErpLinks
+### ActiveErpLinks {#SuperOffice_WebApi_Data_SaleEntity_ActiveErpLinks}
 
 The number of active erp links
 
@@ -69,7 +69,7 @@ public virtual int ActiveErpLinks { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_ActiveLinks"></a> ActiveLinks
+### ActiveLinks {#SuperOffice_WebApi_Data_SaleEntity_ActiveLinks}
 
 Number of active links to sale, document, appointment.
 
@@ -81,7 +81,7 @@ public virtual int ActiveLinks { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_Amount"></a> Amount
+### Amount {#SuperOffice_WebApi_Data_SaleEntity_Amount}
 
 Total sale amount
 
@@ -93,7 +93,7 @@ public virtual double Amount { get; set; }
 
  [double](https://learn.microsoft.com/dotnet/api/system.double)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_Appointment"></a> Appointment
+### Appointment {#SuperOffice_WebApi_Data_SaleEntity_Appointment}
 
 ```csharp
 public virtual Appointment Appointment { get; set; }
@@ -103,10 +103,10 @@ public virtual Appointment Appointment { get; set; }
 
  [Appointment](SuperOffice.WebApi.Data.Appointment.md)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_Associate"></a> Associate
+### Associate {#SuperOffice_WebApi_Data_SaleEntity_Associate}
 
 The sale owner
-<p>Use MDO List name "associate" to get list items.</p>
+&lt;p&gt;Use MDO List name "associate" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual Associate Associate { get; set; }
@@ -116,10 +116,10 @@ public virtual Associate Associate { get; set; }
 
  [Associate](SuperOffice.WebApi.Data.Associate.md)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_Competitor"></a> Competitor
+### Competitor {#SuperOffice_WebApi_Data_SaleEntity_Competitor}
 
 List of all possible competitors. 
-<p>Use MDO List name "comptr" to get list items.</p>
+&lt;p&gt;Use MDO List name "comptr" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual Competitor Competitor { get; set; }
@@ -129,7 +129,7 @@ public virtual Competitor Competitor { get; set; }
 
  [Competitor](SuperOffice.WebApi.Data.Competitor.md)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_Completed"></a> Completed
+### Completed {#SuperOffice_WebApi_Data_SaleEntity_Completed}
 
 The Sale completed state. The completed state is either Started or Completed. NotStarted is treated as Started. The value maps to the Done database field.
 NULL if unknown enum value.
@@ -147,7 +147,7 @@ public ActivityStatus? Completed { get; set; }
 
 [SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md).[Completed\_String](SuperOffice.WebApi.Data.SaleEntity.md\#SuperOffice\_WebApi\_Data\_SaleEntity\_Completed\_String)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_Completed_String"></a> Completed\_String
+### Completed\_String {#SuperOffice_WebApi_Data_SaleEntity_Completed_String}
 
 The Sale completed state. The completed state is either Started or Completed. NotStarted is treated as Started. The value maps to the Done database field.
 Raw string enum value.
@@ -165,10 +165,10 @@ public string Completed_String { get; set; }
 
 [SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md).[Completed](SuperOffice.WebApi.Data.SaleEntity.md\#SuperOffice\_WebApi\_Data\_SaleEntity\_Completed)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_Contact"></a> Contact
+### Contact {#SuperOffice_WebApi_Data_SaleEntity_Contact}
 
 The contact associated with the sale. It may also be 0 if no contact is associated with the sale.
-<p>Use MDO List name "contact" to get list items.</p>
+&lt;p&gt;Use MDO List name "contact" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual Contact Contact { get; set; }
@@ -178,7 +178,7 @@ public virtual Contact Contact { get; set; }
 
  [Contact](SuperOffice.WebApi.Data.Contact.md)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_CreatedBy"></a> CreatedBy
+### CreatedBy {#SuperOffice_WebApi_Data_SaleEntity_CreatedBy}
 
 Who created to sale
 
@@ -190,7 +190,7 @@ public virtual Associate CreatedBy { get; set; }
 
  [Associate](SuperOffice.WebApi.Data.Associate.md)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_CreatedDate"></a> CreatedDate
+### CreatedDate {#SuperOffice_WebApi_Data_SaleEntity_CreatedDate}
 
 Registered date
 
@@ -202,10 +202,10 @@ public virtual DateTime CreatedDate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_Credited"></a> Credited
+### Credited {#SuperOffice_WebApi_Data_SaleEntity_Credited}
 
 List of who is to be credited for the sale.
-<p>Use MDO List name "credited" to get list items.</p>
+&lt;p&gt;Use MDO List name "credited" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual Credited Credited { get; set; }
@@ -215,10 +215,10 @@ public virtual Credited Credited { get; set; }
 
  [Credited](SuperOffice.WebApi.Data.Credited.md)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_Currency"></a> Currency
+### Currency {#SuperOffice_WebApi_Data_SaleEntity_Currency}
 
 The currency the sale object was sold in
-<p>Use MDO List name "currency" to get list items.</p>
+&lt;p&gt;Use MDO List name "currency" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual Currency Currency { get; set; }
@@ -228,11 +228,11 @@ public virtual Currency Currency { get; set; }
 
  [Currency](SuperOffice.WebApi.Data.Currency.md)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_CustomFields"></a> CustomFields
+### CustomFields {#SuperOffice_WebApi_Data_SaleEntity_CustomFields}
 
 Udef + Extra fields added to the carrier. Extra fields as defined by changes to database schema + user-defined fields as defined by admin.
 Custom fields combines user defined fields and extra fields into one bucket. 
-The individual <xref href="SuperOffice.WebApi.Data.SaleEntity.ExtraFields" data-throw-if-not-resolved="false"></xref> and <xref href="SuperOffice.WebApi.Data.SaleEntity.UserDefinedFields?text=UserDefinedFields" data-throw-if-not-resolved="false"></xref> properties are deprecated in favor of this
+The individual &lt;xref href="SuperOffice.WebApi.Data.SaleEntity.ExtraFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; and &lt;xref href="SuperOffice.WebApi.Data.SaleEntity.UserDefinedFields?text=UserDefinedFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; properties are deprecated in favor of this
 combined collection.
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
 
@@ -247,15 +247,15 @@ public virtual StringDictionary CustomFields { get; set; }
 #### Remarks
 
 The naming convention of the key string is as follows:
-<table><tbody><tr><td class="term">Extra field data</td><td class="description">
-       [Extra field name]<p></p>
-       Example: <pre><code class="lang-csharp">'x_gorp' = '[I:123]'</code></pre>
-       </td></tr><tr><td class="term">User defined field data</td><td class="description">
-       [Prog-id name]<p></p>
-    Example: <pre><code class="lang-csharp">'SuperOffice:1' = '[I:123]'</code></pre><p></p>
-       </td></tr></tbody></table>
+&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="term"&gt;Extra field data&lt;/td&gt;&lt;td class="description"&gt;
+       [Extra field name]&lt;p&gt;&lt;/p&gt;
+       Example: &lt;pre&gt;&lt;code class="lang-csharp"&gt;'x_gorp' = '[I:123]'&lt;/code&gt;&lt;/pre&gt;
+       &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;User defined field data&lt;/td&gt;&lt;td class="description"&gt;
+       [Prog-id name]&lt;p&gt;&lt;/p&gt;
+    Example: &lt;pre&gt;&lt;code class="lang-csharp"&gt;'SuperOffice:1' = '[I:123]'&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
+       &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_Earning"></a> Earning
+### Earning {#SuperOffice_WebApi_Data_SaleEntity_Earning}
 
 Earning on sale
 
@@ -267,7 +267,7 @@ public virtual double Earning { get; set; }
 
  [double](https://learn.microsoft.com/dotnet/api/system.double)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_EarningPercent"></a> EarningPercent
+### EarningPercent {#SuperOffice_WebApi_Data_SaleEntity_EarningPercent}
 
 Earning as percent of total
 
@@ -279,9 +279,9 @@ public virtual double EarningPercent { get; set; }
 
  [double](https://learn.microsoft.com/dotnet/api/system.double)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_ExtraFields"></a> ExtraFields
+### ExtraFields {#SuperOffice_WebApi_Data_SaleEntity_ExtraFields}
 
-Deprecated: Use <xref href="SuperOffice.WebApi.Data.SaleEntity.CustomFields" data-throw-if-not-resolved="false"></xref> instead.
+Deprecated: Use &lt;xref href="SuperOffice.WebApi.Data.SaleEntity.CustomFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instead.
 Extra fields added to the carrier. This could be data from Plug-ins, the foreign key system, external applications, etc.
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
 
@@ -296,23 +296,23 @@ public virtual StringDictionary ExtraFields { get; set; }
 #### Remarks
 
 The naming convention of the key string is as follows:
-<table><tbody><tr><td class="term">Plug-in data</td><td class="description">
+&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="term"&gt;Plug-in data&lt;/td&gt;&lt;td class="description"&gt;
        [Plug-in name].[Property name]
        Example: DocumentPlugin.DocumentType
-       </td></tr><tr><td class="term">Foreign key data</td><td class="description">
+       &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;Foreign key data&lt;/td&gt;&lt;td class="description"&gt;
        The device identity is appended directly to the device name if it exists. 
     This is not commonly used, but the database opens for this as a possibility to have several devices with the same name, 
     and hence we would ensure an unique key if this field is used.
     Example: Audience.SecretService.DefaultCountry
-    </td></tr><tr><td class="term">User defined table data</td><td class="description">
+    &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;User defined table data&lt;/td&gt;&lt;td class="description"&gt;
        [Table name].[Field name]
        Example: Phunneling.AggregatedSales
-       </td></tr><tr><td class="term">Other</td><td class="description">
+       &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;Other&lt;/td&gt;&lt;td class="description"&gt;
        Other data sources must ensure an unique name. If the key already exists we do not add the data to the dictionary. 
        We also ensure that SuperOffice data are added first, so that existing data doesnt change when more data sources are added (with duplicate data keys).
-       </td></tr></tbody></table>
+       &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_Heading"></a> Heading
+### Heading {#SuperOffice_WebApi_Data_SaleEntity_Heading}
 
 Sale heading (short description?)
 
@@ -324,7 +324,7 @@ public virtual string Heading { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_IsPublished"></a> IsPublished
+### IsPublished {#SuperOffice_WebApi_Data_SaleEntity_IsPublished}
 
 Publication is published
 
@@ -336,7 +336,7 @@ public virtual bool IsPublished { get; set; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_Links"></a> Links
+### Links {#SuperOffice_WebApi_Data_SaleEntity_Links}
 
 List of all elements linked to the sale.
 
@@ -348,7 +348,7 @@ public virtual Link[] Links { get; set; }
 
  [Link](SuperOffice.WebApi.Data.Link.md)\[\]
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_NextDueDate"></a> NextDueDate
+### NextDueDate {#SuperOffice_WebApi_Data_SaleEntity_NextDueDate}
 
 Next due date, this is a denormalization of 'closest future activity date, or most recent if no future activities'. Maintained by the system, but very convenient for searching.
 
@@ -360,7 +360,7 @@ public virtual DateTime NextDueDate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_Number"></a> Number
+### Number {#SuperOffice_WebApi_Data_SaleEntity_Number}
 
 Alphanumeric user field
 
@@ -372,10 +372,10 @@ public virtual string Number { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_Person"></a> Person
+### Person {#SuperOffice_WebApi_Data_SaleEntity_Person}
 
 A sale may also be connected to a person - this must be a contact person registered on the current contact. This does not mean that a person is required.
-<p>Use MDO List name "person" to get list items.</p>
+&lt;p&gt;Use MDO List name "person" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual Person Person { get; set; }
@@ -385,7 +385,7 @@ public virtual Person Person { get; set; }
 
  [Person](SuperOffice.WebApi.Data.Person.md)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_Postit"></a> Postit
+### Postit {#SuperOffice_WebApi_Data_SaleEntity_Postit}
 
 The actual text, max 2047 significant characters even though it is stored as a larger data type on some databases
 
@@ -397,7 +397,7 @@ public virtual string Postit { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_Probability"></a> Probability
+### Probability {#SuperOffice_WebApi_Data_SaleEntity_Probability}
 
 Actual probability, may differ from the one in the list
 
@@ -409,10 +409,10 @@ public virtual short Probability { get; set; }
 
  [short](https://learn.microsoft.com/dotnet/api/system.int16)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_Project"></a> Project
+### Project {#SuperOffice_WebApi_Data_SaleEntity_Project}
 
 A sale may also be connected to a project, so you see the sale both on the company card, and on the project card. This does not mean that a project is required.
-<p>Use MDO List name "project" to get list items.</p>
+&lt;p&gt;Use MDO List name "project" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual Project Project { get; set; }
@@ -422,7 +422,7 @@ public virtual Project Project { get; set; }
 
  [Project](SuperOffice.WebApi.Data.Project.md)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_PublishEventDate"></a> PublishEventDate
+### PublishEventDate {#SuperOffice_WebApi_Data_SaleEntity_PublishEventDate}
 
 Publish event date
 
@@ -434,7 +434,7 @@ public virtual DateTime PublishEventDate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_PublishFrom"></a> PublishFrom
+### PublishFrom {#SuperOffice_WebApi_Data_SaleEntity_PublishFrom}
 
 Publication valid from (inclusive)
 
@@ -446,7 +446,7 @@ public virtual DateTime PublishFrom { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_PublishTo"></a> PublishTo
+### PublishTo {#SuperOffice_WebApi_Data_SaleEntity_PublishTo}
 
 Publication valid to (inclusive)
 
@@ -458,10 +458,10 @@ public virtual DateTime PublishTo { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_Rating"></a> Rating
+### Rating {#SuperOffice_WebApi_Data_SaleEntity_Rating}
 
 The sale rating
-<p>Use MDO List name "prob" to get list items.</p>
+&lt;p&gt;Use MDO List name "prob" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual Rating Rating { get; set; }
@@ -471,10 +471,10 @@ public virtual Rating Rating { get; set; }
 
  [Rating](SuperOffice.WebApi.Data.Rating.md)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_Reason"></a> Reason
+### Reason {#SuperOffice_WebApi_Data_SaleEntity_Reason}
 
 The sale reason
-<p>Use MDO List name "reason" to get list items.</p>
+&lt;p&gt;Use MDO List name "reason" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual Reason Reason { get; set; }
@@ -484,9 +484,9 @@ public virtual Reason Reason { get; set; }
 
  [Reason](SuperOffice.WebApi.Data.Reason.md)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_ReasonSold"></a> ReasonSold
+### ReasonSold {#SuperOffice_WebApi_Data_SaleEntity_ReasonSold}
 
-<p>Use MDO List name "reasonsold" to get list items.</p>
+&lt;p&gt;Use MDO List name "reasonsold" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual ReasonSold ReasonSold { get; set; }
@@ -496,9 +496,9 @@ public virtual ReasonSold ReasonSold { get; set; }
 
  [ReasonSold](SuperOffice.WebApi.Data.ReasonSold.md)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_ReasonStalled"></a> ReasonStalled
+### ReasonStalled {#SuperOffice_WebApi_Data_SaleEntity_ReasonStalled}
 
-<p>Use MDO List name "reasonstalled" to get list items.</p>
+&lt;p&gt;Use MDO List name "reasonstalled" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual ReasonStalled ReasonStalled { get; set; }
@@ -508,7 +508,7 @@ public virtual ReasonStalled ReasonStalled { get; set; }
 
  [ReasonStalled](SuperOffice.WebApi.Data.ReasonStalled.md)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_ReopenDate"></a> ReopenDate
+### ReopenDate {#SuperOffice_WebApi_Data_SaleEntity_ReopenDate}
 
 Date the sale is to be reopened; valid only for status=stalled. Not necessarily the same as the nextDueDate.
 
@@ -520,7 +520,7 @@ public virtual DateTime ReopenDate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_SaleId"></a> SaleId
+### SaleId {#SuperOffice_WebApi_Data_SaleEntity_SaleId}
 
 Primary key
 
@@ -532,7 +532,7 @@ public virtual int SaleId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_SaleStakeholders"></a> SaleStakeholders
+### SaleStakeholders {#SuperOffice_WebApi_Data_SaleEntity_SaleStakeholders}
 
 ```csharp
 public virtual SaleStakeholder[] SaleStakeholders { get; set; }
@@ -542,7 +542,7 @@ public virtual SaleStakeholder[] SaleStakeholders { get; set; }
 
  [SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)\[\]
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_SaleText"></a> SaleText
+### SaleText {#SuperOffice_WebApi_Data_SaleEntity_SaleText}
 
 Text describing the sale
 
@@ -554,9 +554,9 @@ public virtual string SaleText { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_SaleType"></a> SaleType
+### SaleType {#SuperOffice_WebApi_Data_SaleEntity_SaleType}
 
-<p>Use MDO List name "saletype" to get list items.</p>
+&lt;p&gt;Use MDO List name "saletype" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual SaleType SaleType { get; set; }
@@ -566,7 +566,7 @@ public virtual SaleType SaleType { get; set; }
 
  [SaleType](SuperOffice.WebApi.Data.SaleType.md)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_Saledate"></a> Saledate
+### Saledate {#SuperOffice_WebApi_Data_SaleEntity_Saledate}
 
 (expected / lost / won) sales date
 
@@ -578,10 +578,10 @@ public virtual DateTime Saledate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_Source"></a> Source
+### Source {#SuperOffice_WebApi_Data_SaleEntity_Source}
 
 The sale source
-<p>Use MDO List name "source" to get list items.</p>
+&lt;p&gt;Use MDO List name "source" to get list items.&lt;/p&gt;
 
 ```csharp
 public virtual Source Source { get; set; }
@@ -591,7 +591,7 @@ public virtual Source Source { get; set; }
 
  [Source](SuperOffice.WebApi.Data.Source.md)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_Status"></a> Status
+### Status {#SuperOffice_WebApi_Data_SaleEntity_Status}
 
 The state of the Sale: Open / Sold / Lost / Stalled
 NULL if unknown enum value.
@@ -609,7 +609,7 @@ public SaleStatus? Status { get; set; }
 
 [SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md).[Status\_String](SuperOffice.WebApi.Data.SaleEntity.md\#SuperOffice\_WebApi\_Data\_SaleEntity\_Status\_String)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_Status_String"></a> Status\_String
+### Status\_String {#SuperOffice_WebApi_Data_SaleEntity_Status_String}
 
 The state of the Sale: Open / Sold / Lost / Stalled
 Raw string enum value.
@@ -627,7 +627,7 @@ public string Status_String { get; set; }
 
 [SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md).[Status](SuperOffice.WebApi.Data.SaleEntity.md\#SuperOffice\_WebApi\_Data\_SaleEntity\_Status)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_UpdatedBy"></a> UpdatedBy
+### UpdatedBy {#SuperOffice_WebApi_Data_SaleEntity_UpdatedBy}
 
 Who updated the sale
 
@@ -639,7 +639,7 @@ public virtual Associate UpdatedBy { get; set; }
 
  [Associate](SuperOffice.WebApi.Data.Associate.md)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_UpdatedDate"></a> UpdatedDate
+### UpdatedDate {#SuperOffice_WebApi_Data_SaleEntity_UpdatedDate}
 
 Last updated
 
@@ -651,9 +651,9 @@ public virtual DateTime UpdatedDate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_UserDefinedFields"></a> UserDefinedFields
+### UserDefinedFields {#SuperOffice_WebApi_Data_SaleEntity_UserDefinedFields}
 
-Deprecated: Use <xref href="SuperOffice.WebApi.Data.SaleEntity.CustomFields" data-throw-if-not-resolved="false"></xref> instead.
+Deprecated: Use &lt;xref href="SuperOffice.WebApi.Data.SaleEntity.CustomFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instead.
 Dictionary of user defined field data.
 The key string is the ProgId of the UdefField, or if the ProgId is empty it is a string of the format "SuperOffice:[UdefFieldIdentity]", e.g. "SuperOffice:1234"
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
@@ -666,7 +666,7 @@ public virtual StringDictionary UserDefinedFields { get; set; }
 
  [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
 
-### <a id="SuperOffice_WebApi_Data_SaleEntity_VisibleFor"></a> VisibleFor
+### VisibleFor {#SuperOffice_WebApi_Data_SaleEntity_VisibleFor}
 
 The set of users or groups the record is visible for
 

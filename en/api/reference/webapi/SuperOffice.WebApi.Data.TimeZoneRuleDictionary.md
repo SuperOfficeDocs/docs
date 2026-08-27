@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_Data_TimeZoneRuleDictionary"></a> Class TimeZoneRuleDictionary
+# Class TimeZoneRuleDictionary {#SuperOffice_WebApi_Data_TimeZoneRuleDictionary}
 
 Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -13,43 +13,43 @@ public class TimeZoneRuleDictionary : Dictionary<DateTime, TimeZoneRule>, IDicti
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Dictionary<DateTime, TimeZoneRule\>](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2) ← 
+[Dictionary&lt;DateTime, TimeZoneRule\&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2) ← 
 [TimeZoneRuleDictionary](SuperOffice.WebApi.Data.TimeZoneRuleDictionary.md)
 
 #### Implements
 
-[IDictionary<DateTime, TimeZoneRule\>](https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary\-2), 
-[ICollection<KeyValuePair<DateTime, TimeZoneRule\>\>](https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection\-1), 
+[IDictionary&lt;DateTime, TimeZoneRule\&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary\-2), 
+[ICollection&lt;KeyValuePair&lt;DateTime, TimeZoneRule\&gt;\&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection\-1), 
 [IDictionary](https://learn.microsoft.com/dotnet/api/system.collections.idictionary), 
 [ICollection](https://learn.microsoft.com/dotnet/api/system.collections.icollection), 
-[IReadOnlyDictionary<DateTime, TimeZoneRule\>](https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary\-2), 
-[IReadOnlyCollection<KeyValuePair<DateTime, TimeZoneRule\>\>](https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection\-1), 
-[IEnumerable<KeyValuePair<DateTime, TimeZoneRule\>\>](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable\-1), 
+[IReadOnlyDictionary&lt;DateTime, TimeZoneRule\&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary\-2), 
+[IReadOnlyCollection&lt;KeyValuePair&lt;DateTime, TimeZoneRule\&gt;\&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection\-1), 
+[IEnumerable&lt;KeyValuePair&lt;DateTime, TimeZoneRule\&gt;\&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable\-1), 
 [IEnumerable](https://learn.microsoft.com/dotnet/api/system.collections.ienumerable), 
 [ISerializable](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable), 
 [IDeserializationCallback](https://learn.microsoft.com/dotnet/api/system.runtime.serialization.ideserializationcallback)
 
 #### Inherited Members
 
-[Dictionary<DateTime, TimeZoneRule\>.Add\(DateTime, TimeZoneRule\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.add), 
-[Dictionary<DateTime, TimeZoneRule\>.Clear\(\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.clear), 
-[Dictionary<DateTime, TimeZoneRule\>.ContainsKey\(DateTime\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.containskey), 
-[Dictionary<DateTime, TimeZoneRule\>.ContainsValue\(TimeZoneRule\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.containsvalue), 
-[Dictionary<DateTime, TimeZoneRule\>.GetEnumerator\(\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.getenumerator), 
-[Dictionary<DateTime, TimeZoneRule\>.GetObjectData\(SerializationInfo, StreamingContext\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.getobjectdata), 
-[Dictionary<DateTime, TimeZoneRule\>.OnDeserialization\(object\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.ondeserialization), 
-[Dictionary<DateTime, TimeZoneRule\>.Remove\(DateTime\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.remove\#system\-collections\-generic\-dictionary\-2\-remove\(\-0\)), 
-[Dictionary<DateTime, TimeZoneRule\>.Remove\(DateTime, out TimeZoneRule\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.remove\#system\-collections\-generic\-dictionary\-2\-remove\(\-0\-1@\)), 
-[Dictionary<DateTime, TimeZoneRule\>.TryGetValue\(DateTime, out TimeZoneRule\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.trygetvalue), 
-[Dictionary<DateTime, TimeZoneRule\>.TryAdd\(DateTime, TimeZoneRule\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.tryadd), 
-[Dictionary<DateTime, TimeZoneRule\>.EnsureCapacity\(int\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.ensurecapacity), 
-[Dictionary<DateTime, TimeZoneRule\>.TrimExcess\(\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.trimexcess\#system\-collections\-generic\-dictionary\-2\-trimexcess), 
-[Dictionary<DateTime, TimeZoneRule\>.TrimExcess\(int\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.trimexcess\#system\-collections\-generic\-dictionary\-2\-trimexcess\(system\-int32\)), 
-[Dictionary<DateTime, TimeZoneRule\>.Comparer](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.comparer), 
-[Dictionary<DateTime, TimeZoneRule\>.Count](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.count), 
-[Dictionary<DateTime, TimeZoneRule\>.Keys](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.keys), 
-[Dictionary<DateTime, TimeZoneRule\>.Values](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.values), 
-[Dictionary<DateTime, TimeZoneRule\>.this\[DateTime\]](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.item), 
+[Dictionary&lt;DateTime, TimeZoneRule\&gt;.Add\(DateTime, TimeZoneRule\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.add), 
+[Dictionary&lt;DateTime, TimeZoneRule\&gt;.Clear\(\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.clear), 
+[Dictionary&lt;DateTime, TimeZoneRule\&gt;.ContainsKey\(DateTime\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.containskey), 
+[Dictionary&lt;DateTime, TimeZoneRule\&gt;.ContainsValue\(TimeZoneRule\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.containsvalue), 
+[Dictionary&lt;DateTime, TimeZoneRule\&gt;.GetEnumerator\(\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.getenumerator), 
+[Dictionary&lt;DateTime, TimeZoneRule\&gt;.GetObjectData\(SerializationInfo, StreamingContext\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.getobjectdata), 
+[Dictionary&lt;DateTime, TimeZoneRule\&gt;.OnDeserialization\(object\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.ondeserialization), 
+[Dictionary&lt;DateTime, TimeZoneRule\&gt;.Remove\(DateTime\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.remove\#system\-collections\-generic\-dictionary\-2\-remove\(\-0\)), 
+[Dictionary&lt;DateTime, TimeZoneRule\&gt;.Remove\(DateTime, out TimeZoneRule\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.remove\#system\-collections\-generic\-dictionary\-2\-remove\(\-0\-1@\)), 
+[Dictionary&lt;DateTime, TimeZoneRule\&gt;.TryGetValue\(DateTime, out TimeZoneRule\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.trygetvalue), 
+[Dictionary&lt;DateTime, TimeZoneRule\&gt;.TryAdd\(DateTime, TimeZoneRule\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.tryadd), 
+[Dictionary&lt;DateTime, TimeZoneRule\&gt;.EnsureCapacity\(int\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.ensurecapacity), 
+[Dictionary&lt;DateTime, TimeZoneRule\&gt;.TrimExcess\(\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.trimexcess\#system\-collections\-generic\-dictionary\-2\-trimexcess), 
+[Dictionary&lt;DateTime, TimeZoneRule\&gt;.TrimExcess\(int\)](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.trimexcess\#system\-collections\-generic\-dictionary\-2\-trimexcess\(system\-int32\)), 
+[Dictionary&lt;DateTime, TimeZoneRule\&gt;.Comparer](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.comparer), 
+[Dictionary&lt;DateTime, TimeZoneRule\&gt;.Count](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.count), 
+[Dictionary&lt;DateTime, TimeZoneRule\&gt;.Keys](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.keys), 
+[Dictionary&lt;DateTime, TimeZoneRule\&gt;.Values](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.values), 
+[Dictionary&lt;DateTime, TimeZoneRule\&gt;.this\[DateTime\]](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2.item), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -60,7 +60,7 @@ public class TimeZoneRuleDictionary : Dictionary<DateTime, TimeZoneRule>, IDicti
 
 ## Constructors
 
-### <a id="SuperOffice_WebApi_Data_TimeZoneRuleDictionary__ctor"></a> TimeZoneRuleDictionary\(\)
+### TimeZoneRuleDictionary\(\) {#SuperOffice_WebApi_Data_TimeZoneRuleDictionary__ctor}
 
 Default constructor
 
@@ -70,7 +70,7 @@ public TimeZoneRuleDictionary()
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Data_TimeZoneRuleDictionary_ToString_System_String_"></a> ToString\(string\)
+### ToString\(string\) {#SuperOffice_WebApi_Data_TimeZoneRuleDictionary_ToString_System_String_}
 
 ```csharp
 public string ToString(string prefix)

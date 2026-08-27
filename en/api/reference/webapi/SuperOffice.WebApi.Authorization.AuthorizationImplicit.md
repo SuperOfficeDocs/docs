@@ -1,9 +1,9 @@
-# <a id="SuperOffice_WebApi_Authorization_AuthorizationImplicit"></a> Class AuthorizationImplicit
+# Class AuthorizationImplicit {#SuperOffice_WebApi_Authorization_AuthorizationImplicit}
 
 Namespace: [SuperOffice.WebApi.Authorization](SuperOffice.WebApi.Authorization.md)  
 Assembly: SuperOffice.WebApi.Authorization.dll  
 
-Represents a default <xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"></xref> type, used for pass-through authentication scenarios.
+Represents a default &lt;xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; type, used for pass-through authentication scenarios.
 Use NTLM/Negotiate protocol to authorize with windows identity.
 
 ```csharp
@@ -31,7 +31,7 @@ public class AuthorizationImplicit : IAuthorization
 
 ## Constructors
 
-### <a id="SuperOffice_WebApi_Authorization_AuthorizationImplicit__ctor"></a> AuthorizationImplicit\(\)
+### AuthorizationImplicit\(\) {#SuperOffice_WebApi_Authorization_AuthorizationImplicit__ctor}
 
 ```csharp
 public AuthorizationImplicit()
@@ -39,9 +39,9 @@ public AuthorizationImplicit()
 
 ## Properties
 
-### <a id="SuperOffice_WebApi_Authorization_AuthorizationImplicit_RefreshAuthorizationAsync"></a> RefreshAuthorizationAsync
+### RefreshAuthorizationAsync {#SuperOffice_WebApi_Authorization_AuthorizationImplicit_RefreshAuthorizationAsync}
 
-Try to refresh this <xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"></xref> instance.
+Try to refresh this &lt;xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instance.
 
 ```csharp
 public Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync { get; set; }
@@ -49,11 +49,11 @@ public Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync
 
 #### Property Value
 
- [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)<[ReAuthorizationArgs](SuperOffice.WebApi.Authorization.ReAuthorizationArgs.md), [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[IAuthorization](SuperOffice.WebApi.Authorization.IAuthorization.md)\>\>
+ [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)&lt;[ReAuthorizationArgs](SuperOffice.WebApi.Authorization.ReAuthorizationArgs.md), [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[IAuthorization](SuperOffice.WebApi.Authorization.IAuthorization.md)\&gt;\&gt;
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Authorization_AuthorizationImplicit_GetAuthorization"></a> GetAuthorization\(\)
+### GetAuthorization\(\) {#SuperOffice_WebApi_Authorization_AuthorizationImplicit_GetAuthorization}
 
 Returns an empty tuple. Signifies no authorization header - use NTLM/Negotiate with IIS.
 
