@@ -14,6 +14,15 @@ prefix is checked (a sanity check that the redirect's *target* is alive),
 not that every possible match resolves correctly -- reported as a
 separate, smaller-coverage bucket rather than silently skipped.
 
+Each plain entry is checked as written ("bare"), and -- unless its source
+is a wildcard, ends in "/index" or "/", or already ends in ".html" (those
+forms are already covered by Mintlify's own matching/index.html-stripping
+behavior) -- a second request is made for "<source>.html" ("html-suffix"),
+since the old DocFx site served every page with a literal .html extension
+and Mintlify's redirect matcher treats that as a completely distinct
+source string (#339). Failures are tagged by variant so a break is
+traceable to which URL form broke.
+
 For each non-wildcard entry:
   1. Request base_url + source, following redirects.
   2. Confirm the final response is 200 (not 404/500/etc.) -- catches the
@@ -52,8 +61,14 @@ def normalize(path):
     return path.lower()
 
 
-def check_one(base_url, entry):
-    source, destination = entry["source"], entry["destination"]
+def needs_html_variant(source):
+    """Sources already covered by Mintlify's own matching/index.html-stripping
+    behavior don't need a second, "<source>.html" request (see #339)."""
+    return not (source.endswith("/index") or source.endswith("/") or source.lower().endswith(".html"))
+
+
+def check_one(base_url, entry, source, variant):
+    destination = entry["destination"]
     url = urljoin(base_url, source)
     req = urllib.request.Request(url, headers={"User-Agent": "docs-redirect-smoke-test/1.0"})
     try:
@@ -66,18 +81,18 @@ def check_one(base_url, entry):
         # hits Python's default max-redirects/loop guard). Distinguish this
         # from a plain non-redirect HTTP error like a real 404/500.
         if "infinite loop" in str(exc).lower() or "too many" in str(exc).lower():
-            return entry, "redirect-loop", exc.code, None
-        return entry, "http-error", exc.code, None
+            return entry, variant, source, "redirect-loop", exc.code, None
+        return entry, variant, source, "http-error", exc.code, None
     except (urllib.error.URLError, TimeoutError, OSError) as exc:
-        return entry, "request-failed", str(exc), None
+        return entry, variant, source, "request-failed", str(exc), None
 
     final_path = normalize(final_url)
     expected_path = normalize(destination)
     if status != 200:
-        return entry, "non-200", status, final_url
+        return entry, variant, source, "non-200", status, final_url
     if final_path != expected_path:
-        return entry, "wrong-destination", final_path, final_url
-    return entry, "ok", status, final_url
+        return entry, variant, source, "wrong-destination", final_path, final_url
+    return entry, variant, source, "ok", status, final_url
 
 
 def main():
@@ -98,22 +113,29 @@ def main():
     if args.limit:
         plain = plain[: args.limit]
 
-    print(f"{len(entries)} total entries: {len(plain)} plain (checked live), "
+    checks = []
+    for e in plain:
+        checks.append((e, "bare", e["source"]))
+        if needs_html_variant(e["source"]):
+            checks.append((e, "html-suffix", e["source"] + ".html"))
+
+    print(f"{len(entries)} total entries: {len(plain)} plain -> {len(checks)} requests checked live "
+          f"({len(checks) - len(plain)} .html-suffix variants, see #339), "
           f"{len(wildcard)} wildcard (destination-prefix sanity check only, not full coverage).")
 
     failures = []
     ok_count = 0
     start = time.time()
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
-        futures = [pool.submit(check_one, args.base_url, e) for e in plain]
+        futures = [pool.submit(check_one, args.base_url, e, source, variant) for e, variant, source in checks]
         for i, fut in enumerate(as_completed(futures), start=1):
-            entry, status, detail, final_url = fut.result()
+            entry, variant, source, status, detail, final_url = fut.result()
             if status == "ok":
                 ok_count += 1
             else:
-                failures.append((entry, status, detail, final_url))
+                failures.append((entry, variant, source, status, detail, final_url))
             if i % 250 == 0:
-                print(f"  ...{i}/{len(plain)} checked ({time.time() - start:.0f}s elapsed)")
+                print(f"  ...{i}/{len(checks)} checked ({time.time() - start:.0f}s elapsed)")
 
     # Wildcard sanity pass: check the destination's own non-wildcard prefix resolves.
     wildcard_failures = []
@@ -136,9 +158,12 @@ def main():
         wildcard_checked.append(dest_prefix)
     seen_prefixes = sorted(set(wildcard_checked))
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
-        futures = {pool.submit(check_one, args.base_url, {"source": p, "destination": p}): p for p in seen_prefixes}
+        futures = {
+            pool.submit(check_one, args.base_url, {"source": p, "destination": p}, p, "bare"): p
+            for p in seen_prefixes
+        }
         for fut in as_completed(futures):
-            entry, status, detail, final_url = fut.result()
+            entry, variant, source, status, detail, final_url = fut.result()
             # A wildcard's destination prefix (e.g. "/en/api/localization/culture"
             # from ".../culture/*") is a template, not necessarily a real page
             # in its own right -- only a genuine failure (error status,
@@ -146,19 +171,19 @@ def main():
             # itself redirects somewhere else entirely is not this check's
             # business to judge.
             if status in ("http-error", "request-failed", "redirect-loop"):
-                wildcard_failures.append((entry, status, detail, final_url))
+                wildcard_failures.append((entry, variant, source, status, detail, final_url))
 
-    print(f"\nPlain entries:    {ok_count} ok, {len(failures)} failed (of {len(plain)})")
+    print(f"\nPlain entries:    {ok_count} ok, {len(failures)} failed (of {len(checks)} requests)")
     print(f"Wildcard targets: {len(seen_prefixes) - len(wildcard_failures)} ok, "
           f"{len(wildcard_failures)} failed (of {len(seen_prefixes)} distinct path-segment destination prefixes; "
           f"{wildcard_unchecked} filename-prefix-style wildcard destinations skipped, not testable this way)")
 
     out_path = repo_root / "scratch-check-redirects-live.txt"
     with out_path.open("w", encoding="utf-8") as f:
-        for entry, status, detail, final_url in failures:
-            f.write(f"PLAIN\t{status}\t{entry['source']}\t{entry['destination']}\t{detail}\t{final_url}\n")
-        for entry, status, detail, final_url in wildcard_failures:
-            f.write(f"WILDCARD-TARGET\t{status}\t{entry['source']}\t{detail}\t{final_url}\n")
+        for entry, variant, source, status, detail, final_url in failures:
+            f.write(f"PLAIN\t{variant}\t{status}\t{source}\t{entry['destination']}\t{detail}\t{final_url}\n")
+        for entry, variant, source, status, detail, final_url in wildcard_failures:
+            f.write(f"WILDCARD-TARGET\t{variant}\t{status}\t{source}\t{detail}\t{final_url}\n")
     print(f"Wrote failure details to {out_path}")
 
     if failures or wildcard_failures:
