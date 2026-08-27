@@ -218,6 +218,7 @@
                 "pages": [
                   {
                     "group": "Referentie",
+                    "root": "nl/document/templates/variables/index",
                     "pages": [
                       "nl/document/templates/variables/from-company-card",
                       "nl/document/templates/variables/from-senders-company-card",
