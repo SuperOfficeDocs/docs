@@ -1,7 +1,7 @@
 ---
 title: TargetValueSub
 description: Archive of TargetValue - used by .
-keywords: ['TargetValueSub archive provider']
+keywords: TargetValueSub archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -413,7 +413,7 @@ Archive of TargetValue - used by .
 ## Sample
 
 ```http!
-GET /api/v1/archive/TargetValueSub?$select=contact/url/URLDescription,contact/contactExtra/x_contact_shorttext,contact/streetAddress/zip
+GET /api/v1/archive/TargetValueSub?$select=associate/simultaneousEjUser,contact/postAddress/line2,contact/contactAssociate/isLocation,contact/contactSupportPerson/personExtra/x_person_integer
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

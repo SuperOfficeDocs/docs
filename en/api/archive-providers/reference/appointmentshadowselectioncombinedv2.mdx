@@ -1,7 +1,7 @@
 ---
 title: AppointmentShadowSelectionCombinedV2
 description: Implementation of the provider for the combined selection
-keywords: ['AppointmentShadowSelectionCombinedV2 archive provider']
+keywords: AppointmentShadowSelectionCombinedV2 archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -759,7 +759,7 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/AppointmentShadowSelectionCombinedV2?$select=rawStatus,completedDate,contact/contactPhone/formattedNumber,contact/contactAssociate/usergroupId,contact/contactExtra/x_contact_timespan
+GET /api/v1/archive/AppointmentShadowSelectionCombinedV2?$select=contact/orgnr,contact/postAddress/zip,contact/contactExtra/x_contact_dropdown,person/personUdef/SuperOffice:3,person/personAssociate/lastName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

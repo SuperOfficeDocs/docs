@@ -1,7 +1,7 @@
 ---
 title: AssignResponseInvitation
 description: This is the query provider for invitations, of subtype 'Response'
-keywords: ['AssignResponseInvitation archive provider']
+keywords: AssignResponseInvitation archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -761,7 +761,7 @@ must be &gt;= start of today. This is an optional entity and is fetched if the u
 ## Sample
 
 ```http!
-GET /api/v1/archive/AssignResponseInvitation?$select=contact/mainContact,contact/contactAssociate/assocType,person/personCountryId,person/personAssociate/contactFullName,person/correspondingAssociate/ejUserId
+GET /api/v1/archive/AssignResponseInvitation?$select=contact/contactDeleted,contact/postAddress/formattedMultiLineAddress,contact/streetAddress/line2,contact/contactAssociate/firstName,sale/date
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

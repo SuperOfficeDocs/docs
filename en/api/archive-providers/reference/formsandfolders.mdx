@@ -1,7 +1,7 @@
 ---
 title: FormsAndFolders
 description: Combined archive of forms (the form table) and form folders
-keywords: ['FormsAndFolders archive provider']
+keywords: FormsAndFolders archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -87,7 +87,7 @@ MailingsAndFoldersProvider (mailingDescription / folderName both → name).
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormsAndFolders?$select=registeredDate,updatedBy,emailFlow/shipmentType
+GET /api/v1/archive/FormsAndFolders?$select=updatedBy,emailFlow/shipmentType
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

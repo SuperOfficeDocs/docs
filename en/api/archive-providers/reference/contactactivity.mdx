@@ -1,7 +1,7 @@
 ---
 title: ContactActivity
 description: Activity archive provider for the Company card
-keywords: ['ContactActivity archive provider']
+keywords: ContactActivity archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -1304,7 +1304,7 @@ Activity archive provider for the Company card
 ## Sample
 
 ```http!
-GET /api/v1/archive/ContactActivity?$select=person/personInfo/infoText,person/personAddress/formattedAddress,person/personAssociate/role,project/status,project/projectAssociate/title
+GET /api/v1/archive/ContactActivity?$select=updatedDate,person/personDirectFax/description,person/restrictionAddress/wgs84longitude,person/correspondingAssociate/ejDisplayName,contact/NumberOfTicketsInPeriod
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

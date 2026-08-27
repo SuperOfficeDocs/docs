@@ -1,7 +1,7 @@
 ---
 title: Mail2
 description: Provides populated mail envelope rows as an archive
-keywords: ['Mail2 archive provider']
+keywords: Mail2 archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -496,7 +496,7 @@ Provides populated mail envelope rows as an archive
 ## Sample
 
 ```http!
-GET /api/v1/archive/Mail2?$select=person/personAssociate/otherGroups,person/correspondingAssociate/assocName,contact/streetAddress/city
+GET /api/v1/archive/Mail2?$select=person/personDirectPhone/formattedNumber,person/personAssociate/isLocation,contact/email/emailHasBounced,contact/restrictionAddress/line1,contact/restrictionAddress/county
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

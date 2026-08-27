@@ -1,7 +1,7 @@
 ---
 title: DocumentDynamicSelection
 description: Document selection archive using the selectionId as criterionmapping.
-keywords: ['DocumentDynamicSelection archive provider']
+keywords: DocumentDynamicSelection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -733,7 +733,7 @@ Document selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/DocumentDynamicSelection?$select=getNoRows,person/rank,person/personInfo/infoText,person/personUdef/SuperOffice:7,contact/contactAssociate/fullName
+GET /api/v1/archive/DocumentDynamicSelection?$select=subject,person/personAssociateId,person/personAssociate/assocName,contact/restrictionAddress/formattedAddress,contact/contactAssociate/isActive
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

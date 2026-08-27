@@ -1,7 +1,7 @@
 ---
 title: Forms
 description: Archive provider for the list of forms (the form table). Backs the Forms
-keywords: ['Forms archive provider']
+keywords: Forms archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -73,7 +73,7 @@ both from this one provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/Forms?$select=emailFlow/emailFlowId,registeredDate,emailFlow/overrideConsentSubscription
+GET /api/v1/archive/Forms?$select=registeredDate,emailFlow/overrideConsentSubscription
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

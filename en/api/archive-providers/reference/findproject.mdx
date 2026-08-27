@@ -1,7 +1,7 @@
 ---
 title: FindProject
 description: Provider for searching in projects
-keywords: ['FindProject archive provider']
+keywords: FindProject archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -825,7 +825,7 @@ Provider for searching in projects
 ## Sample
 
 ```http!
-GET /api/v1/archive/FindProject?$select=appointment/appointmentUdef/SuperOffice:6,appointment/appointment/text,projectMember/contactUdef/SuperOffice:9
+GET /api/v1/archive/FindProject?$select=sale/stalledComment,appointment/associate/usergroup,document/completed,projectMember/projectMemberId,projectMember/personRegisteredDate
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

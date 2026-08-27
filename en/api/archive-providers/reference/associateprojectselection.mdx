@@ -1,7 +1,7 @@
 ---
 title: AssociateProjectSelection
 description: This is the archive Provider for the Selection Project archive.
-keywords: ['AssociateProjectSelection archive provider']
+keywords: AssociateProjectSelection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -832,7 +832,7 @@ This is the archive Provider for the Selection Project archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/AssociateProjectSelection?$select=sale/saleUdef/SuperOffice:4,appointment/associate/usergroup,document/time,projectMember/rank,projectMember/personExtra/y_rental/x_amount
+GET /api/v1/archive/AssociateProjectSelection?$select=sale/registeredByFullName,appointment/associate/usergroup,appointment/associate/locationAddress,projectMember/restrictionAddress/line1,projectMember/correspondingAssociate/ejDisplayName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -1,7 +1,7 @@
 ---
 title: ProjectDynamicSelection
 description: Project selection archive using the selectionId as criterionmapping.
-keywords: ['ProjectDynamicSelection archive provider']
+keywords: ProjectDynamicSelection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -827,7 +827,7 @@ Project selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectDynamicSelection?$select=updatedByFullName,sale/associate/personId,appointment/registeredBy,document/visibleFor,projectMember/personAssociate/ejDisplayName
+GET /api/v1/archive/ProjectDynamicSelection?$select=sale/who,appointment/alarm,projectMember/personInterestIds,projectMember/personExtra/y_rental/x_amount,projectMember/personAssociate/mrMrs
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_SaleAgent"&gt;&lt;/a&gt; Class SaleAgent
+# <a id="SuperOffice_WebApi_Agents_SaleAgent"></a> Class SaleAgent
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -38,7 +38,7 @@ public class SaleAgent : AgentBase, ISaleAgent, IAgentBase, IDisposable
 [AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequestObjectWithStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
 [AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequest\_System\_Net\_Http\_HttpRequestMessage\_SuperOffice\_WebApi\_RequestOptions\_), 
 [AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ThrowOnResponseErrorAsync\_System\_Net\_Http\_HttpRequestMessage\_System\_Net\_Http\_HttpResponseMessage\_), 
-[AgentBase.ParseResponse&lt;T\&gt;\(HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseResponse\_\_1\_System\_Net\_Http\_HttpResponseMessage\_), 
+[AgentBase.ParseResponse<T\>\(HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseResponse\_\_1\_System\_Net\_Http\_HttpResponseMessage\_), 
 [AgentBase.Finally\(RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Finally\_SuperOffice\_WebApi\_RequestOptions\_), 
 [AgentBase.Dispose\(\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Dispose), 
 [AgentBase.Configuration](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Configuration), 
@@ -57,19 +57,19 @@ public class SaleAgent : AgentBase, ISaleAgent, IAgentBase, IDisposable
 
 ## Examples
 
-&lt;pre&gt;&lt;code class="lang-csharp"&gt;using SuperOffice.WebApi;
+<pre><code class="lang-csharp">using SuperOffice.WebApi;
 using SuperOffice.WebApi.Agents;
 
 var mySession = new WebApiOptions("http://example.com/super/api");
 mySession.Authorization = new AuthorizationUsernamePassword("user", "pass");
 using (SaleAgent agent = new SaleAgent(mySession))
-\{
+{
       // call methods on agent here...
-\}&lt;/code&gt;&lt;/pre&gt;
+}</code></pre>
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; SaleAgent\(HttpClient\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent__ctor_System_Net_Http_HttpClient_"></a> SaleAgent\(HttpClient\)
 
 Constructor: Sale data services
 
@@ -83,7 +83,7 @@ public SaleAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; SaleAgent\(WebApiOptions, HttpClient\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"></a> SaleAgent\(WebApiOptions, HttpClient\)
 
 Constructor: Sale data services
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_AddSaleStakeholdersAsync_System_Int32_SuperOffice_WebApi_Data_SaleStakeholder___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddSaleStakeholdersAsync\(int, SaleStakeholder\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_AddSaleStakeholdersAsync_System_Int32_SuperOffice_WebApi_Data_SaleStakeholder___SuperOffice_WebApi_RequestOptions_"></a> AddSaleStakeholdersAsync\(int, SaleStakeholder\[\], RequestOptions\)
 
 ```csharp
 public Task AddSaleStakeholdersAsync(int saleId, SaleStakeholder[] saleStakeholders, RequestOptions requestOptions = null)
@@ -123,7 +123,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_BatchUpdateNextDueDateAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; BatchUpdateNextDueDateAsync\(RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_BatchUpdateNextDueDateAsync_SuperOffice_WebApi_RequestOptions_"></a> BatchUpdateNextDueDateAsync\(RequestOptions\)
 
 Re-calculate all the next due dates
 
@@ -141,7 +141,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_CreateDefaultSaleEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultSaleEntityAsync\(RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_CreateDefaultSaleEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultSaleEntityAsync\(RequestOptions\)
 
 Set default values into a new SaleEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -158,11 +158,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md)\>
 
 A blank SaleEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_CreateDefaultSaleStakeholderAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultSaleStakeholderAsync\(RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_CreateDefaultSaleStakeholderAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultSaleStakeholderAsync\(RequestOptions\)
 
 Set default values into a new SaleStakeholder.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -179,11 +179,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)\>
 
 A blank SaleStakeholder
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_CreateDefaultSaleSummaryAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultSaleSummaryAsync\(RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_CreateDefaultSaleSummaryAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultSaleSummaryAsync\(RequestOptions\)
 
 Set default values into a new SaleSummary.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -200,11 +200,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleSummary](SuperOffice.WebApi.Data.SaleSummary.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleSummary](SuperOffice.WebApi.Data.SaleSummary.md)\>
 
 A blank SaleSummary
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_DeleteSaleEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteSaleEntityAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_DeleteSaleEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteSaleEntityAsync\(int, RequestOptions\)
 
 Deletes the SaleEntity
 
@@ -226,7 +226,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_DeleteSaleStakeholderAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteSaleStakeholderAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_DeleteSaleStakeholderAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteSaleStakeholderAsync\(int, RequestOptions\)
 
 Deletes the SaleStakeholder
 
@@ -248,7 +248,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_DeleteSaleStakeholdersAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteSaleStakeholdersAsync\(int\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_DeleteSaleStakeholdersAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> DeleteSaleStakeholdersAsync\(int\[\], RequestOptions\)
 
 ```csharp
 public Task DeleteSaleStakeholdersAsync(int[] saleStakeholderIds, RequestOptions requestOptions = null)
@@ -266,7 +266,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_GetMyOpportunitiesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetMyOpportunitiesAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_GetMyOpportunitiesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetMyOpportunitiesAsync\(int, RequestOptions\)
 
 Returning the opportunities (open sales) belonging to the user currently logged on
 
@@ -286,11 +286,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Sale](SuperOffice.WebApi.Data.Sale.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](SuperOffice.WebApi.Data.Sale.md)\[\]\>
 
 Array of open sales (opportunities).
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_GetNextDueDateAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetNextDueDateAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_GetNextDueDateAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetNextDueDateAsync\(int, RequestOptions\)
 
 Gets the next due date for a sale. The next due date is the next future appointment that is not completed.
 
@@ -310,11 +310,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)\>
 
 Next due date for the given sale.
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_GetNextSaleStageAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetNextSaleStageAsync\(int, bool, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_GetNextSaleStageAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetNextSaleStageAsync\(int, bool, RequestOptions\)
 
 Gets the next (not deleted) sale stage id if the current stage is deleted. If the current stage is not deleted, the CurrentStageId is returned
 
@@ -334,9 +334,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_GetOpenSalesForContactAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetOpenSalesForContactAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_GetOpenSalesForContactAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetOpenSalesForContactAsync\(int, RequestOptions\)
 
 Returns all open sales for the contact provided.
 
@@ -356,11 +356,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Sale](SuperOffice.WebApi.Data.Sale.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](SuperOffice.WebApi.Data.Sale.md)\[\]\>
 
 Aray of sales.
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_GetProbabilityFromStageAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProbabilityFromStageAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_GetProbabilityFromStageAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetProbabilityFromStageAsync\(int, RequestOptions\)
 
 Get the probability percentage for a given sale stage
 
@@ -380,11 +380,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
 
 Probability percentage
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_GetRecentSalesAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetRecentSalesAsync\(int, int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_GetRecentSalesAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetRecentSalesAsync\(int, int, RequestOptions\)
 
 Returns the latest sales (that are sold) limited by their amount. The result is sorted descending with the latest first. If the amount is -1, the amount restriction is omitted.
 
@@ -408,11 +408,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Sale](SuperOffice.WebApi.Data.Sale.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](SuperOffice.WebApi.Data.Sale.md)\[\]\>
 
 Array of all recent sales.
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_GetSaleAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSaleAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_GetSaleAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetSaleAsync\(int, RequestOptions\)
 
 Gets a specific Sale object.
 
@@ -432,11 +432,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Sale](SuperOffice.WebApi.Data.Sale.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](SuperOffice.WebApi.Data.Sale.md)\>
 
 Sale
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_GetSaleEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSaleEntityAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_GetSaleEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetSaleEntityAsync\(int, RequestOptions\)
 
 Gets a specific SaleEntity object.
 
@@ -456,11 +456,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md)\>
 
 SaleEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_GetSaleListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSaleListAsync\(int\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_GetSaleListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetSaleListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific Sale objects.
 
@@ -480,11 +480,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Sale](SuperOffice.WebApi.Data.Sale.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](SuperOffice.WebApi.Data.Sale.md)\[\]\>
 
 Array of Sale objects
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_GetSaleStakeholderAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSaleStakeholderAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_GetSaleStakeholderAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetSaleStakeholderAsync\(int, RequestOptions\)
 
 Gets a specific SaleStakeholder object.
 
@@ -504,11 +504,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)\>
 
 SaleStakeholder
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_GetSaleStakeholderByIdAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSaleStakeholderByIdAsync\(int\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_GetSaleStakeholderByIdAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetSaleStakeholderByIdAsync\(int\[\], RequestOptions\)
 
 ```csharp
 public Task<SaleStakeholder[]> GetSaleStakeholderByIdAsync(int[] saleStakeholderIds, RequestOptions requestOptions = null)
@@ -524,9 +524,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)\[\]\>
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_GetSaleStakeholderListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSaleStakeholderListAsync\(int\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_GetSaleStakeholderListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetSaleStakeholderListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific SaleStakeholder objects.
 
@@ -546,11 +546,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)\[\]\>
 
 Array of SaleStakeholder objects
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_GetSaleStakeholdersAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSaleStakeholdersAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_GetSaleStakeholdersAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetSaleStakeholdersAsync\(int, RequestOptions\)
 
 ```csharp
 public Task<SaleStakeholder[]> GetSaleStakeholdersAsync(int saleId, RequestOptions requestOptions = null)
@@ -566,9 +566,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)\[\]\>
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_GetSalesByDateAsync_System_DateTime_System_DateTime_System_Int32_SuperOffice_WebApi_Data_SaleStatus_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSalesByDateAsync\(DateTime, DateTime, int, SaleStatus, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_GetSalesByDateAsync_System_DateTime_System_DateTime_System_Int32_SuperOffice_WebApi_Data_SaleStatus_SuperOffice_WebApi_RequestOptions_"></a> GetSalesByDateAsync\(DateTime, DateTime, int, SaleStatus, RequestOptions\)
 
 Returns all sales within a time period. The sales array can be limited by amount and status.
 
@@ -600,11 +600,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Sale](SuperOffice.WebApi.Data.Sale.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](SuperOffice.WebApi.Data.Sale.md)\[\]\>
 
 Array of sales.
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_GetSalesFromContactAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSalesFromContactAsync\(int, bool, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_GetSalesFromContactAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetSalesFromContactAsync\(int, bool, RequestOptions\)
 
 Returns all sales for the contact provided.
 
@@ -628,11 +628,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Sale](SuperOffice.WebApi.Data.Sale.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](SuperOffice.WebApi.Data.Sale.md)\[\]\>
 
 List of sales matching query
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_GetSalesFromPersonAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSalesFromPersonAsync\(int, bool, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_GetSalesFromPersonAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetSalesFromPersonAsync\(int, bool, RequestOptions\)
 
 Returns all sales for the person provided.
 
@@ -656,11 +656,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Sale](SuperOffice.WebApi.Data.Sale.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](SuperOffice.WebApi.Data.Sale.md)\[\]\>
 
 List of sales matching query
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_GetSummaryByAssociateAsync_System_Int32_System_DateTime_System_DateTime_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSummaryByAssociateAsync\(int, DateTime, DateTime, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_GetSummaryByAssociateAsync_System_Int32_System_DateTime_System_DateTime_SuperOffice_WebApi_RequestOptions_"></a> GetSummaryByAssociateAsync\(int, DateTime, DateTime, RequestOptions\)
 
 ```csharp
 public Task<SaleSummary> GetSummaryByAssociateAsync(int associateId, DateTime fromDate, DateTime toDate, RequestOptions requestOptions = null)
@@ -680,9 +680,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleSummary](SuperOffice.WebApi.Data.SaleSummary.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleSummary](SuperOffice.WebApi.Data.SaleSummary.md)\>
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_GetSummaryByContactAsync_System_Int32_System_DateTime_System_DateTime_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSummaryByContactAsync\(int, DateTime, DateTime, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_GetSummaryByContactAsync_System_Int32_System_DateTime_System_DateTime_SuperOffice_WebApi_RequestOptions_"></a> GetSummaryByContactAsync\(int, DateTime, DateTime, RequestOptions\)
 
 ```csharp
 public Task<SaleSummary> GetSummaryByContactAsync(int contactId, DateTime fromDate, DateTime toDate, RequestOptions requestOptions = null)
@@ -702,9 +702,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleSummary](SuperOffice.WebApi.Data.SaleSummary.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleSummary](SuperOffice.WebApi.Data.SaleSummary.md)\>
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_GetSummaryByGroupAsync_System_Int32_System_DateTime_System_DateTime_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetSummaryByGroupAsync\(int, DateTime, DateTime, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_GetSummaryByGroupAsync_System_Int32_System_DateTime_System_DateTime_SuperOffice_WebApi_RequestOptions_"></a> GetSummaryByGroupAsync\(int, DateTime, DateTime, RequestOptions\)
 
 ```csharp
 public Task<SaleSummary> GetSummaryByGroupAsync(int groupId, DateTime fromDate, DateTime toDate, RequestOptions requestOptions = null)
@@ -724,9 +724,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleSummary](SuperOffice.WebApi.Data.SaleSummary.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleSummary](SuperOffice.WebApi.Data.SaleSummary.md)\>
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_GetUpcomingSalesAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetUpcomingSalesAsync\(int, int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_GetUpcomingSalesAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetUpcomingSalesAsync\(int, int, RequestOptions\)
 
 Returns all open sales, sorted descending with the latest first.  If the weigthed amount is -1, the amount restriction is omitted.
 
@@ -750,11 +750,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Sale](SuperOffice.WebApi.Data.Sale.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Sale](SuperOffice.WebApi.Data.Sale.md)\[\]\>
 
 Array of upcoming sales.
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_HasGuideActivitiesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; HasGuideActivitiesAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_HasGuideActivitiesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> HasGuideActivitiesAsync\(int, RequestOptions\)
 
 ```csharp
 public Task<bool> HasGuideActivitiesAsync(int saleId, RequestOptions requestOptions = null)
@@ -770,9 +770,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_HasGuideAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; HasGuideAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_HasGuideAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> HasGuideAsync\(int, RequestOptions\)
 
 Does this sale have a sale guide associated with its sale type?
 
@@ -792,11 +792,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
 
 True if the sale has a guide
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_HasStakeholderSettingAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; HasStakeholderSettingAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_HasStakeholderSettingAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> HasStakeholderSettingAsync\(int, RequestOptions\)
 
 ```csharp
 public Task<bool> HasStakeholderSettingAsync(int saleId, RequestOptions requestOptions = null)
@@ -812,9 +812,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_IsNumberValidAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; IsNumberValidAsync\(int, string, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_IsNumberValidAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> IsNumberValidAsync\(int, string, RequestOptions\)
 
 Checks if the number is unique or required.  The setting is configured from admin under system options.
 
@@ -838,11 +838,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
 
 True if the number is valid
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_OfferAutoNextStageOnApppointmentCompletedAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; OfferAutoNextStageOnApppointmentCompletedAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_OfferAutoNextStageOnApppointmentCompletedAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> OfferAutoNextStageOnApppointmentCompletedAsync\(int, RequestOptions\)
 
 ```csharp
 public Task<bool> OfferAutoNextStageOnApppointmentCompletedAsync(int appointmentId, RequestOptions requestOptions = null)
@@ -858,9 +858,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_SaleHasQuoteAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaleHasQuoteAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_SaleHasQuoteAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> SaleHasQuoteAsync\(int, RequestOptions\)
 
 Returns true is the sale has a quote
 
@@ -880,11 +880,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
 
 True if the sale has a quote
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_SaveSaleEntityAsync_SuperOffice_WebApi_Data_SaleEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveSaleEntityAsync\(SaleEntity, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_SaveSaleEntityAsync_SuperOffice_WebApi_Data_SaleEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveSaleEntityAsync\(SaleEntity, RequestOptions\)
 
 Updates the existing SaleEntity or creates a new SaleEntity if the id parameter is 0.
 
@@ -904,11 +904,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md)\>
 
 New or updated SaleEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_SaveSaleStakeholderAsync_SuperOffice_WebApi_Data_SaleStakeholder_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveSaleStakeholderAsync\(SaleStakeholder, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_SaveSaleStakeholderAsync_SuperOffice_WebApi_Data_SaleStakeholder_SuperOffice_WebApi_RequestOptions_"></a> SaveSaleStakeholderAsync\(SaleStakeholder, RequestOptions\)
 
 Updates the existing SaleStakeholder or creates a new SaleStakeholder if the id parameter is 0.
 
@@ -928,11 +928,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)\>
 
 New or updated SaleStakeholder
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_SetAsLostAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetAsLostAsync\(int\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_SetAsLostAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> SetAsLostAsync\(int\[\], RequestOptions\)
 
 Change the status of one or more sales to Lost. Note that this does not affect the Completed state of the sale.
 
@@ -954,7 +954,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_SetAsLostWithReasonAsync_System_Int32___System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetAsLostWithReasonAsync\(int\[\], int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_SetAsLostWithReasonAsync_System_Int32___System_Int32_SuperOffice_WebApi_RequestOptions_"></a> SetAsLostWithReasonAsync\(int\[\], int, RequestOptions\)
 
 Change the status of one or more sales to Lost. Note that this does not affect the Completed state of the sale.
 
@@ -980,7 +980,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_SetAsSoldAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetAsSoldAsync\(int\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_SetAsSoldAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> SetAsSoldAsync\(int\[\], RequestOptions\)
 
 Change the status of one or more Sales to Sold. Note that this does not mark them as Completed.
 
@@ -1002,7 +1002,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_SetAsSoldWithReasonAsync_System_Int32___System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetAsSoldWithReasonAsync\(int\[\], int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_SetAsSoldWithReasonAsync_System_Int32___System_Int32_SuperOffice_WebApi_RequestOptions_"></a> SetAsSoldWithReasonAsync\(int\[\], int, RequestOptions\)
 
 Change the status of one or more Sales to Sold. Note that this does not mark them as Completed.
 
@@ -1028,7 +1028,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_UpdateSaleStakeholdersAsync_SuperOffice_WebApi_Data_SaleStakeholder___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; UpdateSaleStakeholdersAsync\(SaleStakeholder\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_UpdateSaleStakeholdersAsync_SuperOffice_WebApi_Data_SaleStakeholder___SuperOffice_WebApi_RequestOptions_"></a> UpdateSaleStakeholdersAsync\(SaleStakeholder\[\], RequestOptions\)
 
 ```csharp
 public Task<SaleStakeholder[]> UpdateSaleStakeholdersAsync(SaleStakeholder[] stakeholders, RequestOptions requestOptions = null)
@@ -1044,9 +1044,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)\[\]\>
 
-### &lt;a id="SuperOffice_WebApi_Agents_SaleAgent_ValidateSaleEntityAsync_SuperOffice_WebApi_Data_SaleEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ValidateSaleEntityAsync\(SaleEntity, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_SaleAgent_ValidateSaleEntityAsync_SuperOffice_WebApi_Data_SaleEntity_SuperOffice_WebApi_RequestOptions_"></a> ValidateSaleEntityAsync\(SaleEntity, RequestOptions\)
 
 Check that entity is ready for saving, return error messages by field.
 
@@ -1066,7 +1066,7 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\>
 
 Error messages tagged by field.
 

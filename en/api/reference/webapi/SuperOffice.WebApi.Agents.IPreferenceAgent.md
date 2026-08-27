@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent"&gt;&lt;/a&gt; Interface IPreferenceAgent
+# <a id="SuperOffice_WebApi_Agents_IPreferenceAgent"></a> Interface IPreferenceAgent
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface IPreferenceAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_CreateDefaultPreferenceAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultPreferenceAsync\(RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_CreateDefaultPreferenceAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultPreferenceAsync\(RequestOptions\)
 
 Set default values into a new Preference.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -33,11 +33,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Preference](SuperOffice.WebApi.Data.Preference.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Preference](SuperOffice.WebApi.Data.Preference.md)\>
 
 A blank Preference
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_CreateDefaultPreferenceDescriptionAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultPreferenceDescriptionAsync\(RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_CreateDefaultPreferenceDescriptionAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultPreferenceDescriptionAsync\(RequestOptions\)
 
 Set default values into a new PreferenceDescription.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -54,11 +54,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreferenceDescription](SuperOffice.WebApi.Data.PreferenceDescription.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PreferenceDescription](SuperOffice.WebApi.Data.PreferenceDescription.md)\>
 
 A blank PreferenceDescription
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_CreateDefaultPreferenceDescriptionLineAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultPreferenceDescriptionLineAsync\(RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_CreateDefaultPreferenceDescriptionLineAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultPreferenceDescriptionLineAsync\(RequestOptions\)
 
 Set default values into a new PreferenceDescriptionLine.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -75,11 +75,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreferenceDescriptionLine](SuperOffice.WebApi.Data.PreferenceDescriptionLine.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PreferenceDescriptionLine](SuperOffice.WebApi.Data.PreferenceDescriptionLine.md)\>
 
 A blank PreferenceDescriptionLine
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_DeleteFromSectionAndKeyAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteFromSectionAndKeyAsync\(string, string, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_DeleteFromSectionAndKeyAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> DeleteFromSectionAndKeyAsync\(string, string, RequestOptions\)
 
 Gets a PreferenceDescription based on the section and key
 
@@ -107,7 +107,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_DeletePrefDescLinesByPrefDescIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeletePrefDescLinesByPrefDescIdAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_DeletePrefDescLinesByPrefDescIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeletePrefDescLinesByPrefDescIdAsync\(int, RequestOptions\)
 
 Delete the PrefDescLines associated with Preference Description Id in the SuperOffice database
 
@@ -131,7 +131,7 @@ Override language/culture codes on this request.
 
 Nothing
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_DeletePrefDescLinesByPrefDescIdsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeletePrefDescLinesByPrefDescIdsAsync\(int\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_DeletePrefDescLinesByPrefDescIdsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> DeletePrefDescLinesByPrefDescIdsAsync\(int\[\], RequestOptions\)
 
 Delete the PrefDescLines associated with Preference Description Ids in the SuperOffice database
 
@@ -155,7 +155,7 @@ Override language/culture codes on this request.
 
 Nothing
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_DeletePreferenceAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeletePreferenceAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_DeletePreferenceAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeletePreferenceAsync\(int, RequestOptions\)
 
 Delete a preference by id
 
@@ -179,7 +179,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_DeletePreferenceDescriptionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeletePreferenceDescriptionAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_DeletePreferenceDescriptionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeletePreferenceDescriptionAsync\(int, RequestOptions\)
 
 Deletes the PreferenceDescription
 
@@ -201,7 +201,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_DeletePreferenceDescriptionLineAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeletePreferenceDescriptionLineAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_DeletePreferenceDescriptionLineAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeletePreferenceDescriptionLineAsync\(int, RequestOptions\)
 
 Deletes the PreferenceDescriptionLine
 
@@ -223,7 +223,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_DeletePreferenceDescriptionLinesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeletePreferenceDescriptionLinesAsync\(int\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_DeletePreferenceDescriptionLinesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> DeletePreferenceDescriptionLinesAsync\(int\[\], RequestOptions\)
 
 Delete the PrefDescLines in the SuperOffice database
 
@@ -247,7 +247,7 @@ Override language/culture codes on this request.
 
 Nothing
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_DeletePreferencesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeletePreferencesAsync\(int\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_DeletePreferencesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> DeletePreferencesAsync\(int\[\], RequestOptions\)
 
 Delete some preferences by id
 
@@ -271,7 +271,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetAllAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAllAsync\(RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetAllAsync_SuperOffice_WebApi_RequestOptions_"></a> GetAllAsync\(RequestOptions\)
 
 Gets a list of all PreferenceDescriptions in the system.
 
@@ -287,11 +287,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreferenceDescription](SuperOffice.WebApi.Data.PreferenceDescription.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PreferenceDescription](SuperOffice.WebApi.Data.PreferenceDescription.md)\[\]\>
 
 All PreferenceDescriptions in the system
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetAllFromSectionAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetAllFromSectionAsync\(string, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetAllFromSectionAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetAllFromSectionAsync\(string, RequestOptions\)
 
 Gets all PreferenceDescription-items in the specified section
 
@@ -311,11 +311,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreferenceDescription](SuperOffice.WebApi.Data.PreferenceDescription.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PreferenceDescription](SuperOffice.WebApi.Data.PreferenceDescription.md)\[\]\>
 
 All PreferenceDescriptions found.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetFromSectionAndKeyAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetFromSectionAndKeyAsync\(string, string, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetFromSectionAndKeyAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetFromSectionAndKeyAsync\(string, string, RequestOptions\)
 
 Gets a PreferenceDescription based on the section and key
 
@@ -339,11 +339,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreferenceDescription](SuperOffice.WebApi.Data.PreferenceDescription.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PreferenceDescription](SuperOffice.WebApi.Data.PreferenceDescription.md)\>
 
 A PreferenceDescription or null
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetNetServicesStatusUrlAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetNetServicesStatusUrlAsync\(RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetNetServicesStatusUrlAsync_SuperOffice_WebApi_RequestOptions_"></a> GetNetServicesStatusUrlAsync\(RequestOptions\)
 
 Returns URL to status service. e.g. 'https://help.superoffice.com/sodispatcher/v1/status' Returns NULL if status does not need to be checked yet.
 
@@ -359,11 +359,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
 
 NULL or URL of the status service that returns an XML or JSON block.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetPreferenceAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPreferenceAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetPreferenceAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPreferenceAsync\(int, RequestOptions\)
 
 Get a preference by id
 
@@ -383,11 +383,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Preference](SuperOffice.WebApi.Data.Preference.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Preference](SuperOffice.WebApi.Data.Preference.md)\>
 
 The preference loaded
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetPreferenceByNameAndIdAsync_System_String_System_String_SuperOffice_WebApi_Data_PreferenceLevel_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPreferenceByNameAndIdAsync\(string, string, PreferenceLevel, int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetPreferenceByNameAndIdAsync_System_String_System_String_SuperOffice_WebApi_Data_PreferenceLevel_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPreferenceByNameAndIdAsync\(string, string, PreferenceLevel, int, RequestOptions\)
 
 Get a preference by name and owner id.
 
@@ -419,11 +419,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Preference](SuperOffice.WebApi.Data.Preference.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Preference](SuperOffice.WebApi.Data.Preference.md)\>
 
 The preference. Note that id = 0 and value = null if preference not found in the database at the requested pref-level.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetPreferenceByNameAsync_System_String_System_String_SuperOffice_WebApi_Data_PreferenceLevel_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPreferenceByNameAsync\(string, string, PreferenceLevel, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetPreferenceByNameAsync_System_String_System_String_SuperOffice_WebApi_Data_PreferenceLevel_SuperOffice_WebApi_RequestOptions_"></a> GetPreferenceByNameAsync\(string, string, PreferenceLevel, RequestOptions\)
 
 Get a preference by name
 
@@ -451,11 +451,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Preference](SuperOffice.WebApi.Data.Preference.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Preference](SuperOffice.WebApi.Data.Preference.md)\>
 
 The preference. Note that id = 0 and value = null if preference not found in the database at the requested pref-level.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetPreferenceDescriptionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPreferenceDescriptionAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetPreferenceDescriptionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPreferenceDescriptionAsync\(int, RequestOptions\)
 
 Gets a specific PreferenceDescription object.
 
@@ -475,11 +475,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreferenceDescription](SuperOffice.WebApi.Data.PreferenceDescription.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PreferenceDescription](SuperOffice.WebApi.Data.PreferenceDescription.md)\>
 
 PreferenceDescription
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetPreferenceDescriptionLineAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPreferenceDescriptionLineAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetPreferenceDescriptionLineAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPreferenceDescriptionLineAsync\(int, RequestOptions\)
 
 Gets a specific PreferenceDescriptionLine object.
 
@@ -499,11 +499,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreferenceDescriptionLine](SuperOffice.WebApi.Data.PreferenceDescriptionLine.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PreferenceDescriptionLine](SuperOffice.WebApi.Data.PreferenceDescriptionLine.md)\>
 
 PreferenceDescriptionLine
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetPreferenceDescriptionLineFromIdAndValueAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPreferenceDescriptionLineFromIdAndValueAsync\(int, string, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetPreferenceDescriptionLineFromIdAndValueAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetPreferenceDescriptionLineFromIdAndValueAsync\(int, string, RequestOptions\)
 
 Get a preference description line from a prefDesc_id and a prefValue
 
@@ -527,11 +527,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreferenceDescriptionLine](SuperOffice.WebApi.Data.PreferenceDescriptionLine.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PreferenceDescriptionLine](SuperOffice.WebApi.Data.PreferenceDescriptionLine.md)\>
 
 The preference description line matching the id and the value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetPreferenceDescriptionLinesByPrefDescIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPreferenceDescriptionLinesByPrefDescIdAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetPreferenceDescriptionLinesByPrefDescIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPreferenceDescriptionLinesByPrefDescIdAsync\(int, RequestOptions\)
 
 Get all preference description lines from a prefDesc_id
 
@@ -551,11 +551,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreferenceDescriptionLine](SuperOffice.WebApi.Data.PreferenceDescriptionLine.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PreferenceDescriptionLine](SuperOffice.WebApi.Data.PreferenceDescriptionLine.md)\[\]\>
 
 The preference description lines matching the id
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetPreferencesAsync_SuperOffice_WebApi_Data_PreferenceSpec___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPreferencesAsync\(PreferenceSpec\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetPreferencesAsync_SuperOffice_WebApi_Data_PreferenceSpec___SuperOffice_WebApi_RequestOptions_"></a> GetPreferencesAsync\(PreferenceSpec\[\], RequestOptions\)
 
 Get one or more preferences based on a set of specifications.&lt;br/&gt;The prefDisplayvalue and prefDisplaytooltip are blank (faster processing relative to GetPreferencesWithDisplayValues)
 
@@ -575,11 +575,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Preference](SuperOffice.WebApi.Data.Preference.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Preference](SuperOffice.WebApi.Data.Preference.md)\[\]\>
 
 Array of preference values for your given specification(s). More strictly: 'all keys actually set at any accessible level for this associate'; you will NOT get entries for preferences that might exist, but have no set value anywhere.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetPreferencesWithDisplayValuesAsync_SuperOffice_WebApi_Data_PreferenceSpec___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPreferencesWithDisplayValuesAsync\(PreferenceSpec\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetPreferencesWithDisplayValuesAsync_SuperOffice_WebApi_Data_PreferenceSpec___SuperOffice_WebApi_RequestOptions_"></a> GetPreferencesWithDisplayValuesAsync\(PreferenceSpec\[\], RequestOptions\)
 
 Get one or more preferences based on a set of specifications&lt;br/&gt;The PrefDisplayValue and PrefDisplaytooltip are populated, at some additional processing cost.
 
@@ -599,11 +599,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Preference](SuperOffice.WebApi.Data.Preference.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Preference](SuperOffice.WebApi.Data.Preference.md)\[\]\>
 
 Array of preference values for your given specification(s). More strictly: 'all keys actually set at any accessible level for this associate'; you will NOT get entries for preferences that might exist, but have no set value anywhere.&lt;br/&gt;The PrefDisplayValue and PrefDisplaytooltip are populated, at some additional processing cost.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetTabOrderAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTabOrderAsync\(string, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetTabOrderAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetTabOrderAsync\(string, RequestOptions\)
 
 Gets the tab order.
 
@@ -623,11 +623,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TabOrder](SuperOffice.WebApi.Data.TabOrder.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TabOrder](SuperOffice.WebApi.Data.TabOrder.md)\>
 
 Tab order. Array of strings. Each string represent a named tab.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetTabOrdersAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTabOrdersAsync\(RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetTabOrdersAsync_SuperOffice_WebApi_RequestOptions_"></a> GetTabOrdersAsync\(RequestOptions\)
 
 ```csharp
 Task<TabOrder[]> GetTabOrdersAsync(RequestOptions requestOptions = null)
@@ -641,9 +641,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TabOrder](SuperOffice.WebApi.Data.TabOrder.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TabOrder](SuperOffice.WebApi.Data.TabOrder.md)\[\]\>
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetXsrfPathsAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetXsrfPathsAsync\(string, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetXsrfPathsAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetXsrfPathsAsync\(string, RequestOptions\)
 
 Returns paths that XSRF cookies should be set on
 
@@ -663,11 +663,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\[\]\>
 
 Paths that XSRF cookies should be set for: ['/cs', '/crm']
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetXsrfValueAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetXsrfValueAsync\(RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_GetXsrfValueAsync_SuperOffice_WebApi_RequestOptions_"></a> GetXsrfValueAsync\(RequestOptions\)
 
 Returns the XSRF token value and last update time for the current user
 
@@ -683,11 +683,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[XsrfValue](SuperOffice.WebApi.Data.XsrfValue.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[XsrfValue](SuperOffice.WebApi.Data.XsrfValue.md)\>
 
 The XSRF token value and timestamp
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_SaveFromSectionAndKeyAsync_System_String_System_String_SuperOffice_WebApi_Data_PreferenceDescription_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveFromSectionAndKeyAsync\(string, string, PreferenceDescription, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_SaveFromSectionAndKeyAsync_System_String_System_String_SuperOffice_WebApi_Data_PreferenceDescription_SuperOffice_WebApi_RequestOptions_"></a> SaveFromSectionAndKeyAsync\(string, string, PreferenceDescription, RequestOptions\)
 
 Update a PreferenceDescription based on the section and key
 
@@ -715,11 +715,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreferenceDescription](SuperOffice.WebApi.Data.PreferenceDescription.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PreferenceDescription](SuperOffice.WebApi.Data.PreferenceDescription.md)\>
 
 Saved PreferenceDescription
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_SavePreferenceAsync_SuperOffice_WebApi_Data_Preference_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SavePreferenceAsync\(Preference, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_SavePreferenceAsync_SuperOffice_WebApi_Data_Preference_SuperOffice_WebApi_RequestOptions_"></a> SavePreferenceAsync\(Preference, RequestOptions\)
 
 Save this preference
 
@@ -743,7 +743,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_SavePreferenceDescriptionAsync_SuperOffice_WebApi_Data_PreferenceDescription_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SavePreferenceDescriptionAsync\(PreferenceDescription, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_SavePreferenceDescriptionAsync_SuperOffice_WebApi_Data_PreferenceDescription_SuperOffice_WebApi_RequestOptions_"></a> SavePreferenceDescriptionAsync\(PreferenceDescription, RequestOptions\)
 
 Updates the existing PreferenceDescription or creates a new PreferenceDescription if the id parameter is 0.
 
@@ -763,11 +763,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreferenceDescription](SuperOffice.WebApi.Data.PreferenceDescription.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PreferenceDescription](SuperOffice.WebApi.Data.PreferenceDescription.md)\>
 
 New or updated PreferenceDescription
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_SavePreferenceDescriptionLineAsync_SuperOffice_WebApi_Data_PreferenceDescriptionLine_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SavePreferenceDescriptionLineAsync\(PreferenceDescriptionLine, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_SavePreferenceDescriptionLineAsync_SuperOffice_WebApi_Data_PreferenceDescriptionLine_SuperOffice_WebApi_RequestOptions_"></a> SavePreferenceDescriptionLineAsync\(PreferenceDescriptionLine, RequestOptions\)
 
 Updates the existing PreferenceDescriptionLine or creates a new PreferenceDescriptionLine if the id parameter is 0.
 
@@ -787,11 +787,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreferenceDescriptionLine](SuperOffice.WebApi.Data.PreferenceDescriptionLine.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PreferenceDescriptionLine](SuperOffice.WebApi.Data.PreferenceDescriptionLine.md)\>
 
 New or updated PreferenceDescriptionLine
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_SavePreferenceDescriptionLinesAsync_SuperOffice_WebApi_Data_PreferenceDescriptionLine___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SavePreferenceDescriptionLinesAsync\(PreferenceDescriptionLine\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_SavePreferenceDescriptionLinesAsync_SuperOffice_WebApi_Data_PreferenceDescriptionLine___SuperOffice_WebApi_RequestOptions_"></a> SavePreferenceDescriptionLinesAsync\(PreferenceDescriptionLine\[\], RequestOptions\)
 
 Saves the PreferenceDescriptionLine array in the SuperOffice database
 
@@ -811,11 +811,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreferenceDescriptionLine](SuperOffice.WebApi.Data.PreferenceDescriptionLine.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PreferenceDescriptionLine](SuperOffice.WebApi.Data.PreferenceDescriptionLine.md)\[\]\>
 
 The updated PrefDesc lines (If the PreferenceDescriptionLine array was new, it returns with id's set.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_SavePreferenceEntitiesAsync_SuperOffice_WebApi_Data_Preference___System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SavePreferenceEntitiesAsync\(Preference\[\], bool, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_SavePreferenceEntitiesAsync_SuperOffice_WebApi_Data_Preference___System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> SavePreferenceEntitiesAsync\(Preference\[\], bool, RequestOptions\)
 
 Save this set of preferences.
 
@@ -841,7 +841,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_SavePreferenceEntityAsync_SuperOffice_WebApi_Data_Preference_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SavePreferenceEntityAsync\(Preference, bool, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_SavePreferenceEntityAsync_SuperOffice_WebApi_Data_Preference_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> SavePreferenceEntityAsync\(Preference, bool, RequestOptions\)
 
 Saves a complete preference object, on any level and any target. Preference administrator rights are required to use this
 
@@ -865,11 +865,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Preference](SuperOffice.WebApi.Data.Preference.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Preference](SuperOffice.WebApi.Data.Preference.md)\>
 
 Returns the saved preference
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_SavePreferencesAsync_SuperOffice_WebApi_Data_Preference___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SavePreferencesAsync\(Preference\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_SavePreferencesAsync_SuperOffice_WebApi_Data_Preference___SuperOffice_WebApi_RequestOptions_"></a> SavePreferencesAsync\(Preference\[\], RequestOptions\)
 
 Save this set of preferences. Note this method DOES NOT look at level/targetId - it only saves on behalf of the CURRENT USER.
 
@@ -891,7 +891,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_SaveTabOrderAsync_SuperOffice_WebApi_Data_TabOrder_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveTabOrderAsync\(TabOrder, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_SaveTabOrderAsync_SuperOffice_WebApi_Data_TabOrder_SuperOffice_WebApi_RequestOptions_"></a> SaveTabOrderAsync\(TabOrder, RequestOptions\)
 
 Saves the tab order. The order is saved pr. user.
 
@@ -915,7 +915,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_SaveTabOrdersAsync_SuperOffice_WebApi_Data_TabOrder___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveTabOrdersAsync\(TabOrder\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_SaveTabOrdersAsync_SuperOffice_WebApi_Data_TabOrder___SuperOffice_WebApi_RequestOptions_"></a> SaveTabOrdersAsync\(TabOrder\[\], RequestOptions\)
 
 ```csharp
 Task SaveTabOrdersAsync(TabOrder[] tabOrders, RequestOptions requestOptions = null)
@@ -933,7 +933,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_SetXsrfPathsAsync_System_String_System_String___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetXsrfPathsAsync\(string, string\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_SetXsrfPathsAsync_System_String_System_String___SuperOffice_WebApi_RequestOptions_"></a> SetXsrfPathsAsync\(string, string\[\], RequestOptions\)
 
 Update the paths that need XSRF cookies
 
@@ -961,7 +961,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_SetXsrfValueAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetXsrfValueAsync\(string, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_SetXsrfValueAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> SetXsrfValueAsync\(string, RequestOptions\)
 
 Sets the XSRF token value for the current user
 
@@ -985,7 +985,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IPreferenceAgent_UpdateNetServicesStatusAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; UpdateNetServicesStatusAsync\(string, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IPreferenceAgent_UpdateNetServicesStatusAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> UpdateNetServicesStatusAsync\(string, RequestOptions\)
 
 Update the NetServices preferences with values contained in the content from the Status URL
 

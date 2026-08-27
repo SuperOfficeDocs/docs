@@ -1,7 +1,7 @@
 ---
 title: Favourites
 description: Archive provider for the list of favourites
-keywords: ['Favourites archive provider']
+keywords: Favourites archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -917,7 +917,7 @@ Archive provider for the list of favourites
 ## Sample
 
 ```http!
-GET /api/v1/archive/Favourites?$select=getAllRows,saleNumber,business,personAssociate/isActive,correspondingAssociate/contactName
+GET /api/v1/archive/Favourites?$select=projectId,saleUdef/SuperOffice:5,personExtra/y_rental/x_end,personAssociate/firstName,mailingSent
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

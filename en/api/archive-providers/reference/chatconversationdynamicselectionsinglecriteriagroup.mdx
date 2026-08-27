@@ -1,7 +1,7 @@
 ---
 title: ChatConversationDynamicSelectionSingleCriteriaGroup
 description: ChatConversation selection archive using the selectionId as criterionmapping.
-keywords: ['ChatConversationDynamicSelectionSingleCriteriaGroup archive provider']
+keywords: ChatConversationDynamicSelectionSingleCriteriaGroup archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -493,7 +493,7 @@ ChatConversation selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ChatConversationDynamicSelectionSingleCriteriaGroup?$select=person/birthMonth,contact/department,person/personAddress/formattedMultiLineAddress
+GET /api/v1/archive/ChatConversationDynamicSelectionSingleCriteriaGroup?$select=associate/assocTooltip,person/personAssociate/personEmail,person/correspondingAssociate/title,contact/updatedDate,contact/contactExtra/x_contact_float
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

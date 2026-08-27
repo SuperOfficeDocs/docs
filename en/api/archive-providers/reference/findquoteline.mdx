@@ -1,7 +1,7 @@
 ---
 title: FindQuoteLine
 description: QuoteLine provider for Find
-keywords: ['FindQuoteLine archive provider']
+keywords: FindQuoteLine archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -774,7 +774,7 @@ QuoteLine provider for Find
 ## Sample
 
 ```http!
-GET /api/v1/archive/FindQuoteLine?$select=alternative/version/quote/sale/person/personUdef/SuperOffice:3,alternative/version/quote/sale/person/personAssociate/fullName,alternative/version/quote/connection/erpConnection/connector/updatedDate
+GET /api/v1/archive/FindQuoteLine?$select=quoteLineId,alternative/totalPriceIncVAT,alternative/version/quote/sale/person/personInfo/textId,alternative/version/quote/sale/person/subscription,alternative/version/quote/sale/contact/contactExtra/x_contact_contact_relation
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

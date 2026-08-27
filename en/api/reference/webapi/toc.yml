@@ -1084,6 +1084,8 @@
     href: SuperOffice.WebApi.Data.Configuration_RebuildWebpanelDeltasRequest.md
   - name: Configuration_SaveAndPublishRequest
     href: SuperOffice.WebApi.Data.Configuration_SaveAndPublishRequest.md
+  - name: Configuration_SaveLandingPageTabsRequest
+    href: SuperOffice.WebApi.Data.Configuration_SaveLandingPageTabsRequest.md
   - name: Configuration_SaveWindowPosSizeRequest
     href: SuperOffice.WebApi.Data.Configuration_SaveWindowPosSizeRequest.md
   - name: Configuration_SaveWindowPosSizesRequest
@@ -1454,6 +1456,8 @@
     href: SuperOffice.WebApi.Data.Diagnostics_GetEntityCountsForCurrentUserRequest.md
   - name: Diagnostics_GetNextTableNumberRequest
     href: SuperOffice.WebApi.Data.Diagnostics_GetNextTableNumberRequest.md
+  - name: Diagnostics_GetSystemInfoRequest
+    href: SuperOffice.WebApi.Data.Diagnostics_GetSystemInfoRequest.md
   - name: Diagnostics_GetSystemMessagesRequest
     href: SuperOffice.WebApi.Data.Diagnostics_GetSystemMessagesRequest.md
   - name: Diagnostics_GetWebAppUsagesForPeriodRequest
@@ -2286,6 +2290,8 @@
     href: SuperOffice.WebApi.Data.KbCategory.md
   - name: LandingPageEntity
     href: SuperOffice.WebApi.Data.LandingPageEntity.md
+  - name: LandingPageTab
+    href: SuperOffice.WebApi.Data.LandingPageTab.md
   - name: LanguageInfo
     href: SuperOffice.WebApi.Data.LanguageInfo.md
   - name: LegalBase
@@ -2684,6 +2690,8 @@
     href: SuperOffice.WebApi.Data.List_ValidateTicketRelationDefinitionRequest.md
   - name: LiveUiConfig
     href: SuperOffice.WebApi.Data.LiveUiConfig.md
+  - name: LiveUiSyncResult
+    href: SuperOffice.WebApi.Data.LiveUiSyncResult.md
   - name: LocalizedField
     href: SuperOffice.WebApi.Data.LocalizedField.md
   - name: LocalizedText
@@ -2720,6 +2728,8 @@
     href: SuperOffice.WebApi.Data.Mailbox.md
   - name: MailboxEntity
     href: SuperOffice.WebApi.Data.MailboxEntity.md
+  - name: MailingEntity
+    href: SuperOffice.WebApi.Data.MailingEntity.md
   - name: MailingStatistics
     href: SuperOffice.WebApi.Data.MailingStatistics.md
   - name: Marketing_CalculateMailingStatisticsRequest
@@ -2740,6 +2750,12 @@
     href: SuperOffice.WebApi.Data.Marketing_GetPreviewMailingRequest.md
   - name: Marketing_GetUserBlocksRequest
     href: SuperOffice.WebApi.Data.Marketing_GetUserBlocksRequest.md
+  - name: Marketing_MoveFormsToFolderRequest
+    href: SuperOffice.WebApi.Data.Marketing_MoveFormsToFolderRequest.md
+  - name: Marketing_MoveMailingsToFolderRequest
+    href: SuperOffice.WebApi.Data.Marketing_MoveMailingsToFolderRequest.md
+  - name: Marketing_ReloadAndSendMailingRequest
+    href: SuperOffice.WebApi.Data.Marketing_ReloadAndSendMailingRequest.md
   - name: Marketing_RenameMailingByMessageIdRequest
     href: SuperOffice.WebApi.Data.Marketing_RenameMailingByMessageIdRequest.md
   - name: Marketing_SaveAvailableFontRequest
@@ -2778,6 +2794,8 @@
     href: SuperOffice.WebApi.Data.MultiAlarmData.md
   - name: NaturalLanguageSearch
     href: SuperOffice.WebApi.Data.NaturalLanguageSearch.md
+  - name: NavigationElement
+    href: SuperOffice.WebApi.Data.NavigationElement.md
   - name: NavigatorCompany
     href: SuperOffice.WebApi.Data.NavigatorCompany.md
   - name: Navigator_GetNavigatorCompaniesRequest
@@ -2956,6 +2974,8 @@
     href: SuperOffice.WebApi.Data.PhoneList_SearchWithPreferencesRequest.md
   - name: PhoneList_SetPreferencesRequest
     href: SuperOffice.WebApi.Data.PhoneList_SetPreferencesRequest.md
+  - name: PictureFolderEntity
+    href: SuperOffice.WebApi.Data.PictureFolderEntity.md
   - name: PluginResponse
     href: SuperOffice.WebApi.Data.PluginResponse.md
   - name: PluginUrlResponse
@@ -3800,6 +3820,8 @@
     href: SuperOffice.WebApi.Data.SyncUserAccount.md
   - name: SystemEventEntity
     href: SuperOffice.WebApi.Data.SystemEventEntity.md
+  - name: SystemInfo
+    href: SuperOffice.WebApi.Data.SystemInfo.md
   - name: SystemMessage
     href: SuperOffice.WebApi.Data.SystemMessage.md
   - name: SystemTemplateSettings
@@ -3910,6 +3932,8 @@
     href: SuperOffice.WebApi.Data.TicketRelationItem.md
   - name: TicketRelationResult
     href: SuperOffice.WebApi.Data.TicketRelationResult.md
+  - name: TicketStateInfo
+    href: SuperOffice.WebApi.Data.TicketStateInfo.md
   - name: TicketStatusEntity
     href: SuperOffice.WebApi.Data.TicketStatusEntity.md
   - name: TicketSummaryItem
@@ -3920,6 +3944,8 @@
     href: SuperOffice.WebApi.Data.TicketTypeEntity.md
   - name: TicketUsage
     href: SuperOffice.WebApi.Data.TicketUsage.md
+  - name: TicketVersionInfo
+    href: SuperOffice.WebApi.Data.TicketVersionInfo.md
   - name: Ticket_AcceptTicketsRequest
     href: SuperOffice.WebApi.Data.Ticket_AcceptTicketsRequest.md
   - name: Ticket_AddAttachmentsRequest
@@ -4490,6 +4516,8 @@
     href: SuperOffice.WebApi.Data.ViewState_GetPreviousCurrentRequest.md
   - name: ViewState_PublishAndRetrieveUiEventsRequest
     href: SuperOffice.WebApi.Data.ViewState_PublishAndRetrieveUiEventsRequest.md
+  - name: ViewState_PublishAndSyncUiEventsRequest
+    href: SuperOffice.WebApi.Data.ViewState_PublishAndSyncUiEventsRequest.md
   - name: ViewState_SaveCurrentRequest
     href: SuperOffice.WebApi.Data.ViewState_SaveCurrentRequest.md
   - name: ViewState_SaveCurrentsRequest
@@ -4498,6 +4526,8 @@
     href: SuperOffice.WebApi.Data.ViewState_SaveHistoriesRequest.md
   - name: ViewState_SetHistoryLengthPrefValueRequest
     href: SuperOffice.WebApi.Data.ViewState_SetHistoryLengthPrefValueRequest.md
+  - name: ViewState_UpsertRecentNavigationRequest
+    href: SuperOffice.WebApi.Data.ViewState_UpsertRecentNavigationRequest.md
   - name: VisibleFor
     href: SuperOffice.WebApi.Data.VisibleFor.md
   - name: WebAppUsage
@@ -4801,6 +4831,8 @@
     href: SuperOffice.WebApi.Data.InvitationStatus.md
   - name: KbAccessLevel
     href: SuperOffice.WebApi.Data.KbAccessLevel.md
+  - name: LandingPageTabType
+    href: SuperOffice.WebApi.Data.LandingPageTabType.md
   - name: LicenseStatus
     href: SuperOffice.WebApi.Data.LicenseStatus.md
   - name: LicenseType

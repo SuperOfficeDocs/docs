@@ -999,6 +999,8 @@ This service supports fetching of client interface configuration data. Client co
 
  [Configuration\_SaveAndPublishRequest](SuperOffice.WebApi.Data.Configuration\_SaveAndPublishRequest.md)
 
+ [Configuration\_SaveLandingPageTabsRequest](SuperOffice.WebApi.Data.Configuration\_SaveLandingPageTabsRequest.md)
+
  [Configuration\_SaveWindowPosSizeRequest](SuperOffice.WebApi.Data.Configuration\_SaveWindowPosSizeRequest.md)
 
  [Configuration\_SaveWindowPosSizesRequest](SuperOffice.WebApi.Data.Configuration\_SaveWindowPosSizesRequest.md)
@@ -1542,6 +1544,8 @@ a.k.a. User Group
  [Diagnostics\_GetEntityCountsForCurrentUserRequest](SuperOffice.WebApi.Data.Diagnostics\_GetEntityCountsForCurrentUserRequest.md)
 
  [Diagnostics\_GetNextTableNumberRequest](SuperOffice.WebApi.Data.Diagnostics\_GetNextTableNumberRequest.md)
+
+ [Diagnostics\_GetSystemInfoRequest](SuperOffice.WebApi.Data.Diagnostics\_GetSystemInfoRequest.md)
 
  [Diagnostics\_GetSystemMessagesRequest](SuperOffice.WebApi.Data.Diagnostics\_GetSystemMessagesRequest.md)
 
@@ -2706,6 +2710,11 @@ Knowledge base category. Groups knowledge base articles into hierarchy.
 Carrier object for LandingPageEntity.
 Per-associate landing page configuration for an entity (type of landing page), including pinned selections and pinned entity records.
 
+ [LandingPageTab](SuperOffice.WebApi.Data.LandingPageTab.md)
+
+Carrier object for LandingPageTab.
+A single tab on a landing page. Depending on TabType it represents a saved selection, an entity record, or a hardcoded provider.
+
  [LanguageInfo](SuperOffice.WebApi.Data.LanguageInfo.md)
 
 Carrier object for LanguageInfo.
@@ -3137,6 +3146,11 @@ The list item entity contains generic list item information
 Carrier object for LiveUiConfig.
 A config containing parameters for live UI
 
+ [LiveUiSyncResult](SuperOffice.WebApi.Data.LiveUiSyncResult.md)
+
+Carrier object for LiveUiSyncResult.
+The combined answer of one live UI sync call: new UI events, plus the sync state of the tickets the client asked about.
+
  [LocalizedField](SuperOffice.WebApi.Data.LocalizedField.md)
 
 Carrier object for LocalizedField.
@@ -3199,6 +3213,11 @@ This entity represent a mailbox used for importing emails in Service
 
  [UserPreferenceStrings.Mailing](SuperOffice.WebApi.Data.UserPreferenceStrings.Mailing.md)
 
+ [MailingEntity](SuperOffice.WebApi.Data.MailingEntity.md)
+
+Carrier object for MailingEntity.
+A mailing (shipment) — the run that sends a message to a set of recipients
+
  [MailingStatistics](SuperOffice.WebApi.Data.MailingStatistics.md)
 
 Carrier object for MailingStatistics.
@@ -3221,6 +3240,12 @@ Methods for calculating mailing statistics
  [Marketing\_GetPreviewMailingRequest](SuperOffice.WebApi.Data.Marketing\_GetPreviewMailingRequest.md)
 
  [Marketing\_GetUserBlocksRequest](SuperOffice.WebApi.Data.Marketing\_GetUserBlocksRequest.md)
+
+ [Marketing\_MoveFormsToFolderRequest](SuperOffice.WebApi.Data.Marketing\_MoveFormsToFolderRequest.md)
+
+ [Marketing\_MoveMailingsToFolderRequest](SuperOffice.WebApi.Data.Marketing\_MoveMailingsToFolderRequest.md)
+
+ [Marketing\_ReloadAndSendMailingRequest](SuperOffice.WebApi.Data.Marketing\_ReloadAndSendMailingRequest.md)
 
  [Marketing\_RenameMailingByMessageIdRequest](SuperOffice.WebApi.Data.Marketing\_RenameMailingByMessageIdRequest.md)
 
@@ -3285,6 +3310,11 @@ Carrier object for MultiAlarmData.
 
 Carrier object for NaturalLanguageSearch.
 Natural language search results.
+
+ [NavigationElement](SuperOffice.WebApi.Data.NavigationElement.md)
+
+Carrier object for NavigationElement.
+A single navigation entry - a key and its navigation value (soprotocol).
 
  [NavigatorCompany](SuperOffice.WebApi.Data.NavigatorCompany.md)
 
@@ -3532,6 +3562,11 @@ Search preferences for a phone list search
 
  [PhoneList\_SetPreferencesRequest](SuperOffice.WebApi.Data.PhoneList\_SetPreferencesRequest.md)
 
+ [PictureFolderEntity](SuperOffice.WebApi.Data.PictureFolderEntity.md)
+
+Carrier object for PictureFolderEntity.
+Picture/mailing folder (s_picture_folder)
+
  [PluginResponse](SuperOffice.WebApi.Data.PluginResponse.md)
 
 Carrier object for PluginResponse.
@@ -3761,13 +3796,13 @@ The built-in product family list. Used by the SuperOffice Quote Connector to cat
 Carrier object for ProductType.
 The built-in product type list. Used by the SuperOffice Quote Connector to categorize products.
 
- [UserPreferenceStrings.Project](SuperOffice.WebApi.Data.UserPreferenceStrings.Project.md)
-
-Project preferences
-
  [Project](SuperOffice.WebApi.Data.Project.md)
 
 Carrier object for Project.
+
+ [UserPreferenceStrings.Project](SuperOffice.WebApi.Data.UserPreferenceStrings.Project.md)
+
+Project preferences
 
  [ProjectBoardViewSettings](SuperOffice.WebApi.Data.ProjectBoardViewSettings.md)
 
@@ -3911,14 +3946,14 @@ Preference keys for QuickLaunchBar settings
 
 Carrier object for QuickReply.
 
- [UserPreferenceStrings.Quote](SuperOffice.WebApi.Data.UserPreferenceStrings.Quote.md)
-
-Preference keys for the quote system.
-
  [Quote](SuperOffice.WebApi.Data.Quote.md)
 
 Carrier object for Quote.
 Quote carrier with the active quote version and favorite alternative.
+
+ [UserPreferenceStrings.Quote](SuperOffice.WebApi.Data.UserPreferenceStrings.Quote.md)
+
+Preference keys for the quote system.
 
  [QuoteAlternative](SuperOffice.WebApi.Data.QuoteAlternative.md)
 
@@ -4736,7 +4771,7 @@ Representation of a serialized exception that can be communicatyed over web serv
  [SoSystemInfoCarrier](SuperOffice.WebApi.Data.SoSystemInfoCarrier.md)
 
 Carrier object for SoSystemInfoCarrier.
-Representation of a serialized exception that can be communicatyed over web services
+System Information - license, version, database type, language
 
  [SoTask](SuperOffice.WebApi.Data.SoTask.md)
 
@@ -4827,6 +4862,11 @@ System
 
 Carrier object for SystemEventEntity.
 Entity for system events
+
+ [SystemInfo](SuperOffice.WebApi.Data.SystemInfo.md)
+
+Carrier object for SystemInfo.
+System information
 
  [SystemMessage](SuperOffice.WebApi.Data.SystemMessage.md)
 
@@ -5060,6 +5100,11 @@ A ticket related to another ticket, including counts of how many further relatio
 Carrier object for TicketRelationResult.
 Result of a ticket relation operation, indicating success or the reason for failure.
 
+ [TicketStateInfo](SuperOffice.WebApi.Data.TicketStateInfo.md)
+
+Carrier object for TicketStateInfo.
+The sync state of one ticket: its current last-changed value on the server, whether the client's copy is out of date, and who last changed it.
+
  [TicketStatusEntity](SuperOffice.WebApi.Data.TicketStatusEntity.md)
 
 Carrier object for TicketStatusEntity.
@@ -5084,6 +5129,11 @@ Entity for a ticket (Request) type. This enables having diversified tickets need
 
 Carrier object for TicketUsage.
 Operations related to ticket usage
+
+ [TicketVersionInfo](SuperOffice.WebApi.Data.TicketVersionInfo.md)
+
+Carrier object for TicketVersionInfo.
+A ticket the client is showing, together with the last-changed value of the client's loaded copy. Sent to the server to ask whether that copy is out of date.
 
  [Ticket\_AcceptTicketsRequest](SuperOffice.WebApi.Data.Ticket\_AcceptTicketsRequest.md)
 
@@ -5616,6 +5666,8 @@ VideoMeetingReservation - Create or delete a VideoMeetingReservation. The VideoM
 
  [ViewState\_PublishAndRetrieveUiEventsRequest](SuperOffice.WebApi.Data.ViewState\_PublishAndRetrieveUiEventsRequest.md)
 
+ [ViewState\_PublishAndSyncUiEventsRequest](SuperOffice.WebApi.Data.ViewState\_PublishAndSyncUiEventsRequest.md)
+
  [ViewState\_SaveCurrentRequest](SuperOffice.WebApi.Data.ViewState\_SaveCurrentRequest.md)
 
  [ViewState\_SaveCurrentsRequest](SuperOffice.WebApi.Data.ViewState\_SaveCurrentsRequest.md)
@@ -5623,6 +5675,8 @@ VideoMeetingReservation - Create or delete a VideoMeetingReservation. The VideoM
  [ViewState\_SaveHistoriesRequest](SuperOffice.WebApi.Data.ViewState\_SaveHistoriesRequest.md)
 
  [ViewState\_SetHistoryLengthPrefValueRequest](SuperOffice.WebApi.Data.ViewState\_SetHistoryLengthPrefValueRequest.md)
+
+ [ViewState\_UpsertRecentNavigationRequest](SuperOffice.WebApi.Data.ViewState\_UpsertRecentNavigationRequest.md)
 
  [VisibleFor](SuperOffice.WebApi.Data.VisibleFor.md)
 
@@ -6294,6 +6348,11 @@ Status if this appointment represents an invitation
  [KbAccessLevel](SuperOffice.WebApi.Data.KbAccessLevel.md)
 
 Describes access level to get FAQs
+
+ [LandingPageTabType](SuperOffice.WebApi.Data.LandingPageTabType.md)
+
+What kind of content a landing page tab shows
+This Enum is used by:  landing_page_tab.tab_type
 
  [LicenseStatus](SuperOffice.WebApi.Data.LicenseStatus.md)
 

@@ -1,7 +1,7 @@
 ---
 title: DocumentShadowStaticSelection
 description: Shadow contact provider for the static Document provider.
-keywords: ['DocumentShadowStaticSelection archive provider']
+keywords: DocumentShadowStaticSelection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -736,7 +736,7 @@ Shadow contact provider for the static Document provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/DocumentShadowStaticSelection?$select=personId,person/personUdef/SuperOffice:3,person/correspondingAssociate/otherGroups,contact/department,contact/NumberOfActivitiesInPeriod
+GET /api/v1/archive/DocumentShadowStaticSelection?$select=person/hasInfoText,person/correspondingAssociate/ejStatus,person/subscription,contact/contactAssociate/contactFullName,project/projectAssociate/fullName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

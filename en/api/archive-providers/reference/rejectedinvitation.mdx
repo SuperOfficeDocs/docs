@@ -1,7 +1,7 @@
 ---
 title: RejectedInvitation
 description: This is the query provider for invitations, of subtype 'Rejected'
-keywords: ['RejectedInvitation archive provider']
+keywords: RejectedInvitation archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -760,7 +760,7 @@ This is an optional entity and is fetched only if the user checks the correspond
 ## Sample
 
 ```http!
-GET /api/v1/archive/RejectedInvitation?$select=associateId,contact/postAddress/wgs84longitude,person/personAddress/line3,person/personAssociate/fullName,project/projectAssociate/isActive
+GET /api/v1/archive/RejectedInvitation?$select=contact/contactId,person/position,person/personExtra/y_car/id,appointmentUdef/SuperOffice:5,sale/registeredByFullName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

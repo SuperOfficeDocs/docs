@@ -1,7 +1,7 @@
 ---
 title: SaleGuideDocument
 description: Specific provider for Sale Guide Items of type Appointment
-keywords: ['SaleGuideDocument archive provider']
+keywords: SaleGuideDocument archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -750,7 +750,7 @@ to drive the sentry calculations, as well as the specialization with the correct
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleGuideDocument?$select=documentInstance/person/personPrivate/description,documentInstance/project/projectEvent/isExternalEvent,documentInstance/person/correspondingAssociate/personId
+GET /api/v1/archive/SaleGuideDocument?$select=documentInstance/person/personMobilePhone/formattedNumber,documentInstance/project/projectId,documentInstance/project/nextMilestone,documentInstance/project/projectAssociate/ejUserId,documentInstance/project/saintTicketCategory
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

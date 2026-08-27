@@ -62,6 +62,18 @@ public const string CompanyPurpose = "companyPurpose"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
+### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Copilot_CompanyVoice"></a> CompanyVoice
+
+Company Tone of voice - describes the company's communication style, used for AI suggestions and prompts.
+
+```csharp
+public const string CompanyVoice = "companyVoice"
+```
+
+#### Field Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
 ### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Copilot_Section"></a> Section
 
 Section heading

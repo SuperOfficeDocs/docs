@@ -1,7 +1,7 @@
 ---
 title: MailingsSelectionCombinedV2
 description: Implementation of the provider for the combined selection
-keywords: ['MailingsSelectionCombinedV2 archive provider']
+keywords: MailingsSelectionCombinedV2 archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -682,7 +682,7 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/MailingsSelectionCombinedV2?$select=mailingAddr/contact/contactId,mailingAddr/contact/searchPhone/description,mailingAddr/contact/streetAddress/formattedAddress,mailingAddr/contact/streetAddress/formattedMultiLineAddress,mailingAddr/contact/contactExtra/x_contact_integer
+GET /api/v1/archive/MailingsSelectionCombinedV2?$select=contactId,mailingAddr/contact/contactExtra/x_contact_default_integer,mailingAddr/person/restrictionAddress/zip,mailingAddr/person/personAssociate/role,mailingAddr/person/withdrawnStoreConsent
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -1,7 +1,7 @@
 ---
 title: MailingsShadowDynamicSelectionSingleCriteriaGroup
 description: Shadow contact provider for the dynamic Mailings provider.
-keywords: ['MailingsShadowDynamicSelectionSingleCriteriaGroup archive provider']
+keywords: MailingsShadowDynamicSelectionSingleCriteriaGroup archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -678,7 +678,7 @@ Shadow contact provider for the dynamic Mailings provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/MailingsShadowDynamicSelectionSingleCriteriaGroup?$select=mailingAddr/contact/deletedDate,mailingAddr/person/personPager/description,project/project/textId
+GET /api/v1/archive/MailingsShadowDynamicSelectionSingleCriteriaGroup?$select=mailingAddr/contact/contactAssociate/ejDisplayName,mailingAddr/person/personPrivate/description,mailingAddr/person/email/emailAddress,mailingAddr/person/personAssociate/associateDbId,mailingAddr/person/correspondingAssociate/contactId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

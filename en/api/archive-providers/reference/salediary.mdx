@@ -1,7 +1,7 @@
 ---
 title: SaleDiary
 description: Sale archive provider for the Diary card
-keywords: ['SaleDiary archive provider']
+keywords: SaleDiary archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -1156,7 +1156,7 @@ Sale archive provider for the Diary card
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleDiary?$select=person/birthDay,person/personPager/formattedNumber,person/correspondingAssociate/mrMrs,project/LastSale,saleStakeholder/person/leadstatusRank
+GET /api/v1/archive/SaleDiary?$select=soldReason,person/correspondingAssociate/ejUserId,person/correspondingAssociate/portraitThumbnail,contact/postAddress/line2,contact/restrictionAddress/formattedAddress
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

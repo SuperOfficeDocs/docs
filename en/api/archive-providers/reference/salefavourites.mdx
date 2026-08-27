@@ -1,7 +1,7 @@
 ---
 title: salefavourites
 description: 
-keywords: ['salefavourites archive provider']
+keywords: salefavourites archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -136,7 +136,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/salefavourites?$select=nextDueDate,amountWeightedInBaseCurrency,salePublish/publishedTo,associate/otherGroups
+GET /api/v1/archive/salefavourites?$select=stageName,createdByWorkflow
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -1,7 +1,7 @@
 ---
 title: emailpersonaddress
 description: Person subchannel for special purpose archive provider used to search for email addresses.
-keywords: ['emailpersonaddress archive provider']
+keywords: emailpersonaddress archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -195,7 +195,7 @@ the email_id.
 ## Sample
 
 ```http!
-GET /api/v1/archive/emailpersonaddress?$select=emailProtocol,personCategory,personAddress/line1
+GET /api/v1/archive/emailpersonaddress?$select=personUpdatedBy,personAddress/addressId,personContact/restrictionAddress/wgs84latitude
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_ApiAgent"&gt;&lt;/a&gt; Class ApiAgent
+# <a id="SuperOffice_WebApi_Agents_ApiAgent"></a> Class ApiAgent
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -38,7 +38,7 @@ public class ApiAgent : AgentBase, IApiAgent, IAgentBase, IDisposable
 [AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequestObjectWithStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
 [AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequest\_System\_Net\_Http\_HttpRequestMessage\_SuperOffice\_WebApi\_RequestOptions\_), 
 [AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ThrowOnResponseErrorAsync\_System\_Net\_Http\_HttpRequestMessage\_System\_Net\_Http\_HttpResponseMessage\_), 
-[AgentBase.ParseResponse&lt;T\&gt;\(HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseResponse\_\_1\_System\_Net\_Http\_HttpResponseMessage\_), 
+[AgentBase.ParseResponse<T\>\(HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseResponse\_\_1\_System\_Net\_Http\_HttpResponseMessage\_), 
 [AgentBase.Finally\(RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Finally\_SuperOffice\_WebApi\_RequestOptions\_), 
 [AgentBase.Dispose\(\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Dispose), 
 [AgentBase.Configuration](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Configuration), 
@@ -57,18 +57,18 @@ public class ApiAgent : AgentBase, IApiAgent, IAgentBase, IDisposable
 
 ## Examples
 
-&lt;pre&gt;&lt;code class="lang-csharp"&gt;using SuperOffice.CRM.WebApi.Client;
+<pre><code class="lang-csharp">using SuperOffice.CRM.WebApi.Client;
 using SuperOffice.CRM.WebApi.Client.Agents;
 
 WebApiOptions mySession = new WebApiOptions("http://example.com/super/api");
 using (ApiInfoAgent agent = new ApiInfoAgent(mySession))
-\{
+{
       // call methods on agent here...
-\}&lt;/code&gt;&lt;/pre&gt;
+}</code></pre>
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Agents_ApiAgent__ctor_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; ApiAgent\(HttpClient\)
+### <a id="SuperOffice_WebApi_Agents_ApiAgent__ctor_System_Net_Http_HttpClient_"></a> ApiAgent\(HttpClient\)
 
 Constructor: api status info
 
@@ -82,7 +82,7 @@ public ApiAgent(HttpClient httpClient = null)
 
 Use this HTTP client instead of making a new one. Client is disposed when agent is disposed.
 
-### &lt;a id="SuperOffice_WebApi_Agents_ApiAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"&gt;&lt;/a&gt; ApiAgent\(WebApiOptions, HttpClient\)
+### <a id="SuperOffice_WebApi_Agents_ApiAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"></a> ApiAgent\(WebApiOptions, HttpClient\)
 
 Constructor: api status info
 
@@ -102,7 +102,7 @@ Use this HTTP client instead of making a new one. Client is disposed when agent 
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_ApiAgent_GetApiVersionAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetApiVersionAsync\(RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_ApiAgent_GetApiVersionAsync_SuperOffice_WebApi_RequestOptions_"></a> GetApiVersionAsync\(RequestOptions\)
 
 Gets version info from base URL.
 
@@ -118,11 +118,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\>
 
 Dictionary containing meta-data: "NetServerVersion", "Services", "Version"
 
-### &lt;a id="SuperOffice_WebApi_Agents_ApiAgent_GetClientFileVersion"&gt;&lt;/a&gt; GetClientFileVersion\(\)
+### <a id="SuperOffice_WebApi_Agents_ApiAgent_GetClientFileVersion"></a> GetClientFileVersion\(\)
 
 Get the client assembly's file version: "#.#.###.###"
 
@@ -136,7 +136,7 @@ public static string GetClientFileVersion()
 
 This assembly's file version: "#.#.###.###"
 
-### &lt;a id="SuperOffice_WebApi_Agents_ApiAgent_GetTenantStatusAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetTenantStatusAsync\(string, string, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_ApiAgent_GetTenantStatusAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetTenantStatusAsync\(string, string, RequestOptions\)
 
 Returns the tenant status for a given customer, in a given environment. 
 Does not need base URL to be set.
@@ -153,7 +153,7 @@ The Online customer id: "Cust1234"
 
 `subdomain` [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-"sod", "qastage" or "online". Default "online" (production). See &lt;xref href="SuperOffice.WebApi.SubDomain" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;
+"sod", "qastage" or "online". Default "online" (production). See <xref href="SuperOffice.WebApi.SubDomain" data-throw-if-not-resolved="false"></xref>
 
 `requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
@@ -161,7 +161,7 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TenantStatus](SuperOffice.WebApi.Data.TenantStatus.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TenantStatus](SuperOffice.WebApi.Data.TenantStatus.md)\>
 
 Tenant status
 

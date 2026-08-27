@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_INewsFeedAgent"&gt;&lt;/a&gt; Interface INewsFeedAgent
+# <a id="SuperOffice_WebApi_Agents_INewsFeedAgent"></a> Interface INewsFeedAgent
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface INewsFeedAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_INewsFeedAgent_CreateDefaultNewsFeedItemAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultNewsFeedItemAsync\(RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_INewsFeedAgent_CreateDefaultNewsFeedItemAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultNewsFeedItemAsync\(RequestOptions\)
 
 Set default values into a new NewsFeedItem.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -33,11 +33,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md)\>
 
 A blank NewsFeedItem
 
-### &lt;a id="SuperOffice_WebApi_Agents_INewsFeedAgent_DeleteNewsFeedItemAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteNewsFeedItemAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_INewsFeedAgent_DeleteNewsFeedItemAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteNewsFeedItemAsync\(int, RequestOptions\)
 
 Deletes the NewsFeedItem
 
@@ -59,7 +59,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_INewsFeedAgent_GetNewsFeedItemAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetNewsFeedItemAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_INewsFeedAgent_GetNewsFeedItemAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetNewsFeedItemAsync\(int, RequestOptions\)
 
 Gets a specific NewsFeedItem object.
 
@@ -79,11 +79,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md)\>
 
 NewsFeedItem
 
-### &lt;a id="SuperOffice_WebApi_Agents_INewsFeedAgent_GetNewsFeedItemsByIdAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetNewsFeedItemsByIdAsync\(int\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_INewsFeedAgent_GetNewsFeedItemsByIdAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetNewsFeedItemsByIdAsync\(int\[\], RequestOptions\)
 
 Get an array of items from the newsfeed by id. If the current user cannot access a particular item, it will be excluded from the results.
 
@@ -103,11 +103,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md)\[\]\>
 
 The news feed items that was posted, or null if not found/not accessible by the user.
 
-### &lt;a id="SuperOffice_WebApi_Agents_INewsFeedAgent_GetNewsItemsForUserAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetNewsItemsForUserAsync\(int, DateTime, DateTime, int, int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_INewsFeedAgent_GetNewsItemsForUserAsync_System_Int32_System_DateTime_System_DateTime_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetNewsItemsForUserAsync\(int, DateTime, DateTime, int, int, RequestOptions\)
 
 Get a list of newsfeed items for a particular user between two dates. If the current user cannot access a particular item, it will be excluded from the results.
 
@@ -143,11 +143,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md)\[\]\>
 
 The news feed items that was posted, or null if not found/not accessible by the user.
 
-### &lt;a id="SuperOffice_WebApi_Agents_INewsFeedAgent_MarkAsHandledAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; MarkAsHandledAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_INewsFeedAgent_MarkAsHandledAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> MarkAsHandledAsync\(int, RequestOptions\)
 
 Marks the news feed item as handled, so it can be removed from the feed.
 
@@ -167,11 +167,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
 
 Indicates if the news feed item was successfully marked as handled. False if it was already handled.
 
-### &lt;a id="SuperOffice_WebApi_Agents_INewsFeedAgent_MarkAsReadAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; MarkAsReadAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_INewsFeedAgent_MarkAsReadAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> MarkAsReadAsync\(int, RequestOptions\)
 
 Marks the news feed item as read, so it can be un-bolded in the current user's feed.
 
@@ -195,7 +195,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_INewsFeedAgent_PostNewsFeedItemAsync_SuperOffice_WebApi_Data_NewsFeedItem_System_Int32___System_Int32___System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; PostNewsFeedItemAsync\(NewsFeedItem, int\[\], int\[\], bool, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_INewsFeedAgent_PostNewsFeedItemAsync_SuperOffice_WebApi_Data_NewsFeedItem_System_Int32___System_Int32___System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> PostNewsFeedItemAsync\(NewsFeedItem, int\[\], int\[\], bool, RequestOptions\)
 
 Saves a new item to the newsfeed, publishing it to the specified users.
 
@@ -227,11 +227,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md)\>
 
 The news feed item that was posted, including its new id.
 
-### &lt;a id="SuperOffice_WebApi_Agents_INewsFeedAgent_StartHandlingAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; StartHandlingAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_INewsFeedAgent_StartHandlingAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> StartHandlingAsync\(int, RequestOptions\)
 
 Marks the news feed item as being handled, that CTA processing has started. i.e. other users should not start handling it also.
 
@@ -251,7 +251,7 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
 
 Indicates if the news feed item was successfully marked as being handled. False if it was already being handled or was handled.
 

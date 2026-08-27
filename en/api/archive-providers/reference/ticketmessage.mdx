@@ -1,7 +1,7 @@
 ---
 title: TicketMessage
 description: Messages on support tickets. Messages are typically e-mail messages with attachments, but not always.
-keywords: ['TicketMessage archive provider']
+keywords: TicketMessage archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -876,7 +876,7 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketMessage?$select=messageId,ticket/createdBy/locationAddress,ticket/person/lastName,ticket/person/personExtra/x_person_shorttext_list,ticket/contact/contactFax/description
+GET /api/v1/archive/TicketMessage?$select=ticket/person/whenUpdatedByWorkflow,ticket/person/personAddress/line1,ticket/person/personExtra/y_rental/x_end,ticket/person/personAssociate/usergroup,ticket/person/personAssociate/isActiveText
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

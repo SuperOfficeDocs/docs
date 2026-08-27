@@ -1,7 +1,7 @@
 ---
 title: AppointmentDynamicSelection
 description: Appointment selection archive using the selectionId as criterionmapping.
-keywords: ['AppointmentDynamicSelection archive provider']
+keywords: AppointmentDynamicSelection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -757,7 +757,7 @@ Appointment selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/AppointmentDynamicSelection?$select=contact/url/URLAddress,contact/contactAssociate/lastName,contact/saintAmountClass,person/personExtra/x_person_boolean,person/personAssociate/ejUserId
+GET /api/v1/archive/AppointmentDynamicSelection?$select=contact/business,contact/LastDoBySale,person/personAddress/addressId,sale/saleUdef/SuperOffice:7
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -1,7 +1,7 @@
 ---
 title: SaleShadowStaticSelection
 description: Shadow contact provider for the static sale provider.
-keywords: ['SaleShadowStaticSelection archive provider']
+keywords: SaleShadowStaticSelection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -1350,7 +1350,7 @@ Shadow contact provider for the static sale provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleShadowStaticSelection?$select=person/personAssociate/firstName,person/personAssociate/assocName,contact/number,contact/searchPhone/description,appointment/associateId
+GET /api/v1/archive/SaleShadowStaticSelection?$select=saleId,person/updatedByWorkflow,person/personDirectPhone/description,person/personMobilePhone/description,person/personAddress/city
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

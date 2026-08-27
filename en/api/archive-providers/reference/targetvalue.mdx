@@ -1,7 +1,7 @@
 ---
 title: TargetValue
 description: 
-keywords: ['TargetValue archive provider']
+keywords: TargetValue archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -411,7 +411,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/TargetValue?$select=associate/isActive,contact/category,contact/activeErpLinks,contact/contactSupportAssociate/usergroup,contact/contactSupportPerson/personExtra/x_person_boolean
+GET /api/v1/archive/TargetValue?$select=associate/title,associate/contactDepartment,contact/contactAssociate/simultaneousEjUser,contact/contactSupportPerson/withdrawnEmarketingConsent,contact/saintSaleStatus
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

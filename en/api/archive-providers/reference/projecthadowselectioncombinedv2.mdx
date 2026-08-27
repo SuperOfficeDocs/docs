@@ -1,7 +1,7 @@
 ---
 title: ProjecthadowSelectionCombinedV2
 description: Implementation of the provider for the combined selection
-keywords: ['ProjecthadowSelectionCombinedV2 archive provider']
+keywords: ProjecthadowSelectionCombinedV2 archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -824,7 +824,7 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjecthadowSelectionCombinedV2?$select=updatedByFullName,projectEvent/hasSignOff,projectAssociate/usergroupId,appointment/appointmentPublish/publishedBy,projectMember/personUdef/SuperOffice:3
+GET /api/v1/archive/ProjecthadowSelectionCombinedV2?$select=sale/recordType,sale/contactId,document/updatedBy,projectMember/personUrl/URLAddress
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

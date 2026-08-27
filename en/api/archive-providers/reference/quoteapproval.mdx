@@ -1,7 +1,7 @@
 ---
 title: QuoteApproval
 description: Retrieves pending sale quotes for current associate with state approved, denied, approval needed or approval requested
-keywords: ['QuoteApproval archive provider']
+keywords: QuoteApproval archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -53,7 +53,7 @@ Retrieves pending sale quotes for current associate with state approved, denied,
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteApproval?$select=quoteOwnerAssociateId,quoteVersionState,amount
+GET /api/v1/archive/QuoteApproval?$select=quoteOwnerAssociateName,quoteVersionState,amount
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -1,7 +1,7 @@
 ---
 title: DiaryActivity
 description: Activity archive provider for the Diary (checklist)
-keywords: ['DiaryActivity archive provider']
+keywords: DiaryActivity archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -783,7 +783,7 @@ Activity archive provider for the Diary (checklist)
 ## Sample
 
 ```http!
-GET /api/v1/archive/DiaryActivity?$select=documentPublish/publishedBy,person/correspondingAssociate/role,contact/email/emailId,contact/contactUdef/SuperOffice:10,documentUdef/SuperOffice:3
+GET /api/v1/archive/DiaryActivity?$select=person/retired,person/restrictionAddress/line2,person/correspondingAssociate/locationAddress,person/hasStoreConsent,contact/contactAssociate/contactId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -1,7 +1,7 @@
 ---
 title: RecycleTicket
 description: 
-keywords: ['RecycleTicket archive provider']
+keywords: RecycleTicket archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -793,7 +793,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/RecycleTicket?$select=readByOwner,person/personCategory,person/personExtra/y_rental/x_contact,person/withdrawnStoreConsent,extra/y_equipment/x_name
+GET /api/v1/archive/RecycleTicket?$select=createdByWorkflow,ownedBy/ejStatus,person/personPrivate/description,person/personAssociate/assocName,contact/postAddress/formattedMultiLineAddress
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -1,7 +1,7 @@
 ---
 title: UnassignedTickets
 description: 
-keywords: ['UnassignedTickets archive provider']
+keywords: UnassignedTickets archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -793,7 +793,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/UnassignedTickets?$select=ownedBy/contactFullName,ownedBy/userName,person/correspondingAssociate/middleName,contact/phone/formattedNumber,contact/postAddress/addressId
+GET /api/v1/archive/UnassignedTickets?$select=createdBy/contactId,person/personAssociate/role,person/personAssociate/simultaneousEjUser,person/correspondingAssociate/usergroupId,contact/searchPhone/formattedNumber
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

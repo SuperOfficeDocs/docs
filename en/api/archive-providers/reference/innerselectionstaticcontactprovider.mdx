@@ -1,7 +1,7 @@
 ---
 title: InnerSelectionStaticContactProvider
 description: 
-keywords: ['InnerSelectionStaticContactProvider archive provider']
+keywords: InnerSelectionStaticContactProvider archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -681,7 +681,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/InnerSelectionStaticContactProvider?$select=department,number,phone/formattedNumber,document/documentUdef/SuperOffice:2,lastName
+GET /api/v1/archive/InnerSelectionStaticContactProvider?$select=streetAddress/county,sourceRelation/countryId,sale/originalStage,sale/salePublish/publishedTo,sale/associate/role
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

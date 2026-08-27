@@ -1,7 +1,7 @@
 ---
 title: DocumentShadowSelection
 description: Shadow contact provider for the Document provider.
-keywords: ['DocumentShadowSelection archive provider']
+keywords: DocumentShadowSelection archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -736,7 +736,7 @@ Shadow contact provider for the Document provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/DocumentShadowSelection?$select=documentId,person/correspondingAssociate/ejStatus,contact/contactAssociate/usergroup,contact/saintIntention,contact/saintTicketStatus
+GET /api/v1/archive/DocumentShadowSelection?$select=person/personExtra/y_rental/y_equipment/x_name,person/correspondingAssociate/mrMrs,contact/associateId,contact/NumberOfSales,project/projectAssociate/simultaneousEjUser
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -1,7 +1,7 @@
 ---
 title: FormSubmissionShadowDynamicSelectionV2
 description: FormSubmission shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionShadowSelectionDynamicProviderSingleCriteriaGroup" />.
-keywords: ['FormSubmissionShadowDynamicSelectionV2 archive provider']
+keywords: FormSubmissionShadowDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -488,7 +488,7 @@ FormSubmission shadow selection archive with OR-able selection groups. Each grou
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormSubmissionShadowDynamicSelectionV2?$select=person/email/emailHasBounced,person/restrictionAddress/line3,person/personAssociate/userName
+GET /api/v1/archive/FormSubmissionShadowDynamicSelectionV2?$select=person/personAssociate/middleName,person/personAssociate/userName,person/consentSourceStore
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

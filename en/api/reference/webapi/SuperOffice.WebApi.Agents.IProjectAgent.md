@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent"&gt;&lt;/a&gt; Interface IProjectAgent
+# <a id="SuperOffice_WebApi_Agents_IProjectAgent"></a> Interface IProjectAgent
 
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface IProjectAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_AddProjectMembersAsync_System_Int32_SuperOffice_WebApi_Data_ProjectMember___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; AddProjectMembersAsync\(int, ProjectMember\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_AddProjectMembersAsync_System_Int32_SuperOffice_WebApi_Data_ProjectMember___SuperOffice_WebApi_RequestOptions_"></a> AddProjectMembersAsync\(int, ProjectMember\[\], RequestOptions\)
 
 Add multiple project members to a project
 
@@ -42,7 +42,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_CreateDefaultProjectEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultProjectEntityAsync\(RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_CreateDefaultProjectEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultProjectEntityAsync\(RequestOptions\)
 
 Set default values into a new ProjectEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -59,11 +59,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectEntity](SuperOffice.WebApi.Data.ProjectEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectEntity](SuperOffice.WebApi.Data.ProjectEntity.md)\>
 
 A blank ProjectEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_CreateDefaultProjectEventEntityAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultProjectEventEntityAsync\(RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_CreateDefaultProjectEventEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultProjectEventEntityAsync\(RequestOptions\)
 
 Set default values into a new ProjectEventEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -80,11 +80,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectEventEntity](SuperOffice.WebApi.Data.ProjectEventEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectEventEntity](SuperOffice.WebApi.Data.ProjectEventEntity.md)\>
 
 A blank ProjectEventEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_CreateDefaultProjectMemberAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateDefaultProjectMemberAsync\(RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_CreateDefaultProjectMemberAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultProjectMemberAsync\(RequestOptions\)
 
 Set default values into a new ProjectMember.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -101,11 +101,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectMember](SuperOffice.WebApi.Data.ProjectMember.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectMember](SuperOffice.WebApi.Data.ProjectMember.md)\>
 
 A blank ProjectMember
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_CreateNewEntryAsync_SuperOffice_WebApi_Data_DuplicateEntry_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; CreateNewEntryAsync\(DuplicateEntry, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_CreateNewEntryAsync_SuperOffice_WebApi_Data_DuplicateEntry_SuperOffice_WebApi_RequestOptions_"></a> CreateNewEntryAsync\(DuplicateEntry, RequestOptions\)
 
 Creates a new project based on external duplicate
 
@@ -125,11 +125,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
 
 The database identity of the newly created entry
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_DeleteProjectEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteProjectEntityAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_DeleteProjectEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteProjectEntityAsync\(int, RequestOptions\)
 
 Deletes the ProjectEntity
 
@@ -151,7 +151,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_DeleteProjectEventEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteProjectEventEntityAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_DeleteProjectEventEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteProjectEventEntityAsync\(int, RequestOptions\)
 
 Deletes the ProjectEventEntity
 
@@ -173,7 +173,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_DeleteProjectEventEntityFromProjectIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteProjectEventEntityFromProjectIdAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_DeleteProjectEventEntityFromProjectIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteProjectEventEntityFromProjectIdAsync\(int, RequestOptions\)
 
 Delete a project event based on a project id. Does not delete the project, but does delete the published and ExternalEvent and AudienceVisibility records.
 
@@ -197,7 +197,7 @@ Override language/culture codes on this request.
 
 Nothing
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_DeleteProjectMemberAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteProjectMemberAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_DeleteProjectMemberAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteProjectMemberAsync\(int, RequestOptions\)
 
 Deletes the ProjectMember
 
@@ -219,7 +219,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_DeleteProjectMemberByIdsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteProjectMemberByIdsAsync\(int\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_DeleteProjectMemberByIdsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> DeleteProjectMemberByIdsAsync\(int\[\], RequestOptions\)
 
 Deletes projectmembers rows.
 
@@ -241,7 +241,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_DeleteProjectMembersAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; DeleteProjectMembersAsync\(int, int\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_DeleteProjectMembersAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> DeleteProjectMembersAsync\(int, int\[\], RequestOptions\)
 
 Delete the given project members from a project
 
@@ -267,7 +267,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetDuplicateRulesAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDuplicateRulesAsync\(RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetDuplicateRulesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetDuplicateRulesAsync\(RequestOptions\)
 
 Retrieve all available duplicate rules for project
 
@@ -283,11 +283,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DuplicateRule](SuperOffice.WebApi.Data.DuplicateRule.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DuplicateRule](SuperOffice.WebApi.Data.DuplicateRule.md)\[\]\>
 
 All available duplicate rules
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetDuplicatesAsync_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetDuplicatesAsync\(string, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetDuplicatesAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetDuplicatesAsync\(string, RequestOptions\)
 
 Get duplicates(exact or similar in the database) based on the name
 
@@ -307,11 +307,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DuplicateEntry](SuperOffice.WebApi.Data.DuplicateEntry.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DuplicateEntry](SuperOffice.WebApi.Data.DuplicateEntry.md)\[\]\>
 
 Any records matching the specified name
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetMyMemberProjectsAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetMyMemberProjectsAsync\(RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetMyMemberProjectsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetMyMemberProjectsAsync\(RequestOptions\)
 
 Returning the projects where an user is project member.
 
@@ -327,11 +327,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Project](SuperOffice.WebApi.Data.Project.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Project](SuperOffice.WebApi.Data.Project.md)\[\]\>
 
 The list of projects.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetMyProjectEventsAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetMyProjectEventsAsync\(RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetMyProjectEventsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetMyProjectEventsAsync\(RequestOptions\)
 
 Gets all project events that belongs to the currently logged on user. The list of events are filtered by the Audience Visibility restrictions set when the project event is created.
 
@@ -347,11 +347,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectEvent](SuperOffice.WebApi.Data.ProjectEvent.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectEvent](SuperOffice.WebApi.Data.ProjectEvent.md)\[\]\>
 
 Array of project events
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetMyProjectsAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetMyProjectsAsync\(bool, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetMyProjectsAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetMyProjectsAsync\(bool, RequestOptions\)
 
 Returning the projects belonging to an associate. If memberProjects is false only the projects where the associate is project responsible is returned, otherwise both the projects where the associate is project responsible and project member is returned.
 
@@ -371,11 +371,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Project](SuperOffice.WebApi.Data.Project.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Project](SuperOffice.WebApi.Data.Project.md)\[\]\>
 
 The list of projects
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetMyPublishedProjectsAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetMyPublishedProjectsAsync\(RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetMyPublishedProjectsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetMyPublishedProjectsAsync\(RequestOptions\)
 
 Get published projects from the logged in user.
 
@@ -391,11 +391,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Project](SuperOffice.WebApi.Data.Project.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Project](SuperOffice.WebApi.Data.Project.md)\[\]\>
 
 Projects
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetNextMilestoneAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetNextMilestoneAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetNextMilestoneAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetNextMilestoneAsync\(int, RequestOptions\)
 
 Next upcoming milestone appointment
 
@@ -415,11 +415,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Appointment](SuperOffice.WebApi.Data.Appointment.md)\>
 
 Upcoming milestone appointment
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetNextProjectStatusAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetNextProjectStatusAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetNextProjectStatusAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetNextProjectStatusAsync\(int, RequestOptions\)
 
 ```csharp
 Task<int> GetNextProjectStatusAsync(int projectId, RequestOptions requestOptions = null)
@@ -435,9 +435,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetProjectAsync\(int, RequestOptions\)
 
 Gets a specific Project object.
 
@@ -457,11 +457,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Project](SuperOffice.WebApi.Data.Project.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Project](SuperOffice.WebApi.Data.Project.md)\>
 
 Project
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectEntityAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetProjectEntityAsync\(int, RequestOptions\)
 
 Gets a specific ProjectEntity object.
 
@@ -481,11 +481,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectEntity](SuperOffice.WebApi.Data.ProjectEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectEntity](SuperOffice.WebApi.Data.ProjectEntity.md)\>
 
 ProjectEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectEntityWithoutMembersAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectEntityWithoutMembersAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectEntityWithoutMembersAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetProjectEntityWithoutMembersAsync\(int, RequestOptions\)
 
 Get a project entity with no project members. Project members property is always an empty array.
 
@@ -505,11 +505,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectEntity](SuperOffice.WebApi.Data.ProjectEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectEntity](SuperOffice.WebApi.Data.ProjectEntity.md)\>
 
 Project entity with the specified id. The project members property is always an empty array.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectEventAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectEventAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectEventAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetProjectEventAsync\(int, RequestOptions\)
 
 Gets a specific ProjectEvent object.
 
@@ -529,11 +529,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectEvent](SuperOffice.WebApi.Data.ProjectEvent.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectEvent](SuperOffice.WebApi.Data.ProjectEvent.md)\>
 
 ProjectEvent
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectEventEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectEventEntityAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectEventEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetProjectEventEntityAsync\(int, RequestOptions\)
 
 Gets a specific ProjectEventEntity object.
 
@@ -553,11 +553,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectEventEntity](SuperOffice.WebApi.Data.ProjectEventEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectEventEntity](SuperOffice.WebApi.Data.ProjectEventEntity.md)\>
 
 ProjectEventEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectEventEntityFromProjectIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectEventEntityFromProjectIdAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectEventEntityFromProjectIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetProjectEventEntityFromProjectIdAsync\(int, RequestOptions\)
 
 Get a ProjectEventEntity based on a projectId.
 
@@ -577,11 +577,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectEventEntity](SuperOffice.WebApi.Data.ProjectEventEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectEventEntity](SuperOffice.WebApi.Data.ProjectEventEntity.md)\>
 
 ProjectEventEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectEventListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectEventListAsync\(int\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectEventListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetProjectEventListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific ProjectEvent objects.
 
@@ -601,11 +601,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectEvent](SuperOffice.WebApi.Data.ProjectEvent.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectEvent](SuperOffice.WebApi.Data.ProjectEvent.md)\[\]\>
 
 Array of ProjectEvent objects
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectEventOnPersonAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectEventOnPersonAsync\(int, int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectEventOnPersonAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetProjectEventOnPersonAsync\(int, int, RequestOptions\)
 
 Gets a ProjectEvent object from a project and a person.
 
@@ -629,9 +629,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectEvent](SuperOffice.WebApi.Data.ProjectEvent.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectEvent](SuperOffice.WebApi.Data.ProjectEvent.md)\>
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectEventsOnPersonAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectEventsOnPersonAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectEventsOnPersonAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetProjectEventsOnPersonAsync\(int, RequestOptions\)
 
 Gets all project events that belongs to the person specified. The list of events are filtered by the Audience Visibility restrictions set when the project event is created.
 
@@ -651,11 +651,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectEvent](SuperOffice.WebApi.Data.ProjectEvent.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectEvent](SuperOffice.WebApi.Data.ProjectEvent.md)\[\]\>
 
 Array of project events
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectFencingInfoAsync_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectFencingInfoAsync\(RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectFencingInfoAsync_SuperOffice_WebApi_RequestOptions_"></a> GetProjectFencingInfoAsync\(RequestOptions\)
 
 Get the current project fencing status for the tenant
 
@@ -671,11 +671,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FencingInfo](SuperOffice.WebApi.Data.FencingInfo.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FencingInfo](SuperOffice.WebApi.Data.FencingInfo.md)\>
 
 Current fencing status including count, maximum, and warning state
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectImageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectImageAsync\(int, string, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectImageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetProjectImageAsync\(int, string, RequestOptions\)
 
 Returns the project image that is displayed in the CRM application.
 
@@ -699,11 +699,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
 
 The project image.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectListAsync\(int\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetProjectListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific Project objects.
 
@@ -723,11 +723,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Project](SuperOffice.WebApi.Data.Project.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Project](SuperOffice.WebApi.Data.Project.md)\[\]\>
 
 Array of Project objects
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectMemberAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectMemberAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectMemberAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetProjectMemberAsync\(int, RequestOptions\)
 
 Gets a specific ProjectMember object.
 
@@ -747,11 +747,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectMember](SuperOffice.WebApi.Data.ProjectMember.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectMember](SuperOffice.WebApi.Data.ProjectMember.md)\>
 
 ProjectMember
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectMembersAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectMembersAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectMembersAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetProjectMembersAsync\(int, RequestOptions\)
 
 Returns an array of project members
 
@@ -771,11 +771,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectMember](SuperOffice.WebApi.Data.ProjectMember.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectMember](SuperOffice.WebApi.Data.ProjectMember.md)\[\]\>
 
 An array of project members
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectMembersByIdAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectMembersByIdAsync\(int\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectMembersByIdAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetProjectMembersByIdAsync\(int\[\], RequestOptions\)
 
 Returns an array of project members
 
@@ -793,11 +793,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectMember](SuperOffice.WebApi.Data.ProjectMember.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectMember](SuperOffice.WebApi.Data.ProjectMember.md)\[\]\>
 
 An array of project members
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectsFromContactAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectsFromContactAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectsFromContactAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetProjectsFromContactAsync\(int, RequestOptions\)
 
 Returns all projects where the given contact has projectmembers.
 
@@ -817,11 +817,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Project](SuperOffice.WebApi.Data.Project.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Project](SuperOffice.WebApi.Data.Project.md)\[\]\>
 
 ProjectListEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectsFromPersonAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetProjectsFromPersonAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetProjectsFromPersonAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetProjectsFromPersonAsync\(int, RequestOptions\)
 
 Return all projects where the person is project member.
 
@@ -841,11 +841,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Project](SuperOffice.WebApi.Data.Project.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Project](SuperOffice.WebApi.Data.Project.md)\[\]\>
 
 ProjectListEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetPublishedProjectAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPublishedProjectAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetPublishedProjectAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPublishedProjectAsync\(int, RequestOptions\)
 
 Get published project by project id.
 
@@ -865,11 +865,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Project](SuperOffice.WebApi.Data.Project.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Project](SuperOffice.WebApi.Data.Project.md)\>
 
 Project
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetPublishedProjectsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPublishedProjectsAsync\(int\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetPublishedProjectsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetPublishedProjectsAsync\(int\[\], RequestOptions\)
 
 Get published projects by project ids.
 
@@ -889,11 +889,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Project](SuperOffice.WebApi.Data.Project.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Project](SuperOffice.WebApi.Data.Project.md)\[\]\>
 
 Projects
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_GetPublishedProjectsOnPersonIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; GetPublishedProjectsOnPersonIdAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_GetPublishedProjectsOnPersonIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPublishedProjectsOnPersonIdAsync\(int, RequestOptions\)
 
 Get published projects where person  is a member
 
@@ -913,11 +913,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Project](SuperOffice.WebApi.Data.Project.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Project](SuperOffice.WebApi.Data.Project.md)\[\]\>
 
 Array of project
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_HasGuideActivitiesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; HasGuideActivitiesAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_HasGuideActivitiesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> HasGuideActivitiesAsync\(int, RequestOptions\)
 
 ```csharp
 Task<bool> HasGuideActivitiesAsync(int projectId, RequestOptions requestOptions = null)
@@ -933,9 +933,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_HasGuideAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; HasGuideAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_HasGuideAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> HasGuideAsync\(int, RequestOptions\)
 
 Does this project have a guide associated with its project type?
 
@@ -955,11 +955,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
 
 True if the project has a guide
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_IsNumberValidAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; IsNumberValidAsync\(int, string, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_IsNumberValidAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> IsNumberValidAsync\(int, string, RequestOptions\)
 
 Checks if the number is unique or required.  The setting is configured from admin under system options.
 
@@ -983,11 +983,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
 
 True if the number is valid
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_MergeAsync_System_Int32_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; MergeAsync\(int, int, bool, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_MergeAsync_System_Int32_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> MergeAsync\(int, int, bool, RequestOptions\)
 
 Merge two projects into one, removing the source project in the process
 
@@ -1017,7 +1017,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_OfferAutoNextStatusOnApppointmentCompletedAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; OfferAutoNextStatusOnApppointmentCompletedAsync\(int, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_OfferAutoNextStatusOnApppointmentCompletedAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> OfferAutoNextStatusOnApppointmentCompletedAsync\(int, RequestOptions\)
 
 ```csharp
 Task<bool> OfferAutoNextStatusOnApppointmentCompletedAsync(int appointmentId, RequestOptions requestOptions = null)
@@ -1033,9 +1033,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_SaveProjectEntityAsync_SuperOffice_WebApi_Data_ProjectEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveProjectEntityAsync\(ProjectEntity, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_SaveProjectEntityAsync_SuperOffice_WebApi_Data_ProjectEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveProjectEntityAsync\(ProjectEntity, RequestOptions\)
 
 Updates the existing ProjectEntity or creates a new ProjectEntity if the id parameter is 0.
 
@@ -1055,11 +1055,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectEntity](SuperOffice.WebApi.Data.ProjectEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectEntity](SuperOffice.WebApi.Data.ProjectEntity.md)\>
 
 New or updated ProjectEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_SaveProjectEntityWithoutMembersAsync_SuperOffice_WebApi_Data_ProjectEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveProjectEntityWithoutMembersAsync\(ProjectEntity, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_SaveProjectEntityWithoutMembersAsync_SuperOffice_WebApi_Data_ProjectEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveProjectEntityWithoutMembersAsync\(ProjectEntity, RequestOptions\)
 
 Save a project entity, the project members are ignored.
 
@@ -1079,11 +1079,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectEntity](SuperOffice.WebApi.Data.ProjectEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectEntity](SuperOffice.WebApi.Data.ProjectEntity.md)\>
 
 The saved project entity without any project members. The project members property is always an empty array.
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_SaveProjectEventEntityAsync_SuperOffice_WebApi_Data_ProjectEventEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveProjectEventEntityAsync\(ProjectEventEntity, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_SaveProjectEventEntityAsync_SuperOffice_WebApi_Data_ProjectEventEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveProjectEventEntityAsync\(ProjectEventEntity, RequestOptions\)
 
 Updates the existing ProjectEventEntity or creates a new ProjectEventEntity if the id parameter is 0.
 
@@ -1103,11 +1103,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectEventEntity](SuperOffice.WebApi.Data.ProjectEventEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectEventEntity](SuperOffice.WebApi.Data.ProjectEventEntity.md)\>
 
 New or updated ProjectEventEntity
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_SaveProjectMemberAsync_SuperOffice_WebApi_Data_ProjectMember_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveProjectMemberAsync\(ProjectMember, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_SaveProjectMemberAsync_SuperOffice_WebApi_Data_ProjectMember_SuperOffice_WebApi_RequestOptions_"></a> SaveProjectMemberAsync\(ProjectMember, RequestOptions\)
 
 Updates the existing ProjectMember or creates a new ProjectMember if the id parameter is 0.
 
@@ -1127,11 +1127,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectMember](SuperOffice.WebApi.Data.ProjectMember.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectMember](SuperOffice.WebApi.Data.ProjectMember.md)\>
 
 New or updated ProjectMember
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_SaveProjectMembersFunctionAndCommentAsync_System_Int32___System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SaveProjectMembersFunctionAndCommentAsync\(int\[\], int, string, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_SaveProjectMembersFunctionAndCommentAsync_System_Int32___System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> SaveProjectMembersFunctionAndCommentAsync\(int\[\], int, string, RequestOptions\)
 
 Saves role and comment on an array of projectmembers represented by ids
 
@@ -1155,7 +1155,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_SetCompletedAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetCompletedAsync\(int, bool, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_SetCompletedAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> SetCompletedAsync\(int, bool, RequestOptions\)
 
 Set the completed flag on the project
 
@@ -1181,7 +1181,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_SetDuplicateRulesStatusAsync_SuperOffice_WebApi_Data_DuplicateRule___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetDuplicateRulesStatusAsync\(DuplicateRule\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_SetDuplicateRulesStatusAsync_SuperOffice_WebApi_Data_DuplicateRule___SuperOffice_WebApi_RequestOptions_"></a> SetDuplicateRulesStatusAsync\(DuplicateRule\[\], RequestOptions\)
 
 Set which duplicate rules should be active or not
 
@@ -1203,7 +1203,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_SetProjectImageAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; SetProjectImageAsync\(int, byte\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_SetProjectImageAsync_System_Int32_System_Byte___SuperOffice_WebApi_RequestOptions_"></a> SetProjectImageAsync\(int, byte\[\], RequestOptions\)
 
 Stores the project image that is displayed in the CRM application.
 
@@ -1229,7 +1229,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_UpdateProjectMemberAsync_SuperOffice_WebApi_Data_ProjectMember_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; UpdateProjectMemberAsync\(ProjectMember, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_UpdateProjectMemberAsync_SuperOffice_WebApi_Data_ProjectMember_SuperOffice_WebApi_RequestOptions_"></a> UpdateProjectMemberAsync\(ProjectMember, RequestOptions\)
 
 Updates a ProjectMember row.
 
@@ -1249,11 +1249,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectMember](SuperOffice.WebApi.Data.ProjectMember.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectMember](SuperOffice.WebApi.Data.ProjectMember.md)\>
 
 The Updated ProjectMember
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_UpdateProjectMembersAsync_System_Int32_SuperOffice_WebApi_Data_ProjectMember___SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; UpdateProjectMembersAsync\(int, ProjectMember\[\], RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_UpdateProjectMembersAsync_System_Int32_SuperOffice_WebApi_Data_ProjectMember___SuperOffice_WebApi_RequestOptions_"></a> UpdateProjectMembersAsync\(int, ProjectMember\[\], RequestOptions\)
 
 Update existing project members. Not creating new (only projectmember_id &gt; 0 accepted)
 
@@ -1281,7 +1281,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### &lt;a id="SuperOffice_WebApi_Agents_IProjectAgent_ValidateProjectEntityAsync_SuperOffice_WebApi_Data_ProjectEntity_SuperOffice_WebApi_RequestOptions_"&gt;&lt;/a&gt; ValidateProjectEntityAsync\(ProjectEntity, RequestOptions\)
+### <a id="SuperOffice_WebApi_Agents_IProjectAgent_ValidateProjectEntityAsync_SuperOffice_WebApi_Data_ProjectEntity_SuperOffice_WebApi_RequestOptions_"></a> ValidateProjectEntityAsync\(ProjectEntity, RequestOptions\)
 
 Check that entity is ready for saving, return error messages by field.
 
@@ -1301,7 +1301,7 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\>
 
 Error messages tagged by field.
 

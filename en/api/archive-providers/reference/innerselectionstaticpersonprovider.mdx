@@ -1,7 +1,7 @@
 ---
 title: InnerSelectionStaticPersonProvider
 description: 
-keywords: ['InnerSelectionStaticPersonProvider archive provider']
+keywords: InnerSelectionStaticPersonProvider archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -864,7 +864,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/InnerSelectionStaticPersonProvider?$select=personAssociateId,personTargetRelation/personRegisteredDate,correspondingAssociate/contactFullName,contactAssociate/title,contactAssociate/otherGroups
+GET /api/v1/archive/InnerSelectionStaticPersonProvider?$select=updatedByWorkflow,selectionId,personExtra/x_person_request_relation,personSourceRelation/supportAssociateFullName,correspondingAssociate/firstName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

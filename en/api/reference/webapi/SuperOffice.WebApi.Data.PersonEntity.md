@@ -1,4 +1,4 @@
-# &lt;a id="SuperOffice_WebApi_Data_PersonEntity"&gt;&lt;/a&gt; Class PersonEntity
+# <a id="SuperOffice_WebApi_Data_PersonEntity"></a> Class PersonEntity
 
 Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
@@ -31,24 +31,24 @@ public class PersonEntity : Carrier
 ## Examples
 
 Get PersonEntity 123 using the WebApi client:
-&lt;pre&gt;&lt;code class="lang-csharp"&gt;var configuration = new WebApiConfiguration(url);
+<pre><code class="lang-csharp">var configuration = new WebApiConfiguration(url);
 var agent = new PersonAgent(configuration);
-var personEntity = agent.GetPersonEntity( 123 );&lt;/code&gt;&lt;/pre&gt;
+var personEntity = agent.GetPersonEntity( 123 );</code></pre>
 
 ## Remarks
 
-Use &lt;xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;:
-            All PersonEntity: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"Person"&lt;/code&gt;&lt;/pre&gt;
-            Activities: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"ContactActivity"&lt;/code&gt;&lt;/pre&gt; with restriction &lt;pre&gt;&lt;code class="lang-csharp"&gt;"personId eq " + id&lt;/code&gt;&lt;/pre&gt;.
-            Appointments: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"Appointment"&lt;/code&gt;&lt;/pre&gt; with restriction &lt;pre&gt;&lt;code class="lang-csharp"&gt;"personId eq " + id&lt;/code&gt;&lt;/pre&gt;.
-            Documents: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"Document"&lt;/code&gt;&lt;/pre&gt; with restriction &lt;pre&gt;&lt;code class="lang-csharp"&gt;"personId eq " + id&lt;/code&gt;&lt;/pre&gt;.
-            Sales: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"SaleFilteredWithStakeholder"&lt;/code&gt;&lt;/pre&gt; with restriction &lt;pre&gt;&lt;code class="lang-csharp"&gt;"person/personId eq " + id&lt;/code&gt;&lt;/pre&gt;.
-            Relations: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"Relation"&lt;/code&gt;&lt;/pre&gt; with restriction &lt;pre&gt;&lt;code class="lang-csharp"&gt;"source/restrictionPersonId eq " + id&lt;/code&gt;&lt;/pre&gt;.
-            Tickets: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"Ticket"&lt;/code&gt;&lt;/pre&gt; with restriction &lt;pre&gt;&lt;code class="lang-csharp"&gt;"personId eq " + id&lt;/code&gt;&lt;/pre&gt;.
+Use <xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" data-throw-if-not-resolved="false"></xref>:
+            All PersonEntity: <pre><code class="lang-csharp">"Person"</code></pre>
+            Activities: <pre><code class="lang-csharp">"ContactActivity"</code></pre> with restriction <pre><code class="lang-csharp">"personId eq " + id</code></pre>.
+            Appointments: <pre><code class="lang-csharp">"Appointment"</code></pre> with restriction <pre><code class="lang-csharp">"personId eq " + id</code></pre>.
+            Documents: <pre><code class="lang-csharp">"Document"</code></pre> with restriction <pre><code class="lang-csharp">"personId eq " + id</code></pre>.
+            Sales: <pre><code class="lang-csharp">"SaleFilteredWithStakeholder"</code></pre> with restriction <pre><code class="lang-csharp">"person/personId eq " + id</code></pre>.
+            Relations: <pre><code class="lang-csharp">"Relation"</code></pre> with restriction <pre><code class="lang-csharp">"source/restrictionPersonId eq " + id</code></pre>.
+            Tickets: <pre><code class="lang-csharp">"Ticket"</code></pre> with restriction <pre><code class="lang-csharp">"personId eq " + id</code></pre>.
 
 ## Constructors
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity__ctor"&gt;&lt;/a&gt; PersonEntity\(\)
+### <a id="SuperOffice_WebApi_Data_PersonEntity__ctor"></a> PersonEntity\(\)
 
 Default constructor - defaults any enum props to 0.
 
@@ -58,7 +58,7 @@ public PersonEntity()
 
 ## Properties
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_ActiveErpLinks"&gt;&lt;/a&gt; ActiveErpLinks
+### <a id="SuperOffice_WebApi_Data_PersonEntity_ActiveErpLinks"></a> ActiveErpLinks
 
 How many active ERP links are there for this person?
 
@@ -70,7 +70,7 @@ public virtual int ActiveErpLinks { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_ActiveInterests"&gt;&lt;/a&gt; ActiveInterests
+### <a id="SuperOffice_WebApi_Data_PersonEntity_ActiveInterests"></a> ActiveInterests
 
 The number of active interests.
 
@@ -82,7 +82,7 @@ public virtual int ActiveInterests { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_ActiveStatusMonitorId"&gt;&lt;/a&gt; ActiveStatusMonitorId
+### <a id="SuperOffice_WebApi_Data_PersonEntity_ActiveStatusMonitorId"></a> ActiveStatusMonitorId
 
 Active status monitor identity with the lowest rank for person
 
@@ -94,7 +94,7 @@ public virtual int ActiveStatusMonitorId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_Address"&gt;&lt;/a&gt; Address
+### <a id="SuperOffice_WebApi_Data_PersonEntity_Address"></a> Address
 
 Structure holding formatted address data. The layout of the array structure indicates the layout of the localized address.
 
@@ -106,10 +106,10 @@ public virtual Address Address { get; set; }
 
  [Address](SuperOffice.WebApi.Data.Address.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_Associate"&gt;&lt;/a&gt; Associate
+### <a id="SuperOffice_WebApi_Data_PersonEntity_Associate"></a> Associate
 
 The associate owning this person (similar to contact.Associate) - usually blank. Use the Person.Contact.Associate instead.  Intended for use when individual persons are created (i.e. when Person.Contact is blank)
-&lt;p&gt;Use MDO List name "associate" to get list items.&lt;/p&gt;
+<p>Use MDO List name "associate" to get list items.</p>
 
 ```csharp
 public virtual Associate Associate { get; set; }
@@ -119,7 +119,7 @@ public virtual Associate Associate { get; set; }
 
  [Associate](SuperOffice.WebApi.Data.Associate.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_BirthDate"&gt;&lt;/a&gt; BirthDate
+### <a id="SuperOffice_WebApi_Data_PersonEntity_BirthDate"></a> BirthDate
 
 The Person birth date as UTC Date. Year 1 = Null. Year 2 = unknown year.
 
@@ -131,7 +131,7 @@ public virtual DateTime BirthDate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_BounceEmails"&gt;&lt;/a&gt; BounceEmails
+### <a id="SuperOffice_WebApi_Data_PersonEntity_BounceEmails"></a> BounceEmails
 
 Email addresses with a positive bounce counter.
 
@@ -143,10 +143,10 @@ public virtual string[] BounceEmails { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)\[\]
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_Business"&gt;&lt;/a&gt; Business
+### <a id="SuperOffice_WebApi_Data_PersonEntity_Business"></a> Business
 
 Person's business - usually blank. Use Contact.Business instead. Intended for use when individual persons are created. (i.e. when Person.Contact is blank)
-&lt;p&gt;Use MDO List name "business" to get list items.&lt;/p&gt;
+<p>Use MDO List name "business" to get list items.</p>
 
 ```csharp
 public virtual Business Business { get; set; }
@@ -156,10 +156,10 @@ public virtual Business Business { get; set; }
 
  [Business](SuperOffice.WebApi.Data.Business.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_Category"&gt;&lt;/a&gt; Category
+### <a id="SuperOffice_WebApi_Data_PersonEntity_Category"></a> Category
 
 Person's category. Usually null. Refer to the Contact.Category instead.  Intended for use when individual persons are created. (i.e. when Person.Contact is blank)
-&lt;p&gt;Use MDO List name "category" to get list items.&lt;/p&gt;
+<p>Use MDO List name "category" to get list items.</p>
 
 ```csharp
 public virtual Category Category { get; set; }
@@ -169,7 +169,7 @@ public virtual Category Category { get; set; }
 
  [Category](SuperOffice.WebApi.Data.Category.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_ChatEmails"&gt;&lt;/a&gt; ChatEmails
+### <a id="SuperOffice_WebApi_Data_PersonEntity_ChatEmails"></a> ChatEmails
 
 ```csharp
 public virtual EntityElement[] ChatEmails { get; set; }
@@ -179,7 +179,7 @@ public virtual EntityElement[] ChatEmails { get; set; }
 
  [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_Consents"&gt;&lt;/a&gt; Consents
+### <a id="SuperOffice_WebApi_Data_PersonEntity_Consents"></a> Consents
 
 The person's available consent information. Missing consents are not deleted. To remove a consent, mark its legalbase as 'WITHDRAWN'
 
@@ -191,10 +191,10 @@ public virtual ConsentInfo[] Consents { get; set; }
 
  [ConsentInfo](SuperOffice.WebApi.Data.ConsentInfo.md)\[\]
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_Contact"&gt;&lt;/a&gt; Contact
+### <a id="SuperOffice_WebApi_Data_PersonEntity_Contact"></a> Contact
 
 The contact the contact person is registered on. This is required unless the 'MandatoryContactOnPerson' preference is set.
-&lt;p&gt;Use MDO List name "contact_new" to get list items.&lt;/p&gt;
+<p>Use MDO List name "contact_new" to get list items.</p>
 
 ```csharp
 public virtual Contact Contact { get; set; }
@@ -204,7 +204,7 @@ public virtual Contact Contact { get; set; }
 
  [Contact](SuperOffice.WebApi.Data.Contact.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_CorrespondingAssociate"&gt;&lt;/a&gt; CorrespondingAssociate
+### <a id="SuperOffice_WebApi_Data_PersonEntity_CorrespondingAssociate"></a> CorrespondingAssociate
 
 The associate corresponding to this person. Will be empty if the person is not a user (internal associate user, external user).
 
@@ -216,10 +216,10 @@ public virtual Associate CorrespondingAssociate { get; set; }
 
  [Associate](SuperOffice.WebApi.Data.Associate.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_Country"&gt;&lt;/a&gt; Country
+### <a id="SuperOffice_WebApi_Data_PersonEntity_Country"></a> Country
 
 The country this contact person is located in.
-&lt;p&gt;Use MDO List name "country" to get list items.&lt;/p&gt;
+<p>Use MDO List name "country" to get list items.</p>
 
 ```csharp
 public virtual Country Country { get; set; }
@@ -229,7 +229,7 @@ public virtual Country Country { get; set; }
 
  [Country](SuperOffice.WebApi.Data.Country.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_CreatedBy"&gt;&lt;/a&gt; CreatedBy
+### <a id="SuperOffice_WebApi_Data_PersonEntity_CreatedBy"></a> CreatedBy
 
 The user that created the person object
 
@@ -241,7 +241,7 @@ public virtual Associate CreatedBy { get; set; }
 
  [Associate](SuperOffice.WebApi.Data.Associate.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_CreatedByFormId"&gt;&lt;/a&gt; CreatedByFormId
+### <a id="SuperOffice_WebApi_Data_PersonEntity_CreatedByFormId"></a> CreatedByFormId
 
 The form id of the form that created the person
 
@@ -253,7 +253,7 @@ public virtual int CreatedByFormId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_CreatedDate"&gt;&lt;/a&gt; CreatedDate
+### <a id="SuperOffice_WebApi_Data_PersonEntity_CreatedDate"></a> CreatedDate
 
 Registered date
 
@@ -265,11 +265,11 @@ public virtual DateTime CreatedDate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_CustomFields"&gt;&lt;/a&gt; CustomFields
+### <a id="SuperOffice_WebApi_Data_PersonEntity_CustomFields"></a> CustomFields
 
 Udef + Extra fields added to the carrier. Extra fields as defined by changes to database schema + user-defined fields as defined by admin.
 Custom fields combines user defined fields and extra fields into one bucket. 
-The individual &lt;xref href="SuperOffice.WebApi.Data.PersonEntity.ExtraFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; and &lt;xref href="SuperOffice.WebApi.Data.PersonEntity.UserDefinedFields?text=UserDefinedFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; properties are deprecated in favor of this
+The individual <xref href="SuperOffice.WebApi.Data.PersonEntity.ExtraFields" data-throw-if-not-resolved="false"></xref> and <xref href="SuperOffice.WebApi.Data.PersonEntity.UserDefinedFields?text=UserDefinedFields" data-throw-if-not-resolved="false"></xref> properties are deprecated in favor of this
 combined collection.
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
 
@@ -284,17 +284,17 @@ public virtual StringDictionary CustomFields { get; set; }
 #### Remarks
 
 The naming convention of the key string is as follows:
-&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="term"&gt;Extra field data&lt;/td&gt;&lt;td class="description"&gt;
-       [Extra field name]&lt;p&gt;&lt;/p&gt;
-       Example: &lt;pre&gt;&lt;code class="lang-csharp"&gt;'x_gorp' = '[I:123]'&lt;/code&gt;&lt;/pre&gt;
-       &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;User defined field data&lt;/td&gt;&lt;td class="description"&gt;
-       [Prog-id name]&lt;p&gt;&lt;/p&gt;
-    Example: &lt;pre&gt;&lt;code class="lang-csharp"&gt;'SuperOffice:1' = '[I:123]'&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
-       &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+<table><tbody><tr><td class="term">Extra field data</td><td class="description">
+       [Extra field name]<p></p>
+       Example: <pre><code class="lang-csharp">'x_gorp' = '[I:123]'</code></pre>
+       </td></tr><tr><td class="term">User defined field data</td><td class="description">
+       [Prog-id name]<p></p>
+    Example: <pre><code class="lang-csharp">'SuperOffice:1' = '[I:123]'</code></pre><p></p>
+       </td></tr></tbody></table>
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_CustomerLanguage"&gt;&lt;/a&gt; CustomerLanguage
+### <a id="SuperOffice_WebApi_Data_PersonEntity_CustomerLanguage"></a> CustomerLanguage
 
-&lt;p&gt;Use MDO List name "customerlanguage" to get list items.&lt;/p&gt;
+<p>Use MDO List name "customerlanguage" to get list items.</p>
 
 ```csharp
 public virtual CustomerLanguage CustomerLanguage { get; set; }
@@ -304,7 +304,7 @@ public virtual CustomerLanguage CustomerLanguage { get; set; }
 
  [CustomerLanguage](SuperOffice.WebApi.Data.CustomerLanguage.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_DbiAgentId"&gt;&lt;/a&gt; DbiAgentId
+### <a id="SuperOffice_WebApi_Data_PersonEntity_DbiAgentId"></a> DbiAgentId
 
 Integration agent (eJournal)
 
@@ -316,7 +316,7 @@ public virtual int DbiAgentId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_DbiKey"&gt;&lt;/a&gt; DbiKey
+### <a id="SuperOffice_WebApi_Data_PersonEntity_DbiKey"></a> DbiKey
 
 The primary key for the integrated entry in the external datasource.
 
@@ -328,7 +328,7 @@ public virtual string DbiKey { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_DbiLastModified"&gt;&lt;/a&gt; DbiLastModified
+### <a id="SuperOffice_WebApi_Data_PersonEntity_DbiLastModified"></a> DbiLastModified
 
 When the entry was last modified.
 
@@ -340,7 +340,7 @@ public virtual DateTime DbiLastModified { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_DbiLastSyncronized"&gt;&lt;/a&gt; DbiLastSyncronized
+### <a id="SuperOffice_WebApi_Data_PersonEntity_DbiLastSyncronized"></a> DbiLastSyncronized
 
 Last external syncronization.
 
@@ -352,7 +352,7 @@ public virtual DateTime DbiLastSyncronized { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_Description"&gt;&lt;/a&gt; Description
+### <a id="SuperOffice_WebApi_Data_PersonEntity_Description"></a> Description
 
 The actual text, max 2047 significant characters even though it is stored as a larger data type on some databases
 
@@ -364,7 +364,7 @@ public virtual string Description { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_Emails"&gt;&lt;/a&gt; Emails
+### <a id="SuperOffice_WebApi_Data_PersonEntity_Emails"></a> Emails
 
 A collection of the person's emails
 
@@ -376,9 +376,9 @@ public virtual EntityElement[] Emails { get; set; }
 
  [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_ExtraFields"&gt;&lt;/a&gt; ExtraFields
+### <a id="SuperOffice_WebApi_Data_PersonEntity_ExtraFields"></a> ExtraFields
 
-Deprecated: Use &lt;xref href="SuperOffice.WebApi.Data.PersonEntity.CustomFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instead.
+Deprecated: Use <xref href="SuperOffice.WebApi.Data.PersonEntity.CustomFields" data-throw-if-not-resolved="false"></xref> instead.
 Extra fields added to the carrier. This could be data from Plug-ins, the foreign key system, external applications, etc.
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
 
@@ -393,23 +393,23 @@ public virtual StringDictionary ExtraFields { get; set; }
 #### Remarks
 
 The naming convention of the key string is as follows:
-&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="term"&gt;Plug-in data&lt;/td&gt;&lt;td class="description"&gt;
+<table><tbody><tr><td class="term">Plug-in data</td><td class="description">
        [Plug-in name].[Property name]
        Example: DocumentPlugin.DocumentType
-       &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;Foreign key data&lt;/td&gt;&lt;td class="description"&gt;
+       </td></tr><tr><td class="term">Foreign key data</td><td class="description">
        The device identity is appended directly to the device name if it exists. 
     This is not commonly used, but the database opens for this as a possibility to have several devices with the same name, 
     and hence we would ensure an unique key if this field is used.
     Example: Audience.SecretService.DefaultCountry
-    &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;User defined table data&lt;/td&gt;&lt;td class="description"&gt;
+    </td></tr><tr><td class="term">User defined table data</td><td class="description">
        [Table name].[Field name]
        Example: Phunneling.AggregatedSales
-       &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;Other&lt;/td&gt;&lt;td class="description"&gt;
+       </td></tr><tr><td class="term">Other</td><td class="description">
        Other data sources must ensure an unique name. If the key already exists we do not add the data to the dictionary. 
        We also ensure that SuperOffice data are added first, so that existing data doesnt change when more data sources are added (with duplicate data keys).
-       &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+       </td></tr></tbody></table>
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_Faxes"&gt;&lt;/a&gt; Faxes
+### <a id="SuperOffice_WebApi_Data_PersonEntity_Faxes"></a> Faxes
 
 Returns a collection of fax numbers that belong to the contact person.
 
@@ -421,7 +421,7 @@ public virtual EntityElement[] Faxes { get; set; }
 
  [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_Firstname"&gt;&lt;/a&gt; Firstname
+### <a id="SuperOffice_WebApi_Data_PersonEntity_Firstname"></a> Firstname
 
 First name
 
@@ -433,7 +433,7 @@ public virtual string Firstname { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_FormalName"&gt;&lt;/a&gt; FormalName
+### <a id="SuperOffice_WebApi_Data_PersonEntity_FormalName"></a> FormalName
 
 Get formal name for a person, as used in labels. (Full name + person title + academic title)
 
@@ -445,7 +445,7 @@ public virtual string FormalName { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_FullName"&gt;&lt;/a&gt; FullName
+### <a id="SuperOffice_WebApi_Data_PersonEntity_FullName"></a> FullName
 
 The person's full name localized to the current culture/country.  (internal name used in clients for employees)
 
@@ -457,10 +457,10 @@ public virtual string FullName { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_Interests"&gt;&lt;/a&gt; Interests
+### <a id="SuperOffice_WebApi_Data_PersonEntity_Interests"></a> Interests
 
 The person's available and selected interests.
-&lt;p&gt;Use MDO List name "persint" to get list items.&lt;/p&gt;
+<p>Use MDO List name "persint" to get list items.</p>
 
 ```csharp
 public virtual SelectableMDOListItem[] Interests { get; set; }
@@ -470,7 +470,7 @@ public virtual SelectableMDOListItem[] Interests { get; set; }
 
  [SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_InternetPhones"&gt;&lt;/a&gt; InternetPhones
+### <a id="SuperOffice_WebApi_Data_PersonEntity_InternetPhones"></a> InternetPhones
 
 ```csharp
 public virtual EntityElement[] InternetPhones { get; set; }
@@ -480,7 +480,7 @@ public virtual EntityElement[] InternetPhones { get; set; }
 
  [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_IsAssociate"&gt;&lt;/a&gt; IsAssociate
+### <a id="SuperOffice_WebApi_Data_PersonEntity_IsAssociate"></a> IsAssociate
 
 Checks if the person object is an associate. The property is read-only.
 
@@ -492,7 +492,7 @@ public virtual bool IsAssociate { get; set; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_Kanafname"&gt;&lt;/a&gt; Kanafname
+### <a id="SuperOffice_WebApi_Data_PersonEntity_Kanafname"></a> Kanafname
 
 Kana first name, used in Japanese versions only
 
@@ -504,7 +504,7 @@ public virtual string Kanafname { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_Kanalname"&gt;&lt;/a&gt; Kanalname
+### <a id="SuperOffice_WebApi_Data_PersonEntity_Kanalname"></a> Kanalname
 
 Kana last name, used in Japanese versions only
 
@@ -516,7 +516,7 @@ public virtual string Kanalname { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_Lastname"&gt;&lt;/a&gt; Lastname
+### <a id="SuperOffice_WebApi_Data_PersonEntity_Lastname"></a> Lastname
 
 Last name
 
@@ -528,7 +528,7 @@ public virtual string Lastname { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_Leadstatus"&gt;&lt;/a&gt; Leadstatus
+### <a id="SuperOffice_WebApi_Data_PersonEntity_Leadstatus"></a> Leadstatus
 
 Name of leadstatus
 
@@ -540,7 +540,7 @@ public virtual string Leadstatus { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_LeadstatusId"&gt;&lt;/a&gt; LeadstatusId
+### <a id="SuperOffice_WebApi_Data_PersonEntity_LeadstatusId"></a> LeadstatusId
 
 Refinement of categories of lead type. Empty if the category is not a lead type.
 
@@ -552,7 +552,7 @@ public virtual int LeadstatusId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_MiddleName"&gt;&lt;/a&gt; MiddleName
+### <a id="SuperOffice_WebApi_Data_PersonEntity_MiddleName"></a> MiddleName
 
 Middle name or 'van' etc.
 
@@ -564,7 +564,7 @@ public virtual string MiddleName { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_MobilePhones"&gt;&lt;/a&gt; MobilePhones
+### <a id="SuperOffice_WebApi_Data_PersonEntity_MobilePhones"></a> MobilePhones
 
 Returns a collection of mobile phone numbers that belong to the contact person.
 
@@ -576,10 +576,10 @@ public virtual EntityElement[] MobilePhones { get; set; }
 
  [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_Mrmrs"&gt;&lt;/a&gt; Mrmrs
+### <a id="SuperOffice_WebApi_Data_PersonEntity_Mrmrs"></a> Mrmrs
 
 e.g. Mrs   sex_title
-&lt;p&gt;Use MDO List name "mrmrs" to get list items.&lt;/p&gt;
+<p>Use MDO List name "mrmrs" to get list items.</p>
 
 ```csharp
 public virtual string Mrmrs { get; set; }
@@ -589,7 +589,7 @@ public virtual string Mrmrs { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_NoMailing"&gt;&lt;/a&gt; NoMailing
+### <a id="SuperOffice_WebApi_Data_PersonEntity_NoMailing"></a> NoMailing
 
 Spam filter. Indicates if this person should retrieve advertising.
 
@@ -601,7 +601,7 @@ public virtual bool NoMailing { get; set; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_OfficePhones"&gt;&lt;/a&gt; OfficePhones
+### <a id="SuperOffice_WebApi_Data_PersonEntity_OfficePhones"></a> OfficePhones
 
 Returns a collection of office phone numbers that belong to the contact person.
 
@@ -613,7 +613,7 @@ public virtual EntityElement[] OfficePhones { get; set; }
 
  [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_OtherPhones"&gt;&lt;/a&gt; OtherPhones
+### <a id="SuperOffice_WebApi_Data_PersonEntity_OtherPhones"></a> OtherPhones
 
 Returns a collection of pagers that belong to the contact person.
 
@@ -625,7 +625,7 @@ public virtual EntityElement[] OtherPhones { get; set; }
 
  [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_PersonId"&gt;&lt;/a&gt; PersonId
+### <a id="SuperOffice_WebApi_Data_PersonEntity_PersonId"></a> PersonId
 
 Primary key
 
@@ -637,7 +637,7 @@ public virtual int PersonId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_PersonNumber"&gt;&lt;/a&gt; PersonNumber
+### <a id="SuperOffice_WebApi_Data_PersonEntity_PersonNumber"></a> PersonNumber
 
 Alphanumeric user field
 
@@ -649,10 +649,10 @@ public virtual string PersonNumber { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_Position"&gt;&lt;/a&gt; Position
+### <a id="SuperOffice_WebApi_Data_PersonEntity_Position"></a> Position
 
 The position. This is a predefined SuperOffice value, different from Title
-&lt;p&gt;Use MDO List name "perspos" to get list items.&lt;/p&gt;
+<p>Use MDO List name "perspos" to get list items.</p>
 
 ```csharp
 public virtual Position Position { get; set; }
@@ -662,7 +662,7 @@ public virtual Position Position { get; set; }
 
  [Position](SuperOffice.WebApi.Data.Position.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_Post1"&gt;&lt;/a&gt; Post1
+### <a id="SuperOffice_WebApi_Data_PersonEntity_Post1"></a> Post1
 
 Postal address, used in Japanese versions only
 
@@ -674,7 +674,7 @@ public virtual string Post1 { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_Post2"&gt;&lt;/a&gt; Post2
+### <a id="SuperOffice_WebApi_Data_PersonEntity_Post2"></a> Post2
 
 Postal address, used in Japanese versions only
 
@@ -686,7 +686,7 @@ public virtual string Post2 { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_Post3"&gt;&lt;/a&gt; Post3
+### <a id="SuperOffice_WebApi_Data_PersonEntity_Post3"></a> Post3
 
 Postal address, used in Japanese versions only
 
@@ -698,7 +698,7 @@ public virtual string Post3 { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_PrivatePhones"&gt;&lt;/a&gt; PrivatePhones
+### <a id="SuperOffice_WebApi_Data_PersonEntity_PrivatePhones"></a> PrivatePhones
 
 Returns a collection of phone numbers that belong to the contact person.
 
@@ -710,7 +710,7 @@ public virtual EntityElement[] PrivatePhones { get; set; }
 
  [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_Retired"&gt;&lt;/a&gt; Retired
+### <a id="SuperOffice_WebApi_Data_PersonEntity_Retired"></a> Retired
 
 True if the user is retired and should have no rights, not appear in lists, etc.
 
@@ -722,10 +722,10 @@ public virtual bool Retired { get; set; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_Salutation"&gt;&lt;/a&gt; Salutation
+### <a id="SuperOffice_WebApi_Data_PersonEntity_Salutation"></a> Salutation
 
 Academic title, populated from Salutation list but can be overwritten with anything at all
-&lt;p&gt;Use MDO List name "salutation" to get list items.&lt;/p&gt;
+<p>Use MDO List name "salutation" to get list items.</p>
 
 ```csharp
 public virtual string Salutation { get; set; }
@@ -735,7 +735,7 @@ public virtual string Salutation { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_SentInfo"&gt;&lt;/a&gt; SentInfo
+### <a id="SuperOffice_WebApi_Data_PersonEntity_SentInfo"></a> SentInfo
 
 Has information on username/password been sent (ejournal)
 
@@ -747,7 +747,7 @@ public virtual short SentInfo { get; set; }
 
  [short](https://learn.microsoft.com/dotnet/api/system.int16)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_ShipmentTypes"&gt;&lt;/a&gt; ShipmentTypes
+### <a id="SuperOffice_WebApi_Data_PersonEntity_ShipmentTypes"></a> ShipmentTypes
 
 The person's available and selected shipment types.
 
@@ -759,7 +759,7 @@ public virtual SelectableMDOListItem[] ShipmentTypes { get; set; }
 
  [SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_ShowContactTickets"&gt;&lt;/a&gt; ShowContactTickets
+### <a id="SuperOffice_WebApi_Data_PersonEntity_ShowContactTickets"></a> ShowContactTickets
 
 Should tickets related to the company be shown to this person
 
@@ -771,7 +771,7 @@ public virtual short ShowContactTickets { get; set; }
 
  [short](https://learn.microsoft.com/dotnet/api/system.int16)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_Source"&gt;&lt;/a&gt; Source
+### <a id="SuperOffice_WebApi_Data_PersonEntity_Source"></a> Source
 
 How did we get this person? For future integration needs
 
@@ -783,9 +783,9 @@ public virtual short Source { get; set; }
 
  [short](https://learn.microsoft.com/dotnet/api/system.int16)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_SupportAssociate"&gt;&lt;/a&gt; SupportAssociate
+### <a id="SuperOffice_WebApi_Data_PersonEntity_SupportAssociate"></a> SupportAssociate
 
-&lt;p&gt;Use MDO List name "associate" to get list items.&lt;/p&gt;
+<p>Use MDO List name "associate" to get list items.</p>
 
 ```csharp
 public virtual Associate SupportAssociate { get; set; }
@@ -795,9 +795,9 @@ public virtual Associate SupportAssociate { get; set; }
 
  [Associate](SuperOffice.WebApi.Data.Associate.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_TicketPriority"&gt;&lt;/a&gt; TicketPriority
+### <a id="SuperOffice_WebApi_Data_PersonEntity_TicketPriority"></a> TicketPriority
 
-&lt;p&gt;Use MDO List name "ticketpriority" to get list items.&lt;/p&gt;
+<p>Use MDO List name "ticketpriority" to get list items.</p>
 
 ```csharp
 public virtual TicketPriority TicketPriority { get; set; }
@@ -807,7 +807,7 @@ public virtual TicketPriority TicketPriority { get; set; }
 
  [TicketPriority](SuperOffice.WebApi.Data.TicketPriority.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_Title"&gt;&lt;/a&gt; Title
+### <a id="SuperOffice_WebApi_Data_PersonEntity_Title"></a> Title
 
 Title
 
@@ -819,7 +819,7 @@ public virtual string Title { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_UpdatedBy"&gt;&lt;/a&gt; UpdatedBy
+### <a id="SuperOffice_WebApi_Data_PersonEntity_UpdatedBy"></a> UpdatedBy
 
 The person that last updated the person object
 
@@ -831,7 +831,7 @@ public virtual Associate UpdatedBy { get; set; }
 
  [Associate](SuperOffice.WebApi.Data.Associate.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_UpdatedDate"&gt;&lt;/a&gt; UpdatedDate
+### <a id="SuperOffice_WebApi_Data_PersonEntity_UpdatedDate"></a> UpdatedDate
 
 Last updated date
 
@@ -843,7 +843,7 @@ public virtual DateTime UpdatedDate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_Urls"&gt;&lt;/a&gt; Urls
+### <a id="SuperOffice_WebApi_Data_PersonEntity_Urls"></a> Urls
 
 The urls related to this person.
 
@@ -855,7 +855,7 @@ public virtual EntityElement[] Urls { get; set; }
 
  [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_UsePersonAddress"&gt;&lt;/a&gt; UsePersonAddress
+### <a id="SuperOffice_WebApi_Data_PersonEntity_UsePersonAddress"></a> UsePersonAddress
 
 True if the person's address should be used as mailing address, instead of the contact's address.
 
@@ -867,9 +867,9 @@ public virtual bool UsePersonAddress { get; set; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_UserDefinedFields"&gt;&lt;/a&gt; UserDefinedFields
+### <a id="SuperOffice_WebApi_Data_PersonEntity_UserDefinedFields"></a> UserDefinedFields
 
-Deprecated: Use &lt;xref href="SuperOffice.WebApi.Data.PersonEntity.CustomFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instead.
+Deprecated: Use <xref href="SuperOffice.WebApi.Data.PersonEntity.CustomFields" data-throw-if-not-resolved="false"></xref> instead.
 Dictionary of user defined field data.
 The key string is the ProgId of the UdefField, or if the ProgId is empty it is a string of the format "SuperOffice:[UdefFieldIdentity]", e.g. "SuperOffice:1234"
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
@@ -882,7 +882,7 @@ public virtual StringDictionary UserDefinedFields { get; set; }
 
  [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_UserInfo"&gt;&lt;/a&gt; UserInfo
+### <a id="SuperOffice_WebApi_Data_PersonEntity_UserInfo"></a> UserInfo
 
 Information about the user if this person is a user.  If IsAssociate (e.g. is user is true) the UserInfo will be provided.
 
@@ -894,7 +894,7 @@ public virtual UserInfo UserInfo { get; set; }
 
  [UserInfo](SuperOffice.WebApi.Data.UserInfo.md)
 
-### &lt;a id="SuperOffice_WebApi_Data_PersonEntity_UtmParameters"&gt;&lt;/a&gt; UtmParameters
+### <a id="SuperOffice_WebApi_Data_PersonEntity_UtmParameters"></a> UtmParameters
 
 Utm parameters when creating this person, readonly fields
 

@@ -1,7 +1,7 @@
 ---
 title: SaleFiltered
 description: Sale archive provider for the Contact/Project card
-keywords: ['SaleFiltered archive provider']
+keywords: SaleFiltered archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -1156,7 +1156,7 @@ Sale archive provider for the Contact/Project card
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleFiltered?$select=nextDueDate,amountWeightedInBaseCurrency,person/personId,person/personRegisteredBy,person/restrictionAddress/formattedAddress
+GET /api/v1/archive/SaleFiltered?$select=person/personUrl/URLAddress,person/personAssociate/simultaneousEjUser,contact/contactNoMail,contact/email/emailLastSent,project/registeredDate
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

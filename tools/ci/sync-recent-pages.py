@@ -11,13 +11,23 @@ context on a homepage list). This script:
   1. Auto-detects brand-new pages added by this PR under `en/` or
      `integrations/` only (not the whole repo -- reference trees like
      `database/`/`automation/crmscript/reference/` regenerate too often to
-     be a useful "what's new" signal) and adds them to the list.
+     be a useful "what's new" signal) and adds them to the list, except
+     anything under GENERATED_TREE_PREFIXES (see below).
   2. Stamps `since` with today's date on any entry that's missing it
      (a freshly hand-added or auto-detected entry), and on any *pinned*
      entry whose own target file was touched by this PR -- pinned pages
      (e.g. the current release notes) should read as current, not stale,
      whenever their content actually changes.
-  3. Drops any entry whose target has `generated: true` frontmatter.
+  3. Drops any entry whose target has `generated: true` frontmatter, or
+     whose path falls under GENERATED_TREE_PREFIXES. The frontmatter
+     check alone isn't reliable: some generated reference trees (e.g.
+     `en/api/reference/webapi/`, `en/api/reference/restful/`) carry no
+     frontmatter block at all, so `generated: true` can never fire for
+     them (see #338, where hundreds of freshly-added WebAPI class-reference
+     pages under `en/api/reference/webapi/` -- frontmatter-less, "Added"
+     by that PR, and matching the plain `en/` auto-detect prefix -- wiped
+     out the homepage's curated "New content" list with raw generated
+     page paths as titles).
   4. Drops non-pinned entries whose `since` is more than 120 days old.
   5. Caps the combined list at 7: pinned entries get guaranteed slots
      (they still count against the cap); the most recent eligible
@@ -62,6 +72,18 @@ GENERATED_RE = re.compile(r"(?m)^generated:\s*true\s*$")
 MAX_TOTAL = 7
 MAX_AGE_DAYS = 120
 AUTO_DETECT_PREFIXES = ("en/", "integrations/")
+# Machine-generated reference trees -- regenerate too often, and often carry
+# no frontmatter at all, to be a useful "what's new" signal or to reliably
+# self-report via `generated: true` (see #338).
+GENERATED_TREE_PREFIXES = (
+    "en/api/reference/webapi/",
+    "en/api/reference/restful/",
+    "en/api/archive-providers/reference/",
+    "en/api/mdo-providers/reference/",
+    "en/automation/crmscript/reference/",
+    "en/automation/trigger/reference/",
+    "en/database/tables/",
+)
 DATE_FMT = "%m.%d.%Y"
 
 
@@ -204,6 +226,8 @@ def get_page_title(rel_url_path):
 
 
 def is_generated(rel_url_path):
+    if rel_url_path.strip("/").startswith(GENERATED_TREE_PREFIXES):
+        return True
     fm = read_target_frontmatter(resolve_target_file(rel_url_path))
     return bool(fm and GENERATED_RE.search(fm))
 
@@ -232,6 +256,8 @@ def get_changed_files(base_ref):
 
 def is_auto_detect_candidate(rel_file_path):
     if not rel_file_path.startswith(AUTO_DETECT_PREFIXES):
+        return False
+    if rel_file_path.startswith(GENERATED_TREE_PREFIXES):
         return False
     if "/includes/" in rel_file_path:
         return False

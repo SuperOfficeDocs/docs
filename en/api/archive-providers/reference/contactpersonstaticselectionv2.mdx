@@ -1,7 +1,7 @@
 ---
 title: ContactPersonStaticSelectionV2
 description: 
-keywords: ['ContactPersonStaticSelectionV2 archive provider']
+keywords: ContactPersonStaticSelectionV2 archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -1266,7 +1266,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/ContactPersonStaticSelectionV2?$select=registeredByFullName,contactAssociate/personId,sale/sale/description,document/documentPublish/publishedFrom,hasStoreConsent
+GET /api/v1/archive/ContactPersonStaticSelectionV2?$select=targetRelation/business,sale/associate/title,appointment/intention,appointment/cautionWarning,personSourceRelation/fullName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

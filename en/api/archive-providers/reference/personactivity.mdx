@@ -1,7 +1,7 @@
 ---
 title: PersonActivity
 description: Activity archive provider for the Person card
-keywords: ['PersonActivity archive provider']
+keywords: PersonActivity archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -16,8 +16,8 @@ Activity archive provider for the Person card
 ## Supported Entities
 | Name | Description |
 | ---- | ----- |
-|"chat"|Chat session|
 |"formSubmission"|Form submissions|
+|"chat"|Chat session|
 |"mailing"|Mailings|
 |"document"|Documents|
 |"appointment"|Follow-ups|
@@ -27,32 +27,24 @@ Activity archive provider for the Person card
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
-|chatSessionId|int|Chat session ID: Database ID of the chat session| x |
-|firstMessage|string|First message: The first message submitted in the chat| x |
-|lastMessage|string|Last message: The last message submitted in the chat| x |
-|whenRequested|datetime|Chat requested: When was this chat requested by the customer?| x |
-|whenStarted|datetime|Chat started: When was this chat started between the customer and the agent?| x |
-|whenEnded|datetime|Chat ended: When did this chat end?| x |
-|duration|timeSpan|Duration: The duration of the chat session|  |
-|timeInQueue|timeSpan|Time in queue: The time spent waiting in the queue| x |
-|queueLength|int|Queue length: Queue length when the session was requested| x |
-|rating|int|Rating: Rating of chat session| x |
-|agent|ejUser|Agent: The agent of the chat| x |
-|status|listAny|Status: Status for the chat session| x |
+|formSubmissionId|int|Form submission ID: ID of the form submission record| x |
+|formSubmissionFormId|int|Id: Id of the form| x |
+|formSubmissionName|string|Form name: Displays a descriptive text for the item| x |
+|formSubmissionStatus|listAny|Status: Status of the form submission record| x |
+|formSubmissionEmail|string|E-mail: The e-mail address of the person who submitted the form| x |
 |icon| *None* |Category: Displays the icon for an activity type| x |
 |date|date|Date: Displays start date of a follow-up / sale date of a sale| x |
+|time| *None* |Time: Time|  |
 |type|listAny|Type: Displays the type of an activity| x |
 |text|positiveString|Text: Displays a descriptive text for the item| x |
 |associateId|associate|ID: Displays the login ID of the associate who owns the activity.| x |
 |contactId|listAny|Company ID: Database ID of company| x |
 |personId|listAny|Contact ID: Database ID of the contact row| x |
+|updatedBy|associate|Updated by: The user who last updated the data| x |
 |updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
+|registeredBy|associate|Registered by: The user who registered the data| x |
 |registeredDate|date|Registered date: The date/time the data was registered in UTC.| x |
 |recordTypeText| *None* |Activity type: The type of the activity (appointment, phone call, etc)| x |
-|chatTopic/chatTopicId|int|ID: The database ID of the chat channel| x |
-|chatTopic/name|string|Name: Name| x |
-|chatTopic/description|string|Description: The description of the chat channel| x |
-|chatTopic/badgeHeader|string|Badge header: The value of the badge header for the chat channel| x |
 |associate/firstName|string|First name: Displays the contact's first name| x |
 |associate/lastName|string|Last name: Displays the contact's last name| x |
 |associate/middleName|string|Middle Name : Displays the contact's middle name.| x |
@@ -61,6 +53,7 @@ Activity archive provider for the Person card
 |associate/personId|int|Contact ID: Database ID of the contact row|  |
 |associate/mrMrs|string|Mr/Ms: Displays whether the contact is addressed as Mr or Ms| x |
 |associate/title|string|Title: Displays whether the contact is addressed as Mr or Ms| x |
+|associate/associateDbId|associate|ID| x |
 |associate/contactName|string|Owning company: Name of the company the user belongs to| x |
 |associate/contactDepartment|string|Owning department: Name of the department at the company the user belongs to| x |
 |associate/usergroup|userGroup|Primary group: The user's primary user group| x |
@@ -124,10 +117,6 @@ Activity archive provider for the Person card
 |person/supportLanguage|listAny|Preferred language: Preferred language used for reply templates and more| x |
 |person/supportAssociate|associate|Our service contact: Default service contact for this contact| x |
 |person/supportAssociateFullName|associate|Our service contact - Full name: Default service contact for this contact| x |
-
-## Supported Columns (cont.)
-| Name | Restriction | Description | OrderBy |
-| ---- | ----- | ------- | ------ |
 |person/personAssociateId|associate|Our contact: Displays our contact| x |
 |person/personAssociateFullName|associate|Our contact - Full name: Displays our contact| x |
 |person/personCategory|listAny|Category| x |
@@ -135,6 +124,10 @@ Activity archive provider for the Person card
 |person/personCategoryRank|int|!!Category rank| x |
 |person/personBusiness|listAny|Business| x |
 |person/leadStatus|listAny|Lead status| x |
+
+## Supported Columns (cont.)
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
 |person/leadstatusRank|int|!!Lead status RANK| x |
 |person/personDeletedDate|datetime|Deleted date: Deleted date|  |
 |person/hasCompany|bool|Has company: The contact is associated with a company| x |
@@ -228,10 +221,6 @@ Activity archive provider for the Person card
 |person/personExtra/y\_rental/x\_contact|stringorPK|Rental - Renter: Company that rents equipment| x |
 |person/personExtra/y\_rental/y\_equipment/x\_name|string|Rental - Equipment - Name: Equpment name custom field. Cannot be null., show in table| x |
 |person/personExtra/y\_car/id|int|Car - id: Displays the row's primary key (y\_car)| x |
-
-## Supported Columns (cont.)
-| Name | Restriction | Description | OrderBy |
-| ---- | ----- | ------- | ------ |
 |person/personAssociate/firstName|string|First name: Displays the contact's first name| x |
 |person/personAssociate/lastName|string|Last name: Displays the contact's last name| x |
 |person/personAssociate/middleName|string|Middle Name : Displays the contact's middle name.| x |
@@ -239,6 +228,10 @@ Activity archive provider for the Person card
 |person/personAssociate/contactId|int|Company ID: Database ID of the company the user belongs to|  |
 |person/personAssociate/personId|int|Contact ID: Database ID of the contact row|  |
 |person/personAssociate/mrMrs|string|Mr/Ms: Displays whether the contact is addressed as Mr or Ms| x |
+
+## Supported Columns (cont.)
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
 |person/personAssociate/title|string|Title: Displays whether the contact is addressed as Mr or Ms| x |
 |person/personAssociate/associateDbId|associate|ID| x |
 |person/personAssociate/contactName|string|Owning company: Name of the company the user belongs to| x |
@@ -332,10 +325,6 @@ Activity archive provider for the Person card
 |contact/registeredBy|associate|Registered by: The user who registered the data| x |
 |contact/registeredByFullName|associate|Registered by - Full name: The user who registered the data| x |
 |contact/registeredDate|date|Registered date: The date/time the data was registered in UTC.| x |
-
-## Supported Columns (cont.)
-| Name | Restriction | Description | OrderBy |
-| ---- | ----- | ------- | ------ |
 |contact/contactSource|listAny|Source: Source (Company)| x |
 |contact/contactDeleted|bool|Deleted: Deleted| x |
 |contact/phone/formattedNumber|string|Phone : Displays phone number|  |
@@ -343,6 +332,10 @@ Activity archive provider for the Person card
 |contact/deletedDate|datetime|Deleted date: Deleted date|  |
 |contact/mainContact| *None* |Main contact: Main contact for this company| x |
 |contact/forceCompany|bool|Dummy: Dummy|  |
+
+## Supported Columns (cont.)
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
 |contact/contactPhone/formattedNumber|string|Telephone - Phone: Displays phone number|  |
 |contact/contactPhone/description|string|Telephone - Description: Phone number description| x |
 |contact/contactFax/formattedNumber|string|Fax - Phone: Displays phone number|  |
@@ -436,10 +429,6 @@ Activity archive provider for the Person card
 |contact/contactUdef/SuperOffice:5|unlimitedDate|companyunlimiteddate: tooltipunlimiteddate| x |
 |contact/contactUdef/SuperOffice:6|bool|companycheckbox| x |
 |contact/contactUdef/SuperOffice:7|listAny|companydropdownlistbox| x |
-
-## Supported Columns (cont.)
-| Name | Restriction | Description | OrderBy |
-| ---- | ----- | ------- | ------ |
 |contact/contactUdef/SuperOffice:8|decimal|companydecimal| x |
 |contact/contactUdef/SuperOffice:9|string|page1saleonly| x |
 |contact/contactUdef/SuperOffice:10|string|page1marketingonly| x |
@@ -447,6 +436,10 @@ Activity archive provider for the Person card
 |contact/contactUdef/SuperOffice:12|listAny|Udlist one: Static tooltip for udlist one| x |
 |contact/contactUdef/SuperOffice:13|listAny|Udlist two: Static tooltip for udlist two| x |
 |contact/contactExtra/x\_contact\_integer|int|Extra Integer: Custom integer field| x |
+
+## Supported Columns (cont.)
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
 |contact/contactExtra/x\_contact\_hidden\_integer|int|Extra hidden integer: Custom integer field - hidden| x |
 |contact/contactExtra/x\_contact\_default\_integer|int|Extra Default Integer: Custom integer field with default value 123.| x |
 |contact/contactExtra/x\_contact\_float|decimal|Extra Float: Custom float field with 3 decimals| x |
@@ -493,15 +486,22 @@ Activity archive provider for the Person card
 |contact/saintIntention|listAny|Intention|  |
 |contact/saintTicketStatus|listAny|Status|  |
 |contact/saintTicketCategory|listAny|Category|  |
-|formSubmissionId|int|Form submission ID: ID of the form submission record| x |
-|formSubmissionFormId|int|Id: Id of the form| x |
-|formSubmissionName|string|Form name: Displays a descriptive text for the item| x |
-|formSubmissionStatus|listAny|Status: Status of the form submission record| x |
-|formSubmissionEmail|string|E-mail: The e-mail address of the person who submitted the form| x |
-|time| *None* |Time: Time|  |
-|updatedBy|associate|Updated by: The user who last updated the data| x |
-|registeredBy|associate|Registered by: The user who registered the data| x |
-|associate/associateDbId|associate|ID| x |
+|chatSessionId|int|Chat session ID: Database ID of the chat session| x |
+|firstMessage|string|First message: The first message submitted in the chat| x |
+|lastMessage|string|Last message: The last message submitted in the chat| x |
+|whenRequested|datetime|Chat requested: When was this chat requested by the customer?| x |
+|whenStarted|datetime|Chat started: When was this chat started between the customer and the agent?| x |
+|whenEnded|datetime|Chat ended: When did this chat end?| x |
+|duration|timeSpan|Duration: The duration of the chat session|  |
+|timeInQueue|timeSpan|Time in queue: The time spent waiting in the queue| x |
+|queueLength|int|Queue length: Queue length when the session was requested| x |
+|rating|int|Rating: Rating of chat session| x |
+|agent|ejUser|Agent: The agent of the chat| x |
+|status|listAny|Status: Status for the chat session| x |
+|chatTopic/chatTopicId|int|ID: The database ID of the chat channel| x |
+|chatTopic/name|string|Name: Name| x |
+|chatTopic/description|string|Description: The description of the chat channel| x |
+|chatTopic/badgeHeader|string|Badge header: The value of the badge header for the chat channel| x |
 |mailingId|int|ID: Displays the ID of the mailing| x |
 |mailingFolderId|int|Hierarchy ID: Foreign key to hierarchy table| x |
 |mailingSelectionId|int|Selection ID: The database ID of the selection| x |
@@ -1304,7 +1304,7 @@ Activity archive provider for the Person card
 ## Sample
 
 ```http!
-GET /api/v1/archive/PersonActivity?$select=person/personAssociate/middleName,contact/updatedBy,mailingAddr/contact/postAddress/line2,mailingAddr/contact/contactUdef/SuperOffice:9,mailingAddr/contact/LastDoBySale
+GET /api/v1/archive/PersonActivity?$select=person/personAssociate/personEmail,person/correspondingAssociate/fullName,person/correspondingAssociate/personId,contact/mainContact,contact/saintSaleStatus
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

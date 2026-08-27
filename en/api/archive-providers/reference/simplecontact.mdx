@@ -1,7 +1,7 @@
 ---
 title: SimpleContact
 description: 
-keywords: ['SimpleContact archive provider']
+keywords: SimpleContact archive provider
 generated: true
 content_type: reference
 envir: onsite, online
@@ -363,7 +363,7 @@ This provider name is implemented by the class <see cref="T:SuperOffice.CRM.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/SimpleContact?$select=forceCompany,streetAddress/formattedAddress,contactSupportPerson/personExtra/y_rental/x_end
+GET /api/v1/archive/SimpleContact?$select=updatedBy,streetAddress/line3,contactUdef/SuperOffice:5
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

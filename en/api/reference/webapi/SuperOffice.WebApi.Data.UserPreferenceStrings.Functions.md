@@ -440,6 +440,31 @@ public const string PeriodicCheckInterval = "PeriodicCheckInterval"
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
+### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Functions_RecentNavigationLimit"></a> RecentNavigationLimit
+
+Maximum number of Recent navigation entries kept per associate and client. Clamped to 5..50.
+<p></p>Control type: Number, access: Admin, Crm, Admin users, Wizard
+
+```csharp
+public const string RecentNavigationLimit = "RecentNavigationLimit"
+```
+
+#### Field Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Functions_RecentNavigationLimit_HardDefault"></a> RecentNavigationLimit\_HardDefault
+
+Hard default for RecentNavigationLimit
+
+```csharp
+public const int RecentNavigationLimit_HardDefault = 25
+```
+
+#### Field Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
 ### <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Functions_RemoveInvitationDuplicates"></a> RemoveInvitationDuplicates
 
 This ensures that invitations are displayed only once in the Activities section tab in CRM (Default = YES).
