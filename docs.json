@@ -33,7 +33,7 @@
   "icons": {
     "library": "fontawesome"
   },
-  "favicon": "/favicon.ico",
+  "favicon": "/favicon.svg",
   "styling": {
     "eyebrows": "breadcrumbs"
   },
