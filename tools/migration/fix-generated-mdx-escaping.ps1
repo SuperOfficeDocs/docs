@@ -11,13 +11,20 @@
     written straight into prose breaks the build. See SuperOfficeDocs/docs#314.
 
     Unlike fix-archive-providers-mdx.ps1 (which patches a fixed list of previously-seen string
-    bugs), this script is a generic sanitizer: it first converts DocFx-style heading anchors
-    (raw '<a id="x"></a>' or already-HTML-escaped '&lt;a id="x"&gt;&lt;/a&gt;', both possibly
-    using 'name' instead of 'id') straight to Mintlify's native '{#x}' heading-anchor syntax and
-    protects those lines from everything below - see SuperOfficeDocs/docs#351, where the escaping
-    pass itself (step 2 below, with no heading-anchor exception) had collaterally mangled every
-    anchor on the files it touched. Then, over the remaining prose (with fenced code blocks and
-    inline code spans also protected):
+    bugs), this script is a generic sanitizer: it first strips DocFx-style heading anchors (raw
+    '<a id="x"></a>' or already-HTML-escaped '&lt;a id="x"&gt;&lt;/a&gt;', both possibly using
+    'name' instead of 'id') - or an already-converted trailing '{#x}' from a prior run - down to
+    a bare sentinel token, re-adding Mintlify's native '{#x}' heading-anchor syntax only after
+    every escaping pass below has run. The heading TEXT itself (e.g. a method signature like
+    'ProgressListener(Action<string, float>, ...)') is deliberately left in the content stream
+    rather than swallowed into the sentinel, so it still passes through the same angle/brace
+    escaping as ordinary prose - see SuperOfficeDocs/docs#360, where an earlier version of this
+    function protected the ENTIRE heading line (anchor tag plus heading text) as one opaque
+    placeholder: fine for a heading with no other angle brackets, but for a heading whose text
+    contains generic-type angle brackets, those brackets bypassed escaping entirely and stayed
+    raw, breaking the MDX build on freshly ADO-regenerated content that hadn't been escaped yet
+    (#351's own fix only ever tested against already-escaped input, where the bug is invisible).
+    Then, over the remaining prose (with fenced code blocks and inline code spans also protected):
       1. Strips '<!-- ... -->' HTML comments (generator artifacts, not meant to render).
       2. Escapes literal '<' and '>' to '&lt;'/'&gt;'.
       3. Escapes literal '{' and '}' to '\{'/'\}'.
@@ -57,51 +64,39 @@ if (-not $Files) {
 # Matches a DocFx-style heading anchor (raw or already-HTML-escaped) on a heading line, e.g.
 #   ### <a id="x"></a> Heading text
 #   ### &lt;a id="x"&gt;&lt;/a&gt; Heading text
-# Converted to Mintlify's native '### Heading text {#x}' before the escaping pass below ever
-# sees it - see #351.
-# Group 3 excludes \r/\n explicitly (rather than relying on '.' + TrimEnd to drop it) and group
-# 4 captures an optional trailing \r verbatim - files here have CRLF line endings, and .NET's
-# '$' in (?m) mode matches just before '\n', so a greedy '(.*)$' silently swallows the '\r' into
-# group 3; TrimEnd() then discards it, quietly flipping that one line to LF and leaving every
-# other line CRLF. Capturing and re-emitting group 4 keeps the original line terminator intact.
-$HeadingAnchorPattern = '(?m)^(#{1,6})[ \t]*(?:<a|&lt;a)\s+(?:id|name)="([^"]+)"\s*(?:></a>|&gt;&lt;/a&gt;)[ \t]*([^\r\n]*?)[ \t]*(\r?)$'
+# Group 3 (heading text) is deliberately left in the output, not swallowed - see #360. Group 4
+# captures an optional trailing \r verbatim - files here have CRLF line endings, and .NET's '$'
+# in (?m) mode matches just before '\n', so a greedy match would otherwise silently swallow the
+# '\r', quietly flipping that one line to LF and leaving every other line CRLF.
+$OldAnchorPattern = '(?m)^(#{1,6})[ \t]*(?:<a|&lt;a)\s+(?:id|name)="([^"]+)"\s*(?:></a>|&gt;&lt;/a&gt;)[ \t]*([^\r\n]*?)[ \t]*(\r?)$'
 
-function Protect-HeadingAnchors {
-    # Replaces each matching heading line with a placeholder holding its FINAL '{#id}' text,
-    # so the '{'/'}' it contains is invisible to the brace-escaping pass below - otherwise that
-    # pass immediately re-escapes the anchor syntax we just produced into '\{#id\}', which
-    # Mintlify's custom-heading-ID plugin no longer recognizes. Restored verbatim in
-    # Restore-HeadingAnchors, after all escaping is done.
+# Matches a heading already in Mintlify's native '### Heading text {#x}' form (e.g. from a prior
+# run of this script) - same group shape as above (heading text kept, not swallowed) so a
+# heading text containing raw or escaped angle brackets still gets a chance to pass through the
+# escaping pipeline below on a re-run, instead of being shielded verbatim forever once converted.
+$NewAnchorPattern = '(?m)^(#{1,6})[ \t]+(.*?)[ \t]*\{#([^{}\r\n]+)\}[ \t]*(\r?)$'
+
+function Extract-HeadingIds {
+    # Strips the anchor tag / trailing '{#id}' down to a bare '@@MDXHID_id@@' sentinel at the
+    # end of the line, leaving the heading TEXT in place in the content stream so it flows
+    # through Protect-CodeSpans and the angle/brace escaping passes below like ordinary prose -
+    # see #360. The sentinel itself contains no '<'/'>'/'{'/'}' so it can't be touched by those
+    # passes; Restore-HeadingIds turns it back into '{#id}' only after they've all run.
     param([string]$Content)
-    $store = [System.Collections.Generic.List[string]]::new()
-
-    # Convert old DocFx-style anchors to {#id}, storing the final line text for later restore.
-    $protectedContent = [regex]::Replace($Content, $HeadingAnchorPattern, {
+    $Content = [regex]::Replace($Content, $OldAnchorPattern, {
         param($m)
-        $final = "$($m.Groups[1].Value) $($m.Groups[3].Value) {#$($m.Groups[2].Value)}$($m.Groups[4].Value)"
-        $store.Add($final)
-        "@@MDXANCHOR_$($store.Count - 1)@@"
+        "$($m.Groups[1].Value) $($m.Groups[3].Value) @@MDXHID_$($m.Groups[2].Value)@@$($m.Groups[4].Value)"
     })
-
-    # Also shield headings that are ALREADY '{#id}' form (e.g. a prior run of this script) from
-    # the brace-escaping pass below - without this, re-running against already-fixed content
-    # (which happens whenever one of these files needs an unrelated future escaping fix) would
-    # re-escape the '{#id}' syntax itself into '\{#id\}', silently un-doing #351's fix.
-    $protectedContent = [regex]::Replace($protectedContent, '(?m)^(#{1,6}[ \t].*\{#[^{}]+\})[ \t]*(\r?)$', {
+    $Content = [regex]::Replace($Content, $NewAnchorPattern, {
         param($m)
-        $store.Add("$($m.Groups[1].Value)$($m.Groups[2].Value)")
-        "@@MDXANCHOR_$($store.Count - 1)@@"
+        "$($m.Groups[1].Value) $($m.Groups[2].Value) @@MDXHID_$($m.Groups[3].Value)@@$($m.Groups[4].Value)"
     })
-
-    return @{ Content = $protectedContent; Store = $store }
+    return $Content
 }
 
-function Restore-HeadingAnchors {
-    param([string]$Content, [System.Collections.Generic.List[string]]$Store)
-    return [regex]::Replace($Content, '@@MDXANCHOR_(\d+)@@', {
-        param($m)
-        $Store[[int]$m.Groups[1].Value]
-    })
+function Restore-HeadingIds {
+    param([string]$Content)
+    return [regex]::Replace($Content, '(?m)[ \t]*@@MDXHID_([^@\r\n]+)@@[ \t]*(\r?)$', ' {#$1}$2')
 }
 
 # Matches fenced code blocks (```...```) and inline code spans (`...`) so their content is
@@ -149,9 +144,9 @@ foreach ($relPath in $Files) {
     $original = Get-Content -LiteralPath $file -Raw -Encoding UTF8
     $content = $original
 
-    $anchorProtection = Protect-HeadingAnchors -Content $content
-    $content = $anchorProtection.Content
-    $summary.AnchorsConverted += $anchorProtection.Store.Count
+    $anchorCount = ([regex]::Matches($content, $OldAnchorPattern)).Count + ([regex]::Matches($content, $NewAnchorPattern)).Count
+    $content = Extract-HeadingIds -Content $content
+    $summary.AnchorsConverted += $anchorCount
 
     $protection = Protect-CodeSpans -Content $content
     $prose = $protection.Content
@@ -179,7 +174,7 @@ foreach ($relPath in $Files) {
     }
 
     $content = Restore-CodeSpans -Content $prose -Store $protection.Store
-    $content = Restore-HeadingAnchors -Content $content -Store $anchorProtection.Store
+    $content = Restore-HeadingIds -Content $content
 
     if ($content -ne $original) {
         $summary.FilesChanged++
