@@ -391,7 +391,7 @@ Contains authorization scheme and parameter values.
 
 Authorization header.
 
-### ParseResponse<T\>\(HttpResponseMessage\) {#SuperOffice_WebApi_Agents_AgentBase_ParseResponse__1_System_Net_Http_HttpResponseMessage_}
+### ParseResponse&lt;T\&gt;\(HttpResponseMessage\) {#SuperOffice_WebApi_Agents_AgentBase_ParseResponse__1_System_Net_Http_HttpResponseMessage_}
 
 ```csharp
 protected Task<T> ParseResponse<T>(HttpResponseMessage response)

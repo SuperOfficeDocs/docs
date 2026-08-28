@@ -36,7 +36,7 @@ public class ProgressListener : IProgressListener
 public ProgressListener()
 ```
 
-### ProgressListener\(Action<string, float\>, Action<string, Exception\>\) {#SuperOffice_WebApi_ProgressListener__ctor_System_Action_System_String_System_Single__System_Action_System_String_System_Exception__}
+### ProgressListener\(Action&lt;string, float\&gt;, Action&lt;string, Exception\&gt;\) {#SuperOffice_WebApi_ProgressListener__ctor_System_Action_System_String_System_Single__System_Action_System_String_System_Exception__}
 
 ```csharp
 public ProgressListener(Action<string, float> onProgress, Action<string, Exception> onError)
