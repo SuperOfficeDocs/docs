@@ -53,12 +53,12 @@ SuperOffice Mail Link (latest version) is compatible with SuperOffice CRM Online
 * [Create emails from SuperOffice CRM (legacy)][5]
 * [Set options][4]
 
-[2]: ./archive
-[3]: ./manage-senders
-[7]: ./archive-on-contact
-[4]: ./settings
-[5]: ./create-in-superoffice
-[6]: ./create-in-outlook
+[2]: /integrations/mail-link/archive
+[3]: /integrations/mail-link/manage-senders
+[7]: /integrations/mail-link/archive-on-contact
+[4]: /integrations/mail-link/settings
+[5]: /integrations/mail-link/create-in-superoffice
+[6]: /integrations/mail-link/create-in-outlook
 
 [img3]: /media/loc/en/integrations/mail-link/superoffice-button.png
 [img4]: /media/loc/en/integrations/mail-link/archive-to-superoffice-crm.png
