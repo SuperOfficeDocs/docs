@@ -56,5 +56,5 @@ SuperOffice CRM integreres med sertifiserte e-postsystemer og gjør det mulig å
 
 Oppdag hele potensialet til SuperOffice CRM. Bruk våre veiledninger for å komme i gang, eller gå til et spesifikt emne i menyen for å lære mer. Trykk på **F1** i systemet ditt for hjelp tilpasset din versjon og ditt språk.
 
-[1]: ./main-screen/navigator
-[img1]: ../../../media/loc/en/learn/getstarted-personalsettings.png
+[1]: /no/learn/getting-started/main-screen/navigator
+[img1]: /media/loc/en/learn/getstarted-personalsettings.png

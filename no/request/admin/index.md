@@ -37,20 +37,20 @@ I denne delen kan du konfigurere innstillingene for Service for å skreddersy sy
 * [Systemdesign][15]
 * [Profil][16] - endringer her vises bare i det gamle Service-modulet
 
-[4]: ./category/index
-[5]: ./priority/index
-[6]: ./status/index
-[8]: ./system-templates
-[9]: ./type/index
-[17]: ./relation-rules
-[10]: ../../localization/learn/customer-languages
-[11]: ../../admin/preferences/service-settings
-[12]: ../../admin/user-management/role/index
-[13]: ../../admin/user-management/index
-[7]: ../learn/index#available
-[15]: ../../ui/blogic/learn/index
-[16]: ../../ui/blogic/learn/profiles/index
+[4]: /no/request/admin/category/index
+[5]: /no/request/admin/priority/index
+[6]: /no/request/admin/status/index
+[8]: /no/request/admin/system-templates
+[9]: /no/request/admin/type/index
+[17]: /no/request/admin/relation-rules
+[10]: /no/localization/learn/customer-languages
+[11]: /no/admin/preferences/service-settings
+[12]: /no/admin/user-management/role/index
+[13]: /no/admin/user-management/index
+[7]: /no/request/learn/index#available
+[15]: /no/ui/blogic/learn/index
+[16]: /no/ui/blogic/learn/profiles/index
 
-[21]: ../../customer-center/learn/index
-[22]: ../../email/admin/mailbox/index
-[23]: ../../chat/admin/index
+[21]: /no/customer-center/learn/index
+[22]: /no/email/admin/mailbox/index
+[23]: /no/chat/admin/index

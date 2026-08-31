@@ -57,7 +57,7 @@ For å sikre at du kan kommunisere med kundene dine på deres eget språk (der d
 1. [Legg til og definer dokumentmalen][6] i Innstillinger og vedlikehold.
 1. Gjør dokumentmalen tilgjengelig for de [ønskede brukergruppene][5].
 
-[1]: ./template-variables
-[2]: ../admin/update-template
-[6]: ../admin/link-template
-[5]: ../../../admin/lists/user-group-filtering
+[1]: /no/document/templates/learn/template-variables
+[2]: /no/document/templates/admin/update-template
+[6]: /no/document/templates/admin/link-template
+[5]: /no/admin/lists/user-group-filtering

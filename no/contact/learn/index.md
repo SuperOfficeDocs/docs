@@ -55,16 +55,16 @@ Nederst i **Person**-bildet gir [detaljkort][16] rask tilgang til informasjon so
 | [Prosjekter][14] | Viser alle prosjekter der den aktive personen er medlem. |
 | [Relasjoner][15] | Viser koblinger mellom denne personen og andre personer eller firmaer. |
 
-[2]: ./create
-[8]: ../../company/learn/index
-[11]: ../../learn/section-tabs/activities-tab
-[12]: ../../learn/section-tabs/sales-tab
-[13]: ../../learn/section-tabs/requests-tab
-[14]: ../../learn/section-tabs/projects-tab
-[15]: ../../learn/section-tabs/relations-tab
-[16]: ../../learn/section-tabs/index
-[19]: ../../custom-objects/learn/more-tab
-[20]: ../../learn/basics/notes
-[21]: ../../customization/web-panels/admin/index#www
-[22]: ../../erp/learn/index
-[img3]: ../../../media/loc/en/contact/contact-screen.png
+[2]: /no/contact/learn/create
+[8]: /no/company/learn/index
+[11]: /no/learn/section-tabs/activities-tab
+[12]: /no/learn/section-tabs/sales-tab
+[13]: /no/learn/section-tabs/requests-tab
+[14]: /no/learn/section-tabs/projects-tab
+[15]: /no/learn/section-tabs/relations-tab
+[16]: /no/learn/section-tabs/index
+[19]: /no/custom-objects/learn/more-tab
+[20]: /no/learn/basics/notes
+[21]: /no/customization/web-panels/admin/index#www
+[22]: /no/erp/learn/index
+[img3]: /media/loc/en/contact/contact-screen.png
