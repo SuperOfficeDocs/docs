@@ -43,9 +43,13 @@ if (-not (Test-Path $docsFile)) {
 Write-Host "Processing: $docsFile" -ForegroundColor Cyan
 
 # ── read docs.json ───────────────────────────────────────────
-$docs     = Get-Content $docsFile -Raw | ConvertFrom-Json
-$footer   = $docs.footer
-$logoHref = $docs.logo.href
+$docs   = Get-Content $docsFile -Raw | ConvertFrom-Json
+$footer = $docs.footer
+
+# The footer brand link intentionally points at the marketing site, not
+# docs.json's logo.href (which is "/" for internal navbar navigation).
+$logoHref  = 'https://www.superoffice.com'
+$logoLabel = 'www.superoffice.com'
 
 # ── brand SVG icon filenames (stored in /logo/social-*.svg) ──
 # X/Twitter excluded — not in the 2026 brand asset set.
@@ -91,7 +95,7 @@ $mdx = @"
 <div id="custom-mode-footer">
   <div id="custom-mode-footer-inner">
 
-    <a href="$logoHref" id="custom-mode-footer-brand" aria-label="SuperOffice home">
+    <a href="$logoHref" id="custom-mode-footer-brand" aria-label="$logoLabel">
       <img src="/logo/superoffice-light.svg" className="cmf-logo-light" alt="SuperOffice" />
       <img src="/logo/superoffice-dark.svg"  className="cmf-logo-dark"  alt="SuperOffice" />
     </a>
