@@ -58,5 +58,5 @@ SuperOffice CRM integrerer med certificerede e-mailsystemer og giver dig mulighe
 
 Opdag det fulde potentiale af SuperOffice CRM. Brug vores trin-for-trin vejledninger til at komme i gang, eller spring direkte til et specifikt emne i menuen for at lære mere. Tryk på **F1** i dit system for at få hjælp tilpasset din version og dit sprog.
 
-[1]: ./main-screen/navigator
-[img1]: ../../../media/loc/en/learn/contact-screen-with-week.png
+[1]: /da/learn/getting-started/main-screen/navigator
+[img1]: /media/loc/en/learn/contact-screen-with-week.png

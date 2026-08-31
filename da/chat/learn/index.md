@@ -85,8 +85,8 @@ Her kan du matche kunden i chatten med en eksisterende kontakt i SuperOffice, el
 Hvis kunden findes i SuperOffice, kan du vise kontaktinformation, sager, salg, opfølgninger og tidligere chat-sessioner, der er blevet registreret.
 
 [1]: ../../faq/learn/index
-[3]: ../../knowledge-base/learn/reply-templates/index
-[4]: ./respond
-[11]: ./create-request
-[12]: ./transfer-to-agent
-[img1]: ../../../media/loc/en/chat/10-chat-mainpage.png
+[3]: /da/knowledge-base/learn/reply-templates/index
+[4]: /da/chat/learn/respond
+[11]: /da/chat/learn/create-request
+[12]: /da/chat/learn/transfer-to-agent
+[img1]: /media/loc/en/chat/10-chat-mainpage.png
