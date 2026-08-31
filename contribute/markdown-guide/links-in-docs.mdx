@@ -60,11 +60,13 @@ Two different things carry a link target in this repo: **markdown links** (`[tex
 
 `[link text](../folder/page)`
 
-Relative paths like these are the right default as long as both pages stay within the same main topic: the whole `en/developer-portal/` tree, the whole `de/company/` tree, this whole `contribute/` tree, and so on. Two patterns worth naming directly:
-
-* **The parent folder's own landing page** is `../index`: the same "page in the parent folder" pattern above, just naming its `index`.
+Relative paths like these are the right default as long as both pages stay within the same main topic: the whole `en/developer-portal/` tree, the whole `de/company/` tree, this whole `contribute/` tree, and so on. One pattern worth naming directly:
 
 * **A self-contained generated reference tree** (`en/database/tables/`, the archive-provider/MDO-provider reference) stays relative by its own generator's convention: see the note below.
+
+<Warning>
+**Links authored ON an `index.md`/`index.mdx` page must always be root-relative, even within the same topic.** A page built from an `index.md`/`index.mdx` file is served at its folder's own bare path with no trailing slash (`release-notes/12/index.mdx` serves at `/release-notes/12`). Because of that, a relative link written on that page resolves against the *parent* of its own folder, not against the folder itself: `./page` written on `release-notes/12/index.mdx` resolves to `/release-notes/page`, not `/release-notes/12/page`, and `../index` resolves to `/index`, not `/release-notes/index`. This is the opposite of what the relative-within-topic rule above assumes, and it bit real production links (see [issue #375][2]). Write `/release-notes/12/page` or `/release-notes/index` instead. Regular (non-index) pages aren't affected. This applies to both markdown links and HTML `href` values.
+</Warning>
 
 **Link to an absolute path beginning at the root of the repository:**
 
@@ -88,7 +90,7 @@ The Guides tab (the translated User Guide) is authored as a single cohesive topi
 
 * **Downloads are always root-relative.** The *downloads* folder is a single shared location at the repository root, not part of any topic tree: see [Link to download a file](#link-to-download-a-file) below.
 
-* **Watch the `index.mdx` resolution gotcha.** Raw `<a>`/`Card` hrefs show up most often on landing/index pages (built from HTML block elements rather than a markdown list). A relative href on an `index.mdx` file resolves against the folder *containing* that file, so `learn/create` written on `company/index.mdx` means `company/learn/create`, not `company/index/learn/create`. Same resolution rule as any other page, but easiest to get wrong here since landing pages so often link to their own child pages.
+* **The `index.mdx` resolution gotcha above applies here too, and shows up most often on this kind of link.** Raw `<a>`/`Card` hrefs are common on landing/index pages (built from HTML block elements rather than a markdown list) — use root-relative hrefs on any `index.md`/`index.mdx` page, per the callout above.
 
 * **`mode: "custom"` category-landing `index.mdx` pages always use root-relative hrefs, regardless of topic locality.** This overrides the relative-within-topic rule above for these specific files (`company/index.mdx`, `sale/index.mdx`, `learn/index.mdx`, and the rest of the Guides-tab hub pages, in every language). Don't convert their hrefs to relative even when linking within the same topic.
 
@@ -175,3 +177,4 @@ Certain file types don't play well when the user tries to download from a browse
 Currently not supported for SuperOfficeDocs.
 
 [1]: https://www.mintlify.com/docs/create/text#custom-heading-ids
+[2]: https://github.com/SuperOfficeDocs/docs/issues/375
