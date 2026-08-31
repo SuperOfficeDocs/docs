@@ -146,12 +146,12 @@ Entities such as Contact, Person, and Sale represent business objects. The main 
 An entity is suitable for **one-at-a-time work**. Each entity will load its sub-objects greedily, so loading an entity will load its related data in one big SELECT. Entity collections should be used with care, since accessing a sub-entity of an item in the collection in a loop may trigger an extra SELECT for each item in the collection.
 
 [1]: ../rows/index
-[2]: ../overview/netserver
+[2]: /en/api/overview/netserver
 [3]: ../rows/index#tableinfo-and-fieldinfo
-[4]: ./get-entity
-[6]: ./create-entity
-[8]: ./update-entity
-[10]: ./update-entity
-[12]: ./collections
+[4]: /en/api/entities/get-entity
+[6]: /en/api/entities/create-entity
+[8]: /en/api/entities/update-entity
+[10]: /en/api/entities/update-entity
+[12]: /en/api/entities/collections
 
 [img4]: /media/loc/en/api/entities/persontableinfo.gif

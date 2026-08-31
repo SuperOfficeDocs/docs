@@ -72,8 +72,8 @@ new-installation
 
 [Previous][11] | [Next][12] | [Back to guide][13]
 
-[2]: ../../install/database/crmsetup-and-crmtask
+[2]: /en/onsite/install/database/crmsetup-and-crmtask
 [4]: https://license.superoffice.com
-[11]: ../service/prepare
-[12]: ../service/index
-[13]: ../guide
+[11]: /en/onsite/install/service/prepare
+[12]: /en/onsite/install/service/index
+[13]: /en/onsite/install/guide

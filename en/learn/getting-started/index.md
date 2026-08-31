@@ -58,5 +58,5 @@ SuperOffice CRM integrates with certified email systems and allows you to call, 
 
 Discover the full potential of SuperOffice CRM. Use our how-to guides to get started, or jump to a specific topic in the menu to learn more. Press **F1** in your system for help tailored to your version and language.
 
-[1]: ./main-screen/navigator
+[1]: /en/learn/getting-started/main-screen/navigator
 [img1]: /media/loc/en/learn/contact-screen-with-week.png

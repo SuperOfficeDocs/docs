@@ -105,7 +105,7 @@ using(SoSession newSession = SoSession.Authenticate("SAL0", ""))
 }
 ```
 
-[1]: ./reference/index
-[2]: ./encoded-values
-[3]: ./how-to-query
-[4]: ./data-aggregation
+[1]: /en/api/archive-providers/reference/index
+[2]: /en/api/archive-providers/encoded-values
+[3]: /en/api/archive-providers/how-to-query
+[4]: /en/api/archive-providers/data-aggregation

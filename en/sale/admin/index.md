@@ -51,8 +51,8 @@ Have a look at the following lists, to see whether you want to change them or no
 
 These tools empower administrators to tailor sales workflows, ensuring efficiency and consistency across teams.
 
-[1]: ./create-sales-guide
-[2]: ./edit-sales-guide
-[3]: ./sale-stage
-[4]: ./sale-type
-[5]: ./add-currency
+[1]: /en/sale/admin/create-sales-guide
+[2]: /en/sale/admin/edit-sales-guide
+[3]: /en/sale/admin/sale-stage
+[4]: /en/sale/admin/sale-type
+[5]: /en/sale/admin/add-currency

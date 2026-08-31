@@ -94,11 +94,11 @@ New to the app? Here are your first steps:
 
 Already logged in? [Explore the interface][4] or [customize your settings][5].
 
-[1]: ./login
-[2]: ./set-up-email
-[3]: ./caller-id
-[4]: ./interface-guide
-[5]: ./settings
+[1]: /en/mobile/login
+[2]: /en/mobile/set-up-email
+[3]: /en/mobile/caller-id
+[4]: /en/mobile/interface-guide
+[5]: /en/mobile/settings
 [16]: https://apps.apple.com/us/app/superoffice-mobile-crm/id1516435957
 [17]: https://play.google.com/store/apps/details?id=no.superoffice.mobile&hl=no&gl=US&pli=1
 [img1]: /media/loc/en/mobile/3-screens.png

@@ -22,14 +22,14 @@ A guide to CRMScript basics.
 * [Try catch][10]
 * [Loops][11]
 
-[1]: ./syntax
-[2]: ./reserved
-[3]: ./variables
-[4]: ./operators
-[5]: ./datatypes-intro
-[6]: ./functions
-[7]: ./structs
-[8]: ./arrays
-[9]: ./conditions
-[10]: ./try-catch
-[11]: ./for-loops
+[1]: /en/automation/crmscript/fundamentals/syntax
+[2]: /en/automation/crmscript/fundamentals/reserved
+[3]: /en/automation/crmscript/fundamentals/variables
+[4]: /en/automation/crmscript/fundamentals/operators
+[5]: /en/automation/crmscript/fundamentals/datatypes-intro
+[6]: /en/automation/crmscript/fundamentals/functions
+[7]: /en/automation/crmscript/fundamentals/structs
+[8]: /en/automation/crmscript/fundamentals/arrays
+[9]: /en/automation/crmscript/fundamentals/conditions
+[10]: /en/automation/crmscript/fundamentals/try-catch
+[11]: /en/automation/crmscript/fundamentals/for-loops

@@ -14,4 +14,4 @@ redirect_from:
 
 * [Link sale to follow-up][1]
 
-[1]: ./link-sale-to-appointment
+[1]: /en/api/web-services/howto/sale/link-sale-to-appointment

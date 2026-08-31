@@ -37,7 +37,7 @@ Use the **Workflow** and **Lists** screens in **Settings and maintenance** to co
 
 These tools empower administrators to tailor project workflows, ensuring efficiency and consistency across teams.
 
-[1]: ./create-project-guide
-[2]: ./edit-project-guide
-[3]: ./project-status
-[4]: ./project-type
+[1]: /en/project/admin/create-project-guide
+[2]: /en/project/admin/edit-project-guide
+[3]: /en/project/admin/project-status
+[4]: /en/project/admin/project-type

@@ -30,5 +30,5 @@ Developers can register webhooks via the REST API or CRMScript, configure shared
 
 * [Webhooks developer guide][2]
 
-[1]: ./admin/index
-[2]: ./dev/index
+[1]: /en/automation/webhook/admin/index
+[2]: /en/automation/webhook/dev/index

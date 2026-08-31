@@ -57,7 +57,7 @@ To ensure that you can communicate with your clients in their own language (wher
 1. [Add and define the document template][6] in Settings and maintenance.
 1. [Specify user groups][5] for the document template.
 
-[1]: ./template-variables
-[2]: ../admin/update-template
-[6]: ../admin/link-template
-[5]: ../../../admin/lists/user-group-filtering
+[1]: /en/document/templates/learn/template-variables
+[2]: /en/document/templates/admin/update-template
+[6]: /en/document/templates/admin/link-template
+[5]: /en/admin/lists/user-group-filtering

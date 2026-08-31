@@ -25,6 +25,6 @@ To learn more about how to work with list `Headings` and list items visible for 
 * [List Endpoint][2]
 * [MDO Endpoint][3]
 
-[1]: ../../web-services/index
-[2]: ./listagent/index
-[3]: ./mdoagent/index
+[1]: /en/api/web-services/index
+[2]: /en/api/lists/services/listagent/index
+[3]: /en/api/lists/services/mdoagent/index

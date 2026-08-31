@@ -76,12 +76,12 @@ If you believe you have a great case for an application, navigate to the [applic
 
 [1]: /en/api/authentication/online/certificates/override-resolver
 [2]: /en/api/authentication/online/certificates/index
-[3]: ../blocked-tables
+[3]: /en/online/mirroring/blocked-tables
 [4]: https://www.nuget.org/packages/SuperOffice.Online.Mirroring
-[7]: ../order-database-mirroring
+[7]: /en/online/mirroring/order-database-mirroring
 [6]: /en/developer-portal/getting-started/get-access-to-sod
 [8]: /en/developer-portal/faq/update-app
 [10]: /en/developer-portal/create-app/index
 [11]: https://github.com/SuperOffice/devnet-database-mirroring
-[12]: ../setup-guide
-[13]: ../migrate
+[12]: /en/online/mirroring/setup-guide
+[13]: /en/online/mirroring/migrate

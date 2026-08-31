@@ -42,13 +42,13 @@ When working with documents, data will often intersect with the following entiti
 * [project][11]
 * [sale][10]
 
-[1]: ./services-create
-[2]: ./services-update
-[3]: ./services-configure-access
-[4]: ./rest-add-document-template
-[5]: ./rest-generate-document
-[10]: ../../../../sale/index
-[11]: ../../../../project/index
-[17]: ../../../../company/index
-[18]: ../../../../contact/index
-[19]: ../../../../diary/index
+[1]: /en/api/web-services/howto/document/services-create
+[2]: /en/api/web-services/howto/document/services-update
+[3]: /en/api/web-services/howto/document/services-configure-access
+[4]: /en/api/web-services/howto/document/rest-add-document-template
+[5]: /en/api/web-services/howto/document/rest-generate-document
+[10]: /en/sale/index
+[11]: /en/project/index
+[17]: /en/company/index
+[18]: /en/contact/index
+[19]: /en/diary/index

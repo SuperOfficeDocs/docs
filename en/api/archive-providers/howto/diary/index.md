@@ -15,4 +15,4 @@ redirect_from:
 
 * [Invitation Archive][1]
 
-[1]: ./invitation-archive
+[1]: /en/api/archive-providers/howto/diary/invitation-archive

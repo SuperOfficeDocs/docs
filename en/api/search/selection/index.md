@@ -52,8 +52,8 @@ Members of a specific selection can be retrieved in multiple ways:
 * [Using the SelectionProvider][2]
 * [Using services][3]
 
-[1]: ./entity/get-selection-members-entity
-[2]: ./archive/get-selection-members-provider
-[3]: ./services/get-selection-members-services
+[1]: /en/api/search/selection/entity/get-selection-members-entity
+[2]: /en/api/search/selection/archive/get-selection-members-provider
+[3]: /en/api/search/selection/services/get-selection-members-services
 
 [img1]: /media/loc/en/api/search/selection-task-menu.png

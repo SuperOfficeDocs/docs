@@ -19,6 +19,6 @@ language: en
 * [Update person entity][2]
 * [Display image from BLOB table][3]
 
-[1]: ./get-persons-from-contact-entities
-[2]: ./update-person-entity
-[3]: ./display-image-from-blob-table-entity
+[1]: /en/api/entities/howto/contact/get-persons-from-contact-entities
+[2]: /en/api/entities/howto/contact/update-person-entity
+[3]: /en/api/entities/howto/contact/display-image-from-blob-table-entity

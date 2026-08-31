@@ -21,11 +21,11 @@ As the name implies, the `List` endpoint provides access to **all lists**. The L
 * [Create a list item][7]
 * [Delete a list item][8]
 
-[1]: ./get-all-lists
-[2]: ./get-list-entity
-[3]: ./get-list-item
-[4]: ./get-list-items
-[5]: ./create-list
-[6]: ./delete-list
-[7]: ./create-list-item
-[8]: ./delete-list-item
+[1]: /en/api/lists/services/how-to/get-all-lists
+[2]: /en/api/lists/services/how-to/get-list-entity
+[3]: /en/api/lists/services/how-to/get-list-item
+[4]: /en/api/lists/services/how-to/get-list-items
+[5]: /en/api/lists/services/how-to/create-list
+[6]: /en/api/lists/services/how-to/delete-list
+[7]: /en/api/lists/services/how-to/create-list-item
+[8]: /en/api/lists/services/how-to/delete-list-item

@@ -34,9 +34,9 @@ SuperOffice EIS will periodically invoke the web services to conduct data synchr
 * [Security][2]
 * [API changes][3]
 
-[1]: ../index
-[2]: ./secure-in-online
-[3]: ./example-api
+[1]: /en/api/plugins/erp-connectors/index
+[2]: /en/api/plugins/erp-connectors/online/secure-in-online
+[3]: /en/api/plugins/erp-connectors/online/example-api
 
 [img1]: /media/loc/en/api/plugins/architecture-simplified.png
 [img2]: /media/loc/en/api/plugins/editsyncconnector.png

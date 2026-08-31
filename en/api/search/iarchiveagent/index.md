@@ -28,4 +28,4 @@ Activity Archive is unique compared to the other archives provided by NetServer 
 
 It should be noted that specific archive providers such as `Sales` do not make use of the filter settings since they assume that the outer archive class either the `ContactActivityArchiveProvider` or `ProjectActivityArchiveProvider` takes care of it.
 
-[1]: ./iarchiveagent
+[1]: /en/api/search/iarchiveagent/iarchiveagent

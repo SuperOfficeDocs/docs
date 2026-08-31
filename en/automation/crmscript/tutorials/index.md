@@ -18,12 +18,12 @@ content_type: howto
 * [Creating a trigger for the outbox][8]
 * [Open new browser window from task menu][9]
 
-[1]: ./creating-lots-of-random-requests
-[2]: ./script-based-selections
-[3]: ./udef-agent
-[4]: ./build-custom-rest-api-methods
-[5]: ./using-crmscript-statlib-for-reporting
-[6]: ./waiting-for-customer-status-with-reminders
-[7]: ./using-dialogs-in-triggers
-[8]: ./crmscript-trigger-outbox
-[9]: ./open-external-company-from-task-menu
+[1]: /en/automation/crmscript/tutorials/creating-lots-of-random-requests
+[2]: /en/automation/crmscript/tutorials/script-based-selections
+[3]: /en/automation/crmscript/tutorials/udef-agent
+[4]: /en/automation/crmscript/tutorials/build-custom-rest-api-methods
+[5]: /en/automation/crmscript/tutorials/using-crmscript-statlib-for-reporting
+[6]: /en/automation/crmscript/tutorials/waiting-for-customer-status-with-reminders
+[7]: /en/automation/crmscript/tutorials/using-dialogs-in-triggers
+[8]: /en/automation/crmscript/tutorials/crmscript-trigger-outbox
+[9]: /en/automation/crmscript/tutorials/open-external-company-from-task-menu

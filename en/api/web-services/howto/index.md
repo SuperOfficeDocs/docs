@@ -18,8 +18,8 @@ redirect_from: /en/api/netserver/web-services/howto/index
 * [Flows][3]
 * [Diary][5]
 
-[1]: ./custom-objects/rest-get-all-udef-fields
-[2]: ./custom-objects/rest-get-custom-object-row
-[3]: ./flows/index
-[4]: ./document/index
-[5]: ./diary/index
+[1]: /en/api/web-services/howto/custom-objects/rest-get-all-udef-fields
+[2]: /en/api/web-services/howto/custom-objects/rest-get-custom-object-row
+[3]: /en/api/web-services/howto/flows/index
+[4]: /en/api/web-services/howto/document/index
+[5]: /en/api/web-services/howto/diary/index

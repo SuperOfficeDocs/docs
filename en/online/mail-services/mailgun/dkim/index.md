@@ -40,4 +40,4 @@ Read more about DKIM in  [Mail - Options and security][4].
 [1]: https://en.wikipedia.org/wiki/Domain_Name_System
 [2]: https://en.wikipedia.org/wiki/MX_record
 [3]: https://support.google.com/a/answer/4536026
-[4]: ../security
+[4]: /en/online/mail-services/mailgun/security

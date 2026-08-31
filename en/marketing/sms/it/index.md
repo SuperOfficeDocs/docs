@@ -41,4 +41,4 @@ To [configure SMS settings][6], go to **Settings and maintenance** > **Requests*
 Even if the plugin only supports sending SMS, you must still configure this mailbox. This is where you define settings such as the category for incoming messages.
 
 [3]: /en/automation/crmscript/index
-[6]: ../../../email/admin/mailbox/create-sms-mailbox
+[6]: /en/email/admin/mailbox/create-sms-mailbox

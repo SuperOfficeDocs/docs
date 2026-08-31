@@ -84,9 +84,9 @@ Here you can match the customer in the chat with an existing contact in SuperOff
 
 If the customer is found in SuperOffice, you can show contact information, requests, sales, follow-ups and previously registered chat sessions.
 
-[1]: ../../knowledge-base/learn/faq/index
-[3]: ../../knowledge-base/learn/reply-templates/index
-[4]: ./respond
-[11]: ./create-request
-[12]: ./transfer-to-agent
+[1]: /en/knowledge-base/learn/faq/index
+[3]: /en/knowledge-base/learn/reply-templates/index
+[4]: /en/chat/learn/respond
+[11]: /en/chat/learn/create-request
+[12]: /en/chat/learn/transfer-to-agent
 [img1]: /media/loc/en/chat/10-chat-mainpage.png

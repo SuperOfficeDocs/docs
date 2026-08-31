@@ -61,6 +61,6 @@ If more than two priorities are accessible externally, the customer can select w
 * [Delete priorities][2]
 * [Create escalation levels][3]
 
-[1]: ./create
-[2]: ./delete
-[3]: ./escalation-levels
+[1]: /en/request/admin/priority/create
+[2]: /en/request/admin/priority/delete
+[3]: /en/request/admin/priority/escalation-levels

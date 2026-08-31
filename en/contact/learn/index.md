@@ -55,16 +55,16 @@ Below the Contact card, [section tabs][16] provide quick access to information c
 | [Projects][14] | Shows all the projects where the active contact is a project member. |
 | [Relations][15] | Displays any connections existing between the current contact and other contacts or companies. |
 
-[2]: ./create
-[8]: ../../company/learn/index
-[11]: ../../learn/section-tabs/activities-tab
-[12]: ../../learn/section-tabs/sales-tab
-[13]: ../../learn/section-tabs/requests-tab
-[14]: ../../learn/section-tabs/projects-tab
-[15]: ../../learn/section-tabs/relations-tab
-[16]: ../../learn/section-tabs/index
-[19]: ../../custom-objects/learn/more-tab
-[20]: ../../learn/basics/notes
-[21]: ../../customization/web-panels/admin/index#www
-[22]: ../../erp/learn/index
+[2]: /en/contact/learn/create
+[8]: /en/company/learn/index
+[11]: /en/learn/section-tabs/activities-tab
+[12]: /en/learn/section-tabs/sales-tab
+[13]: /en/learn/section-tabs/requests-tab
+[14]: /en/learn/section-tabs/projects-tab
+[15]: /en/learn/section-tabs/relations-tab
+[16]: /en/learn/section-tabs/index
+[19]: /en/custom-objects/learn/more-tab
+[20]: /en/learn/basics/notes
+[21]: /en/customization/web-panels/admin/index#www
+[22]: /en/erp/learn/index
 [img3]: /media/loc/en/contact/contact-screen.png

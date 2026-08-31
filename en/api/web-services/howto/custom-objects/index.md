@@ -47,16 +47,16 @@ The [learn section][1] contains additional conceptual information and instructio
 * [Delete row][5]
 * [Search][6] (based on relations)
 
-[1]: ../../../../custom-objects/reference/index
-[2]: ./rest-get-custom-object-row
-[3]: ./rest-add-custom-object-row
-[4]: ./rest-update-custom-object-row
-[5]: ./rest-delete-custom-object-row
-[6]: ./custom-objects-search
-[11]: ./set-udef-listitem-value
-[12]: ./get-udef-list-and-values
-[13]: ./find-contact-by-udef
-[14]: ./rest-get-all-udef-fields
-[15]: ./rest-create-udef-field
-[16]: ./rest-update-udef-field
-[17]: ./rest-delete-udef-field
+[1]: /en/custom-objects/reference/index
+[2]: /en/api/web-services/howto/custom-objects/rest-get-custom-object-row
+[3]: /en/api/web-services/howto/custom-objects/rest-add-custom-object-row
+[4]: /en/api/web-services/howto/custom-objects/rest-update-custom-object-row
+[5]: /en/api/web-services/howto/custom-objects/rest-delete-custom-object-row
+[6]: /en/api/web-services/howto/custom-objects/custom-objects-search
+[11]: /en/api/web-services/howto/custom-objects/set-udef-listitem-value
+[12]: /en/api/web-services/howto/custom-objects/get-udef-list-and-values
+[13]: /en/api/web-services/howto/custom-objects/find-contact-by-udef
+[14]: /en/api/web-services/howto/custom-objects/rest-get-all-udef-fields
+[15]: /en/api/web-services/howto/custom-objects/rest-create-udef-field
+[16]: /en/api/web-services/howto/custom-objects/rest-update-udef-field
+[17]: /en/api/web-services/howto/custom-objects/rest-delete-udef-field

@@ -27,9 +27,9 @@ language: en
 * [Create invitation][5]
 * [Accept invitation][6]
 
-[1]: ./create-apt-entity
-[2]: ./create-apt-entity-in-entity
-[3]: ./create-apt-entity-in-collection
-[4]: ./create-recurring-appointment-entity
-[5]: ./create-invitation-entity
-[6]: ./accept-invitation-entity
+[1]: /en/api/entities/howto/diary/create-apt-entity
+[2]: /en/api/entities/howto/diary/create-apt-entity-in-entity
+[3]: /en/api/entities/howto/diary/create-apt-entity-in-collection
+[4]: /en/api/entities/howto/diary/create-recurring-appointment-entity
+[5]: /en/api/entities/howto/diary/create-invitation-entity
+[6]: /en/api/entities/howto/diary/accept-invitation-entity

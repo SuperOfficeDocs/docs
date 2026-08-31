@@ -23,8 +23,8 @@ language: en
 * [Using UDFHelper][4]
 * [UDFHelper class][5]
 
-[1]: ./set-udef-listitem-value
-[2]: ./get-udef-field-value
-[3]: ./update-udef
-[4]: ./using-udefhelper
-[5]: ./udefhelper-class
+[1]: /en/api/entities/howto/custom-objects/set-udef-listitem-value
+[2]: /en/api/entities/howto/custom-objects/get-udef-field-value
+[3]: /en/api/entities/howto/custom-objects/update-udef
+[4]: /en/api/entities/howto/custom-objects/using-udefhelper
+[5]: /en/api/entities/howto/custom-objects/udefhelper-class

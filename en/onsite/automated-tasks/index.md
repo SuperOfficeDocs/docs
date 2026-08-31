@@ -29,10 +29,10 @@ Example: `ejournalCron -maxdebug >> ejournalcronlog.txt`
 * [importMail][6]
 * [upgrade][7]
 
-[1]: ./dbi
-[2]: ./ejournalcron
-[3]: ./ejoutbox
-[4]: ./ejsender
-[5]: ./ejtermsetup
-[6]: ./importmail
-[7]: ./upgrade
+[1]: /en/onsite/automated-tasks/dbi
+[2]: /en/onsite/automated-tasks/ejournalcron
+[3]: /en/onsite/automated-tasks/ejoutbox
+[4]: /en/onsite/automated-tasks/ejsender
+[5]: /en/onsite/automated-tasks/ejtermsetup
+[6]: /en/onsite/automated-tasks/importmail
+[7]: /en/onsite/automated-tasks/upgrade

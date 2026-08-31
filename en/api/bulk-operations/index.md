@@ -16,5 +16,5 @@ Bulk update is great for targeted changes; when data already exists in SuperOffi
 
 Mass operations are different in that they involve inserting, updating or deleting large datasets. All actions work towards one particular table at a time. This is an extremely fast and powerful API that is only accessible to system user accounts.
 
-[1]: ./bulk-update/index
-[2]: ./mass-operations/index
+[1]: /en/api/bulk-operations/bulk-update/index
+[2]: /en/api/bulk-operations/mass-operations/index

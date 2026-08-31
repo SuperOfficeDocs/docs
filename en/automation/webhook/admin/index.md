@@ -90,4 +90,4 @@ The webhook returns to Active status and resumes normal delivery.
 
 Notification recipients see an alert in SuperOffice when a webhook is automatically deactivated. Select the alert to open the Webhooks panel.
 
-[img1]: ../../../../media/loc/en/admin/admin-system-design-webhook-overview.png
+[img1]: /media/loc/en/admin/admin-system-design-webhook-overview.png
