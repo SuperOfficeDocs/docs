@@ -52,8 +52,8 @@ Schauen Sie sich die folgenden Listen an, um zu sehen, ob Sie sie ändern möcht
 
 Diese Werkzeuge ermöglichen es Administratoren, Verkaufsprozesse individuell anzupassen und so Effizienz und Konsistenz im gesamten Team sicherzustellen.
 
-[1]: ./create-sales-guide
-[2]: ./edit-sales-guide
-[3]: ./sale-stage
-[4]: ./sale-type
-[5]: ./add-currency
+[1]: /de/sale/admin/create-sales-guide
+[2]: /de/sale/admin/edit-sales-guide
+[3]: /de/sale/admin/sale-stage
+[4]: /de/sale/admin/sale-type
+[5]: /de/sale/admin/add-currency

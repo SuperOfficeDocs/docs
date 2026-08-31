@@ -55,16 +55,16 @@ Unterhalb der Personenkarte bieten die [Bereichsregisterkarten][16] schnellen Zu
 | [Projekte][14] | Zeigt alle Projekte an, bei denen die Person Mitglied ist. |
 | [Beziehungen][15] | Zeigt vorhandene Verbindungen zwischen der aktuellen Person und anderen Personen oder Firmen. |
 
-[2]: ./create
-[8]: ../../company/learn/index
-[11]: ../../learn/section-tabs/activities-tab
-[12]: ../../learn/section-tabs/sales-tab
-[13]: ../../learn/section-tabs/requests-tab
-[14]: ../../learn/section-tabs/projects-tab
-[15]: ../../learn/section-tabs/relations-tab
-[16]: ../../learn/section-tabs/index
-[19]: ../../custom-objects/learn/more-tab
-[20]: ../../learn/basics/notes
-[21]: ../../customization/web-panels/admin/index#www
-[22]: ../../erp/learn/index
-[img3]: ../../../media/loc/en/contact/contact-screen.png
+[2]: /de/contact/learn/create
+[8]: /de/company/learn/index
+[11]: /de/learn/section-tabs/activities-tab
+[12]: /de/learn/section-tabs/sales-tab
+[13]: /de/learn/section-tabs/requests-tab
+[14]: /de/learn/section-tabs/projects-tab
+[15]: /de/learn/section-tabs/relations-tab
+[16]: /de/learn/section-tabs/index
+[19]: /de/custom-objects/learn/more-tab
+[20]: /de/learn/basics/notes
+[21]: /de/customization/web-panels/admin/index#www
+[22]: /de/erp/learn/index
+[img3]: /media/loc/en/contact/contact-screen.png

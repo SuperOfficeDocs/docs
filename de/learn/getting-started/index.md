@@ -56,5 +56,5 @@ SuperOffice CRM unterstützt zertifizierte E-Mail-Systeme und ermöglicht es Ihn
 
 Entdecken Sie das volle Potenzial von SuperOffice CRM! Nutzen Sie unsere Anleitungen, um sich schnell mit dem System vertraut zu machen, oder springen Sie direkt zu einem bestimmten Thema im Menü. Drücken Sie **F1** in Ihrem System, um Hilfe zu erhalten, die auf Ihre Version und Sprache zugeschnitten ist.
 
-[1]: ./main-screen/navigator
-[img1]: ../../../media/loc/en/learn/contact-screen-with-week.png
+[1]: /de/learn/getting-started/main-screen/navigator
+[img1]: /media/loc/en/learn/contact-screen-with-week.png
