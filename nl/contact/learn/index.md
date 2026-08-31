@@ -55,16 +55,16 @@ Onder de persoonskaart bieden [sectietabbladen][16] snelle toegang tot informati
 | [Projecten][14] | Toont alle projecten waarin de persoon een projectlid is. |
 | [Relaties][15] | Geeft eventuele connecties weer tussen de huidige persoon en andere personen of bedrijven. |
 
-[2]: ./create
-[8]: ../../company/learn/index
-[11]: ../../learn/section-tabs/activities-tab
-[12]: ../../learn/section-tabs/sales-tab
-[13]: ../../learn/section-tabs/requests-tab
-[14]: ../../learn/section-tabs/projects-tab
-[15]: ../../learn/section-tabs/relations-tab
-[16]: ../../learn/section-tabs/index
-[19]: ../../custom-objects/learn/more-tab
-[20]: ../../learn/basics/notes
-[21]: ../../customization/web-panels/admin/index#www
-[22]: ../../erp/learn/index
-[img3]: ../../../media/loc/en/contact/contact-screen.png
+[2]: /nl/contact/learn/create
+[8]: /nl/company/learn/index
+[11]: /nl/learn/section-tabs/activities-tab
+[12]: /nl/learn/section-tabs/sales-tab
+[13]: /nl/learn/section-tabs/requests-tab
+[14]: /nl/learn/section-tabs/projects-tab
+[15]: /nl/learn/section-tabs/relations-tab
+[16]: /nl/learn/section-tabs/index
+[19]: /nl/custom-objects/learn/more-tab
+[20]: /nl/learn/basics/notes
+[21]: /nl/customization/web-panels/admin/index#www
+[22]: /nl/erp/learn/index
+[img3]: /media/loc/en/contact/contact-screen.png

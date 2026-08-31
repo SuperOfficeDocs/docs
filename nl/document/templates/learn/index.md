@@ -57,7 +57,7 @@ Om ervoor te zorgen dat u (waar mogelijk) met uw klanten kunt communiceren in hu
 1. [De documentsjabloon toevoegen en definiëren][6] in Instellingen en onderhoud.
 1. De documentsjabloon beschikbaar maken voor de [gebruikersgroepen][5].
 
-[1]: ./template-variables
-[2]: ../admin/update-template
-[6]: ../admin/link-template
-[5]: ../../../admin/lists/user-group-filtering
+[1]: /nl/document/templates/learn/template-variables
+[2]: /nl/document/templates/admin/update-template
+[6]: /nl/document/templates/admin/link-template
+[5]: /nl/admin/lists/user-group-filtering

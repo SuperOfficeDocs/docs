@@ -84,9 +84,9 @@ Hier kunt u de klant in de chat koppelen aan een bestaande persoon in SuperOffic
 
 Als de klant is gevonden in SuperOffice, kunt u de contactgegevens, verzoeken, verkopen, vervolgactiviteiten en vorige chatsessies weergeven.
 
-[1]: ../../knowledge-base/learn/faq/index
-[3]: ../../knowledge-base/learn/reply-templates/index
-[4]: ./respond
-[11]: ./create-request
-[12]: ./transfer-to-agent
-[img1]: ../../../media/loc/en/chat/10-chat-mainpage.png
+[1]: /nl/knowledge-base/learn/faq/index
+[3]: /nl/knowledge-base/learn/reply-templates/index
+[4]: /nl/chat/learn/respond
+[11]: /nl/chat/learn/create-request
+[12]: /nl/chat/learn/transfer-to-agent
+[img1]: /media/loc/en/chat/10-chat-mainpage.png

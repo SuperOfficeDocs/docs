@@ -51,8 +51,8 @@ Bekijk de volgende lijsten om te zien of u ze wilt wijzigen of niet:
 
 Deze tools stellen beheerders in staat om verkoopprocessen op maat te maken, wat efficiëntie en consistentie binnen teams waarborgt.
 
-[1]: ./create-sales-guide
-[2]: ./edit-sales-guide
-[3]: ./sale-stage
-[4]: ./sale-type
-[5]: ./add-currency
+[1]: /nl/sale/admin/create-sales-guide
+[2]: /nl/sale/admin/edit-sales-guide
+[3]: /nl/sale/admin/sale-stage
+[4]: /nl/sale/admin/sale-type
+[5]: /nl/sale/admin/add-currency

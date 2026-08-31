@@ -36,7 +36,7 @@ Gebruik de schermen **Workflow** en **Lijsten** in **Instellingen en onderhoud**
 
 Deze tools stellen beheerders in staat om projectworkflows aan te passen en efficiëntie en consistentie binnen de organisatie te waarborgen.
 
-[1]: ./create-project-guide
-[2]: ./edit-project-guide
-[3]: ./project-status
-[4]: ./project-type
+[1]: /nl/project/admin/create-project-guide
+[2]: /nl/project/admin/edit-project-guide
+[3]: /nl/project/admin/project-status
+[4]: /nl/project/admin/project-type
