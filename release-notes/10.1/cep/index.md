@@ -17,5 +17,5 @@ language: en
 * [Chat - Configuration options for styling chat widget (10.1.3)][3]
 * [Chat - Allow file upload in chat for the customer (10.1.5)][5]
 
-[3]: ./10.1.3-update
-[5]: ./10.1.5-update
+[3]: /release-notes/10.1/cep/10.1.3-update
+[5]: /release-notes/10.1/cep/10.1.5-update

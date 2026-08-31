@@ -91,9 +91,9 @@ See all the [new or updated apps][2]
 * [Activity folders for SuperOffice][39] from SuperOffice AS (01.12.2025)
 
 [2]: https://appstore.superoffice.com/Category/new-and-updated
-[3]: ./sofo
+[3]: /release-notes/integrations/sofo
 [6]: https://community.superoffice.com/en/product-releases/release-notes/
-[13]: ./video-meetings
+[13]: /release-notes/integrations/video-meetings
 [15]: https://community.superoffice.com/en/support-faqs/faq/zapier-integration-version-3.5-changes-in-request-properties?utm_medium=docs&utm_source=release%20notes&utm_campaign=integration
 [16]: https://appstore.superoffice.com/superoffice-as/connecterp-for-visma-net
 [17]: https://appstore.superoffice.com/superoffice-as/connecterp-for-businessnxt

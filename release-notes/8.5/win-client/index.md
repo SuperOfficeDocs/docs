@@ -35,7 +35,7 @@ There will always be some differences between the Windows client and Web client.
 * [Preferences dialog - with Apply now button (8.5 R17)][17]
 * [Add to... dialog - A find button when adding members to Project and Sale (8.5 R17)][17]
 
-[1]: ./8.5-R01-update
-[11]: ./8.5-R11-update
-[16]: ./8.5-R16-update
-[17]: ./8.5-R17-update
+[1]: /release-notes/8.5/win-client/8.5-R01-update
+[11]: /release-notes/8.5/win-client/8.5-R11-update
+[16]: /release-notes/8.5/win-client/8.5-R16-update
+[17]: /release-notes/8.5/win-client/8.5-R17-update

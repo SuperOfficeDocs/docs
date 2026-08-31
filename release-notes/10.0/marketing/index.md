@@ -19,6 +19,6 @@ language: en
 * [Mailing - Recover unsaved changes (10.0.5)][5]
 * [Languages - 5 new UI languages (10.0.6)][6]
 
-[4]: ./10.0.4-update
-[5]: ./10.0.5-update
-[6]: ../core-crm/10.0.6-update#languages
+[4]: /release-notes/10.0/marketing/10.0.4-update
+[5]: /release-notes/10.0/marketing/10.0.5-update
+[6]: /release-notes/10.0/core-crm/10.0.6-update#languages

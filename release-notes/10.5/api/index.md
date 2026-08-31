@@ -20,8 +20,8 @@ language: en
 * [Version 10.5.2][2]
 * [Version 10.5.1][1]
 
-[1]: ./10.5.1-update
-[2]: ./10.5.2-update
-[3]: ./10.5.3
-[4]: ./10.5.4
-[5]: ./10.5.5
+[1]: /release-notes/10.5/api/10.5.1-update
+[2]: /release-notes/10.5/api/10.5.2-update
+[3]: /release-notes/10.5/api/10.5.3
+[4]: /release-notes/10.5/api/10.5.4
+[5]: /release-notes/10.5/api/10.5.5

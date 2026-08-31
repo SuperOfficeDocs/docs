@@ -22,8 +22,8 @@ language: en
 * [Chat - Show agent's name with nickname or first name][12]
 * [Chat - Show chat channel in overview][12]
 
-[1]: ./9.2-R01-update
-[6]: ./9.2-R06-update
-[7]: ./9.2-R07-update
-[11]: ./9.2-R11-update
-[12]: ./9.2-R12-update
+[1]: /release-notes/9.2/service/9.2-R01-update
+[6]: /release-notes/9.2/service/9.2-R06-update
+[7]: /release-notes/9.2/service/9.2-R07-update
+[11]: /release-notes/9.2/service/9.2-R11-update
+[12]: /release-notes/9.2/service/9.2-R12-update

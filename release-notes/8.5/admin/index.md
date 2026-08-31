@@ -23,9 +23,9 @@ language: en
 * [Admin - Assign service categories to users from Settings & maintenance (8.5 R12)][12]
 * [Admin - Move a user from one owner card to another (8.5 R13)][13]
 
-[2]: ./8.5-R02-update
-[4]: ./8.5-R04-update
-[10]: ./8.5-R10-update
-[11]: ./8.5-R11-update
-[12]: ./8.5-R12-update
-[13]: ./8.5-R13-update
+[2]: /release-notes/8.5/admin/8.5-R02-update
+[4]: /release-notes/8.5/admin/8.5-R04-update
+[10]: /release-notes/8.5/admin/8.5-R10-update
+[11]: /release-notes/8.5/admin/8.5-R11-update
+[12]: /release-notes/8.5/admin/8.5-R12-update
+[13]: /release-notes/8.5/admin/8.5-R13-update

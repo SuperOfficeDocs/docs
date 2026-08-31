@@ -32,15 +32,15 @@ language: en
 * [Chat - Widget can open in new window (8.5 R16)][16]
 * [New login solution for Inbox and Service mail boxes (8.5 R17)][17]
 
-[1]: ./8.5-R01-update
-[2]: ./8.5-R02-update
-[3]: ./8.5-R03-update
-[4]: ./8.5-R04-update
-[5]: ./8.5-R05-update
-[6]: ./8.5-R06-update
-[7]: ./8.5-R07-update
-[8]: ./8.5-R08-update
-[10]: ./8.5-R10-update
-[11]: ./8.5-R11-update
-[16]: ./8.5-R16-update
-[17]: ./8.5-R17-update
+[1]: /release-notes/8.5/service/8.5-R01-update
+[2]: /release-notes/8.5/service/8.5-R02-update
+[3]: /release-notes/8.5/service/8.5-R03-update
+[4]: /release-notes/8.5/service/8.5-R04-update
+[5]: /release-notes/8.5/service/8.5-R05-update
+[6]: /release-notes/8.5/service/8.5-R06-update
+[7]: /release-notes/8.5/service/8.5-R07-update
+[8]: /release-notes/8.5/service/8.5-R08-update
+[10]: /release-notes/8.5/service/8.5-R10-update
+[11]: /release-notes/8.5/service/8.5-R11-update
+[16]: /release-notes/8.5/service/8.5-R16-update
+[17]: /release-notes/8.5/service/8.5-R17-update

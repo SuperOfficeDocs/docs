@@ -22,7 +22,7 @@ language: en
 * [Lists - Web panel setting for reload on navigation (10.3.1)][1]
 * [System design - Creating new field gives option to show in Properties panel (10.3.1)][1]
 
-[1]: ./10.3.1-update
-[2]: ./10.3.2-update
-[7]: ./10.3.7-update
-[8]: ./10.3.8-update
+[1]: /release-notes/10.3/admin/10.3.1-update
+[2]: /release-notes/10.3/admin/10.3.2-update
+[7]: /release-notes/10.3/admin/10.3.7-update
+[8]: /release-notes/10.3/admin/10.3.8-update

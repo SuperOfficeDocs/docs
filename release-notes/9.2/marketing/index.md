@@ -33,12 +33,12 @@ language: en
 * [Mailing - Bounce management per mailing][11]
 * [Forms - Form response mailing with the form info][11]
 
-[1]: ./9.2-R01-update
-[2]: ./9.2-R02-update
-[3]: ./9.2-R03-update
-[4]: ./9.2-R04-update
-[5]: ./9.2-R05-update
-[6]: ./9.2-R06-update
-[8]: ./9.2-R08-update
-[9]: ./9.2-R09-update
-[11]: ./9.2-R11-update
+[1]: /release-notes/9.2/marketing/9.2-R01-update
+[2]: /release-notes/9.2/marketing/9.2-R02-update
+[3]: /release-notes/9.2/marketing/9.2-R03-update
+[4]: /release-notes/9.2/marketing/9.2-R04-update
+[5]: /release-notes/9.2/marketing/9.2-R05-update
+[6]: /release-notes/9.2/marketing/9.2-R06-update
+[8]: /release-notes/9.2/marketing/9.2-R08-update
+[9]: /release-notes/9.2/marketing/9.2-R09-update
+[11]: /release-notes/9.2/marketing/9.2-R11-update

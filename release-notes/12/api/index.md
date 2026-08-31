@@ -17,6 +17,6 @@ Version 12 of the API reference includes changes from the v11.13 release, listed
 * [(12.1)][2]
 * [(12.2)][3]
 
-[1]: ./changes-webapi-12.0.342.0
-[2]: ./changes-webapi-12.1.1412
-[3]: ./changes-webapi-12.2.2072.0
+[1]: /release-notes/12/api/changes-webapi-12.0.342.0
+[2]: /release-notes/12/api/changes-webapi-12.1.1412
+[3]: /release-notes/12/api/changes-webapi-12.2.2072.0

@@ -237,10 +237,10 @@ Generated changelogs for each API build, starting with 10.1.5:
 [23]: /en/automation/crmscript/reference/CRMScript.Native.Rsa#verifysignature-string-byte-integer
 [24]: https://community.superoffice.com/en/product-releases/bugs-wishes/product-issue/?bid=21478&azure=1
 [25]: https://community.superoffice.com/en/product-releases/bugs-wishes/product-issue/?bid=25308&azure=1
-[26]: ./10.1.5-update
-[27]: ./10.1.6-update#10-1-6-812
-[28]: ./10.1.6-update#10-1-6-838
-[29]: ./10.1.8-update
-[30]: ./10.1.9-update
+[26]: /release-notes/10.1/api/10.1.5-update
+[27]: /release-notes/10.1/api/10.1.6-update#10-1-6-812
+[28]: /release-notes/10.1/api/10.1.6-update#10-1-6-838
+[29]: /release-notes/10.1/api/10.1.8-update
+[30]: /release-notes/10.1/api/10.1.9-update
 
 [img1]: /media/loc/en/release-notes/10.1/webapi-interface.png

@@ -16,5 +16,5 @@ language: en
 * [Form - Set up Our contact with a default on form submissions (10.1.3)][3]
 * [Mailing - Document mailing with language (10.1.6)][6]
 
-[3]: ./10.1.3-update
-[6]: ./10.1.6-update
+[3]: /release-notes/10.1/marketing/10.1.3-update
+[6]: /release-notes/10.1/marketing/10.1.6-update
