@@ -36,20 +36,20 @@ I detta avsnitt kan du konfigurera inställningarna för Service så att de pass
 * [Systemdesign][15]
 * [Profil][16] - ändringar här visas endast i den gamla Service-modulen
 
-[4]: ./category/index
-[5]: ./priority/index
-[6]: ./status/index
-[8]: ./system-templates
-[9]: ./type/index
-[17]: ./relation-rules
-[10]: ../../localization/learn/customer-languages
-[11]: ../../admin/preferences/service-settings
-[12]: ../../admin/user-management/role/index
-[13]: ../../admin/user-management/index
-[7]: ../learn/index#available
-[15]: ../../ui/blogic/learn/index
-[16]: ../../ui/blogic/learn/profiles/index
+[4]: /sv/request/admin/category/index
+[5]: /sv/request/admin/priority/index
+[6]: /sv/request/admin/status/index
+[8]: /sv/request/admin/system-templates
+[9]: /sv/request/admin/type/index
+[17]: /sv/request/admin/relation-rules
+[10]: /sv/localization/learn/customer-languages
+[11]: /sv/admin/preferences/service-settings
+[12]: /sv/admin/user-management/role/index
+[13]: /sv/admin/user-management/index
+[7]: /sv/request/learn/index#available
+[15]: /sv/ui/blogic/learn/index
+[16]: /sv/ui/blogic/learn/profiles/index
 
-[21]: ../../customer-center/learn/index
-[22]: ../../email/admin/mailbox/index
-[23]: ../../chat/admin/index
+[21]: /sv/customer-center/learn/index
+[22]: /sv/email/admin/mailbox/index
+[23]: /sv/chat/admin/index
