@@ -27,10 +27,10 @@ redirect_from:
 * [Create VideoMeeting][6]
 * [Delete VideoMeeting][7]
 
-[1]: ./create-apt-services
-[2]: ./create-recurring-appointment-services
-[3]: ./create-invitation-services
-[4]: ./get-invitations-services
-[5]: ./accept-invitation-services
-[6]: ./rest-create-videomeeting
-[7]: ./rest-delete-videomeeting
+[1]: /en/api/web-services/howto/diary/create-apt-services
+[2]: /en/api/web-services/howto/diary/create-recurring-appointment-services
+[3]: /en/api/web-services/howto/diary/create-invitation-services
+[4]: /en/api/web-services/howto/diary/get-invitations-services
+[5]: /en/api/web-services/howto/diary/accept-invitation-services
+[6]: /en/api/web-services/howto/diary/rest-create-videomeeting
+[7]: /en/api/web-services/howto/diary/rest-delete-videomeeting

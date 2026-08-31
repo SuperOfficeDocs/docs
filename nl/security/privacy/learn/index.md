@@ -67,5 +67,5 @@ Als u deze optie selecteert, worden alleen personen die expliciet toestemming he
 
 Als u deze optie *niet* selecteert, worden alleen personen die **E-marketing** hebben ingesteld op **UIT** en de rechtsgrondslag op **Ingetrokken** uit de ontvangerslijst gefilterd. Dit werkt op dezelfde manier als bij **Geen mailings**.
 
-[2]: ../admin/add-purpose
-[3]: ../admin/add-legal-base
+[2]: /nl/security/privacy/admin/add-purpose
+[3]: /nl/security/privacy/admin/add-legal-base

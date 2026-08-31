@@ -67,5 +67,5 @@ Hvis du vælger denne indstilling, vil kun personer, der har givet deres udtrykk
 
 Hvis du *ikke* vælger denne indstilling, vil kun personer med **E-markedsføring** indstillet til **OFF** og retsgrundlag indstillet til **Trukket tilbage** blive filtreret fra modtagerlisten. Dette fungerer på samme måde som **Ingen udsendelser**.
 
-[2]: ../admin/add-purpose
-[3]: ../admin/add-legal-base
+[2]: /da/security/privacy/admin/add-purpose
+[3]: /da/security/privacy/admin/add-legal-base

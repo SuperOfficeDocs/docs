@@ -30,5 +30,5 @@ The SuperOffice App Store offers Business to Consumer (B2C) applications by Supe
 
 * [WebAPI][9]
 
-[8]: ../identity/federated-auth
+[8]: /en/online/identity/federated-auth
 [9]: /en/api/reference/webapi/index

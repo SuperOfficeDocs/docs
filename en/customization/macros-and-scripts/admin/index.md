@@ -86,8 +86,8 @@ When you click a script or macro in the **Macros and scripts** tab, the **Script
 | Debug script | Used to open the **Debugger** screen and run the selected script or macro in debug mode. The script stops at the first line. You can open a [debug session][4] from the **Debug sessions** tab. |
 | Trace script | Used to start [tracing the script or macro][5]. |
 
-[2]: ./trigger
-[3]: ./schedule-task
+[2]: /en/customization/macros-and-scripts/admin/trigger
+[3]: /en/customization/macros-and-scripts/admin/schedule-task
 [4]: /en/automation/crmscript/debugging/built-in-debugger
 [5]: /en/automation/crmscript/debugging/using-trace
-[8]: ./create-script
+[8]: /en/customization/macros-and-scripts/admin/create-script

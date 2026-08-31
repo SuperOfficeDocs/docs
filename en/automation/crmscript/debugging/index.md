@@ -18,10 +18,10 @@ There are several ways to debug CRMScripts.
 * [Helper functions for logging][6]
 * [Troubleshooting][7]
 
-[1]: ./built-in-debugger
-[2]: ./log-messages
-[3]: ./print-debug
-[4]: ./development-mode
-[5]: ./using-trace
-[6]: ./helper-functions-for-logging
-[7]: ./troubleshooting
+[1]: /en/automation/crmscript/debugging/built-in-debugger
+[2]: /en/automation/crmscript/debugging/log-messages
+[3]: /en/automation/crmscript/debugging/print-debug
+[4]: /en/automation/crmscript/debugging/development-mode
+[5]: /en/automation/crmscript/debugging/using-trace
+[6]: /en/automation/crmscript/debugging/helper-functions-for-logging
+[7]: /en/automation/crmscript/debugging/troubleshooting

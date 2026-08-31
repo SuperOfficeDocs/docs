@@ -81,9 +81,9 @@ Her kan du knytte kunden i chatsamtalen til en eksisterende person i SuperOffice
 
 Hvis kunden finnes i SuperOffice, kan du vise kontaktinformasjon, saker, salg, oppfølging og tidligere registrerte chatsesjoner.
 
-[1]: ../../knowledge-base/learn/faq/index
-[3]: ../../knowledge-base/learn/reply-templates/index
-[4]: ./respond
-[11]: ./create-request
-[12]: ./transfer-to-agent
-[img1]: ../../../media/loc/en/chat/10-chat-mainpage.png
+[1]: /no/knowledge-base/learn/faq/index
+[3]: /no/knowledge-base/learn/reply-templates/index
+[4]: /no/chat/learn/respond
+[11]: /no/chat/learn/create-request
+[12]: /no/chat/learn/transfer-to-agent
+[img1]: /media/loc/en/chat/10-chat-mainpage.png

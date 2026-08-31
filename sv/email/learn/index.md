@@ -70,7 +70,7 @@ Klicka på ett e-postmeddelande på [detaljkortet Aktiviteter][14] för att visa
 
 ![E-postförhandsgranskning med markerade alternativ i uppgiftsmenyn -screenshot][img1]
 
-[1]: ../inbox/learn/index
+[1]: /sv/email/inbox/learn/index
 [2]: ../../../../integrations/gmail-link/index
 [3]: ../../../../integrations/gmail-link/email-archive-incoming
 [4]: ../../../../integrations/gmail-link/archive-emails-as-activities
@@ -79,10 +79,10 @@ Klicka på ett e-postmeddelande på [detaljkortet Aktiviteter][14] för att visa
 [7]: ../../../../integrations/mail-link/archive-as-activity
 [8]: ../../../../integrations/mail-link/archive-on-contact
 [9]: ../../../../integrations/mail-link/archive-attachment
-[11]: ../../contact/learn/send-email
-[12]: ../../document/learn/send-as-email
-[13]: ../../learn/getting-started/connect-your-accounts
-[14]: ../../learn/section-tabs/activities-tab
-[15]: ../../learn/getting-started/main-screen/side-panel
+[11]: /sv/contact/learn/send-email
+[12]: /sv/document/learn/send-as-email
+[13]: /sv/learn/getting-started/connect-your-accounts
+[14]: /sv/learn/section-tabs/activities-tab
+[15]: /sv/learn/getting-started/main-screen/side-panel
 
-[img1]: ../../../media/loc/en/learn/side-panel-preview-email-tasks.png
+[img1]: /media/loc/en/learn/side-panel-preview-email-tasks.png

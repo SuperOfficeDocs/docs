@@ -90,4 +90,4 @@ Der Webhook kehrt zum Aktiv-Status zurück und nimmt die normale Lieferung wiede
 
 Benachrichtigungsempfänger sehen eine Benachrichtigung in SuperOffice, wenn ein Webhook automatisch deaktiviert wird. Wählen Sie die Benachrichtigung aus, um das Webhooks-Panel zu öffnen.
 
-[img1]: ../../../../media/loc/en/admin/admin-system-design-webhook-overview.png
+[img1]: /media/loc/en/admin/admin-system-design-webhook-overview.png

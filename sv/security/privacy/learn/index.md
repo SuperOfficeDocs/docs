@@ -67,5 +67,5 @@ Om du väljer det här alternativet kommer enbart personer som gett sitt medgiva
 
 Om du *inte* väljer det här alternativet kommer bara personer med **E-marknadsföring** inställt på **AV** och med rättslig grund inställt på **Återkallat** att filtreras bort från mottagarlistan. Den fungerar på samma sätt som för **Inga utskick**.
 
-[2]: ../admin/add-purpose
-[3]: ../admin/add-legal-base
+[2]: /sv/security/privacy/admin/add-purpose
+[3]: /sv/security/privacy/admin/add-legal-base

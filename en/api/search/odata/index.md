@@ -120,20 +120,20 @@ You can fetch [metadata - information about archives][13] to do "reflection" on 
 * [Archive OData endpoint][16]
 
 [1]: https://www.odata.org/
-[2]: ../../archive-providers/index
-[3]: ./using-filters
-[4]: ./associate
-[5]: ./boolean
-[6]: ./date
-[7]: ./datetime
-[8]: ./lists
-[9]: ./numbers
-[10]: ./strings
-[11]: ./unary
-[12]: ../../web-services/howto/company/get-all-contacts-rest
-[13]: ./metadata
-[14]: ./dynamic-provider
-[15]: ../../archive-providers/reference/findsale
+[2]: /en/api/archive-providers/index
+[3]: /en/api/search/odata/using-filters
+[4]: /en/api/search/odata/associate
+[5]: /en/api/search/odata/boolean
+[6]: /en/api/search/odata/date
+[7]: /en/api/search/odata/datetime
+[8]: /en/api/search/odata/lists
+[9]: /en/api/search/odata/numbers
+[10]: /en/api/search/odata/strings
+[11]: /en/api/search/odata/unary
+[12]: /en/api/web-services/howto/company/get-all-contacts-rest
+[13]: /en/api/search/odata/metadata
+[14]: /en/api/search/odata/dynamic-provider
+[15]: /en/api/archive-providers/reference/findsale
 [16]: ../../reference/restful/rest/Archive/index
 
 [img1]: /media/loc/en/api/search/get-sale.png

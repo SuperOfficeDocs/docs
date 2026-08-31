@@ -28,7 +28,7 @@ language: sv
 
 * **E-postadresser**: Här kan du [skapa en lista över e-postadresser][4] som du ofta använder, t.ex. till personer som varken är användare eller är registrerade som kontakter i SuperOffice CRM. Dessa adresser blir då tillgängliga på de flesta ställen där du kan vilja skicka ett e-post.
 
-[1]: ./external-document
-[2]: ./faq/index
-[3]: ./reply-templates/index
-[4]: ./email-addresses
+[1]: /sv/knowledge-base/learn/external-document
+[2]: /sv/knowledge-base/learn/faq/index
+[3]: /sv/knowledge-base/learn/reply-templates/index
+[4]: /sv/knowledge-base/learn/email-addresses

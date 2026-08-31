@@ -36,7 +36,7 @@ SuperOffice CRM bietet Administratoren Tools zur Standardisierung von Projektabl
 
 Diese Tools ermöglichen es Administratoren, Projektabläufe individuell anzupassen und so für Effizienz und Einheitlichkeit in der Projektverwaltung zu sorgen.
 
-[1]: ./create-project-guide
-[2]: ./edit-project-guide
-[3]: ./project-status
-[4]: ./project-type
+[1]: /de/project/admin/create-project-guide
+[2]: /de/project/admin/edit-project-guide
+[3]: /de/project/admin/project-status
+[4]: /de/project/admin/project-type

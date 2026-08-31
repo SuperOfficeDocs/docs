@@ -91,8 +91,8 @@ using(SoSession.Authenticate("SAL1" , ""))
 * [foreigndevice table][2]
 * [foreignkey table][3]
 
-[1]: ../../database/tables/foreignapp
-[2]: ../../database/tables/foreigndevice
-[3]: ../../database/tables/foreignkey
+[1]: /en/database/tables/foreignapp
+[2]: /en/database/tables/foreigndevice
+[3]: /en/database/tables/foreignkey
 
 [img1]: /media/loc/en/api/foreign-keys/foreign-keys.gif

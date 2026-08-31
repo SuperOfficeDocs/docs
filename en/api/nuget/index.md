@@ -47,9 +47,9 @@ All available packages including their public name, install name, description, a
 * [CRM Online WinClient][5]
 * [CRM Online Database Mirroring][6]
 
-[1]: ./netserver-core
-[2]: ./netserver-services
-[3]: ./crm-web
-[4]: ./crm-online-core
-[5]: ./crm-online-winclient
-[6]: ./crm-online-mirroring
+[1]: /en/api/nuget/netserver-core
+[2]: /en/api/nuget/netserver-services
+[3]: /en/api/nuget/crm-web
+[4]: /en/api/nuget/crm-online-core
+[5]: /en/api/nuget/crm-online-winclient
+[6]: /en/api/nuget/crm-online-mirroring

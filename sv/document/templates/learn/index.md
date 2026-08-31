@@ -57,7 +57,7 @@ För att säkerställa att du kan kommunicera med dina kunder på deras eget spr
 1. [Lägg till och definiera dokumentmallen][6] under Inställningar och underhåll.
 1. Gör dokumentmallen tillgänglig för de [användargrupper][5] som behöver använda den.
 
-[1]: ./template-variables
-[2]: ../admin/update-template
-[6]: ../admin/link-template
-[5]: ../../../admin/lists/user-group-filtering
+[1]: /sv/document/templates/learn/template-variables
+[2]: /sv/document/templates/admin/update-template
+[6]: /sv/document/templates/admin/link-template
+[5]: /sv/admin/lists/user-group-filtering

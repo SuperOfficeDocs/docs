@@ -70,7 +70,7 @@ Klik på en e-mail i [detaljekortet Aktiviteter][14] for at se dens detaljer i [
 
 ![E-mail forhåndsvisning med opgavemenu muligheder fremhævet -screenshot][img1]
 
-[1]: ../inbox/learn/index
+[1]: /da/email/inbox/learn/index
 [2]: ../../../../integrations/gmail-link/index
 [3]: ../../../../integrations/gmail-link/email-archive-incoming
 [4]: ../../../../integrations/gmail-link/archive-emails-as-activities
@@ -79,10 +79,10 @@ Klik på en e-mail i [detaljekortet Aktiviteter][14] for at se dens detaljer i [
 [7]: ../../../../integrations/mail-link/archive-as-activity
 [8]: ../../../../integrations/mail-link/archive-on-contact
 [9]: ../../../../integrations/mail-link/archive-attachment
-[11]: ../../contact/learn/send-email
-[12]: ../../document/learn/send-as-email
-[13]: ../../learn/getting-started/connect-your-accounts
-[14]: ../../learn/section-tabs/activities-tab
-[15]: ../../learn/getting-started/main-screen/side-panel
+[11]: /da/contact/learn/send-email
+[12]: /da/document/learn/send-as-email
+[13]: /da/learn/getting-started/connect-your-accounts
+[14]: /da/learn/section-tabs/activities-tab
+[15]: /da/learn/getting-started/main-screen/side-panel
 
-[img1]: ../../../media/loc/en/learn/side-panel-preview-email-tasks.png
+[img1]: /media/loc/en/learn/side-panel-preview-email-tasks.png

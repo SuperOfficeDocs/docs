@@ -61,7 +61,7 @@ In addition to the required operators, there are a couple of special values that
 | "ParentErpKey" / const string PARENT_ERPKEY | only actors with a specified parent actor key |
 | "ParentActorType" / const string PARENT_ACTORTYPE | only actors with a specified parent actor type |
 
-[1]: ./search-operators
-[2]: ../api/field-value-formats-and-conventions
+[1]: /en/api/plugins/erp-connectors/search/search-operators
+[2]: /en/api/plugins/erp-connectors/api/field-value-formats-and-conventions
 
 [img1]: /media/loc/en/api/plugins/image002.png

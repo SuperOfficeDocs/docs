@@ -36,7 +36,7 @@ Använd skärmarna **Arbetsflöde** och **Listor** i **Inställningar och underh
 
 Dessa verktyg gör det möjligt för administratörer att anpassa projektarbetsflöden och säkerställa effektivitet och konsekvens i hela organisationen.
 
-[1]: ./create-project-guide
-[2]: ./edit-project-guide
-[3]: ./project-status
-[4]: ./project-type
+[1]: /sv/project/admin/create-project-guide
+[2]: /sv/project/admin/edit-project-guide
+[3]: /sv/project/admin/project-status
+[4]: /sv/project/admin/project-type

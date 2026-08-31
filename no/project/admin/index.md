@@ -36,7 +36,7 @@ Bruk skjermbildene **Arbeidsflyt** og **Lister** i **Innstillinger og vedlikehol
 
 Disse verktøyene gir administratorer mulighet til å tilpasse prosjektarbeidsflyten, noe som sikrer effektivitet og konsistens på tvers av team.
 
-[1]: ./create-project-guide
-[2]: ./edit-project-guide
-[3]: ./project-status
-[4]: ./project-type
+[1]: /no/project/admin/create-project-guide
+[2]: /no/project/admin/edit-project-guide
+[3]: /no/project/admin/project-status
+[4]: /no/project/admin/project-type

@@ -61,6 +61,6 @@ Hvis mere end to prioriteter er tilgængelige eksternt, kan kunden vælge, hvilk
 * [Slet prioriteter][2]
 * [Opret eskaleringsniveauer][3]
 
-[1]: ./create
-[2]: ./delete
-[3]: ./escalation-levels
+[1]: /da/request/admin/priority/create
+[2]: /da/request/admin/priority/delete
+[3]: /da/request/admin/priority/escalation-levels

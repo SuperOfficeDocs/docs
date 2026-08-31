@@ -63,6 +63,6 @@ Velger du **Årlig**, kan du angi dag og måned som oppfølgingen skal gjentas h
 * [Redigere en gjentakende oppfølging][1]
 * [Stoppe en gjentakende oppfølging][3]
 
-[1]: ../edit-follow-up#repeat
-[3]: ./stop
-[4]: ./create
+[1]: /no/diary/learn/edit-follow-up#repeat
+[3]: /no/diary/learn/recurrence/stop
+[4]: /no/diary/learn/recurrence/create

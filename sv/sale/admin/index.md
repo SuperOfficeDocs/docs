@@ -52,8 +52,8 @@ Ta en titt på de här listorna för att se om du vill ändra dem eller inte:
 
 Dessa verktyg ger administratörer möjlighet att anpassa försäljningsarbetsflöden, vilket säkerställer effektivitet och konsekvens i hela teamet.
 
-[1]: ./create-sales-guide
-[2]: ./edit-sales-guide
-[3]: ./sale-stage
-[4]: ./sale-type
-[5]: ./add-currency
+[1]: /sv/sale/admin/create-sales-guide
+[2]: /sv/sale/admin/edit-sales-guide
+[3]: /sv/sale/admin/sale-stage
+[4]: /sv/sale/admin/sale-type
+[5]: /sv/sale/admin/add-currency

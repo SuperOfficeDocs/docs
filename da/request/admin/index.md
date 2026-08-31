@@ -37,20 +37,20 @@ I denne del af SuperOffice Service kan du konfigurere indstillingerne for Servic
 * [Systemdesign][15]
 * [Profil][16] - ændringer her vises kun i det gamle Servicemodul
 
-[4]: ./category/index
-[5]: ./priority/index
-[6]: ./status/index
-[8]: ./system-templates
-[9]: ./type/index
-[17]: ./relation-rules
-[10]: ../../localization/learn/customer-languages
-[11]: ../../admin/preferences/service-settings
-[12]: ../../admin/user-management/role/index
-[13]: ../../admin/user-management/index
-[7]: ../learn/index#available
-[15]: ../../ui/blogic/learn/index
-[16]: ../../ui/blogic/learn/profiles/index
+[4]: /da/request/admin/category/index
+[5]: /da/request/admin/priority/index
+[6]: /da/request/admin/status/index
+[8]: /da/request/admin/system-templates
+[9]: /da/request/admin/type/index
+[17]: /da/request/admin/relation-rules
+[10]: /da/localization/learn/customer-languages
+[11]: /da/admin/preferences/service-settings
+[12]: /da/admin/user-management/role/index
+[13]: /da/admin/user-management/index
+[7]: /da/request/learn/index#available
+[15]: /da/ui/blogic/learn/index
+[16]: /da/ui/blogic/learn/profiles/index
 
-[21]: ../../customer-center/learn/index
-[22]: ../../email/admin/mailbox/index
-[23]: ../../chat/admin/index
+[21]: /da/customer-center/learn/index
+[22]: /da/email/admin/mailbox/index
+[23]: /da/chat/admin/index

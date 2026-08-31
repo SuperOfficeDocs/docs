@@ -14,6 +14,6 @@ A guide to creating high-quality scripts.
 * [Best practices][2]
 * [Intellisense][3]
 
-[1]: ./coding-conventions
-[2]: ./best-practices
-[3]: ./intellisense
+[1]: /en/automation/crmscript/code-quality/coding-conventions
+[2]: /en/automation/crmscript/code-quality/best-practices
+[3]: /en/automation/crmscript/code-quality/intellisense

@@ -22,9 +22,9 @@ language: en
 * [Get interests for contact][5]
 * [Set interest on/off][6]
 
-[1]: ./create-contact-entity
-[2]: ./create-contact-entity-in-entity
-[3]: ./create-contact-entity-in-collection
-[4]: ./get-contact-via-entities-layer
-[5]: ./get-interests-for-contact-entity
-[6]: ./set-interest-on-off-entity
+[1]: /en/api/entities/howto/company/create-contact-entity
+[2]: /en/api/entities/howto/company/create-contact-entity-in-entity
+[3]: /en/api/entities/howto/company/create-contact-entity-in-collection
+[4]: /en/api/entities/howto/company/get-contact-via-entities-layer
+[5]: /en/api/entities/howto/company/get-interests-for-contact-entity
+[6]: /en/api/entities/howto/company/set-interest-on-off-entity

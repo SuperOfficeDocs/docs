@@ -60,18 +60,18 @@ For a complete list of fields, see the [database reference][20].
 * [Currency][7]
 * [Samples][8]
 
-[1]: ./create
-[2]: ./get
-[3]: ./update
-[4]: ./lost-or-sold
-[5]: ./stakeholders
-[6]: ./guides
-[7]: ./currency
-[8]: ./samples
+[1]: /en/automation/crmscript/howto/sale/create
+[2]: /en/automation/crmscript/howto/sale/get
+[3]: /en/automation/crmscript/howto/sale/update
+[4]: /en/automation/crmscript/howto/sale/lost-or-sold
+[5]: /en/automation/crmscript/howto/sale/stakeholders
+[6]: /en/automation/crmscript/howto/sale/guides
+[7]: /en/automation/crmscript/howto/sale/currency
+[8]: /en/automation/crmscript/howto/sale/samples
 [10]: ../../reference/CRMScript.NetServer.NSSaleAgent
 [11]: ../../reference/CRMScript.NetServer.NSSale
 [12]: ../../reference/CRMScript.NetServer.NSSaleEntity
 [13]: ../../reference/CRMScript.NetServer.NSSaleStakeholder
 [14]: ../../reference/CRMScript.NetServer.NSSaleStageEntity
 [15]: ../../reference/CRMScript.NetServer.NSSaleType
-[20]: ../../../../database/tables/sale
+[20]: /en/database/tables/sale

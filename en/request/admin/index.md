@@ -37,20 +37,20 @@ In this section, you can configure the settings for Service to tailor it to your
 * [System design][15]
 * [Profile][16] - changes here will show only in the old Service module
 
-[4]: ./category/index
-[5]: ./priority/index
-[6]: ./status/index
-[8]: ./system-templates
-[9]: ./type/index
-[7]: ../learn/index#available
-[10]: ../../localization/learn/customer-languages
-[11]: ../../admin/preferences/service-settings
-[12]: ../../admin/user-management/role/index
-[13]: ../../admin/user-management/index
-[15]: ../../ui/blogic/learn/index
-[16]: ../../ui/blogic/learn/profiles/index
+[4]: /en/request/admin/category/index
+[5]: /en/request/admin/priority/index
+[6]: /en/request/admin/status/index
+[8]: /en/request/admin/system-templates
+[9]: /en/request/admin/type/index
+[7]: /en/request/learn/index#available
+[10]: /en/localization/learn/customer-languages
+[11]: /en/admin/preferences/service-settings
+[12]: /en/admin/user-management/role/index
+[13]: /en/admin/user-management/index
+[15]: /en/ui/blogic/learn/index
+[16]: /en/ui/blogic/learn/profiles/index
 
-[21]: ../../customer-center/learn/index
-[22]: ../../email/admin/mailbox/index
-[23]: ../../chat/admin/index
-[17]: ./relation-rules
+[21]: /en/customer-center/learn/index
+[22]: /en/email/admin/mailbox/index
+[23]: /en/chat/admin/index
+[17]: /en/request/admin/relation-rules

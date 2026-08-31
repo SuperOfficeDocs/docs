@@ -36,6 +36,6 @@ Sie könnten beispielsweise den neuen Status "Warten auf Antwort" als Variante z
 * [Anfragestatus löschen][2]
 * [Nächste Anfrage in der Warteschlange abrufen einrichten][3]
 
-[1]: ./create
-[2]: ./delete
-[3]: ../next-in-queue
+[1]: /de/request/admin/status/create
+[2]: /de/request/admin/status/delete
+[3]: /de/request/admin/next-in-queue

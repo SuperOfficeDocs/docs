@@ -20,11 +20,11 @@ Supported entities/tables:
 * [selection][9]
 * [ticket][1]
 
-[1]: ./ticket-table
-[3]: ./appointment-table
-[4]: ./contact-table
-[5]: ./document-table
-[6]: ./person-table
-[7]: ./project-table
-[8]: ./sale-table
-[9]: ./selection-table
+[1]: /en/api/bulk-operations/bulk-update/reference/ticket-table
+[3]: /en/api/bulk-operations/bulk-update/reference/appointment-table
+[4]: /en/api/bulk-operations/bulk-update/reference/contact-table
+[5]: /en/api/bulk-operations/bulk-update/reference/document-table
+[6]: /en/api/bulk-operations/bulk-update/reference/person-table
+[7]: /en/api/bulk-operations/bulk-update/reference/project-table
+[8]: /en/api/bulk-operations/bulk-update/reference/sale-table
+[9]: /en/api/bulk-operations/bulk-update/reference/selection-table

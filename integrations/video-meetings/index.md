@@ -61,13 +61,13 @@ With SuperOffice Inbox, you need to update the invitation template.
 
 ![imageloql6.png -screenshot][img2]
 
-[1]: ./howto/create
-[2]: ./howto/join
-[3]: ./howto/disconnect-provider
-[4]: ./howto/configure-email-invitations
-[5]: ./howto/connect-provider
-[6]: ./howto/disconnect-user
-[7]: ./troubleshooting
+[1]: /integrations/video-meetings/howto/create
+[2]: /integrations/video-meetings/howto/join
+[3]: /integrations/video-meetings/howto/disconnect-provider
+[4]: /integrations/video-meetings/howto/configure-email-invitations
+[5]: /integrations/video-meetings/howto/connect-provider
+[6]: /integrations/video-meetings/howto/disconnect-user
+[7]: /integrations/video-meetings/troubleshooting
 
 [img1]: /media/loc/en/integrations/video-meetings/image99xdi.png
 [img2]: /media/loc/en/integrations/video-meetings/imageloql6.png

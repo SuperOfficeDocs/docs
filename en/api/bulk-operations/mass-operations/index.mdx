@@ -24,10 +24,10 @@ Supported database servers are Microsoft SQL Server and Oracle Database Servers.
 
 | Function  | Purpose            | Comment                         |
 |-----------|--------------------|---------------------------------|
-| [Delete](./delete)    | Delete multiple rows by primary key | More efficient than deleting rows one by one but less efficient than truncate. |
-| [Insert](./insert)    | Add new rows.      | No primary key needs to be specified, all rows are simply added. Any collision with unique indexes causes an exception. |
-| [Truncate](./truncate)  | Delete all rows in a table. | Unconditional, non-recoverable truncation of the table. Very fast, near-instant. Resets primary key value to 1. |
-| [Upsert](./upsert)    | Add or update rows by key | Key column(s) designate target rows. Rows that have *no* key match are treated as **insert** rows. **No support for Oracle**. |
+| [Delete](/en/api/bulk-operations/mass-operations/delete)    | Delete multiple rows by primary key | More efficient than deleting rows one by one but less efficient than truncate. |
+| [Insert](/en/api/bulk-operations/mass-operations/insert)    | Add new rows.      | No primary key needs to be specified, all rows are simply added. Any collision with unique indexes causes an exception. |
+| [Truncate](/en/api/bulk-operations/mass-operations/truncate)  | Delete all rows in a table. | Unconditional, non-recoverable truncation of the table. Very fast, near-instant. Resets primary key value to 1. |
+| [Upsert](/en/api/bulk-operations/mass-operations/upsert)    | Add or update rows by key | Key column(s) designate target rows. Rows that have *no* key match are treated as **insert** rows. **No support for Oracle**. |
 
 <Warning>
 Mass operations do not work on these [protected-tables][4].
@@ -90,9 +90,9 @@ You don't *have* to encode every value. Internally, NetServer does accept un-enc
 
 SuperOffice does not support [webhooks][6] or travel transaction logging for extra tables, however, all other table changes do send out appropriate webhook notifications to subscribers, row by row. Each change is also added to [travel transaction log][3] table.
 
-[1]: ../../authentication/online/auth-application/index
-[2]: ../../../database/index
-[3]: ../../../database/tables/index
-[4]: ./protected-tables
-[5]: ../../localization/culture/culturedataformatter
-[6]: ../../../automation/webhook/dev/index
+[1]: /en/api/authentication/online/auth-application/index
+[2]: /en/database/index
+[3]: /en/database/tables/index
+[4]: /en/api/bulk-operations/mass-operations/protected-tables
+[5]: /en/api/localization/culture/culturedataformatter
+[6]: /en/automation/webhook/dev/index

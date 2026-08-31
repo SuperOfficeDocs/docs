@@ -111,10 +111,10 @@ SuperOffice's search capabilities are designed to cater to a variety of needs-fr
 
 See the [Search Options][3] section for more details on Selections and Find operations as a user in SuperOffice CRM.
 
-[0]: ../archive-providers/index
-[1]: ../archive-providers/reference/index
-[2]: ./find-selection/index
-[3]: ../../search-options/learn/index
-[4]: ../mdo-providers/index
-[5]: ../lists/index
-[6]: ../search/odata/index
+[0]: /en/api/archive-providers/index
+[1]: /en/api/archive-providers/reference/index
+[2]: /en/api/search/find-selection/index
+[3]: /en/search-options/learn/index
+[4]: /en/api/mdo-providers/index
+[5]: /en/api/lists/index
+[6]: /en/api/search/odata/index

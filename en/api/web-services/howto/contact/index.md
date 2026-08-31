@@ -20,11 +20,11 @@ redirect_from:
 * [Display person image (ImageUtility)][7]
 * [Display image from BLOB table][8]
 
-[1]: ./get-persons-contactagent
-[2]: ./get-persons-personagent
-[3]: ./update-person-services
-[4]: ./get-person-image-rest
-[5]: ./get-person-image-options
-[6]: ./update-person-image-rest
-[7]: ./display-person-image-ws
-[8]: ./display-image-from-blob-table-services
+[1]: /en/api/web-services/howto/contact/get-persons-contactagent
+[2]: /en/api/web-services/howto/contact/get-persons-personagent
+[3]: /en/api/web-services/howto/contact/update-person-services
+[4]: /en/api/web-services/howto/contact/get-person-image-rest
+[5]: /en/api/web-services/howto/contact/get-person-image-options
+[6]: /en/api/web-services/howto/contact/update-person-image-rest
+[7]: /en/api/web-services/howto/contact/display-person-image-ws
+[8]: /en/api/web-services/howto/contact/display-image-from-blob-table-services

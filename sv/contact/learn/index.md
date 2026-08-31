@@ -55,16 +55,16 @@ Längst ned i fönstret **Kontakt** finns följande [detaljkort][16] som standar
 | [Projekt][14] | Visar alla projekt där den aktiva kontakten är projektdeltagare. |
 | [Relationer][15] | Visar eventuella kopplingar mellan den aktuella kontakten och andra kontakter eller företag. |
 
-[2]: ./create
-[8]: ../../company/learn/index
-[11]: ../../learn/section-tabs/activities-tab
-[12]: ../../learn/section-tabs/sales-tab
-[13]: ../../learn/section-tabs/requests-tab
-[14]: ../../learn/section-tabs/projects-tab
-[15]: ../../learn/section-tabs/relations-tab
-[16]: ../../learn/section-tabs/index
-[19]: ../../custom-objects/learn/more-tab
-[20]: ../../learn/basics/notes
-[21]: ../../customization/web-panels/admin/index#www
-[22]: ../../erp/learn/index
-[img3]: ../../../media/loc/en/contact/contact-screen.png
+[2]: /sv/contact/learn/create
+[8]: /sv/company/learn/index
+[11]: /sv/learn/section-tabs/activities-tab
+[12]: /sv/learn/section-tabs/sales-tab
+[13]: /sv/learn/section-tabs/requests-tab
+[14]: /sv/learn/section-tabs/projects-tab
+[15]: /sv/learn/section-tabs/relations-tab
+[16]: /sv/learn/section-tabs/index
+[19]: /sv/custom-objects/learn/more-tab
+[20]: /sv/learn/basics/notes
+[21]: /sv/customization/web-panels/admin/index#www
+[22]: /sv/erp/learn/index
+[img3]: /media/loc/en/contact/contact-screen.png

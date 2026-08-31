@@ -51,8 +51,8 @@ Ta en titt på disse listene for å se om du vil endre dem:
 
 Disse verktøyene gir administratorer muligheten til å skreddersy salgsprosessene for å sikre effektivitet og enhetlighet i hele organisasjonen.
 
-[1]: ./create-sales-guide
-[2]: ./edit-sales-guide
-[3]: ./sale-stage
-[4]: ./sale-type
-[5]: ./add-currency
+[1]: /no/sale/admin/create-sales-guide
+[2]: /no/sale/admin/edit-sales-guide
+[3]: /no/sale/admin/sale-stage
+[4]: /no/sale/admin/sale-type
+[5]: /no/sale/admin/add-currency

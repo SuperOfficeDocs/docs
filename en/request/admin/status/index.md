@@ -36,6 +36,6 @@ For example, you can create a new status called "Waiting for reply" as a more de
 * [Delete request status][2]
 * [Set up Get next request in queue][3].
 
-[1]: ./create
-[2]: ./delete
-[3]: ../next-in-queue
+[1]: /en/request/admin/status/create
+[2]: /en/request/admin/status/delete
+[3]: /en/request/admin/next-in-queue

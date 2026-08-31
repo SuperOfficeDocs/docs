@@ -40,5 +40,5 @@ Dit zijn de stappen voor het configureren van de chatwidget en deze vervolgens t
 * [Stap 1: Configureer de chatwidget][1]
 * [Stap 2: Voeg chat toe aan uw website][2]
 
-[1]: ./channel-create
-[2]: ./add-javascript
+[1]: /nl/chat/admin/channel-create
+[2]: /nl/chat/admin/add-javascript

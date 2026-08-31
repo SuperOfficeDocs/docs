@@ -21,5 +21,5 @@ You can start with SuperOffice CRM by choosing an existing Zap template from our
 1. [Set up a SuperOffice account to work with Zapier][2]
 2. [Make a Zap with SuperOffice CRM][3]
 
-[2]: ./set-up-account
-[3]: ./create-zap
+[2]: /integrations/zapier/get-started/set-up-account
+[3]: /integrations/zapier/get-started/create-zap

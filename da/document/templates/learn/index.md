@@ -57,7 +57,7 @@ For at sikre, at du kan kommunikere med dine kunder på deres eget sprog (hvor d
 1. [Tilføj og definere dokumentskabelonen][6] i Indstillinger og vedligeholdelse.
 1. [Gør skabelonen tilgængelig][5] for de ønskede brugergrupper.
 
-[1]: ./template-variables
-[2]: ../admin/update-template
-[6]: ../admin/link-template
-[5]: ../../../admin/lists/user-group-filtering
+[1]: /da/document/templates/learn/template-variables
+[2]: /da/document/templates/admin/update-template
+[6]: /da/document/templates/admin/link-template
+[5]: /da/admin/lists/user-group-filtering

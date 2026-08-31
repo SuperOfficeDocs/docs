@@ -15,5 +15,5 @@ redirect_from:
 * [Get address][1]
 * [Set address][2]
 
-[1]: ./get-localized-address
-[2]: ./set-localized-address
+[1]: /en/api/web-services/howto/address/get-localized-address
+[2]: /en/api/web-services/howto/address/set-localized-address

@@ -26,7 +26,7 @@ There will always be a risk of creating duplicates of companies and contacts. To
 
 * [How to maintain GDPR configuration][4]
 
-[1]: ./actions/search-company
-[2]: ./listsource
-[3]: ./datetime
-[4]: ./gdpr
+[1]: /integrations/zapier/howto/actions/search-company
+[2]: /integrations/zapier/howto/listsource
+[3]: /integrations/zapier/howto/datetime
+[4]: /integrations/zapier/howto/gdpr

@@ -81,9 +81,9 @@ Här kan du matcha kunden i chatten mot en befintlig kontakt i SuperOffice eller
 
 Om kunden finns i SuperOffice kan du visa kontaktinformation, ärenden, försäljning, händelser och tidigare registrerade chattsessioner.
 
-[1]: ../../knowledge-base/learn/faq/index
-[3]: ../../knowledge-base/learn/reply-templates/index
-[4]: ./respond
-[11]: ./create-request
-[12]: ./transfer-to-agent
-[img1]: ../../../media/loc/en/chat/10-chat-mainpage.png
+[1]: /sv/knowledge-base/learn/faq/index
+[3]: /sv/knowledge-base/learn/reply-templates/index
+[4]: /sv/chat/learn/respond
+[11]: /sv/chat/learn/create-request
+[12]: /sv/chat/learn/transfer-to-agent
+[img1]: /media/loc/en/chat/10-chat-mainpage.png

@@ -28,7 +28,7 @@ language: no
 
 * **E-postadresser**: Her kan du [opprette en liste over e-postadresser][4] som du ofte har bruk for, f.eks. e-postadresser til personer som ikke er brukere eller registrert som personer i SuperOffice CRM. Disse adressene vil da være tilgjengelige de fleste stedene der du har behov for å sende e-post.
 
-[1]: ./external-document
-[2]: ./faq/index
-[3]: ./reply-templates/index
-[4]: ./email-addresses
+[1]: /no/knowledge-base/learn/external-document
+[2]: /no/knowledge-base/learn/faq/index
+[3]: /no/knowledge-base/learn/reply-templates/index
+[4]: /no/knowledge-base/learn/email-addresses

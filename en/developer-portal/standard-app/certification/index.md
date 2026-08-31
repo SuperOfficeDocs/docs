@@ -37,10 +37,10 @@ The certification is free of charge except for a [fee billed by Telenor Cyberdef
 
 Follow our [step-by-step guide][6], started by sending a request to publish in the Developer Portal.
 
-[1]: ../../getting-started/app-envir
-[2]: ../../custom-app/index#validate
-[3]: ../index
-[5]: ../requirements/index
-[6]: ./certify-app
-[7]: ./initial-security-eval#does-it-cost-anything
-[8]: ./initial-security-eval
+[1]: /en/developer-portal/getting-started/app-envir
+[2]: /en/developer-portal/custom-app/index#validate
+[3]: /en/developer-portal/standard-app/index
+[5]: /en/developer-portal/standard-app/requirements/index
+[6]: /en/developer-portal/standard-app/certification/certify-app
+[7]: /en/developer-portal/standard-app/certification/initial-security-eval#does-it-cost-anything
+[8]: /en/developer-portal/standard-app/certification/initial-security-eval

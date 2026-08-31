@@ -37,7 +37,7 @@ Brug skærmene **Workflow** og **Lister** i **Indstillinger og vedligeholdelse**
 
 Disse værktøjer gør det muligt for administratorer at tilpasse projektarworkflow, hvilket sikrer effektivitet og ensartethed på tværs af organisationen.
 
-[1]: ./create-project-guide
-[2]: ./edit-project-guide
-[3]: ./project-status
-[4]: ./project-type
+[1]: /da/project/admin/create-project-guide
+[2]: /da/project/admin/edit-project-guide
+[3]: /da/project/admin/project-status
+[4]: /da/project/admin/project-type

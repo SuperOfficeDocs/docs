@@ -59,4 +59,4 @@ Hver prioritet har en tilgjengelighetsegenskap knyttet til seg. Hvis sakens prio
 
 Hvis mer enn to prioriteter er eksternt tilgjengelige, kan kunden velge hvilken prioritet som skal gjelde for saken. Dette kan føre til at saken får høyere prioritet enn nødvendig, ettersom kunden ofte vil velge den høyeste tilgjengelige prioriteten for å få raskest mulig svar. Derfor bør de høyeste prioritetene settes til **Intern**, mens **Medium** og **Lav** kan være eksternt tilgjengelige.
 
-[3]: ./escalation-levels
+[3]: /no/request/admin/priority/escalation-levels

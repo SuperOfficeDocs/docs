@@ -87,5 +87,5 @@ personId    firstName   lastName    middleName  contactId   fullName
 [I:156]     Sal3                                [I:2]       Sal3
 ```
 
-[1]: ../iarchiveagent/index
-[2]: ../../web-services/index
+[1]: /en/api/search/iarchiveagent/index
+[2]: /en/api/web-services/index
