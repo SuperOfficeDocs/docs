@@ -29,9 +29,9 @@ language: en
 * [Languages - 5 new UI languages (10.0.6)][6]
 * [Selection - New chart types in the Online template library (10.0.7)][7]
 
-[1]: ./10.0.1-update
-[2]: ./10.0.2-update
-[3]: ./10.0.3-update
-[4]: ./10.0.4-update
-[6]: ./10.0.6-update
-[7]: ./10.0.7-update
+[1]: /release-notes/10.0/core-crm/10.0.1-update
+[2]: /release-notes/10.0/core-crm/10.0.2-update
+[3]: /release-notes/10.0/core-crm/10.0.3-update
+[4]: /release-notes/10.0/core-crm/10.0.4-update
+[6]: /release-notes/10.0/core-crm/10.0.6-update
+[7]: /release-notes/10.0/core-crm/10.0.7-update

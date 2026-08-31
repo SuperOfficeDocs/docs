@@ -94,8 +94,8 @@ We use **pilot programs** to assess how well the features and functions meet our
 * [SuperOffice CRM - AI Lab][8] (available from 10.3.2 - 20.02.2024)
 * [SuperOffice Service - New Service Request][9] (available on demand from 10.2.1 - 27.01.2023)
 
-[1]: ./admin/10.5.1-update
-[2]: ./core-crm/10.5.1-update
+[1]: /release-notes/10.5/admin/10.5.1-update
+[2]: /release-notes/10.5/core-crm/10.5.1-update
 [7]: https://community.superoffice.com/en/product-releases/pilot-programs/
 [8]: https://community.superoffice.com/en/product-releases/pilot-programs/current-pilot-programs/
 [9]: https://community.superoffice.com/en/product-releases/whats-new/product/
@@ -103,11 +103,11 @@ We use **pilot programs** to assess how well the features and functions meet our
 [11]: /integrations/superoffice-for-outlook/index
 [12]: /en/mobile/index
 [14]: /en/learn/index
-[17]: ./admin/10.5.2-update#split-request
-[18]: ./admin/10.5.2-update#close-request
-[19]: ./core-crm/10.5.2-update
-[20]: ./core-crm/10.5.3-update
-[21]: ./service/10.5.3-update
-[22]: ./admin/10.5.5-update
-[23]: ./core-crm/10.5.5-update
-[24]: ./service/10.5.5-update
+[17]: /release-notes/10.5/admin/10.5.2-update#split-request
+[18]: /release-notes/10.5/admin/10.5.2-update#close-request
+[19]: /release-notes/10.5/core-crm/10.5.2-update
+[20]: /release-notes/10.5/core-crm/10.5.3-update
+[21]: /release-notes/10.5/service/10.5.3-update
+[22]: /release-notes/10.5/admin/10.5.5-update
+[23]: /release-notes/10.5/core-crm/10.5.5-update
+[24]: /release-notes/10.5/service/10.5.5-update

@@ -27,8 +27,8 @@ language: en
 * [Dashboard - Duration on Follow-up tiles (10.1.9)][9]
 * [Find and selection - None of the interests criteria (10.1.9)][9]
 
-[3]: ./10.1.3-update
-[4]: ./10.1.4-update
-[5]: ./10.1.5-update
-[6]: ./10.1.6-update
-[9]: ./10.1.9-update
+[3]: /release-notes/10.1/core-crm/10.1.3-update
+[4]: /release-notes/10.1/core-crm/10.1.4-update
+[5]: /release-notes/10.1/core-crm/10.1.5-update
+[6]: /release-notes/10.1/core-crm/10.1.6-update
+[9]: /release-notes/10.1/core-crm/10.1.9-update

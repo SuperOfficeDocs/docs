@@ -20,9 +20,9 @@ language: en
 * [Chat - Better use of small screens like a mobile (10.0.6)][6]
 * [Languages - 5 new UI languages (10.0.6)][7]
 
-[2]: ./10.0.2-update
-[3]: ./10.0.3-update
-[4]: ./10.0.4-update
-[5]: ./10.0.5-update
-[6]: ./10.0.6-update
-[7]: ../core-crm/10.0.6-update#languages
+[2]: /release-notes/10.0/cep/10.0.2-update
+[3]: /release-notes/10.0/cep/10.0.3-update
+[4]: /release-notes/10.0/cep/10.0.4-update
+[5]: /release-notes/10.0/cep/10.0.5-update
+[6]: /release-notes/10.0/cep/10.0.6-update
+[7]: /release-notes/10.0/core-crm/10.0.6-update#languages

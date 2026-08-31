@@ -28,10 +28,10 @@ language: en
 * [Dashboard - New standard request tiles (10.3.2)][2]
 * [Dashboard - Request tiles (10.3.1)][1]
 
-[1]: ./10.3.1-update
-[2]: ./10.3.2-update
-[6]: ./10.3.6-update
-[9]: ./10.3.9-update
-[10]: ./10.3.10-update
-[11]: ./10.3.11-update
-[12]: ./10.3.12-update
+[1]: /release-notes/10.3/core-crm/10.3.1-update
+[2]: /release-notes/10.3/core-crm/10.3.2-update
+[6]: /release-notes/10.3/core-crm/10.3.6-update
+[9]: /release-notes/10.3/core-crm/10.3.9-update
+[10]: /release-notes/10.3/core-crm/10.3.10-update
+[11]: /release-notes/10.3/core-crm/10.3.11-update
+[12]: /release-notes/10.3/core-crm/10.3.12-update

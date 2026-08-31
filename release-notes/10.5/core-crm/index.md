@@ -28,7 +28,7 @@ language: en
 * [Side panel favourites (10.5.1)][1]
 * [SuperOffice Copilot - Text field with AI options (10.5.1)][1]
 
-[1]: ./10.5.1-update
-[2]: ./10.5.2-update
-[3]: ./10.5.3-update
-[5]: ./10.5.5-update
+[1]: /release-notes/10.5/core-crm/10.5.1-update
+[2]: /release-notes/10.5/core-crm/10.5.2-update
+[3]: /release-notes/10.5/core-crm/10.5.3-update
+[5]: /release-notes/10.5/core-crm/10.5.5-update

@@ -19,8 +19,8 @@ language: en
 * [Email domain validation (10.2.2)][2]
 * [Task menu list items (10.2.1)][1]
 
-[1]: ./10.2.1-update
-[2]: ./10.2.2-update
-[3]: ./10.2.3-update
-[10]: ./10.2.10-update
-[11]: ./10.2.11-update
+[1]: /release-notes/10.2/admin/10.2.1-update
+[2]: /release-notes/10.2/admin/10.2.2-update
+[3]: /release-notes/10.2/admin/10.2.3-update
+[10]: /release-notes/10.2/admin/10.2.10-update
+[11]: /release-notes/10.2/admin/10.2.11-update

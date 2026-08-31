@@ -19,8 +19,8 @@ language: en
 * [Marketing - Prevent import of contacts not registered in your SuperOffice (8.5 R08)][8]
 * [Marketing - Paging on Recipients tab (8.5 R16)][16]
 
-[2]: ./8.5-R02-update
-[4]: ./8.5-R04-update
-[5]: ./8.5-R05-update
-[8]: ./8.5-R08-update
-[16]: ./8.5-R16-update
+[2]: /release-notes/8.5/marketing/8.5-R02-update
+[4]: /release-notes/8.5/marketing/8.5-R04-update
+[5]: /release-notes/8.5/marketing/8.5-R05-update
+[8]: /release-notes/8.5/marketing/8.5-R08-update
+[16]: /release-notes/8.5/marketing/8.5-R16-update

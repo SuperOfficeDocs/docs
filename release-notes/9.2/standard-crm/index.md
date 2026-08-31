@@ -50,12 +50,12 @@ language: en
 * [Export to Excel from archives][9]
 * [Sales criteria on Sale Stakeholder][9]
 
-[1]: ./9.2-R01-update
-[2]: ./9.2-R02-update
-[3]: ./9.2-R03-update
-[4]: ./9.2-R04-update
-[5]: ./9.2-R05-update
-[6]: ./9.2-R06-update
-[7]: ./9.2-R07-update
-[8]: ./9.2-R08-update
-[9]: ./9.2-R09-update
+[1]: /release-notes/9.2/standard-crm/9.2-R01-update
+[2]: /release-notes/9.2/standard-crm/9.2-R02-update
+[3]: /release-notes/9.2/standard-crm/9.2-R03-update
+[4]: /release-notes/9.2/standard-crm/9.2-R04-update
+[5]: /release-notes/9.2/standard-crm/9.2-R05-update
+[6]: /release-notes/9.2/standard-crm/9.2-R06-update
+[7]: /release-notes/9.2/standard-crm/9.2-R07-update
+[8]: /release-notes/9.2/standard-crm/9.2-R08-update
+[9]: /release-notes/9.2/standard-crm/9.2-R09-update

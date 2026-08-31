@@ -20,6 +20,6 @@ language: en
 * [Mailing - Validation of preheader text in email mailing (10.3.10)][10]
 * [Marketing Premium - Automate with flows including multiple mailings and other steps (10.3.9)][9]
 
-[9]: ./10.3.9-update
-[10]: ./10.3.10-update
-[12]: ./10.3.12-update
+[9]: /release-notes/10.3/marketing/10.3.9-update
+[10]: /release-notes/10.3/marketing/10.3.10-update
+[12]: /release-notes/10.3/marketing/10.3.12-update

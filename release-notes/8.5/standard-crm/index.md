@@ -28,13 +28,13 @@ language: en
 * [Inbox - Automatic refresh of the inbox folders (8.5 R16)][16]
 * [OAuth - Open Authorization for Inbox / Open Authorization for Mail boxes (8.5 R17)][17]
 
-[1]: ./8.5-R01-update
-[2]: ./8.5-R02-update
-[5]: ./8.5-R05-update
-[6]: ./8.5-R06-update
-[7]: ./8.5-R07-update
-[10]: ./8.5-R10-update
-[11]: ./8.5-R11-update
-[14]: ./8.5-R14-update
-[16]: ./8.5-R16-update
-[17]: ./8.5-R17-update
+[1]: /release-notes/8.5/standard-crm/8.5-R01-update
+[2]: /release-notes/8.5/standard-crm/8.5-R02-update
+[5]: /release-notes/8.5/standard-crm/8.5-R05-update
+[6]: /release-notes/8.5/standard-crm/8.5-R06-update
+[7]: /release-notes/8.5/standard-crm/8.5-R07-update
+[10]: /release-notes/8.5/standard-crm/8.5-R10-update
+[11]: /release-notes/8.5/standard-crm/8.5-R11-update
+[14]: /release-notes/8.5/standard-crm/8.5-R14-update
+[16]: /release-notes/8.5/standard-crm/8.5-R16-update
+[17]: /release-notes/8.5/standard-crm/8.5-R17-update

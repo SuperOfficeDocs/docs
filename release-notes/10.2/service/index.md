@@ -33,9 +33,9 @@ language: en
 * [Search in the Find request tab gives both selections and requests (10.2.6)][6]
 * [Service/Request inside the CRM module (10.2.5)][5]
 
-[5]: ./10.2.5-update
-[6]: ./10.2.6-update
-[8]: ./10.2.8-update
-[9]: ./10.2.9-update
-[10]: ./10.2.10-update
-[11]: ./10.2.11-update
+[5]: /release-notes/10.2/service/10.2.5-update
+[6]: /release-notes/10.2/service/10.2.6-update
+[8]: /release-notes/10.2/service/10.2.8-update
+[9]: /release-notes/10.2/service/10.2.9-update
+[10]: /release-notes/10.2/service/10.2.10-update
+[11]: /release-notes/10.2/service/10.2.11-update

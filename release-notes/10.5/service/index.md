@@ -19,5 +19,5 @@ language: en
 * [Requests - Quickly add a request from the section tab (10.5.3)][3]
 * [Requests - Preference for expanded messages (10.5.3)][3]
 
-[3]: ./10.5.3-update
-[5]: ./10.5.5-update
+[3]: /release-notes/10.5/service/10.5.3-update
+[5]: /release-notes/10.5/service/10.5.5-update

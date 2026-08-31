@@ -29,10 +29,10 @@ noindex: true
 * [Pocket CRM - Better user experience for editing an appointment (9.0.4)][1]
 * [Pocket CRM - Improved UX for adding participants to a new appointment (9.0.4)][1]
 
-[1]: ./9.0.4-update
-[2]: ./9.0.5-update
-[3]: ./9.0.7-update
-[4]: ./9.0.9-update
-[6]: ./9.1.4-update
-[7]: ./9.1.5-update
-[8]: ./9.1.6-update
+[1]: /release-notes/pocket-crm/9.0.4-update
+[2]: /release-notes/pocket-crm/9.0.5-update
+[3]: /release-notes/pocket-crm/9.0.7-update
+[4]: /release-notes/pocket-crm/9.0.9-update
+[6]: /release-notes/pocket-crm/9.1.4-update
+[7]: /release-notes/pocket-crm/9.1.5-update
+[8]: /release-notes/pocket-crm/9.1.6-update

@@ -27,12 +27,12 @@ language: en
 * [System design - show extrafield in Request Properties sidebar (10.3.1)][12]
 * [Dashboard - Request tiles (10.3.1)][13]
 
-[1]: ./10.3.1-update
-[2]: ./10.3.2-update
-[3]: ./10.3.3-update
-[5]: ./10.3.5-update
-[6]: ./10.3.6-update
-[8]: ./10.3.8-update
-[11]: ./10.3.11-update
-[12]: ../admin/10.3.1-update
-[13]: ../core-crm/10.3.1-update
+[1]: /release-notes/10.3/service/10.3.1-update
+[2]: /release-notes/10.3/service/10.3.2-update
+[3]: /release-notes/10.3/service/10.3.3-update
+[5]: /release-notes/10.3/service/10.3.5-update
+[6]: /release-notes/10.3/service/10.3.6-update
+[8]: /release-notes/10.3/service/10.3.8-update
+[11]: /release-notes/10.3/service/10.3.11-update
+[12]: /release-notes/10.3/admin/10.3.1-update
+[13]: /release-notes/10.3/core-crm/10.3.1-update

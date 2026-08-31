@@ -16,5 +16,5 @@ language: en
 * [Mailing Magic AI on heading, button and image (10.2.3)][2]
 * [Email domain validation (10.2.2)][1]
 
-[1]: ./10.2.2-update
-[2]: ./10.2.3-update
+[1]: /release-notes/10.2/marketing/10.2.2-update
+[2]: /release-notes/10.2/marketing/10.2.3-update

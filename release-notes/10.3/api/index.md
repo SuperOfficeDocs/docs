@@ -30,16 +30,16 @@ language: en
 * [Version 10.3.12][12]
 * [Version 10.3.13][13]
 
-[1]: ./10.3.1-update
-[2]: ./10.3.2-update
-[3]: ./10.3.3-update
-[4]: ./10.3.4-update
-[5]: ./10.3.5-update
-[6]: ./10.3.6-update
-[7]: ./10.3.7-update
-[8]: ./10.3.8-update
-[9]: ./10.3.9-update
-[10]: ./10.3.10-update
-[11]: ./10.3.11-update
-[12]: ./10.3.12-update
-[13]: ./10.3.13-update
+[1]: /release-notes/10.3/api/10.3.1-update
+[2]: /release-notes/10.3/api/10.3.2-update
+[3]: /release-notes/10.3/api/10.3.3-update
+[4]: /release-notes/10.3/api/10.3.4-update
+[5]: /release-notes/10.3/api/10.3.5-update
+[6]: /release-notes/10.3/api/10.3.6-update
+[7]: /release-notes/10.3/api/10.3.7-update
+[8]: /release-notes/10.3/api/10.3.8-update
+[9]: /release-notes/10.3/api/10.3.9-update
+[10]: /release-notes/10.3/api/10.3.10-update
+[11]: /release-notes/10.3/api/10.3.11-update
+[12]: /release-notes/10.3/api/10.3.12-update
+[13]: /release-notes/10.3/api/10.3.13-update

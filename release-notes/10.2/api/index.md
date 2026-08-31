@@ -305,7 +305,7 @@ services.AddLogging(a =>
 * [Version 10.2.10][224]
 * [Version 10.2.11][225]
 
-[1]: ./10.2.1-update
+[1]: /release-notes/10.2/api/10.2.1-update
 [2]: /en/api/archive-providers/reference/recycleticket
 [3]: /en/api/mdo-providers/reference/relateddatafields
 [4]: /en/api/mdo-providers/reference/taskmenu
@@ -336,13 +336,13 @@ services.AddLogging(a =>
 [120]: /en/api/archive-providers/reference/externaldocumentfolders
 [121]: /en/api/archive-providers/reference/externaldocumentitems
 [122]: /en/api/archive-providers/reference/externaldocuments
-[131]: ./10.2.2-update
-[132]: ./10.2.3-update
-[133]: ./10.2.4-update
-[134]: ./10.2.5-update
-[135]: ./10.2.6-update
-[136]: ./10.2.8-update
-[300]: ./10.2.7-update
+[131]: /release-notes/10.2/api/10.2.2-update
+[132]: /release-notes/10.2/api/10.2.3-update
+[133]: /release-notes/10.2/api/10.2.4-update
+[134]: /release-notes/10.2/api/10.2.5-update
+[135]: /release-notes/10.2/api/10.2.6-update
+[136]: /release-notes/10.2/api/10.2.8-update
+[300]: /release-notes/10.2/api/10.2.7-update
 [140]: /en/api/mdo-providers/reference/appointmentresource
 [141]: /en/api/mdo-providers/reference/contact_and_person_freetextsearch
 [142]: /en/api/mdo-providers/reference/contact_and_person_freetextsearch_hierarchical
@@ -352,9 +352,9 @@ services.AddLogging(a =>
 [182]: /en/api/mdo-providers/reference/timezoneiana
 [183]: /en/api/mdo-providers/reference/workflowtimewaitalgorithm
 [184]: /en/api/mdo-providers/reference/workflowtimewaitintervaltype
-[209]: ./10.2.9-update
+[209]: /release-notes/10.2/api/10.2.9-update
 [210]: /en/api/mdo-providers/reference/emailphone
 [211]: /en/api/mdo-providers/reference/workflowsplitoptiontype
-[224]: ./10.2.10-update
-[225]: ./10.2.11-update
+[224]: /release-notes/10.2/api/10.2.10-update
+[225]: /release-notes/10.2/api/10.2.11-update
 [226]: /en/api/mdo-providers/reference/invitationtemplatelanguage

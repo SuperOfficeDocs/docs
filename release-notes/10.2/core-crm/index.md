@@ -20,8 +20,8 @@ language: en
 * [End of life for Old dashboards (10.2.4)][4]
 * [Preferences, Batch management, Custom tasks, Document preview of meta data (10.2.1)][1]
 
-[1]: ./10.2.1-update
-[4]: ./10.2.4-update
-[8]: ./10.2.8-update
-[10]: ../admin/10.2.10-update
-[11]: ./10.2.11-update
+[1]: /release-notes/10.2/core-crm/10.2.1-update
+[4]: /release-notes/10.2/core-crm/10.2.4-update
+[8]: /release-notes/10.2/core-crm/10.2.8-update
+[10]: /release-notes/10.2/admin/10.2.10-update
+[11]: /release-notes/10.2/core-crm/10.2.11-update

@@ -22,6 +22,6 @@ language: en
 * [CRMScript - Close Request tab (10.5.2)][2] in Settings and maintenance
 * [SuperOffice AI Lab - Easy to get started (10.5.1)][1]
 
-[1]: ./10.5.1-update
-[2]: ./10.5.2-update
-[5]: ./10.5.5-update
+[1]: /release-notes/10.5/admin/10.5.1-update
+[2]: /release-notes/10.5/admin/10.5.2-update
+[5]: /release-notes/10.5/admin/10.5.5-update
