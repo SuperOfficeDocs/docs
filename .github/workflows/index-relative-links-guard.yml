@@ -1,0 +1,59 @@
+name: Index page relative-links guard
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+# Automatically cancel in-progress runs on the same branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  index-relative-links-guard:
+    name: "Warn on relative links authored on index.md/index.mdx pages"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get changed files
+        id: changed
+        uses: tj-actions/changed-files@v45
+        with:
+          files: |
+            **/index.md
+            **/index.mdx
+          files_ignore: |
+            blueprint-templates/**
+            en/api/reference/webapi/**
+            en/api/reference/restful/**
+            en/api/archive-providers/reference/**
+            en/api/mdo-providers/reference/**
+            en/automation/crmscript/reference/**
+            en/automation/trigger/reference/**
+            en/database/tables/**
+
+      - name: Set up Python
+        if: steps.changed.outputs.any_changed == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: "Check changed index pages for relative links"
+        if: steps.changed.outputs.any_changed == 'true'
+        # The changed-files list is untrusted PR-diff content (attacker-controlled
+        # filenames). Pass it through env instead of interpolating the `${{ }}`
+        # expression directly into the run script -- direct interpolation is a
+        # known GitHub Actions script-injection vector, since the expression is
+        # substituted into the shell script's source text before bash parses it.
+        env:
+          CHANGED_FILES: ${{ steps.changed.outputs.all_changed_files }}
+        run: python tools/ci/check-index-relative-links.py $CHANGED_FILES

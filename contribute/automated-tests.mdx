@@ -28,6 +28,7 @@ This page is the single reference for every automatic check that runs against th
 | Markdownlint | GitHub Action (`.github/workflows/markdownlint.yml`) | No - advisory | This repo, `.markdownlint.yaml` / `.markdownlintignore` |
 | Landing page template guard | GitHub Action (`.github/workflows/landing-page-template-guard.yml`) | No - advisory (warns only) | This repo, `tools/ci/check-landing-page-templates.py` |
 | Release-notes API structure guard | GitHub Action (`.github/workflows/release-notes-api-structure-guard.yml`) | No - advisory (warns only) | This repo, `tools/ci/check-release-notes-api-structure.py` |
+| Index page relative-links guard | GitHub Action (`.github/workflows/index-relative-links-guard.yml`) | No - advisory (warns only) | This repo, `tools/ci/check-index-relative-links.py` |
 | Vale | Mintlify CI Checks add-on | No - Warning level | Mintlify dashboard (Add-ons > CI Checks), using this repo's `.vale.ini` |
 | Build validation | Mintlify preview deployment | Yes - a failed build shows as a red "Mintlify Deployment" check | Mintlify, automatic on every PR (see [Deploy trigger mechanics][2]) |
 | Broken links (internal) | Mintlify CI Checks add-on | No - Warning level | Mintlify dashboard (Add-ons > CI Checks) |
@@ -90,6 +91,10 @@ Checks only the `.mdx` files changed in a PR (or pushed directly to `main`) for 
 ### Release-notes API structure guard
 
 Only triggers on a PR touching `release-notes/*/api/**`. `release-notes/{major}/api/` uses a flat structure - generated files sit directly under `MAJOR/api/`, using their original generated filename, with no per-minor-version subfolder (see [Add or update release notes][10]). This check warns when a changed file sits one directory level deeper than that instead - `release-notes/{major}/api/{subfolder}/...`. Historical dotted-version trees (`release-notes/10.1/api/`, `release-notes/9.2/api/`, etc.) use their own, different, frozen structure and are excluded by design - the check's path match requires a digit-only major version, which those don't have. It never fails the check - a hit shows up as a warning annotation on the PR's Files Changed tab, naming the file.
+
+### Index page relative-links guard
+
+Checks only `index.md`/`index.mdx` files changed in a PR (or pushed directly to `main`), excluding the machine-generated reference trees. A page built from a literal `index.md`/`index.mdx` file is served at its folder's own bare path with no trailing slash, so a relative link (`./...`, `../...`) authored *on* that page resolves against the wrong parent folder in production - the target genuinely exists on disk, so it's invisible to every check that resolves links via filesystem path math (`mint validate` doesn't check links at all, and `tools/triage-broken-links.py` resolves against the file's disk location, not the live URL). This bug class was found and fixed repo-wide in [issue #375][15] and [issue #377][16]; this guard exists so it can't quietly reappear. It flags both markdown links (inline and reference-style) and raw HTML/JSX `href` values, skips MDX `import` statements, code blocks/spans, and frontmatter. It never fails the check - a hit shows up as a warning annotation on the relevant line in the PR's Files Changed tab. See [How to use links in docs][17] for the underlying rule.
 
 ### Vale
 
@@ -168,3 +173,6 @@ mint automations create --name "Broken link detection" --type broken-link-detect
 [12]: https://github.com/SuperOfficeDocs/docs/pull/232
 [13]: https://github.com/SuperOfficeDocs/docs/issues/297
 [14]: ./markdown-guide/metadata
+[15]: https://github.com/SuperOfficeDocs/docs/issues/375
+[16]: https://github.com/SuperOfficeDocs/docs/issues/377
+[17]: ./markdown-guide/links-in-docs
