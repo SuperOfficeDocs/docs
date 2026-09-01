@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_GetEMailFromTempRequest"></a> Class EMail\_GetEMailFromTempRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_GetEMailFromTempRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_GetEMailFromTempRequest](SuperOffice.WebApi.Data.EMail\_GetEMailFromTempRequest.md)
+[EMail\_GetEMailFromTempRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_GetEMailFromTempRequest)
 
 #### Inherited Members
 

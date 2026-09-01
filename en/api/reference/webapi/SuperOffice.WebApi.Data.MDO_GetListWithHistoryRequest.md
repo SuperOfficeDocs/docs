@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_MDO_GetListWithHistoryRequest"></a> Class MDO\_GetListWithHistoryRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class MDO_GetListWithHistoryRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[MDO\_GetListWithHistoryRequest](SuperOffice.WebApi.Data.MDO\_GetListWithHistoryRequest.md)
+[MDO\_GetListWithHistoryRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.MDO_GetListWithHistoryRequest)
 
 #### Inherited Members
 

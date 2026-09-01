@@ -31,7 +31,7 @@ Initializes a new instance of the NSFieldInfoBase class.
 String GetDescription()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Optional tooltip text for this field.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Optional tooltip text for this field.
 
 **Example:**
 
@@ -46,7 +46,7 @@ String description = thing.GetDescription();
 String GetDisplayName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Label for field. May be multi-lang string encoded.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Label for field. May be multi-lang string encoded.
 
 **Example:**
 
@@ -61,7 +61,7 @@ String displayName = thing.GetDisplayName();
 String GetFieldName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Database name or prog-id 'x_foobar' or 'SuperOffice:2'.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Database name or prog-id 'x_foobar' or 'SuperOffice:2'.
 
 **Example:**
 
@@ -76,7 +76,7 @@ String fieldName = thing.GetFieldName();
 Integer GetFieldType()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - What sort of data does this field contain. See &lt;xref href="CRMScript.NetServer.CustomFieldType" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - What sort of data does this field contain. See &lt;xref href="CRMScript.NetServer.CustomFieldType" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
 
 **Example:**
 
@@ -91,7 +91,7 @@ Integer fieldType = thing.GetFieldType();
 Bool GetHideField()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Hide the field from the UI. Only allow API access.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Hide the field from the UI. Only allow API access.
 
 **Example:**
 
@@ -106,7 +106,7 @@ Bool hideField = thing.GetHideField();
 Bool GetHideLabel()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Hide the label if 1
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Hide the label if 1
 
 **Example:**
 
@@ -121,7 +121,7 @@ Bool hideLabel = thing.GetHideLabel();
 Bool GetIsExternal()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Should this field be shown to external users via customer center?
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Should this field be shown to external users via customer center?
 
 **Example:**
 
@@ -136,7 +136,7 @@ Bool isExternal = thing.GetIsExternal();
 Bool GetIsIndexed()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is this field indexed? true if yes; false if no.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Is this field indexed? true if yes; false if no.
 
 **Example:**
 
@@ -151,7 +151,7 @@ Bool isIndexed = thing.GetIsIndexed();
 Bool GetIsMandatory()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - 0 = no, 1 = yes (field must be filled out).
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - 0 = no, 1 = yes (field must be filled out).
 
 **Example:**
 
@@ -166,7 +166,7 @@ Bool isMandatory = thing.GetIsMandatory();
 Bool GetIsReadOnly()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - 0 = read/write, 1 = readonly (don't combine with mandatory).
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - 0 = read/write, 1 = readonly (don't combine with mandatory).
 
 **Example:**
 
@@ -181,7 +181,7 @@ Bool isReadOnly = thing.GetIsReadOnly();
 Integer GetRank()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Tab order, ranking within the custom fields.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Tab order, ranking within the custom fields.
 
 **Example:**
 
@@ -196,7 +196,7 @@ Integer rank = thing.GetRank();
 String GetShortLabel()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Short name to be used in Archive headings and on page 1. If blank, the fieldLabel will be used everywhere.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Short name to be used in Archive headings and on page 1. If blank, the fieldLabel will be used everywhere.
 
 **Example:**
 
@@ -211,7 +211,7 @@ String shortLabel = thing.GetShortLabel();
 String GetTemplateVariableName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Template variable name 'cs01', 'cl02' etc. Null for extra fields.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Template variable name 'cs01', 'cl02' etc. Null for extra fields.
 
 **Example:**
 
@@ -226,7 +226,7 @@ String templateVariableName = thing.GetTemplateVariableName();
 Void SetDescription(String description)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -242,7 +242,7 @@ thing.SetDescription(description);
 Void SetDisplayName(String displayName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -258,7 +258,7 @@ thing.SetDisplayName(displayName);
 Void SetFieldName(String fieldName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -274,7 +274,7 @@ thing.SetFieldName(fieldName);
 Void SetFieldType(Integer fieldType)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -290,7 +290,7 @@ thing.SetFieldType(fieldType);
 Void SetHideField(Bool hideField)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -306,7 +306,7 @@ thing.SetHideField(hideField);
 Void SetHideLabel(Bool hideLabel)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -322,7 +322,7 @@ thing.SetHideLabel(hideLabel);
 Void SetIsExternal(Bool isExternal)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -338,7 +338,7 @@ thing.SetIsExternal(isExternal);
 Void SetIsIndexed(Bool isIndexed)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -354,7 +354,7 @@ thing.SetIsIndexed(isIndexed);
 Void SetIsMandatory(Bool isMandatory)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -370,7 +370,7 @@ thing.SetIsMandatory(isMandatory);
 Void SetIsReadOnly(Bool isReadOnly)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -386,7 +386,7 @@ thing.SetIsReadOnly(isReadOnly);
 Void SetRank(Integer rank)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -402,7 +402,7 @@ thing.SetRank(rank);
 Void SetShortLabel(String shortLabel)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -418,7 +418,7 @@ thing.SetShortLabel(shortLabel);
 Void SetTemplateVariableName(String templateVariableName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

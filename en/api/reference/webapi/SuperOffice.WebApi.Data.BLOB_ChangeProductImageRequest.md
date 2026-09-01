@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_BLOB_ChangeProductImageRequest"></a> Class BLOB\_ChangeProductImageRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class BLOB_ChangeProductImageRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[BLOB\_ChangeProductImageRequest](SuperOffice.WebApi.Data.BLOB\_ChangeProductImageRequest.md)
+[BLOB\_ChangeProductImageRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.BLOB_ChangeProductImageRequest)
 
 #### Inherited Members
 

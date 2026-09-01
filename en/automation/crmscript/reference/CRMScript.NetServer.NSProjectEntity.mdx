@@ -31,7 +31,7 @@ Initializes a new instance of the NSProjectEntity class.
 Integer GetActiveErpLinks()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of active ERP links.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The number of active ERP links.
 
 **Example:**
 
@@ -46,7 +46,7 @@ Integer activeErpLinks = thing.GetActiveErpLinks();
 Integer GetActiveLinks()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of active links to documents, other appointments, and such.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Number of active links to documents, other appointments, and such.
 
 **Example:**
 
@@ -61,7 +61,7 @@ Integer activeLinks = thing.GetActiveLinks();
 Integer GetActiveStatusMonitorId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Active status monitor identity with the lowest rank for project.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Active status monitor identity with the lowest rank for project.
 
 **Example:**
 
@@ -76,7 +76,7 @@ Integer activeStatusMonitorId = thing.GetActiveStatusMonitorId();
 NSAssociate GetAssociate()
 ```
 
-**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The person that created the project.
+**Returns:** [CRMScript.NetServer.NSAssociate](/en/automation/crmscript/reference/CRMScript.NetServer.NSAssociate) - The person that created the project.
 
 **Example:**
 
@@ -91,7 +91,7 @@ NSAssociate associate = thing.GetAssociate();
 Bool GetCompleted()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Done (0=false, 1=true); implies changes in which fields are shown in GUI, as well as which fields can be updated.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Done (0=false, 1=true); implies changes in which fields are shown in GUI, as well as which fields can be updated.
 
 **Example:**
 
@@ -106,7 +106,7 @@ Bool completed = thing.GetCompleted();
 NSAssociate GetCreatedBy()
 ```
 
-**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The person that created the project.
+**Returns:** [CRMScript.NetServer.NSAssociate](/en/automation/crmscript/reference/CRMScript.NetServer.NSAssociate) - The person that created the project.
 
 **Example:**
 
@@ -121,7 +121,7 @@ NSAssociate createdBy = thing.GetCreatedBy();
 DateTime GetCreatedDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered date.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Registered date.
 
 **Example:**
 
@@ -138,7 +138,7 @@ Gets the user-defined + extra fields on a ProjectEntity as a map.
 Map GetCustomFields()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map)
 
 **Example:**
 
@@ -157,7 +157,7 @@ for (fields.first(); !fields.eof(); fields.next())
 String GetDescription()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The actual text, max 2047 significant characters even though it is stored as a larger data type on some databases.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The actual text, max 2047 significant characters even though it is stored as a larger data type on some databases.
 
 **Example:**
 
@@ -172,7 +172,7 @@ String description = thing.GetDescription();
 DateTime GetEndDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Planned end date for project, inherited from type and later editable.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Planned end date for project, inherited from type and later editable.
 
 **Example:**
 
@@ -189,7 +189,7 @@ Gets the extra fields on ProjectEntity as a map.
 Map GetExtraFields()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map)
 
 **Example:**
 
@@ -208,7 +208,7 @@ for (fields.first(); !fields.eof(); fields.next())
 Bool GetHasImage()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the project has an image. (This is the image that is displayed in the CRM client).
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if the project has an image. (This is the image that is displayed in the CRM client).
 
 **Example:**
 
@@ -223,7 +223,7 @@ Bool hasImage = thing.GetHasImage();
 String GetImageDescription()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Description of the project image if it exists. (This is the image that is displayed in the CRM client).
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Description of the project image if it exists. (This is the image that is displayed in the CRM client).
 
 **Example:**
 
@@ -238,7 +238,7 @@ String imageDescription = thing.GetImageDescription();
 Bool GetIsPublished()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Should this ProjectEntity be published and visible to strangers?
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Should this ProjectEntity be published and visible to strangers?
 
 ## GetLinks()
 
@@ -246,7 +246,7 @@ Bool GetIsPublished()
 NSLink[] GetLinks()
 ```
 
-**Returns:** [CRMScript.NetServer.NSLink](CRMScript.NetServer.NSLink)[] - All elements linked to the project.
+**Returns:** [CRMScript.NetServer.NSLink](/en/automation/crmscript/reference/CRMScript.NetServer.NSLink)[] - All elements linked to the project.
 
 **Example:**
 
@@ -261,7 +261,7 @@ NSLink[] links = thing.GetLinks();
 String GetName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Project name.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Project name.
 
 **Example:**
 
@@ -276,7 +276,7 @@ String name = thing.GetName();
 DateTime GetNextMilestoneDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Calculated date, reflects date of closest non-complete future milestone activity.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Calculated date, reflects date of closest non-complete future milestone activity.
 
 **Example:**
 
@@ -291,7 +291,7 @@ DateTime nextMilestoneDate = thing.GetNextMilestoneDate();
 Integer GetNmdAppointmentId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of appointment that "caused" the nextMilestoneDate, can be 0
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - ID of appointment that "caused" the nextMilestoneDate, can be 0
 
 **Example:**
 
@@ -306,7 +306,7 @@ Integer nmdAppointmentId = thing.GetNmdAppointmentId();
 String GetPostit()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The actual text, max 2047 significant characters even though it is stored as a larger data type on some databases.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The actual text, max 2047 significant characters even though it is stored as a larger data type on some databases.
 
 **Example:**
 
@@ -321,7 +321,7 @@ String postit = thing.GetPostit();
 Integer GetProjectId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Primary key.
 
 **Example:**
 
@@ -336,7 +336,7 @@ Integer projectId = thing.GetProjectId();
 NSProjectMember[] GetProjectMembers()
 ```
 
-**Returns:** [CRMScript.NetServer.NSProjectMember](CRMScript.NetServer.NSProjectMember)[] - The persons that are members of the project.
+**Returns:** [CRMScript.NetServer.NSProjectMember](/en/automation/crmscript/reference/CRMScript.NetServer.NSProjectMember)[] - The persons that are members of the project.
 
 **Example:**
 
@@ -351,7 +351,7 @@ NSProjectMember[] projectMembers = thing.GetProjectMembers();
 String GetProjectNumber()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Automatically generated number.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Automatically generated number.
 
 **Example:**
 
@@ -366,7 +366,7 @@ String projectNumber = thing.GetProjectNumber();
 NSProjectStatus GetProjectStatus()
 ```
 
-**Returns:** [CRMScript.NetServer.NSProjectStatus](CRMScript.NetServer.NSProjectStatus) - Project status is a list defined by the database administrator. Different statuses of a project may be "In planning", "Started", "Finished" and so on.
+**Returns:** [CRMScript.NetServer.NSProjectStatus](/en/automation/crmscript/reference/CRMScript.NetServer.NSProjectStatus) - Project status is a list defined by the database administrator. Different statuses of a project may be "In planning", "Started", "Finished" and so on.
 
 **Example:**
 
@@ -381,7 +381,7 @@ NSProjectStatus projectStatus = thing.GetProjectStatus();
 NSProjectType GetProjectType()
 ```
 
-**Returns:** [CRMScript.NetServer.NSProjectType](CRMScript.NetServer.NSProjectType) - Project type is a list defined by the database admin. For example, 'Large', 'Small', 'Party'...
+**Returns:** [CRMScript.NetServer.NSProjectType](/en/automation/crmscript/reference/CRMScript.NetServer.NSProjectType) - Project type is a list defined by the database admin. For example, 'Large', 'Small', 'Party'...
 
 **Example:**
 
@@ -396,7 +396,7 @@ NSProjectType projectType = thing.GetProjectType();
 DateTime GetPublishEventDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Publish event date on ProjectEntity.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Publish event date on ProjectEntity.
 
 ## GetPublishFrom()
 
@@ -404,7 +404,7 @@ DateTime GetPublishEventDate()
 DateTime GetPublishFrom()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Publish from date on ProjectEntity.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Publish from date on ProjectEntity.
 
 ## GetPublishTo()
 
@@ -412,7 +412,7 @@ DateTime GetPublishFrom()
 DateTime GetPublishTo()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Publish to date on ProjectEntity. After this date the event is no longer visible.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Publish to date on ProjectEntity. After this date the event is no longer visible.
 
 ## GetUpdatedBy()
 
@@ -420,7 +420,7 @@ DateTime GetPublishTo()
 NSAssociate GetUpdatedBy()
 ```
 
-**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The person that last updated the project.
+**Returns:** [CRMScript.NetServer.NSAssociate](/en/automation/crmscript/reference/CRMScript.NetServer.NSAssociate) - The person that last updated the project.
 
 **Example:**
 
@@ -435,7 +435,7 @@ NSAssociate updatedBy = thing.GetUpdatedBy();
 DateTime GetUpdatedDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last updated date.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Last updated date.
 
 **Example:**
 
@@ -450,7 +450,7 @@ DateTime updatedDate = thing.GetUpdatedDate();
 NSEntityElement[] GetUrls()
 ```
 
-**Returns:** [CRMScript.NetServer.NSEntityElement](CRMScript.NetServer.NSEntityElement)[] - The project's internet addresses.
+**Returns:** [CRMScript.NetServer.NSEntityElement](/en/automation/crmscript/reference/CRMScript.NetServer.NSEntityElement)[] - The project's internet addresses.
 
 **Example:**
 
@@ -467,7 +467,7 @@ Gets the user-defined fields on the ProjectEntity as a map.
 Map GetUserDefinedFields()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map)
 
 **Example:**
 
@@ -486,7 +486,7 @@ for (fields.first(); !fields.eof(); fields.next())
 Void SetActiveErpLinks(Integer activeErpLinks)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -502,7 +502,7 @@ thing.SetActiveErpLinks(activeErpLinks);
 Void SetActiveLinks(Integer activeLinks)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -518,7 +518,7 @@ thing.SetActiveLinks(activeLinks);
 Void SetActiveStatusMonitorId(Integer activeStatusMonitorId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -534,7 +534,7 @@ thing.SetActiveStatusMonitorId(activeStatusMonitorId);
 Void SetAssociate(NSAssociate associate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -550,7 +550,7 @@ thing.SetAssociate(associate);
 Void SetCompleted(Bool completed)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -566,7 +566,7 @@ thing.SetCompleted(completed);
 Void SetCreatedBy(NSAssociate createdBy)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -582,7 +582,7 @@ thing.SetCreatedBy(createdBy);
 Void SetCreatedDate(DateTime createdDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -600,7 +600,7 @@ Sets the user-defined and extra fields on a ProjectEntity with a map.
 Void SetCustomFields(Map udefs)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -621,7 +621,7 @@ thing.SetCustomFields(udefs);
 Void SetDescription(String description)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -637,7 +637,7 @@ thing.SetDescription(description);
 Void SetEndDate(DateTime endDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -655,7 +655,7 @@ Sets the extra field values on ProjectEntity with a map.
 Void SetExtraFields(Map extras)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -674,7 +674,7 @@ thing.SetExtraFields(extras);
 Void SetHasImage(Bool hasImage)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -690,7 +690,7 @@ thing.SetHasImage(hasImage);
 Void SetImageDescription(String imageDescription)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -708,7 +708,7 @@ Sets the visibility of a ProjectEntity
 Void SetIsPublished(Bool sPublished)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## SetLinks(NSLink[])
 
@@ -716,7 +716,7 @@ Void SetIsPublished(Bool sPublished)
 Void SetLinks(NSLink[] links)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -732,7 +732,7 @@ thing.SetLinks(links);
 Void SetName(String name)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -748,7 +748,7 @@ thing.SetName(name);
 Void SetNextMilestoneDate(DateTime nextMilestoneDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -764,7 +764,7 @@ thing.SetNextMilestoneDate(nextMilestoneDate);
 Void SetNmdAppointmentId(Integer nmdAppointmentId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -780,7 +780,7 @@ thing.SetNmdAppointmentId(nmdAppointmentId);
 Void SetPostit(String postIt)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -796,7 +796,7 @@ thing.SetPostit(postIt);
 Void SetProjectId(Integer projectId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -812,7 +812,7 @@ thing.SetProjectId(projectId);
 Void SetProjectMembers(NSProjectMember[] projectMembers)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -828,7 +828,7 @@ thing.SetProjectMembers(projectMembers);
 Void SetProjectNumber(String projectNumber)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -844,7 +844,7 @@ thing.SetProjectNumber(projectNumber);
 Void SetProjectStatus(NSProjectStatus projectStatus)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -860,7 +860,7 @@ thing.SetProjectStatus(projectStatus);
 Void SetProjectType(NSProjectType projectType)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -876,7 +876,7 @@ thing.SetProjectType(projectType);
 Void SetPublishEventDate(DateTime publishDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## SetPublishFrom(DateTime)
 
@@ -886,7 +886,7 @@ Sets the publish from date on a ProjectEntity.
 Void SetPublishFrom(DateTime publishFrom)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## SetPublishTo(DateTime)
 
@@ -896,7 +896,7 @@ Sets the publish to date on ProjectEntity.
 Void SetPublishTo(DateTime publishTo)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## SetUpdatedBy(NSAssociate)
 
@@ -904,7 +904,7 @@ Void SetPublishTo(DateTime publishTo)
 Void SetUpdatedBy(NSAssociate updatedBy)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -920,7 +920,7 @@ thing.SetUpdatedBy(updatedBy);
 Void SetUpdatedDate(DateTime updatedDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -936,7 +936,7 @@ thing.SetUpdatedDate(updatedDate);
 Void SetUrls(NSEntityElement[] urls)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -954,7 +954,7 @@ Sets the user-defined fields on the ProjectEntity as a map.
 Void SetUserDefinedFields(Map udefs)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

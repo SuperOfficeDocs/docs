@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ViewState_PublishAndSyncUiEventsRequest"></a> Class ViewState\_PublishAndSyncUiEventsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ViewState_PublishAndSyncUiEventsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ViewState\_PublishAndSyncUiEventsRequest](SuperOffice.WebApi.Data.ViewState\_PublishAndSyncUiEventsRequest.md)
+[ViewState\_PublishAndSyncUiEventsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ViewState_PublishAndSyncUiEventsRequest)
 
 #### Inherited Members
 
@@ -50,7 +50,7 @@ public MetricPair[] Metrics { get; set; }
 
 #### Property Value
 
- [MetricPair](SuperOffice.WebApi.Data.MetricPair.md)\[\]
+ [MetricPair](/en/api/reference/webapi/SuperOffice.WebApi.Data.MetricPair)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_ViewState_PublishAndSyncUiEventsRequest_PublishEvents"></a> PublishEvents
 
@@ -60,7 +60,7 @@ public UiEvent[] PublishEvents { get; set; }
 
 #### Property Value
 
- [UiEvent](SuperOffice.WebApi.Data.UiEvent.md)\[\]
+ [UiEvent](/en/api/reference/webapi/SuperOffice.WebApi.Data.UiEvent)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_ViewState_PublishAndSyncUiEventsRequest_TicketVersions"></a> TicketVersions
 
@@ -70,5 +70,5 @@ public TicketVersionInfo[] TicketVersions { get; set; }
 
 #### Property Value
 
- [TicketVersionInfo](SuperOffice.WebApi.Data.TicketVersionInfo.md)\[\]
+ [TicketVersionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketVersionInfo)\[\]
 

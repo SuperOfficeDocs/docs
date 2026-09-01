@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Find_FindFromRestrictionsRequest"></a> Class Find\_FindFromRestrictionsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Find_FindFromRestrictionsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Find\_FindFromRestrictionsRequest](SuperOffice.WebApi.Data.Find\_FindFromRestrictionsRequest.md)
+[Find\_FindFromRestrictionsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Find_FindFromRestrictionsRequest)
 
 #### Inherited Members
 
@@ -70,5 +70,5 @@ public ArchiveRestrictionInfo[] Restrictions { get; set; }
 
 #### Property Value
 
- [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
+ [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
 

@@ -1,6 +1,6 @@
 # Interface IResourceAgent {#SuperOffice_WebApi_Agents_IResourceAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 String resource substitution management.
@@ -11,7 +11,7 @@ public interface IResourceAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -38,7 +38,7 @@ The .NET culture string; if blank, then ALL substitutions for this resource will
 
 New status of override
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -66,7 +66,7 @@ The name of the resource, without any brackets
 
 The .NET culture string; if blank, then ALL substitutions for this resource will be dropped
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -98,13 +98,13 @@ Array of names of resources for which overrides are sought; if empty, then get a
 
 If true, then only resources with active substitutions will be returned; if false then ALL existing overrides will be returned
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ResourceOverride](SuperOffice.WebApi.Data.ResourceOverride.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ResourceOverride](/en/api/reference/webapi/SuperOffice.WebApi.Data.ResourceOverride)\[\]\&gt;
 
 Array of override objects, empty if there are none
 
@@ -126,13 +126,13 @@ Array of names of resources for which overrides are sought; if empty, then get t
 
 .NET culture string; if empty, then get for all cultures (unless resourceName
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ResourceOverride](SuperOffice.WebApi.Data.ResourceOverride.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ResourceOverride](/en/api/reference/webapi/SuperOffice.WebApi.Data.ResourceOverride)\[\]\&gt;
 
 Array of override objects, empty if there are none; the ResourceValue member is not set by this call
 
@@ -162,7 +162,7 @@ The .NET culture string
 
 Is the subsitution now active
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 

@@ -31,7 +31,7 @@ Sale data services.
 Void AddSaleStakeholders(Integer saleId, NSSaleStakeholder[] saleStakeholders)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## BatchUpdateNextDueDate()
 
@@ -41,7 +41,7 @@ Re-calculates all the next due dates
 Void BatchUpdateNextDueDate()
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## CreateDefaultSaleEntity()
 
@@ -51,7 +51,7 @@ Sets default values into a new NSSaleEntity.
 NSSaleEntity CreateDefaultSaleEntity()
 ```
 
-**Returns:** [CRMScript.NetServer.NSSaleEntity](CRMScript.NetServer.NSSaleEntity)
+**Returns:** [CRMScript.NetServer.NSSaleEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSSaleEntity)
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
@@ -73,7 +73,7 @@ Sets default values into a new NSSaleStakeholder.
 NSSaleStakeholder CreateDefaultSaleStakeholder()
 ```
 
-**Returns:** [CRMScript.NetServer.NSSaleStakeholder](CRMScript.NetServer.NSSaleStakeholder)
+**Returns:** [CRMScript.NetServer.NSSaleStakeholder](/en/automation/crmscript/reference/CRMScript.NetServer.NSSaleStakeholder)
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
@@ -95,7 +95,7 @@ Sets default values into a new NSSaleSummary.
 NSSaleSummary CreateDefaultSaleSummary()
 ```
 
-**Returns:** [CRMScript.NetServer.NSSaleSummary](CRMScript.NetServer.NSSaleSummary)
+**Returns:** [CRMScript.NetServer.NSSaleSummary](/en/automation/crmscript/reference/CRMScript.NetServer.NSSaleSummary)
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
@@ -117,7 +117,7 @@ Deletes the NSSaleEntity
 DeleteSaleEntity(Integer saleEntity)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -134,7 +134,7 @@ Deletes the NSSaleStakeholder
 DeleteSaleStakeholder(Integer saleStakeholder)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -149,7 +149,7 @@ agent.DeleteSaleStakeholder(123);
 Void DeleteSaleStakeholders(Integer[] saleStakeholderIds)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## GetMyOpportunities(Integer)
 
@@ -159,7 +159,7 @@ Returns opportunities (open sales) belonging to the user currently logged on
 NSSale[] GetMyOpportunities(Integer count)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSale](CRMScript.NetServer.NSSale)[]
+**Returns:** [CRMScript.NetServer.NSSale](/en/automation/crmscript/reference/CRMScript.NetServer.NSSale)[]
 
 **Example:**
 
@@ -177,7 +177,7 @@ Gets the next due date for a sale.
 DateTime GetNextDueDate(Integer saleId)
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime)
 
 <Note>
 The next due date is the next future appointment that is not completed.
@@ -199,7 +199,7 @@ Gets the next (not deleted) sale stage ID if the current stage is deleted. If th
 Integer GetNextSaleStage(Integer saleId, Bool includeCurrentStage)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 ## GetOpenSalesForContact(Integer)
 
@@ -209,7 +209,7 @@ Returns all open sales for the contact provided.
 NSSale[] GetOpenSalesForContact(Integer contactId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSale](CRMScript.NetServer.NSSale)[]
+**Returns:** [CRMScript.NetServer.NSSale](/en/automation/crmscript/reference/CRMScript.NetServer.NSSale)[]
 
 **Example:**
 
@@ -227,7 +227,7 @@ Gets the probability percentage for a given sale stage
 Integer GetProbabilityFromStage(Integer stageId)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 **Example:**
 
@@ -245,7 +245,7 @@ Returns the latest sales (that are sold) limited by their amount.
 NSSale[] GetRecentSales(Integer amountLimit, Integer count)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSale](CRMScript.NetServer.NSSale)[] - The result is sorted descending with the latest first.
+**Returns:** [CRMScript.NetServer.NSSale](/en/automation/crmscript/reference/CRMScript.NetServer.NSSale)[] - The result is sorted descending with the latest first.
 
 **Example:**
 
@@ -264,7 +264,7 @@ Gets an NSSale object.
 NSSale GetSale(Integer saleId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSale](CRMScript.NetServer.NSSale)
+**Returns:** [CRMScript.NetServer.NSSale](/en/automation/crmscript/reference/CRMScript.NetServer.NSSale)
 
 **Example:**
 
@@ -281,7 +281,7 @@ Gets an NSSaleEntity object.
 NSSaleEntity GetSaleEntity(Integer saleEntityId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSaleEntity](CRMScript.NetServer.NSSaleEntity)
+**Returns:** [CRMScript.NetServer.NSSaleEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSSaleEntity)
 
 **Example:**
 
@@ -298,7 +298,7 @@ Gets an array of Sale objects.
 NSSale[] GetSaleList(Integer[]  saleIds)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSale](CRMScript.NetServer.NSSale)[]
+**Returns:** [CRMScript.NetServer.NSSale](/en/automation/crmscript/reference/CRMScript.NetServer.NSSale)[]
 
 **Example:**
 
@@ -316,7 +316,7 @@ Returns all sales within a time period. The sales array can be limited by amount
 NSSale[] GetSalesByDate(DateTime fromDate, DateTime toDate, Integer amountLimit, Integer status)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSale](CRMScript.NetServer.NSSale)[]
+**Returns:** [CRMScript.NetServer.NSSale](/en/automation/crmscript/reference/CRMScript.NetServer.NSSale)[]
 
 **Example:**
 
@@ -337,7 +337,7 @@ Returns all sales for the contact provided.
 NSSale[] GetSalesFromContact(Integer contactId, Bool onlyOpenSales)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSale](CRMScript.NetServer.NSSale)[]
+**Returns:** [CRMScript.NetServer.NSSale](/en/automation/crmscript/reference/CRMScript.NetServer.NSSale)[]
 
 **Example:**
 
@@ -356,7 +356,7 @@ Returns all sales for the person provided.
 NSSale[] GetSalesFromPerson(Integer personId, Bool onlyOpenSales)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSale](CRMScript.NetServer.NSSale)[]
+**Returns:** [CRMScript.NetServer.NSSale](/en/automation/crmscript/reference/CRMScript.NetServer.NSSale)[]
 
 **Example:**
 
@@ -375,7 +375,7 @@ Gets an NSSaleStakeholder object.
 NSSaleStakeholder GetSaleStakeholder(Integer saleStakeholderId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSaleStakeholder](CRMScript.NetServer.NSSaleStakeholder)
+**Returns:** [CRMScript.NetServer.NSSaleStakeholder](/en/automation/crmscript/reference/CRMScript.NetServer.NSSaleStakeholder)
 
 **Example:**
 
@@ -390,7 +390,7 @@ NSSaleStakeholder thing = agent.GetSaleStakeholder(123);
 NSSaleStakeholder[] GetSaleStakeholderById(Integer[] saleStakeholderIds)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSaleStakeholder](CRMScript.NetServer.NSSaleStakeholder)[]
+**Returns:** [CRMScript.NetServer.NSSaleStakeholder](/en/automation/crmscript/reference/CRMScript.NetServer.NSSaleStakeholder)[]
 
 ## GetSaleStakeholderList(Integer[])
 
@@ -400,7 +400,7 @@ Gets an array of SaleStakeholder objects.
 NSSaleStakeholder[] GetSaleStakeholderList(Integer[]  saleStakeholderIds)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSaleStakeholder](CRMScript.NetServer.NSSaleStakeholder)[]
+**Returns:** [CRMScript.NetServer.NSSaleStakeholder](/en/automation/crmscript/reference/CRMScript.NetServer.NSSaleStakeholder)[]
 
 **Example:**
 
@@ -416,7 +416,7 @@ agent.GetSaleStakeholderList(ids);
 NSSaleStakeholder[] GetSaleStakeholders(Integer saleId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSaleStakeholder](CRMScript.NetServer.NSSaleStakeholder)[]
+**Returns:** [CRMScript.NetServer.NSSaleStakeholder](/en/automation/crmscript/reference/CRMScript.NetServer.NSSaleStakeholder)[]
 
 ## GetSummaryByAssociate(Integer,DateTime,DateTime)
 
@@ -424,7 +424,7 @@ NSSaleStakeholder[] GetSaleStakeholders(Integer saleId)
 NSSaleSummary GetSummaryByAssociate(Integer associateId, DateTime fromDate, DateTime toDate)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSaleSummary](CRMScript.NetServer.NSSaleSummary)
+**Returns:** [CRMScript.NetServer.NSSaleSummary](/en/automation/crmscript/reference/CRMScript.NetServer.NSSaleSummary)
 
 ## GetSummaryByContact(Integer,DateTime,DateTime)
 
@@ -432,7 +432,7 @@ NSSaleSummary GetSummaryByAssociate(Integer associateId, DateTime fromDate, Date
 NSSaleSummary GetSummaryByContact(Integer contactId, DateTime fromDate, DateTime toDate)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSaleSummary](CRMScript.NetServer.NSSaleSummary)
+**Returns:** [CRMScript.NetServer.NSSaleSummary](/en/automation/crmscript/reference/CRMScript.NetServer.NSSaleSummary)
 
 ## GetSummaryByGroup(Integer,DateTime,DateTime)
 
@@ -440,7 +440,7 @@ NSSaleSummary GetSummaryByContact(Integer contactId, DateTime fromDate, DateTime
 NSSaleSummary GetSummaryByGroup(Integer groupId, DateTime fromDate, DateTime toDate)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSaleSummary](CRMScript.NetServer.NSSaleSummary)
+**Returns:** [CRMScript.NetServer.NSSaleSummary](/en/automation/crmscript/reference/CRMScript.NetServer.NSSaleSummary)
 
 ## GetUpcomingSales(Integer,Integer)
 
@@ -450,7 +450,7 @@ Returns all open sales, sorted descending with the latest first.
 NSSale[] GetUpcomingSales(Integer weightedAmountLimit, Integer count)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSale](CRMScript.NetServer.NSSale)[]
+**Returns:** [CRMScript.NetServer.NSSale](/en/automation/crmscript/reference/CRMScript.NetServer.NSSale)[]
 
 **Example:**
 
@@ -469,7 +469,7 @@ Does this sale have a sale guide associated with its sale type?
 Bool HasGuide(Integer saleId)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 **Example:**
 
@@ -485,7 +485,7 @@ Bool res = agent.HasGuide(saleId);
 Bool HasGuideActivities(Integer saleId)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 ## HasStakeholderSetting(Integer)
 
@@ -493,7 +493,7 @@ Bool HasGuideActivities(Integer saleId)
 Bool HasStakeholderSetting(Integer saleId)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 ## IsNumberValid(Integer,String)
 
@@ -503,7 +503,7 @@ Checks if the number is unique or required.
 Bool IsNumberValid(Integer contactId, String number)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 <Note>
 The setting is configured from admin under system options.
@@ -524,7 +524,7 @@ Bool res = agent.IsNumberValid(contactId, number);
 Bool OfferAutoNextStageOnApppointmentCompleted(Integer appointmentId)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 ## SaveSaleEntity(NSSaleEntity)
 
@@ -534,7 +534,7 @@ Updates the existing NSSaleEntity or creates a new NSSaleEntity if the ID parame
 NSSaleEntity SaveSaleEntity(NSSaleEntity saleEntity)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSaleEntity](CRMScript.NetServer.NSSaleEntity) - The new or updated NSSaleEntity.
+**Returns:** [CRMScript.NetServer.NSSaleEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSSaleEntity) - The new or updated NSSaleEntity.
 
 **Example:**
 
@@ -552,7 +552,7 @@ Updates the existing NSSaleStakeholder or creates a new NSSaleStakeholder if the
 NSSaleStakeholder SaveSaleStakeholder(NSSaleStakeholder saleStakeholder)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSaleStakeholder](CRMScript.NetServer.NSSaleStakeholder)
+**Returns:** [CRMScript.NetServer.NSSaleStakeholder](/en/automation/crmscript/reference/CRMScript.NetServer.NSSaleStakeholder)
 
 **Example:**
 
@@ -570,7 +570,7 @@ Changes the status of one or more sales to Lost.
 Void SetAsLost(Integer[] saleIds)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 This does not affect the Completed state of the sale.
@@ -584,7 +584,7 @@ Changes the status of one or more Sales to Sold.
 Void SetAsSold(Integer[] saleIds)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 This does not mark them as Completed.
@@ -596,7 +596,7 @@ This does not mark them as Completed.
 NSSaleStakeholder[] UpdateSaleStakeholders(NSSaleStakeholder[] stakeholders)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSaleStakeholder](CRMScript.NetServer.NSSaleStakeholder)[]
+**Returns:** [CRMScript.NetServer.NSSaleStakeholder](/en/automation/crmscript/reference/CRMScript.NetServer.NSSaleStakeholder)[]
 
 ## ValidateSaleEntity(NSSaleEntity)
 
@@ -606,7 +606,7 @@ Checks that entity is ready for saving, return error messages by field.
 Map ValidateSaleEntity(NSSaleEntity saleEntity)
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map)
 
 **Example:**
 

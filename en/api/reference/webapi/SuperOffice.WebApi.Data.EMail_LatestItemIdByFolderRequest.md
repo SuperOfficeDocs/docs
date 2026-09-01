@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_LatestItemIdByFolderRequest"></a> Class EMail\_LatestItemIdByFolderRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_LatestItemIdByFolderRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_LatestItemIdByFolderRequest](SuperOffice.WebApi.Data.EMail\_LatestItemIdByFolderRequest.md)
+[EMail\_LatestItemIdByFolderRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_LatestItemIdByFolderRequest)
 
 #### Inherited Members
 

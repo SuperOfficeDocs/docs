@@ -31,7 +31,7 @@ Initializes a new instance of the NSBlobEntity class.
 Integer GetBlobId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Primary key.
 
 **Example:**
 
@@ -46,7 +46,7 @@ Integer blobId = thing.GetBlobId();
 Integer GetBlobSize()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The length, in bytes, of the binary data AS STORED after any encryption and/or zipping. Important to get right, since some databases will not tell us just based on the blob itself!
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The length, in bytes, of the binary data AS STORED after any encryption and/or zipping. Important to get right, since some databases will not tell us just based on the blob itself!
 
 **Example:**
 
@@ -61,7 +61,7 @@ Integer blobSize = thing.GetBlobSize();
 String GetConceptualType()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The type, for instance PHOTO, PERSONPHOTO, or whatever, that is descriptive of what kind of image or data this is.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The type, for instance PHOTO, PERSONPHOTO, or whatever, that is descriptive of what kind of image or data this is.
 
 **Example:**
 
@@ -76,7 +76,7 @@ String conceptualType = thing.GetConceptualType();
 NSAssociate GetCreatedBy()
 ```
 
-**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The person that first created the document. The property is read-only.
+**Returns:** [CRMScript.NetServer.NSAssociate](/en/automation/crmscript/reference/CRMScript.NetServer.NSAssociate) - The person that first created the document. The property is read-only.
 
 **Example:**
 
@@ -91,7 +91,7 @@ NSAssociate createdBy = thing.GetCreatedBy();
 DateTime GetCreatedDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered when.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Registered when.
 
 **Example:**
 
@@ -106,7 +106,7 @@ DateTime createdDate = thing.GetCreatedDate();
 String GetDescription()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A description that is entered by the user, and visible to the user.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A description that is entered by the user, and visible to the user.
 
 **Example:**
 
@@ -121,7 +121,7 @@ String description = thing.GetDescription();
 String GetExtraInfo()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Extra information, spare field, can be used for anything that makes sense.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Extra information, spare field, can be used for anything that makes sense.
 
 <Note>
 Should not refer to any particular context, that is something for the BinaryObjectLInk
@@ -140,7 +140,7 @@ String extraInfo = thing.GetExtraInfo();
 Bool GetIsEncrypted()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Has the data been encrypted?
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Has the data been encrypted?
 
 **Example:**
 
@@ -155,7 +155,7 @@ Bool isEncrypted = thing.GetIsEncrypted();
 Bool GetIsZipped()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Has the data been zipped?
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Has the data been zipped?
 
 **Example:**
 
@@ -170,7 +170,7 @@ Bool isZipped = thing.GetIsZipped();
 String GetMimeType()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Mime type, describing the technical type (image/jpeg) of the data.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Mime type, describing the technical type (image/jpeg) of the data.
 
 **Example:**
 
@@ -185,7 +185,7 @@ String mimeType = thing.GetMimeType();
 Integer GetOriginalSize()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Original size of the binary data, before encryption and/or zipping.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Original size of the binary data, before encryption and/or zipping.
 
 <Note>
 This is what the ultimate client will get
@@ -204,7 +204,7 @@ Integer originalSize = thing.GetOriginalSize();
 NSAssociate GetUpdatedBy()
 ```
 
-**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The person that last updated the appointment.
+**Returns:** [CRMScript.NetServer.NSAssociate](/en/automation/crmscript/reference/CRMScript.NetServer.NSAssociate) - The person that last updated the appointment.
 
 **Example:**
 
@@ -219,7 +219,7 @@ NSAssociate updatedBy = thing.GetUpdatedBy();
 DateTime GetUpdatedDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last updated when.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Last updated when.
 
 **Example:**
 
@@ -234,7 +234,7 @@ DateTime updatedDate = thing.GetUpdatedDate();
 Void SetBlobId(Integer blobId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -250,7 +250,7 @@ thing.SetBlobId(blobId);
 Void SetBlobSize(Integer blobSize)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -266,7 +266,7 @@ thing.SetBlobSize(blobSize);
 Void SetConceptualType(String conceptualType)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -282,7 +282,7 @@ thing.SetConceptualType(conceptualType);
 Void SetCreatedBy(NSAssociate createdBy)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -298,7 +298,7 @@ thing.SetCreatedBy(createdBy);
 Void SetCreatedDate(DateTime createdDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -314,7 +314,7 @@ thing.SetCreatedDate(createdDate);
 Void SetDescription(String description)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -330,7 +330,7 @@ thing.SetDescription(description);
 Void SetExtraInfo(String extraInfo)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -346,7 +346,7 @@ thing.SetExtraInfo(extraInfo);
 Void SetIsEncrypted(Bool isEncrypted)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -362,7 +362,7 @@ thing.SetIsEncrypted(isEncrypted);
 Void SetIsZipped(Bool isZipped)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -378,7 +378,7 @@ thing.SetIsZipped(isZipped);
 Void SetMimeType(String mimeType)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -394,7 +394,7 @@ thing.SetMimeType(mimeType);
 Void SetOriginalSize(Integer originalSize)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -410,7 +410,7 @@ thing.SetOriginalSize(originalSize);
 Void SetUpdatedBy(NSAssociate updatedBy)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -426,7 +426,7 @@ thing.SetUpdatedBy(updatedBy);
 Void SetUpdatedDate(DateTime updatedDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

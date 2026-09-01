@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_CreateDefaultForTicketTypeRequest"></a> Class Ticket\_CreateDefaultForTicketTypeRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_CreateDefaultForTicketTypeRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_CreateDefaultForTicketTypeRequest](SuperOffice.WebApi.Data.Ticket\_CreateDefaultForTicketTypeRequest.md)
+[Ticket\_CreateDefaultForTicketTypeRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_CreateDefaultForTicketTypeRequest)
 
 #### Inherited Members
 

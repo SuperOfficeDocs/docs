@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CheckoutInfo"></a> Class CheckoutInfo
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for CheckoutInfo.
@@ -13,7 +13,7 @@ public class CheckoutInfo
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CheckoutInfo](SuperOffice.WebApi.Data.CheckoutInfo.md)
+[CheckoutInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.CheckoutInfo)
 
 #### Inherited Members
 
@@ -73,11 +73,11 @@ public CheckoutState? State { get; set; }
 
 #### Property Value
 
- [CheckoutState](SuperOffice.WebApi.Data.CheckoutState.md)?
+ [CheckoutState](/en/api/reference/webapi/SuperOffice.WebApi.Data.CheckoutState)?
 
 #### See Also
 
-[CheckoutInfo](SuperOffice.WebApi.Data.CheckoutInfo.md).[State\_String](SuperOffice.WebApi.Data.CheckoutInfo.md\#SuperOffice\_WebApi\_Data\_CheckoutInfo\_State\_String)
+[CheckoutInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.CheckoutInfo).[State\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.CheckoutInfo#SuperOffice_WebApi_Data_CheckoutInfo_State_String)
 
 ### <a id="SuperOffice_WebApi_Data_CheckoutInfo_State_String"></a> State\_String
 
@@ -95,9 +95,9 @@ public string State_String { get; set; }
 
 #### See Also
 
-[CheckoutInfo](SuperOffice.WebApi.Data.CheckoutInfo.md).[State](SuperOffice.WebApi.Data.CheckoutInfo.md\#SuperOffice\_WebApi\_Data\_CheckoutInfo\_State)
+[CheckoutInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.CheckoutInfo).[State](/en/api/reference/webapi/SuperOffice.WebApi.Data.CheckoutInfo#SuperOffice_WebApi_Data_CheckoutInfo_State)
 
 ## See Also
 
-[DocumentAgent](SuperOffice.WebApi.Agents.DocumentAgent.md)
+[DocumentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DocumentAgent)
 

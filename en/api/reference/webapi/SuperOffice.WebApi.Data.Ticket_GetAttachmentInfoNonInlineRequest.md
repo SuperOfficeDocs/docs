@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_GetAttachmentInfoNonInlineRequest"></a> Class Ticket\_GetAttachmentInfoNonInlineRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_GetAttachmentInfoNonInlineRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_GetAttachmentInfoNonInlineRequest](SuperOffice.WebApi.Data.Ticket\_GetAttachmentInfoNonInlineRequest.md)
+[Ticket\_GetAttachmentInfoNonInlineRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_GetAttachmentInfoNonInlineRequest)
 
 #### Inherited Members
 

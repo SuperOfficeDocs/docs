@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Configuration_GetMyWindowPosSizesRequest"></a> Class Configuration\_GetMyWindowPosSizesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Configuration_GetMyWindowPosSizesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Configuration\_GetMyWindowPosSizesRequest](SuperOffice.WebApi.Data.Configuration\_GetMyWindowPosSizesRequest.md)
+[Configuration\_GetMyWindowPosSizesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_GetMyWindowPosSizesRequest)
 
 #### Inherited Members
 

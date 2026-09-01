@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Configuration_GetCRMUrlRequest"></a> Class Configuration\_GetCRMUrlRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Configuration_GetCRMUrlRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Configuration\_GetCRMUrlRequest](SuperOffice.WebApi.Data.Configuration\_GetCRMUrlRequest.md)
+[Configuration\_GetCRMUrlRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_GetCRMUrlRequest)
 
 #### Inherited Members
 

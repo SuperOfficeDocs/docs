@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Import_CreateErpImportDataRequest"></a> Class Import\_CreateErpImportDataRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Import_CreateErpImportDataRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Import\_CreateErpImportDataRequest](SuperOffice.WebApi.Data.Import\_CreateErpImportDataRequest.md)
+[Import\_CreateErpImportDataRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Import_CreateErpImportDataRequest)
 
 #### Inherited Members
 
@@ -60,7 +60,7 @@ public ErpActorType ErpActorType { get; set; }
 
 #### Property Value
 
- [ErpActorType](SuperOffice.WebApi.Data.ErpActorType.md)
+ [ErpActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpActorType)
 
 ### <a id="SuperOffice_WebApi_Data_Import_CreateErpImportDataRequest_Restriction"></a> Restriction
 
@@ -70,5 +70,5 @@ public ArchiveRestrictionInfo[] Restriction { get; set; }
 
 #### Property Value
 
- [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
+ [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
 

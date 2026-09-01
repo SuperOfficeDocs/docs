@@ -31,7 +31,7 @@ Initializes a new instance of the NSAppointmentSyncData class.
 DateTime GetAlarmTime()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Date and time at which to show alarm.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Date and time at which to show alarm.
 
 **Example:**
 
@@ -46,7 +46,7 @@ DateTime alarmTime = thing.GetAlarmTime();
 Integer GetAppointmentId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 **Example:**
 
@@ -61,7 +61,7 @@ Integer appointmentId = thing.GetAppointmentId();
 String GetAppointmentText()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The appointment's textbox; holds a descriptive text about the appointment. Filled out by the user.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The appointment's textbox; holds a descriptive text about the appointment. Filled out by the user.
 
 **Example:**
 
@@ -76,7 +76,7 @@ String appointmentText = thing.GetAppointmentText();
 String GetContactDepartment()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The department of the contact connected to the appointment.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The department of the contact connected to the appointment.
 
 **Example:**
 
@@ -91,7 +91,7 @@ String contactDepartment = thing.GetContactDepartment();
 String GetContactFullName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The entire name of the contact, including department name.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The entire name of the contact, including department name.
 
 **Example:**
 
@@ -106,7 +106,7 @@ String contactFullName = thing.GetContactFullName();
 Integer GetContactId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The contacts identifier.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The contacts identifier.
 
 **Example:**
 
@@ -121,7 +121,7 @@ Integer contactId = thing.GetContactId();
 String GetContactName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The contact associated with the appointment.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The contact associated with the appointment.
 
 **Example:**
 
@@ -136,7 +136,7 @@ String contactName = thing.GetContactName();
 DateTime GetEndDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Date + end time planned.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Date + end time planned.
 
 **Example:**
 
@@ -151,7 +151,7 @@ DateTime endDate = thing.GetEndDate();
 Bool GetHasAlarm()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Does this appointment have an alarm?
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Does this appointment have an alarm?
 
 **Example:**
 
@@ -166,7 +166,7 @@ Bool hasAlarm = thing.GetHasAlarm();
 Bool GetIsAllDay()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 **Example:**
 
@@ -181,7 +181,7 @@ Bool isAllDay = thing.GetIsAllDay();
 Bool GetIsAssignment()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 **Example:**
 
@@ -196,7 +196,7 @@ Bool isAssignment = thing.GetIsAssignment();
 Bool GetIsBusy()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 **Example:**
 
@@ -211,7 +211,7 @@ Bool isBusy = thing.GetIsBusy();
 Bool GetIsCompleted()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 **Example:**
 
@@ -226,7 +226,7 @@ Bool isCompleted = thing.GetIsCompleted();
 Bool GetIsInvitation()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 **Example:**
 
@@ -241,7 +241,7 @@ Bool isInvitation = thing.GetIsInvitation();
 Bool GetIsTentative()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 **Example:**
 
@@ -256,7 +256,7 @@ Bool isTentative = thing.GetIsTentative();
 String GetLocation()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Location for appointment, defaulted from invited resource of type place and other rules, but you can write anything you want here.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Location for appointment, defaulted from invited resource of type place and other rules, but you can write anything you want here.
 
 **Example:**
 
@@ -271,7 +271,7 @@ String location = thing.GetLocation();
 NSParticipantSyncData[] GetParticipants()
 ```
 
-**Returns:** [CRMScript.NetServer.NSParticipantSyncData](CRMScript.NetServer.NSParticipantSyncData)[]
+**Returns:** [CRMScript.NetServer.NSParticipantSyncData](/en/automation/crmscript/reference/CRMScript.NetServer.NSParticipantSyncData)[]
 
 **Example:**
 
@@ -286,7 +286,7 @@ NSParticipantSyncData[] participants = thing.GetParticipants();
 String GetPersonFormalName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -301,7 +301,7 @@ String personFormalName = thing.GetPersonFormalName();
 String GetPersonFullName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The full name of the person this appointment belongs to.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The full name of the person this appointment belongs to.
 
 **Example:**
 
@@ -316,7 +316,7 @@ String personFullName = thing.GetPersonFullName();
 Integer GetPersonId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Person ID of person the appointment is with, may be 0
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Person ID of person the appointment is with, may be 0
 
 **Example:**
 
@@ -331,7 +331,7 @@ Integer personId = thing.GetPersonId();
 Integer GetProjectId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of project referred to, may be 0
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - ID of project referred to, may be 0
 
 **Example:**
 
@@ -348,7 +348,7 @@ Project name
 String GetProjectName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -363,7 +363,7 @@ String projectName = thing.GetProjectName();
 Integer GetSaleId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Owning sale, if any (may be 0).
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Owning sale, if any (may be 0).
 
 **Example:**
 
@@ -378,7 +378,7 @@ Integer saleId = thing.GetSaleId();
 String GetSaleName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Sale heading (short description?).
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Sale heading (short description?).
 
 **Example:**
 
@@ -393,7 +393,7 @@ String saleName = thing.GetSaleName();
 DateTime GetStartDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - date + start time planned.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - date + start time planned.
 
 **Example:**
 
@@ -408,7 +408,7 @@ DateTime startDate = thing.GetStartDate();
 String GetTaskName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -423,7 +423,7 @@ String taskName = thing.GetTaskName();
 Void SetAlarmTime(DateTime alarmTime)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -439,7 +439,7 @@ thing.SetAlarmTime(alarmTime);
 Void SetAppointmentId(Integer appointmentId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -455,7 +455,7 @@ thing.SetAppointmentId(appointmentId);
 Void SetAppointmentText(String appointmentText)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -471,7 +471,7 @@ thing.SetAppointmentText(appointmentText);
 Void SetContactDepartment(String contactDepartment)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -487,7 +487,7 @@ thing.SetContactDepartment(contactDepartment);
 Void SetContactFullName(String contactFullName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -503,7 +503,7 @@ thing.SetContactFullName(contactFullName);
 Void SetContactId(Integer contactId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -519,7 +519,7 @@ thing.SetContactId(contactId);
 Void SetContactName(String contactName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -535,7 +535,7 @@ thing.SetContactName(contactName);
 Void SetEndDate(DateTime endDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -551,7 +551,7 @@ thing.SetEndDate(endDate);
 Void SetHasAlarm(Bool hasAlarm)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -567,7 +567,7 @@ thing.SetHasAlarm(hasAlarm);
 Void SetIsAllDay(Bool isAllDay)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -583,7 +583,7 @@ thing.SetIsAllDay(isAllDay);
 Void SetIsAssignment(Bool isAssignment)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -599,7 +599,7 @@ thing.SetIsAssignment(isAssignment);
 Void SetIsBusy(Bool isBusy)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -615,7 +615,7 @@ thing.SetIsBusy(isBusy);
 Void SetIsCompleted(Bool isCompleted)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -631,7 +631,7 @@ thing.SetIsCompleted(isCompleted);
 Void SetIsInvitation(Bool isInvitation)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -647,7 +647,7 @@ thing.SetIsInvitation(isInvitation);
 Void SetIsTentative(Bool isTentative)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -663,7 +663,7 @@ thing.SetIsTentative(isTentative);
 Void SetLocation(String location)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -679,7 +679,7 @@ thing.SetLocation(location);
 Void SetParticipants(NSParticipantSyncData[] participants)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -695,7 +695,7 @@ thing.SetParticipants(participants);
 Void SetPersonFormalName(String personFormalName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -711,7 +711,7 @@ thing.SetPersonFormalName(personFormalName);
 Void SetPersonFullName(String personFullName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -727,7 +727,7 @@ thing.SetPersonFullName(personFullName);
 Void SetPersonId(Integer personId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -743,7 +743,7 @@ thing.SetPersonId(personId);
 Void SetProjectId(Integer projectId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -759,7 +759,7 @@ thing.SetProjectId(projectId);
 Void SetProjectName(String projectName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -775,7 +775,7 @@ thing.SetProjectName(projectName);
 Void SetSaleId(Integer saleId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -791,7 +791,7 @@ thing.SetSaleId(saleId);
 Void SetSaleName(String saleName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -807,7 +807,7 @@ thing.SetSaleName(saleName);
 Void SetStartDate(DateTime startDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -823,7 +823,7 @@ thing.SetStartDate(startDate);
 Void SetTaskName(String taskName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

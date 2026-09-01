@@ -1,6 +1,6 @@
 # Interface ISentryAgent {#SuperOffice_WebApi_Agents_ISentryAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Data and function right queries
@@ -11,7 +11,7 @@ public interface ISentryAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -26,7 +26,7 @@ Task<bool> CanCreateAppointmentInAllDiariesAsync(RequestOptions requestOptions =
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -50,7 +50,7 @@ Task<bool> CanCreateAppointmentInAssociateDiariesAsync(int[] associateIds, Reque
 
 Array of associate ids to check.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -74,7 +74,7 @@ Task<bool[]> CanCreateAppointmentInEachAssociatesDiaryAsync(int[] associateIds, 
 
 Array of associate ids to check.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -94,7 +94,7 @@ Task<string[]> GetFunctionRightsAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -118,13 +118,13 @@ Task<TableRight> GetNewTableRightAsync(string tableName, RequestOptions requestO
 
 Name of the table to get the TableRights from
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TableRight](SuperOffice.WebApi.Data.TableRight.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.TableRight)\&gt;
 
 The TableRight
 
@@ -146,13 +146,13 @@ Name of the table to get the TableRights from.
 
 The owner contact.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TableRight](SuperOffice.WebApi.Data.TableRight.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.TableRight)\&gt;
 
 The TableRight
 
@@ -178,13 +178,13 @@ The user-group that the associate id is part of.
 
 The associate id of the owner of the record
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TableRight](SuperOffice.WebApi.Data.TableRight.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.TableRight)\&gt;
 
 The TableRight
 
@@ -202,7 +202,7 @@ Task<bool> HasFunctionRightAsync(string functionRight, RequestOptions requestOpt
 
 Function right to check.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 

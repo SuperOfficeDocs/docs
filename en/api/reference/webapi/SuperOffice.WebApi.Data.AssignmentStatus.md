@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AssignmentStatus"></a> Enum AssignmentStatus
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Status if this appointment is in the process of being assigned to someone else

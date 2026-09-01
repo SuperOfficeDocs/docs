@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_WorkflowStepCreateFollowUp"></a> Class WorkflowStepCreateFollowUp
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for WorkflowStepCreateFollowUp.
@@ -13,16 +13,16 @@ public class WorkflowStepCreateFollowUp : WorkflowStepBase
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[WorkflowStepBase](SuperOffice.WebApi.Data.WorkflowStepBase.md) ← 
-[WorkflowStepCreateFollowUp](SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp.md)
+[WorkflowStepBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase) ← 
+[WorkflowStepCreateFollowUp](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp)
 
 #### Inherited Members
 
-[WorkflowStepBase.WorkflowStepId](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_WorkflowStepId), 
-[WorkflowStepBase.WorkflowId](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_WorkflowId), 
-[WorkflowStepBase.StepType\_String](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_StepType\_String), 
-[WorkflowStepBase.StepType](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_StepType), 
-[WorkflowStepBase.Rank](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_Rank), 
+[WorkflowStepBase.WorkflowStepId](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_WorkflowStepId), 
+[WorkflowStepBase.WorkflowId](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_WorkflowId), 
+[WorkflowStepBase.StepType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_StepType_String), 
+[WorkflowStepBase.StepType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_StepType), 
+[WorkflowStepBase.Rank](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_Rank), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -67,11 +67,11 @@ public WorkflowTimeWaitIntervalType? ActionTimeUnit { get; set; }
 
 #### Property Value
 
- [WorkflowTimeWaitIntervalType](SuperOffice.WebApi.Data.WorkflowTimeWaitIntervalType.md)?
+ [WorkflowTimeWaitIntervalType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowTimeWaitIntervalType)?
 
 #### See Also
 
-[WorkflowStepCreateFollowUp](SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp.md).[ActionTimeUnit\_String](SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp.md\#SuperOffice\_WebApi\_Data\_WorkflowStepCreateFollowUp\_ActionTimeUnit\_String)
+[WorkflowStepCreateFollowUp](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp).[ActionTimeUnit\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp#SuperOffice_WebApi_Data_WorkflowStepCreateFollowUp_ActionTimeUnit_String)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowStepCreateFollowUp_ActionTimeUnit_String"></a> ActionTimeUnit\_String
 
@@ -89,7 +89,7 @@ public string ActionTimeUnit_String { get; set; }
 
 #### See Also
 
-[WorkflowStepCreateFollowUp](SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp.md).[ActionTimeUnit](SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp.md\#SuperOffice\_WebApi\_Data\_WorkflowStepCreateFollowUp\_ActionTimeUnit)
+[WorkflowStepCreateFollowUp](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp).[ActionTimeUnit](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp#SuperOffice_WebApi_Data_WorkflowStepCreateFollowUp_ActionTimeUnit)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowStepCreateFollowUp_ActionType"></a> ActionType
 
@@ -103,11 +103,11 @@ public WorkflowActionType? ActionType { get; set; }
 
 #### Property Value
 
- [WorkflowActionType](SuperOffice.WebApi.Data.WorkflowActionType.md)?
+ [WorkflowActionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowActionType)?
 
 #### See Also
 
-[WorkflowStepCreateFollowUp](SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp.md).[ActionType\_String](SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp.md\#SuperOffice\_WebApi\_Data\_WorkflowStepCreateFollowUp\_ActionType\_String)
+[WorkflowStepCreateFollowUp](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp).[ActionType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp#SuperOffice_WebApi_Data_WorkflowStepCreateFollowUp_ActionType_String)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowStepCreateFollowUp_ActionType_String"></a> ActionType\_String
 
@@ -125,7 +125,7 @@ public string ActionType_String { get; set; }
 
 #### See Also
 
-[WorkflowStepCreateFollowUp](SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp.md).[ActionType](SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp.md\#SuperOffice\_WebApi\_Data\_WorkflowStepCreateFollowUp\_ActionType)
+[WorkflowStepCreateFollowUp](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp).[ActionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp#SuperOffice_WebApi_Data_WorkflowStepCreateFollowUp_ActionType)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowStepCreateFollowUp_Agenda"></a> Agenda
 
@@ -151,11 +151,11 @@ public FreeBusy? Availability { get; set; }
 
 #### Property Value
 
- [FreeBusy](SuperOffice.WebApi.Data.FreeBusy.md)?
+ [FreeBusy](/en/api/reference/webapi/SuperOffice.WebApi.Data.FreeBusy)?
 
 #### See Also
 
-[WorkflowStepCreateFollowUp](SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp.md).[Availability\_String](SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp.md\#SuperOffice\_WebApi\_Data\_WorkflowStepCreateFollowUp\_Availability\_String)
+[WorkflowStepCreateFollowUp](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp).[Availability\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp#SuperOffice_WebApi_Data_WorkflowStepCreateFollowUp_Availability_String)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowStepCreateFollowUp_Availability_String"></a> Availability\_String
 
@@ -173,7 +173,7 @@ public string Availability_String { get; set; }
 
 #### See Also
 
-[WorkflowStepCreateFollowUp](SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp.md).[Availability](SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp.md\#SuperOffice\_WebApi\_Data\_WorkflowStepCreateFollowUp\_Availability)
+[WorkflowStepCreateFollowUp](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp).[Availability](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp#SuperOffice_WebApi_Data_WorkflowStepCreateFollowUp_Availability)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowStepCreateFollowUp_Completed"></a> Completed
 
@@ -235,11 +235,11 @@ public WorkflowOwnerType? OwnerType { get; set; }
 
 #### Property Value
 
- [WorkflowOwnerType](SuperOffice.WebApi.Data.WorkflowOwnerType.md)?
+ [WorkflowOwnerType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowOwnerType)?
 
 #### See Also
 
-[WorkflowStepCreateFollowUp](SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp.md).[OwnerType\_String](SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp.md\#SuperOffice\_WebApi\_Data\_WorkflowStepCreateFollowUp\_OwnerType\_String)
+[WorkflowStepCreateFollowUp](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp).[OwnerType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp#SuperOffice_WebApi_Data_WorkflowStepCreateFollowUp_OwnerType_String)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowStepCreateFollowUp_OwnerType_String"></a> OwnerType\_String
 
@@ -257,7 +257,7 @@ public string OwnerType_String { get; set; }
 
 #### See Also
 
-[WorkflowStepCreateFollowUp](SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp.md).[OwnerType](SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp.md\#SuperOffice\_WebApi\_Data\_WorkflowStepCreateFollowUp\_OwnerType)
+[WorkflowStepCreateFollowUp](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp).[OwnerType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepCreateFollowUp#SuperOffice_WebApi_Data_WorkflowStepCreateFollowUp_OwnerType)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowStepCreateFollowUp_Project"></a> Project
 
@@ -285,5 +285,5 @@ public virtual string Title { get; set; }
 
 ## See Also
 
-[WorkflowAgent](SuperOffice.WebApi.Agents.WorkflowAgent.md)
+[WorkflowAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.WorkflowAgent)
 

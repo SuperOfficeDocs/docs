@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_IsUserNameValidWithReasonRequest"></a> Class User\_IsUserNameValidWithReasonRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_IsUserNameValidWithReasonRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_IsUserNameValidWithReasonRequest](SuperOffice.WebApi.Data.User\_IsUserNameValidWithReasonRequest.md)
+[User\_IsUserNameValidWithReasonRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_IsUserNameValidWithReasonRequest)
 
 #### Inherited Members
 
@@ -60,7 +60,7 @@ public UserType Type { get; set; }
 
 #### Property Value
 
- [UserType](SuperOffice.WebApi.Data.UserType.md)
+ [UserType](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserType)
 
 ### <a id="SuperOffice_WebApi_Data_User_IsUserNameValidWithReasonRequest_UserName"></a> UserName
 

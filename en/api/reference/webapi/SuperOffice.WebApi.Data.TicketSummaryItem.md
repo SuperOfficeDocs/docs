@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TicketSummaryItem"></a> Class TicketSummaryItem
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TicketSummaryItem.
@@ -13,7 +13,7 @@ public class TicketSummaryItem
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[TicketSummaryItem](SuperOffice.WebApi.Data.TicketSummaryItem.md)
+[TicketSummaryItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketSummaryItem)
 
 #### Inherited Members
 
@@ -99,5 +99,5 @@ public virtual string Title { get; set; }
 
 ## See Also
 
-[TicketAgent](SuperOffice.WebApi.Agents.TicketAgent.md)
+[TicketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TicketAgent)
 

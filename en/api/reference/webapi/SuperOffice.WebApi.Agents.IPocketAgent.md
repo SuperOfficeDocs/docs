@@ -1,6 +1,6 @@
 # Interface IPocketAgent {#SuperOffice_WebApi_Agents_IPocketAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Agent with Pocket specific functionality
@@ -11,7 +11,7 @@ public interface IPocketAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -34,13 +34,13 @@ Id of selection to get caller ids from
 
 Hash for the previous call, used for checking if the same set of caller ids was sent in an earlier call, and returning null in that case
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CallerIDCollection](SuperOffice.WebApi.Data.CallerIDCollection.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CallerIDCollection](/en/api/reference/webapi/SuperOffice.WebApi.Data.CallerIDCollection)\&gt;
 
 Collection of caller IDs, containing the hash of the caller ids
 
@@ -66,13 +66,13 @@ Only check activities after this date
 
 Only check activities before this date
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CallerIDCollection](SuperOffice.WebApi.Data.CallerIDCollection.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CallerIDCollection](/en/api/reference/webapi/SuperOffice.WebApi.Data.CallerIDCollection)\&gt;
 
 Collection of caller IDs, containing the hash of the caller ids
 
@@ -92,13 +92,13 @@ Tables to check for license
 
 Current time on the client, used for overdue sale lookup having correct timezone relative to client
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PocketStartupData](SuperOffice.WebApi.Data.PocketStartupData.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PocketStartupData](/en/api/reference/webapi/SuperOffice.WebApi.Data.PocketStartupData)\&gt;
 
 Startup data for pocket
 
@@ -116,7 +116,7 @@ Task<string> GetPushNotificationTagsForDeviceAsync(string deviceIdentifier, Requ
 
 The unique identifier of this device
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -140,13 +140,13 @@ Task<PocketDeviceInfo[]> GetRegisteredDevicesAsync(int associateId, RequestOptio
 
 The user to get devices for
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PocketDeviceInfo](SuperOffice.WebApi.Data.PocketDeviceInfo.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PocketDeviceInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.PocketDeviceInfo)\[\]\&gt;
 
 ### NotificationHandledAsync\(NotificationEventType, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IPocketAgent_NotificationHandledAsync_SuperOffice_WebApi_Data_NotificationEventType_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
@@ -158,7 +158,7 @@ Task NotificationHandledAsync(NotificationEventType notificationEventType, int i
 
 #### Parameters
 
-`notificationEventType` [NotificationEventType](SuperOffice.WebApi.Data.NotificationEventType.md)
+`notificationEventType` [NotificationEventType](/en/api/reference/webapi/SuperOffice.WebApi.Data.NotificationEventType)
 
 Type of notification
 
@@ -166,7 +166,7 @@ Type of notification
 
 Id of entity to notify about
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -186,11 +186,11 @@ Task NotificationsHandledAsync(NotificationEvent[] notificationEvents, RequestOp
 
 #### Parameters
 
-`notificationEvents` [NotificationEvent](SuperOffice.WebApi.Data.NotificationEvent.md)\[\]
+`notificationEvents` [NotificationEvent](/en/api/reference/webapi/SuperOffice.WebApi.Data.NotificationEvent)\[\]
 
 List of notifications to mark as handled
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -210,7 +210,7 @@ Task NotifyUsersAsync(NotificationEventType notificationEventType, int id, Reque
 
 #### Parameters
 
-`notificationEventType` [NotificationEventType](SuperOffice.WebApi.Data.NotificationEventType.md)
+`notificationEventType` [NotificationEventType](/en/api/reference/webapi/SuperOffice.WebApi.Data.NotificationEventType)
 
 Type of notification
 
@@ -218,7 +218,7 @@ Type of notification
 
 Id of entity to notify about
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -238,11 +238,11 @@ Task RegisterDeviceForPushNotificationAsync(PocketDeviceInfo deviceInfo, Request
 
 #### Parameters
 
-`deviceInfo` [PocketDeviceInfo](SuperOffice.WebApi.Data.PocketDeviceInfo.md)
+`deviceInfo` [PocketDeviceInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.PocketDeviceInfo)
 
 Properties for the device to register
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -262,7 +262,7 @@ Task RunAppointmentAlarmBrokerAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -286,11 +286,11 @@ Task SendPushNotificationAsync(int[] associateIds, PocketNotificationMessage mes
 
 The associates to send the push notification message to
 
-`message` [PocketNotificationMessage](SuperOffice.WebApi.Data.PocketNotificationMessage.md)
+`message` [PocketNotificationMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.PocketNotificationMessage)
 
 The message to send
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -318,7 +318,7 @@ The unique identifier for a device
 
 A comma separated list of events this device should receive push events for
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -346,7 +346,7 @@ The associate to set tags for
 
 A comma separated list of events the associate should receive push events for
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 

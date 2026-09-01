@@ -1,6 +1,6 @@
 # Interface IImportAgent {#SuperOffice_WebApi_Agents_IImportAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 This agent can be used to import data into the system
@@ -11,7 +11,7 @@ public interface IImportAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -30,13 +30,13 @@ Task<ImportLine> CreateDefaultImportLineAsync(int countColumns, RequestOptions r
 
 The count of values that will can be filled out
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ImportLine](SuperOffice.WebApi.Data.ImportLine.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ImportLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.ImportLine)\&gt;
 
 A new ImportLine
 
@@ -50,7 +50,7 @@ Task<ImportErpData> CreateErpImportDataAsync(ArchiveRestrictionInfo[] restrictio
 
 #### Parameters
 
-`restriction` [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
+`restriction` [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
 
 Archive restrictions.
 
@@ -62,17 +62,17 @@ Columns.
 
 Connection id for Erp system
 
-`erpActorType` [ErpActorType](SuperOffice.WebApi.Data.ErpActorType.md)
+`erpActorType` [ErpActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpActorType)
 
 Erp Actor type
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ImportErpData](SuperOffice.WebApi.Data.ImportErpData.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ImportErpData](/en/api/reference/webapi/SuperOffice.WebApi.Data.ImportErpData)\&gt;
 
 The ImportLines and ColumnDefs
 
@@ -86,7 +86,7 @@ Task<ImportLine[]> PreviewImportAsync(ImportLine[] importLines, string[] columnD
 
 #### Parameters
 
-`importLines` [ImportLine](SuperOffice.WebApi.Data.ImportLine.md)\[\]
+`importLines` [ImportLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.ImportLine)\[\]
 
 The rows that will be manipulated and according to Import rules
 
@@ -102,13 +102,13 @@ The current culture used in the import. Used to match language specific strings
 
 Optional context for the import.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ImportLine](SuperOffice.WebApi.Data.ImportLine.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ImportLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.ImportLine)\[\]\&gt;
 
 An array of the the rows that can be imported, manipulated according to Import rules given
 
@@ -122,7 +122,7 @@ Task<int[]> SaveImportAsync(ImportLine[] importLines, string[] columnDefinition,
 
 #### Parameters
 
-`importLines` [ImportLine](SuperOffice.WebApi.Data.ImportLine.md)\[\]
+`importLines` [ImportLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.ImportLine)\[\]
 
 The rows that will be imported
 
@@ -142,7 +142,7 @@ The current culture used in the import. Used to match language specific strings
 
 Optional context for the import.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 

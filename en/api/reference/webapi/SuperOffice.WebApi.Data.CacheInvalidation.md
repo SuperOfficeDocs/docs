@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CacheInvalidation"></a> Class CacheInvalidation
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for CacheInvalidation.
@@ -12,7 +12,7 @@ public class CacheInvalidation
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CacheInvalidation](SuperOffice.WebApi.Data.CacheInvalidation.md)
+[CacheInvalidation](/en/api/reference/webapi/SuperOffice.WebApi.Data.CacheInvalidation)
 
 #### Inherited Members
 
@@ -62,5 +62,5 @@ public virtual string Name { get; set; }
 
 ## See Also
 
-[DiagnosticsAgent](SuperOffice.WebApi.Agents.DiagnosticsAgent.md)
+[DiagnosticsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DiagnosticsAgent)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_GetCanInsertForAssociatesRequest"></a> Class Appointment\_GetCanInsertForAssociatesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_GetCanInsertForAssociatesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_GetCanInsertForAssociatesRequest](SuperOffice.WebApi.Data.Appointment\_GetCanInsertForAssociatesRequest.md)
+[Appointment\_GetCanInsertForAssociatesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_GetCanInsertForAssociatesRequest)
 
 #### Inherited Members
 

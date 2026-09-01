@@ -31,7 +31,7 @@ Initializes a new instance of the NSCheckoutInfo class.
 Integer GetAssociateId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of associate who has currently checked out the document; 0 if it is not checked out, or is checked out by someone who is not a SuperOffice user.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - ID of associate who has currently checked out the document; 0 if it is not checked out, or is checked out by someone who is not a SuperOffice user.
 
 **Example:**
 
@@ -46,7 +46,7 @@ Integer associateId = thing.GetAssociateId();
 String GetName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of person who has currently checked out the document; blank if it is not checked out.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Name of person who has currently checked out the document; blank if it is not checked out.
 
 <Note>
 This property may also be blank if the AssociateId is nonzero; NetServer will retrieve the associates' name as needed.
@@ -65,7 +65,7 @@ String name = thing.GetName();
 Integer GetState()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The checkout state. See &lt;xref href="CRMScript.NetServer.CheckoutState" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The checkout state. See &lt;xref href="CRMScript.NetServer.CheckoutState" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;
 
 **Example:**
 
@@ -80,7 +80,7 @@ Integer state = thing.GetState();
 Void SetAssociateId(Integer associateId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -96,7 +96,7 @@ thing.SetAssociateId(associateId);
 Void SetName(String name)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 This property may also be blank if the AssociateId is nonzero; NetServer will retrieve the associates' name as needed.
@@ -116,7 +116,7 @@ thing.SetName(name);
 Void SetState(Integer state)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

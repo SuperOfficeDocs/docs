@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_GetAllFunctionalRightsRequest"></a> Class User\_GetAllFunctionalRightsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_GetAllFunctionalRightsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_GetAllFunctionalRightsRequest](SuperOffice.WebApi.Data.User\_GetAllFunctionalRightsRequest.md)
+[User\_GetAllFunctionalRightsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_GetAllFunctionalRightsRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public RoleType RoleType { get; set; }
 
 #### Property Value
 
- [RoleType](SuperOffice.WebApi.Data.RoleType.md)
+ [RoleType](/en/api/reference/webapi/SuperOffice.WebApi.Data.RoleType)
 

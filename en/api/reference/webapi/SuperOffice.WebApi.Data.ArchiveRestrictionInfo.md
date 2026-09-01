@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ArchiveRestrictionInfo"></a> Class ArchiveRestrictionInfo
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ArchiveRestrictionInfo.
@@ -13,7 +13,7 @@ public class ArchiveRestrictionInfo
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)
+[ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)
 
 #### Inherited Members
 
@@ -47,7 +47,7 @@ public virtual ArchiveColumnInfo ColumnInfo { get; set; }
 
 #### Property Value
 
- [ArchiveColumnInfo](SuperOffice.WebApi.Data.ArchiveColumnInfo.md)
+ [ArchiveColumnInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveColumnInfo)
 
 ### <a id="SuperOffice_WebApi_Data_ArchiveRestrictionInfo_DisplayValues"></a> DisplayValues
 
@@ -73,11 +73,11 @@ public InterRestrictionOperator? InterOperator { get; set; }
 
 #### Property Value
 
- [InterRestrictionOperator](SuperOffice.WebApi.Data.InterRestrictionOperator.md)?
+ [InterRestrictionOperator](/en/api/reference/webapi/SuperOffice.WebApi.Data.InterRestrictionOperator)?
 
 #### See Also
 
-[ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md).[InterOperator\_String](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md\#SuperOffice\_WebApi\_Data\_ArchiveRestrictionInfo\_InterOperator\_String)
+[ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo).[InterOperator\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo#SuperOffice_WebApi_Data_ArchiveRestrictionInfo_InterOperator_String)
 
 ### <a id="SuperOffice_WebApi_Data_ArchiveRestrictionInfo_InterOperator_String"></a> InterOperator\_String
 
@@ -95,7 +95,7 @@ public string InterOperator_String { get; set; }
 
 #### See Also
 
-[ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md).[InterOperator](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md\#SuperOffice\_WebApi\_Data\_ArchiveRestrictionInfo\_InterOperator)
+[ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo).[InterOperator](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo#SuperOffice_WebApi_Data_ArchiveRestrictionInfo_InterOperator)
 
 ### <a id="SuperOffice_WebApi_Data_ArchiveRestrictionInfo_InterParenthesis"></a> InterParenthesis
 
@@ -155,7 +155,7 @@ public virtual ArchiveRestrictionInfo[] SubRestrictions { get; set; }
 
 #### Property Value
 
- [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
+ [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_ArchiveRestrictionInfo_UniqueHash"></a> UniqueHash
 
@@ -181,5 +181,5 @@ public virtual string[] Values { get; set; }
 
 ## See Also
 
-[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md)
+[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSync_GetFieldsForNewErpActorRequest"></a> Class ErpSync\_GetFieldsForNewErpActorRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ErpSync_GetFieldsForNewErpActorRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ErpSync\_GetFieldsForNewErpActorRequest](SuperOffice.WebApi.Data.ErpSync\_GetFieldsForNewErpActorRequest.md)
+[ErpSync\_GetFieldsForNewErpActorRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSync_GetFieldsForNewErpActorRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public ErpActorType ErpActorType { get; set; }
 
 #### Property Value
 
- [ErpActorType](SuperOffice.WebApi.Data.ErpActorType.md)
+ [ErpActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpActorType)
 
 ### <a id="SuperOffice_WebApi_Data_ErpSync_GetFieldsForNewErpActorRequest_ErpConnectionId"></a> ErpConnectionId
 

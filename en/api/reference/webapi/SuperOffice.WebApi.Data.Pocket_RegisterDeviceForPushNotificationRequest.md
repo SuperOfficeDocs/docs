@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Pocket_RegisterDeviceForPushNotificationRequest"></a> Class Pocket\_RegisterDeviceForPushNotificationRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Pocket_RegisterDeviceForPushNotificationRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Pocket\_RegisterDeviceForPushNotificationRequest](SuperOffice.WebApi.Data.Pocket\_RegisterDeviceForPushNotificationRequest.md)
+[Pocket\_RegisterDeviceForPushNotificationRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Pocket_RegisterDeviceForPushNotificationRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public PocketDeviceInfo DeviceInfo { get; set; }
 
 #### Property Value
 
- [PocketDeviceInfo](SuperOffice.WebApi.Data.PocketDeviceInfo.md)
+ [PocketDeviceInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.PocketDeviceInfo)
 

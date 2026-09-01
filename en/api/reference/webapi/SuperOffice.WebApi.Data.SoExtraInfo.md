@@ -1,6 +1,6 @@
 # Class SoExtraInfo {#SuperOffice_WebApi_Data_SoExtraInfo}
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Serializable dictionary.
@@ -14,7 +14,7 @@ public class SoExtraInfo : Dictionary<string, string>, IDictionary<string, strin
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
 [Dictionary&lt;string, string\&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2) ← 
-[SoExtraInfo](SuperOffice.WebApi.Data.SoExtraInfo.md)
+[SoExtraInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoExtraInfo)
 
 #### Implements
 

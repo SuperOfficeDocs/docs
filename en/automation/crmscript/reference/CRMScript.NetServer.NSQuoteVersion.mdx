@@ -31,7 +31,7 @@ Initializes a new instance of the NSQuoteVersion class.
 Integer GetApprovedBy()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of associate who approved (or rejected approval) for this version.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - ID of associate who approved (or rejected approval) for this version.
 
 **Example:**
 
@@ -46,7 +46,7 @@ Integer approvedBy = thing.GetApprovedBy();
 Integer GetApprovedRegisteredBy()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of associate who actually entered the approval; might be different from ApprovedBy (f.x. due to telephone consultation/approval).
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - ID of associate who actually entered the approval; might be different from ApprovedBy (f.x. due to telephone consultation/approval).
 
 **Example:**
 
@@ -61,7 +61,7 @@ Integer approvedRegisteredBy = thing.GetApprovedRegisteredBy();
 DateTime GetApprovedRegisteredDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When was approval granted or rejected.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - When was approval granted or rejected.
 
 **Example:**
 
@@ -76,7 +76,7 @@ DateTime approvedRegisteredDate = thing.GetApprovedRegisteredDate();
 String GetApprovedText()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Text with comments on why approval was granted (or rejected)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Text with comments on why approval was granted (or rejected)
 
 **Example:**
 
@@ -91,7 +91,7 @@ String approvedText = thing.GetApprovedText();
 Integer GetArchivedState()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - State that this quote version had, right before it was changed to Archived. See &lt;xref href="CRMScript.NetServer.QuoteVersionState" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - State that this quote version had, right before it was changed to Archived. See &lt;xref href="CRMScript.NetServer.QuoteVersionState" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
 
 <Note>
 In this way we can show what happened before the archiving.
@@ -110,7 +110,7 @@ Integer archivedState = thing.GetArchivedState();
 Integer GetDeliveryCountryId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Country of delivery address, typically copied from the contact record.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Country of delivery address, typically copied from the contact record.
 
 **Example:**
 
@@ -125,7 +125,7 @@ Integer deliveryCountryId = thing.GetDeliveryCountryId();
 String GetDescription()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Description of Version. Potentially longer text description, typically used in a tooltip. Max 2K.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Description of Version. Potentially longer text description, typically used in a tooltip. Max 2K.
 
 **Example:**
 
@@ -140,7 +140,7 @@ String description = thing.GetDescription();
 String GetERPDeliveryTermsKey()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text. For instance 'FOB' ('Free on board').
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text. For instance 'FOB' ('Free on board').
 
 **Example:**
 
@@ -155,7 +155,7 @@ String eRPDeliveryTermsKey = thing.GetERPDeliveryTermsKey();
 String GetERPDeliveryTypeKey()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text. For instance 'Air'.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text. For instance 'Air'.
 
 **Example:**
 
@@ -170,7 +170,7 @@ String eRPDeliveryTypeKey = thing.GetERPDeliveryTypeKey();
 String GetERPPaymentTermsKey()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text. For instance 'Standard 30 days'.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text. For instance 'Standard 30 days'.
 
 **Example:**
 
@@ -185,7 +185,7 @@ String eRPPaymentTermsKey = thing.GetERPPaymentTermsKey();
 String GetERPPaymentTypeKey()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text. For instance 'Invoice'.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text. For instance 'Invoice'.
 
 **Example:**
 
@@ -200,7 +200,7 @@ String eRPPaymentTypeKey = thing.GetERPPaymentTypeKey();
 String GetERPQuoteVersionKey()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Key in the ERP system that uniquely identifies this Version within the ERP system (if available, the field may be empty).
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Key in the ERP system that uniquely identifies this Version within the ERP system (if available, the field may be empty).
 
 **Example:**
 
@@ -215,7 +215,7 @@ String eRPQuoteVersionKey = thing.GetERPQuoteVersionKey();
 DateTime GetExpirationDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last date the quote Version is valid, expiration is at midnight end of this day.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Last date the quote Version is valid, expiration is at midnight end of this day.
 
 **Example:**
 
@@ -230,7 +230,7 @@ DateTime expirationDate = thing.GetExpirationDate();
 String GetExtraField1()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Optional information added by Quote Connector; usable in the quote document merge process.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Optional information added by Quote Connector; usable in the quote document merge process.
 
 **Example:**
 
@@ -245,7 +245,7 @@ String extraField1 = thing.GetExtraField1();
 String GetExtraField2()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Optional information added by Quote Connector; usable in the quote document merge process.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Optional information added by Quote Connector; usable in the quote document merge process.
 
 **Example:**
 
@@ -260,7 +260,7 @@ String extraField2 = thing.GetExtraField2();
 String GetExtraField3()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Optional information added by Quote Connector; usable in the quote document merge process.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Optional information added by Quote Connector; usable in the quote document merge process.
 
 **Example:**
 
@@ -275,7 +275,7 @@ String extraField3 = thing.GetExtraField3();
 String GetExtraField4()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Optional information added by Quote Connector; usable in the quote document merge process.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Optional information added by Quote Connector; usable in the quote document merge process.
 
 **Example:**
 
@@ -290,7 +290,7 @@ String extraField4 = thing.GetExtraField4();
 String GetExtraField5()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Optional information added by Quote Connector; usable in the quote document merge process.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Optional information added by Quote Connector; usable in the quote document merge process.
 
 **Example:**
 
@@ -305,7 +305,7 @@ String extraField5 = thing.GetExtraField5();
 Integer GetFollowupId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Link to a follow-up activity, created when this quote version was sent to the customer.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Link to a follow-up activity, created when this quote version was sent to the customer.
 
 **Example:**
 
@@ -320,7 +320,7 @@ Integer followupId = thing.GetFollowupId();
 Bool GetHasOwnDeliveryAddress()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - The delivery address is not the same as the contact's Street address.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - The delivery address is not the same as the contact's Street address.
 
 **Example:**
 
@@ -335,7 +335,7 @@ Bool hasOwnDeliveryAddress = thing.GetHasOwnDeliveryAddress();
 Bool GetHasOwnInvoiceAddress()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - The quote has an address for Invoicing. This will typically be copied from the company's addresses.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - The quote has an address for Invoicing. This will typically be copied from the company's addresses.
 
 **Example:**
 
@@ -350,7 +350,7 @@ Bool hasOwnInvoiceAddress = thing.GetHasOwnInvoiceAddress();
 Integer GetInvoiceCountryId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Country of invoice address, typically copied from contact record.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Country of invoice address, typically copied from contact record.
 
 **Example:**
 
@@ -365,7 +365,7 @@ Integer invoiceCountryId = thing.GetInvoiceCountryId();
 DateTime GetLastRecalculated()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When this version was last subjected to a total recalculation.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - When this version was last subjected to a total recalculation.
 
 <Note>
 This field must be set by the connector, since the connector may choose to ignore a RecalculateVersion call based on policies and possibly the current value of this field. SuperOffice will set this field to 1.1.1760 whenever any change occurs to the quote, to indicate that a recalculation is needed.
@@ -384,7 +384,7 @@ DateTime lastRecalculated = thing.GetLastRecalculated();
 Integer GetLikelyQuoteAlternativeId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The alternative that is considered most likely to be accepted. Used to calculate probable income.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The alternative that is considered most likely to be accepted. Used to calculate probable income.
 
 **Example:**
 
@@ -399,7 +399,7 @@ Integer likelyQuoteAlternativeId = thing.GetLikelyQuoteAlternativeId();
 String GetNumber()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A quote number that the user (or ERP connector) can fill out.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A quote number that the user (or ERP connector) can fill out.
 
 **Example:**
 
@@ -414,7 +414,7 @@ String number = thing.GetNumber();
 NSQuoteAlternative[] GetQuoteAlternatives()
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteAlternative](CRMScript.NetServer.NSQuoteAlternative)[] - The QuoteAlternatives for the NSQuoteVersion.
+**Returns:** [CRMScript.NetServer.NSQuoteAlternative](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteAlternative)[] - The QuoteAlternatives for the NSQuoteVersion.
 
 **Example:**
 
@@ -429,7 +429,7 @@ NSQuoteAlternative[] quoteAlternatives = thing.GetQuoteAlternatives();
 Integer GetQuoteId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Foreign key to CRM quote (the conceptual parent). Owning Quote of this Quote Version.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Foreign key to CRM quote (the conceptual parent). Owning Quote of this Quote Version.
 
 **Example:**
 
@@ -444,7 +444,7 @@ Integer quoteId = thing.GetQuoteId();
 Integer GetQuoteVersionId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Primary key.
 
 **Example:**
 
@@ -459,7 +459,7 @@ Integer quoteVersionId = thing.GetQuoteVersionId();
 Integer GetRank()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Rank/Version number, starts at 1
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Rank/Version number, starts at 1
 
 **Example:**
 
@@ -474,7 +474,7 @@ Integer rank = thing.GetRank();
 String GetReason()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - If there was a problem, this field contains a localized explanation of the problem and possible steps to fix it that the user can be shown.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - If there was a problem, this field contains a localized explanation of the problem and possible steps to fix it that the user can be shown.
 
 **Example:**
 
@@ -489,7 +489,7 @@ String reason = thing.GetReason();
 DateTime GetRegistered()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered when.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Registered when.
 
 **Example:**
 
@@ -504,7 +504,7 @@ DateTime registered = thing.GetRegistered();
 Integer GetRegisteredAssociateId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Registered by whom.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Registered by whom.
 
 **Example:**
 
@@ -519,7 +519,7 @@ Integer registeredAssociateId = thing.GetRegisteredAssociateId();
 DateTime GetSentDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The date the version was sent to the customer.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - The date the version was sent to the customer.
 
 **Example:**
 
@@ -534,7 +534,7 @@ DateTime sentDate = thing.GetSentDate();
 Integer GetState()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Current state of this quote version. See &lt;xref href="CRMScript.NetServer.QuoteVersionState" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Current state of this quote version. See &lt;xref href="CRMScript.NetServer.QuoteVersionState" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
 
 **Example:**
 
@@ -549,7 +549,7 @@ Integer state = thing.GetState();
 Integer GetStatus()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - If there was a problem with for instance calculation, this field is set to warning or error. See &lt;xref href="CRMScript.NetServer.QuoteStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - If there was a problem with for instance calculation, this field is set to warning or error. See &lt;xref href="CRMScript.NetServer.QuoteStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
 
 **Example:**
 
@@ -564,7 +564,7 @@ Integer status = thing.GetStatus();
 DateTime GetUpdated()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last updated when.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Last updated when.
 
 **Example:**
 
@@ -579,7 +579,7 @@ DateTime updated = thing.GetUpdated();
 Integer GetUpdatedAssociateId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Last updated by whom.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Last updated by whom.
 
 **Example:**
 
@@ -594,7 +594,7 @@ Integer updatedAssociateId = thing.GetUpdatedAssociateId();
 Void SetApprovedBy(Integer approvedBy)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -610,7 +610,7 @@ thing.SetApprovedBy(approvedBy);
 Void SetApprovedRegisteredBy(Integer approvedRegisteredBy)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -626,7 +626,7 @@ thing.SetApprovedRegisteredBy(approvedRegisteredBy);
 Void SetApprovedRegisteredDate(DateTime approvedRegisteredDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -642,7 +642,7 @@ thing.SetApprovedRegisteredDate(approvedRegisteredDate);
 Void SetApprovedText(String approvedText)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -658,7 +658,7 @@ thing.SetApprovedText(approvedText);
 Void SetArchivedState(Integer archivedState)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -674,7 +674,7 @@ thing.SetArchivedState(archivedState);
 Void SetDeliveryCountryId(Integer deliveryCountryId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -690,7 +690,7 @@ thing.SetDeliveryCountryId(deliveryCountryId);
 Void SetDescription(String description)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -706,7 +706,7 @@ thing.SetDescription(description);
 Void SetERPDeliveryTermsKey(String eRPDeliveryTermsKey)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -722,7 +722,7 @@ thing.SetERPDeliveryTermsKey(eRPDeliveryTermsKey);
 Void SetERPDeliveryTypeKey(String eRPDeliveryTypeKey)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -738,7 +738,7 @@ thing.SetERPDeliveryTypeKey(eRPDeliveryTypeKey);
 Void SetERPPaymentTermsKey(String eRPPaymentTermsKey)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -754,7 +754,7 @@ thing.SetERPPaymentTermsKey(eRPPaymentTermsKey);
 Void SetERPPaymentTypeKey(String eRPPaymentTypeKey)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -770,7 +770,7 @@ thing.SetERPPaymentTypeKey(eRPPaymentTypeKey);
 Void SetERPQuoteVersionKey(String eRPQuoteVersionKey)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -786,7 +786,7 @@ thing.SetERPQuoteVersionKey(eRPQuoteVersionKey);
 Void SetExpirationDate(DateTime expirationDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -802,7 +802,7 @@ thing.SetExpirationDate(expirationDate);
 Void SetExtraField1(String extraField1)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -818,7 +818,7 @@ thing.SetExtraField1(extraField1);
 Void SetExtraField2(String extraField2)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -834,7 +834,7 @@ thing.SetExtraField2(extraField2);
 Void SetExtraField3(String extraField3)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -850,7 +850,7 @@ thing.SetExtraField3(extraField3);
 Void SetExtraField4(String extraField4)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -866,7 +866,7 @@ thing.SetExtraField4(extraField4);
 Void SetExtraField5(String extraField5)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -882,7 +882,7 @@ thing.SetExtraField5(extraField5);
 Void SetFollowupId(Integer followupId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -898,7 +898,7 @@ thing.SetFollowupId(followupId);
 Void SetHasOwnDeliveryAddress(Bool hasOwnDeliveryAddress)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -914,7 +914,7 @@ thing.SetHasOwnDeliveryAddress(hasOwnDeliveryAddress);
 Void SetHasOwnInvoiceAddress(Bool hasOwnInvoiceAddress)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -930,7 +930,7 @@ thing.SetHasOwnInvoiceAddress(hasOwnInvoiceAddress);
 Void SetInvoiceCountryId(Integer invoiceCountryId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -946,7 +946,7 @@ thing.SetInvoiceCountryId(invoiceCountryId);
 Void SetLastRecalculated(DateTime lastRecalculated)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -962,7 +962,7 @@ thing.SetLastRecalculated(lastRecalculated);
 Void SetLikelyQuoteAlternativeId(Integer likelyQuoteAlternativeId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -978,7 +978,7 @@ thing.SetLikelyQuoteAlternativeId(likelyQuoteAlternativeId);
 Void SetNumber(String number)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -994,7 +994,7 @@ thing.SetNumber(number);
 Void SetQuoteAlternatives(NSQuoteAlternative[] quoteAlternatives)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1010,7 +1010,7 @@ thing.SetQuoteAlternatives(quoteAlternatives);
 Void SetQuoteId(Integer quoteId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1026,7 +1026,7 @@ thing.SetQuoteId(quoteId);
 Void SetQuoteVersionId(Integer quoteVersionId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1042,7 +1042,7 @@ thing.SetQuoteVersionId(quoteVersionId);
 Void SetRank(Integer rank)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1058,7 +1058,7 @@ thing.SetRank(rank);
 Void SetReason(String reason)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1074,7 +1074,7 @@ thing.SetReason(reason);
 Void SetRegistered(DateTime registered)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1090,7 +1090,7 @@ thing.SetRegistered(registered);
 Void SetRegisteredAssociateId(Integer registeredAssociateId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1106,7 +1106,7 @@ thing.SetRegisteredAssociateId(registeredAssociateId);
 Void SetSentDate(DateTime sentDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1122,7 +1122,7 @@ thing.SetSentDate(sentDate);
 Void SetState(Integer state)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1138,7 +1138,7 @@ thing.SetState(state);
 Void SetStatus(Integer status)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1154,7 +1154,7 @@ thing.SetStatus(status);
 Void SetUpdated(DateTime updated)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1170,7 +1170,7 @@ thing.SetUpdated(updated);
 Void SetUpdatedAssociateId(Integer updatedAssociateId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

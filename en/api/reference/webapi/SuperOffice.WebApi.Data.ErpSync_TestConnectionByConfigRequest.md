@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSync_TestConnectionByConfigRequest"></a> Class ErpSync\_TestConnectionByConfigRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ErpSync_TestConnectionByConfigRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ErpSync\_TestConnectionByConfigRequest](SuperOffice.WebApi.Data.ErpSync\_TestConnectionByConfigRequest.md)
+[ErpSync\_TestConnectionByConfigRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSync_TestConnectionByConfigRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public StringDictionary ConfigFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 ### <a id="SuperOffice_WebApi_Data_ErpSync_TestConnectionByConfigRequest_ErpConnectionId"></a> ErpConnectionId
 

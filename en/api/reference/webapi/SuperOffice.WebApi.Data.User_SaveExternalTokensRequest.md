@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_SaveExternalTokensRequest"></a> Class User\_SaveExternalTokensRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_SaveExternalTokensRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_SaveExternalTokensRequest](SuperOffice.WebApi.Data.User\_SaveExternalTokensRequest.md)
+[User\_SaveExternalTokensRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_SaveExternalTokensRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public TokenManagementInfo TokenManagementInfo { get; set; }
 
 #### Property Value
 
- [TokenManagementInfo](SuperOffice.WebApi.Data.TokenManagementInfo.md)
+ [TokenManagementInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.TokenManagementInfo)
 

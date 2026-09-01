@@ -29,7 +29,7 @@ Initializes a new instance of the NSTicket class.
 DateTime GetActivate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When the ticket should be activated, if it is postponed.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - When the ticket should be activated, if it is postponed.
 
 **Example:**
 
@@ -44,7 +44,7 @@ DateTime activate = thing.GetActivate();
 Integer GetAlertLevel()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The alert level for the ticket. Matches the level value of the ticket_alert table.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The alert level for the ticket. Matches the level value of the ticket_alert table.
 
 **Example:**
 
@@ -59,7 +59,7 @@ Integer alertLevel = thing.GetAlertLevel();
 DateTime GetAlertTimeout()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The datetime for when the ticket should jump to the next alert_level.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - The datetime for when the ticket should jump to the next alert_level.
 
 **Example:**
 
@@ -74,7 +74,7 @@ DateTime alertTimeout = thing.GetAlertTimeout();
 String GetAuthor()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A string representing the author of the ticket (same as author of first message).
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A string representing the author of the ticket (same as author of first message).
 
 **Example:**
 
@@ -89,7 +89,7 @@ String author = thing.GetAuthor();
 Integer GetBaseStatus()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The status of the ticket. See &lt;xref href="CRMScript.NetServer.TicketBaseStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The status of the ticket. See &lt;xref href="CRMScript.NetServer.TicketBaseStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
 
 **Example:**
 
@@ -104,7 +104,7 @@ Integer baseStatus = thing.GetBaseStatus();
 Integer GetCategory()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the category a ticket is in.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the category a ticket is in.
 
 **Example:**
 
@@ -119,7 +119,7 @@ Integer category = thing.GetCategory();
 String GetCategoryFullname()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The fullname (compiled from parents' names) for this category. E.g. 'norway/product A/support'.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The fullname (compiled from parents' names) for this category. E.g. 'norway/product A/support'.
 
 **Example:**
 
@@ -134,7 +134,7 @@ String categoryFullname = thing.GetCategoryFullname();
 String GetCategoryName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The (short) name of this category. E.g. 'support'.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The (short) name of this category. E.g. 'support'.
 
 **Example:**
 
@@ -149,7 +149,7 @@ String categoryName = thing.GetCategoryName();
 DateTime GetClosedAt()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When the ticket was closed.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - When the ticket was closed.
 
 **Example:**
 
@@ -164,7 +164,7 @@ DateTime closedAt = thing.GetClosedAt();
 Integer GetConnectId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - If a ticket is connected to another ticket, this field is set to the ID of the 'master' ticket.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - If a ticket is connected to another ticket, this field is set to the ID of the 'master' ticket.
 
 **Example:**
 
@@ -179,7 +179,7 @@ Integer connectId = thing.GetConnectId();
 DateTime GetCreatedAt()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When the ticket was created.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - When the ticket was created.
 
 **Example:**
 
@@ -194,7 +194,7 @@ DateTime createdAt = thing.GetCreatedAt();
 Integer GetCreatedBy()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the user who created the ticket. 1 (system user) if the ticket was created externally.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the user who created the ticket. 1 (system user) if the ticket was created externally.
 
 **Example:**
 
@@ -209,7 +209,7 @@ Integer createdBy = thing.GetCreatedBy();
 String GetCreatedByName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Initials, also login name, possibly database user name.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Initials, also login name, possibly database user name.
 
 **Example:**
 
@@ -224,7 +224,7 @@ String createdByName = thing.GetCreatedByName();
 Integer GetCustId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The reference to the customer. NULL or -1 if ticket is not connected to customer.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The reference to the customer. NULL or -1 if ticket is not connected to customer.
 
 **Example:**
 
@@ -239,7 +239,7 @@ Integer custId = thing.GetCustId();
 DateTime GetDeadline()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Deadline for ticket.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Deadline for ticket.
 
 **Example:**
 
@@ -254,7 +254,7 @@ DateTime deadline = thing.GetDeadline();
 DateTime GetFirstReadByUser()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The datetime for when the ticket first was read by a user.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - The datetime for when the ticket first was read by a user.
 
 **Example:**
 
@@ -269,7 +269,7 @@ DateTime firstReadByUser = thing.GetFirstReadByUser();
 String GetFromAddress()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The from-address used when this ticket got created, e.g. by email.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The from-address used when this ticket got created, e.g. by email.
 
 **Example:**
 
@@ -284,7 +284,7 @@ String fromAddress = thing.GetFromAddress();
 Bool GetHasAttachment()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Bool indicating if this ticket has one or more attachments.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Bool indicating if this ticket has one or more attachments.
 
 **Example:**
 
@@ -299,7 +299,7 @@ Bool hasAttachment = thing.GetHasAttachment();
 DateTime GetLastChanged()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The last time the ticket was modified.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - The last time the ticket was modified.
 
 **Example:**
 
@@ -314,7 +314,7 @@ DateTime lastChanged = thing.GetLastChanged();
 Integer GetNumMessages()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The total number of messages for this request.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The total number of messages for this request.
 
 **Example:**
 
@@ -329,7 +329,7 @@ Integer numMessages = thing.GetNumMessages();
 Integer GetNumReplies()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of replies (messages) to the customer for this request.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The number of replies (messages) to the customer for this request.
 
 **Example:**
 
@@ -344,7 +344,7 @@ Integer numReplies = thing.GetNumReplies();
 Integer GetOrigin()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - What is the origin of this ticket? See &lt;xref href="CRMScript.NetServer.TicketOrigin" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - What is the origin of this ticket? See &lt;xref href="CRMScript.NetServer.TicketOrigin" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
 
 **Example:**
 
@@ -359,7 +359,7 @@ Integer origin = thing.GetOrigin();
 Integer GetOwnedBy()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the user who owns the ticket. 1 (system user) if the ticket is unassigned.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the user who owns the ticket. 1 (system user) if the ticket is unassigned.
 
 **Example:**
 
@@ -374,7 +374,7 @@ Integer ownedBy = thing.GetOwnedBy();
 String GetOwnedByName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Initials, also login name, possibly database user name.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Initials, also login name, possibly database user name.
 
 **Example:**
 
@@ -389,7 +389,7 @@ String ownedByName = thing.GetOwnedByName();
 String GetPersonFirstname()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - First name.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - First name.
 
 **Example:**
 
@@ -404,7 +404,7 @@ String personFirstname = thing.GetPersonFirstname();
 String GetPersonFullname()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Gets the full name for the primary person (customer).
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Gets the full name for the primary person (customer).
 
 **Example:**
 
@@ -419,7 +419,7 @@ String personFullname = thing.GetPersonFullname();
 String GetPersonLastname()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Last name.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Last name.
 
 **Example:**
 
@@ -434,7 +434,7 @@ String personLastname = thing.GetPersonLastname();
 String GetPersonMiddleName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Middle name or 'van' etc.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Middle name or 'van' etc.
 
 **Example:**
 
@@ -449,7 +449,7 @@ String personMiddleName = thing.GetPersonMiddleName();
 Integer GetPriority()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The reference to the ticket_priority table.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The reference to the ticket_priority table.
 
 **Example:**
 
@@ -464,7 +464,7 @@ Integer priority = thing.GetPriority();
 String GetPriorityName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the priority.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The name of the priority.
 
 **Example:**
 
@@ -479,7 +479,7 @@ String priorityName = thing.GetPriorityName();
 DateTime GetReadByCustomer()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The datetime for when the ticket was read by the customer.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - The datetime for when the ticket was read by the customer.
 
 **Example:**
 
@@ -494,7 +494,7 @@ DateTime readByCustomer = thing.GetReadByCustomer();
 DateTime GetReadByOwner()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The datetime for when the ticket last was read by the owner.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - The datetime for when the ticket last was read by the owner.
 
 **Example:**
 
@@ -509,7 +509,7 @@ DateTime readByOwner = thing.GetReadByOwner();
 Integer GetReadStatus()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Whether the owner has read the ticket or not (red, yellow, green). See &lt;xref href="CRMScript.NetServer.TicketReadStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Whether the owner has read the ticket or not (red, yellow, green). See &lt;xref href="CRMScript.NetServer.TicketReadStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
 
 **Example:**
 
@@ -524,7 +524,7 @@ Integer readStatus = thing.GetReadStatus();
 Integer GetRealTimeSpentExternally()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The total time (seconds) within 24x7 the ticket has been in a external waiting status (configurable), not including current state.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The total time (seconds) within 24x7 the ticket has been in a external waiting status (configurable), not including current state.
 
 **Example:**
 
@@ -539,7 +539,7 @@ Integer realTimeSpentExternally = thing.GetRealTimeSpentExternally();
 Integer GetRealTimeSpentInternally()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The total time (seconds) within 24x7 the ticket has been in an open status (configurable), not including current state.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The total time (seconds) within 24x7 the ticket has been in an open status (configurable), not including current state.
 
 **Example:**
 
@@ -554,7 +554,7 @@ Integer realTimeSpentInternally = thing.GetRealTimeSpentInternally();
 Integer GetRealTimeSpentQueue()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The total time (seconds) within 24x7 hours the ticket has been in a queue status, not including current state.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The total time (seconds) within 24x7 hours the ticket has been in a queue status, not including current state.
 
 **Example:**
 
@@ -569,7 +569,7 @@ Integer realTimeSpentQueue = thing.GetRealTimeSpentQueue();
 Integer GetRealTimeToClose()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Same as time_to_close, but not calculated based on priority.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Same as time_to_close, but not calculated based on priority.
 
 **Example:**
 
@@ -584,7 +584,7 @@ Integer realTimeToClose = thing.GetRealTimeToClose();
 Integer GetRealTimeToReply()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Same as time_to_reply, but not calculated based on priority.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Same as time_to_reply, but not calculated based on priority.
 
 **Example:**
 
@@ -599,7 +599,7 @@ Integer realTimeToReply = thing.GetRealTimeToReply();
 DateTime GetRepliedAt()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The datetime for when the ticket was replied to. I.e. the first external message added to the ticket.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - The datetime for when the ticket was replied to. I.e. the first external message added to the ticket.
 
 **Example:**
 
@@ -614,7 +614,7 @@ DateTime repliedAt = thing.GetRepliedAt();
 Integer GetSlevel()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The security-level of the ticket. See &lt;xref href="CRMScript.NetServer.TicketSecurityLevel" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The security-level of the ticket. See &lt;xref href="CRMScript.NetServer.TicketSecurityLevel" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
 
 **Example:**
 
@@ -629,7 +629,7 @@ Integer slevel = thing.GetSlevel();
 Integer GetTicketId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The primary key (auto-incremented).
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The primary key (auto-incremented).
 
 **Example:**
 
@@ -644,7 +644,7 @@ Integer ticketId = thing.GetTicketId();
 Integer GetTicketStatus()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - User-defined ticket status.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - User-defined ticket status.
 
 **Example:**
 
@@ -661,7 +661,7 @@ Gets the display name of the ticket status.
 String GetTicketStatusDisplayValue()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -676,7 +676,7 @@ String ticketStatusDisplayValue = thing.GetTicketStatusDisplayValue();
 Integer GetTimeSpentExternally()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The total time (seconds) within the priority's office hours the ticket has been in a external waiting status (configurable), not including current state.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The total time (seconds) within the priority's office hours the ticket has been in a external waiting status (configurable), not including current state.
 
 **Example:**
 
@@ -691,7 +691,7 @@ Integer timeSpentExternally = thing.GetTimeSpentExternally();
 Integer GetTimeSpentInternally()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The total time (seconds) within the priority's office hours the ticket has been in an open status (configurable), not including current state.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The total time (seconds) within the priority's office hours the ticket has been in an open status (configurable), not including current state.
 
 **Example:**
 
@@ -706,7 +706,7 @@ Integer timeSpentInternally = thing.GetTimeSpentInternally();
 Integer GetTimeSpentQueue()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The total time (seconds) within the priority's office hours the ticket has been in a queue status, not including current state.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The total time (seconds) within the priority's office hours the ticket has been in a queue status, not including current state.
 
 **Example:**
 
@@ -721,7 +721,7 @@ Integer timeSpentQueue = thing.GetTimeSpentQueue();
 Integer GetTimeToClose()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority's time frame.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The time (minutes) between when the ticket was created and when it was closed. Calculated based on priority's time frame.
 
 **Example:**
 
@@ -736,7 +736,7 @@ Integer timeToClose = thing.GetTimeToClose();
 Integer GetTimeToReply()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority's time frame.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The time (minutes) between when the ticket was created and when it was replied to. Calculated based on priority's time frame.
 
 **Example:**
 
@@ -751,7 +751,7 @@ Integer timeToReply = thing.GetTimeToReply();
 String GetTitle()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The title of the ticket.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The title of the ticket.
 
 **Example:**
 
@@ -766,7 +766,7 @@ String title = thing.GetTitle();
 Void SetActivate(DateTime activate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -782,7 +782,7 @@ thing.SetActivate(activate);
 Void SetAlertLevel(Integer alertLevel)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -798,7 +798,7 @@ thing.SetAlertLevel(alertLevel);
 Void SetAlertTimeout(DateTime alertTimeout)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -814,7 +814,7 @@ thing.SetAlertTimeout(alertTimeout);
 Void SetAuthor(String author)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -830,7 +830,7 @@ thing.SetAuthor(author);
 Void SetBaseStatus(Integer baseStatus)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -846,7 +846,7 @@ thing.SetBaseStatus(baseStatus);
 Void SetCategory(Integer category)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -862,7 +862,7 @@ thing.SetCategory(category);
 Void SetCategoryFullname(String categoryFullname)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -878,7 +878,7 @@ thing.SetCategoryFullname(categoryFullname);
 Void SetCategoryName(String categoryName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -894,7 +894,7 @@ thing.SetCategoryName(categoryName);
 Void SetClosedAt(DateTime closedAt)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -910,7 +910,7 @@ thing.SetClosedAt(closedAt);
 Void SetConnectId(Integer connectId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -926,7 +926,7 @@ thing.SetConnectId(connectId);
 Void SetCreatedAt(DateTime createdAt)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -942,7 +942,7 @@ thing.SetCreatedAt(createdAt);
 Void SetCreatedBy(Integer createdBy)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -958,7 +958,7 @@ thing.SetCreatedBy(createdBy);
 Void SetCreatedByName(String createdByName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -974,7 +974,7 @@ thing.SetCreatedByName(createdByName);
 Void SetCustId(Integer custId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -990,7 +990,7 @@ thing.SetCustId(custId);
 Void SetDeadline(DateTime deadline)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1006,7 +1006,7 @@ thing.SetDeadline(deadline);
 Void SetFirstReadByUser(DateTime firstReadByUser)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1022,7 +1022,7 @@ thing.SetFirstReadByUser(firstReadByUser);
 Void SetFromAddress(String fromAddress)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1038,7 +1038,7 @@ thing.SetFromAddress(fromAddress);
 Void SetHasAttachment(Bool hasAttachment)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1054,7 +1054,7 @@ thing.SetHasAttachment(hasAttachment);
 Void SetLastChanged(DateTime lastChanged)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1070,7 +1070,7 @@ thing.SetLastChanged(lastChanged);
 Void SetNumMessages(Integer numMessages)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1086,7 +1086,7 @@ thing.SetNumMessages(numMessages);
 Void SetNumReplies(Integer numReplies)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1102,7 +1102,7 @@ thing.SetNumReplies(numReplies);
 Void SetOrigin(Integer origin)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1118,7 +1118,7 @@ thing.SetOrigin(origin);
 Void SetOwnedBy(Integer ownedBy)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1134,7 +1134,7 @@ thing.SetOwnedBy(ownedBy);
 Void SetOwnedByName(String ownedByName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1150,7 +1150,7 @@ thing.SetOwnedByName(ownedByName);
 Void SetPersonFirstname(String personFirstname)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1168,7 +1168,7 @@ Sets the full name for the primary person (customer)
 Void SetPersonFullname(String personFullname)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1184,7 +1184,7 @@ thing.SetPersonFullname(personFullname);
 Void SetPersonLastname(String personLastname)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1200,7 +1200,7 @@ thing.SetPersonLastname(personLastname);
 Void SetPersonMiddleName(String personMiddleName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1216,7 +1216,7 @@ thing.SetPersonMiddleName(personMiddleName);
 Void SetPriority(Integer priority)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1232,7 +1232,7 @@ thing.SetPriority(priority);
 Void SetPriorityName(String priorityName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1248,7 +1248,7 @@ thing.SetPriorityName(priorityName);
 Void SetReadByCustomer(DateTime readByCustomer)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1264,7 +1264,7 @@ thing.SetReadByCustomer(readByCustomer);
 Void SetReadByOwner(DateTime readByOwner)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1280,7 +1280,7 @@ thing.SetReadByOwner(readByOwner);
 Void SetReadStatus(Integer readStatus)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1296,7 +1296,7 @@ thing.SetReadStatus(readStatus);
 Void SetRealTimeSpentExternally(Integer realTimeSpentExternally)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1312,7 +1312,7 @@ thing.SetRealTimeSpentExternally(realTimeSpentExternally);
 Void SetRealTimeSpentInternally(Integer realTimeSpentInternally)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1328,7 +1328,7 @@ thing.SetRealTimeSpentInternally(realTimeSpentInternally);
 Void SetRealTimeSpentQueue(Integer realTimeSpentQueue)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1344,7 +1344,7 @@ thing.SetRealTimeSpentQueue(realTimeSpentQueue);
 Void SetRealTimeToClose(Integer realTimeToClose)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1360,7 +1360,7 @@ thing.SetRealTimeToClose(realTimeToClose);
 Void SetRealTimeToReply(Integer realTimeToReply)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1376,7 +1376,7 @@ thing.SetRealTimeToReply(realTimeToReply);
 Void SetRepliedAt(DateTime repliedAt)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1392,7 +1392,7 @@ thing.SetRepliedAt(repliedAt);
 Void SetSlevel(Integer slevel)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1408,7 +1408,7 @@ thing.SetSlevel(slevel);
 Void SetTicketId(Integer ticketId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1424,7 +1424,7 @@ thing.SetTicketId(ticketId);
 Void SetTicketStatus(Integer ticketStatus)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1442,7 +1442,7 @@ Gets the display name of the ticket status.
 Void SetTicketStatusDisplayValue(String ticketStatusDisplayValue)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1458,7 +1458,7 @@ thing.SetTicketStatusDisplayValue(ticketStatusDisplayValue);
 Void SetTimeSpentExternally(Integer timeSpentExternally)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1474,7 +1474,7 @@ thing.SetTimeSpentExternally(timeSpentExternally);
 Void SetTimeSpentInternally(Integer timeSpentInternally)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1490,7 +1490,7 @@ thing.SetTimeSpentInternally(timeSpentInternally);
 Void SetTimeSpentQueue(Integer timeSpentQueue)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1506,7 +1506,7 @@ thing.SetTimeSpentQueue(timeSpentQueue);
 Void SetTimeToClose(Integer timeToClose)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1522,7 +1522,7 @@ thing.SetTimeToClose(timeToClose);
 Void SetTimeToReply(Integer timeToReply)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1538,7 +1538,7 @@ thing.SetTimeToReply(timeToReply);
 Void SetTitle(String title)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

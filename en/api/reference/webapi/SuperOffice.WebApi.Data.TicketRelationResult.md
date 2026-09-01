@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TicketRelationResult"></a> Class TicketRelationResult
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TicketRelationResult.
@@ -13,7 +13,7 @@ public class TicketRelationResult
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[TicketRelationResult](SuperOffice.WebApi.Data.TicketRelationResult.md)
+[TicketRelationResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationResult)
 
 #### Inherited Members
 
@@ -73,11 +73,11 @@ public TicketRelationError? RelationError { get; set; }
 
 #### Property Value
 
- [TicketRelationError](SuperOffice.WebApi.Data.TicketRelationError.md)?
+ [TicketRelationError](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationError)?
 
 #### See Also
 
-[TicketRelationResult](SuperOffice.WebApi.Data.TicketRelationResult.md).[RelationError\_String](SuperOffice.WebApi.Data.TicketRelationResult.md\#SuperOffice\_WebApi\_Data\_TicketRelationResult\_RelationError\_String)
+[TicketRelationResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationResult).[RelationError\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationResult#SuperOffice_WebApi_Data_TicketRelationResult_RelationError_String)
 
 ### <a id="SuperOffice_WebApi_Data_TicketRelationResult_RelationError_String"></a> RelationError\_String
 
@@ -95,7 +95,7 @@ public string RelationError_String { get; set; }
 
 #### See Also
 
-[TicketRelationResult](SuperOffice.WebApi.Data.TicketRelationResult.md).[RelationError](SuperOffice.WebApi.Data.TicketRelationResult.md\#SuperOffice\_WebApi\_Data\_TicketRelationResult\_RelationError)
+[TicketRelationResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationResult).[RelationError](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationResult#SuperOffice_WebApi_Data_TicketRelationResult_RelationError)
 
 ### <a id="SuperOffice_WebApi_Data_TicketRelationResult_SourceTicketId"></a> SourceTicketId
 
@@ -111,5 +111,5 @@ public virtual int SourceTicketId { get; set; }
 
 ## See Also
 
-[TicketAgent](SuperOffice.WebApi.Agents.TicketAgent.md)
+[TicketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TicketAgent)
 

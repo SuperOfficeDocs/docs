@@ -33,7 +33,7 @@ Dumps the attachment file to output.
 Bool dump()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if everything is OK; otherwise false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if everything is OK; otherwise false.
 
 <Note>
 Use dump(Bool) to signal the browser to download the file instead of display it.
@@ -47,7 +47,7 @@ Dumps the attachment file to output. The optional parameter if true tells the br
 Bool dump(Bool download)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if everything is OK; otherwise false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if everything is OK; otherwise false.
 
 ## getBase64()
 
@@ -57,7 +57,7 @@ Returns the attachment as base64 encoded string.
 String getBase64()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The attachment as base64 encoded string.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The attachment as base64 encoded string.
 
 <Note>
 This can be used to load a binary attachment into a string, as base64 coded data is valid ASCII.
@@ -71,7 +71,7 @@ Constructs a download URL for the attachment.
 String getDownloadUrl(Bool external, Bool saveToDisk)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The download URL for the attachment.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The download URL for the attachment.
 
 <Note>
 There are 2 kinds of URLs: external = used by customers; internal = used by Service users.
@@ -85,7 +85,7 @@ Gets the whole attachment as a String without any special encoding.
 String getRaw()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The raw attachment without any special encoding.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The raw attachment without any special encoding.
 
 ## getValue(String)
 
@@ -95,7 +95,7 @@ Gets a value from the attachment class.
 String getValue(String name)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the property given in name.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The value of the property given in name.
 
 <Note>
 The current implementation supports the following values as the name parameter.
@@ -120,7 +120,7 @@ Loads a Service attachment from disk.
 Bool load(Integer id)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the load was successful; otherwise false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if the load was successful; otherwise false.
 
 ## remove()
 
@@ -130,7 +130,7 @@ Deletes the attachment record from the database and the attachment file from dis
 remove()
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## save()
 
@@ -140,7 +140,7 @@ Saves the attachment to disk.
 Integer save()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The attachment ID.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The attachment ID.
 
 ## saveBase64(String)
 
@@ -150,7 +150,7 @@ Creates a filename and saves a base64-coded attachment to disk.
 Integer saveBase64(String attachment)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The actual number of bytes written to disk.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The actual number of bytes written to disk.
 
 ## setValue(String,String)
 
@@ -160,7 +160,7 @@ Sets a value on the attachment object.
 Void SetValue(String name, String value)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 The current implementation supports the following values as the name parameter.

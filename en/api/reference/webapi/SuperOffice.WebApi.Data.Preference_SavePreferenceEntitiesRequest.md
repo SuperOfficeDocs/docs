@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Preference_SavePreferenceEntitiesRequest"></a> Class Preference\_SavePreferenceEntitiesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Preference_SavePreferenceEntitiesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Preference\_SavePreferenceEntitiesRequest](SuperOffice.WebApi.Data.Preference\_SavePreferenceEntitiesRequest.md)
+[Preference\_SavePreferenceEntitiesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Preference_SavePreferenceEntitiesRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public Preference[] Preferences { get; set; }
 
 #### Property Value
 
- [Preference](SuperOffice.WebApi.Data.Preference.md)\[\]
+ [Preference](/en/api/reference/webapi/SuperOffice.WebApi.Data.Preference)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_Preference_SavePreferenceEntitiesRequest_RemoveLowerLevels"></a> RemoveLowerLevels
 

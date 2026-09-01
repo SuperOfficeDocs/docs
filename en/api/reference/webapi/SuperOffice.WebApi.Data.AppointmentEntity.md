@@ -1,6 +1,6 @@
 # Class AppointmentEntity {#SuperOffice_WebApi_Data_AppointmentEntity}
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for AppointmentEntity.
@@ -13,13 +13,13 @@ public class AppointmentEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -124,7 +124,7 @@ public virtual Associate AssignedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### AssignmentStatus {#SuperOffice_WebApi_Data_AppointmentEntity_AssignmentStatus}
 
@@ -138,11 +138,11 @@ public AssignmentStatus? AssignmentStatus { get; set; }
 
 #### Property Value
 
- [AssignmentStatus](SuperOffice.WebApi.Data.AssignmentStatus.md)?
+ [AssignmentStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.AssignmentStatus)?
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[AssignmentStatus\_String](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_AssignmentStatus\_String)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[AssignmentStatus\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_AssignmentStatus_String)
 
 ### AssignmentStatus\_String {#SuperOffice_WebApi_Data_AppointmentEntity_AssignmentStatus_String}
 
@@ -160,7 +160,7 @@ public string AssignmentStatus_String { get; set; }
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[AssignmentStatus](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_AssignmentStatus)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[AssignmentStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_AssignmentStatus)
 
 ### Associate {#SuperOffice_WebApi_Data_AppointmentEntity_Associate}
 
@@ -173,7 +173,7 @@ public virtual Associate Associate { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### BookingType {#SuperOffice_WebApi_Data_AppointmentEntity_BookingType}
 
@@ -187,11 +187,11 @@ public BookingType? BookingType { get; set; }
 
 #### Property Value
 
- [BookingType](SuperOffice.WebApi.Data.BookingType.md)?
+ [BookingType](/en/api/reference/webapi/SuperOffice.WebApi.Data.BookingType)?
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[BookingType\_String](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_BookingType\_String)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[BookingType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_BookingType_String)
 
 ### BookingType\_String {#SuperOffice_WebApi_Data_AppointmentEntity_BookingType_String}
 
@@ -209,7 +209,7 @@ public string BookingType_String { get; set; }
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[BookingType](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_BookingType)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[BookingType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_BookingType)
 
 ### CautionWarning {#SuperOffice_WebApi_Data_AppointmentEntity_CautionWarning}
 
@@ -223,11 +223,11 @@ public AppointmentCautionWarning? CautionWarning { get; set; }
 
 #### Property Value
 
- [AppointmentCautionWarning](SuperOffice.WebApi.Data.AppointmentCautionWarning.md)?
+ [AppointmentCautionWarning](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentCautionWarning)?
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[CautionWarning\_String](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_CautionWarning\_String)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[CautionWarning\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_CautionWarning_String)
 
 ### CautionWarning\_String {#SuperOffice_WebApi_Data_AppointmentEntity_CautionWarning_String}
 
@@ -245,7 +245,7 @@ public string CautionWarning_String { get; set; }
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[CautionWarning](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_CautionWarning)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[CautionWarning](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_CautionWarning)
 
 ### CentralserviceVideomeetId {#SuperOffice_WebApi_Data_AppointmentEntity_CentralserviceVideomeetId}
 
@@ -283,11 +283,11 @@ public ActivityStatus? Completed { get; set; }
 
 #### Property Value
 
- [ActivityStatus](SuperOffice.WebApi.Data.ActivityStatus.md)?
+ [ActivityStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ActivityStatus)?
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[Completed\_String](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_Completed\_String)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[Completed\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_Completed_String)
 
 ### Completed\_String {#SuperOffice_WebApi_Data_AppointmentEntity_Completed_String}
 
@@ -305,7 +305,7 @@ public string Completed_String { get; set; }
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[Completed](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_Completed)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[Completed](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_Completed)
 
 ### Contact {#SuperOffice_WebApi_Data_AppointmentEntity_Contact}
 
@@ -318,7 +318,7 @@ public virtual Contact Contact { get; set; }
 
 #### Property Value
 
- [Contact](SuperOffice.WebApi.Data.Contact.md)
+ [Contact](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact)
 
 ### CreatedBy {#SuperOffice_WebApi_Data_AppointmentEntity_CreatedBy}
 
@@ -330,7 +330,7 @@ public virtual Associate CreatedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### CreatedDate {#SuperOffice_WebApi_Data_AppointmentEntity_CreatedDate}
 
@@ -358,7 +358,7 @@ public virtual StringDictionary CustomFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 #### Remarks
 
@@ -407,7 +407,7 @@ public virtual StringDictionary ExtraFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 #### Remarks
 
@@ -476,11 +476,11 @@ public InvitationStatus? InvitationStatus { get; set; }
 
 #### Property Value
 
- [InvitationStatus](SuperOffice.WebApi.Data.InvitationStatus.md)?
+ [InvitationStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.InvitationStatus)?
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[InvitationStatus\_String](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_InvitationStatus\_String)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[InvitationStatus\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_InvitationStatus_String)
 
 ### InvitationStatus\_String {#SuperOffice_WebApi_Data_AppointmentEntity_InvitationStatus_String}
 
@@ -498,7 +498,7 @@ public string InvitationStatus_String { get; set; }
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[InvitationStatus](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_InvitationStatus)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[InvitationStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_InvitationStatus)
 
 ### InvitedPerson {#SuperOffice_WebApi_Data_AppointmentEntity_InvitedPerson}
 
@@ -510,7 +510,7 @@ public virtual Person InvitedPerson { get; set; }
 
 #### Property Value
 
- [Person](SuperOffice.WebApi.Data.Person.md)
+ [Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person)
 
 ### IsAlldayEvent {#SuperOffice_WebApi_Data_AppointmentEntity_IsAlldayEvent}
 
@@ -606,7 +606,7 @@ public virtual Link[] Links { get; set; }
 
 #### Property Value
 
- [Link](SuperOffice.WebApi.Data.Link.md)\[\]
+ [Link](/en/api/reference/webapi/SuperOffice.WebApi.Data.Link)\[\]
 
 ### Location {#SuperOffice_WebApi_Data_AppointmentEntity_Location}
 
@@ -630,7 +630,7 @@ public virtual Associate MotherAssociate { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### MotherId {#SuperOffice_WebApi_Data_AppointmentEntity_MotherId}
 
@@ -656,11 +656,11 @@ public AppointmentExternalOwner? OwnedExternally { get; set; }
 
 #### Property Value
 
- [AppointmentExternalOwner](SuperOffice.WebApi.Data.AppointmentExternalOwner.md)?
+ [AppointmentExternalOwner](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentExternalOwner)?
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[OwnedExternally\_String](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_OwnedExternally\_String)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[OwnedExternally\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_OwnedExternally_String)
 
 ### OwnedExternally\_String {#SuperOffice_WebApi_Data_AppointmentEntity_OwnedExternally_String}
 
@@ -678,7 +678,7 @@ public string OwnedExternally_String { get; set; }
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[OwnedExternally](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_OwnedExternally)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[OwnedExternally](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_OwnedExternally)
 
 ### Participants {#SuperOffice_WebApi_Data_AppointmentEntity_Participants}
 
@@ -690,7 +690,7 @@ public virtual ParticipantInfo[] Participants { get; set; }
 
 #### Property Value
 
- [ParticipantInfo](SuperOffice.WebApi.Data.ParticipantInfo.md)\[\]
+ [ParticipantInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ParticipantInfo)\[\]
 
 ### Person {#SuperOffice_WebApi_Data_AppointmentEntity_Person}
 
@@ -703,7 +703,7 @@ public virtual Person Person { get; set; }
 
 #### Property Value
 
- [Person](SuperOffice.WebApi.Data.Person.md)
+ [Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person)
 
 ### PreferredTZLocation {#SuperOffice_WebApi_Data_AppointmentEntity_PreferredTZLocation}
 
@@ -727,7 +727,7 @@ public virtual TimeZoneData PreferredTZLocationData { get; set; }
 
 #### Property Value
 
- [TimeZoneData](SuperOffice.WebApi.Data.TimeZoneData.md)
+ [TimeZoneData](/en/api/reference/webapi/SuperOffice.WebApi.Data.TimeZoneData)
 
 ### Priority {#SuperOffice_WebApi_Data_AppointmentEntity_Priority}
 
@@ -740,7 +740,7 @@ public virtual Priority Priority { get; set; }
 
 #### Property Value
 
- [Priority](SuperOffice.WebApi.Data.Priority.md)
+ [Priority](/en/api/reference/webapi/SuperOffice.WebApi.Data.Priority)
 
 ### Private {#SuperOffice_WebApi_Data_AppointmentEntity_Private}
 
@@ -754,11 +754,11 @@ public AppointmentPrivate? Private { get; set; }
 
 #### Property Value
 
- [AppointmentPrivate](SuperOffice.WebApi.Data.AppointmentPrivate.md)?
+ [AppointmentPrivate](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentPrivate)?
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[Private\_String](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_Private\_String)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[Private\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_Private_String)
 
 ### Private\_String {#SuperOffice_WebApi_Data_AppointmentEntity_Private_String}
 
@@ -776,7 +776,7 @@ public string Private_String { get; set; }
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[Private](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_Private)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[Private](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_Private)
 
 ### Project {#SuperOffice_WebApi_Data_AppointmentEntity_Project}
 
@@ -789,7 +789,7 @@ public virtual Project Project { get; set; }
 
 #### Property Value
 
- [Project](SuperOffice.WebApi.Data.Project.md)
+ [Project](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project)
 
 ### PublishEventDate {#SuperOffice_WebApi_Data_AppointmentEntity_PublishEventDate}
 
@@ -837,7 +837,7 @@ public virtual RecurrenceInfo Recurrence { get; set; }
 
 #### Property Value
 
- [RecurrenceInfo](SuperOffice.WebApi.Data.RecurrenceInfo.md)
+ [RecurrenceInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceInfo)
 
 ### RejectCounter {#SuperOffice_WebApi_Data_AppointmentEntity_RejectCounter}
 
@@ -875,7 +875,7 @@ public virtual Sale Sale { get; set; }
 
 #### Property Value
 
- [Sale](SuperOffice.WebApi.Data.Sale.md)
+ [Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale)
 
 ### StartDate {#SuperOffice_WebApi_Data_AppointmentEntity_StartDate}
 
@@ -912,7 +912,7 @@ public virtual TaskListItem Task { get; set; }
 
 #### Property Value
 
- [TaskListItem](SuperOffice.WebApi.Data.TaskListItem.md)
+ [TaskListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem)
 
 ### Title {#SuperOffice_WebApi_Data_AppointmentEntity_Title}
 
@@ -938,11 +938,11 @@ public AppointmentType? Type { get; set; }
 
 #### Property Value
 
- [AppointmentType](SuperOffice.WebApi.Data.AppointmentType.md)?
+ [AppointmentType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentType)?
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[Type\_String](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_Type\_String)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[Type\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_Type_String)
 
 ### Type\_String {#SuperOffice_WebApi_Data_AppointmentEntity_Type_String}
 
@@ -960,7 +960,7 @@ public string Type_String { get; set; }
 
 #### See Also
 
-[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md).[Type](SuperOffice.WebApi.Data.AppointmentEntity.md\#SuperOffice\_WebApi\_Data\_AppointmentEntity\_Type)
+[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity).[Type](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity#SuperOffice_WebApi_Data_AppointmentEntity_Type)
 
 ### UpdatedBy {#SuperOffice_WebApi_Data_AppointmentEntity_UpdatedBy}
 
@@ -972,7 +972,7 @@ public virtual Associate UpdatedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### UpdatedDate {#SuperOffice_WebApi_Data_AppointmentEntity_UpdatedDate}
 
@@ -999,7 +999,7 @@ public virtual StringDictionary UserDefinedFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 ### VisibleFor {#SuperOffice_WebApi_Data_AppointmentEntity_VisibleFor}
 
@@ -1011,11 +1011,11 @@ public virtual VisibleFor[] VisibleFor { get; set; }
 
 #### Property Value
 
- [VisibleFor](SuperOffice.WebApi.Data.VisibleFor.md)\[\]
+ [VisibleFor](/en/api/reference/webapi/SuperOffice.WebApi.Data.VisibleFor)\[\]
 
 ## See Also
 
-[AppointmentAgent](SuperOffice.WebApi.Agents.AppointmentAgent.md), 
-[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md), 
+[AppointmentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AppointmentAgent), 
+[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent), 
 
 

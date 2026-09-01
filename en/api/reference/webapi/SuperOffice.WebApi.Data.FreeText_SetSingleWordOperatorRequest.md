@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_FreeText_SetSingleWordOperatorRequest"></a> Class FreeText\_SetSingleWordOperatorRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class FreeText_SetSingleWordOperatorRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[FreeText\_SetSingleWordOperatorRequest](SuperOffice.WebApi.Data.FreeText\_SetSingleWordOperatorRequest.md)
+[FreeText\_SetSingleWordOperatorRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.FreeText_SetSingleWordOperatorRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public FreeTextOperator FreeTextOperator { get; set; }
 
 #### Property Value
 
- [FreeTextOperator](SuperOffice.WebApi.Data.FreeTextOperator.md)
+ [FreeTextOperator](/en/api/reference/webapi/SuperOffice.WebApi.Data.FreeTextOperator)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_BLOB_SaveProjectImageRequest"></a> Class BLOB\_SaveProjectImageRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class BLOB_SaveProjectImageRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[BLOB\_SaveProjectImageRequest](SuperOffice.WebApi.Data.BLOB\_SaveProjectImageRequest.md)
+[BLOB\_SaveProjectImageRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.BLOB_SaveProjectImageRequest)
 
 #### Inherited Members
 

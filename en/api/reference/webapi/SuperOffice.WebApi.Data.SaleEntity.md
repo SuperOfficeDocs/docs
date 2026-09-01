@@ -1,6 +1,6 @@
 # Class SaleEntity {#SuperOffice_WebApi_Data_SaleEntity}
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for SaleEntity.
@@ -13,13 +13,13 @@ public class SaleEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[SaleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -101,7 +101,7 @@ public virtual Appointment Appointment { get; set; }
 
 #### Property Value
 
- [Appointment](SuperOffice.WebApi.Data.Appointment.md)
+ [Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)
 
 ### Associate {#SuperOffice_WebApi_Data_SaleEntity_Associate}
 
@@ -114,7 +114,7 @@ public virtual Associate Associate { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### Competitor {#SuperOffice_WebApi_Data_SaleEntity_Competitor}
 
@@ -127,7 +127,7 @@ public virtual Competitor Competitor { get; set; }
 
 #### Property Value
 
- [Competitor](SuperOffice.WebApi.Data.Competitor.md)
+ [Competitor](/en/api/reference/webapi/SuperOffice.WebApi.Data.Competitor)
 
 ### Completed {#SuperOffice_WebApi_Data_SaleEntity_Completed}
 
@@ -141,11 +141,11 @@ public ActivityStatus? Completed { get; set; }
 
 #### Property Value
 
- [ActivityStatus](SuperOffice.WebApi.Data.ActivityStatus.md)?
+ [ActivityStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ActivityStatus)?
 
 #### See Also
 
-[SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md).[Completed\_String](SuperOffice.WebApi.Data.SaleEntity.md\#SuperOffice\_WebApi\_Data\_SaleEntity\_Completed\_String)
+[SaleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity).[Completed\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity#SuperOffice_WebApi_Data_SaleEntity_Completed_String)
 
 ### Completed\_String {#SuperOffice_WebApi_Data_SaleEntity_Completed_String}
 
@@ -163,7 +163,7 @@ public string Completed_String { get; set; }
 
 #### See Also
 
-[SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md).[Completed](SuperOffice.WebApi.Data.SaleEntity.md\#SuperOffice\_WebApi\_Data\_SaleEntity\_Completed)
+[SaleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity).[Completed](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity#SuperOffice_WebApi_Data_SaleEntity_Completed)
 
 ### Contact {#SuperOffice_WebApi_Data_SaleEntity_Contact}
 
@@ -176,7 +176,7 @@ public virtual Contact Contact { get; set; }
 
 #### Property Value
 
- [Contact](SuperOffice.WebApi.Data.Contact.md)
+ [Contact](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact)
 
 ### CreatedBy {#SuperOffice_WebApi_Data_SaleEntity_CreatedBy}
 
@@ -188,7 +188,7 @@ public virtual Associate CreatedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### CreatedDate {#SuperOffice_WebApi_Data_SaleEntity_CreatedDate}
 
@@ -213,7 +213,7 @@ public virtual Credited Credited { get; set; }
 
 #### Property Value
 
- [Credited](SuperOffice.WebApi.Data.Credited.md)
+ [Credited](/en/api/reference/webapi/SuperOffice.WebApi.Data.Credited)
 
 ### Currency {#SuperOffice_WebApi_Data_SaleEntity_Currency}
 
@@ -226,7 +226,7 @@ public virtual Currency Currency { get; set; }
 
 #### Property Value
 
- [Currency](SuperOffice.WebApi.Data.Currency.md)
+ [Currency](/en/api/reference/webapi/SuperOffice.WebApi.Data.Currency)
 
 ### CustomFields {#SuperOffice_WebApi_Data_SaleEntity_CustomFields}
 
@@ -242,7 +242,7 @@ public virtual StringDictionary CustomFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 #### Remarks
 
@@ -291,7 +291,7 @@ public virtual StringDictionary ExtraFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 #### Remarks
 
@@ -346,7 +346,7 @@ public virtual Link[] Links { get; set; }
 
 #### Property Value
 
- [Link](SuperOffice.WebApi.Data.Link.md)\[\]
+ [Link](/en/api/reference/webapi/SuperOffice.WebApi.Data.Link)\[\]
 
 ### NextDueDate {#SuperOffice_WebApi_Data_SaleEntity_NextDueDate}
 
@@ -383,7 +383,7 @@ public virtual Person Person { get; set; }
 
 #### Property Value
 
- [Person](SuperOffice.WebApi.Data.Person.md)
+ [Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person)
 
 ### Postit {#SuperOffice_WebApi_Data_SaleEntity_Postit}
 
@@ -420,7 +420,7 @@ public virtual Project Project { get; set; }
 
 #### Property Value
 
- [Project](SuperOffice.WebApi.Data.Project.md)
+ [Project](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project)
 
 ### PublishEventDate {#SuperOffice_WebApi_Data_SaleEntity_PublishEventDate}
 
@@ -469,7 +469,7 @@ public virtual Rating Rating { get; set; }
 
 #### Property Value
 
- [Rating](SuperOffice.WebApi.Data.Rating.md)
+ [Rating](/en/api/reference/webapi/SuperOffice.WebApi.Data.Rating)
 
 ### Reason {#SuperOffice_WebApi_Data_SaleEntity_Reason}
 
@@ -482,7 +482,7 @@ public virtual Reason Reason { get; set; }
 
 #### Property Value
 
- [Reason](SuperOffice.WebApi.Data.Reason.md)
+ [Reason](/en/api/reference/webapi/SuperOffice.WebApi.Data.Reason)
 
 ### ReasonSold {#SuperOffice_WebApi_Data_SaleEntity_ReasonSold}
 
@@ -494,7 +494,7 @@ public virtual ReasonSold ReasonSold { get; set; }
 
 #### Property Value
 
- [ReasonSold](SuperOffice.WebApi.Data.ReasonSold.md)
+ [ReasonSold](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReasonSold)
 
 ### ReasonStalled {#SuperOffice_WebApi_Data_SaleEntity_ReasonStalled}
 
@@ -506,7 +506,7 @@ public virtual ReasonStalled ReasonStalled { get; set; }
 
 #### Property Value
 
- [ReasonStalled](SuperOffice.WebApi.Data.ReasonStalled.md)
+ [ReasonStalled](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReasonStalled)
 
 ### ReopenDate {#SuperOffice_WebApi_Data_SaleEntity_ReopenDate}
 
@@ -540,7 +540,7 @@ public virtual SaleStakeholder[] SaleStakeholders { get; set; }
 
 #### Property Value
 
- [SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)\[\]
+ [SaleStakeholder](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleStakeholder)\[\]
 
 ### SaleText {#SuperOffice_WebApi_Data_SaleEntity_SaleText}
 
@@ -564,7 +564,7 @@ public virtual SaleType SaleType { get; set; }
 
 #### Property Value
 
- [SaleType](SuperOffice.WebApi.Data.SaleType.md)
+ [SaleType](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleType)
 
 ### Saledate {#SuperOffice_WebApi_Data_SaleEntity_Saledate}
 
@@ -589,7 +589,7 @@ public virtual Source Source { get; set; }
 
 #### Property Value
 
- [Source](SuperOffice.WebApi.Data.Source.md)
+ [Source](/en/api/reference/webapi/SuperOffice.WebApi.Data.Source)
 
 ### Status {#SuperOffice_WebApi_Data_SaleEntity_Status}
 
@@ -603,11 +603,11 @@ public SaleStatus? Status { get; set; }
 
 #### Property Value
 
- [SaleStatus](SuperOffice.WebApi.Data.SaleStatus.md)?
+ [SaleStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleStatus)?
 
 #### See Also
 
-[SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md).[Status\_String](SuperOffice.WebApi.Data.SaleEntity.md\#SuperOffice\_WebApi\_Data\_SaleEntity\_Status\_String)
+[SaleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity).[Status\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity#SuperOffice_WebApi_Data_SaleEntity_Status_String)
 
 ### Status\_String {#SuperOffice_WebApi_Data_SaleEntity_Status_String}
 
@@ -625,7 +625,7 @@ public string Status_String { get; set; }
 
 #### See Also
 
-[SaleEntity](SuperOffice.WebApi.Data.SaleEntity.md).[Status](SuperOffice.WebApi.Data.SaleEntity.md\#SuperOffice\_WebApi\_Data\_SaleEntity\_Status)
+[SaleEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity).[Status](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleEntity#SuperOffice_WebApi_Data_SaleEntity_Status)
 
 ### UpdatedBy {#SuperOffice_WebApi_Data_SaleEntity_UpdatedBy}
 
@@ -637,7 +637,7 @@ public virtual Associate UpdatedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### UpdatedDate {#SuperOffice_WebApi_Data_SaleEntity_UpdatedDate}
 
@@ -664,7 +664,7 @@ public virtual StringDictionary UserDefinedFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 ### VisibleFor {#SuperOffice_WebApi_Data_SaleEntity_VisibleFor}
 
@@ -676,11 +676,11 @@ public virtual VisibleFor[] VisibleFor { get; set; }
 
 #### Property Value
 
- [VisibleFor](SuperOffice.WebApi.Data.VisibleFor.md)\[\]
+ [VisibleFor](/en/api/reference/webapi/SuperOffice.WebApi.Data.VisibleFor)\[\]
 
 ## See Also
 
-[SaleAgent](SuperOffice.WebApi.Agents.SaleAgent.md), 
-[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md), 
+[SaleAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SaleAgent), 
+[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent), 
 
 

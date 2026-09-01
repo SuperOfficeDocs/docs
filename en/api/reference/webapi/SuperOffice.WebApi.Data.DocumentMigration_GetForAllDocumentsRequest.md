@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DocumentMigration_GetForAllDocumentsRequest"></a> Class DocumentMigration\_GetForAllDocumentsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class DocumentMigration_GetForAllDocumentsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[DocumentMigration\_GetForAllDocumentsRequest](SuperOffice.WebApi.Data.DocumentMigration\_GetForAllDocumentsRequest.md)
+[DocumentMigration\_GetForAllDocumentsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentMigration_GetForAllDocumentsRequest)
 
 #### Inherited Members
 

@@ -33,7 +33,7 @@ A string representing the author of the message. Could be a user's name, or a pe
 String GetAuthor()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -50,7 +50,7 @@ The textbody for the message.
 String GetBody()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -67,7 +67,7 @@ When the message was posted.
 DateTime GetCreatedAt()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime)
 
 **Example:**
 
@@ -84,7 +84,7 @@ The associate who created this ticket message
 NSAssociate GetCreatedBy()
 ```
 
-**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate)
+**Returns:** [CRMScript.NetServer.NSAssociate](/en/automation/crmscript/reference/CRMScript.NetServer.NSAssociate)
 
 **Example:**
 
@@ -101,7 +101,7 @@ Gets the user-defined + extra fields on a TicketMessageEntity as a map.
 Map GetCustomFields()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map)
 
 **Example:**
 
@@ -122,7 +122,7 @@ The debug info for the message.
 String GetDebugInfo()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -139,7 +139,7 @@ The primary key (auto-incremented)
 Integer GetEjMessageId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 **Example:**
 
@@ -156,7 +156,7 @@ The email header is saved in this field as raw text
 String GetEmailHeader()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -173,7 +173,7 @@ Gets the extra fields on TicketMessageEntity as a map.
 Map GetExtraFields()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map)
 
 **Example:**
 
@@ -194,7 +194,7 @@ The HTML body for the message (if any).
 String GetHtmlBody()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -211,7 +211,7 @@ If this message is important or not.
 Bool GetImportant()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 **Example:**
 
@@ -228,7 +228,7 @@ The name of the mail sorter used when the email was imported. Note: We must use 
 String GetMailSorter()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -243,7 +243,7 @@ String mailSorter = thing.GetMailSorter();
 Integer GetMessageCategory()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Defines what kind of message this is. See &lt;xref href="CRMScript.NetServer.TicketMessageCategory" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Defines what kind of message this is. See &lt;xref href="CRMScript.NetServer.TicketMessageCategory" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
 
 **Example:**
 
@@ -258,7 +258,7 @@ Integer messageCategory = thing.GetMessageCategory();
 NSTicketMessageHeader[] GetMessageHeaders()
 ```
 
-**Returns:** [CRMScript.NetServer.NSTicketMessageHeader](CRMScript.NetServer.NSTicketMessageHeader)[] - Contains the message headers, like To, Cc, Bcc information, or custom headers.
+**Returns:** [CRMScript.NetServer.NSTicketMessageHeader](/en/automation/crmscript/reference/CRMScript.NetServer.NSTicketMessageHeader)[] - Contains the message headers, like To, Cc, Bcc information, or custom headers.
 
 **Example:**
 
@@ -275,7 +275,7 @@ The X-Message-Id header value from the email. Used for threading, i.e. connectin
 String GetMessageId()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -292,7 +292,7 @@ If this is an incoming message, this will contain the person
 NSPerson GetPerson()
 ```
 
-**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson)
+**Returns:** [CRMScript.NetServer.NSPerson](/en/automation/crmscript/reference/CRMScript.NetServer.NSPerson)
 
 **Example:**
 
@@ -309,7 +309,7 @@ A copy of the title of the ticket, for search optimization and simpler reporting
 String GetSearchTitle()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -324,7 +324,7 @@ String searchTitle = thing.GetSearchTitle();
 Integer GetSlevel()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The security level of the message. See &lt;xref href="CRMScript.NetServer.TicketSecurityLevel" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The security level of the message. See &lt;xref href="CRMScript.NetServer.TicketSecurityLevel" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
 
 **Example:**
 
@@ -341,7 +341,7 @@ The connected ticket
 NSTicket GetTicket()
 ```
 
-**Returns:** [CRMScript.NetServer.NSTicket](CRMScript.NetServer.NSTicket)
+**Returns:** [CRMScript.NetServer.NSTicket](/en/automation/crmscript/reference/CRMScript.NetServer.NSTicket)
 
 **Example:**
 
@@ -358,7 +358,7 @@ The time spent (minutes) for this message.
 Integer GetTimeSpent()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 **Example:**
 
@@ -373,7 +373,7 @@ Integer timeSpent = thing.GetTimeSpent();
 Integer GetType()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The type of the message (plaintext/html). See &lt;xref href="CRMScript.NetServer.TicketMessageType" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The type of the message (plaintext/html). See &lt;xref href="CRMScript.NetServer.TicketMessageType" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
 
 **Example:**
 
@@ -390,7 +390,7 @@ A string representing the author of the message. Could be a user's name, or a pe
 Void SetAuthor(String author)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -408,7 +408,7 @@ The textbody for the message.
 Void SetBody(String body)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -458,7 +458,7 @@ Sets the user-defined and extra fields on a TicketMessageEntity with a map.
 Void SetCustomFields(Map udefs)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -481,7 +481,7 @@ The debug info for the message.
 Void SetDebugInfo(String debugInfo)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -499,7 +499,7 @@ The primary key (auto-incremented)
 Void SetEjMessageId(Integer ejMessageId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -517,7 +517,7 @@ The email header is saved in this field as raw text
 Void SetEmailHeader(String emailHeader)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -535,7 +535,7 @@ Sets the extra field values on TicketMessageEntity with a map.
 Void SetExtraFields(Map extras)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -556,7 +556,7 @@ The HTML body for the message (if any).
 Void SetHtmlBody(String htmlBody)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -574,7 +574,7 @@ If this message is important or not.
 Void SetImportant(Bool important)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -592,7 +592,7 @@ The name of the mail sorter used when the email was imported. Note: We must use 
 Void SetMailSorter(String mailSorter)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -622,7 +622,7 @@ thing.SetMessageCategory(messageCategory);
 Void SetMessageHeaders(NSTicketMessageHeader[] messageHeaders)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -640,7 +640,7 @@ The X-Message-Id header value from the email. Used for threading, i.e. connectin
 Void SetMessageId(String messageId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -658,7 +658,7 @@ If this is an incoming message, this will contain the person
 Void SetPerson(NSPerson person)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -676,7 +676,7 @@ A copy of the title of the ticket, for search optimisation and simpler reporting
 Void SetSearchTitle(String searchTitle)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -692,7 +692,7 @@ thing.SetSearchTitle(searchTitle);
 Void SetSlevel(Integer slevel)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -710,7 +710,7 @@ The connected ticket
 Void SetTicket(NSTicket ticket)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -728,7 +728,7 @@ The time spent (minutes) for this message.
 Void SetTimeSpent(Integer timeSpent)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

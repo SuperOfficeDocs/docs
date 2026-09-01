@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Configuration_GetFilterListRequest"></a> Class Configuration\_GetFilterListRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Configuration_GetFilterListRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Configuration\_GetFilterListRequest](SuperOffice.WebApi.Data.Configuration\_GetFilterListRequest.md)
+[Configuration\_GetFilterListRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_GetFilterListRequest)
 
 #### Inherited Members
 

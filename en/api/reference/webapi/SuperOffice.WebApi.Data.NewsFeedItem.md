@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_NewsFeedItem"></a> Class NewsFeedItem
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for NewsFeedItem.
@@ -13,7 +13,7 @@ public class NewsFeedItem
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md)
+[NewsFeedItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItem)
 
 #### Inherited Members
 
@@ -59,7 +59,7 @@ public virtual NewsFeedCTA[] Actions { get; set; }
 
 #### Property Value
 
- [NewsFeedCTA](SuperOffice.WebApi.Data.NewsFeedCTA.md)\[\]
+ [NewsFeedCTA](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedCTA)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedItem_ApplicationId"></a> ApplicationId
 
@@ -83,7 +83,7 @@ public virtual Contact Contact { get; set; }
 
 #### Property Value
 
- [Contact](SuperOffice.WebApi.Data.Contact.md)
+ [Contact](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact)
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedItem_Description"></a> Description
 
@@ -95,7 +95,7 @@ public virtual StringDictionary Description { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedItem_ExpiresAt"></a> ExpiresAt
 
@@ -191,7 +191,7 @@ public virtual Person Person { get; set; }
 
 #### Property Value
 
- [Person](SuperOffice.WebApi.Data.Person.md)
+ [Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person)
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedItem_PreviewHint"></a> PreviewHint
 
@@ -217,11 +217,11 @@ public EMailPriority? Priority { get; set; }
 
 #### Property Value
 
- [EMailPriority](SuperOffice.WebApi.Data.EMailPriority.md)?
+ [EMailPriority](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailPriority)?
 
 #### See Also
 
-[NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md).[Priority\_String](SuperOffice.WebApi.Data.NewsFeedItem.md\#SuperOffice\_WebApi\_Data\_NewsFeedItem\_Priority\_String)
+[NewsFeedItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItem).[Priority\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItem#SuperOffice_WebApi_Data_NewsFeedItem_Priority_String)
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedItem_Priority_String"></a> Priority\_String
 
@@ -239,7 +239,7 @@ public string Priority_String { get; set; }
 
 #### See Also
 
-[NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md).[Priority](SuperOffice.WebApi.Data.NewsFeedItem.md\#SuperOffice\_WebApi\_Data\_NewsFeedItem\_Priority)
+[NewsFeedItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItem).[Priority](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItem#SuperOffice_WebApi_Data_NewsFeedItem_Priority)
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedItem_Project"></a> Project
 
@@ -251,7 +251,7 @@ public virtual Project Project { get; set; }
 
 #### Property Value
 
- [Project](SuperOffice.WebApi.Data.Project.md)
+ [Project](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project)
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedItem_RatingPercent"></a> RatingPercent
 
@@ -299,7 +299,7 @@ public virtual Sale Sale { get; set; }
 
 #### Property Value
 
- [Sale](SuperOffice.WebApi.Data.Sale.md)
+ [Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale)
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedItem_SourceLink"></a> SourceLink
 
@@ -325,11 +325,11 @@ public NewsFeedItemStatus? Status { get; set; }
 
 #### Property Value
 
- [NewsFeedItemStatus](SuperOffice.WebApi.Data.NewsFeedItemStatus.md)?
+ [NewsFeedItemStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItemStatus)?
 
 #### See Also
 
-[NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md).[Status\_String](SuperOffice.WebApi.Data.NewsFeedItem.md\#SuperOffice\_WebApi\_Data\_NewsFeedItem\_Status\_String)
+[NewsFeedItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItem).[Status\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItem#SuperOffice_WebApi_Data_NewsFeedItem_Status_String)
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedItem_Status_String"></a> Status\_String
 
@@ -347,7 +347,7 @@ public string Status_String { get; set; }
 
 #### See Also
 
-[NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md).[Status](SuperOffice.WebApi.Data.NewsFeedItem.md\#SuperOffice\_WebApi\_Data\_NewsFeedItem\_Status)
+[NewsFeedItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItem).[Status](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItem#SuperOffice_WebApi_Data_NewsFeedItem_Status)
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedItem_Summary"></a> Summary
 
@@ -387,7 +387,7 @@ public virtual DateTime Updated { get; set; }
 
 ## See Also
 
-[NewsFeedAgent](SuperOffice.WebApi.Agents.NewsFeedAgent.md), 
-[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md), 
+[NewsFeedAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.NewsFeedAgent), 
+[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent), 
 
 

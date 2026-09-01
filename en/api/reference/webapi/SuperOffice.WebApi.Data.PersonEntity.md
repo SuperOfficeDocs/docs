@@ -1,6 +1,6 @@
 # Class PersonEntity {#SuperOffice_WebApi_Data_PersonEntity}
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for PersonEntity.
@@ -13,13 +13,13 @@ public class PersonEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[PersonEntity](SuperOffice.WebApi.Data.PersonEntity.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[PersonEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.PersonEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -104,7 +104,7 @@ public virtual Address Address { get; set; }
 
 #### Property Value
 
- [Address](SuperOffice.WebApi.Data.Address.md)
+ [Address](/en/api/reference/webapi/SuperOffice.WebApi.Data.Address)
 
 ### Associate {#SuperOffice_WebApi_Data_PersonEntity_Associate}
 
@@ -117,7 +117,7 @@ public virtual Associate Associate { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### BirthDate {#SuperOffice_WebApi_Data_PersonEntity_BirthDate}
 
@@ -154,7 +154,7 @@ public virtual Business Business { get; set; }
 
 #### Property Value
 
- [Business](SuperOffice.WebApi.Data.Business.md)
+ [Business](/en/api/reference/webapi/SuperOffice.WebApi.Data.Business)
 
 ### Category {#SuperOffice_WebApi_Data_PersonEntity_Category}
 
@@ -167,7 +167,7 @@ public virtual Category Category { get; set; }
 
 #### Property Value
 
- [Category](SuperOffice.WebApi.Data.Category.md)
+ [Category](/en/api/reference/webapi/SuperOffice.WebApi.Data.Category)
 
 ### ChatEmails {#SuperOffice_WebApi_Data_PersonEntity_ChatEmails}
 
@@ -177,7 +177,7 @@ public virtual EntityElement[] ChatEmails { get; set; }
 
 #### Property Value
 
- [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
+ [EntityElement](/en/api/reference/webapi/SuperOffice.WebApi.Data.EntityElement)\[\]
 
 ### Consents {#SuperOffice_WebApi_Data_PersonEntity_Consents}
 
@@ -189,7 +189,7 @@ public virtual ConsentInfo[] Consents { get; set; }
 
 #### Property Value
 
- [ConsentInfo](SuperOffice.WebApi.Data.ConsentInfo.md)\[\]
+ [ConsentInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConsentInfo)\[\]
 
 ### Contact {#SuperOffice_WebApi_Data_PersonEntity_Contact}
 
@@ -202,7 +202,7 @@ public virtual Contact Contact { get; set; }
 
 #### Property Value
 
- [Contact](SuperOffice.WebApi.Data.Contact.md)
+ [Contact](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact)
 
 ### CorrespondingAssociate {#SuperOffice_WebApi_Data_PersonEntity_CorrespondingAssociate}
 
@@ -214,7 +214,7 @@ public virtual Associate CorrespondingAssociate { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### Country {#SuperOffice_WebApi_Data_PersonEntity_Country}
 
@@ -227,7 +227,7 @@ public virtual Country Country { get; set; }
 
 #### Property Value
 
- [Country](SuperOffice.WebApi.Data.Country.md)
+ [Country](/en/api/reference/webapi/SuperOffice.WebApi.Data.Country)
 
 ### CreatedBy {#SuperOffice_WebApi_Data_PersonEntity_CreatedBy}
 
@@ -239,7 +239,7 @@ public virtual Associate CreatedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### CreatedByFormId {#SuperOffice_WebApi_Data_PersonEntity_CreatedByFormId}
 
@@ -279,7 +279,7 @@ public virtual StringDictionary CustomFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 #### Remarks
 
@@ -302,7 +302,7 @@ public virtual CustomerLanguage CustomerLanguage { get; set; }
 
 #### Property Value
 
- [CustomerLanguage](SuperOffice.WebApi.Data.CustomerLanguage.md)
+ [CustomerLanguage](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerLanguage)
 
 ### DbiAgentId {#SuperOffice_WebApi_Data_PersonEntity_DbiAgentId}
 
@@ -374,7 +374,7 @@ public virtual EntityElement[] Emails { get; set; }
 
 #### Property Value
 
- [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
+ [EntityElement](/en/api/reference/webapi/SuperOffice.WebApi.Data.EntityElement)\[\]
 
 ### ExtraFields {#SuperOffice_WebApi_Data_PersonEntity_ExtraFields}
 
@@ -388,7 +388,7 @@ public virtual StringDictionary ExtraFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 #### Remarks
 
@@ -419,7 +419,7 @@ public virtual EntityElement[] Faxes { get; set; }
 
 #### Property Value
 
- [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
+ [EntityElement](/en/api/reference/webapi/SuperOffice.WebApi.Data.EntityElement)\[\]
 
 ### Firstname {#SuperOffice_WebApi_Data_PersonEntity_Firstname}
 
@@ -468,7 +468,7 @@ public virtual SelectableMDOListItem[] Interests { get; set; }
 
 #### Property Value
 
- [SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]
+ [SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]
 
 ### InternetPhones {#SuperOffice_WebApi_Data_PersonEntity_InternetPhones}
 
@@ -478,7 +478,7 @@ public virtual EntityElement[] InternetPhones { get; set; }
 
 #### Property Value
 
- [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
+ [EntityElement](/en/api/reference/webapi/SuperOffice.WebApi.Data.EntityElement)\[\]
 
 ### IsAssociate {#SuperOffice_WebApi_Data_PersonEntity_IsAssociate}
 
@@ -574,7 +574,7 @@ public virtual EntityElement[] MobilePhones { get; set; }
 
 #### Property Value
 
- [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
+ [EntityElement](/en/api/reference/webapi/SuperOffice.WebApi.Data.EntityElement)\[\]
 
 ### Mrmrs {#SuperOffice_WebApi_Data_PersonEntity_Mrmrs}
 
@@ -611,7 +611,7 @@ public virtual EntityElement[] OfficePhones { get; set; }
 
 #### Property Value
 
- [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
+ [EntityElement](/en/api/reference/webapi/SuperOffice.WebApi.Data.EntityElement)\[\]
 
 ### OtherPhones {#SuperOffice_WebApi_Data_PersonEntity_OtherPhones}
 
@@ -623,7 +623,7 @@ public virtual EntityElement[] OtherPhones { get; set; }
 
 #### Property Value
 
- [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
+ [EntityElement](/en/api/reference/webapi/SuperOffice.WebApi.Data.EntityElement)\[\]
 
 ### PersonId {#SuperOffice_WebApi_Data_PersonEntity_PersonId}
 
@@ -660,7 +660,7 @@ public virtual Position Position { get; set; }
 
 #### Property Value
 
- [Position](SuperOffice.WebApi.Data.Position.md)
+ [Position](/en/api/reference/webapi/SuperOffice.WebApi.Data.Position)
 
 ### Post1 {#SuperOffice_WebApi_Data_PersonEntity_Post1}
 
@@ -708,7 +708,7 @@ public virtual EntityElement[] PrivatePhones { get; set; }
 
 #### Property Value
 
- [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
+ [EntityElement](/en/api/reference/webapi/SuperOffice.WebApi.Data.EntityElement)\[\]
 
 ### Retired {#SuperOffice_WebApi_Data_PersonEntity_Retired}
 
@@ -757,7 +757,7 @@ public virtual SelectableMDOListItem[] ShipmentTypes { get; set; }
 
 #### Property Value
 
- [SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]
+ [SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]
 
 ### ShowContactTickets {#SuperOffice_WebApi_Data_PersonEntity_ShowContactTickets}
 
@@ -793,7 +793,7 @@ public virtual Associate SupportAssociate { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### TicketPriority {#SuperOffice_WebApi_Data_PersonEntity_TicketPriority}
 
@@ -805,7 +805,7 @@ public virtual TicketPriority TicketPriority { get; set; }
 
 #### Property Value
 
- [TicketPriority](SuperOffice.WebApi.Data.TicketPriority.md)
+ [TicketPriority](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriority)
 
 ### Title {#SuperOffice_WebApi_Data_PersonEntity_Title}
 
@@ -829,7 +829,7 @@ public virtual Associate UpdatedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### UpdatedDate {#SuperOffice_WebApi_Data_PersonEntity_UpdatedDate}
 
@@ -853,7 +853,7 @@ public virtual EntityElement[] Urls { get; set; }
 
 #### Property Value
 
- [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
+ [EntityElement](/en/api/reference/webapi/SuperOffice.WebApi.Data.EntityElement)\[\]
 
 ### UsePersonAddress {#SuperOffice_WebApi_Data_PersonEntity_UsePersonAddress}
 
@@ -880,7 +880,7 @@ public virtual StringDictionary UserDefinedFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 ### UserInfo {#SuperOffice_WebApi_Data_PersonEntity_UserInfo}
 
@@ -892,7 +892,7 @@ public virtual UserInfo UserInfo { get; set; }
 
 #### Property Value
 
- [UserInfo](SuperOffice.WebApi.Data.UserInfo.md)
+ [UserInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserInfo)
 
 ### UtmParameters {#SuperOffice_WebApi_Data_PersonEntity_UtmParameters}
 
@@ -904,11 +904,11 @@ public virtual SavedUtmParameters UtmParameters { get; set; }
 
 #### Property Value
 
- [SavedUtmParameters](SuperOffice.WebApi.Data.SavedUtmParameters.md)
+ [SavedUtmParameters](/en/api/reference/webapi/SuperOffice.WebApi.Data.SavedUtmParameters)
 
 ## See Also
 
-[PersonAgent](SuperOffice.WebApi.Agents.PersonAgent.md), 
-[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md), 
+[PersonAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PersonAgent), 
+[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent), 
 
 

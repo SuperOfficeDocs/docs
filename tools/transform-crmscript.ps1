@@ -215,6 +215,15 @@ function Get-TypeLink {
         return $Type
     }
 
+    # Only link types that actually have a generated page. The source YAML sometimes
+    # names a type under the wrong namespace (CRMScript.NetServer.Map, which lives at
+    # CRMScript.Native.Map) or a type with no doc page at all (CRMScript.NetServer.NSBinary);
+    # a link to either 404s. The set of generated pages is exactly the set of source
+    # .yml files, so test the source file rather than the not-yet-written output.
+    if (-not (Test-Path (Join-Path $SourcePath ($link + '.yml')))) {
+        return $Type
+    }
+
     return "[$baseType]($link)$arraySuffix"
 }
 
@@ -777,6 +786,13 @@ foreach ($yamlFile in $yamlFiles) {
     # (e.g. `<h3>Row operators</h3><table>...`), their margins stack into 2-3 blank
     # lines instead of 1. See #189.
     $content = $content -replace '\n{3,}', "`n`n"
+    # Root-relative cross-reference links. Mintlify's broken-link checker (and the
+    # llms.txt/markdown exports) resolve bare relative destinations like
+    # "(CRMScript.Global.Bool)" against the site root rather than the current page,
+    # so every "](CRMScript.*)" destination emitted above (Get-TypeLink type links
+    # and <a href="CRMScript.*"> conversions in Clean-Description alike) is prefixed
+    # with the reference tree's root-relative path as a final pass here.
+    $content = $content -replace '\]\(CRMScript\.', '](/en/automation/crmscript/reference/CRMScript.'
     [System.IO.File]::WriteAllText($outputFilePath, $content, (New-Object System.Text.UTF8Encoding($true)))
     
     Write-Host ('  Generated: ' + $outputFileName) -ForegroundColor Green

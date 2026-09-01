@@ -1,6 +1,6 @@
 # Class Associate {#SuperOffice_WebApi_Data_Associate}
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for Associate.
@@ -12,13 +12,13 @@ public class Associate : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[Associate](SuperOffice.WebApi.Data.Associate.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -72,7 +72,7 @@ public virtual StringDictionary CustomFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 #### Remarks
 
@@ -121,7 +121,7 @@ public virtual StringDictionary ExtraFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 #### Remarks
 
@@ -239,11 +239,11 @@ public UserType? Type { get; set; }
 
 #### Property Value
 
- [UserType](SuperOffice.WebApi.Data.UserType.md)?
+ [UserType](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserType)?
 
 #### See Also
 
-[Associate](SuperOffice.WebApi.Data.Associate.md).[Type\_String](SuperOffice.WebApi.Data.Associate.md\#SuperOffice\_WebApi\_Data\_Associate\_Type\_String)
+[Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate).[Type\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate#SuperOffice_WebApi_Data_Associate_Type_String)
 
 ### Type\_String {#SuperOffice_WebApi_Data_Associate_Type_String}
 
@@ -261,7 +261,7 @@ public string Type_String { get; set; }
 
 #### See Also
 
-[Associate](SuperOffice.WebApi.Data.Associate.md).[Type](SuperOffice.WebApi.Data.Associate.md\#SuperOffice\_WebApi\_Data\_Associate\_Type)
+[Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate).[Type](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate#SuperOffice_WebApi_Data_Associate_Type)
 
 ### UserName {#SuperOffice_WebApi_Data_Associate_UserName}
 
@@ -277,5 +277,5 @@ public virtual string UserName { get; set; }
 
 ## See Also
 
-[AssociateAgent](SuperOffice.WebApi.Agents.AssociateAgent.md)
+[AssociateAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AssociateAgent)
 

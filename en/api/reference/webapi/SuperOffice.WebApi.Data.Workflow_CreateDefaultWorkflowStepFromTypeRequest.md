@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Workflow_CreateDefaultWorkflowStepFromTypeRequest"></a> Class Workflow\_CreateDefaultWorkflowStepFromTypeRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Workflow_CreateDefaultWorkflowStepFromTypeRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Workflow\_CreateDefaultWorkflowStepFromTypeRequest](SuperOffice.WebApi.Data.Workflow\_CreateDefaultWorkflowStepFromTypeRequest.md)
+[Workflow\_CreateDefaultWorkflowStepFromTypeRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Workflow_CreateDefaultWorkflowStepFromTypeRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public WorkflowStepType StepType { get; set; }
 
 #### Property Value
 
- [WorkflowStepType](SuperOffice.WebApi.Data.WorkflowStepType.md)
+ [WorkflowStepType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepType)
 

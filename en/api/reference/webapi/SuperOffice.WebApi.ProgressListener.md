@@ -1,6 +1,6 @@
 # Class ProgressListener {#SuperOffice_WebApi_ProgressListener}
 
-Namespace: [SuperOffice.WebApi](SuperOffice.WebApi.md)  
+Namespace: [SuperOffice.WebApi](/en/api/reference/webapi/SuperOffice.WebApi)  
 Assembly: SuperOffice.WebApi.dll  
 
 Default ProgressListener implementation with delegates for event callbacks.
@@ -12,11 +12,11 @@ public class ProgressListener : IProgressListener
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ProgressListener](SuperOffice.WebApi.ProgressListener.md)
+[ProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.ProgressListener)
 
 #### Implements
 
-[IProgressListener](SuperOffice.WebApi.IProgressListener.md)
+[IProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.IProgressListener)
 
 #### Inherited Members
 

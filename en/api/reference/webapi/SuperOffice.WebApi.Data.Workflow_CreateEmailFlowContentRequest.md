@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Workflow_CreateEmailFlowContentRequest"></a> Class Workflow\_CreateEmailFlowContentRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Workflow_CreateEmailFlowContentRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Workflow\_CreateEmailFlowContentRequest](SuperOffice.WebApi.Data.Workflow\_CreateEmailFlowContentRequest.md)
+[Workflow\_CreateEmailFlowContentRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Workflow_CreateEmailFlowContentRequest)
 
 #### Inherited Members
 

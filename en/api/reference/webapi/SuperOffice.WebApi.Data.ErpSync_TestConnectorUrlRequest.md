@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSync_TestConnectorUrlRequest"></a> Class ErpSync\_TestConnectorUrlRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ErpSync_TestConnectorUrlRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ErpSync\_TestConnectorUrlRequest](SuperOffice.WebApi.Data.ErpSync\_TestConnectorUrlRequest.md)
+[ErpSync\_TestConnectorUrlRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSync_TestConnectorUrlRequest)
 
 #### Inherited Members
 

@@ -33,7 +33,7 @@ Sets default values into a new NSArchiveListResult.
 NSArchiveListResult CreateDefaultArchiveListResult()
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveListResult](CRMScript.NetServer.NSArchiveListResult) - A new NSArchiveListResult with default values.
+**Returns:** [CRMScript.NetServer.NSArchiveListResult](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveListResult) - A new NSArchiveListResult with default values.
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance.
@@ -55,7 +55,7 @@ Exports the target archive to a downloadable format.
 NSExportArchiveResult ExportArchive(String providerName, String context, String[] desiredEntities, String[] columns, NSArchiveOrderByInfo[] sortOrder, NSArchiveRestrictionInfo[] restrictions, String exportType, String[] selectedRowIds, Integer estimatedRowCount)
 ```
 
-**Returns:** [CRMScript.NetServer.NSExportArchiveResult](CRMScript.NetServer.NSExportArchiveResult)
+**Returns:** [CRMScript.NetServer.NSExportArchiveResult](/en/automation/crmscript/reference/CRMScript.NetServer.NSExportArchiveResult)
 
 ## GetActivityFilter()
 
@@ -65,7 +65,7 @@ Gets activity filter for the specified list.
 NSActivityFilter GetActivityFilter()
 ```
 
-**Returns:** [CRMScript.NetServer.NSActivityFilter](CRMScript.NetServer.NSActivityFilter) - The activity filter for the specified list.
+**Returns:** [CRMScript.NetServer.NSActivityFilter](/en/automation/crmscript/reference/CRMScript.NetServer.NSActivityFilter) - The activity filter for the specified list.
 
 **Example:**
 
@@ -82,7 +82,7 @@ Gets the configuration for one archive. The configuration is keyed by a combinat
 NSArchiveConfiguration GetArchiveConfiguration(String guiName, String providerName)
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveConfiguration](CRMScript.NetServer.NSArchiveConfiguration)
+**Returns:** [CRMScript.NetServer.NSArchiveConfiguration](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveConfiguration)
 
 **Example:**
 
@@ -101,7 +101,7 @@ Gets the configuration for one archive. The configuration is keyed by a combinat
 NSArchiveConfiguration GetArchiveConfigurationV2(String guiName, String providerName, String context, String ownerKeys)
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveConfiguration](CRMScript.NetServer.NSArchiveConfiguration)
+**Returns:** [CRMScript.NetServer.NSArchiveConfiguration](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveConfiguration)
 
 **Example:**
 
@@ -122,7 +122,7 @@ Gets the configuration for one archive, with context parameter. The configuratio
 NSArchiveConfiguration GetArchiveConfigurationWithContext(String guiName, String providerName, String context)
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveConfiguration](CRMScript.NetServer.NSArchiveConfiguration)
+**Returns:** [CRMScript.NetServer.NSArchiveConfiguration](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveConfiguration)
 
 **Example:**
 
@@ -142,7 +142,7 @@ Gets a page of data for an archive.
 NSArchiveListItem[] GetArchiveList(String guiName, String providerName, NSArchiveOrderByInfo[] sortOrder, NSArchiveRestrictionInfo[] restriction, String[] entities, Integer page, Integer pageSize)
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveListItem](CRMScript.NetServer.NSArchiveListItem)[] - The columns returned will be those set as chosen columns, using either the SetChosenColumns service or the corresponding SelectableMDOList.SetSelected.
+**Returns:** [CRMScript.NetServer.NSArchiveListItem](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveListItem)[] - The columns returned will be those set as chosen columns, using either the SetChosenColumns service or the corresponding SelectableMDOList.SetSelected.
 
 **Example:**
 
@@ -166,7 +166,7 @@ Gets a page of data for an archive using a restriction string.
 NSArchiveListItem[] GetArchiveList2(String guiName, String providerName, String sortOrder, String restriction, String entities, Integer page, Integer pageSize)
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveListItem](CRMScript.NetServer.NSArchiveListItem)[] - The columns returned will be those set as chosen columns, using either the SetChosenColumns service or the corresponding SelectableMDOList.SetSelected.
+**Returns:** [CRMScript.NetServer.NSArchiveListItem](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveListItem)[] - The columns returned will be those set as chosen columns, using either the SetChosenColumns service or the corresponding SelectableMDOList.SetSelected.
 
 **Example:**
 
@@ -190,7 +190,7 @@ Gets a page of results for an archive list, explicitly specifying the restrictio
 NSArchiveListItem[] GetArchiveListByColumns(String providerName, String[] columns, NSArchiveOrderByInfo[] sortOrder, NSArchiveRestrictionInfo[] restriction, String[] entities, Integer page, Integer pageSize)
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveListItem](CRMScript.NetServer.NSArchiveListItem)[]
+**Returns:** [CRMScript.NetServer.NSArchiveListItem](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveListItem)[]
 
 **Example:**
 
@@ -214,7 +214,7 @@ Gets a page of results for an archive list, explicitly specifying the restrictio
 NSArchiveListItem[] GetArchiveListByColumns2(String providerName, String columns, String sortOrder, String restrictions, String entities, Integer page, Integer pageSize)
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveListItem](CRMScript.NetServer.NSArchiveListItem)[]
+**Returns:** [CRMScript.NetServer.NSArchiveListItem](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveListItem)[]
 
 **Example:**
 
@@ -238,7 +238,7 @@ Gets a page of results for an archive list with context parameter, explicitly sp
 NSArchiveListItem[] GetArchiveListByColumnsWithContext(String providerName, String[] columns, NSArchiveOrderByInfo[] sortOrder, NSArchiveRestrictionInfo[] restriction, String[] entities, Integer page, Integer pageSize, String context)
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveListItem](CRMScript.NetServer.NSArchiveListItem)[]
+**Returns:** [CRMScript.NetServer.NSArchiveListItem](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveListItem)[]
 
 **Example:**
 
@@ -263,7 +263,7 @@ Gets a page of results for an archive list with context parameter, explicitly sp
 NSArchiveListItem[] GetArchiveListByColumnsWithContext2(String providerName, String columns, String sortOrder, String restriction, String entities, Integer page, Integer pageSize, String context)
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveListItem](CRMScript.NetServer.NSArchiveListItem)[]
+**Returns:** [CRMScript.NetServer.NSArchiveListItem](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveListItem)[]
 
 **Example:**
 
@@ -288,7 +288,7 @@ Gets a page of results for an archive list, explicitly specifying the restrictio
 NSArchiveListResult GetArchiveListByColumnsWithHeader(String providerName, String[] columns, NSArchiveOrderByInfo[] sortOrder, NSArchiveRestrictionInfo[] restriction, String[] entities, Integer page, Integer pageSize, String options)
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveListResult](CRMScript.NetServer.NSArchiveListResult)
+**Returns:** [CRMScript.NetServer.NSArchiveListResult](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveListResult)
 
 **Example:**
 
@@ -313,7 +313,7 @@ Gets a page of results for an archive list, explicitly specifying the restrictio
 NSArchiveListResult GetArchiveListByColumnsWithHeader2(String providerName, String columns, String sortOrder, String restriction, String entities, Integer page, Integer pageSize, String options)
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveListResult](CRMScript.NetServer.NSArchiveListResult) - Includes a header that has various extra information, in addition to the actual rows.
+**Returns:** [CRMScript.NetServer.NSArchiveListResult](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveListResult) - Includes a header that has various extra information, in addition to the actual rows.
 
 **Example:**
 
@@ -338,7 +338,7 @@ Gets a page of results for an archive list, with context parameter, explicitly s
 NSArchiveListResult GetArchiveListByColumnsWithHeaderWithContext(String providerName, String[] columns, NSArchiveOrderByInfo[] sortOrder, NSArchiveRestrictionInfo[] restriction, String[] entities, Integer page, Integer pageSize, String options, String context)
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveListResult](CRMScript.NetServer.NSArchiveListResult) - Includes a header that has various extra information, in addition to the actual rows.
+**Returns:** [CRMScript.NetServer.NSArchiveListResult](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveListResult) - Includes a header that has various extra information, in addition to the actual rows.
 
 **Example:**
 
@@ -364,7 +364,7 @@ Gets a page of results for an archive list, with context parameter, explicitly s
 NSArchiveListResult GetArchiveListByColumnsWithHeaderWithContext2(String providerName, String columns, String sortOrder, String restriction, String entities, Integer page, Integer pageSize, String options, String context)
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveListResult](CRMScript.NetServer.NSArchiveListResult) - Includes a header that has various extra information, in addition to the actual rows.
+**Returns:** [CRMScript.NetServer.NSArchiveListResult](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveListResult) - Includes a header that has various extra information, in addition to the actual rows.
 
 **Example:**
 
@@ -390,7 +390,7 @@ Gets a page of data for an archive, with context parameter. The columns returned
 NSArchiveListItem[] GetArchiveListWithContext(String guiName, String providerName, NSArchiveOrderByInfo[] sortOrder, NSArchiveRestrictionInfo[] restriction, String[] entities, Integer page, Integer pageSize, String context)
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveListItem](CRMScript.NetServer.NSArchiveListItem)[]
+**Returns:** [CRMScript.NetServer.NSArchiveListItem](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveListItem)[]
 
 **Example:**
 
@@ -415,7 +415,7 @@ Gets a page of data for an archive using restrictions as strings, with context p
 NSArchiveListItem[] GetArchiveListWithContext2(String guiName, String providerName, String sortOrder, String restriction, String entities, Integer page, Integer pageSize, String context)
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveListItem](CRMScript.NetServer.NSArchiveListItem)[] - The columns returned will be those set as chosen columns, using either the SetChosenColumns service or the corresponding SelectableMDOList.SetSelected.
+**Returns:** [CRMScript.NetServer.NSArchiveListItem](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveListItem)[] - The columns returned will be those set as chosen columns, using either the SetChosenColumns service or the corresponding SelectableMDOList.SetSelected.
 
 **Example:**
 
@@ -440,7 +440,7 @@ Returns list of all columns supported by an archive provider. See also &lt;xref 
 NSArchiveColumnInfo[] GetAvailableColumns(String providerName, String context)
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveColumnInfo](CRMScript.NetServer.NSArchiveColumnInfo)[]
+**Returns:** [CRMScript.NetServer.NSArchiveColumnInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveColumnInfo)[]
 
 **Example:**
 
@@ -459,7 +459,7 @@ Returns list of all entities supported by an archive provider. See also &lt;xref
 NSMDOListItem[] GetAvailableEntities(String providerName, String context)
 ```
 
-**Returns:** [CRMScript.NetServer.NSMDOListItem](CRMScript.NetServer.NSMDOListItem)[]
+**Returns:** [CRMScript.NetServer.NSMDOListItem](/en/automation/crmscript/reference/CRMScript.NetServer.NSMDOListItem)[]
 
 **Example:**
 
@@ -478,7 +478,7 @@ Returns the associate IDs that belongs to the given groups.
 Integer[] GetGroupAssociateIds(Integer[] groupIds)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)[] - The associate IDs.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)[] - The associate IDs.
 
 **Example:**
 
@@ -496,7 +496,7 @@ Returns list of all archive provider names.
 String[] GetProviderNames()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - Array of all archive provider names.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)[] - Array of all archive provider names.
 
 **Example:**
 
@@ -513,7 +513,7 @@ Sets activity filter for the specified list.
 Void SetActivityFilter(NSActivityFilter activityFilter)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## SetChosenColumns(String,String,String[])
 
@@ -523,7 +523,7 @@ Sets the currently chosen columns for the given gui name/provider name combinati
 Void SetChosenColumns(String guiName, String providerName, String[] chosenColumns)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 This service corresponds to the SetSelected method of the SelectableMDOList service, for a list called archiveColumns: plus the archive provider name and gui name as its additionalInfo.
@@ -537,7 +537,7 @@ Sets the currently chosen columns for the given gui name/provider name combinati
 Void SetChosenColumnsV2(String guiName, String providerName, String context, String ownerKeys, String[] chosenColumns)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 This service corresponds to the SetSelected method of the SelectableMDOList service, for a list called archiveColumns: plus the archive provider name and gui name as its additionalInfo.
@@ -551,7 +551,7 @@ Sets the currently chosen entities for the given gui name/provider name combinat
 Void SetChosenEntities(String guiName, String providerName, String[] entities)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 This service corresponds to the SetSelected method of the SelectableMDOList service, for a list called archiveEntities: plus the archive provider name and gui name as its additionalInfo.
@@ -565,7 +565,7 @@ Sets the currently chosen entities for the given gui name/provider name combinat
 Void SetChosenEntitiesV2(String guiName, String providerName, String context, String ownerKeys, String[] entities)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 This service corresponds to the SetSelected method of the SelectableMDOList service, for a list called archiveEntities: plus the archive provider name and gui name as its additionalInfo.
@@ -579,7 +579,7 @@ Sets the column widths for the given set of columns and GUI name.
 Void SetColumnWidths(String guiName, String[] columnWidths)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## SetColumnWidthsV2(String,String,String,String,String[])
 
@@ -589,4 +589,4 @@ Sets the column widths for the given set of columns and GUI name.
 Void SetColumnWidthsV2(String guiName, String providerName, String context, String ownerKeys, String[] columnWidths)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)

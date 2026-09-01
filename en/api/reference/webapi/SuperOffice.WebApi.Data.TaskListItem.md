@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TaskListItem"></a> Class TaskListItem
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TaskListItem.
@@ -12,13 +12,13 @@ public class TaskListItem : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[TaskListItem](SuperOffice.WebApi.Data.TaskListItem.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[TaskListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -58,11 +58,11 @@ public ColorIndex? ColorIndex { get; set; }
 
 #### Property Value
 
- [ColorIndex](SuperOffice.WebApi.Data.ColorIndex.md)?
+ [ColorIndex](/en/api/reference/webapi/SuperOffice.WebApi.Data.ColorIndex)?
 
 #### See Also
 
-[TaskListItem](SuperOffice.WebApi.Data.TaskListItem.md).[ColorIndex\_String](SuperOffice.WebApi.Data.TaskListItem.md\#SuperOffice\_WebApi\_Data\_TaskListItem\_ColorIndex\_String)
+[TaskListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem).[ColorIndex\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem#SuperOffice_WebApi_Data_TaskListItem_ColorIndex_String)
 
 ### <a id="SuperOffice_WebApi_Data_TaskListItem_ColorIndex_String"></a> ColorIndex\_String
 
@@ -80,7 +80,7 @@ public string ColorIndex_String { get; set; }
 
 #### See Also
 
-[TaskListItem](SuperOffice.WebApi.Data.TaskListItem.md).[ColorIndex](SuperOffice.WebApi.Data.TaskListItem.md\#SuperOffice\_WebApi\_Data\_TaskListItem\_ColorIndex)
+[TaskListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem).[ColorIndex](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem#SuperOffice_WebApi_Data_TaskListItem_ColorIndex)
 
 ### <a id="SuperOffice_WebApi_Data_TaskListItem_DefaultVideomeetingStatus"></a> DefaultVideomeetingStatus
 
@@ -94,11 +94,11 @@ public VideoMeetingStatus? DefaultVideomeetingStatus { get; set; }
 
 #### Property Value
 
- [VideoMeetingStatus](SuperOffice.WebApi.Data.VideoMeetingStatus.md)?
+ [VideoMeetingStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.VideoMeetingStatus)?
 
 #### See Also
 
-[TaskListItem](SuperOffice.WebApi.Data.TaskListItem.md).[DefaultVideomeetingStatus\_String](SuperOffice.WebApi.Data.TaskListItem.md\#SuperOffice\_WebApi\_Data\_TaskListItem\_DefaultVideomeetingStatus\_String)
+[TaskListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem).[DefaultVideomeetingStatus\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem#SuperOffice_WebApi_Data_TaskListItem_DefaultVideomeetingStatus_String)
 
 ### <a id="SuperOffice_WebApi_Data_TaskListItem_DefaultVideomeetingStatus_String"></a> DefaultVideomeetingStatus\_String
 
@@ -116,7 +116,7 @@ public string DefaultVideomeetingStatus_String { get; set; }
 
 #### See Also
 
-[TaskListItem](SuperOffice.WebApi.Data.TaskListItem.md).[DefaultVideomeetingStatus](SuperOffice.WebApi.Data.TaskListItem.md\#SuperOffice\_WebApi\_Data\_TaskListItem\_DefaultVideomeetingStatus)
+[TaskListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem).[DefaultVideomeetingStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem#SuperOffice_WebApi_Data_TaskListItem_DefaultVideomeetingStatus)
 
 ### <a id="SuperOffice_WebApi_Data_TaskListItem_Deleted"></a> Deleted
 
@@ -142,11 +142,11 @@ public TaskDirection? Direction { get; set; }
 
 #### Property Value
 
- [TaskDirection](SuperOffice.WebApi.Data.TaskDirection.md)?
+ [TaskDirection](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskDirection)?
 
 #### See Also
 
-[TaskListItem](SuperOffice.WebApi.Data.TaskListItem.md).[Direction\_String](SuperOffice.WebApi.Data.TaskListItem.md\#SuperOffice\_WebApi\_Data\_TaskListItem\_Direction\_String)
+[TaskListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem).[Direction\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem#SuperOffice_WebApi_Data_TaskListItem_Direction_String)
 
 ### <a id="SuperOffice_WebApi_Data_TaskListItem_Direction_String"></a> Direction\_String
 
@@ -164,7 +164,7 @@ public string Direction_String { get; set; }
 
 #### See Also
 
-[TaskListItem](SuperOffice.WebApi.Data.TaskListItem.md).[Direction](SuperOffice.WebApi.Data.TaskListItem.md\#SuperOffice\_WebApi\_Data\_TaskListItem\_Direction)
+[TaskListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem).[Direction](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem#SuperOffice_WebApi_Data_TaskListItem_Direction)
 
 ### <a id="SuperOffice_WebApi_Data_TaskListItem_IntentId"></a> IntentId
 
@@ -262,11 +262,11 @@ public TaskType? Type { get; set; }
 
 #### Property Value
 
- [TaskType](SuperOffice.WebApi.Data.TaskType.md)?
+ [TaskType](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskType)?
 
 #### See Also
 
-[TaskListItem](SuperOffice.WebApi.Data.TaskListItem.md).[Type\_String](SuperOffice.WebApi.Data.TaskListItem.md\#SuperOffice\_WebApi\_Data\_TaskListItem\_Type\_String)
+[TaskListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem).[Type\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem#SuperOffice_WebApi_Data_TaskListItem_Type_String)
 
 ### <a id="SuperOffice_WebApi_Data_TaskListItem_Type_String"></a> Type\_String
 
@@ -284,7 +284,7 @@ public string Type_String { get; set; }
 
 #### See Also
 
-[TaskListItem](SuperOffice.WebApi.Data.TaskListItem.md).[Type](SuperOffice.WebApi.Data.TaskListItem.md\#SuperOffice\_WebApi\_Data\_TaskListItem\_Type)
+[TaskListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem).[Type](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem#SuperOffice_WebApi_Data_TaskListItem_Type)
 
 ### <a id="SuperOffice_WebApi_Data_TaskListItem_Value"></a> Value
 
@@ -300,5 +300,5 @@ public virtual string Value { get; set; }
 
 ## See Also
 
-[AppointmentAgent](SuperOffice.WebApi.Agents.AppointmentAgent.md)
+[AppointmentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AppointmentAgent)
 

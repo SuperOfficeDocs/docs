@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TicketRelationAction"></a> Class TicketRelationAction
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TicketRelationAction.
@@ -13,7 +13,7 @@ public class TicketRelationAction
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[TicketRelationAction](SuperOffice.WebApi.Data.TicketRelationAction.md)
+[TicketRelationAction](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationAction)
 
 #### Inherited Members
 
@@ -87,5 +87,5 @@ public virtual int TicketIdToClose { get; set; }
 
 ## See Also
 
-[TicketAgent](SuperOffice.WebApi.Agents.TicketAgent.md)
+[TicketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TicketAgent)
 

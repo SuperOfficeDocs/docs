@@ -33,7 +33,7 @@ Deletes a batch task from the database.
 Void DeleteBatchTask(Integer batchTaskId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## DeleteBatchTasks(Integer[])
 
@@ -43,7 +43,7 @@ Deletes batch tasks from the database.
 Void DeleteBatchTasks(Integer[] batchTaskIds)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## GetBatchTaskInfo(Integer)
 
@@ -53,7 +53,7 @@ Gets a single NSBatchTaskInfo based on ID.
 NSBatchTaskInfo GetBatchTaskInfo(Integer id)
 ```
 
-**Returns:** [CRMScript.NetServer.NSBatchTaskInfo](CRMScript.NetServer.NSBatchTaskInfo) - A BatchTaskInfo.
+**Returns:** [CRMScript.NetServer.NSBatchTaskInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSBatchTaskInfo) - A BatchTaskInfo.
 
 **Example:**
 
@@ -71,7 +71,7 @@ Gets an array of NSBatchTaskInfo for the provided associate IDs.
 NSBatchTaskInfo[] GetBatchTaskInfosByAssociates(Integer[] associateIds)
 ```
 
-**Returns:** [CRMScript.NetServer.NSBatchTaskInfo](CRMScript.NetServer.NSBatchTaskInfo)[] - An array of BatchTaskInfo.
+**Returns:** [CRMScript.NetServer.NSBatchTaskInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSBatchTaskInfo)[] - An array of BatchTaskInfo.
 
 **Example:**
 
@@ -89,7 +89,7 @@ Gets an array of NSBatchTaskInfo for the provided associate IDs and batch task s
 NSBatchTaskInfo[] GetBatchTaskInfosByAssociatesAndState(Integer[] associateIds, Integer state)
 ```
 
-**Returns:** [CRMScript.NetServer.NSBatchTaskInfo](CRMScript.NetServer.NSBatchTaskInfo)[] - An array of BatchTaskInfo.
+**Returns:** [CRMScript.NetServer.NSBatchTaskInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSBatchTaskInfo)[] - An array of BatchTaskInfo.
 
 **Example:**
 
@@ -108,7 +108,7 @@ Gets an array of NSBatchTaskInfo for the provided associate IDs and batch task d
 NSBatchTaskInfo[] GetBatchTaskInfosByNameAndAssociates(String name, Integer[] associateIds)
 ```
 
-**Returns:** [CRMScript.NetServer.NSBatchTaskInfo](CRMScript.NetServer.NSBatchTaskInfo)[] - An array of BatchTaskInfo.
+**Returns:** [CRMScript.NetServer.NSBatchTaskInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSBatchTaskInfo)[] - An array of BatchTaskInfo.
 
 **Example:**
 
@@ -127,7 +127,7 @@ Gets an array of NSBatchTaskInfo with state defined by a BatchTaskState and the 
 NSBatchTaskInfo[] GetBatchTaskInfosByNameAndState(String name, Integer state)
 ```
 
-**Returns:** [CRMScript.NetServer.NSBatchTaskInfo](CRMScript.NetServer.NSBatchTaskInfo)[] - An array of BatchTaskInfo.
+**Returns:** [CRMScript.NetServer.NSBatchTaskInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSBatchTaskInfo)[] - An array of BatchTaskInfo.
 
 **Example:**
 
@@ -146,7 +146,7 @@ Gets an array of NSBatchTaskInfo with state defined by a BatchTaskState.
 NSBatchTaskInfo[] GetBatchTaskInfosByState(Integer state)
 ```
 
-**Returns:** [CRMScript.NetServer.NSBatchTaskInfo](CRMScript.NetServer.NSBatchTaskInfo)[] - An array of BatchTaskInfo.
+**Returns:** [CRMScript.NetServer.NSBatchTaskInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSBatchTaskInfo)[] - An array of BatchTaskInfo.
 
 **Example:**
 
@@ -164,7 +164,7 @@ Starts a batch job based on NSBatchTaskInfo.
 Integer StartBatchJob(NSBatchTaskInfo batchTaskInfo)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the created batch job.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the created batch job.
 
 **Example:**
 
@@ -182,7 +182,7 @@ Stops a batch job based on ID.
 Bool StopBatchJob(Integer id)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - true if the job was stopped successfully.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - true if the job was stopped successfully.
 
 **Example:**
 
@@ -200,7 +200,7 @@ Updates information about a BatchTask.
 NSBatchTaskInfo UpdateBatchTask(NSBatchTaskInfo batchTaskInfo)
 ```
 
-**Returns:** [CRMScript.NetServer.NSBatchTaskInfo](CRMScript.NetServer.NSBatchTaskInfo) - The updated BatchTaskInfo.
+**Returns:** [CRMScript.NetServer.NSBatchTaskInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSBatchTaskInfo) - The updated BatchTaskInfo.
 
 <Note>
 Only the following properties can be updated: State, Description, Response and Request.

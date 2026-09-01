@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Authorization_Utility_UrlHelper"></a> Class UrlHelper
 
-Namespace: [SuperOffice.WebApi.Authorization.Utility](SuperOffice.WebApi.Authorization.Utility.md)  
+Namespace: [SuperOffice.WebApi.Authorization.Utility](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.Utility)  
 Assembly: SuperOffice.WebApi.Authorization.dll  
 
 Useful for getting formatted URL strings.
@@ -12,7 +12,7 @@ public class UrlHelper
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UrlHelper](SuperOffice.WebApi.Authorization.Utility.UrlHelper.md)
+[UrlHelper](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.Utility.UrlHelper)
 
 #### Inherited Members
 

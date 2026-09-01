@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_SendChangePasswordEMailRequest"></a> Class User\_SendChangePasswordEMailRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_SendChangePasswordEMailRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_SendChangePasswordEMailRequest](SuperOffice.WebApi.Data.User\_SendChangePasswordEMailRequest.md)
+[User\_SendChangePasswordEMailRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_SendChangePasswordEMailRequest)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_QuoteAlternative"></a> Class QuoteAlternative
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for QuoteAlternative.
@@ -13,13 +13,13 @@ public class QuoteAlternative : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[QuoteAlternative](SuperOffice.WebApi.Data.QuoteAlternative.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[QuoteAlternative](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteAlternative)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -263,11 +263,11 @@ public QuoteStatus? Status { get; set; }
 
 #### Property Value
 
- [QuoteStatus](SuperOffice.WebApi.Data.QuoteStatus.md)?
+ [QuoteStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteStatus)?
 
 #### See Also
 
-[QuoteAlternative](SuperOffice.WebApi.Data.QuoteAlternative.md).[Status\_String](SuperOffice.WebApi.Data.QuoteAlternative.md\#SuperOffice\_WebApi\_Data\_QuoteAlternative\_Status\_String)
+[QuoteAlternative](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteAlternative).[Status\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteAlternative#SuperOffice_WebApi_Data_QuoteAlternative_Status_String)
 
 ### <a id="SuperOffice_WebApi_Data_QuoteAlternative_Status_String"></a> Status\_String
 
@@ -285,7 +285,7 @@ public string Status_String { get; set; }
 
 #### See Also
 
-[QuoteAlternative](SuperOffice.WebApi.Data.QuoteAlternative.md).[Status](SuperOffice.WebApi.Data.QuoteAlternative.md\#SuperOffice\_WebApi\_Data\_QuoteAlternative\_Status)
+[QuoteAlternative](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteAlternative).[Status](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteAlternative#SuperOffice_WebApi_Data_QuoteAlternative_Status)
 
 ### <a id="SuperOffice_WebApi_Data_QuoteAlternative_SubTotal"></a> SubTotal
 
@@ -323,11 +323,11 @@ public ValueOverride? UserValueOverride { get; set; }
 
 #### Property Value
 
- [ValueOverride](SuperOffice.WebApi.Data.ValueOverride.md)?
+ [ValueOverride](/en/api/reference/webapi/SuperOffice.WebApi.Data.ValueOverride)?
 
 #### See Also
 
-[QuoteAlternative](SuperOffice.WebApi.Data.QuoteAlternative.md).[UserValueOverride\_String](SuperOffice.WebApi.Data.QuoteAlternative.md\#SuperOffice\_WebApi\_Data\_QuoteAlternative\_UserValueOverride\_String)
+[QuoteAlternative](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteAlternative).[UserValueOverride\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteAlternative#SuperOffice_WebApi_Data_QuoteAlternative_UserValueOverride_String)
 
 ### <a id="SuperOffice_WebApi_Data_QuoteAlternative_UserValueOverride_String"></a> UserValueOverride\_String
 
@@ -345,7 +345,7 @@ public string UserValueOverride_String { get; set; }
 
 #### See Also
 
-[QuoteAlternative](SuperOffice.WebApi.Data.QuoteAlternative.md).[UserValueOverride](SuperOffice.WebApi.Data.QuoteAlternative.md\#SuperOffice\_WebApi\_Data\_QuoteAlternative\_UserValueOverride)
+[QuoteAlternative](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteAlternative).[UserValueOverride](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteAlternative#SuperOffice_WebApi_Data_QuoteAlternative_UserValueOverride)
 
 ### <a id="SuperOffice_WebApi_Data_QuoteAlternative_VAT"></a> VAT
 
@@ -373,5 +373,5 @@ public virtual string VATInfo { get; set; }
 
 ## See Also
 
-[QuoteAgent](SuperOffice.WebApi.Agents.QuoteAgent.md)
+[QuoteAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.QuoteAgent)
 

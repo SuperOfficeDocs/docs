@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_QuickFilterInfo"></a> Class QuickFilterInfo
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for QuickFilterInfo.
@@ -13,7 +13,7 @@ public class QuickFilterInfo
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[QuickFilterInfo](SuperOffice.WebApi.Data.QuickFilterInfo.md)
+[QuickFilterInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuickFilterInfo)
 
 #### Inherited Members
 
@@ -71,9 +71,9 @@ public virtual ArchiveRestrictionInfo Restriction { get; set; }
 
 #### Property Value
 
- [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)
+ [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)
 
 ## See Also
 
-[DashAgent](SuperOffice.WebApi.Agents.DashAgent.md)
+[DashAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DashAgent)
 

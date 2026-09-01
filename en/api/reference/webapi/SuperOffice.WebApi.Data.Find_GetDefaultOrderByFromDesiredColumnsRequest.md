@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Find_GetDefaultOrderByFromDesiredColumnsRequest"></a> Class Find\_GetDefaultOrderByFromDesiredColumnsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Find_GetDefaultOrderByFromDesiredColumnsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Find\_GetDefaultOrderByFromDesiredColumnsRequest](SuperOffice.WebApi.Data.Find\_GetDefaultOrderByFromDesiredColumnsRequest.md)
+[Find\_GetDefaultOrderByFromDesiredColumnsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Find_GetDefaultOrderByFromDesiredColumnsRequest)
 
 #### Inherited Members
 

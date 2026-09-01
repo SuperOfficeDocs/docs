@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_BLOB_GetBlobEntityOnCountryRequest"></a> Class BLOB\_GetBlobEntityOnCountryRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class BLOB_GetBlobEntityOnCountryRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[BLOB\_GetBlobEntityOnCountryRequest](SuperOffice.WebApi.Data.BLOB\_GetBlobEntityOnCountryRequest.md)
+[BLOB\_GetBlobEntityOnCountryRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.BLOB_GetBlobEntityOnCountryRequest)
 
 #### Inherited Members
 

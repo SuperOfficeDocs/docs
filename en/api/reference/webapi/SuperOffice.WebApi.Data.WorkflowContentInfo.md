@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_WorkflowContentInfo"></a> Class WorkflowContentInfo
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for WorkflowContentInfo.
@@ -13,13 +13,13 @@ public class WorkflowContentInfo : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[WorkflowContentInfo](SuperOffice.WebApi.Data.WorkflowContentInfo.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[WorkflowContentInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowContentInfo)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -76,11 +76,11 @@ public WorkflowContentType? WorkflowContentType { get; set; }
 
 #### Property Value
 
- [WorkflowContentType](SuperOffice.WebApi.Data.WorkflowContentType.md)?
+ [WorkflowContentType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowContentType)?
 
 #### See Also
 
-[WorkflowContentInfo](SuperOffice.WebApi.Data.WorkflowContentInfo.md).[WorkflowContentType\_String](SuperOffice.WebApi.Data.WorkflowContentInfo.md\#SuperOffice\_WebApi\_Data\_WorkflowContentInfo\_WorkflowContentType\_String)
+[WorkflowContentInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowContentInfo).[WorkflowContentType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowContentInfo#SuperOffice_WebApi_Data_WorkflowContentInfo_WorkflowContentType_String)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowContentInfo_WorkflowContentType_String"></a> WorkflowContentType\_String
 
@@ -98,9 +98,9 @@ public string WorkflowContentType_String { get; set; }
 
 #### See Also
 
-[WorkflowContentInfo](SuperOffice.WebApi.Data.WorkflowContentInfo.md).[WorkflowContentType](SuperOffice.WebApi.Data.WorkflowContentInfo.md\#SuperOffice\_WebApi\_Data\_WorkflowContentInfo\_WorkflowContentType)
+[WorkflowContentInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowContentInfo).[WorkflowContentType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowContentInfo#SuperOffice_WebApi_Data_WorkflowContentInfo_WorkflowContentType)
 
 ## See Also
 
-[WorkflowAgent](SuperOffice.WebApi.Agents.WorkflowAgent.md)
+[WorkflowAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.WorkflowAgent)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_DiaryView"></a> Class UserPreferenceStrings.DiaryView
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Diary
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.DiaryView
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.DiaryView](SuperOffice.WebApi.Data.UserPreferenceStrings.DiaryView.md)
+[UserPreferenceStrings.DiaryView](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.DiaryView)
 
 #### Inherited Members
 
