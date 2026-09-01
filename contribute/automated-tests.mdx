@@ -29,6 +29,7 @@ This page is the single reference for every automatic check that runs against th
 | Landing page template guard | GitHub Action (`.github/workflows/landing-page-template-guard.yml`) | No - advisory (warns only) | This repo, `tools/ci/check-landing-page-templates.py` |
 | Release-notes API structure guard | GitHub Action (`.github/workflows/release-notes-api-structure-guard.yml`) | No - advisory (warns only) | This repo, `tools/ci/check-release-notes-api-structure.py` |
 | Index page relative-links guard | GitHub Action (`.github/workflows/index-relative-links-guard.yml`) | No - advisory (warns only) | This repo, `tools/ci/check-index-relative-links.py` |
+| Redirect coverage guard | GitHub Action (`.github/workflows/redirect-coverage-guard.yml`) | No - advisory (warns only, labels the PR) | This repo, `tools/ci/check-redirect-coverage.py` |
 | Vale | Mintlify CI Checks add-on | No - Warning level | Mintlify dashboard (Add-ons > CI Checks), using this repo's `.vale.ini` |
 | Build validation | Mintlify preview deployment | Yes - a failed build shows as a red "Mintlify Deployment" check | Mintlify, automatic on every PR (see [Deploy trigger mechanics][2]) |
 | Broken links (internal) | Mintlify CI Checks add-on | No - Warning level | Mintlify dashboard (Add-ons > CI Checks) |
@@ -95,6 +96,10 @@ Only triggers on a PR touching `release-notes/*/api/**`. `release-notes/{major}/
 ### Index page relative-links guard
 
 Checks only `index.md`/`index.mdx` files changed in a PR (or pushed directly to `main`), excluding the machine-generated reference trees. A page built from a literal `index.md`/`index.mdx` file is served at its folder's own bare path with no trailing slash, so a relative link (`./...`, `../...`) authored *on* that page resolves against the wrong parent folder in production - the target genuinely exists on disk, so it's invisible to every check that resolves links via filesystem path math (`mint validate` doesn't check links at all, and `tools/triage-broken-links.py` resolves against the file's disk location, not the live URL). This bug class was found and fixed repo-wide in [issue #375][15] and [issue #377][16]; this guard exists so it can't quietly reappear. It flags both markdown links (inline and reference-style) and raw HTML/JSX `href` values, skips MDX `import` statements, code blocks/spans, and frontmatter. It never fails the check - a hit shows up as a warning annotation on the relevant line in the PR's Files Changed tab. See [How to use links in docs][17] for the underlying rule.
+
+### Redirect coverage guard
+
+Runs on every PR (`fetch-depth: 0`, needed to diff against `origin/main`). Detects any `.md`/`.mdx` file this PR renamed, moved, or deleted (via git's own rename detection, not a plain add/delete pair), excluding `snippets/` and the machine-generated reference trees - those aren't standalone routable pages, so a missing redirect for one isn't a real gap. For each one, checks whether `config/redirects.json` already covers the old URL, including the `.html`-suffixed duplicate form documented in [Redirects][18]. Separately, for a renamed `en/` page, checks whether its `da`/`de`/`nl`/`no`/`sv` translations (matched by `uid`, not by path) were moved to the same relative location - a translation left on its old path after the English page moves is a quieter version of the same failure mode. Never fails the check - a gap shows up as a warning annotation on the PR's Files Changed tab, and adds the `mintlify/nav-redirects` label (or `translation`, for a mirroring gap) to the PR so it's visible without opening the Actions tab; the label is removed automatically once a later push resolves the gap.
 
 ### Vale
 
@@ -176,3 +181,4 @@ mint automations create --name "Broken link detection" --type broken-link-detect
 [15]: https://github.com/SuperOfficeDocs/docs/issues/375
 [16]: https://github.com/SuperOfficeDocs/docs/issues/377
 [17]: ./markdown-guide/links-in-docs
+[18]: ./redirects
