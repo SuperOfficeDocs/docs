@@ -2,7 +2,7 @@
 uid: files-and-folders
 title: Organization of repositories
 description: How SuperOfficeDocs repositories are organized into files and folders, including naming conventions and UID rules.
-keywords: ['file names', 'folder structure', 'naming conventions', 'UID', 'repository organization']
+keywords: ['file names', 'folder structure', 'naming conventions', 'UID', 'repository organization', 'downloads']
 author: digitaldiina
 date: 07.16.2026
 content_type: reference
@@ -69,6 +69,10 @@ Media files aren't split per-folder. They live in one centralized location at th
 
 `/images/` holds site-wide branding/config assets referenced directly by `docs.json` — `og-background.png`, the social-preview thumbnail background (see [SEO and social previews][4]), and the `404-hugo-board.png`/`404-hugo-sad.png` light/dark mascot pair shown on the custom 404 page (see [Configuring Mintlify][5]). This is different from `/media/loc/en/<topic>/`, which holds per-topic content images, and from `/logo/`, which holds only the two required, fixed-filename logo files.
 
+## Downloads folder
+
+`/downloads/` holds standalone files a page links to for direct download. **Never commit an `.xlsx`, `.docx`, or `.pptx` file here** - Mintlify doesn't serve those extensions at any plan tier (see [Automated tests][6]). Zip the file first, preserving its original filename inside the archive, and link to the `.zip` instead. A CI check fails the build if this happens anyway - see #386.
+
 ## Snippets subfolder
 
 All major folders have a */snippets* subfolder for reusable content in that section. See [Markdown reference][1] for how to use snippets.
@@ -82,3 +86,4 @@ We use the [Blueprint extension][2] for Visual Studio Code. Available templates 
 [3]: https://mdxjs.com/docs/what-is-mdx/
 [4]: ./seo
 [5]: ./configure-mintlify
+[6]: ./automated-tests

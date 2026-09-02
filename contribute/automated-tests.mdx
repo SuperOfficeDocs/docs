@@ -2,7 +2,7 @@
 uid: automated-tests
 title: Automated tests
 description: Every check that runs against a PR or on a schedule for this repo - markdownlint, Vale, build validation, broken-link checking, the CRMScript reference drift check, and the stale generated-pages check - what each covers, whether it blocks a merge, and where to look when one flags something.
-keywords: ['ci', 'automated tests', 'markdownlint', 'vale', 'broken links', 'mint validate', 'automations', 'crmscript', 'stale pages', 'generated pages', 'landing page', 'template guard', 'release notes', 'openapi', 'swagger', 'recent pages', 'homepage', 'pester', 'mdx escaping']
+keywords: ['ci', 'automated tests', 'markdownlint', 'vale', 'broken links', 'mint validate', 'automations', 'crmscript', 'stale pages', 'generated pages', 'landing page', 'template guard', 'release notes', 'openapi', 'swagger', 'recent pages', 'homepage', 'pester', 'mdx escaping', 'downloads', 'office format', 'xlsx']
 author: digitaldiina
 date: 09.02.2026
 content_type: concept
@@ -30,6 +30,7 @@ This page is the single reference for every automatic check that runs against th
 | Release-notes API structure guard | GitHub Action (`.github/workflows/release-notes-api-structure-guard.yml`) | No - advisory (warns only) | This repo, `tools/ci/check-release-notes-api-structure.py` |
 | Index page relative-links guard | GitHub Action (`.github/workflows/index-relative-links-guard.yml`) | No - advisory (warns only) | This repo, `tools/ci/check-index-relative-links.py` |
 | Redirect coverage guard | GitHub Action (`.github/workflows/redirect-coverage-guard.yml`) | No - advisory (warns only, labels the PR) | This repo, `tools/ci/check-redirect-coverage.py` |
+| Office-format download guard | GitHub Action (`.github/workflows/office-format-download-guard.yml`) | **Yes** - fails the check | This repo, `tools/ci/check-no-office-format-downloads.py` |
 | Vale | Mintlify CI Checks add-on | No - Warning level | Mintlify dashboard (Add-ons > CI Checks), using this repo's `.vale.ini` |
 | Build validation | Mintlify preview deployment | Yes - a failed build shows as a red "Mintlify Deployment" check | Mintlify, automatic on every PR (see [Deploy trigger mechanics][2]) |
 | Broken links (internal) | Mintlify CI Checks add-on | No - Warning level | Mintlify dashboard (Add-ons > CI Checks) |
@@ -101,6 +102,12 @@ Checks only `index.md`/`index.mdx` files changed in a PR (or pushed directly to 
 ### Redirect coverage guard
 
 Runs on every PR (`fetch-depth: 0`, needed to diff against `origin/main`). Detects any `.md`/`.mdx` file this PR renamed, moved, or deleted (via git's own rename detection, not a plain add/delete pair), excluding `snippets/` and the machine-generated reference trees - those aren't standalone routable pages, so a missing redirect for one isn't a real gap. For each one, checks whether `config/redirects.json` already covers the old URL, including the `.html`-suffixed duplicate form documented in [Redirects][18]. Separately, for a renamed `en/` page, checks whether its translations were moved to the same relative location too - matched by path (swapping the language segment), not by `uid`. A translation left on its old path after the English page moves is a quieter version of the same failure mode. Never fails the check - a gap shows up as a warning annotation on the PR's Files Changed tab, and adds the `mintlify/nav-redirects` label (or `translation`, for a mirroring gap) to the PR so it's visible without opening the Actions tab; the label is removed automatically once a later push resolves the gap.
+
+### Office-format download guard
+
+Checks every PR (and direct push to `main`) for a newly *added* `.xlsx`/`.docx`/`.pptx` file anywhere under `downloads/`, via `git diff --name-status` against `origin/main` - a pre-existing tracked file isn't re-flagged just because an unrelated PR touches something else in that folder. This is the one **blocking** exception in an otherwise advisory guard family: Mintlify does not serve these three extensions at any plan tier (confirmed live - 404 on every `.xlsx`/`.docx`/`.pptx` under `downloads/`, while `.pdf`/`.zip` in the same folder return 200 - and against Mintlify's own supported-file-types documentation), so a file added with one of these extensions is never downloadable at all once merged, not a stylistic or lint-level concern the other checks on this page warn about. #386 found and fixed all 30 pre-existing instances by zipping each file and repointing every link/redirect at the `.zip`; this guard exists so the same 404 can't quietly reappear the normal way (see [How to use links in docs][17] for the authoring rule, added alongside this guard).
+
+Unlike the changed-files-list checks elsewhere on this page, this script computes its own `git diff` against the base ref rather than receiving filenames from `tj-actions/changed-files` through a shell-interpolated `${{ }}` expression - so the injection vector those checks guard against with `env:`-passed input doesn't arise here in the first place, since no PR-controlled string is ever substituted into the workflow's `run:` script text.
 
 ### Vale
 

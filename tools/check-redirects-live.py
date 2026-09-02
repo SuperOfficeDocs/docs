@@ -15,13 +15,13 @@ not that every possible match resolves correctly -- reported as a
 separate, smaller-coverage bucket rather than silently skipped.
 
 Each plain entry is checked as written ("bare"), and -- unless its source
-is a wildcard, ends in "/index" or "/", or already ends in ".html" (those
-forms are already covered by Mintlify's own matching/index.html-stripping
-behavior) -- a second request is made for "<source>.html" ("html-suffix"),
-since the old DocFx site served every page with a literal .html extension
-and Mintlify's redirect matcher treats that as a completely distinct
-source string (#339). Failures are tagged by variant so a break is
-traceable to which URL form broke.
+is a wildcard, ends in "/index" or "/", already ends in ".html", or already
+carries a real file extension (a static asset under /downloads/, never a
+DocFx-era page -- see #386) -- a second request is made for
+"<source>.html" ("html-suffix"), since the old DocFx site served every
+page with a literal .html extension and Mintlify's redirect matcher treats
+that as a completely distinct source string (#339). Failures are tagged by
+variant so a break is traceable to which URL form broke.
 
 For each non-wildcard entry:
   1. Request base_url + source, following redirects.
@@ -63,8 +63,15 @@ def normalize(path):
 
 def needs_html_variant(source):
     """Sources already covered by Mintlify's own matching/index.html-stripping
-    behavior don't need a second, "<source>.html" request (see #339)."""
-    return not (source.endswith("/index") or source.endswith("/") or source.lower().endswith(".html"))
+    behavior don't need a second, "<source>.html" request (see #339). A
+    source that already carries a real file extension (a static asset
+    under /downloads/, not a DocFx-era page) never had a bare/.html pair
+    to begin with -- appending ".html" would just test a nonsense URL like
+    "foo.zip.html" (see #386)."""
+    if source.endswith("/index") or source.endswith("/") or source.lower().endswith(".html"):
+        return False
+    last_segment = source.rsplit("/", 1)[-1]
+    return "." not in last_segment
 
 
 def check_one(base_url, entry, source, variant):
