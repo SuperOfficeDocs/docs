@@ -29,6 +29,7 @@ Scripts that convert, generate, or verify content for this repo. Not published t
 | `convert-toc-to-mintlify.ps1` | migration | `toc.yml` → Mintlify nav JSON | No — see Known issues below |
 | `convert-videos.ps1` | migration | DocFx video embeds → Mintlify `<Frame>`/iframe | No |
 | `fix-archive-providers-mdx.ps1` | migration | One-off patch for known bug patterns in generated archive-providers pages | No |
+| `fix-generated-mdx-escaping.Tests.ps1` | migration | Pester regression suite for `fix-generated-mdx-escaping.ps1` (see #362); CI-enforced via `mdx-escaping-tests.yml` | Yes — guards against a repeat of #351/#360 |
 | `inline-code.ps1` | migration | Inlines DocFx code-includes, deletes the include files | No |
 | `inline-mermaid.ps1` | migration | Inlines mermaid diagram includes, deletes the include files | No |
 | `migrate-folder.ps1` | migration | Orchestrates the full migration pipeline (15 steps) on a folder | No |
@@ -85,6 +86,28 @@ Every `.ps1` script in this folder that writes file content directly (not via `g
 Found and fixed the hard way, via a live CI failure, in [issue #189](https://github.com/SuperOfficeDocs/docs/issues/189): `transform-crmscript.ps1` and `generate-crmscript-nav.ps1` both hardcoded CRLF, reasoning from a Windows file read. The fix (both scripts now hardcode `` `n `` and an explicit BOM) is the template for any future script here.
 
 **Path depth after the `migration`/`ci` split**: any script in a subfolder that computes its own repo root from `$PSScriptRoot` needs one extra `Split-Path -Parent` hop compared to a top-level script, and any call into a script that stayed at the top level (e.g. `check-bom.ps1`, `regenerate-crmscript-reference.ps1`) needs its relative path adjusted the same way. Get this wrong and the script silently operates on the wrong directory rather than erroring — verify with a dry run, not just a syntax check, after moving or copying a script between these folders.
+
+### Running a Pester test suite locally
+
+`fix-generated-mdx-escaping.Tests.ps1` (see #362) is the first Pester suite in this repo, written in Pester 5 syntax (`BeforeAll`, `-ForEach`, `Should -Be`) to match what GitHub's `ubuntu-latest` runner images ship for `pwsh` — the same interpreter `mdx-escaping-tests.yml` invokes in CI. Windows PowerShell 5.1's OS-bundled Pester (3.4.0) uses older, incompatible syntax and cannot run these tests, so local setup needs two one-time installs:
+
+```powershell
+winget install --id Microsoft.PowerShell -e --source winget
+```
+
+Then, in a **new** `pwsh` session (installing doesn't retroactively update an already-running Windows PowerShell 5.1 process):
+
+```powershell
+Install-Module Pester -MinimumVersion 5.0 -Force -SkipPublisherCheck -Scope CurrentUser
+```
+
+`-SkipPublisherCheck` is needed because the OS-bundled Pester 3.4.0 is signed by Microsoft, and a plain `Install-Module` refuses to shadow it without that flag; `-Scope CurrentUser` avoids an elevated prompt. After that, run any `*.Tests.ps1` file in this repo the same way CI does:
+
+```powershell
+pwsh -Command "Invoke-Pester -Path tools/migration/fix-generated-mdx-escaping.Tests.ps1 -CI"
+```
+
+`-CI` writes a `testResults.xml` report to the current directory (gitignored — see `.gitignore`) and sets a non-zero exit code on failure, matching the workflow's own invocation.
 
 ## Verifying a regeneration is really clean
 

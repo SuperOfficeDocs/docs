@@ -1,0 +1,28 @@
+name: MDX escaping regression tests
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'tools/migration/fix-generated-mdx-escaping.ps1'
+      - 'tools/migration/fix-generated-mdx-escaping.Tests.ps1'
+
+# Automatically cancel in-progress runs on the same branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  pester:
+    name: Run Pester suite for fix-generated-mdx-escaping.ps1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run Pester tests
+        shell: pwsh
+        run: Invoke-Pester -Path tools/migration/fix-generated-mdx-escaping.Tests.ps1 -CI
