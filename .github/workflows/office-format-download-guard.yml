@@ -1,0 +1,33 @@
+name: Office-format download guard
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+# Automatically cancel in-progress runs on the same branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  check-no-office-format-downloads:
+    name: "Fail on new .xlsx/.docx/.pptx files under downloads/"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Check for new Office-format downloads
+        run: python tools/ci/check-no-office-format-downloads.py --base-ref origin/main

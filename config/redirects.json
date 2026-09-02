@@ -32818,5 +32818,125 @@
   {
     "source": "/sv/ui/web-panels/learn/index",
     "destination": "/sv/customization/web-panels/admin/index"
+  },
+  {
+    "source": "/downloads/import-template-for-contacts.xlsx",
+    "destination": "/downloads/import-template-for-contacts.zip"
+  },
+  {
+    "source": "/downloads/import-template-products.xlsx",
+    "destination": "/downloads/import-template-products.zip"
+  },
+  {
+    "source": "/downloads/mirroredtables.docx",
+    "destination": "/downloads/mirroredtables.zip"
+  },
+  {
+    "source": "/downloads/prepare-for-the-gdpr-download-template-9.xlsx",
+    "destination": "/downloads/prepare-for-the-gdpr-download-template-9.zip"
+  },
+  {
+    "source": "/downloads/cloud-office/blank.xlsx",
+    "destination": "/downloads/cloud-office/blank.zip"
+  },
+  {
+    "source": "/downloads/cloud-office/blank.docx",
+    "destination": "/downloads/cloud-office/blank.zip"
+  },
+  {
+    "source": "/downloads/cloud-office/blank.pptx",
+    "destination": "/downloads/cloud-office/blank.zip"
+  },
+  {
+    "source": "/downloads/compatibility/browser-mojave.xlsx",
+    "destination": "/downloads/compatibility/browser-mojave.zip"
+  },
+  {
+    "source": "/downloads/compatibility/maclink---macoshigh-sierra.xlsx",
+    "destination": "/downloads/compatibility/maclink---macoshigh-sierra.zip"
+  },
+  {
+    "source": "/downloads/compatibility/maclink---os-macos-sequoia.xlsx",
+    "destination": "/downloads/compatibility/maclink---os-macos-sequoia.zip"
+  },
+  {
+    "source": "/downloads/compatibility/maclink---os-macos-sonoma.xlsx",
+    "destination": "/downloads/compatibility/maclink---os-macos-sonoma.zip"
+  },
+  {
+    "source": "/downloads/compatibility/maclink---os-macos-tahoe.xlsx",
+    "destination": "/downloads/compatibility/maclink---os-macos-tahoe.zip"
+  },
+  {
+    "source": "/downloads/compatibility/maclink---os-macos-ventura.xlsx",
+    "destination": "/downloads/compatibility/maclink---os-macos-ventura.zip"
+  },
+  {
+    "source": "/downloads/compatibility/maclink---os-macosbigsur.xlsx",
+    "destination": "/downloads/compatibility/maclink---os-macosbigsur.zip"
+  },
+  {
+    "source": "/downloads/compatibility/maclink---os-macoscatalina.xlsx",
+    "destination": "/downloads/compatibility/maclink---os-macoscatalina.zip"
+  },
+  {
+    "source": "/downloads/compatibility/maclink---os-macosmonterey.xlsx",
+    "destination": "/downloads/compatibility/maclink---os-macosmonterey.zip"
+  },
+  {
+    "source": "/downloads/compatibility/msoffice-2021.xlsx",
+    "destination": "/downloads/compatibility/msoffice-2021.zip"
+  },
+  {
+    "source": "/downloads/compatibility/mssql-ODBC-18.xlsx",
+    "destination": "/downloads/compatibility/mssql-ODBC-18.zip"
+  },
+  {
+    "source": "/downloads/compatibility/office-2019.xlsx",
+    "destination": "/downloads/compatibility/office-2019.zip"
+  },
+  {
+    "source": "/downloads/compatibility/safari14_bigsur.xlsx",
+    "destination": "/downloads/compatibility/safari14_bigsur.zip"
+  },
+  {
+    "source": "/downloads/compatibility/sql-server-2016-express.xlsx",
+    "destination": "/downloads/compatibility/sql-server-2016-express.zip"
+  },
+  {
+    "source": "/downloads/compatibility/sql-server-2016.xlsx",
+    "destination": "/downloads/compatibility/sql-server-2016.zip"
+  },
+  {
+    "source": "/downloads/compatibility/sql-server-2017.xlsx",
+    "destination": "/downloads/compatibility/sql-server-2017.zip"
+  },
+  {
+    "source": "/downloads/compatibility/sql-server-2019.xlsx",
+    "destination": "/downloads/compatibility/sql-server-2019.zip"
+  },
+  {
+    "source": "/downloads/compatibility/sql-server-2022.xlsx",
+    "destination": "/downloads/compatibility/sql-server-2022.zip"
+  },
+  {
+    "source": "/downloads/compatibility/windows-server-2016.xlsx",
+    "destination": "/downloads/compatibility/windows-server-2016.zip"
+  },
+  {
+    "source": "/downloads/compatibility/windows-server-2019.xlsx",
+    "destination": "/downloads/compatibility/windows-server-2019.zip"
+  },
+  {
+    "source": "/downloads/compatibility/windows-server-2022.xlsx",
+    "destination": "/downloads/compatibility/windows-server-2022.zip"
+  },
+  {
+    "source": "/downloads/compatibility/windows-server-2025.xlsx",
+    "destination": "/downloads/compatibility/windows-server-2025.zip"
+  },
+  {
+    "source": "/downloads/compatibility/windows11.xlsx",
+    "destination": "/downloads/compatibility/windows11.zip"
   }
 ]
