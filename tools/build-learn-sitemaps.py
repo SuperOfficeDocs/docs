@@ -12,7 +12,13 @@ reproduces that page set for the Mintlify content tree.
 
 Selection logic per language <lang> (en, da, de, nl, no, sv):
   - Every page whose path starts with `<lang>/` and contains a `/learn/`
-    segment anywhere after that.
+    segment anywhere after that, excluding anything under a `snippets/`
+    folder -- those are MDX-import-only fragments never served at their own
+    URL (same rule already documented in contribute/redirects.mdx's "Don't
+    self-redirect a snippets/ file" note, and enforced by
+    check-redirect-coverage.py's EXCLUDED_PREFIXES). Confirmed via #393:
+    37-81 dead snippet links per language were shipping in the sitemap
+    before this exclusion existed.
   - Every page anywhere in the repo with `userflow_index: true` frontmatter:
       - if its path starts with a recognized language prefix, it belongs to
         that language only (a real per-language page, e.g. an `admin/`
@@ -84,6 +90,13 @@ def list_content_files():
     return [f for f in out.stdout.splitlines() if "/includes/" not in f and not f.startswith("includes/")]
 
 
+def is_snippet(rel_path):
+    """Snippets are MDX-import-only fragments -- never served at their own
+    URL, so they must never be treated as a real page (see #393)."""
+    segments = rel_path.split("/")
+    return "snippets" in segments[:-1]
+
+
 def url_path_for(rel_path):
     """Mintlify uses the bare repo-relative path (no extension) as the URL --
     confirmed via config/nav-*.json, which lists page paths this way,
@@ -112,6 +125,9 @@ def collect_pages_per_language():
     pages = {lang: set() for lang in LANGUAGES}
 
     for rel_path in list_content_files():
+        if is_snippet(rel_path):
+            continue
+
         lang = language_of(rel_path)
         segments = rel_path.split("/")
 
