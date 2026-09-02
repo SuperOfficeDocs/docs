@@ -1,0 +1,56 @@
+name: Redirect coverage guard
+
+on:
+  pull_request:
+    branches: [main]
+
+# Automatically cancel in-progress runs on the same branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pull-requests: write   # only for the label step below
+
+jobs:
+  check-redirect-coverage:
+    name: "Warn on renamed/deleted pages missing a redirect"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Check redirect coverage
+        id: check
+        run: python tools/ci/check-redirect-coverage.py --base-ref origin/main
+
+      - name: Add redirect/translation labels, if needed
+        if: always()
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          FOUND: ${{ steps.check.outputs.found }}
+          TRANSLATION_GAP: ${{ steps.check.outputs.translation_gap }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Reuses this repo's existing labels rather than inventing new
+          # ones -- mintlify/nav-redirects for a coverage gap, translation
+          # for a stale-pathed mirror (see #340).
+          if [ "$FOUND" = "true" ]; then
+            gh pr edit "$PR_NUMBER" --add-label "mintlify/nav-redirects"
+          else
+            gh pr edit "$PR_NUMBER" --remove-label "mintlify/nav-redirects" || true
+          fi
+
+          if [ "$TRANSLATION_GAP" = "true" ]; then
+            gh pr edit "$PR_NUMBER" --add-label "translation"
+          else
+            gh pr edit "$PR_NUMBER" --remove-label "translation" || true
+          fi
