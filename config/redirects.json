@@ -32938,5 +32938,21 @@
   {
     "source": "/downloads/compatibility/windows11.xlsx",
     "destination": "/downloads/compatibility/windows11.zip"
+  },
+  {
+    "source": "/downloads/sms/superoffice.messaging.cm.dll",
+    "destination": "/downloads/sms/superoffice.messaging.zip"
+  },
+  {
+    "source": "/downloads/sms/superoffice.messaging.compaya.dll",
+    "destination": "/downloads/sms/superoffice.messaging.zip"
+  },
+  {
+    "source": "/downloads/sms/superoffice.messaging.smsteknik.dll",
+    "destination": "/downloads/sms/superoffice.messaging.zip"
+  },
+  {
+    "source": "/downloads/cloud-office/cloud-office-superoffice.app",
+    "destination": "/downloads/cloud-office/cloud-office-superoffice.zip"
   }
 ]
