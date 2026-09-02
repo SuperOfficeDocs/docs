@@ -48,6 +48,7 @@ Scripts that convert, generate, or verify content for this repo. Not published t
 | `fix-reserved-version-property.py` | ci | Auto-fixes: renames `version:` to `so_version:` in a changed file's frontmatter, commits back to the PR | Yes |
 | `check-landing-page-templates.py` | ci | Warns (never fails) if a `mode: "custom"` page mixes category-landing and subcategory template markup | Yes |
 | `check-release-notes-api-structure.py` | ci | Warns (never fails) if a changed file sits in a subfolder under `release-notes/{major}/api/` | Yes |
+| `check-index-relative-links.py` | ci | Warns (never fails) if a changed `index.md`/`index.mdx` page has a relative (`./`/`../`) link — see #375/#377/#378 | Yes |
 | `find-stale-generated-pages.py` | ci | Finds generated reference pages dropped from their tree's nav | Yes |
 | `apply-wide-mode.py` | ci | Auto-fixes: applies `mode: "wide"` to a maintained list of overflowing reference pages, commits back to the PR | Yes |
 | `apply-code-wrap.py` | ci | Auto-fixes: wraps fenced code blocks on a maintained list of pages in a `.wrap-code-samples` marker so long lines wrap instead of scrolling, commits back to the PR | Yes |
