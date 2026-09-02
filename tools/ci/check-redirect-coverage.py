@@ -30,17 +30,20 @@ Both forms are checked and named separately in the warning.
 
 ## Translation-mirroring check
 
-For a renamed `en/` page only: reads the new file's `uid` frontmatter,
-derives the 5 translated uids by swapping the language-code segment (see
-the `ai-agents` `frontmatter` skill and [[feedback_uid_language_code]] --
-a translated uid is the same uid with `en` replaced by the target
-language code, e.g. `help-en-admin-primer` -> `help-da-admin-primer`),
-then searches each target language's tree for a file carrying that uid.
-If found at a path that wasn't renamed to the same relative location as
-the English page, warns that the translation is now stale-pathed. A
-uid that isn't found in a given language at all is treated as an
-untranslated page and skipped silently -- full translation completeness
-isn't tracked by this guard (see the master journal's "Explicitly out of
+For a renamed `en/` page only: derives each language's mirrored path by
+swapping just the leading `en/` segment for the target language code
+(`en/foo/bar.mdx` -> `da/foo/bar.mdx`), then checks whether a file still
+exists at the *old* mirrored path while nothing exists yet at the *new*
+one -- if so, the translation wasn't moved along with the English rename.
+Deliberately path-based, not identifier-based (uid is being phased out
+of this repo, so the check can't depend on it staying stable). This
+means it only catches the common case where a translation's path already
+mirrors English 1:1; it can't detect a mismatch for a page whose
+translated path never followed that convention to begin with (the same
+caveat #340's own issue body flagged for uid-based matching). A language
+with no file at either the old or new mirrored path is treated as
+untranslated and skipped silently -- full translation completeness isn't
+tracked by this guard (see the master journal's "Explicitly out of
 scope" section).
 
 This is advisory only -- it never fails the build. It emits a GitHub
@@ -57,7 +60,6 @@ Usage:
 import argparse
 import json
 import os
-import re
 import subprocess
 import sys
 from pathlib import Path
@@ -65,10 +67,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 REDIRECTS_PATH = REPO_ROOT / "config" / "redirects.json"
 
-UID_RE = re.compile(r"^uid:\s*(.+?)\s*$", re.MULTILINE)
-FM_RE = re.compile(r"^---\n(.*?\n)---\n?", re.DOTALL)
-
-LANGUAGES = ("en", "da", "de", "nl", "no", "sv")
+TRANSLATION_LANGUAGES = ("da", "de", "nl", "no", "sv")
 
 # Not standalone routable pages -- Mintlify never serves these at their own
 # URL, so a missing redirect for one isn't a real gap (see
@@ -169,82 +168,25 @@ def check_redirect_coverage(url_path, sources, destinations, wildcard_prefixes, 
     return missing
 
 
-def read_uid(rel_path):
-    full = REPO_ROOT / rel_path
-    if not full.is_file():
-        return None
-    text = full.read_bytes().decode("utf-8-sig", errors="replace").replace("\r\n", "\n")
-    m = FM_RE.match(text)
-    if not m:
-        return None
-    uid_m = UID_RE.search(m.group(1))
-    return uid_m.group(1).strip('"').strip("'") if uid_m else None
-
-
-def find_file_by_uid(uid):
-    """git grep for a file whose frontmatter carries this exact uid.
-    `[[:space:]]*$` (POSIX ERE, not `\\r?$` -- git grep's `-E` doesn't
-    support the `\\r` escape) accounts for this repo's CRLF-checked-out
-    content files (see the master journal's `core.autocrlf=true` note) --
-    a bare `$` would miss every match on a CRLF file, since the trailing
-    \\r sits between the uid value and the line ending git grep anchors
-    against."""
-    out = subprocess.run(
-        ["git", "grep", "-lE", f"^uid: {re.escape(uid)}[[:space:]]*$", "--", "*.md", "*.mdx"],
-        cwd=REPO_ROOT,
-        capture_output=True,
-        text=True,
-    )
-    if out.returncode not in (0, 1):
-        return None
-    lines = [l for l in out.stdout.splitlines() if l.strip()]
-    return lines[0] if lines else None
-
-
-def translated_uid(en_uid, lang):
-    # A translated uid swaps the language-code segment only
-    # (help-en-admin-primer -> help-da-admin-primer); an en-only uid with no
-    # "-en-" segment has no translated counterpart to derive.
-    if "-en-" not in en_uid:
-        return None
-    return en_uid.replace("-en-", f"-{lang}-", 1)
-
-
-def expected_translated_path(en_old_path, en_new_path, actual_lang_path):
-    """The relative path a translation would sit at if it mirrored the
-    English rename exactly, given the language tree the actual file is
-    currently found in (translated trees aren't always 1:1 in structure,
-    so this only compares the position within that same language root)."""
-    lang_root = actual_lang_path.split("/", 1)[0]
-    if not en_new_path.startswith("en/"):
-        return None
-    return lang_root + "/" + en_new_path[len("en/"):]
-
-
 def check_translation_mirroring(en_old_path, en_new_path):
     """Returns a list of warning message fragments for stale-pathed
-    translations of a renamed en/ page (empty if none, or if untranslated)."""
+    translations of a renamed en/ page (empty if none, or if untranslated).
+    Purely path-based: swaps the leading en/ segment for each language and
+    checks file existence on disk at HEAD -- see the module docstring for
+    why this doesn't use uid."""
     if not en_new_path.startswith("en/"):
         return []
-    uid = read_uid(en_new_path)
-    if not uid or "-en-" not in uid:
-        return []
+    old_rest = en_old_path[len("en/"):]
+    new_rest = en_new_path[len("en/"):]
 
     warnings = []
-    for lang in LANGUAGES:
-        if lang == "en":
-            continue
-        target_uid = translated_uid(uid, lang)
-        if target_uid is None:
-            continue
-        actual_path = find_file_by_uid(target_uid)
-        if actual_path is None:
-            continue  # not translated at all -- out of scope, skip silently
-        expected_path = expected_translated_path(en_old_path, en_new_path, actual_path)
-        if expected_path is not None and actual_path != expected_path:
+    for lang in TRANSLATION_LANGUAGES:
+        old_lang_path = f"{lang}/{old_rest}"
+        new_lang_path = f"{lang}/{new_rest}"
+        if (REPO_ROOT / old_lang_path).is_file() and not (REPO_ROOT / new_lang_path).is_file():
             warnings.append(
-                f"'{lang}' translation (uid '{target_uid}') still sits at '{actual_path}', "
-                f"not mirrored to '{expected_path}' after the English rename"
+                f"'{lang}' translation still at '{old_lang_path}', "
+                f"not mirrored to '{new_lang_path}' after the English rename"
             )
     return warnings
 
