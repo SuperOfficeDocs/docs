@@ -51,16 +51,6 @@ param(
     [switch]$WhatIf
 )
 
-$DocsRoot = Resolve-Path (Join-Path (Split-Path -Parent $PSScriptRoot) "..")
-
-if (-not $Files) {
-    $listPath = Join-Path $PSScriptRoot "known-broken-files.txt"
-    if (-not (Test-Path $listPath)) {
-        throw "No -Files given and $listPath does not exist."
-    }
-    $Files = Get-Content -LiteralPath $listPath | Where-Object { $_.Trim() -and -not $_.Trim().StartsWith('#') }
-}
-
 # Matches a DocFx-style heading anchor (raw or already-HTML-escaped) on a heading line, e.g.
 #   ### <a id="x"></a> Heading text
 #   ### &lt;a id="x"&gt;&lt;/a&gt; Heading text
@@ -122,45 +112,37 @@ function Restore-CodeSpans {
     })
 }
 
-$summary = [ordered]@{
-    FilesScanned      = 0
-    FilesChanged      = 0
-    FilesMissing      = 0
-    CommentsStripped  = 0
-    AnglesEscaped     = 0
-    BracesEscaped     = 0
-    AnchorsConverted  = 0
-}
+function ConvertTo-SanitizedMdx {
+    # The full per-file transformation, as a pure string-in/string-out function so it can be
+    # unit-tested (see fix-generated-mdx-escaping.Tests.ps1) without touching real files. Order
+    # matters: heading anchors are extracted to a sentinel FIRST (so the heading text itself still
+    # flows through the escaping passes below, per #360), then code spans are protected, then the
+    # remaining prose is stripped/escaped, then both extractions are restored in reverse order.
+    param([string]$Content)
 
-foreach ($relPath in $Files) {
-    $file = Join-Path $DocsRoot $relPath
-    if (-not (Test-Path -LiteralPath $file)) {
-        Write-Warning "Not found, skipping: $relPath"
-        $summary.FilesMissing++
-        continue
+    $stats = [ordered]@{
+        CommentsStripped = 0
+        AnglesEscaped    = 0
+        BracesEscaped    = 0
+        AnchorsConverted = 0
     }
-    $summary.FilesScanned++
 
-    $original = Get-Content -LiteralPath $file -Raw -Encoding UTF8
-    $content = $original
+    $stats.AnchorsConverted = ([regex]::Matches($Content, $OldAnchorPattern)).Count + ([regex]::Matches($Content, $NewAnchorPattern)).Count
+    $Content = Extract-HeadingIds -Content $Content
 
-    $anchorCount = ([regex]::Matches($content, $OldAnchorPattern)).Count + ([regex]::Matches($content, $NewAnchorPattern)).Count
-    $content = Extract-HeadingIds -Content $content
-    $summary.AnchorsConverted += $anchorCount
-
-    $protection = Protect-CodeSpans -Content $content
+    $protection = Protect-CodeSpans -Content $Content
     $prose = $protection.Content
 
     $commentMatches = ([regex]::Matches($prose, '(?s)<!--.*?-->')).Count
     if ($commentMatches -gt 0) {
         $prose = [regex]::Replace($prose, '(?s)<!--.*?-->', '')
-        $summary.CommentsStripped += $commentMatches
+        $stats.CommentsStripped = $commentMatches
     }
 
     $angleCount = ([regex]::Matches($prose, '[<>]')).Count
     if ($angleCount -gt 0) {
         $prose = $prose.Replace('<', '&lt;').Replace('>', '&gt;')
-        $summary.AnglesEscaped += $angleCount
+        $stats.AnglesEscaped = $angleCount
     }
 
     # (?<!\\) skips braces already escaped by a prior run of this script (e.g. '\{' from an
@@ -170,29 +152,76 @@ foreach ($relPath in $Files) {
     if ($braceCount -gt 0) {
         $prose = [regex]::Replace($prose, '(?<!\\)\{', '\{')
         $prose = [regex]::Replace($prose, '(?<!\\)\}', '\}')
-        $summary.BracesEscaped += $braceCount
+        $stats.BracesEscaped = $braceCount
     }
 
-    $content = Restore-CodeSpans -Content $prose -Store $protection.Store
-    $content = Restore-HeadingIds -Content $content
+    $Content = Restore-CodeSpans -Content $prose -Store $protection.Store
+    $Content = Restore-HeadingIds -Content $Content
 
-    if ($content -ne $original) {
-        $summary.FilesChanged++
-        if (-not $WhatIf) {
-            $utf8NoBom = New-Object System.Text.UTF8Encoding $false
-            [System.IO.File]::WriteAllText($file, $content, $utf8NoBom)
-        }
-        else {
-            Write-Host "Would change: $relPath"
-        }
-    }
+    return @{ Content = $Content; Stats = $stats }
 }
 
-Write-Host "Files listed: $($Files.Count)"
-Write-Host "Files scanned: $($summary.FilesScanned)"
-Write-Host "Files missing: $($summary.FilesMissing)"
-Write-Host "Files changed: $($summary.FilesChanged)"
-Write-Host "HTML comments stripped: $($summary.CommentsStripped)"
-Write-Host "'<'/'>' characters escaped: $($summary.AnglesEscaped)"
-Write-Host "'{'/'}' characters escaped: $($summary.BracesEscaped)"
-Write-Host "Heading anchors converted to {#id}: $($summary.AnchorsConverted)"
+# Everything below only runs when this file is executed directly (pwsh fix-generated-mdx-escaping.ps1
+# ...), not when it's dot-sourced (. $scriptPath) to load the functions above for testing - see
+# fix-generated-mdx-escaping.Tests.ps1, which relies on dot-sourcing not touching real files or
+# requiring -Files/known-broken-files.txt.
+if ($MyInvocation.InvocationName -ne '.') {
+    $DocsRoot = Resolve-Path (Join-Path (Split-Path -Parent $PSScriptRoot) "..")
+
+    if (-not $Files) {
+        $listPath = Join-Path $PSScriptRoot "known-broken-files.txt"
+        if (-not (Test-Path $listPath)) {
+            throw "No -Files given and $listPath does not exist."
+        }
+        $Files = Get-Content -LiteralPath $listPath | Where-Object { $_.Trim() -and -not $_.Trim().StartsWith('#') }
+    }
+
+    $summary = [ordered]@{
+        FilesScanned      = 0
+        FilesChanged      = 0
+        FilesMissing      = 0
+        CommentsStripped  = 0
+        AnglesEscaped     = 0
+        BracesEscaped     = 0
+        AnchorsConverted  = 0
+    }
+
+    foreach ($relPath in $Files) {
+        $file = Join-Path $DocsRoot $relPath
+        if (-not (Test-Path -LiteralPath $file)) {
+            Write-Warning "Not found, skipping: $relPath"
+            $summary.FilesMissing++
+            continue
+        }
+        $summary.FilesScanned++
+
+        $original = Get-Content -LiteralPath $file -Raw -Encoding UTF8
+
+        $result = ConvertTo-SanitizedMdx -Content $original
+        $content = $result.Content
+        $summary.AnchorsConverted += $result.Stats.AnchorsConverted
+        $summary.CommentsStripped += $result.Stats.CommentsStripped
+        $summary.AnglesEscaped += $result.Stats.AnglesEscaped
+        $summary.BracesEscaped += $result.Stats.BracesEscaped
+
+        if ($content -ne $original) {
+            $summary.FilesChanged++
+            if (-not $WhatIf) {
+                $utf8NoBom = New-Object System.Text.UTF8Encoding $false
+                [System.IO.File]::WriteAllText($file, $content, $utf8NoBom)
+            }
+            else {
+                Write-Host "Would change: $relPath"
+            }
+        }
+    }
+
+    Write-Host "Files listed: $($Files.Count)"
+    Write-Host "Files scanned: $($summary.FilesScanned)"
+    Write-Host "Files missing: $($summary.FilesMissing)"
+    Write-Host "Files changed: $($summary.FilesChanged)"
+    Write-Host "HTML comments stripped: $($summary.CommentsStripped)"
+    Write-Host "'<'/'>' characters escaped: $($summary.AnglesEscaped)"
+    Write-Host "'{'/'}' characters escaped: $($summary.BracesEscaped)"
+    Write-Host "Heading anchors converted to {#id}: $($summary.AnchorsConverted)"
+}

@@ -18,3 +18,7 @@ tools/benchmarks/node_modules/
 tools/benchmarks/.lighthouseci/
 tools/benchmarks/*.log
 .scratch/
+
+# Pester's default NUnit-XML report (`Invoke-Pester -CI` writes this to the cwd) - a local test
+# run artifact, not something to commit.
+testResults.xml
