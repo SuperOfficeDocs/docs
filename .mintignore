@@ -19,6 +19,7 @@ blueprint-templates/
 # Exclude specific files
 private-notes.md
 en/mobile/includes/icon-reference.md
+README.md
 
 # Exclude selected content folders as a workaround for mint dev's EMFILE error at scale
 ### Do not commit changes to this section without approval ###
