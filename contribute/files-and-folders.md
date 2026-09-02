@@ -71,7 +71,7 @@ Media files aren't split per-folder. They live in one centralized location at th
 
 ## Downloads folder
 
-`/downloads/` holds standalone files a page links to for direct download (templates, compatibility reports, and similar). **Never commit an `.xlsx`, `.docx`, or `.pptx` file here.** Mintlify does not serve those three extensions at any plan tier - confirmed live (a 404 on every such file, while `.pdf`/`.zip` in the same folder return 200) and against Mintlify's own supported-file-types documentation, not just a bug that might get fixed (see [Automated tests][6] for the full finding). Zip the file first, preserving its original filename inside the archive, and link to the `.zip` instead. A CI check fails the build if a new file with one of these three extensions is added under `downloads/`, so this can't slip through unnoticed - see #386.
+`/downloads/` holds standalone files a page links to for direct download. **Never commit an `.xlsx`, `.docx`, or `.pptx` file here** - Mintlify doesn't serve those extensions at any plan tier (see [Automated tests][6]). Zip the file first, preserving its original filename inside the archive, and link to the `.zip` instead. A CI check fails the build if this happens anyway - see #386.
 
 ## Snippets subfolder
 
