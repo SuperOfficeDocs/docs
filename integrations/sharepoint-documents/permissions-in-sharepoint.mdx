@@ -46,6 +46,67 @@ In SharePoint, you can give permission on **site level** or on **document librar
 * Document libraries automatically inherits the permission from the site level.
 * Document within the library will inherit the permission from the library itself.
 
+## SharePoint sharing settings required for Visible for {#sharing-settings-for-visible-for}
+
+<Warning>
+If you use **Visible for** to restrict access to confidential documents, the SharePoint site must allow users to share files and folders.
+
+Do not select **Only site owners can share files, folders, and the site**. With this setting enabled, SuperOffice cannot apply the document restrictions defined through *Visible for*.
+
+Documents are created successfully and appear in SharePoint, but the intended *Visible for* restriction is not applied. This can create the false impression that access has been restricted when it has not.
+
+As a result, documents can become available to a broader audience than intended, including users outside the selected *Visible for* groups.
+
+Before enabling *Visible for*, verify the SharePoint sharing settings are configured as described below.
+</Warning>
+
+### Why is this required?
+
+*Visible for* restricts access to SharePoint documents based on the SuperOffice user groups selected on an activity.
+
+To apply these restrictions, SuperOffice updates document permissions in SharePoint on behalf of the signed-in user. If the site only allows site owners to share files and folders, SharePoint rejects that permission change and SuperOffice cannot apply the selected restriction.
+
+Microsoft documents that site members and users with Edit permissions can grant access to files and folders unless sharing is restricted to site owners ([Limit accidental sharing to specific security groups][2]).
+
+### Required configuration
+
+Configure the SharePoint site so that members, or users with Edit permissions, can share files and folders.
+
+* **Recommended:** Site owners and members, and people with Edit permissions can share files and folders, but only site owners can share the site.
+* **Also works:** Site owners and members can share files, folders, and the site. People with Edit permissions can share files and folders.
+* **Not compatible with Visible for:** Only site owners can share files, folders, and the site. This configuration prevents SuperOffice from applying *Visible for* restrictions.
+
+<Note>
+This requirement is unrelated to external sharing settings. External and anonymous sharing can remain disabled in accordance with your organization's Microsoft 365 and SharePoint security policies.
+</Note>
+
+### Validate the configuration
+
+1. Create a test document.
+2. Select a restricted group in **Visible for**.
+3. Save the document.
+4. Confirm members of the selected group can access the document.
+5. Confirm a user outside the selected group cannot access the document.
+
+Perform this validation before making *Visible for* available to end users.
+
+### Troubleshooting - Visible for restrictions are not applied
+
+**Symptoms**
+
+* Saving a document with *Visible for* selected returns `Request failed with status code 403`.
+* The document is created successfully in SharePoint and appears in the SuperOffice document list.
+* The selected *Visible for* restriction is not applied.
+* The document remains accessible to users outside the intended *Visible for* groups.
+
+**Resolution**
+
+Verify the SharePoint site is not configured with **Only site owners can share files, folders, and the site**.
+
+Instead, configure the site so that members, or users with Edit permissions, can share files and folders.
+
+After updating the setting, create a new test document and confirm that the intended *Visible for* restrictions are applied correctly.
+
 ## SharePoint user groups
 
 In SharePoint you can create and maintain SharePoint user groups, which gives direct access.
@@ -68,4 +129,8 @@ To use a **Microsoft Entra service account** for your SharePoint site for SuperO
 We recommend that you use a "service" account to create sites and libraries in SharePoint to avoid using personal accounts, since these will have unlimited access to all files in the site (Site-owner). If this service account has Global Administrator rights in Microsoft Entra ID, then this can be used to authorize our SuperOffice Document Library App. It will need a license to be able to access SharePoint.
 Global administrator rights can of course be turned off and on for this account as needed.
 
+If you plan to use *Visible for*, also see [SharePoint sharing settings required for Visible for][3].
+
 [1]: https://learn.microsoft.com/en-us/entra/architecture/govern-service-accounts
+[2]: https://learn.microsoft.com/en-us/previous-versions/microsoft-365/solutions/microsoft-365-limit-sharing
+[3]: #sharing-settings-for-visible-for
