@@ -33,6 +33,7 @@ jobs:
           files: |
             en/api/reference/webapi/**/*.md
             en/api/reference/webapi/**/*.mdx
+          separator: "\n"
 
       - name: Set up Python
         if: steps.changed.outputs.any_changed == 'true'
@@ -44,7 +45,13 @@ jobs:
         if: steps.changed.outputs.any_changed == 'true'
         env:
           CHANGED_FILES: ${{ steps.changed.outputs.all_changed_files }}
-        run: python tools/ci/fix-webapi-bare-relative-links.py --apply $CHANGED_FILES
+        run: |
+          # Written to a file rather than passed as argv -- a PR touching
+          # thousands of files at once (as #400's own fix PR did) blows past
+          # the OS argument-list limit ("Argument list too long") if passed
+          # directly on the command line.
+          printf '%s\n' "$CHANGED_FILES" > /tmp/webapi-changed-files.txt
+          python tools/ci/fix-webapi-bare-relative-links.py --apply --files-from /tmp/webapi-changed-files.txt
 
       - name: Commit and push fix, if any
         if: steps.changed.outputs.any_changed == 'true'

@@ -165,11 +165,18 @@ def process_file(rel_path, apply_changes):
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("files", nargs="*", help="Specific files to check (e.g. a PR's changed-files list)")
+    parser.add_argument("--files-from", help="Read the file list from a newline-separated file instead of argv -- avoids the OS argument-list limit when a PR touches thousands of files at once (see #400's own CI failure)")
     parser.add_argument("--path", default=DEFAULT_SCOPE, help=f"Scope to one folder instead of an explicit file list (default: {DEFAULT_SCOPE})")
     parser.add_argument("--apply", action="store_true", help="Rewrite bare-relative links (default: audit only, no writes)")
     args = parser.parse_args()
 
-    candidates = args.files if args.files else list_path_files(args.path)
+    if args.files_from:
+        with open(args.files_from, encoding="utf-8") as f:
+            candidates = [line.strip() for line in f if line.strip()]
+    elif args.files:
+        candidates = args.files
+    else:
+        candidates = list_path_files(args.path)
 
     fixed = []
     all_unexpected = []
