@@ -3,8 +3,8 @@ uid: sharepoint-troubleshooting
 title: Troubleshooting
 description: Troubleshooting SharePoint Documents
 keywords: ['SharePoint', 'document', 'Microsoft Entra', 'ME-ID', 'AAD']
-author: digitaldiina
-date: 01.15.2024
+author: digitaldiina, schildea
+date: 09.03.2026
 content_type: howto
 category: integration
 topic: SharePoint documents
@@ -15,6 +15,12 @@ language: en
 redirect_from: /en/document/cloud/sharepoint-documents/troubleshooting
 userflow_index: true
 ---
+
+## Saving a document with Visible for selected fails, or the restriction is silently not applied
+
+If saving returns `Request failed with status code 403`, or the document is created but remains accessible to users outside the selected *Visible for* group, the SharePoint site is most likely configured with **Only site owners can share files, folders, and the site**. This setting prevents SuperOffice from applying *Visible for* restrictions.
+
+See [SharePoint sharing settings required for Visible for][4] for the required configuration and how to validate it.
 
 ## I get "Sorry, you don't have access" when I try to open a document from CRM
 
@@ -104,3 +110,4 @@ For detailed guidance and references, consult SuperOffice's documentation:
 [1]: https://docs.microsoft.com/en-us/graph/api/overview
 [2]: /en/api/reference/restful/rest/Document/v1DocumentEntity_GetDocumentProperties
 [3]: /en/api/reference/restful/rest/Document/v1DocumentEntity_GetDocumentUrl
+[4]: /integrations/sharepoint-documents/permissions-in-sharepoint#sharing-settings-for-visible-for

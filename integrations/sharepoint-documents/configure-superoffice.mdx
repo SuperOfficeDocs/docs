@@ -3,8 +3,8 @@ uid: configure-superoffice-admin
 title: How to configure settings in SuperOffice Settings and maintenance
 description: How to configure document templates for SharePoint Documents
 keywords: ['SharePoint', 'document', 'template']
-author: Frode Berntsen
-date: 11.02.2023
+author: Frode Berntsen, schildea
+date: 09.03.2026
 content_type: howto
 category: integration
 topic: SharePoint documents
@@ -112,6 +112,12 @@ Group access on SharePoint documents based on *Visible for* settings.
 * If you plan **NOT to use Visible for**, leave this ticked off. Go to the next section.
 * If you plan to **use Visible for** (or already do so), tick this checkbox. Follow the next steps.
 
+<Warning>
+Before ticking this checkbox, verify your SharePoint site allows members, or users with Edit permissions, to share files and folders. If the site is set to **Only site owners can share files, folders, and the site**, SuperOffice cannot apply the *Visible for* restriction, and documents can become available to a broader audience than intended.
+
+See [SharePoint sharing settings required for Visible for][3] for the required configuration.
+</Warning>
+
 To to set permissions on documents in SharePoint, the app needs to have *Read Write* permission to selected site. This is a one-time authorization and will include only the site you have selected for your SuperOffice documents.
 
 ### Apps for SuperOffice (system user) {#apps}
@@ -152,6 +158,7 @@ After you have confirmed, **you will not be able to change the Site in SharePoin
 
 [1]: ./permissions-in-sharepoint
 [2]: ./permissions-app
+[3]: ./permissions-in-sharepoint#sharing-settings-for-visible-for
 
 [img2]: /media/loc/en/integrations/sharepoint-documents/template-location.png
 [img3]: /media/loc/en/integrations/sharepoint-documents/compatibility-check.png
