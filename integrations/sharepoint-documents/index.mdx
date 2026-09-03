@@ -3,8 +3,8 @@ uid: sharepoint-documents
 title: SharePoint documents
 description: SharePoint document integration for SuperOffice
 keywords: ['SharePoint', 'document', 'Microsoft Entra domain', 'ME-ID', 'AAD']
-author: Frode Berntsen
-date: 01.15.2024
+author: Frode Berntsen, schildea
+date: 09.03.2026
 so_version:
 content_type: concept
 category: integration
@@ -64,9 +64,21 @@ With SharePoint as your document library, all SuperOffice users MUST log in with
 SuperOffice users in this tenant cannot authenticate any longer with password, as they will be redirected to Microsoft to authenticate.
 </Danger>
 
+<Warning>
+If you use **Visible for** to restrict access to confidential documents, the SharePoint site must allow members, or users with Edit permissions, to share files and folders. If **Only site owners can share files, folders, and the site** is selected, SuperOffice cannot apply the *Visible for* restriction, and documents can become available to a broader audience than intended.
+
+See [SharePoint sharing settings required for Visible for][21] for the required configuration.
+</Warning>
+
 ### Data rights for a role
 
 <ReqDataRights />
+
+<Warning>
+If you use **Visible for** to restrict access to confidential documents, the SharePoint site must allow members, or users with Edit permissions, to share files and folders. If **Only site owners can share files, folders, and the site** is selected, SuperOffice cannot apply the *Visible for* restriction, and documents can become available to a broader audience than intended.
+
+See [SharePoint sharing settings required for Visible for][21] for the required configuration.
+</Warning>
 
 ### Backup
 
@@ -177,3 +189,4 @@ You can also check out our [webinar about the SharePoint integration][1].
 [14]: /integrations/sharepoint-documents/configure-permissions-templates#step-4
 
 [20]: https://social.technet.microsoft.com/Forums/en-US/1906d6db-94ea-42dd-9d4d-9c50205bdeac/do-we-have-to-backup-our-sharepoint-online-sites-or-this-is-been-managed-for-us?forum=onlineservicessharepoint
+[21]: /integrations/sharepoint-documents/permissions-in-sharepoint#sharing-settings-for-visible-for
