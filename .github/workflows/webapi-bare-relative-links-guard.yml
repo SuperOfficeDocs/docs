@@ -3,6 +3,9 @@ name: WebAPI bare-relative links auto-fix
 on:
   pull_request:
     branches: [main]
+    paths:
+      - "en/api/reference/webapi/**/*.md"
+      - "en/api/reference/webapi/**/*.mdx"
 
 # Automatically cancel in-progress runs on the same branch
 concurrency:
@@ -14,7 +17,7 @@ permissions:
 
 jobs:
   fix-webapi-bare-relative-links:
-    name: "Rewrite bare-relative links in en/api/reference/webapi/ on changed files"
+    name: "Rewrite bare-relative links in en/api/reference/webapi/"
     runs-on: ubuntu-latest
     # A fork PR's default token can't push back to the fork - skip cleanly
     # rather than fail loudly. Same-repo branches proceed as usual.
@@ -26,35 +29,22 @@ jobs:
           ref: ${{ github.event.pull_request.head.ref }}
           fetch-depth: 0
 
-      - name: Get changed files
-        id: changed
-        uses: tj-actions/changed-files@v45
-        with:
-          files: |
-            en/api/reference/webapi/**/*.md
-            en/api/reference/webapi/**/*.mdx
-          separator: "\n"
-
       - name: Set up Python
-        if: steps.changed.outputs.any_changed == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      - name: "Rewrite bare-relative links on changed files"
-        if: steps.changed.outputs.any_changed == 'true'
-        env:
-          CHANGED_FILES: ${{ steps.changed.outputs.all_changed_files }}
-        run: |
-          # Written to a file rather than passed as argv -- a PR touching
-          # thousands of files at once (as #400's own fix PR did) blows past
-          # the OS argument-list limit ("Argument list too long") if passed
-          # directly on the command line.
-          printf '%s\n' "$CHANGED_FILES" > /tmp/webapi-changed-files.txt
-          python tools/ci/fix-webapi-bare-relative-links.py --apply --files-from /tmp/webapi-changed-files.txt
+      - name: "Rewrite bare-relative links in en/api/reference/webapi/"
+        # Scans the whole (small, ~2,500-file) tree rather than only this
+        # PR's changed files: a giant regenerated-content drop can touch
+        # every file in the tree at once (this repo's own fix PR did, and
+        # promptly broke this exact step trying to pass that file list
+        # through a workflow env var -- "Argument list too long"), and the
+        # script is idempotent, so a full scan costs a few seconds and
+        # avoids depending on a changed-files list at any size.
+        run: python tools/ci/fix-webapi-bare-relative-links.py --apply
 
       - name: Commit and push fix, if any
-        if: steps.changed.outputs.any_changed == 'true'
         env:
           HEAD_REF: ${{ github.event.pull_request.head.ref }}
         run: |
