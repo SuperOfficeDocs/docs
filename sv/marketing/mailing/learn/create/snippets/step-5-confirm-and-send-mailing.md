@@ -30,6 +30,6 @@ Du kan klicka på utskicket i listan om du vill [visa sändningsstatus och stati
 
 Om du vill stoppa utskicket eller starta ett schemalagt utskick före den planerade tidpunkten kan du klicka på knappen **Stopp** respektive **Start**.
 
-[1]: ../../view-statistics
+[1]: /sv/marketing/mailing/learn/view-statistics
 
-[img4]: ../../../../../../media/loc/en/marketing/send-or-schedule.png
+[img4]: /media/loc/en/marketing/send-or-schedule.png
