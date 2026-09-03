@@ -81,8 +81,8 @@ Read more about SuperOffice [product names and feature sets][1].
 [1]: https://community.superoffice.com/en/customer/news/product/new-product-names-explained/
 [2]: /en/automation/webhook/dev/index
 [3]: /en/api/web-services/endpoints/agents-webapi/index
-[4]: /en/api/reference/restful/rest/TicketMessage/index
-[5]: /en/api/reference/restful/rest/Ticket/index
+[4]: /en/api/reference/restful/rest/ticketmessage/get-all
+[5]: /en/api/reference/restful/rest/ticket/get-all
 [6]: /release-notes/10.0/admin/10.0.6-update
 [7]: /en/automation/trigger/reference/CRMScript.Event.Trigger#salesaftersaveacceptquote
 [8]: /en/automation/trigger/reference/CRMScript.Event.Trigger#salesaftersaverejectquote
