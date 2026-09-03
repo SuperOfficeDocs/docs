@@ -13,11 +13,11 @@ You can create and save content blocks that all your users can pick and choose f
 * [Add images to the message][2]
 * [Test the mailing][7]
 
-[1]: ../../../../editor/learn/index
-[2]: ../../../../editor/learn/insert-images-in-message
-[3]: ../../../../editor/learn/add-content
-[4]: ../../../../editor/learn/edit-paragraph
-[5]: ../../../../editor/learn/add-merge-tag
-[11]: ../../../../editor/learn/add-tracked-link-to-msg
-[8]: ../../../../editor/learn/add-unsubscribe-link
-[7]: ../send-test-email
+[1]: /en/marketing/editor/learn/index
+[2]: /en/marketing/editor/learn/insert-images-in-message
+[3]: /en/marketing/editor/learn/add-content
+[4]: /en/marketing/editor/learn/edit-paragraph
+[5]: /en/marketing/editor/learn/add-merge-tag
+[11]: /en/marketing/editor/learn/add-tracked-link-to-msg
+[8]: /en/marketing/editor/learn/add-unsubscribe-link
+[7]: /en/marketing/mailing/learn/create/send-test-email

@@ -2,7 +2,7 @@ As long as the user has been assigned travel rights in SuperOffice Admin and an 
 
 As long as you are logging in to the local database on Travel, the icon will look like this: ![travel open -screenshot][img2]
 
-[1]: ../update-prototype
+[1]: /en/onsite/travel/update-prototype
 
 [img1]: /media/loc/en/onsite/travelicon.jpg
 [img2]: /media/loc/en/onsite/travelopen.jpg
