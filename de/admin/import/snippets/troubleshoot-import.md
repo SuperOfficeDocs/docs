@@ -12,4 +12,4 @@ Zeilen ohne Symbole werden nicht importiert. Wenn Sie feststellen, dass viele Pe
     4. Klicken Sie auf **Speichern**.
     5. Klicken Sie auf **Weiter** und prüfen Sie, dass das Symbol [Neue Firma][img1] neben der Person angezeigt wird. Die Person wird in SuperOffice CRM als Firma mit ihr selbst als einzige Person erfasst.
 
-[img1]: ../../../../media/icons/admin/import-preview-icon-company-new.png
+[img1]: /media/icons/admin/import-preview-icon-company-new.png

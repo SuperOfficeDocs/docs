@@ -30,6 +30,6 @@ Durch einen Klick auf die Kampagne in der Liste können sich den [Sendestatus un
 
 Klicken Sie auf **Stopp** oder **Start**, um die geplante Kampagne anzuhalten oder vorzeitig zu starten.
 
-[1]: ../../view-statistics
+[1]: /de/marketing/mailing/learn/view-statistics
 
-[img4]: ../../../../../../media/loc/en/marketing/send-or-schedule.png
+[img4]: /media/loc/en/marketing/send-or-schedule.png
