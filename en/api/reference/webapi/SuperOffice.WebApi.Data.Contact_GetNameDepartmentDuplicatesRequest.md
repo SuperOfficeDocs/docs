@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Contact_GetNameDepartmentDuplicatesRequest"></a> Class Contact\_GetNameDepartmentDuplicatesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Contact_GetNameDepartmentDuplicatesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Contact\_GetNameDepartmentDuplicatesRequest](SuperOffice.WebApi.Data.Contact\_GetNameDepartmentDuplicatesRequest.md)
+[Contact\_GetNameDepartmentDuplicatesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact_GetNameDepartmentDuplicatesRequest)
 
 #### Inherited Members
 

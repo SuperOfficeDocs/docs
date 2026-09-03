@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_MDO_GetListIdByListNameRequest"></a> Class MDO\_GetListIdByListNameRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class MDO_GetListIdByListNameRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[MDO\_GetListIdByListNameRequest](SuperOffice.WebApi.Data.MDO\_GetListIdByListNameRequest.md)
+[MDO\_GetListIdByListNameRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.MDO_GetListIdByListNameRequest)
 
 #### Inherited Members
 

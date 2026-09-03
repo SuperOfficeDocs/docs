@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_NotificationEvent"></a> Class NotificationEvent
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for NotificationEvent.
@@ -13,7 +13,7 @@ public class NotificationEvent
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[NotificationEvent](SuperOffice.WebApi.Data.NotificationEvent.md)
+[NotificationEvent](/en/api/reference/webapi/SuperOffice.WebApi.Data.NotificationEvent)
 
 #### Inherited Members
 
@@ -61,11 +61,11 @@ public NotificationEventType? Type { get; set; }
 
 #### Property Value
 
- [NotificationEventType](SuperOffice.WebApi.Data.NotificationEventType.md)?
+ [NotificationEventType](/en/api/reference/webapi/SuperOffice.WebApi.Data.NotificationEventType)?
 
 #### See Also
 
-[NotificationEvent](SuperOffice.WebApi.Data.NotificationEvent.md).[Type\_String](SuperOffice.WebApi.Data.NotificationEvent.md\#SuperOffice\_WebApi\_Data\_NotificationEvent\_Type\_String)
+[NotificationEvent](/en/api/reference/webapi/SuperOffice.WebApi.Data.NotificationEvent).[Type\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.NotificationEvent#SuperOffice_WebApi_Data_NotificationEvent_Type_String)
 
 ### <a id="SuperOffice_WebApi_Data_NotificationEvent_Type_String"></a> Type\_String
 
@@ -83,9 +83,9 @@ public string Type_String { get; set; }
 
 #### See Also
 
-[NotificationEvent](SuperOffice.WebApi.Data.NotificationEvent.md).[Type](SuperOffice.WebApi.Data.NotificationEvent.md\#SuperOffice\_WebApi\_Data\_NotificationEvent\_Type)
+[NotificationEvent](/en/api/reference/webapi/SuperOffice.WebApi.Data.NotificationEvent).[Type](/en/api/reference/webapi/SuperOffice.WebApi.Data.NotificationEvent#SuperOffice_WebApi_Data_NotificationEvent_Type)
 
 ## See Also
 
-[PocketAgent](SuperOffice.WebApi.Agents.PocketAgent.md)
+[PocketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PocketAgent)
 

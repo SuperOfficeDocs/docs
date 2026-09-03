@@ -1,6 +1,6 @@
 # Class AuthorizationUserToken {#SuperOffice_WebApi_AuthorizationUserToken}
 
-Namespace: [SuperOffice.WebApi](SuperOffice.WebApi.md)  
+Namespace: [SuperOffice.WebApi](/en/api/reference/webapi/SuperOffice.WebApi)  
 Assembly: SuperOffice.WebApi.dll  
 
 Username and password are used to get an access token from given username and password
@@ -14,7 +14,7 @@ public class AuthorizationUserToken : IAuthorization
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AuthorizationUserToken](SuperOffice.WebApi.AuthorizationUserToken.md)
+[AuthorizationUserToken](/en/api/reference/webapi/SuperOffice.WebApi.AuthorizationUserToken)
 
 #### Implements
 

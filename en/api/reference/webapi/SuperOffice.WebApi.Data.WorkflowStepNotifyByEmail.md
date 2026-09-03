@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_WorkflowStepNotifyByEmail"></a> Class WorkflowStepNotifyByEmail
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for WorkflowStepNotifyByEmail.
@@ -13,16 +13,16 @@ public class WorkflowStepNotifyByEmail : WorkflowStepBase
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[WorkflowStepBase](SuperOffice.WebApi.Data.WorkflowStepBase.md) ← 
-[WorkflowStepNotifyByEmail](SuperOffice.WebApi.Data.WorkflowStepNotifyByEmail.md)
+[WorkflowStepBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase) ← 
+[WorkflowStepNotifyByEmail](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepNotifyByEmail)
 
 #### Inherited Members
 
-[WorkflowStepBase.WorkflowStepId](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_WorkflowStepId), 
-[WorkflowStepBase.WorkflowId](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_WorkflowId), 
-[WorkflowStepBase.StepType\_String](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_StepType\_String), 
-[WorkflowStepBase.StepType](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_StepType), 
-[WorkflowStepBase.Rank](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_Rank), 
+[WorkflowStepBase.WorkflowStepId](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_WorkflowStepId), 
+[WorkflowStepBase.WorkflowId](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_WorkflowId), 
+[WorkflowStepBase.StepType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_StepType_String), 
+[WorkflowStepBase.StepType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_StepType), 
+[WorkflowStepBase.Rank](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_Rank), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -91,11 +91,11 @@ public WorkflowNotifyEmailType? To { get; set; }
 
 #### Property Value
 
- [WorkflowNotifyEmailType](SuperOffice.WebApi.Data.WorkflowNotifyEmailType.md)?
+ [WorkflowNotifyEmailType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowNotifyEmailType)?
 
 #### See Also
 
-[WorkflowStepNotifyByEmail](SuperOffice.WebApi.Data.WorkflowStepNotifyByEmail.md).[To\_String](SuperOffice.WebApi.Data.WorkflowStepNotifyByEmail.md\#SuperOffice\_WebApi\_Data\_WorkflowStepNotifyByEmail\_To\_String)
+[WorkflowStepNotifyByEmail](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepNotifyByEmail).[To\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepNotifyByEmail#SuperOffice_WebApi_Data_WorkflowStepNotifyByEmail_To_String)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowStepNotifyByEmail_To_String"></a> To\_String
 
@@ -113,9 +113,9 @@ public string To_String { get; set; }
 
 #### See Also
 
-[WorkflowStepNotifyByEmail](SuperOffice.WebApi.Data.WorkflowStepNotifyByEmail.md).[To](SuperOffice.WebApi.Data.WorkflowStepNotifyByEmail.md\#SuperOffice\_WebApi\_Data\_WorkflowStepNotifyByEmail\_To)
+[WorkflowStepNotifyByEmail](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepNotifyByEmail).[To](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepNotifyByEmail#SuperOffice_WebApi_Data_WorkflowStepNotifyByEmail_To)
 
 ## See Also
 
-[WorkflowAgent](SuperOffice.WebApi.Agents.WorkflowAgent.md)
+[WorkflowAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.WorkflowAgent)
 

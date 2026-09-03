@@ -1,6 +1,6 @@
 # Class TicketEntity {#SuperOffice_WebApi_Data_TicketEntity}
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TicketEntity.
@@ -13,13 +13,13 @@ public class TicketEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -125,11 +125,11 @@ public TicketBaseStatus? BaseStatus { get; set; }
 
 #### Property Value
 
- [TicketBaseStatus](SuperOffice.WebApi.Data.TicketBaseStatus.md)?
+ [TicketBaseStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketBaseStatus)?
 
 #### See Also
 
-[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md).[BaseStatus\_String](SuperOffice.WebApi.Data.TicketEntity.md\#SuperOffice\_WebApi\_Data\_TicketEntity\_BaseStatus\_String)
+[TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity).[BaseStatus\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity#SuperOffice_WebApi_Data_TicketEntity_BaseStatus_String)
 
 ### BaseStatus\_String {#SuperOffice_WebApi_Data_TicketEntity_BaseStatus_String}
 
@@ -147,7 +147,7 @@ public string BaseStatus_String { get; set; }
 
 #### See Also
 
-[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md).[BaseStatus](SuperOffice.WebApi.Data.TicketEntity.md\#SuperOffice\_WebApi\_Data\_TicketEntity\_BaseStatus)
+[TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity).[BaseStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity#SuperOffice_WebApi_Data_TicketEntity_BaseStatus)
 
 ### Category {#SuperOffice_WebApi_Data_TicketEntity_Category}
 
@@ -160,7 +160,7 @@ public virtual TicketCategoryEntity Category { get; set; }
 
 #### Property Value
 
- [TicketCategoryEntity](SuperOffice.WebApi.Data.TicketCategoryEntity.md)
+ [TicketCategoryEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity)
 
 ### ClosedAt {#SuperOffice_WebApi_Data_TicketEntity_ClosedAt}
 
@@ -208,7 +208,7 @@ public virtual Associate CreatedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### CustomFields {#SuperOffice_WebApi_Data_TicketEntity_CustomFields}
 
@@ -224,7 +224,7 @@ public virtual StringDictionary CustomFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 #### Remarks
 
@@ -261,7 +261,7 @@ public virtual StringDictionary ExtraFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 #### Remarks
 
@@ -316,7 +316,7 @@ public virtual TicketFormSubmission FormSubmission { get; set; }
 
 #### Property Value
 
- [TicketFormSubmission](SuperOffice.WebApi.Data.TicketFormSubmission.md)
+ [TicketFormSubmission](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketFormSubmission)
 
 ### FromAddress {#SuperOffice_WebApi_Data_TicketEntity_FromAddress}
 
@@ -388,7 +388,7 @@ public virtual TicketMessage[] Messages { get; set; }
 
 #### Property Value
 
- [TicketMessage](SuperOffice.WebApi.Data.TicketMessage.md)\[\]
+ [TicketMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessage)\[\]
 
 ### NumMessages {#SuperOffice_WebApi_Data_TicketEntity_NumMessages}
 
@@ -438,11 +438,11 @@ public TicketOrigin? Origin { get; set; }
 
 #### Property Value
 
- [TicketOrigin](SuperOffice.WebApi.Data.TicketOrigin.md)?
+ [TicketOrigin](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketOrigin)?
 
 #### See Also
 
-[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md).[Origin\_String](SuperOffice.WebApi.Data.TicketEntity.md\#SuperOffice\_WebApi\_Data\_TicketEntity\_Origin\_String)
+[TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity).[Origin\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity#SuperOffice_WebApi_Data_TicketEntity_Origin_String)
 
 ### Origin\_String {#SuperOffice_WebApi_Data_TicketEntity_Origin_String}
 
@@ -460,7 +460,7 @@ public string Origin_String { get; set; }
 
 #### See Also
 
-[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md).[Origin](SuperOffice.WebApi.Data.TicketEntity.md\#SuperOffice\_WebApi\_Data\_TicketEntity\_Origin)
+[TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity).[Origin](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity#SuperOffice_WebApi_Data_TicketEntity_Origin)
 
 ### OwnedBy {#SuperOffice_WebApi_Data_TicketEntity_OwnedBy}
 
@@ -473,7 +473,7 @@ public virtual Associate OwnedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### Person {#SuperOffice_WebApi_Data_TicketEntity_Person}
 
@@ -486,7 +486,7 @@ public virtual Person Person { get; set; }
 
 #### Property Value
 
- [Person](SuperOffice.WebApi.Data.Person.md)
+ [Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person)
 
 ### Priority {#SuperOffice_WebApi_Data_TicketEntity_Priority}
 
@@ -499,7 +499,7 @@ public virtual TicketPriorityEntity Priority { get; set; }
 
 #### Property Value
 
- [TicketPriorityEntity](SuperOffice.WebApi.Data.TicketPriorityEntity.md)
+ [TicketPriorityEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity)
 
 ### Project {#SuperOffice_WebApi_Data_TicketEntity_Project}
 
@@ -512,7 +512,7 @@ public virtual Project Project { get; set; }
 
 #### Property Value
 
- [Project](SuperOffice.WebApi.Data.Project.md)
+ [Project](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project)
 
 ### ReadByCustomer {#SuperOffice_WebApi_Data_TicketEntity_ReadByCustomer}
 
@@ -550,11 +550,11 @@ public TicketReadStatus? ReadStatus { get; set; }
 
 #### Property Value
 
- [TicketReadStatus](SuperOffice.WebApi.Data.TicketReadStatus.md)?
+ [TicketReadStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketReadStatus)?
 
 #### See Also
 
-[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md).[ReadStatus\_String](SuperOffice.WebApi.Data.TicketEntity.md\#SuperOffice\_WebApi\_Data\_TicketEntity\_ReadStatus\_String)
+[TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity).[ReadStatus\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity#SuperOffice_WebApi_Data_TicketEntity_ReadStatus_String)
 
 ### ReadStatus\_String {#SuperOffice_WebApi_Data_TicketEntity_ReadStatus_String}
 
@@ -572,7 +572,7 @@ public string ReadStatus_String { get; set; }
 
 #### See Also
 
-[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md).[ReadStatus](SuperOffice.WebApi.Data.TicketEntity.md\#SuperOffice\_WebApi\_Data\_TicketEntity\_ReadStatus)
+[TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity).[ReadStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity#SuperOffice_WebApi_Data_TicketEntity_ReadStatus)
 
 ### RealTimeSpentExternally {#SuperOffice_WebApi_Data_TicketEntity_RealTimeSpentExternally}
 
@@ -657,7 +657,7 @@ public virtual Sale Sale { get; set; }
 
 #### Property Value
 
- [Sale](SuperOffice.WebApi.Data.Sale.md)
+ [Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale)
 
 ### SecondaryPersons {#SuperOffice_WebApi_Data_TicketEntity_SecondaryPersons}
 
@@ -670,7 +670,7 @@ public virtual Person[] SecondaryPersons { get; set; }
 
 #### Property Value
 
- [Person](SuperOffice.WebApi.Data.Person.md)\[\]
+ [Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person)\[\]
 
 ### Sentiment {#SuperOffice_WebApi_Data_TicketEntity_Sentiment}
 
@@ -708,11 +708,11 @@ public TicketSecurityLevel? Slevel { get; set; }
 
 #### Property Value
 
- [TicketSecurityLevel](SuperOffice.WebApi.Data.TicketSecurityLevel.md)?
+ [TicketSecurityLevel](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketSecurityLevel)?
 
 #### See Also
 
-[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md).[Slevel\_String](SuperOffice.WebApi.Data.TicketEntity.md\#SuperOffice\_WebApi\_Data\_TicketEntity\_Slevel\_String)
+[TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity).[Slevel\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity#SuperOffice_WebApi_Data_TicketEntity_Slevel_String)
 
 ### Slevel\_String {#SuperOffice_WebApi_Data_TicketEntity_Slevel_String}
 
@@ -730,7 +730,7 @@ public string Slevel_String { get; set; }
 
 #### See Also
 
-[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md).[Slevel](SuperOffice.WebApi.Data.TicketEntity.md\#SuperOffice\_WebApi\_Data\_TicketEntity\_Slevel)
+[TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity).[Slevel](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity#SuperOffice_WebApi_Data_TicketEntity_Slevel)
 
 ### Status {#SuperOffice_WebApi_Data_TicketEntity_Status}
 
@@ -743,7 +743,7 @@ public virtual TicketStatusEntity Status { get; set; }
 
 #### Property Value
 
- [TicketStatusEntity](SuperOffice.WebApi.Data.TicketStatusEntity.md)
+ [TicketStatusEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStatusEntity)
 
 ### SuggestedCategoryId {#SuperOffice_WebApi_Data_TicketEntity_SuggestedCategoryId}
 
@@ -779,7 +779,7 @@ public virtual Tag[] Tags { get; set; }
 
 #### Property Value
 
- [Tag](SuperOffice.WebApi.Data.Tag.md)\[\]
+ [Tag](/en/api/reference/webapi/SuperOffice.WebApi.Data.Tag)\[\]
 
 ### TicketId {#SuperOffice_WebApi_Data_TicketEntity_TicketId}
 
@@ -804,7 +804,7 @@ public virtual TicketType TicketType { get; set; }
 
 #### Property Value
 
- [TicketType](SuperOffice.WebApi.Data.TicketType.md)
+ [TicketType](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketType)
 
 ### TimeSpent {#SuperOffice_WebApi_Data_TicketEntity_TimeSpent}
 
@@ -892,7 +892,7 @@ public virtual string Title { get; set; }
 
 ## See Also
 
-[TicketAgent](SuperOffice.WebApi.Agents.TicketAgent.md), 
-[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md), 
+[TicketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TicketAgent), 
+[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent), 
 
 

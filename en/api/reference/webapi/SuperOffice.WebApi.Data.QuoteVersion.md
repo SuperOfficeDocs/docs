@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_QuoteVersion"></a> Class QuoteVersion
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for QuoteVersion.
@@ -13,13 +13,13 @@ public class QuoteVersion : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[QuoteVersion](SuperOffice.WebApi.Data.QuoteVersion.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[QuoteVersion](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersion)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -100,11 +100,11 @@ public QuoteVersionState? ArchivedState { get; set; }
 
 #### Property Value
 
- [QuoteVersionState](SuperOffice.WebApi.Data.QuoteVersionState.md)?
+ [QuoteVersionState](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersionState)?
 
 #### See Also
 
-[QuoteVersion](SuperOffice.WebApi.Data.QuoteVersion.md).[ArchivedState\_String](SuperOffice.WebApi.Data.QuoteVersion.md\#SuperOffice\_WebApi\_Data\_QuoteVersion\_ArchivedState\_String)
+[QuoteVersion](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersion).[ArchivedState\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersion#SuperOffice_WebApi_Data_QuoteVersion_ArchivedState_String)
 
 ### <a id="SuperOffice_WebApi_Data_QuoteVersion_ArchivedState_String"></a> ArchivedState\_String
 
@@ -122,7 +122,7 @@ public string ArchivedState_String { get; set; }
 
 #### See Also
 
-[QuoteVersion](SuperOffice.WebApi.Data.QuoteVersion.md).[ArchivedState](SuperOffice.WebApi.Data.QuoteVersion.md\#SuperOffice\_WebApi\_Data\_QuoteVersion\_ArchivedState)
+[QuoteVersion](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersion).[ArchivedState](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersion#SuperOffice_WebApi_Data_QuoteVersion_ArchivedState)
 
 ### <a id="SuperOffice_WebApi_Data_QuoteVersion_DeliveryCountryId"></a> DeliveryCountryId
 
@@ -374,7 +374,7 @@ public virtual QuoteAlternative[] QuoteAlternatives { get; set; }
 
 #### Property Value
 
- [QuoteAlternative](SuperOffice.WebApi.Data.QuoteAlternative.md)\[\]
+ [QuoteAlternative](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteAlternative)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_QuoteVersion_QuoteId"></a> QuoteId
 
@@ -496,11 +496,11 @@ public QuoteVersionState? State { get; set; }
 
 #### Property Value
 
- [QuoteVersionState](SuperOffice.WebApi.Data.QuoteVersionState.md)?
+ [QuoteVersionState](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersionState)?
 
 #### See Also
 
-[QuoteVersion](SuperOffice.WebApi.Data.QuoteVersion.md).[State\_String](SuperOffice.WebApi.Data.QuoteVersion.md\#SuperOffice\_WebApi\_Data\_QuoteVersion\_State\_String)
+[QuoteVersion](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersion).[State\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersion#SuperOffice_WebApi_Data_QuoteVersion_State_String)
 
 ### <a id="SuperOffice_WebApi_Data_QuoteVersion_State_String"></a> State\_String
 
@@ -518,7 +518,7 @@ public string State_String { get; set; }
 
 #### See Also
 
-[QuoteVersion](SuperOffice.WebApi.Data.QuoteVersion.md).[State](SuperOffice.WebApi.Data.QuoteVersion.md\#SuperOffice\_WebApi\_Data\_QuoteVersion\_State)
+[QuoteVersion](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersion).[State](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersion#SuperOffice_WebApi_Data_QuoteVersion_State)
 
 ### <a id="SuperOffice_WebApi_Data_QuoteVersion_Status"></a> Status
 
@@ -532,11 +532,11 @@ public QuoteStatus? Status { get; set; }
 
 #### Property Value
 
- [QuoteStatus](SuperOffice.WebApi.Data.QuoteStatus.md)?
+ [QuoteStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteStatus)?
 
 #### See Also
 
-[QuoteVersion](SuperOffice.WebApi.Data.QuoteVersion.md).[Status\_String](SuperOffice.WebApi.Data.QuoteVersion.md\#SuperOffice\_WebApi\_Data\_QuoteVersion\_Status\_String)
+[QuoteVersion](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersion).[Status\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersion#SuperOffice_WebApi_Data_QuoteVersion_Status_String)
 
 ### <a id="SuperOffice_WebApi_Data_QuoteVersion_Status_String"></a> Status\_String
 
@@ -554,7 +554,7 @@ public string Status_String { get; set; }
 
 #### See Also
 
-[QuoteVersion](SuperOffice.WebApi.Data.QuoteVersion.md).[Status](SuperOffice.WebApi.Data.QuoteVersion.md\#SuperOffice\_WebApi\_Data\_QuoteVersion\_Status)
+[QuoteVersion](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersion).[Status](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersion#SuperOffice_WebApi_Data_QuoteVersion_Status)
 
 ### <a id="SuperOffice_WebApi_Data_QuoteVersion_Updated"></a> Updated
 
@@ -582,5 +582,5 @@ public virtual int UpdatedAssociateId { get; set; }
 
 ## See Also
 
-[QuoteAgent](SuperOffice.WebApi.Agents.QuoteAgent.md)
+[QuoteAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.QuoteAgent)
 

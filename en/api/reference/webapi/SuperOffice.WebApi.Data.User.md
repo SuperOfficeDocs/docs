@@ -1,6 +1,6 @@
 # Class User {#SuperOffice_WebApi_Data_User}
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for User.
@@ -13,13 +13,13 @@ public class User : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[User](SuperOffice.WebApi.Data.User.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[User](/en/api/reference/webapi/SuperOffice.WebApi.Data.User)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -74,7 +74,7 @@ public virtual Credential[] Credentials { get; set; }
 
 #### Property Value
 
- [Credential](SuperOffice.WebApi.Data.Credential.md)\[\]
+ [Credential](/en/api/reference/webapi/SuperOffice.WebApi.Data.Credential)\[\]
 
 ### CustomFields {#SuperOffice_WebApi_Data_User_CustomFields}
 
@@ -90,7 +90,7 @@ public virtual StringDictionary CustomFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 #### Remarks
 
@@ -139,7 +139,7 @@ public virtual StringDictionary ExtraFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 #### Remarks
 
@@ -218,7 +218,7 @@ public virtual LicenseOwner[] LicenseOwners { get; set; }
 
 #### Property Value
 
- [LicenseOwner](SuperOffice.WebApi.Data.LicenseOwner.md)\[\]
+ [LicenseOwner](/en/api/reference/webapi/SuperOffice.WebApi.Data.LicenseOwner)\[\]
 
 ### Name {#SuperOffice_WebApi_Data_User_Name}
 
@@ -255,7 +255,7 @@ public virtual UserGroup[] OtherGroups { get; set; }
 
 #### Property Value
 
- [UserGroup](SuperOffice.WebApi.Data.UserGroup.md)\[\]
+ [UserGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserGroup)\[\]
 
 ### Person {#SuperOffice_WebApi_Data_User_Person}
 
@@ -268,7 +268,7 @@ public virtual Person Person { get; set; }
 
 #### Property Value
 
- [Person](SuperOffice.WebApi.Data.Person.md)
+ [Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person)
 
 ### PostSaveCommands {#SuperOffice_WebApi_Data_User_PostSaveCommands}
 
@@ -280,7 +280,7 @@ public virtual CustomCommand[] PostSaveCommands { get; set; }
 
 #### Property Value
 
- [CustomCommand](SuperOffice.WebApi.Data.CustomCommand.md)\[\]
+ [CustomCommand](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomCommand)\[\]
 
 ### Rank {#SuperOffice_WebApi_Data_User_Rank}
 
@@ -316,7 +316,7 @@ public virtual Role Role { get; set; }
 
 #### Property Value
 
- [Role](SuperOffice.WebApi.Data.Role.md)
+ [Role](/en/api/reference/webapi/SuperOffice.WebApi.Data.Role)
 
 ### TicketCategories {#SuperOffice_WebApi_Data_User_TicketCategories}
 
@@ -329,7 +329,7 @@ public virtual MDOListItem[] TicketCategories { get; set; }
 
 #### Property Value
 
- [MDOListItem](SuperOffice.WebApi.Data.MDOListItem.md)\[\]
+ [MDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.MDOListItem)\[\]
 
 ### Tooltip {#SuperOffice_WebApi_Data_User_Tooltip}
 
@@ -355,11 +355,11 @@ public UserType? Type { get; set; }
 
 #### Property Value
 
- [UserType](SuperOffice.WebApi.Data.UserType.md)?
+ [UserType](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserType)?
 
 #### See Also
 
-[User](SuperOffice.WebApi.Data.User.md).[Type\_String](SuperOffice.WebApi.Data.User.md\#SuperOffice\_WebApi\_Data\_User\_Type\_String)
+[User](/en/api/reference/webapi/SuperOffice.WebApi.Data.User).[Type\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.User#SuperOffice_WebApi_Data_User_Type_String)
 
 ### Type\_String {#SuperOffice_WebApi_Data_User_Type_String}
 
@@ -377,7 +377,7 @@ public string Type_String { get; set; }
 
 #### See Also
 
-[User](SuperOffice.WebApi.Data.User.md).[Type](SuperOffice.WebApi.Data.User.md\#SuperOffice\_WebApi\_Data\_User\_Type)
+[User](/en/api/reference/webapi/SuperOffice.WebApi.Data.User).[Type](/en/api/reference/webapi/SuperOffice.WebApi.Data.User#SuperOffice_WebApi_Data_User_Type)
 
 ### UserGroup {#SuperOffice_WebApi_Data_User_UserGroup}
 
@@ -390,7 +390,7 @@ public virtual UserGroup UserGroup { get; set; }
 
 #### Property Value
 
- [UserGroup](SuperOffice.WebApi.Data.UserGroup.md)
+ [UserGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserGroup)
 
 ### UserName {#SuperOffice_WebApi_Data_User_UserName}
 
@@ -418,7 +418,7 @@ public virtual bool WaitingForApproval { get; set; }
 
 ## See Also
 
-[UserAgent](SuperOffice.WebApi.Agents.UserAgent.md), 
-[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md), 
+[UserAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.UserAgent), 
+[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent), 
 
 

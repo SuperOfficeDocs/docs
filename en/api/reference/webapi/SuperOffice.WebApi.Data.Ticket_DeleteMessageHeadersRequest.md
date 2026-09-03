@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_DeleteMessageHeadersRequest"></a> Class Ticket\_DeleteMessageHeadersRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_DeleteMessageHeadersRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_DeleteMessageHeadersRequest](SuperOffice.WebApi.Data.Ticket\_DeleteMessageHeadersRequest.md)
+[Ticket\_DeleteMessageHeadersRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_DeleteMessageHeadersRequest)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ResolvedPerson"></a> Class ResolvedPerson
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ResolvedPerson.
@@ -13,13 +13,13 @@ public class ResolvedPerson : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[ResolvedPerson](SuperOffice.WebApi.Data.ResolvedPerson.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[ResolvedPerson](/en/api/reference/webapi/SuperOffice.WebApi.Data.ResolvedPerson)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -50,7 +50,7 @@ public virtual PersonEntity Person { get; set; }
 
 #### Property Value
 
- [PersonEntity](SuperOffice.WebApi.Data.PersonEntity.md)
+ [PersonEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.PersonEntity)
 
 ### <a id="SuperOffice_WebApi_Data_ResolvedPerson_PersonCreated"></a> PersonCreated
 
@@ -66,5 +66,5 @@ public virtual bool PersonCreated { get; set; }
 
 ## See Also
 
-[PersonAgent](SuperOffice.WebApi.Agents.PersonAgent.md)
+[PersonAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PersonAgent)
 

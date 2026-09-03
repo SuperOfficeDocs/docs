@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSync_ForceResyncExternalRequest"></a> Class ErpSync\_ForceResyncExternalRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ErpSync_ForceResyncExternalRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ErpSync\_ForceResyncExternalRequest](SuperOffice.WebApi.Data.ErpSync\_ForceResyncExternalRequest.md)
+[ErpSync\_ForceResyncExternalRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSync_ForceResyncExternalRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public ErpActorType ErpActorType { get; set; }
 
 #### Property Value
 
- [ErpActorType](SuperOffice.WebApi.Data.ErpActorType.md)
+ [ErpActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpActorType)
 
 ### <a id="SuperOffice_WebApi_Data_ErpSync_ForceResyncExternalRequest_ErpConnectionId"></a> ErpConnectionId
 

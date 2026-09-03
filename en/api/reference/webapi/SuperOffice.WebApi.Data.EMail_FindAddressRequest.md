@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_FindAddressRequest"></a> Class EMail\_FindAddressRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_FindAddressRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_FindAddressRequest](SuperOffice.WebApi.Data.EMail\_FindAddressRequest.md)
+[EMail\_FindAddressRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_FindAddressRequest)
 
 #### Inherited Members
 

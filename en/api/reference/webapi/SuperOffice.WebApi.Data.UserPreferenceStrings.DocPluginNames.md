@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_DocPluginNames"></a> Class UserPreferenceStrings.DocPluginNames
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Doc Plugin Addons: [DocPluginNames] plugin-id = prog.id.  The prog.id is requred and
@@ -13,7 +13,7 @@ public static class UserPreferenceStrings.DocPluginNames
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.DocPluginNames](SuperOffice.WebApi.Data.UserPreferenceStrings.DocPluginNames.md)
+[UserPreferenceStrings.DocPluginNames](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.DocPluginNames)
 
 #### Inherited Members
 

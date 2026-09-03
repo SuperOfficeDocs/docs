@@ -1,6 +1,6 @@
 # Interface IFreeTextAgent {#SuperOffice_WebApi_Agents_IFreeTextAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 This agent can be used to manage the free text system
@@ -11,7 +11,7 @@ public interface IFreeTextAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -34,7 +34,7 @@ The name of the table the rows come from; this table should have at least one fr
 
 One or more primary keys, identifying records to be (re)indexed. It doesn't matter if they have been indexed before or not
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -54,13 +54,13 @@ Task<FreeText> GetStatusAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FreeText](SuperOffice.WebApi.Data.FreeText.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FreeText](/en/api/reference/webapi/SuperOffice.WebApi.Data.FreeText)\&gt;
 
 The freetext status
 
@@ -78,13 +78,13 @@ Task<BatchTaskInfo> RegenerateIndexAsync(bool runAsBatch, RequestOptions request
 
 If true, then execute the regeneration as a Batch Task; the service call will return immediately. Otherwise wait until the task completes, may cause a timeout if called as a Web Service
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BatchTaskInfo](SuperOffice.WebApi.Data.BatchTaskInfo.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BatchTaskInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo)\&gt;
 
 Information about the batch task, if batch execution was requested. Otherwise null
 
@@ -102,7 +102,7 @@ Task SetEnabledAsync(bool enabled, RequestOptions requestOptions = null)
 
 If enabled true, else false
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -122,11 +122,11 @@ Task SetMultiWordOperatorAsync(FreeTextOperator freeTextOperator, RequestOptions
 
 #### Parameters
 
-`freeTextOperator` [FreeTextOperator](SuperOffice.WebApi.Data.FreeTextOperator.md)
+`freeTextOperator` [FreeTextOperator](/en/api/reference/webapi/SuperOffice.WebApi.Data.FreeTextOperator)
 
 The operator
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -146,11 +146,11 @@ Task SetSingleWordOperatorAsync(FreeTextOperator freeTextOperator, RequestOption
 
 #### Parameters
 
-`freeTextOperator` [FreeTextOperator](SuperOffice.WebApi.Data.FreeTextOperator.md)
+`freeTextOperator` [FreeTextOperator](/en/api/reference/webapi/SuperOffice.WebApi.Data.FreeTextOperator)
 
 The operator
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 

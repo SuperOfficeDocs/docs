@@ -1,6 +1,6 @@
 # Class AgentBase {#SuperOffice_WebApi_Agents_AgentBase}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Base class for client Agents. Uses a [HttpClient](https://learn.microsoft.com/dotnet/api/system.net.http.httpclient) to call the SuperOffice REST API.
@@ -13,73 +13,73 @@ public class AgentBase : IAgentBase, IDisposable
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AgentBase](SuperOffice.WebApi.Agents.AgentBase.md)
+[AgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase)
 
 #### Derived
 
-[AIAgent](SuperOffice.WebApi.Agents.AIAgent.md), 
-[ApiAgent](SuperOffice.WebApi.Agents.ApiAgent.md), 
-[AppointmentAgent](SuperOffice.WebApi.Agents.AppointmentAgent.md), 
-[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md), 
-[AssociateAgent](SuperOffice.WebApi.Agents.AssociateAgent.md), 
-[BLOBAgent](SuperOffice.WebApi.Agents.BLOBAgent.md), 
-[BatchAgent](SuperOffice.WebApi.Agents.BatchAgent.md), 
-[BulkUpdateAgent](SuperOffice.WebApi.Agents.BulkUpdateAgent.md), 
-[CRMScriptAgent](SuperOffice.WebApi.Agents.CRMScriptAgent.md), 
-[ChatAgent](SuperOffice.WebApi.Agents.ChatAgent.md), 
-[ConfigurationAgent](SuperOffice.WebApi.Agents.ConfigurationAgent.md), 
-[ContactAgent](SuperOffice.WebApi.Agents.ContactAgent.md), 
-[CustomObjectAgent](SuperOffice.WebApi.Agents.CustomObjectAgent.md), 
-[CustomerServiceAgent](SuperOffice.WebApi.Agents.CustomerServiceAgent.md), 
-[DashAgent](SuperOffice.WebApi.Agents.DashAgent.md), 
-[DashboardAgent](SuperOffice.WebApi.Agents.DashboardAgent.md), 
-[DatabaseAgent](SuperOffice.WebApi.Agents.DatabaseAgent.md), 
-[DatabaseTableAgent](SuperOffice.WebApi.Agents.DatabaseTableAgent.md), 
-[DiagnosticsAgent](SuperOffice.WebApi.Agents.DiagnosticsAgent.md), 
-[DocumentAgent](SuperOffice.WebApi.Agents.DocumentAgent.md), 
-[DocumentMigrationAgent](SuperOffice.WebApi.Agents.DocumentMigrationAgent.md), 
-[EMailAgent](SuperOffice.WebApi.Agents.EMailAgent.md), 
-[ErpSyncAgent](SuperOffice.WebApi.Agents.ErpSyncAgent.md), 
-[FavouriteAgent](SuperOffice.WebApi.Agents.FavouriteAgent.md), 
-[FindAgent](SuperOffice.WebApi.Agents.FindAgent.md), 
-[ForeignSystemAgent](SuperOffice.WebApi.Agents.ForeignSystemAgent.md), 
-[FreeTextAgent](SuperOffice.WebApi.Agents.FreeTextAgent.md), 
-[ImportAgent](SuperOffice.WebApi.Agents.ImportAgent.md), 
-[LicenseAgent](SuperOffice.WebApi.Agents.LicenseAgent.md), 
-[ListAgent](SuperOffice.WebApi.Agents.ListAgent.md), 
-[MDOAgent](SuperOffice.WebApi.Agents.MDOAgent.md), 
-[MarketingAgent](SuperOffice.WebApi.Agents.MarketingAgent.md), 
-[MessagingAgent](SuperOffice.WebApi.Agents.MessagingAgent.md), 
-[NavigatorAgent](SuperOffice.WebApi.Agents.NavigatorAgent.md), 
-[NewsFeedAgent](SuperOffice.WebApi.Agents.NewsFeedAgent.md), 
-[NumberAllocationAgent](SuperOffice.WebApi.Agents.NumberAllocationAgent.md), 
-[PersonAgent](SuperOffice.WebApi.Agents.PersonAgent.md), 
-[PhoneListAgent](SuperOffice.WebApi.Agents.PhoneListAgent.md), 
-[PocketAgent](SuperOffice.WebApi.Agents.PocketAgent.md), 
-[PreferenceAgent](SuperOffice.WebApi.Agents.PreferenceAgent.md), 
-[PreviewsAgent](SuperOffice.WebApi.Agents.PreviewsAgent.md), 
-[ProjectAgent](SuperOffice.WebApi.Agents.ProjectAgent.md), 
-[QuoteAgent](SuperOffice.WebApi.Agents.QuoteAgent.md), 
-[RelationAgent](SuperOffice.WebApi.Agents.RelationAgent.md), 
-[ReportAgent](SuperOffice.WebApi.Agents.ReportAgent.md), 
-[ResourceAgent](SuperOffice.WebApi.Agents.ResourceAgent.md), 
-[SaintAgent](SuperOffice.WebApi.Agents.SaintAgent.md), 
-[SaleAgent](SuperOffice.WebApi.Agents.SaleAgent.md), 
-[SelectionAgent](SuperOffice.WebApi.Agents.SelectionAgent.md), 
-[SentryAgent](SuperOffice.WebApi.Agents.SentryAgent.md), 
-[TargetsAgent](SuperOffice.WebApi.Agents.TargetsAgent.md), 
-[TicketAgent](SuperOffice.WebApi.Agents.TicketAgent.md), 
-[TimeZoneAgent](SuperOffice.WebApi.Agents.TimeZoneAgent.md), 
-[TooltipsAgent](SuperOffice.WebApi.Agents.TooltipsAgent.md), 
-[UserAgent](SuperOffice.WebApi.Agents.UserAgent.md), 
-[UserDefinedFieldInfoAgent](SuperOffice.WebApi.Agents.UserDefinedFieldInfoAgent.md), 
-[ViewStateAgent](SuperOffice.WebApi.Agents.ViewStateAgent.md), 
-[WebhookAgent](SuperOffice.WebApi.Agents.WebhookAgent.md), 
-[WorkflowAgent](SuperOffice.WebApi.Agents.WorkflowAgent.md)
+[AIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AIAgent), 
+[ApiAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ApiAgent), 
+[AppointmentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AppointmentAgent), 
+[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent), 
+[AssociateAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AssociateAgent), 
+[BLOBAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.BLOBAgent), 
+[BatchAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.BatchAgent), 
+[BulkUpdateAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.BulkUpdateAgent), 
+[CRMScriptAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CRMScriptAgent), 
+[ChatAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ChatAgent), 
+[ConfigurationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ConfigurationAgent), 
+[ContactAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ContactAgent), 
+[CustomObjectAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CustomObjectAgent), 
+[CustomerServiceAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CustomerServiceAgent), 
+[DashAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DashAgent), 
+[DashboardAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DashboardAgent), 
+[DatabaseAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DatabaseAgent), 
+[DatabaseTableAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DatabaseTableAgent), 
+[DiagnosticsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DiagnosticsAgent), 
+[DocumentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DocumentAgent), 
+[DocumentMigrationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DocumentMigrationAgent), 
+[EMailAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.EMailAgent), 
+[ErpSyncAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ErpSyncAgent), 
+[FavouriteAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.FavouriteAgent), 
+[FindAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.FindAgent), 
+[ForeignSystemAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ForeignSystemAgent), 
+[FreeTextAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.FreeTextAgent), 
+[ImportAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ImportAgent), 
+[LicenseAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.LicenseAgent), 
+[ListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ListAgent), 
+[MDOAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.MDOAgent), 
+[MarketingAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.MarketingAgent), 
+[MessagingAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.MessagingAgent), 
+[NavigatorAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.NavigatorAgent), 
+[NewsFeedAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.NewsFeedAgent), 
+[NumberAllocationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.NumberAllocationAgent), 
+[PersonAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PersonAgent), 
+[PhoneListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PhoneListAgent), 
+[PocketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PocketAgent), 
+[PreferenceAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PreferenceAgent), 
+[PreviewsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PreviewsAgent), 
+[ProjectAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ProjectAgent), 
+[QuoteAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.QuoteAgent), 
+[RelationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.RelationAgent), 
+[ReportAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ReportAgent), 
+[ResourceAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ResourceAgent), 
+[SaintAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SaintAgent), 
+[SaleAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SaleAgent), 
+[SelectionAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SelectionAgent), 
+[SentryAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SentryAgent), 
+[TargetsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TargetsAgent), 
+[TicketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TicketAgent), 
+[TimeZoneAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TimeZoneAgent), 
+[TooltipsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TooltipsAgent), 
+[UserAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.UserAgent), 
+[UserDefinedFieldInfoAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.UserDefinedFieldInfoAgent), 
+[ViewStateAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ViewStateAgent), 
+[WebhookAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.WebhookAgent), 
+[WorkflowAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.WorkflowAgent)
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 #### Inherited Members
@@ -126,7 +126,7 @@ protected AgentBase(WebApiOptions configuration, HttpClient httpClient = null)
 
 #### Parameters
 
-`configuration` [WebApiOptions](SuperOffice.WebApi.WebApiOptions.md)
+`configuration` [WebApiOptions](/en/api/reference/webapi/SuperOffice.WebApi.WebApiOptions)
 
 Settings and URL to web API endpoint
 
@@ -164,7 +164,7 @@ protected WebApiOptions _config
 
 #### Field Value
 
- [WebApiOptions](SuperOffice.WebApi.WebApiOptions.md)
+ [WebApiOptions](/en/api/reference/webapi/SuperOffice.WebApi.WebApiOptions)
 
 ### \_disposeClient {#SuperOffice_WebApi_Agents_AgentBase__disposeClient}
 
@@ -223,7 +223,7 @@ public WebApiOptions Configuration { get; }
 
 #### Property Value
 
- [WebApiOptions](SuperOffice.WebApi.WebApiOptions.md)
+ [WebApiOptions](/en/api/reference/webapi/SuperOffice.WebApi.WebApiOptions)
 
 ### HasRunningRequest {#SuperOffice_WebApi_Agents_AgentBase_HasRunningRequest}
 
@@ -247,7 +247,7 @@ public IProgressListener ProgressListener { get; set; }
 
 #### Property Value
 
- [IProgressListener](SuperOffice.WebApi.IProgressListener.md)
+ [IProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.IProgressListener)
 
 ### UploadProgressListener {#SuperOffice_WebApi_Agents_AgentBase_UploadProgressListener}
 
@@ -259,7 +259,7 @@ public IProgressListener UploadProgressListener { get; set; }
 
 #### Property Value
 
- [IProgressListener](SuperOffice.WebApi.IProgressListener.md)
+ [IProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.IProgressListener)
 
 ## Methods
 
@@ -277,7 +277,7 @@ protected HttpRequestMessage BuildRequestFromObject(HttpMethod method, string ur
 
 `body` [object](https://learn.microsoft.com/dotnet/api/system.object)
 
-`config` [WebApiOptions](SuperOffice.WebApi.WebApiOptions.md)
+`config` [WebApiOptions](/en/api/reference/webapi/SuperOffice.WebApi.WebApiOptions)
 
 `contentType` [string](https://learn.microsoft.com/dotnet/api/system.string)
 
@@ -301,7 +301,7 @@ protected HttpRequestMessage BuildRequestFromObjectWithStream(HttpMethod method,
 
 `stream` [Stream](https://learn.microsoft.com/dotnet/api/system.io.stream)
 
-`config` [WebApiOptions](SuperOffice.WebApi.WebApiOptions.md)
+`config` [WebApiOptions](/en/api/reference/webapi/SuperOffice.WebApi.WebApiOptions)
 
 `contentType` [string](https://learn.microsoft.com/dotnet/api/system.string)
 
@@ -323,7 +323,7 @@ protected HttpRequestMessage BuildRequestFromStream(HttpMethod method, string ur
 
 `body` [Stream](https://learn.microsoft.com/dotnet/api/system.io.stream)
 
-`config` [WebApiOptions](SuperOffice.WebApi.WebApiOptions.md)
+`config` [WebApiOptions](/en/api/reference/webapi/SuperOffice.WebApi.WebApiOptions)
 
 `contentType` [string](https://learn.microsoft.com/dotnet/api/system.string)
 
@@ -355,7 +355,7 @@ protected void Finally(RequestOptions options)
 
 #### Parameters
 
-`options` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`options` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 ### Merge\(RequestOptions\) {#SuperOffice_WebApi_Agents_AgentBase_Merge_SuperOffice_WebApi_RequestOptions_}
 
@@ -365,11 +365,11 @@ protected WebApiOptions Merge(RequestOptions options)
 
 #### Parameters
 
-`options` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`options` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 #### Returns
 
- [WebApiOptions](SuperOffice.WebApi.WebApiOptions.md)
+ [WebApiOptions](/en/api/reference/webapi/SuperOffice.WebApi.WebApiOptions)
 
 ### ParseAuthorization\(IAuthorization\) {#SuperOffice_WebApi_Agents_AgentBase_ParseAuthorization_SuperOffice_WebApi_Authorization_IAuthorization_}
 
@@ -419,7 +419,7 @@ protected Task<HttpResponseMessage> SendRequest(HttpRequestMessage request, Requ
 
 `request` [HttpRequestMessage](https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage)
 
-`config` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`config` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 #### Returns
 
@@ -439,7 +439,7 @@ protected Task<HttpResponseMessage> SendRequestObject(HttpMethod method, string 
 
 `args` [object](https://learn.microsoft.com/dotnet/api/system.object)
 
-`config` [WebApiOptions](SuperOffice.WebApi.WebApiOptions.md)
+`config` [WebApiOptions](/en/api/reference/webapi/SuperOffice.WebApi.WebApiOptions)
 
 `contentType` [string](https://learn.microsoft.com/dotnet/api/system.string)
 
@@ -463,7 +463,7 @@ protected Task<HttpResponseMessage> SendRequestObjectWithStream(HttpMethod metho
 
 `stream` [Stream](https://learn.microsoft.com/dotnet/api/system.io.stream)
 
-`config` [WebApiOptions](SuperOffice.WebApi.WebApiOptions.md)
+`config` [WebApiOptions](/en/api/reference/webapi/SuperOffice.WebApi.WebApiOptions)
 
 `contentType` [string](https://learn.microsoft.com/dotnet/api/system.string)
 

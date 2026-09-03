@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EFieldRight"></a> Enum EFieldRight
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Access levels to a single field. Read and/or write.

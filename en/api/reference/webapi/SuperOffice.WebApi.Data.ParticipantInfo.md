@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ParticipantInfo"></a> Class ParticipantInfo
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ParticipantInfo.
@@ -13,7 +13,7 @@ public class ParticipantInfo
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ParticipantInfo](SuperOffice.WebApi.Data.ParticipantInfo.md)
+[ParticipantInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ParticipantInfo)
 
 #### Inherited Members
 
@@ -109,11 +109,11 @@ public ExternallyOwnedStatus? ExternallyOwnedStatus { get; set; }
 
 #### Property Value
 
- [ExternallyOwnedStatus](SuperOffice.WebApi.Data.ExternallyOwnedStatus.md)?
+ [ExternallyOwnedStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExternallyOwnedStatus)?
 
 #### See Also
 
-[ParticipantInfo](SuperOffice.WebApi.Data.ParticipantInfo.md).[ExternallyOwnedStatus\_String](SuperOffice.WebApi.Data.ParticipantInfo.md\#SuperOffice\_WebApi\_Data\_ParticipantInfo\_ExternallyOwnedStatus\_String)
+[ParticipantInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ParticipantInfo).[ExternallyOwnedStatus\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ParticipantInfo#SuperOffice_WebApi_Data_ParticipantInfo_ExternallyOwnedStatus_String)
 
 ### <a id="SuperOffice_WebApi_Data_ParticipantInfo_ExternallyOwnedStatus_String"></a> ExternallyOwnedStatus\_String
 
@@ -131,7 +131,7 @@ public string ExternallyOwnedStatus_String { get; set; }
 
 #### See Also
 
-[ParticipantInfo](SuperOffice.WebApi.Data.ParticipantInfo.md).[ExternallyOwnedStatus](SuperOffice.WebApi.Data.ParticipantInfo.md\#SuperOffice\_WebApi\_Data\_ParticipantInfo\_ExternallyOwnedStatus)
+[ParticipantInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ParticipantInfo).[ExternallyOwnedStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ParticipantInfo#SuperOffice_WebApi_Data_ParticipantInfo_ExternallyOwnedStatus)
 
 ### <a id="SuperOffice_WebApi_Data_ParticipantInfo_ExternallyOwnedType"></a> ExternallyOwnedType
 
@@ -145,11 +145,11 @@ public ExternallyOwnedType? ExternallyOwnedType { get; set; }
 
 #### Property Value
 
- [ExternallyOwnedType](SuperOffice.WebApi.Data.ExternallyOwnedType.md)?
+ [ExternallyOwnedType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExternallyOwnedType)?
 
 #### See Also
 
-[ParticipantInfo](SuperOffice.WebApi.Data.ParticipantInfo.md).[ExternallyOwnedType\_String](SuperOffice.WebApi.Data.ParticipantInfo.md\#SuperOffice\_WebApi\_Data\_ParticipantInfo\_ExternallyOwnedType\_String)
+[ParticipantInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ParticipantInfo).[ExternallyOwnedType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ParticipantInfo#SuperOffice_WebApi_Data_ParticipantInfo_ExternallyOwnedType_String)
 
 ### <a id="SuperOffice_WebApi_Data_ParticipantInfo_ExternallyOwnedType_String"></a> ExternallyOwnedType\_String
 
@@ -167,7 +167,7 @@ public string ExternallyOwnedType_String { get; set; }
 
 #### See Also
 
-[ParticipantInfo](SuperOffice.WebApi.Data.ParticipantInfo.md).[ExternallyOwnedType](SuperOffice.WebApi.Data.ParticipantInfo.md\#SuperOffice\_WebApi\_Data\_ParticipantInfo\_ExternallyOwnedType)
+[ParticipantInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ParticipantInfo).[ExternallyOwnedType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ParticipantInfo#SuperOffice_WebApi_Data_ParticipantInfo_ExternallyOwnedType)
 
 ### <a id="SuperOffice_WebApi_Data_ParticipantInfo_InvitationStatus"></a> InvitationStatus
 
@@ -181,11 +181,11 @@ public InvitationStatus? InvitationStatus { get; set; }
 
 #### Property Value
 
- [InvitationStatus](SuperOffice.WebApi.Data.InvitationStatus.md)?
+ [InvitationStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.InvitationStatus)?
 
 #### See Also
 
-[ParticipantInfo](SuperOffice.WebApi.Data.ParticipantInfo.md).[InvitationStatus\_String](SuperOffice.WebApi.Data.ParticipantInfo.md\#SuperOffice\_WebApi\_Data\_ParticipantInfo\_InvitationStatus\_String)
+[ParticipantInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ParticipantInfo).[InvitationStatus\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ParticipantInfo#SuperOffice_WebApi_Data_ParticipantInfo_InvitationStatus_String)
 
 ### <a id="SuperOffice_WebApi_Data_ParticipantInfo_InvitationStatus_String"></a> InvitationStatus\_String
 
@@ -203,7 +203,7 @@ public string InvitationStatus_String { get; set; }
 
 #### See Also
 
-[ParticipantInfo](SuperOffice.WebApi.Data.ParticipantInfo.md).[InvitationStatus](SuperOffice.WebApi.Data.ParticipantInfo.md\#SuperOffice\_WebApi\_Data\_ParticipantInfo\_InvitationStatus)
+[ParticipantInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ParticipantInfo).[InvitationStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ParticipantInfo#SuperOffice_WebApi_Data_ParticipantInfo_InvitationStatus)
 
 ### <a id="SuperOffice_WebApi_Data_ParticipantInfo_PersonId"></a> PersonId
 
@@ -231,5 +231,5 @@ public virtual bool SendEmail { get; set; }
 
 ## See Also
 
-[AppointmentAgent](SuperOffice.WebApi.Agents.AppointmentAgent.md)
+[AppointmentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AppointmentAgent)
 

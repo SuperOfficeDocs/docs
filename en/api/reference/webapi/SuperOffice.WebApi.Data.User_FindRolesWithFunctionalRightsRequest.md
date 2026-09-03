@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_FindRolesWithFunctionalRightsRequest"></a> Class User\_FindRolesWithFunctionalRightsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_FindRolesWithFunctionalRightsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_FindRolesWithFunctionalRightsRequest](SuperOffice.WebApi.Data.User\_FindRolesWithFunctionalRightsRequest.md)
+[User\_FindRolesWithFunctionalRightsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_FindRolesWithFunctionalRightsRequest)
 
 #### Inherited Members
 

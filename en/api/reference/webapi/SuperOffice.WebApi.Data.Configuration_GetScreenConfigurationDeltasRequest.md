@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Configuration_GetScreenConfigurationDeltasRequest"></a> Class Configuration\_GetScreenConfigurationDeltasRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Configuration_GetScreenConfigurationDeltasRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Configuration\_GetScreenConfigurationDeltasRequest](SuperOffice.WebApi.Data.Configuration\_GetScreenConfigurationDeltasRequest.md)
+[Configuration\_GetScreenConfigurationDeltasRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_GetScreenConfigurationDeltasRequest)
 
 #### Inherited Members
 

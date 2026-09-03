@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Dashboard_CreateNewFromTemplateRequest"></a> Class Dashboard\_CreateNewFromTemplateRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Dashboard_CreateNewFromTemplateRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Dashboard\_CreateNewFromTemplateRequest](SuperOffice.WebApi.Data.Dashboard\_CreateNewFromTemplateRequest.md)
+[Dashboard\_CreateNewFromTemplateRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dashboard_CreateNewFromTemplateRequest)
 
 #### Inherited Members
 
@@ -80,5 +80,5 @@ public VisibleFor[] VisibleFor { get; set; }
 
 #### Property Value
 
- [VisibleFor](SuperOffice.WebApi.Data.VisibleFor.md)\[\]
+ [VisibleFor](/en/api/reference/webapi/SuperOffice.WebApi.Data.VisibleFor)\[\]
 

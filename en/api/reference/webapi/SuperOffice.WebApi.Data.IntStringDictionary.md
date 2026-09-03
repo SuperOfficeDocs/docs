@@ -1,6 +1,6 @@
 # Class IntStringDictionary {#SuperOffice_WebApi_Data_IntStringDictionary}
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Serializable dictionary.
@@ -14,7 +14,7 @@ public class IntStringDictionary : Dictionary<int, string>, IDictionary<int, str
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
 [Dictionary&lt;int, string\&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2) ← 
-[IntStringDictionary](SuperOffice.WebApi.Data.IntStringDictionary.md)
+[IntStringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.IntStringDictionary)
 
 #### Implements
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Project_GetProjectEntityWithoutMembersRequest"></a> Class Project\_GetProjectEntityWithoutMembersRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Project_GetProjectEntityWithoutMembersRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Project\_GetProjectEntityWithoutMembersRequest](SuperOffice.WebApi.Data.Project\_GetProjectEntityWithoutMembersRequest.md)
+[Project\_GetProjectEntityWithoutMembersRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project_GetProjectEntityWithoutMembersRequest)
 
 #### Inherited Members
 

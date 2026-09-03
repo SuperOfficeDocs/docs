@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AI_ParseQueryIntoRestrictionsRequest"></a> Class AI\_ParseQueryIntoRestrictionsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class AI_ParseQueryIntoRestrictionsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AI\_ParseQueryIntoRestrictionsRequest](SuperOffice.WebApi.Data.AI\_ParseQueryIntoRestrictionsRequest.md)
+[AI\_ParseQueryIntoRestrictionsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_ParseQueryIntoRestrictionsRequest)
 
 #### Inherited Members
 
@@ -50,7 +50,7 @@ public NaturalLanguageSearch PreviousQuery { get; set; }
 
 #### Property Value
 
- [NaturalLanguageSearch](SuperOffice.WebApi.Data.NaturalLanguageSearch.md)
+ [NaturalLanguageSearch](/en/api/reference/webapi/SuperOffice.WebApi.Data.NaturalLanguageSearch)
 
 ### <a id="SuperOffice_WebApi_Data_AI_ParseQueryIntoRestrictionsRequest_Query"></a> Query
 

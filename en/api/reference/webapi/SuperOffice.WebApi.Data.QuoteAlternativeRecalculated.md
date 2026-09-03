@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_QuoteAlternativeRecalculated"></a> Class QuoteAlternativeRecalculated
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for QuoteAlternativeRecalculated.
@@ -13,13 +13,13 @@ public class QuoteAlternativeRecalculated : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[QuoteAlternativeRecalculated](SuperOffice.WebApi.Data.QuoteAlternativeRecalculated.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[QuoteAlternativeRecalculated](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteAlternativeRecalculated)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -50,7 +50,7 @@ public virtual QuoteAlternative ChangedQuoteAlternative { get; set; }
 
 #### Property Value
 
- [QuoteAlternative](SuperOffice.WebApi.Data.QuoteAlternative.md)
+ [QuoteAlternative](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteAlternative)
 
 ### <a id="SuperOffice_WebApi_Data_QuoteAlternativeRecalculated_Changes"></a> Changes
 
@@ -62,7 +62,7 @@ public virtual ChangedData Changes { get; set; }
 
 #### Property Value
 
- [ChangedData](SuperOffice.WebApi.Data.ChangedData.md)
+ [ChangedData](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChangedData)
 
 ### <a id="SuperOffice_WebApi_Data_QuoteAlternativeRecalculated_QuoteLinesHasChanged"></a> QuoteLinesHasChanged
 
@@ -78,5 +78,5 @@ public virtual bool QuoteLinesHasChanged { get; set; }
 
 ## See Also
 
-[QuoteAgent](SuperOffice.WebApi.Agents.QuoteAgent.md)
+[QuoteAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.QuoteAgent)
 

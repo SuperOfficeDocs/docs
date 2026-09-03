@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Webhook_GetLastErrorRequest"></a> Class Webhook\_GetLastErrorRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Webhook_GetLastErrorRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Webhook\_GetLastErrorRequest](SuperOffice.WebApi.Data.Webhook\_GetLastErrorRequest.md)
+[Webhook\_GetLastErrorRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Webhook_GetLastErrorRequest)
 
 #### Inherited Members
 

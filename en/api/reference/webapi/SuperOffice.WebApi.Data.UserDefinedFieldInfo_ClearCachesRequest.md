@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserDefinedFieldInfo_ClearCachesRequest"></a> Class UserDefinedFieldInfo\_ClearCachesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class UserDefinedFieldInfo_ClearCachesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserDefinedFieldInfo\_ClearCachesRequest](SuperOffice.WebApi.Data.UserDefinedFieldInfo\_ClearCachesRequest.md)
+[UserDefinedFieldInfo\_ClearCachesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo_ClearCachesRequest)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # Interface ITicketAgent {#SuperOffice_WebApi_Agents_ITicketAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Agent used for Ticket functions
@@ -11,7 +11,7 @@ public interface ITicketAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -30,7 +30,7 @@ Task AcceptTicketsAsync(int[] ticketIds, RequestOptions requestOptions = null)
 
 Ids of tickets to be accepted.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -58,7 +58,7 @@ The id of the ticket message to connect the attachments to
 
 An array of attachments to connect to this TicketMessage
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -100,7 +100,7 @@ Comment will be included before ticket messages. Might be empty
 
 If true, ticket will be closed after forwarding
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -120,11 +120,11 @@ Task<int> BatchReplyAsync(TicketBatchReplyData batchReplyData, RequestOptions re
 
 #### Parameters
 
-`batchReplyData` [TicketBatchReplyData](SuperOffice.WebApi.Data.TicketBatchReplyData.md)
+`batchReplyData` [TicketBatchReplyData](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketBatchReplyData)
 
 All data needed to initiate a mass ticket reply sending.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -148,7 +148,7 @@ Task<Recipient[]> CalculateMessageRecipientsAsync(int ticketId, MessageActionTyp
 
 The id of the ticket
 
-`actionType` [MessageActionType](SuperOffice.WebApi.Data.MessageActionType.md)
+`actionType` [MessageActionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.MessageActionType)
 
 Message action
 
@@ -156,13 +156,13 @@ Message action
 
 Optional ID of message being replied. Value &lt;= 0 ignores parameter
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Recipient](SuperOffice.WebApi.Data.Recipient.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Recipient](/en/api/reference/webapi/SuperOffice.WebApi.Data.Recipient)\[\]\&gt;
 
 An array with Recipient objects
 
@@ -180,7 +180,7 @@ Task ClearNotifyAsync(int[] ids, RequestOptions requestOptions = null)
 
 List of notify IDs.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -204,13 +204,13 @@ Task<AttachmentEntity> CopyFromCRMDocumentAsync(int documentId, RequestOptions r
 
 The id of the document to copy to an attachment
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AttachmentEntity](SuperOffice.WebApi.Data.AttachmentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AttachmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AttachmentEntity)\&gt;
 
 ### CopyToTempFileAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ITicketAgent_CopyToTempFileAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
@@ -230,7 +230,7 @@ Preferred filename
 
 The id of the attachment to copy
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -251,13 +251,13 @@ Task<AttachmentEntity> CreateDefaultAttachmentEntityAsync(RequestOptions request
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AttachmentEntity](SuperOffice.WebApi.Data.AttachmentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AttachmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AttachmentEntity)\&gt;
 
 A blank AttachmentEntity
 
@@ -275,13 +275,13 @@ Task<TicketEntity> CreateDefaultForTicketTypeAsync(int ticketTypeId, RequestOpti
 
 ID of ticket type
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity)\&gt;
 
 Default ticket entity
 
@@ -296,13 +296,13 @@ Task<TicketEntity> CreateDefaultTicketEntityAsync(RequestOptions requestOptions 
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity)\&gt;
 
 A blank TicketEntity
 
@@ -317,13 +317,13 @@ Task<TicketMessageEntity> CreateDefaultTicketMessageEntityAsync(RequestOptions r
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketMessageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageEntity)\&gt;
 
 A blank TicketMessageEntity
 
@@ -338,13 +338,13 @@ Task<TicketRelationEntity> CreateDefaultTicketRelationEntityAsync(RequestOptions
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketRelationEntity](SuperOffice.WebApi.Data.TicketRelationEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketRelationEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationEntity)\&gt;
 
 A blank TicketRelationEntity
 
@@ -366,7 +366,7 @@ The ids of the tickets to relate to the destination ticket.
 
 The id of the ticket that the source tickets will be related to.
 
-`relationType` [TicketRelationType](SuperOffice.WebApi.Data.TicketRelationType.md)
+`relationType` [TicketRelationType](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationType)
 
 The type of relation to create.
 
@@ -374,13 +374,13 @@ The type of relation to create.
 
 Optional comment to store on each relation.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketRelationResult](SuperOffice.WebApi.Data.TicketRelationResult.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketRelationResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationResult)\[\]\&gt;
 
 Creation results, one per source ticket id.
 
@@ -398,7 +398,7 @@ Task DeleteMessageHeadersAsync(int[] headerIds, RequestOptions requestOptions = 
 
 Message header primary keys
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -422,7 +422,7 @@ Task DeleteTicketEntityAsync(int ticketEntityId, RequestOptions requestOptions =
 
 The ticket to delete
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -446,7 +446,7 @@ Task DeleteTicketMessageEntityAsync(int ticketMessageEntityId, RequestOptions re
 
 The ticket message to delete
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -470,7 +470,7 @@ Task DeleteTicketRelationEntityAsync(int ticketRelationEntityId, RequestOptions 
 
 The identity of the TicketRelationEntity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -492,11 +492,11 @@ Task DoEscalatingAsync(int ticketId, TicketPriorityEscalateAction action, Reques
 
 The id of ticket
 
-`action` [TicketPriorityEscalateAction](SuperOffice.WebApi.Data.TicketPriorityEscalateAction.md)
+`action` [TicketPriorityEscalateAction](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEscalateAction)
 
 The action to use when calculating the escalation
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -520,13 +520,13 @@ Task<AttachmentEntity> GetAttachmentEntityAsync(int attachmentEntityId, RequestO
 
 The identifier of the AttachmentEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AttachmentEntity](SuperOffice.WebApi.Data.AttachmentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AttachmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AttachmentEntity)\&gt;
 
 AttachmentEntity
 
@@ -544,13 +544,13 @@ Task<AttachmentEntity[]> GetAttachmentInfoAsync(int ticketMessageEntityId, Reque
 
 The id of the ticket message to get attachment infos for
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AttachmentEntity](SuperOffice.WebApi.Data.AttachmentEntity.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AttachmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AttachmentEntity)\[\]\&gt;
 
 An array with AttachmentEntity objects, describing each attachment
 
@@ -568,13 +568,13 @@ Task<AttachmentEntity[]> GetAttachmentInfoNonInlineAsync(int ticketMessageEntity
 
 The id of the ticket message to get attachment infos for
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AttachmentEntity](SuperOffice.WebApi.Data.AttachmentEntity.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AttachmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AttachmentEntity)\[\]\&gt;
 
 An array with AttachmentEntity objects, describing each attachment; those marked as INLINE will be skipped
 
@@ -592,13 +592,13 @@ Task<AttachmentPreview> GetAttachmentPreviewAsync(int attachmentId, RequestOptio
 
 The id of the attachment to retrieve
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AttachmentPreview](SuperOffice.WebApi.Data.AttachmentPreview.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AttachmentPreview](/en/api/reference/webapi/SuperOffice.WebApi.Data.AttachmentPreview)\&gt;
 
 Sanitized preview version of the attachment and additional metadata, if available
 
@@ -620,7 +620,7 @@ The id of the attachment to retrieve
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -644,7 +644,7 @@ Task<string> GetDefaultMessageContentAsync(int ticketId, MessageActionType messa
 
 The id of the ticket
 
-`messageActionType` [MessageActionType](SuperOffice.WebApi.Data.MessageActionType.md)
+`messageActionType` [MessageActionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.MessageActionType)
 
 Message action type: None/Reply/ReplyAll/Forward
 
@@ -652,7 +652,7 @@ Message action type: None/Reply/ReplyAll/Forward
 
 The id of the message to quote in the returned content. 0 to skip/ignore
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -676,7 +676,7 @@ Task<TicketMessageContent> GetDefaultMessageContentFullAsync(int ticketId, Messa
 
 The id of the ticket
 
-`messageActionType` [MessageActionType](SuperOffice.WebApi.Data.MessageActionType.md)
+`messageActionType` [MessageActionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.MessageActionType)
 
 Message action type: None/Reply/ReplyAll/Forward
 
@@ -688,13 +688,13 @@ The id of the message to quote in the returned content. 0 to skip/ignore
 
 The id of the ticket type to look for reply template. 0 to use current ticket type
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketMessageContent](SuperOffice.WebApi.Data.TicketMessageContent.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketMessageContent](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageContent)\&gt;
 
 Generated default message content
 
@@ -712,7 +712,7 @@ Task<TicketMessageContent> GetDefaultMessageContentWithOptionsAsync(int ticketId
 
 The id of the ticket
 
-`messageActionType` [MessageActionType](SuperOffice.WebApi.Data.MessageActionType.md)
+`messageActionType` [MessageActionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.MessageActionType)
 
 Message action type: None/Reply/ReplyAll/Forward
 
@@ -728,13 +728,13 @@ The id of the ticket type to look for reply template. 0 to use current ticket ty
 
 Flag to exclude a signature when generating the return content
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketMessageContent](SuperOffice.WebApi.Data.TicketMessageContent.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketMessageContent](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageContent)\&gt;
 
 Generated default message content
 
@@ -752,13 +752,13 @@ Task<TicketEntity> GetForRmUiAsync(int ticketId, RequestOptions requestOptions =
 
 Primary key of ticket to fetch
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity)\&gt;
 
 The ticket entity. Information is filtered/adapted to the current needs of the UI
 
@@ -780,15 +780,15 @@ The id of the ticket
 
 A list of associate ids to skip when calculating whom to get the notification
 
-`notifyType` [NotifyType](SuperOffice.WebApi.Data.NotifyType.md)
+`notifyType` [NotifyType](/en/api/reference/webapi/SuperOffice.WebApi.Data.NotifyType)
 
 The notification type we want to check for
 
-`channel` [NotifyChannel](SuperOffice.WebApi.Data.NotifyChannel.md)
+`channel` [NotifyChannel](/en/api/reference/webapi/SuperOffice.WebApi.Data.NotifyChannel)
 
 The channel which we should check for
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -808,13 +808,13 @@ Task<TicketEntity> GetNextInQueueAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity)\&gt;
 
 The ticket entity after assigning it to the caller
 
@@ -832,13 +832,13 @@ Task<DocumentPreview> GetPreviewAttachmentStreamAsync(int attachmentId, RequestO
 
 The id of the attachment to retrieve
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentPreview](SuperOffice.WebApi.Data.DocumentPreview.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentPreview](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentPreview)\&gt;
 
 Sanitized preview version of the attachment
 
@@ -864,7 +864,7 @@ The position (index) of the attachment within the root attachment. Numbering sta
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -888,13 +888,13 @@ Task<Ticket> GetTicketAsync(int ticketId, RequestOptions requestOptions = null)
 
 The identifier of the Ticket object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Ticket](SuperOffice.WebApi.Data.Ticket.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Ticket](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket)\&gt;
 
 Ticket
 
@@ -912,13 +912,13 @@ Task<AttachmentEntity[]> GetTicketAttachmentsAsync(int ticketEntityId, RequestOp
 
 The id of the ticket to get attachment infos from
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AttachmentEntity](SuperOffice.WebApi.Data.AttachmentEntity.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AttachmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AttachmentEntity)\[\]\&gt;
 
 An array containing attachment info objects for all the attachments
 
@@ -936,13 +936,13 @@ Task<TicketEntity> GetTicketEntityAsync(int ticketEntityId, RequestOptions reque
 
 The identifier of the TicketEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity)\&gt;
 
 TicketEntity
 
@@ -960,13 +960,13 @@ Task<TicketMessage> GetTicketMessageAsync(int ticketMessageId, RequestOptions re
 
 The identifier of the TicketMessage object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketMessage](SuperOffice.WebApi.Data.TicketMessage.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessage)\&gt;
 
 TicketMessage
 
@@ -988,13 +988,13 @@ The id of the ticket to get message entities from
 
 Optional ids of message entities to get. If not provided, all ticket message entities will be returned.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketMessageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageEntity)\[\]\&gt;
 
 An array containing ticket message entities
 
@@ -1012,13 +1012,13 @@ Task<TicketMessageEntity> GetTicketMessageEntityAsync(int ticketMessageEntityId,
 
 The identifier of the TicketMessageEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketMessageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageEntity)\&gt;
 
 TicketMessageEntity
 
@@ -1036,17 +1036,17 @@ Task<TicketMessageEntity> GetTicketMessageWithEmbeddedDataAsync(int id, ImageEmb
 
 The id of the ticket message entity
 
-`embedImages` [ImageEmbedType](SuperOffice.WebApi.Data.ImageEmbedType.md)
+`embedImages` [ImageEmbedType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ImageEmbedType)
 
 If set to Inline, then use inline base64 data to represent the images in the HTML body. Default: Link will use link to the image.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketMessageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageEntity)\&gt;
 
 The entity to get
 
@@ -1068,13 +1068,13 @@ The id of the ticket message entity
 
 If true, then non inline attachments info will be loaded into TicketMessageEntity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketMessageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageEntity)\&gt;
 
 The entity to get
 
@@ -1092,7 +1092,7 @@ Task<int> GetTicketParentIdAsync(int ticketId, RequestOptions requestOptions = n
 
 The id of the ticket to get the parent for.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1124,13 +1124,13 @@ The id of the parent ticket, if any. Pass 0 if there is no parent.
 
 The id of the ticket type.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketRelationAction](SuperOffice.WebApi.Data.TicketRelationAction.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketRelationAction](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationAction)\&gt;
 
 The relation-driven actions applicable to the ticket.
 
@@ -1148,13 +1148,13 @@ Task<TicketRelationEntity> GetTicketRelationEntityAsync(int ticketRelationEntity
 
 The identifier of the TicketRelationEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketRelationEntity](SuperOffice.WebApi.Data.TicketRelationEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketRelationEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationEntity)\&gt;
 
 TicketRelationEntity
 
@@ -1172,13 +1172,13 @@ Task<TicketRelationItem[]> GetTicketRelationsAsync(int ticketId, RequestOptions 
 
 The id of the ticket to get relations for.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketRelationItem](SuperOffice.WebApi.Data.TicketRelationItem.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketRelationItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationItem)\[\]\&gt;
 
 All relations for the ticket. Each item carries its RelationType (Parent, Child, or Related).
 
@@ -1196,13 +1196,13 @@ Task<TicketSummaryItem[]> GetTicketSummariesAsync(int[] ticketIds, RequestOption
 
 The tickets to fetch summaries for
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketSummaryItem](SuperOffice.WebApi.Data.TicketSummaryItem.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketSummaryItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketSummaryItem)\[\]\&gt;
 
 Summary items for the given id's, in no particular order
 
@@ -1220,13 +1220,13 @@ Task<Ticket[]> GetTicketsAsync(int[] ticketIds, RequestOptions requestOptions = 
 
 The ids of tickets to get
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Ticket](SuperOffice.WebApi.Data.Ticket.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Ticket](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket)\[\]\&gt;
 
 Returns array of tickets in same order as input ids
 
@@ -1244,7 +1244,7 @@ Task<string> Html2TextAsync(string content, RequestOptions requestOptions = null
 
 The html version
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1264,7 +1264,7 @@ Task<TicketEntity> MergeTicketsAsync(TicketEntity mergedTicketEntity, int[] seco
 
 #### Parameters
 
-`mergedTicketEntity` [TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)
+`mergedTicketEntity` [TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity)
 
 Merged ticket entity
 
@@ -1272,13 +1272,13 @@ Merged ticket entity
 
 Ids of secondary tickets
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity)\&gt;
 
 The newly merged entity
 
@@ -1296,7 +1296,7 @@ Task NotifyNewTicketAsync(int ticketEntityId, RequestOptions requestOptions = nu
 
 The id of the ticket to notify about
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1320,7 +1320,7 @@ Task NotifyNewTicketMessageAsync(int ticketEntityId, RequestOptions requestOptio
 
 The id of the ticket to notify about
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1344,13 +1344,13 @@ Task<TicketEntity> ProcessTicketWhenReadAsync(int ticketEntityId, RequestOptions
 
 The id of the ticket to mark as read
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity)\&gt;
 
 The ticket entity after marking it as read
 
@@ -1372,7 +1372,7 @@ The id of the ticket message to remove attachments from
 
 Attachment primary keys
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1396,7 +1396,7 @@ Task<int> ResolveTicketIdAsync(int ticketId, RequestOptions requestOptions = nul
 
 Potentially correct ticketId
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1420,7 +1420,7 @@ Task<string> SanitizeMailContentAsync(string content, RequestOptions requestOpti
 
 The email content to sanitize
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1444,11 +1444,11 @@ Task<string> SanitizeMailContentWithOptionsAsync(string content, HtmlSanitizerOp
 
 The email content to sanitize
 
-`options` [HtmlSanitizerOptions](SuperOffice.WebApi.Data.HtmlSanitizerOptions.md)
+`options` [HtmlSanitizerOptions](/en/api/reference/webapi/SuperOffice.WebApi.Data.HtmlSanitizerOptions)
 
 The options for the sanitizer engine
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1472,7 +1472,7 @@ Task<string[]> SanitizeMailContentsAsync(string[] contents, RequestOptions reque
 
 The email contents to sanitize
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1492,17 +1492,17 @@ Task<AttachmentEntity> SaveAttachmentEntityAsync(AttachmentEntity attachmentEnti
 
 #### Parameters
 
-`attachmentEntity` [AttachmentEntity](SuperOffice.WebApi.Data.AttachmentEntity.md)
+`attachmentEntity` [AttachmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AttachmentEntity)
 
 The AttachmentEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AttachmentEntity](SuperOffice.WebApi.Data.AttachmentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AttachmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AttachmentEntity)\&gt;
 
 New or updated AttachmentEntity
 
@@ -1516,17 +1516,17 @@ Task<TicketEntity> SaveTicketEntityAsync(TicketEntity ticketEntity, RequestOptio
 
 #### Parameters
 
-`ticketEntity` [TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)
+`ticketEntity` [TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity)
 
 The TicketEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity)\&gt;
 
 New or updated TicketEntity
 
@@ -1540,7 +1540,7 @@ Task<TicketEntity> SaveTicketEntityWithNotifyAsync(TicketEntity newEntity, bool 
 
 #### Parameters
 
-`newEntity` [TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)
+`newEntity` [TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity)
 
 The ticket to save
 
@@ -1548,13 +1548,13 @@ The ticket to save
 
 If true, then the notifications will be sent
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity)\&gt;
 
 The newly saved entity
 
@@ -1568,17 +1568,17 @@ Task<TicketMessageEntity> SaveTicketMessageEntityAsync(TicketMessageEntity ticke
 
 #### Parameters
 
-`ticketMessageEntity` [TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)
+`ticketMessageEntity` [TicketMessageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageEntity)
 
 The TicketMessageEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketMessageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageEntity)\&gt;
 
 New or updated TicketMessageEntity
 
@@ -1592,7 +1592,7 @@ Task<TicketMessageEntity> SaveTicketMessageEntityWithNotifyAsync(TicketMessageEn
 
 #### Parameters
 
-`newEntity` [TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)
+`newEntity` [TicketMessageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageEntity)
 
 The ticket message to save
 
@@ -1600,13 +1600,13 @@ The ticket message to save
 
 If true, then the notification will be sent along with the save
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketMessageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageEntity)\&gt;
 
 The saved entity
 
@@ -1620,7 +1620,7 @@ Task<TicketMessageEntity> SaveTicketMessageEntityWithOptionsAsync(TicketMessageE
 
 #### Parameters
 
-`entity` [TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)
+`entity` [TicketMessageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageEntity)
 
 The ticket message to save
 
@@ -1636,13 +1636,13 @@ An array of attachments to connect to this TicketMessage
 
 Updates ticket's replied_at field if needed
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketMessageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageEntity)\&gt;
 
 The saved entity
 
@@ -1656,17 +1656,17 @@ Task<TicketRelationEntity> SaveTicketRelationEntityAsync(TicketRelationEntity ti
 
 #### Parameters
 
-`ticketRelationEntity` [TicketRelationEntity](SuperOffice.WebApi.Data.TicketRelationEntity.md)
+`ticketRelationEntity` [TicketRelationEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationEntity)
 
 The TicketRelationEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketRelationEntity](SuperOffice.WebApi.Data.TicketRelationEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketRelationEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationEntity)\&gt;
 
 New or updated TicketRelationEntity
 
@@ -1708,7 +1708,7 @@ Optional ID of reply template to merge message with. &lt;= 0 to skip.
 
 Obsolete
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1740,7 +1740,7 @@ Optional ID of reply template to merge message with. &lt;= 0 to skip.
 
 The Sms-recipients. Each recipient must be in correct format
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1764,7 +1764,7 @@ Task<int[]> SetDeletedStatusByIdsAsync(int[] ticketIds, RequestOptions requestOp
 
 Ids of tickets to be set for deletion.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1788,11 +1788,11 @@ Task<int[]> SetDeletedStatusByProviderAsync(string providerName, ArchiveRestrict
 
 Name of the provider that returns ticket rows.
 
-`restrictions` [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
+`restrictions` [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
 
 Query restrictions to be added to provider. Fixed providers, such as LastTicketsProvider, FavouriteTicketsProvider etc. already have mandatory restrictions setup - in such case extra restrictions will be combined, however for general use case for fixed providers you can pass an empty array and provider will return default results. For selection providers generally you should pass selectionId as a restriction.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1816,7 +1816,7 @@ Task<int[]> SetSpamStatusByIdsAsync(int[] ticketIds, RequestOptions requestOptio
 
 Ids of tickets to be set for SPAM.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1840,11 +1840,11 @@ Task<int[]> SetSpamStatusByProviderAsync(string providerName, ArchiveRestriction
 
 Name of the provider that returns ticket rows.
 
-`restrictions` [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
+`restrictions` [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
 
 Query restrictions to be added to provider. Fixed providers, such as LastTicketsProvider, FavouriteTicketsProvider etc. already have mandatory restrictions setup - in such case extra restrictions will be combined, however for general use case for fixed providers you can pass an empty array and provider will return default results. For selection providers generally you should pass selectionId as a restriction.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1872,7 +1872,7 @@ The id of the ticket message to set the important flag on
 
 Turn on or off the important flag
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1904,7 +1904,7 @@ The id of the ticket to set as parent.
 
 Optional comment to store on the relation.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1928,7 +1928,7 @@ Task<TicketEntity> SetTicketReadByOwnerAsync(int ticketEntityId, TicketReadStatu
 
 The id of the ticket to set
 
-`readStatus` [TicketReadStatus](SuperOffice.WebApi.Data.TicketReadStatus.md)
+`readStatus` [TicketReadStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketReadStatus)
 
 The read status to set. See the enum for explanation of the different colors. Setting Unknown does nothing
 
@@ -1936,13 +1936,13 @@ The read status to set. See the enum for explanation of the different colors. Se
 
 If true, then the escalation system will be called and executed when setting the ReadByOwner
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity)\&gt;
 
 The ticket entity after setting the ReadByOwner
 
@@ -1972,17 +1972,17 @@ The activate date of the source ticket
 
 IDs of messages that should be transferred from the original ticket to the new one
 
-`newTicketEntity` [TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)
+`newTicketEntity` [TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity)
 
 The new ticket to save. Includes new values for simple properties like title, category, status, etc., but not messages.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity)\&gt;
 
 The newly created entity
 
@@ -1996,15 +1996,15 @@ Task<TicketEntity> SplitTicketMessageAsync(TicketMessageEntity sourceTicketMessa
 
 #### Parameters
 
-`sourceTicketMessage` [TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)
+`sourceTicketMessage` [TicketMessageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageEntity)
 
 The message being splitted, content can be modified as part of the split.
 
-`newTicketEntity` [TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)
+`newTicketEntity` [TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity)
 
 The new ticket to save. Includes new values for simple properties like title, category, status, etc., but not messages.
 
-`newTicketMessage` [TicketMessageEntity](SuperOffice.WebApi.Data.TicketMessageEntity.md)
+`newTicketMessage` [TicketMessageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageEntity)
 
 The new message to be saved
 
@@ -2012,13 +2012,13 @@ The new message to be saved
 
 IDs of attachments that should be transferred from the original message to the new one
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity)\&gt;
 
 The newly created entity
 
@@ -2036,7 +2036,7 @@ Task UndeleteByIdsAsync(int[] ticketIds, RequestOptions requestOptions = null)
 
 Ids of tickets to be restored.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2060,11 +2060,11 @@ Task<int[]> UpdateTicketsReadStatusAsync(int[] ticketIds, TicketReadStatus newSt
 
 Ticket ids to be updated
 
-`newStatus` [TicketReadStatus](SuperOffice.WebApi.Data.TicketReadStatus.md)
+`newStatus` [TicketReadStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketReadStatus)
 
 New read status
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2088,15 +2088,15 @@ Task<int[]> UpdateTicketsReadStatusByProviderAsync(string provider, ArchiveRestr
 
 Name of the provider that returns ticket rows.
 
-`restrictions` [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
+`restrictions` [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
 
 Query restrictions to be added to provider. Fixed providers, such as LastTicketsProvider, FavouriteTicketsProvider etc. already have mandatory restrictions setup - in such case extra restrictions will be combined, however for general use case for fixed providers you can pass an empty array and provider will return default results. For selection providers generally you should pass selectionId as a restriction.
 
-`newStatus` [TicketReadStatus](SuperOffice.WebApi.Data.TicketReadStatus.md)
+`newStatus` [TicketReadStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketReadStatus)
 
 New read status
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2124,7 +2124,7 @@ The id of the attachment row, for which to attach the upload data
 
 A stream to the content to be uploaded
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2148,13 +2148,13 @@ Task<AttachmentValidationResult[]> ValidateAttachmentsAsync(int[] attachmentIds,
 
 The IDs of the attachments to validate
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AttachmentValidationResult](SuperOffice.WebApi.Data.AttachmentValidationResult.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AttachmentValidationResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.AttachmentValidationResult)\[\]\&gt;
 
 Validation result
 
@@ -2176,17 +2176,17 @@ The ids of the tickets to relate to the destination ticket.
 
 The id of the ticket that the source tickets will be related to.
 
-`relationType` [TicketRelationType](SuperOffice.WebApi.Data.TicketRelationType.md)
+`relationType` [TicketRelationType](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationType)
 
 The type of relation to create.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketRelationResult](SuperOffice.WebApi.Data.TicketRelationResult.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketRelationResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationResult)\[\]\&gt;
 
 Validation results, one per source ticket id.
 

@@ -1,6 +1,6 @@
 # Class TicketCategoryEntity {#SuperOffice_WebApi_Data_TicketCategoryEntity}
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TicketCategoryEntity.
@@ -13,13 +13,13 @@ public class TicketCategoryEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[TicketCategoryEntity](SuperOffice.WebApi.Data.TicketCategoryEntity.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[TicketCategoryEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -83,11 +83,11 @@ public TicketCategoryClosingStatus? ClosingStatus { get; set; }
 
 #### Property Value
 
- [TicketCategoryClosingStatus](SuperOffice.WebApi.Data.TicketCategoryClosingStatus.md)?
+ [TicketCategoryClosingStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryClosingStatus)?
 
 #### See Also
 
-[TicketCategoryEntity](SuperOffice.WebApi.Data.TicketCategoryEntity.md).[ClosingStatus\_String](SuperOffice.WebApi.Data.TicketCategoryEntity.md\#SuperOffice\_WebApi\_Data\_TicketCategoryEntity\_ClosingStatus\_String)
+[TicketCategoryEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity).[ClosingStatus\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity#SuperOffice_WebApi_Data_TicketCategoryEntity_ClosingStatus_String)
 
 ### ClosingStatus\_String {#SuperOffice_WebApi_Data_TicketCategoryEntity_ClosingStatus_String}
 
@@ -105,7 +105,7 @@ public string ClosingStatus_String { get; set; }
 
 #### See Also
 
-[TicketCategoryEntity](SuperOffice.WebApi.Data.TicketCategoryEntity.md).[ClosingStatus](SuperOffice.WebApi.Data.TicketCategoryEntity.md\#SuperOffice\_WebApi\_Data\_TicketCategoryEntity\_ClosingStatus)
+[TicketCategoryEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity).[ClosingStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity#SuperOffice_WebApi_Data_TicketCategoryEntity_ClosingStatus)
 
 ### CustomFields {#SuperOffice_WebApi_Data_TicketCategoryEntity_CustomFields}
 
@@ -121,7 +121,7 @@ public virtual StringDictionary CustomFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 #### Remarks
 
@@ -144,7 +144,7 @@ public virtual TicketStatusEntity DefaultMessageStatus { get; set; }
 
 #### Property Value
 
- [TicketStatusEntity](SuperOffice.WebApi.Data.TicketStatusEntity.md)
+ [TicketStatusEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStatusEntity)
 
 ### DefaultTicketStatus {#SuperOffice_WebApi_Data_TicketCategoryEntity_DefaultTicketStatus}
 
@@ -156,7 +156,7 @@ public virtual TicketStatusEntity DefaultTicketStatus { get; set; }
 
 #### Property Value
 
- [TicketStatusEntity](SuperOffice.WebApi.Data.TicketStatusEntity.md)
+ [TicketStatusEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStatusEntity)
 
 ### DelegateMethod {#SuperOffice_WebApi_Data_TicketCategoryEntity_DelegateMethod}
 
@@ -170,11 +170,11 @@ public TicketCategoryDelegateMethod? DelegateMethod { get; set; }
 
 #### Property Value
 
- [TicketCategoryDelegateMethod](SuperOffice.WebApi.Data.TicketCategoryDelegateMethod.md)?
+ [TicketCategoryDelegateMethod](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryDelegateMethod)?
 
 #### See Also
 
-[TicketCategoryEntity](SuperOffice.WebApi.Data.TicketCategoryEntity.md).[DelegateMethod\_String](SuperOffice.WebApi.Data.TicketCategoryEntity.md\#SuperOffice\_WebApi\_Data\_TicketCategoryEntity\_DelegateMethod\_String)
+[TicketCategoryEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity).[DelegateMethod\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity#SuperOffice_WebApi_Data_TicketCategoryEntity_DelegateMethod_String)
 
 ### DelegateMethod\_String {#SuperOffice_WebApi_Data_TicketCategoryEntity_DelegateMethod_String}
 
@@ -192,7 +192,7 @@ public string DelegateMethod_String { get; set; }
 
 #### See Also
 
-[TicketCategoryEntity](SuperOffice.WebApi.Data.TicketCategoryEntity.md).[DelegateMethod](SuperOffice.WebApi.Data.TicketCategoryEntity.md\#SuperOffice\_WebApi\_Data\_TicketCategoryEntity\_DelegateMethod)
+[TicketCategoryEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity).[DelegateMethod](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity#SuperOffice_WebApi_Data_TicketCategoryEntity_DelegateMethod)
 
 ### EffectiveReplyTemplateId {#SuperOffice_WebApi_Data_TicketCategoryEntity_EffectiveReplyTemplateId}
 
@@ -230,7 +230,7 @@ public virtual StringDictionary ExtraFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 #### Remarks
 
@@ -263,11 +263,11 @@ public TicketCategoryFlags? Flags { get; set; }
 
 #### Property Value
 
- [TicketCategoryFlags](SuperOffice.WebApi.Data.TicketCategoryFlags.md)?
+ [TicketCategoryFlags](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryFlags)?
 
 #### See Also
 
-[TicketCategoryEntity](SuperOffice.WebApi.Data.TicketCategoryEntity.md).[Flags\_String](SuperOffice.WebApi.Data.TicketCategoryEntity.md\#SuperOffice\_WebApi\_Data\_TicketCategoryEntity\_Flags\_String)
+[TicketCategoryEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity).[Flags\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity#SuperOffice_WebApi_Data_TicketCategoryEntity_Flags_String)
 
 ### Flags\_String {#SuperOffice_WebApi_Data_TicketCategoryEntity_Flags_String}
 
@@ -285,7 +285,7 @@ public string Flags_String { get; set; }
 
 #### See Also
 
-[TicketCategoryEntity](SuperOffice.WebApi.Data.TicketCategoryEntity.md).[Flags](SuperOffice.WebApi.Data.TicketCategoryEntity.md\#SuperOffice\_WebApi\_Data\_TicketCategoryEntity\_Flags)
+[TicketCategoryEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity).[Flags](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity#SuperOffice_WebApi_Data_TicketCategoryEntity_Flags)
 
 ### Fullname {#SuperOffice_WebApi_Data_TicketCategoryEntity_Fullname}
 
@@ -311,11 +311,11 @@ public TicketCategoryClosingStatus? MsgClosingStatus { get; set; }
 
 #### Property Value
 
- [TicketCategoryClosingStatus](SuperOffice.WebApi.Data.TicketCategoryClosingStatus.md)?
+ [TicketCategoryClosingStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryClosingStatus)?
 
 #### See Also
 
-[TicketCategoryEntity](SuperOffice.WebApi.Data.TicketCategoryEntity.md).[MsgClosingStatus\_String](SuperOffice.WebApi.Data.TicketCategoryEntity.md\#SuperOffice\_WebApi\_Data\_TicketCategoryEntity\_MsgClosingStatus\_String)
+[TicketCategoryEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity).[MsgClosingStatus\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity#SuperOffice_WebApi_Data_TicketCategoryEntity_MsgClosingStatus_String)
 
 ### MsgClosingStatus\_String {#SuperOffice_WebApi_Data_TicketCategoryEntity_MsgClosingStatus_String}
 
@@ -333,7 +333,7 @@ public string MsgClosingStatus_String { get; set; }
 
 #### See Also
 
-[TicketCategoryEntity](SuperOffice.WebApi.Data.TicketCategoryEntity.md).[MsgClosingStatus](SuperOffice.WebApi.Data.TicketCategoryEntity.md\#SuperOffice\_WebApi\_Data\_TicketCategoryEntity\_MsgClosingStatus)
+[TicketCategoryEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity).[MsgClosingStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity#SuperOffice_WebApi_Data_TicketCategoryEntity_MsgClosingStatus)
 
 ### Name {#SuperOffice_WebApi_Data_TicketCategoryEntity_Name}
 
@@ -397,5 +397,5 @@ public virtual int TicketCategoryId { get; set; }
 
 ## See Also
 
-[ListAgent](SuperOffice.WebApi.Agents.ListAgent.md)
+[ListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ListAgent)
 

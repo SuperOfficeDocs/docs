@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_VideoMeetingStatus"></a> Enum VideoMeetingStatus
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Default video-meeting status for meetings created in SuperOffice CRM

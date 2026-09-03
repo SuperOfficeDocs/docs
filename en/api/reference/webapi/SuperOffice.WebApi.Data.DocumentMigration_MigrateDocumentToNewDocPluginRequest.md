@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DocumentMigration_MigrateDocumentToNewDocPluginRequest"></a> Class DocumentMigration\_MigrateDocumentToNewDocPluginRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class DocumentMigration_MigrateDocumentToNewDocPluginRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[DocumentMigration\_MigrateDocumentToNewDocPluginRequest](SuperOffice.WebApi.Data.DocumentMigration\_MigrateDocumentToNewDocPluginRequest.md)
+[DocumentMigration\_MigrateDocumentToNewDocPluginRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentMigration_MigrateDocumentToNewDocPluginRequest)
 
 #### Inherited Members
 

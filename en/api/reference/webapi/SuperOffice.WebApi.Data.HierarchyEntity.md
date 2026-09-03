@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_HierarchyEntity"></a> Class HierarchyEntity
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for HierarchyEntity.
@@ -13,13 +13,13 @@ public class HierarchyEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[HierarchyEntity](SuperOffice.WebApi.Data.HierarchyEntity.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[HierarchyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HierarchyEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -57,7 +57,7 @@ public virtual HierarchyEntity[] Children { get; set; }
 
 #### Property Value
 
- [HierarchyEntity](SuperOffice.WebApi.Data.HierarchyEntity.md)\[\]
+ [HierarchyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HierarchyEntity)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_HierarchyEntity_Domain"></a> Domain
 
@@ -71,11 +71,11 @@ public Domain? Domain { get; set; }
 
 #### Property Value
 
- [Domain](SuperOffice.WebApi.Data.Domain.md)?
+ [Domain](/en/api/reference/webapi/SuperOffice.WebApi.Data.Domain)?
 
 #### See Also
 
-[HierarchyEntity](SuperOffice.WebApi.Data.HierarchyEntity.md).[Domain\_String](SuperOffice.WebApi.Data.HierarchyEntity.md\#SuperOffice\_WebApi\_Data\_HierarchyEntity\_Domain\_String)
+[HierarchyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HierarchyEntity).[Domain\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.HierarchyEntity#SuperOffice_WebApi_Data_HierarchyEntity_Domain_String)
 
 ### <a id="SuperOffice_WebApi_Data_HierarchyEntity_Domain_String"></a> Domain\_String
 
@@ -93,7 +93,7 @@ public string Domain_String { get; set; }
 
 #### See Also
 
-[HierarchyEntity](SuperOffice.WebApi.Data.HierarchyEntity.md).[Domain](SuperOffice.WebApi.Data.HierarchyEntity.md\#SuperOffice\_WebApi\_Data\_HierarchyEntity\_Domain)
+[HierarchyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HierarchyEntity).[Domain](/en/api/reference/webapi/SuperOffice.WebApi.Data.HierarchyEntity#SuperOffice_WebApi_Data_HierarchyEntity_Domain)
 
 ### <a id="SuperOffice_WebApi_Data_HierarchyEntity_Fullname"></a> Fullname
 
@@ -193,5 +193,5 @@ public virtual int UpdatedAssociateId { get; set; }
 
 ## See Also
 
-[ListAgent](SuperOffice.WebApi.Agents.ListAgent.md)
+[ListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ListAgent)
 

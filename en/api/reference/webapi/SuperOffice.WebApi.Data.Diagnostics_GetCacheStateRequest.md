@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Diagnostics_GetCacheStateRequest"></a> Class Diagnostics\_GetCacheStateRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Diagnostics_GetCacheStateRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Diagnostics\_GetCacheStateRequest](SuperOffice.WebApi.Data.Diagnostics\_GetCacheStateRequest.md)
+[Diagnostics\_GetCacheStateRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Diagnostics_GetCacheStateRequest)
 
 #### Inherited Members
 

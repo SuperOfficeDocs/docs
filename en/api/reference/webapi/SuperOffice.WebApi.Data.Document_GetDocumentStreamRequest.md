@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_GetDocumentStreamRequest"></a> Class Document\_GetDocumentStreamRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_GetDocumentStreamRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_GetDocumentStreamRequest](SuperOffice.WebApi.Data.Document\_GetDocumentStreamRequest.md)
+[Document\_GetDocumentStreamRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_GetDocumentStreamRequest)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EmailFlow"></a> Class EmailFlow
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for EmailFlow.
@@ -13,13 +13,13 @@ public class EmailFlow : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[EmailFlow](SuperOffice.WebApi.Data.EmailFlow.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[EmailFlow](/en/api/reference/webapi/SuperOffice.WebApi.Data.EmailFlow)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -58,7 +58,7 @@ public virtual Associate Associate { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### <a id="SuperOffice_WebApi_Data_EmailFlow_BlockLists"></a> BlockLists
 
@@ -82,7 +82,7 @@ public virtual WorkflowContentInfo[] ContentInfo { get; set; }
 
 #### Property Value
 
- [WorkflowContentInfo](SuperOffice.WebApi.Data.WorkflowContentInfo.md)\[\]
+ [WorkflowContentInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowContentInfo)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_EmailFlow_CreatedBy"></a> CreatedBy
 
@@ -94,7 +94,7 @@ public virtual Associate CreatedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### <a id="SuperOffice_WebApi_Data_EmailFlow_CreatedDate"></a> CreatedDate
 
@@ -178,7 +178,7 @@ public virtual WorkflowFilter Filter { get; set; }
 
 #### Property Value
 
- [WorkflowFilter](SuperOffice.WebApi.Data.WorkflowFilter.md)
+ [WorkflowFilter](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowFilter)
 
 ### <a id="SuperOffice_WebApi_Data_EmailFlow_Folder"></a> Folder
 
@@ -191,7 +191,7 @@ public virtual HierarchyEntity Folder { get; set; }
 
 #### Property Value
 
- [HierarchyEntity](SuperOffice.WebApi.Data.HierarchyEntity.md)
+ [HierarchyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HierarchyEntity)
 
 ### <a id="SuperOffice_WebApi_Data_EmailFlow_FromAddr"></a> FromAddr
 
@@ -229,11 +229,11 @@ public EmailFromType? FromType { get; set; }
 
 #### Property Value
 
- [EmailFromType](SuperOffice.WebApi.Data.EmailFromType.md)?
+ [EmailFromType](/en/api/reference/webapi/SuperOffice.WebApi.Data.EmailFromType)?
 
 #### See Also
 
-[EmailFlow](SuperOffice.WebApi.Data.EmailFlow.md).[FromType\_String](SuperOffice.WebApi.Data.EmailFlow.md\#SuperOffice\_WebApi\_Data\_EmailFlow\_FromType\_String)
+[EmailFlow](/en/api/reference/webapi/SuperOffice.WebApi.Data.EmailFlow).[FromType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.EmailFlow#SuperOffice_WebApi_Data_EmailFlow_FromType_String)
 
 ### <a id="SuperOffice_WebApi_Data_EmailFlow_FromType_String"></a> FromType\_String
 
@@ -251,7 +251,7 @@ public string FromType_String { get; set; }
 
 #### See Also
 
-[EmailFlow](SuperOffice.WebApi.Data.EmailFlow.md).[FromType](SuperOffice.WebApi.Data.EmailFlow.md\#SuperOffice\_WebApi\_Data\_EmailFlow\_FromType)
+[EmailFlow](/en/api/reference/webapi/SuperOffice.WebApi.Data.EmailFlow).[FromType](/en/api/reference/webapi/SuperOffice.WebApi.Data.EmailFlow#SuperOffice_WebApi_Data_EmailFlow_FromType)
 
 ### <a id="SuperOffice_WebApi_Data_EmailFlow_GaCampaign"></a> GaCampaign
 
@@ -287,7 +287,7 @@ public virtual WorkflowGoal[] Goals { get; set; }
 
 #### Property Value
 
- [WorkflowGoal](SuperOffice.WebApi.Data.WorkflowGoal.md)\[\]
+ [WorkflowGoal](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowGoal)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_EmailFlow_JumpToFinish"></a> JumpToFinish
 
@@ -373,11 +373,11 @@ public EmailReplyToType? ReplyToType { get; set; }
 
 #### Property Value
 
- [EmailReplyToType](SuperOffice.WebApi.Data.EmailReplyToType.md)?
+ [EmailReplyToType](/en/api/reference/webapi/SuperOffice.WebApi.Data.EmailReplyToType)?
 
 #### See Also
 
-[EmailFlow](SuperOffice.WebApi.Data.EmailFlow.md).[ReplyToType\_String](SuperOffice.WebApi.Data.EmailFlow.md\#SuperOffice\_WebApi\_Data\_EmailFlow\_ReplyToType\_String)
+[EmailFlow](/en/api/reference/webapi/SuperOffice.WebApi.Data.EmailFlow).[ReplyToType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.EmailFlow#SuperOffice_WebApi_Data_EmailFlow_ReplyToType_String)
 
 ### <a id="SuperOffice_WebApi_Data_EmailFlow_ReplyToType_String"></a> ReplyToType\_String
 
@@ -395,7 +395,7 @@ public string ReplyToType_String { get; set; }
 
 #### See Also
 
-[EmailFlow](SuperOffice.WebApi.Data.EmailFlow.md).[ReplyToType](SuperOffice.WebApi.Data.EmailFlow.md\#SuperOffice\_WebApi\_Data\_EmailFlow\_ReplyToType)
+[EmailFlow](/en/api/reference/webapi/SuperOffice.WebApi.Data.EmailFlow).[ReplyToType](/en/api/reference/webapi/SuperOffice.WebApi.Data.EmailFlow#SuperOffice_WebApi_Data_EmailFlow_ReplyToType)
 
 ### <a id="SuperOffice_WebApi_Data_EmailFlow_SelectedDays"></a> SelectedDays
 
@@ -409,11 +409,11 @@ public Weekday? SelectedDays { get; set; }
 
 #### Property Value
 
- [Weekday](SuperOffice.WebApi.Data.Weekday.md)?
+ [Weekday](/en/api/reference/webapi/SuperOffice.WebApi.Data.Weekday)?
 
 #### See Also
 
-[EmailFlow](SuperOffice.WebApi.Data.EmailFlow.md).[SelectedDays\_String](SuperOffice.WebApi.Data.EmailFlow.md\#SuperOffice\_WebApi\_Data\_EmailFlow\_SelectedDays\_String)
+[EmailFlow](/en/api/reference/webapi/SuperOffice.WebApi.Data.EmailFlow).[SelectedDays\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.EmailFlow#SuperOffice_WebApi_Data_EmailFlow_SelectedDays_String)
 
 ### <a id="SuperOffice_WebApi_Data_EmailFlow_SelectedDays_String"></a> SelectedDays\_String
 
@@ -431,7 +431,7 @@ public string SelectedDays_String { get; set; }
 
 #### See Also
 
-[EmailFlow](SuperOffice.WebApi.Data.EmailFlow.md).[SelectedDays](SuperOffice.WebApi.Data.EmailFlow.md\#SuperOffice\_WebApi\_Data\_EmailFlow\_SelectedDays)
+[EmailFlow](/en/api/reference/webapi/SuperOffice.WebApi.Data.EmailFlow).[SelectedDays](/en/api/reference/webapi/SuperOffice.WebApi.Data.EmailFlow#SuperOffice_WebApi_Data_EmailFlow_SelectedDays)
 
 ### <a id="SuperOffice_WebApi_Data_EmailFlow_ShipmentType"></a> ShipmentType
 
@@ -443,7 +443,7 @@ public virtual MDOListItem ShipmentType { get; set; }
 
 #### Property Value
 
- [MDOListItem](SuperOffice.WebApi.Data.MDOListItem.md)
+ [MDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.MDOListItem)
 
 ### <a id="SuperOffice_WebApi_Data_EmailFlow_SmsSender"></a> SmsSender
 
@@ -481,11 +481,11 @@ public WorkflowDefinitionStatus? Status { get; set; }
 
 #### Property Value
 
- [WorkflowDefinitionStatus](SuperOffice.WebApi.Data.WorkflowDefinitionStatus.md)?
+ [WorkflowDefinitionStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowDefinitionStatus)?
 
 #### See Also
 
-[EmailFlow](SuperOffice.WebApi.Data.EmailFlow.md).[Status\_String](SuperOffice.WebApi.Data.EmailFlow.md\#SuperOffice\_WebApi\_Data\_EmailFlow\_Status\_String)
+[EmailFlow](/en/api/reference/webapi/SuperOffice.WebApi.Data.EmailFlow).[Status\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.EmailFlow#SuperOffice_WebApi_Data_EmailFlow_Status_String)
 
 ### <a id="SuperOffice_WebApi_Data_EmailFlow_Status_String"></a> Status\_String
 
@@ -503,7 +503,7 @@ public string Status_String { get; set; }
 
 #### See Also
 
-[EmailFlow](SuperOffice.WebApi.Data.EmailFlow.md).[Status](SuperOffice.WebApi.Data.EmailFlow.md\#SuperOffice\_WebApi\_Data\_EmailFlow\_Status)
+[EmailFlow](/en/api/reference/webapi/SuperOffice.WebApi.Data.EmailFlow).[Status](/en/api/reference/webapi/SuperOffice.WebApi.Data.EmailFlow#SuperOffice_WebApi_Data_EmailFlow_Status)
 
 ### <a id="SuperOffice_WebApi_Data_EmailFlow_Steps"></a> Steps
 
@@ -515,7 +515,7 @@ public virtual WorkflowStepBase[] Steps { get; set; }
 
 #### Property Value
 
- [WorkflowStepBase](SuperOffice.WebApi.Data.WorkflowStepBase.md)\[\]
+ [WorkflowStepBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_EmailFlow_TimeframeEnd"></a> TimeframeEnd
 
@@ -551,7 +551,7 @@ public virtual WorkflowTrigger[] Triggers { get; set; }
 
 #### Property Value
 
- [WorkflowTrigger](SuperOffice.WebApi.Data.WorkflowTrigger.md)\[\]
+ [WorkflowTrigger](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowTrigger)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_EmailFlow_TzLocation"></a> TzLocation
 
@@ -563,7 +563,7 @@ public virtual TimeZoneData TzLocation { get; set; }
 
 #### Property Value
 
- [TimeZoneData](SuperOffice.WebApi.Data.TimeZoneData.md)
+ [TimeZoneData](/en/api/reference/webapi/SuperOffice.WebApi.Data.TimeZoneData)
 
 ### <a id="SuperOffice_WebApi_Data_EmailFlow_UpdatedBy"></a> UpdatedBy
 
@@ -575,7 +575,7 @@ public virtual Associate UpdatedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### <a id="SuperOffice_WebApi_Data_EmailFlow_UpdatedDate"></a> UpdatedDate
 
@@ -647,7 +647,7 @@ public virtual VisibleFor[] VisibleFor { get; set; }
 
 #### Property Value
 
- [VisibleFor](SuperOffice.WebApi.Data.VisibleFor.md)\[\]
+ [VisibleFor](/en/api/reference/webapi/SuperOffice.WebApi.Data.VisibleFor)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_EmailFlow_WorkflowStart"></a> WorkflowStart
 
@@ -663,5 +663,5 @@ public virtual string WorkflowStart { get; set; }
 
 ## See Also
 
-[WorkflowAgent](SuperOffice.WebApi.Agents.WorkflowAgent.md)
+[WorkflowAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.WorkflowAgent)
 

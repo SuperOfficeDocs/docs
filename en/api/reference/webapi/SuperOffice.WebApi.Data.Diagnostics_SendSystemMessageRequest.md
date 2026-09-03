@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Diagnostics_SendSystemMessageRequest"></a> Class Diagnostics\_SendSystemMessageRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Diagnostics_SendSystemMessageRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Diagnostics\_SendSystemMessageRequest](SuperOffice.WebApi.Data.Diagnostics\_SendSystemMessageRequest.md)
+[Diagnostics\_SendSystemMessageRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Diagnostics_SendSystemMessageRequest)
 
 #### Inherited Members
 
@@ -80,5 +80,5 @@ public SystemMessageType Type { get; set; }
 
 #### Property Value
 
- [SystemMessageType](SuperOffice.WebApi.Data.SystemMessageType.md)
+ [SystemMessageType](/en/api/reference/webapi/SuperOffice.WebApi.Data.SystemMessageType)
 

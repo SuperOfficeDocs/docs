@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Configuration_GetCSWwwFolderRequest"></a> Class Configuration\_GetCSWwwFolderRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Configuration_GetCSWwwFolderRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Configuration\_GetCSWwwFolderRequest](SuperOffice.WebApi.Data.Configuration\_GetCSWwwFolderRequest.md)
+[Configuration\_GetCSWwwFolderRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_GetCSWwwFolderRequest)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_MoveExtendedRequest"></a> Class Appointment\_MoveExtendedRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_MoveExtendedRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_MoveExtendedRequest](SuperOffice.WebApi.Data.Appointment\_MoveExtendedRequest.md)
+[Appointment\_MoveExtendedRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_MoveExtendedRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public AppointmentMoveData AppointmentMoveData { get; set; }
 
 #### Property Value
 
- [AppointmentMoveData](SuperOffice.WebApi.Data.AppointmentMoveData.md)
+ [AppointmentMoveData](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentMoveData)
 

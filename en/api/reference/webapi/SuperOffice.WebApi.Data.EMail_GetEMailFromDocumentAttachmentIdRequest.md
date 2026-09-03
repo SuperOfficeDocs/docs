@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_GetEMailFromDocumentAttachmentIdRequest"></a> Class EMail\_GetEMailFromDocumentAttachmentIdRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_GetEMailFromDocumentAttachmentIdRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_GetEMailFromDocumentAttachmentIdRequest](SuperOffice.WebApi.Data.EMail\_GetEMailFromDocumentAttachmentIdRequest.md)
+[EMail\_GetEMailFromDocumentAttachmentIdRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_GetEMailFromDocumentAttachmentIdRequest)
 
 #### Inherited Members
 

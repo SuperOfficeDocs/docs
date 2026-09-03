@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Diagnostics_ResyncUsersRequest"></a> Class Diagnostics\_ResyncUsersRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Diagnostics_ResyncUsersRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Diagnostics\_ResyncUsersRequest](SuperOffice.WebApi.Data.Diagnostics\_ResyncUsersRequest.md)
+[Diagnostics\_ResyncUsersRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Diagnostics_ResyncUsersRequest)
 
 #### Inherited Members
 

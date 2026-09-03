@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Configuration_GetRecipeAppliesToMappingsRequest"></a> Class Configuration\_GetRecipeAppliesToMappingsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Configuration_GetRecipeAppliesToMappingsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Configuration\_GetRecipeAppliesToMappingsRequest](SuperOffice.WebApi.Data.Configuration\_GetRecipeAppliesToMappingsRequest.md)
+[Configuration\_GetRecipeAppliesToMappingsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_GetRecipeAppliesToMappingsRequest)
 
 #### Inherited Members
 

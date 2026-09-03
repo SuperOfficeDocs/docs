@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_RecurrenceMonthPattern"></a> Class RecurrenceMonthPattern
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for RecurrenceMonthPattern.
@@ -13,7 +13,7 @@ public class RecurrenceMonthPattern
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[RecurrenceMonthPattern](SuperOffice.WebApi.Data.RecurrenceMonthPattern.md)
+[RecurrenceMonthPattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceMonthPattern)
 
 #### Inherited Members
 
@@ -73,11 +73,11 @@ public RecurrenceMonthlyPattern? Pattern { get; set; }
 
 #### Property Value
 
- [RecurrenceMonthlyPattern](SuperOffice.WebApi.Data.RecurrenceMonthlyPattern.md)?
+ [RecurrenceMonthlyPattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceMonthlyPattern)?
 
 #### See Also
 
-[RecurrenceMonthPattern](SuperOffice.WebApi.Data.RecurrenceMonthPattern.md).[Pattern\_String](SuperOffice.WebApi.Data.RecurrenceMonthPattern.md\#SuperOffice\_WebApi\_Data\_RecurrenceMonthPattern\_Pattern\_String)
+[RecurrenceMonthPattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceMonthPattern).[Pattern\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceMonthPattern#SuperOffice_WebApi_Data_RecurrenceMonthPattern_Pattern_String)
 
 ### <a id="SuperOffice_WebApi_Data_RecurrenceMonthPattern_Pattern_String"></a> Pattern\_String
 
@@ -95,7 +95,7 @@ public string Pattern_String { get; set; }
 
 #### See Also
 
-[RecurrenceMonthPattern](SuperOffice.WebApi.Data.RecurrenceMonthPattern.md).[Pattern](SuperOffice.WebApi.Data.RecurrenceMonthPattern.md\#SuperOffice\_WebApi\_Data\_RecurrenceMonthPattern\_Pattern)
+[RecurrenceMonthPattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceMonthPattern).[Pattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceMonthPattern#SuperOffice_WebApi_Data_RecurrenceMonthPattern_Pattern)
 
 ### <a id="SuperOffice_WebApi_Data_RecurrenceMonthPattern_WeekOfMonth"></a> WeekOfMonth
 
@@ -109,11 +109,11 @@ public WeekOfMonth? WeekOfMonth { get; set; }
 
 #### Property Value
 
- [WeekOfMonth](SuperOffice.WebApi.Data.WeekOfMonth.md)?
+ [WeekOfMonth](/en/api/reference/webapi/SuperOffice.WebApi.Data.WeekOfMonth)?
 
 #### See Also
 
-[RecurrenceMonthPattern](SuperOffice.WebApi.Data.RecurrenceMonthPattern.md).[WeekOfMonth\_String](SuperOffice.WebApi.Data.RecurrenceMonthPattern.md\#SuperOffice\_WebApi\_Data\_RecurrenceMonthPattern\_WeekOfMonth\_String)
+[RecurrenceMonthPattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceMonthPattern).[WeekOfMonth\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceMonthPattern#SuperOffice_WebApi_Data_RecurrenceMonthPattern_WeekOfMonth_String)
 
 ### <a id="SuperOffice_WebApi_Data_RecurrenceMonthPattern_WeekOfMonth_String"></a> WeekOfMonth\_String
 
@@ -131,7 +131,7 @@ public string WeekOfMonth_String { get; set; }
 
 #### See Also
 
-[RecurrenceMonthPattern](SuperOffice.WebApi.Data.RecurrenceMonthPattern.md).[WeekOfMonth](SuperOffice.WebApi.Data.RecurrenceMonthPattern.md\#SuperOffice\_WebApi\_Data\_RecurrenceMonthPattern\_WeekOfMonth)
+[RecurrenceMonthPattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceMonthPattern).[WeekOfMonth](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceMonthPattern#SuperOffice_WebApi_Data_RecurrenceMonthPattern_WeekOfMonth)
 
 ### <a id="SuperOffice_WebApi_Data_RecurrenceMonthPattern_Weekday"></a> Weekday
 
@@ -145,11 +145,11 @@ public Weekday? Weekday { get; set; }
 
 #### Property Value
 
- [Weekday](SuperOffice.WebApi.Data.Weekday.md)?
+ [Weekday](/en/api/reference/webapi/SuperOffice.WebApi.Data.Weekday)?
 
 #### See Also
 
-[RecurrenceMonthPattern](SuperOffice.WebApi.Data.RecurrenceMonthPattern.md).[Weekday\_String](SuperOffice.WebApi.Data.RecurrenceMonthPattern.md\#SuperOffice\_WebApi\_Data\_RecurrenceMonthPattern\_Weekday\_String)
+[RecurrenceMonthPattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceMonthPattern).[Weekday\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceMonthPattern#SuperOffice_WebApi_Data_RecurrenceMonthPattern_Weekday_String)
 
 ### <a id="SuperOffice_WebApi_Data_RecurrenceMonthPattern_Weekday_String"></a> Weekday\_String
 
@@ -167,5 +167,5 @@ public string Weekday_String { get; set; }
 
 #### See Also
 
-[RecurrenceMonthPattern](SuperOffice.WebApi.Data.RecurrenceMonthPattern.md).[Weekday](SuperOffice.WebApi.Data.RecurrenceMonthPattern.md\#SuperOffice\_WebApi\_Data\_RecurrenceMonthPattern\_Weekday)
+[RecurrenceMonthPattern](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceMonthPattern).[Weekday](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceMonthPattern#SuperOffice_WebApi_Data_RecurrenceMonthPattern_Weekday)
 

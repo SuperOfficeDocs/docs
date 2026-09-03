@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DocumentTemplate"></a> Class DocumentTemplate
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for DocumentTemplate.
@@ -13,13 +13,13 @@ public class DocumentTemplate : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[DocumentTemplate](SuperOffice.WebApi.Data.DocumentTemplate.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[DocumentTemplate](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplate)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -95,11 +95,11 @@ public DocTmplDirection? Direction { get; set; }
 
 #### Property Value
 
- [DocTmplDirection](SuperOffice.WebApi.Data.DocTmplDirection.md)?
+ [DocTmplDirection](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocTmplDirection)?
 
 #### See Also
 
-[DocumentTemplate](SuperOffice.WebApi.Data.DocumentTemplate.md).[Direction\_String](SuperOffice.WebApi.Data.DocumentTemplate.md\#SuperOffice\_WebApi\_Data\_DocumentTemplate\_Direction\_String)
+[DocumentTemplate](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplate).[Direction\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplate#SuperOffice_WebApi_Data_DocumentTemplate_Direction_String)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentTemplate_Direction_String"></a> Direction\_String
 
@@ -117,7 +117,7 @@ public string Direction_String { get; set; }
 
 #### See Also
 
-[DocumentTemplate](SuperOffice.WebApi.Data.DocumentTemplate.md).[Direction](SuperOffice.WebApi.Data.DocumentTemplate.md\#SuperOffice\_WebApi\_Data\_DocumentTemplate\_Direction)
+[DocumentTemplate](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplate).[Direction](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplate#SuperOffice_WebApi_Data_DocumentTemplate_Direction)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentTemplate_DocumentTemplateId"></a> DocumentTemplateId
 
@@ -167,11 +167,11 @@ public DocTmplQuoteType? QuoteDocType { get; set; }
 
 #### Property Value
 
- [DocTmplQuoteType](SuperOffice.WebApi.Data.DocTmplQuoteType.md)?
+ [DocTmplQuoteType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocTmplQuoteType)?
 
 #### See Also
 
-[DocumentTemplate](SuperOffice.WebApi.Data.DocumentTemplate.md).[QuoteDocType\_String](SuperOffice.WebApi.Data.DocumentTemplate.md\#SuperOffice\_WebApi\_Data\_DocumentTemplate\_QuoteDocType\_String)
+[DocumentTemplate](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplate).[QuoteDocType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplate#SuperOffice_WebApi_Data_DocumentTemplate_QuoteDocType_String)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentTemplate_QuoteDocType_String"></a> QuoteDocType\_String
 
@@ -189,7 +189,7 @@ public string QuoteDocType_String { get; set; }
 
 #### See Also
 
-[DocumentTemplate](SuperOffice.WebApi.Data.DocumentTemplate.md).[QuoteDocType](SuperOffice.WebApi.Data.DocumentTemplate.md\#SuperOffice\_WebApi\_Data\_DocumentTemplate\_QuoteDocType)
+[DocumentTemplate](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplate).[QuoteDocType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplate#SuperOffice_WebApi_Data_DocumentTemplate_QuoteDocType)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentTemplate_RecordType"></a> RecordType
 
@@ -203,11 +203,11 @@ public DocTmplType? RecordType { get; set; }
 
 #### Property Value
 
- [DocTmplType](SuperOffice.WebApi.Data.DocTmplType.md)?
+ [DocTmplType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocTmplType)?
 
 #### See Also
 
-[DocumentTemplate](SuperOffice.WebApi.Data.DocumentTemplate.md).[RecordType\_String](SuperOffice.WebApi.Data.DocumentTemplate.md\#SuperOffice\_WebApi\_Data\_DocumentTemplate\_RecordType\_String)
+[DocumentTemplate](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplate).[RecordType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplate#SuperOffice_WebApi_Data_DocumentTemplate_RecordType_String)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentTemplate_RecordType_String"></a> RecordType\_String
 
@@ -225,7 +225,7 @@ public string RecordType_String { get; set; }
 
 #### See Also
 
-[DocumentTemplate](SuperOffice.WebApi.Data.DocumentTemplate.md).[RecordType](SuperOffice.WebApi.Data.DocumentTemplate.md\#SuperOffice\_WebApi\_Data\_DocumentTemplate\_RecordType)
+[DocumentTemplate](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplate).[RecordType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplate#SuperOffice_WebApi_Data_DocumentTemplate_RecordType)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentTemplate_SaveInDb"></a> SaveInDb
 
@@ -253,5 +253,5 @@ public virtual string Tooltip { get; set; }
 
 ## See Also
 
-[ListAgent](SuperOffice.WebApi.Agents.ListAgent.md)
+[ListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ListAgent)
 

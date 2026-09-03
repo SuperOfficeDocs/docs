@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ChatMessage"></a> Class ChatMessage
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ChatMessage.
@@ -13,7 +13,7 @@ public class ChatMessage
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ChatMessage](SuperOffice.WebApi.Data.ChatMessage.md)
+[ChatMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatMessage)
 
 #### Inherited Members
 
@@ -121,11 +121,11 @@ public ChatMessageSpecialType? SpecialType { get; set; }
 
 #### Property Value
 
- [ChatMessageSpecialType](SuperOffice.WebApi.Data.ChatMessageSpecialType.md)?
+ [ChatMessageSpecialType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatMessageSpecialType)?
 
 #### See Also
 
-[ChatMessage](SuperOffice.WebApi.Data.ChatMessage.md).[SpecialType\_String](SuperOffice.WebApi.Data.ChatMessage.md\#SuperOffice\_WebApi\_Data\_ChatMessage\_SpecialType\_String)
+[ChatMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatMessage).[SpecialType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatMessage#SuperOffice_WebApi_Data_ChatMessage_SpecialType_String)
 
 ### <a id="SuperOffice_WebApi_Data_ChatMessage_SpecialType_String"></a> SpecialType\_String
 
@@ -143,7 +143,7 @@ public string SpecialType_String { get; set; }
 
 #### See Also
 
-[ChatMessage](SuperOffice.WebApi.Data.ChatMessage.md).[SpecialType](SuperOffice.WebApi.Data.ChatMessage.md\#SuperOffice\_WebApi\_Data\_ChatMessage\_SpecialType)
+[ChatMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatMessage).[SpecialType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatMessage#SuperOffice_WebApi_Data_ChatMessage_SpecialType)
 
 ### <a id="SuperOffice_WebApi_Data_ChatMessage_Type"></a> Type
 
@@ -157,11 +157,11 @@ public ChatMessageType? Type { get; set; }
 
 #### Property Value
 
- [ChatMessageType](SuperOffice.WebApi.Data.ChatMessageType.md)?
+ [ChatMessageType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatMessageType)?
 
 #### See Also
 
-[ChatMessage](SuperOffice.WebApi.Data.ChatMessage.md).[Type\_String](SuperOffice.WebApi.Data.ChatMessage.md\#SuperOffice\_WebApi\_Data\_ChatMessage\_Type\_String)
+[ChatMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatMessage).[Type\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatMessage#SuperOffice_WebApi_Data_ChatMessage_Type_String)
 
 ### <a id="SuperOffice_WebApi_Data_ChatMessage_Type_String"></a> Type\_String
 
@@ -179,7 +179,7 @@ public string Type_String { get; set; }
 
 #### See Also
 
-[ChatMessage](SuperOffice.WebApi.Data.ChatMessage.md).[Type](SuperOffice.WebApi.Data.ChatMessage.md\#SuperOffice\_WebApi\_Data\_ChatMessage\_Type)
+[ChatMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatMessage).[Type](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatMessage#SuperOffice_WebApi_Data_ChatMessage_Type)
 
 ### <a id="SuperOffice_WebApi_Data_ChatMessage_WhenPosted"></a> WhenPosted
 
@@ -195,5 +195,5 @@ public virtual DateTime WhenPosted { get; set; }
 
 ## See Also
 
-[ChatAgent](SuperOffice.WebApi.Agents.ChatAgent.md)
+[ChatAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ChatAgent)
 

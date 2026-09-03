@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TicketCategoryClosingStatus"></a> Enum TicketCategoryClosingStatus
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Default status for requests. Note that this is a preference which should be respected if making UI. It is not enforced by the APIs

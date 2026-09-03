@@ -1,6 +1,6 @@
 # Class ProjectEntity {#SuperOffice_WebApi_Data_ProjectEntity}
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ProjectEntity.
@@ -13,13 +13,13 @@ public class ProjectEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[ProjectEntity](SuperOffice.WebApi.Data.ProjectEntity.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[ProjectEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -104,7 +104,7 @@ public virtual Associate Associate { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### Completed {#SuperOffice_WebApi_Data_ProjectEntity_Completed}
 
@@ -128,7 +128,7 @@ public virtual Associate CreatedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### CreatedDate {#SuperOffice_WebApi_Data_ProjectEntity_CreatedDate}
 
@@ -156,7 +156,7 @@ public virtual StringDictionary CustomFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 #### Remarks
 
@@ -217,7 +217,7 @@ public virtual StringDictionary ExtraFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 #### Remarks
 
@@ -284,7 +284,7 @@ public virtual Link[] Links { get; set; }
 
 #### Property Value
 
- [Link](SuperOffice.WebApi.Data.Link.md)\[\]
+ [Link](/en/api/reference/webapi/SuperOffice.WebApi.Data.Link)\[\]
 
 ### Name {#SuperOffice_WebApi_Data_ProjectEntity_Name}
 
@@ -356,7 +356,7 @@ public virtual ProjectMember[] ProjectMembers { get; set; }
 
 #### Property Value
 
- [ProjectMember](SuperOffice.WebApi.Data.ProjectMember.md)\[\]
+ [ProjectMember](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectMember)\[\]
 
 ### ProjectNumber {#SuperOffice_WebApi_Data_ProjectEntity_ProjectNumber}
 
@@ -381,7 +381,7 @@ public virtual ProjectStatus ProjectStatus { get; set; }
 
 #### Property Value
 
- [ProjectStatus](SuperOffice.WebApi.Data.ProjectStatus.md)
+ [ProjectStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectStatus)
 
 ### ProjectType {#SuperOffice_WebApi_Data_ProjectEntity_ProjectType}
 
@@ -394,7 +394,7 @@ public virtual ProjectType ProjectType { get; set; }
 
 #### Property Value
 
- [ProjectType](SuperOffice.WebApi.Data.ProjectType.md)
+ [ProjectType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectType)
 
 ### PublishEventDate {#SuperOffice_WebApi_Data_ProjectEntity_PublishEventDate}
 
@@ -454,7 +454,7 @@ public virtual Associate UpdatedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### UpdatedDate {#SuperOffice_WebApi_Data_ProjectEntity_UpdatedDate}
 
@@ -478,7 +478,7 @@ public virtual EntityElement[] Urls { get; set; }
 
 #### Property Value
 
- [EntityElement](SuperOffice.WebApi.Data.EntityElement.md)\[\]
+ [EntityElement](/en/api/reference/webapi/SuperOffice.WebApi.Data.EntityElement)\[\]
 
 ### UserDefinedFields {#SuperOffice_WebApi_Data_ProjectEntity_UserDefinedFields}
 
@@ -493,11 +493,11 @@ public virtual StringDictionary UserDefinedFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 ## See Also
 
-[ProjectAgent](SuperOffice.WebApi.Agents.ProjectAgent.md), 
-[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md), 
+[ProjectAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ProjectAgent), 
+[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent), 
 
 

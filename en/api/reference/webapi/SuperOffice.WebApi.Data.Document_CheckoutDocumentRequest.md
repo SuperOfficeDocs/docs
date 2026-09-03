@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_CheckoutDocumentRequest"></a> Class Document\_CheckoutDocumentRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_CheckoutDocumentRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_CheckoutDocumentRequest](SuperOffice.WebApi.Data.Document\_CheckoutDocumentRequest.md)
+[Document\_CheckoutDocumentRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_CheckoutDocumentRequest)
 
 #### Inherited Members
 
