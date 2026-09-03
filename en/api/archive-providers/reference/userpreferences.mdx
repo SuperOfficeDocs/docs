@@ -9,15 +9,15 @@ envir: onsite, online
 
 ## "UserPreferences"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.UserPreferencesProvider">SuperOffice.CRM.ArchiveLists.UserPreferencesProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.UserPreferencesProvider inside NetServer's SODatabase assembly.
 
 User (and system) preference settings, at all levels
 
-The <see cref="T:SuperOffice.Data.SoPreference" /> class will return the <b>current</b> setting for a preference for the current principal.
+The SoPreference class will return the <b>current</b> setting for a preference for the current principal.
 This archive provider is for administrative purposes, and returns <b>all</b> settings for the preference(s) selected.
 <br />
-Preferences have multiple sources: the userpreference table (<see cref="T:SuperOffice.CRM.ArchiveLists.UserPreferenceTableProvider" />, and various
-Service settings that are mapped into preferences, retrieved by <see cref="T:SuperOffice.CRM.ArchiveLists.MappedPreferenceProvider" />.
+Preferences have multiple sources: the userpreference table ([UserPreferenceTableProvider](./userpreferencetable), and various
+Service settings that are mapped into preferences, retrieved by [MappedPreferenceProvider](./mappedpreferences).
 
 ## Supported Entities
 | Name | Description |
@@ -56,5 +56,5 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
 

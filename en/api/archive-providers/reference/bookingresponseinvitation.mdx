@@ -9,12 +9,12 @@ envir: onsite, online
 
 ## "BookingResponseInvitation"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.BookingResponseInvitationProvider">SuperOffice.CRM.ArchiveLists.BookingResponseInvitationProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.BookingResponseInvitationProvider inside NetServer's SODatabase assembly.
 
 This is the query provider for invitations, of subtype 'Response'
 
-Response invitations are defined as having status declined (<see cref="F:SuperOffice.Data.AppointmentStatus.BookingDeclined" />
-or <see cref="!:SuperOffice.Data.AppointmentStatus.BookingmentDeclined" />). They also have to be not overdue, i.e., activedate
+Response invitations are defined as having status declined (BookingDeclined
+or BookingmentDeclined). They also have to be not overdue, i.e., activedate
 must be &gt;= start of today. This is an optional entity and is fetched if the user checks the corresponding checkbox.
 
 ## Supported Entities
@@ -768,5 +768,5 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
 

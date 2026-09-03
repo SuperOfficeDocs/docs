@@ -9,12 +9,12 @@ envir: onsite, online
 
 ## "Appointment"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.AppointmentProvider">SuperOffice.CRM.ArchiveLists.AppointmentProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.AppointmentProvider inside NetServer's SODatabase assembly.
 
 Activity archive provider which handles appointments
 
-This class instantiates a <see cref="T:SuperOffice.CRM.ArchiveLists.DiaryAppointmentProvider" /> and a <see cref="T:SuperOffice.CRM.ArchiveLists.ChecklistAppointmentProvider" /> as
-subchannels, each split by a <see cref="!:DoneNotDoneSplitter" /> to get appointments that are not done, or done today
+This class instantiates a [DiaryAppointmentProvider](./diaryappointment) and a [ChecklistAppointmentProvider](./checklistappointment) as
+subchannels, each split by a DoneNotDoneSplitter to get appointments that are not done, or done today
 
 ## Supported Entities
 | Name | Description |
@@ -765,5 +765,5 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
 
