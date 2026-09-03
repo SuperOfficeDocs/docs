@@ -1,0 +1,33 @@
+name: DocFX see-cref guard
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+# Automatically cancel in-progress runs on the same branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  check-no-new-docfx-see-cref:
+    name: "Fail on new <see cref> DocFX XML-doc references"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Check for newly added <see cref> references
+        run: python tools/ci/check-no-new-docfx-see-cref.py --base-ref origin/main
