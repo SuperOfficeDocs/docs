@@ -22,32 +22,21 @@ or one of the slaves.
 For appointments under construction, where the data have not yet been saved to the database, the
 caller must specify all data through the use of restrictions - some of which are then used for
 information, and some as keys to fetch actual person or associate/resource records from the database.
-&lt;list type="table"&gt;&lt;listheader&gt;&lt;term&gt;Restriction&lt;/term&gt;&lt;description&gt;Meaning&lt;/description&gt;&lt;/listheader&gt;&lt;item&gt;&lt;term&gt;appointmentRestrictionId&lt;/term&gt;&lt;description&gt;Single appointment id, using the = operator.
-This restriction is used on its own for fetching information from existing appointment records.
-The id may be of any appointment in the booking, and all participants will be fetched (limited
-by entity selection).&lt;/description&gt;&lt;/item&gt;&lt;item&gt;&lt;term&gt;associateRestrictionId&lt;/term&gt;&lt;description&gt;Operator: IN, Value: array of
-associate id's. These will be returned as participants of type associate, if the associate entity has been selected.&lt;/description&gt;&lt;/item&gt;&lt;item&gt;&lt;term&gt;groupRestrictionId&lt;/term&gt;&lt;description&gt;Operator: =, Value: group id.
-The group will be translated into associate id's, and these will be returned as participants of type associate, if the associate entity has been selected.
-This is an alternative to specifying the associates one by one and cannot be used together with the associateRestrictionId.&lt;/description&gt;&lt;/item&gt;&lt;item&gt;&lt;term&gt;externalPersonRestrictionId&lt;/term&gt;&lt;description&gt;Operator: IN, Value: array of
-of person id's. These will be returned as participants of type external person, if the externalPerson entity has been selected.
-&lt;i&gt;Note: Persons who are actually associates&lt;/i&gt; will be detected as such, and be returned as associates.&lt;/description&gt;&lt;/item&gt;&lt;item&gt;&lt;term&gt;resourceRestrictionId&lt;/term&gt;&lt;description&gt;Operator: IN, Value: array of
-of associate id's. These will be returned as participants of type resource, if the resource entity has been selected.&lt;/description&gt;&lt;/item&gt;&lt;item&gt;&lt;term&gt;personEmailsInformation&lt;/term&gt;&lt;description&gt;Operator: IN, Value: array of
-of person id's. This restriction is optionally used together with externalPersonRestrictionId, and
-specifies which of the persons should have an email icon set.&lt;/description&gt;&lt;/item&gt;&lt;item&gt;&lt;term&gt;associateEmailsInformation&lt;/term&gt;&lt;description&gt;Operator: IN, Value: array of
-of associate id's. This restriction is optionally used together with associatePersonRestrictionId, and
-specifies which of the associates should have an email icon set. Note that resources do not
-get invitation emails, so there is no corresponding resourceEmailsInformation restriction.&lt;/description&gt;&lt;/item&gt;&lt;item&gt;&lt;term&gt;startTimeInformation&lt;/term&gt;&lt;description&gt;Datetime of appointment start, needed when fetching
-data through the explicit restrictions (not appointmentRestrictionId) and if you want collision detection.&lt;/description&gt;&lt;/item&gt;&lt;item&gt;&lt;term&gt;endTimeInformation&lt;/term&gt;&lt;description&gt;Datetime of appointment end, needed when fetching
-data through the explicit restrictions (not appointmentRestrictionId) and if you want collision detection.&lt;/description&gt;&lt;/item&gt;&lt;item&gt;&lt;term&gt;ownerAssociateIdInformation&lt;/term&gt;&lt;description&gt;Operator: =, value: associate id. This is the Id of associate who is the owner of the whole booking. If this is not
-given, and appointmentRestrictionId is given, the system will look up the associate of the master booking record
-(mother_id = appointment_id) and use that as the owner. If ownerAssociateIdInformation is given, it overrides
-(disables) this lookup. If neither are given, then there is no owner associate. The owner associate always
-comes at the top of the list, and has the 'owner' row style hint.&lt;/description&gt;&lt;/item&gt;&lt;item&gt;&lt;term&gt;inhibitConflictsInformation&lt;/term&gt;&lt;description&gt;Operator: =, value: boolean.
-If you provide either an appointmentRestrictionId or startTime/EndTime, then conflicts will be
-detected. However, if the appointment is of type Free, then no conflict detetction will occur. To force
-'free' behaviour on an under-construction appointment that does not have an appointment id, or
-on an appointment that is being changed, include this restriction with the value true. That will turn off
-conflict detection.&lt;/description&gt;&lt;/item&gt;&lt;/list&gt;
+
+| Restriction | Meaning |
+|---|---|
+| `appointmentRestrictionId` | Single appointment id, using the = operator. This restriction is used on its own for fetching information from existing appointment records. The id may be of any appointment in the booking, and all participants will be fetched (limited by entity selection). |
+| `associateRestrictionId` | Operator: IN, Value: array of associate id's. These will be returned as participants of type associate, if the associate entity has been selected. |
+| `groupRestrictionId` | Operator: =, Value: group id. The group will be translated into associate id's, and these will be returned as participants of type associate, if the associate entity has been selected. This is an alternative to specifying the associates one by one and cannot be used together with the associateRestrictionId. |
+| `externalPersonRestrictionId` | Operator: IN, Value: array of of person id's. These will be returned as participants of type external person, if the externalPerson entity has been selected. *Note: Persons who are actually associates* will be detected as such, and be returned as associates. |
+| `resourceRestrictionId` | Operator: IN, Value: array of of associate id's. These will be returned as participants of type resource, if the resource entity has been selected. |
+| `personEmailsInformation` | Operator: IN, Value: array of of person id's. This restriction is optionally used together with externalPersonRestrictionId, and specifies which of the persons should have an email icon set. |
+| `associateEmailsInformation` | Operator: IN, Value: array of of associate id's. This restriction is optionally used together with associatePersonRestrictionId, and specifies which of the associates should have an email icon set. Note that resources do not get invitation emails, so there is no corresponding resourceEmailsInformation restriction. |
+| `startTimeInformation` | Datetime of appointment start, needed when fetching data through the explicit restrictions (not appointmentRestrictionId) and if you want collision detection. |
+| `endTimeInformation` | Datetime of appointment end, needed when fetching data through the explicit restrictions (not appointmentRestrictionId) and if you want collision detection. |
+| `ownerAssociateIdInformation` | Operator: =, value: associate id. This is the Id of associate who is the owner of the whole booking. If this is not given, and appointmentRestrictionId is given, the system will look up the associate of the master booking record (mother_id = appointment_id) and use that as the owner. If ownerAssociateIdInformation is given, it overrides (disables) this lookup. If neither are given, then there is no owner associate. The owner associate always comes at the top of the list, and has the 'owner' row style hint. |
+| `inhibitConflictsInformation` | Operator: =, value: boolean. If you provide either an appointmentRestrictionId or startTime/EndTime, then conflicts will be detected. However, if the appointment is of type Free, then no conflict detetction will occur. To force 'free' behaviour on an under-construction appointment that does not have an appointment id, or on an appointment that is being changed, include this restriction with the value true. That will turn off conflict detection. |
+
 If you do not use the appointmentRestrictionId, you can instead specify
 external persons by a list (use the IN operator) of externalPersonRestrictionId,
 internal associates through a list of associateRestrictionId, and resources through resourceRestrictionId.
