@@ -1,4 +1,4 @@
-name: DocFX xref guard
+name: DocFX legacy-tag guard
 
 on:
   push:
@@ -15,8 +15,8 @@ permissions:
   contents: read
 
 jobs:
-  check-no-new-docfx-xref:
-    name: "Fail on new <xref> DocFX cross-references"
+  check-no-new-docfx-legacy-tags:
+    name: "Fail on new DocFX XML-doc tags (<see cref>, <xref>, <list type>)"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -29,5 +29,11 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Check for newly added <see cref> references
+        run: python tools/ci/check-no-new-docfx-see-cref.py --base-ref origin/main
+
       - name: Check for newly added <xref> references
         run: python tools/ci/check-no-new-docfx-xref.py --base-ref origin/main
+
+      - name: Check for newly added <list type> blocks
+        run: python tools/ci/check-no-new-docfx-list.py --base-ref origin/main
