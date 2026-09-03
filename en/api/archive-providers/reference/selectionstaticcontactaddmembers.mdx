@@ -18,27 +18,13 @@ make sure you understand its special functionality.
 
 There are several 'special' restrictions that are used by this provider in order to implement the various
 irregular query modifiers used by the Add Members dialog.
-&lt;list type="bullet"&gt;&lt;item&gt;&lt;term&gt;includeContactWithStopRestriction&lt;/term&gt;&lt;description&gt;If this boolean restriction is included and set to 0,
-then contacts that have the Xstop property set to a nonzero
-value will not NOT be included. If it is set to 1 or not set at all, such contacts WILL be included.&lt;/description&gt;&lt;/item&gt;&lt;item&gt;&lt;term&gt;includeContactWithNoDMRestriction&lt;/term&gt;&lt;description&gt;If this boolean restriction is included and set to 0,
-then contacts that have the Nomailing property set to a nonzero
-value will not NOT be included. If it is set to 1 or not set at all, such contacts WILL be included.&lt;/description&gt;&lt;/item&gt;&lt;item&gt;&lt;term&gt;includePersonWithNoDMRestriction&lt;/term&gt;&lt;description&gt;If this boolean restriction is included and set to 0,
-then persons that have the Nomailing property set to a nonzero
-value will not NOT be included. If it is set to 1 or not set at all, such persons WILL be included.
 
-Note that this restriction will by itself NOT trigger a person search; a genuine person-type restriction
-has to be present to do that.&lt;/description&gt;&lt;/item&gt;&lt;item&gt;&lt;term&gt;includePersonRestriction&lt;/term&gt;&lt;description&gt;This restriction, if included, can have one of three distinct
-string values. The strings correspond to the values of the
-IncludePersonType enumeration (parsing
-is not case sensitive). The value 'none' means that person records should not be included unless an explicit person criterion
-has been specified. 'first' means that the lowest-ranked person of each found contact should be included, but the
-result set still uses the contact_id as the primary key and is not a person search (again, unless other person
-criteria have been used). The value 'all' indicates that the query is promoted from contact to person type, the primary
-key becomes the person id, and ALL non-retired persons are included in the result for each contact.&lt;/description&gt;&lt;/item&gt;&lt;item&gt;&lt;term&gt;retired&lt;/term&gt;&lt;description&gt;This is an ordinary display column and restriction. However, in this context
-it defaults to having a zero restriction value, i.e., unless you explicitly specify this restriction, it will be
-internally set to 0, thereby eliminating retired persons from the result. If you set it, your value wins, whatever it is.&lt;/description&gt;&lt;/item&gt;&lt;item&gt;&lt;term&gt;selectionIdRequest&lt;/term&gt;&lt;description&gt;If you include the 'selectionIdRequest' restriction, use the '=' operator and give the id
-of the static selection to attempt to join with. If this is done, then the 'selectionMemberId' will contain
-a non-null value for those contacts or persons that exist in the given static selection.&lt;/description&gt;&lt;/item&gt;&lt;/list&gt;
+* **includeContactWithStopRestriction**: If this boolean restriction is included and set to 0, then contacts that have the Xstop property set to a nonzero value will not NOT be included. If it is set to 1 or not set at all, such contacts WILL be included.
+* **includeContactWithNoDMRestriction**: If this boolean restriction is included and set to 0, then contacts that have the Nomailing property set to a nonzero value will not NOT be included. If it is set to 1 or not set at all, such contacts WILL be included.
+* **includePersonWithNoDMRestriction**: If this boolean restriction is included and set to 0, then persons that have the Nomailing property set to a nonzero value will not NOT be included. If it is set to 1 or not set at all, such persons WILL be included. Note that this restriction will by itself NOT trigger a person search; a genuine person-type restriction has to be present to do that.
+* **includePersonRestriction**: This restriction, if included, can have one of three distinct string values. The strings correspond to the values of the IncludePersonType enumeration (parsing is not case sensitive). The value 'none' means that person records should not be included unless an explicit person criterion has been specified. 'first' means that the lowest-ranked person of each found contact should be included, but the result set still uses the contact_id as the primary key and is not a person search (again, unless other person criteria have been used). The value 'all' indicates that the query is promoted from contact to person type, the primary key becomes the person id, and ALL non-retired persons are included in the result for each contact.
+* **retired**: This is an ordinary display column and restriction. However, in this context it defaults to having a zero restriction value, i.e., unless you explicitly specify this restriction, it will be internally set to 0, thereby eliminating retired persons from the result. If you set it, your value wins, whatever it is.
+* **selectionIdRequest**: If you include the 'selectionIdRequest' restriction, use the '=' operator and give the id of the static selection to attempt to join with. If this is done, then the 'selectionMemberId' will contain a non-null value for those contacts or persons that exist in the given static selection.
 
 ## Supported Entities
 | Name | Description |

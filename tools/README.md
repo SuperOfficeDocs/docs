@@ -54,6 +54,7 @@ Scripts that convert, generate, or verify content for this repo. Not published t
 | `check-index-relative-links.py` | ci | Warns (never fails) if a changed `index.md`/`index.mdx` page has a relative (`./`/`../`) link — see #375/#377/#378 | Yes |
 | `check-no-new-docfx-see-cref.py` | ci | Fails the PR if it adds a new `<see cref="T:...">` DocFX XML-doc reference (added diff lines only, doesn't re-flag the 797 pre-existing files) — see #407 | Yes |
 | `check-no-new-docfx-xref.py` | ci | Fails the PR if it adds a new DocFX `<xref:...>` or `<xref href="...">` cross-reference (added diff lines only) — catches both hand-authored edits and a content drop regenerating a page that reintroduces an already-fixed occurrence, see #312/#404 | Yes |
+| `check-no-new-docfx-list.py` | ci | Fails the PR if it adds a new DocFX `<list type="table">`/`<list type="bullet">` block (added diff lines only, doesn't re-flag any pre-existing occurrence) — see #410 | Yes |
 | `find-stale-generated-pages.py` | ci | Finds generated reference pages dropped from their tree's nav | Yes |
 | `apply-wide-mode.py` | ci | Auto-fixes: applies `mode: "wide"` to a maintained list of overflowing reference pages, commits back to the PR | Yes |
 | `apply-code-wrap.py` | ci | Auto-fixes: wraps fenced code blocks on a maintained list of pages in a `.wrap-code-samples` marker so long lines wrap instead of scrolling, commits back to the PR | Yes |

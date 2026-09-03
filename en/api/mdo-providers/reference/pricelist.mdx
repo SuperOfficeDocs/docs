@@ -1,7 +1,7 @@
 ---
 title: pricelist
 keywords: mdoprovider mdo provider pricelist
-description: List of pricelists from the PriceList table. Supported values in the AdditionalInfo - <list type="bullet"><item><term>all</term><description>true|false. If true is specified, inactive items is also returned.</description></item><item><term>QuoteConnectionId</term><description>Gets items for a specific Quote connection. If not specified, only SuperOffice pricelists (where IsErpCopy=false) will be returned.</description></item></list><example>AdditionalInfo string - "all=true&amp;QuoteConnectionId=2"</example>
+description: List of pricelists from the PriceList table. Supported values in the AdditionalInfo - all - true|false. If true is specified, inactive items is also returned. QuoteConnectionId - Gets items for a specific Quote connection. If not specified, only SuperOffice pricelists (where IsErpCopy=false) will be returned. Example AdditionalInfo string - "all=true&QuoteConnectionId=2"
 generated: true
 content_type: reference
 envir: online
@@ -10,7 +10,11 @@ envir: online
 ## "pricelist" MDO List
 List of pricelists from the PriceList table.
 Supported values in the AdditionalInfo:
-<list type="bullet"><item><term>all</term><description>true|false. If true is specified, inactive items is also returned.</description></item><item><term>QuoteConnectionId</term><description>Gets items for a specific Quote connection. If not specified, only SuperOffice pricelists (where IsErpCopy=false) will be returned.</description></item></list><example>AdditionalInfo string: "all=true&amp;QuoteConnectionId=2"</example>
+
+* **all**: true|false. If true is specified, inactive items is also returned.
+* **QuoteConnectionId**: Gets items for a specific Quote connection. If not specified, only SuperOffice pricelists (where IsErpCopy=false) will be returned.
+
+Example `AdditionalInfo` string: `"all=true&QuoteConnectionId=2"`
 
 
 
