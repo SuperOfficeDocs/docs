@@ -3,7 +3,7 @@
 Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
 
-Base class for client Agents. Uses a &lt;xref href="System.Net.Http.HttpClient" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; to call the SuperOffice REST API.
+Base class for client Agents. Uses a [HttpClient](https://learn.microsoft.com/dotnet/api/system.net.http.httpclient) to call the SuperOffice REST API.
 Will use a default implementation with gzip and progress callbacks if nothing is specified.
 
 ```csharp
@@ -373,7 +373,7 @@ protected WebApiOptions Merge(RequestOptions options)
 
 ### ParseAuthorization\(IAuthorization\) {#SuperOffice_WebApi_Agents_AgentBase_ParseAuthorization_SuperOffice_WebApi_Authorization_IAuthorization_}
 
-Creates authentication headers based on &lt;xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; scheme and parameter.
+Creates authentication headers based on [IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization) scheme and parameter.
 
 ```csharp
 protected AuthenticationHeaderValue ParseAuthorization(IAuthorization authorization)

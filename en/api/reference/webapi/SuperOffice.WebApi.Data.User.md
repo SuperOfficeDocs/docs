@@ -37,7 +37,7 @@ var user = agent.GetUser( 123 );&lt;/code&gt;&lt;/pre&gt;
 
 ## Remarks
 
-Use &lt;xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;:
+Use [Archive agent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent):
             All User: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"AllUsers"&lt;/code&gt;&lt;/pre&gt;
 
 ## Constructors
@@ -80,7 +80,7 @@ public virtual Credential[] Credentials { get; set; }
 
 Udef + Extra fields added to the carrier. Extra fields as defined by changes to database schema + user-defined fields as defined by admin.
 Custom fields combines user defined fields and extra fields into one bucket. 
-The individual &lt;xref href="SuperOffice.WebApi.Data.User.ExtraFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; and UserDefinedFields properties are deprecated in favor of this
+The individual [ExtraFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.User#SuperOffice_WebApi_Data_User_ExtraFields) and UserDefinedFields properties are deprecated in favor of this
 combined collection.
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
 
@@ -129,7 +129,7 @@ public virtual int EjUserId { get; set; }
 
 ### ExtraFields {#SuperOffice_WebApi_Data_User_ExtraFields}
 
-Deprecated: Use &lt;xref href="SuperOffice.WebApi.Data.User.CustomFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instead.
+Deprecated: Use [CustomFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.User#SuperOffice_WebApi_Data_User_CustomFields) instead.
 Extra fields added to the carrier. This could be data from Plug-ins, the foreign key system, external applications, etc.
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
 

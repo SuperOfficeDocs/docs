@@ -37,7 +37,7 @@ var contactEntity = agent.GetContactEntity( 123 );&lt;/code&gt;&lt;/pre&gt;
 
 ## Remarks
 
-Use &lt;xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;:
+Use [Archive agent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent):
             All ContactEntity: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"SimpleContact"&lt;/code&gt;&lt;/pre&gt;
             Activities: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"ContactActivity"&lt;/code&gt;&lt;/pre&gt; with restriction &lt;pre&gt;&lt;code class="lang-csharp"&gt;"contactId eq " + id&lt;/code&gt;&lt;/pre&gt;.
             Appointments: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"Appointment"&lt;/code&gt;&lt;/pre&gt; with restriction &lt;pre&gt;&lt;code class="lang-csharp"&gt;"contactId eq " + id&lt;/code&gt;&lt;/pre&gt;.
@@ -210,7 +210,7 @@ public virtual DateTime CreatedDate { get; set; }
 
 Udef + Extra fields added to the carrier. Extra fields as defined by changes to database schema + user-defined fields as defined by admin.
 Custom fields combines user defined fields and extra fields into one bucket. 
-The individual &lt;xref href="SuperOffice.WebApi.Data.ContactEntity.ExtraFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; and &lt;xref href="SuperOffice.WebApi.Data.ContactEntity.UserDefinedFields?text=UserDefinedFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; properties are deprecated in favor of this
+The individual [ExtraFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactEntity#SuperOffice_WebApi_Data_ContactEntity_ExtraFields) and [UserDefinedFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactEntity#SuperOffice_WebApi_Data_ContactEntity_UserDefinedFields) properties are deprecated in favor of this
 combined collection.
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
 
@@ -355,7 +355,7 @@ public virtual EntityElement[] Emails { get; set; }
 
 ### ExtraFields {#SuperOffice_WebApi_Data_ContactEntity_ExtraFields}
 
-Deprecated: Use &lt;xref href="SuperOffice.WebApi.Data.ContactEntity.CustomFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instead.
+Deprecated: Use [CustomFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactEntity#SuperOffice_WebApi_Data_ContactEntity_CustomFields) instead.
 Extra fields added to the carrier. This could be data from Plug-ins, the foreign key system, external applications, etc.
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
 
@@ -603,7 +603,7 @@ public virtual EntityElement[] Urls { get; set; }
 
 ### UserDefinedFields {#SuperOffice_WebApi_Data_ContactEntity_UserDefinedFields}
 
-Deprecated: Use &lt;xref href="SuperOffice.WebApi.Data.ContactEntity.CustomFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instead.
+Deprecated: Use [CustomFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactEntity#SuperOffice_WebApi_Data_ContactEntity_CustomFields) instead.
 Dictionary of user defined field data.
 The key string is the ProgId of the UdefField, or if the ProgId is empty it is a string of the format "SuperOffice:[UdefFieldIdentity]", e.g. "SuperOffice:1234"
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".

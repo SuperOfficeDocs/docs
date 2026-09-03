@@ -37,7 +37,7 @@ var ticketEntity = agent.GetTicketEntity( 123 );&lt;/code&gt;&lt;/pre&gt;
 
 ## Remarks
 
-Use &lt;xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;:
+Use [Archive agent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent):
             All TicketEntity: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"Ticket"&lt;/code&gt;&lt;/pre&gt;
             Messages: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"TicketMessage"&lt;/code&gt;&lt;/pre&gt; with restriction &lt;pre&gt;&lt;code class="lang-csharp"&gt;"ticketId eq " + id&lt;/code&gt;&lt;/pre&gt;.
 
@@ -214,7 +214,7 @@ public virtual Associate CreatedBy { get; set; }
 
 Udef + Extra fields added to the carrier. Extra fields as defined by changes to database schema + user-defined fields as defined by admin.
 Custom fields combines user defined fields and extra fields into one bucket. 
-The individual &lt;xref href="SuperOffice.WebApi.Data.TicketEntity.ExtraFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; and UserDefinedFields properties are deprecated in favor of this
+The individual [ExtraFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity#SuperOffice_WebApi_Data_TicketEntity_ExtraFields) and UserDefinedFields properties are deprecated in favor of this
 combined collection.
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
 
@@ -251,7 +251,7 @@ public virtual DateTime Deadline { get; set; }
 
 ### ExtraFields {#SuperOffice_WebApi_Data_TicketEntity_ExtraFields}
 
-Deprecated: Use &lt;xref href="SuperOffice.WebApi.Data.TicketEntity.CustomFields" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instead.
+Deprecated: Use [CustomFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity#SuperOffice_WebApi_Data_TicketEntity_CustomFields) instead.
 Extra fields added to the carrier. This could be data from Plug-ins, the foreign key system, external applications, etc.
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
 

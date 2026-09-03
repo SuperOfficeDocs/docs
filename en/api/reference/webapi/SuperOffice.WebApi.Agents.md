@@ -8,7 +8,7 @@ AI services, such as Translation, Statistics, Sentiment analysis, backed by call
 
  [AgentBase](SuperOffice.WebApi.Agents.AgentBase.md)
 
-Base class for client Agents. Uses a <xref href="System.Net.Http.HttpClient" data-throw-if-not-resolved="false"></xref> to call the SuperOffice REST API.
+Base class for client Agents. Uses a [HttpClient](https://learn.microsoft.com/dotnet/api/system.net.http.httpclient) to call the SuperOffice REST API.
 Will use a default implementation with gzip and progress callbacks if nothing is specified.
 
  [ApiAgent](SuperOffice.WebApi.Agents.ApiAgent.md)

@@ -108,9 +108,9 @@ Determines whether base url is verified - end with /api, "https://example.com/Su
 ### <a id="SuperOffice_WebApi_WebApiOptions_Authorization"></a> Authorization
 
 Used to set the Authorization header scheme and value.
-Use <xref href="SuperOffice.WebApi.Authorization.AuthorizationUsernamePassword" data-throw-if-not-resolved="false"></xref>, AuthorizationAccessToken, 
-<xref href="SuperOffice.WebApi.Authorization.AuthorizationTicket" data-throw-if-not-resolved="false"></xref>, <xref href="SuperOffice.WebApi.Authorization.AuthorizationImplicit" data-throw-if-not-resolved="false"></xref>
-AuthorizationSystemUserTicket or <xref href="SuperOffice.WebApi.AuthorizationUserToken" data-throw-if-not-resolved="false"></xref>.
+Use [AuthorizationUsernamePassword](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.AuthorizationUsernamePassword), AuthorizationAccessToken, 
+[AuthorizationTicket](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.AuthorizationTicket), [AuthorizationImplicit](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.AuthorizationImplicit)
+AuthorizationSystemUserTicket or [AuthorizationUserToken](/en/api/reference/webapi/SuperOffice.WebApi.AuthorizationUserToken).
 
 ```csharp
 public IAuthorization Authorization { get; set; }
@@ -160,7 +160,7 @@ public ILogger Logger { get; }
 ### <a id="SuperOffice_WebApi_WebApiOptions_ProgressListener"></a> ProgressListener
 
 Callback for progress during downloads.
-Copied to the agent during initialization - can be overridden on each agent using <xref href="SuperOffice.WebApi.Agents.AgentBase.ProgressListener" data-throw-if-not-resolved="false"></xref>.
+Copied to the agent during initialization - can be overridden on each agent using [ProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ProgressListener).
 
 ```csharp
 public IProgressListener ProgressListener { get; set; }
@@ -173,7 +173,7 @@ public IProgressListener ProgressListener { get; set; }
 ### <a id="SuperOffice_WebApi_WebApiOptions_UploadProgressListener"></a> UploadProgressListener
 
 Callback for progress during uploads.
-Copied to the agent during initialization - can be overridden on each agent using <xref href="SuperOffice.WebApi.Agents.AgentBase.UploadProgressListener" data-throw-if-not-resolved="false"></xref>.
+Copied to the agent during initialization - can be overridden on each agent using [UploadProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_UploadProgressListener).
 
 ```csharp
 public IProgressListener UploadProgressListener { get; set; }

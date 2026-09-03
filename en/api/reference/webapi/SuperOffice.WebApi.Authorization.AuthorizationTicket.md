@@ -3,7 +3,7 @@
 Namespace: [SuperOffice.WebApi.Authorization](SuperOffice.WebApi.Authorization.md)  
 Assembly: SuperOffice.WebApi.Authorization.dll  
 
-SOTicket for use in onsite scenarios. See also &lt;xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+SOTicket for use in onsite scenarios. See also [IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization).
 
 ```csharp
 public class AuthorizationTicket : IAuthorization
@@ -48,7 +48,7 @@ SOTicket string: "7T:abc123=="
 
 ### RefreshAuthorizationAsync {#SuperOffice_WebApi_Authorization_AuthorizationTicket_RefreshAuthorizationAsync}
 
-Try to refresh this &lt;xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instance.
+Try to refresh this [IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization) instance.
 
 ```csharp
 public Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync { get; set; }
@@ -84,5 +84,5 @@ public AuthenticationHeaderValue GetAuthorization()
 
  [AuthenticationHeaderValue](https://learn.microsoft.com/dotnet/api/system.net.http.headers.authenticationheadervalue)
 
-Gets a &lt;xref href="System.Tuple%602" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; (string,string) where scheme is SOTicket and parameter is SOTicket string.
+Gets a [Tuple](https://learn.microsoft.com/dotnet/api/system.tuple-2) (string,string) where scheme is SOTicket and parameter is SOTicket string.
 
