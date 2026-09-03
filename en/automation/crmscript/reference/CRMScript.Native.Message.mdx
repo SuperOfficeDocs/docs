@@ -91,7 +91,7 @@ Possible columns:
 - inlineConverted: True if the html_body has converted inline image links.
 - body: String, The textbody for the message.
 - bodyHtml: String, The HTML body for the message (if any).
-- badge: String, defines the initial source of message. See &lt;xref href="CRMScript.NetServer.BadgeType" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+- badge: String, defines the initial source of message. See [CRMScript.NetServer.BadgeType](/en/automation/crmscript/reference/CRMScript.NetServer.BadgeType).
 - x_... : Extra fields
 </Note>
 
@@ -290,7 +290,7 @@ Possible columns:
 - inlineImages: True if message contains inline images.
 - body: String, The textbody for the message.
 - bodyHtml: String, The HTML body for the message (if any).
-- badge: String, defines the initial source of message. See &lt;xref href="CRMScript.NetServer.BadgeType" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+- badge: String, defines the initial source of message. See [CRMScript.NetServer.BadgeType](/en/automation/crmscript/reference/CRMScript.NetServer.BadgeType).
 - x_... : Extra fields
 </Note>
 
@@ -308,13 +308,13 @@ Void toParser(Parser parser)
 The fields will be loaded as message.value
 
 - message.id, The ID of the message
-- message.slevelInteger, The security level of the message. See &lt;xref href="CRMScript.NetServer.TicketSecurityLevel" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+- message.slevelInteger, The security level of the message. See [CRMScript.NetServer.TicketSecurityLevel](/en/automation/crmscript/reference/CRMScript.NetServer.TicketSecurityLevel).
 - message.slevel, The security level of the message as a String, according to the active user's language.
 - message.createdAt, The datetime when the message is created in format 12. jan 1998, kl. 11:23.
 - message.createdAtRaw, The datetime when the message is created in format 1998-01-12 11:23:15
 - message.author, The author of the message
 - message.bodyHtml, The HTML body of the message
-- message.messageCategory, The message category. See &lt;xref href="CRMScript.NetServer.TicketMessageCategory" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+- message.messageCategory, The message category. See [CRMScript.NetServer.TicketMessageCategory](/en/automation/crmscript/reference/CRMScript.NetServer.TicketMessageCategory).
 - message.body, The body of the message, if this is a plaintext message, this text will be returned with activated links
 - message.bodyPlain, The body of the message exactly as saved in database.
 - message.header, The message header

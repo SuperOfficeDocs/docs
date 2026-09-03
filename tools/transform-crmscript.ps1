@@ -148,6 +148,13 @@ function Clean-Description {
     # attribute values (e.g. <a href=\"...\">), so do it here before matching them
     $Text = $Text -replace '\\"', '"'
 
+    # Convert DocFx <xref href="..."> cross-references (source data occasionally
+    # carries these in a description/summary field, e.g. "See <xref href=...>")
+    # to a real markdown link via the same resolution Get-TypeLink uses for return
+    # types -- Mintlify's MDX renderer doesn't resolve <xref>, it just drops the
+    # unrecognized element and renders the inner text (here, empty). See #401/#404.
+    $Text = [regex]::Replace($Text, '(?is)<xref\s+href="([^"]+)"[^>]*>\s*</xref>', { param($m) Get-TypeLink -Type $m.Groups[1].Value })
+
     # Convert embedded HTML links and bold/italic markup to markdown equivalents
     # before the generic <, > escaping below turns them into unreadable tag soup
     $Text = [regex]::Replace($Text, '(?is)<a\s+href="([^"]+)"[^>]*>(.*?)</a>', '[$2]($1)')
