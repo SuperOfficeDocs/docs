@@ -31,7 +31,7 @@ Initializes a new instance of the NSReturnInfo class.
 String GetAdditionalInfo()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Optional, additional information meant for further processing.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Optional, additional information meant for further processing.
 
 <Note>
 This member is ignored for return types None, Message and SoProtocol. It can be used to pass execution-dependent information to the code that handles CustomGui and Other.
@@ -50,7 +50,7 @@ String additionalInfo = thing.GetAdditionalInfo();
 String GetExternalReference()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The document plugin's key that uniquely identifies a document.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The document plugin's key that uniquely identifies a document.
 
 <Note>
 Stored in the externalReference field of the document table
@@ -69,7 +69,7 @@ String externalReference = thing.GetExternalReference();
 Bool GetSuccess()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Did the call succeed. A successful call may still return a message or other return value.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Did the call succeed. A successful call may still return a message or other return value.
 
 **Example:**
 
@@ -84,7 +84,7 @@ Bool success = thing.GetSuccess();
 Integer GetType()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - How is the return value to be understood by the caller. See &lt;xref href="CRMScript.NetServer.ReturnType" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - How is the return value to be understood by the caller. See [CRMScript.NetServer.ReturnType](/en/automation/crmscript/reference/CRMScript.NetServer.ReturnType).
 
 **Example:**
 
@@ -99,7 +99,7 @@ Integer type = thing.GetType();
 String GetValue()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Return value, may be blank.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Return value, may be blank.
 
 **Example:**
 
@@ -114,7 +114,7 @@ String value = thing.GetValue();
 String GetVersionId()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The document plugin's version id that uniquely identifies one version of a document.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The document plugin's version id that uniquely identifies one version of a document.
 
 <Note>
 If versioning is not supported, this will be blank. When versioning is supported, blank values imply the latest checked-in version.
@@ -133,7 +133,7 @@ String versionId = thing.GetVersionId();
 Void SetAdditionalInfo(String additionalInfo)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 This member is ignored for return types None, Message and SoProtocol. It can be used to pass execution-dependent information to the code that handles CustomGui and Other.
@@ -153,7 +153,7 @@ thing.SetAdditionalInfo(additionalInfo);
 Void SetExternalReference(String externalReference)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Stored in the externalReference field of the document table
@@ -173,7 +173,7 @@ thing.SetExternalReference(externalReference);
 Void SetSuccess(Bool success)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -189,7 +189,7 @@ thing.SetSuccess(success);
 Void SetType(Integer type)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -205,7 +205,7 @@ thing.SetType(type);
 Void SetValue(String value)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -221,7 +221,7 @@ thing.SetValue(value);
 Void SetVersionId(String versionId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 If versioning is not supported, this will be blank. When versioning is supported, blank values imply the latest checked-in version.

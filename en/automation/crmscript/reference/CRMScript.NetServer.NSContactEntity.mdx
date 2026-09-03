@@ -31,7 +31,7 @@ Initializes a new instance of the NSContactEntity class.
 Integer GetActiveErpLinks()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of active ERP links.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The number of active ERP links.
 
 **Example:**
 
@@ -46,7 +46,7 @@ Integer activeErpLinks = thing.GetActiveErpLinks();
 Integer GetActiveInterests()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of active interests.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The number of active interests.
 
 **Example:**
 
@@ -61,7 +61,7 @@ Integer activeInterests = thing.GetActiveInterests();
 Integer GetActiveStatusMonitorId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Active status monitor identity with the lowest rank for contact.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Active status monitor identity with the lowest rank for contact.
 
 **Example:**
 
@@ -76,7 +76,7 @@ Integer activeStatusMonitorId = thing.GetActiveStatusMonitorId();
 NSAddress GetAddress()
 ```
 
-**Returns:** [CRMScript.NetServer.NSAddress](CRMScript.NetServer.NSAddress)
+**Returns:** [CRMScript.NetServer.NSAddress](/en/automation/crmscript/reference/CRMScript.NetServer.NSAddress)
 
 **Example:**
 
@@ -91,7 +91,7 @@ NSAddress address = thing.GetAddress();
 NSAssociate GetAssociate()
 ```
 
-**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The user that owns this contact.
+**Returns:** [CRMScript.NetServer.NSAssociate](/en/automation/crmscript/reference/CRMScript.NetServer.NSAssociate) - The user that owns this contact.
 
 **Example:**
 
@@ -106,7 +106,7 @@ NSAssociate associate = thing.GetAssociate();
 String[] GetBounceEmails()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - Email addresses with a positive bounce counter.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)[] - Email addresses with a positive bounce counter.
 
 **Example:**
 
@@ -121,7 +121,7 @@ String[] bounceEmails = thing.GetBounceEmails();
 NSBusiness GetBusiness()
 ```
 
-**Returns:** [CRMScript.NetServer.NSBusiness](CRMScript.NetServer.NSBusiness) - The business that the contact is associated with.
+**Returns:** [CRMScript.NetServer.NSBusiness](/en/automation/crmscript/reference/CRMScript.NetServer.NSBusiness) - The business that the contact is associated with.
 
 <Note>
 The GUI forces the user to enter a business type.
@@ -140,7 +140,7 @@ NSBusiness business = thing.GetBusiness();
 NSCategory GetCategory()
 ```
 
-**Returns:** [CRMScript.NetServer.NSCategory](CRMScript.NetServer.NSCategory) - The category that is set on the company.
+**Returns:** [CRMScript.NetServer.NSCategory](/en/automation/crmscript/reference/CRMScript.NetServer.NSCategory) - The category that is set on the company.
 
 <Note>
 The GUI forces the user to enter a category type
@@ -159,7 +159,7 @@ NSCategory category = thing.GetCategory();
 Integer GetContactId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Primary key.
 
 **Example:**
 
@@ -174,7 +174,7 @@ Integer contactId = thing.GetContactId();
 NSCountry GetCountry()
 ```
 
-**Returns:** [CRMScript.NetServer.NSCountry](CRMScript.NetServer.NSCountry) - The country this contact is located in.
+**Returns:** [CRMScript.NetServer.NSCountry](/en/automation/crmscript/reference/CRMScript.NetServer.NSCountry) - The country this contact is located in.
 
 <Note>
 The country a contact is saved with, affects the phone number format, and the address layout.
@@ -193,7 +193,7 @@ NSCountry country = thing.GetCountry();
 NSAssociate GetCreatedBy()
 ```
 
-**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The user that created the contact.
+**Returns:** [CRMScript.NetServer.NSAssociate](/en/automation/crmscript/reference/CRMScript.NetServer.NSAssociate) - The user that created the contact.
 
 **Example:**
 
@@ -208,7 +208,7 @@ NSAssociate createdBy = thing.GetCreatedBy();
 DateTime GetCreatedDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Date registered.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Date registered.
 
 **Example:**
 
@@ -223,7 +223,7 @@ DateTime createdDate = thing.GetCreatedDate();
 NSCustomerLanguage GetCustomerLanguage()
 ```
 
-**Returns:** [CRMScript.NetServer.NSCustomerLanguage](CRMScript.NetServer.NSCustomerLanguage) - language.
+**Returns:** [CRMScript.NetServer.NSCustomerLanguage](/en/automation/crmscript/reference/CRMScript.NetServer.NSCustomerLanguage) - language.
 
 **Example:**
 
@@ -240,7 +240,7 @@ Gets the user-defined + extra fields on an NSContactEntity as a map.
 Map GetCustomFields()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map)
 
 **Example:**
 
@@ -259,7 +259,7 @@ for (fields.first(); !fields.eof(); fields.next())
 Integer GetDbiAgentId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Integration agent (eJournal).
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Integration agent (eJournal).
 
 **Example:**
 
@@ -274,7 +274,7 @@ Integer dbiAgentId = thing.GetDbiAgentId();
 String GetDbiKey()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The primary key for the integrated entry in the external data source.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The primary key for the integrated entry in the external data source.
 
 **Example:**
 
@@ -289,7 +289,7 @@ String dbiKey = thing.GetDbiKey();
 DateTime GetDbiLastModified()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When the entry was last modified.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - When the entry was last modified.
 
 **Example:**
 
@@ -304,7 +304,7 @@ DateTime dbiLastModified = thing.GetDbiLastModified();
 DateTime GetDbiLastSyncronized()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last external synchronization.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Last external synchronization.
 
 **Example:**
 
@@ -319,7 +319,7 @@ DateTime dbiLastSyncronized = thing.GetDbiLastSyncronized();
 Integer GetDeleted()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - If nonzero, then this contact is 'deleted' and should generally not be shown.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - If nonzero, then this contact is 'deleted' and should generally not be shown.
 
 **Example:**
 
@@ -334,7 +334,7 @@ Integer deleted = thing.GetDeleted();
 String GetDepartment()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Department.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Department.
 
 **Example:**
 
@@ -349,7 +349,7 @@ String department = thing.GetDepartment();
 String GetDescription()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Description of the contact. Usually shown as a post-it note.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Description of the contact. Usually shown as a post-it note.
 
 **Example:**
 
@@ -364,7 +364,7 @@ String description = thing.GetDescription();
 NSEntityElement[] GetEmails()
 ```
 
-**Returns:** [CRMScript.NetServer.NSEntityElement](CRMScript.NetServer.NSEntityElement)[] - The contact's email.
+**Returns:** [CRMScript.NetServer.NSEntityElement](/en/automation/crmscript/reference/CRMScript.NetServer.NSEntityElement)[] - The contact's email.
 
 **Example:**
 
@@ -381,7 +381,7 @@ Gets the extra fields on NSContactEntity as a map.
 Map GetExtraFields()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - Map containing extra field values by field name.
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map) - Map containing extra field values by field name.
 
 **Example:**
 
@@ -400,7 +400,7 @@ for (fields.first(); !fields.eof(); fields.next())
 NSEntityElement[] GetFaxes()
 ```
 
-**Returns:** [CRMScript.NetServer.NSEntityElement](CRMScript.NetServer.NSEntityElement)[] - The contact's fax numbers.
+**Returns:** [CRMScript.NetServer.NSEntityElement](/en/automation/crmscript/reference/CRMScript.NetServer.NSEntityElement)[] - The contact's fax numbers.
 
 **Example:**
 
@@ -415,7 +415,7 @@ NSEntityElement[] faxes = thing.GetFaxes();
 Integer GetGroupId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Group ID of original owning associate, semantics like appnt.grp_id.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Group ID of original owning associate, semantics like appnt.grp_id.
 
 **Example:**
 
@@ -430,7 +430,7 @@ Integer groupId = thing.GetGroupId();
 NSSelectableMDOListItem[] GetInterests()
 ```
 
-**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[] - The contact's available and selected interests.
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](/en/automation/crmscript/reference/CRMScript.NetServer.NSSelectableMDOListItem)[] - The contact's available and selected interests.
 
 **Example:**
 
@@ -445,7 +445,7 @@ NSSelectableMDOListItem[] interests = thing.GetInterests();
 String GetKananame()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Contact kana name, used in Japanese versions only.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Contact kana name, used in Japanese versions only.
 
 **Example:**
 
@@ -460,7 +460,7 @@ String kananame = thing.GetKananame();
 String GetName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Contact name.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Contact name.
 
 **Example:**
 
@@ -475,7 +475,7 @@ String name = thing.GetName();
 Bool GetNoMailing()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Spam filter. Indicates if this contact should retrieve advertising.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Spam filter. Indicates if this contact should retrieve advertising.
 
 **Example:**
 
@@ -490,7 +490,7 @@ Bool noMailing = thing.GetNoMailing();
 String GetNumber1()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Alphanumeric user field.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Alphanumeric user field.
 
 **Example:**
 
@@ -505,7 +505,7 @@ String number1 = thing.GetNumber1();
 String GetNumber2()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Alphanumeric user field.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Alphanumeric user field.
 
 **Example:**
 
@@ -520,7 +520,7 @@ String number2 = thing.GetNumber2();
 String GetOrgNr()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - VAT number or similar.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - VAT number or similar.
 
 **Example:**
 
@@ -535,7 +535,7 @@ String orgNr = thing.GetOrgNr();
 NSPerson[] GetPersons()
 ```
 
-**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson)[] - The persons belonging to the contact.
+**Returns:** [CRMScript.NetServer.NSPerson](/en/automation/crmscript/reference/CRMScript.NetServer.NSPerson)[] - The persons belonging to the contact.
 
 **Example:**
 
@@ -550,7 +550,7 @@ NSPerson[] persons = thing.GetPersons();
 NSEntityElement[] GetPhones()
 ```
 
-**Returns:** [CRMScript.NetServer.NSEntityElement](CRMScript.NetServer.NSEntityElement)[] - The contact's phone numbers.
+**Returns:** [CRMScript.NetServer.NSEntityElement](/en/automation/crmscript/reference/CRMScript.NetServer.NSEntityElement)[] - The contact's phone numbers.
 
 **Example:**
 
@@ -565,7 +565,7 @@ NSEntityElement[] phones = thing.GetPhones();
 Integer GetSource()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - How did we get this contact?
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - How did we get this contact?
 
 <Note>
 For future integration needs
@@ -584,7 +584,7 @@ Integer source = thing.GetSource();
 NSAssociate GetSupportAssociate()
 ```
 
-**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate)
+**Returns:** [CRMScript.NetServer.NSAssociate](/en/automation/crmscript/reference/CRMScript.NetServer.NSAssociate)
 
 **Example:**
 
@@ -599,7 +599,7 @@ NSAssociate supportAssociate = thing.GetSupportAssociate();
 NSPerson GetSupportPerson()
 ```
 
-**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson)
+**Returns:** [CRMScript.NetServer.NSPerson](/en/automation/crmscript/reference/CRMScript.NetServer.NSPerson)
 
 **Example:**
 
@@ -614,7 +614,7 @@ NSPerson supportPerson = thing.GetSupportPerson();
 NSTicketPriority GetTicketPriority()
 ```
 
-**Returns:** [CRMScript.NetServer.NSTicketPriority](CRMScript.NetServer.NSTicketPriority)
+**Returns:** [CRMScript.NetServer.NSTicketPriority](/en/automation/crmscript/reference/CRMScript.NetServer.NSTicketPriority)
 
 **Example:**
 
@@ -629,7 +629,7 @@ NSTicketPriority ticketPriority = thing.GetTicketPriority();
 NSAssociate GetUpdatedBy()
 ```
 
-**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The user that last updated the contact.
+**Returns:** [CRMScript.NetServer.NSAssociate](/en/automation/crmscript/reference/CRMScript.NetServer.NSAssociate) - The user that last updated the contact.
 
 **Example:**
 
@@ -644,7 +644,7 @@ NSAssociate updatedBy = thing.GetUpdatedBy();
 DateTime GetUpdatedDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Date last updated.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Date last updated.
 
 **Example:**
 
@@ -659,7 +659,7 @@ DateTime updatedDate = thing.GetUpdatedDate();
 NSEntityElement[] GetUrls()
 ```
 
-**Returns:** [CRMScript.NetServer.NSEntityElement](CRMScript.NetServer.NSEntityElement)[] - The contact's internet address.
+**Returns:** [CRMScript.NetServer.NSEntityElement](/en/automation/crmscript/reference/CRMScript.NetServer.NSEntityElement)[] - The contact's internet address.
 
 **Example:**
 
@@ -676,7 +676,7 @@ Gets the user-defined fields on the NSContactEntity as a map.
 Map GetUserDefinedFields()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - Map containing user defined field values by field prog.id.
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map) - Map containing user defined field values by field prog.id.
 
 **Example:**
 
@@ -695,7 +695,7 @@ for (fields.first(); !fields.eof(); fields.next())
 Bool GetXstop()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - STOP flag.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - STOP flag.
 
 **Example:**
 
@@ -710,7 +710,7 @@ Bool xstop = thing.GetXstop();
 Void SetActiveErpLinks(Integer activeErpLinks)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -726,7 +726,7 @@ thing.SetActiveErpLinks(activeErpLinks);
 Void SetActiveInterests(Integer activeInterests)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -742,7 +742,7 @@ thing.SetActiveInterests(activeInterests);
 Void SetActiveStatusMonitorId(Integer activeStatusMonitorId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -760,7 +760,7 @@ Sets a contact's address. You can pass either an NSAddress object or NSLocalized
 Void SetAddress(NSLocalizedField[][] address)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -776,7 +776,7 @@ thing.SetAddress(address);
 Void SetAssociate(NSAssociate associate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -792,7 +792,7 @@ thing.SetAssociate(associate);
 Void SetBounceEmails(String[] bounceEmails)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -808,7 +808,7 @@ thing.SetBounceEmails(bounceEmails);
 Void SetBusiness(NSBusiness business)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 The GUI forces the user to enter a business type.
@@ -828,7 +828,7 @@ thing.SetBusiness(business);
 Void SetCategory(NSCategory category)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 The GUI forces the user to enter a category type
@@ -848,7 +848,7 @@ thing.SetCategory(category);
 Void SetContactId(Integer contactId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -864,7 +864,7 @@ thing.SetContactId(contactId);
 Void SetCountry(NSCountry country)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 The country a contact is saved with, affects the phone number format, and the address layout.
@@ -884,7 +884,7 @@ thing.SetCountry(country);
 Void SetCreatedBy(NSAssociate createdBy)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -900,7 +900,7 @@ thing.SetCreatedBy(createdBy);
 Void SetCreatedDate(DateTime createdDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -916,7 +916,7 @@ thing.SetCreatedDate(createdDate);
 Void SetCustomerLanguage(NSCustomerLanguage customerLanguage)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -934,7 +934,7 @@ Sets the user-defined and extra fields on an NSContactEntity with a map.
 Void SetCustomFields(Map udefs)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -955,7 +955,7 @@ thing.SetCustomFields(udefs);
 Void SetDbiAgentId(Integer dbiAgentId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -971,7 +971,7 @@ thing.SetDbiAgentId(dbiAgentId);
 Void SetDbiKey(String dbiKey)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -987,7 +987,7 @@ thing.SetDbiKey(dbiKey);
 Void SetDbiLastModified(DateTime dbiLastModified)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1003,7 +1003,7 @@ thing.SetDbiLastModified(dbiLastModified);
 Void SetDbiLastSyncronized(DateTime dbiLastSyncronized)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1019,7 +1019,7 @@ thing.SetDbiLastSyncronized(dbiLastSyncronized);
 Void SetDeleted(Integer deleted)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1037,7 +1037,7 @@ thing.SetDeleted(deleted);
 Void SetDepartment(String department)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1053,7 +1053,7 @@ thing.SetDepartment(department);
 Void SetDescription(String description)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1069,7 +1069,7 @@ thing.SetDescription(description);
 Void SetEmails(NSEntityElement[] emails)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1087,7 +1087,7 @@ Sets the extra field values on NSContactEntity with a map.
 Void SetExtraFields(Map extras)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1106,7 +1106,7 @@ thing.SetExtraFields(extras);
 Void SetFaxes(NSEntityElement[] faxes)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1122,7 +1122,7 @@ thing.SetFaxes(faxes);
 Void SetGroupId(Integer groupId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1138,7 +1138,7 @@ thing.SetGroupId(groupId);
 Void SetInterests(NSSelectableMDOListItem[] interests)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1154,7 +1154,7 @@ thing.SetInterests(interests);
 Void SetKananame(String kananame)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1170,7 +1170,7 @@ thing.SetKananame(kananame);
 Void SetName(String name)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1186,7 +1186,7 @@ thing.SetName(name);
 Void SetNoMailing(Bool noMailing)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1202,7 +1202,7 @@ thing.SetNoMailing(noMailing);
 Void SetNumber1(String number1)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1218,7 +1218,7 @@ thing.SetNumber1(number1);
 Void SetNumber2(String number2)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1234,7 +1234,7 @@ thing.SetNumber2(number2);
 Void SetOrgNr(String orgNr)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1250,7 +1250,7 @@ thing.SetOrgNr(orgNr);
 Void SetPersons(NSPerson[] persons)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1266,7 +1266,7 @@ thing.SetPersons(persons);
 Void SetPhones(NSEntityElement[] phones)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1282,7 +1282,7 @@ thing.SetPhones(phones);
 Void SetSource(Integer source)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 For future integration needs
@@ -1302,7 +1302,7 @@ thing.SetSource(source);
 Void SetSupportAssociate(NSAssociate supportAssociate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1318,7 +1318,7 @@ thing.SetSupportAssociate(supportAssociate);
 Void SetSupportPerson(NSPerson supportPerson)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1334,7 +1334,7 @@ thing.SetSupportPerson(supportPerson);
 Void SetTicketPriority(NSTicketPriority ticketPriority)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1350,7 +1350,7 @@ thing.SetTicketPriority(ticketPriority);
 Void SetUpdatedBy(NSAssociate updatedBy)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1366,7 +1366,7 @@ thing.SetUpdatedBy(updatedBy);
 Void SetUpdatedDate(DateTime updatedDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1382,7 +1382,7 @@ thing.SetUpdatedDate(updatedDate);
 Void SetUrls(NSEntityElement[] urls)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1400,7 +1400,7 @@ Sets the user-defined fields on the NSContactEntity as a map.
 Void SetUserDefinedFields(Map udefs)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1419,7 +1419,7 @@ thing.SetUserDefinedFields(udefs);
 Void SetXstop(Bool xstop)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

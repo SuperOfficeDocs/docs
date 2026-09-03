@@ -33,7 +33,7 @@ Adds a boolean value to the current scope.
 Void addBoolean(String key, Bool value)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 If the current scope is an object, you must supply a key. If the current scope is an array, key must be empty.
@@ -47,7 +47,7 @@ Adds a float value to the current scope.
 Void addFloat(String key, Float value)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 If the current scope is an object, you must supply a key. If the current scope is an array, key must be empty.
@@ -61,7 +61,7 @@ Adds an integer value to the current scope.
 Void addInteger(String key, Integer value)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 If the current scope is an object, you must supply a key. If the current scope is an array, key must be empty.
@@ -75,7 +75,7 @@ Adds a string value to the current scope.
 Void addString(String key, String value)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 If the current scope is an object, you must supply a key. If the current scope is an array, key must be empty. The value does not need to be escaped, it will be escaped by JSONBuilder.
@@ -89,7 +89,7 @@ Pops all levels out to the root.
 Void finalize()
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 You can call this function instead of multiple popLevel() if you are at then end of your structure.
@@ -103,7 +103,7 @@ Returns the JSON-formatted string that has been built by all push and add method
 String getString()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The JSON-formatted string.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The JSON-formatted string.
 
 ## popLevel()
 
@@ -113,7 +113,7 @@ Pops a level (closes an array or an object) in the JSONBuilder.
 Void popLevel()
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Look at the root example for this class.
@@ -127,7 +127,7 @@ Adds an array to the JSONBuilder. Subsequent methods will add members inside the
 pushArray(String array)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Normally, an array will be named (because it will be a named variable in the parent scope), except for when the array is the root of the JSON structure.
@@ -141,7 +141,7 @@ Adds an object to the JSONBuilder. Subsequent methods will add members inside th
 Void pushObject(String object)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Normally, an object will be named (because it will be a named variable in the parent scope), except for when the object is the root of the JSON structure.
@@ -155,4 +155,4 @@ Sets whether the JSON should be pretty formatted or not.
 Void SetPrettyPrint(Integer indent)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)

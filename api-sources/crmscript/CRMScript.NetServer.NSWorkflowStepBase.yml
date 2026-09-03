@@ -130,7 +130,7 @@ items:
   syntax:
     content: NSWorkflowStepType GetStepType()
     return:
-      type: CRMScript.NetServer.NSWorkflowStepType
+      type: CRMScript.NetServer.WorkflowStepType
       description: "The step type."
 
 - uid: CRMScript.NetServer.NSWorkflowStepBase.SetStepType(NSWorkflowStepType)
@@ -149,7 +149,7 @@ items:
     content: Void SetStepType(NSWorkflowStepType stepType)
     parameters:
     - id: stepType
-      type: CRMScript.NetServer.NSWorkflowStepType
+      type: CRMScript.NetServer.WorkflowStepType
       description: "The step type to set."
     return:
       type: CRMScript.Global.Void
@@ -212,9 +212,9 @@ references:
   name: Void
   nameWithType: Void
   fullName: CRMScript.Global.Void
-- uid: CRMScript.NetServer.NSWorkflowStepType
-  commentId: T:CRMScript.NetServer.NSWorkflowStepType
+- uid: CRMScript.NetServer.WorkflowStepType
+  commentId: T:CRMScript.NetServer.WorkflowStepType
   isExternal: true
   name: NSWorkflowStepType
   nameWithType: NSWorkflowStepType
-  fullName: CRMScript.NetServer.NSWorkflowStepType
+  fullName: CRMScript.NetServer.WorkflowStepType

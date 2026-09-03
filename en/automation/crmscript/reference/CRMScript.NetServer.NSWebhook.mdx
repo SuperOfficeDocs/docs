@@ -33,7 +33,7 @@ Email address to send error message to when this webhook state changes to too-ma
 String[] GetErrorsEmail()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - The email address error messages are sent to when this webhook state changes to too-many errors.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)[] - The email address error messages are sent to when this webhook state changes to too-many errors.
 
 <Note>
 Only one email address.
@@ -52,7 +52,7 @@ String emailAddress = webhook.GetErrorsEmail();
 String[] GetEvents()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - Array of event names that trigger this webhook ['contact.created', 'sale.changed']
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)[] - Array of event names that trigger this webhook ['contact.created', 'sale.changed']
 
 **Example:**
 
@@ -67,7 +67,7 @@ String[] events = thing.GetEvents();
 Map GetHeaders()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - Custom HTTP Headers to add to webhook requests.
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map) - Custom HTTP Headers to add to webhook requests.
 
 **Example:**
 
@@ -82,7 +82,7 @@ Map headers = thing.GetHeaders();
 String GetName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name to identify this webhook. Does not have to be unique.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Name to identify this webhook. Does not have to be unique.
 
 **Example:**
 
@@ -97,7 +97,7 @@ String name = thing.GetName();
 StringObjectDictionary GetProperties()
 ```
 
-**Returns:** [CRMScript.Native.StringObjectDictionary](CRMScript.Native.StringObjectDictionary) - Custom values to inject into JSON body of webhook call.
+**Returns:** [CRMScript.Native.StringObjectDictionary](/en/automation/crmscript/reference/CRMScript.Native.StringObjectDictionary) - Custom values to inject into JSON body of webhook call.
 
 **Example:**
 
@@ -112,7 +112,7 @@ StringObjectDictionary properties = thing.GetProperties();
 DateTime GetRegistered()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered when.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Registered when.
 
 **Example:**
 
@@ -127,7 +127,7 @@ DateTime registered = thing.GetRegistered();
 NSAssociate GetRegisteredAssociate()
 ```
 
-**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The user that created the webhook.
+**Returns:** [CRMScript.NetServer.NSAssociate](/en/automation/crmscript/reference/CRMScript.NetServer.NSAssociate) - The user that created the webhook.
 
 **Example:**
 
@@ -142,7 +142,7 @@ NSAssociate registeredAssociate = thing.GetRegisteredAssociate();
 String GetSecret()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Shared secret key used for generating SHA256 HMAC signature, so that receiver can verify that call came from this server.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Shared secret key used for generating SHA256 HMAC signature, so that receiver can verify that call came from this server.
 
 **Example:**
 
@@ -157,7 +157,7 @@ String secret = thing.GetSecret();
 Integer GetState()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Webhook status, should we post events to the URL? See &lt;xref href="CRMScript.NetServer.WebhookState" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Webhook status, should we post events to the URL? See [CRMScript.NetServer.WebhookState](/en/automation/crmscript/reference/CRMScript.NetServer.WebhookState).
 
 **Example:**
 
@@ -172,7 +172,7 @@ Integer state = thing.GetState();
 String GetTargetUrl()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Destination to POST event info to. URL for webhooks. ID for CRM scripts.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Destination to POST event info to. URL for webhooks. ID for CRM scripts.
 
 **Example:**
 
@@ -187,7 +187,7 @@ String targetUrl = thing.GetTargetUrl();
 String GetType()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of plugin that handles this webhook. 'webhook' for webhooks, which are handled by the system plugin.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Name of plugin that handles this webhook. 'webhook' for webhooks, which are handled by the system plugin.
 
 **Example:**
 
@@ -202,7 +202,7 @@ String type = thing.GetType();
 DateTime GetUpdated()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last updated when.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Last updated when.
 
 **Example:**
 
@@ -217,7 +217,7 @@ DateTime updated = thing.GetUpdated();
 NSAssociate GetUpdatedAssociate()
 ```
 
-**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The user that last updated the webhook.
+**Returns:** [CRMScript.NetServer.NSAssociate](/en/automation/crmscript/reference/CRMScript.NetServer.NSAssociate) - The user that last updated the webhook.
 
 **Example:**
 
@@ -232,7 +232,7 @@ NSAssociate updatedAssociate = thing.GetUpdatedAssociate();
 Integer GetWebhookId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary Key. Unique id for this webhook.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Primary Key. Unique id for this webhook.
 
 **Example:**
 
@@ -249,7 +249,7 @@ Email address to send error message to when this webhook state changes to too-ma
 Void SetErrorsEmail(String emailAddress)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Only one email address.
@@ -268,7 +268,7 @@ webhook.SetErrorsEmail('your@email.com');
 Void SetEvents(String[] events)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -284,7 +284,7 @@ thing.SetEvents(events);
 Void SetHeaders(Map headers)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -300,7 +300,7 @@ thing.SetHeaders(headers);
 Void SetName(String name)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -316,7 +316,7 @@ thing.SetName(name);
 Void SetProperties(StringObjectDictionary properties)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -333,7 +333,7 @@ thing.SetProperties(properties);
 Void SetRegistered(DateTime registered)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -349,7 +349,7 @@ thing.SetRegistered(registered);
 Void SetRegisteredAssociate(NSAssociate registeredAssociate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -365,7 +365,7 @@ thing.SetRegisteredAssociate(registeredAssociate);
 Void SetSecret(String secret)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -381,7 +381,7 @@ thing.SetSecret(secret);
 Void SetState(Integer state)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -397,7 +397,7 @@ thing.SetState(state);
 Void SetTargetUrl(String targetUrl)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -413,7 +413,7 @@ thing.SetTargetUrl(targetUrl);
 Void SetType(String type)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -429,7 +429,7 @@ thing.SetType(type);
 Void SetUpdated(DateTime updated)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -445,7 +445,7 @@ thing.SetUpdated(updated);
 Void SetUpdatedAssociate(NSAssociate updatedAssociate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -461,7 +461,7 @@ thing.SetUpdatedAssociate(updatedAssociate);
 Void SetWebhookId(Integer webhookId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

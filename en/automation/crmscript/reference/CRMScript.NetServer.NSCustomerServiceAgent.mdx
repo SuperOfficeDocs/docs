@@ -33,7 +33,7 @@ Adds a message to an existing request in the sam way as importMail would do it f
 NSTicketInfo AddMessageFromMailData(Integer ticketId, String data)
 ```
 
-**Returns:** [CRMScript.NetServer.NSTicketInfo](CRMScript.NetServer.NSTicketInfo)
+**Returns:** [CRMScript.NetServer.NSTicketInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSTicketInfo)
 
 **Example:**
 
@@ -52,7 +52,7 @@ Gets all chat TOPICS which this user is a member of.
 NSChatSession[] ChatSessionsForUser()
 ```
 
-**Returns:** [CRMScript.NetServer.NSChatSession](CRMScript.NetServer.NSChatSession)[] - chat topics.
+**Returns:** [CRMScript.NetServer.NSChatSession](/en/automation/crmscript/reference/CRMScript.NetServer.NSChatSession)[] - chat topics.
 
 <Note>
 Members means that you have at least one of: Can Respond, Notifications, Listen or Manager
@@ -73,7 +73,7 @@ Checks whether the core HTML templates are customized
 Bool CheckIfCustomizedTemplates()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 **Example:**
 
@@ -90,7 +90,7 @@ Checks that we are using the same encryption keys
 String CheckSymmetricEncryption(String encryptedString)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -108,7 +108,7 @@ Sets default values into a new NSCustomerCenterConfig.
 NSCustomerCenterConfig CreateDefaultCustomerCenterConfig()
 ```
 
-**Returns:** [CRMScript.NetServer.NSCustomerCenterConfig](CRMScript.NetServer.NSCustomerCenterConfig)
+**Returns:** [CRMScript.NetServer.NSCustomerCenterConfig](/en/automation/crmscript/reference/CRMScript.NetServer.NSCustomerCenterConfig)
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
@@ -130,7 +130,7 @@ Sets default values into a new NSMailboxEntity
 NSMailboxEntity CreateDefaultMailboxEntity()
 ```
 
-**Returns:** [CRMScript.NetServer.NSMailboxEntity](CRMScript.NetServer.NSMailboxEntity)
+**Returns:** [CRMScript.NetServer.NSMailboxEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSMailboxEntity)
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
@@ -152,7 +152,7 @@ Sets default values into a new NSSmsConfig.
 NSSmsConfig CreateDefaultSmsConfig()
 ```
 
-**Returns:** [CRMScript.NetServer.NSSmsConfig](CRMScript.NetServer.NSSmsConfig)
+**Returns:** [CRMScript.NetServer.NSSmsConfig](/en/automation/crmscript/reference/CRMScript.NetServer.NSSmsConfig)
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
@@ -174,7 +174,7 @@ Creates a login session for a CS user
 NSCsSessionKey CreateSession(String remoteIp)
 ```
 
-**Returns:** [CRMScript.NetServer.NSCsSessionKey](CRMScript.NetServer.NSCsSessionKey)
+**Returns:** [CRMScript.NetServer.NSCsSessionKey](/en/automation/crmscript/reference/CRMScript.NetServer.NSCsSessionKey)
 
 **Example:**
 
@@ -192,7 +192,7 @@ Creates a new ticket in the same way as importMail would import an email.
 NSTicketInfo CreateTicketFromMailData(Integer mailboxId, String data)
 ```
 
-**Returns:** [CRMScript.NetServer.NSTicketInfo](CRMScript.NetServer.NSTicketInfo)
+**Returns:** [CRMScript.NetServer.NSTicketInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSTicketInfo)
 
 **Example:**
 
@@ -211,7 +211,7 @@ Deletes the specified chat sessions.
 Void DeleteChatSessions(Integer[] ids)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -229,7 +229,7 @@ Deletes the NSCustomerCenterConfig
 DeleteCustomerCenterConfig(Integer customerCenterConfig)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -246,7 +246,7 @@ Checks if an event handler exists.
 Bool EventHandlerExists(Integer eventHandlerType)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 **Example:**
 
@@ -264,7 +264,7 @@ Executes event handlers in CRMScript for a given event.
 NSEventData ExecuteEventHandlers(NSEventData eventData)
 ```
 
-**Returns:** [CRMScript.NetServer.NSEventData](CRMScript.NetServer.NSEventData)
+**Returns:** [CRMScript.NetServer.NSEventData](/en/automation/crmscript/reference/CRMScript.NetServer.NSEventData)
 
 **Example:**
 
@@ -282,7 +282,7 @@ Searches for tickets matching title or ID
 NSTicketInfo[] FindTicketsByTitleOrId(String titleOrId, Integer maxRows)
 ```
 
-**Returns:** [CRMScript.NetServer.NSTicketInfo](CRMScript.NetServer.NSTicketInfo)[]
+**Returns:** [CRMScript.NetServer.NSTicketInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSTicketInfo)[]
 
 **Example:**
 
@@ -301,7 +301,7 @@ Gets all rows from cust_config as an array of NSCustomerCenterConfig entities
 NSCustomerCenterConfig[] GetAllCustomerCenterConfigs()
 ```
 
-**Returns:** [CRMScript.NetServer.NSCustomerCenterConfig](CRMScript.NetServer.NSCustomerCenterConfig)[]
+**Returns:** [CRMScript.NetServer.NSCustomerCenterConfig](/en/automation/crmscript/reference/CRMScript.NetServer.NSCustomerCenterConfig)[]
 
 **Example:**
 
@@ -318,7 +318,7 @@ Gets an NSCustomerCenterConfig object.
 NSCustomerCenterConfig GetCustomerCenterConfig(Integer customerCenterConfigId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSCustomerCenterConfig](CRMScript.NetServer.NSCustomerCenterConfig)
+**Returns:** [CRMScript.NetServer.NSCustomerCenterConfig](/en/automation/crmscript/reference/CRMScript.NetServer.NSCustomerCenterConfig)
 
 **Example:**
 
@@ -335,7 +335,7 @@ Gets the carrier with data that Service needs when starting up
 NSCustomerServiceStartup GetCustomerServiceStartup()
 ```
 
-**Returns:** [CRMScript.NetServer.NSCustomerServiceStartup](CRMScript.NetServer.NSCustomerServiceStartup)
+**Returns:** [CRMScript.NetServer.NSCustomerServiceStartup](/en/automation/crmscript/reference/CRMScript.NetServer.NSCustomerServiceStartup)
 
 **Example:**
 
@@ -352,7 +352,7 @@ Gets an NSMailboxEntity object.
 NSMailboxEntity GetMailboxEntity(Integer mailboxEntityId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSMailboxEntity](CRMScript.NetServer.NSMailboxEntity)
+**Returns:** [CRMScript.NetServer.NSMailboxEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSMailboxEntity)
 
 **Example:**
 
@@ -369,7 +369,7 @@ Gets all registered mailboxes in Service
 NSMailbox[] GetMailboxes()
 ```
 
-**Returns:** [CRMScript.NetServer.NSMailbox](CRMScript.NetServer.NSMailbox)[]
+**Returns:** [CRMScript.NetServer.NSMailbox](/en/automation/crmscript/reference/CRMScript.NetServer.NSMailbox)[]
 
 **Example:**
 
@@ -386,7 +386,7 @@ Converts a module name into a Service URL.
 String GetProgramUrl(String programName, Bool external)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -405,7 +405,7 @@ Gets the NSSmsConfig settings for Customer Service SMS providers.
 NSSmsConfig GetSmsConfig()
 ```
 
-**Returns:** [CRMScript.NetServer.NSSmsConfig](CRMScript.NetServer.NSSmsConfig)
+**Returns:** [CRMScript.NetServer.NSSmsConfig](/en/automation/crmscript/reference/CRMScript.NetServer.NSSmsConfig)
 
 **Example:**
 
@@ -422,7 +422,7 @@ Gets the calculated results for the required statistics for the Service Status p
 CRMScript.NetServer.NSStatisticsDataSet[] GetStatistics(Integer[] functions)
 ```
 
-**Returns:** [CRMScript.NetServer.NSStatisticsDataSet](CRMScript.NetServer.NSStatisticsDataSet)[] - Array of StatisticsDataSet.
+**Returns:** [CRMScript.NetServer.NSStatisticsDataSet](/en/automation/crmscript/reference/CRMScript.NetServer.NSStatisticsDataSet)[] - Array of StatisticsDataSet.
 
 **Example:**
 
@@ -440,7 +440,7 @@ Checks if user has any chat notification
 Bool HasChatNotify()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 **Example:**
 
@@ -457,7 +457,7 @@ Removes a login session for a Service user
 Void RemoveSession(Integer loginId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## SaveAllCustomerCenterConfigs(NSCustomerCenterConfig[])
 
@@ -467,7 +467,7 @@ Saves an array of NSCustomerCenterConfig entities to the database
 Void SaveAllCustomerCenterConfigs(NSCustomerCenterConfig[] custConfigs)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -484,7 +484,7 @@ Updates the existing NSCustomerCenterConfig or creates a new NSCustomerCenterCon
 NSCustomerCenterConfig SaveCustomerCenterConfig(NSCustomerCenterConfig customerCenterConfig)
 ```
 
-**Returns:** [CRMScript.NetServer.NSCustomerCenterConfig](CRMScript.NetServer.NSCustomerCenterConfig)
+**Returns:** [CRMScript.NetServer.NSCustomerCenterConfig](/en/automation/crmscript/reference/CRMScript.NetServer.NSCustomerCenterConfig)
 
 **Example:**
 
@@ -502,7 +502,7 @@ Updates the existing NSMailboxEntity or creates a new NSMailboxEntity if the ID 
 NSMailboxEntity SaveMailboxEntity(NSMailboxEntity mailboxEntity)
 ```
 
-**Returns:** [CRMScript.NetServer.NSMailboxEntity](CRMScript.NetServer.NSMailboxEntity)
+**Returns:** [CRMScript.NetServer.NSMailboxEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSMailboxEntity)
 
 **Example:**
 
@@ -520,7 +520,7 @@ Updates the existing NSSmsConfig or creates a new NSSmsConfig if the ID paramete
 NSSmsConfig SaveSmsConfig(NSSmsConfig smsConfig)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSmsConfig](CRMScript.NetServer.NSSmsConfig)
+**Returns:** [CRMScript.NetServer.NSSmsConfig](/en/automation/crmscript/reference/CRMScript.NetServer.NSSmsConfig)
 
 **Example:**
 
@@ -538,7 +538,7 @@ Checks if a Service session is valid
 Bool SessionIsValid(String csSessionKey)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 **Example:**
 
@@ -556,7 +556,7 @@ Tests an SMTP account, by sending an email to a special @superoffice.com account
 NSSmtpTestResult TestSmtpServer(String smtpUri, String from, Bool useStoredPassword)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSmtpTestResult](CRMScript.NetServer.NSSmtpTestResult)
+**Returns:** [CRMScript.NetServer.NSSmtpTestResult](/en/automation/crmscript/reference/CRMScript.NetServer.NSSmtpTestResult)
 
 **Example:**
 
@@ -576,4 +576,4 @@ Updates the cached FeatureToggles for Service
 Void UpdateFeatureToggles(CsFeatureToggle[] featureToggles)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)

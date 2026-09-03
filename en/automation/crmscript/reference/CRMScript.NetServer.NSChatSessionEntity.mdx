@@ -31,7 +31,7 @@ Initializes a new instance of the NSChatSessionEntity class.
 Integer GetAlertLevel()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The alert level for this chat session.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The alert level for this chat session.
 
 **Example:**
 
@@ -46,7 +46,7 @@ Integer alertLevel = thing.GetAlertLevel();
 Bool GetChatbotIsActive()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Indicates that a chatbot is active on the session. This will cause bot triggers to fire. Set to 0 when bot hands off to user.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Indicates that a chatbot is active on the session. This will cause bot triggers to fire. Set to 0 when bot hands off to user.
 
 **Example:**
 
@@ -61,7 +61,7 @@ Bool chatbotIsActive = thing.GetChatbotIsActive();
 Integer GetChatSessionId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The primary key (auto-incremented).
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The primary key (auto-incremented).
 
 **Example:**
 
@@ -76,7 +76,7 @@ Integer chatSessionId = thing.GetChatSessionId();
 NSContact GetContact()
 ```
 
-**Returns:** [CRMScript.NetServer.NSContact](CRMScript.NetServer.NSContact) - Contact this session is connected to. Could be empty if we don't know exactly.
+**Returns:** [CRMScript.NetServer.NSContact](/en/automation/crmscript/reference/CRMScript.NetServer.NSContact) - Contact this session is connected to. Could be empty if we don't know exactly.
 
 **Example:**
 
@@ -91,7 +91,7 @@ NSContact contact = thing.GetContact();
 String GetCustomerAlias()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The alias for the customer.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The alias for the customer.
 
 **Example:**
 
@@ -106,7 +106,7 @@ String customerAlias = thing.GetCustomerAlias();
 String GetCustomerCompanyName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the customers company, if provided.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The name of the customers company, if provided.
 
 **Example:**
 
@@ -121,7 +121,7 @@ String customerCompanyName = thing.GetCustomerCompanyName();
 Bool GetCustomerConsented()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - The customer consented when starting the session.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - The customer consented when starting the session.
 
 **Example:**
 
@@ -136,7 +136,7 @@ Bool customerConsented = thing.GetCustomerConsented();
 String GetCustomerEmail()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The email address of the customer, if provided.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The email address of the customer, if provided.
 
 **Example:**
 
@@ -151,7 +151,7 @@ String customerEmail = thing.GetCustomerEmail();
 String GetCustomerHost()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The hostname or IP address for the customer.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The hostname or IP address for the customer.
 
 **Example:**
 
@@ -166,7 +166,7 @@ String customerHost = thing.GetCustomerHost();
 String GetCustomerName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of customer, if provided.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The name of customer, if provided.
 
 **Example:**
 
@@ -181,7 +181,7 @@ String customerName = thing.GetCustomerName();
 String GetCustomerPhone()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The phone number of the customer, if provided.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The phone number of the customer, if provided.
 
 **Example:**
 
@@ -196,7 +196,7 @@ String customerPhone = thing.GetCustomerPhone();
 String GetFirstMessage()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A copy of the first message in the chat session.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A copy of the first message in the chat session.
 
 **Example:**
 
@@ -211,7 +211,7 @@ String firstMessage = thing.GetFirstMessage();
 Integer GetFlags()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Various flags for the chat session. See &lt;xref href="CRMScript.NetServer.ChatSessionFlags" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Various flags for the chat session. See [CRMScript.NetServer.ChatSessionFlags](/en/automation/crmscript/reference/CRMScript.NetServer.ChatSessionFlags).
 
 **Example:**
 
@@ -226,7 +226,7 @@ Integer flags = thing.GetFlags();
 Integer GetInitialQueuePos()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The initial queue pos (the number of pending sessions + 1) when the session was requested.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The initial queue pos (the number of pending sessions + 1) when the session was requested.
 
 **Example:**
 
@@ -241,7 +241,7 @@ Integer initialQueuePos = thing.GetInitialQueuePos();
 String GetLastMessage()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A copy of the last message in the chat session.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A copy of the last message in the chat session.
 
 **Example:**
 
@@ -256,7 +256,7 @@ String lastMessage = thing.GetLastMessage();
 NSPerson GetPerson()
 ```
 
-**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson) - Customer person in this session. Could be empty if we don't know exactly.
+**Returns:** [CRMScript.NetServer.NSPerson](/en/automation/crmscript/reference/CRMScript.NetServer.NSPerson) - Customer person in this session. Could be empty if we don't know exactly.
 
 **Example:**
 
@@ -271,7 +271,7 @@ NSPerson person = thing.GetPerson();
 NSProject GetProject()
 ```
 
-**Returns:** [CRMScript.NetServer.NSProject](CRMScript.NetServer.NSProject) - Project the session is connected to. Could be empty if we don't know exactly.
+**Returns:** [CRMScript.NetServer.NSProject](/en/automation/crmscript/reference/CRMScript.NetServer.NSProject) - Project the session is connected to. Could be empty if we don't know exactly.
 
 **Example:**
 
@@ -286,7 +286,7 @@ NSProject project = thing.GetProject();
 Integer GetRank()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Lowest possible unique number for active sessions for user. User for color index. Starting at 1.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Lowest possible unique number for active sessions for user. User for color index. Starting at 1.
 
 **Example:**
 
@@ -301,7 +301,7 @@ Integer rank = thing.GetRank();
 NSSale GetSale()
 ```
 
-**Returns:** [CRMScript.NetServer.NSSale](CRMScript.NetServer.NSSale) - Sale the session is connected to. Could be empty if we don't know exactly.
+**Returns:** [CRMScript.NetServer.NSSale](/en/automation/crmscript/reference/CRMScript.NetServer.NSSale) - Sale the session is connected to. Could be empty if we don't know exactly.
 
 **Example:**
 
@@ -316,7 +316,7 @@ NSSale sale = thing.GetSale();
 String GetSessionKey()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Key used to authenticate the session.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Key used to authenticate the session.
 
 **Example:**
 
@@ -331,7 +331,7 @@ String sessionKey = thing.GetSessionKey();
 Integer GetStatus()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The status for the session. See &lt;xref href="CRMScript.NetServer.ChatSessionStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The status for the session. See [CRMScript.NetServer.ChatSessionStatus](/en/automation/crmscript/reference/CRMScript.NetServer.ChatSessionStatus).
 
 **Example:**
 
@@ -346,7 +346,7 @@ Integer status = thing.GetStatus();
 NSTicket GetTicket()
 ```
 
-**Returns:** [CRMScript.NetServer.NSTicket](CRMScript.NetServer.NSTicket) - Ticket the session is connected to. Could be empty if we don't know exactly.
+**Returns:** [CRMScript.NetServer.NSTicket](/en/automation/crmscript/reference/CRMScript.NetServer.NSTicket) - Ticket the session is connected to. Could be empty if we don't know exactly.
 
 **Example:**
 
@@ -361,7 +361,7 @@ NSTicket ticket = thing.GetTicket();
 Integer GetTopicId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The reference to the associated chat topic.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The reference to the associated chat topic.
 
 **Example:**
 
@@ -376,7 +376,7 @@ Integer topicId = thing.GetTopicId();
 NSAssociate GetTransferTo()
 ```
 
-**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - User agent that has a pending transfer of the chat session.
+**Returns:** [CRMScript.NetServer.NSAssociate](/en/automation/crmscript/reference/CRMScript.NetServer.NSAssociate) - User agent that has a pending transfer of the chat session.
 
 **Example:**
 
@@ -391,7 +391,7 @@ NSAssociate transferTo = thing.GetTransferTo();
 NSAssociate GetUser()
 ```
 
-**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - User agent handling this session.
+**Returns:** [CRMScript.NetServer.NSAssociate](/en/automation/crmscript/reference/CRMScript.NetServer.NSAssociate) - User agent handling this session.
 
 **Example:**
 
@@ -406,7 +406,7 @@ NSAssociate user = thing.GetUser();
 DateTime GetWhenEnded()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When the session was ended.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - When the session was ended.
 
 **Example:**
 
@@ -421,7 +421,7 @@ DateTime whenEnded = thing.GetWhenEnded();
 DateTime GetWhenFetched()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The last time the customer's client re-fetched the data. Used to detect dead session.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - The last time the customer's client re-fetched the data. Used to detect dead session.
 
 **Example:**
 
@@ -436,7 +436,7 @@ DateTime whenFetched = thing.GetWhenFetched();
 DateTime GetWhenIdle()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The last time anyone sent a message for this session.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - The last time anyone sent a message for this session.
 
 **Example:**
 
@@ -451,7 +451,7 @@ DateTime whenIdle = thing.GetWhenIdle();
 DateTime GetWhenRequested()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When the session was requested by the customer.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - When the session was requested by the customer.
 
 **Example:**
 
@@ -466,7 +466,7 @@ DateTime whenRequested = thing.GetWhenRequested();
 DateTime GetWhenStarted()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When the session was accepted by a user.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - When the session was accepted by a user.
 
 **Example:**
 
@@ -481,7 +481,7 @@ DateTime whenStarted = thing.GetWhenStarted();
 Void SetAlertLevel(Integer alertLevel)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -497,7 +497,7 @@ thing.SetAlertLevel(alertLevel);
 Void SetChatbotIsActive(Bool chatbotIsActive)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -513,7 +513,7 @@ thing.SetChatbotIsActive(chatbotIsActive);
 Void SetChatSessionId(Integer chatSessionId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -529,7 +529,7 @@ thing.SetChatSessionId(chatSessionId);
 Void SetContact(NSContact contact)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -545,7 +545,7 @@ thing.SetContact(contact);
 Void SetCustomerAlias(String customerAlias)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -561,7 +561,7 @@ thing.SetCustomerAlias(customerAlias);
 Void SetCustomerCompanyName(String customerCompanyName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -577,7 +577,7 @@ thing.SetCustomerCompanyName(customerCompanyName);
 Void SetCustomerConsented(Bool customerConsented)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -593,7 +593,7 @@ thing.SetCustomerConsented(customerConsented);
 Void SetCustomerEmail(String customerEmail)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -609,7 +609,7 @@ thing.SetCustomerEmail(customerEmail);
 Void SetCustomerHost(String customerHost)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -625,7 +625,7 @@ thing.SetCustomerHost(customerHost);
 Void SetCustomerName(String customerName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -641,7 +641,7 @@ thing.SetCustomerName(customerName);
 Void SetCustomerPhone(String customerPhone)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -657,7 +657,7 @@ thing.SetCustomerPhone(customerPhone);
 Void SetFirstMessage(String firstMessage)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -673,7 +673,7 @@ thing.SetFirstMessage(firstMessage);
 Void SetFlags(Integer flags)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 n
@@ -693,7 +693,7 @@ thing.SetFlags(flags);
 Void SetInitialQueuePos(Integer initialQueuePos)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -709,7 +709,7 @@ thing.SetInitialQueuePos(initialQueuePos);
 Void SetLastMessage(String lastMessage)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -725,7 +725,7 @@ thing.SetLastMessage(lastMessage);
 Void SetPerson(NSPerson person)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -741,7 +741,7 @@ thing.SetPerson(person);
 Void SetProject(NSProject project)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -757,7 +757,7 @@ thing.SetProject(project);
 Void SetRank(Integer rank)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -773,7 +773,7 @@ thing.SetRank(rank);
 Void SetSale(NSSale sale)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -789,7 +789,7 @@ thing.SetSale(sale);
 Void SetSessionKey(String sessionKey)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -805,7 +805,7 @@ thing.SetSessionKey(sessionKey);
 Void SetStatus(Integer status)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -821,7 +821,7 @@ thing.SetStatus(status);
 Void SetTicket(NSTicket ticket)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -837,7 +837,7 @@ thing.SetTicket(ticket);
 Void SetTopicId(Integer topicId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -853,7 +853,7 @@ thing.SetTopicId(topicId);
 Void SetTransferTo(NSAssociate transferTo)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -869,7 +869,7 @@ thing.SetTransferTo(transferTo);
 Void SetUser(NSAssociate user)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -885,7 +885,7 @@ thing.SetUser(user);
 Void SetWhenEnded(DateTime whenEnded)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -901,7 +901,7 @@ thing.SetWhenEnded(whenEnded);
 Void SetWhenFetched(DateTime whenFetched)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -917,7 +917,7 @@ thing.SetWhenFetched(whenFetched);
 Void SetWhenIdle(DateTime whenIdle)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -933,7 +933,7 @@ thing.SetWhenIdle(whenIdle);
 Void SetWhenRequested(DateTime whenRequested)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -949,7 +949,7 @@ thing.SetWhenRequested(whenRequested);
 Void SetWhenStarted(DateTime whenStarted)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

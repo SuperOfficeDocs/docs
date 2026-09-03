@@ -31,7 +31,7 @@ Initializes a new instance of the NSProjectEvent class.
 String GetAssociateFullName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of the person that ows the event (project).
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Name of the person that ows the event (project).
 
 **Example:**
 
@@ -46,7 +46,7 @@ String associateFullName = thing.GetAssociateFullName();
 Integer GetAssociateId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of the person that ows the event (project).
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - ID of the person that ows the event (project).
 
 **Example:**
 
@@ -61,7 +61,7 @@ Integer associateId = thing.GetAssociateId();
 String GetDescription()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The event description (the project text).
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The event description (the project text).
 
 **Example:**
 
@@ -76,7 +76,7 @@ String description = thing.GetDescription();
 Bool GetEnabled()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true the event is enabled (visible).
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - If true the event is enabled (visible).
 
 **Example:**
 
@@ -91,7 +91,7 @@ Bool enabled = thing.GetEnabled();
 DateTime GetEventDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Date of the event. Event is not visible after this date.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Date of the event. Event is not visible after this date.
 
 **Example:**
 
@@ -106,7 +106,7 @@ DateTime eventDate = thing.GetEventDate();
 String GetEventName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the event (the project name).
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The name of the event (the project name).
 
 **Example:**
 
@@ -121,7 +121,7 @@ String eventName = thing.GetEventName();
 Bool GetIsSignedOn()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the current user is signed on to the event (is project member).
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if the current user is signed on to the event (is project member).
 
 **Example:**
 
@@ -136,7 +136,7 @@ Bool isSignedOn = thing.GetIsSignedOn();
 Integer GetProjectId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of the project that represents the event.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - ID of the project that represents the event.
 
 **Example:**
 
@@ -151,7 +151,7 @@ Integer projectId = thing.GetProjectId();
 Bool GetSignOff()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, it is possible to sign off the event.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - If true, it is possible to sign off the event.
 
 **Example:**
 
@@ -166,7 +166,7 @@ Bool signOff = thing.GetSignOff();
 String GetSignOffConfirmationText()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Text shown as confirmation text before accepting sign off.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Text shown as confirmation text before accepting sign off.
 
 **Example:**
 
@@ -181,7 +181,7 @@ String signOffConfirmationText = thing.GetSignOffConfirmationText();
 Integer GetSignOffPersonId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - If 0, the signOn Activity should go into the persons Our Contact; if not 0, this is the Person whose diary should get the activity.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - If 0, the signOn Activity should go into the persons Our Contact; if not 0, this is the Person whose diary should get the activity.
 
 **Example:**
 
@@ -196,7 +196,7 @@ Integer signOffPersonId = thing.GetSignOffPersonId();
 Bool GetSignOffTaskEnable()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, a task should be created when the external user signs off an event.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - If true, a task should be created when the external user signs off an event.
 
 **Example:**
 
@@ -211,7 +211,7 @@ Bool signOffTaskEnable = thing.GetSignOffTaskEnable();
 Integer GetSignOffTaskId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - If not 0, sign off should cause an Activity of this type to be registered.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - If not 0, sign off should cause an Activity of this type to be registered.
 
 **Example:**
 
@@ -226,7 +226,7 @@ Integer signOffTaskId = thing.GetSignOffTaskId();
 String GetSignOffText()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Default text for the activity created when signing off.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Default text for the activity created when signing off.
 
 **Example:**
 
@@ -241,7 +241,7 @@ String signOffText = thing.GetSignOffText();
 Bool GetSignOffTriggersAssign()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, the sign off task should be created as an Assigned task, triggering the invitation dialog.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - If true, the sign off task should be created as an Assigned task, triggering the invitation dialog.
 
 **Example:**
 
@@ -256,7 +256,7 @@ Bool signOffTriggersAssign = thing.GetSignOffTriggersAssign();
 Bool GetSignOn()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, it is possible to sign on the event.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - If true, it is possible to sign on the event.
 
 **Example:**
 
@@ -271,7 +271,7 @@ Bool signOn = thing.GetSignOn();
 String GetSignOnConfirmationText()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Text shown as confirmation text before accepting sign on.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Text shown as confirmation text before accepting sign on.
 
 **Example:**
 
@@ -286,7 +286,7 @@ String signOnConfirmationText = thing.GetSignOnConfirmationText();
 Integer GetSignOnPersonId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - If 0, the signOn Activity should go into the persons Our Contact; if not 0, this is the Person whose diary should get the activity.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - If 0, the signOn Activity should go into the persons Our Contact; if not 0, this is the Person whose diary should get the activity.
 
 **Example:**
 
@@ -301,7 +301,7 @@ Integer signOnPersonId = thing.GetSignOnPersonId();
 Bool GetSignOnTaskEnable()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, a task should be created when the external user signs on an event.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - If true, a task should be created when the external user signs on an event.
 
 **Example:**
 
@@ -316,7 +316,7 @@ Bool signOnTaskEnable = thing.GetSignOnTaskEnable();
 Integer GetSignOnTaskId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - If not 0, sign on should cause an Activity of this type to be registered.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - If not 0, sign on should cause an Activity of this type to be registered.
 
 **Example:**
 
@@ -331,7 +331,7 @@ Integer signOnTaskId = thing.GetSignOnTaskId();
 String GetSignOnText()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Default text for the activity created when signing on.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Default text for the activity created when signing on.
 
 **Example:**
 
@@ -346,7 +346,7 @@ String signOnText = thing.GetSignOnText();
 Bool GetSignOnTriggersAssign()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, the sign on task should be created as an Assigned task, triggering the invitation dialog.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - If true, the sign on task should be created as an Assigned task, triggering the invitation dialog.
 
 **Example:**
 
@@ -361,7 +361,7 @@ Bool signOnTriggersAssign = thing.GetSignOnTriggersAssign();
 Void SetAssociateFullName(String associateFullName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -377,7 +377,7 @@ thing.SetAssociateFullName(associateFullName);
 Void SetAssociateId(Integer associateId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -393,7 +393,7 @@ thing.SetAssociateId(associateId);
 Void SetDescription(String description)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -409,7 +409,7 @@ thing.SetDescription(description);
 Void SetEnabled(Bool enabled)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -425,7 +425,7 @@ thing.SetEnabled(enabled);
 Void SetEventDate(DateTime eventDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -441,7 +441,7 @@ thing.SetEventDate(eventDate);
 Void SetEventName(String eventName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -457,7 +457,7 @@ thing.SetEventName(eventName);
 Void SetIsSignedOn(Bool isSignedOn)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -473,7 +473,7 @@ thing.SetIsSignedOn(isSignedOn);
 Void SetProjectId(Integer projectId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -489,7 +489,7 @@ thing.SetProjectId(projectId);
 Void SetSignOff(Bool signOff)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -505,7 +505,7 @@ thing.SetSignOff(signOff);
 Void SetSignOffConfirmationText(String signOffConfirmationText)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -521,7 +521,7 @@ thing.SetSignOffConfirmationText(signOffConfirmationText);
 Void SetSignOffPersonId(Integer signOffPersonId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -537,7 +537,7 @@ thing.SetSignOffPersonId(signOffPersonId);
 Void SetSignOffTaskEnable(Bool signOffTaskEnable)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -553,7 +553,7 @@ thing.SetSignOffTaskEnable(signOffTaskEnable);
 Void SetSignOffTaskId(Integer signOffTaskId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -569,7 +569,7 @@ thing.SetSignOffTaskId(signOffTaskId);
 Void SetSignOffText(String signOffText)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -585,7 +585,7 @@ thing.SetSignOffText(signOffText);
 Void SetSignOffTriggersAssign(Bool signOffTriggersAssign)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -601,7 +601,7 @@ thing.SetSignOffTriggersAssign(signOffTriggersAssign);
 Void SetSignOn(Bool signOn)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -617,7 +617,7 @@ thing.SetSignOn(signOn);
 Void SetSignOnConfirmationText(String signOnConfirmationText)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -633,7 +633,7 @@ thing.SetSignOnConfirmationText(signOnConfirmationText);
 Void SetSignOnPersonId(Integer signOnPersonId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -649,7 +649,7 @@ thing.SetSignOnPersonId(signOnPersonId);
 Void SetSignOnTaskEnable(Bool signOnTaskEnable)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -665,7 +665,7 @@ thing.SetSignOnTaskEnable(signOnTaskEnable);
 Void SetSignOnTaskId(Integer signOnTaskId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -681,7 +681,7 @@ thing.SetSignOnTaskId(signOnTaskId);
 Void SetSignOnText(String signOnText)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -697,7 +697,7 @@ thing.SetSignOnText(signOnText);
 Void SetSignOnTriggersAssign(Bool signOnTriggersAssign)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

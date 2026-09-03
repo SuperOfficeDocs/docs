@@ -48,7 +48,7 @@ Adds a new key-value pair to the map.
 Map insert(String key, String value)
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - A reference to itself.
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map) - A reference to itself.
 
 <Note>
 This function will reset the internal iterator in the map.
@@ -69,7 +69,7 @@ Checks if the map contains the given key.
 Bool exists(String key)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the key exists in the map.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if the key exists in the map.
 
 **Example:**
 
@@ -89,7 +89,7 @@ Counts the elements in the map and returns that number.
 Integer size()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of elements in the map.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The number of elements in the map.
 
 <Note>
 An empty map has size == 0.
@@ -112,7 +112,7 @@ Returns the value for the given key.
 String get(String key)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value for the given key.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The value for the given key.
 
 **Example:**
 
@@ -131,7 +131,7 @@ Returns the key pointed to by the map iterator.
 String getKey()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The key pointed to by the internal iterator.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The key pointed to by the internal iterator.
 
 **Example:**
 
@@ -149,7 +149,7 @@ Returns the value pointed to by the map iterator.
 String getVal()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value pointed to by the internal iterator.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The value pointed to by the internal iterator.
 
 **Example:**
 
@@ -167,7 +167,7 @@ Returns the fallback value if key does not exist.
 String getWithFallback(String key, String fallback)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of key, or fallback value if key does not exist.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The value of key, or fallback value if key does not exist.
 
 **Example:**
 
@@ -185,7 +185,7 @@ When working with numeric strings, you can increment values stored in the map. P
 Void increaseValueForKey(String key, Integer value)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 You can pass the increment as either Integer or Float.
@@ -207,7 +207,7 @@ When working with numeric strings, you can increment values stored in the map. P
 Void increaseValueForKey(String key, Float value)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 You can pass the increment as either Integer or Float.
@@ -229,7 +229,7 @@ Removes the element with the given key.
 Void remove(String key)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -247,7 +247,7 @@ Removes all elements from the map.
 Void clear()
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -265,7 +265,7 @@ Returns true if the map iterator has moved past the end of the map, otherwise fa
 Bool eof()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the internal iterator is past the end of the map, otherwise False.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if the internal iterator is past the end of the map, otherwise False.
 
 <Note>
 That eof() returns true is not the same as the map is empty. It can be, but it doesn't have to be. Use size() to check if the map is truly empty.
@@ -288,7 +288,7 @@ Rewinds the internal iterator to the 1st element. Returns false if the map is em
 Bool first()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if map is not empty, otherwise false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if map is not empty, otherwise false.
 
 **Example:**
 
@@ -306,7 +306,7 @@ Moves the map iterator to next position. Returns false if eof().
 Bool next()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - False if eof(), otherwise true.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - False if eof(), otherwise true.
 
 **Example:**
 
@@ -324,7 +324,7 @@ Converts the Map to JSON.
 String toJson()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The Map represented as JSON string.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The Map represented as JSON string.
 
 **Example:**
 
@@ -342,7 +342,7 @@ Converts a JSON string to a map. Format: `{"key": "value", "foo": "bar"}`
 Void fromJson(String json)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

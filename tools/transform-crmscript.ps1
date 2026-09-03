@@ -148,6 +148,13 @@ function Clean-Description {
     # attribute values (e.g. <a href=\"...\">), so do it here before matching them
     $Text = $Text -replace '\\"', '"'
 
+    # Convert DocFx <xref href="..."> cross-references (source data occasionally
+    # carries these in a description/summary field, e.g. "See <xref href=...>")
+    # to a real markdown link via the same resolution Get-TypeLink uses for return
+    # types -- Mintlify's MDX renderer doesn't resolve <xref>, it just drops the
+    # unrecognized element and renders the inner text (here, empty). See #401/#404.
+    $Text = [regex]::Replace($Text, '(?is)<xref\s+href="([^"]+)"[^>]*>\s*</xref>', { param($m) Get-TypeLink -Type $m.Groups[1].Value })
+
     # Convert embedded HTML links and bold/italic markup to markdown equivalents
     # before the generic <, > escaping below turns them into unreadable tag soup
     $Text = [regex]::Replace($Text, '(?is)<a\s+href="([^"]+)"[^>]*>(.*?)</a>', '[$2]($1)')
@@ -212,6 +219,15 @@ function Get-TypeLink {
         $link = $baseType
     }
     else {
+        return $Type
+    }
+
+    # Only link types that actually have a generated page. The source YAML sometimes
+    # names a type under the wrong namespace (CRMScript.NetServer.Map, which lives at
+    # CRMScript.Native.Map) or a type with no doc page at all (CRMScript.NetServer.NSBinary);
+    # a link to either 404s. The set of generated pages is exactly the set of source
+    # .yml files, so test the source file rather than the not-yet-written output.
+    if (-not (Test-Path (Join-Path $SourcePath ($link + '.yml')))) {
         return $Type
     }
 
@@ -777,6 +793,13 @@ foreach ($yamlFile in $yamlFiles) {
     # (e.g. `<h3>Row operators</h3><table>...`), their margins stack into 2-3 blank
     # lines instead of 1. See #189.
     $content = $content -replace '\n{3,}', "`n`n"
+    # Root-relative cross-reference links. Mintlify's broken-link checker (and the
+    # llms.txt/markdown exports) resolve bare relative destinations like
+    # "(CRMScript.Global.Bool)" against the site root rather than the current page,
+    # so every "](CRMScript.*)" destination emitted above (Get-TypeLink type links
+    # and <a href="CRMScript.*"> conversions in Clean-Description alike) is prefixed
+    # with the reference tree's root-relative path as a final pass here.
+    $content = $content -replace '\]\(CRMScript\.', '](/en/automation/crmscript/reference/CRMScript.'
     [System.IO.File]::WriteAllText($outputFilePath, $content, (New-Object System.Text.UTF8Encoding($true)))
     
     Write-Host ('  Generated: ' + $outputFileName) -ForegroundColor Green

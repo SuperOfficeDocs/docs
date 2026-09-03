@@ -31,7 +31,7 @@ Initializes a new instance of the NSBatchTaskInfo class.
 Integer GetAssociateId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Task owner. If it is a System task, AssociateId = 0.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Task owner. If it is a System task, AssociateId = 0.
 
 **Example:**
 
@@ -46,7 +46,7 @@ Integer associateId = thing.GetAssociateId();
 String GetContext()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Context for the executing task.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Context for the executing task.
 
 **Example:**
 
@@ -61,7 +61,7 @@ String context = thing.GetContext();
 DateTime GetCreated()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Task creation time.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Task creation time.
 
 **Example:**
 
@@ -76,7 +76,7 @@ DateTime created = thing.GetCreated();
 String GetDatabaseSerialNumber()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Serial number of the database the task is to run on.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Serial number of the database the task is to run on.
 
 **Example:**
 
@@ -91,7 +91,7 @@ String databaseSerialNumber = thing.GetDatabaseSerialNumber();
 String GetDescription()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Description of the task.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Description of the task.
 
 **Example:**
 
@@ -106,7 +106,7 @@ String description = thing.GetDescription();
 Integer GetDetailsRecord()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Record ID of a row in the DetailsTable containing more info about the task.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Record ID of a row in the DetailsTable containing more info about the task.
 
 **Example:**
 
@@ -121,7 +121,7 @@ Integer detailsRecord = thing.GetDetailsRecord();
 Integer GetDetailsTable()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of table with more information about the task.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - ID of table with more information about the task.
 
 **Example:**
 
@@ -136,7 +136,7 @@ Integer detailsTable = thing.GetDetailsTable();
 Integer GetId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of the task.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - ID of the task.
 
 **Example:**
 
@@ -151,7 +151,7 @@ Integer id = thing.GetId();
 Bool GetIsInternalTask()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, this task will not add a trace to the database.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - If true, this task will not add a trace to the database.
 
 **Example:**
 
@@ -166,7 +166,7 @@ Bool isInternalTask = thing.GetIsInternalTask();
 Bool GetIsSystemTask()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, the task is not initiated by an associate.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - If true, the task is not initiated by an associate.
 
 **Example:**
 
@@ -181,7 +181,7 @@ Bool isSystemTask = thing.GetIsSystemTask();
 DateTime GetLastStarted()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When was the task last started.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - When was the task last started.
 
 **Example:**
 
@@ -196,7 +196,7 @@ DateTime lastStarted = thing.GetLastStarted();
 String GetName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of the task.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Name of the task.
 
 **Example:**
 
@@ -211,7 +211,7 @@ String name = thing.GetName();
 Map GetParameterObject()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - ParameterObject will be serialized to a binary blob and saved in the BinaryObject table. The link to the BinaryObject will be set using DetailsTable and DetailsRecord.
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map) - ParameterObject will be serialized to a binary blob and saved in the BinaryObject table. The link to the BinaryObject will be set using DetailsTable and DetailsRecord.
 
 **Example:**
 
@@ -226,7 +226,7 @@ Map parameterObject = thing.GetParameterObject();
 String GetProgressDescription()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Descriptive text for the current stage.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Descriptive text for the current stage.
 
 **Example:**
 
@@ -241,7 +241,7 @@ String progressDescription = thing.GetProgressDescription();
 Integer GetProgressPercent()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Task progress, in percent of estimated total.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Task progress, in percent of estimated total.
 
 **Example:**
 
@@ -256,7 +256,7 @@ Integer progressPercent = thing.GetProgressPercent();
 String GetRequest()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Maps to the request field in the batchtask table.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Maps to the request field in the batchtask table.
 
 **Example:**
 
@@ -273,7 +273,7 @@ Maps to the response field in the batchtask table.
 String GetResponse()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -290,7 +290,7 @@ Maps to the result field in the batchtask table.
 String GetResult()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -307,7 +307,7 @@ Maps to the startcount field in the batchtask table.
 Integer GetStartCount()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 **Example:**
 
@@ -324,7 +324,7 @@ BatchTaskState of the task.
 Integer GetState()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 **Example:**
 
@@ -341,7 +341,7 @@ Task owner. If it is a System task, AssociateId = 0.
 Void SetAssociateId(Integer associateId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -359,7 +359,7 @@ Context for the executing task.
 Void SetContext(String context)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -375,7 +375,7 @@ thing.SetContext(context);
 Void SetCreated(DateTime created)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -393,7 +393,7 @@ Serial number of the database the task is to run on.
 Void SetDatabaseSerialNumber(String databaseSerialNumber)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -411,7 +411,7 @@ Description of the task.
 Void SetDescription(String description)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -429,7 +429,7 @@ Record ID of a row in the DetailsTable containing more info about the task.
 Void SetDetailsRecord(Integer detailsRecord)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -447,7 +447,7 @@ ID of table with more information about the task.
 Void SetDetailsTable(Integer detailsTable)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -465,7 +465,7 @@ ID of the task.
 Void SetId(Integer id)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -483,7 +483,7 @@ If IsInternalTask is true, this task will not add a trace to the database.
 Void SetIsInternalTask(Bool isInternalTask)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -501,7 +501,7 @@ If IsSystemTask is true, the task is not initiated by an associate.
 Void SetIsSystemTask(Bool isSystemTask)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -517,7 +517,7 @@ thing.SetIsSystemTask(isSystemTask);
 Void SetLastStarted(DateTime lastStarted)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -535,7 +535,7 @@ Name of the task.
 Void SetName(String name)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -553,7 +553,7 @@ Serializes a Map to a binary blob and saves it in the BinaryObject table. The li
 Void SetParameterObject(Map parameterObject)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -571,7 +571,7 @@ Descriptive text for the current stage
 Void SetProgressDescription(String progressDescription)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -589,7 +589,7 @@ Task progress, in percent of estimated total
 Void SetProgressPercent(Integer progressPercent)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -607,7 +607,7 @@ Maps to the request field in the batchtask table.
 Void SetRequest(String request)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -625,7 +625,7 @@ Maps to the response field in the batchtask table.
 Void SetResponse(String response)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -643,7 +643,7 @@ Maps to the result field in the batchtask table.
 Void SetResult(String result)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -661,7 +661,7 @@ Maps to the startcount field in the batchtask table.
 Void SetStartCount(Integer startCount)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -679,10 +679,10 @@ BatchTaskState of the task.
 Void SetState(Integer state)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
-See &lt;xref href="CRMScript.NetServer.BatchTaskState" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;
+See [CRMScript.NetServer.BatchTaskState](/en/automation/crmscript/reference/CRMScript.NetServer.BatchTaskState)
 </Note>
 
 **Example:**

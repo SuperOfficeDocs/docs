@@ -33,7 +33,7 @@ Checks in a currently checked-out document
 NSReturnInfo CheckinDocument(Integer documentId, String[] allowedReturnTypes, String versionDescription, String[] versionExtraFields)
 ```
 
-**Returns:** [CRMScript.NetServer.NSReturnInfo](CRMScript.NetServer.NSReturnInfo)
+**Returns:** [CRMScript.NetServer.NSReturnInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSReturnInfo)
 
 **Example:**
 
@@ -54,7 +54,7 @@ Checks out a document for editing by the current user.
 NSReturnInfo CheckoutDocument(Integer documentId, String[] allowedReturnTypes)
 ```
 
-**Returns:** [CRMScript.NetServer.NSReturnInfo](CRMScript.NetServer.NSReturnInfo)
+**Returns:** [CRMScript.NetServer.NSReturnInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSReturnInfo)
 
 **Example:**
 
@@ -73,7 +73,7 @@ Sets default values into a new NSDocumentEntity.
 NSDocumentEntity CreateDefaultDocumentEntity()
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocumentEntity](CRMScript.NetServer.NSDocumentEntity) - The new entity with default values.
+**Returns:** [CRMScript.NetServer.NSDocumentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocumentEntity) - The new entity with default values.
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
@@ -93,7 +93,7 @@ thing = agent.SaveDocumentEntity(thing);
 NSDocumentEntity CreateDefaultDocumentEntityFromSuggestion(Integer suggestedDocumentId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocumentEntity](CRMScript.NetServer.NSDocumentEntity) - The new entity.
+**Returns:** [CRMScript.NetServer.NSDocumentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocumentEntity) - The new entity.
 
 ## CreateDefaultDocumentPreview()
 
@@ -103,7 +103,7 @@ Sets default values into a new NSDocumentPreview.
 NSDocumentPreview CreateDefaultDocumentPreview()
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocumentPreview](CRMScript.NetServer.NSDocumentPreview)
+**Returns:** [CRMScript.NetServer.NSDocumentPreview](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocumentPreview)
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
@@ -125,7 +125,7 @@ Sets default values into a new NSSuggestedDocumentEntity.
 NSSuggestedDocumentEntity CreateDefaultSuggestedDocumentEntity()
 ```
 
-**Returns:** [CRMScript.NetServer.NSSuggestedDocumentEntity](CRMScript.NetServer.NSSuggestedDocumentEntity) - The new entity.
+**Returns:** [CRMScript.NetServer.NSSuggestedDocumentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSSuggestedDocumentEntity) - The new entity.
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
@@ -147,7 +147,7 @@ Sets default values into a new NSTemplateVariablesParameters.
 NSTemplateVariablesParameters CreateDefaultTemplateVariablesParameters()
 ```
 
-**Returns:** [CRMScript.NetServer.NSTemplateVariablesParameters](CRMScript.NetServer.NSTemplateVariablesParameters)
+**Returns:** [CRMScript.NetServer.NSTemplateVariablesParameters](/en/automation/crmscript/reference/CRMScript.NetServer.NSTemplateVariablesParameters)
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
@@ -169,7 +169,7 @@ Creates a new NSStream that can be used to store the document in the file archiv
 NSStream CreateDocumentStream(NSDocumentEntity documentEntity, Bool overwriteExistingData)
 ```
 
-**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream)
+**Returns:** [CRMScript.NetServer.NSStream](/en/automation/crmscript/reference/CRMScript.NetServer.NSStream)
 
 **Example:**
 
@@ -188,7 +188,7 @@ Creates a new document content based on a document template and store it in the 
 NSDocumentEntity CreateNewPhysicalDocumentFromTemplate(Integer contactId, Integer personId, Integer appointmentId, Integer documentId, Integer saleId, Integer selectionId, Integer projectId, String uiCulture)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocumentEntity](CRMScript.NetServer.NSDocumentEntity)
+**Returns:** [CRMScript.NetServer.NSDocumentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocumentEntity)
 
 <Note>
 Use GetDocumentStream to obtain the created document. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.
@@ -217,7 +217,7 @@ Creates a new physical document based on a document template and store it in the
 NSDocumentEntity CreateNewPhysicalDocumentFromTemplateWithCustomTags(Integer contactId, Integer personId, Integer appointmentId, Integer documentId, Integer saleId, Integer selectionId, Integer projectId, String[] customTags, String[] customValues, String uiCulture)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocumentEntity](CRMScript.NetServer.NSDocumentEntity)
+**Returns:** [CRMScript.NetServer.NSDocumentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocumentEntity)
 
 <Note>
 Use GetDocumentStream to obtain the created document content. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.
@@ -248,7 +248,7 @@ Creates a new physical document based on a document template and store it in the
 NSDocumentEntity CreateNewPhysicalDocumentFromTemplateWithCustomTags2(Integer contactId, Integer personId, Integer appointmentId, Integer documentId, Integer saleId, Integer selectionId, Integer projectId, Map customTags, String uiCulture)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocumentEntity](CRMScript.NetServer.NSDocumentEntity)
+**Returns:** [CRMScript.NetServer.NSDocumentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocumentEntity)
 
 <Note>
 Use GetDocumentStream to obtain the created document content. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.
@@ -278,7 +278,7 @@ Creates a new physical document based on the documents template.
 NSDocumentEntity CreateNewPhysicalMailMergeDocumentFromTemplate(Integer documentId, String uiCulture)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocumentEntity](CRMScript.NetServer.NSDocumentEntity)
+**Returns:** [CRMScript.NetServer.NSDocumentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocumentEntity)
 
 <Note>
 Do not replace template tags, as the document is going to be used as a mail merge source.
@@ -303,7 +303,7 @@ Creates a new temporary file based on the provided stream.  Specified filename m
 String CreateTempFile(String filename, NSStream dataStream)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -322,7 +322,7 @@ Deletes the NSDocumentEntity
 DeleteDocumentEntity(Integer documentEntity)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -339,7 +339,7 @@ Deletes the document contents
 NSReturnInfo DeletePhysicalDocument(Integer documentId, String[] allowedReturnType)
 ```
 
-**Returns:** [CRMScript.NetServer.NSReturnInfo](CRMScript.NetServer.NSReturnInfo)
+**Returns:** [CRMScript.NetServer.NSReturnInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSReturnInfo)
 
 **Example:**
 
@@ -358,7 +358,7 @@ Deletes a temporary file created with CreateTempFile.
 Void DeleteTempFile(String filename)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## ExecuteDocumentCommand(Integer,String,String[],String,String[])
 
@@ -368,7 +368,7 @@ Executes a custom command on a particular document, optionally a particular vers
 NSReturnInfo ExecuteDocumentCommand(Integer documentId, String versionId, String[] allowedReturnTypes, String command, String[] additionalData)
 ```
 
-**Returns:** [CRMScript.NetServer.NSReturnInfo](CRMScript.NetServer.NSReturnInfo)
+**Returns:** [CRMScript.NetServer.NSReturnInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSReturnInfo)
 
 **Example:**
 
@@ -390,7 +390,7 @@ Gets all documents that are linked to the appointment (the documents that are li
 NSDocument[] GetAppointmentDocuments(Integer appointmentId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)[]
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)[]
 
 **Example:**
 
@@ -408,7 +408,7 @@ Gets the current checkout state for a document, relative to the user performing 
 NSCheckoutInfo GetCheckoutState(Integer documentId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSCheckoutInfo](CRMScript.NetServer.NSCheckoutInfo)
+**Returns:** [CRMScript.NetServer.NSCheckoutInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSCheckoutInfo)
 
 **Example:**
 
@@ -426,7 +426,7 @@ Returns a specified number of document appointments within a time range.
 NSDocument[] GetContactDocuments(Integer contactId, DateTime startTime, DateTime endTime, Integer count)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)[] - The document appointments belong to the contact specified.
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)[] - The document appointments belong to the contact specified.
 
 **Example:**
 
@@ -447,7 +447,7 @@ Returns a specified number of document appointments within a time range, filtere
 NSDocument[] GetContactDocumentsByTemplateHeading(Integer contactId, DateTime startTime, DateTime endTime, Integer count, Integer templateHeadingId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)[] - The document appointments belong to the contact specified.
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)[] - The document appointments belong to the contact specified.
 
 **Example:**
 
@@ -469,7 +469,7 @@ Returns a specified number of document appointments within a time range, filtere
 NSDocument[] GetContactDocumentsByTemplateType(Integer contactId, DateTime startTime, DateTime endTime, Integer count, Integer documentTemplateId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)[] - The document appointments belong to the contact specified.
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)[] - The document appointments belong to the contact specified.
 
 **Example:**
 
@@ -491,7 +491,7 @@ Returns a specified number of document appointments within a time range, filtere
 NSDocument[] GetContactDocumentsByTemplateTypes(Integer contactId, DateTime startTime, DateTime endTime, Integer count, Integer[] documentTemplateIds)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)[] - The document appointments belong to the contact specified.
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)[] - The document appointments belong to the contact specified.
 
 **Example:**
 
@@ -513,7 +513,7 @@ Gets an NSDocument object.
 NSDocument GetDocument(Integer documentId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)
 
 **Example:**
 
@@ -530,7 +530,7 @@ Gets a list of custom commands valid for the specific document at this time.
 NSCommandInfo[] GetDocumentCommands(Integer documentId, String[] allowedReturnTypes)
 ```
 
-**Returns:** [CRMScript.NetServer.NSCommandInfo](CRMScript.NetServer.NSCommandInfo)[]
+**Returns:** [CRMScript.NetServer.NSCommandInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSCommandInfo)[]
 
 <Note>
 This information should not be cached by clients, as it may change between documents and over time.
@@ -553,7 +553,7 @@ Gets an NSDocumentEntity object.
 NSDocumentEntity GetDocumentEntity(Integer documentEntityId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocumentEntity](CRMScript.NetServer.NSDocumentEntity)
+**Returns:** [CRMScript.NetServer.NSDocumentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocumentEntity)
 
 **Example:**
 
@@ -570,7 +570,7 @@ Gets an array of NSDocument objects.
 NSDocument[] GetDocumentList(Integer[] documentIds)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)[]
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)[]
 
 **Example:**
 
@@ -588,7 +588,7 @@ Gets plugin-dependent properties for the document.
 Map GetDocumentProperties(Integer documentId, String[] requestedProperties)
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map)
 
 <Note>
 A number of standard properties that should be supported by all plugins are defined in SuperOffice.CRM.Documents.Constants.Properties.
@@ -611,7 +611,7 @@ Returns document appointments, filtered by the document template heading.
 NSDocument[] GetDocumentsByTemplateHeading(Integer templateHeadingId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)[]
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)[]
 
 **Example:**
 
@@ -629,7 +629,7 @@ Gets the document content as a stream
 NSStream GetDocumentStream(Integer documentId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream)
+**Returns:** [CRMScript.NetServer.NSStream](/en/automation/crmscript/reference/CRMScript.NetServer.NSStream)
 
 **Example:**
 
@@ -647,7 +647,7 @@ Gets the document as a stream
 NSStream GetDocumentStreamFromEntity(NSDocumentEntity documentEntity)
 ```
 
-**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream)
+**Returns:** [CRMScript.NetServer.NSStream](/en/automation/crmscript/reference/CRMScript.NetServer.NSStream)
 
 **Example:**
 
@@ -665,7 +665,7 @@ Gets a URL referring to the given document content.
 String GetDocumentUrl(Integer documentId, String versionId, Bool writeableUrl)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The returned string is a fully qualified URL.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The returned string is a fully qualified URL.
 
 <Note>
 This URL may be passed to the ultimate client (text editor of some kind?), which is then responsible for all further operations.
@@ -689,7 +689,7 @@ String res = agent.GetDocumentUrl(documentId, versionId, writeableUrl);
 NSDocument[] GetMyPublishedDocuments()
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)[]
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)[]
 
 **Example:**
 
@@ -706,7 +706,7 @@ Gets all documents that are linked to the person (the documents that are listed 
 NSDocument[] GetPersonDocuments(Integer personId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)[]
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)[]
 
 **Example:**
 
@@ -724,7 +724,7 @@ Returns a specified number of document appointments within a time range. The doc
 NSDocument[] GetPersonDocumentsByDate(Integer personId, Bool includeProjectDocuments, DateTime startTime, DateTime endTime, Integer count)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)[]
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)[]
 
 **Example:**
 
@@ -746,7 +746,7 @@ Returns a specified number of document appointments within a time range, filtere
 NSDocument[] GetPersonDocumentsByTemplateHeading(Integer personId, Bool includeProjectDocuments, DateTime startTime, DateTime endTime, Integer count, Integer templateHeadingId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)[] - The document appointments belong to the person specified.
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)[] - The document appointments belong to the person specified.
 
 **Example:**
 
@@ -769,7 +769,7 @@ Returns a specified number of document appointments within a time range, filtere
 NSDocument[] GetPersonDocumentsByTemplateType(Integer personId, Bool includeProjectDocuments, DateTime startTime, DateTime endTime, Integer count, Integer documentTemplateId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)[] - The document appointments belong to the person specified.
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)[] - The document appointments belong to the person specified.
 
 **Example:**
 
@@ -792,7 +792,7 @@ Returns a specified number of document appointments within a time range, filtere
 NSDocument[] GetPersonDocumentsByTemplateTypes(Integer personId, Bool includeProjectDocuments, DateTime startTime, DateTime endTime, Integer count, Integer[] documentTemplateIds)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)[] - The document appointments belong to the person specified.
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)[] - The document appointments belong to the person specified.
 
 **Example:**
 
@@ -815,7 +815,7 @@ Gets a list of plugin-dependent capabilities for a given document archive plugin
 Map GetPluginCapabilities(Integer pluginId)
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - A standard set of properties is defined in SuperOffice.CRM.Documents.Constants.Capabilities.
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map) - A standard set of properties is defined in SuperOffice.CRM.Documents.Constants.Capabilities.
 
 **Example:**
 
@@ -833,7 +833,7 @@ Gets a list of installed document plugins
 Map GetPluginList()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map)
 
 **Example:**
 
@@ -850,7 +850,7 @@ Gets the preview version of the document content as a stream. Retrieves a saniti
 NSDocumentPreview GetPreviewDocumentStream(Integer documentId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocumentPreview](CRMScript.NetServer.NSDocumentPreview)
+**Returns:** [CRMScript.NetServer.NSDocumentPreview](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocumentPreview)
 
 **Example:**
 
@@ -868,7 +868,7 @@ Returns a specified number of document appointments within a time range.
 NSDocument[] GetProjectDocuments(Integer projectId, DateTime startTime, DateTime endTime, Integer count)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)[] - The document appointments belong to the project specified.
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)[] - The document appointments belong to the project specified.
 
 **Example:**
 
@@ -889,7 +889,7 @@ Returns a specified number of document appointments within a time range, filtere
 NSDocument[] GetProjectDocumentsByTemplateHeading(Integer projectId, DateTime startTime, DateTime endTime, Integer count, Integer templateHeadingId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)[] - The document appointments belong to the project specified.
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)[] - The document appointments belong to the project specified.
 
 **Example:**
 
@@ -911,7 +911,7 @@ Returns a specified number of document appointments within a time range, filtere
 NSDocument[] GetProjectDocumentsByTemplateType(Integer projectId, DateTime startTime, DateTime endTime, Integer count, Integer documentTemplateId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)[] - The document appointments belong to the project specified.
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)[] - The document appointments belong to the project specified.
 
 **Example:**
 
@@ -933,7 +933,7 @@ Returns a specified number of document appointments within a time range, filtere
 NSDocument[] GetProjectDocumentsByTemplateTypes(Integer projectId, DateTime startTime, DateTime endTime, Integer count, Integer[] documentTemplateIds)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)[]
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)[]
 
 **Example:**
 
@@ -955,7 +955,7 @@ Returns a specified number of document appointments within a time range.
 NSDocument[] GetProjectMemberDocuments(Integer personId, DateTime startTime, DateTime endTime, Integer count)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)[] - The document appointments belong to the project member specified.
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)[] - The document appointments belong to the project member specified.
 
 **Example:**
 
@@ -976,7 +976,7 @@ Returns a specified number of document appointments within a time range, filtere
 NSDocument[] GetProjectMemberDocumentsByTemplateHeading(Integer personId, DateTime startTime, DateTime endTime, Integer count, Integer templateHeadingId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)[] - The document appointments belong to the project member specified.
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)[] - The document appointments belong to the project member specified.
 
 **Example:**
 
@@ -998,7 +998,7 @@ Returns a specified number of document appointments within a time range, filtere
 NSDocument[] GetProjectMemberDocumentsByTemplateType(Integer personId, DateTime startTime, DateTime endTime, Integer count, Integer documentTemplateId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)[] - The document appointments belong to the project member specified.
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)[] - The document appointments belong to the project member specified.
 
 **Example:**
 
@@ -1020,7 +1020,7 @@ Returns a specified number of document appointments within a time range, filtere
 NSDocument[] GetProjectMemberDocumentsByTemplateTypes(Integer personId, DateTime startTime, DateTime endTime, Integer count, Integer[] documentTemplateIds)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)[] - The document appointments belong to the project member specified.
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)[] - The document appointments belong to the project member specified.
 
 **Example:**
 
@@ -1042,7 +1042,7 @@ Gets the document if it's published
 NSDocument GetPublishedDocument(Integer documentId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)
 
 **Example:**
 
@@ -1060,7 +1060,7 @@ Gets the published documents from an array of document IDs.
 NSDocument[] GetPublishedDocuments(Integer[] documentIds)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)[]
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)[]
 
 **Example:**
 
@@ -1078,7 +1078,7 @@ Returns a specified number of published document appointments within a time rang
 NSDocument[] GetPublishedDocumentsByDate(Integer personId, Bool includeProjectDocuments, DateTime startTime, DateTime endTime, Integer count)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)[] - The document appointments is visible to the person specified or the document is in a project the person belongs to.
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)[] - The document appointments is visible to the person specified or the document is in a project the person belongs to.
 
 **Example:**
 
@@ -1100,7 +1100,7 @@ Returns a specified number of published document appointments within a time rang
 NSDocument[] GetPublishedPersonDocumentsByDate(Integer personId, Bool includeProjectDocuments, DateTime startTime, DateTime endTime, Integer count)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)[] - The document appointments belong to the person specified or the document is in a project the person belongs to.
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)[] - The document appointments belong to the person specified or the document is in a project the person belongs to.
 
 **Example:**
 
@@ -1122,7 +1122,7 @@ Gets published appointment documents by project ID.
 NSDocument[] GetPublishedProjectDocuments(Integer projectId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)[]
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)[]
 
 **Example:**
 
@@ -1140,7 +1140,7 @@ Gets all documents that are linked to the sale (the documents that are listed in
 NSDocument[] GetSaleDocuments(Integer saleId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocument](CRMScript.NetServer.NSDocument)[]
+**Returns:** [CRMScript.NetServer.NSDocument](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocument)[]
 
 **Example:**
 
@@ -1158,7 +1158,7 @@ Gets the document content as a stream. Retrieves a sanitized version if possible
 NSStream GetSanitizedDocumentStream(Integer documentId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream)
+**Returns:** [CRMScript.NetServer.NSStream](/en/automation/crmscript/reference/CRMScript.NetServer.NSStream)
 
 **Example:**
 
@@ -1176,7 +1176,7 @@ Retrieves a stream to a mail template based on its name. Sanitizes the contents 
 NSStream GetSanitizedTemplateStream(String templateName, Bool allowPersonal, String uiCulture)
 ```
 
-**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream)
+**Returns:** [CRMScript.NetServer.NSStream](/en/automation/crmscript/reference/CRMScript.NetServer.NSStream)
 
 **Example:**
 
@@ -1196,7 +1196,7 @@ Retrieve a stream to a document template based on its ID. Sanitizes the contents
 NSStream GetSanitizedTemplateStreamFromId(Integer templateId, String uiCulture)
 ```
 
-**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream)
+**Returns:** [CRMScript.NetServer.NSStream](/en/automation/crmscript/reference/CRMScript.NetServer.NSStream)
 
 **Example:**
 
@@ -1215,7 +1215,7 @@ Gets an NSSuggestedDocumentEntity object.
 NSSuggestedDocumentEntity GetSuggestedDocumentEntity(Integer suggestedDocumentEntityId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSuggestedDocumentEntity](CRMScript.NetServer.NSSuggestedDocumentEntity)
+**Returns:** [CRMScript.NetServer.NSSuggestedDocumentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSSuggestedDocumentEntity)
 
 **Example:**
 
@@ -1232,7 +1232,7 @@ Gets data stream for temporary file created with CreateTempFile.
 NSStream GetTempFile(String filename)
 ```
 
-**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream)
+**Returns:** [CRMScript.NetServer.NSStream](/en/automation/crmscript/reference/CRMScript.NetServer.NSStream)
 
 **Example:**
 
@@ -1250,7 +1250,7 @@ Retrieve a stream to a mail template based on its name
 NSStream GetTemplateStream(String templateName, Bool allowPersonal, String uiCulture)
 ```
 
-**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream)
+**Returns:** [CRMScript.NetServer.NSStream](/en/automation/crmscript/reference/CRMScript.NetServer.NSStream)
 
 **Example:**
 
@@ -1270,7 +1270,7 @@ Retrieve a stream to a document template based on its ID
 NSStream GetTemplateStreamFromId(Integer templateId, String uiCulture)
 ```
 
-**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream)
+**Returns:** [CRMScript.NetServer.NSStream](/en/automation/crmscript/reference/CRMScript.NetServer.NSStream)
 
 **Example:**
 
@@ -1289,7 +1289,7 @@ Gets the preview version of the document content as a stream. Retrieves an unsan
 NSDocumentPreview GetUnsanitizedPreviewDocumentStream(Integer documentId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocumentPreview](CRMScript.NetServer.NSDocumentPreview)
+**Returns:** [CRMScript.NetServer.NSDocumentPreview](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocumentPreview)
 
 <Note>
 This has less CPU impact but the caller must sanitize the content before presenting it to the user.
@@ -1311,7 +1311,7 @@ Gets a list of existing, committed  versions for a given document
 NSVersionInfo[] GetVersionList(Integer documentId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSVersionInfo](CRMScript.NetServer.NSVersionInfo)[]
+**Returns:** [CRMScript.NetServer.NSVersionInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSVersionInfo)[]
 
 **Example:**
 
@@ -1329,7 +1329,7 @@ Rename the physical document (change the file name or equivalent concept in the 
 String RenameDocument(Integer documentId, String newFilename)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -1348,7 +1348,7 @@ Updates the existing NSDocumentEntity or creates a new NSDocumentEntity if the i
 NSDocumentEntity SaveDocumentEntity(NSDocumentEntity documentEntity)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocumentEntity](CRMScript.NetServer.NSDocumentEntity)
+**Returns:** [CRMScript.NetServer.NSDocumentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocumentEntity)
 
 **Example:**
 
@@ -1366,7 +1366,7 @@ Saves content in stream to document template file
 NSTemplateInfo SaveDocumentTemplateStream(Integer documentTemplateId, NSStream content, String languageCode, Integer pluginId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSTemplateInfo](CRMScript.NetServer.NSTemplateInfo)
+**Returns:** [CRMScript.NetServer.NSTemplateInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSTemplateInfo)
 
 **Example:**
 
@@ -1387,7 +1387,7 @@ Generates a PDF from HTML and makes a document
 Integer SavePrivacyReport(String htmlReport, String title, Integer personId)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 **Example:**
 
@@ -1407,7 +1407,7 @@ Updates the existing NSSuggestedDocumentEntity or creates a new NSSuggestedDocum
 NSSuggestedDocumentEntity SaveSuggestedDocumentEntity(NSSuggestedDocumentEntity suggestedDocumentEntity)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSuggestedDocumentEntity](CRMScript.NetServer.NSSuggestedDocumentEntity)
+**Returns:** [CRMScript.NetServer.NSSuggestedDocumentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSSuggestedDocumentEntity)
 
 **Example:**
 
@@ -1425,7 +1425,7 @@ Store a document's contents from its stream. Since there is a potential for a na
 NSDocumentEntity SetDocumentStream(NSDocumentEntity documentEntity, NSStream stream, Bool overwriteExistingData)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocumentEntity](CRMScript.NetServer.NSDocumentEntity)
+**Returns:** [CRMScript.NetServer.NSDocumentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocumentEntity)
 
 <Note>
 The client should not assume that any earlier, cached entity information is valid.
@@ -1449,7 +1449,7 @@ Stores document content from stream. Since there is a potential for a name confl
 NSDocumentEntity SetDocumentStreamFromId(Integer documentId, NSStream stream)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocumentEntity](CRMScript.NetServer.NSDocumentEntity)
+**Returns:** [CRMScript.NetServer.NSDocumentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSDocumentEntity)
 
 <Note>
 The client should not assume that any earlier, cached entity information is valid.
@@ -1472,7 +1472,7 @@ Saves a mail signature template to the document archive
 Void SetTemplateStream(String filename, Bool personal, NSStream stream)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1493,7 +1493,7 @@ This method also takes a pair of arrays specifying custom tags and their values;
 NSStream SubstituteMergeDocumentTemplateVariables(Integer documentId, Integer associateId, String[] customTags, String[] customValues)
 ```
 
-**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream)
+**Returns:** [CRMScript.NetServer.NSStream](/en/automation/crmscript/reference/CRMScript.NetServer.NSStream)
 
 **Example:**
 
@@ -1514,7 +1514,7 @@ Parses the source document, and replaces any template variable tags with their v
 NSStream SubstituteMergeDocumentTemplateVariables2(Integer documentId, Integer associateId, Map customTags)
 ```
 
-**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream)
+**Returns:** [CRMScript.NetServer.NSStream](/en/automation/crmscript/reference/CRMScript.NetServer.NSStream)
 
 **Example:**
 
@@ -1534,7 +1534,7 @@ Parses the source document, and replaces any template variable tags with their v
 NSStream SubstituteMergeDocumentTemplateVariablesEx(Integer mergeDocumentId, Integer contactId, Integer personId, Integer projectId, Integer selectionId, Integer appointmentId, Integer documentId, Integer saleId, String[] customTags, String[] customValues)
 ```
 
-**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream)
+**Returns:** [CRMScript.NetServer.NSStream](/en/automation/crmscript/reference/CRMScript.NetServer.NSStream)
 
 **Example:**
 
@@ -1561,7 +1561,7 @@ Parses the source document, and replaces any template variable tags with their v
 NSStream SubstituteMergeDocumentTemplateVariablesEx2(Integer mergeDocumentId, Integer contactId, Integer personId, Integer projectId, Integer selectionId, Integer appointmentId, Integer documentId, Integer saleId, Map customTags)
 ```
 
-**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream)
+**Returns:** [CRMScript.NetServer.NSStream](/en/automation/crmscript/reference/CRMScript.NetServer.NSStream)
 
 **Example:**
 
@@ -1587,7 +1587,7 @@ Parses the source string, and replaces any template variable tags with their val
 String SubstituteTemplateVariables(String source, Integer generatorEncoding, Integer contactId, Integer personId, Integer appointmentId, Integer documentId, Integer saleId, Integer selectionId, Integer projectId, String cultureName)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -1614,7 +1614,7 @@ Parses the source string, and replaces any template variable tags with their val
 String SubstituteTemplateVariablesEx(NSTemplateVariablesParameters parameters)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -1633,7 +1633,7 @@ This method also takes a pair of arrays specifying custom tags and their values;
 String SubstituteTemplateVariablesWithCustomTags(String source, Integer generatorEncoding, String[] customTags, String[] customValues, Integer contactId, Integer personId, Integer appointmentId, Integer documentId, Integer saleId, Integer selectionId, Integer projectId, String cultureName)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -1663,7 +1663,7 @@ This method also takes a pair of arrays specifying custom tags and their values;
 String SubstituteTemplateVariablesWithCustomTags2(String source, Integer generatorEncoding, Map customTags, Integer contactId, Integer personId, Integer appointmentId, Integer documentId, Integer saleId, Integer selectionId, Integer projectId, String cultureName)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -1691,7 +1691,7 @@ Undoes (abandon) a checkout
 NSReturnInfo UndoCheckoutDocument(Integer documentId, String[] allowedReturnTypes)
 ```
 
-**Returns:** [CRMScript.NetServer.NSReturnInfo](CRMScript.NetServer.NSReturnInfo)
+**Returns:** [CRMScript.NetServer.NSReturnInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSReturnInfo)
 
 **Example:**
 
@@ -1710,7 +1710,7 @@ Checks that entity is ready for saving, return error messages by field.
 Map ValidateDocumentEntity(NSDocumentEntity documentEntity)
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map)
 
 **Example:**
 
@@ -1728,4 +1728,4 @@ Verifies that the requested document stream exists, and that we can access it, w
 Void VerifyGetDocumentStream(Integer documentId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
