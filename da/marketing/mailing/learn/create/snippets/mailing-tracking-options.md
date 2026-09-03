@@ -8,4 +8,4 @@
 
   * **Kampagne**: Angiv typen af udsendelse, f.eks. "nyhedsbrev" eller "pleje af kundeemner", eller indtast et specifikt kampagnenavn, f.eks. "forårssalg-juni-21" eller "opgraderingskampagne-v9".
 
-[1]: ../../../../tracked-links/learn/index#google
+[1]: /da/marketing/tracked-links/learn/index#google

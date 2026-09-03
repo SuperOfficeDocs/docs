@@ -30,6 +30,6 @@ Klik på udsendelsen på listen for at [se status og statistik for din afsendels
 
 For at standse udsendelsen eller påbegynde en planlagt udsendelse før planlagt tid, skal du klikke på de respektive **Stop** eller **Start** - knapper.
 
-[1]: ../../view-statistics
+[1]: /da/marketing/mailing/learn/view-statistics
 
-[img4]: ../../../../../../media/loc/en/marketing/send-or-schedule.png
+[img4]: /media/loc/en/marketing/send-or-schedule.png
