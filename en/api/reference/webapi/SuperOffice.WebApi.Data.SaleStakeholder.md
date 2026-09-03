@@ -36,7 +36,7 @@ var saleStakeholder = agent.GetSaleStakeholder( 123 );</code></pre>
 
 ## Remarks
 
-Use <xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" data-throw-if-not-resolved="false"></xref>:
+Use [Archive agent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent):
             All SaleStakeholder: <pre><code class="lang-csharp">"SaleStakeholder"</code></pre>
 
 ## Constructors

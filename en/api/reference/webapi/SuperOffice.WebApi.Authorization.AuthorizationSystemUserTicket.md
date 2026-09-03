@@ -3,7 +3,7 @@
 Namespace: [SuperOffice.WebApi.Authorization](SuperOffice.WebApi.Authorization.md)  
 Assembly: SuperOffice.WebApi.Authorization.SystemUserTicket.dll  
 
-SOTicket for use with SystemUser tokens in CRM online only. See <xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"></xref>.
+SOTicket for use with SystemUser tokens in CRM online only. See [IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization).
 
 ```csharp
 public class AuthorizationSystemUserTicket : AuthorizationTicket, IAddHeaders

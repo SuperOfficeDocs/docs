@@ -32,6 +32,7 @@ This page is the single reference for every automatic check that runs against th
 | Redirect coverage guard | GitHub Action (`.github/workflows/redirect-coverage-guard.yml`) | No - advisory (warns only, labels the PR) | This repo, `tools/ci/check-redirect-coverage.py` |
 | Office-format download guard | GitHub Action (`.github/workflows/office-format-download-guard.yml`) | **Yes** - fails the check | This repo, `tools/ci/check-no-office-format-downloads.py` |
 | DocFX see-cref guard | GitHub Action (`.github/workflows/docfx-see-cref-guard.yml`) | **Yes** - fails the check | This repo, `tools/ci/check-no-new-docfx-see-cref.py` |
+| DocFX xref guard | GitHub Action (`.github/workflows/docfx-xref-guard.yml`) | **Yes** - fails the check | This repo, `tools/ci/check-no-new-docfx-xref.py` |
 | Vale | Mintlify CI Checks add-on | No - Warning level | Mintlify dashboard (Add-ons > CI Checks), using this repo's `.vale.ini` |
 | Build validation | Mintlify preview deployment | Yes - a failed build shows as a red "Mintlify Deployment" check | Mintlify, automatic on every PR (see [Deploy trigger mechanics][2]) |
 | Broken links (internal) | Mintlify CI Checks add-on | No - Warning level | Mintlify dashboard (Add-ons > CI Checks) |
@@ -106,15 +107,21 @@ Runs on every PR (`fetch-depth: 0`, needed to diff against `origin/main`). Detec
 
 ### Office-format download guard
 
-Checks every PR (and direct push to `main`) for a newly *added* `.xlsx`/`.docx`/`.pptx` file anywhere under `downloads/`, via `git diff --name-status` against `origin/main` - a pre-existing tracked file isn't re-flagged just because an unrelated PR touches something else in that folder. This is one of two **blocking** exceptions in an otherwise advisory guard family: Mintlify does not serve these three extensions at any plan tier (confirmed live - 404 on every `.xlsx`/`.docx`/`.pptx` under `downloads/`, while `.pdf`/`.zip` in the same folder return 200 - and against Mintlify's own supported-file-types documentation), so a file added with one of these extensions is never downloadable at all once merged, not a stylistic or lint-level concern the other checks on this page warn about. #386 found and fixed all 30 pre-existing instances by zipping each file and repointing every link/redirect at the `.zip`; this guard exists so the same 404 can't quietly reappear the normal way (see [How to use links in docs][17] for the authoring rule, added alongside this guard).
+Checks every PR (and direct push to `main`) for a newly *added* `.xlsx`/`.docx`/`.pptx` file anywhere under `downloads/`, via `git diff --name-status` against `origin/main` - a pre-existing tracked file isn't re-flagged just because an unrelated PR touches something else in that folder. This is one of three **blocking** exceptions in an otherwise advisory guard family: Mintlify does not serve these three extensions at any plan tier (confirmed live - 404 on every `.xlsx`/`.docx`/`.pptx` under `downloads/`, while `.pdf`/`.zip` in the same folder return 200 - and against Mintlify's own supported-file-types documentation), so a file added with one of these extensions is never downloadable at all once merged, not a stylistic or lint-level concern the other checks on this page warn about. #386 found and fixed all 30 pre-existing instances by zipping each file and repointing every link/redirect at the `.zip`; this guard exists so the same 404 can't quietly reappear the normal way (see [How to use links in docs][17] for the authoring rule, added alongside this guard).
 
 Unlike the changed-files-list checks elsewhere on this page, this script computes its own `git diff` against the base ref rather than receiving filenames from `tj-actions/changed-files` through a shell-interpolated `${{ }}` expression - so the injection vector those checks guard against with `env:`-passed input doesn't arise here in the first place, since no PR-controlled string is ever substituted into the workflow's `run:` script text.
 
 ### DocFX see-cref guard
 
-Checks every PR (and direct push to `main`) for a newly *added* `<see cref="T:...">` (or its HTML-escaped form) occurrence in any `.md`/`.mdx` file, via the same base-ref `git diff` approach as the guard above - but at line granularity, not whole-file: only lines the PR's own diff actually adds are checked, so an unrelated edit to a file that already has the pattern isn't re-flagged. This is the other **blocking** exception in the guard family.
+Checks every PR (and direct push to `main`) for a newly *added* `<see cref="T:...">` (or its HTML-escaped form) occurrence in any `.md`/`.mdx` file, via the same base-ref `git diff` approach as the guard above - but at line granularity, not whole-file: only lines the PR's own diff actually adds are checked, so an unrelated edit to a file that already has the pattern isn't re-flagged. This is the second of three **blocking** exceptions in the guard family.
 
 `<see cref="T:Namespace.Type">` is .NET XML-doc-comment syntax, not HTML - DocFX used to resolve it into a real hyperlink, but Mintlify's MDX renderer doesn't, so it either breaks the build outright or silently drops the link and leaves only the bare type name visible. A repo-wide audit ([issue #407][22]) found 797 files / 1,307 pre-existing occurrences, concentrated in the generated `archive-providers`/`mdo-providers` reference trees and predating any single PR - fixing all of it needs a real resolve-or-plain-text conversion script, tracked in #407 as its own piece of work. This guard is the stopgap in the meantime: it stops the count from growing while that fix is designed, without attempting to touch any of the pre-existing files itself.
+
+### DocFX xref guard
+
+Checks every PR (and direct push to `main`) for a newly *added* `<xref:some.uid>` or `<xref href="some.uid" data-throw-if-not-resolved="false"></xref>` occurrence (or either's HTML-escaped form) in any `.md`/`.mdx` file, at the same added-line granularity as the see-cref guard above. This is the third **blocking** exception in the guard family.
+
+Mintlify's MDX renderer doesn't resolve DocFX's `xref` syntax in either form. #312/PR #313 did a repo-wide sweep converting ~90 known occurrences to real links, but that sweep alone isn't durable: [issue #404][23] found two of #313's own already-fixed lines had been silently reintroduced by a later ADO/generator content drop regenerating a page from its source, with no awareness of the Mintlify-side fix. This guard exists so a regenerated page - or a hand-authored edit - can't quietly reintroduce an occurrence the same way again; it doesn't touch any pre-existing occurrence itself.
 
 ### Vale
 
@@ -205,3 +212,4 @@ mint automations create --name "Broken link detection" --type broken-link-detect
 [20]: https://github.com/SuperOfficeDocs/docs/issues/351
 [21]: https://github.com/SuperOfficeDocs/docs/issues/360
 [22]: https://github.com/SuperOfficeDocs/docs/issues/407
+[23]: https://github.com/SuperOfficeDocs/docs/issues/404

@@ -30,7 +30,7 @@ Customize this particular request with special language code or timezone specifi
 
 Development("sod") / Stage("qoonline") / Production("online")
 <p>
-Use with the <pre><code class="lang-csharp">subdomain</code></pre> parameter in SuperOffice.WebApi.Authorization.AuthorizationAccessToken or <xref href="SuperOffice.WebApi.Agents.ApiAgent.GetTenantStatusAsync(System.String%2cSystem.String%2cSuperOffice.WebApi.RequestOptions)" data-throw-if-not-resolved="false"></xref>
+Use with the <pre><code class="lang-csharp">subdomain</code></pre> parameter in SuperOffice.WebApi.Authorization.AuthorizationAccessToken or [GetTenantStatusAsync](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ApiAgent#SuperOffice_WebApi_Agents_ApiAgent_GetTenantStatusAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_)
 </p>
 
  [WebApiOptions](SuperOffice.WebApi.WebApiOptions.md)
