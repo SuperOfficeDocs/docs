@@ -17,7 +17,7 @@ PR #383 entirely. Fixing all of it needs a real two-pass script (resolve
 each cref against a type->page lookup built from every reference page's
 own "implemented by the class <see cref=...>" self-declaration, or fall
 back to plain text when no matching page exists) -- tracked as its own
-issue, not implemented here.
+issue (#407), not implemented here.
 
 This guard is the stopgap asked for in the meantime: block any *new*
 occurrence from being introduced by a future PR (a hand-authored edit, or
@@ -26,15 +26,17 @@ while the real fix is pending. It deliberately does not attempt to flag
 or fix any of the 797 pre-existing files -- only lines actually *added*
 by the PR's own diff.
 
-Known limitation (accepted for a first "basic" version, per direct
-instruction to dogfood before building the real fix): this checks added
-diff lines directly and does not mask fenced code blocks/inline code
-spans the way the rest of this repo's content-scanning guards do. A
-future documentation page that adds a *literal, intentional* example of
-this syntax (e.g. a "don't do this" snippet in the DocFX-to-Mintlify
-cheat sheet) would be falsely flagged. If that happens in practice, add
-the same fenced-code/inline-code masking used by
-tools/ci/check-index-relative-links.py rather than disabling the guard.
+A genuinely new occurrence is found by diffing against base_ref to get
+each changed file's added line numbers, then checking those specific
+lines against the file's *masked* content (fenced code blocks and inline
+code spans blanked out, same helpers as
+tools/ci/check-index-relative-links.py) rather than the raw diff text --
+otherwise a legitimate documentation example of this exact syntax (e.g.
+this guard's own docs, or a future "don't do this" snippet in the
+DocFX-to-Mintlify cheat sheet) would be falsely flagged. Confirmed this
+was not hypothetical: the first version of this script, without masking,
+flagged its own added documentation in contribute/automated-tests.mdx and
+tools/README.md, which shows the pattern in backticks as an example.
 
 Usage:
     python tools/ci/check-no-new-docfx-see-cref.py --base-ref origin/main
@@ -44,15 +46,46 @@ import argparse
 import re
 import subprocess
 import sys
+from collections import defaultdict
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 
 SEE_CREF_RE = re.compile(r'<see cref=|&lt;see cref=', re.IGNORECASE)
 
+FENCE_LINE_RE = re.compile(r"^[ \t]{0,3}(`{3,}|~{3,})")
+INLINE_CODE_SPAN_RE = re.compile(r"`[^`\n]+`")
 
-def get_added_lines(base_ref):
-    """Yields (path, line_no, line_text) for every line added by the PR's
+
+def mask_fenced_code(text):
+    """Blank out fenced code-block bodies, keeping line count and length
+    identical so line numbers stay accurate. Same approach as the
+    identical helper in tools/ci/check-index-relative-links.py (see that
+    file for the self-closed-fence edge case this handles)."""
+    lines = text.split("\n")
+    in_fence = False
+    for i, line in enumerate(lines):
+        m = FENCE_LINE_RE.match(line)
+        if m:
+            fence_char = m.group(1)[0]
+            rest = line[m.end():]
+            self_closed = re.search(re.escape(fence_char) + "{3,}", rest)
+            lines[i] = ""
+            if not self_closed:
+                in_fence = not in_fence
+            continue
+        if in_fence:
+            lines[i] = ""
+    return "\n".join(lines)
+
+
+def mask_inline_code_spans(text):
+    """Blank out inline code spans (`...`), preserving length/line count."""
+    return INLINE_CODE_SPAN_RE.sub(lambda m: " " * len(m.group(0)), text)
+
+
+def get_added_line_numbers(base_ref):
+    """Returns {path: set(line_no, ...)} for every line added by the PR's
     diff (against base_ref) in a tracked .md/.mdx file. Uses a unified
     diff with file-scoped hunk headers so added-line numbers in the new
     file can be recovered without a full patch parser."""
@@ -62,6 +95,7 @@ def get_added_lines(base_ref):
     ]
     out = subprocess.run(cmd, cwd=REPO_ROOT, capture_output=True, text=True, check=True)
 
+    added = defaultdict(set)
     current_path = None
     new_line_no = None
     hunk_re = re.compile(r"^@@ -\d+(?:,\d+)? \+(\d+)(?:,\d+)? @@")
@@ -80,12 +114,50 @@ def get_added_lines(base_ref):
         if current_path is None or new_line_no is None:
             continue
         if line.startswith("+"):
-            yield current_path, new_line_no, line[1:]
+            added[current_path].add(new_line_no)
             new_line_no += 1
         elif line.startswith("-"):
             continue
         else:
             new_line_no += 1
+
+    return added
+
+
+def resolve_safe_path(rel_path):
+    """Resolve rel_path against REPO_ROOT and refuse anything that would
+    escape it (defends against a crafted PR-diff filename attempting path
+    traversal -- the changed-files list arrives as untrusted content)."""
+    candidate = (REPO_ROOT / rel_path).resolve()
+    try:
+        candidate.relative_to(REPO_ROOT)
+    except ValueError:
+        return None
+    return candidate
+
+
+def find_hits(path, line_numbers):
+    """Returns [(line_no, original_line_text), ...] for added lines that
+    contain the pattern outside of fenced code / inline code spans."""
+    full_path = resolve_safe_path(path)
+    if full_path is None or not full_path.is_file():
+        return []
+
+    original_text = full_path.read_bytes().decode("utf-8-sig", errors="replace")
+    original_lines = original_text.split("\n")
+
+    masked_text = mask_fenced_code(original_text)
+    masked_text = mask_inline_code_spans(masked_text)
+    masked_lines = masked_text.split("\n")
+
+    hits = []
+    for line_no in sorted(line_numbers):
+        idx = line_no - 1
+        if idx < 0 or idx >= len(masked_lines):
+            continue
+        if SEE_CREF_RE.search(masked_lines[idx]):
+            hits.append((line_no, original_lines[idx].strip()))
+    return hits
 
 
 def main():
@@ -93,16 +165,18 @@ def main():
     parser.add_argument("--base-ref", default="origin/main", help="Git ref to diff against (default: origin/main)")
     args = parser.parse_args()
 
-    hits = []
-    for path, line_no, text in get_added_lines(args.base_ref):
-        if SEE_CREF_RE.search(text):
-            hits.append((path, line_no, text.strip()))
+    added = get_added_line_numbers(args.base_ref)
 
-    if not hits:
+    all_hits = []
+    for path in sorted(added):
+        for line_no, text in find_hits(path, added[path]):
+            all_hits.append((path, line_no, text))
+
+    if not all_hits:
         print("No new <see cref=\"T:...\"> DocFX XML-doc references added.")
         return 0
 
-    for path, line_no, text in hits:
+    for path, line_no, text in all_hits:
         print(
             f"::error file={path},line={line_no}::"
             f"New DocFX XML-doc cross-reference introduced: '{text}'. "
@@ -112,7 +186,7 @@ def main():
             f"occurrences; see the tracking issue for the real two-pass fix."
         )
 
-    print(f"\n{len(hits)} new DocFX <see cref> reference(s) added -- see errors above.")
+    print(f"\n{len(all_hits)} new DocFX <see cref> reference(s) added -- see errors above.")
     return 1
 
 
