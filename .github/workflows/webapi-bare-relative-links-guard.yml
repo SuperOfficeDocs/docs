@@ -1,0 +1,62 @@
+name: WebAPI bare-relative links auto-fix
+
+on:
+  pull_request:
+    branches: [main]
+
+# Automatically cancel in-progress runs on the same branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  fix-webapi-bare-relative-links:
+    name: "Rewrite bare-relative links in en/api/reference/webapi/ on changed files"
+    runs-on: ubuntu-latest
+    # A fork PR's default token can't push back to the fork - skip cleanly
+    # rather than fail loudly. Same-repo branches proceed as usual.
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    steps:
+      - name: Checkout PR head
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+
+      - name: Get changed files
+        id: changed
+        uses: tj-actions/changed-files@v45
+        with:
+          files: |
+            en/api/reference/webapi/**/*.md
+            en/api/reference/webapi/**/*.mdx
+
+      - name: Set up Python
+        if: steps.changed.outputs.any_changed == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: "Rewrite bare-relative links on changed files"
+        if: steps.changed.outputs.any_changed == 'true'
+        env:
+          CHANGED_FILES: ${{ steps.changed.outputs.all_changed_files }}
+        run: python tools/ci/fix-webapi-bare-relative-links.py --apply $CHANGED_FILES
+
+      - name: Commit and push fix, if any
+        if: steps.changed.outputs.any_changed == 'true'
+        env:
+          HEAD_REF: ${{ github.event.pull_request.head.ref }}
+        run: |
+          if git diff --quiet; then
+            echo "No bare-relative links to rewrite."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -u
+          git commit -m "Rewrite bare-relative links in en/api/reference/webapi/ (#400)"
+          git push origin "HEAD:$HEAD_REF"
