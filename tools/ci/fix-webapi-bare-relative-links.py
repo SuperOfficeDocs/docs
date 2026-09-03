@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rewrite bare-relative link destinations in the generated WebAPI reference
+r"""Rewrite bare-relative link destinations in the generated WebAPI reference
 tree (`en/api/reference/webapi/`) to root-relative Mintlify paths (see #400).
 
 This tree is produced by an external ADO pipeline with no awareness of
