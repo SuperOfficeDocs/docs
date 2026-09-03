@@ -9,27 +9,27 @@ envir: onsite, online
 
 ## "SelectionStaticContactAddMembers"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SelectionAddMembersProvider">SuperOffice.CRM.ArchiveLists.SelectionAddMembersProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SelectionAddMembersProvider inside NetServer's SODatabase assembly.
 
 This is the provider used when searching for potential new members of a static selection. It is actually
-just a facade for the <see cref="T:SuperOffice.CRM.ArchiveLists.FindContactProvider" />, but a different name is required to avoid stepping
+just a facade for the [FindContactProvider](./findcontact), but a different name is required to avoid stepping
 on stored findcontact queries for the same user. Before using this provider, please read the Remarks section and
 make sure you understand its special functionality.
 
 There are several 'special' restrictions that are used by this provider in order to implement the various
 irregular query modifiers used by the Add Members dialog.
 &lt;list type="bullet"&gt;&lt;item&gt;&lt;term&gt;includeContactWithStopRestriction&lt;/term&gt;&lt;description&gt;If this boolean restriction is included and set to 0,
-then contacts that have the &lt;see cref="P:SuperOffice.CRM.Rows.ContactRow.Xstop" /&gt; property set to a nonzero
+then contacts that have the Xstop property set to a nonzero
 value will not NOT be included. If it is set to 1 or not set at all, such contacts WILL be included.&lt;/description&gt;&lt;/item&gt;&lt;item&gt;&lt;term&gt;includeContactWithNoDMRestriction&lt;/term&gt;&lt;description&gt;If this boolean restriction is included and set to 0,
-then contacts that have the &lt;see cref="P:SuperOffice.CRM.Rows.ContactRow.Nomailing" /&gt; property set to a nonzero
+then contacts that have the Nomailing property set to a nonzero
 value will not NOT be included. If it is set to 1 or not set at all, such contacts WILL be included.&lt;/description&gt;&lt;/item&gt;&lt;item&gt;&lt;term&gt;includePersonWithNoDMRestriction&lt;/term&gt;&lt;description&gt;If this boolean restriction is included and set to 0,
-then persons that have the &lt;see cref="P:SuperOffice.CRM.Rows.PersonRow.Nomailing" /&gt; property set to a nonzero
+then persons that have the Nomailing property set to a nonzero
 value will not NOT be included. If it is set to 1 or not set at all, such persons WILL be included.
 
 Note that this restriction will by itself NOT trigger a person search; a genuine person-type restriction
 has to be present to do that.&lt;/description&gt;&lt;/item&gt;&lt;item&gt;&lt;term&gt;includePersonRestriction&lt;/term&gt;&lt;description&gt;This restriction, if included, can have one of three distinct
 string values. The strings correspond to the values of the
-&lt;see cref="T:SuperOffice.CRM.ArchiveLists.SelectionContactPersonExtender.IncludePersonType" /&gt; enumeration (parsing
+IncludePersonType enumeration (parsing
 is not case sensitive). The value 'none' means that person records should not be included unless an explicit person criterion
 has been specified. 'first' means that the lowest-ranked person of each found contact should be included, but the
 result set still uses the contact_id as the primary key and is not a person search (again, unless other person
@@ -1301,5 +1301,5 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
 

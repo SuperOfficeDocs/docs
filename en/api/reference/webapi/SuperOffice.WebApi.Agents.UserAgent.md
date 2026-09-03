@@ -2584,7 +2584,7 @@ Id of role for the external user. The role must be a role of type external users
 
 `externalUserInfoModification` [ExternalUserInfoModification](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExternalUserInfoModification)
 
-externalUserInfoModification is a flag describing what to change. &lt;see cref="SuperOffice.CRM.Services.Util.ExternalUserInfoModification"/&gt;.
+externalUserInfoModification is a flag describing what to change. [ExternalUserInfoModification](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExternalUserInfoModification).
 
 `requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 

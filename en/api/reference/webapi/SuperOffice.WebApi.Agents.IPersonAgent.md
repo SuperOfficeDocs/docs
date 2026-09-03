@@ -657,7 +657,7 @@ Task<Person[]> GetColleaguesBySourceAsync(AssociateSourceType sourceType, int co
 
 `sourceType` [AssociateSourceType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AssociateSourceType)
 
-The “source” the colleagues should be retrieved from. &lt;see cref="AssociateSourceType"/&gt; for more information.
+The “source” the colleagues should be retrieved from. [AssociateSourceType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AssociateSourceType) for more information.
 
 `count` [int](https://learn.microsoft.com/dotnet/api/system.int32)
 

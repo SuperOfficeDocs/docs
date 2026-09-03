@@ -724,7 +724,7 @@ The id of the selection to edit members from.
 
 `selectionMemberEditValues` [SelectionMemberEditValues](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionMemberEditValues)
 
-An object of &lt;see cref="SelectionMemberEditValues"/&gt; describing what should be changed for companys and contacts.
+An object of [SelectionMemberEditValues](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionMemberEditValues) describing what should be changed for companys and contacts.
 
 `requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
