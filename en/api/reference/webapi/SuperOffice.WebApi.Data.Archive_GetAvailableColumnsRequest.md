@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Archive_GetAvailableColumnsRequest"></a> Class Archive\_GetAvailableColumnsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Archive_GetAvailableColumnsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Archive\_GetAvailableColumnsRequest](SuperOffice.WebApi.Data.Archive\_GetAvailableColumnsRequest.md)
+[Archive\_GetAvailableColumnsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Archive_GetAvailableColumnsRequest)
 
 #### Inherited Members
 

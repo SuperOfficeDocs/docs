@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Contact_SetDuplicateRulesStatusRequest"></a> Class Contact\_SetDuplicateRulesStatusRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Contact_SetDuplicateRulesStatusRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Contact\_SetDuplicateRulesStatusRequest](SuperOffice.WebApi.Data.Contact\_SetDuplicateRulesStatusRequest.md)
+[Contact\_SetDuplicateRulesStatusRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact_SetDuplicateRulesStatusRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public DuplicateRule[] Rules { get; set; }
 
 #### Property Value
 
- [DuplicateRule](SuperOffice.WebApi.Data.DuplicateRule.md)\[\]
+ [DuplicateRule](/en/api/reference/webapi/SuperOffice.WebApi.Data.DuplicateRule)\[\]
 

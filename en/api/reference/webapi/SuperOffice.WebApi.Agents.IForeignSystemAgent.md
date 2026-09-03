@@ -1,6 +1,6 @@
 # Interface IForeignSystemAgent {#SuperOffice_WebApi_Agents_IForeignSystemAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Collection of all services that works with Foreign key data (Key/Value pairs)
@@ -11,7 +11,7 @@ public interface IForeignSystemAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -38,13 +38,13 @@ The name of the foreign device.
 
 Unique id of device (Palm pilot device ID, version number, etc)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignDevice](SuperOffice.WebApi.Data.ForeignDevice.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignDevice](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignDevice)\&gt;
 
 The ForeignDevice.
 
@@ -58,7 +58,7 @@ Task<ForeignKey> AddForeignKeyAsync(ForeignKey foreignKey, string applicationNam
 
 #### Parameters
 
-`foreignKey` [ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)
+`foreignKey` [ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)
 
 Foreign key to save
 
@@ -74,13 +74,13 @@ The name of the foreign device.
 
 The device identifier. Optional if device identifier is not used.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)\&gt;
 
 The new or updated ForeignKey
 
@@ -95,13 +95,13 @@ Task<ForeignAppEntity> CreateDefaultForeignAppEntityAsync(RequestOptions request
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignAppEntity](SuperOffice.WebApi.Data.ForeignAppEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignAppEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignAppEntity)\&gt;
 
 A blank ForeignAppEntity
 
@@ -127,7 +127,7 @@ The name of the foreign device.
 
 Unique id of device (Palm pilot device ID, version number, etc)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -151,7 +151,7 @@ Task DeleteForeignAppEntityAsync(int foreignAppEntityId, RequestOptions requestO
 
 The identity of the ForeignAppEntity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -169,7 +169,7 @@ Task DeleteForeignDeviceAsync(ForeignDevice foreignDevice, string applicationNam
 
 #### Parameters
 
-`foreignDevice` [ForeignDevice](SuperOffice.WebApi.Data.ForeignDevice.md)
+`foreignDevice` [ForeignDevice](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignDevice)
 
 foreign device to delete
 
@@ -177,7 +177,7 @@ foreign device to delete
 
 Name of application to delete from
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -195,7 +195,7 @@ Task DeleteForeignKeyAsync(ForeignKey foreignKey, string applicationName, string
 
 #### Parameters
 
-`foreignKey` [ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)
+`foreignKey` [ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)
 
 Key name to delete.
 
@@ -219,7 +219,7 @@ Table name, transformed to and from numeric table id by the service layer.&lt;p/
 
 Id of record that this key refers to. If the table name was blank, then this parameter must be 0. It can also be 0 to mean that the foreign key record was not bound to any particular record of the target table.&lt;p/&gt;Specifying a zero recordId will remove the recordId restriction and delete all keys that otherwise match.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -263,7 +263,7 @@ Table name, transformed to and from numeric table id by the service layer.&lt;p/
 
 Id of record that this key refers to. If the table name was blank, then this parameter must be 0. It can also be 0 to mean that the foreign key record was not bound to any particular record of the target table.&lt;p/&gt;Specifying a zero recordId will remove the recordId restriction and delete all keys that otherwise match.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -291,13 +291,13 @@ Entity type (table name): 'contact', 'project' etc.
 
 Primary key of Entity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\&gt;
 
 Dictionary of 'appname.deviceid.keyname' = '123' key values
 
@@ -315,13 +315,13 @@ Task<ForeignAppEntity> GetAppByNameAsync(string applicationName, RequestOptions 
 
 The name of the foreign application.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignAppEntity](SuperOffice.WebApi.Data.ForeignAppEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignAppEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignAppEntity)\&gt;
 
 The ForeignApp that matches the name.
 
@@ -339,13 +339,13 @@ Task<ForeignDevice[]> GetApplicationDevicesAsync(string applicationName, Request
 
 The foreign application name
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignDevice](SuperOffice.WebApi.Data.ForeignDevice.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignDevice](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignDevice)\[\]\&gt;
 
 Array of ForeignDevices
 
@@ -363,13 +363,13 @@ Task<ForeignKey[]> GetApplicationKeysAsync(string applicationName, RequestOption
 
 The name of the foreign application.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)\[\]\&gt;
 
 Array of all ForeignKeys in the ForeignApp.
 
@@ -395,13 +395,13 @@ The name of the foreign device.
 
 Optional unique id of device (Palm pilot device ID, version number, etc)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignDevice](SuperOffice.WebApi.Data.ForeignDevice.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignDevice](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignDevice)\&gt;
 
 The ForeignDevice.
 
@@ -423,13 +423,13 @@ The name of the foreign application.
 
 The name of the foreign device.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignDevice](SuperOffice.WebApi.Data.ForeignDevice.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignDevice](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignDevice)\&gt;
 
 The ForeignDevice.
 
@@ -451,13 +451,13 @@ The name of the foreign application.
 
 The name of the foreign device.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)\[\]\&gt;
 
 Array of all ForeignKeys in the ForeignDevice.
 
@@ -483,13 +483,13 @@ The name of the foreign device.
 
 Identifier for a unique grouping of keys within a device.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)\[\]\&gt;
 
 Array of all ForeignKeys in the ForeignDevice that belong to the DeviceIdentifier.
 
@@ -519,13 +519,13 @@ Identifier for a unique grouping of keys within a device.
 
 Table name, transformed to and from numeric table id by the service layer.&lt;p/&gt;Use an empty string to indicate that your key is not bound to any specific table.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)\[\]\&gt;
 
 Array of all ForeignKeys in the ForeignDevice that belong to the DeviceIdentifier.
 
@@ -559,13 +559,13 @@ Table name, transformed to and from numeric table id by the service layer.&lt;p/
 
 Id of record that this key refers to. If the table name was blank, then this parameter must be 0. It can also be 0 to mean that the foreign key record was not bound to any particular record of the target table.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)\[\]\&gt;
 
 Array of all ForeignKeys in the ForeignDevice that match the criteria
 
@@ -583,13 +583,13 @@ Task<ForeignAppEntity> GetForeignAppEntityAsync(int foreignAppEntityId, RequestO
 
 The identifier of the ForeignAppEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignAppEntity](SuperOffice.WebApi.Data.ForeignAppEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignAppEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignAppEntity)\&gt;
 
 ForeignAppEntity
 
@@ -607,13 +607,13 @@ Task<ForeignDevice> GetForeignDeviceAsync(int foreignDeviceId, RequestOptions re
 
 The identifier of the ForeignDevice object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignDevice](SuperOffice.WebApi.Data.ForeignDevice.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignDevice](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignDevice)\&gt;
 
 ForeignDevice
 
@@ -647,13 +647,13 @@ Table name, transformed to and from numeric table id by the service layer.&lt;p/
 
 Id of record that this key refers to. If the table name was blank, then this parameter must be 0. It can also be 0 to mean that the foreign key record was not bound to any particular record of the target table.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)\&gt;
 
 The ForeignKey.
 
@@ -691,13 +691,13 @@ Foreignkey value
 
 Table name, transformed to and from numeric table id by the service layer.&lt;p/&gt;Use an empty string to indicate that your key is not bound to any specific table.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)\&gt;
 
 The ForeignKey.
 
@@ -731,13 +731,13 @@ Foreignkey value
 
 Table name, transformed to and from numeric table id by the service layer.&lt;p/&gt;Use an empty string to indicate that your key is not bound to any specific table.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)\&gt;
 
 The ForeignKey.
 
@@ -775,13 +775,13 @@ Table name, transformed to and from numeric table id by the service layer.&lt;p/
 
 Id of record that this key refers to. If the table name was blank, then this parameter must be 0. It can also be 0 to mean that the foreign key record was not bound to any particular record of the target table.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)\&gt;
 
 The ForeignKey.
 
@@ -815,7 +815,7 @@ Table name, transformed to and from numeric table id by the service layer.&lt;p/
 
 Id of record that this key refers to. If the table name was blank, then this parameter must be 0. It can also be 0 to mean that the foreign key record was not bound to any particular record of the target table.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -859,7 +859,7 @@ Table name, transformed to and from numeric table id by the service layer.&lt;p/
 
 Id of record that this key refers to. If the table name was blank, then this parameter must be 0. It can also be 0 to mean that the foreign key record was not bound to any particular record of the target table.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -891,17 +891,17 @@ The name of the foreign device.
 
 Unique id of device (Palm pilot device ID, version number, etc)
 
-`foreignDevice` [ForeignDevice](SuperOffice.WebApi.Data.ForeignDevice.md)
+`foreignDevice` [ForeignDevice](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignDevice)
 
 Foreign device to save. Can be null if adding new device.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignDevice](SuperOffice.WebApi.Data.ForeignDevice.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignDevice](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignDevice)\&gt;
 
 The ForeignDevice.
 
@@ -915,17 +915,17 @@ Task<ForeignAppEntity> SaveForeignAppEntityAsync(ForeignAppEntity foreignAppEnti
 
 #### Parameters
 
-`foreignAppEntity` [ForeignAppEntity](SuperOffice.WebApi.Data.ForeignAppEntity.md)
+`foreignAppEntity` [ForeignAppEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignAppEntity)
 
 The ForeignAppEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignAppEntity](SuperOffice.WebApi.Data.ForeignAppEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignAppEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignAppEntity)\&gt;
 
 New or updated ForeignAppEntity
 
@@ -939,7 +939,7 @@ Task<ForeignDevice> SaveForeignDeviceAsync(ForeignDevice foreignDevice, string a
 
 #### Parameters
 
-`foreignDevice` [ForeignDevice](SuperOffice.WebApi.Data.ForeignDevice.md)
+`foreignDevice` [ForeignDevice](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignDevice)
 
 Foreign device to save
 
@@ -947,13 +947,13 @@ Foreign device to save
 
 The name of the foreign application.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignDevice](SuperOffice.WebApi.Data.ForeignDevice.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignDevice](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignDevice)\&gt;
 
 Returns the saved foreign device
 
@@ -967,7 +967,7 @@ Task<ForeignKey> SaveForeignKeyAsync(ForeignKey foreignKey, string applicationNa
 
 #### Parameters
 
-`foreignKey` [ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)
+`foreignKey` [ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)
 
 Foreign key to save
 
@@ -983,13 +983,13 @@ The name of the foreign device.
 
 The device identifier. Optional if device identifier is not used.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)\&gt;
 
 The new or updated ForeignKey
 

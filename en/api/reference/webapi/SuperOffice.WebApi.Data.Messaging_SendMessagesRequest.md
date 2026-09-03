@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Messaging_SendMessagesRequest"></a> Class Messaging\_SendMessagesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Messaging_SendMessagesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Messaging\_SendMessagesRequest](SuperOffice.WebApi.Data.Messaging\_SendMessagesRequest.md)
+[Messaging\_SendMessagesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Messaging_SendMessagesRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public OutgoingMessage[] OutgoingMessages { get; set; }
 
 #### Property Value
 
- [OutgoingMessage](SuperOffice.WebApi.Data.OutgoingMessage.md)\[\]
+ [OutgoingMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.OutgoingMessage)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_Messaging_SendMessagesRequest_Plugin"></a> Plugin
 

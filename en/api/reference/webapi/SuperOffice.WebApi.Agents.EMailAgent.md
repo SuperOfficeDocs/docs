@@ -1,6 +1,6 @@
 # Class EMailAgent {#SuperOffice_WebApi_Agents_EMailAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Email connection, reading, sending
@@ -14,41 +14,41 @@ public class EMailAgent : AgentBase, IEMailAgent, IAgentBase, IDisposable
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AgentBase](SuperOffice.WebApi.Agents.AgentBase.md) ← 
-[EMailAgent](SuperOffice.WebApi.Agents.EMailAgent.md)
+[AgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase) ← 
+[EMailAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.EMailAgent)
 
 #### Implements
 
-[IEMailAgent](SuperOffice.WebApi.Agents.IEMailAgent.md), 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IEMailAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IEMailAgent), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 #### Inherited Members
 
-[AgentBase.\_json](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_json), 
-[AgentBase.\_binary](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_binary), 
-[AgentBase.\_config](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_config), 
-[AgentBase.\_client](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_client), 
-[AgentBase.\_disposeClient](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_disposeClient), 
-[AgentBase.Merge\(RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Merge\_SuperOffice\_WebApi\_RequestOptions\_), 
-[AgentBase.BuildRequestFromObject\(HttpMethod, string, object, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_BuildRequestFromObject\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
-[AgentBase.BuildRequestFromStream\(HttpMethod, string, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_BuildRequestFromStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
-[AgentBase.BuildRequestFromObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_BuildRequestFromObjectWithStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
-[AgentBase.ParseAuthorization\(IAuthorization\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseAuthorization\_SuperOffice\_WebApi\_Authorization\_IAuthorization\_), 
-[AgentBase.CancelRequest\(\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_CancelRequest), 
-[AgentBase.SendRequestObject\(HttpMethod, string, object, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequestObject\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
-[AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequestObjectWithStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
-[AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequest\_System\_Net\_Http\_HttpRequestMessage\_SuperOffice\_WebApi\_RequestOptions\_), 
-[AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ThrowOnResponseErrorAsync\_System\_Net\_Http\_HttpRequestMessage\_System\_Net\_Http\_HttpResponseMessage\_), 
-[AgentBase.ParseResponse&lt;T\&gt;\(HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseResponse\_\_1\_System\_Net\_Http\_HttpResponseMessage\_), 
-[AgentBase.Finally\(RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Finally\_SuperOffice\_WebApi\_RequestOptions\_), 
-[AgentBase.Dispose\(\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Dispose), 
-[AgentBase.Configuration](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Configuration), 
-[AgentBase.Client](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Client), 
-[AgentBase.HasRunningRequest](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_HasRunningRequest), 
-[AgentBase.ClientCancellationTokenSource](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ClientCancellationTokenSource), 
-[AgentBase.ProgressListener](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ProgressListener), 
-[AgentBase.UploadProgressListener](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_UploadProgressListener), 
+[AgentBase.\_json](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__json), 
+[AgentBase.\_binary](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__binary), 
+[AgentBase.\_config](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__config), 
+[AgentBase.\_client](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__client), 
+[AgentBase.\_disposeClient](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__disposeClient), 
+[AgentBase.Merge\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Merge_SuperOffice_WebApi_RequestOptions_), 
+[AgentBase.BuildRequestFromObject\(HttpMethod, string, object, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_), 
+[AgentBase.BuildRequestFromStream\(HttpMethod, string, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromStream_System_Net_Http_HttpMethod_System_String_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
+[AgentBase.BuildRequestFromObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
+[AgentBase.ParseAuthorization\(IAuthorization\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseAuthorization_SuperOffice_WebApi_Authorization_IAuthorization_), 
+[AgentBase.CancelRequest\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_CancelRequest), 
+[AgentBase.SendRequestObject\(HttpMethod, string, object, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_), 
+[AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
+[AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequest_System_Net_Http_HttpRequestMessage_SuperOffice_WebApi_RequestOptions_), 
+[AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ThrowOnResponseErrorAsync_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpResponseMessage_), 
+[AgentBase.ParseResponse&lt;T\&gt;\(HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseResponse__1_System_Net_Http_HttpResponseMessage_), 
+[AgentBase.Finally\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Finally_SuperOffice_WebApi_RequestOptions_), 
+[AgentBase.Dispose\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Dispose), 
+[AgentBase.Configuration](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Configuration), 
+[AgentBase.Client](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Client), 
+[AgentBase.HasRunningRequest](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_HasRunningRequest), 
+[AgentBase.ClientCancellationTokenSource](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ClientCancellationTokenSource), 
+[AgentBase.ProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ProgressListener), 
+[AgentBase.UploadProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_UploadProgressListener), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -95,7 +95,7 @@ public EMailAgent(WebApiOptions options, HttpClient httpClient = null)
 
 #### Parameters
 
-`options` [WebApiOptions](SuperOffice.WebApi.WebApiOptions.md)
+`options` [WebApiOptions](/en/api/reference/webapi/SuperOffice.WebApi.WebApiOptions)
 
 Base URL and authentication values.
 
@@ -116,9 +116,9 @@ public Task<bool> AuthenticateAsync(EMailConnectionInfoExtended connectionInfoEx
 
 #### Parameters
 
-`connectionInfoExtended` [EMailConnectionInfoExtended](SuperOffice.WebApi.Data.EMailConnectionInfoExtended.md)
+`connectionInfoExtended` [EMailConnectionInfoExtended](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfoExtended)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -138,11 +138,11 @@ public Task<bool> AuthenticateIncomingAsync(EMailConnectionInfo connectionInfo, 
 
 #### Parameters
 
-`connectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`connectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 All information needed to connect to the mailserver
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -164,11 +164,11 @@ public Task<bool> AuthenticateOutgoingAsync(EMailConnectionInfo connectionInfo, 
 
 #### Parameters
 
-`connectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`connectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 All information needed to connect to the mailserver
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -190,13 +190,13 @@ public Task<EMailFolder[]> CacheFolderListAsync(RequestOptions requestOptions = 
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailFolder](SuperOffice.WebApi.Data.EMailFolder.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailFolder](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailFolder)\[\]\&gt;
 
 List of folders from mail server
 
@@ -211,13 +211,13 @@ public Task<EMailAccount> CreateDefaultEMailAccountAsync(RequestOptions requestO
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAccount](SuperOffice.WebApi.Data.EMailAccount.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAccount](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAccount)\&gt;
 
 A blank EMailAccount
 
@@ -232,13 +232,13 @@ public Task<EMailAddress> CreateDefaultEMailAddressAsync(RequestOptions requestO
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAddress](SuperOffice.WebApi.Data.EMailAddress.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAddress](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAddress)\&gt;
 
 A blank EMailAddress
 
@@ -253,13 +253,13 @@ public Task<EMailAppointment> CreateDefaultEMailAppointmentAsync(RequestOptions 
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAppointment](SuperOffice.WebApi.Data.EMailAppointment.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAppointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAppointment)\&gt;
 
 A blank EMailAppointment
 
@@ -274,13 +274,13 @@ public Task<EMailAttachment> CreateDefaultEMailAttachmentAsync(RequestOptions re
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAttachment](SuperOffice.WebApi.Data.EMailAttachment.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAttachment](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAttachment)\&gt;
 
 A blank EMailAttachment
 
@@ -295,13 +295,13 @@ public Task<EMailConnectionInfo> CreateDefaultEMailConnectionInfoAsync(RequestOp
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)\&gt;
 
 A blank EMailConnectionInfo
 
@@ -316,13 +316,13 @@ public Task<EMailConnectionInfoExtended> CreateDefaultEMailConnectionInfoExtende
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailConnectionInfoExtended](SuperOffice.WebApi.Data.EMailConnectionInfoExtended.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailConnectionInfoExtended](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfoExtended)\&gt;
 
 A blank EMailConnectionInfoExtended
 
@@ -337,13 +337,13 @@ public Task<EMailCustomHeader> CreateDefaultEMailCustomHeaderAsync(RequestOption
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailCustomHeader](SuperOffice.WebApi.Data.EMailCustomHeader.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailCustomHeader](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailCustomHeader)\&gt;
 
 A blank EMailCustomHeader
 
@@ -358,13 +358,13 @@ public Task<EMailEntity> CreateDefaultEMailEntityAsync(RequestOptions requestOpt
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\&gt;
 
 A blank EMailEntity
 
@@ -379,13 +379,13 @@ public Task<EMailEnvelope> CreateDefaultEMailEnvelopeAsync(RequestOptions reques
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEnvelope](SuperOffice.WebApi.Data.EMailEnvelope.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEnvelope](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEnvelope)\&gt;
 
 A blank EMailEnvelope
 
@@ -400,13 +400,13 @@ public Task<EMailFolder> CreateDefaultEMailFolderAsync(RequestOptions requestOpt
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailFolder](SuperOffice.WebApi.Data.EMailFolder.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailFolder](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailFolder)\&gt;
 
 A blank EMailFolder
 
@@ -421,13 +421,13 @@ public Task<EMailSOInfo> CreateDefaultEMailSOInfoAsync(RequestOptions requestOpt
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailSOInfo](SuperOffice.WebApi.Data.EMailSOInfo.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailSOInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailSOInfo)\&gt;
 
 A blank EMailSOInfo
 
@@ -443,17 +443,17 @@ public Task<EMailEntity> CreateEMailFromDocumentEntityAsync(DocumentEntity docum
 
 #### Parameters
 
-`documentEntity` [DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)
+`documentEntity` [DocumentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity)
 
 DocumentEntity data
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\&gt;
 
 The e-mail
 
@@ -473,13 +473,13 @@ public Task<EMailEntity> CreateEMailFromMimeMessageAsync(string mimeMessage, Req
 
 string representing a MIME-formatted message
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\&gt;
 
 The e-mail
 
@@ -495,11 +495,11 @@ public Task CreateFolderAsync(EMailConnectionInfo connectionInfo, RequestOptions
 
 #### Parameters
 
-`connectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`connectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 All information needed to connect to the mailserver
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -521,17 +521,17 @@ public Task<EMailEntity> CreateForwardEmailAsync(EMailEntity email, RequestOptio
 
 #### Parameters
 
-`email` [EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)
+`email` [EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)
 
 The e-mail to forward
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\&gt;
 
 The new forward email entity
 
@@ -547,11 +547,11 @@ public Task<string> CreateInlineHtmlHeaderAsync(EMailEntity email, RequestOption
 
 #### Parameters
 
-`email` [EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)
+`email` [EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)
 
 The e-mail to generate header based on
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -581,13 +581,13 @@ The document ID int the DB
 
 The emails ID in the DB
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity)\&gt;
 
 The document
 
@@ -615,13 +615,13 @@ The emails ID int the DB
 
 Id string of the attachment
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity)\&gt;
 
 The document
 
@@ -637,7 +637,7 @@ public Task DeleteAsync(EMailConnectionInfo connectionInfo, int[] messageServerI
 
 #### Parameters
 
-`connectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`connectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 All information needed to connect to the mailserver
 
@@ -649,7 +649,7 @@ The e-mails to handle
 
 If set, move deleted items to this folder
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -675,7 +675,7 @@ public Task DeleteEMailAccountAsync(int eMailAccountId, RequestOptions requestOp
 
 The identity of the EMailAccount
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -703,7 +703,7 @@ The e-mails to handle
 
 If set, move deleted items to this folder
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -724,11 +724,11 @@ public Task DeleteExtendedAsync(EMailConnectionInfoExtended connectionInfoExtend
 
 #### Parameters
 
-`connectionInfoExtended` [EMailConnectionInfoExtended](SuperOffice.WebApi.Data.EMailConnectionInfoExtended.md)
+`connectionInfoExtended` [EMailConnectionInfoExtended](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfoExtended)
 
 `messageIds` [string](https://learn.microsoft.com/dotnet/api/system.string)\[\]
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -750,11 +750,11 @@ public Task DeleteFolderAsync(EMailConnectionInfo connectionInfo, RequestOptions
 
 #### Parameters
 
-`connectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`connectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 All information needed to connect to the mailserver
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -776,7 +776,7 @@ public Task DeleteFromServerIdentifierAsync(EMailConnectionInfo connectionInfo, 
 
 #### Parameters
 
-`connectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`connectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 All information needed to connect to the mailserver
 
@@ -788,7 +788,7 @@ The e-mails to handle
 
 If set, move deleted items to this folder
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -810,7 +810,7 @@ public Task EmptyFolderAsync(EMailConnectionInfo connectionInfo, string moveToFo
 
 #### Parameters
 
-`connectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`connectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 All information needed to connect to the mailserver
 
@@ -818,7 +818,7 @@ All information needed to connect to the mailserver
 
 If set, move deleted items to this folder
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -844,13 +844,13 @@ public Task<EMailAddress[]> FindAddressAsync(string address, RequestOptions requ
 
 E-mail address to look for
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAddress](SuperOffice.WebApi.Data.EMailAddress.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAddress](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAddress)\[\]\&gt;
 
 All resolved contacts/persons
 
@@ -873,13 +873,13 @@ The sender name
 
 The sender email address
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ContactOrPersonFromEmail](SuperOffice.WebApi.Data.ContactOrPersonFromEmail.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ContactOrPersonFromEmail](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactOrPersonFromEmail)\[\]\&gt;
 
 Contacts and persons matching emailaddress and name
 
@@ -910,13 +910,13 @@ Maximum returned number of contacts
 
 Maximum returned number of persons
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ContactOrPersonFromEmail](SuperOffice.WebApi.Data.ContactOrPersonFromEmail.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ContactOrPersonFromEmail](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactOrPersonFromEmail)\[\]\&gt;
 
 Contacts and persons matching emailaddress and name
 
@@ -932,7 +932,7 @@ public Task<EMailAttachment> GetAttachmentAsync(EMailConnectionInfo connectionIn
 
 #### Parameters
 
-`connectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`connectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 All information needed to connect to the mailserver
 
@@ -944,13 +944,13 @@ Unique ID for the e-mail to retrieve the attachment from
 
 Id of the attachment in the e-mail
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAttachment](SuperOffice.WebApi.Data.EMailAttachment.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAttachment](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAttachment)\&gt;
 
 The attachment
 
@@ -974,13 +974,13 @@ Unique ID for the e-mail to retrieve the attachment from
 
 Id of the attachment in the e-mail
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAttachment](SuperOffice.WebApi.Data.EMailAttachment.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAttachment](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAttachment)\&gt;
 
 The attachment
 
@@ -996,7 +996,7 @@ public Task<EMailAttachment> GetAttachmentFromServerIdentifierAsync(EMailConnect
 
 #### Parameters
 
-`connectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`connectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 All information needed to connect to the mailserver
 
@@ -1008,13 +1008,13 @@ Unique ID for the e-mail to retrieve the attachment from
 
 Id of the attachment in the e-mail
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAttachment](SuperOffice.WebApi.Data.EMailAttachment.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAttachment](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAttachment)\&gt;
 
 The attachment
 
@@ -1030,13 +1030,13 @@ public Task<EMailAccount> GetCurrentAccountAsync(RequestOptions requestOptions =
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAccount](SuperOffice.WebApi.Data.EMailAccount.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAccount](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAccount)\&gt;
 
 Id of current account
 
@@ -1052,7 +1052,7 @@ public Task<int> GetCurrentAccountIdAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1078,13 +1078,13 @@ public Task<EMailAccount> GetEMailAccountAsync(int eMailAccountId, RequestOption
 
 The identifier of the EMailAccount object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAccount](SuperOffice.WebApi.Data.EMailAccount.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAccount](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAccount)\&gt;
 
 EMailAccount
 
@@ -1104,13 +1104,13 @@ public Task<EMailAccount> GetEMailAccountFromEMailAddressAsync(string fromAddres
 
 The address associated with this email account
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAccount](SuperOffice.WebApi.Data.EMailAccount.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAccount](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAccount)\&gt;
 
 Found or empty email account
 
@@ -1130,13 +1130,13 @@ public Task<EMailAddress[]> GetEMailAddressesAsync(int[] emailIds, RequestOption
 
 Array of IDs from the email table, each identifying one email address
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAddress](SuperOffice.WebApi.Data.EMailAddress.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAddress](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAddress)\[\]\&gt;
 
 Array of email information objects
 
@@ -1164,7 +1164,7 @@ Should attachments be included in the stream
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1186,7 +1186,7 @@ public Task<byte[]> GetEMailAsStreamAsync(EMailConnectionInfo connectionInfo, in
 
 #### Parameters
 
-`connectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`connectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 All information needed to connect to the mailserver
 
@@ -1202,7 +1202,7 @@ If true, do not include attachments in stream
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1224,7 +1224,7 @@ public Task<byte[]> GetEMailAsStreamFromServerIdentifierAsync(EMailConnectionInf
 
 #### Parameters
 
-`connectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`connectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 All information needed to connect to the mailserver
 
@@ -1240,7 +1240,7 @@ If true, do not include attachments in stream
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1270,13 +1270,13 @@ The primary key of the email row in the DB
 
 Should we retrieve attachments embedded in the e-mail from the server
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\&gt;
 
 The e-mail
 
@@ -1292,7 +1292,7 @@ public Task<EMailEnvelope[]> GetEMailEnvelopesAsync(EMailConnectionInfo connecti
 
 #### Parameters
 
-`connectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`connectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 All information needed to connect to the mailserver
 
@@ -1300,13 +1300,13 @@ All information needed to connect to the mailserver
 
 Unique identitifiers for the e-mails to retrieve envelopes for
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEnvelope](SuperOffice.WebApi.Data.EMailEnvelope.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEnvelope](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEnvelope)\[\]\&gt;
 
 The e-mail envelope objects
 
@@ -1322,7 +1322,7 @@ public Task<EMailEnvelope[]> GetEMailEnvelopesFromServerIdsAsync(EMailConnection
 
 #### Parameters
 
-`connectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`connectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 All information needed to connect to the mailserver
 
@@ -1330,13 +1330,13 @@ All information needed to connect to the mailserver
 
 Unique identitifiers for the e-mails to retrieve envelopes for
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEnvelope](SuperOffice.WebApi.Data.EMailEnvelope.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEnvelope](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEnvelope)\[\]\&gt;
 
 The e-mail envelope objects
 
@@ -1364,13 +1364,13 @@ Id of the attachment. If multiple elements this is treated as attachment in atta
 
 Should we retrieve attachments embedded in the e-mail from the server
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\&gt;
 
 The attachment as an e-mail
 
@@ -1398,13 +1398,13 @@ Id of the attachment. If multiple elements this is treated as attachment in atta
 
 Should we retrieve attachments embedded in the e-mail from the server
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\&gt;
 
 The attachment as an e-mail
 
@@ -1424,13 +1424,13 @@ public Task<EMailEntity> GetEMailFromDocumentIdAsync(int documentId, RequestOpti
 
 Unique id of the document
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\&gt;
 
 The e-mail
 
@@ -1450,13 +1450,13 @@ public Task<EMailEntity> GetEMailFromDocumentIdWithoutAttachmentStreamAsync(int 
 
 Unique id of the document
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\&gt;
 
 The e-mail
 
@@ -1472,7 +1472,7 @@ public Task<EMailEntity> GetEMailFromIdAsync(EMailConnectionInfo connectionInfo,
 
 #### Parameters
 
-`connectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`connectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 All information needed to connect to the mailserver
 
@@ -1484,7 +1484,7 @@ Unique ID for the e-mail to retrieve
 
 If true try to look up e-mail addresses in from/to/cc/bcc fields against superoffice contacts
 
-`flags` [EMailFlags](SuperOffice.WebApi.Data.EMailFlags.md)
+`flags` [EMailFlags](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailFlags)
 
 Any flags to apply to the fetched item. Ex: Seen/Answered
 
@@ -1492,13 +1492,13 @@ Any flags to apply to the fetched item. Ex: Seen/Answered
 
 Should we retrieve attachments embedded in the e-mail from the server
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\&gt;
 
 The e-mail
 
@@ -1514,7 +1514,7 @@ public Task<EMailEntity> GetEMailFromServerIdentifierAsync(EMailConnectionInfo c
 
 #### Parameters
 
-`connectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`connectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 All information needed to connect to the mailserver
 
@@ -1526,7 +1526,7 @@ Unique ID for the e-mail to retrieve
 
 If true try to look up e-mail addresses in from/to/cc/bcc fields against superoffice contacts
 
-`flags` [EMailFlags](SuperOffice.WebApi.Data.EMailFlags.md)
+`flags` [EMailFlags](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailFlags)
 
 Any flags to apply to the fetched item. Ex: Seen/Answered
 
@@ -1534,13 +1534,13 @@ Any flags to apply to the fetched item. Ex: Seen/Answered
 
 Should we retrieve attachments embedded in the e-mail from the server
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\&gt;
 
 The e-mail
 
@@ -1557,13 +1557,13 @@ public Task<EMailEntity> GetEMailFromTempAsync(string fileName, RequestOptions r
 
 `fileName` [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\&gt;
 
 ### GetEMailSOInfoAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_EMailAgent_GetEMailSOInfoAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
@@ -1581,13 +1581,13 @@ public Task<EMailSOInfo> GetEMailSOInfoAsync(int eMailSOInfoId, RequestOptions r
 
 The identifier of the EMailSOInfo object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailSOInfo](SuperOffice.WebApi.Data.EMailSOInfo.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailSOInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailSOInfo)\&gt;
 
 EMailSOInfo
 
@@ -1607,13 +1607,13 @@ public Task<EMailAppointment> GetEmailAppointmentAsync(int mailItemId, RequestOp
 
 Id identifying the email
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAppointment](SuperOffice.WebApi.Data.EMailAppointment.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAppointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAppointment)\&gt;
 
 Appointment data
 
@@ -1633,13 +1633,13 @@ public Task<RecurrenceInfo> GetEmailAppointmentRecurrenceAsync(int mailItemId, R
 
 Id identifying the email
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RecurrenceInfo](SuperOffice.WebApi.Data.RecurrenceInfo.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RecurrenceInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceInfo)\&gt;
 
 Recurrence information
 
@@ -1663,7 +1663,7 @@ SuperOffice document ID
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1684,9 +1684,9 @@ public Task<string[]> GetEmailMessageIdsAsync(EMailConnectionInfoExtended connec
 
 #### Parameters
 
-`connectionInfoExtended` [EMailConnectionInfoExtended](SuperOffice.WebApi.Data.EMailConnectionInfoExtended.md)
+`connectionInfoExtended` [EMailConnectionInfoExtended](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfoExtended)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1705,11 +1705,11 @@ public Task<string[]> GetEmailsAsStringAsync(EMailConnectionInfoExtended connect
 
 #### Parameters
 
-`connectionInfoExtended` [EMailConnectionInfoExtended](SuperOffice.WebApi.Data.EMailConnectionInfoExtended.md)
+`connectionInfoExtended` [EMailConnectionInfoExtended](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfoExtended)
 
 `messageIds` [string](https://learn.microsoft.com/dotnet/api/system.string)\[\]
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1729,9 +1729,9 @@ public Task<string[]> GetExtendedEmailMessageIdsAsync(EMailConnectionInfoExtende
 
 #### Parameters
 
-`connectionInfoExtended` [EMailConnectionInfoExtended](SuperOffice.WebApi.Data.EMailConnectionInfoExtended.md)
+`connectionInfoExtended` [EMailConnectionInfoExtended](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfoExtended)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1751,7 +1751,7 @@ public Task<int> GetFolderEMailCountAsync(EMailConnectionInfo connectionInfo, bo
 
 #### Parameters
 
-`connectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`connectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 All information needed to connect to the mailserver
 
@@ -1759,7 +1759,7 @@ All information needed to connect to the mailserver
 
 If true, only unread items are counted
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1781,11 +1781,11 @@ public Task<bool> GetFolderHasNewEMailAsync(EMailConnectionInfo connectionInfo, 
 
 #### Parameters
 
-`connectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`connectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 All information needed to connect to the mailserver
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1807,7 +1807,7 @@ public Task<EMailFolder[]> GetFolderInfoAsync(EMailConnectionInfo connectionInfo
 
 #### Parameters
 
-`connectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`connectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 All information needed to connect to the mailserver
 
@@ -1815,13 +1815,13 @@ All information needed to connect to the mailserver
 
 Folders to get information about.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailFolder](SuperOffice.WebApi.Data.EMailFolder.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailFolder](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailFolder)\[\]\&gt;
 
 Folder information
 
@@ -1837,7 +1837,7 @@ public Task<string[]> GetFolderListAsync(EMailConnectionInfo connectionInfo, boo
 
 #### Parameters
 
-`connectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`connectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 All information needed to connect to the mailserver
 
@@ -1845,7 +1845,7 @@ All information needed to connect to the mailserver
 
 If true, unread and total items are added to the foldername separated by a comma
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1871,13 +1871,13 @@ public Task<EMailEntity> GetMailFromInReplyToAsync(string messageId, RequestOpti
 
 The message id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\&gt;
 
 EMailEntity that is in reply to the provided messageId
 
@@ -1897,13 +1897,13 @@ public Task<EMailEntity> GetMailFromMessageIdAsync(string messageId, RequestOpti
 
 The message id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\&gt;
 
 EMailEntity with the provided message id
 
@@ -1923,13 +1923,13 @@ public Task<EMailEnvelope[]> GetNewMailAsync(int[] folders, RequestOptions reque
 
 List of folder ids to check for new email
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEnvelope](SuperOffice.WebApi.Data.EMailEnvelope.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEnvelope](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEnvelope)\[\]\&gt;
 
 The downloaded email envelopes
 
@@ -1953,13 +1953,13 @@ Email address of participant
 
 Appointment id of participant
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Person](SuperOffice.WebApi.Data.Person.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person)\&gt;
 
 Person information
 
@@ -1979,13 +1979,13 @@ public Task<PersonEntity[]> GetPersonEntitiesFromEmailAddressAsync(string emailA
 
 The emailAddress to find persons and contacts for
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PersonEntity](SuperOffice.WebApi.Data.PersonEntity.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PersonEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.PersonEntity)\[\]\&gt;
 
 ### GetPersonsFromEmailAddressAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_EMailAgent_GetPersonsFromEmailAddressAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
@@ -2003,13 +2003,13 @@ public Task<Person[]> GetPersonsFromEmailAddressAsync(string emailAddress, Reque
 
 The emailAddress to find persons and contacts for
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Person](SuperOffice.WebApi.Data.Person.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person)\[\]\&gt;
 
 ### GetPreviewAttachmentFromDocIdAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_EMailAgent_GetPreviewAttachmentFromDocIdAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
@@ -2031,13 +2031,13 @@ Unique ID for the e-mail in the document archive to retrieve the attachment from
 
 Id of the attachment in the e-mail
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAttachment](SuperOffice.WebApi.Data.EMailAttachment.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAttachment](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAttachment)\&gt;
 
 The attachment
 
@@ -2069,13 +2069,13 @@ Mimetype of the attachment. Must be set if attachmentId contains a chain.
 
 Filename of the attachment. Must be set if attachmentId contains a chain.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAttachment](SuperOffice.WebApi.Data.EMailAttachment.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAttachment](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAttachment)\&gt;
 
 The attachment
 
@@ -2091,13 +2091,13 @@ public Task<SyncUserAccount[]> GetReadySyncEmailAccountsAsync(RequestOptions req
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SyncUserAccount](SuperOffice.WebApi.Data.SyncUserAccount.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SyncUserAccount](/en/api/reference/webapi/SuperOffice.WebApi.Data.SyncUserAccount)\[\]\&gt;
 
 List of accounts to sync
 
@@ -2121,13 +2121,13 @@ The primary key of the email row in the DB
 
 Should we retrieve attachments embedded in the e-mail from the server
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\&gt;
 
 The e-mail
 
@@ -2155,13 +2155,13 @@ Id of the attachment. If multiple elements this is treated as attachment in atta
 
 Should we retrieve attachments embedded in the e-mail from the server
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\&gt;
 
 The attachment as an e-mail
 
@@ -2189,13 +2189,13 @@ Id of the attachment. If multiple elements this is treated as attachment in atta
 
 Should we retrieve attachments embedded in the e-mail from the server
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\&gt;
 
 The attachment as an e-mail
 
@@ -2215,13 +2215,13 @@ public Task<EMailEntity> GetUnsanitizedEMailFromDocumentIdAsync(int documentId, 
 
 Unique id of the document
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\&gt;
 
 The e-mail
 
@@ -2241,13 +2241,13 @@ public Task<EMailEntity> GetUnsanitizedEMailFromDocumentIdWithoutAttachmentStrea
 
 Unique id of the document
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\&gt;
 
 The e-mail
 
@@ -2271,13 +2271,13 @@ Unique ID for the e-mail in the document archive to retrieve the attachment from
 
 Id of the attachment in the e-mail
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAttachment](SuperOffice.WebApi.Data.EMailAttachment.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAttachment](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAttachment)\&gt;
 
 The attachment
 
@@ -2309,13 +2309,13 @@ Mimetype of the attachment. Must be set if attachmentId contains a chain.
 
 Filename of the attachment. Must be set if attachmentId contains a chain.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAttachment](SuperOffice.WebApi.Data.EMailAttachment.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAttachment](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAttachment)\&gt;
 
 The attachment
 
@@ -2335,7 +2335,7 @@ public Task<bool> HasMXRecordAsync(string mailDomain, RequestOptions requestOpti
 
 The mail domain to check. Normally this is the part after @ in an email address
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2365,7 +2365,7 @@ The last known mailitemid
 
 The folderId for the folder to check for new mail
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2395,7 +2395,7 @@ The SPF to match from
 
 The domain to verify if it has at least one SPF record contained in the source SPF
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2421,7 +2421,7 @@ public Task<int> LatestItemIdByFolderAsync(int folderId, RequestOptions requestO
 
 The folderId for the folder to check for the latest mail id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2443,7 +2443,7 @@ public Task MarkAsReadAsync(EMailConnectionInfo connectionInfo, int[] messageSer
 
 #### Parameters
 
-`connectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`connectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 All information needed to connect to the mailserver
 
@@ -2455,7 +2455,7 @@ The e-mails to handle
 
 If true mails are marked as read. If false mails are marked as unread.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2477,7 +2477,7 @@ public Task MarkAsReadFromServerIdentifiersAsync(EMailConnectionInfo connectionI
 
 #### Parameters
 
-`connectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`connectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 All information needed to connect to the mailserver
 
@@ -2489,7 +2489,7 @@ The e-mails to handle
 
 If true mails are marked as read. If false mails are marked as unread.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2519,7 +2519,7 @@ The e-mails to handle
 
 If true mails are marked as read. If false mails are marked as unread.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2549,7 +2549,7 @@ The EmailFolderId of the folder to move to
 
 The emails to move
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2575,7 +2575,7 @@ public Task MoveEmailsToTrashAsync(int[] ids, RequestOptions requestOptions = nu
 
 The e-mails to handle
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2597,7 +2597,7 @@ public Task MoveToFolderAsync(EMailConnectionInfo connectionInfo, int[] messageS
 
 #### Parameters
 
-`connectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`connectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 All information needed to connect to the mailserver
 
@@ -2609,7 +2609,7 @@ The e-mails to handle
 
 Name of folder to move items to
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2631,7 +2631,7 @@ public Task MoveToFolderFromServerIdentifierAsync(EMailConnectionInfo connection
 
 #### Parameters
 
-`connectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`connectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 All information needed to connect to the mailserver
 
@@ -2643,7 +2643,7 @@ The e-mails to handle
 
 Name of folder to move items to
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2665,7 +2665,7 @@ public Task<int> RefreshFolderAsync(EMailConnectionInfo connectionInfo, string[]
 
 #### Parameters
 
-`connectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`connectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 Email connection info credentials
 
@@ -2673,7 +2673,7 @@ Email connection info credentials
 
 List of folder names to refresh
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2699,7 +2699,7 @@ public Task<string> RefreshFolderForAssociateAsync(string[] folders, RequestOpti
 
 List of folder names to refresh
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2720,7 +2720,7 @@ public Task RelayMessageAsync(EMailConnectionInfoExtended connectionInfoExtended
 
 #### Parameters
 
-`connectionInfoExtended` [EMailConnectionInfoExtended](SuperOffice.WebApi.Data.EMailConnectionInfoExtended.md)
+`connectionInfoExtended` [EMailConnectionInfoExtended](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfoExtended)
 
 `rfc822` [string](https://learn.microsoft.com/dotnet/api/system.string)
 
@@ -2728,7 +2728,7 @@ public Task RelayMessageAsync(EMailConnectionInfoExtended connectionInfoExtended
 
 `recipients` [string](https://learn.microsoft.com/dotnet/api/system.string)\[\]
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2754,13 +2754,13 @@ public Task<EMailAddress[]> ResolveEMailRecipientsAsync(string emailAddress, Req
 
 The string to lookup emails from
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAddress](SuperOffice.WebApi.Data.EMailAddress.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAddress](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAddress)\[\]\&gt;
 
 Resolved EMail recipients
 
@@ -2776,17 +2776,17 @@ public Task<EMailEntity> SaveAsync(EMailEntity email, RequestOptions requestOpti
 
 #### Parameters
 
-`email` [EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)
+`email` [EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)
 
 The e-mail to save
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\&gt;
 
 The updated saved entity
 
@@ -2802,17 +2802,17 @@ public Task<EMailEntity> SaveDraftAsync(EMailEntity entity, RequestOptions reque
 
 #### Parameters
 
-`entity` [EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)
+`entity` [EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)
 
 The entity to save
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\&gt;
 
 The saved e-mail entity
 
@@ -2828,17 +2828,17 @@ public Task<EMailAccount> SaveEMailAccountAsync(EMailAccount eMailAccount, Reque
 
 #### Parameters
 
-`eMailAccount` [EMailAccount](SuperOffice.WebApi.Data.EMailAccount.md)
+`eMailAccount` [EMailAccount](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAccount)
 
 The EMailAccount that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAccount](SuperOffice.WebApi.Data.EMailAccount.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailAccount](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailAccount)\&gt;
 
 New or updated EMailAccount
 
@@ -2854,21 +2854,21 @@ public Task<EMailEntity> SaveEMailAsync(EMailConnectionInfo connectionInfo, EMai
 
 #### Parameters
 
-`connectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`connectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 All information needed to connect to the mailserver
 
-`email` [EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)
+`email` [EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)
 
 The e-mail to save
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\&gt;
 
 The updated saved entity
 
@@ -2884,7 +2884,7 @@ public Task<string> SaveEmailToTmpDocumentAsync(EMailEntity email, int folderId,
 
 #### Parameters
 
-`email` [EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)
+`email` [EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)
 
 The e-mail to save
 
@@ -2896,7 +2896,7 @@ The folder id where the email is
 
 If true, do not include attachments in tmp document
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2918,17 +2918,17 @@ public Task<EMailEntity> SaveToMailServerAsync(EMailEntity email, RequestOptions
 
 #### Parameters
 
-`email` [EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)
+`email` [EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)
 
 The e-mail to save
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\&gt;
 
 The updated saved entity
 
@@ -2944,7 +2944,7 @@ public Task<string> SendAndSaveEmailToTmpDocumentAsync(EMailEntity email, bool s
 
 #### Parameters
 
-`email` [EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)
+`email` [EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)
 
 The e-mail to send
 
@@ -2952,7 +2952,7 @@ The e-mail to send
 
 If true, do not include attachments in tmp document
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2974,17 +2974,17 @@ public Task<EMailEntity[]> SendAsync(EMailEntity[] emails, RequestOptions reques
 
 #### Parameters
 
-`emails` [EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\[\]
+`emails` [EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\[\]
 
 The e-mails to send
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\[\]\&gt;
 
 The sent e-mails (updated with message id etc.)
 
@@ -3000,25 +3000,25 @@ public Task<EMailEntity[]> SendEMailsAsync(EMailConnectionInfo outgoingConnectio
 
 #### Parameters
 
-`outgoingConnectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`outgoingConnectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 All information needed to connect to the mailserver
 
-`emails` [EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\[\]
+`emails` [EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\[\]
 
 The e-mails to send
 
-`sentItemsConnectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`sentItemsConnectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 If provided, save sent item(s) in the folder specified.  May be null.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\[\]\&gt;
 
 The sent e-mails (updated with message id etc.)
 
@@ -3038,7 +3038,7 @@ public Task SetRepliedAtAsync(string messageId, RequestOptions requestOptions = 
 
 The MessageID
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -3060,15 +3060,15 @@ public Task SetSubscriptionAsync(EMailConnectionInfo connectionInfo, EMailFolder
 
 #### Parameters
 
-`connectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`connectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 All information needed to connect to the mailserver
 
-`folders` [EMailFolder](SuperOffice.WebApi.Data.EMailFolder.md)\[\]
+`folders` [EMailFolder](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailFolder)\[\]
 
 Folders to set subscription value on
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -3090,11 +3090,11 @@ public Task SyncEmailAccountAsync(SyncUserAccount syncUserAccount, RequestOption
 
 #### Parameters
 
-`syncUserAccount` [SyncUserAccount](SuperOffice.WebApi.Data.SyncUserAccount.md)
+`syncUserAccount` [SyncUserAccount](/en/api/reference/webapi/SuperOffice.WebApi.Data.SyncUserAccount)
 
 Account to sync
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -3116,11 +3116,11 @@ public Task SyncEmailAccountsAsync(SyncUserAccount[] syncUserAccounts, RequestOp
 
 #### Parameters
 
-`syncUserAccounts` [SyncUserAccount](SuperOffice.WebApi.Data.SyncUserAccount.md)\[\]
+`syncUserAccounts` [SyncUserAccount](/en/api/reference/webapi/SuperOffice.WebApi.Data.SyncUserAccount)\[\]
 
 Accounts to sync
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -3142,7 +3142,7 @@ public Task<bool> TestAuthenticateAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -3170,7 +3170,7 @@ The folder id to set subscription value on
 
 The subscription status to set
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 

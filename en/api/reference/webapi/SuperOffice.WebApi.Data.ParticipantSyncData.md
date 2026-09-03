@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ParticipantSyncData"></a> Class ParticipantSyncData
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ParticipantSyncData.
@@ -12,13 +12,13 @@ public class ParticipantSyncData : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[ParticipantSyncData](SuperOffice.WebApi.Data.ParticipantSyncData.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[ParticipantSyncData](/en/api/reference/webapi/SuperOffice.WebApi.Data.ParticipantSyncData)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -175,11 +175,11 @@ public AppointmentStatus? ParticipantStatus { get; set; }
 
 #### Property Value
 
- [AppointmentStatus](SuperOffice.WebApi.Data.AppointmentStatus.md)?
+ [AppointmentStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentStatus)?
 
 #### See Also
 
-[ParticipantSyncData](SuperOffice.WebApi.Data.ParticipantSyncData.md).[ParticipantStatus\_String](SuperOffice.WebApi.Data.ParticipantSyncData.md\#SuperOffice\_WebApi\_Data\_ParticipantSyncData\_ParticipantStatus\_String)
+[ParticipantSyncData](/en/api/reference/webapi/SuperOffice.WebApi.Data.ParticipantSyncData).[ParticipantStatus\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ParticipantSyncData#SuperOffice_WebApi_Data_ParticipantSyncData_ParticipantStatus_String)
 
 ### <a id="SuperOffice_WebApi_Data_ParticipantSyncData_ParticipantStatus_String"></a> ParticipantStatus\_String
 
@@ -197,7 +197,7 @@ public string ParticipantStatus_String { get; set; }
 
 #### See Also
 
-[ParticipantSyncData](SuperOffice.WebApi.Data.ParticipantSyncData.md).[ParticipantStatus](SuperOffice.WebApi.Data.ParticipantSyncData.md\#SuperOffice\_WebApi\_Data\_ParticipantSyncData\_ParticipantStatus)
+[ParticipantSyncData](/en/api/reference/webapi/SuperOffice.WebApi.Data.ParticipantSyncData).[ParticipantStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ParticipantSyncData#SuperOffice_WebApi_Data_ParticipantSyncData_ParticipantStatus)
 
 ### <a id="SuperOffice_WebApi_Data_ParticipantSyncData_PersonAcademicTitle"></a> PersonAcademicTitle
 
@@ -219,7 +219,7 @@ public virtual AddressSyncData PersonAddress { get; set; }
 
 #### Property Value
 
- [AddressSyncData](SuperOffice.WebApi.Data.AddressSyncData.md)
+ [AddressSyncData](/en/api/reference/webapi/SuperOffice.WebApi.Data.AddressSyncData)
 
 ### <a id="SuperOffice_WebApi_Data_ParticipantSyncData_PersonCountry"></a> PersonCountry
 
@@ -407,7 +407,7 @@ public virtual AddressSyncData PostalAddress { get; set; }
 
 #### Property Value
 
- [AddressSyncData](SuperOffice.WebApi.Data.AddressSyncData.md)
+ [AddressSyncData](/en/api/reference/webapi/SuperOffice.WebApi.Data.AddressSyncData)
 
 ### <a id="SuperOffice_WebApi_Data_ParticipantSyncData_StreetAddress"></a> StreetAddress
 
@@ -417,7 +417,7 @@ public virtual AddressSyncData StreetAddress { get; set; }
 
 #### Property Value
 
- [AddressSyncData](SuperOffice.WebApi.Data.AddressSyncData.md)
+ [AddressSyncData](/en/api/reference/webapi/SuperOffice.WebApi.Data.AddressSyncData)
 
 ### <a id="SuperOffice_WebApi_Data_ParticipantSyncData_Url"></a> Url
 
@@ -443,5 +443,5 @@ public virtual string[] Voip { get; set; }
 
 ## See Also
 
-[AppointmentAgent](SuperOffice.WebApi.Agents.AppointmentAgent.md)
+[AppointmentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AppointmentAgent)
 

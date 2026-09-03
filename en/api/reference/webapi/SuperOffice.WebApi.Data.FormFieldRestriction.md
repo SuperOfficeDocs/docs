@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_FormFieldRestriction"></a> Class FormFieldRestriction
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for FormFieldRestriction.
@@ -13,13 +13,13 @@ public class FormFieldRestriction : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[FormFieldRestriction](SuperOffice.WebApi.Data.FormFieldRestriction.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[FormFieldRestriction](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormFieldRestriction)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -64,11 +64,11 @@ public FormFieldRestrictionType? FieldRestriction { get; set; }
 
 #### Property Value
 
- [FormFieldRestrictionType](SuperOffice.WebApi.Data.FormFieldRestrictionType.md)?
+ [FormFieldRestrictionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormFieldRestrictionType)?
 
 #### See Also
 
-[FormFieldRestriction](SuperOffice.WebApi.Data.FormFieldRestriction.md).[FieldRestriction\_String](SuperOffice.WebApi.Data.FormFieldRestriction.md\#SuperOffice\_WebApi\_Data\_FormFieldRestriction\_FieldRestriction\_String)
+[FormFieldRestriction](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormFieldRestriction).[FieldRestriction\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormFieldRestriction#SuperOffice_WebApi_Data_FormFieldRestriction_FieldRestriction_String)
 
 ### <a id="SuperOffice_WebApi_Data_FormFieldRestriction_FieldRestriction_String"></a> FieldRestriction\_String
 
@@ -86,7 +86,7 @@ public string FieldRestriction_String { get; set; }
 
 #### See Also
 
-[FormFieldRestriction](SuperOffice.WebApi.Data.FormFieldRestriction.md).[FieldRestriction](SuperOffice.WebApi.Data.FormFieldRestriction.md\#SuperOffice\_WebApi\_Data\_FormFieldRestriction\_FieldRestriction)
+[FormFieldRestriction](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormFieldRestriction).[FieldRestriction](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormFieldRestriction#SuperOffice_WebApi_Data_FormFieldRestriction_FieldRestriction)
 
 ### <a id="SuperOffice_WebApi_Data_FormFieldRestriction_FormFieldRestrictionId"></a> FormFieldRestrictionId
 
@@ -102,5 +102,5 @@ public virtual int FormFieldRestrictionId { get; set; }
 
 ## See Also
 
-[MarketingAgent](SuperOffice.WebApi.Agents.MarketingAgent.md)
+[MarketingAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.MarketingAgent)
 

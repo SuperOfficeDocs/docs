@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSyncActorSummary"></a> Class ErpSyncActorSummary
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ErpSyncActorSummary.
@@ -13,13 +13,13 @@ public class ErpSyncActorSummary : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[ErpSyncActorSummary](SuperOffice.WebApi.Data.ErpSyncActorSummary.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[ErpSyncActorSummary](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncActorSummary)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -52,11 +52,11 @@ public ErpActorType? ActorType { get; set; }
 
 #### Property Value
 
- [ErpActorType](SuperOffice.WebApi.Data.ErpActorType.md)?
+ [ErpActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpActorType)?
 
 #### See Also
 
-[ErpSyncActorSummary](SuperOffice.WebApi.Data.ErpSyncActorSummary.md).[ActorType\_String](SuperOffice.WebApi.Data.ErpSyncActorSummary.md\#SuperOffice\_WebApi\_Data\_ErpSyncActorSummary\_ActorType\_String)
+[ErpSyncActorSummary](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncActorSummary).[ActorType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncActorSummary#SuperOffice_WebApi_Data_ErpSyncActorSummary_ActorType_String)
 
 ### <a id="SuperOffice_WebApi_Data_ErpSyncActorSummary_ActorType_String"></a> ActorType\_String
 
@@ -74,7 +74,7 @@ public string ActorType_String { get; set; }
 
 #### See Also
 
-[ErpSyncActorSummary](SuperOffice.WebApi.Data.ErpSyncActorSummary.md).[ActorType](SuperOffice.WebApi.Data.ErpSyncActorSummary.md\#SuperOffice\_WebApi\_Data\_ErpSyncActorSummary\_ActorType)
+[ErpSyncActorSummary](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncActorSummary).[ActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncActorSummary#SuperOffice_WebApi_Data_ErpSyncActorSummary_ActorType)
 
 ### <a id="SuperOffice_WebApi_Data_ErpSyncActorSummary_Defaults"></a> Defaults
 
@@ -114,5 +114,5 @@ public virtual string Mappings { get; set; }
 
 ## See Also
 
-[ErpSyncAgent](SuperOffice.WebApi.Agents.ErpSyncAgent.md)
+[ErpSyncAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ErpSyncAgent)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_UndeleteByIdsRequest"></a> Class Ticket\_UndeleteByIdsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_UndeleteByIdsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_UndeleteByIdsRequest](SuperOffice.WebApi.Data.Ticket\_UndeleteByIdsRequest.md)
+[Ticket\_UndeleteByIdsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_UndeleteByIdsRequest)
 
 #### Inherited Members
 

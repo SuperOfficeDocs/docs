@@ -1,6 +1,6 @@
 # Class QuoteAgent {#SuperOffice_WebApi_Agents_QuoteAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Services for the Quote Management feature, part of the Sale module
@@ -12,41 +12,41 @@ public class QuoteAgent : AgentBase, IQuoteAgent, IAgentBase, IDisposable
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AgentBase](SuperOffice.WebApi.Agents.AgentBase.md) ← 
-[QuoteAgent](SuperOffice.WebApi.Agents.QuoteAgent.md)
+[AgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase) ← 
+[QuoteAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.QuoteAgent)
 
 #### Implements
 
-[IQuoteAgent](SuperOffice.WebApi.Agents.IQuoteAgent.md), 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IQuoteAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IQuoteAgent), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 #### Inherited Members
 
-[AgentBase.\_json](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_json), 
-[AgentBase.\_binary](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_binary), 
-[AgentBase.\_config](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_config), 
-[AgentBase.\_client](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_client), 
-[AgentBase.\_disposeClient](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_disposeClient), 
-[AgentBase.Merge\(RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Merge\_SuperOffice\_WebApi\_RequestOptions\_), 
-[AgentBase.BuildRequestFromObject\(HttpMethod, string, object, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_BuildRequestFromObject\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
-[AgentBase.BuildRequestFromStream\(HttpMethod, string, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_BuildRequestFromStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
-[AgentBase.BuildRequestFromObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_BuildRequestFromObjectWithStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
-[AgentBase.ParseAuthorization\(IAuthorization\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseAuthorization\_SuperOffice\_WebApi\_Authorization\_IAuthorization\_), 
-[AgentBase.CancelRequest\(\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_CancelRequest), 
-[AgentBase.SendRequestObject\(HttpMethod, string, object, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequestObject\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
-[AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequestObjectWithStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
-[AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequest\_System\_Net\_Http\_HttpRequestMessage\_SuperOffice\_WebApi\_RequestOptions\_), 
-[AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ThrowOnResponseErrorAsync\_System\_Net\_Http\_HttpRequestMessage\_System\_Net\_Http\_HttpResponseMessage\_), 
-[AgentBase.ParseResponse&lt;T\&gt;\(HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseResponse\_\_1\_System\_Net\_Http\_HttpResponseMessage\_), 
-[AgentBase.Finally\(RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Finally\_SuperOffice\_WebApi\_RequestOptions\_), 
-[AgentBase.Dispose\(\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Dispose), 
-[AgentBase.Configuration](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Configuration), 
-[AgentBase.Client](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Client), 
-[AgentBase.HasRunningRequest](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_HasRunningRequest), 
-[AgentBase.ClientCancellationTokenSource](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ClientCancellationTokenSource), 
-[AgentBase.ProgressListener](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ProgressListener), 
-[AgentBase.UploadProgressListener](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_UploadProgressListener), 
+[AgentBase.\_json](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__json), 
+[AgentBase.\_binary](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__binary), 
+[AgentBase.\_config](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__config), 
+[AgentBase.\_client](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__client), 
+[AgentBase.\_disposeClient](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__disposeClient), 
+[AgentBase.Merge\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Merge_SuperOffice_WebApi_RequestOptions_), 
+[AgentBase.BuildRequestFromObject\(HttpMethod, string, object, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_), 
+[AgentBase.BuildRequestFromStream\(HttpMethod, string, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromStream_System_Net_Http_HttpMethod_System_String_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
+[AgentBase.BuildRequestFromObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
+[AgentBase.ParseAuthorization\(IAuthorization\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseAuthorization_SuperOffice_WebApi_Authorization_IAuthorization_), 
+[AgentBase.CancelRequest\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_CancelRequest), 
+[AgentBase.SendRequestObject\(HttpMethod, string, object, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_), 
+[AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
+[AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequest_System_Net_Http_HttpRequestMessage_SuperOffice_WebApi_RequestOptions_), 
+[AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ThrowOnResponseErrorAsync_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpResponseMessage_), 
+[AgentBase.ParseResponse&lt;T\&gt;\(HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseResponse__1_System_Net_Http_HttpResponseMessage_), 
+[AgentBase.Finally\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Finally_SuperOffice_WebApi_RequestOptions_), 
+[AgentBase.Dispose\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Dispose), 
+[AgentBase.Configuration](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Configuration), 
+[AgentBase.Client](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Client), 
+[AgentBase.HasRunningRequest](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_HasRunningRequest), 
+[AgentBase.ClientCancellationTokenSource](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ClientCancellationTokenSource), 
+[AgentBase.ProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ProgressListener), 
+[AgentBase.UploadProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_UploadProgressListener), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -93,7 +93,7 @@ public QuoteAgent(WebApiOptions options, HttpClient httpClient = null)
 
 #### Parameters
 
-`options` [WebApiOptions](SuperOffice.WebApi.WebApiOptions.md)
+`options` [WebApiOptions](/en/api/reference/webapi/SuperOffice.WebApi.WebApiOptions)
 
 Base URL and authentication values.
 
@@ -121,7 +121,7 @@ The ID of the sale type
 
 The ID of the document
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -157,13 +157,13 @@ AssociateId of the associate who approved the quote version.
 
 Approval text.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ApproveRejectResponse](SuperOffice.WebApi.Data.ApproveRejectResponse.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ApproveRejectResponse](/en/api/reference/webapi/SuperOffice.WebApi.Data.ApproveRejectResponse)\&gt;
 
 Response of the the operation
 
@@ -185,7 +185,7 @@ Primary key of the connection
 
 Capability name
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -209,13 +209,13 @@ public Task<PluginResponse> CancelApprovalRequestAsync(int quoteVersionId, Reque
 
 The quoteversion for which approval was previously sent.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](SuperOffice.WebApi.Data.PluginResponse.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](/en/api/reference/webapi/SuperOffice.WebApi.Data.PluginResponse)\&gt;
 
 Response of the the operation
 
@@ -241,13 +241,13 @@ QuoteAlternativeId of the alternative to make a copy of.
 
 The name to set on the new alternative.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteAlternative](SuperOffice.WebApi.Data.QuoteAlternative.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteAlternative](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteAlternative)\&gt;
 
 The copied QuoteAlternative.
 
@@ -285,13 +285,13 @@ Currency id of the copied PriceList. If 0 or the same as the original the copied
 
 If true, product prices will be recalculated to the new currency. If false, product prices will be set to zero.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PriceList](SuperOffice.WebApi.Data.PriceList.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PriceList](/en/api/reference/webapi/SuperOffice.WebApi.Data.PriceList)\&gt;
 
 The copied PriceList
 
@@ -317,13 +317,13 @@ ConnectionId
 
 Name to be given to the default alternative
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteEntity](SuperOffice.WebApi.Data.QuoteEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteEntity)\&gt;
 
 Quote carrier
 
@@ -345,13 +345,13 @@ Id of the sale to copy the active quote from.
 
 Id of the sale to copy the active quote to.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteEntity](SuperOffice.WebApi.Data.QuoteEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteEntity)\&gt;
 
 The created Quote
 
@@ -373,7 +373,7 @@ Primary key of the alternative
 
 Array of the product keys to add
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -397,13 +397,13 @@ public Task<QuoteVersion> CreateAndSaveQuoteVersionAsync(int quoteVersionId, Req
 
 QuoteVersionId of the version to copy the contents from.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteVersion](SuperOffice.WebApi.Data.QuoteVersion.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteVersion](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersion)\&gt;
 
 The Quote version
 
@@ -421,13 +421,13 @@ public Task<QuoteConnection> CreateConnectionFromConnectorNameAsync(string conne
 
 The name of the connector to create this connection for.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteConnection](SuperOffice.WebApi.Data.QuoteConnection.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteConnection](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteConnection)\&gt;
 
 The created connection
 
@@ -442,13 +442,13 @@ public Task<PriceList> CreateDefaultPriceListAsync(RequestOptions requestOptions
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PriceList](SuperOffice.WebApi.Data.PriceList.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PriceList](/en/api/reference/webapi/SuperOffice.WebApi.Data.PriceList)\&gt;
 
 A blank PriceList
 
@@ -463,13 +463,13 @@ public Task<Product> CreateDefaultProductAsync(RequestOptions requestOptions = n
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Product](SuperOffice.WebApi.Data.Product.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Product](/en/api/reference/webapi/SuperOffice.WebApi.Data.Product)\&gt;
 
 A blank Product
 
@@ -484,13 +484,13 @@ public Task<QuoteAlternative> CreateDefaultQuoteAlternativeAsync(RequestOptions 
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteAlternative](SuperOffice.WebApi.Data.QuoteAlternative.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteAlternative](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteAlternative)\&gt;
 
 A blank QuoteAlternative
 
@@ -508,13 +508,13 @@ public Task<QuoteVersionAttachment[]> CreateOrUpdateQuoteVersionAttachmentsAsync
 
 The ID of the quote version
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteVersionAttachment](SuperOffice.WebApi.Data.QuoteVersionAttachment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteVersionAttachment](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersionAttachment)\[\]\&gt;
 
 The current attachments for the given Quote version, after all updates have been completed
 
@@ -540,13 +540,13 @@ The name to set on the new alternative.
 
 The description to set on the new alternative.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteAlternative](SuperOffice.WebApi.Data.QuoteAlternative.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteAlternative](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteAlternative)\&gt;
 
 The newly created QuoteAlternative.
 
@@ -568,13 +568,13 @@ Primary key of the alternative
 
 Primary key of the product in the ProductProvider
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteLine](SuperOffice.WebApi.Data.QuoteLine.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteLine)\&gt;
 
 The updated quote line.
 
@@ -592,17 +592,17 @@ public Task<QuoteLine> CreateQuoteLineFromProductAsync(int quoteAlternativeId, P
 
 Primary key of the alternative
 
-`product` [Product](SuperOffice.WebApi.Data.Product.md)
+`product` [Product](/en/api/reference/webapi/SuperOffice.WebApi.Data.Product)
 
 Product carrier
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteLine](SuperOffice.WebApi.Data.QuoteLine.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteLine)\&gt;
 
 The updated quote line.
 
@@ -620,7 +620,7 @@ public Task DeleteConnectionAsync(int quoteConnectionId, RequestOptions requestO
 
 Primary key of the connection to delete
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -644,7 +644,7 @@ public Task DeletePriceListAsync(int priceListId, RequestOptions requestOptions 
 
 The identity of the PriceList
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -666,7 +666,7 @@ public Task DeleteProductAsync(int productId, RequestOptions requestOptions = nu
 
 The identity of the Product
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -688,7 +688,7 @@ public Task DeleteQuoteAlternativeAsync(int quoteAlternativeId, RequestOptions r
 
 Id of the quote alternative to delete.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -712,7 +712,7 @@ public Task DeleteQuoteAsync(int quoteId, RequestOptions requestOptions = null)
 
 QuoteId of the Quote to delete.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -734,7 +734,7 @@ public Task DeleteQuoteLineAsync(int quoteLineId, RequestOptions requestOptions 
 
 Primary key of the quoteline to delete
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -758,7 +758,7 @@ public Task DeleteQuoteLinesAsync(int[] quoteLineIds, RequestOptions requestOpti
 
 Primary keys of the quotelines to delete
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -782,7 +782,7 @@ public Task DeleteSaleTypeQuoteAttachmentAsync(int saleTypeQuoteAttachmentId, Re
 
 The ID of the sale type quote attachment row to delete
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -812,13 +812,13 @@ search string
 
 If the pricelist is null or empty, the function will search in all active pricelists.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Product](SuperOffice.WebApi.Data.Product.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Product](/en/api/reference/webapi/SuperOffice.WebApi.Data.Product)\[\]\&gt;
 
 Product array
 
@@ -856,13 +856,13 @@ If true, then the currently specified (in the database) attachments will be incl
 
 Subject line for email, in the correct language, sent in here to have any template variables substituted
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuotePublishDocuments](SuperOffice.WebApi.Data.QuotePublishDocuments.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuotePublishDocuments](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuotePublishDocuments)\&gt;
 
 Carrier specifying the document id's of all the documents, as well as other results
 
@@ -884,13 +884,13 @@ Primary key of the connection
 
 Iso currency like: USD or NOK. See http://www.currency-iso.org/dl_iso_table_a1.xls for details. Case insensitive. Will return empty array if there is no PriceList with the stated currency available.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PriceList](SuperOffice.WebApi.Data.PriceList.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PriceList](/en/api/reference/webapi/SuperOffice.WebApi.Data.PriceList)\[\]\&gt;
 
 The PriceLists that supports a specific currency
 
@@ -912,13 +912,13 @@ Primary key of the connection
 
 SuperOffice currency id.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PriceList](SuperOffice.WebApi.Data.PriceList.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PriceList](/en/api/reference/webapi/SuperOffice.WebApi.Data.PriceList)\[\]\&gt;
 
 The PriceLists that supports a specific currency
 
@@ -932,13 +932,13 @@ public Task<QuoteConnection[]> GetAllAvailableQuoteConnectionsAsync(RequestOptio
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteConnection](SuperOffice.WebApi.Data.QuoteConnection.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteConnection](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteConnection)\[\]\&gt;
 
 List of connections
 
@@ -952,13 +952,13 @@ public Task<QuoteConnection[]> GetAllAvailableQuoteConnectionsWithPriceListsAsyn
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteConnection](SuperOffice.WebApi.Data.QuoteConnection.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteConnection](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteConnection)\[\]\&gt;
 
 List of connections
 
@@ -972,13 +972,13 @@ public Task<QuoteConnection[]> GetAllInstalledQuoteConnectionsAsync(RequestOptio
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteConnection](SuperOffice.WebApi.Data.QuoteConnection.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteConnection](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteConnection)\[\]\&gt;
 
 List of connections
 
@@ -1000,13 +1000,13 @@ Primary key of the connection
 
 Iso currency like: USD or NOK. See http://www.currency-iso.org/dl_iso_table_a1.xls for details. Case insensitive. Will return empty array if there is no PriceList with the stated currency available.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PriceList](SuperOffice.WebApi.Data.PriceList.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PriceList](/en/api/reference/webapi/SuperOffice.WebApi.Data.PriceList)\[\]\&gt;
 
 The PriceLists that supports a specific currency
 
@@ -1028,13 +1028,13 @@ Primary key of the connection
 
 SuperOffice currency id.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PriceList](SuperOffice.WebApi.Data.PriceList.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PriceList](/en/api/reference/webapi/SuperOffice.WebApi.Data.PriceList)\[\]\&gt;
 
 The PriceLists that supports a specific currency
 
@@ -1048,13 +1048,13 @@ public Task<QuoteLineConfiguration[]> GetAllQuoteLineConfigurationsAsync(Request
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteLineConfiguration](SuperOffice.WebApi.Data.QuoteLineConfiguration.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteLineConfiguration](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteLineConfiguration)\[\]\&gt;
 
 Array of QuoteLineConfigurations
 
@@ -1076,13 +1076,13 @@ Id of an existing connection, if any. Initializes connection with current config
 
 Name of the connector. Ignored if connectionId is non-zero.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FieldMetadataDictionary](SuperOffice.WebApi.Data.FieldMetadataDictionary.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FieldMetadataDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldMetadataDictionary)\&gt;
 
 carriers
 
@@ -1100,13 +1100,13 @@ public Task<QuoteConnection> GetConnectionAsync(int quoteConnectionId, RequestOp
 
 Primary key of the connection
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteConnection](SuperOffice.WebApi.Data.QuoteConnection.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteConnection](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteConnection)\&gt;
 
 The connection
 
@@ -1124,13 +1124,13 @@ public Task<StringDictionary> GetConnectionConfigFieldsAsync(int quoteConnection
 
 Primary key of the connection
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\&gt;
 
 Config Fields
 
@@ -1144,13 +1144,13 @@ public Task<PluginResponse[]> GetConnectionStartupErrorsAsync(RequestOptions req
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](SuperOffice.WebApi.Data.PluginResponse.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](/en/api/reference/webapi/SuperOffice.WebApi.Data.PluginResponse)\[\]\&gt;
 
 Array of PluginResponseInfos for each failed connection initialization.
 
@@ -1168,13 +1168,13 @@ public Task<PluginResponse> GetConnectionStartupResponseAsync(int quoteConnectio
 
 Primary key of the connection
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](SuperOffice.WebApi.Data.PluginResponse.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](/en/api/reference/webapi/SuperOffice.WebApi.Data.PluginResponse)\&gt;
 
 PluginResponseInfo for the connection initialization.
 
@@ -1192,13 +1192,13 @@ public Task<QuoteConnection[]> GetConnectionsForAssociateAsync(int associateId, 
 
 Primary key of the user
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteConnection](SuperOffice.WebApi.Data.QuoteConnection.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteConnection](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteConnection)\[\]\&gt;
 
 The connections
 
@@ -1216,7 +1216,7 @@ public Task<string[]> GetConnectorCapabilitiesAsync(int quoteConnectionId, Reque
 
 Primary key of the connection
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1240,7 +1240,7 @@ public Task<string[]> GetConnectorCapabilityNamesAsync(int quoteConnectionId, Re
 
 Primary key of the connection
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1264,13 +1264,13 @@ public Task<ProductExtraDataField[]> GetExtraInfoAsync(string quoteLineExtraData
 
 The extra data as xml.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProductExtraDataField](SuperOffice.WebApi.Data.ProductExtraDataField.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProductExtraDataField](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProductExtraDataField)\[\]\&gt;
 
 An object representation on the xml
 
@@ -1284,13 +1284,13 @@ public Task<QuoteLineConfiguration[]> GetInUseQuoteLineConfigurationsAsync(Reque
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteLineConfiguration](SuperOffice.WebApi.Data.QuoteLineConfiguration.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteLineConfiguration](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteLineConfiguration)\[\]\&gt;
 
 Array of QuoteLineConfigurations
 
@@ -1312,7 +1312,7 @@ VersionId of the quote to be sent; the status of the version will not be changed
 
 Id of the template for the order confirmation lines document
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1336,13 +1336,13 @@ public Task<PluginUrlResponse> GetOrderStateAsync(int quoteVersionId, RequestOpt
 
 the QuoteVersionId of the ordered version.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginUrlResponse](SuperOffice.WebApi.Data.PluginUrlResponse.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginUrlResponse](/en/api/reference/webapi/SuperOffice.WebApi.Data.PluginUrlResponse)\&gt;
 
 The order state. If a new quoteversion is created, the QuoteVersionId will be found in Changes.AddedRecords.
 
@@ -1360,13 +1360,13 @@ public Task<PriceList> GetPriceListAsync(int priceListId, RequestOptions request
 
 The identifier of the PriceList object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PriceList](SuperOffice.WebApi.Data.PriceList.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PriceList](/en/api/reference/webapi/SuperOffice.WebApi.Data.PriceList)\&gt;
 
 PriceList
 
@@ -1388,13 +1388,13 @@ The connection this product comes from.
 
 Primary key of the Product in the ProductProvider
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Product](SuperOffice.WebApi.Data.Product.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Product](/en/api/reference/webapi/SuperOffice.WebApi.Data.Product)\&gt;
 
 ### GetProductFromDbIdAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_QuoteAgent_GetProductFromDbIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
@@ -1410,13 +1410,13 @@ public Task<Product> GetProductFromDbIdAsync(int productId, RequestOptions reque
 
 The database id of the product
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Product](SuperOffice.WebApi.Data.Product.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Product](/en/api/reference/webapi/SuperOffice.WebApi.Data.Product)\&gt;
 
 The product info
 
@@ -1442,7 +1442,7 @@ Primary key of the Product in the ProductProvider
 
 The rank of the image.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1466,13 +1466,13 @@ public Task<QuoteAlternative> GetQuoteAlternativeAsync(int quoteAlternativeId, R
 
 The identifier of the QuoteAlternative object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteAlternative](SuperOffice.WebApi.Data.QuoteAlternative.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteAlternative](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteAlternative)\&gt;
 
 QuoteAlternative
 
@@ -1490,13 +1490,13 @@ public Task<QuoteAlternative[]> GetQuoteAlternativesAsync(int quoteVersionId, Re
 
 QuoteVersionId of the revison to get alternatives for.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteAlternative](SuperOffice.WebApi.Data.QuoteAlternative.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteAlternative](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteAlternative)\[\]\&gt;
 
 Array of Quote alternatives
 
@@ -1514,13 +1514,13 @@ public Task<Quote> GetQuoteAsync(int quoteId, RequestOptions requestOptions = nu
 
 QuoteId of the Quote to get.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Quote](SuperOffice.WebApi.Data.Quote.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Quote](/en/api/reference/webapi/SuperOffice.WebApi.Data.Quote)\&gt;
 
 The Quote
 
@@ -1538,13 +1538,13 @@ public Task<QuoteEntity> GetQuoteEntityAsync(int quoteId, RequestOptions request
 
 QuoteId of the Quote to get.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteEntity](SuperOffice.WebApi.Data.QuoteEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteEntity)\&gt;
 
 The Quote
 
@@ -1562,13 +1562,13 @@ public Task<QuoteEntity> GetQuoteEntityFromSaleIdAsync(int saleId, RequestOption
 
 SaleId of the Quote to get.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteEntity](SuperOffice.WebApi.Data.QuoteEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteEntity)\&gt;
 
 The Quote
 
@@ -1586,13 +1586,13 @@ public Task<Quote> GetQuoteFromSaleIdAsync(int saleId, RequestOptions requestOpt
 
 SaleId of the Quote to get.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Quote](SuperOffice.WebApi.Data.Quote.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Quote](/en/api/reference/webapi/SuperOffice.WebApi.Data.Quote)\&gt;
 
 The Quote
 
@@ -1610,13 +1610,13 @@ public Task<QuoteLine> GetQuoteLineAsync(int quoteLineId, RequestOptions request
 
 Primary key of the quoteline to get.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteLine](SuperOffice.WebApi.Data.QuoteLine.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteLine)\&gt;
 
 The updated quote line (If the quoteline was new, it returns with id's set.
 
@@ -1634,13 +1634,13 @@ public Task<QuoteLineConfiguration> GetQuoteLineConfigurationAsync(int quoteLine
 
 Id of the QuoteLineConfiguration to get.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteLineConfiguration](SuperOffice.WebApi.Data.QuoteLineConfiguration.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteLineConfiguration](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteLineConfiguration)\&gt;
 
 QuoteLineConfiguration
 
@@ -1658,13 +1658,13 @@ public Task<QuoteLineConfiguration> GetQuoteLineConfigurationFromFieldNameAsync(
 
 Field name of the QuoteLineConfiguration to get.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteLineConfiguration](SuperOffice.WebApi.Data.QuoteLineConfiguration.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteLineConfiguration](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteLineConfiguration)\&gt;
 
 QuoteLineConfiguration
 
@@ -1682,13 +1682,13 @@ public Task<QuoteLine[]> GetQuoteLinesAsync(int quoteAlternativeId, RequestOptio
 
 Id of the alternative to return the quotelines for
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteLine](SuperOffice.WebApi.Data.QuoteLine.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteLine)\[\]\&gt;
 
 QuoteLine array
 
@@ -1706,13 +1706,13 @@ public Task<QuoteVersion> GetQuoteVersionAsync(int quoteVersionId, RequestOption
 
 QuoteVersionId to get information from
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteVersion](SuperOffice.WebApi.Data.QuoteVersion.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteVersion](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersion)\&gt;
 
 Array of Quote versions
 
@@ -1734,13 +1734,13 @@ Id of the quote version to get the button states for.
 
 Id of the active quote alternative id.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteVersionWorkflowState](SuperOffice.WebApi.Data.QuoteVersionWorkflowState.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteVersionWorkflowState](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersionWorkflowState)\&gt;
 
 Workflow state information
 
@@ -1758,13 +1758,13 @@ public Task<QuoteVersionButtonState> GetQuoteVersionWorkflowImageStateAsync(int 
 
 Id of the quote version to get the version state for.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteVersionButtonState](SuperOffice.WebApi.Data.QuoteVersionButtonState.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteVersionButtonState](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersionButtonState)\&gt;
 
 Image and state name information
 
@@ -1786,13 +1786,13 @@ Id of the quote version to get the button states for.
 
 Id of the active quote alternative id.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteVersionWorkflowState](SuperOffice.WebApi.Data.QuoteVersionWorkflowState.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteVersionWorkflowState](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersionWorkflowState)\&gt;
 
 Workflow state information
 
@@ -1810,13 +1810,13 @@ public Task<QuoteVersionStatusInformation> GetQuoteVersionWorkflowStatusInfoAsyn
 
 Id of the quote version to get the status info for.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteVersionStatusInformation](SuperOffice.WebApi.Data.QuoteVersionStatusInformation.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteVersionStatusInformation](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersionStatusInformation)\&gt;
 
 Most important status text + icon information.
 
@@ -1834,13 +1834,13 @@ public Task<QuoteVersion[]> GetQuoteVersionsAsync(int quoteId, RequestOptions re
 
 QuoteId of the quote to get versions from
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteVersion](SuperOffice.WebApi.Data.QuoteVersion.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteVersion](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersion)\[\]\&gt;
 
 Array of Quote versions
 
@@ -1854,13 +1854,13 @@ public Task<PluginResponse> HasConnectionsAsync(RequestOptions requestOptions = 
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](SuperOffice.WebApi.Data.PluginResponse.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](/en/api/reference/webapi/SuperOffice.WebApi.Data.PluginResponse)\&gt;
 
 The response
 
@@ -1886,7 +1886,7 @@ The ID of the document
 
 Desired state
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1914,7 +1914,7 @@ Id of quote line to move up/down
 
 True is up, false is down
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1954,13 +1954,13 @@ Order comment, saved to Quote record
 
 Desired culture for email body and other culture-sensitive templates/content
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginUrlResponse](SuperOffice.WebApi.Data.PluginUrlResponse.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginUrlResponse](/en/api/reference/webapi/SuperOffice.WebApi.Data.PluginUrlResponse)\&gt;
 
 Status for the placed order: OkWithInfo / Warn / Error with message or URL to open.
 
@@ -1978,13 +1978,13 @@ public Task<QuoteAlternativeRecalculated> RecalculateQuoteAlternativeAsync(int q
 
 The alternative to be recalculated
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteAlternativeRecalculated](SuperOffice.WebApi.Data.QuoteAlternativeRecalculated.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteAlternativeRecalculated](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteAlternativeRecalculated)\&gt;
 
 The updated quote version.
 
@@ -1998,7 +1998,7 @@ public Task<QuoteLine> RecalculateQuoteLineAsync(QuoteLine quoteLine, string[] c
 
 #### Parameters
 
-`quoteLine` [QuoteLine](SuperOffice.WebApi.Data.QuoteLine.md)
+`quoteLine` [QuoteLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteLine)
 
 The QuoteLine to recalculate
 
@@ -2006,13 +2006,13 @@ The QuoteLine to recalculate
 
 The id of the changed fields in the form 'TableName.FieldName'
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteLine](SuperOffice.WebApi.Data.QuoteLine.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteLine)\&gt;
 
 The updated quote line.
 
@@ -2042,13 +2042,13 @@ AssociateId of the associate who rejected the quote version.
 
 Rejection text.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ApproveRejectResponse](SuperOffice.WebApi.Data.ApproveRejectResponse.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ApproveRejectResponse](/en/api/reference/webapi/SuperOffice.WebApi.Data.ApproveRejectResponse)\&gt;
 
 Response of the the operation
 
@@ -2066,7 +2066,7 @@ public Task RemoveProductAsync(int productId, RequestOptions requestOptions = nu
 
 The database id of the product to remove
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2096,13 +2096,13 @@ The associate that should be notified.
 
 Details or reason for request
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](SuperOffice.WebApi.Data.PluginResponse.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](/en/api/reference/webapi/SuperOffice.WebApi.Data.PluginResponse)\&gt;
 
 Response of the the operation
 
@@ -2120,7 +2120,7 @@ public Task RestoreConnectionAsync(int quoteConnectionId, RequestOptions request
 
 Primary key of the connection to restore
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2140,17 +2140,17 @@ public Task<QuoteConnection> SaveConnectionAsync(QuoteConnection connection, Req
 
 #### Parameters
 
-`connection` [QuoteConnection](SuperOffice.WebApi.Data.QuoteConnection.md)
+`connection` [QuoteConnection](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteConnection)
 
 The connection to save.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteConnection](SuperOffice.WebApi.Data.QuoteConnection.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteConnection](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteConnection)\&gt;
 
 The resulting connection.
 
@@ -2168,17 +2168,17 @@ public Task<StringDictionary> SaveConnectionConfigFieldsAsync(int quoteConnectio
 
 Primary key of the connection
 
-`connectionConfigFields` [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+`connectionConfigFields` [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 ConnectionConfigFields to save.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\&gt;
 
 Config Fields
 
@@ -2192,17 +2192,17 @@ public Task<PriceList> SavePriceListAsync(PriceList priceList, RequestOptions re
 
 #### Parameters
 
-`priceList` [PriceList](SuperOffice.WebApi.Data.PriceList.md)
+`priceList` [PriceList](/en/api/reference/webapi/SuperOffice.WebApi.Data.PriceList)
 
 The PriceList that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PriceList](SuperOffice.WebApi.Data.PriceList.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PriceList](/en/api/reference/webapi/SuperOffice.WebApi.Data.PriceList)\&gt;
 
 New or updated PriceList
 
@@ -2216,17 +2216,17 @@ public Task<Product> SaveProductAsync(Product product, RequestOptions requestOpt
 
 #### Parameters
 
-`product` [Product](SuperOffice.WebApi.Data.Product.md)
+`product` [Product](/en/api/reference/webapi/SuperOffice.WebApi.Data.Product)
 
 The Product that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Product](SuperOffice.WebApi.Data.Product.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Product](/en/api/reference/webapi/SuperOffice.WebApi.Data.Product)\&gt;
 
 New or updated Product
 
@@ -2240,17 +2240,17 @@ public Task<QuoteAlternative> SaveQuoteAlternativeAsync(QuoteAlternative quoteAl
 
 #### Parameters
 
-`quoteAlternative` [QuoteAlternative](SuperOffice.WebApi.Data.QuoteAlternative.md)
+`quoteAlternative` [QuoteAlternative](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteAlternative)
 
 The QuoteAlternative that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteAlternative](SuperOffice.WebApi.Data.QuoteAlternative.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteAlternative](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteAlternative)\&gt;
 
 New or updated QuoteAlternative
 
@@ -2264,17 +2264,17 @@ public Task<Quote> SaveQuoteAsync(Quote quote, RequestOptions requestOptions = n
 
 #### Parameters
 
-`quote` [Quote](SuperOffice.WebApi.Data.Quote.md)
+`quote` [Quote](/en/api/reference/webapi/SuperOffice.WebApi.Data.Quote)
 
 The Quote to save
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Quote](SuperOffice.WebApi.Data.Quote.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Quote](/en/api/reference/webapi/SuperOffice.WebApi.Data.Quote)\&gt;
 
 The saved Quote
 
@@ -2288,17 +2288,17 @@ public Task<QuoteEntity> SaveQuoteEntityAsync(QuoteEntity quoteEntity, RequestOp
 
 #### Parameters
 
-`quoteEntity` [QuoteEntity](SuperOffice.WebApi.Data.QuoteEntity.md)
+`quoteEntity` [QuoteEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteEntity)
 
 The Quote entity to save
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteEntity](SuperOffice.WebApi.Data.QuoteEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteEntity)\&gt;
 
 The saved Quote
 
@@ -2312,17 +2312,17 @@ public Task<QuoteLine> SaveQuoteLineAsync(QuoteLine quoteLine, RequestOptions re
 
 #### Parameters
 
-`quoteLine` [QuoteLine](SuperOffice.WebApi.Data.QuoteLine.md)
+`quoteLine` [QuoteLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteLine)
 
 The QuoteLine to save.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteLine](SuperOffice.WebApi.Data.QuoteLine.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteLine)\&gt;
 
 The updated quote line (If the quoteline was new, it returns with id's set.
 
@@ -2336,17 +2336,17 @@ public Task<QuoteLineConfiguration> SaveQuoteLineConfigurationAsync(QuoteLineCon
 
 #### Parameters
 
-`quoteLineConfiguration` [QuoteLineConfiguration](SuperOffice.WebApi.Data.QuoteLineConfiguration.md)
+`quoteLineConfiguration` [QuoteLineConfiguration](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteLineConfiguration)
 
 The QuoteLineConfiguration to save.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteLineConfiguration](SuperOffice.WebApi.Data.QuoteLineConfiguration.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteLineConfiguration](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteLineConfiguration)\&gt;
 
 The saved QuoteLineConfiguration.
 
@@ -2360,17 +2360,17 @@ public Task<QuoteLineConfiguration[]> SaveQuoteLineConfigurationsAsync(QuoteLine
 
 #### Parameters
 
-`quoteLineConfigurations` [QuoteLineConfiguration](SuperOffice.WebApi.Data.QuoteLineConfiguration.md)\[\]
+`quoteLineConfigurations` [QuoteLineConfiguration](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteLineConfiguration)\[\]
 
 The QuoteLineConfigurations to save.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteLineConfiguration](SuperOffice.WebApi.Data.QuoteLineConfiguration.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteLineConfiguration](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteLineConfiguration)\[\]\&gt;
 
 The saved QuoteLineConfigurations.
 
@@ -2384,17 +2384,17 @@ public Task<QuoteLine[]> SaveQuoteLinesAsync(QuoteLine[] quoteLines, RequestOpti
 
 #### Parameters
 
-`quoteLines` [QuoteLine](SuperOffice.WebApi.Data.QuoteLine.md)\[\]
+`quoteLines` [QuoteLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteLine)\[\]
 
 The QuoteLines to save.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteLine](SuperOffice.WebApi.Data.QuoteLine.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteLine)\[\]\&gt;
 
 The updated quote lines (If the quoteline was new, it returns with id's set.
 
@@ -2408,17 +2408,17 @@ public Task<QuoteVersion> SaveQuoteVersionAsync(QuoteVersion quoteVersion, Reque
 
 #### Parameters
 
-`quoteVersion` [QuoteVersion](SuperOffice.WebApi.Data.QuoteVersion.md)
+`quoteVersion` [QuoteVersion](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersion)
 
 The quote version to save
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteVersion](SuperOffice.WebApi.Data.QuoteVersion.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteVersion](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersion)\&gt;
 
 The saved quote version
 
@@ -2440,7 +2440,7 @@ VersionId of the quote version
 
 The number to save
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2480,13 +2480,13 @@ The body text for the follwup appointment, resolved to the correct culture (no r
 
 Desired culture for email body and other culture-sensitive templates/content
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginUrlResponse](SuperOffice.WebApi.Data.PluginUrlResponse.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginUrlResponse](/en/api/reference/webapi/SuperOffice.WebApi.Data.PluginUrlResponse)\&gt;
 
 Response of the operation
 
@@ -2504,17 +2504,17 @@ public Task<PluginResponse> TestConnectionAsync(string connectorName, StringDict
 
 Name of the connector.
 
-`connectionData` [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+`connectionData` [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 Basically the name/value collection of the configuration data requested to create a connection
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](SuperOffice.WebApi.Data.PluginResponse.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](/en/api/reference/webapi/SuperOffice.WebApi.Data.PluginResponse)\&gt;
 
 How the test went
 
@@ -2532,7 +2532,7 @@ public Task ToggleProductInAssortmentAsync(int productId, RequestOptions request
 
 The database id of the product to toggle is assortment value of
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2554,7 +2554,7 @@ public Task<bool> ToggleQuoteVersionAttachmentIncludedAsync(int quoteVersionAtta
 
 The ID of the quote version attachment row
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2578,7 +2578,7 @@ public Task<bool> ToggleSaleTypeQuoteAttachmentDefaultIncludedAsync(int saleType
 
 The ID of the sale type quote attachment row
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2602,13 +2602,13 @@ public Task<QuoteVersionValidated> UpdateQuoteVersionPricesAsync(int quoteVersio
 
 The version to be update prices for
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteVersionValidated](SuperOffice.WebApi.Data.QuoteVersionValidated.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteVersionValidated](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersionValidated)\&gt;
 
 The updated quote version.
 
@@ -2626,17 +2626,17 @@ public Task<QuoteVersionValidated> ValidateQuoteVersionAsync(int quoteVersionId,
 
 The version to be validated
 
-`action` [QuoteVersionButtonAction](SuperOffice.WebApi.Data.QuoteVersionButtonAction.md)
+`action` [QuoteVersionButtonAction](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersionButtonAction)
 
 The action, if any, related to the validate call, like PlaceOrder or SendQuote
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteVersionValidated](SuperOffice.WebApi.Data.QuoteVersionValidated.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteVersionValidated](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersionValidated)\&gt;
 
 The updated quote version.
 

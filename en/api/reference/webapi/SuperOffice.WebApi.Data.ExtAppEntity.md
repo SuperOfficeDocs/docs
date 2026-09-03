@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ExtAppEntity"></a> Class ExtAppEntity
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ExtAppEntity.
@@ -13,13 +13,13 @@ public class ExtAppEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[ExtAppEntity](SuperOffice.WebApi.Data.ExtAppEntity.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[ExtAppEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtAppEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -71,11 +71,11 @@ public ExecuteOnEvent? ExecuteOnEvent { get; set; }
 
 #### Property Value
 
- [ExecuteOnEvent](SuperOffice.WebApi.Data.ExecuteOnEvent.md)?
+ [ExecuteOnEvent](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExecuteOnEvent)?
 
 #### See Also
 
-[ExtAppEntity](SuperOffice.WebApi.Data.ExtAppEntity.md).[ExecuteOnEvent\_String](SuperOffice.WebApi.Data.ExtAppEntity.md\#SuperOffice\_WebApi\_Data\_ExtAppEntity\_ExecuteOnEvent\_String)
+[ExtAppEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtAppEntity).[ExecuteOnEvent\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtAppEntity#SuperOffice_WebApi_Data_ExtAppEntity_ExecuteOnEvent_String)
 
 ### <a id="SuperOffice_WebApi_Data_ExtAppEntity_ExecuteOnEvent_String"></a> ExecuteOnEvent\_String
 
@@ -93,7 +93,7 @@ public string ExecuteOnEvent_String { get; set; }
 
 #### See Also
 
-[ExtAppEntity](SuperOffice.WebApi.Data.ExtAppEntity.md).[ExecuteOnEvent](SuperOffice.WebApi.Data.ExtAppEntity.md\#SuperOffice\_WebApi\_Data\_ExtAppEntity\_ExecuteOnEvent)
+[ExtAppEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtAppEntity).[ExecuteOnEvent](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtAppEntity#SuperOffice_WebApi_Data_ExtAppEntity_ExecuteOnEvent)
 
 ### <a id="SuperOffice_WebApi_Data_ExtAppEntity_ExtAppId"></a> ExtAppId
 
@@ -287,11 +287,11 @@ public ShowState? ShowState { get; set; }
 
 #### Property Value
 
- [ShowState](SuperOffice.WebApi.Data.ShowState.md)?
+ [ShowState](/en/api/reference/webapi/SuperOffice.WebApi.Data.ShowState)?
 
 #### See Also
 
-[ExtAppEntity](SuperOffice.WebApi.Data.ExtAppEntity.md).[ShowState\_String](SuperOffice.WebApi.Data.ExtAppEntity.md\#SuperOffice\_WebApi\_Data\_ExtAppEntity\_ShowState\_String)
+[ExtAppEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtAppEntity).[ShowState\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtAppEntity#SuperOffice_WebApi_Data_ExtAppEntity_ShowState_String)
 
 ### <a id="SuperOffice_WebApi_Data_ExtAppEntity_ShowState_String"></a> ShowState\_String
 
@@ -309,7 +309,7 @@ public string ShowState_String { get; set; }
 
 #### See Also
 
-[ExtAppEntity](SuperOffice.WebApi.Data.ExtAppEntity.md).[ShowState](SuperOffice.WebApi.Data.ExtAppEntity.md\#SuperOffice\_WebApi\_Data\_ExtAppEntity\_ShowState)
+[ExtAppEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtAppEntity).[ShowState](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtAppEntity#SuperOffice_WebApi_Data_ExtAppEntity_ShowState)
 
 ### <a id="SuperOffice_WebApi_Data_ExtAppEntity_Tooltip"></a> Tooltip
 
@@ -335,11 +335,11 @@ public Navigation? VisibleIn { get; set; }
 
 #### Property Value
 
- [Navigation](SuperOffice.WebApi.Data.Navigation.md)?
+ [Navigation](/en/api/reference/webapi/SuperOffice.WebApi.Data.Navigation)?
 
 #### See Also
 
-[ExtAppEntity](SuperOffice.WebApi.Data.ExtAppEntity.md).[VisibleIn\_String](SuperOffice.WebApi.Data.ExtAppEntity.md\#SuperOffice\_WebApi\_Data\_ExtAppEntity\_VisibleIn\_String)
+[ExtAppEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtAppEntity).[VisibleIn\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtAppEntity#SuperOffice_WebApi_Data_ExtAppEntity_VisibleIn_String)
 
 ### <a id="SuperOffice_WebApi_Data_ExtAppEntity_VisibleIn_String"></a> VisibleIn\_String
 
@@ -357,7 +357,7 @@ public string VisibleIn_String { get; set; }
 
 #### See Also
 
-[ExtAppEntity](SuperOffice.WebApi.Data.ExtAppEntity.md).[VisibleIn](SuperOffice.WebApi.Data.ExtAppEntity.md\#SuperOffice\_WebApi\_Data\_ExtAppEntity\_VisibleIn)
+[ExtAppEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtAppEntity).[VisibleIn](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtAppEntity#SuperOffice_WebApi_Data_ExtAppEntity_VisibleIn)
 
 ### <a id="SuperOffice_WebApi_Data_ExtAppEntity_WaitToFinish"></a> WaitToFinish
 
@@ -385,5 +385,5 @@ public virtual string Workdir { get; set; }
 
 ## See Also
 
-[ListAgent](SuperOffice.WebApi.Agents.ListAgent.md)
+[ListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ListAgent)
 

@@ -1,6 +1,6 @@
 # Interface IAIAgent {#SuperOffice_WebApi_Agents_IAIAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 AI services, such as Translation, Statistics, Sentiment analysis, backed by calls to Public Cloud providers
@@ -11,7 +11,7 @@ public interface IAIAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -34,13 +34,13 @@ Image data containg a business card
 
 Merge results from analysis with matching database records? True: match company/person names and set ids on returned entities.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BizCard](SuperOffice.WebApi.Data.BizCard.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BizCard](/en/api/reference/webapi/SuperOffice.WebApi.Data.BizCard)\&gt;
 
 Returns a Contact and a Person entity.
 
@@ -62,13 +62,13 @@ Text that contains useful contact and person information.
 
 Merge results from analysis with matching database records? True: match company/person names and set ids on returned entities.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BizCard](SuperOffice.WebApi.Data.BizCard.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BizCard](/en/api/reference/webapi/SuperOffice.WebApi.Data.BizCard)\&gt;
 
 Returns a Contact and a Person entity.
 
@@ -86,7 +86,7 @@ Task AnswerAcceptedAsync(string trackingId, RequestOptions requestOptions = null
 
 The id of the answer that you are giving feedback to.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -114,7 +114,7 @@ Defines the search domain used for generating answer. e.g. 'ServiceCopilot'
 
 Question. The search query to answer.
 
-`type` [RagType](SuperOffice.WebApi.Data.RagType.md)
+`type` [RagType](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagType)
 
 Filter results based on content type. Default: None = no filtering
 
@@ -122,13 +122,13 @@ Filter results based on content type. Default: None = no filtering
 
 Max Number of results to use in generating answer.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RagAnswer](SuperOffice.WebApi.Data.RagAnswer.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RagAnswer](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagAnswer)\&gt;
 
 Generated answer based on query.
 
@@ -150,7 +150,7 @@ The id of the answer that you are giving feedback to.
 
 True = Like, False = Dislike.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -178,11 +178,11 @@ Defines the search domain used for generating answer. e.g. 'ServiceCopilot'
 
 Question. The search query to answer.
 
-`contextIds` [RagContextIds](SuperOffice.WebApi.Data.RagContextIds.md)
+`contextIds` [RagContextIds](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagContextIds)
 
 The IDs of the current context for contact, person, project, sale, and ticket.
 
-`type` [RagType](SuperOffice.WebApi.Data.RagType.md)
+`type` [RagType](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagType)
 
 Filter results based on content type. Default: None = no filtering
 
@@ -190,13 +190,13 @@ Filter results based on content type. Default: None = no filtering
 
 Max Number of results to use in generating answer.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RagAnswer](SuperOffice.WebApi.Data.RagAnswer.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RagAnswer](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagAnswer)\&gt;
 
 Generated answer based on query.
 
@@ -214,13 +214,13 @@ Task<RagStatus> CancelIndexingAsync(string namespaceName, RequestOptions request
 
 Identifies the namespace to stop indexing in.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RagStatus](SuperOffice.WebApi.Data.RagStatus.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RagStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagStatus)\&gt;
 
 Status of the indexing run after cancellation.
 
@@ -238,7 +238,7 @@ Task ClearChatbotTurnsAsync(string chatId, RequestOptions requestOptions = null)
 
 identifies this chat = arbitrary name (e.g. user-defined) or the soprotocol + id (e.g. ticket-123, contact-43, diary)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -259,13 +259,13 @@ Task<CopilotDataSourceEntity> CreateDefaultCopilotDataSourceEntityAsync(RequestO
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CopilotDataSourceEntity](SuperOffice.WebApi.Data.CopilotDataSourceEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CopilotDataSourceEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotDataSourceEntity)\&gt;
 
 A blank CopilotDataSourceEntity
 
@@ -280,13 +280,13 @@ Task<CopilotEntity> CreateDefaultCopilotEntityAsync(RequestOptions requestOption
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CopilotEntity](SuperOffice.WebApi.Data.CopilotEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CopilotEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotEntity)\&gt;
 
 A blank CopilotEntity
 
@@ -300,7 +300,7 @@ Task<string> CreateTextForAppointmentAsync(AppointmentEntity appointment, string
 
 #### Parameters
 
-`appointment` [AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)
+`appointment` [AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)
 
 The appointment object to generate text for.
 
@@ -308,7 +308,7 @@ The appointment object to generate text for.
 
 Language returned text should be in. Blank = do not specify language.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -332,7 +332,7 @@ Task DeleteCopilotDataSourceEntityAsync(int copilotDataSourceEntityId, RequestOp
 
 The identity of the CopilotDataSourceEntity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -354,7 +354,7 @@ Task DeleteCopilotEntityAsync(int copilotEntityId, RequestOptions requestOptions
 
 The identity of the CopilotEntity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -376,7 +376,7 @@ Task<string> DetectLanguageAsync(string text, RequestOptions requestOptions = nu
 
 Text to be analyzed; there may be a cost-per-character so do not send a book here
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -400,13 +400,13 @@ Task<Sentiment> DetectSentimentAsync(string text, RequestOptions requestOptions 
 
 Text to be analyzed
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Sentiment](SuperOffice.WebApi.Data.Sentiment.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Sentiment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sentiment)\&gt;
 
 The sentiment information: score (-100 to +100) and confidence
 
@@ -432,7 +432,7 @@ How much to embiggen.
 
 Language returned text should be in. Blank = do not specify language.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -464,13 +464,13 @@ Context for suggestions ('contact.main.activities')
 
 current company/person/project id - used for context in suggestions
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatbotTurn](SuperOffice.WebApi.Data.ChatbotTurn.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatbotTurn](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatbotTurn)\&gt;
 
 Contains zero or more BotActions, and welcome message in Bot response
 
@@ -500,7 +500,7 @@ User question for chatbot
 
 User question for display - optional - null = use userPrompt
 
-`previousTurns` [ChatbotTurn](SuperOffice.WebApi.Data.ChatbotTurn.md)\[\]
+`previousTurns` [ChatbotTurn](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatbotTurn)\[\]
 
 Chat history - all previous turns in chronological order
 
@@ -508,13 +508,13 @@ Chat history - all previous turns in chronological order
 
 CRM API endpoint URL for chatbot to make callbacks to. 'https://example.com/superoffice/api/'
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatbotTurn](SuperOffice.WebApi.Data.ChatbotTurn.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatbotTurn](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatbotTurn)\&gt;
 
 Returns new turn that client can append to its local history.
 
@@ -532,13 +532,13 @@ Task<ChatbotTurn[]> GetChatbotTurnsAsync(string chatId, RequestOptions requestOp
 
 identifies this chat = arbitrary name (e.g. user-defined) or the soprotocol + id (e.g. ticket-123, contact-43, diary)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatbotTurn](SuperOffice.WebApi.Data.ChatbotTurn.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatbotTurn](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatbotTurn)\[\]\&gt;
 
 Array containing zero or more turns. If you got zero turns, call GetChatbotPromptSuggestions to get an initial turn from the bot.
 
@@ -556,13 +556,13 @@ Task<CopilotDataSourceEntity> GetCopilotDataSourceEntityAsync(int copilotDataSou
 
 The identifier of the CopilotDataSourceEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CopilotDataSourceEntity](SuperOffice.WebApi.Data.CopilotDataSourceEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CopilotDataSourceEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotDataSourceEntity)\&gt;
 
 CopilotDataSourceEntity
 
@@ -580,13 +580,13 @@ Task<CopilotEntity> GetCopilotEntityAsync(int copilotEntityId, RequestOptions re
 
 The identifier of the CopilotEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CopilotEntity](SuperOffice.WebApi.Data.CopilotEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CopilotEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotEntity)\&gt;
 
 CopilotEntity
 
@@ -608,13 +608,13 @@ Image data to analyze for design
 
 The CSS class to generate styles for.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FormDesignCss](SuperOffice.WebApi.Data.FormDesignCss.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FormDesignCss](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormDesignCss)\&gt;
 
 Returns CSS properties for a single CSS class, and the internal state for the analyzer.
 
@@ -636,13 +636,13 @@ Url of the web page to extract style from.
 
 The CSS class to generate styles for.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FormDesignCss](SuperOffice.WebApi.Data.FormDesignCss.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FormDesignCss](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormDesignCss)\&gt;
 
 Returns CSS properties for a single CSS class, and the internal state for the analyzer.
 
@@ -664,13 +664,13 @@ Image data to analyze for design
 
 List of CSS classes to generate styles for.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FormDesignCarrier](SuperOffice.WebApi.Data.FormDesignCarrier.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FormDesignCarrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormDesignCarrier)\&gt;
 
 Returns CSS rules and confidence score.
 
@@ -692,13 +692,13 @@ Url of the web page to extract style from.
 
 List of CSS classes to generate styles for.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FormDesignCarrier](SuperOffice.WebApi.Data.FormDesignCarrier.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FormDesignCarrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormDesignCarrier)\&gt;
 
 Returns CSS rules and confidence score.
 
@@ -716,13 +716,13 @@ Task<StringDictionary> GetFormDesignFromImageAsync(byte[] image, RequestOptions 
 
 Image data to analyze for design
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\&gt;
 
 Returns a Form Designer properties.
 
@@ -740,13 +740,13 @@ Task<StringDictionary> GetFormDesignFromUrlAsync(string url, RequestOptions requ
 
 Url of the web page to extract style from.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\&gt;
 
 Returns a Form Designer properties.
 
@@ -764,13 +764,13 @@ Task<RagStatus> GetIndexingStatusAsync(string namespaceName, RequestOptions requ
 
 Identifies the namespace to store content in.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RagStatus](SuperOffice.WebApi.Data.RagStatus.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RagStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagStatus)\&gt;
 
 Status of the indexing run - may be cancelled if another run is in progress.
 
@@ -792,13 +792,13 @@ Internal state from the analyzer, from the previous call.
 
 The CSS class to generate styles for.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FormDesignCss](SuperOffice.WebApi.Data.FormDesignCss.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FormDesignCss](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormDesignCss)\&gt;
 
 Returns CSS properties for a single CSS class, and the updated internal state for the analyzer.
 
@@ -828,13 +828,13 @@ Chatbot's summary of the contact activities
 
 Language returned text should be in. Blank = do not specify language.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatbotTurn](SuperOffice.WebApi.Data.ChatbotTurn.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatbotTurn](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatbotTurn)\&gt;
 
 Display text and Prompt used to generate a short summary of the activities on a contact.
 
@@ -864,13 +864,13 @@ Chatbot's summary of the sale activities
 
 Language returned text should be in
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatbotTurn](SuperOffice.WebApi.Data.ChatbotTurn.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatbotTurn](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatbotTurn)\&gt;
 
 Display text and Prompt used to generate a short summary of the activities on a sale.
 
@@ -900,13 +900,13 @@ Chatbot's summary of the ticket
 
 Language returned text should be in
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatbotTurn](SuperOffice.WebApi.Data.ChatbotTurn.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatbotTurn](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatbotTurn)\&gt;
 
 Display text and Prompt used to generate a short summary of the messages on a ticket.
 
@@ -920,13 +920,13 @@ Task<CategorizationStatusResponse> GetTrainingStatusAsync(RequestOptions request
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CategorizationStatusResponse](SuperOffice.WebApi.Data.CategorizationStatusResponse.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CategorizationStatusResponse](/en/api/reference/webapi/SuperOffice.WebApi.Data.CategorizationStatusResponse)\&gt;
 
 Carrier to describe the current status of HugoAI categorization
 
@@ -944,7 +944,7 @@ Task<int> GuessCategoryAsync(int ticketId, RequestOptions requestOptions = null)
 
 Id of ticket to guess category for
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -972,17 +972,17 @@ What the user asked for.
 
 Current context prompt. e.g. Current company name and id, what selection are we looking at?
 
-`previousQuery` [NaturalLanguageSearch](SuperOffice.WebApi.Data.NaturalLanguageSearch.md)
+`previousQuery` [NaturalLanguageSearch](/en/api/reference/webapi/SuperOffice.WebApi.Data.NaturalLanguageSearch)
 
 Previous query, if applicable. NULL if no previous query.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[NaturalLanguageSearch](SuperOffice.WebApi.Data.NaturalLanguageSearch.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[NaturalLanguageSearch](/en/api/reference/webapi/SuperOffice.WebApi.Data.NaturalLanguageSearch)\&gt;
 
 Returns archive restrictions and columns for the query. Pass this result in as the previous query on the next call to continue the conversation.
 
@@ -1004,7 +1004,7 @@ Image to be cleaned. JPG or PNG.
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1028,7 +1028,7 @@ Task<string> RephraseTextAsync(string text, AiTextStyle style, string isoLangCod
 
 Text to transform
 
-`style` [AiTextStyle](SuperOffice.WebApi.Data.AiTextStyle.md)
+`style` [AiTextStyle](/en/api/reference/webapi/SuperOffice.WebApi.Data.AiTextStyle)
 
 New style to transform text into (Rephrase, Correct, Casual, Formal)
 
@@ -1036,7 +1036,7 @@ New style to transform text into (Rephrase, Correct, Casual, Formal)
 
 Language returned text should be in. Blank = do not specify language.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1056,17 +1056,17 @@ Task<CopilotDataSourceEntity> SaveCopilotDataSourceEntityAsync(CopilotDataSource
 
 #### Parameters
 
-`copilotDataSourceEntity` [CopilotDataSourceEntity](SuperOffice.WebApi.Data.CopilotDataSourceEntity.md)
+`copilotDataSourceEntity` [CopilotDataSourceEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotDataSourceEntity)
 
 The CopilotDataSourceEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CopilotDataSourceEntity](SuperOffice.WebApi.Data.CopilotDataSourceEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CopilotDataSourceEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotDataSourceEntity)\&gt;
 
 New or updated CopilotDataSourceEntity
 
@@ -1080,17 +1080,17 @@ Task<CopilotEntity> SaveCopilotEntityAsync(CopilotEntity copilotEntity, RequestO
 
 #### Parameters
 
-`copilotEntity` [CopilotEntity](SuperOffice.WebApi.Data.CopilotEntity.md)
+`copilotEntity` [CopilotEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotEntity)
 
 The CopilotEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CopilotEntity](SuperOffice.WebApi.Data.CopilotEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CopilotEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotEntity)\&gt;
 
 New or updated CopilotEntity
 
@@ -1112,7 +1112,7 @@ Defines the search domain. e.g. 'ServiceCopilot'.
 
 Search query.
 
-`type` [RagType](SuperOffice.WebApi.Data.RagType.md)
+`type` [RagType](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagType)
 
 Filter results based on a specific content type. Default: None = no filtering
 
@@ -1120,13 +1120,13 @@ Filter results based on a specific content type. Default: None = no filtering
 
 Max Number of results to return.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RagResult](SuperOffice.WebApi.Data.RagResult.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RagResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagResult)\[\]\&gt;
 
 Array containing vector search results
 
@@ -1148,7 +1148,7 @@ Defines the search domain. e.g. 'ServiceCopilot'.
 
 (Optional) Identifies the data source to update. Blank = all sources
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1180,7 +1180,7 @@ Length of summary
 
 Language returned text should be in. Blank = do not specify language.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1212,7 +1212,7 @@ Length of summary
 
 Language returned text should be in. Blank = do not specify language.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1244,7 +1244,7 @@ How much to shorten.
 
 Language returned text should be in. Blank = do not specify language.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1276,7 +1276,7 @@ Length of summary
 
 Language returned text should be in
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1308,7 +1308,7 @@ Maximum number of tickets to retrieve data from
 
 Maximum length of PlainTextBody or any other large text, truncated to nearest word boundary
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1336,7 +1336,7 @@ Text to be translated. Language of the text is automatically detected.
 
 ISO Language code (such as FR) to translate the text into
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1368,7 +1368,7 @@ Identifier for the entity to get text to be translated
 
 ISO Language code (such as FR) to translate the text into
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 

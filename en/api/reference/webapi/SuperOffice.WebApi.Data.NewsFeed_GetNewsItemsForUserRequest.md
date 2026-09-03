@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_NewsFeed_GetNewsItemsForUserRequest"></a> Class NewsFeed\_GetNewsItemsForUserRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class NewsFeed_GetNewsItemsForUserRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[NewsFeed\_GetNewsItemsForUserRequest](SuperOffice.WebApi.Data.NewsFeed\_GetNewsItemsForUserRequest.md)
+[NewsFeed\_GetNewsItemsForUserRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeed_GetNewsItemsForUserRequest)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Person_GetColleaguesByDepartmentRequest"></a> Class Person\_GetColleaguesByDepartmentRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Person_GetColleaguesByDepartmentRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Person\_GetColleaguesByDepartmentRequest](SuperOffice.WebApi.Data.Person\_GetColleaguesByDepartmentRequest.md)
+[Person\_GetColleaguesByDepartmentRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person_GetColleaguesByDepartmentRequest)
 
 #### Inherited Members
 

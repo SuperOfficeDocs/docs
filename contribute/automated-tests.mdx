@@ -25,6 +25,7 @@ This page is the single reference for every automatic check that runs against th
 | Reference-page overflow auto-fix | GitHub Action (`.github/workflows/reference-overflow-guard.yml`) | No - auto-fixes and pushes a commit | This repo, `tools/ci/apply-wide-mode.py` + `tools/ci/apply-code-wrap.py` |
 | OpenAPI conversion auto-fix | GitHub Action (`.github/workflows/openapi-conversion-guard.yml`) | No - auto-fixes and pushes a commit | This repo, `tools/convert-swagger-to-openapi.ps1` + `tools/ci/generate-openapi-nav.py` |
 | Recent-pages sync auto-fix | GitHub Action (`.github/workflows/recent-pages-sync.yml`) | No - auto-fixes and pushes a commit | This repo, `tools/ci/sync-recent-pages.py` |
+| WebAPI bare-relative links auto-fix | GitHub Action (`.github/workflows/webapi-bare-relative-links-guard.yml`) | No - auto-fixes and pushes a commit | This repo, `tools/ci/fix-webapi-bare-relative-links.py` |
 | Markdownlint | GitHub Action (`.github/workflows/markdownlint.yml`) | No - advisory | This repo, `.markdownlint.yaml` / `.markdownlintignore` |
 | Landing page template guard | GitHub Action (`.github/workflows/landing-page-template-guard.yml`) | No - advisory (warns only) | This repo, `tools/ci/check-landing-page-templates.py` |
 | Release-notes API structure guard | GitHub Action (`.github/workflows/release-notes-api-structure-guard.yml`) | No - advisory (warns only) | This repo, `tools/ci/check-release-notes-api-structure.py` |
@@ -84,6 +85,14 @@ This whole check, plus `tools/convert-swagger-to-openapi.ps1` itself, is a worka
 Triggers on a PR touching `index.mdx` itself, or anything under `en/**`/`integrations/**`. The homepage's "What's new" list is driven by `index.mdx`'s own `recent_pages` frontmatter - see [Metadata properties][14] for the property's shape - and resolved into a separate `<RecentPages items={[...]} />` call in the page body, baked in as a literal prop rather than fetched at runtime.
 
 Each run: detects brand-new pages this PR added under `en/`/`integrations/` only (not repo-wide - reference trees like `database/`/`automation/crmscript/reference/` regenerate too often to be a useful signal) and adds them; stamps a missing `since` with today's date, and refreshes a *pinned* entry's `since` if this PR touched that entry's own target page; drops any entry whose target is `generated: true`; drops non-pinned entries older than 120 days; caps the combined list at 7, with pinned entries getting guaranteed slots that still count against the cap. If any of that changes either the frontmatter or the body call, both are rewritten and pushed back onto the PR branch as a fix commit, same as the other auto-fix checks on this page. Idempotent (a page already in sync produces no further commit), and skipped entirely for PRs from a fork, since the default token can't push back to a fork's branch.
+
+### WebAPI bare-relative links auto-fix
+
+Triggers on a PR touching `en/api/reference/webapi/**`. This tree is generated wholesale by an external ADO pipeline that has no awareness of Mintlify's routing: every internal link is emitted as a bare same-folder filename (`SuperOffice.WebApi.Agents.AgentBase.md`, optionally with an escaped anchor), which resolves fine against the folder on disk but 404s live, since Mintlify serves this tree at `/en/api/reference/webapi/` and drops the `.md` extension entirely. [Issue #400][24] found and fixed this repo-wide (2,518 files, confirmed against [PR #383][25], Mintlify's own broken-link-scan bot) - this check exists so the next ADO content drop that reintroduces the same bare-relative shape gets it rewritten automatically rather than shipping another few thousand dead links.
+
+This is an auto-fix rather than a blocking check, for the same reason as the reserved-`version`-frontmatter check above: the generator itself is the thing that needs fixing (a bug report was filed against that pipeline separately), and failing every future content drop until that lands would leave the build permanently red for a problem this script can close out on its own.
+
+Unlike the other changed-files-scoped auto-fixes on this page, each run rescans the *whole* tree rather than just this PR's changed files - a giant regenerated-content drop can touch every file in the tree at once (this repo's own fix PR did, and the first version of this workflow broke trying to pass that many changed-file paths through a workflow environment variable), and since the script is idempotent, a full scan of this (small, ~2,500-file) tree costs a few seconds regardless. Each run rewrites any bare-relative destination to a root-relative path (`Some.Class.md` -> `/en/api/reference/webapi/Some.Class`, unescaping `\_` in both the filename and any anchor), skipping fenced code/inline code spans so a documentation example quoting this exact link syntax is never rewritten. A destination that carries a path segment - never observed in this tree - is left untouched and reported rather than guessed at. If any rewrite happens, it's pushed back onto the PR branch as a fix commit, same as the other auto-fix checks on this page. Idempotent, and skipped entirely for PRs from a fork, since the default token can't push back to a fork's branch.
 
 ### Markdownlint
 
@@ -213,3 +222,5 @@ mint automations create --name "Broken link detection" --type broken-link-detect
 [21]: https://github.com/SuperOfficeDocs/docs/issues/360
 [22]: https://github.com/SuperOfficeDocs/docs/issues/407
 [23]: https://github.com/SuperOfficeDocs/docs/issues/404
+[24]: https://github.com/SuperOfficeDocs/docs/issues/400
+[25]: https://github.com/SuperOfficeDocs/docs/pull/383

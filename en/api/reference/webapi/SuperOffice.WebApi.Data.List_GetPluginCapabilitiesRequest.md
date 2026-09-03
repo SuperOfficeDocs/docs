@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_GetPluginCapabilitiesRequest"></a> Class List\_GetPluginCapabilitiesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_GetPluginCapabilitiesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_GetPluginCapabilitiesRequest](SuperOffice.WebApi.Data.List\_GetPluginCapabilitiesRequest.md)
+[List\_GetPluginCapabilitiesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_GetPluginCapabilitiesRequest)
 
 #### Inherited Members
 

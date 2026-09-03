@@ -1,6 +1,6 @@
 # Interface IWebhookAgent {#SuperOffice_WebApi_Agents_IWebhookAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Webhook definitions - webhooks signal other systems about events inside NetServer
@@ -13,7 +13,7 @@ public interface IWebhookAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -29,13 +29,13 @@ Task<Webhook> CreateDefaultWebhookAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Webhook](SuperOffice.WebApi.Data.Webhook.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Webhook](/en/api/reference/webapi/SuperOffice.WebApi.Data.Webhook)\&gt;
 
 A blank Webhook
 
@@ -55,7 +55,7 @@ Task DeleteWebhookAsync(int webhookId, RequestOptions requestOptions = null)
 
 The identity of the Webhook
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -83,17 +83,17 @@ Only return hooks with this name. Default NULL = no filter
 
 Only return hooks responding to this event name. Default NULL = no filter
 
-`statusFilter` [WebhookState](SuperOffice.WebApi.Data.WebhookState.md)
+`statusFilter` [WebhookState](/en/api/reference/webapi/SuperOffice.WebApi.Data.WebhookState)
 
 Only return hooks with this status. Default Unknown = no filter, returns all.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Webhook](SuperOffice.WebApi.Data.Webhook.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Webhook](/en/api/reference/webapi/SuperOffice.WebApi.Data.Webhook)\[\]\&gt;
 
 Array of all webhooks, filtered according to given criteria.
 
@@ -113,7 +113,7 @@ Task<string> GetLastErrorAsync(int webhookId, RequestOptions requestOptions = nu
 
 Webhook to get error message for.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -139,13 +139,13 @@ Task<Webhook> GetWebhookAsync(int webhookId, RequestOptions requestOptions = nul
 
 The identifier of the Webhook object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Webhook](SuperOffice.WebApi.Data.Webhook.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Webhook](/en/api/reference/webapi/SuperOffice.WebApi.Data.Webhook)\&gt;
 
 Webhook
 
@@ -161,17 +161,17 @@ Task<Webhook> SaveWebhookAsync(Webhook webhook, RequestOptions requestOptions = 
 
 #### Parameters
 
-`webhook` [Webhook](SuperOffice.WebApi.Data.Webhook.md)
+`webhook` [Webhook](/en/api/reference/webapi/SuperOffice.WebApi.Data.Webhook)
 
 The Webhook that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Webhook](SuperOffice.WebApi.Data.Webhook.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Webhook](/en/api/reference/webapi/SuperOffice.WebApi.Data.Webhook)\&gt;
 
 New or updated Webhook
 
@@ -195,11 +195,11 @@ Name of event to fire. 'entity.verb' For example: 'window.closed', 'button.click
 
 (Optional) Id of entity that is firing event. Can be 0 if not used.
 
-`data` [StringObjectDictionary](SuperOffice.WebApi.Data.StringObjectDictionary.md)
+`data` [StringObjectDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringObjectDictionary)
 
 Event data. Not all the data values may be posted to the webhook, depending in webhook type: \{ 'windowName': 'foo', 'widgets': 123 \}
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -221,17 +221,17 @@ Task<WebhookResult> TestWebhookAsync(Webhook webhook, RequestOptions requestOpti
 
 #### Parameters
 
-`webhook` [Webhook](SuperOffice.WebApi.Data.Webhook.md)
+`webhook` [Webhook](/en/api/reference/webapi/SuperOffice.WebApi.Data.Webhook)
 
 Webhook definition to ping. Must contain a valid TargetUrl.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WebhookResult](SuperOffice.WebApi.Data.WebhookResult.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WebhookResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.WebhookResult)\&gt;
 
 Result of calling webhook. Sucess=true/false + Error message
 

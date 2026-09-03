@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TemporaryKeyInfo"></a> Class TemporaryKeyInfo
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TemporaryKeyInfo.
@@ -13,13 +13,13 @@ public class TemporaryKeyInfo : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[TemporaryKeyInfo](SuperOffice.WebApi.Data.TemporaryKeyInfo.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[TemporaryKeyInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.TemporaryKeyInfo)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -52,11 +52,11 @@ public TemporaryKeyDomain? Domain { get; set; }
 
 #### Property Value
 
- [TemporaryKeyDomain](SuperOffice.WebApi.Data.TemporaryKeyDomain.md)?
+ [TemporaryKeyDomain](/en/api/reference/webapi/SuperOffice.WebApi.Data.TemporaryKeyDomain)?
 
 #### See Also
 
-[TemporaryKeyInfo](SuperOffice.WebApi.Data.TemporaryKeyInfo.md).[Domain\_String](SuperOffice.WebApi.Data.TemporaryKeyInfo.md\#SuperOffice\_WebApi\_Data\_TemporaryKeyInfo\_Domain\_String)
+[TemporaryKeyInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.TemporaryKeyInfo).[Domain\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TemporaryKeyInfo#SuperOffice_WebApi_Data_TemporaryKeyInfo_Domain_String)
 
 ### <a id="SuperOffice_WebApi_Data_TemporaryKeyInfo_Domain_String"></a> Domain\_String
 
@@ -74,7 +74,7 @@ public string Domain_String { get; set; }
 
 #### See Also
 
-[TemporaryKeyInfo](SuperOffice.WebApi.Data.TemporaryKeyInfo.md).[Domain](SuperOffice.WebApi.Data.TemporaryKeyInfo.md\#SuperOffice\_WebApi\_Data\_TemporaryKeyInfo\_Domain)
+[TemporaryKeyInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.TemporaryKeyInfo).[Domain](/en/api/reference/webapi/SuperOffice.WebApi.Data.TemporaryKeyInfo#SuperOffice_WebApi_Data_TemporaryKeyInfo_Domain)
 
 ### <a id="SuperOffice_WebApi_Data_TemporaryKeyInfo_IsExpired"></a> IsExpired
 
@@ -126,5 +126,5 @@ public virtual int TargetId { get; set; }
 
 ## See Also
 
-[PersonAgent](SuperOffice.WebApi.Agents.PersonAgent.md)
+[PersonAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PersonAgent)
 

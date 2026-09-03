@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_SetSpamStatusByIdsRequest"></a> Class Ticket\_SetSpamStatusByIdsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_SetSpamStatusByIdsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_SetSpamStatusByIdsRequest](SuperOffice.WebApi.Data.Ticket\_SetSpamStatusByIdsRequest.md)
+[Ticket\_SetSpamStatusByIdsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_SetSpamStatusByIdsRequest)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # Interface IArchiveAgent {#SuperOffice_WebApi_Agents_IArchiveAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 ArchiveList functions of all kinds
@@ -11,7 +11,7 @@ public interface IArchiveAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -27,13 +27,13 @@ Task<ArchiveListResult> CreateDefaultArchiveListResultAsync(RequestOptions reque
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListResult](SuperOffice.WebApi.Data.ArchiveListResult.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveListResult)\&gt;
 
 A blank ArchiveListResult
 
@@ -63,9 +63,9 @@ Comma separated list of the names of the desired entities.
 
 Comma separated list of the names of the columns wanted; supports display names
 
-`sortOrder` [ArchiveOrderByInfo](SuperOffice.WebApi.Data.ArchiveOrderByInfo.md)\[\]
+`sortOrder` [ArchiveOrderByInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveOrderByInfo)\[\]
 
-`restrictions` [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
+`restrictions` [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
 
 `exportType` [string](https://learn.microsoft.com/dotnet/api/system.string)
 
@@ -77,13 +77,13 @@ To what format the archive should be exported; Excel, etc.
 
 The estimated amount of rows to be exported. Used to determine if the operation should be run as a batch task or immediately.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ExportArchiveResult](SuperOffice.WebApi.Data.ExportArchiveResult.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ExportArchiveResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExportArchiveResult)\&gt;
 
 ### GetActivityFilterAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IArchiveAgent_GetActivityFilterAsync_SuperOffice_WebApi_RequestOptions_}
 
@@ -95,13 +95,13 @@ Task<ActivityFilter> GetActivityFilterAsync(RequestOptions requestOptions = null
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ActivityFilter](SuperOffice.WebApi.Data.ActivityFilter.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ActivityFilter](/en/api/reference/webapi/SuperOffice.WebApi.Data.ActivityFilter)\&gt;
 
 The activity filter for the specified list
 
@@ -123,13 +123,13 @@ String that identifies the archive in the GUI, must be the same when fetching an
 
 Name of archive provider, must match one of the plugins known to the ArchiveProviderFactory.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveConfiguration](SuperOffice.WebApi.Data.ArchiveConfiguration.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveConfiguration](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveConfiguration)\&gt;
 
 Archive configuration consisting of column information, orderby information and entities
 
@@ -159,13 +159,13 @@ Context parameter, url-encoded string context parameter for ArchiveProvider cons
 
 Name/value string containing ownership binding information. The first should resolve to a table/primarykey, such as selection=123. Future functionality may allow multiple/extended keys
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveConfiguration](SuperOffice.WebApi.Data.ArchiveConfiguration.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveConfiguration](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveConfiguration)\&gt;
 
 Archive configuration consisting of column information, orderby information and entities
 
@@ -191,13 +191,13 @@ Name of archive provider, must match one of the plugins known to the ArchiveProv
 
 Context parameter, url-encoded string context parameter for ArchiveProvider constructor
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveConfiguration](SuperOffice.WebApi.Data.ArchiveConfiguration.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveConfiguration](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveConfiguration)\&gt;
 
 Archive configuration consisting of column information, orderby information and entities
 
@@ -239,13 +239,13 @@ Page number, page 0 is the first page. Negative page numbers are interpreted as 
 
 Page size, which should be kept reasonable (say, no more than 1000 rows at a time)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListItem](SuperOffice.WebApi.Data.ArchiveListItem.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveListItem)\[\]\&gt;
 
 Array of archive list items, where each item represents one row of data (row level data + the requested columns)
 
@@ -267,11 +267,11 @@ The GUI name of the archive list, used to retrieve the currently configured set 
 
 The name of the archive provider to use; it will be created via the ArchiveProviderFactory from a plugin
 
-`sortOrder` [ArchiveOrderByInfo](SuperOffice.WebApi.Data.ArchiveOrderByInfo.md)\[\]
+`sortOrder` [ArchiveOrderByInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveOrderByInfo)\[\]
 
 Sort order for the archive. Can be null, which indicates 'no particular order'
 
-`restriction` [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
+`restriction` [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
 
 Archive restrictions. Archives will generally throw an exception if no restrictions are set. Pass in an empty array if you really do not want restrictions, but remember that you may end up fetching the first page of millions of rows.
 
@@ -287,13 +287,13 @@ Page number, page 0 is the first page. Negative page numbers are interpreted as 
 
 Page size, which should be kept reasonable (say, no more than 1000 rows at a time)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListItem](SuperOffice.WebApi.Data.ArchiveListItem.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveListItem)\[\]\&gt;
 
 Array of archive list items, where each item represents one row of data (row level data + the requested columns)
 
@@ -335,13 +335,13 @@ Page number, page 0 is the first page. Negative page numbers are interpreted as 
 
 Page size, which should be kept reasonable (say, no more than 1000 rows at a time)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListItem](SuperOffice.WebApi.Data.ArchiveListItem.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveListItem)\[\]\&gt;
 
 Array of archive list items, where each item represents one row of data (row level data + the requested columns)
 
@@ -363,11 +363,11 @@ The name of the archive provider to use; it will be created via the ArchiveProvi
 
 An array of the names of the columns wanted.
 
-`sortOrder` [ArchiveOrderByInfo](SuperOffice.WebApi.Data.ArchiveOrderByInfo.md)\[\]
+`sortOrder` [ArchiveOrderByInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveOrderByInfo)\[\]
 
 Sort order for the archive. Can be null, which indicates 'no particular order'
 
-`restriction` [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
+`restriction` [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
 
 Archive restrictions. Archives will generally throw an exception if no restrictions are set. Pass in an empty array if you really do not want restrictions, but remember that you may end up fetching the first page of millions of rows.
 
@@ -383,13 +383,13 @@ Page number, page 0 is the first page. Negative page numbers are interpreted as 
 
 Page size, which should be kept reasonable (say, no more than 1000 rows at a time)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListItem](SuperOffice.WebApi.Data.ArchiveListItem.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveListItem)\[\]\&gt;
 
 Array of archive list items, where each item represents one row of data (row level data + the requested columns)
 
@@ -435,13 +435,13 @@ Page size, which should be kept reasonable (say, no more than 1000 rows at a tim
 
 Context parameter, url-encoded string context parameter for ArchiveProvider constructor
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListItem](SuperOffice.WebApi.Data.ArchiveListItem.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveListItem)\[\]\&gt;
 
 Array of archive list items, where each item represents one row of data (row level data + the requested columns)
 
@@ -463,11 +463,11 @@ The name of the archive provider to use; it will be created via the ArchiveProvi
 
 An array of the names of the columns wanted.
 
-`sortOrder` [ArchiveOrderByInfo](SuperOffice.WebApi.Data.ArchiveOrderByInfo.md)\[\]
+`sortOrder` [ArchiveOrderByInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveOrderByInfo)\[\]
 
 Sort order for the archive. Can be null, which indicates 'no particular order'
 
-`restriction` [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
+`restriction` [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
 
 Archive restrictions. Archives will generally throw an exception if no restrictions are set. Pass in an empty array if you really do not want restrictions, but remember that you may end up fetching the first page of millions of rows.
 
@@ -487,13 +487,13 @@ Page size, which should be kept reasonable (say, no more than 1000 rows at a tim
 
 Context parameter, url-encoded string context parameter for ArchiveProvider constructor
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListItem](SuperOffice.WebApi.Data.ArchiveListItem.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveListItem)\[\]\&gt;
 
 Array of archive list items, where each item represents one row of data (row level data + the requested columns)
 
@@ -539,13 +539,13 @@ Page size, which should be kept reasonable (say, no more than 1000 rows at a tim
 
 name=value&amp;amp;... formatted set of options. "rowcount=true" will cause the rowcount to be calculated and populated.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListResult](SuperOffice.WebApi.Data.ArchiveListResult.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveListResult)\&gt;
 
 Header with optional row count, plus array of archive list items, where each item represents one row of data (row level data + the requested columns)
 
@@ -567,11 +567,11 @@ The name of the archive provider to use; it will be created via the ArchiveProvi
 
 An array of the names of the columns wanted.
 
-`sortOrder` [ArchiveOrderByInfo](SuperOffice.WebApi.Data.ArchiveOrderByInfo.md)\[\]
+`sortOrder` [ArchiveOrderByInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveOrderByInfo)\[\]
 
 Sort order for the archive. Can be null, which indicates 'no particular order'
 
-`restriction` [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
+`restriction` [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
 
 Archive restrictions. Archives will generally throw an exception if no restrictions are set. Pass in an empty array if you really do not want restrictions, but remember that you may end up fetching the first page of millions of rows.
 
@@ -591,13 +591,13 @@ Page size, which should be kept reasonable (say, no more than 1000 rows at a tim
 
 name=value&amp;amp;... formatted set of options. "rowcount=true" will cause the rowcount to be calculated and populated.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListResult](SuperOffice.WebApi.Data.ArchiveListResult.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveListResult)\&gt;
 
 Header with optional row count, plus array of archive list items, where each item represents one row of data (row level data + the requested columns)
 
@@ -647,13 +647,13 @@ name=value&amp;amp;... formatted set of options. "rowcount=true" will cause the 
 
 Context parameter, url-encoded string context parameter for ArchiveProvider constructor
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListResult](SuperOffice.WebApi.Data.ArchiveListResult.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveListResult)\&gt;
 
 Header with optional row count, plus array of archive list items, where each item represents one row of data (row level data + the requested columns)
 
@@ -675,11 +675,11 @@ The name of the archive provider to use; it will be created via the ArchiveProvi
 
 An array of the names of the columns wanted.
 
-`sortOrder` [ArchiveOrderByInfo](SuperOffice.WebApi.Data.ArchiveOrderByInfo.md)\[\]
+`sortOrder` [ArchiveOrderByInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveOrderByInfo)\[\]
 
 Sort order for the archive. Can be null, which indicates 'no particular order'
 
-`restriction` [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
+`restriction` [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
 
 Archive restrictions. Archives will generally throw an exception if no restrictions are set. Pass in an empty array if you really do not want restrictions, but remember that you may end up fetching the first page of millions of rows.
 
@@ -703,13 +703,13 @@ name=value&amp;amp;... formatted set of options. "rowcount=true" will cause the 
 
 Context parameter, url-encoded string context parameter for ArchiveProvider constructor
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListResult](SuperOffice.WebApi.Data.ArchiveListResult.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveListResult)\&gt;
 
 Header with optional row count, plus array of archive list items, where each item represents one row of data (row level data + the requested columns)
 
@@ -755,13 +755,13 @@ Page size, which should be kept reasonable (say, no more than 1000 rows at a tim
 
 Context parameter, url-encoded string context parameter for ArchiveProvider constructor
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListItem](SuperOffice.WebApi.Data.ArchiveListItem.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveListItem)\[\]\&gt;
 
 Array of archive list items, where each item represents one row of data (row level data + the requested columns)
 
@@ -783,11 +783,11 @@ The GUI name of the archive list, used to retrieve the currently configured set 
 
 The name of the archive provider to use; it will be created via the ArchiveProviderFactory from a plugin
 
-`sortOrder` [ArchiveOrderByInfo](SuperOffice.WebApi.Data.ArchiveOrderByInfo.md)\[\]
+`sortOrder` [ArchiveOrderByInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveOrderByInfo)\[\]
 
 Sort order for the archive. Can be null, which indicates 'no particular order'
 
-`restriction` [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
+`restriction` [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
 
 Archive restrictions. Archives will generally throw an exception if no restrictions are set. Pass in an empty array if you really do not want restrictions, but remember that you may end up fetching the first page of millions of rows.
 
@@ -807,13 +807,13 @@ Page size, which should be kept reasonable (say, no more than 1000 rows at a tim
 
 Context parameter, url-encoded string context parameter for ArchiveProvider constructor
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListItem](SuperOffice.WebApi.Data.ArchiveListItem.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveListItem)\[\]\&gt;
 
 Array of archive list items, where each item represents one row of data (row level data + the requested columns)
 
@@ -835,13 +835,13 @@ The name of the archive provider to use; it will be created via the ArchiveProvi
 
 Optional context parameter, url-encoded string context parameter for ArchiveProvider constructor
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveColumnInfo](SuperOffice.WebApi.Data.ArchiveColumnInfo.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveColumnInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveColumnInfo)\[\]\&gt;
 
 Array of all columns supported by the archive provider.
 
@@ -863,13 +863,13 @@ The name of the archive provider to use; it will be created via the ArchiveProvi
 
 Optional context parameter, url-encoded string context parameter for ArchiveProvider constructor
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MDOListItem](SuperOffice.WebApi.Data.MDOListItem.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.MDOListItem)\[\]\&gt;
 
 Array of all entity types supported by the archive provider. MDOListItem.Name = DisplayName, Tooltip = DisplayTooltip, Type = code name, StyleHint = optional/mandatory, IconHint=DefaultShow
 
@@ -887,7 +887,7 @@ Task<int[]> GetGroupAssociateIdsAsync(int[] groupIds, RequestOptions requestOpti
 
 Array of group ids
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -907,7 +907,7 @@ Task<string[]> GetProviderNamesAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -939,13 +939,13 @@ The primary key of the root table to get related data for
 
 Names of fields as a comma-separated list - these need to be valid in the DotSyntax for this table, and can be arbitrarily deep. Example: 'title,created_by.associate_id.person.fullName, x_comment'. Do not start with the root table name.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RelatedData](SuperOffice.WebApi.Data.RelatedData.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RelatedData](/en/api/reference/webapi/SuperOffice.WebApi.Data.RelatedData)\[\]\&gt;
 
 Array of field =&gt; ArchiveColumnData objects
 
@@ -971,13 +971,13 @@ The primary key of the root table to get related data for
 
 Names of fields - these need to be valid in the DotSyntax for this table, and can be arbitrarily deep. Examples: 'title', 'created_by.associate_id.person.fullName', 'x_comment'. Do not start with the root table name.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RelatedData](SuperOffice.WebApi.Data.RelatedData.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RelatedData](/en/api/reference/webapi/SuperOffice.WebApi.Data.RelatedData)\[\]\&gt;
 
 Array of field =&gt; ArchiveColumnData objects
 
@@ -991,11 +991,11 @@ Task SetActivityFilterAsync(ActivityFilter activityFilter, RequestOptions reques
 
 #### Parameters
 
-`activityFilter` [ActivityFilter](SuperOffice.WebApi.Data.ActivityFilter.md)
+`activityFilter` [ActivityFilter](/en/api/reference/webapi/SuperOffice.WebApi.Data.ActivityFilter)
 
 New activity filter
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1025,7 +1025,7 @@ Name of archive provider, must match one of the plugins known to the ArchiveProv
 
 Array of column names, where array order indicates left to right order in the archive.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1063,7 +1063,7 @@ Name/value string containing ownership binding information. The first should res
 
 Array of column names, where array order indicates left to right order in the archive.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1093,7 +1093,7 @@ Name of archive provider, must match one of the plugins known to the ArchiveProv
 
 Array of entity names
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1131,7 +1131,7 @@ Name/value string containing ownership binding information. The first should res
 
 Array of entity names
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1157,7 +1157,7 @@ String that identifies the archive in the GUI, must be the same when fetching an
 
 Array of column widths. A column width is specified either as a fixed number of character (10c) or as a percentage (10%). Percentages will be recalculated so that they add up to exactly 100 when the configuration is fetched again.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1195,7 +1195,7 @@ Name/value string containing ownership binding information. The first should res
 
 Array of column widths. A column width is specified either as a fixed number of character (10c) or as a percentage (10%). Percentages will be recalculated so that they add up to exactly 100 when the configuration is fetched again.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 

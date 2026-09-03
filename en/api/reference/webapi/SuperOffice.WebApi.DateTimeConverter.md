@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_DateTimeConverter"></a> Class DateTimeConverter
 
-Namespace: [SuperOffice.WebApi](SuperOffice.WebApi.md)  
+Namespace: [SuperOffice.WebApi](/en/api/reference/webapi/SuperOffice.WebApi)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -11,7 +11,7 @@ public class DateTimeConverter : JsonConverter
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
 JsonConverter ← 
-[DateTimeConverter](SuperOffice.WebApi.DateTimeConverter.md)
+[DateTimeConverter](/en/api/reference/webapi/SuperOffice.WebApi.DateTimeConverter)
 
 #### Inherited Members
 

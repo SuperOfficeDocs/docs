@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_GetProjectMemberAppointmentsByTypeRequest"></a> Class Appointment\_GetProjectMemberAppointmentsByTypeRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_GetProjectMemberAppointmentsByTypeRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_GetProjectMemberAppointmentsByTypeRequest](SuperOffice.WebApi.Data.Appointment\_GetProjectMemberAppointmentsByTypeRequest.md)
+[Appointment\_GetProjectMemberAppointmentsByTypeRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_GetProjectMemberAppointmentsByTypeRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public AppointmentType AppointmentType { get; set; }
 
 #### Property Value
 
- [AppointmentType](SuperOffice.WebApi.Data.AppointmentType.md)
+ [AppointmentType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentType)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_GetProjectMemberAppointmentsByTypeRequest_Count"></a> Count
 

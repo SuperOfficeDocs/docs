@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CommandResult"></a> Class CommandResult
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for CommandResult.
@@ -13,13 +13,13 @@ public class CommandResult : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[CommandResult](SuperOffice.WebApi.Data.CommandResult.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[CommandResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CommandResult)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -64,11 +64,11 @@ public CommandActionResult? Result { get; set; }
 
 #### Property Value
 
- [CommandActionResult](SuperOffice.WebApi.Data.CommandActionResult.md)?
+ [CommandActionResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CommandActionResult)?
 
 #### See Also
 
-[CommandResult](SuperOffice.WebApi.Data.CommandResult.md).[Result\_String](SuperOffice.WebApi.Data.CommandResult.md\#SuperOffice\_WebApi\_Data\_CommandResult\_Result\_String)
+[CommandResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CommandResult).[Result\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.CommandResult#SuperOffice_WebApi_Data_CommandResult_Result_String)
 
 ### <a id="SuperOffice_WebApi_Data_CommandResult_Result_String"></a> Result\_String
 
@@ -86,7 +86,7 @@ public string Result_String { get; set; }
 
 #### See Also
 
-[CommandResult](SuperOffice.WebApi.Data.CommandResult.md).[Result](SuperOffice.WebApi.Data.CommandResult.md\#SuperOffice\_WebApi\_Data\_CommandResult\_Result)
+[CommandResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CommandResult).[Result](/en/api/reference/webapi/SuperOffice.WebApi.Data.CommandResult#SuperOffice_WebApi_Data_CommandResult_Result)
 
 ### <a id="SuperOffice_WebApi_Data_CommandResult_Success"></a> Success
 

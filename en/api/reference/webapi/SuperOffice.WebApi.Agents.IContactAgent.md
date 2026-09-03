@@ -1,6 +1,6 @@
 # Interface IContactAgent {#SuperOffice_WebApi_Agents_IContactAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Contact (company) data services.
@@ -11,7 +11,7 @@ public interface IContactAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -30,17 +30,17 @@ Task<PersonEntity> AddPersonAsync(int contactId, PersonEntity newPersonEntity, R
 
 Contact to add person to
 
-`newPersonEntity` [PersonEntity](SuperOffice.WebApi.Data.PersonEntity.md)
+`newPersonEntity` [PersonEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.PersonEntity)
 
 Person object to add
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PersonEntity](SuperOffice.WebApi.Data.PersonEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PersonEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.PersonEntity)\&gt;
 
 Updated person object
 
@@ -54,19 +54,19 @@ Task<ContactEntity> ChangeCountryAsync(ContactEntity contactEntity, int toCountr
 
 #### Parameters
 
-`contactEntity` [ContactEntity](SuperOffice.WebApi.Data.ContactEntity.md)
+`contactEntity` [ContactEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactEntity)
 
 `toCountryId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
 The country to switch to
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ContactEntity](SuperOffice.WebApi.Data.ContactEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ContactEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactEntity)\&gt;
 
 ### CopyAsync\(int, string, string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IContactAgent_CopyAsync_System_Int32_System_String_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
 
@@ -94,7 +94,7 @@ The department of the destination contact
 
 If true, persons will be copied from source contact
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -115,13 +115,13 @@ Task<ContactEntity> CreateDefaultContactEntityAsync(RequestOptions requestOption
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ContactEntity](SuperOffice.WebApi.Data.ContactEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ContactEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactEntity)\&gt;
 
 A blank ContactEntity
 
@@ -136,13 +136,13 @@ Task<PreviewContact> CreateDefaultPreviewContactAsync(RequestOptions requestOpti
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreviewContact](SuperOffice.WebApi.Data.PreviewContact.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreviewContact](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreviewContact)\&gt;
 
 A blank PreviewContact
 
@@ -156,11 +156,11 @@ Task<int> CreateNewEntryAsync(DuplicateEntry duplicate, RequestOptions requestOp
 
 #### Parameters
 
-`duplicate` [DuplicateEntry](SuperOffice.WebApi.Data.DuplicateEntry.md)
+`duplicate` [DuplicateEntry](/en/api/reference/webapi/SuperOffice.WebApi.Data.DuplicateEntry)
 
 The duplicate to create a new entry based upon
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -184,7 +184,7 @@ Task DeleteContactEntityAsync(int contactEntityId, RequestOptions requestOptions
 
 The identity of the ContactEntity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -202,7 +202,7 @@ Task DeleteExpiredAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -220,7 +220,7 @@ Task<ContactEntity> EnrichContactEntityAsync(ContactEntity contactEntity, string
 
 #### Parameters
 
-`contactEntity` [ContactEntity](SuperOffice.WebApi.Data.ContactEntity.md)
+`contactEntity` [ContactEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactEntity)
 
 The contact entity to enrich.
 
@@ -228,13 +228,13 @@ The contact entity to enrich.
 
 Id from the EnrichContact provider
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ContactEntity](SuperOffice.WebApi.Data.ContactEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ContactEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactEntity)\&gt;
 
 Enriched contact entity with address, phone number, and email updated.
 
@@ -252,13 +252,13 @@ Task<Address> GetAddressAsync(int contactId, RequestOptions requestOptions = nul
 
 The contact id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Address](SuperOffice.WebApi.Data.Address.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Address](/en/api/reference/webapi/SuperOffice.WebApi.Data.Address)\&gt;
 
 The address as LocalizedField[][].
 
@@ -278,13 +278,13 @@ The contact id
 
 `countryId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Address](SuperOffice.WebApi.Data.Address.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Address](/en/api/reference/webapi/SuperOffice.WebApi.Data.Address)\&gt;
 
 The address as LocalizedField[][].
 
@@ -302,13 +302,13 @@ Task<Contact> GetContactAsync(int contactId, RequestOptions requestOptions = nul
 
 The identifier of the Contact object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Contact](SuperOffice.WebApi.Data.Contact.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Contact](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact)\&gt;
 
 Contact
 
@@ -326,13 +326,13 @@ Task<ContactEntity> GetContactEntityAsync(int contactEntityId, RequestOptions re
 
 The identifier of the ContactEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ContactEntity](SuperOffice.WebApi.Data.ContactEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ContactEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactEntity)\&gt;
 
 ContactEntity
 
@@ -350,13 +350,13 @@ Task<Contact[]> GetContactListAsync(int[] contactIds, RequestOptions requestOpti
 
 The identifiers of the Contact object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Contact](SuperOffice.WebApi.Data.Contact.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Contact](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact)\[\]\&gt;
 
 Array of Contact objects
 
@@ -378,13 +378,13 @@ The contact id to summarize.
 
 Max number of items to include in summary lists.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ContactSummary](SuperOffice.WebApi.Data.ContactSummary.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ContactSummary](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactSummary)\&gt;
 
 Summary of contact, with recent requests, sales, follow-ups, chats.
 
@@ -402,13 +402,13 @@ Task<ContactEntity> GetContactWithPersonsAsync(int contactId, RequestOptions req
 
 The id of the contact.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ContactEntity](SuperOffice.WebApi.Data.ContactEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ContactEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactEntity)\&gt;
 
 ContactEntity with all data and persons.
 
@@ -426,13 +426,13 @@ Task<DuplicateEntry[]> GetDomainDuplicatesAsync(string domain, RequestOptions re
 
 Domain used for lookup
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DuplicateEntry](SuperOffice.WebApi.Data.DuplicateEntry.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DuplicateEntry](/en/api/reference/webapi/SuperOffice.WebApi.Data.DuplicateEntry)\[\]\&gt;
 
 Any records matching the specified domain
 
@@ -446,13 +446,13 @@ Task<DuplicateRule[]> GetDuplicateRulesAsync(RequestOptions requestOptions = nul
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DuplicateRule](SuperOffice.WebApi.Data.DuplicateRule.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DuplicateRule](/en/api/reference/webapi/SuperOffice.WebApi.Data.DuplicateRule)\[\]\&gt;
 
 All available duplicate rules
 
@@ -470,13 +470,13 @@ Task<DuplicateEntry[]> GetDuplicatesAsync(string name, RequestOptions requestOpt
 
 Name used for lookup
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DuplicateEntry](SuperOffice.WebApi.Data.DuplicateEntry.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DuplicateEntry](/en/api/reference/webapi/SuperOffice.WebApi.Data.DuplicateEntry)\[\]\&gt;
 
 Any records matching the specified name
 
@@ -498,17 +498,17 @@ The start time of the activities. If the start time is set to a future date; act
 
 Integer array of categories to filter on. If the array is empty contacts from all categories will be selected.
 
-`actionType` [ContactAction](SuperOffice.WebApi.Data.ContactAction.md)
+`actionType` [ContactAction](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactAction)
 
 The type of action that has occured. E.g. updates, deletes, new appointments, etc.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ContactActivity](SuperOffice.WebApi.Data.ContactActivity.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ContactActivity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactActivity)\[\]\&gt;
 
 Array of contacts where there have been activity in the period.
 
@@ -522,13 +522,13 @@ Task<ContactEntity> GetMyBizCardAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ContactEntity](SuperOffice.WebApi.Data.ContactEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ContactEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactEntity)\&gt;
 
 The contact object with persons and interests
 
@@ -542,13 +542,13 @@ Task<ContactEntity> GetMyContactAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ContactEntity](SuperOffice.WebApi.Data.ContactEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ContactEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactEntity)\&gt;
 
 The Contact
 
@@ -562,13 +562,13 @@ Task<Contact[]> GetMyContactsAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Contact](SuperOffice.WebApi.Data.Contact.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Contact](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact)\[\]\&gt;
 
 Array of contacts
 
@@ -582,17 +582,17 @@ Task<Contact[]> GetMyRecentContactsAsync(ContactSourceType sourceType, RequestOp
 
 #### Parameters
 
-`sourceType` [ContactSourceType](SuperOffice.WebApi.Data.ContactSourceType.md)
+`sourceType` [ContactSourceType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactSourceType)
 
 The source where the contacts are retrieved from (Favorites, History, Diary)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Contact](SuperOffice.WebApi.Data.Contact.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Contact](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact)\[\]\&gt;
 
 Arrayof contacts
 
@@ -614,13 +614,13 @@ Name used for lookup
 
 Department used for lookup (if any)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DuplicateEntry](SuperOffice.WebApi.Data.DuplicateEntry.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DuplicateEntry](/en/api/reference/webapi/SuperOffice.WebApi.Data.DuplicateEntry)\[\]\&gt;
 
 Any records matching the specified name and department
 
@@ -636,13 +636,13 @@ Task<Person[]> GetPersonsAsync(int contactId, RequestOptions requestOptions = nu
 
 `contactId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Person](SuperOffice.WebApi.Data.Person.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person)\[\]\&gt;
 
 Array of Persons
 
@@ -660,13 +660,13 @@ Task<PreviewContact> GetPreviewContactAsync(int contactId, RequestOptions reques
 
 Contact ID
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreviewContact](SuperOffice.WebApi.Data.PreviewContact.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreviewContact](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreviewContact)\&gt;
 
 Minimal contact suitable for preview
 
@@ -684,13 +684,13 @@ Task<PreviewContact> GetPreviewEnrichContactAsync(string enrichId, RequestOption
 
 Enrich Contact ID from the EnrichContact MDO list provider
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreviewContact](SuperOffice.WebApi.Data.PreviewContact.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreviewContact](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreviewContact)\&gt;
 
 Minimal contact suitable for preview
 
@@ -708,13 +708,13 @@ Task<Address[]> GetQuoteVersionAddressesAsync(int quoteVersionId, RequestOptions
 
 The version to get the addresses for.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Address](SuperOffice.WebApi.Data.Address.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Address](/en/api/reference/webapi/SuperOffice.WebApi.Data.Address)\[\]\&gt;
 
 The quote version addresses. Invoice and billing address, in that order.
 
@@ -736,7 +736,7 @@ Primary key
 
 Number field value to check.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -772,7 +772,7 @@ Persons with identical names will be merged
 
 If true, empty fields on destination will be replaced by values from source.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -790,17 +790,17 @@ Task<ContactEntity> SaveContactEntityAsync(ContactEntity contactEntity, RequestO
 
 #### Parameters
 
-`contactEntity` [ContactEntity](SuperOffice.WebApi.Data.ContactEntity.md)
+`contactEntity` [ContactEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactEntity)
 
 The ContactEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ContactEntity](SuperOffice.WebApi.Data.ContactEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ContactEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactEntity)\&gt;
 
 New or updated ContactEntity
 
@@ -818,11 +818,11 @@ Task<Address> SaveQuoteVersionAddressAsync(int quoteVersionId, Address address, 
 
 The version to save the address on.
 
-`address` [Address](SuperOffice.WebApi.Data.Address.md)
+`address` [Address](/en/api/reference/webapi/SuperOffice.WebApi.Data.Address)
 
 The address to save on the quote version.
 
-`addressType` [AddressType](SuperOffice.WebApi.Data.AddressType.md)
+`addressType` [AddressType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AddressType)
 
 Should be either QuoteBillingAddress or QuoteShippingAddress
 
@@ -830,13 +830,13 @@ Should be either QuoteBillingAddress or QuoteShippingAddress
 
 The country for the custom address
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Address](SuperOffice.WebApi.Data.Address.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Address](/en/api/reference/webapi/SuperOffice.WebApi.Data.Address)\&gt;
 
 The saved addresses.
 
@@ -850,11 +850,11 @@ Task SetDuplicateRulesStatusAsync(DuplicateRule[] rules, RequestOptions requestO
 
 #### Parameters
 
-`rules` [DuplicateRule](SuperOffice.WebApi.Data.DuplicateRule.md)\[\]
+`rules` [DuplicateRule](/en/api/reference/webapi/SuperOffice.WebApi.Data.DuplicateRule)\[\]
 
 Duplicate rules to update active status for
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -876,7 +876,7 @@ Task UndeleteAsync(int id, RequestOptions requestOptions = null)
 
 The primary key of the entity to undelete
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -908,7 +908,7 @@ The interest ids to set on the contact. This will set these interests to true an
 
 The interest ids to diable on the contact. This will set these interests to false and not touch any other interests.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -928,17 +928,17 @@ Task<StringDictionary> ValidateContactEntityAsync(ContactEntity contactEntity, R
 
 #### Parameters
 
-`contactEntity` [ContactEntity](SuperOffice.WebApi.Data.ContactEntity.md)
+`contactEntity` [ContactEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactEntity)
 
 Entity to be checked for errors.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\&gt;
 
 Error messages tagged by field.
 

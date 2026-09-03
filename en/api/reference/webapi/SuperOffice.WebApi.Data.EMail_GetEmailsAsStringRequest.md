@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_GetEmailsAsStringRequest"></a> Class EMail\_GetEmailsAsStringRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_GetEmailsAsStringRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_GetEmailsAsStringRequest](SuperOffice.WebApi.Data.EMail\_GetEmailsAsStringRequest.md)
+[EMail\_GetEmailsAsStringRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_GetEmailsAsStringRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public EMailConnectionInfoExtended ConnectionInfoExtended { get; set; }
 
 #### Property Value
 
- [EMailConnectionInfoExtended](SuperOffice.WebApi.Data.EMailConnectionInfoExtended.md)
+ [EMailConnectionInfoExtended](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfoExtended)
 
 ### <a id="SuperOffice_WebApi_Data_EMail_GetEmailsAsStringRequest_MessageIds"></a> MessageIds
 

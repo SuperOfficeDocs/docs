@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_LiveUiSyncResult"></a> Class LiveUiSyncResult
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for LiveUiSyncResult.
@@ -13,7 +13,7 @@ public class LiveUiSyncResult
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[LiveUiSyncResult](SuperOffice.WebApi.Data.LiveUiSyncResult.md)
+[LiveUiSyncResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.LiveUiSyncResult)
 
 #### Inherited Members
 
@@ -47,7 +47,7 @@ public virtual UiEvent[] Events { get; set; }
 
 #### Property Value
 
- [UiEvent](SuperOffice.WebApi.Data.UiEvent.md)\[\]
+ [UiEvent](/en/api/reference/webapi/SuperOffice.WebApi.Data.UiEvent)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_LiveUiSyncResult_TicketStates"></a> TicketStates
 
@@ -59,5 +59,5 @@ public virtual TicketStateInfo[] TicketStates { get; set; }
 
 #### Property Value
 
- [TicketStateInfo](SuperOffice.WebApi.Data.TicketStateInfo.md)\[\]
+ [TicketStateInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStateInfo)\[\]
 

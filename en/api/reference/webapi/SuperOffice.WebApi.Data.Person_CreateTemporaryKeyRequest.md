@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Person_CreateTemporaryKeyRequest"></a> Class Person\_CreateTemporaryKeyRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Person_CreateTemporaryKeyRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Person\_CreateTemporaryKeyRequest](SuperOffice.WebApi.Data.Person\_CreateTemporaryKeyRequest.md)
+[Person\_CreateTemporaryKeyRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person_CreateTemporaryKeyRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public TemporaryKeyDomain Domain { get; set; }
 
 #### Property Value
 
- [TemporaryKeyDomain](SuperOffice.WebApi.Data.TemporaryKeyDomain.md)
+ [TemporaryKeyDomain](/en/api/reference/webapi/SuperOffice.WebApi.Data.TemporaryKeyDomain)
 
 ### <a id="SuperOffice_WebApi_Data_Person_CreateTemporaryKeyRequest_Expires"></a> Expires
 

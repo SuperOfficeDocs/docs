@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_RemoveUntrustedCredentialsForAssociateRequest"></a> Class User\_RemoveUntrustedCredentialsForAssociateRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_RemoveUntrustedCredentialsForAssociateRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_RemoveUntrustedCredentialsForAssociateRequest](SuperOffice.WebApi.Data.User\_RemoveUntrustedCredentialsForAssociateRequest.md)
+[User\_RemoveUntrustedCredentialsForAssociateRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_RemoveUntrustedCredentialsForAssociateRequest)
 
 #### Inherited Members
 

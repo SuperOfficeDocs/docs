@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_PhoneListPreferences"></a> Class PhoneListPreferences
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for PhoneListPreferences.
@@ -13,13 +13,13 @@ public class PhoneListPreferences : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[PhoneListPreferences](SuperOffice.WebApi.Data.PhoneListPreferences.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[PhoneListPreferences](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneListPreferences)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -100,11 +100,11 @@ public StringSearchType? SearchModeCompany { get; set; }
 
 #### Property Value
 
- [StringSearchType](SuperOffice.WebApi.Data.StringSearchType.md)?
+ [StringSearchType](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringSearchType)?
 
 #### See Also
 
-[PhoneListPreferences](SuperOffice.WebApi.Data.PhoneListPreferences.md).[SearchModeCompany\_String](SuperOffice.WebApi.Data.PhoneListPreferences.md\#SuperOffice\_WebApi\_Data\_PhoneListPreferences\_SearchModeCompany\_String)
+[PhoneListPreferences](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneListPreferences).[SearchModeCompany\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneListPreferences#SuperOffice_WebApi_Data_PhoneListPreferences_SearchModeCompany_String)
 
 ### <a id="SuperOffice_WebApi_Data_PhoneListPreferences_SearchModeCompany_String"></a> SearchModeCompany\_String
 
@@ -122,7 +122,7 @@ public string SearchModeCompany_String { get; set; }
 
 #### See Also
 
-[PhoneListPreferences](SuperOffice.WebApi.Data.PhoneListPreferences.md).[SearchModeCompany](SuperOffice.WebApi.Data.PhoneListPreferences.md\#SuperOffice\_WebApi\_Data\_PhoneListPreferences\_SearchModeCompany)
+[PhoneListPreferences](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneListPreferences).[SearchModeCompany](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneListPreferences#SuperOffice_WebApi_Data_PhoneListPreferences_SearchModeCompany)
 
 ### <a id="SuperOffice_WebApi_Data_PhoneListPreferences_SearchModeDepartment"></a> SearchModeDepartment
 
@@ -136,11 +136,11 @@ public StringSearchType? SearchModeDepartment { get; set; }
 
 #### Property Value
 
- [StringSearchType](SuperOffice.WebApi.Data.StringSearchType.md)?
+ [StringSearchType](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringSearchType)?
 
 #### See Also
 
-[PhoneListPreferences](SuperOffice.WebApi.Data.PhoneListPreferences.md).[SearchModeDepartment\_String](SuperOffice.WebApi.Data.PhoneListPreferences.md\#SuperOffice\_WebApi\_Data\_PhoneListPreferences\_SearchModeDepartment\_String)
+[PhoneListPreferences](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneListPreferences).[SearchModeDepartment\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneListPreferences#SuperOffice_WebApi_Data_PhoneListPreferences_SearchModeDepartment_String)
 
 ### <a id="SuperOffice_WebApi_Data_PhoneListPreferences_SearchModeDepartment_String"></a> SearchModeDepartment\_String
 
@@ -158,7 +158,7 @@ public string SearchModeDepartment_String { get; set; }
 
 #### See Also
 
-[PhoneListPreferences](SuperOffice.WebApi.Data.PhoneListPreferences.md).[SearchModeDepartment](SuperOffice.WebApi.Data.PhoneListPreferences.md\#SuperOffice\_WebApi\_Data\_PhoneListPreferences\_SearchModeDepartment)
+[PhoneListPreferences](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneListPreferences).[SearchModeDepartment](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneListPreferences#SuperOffice_WebApi_Data_PhoneListPreferences_SearchModeDepartment)
 
 ### <a id="SuperOffice_WebApi_Data_PhoneListPreferences_SearchModeFirstname"></a> SearchModeFirstname
 
@@ -172,11 +172,11 @@ public StringSearchType? SearchModeFirstname { get; set; }
 
 #### Property Value
 
- [StringSearchType](SuperOffice.WebApi.Data.StringSearchType.md)?
+ [StringSearchType](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringSearchType)?
 
 #### See Also
 
-[PhoneListPreferences](SuperOffice.WebApi.Data.PhoneListPreferences.md).[SearchModeFirstname\_String](SuperOffice.WebApi.Data.PhoneListPreferences.md\#SuperOffice\_WebApi\_Data\_PhoneListPreferences\_SearchModeFirstname\_String)
+[PhoneListPreferences](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneListPreferences).[SearchModeFirstname\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneListPreferences#SuperOffice_WebApi_Data_PhoneListPreferences_SearchModeFirstname_String)
 
 ### <a id="SuperOffice_WebApi_Data_PhoneListPreferences_SearchModeFirstname_String"></a> SearchModeFirstname\_String
 
@@ -194,7 +194,7 @@ public string SearchModeFirstname_String { get; set; }
 
 #### See Also
 
-[PhoneListPreferences](SuperOffice.WebApi.Data.PhoneListPreferences.md).[SearchModeFirstname](SuperOffice.WebApi.Data.PhoneListPreferences.md\#SuperOffice\_WebApi\_Data\_PhoneListPreferences\_SearchModeFirstname)
+[PhoneListPreferences](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneListPreferences).[SearchModeFirstname](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneListPreferences#SuperOffice_WebApi_Data_PhoneListPreferences_SearchModeFirstname)
 
 ### <a id="SuperOffice_WebApi_Data_PhoneListPreferences_SearchModeLastname"></a> SearchModeLastname
 
@@ -208,11 +208,11 @@ public StringSearchType? SearchModeLastname { get; set; }
 
 #### Property Value
 
- [StringSearchType](SuperOffice.WebApi.Data.StringSearchType.md)?
+ [StringSearchType](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringSearchType)?
 
 #### See Also
 
-[PhoneListPreferences](SuperOffice.WebApi.Data.PhoneListPreferences.md).[SearchModeLastname\_String](SuperOffice.WebApi.Data.PhoneListPreferences.md\#SuperOffice\_WebApi\_Data\_PhoneListPreferences\_SearchModeLastname\_String)
+[PhoneListPreferences](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneListPreferences).[SearchModeLastname\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneListPreferences#SuperOffice_WebApi_Data_PhoneListPreferences_SearchModeLastname_String)
 
 ### <a id="SuperOffice_WebApi_Data_PhoneListPreferences_SearchModeLastname_String"></a> SearchModeLastname\_String
 
@@ -230,9 +230,9 @@ public string SearchModeLastname_String { get; set; }
 
 #### See Also
 
-[PhoneListPreferences](SuperOffice.WebApi.Data.PhoneListPreferences.md).[SearchModeLastname](SuperOffice.WebApi.Data.PhoneListPreferences.md\#SuperOffice\_WebApi\_Data\_PhoneListPreferences\_SearchModeLastname)
+[PhoneListPreferences](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneListPreferences).[SearchModeLastname](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneListPreferences#SuperOffice_WebApi_Data_PhoneListPreferences_SearchModeLastname)
 
 ## See Also
 
-[PhoneListAgent](SuperOffice.WebApi.Agents.PhoneListAgent.md)
+[PhoneListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PhoneListAgent)
 

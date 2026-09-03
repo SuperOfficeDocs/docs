@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Person_GetBestSoLanguageForTemplateRequest"></a> Class Person\_GetBestSoLanguageForTemplateRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Person_GetBestSoLanguageForTemplateRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Person\_GetBestSoLanguageForTemplateRequest](SuperOffice.WebApi.Data.Person\_GetBestSoLanguageForTemplateRequest.md)
+[Person\_GetBestSoLanguageForTemplateRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person_GetBestSoLanguageForTemplateRequest)
 
 #### Inherited Members
 

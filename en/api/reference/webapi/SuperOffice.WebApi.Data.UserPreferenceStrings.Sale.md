@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Sale"></a> Class UserPreferenceStrings.Sale
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Preference keys for sales settings
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.Sale
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.Sale](SuperOffice.WebApi.Data.UserPreferenceStrings.Sale.md)
+[UserPreferenceStrings.Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Sale)
 
 #### Inherited Members
 

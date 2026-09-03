@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Configuration_ExistsSystemEventRequest"></a> Class Configuration\_ExistsSystemEventRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Configuration_ExistsSystemEventRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Configuration\_ExistsSystemEventRequest](SuperOffice.WebApi.Data.Configuration\_ExistsSystemEventRequest.md)
+[Configuration\_ExistsSystemEventRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_ExistsSystemEventRequest)
 
 #### Inherited Members
 

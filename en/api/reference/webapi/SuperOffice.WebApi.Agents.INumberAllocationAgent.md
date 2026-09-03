@@ -1,6 +1,6 @@
 # Interface INumberAllocationAgent {#SuperOffice_WebApi_Agents_INumberAllocationAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 This agent can be used to manage number allocation
@@ -11,7 +11,7 @@ public interface INumberAllocationAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -27,13 +27,13 @@ Task<RefCountEntity> CreateDefaultRefCountEntityAsync(RequestOptions requestOpti
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RefCountEntity](SuperOffice.WebApi.Data.RefCountEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RefCountEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.RefCountEntity)\&gt;
 
 A blank RefCountEntity
 
@@ -51,7 +51,7 @@ Task DeleteRefCountEntityAsync(int refCountEntityId, RequestOptions requestOptio
 
 The identity of the RefCountEntity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -69,7 +69,7 @@ Task<bool> GetNumberEachTemplateAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -93,13 +93,13 @@ Task<RefCountEntity> GetRefCountEntityAsync(int refCountEntityId, RequestOptions
 
 The identifier of the RefCountEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RefCountEntity](SuperOffice.WebApi.Data.RefCountEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RefCountEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.RefCountEntity)\&gt;
 
 RefCountEntity
 
@@ -113,11 +113,11 @@ Task SaveDefaultNumberingAsync(RefCountEntity refCountEntity, RequestOptions req
 
 #### Parameters
 
-`refCountEntity` [RefCountEntity](SuperOffice.WebApi.Data.RefCountEntity.md)
+`refCountEntity` [RefCountEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.RefCountEntity)
 
 The refCountEntity that holds the values that will be saved
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -137,17 +137,17 @@ Task<RefCountEntity> SaveRefCountEntityAsync(RefCountEntity refCountEntity, Requ
 
 #### Parameters
 
-`refCountEntity` [RefCountEntity](SuperOffice.WebApi.Data.RefCountEntity.md)
+`refCountEntity` [RefCountEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.RefCountEntity)
 
 The RefCountEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RefCountEntity](SuperOffice.WebApi.Data.RefCountEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RefCountEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.RefCountEntity)\&gt;
 
 New or updated RefCountEntity
 
@@ -165,7 +165,7 @@ Task SetNumberEachTemplateAsync(bool setValue, RequestOptions requestOptions = n
 
 true or false if Automatically create new counters for new document templates
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 

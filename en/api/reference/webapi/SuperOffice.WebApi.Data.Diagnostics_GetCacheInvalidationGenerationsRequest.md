@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Diagnostics_GetCacheInvalidationGenerationsRequest"></a> Class Diagnostics\_GetCacheInvalidationGenerationsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Diagnostics_GetCacheInvalidationGenerationsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Diagnostics\_GetCacheInvalidationGenerationsRequest](SuperOffice.WebApi.Data.Diagnostics\_GetCacheInvalidationGenerationsRequest.md)
+[Diagnostics\_GetCacheInvalidationGenerationsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Diagnostics_GetCacheInvalidationGenerationsRequest)
 
 #### Inherited Members
 

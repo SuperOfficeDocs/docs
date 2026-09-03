@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Find_GetDefaultDesiredColumnsFromRestrictionsRequest"></a> Class Find\_GetDefaultDesiredColumnsFromRestrictionsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Find_GetDefaultDesiredColumnsFromRestrictionsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Find\_GetDefaultDesiredColumnsFromRestrictionsRequest](SuperOffice.WebApi.Data.Find\_GetDefaultDesiredColumnsFromRestrictionsRequest.md)
+[Find\_GetDefaultDesiredColumnsFromRestrictionsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Find_GetDefaultDesiredColumnsFromRestrictionsRequest)
 
 #### Inherited Members
 
@@ -50,5 +50,5 @@ public ArchiveRestrictionInfo[] Restrictions { get; set; }
 
 #### Property Value
 
- [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
+ [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
 

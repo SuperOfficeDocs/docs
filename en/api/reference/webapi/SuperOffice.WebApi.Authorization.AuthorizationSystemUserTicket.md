@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Authorization_AuthorizationSystemUserTicket"></a> Class AuthorizationSystemUserTicket
 
-Namespace: [SuperOffice.WebApi.Authorization](SuperOffice.WebApi.Authorization.md)  
+Namespace: [SuperOffice.WebApi.Authorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization)  
 Assembly: SuperOffice.WebApi.Authorization.SystemUserTicket.dll  
 
 SOTicket for use with SystemUser tokens in CRM online only. See [IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization).
@@ -12,7 +12,7 @@ public class AuthorizationSystemUserTicket : AuthorizationTicket, IAddHeaders
 #### Inheritance
 
 AuthorizationTicket ← 
-[AuthorizationSystemUserTicket](SuperOffice.WebApi.Authorization.AuthorizationSystemUserTicket.md)
+[AuthorizationSystemUserTicket](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.AuthorizationSystemUserTicket)
 
 #### Implements
 

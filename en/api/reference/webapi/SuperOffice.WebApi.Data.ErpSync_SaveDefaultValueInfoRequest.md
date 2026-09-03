@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSync_SaveDefaultValueInfoRequest"></a> Class ErpSync\_SaveDefaultValueInfoRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ErpSync_SaveDefaultValueInfoRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ErpSync\_SaveDefaultValueInfoRequest](SuperOffice.WebApi.Data.ErpSync\_SaveDefaultValueInfoRequest.md)
+[ErpSync\_SaveDefaultValueInfoRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSync_SaveDefaultValueInfoRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public ErpSyncDefaultValue ErpSyncDefaultValue { get; set; }
 
 #### Property Value
 
- [ErpSyncDefaultValue](SuperOffice.WebApi.Data.ErpSyncDefaultValue.md)
+ [ErpSyncDefaultValue](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncDefaultValue)
 

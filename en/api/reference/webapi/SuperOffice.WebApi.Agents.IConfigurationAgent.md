@@ -1,6 +1,6 @@
 # Interface IConfigurationAgent {#SuperOffice_WebApi_Agents_IConfigurationAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 User interface configuration - XMLs and other elements such as inter-client URLs
@@ -11,7 +11,7 @@ public interface IConfigurationAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -38,7 +38,7 @@ The instance name for the application, like 'MainInstance'
 
 If false, only the current associate's configuration is cleared. If true, configurations are cleared for all associates.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -59,13 +59,13 @@ Task<ConfigurableScreenDelta> CreateDefaultConfigurableScreenDeltaAsync(RequestO
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConfigurableScreenDelta](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConfigurableScreenDelta)\&gt;
 
 A blank ConfigurableScreenDelta
 
@@ -80,13 +80,13 @@ Task<DiaryViewEntity> CreateDefaultDiaryViewEntityAsync(RequestOptions requestOp
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DiaryViewEntity](SuperOffice.WebApi.Data.DiaryViewEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DiaryViewEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DiaryViewEntity)\&gt;
 
 A blank DiaryViewEntity
 
@@ -101,13 +101,13 @@ Task<LandingPageEntity> CreateDefaultLandingPageEntityAsync(RequestOptions reque
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LandingPageEntity](SuperOffice.WebApi.Data.LandingPageEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LandingPageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.LandingPageEntity)\&gt;
 
 A blank LandingPageEntity
 
@@ -122,13 +122,13 @@ Task<SystemEventEntity> CreateDefaultSystemEventEntityAsync(RequestOptions reque
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SystemEventEntity](SuperOffice.WebApi.Data.SystemEventEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SystemEventEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SystemEventEntity)\&gt;
 
 A blank SystemEventEntity
 
@@ -146,7 +146,7 @@ Task DeleteConfigurableScreenDeltaAsync(int configurableScreenDeltaId, RequestOp
 
 The identity of the ConfigurableScreenDelta
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -168,7 +168,7 @@ Task DeleteDiaryViewEntityAsync(int diaryViewEntityId, RequestOptions requestOpt
 
 The identity of the DiaryViewEntity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -190,7 +190,7 @@ Task DeleteLandingPageEntityAsync(int landingPageEntityId, RequestOptions reques
 
 The identity of the LandingPageEntity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -212,7 +212,7 @@ Task DeleteSystemEventEntityAsync(int systemEventEntityId, RequestOptions reques
 
 The identity of the SystemEventEntity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -234,7 +234,7 @@ Task DeleteWindowPosSizeAsync(int windowPosSizeId, RequestOptions requestOptions
 
 Id of the window and dialog position and size settings item.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -256,7 +256,7 @@ Task<bool> ExistsSystemEventAsync(string key, RequestOptions requestOptions = nu
 
 The key to match on
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -276,13 +276,13 @@ Task<StringBoolDictionary> GetAllFeatureTogglesAsync(RequestOptions requestOptio
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringBoolDictionary](SuperOffice.WebApi.Data.StringBoolDictionary.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringBoolDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringBoolDictionary)\&gt;
 
 The feature toggles with their state (on/off)
 
@@ -312,7 +312,7 @@ The configuration item name (first component of file name)
 
 The configuration item type (second component of file name)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -340,7 +340,7 @@ The application name, for instance 'SixWeb'
 
 The instance name for the application, like 'MainInstance'
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -372,7 +372,7 @@ currents to set. Eg. contact_id=100&amp;person_id=299
 
 If true frame is not rendered( Navigationbar, buttonbar and menu )
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -408,7 +408,7 @@ Here you can optionally specify the action for the current program. This will en
 
 If an action is specified, you can specify extra parameters here. This can be used to set specific behaviour for the chosen screen/action. If an empty action is supplied, this parameter will be ignored.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -432,7 +432,7 @@ Task<string> GetCSRegistryValueAsync(int entry, RequestOptions requestOptions = 
 
 The Registry entry to get
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -452,7 +452,7 @@ Task<string> GetCSWwwFolderAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -476,13 +476,13 @@ Task<ConfigurableScreenDelta> GetConfigurableScreenDeltaAsync(int configurableSc
 
 The identifier of the ConfigurableScreenDelta object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConfigurableScreenDelta](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConfigurableScreenDelta)\&gt;
 
 ConfigurableScreenDelta
 
@@ -496,17 +496,17 @@ Task<ConfigurableScreenDelta[]> GetConfigurableScreenDeltasByDeltaAsync(Configur
 
 #### Parameters
 
-`configurableScreenDelta` [ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md)
+`configurableScreenDelta` [ConfigurableScreenDelta](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConfigurableScreenDelta)
 
 A delta populated with wanted properties
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConfigurableScreenDelta](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConfigurableScreenDelta)\[\]\&gt;
 
 An array of deltas matching the values of the incomming parameter-delta
 
@@ -520,17 +520,17 @@ Task<ConfigurableScreenDelta[]> GetConfigurableScreenDeltasByQueryAsync(DeltaQue
 
 #### Parameters
 
-`deltaQuery` [DeltaQuery](SuperOffice.WebApi.Data.DeltaQuery.md)
+`deltaQuery` [DeltaQuery](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeltaQuery)
 
 An object populated with wanted properties for the deltas to return
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConfigurableScreenDelta](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConfigurableScreenDelta)\[\]\&gt;
 
 An array of deltas matching the values of the incomming query
 
@@ -544,7 +544,7 @@ Task<string> GetCsCgiUrlAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -564,7 +564,7 @@ Task<string> GetCsCgiUrlInternalAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -600,7 +600,7 @@ Here you can optionally specify the action for the current program. This will en
 
 If an action is specified, you can specify extra parameters here. This can be used to set specific behaviour for the chosen screen/action. If an empty action is supplied, this parameter will be ignored.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -620,7 +620,7 @@ Task<string> GetCustomerUrlAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -644,13 +644,13 @@ Task<DiaryViewEntity> GetDiaryViewEntityAsync(int diaryViewEntityId, RequestOpti
 
 The identifier of the DiaryViewEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DiaryViewEntity](SuperOffice.WebApi.Data.DiaryViewEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DiaryViewEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DiaryViewEntity)\&gt;
 
 DiaryViewEntity
 
@@ -664,7 +664,7 @@ Task<string> GetEMarketingUrlAsync(string language, RequestOptions requestOption
 
 `language` [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -680,7 +680,7 @@ Task<int> GetEmailNumberOfDaysAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -708,7 +708,7 @@ The application name, for instance 'SixWeb'
 
 The instance name for the application, like 'MainInstance'
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -728,7 +728,7 @@ Task<string> GetHelpDispatcherUrlAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -756,13 +756,13 @@ Id of the associate.
 
 Entity table name (contact, person, sale, ...), transformed to and from the numeric table number by the service layer.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LandingPageEntity](SuperOffice.WebApi.Data.LandingPageEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LandingPageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.LandingPageEntity)\&gt;
 
 The landing page for the given associate and entity table.
 
@@ -780,13 +780,13 @@ Task<LandingPageEntity> GetLandingPageEntityAsync(int landingPageEntityId, Reque
 
 The identifier of the LandingPageEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LandingPageEntity](SuperOffice.WebApi.Data.LandingPageEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LandingPageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.LandingPageEntity)\&gt;
 
 LandingPageEntity
 
@@ -800,13 +800,13 @@ Task<WindowPosSize[]> GetMyWindowPosSizesAsync(RequestOptions requestOptions = n
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WindowPosSize](SuperOffice.WebApi.Data.WindowPosSize.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WindowPosSize](/en/api/reference/webapi/SuperOffice.WebApi.Data.WindowPosSize)\[\]\&gt;
 
 Array of window and dialog position and size settings
 
@@ -828,7 +828,7 @@ The application name, for instance 'SixWeb'
 
 The instance name for the application, like 'MainInstance'
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -860,7 +860,7 @@ The instance name for the application, like 'MainInstance'
 
 Page name, must correspond to one of the pages in the Application Configuration
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -880,13 +880,13 @@ Task<StringDictionary> GetRecipeAppliesToMappingsAsync(RequestOptions requestOpt
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\&gt;
 
 Mapping of recipeId and selected appliesToKey
 
@@ -912,7 +912,7 @@ The instance name for the application, like 'MainInstance'
 
 Page name, must correspond to one of the pages in the Application Configuration
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -932,15 +932,15 @@ Task<string> GetScreenConfigurationDeltaAsync(DeltaType deltaType, DeltaState de
 
 #### Parameters
 
-`deltaType` [DeltaType](SuperOffice.WebApi.Data.DeltaType.md)
+`deltaType` [DeltaType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeltaType)
 
 The recipe in json for this DeltaType: System, WebPanel, CustomFields, Custom...
 
-`deltaState` [DeltaState](SuperOffice.WebApi.Data.DeltaState.md)
+`deltaState` [DeltaState](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeltaState)
 
 Draft or published or None
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -960,7 +960,7 @@ Task<string> GetScreenConfigurationDeltasAsync(RequestOptions requestOptions = n
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -980,7 +980,7 @@ Task<string> GetSpfDomainAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1004,13 +1004,13 @@ Task<SystemEventEntity> GetSystemEventEntityAsync(int systemEventEntityId, Reque
 
 The identifier of the SystemEventEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SystemEventEntity](SuperOffice.WebApi.Data.SystemEventEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SystemEventEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SystemEventEntity)\&gt;
 
 SystemEventEntity
 
@@ -1028,13 +1028,13 @@ Task<WindowPosSize> GetWindowPosSizeAsync(int windowPosSizeId, RequestOptions re
 
 The identifier of the WindowPosSize object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WindowPosSize](SuperOffice.WebApi.Data.WindowPosSize.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WindowPosSize](/en/api/reference/webapi/SuperOffice.WebApi.Data.WindowPosSize)\&gt;
 
 WindowPosSize
 
@@ -1052,13 +1052,13 @@ Task<WindowPosSize[]> GetWindowPosSizeListAsync(int[] windowPosSizeIds, RequestO
 
 The identifiers of the WindowPosSize object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WindowPosSize](SuperOffice.WebApi.Data.WindowPosSize.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WindowPosSize](/en/api/reference/webapi/SuperOffice.WebApi.Data.WindowPosSize)\[\]\&gt;
 
 Array of WindowPosSize objects
 
@@ -1076,13 +1076,13 @@ Task<WindowPosSize[]> GetWindowPosSizesOnAssociateIdAsync(int associateId, Reque
 
 Associate id of the Associate/Person owning these window settings
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WindowPosSize](SuperOffice.WebApi.Data.WindowPosSize.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WindowPosSize](/en/api/reference/webapi/SuperOffice.WebApi.Data.WindowPosSize)\[\]\&gt;
 
 Array of window and dialog position and size settings
 
@@ -1100,13 +1100,13 @@ Task<WindowPosSize[]> GetWindowPosSizesOnPersonIdAsync(int personId, RequestOpti
 
 Person id of the associate owning these window settings
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WindowPosSize](SuperOffice.WebApi.Data.WindowPosSize.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WindowPosSize](/en/api/reference/webapi/SuperOffice.WebApi.Data.WindowPosSize)\[\]\&gt;
 
 Array of window and dialog position and size settings
 
@@ -1124,7 +1124,7 @@ Task<string> GetWwwUrlAsync(string client, RequestOptions requestOptions = null)
 
 The name for the client application, like 'CS' or 'SM.web', used for the &lt;clie&gt; variable
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1144,7 +1144,7 @@ Task<string> GetWwwUrlForSMWebAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1164,7 +1164,7 @@ Task RebuildCustomObjectArchivePanelDeltasAsync(RequestOptions requestOptions = 
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1184,7 +1184,7 @@ Task RebuildTaskMenuDeltasAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1204,7 +1204,7 @@ Task RebuildUdefDeltasAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1224,7 +1224,7 @@ Task RebuildWebpanelDeltasAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1244,17 +1244,17 @@ Task<ConfigurableScreenDelta> SaveAndPublishAsync(ConfigurableScreenDelta config
 
 #### Parameters
 
-`configurableScreenDelta` [ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md)
+`configurableScreenDelta` [ConfigurableScreenDelta](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConfigurableScreenDelta)
 
 The ConfigurableScreenDelta draft that is going to be published
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConfigurableScreenDelta](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConfigurableScreenDelta)\&gt;
 
 The newly published version of the ConfigurbleScreenDelta
 
@@ -1268,17 +1268,17 @@ Task<ConfigurableScreenDelta> SaveConfigurableScreenDeltaAsync(ConfigurableScree
 
 #### Parameters
 
-`configurableScreenDelta` [ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md)
+`configurableScreenDelta` [ConfigurableScreenDelta](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConfigurableScreenDelta)
 
 The ConfigurableScreenDelta that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConfigurableScreenDelta](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConfigurableScreenDelta)\&gt;
 
 New or updated ConfigurableScreenDelta
 
@@ -1292,17 +1292,17 @@ Task<DiaryViewEntity> SaveDiaryViewEntityAsync(DiaryViewEntity diaryViewEntity, 
 
 #### Parameters
 
-`diaryViewEntity` [DiaryViewEntity](SuperOffice.WebApi.Data.DiaryViewEntity.md)
+`diaryViewEntity` [DiaryViewEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DiaryViewEntity)
 
 The DiaryViewEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DiaryViewEntity](SuperOffice.WebApi.Data.DiaryViewEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DiaryViewEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DiaryViewEntity)\&gt;
 
 New or updated DiaryViewEntity
 
@@ -1316,17 +1316,17 @@ Task<LandingPageEntity> SaveLandingPageEntityAsync(LandingPageEntity landingPage
 
 #### Parameters
 
-`landingPageEntity` [LandingPageEntity](SuperOffice.WebApi.Data.LandingPageEntity.md)
+`landingPageEntity` [LandingPageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.LandingPageEntity)
 
 The LandingPageEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LandingPageEntity](SuperOffice.WebApi.Data.LandingPageEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LandingPageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.LandingPageEntity)\&gt;
 
 New or updated LandingPageEntity
 
@@ -1348,17 +1348,17 @@ Id of the associate that owns the landing page.
 
 Entity table name identifying which landing page (contact, person, sale, ...).
 
-`tabs` [LandingPageTab](SuperOffice.WebApi.Data.LandingPageTab.md)\[\]
+`tabs` [LandingPageTab](/en/api/reference/webapi/SuperOffice.WebApi.Data.LandingPageTab)\[\]
 
 The complete ordered set of tabs to persist.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LandingPageEntity](SuperOffice.WebApi.Data.LandingPageEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LandingPageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.LandingPageEntity)\&gt;
 
 The updated landing page.
 
@@ -1372,17 +1372,17 @@ Task<SystemEventEntity> SaveSystemEventEntityAsync(SystemEventEntity systemEvent
 
 #### Parameters
 
-`systemEventEntity` [SystemEventEntity](SuperOffice.WebApi.Data.SystemEventEntity.md)
+`systemEventEntity` [SystemEventEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SystemEventEntity)
 
 The SystemEventEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SystemEventEntity](SuperOffice.WebApi.Data.SystemEventEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SystemEventEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SystemEventEntity)\&gt;
 
 New or updated SystemEventEntity
 
@@ -1396,17 +1396,17 @@ Task<WindowPosSize> SaveWindowPosSizeAsync(WindowPosSize windowPosSize, RequestO
 
 #### Parameters
 
-`windowPosSize` [WindowPosSize](SuperOffice.WebApi.Data.WindowPosSize.md)
+`windowPosSize` [WindowPosSize](/en/api/reference/webapi/SuperOffice.WebApi.Data.WindowPosSize)
 
 The item that is saved
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WindowPosSize](SuperOffice.WebApi.Data.WindowPosSize.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WindowPosSize](/en/api/reference/webapi/SuperOffice.WebApi.Data.WindowPosSize)\&gt;
 
 The saved item
 
@@ -1420,17 +1420,17 @@ Task<WindowPosSize[]> SaveWindowPosSizesAsync(WindowPosSize[] windowPosSizes, Re
 
 #### Parameters
 
-`windowPosSizes` [WindowPosSize](SuperOffice.WebApi.Data.WindowPosSize.md)\[\]
+`windowPosSizes` [WindowPosSize](/en/api/reference/webapi/SuperOffice.WebApi.Data.WindowPosSize)\[\]
 
 The items that are saved
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WindowPosSize](SuperOffice.WebApi.Data.WindowPosSize.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WindowPosSize](/en/api/reference/webapi/SuperOffice.WebApi.Data.WindowPosSize)\[\]\&gt;
 
 The saved items
 
@@ -1452,7 +1452,7 @@ The recipeId that will use this apply to type
 
 The type we should use for differencing between delta layout. Like usergroup or project type. Saved in table ConfigurableScreenAppliesTo
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1492,7 +1492,7 @@ Table name of the record being pinned (selection, contact, person, sale, ...).
 
 Id of the record to pin or unpin.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 

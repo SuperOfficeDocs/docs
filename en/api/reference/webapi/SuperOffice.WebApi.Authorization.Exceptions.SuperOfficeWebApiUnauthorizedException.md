@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Authorization_Exceptions_SuperOfficeWebApiUnauthorizedException"></a> Class SuperOfficeWebApiUnauthorizedException
 
-Namespace: [SuperOffice.WebApi.Authorization.Exceptions](SuperOffice.WebApi.Authorization.Exceptions.md)  
+Namespace: [SuperOffice.WebApi.Authorization.Exceptions](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.Exceptions)  
 Assembly: SuperOffice.WebApi.Authorization.dll  
 
 Thrown when auth not accepted. Contains the HTTP error and headers and any body we can read.
@@ -13,8 +13,8 @@ public class SuperOfficeWebApiUnauthorizedException : SuperOfficeWebApiException
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
 [Exception](https://learn.microsoft.com/dotnet/api/system.exception) ← 
-[SuperOfficeWebApiException](SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiException.md) ← 
-[SuperOfficeWebApiUnauthorizedException](SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiUnauthorizedException.md)
+[SuperOfficeWebApiException](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiException) ← 
+[SuperOfficeWebApiUnauthorizedException](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiUnauthorizedException)
 
 #### Implements
 
@@ -22,9 +22,9 @@ public class SuperOfficeWebApiUnauthorizedException : SuperOfficeWebApiException
 
 #### Inherited Members
 
-[SuperOfficeWebApiException.Request](SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiException.md\#SuperOffice\_WebApi\_Authorization\_Exceptions\_SuperOfficeWebApiException\_Request), 
-[SuperOfficeWebApiException.Headers](SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiException.md\#SuperOffice\_WebApi\_Authorization\_Exceptions\_SuperOfficeWebApiException\_Headers), 
-[SuperOfficeWebApiException.Body](SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiException.md\#SuperOffice\_WebApi\_Authorization\_Exceptions\_SuperOfficeWebApiException\_Body), 
+[SuperOfficeWebApiException.Request](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiException#SuperOffice_WebApi_Authorization_Exceptions_SuperOfficeWebApiException_Request), 
+[SuperOfficeWebApiException.Headers](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiException#SuperOffice_WebApi_Authorization_Exceptions_SuperOfficeWebApiException_Headers), 
+[SuperOfficeWebApiException.Body](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiException#SuperOffice_WebApi_Authorization_Exceptions_SuperOfficeWebApiException_Body), 
 [Exception.GetBaseException\(\)](https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception), 
 [Exception.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.exception.tostring), 
 [Exception.GetObjectData\(SerializationInfo, StreamingContext\)](https://learn.microsoft.com/dotnet/api/system.exception.getobjectdata), 

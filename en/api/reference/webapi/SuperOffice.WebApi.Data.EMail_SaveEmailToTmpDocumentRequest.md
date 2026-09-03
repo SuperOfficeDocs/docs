@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_SaveEmailToTmpDocumentRequest"></a> Class EMail\_SaveEmailToTmpDocumentRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_SaveEmailToTmpDocumentRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_SaveEmailToTmpDocumentRequest](SuperOffice.WebApi.Data.EMail\_SaveEmailToTmpDocumentRequest.md)
+[EMail\_SaveEmailToTmpDocumentRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_SaveEmailToTmpDocumentRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public EMailEntity Email { get; set; }
 
 #### Property Value
 
- [EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)
+ [EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)
 
 ### <a id="SuperOffice_WebApi_Data_EMail_SaveEmailToTmpDocumentRequest_FolderId"></a> FolderId
 

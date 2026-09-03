@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CopilotDataSourceEntity"></a> Class CopilotDataSourceEntity
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for CopilotDataSourceEntity.
@@ -13,13 +13,13 @@ public class CopilotDataSourceEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[CopilotDataSourceEntity](SuperOffice.WebApi.Data.CopilotDataSourceEntity.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[CopilotDataSourceEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotDataSourceEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -71,11 +71,11 @@ public CopilotDataSourceType? CopilotDataSourceType { get; set; }
 
 #### Property Value
 
- [CopilotDataSourceType](SuperOffice.WebApi.Data.CopilotDataSourceType.md)?
+ [CopilotDataSourceType](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotDataSourceType)?
 
 #### See Also
 
-[CopilotDataSourceEntity](SuperOffice.WebApi.Data.CopilotDataSourceEntity.md).[CopilotDataSourceType\_String](SuperOffice.WebApi.Data.CopilotDataSourceEntity.md\#SuperOffice\_WebApi\_Data\_CopilotDataSourceEntity\_CopilotDataSourceType\_String)
+[CopilotDataSourceEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotDataSourceEntity).[CopilotDataSourceType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotDataSourceEntity#SuperOffice_WebApi_Data_CopilotDataSourceEntity_CopilotDataSourceType_String)
 
 ### <a id="SuperOffice_WebApi_Data_CopilotDataSourceEntity_CopilotDataSourceType_String"></a> CopilotDataSourceType\_String
 
@@ -93,7 +93,7 @@ public string CopilotDataSourceType_String { get; set; }
 
 #### See Also
 
-[CopilotDataSourceEntity](SuperOffice.WebApi.Data.CopilotDataSourceEntity.md).[CopilotDataSourceType](SuperOffice.WebApi.Data.CopilotDataSourceEntity.md\#SuperOffice\_WebApi\_Data\_CopilotDataSourceEntity\_CopilotDataSourceType)
+[CopilotDataSourceEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotDataSourceEntity).[CopilotDataSourceType](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotDataSourceEntity#SuperOffice_WebApi_Data_CopilotDataSourceEntity_CopilotDataSourceType)
 
 ### <a id="SuperOffice_WebApi_Data_CopilotDataSourceEntity_CopilotId"></a> CopilotId
 
@@ -141,9 +141,9 @@ public virtual CopilotDataSourceSetting[] Settings { get; set; }
 
 #### Property Value
 
- [CopilotDataSourceSetting](SuperOffice.WebApi.Data.CopilotDataSourceSetting.md)\[\]
+ [CopilotDataSourceSetting](/en/api/reference/webapi/SuperOffice.WebApi.Data.CopilotDataSourceSetting)\[\]
 
 ## See Also
 
-[AIAgent](SuperOffice.WebApi.Agents.AIAgent.md)
+[AIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AIAgent)
 

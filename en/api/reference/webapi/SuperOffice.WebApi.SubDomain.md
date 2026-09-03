@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_SubDomain"></a> Class SubDomain
 
-Namespace: [SuperOffice.WebApi](SuperOffice.WebApi.md)  
+Namespace: [SuperOffice.WebApi](/en/api/reference/webapi/SuperOffice.WebApi)  
 Assembly: SuperOffice.WebApi.dll  
 
 Development("sod") / Stage("qoonline") / Production("online")
@@ -15,7 +15,7 @@ public static class SubDomain
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[SubDomain](SuperOffice.WebApi.SubDomain.md)
+[SubDomain](/en/api/reference/webapi/SuperOffice.WebApi.SubDomain)
 
 #### Inherited Members
 

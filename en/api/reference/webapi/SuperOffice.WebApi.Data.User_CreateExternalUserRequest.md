@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_CreateExternalUserRequest"></a> Class User\_CreateExternalUserRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_CreateExternalUserRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_CreateExternalUserRequest](SuperOffice.WebApi.Data.User\_CreateExternalUserRequest.md)
+[User\_CreateExternalUserRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_CreateExternalUserRequest)
 
 #### Inherited Members
 

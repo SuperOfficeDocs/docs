@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_StructuredAddress"></a> Class StructuredAddress
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for StructuredAddress.
@@ -13,7 +13,7 @@ public class StructuredAddress
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[StructuredAddress](SuperOffice.WebApi.Data.StructuredAddress.md)
+[StructuredAddress](/en/api/reference/webapi/SuperOffice.WebApi.Data.StructuredAddress)
 
 #### Inherited Members
 
@@ -85,11 +85,11 @@ public AddressType? AtypeIdx { get; set; }
 
 #### Property Value
 
- [AddressType](SuperOffice.WebApi.Data.AddressType.md)?
+ [AddressType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AddressType)?
 
 #### See Also
 
-[StructuredAddress](SuperOffice.WebApi.Data.StructuredAddress.md).[AtypeIdx\_String](SuperOffice.WebApi.Data.StructuredAddress.md\#SuperOffice\_WebApi\_Data\_StructuredAddress\_AtypeIdx\_String)
+[StructuredAddress](/en/api/reference/webapi/SuperOffice.WebApi.Data.StructuredAddress).[AtypeIdx\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.StructuredAddress#SuperOffice_WebApi_Data_StructuredAddress_AtypeIdx_String)
 
 ### <a id="SuperOffice_WebApi_Data_StructuredAddress_AtypeIdx_String"></a> AtypeIdx\_String
 
@@ -107,7 +107,7 @@ public string AtypeIdx_String { get; set; }
 
 #### See Also
 
-[StructuredAddress](SuperOffice.WebApi.Data.StructuredAddress.md).[AtypeIdx](SuperOffice.WebApi.Data.StructuredAddress.md\#SuperOffice\_WebApi\_Data\_StructuredAddress\_AtypeIdx)
+[StructuredAddress](/en/api/reference/webapi/SuperOffice.WebApi.Data.StructuredAddress).[AtypeIdx](/en/api/reference/webapi/SuperOffice.WebApi.Data.StructuredAddress#SuperOffice_WebApi_Data_StructuredAddress_AtypeIdx)
 
 ### <a id="SuperOffice_WebApi_Data_StructuredAddress_City"></a> City
 

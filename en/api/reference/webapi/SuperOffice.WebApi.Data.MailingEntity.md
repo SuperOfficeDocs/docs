@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_MailingEntity"></a> Class MailingEntity
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for MailingEntity.
@@ -13,13 +13,13 @@ public class MailingEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[MailingEntity](SuperOffice.WebApi.Data.MailingEntity.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[MailingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.MailingEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -275,11 +275,11 @@ public ShipmentStatus? Status { get; set; }
 
 #### Property Value
 
- [ShipmentStatus](SuperOffice.WebApi.Data.ShipmentStatus.md)?
+ [ShipmentStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ShipmentStatus)?
 
 #### See Also
 
-[MailingEntity](SuperOffice.WebApi.Data.MailingEntity.md).[Status\_String](SuperOffice.WebApi.Data.MailingEntity.md\#SuperOffice\_WebApi\_Data\_MailingEntity\_Status\_String)
+[MailingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.MailingEntity).[Status\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.MailingEntity#SuperOffice_WebApi_Data_MailingEntity_Status_String)
 
 ### <a id="SuperOffice_WebApi_Data_MailingEntity_Status_String"></a> Status\_String
 
@@ -297,7 +297,7 @@ public string Status_String { get; set; }
 
 #### See Also
 
-[MailingEntity](SuperOffice.WebApi.Data.MailingEntity.md).[Status](SuperOffice.WebApi.Data.MailingEntity.md\#SuperOffice\_WebApi\_Data\_MailingEntity\_Status)
+[MailingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.MailingEntity).[Status](/en/api/reference/webapi/SuperOffice.WebApi.Data.MailingEntity#SuperOffice_WebApi_Data_MailingEntity_Status)
 
 ### <a id="SuperOffice_WebApi_Data_MailingEntity_Updated"></a> Updated
 
@@ -337,5 +337,5 @@ public virtual short UpdatedCount { get; set; }
 
 ## See Also
 
-[MarketingAgent](SuperOffice.WebApi.Agents.MarketingAgent.md)
+[MarketingAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.MarketingAgent)
 

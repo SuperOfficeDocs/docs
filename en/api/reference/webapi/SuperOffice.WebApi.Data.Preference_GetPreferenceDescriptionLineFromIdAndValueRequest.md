@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Preference_GetPreferenceDescriptionLineFromIdAndValueRequest"></a> Class Preference\_GetPreferenceDescriptionLineFromIdAndValueRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Preference_GetPreferenceDescriptionLineFromIdAndValueRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Preference\_GetPreferenceDescriptionLineFromIdAndValueRequest](SuperOffice.WebApi.Data.Preference\_GetPreferenceDescriptionLineFromIdAndValueRequest.md)
+[Preference\_GetPreferenceDescriptionLineFromIdAndValueRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Preference_GetPreferenceDescriptionLineFromIdAndValueRequest)
 
 #### Inherited Members
 

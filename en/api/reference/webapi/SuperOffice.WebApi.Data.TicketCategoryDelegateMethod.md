@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TicketCategoryDelegateMethod"></a> Enum TicketCategoryDelegateMethod
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 The delegate method used for request assigned to this category

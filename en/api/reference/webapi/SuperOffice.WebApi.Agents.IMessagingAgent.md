@@ -1,6 +1,6 @@
 # Interface IMessagingAgent {#SuperOffice_WebApi_Agents_IMessagingAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 SMS and other external messaging systems
@@ -13,7 +13,7 @@ public interface IMessagingAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -30,9 +30,9 @@ Task CreateMessageAsync(IncomingMessage incomingMessage, RequestOptions requestO
 
 #### Parameters
 
-`incomingMessage` [IncomingMessage](SuperOffice.WebApi.Data.IncomingMessage.md)
+`incomingMessage` [IncomingMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.IncomingMessage)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -56,13 +56,13 @@ Task<MessageDeliveryStatus[]> GetDeliveryStatusAsync(int[] messagingIds, Request
 
 Array of messaging ids.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MessageDeliveryStatus](SuperOffice.WebApi.Data.MessageDeliveryStatus.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MessageDeliveryStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.MessageDeliveryStatus)\[\]\&gt;
 
 ### GetPluginsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IMessagingAgent_GetPluginsAsync_SuperOffice_WebApi_RequestOptions_}
 
@@ -75,13 +75,13 @@ Task<ProviderInfo[]> GetPluginsAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProviderInfo](SuperOffice.WebApi.Data.ProviderInfo.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProviderInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProviderInfo)\[\]\&gt;
 
 ### SendMessagesAsync\(string, OutgoingMessage\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IMessagingAgent_SendMessagesAsync_System_String_SuperOffice_WebApi_Data_OutgoingMessage___SuperOffice_WebApi_RequestOptions_}
 
@@ -99,17 +99,17 @@ Task<MessageDeliveryStatus[]> SendMessagesAsync(string plugin, OutgoingMessage[]
 
 Name of plugin to use.
 
-`outgoingMessages` [OutgoingMessage](SuperOffice.WebApi.Data.OutgoingMessage.md)\[\]
+`outgoingMessages` [OutgoingMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.OutgoingMessage)\[\]
 
 Array of outgoing messages you want to send.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MessageDeliveryStatus](SuperOffice.WebApi.Data.MessageDeliveryStatus.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MessageDeliveryStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.MessageDeliveryStatus)\[\]\&gt;
 
 Array of MessageDeliveryStatus. Length of the array is equal to the number of outgoing messages.
 
@@ -129,21 +129,21 @@ Task<MessageDeliveryStatus[]> SendMessagesWithConfigAsync(string plugin, Outgoin
 
 Name of plugin to use.
 
-`outgoingMessages` [OutgoingMessage](SuperOffice.WebApi.Data.OutgoingMessage.md)\[\]
+`outgoingMessages` [OutgoingMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.OutgoingMessage)\[\]
 
 Array of outgoing messages you want to send.
 
-`config` [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+`config` [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 Config values used by the plugin.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MessageDeliveryStatus](SuperOffice.WebApi.Data.MessageDeliveryStatus.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MessageDeliveryStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.MessageDeliveryStatus)\[\]\&gt;
 
 Array of MessageDeliveryStatus. Length of the array is equal to the number of outgoing messages.
 
@@ -175,7 +175,7 @@ Delivery status
 
 String describing delivery status.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 

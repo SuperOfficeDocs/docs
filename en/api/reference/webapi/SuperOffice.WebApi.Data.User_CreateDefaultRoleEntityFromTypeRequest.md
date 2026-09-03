@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_CreateDefaultRoleEntityFromTypeRequest"></a> Class User\_CreateDefaultRoleEntityFromTypeRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_CreateDefaultRoleEntityFromTypeRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_CreateDefaultRoleEntityFromTypeRequest](SuperOffice.WebApi.Data.User\_CreateDefaultRoleEntityFromTypeRequest.md)
+[User\_CreateDefaultRoleEntityFromTypeRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_CreateDefaultRoleEntityFromTypeRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public RoleType Type { get; set; }
 
 #### Property Value
 
- [RoleType](SuperOffice.WebApi.Data.RoleType.md)
+ [RoleType](/en/api/reference/webapi/SuperOffice.WebApi.Data.RoleType)
 

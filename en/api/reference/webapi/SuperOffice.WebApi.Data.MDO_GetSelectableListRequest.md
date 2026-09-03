@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_MDO_GetSelectableListRequest"></a> Class MDO\_GetSelectableListRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class MDO_GetSelectableListRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[MDO\_GetSelectableListRequest](SuperOffice.WebApi.Data.MDO\_GetSelectableListRequest.md)
+[MDO\_GetSelectableListRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.MDO_GetSelectableListRequest)
 
 #### Inherited Members
 
