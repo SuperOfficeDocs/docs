@@ -11296,20 +11296,8 @@
     "destination": "/en/api/search/selection/entity/add-member-to-static-selection-entities"
   },
   {
-    "source": "/en/api/search/selection/osql",
-    "destination": "/en/api/search/selection/osql/add-member-to-static-selection-osql"
-  },
-  {
-    "source": "/en/api/search/selection/osql.html",
-    "destination": "/en/api/search/selection/osql/add-member-to-static-selection-osql"
-  },
-  {
-    "source": "/en/api/search/selection/osql/add-member-to-static-selection-osql.html",
-    "destination": "/en/api/search/selection/osql/add-member-to-static-selection-osql"
-  },
-  {
-    "source": "/en/api/search/selection/osql/index",
-    "destination": "/en/api/search/selection/osql/add-member-to-static-selection-osql"
+    "source": "/en/api/search/selection/osql*",
+    "destination": "https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/search/selection/osql/add-member-to-static-selection-osql.md"
   },
   {
     "source": "/en/api/search/selection/services",
