@@ -33,7 +33,7 @@ Gets the discount of the current InvoiceEntry object in percent.
 String getDiscount()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The discount in percent as a String-representation of a number with 2 decimals accuracy.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The discount in percent as a String-representation of a number with 2 decimals accuracy.
 
 <Note>
 The save-function calculates the discount in percent and money. So if the discount is set in money (setDiscountMoney(Float)), you have to save the entry before getting the corresponding value in percent.
@@ -47,7 +47,7 @@ Gets the discount of the current InvoiceEntry object in money.
 String getDiscountMoney()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The discount in money as a String-representation of a number with 2 decimals accuracy.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The discount in money as a String-representation of a number with 2 decimals accuracy.
 
 <Note>
 The save-function calculates the discount in percent and money. So if the discount is set in percent (setDiscount()), you have to save the entry before getting the corresponding value in money with this function.
@@ -61,7 +61,7 @@ Returns the price per unit of the current InvoiceEntry object.
 String getPricePrUnit()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Price per unit as a String-representation of a number with 2 decimals accuracy.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Price per unit as a String-representation of a number with 2 decimals accuracy.
 
 ## getValue(String)
 
@@ -71,7 +71,7 @@ Gets the value of the specified field.
 String getValue(String field)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the field.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The value of the field.
 
 <Note>
 Available fields:
@@ -94,7 +94,7 @@ Loads an existing InvoiceEntry object.
 Bool load(Integer id)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 ## save()
 
@@ -104,7 +104,7 @@ Saves the existing InvoiceEntry object and returns the ID.
 Integer save()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the saved InvoiceEntry object.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the saved InvoiceEntry object.
 
 ## setDiscount(Float)
 
@@ -114,7 +114,7 @@ Sets the discount of the current InvoiceEntry object with the given percent.
 Void setDiscount(Float percent)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 If discount is set in both percent and money, the save-function use the money-version.
@@ -128,7 +128,7 @@ Sets the discount of the current InvoiceEntry object with the given money.
 Void setDiscountMoney(Float money)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 If both setDiscount() and this function has been used, the save-function uses the discount in money.
@@ -142,7 +142,7 @@ Sets the price per unit for the current InvoiceEntry object with the given price
 Void SetPricePrUnit(Float price)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## setValue(String,String)
 
@@ -152,7 +152,7 @@ Sets a field of the current InvoiceEntry object with the given value.
 Void setValue(String field, String value)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Available fields:

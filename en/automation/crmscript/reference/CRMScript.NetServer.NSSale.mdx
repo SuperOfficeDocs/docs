@@ -29,7 +29,7 @@ Initializes a new instance of the NSSale class.
 Integer GetActiveErpLinks()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of active ERP links.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The number of active ERP links.
 
 **Example:**
 
@@ -44,7 +44,7 @@ Integer activeErpLinks = thing.GetActiveErpLinks();
 Float GetAmount()
 ```
 
-**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Total sale amount.
+**Returns:** [CRMScript.Global.Float](/en/automation/crmscript/reference/CRMScript.Global.Float) - Total sale amount.
 
 **Example:**
 
@@ -59,7 +59,7 @@ Float amount = thing.GetAmount();
 String GetAssociateFullName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The sale's owner.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The sale's owner.
 
 **Example:**
 
@@ -74,7 +74,7 @@ String associateFullName = thing.GetAssociateFullName();
 Integer GetAssociateId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The sale's owner Id.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The sale's owner Id.
 
 **Example:**
 
@@ -89,7 +89,7 @@ Integer associateId = thing.GetAssociateId();
 Integer GetCompleted()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The Sale completed state.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The Sale completed state.
 
 <Note>
 The completed state is either Started or Completed. NotStarted is treated as Started. The value maps to the Done database field.
@@ -108,7 +108,7 @@ Integer completed = thing.GetCompleted();
 Integer GetContactId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Optional contact reference.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Optional contact reference.
 
 **Example:**
 
@@ -123,7 +123,7 @@ Integer contactId = thing.GetContactId();
 String GetContactName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Contact name.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Contact name.
 
 **Example:**
 
@@ -138,7 +138,7 @@ String contactName = thing.GetContactName();
 String GetCurrency()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - NSCurrency the sale was made in.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - NSCurrency the sale was made in.
 
 **Example:**
 
@@ -153,7 +153,7 @@ String currency = thing.GetCurrency();
 String GetDescription()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The sales description.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The sales description.
 
 **Example:**
 
@@ -168,7 +168,7 @@ String description = thing.GetDescription();
 Float GetEarning()
 ```
 
-**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Earning on sale.
+**Returns:** [CRMScript.Global.Float](/en/automation/crmscript/reference/CRMScript.Global.Float) - Earning on sale.
 
 **Example:**
 
@@ -183,7 +183,7 @@ Float earning = thing.GetEarning();
 Float GetEarningPercent()
 ```
 
-**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Earning as percent of total.
+**Returns:** [CRMScript.Global.Float](/en/automation/crmscript/reference/CRMScript.Global.Float) - Earning as percent of total.
 
 **Example:**
 
@@ -198,7 +198,7 @@ Float earningPercent = thing.GetEarningPercent();
 DateTime GetNextDueDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Next due date, this is a de-normalization of 'closest future activity date, or most recent if no future activities'.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Next due date, this is a de-normalization of 'closest future activity date, or most recent if no future activities'.
 
 <Note>
 Maintained by the system, but very convenient for searching.
@@ -217,7 +217,7 @@ DateTime nextDueDate = thing.GetNextDueDate();
 String GetNumber()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Alphanumeric user field.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Alphanumeric user field.
 
 **Example:**
 
@@ -232,7 +232,7 @@ String number = thing.GetNumber();
 String GetPersonFullName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the person this sale belongs to.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The name of the person this sale belongs to.
 
 **Example:**
 
@@ -247,7 +247,7 @@ String personFullName = thing.GetPersonFullName();
 Integer GetPersonId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The sale's contact persons Id.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The sale's contact persons Id.
 
 **Example:**
 
@@ -262,7 +262,7 @@ Integer personId = thing.GetPersonId();
 Integer GetProbability()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Actual probability, may differ from the one in the list.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Actual probability, may differ from the one in the list.
 
 **Example:**
 
@@ -277,7 +277,7 @@ Integer probability = thing.GetProbability();
 Integer GetProjectId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Optional project reference.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Optional project reference.
 
 **Example:**
 
@@ -292,7 +292,7 @@ Integer projectId = thing.GetProjectId();
 String GetProjectName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Project name.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Project name.
 
 **Example:**
 
@@ -307,7 +307,7 @@ String projectName = thing.GetProjectName();
 DateTime GetSaleDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - (expected / lost / won) sales date.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - (expected / lost / won) sales date.
 
 **Example:**
 
@@ -322,7 +322,7 @@ DateTime saleDate = thing.GetSaleDate();
 Integer GetSaleId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Primary key.
 
 **Example:**
 
@@ -337,7 +337,7 @@ Integer saleId = thing.GetSaleId();
 Integer GetSaleTypeId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The sale's type Id.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The sale's type Id.
 
 **Example:**
 
@@ -352,7 +352,7 @@ Integer saleTypeId = thing.GetSaleTypeId();
 String GetSaleTypeName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The sale's type name.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The sale's type name.
 
 **Example:**
 
@@ -367,7 +367,7 @@ String saleTypeName = thing.GetSaleTypeName();
 Integer GetStatus()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The sale's status, indicating wether the sale is open, sold or lost. See &lt;xref href="CRMScript.NetServer.SaleStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The sale's status, indicating wether the sale is open, sold or lost. See &lt;xref href="CRMScript.NetServer.SaleStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
 
 **Example:**
 
@@ -382,7 +382,7 @@ Integer status = thing.GetStatus();
 String GetTitle()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Sale heading (short description?).
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Sale heading (short description?).
 
 **Example:**
 
@@ -397,7 +397,7 @@ String title = thing.GetTitle();
 Float GetWeightedAmount()
 ```
 
-**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The weighted amount ( amount *  probability / 100).
+**Returns:** [CRMScript.Global.Float](/en/automation/crmscript/reference/CRMScript.Global.Float) - The weighted amount ( amount *  probability / 100).
 
 **Example:**
 
@@ -412,7 +412,7 @@ Float weightedAmount = thing.GetWeightedAmount();
 Void SetActiveErpLinks(Integer activeErpLinks)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -428,7 +428,7 @@ thing.SetActiveErpLinks(activeErpLinks);
 Void SetAmount(Float amount)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -444,7 +444,7 @@ thing.SetAmount(amount);
 Void SetAssociateFullName(String associateFullName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -460,7 +460,7 @@ thing.SetAssociateFullName(associateFullName);
 Void SetAssociateId(Integer associateId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -476,7 +476,7 @@ thing.SetAssociateId(associateId);
 Void SetCompleted(Integer completed)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 The completed state is either Started or Completed. NotStarted is treated as Started. The value maps to the Done database field.
@@ -496,7 +496,7 @@ thing.SetCompleted(completed);
 Void SetContactId(Integer contactId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -512,7 +512,7 @@ thing.SetContactId(contactId);
 Void SetContactName(String contactName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -528,7 +528,7 @@ thing.SetContactName(contactName);
 Void SetCurrency(String currency)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -544,7 +544,7 @@ thing.SetCurrency(currency);
 Void SetDescription(String description)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -560,7 +560,7 @@ thing.SetDescription(description);
 Void SetEarning(Float earning)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -576,7 +576,7 @@ thing.SetEarning(earning);
 Void SetEarningPercent(Float earningPercent)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -594,7 +594,7 @@ Maintained by the system, but very convenient for searching.
 Void SetNextDueDate(DateTime nextDueDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -612,7 +612,7 @@ Alphanumeric user field
 Void SetNumber(String number)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -628,7 +628,7 @@ thing.SetNumber(number);
 Void SetPersonFullName(String personFullName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -644,7 +644,7 @@ thing.SetPersonFullName(personFullName);
 Void SetPersonId(Integer personId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -660,7 +660,7 @@ thing.SetPersonId(personId);
 Void SetProbability(Integer probability)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -676,7 +676,7 @@ thing.SetProbability(probability);
 Void SetProjectId(Integer projectId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -692,7 +692,7 @@ thing.SetProjectId(projectId);
 Void SetProjectName(String projectName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -708,7 +708,7 @@ thing.SetProjectName(projectName);
 Void SetSaleDate(DateTime saleDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -724,7 +724,7 @@ thing.SetSaleDate(saleDate);
 Void SetSaleId(Integer saleId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -740,7 +740,7 @@ thing.SetSaleId(saleId);
 Void SetSaleTypeId(Integer saleTypeId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -756,7 +756,7 @@ thing.SetSaleTypeId(saleTypeId);
 Void SetSaleTypeName(String saleTypeName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -772,7 +772,7 @@ thing.SetSaleTypeName(saleTypeName);
 Void SetStatus(Integer status)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -788,7 +788,7 @@ thing.SetStatus(status);
 Void SetTitle(String title)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -804,7 +804,7 @@ thing.SetTitle(title);
 Void SetWeightedAmount(Float weightedAmount)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

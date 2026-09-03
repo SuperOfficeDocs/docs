@@ -33,7 +33,7 @@ Saves a new license to the database.
 NSLicenseResult ActivateLicenseInfo(NSExtendedLicenseInfo newLicense)
 ```
 
-**Returns:** [CRMScript.NetServer.NSLicenseResult](CRMScript.NetServer.NSLicenseResult)
+**Returns:** [CRMScript.NetServer.NSLicenseResult](/en/automation/crmscript/reference/CRMScript.NetServer.NSLicenseResult)
 
 ## AddLicenseFromFile(String)
 
@@ -43,7 +43,7 @@ Loads and activates a new license from file/string if the new license is valid.
 NSExtendedLicenseInfo AddLicenseFromFile(String fileContent)
 ```
 
-**Returns:** [CRMScript.NetServer.NSExtendedLicenseInfo](CRMScript.NetServer.NSExtendedLicenseInfo)
+**Returns:** [CRMScript.NetServer.NSExtendedLicenseInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSExtendedLicenseInfo)
 
 **Example:**
 
@@ -61,7 +61,7 @@ Assigns third party licenses
 NSModuleLicenseLink[] AssignThirdPartyLicenses(Integer associateId, String moduleOwner, String[] moduleLicenseNames)
 ```
 
-**Returns:** [CRMScript.NetServer.NSModuleLicenseLink](CRMScript.NetServer.NSModuleLicenseLink)[]
+**Returns:** [CRMScript.NetServer.NSModuleLicenseLink](/en/automation/crmscript/reference/CRMScript.NetServer.NSModuleLicenseLink)[]
 
 **Example:**
 
@@ -81,7 +81,7 @@ Changes the new serial number for the installation. Requests a new license from 
 NSLicenseResult ChangeSerialNumber(String newCompanyName, String newSerialNumber)
 ```
 
-**Returns:** [CRMScript.NetServer.NSLicenseResult](CRMScript.NetServer.NSLicenseResult)
+**Returns:** [CRMScript.NetServer.NSLicenseResult](/en/automation/crmscript/reference/CRMScript.NetServer.NSLicenseResult)
 
 **Example:**
 
@@ -100,7 +100,7 @@ Gets all licenses, with usage, from all module owners as they are stored in the 
 NSExtendedLicenseInfo[] GetLicenseForAllOwnersFromDB()
 ```
 
-**Returns:** [CRMScript.NetServer.NSExtendedLicenseInfo](CRMScript.NetServer.NSExtendedLicenseInfo)[]
+**Returns:** [CRMScript.NetServer.NSExtendedLicenseInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSExtendedLicenseInfo)[]
 
 ## GetLicenseFromDB(String)
 
@@ -110,7 +110,7 @@ Gets license, with usage, as it is stored in the database for one particular mod
 NSExtendedLicenseInfo GetLicenseFromDB(String ownerName)
 ```
 
-**Returns:** [CRMScript.NetServer.NSExtendedLicenseInfo](CRMScript.NetServer.NSExtendedLicenseInfo)
+**Returns:** [CRMScript.NetServer.NSExtendedLicenseInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSExtendedLicenseInfo)
 
 **Example:**
 
@@ -128,7 +128,7 @@ Loads a new license from file
 NSExtendedLicenseInfo GetLicenseFromFile(String fileContent)
 ```
 
-**Returns:** [CRMScript.NetServer.NSExtendedLicenseInfo](CRMScript.NetServer.NSExtendedLicenseInfo)
+**Returns:** [CRMScript.NetServer.NSExtendedLicenseInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSExtendedLicenseInfo)
 
 ## GetLicenseFromLicenseServer(String)
 
@@ -136,7 +136,7 @@ NSExtendedLicenseInfo GetLicenseFromFile(String fileContent)
 NSExtendedLicenseInfo GetLicenseFromLicenseServer(String ownerName)
 ```
 
-**Returns:** [CRMScript.NetServer.NSExtendedLicenseInfo](CRMScript.NetServer.NSExtendedLicenseInfo)
+**Returns:** [CRMScript.NetServer.NSExtendedLicenseInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSExtendedLicenseInfo)
 
 ## GetLicenseStatusFromLicenseServer(String)
 
@@ -146,7 +146,7 @@ Gets license information from the license server for a particular module owner.
 NSCheckLicenseStatusResult GetLicenseStatusFromLicenseServer(String ownerName)
 ```
 
-**Returns:** [CRMScript.NetServer.NSCheckLicenseStatusResult](CRMScript.NetServer.NSCheckLicenseStatusResult)
+**Returns:** [CRMScript.NetServer.NSCheckLicenseStatusResult](/en/automation/crmscript/reference/CRMScript.NetServer.NSCheckLicenseStatusResult)
 
 **Example:**
 
@@ -164,7 +164,7 @@ Gets license information for one particular license module.
 NSModuleLicense GetModuleLicenseFromDB(String ownerName, String moduleName)
 ```
 
-**Returns:** [CRMScript.NetServer.NSModuleLicense](CRMScript.NetServer.NSModuleLicense)
+**Returns:** [CRMScript.NetServer.NSModuleLicense](/en/automation/crmscript/reference/CRMScript.NetServer.NSModuleLicense)
 
 **Example:**
 
@@ -183,7 +183,7 @@ Gets details about a license from the license server.
 String GetModuleLicenseHistoryFromLicenseServer(NSExtendedLicenseInfo licenseInfo, NSExtendedModuleLicense moduleLicense)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -202,7 +202,7 @@ Obtains information about satellite module licenses
 NSLicenseOwner[] GetSatelliteLicenses(Integer satelliteId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSLicenseOwner](CRMScript.NetServer.NSLicenseOwner)[]
+**Returns:** [CRMScript.NetServer.NSLicenseOwner](/en/automation/crmscript/reference/CRMScript.NetServer.NSLicenseOwner)[]
 
 **Example:**
 
@@ -220,7 +220,7 @@ Gets the shop URL for the specified module owner.
 String GetShopUrl(String ownerName)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 <Note>
 This can be used to redirect user to the web shop.
@@ -242,7 +242,7 @@ Gets license assignments for an associate for licenses belonging to an other mod
 NSModuleLicenseLink[] GetThirdPartyLicenseAssignments(Integer associateId, String moduleOwner)
 ```
 
-**Returns:** [CRMScript.NetServer.NSModuleLicenseLink](CRMScript.NetServer.NSModuleLicenseLink)[]
+**Returns:** [CRMScript.NetServer.NSModuleLicenseLink](/en/automation/crmscript/reference/CRMScript.NetServer.NSModuleLicenseLink)[]
 
 **Example:**
 
@@ -261,7 +261,7 @@ Obtains information about associate module licenses
 NSLicenseOwner[] GetUserLicenses(Integer associateId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSLicenseOwner](CRMScript.NetServer.NSLicenseOwner)[]
+**Returns:** [CRMScript.NetServer.NSLicenseOwner](/en/automation/crmscript/reference/CRMScript.NetServer.NSLicenseOwner)[]
 
 **Example:**
 
@@ -279,7 +279,7 @@ Gets all licenses in an NSMDOListItem structure.
 NSSelectableMDOListItem[] GetUserLicensesMDOList()
 ```
 
-**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[]
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](/en/automation/crmscript/reference/CRMScript.NetServer.NSSelectableMDOListItem)[]
 
 **Example:**
 
@@ -296,7 +296,7 @@ Removes the license from a particular module owner from the database.
 NSLicenseResult RemoveLicenseFromDB(String moduleOwner)
 ```
 
-**Returns:** [CRMScript.NetServer.NSLicenseResult](CRMScript.NetServer.NSLicenseResult)
+**Returns:** [CRMScript.NetServer.NSLicenseResult](/en/automation/crmscript/reference/CRMScript.NetServer.NSLicenseResult)
 
 <Note>
 It is not permitted to remove licenses from SuperOffice
@@ -310,7 +310,7 @@ Unassigns (removes) third-party licenses
 NSModuleLicenseLink[] UnassignThirdPartyLicenses(Integer associateId, String moduleOwner, String[] moduleLicenseNames)
 ```
 
-**Returns:** [CRMScript.NetServer.NSModuleLicenseLink](CRMScript.NetServer.NSModuleLicenseLink)[]
+**Returns:** [CRMScript.NetServer.NSModuleLicenseLink](/en/automation/crmscript/reference/CRMScript.NetServer.NSModuleLicenseLink)[]
 
 **Example:**
 
@@ -330,4 +330,4 @@ Validates that a license is consistent.
 NSLicenseResult ValidateLicenseInfo(NSExtendedLicenseInfo licenseInfo)
 ```
 
-**Returns:** [CRMScript.NetServer.NSLicenseResult](CRMScript.NetServer.NSLicenseResult)
+**Returns:** [CRMScript.NetServer.NSLicenseResult](/en/automation/crmscript/reference/CRMScript.NetServer.NSLicenseResult)

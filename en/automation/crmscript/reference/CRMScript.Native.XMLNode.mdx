@@ -41,7 +41,7 @@ Creates a string containing the XMLNode as a formatted string. Child nodes are a
 String toString(Integer indent)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 ## toJSON(Integer)
 
@@ -51,7 +51,7 @@ Creates a string containing XML nodes formatted as a JSON document. Child nodes 
 String toJSON(Integer indent)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - XMLNodes converted to JSON.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - XMLNodes converted to JSON.
 
 <Note>
 Valid types: object, array, string, number, bool, and null.
@@ -81,7 +81,7 @@ Add one node as a child node of the current node.
 Void addChild(XMLNode node)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -103,7 +103,7 @@ Returns an array of the current node's children.
 XMLNode[] getChildren()
 ```
 
-**Returns:** [CRMScript.Native.XMLNode](CRMScript.Native.XMLNode)[] - Returns an array of the current node's children.
+**Returns:** [CRMScript.Native.XMLNode](/en/automation/crmscript/reference/CRMScript.Native.XMLNode)[] - Returns an array of the current node's children.
 
 ## setChildren(XMLNode[])
 
@@ -113,7 +113,7 @@ Sets an array of XMLNodes as the children of the current node.
 Void setChildren(XMLNode[] children)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -141,7 +141,7 @@ Gets the name of the XML tag.
 String getName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the XML tag.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The name of the XML tag.
 
 **Example:**
 
@@ -160,7 +160,7 @@ Sets the tag name of the node.
 Void setName(String name)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -179,7 +179,7 @@ Gets a parameter (attribute) from the node with a given name.
 String getParameter(String name)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -198,7 +198,7 @@ Sets a parameter with name and value. A node can have any number of parameters b
 Void setParameter(String name, String value)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -217,7 +217,7 @@ Gets the text between two tags. For example, &gt;TAG&gt;Returns this text&gt;/TA
 String getText()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -237,7 +237,7 @@ Sets the text between 2 tags.
 Void setText(String text)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -257,7 +257,7 @@ This function will return the value for the given path. The path should be a dot
 String getValueFromPath(String path)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value for the given path.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The value for the given path.
 
 <Note>
 If your path does not lead to a node, you will get a String with a null value back (can be checked with isNull()).
@@ -277,7 +277,7 @@ This function will return the XMLNode for the given path. The path should be a d
 XMLNode getNodeFromPath(String path)
 ```
 
-**Returns:** [CRMScript.Global.XMLNode](CRMScript.Global.XMLNode) - The Node for the given path.
+**Returns:** [CRMScript.Native.XMLNode](/en/automation/crmscript/reference/CRMScript.Native.XMLNode) - The Node for the given path.
 
 <Note>
 If your path does not lead to a node, you will get an empty XMLnode back.

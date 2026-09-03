@@ -128,7 +128,7 @@ items:
   syntax:
     content: NSWorkflowGoalType GetGoalType()
     return:
-      type: CRMScript.NetServer.NSWorkflowGoalType
+      type: CRMScript.NetServer.WorkflowGoalType
       description: "Goal type."
 
 - uid: CRMScript.NetServer.NSWorkflowGoal.SetGoalType(NSWorkflowGoalType)
@@ -147,7 +147,7 @@ items:
     content: Void SetGoalType(NSWorkflowGoalType goalType)
     parameters:
     - id: goalType
-      type: CRMScript.NetServer.NSWorkflowGoalType
+      type: CRMScript.NetServer.WorkflowGoalType
       description: "The goal type to set."
     return:
       type: CRMScript.Global.Void
@@ -204,12 +204,12 @@ references:
   name: Integer
   nameWithType: Integer
   fullName: CRMScript.Global.Integer
-- uid: CRMScript.NetServer.NSWorkflowGoalType
-  commentId: T:CRMScript.NetServer.NSWorkflowGoalType
+- uid: CRMScript.NetServer.WorkflowGoalType
+  commentId: T:CRMScript.NetServer.WorkflowGoalType
   isExternal: true
   name: NSWorkflowGoalType
   nameWithType: NSWorkflowGoalType
-  fullName: CRMScript.NetServer.NSWorkflowGoalType
+  fullName: CRMScript.NetServer.WorkflowGoalType
 - uid: CRMScript.NetServer.NSArchiveRestrictionGroup
   commentId: T:CRMScript.NetServer.NSArchiveRestrictionGroup
   isExternal: true

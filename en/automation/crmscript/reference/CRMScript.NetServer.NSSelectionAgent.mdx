@@ -39,7 +39,7 @@ Adds the collection of ContactPersonId as members to the static selection
 Void AddContactSelectionMembers(Integer selectionId, NSContactPersonId[] contactPersonIds)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## AddContactSelectionMembersFromSearch(Integer,String)
 
@@ -49,7 +49,7 @@ Adds members to the selection from the search result.
 Integer AddContactSelectionMembersFromSearch(Integer selectionId, String storageKey)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 **Example:**
 
@@ -68,7 +68,7 @@ Adds or removes interests on companies and persons in a selection.
 Void AddRemoveContactSelectionMemberInterests(Integer selectionId, Integer[] addCompanyInterests, Integer[] removeCompanyInterests, Integer[] addContactInterests, Integer[] removeContactInterests)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## AddSelectionMembers(Integer,Integer[])
 
@@ -78,7 +78,7 @@ Add selection members to a static selection of type others than contacts.
 Integer AddSelectionMembers(Integer selectionId, Integer[] ids)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 **Example:**
 
@@ -97,7 +97,7 @@ Adds members from the selection using the search result.
 Integer AddSelectionMembersFromSearch(Integer selectionId, String storageKey)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 **Example:**
 
@@ -116,7 +116,7 @@ Copies contact selection members from selection into an existing selection.
 Void CopyContactSelectionMembers(Integer fromSelectionId, Integer toSelectionId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## CopySelectionMembers(Integer,Integer)
 
@@ -126,7 +126,7 @@ Copies selection members from selection into an existing selection.
 Void CopySelectionMembers(Integer fromSelectionId, Integer toSelectionId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## CreateContactSelectionFromSelection(Integer,String,Integer,Bool)
 
@@ -136,7 +136,7 @@ Creates a new selection based on selection members from an existing selection.
 NSSelectionEntity CreateContactSelectionFromSelection(Integer selectionId, String name, Integer targetSelectionType, Bool copyMembers)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSelectionEntity](CRMScript.NetServer.NSSelectionEntity)
+**Returns:** [CRMScript.NetServer.NSSelectionEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSSelectionEntity)
 
 **Example:**
 
@@ -157,7 +157,7 @@ Creates a new contact selection based on contact selection members from an exist
 NSSelectionEntity CreateContactSelectionFromShadowSelection(Integer selectionId, String name)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSelectionEntity](CRMScript.NetServer.NSSelectionEntity)
+**Returns:** [CRMScript.NetServer.NSSelectionEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSSelectionEntity)
 
 <Note>
 The new selection will always be static even if the original selection is dynamic.
@@ -180,7 +180,7 @@ Sets default values into a new NSMailMergeSettings.
 NSMailMergeSettings CreateDefaultMailMergeSettings()
 ```
 
-**Returns:** [CRMScript.NetServer.NSMailMergeSettings](CRMScript.NetServer.NSMailMergeSettings)
+**Returns:** [CRMScript.NetServer.NSMailMergeSettings](/en/automation/crmscript/reference/CRMScript.NetServer.NSMailMergeSettings)
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
@@ -202,7 +202,7 @@ Sets default values into a new NSMailMergeTask.
 NSMailMergeTask CreateDefaultMailMergeTask()
 ```
 
-**Returns:** [CRMScript.NetServer.NSMailMergeTask](CRMScript.NetServer.NSMailMergeTask)
+**Returns:** [CRMScript.NetServer.NSMailMergeTask](/en/automation/crmscript/reference/CRMScript.NetServer.NSMailMergeTask)
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
@@ -224,7 +224,7 @@ Sets default values into a new NSSelectionEntity.
 NSSelectionEntity CreateDefaultSelectionEntity()
 ```
 
-**Returns:** [CRMScript.NetServer.NSSelectionEntity](CRMScript.NetServer.NSSelectionEntity)
+**Returns:** [CRMScript.NetServer.NSSelectionEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSSelectionEntity)
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
@@ -246,7 +246,7 @@ Creates a new selection based on external duplicate
 Integer CreateNewEntry(NSDuplicateEntry duplicate)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 **Example:**
 
@@ -264,7 +264,7 @@ Creates (but do not save) a new selection entity, for the current user and the g
 NSSelectionEntity CreateSelectionEntity(String targetTableName)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSelectionEntity](CRMScript.NetServer.NSSelectionEntity)
+**Returns:** [CRMScript.NetServer.NSSelectionEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSSelectionEntity)
 
 **Example:**
 
@@ -282,7 +282,7 @@ Creates a new selection based on selection members from an existing selection.
 NSSelectionEntity CreateSelectionFromSelection(Integer selectionId, String name, Integer targetSelectionType, Bool copyMembers)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSelectionEntity](CRMScript.NetServer.NSSelectionEntity)
+**Returns:** [CRMScript.NetServer.NSSelectionEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSSelectionEntity)
 
 **Example:**
 
@@ -303,7 +303,7 @@ Creates a temporary selection.
 NSSelectionEntity CreateTemporaryContactSelection()
 ```
 
-**Returns:** [CRMScript.NetServer.NSSelectionEntity](CRMScript.NetServer.NSSelectionEntity)
+**Returns:** [CRMScript.NetServer.NSSelectionEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSSelectionEntity)
 
 **Example:**
 
@@ -320,7 +320,7 @@ Creates a temporary selection with members from a collection of ContactPerson ID
 NSSelectionEntity CreateTemporaryContactSelectionFromContactPersonIds(NSContactPersonId[] contactPersonIds)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSelectionEntity](CRMScript.NetServer.NSSelectionEntity)
+**Returns:** [CRMScript.NetServer.NSSelectionEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSSelectionEntity)
 
 **Example:**
 
@@ -338,7 +338,7 @@ Creates a temporary selection with members from an existing project.
 NSSelectionEntity CreateTemporaryContactSelectionFromProjectMembers(Integer projectId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSelectionEntity](CRMScript.NetServer.NSSelectionEntity)
+**Returns:** [CRMScript.NetServer.NSSelectionEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSSelectionEntity)
 
 **Example:**
 
@@ -356,7 +356,7 @@ Creates a temporary selection with members from a collection of selection-member
 NSSelectionEntity CreateTemporaryContactSelectionFromSelectionMemberIds(Integer selectionId, Integer[] selectionMemberIds)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSelectionEntity](CRMScript.NetServer.NSSelectionEntity)
+**Returns:** [CRMScript.NetServer.NSSelectionEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSSelectionEntity)
 
 **Example:**
 
@@ -375,7 +375,7 @@ Creates a temporary selection with members from a collection of entity IDs.
 NSSelectionEntity CreateTemporarySelectionFromIds(Integer[] ids, Integer targetTableNumber)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSelectionEntity](CRMScript.NetServer.NSSelectionEntity)
+**Returns:** [CRMScript.NetServer.NSSelectionEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSSelectionEntity)
 
 **Example:**
 
@@ -394,7 +394,7 @@ Deletes all contacts from a selection.
 Void DeleteContacts(Integer selectionId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 If a contact does not have delete rights, it will be skipped.
@@ -408,7 +408,7 @@ Deletes all entities from a selection.
 Void DeleteEntities(Integer selectionId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 If an entity does not have delete rights, it will be skipped.
@@ -422,7 +422,7 @@ Deletes all persons from a selection.
 Void DeletePersons(Integer selectionId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 If a person does not have delete rights, it will be skipped.
@@ -436,7 +436,7 @@ Deletes the NSSelectionEntity
 DeleteSelectionEntity(Integer selectionEntity)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -453,7 +453,7 @@ Edits company and contact details in a selection based on contents in selectionM
 Void EditContactSelectionMemberDetails(Integer selectionId, NSSelectionMemberEditValues selectionMemberEditValues)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## ExportSelectionMembers(Integer,String,Bool)
 
@@ -463,7 +463,7 @@ Generates a string that is the result of substituting the template variables wit
 Byte[] ExportSelectionMembers(Integer selectionId, String templateName, Bool useContacts)
 ```
 
-**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[]
+**Returns:** [CRMScript.Global.Byte](/en/automation/crmscript/reference/CRMScript.Global.Byte)[]
 
 **Example:**
 
@@ -483,7 +483,7 @@ Generates a string that is the result of substituting the template variables wit
 Byte[] ExportSelectionMembersWithOrderBy(Integer selectionId, String templateName, Bool useContacts, String orderBy)
 ```
 
-**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[]
+**Returns:** [CRMScript.Global.Byte](/en/automation/crmscript/reference/CRMScript.Global.Byte)[]
 
 **Example:**
 
@@ -504,7 +504,7 @@ Generates follow-ups for members in the selection.
 Void GenerateFollowUps(Integer selectionId, NSAppointmentEntity appointmentEntity, Integer associateId, Bool saveOnContactOwner, Bool uniqueContact)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## GetDuplicateRules()
 
@@ -514,7 +514,7 @@ Retrieves all available duplicate rules for selection
 NSDuplicateRule[] GetDuplicateRules()
 ```
 
-**Returns:** [CRMScript.NetServer.NSDuplicateRule](CRMScript.NetServer.NSDuplicateRule)[]
+**Returns:** [CRMScript.NetServer.NSDuplicateRule](/en/automation/crmscript/reference/CRMScript.NetServer.NSDuplicateRule)[]
 
 **Example:**
 
@@ -531,7 +531,7 @@ Gets duplicates(exact or similar in the database) based on the name
 NSDuplicateEntry[] GetDuplicates(String name)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDuplicateEntry](CRMScript.NetServer.NSDuplicateEntry)[]
+**Returns:** [CRMScript.NetServer.NSDuplicateEntry](/en/automation/crmscript/reference/CRMScript.NetServer.NSDuplicateEntry)[]
 
 **Example:**
 
@@ -549,7 +549,7 @@ Gets the criteria for this dynamic selection.
 NSArchiveRestrictionInfo[] GetDynamicSelectionCriteria(Integer selectionId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveRestrictionInfo](CRMScript.NetServer.NSArchiveRestrictionInfo)[]
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveRestrictionInfo)[]
 
 **Example:**
 
@@ -567,7 +567,7 @@ Gets the criteria for this dynamic selection. This call supports multiple criter
 NSArchiveRestrictionGroup[] GetDynamicSelectionCriteriaGroups(Integer selectionId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveRestrictionGroup](CRMScript.NetServer.NSArchiveRestrictionGroup)[]
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionGroup](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveRestrictionGroup)[]
 
 **Example:**
 
@@ -585,7 +585,7 @@ Gets a list of all selection ids where the given selection is used to create a c
 Integer[] GetParentCombinedSelections(Integer selectionId)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)[]
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)[]
 
 **Example:**
 
@@ -603,7 +603,7 @@ Returns an NSRecipientStatistics object with a count of addresses and email addr
 NSRecipientStatistics GetRecipientStatistics(Integer selectionId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSRecipientStatistics](CRMScript.NetServer.NSRecipientStatistics)
+**Returns:** [CRMScript.NetServer.NSRecipientStatistics](/en/automation/crmscript/reference/CRMScript.NetServer.NSRecipientStatistics)
 
 **Example:**
 
@@ -621,7 +621,7 @@ Returns an NSRecipientStatistics object with a count of addresses and email addr
 NSRecipientStatistics GetRecipientStatisticsFromContactPersonIds(NSContactPersonId[] contactPersonIds)
 ```
 
-**Returns:** [CRMScript.NetServer.NSRecipientStatistics](CRMScript.NetServer.NSRecipientStatistics)
+**Returns:** [CRMScript.NetServer.NSRecipientStatistics](/en/automation/crmscript/reference/CRMScript.NetServer.NSRecipientStatistics)
 
 **Example:**
 
@@ -639,7 +639,7 @@ Returns an NSRecipientStatistics object with a count of addresses and email addr
 NSRecipientStatistics GetRecipientStatisticsFromProjectMembers(Integer projectId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSRecipientStatistics](CRMScript.NetServer.NSRecipientStatistics)
+**Returns:** [CRMScript.NetServer.NSRecipientStatistics](/en/automation/crmscript/reference/CRMScript.NetServer.NSRecipientStatistics)
 
 **Example:**
 
@@ -657,7 +657,7 @@ Gets an NSSelectionEntity object.
 NSSelectionEntity GetSelectionEntity(Integer selectionEntityId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSelectionEntity](CRMScript.NetServer.NSSelectionEntity)
+**Returns:** [CRMScript.NetServer.NSSelectionEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSSelectionEntity)
 
 **Example:**
 
@@ -674,7 +674,7 @@ Obtains a selection for the given entity, for the current user, of type WorkingS
 NSSelectionForFind GetSelectionForFind(String entityName, Integer typicalSearchId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSelectionForFind](CRMScript.NetServer.NSSelectionForFind)
+**Returns:** [CRMScript.NetServer.NSSelectionForFind](/en/automation/crmscript/reference/CRMScript.NetServer.NSSelectionForFind)
 
 **Example:**
 
@@ -693,7 +693,7 @@ Gets the list of members in this selection. The type of members depends on the t
 NSArchiveListItem[] GetSelectionMembersArchiveRows(Integer selectionId, String select)
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveListItem](CRMScript.NetServer.NSArchiveListItem)[]
+**Returns:** [CRMScript.NetServer.NSArchiveListItem](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveListItem)[]
 
 **Example:**
 
@@ -712,7 +712,7 @@ Gets the list of members in this selection's shadow (i.e. the list of contacts +
 NSArchiveListItem[] GetSelectionShadowMembersArchiveRows(Integer selectionId, String select)
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveListItem](CRMScript.NetServer.NSArchiveListItem)[]
+**Returns:** [CRMScript.NetServer.NSArchiveListItem](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveListItem)[]
 
 **Example:**
 
@@ -731,7 +731,7 @@ Removes members from the selection as  specified in the collection of ContactPer
 Void RemoveContactSelectionMembers(Integer selectionId, NSContactPersonId[] contactPersonIds)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## RemoveContactSelectionMembersFromIds(Integer,Integer[])
 
@@ -741,7 +741,7 @@ Removes members from the selection using a collection a selection-member IDs.
 Void RemoveContactSelectionMembersFromIds(Integer selectionId, Integer[] selectionMembersIds)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Members can only be removed from single selection.
@@ -755,7 +755,7 @@ Removes members from the selection using the search result.
 Integer RemoveContactSelectionMembersFromSearch(Integer selectionId, String storageKey)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 **Example:**
 
@@ -774,7 +774,7 @@ Removes members from the selection as specified in the collection of entity IDs.
 Void RemoveSelectionMembers(Integer selectionId, Integer[] selectionMemberIds)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## RemoveSelectionMembersById(Integer,Integer[])
 
@@ -784,7 +784,7 @@ Removes members from the selection as specified in the collection of entity IDs.
 Void RemoveSelectionMembersById(Integer selectionId, Integer[] ids)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## RemoveSelectionMembersFromSearch(Integer,String)
 
@@ -794,7 +794,7 @@ Removes members from the selection using the search result.
 Integer RemoveSelectionMembersFromSearch(Integer selectionId, String storageKey)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 **Example:**
 
@@ -813,7 +813,7 @@ Updates the existing NSSelectionEntity or creates a new NSSelectionEntity if the
 NSSelectionEntity SaveSelectionEntity(NSSelectionEntity selectionEntity)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSelectionEntity](CRMScript.NetServer.NSSelectionEntity) - The new or updated NSSelectionEntity.
+**Returns:** [CRMScript.NetServer.NSSelectionEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSSelectionEntity) - The new or updated NSSelectionEntity.
 
 **Example:**
 
@@ -831,7 +831,7 @@ Sets which duplicate rules should be active or not
 Void SetDuplicateRulesStatus(NSDuplicateRule[] rules)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## SetDynamicSelectionCriteria(Integer,NSArchiveRestrictionInfo[])
 
@@ -841,7 +841,7 @@ Updates the criteria for this dynamic selection. Replaces existing criteria with
 NSArchiveRestrictionInfo[] SetDynamicSelectionCriteria(Integer selectionId, NSArchiveRestrictionInfo[] criteria)
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveRestrictionInfo](CRMScript.NetServer.NSArchiveRestrictionInfo)[]
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveRestrictionInfo)[]
 
 **Example:**
 
@@ -860,7 +860,7 @@ Updates the criteria for this dynamic selection using string.
 NSArchiveRestrictionInfo[] SetDynamicSelectionCriteria2(Integer selectionId, String filter)
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveRestrictionInfo](CRMScript.NetServer.NSArchiveRestrictionInfo)[]
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveRestrictionInfo)[]
 
 <Note>
 Criteria are parsed from the OData filter form: ''name startswith 'foo' and category in (1,2,3)''n
@@ -883,7 +883,7 @@ Updates the criteria for this dynamic selection. Use criteria as either restrict
 NSArchiveRestrictionInfo[] SetDynamicSelectionCriteria3(Integer selectionId, NSArchiveRestrictionInfo[] criteria, String filter)
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveRestrictionInfo](CRMScript.NetServer.NSArchiveRestrictionInfo)[]
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveRestrictionInfo)[]
 
 <Note>
 Criteria are parsed from the OData filter form: ''name startswith 'foo' and category in (1,2,3)''n
@@ -907,7 +907,7 @@ Updates the criteria for this dynamic selection. Replaces existing criteria with
 NSArchiveRestrictionGroup[] SetDynamicSelectionCriteriaGroups(Integer selectionId, NSArchiveRestrictionGroup[] criteria)
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveRestrictionGroup](CRMScript.NetServer.NSArchiveRestrictionGroup)[]
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionGroup](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveRestrictionGroup)[]
 
 **Example:**
 
@@ -926,7 +926,7 @@ Starts a mail-merge operation with specified settings.
 Void StartMailMerge(MailMergeSettings settings)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## UpdateTypicalSearch(NSTypicalSearches)
 
@@ -936,7 +936,7 @@ Updates (imports) TypicalSearch information in the database
 String UpdateTypicalSearch(NSTypicalSearches searches)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 

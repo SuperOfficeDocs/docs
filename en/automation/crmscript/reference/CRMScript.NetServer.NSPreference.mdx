@@ -31,7 +31,7 @@ Initializes a new instance of the NSPreference class.
 String GetDisplayTooltip()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Display tooltip, populated when asked for. Formatted using CultureDataFormatter.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Display tooltip, populated when asked for. Formatted using CultureDataFormatter.
 
 <Note>
 Suitable for binding display-datasource in lists, etc.
@@ -50,7 +50,7 @@ String displayTooltip = thing.GetDisplayTooltip();
 Integer GetDisplayType()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Display type, populated when asked for. See &lt;xref href="CRMScript.NetServer.PrefDescValueType" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Display type, populated when asked for. See &lt;xref href="CRMScript.NetServer.PrefDescValueType" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
 
 **Example:**
 
@@ -65,7 +65,7 @@ Integer displayType = thing.GetDisplayType();
 String GetDisplayValue()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Display value, populated when asked for. Formatted using CultureDataFormatter.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Display value, populated when asked for. Formatted using CultureDataFormatter.
 
 <Note>
 Suitable for binding display-datasource in lists, etc.
@@ -84,7 +84,7 @@ String displayValue = thing.GetDisplayValue();
 Integer GetLevel()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - See &lt;xref href="CRMScript.NetServer.PreferenceLevel" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;. Undefined is returned for preferences that do not have a current setting.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - See &lt;xref href="CRMScript.NetServer.PreferenceLevel" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;. Undefined is returned for preferences that do not have a current setting.
 
 **Example:**
 
@@ -99,7 +99,7 @@ Integer level = thing.GetLevel();
 Integer GetPrefDescId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the prefdesc this preference is connected to.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the prefdesc this preference is connected to.
 
 **Example:**
 
@@ -114,7 +114,7 @@ Integer prefDescId = thing.GetPrefDescId();
 String GetRawValue()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - NSPreference value.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - NSPreference value.
 
 **Example:**
 
@@ -129,7 +129,7 @@ String rawValue = thing.GetRawValue();
 NSPreferenceSpec GetSpecification()
 ```
 
-**Returns:** [CRMScript.NetServer.NSPreferenceSpec](CRMScript.NetServer.NSPreferenceSpec) - Preference specification, consisting of the section name and key name.
+**Returns:** [CRMScript.NetServer.NSPreferenceSpec](/en/automation/crmscript/reference/CRMScript.NetServer.NSPreferenceSpec) - Preference specification, consisting of the section name and key name.
 
 **Example:**
 
@@ -144,7 +144,7 @@ NSPreferenceSpec specification = thing.GetSpecification();
 String GetTableName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - For DisplayType=PrefDescValueType.ListTableRef, TableName will contain the name of the table which the value reference to.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - For DisplayType=PrefDescValueType.ListTableRef, TableName will contain the name of the table which the value reference to.
 
 **Example:**
 
@@ -159,7 +159,7 @@ String tableName = thing.GetTableName();
 NSTabOrder GetTabOrder()
 ```
 
-**Returns:** [CRMScript.NetServer.NSTabOrder](CRMScript.NetServer.NSTabOrder)
+**Returns:** [CRMScript.NetServer.NSTabOrder](/en/automation/crmscript/reference/CRMScript.NetServer.NSTabOrder)
 
 **Example:**
 
@@ -174,7 +174,7 @@ NSTabOrder tabOrder = thing.GetTabOrder();
 Integer GetTargetId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the target row. The table it points at is specified by the preference type.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the target row. The table it points at is specified by the preference type.
 
 **Example:**
 
@@ -189,7 +189,7 @@ Integer targetId = thing.GetTargetId();
 Integer GetUserPreferenceId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the user preference.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the user preference.
 
 **Example:**
 
@@ -204,7 +204,7 @@ Integer userPreferenceId = thing.GetUserPreferenceId();
 Void SetDisplayTooltip(String displayTooltip)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Suitable for binding display-datasource in lists, etc.
@@ -224,7 +224,7 @@ thing.SetDisplayTooltip(displayTooltip);
 Void SetDisplayType(Integer displayType)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -240,7 +240,7 @@ thing.SetDisplayType(displayType);
 Void SetDisplayValue(String displayValue)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Suitable for binding display-datasource in lists, etc.
@@ -260,7 +260,7 @@ thing.SetDisplayValue(displayValue);
 Void SetLevel(Integer level)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Undefined is returned for preferences that do not have a current setting.
@@ -280,7 +280,7 @@ thing.SetLevel(level);
 Void SetPrefDescId(Integer prefDescId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -296,7 +296,7 @@ thing.SetPrefDescId(prefDescId);
 Void SetRawValue(String rawValue)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -312,7 +312,7 @@ thing.SetRawValue(rawValue);
 Void SetSpecification(NSPreferenceSpec specification)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -328,7 +328,7 @@ thing.SetSpecification(specification);
 Void SetTableName(String tableName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -344,7 +344,7 @@ thing.SetTableName(tableName);
 Void SetTabOrder(NSTabOrder tabOrder)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -360,7 +360,7 @@ thing.SetTabOrder(tabOrder);
 Void SetTargetId(Integer targetId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -376,7 +376,7 @@ thing.SetTargetId(targetId);
 Void SetUserPreferenceId(Integer userPreferenceId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

@@ -33,7 +33,7 @@ Creates a new message and insert it in the message queue. (inbox)
 Void CreateMessage(NSIncomingMessage incomingMessage)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## GetDeliveryStatus(Integer[])
 
@@ -43,7 +43,7 @@ Gets delivery status
 NSMessageDeliveryStatus[] GetDeliveryStatus(Integer[] messagingIds)
 ```
 
-**Returns:** [CRMScript.NetServer.NSMessageDeliveryStatus](CRMScript.NetServer.NSMessageDeliveryStatus)[]
+**Returns:** [CRMScript.NetServer.NSMessageDeliveryStatus](/en/automation/crmscript/reference/CRMScript.NetServer.NSMessageDeliveryStatus)[]
 
 ## GetPlugins()
 
@@ -51,7 +51,7 @@ NSMessageDeliveryStatus[] GetDeliveryStatus(Integer[] messagingIds)
 NSProviderInfo[] GetPlugins()
 ```
 
-**Returns:** [CRMScript.NetServer.NSProviderInfo](CRMScript.NetServer.NSProviderInfo)[]
+**Returns:** [CRMScript.NetServer.NSProviderInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSProviderInfo)[]
 
 ## SendMessages(String,NSOutgoingMessage[])
 
@@ -61,7 +61,7 @@ Sends an array of messages
 NSMessageDeliveryStatus[] SendMessages(String plugin, NSOutgoingMessage[] outgoingMessages)
 ```
 
-**Returns:** [CRMScript.NetServer.NSMessageDeliveryStatus](CRMScript.NetServer.NSMessageDeliveryStatus)[]
+**Returns:** [CRMScript.NetServer.NSMessageDeliveryStatus](/en/automation/crmscript/reference/CRMScript.NetServer.NSMessageDeliveryStatus)[]
 
 **Example:**
 
@@ -80,7 +80,7 @@ Sends an array of messages using given config
 NSMessageDeliveryStatus[] SendMessagesWithConfig(String plugin, NSOutgoingMessage[] outgoingMessages, Map config)
 ```
 
-**Returns:** [CRMScript.NetServer.NSMessageDeliveryStatus](CRMScript.NetServer.NSMessageDeliveryStatus)[]
+**Returns:** [CRMScript.NetServer.NSMessageDeliveryStatus](/en/automation/crmscript/reference/CRMScript.NetServer.NSMessageDeliveryStatus)[]
 
 **Example:**
 
@@ -100,4 +100,4 @@ Sets or change the delivery status on an outgoing message.
 Void SetDeliveryStatus(String plugin, String externalMessageId, Integer status, String statusDescription)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)

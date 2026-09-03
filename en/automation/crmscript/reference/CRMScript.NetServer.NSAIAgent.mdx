@@ -33,7 +33,7 @@ Given a (reasonably short) text, detect the language it is written in.
 String DetectLanguage(String text)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -51,7 +51,7 @@ Detect the sentiment of a (reasonably short) text. Sentiment analysis may cause 
 NSSentiment DetectSentiment(String text)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSentiment](CRMScript.NetServer.NSSentiment)
+**Returns:** [CRMScript.NetServer.NSSentiment](/en/automation/crmscript/reference/CRMScript.NetServer.NSSentiment)
 
 **Example:**
 
@@ -69,7 +69,7 @@ Calling the HugoAI endpoint to fetch the current training status.
 NSCategorizationStatusResponse GetTrainingStatus()
 ```
 
-**Returns:** [CRMScript.NetServer.NSCategorizationStatusResponse](CRMScript.NetServer.NSCategorizationStatusResponse) - Carrier to describe the current status of HugoAI categorization.
+**Returns:** [CRMScript.NetServer.NSCategorizationStatusResponse](/en/automation/crmscript/reference/CRMScript.NetServer.NSCategorizationStatusResponse) - Carrier to describe the current status of HugoAI categorization.
 
 **Example:**
 
@@ -86,7 +86,7 @@ Given a ticket's ID, guess the ticket category it should be placed in.
 Integer GuessCategory(Integer ticketId)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ticket category.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - ticket category.
 
 <Note>
 Currently this is based on the first message in the ticket.
@@ -108,7 +108,7 @@ The category guesser training API will be called with an array of Categorization
 String TrainCategoryGuesser(Integer selectionId, Integer maxItems, Integer maxTextLength)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -128,7 +128,7 @@ Translate a text from one language to another.
 String Translate(String text, String targetLanguage)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - translated text.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - translated text.
 
 <Note>
 Language of the text is automatically detected.

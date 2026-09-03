@@ -29,7 +29,7 @@ Initializes a new instance of the NSSaleTypeEntity class.
 Bool GetAllowQuoteAlternatives()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Can quotes linked to sales of this type, have multiple Alternatives.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Can quotes linked to sales of this type, have multiple Alternatives.
 
 **Example:**
 
@@ -44,7 +44,7 @@ Bool allowQuoteAlternatives = thing.GetAllowQuoteAlternatives();
 Integer GetConfirmationLinesTemplate()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The template that this sale type should use when producing the order confirmation lines document; the template must have DocTmplQuoteType=ConfirmationLines.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The template that this sale type should use when producing the order confirmation lines document; the template must have DocTmplQuoteType=ConfirmationLines.
 
 **Example:**
 
@@ -59,7 +59,7 @@ Integer confirmationLinesTemplate = thing.GetConfirmationLinesTemplate();
 Integer GetDefaultQuoteValidity()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Default valid days for quotes linked to sales of this type (valid from quote transmission).
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Default valid days for quotes linked to sales of this type (valid from quote transmission).
 
 **Example:**
 
@@ -74,7 +74,7 @@ Integer defaultQuoteValidity = thing.GetDefaultQuoteValidity();
 Bool GetDeleted()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - 0 -&gt; record is active 1 -&gt; record is 'deleted' and should not be shown in lists.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - 0 -&gt; record is active 1 -&gt; record is 'deleted' and should not be shown in lists.
 
 **Example:**
 
@@ -89,7 +89,7 @@ Bool deleted = thing.GetDeleted();
 Integer GetDurationUnit()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Units for the duration (day, week, whatever). See &lt;xref href="CRMScript.NetServer.DurationUnit" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Units for the duration (day, week, whatever). See &lt;xref href="CRMScript.NetServer.DurationUnit" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
 
 **Example:**
 
@@ -104,7 +104,7 @@ Integer durationUnit = thing.GetDurationUnit();
 Integer GetGroupQuoteLinesBy()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Group quote lines by this field.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Group quote lines by this field.
 
 **Example:**
 
@@ -119,7 +119,7 @@ Integer groupQuoteLinesBy = thing.GetGroupQuoteLinesBy();
 Bool GetHasGuide()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Does this sale type have a guide attached.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Does this sale type have a guide attached.
 
 **Example:**
 
@@ -134,7 +134,7 @@ Bool hasGuide = thing.GetHasGuide();
 Bool GetHasStakeholders()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Does this sale type have stakeholders.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Does this sale type have stakeholders.
 
 **Example:**
 
@@ -149,7 +149,7 @@ Bool hasStakeholders = thing.GetHasStakeholders();
 Bool GetIsAutoAdvance()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Does the sale stage advance automatically, when the last guided activity in a stage is completed?
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Does the sale stage advance automatically, when the last guided activity in a stage is completed?
 
 **Example:**
 
@@ -164,7 +164,7 @@ Bool isAutoAdvance = thing.GetIsAutoAdvance();
 Integer GetMaxDiscountPercent()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The maximum discount in percent of total, if set, on quotes linked to sales of this type.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The maximum discount in percent of total, if set, on quotes linked to sales of this type.
 
 **Example:**
 
@@ -179,7 +179,7 @@ Integer maxDiscountPercent = thing.GetMaxDiscountPercent();
 Bool GetMaxDiscountPercentSet()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is there a limit, in percent, to the total discount on quotes linked to sales of this type.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Is there a limit, in percent, to the total discount on quotes linked to sales of this type.
 
 **Example:**
 
@@ -194,7 +194,7 @@ Bool maxDiscountPercentSet = thing.GetMaxDiscountPercentSet();
 Integer GetMinEarningPercent()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The minimum earning in percent of total, if set, on quotes linked to sales of this type.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The minimum earning in percent of total, if set, on quotes linked to sales of this type.
 
 **Example:**
 
@@ -209,7 +209,7 @@ Integer minEarningPercent = thing.GetMinEarningPercent();
 Bool GetMinEarningPercentSet()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is there a limit, in earning as percent of total, on quotes linked to sales of this type.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Is there a limit, in earning as percent of total, on quotes linked to sales of this type.
 
 **Example:**
 
@@ -224,7 +224,7 @@ Bool minEarningPercentSet = thing.GetMinEarningPercentSet();
 String GetName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The list item.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The list item.
 
 **Example:**
 
@@ -239,7 +239,7 @@ String name = thing.GetName();
 Integer GetQuoteLinesTemplate()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The template that this sale type should use when producing the product lines offer document; the template must have DocTmplQuoteType=QuoteLines.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The template that this sale type should use when producing the product lines offer document; the template must have DocTmplQuoteType=QuoteLines.
 
 **Example:**
 
@@ -254,7 +254,7 @@ Integer quoteLinesTemplate = thing.GetQuoteLinesTemplate();
 Integer GetRank()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Rank order.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Rank order.
 
 **Example:**
 
@@ -269,7 +269,7 @@ Integer rank = thing.GetRank();
 Integer GetSaleDuration()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Expected number of dales from initiation to close of sale.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Expected number of dales from initiation to close of sale.
 
 **Example:**
 
@@ -284,7 +284,7 @@ Integer saleDuration = thing.GetSaleDuration();
 Integer GetSaleTypeCatId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Category of sale type, copied to sale.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Category of sale type, copied to sale.
 
 **Example:**
 
@@ -299,7 +299,7 @@ Integer saleTypeCatId = thing.GetSaleTypeCatId();
 Integer GetSaleTypeId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Primary key.
 
 **Example:**
 
@@ -314,7 +314,7 @@ Integer saleTypeId = thing.GetSaleTypeId();
 Integer GetSortGroupLinesBy()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Sort group lines by this field.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Sort group lines by this field.
 
 **Example:**
 
@@ -329,7 +329,7 @@ Integer sortGroupLinesBy = thing.GetSortGroupLinesBy();
 NSSelectableMDOListItem[] GetStages()
 ```
 
-**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](CRMScript.NetServer.NSSelectableMDOListItem)[] - Stages, those associated with this NSSaleType are selected.
+**Returns:** [CRMScript.NetServer.NSSelectableMDOListItem](/en/automation/crmscript/reference/CRMScript.NetServer.NSSelectableMDOListItem)[] - Stages, those associated with this NSSaleType are selected.
 
 **Example:**
 
@@ -344,7 +344,7 @@ NSSelectableMDOListItem[] stages = thing.GetStages();
 String GetTooltip()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Tooltip or other description.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Tooltip or other description.
 
 **Example:**
 
@@ -359,7 +359,7 @@ String tooltip = thing.GetTooltip();
 Void SetAllowQuoteAlternatives(Bool allowQuoteAlternatives)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -375,7 +375,7 @@ thing.SetAllowQuoteAlternatives(allowQuoteAlternatives);
 Void SetConfirmationLinesTemplate(Integer confirmationLinesTemplate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -391,7 +391,7 @@ thing.SetConfirmationLinesTemplate(confirmationLinesTemplate);
 Void SetDefaultQuoteValidity(Integer defaultQuoteValidity)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -407,7 +407,7 @@ thing.SetDefaultQuoteValidity(defaultQuoteValidity);
 Void SetDeleted(Bool deleted)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -423,7 +423,7 @@ thing.SetDeleted(deleted);
 Void SetDurationUnit(Integer durationUnit)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -439,7 +439,7 @@ thing.SetDurationUnit(durationUnit);
 Void SetGroupQuoteLinesBy(Integer groupQuoteLinesBy)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -455,7 +455,7 @@ thing.SetGroupQuoteLinesBy(groupQuoteLinesBy);
 Void SetHasGuide(Bool hasGuide)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -471,7 +471,7 @@ thing.SetHasGuide(hasGuide);
 Void SetHasStakeholders(Bool hasStakeholders)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -487,7 +487,7 @@ thing.SetHasStakeholders(hasStakeholders);
 Void SetIsAutoAdvance(Bool isAutoAdvance)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -503,7 +503,7 @@ thing.SetIsAutoAdvance(isAutoAdvance);
 Void SetMaxDiscountPercent(Integer maxDiscountPercent)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -519,7 +519,7 @@ thing.SetMaxDiscountPercent(maxDiscountPercent);
 Void SetMaxDiscountPercentSet(Bool maxDiscountPercentSet)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -535,7 +535,7 @@ thing.SetMaxDiscountPercentSet(maxDiscountPercentSet);
 Void SetMinEarningPercent(Integer minEarningPercent)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -551,7 +551,7 @@ thing.SetMinEarningPercent(minEarningPercent);
 Void SetMinEarningPercentSet(Bool minEarningPercentSet)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -567,7 +567,7 @@ thing.SetMinEarningPercentSet(minEarningPercentSet);
 Void SetName(String name)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -583,7 +583,7 @@ thing.SetName(name);
 Void SetQuoteLinesTemplate(Integer quoteLinesTemplate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -599,7 +599,7 @@ thing.SetQuoteLinesTemplate(quoteLinesTemplate);
 Void SetRank(Integer rank)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -615,7 +615,7 @@ thing.SetRank(rank);
 Void SetSaleDuration(Integer saleDuration)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -631,7 +631,7 @@ thing.SetSaleDuration(saleDuration);
 Void SetSaleTypeCatId(Integer saleTypeCatId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -647,7 +647,7 @@ thing.SetSaleTypeCatId(saleTypeCatId);
 Void SetSaleTypeId(Integer saleTypeId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -663,7 +663,7 @@ thing.SetSaleTypeId(saleTypeId);
 Void SetSortGroupLinesBy(Integer sortGroupLinesBy)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -679,7 +679,7 @@ thing.SetSortGroupLinesBy(sortGroupLinesBy);
 Void SetStages(NSSelectableMDOListItem[] stages)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -695,7 +695,7 @@ thing.SetStages(stages);
 Void SetTooltip(String tooltip)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
