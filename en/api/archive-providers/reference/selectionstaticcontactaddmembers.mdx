@@ -18,27 +18,27 @@ make sure you understand its special functionality.
 
 There are several 'special' restrictions that are used by this provider in order to implement the various
 irregular query modifiers used by the Add Members dialog.
-<list type="bullet"><item><term>includeContactWithStopRestriction</term><description>If this boolean restriction is included and set to 0,
-then contacts that have the <see cref="P:SuperOffice.CRM.Rows.ContactRow.Xstop" /> property set to a nonzero
-value will not NOT be included. If it is set to 1 or not set at all, such contacts WILL be included.</description></item><item><term>includeContactWithNoDMRestriction</term><description>If this boolean restriction is included and set to 0,
-then contacts that have the <see cref="P:SuperOffice.CRM.Rows.ContactRow.Nomailing" /> property set to a nonzero
-value will not NOT be included. If it is set to 1 or not set at all, such contacts WILL be included.</description></item><item><term>includePersonWithNoDMRestriction</term><description>If this boolean restriction is included and set to 0,
-then persons that have the <see cref="P:SuperOffice.CRM.Rows.PersonRow.Nomailing" /> property set to a nonzero
+&lt;list type="bullet"&gt;&lt;item&gt;&lt;term&gt;includeContactWithStopRestriction&lt;/term&gt;&lt;description&gt;If this boolean restriction is included and set to 0,
+then contacts that have the &lt;see cref="P:SuperOffice.CRM.Rows.ContactRow.Xstop" /&gt; property set to a nonzero
+value will not NOT be included. If it is set to 1 or not set at all, such contacts WILL be included.&lt;/description&gt;&lt;/item&gt;&lt;item&gt;&lt;term&gt;includeContactWithNoDMRestriction&lt;/term&gt;&lt;description&gt;If this boolean restriction is included and set to 0,
+then contacts that have the &lt;see cref="P:SuperOffice.CRM.Rows.ContactRow.Nomailing" /&gt; property set to a nonzero
+value will not NOT be included. If it is set to 1 or not set at all, such contacts WILL be included.&lt;/description&gt;&lt;/item&gt;&lt;item&gt;&lt;term&gt;includePersonWithNoDMRestriction&lt;/term&gt;&lt;description&gt;If this boolean restriction is included and set to 0,
+then persons that have the &lt;see cref="P:SuperOffice.CRM.Rows.PersonRow.Nomailing" /&gt; property set to a nonzero
 value will not NOT be included. If it is set to 1 or not set at all, such persons WILL be included.
 
 Note that this restriction will by itself NOT trigger a person search; a genuine person-type restriction
-has to be present to do that.</description></item><item><term>includePersonRestriction</term><description>This restriction, if included, can have one of three distinct
+has to be present to do that.&lt;/description&gt;&lt;/item&gt;&lt;item&gt;&lt;term&gt;includePersonRestriction&lt;/term&gt;&lt;description&gt;This restriction, if included, can have one of three distinct
 string values. The strings correspond to the values of the
-<see cref="T:SuperOffice.CRM.ArchiveLists.SelectionContactPersonExtender.IncludePersonType" /> enumeration (parsing
+&lt;see cref="T:SuperOffice.CRM.ArchiveLists.SelectionContactPersonExtender.IncludePersonType" /&gt; enumeration (parsing
 is not case sensitive). The value 'none' means that person records should not be included unless an explicit person criterion
 has been specified. 'first' means that the lowest-ranked person of each found contact should be included, but the
 result set still uses the contact_id as the primary key and is not a person search (again, unless other person
 criteria have been used). The value 'all' indicates that the query is promoted from contact to person type, the primary
-key becomes the person id, and ALL non-retired persons are included in the result for each contact.</description></item><item><term>retired</term><description>This is an ordinary display column and restriction. However, in this context
+key becomes the person id, and ALL non-retired persons are included in the result for each contact.&lt;/description&gt;&lt;/item&gt;&lt;item&gt;&lt;term&gt;retired&lt;/term&gt;&lt;description&gt;This is an ordinary display column and restriction. However, in this context
 it defaults to having a zero restriction value, i.e., unless you explicitly specify this restriction, it will be
-internally set to 0, thereby eliminating retired persons from the result. If you set it, your value wins, whatever it is.</description></item><item><term>selectionIdRequest</term><description>If you include the 'selectionIdRequest' restriction, use the '=' operator and give the id
+internally set to 0, thereby eliminating retired persons from the result. If you set it, your value wins, whatever it is.&lt;/description&gt;&lt;/item&gt;&lt;item&gt;&lt;term&gt;selectionIdRequest&lt;/term&gt;&lt;description&gt;If you include the 'selectionIdRequest' restriction, use the '=' operator and give the id
 of the static selection to attempt to join with. If this is done, then the 'selectionMemberId' will contain
-a non-null value for those contacts or persons that exist in the given static selection.</description></item></list>
+a non-null value for those contacts or persons that exist in the given static selection.&lt;/description&gt;&lt;/item&gt;&lt;/list&gt;
 
 ## Supported Entities
 | Name | Description |
@@ -108,8 +108,8 @@ a non-null value for those contacts or persons that exist in the given static se
 |postAddress/state|string|Postal address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |postAddress/wgs84latitude|decimal|Postal address - Latitude: Latitude| x |
 |postAddress/wgs84longitude|decimal|Postal address - Longitude: Longitude| x |
-|postAddress/formattedAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
-|postAddress/formattedMultiLineAddress| *None* |Postal address - {formattedAddress}: {formattedAddress}|  |
+|postAddress/formattedAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
+|postAddress/formattedMultiLineAddress| *None* |Postal address - \{formattedAddress\}: \{formattedAddress\}|  |
 |streetAddress/addressId|int|Street address - Address ID: Database ID for the address record| x |
 |streetAddress/line1|string|Street address - Address 1: First line of the address| x |
 |streetAddress/line2|string|Street address - Address 2: Second line of the address| x |
@@ -120,8 +120,8 @@ a non-null value for those contacts or persons that exist in the given static se
 |streetAddress/state|string|Street address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |streetAddress/wgs84latitude|decimal|Street address - Latitude: Latitude| x |
 |streetAddress/wgs84longitude|decimal|Street address - Longitude: Longitude| x |
-|streetAddress/formattedAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
-|streetAddress/formattedMultiLineAddress| *None* |Street address - {formattedAddress}: {formattedAddress}|  |
+|streetAddress/formattedAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
+|streetAddress/formattedMultiLineAddress| *None* |Street address - \{formattedAddress\}: \{formattedAddress\}|  |
 |restrictionAddress/addressId|int|Search address - Address ID: Database ID for the address record| x |
 |restrictionAddress/line1|string|Search address - Address 1: First line of the address| x |
 |restrictionAddress/line2|string|Search address - Address 2: Second line of the address| x |
@@ -132,8 +132,8 @@ a non-null value for those contacts or persons that exist in the given static se
 |restrictionAddress/state|string|Search address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |restrictionAddress/wgs84latitude|decimal|Search address - Latitude: Latitude| x |
 |restrictionAddress/wgs84longitude|decimal|Search address - Longitude: Longitude| x |
-|restrictionAddress/formattedAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
-|restrictionAddress/formattedMultiLineAddress| *None* |Search address - {formattedAddress}: {formattedAddress}|  |
+|restrictionAddress/formattedAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
+|restrictionAddress/formattedMultiLineAddress| *None* |Search address - \{formattedAddress\}: \{formattedAddress\}|  |
 |url/URLAddress|string|URL| x |
 |url/URLDescription|string|Description| x |
 |contactAssociate/firstName|string|First name: Displays the contact's first name| x |
@@ -693,8 +693,8 @@ a non-null value for those contacts or persons that exist in the given static se
 |personAddress/state|string|Contact address - State: This criterion corresponds to the State field on the Company card.  \It will only be visible if required by a country's address format.| x |
 |personAddress/wgs84latitude|decimal|Contact address - Latitude: Latitude| x |
 |personAddress/wgs84longitude|decimal|Contact address - Longitude: Longitude| x |
-|personAddress/formattedAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
-|personAddress/formattedMultiLineAddress| *None* |Contact address - {formattedAddress}: {formattedAddress}|  |
+|personAddress/formattedAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
+|personAddress/formattedMultiLineAddress| *None* |Contact address - \{formattedAddress\}: \{formattedAddress\}|  |
 |personInterestIds|listInterest|Contact interest: This criterion corresponds to a contact's interests.  It is available via the Contact dialog's Interests tab.|  |
 |personUdef/SuperOffice:1|string|contactshorttext: tooltipshorttext| x |
 |personUdef/SuperOffice:2|string|contactlongtext: tooltiplongtext| x |
@@ -1176,7 +1176,7 @@ a non-null value for those contacts or persons that exist in the given static se
 |projectMembers/LastSale|date|Date of last sale|  |
 |projectMembers/LastCompletedSale|date|Date of last completed sale|  |
 |projectMembers/LastDoBySale|date|Date of last non-completed sale|  |
-|projectMembers/SaintStatus3|saintStatus|Not completed activites with intention sale: Number of not completed activities for intention sale > 0.|  |
+|projectMembers/SaintStatus3|saintStatus|Not completed activites with intention sale: Number of not completed activities for intention sale &gt; 0.|  |
 |projectMembers/saintSaleStatus|listAny|With status|  |
 |projectMembers/saintAmountClass|listAny|Amount class|  |
 |projectMembers/saintActivityType|listAny|SAINT type|  |
