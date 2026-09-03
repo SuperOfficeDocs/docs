@@ -4,4 +4,4 @@ Klicka på knappen **Sök** under fliken **Kriterier**.
 * Om du får för få eller för många träffar kan du ändra sökkriterierna genom att välja något annat i de olika listrutorna.
 * Öppna, förhandsgranska, eller spara som urval. Detta beskrivs ovan i [Arbeta med sökresultat][1].
 
-[1]: ../find-screen#results
+[1]: /sv/search-options/learn/find-screen#results

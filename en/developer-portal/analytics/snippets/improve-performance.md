@@ -14,7 +14,7 @@ Additional columns from SuperOffice version 10.5.1
 | itemCount | Number of similar API calls made in the past 24 hours. Can be used to identify high-traffic endpoints and optimize caching or batching strategies. |
 | url | The full URL of the API request. Useful for debugging and reproducing queries. |
 
-[2]: ../../best-practices/index
-[3]: ../../best-practices/index#caching
-[4]: ../../best-practices/index#searching
-[5]: ../../../api/netserver/archive-providers/reference/index
+[2]: /en/developer-portal/best-practices/index
+[3]: /en/developer-portal/best-practices/index#caching
+[4]: /en/developer-portal/best-practices/index#searching
+[5]: /en/api/archive-providers/reference/index

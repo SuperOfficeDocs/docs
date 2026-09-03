@@ -13,11 +13,11 @@ Du kan skapa och spara innehållsblock som alla dina användare kan välja mella
 * [Lägg till bilder i meddelandet][2]
 * [Testa utskicket][7]
 
-[1]: ../../../../editor/learn/index
-[2]: ../../../../editor/learn/insert-images-in-message
-[3]: ../../../../editor/learn/add-content
-[4]: ../../../../editor/learn/edit-paragraph
-[5]: ../../../../editor/learn/add-merge-tag
-[11]: ../../../../editor/learn/add-tracked-link-to-msg
-[8]: ../../../../editor/learn/add-unsubscribe-link
-[7]: ../send-test-email
+[1]: /sv/marketing/editor/learn/index
+[2]: /sv/marketing/editor/learn/insert-images-in-message
+[3]: /sv/marketing/editor/learn/add-content
+[4]: /sv/marketing/editor/learn/edit-paragraph
+[5]: /sv/marketing/editor/learn/add-merge-tag
+[11]: /sv/marketing/editor/learn/add-tracked-link-to-msg
+[8]: /sv/marketing/editor/learn/add-unsubscribe-link
+[7]: /sv/marketing/mailing/learn/create/send-test-email

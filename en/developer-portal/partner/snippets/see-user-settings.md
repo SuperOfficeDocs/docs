@@ -1,1 +1,1 @@
-For details about each field, see the [user settings reference section](../user-settings).
+For details about each field, see the [user settings reference section](/en/developer-portal/partner/user-settings).

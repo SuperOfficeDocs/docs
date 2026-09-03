@@ -30,6 +30,6 @@ You can click the mailing in the list to [view sending status and statistics][1]
 
 To stop the mailing or start a planned mailing ahead of schedule, click the **Stop** or **Start** button respectively.
 
-[1]: ../../view-statistics
+[1]: /en/marketing/mailing/learn/view-statistics
 
 [img4]: /media/loc/en/marketing/send-or-schedule.png
