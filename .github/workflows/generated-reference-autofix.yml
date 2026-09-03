@@ -1,0 +1,113 @@
+name: Generated-reference auto-fix
+
+# Consolidates 3 previously-separate auto-fix workflows
+# (mdo-provider-sidebar-title.yml, reference-overflow-guard.yml,
+# webapi-bare-relative-links-guard.yml) plus a new 4th fixer (#407) into one
+# job. All 4 watch overlapping paths under the generated
+# archive-providers/mdo-providers/webapi/database-tables reference trees;
+# as 4 separate workflows, each with its own "commit and push" step, they
+# raced to push to the same PR branch ref with zero coordination -- a
+# structural bug flagged (not fixed) during PR #338. One job means one
+# checkout and one push, which removes the race by construction rather than
+# trying to coordinate 4 independent ones.
+#
+# database-enum-sidebar-title.yml and recent-pages-sync.yml have their own,
+# separate residual overlap with each other and with this workflow's paths
+# (en/database/tables/**, en/**) -- a known but unfixed follow-up, not
+# folded in here.
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'en/api/mdo-providers/reference/**'
+      - 'en/api/archive-providers/reference/**'
+      - 'en/api/reference/webapi/**/*.md'
+      - 'en/api/reference/webapi/**/*.mdx'
+      - 'en/database/tables/**'
+      - 'tools/ci/wide-mode-pages.txt'
+      - 'tools/ci/code-wrap-pages.txt'
+
+# Automatically cancel in-progress runs on the same branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  apply-fixes:
+    name: "Apply all generated-reference auto-fixes in one pass"
+    runs-on: ubuntu-latest
+    # A fork PR's default token can't push back to the fork - skip cleanly
+    # rather than fail loudly. Same-repo branches (the normal case for
+    # these ADO-pipeline-generated trees) proceed as usual.
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    steps:
+      - name: Checkout PR head
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+
+      - name: Get changed MDO-provider files
+        id: changed-mdo
+        uses: tj-actions/changed-files@v45
+        with:
+          files: |
+            en/api/mdo-providers/reference/**/*.md
+            en/api/mdo-providers/reference/**/*.mdx
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Add missing sidebarTitle to changed MDO-provider pages
+        if: steps.changed-mdo.outputs.any_changed == 'true'
+        env:
+          CHANGED_FILES: ${{ steps.changed-mdo.outputs.all_changed_files }}
+        run: python tools/ci/add-mdo-provider-sidebar-titles.py --apply $CHANGED_FILES
+
+      # Re-checks every page on both maintained lists, not just this PR's
+      # changed files - the point is the invariant "every listed page has
+      # the fix", regardless of whether an ADO regen touched the page
+      # itself or a human edited a list. Both lists are small, so this is
+      # cheap to run in full every time.
+      - name: Apply mode:"wide" to listed pages
+        run: python tools/ci/apply-wide-mode.py --apply
+
+      - name: Apply code-sample wrapping to listed pages
+        run: python tools/ci/apply-code-wrap.py --apply
+
+      # Scans the whole (small, ~2,500-file) webapi tree rather than only
+      # this PR's changed files: a giant regenerated-content drop can touch
+      # every file in the tree at once (see #400's own CI failure trying to
+      # pass that file list through a workflow env var), and the script is
+      # idempotent, so a full scan costs a few seconds and avoids depending
+      # on a changed-files list at any size.
+      - name: "Rewrite bare-relative links in en/api/reference/webapi/"
+        run: python tools/ci/fix-webapi-bare-relative-links.py --apply
+
+      # Runs last: it only ever emits root-relative links, never the
+      # bare-relative shape the previous step corrects, so nothing after it
+      # needs to re-touch its output. Same idempotent full-tree-rescan
+      # reasoning as the previous step - archive-providers/mdo-providers
+      # are also regenerated wholesale by the same ADO pipeline.
+      - name: "Resolve or fall back dead <see cref> references (#407)"
+        run: python tools/ci/fix-docfx-see-cref.py --apply
+
+      - name: Commit and push fixes, if any
+        env:
+          HEAD_REF: ${{ github.event.pull_request.head.ref }}
+        run: |
+          if git diff --quiet; then
+            echo "No generated-reference fixes needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add en/api/mdo-providers/reference en/database/tables en/api/archive-providers/reference en/api/reference/webapi
+          git commit -m "Apply generated-reference auto-fixes (sidebarTitle, overflow, bare-relative links, see-cref)"
+          git push origin "HEAD:$HEAD_REF"
