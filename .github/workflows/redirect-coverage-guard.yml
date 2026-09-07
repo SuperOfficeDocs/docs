@@ -40,9 +40,8 @@ jobs:
           TRANSLATION_GAP: ${{ steps.check.outputs.translation_gap }}
           GH_TOKEN: ${{ github.token }}
         run: |
-          # Reuses this repo's existing labels rather than inventing new
-          # ones: mintlify/nav-redirects for a coverage gap, translation
-          # for a stale-pathed mirror (see #340).
+          # Reuses this repo's existing labels rather than inventing new ones: mintlify/nav-redirects for
+          # a coverage gap, translation for a stale-pathed mirror (see #340).
           if [ "$FOUND" = "true" ]; then
             gh pr edit "$PR_NUMBER" --add-label "mintlify/nav-redirects"
           else

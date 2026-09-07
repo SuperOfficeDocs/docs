@@ -49,10 +49,9 @@ jobs:
 
       - name: "Check changed index pages for relative links"
         if: steps.changed.outputs.any_changed == 'true'
-        # The changed-files list is untrusted PR-diff content (attacker-controlled
-        # filenames). Pass it through env instead of interpolating the `${{ }}`
-        # expression directly into the run script; direct interpolation is a
-        # known GitHub Actions script-injection vector, since the expression is
+        # The changed-files list is untrusted PR-diff content (attacker-controlled filenames). Pass it
+        # through env instead of interpolating the `${{ }}` expression directly into the run script;
+        # direct interpolation is a known GitHub Actions script-injection vector, since the expression is
         # substituted into the shell script's source text before bash parses it.
         env:
           CHANGED_FILES: ${{ steps.changed.outputs.all_changed_files }}

@@ -6,10 +6,9 @@ on:
     paths:
       - 'en/database/tables/enums/**'
 
-# Shared group with every other auto-fix workflow that pushes to this same
-# PR branch: prevents a cross-workflow push race (see the full rationale
-# in generated-reference-autofix.yml). Queue, don't cancel: a queued run's
-# checkout picks up whatever an earlier run already pushed.
+# Shared group with every other auto-fix workflow that pushes to this same PR branch: prevents a
+# cross-workflow push race (see the full rationale in generated-reference-autofix.yml). Queue, don't
+# cancel: a queued run's checkout picks up whatever an earlier run already pushed.
 concurrency:
   group: autofix-push-${{ github.ref }}
   cancel-in-progress: false
@@ -21,9 +20,8 @@ jobs:
   add-sidebar-title:
     name: "Add sidebarTitle to changed enum pages"
     runs-on: ubuntu-latest
-    # A fork PR's default token can't push back to the fork - skip cleanly
-    # rather than fail loudly. Same-repo branches (the normal case for this
-    # ADO-pipeline-generated tree) proceed as usual.
+    # A fork PR's default token can't push back to the fork - skip cleanly rather than fail loudly.
+    # Same-repo branches (the normal case for this ADO-pipeline-generated tree) proceed as usual.
     if: github.event.pull_request.head.repo.full_name == github.repository
     steps:
       - name: Checkout PR head
