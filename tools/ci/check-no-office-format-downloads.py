@@ -2,19 +2,17 @@
 """Fail the build when a PR adds a new `.xlsx`/`.docx`/`.pptx` file under
 `downloads/` (see issue #386).
 
-Mintlify's static file server does not serve Office Open XML formats
-(`.xlsx`/`.docx`/`.pptx`) at any plan tier -- confirmed live (curl 404 on
-every such file, while `.pdf`/`.zip` in the same folder return 200) and
-against Mintlify's own supported-file-types docs. This isn't a lint-level
-concern like the rest of this repo's advisory guard family -- a file
-added with one of these extensions is never downloadable at all once
-merged, so this check fails the build outright instead of warning.
+Mintlify's static file server does not serve Office Open XML formats (`.xlsx`/`.docx`/`.pptx`) at any
+plan tier: confirmed live (curl 404 on every such file, while `.pdf`/`.zip` in the same folder return
+200) and against Mintlify's own supported-file-types docs. This isn't a lint-level concern like the
+rest of this repo's advisory guard family; a file added with one of these extensions is never
+downloadable at all once merged, so this check fails the build outright instead of warning.
 
 The fix, established by #386's own remediation, is always the same: zip
 the file first (`.zip` is confirmed supported), link/redirect to the
 `.zip`, and never commit the raw Office-format file to `downloads/`.
 
-Only newly *added* files are checked -- a pre-existing file already
+Only newly *added* files are checked; a pre-existing file already
 tracked in git isn't re-flagged just because an unrelated PR touches
 something else under `downloads/`.
 
@@ -70,11 +68,11 @@ def main():
         print(
             f"::error file={path}::"
             f"'{path}' is a new Office-format file (.xlsx/.docx/.pptx) under downloads/. "
-            f"Mintlify does not serve these extensions (confirmed 404 at any plan tier, see #386) -- "
+            f"Mintlify does not serve these extensions (confirmed 404 at any plan tier, see #386): "
             f"zip the file first, link/redirect to the .zip instead, and don't commit the raw file."
         )
 
-    print(f"\n{len(added)} new Office-format file(s) added under downloads/ -- see errors above.")
+    print(f"\n{len(added)} new Office-format file(s) added under downloads/; see errors above.")
     return 1
 
 

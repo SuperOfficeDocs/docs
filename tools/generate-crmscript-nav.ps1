@@ -4,17 +4,14 @@
     Generates config/nav-crmscript-ref.json from the CRMScript reference MDX files.
 
 .DESCRIPTION
-    Lists en/automation/crmscript/reference/*.mdx, classifies each page by namespace
-    and by its source YAML `type:` field (Namespace/Class/Enum, read from
-    api-sources/crmscript/<slug>.yml), and writes a nested Mintlify nav structure to
-    config/nav-crmscript-ref.json -- Global functions, Basic data types, Data
-    Structures, Native, and NetServer (split into Classes/Enums sub-groups), each
-    sorted case-insensitively, matching the old DocFx site's taxonomy (see #262).
-    2-space indent, LF line endings, no BOM, trailing newline. Line endings are
-    hardcoded rather than left to platform defaults -- verified against the actual
-    git blob (git cat-file -p HEAD:<path>), not a working-tree read, which
-    core.autocrlf=true renders as CRLF on this Windows machine regardless of what's
-    really stored. See #189.
+    Lists en/automation/crmscript/reference/*.mdx, classifies each page by namespace and by its source YAML
+    `type:` field (Namespace/Class/Enum, read from api-sources/crmscript/<slug>.yml), and writes a nested
+    Mintlify nav structure to config/nav-crmscript-ref.json: Global functions, Basic data types, Data
+    Structures, Native, and NetServer (split into Classes/Enums sub-groups), each sorted case-insensitively,
+    matching the old DocFx site's taxonomy (see #262). 2-space indent, LF line endings, no BOM, trailing
+    newline. Line endings are hardcoded rather than left to platform defaults; this was verified against the
+    actual git blob (git cat-file -p HEAD:<path>), not a working-tree read, which core.autocrlf=true renders
+    as CRLF on this Windows machine regardless of what's really stored. See #189.
 
 .PARAMETER SourcePath
     Path to the generated MDX reference files. Default: en/automation/crmscript/reference
@@ -74,7 +71,7 @@ $netServerEnums = @()
 
 foreach ($slug in $sortedSlugs) {
     if ($slug -eq 'CRMScript.Global') {
-        # Namespace overview page -- used as the Global functions group's root, not listed.
+        # Namespace overview page: used as the Global functions group's root, not listed.
         continue
     } elseif ($slug -eq 'CRMScript.Global.Void') {
         $globalFunctions += $slug
@@ -83,12 +80,12 @@ foreach ($slug in $sortedSlugs) {
     } elseif ($slug.StartsWith('CRMScript.DataStructure.')) {
         $dataStructures += $slug
     } elseif ($slug -eq 'CRMScript.Native') {
-        # Namespace overview page -- used as the Native group's root, not listed.
+        # Namespace overview page: used as the Native group's root, not listed.
         continue
     } elseif ($slug.StartsWith('CRMScript.Native.')) {
         $nativeClasses += $slug
     } elseif ($slug -eq 'CRMScript.NetServer') {
-        # Namespace overview page -- used as the NetServer group's root, not listed.
+        # Namespace overview page: used as the NetServer group's root, not listed.
         continue
     } elseif ($slug.StartsWith('CRMScript.NetServer.')) {
         if ((Get-YamlType -Slug $slug) -eq 'Enum') {
@@ -143,11 +140,10 @@ $nav = @(
 )
 
 
-# Windows PowerShell 5.1's ConvertTo-Json produces valid but inconsistently
-# indented/spaced JSON (e.g. "key":  "value" with a double space). Serialize
-# compact here and re-pretty-print with Python for output matching this repo's
-# other config/*.json files (2-space indent, single space after colons) --
-# same convention as update-docs-navigation.ps1 (see ai-agents mintlify-config skill).
+# Windows PowerShell 5.1's ConvertTo-Json produces valid but inconsistently indented/spaced JSON (for
+# example, "key":  "value" with a double space). Serialize compact here and re-pretty-print with Python for
+# output matching this repo's other config/*.json files (2-space indent, single space after colons), the
+# same convention used by update-docs-navigation.ps1 (see ai-agents mintlify-config skill).
 $jsonCompact = $nav | ConvertTo-Json -Depth 10 -Compress
 $tempFile = [System.IO.Path]::GetTempFileName()
 try {

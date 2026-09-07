@@ -3,33 +3,26 @@
 `<list type="bullet">` block (or the HTML-escaped form of either,
 `&lt;list type="..."&gt;`).
 
-`<list type="table">`/`<list type="bullet">` is .NET XML-doc-comment syntax,
-not HTML -- DocFX used to render it as a real table or bulleted list.
-Mintlify's MDX renderer doesn't recognize the tag at all, so it either
-compiles as an unrecognized custom element (dropping the list content
-entirely) or, once HTML-escaped to avoid an MDX parse error, renders as
-literal garbled tag soup on the page -- see #410, the sibling problem to
-the `<see cref>` tag fixed under #407. A repo-wide audit for #410 found
-only 3 files with this pattern (`selectionstaticcontactaddmembers.mdx`,
-`contact_and_person_freetextsearch.mdx`, `pricelist.mdx`), all hand-fixed
-into real Markdown tables/bullet lists in that same PR.
+`<list type="table">`/`<list type="bullet">` is .NET XML-doc-comment syntax, not HTML: DocFX used to
+render it as a real table or bulleted list. Mintlify's MDX renderer doesn't recognize the tag at all,
+so it either compiles as an unrecognized custom element (dropping the list content entirely) or, once
+HTML-escaped to avoid an MDX parse error, renders as literal garbled tag soup on the page. See #410,
+the sibling problem to the `<see cref>` tag fixed under #407. A repo-wide audit for #410 found only 3
+files with this pattern (`selectionstaticcontactaddmembers.mdx`, `contact_and_person_freetextsearch.mdx`,
+`pricelist.mdx`), all hand-fixed into real Markdown tables/bullet lists in that same PR.
 
-This guard is the same stopgap already in place for the sibling `<see
-cref>` and `<xref>` tags: block any *new* occurrence -- hand-authored, or
-a future ADO/generator content drop regenerating one of these pages from
-its original XML doc comments with no awareness of the Mintlify-side fix
--- from landing again. It only looks at lines actually *added* by the
-diff against base_ref; it does not attempt to flag or fix any pre-existing
-occurrence (there should be none left after #410, but a future drop could
-reintroduce one anywhere in the generated reference trees).
+This guard is the same stopgap already in place for the sibling `<see cref>` and `<xref>` tags: it
+blocks any *new* occurrence, whether hand-authored or reintroduced by a future ADO/generator content
+drop regenerating one of these pages from its original XML doc comments with no awareness of the
+Mintlify-side fix, from landing again. It only looks at lines actually *added* by the diff against
+base_ref; it does not attempt to flag or fix any pre-existing occurrence (there should be none left
+after #410, but a future drop could reintroduce one anywhere in the generated reference trees).
 
-A genuinely new occurrence is found by diffing against base_ref to get
-each changed file's added line numbers, then checking those specific
-lines against the file's *masked* content (fenced code blocks and inline
-code spans blanked out) rather than the raw diff text -- otherwise a
-legitimate documentation example of this exact syntax (e.g. this guard's
-own docstring, or a future addition to the DocFX-to-Mintlify cheat sheet)
-would be falsely flagged.
+A genuinely new occurrence is found by diffing against base_ref to get each changed file's added line
+numbers, then checking those specific lines against the file's *masked* content (fenced code blocks
+and inline code spans blanked out) rather than the raw diff text; otherwise a legitimate documentation
+example of this exact syntax (for example this guard's own docstring, or a future addition to the
+DocFX-to-Mintlify cheat sheet) would be falsely flagged.
 
 Usage:
     python tools/ci/check-no-new-docfx-list.py --base-ref origin/main
@@ -93,14 +86,14 @@ def main():
             f"::error file={path},line={line_no}::"
             f"New DocFX <list type=\"...\"> block introduced: '{text}'. "
             f"<list type=\"table\">/<list type=\"bullet\"> is .NET XML-doc "
-            f"syntax that DocFX used to resolve into a real table or list -- "
+            f"syntax that DocFX used to resolve into a real table or list; "
             f"Mintlify's MDX renderer does not, so it either breaks the build "
             f"or renders as garbled tag soup. Convert it to a real Markdown "
             f"table or bullet list instead (see #410 for the established "
             f"fix pattern)."
         )
 
-    print(f"\n{len(all_hits)} new DocFX <list type=\"...\"> block(s) added -- see errors above.")
+    print(f"\n{len(all_hits)} new DocFX <list type=\"...\"> block(s) added; see errors above.")
     return 1
 
 

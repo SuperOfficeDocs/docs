@@ -1,7 +1,7 @@
 """Shared repo-file-listing helpers for the tools/ci/ guard family (#431/#435).
 
 Duplicated near-verbatim across several CI guard/auto-fix scripts before
-this module existed -- each needs to either enumerate tracked `.md`/`.mdx`
+this module existed. Each needs to either enumerate tracked `.md`/`.mdx`
 files under a scope, or safely resolve a PR-diff-supplied relative path
 against the repo root without letting a crafted filename escape it.
 """
@@ -32,8 +32,8 @@ def list_path_files(scope):
 
 def resolve_safe_path(rel_path):
     """Resolve rel_path against REPO_ROOT and refuse anything that escapes
-    it (defends against a crafted PR-diff filename attempting path
-    traversal -- a changed-files list arrives as untrusted content)."""
+    it. Defends against a crafted PR-diff filename attempting path
+    traversal, since a changed-files list arrives as untrusted content."""
     candidate = (REPO_ROOT / rel_path).resolve()
     try:
         candidate.relative_to(REPO_ROOT)
