@@ -41,4 +41,11 @@ jobs:
 
       - name: "Check changed files for mixed landing-page template markup"
         if: steps.changed.outputs.any_changed == 'true'
-        run: python tools/ci/check-landing-page-templates.py ${{ steps.changed.outputs.all_changed_files }}
+        # The changed-files list is untrusted PR-diff content (attacker-controlled
+        # filenames). Pass it through env instead of interpolating the `${{ }}`
+        # expression directly into the run script -- direct interpolation is a
+        # known GitHub Actions script-injection vector, since the expression is
+        # substituted into the shell script's source text before bash parses it.
+        env:
+          CHANGED_FILES: ${{ steps.changed.outputs.all_changed_files }}
+        run: python tools/ci/check-landing-page-templates.py $CHANGED_FILES
