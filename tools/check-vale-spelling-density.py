@@ -1,29 +1,24 @@
 #!/usr/bin/env python3
-"""Flag anomalous per-file Vale spelling-alert density as a language-leakage
-proxy -- built for issue #88 (pre-softlaunch smoke test).
+"""Flag anomalous per-file Vale spelling-alert density as a language-leakage proxy; built for issue #88
+(pre-softlaunch smoke test).
 
-This repo's .vale.ini already runs real per-language Hunspell spellchecking
-(da/**->DA->da_DK.dic, de/**->DE->de_DE.dic, nl/**->NL->nl_NL.dic,
-no/**->NB->nb_NO.dic, sv/**->SV->sv_SE.dic, all at `level: error`). If a
-paragraph of the wrong language lands in a file, most of its words won't be
-valid words in the containing file's own language and the file's Spelling
-hit count should spike relative to its peers -- no new dependency needed.
+This repo's .vale.ini already runs real per-language Hunspell spellchecking (da/**->DA->da_DK.dic,
+de/**->DE->de_DE.dic, nl/**->NL->nl_NL.dic, no/**->NB->nb_NO.dic, sv/**->SV->sv_SE.dic, all at
+`level: error`). If a paragraph of the wrong language lands in a file, most of its words won't be valid
+words in the containing file's own language and the file's Spelling hit count should spike relative to its
+peers, so no new dependency is needed.
 
-Deliberately density-based (hits per 1,000 words), not a raw count: this
-repo's own CRM/product terminology isn't in a stock Hunspell dictionary
-either, so every file already carries real baseline noise (~20+ hits/file
-observed on da/ alone) purely from legitimate compound words and product
-names the dictionary doesn't know. A raw threshold would just flag "has a
-lot of text"; density relative to that language's own median is what
-actually surfaces an outlier.
+Deliberately density-based (hits per 1,000 words), not a raw count: this repo's own CRM/product terminology
+isn't in a stock Hunspell dictionary either, so every file already carries real baseline noise (~20+
+hits/file observed on da/ alone) purely from legitimate compound words and product names the dictionary
+doesn't know. A raw threshold would just flag "has a lot of text"; density relative to that language's own
+median is what actually surfaces an outlier.
 
-Known blind spot, stated plainly rather than oversold: Danish, Norwegian
-Bokmal, and Swedish share enough vocabulary that a paragraph of one leaking
-into another may not add many *extra* misspellings -- the leaked words can
-still be valid-ish words in the wrong dictionary. This method is much more
-reliable for a leak with little shared vocabulary (e.g. German into Dutch)
-than for the Nordic-language case. Treat flagged outliers as "worth a
-30-second manual look," not proof, and pair with an actual skim of a few
+Known blind spot, stated plainly rather than oversold: Danish, Norwegian Bokmal, and Swedish share enough
+vocabulary that a paragraph of one leaking into another may not add many *extra* misspellings, since the
+leaked words can still be valid-ish words in the wrong dictionary. This method is much more reliable for a
+leak with little shared vocabulary (for example German into Dutch) than for the Nordic-language case. Treat
+flagged outliers as "worth a 30-second manual look," not proof, and pair with an actual skim of a few
 per-language pages for the Nordic direction specifically.
 
 Usage:
@@ -34,7 +29,7 @@ Usage:
 Requires the Vale CLI (this repo already declares Packages = Microsoft, MDX
 in .vale.ini; run `vale sync --config=.vale.ini` once first if those
 haven't been synced locally yet). Exit code is non-zero if any outlier is
-found -- treat that as "go look," not "go fix."
+found; treat that as "go look," not "go fix."
 """
 import argparse
 import json
@@ -67,8 +62,8 @@ def count_words(text):
 def run_vale(vale_bin, repo_root, lang):
     """Runs vale with a repo-relative directory argument and cwd=repo_root.
 
-    Vale's own .vale.ini glob sections (e.g. "[da/**]") match against the
-    path as given -- an absolute directory argument makes every file's
+    Vale's own .vale.ini glob sections (for example "[da/**]") match against the
+    path as given; an absolute directory argument makes every file's
     reported path absolute too, which no longer matches a relative glob
     like "da/**". Vale then silently falls back to only the generic
     "[*.{md,mdx}]" section and skips the language-specific style entirely
@@ -102,7 +97,7 @@ def main():
     parser.add_argument("--factor", type=float, default=3.0,
                          help="Flag files whose density exceeds median * factor (default: 3.0)")
     parser.add_argument("--min-words", type=int, default=30,
-                         help="Ignore files below this word count -- too short for density to be meaningful")
+                         help="Ignore files below this word count, too short for density to be meaningful")
     parser.add_argument("--repo-root", default=".", help="Repo root (default: current directory)")
     args = parser.parse_args()
 
@@ -168,7 +163,7 @@ def main():
                 f.write(f"{lang}\t{rel}\t{hits}\t{words}\t{density:.1f}\n")
     print(f"\nWrote {sum(len(v) for v in all_outliers.values())} outlier row(s) to {out_path}")
     print("Known blind spot: da/no/sv share vocabulary, so this method is weakest exactly "
-          "for that cross-contamination direction -- pair with a manual skim.")
+          "for that cross-contamination direction; pair with a manual skim.")
     sys.exit(1)
 
 

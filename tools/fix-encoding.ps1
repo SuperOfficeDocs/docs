@@ -12,7 +12,7 @@
     Report-only by default; pass -Fix to write corrected files. Runs a BOM check
     after each fix, matching this folder's write-side conventions (see README.md).
 
-    Still actively used for real translation fixes (e.g. issue #244) - not
+    Still actively used for real translation fixes (for example, issue #244) - not
     superseded by check-encoding.py, which is audit-only and covers a different,
     stricter mojibake-detection method.
 

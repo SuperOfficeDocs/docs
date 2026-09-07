@@ -1,6 +1,6 @@
 # tools/
 
-Scripts that convert, generate, or verify content for this repo. Not published to the docs site — see `contribute/` for contributor-facing how-tos that reference these scripts (for example [`how-to-update-crmscript-reference`](../contribute/how-to-update-crmscript-reference.mdx)).
+Scripts that convert, generate, or verify content for this repo. Not published to the docs site — see `contribute/` for contributor-facing how-tos that reference these scripts (for example `contribute/how-to-update-crmscript-reference.mdx`).
 
 ## Folder layout
 
@@ -8,7 +8,7 @@ Scripts that convert, generate, or verify content for this repo. Not published t
 * **`ci/`** — scripts only ever invoked by a GitHub Actions workflow, not part of a contributor's manual workflow. Moving or renaming one of these requires updating the matching `.github/workflows/*.yml`.
 * **`ci/lib/`** — shared helpers for the `ci/` guard/auto-fix scripts (#435): `markdown_masking.py` (fenced-code/inline-code/frontmatter/import-line masking, the `GENERATED_TREE_PREFIXES` constant), `repo_files.py` (`list_path_files`, `resolve_safe_path`, `file_path_to_url`), `diff_utils.py` (`get_added_line_numbers`). A new guard script needing one of these should import it rather than re-copying it. Has its own pytest suite (`test_*.py`), this repo's first Python tests.
 * **Top level (`tools/`)** — shared utilities used long-term, by contributors and/or CI: encoding/BOM/nav/redirect verification, the CRMScript reference generator, benchmarking, and the footer/sitemap generators.
-* **`benchmarks/`** — its own self-contained subfolder (setup, scripts, `lib/`, `results/`); see [`benchmarks/README.md`](benchmarks/README.md).
+* **`benchmarks/`** — its own self-contained subfolder (setup, scripts, `lib/`, `results/`); see `benchmarks/README.md`.
 
 ## Tool inventory
 
@@ -78,6 +78,36 @@ Scripts that convert, generate, or verify content for this repo. Not published t
 | `build-learn-sitemaps.py` | top level | Regenerates the per-language Userflow userhelp sitemap pages | Yes |
 | `convert-swagger-to-openapi.ps1` | top level | Swagger 2.0 → OpenAPI 3.x conversion, with a `-Files` mode and a known-missing-`$ref` fixup table for CI use | Yes — until #147 lands (see issue #297); moved out of `migration/` since it's now CI-invoked on every relevant PR, not one-time forklift cruft |
 | `benchmarks/*` | benchmarks/ | Page-load, search-latency, and nav-responsiveness benchmarking | Yes — see `benchmarks/README.md` |
+
+## Writing a new script or workflow
+
+House rules for anything new added under `tools/` or `.github/workflows/` — distilled from real bugs found and fixed in this repo.
+
+* **Never interpolate `${{ }}` directly into a `run:` step.** GitHub Actions substitutes the expression into the shell script's *source text* before bash parses it — an attacker-influenced value (a PR-diff filename, a branch name) can break out of its intended position and run arbitrary commands on the runner. Always route it through that step's own `env:` block and reference it as a shell variable instead:
+
+  ```yaml
+  # Wrong -- script-injection risk
+  - run: python tools/ci/check-something.py ${{ steps.changed.outputs.all_changed_files }}
+
+  # Correct
+  - env:
+      CHANGED_FILES: ${{ steps.changed.outputs.all_changed_files }}
+    run: python tools/ci/check-something.py $CHANGED_FILES
+  ```
+
+  Two sibling guard workflows had exactly this bug (#428) after the same pattern was already fixed once for a third (#378) — a new blocking CI guard (`workflow-injection-guard.yml`, #429) now fails the build if this pattern reappears in any workflow, so this rule is enforced, not just documented.
+
+* **A new workflow that commits and pushes back to a PR branch must join the shared concurrency group.** If it's not the only workflow that can trigger on the same paths, use `group: autofix-push-${{ github.ref }}` (not a workflow-scoped group name) with `cancel-in-progress: false`, so it queues behind a competing auto-fix's push instead of racing it or cancelling its work (#431). A workflow-scoped concurrency group only stops two runs of *itself* from racing — it does nothing for a *different* workflow pushing to the same ref.
+
+* **Don't mix unrelated content domains in one script, guard, or workflow.** `database`, `openapi`, and similar distinct trees stay in their own script/workflow even if they'd otherwise share boilerplate — a shared *domain* like "generated API reference" (`mdo-providers`/`archive-providers`/`webapi`, which share a generation shape and lifecycle) is fine to combine, as `generated-reference-autofix.yml` does; a shared *mechanism* (both "commit and push," both "read frontmatter") is not a reason to combine otherwise-unrelated domains into one file.
+
+* **Reuse the shared `tools/ci/lib/` helpers** (`markdown_masking.py`, `repo_files.py`, `diff_utils.py`) instead of copy-pasting masking/file-listing/diff logic into a new guard script — see the Python script conventions section below for the import pattern. Only extract a *new* shared helper when the same non-trivial logic is genuinely duplicated across 3+ scripts; a bespoke variant with its own extra filtering isn't a duplicate.
+
+* **Case-sensitivity**: any `Test-Path`/file-existence check comparing a derived name against a real filename should assume a case-*sensitive* filesystem, even when developed on Windows. CI's Linux runners and the live (Linux-served) site are case-sensitive; this dev machine's filesystem is not, so a casing bug can pass every local check and only surface on a PR or in production.
+
+* **Line length in comments/docstrings**: up to 120 characters is fine. Don't over-wrap prose into short, choppy lines just to stay near 80 — a comment that reads as 3 fragmented lines when it could be one clear one is worse, not more disciplined.
+
+* **Advisory vs. blocking**: default a new guard to advisory (`::warning::` annotation, exit 0) — this repo's guard family is advisory-first by design. Reserve a blocking (non-zero exit) guard for a permanent-regression-class bug (something that would otherwise keep quietly reappearing on every regen) or a security gate; document the exception in `contribute/automated-tests.mdx` alongside the existing blocking exceptions (`office-format-download-guard`, `docfx-legacy-tags-guard`, `workflow-injection-guard`) so the list of "why is this one different" stays in one place.
 
 ## PowerShell script conventions
 
@@ -152,7 +182,7 @@ If those two hashes match, the file is byte-identical to `HEAD` — regardless o
 
 ## `find-stale-generated-pages.py` (issue #216)
 
-Checks three content trees generated by a pipeline outside this repo (archive-providers, mdo-providers, database/tables) for pages that have dropped out of their tree's `nav-*.json` but are still sitting in the repo — see the script's own docstring and [`contribute/automated-tests.mdx`](../contribute/automated-tests.mdx#stale-generated-pages) for the mechanism.
+Checks three content trees generated by a pipeline outside this repo (archive-providers, mdo-providers, database/tables) for pages that have dropped out of their tree's `nav-*.json` but are still sitting in the repo — see the script's own docstring and `contribute/automated-tests.mdx` ("Stale generated pages") for the mechanism.
 
 * **Extending to a new tree**: add one entry to the `TREES` list at the top of the script (`folder` + matching `nav` file). Nothing else is tree-specific — file walking, nav parsing, and the `generated: true` guardrail all apply generically.
 * **The `generated: true` guardrail is load-bearing, not decorative**: while building this check, `en/database/tables/index-by-id.mdx` turned up as "on disk, not in nav" — but it's real, linked-to content (`index.mdx` links to it directly), just missing from nav by omission. It carries `generated: true`, so a delete-blind version of this check would have flagged it as safe to remove. Fixed by adding it to `config/nav-database-tables.json` instead. Any future tree added here should expect the same kind of one-off nav gap to show up the first time the check runs against it — treat a fresh tree's first clean run as a real verification step, not a formality.

@@ -8,10 +8,10 @@ exceptions.
 Background: config/redirects.json (docs.json only holds a $ref pointer to
 it, since the modular-config split) accumulates one 1:1 entry per
 moved/renamed page. Many entries turn out to share a source prefix and a
-consistent transform (e.g. every `/en/api/netserver/X` redirecting to
+consistent transform (for example every `/en/api/netserver/X` redirecting to
 `/en/api/X` - the same segment stripped every time), which Mintlify's
 wildcard syntax (`"/prefix/*"` -> `"/other-prefix/*"`, confirmed against
-this file's own existing wildcard entries, e.g. the gmail-link and
+this file's own existing wildcard entries, for example the gmail-link and
 release-notes/8.5/pocket-crm rules) can express as one rule. Not every
 group is 100% uniform - most have a handful of entries that don't fit
 (a renamed page, a multi-source consolidation) - so --report still shows
@@ -34,7 +34,7 @@ Three safety checks are always run before a group can be applied:
   - COLLISION: does real content already exist at the candidate wildcard's
     source path? If so the wildcard would shadow live pages - refuse
     (override with --force only if you've independently confirmed it's
-    fine, e.g. the collision is itself about to be deleted).
+    fine, for example the collision is itself about to be deleted).
   - CIRCULAR: does any other redirect's destination point into the
     source prefix being wildcarded away? Flagged as a warning, not a hard
     stop, since it may be an intentional multi-hop chain - review by hand.

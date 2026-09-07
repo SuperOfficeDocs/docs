@@ -24,13 +24,13 @@ delete candidates - the same signal #164/#165 already use to distinguish
 this content from hand-authored pages that happen to live alongside it.
 
 One exemption, found live (2026-08-19) as a false positive rather than a
-real gap: a page with `hidden: true` frontmatter (e.g.
+real gap: a page with `hidden: true` frontmatter (for example
 `en/database/tables/index-by-id`, linked from `index`'s own body but
 deliberately excluded from the sidebar/search index) is reachable by
 design without a nav-*.json entry at all - exempted outright rather than
 reported.
 
-Note on each tree's own root/landing page (e.g. `.../reference/index`):
+Note on each tree's own root/landing page (for example `.../reference/index`):
 this script only ever reads a tree's own dedicated `nav-<tree>.json`
 (a flat pages list), never the parent file (`nav-api.json`/`nav-en.json`)
 that wires that tree's group into the sidebar via a `"root"` reference -
@@ -45,7 +45,7 @@ this script for a pattern only one tree needed.
 Anything stale-looking but not marked `generated: true` is reported
 separately, for manual review, and never deleted.
 
-To add a new tree once its pipeline exists (e.g. WebAPI/OpenAPI), add one
+To add a new tree once its pipeline exists (for example WebAPI/OpenAPI), add one
 entry to TREES below - nothing else in this script is tree-specific.
 
 Usage:

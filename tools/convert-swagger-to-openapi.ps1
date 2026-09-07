@@ -8,10 +8,10 @@
     Source files are read from api-sources/ and converted files are written to the documentation structure.
 
 .PARAMETER SourcePath
-    Path to the folder containing Swagger 2.0 JSON files (e.g., api-sources/openapi/agent/)
+    Path to the folder containing Swagger 2.0 JSON files, for example api-sources/openapi/agent/
 
 .PARAMETER DestinationPath
-    Path where OpenAPI 3.x files should be written (e.g., en/api/web-services/endpoints/agents-webapi/reference/)
+    Path where OpenAPI 3.x files should be written, for example en/api/web-services/endpoints/agents-webapi/reference/
 
 .PARAMETER FilePattern
     File pattern to match when -Files is not supplied. Default: "Swagger-v1-*.json"
@@ -46,14 +46,12 @@ param(
     [string[]]$Files
 )
 
-# When invoked as an external process (as CI does), PowerShell's CLI parameter
-# binder only assigns the first bare value after -Files to this array parameter;
-# any further bare values become unbound positional arguments and error out with
-# "A positional parameter cannot be found ..." (confirmed via #338 -- the CI
-# workflow's own multi-file $agent_files/$rest_files call always broke this way
-# once more than one Swagger file changed in a PR, which is every ADO content
-# drop). The workflow now passes multiple files newline-joined as one quoted
-# string; split that back out here so both that call shape and the single-file
+# When invoked as an external process (as CI does), PowerShell's CLI parameter binder only assigns the first
+# bare value after -Files to this array parameter; any further bare values become unbound positional
+# arguments and error out with "A positional parameter cannot be found ..." (confirmed via #338: the CI
+# workflow's own multi-file $agent_files/$rest_files call always broke this way once more than one Swagger
+# file changed in a PR, which is every ADO content drop). The workflow now passes multiple files
+# newline-joined as one quoted string; split that back out here so both that call shape and the single-file
 # docstring examples above keep working.
 if ($Files) {
     $Files = $Files | ForEach-Object { $_ -split '\r?\n' } | Where-Object { $_.Trim() -ne '' }

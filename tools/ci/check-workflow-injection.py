@@ -3,33 +3,28 @@
 `${{ }}` expression directly into a `run:` shell script, instead of routing
 it through that step's own `env:` block (see #428, #429).
 
-Direct interpolation is a known GitHub Actions script-injection vector: the
-expression is substituted into the shell script's *source text* before bash
-parses it, so any attacker-influenced value (a PR-diff filename, a branch
-name, an issue title) can break out of its intended argument position and
-run arbitrary commands on the runner. Two sibling guard workflows
-(`landing-page-template-guard.yml`, `markdownlint.yml`) had exactly this bug
--- fixed in #428 -- after the same pattern was fixed once already for
-`index-relative-links-guard.yml` during #378, with "every sibling guard
-shares that same latent pattern" left as an unfixed follow-up at the time.
-This check exists so the pattern can't silently reappear in a new or edited
-workflow.
+Direct interpolation is a known GitHub Actions script-injection vector: the expression is substituted
+into the shell script's *source text* before bash parses it, so any attacker-influenced value (a
+PR-diff filename, a branch name, an issue title) can break out of its intended argument position and
+run arbitrary commands on the runner. Two sibling guard workflows (`landing-page-template-guard.yml`,
+`markdownlint.yml`) had exactly this bug, fixed in #428, after the same pattern was fixed once
+already for `index-relative-links-guard.yml` during #378, with "every sibling guard shares that same
+latent pattern" left as an unfixed follow-up at the time. This check exists so the pattern can't
+silently reappear in a new or edited workflow.
 
-What is flagged: any `${{ EXPR }}` appearing inside a step's `run:` script
-body, where EXPR references one of the context prefixes that can carry
-attacker-influenced or otherwise external content -- `github.*`,
-`steps.*.outputs.*`, `needs.*.outputs.*`, `inputs.*`. The fix is always the
-same: move the expression into that step's `env:` block and reference it as
-a shell variable (`$NAME`) inside `run:` instead.
+What is flagged: any `${{ EXPR }}` appearing inside a step's `run:` script body, where EXPR
+references one of the context prefixes that can carry attacker-influenced or otherwise external
+content: `github.*`, `steps.*.outputs.*`, `needs.*.outputs.*`, `inputs.*`. The fix is always the
+same: move the expression into that step's `env:` block and reference it as a shell variable
+(`$NAME`) inside `run:` instead.
 
-What is deliberately NOT flagged: `${{ }}` used anywhere else in a workflow
-(trigger conditions, `if:`, `with:`, and -- critically -- a step's own
-`env:` block, which is exactly where these expressions belong) and other
-context prefixes not driven by external/attacker-controlled data
-(`matrix.*`, `runner.*`, `secrets.*`, `vars.*`, `env.*`).
+What is deliberately NOT flagged: `${{ }}` used anywhere else in a workflow (trigger conditions,
+`if:`, `with:`, and, critically, a step's own `env:` block, which is exactly where these expressions
+belong) and other context prefixes not driven by external/attacker-controlled data (`matrix.*`,
+`runner.*`, `secrets.*`, `vars.*`, `env.*`).
 
-This is a security gate, not a style-lint -- like `check-no-office-format-
-downloads.py`, it fails the build outright rather than warning.
+This is a security gate, not a style-lint; like `check-no-office-format-downloads.py`, it fails the
+build outright rather than warning.
 
 Usage:
     python tools/ci/check-workflow-injection.py
@@ -46,7 +41,7 @@ WORKFLOWS_DIR = REPO_ROOT / ".github" / "workflows"
 
 # Context prefixes that can carry external/attacker-influenced content when
 # interpolated directly into a shell script. Deliberately excludes
-# matrix./runner./secrets./vars./env. -- those aren't the injection vector
+# matrix./runner./secrets./vars./env.; those aren't the injection vector
 # this guard targets, and flagging them would just be noise.
 UNSAFE_EXPR_RE = re.compile(
     r"\$\{\{\s*"
@@ -88,7 +83,7 @@ def check_workflow(path):
             # Locate the run block in the raw file to report a real line
             # number. run_text is matched verbatim against the source, so
             # this is exact unless two steps share byte-identical run
-            # text -- an acceptable approximation for a build-time gate.
+            # text, an acceptable approximation for a build-time gate.
             block_offset = raw.find(run_text)
             if block_offset == -1:
                 line_no = 1
@@ -98,7 +93,7 @@ def check_workflow(path):
                 (
                     line_no,
                     f"job '{job_id}', step '{step_name}' interpolates '${{{{ {expr} }}}}' "
-                    f"directly into run: -- move it into this step's env: block and "
+                    f"directly into run:; move it into this step's env: block and "
                     f"reference it as a shell variable instead (script-injection risk).",
                 )
             )
@@ -118,7 +113,7 @@ def main():
             print(f"::error file={rel_path},line={line_no}::{message}")
 
     if total_hits:
-        print(f"\n{total_hits} script-injection risk(s) found -- see errors above.")
+        print(f"\n{total_hits} script-injection risk(s) found; see errors above.")
         return 1
 
     print("No direct ${{ }} interpolation of untrusted contexts found in any run: step.")

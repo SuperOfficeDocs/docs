@@ -15,11 +15,11 @@ verified to reproduce the file byte-for-byte (modulo a trailing newline), so
 this operates on the whole file rather than text-splicing a fragment.
 
 Usage:
-    Replace an existing item's groups (e.g. filling the "API" stub):
+    Replace an existing item's groups (for example filling the "API" stub):
         python tools/splice-nav-groups.py config/nav-en.json --tab "Developer guide" \
             --mode replace --item "API" --groups-file tmp-api-nav.json
 
-    Insert a brand new menu item (e.g. adding "Automation"):
+    Insert a brand new menu item (for example adding "Automation"):
         python tools/splice-nav-groups.py config/nav-en.json --tab "Developer guide" \
             --mode insert --insert-item "Automation" --icon "gear" \
             --groups-file tmp-automation-nav.json --after "Developer Portal"

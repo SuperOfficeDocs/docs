@@ -2,39 +2,35 @@
 """Rename the reserved `version:` frontmatter property to `so_version:` on
 changed files (see issue #254).
 
-Mintlify's search backend treats `version` as a reserved search-filter
-field and 400s on the non-string value our own `version:` frontmatter
-produced -- one of the causes behind #248 (site search returning zero
-results). The property was bulk-renamed to `so_version` repo-wide; this
-auto-fixes it if it quietly comes back (e.g. a copy-pasted frontmatter
-block from an old branch, muscle memory, or an external generator pipeline
-that doesn't know about the rename -- see #291, where this happened for
-real on a first generator PR from #150's ADO pipeline).
+Mintlify's search backend treats `version` as a reserved search-filter field and 400s on the
+non-string value our own `version:` frontmatter produced, one of the causes behind #248 (site search
+returning zero results). The property was bulk-renamed to `so_version` repo-wide; this auto-fixes it
+if it quietly comes back (for example a copy-pasted frontmatter block from an old branch, muscle
+memory, or an external generator pipeline that doesn't know about the rename; see #291, where this
+happened for real on a first generator PR from #150's ADO pipeline).
 
-This used to be a warn-only check (`check-reserved-version-property.py`,
-retired by this change) -- promoted to an auto-fix, matching the precedent
-set by `add-database-enum-sidebar-titles.py`/`add-mdo-provider-sidebar-titles.py`:
-a warning a human has to notice and fix by hand doesn't help an external,
-automated pipeline that will just reintroduce the same mistake on its next
-run. Rewriting the property directly and pushing a fix commit closes the
+This used to be a warn-only check (`check-reserved-version-property.py`, retired by this change),
+promoted to an auto-fix, matching the precedent set by
+`add-database-enum-sidebar-titles.py`/`add-mdo-provider-sidebar-titles.py`: a warning a human has to
+notice and fix by hand doesn't help an external, automated pipeline that will just reintroduce the
+same mistake on its next run. Rewriting the property directly and pushing a fix commit closes the
 loop without a human in it.
 
-This is a pure key rename -- the value and every other frontmatter line is
-left untouched, matching `tools/migration/rename-version-property.py`'s
-original bulk-rename logic exactly (this script is that logic, scoped to
-a changed-files list instead of the whole repo, and wired for --apply by
+This is a pure key rename: the value and every other frontmatter line is left untouched, matching
+`tools/migration/rename-version-property.py`'s original bulk-rename logic exactly (this script is
+that logic, scoped to a changed-files list instead of the whole repo, and wired for --apply by
 default in CI).
 
 Frontmatter is isolated the same way as every other script in this family:
 match `^(---\\n)(.*?\\n)(---\\n?)(.*)$` (DOTALL, non-greedy) against the file
-with CRLF normalized to LF first, and only ever edit group 2 -- so a
+with CRLF normalized to LF first, and only ever edit group 2, so a
 `version:` example living inside a fenced code sample in a page body is
 correctly left untouched. BOM is preserved on write if present on read.
 
 Modes:
   Default (no --apply): audit only, reports what would change, no writes.
   --apply: performs the rename for the scoped files.
-  Positional file args scope to an explicit list (e.g. a PR's changed-files
+  Positional file args scope to an explicit list (for example a PR's changed-files
   list); --path scopes to a folder instead (default: whole repo).
 
 Usage:
@@ -104,7 +100,7 @@ def process_file(rel_path, apply_changes):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("files", nargs="*", help="Specific files to check (e.g. a PR's changed-files list)")
+    parser.add_argument("files", nargs="*", help="Specific files to check (for example a PR's changed-files list)")
     parser.add_argument("--path", help="Scope to one folder instead of an explicit file list (default: whole repo)")
     parser.add_argument("--apply", action="store_true", help="Rewrite version: to so_version: (default: audit only, no writes)")
     args = parser.parse_args()

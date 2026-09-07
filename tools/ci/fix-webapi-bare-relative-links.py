@@ -39,7 +39,7 @@ this exact link syntax is never rewritten.
 Modes:
   Default (no --apply): audit only, reports what would change, no writes.
   --apply: performs the rewrite for the scoped files.
-  Positional file args scope to an explicit list (e.g. a PR's changed-files
+  Positional file args scope to an explicit list (for example a PR's changed-files
   list); --path scopes to a folder instead (default: en/api/reference/webapi).
 
 Usage:
@@ -60,13 +60,13 @@ from lib.markdown_masking import mask_fenced_code, mask_inline_code_spans  # noq
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 DEFAULT_SCOPE = "en/api/reference/webapi"
 
-# ](Name.md) or ](Name.md\#Anchor) or ](Name.md#Anchor) -- bare filename,
+# ](Name.md) or ](Name.md\#Anchor) or ](Name.md#Anchor): bare filename,
 # no path segment, no scheme. Anchor half is optional.
 BARE_LINK_RE = re.compile(
     r"\]\(([A-Za-z0-9_.\\]+)\.md(?:(\\?#)([A-Za-z0-9_\\]+))?\)"
 )
 # A destination that looks like this bug but carries a path segment or a
-# scheme -- never observed in this tree, so surfaced rather than rewritten.
+# scheme, never observed in this tree, so surfaced rather than rewritten.
 UNEXPECTED_LINK_RE = re.compile(r"\]\([^)]*/[^)]*\.md[^)]*\)")
 
 
@@ -139,8 +139,8 @@ def process_file(rel_path, apply_changes):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("files", nargs="*", help="Specific files to check (e.g. a PR's changed-files list)")
-    parser.add_argument("--files-from", help="Read the file list from a newline-separated file instead of argv -- avoids the OS argument-list limit when a PR touches thousands of files at once (see #400's own CI failure)")
+    parser.add_argument("files", nargs="*", help="Specific files to check (for example a PR's changed-files list)")
+    parser.add_argument("--files-from", help="Read the file list from a newline-separated file instead of argv; avoids the OS argument-list limit when a PR touches thousands of files at once (see #400's own CI failure)")
     parser.add_argument("--path", default=DEFAULT_SCOPE, help=f"Scope to one folder instead of an explicit file list (default: {DEFAULT_SCOPE})")
     parser.add_argument("--apply", action="store_true", help="Rewrite bare-relative links (default: audit only, no writes)")
     args = parser.parse_args()
@@ -168,7 +168,7 @@ def main():
         print(f"  {rel_path}")
 
     if all_unexpected:
-        print(f"\n{len(all_unexpected)} unexpected relative .md link(s) with a path segment -- NOT rewritten, needs a human look:")
+        print(f"\n{len(all_unexpected)} unexpected relative .md link(s) with a path segment; NOT rewritten, needs a human look:")
         for rel_path, line in all_unexpected:
             print(f"  {rel_path}: {line}")
 

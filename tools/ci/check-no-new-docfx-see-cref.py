@@ -2,40 +2,31 @@
 """Fail the build when a PR introduces a new `<see cref="T:...">` (or its
 HTML-escaped form, `&lt;see cref="T:...">`) DocFX XML-doc cross-reference.
 
-`<see cref="T:Namespace.Type">Label</see>` (and the self-closing
-`<see cref="T:Namespace.Type" />`) is .NET XML-doc-comment syntax, not HTML.
-DocFX used to resolve it into a real hyperlink; Mintlify's MDX renderer
-does not, so it either breaks the MDX parser outright (an unmatched `<`,
-see #403/PR #406) or -- far more often -- silently compiles as an
-unrecognized custom element, dropping the link and leaving only the bare
-type name visible with no indication anything is wrong.
+`<see cref="T:Namespace.Type">Label</see>` (and the self-closing `<see cref="T:Namespace.Type" />`) is
+.NET XML-doc-comment syntax, not HTML. DocFX used to resolve it into a real hyperlink; Mintlify's MDX
+renderer does not, so it either breaks the MDX parser outright (an unmatched `<`, see #403/PR #406)
+or, far more often, silently compiles as an unrecognized custom element, dropping the link and
+leaving only the bare type name visible with no indication anything is wrong.
 
-A repo-wide audit found this is not a small or new problem: 797 files /
-1,307 occurrences already exist on `main`, concentrated in the
-`archive-providers`/`mdo-providers` generated reference trees, predating
-PR #383 entirely. Fixing all of it needs a real two-pass script (resolve
-each cref against a type->page lookup built from every reference page's
-own "implemented by the class <see cref=...>" self-declaration, or fall
-back to plain text when no matching page exists) -- tracked as its own
-issue (#407), not implemented here.
+A repo-wide audit found this is not a small or new problem: 797 files / 1,307 occurrences already
+exist on `main`, concentrated in the `archive-providers`/`mdo-providers` generated reference trees,
+predating PR #383 entirely. Fixing all of it needs a real two-pass script (resolve each cref against
+a type->page lookup built from every reference page's own "implemented by the class <see cref=...>"
+self-declaration, or fall back to plain text when no matching page exists), tracked as its own issue
+(#407) and not implemented here.
 
-This guard is the stopgap asked for in the meantime: block any *new*
-occurrence from being introduced by a future PR (a hand-authored edit, or
-a fresh ADO/generator content drop) so the problem doesn't keep growing
-while the real fix is pending. It deliberately does not attempt to flag
-or fix any of the 797 pre-existing files -- only lines actually *added*
-by the PR's own diff.
+This guard is the stopgap asked for in the meantime: it blocks any *new* occurrence from being
+introduced by a future PR (a hand-authored edit, or a fresh ADO/generator content drop) so the
+problem doesn't keep growing while the real fix is pending. It deliberately does not attempt to flag
+or fix any of the 797 pre-existing files, only lines actually *added* by the PR's own diff.
 
-A genuinely new occurrence is found by diffing against base_ref to get
-each changed file's added line numbers, then checking those specific
-lines against the file's *masked* content (fenced code blocks and inline
-code spans blanked out, same helpers as
-tools/ci/check-index-relative-links.py) rather than the raw diff text --
-otherwise a legitimate documentation example of this exact syntax (e.g.
-this guard's own docs, or a future "don't do this" snippet in the
-DocFX-to-Mintlify cheat sheet) would be falsely flagged. Confirmed this
-was not hypothetical: the first version of this script, without masking,
-flagged its own added documentation in contribute/automated-tests.mdx and
+A genuinely new occurrence is found by diffing against base_ref to get each changed file's added line
+numbers, then checking those specific lines against the file's *masked* content (fenced code blocks
+and inline code spans blanked out, same helpers as tools/ci/check-index-relative-links.py) rather
+than the raw diff text; otherwise a legitimate documentation example of this exact syntax (for
+example this guard's own docs, or a future "don't do this" snippet in the DocFX-to-Mintlify cheat
+sheet) would be falsely flagged. Confirmed this was not hypothetical: the first version of this
+script, without masking, flagged its own added documentation in contribute/automated-tests.mdx and
 tools/README.md, which shows the pattern in backticks as an example.
 
 Usage:
@@ -100,12 +91,12 @@ def main():
             f"::error file={path},line={line_no}::"
             f"New DocFX XML-doc cross-reference introduced: '{text}'. "
             f"<see cref=\"T:...\"> is .NET XML-doc syntax that DocFX used to resolve into a "
-            f"real link -- Mintlify's MDX renderer does not, so this either breaks the build "
+            f"real link; Mintlify's MDX renderer does not, so this either breaks the build "
             f"or silently renders as dead text with the link dropped. Don't introduce new "
             f"occurrences; see the tracking issue for the real two-pass fix."
         )
 
-    print(f"\n{len(all_hits)} new DocFX <see cref> reference(s) added -- see errors above.")
+    print(f"\n{len(all_hits)} new DocFX <see cref> reference(s) added; see errors above.")
     return 1
 
 

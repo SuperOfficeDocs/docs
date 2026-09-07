@@ -32,15 +32,15 @@ def test_mask_fenced_code_blanks_body_preserving_line_count():
 
 
 def test_mask_fenced_code_self_closed_fence_does_not_toggle():
-    # A self-closed, single-line fence (opening and closing backticks on
-    # the same line) is not a real fence delimiter -- it must not flip
-    # in_fence, or every real fence delimiter after it inverts parity and
-    # unrelated content further down the file gets silently blanked.
+    # A self-closed, single-line fence (opening and closing backticks on the
+    # same line) is not a real fence delimiter. It must not flip in_fence,
+    # or every real fence delimiter after it inverts parity and unrelated
+    # content further down the file gets silently blanked.
     text = "```http://example.com```\nreal content\n```\nfenced\n```\nmore real content"
     masked = mask_fenced_code(text)
     lines = masked.split("\n")
     assert lines[0] == ""  # self-closed fence line itself is blanked
-    assert lines[1] == "real content"  # NOT blanked -- this is the regression #351/#360 guarded against
+    assert lines[1] == "real content"  # NOT blanked, this is the regression #351/#360 guarded against
     assert lines[3] == ""  # inside the real fence
     assert lines[5] == "more real content"  # after the real fence closes
 

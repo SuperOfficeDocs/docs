@@ -6,21 +6,18 @@ openapi/rest/ directory listings (see issue #297).
 These two files are Mintlify's nav-shape wrapper around the converted
 OpenAPI 3 specs produced from api-sources/openapi/{agent,rest}/ by
 tools/convert-swagger-to-openapi.ps1 (see api-sources/openapi/CONVERSION-NOTES.md).
-A file added to or removed from openapi/{agent,rest}/ needs a matching nav
-entry added or removed, or the page is either unreachable (added, unwired)
-or a dangling reference (removed, orphaned) -- confirmed missing for two
-specs (Mailing, PictureFolder) added by PR #232 with no automation to
-notice. Each entry's shape is a fixed, mechanical function of its filename
-alone, so this is a plain directory-listing regen, not a diff/patch script.
+A file added to or removed from openapi/{agent,rest}/ needs a matching nav entry added or removed, or
+the page is either unreachable (added, unwired) or a dangling reference (removed, orphaned):
+confirmed missing for two specs (Mailing, PictureFolder) added by PR #232 with no automation to
+notice. Each entry's shape is a fixed, mechanical function of its filename alone, so this is a plain
+directory-listing regen, not a diff/patch script.
 
-Deliberately kept separate from the OpenAPI conversion step itself: nav-vs-
-directory drift is a Mintlify-wiring concern independent of *how*
-openapi/{agent,rest}/*.json gets produced. If issue #147's native OpenAPI 3
-pipeline ever replaces the Swagger 2.0 conversion, this script (run in
-audit/check-only mode, no --apply) is a reasonable candidate to keep as a
-standing drift check on whatever directory that pipeline writes to --
-unlike tools/convert-swagger-to-openapi.ps1's known-ref fixup table, which
-is entirely a Swagger 2.0-era problem and should be deleted outright.
+Deliberately kept separate from the OpenAPI conversion step itself: nav-vs-directory drift is a
+Mintlify-wiring concern independent of *how* openapi/{agent,rest}/*.json gets produced. If issue
+#147's native OpenAPI 3 pipeline ever replaces the Swagger 2.0 conversion, this script (run in
+audit/check-only mode, no --apply) is a reasonable candidate to keep as a standing drift check on
+whatever directory that pipeline writes to, unlike tools/convert-swagger-to-openapi.ps1's known-ref
+fixup table, which is entirely a Swagger 2.0-era problem and should be deleted outright.
 
 Modes:
   Default (no --apply): audit only, reports what would change, no writes.
@@ -72,7 +69,7 @@ def derive_entries(family, openapi_dir, reference_directory):
 def render(entries):
     # Matches the existing files' format: 2-space indent, LF line endings
     # (the repo's core.autocrlf=true makes the working tree show CRLF, but
-    # the actual stored blob is LF -- see the master journal's autocrlf
+    # the actual stored blob is LF; see the master journal's autocrlf
     # lesson), trailing newline, no BOM.
     return json.dumps(entries, indent=2) + "\n"
 

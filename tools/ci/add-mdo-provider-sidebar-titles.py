@@ -8,7 +8,8 @@ root, and every regen re-pushes the tree wholesale. Most page titles are
 short, but 36 of 421 (at the time of writing) share one structured shape:
 `relationssearchlistprovider<entity><entity?><active|passive>`, where
 <entity> is one of a closed set of 5 (appointment, contact, document,
-person, sale) - e.g. `relationssearchlistproviderappointmentappointmentpassive`.
+person, sale), for example
+`relationssearchlistproviderappointmentappointmentpassive`.
 Unrecased and unbroken, that string reads poorly as a page title and
 renders far too wide in the sidebar - two separate problems, fixed here in
 two separate fields (per direct instruction: preserve every word in
@@ -53,8 +54,8 @@ for safety against a future regen that does).
 Modes:
   Default (no --apply): audit only, reports what would change, no writes.
   --apply: performs the writes for the scoped files.
-  Positional file args scope to an explicit list (e.g. a PR's changed-files
-  list); --path scopes to a folder instead (default:
+  Positional file args scope to an explicit list (for example, a PR's
+  changed-files list); --path scopes to a folder instead (default:
   en/api/mdo-providers/reference).
 
 Usage:
@@ -166,7 +167,7 @@ def process_file(rel_path, apply_changes):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("files", nargs="*", help="Specific files to check (e.g. a PR's changed-files list)")
+    parser.add_argument("files", nargs="*", help="Specific files to check (for example, a PR's changed-files list)")
     parser.add_argument("--path", default=DEFAULT_PATH, help=f"Scope to one folder instead of an explicit file list (default: {DEFAULT_PATH})")
     parser.add_argument("--apply", action="store_true", help="Write the fixes (default: audit only, no writes)")
     args = parser.parse_args()
