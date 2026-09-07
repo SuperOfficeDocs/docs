@@ -79,6 +79,36 @@ Scripts that convert, generate, or verify content for this repo. Not published t
 | `convert-swagger-to-openapi.ps1` | top level | Swagger 2.0 → OpenAPI 3.x conversion, with a `-Files` mode and a known-missing-`$ref` fixup table for CI use | Yes — until #147 lands (see issue #297); moved out of `migration/` since it's now CI-invoked on every relevant PR, not one-time forklift cruft |
 | `benchmarks/*` | benchmarks/ | Page-load, search-latency, and nav-responsiveness benchmarking | Yes — see `benchmarks/README.md` |
 
+## Writing a new script or workflow
+
+House rules for anything new added under `tools/` or `.github/workflows/` — distilled from real bugs found and fixed in this repo (#428, #431, #401, #435), not written speculatively.
+
+* **Never interpolate `${{ }}` directly into a `run:` step.** GitHub Actions substitutes the expression into the shell script's *source text* before bash parses it — an attacker-influenced value (a PR-diff filename, a branch name) can break out of its intended position and run arbitrary commands on the runner. Always route it through that step's own `env:` block and reference it as a shell variable instead:
+
+  ```yaml
+  # Wrong -- script-injection risk
+  - run: python tools/ci/check-something.py ${{ steps.changed.outputs.all_changed_files }}
+
+  # Right
+  - env:
+      CHANGED_FILES: ${{ steps.changed.outputs.all_changed_files }}
+    run: python tools/ci/check-something.py $CHANGED_FILES
+  ```
+
+  Two sibling guard workflows had exactly this bug (#428) after the same pattern was already fixed once for a third (#378) — a new blocking CI guard (`workflow-injection-guard.yml`, #429) now fails the build if this pattern reappears in any workflow, so this rule is enforced, not just documented.
+
+* **A new workflow that commits and pushes back to a PR branch must join the shared concurrency group.** If it's not the only workflow that can trigger on the same paths, use `group: autofix-push-${{ github.ref }}` (not a workflow-scoped group name) with `cancel-in-progress: false`, so it queues behind a competing auto-fix's push instead of racing it or cancelling its work (#431). A workflow-scoped concurrency group only stops two runs of *itself* from racing — it does nothing for a *different* workflow pushing to the same ref.
+
+* **Don't mix unrelated content domains in one script, guard, or workflow.** `database`, `openapi`, and similar distinct trees stay in their own script/workflow even if they'd otherwise share boilerplate — a shared *domain* like "generated API reference" (`mdo-providers`/`archive-providers`/`webapi`, which share a generation shape and lifecycle) is fine to combine, as `generated-reference-autofix.yml` does; a shared *mechanism* (both "commit and push," both "read frontmatter") is not a reason to combine otherwise-unrelated domains into one file.
+
+* **Reuse the shared `tools/ci/lib/` helpers** (`markdown_masking.py`, `repo_files.py`, `diff_utils.py`) instead of copy-pasting masking/file-listing/diff logic into a new guard script — see the Python script conventions section below for the import pattern. Only extract a *new* shared helper when the same non-trivial logic is genuinely duplicated across 3+ scripts; a bespoke variant with its own extra filtering isn't a duplicate.
+
+* **Case-sensitivity**: any `Test-Path`/file-existence check comparing a derived name against a real filename should assume a case-*sensitive* filesystem, even when developed on Windows. CI's Linux runners and the live (Linux-served) site are case-sensitive; this dev machine's filesystem is not, so a casing bug can pass every local check and only surface on a PR or in production (#189, #401).
+
+* **Line length in comments/docstrings**: up to 120 characters is fine. Don't over-wrap prose into short, choppy lines just to stay near 80 — a comment that reads as 3 fragmented lines when it could be one clear one is worse, not more disciplined.
+
+* **Advisory vs. blocking**: default a new guard to advisory (`::warning::` annotation, exit 0) — this repo's guard family is advisory-first by design. Reserve a blocking (non-zero exit) guard for a permanent-regression-class bug (something that would otherwise keep quietly reappearing on every regen) or a security gate; document the exception in `contribute/automated-tests.mdx` alongside the existing blocking exceptions (`office-format-download-guard`, `docfx-legacy-tags-guard`, `workflow-injection-guard`) so the list of "why is this one different" stays in one place.
+
 ## PowerShell script conventions
 
 Every `.ps1` script in this folder that writes file content directly (not via `git`) needs to produce byte-identical output regardless of which PowerShell edition runs it, because CI runs these scripts under `pwsh` on `ubuntu-latest`, while most local development on this repo happens under Windows PowerShell 5.1. The two differ in ways that don't show up until something actually runs cross-platform:
