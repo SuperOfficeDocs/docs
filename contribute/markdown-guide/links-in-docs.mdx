@@ -82,6 +82,8 @@ Why the split: within one topic, the same relative link text is correct in every
 
 <Note>
 **Linking to an OpenAPI-generated reference page** (`en/api/reference/restful/rest/*`, `en/api/reference/restful/agent/*`) doesn't follow the old DocFx convention. These pages have no markdown source file — they're generated at build time from the OpenAPI spec — so the target path isn't a folder/filename you can look up in the repo. Use the entity or tag name **lowercase**, followed by the specific operation in **kebab-case** (for example, `/en/api/reference/restful/rest/document/get-all`, or `/en/api/reference/restful/agent/webhook_agent/create-default-webhook`). If no single operation fits, link to the tree's generic hub page instead (`/en/api/reference/restful/agent/index`) rather than guessing at an operation. The old DocFx shapes — `restful/rest/{PascalCaseEntity}/index`, `restful/agent/{tag}` with no operation, or `{Tag_Agent}/{operationId}` — are all stale and 404 live; see [issue #402][3] and [issue #396][4] for two confirmed instances of this, and [issue #400][5]/[issue #401][6]/[issue #404][7] for the same "generated tree, old DocFx link shape" problem in other reference trees.
+
+A CI guard now catches a violation of this convention automatically — see the [Stale OpenAPI links guard][8] section of Automated tests.
 </Note>
 
 ### Amendment: "topic" isn't always one top-level folder
@@ -187,3 +189,4 @@ Currently not supported for SuperOfficeDocs.
 [5]: https://github.com/SuperOfficeDocs/docs/issues/400
 [6]: https://github.com/SuperOfficeDocs/docs/issues/401
 [7]: https://github.com/SuperOfficeDocs/docs/issues/404
+[8]: /contribute/automated-tests#stale-openapi-links-guard
