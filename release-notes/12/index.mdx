@@ -27,10 +27,60 @@ From this version, all feature updates are available to SuperOffice Online custo
 
 ## Feature updates
 
+<Update label="12.4" description="15.09.2026" tags={["Service, Marketing"]}>
+<a id="12.4"></a>
+
+### Reply to requests directly from the preview - Service
+
+Working through a request queue just got faster. You can reply to a request straight from the preview panel - no need to open the full request and lose your place in the list.
+
+* A Quick reply button is available when you preview a request from a request list or in split view.
+* Clicking it opens a compact reply editor right in the preview, so you can write and send your answer while staying in the list.
+* Replies sent this way are registered on the request exactly like a reply from the full request view — including status updates, and the list refreshes automatically.
+* If you cancel or move to another request with unsent text, you'll be asked before anything is discarded.
+* Quick reply is not shown on requests that are marked as spam, deleted or merged, so you're never offered an action that doesn't apply.
+
+**Why it matters**
+Agents handling high volumes of requests can triage, read and respond from one place, cutting down on clicks and context switching. This brings back a much-requested capability from the previous Service client.
+
+### Forms - Conditional fields in Forms - Marketing
+
+Part of the broader Forms improvement initiative to cater to more professional marketing needs. Long forms with fields that don't apply to every visitor feel overwhelming and hurt completion. Conditional fields let a form only show a question when an earlier answer makes it relevant, so each visitor sees just what matters to them while the form still captures the detail needed from everyone else.
+Where to find it: Marketing → Forms → form builder. On any eligible field's option/value, choose Add related field.
+
+**How to use it:**
+
+*	Works on dropdowns (including standard fields), radio buttons, checkboxes, rating fields (stars/smileys/dice/thumbs), extra fields (dropdown or Boolean type), and Interests fields.
+*	Eligible field types are shown with a badge when adding a new element, so users don't have to add a field first to find out.
+*	A related field appears indented below its parent, with a plain-language condition banner (e.g. "This field shows when 11–50 employees is selected"). Multiple trigger values join with "or"; rating fields use a range instead of a single value.
+*	Fields can be chained several levels deep (question → follow-up → deeper follow-up), though each related field is controlled by exactly one condition on one field.
+*	For the visitor: hidden by default, appears instantly on the triggering answer, and disappears and clears if the answer changes. A hidden field is never required, even if marked mandatory, and hidden answers aren't included in the submission.
+
+### Forms - AI styling of Forms - Marketing
+
+AI styling of forms shipped as a beta in 11.13 — a user gives a website URL and the AI suggests colors, borders, and rounded corners to match it. For 12.4 it's graduating out of beta: the results are more consistent and polished than in the original beta, and the panel is now clearer about what's AI-generated and what applying it will do, so users can trust the suggestion and know what they're getting before they commit to it.
+
+Where to find it: Marketing → Forms → edit a form → Style tab → Custom styling section.
+
+**How to use it:**
+
+*	Enter a website URL and select Generate CSS.
+*	The AI analyzes the site and proposes CSS; preview before applying.
+*	Select Apply now to override the form's default styling with the result. It only changes colors, borders, and rounded corners. Other styling needs to be changed in the basic styling section, or added as additional CSS properties (font, layout such as width/height, etc.).
+*	The panel now states plainly that this overrides the form's default styling, and carries an AI-attribution badge so it's clear the suggestion came from AI analysis of the given site rather than a manual choice.
+
+### Flows - expanded trigger conditions for custom fields - Marketing
+
+Broadening what you can build flow logic on. Extra fields of the dropdown type can now be used as a trigger condition on a Form submission, so you can filter or branch a flow based on the answer given.
+
+**Where to find it:** Flows → a trigger based on a Form submission → trigger condition on a dropdown-type extra field.
+
+**How to use it:** Select a dropdown-type extra field as a condition on a Form-submission trigger; its list values now populate so you can filter or branch on the answer given.
+
 <Update label="12.3" description="27.08.2026" tags={["Settings and maintenance"]}>
 <a id="12.3"></a>
 
-### <Badge icon="gear" color="orange">Settings and maintenance</Badge> Multiple DKIM for Mailgun
+### Multiple DKIM for Mailgun <Badge icon="gear" color="orange">Settings and maintenance</Badge>
 
 Send outgoing mail in Service and Marketing **from several domains** - such as separate brands or country-specific addresses - with each domain signed by its own DKIM key, instead of sharing one key across your SuperOffice environment.
 
@@ -51,7 +101,7 @@ Learn more about [multiple DKIM records][12].
 <Update label="12.2" description="09.07.2026" tags={["Core CRM", "Marketing"]}>
 <a id="12.2"></a>
 
-### <Badge icon="user" color="blue">Core CRM</Badge> Dashboard - Measure sale cycles {#12.2-core-1}
+### Dashboard - Measure sale cycles {#12.2-core-1} <Badge icon="user" color="blue">Sales</Badge>
 
 Understanding how long deals take to close helps you spot what's working and where deals stall. The **Sale cycle** field shows the number of days from when a sale is created until it's set to **Sold** or **Lost** - the count appears once the sale reaches one of these statuses, rather than running while it's still open. For open sales, use the **Days in stage** field instead.
 
@@ -82,7 +132,7 @@ Adding **Sale cycle** as a column in your sale selections gives you a quick view
 The **Sale cycle** shows 0 days until the sale is set to **Sold** or **Lost**. For **open** sales, use the **Days in stage** field instead.
 </Note>
 
-### <Badge icon="user" color="blue">Core CRM</Badge> Email and Document - Download the email or document file {#12.2-core-2}
+### Email and Document - Download the email or document file {#12.2-core-2} <Badge icon="user" color="blue">Core CRM</Badge>
 
 Sometimes you need a copy of an email or document outside SuperOffice - to forward it another way, archive it locally, or open it in a different tool. You can now **download** the email or document file from any archive where you see it, and from the document dialog.
 
@@ -102,7 +152,7 @@ An email in the **Inbox** also has the **Download** option in the **Task** menu.
 
 ![Download the email or document from Task button -screenshot][img7]
 
-### <Badge icon="bullseye" color="purple">Marketing</Badge> Mailing - View numbers with two decimal in Summary
+### Mailing - View numbers with two decimal in Summary <Badge icon="bullseye" color="purple">Marketing</Badge>
 
 A mailing's **Open rate** and **Click-through rate** are shown to two decimal places, giving an exact read on how recipients responded rather than a rounded approximation.
 
@@ -125,7 +175,7 @@ You can also set up the **Dashboard tiles** (Mailing - Average xx tiles) with de
 <Update label="12.1" description="16.06.2026" tags={["Settings and maintenance"]}>
 <a id="12.1"></a>
 
-### <Badge icon="gear" color="orange">Settings and maintenance</Badge> System design - Webhooks management panel {#12.1-admin-1}
+### System design - Webhooks management panel {#12.1-admin-1} <Badge icon="gear" color="orange">Settings and maintenance</Badge>
 
 The **Webhooks** panel gives administrators a visual way to manage, monitor, and recover webhooks without writing code or using the API.
 
@@ -156,7 +206,7 @@ Read more about [managing webhooks][7].
 <Update label="12.0" description="01.06.2026" tags={["Service"]}>
 <a id="12.0"></a>
 
-### <Badge icon="ticket" color="green">Service</Badge> Spam classification on requests {#12.0-service-1}
+### Spam classification on requests {#12.0-service-1} <Badge icon="ticket" color="green">Service</Badge>
 
 The **Mark as Spam** action lets users classify fraudulent or unwanted requests. Spam requests are excluded from all views, searches, reports, and selections.
 

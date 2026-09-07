@@ -5,7 +5,7 @@ sidebarTitle: "Version 11"
 description: Release notes. What's new in SuperOffice Mobile CRM version 11
 keywords: ['SuperOffice Mobile CRM', 'mobile app', 'mobile', 'release notes']
 author: SuperOffice AS - Product and Engineering
-date: 08.25.2026
+date: 09.16.2026
 so_version: 11
 content_type: release-note
 platform: mobile
@@ -27,6 +27,31 @@ language: en
 ---
 
 ## Feature updates
+
+<Update label="11.1.17" description="16.09.2026" tags={["Mobile"]}>
+<a id="11.1.17"></a>
+
+### Diary - Repeating follow-ups
+
+Users could create repeating appointments and follow-ups in the desktop and web client, but not in Mobile CRM. Anyone working primarily from mobile had to either open a desktop client or create each occurrence manually. This was one of the most requested gaps in the mobile diary (wish 12817, consolidating the earlier "Recurrence in Pocket Diary" request 7867), and closing it removes a reason to fall back to desktop, which matters for customers moving to Online.
+
+The mobile implementation is deliberately simpler than the desktop recurrence dialog. Instead of a full pattern builder, mobile offers a fixed set of presets and requires the series to be bounded. The user sets either an end date or a number of repeats, and the other value is calculated from it, so the series always has a defined end. Unbounded series force the platform to generate, store, sync and render an ever growing number of occurrences, so bounding the series at creation keeps performance predictable on mobile.
+
+**Where to find it**:
+
+In the appointment form when creating or editing a follow-up. The recurrence rows sit directly under the Starts and Ends block:
+
+* Repeat, which is set to Never by default
+* End repeat and Number of repeats, which appear together once a repeating option is selected
+
+**How to use it**:
+
+1. Create or open a follow-up and tap Repeat.
+1. Choose one of the options: Never, Every day, Every workday, Every week, Every month, Every year. "Every workday" creates occurrences Monday to Friday only.
+1. Set when the series should stop, using whichever field suits you. Pick a date in End repeat and the number of repeats is calculated for you. Or enter a number of repeats and the end date is calculated instead. One of the two has to be set.
+1. Change either field at any time and the other updates to match.
+1. Save. The follow-up is created as a series ending on the given date.
+1. To turn recurrence off, set Repeat back to Never. Both fields are hidden and cleared.
 
 <Update label="11.1.16" description="08.25.2026" tags={["Mobile"]}>
 <a id="11.1.16"></a>
@@ -266,7 +291,7 @@ When working on projects across multiple teams or systems, you often need to bri
 
 To access everything you need on the go, just open Mobile CRM, find the project and view all the connected links in one place.
 
-![Click on the Links field to go to all connecting links -screenshot][img16]
+![Click on the Links field to go to all connecting links -app-screen][img16]
 
 </Update>
 
