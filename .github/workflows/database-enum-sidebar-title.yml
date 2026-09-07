@@ -6,10 +6,13 @@ on:
     paths:
       - 'en/database/tables/enums/**'
 
-# Automatically cancel in-progress runs on the same branch
+# Shared group with every other auto-fix workflow that pushes to this same
+# PR branch -- prevents a cross-workflow push race (see the full rationale
+# in generated-reference-autofix.yml). Queue, don't cancel: a queued run's
+# checkout picks up whatever an earlier run already pushed.
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  group: autofix-push-${{ github.ref }}
+  cancel-in-progress: false
 
 permissions:
   contents: write

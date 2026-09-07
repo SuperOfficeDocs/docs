@@ -50,7 +50,9 @@ Only triggers on a PR touching `en/database/tables/enums/**`, a tree wholly gene
 
 ### Generated-reference auto-fix
 
-Consolidates 4 fixers that all touch the same overlapping generated-reference trees (`en/api/mdo-providers/reference/`, `en/api/archive-providers/reference/`, `en/api/reference/webapi/`, `en/database/tables/`) into **one** GitHub Action job, triggered on the union of their paths. This replaced 3 previously-separate workflows (`mdo-provider-sidebar-title.yml`, `reference-overflow-guard.yml`, `webapi-bare-relative-links-guard.yml`) plus the new #407 fixer below - as 4 independent workflows, each with its own "commit and push" step, they would race to push to the same PR branch ref with zero coordination, a structural bug flagged (but not fixed) during PR #338. One job means one checkout and one push, which removes the race by construction. `database-enum-sidebar-title.yml` and the Recent-pages sync check below have their own separate, still-unresolved overlap with each other and with this workflow's paths - a known follow-up, not fixed here.
+Consolidates 4 fixers that all touch the same overlapping generated-reference trees (`en/api/mdo-providers/reference/`, `en/api/archive-providers/reference/`, `en/api/reference/webapi/`, `en/database/tables/`) into **one** GitHub Action job, triggered on the union of their paths. This replaced 3 previously-separate workflows (`mdo-provider-sidebar-title.yml`, `reference-overflow-guard.yml`, `webapi-bare-relative-links-guard.yml`) plus the new #407 fixer below - as 4 independent workflows, each with its own "commit and push" step, they would race to push to the same PR branch ref with zero coordination, a structural bug flagged (but not fixed) during PR #338. One job means one checkout and one push, which removes the race by construction within this workflow.
+
+This workflow, `database-enum-sidebar-title.yml`, `openapi-conversion-guard.yml`, `recent-pages-sync.yml`, and the Reserved version frontmatter auto-fix below are still 5 *separate* workflows that can all push to the same PR branch - `database-enum-sidebar-title.yml`'s path is a subset of this workflow's `en/database/tables/` scope, and Recent-pages sync's `en/**` is a superset of both, so more than one can trigger on the same PR. [Issue #431][30] closed that remaining gap without merging the workflows' domains together (`database`/`openapi` deliberately stay separate from this "generated reference" domain, per direct instruction): all 5 now share one `concurrency: group: autofix-push-${{ github.ref }}` instead of each having its own workflow-scoped group, with `cancel-in-progress: false` so a second workflow queues behind the first's push instead of racing it.
 
 The job runs its 5 fixers in sequence, each idempotent, and pushes at most one fix commit covering whatever changed:
 
@@ -225,3 +227,4 @@ mint automations create --name "Broken link detection" --type broken-link-detect
 [27]: https://github.com/SuperOfficeDocs/docs/issues/421
 [28]: https://github.com/SuperOfficeDocs/docs/issues/429
 [29]: https://github.com/SuperOfficeDocs/docs/issues/428
+[30]: https://github.com/SuperOfficeDocs/docs/issues/431
