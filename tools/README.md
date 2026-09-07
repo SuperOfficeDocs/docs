@@ -137,7 +137,7 @@ Only extract a *new* shared helper if the same non-trivial logic (roughly: more 
 pytest tools/ci/lib/ -v
 ```
 
-A guard/auto-fix script itself is not unit-tested the same way — most operate directly against real repo content and are verified by comparing stdout before/after a change (see any recent `tools/ci/` PR's test plan for the pattern), the same reasoning `contribute/acceptance-testing.mdx` documents for this repo's broader manual/live-verification checks. The shared `ci/lib/` helpers get real unit tests instead, since they're small enough to cover with hand-built fixtures (a couple do still assert against this repo's own real content, e.g. that `docs.json` exists — deliberately, since the whole point of a helper like `REPO_ROOT` resolution is that it targets the real repo).
+A guard/auto-fix script itself is not unit-tested the same way — most operate directly against real repo content and are verified by comparing stdout before/after a change (see any recent `tools/ci/` PR's test plan for the pattern), the same reasoning `contribute/acceptance-testing.mdx` documents for this repo's broader manual/live-verification checks. The shared `ci/lib/` helpers get real unit tests instead, since they're small enough to cover with hand-built fixtures. A couple of tests deliberately still assert against this repo's own real content, for example that `docs.json` exists, since the whole point of a helper like `REPO_ROOT` resolution is that it targets the real repo.
 
 ## Verifying a regeneration is really clean
 

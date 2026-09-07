@@ -36,8 +36,8 @@ def mask_fenced_code(text):
     identical so reported line numbers stay accurate.
 
     A fence line can also be self-closed (opening and closing backticks on
-    the same line, e.g. a literal URL shown as ```http://example.com```) --
-    that's not a real fence delimiter and must not toggle in_fence, or
+    the same line, for example a literal URL shown as ```http://example.com```).
+    That's not a real fence delimiter and must not toggle in_fence, or
     every real fence delimiter after it flips parity and the mask silently
     blanks unrelated content further down the file.
     """

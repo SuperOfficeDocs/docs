@@ -15,9 +15,9 @@ REPO_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 def list_path_files(scope):
     """Every tracked `.md`/`.mdx` file at or under `scope` (a repo-relative
     folder path). Lists all tracked markdown files repo-wide via git, then
-    filters in Python, rather than passing `scope` as a git pathspec --
-    scripts with a different pathspec need (e.g. a narrower extension set,
-    or a non-glob restriction) don't use this shared helper."""
+    filters in Python, rather than passing `scope` as a git pathspec.
+    Scripts with a different pathspec need, such as a narrower extension
+    set or a non-glob restriction, don't use this shared helper."""
     out = subprocess.run(
         ["git", "ls-files", "--", "*.md", "*.mdx"],
         cwd=REPO_ROOT,
