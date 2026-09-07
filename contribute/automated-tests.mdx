@@ -28,6 +28,7 @@ This page is the single reference for every automatic check that runs against th
 | Landing page template guard | GitHub Action (`.github/workflows/landing-page-template-guard.yml`) | No - advisory (warns only) | This repo, `tools/ci/check-landing-page-templates.py` |
 | Release-notes API structure guard | GitHub Action (`.github/workflows/release-notes-api-structure-guard.yml`) | No - advisory (warns only) | This repo, `tools/ci/check-release-notes-api-structure.py` |
 | Index page relative-links guard | GitHub Action (`.github/workflows/index-relative-links-guard.yml`) | No - advisory (warns only) | This repo, `tools/ci/check-index-relative-links.py` |
+| Md extension links guard | GitHub Action (`.github/workflows/md-extension-links-guard.yml`) | No - advisory (warns only) | This repo, `tools/ci/check-md-extension-links.py` |
 | Redirect coverage guard | GitHub Action (`.github/workflows/redirect-coverage-guard.yml`) | No - advisory (warns only, labels the PR) | This repo, `tools/ci/check-redirect-coverage.py` |
 | Office-format download guard | GitHub Action (`.github/workflows/office-format-download-guard.yml`) | **Yes** - fails the check | This repo, `tools/ci/check-no-office-format-downloads.py` |
 | DocFX legacy-tag guard | GitHub Action (`.github/workflows/docfx-legacy-tags-guard.yml`) | **Yes** - fails the check | This repo, `tools/ci/check-no-new-docfx-see-cref.py` + `check-no-new-docfx-xref.py` + `check-no-new-docfx-list.py` |
@@ -94,6 +95,10 @@ Only triggers on a PR touching `release-notes/*/api/**`. `release-notes/{major}/
 ### Index page relative-links guard
 
 Checks only `index.md`/`index.mdx` files changed in a PR (or pushed directly to `main`), excluding the machine-generated reference trees. A page built from a literal `index.md`/`index.mdx` file is served at its folder's own bare path with no trailing slash, so a relative link (`./...`, `../...`) authored *on* that page resolves against the wrong parent folder in production - the target genuinely exists on disk, so it's invisible to every check that resolves links via filesystem path math (`mint validate` doesn't check links at all, and `tools/triage-broken-links.py` resolves against the file's disk location, not the live URL). This bug class was found and fixed repo-wide in [issue #375][15] and [issue #377][16]; this guard exists so it can't quietly reappear. It flags both markdown links (inline and reference-style) and raw HTML/JSX `href` values, skips MDX `import` statements, code blocks/spans, and frontmatter. It never fails the check - a hit shows up as a warning annotation on the relevant line in the PR's Files Changed tab. See [How to use links in docs][17] for the underlying rule.
+
+### Md extension links guard
+
+Checks every `.md`/`.mdx` file changed in a PR (or pushed directly to `main`), excluding the machine-generated reference trees. Mintlify serves a page at its extension-stripped path, never at the source file's literal `.md`/`.mdx` name - so a link authored with the extension still attached (`.../index.md#some-heading`) is broken in production, even though the target file genuinely exists on disk and resolves cleanly under `tools/triage-broken-links.py`'s own filesystem-path check. This bug class was found and fixed repo-wide in [issue #421][27] (19 links, all HTML `<a href>` anchors on `index.mdx` landing pages with a `#fragment` anchor); this guard exists so it can't quietly reappear. It flags markdown links (inline and reference-style) and raw HTML/JSX `href` values, skips external URLs, MDX `import` statements, code blocks/spans, and frontmatter. It never fails the check - a hit shows up as a warning annotation on the relevant line in the PR's Files Changed tab. See [How to use links in docs][17] for the underlying rule.
 
 ### Redirect coverage guard
 
@@ -210,3 +215,4 @@ mint automations create --name "Broken link detection" --type broken-link-detect
 [24]: https://github.com/SuperOfficeDocs/docs/issues/400
 [25]: https://github.com/SuperOfficeDocs/docs/pull/383
 [26]: https://github.com/SuperOfficeDocs/docs/issues/410
+[27]: https://github.com/SuperOfficeDocs/docs/issues/421
