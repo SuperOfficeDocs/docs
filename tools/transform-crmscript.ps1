@@ -227,7 +227,10 @@ function Get-TypeLink {
     # CRMScript.Native.Map) or a type with no doc page at all (CRMScript.NetServer.NSBinary);
     # a link to either 404s. The set of generated pages is exactly the set of source
     # .yml files, so test the source file rather than the not-yet-written output.
-    if (-not (Test-Path (Join-Path $SourcePath ($link + '.yml')))) {
+    # Case-sensitive on purpose (see $SourceYamlFileNames above, #401) -- a
+    # casing mismatch must fail here the same way it fails on Linux, not
+    # silently resolve on this Windows dev machine's case-insensitive disk.
+    if (-not $SourceYamlFileNames.Contains($link + '.yml')) {
         return $Type
     }
 
@@ -407,6 +410,18 @@ function Get-YamlItems {
 
 # Get all YAML files (excluding toc.yml)
 $yamlFiles = Get-ChildItem -Path $SourcePath -Filter "*.yml" | Where-Object { $_.Name -ne "toc.yml" }
+
+# Case-sensitive set of real source filenames, used by Get-TypeLink below.
+# Test-Path is case-insensitive on Windows (this dev machine's filesystem)
+# but case-sensitive on GitHub Actions' Linux runners and the live
+# (Linux-served) site -- a casing mismatch between a type name and its
+# source .yml filename would silently link-resolve here and only fail once
+# it hits CI or production. Built once from the same enumeration above
+# rather than a fresh directory listing per Get-TypeLink call. See #401.
+$SourceYamlFileNames = [System.Collections.Generic.HashSet[string]]::new(
+    [string[]]$yamlFiles.Name,
+    [System.StringComparer]::Ordinal
+)
 
 Write-Host "Found $($yamlFiles.Count) YAML files to process" -ForegroundColor Green
 Write-Host ""
