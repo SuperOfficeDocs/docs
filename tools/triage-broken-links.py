@@ -2,18 +2,17 @@
 """Triage `mint broken-links` output into real breaks vs. checker false positives.
 
 Runs `mint broken-links`, then for every reported (source file, target) pair:
-  1. Resolves the target to a repo file path (root-absolute or relative to the
-     source file, handling implicit /index and case via `git ls-files`).
-  2. Checks the resolved path against .mintignore -- a link to an ignored file
-     reports as broken by Mintlify's own documented behavior, which is not a bug.
-  3. If the target genuinely resolves and isn't ignored, inspects the source
-     line's syntax. Every confirmed false positive so far is a raw HTML
-     `<a href="...">` anchor (as opposed to a markdown `[text](url)` link or a
-     `<Card href="...">` component) -- see project notes for the 2 spot-checked
+  1. Resolves the target to a repo file path (root-absolute or relative to the source file, handling
+     implicit /index and case via `git ls-files`).
+  2. Checks the resolved path against .mintignore: a link to an ignored file reports as broken by
+     Mintlify's own documented behavior, which is not a bug.
+  3. If the target genuinely resolves and isn't ignored, inspects the source line's syntax. Every
+     confirmed false positive so far is a raw HTML `<a href="...">` anchor (as opposed to a markdown
+     `[text](url)` link or a `<Card href="...">` component); see project notes for the 2 spot-checked
      examples this was built from.
 
-Whether the target is wired into navigation is deliberately NOT checked --
-Mintlify serves any file that exists regardless of nav wiring.
+Whether the target is wired into navigation is deliberately NOT checked: Mintlify serves any file that
+exists regardless of nav wiring.
 
 A relative link from one en/database/tables/ page to another that resolves
 gets its own "db-tables-relative" bucket instead of needs-review: that tree
@@ -24,30 +23,24 @@ needs-review.
 
 Output: scratch-broken-links-{true,blocked,ignored,false-positives,external-false-positives,db-tables-relative,needs-review}.txt
 
-By default this reuses the cached raw report from the last real run
-(scratch-broken-links-triage.txt) instead of re-invoking `mint broken-links`,
-since that command is slow -- pass --fresh to force a real re-run once
-you're confident the triage logic itself is behaving correctly.
+By default this reuses the cached raw report from the last real run (scratch-broken-links-triage.txt)
+instead of re-invoking `mint broken-links`, since that command is slow; pass --fresh to force a real
+re-run once you're confident the triage logic itself is behaving correctly.
 
-Pass --check-anchors to also verify that a target's #fragment actually exists
-in the resolved file (as an explicit `id="..."` or a heading, slugified
-GitHub-style) -- off by default, since it adds a real-content read per
-fragment target. Without it, a fragment is only ever stripped for
-resolution purposes, never validated.
+Pass --check-anchors to also verify that a target's #fragment actually exists in the resolved file (as an
+explicit `id="..."` or a heading, slugified GitHub-style); off by default, since it adds a real-content
+read per fragment target. Without it, a fragment is only ever stripped for resolution purposes, never
+validated.
 
 Known limitations:
-  - .mintignore matching supports `!` negation (last-match-wins, like git),
-    but not git's rule that a negation can't re-include a file inside a
-    directory excluded by an earlier pattern -- .mintignore does exactly
-    that for its reference/ folders; double check any 'ignored' hits there.
-  - Syntax classification is a same-line text search for the raw target
-    string; a target repeated verbatim on multiple lines of the same file
-    could match the wrong occurrence.
-  - Resolution is checked against `git ls-files`, so an uncommitted new file
-    will read as "not found".
-  - --check-anchors' heading slugifier is a plain GitHub-style approximation
-    (lowercase, strip punctuation, spaces to hyphens) -- it doesn't handle
-    duplicate-heading disambiguation (`-1`, `-2` suffixes).
+  - .mintignore matching supports `!` negation (last-match-wins, like git), but not git's rule that a
+    negation can't re-include a file inside a directory excluded by an earlier pattern. .mintignore does
+    exactly that for its reference/ folders; double check any 'ignored' hits there.
+  - Syntax classification is a same-line text search for the raw target string; a target repeated verbatim
+    on multiple lines of the same file could match the wrong occurrence.
+  - Resolution is checked against `git ls-files`, so an uncommitted new file will read as "not found".
+  - --check-anchors' heading slugifier is a plain GitHub-style approximation (lowercase, strip punctuation,
+    spaces to hyphens); it doesn't handle duplicate-heading disambiguation (`-1`, `-2` suffixes).
 """
 import argparse
 import fnmatch
@@ -65,11 +58,11 @@ TREE_CHAR = "⎿"  # tree-branch glyph mint prefixes each reported target line w
 
 # en/database/tables/ is auto-generated (external ADO pipeline, no local
 # tool), self-contained, and deliberately kept on relative sibling links by
-# design -- see project notes. A relative link from one page in this tree to
+# design; see project notes. A relative link from one page in this tree to
 # another that resolves is confirmed-good, not just "not yet confirmed".
 DB_TABLES_PREFIX = "en/database/tables/"
 
-# Targets under these prefixes don't exist yet on purpose -- the content is
+# Targets under these prefixes don't exist yet on purpose: the content is
 # blocked on other tracked work, not a link bug. .mintignore can't help here
 # (it's only consulted for targets that already resolve to a real file;
 # these don't exist at all yet). Update this list, don't reach for
@@ -80,7 +73,7 @@ KNOWN_BLOCKED = [
 ]
 
 # External (http/https) targets that mint's own --check-external reports as
-# unreachable but that resolve fine when opened in a real browser -- confirmed
+# unreachable but that resolve fine when opened in a real browser; confirmed
 # manually, not assumed. Matched by substring against the raw target. Not a
 # .mintignore case (that only ever applies to internal repo files) and not
 # the raw-<a>-anchor checker bug below (these are genuine external URLs).
@@ -88,17 +81,17 @@ EXTERNAL_FALSE_POSITIVES = [
     (
         "marketplace.visualstudio.com",
         "VS Code Marketplace blocks the checker's automated request (bot/anti-automation "
-        "detection) -- every link opens fine in a real browser, confirmed manually",
+        "detection); every link opens fine in a real browser, confirmed manually",
     ),
     (
         "github.com/SuperOffice/devnet-database-mirroring",
-        "resolves fine in a real browser -- likely GitHub blocking the checker's "
+        "resolves fine in a real browser; likely GitHub blocking the checker's "
         "unauthenticated/automated request",
     ),
     (
         "techdoc.superoffice.com",
         "dead domain baked into en/database/tables/ by the external ADO-hosted table "
-        "generator -- not fixable in this repo, tracked as a generated-data bug",
+        "generator; not fixable in this repo, tracked as a generated-data bug",
     ),
 ]
 
@@ -142,13 +135,11 @@ def parse_report(text):
     non-breaking space + tree-branch glyph + non-breaking spaces (not plain
     ASCII spaces).
 
-    mint's own report additionally soft-wraps long target lines at some
-    terminal width: the overflow reappears as a THIRD kind of line with no
-    prefix at all (not a header, not a fresh target) -- e.g. a target ending
-    "...using-curl" gets split into a line ending "...using-c" followed by a
-    bare continuation line "url". Any non-blank line that's neither a header
-    nor a properly-prefixed target line is treated as a continuation and
-    glued onto the immediately preceding target.
+    mint's own report additionally soft-wraps long target lines at some terminal width: the overflow
+    reappears as a THIRD kind of line with no prefix at all (not a header, not a fresh target). For
+    example a target ending "...using-curl" gets split into a line ending "...using-c" followed by a bare
+    continuation line "url". Any non-blank line that's neither a header nor a properly-prefixed target
+    line is treated as a continuation and glued onto the immediately preceding target.
     """
     pairs = []
     current_source = None
@@ -171,7 +162,7 @@ def parse_report(text):
         if current_source and pairs and pairs[-1][0] == current_source:
             src, prev_target = pairs[-1]
             pairs[-1] = (src, prev_target + stripped)
-        # else: stray pre-header noise (e.g. spinner frames) -- ignore
+        # else: stray pre-header noise (for example spinner frames), ignore
     return pairs
 
 
@@ -216,12 +207,11 @@ def _mintignore_pattern_matches(rel_path, parts, basename, pat):
 def mintignore_match(rel_path, patterns):
     """Last-match-wins, gitignore-style, including `!` negation.
 
-    Known simplification: doesn't replicate git's rule that a negation can't
-    re-include a file inside a directory excluded by an earlier pattern.
-    .mintignore uses exactly that shape (e.g. `en/customization/crmscript/
-    reference/**` then `!**/reference/**/index.mdx`) -- treated here as a
-    plain last-match-wins override instead. Worth a manual double-check if
-    the 'ignored' bucket ever includes files under those reference/ folders.
+    Known simplification: doesn't replicate git's rule that a negation can't re-include a file inside a
+    directory excluded by an earlier pattern. .mintignore uses exactly that shape (for example
+    `en/customization/crmscript/reference/**` then `!**/reference/**/index.mdx`), treated here as a plain
+    last-match-wins override instead. Worth a manual double-check if the 'ignored' bucket ever includes
+    files under those reference/ folders.
     """
     parts = rel_path.split("/")
     basename = parts[-1]
@@ -240,7 +230,7 @@ def resolve_target(source_file, raw_target, tracked_exact, tracked_lower):
     """Returns (resolved_path_or_None, reason_or_None, fragment, base).
 
     `base` is the computed repo-relative path attempt even when resolution
-    fails -- used to match known-blocked prefixes (see main()) without
+    fails, used to match known-blocked prefixes (see main()) without
     recomputing the same relative-path math a second time.
     """
     pre_fragment, _, fragment = raw_target.partition("#")
@@ -264,15 +254,13 @@ def resolve_target(source_file, raw_target, tracked_exact, tracked_lower):
                 parts.append(part)
         base = "/".join(parts)
 
-    # Always try every plausible candidate rather than branching on "does
-    # this look like it already has an extension" -- that heuristic is
-    # fragile: Path(...).suffix only looks at the LAST dot, so a
-    # dotted-but-extensionless slug like "changes-10.1.2" or "changes-9.2"
-    # (real release-notes page names) reads as having extension ".2", which
-    # made the resolver skip trying "<base>.md" entirely and wrongly report
-    # "not found" for pages that exist. Trying the literal path plus every
-    # .md/.mdx/index variant unconditionally costs a few extra dict lookups
-    # but can't produce a wrong answer -- at most one candidate matches.
+    # Always try every plausible candidate rather than branching on "does this look like it already has an
+    # extension"; that heuristic is fragile: Path(...).suffix only looks at the LAST dot, so a
+    # dotted-but-extensionless slug like "changes-10.1.2" or "changes-9.2" (real release-notes page names)
+    # reads as having extension ".2", which made the resolver skip trying "<base>.md" entirely and
+    # wrongly report "not found" for pages that exist. Trying the literal path plus every .md/.mdx/index
+    # variant unconditionally costs a few extra dict lookups but can't produce a wrong answer: at most one
+    # candidate matches.
     candidates = [
         base,
         f"{base}.mdx",
@@ -310,7 +298,7 @@ HEADING_ATTR_RE = re.compile(r"\{#([\w-]+)\}\s*$")
 
 
 def _slugify_heading(text):
-    text = re.sub(r"<[^>]+>", "", text)  # drop inline HTML, e.g. a heading's own <a id="...">
+    text = re.sub(r"<[^>]+>", "", text)  # drop inline HTML, for example a heading's own <a id="...">.
     text = text.strip().lower()
     text = re.sub(r"[^a-z0-9\s-]", "", text)
     text = re.sub(r"\s+", "-", text).strip("-")
@@ -340,11 +328,10 @@ def anchor_exists(resolved_path, fragment):
     anchors = _file_anchors(resolved_path)
     if fragment in anchors:
         return True
-    # mint broken-links' own raw output has been observed truncating long
-    # fragments (e.g. "...using-curl" -> "...using-c") -- a bug in mint's
-    # report, not in the link. A long, otherwise-unmatched fragment that's
-    # a prefix of a real anchor is almost certainly that truncation, not a
-    # genuine dangling anchor.
+    # mint broken-links' own raw output has been observed truncating long fragments (for example
+    # "...using-curl" -> "...using-c"); a bug in mint's report, not in the link. A long, otherwise-unmatched
+    # fragment that's a prefix of a real anchor is almost certainly that truncation, not a genuine dangling
+    # anchor.
     if len(fragment) >= 8:
         return any(a.startswith(fragment) for a in anchors)
     return False
@@ -353,12 +340,10 @@ def anchor_exists(resolved_path, fragment):
 def classify_syntax(source_file, raw_target):
     """Classify how raw_target's href is written in source_file.
 
-    Searches the whole file, not line-by-line: JSX components are
-    routinely formatted with each prop (including href=) on its own line
-    (`<Card>\\n  title="..."\\n  href="...">`), which a per-line search never
-    finds -- `[^>]` naturally stops at the tag's own closing `>` regardless
-    of embedded newlines, so this stays scoped to a single tag's attributes
-    without needing to treat "." as matching newlines.
+    Searches the whole file, not line-by-line: JSX components are routinely formatted with each prop
+    (including href=) on its own line (`<Card>\\n  title="..."\\n  href="...">`), which a per-line search
+    never finds. `[^>]` naturally stops at the tag's own closing `>` regardless of embedded newlines, so
+    this stays scoped to a single tag's attributes without needing to treat "." as matching newlines.
     """
     text = _read_source(source_file)
     if text is None:

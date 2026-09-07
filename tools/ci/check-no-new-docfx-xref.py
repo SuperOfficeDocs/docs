@@ -4,31 +4,26 @@ in either of its two syntaxes: colon-style `<xref:some.uid>` or tag-style
 `<xref href="some.uid" data-throw-if-not-resolved="false"></xref>` (and the
 HTML-escaped form of either, `&lt;xref...&gt;`).
 
-Mintlify's MDX renderer doesn't resolve DocFX's `xref` syntax at all --
-the migration guide has documented this since early in the migration
-(`contribute/markdown-guide/docfx-to-mintlify-cheat-sheet.mdx`, "Don't use
-`xref`"), and #312/PR #313 did a repo-wide sweep converting ~90 known
-occurrences to real Mintlify links. That sweep is not durable on its own:
-#404 found two of #313's own already-fixed lines had been silently
-reintroduced by later ADO/generator content drops that regenerate a page
-from source without knowing about the Mintlify-side fix -- one in
-`release-notes/10.3/admin/10.3.7-update.mdx`, one in
-`en/api/archive-providers/reference/dynamic.mdx` (the latter regressed by
-commit `5101c8363`, a "Providers and Database files updated" drop, months
-after #313 had already fixed that exact line).
+Mintlify's MDX renderer doesn't resolve DocFX's `xref` syntax at all: the migration guide has
+documented this since early in the migration
+(`contribute/markdown-guide/docfx-to-mintlify-cheat-sheet.mdx`, "Don't use `xref`"), and #312/PR #313
+did a repo-wide sweep converting ~90 known occurrences to real Mintlify links. That sweep is not
+durable on its own: #404 found two of #313's own already-fixed lines had been silently reintroduced
+by later ADO/generator content drops that regenerate a page from source without knowing about the
+Mintlify-side fix, one in `release-notes/10.3/admin/10.3.7-update.mdx`, and one in
+`en/api/archive-providers/reference/dynamic.mdx` (the latter regressed by commit `5101c8363`, a
+"Providers and Database files updated" drop, months after #313 had already fixed that exact line).
 
-This guard blocks any *new* xref occurrence -- hand-authored or
-regenerated -- from landing again, the same stopgap shape as
-`check-no-new-docfx-see-cref.py` for the sibling `<see cref>` problem. It
-only looks at lines actually *added* by the diff against base_ref; it does
-not attempt to flag or fix any pre-existing occurrence.
+This guard blocks any *new* xref occurrence, whether hand-authored or regenerated, from landing
+again, the same stopgap shape as `check-no-new-docfx-see-cref.py` for the sibling `<see cref>`
+problem. It only looks at lines actually *added* by the diff against base_ref; it does not attempt to
+flag or fix any pre-existing occurrence.
 
-A genuinely new occurrence is found by diffing against base_ref to get
-each changed file's added line numbers, then checking those specific
-lines against the file's *masked* content (fenced code blocks and inline
-code spans blanked out) rather than the raw diff text -- otherwise the
-cheat sheet's own `<xref:some.uid>` documentation example (a fenced ```md
-block) would be falsely flagged every time that file is touched.
+A genuinely new occurrence is found by diffing against base_ref to get each changed file's added line
+numbers, then checking those specific lines against the file's *masked* content (fenced code blocks
+and inline code spans blanked out) rather than the raw diff text; otherwise the cheat sheet's own
+`<xref:some.uid>` documentation example (a fenced ```md block) would be falsely flagged every time
+that file is touched.
 
 Usage:
     python tools/ci/check-no-new-docfx-xref.py --base-ref origin/main
@@ -92,13 +87,13 @@ def main():
             f"::error file={path},line={line_no}::"
             f"New DocFX xref cross-reference introduced: '{text}'. "
             f"Mintlify's MDX renderer does not resolve <xref:...> or "
-            f"<xref href=\"...\"></xref> -- replace it with a real markdown "
+            f"<xref href=\"...\"></xref>; replace it with a real markdown "
             f"link to the target page (see #312/#404 for the established "
             f"fix pattern, including generated-reference-page anchors for "
             f"member-level references)."
         )
 
-    print(f"\n{len(all_hits)} new DocFX xref reference(s) added -- see errors above.")
+    print(f"\n{len(all_hits)} new DocFX xref reference(s) added; see errors above.")
     return 1
 
 

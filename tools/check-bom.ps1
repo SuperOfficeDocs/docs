@@ -10,7 +10,7 @@
     Path to file or folder to check. Supports wildcards.
 
 .PARAMETER Pattern
-    File pattern to match (e.g., "*.json", "*.md"). Default is "*".
+    File pattern to match, for example "*.json" or "*.md". Default is "*".
 
 .PARAMETER Recurse
     Recursively search subdirectories.

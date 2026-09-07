@@ -22,7 +22,7 @@ the image is actually rendered somewhere.
 Resolution rules (mirrors how Mintlify actually resolves these):
   - A path starting with "/" is root-absolute, resolved from the repo root.
   - Any other path is resolved relative to the source file's own directory.
-  - http(s):// URLs are skipped -- external image hosting isn't this script's
+  - http(s):// URLs are skipped, since external image hosting isn't this script's
     concern (mint broken-links --check-external covers external targets).
 
 Usage:

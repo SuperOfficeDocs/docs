@@ -31,8 +31,9 @@ but the round-trip is kept for safety against a future regen that does).
 Modes:
   Default (no --apply): audit only, reports what would change, no writes.
   --apply: performs the writes for the scoped files.
-  Positional file args scope to an explicit list (e.g. a PR's changed-files
-  list); --path scopes to a folder instead (default: en/database/tables/enums).
+  Positional file args scope to an explicit list (for example, a PR's
+  changed-files list); --path scopes to a folder instead (default:
+  en/database/tables/enums).
 
 Usage:
     python tools/ci/add-database-enum-sidebar-titles.py                        # audit, default tree
@@ -103,7 +104,7 @@ def process_file(rel_path, apply_changes):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("files", nargs="*", help="Specific files to check (e.g. a PR's changed-files list)")
+    parser.add_argument("files", nargs="*", help="Specific files to check (for example, a PR's changed-files list)")
     parser.add_argument("--path", default=DEFAULT_PATH, help=f"Scope to one folder instead of an explicit file list (default: {DEFAULT_PATH})")
     parser.add_argument("--apply", action="store_true", help="Write the sidebarTitle (default: audit only, no writes)")
     args = parser.parse_args()

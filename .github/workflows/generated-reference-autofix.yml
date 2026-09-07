@@ -6,14 +6,14 @@ name: Generated-reference auto-fix
 # job. All 4 watch overlapping paths under the generated
 # archive-providers/mdo-providers/webapi/database-tables reference trees;
 # as 4 separate workflows, each with its own "commit and push" step, they
-# raced to push to the same PR branch ref with zero coordination -- a
+# raced to push to the same PR branch ref with zero coordination, a
 # structural bug flagged (not fixed) during PR #338. One job means one
 # checkout and one push, which removes the race by construction rather than
 # trying to coordinate 4 independent ones.
 #
 # database-enum-sidebar-title.yml and recent-pages-sync.yml have their own,
 # separate residual overlap with each other and with this workflow's paths
-# (en/database/tables/**, en/**) -- a known but unfixed follow-up, not
+# (en/database/tables/**, en/**), a known but unfixed follow-up, not
 # folded in here.
 
 on:
@@ -31,15 +31,15 @@ on:
 # Shared with every other workflow that commits and pushes an auto-fix back
 # onto this same PR branch (database-enum-sidebar-title.yml,
 # openapi-conversion-guard.yml, recent-pages-sync.yml,
-# version-frontmatter-guard.yml) -- a group name scoped to *this* workflow
+# version-frontmatter-guard.yml): a group name scoped to *this* workflow
 # only stops two runs of *this* workflow from racing, but not a different
 # auto-fix workflow pushing to the identical ref at the same time (#407 fixed
 # that race for 4 fixers by merging them into one job; this is the same race
 # recurring across 5 separate workflows). cancel-in-progress is deliberately
-# false: queue, don't cancel -- a queued run's `actions/checkout@v4` step
+# false: queue, don't cancel. A queued run's `actions/checkout@v4` step
 # resolves/fetches the ref when it executes, not at trigger time, so it
 # naturally picks up whatever an earlier queued run already pushed. Do not
-# "simplify" this back to cancel-in-progress: true -- that would silently
+# "simplify" this back to cancel-in-progress: true; that would silently
 # drop a competing auto-fix's work instead of letting it queue.
 concurrency:
   group: autofix-push-${{ github.ref }}

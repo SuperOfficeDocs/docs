@@ -4,21 +4,19 @@ landing-page Blueprint templates' card-body markup (see issue #257).
 
 There are two distinct custom-landing templates in this repo:
 
-* `landing-page` (`id="category-landing"`) - conceptual-content cards use a
+* `landing-page` (`id="category-landing"`): conceptual-content cards use a
   single flat `<ul className="concept-links">`, one `<li>` per link.
-* `subcategory-landing-page` (`id="subcategory"`) - cards use one or more
+* `subcategory-landing-page` (`id="subcategory"`): cards use one or more
   `<div className="linklist">` groups (header + `<ul>`), separated by `***`.
 
-`style.css` only styles `.linklist`/`.linklist-header` scoped under
-`#subcategory` - there is no `.conceptual-content .linklist` rule. So a
-category-landing page that has a `linklist` block (or a subcategory page
-that has a `concept-links` list) renders with unstyled, browser-default
-markup instead of the intended layout. This happened to all 6 language
-copies of `learn/index.mdx` (fixed in #257) without tripping any existing
-check, since the two templates are only inconsistent with each other, not
-individually invalid MDX.
+`style.css` only styles `.linklist`/`.linklist-header` scoped under `#subcategory`; there is no
+`.conceptual-content .linklist` rule. So a category-landing page that has a `linklist` block (or a
+subcategory page that has a `concept-links` list) renders with unstyled, browser-default markup
+instead of the intended layout. This happened to all 6 language copies of `learn/index.mdx` (fixed in
+#257) without tripping any existing check, since the two templates are only inconsistent with each
+other, not individually invalid MDX.
 
-This is advisory only -- it never fails the build. It emits a GitHub
+This is advisory only; it never fails the build. It emits a GitHub
 Actions warning annotation per hit so it shows up on the PR's Files
 Changed tab without blocking anything.
 
@@ -65,17 +63,17 @@ def check_file(rel_path):
     hits = []
     if CATEGORY_MARKER in text and LINKLIST_MARKER in text:
         line_no = text[: text.index(LINKLIST_MARKER)].count("\n") + 1
-        hits.append((line_no, "category-landing page contains subcategory-style 'linklist' markup -- use a flat 'concept-links' <ul> instead (see issue #257)"))
+        hits.append((line_no, "category-landing page contains subcategory-style 'linklist' markup; use a flat 'concept-links' <ul> instead (see issue #257)"))
     if SUBCATEGORY_MARKER in text and CONCEPT_LINKS_MARKER in text:
         line_no = text[: text.index(CONCEPT_LINKS_MARKER)].count("\n") + 1
-        hits.append((line_no, "subcategory page contains category-landing-style 'concept-links' markup -- use 'linklist' groups instead (see issue #257)"))
+        hits.append((line_no, "subcategory page contains category-landing-style 'concept-links' markup; use 'linklist' groups instead (see issue #257)"))
     return hits
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("files", nargs="*", help="Specific files to check (e.g. a PR's changed-files list)")
-    parser.add_argument("--path", help="Scope to one folder (e.g. en, da) instead of an explicit file list")
+    parser.add_argument("files", nargs="*", help="Specific files to check (for example, a PR's changed-files list)")
+    parser.add_argument("--path", help="Scope to one folder (for example, en, da) instead of an explicit file list")
     args = parser.parse_args()
 
     candidates = list_path_files(args.path) if args.path else args.files
@@ -87,11 +85,11 @@ def main():
             print(f"::warning file={rel_path},line={line_no}::{message}")
 
     if total_hits:
-        print(f"\n{total_hits} file(s) mix category-landing and subcategory template markup -- see warnings above.")
+        print(f"\n{total_hits} file(s) mix category-landing and subcategory template markup; see warnings above.")
     else:
         print("No landing-page template mismatches found in the checked files.")
 
-    # Advisory only -- never fail the build.
+    # Advisory only; never fail the build.
     return 0
 
 

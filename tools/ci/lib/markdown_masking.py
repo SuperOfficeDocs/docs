@@ -3,10 +3,10 @@
 These were duplicated near-verbatim across 8 CI guard scripts (see the
 "Kept in sync by hand" comments they carried before this module existed).
 Every guard that scans markdown/MDX prose for a pattern needs to blank out
-the parts of the file that are sample text, not real content -- fenced
-code blocks, inline code spans, frontmatter, and MDX import lines -- while
-preserving line count and length so a reported line number stays accurate
-against the *original* file.
+the parts of the file that are sample text, not real content, such as
+fenced code blocks, inline code spans, frontmatter, and MDX import lines,
+while preserving line count and length so a reported line number stays
+accurate against the *original* file.
 """
 
 import re
@@ -16,10 +16,10 @@ INLINE_CODE_SPAN_RE = re.compile(r"`[^`\n]+`")
 FRONTMATTER_RE = re.compile(r"\A---\r?\n.*?\r?\n---\r?\n", re.DOTALL)
 IMPORT_LINE_RE = re.compile(r"^\s*import\s+.+\s+from\s+['\"].+['\"]\s*;?\s*$")
 
-# Every reference tree generated wholesale by an external pipeline (ADO,
-# etc.) with no source file in this repo to fix at the root -- exempted
-# from the bug classes this guard family targets the same way #377/#421
-# exempted them.
+# Every reference tree generated wholesale by an external pipeline (ADO
+# and similar) with no source file in this repo to fix at the root.
+# Exempted from the bug classes this guard family targets, the same way
+# #377/#421 exempted them.
 GENERATED_TREE_PREFIXES = (
     "en/api/reference/webapi/",
     "en/api/reference/restful/",

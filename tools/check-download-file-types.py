@@ -45,9 +45,9 @@ SUPPORTED_EXTENSIONS = {
     # Fonts
     ".woff", ".woff2", ".ttf", ".otf", ".eot",
     # Enterprise-tier document/data/archive formats (confirmed live: .pdf/.zip serve, so
-    # this site is on Enterprise -- see #386 and the "1-year eval: Enterprise to Pro" milestone)
+    # this site is on Enterprise; see #386 and the "1-year eval: Enterprise to Pro" milestone)
     ".pdf", ".txt", ".xml", ".csv", ".zip",
-    # Content source files -- e.g. downloads/api/index.md is a real page, not a download
+    # Content source files, for example downloads/api/index.md is a real page, not a download
     ".md", ".mdx",
 }
 
