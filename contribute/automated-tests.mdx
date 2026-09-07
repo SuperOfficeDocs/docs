@@ -2,7 +2,7 @@
 uid: automated-tests
 title: Automated tests
 description: Every check that runs against a PR or on a schedule for this repo - markdownlint, Vale, build validation, broken-link checking, the CRMScript reference drift check, and the stale generated-pages check - what each covers, whether it blocks a merge, and where to look when one flags something.
-keywords: ['ci', 'automated tests', 'markdownlint', 'vale', 'broken links', 'mint validate', 'automations', 'crmscript', 'stale pages', 'generated pages', 'landing page', 'template guard', 'release notes', 'openapi', 'swagger', 'recent pages', 'homepage', 'pester', 'mdx escaping', 'downloads', 'office format', 'xlsx', 'docfx', 'see cref', 'xref']
+keywords: ['ci', 'automated tests', 'markdownlint', 'vale', 'broken links', 'mint validate', 'automations', 'crmscript', 'stale pages', 'generated pages', 'landing page', 'template guard', 'release notes', 'openapi', 'swagger', 'recent pages', 'homepage', 'pester', 'mdx escaping', 'downloads', 'office format', 'xlsx', 'docfx', 'see cref', 'xref', 'script injection', 'security']
 author: digitaldiina
 date: 09.03.2026
 content_type: concept
@@ -32,6 +32,7 @@ This page is the single reference for every automatic check that runs against th
 | Redirect coverage guard | GitHub Action (`.github/workflows/redirect-coverage-guard.yml`) | No - advisory (warns only, labels the PR) | This repo, `tools/ci/check-redirect-coverage.py` |
 | Office-format download guard | GitHub Action (`.github/workflows/office-format-download-guard.yml`) | **Yes** - fails the check | This repo, `tools/ci/check-no-office-format-downloads.py` |
 | DocFX legacy-tag guard | GitHub Action (`.github/workflows/docfx-legacy-tags-guard.yml`) | **Yes** - fails the check | This repo, `tools/ci/check-no-new-docfx-see-cref.py` + `check-no-new-docfx-xref.py` + `check-no-new-docfx-list.py` |
+| Workflow script-injection guard | GitHub Action (`.github/workflows/workflow-injection-guard.yml`) | **Yes** - fails the check | This repo, `tools/ci/check-workflow-injection.py` |
 | Vale | Mintlify CI Checks add-on | No - Warning level | Mintlify dashboard (Add-ons > CI Checks), using this repo's `.vale.ini` |
 | Build validation | Mintlify preview deployment | Yes - a failed build shows as a red "Mintlify Deployment" check | Mintlify, automatic on every PR (see [Deploy trigger mechanics][2]) |
 | Broken links (internal) | Mintlify CI Checks add-on | No - Warning level | Mintlify dashboard (Add-ons > CI Checks) |
@@ -106,13 +107,13 @@ Runs on every PR (`fetch-depth: 0`, needed to diff against `origin/main`). Detec
 
 ### Office-format download guard
 
-Checks every PR (and direct push to `main`) for a newly *added* `.xlsx`/`.docx`/`.pptx` file anywhere under `downloads/`, via `git diff --name-status` against `origin/main` - a pre-existing tracked file isn't re-flagged just because an unrelated PR touches something else in that folder. This is one of two **blocking** exceptions in an otherwise advisory guard family: Mintlify does not serve these three extensions at any plan tier (confirmed live - 404 on every `.xlsx`/`.docx`/`.pptx` under `downloads/`, while `.pdf`/`.zip` in the same folder return 200 - and against Mintlify's own supported-file-types documentation), so a file added with one of these extensions is never downloadable at all once merged, not a stylistic or lint-level concern the other checks on this page warn about. #386 found and fixed all 30 pre-existing instances by zipping each file and repointing every link/redirect at the `.zip`; this guard exists so the same 404 can't quietly reappear the normal way (see [How to use links in docs][17] for the authoring rule, added alongside this guard).
+Checks every PR (and direct push to `main`) for a newly *added* `.xlsx`/`.docx`/`.pptx` file anywhere under `downloads/`, via `git diff --name-status` against `origin/main` - a pre-existing tracked file isn't re-flagged just because an unrelated PR touches something else in that folder. This is one of three **blocking** exceptions in an otherwise advisory guard family: Mintlify does not serve these three extensions at any plan tier (confirmed live - 404 on every `.xlsx`/`.docx`/`.pptx` under `downloads/`, while `.pdf`/`.zip` in the same folder return 200 - and against Mintlify's own supported-file-types documentation), so a file added with one of these extensions is never downloadable at all once merged, not a stylistic or lint-level concern the other checks on this page warn about. #386 found and fixed all 30 pre-existing instances by zipping each file and repointing every link/redirect at the `.zip`; this guard exists so the same 404 can't quietly reappear the normal way (see [How to use links in docs][17] for the authoring rule, added alongside this guard).
 
 Unlike the changed-files-list checks elsewhere on this page, this script computes its own `git diff` against the base ref rather than receiving filenames from `tj-actions/changed-files` through a shell-interpolated `${{ }}` expression - so the injection vector those checks guard against with `env:`-passed input doesn't arise here in the first place, since no PR-controlled string is ever substituted into the workflow's `run:` script text.
 
 ### DocFX legacy-tag guard
 
-Checks every PR (and direct push to `main`) for a newly *added* occurrence of any of three .NET XML-doc-comment tags DocFX used to resolve at build time but Mintlify's MDX renderer doesn't - `<see cref="T:...">` (or its self-closing/HTML-escaped forms), `<xref:some.uid>`/`<xref href="some.uid" data-throw-if-not-resolved="false"></xref>` (or either's HTML-escaped form), and `<list type="table">`/`<list type="bullet">` (or its HTML-escaped form). One workflow, one checkout, three sequential check scripts (`check-no-new-docfx-see-cref.py`, `check-no-new-docfx-xref.py`, `check-no-new-docfx-list.py`) - consolidated into a single job rather than three near-identical separate workflow files, the same reasoning as the Generated-reference auto-fix above. All three use the same base-ref `git diff` approach, at line granularity, not whole-file: only lines the PR's own diff actually adds are checked, so an unrelated edit to a file that already has one of these patterns isn't re-flagged. This is the second of two **blocking** exceptions in the guard family.
+Checks every PR (and direct push to `main`) for a newly *added* occurrence of any of three .NET XML-doc-comment tags DocFX used to resolve at build time but Mintlify's MDX renderer doesn't - `<see cref="T:...">` (or its self-closing/HTML-escaped forms), `<xref:some.uid>`/`<xref href="some.uid" data-throw-if-not-resolved="false"></xref>` (or either's HTML-escaped form), and `<list type="table">`/`<list type="bullet">` (or its HTML-escaped form). One workflow, one checkout, three sequential check scripts (`check-no-new-docfx-see-cref.py`, `check-no-new-docfx-xref.py`, `check-no-new-docfx-list.py`) - consolidated into a single job rather than three near-identical separate workflow files, the same reasoning as the Generated-reference auto-fix above. All three use the same base-ref `git diff` approach, at line granularity, not whole-file: only lines the PR's own diff actually adds are checked, so an unrelated edit to a file that already has one of these patterns isn't re-flagged. This is the second of three **blocking** exceptions in the guard family.
 
 Each tag reached the same "silently breaks or garbles the page" fate once DocFX's own resolution went away, but was found and fixed at different times:
 
@@ -121,6 +122,12 @@ Each tag reached the same "silently breaks or garbles the page" fate once DocFX'
 * **`<list type="...">`** - either dropped entirely as an unrecognized custom element, or (once escaped to avoid an MDX parse error) rendered as literal garbled tag soup on the page. [Issue #410][26] found and hand-fixed the last 3 remaining files (`participants.mdx` had already been converted under #409); this check exists so the same tag can't quietly reappear on a future content drop regenerating one of these pages from its original source.
 
 This guard exists so a regenerated page - or a hand-authored edit - can't quietly reintroduce any of these three occurrences the same way again; none of the three checks touch a pre-existing occurrence.
+
+### Workflow script-injection guard
+
+Checks every `.github/workflows/*.yml` file on every PR (and direct push to `main`) that touches `.github/workflows/**` - not just the changed files, the whole workflow set, since a change to one workflow can't introduce a new occurrence in another. Flags any `run:` step that interpolates an untrusted `${{ }}` expression (`github.*`, `steps.*.outputs.*`, `needs.*.outputs.*`, `inputs.*`) directly into the shell script text, instead of routing it through that step's own `env:` block. Direct interpolation is a known GitHub Actions script-injection vector: the expression is substituted into the script's source text before bash parses it, so an attacker-influenced value (a PR-diff filename, in practice) can break out of its intended argument position and run arbitrary commands on the runner.
+
+[Issue #429][28] added this guard after two sibling workflows (`landing-page-template-guard.yml`, `markdownlint.yml`) turned out to have exactly this bug - fixed directly on `main` ([#428][29]) before either this guard or a public issue existed, so the vulnerable pattern was never visible in a public diff while it was live - echoing the same fix already applied once to `index-relative-links-guard.yml` during #378, where "every sibling guard shares that same latent pattern" was left as an unfixed follow-up at the time. This is the third of three **blocking** exceptions in the guard family: a workflow that can run arbitrary attacker-supplied shell commands on the runner isn't a lint-level concern, the same reasoning as the Office-format download guard above.
 
 ### Vale
 
@@ -216,3 +223,5 @@ mint automations create --name "Broken link detection" --type broken-link-detect
 [25]: https://github.com/SuperOfficeDocs/docs/pull/383
 [26]: https://github.com/SuperOfficeDocs/docs/issues/410
 [27]: https://github.com/SuperOfficeDocs/docs/issues/421
+[28]: https://github.com/SuperOfficeDocs/docs/issues/429
+[29]: https://github.com/SuperOfficeDocs/docs/issues/428
