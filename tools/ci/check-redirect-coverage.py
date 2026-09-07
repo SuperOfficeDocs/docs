@@ -64,6 +64,9 @@ import subprocess
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib.repo_files import file_path_to_url  # noqa: E402
+
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 REDIRECTS_PATH = REPO_ROOT / "config" / "redirects.json"
 
@@ -95,13 +98,6 @@ def is_in_scope(rel_path):
     return not rel_path.startswith(EXCLUDED_PREFIXES)
 
 
-def file_path_to_url(rel_file_path):
-    """`en/foo/bar.mdx` -> `/en/foo/bar`, `en/foo/index.mdx` -> `/en/foo`."""
-    p = Path(rel_file_path)
-    stem_path = p.with_suffix("")
-    if stem_path.name == "index":
-        stem_path = stem_path.parent
-    return "/" + stem_path.as_posix()
 
 
 def get_renamed_and_deleted(base_ref, scope=None):

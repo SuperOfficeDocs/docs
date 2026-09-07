@@ -47,30 +47,21 @@ Usage:
 
 import argparse
 import re
-import subprocess
 import sys
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parent.parent.parent
-
-# Kept in sync by hand with tools/ci/sync-recent-pages.py's own
-# GENERATED_TREE_PREFIXES -- each guard script in this family is
-# self-contained (no shared module today), so the constant is duplicated
-# rather than imported.
-GENERATED_TREE_PREFIXES = (
-    "en/api/reference/webapi/",
-    "en/api/reference/restful/",
-    "en/api/archive-providers/reference/",
-    "en/api/mdo-providers/reference/",
-    "en/automation/crmscript/reference/",
-    "en/automation/trigger/reference/",
-    "en/database/tables/",
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib.markdown_masking import (  # noqa: E402
+    mask_fenced_code,
+    mask_inline_code_spans,
+    strip_frontmatter,
+    strip_import_lines,
+    line_of,
+    is_generated_tree,
 )
+from lib.repo_files import list_path_files, resolve_safe_path  # noqa: E402
 
-FENCE_LINE_RE = re.compile(r"^[ \t]{0,3}(`{3,}|~{3,})")
-INLINE_CODE_SPAN_RE = re.compile(r"`[^`\n]+`")
-FRONTMATTER_RE = re.compile(r"\A---\r?\n.*?\r?\n---\r?\n", re.DOTALL)
-IMPORT_LINE_RE = re.compile(r"^\s*import\s+.+\s+from\s+['\"].+['\"]\s*;?\s*$")
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 
 MD_INLINE_LINK_RE = re.compile(r"\]\(\s*<?([^)\s>]+)>?(?:\s+\"[^\"]*\")?\s*\)")
 MD_REF_DEF_RE = re.compile(r'^[ ]{0,3}\[([^\]]+)\]:\s*<?([^\s>]+)>?', re.MULTILINE)
@@ -79,88 +70,9 @@ HTML_HREF_RE = re.compile(r'href\s*=\s*[\'"]([^\'"]+)[\'"]', re.IGNORECASE)
 RELATIVE_TARGET_RE = re.compile(r"^\.\.?/")
 
 
-def mask_fenced_code(text):
-    """Blank out fenced code-block bodies, keeping line count and length
-    identical so reported line numbers stay accurate. See the identical
-    helper in tools/check-image-references.py for the self-closed-fence
-    edge case this handles (and why it must not double-toggle in_fence).
-    """
-    lines = text.split("\n")
-    in_fence = False
-    for i, line in enumerate(lines):
-        m = FENCE_LINE_RE.match(line)
-        if m:
-            fence_char = m.group(1)[0]
-            rest = line[m.end():]
-            self_closed = re.search(re.escape(fence_char) + "{3,}", rest)
-            lines[i] = ""
-            if not self_closed:
-                in_fence = not in_fence
-            continue
-        if in_fence:
-            lines[i] = ""
-    return "\n".join(lines)
-
-
-def mask_inline_code_spans(text):
-    """Blank out inline code spans (`...`), preserving length/line count."""
-    return INLINE_CODE_SPAN_RE.sub(lambda m: " " * len(m.group(0)), text)
-
-
-def strip_frontmatter(text):
-    """Blank out the YAML frontmatter block, preserving line count."""
-    m = FRONTMATTER_RE.match(text)
-    if not m:
-        return text
-    blanked = "\n" * m.group(0).count("\n")
-    return blanked + text[m.end():]
-
-
-def strip_import_lines(text):
-    """Blank out MDX `import ... from '...'` lines, preserving line count."""
-    lines = text.split("\n")
-    for i, line in enumerate(lines):
-        if IMPORT_LINE_RE.match(line):
-            lines[i] = ""
-    return "\n".join(lines)
-
-
-def line_of(text, index):
-    return text.count("\n", 0, index) + 1
-
-
-def is_generated_tree(rel_path):
-    return rel_path.startswith(GENERATED_TREE_PREFIXES)
-
-
 def is_index_file(rel_path):
     name = rel_path.rsplit("/", 1)[-1]
     return name in ("index.md", "index.mdx")
-
-
-def list_path_files(scope):
-    out = subprocess.run(
-        ["git", "ls-files", "--", "*.md", "*.mdx"],
-        cwd=REPO_ROOT,
-        capture_output=True,
-        text=True,
-        check=True,
-    )
-    files = out.stdout.splitlines()
-    scope_norm = scope.strip("/\\").replace("\\", "/")
-    return [f for f in files if f == scope_norm or f.startswith(scope_norm + "/")]
-
-
-def resolve_safe_path(rel_path):
-    """Resolve rel_path against REPO_ROOT and refuse anything that escapes
-    it (defends against a crafted PR-diff filename attempting path
-    traversal -- the changed-files list arrives as untrusted content)."""
-    candidate = (REPO_ROOT / rel_path).resolve()
-    try:
-        candidate.relative_to(REPO_ROOT)
-    except ValueError:
-        return None
-    return candidate
 
 
 def check_file(rel_path):

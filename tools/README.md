@@ -6,6 +6,7 @@ Scripts that convert, generate, or verify content for this repo. Not published t
 
 * **`migration/`** — one-time or bounded-rollout scripts used to convert content during the DocFx → Mintlify forklift. Dead weight after go-live: nothing here is expected to run again in normal operation, though a couple (`sync-title-h1.py`, `update-docs-navigation.ps1`) may still see occasional use until their rollout is fully wrapped up. Kept rather than deleted, as reference for any future large-scale conversion.
 * **`ci/`** — scripts only ever invoked by a GitHub Actions workflow, not part of a contributor's manual workflow. Moving or renaming one of these requires updating the matching `.github/workflows/*.yml`.
+* **`ci/lib/`** — shared helpers for the `ci/` guard/auto-fix scripts (#435): `markdown_masking.py` (fenced-code/inline-code/frontmatter/import-line masking, the `GENERATED_TREE_PREFIXES` constant), `repo_files.py` (`list_path_files`, `resolve_safe_path`, `file_path_to_url`), `diff_utils.py` (`get_added_line_numbers`). A new guard script needing one of these should import it rather than re-copying it. Has its own pytest suite (`test_*.py`), this repo's first Python tests.
 * **Top level (`tools/`)** — shared utilities used long-term, by contributors and/or CI: encoding/BOM/nav/redirect verification, the CRMScript reference generator, benchmarking, and the footer/sitemap generators.
 * **`benchmarks/`** — its own self-contained subfolder (setup, scripts, `lib/`, `results/`); see [`benchmarks/README.md`](benchmarks/README.md).
 
@@ -113,6 +114,30 @@ pwsh -Command "Invoke-Pester -Path tools/migration/fix-generated-mdx-escaping.Te
 ```
 
 `-CI` writes a `testResults.xml` report to the current directory (gitignored — see `.gitignore`) and sets a non-zero exit code on failure, matching the workflow's own invocation.
+
+## Python script conventions
+
+A guard/auto-fix script under `ci/` (or a shared top-level script) that reads or scans markdown/MDX content should import the shared helpers in `ci/lib/` (#435) rather than copying them — `markdown_masking.py` for fenced-code/inline-code/frontmatter/import-line masking, `repo_files.py` for listing tracked files or safely resolving a PR-diff-supplied path, `diff_utils.py` for recovering a PR's added-line numbers from `git diff`. Import it the same way the existing scripts do, since these aren't installed as a package:
+
+```python
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))  # tools/ci/, or tools/ci/ from a top-level script
+from lib.markdown_masking import mask_fenced_code, mask_inline_code_spans
+```
+
+Only extract a *new* shared helper if the same non-trivial logic (roughly: more than a handful of lines, or subtle/correctness-sensitive like the masking functions) is genuinely duplicated across 3 or more scripts — a bespoke variant with its own extra filtering (several `list_path_files` implementations in this repo have one) is not a duplicate, and force-fitting it into a shared function just to reduce line count usually costs more in indirection than it saves.
+
+### Running the pytest suite locally
+
+`tools/ci/lib/test_*.py` is the first pytest suite in this repo. Install once (`pip install pytest`), then run from the repo root:
+
+```bash
+pytest tools/ci/lib/ -v
+```
+
+A guard/auto-fix script itself is not unit-tested the same way — most operate directly against real repo content and are verified by comparing stdout before/after a change (see any recent `tools/ci/` PR's test plan for the pattern), the same reasoning `contribute/acceptance-testing.mdx` documents for this repo's broader manual/live-verification checks. The shared `ci/lib/` helpers get real unit tests instead, since they're small enough to cover with hand-built fixtures. A couple of tests deliberately still assert against this repo's own real content, for example that `docs.json` exists, since the whole point of a helper like `REPO_ROOT` resolution is that it targets the real repo.
 
 ## Verifying a regeneration is really clean
 

@@ -44,96 +44,15 @@ Usage:
 
 import argparse
 import re
-import subprocess
 import sys
-from collections import defaultdict
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib.markdown_masking import mask_fenced_code, mask_inline_code_spans  # noqa: E402
+from lib.repo_files import resolve_safe_path  # noqa: E402
+from lib.diff_utils import get_added_line_numbers  # noqa: E402
 
 SEE_CREF_RE = re.compile(r'<see cref=|&lt;see cref=', re.IGNORECASE)
-
-FENCE_LINE_RE = re.compile(r"^[ \t]{0,3}(`{3,}|~{3,})")
-INLINE_CODE_SPAN_RE = re.compile(r"`[^`\n]+`")
-
-
-def mask_fenced_code(text):
-    """Blank out fenced code-block bodies, keeping line count and length
-    identical so line numbers stay accurate. Same approach as the
-    identical helper in tools/ci/check-index-relative-links.py (see that
-    file for the self-closed-fence edge case this handles)."""
-    lines = text.split("\n")
-    in_fence = False
-    for i, line in enumerate(lines):
-        m = FENCE_LINE_RE.match(line)
-        if m:
-            fence_char = m.group(1)[0]
-            rest = line[m.end():]
-            self_closed = re.search(re.escape(fence_char) + "{3,}", rest)
-            lines[i] = ""
-            if not self_closed:
-                in_fence = not in_fence
-            continue
-        if in_fence:
-            lines[i] = ""
-    return "\n".join(lines)
-
-
-def mask_inline_code_spans(text):
-    """Blank out inline code spans (`...`), preserving length/line count."""
-    return INLINE_CODE_SPAN_RE.sub(lambda m: " " * len(m.group(0)), text)
-
-
-def get_added_line_numbers(base_ref):
-    """Returns {path: set(line_no, ...)} for every line added by the PR's
-    diff (against base_ref) in a tracked .md/.mdx file. Uses a unified
-    diff with file-scoped hunk headers so added-line numbers in the new
-    file can be recovered without a full patch parser."""
-    cmd = [
-        "git", "diff", "--unified=0", f"{base_ref}...HEAD",
-        "--", "*.md", "*.mdx",
-    ]
-    out = subprocess.run(cmd, cwd=REPO_ROOT, capture_output=True, text=True, check=True)
-
-    added = defaultdict(set)
-    current_path = None
-    new_line_no = None
-    hunk_re = re.compile(r"^@@ -\d+(?:,\d+)? \+(\d+)(?:,\d+)? @@")
-
-    for line in out.stdout.splitlines():
-        if line.startswith("+++ "):
-            path = line[4:]
-            current_path = None if path == "/dev/null" else path[2:] if path.startswith("b/") else path
-            continue
-        if line.startswith("--- "):
-            continue
-        m = hunk_re.match(line)
-        if m:
-            new_line_no = int(m.group(1))
-            continue
-        if current_path is None or new_line_no is None:
-            continue
-        if line.startswith("+"):
-            added[current_path].add(new_line_no)
-            new_line_no += 1
-        elif line.startswith("-"):
-            continue
-        else:
-            new_line_no += 1
-
-    return added
-
-
-def resolve_safe_path(rel_path):
-    """Resolve rel_path against REPO_ROOT and refuse anything that would
-    escape it (defends against a crafted PR-diff filename attempting path
-    traversal -- the changed-files list arrives as untrusted content)."""
-    candidate = (REPO_ROOT / rel_path).resolve()
-    try:
-        candidate.relative_to(REPO_ROOT)
-    except ValueError:
-        return None
-    return candidate
 
 
 def find_hits(path, line_numbers):

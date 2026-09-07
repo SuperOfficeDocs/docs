@@ -65,9 +65,11 @@ Usage:
 
 import argparse
 import re
-import subprocess
 import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib.repo_files import list_path_files  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 DEFAULT_PATH = "en/api/mdo-providers/reference"
@@ -83,18 +85,6 @@ SUFFIXES = ("active", "passive")
 SEGMENT_RE = re.compile(
     r"^(" + "|".join(ENTITIES) + r")(" + "|".join(ENTITIES) + r")?(" + "|".join(SUFFIXES) + r")$"
 )
-
-
-def list_path_files(scope):
-    out = subprocess.run(
-        ["git", "ls-files", "--", "*.md", "*.mdx"],
-        cwd=REPO_ROOT,
-        capture_output=True,
-        text=True,
-        check=True,
-    )
-    scope_norm = scope.strip("/\\").replace("\\", "/")
-    return [f for f in out.stdout.splitlines() if f == scope_norm or f.startswith(scope_norm + "/")]
 
 
 def derive_names(title):
