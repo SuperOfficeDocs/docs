@@ -4,7 +4,7 @@ title: Redirects and redirect_from
 description: What redirect_from is for, how it becomes a live redirect in config/redirects.json, and when it's safe to compact a group of redirects into a wildcard.
 keywords: ['redirect_from', 'redirects', 'config/redirects.json', 'docs.json', 'wildcard', 'permanent redirect', 'moved page', 'deleted page', 'URL migration', '.html suffix']
 author: digitaldiina
-date: 08.27.2026
+date: 09.07.2026
 content_type: concept
 related:
   - /contribute/retention-policy
@@ -130,10 +130,32 @@ This is expected and safe, not the `/index` self-redirect loop covered in the da
 Three shapes are already covered and don't need a duplicate:
 
 * **Wildcard sources** (`/prefix/*`) - `*` already matches the `.html` form too.
-* **Sources ending in `/index` or a trailing slash** - Mintlify's hosting strips `.html` for `index.html` specifically, so these already resolve either way.
+* **Sources ending in `/index` or a trailing slash** - covered by the repo-wide `/:path*/index.html` rule below, not a per-page duplicate.
 * **A source that already ends in `.html`** - nothing to duplicate.
 
 `tools/check-redirects-live.py` requests both forms for every plain entry, so a missing duplicate shows up as a live-check failure rather than a broken link a visitor happens to hit first.
+
+### The `/:path*/index.html` rule must stay first {#index-html-rule-must-stay-first}
+
+<Danger>
+**`config/redirects.json`'s first array entry must always be:**
+
+```json
+{
+  "source": "/:path*/index.html",
+  "destination": "/:path*",
+  "permanent": true
+}
+```
+
+**Position matters, not just presence.** Mintlify evaluates redirects in array order, and this rule needs to strip `.html` off an `index.html` request before any other wildcard rule gets a chance to match the same URL first. If it ever ends up anywhere but first, treat that as a bug, not a cosmetic ordering issue.
+
+**Why this exists ([#424][6]):** `.../index.html` requests only resolved correctly for `en`, our default language - every other language 404'd. Originally suspected as a #341 regression, it wasn't; the real cause, confirmed by Mintlify support, is a caching side effect - `en` pages get visited often enough to stay cached, and a cached page quietly gets served for the `.html` form too, while less-visited languages fall through to the origin and 404. Mintlify's platform has no general "strip an arbitrary `.html` suffix" rule (see [External destinations need `.html`][1] above and the `.html`-suffix-duplicates section) - but every affected URL here ends in `/index.html`, so this one rule, added first, covers all of them.
+
+**`tools/sort-redirects.py` will never move this entry.** It's listed in that script's `PINNED_FIRST_SOURCES` and excluded from the alphabetical sort entirely, always re-emitted at the front. If you add another rule with the same "must run before anything else" requirement, add its source to that list too, in the order the rules must apply - don't rely on alphabetical position or manual care on every future sort run.
+</Danger>
+
+`tools/compact-redirects.py` doesn't need the same guard - it only ever touches entries under a source prefix explicitly passed to `--apply`, and never reorders the array wholesale. `tools/check-redirects-live.py` already classifies any `*`-containing source as a wildcard entry (sanity-checked by destination prefix only, not a literal fetch), so it needed no changes either.
 
 ## Wildcards {#wildcards}
 
@@ -222,3 +244,4 @@ After editing `config/redirects.json`, spot-check in `mint dev`: visit the old U
 [3]: ./configure-mintlify
 [4]: ./retention-policy
 [5]: https://github.com/SuperOfficeDocs/docs/issues/242
+[6]: https://github.com/SuperOfficeDocs/docs/issues/424
