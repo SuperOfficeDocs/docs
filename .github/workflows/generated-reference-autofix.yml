@@ -28,10 +28,22 @@ on:
       - 'tools/ci/wide-mode-pages.txt'
       - 'tools/ci/code-wrap-pages.txt'
 
-# Automatically cancel in-progress runs on the same branch
+# Shared with every other workflow that commits and pushes an auto-fix back
+# onto this same PR branch (database-enum-sidebar-title.yml,
+# openapi-conversion-guard.yml, recent-pages-sync.yml,
+# version-frontmatter-guard.yml) -- a group name scoped to *this* workflow
+# only stops two runs of *this* workflow from racing, but not a different
+# auto-fix workflow pushing to the identical ref at the same time (#407 fixed
+# that race for 4 fixers by merging them into one job; this is the same race
+# recurring across 5 separate workflows). cancel-in-progress is deliberately
+# false: queue, don't cancel -- a queued run's `actions/checkout@v4` step
+# resolves/fetches the ref when it executes, not at trigger time, so it
+# naturally picks up whatever an earlier queued run already pushed. Do not
+# "simplify" this back to cancel-in-progress: true -- that would silently
+# drop a competing auto-fix's work instead of letting it queue.
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  group: autofix-push-${{ github.ref }}
+  cancel-in-progress: false
 
 permissions:
   contents: write
