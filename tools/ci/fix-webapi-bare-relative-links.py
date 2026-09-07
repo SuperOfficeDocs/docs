@@ -54,11 +54,11 @@ import subprocess
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib.markdown_masking import mask_fenced_code, mask_inline_code_spans  # noqa: E402
+
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 DEFAULT_SCOPE = "en/api/reference/webapi"
-
-FENCE_LINE_RE = re.compile(r"^[ \t]{0,3}(`{3,}|~{3,})")
-INLINE_CODE_SPAN_RE = re.compile(r"`[^`\n]+`")
 
 # ](Name.md) or ](Name.md\#Anchor) or ](Name.md#Anchor) -- bare filename,
 # no path segment, no scheme. Anchor half is optional.
@@ -68,31 +68,6 @@ BARE_LINK_RE = re.compile(
 # A destination that looks like this bug but carries a path segment or a
 # scheme -- never observed in this tree, so surfaced rather than rewritten.
 UNEXPECTED_LINK_RE = re.compile(r"\]\([^)]*/[^)]*\.md[^)]*\)")
-
-
-def mask_fenced_code(text):
-    """Blank out fenced code-block bodies, keeping line count and length
-    identical. Same approach as the identical helper in
-    tools/ci/check-index-relative-links.py."""
-    lines = text.split("\n")
-    in_fence = False
-    for i, line in enumerate(lines):
-        m = FENCE_LINE_RE.match(line)
-        if m:
-            fence_char = m.group(1)[0]
-            rest = line[m.end():]
-            self_closed = re.search(re.escape(fence_char) + "{3,}", rest)
-            lines[i] = ""
-            if not self_closed:
-                in_fence = not in_fence
-            continue
-        if in_fence:
-            lines[i] = ""
-    return "\n".join(lines)
-
-
-def mask_inline_code_spans(text):
-    return INLINE_CODE_SPAN_RE.sub(lambda m: " " * len(m.group(0)), text)
 
 
 def rewrite_line(line):

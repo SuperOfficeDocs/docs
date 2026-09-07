@@ -58,6 +58,9 @@ import sys
 from datetime import datetime, timedelta
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib.repo_files import file_path_to_url  # noqa: E402
+
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 INDEX_PATH = REPO_ROOT / "index.mdx"
 
@@ -196,15 +199,6 @@ def resolve_target_file(rel_url_path):
         if candidate.is_file():
             return candidate
     return None
-
-
-def file_path_to_url(rel_file_path):
-    """Reverse of resolve_target_file, for auto-detected new files."""
-    p = Path(rel_file_path)
-    stem_path = p.with_suffix("")
-    if stem_path.name == "index":
-        stem_path = stem_path.parent
-    return "/" + stem_path.as_posix()
 
 
 def read_target_frontmatter(target_path):

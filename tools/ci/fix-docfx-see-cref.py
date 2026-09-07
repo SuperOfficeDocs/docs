@@ -66,6 +66,9 @@ import subprocess
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib.markdown_masking import mask_fenced_code, mask_inline_code_spans  # noqa: E402
+
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 
 DEFAULT_SCOPES = [
@@ -73,9 +76,6 @@ DEFAULT_SCOPES = [
     "en/api/mdo-providers/reference",
     "en/api/reference/webapi",
 ]
-
-FENCE_LINE_RE = re.compile(r"^[ \t]{0,3}(`{3,}|~{3,})")
-INLINE_CODE_SPAN_RE = re.compile(r"`[^`\n]+`")
 
 # Matches a raw or HTML-escaped <see cref="..."> tag, paired or self-closing.
 # Group 1/2 = raw form's cref value / inner label; group 3/4 = the same for
@@ -102,30 +102,6 @@ SELF_DECL_RE = re.compile(
 # A recognized DocFX kind prefix (T:/F:/M:/P:/!:), or the malformed
 # space-dash typo variant (T -Name, no colon at all) found in 24 occurrences.
 PREFIX_RE = re.compile(r'^([A-Za-z!]):(.*)$|^([A-Za-z!])\s*-(.*)$')
-
-
-def mask_fenced_code(text):
-    """Blank out fenced code-block bodies, keeping line count and length
-    identical. Same approach as tools/ci/check-no-new-docfx-see-cref.py."""
-    lines = text.split("\n")
-    in_fence = False
-    for i, line in enumerate(lines):
-        m = FENCE_LINE_RE.match(line)
-        if m:
-            fence_char = m.group(1)[0]
-            rest = line[m.end():]
-            self_closed = re.search(re.escape(fence_char) + "{3,}", rest)
-            lines[i] = ""
-            if not self_closed:
-                in_fence = not in_fence
-            continue
-        if in_fence:
-            lines[i] = ""
-    return "\n".join(lines)
-
-
-def mask_inline_code_spans(text):
-    return INLINE_CODE_SPAN_RE.sub(lambda m: " " * len(m.group(0)), text)
 
 
 def normalize_fqn(raw_cref):
