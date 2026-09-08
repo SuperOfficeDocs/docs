@@ -4,7 +4,7 @@ title: What's new in SuperOffice 12
 description: Release notes. What's new in SuperOffice 12
 keywords: ['SuperOffice CRM 12']
 author: kirstiaa
-date: 08.27.2026
+date: 09.15.2026
 so_version: 12
 content_type: release-note
 audience: person
@@ -40,6 +40,8 @@ Working through a request queue just got faster. You can reply to a request stra
 * If you cancel or move to another request with unsent text, you'll be asked before anything is discarded.
 * Quick reply is not shown on requests that are marked as spam, deleted or merged, so you're never offered an action that doesn't apply.
 
+![Request list with preview gives a quick reply options -screenshot][img15]
+
 **Why it matters**
 Agents handling high volumes of requests can triage, read and respond from one place, cutting down on clicks and context switching. This brings back a much-requested capability from the previous Service client.
 
@@ -47,6 +49,8 @@ Agents handling high volumes of requests can triage, read and respond from one p
 
 Part of the broader Forms improvement initiative to cater to more professional marketing needs. Long forms with fields that don't apply to every visitor feel overwhelming and hurt completion. Conditional fields let a form only show a question when an earlier answer makes it relevant, so each visitor sees just what matters to them while the form still captures the detail needed from everyone else.
 Where to find it: Marketing → Forms → form builder. On any eligible field's option/value, choose Add related field.
+
+![Forms with conditional fields -screenshot][img13]
 
 **How to use it:**
 
@@ -56,11 +60,25 @@ Where to find it: Marketing → Forms → form builder. On any eligible field's 
 *	Fields can be chained several levels deep (question → follow-up → deeper follow-up), though each related field is controlled by exactly one condition on one field.
 *	For the visitor: hidden by default, appears instantly on the triggering answer, and disappears and clears if the answer changes. A hidden field is never required, even if marked mandatory, and hidden answers aren't included in the submission.
 
+### Forms - default checked state for the Custom Checkbox field - Marketing
+
+Custom Checkbox fields (the Boolean-type extra field, Yes/No only) always started unchecked, even when a customer's typical answer is "Yes" for most visitors. Users can now set that default, so the field, and any related field attached to its condition, reflect the intended state as soon as the form loads.
+
+**How to use it:**
+
+•	Defaults to unchecked, preserving today's behavior for existing and new forms.
+•	If the field has a related field attached via a condition, the "Default checked" setting is treated as if the visitor had set it themselves — the related field shows or stays hidden on load accordingly.
+•	Changing the setting updates the related field's visibility live in the editor's preview.
+
+![Form field properties where you can default check on -screenshot][img16]
+
+**Where to find it:** Marketing → Forms → form builder → a Custom Checkbox field's settings → Default checked.
+
 ### Forms - AI styling of Forms - Marketing
 
 AI styling of forms shipped as a beta in 11.13 — a user gives a website URL and the AI suggests colors, borders, and rounded corners to match it. For 12.4 it's graduating out of beta: the results are more consistent and polished than in the original beta, and the panel is now clearer about what's AI-generated and what applying it will do, so users can trust the suggestion and know what they're getting before they commit to it.
 
-Where to find it: Marketing → Forms → edit a form → Style tab → Custom styling section.
+![Mailing Form with custom styling, both from a https page or specific css styling -screenshot][img14]
 
 **How to use it:**
 
@@ -69,13 +87,15 @@ Where to find it: Marketing → Forms → edit a form → Style tab → Custom s
 *	Select Apply now to override the form's default styling with the result. It only changes colors, borders, and rounded corners. Other styling needs to be changed in the basic styling section, or added as additional CSS properties (font, layout such as width/height, etc.).
 *	The panel now states plainly that this overrides the form's default styling, and carries an AI-attribution badge so it's clear the suggestion came from AI analysis of the given site rather than a manual choice.
 
-### Flows - expanded trigger conditions for custom fields - Marketing
+**Where to find it:** Marketing → Forms → edit a form → Style tab → Custom styling section.
+
+### Flows - Expanded trigger conditions for custom fields - Marketing
 
 Broadening what you can build flow logic on. Extra fields of the dropdown type can now be used as a trigger condition on a Form submission, so you can filter or branch a flow based on the answer given.
 
-**Where to find it:** Flows → a trigger based on a Form submission → trigger condition on a dropdown-type extra field.
-
 **How to use it:** Select a dropdown-type extra field as a condition on a Form-submission trigger; its list values now populate so you can filter or branch on the answer given.
+
+**Where to find it:** Flows → a trigger based on a Form submission → trigger condition on a dropdown-type extra field.
 
 <Update label="12.3" description="27.08.2026" tags={["Settings and maintenance"]}>
 <a id="12.3"></a>
@@ -262,3 +282,7 @@ Some features are available to selected customers as part of ongoing pilots. See
 [img10]: /media/loc/en/request/requests-list-mark-spam-context-menu.png
 [img11]: /media/loc/en/admin/admin-dkim-settings.png
 [img12]: /media/loc/en/marketing/marketing-mailing-view-summary.png
+[img13]: /media/loc/en/marketing/marketing-forms-fields-related.png
+[img14]: /media/loc/en/marketing/marketing-form-custom-styling.png
+[img15]: /media/loc/en/request/request-preview-quick-reply.png
+[img16]: /media/loc/en/marketing/marketing-form-field-properties.png
