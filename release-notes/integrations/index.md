@@ -30,38 +30,44 @@ Current version: For the latest version numbers and release details for all prod
 
 | Product | Version | Date |
 | --- | --- | --- |
-| ConnectERP | 158.0 | 28.05.2026 |
-| DataBridge | 158.0 | 28.05.2026 |
-| Panels | 71.0 | 20.05.2026 |
+| ConnectERP | 161.0 | 28.08.2026 |
+| DataBridge | 161.0 | 28.08.2026 |
+| Panels | 72.0 | 11.08.2026 |
 | SharePoint Documents | 3.9 | 24.06.2026 |
-| Slack Notify | 12.0 | 27.05.2026 |
-| SuperOffice Copilot | 1.11 | 17.09.2025 |
+| Slack Notify | 12.0 | 06.07.2026 |
+| SuperOffice Copilot | 2.0 | 02.09.2026 |
 | SuperOffice for Gmail | 3.0 | 24.02.2026 |
-| SuperOffice for Mailchimp | 12.0 | 27.05.2026 |
-| SuperOffice for Outlook | 6.3.6 | 26.06.2026 |
-| SuperOffice for Teams | 1.0.0 | 01.06.2026 |
+| SuperOffice for Mailchimp | 12.0 | 06.07.2026 |
+| SuperOffice for Outlook | 6.4.5 | 27.08.2026 |
+| SuperOffice for Teams | 1.0.0 | 06.07.2026 |
 | SuperOffice for Trello | 11.0 | 21.11.2025 |
-| SuperOffice for Wordpress | 12.0 | 27.05.2026 |
+| SuperOffice for Wordpress | 12.0 | 06.07.2026 |
 | SuperOffice MailLink | 13.1.61 | 30.01.2026 |
-| Synchronizer | 125.0 | 05.06.2026 |
-| Teams Notify | 12.0 | 18.05.2026 |
+| Synchronizer | 131.0 | 01.09.2026 |
+| Teams Notify | 12.0 | 06.07.2026 |
 | Video Meetings | 2.12 | 26.05.2026 |
-| Webex Notify | 12.0 | 18.05.2026 |
+| Webex Notify | 12.0 | 06.07.2026 |
 | WebTools for Mac | 13.3.3 | 06.06.2026 |
 | WebTools for Windows | 13.2.3 | 24.03.2026 |
-| Zapier | 3.5.8 | 25.05.2026 |
+| Zapier | 3.5.10 | 24.07.2026 |
 
 ## SuperOffice App Store
 
 See all the [new or updated apps][2]
 
+* [ezSync][68] from Schneider & Wulf EDV-Beratung GmbH & Co KG (27.08.2026)
+* [Harmoniser][69] from Synergy Technology Ltd (27.08.2026)
+* [Dealfront Connect (formerly Echobot Connect)][66] from SP Softwarepartner GmbH/Dealfront (20.08.2026)
+* [Panels for SuperOffice][35] from SuperOffice AS (11.08.2026)
+* [Zapier Integration][71] from SuperOffice AS (24.07.2026)
+* [e-Boekhouden for SuperOffice][67] from All-CRM (10.07.2026)
+* [SuperOffice for WordPress][70] from SuperOffice AS (06.07.2026)
 * [InZynk for SuperOffice][65] from InZynk (12.06.2026)
+* [Synchronizer for SuperOffice][47] from SuperOffice AS (20.05.2026)
 * [Database Mirroring Service][62] from SuperOffice AS (05.06.2026)
 * [SuperOffice for Outlook][63] from SuperOffice AS (03.06.2026)
 * [SuperOffice for Teams][64] from SuperOffice AS (01.06.2026)
 * [DataBridge for SuperOffice][45] from SuperOffice AS (20.05.2026)
-* [Synchronizer for SuperOffice][47] from SuperOffice AS (20.05.2026)
-* [Panels for SuperOffice][35] from SuperOffice AS (20.05.2026)
 * [Lyyti & SuperOffice integration][61] from Lyyti (16.03.2026)
 * [Unimicro by Syncify][60] from Syncify AB (08.05.2026)
 * [SuperNotes][41] from SuperOffice AS (04.05.2026)
@@ -132,3 +138,9 @@ See all the [new or updated apps][2]
 [63]: https://appstore.superoffice.com/superoffice-as/superoffice-for-outlook
 [64]: https://appstore.superoffice.com/superoffice-as/superoffice-for-teams
 [65]: https://appstore.superoffice.com/inzynk/inzynk-for-superoffice
+[66]: https://appstore.superoffice.com/sp-softwarepartner-gmbh---dealfront/dealfront-connect
+[67]: https://appstore.superoffice.com/all-crm/e-boekhouden-for-superoffice
+[68]: https://appstore.superoffice.com/schneider-wulf-edv-beratung/ezsync
+[69]: https://appstore.superoffice.com/synergy-technology-ltd/harmoniser
+[70]: https://appstore.superoffice.com/superoffice-as/superoffice-for-wordpress
+[71]: https://appstore.superoffice.com/superoffice-as/zapier-integration
