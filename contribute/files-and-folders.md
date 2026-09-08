@@ -4,7 +4,7 @@ title: Organization of repositories
 description: How SuperOfficeDocs repositories are organized into files and folders, including naming conventions and UID rules.
 keywords: ['file names', 'folder structure', 'naming conventions', 'UID', 'repository organization', 'downloads']
 author: digitaldiina
-date: 07.16.2026
+date: 09.08.2026
 content_type: reference
 related: false
 language: en

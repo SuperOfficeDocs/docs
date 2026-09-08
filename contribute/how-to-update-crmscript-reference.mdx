@@ -5,7 +5,7 @@ sidebarTitle: Update CRMScript reference
 description: How to regenerate the CRMScript reference from its source YAML when a method, property, or class changes.
 keywords: ['CRMScript', 'reference', 'transform-crmscript', 'generate-crmscript-nav', 'YAML']
 author: digitaldiina
-date: 08.12.2026
+date: 09.08.2026
 content_type: howto
 related:
   - /en/automation/crmscript/reference/index
@@ -71,7 +71,7 @@ This doesn't catch a *.yml* file being deleted without its *.mdx* counterpart: t
 
 ### Garbled characters after regenerating
 
-If a regenerated file shows corrupted multi-byte characters (smart quotes, accented or non-Latin names) in the diff, that's a PowerShell read-encoding issue, not a real content change. Don't commit it. See [`tools/README.md`][3] for the underlying cause and the write-side conventions these scripts follow.
+If a regenerated file shows corrupted multi-byte characters (smart quotes, accented or non-Latin names) in the diff, that's a PowerShell read-encoding issue, not a real content change. Don't commit it. See *tools/README.md* for the underlying cause and the write-side conventions these scripts follow.
 
 ### HTML-escaped remarks
 
@@ -83,4 +83,3 @@ HTML markup embedded in a class's `<remarks>` field (for example `<ul><li>`) is 
 
 [1]: https://github.com/SuperOfficeDocs/docs/blob/main/.github/workflows/crmscript-drift.yml
 [2]: https://github.com/SuperOfficeDocs/docs/blob/main/en/automation/crmscript/code-quality/intellisense.mdx
-[3]: https://github.com/SuperOfficeDocs/docs/blob/main/tools/README.md
