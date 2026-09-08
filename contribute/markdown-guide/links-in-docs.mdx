@@ -65,7 +65,7 @@ Relative paths like these are the right default as long as both pages stay withi
 * **A self-contained generated reference tree** (`en/database/tables/`, the archive-provider/MDO-provider reference) stays relative by its own generator's convention: see the note below.
 
 <Warning>
-**Links authored ON an `index.md`/`index.mdx` page must always be root-relative, even within the same topic.** A page built from an `index.md`/`index.mdx` file is served at its folder's own bare path with no trailing slash (`release-notes/12/index.mdx` serves at `/release-notes/12`). Because of that, a relative link written on that page resolves against the *parent* of its own folder, not against the folder itself: `./page` written on `release-notes/12/index.mdx` resolves to `/release-notes/page`, not `/release-notes/12/page`, and `../index` resolves to `/index`, not `/release-notes/index`. This is the opposite of what the relative-within-topic rule above assumes, and it bit real production links (see [issue #375][2]). Write `/release-notes/12/page` or `/release-notes/index` instead. Regular (non-index) pages aren't affected. This applies to both markdown links and HTML `href` values.
+**Links authored ON an `index.md`/`index.mdx` page must always be root-relative, even within the same topic.** A page built from an `index.md`/`index.mdx` file is served at its folder's own bare path with no trailing slash (`release-notes/12/index.mdx` serves at `/release-notes/12`). Because of that, a relative link written on that page resolves against the *parent* of its own folder, not against the folder itself: `./page` written on `release-notes/12/index.mdx` resolves to `/release-notes/page`, not `/release-notes/12/page`, and `../index` resolves to `/index`, not `/release-notes/index`. This is the opposite of what the relative-within-topic rule above assumes. Write `/release-notes/12/page` or `/release-notes/index` instead. Regular (non-index) pages aren't affected. This applies to both markdown links and HTML `href` values.
 </Warning>
 
 **Link to an absolute path beginning at the root of the repository:**
@@ -81,9 +81,9 @@ Why the split: within one topic, the same relative link text is correct in every
 </Note>
 
 <Note>
-**Linking to an OpenAPI-generated reference page** (`en/api/reference/restful/rest/*`, `en/api/reference/restful/agent/*`) doesn't follow the old DocFx convention. These pages have no markdown source file — they're generated at build time from the OpenAPI spec — so the target path isn't a folder/filename you can look up in the repo. Use the entity or tag name **lowercase**, followed by the specific operation in **kebab-case** (for example, `/en/api/reference/restful/rest/document/get-all`, or `/en/api/reference/restful/agent/webhook_agent/create-default-webhook`). If no single operation fits, link to the tree's generic hub page instead (`/en/api/reference/restful/agent/index`) rather than guessing at an operation. The old DocFx shapes — `restful/rest/{PascalCaseEntity}/index`, `restful/agent/{tag}` with no operation, or `{Tag_Agent}/{operationId}` — are all stale and 404 live; see [issue #402][3] and [issue #396][4] for two confirmed instances of this, and [issue #400][5]/[issue #401][6]/[issue #404][7] for the same "generated tree, old DocFx link shape" problem in other reference trees.
+**Linking to an OpenAPI-generated reference page** (`en/api/reference/restful/rest/*`, `en/api/reference/restful/agent/*`) doesn't follow the old DocFx convention. These pages have no markdown source file — they're generated at build time from the OpenAPI spec — so the target path isn't a folder/filename you can look up in the repo. Use the entity or tag name **lowercase**, followed by the specific operation in **kebab-case** (for example, `/en/api/reference/restful/rest/document/get-all`, or `/en/api/reference/restful/agent/webhook_agent/create-default-webhook`). If no single operation fits, link to the tree's generic hub page instead (`/en/api/reference/restful/agent/index`) rather than guessing at an operation. The old DocFx shapes — `restful/rest/{PascalCaseEntity}/index`, `restful/agent/{tag}` with no operation, or `{Tag_Agent}/{operationId}` — are all stale and 404 live.
 
-A CI guard now catches a violation of this convention automatically — see the [Stale OpenAPI links guard][8] section of Automated tests.
+A CI guard now catches a violation of this convention automatically — see the [Stale OpenAPI links guard][2] section of Automated tests.
 </Note>
 
 ### Amendment: "topic" isn't always one top-level folder
@@ -183,10 +183,4 @@ Certain file types don't play well when the user tries to download from a browse
 Currently not supported for SuperOfficeDocs.
 
 [1]: https://www.mintlify.com/docs/create/text#custom-heading-ids
-[2]: https://github.com/SuperOfficeDocs/docs/issues/375
-[3]: https://github.com/SuperOfficeDocs/docs/issues/402
-[4]: https://github.com/SuperOfficeDocs/docs/issues/396
-[5]: https://github.com/SuperOfficeDocs/docs/issues/400
-[6]: https://github.com/SuperOfficeDocs/docs/issues/401
-[7]: https://github.com/SuperOfficeDocs/docs/issues/404
-[8]: /contribute/automated-tests#stale-openapi-links-guard
+[2]: /contribute/automated-tests#stale-openapi-links-guard

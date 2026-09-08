@@ -53,7 +53,7 @@ Product content pages (everything outside `contribute/`) use a larger property s
 | 4 | `keywords` | Always | YAML array of single-quoted search-term strings, for example `['term one', 'term two']`: Mintlify's internal-search format |
 | 5 | `author` | Always | GitHub alias: default `digitaldiina` |
 | 6 | `date` | Always | Last modified, format `MM.DD.YYYY` |
-| 7 | `so_version` | Handcrafted docs | Product version: see defaults below; omit in generated files. Named `so_version`, not `version`: Mintlify's search back end treats `version` as a reserved filter field and 400s on non-string values (see [issue #254][4]) |
+| 7 | `so_version` | Handcrafted docs | Product version: see defaults below; omit in generated files. Named `so_version`, not `version`: Mintlify's search back end treats `version` as a reserved filter field and 400s on non-string values |
 | 8 | `content_type` | Always | `concept`, `howto`, `reference`, or `release-note`: omit in generated files |
 | 9 | `functional_right` | If present | Required functional right |
 | 10 | `license` | If present | Required license |
@@ -112,5 +112,4 @@ Before any updates get merged in the repo, the reviewers will check this section
 [1]: ./using-blueprint-templates
 [2]: ./index
 [3]: ../seo
-[4]: https://github.com/SuperOfficeDocs/docs/issues/254
 [5]: ../automated-tests

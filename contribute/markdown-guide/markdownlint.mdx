@@ -87,14 +87,13 @@ markdownlint-cli2 PATH
 
 `markdownlint-cli2` auto-discovers `.markdownlint.yaml` (the rule configuration) and `.markdownlintignore` (excluded paths, such as generated reference content) from the repo root - no need to repeat them as flags. `PATH` can be a single file, a glob, or a space-separated list of files. Add `--fix` to automatically resolve issues that have a defined fix, such as whitespace.
 
-See [GitHub issue 373][7] regarding why we exclude rules MD013 and MD041 in `.markdownlint.yaml`.
+`.markdownlint.yaml` disables `MD041` (require a top-level heading as the first line) and sets a generous limit for `MD013` (line length): page titles come from frontmatter rather than an in-body H1, and prose here isn't hard-wrapped to a fixed column width.
 
 [2]: ./index
 [3]: https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
 [4]: https://github.com/DavidAnson/markdownlint#rules--aliases
 [5]: https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
 [6]: https://github.com/DavidAnson/markdownlint-cli2
-[7]: https://github.com/SuperOfficeDocs/superoffice-docs/issues/373
 [8]: ../automated-tests
 
 [img1]: /media/loc/en/contribute/mdlint-list-warning.png
