@@ -5,7 +5,7 @@ sidebarTitle: Update CRMScript reference
 description: How to regenerate the CRMScript reference from its source YAML when a method, property, or class changes.
 keywords: ['CRMScript', 'reference', 'transform-crmscript', 'generate-crmscript-nav', 'YAML']
 author: digitaldiina
-date: 08.12.2026
+date: 09.08.2026
 content_type: howto
 related:
   - /en/automation/crmscript/reference/index
@@ -59,19 +59,19 @@ CRMScript reference content previews normally with `mint dev`/`mint validate`. I
 
 ## Automated drift check
 
-A [GitHub Action][2] regenerates the reference from *api-sources/crmscript/* on every pull request that touches that folder, the generated reference, or either generator script, and fails if the result doesn't match what's committed. This catches both directions of drift with one mechanism, since regeneration is deterministic: a source *.yml* edited without regenerating, and a generated *.mdx* hand-edited directly without touching its source (that edit is silently lost the next time someone else runs a real regeneration). The failure message names the specific *api-sources/crmscript/&lt;Name&gt;.yml* source file to check.
+A [GitHub Action][1] regenerates the reference from *api-sources/crmscript/* on every pull request that touches that folder, the generated reference, or either generator script, and fails if the result doesn't match what's committed. This catches both directions of drift with one mechanism, since regeneration is deterministic: a source *.yml* edited without regenerating, and a generated *.mdx* hand-edited directly without touching its source (that edit is silently lost the next time someone else runs a real regeneration). The failure message names the specific *api-sources/crmscript/&lt;Name&gt;.yml* source file to check.
 
 <Warning>
-The YAML files in *api-sources/crmscript/* aren't only docs source material: many entries carry an `so.intellisense` key that feeds the CRMScript interpreter's own [built-in intellisense][3]. Treat a drift-check failure as "go check both the doc and the source," not as a formatting nit to wave through.
+The YAML files in *api-sources/crmscript/* aren't only docs source material: many entries carry an `so.intellisense` key that feeds the CRMScript interpreter's own [built-in intellisense][2]. Treat a drift-check failure as "go check both the doc and the source," not as a formatting nit to wave through.
 </Warning>
 
-This doesn't catch a *.yml* file being deleted without its *.mdx* counterpart: that's a different kind of drift (a stale, orphaned generated page with no live source), tracked separately in [issue #216][1].
+This doesn't catch a *.yml* file being deleted without its *.mdx* counterpart: that's a different kind of drift (a stale, orphaned generated page with no live source) this check doesn't cover — delete the orphaned *.mdx* by hand, following the [Remove a class](#remove-a-class) steps above.
 
 ## Known gotchas
 
 ### Garbled characters after regenerating
 
-If a regenerated file shows corrupted multi-byte characters (smart quotes, accented or non-Latin names) in the diff, that's a PowerShell read-encoding issue, not a real content change. Don't commit it. See [`tools/README.md`][4] for the underlying cause and the write-side conventions these scripts follow.
+If a regenerated file shows corrupted multi-byte characters (smart quotes, accented or non-Latin names) in the diff, that's a PowerShell read-encoding issue, not a real content change. Don't commit it. See *tools/README.md* for the underlying cause and the write-side conventions these scripts follow.
 
 ### HTML-escaped remarks
 
@@ -81,7 +81,5 @@ HTML markup embedded in a class's `<remarks>` field (for example `<ul><li>`) is 
 
 *en/automation/trigger/reference/CRMScript.Event.Trigger.mdx* and *CRMScript.Event.mdx* were a one-off manual conversion from raw DocFx YAML, done with the same tool pointed at different source and output paths. They aren't wired into any repeatable pipeline run today. Treat them as hand-maintained pages, separate from the regeneration flow described above.
 
-[1]: https://github.com/SuperOfficeDocs/docs/issues/216
-[2]: https://github.com/SuperOfficeDocs/docs/blob/main/.github/workflows/crmscript-drift.yml
-[3]: https://github.com/SuperOfficeDocs/docs/blob/main/en/automation/crmscript/code-quality/intellisense.mdx
-[4]: https://github.com/SuperOfficeDocs/docs/blob/main/tools/README.md
+[1]: https://github.com/SuperOfficeDocs/docs/blob/main/.github/workflows/crmscript-drift.yml
+[2]: https://github.com/SuperOfficeDocs/docs/blob/main/en/automation/crmscript/code-quality/intellisense.mdx

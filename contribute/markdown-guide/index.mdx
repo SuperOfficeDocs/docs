@@ -4,7 +4,7 @@ title: Markdown guide
 description: This Markdown style guide is intended to ensure that the markup of SuperOfficeDocs has a consistent style, and is easy to navigate and maintain.
 keywords: ['markdown guide', 'callouts', 'headings', 'links', 'lists', 'tables', 'metadata', 'snippets', 'Phosphor']
 author: digitaldiina
-date: 08.05.2026
+date: 09.08.2026
 content_type: reference
 related:
   - /contribute/markdown-guide/docfx-to-mintlify-cheat-sheet
@@ -152,7 +152,7 @@ Even though Markdown supports inline HTML, we (generally) don't use it on `docs.
 **Exceptions:**
 
 * Use `<br />` to break a line in table cells. Do not force line breaks within paragraphs.
-* Download links, for example, `<a href="/downloads/mirroredtables.zip" download>Mirrored Tables document</a>`. Office-format files (`.xlsx`/`.docx`/`.pptx`) must always be zipped before linking — see [Automated tests][16] for why.
+* Download links, for example, `<a href="/downloads/mirroredtables.zip" download>Mirrored Tables document</a>`. Office-format files (`.xlsx`/`.docx`/`.pptx`) must always be zipped before linking — see [Automated tests][14] for why.
 * Use `<details>` and `<summary>` to create drop-down content.
 * Use `<script>` to bring in SuperOffice forms.
 * Use `<i>` with Phosphor classes for icons. Always set `aria-label` or `aria-hidden="true"`.
@@ -332,9 +332,9 @@ Create a new subfolder when you have multiple related fragments reused the same 
 
 English's plan and license snippets live at `/snippets/license`. Each of da, de, nl, no, and sv has its own language-root *snippets* folder (for example `de/snippets`) holding translated equivalents of the same fragments, but not all of them exist in every language yet.
 
-This split is deliberate, not a bug: translated text can't live in one shared, root-relative file the way a language-agnostic reference table can: each language needs its own wording. But nothing enforces parity between the English source and the translated copies: that's exactly how [3 files ended up untranslated in all 5 languages][14]. When you add a new file to `/snippets/license`, also add (or file a translation task for) the matching file in each language's own `snippets` folder.
+This split is deliberate, not a bug: translated text can't live in one shared, root-relative file the way a language-agnostic reference table can: each language needs its own wording. But nothing enforces parity between the English source and the translated copies, so a new file can silently go untranslated in every other language. When you add a new file to `/snippets/license`, also add (or file a translation task for) the matching file in each language's own `snippets` folder.
 
-Contrast this with `/snippets/functional-rights`: the table lists literal permission names defined by the SuperOffice product itself, not translatable prose, so there's nothing to translate accurately without duplicating the product's own (English) terminology. Each language's page imports the one English table directly and adds a translated `<Note>` explaining why: see [issue #244][15] for the case that established this pattern.
+Contrast this with `/snippets/functional-rights`: the table lists literal permission names defined by the SuperOffice product itself, not translatable prose, so there's nothing to translate accurately without duplicating the product's own (English) terminology. Each language's page imports the one English table directly and adds a translated `<Note>` explaining why.
 
 ## Links
 
@@ -437,9 +437,7 @@ Here are a few resources to help with Markdown to help get you started:
 [11]: https://phosphoricons.com/
 [12]: /contribute/files-and-folders#media-folder
 [13]: /contribute/files-and-folders#file-names-and-file-extensions
-[14]: https://github.com/SuperOfficeDocs/docs/issues/235
-[15]: https://github.com/SuperOfficeDocs/docs/issues/244
-[16]: /contribute/automated-tests
+[14]: /contribute/automated-tests
 
 [img1]: /media/loc/en/contribute/plain-action-buttons.png
 [img2]: /media/loc/en/mobile/allow-call-identification.png

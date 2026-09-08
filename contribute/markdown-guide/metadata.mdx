@@ -4,7 +4,7 @@ title: Metadata (YAML front-matter)
 description: Every YAML front-matter property used across SuperOfficeDocs markdown files - uid, title, description, keywords, author, date, content_type, related, language, tier, license, so_version, and the homepage's own recent_pages block - what each does, when it's required, and how translated pages differ.
 keywords: ['metadata', 'front matter', 'yaml', 'uid', 'recent pages', 'homepage']
 author: digitaldiina
-date: 08.25.2026
+date: 09.08.2026
 content_type: concept
 related:
   - /contribute/markdown-guide/docfx-to-mintlify-cheat-sheet
@@ -53,7 +53,7 @@ Product content pages (everything outside `contribute/`) use a larger property s
 | 4 | `keywords` | Always | YAML array of single-quoted search-term strings, for example `['term one', 'term two']`: Mintlify's internal-search format |
 | 5 | `author` | Always | GitHub alias: default `digitaldiina` |
 | 6 | `date` | Always | Last modified, format `MM.DD.YYYY` |
-| 7 | `so_version` | Handcrafted docs | Product version: see defaults below; omit in generated files. Named `so_version`, not `version`: Mintlify's search back end treats `version` as a reserved filter field and 400s on non-string values (see [issue #254][4]) |
+| 7 | `so_version` | Handcrafted docs | Product version: see defaults below; omit in generated files. Named `so_version`, not `version`: Mintlify's search back end treats `version` as a reserved filter field and 400s on non-string values |
 | 8 | `content_type` | Always | `concept`, `howto`, `reference`, or `release-note`: omit in generated files |
 | 9 | `functional_right` | If present | Required functional right |
 | 10 | `license` | If present | Required license |
@@ -112,5 +112,4 @@ Before any updates get merged in the repo, the reviewers will check this section
 [1]: ./using-blueprint-templates
 [2]: ./index
 [3]: ../seo
-[4]: https://github.com/SuperOfficeDocs/docs/issues/254
 [5]: ../automated-tests
