@@ -8,7 +8,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from repo_files import REPO_ROOT, list_path_files, resolve_safe_path, file_path_to_url  # noqa: E402
+from repo_files import REPO_ROOT, list_path_files, resolve_safe_path, file_path_to_url, is_snippet  # noqa: E402
 
 
 def test_repo_root_resolves_to_the_actual_repo():
@@ -40,3 +40,20 @@ def test_file_path_to_url_strips_extension():
 
 def test_file_path_to_url_collapses_index():
     assert file_path_to_url("en/foo/index.mdx") == "/en/foo"
+
+
+def test_is_snippet_matches_nested_snippets_dir():
+    assert is_snippet("integrations/sharepoint-documents/snippets/warn-foo.mdx")
+    assert is_snippet("en/foo/learn/snippets/note-bar.md")
+
+
+def test_is_snippet_rejects_non_snippet_paths():
+    assert not is_snippet("en/foo/bar.mdx")
+    assert not is_snippet("integrations/sharepoint-documents/index.mdx")
+
+
+def test_is_snippet_does_not_match_includes():
+    # #448: the old exclusion checked for "/includes/", the pre-#236 directory
+    # name, which no longer matches anything since the repo-wide rename to
+    # snippets/. Confirms is_snippet doesn't accidentally reintroduce that gap.
+    assert not is_snippet("en/foo/includes/note-bar.md")

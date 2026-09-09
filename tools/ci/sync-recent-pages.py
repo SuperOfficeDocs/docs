@@ -9,7 +9,9 @@ for example for a page whose real title reads oddly out of context on a homepage
   1. Auto-detects brand-new pages added by this PR under `en/` or `integrations/` only (not the
      whole repo; reference trees like `database/`/`automation/crmscript/reference/` regenerate too
      often to be a useful "what's new" signal) and adds them to the list, except anything under
-     GENERATED_TREE_PREFIXES (see below).
+     GENERATED_TREE_PREFIXES (see below) or a `snippets/` path segment (MDX-import-only fragments,
+     never served at their own URL — see #448, where a new snippet was auto-added as a broken
+     homepage link).
   2. Stamps `since` with today's date on any entry that's missing it (a freshly hand-added or
      auto-detected entry), and on any *pinned* entry whose own target file was touched by this PR;
      pinned pages (for example the current release notes) should read as current, not stale,
@@ -50,7 +52,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from lib.repo_files import file_path_to_url  # noqa: E402
+from lib.repo_files import file_path_to_url, is_snippet  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 INDEX_PATH = REPO_ROOT / "index.mdx"
@@ -244,7 +246,7 @@ def is_auto_detect_candidate(rel_file_path):
         return False
     if rel_file_path.startswith(GENERATED_TREE_PREFIXES):
         return False
-    if "/includes/" in rel_file_path:
+    if is_snippet(rel_file_path):
         return False
     return rel_file_path.endswith(".md") or rel_file_path.endswith(".mdx")
 
