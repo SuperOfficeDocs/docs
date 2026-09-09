@@ -110,4 +110,4 @@ For detailed guidance and references, consult SuperOffice's documentation:
 [1]: https://docs.microsoft.com/en-us/graph/api/overview
 [2]: /en/api/reference/restful/rest/document/get-document-properties
 [3]: /en/api/reference/restful/rest/document/get-document-url
-[4]: /integrations/sharepoint-documents/permissions-in-sharepoint#sharing-settings-for-visible-for
+[4]: /integrations/sharepoint-documents/permissions-in-sharepoint#visible-for

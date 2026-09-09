@@ -46,10 +46,10 @@ In SharePoint, you can give permission on **site level** or on **document librar
 * Document libraries automatically inherits the permission from the site level.
 * Document within the library will inherit the permission from the library itself.
 
-## SharePoint sharing settings required for Visible for {#sharing-settings-for-visible-for}
+## SharePoint sharing settings required for Visible for {#visible-for}
 
 <Warning>
-If you use **Visible for** to restrict access to confidential documents, the SharePoint site must allow users to share files and folders.
+If you use *Visible for* to restrict access to confidential documents, the SharePoint site must allow users to share files and folders.
 
 Do not select **Only site owners can share files, folders, and the site**. With this setting enabled, SuperOffice cannot apply the document restrictions defined through *Visible for*.
 
@@ -90,22 +90,7 @@ This requirement is unrelated to external sharing settings. External and anonymo
 
 Perform this validation before making *Visible for* available to end users.
 
-### Troubleshooting - Visible for restrictions are not applied
-
-**Symptoms**
-
-* Saving a document with *Visible for* selected returns `Request failed with status code 403`.
-* The document is created successfully in SharePoint and appears in the SuperOffice document list.
-* The selected *Visible for* restriction is not applied.
-* The document remains accessible to users outside the intended *Visible for* groups.
-
-**Resolution**
-
-Verify the SharePoint site is not configured with **Only site owners can share files, folders, and the site**.
-
-Instead, configure the site so that members, or users with Edit permissions, can share files and folders.
-
-After updating the setting, create a new test document and confirm that the intended *Visible for* restrictions are applied correctly.
+If *Visible for* restrictions aren't applied even after this configuration, see the [troubleshooting guide][4].
 
 ## SharePoint user groups
 
@@ -133,4 +118,5 @@ If you plan to use *Visible for*, also see [SharePoint sharing settings required
 
 [1]: https://learn.microsoft.com/en-us/entra/architecture/govern-service-accounts
 [2]: https://learn.microsoft.com/en-us/previous-versions/microsoft-365/solutions/microsoft-365-limit-sharing
-[3]: #sharing-settings-for-visible-for
+[3]: #visible-for
+[4]: /integrations/sharepoint-documents/troubleshooting#saving-a-document-with-visible-for-selected-fails-or-the-restriction-is-silently-not-applied
