@@ -49,3 +49,12 @@ def file_path_to_url(rel_file_path):
     if stem_path.name == "index":
         stem_path = stem_path.parent
     return "/" + stem_path.as_posix()
+
+
+def is_snippet(rel_path):
+    """Snippets are MDX-import-only fragments, never served at their own
+    URL, so they must never be treated as a real page (see #393, #448).
+    Matches any `snippets` path segment, not just a top-level prefix,
+    since snippets live nested under each topic."""
+    segments = rel_path.replace("\\", "/").split("/")
+    return "snippets" in segments[:-1]
