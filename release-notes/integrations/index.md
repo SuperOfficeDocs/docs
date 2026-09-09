@@ -5,7 +5,7 @@ sidebarTitle: "Release overview"
 description: Release notes. What's new in SuperOffice Integrations
 keywords: ['integration', 'app', 'App Store', 'product release']
 author: kirstiaa
-date: 09.15.2026
+date: 09.17.2026
 content_type: release-note
 audience: person
 audience_tooltip: SuperOffice CRM
@@ -58,6 +58,7 @@ See all the [new or updated apps][2]
 * [ezSync][68] from Schneider & Wulf EDV-Beratung GmbH & Co KG (27.08.2026)
 * [Harmoniser][69] from Synergy Technology Ltd (27.08.2026)
 * [Dealfront Connect (formerly Echobot Connect)][66] from SP Softwarepartner GmbH/Dealfront (20.08.2026)
+* [Send to Signant][72] from Maestro Soft AS (18.08.2026)
 * [Panels for SuperOffice][35] from SuperOffice AS (11.08.2026)
 * [Zapier Integration][71] from SuperOffice AS (24.07.2026)
 * [e-Boekhouden for SuperOffice][67] from All-CRM (10.07.2026)
@@ -144,3 +145,4 @@ See all the [new or updated apps][2]
 [69]: https://appstore.superoffice.com/synergy-technology-ltd/harmoniser
 [70]: https://appstore.superoffice.com/superoffice-as/superoffice-for-wordpress
 [71]: https://appstore.superoffice.com/superoffice-as/zapier-integration
+[72]: https://appstore.superoffice.com/maestro-soft-as/send-to-signant

@@ -4,7 +4,7 @@ title: What's new in SuperOffice 12
 description: Release notes. What's new in SuperOffice 12
 keywords: ['SuperOffice CRM 12']
 author: kirstiaa
-date: 09.15.2026
+date: 09.17.2026
 so_version: 12
 content_type: release-note
 audience: person
@@ -30,72 +30,74 @@ From this version, all feature updates are available to SuperOffice Online custo
 <Update label="12.4" description="15.09.2026" tags={["Service, Marketing"]}>
 <a id="12.4"></a>
 
-### Reply to requests directly from the preview - Service
+### Requests - Reply to requests directly from the preview <Badge icon="ticket" color="green">Service</Badge>
 
-Working through a request queue just got faster. You can reply to a request straight from the preview panel - no need to open the full request and lose your place in the list.
+Answering a request from a busy queue doesn't have to mean leaving the list to do it. The **Quick reply** buttons in the preview panel lets you write and send your answer without opening the full request, so you keep your place in the queue.
 
-* A Quick reply button is available when you preview a request from a request list or in split view.
-* Clicking it opens a compact reply editor right in the preview, so you can write and send your answer while staying in the list.
-* Replies sent this way are registered on the request exactly like a reply from the full request view — including status updates, and the list refreshes automatically.
-* If you cancel or move to another request with unsent text, you'll be asked before anything is discarded.
-* Quick reply is not shown on requests that are marked as spam, deleted or merged, so you're never offered an action that doesn't apply.
+Without quick reply, responding to a request means opening the request in full screen, losing your position in the list, and finding your way back to it afterward.
+
+You'll find **Quick reply** in the preview panel whenever you preview a request from a request list or in split view. Selecting it opens a compact reply editor right there, so you can write and send your answer while staying in the list. Replies sent this way register on the request just as a reply from the full request view does, including status updates, and the list refreshes automatically.
 
 ![Request list with preview gives a quick reply options -screenshot][img15]
 
-**Why it matters**
-Agents handling high volumes of requests can triage, read and respond from one place, cutting down on clicks and context switching. This brings back a much-requested capability from the previous Service client.
+* If you cancel or move to another request with unsent text, you're asked before it's discarded.
+* **Quick reply** isn't shown on requests marked as spam, deleted, or merged, so you're only ever offered an action that applies.
 
-### Forms - Conditional fields in Forms - Marketing
+Learn more about [replying to requests][14].
 
-Part of the broader Forms improvement initiative to cater to more professional marketing needs. Long forms with fields that don't apply to every visitor feel overwhelming and hurt completion. Conditional fields let a form only show a question when an earlier answer makes it relevant, so each visitor sees just what matters to them while the form still captures the detail needed from everyone else.
-Where to find it: Marketing → Forms → form builder. On any eligible field's option/value, choose Add related field.
+### Forms - Conditional fields in Forms <Badge icon="bullseye" color="purple">Marketing</Badge>
+
+Show visitors only the questions that apply to them in your forms. **Conditional fields** let a form reveal a question only when an earlier answer makes it relevant, so each visitor sees just what matters to them while the form still captures the detail needed from everyone else.
+
+Long forms with fields that don't apply to every visitor feel overwhelming and hurt completion.
+
+Go to **Marketing** > **Forms** > **form builder**, and on an eligible field's option or value, choose **Add related field**. Eligible field types carry a badge "Conditional" when you add a new element, so you don't have to add a field first to find out - this works on dropdowns (including standard list fields), radio buttons, checkboxes, rating fields (stars, smileys, dice, or thumbs), extra fields of the dropdown or Boolean type, and Interests fields.
+
+![Add a conditional field in your form -screenshot][img17]
+
+A related field appears indented below its parent, with a plain-language condition banner (for example, "This field shows when 11–50 employees is selected"). Multiple trigger values join with "or"; rating fields use a range instead of a single value. Fields can be chained several levels deep (question → follow-up → deeper follow-up), though each related field is controlled by exactly one condition on one field.
 
 ![Forms with conditional fields -screenshot][img13]
 
-**How to use it:**
+<Note>
+A related field is hidden by default for the visitor, appears instantly on the triggering answer, and disappears and clears if the answer changes. A hidden field is never required, even if marked mandatory, and hidden answers aren't included in the submission.
+</Note>
 
-*	Works on dropdowns (including standard fields), radio buttons, checkboxes, rating fields (stars/smileys/dice/thumbs), extra fields (dropdown or Boolean type), and Interests fields.
-*	Eligible field types are shown with a badge when adding a new element, so users don't have to add a field first to find out.
-*	A related field appears indented below its parent, with a plain-language condition banner (e.g. "This field shows when 11–50 employees is selected"). Multiple trigger values join with "or"; rating fields use a range instead of a single value.
-*	Fields can be chained several levels deep (question → follow-up → deeper follow-up), though each related field is controlled by exactly one condition on one field.
-*	For the visitor: hidden by default, appears instantly on the triggering answer, and disappears and clears if the answer changes. A hidden field is never required, even if marked mandatory, and hidden answers aren't included in the submission.
+Learn more about [conditional fields in Forms][15].
 
-### Forms - default checked state for the Custom Checkbox field - Marketing
+### Forms - Default checked state for the Custom checkbox field <Badge icon="bullseye" color="purple">Marketing</Badge>
 
-Custom Checkbox fields (the Boolean-type extra field, Yes/No only) always started unchecked, even when a customer's typical answer is "Yes" for most visitors. Users can now set that default, so the field, and any related field attached to its condition, reflect the intended state as soon as the form loads.
+Set a **Custom checkbox** field to match the answer most visitors would give. Custom Checkbox fields (the Boolean-type extra field, Yes/No only) can be set to start checked or unchecked, so the field - and any related field attached to its condition - reflects the intended state as soon as the form loads.
 
-**How to use it:**
-
-•	Defaults to unchecked, preserving today's behavior for existing and new forms.
-•	If the field has a related field attached via a condition, the "Default checked" setting is treated as if the visitor had set it themselves — the related field shows or stays hidden on load accordingly.
-•	Changing the setting updates the related field's visibility live in the editor's preview.
+A checkbox that opens unchecked when most visitors would answer "Yes" adds an unnecessary click for every visitor who fills in the form.
 
 ![Form field properties where you can default check on -screenshot][img16]
 
-**Where to find it:** Marketing → Forms → form builder → a Custom Checkbox field's settings → Default checked.
+Find **Set checked by default** in a Custom checkbox field's settings, in the form builder under **Marketing** > **Forms**. It defaults to unchecked unless you turn it on. If the field has a related field attached via a condition, **Default checked** is treated as if the visitor had set it themselves, so the related field shows or stays hidden on load accordingly - and the editor's preview updates live as you change the setting.
 
-### Forms - AI styling of Forms - Marketing
+### Forms - AI styling of form <Badge icon="bullseye" color="purple">Marketing</Badge>
 
-AI styling of forms shipped as a beta in 11.13 — a user gives a website URL and the AI suggests colors, borders, and rounded corners to match it. For 12.4 it's graduating out of beta: the results are more consistent and polished than in the original beta, and the panel is now clearer about what's AI-generated and what applying it will do, so users can trust the suggestion and know what they're getting before they commit to it.
+Match a form's styling to your website without hand-picking colors. Give **Custom styling** a website URL, and **AI** suggests colors, borders, and rounded corners to match, so you can align a form to your site without trial-and-error tweaking of each property.
+
+Manually matching a form's colors, borders, and corner radius to a website takes guesswork and repeated adjustment.
 
 ![Mailing Form with custom styling, both from a https page or specific css styling -screenshot][img14]
 
-**How to use it:**
+Go to **Marketing** > **Forms** > **edit a form** > **Style** tab > **Custom styling**, enter a website URL, and select **Generate CSS**. The **AI analyses** the site and proposes Cascading Style Sheets (CSS) code, which you can preview before applying. Selecting **Apply now** overrides the form's default styling with the result - it changes only colors, borders, and rounded corners, while other styling, such as font or layout (width, height, and so on), is set in the basic styling section or added as additional CSS properties.
 
-*	Enter a website URL and select Generate CSS.
-*	The AI analyzes the site and proposes CSS; preview before applying.
-*	Select Apply now to override the form's default styling with the result. It only changes colors, borders, and rounded corners. Other styling needs to be changed in the basic styling section, or added as additional CSS properties (font, layout such as width/height, etc.).
-*	The panel now states plainly that this overrides the form's default styling, and carries an AI-attribution badge so it's clear the suggestion came from AI analysis of the given site rather than a manual choice.
+<Note>
+The suggestion panel states plainly that applying it overrides the form's default styling, and carries an AI-attribution badge, so you can see the suggestion came from AI analysis of the site you gave it before you commit to it.
+</Note>
 
-**Where to find it:** Marketing → Forms → edit a form → Style tab → Custom styling section.
+### Flows - Expanded trigger conditions for custom fields <Badge icon="bullseye" color="purple">Marketing</Badge>
 
-### Flows - Expanded trigger conditions for custom fields - Marketing
+Build flow logic on more of your form data. Extra fields of the dropdown type can be used as a trigger condition on a Form submission, so you can filter or branch a flow based on the answer given.
 
-Broadening what you can build flow logic on. Extra fields of the dropdown type can now be used as a trigger condition on a Form submission, so you can filter or branch a flow based on the answer given.
+A form's built-in fields don't always capture the detail you need to route a flow correctly.
 
-**How to use it:** Select a dropdown-type extra field as a condition on a Form-submission trigger; its list values now populate so you can filter or branch on the answer given.
+Select a dropdown-type extra field as a condition on a Form-submission trigger, in **Flows**. Its list values populate automatically, so you can filter or branch on the answer given.
 
-**Where to find it:** Flows → a trigger based on a Form submission → trigger condition on a dropdown-type extra field.
+Learn more about [trigger conditions in Flows][16]
 
 <Update label="12.3" description="27.08.2026" tags={["Settings and maintenance"]}>
 <a id="12.3"></a>
@@ -269,6 +271,9 @@ Some features are available to selected customers as part of ongoing pilots. See
 [11]: /en/online/mail-services/mailgun/spf/set-up
 [12]: /en/online/mail-services/mailgun/dkim/multiple-dkim-records
 [13]: /en/marketing/mailing/learn/view-statistics
+[14]: /en/request/learn/reply
+[15]: /en/marketing/forms/learn/field-options
+[16]: /en/marketing/flows/learn/step-settings
 
 [img1]: /media/loc/en/dashboard/dashboard-sale-sycle-tiles.png
 [img2]: /media/loc/en/dashboard/dashboard-edit-sale-cycle-tile.png
@@ -286,3 +291,4 @@ Some features are available to selected customers as part of ongoing pilots. See
 [img14]: /media/loc/en/marketing/marketing-form-custom-styling.png
 [img15]: /media/loc/en/request/request-preview-quick-reply.png
 [img16]: /media/loc/en/marketing/marketing-form-field-properties.png
+[img17]: /media/loc/en/marketing/marketing-form-field-properties-add-releated-field.png
