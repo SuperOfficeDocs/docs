@@ -31,7 +31,7 @@ Initializes a new instance of the NSTicketPriorityEntity class.
 Integer GetChangedOwner()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - What to do with the escalation chain when the request changes owner (manually). See &lt;xref href="CRMScript.NetServer.TicketPriorityEscalateEvent" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - What to do with the escalation chain when the request changes owner (manually). See [CRMScript.NetServer.TicketPriorityEscalateEvent](/en/automation/crmscript/reference/CRMScript.NetServer.TicketPriorityEscalateEvent).
 
 **Example:**
 
@@ -46,7 +46,7 @@ Integer changedOwner = thing.GetChangedOwner();
 Integer GetDeadline()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Deadline to add if escalated (minutes).
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Deadline to add if escalated (minutes).
 
 **Example:**
 
@@ -61,7 +61,7 @@ Integer deadline = thing.GetDeadline();
 Integer GetFlags()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - A bit mask of flags. See &lt;xref href="CRMScript.NetServer.TicketPriorityFlags" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - A bit mask of flags. See [CRMScript.NetServer.TicketPriorityFlags](/en/automation/crmscript/reference/CRMScript.NetServer.TicketPriorityFlags).
 
 **Example:**
 
@@ -76,7 +76,7 @@ Integer flags = thing.GetFlags();
 DateTime GetFriStart()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour start for Fridays. Note that only the time part of the DateTime is used.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - The work hour start for Fridays. Note that only the time part of the DateTime is used.
 
 **Example:**
 
@@ -91,7 +91,7 @@ DateTime friStart = thing.GetFriStart();
 DateTime GetFriStop()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour stop for Fridays. Note that only the time part of the DateTime is used.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - The work hour stop for Fridays. Note that only the time part of the DateTime is used.
 
 **Example:**
 
@@ -106,7 +106,7 @@ DateTime friStop = thing.GetFriStop();
 DateTime GetMonStart()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour start for Mondays. Note that only the time part of the DateTime is used.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - The work hour start for Mondays. Note that only the time part of the DateTime is used.
 
 **Example:**
 
@@ -121,7 +121,7 @@ DateTime monStart = thing.GetMonStart();
 DateTime GetMonStop()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour stop for Mondays. Note that only the time part of the DateTime is used.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - The work hour stop for Mondays. Note that only the time part of the DateTime is used.
 
 **Example:**
 
@@ -136,7 +136,7 @@ DateTime monStop = thing.GetMonStop();
 String GetName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the priority.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The name of the priority.
 
 **Example:**
 
@@ -151,7 +151,7 @@ String name = thing.GetName();
 DateTime[] GetNonDates()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)[] - Dates which the escalation time should not be running.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime)[] - Dates which the escalation time should not be running.
 
 <Note>
 Note that only the day of the year (day and month) is used. So the year and time part is not used even if this is a DateTime
@@ -170,7 +170,7 @@ DateTime[] nonDates = thing.GetNonDates();
 DateTime GetSatStart()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour start for Saturdays. Note that only the time part of the DateTime is used.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - The work hour start for Saturdays. Note that only the time part of the DateTime is used.
 
 **Example:**
 
@@ -185,7 +185,7 @@ DateTime satStart = thing.GetSatStart();
 DateTime GetSatStop()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour stop for Saturdays. Note that only the time part of the DateTime is used.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - The work hour stop for Saturdays. Note that only the time part of the DateTime is used.
 
 **Example:**
 
@@ -200,7 +200,7 @@ DateTime satStop = thing.GetSatStop();
 Integer GetSortOrder()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Indicates the sort order for this priority. 1 is first, 100 is last.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Indicates the sort order for this priority. 1 is first, 100 is last.
 
 **Example:**
 
@@ -215,7 +215,7 @@ Integer sortOrder = thing.GetSortOrder();
 Integer GetStatus()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The status (normal/deleted) of the priority. See &lt;xref href="CRMScript.NetServer.TicketPriorityStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The status (normal/deleted) of the priority. See [CRMScript.NetServer.TicketPriorityStatus](/en/automation/crmscript/reference/CRMScript.NetServer.TicketPriorityStatus)
 
 **Example:**
 
@@ -230,7 +230,7 @@ Integer status = thing.GetStatus();
 DateTime GetSunStart()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour start for Sundays. Note that only the time part of the DateTime is used.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - The work hour start for Sundays. Note that only the time part of the DateTime is used.
 
 **Example:**
 
@@ -245,7 +245,7 @@ DateTime sunStart = thing.GetSunStart();
 DateTime GetSunStop()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour stop for Sundays. Note that only the time part of the DateTime is used.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - The work hour stop for Sundays. Note that only the time part of the DateTime is used.
 
 **Example:**
 
@@ -260,7 +260,7 @@ DateTime sunStop = thing.GetSunStop();
 DateTime GetThuStart()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour start for Thursdays. Note that only the time part of the DateTime is used.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - The work hour start for Thursdays. Note that only the time part of the DateTime is used.
 
 **Example:**
 
@@ -275,7 +275,7 @@ DateTime thuStart = thing.GetThuStart();
 DateTime GetThuStop()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour stop for Thursdays. Note that only the time part of the DateTime is used.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - The work hour stop for Thursdays. Note that only the time part of the DateTime is used.
 
 **Example:**
 
@@ -290,7 +290,7 @@ DateTime thuStop = thing.GetThuStop();
 Integer GetTicketChangedPriority()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - What to do with the escalation chain when the request is changed into this priority. See &lt;xref href="CRMScript.NetServer.TicketPriorityEscalateEvent" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - What to do with the escalation chain when the request is changed into this priority. See [CRMScript.NetServer.TicketPriorityEscalateEvent](/en/automation/crmscript/reference/CRMScript.NetServer.TicketPriorityEscalateEvent).
 
 **Example:**
 
@@ -305,7 +305,7 @@ Integer ticketChangedPriority = thing.GetTicketChangedPriority();
 Integer GetTicketClosed()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - indicates what to do with the escalation chain when the request is closed. See &lt;xref href="CRMScript.NetServer.TicketPriorityEscalateEvent" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - indicates what to do with the escalation chain when the request is closed. See [CRMScript.NetServer.TicketPriorityEscalateEvent](/en/automation/crmscript/reference/CRMScript.NetServer.TicketPriorityEscalateEvent).
 
 **Example:**
 
@@ -320,7 +320,7 @@ Integer ticketClosed = thing.GetTicketClosed();
 Integer GetTicketNew()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - What to do with the escalation chain when a new request is registered. See &lt;xref href="CRMScript.NetServer.TicketPriorityEscalateEvent" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - What to do with the escalation chain when a new request is registered. See [CRMScript.NetServer.TicketPriorityEscalateEvent](/en/automation/crmscript/reference/CRMScript.NetServer.TicketPriorityEscalateEvent).
 
 **Example:**
 
@@ -335,7 +335,7 @@ Integer ticketNew = thing.GetTicketNew();
 Integer GetTicketNewinfo()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - What to do with the escalation chain when the request gets new info. See &lt;xref href="CRMScript.NetServer.TicketPriorityEscalateEvent" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - What to do with the escalation chain when the request gets new info. See [CRMScript.NetServer.TicketPriorityEscalateEvent](/en/automation/crmscript/reference/CRMScript.NetServer.TicketPriorityEscalateEvent).
 
 **Example:**
 
@@ -350,7 +350,7 @@ Integer ticketNewinfo = thing.GetTicketNewinfo();
 Integer GetTicketPriorityId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The primary key (auto-incremented).
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The primary key (auto-incremented).
 
 **Example:**
 
@@ -365,7 +365,7 @@ Integer ticketPriorityId = thing.GetTicketPriorityId();
 Integer GetTicketRead()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - What to do with the escalation chain when the request is read. See &lt;xref href="CRMScript.NetServer.TicketPriorityEscalateEvent" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - What to do with the escalation chain when the request is read. See [CRMScript.NetServer.TicketPriorityEscalateEvent](/en/automation/crmscript/reference/CRMScript.NetServer.TicketPriorityEscalateEvent).
 
 **Example:**
 
@@ -380,7 +380,7 @@ Integer ticketRead = thing.GetTicketRead();
 DateTime GetTueStart()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour start for Tuesdays. Note that only the time part of the DateTime is used.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - The work hour start for Tuesdays. Note that only the time part of the DateTime is used.
 
 **Example:**
 
@@ -395,7 +395,7 @@ DateTime tueStart = thing.GetTueStart();
 DateTime GetTueStop()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour stop for Tuesdays. Note that only the time part of the DateTime is used.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - The work hour stop for Tuesdays. Note that only the time part of the DateTime is used.
 
 **Example:**
 
@@ -410,7 +410,7 @@ DateTime tueStop = thing.GetTueStop();
 DateTime GetWedStart()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour start for Wednesdays. Note that only the time part of the DateTime is used.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - The work hour start for Wednesdays. Note that only the time part of the DateTime is used.
 
 **Example:**
 
@@ -425,7 +425,7 @@ DateTime wedStart = thing.GetWedStart();
 DateTime GetWedStop()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The work hour stop for Wednesdays. Note that only the time part of the DateTime is used.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - The work hour stop for Wednesdays. Note that only the time part of the DateTime is used.
 
 **Example:**
 
@@ -440,7 +440,7 @@ DateTime wedStop = thing.GetWedStop();
 Void SetChangedOwner(Integer changedOwner)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -456,7 +456,7 @@ thing.SetChangedOwner(changedOwner);
 Void SetDeadline(Integer deadline)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -472,7 +472,7 @@ thing.SetDeadline(deadline);
 Void SetFlags(Integer flags)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -488,7 +488,7 @@ thing.SetFlags(flags);
 Void SetFriStart(DateTime friStart)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -504,7 +504,7 @@ thing.SetFriStart(friStart);
 Void SetFriStop(DateTime friStop)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -520,7 +520,7 @@ thing.SetFriStop(friStop);
 Void SetMonStart(DateTime monStart)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -536,7 +536,7 @@ thing.SetMonStart(monStart);
 Void SetMonStop(DateTime monStop)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -552,7 +552,7 @@ thing.SetMonStop(monStop);
 Void SetName(String name)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -568,7 +568,7 @@ thing.SetName(name);
 Void SetNonDates(DateTime[] nonDates)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -584,7 +584,7 @@ thing.SetNonDates(nonDates);
 Void SetSatStart(DateTime satStart)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -600,7 +600,7 @@ thing.SetSatStart(satStart);
 Void SetSatStop(DateTime satStop)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -616,7 +616,7 @@ thing.SetSatStop(satStop);
 Void SetSortOrder(Integer sortOrder)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -632,7 +632,7 @@ thing.SetSortOrder(sortOrder);
 Void SetStatus(Integer status)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -648,7 +648,7 @@ thing.SetStatus(status);
 Void SetSunStart(DateTime sunStart)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -664,7 +664,7 @@ thing.SetSunStart(sunStart);
 Void SetSunStop(DateTime sunStop)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -680,7 +680,7 @@ thing.SetSunStop(sunStop);
 Void SetThuStart(DateTime thuStart)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -696,7 +696,7 @@ thing.SetThuStart(thuStart);
 Void SetThuStop(DateTime thuStop)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -712,7 +712,7 @@ thing.SetThuStop(thuStop);
 Void SetTicketChangedPriority(Integer ticketChangedPriority)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -728,7 +728,7 @@ thing.SetTicketChangedPriority(ticketChangedPriority);
 Void SetTicketClosed(Integer ticketClosed)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -744,7 +744,7 @@ thing.SetTicketClosed(ticketClosed);
 Void SetTicketNew(Integer ticketNew)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -760,7 +760,7 @@ thing.SetTicketNew(ticketNew);
 Void SetTicketNewinfo(Integer ticketNewinfo)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -776,7 +776,7 @@ thing.SetTicketNewinfo(ticketNewinfo);
 Void SetTicketPriorityId(Integer ticketPriorityId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -792,7 +792,7 @@ thing.SetTicketPriorityId(ticketPriorityId);
 Void SetTicketRead(Integer ticketRead)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -808,7 +808,7 @@ thing.SetTicketRead(ticketRead);
 Void SetTueStart(DateTime tueStart)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -824,7 +824,7 @@ thing.SetTueStart(tueStart);
 Void SetTueStop(DateTime tueStop)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -840,7 +840,7 @@ thing.SetTueStop(tueStop);
 Void SetWedStart(DateTime wedStart)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -856,7 +856,7 @@ thing.SetWedStart(wedStart);
 Void SetWedStop(DateTime wedStop)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

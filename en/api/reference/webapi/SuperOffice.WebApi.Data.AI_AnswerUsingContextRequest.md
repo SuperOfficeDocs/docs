@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AI_AnswerUsingContextRequest"></a> Class AI\_AnswerUsingContextRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class AI_AnswerUsingContextRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AI\_AnswerUsingContextRequest](SuperOffice.WebApi.Data.AI\_AnswerUsingContextRequest.md)
+[AI\_AnswerUsingContextRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_AnswerUsingContextRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public RagContextIds ContextIds { get; set; }
 
 #### Property Value
 
- [RagContextIds](SuperOffice.WebApi.Data.RagContextIds.md)
+ [RagContextIds](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagContextIds)
 
 ### <a id="SuperOffice_WebApi_Data_AI_AnswerUsingContextRequest_NamespaceName"></a> NamespaceName
 
@@ -80,5 +80,5 @@ public RagType Type { get; set; }
 
 #### Property Value
 
- [RagType](SuperOffice.WebApi.Data.RagType.md)
+ [RagType](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagType)
 

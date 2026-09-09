@@ -31,7 +31,7 @@ Initializes a new instance of the NSTicketCategoryEntity class.
 Integer GetAssignmentLag()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of minutes we shall override the assignment if a customer sends consecutive messages to this category.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Number of minutes we shall override the assignment if a customer sends consecutive messages to this category.
 
 **Example:**
 
@@ -46,7 +46,7 @@ Integer assignmentLag = thing.GetAssignmentLag();
 Integer GetCategoryMaster()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The user associated with this category.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The user associated with this category.
 
 **Example:**
 
@@ -61,7 +61,7 @@ Integer categoryMaster = thing.GetCategoryMaster();
 Integer GetClosingStatus()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Should new requests have the 'close request' in this category checked as default, or should the users preferences be selected? See &lt;xref href="CRMScript.NetServer.TicketCategoryClosingStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Should new requests have the 'close request' in this category checked as default, or should the users preferences be selected? See [CRMScript.NetServer.TicketCategoryClosingStatus](/en/automation/crmscript/reference/CRMScript.NetServer.TicketCategoryClosingStatus)
 
 **Example:**
 
@@ -78,7 +78,7 @@ Gets the user-defined + extra fields on an NSTicketCategoryEntity as a map.
 Map GetCustomFields()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map)
 
 **Example:**
 
@@ -97,7 +97,7 @@ for (fields.first(); !fields.eof(); fields.next())
 Integer GetDelegateMethod()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - An integer indicating the delegation method for this category. See &lt;xref href="CRMScript.NetServer.TicketCategoryDelegateMethod" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - An integer indicating the delegation method for this category. See [CRMScript.NetServer.TicketCategoryDelegateMethod](/en/automation/crmscript/reference/CRMScript.NetServer.TicketCategoryDelegateMethod).
 
 **Example:**
 
@@ -112,7 +112,7 @@ Integer delegateMethod = thing.GetDelegateMethod();
 String GetExternalName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The external name for this category, used for the customer frontend.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The external name for this category, used for the customer frontend.
 
 **Example:**
 
@@ -129,7 +129,7 @@ Gets the extra fields on NSTicketCategoryEntity as a map.
 Map GetExtraFields()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - Map containing extra field values by field name.
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map) - Map containing extra field values by field name.
 
 **Example:**
 
@@ -148,7 +148,7 @@ for (fields.first(); !fields.eof(); fields.next())
 Integer GetFlags()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - A bitmask representing flags for this category. See &lt;xref href="CRMScript.NetServer.TicketCategoryFlags" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - A bitmask representing flags for this category. See [CRMScript.NetServer.TicketCategoryFlags](/en/automation/crmscript/reference/CRMScript.NetServer.TicketCategoryFlags).
 
 **Example:**
 
@@ -163,7 +163,7 @@ Integer flags = thing.GetFlags();
 String GetFullname()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The fullname (compiled from parents' names) for this category. E.g. 'norway/product A/support'.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The fullname (compiled from parents' names) for this category. E.g. 'norway/product A/support'.
 
 **Example:**
 
@@ -178,7 +178,7 @@ String fullname = thing.GetFullname();
 Integer GetMsgClosingStatus()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Should new messages have the 'close request' in this category checked as default, or should the users preferences be selected? See &lt;xref href="CRMScript.NetServer.TicketCategoryClosingStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Should new messages have the 'close request' in this category checked as default, or should the users preferences be selected? See [CRMScript.NetServer.TicketCategoryClosingStatus](/en/automation/crmscript/reference/CRMScript.NetServer.TicketCategoryClosingStatus).
 
 **Example:**
 
@@ -193,7 +193,7 @@ Integer msgClosingStatus = thing.GetMsgClosingStatus();
 String GetName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The (short) name of this category. E.g. 'support'.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The (short) name of this category. E.g. 'support'.
 
 **Example:**
 
@@ -208,7 +208,7 @@ String name = thing.GetName();
 String GetNotificationEmail()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Comma-separated list of addresses to notify when requests are re-delegated to (unassigned) in this category.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Comma-separated list of addresses to notify when requests are re-delegated to (unassigned) in this category.
 
 **Example:**
 
@@ -223,7 +223,7 @@ String notificationEmail = thing.GetNotificationEmail();
 Integer GetParentId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The parent category for this category. -1 if this is a top-level category.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The parent category for this category. -1 if this is a top-level category.
 
 **Example:**
 
@@ -238,7 +238,7 @@ Integer parentId = thing.GetParentId();
 Integer GetReplyTemplate()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Reply template to merge with messages posted in this category.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Reply template to merge with messages posted in this category.
 
 **Example:**
 
@@ -253,7 +253,7 @@ Integer replyTemplate = thing.GetReplyTemplate();
 Integer GetTicketCategoryId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the ticket category. (primary key).
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the ticket category. (primary key).
 
 **Example:**
 
@@ -268,7 +268,7 @@ Integer ticketCategoryId = thing.GetTicketCategoryId();
 Void SetAssignmentLag(Integer assignmentLag)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -284,7 +284,7 @@ thing.SetAssignmentLag(assignmentLag);
 Void SetCategoryMaster(Integer categoryMaster)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -300,7 +300,7 @@ thing.SetCategoryMaster(categoryMaster);
 Void SetClosingStatus(Integer closingStatus)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -318,7 +318,7 @@ Sets the user-defined and extra fields on an NSTicketCategoryEntity with a map.
 Void SetCustomFields(Map udefs)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -339,7 +339,7 @@ thing.SetCustomFields(udefs);
 Void SetDelegateMethod(Integer delegateMethod)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -355,7 +355,7 @@ thing.SetDelegateMethod(delegateMethod);
 Void SetExternalName(String externalName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -373,7 +373,7 @@ Sets the extra field values on NSTicketCategoryEntity with a map.
 Void SetExtraFields(Map extras)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -392,7 +392,7 @@ thing.SetExtraFields(extras);
 Void SetFlags(Integer flags)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -408,7 +408,7 @@ thing.SetFlags(flags);
 Void SetFullname(String fullname)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -424,7 +424,7 @@ thing.SetFullname(fullname);
 Void SetMsgClosingStatus(Integer msgClosingStatus)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -440,7 +440,7 @@ thing.SetMsgClosingStatus(msgClosingStatus);
 Void SetName(String name)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -456,7 +456,7 @@ thing.SetName(name);
 Void SetNotificationEmail(String notificationEmail)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -472,7 +472,7 @@ thing.SetNotificationEmail(notificationEmail);
 Void SetParentId(Integer parentId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -488,7 +488,7 @@ thing.SetParentId(parentId);
 Void SetReplyTemplate(Integer replyTemplate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -504,7 +504,7 @@ thing.SetReplyTemplate(replyTemplate);
 Void SetTicketCategoryId(Integer ticketCategoryId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

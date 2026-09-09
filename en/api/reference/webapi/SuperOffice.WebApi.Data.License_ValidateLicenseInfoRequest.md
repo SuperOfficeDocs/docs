@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_License_ValidateLicenseInfoRequest"></a> Class License\_ValidateLicenseInfoRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class License_ValidateLicenseInfoRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[License\_ValidateLicenseInfoRequest](SuperOffice.WebApi.Data.License\_ValidateLicenseInfoRequest.md)
+[License\_ValidateLicenseInfoRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.License_ValidateLicenseInfoRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public ExtendedLicenseInfo LicenseInfo { get; set; }
 
 #### Property Value
 
- [ExtendedLicenseInfo](SuperOffice.WebApi.Data.ExtendedLicenseInfo.md)
+ [ExtendedLicenseInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtendedLicenseInfo)
 

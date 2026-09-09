@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_FieldAccess"></a> Enum FieldAccess
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Access restrictions and mandatory status, if any.

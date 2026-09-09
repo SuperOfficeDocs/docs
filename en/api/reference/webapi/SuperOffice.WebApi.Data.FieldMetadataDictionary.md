@@ -1,6 +1,6 @@
 # Class FieldMetadataDictionary {#SuperOffice_WebApi_Data_FieldMetadataDictionary}
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Serializable dictionary.
@@ -14,7 +14,7 @@ public class FieldMetadataDictionary : Dictionary<string, FieldMetadata>, IDicti
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
 [Dictionary&lt;string, FieldMetadata\&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2) ← 
-[FieldMetadataDictionary](SuperOffice.WebApi.Data.FieldMetadataDictionary.md)
+[FieldMetadataDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldMetadataDictionary)
 
 #### Implements
 

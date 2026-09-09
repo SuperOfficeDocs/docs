@@ -31,7 +31,7 @@ Initializes a new instance of the NSSaleEntity class.
 Integer GetActiveErpLinks()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of active ERP links.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The number of active ERP links.
 
 **Example:**
 
@@ -46,7 +46,7 @@ Integer activeErpLinks = thing.GetActiveErpLinks();
 Integer GetActiveLinks()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of active links to sale, document, appointment.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Number of active links to sale, document, appointment.
 
 **Example:**
 
@@ -61,7 +61,7 @@ Integer activeLinks = thing.GetActiveLinks();
 Float GetAmount()
 ```
 
-**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Total sale amount.
+**Returns:** [CRMScript.Global.Float](/en/automation/crmscript/reference/CRMScript.Global.Float) - Total sale amount.
 
 **Example:**
 
@@ -76,7 +76,7 @@ Float amount = thing.GetAmount();
 NSAppointment GetAppointment()
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)
 
 **Example:**
 
@@ -91,7 +91,7 @@ NSAppointment appointment = thing.GetAppointment();
 NSAssociate GetAssociate()
 ```
 
-**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - The sale owner.
+**Returns:** [CRMScript.NetServer.NSAssociate](/en/automation/crmscript/reference/CRMScript.NetServer.NSAssociate) - The sale owner.
 
 **Example:**
 
@@ -106,7 +106,7 @@ NSAssociate associate = thing.GetAssociate();
 NSCompetitor GetCompetitor()
 ```
 
-**Returns:** [CRMScript.NetServer.NSCompetitor](CRMScript.NetServer.NSCompetitor) - List of all possible competitors.
+**Returns:** [CRMScript.NetServer.NSCompetitor](/en/automation/crmscript/reference/CRMScript.NetServer.NSCompetitor) - List of all possible competitors.
 
 **Example:**
 
@@ -121,7 +121,7 @@ NSCompetitor competitor = thing.GetCompetitor();
 Integer GetCompleted()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The Sale completed state.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The Sale completed state.
 
 <Note>
 The completed state is either Started or Completed. NotStarted is treated as Started. The value maps to the Done database field.
@@ -140,7 +140,7 @@ Integer completed = thing.GetCompleted();
 NSContact GetContact()
 ```
 
-**Returns:** [CRMScript.NetServer.NSContact](CRMScript.NetServer.NSContact) - The contact associated with the sale. It may also be 0 if no contact is associated with the sale.
+**Returns:** [CRMScript.NetServer.NSContact](/en/automation/crmscript/reference/CRMScript.NetServer.NSContact) - The contact associated with the sale. It may also be 0 if no contact is associated with the sale.
 
 **Example:**
 
@@ -155,7 +155,7 @@ NSContact contact = thing.GetContact();
 NSAssociate GetCreatedBy()
 ```
 
-**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - Who created to sale.
+**Returns:** [CRMScript.NetServer.NSAssociate](/en/automation/crmscript/reference/CRMScript.NetServer.NSAssociate) - Who created to sale.
 
 **Example:**
 
@@ -170,7 +170,7 @@ NSAssociate createdBy = thing.GetCreatedBy();
 DateTime GetCreatedDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Registered date.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Registered date.
 
 **Example:**
 
@@ -185,7 +185,7 @@ DateTime createdDate = thing.GetCreatedDate();
 NSCredited GetCredited()
 ```
 
-**Returns:** [CRMScript.NetServer.NSCredited](CRMScript.NetServer.NSCredited) - List of who is to be credited for the sale.
+**Returns:** [CRMScript.NetServer.NSCredited](/en/automation/crmscript/reference/CRMScript.NetServer.NSCredited) - List of who is to be credited for the sale.
 
 **Example:**
 
@@ -200,7 +200,7 @@ NSCredited credited = thing.GetCredited();
 NSCurrency GetCurrency()
 ```
 
-**Returns:** [CRMScript.NetServer.NSCurrency](CRMScript.NetServer.NSCurrency) - The currency the sale object was sold in.
+**Returns:** [CRMScript.NetServer.NSCurrency](/en/automation/crmscript/reference/CRMScript.NetServer.NSCurrency) - The currency the sale object was sold in.
 
 **Example:**
 
@@ -217,7 +217,7 @@ Gets the user-defined + extra fields on a SaleEntity as a map.
 Map GetCustomFields()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map)
 
 **Example:**
 
@@ -236,7 +236,7 @@ for (fields.first(); !fields.eof(); fields.next())
 Float GetEarning()
 ```
 
-**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Earning on sale.
+**Returns:** [CRMScript.Global.Float](/en/automation/crmscript/reference/CRMScript.Global.Float) - Earning on sale.
 
 **Example:**
 
@@ -251,7 +251,7 @@ Float earning = thing.GetEarning();
 Float GetEarningPercent()
 ```
 
-**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Earning as percent of total.
+**Returns:** [CRMScript.Global.Float](/en/automation/crmscript/reference/CRMScript.Global.Float) - Earning as percent of total.
 
 **Example:**
 
@@ -268,7 +268,7 @@ Gets the extra fields on SaleEntity as a map.
 Map GetExtraFields()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map)
 
 **Example:**
 
@@ -287,7 +287,7 @@ for (fields.first(); !fields.eof(); fields.next())
 String GetHeading()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Sale heading (short description?).
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Sale heading (short description?).
 
 **Example:**
 
@@ -302,7 +302,7 @@ String heading = thing.GetHeading();
 Bool GetIsPublished()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Should this SaleEntity be published and visible to strangers?
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Should this SaleEntity be published and visible to strangers?
 
 ## GetLinks()
 
@@ -310,7 +310,7 @@ Bool GetIsPublished()
 NSLink[] GetLinks()
 ```
 
-**Returns:** [CRMScript.NetServer.NSLink](CRMScript.NetServer.NSLink)[] - List of all elements linked to the sale.
+**Returns:** [CRMScript.NetServer.NSLink](/en/automation/crmscript/reference/CRMScript.NetServer.NSLink)[] - List of all elements linked to the sale.
 
 **Example:**
 
@@ -325,7 +325,7 @@ NSLink[] links = thing.GetLinks();
 DateTime GetNextDueDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Next due date, this is a de.normalization of 'closest future activity date, or most recent if no future activities'.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Next due date, this is a de.normalization of 'closest future activity date, or most recent if no future activities'.
 
 <Note>
 Maintained by the system, but very convenient for searching.
@@ -344,7 +344,7 @@ DateTime nextDueDate = thing.GetNextDueDate();
 String GetNumber()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Alphanumeric user field.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Alphanumeric user field.
 
 **Example:**
 
@@ -361,7 +361,7 @@ A sale may also be connected to a person. This must be a contact person register
 NSPerson GetPerson()
 ```
 
-**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson)
+**Returns:** [CRMScript.NetServer.NSPerson](/en/automation/crmscript/reference/CRMScript.NetServer.NSPerson)
 
 **Example:**
 
@@ -376,7 +376,7 @@ NSPerson person = thing.GetPerson();
 String GetPostit()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The actual text, max 2047 significant characters even though it is stored as a larger data type on some databases.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The actual text, max 2047 significant characters even though it is stored as a larger data type on some databases.
 
 **Example:**
 
@@ -391,7 +391,7 @@ String postit = thing.GetPostit();
 Integer GetProbability()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Actual probability, may differ from the one in the list.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Actual probability, may differ from the one in the list.
 
 **Example:**
 
@@ -408,7 +408,7 @@ A sale may also be connected to a project, so you see the sale both on the compa
 NSProject GetProject()
 ```
 
-**Returns:** [CRMScript.NetServer.NSProject](CRMScript.NetServer.NSProject)
+**Returns:** [CRMScript.NetServer.NSProject](/en/automation/crmscript/reference/CRMScript.NetServer.NSProject)
 
 **Example:**
 
@@ -423,7 +423,7 @@ NSProject project = thing.GetProject();
 DateTime GetPublishEventDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Publish event date on SaleEntity.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Publish event date on SaleEntity.
 
 ## GetPublishFrom()
 
@@ -431,7 +431,7 @@ DateTime GetPublishEventDate()
 DateTime GetPublishFrom()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Publish from date on SaleEntity.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Publish from date on SaleEntity.
 
 ## GetPublishTo()
 
@@ -439,7 +439,7 @@ DateTime GetPublishFrom()
 DateTime GetPublishTo()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Publish to date on SaleEntity. After this date the event is no longer visible.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Publish to date on SaleEntity. After this date the event is no longer visible.
 
 ## GetRating()
 
@@ -447,7 +447,7 @@ DateTime GetPublishTo()
 NSRating GetRating()
 ```
 
-**Returns:** [CRMScript.NetServer.NSRating](CRMScript.NetServer.NSRating) - The sale rating.
+**Returns:** [CRMScript.NetServer.NSRating](/en/automation/crmscript/reference/CRMScript.NetServer.NSRating) - The sale rating.
 
 **Example:**
 
@@ -462,7 +462,7 @@ NSRating rating = thing.GetRating();
 NSReason GetReason()
 ```
 
-**Returns:** [CRMScript.NetServer.NSReason](CRMScript.NetServer.NSReason) - The sale reason.
+**Returns:** [CRMScript.NetServer.NSReason](/en/automation/crmscript/reference/CRMScript.NetServer.NSReason) - The sale reason.
 
 **Example:**
 
@@ -477,7 +477,7 @@ NSReason reason = thing.GetReason();
 NSReasonSold GetReasonSold()
 ```
 
-**Returns:** [CRMScript.NetServer.NSReasonSold](CRMScript.NetServer.NSReasonSold)
+**Returns:** [CRMScript.NetServer.NSReasonSold](/en/automation/crmscript/reference/CRMScript.NetServer.NSReasonSold)
 
 **Example:**
 
@@ -492,7 +492,7 @@ NSReasonSold reasonSold = thing.GetReasonSold();
 NSReasonStalled GetReasonStalled()
 ```
 
-**Returns:** [CRMScript.NetServer.NSReasonStalled](CRMScript.NetServer.NSReasonStalled)
+**Returns:** [CRMScript.NetServer.NSReasonStalled](/en/automation/crmscript/reference/CRMScript.NetServer.NSReasonStalled)
 
 **Example:**
 
@@ -507,7 +507,7 @@ NSReasonStalled reasonStalled = thing.GetReasonStalled();
 DateTime GetReopenDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Date the sale is to be reopened; valid only for status=stalled. Not necessarily the same as the nextDueDate.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Date the sale is to be reopened; valid only for status=stalled. Not necessarily the same as the nextDueDate.
 
 **Example:**
 
@@ -522,7 +522,7 @@ DateTime reopenDate = thing.GetReopenDate();
 DateTime GetSaledate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - (expected / lost / won) sales date.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - (expected / lost / won) sales date.
 
 **Example:**
 
@@ -537,7 +537,7 @@ DateTime saledate = thing.GetSaledate();
 Integer GetSaleId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Primary key.
 
 **Example:**
 
@@ -552,7 +552,7 @@ Integer saleId = thing.GetSaleId();
 NSSaleStakeholder[] GetSaleStakeholders()
 ```
 
-**Returns:** [CRMScript.NetServer.NSSaleStakeholder](CRMScript.NetServer.NSSaleStakeholder)[]
+**Returns:** [CRMScript.NetServer.NSSaleStakeholder](/en/automation/crmscript/reference/CRMScript.NetServer.NSSaleStakeholder)[]
 
 **Example:**
 
@@ -567,7 +567,7 @@ NSSaleStakeholder[] saleStakeholders = thing.GetSaleStakeholders();
 String GetSaleText()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Text describing the sale.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Text describing the sale.
 
 **Example:**
 
@@ -582,7 +582,7 @@ String saleText = thing.GetSaleText();
 NSSaleType GetSaleType()
 ```
 
-**Returns:** [CRMScript.NetServer.NSSaleType](CRMScript.NetServer.NSSaleType)
+**Returns:** [CRMScript.NetServer.NSSaleType](/en/automation/crmscript/reference/CRMScript.NetServer.NSSaleType)
 
 **Example:**
 
@@ -597,7 +597,7 @@ NSSaleType saleType = thing.GetSaleType();
 NSSource GetSource()
 ```
 
-**Returns:** [CRMScript.NetServer.NSSource](CRMScript.NetServer.NSSource) - The sale source.
+**Returns:** [CRMScript.NetServer.NSSource](/en/automation/crmscript/reference/CRMScript.NetServer.NSSource) - The sale source.
 
 **Example:**
 
@@ -612,7 +612,7 @@ NSSource source = thing.GetSource();
 Integer GetStatus()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The state of the Sale (Open, Sold, Lost, Stalled). See &lt;xref href="CRMScript.NetServer.SaleStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The state of the Sale (Open, Sold, Lost, Stalled). See [CRMScript.NetServer.SaleStatus](/en/automation/crmscript/reference/CRMScript.NetServer.SaleStatus).
 
 **Example:**
 
@@ -627,7 +627,7 @@ Integer status = thing.GetStatus();
 NSAssociate GetUpdatedBy()
 ```
 
-**Returns:** [CRMScript.NetServer.NSAssociate](CRMScript.NetServer.NSAssociate) - Who updated the sale.
+**Returns:** [CRMScript.NetServer.NSAssociate](/en/automation/crmscript/reference/CRMScript.NetServer.NSAssociate) - Who updated the sale.
 
 **Example:**
 
@@ -642,7 +642,7 @@ NSAssociate updatedBy = thing.GetUpdatedBy();
 DateTime GetUpdatedDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last updated.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Last updated.
 
 **Example:**
 
@@ -659,7 +659,7 @@ Gets the user-defined fields on the SaleEntity as a map.
 Map GetUserDefinedFields()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map)
 
 **Example:**
 
@@ -680,7 +680,7 @@ Returns the user groups and/or users the SaleEntity item is visible for.
 NSVisibleFor[] GetVisibleFor()
 ```
 
-**Returns:** [CRMScript.NetServer.NSVisibleFor](CRMScript.NetServer.NSVisibleFor)[]
+**Returns:** [CRMScript.NetServer.NSVisibleFor](/en/automation/crmscript/reference/CRMScript.NetServer.NSVisibleFor)[]
 
 **Example:**
 
@@ -695,7 +695,7 @@ NSVisibleFor[] visibleFor = thing.GetVisibleFor();
 Void SetActiveErpLinks(Integer activeErpLinks)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -711,7 +711,7 @@ thing.SetActiveErpLinks(activeErpLinks);
 Void SetActiveLinks(Integer activeLinks)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -727,7 +727,7 @@ thing.SetActiveLinks(activeLinks);
 Void SetAmount(Float amount)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -743,7 +743,7 @@ thing.SetAmount(amount);
 Void SetAppointment(NSAppointment appointment)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -759,7 +759,7 @@ thing.SetAppointment(appointment);
 Void SetAssociate(NSAssociate associate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -775,7 +775,7 @@ thing.SetAssociate(associate);
 Void SetCompetitor(NSCompetitor competitor)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -791,7 +791,7 @@ thing.SetCompetitor(competitor);
 Void SetCompleted(Integer completed)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 The completed state is either Started or Completed. NotStarted is treated as Started. The value maps to the Done database field.
@@ -811,7 +811,7 @@ thing.SetCompleted(completed);
 Void SetContact(NSContact contact)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -827,7 +827,7 @@ thing.SetContact(contact);
 Void SetCreatedBy(NSAssociate createdBy)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -845,7 +845,7 @@ Registered date
 Void SetCreatedDate(DateTime createdDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -861,7 +861,7 @@ thing.SetCreatedDate(createdDate);
 Void SetCredited(NSCredited credited)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -877,7 +877,7 @@ thing.SetCredited(credited);
 Void SetCurrency(NSCurrency currency)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -895,7 +895,7 @@ Sets the user-defined and extra fields on a SaleEntity with a map.
 Void SetCustomFields(Map udefs)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -916,7 +916,7 @@ thing.SetCustomFields(udefs);
 Void SetEarning(Float earning)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -932,7 +932,7 @@ thing.SetEarning(earning);
 Void SetEarningPercent(Float earningPercent)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -950,7 +950,7 @@ Sets the extra field values on SaleEntity with a map.
 Void SetExtraFields(Map extras)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -969,7 +969,7 @@ thing.SetExtraFields(extras);
 Void SetHeading(String heading)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -987,7 +987,7 @@ Sets the visibility of the entity
 Void SetIsPublished(Bool isPublished)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## SetLinks(NSLink[])
 
@@ -995,7 +995,7 @@ Void SetIsPublished(Bool isPublished)
 Void SetLinks(NSLink[] links)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1013,7 +1013,7 @@ Maintained by the system, but very convenient for searching.
 Void SetNextDueDate(DateTime nextDueDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1029,7 +1029,7 @@ thing.SetNextDueDate(nextDueDate);
 Void SetNumber(String number)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1047,7 +1047,7 @@ A sale may also be connected to a person. This must be a contact person register
 Void SetPerson(NSPerson person)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1063,7 +1063,7 @@ thing.SetPerson(person);
 Void SetPostit(String postit)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1079,7 +1079,7 @@ thing.SetPostit(postit);
 Void SetProbability(Integer probability)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1097,7 +1097,7 @@ A sale may also be connected to a project, so you see the sale both on the compa
 Void SetProject(NSProject project)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1113,7 +1113,7 @@ thing.SetProject(project);
 Void SetPublishEventDate(DateTime publishDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## SetPublishFrom(DateTime)
 
@@ -1123,7 +1123,7 @@ Sets the publish from date on a SaleEntity.
 Void SetPublishFrom(DateTime publishFrom)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## SetPublishTo(DateTime)
 
@@ -1133,7 +1133,7 @@ Sets the publish to date on SaleEntity.
 Void SetPublishTo(DateTime publishTo)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## SetRating(NSRating)
 
@@ -1141,7 +1141,7 @@ Void SetPublishTo(DateTime publishTo)
 Void SetRating(NSRating rating)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1157,7 +1157,7 @@ thing.SetRating(rating);
 Void SetReason(NSReason reason)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1173,7 +1173,7 @@ thing.SetReason(reason);
 Void SetReasonSold(NSReasonSold reasonSold)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1189,7 +1189,7 @@ thing.SetReasonSold(reasonSold);
 Void SetReasonStalled(NSReasonStalled reasonStalled)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1205,7 +1205,7 @@ thing.SetReasonStalled(reasonStalled);
 Void SetReopenDate(DateTime reopenDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1221,7 +1221,7 @@ thing.SetReopenDate(reopenDate);
 Void SetSaledate(DateTime saledate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1237,7 +1237,7 @@ thing.SetSaledate(saledate);
 Void SetSaleId(Integer saleId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1253,7 +1253,7 @@ thing.SetSaleId(saleId);
 Void SetSaleStakeholders(NSSaleStakeholder[] saleStakeholders)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1269,7 +1269,7 @@ thing.SetSaleStakeholders(saleStakeholders);
 Void SetSaleText(String saleText)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1285,7 +1285,7 @@ thing.SetSaleText(saleText);
 Void SetSaleType(NSSaleType saleType)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1301,7 +1301,7 @@ thing.SetSaleType(saleType);
 Void SetSource(NSSource source)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1317,7 +1317,7 @@ thing.SetSource(source);
 Void SetStatus(Integer status)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1333,7 +1333,7 @@ thing.SetStatus(status);
 Void SetUpdatedBy(NSAssociate updatedBy)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1349,7 +1349,7 @@ thing.SetUpdatedBy(updatedBy);
 Void SetUpdatedDate(DateTime updatedDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1367,7 +1367,7 @@ Sets the user-defined fields on the SaleEntity as a map.
 Void SetUserDefinedFields(Map udefs)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1388,7 +1388,7 @@ Sets the user groups and/or users the SaleEntity item is visible for.
 Void SetVisibleFor(NSVisibleFor[] visibleFor)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

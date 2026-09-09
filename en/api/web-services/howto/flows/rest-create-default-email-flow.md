@@ -67,4 +67,4 @@ The above JSON has been edited/cut for clarity.
 
 More properties are detailed in the [CreateDefaultEmailFlow Agent reference][1].
 
-[1]: ../../../reference/restful/agent/Workflow_Agent/v1WorkflowAgent_CreateDefaultEmailFlow
+[1]: ../../../reference/restful/agent/workflow_agent/create-default-email-flow

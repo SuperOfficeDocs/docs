@@ -33,7 +33,7 @@ returns a String composed by the Mail tag, the ticketId and the title of the tic
 String buildEmailSubject()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A String composed by the Mail tag, the ticketId and the title of the ticket.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A String composed by the Mail tag, the ticketId and the title of the ticket.
 
 ## checkEscalating(Integer)
 
@@ -43,7 +43,7 @@ This function does a check according to the ticket's priority and the input acti
 Void checkEscalating(Integer action)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Possible values:
@@ -66,7 +66,7 @@ For this function to take effect, you have to call &lt;code&gt;Ticket.save()&lt;
 delegate()
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## delegate(Integer)
 
@@ -78,7 +78,7 @@ For this function to take effect, you have to call &lt;code&gt;Ticket.save()&lt;
 delegate(Integer notUser)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## getInvolvedOnly()
 
@@ -88,7 +88,7 @@ Returns a comma-separated list of the email-addresses of all customers that is n
 String getInvolvedOnly()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A comma-separated list of email-addresses.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A comma-separated list of email-addresses.
 
 ## getMailFrom()
 
@@ -98,7 +98,7 @@ This function determines and returns the most appropriate from-address, when sen
 String getMailFrom()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The most appropriate from-address specified on with address, the ticket has arrived on, the category, etc.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The most appropriate from-address specified on with address, the ticket has arrived on, the category, etc.
 
 ## getOwnerEmail()
 
@@ -108,7 +108,7 @@ This function returns the owner of the ticket printed as "Name" &lt;email-addr&g
 String getOwnerEmail()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The owners name and email-address.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The owners name and email-address.
 
 ## getOwnerSms()
 
@@ -118,7 +118,7 @@ This function returns the cellphone number of the owner of the ticket
 String getOwnerSms()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The cellphone number of the owner of the ticket as a String.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The cellphone number of the owner of the ticket as a String.
 
 ## getValue(String)
 
@@ -128,7 +128,7 @@ Gets the value of given column name as a String
 String getValue(String colName)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Returns a string representation of the wanted value.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Returns a string representation of the wanted value.
 
 <Note>
 Possible values:
@@ -172,7 +172,7 @@ Load ticket with given id into this object, return true if successful, false oth
 Bool load(Integer id)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 ## log(String)
 
@@ -182,7 +182,7 @@ Writes a message to the ticket log. Used for logging changes and events on a tic
 log(String message)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## log(String,String)
 
@@ -192,7 +192,7 @@ Writes a message to the ticket log. Used for logging changes and events on a tic
 log(String who, String message)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## notifyEmail(Integer)
 
@@ -203,7 +203,7 @@ To use for events like new ticket, new message on ticket etc.
 Bool notifyEmail(Integer replyTemplateId)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 ## save()
 
@@ -213,7 +213,7 @@ Saves the ticket and returns the database ID of the stored ticket.
 Integer save()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the saved ticket.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the saved ticket.
 
 ## save(String)
 
@@ -223,7 +223,7 @@ Saves the ticket and returns the database ID of the stored ticket.
 Integer save(String log)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the saved ticket.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the saved ticket.
 
 ## save(Bool,Bool)
 
@@ -233,7 +233,7 @@ Saves the ticket and returns the database ID of the stored ticket.
 Integer save(Bool setReadStatus,Bool doNotCheckEscalating)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the saved ticket.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the saved ticket.
 
 ## save(String,Bool,Bool)
 
@@ -243,7 +243,7 @@ Saves the ticket and returns the database ID of the stored ticket.
 Integer save(String log,Bool setReadStatus,Bool doNotCheckEscalating)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the saved ticket.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the saved ticket.
 
 ## sendMessages(String,StringMatrix,Bool,String,Integer,String)
 
@@ -253,7 +253,7 @@ Will send the given messages just like the forward ticket functionality in the G
 Bool sendMessages(String subject, StringMatrix recipients, Bool fromCust, String messages, Integer msgId, String comment)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 <Note>
 The recipients string matrix is formatted like this:
@@ -270,14 +270,14 @@ Obs: For this to actually affect the ticket, you will have to use the function s
 Void setValue(String colName, String value)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Possible values are the extrafields on the ticket and the following:&lt;/p&gt;
 
 - category: the category ID
 - ownedBy: (owned_by), the ID of the user who owns the ticket
-- slevel: the security level of the ticket, See &lt;xref href="CRMScript.NetServer.TicketSecurityLevel" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+- slevel: the security level of the ticket, See [CRMScript.NetServer.TicketSecurityLevel](/en/automation/crmscript/reference/CRMScript.NetServer.TicketSecurityLevel).
 - priority: the id
 - status: 1 = active, 2 = closed, 3 = postponed, 4 = deleted, 5 = composed
 - ticketStatus: (ticket_status), the ID of the custom status field
@@ -315,9 +315,9 @@ Void toParser(Parser theParser)
 
 | Name | Type | Description |
 |---|---|---|
-| theParser | [CRMScript.Native.Parser](CRMScript.Native.Parser) | The parser who will be filled with ticket-values. |
+| theParser | [CRMScript.Native.Parser](/en/automation/crmscript/reference/CRMScript.Native.Parser) | The parser who will be filled with ticket-values. |
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## toParserRaw(Parser)
 
@@ -332,6 +332,6 @@ toParserRaw(Parser theParser)
 
 | Name | Type | Description |
 |---|---|---|
-| theParser | [CRMScript.Native.Parser](CRMScript.Native.Parser) | The parser who will be filled with ticket-values. |
+| theParser | [CRMScript.Native.Parser](/en/automation/crmscript/reference/CRMScript.Native.Parser) | The parser who will be filled with ticket-values. |
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)

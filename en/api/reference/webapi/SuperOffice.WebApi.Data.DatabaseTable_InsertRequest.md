@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DatabaseTable_InsertRequest"></a> Class DatabaseTable\_InsertRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class DatabaseTable_InsertRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[DatabaseTable\_InsertRequest](SuperOffice.WebApi.Data.DatabaseTable\_InsertRequest.md)
+[DatabaseTable\_InsertRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.DatabaseTable_InsertRequest)
 
 #### Inherited Members
 

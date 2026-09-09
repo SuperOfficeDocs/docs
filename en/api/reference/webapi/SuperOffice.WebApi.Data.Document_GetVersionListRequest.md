@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_GetVersionListRequest"></a> Class Document\_GetVersionListRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_GetVersionListRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_GetVersionListRequest](SuperOffice.WebApi.Data.Document\_GetVersionListRequest.md)
+[Document\_GetVersionListRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_GetVersionListRequest)
 
 #### Inherited Members
 

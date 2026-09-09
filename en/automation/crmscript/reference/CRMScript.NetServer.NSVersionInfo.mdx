@@ -31,7 +31,7 @@ Initializes a new instance of the NSVersionInfo class.
 Integer GetCheckedInByAssociateId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Associate ID of the user who performed the check-in.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Associate ID of the user who performed the check-in.
 
 **Example:**
 
@@ -46,7 +46,7 @@ Integer checkedInByAssociateId = thing.GetCheckedInByAssociateId();
 String GetCheckedInByName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name (nicely formatted) of the user/person who performed the check-in.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Name (nicely formatted) of the user/person who performed the check-in.
 
 **Example:**
 
@@ -61,7 +61,7 @@ String checkedInByName = thing.GetCheckedInByName();
 DateTime GetCheckedInDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The date that this version was checked in and became official.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - The date that this version was checked in and became official.
 
 **Example:**
 
@@ -76,7 +76,7 @@ DateTime checkedInDate = thing.GetCheckedInDate();
 String GetDescription()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Arbitrary description string.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Arbitrary description string.
 
 **Example:**
 
@@ -91,7 +91,7 @@ String description = thing.GetDescription();
 String GetDisplayText()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A short description, suitable for display in a popup menu or dropdown list of versions.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A short description, suitable for display in a popup menu or dropdown list of versions.
 
 **Example:**
 
@@ -106,7 +106,7 @@ String displayText = thing.GetDisplayText();
 Integer GetDocumentId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The document ID that uniquely identifies the document within the SuperOffice database.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The document ID that uniquely identifies the document within the SuperOffice database.
 
 **Example:**
 
@@ -121,7 +121,7 @@ Integer documentId = thing.GetDocumentId();
 String GetExternalReference()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The document plugin's key that uniquely identifies a document; stored in the externalReference field of the document table.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The document plugin's key that uniquely identifies a document; stored in the externalReference field of the document table.
 
 **Example:**
 
@@ -136,7 +136,7 @@ String externalReference = thing.GetExternalReference();
 String[] GetExtraFields()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - Private metadata, owned by the document plugin.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)[] - Private metadata, owned by the document plugin.
 
 <Note>
 This set of metadata is related directly to the version that  this VersioNinfo structure describes; metadata related to the document as a whole is retrieved using the SuperOffice.CRM.Documents.IDocumentPlugin2.LoadMetaData method.  The string should be formatted like a query string, i.e., name1=value1&name2=value2...* this format, instead of a string/string dictionary avoids serialization problems, even though it is somewhat less efficient.
@@ -155,7 +155,7 @@ String[] extraFields = thing.GetExtraFields();
 String GetVersionId()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The document plugin's version id that uniquely identifies one version of a document. If versioning is not supported, this will be blank. When versioning is supported, blank values imply the latest checked-in version.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The document plugin's version id that uniquely identifies one version of a document. If versioning is not supported, this will be blank. When versioning is supported, blank values imply the latest checked-in version.
 
 **Example:**
 
@@ -170,7 +170,7 @@ String versionId = thing.GetVersionId();
 Void SetCheckedInByAssociateId(Integer checkedInByAssociateId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -186,7 +186,7 @@ thing.SetCheckedInByAssociateId(checkedInByAssociateId);
 Void SetCheckedInByName(String checkedInByName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -204,7 +204,7 @@ Sets the date that this version was checked inThe date that this version was che
 Void SetCheckedInDate(DateTime checkedInDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -220,7 +220,7 @@ thing.SetCheckedInDate(checkedInDate);
 Void SetDescription(String description)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -236,7 +236,7 @@ thing.SetDescription(description);
 Void SetDisplayText(String displayText)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -252,7 +252,7 @@ thing.SetDisplayText(displayText);
 Void SetDocumentId(Integer documentId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -268,7 +268,7 @@ thing.SetDocumentId(documentId);
 Void SetExternalReference(String externalReference)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -284,7 +284,7 @@ thing.SetExternalReference(externalReference);
 Void SetExtraFields(String[] extraFields)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 This set of metadata is related directly to the version that this VersioNinfo structure describes; metadata related to the document as a whole is retrieved using the SuperOffice.CRM.Documents.IDocumentPlugin2.LoadMetaData method.  The string should be formatted like a query string, i.e., name1=value1&name2=value2...* this format, instead of a string/string dictionary avoids serialization problems, even though it is somewhat less efficient
@@ -304,7 +304,7 @@ thing.SetExtraFields(extraFields);
 Void SetVersionId(String versionId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 If versioning is not supported, this will be blank. When versioning is supported, blank values imply the latest checked-in version.

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Database_GetStepsInDatabaseRequest"></a> Class Database\_GetStepsInDatabaseRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Database_GetStepsInDatabaseRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Database\_GetStepsInDatabaseRequest](SuperOffice.WebApi.Data.Database\_GetStepsInDatabaseRequest.md)
+[Database\_GetStepsInDatabaseRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Database_GetStepsInDatabaseRequest)
 
 #### Inherited Members
 

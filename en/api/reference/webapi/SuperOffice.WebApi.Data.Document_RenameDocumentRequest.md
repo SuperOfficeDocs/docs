@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_RenameDocumentRequest"></a> Class Document\_RenameDocumentRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_RenameDocumentRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_RenameDocumentRequest](SuperOffice.WebApi.Data.Document\_RenameDocumentRequest.md)
+[Document\_RenameDocumentRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_RenameDocumentRequest)
 
 #### Inherited Members
 

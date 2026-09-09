@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Person_IsNumberValidRequest"></a> Class Person\_IsNumberValidRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Person_IsNumberValidRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Person\_IsNumberValidRequest](SuperOffice.WebApi.Data.Person\_IsNumberValidRequest.md)
+[Person\_IsNumberValidRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person_IsNumberValidRequest)
 
 #### Inherited Members
 

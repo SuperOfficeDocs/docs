@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_NewsFeedCTA"></a> Class NewsFeedCTA
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for NewsFeedCTA.
@@ -13,7 +13,7 @@ public class NewsFeedCTA
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[NewsFeedCTA](SuperOffice.WebApi.Data.NewsFeedCTA.md)
+[NewsFeedCTA](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedCTA)
 
 #### Inherited Members
 
@@ -49,11 +49,11 @@ public CtaFlavor? CtaFlavor { get; set; }
 
 #### Property Value
 
- [CtaFlavor](SuperOffice.WebApi.Data.CtaFlavor.md)?
+ [CtaFlavor](/en/api/reference/webapi/SuperOffice.WebApi.Data.CtaFlavor)?
 
 #### See Also
 
-[NewsFeedCTA](SuperOffice.WebApi.Data.NewsFeedCTA.md).[CtaFlavor\_String](SuperOffice.WebApi.Data.NewsFeedCTA.md\#SuperOffice\_WebApi\_Data\_NewsFeedCTA\_CtaFlavor\_String)
+[NewsFeedCTA](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedCTA).[CtaFlavor\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedCTA#SuperOffice_WebApi_Data_NewsFeedCTA_CtaFlavor_String)
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedCTA_CtaFlavor_String"></a> CtaFlavor\_String
 
@@ -71,7 +71,7 @@ public string CtaFlavor_String { get; set; }
 
 #### See Also
 
-[NewsFeedCTA](SuperOffice.WebApi.Data.NewsFeedCTA.md).[CtaFlavor](SuperOffice.WebApi.Data.NewsFeedCTA.md\#SuperOffice\_WebApi\_Data\_NewsFeedCTA\_CtaFlavor)
+[NewsFeedCTA](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedCTA).[CtaFlavor](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedCTA#SuperOffice_WebApi_Data_NewsFeedCTA_CtaFlavor)
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedCTA_CtaType"></a> CtaType
 
@@ -85,11 +85,11 @@ public CtaType? CtaType { get; set; }
 
 #### Property Value
 
- [CtaType](SuperOffice.WebApi.Data.CtaType.md)?
+ [CtaType](/en/api/reference/webapi/SuperOffice.WebApi.Data.CtaType)?
 
 #### See Also
 
-[NewsFeedCTA](SuperOffice.WebApi.Data.NewsFeedCTA.md).[CtaType\_String](SuperOffice.WebApi.Data.NewsFeedCTA.md\#SuperOffice\_WebApi\_Data\_NewsFeedCTA\_CtaType\_String)
+[NewsFeedCTA](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedCTA).[CtaType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedCTA#SuperOffice_WebApi_Data_NewsFeedCTA_CtaType_String)
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedCTA_CtaType_String"></a> CtaType\_String
 
@@ -107,7 +107,7 @@ public string CtaType_String { get; set; }
 
 #### See Also
 
-[NewsFeedCTA](SuperOffice.WebApi.Data.NewsFeedCTA.md).[CtaType](SuperOffice.WebApi.Data.NewsFeedCTA.md\#SuperOffice\_WebApi\_Data\_NewsFeedCTA\_CtaType)
+[NewsFeedCTA](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedCTA).[CtaType](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedCTA#SuperOffice_WebApi_Data_NewsFeedCTA_CtaType)
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedCTA_Identifier"></a> Identifier
 
@@ -135,5 +135,5 @@ public virtual string Title { get; set; }
 
 ## See Also
 
-[NewsFeedAgent](SuperOffice.WebApi.Agents.NewsFeedAgent.md)
+[NewsFeedAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.NewsFeedAgent)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_DataCollection"></a> Class UserPreferenceStrings.DataCollection
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Data collection (usage statistics) - used for status storage and locking, not intended for user interaction
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.DataCollection
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.DataCollection](SuperOffice.WebApi.Data.UserPreferenceStrings.DataCollection.md)
+[UserPreferenceStrings.DataCollection](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.DataCollection)
 
 #### Inherited Members
 

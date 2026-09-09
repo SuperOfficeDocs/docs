@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_RoleType"></a> Enum RoleType
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 0 = employee, 1 = external user, 2 = anonymous

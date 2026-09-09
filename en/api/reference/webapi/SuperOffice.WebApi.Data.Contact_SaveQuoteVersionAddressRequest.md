@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Contact_SaveQuoteVersionAddressRequest"></a> Class Contact\_SaveQuoteVersionAddressRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Contact_SaveQuoteVersionAddressRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Contact\_SaveQuoteVersionAddressRequest](SuperOffice.WebApi.Data.Contact\_SaveQuoteVersionAddressRequest.md)
+[Contact\_SaveQuoteVersionAddressRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact_SaveQuoteVersionAddressRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public Address Address { get; set; }
 
 #### Property Value
 
- [Address](SuperOffice.WebApi.Data.Address.md)
+ [Address](/en/api/reference/webapi/SuperOffice.WebApi.Data.Address)
 
 ### <a id="SuperOffice_WebApi_Data_Contact_SaveQuoteVersionAddressRequest_AddressType"></a> AddressType
 
@@ -50,7 +50,7 @@ public AddressType AddressType { get; set; }
 
 #### Property Value
 
- [AddressType](SuperOffice.WebApi.Data.AddressType.md)
+ [AddressType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AddressType)
 
 ### <a id="SuperOffice_WebApi_Data_Contact_SaveQuoteVersionAddressRequest_CountryId"></a> CountryId
 

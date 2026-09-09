@@ -31,7 +31,7 @@ Initializes a new instance of the NSArchiveColumnInfo class.
 Bool GetCanOrderBy()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Can this column be used for sorting?
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Can this column be used for sorting?
 
 **Example:**
 
@@ -46,7 +46,7 @@ Bool canOrderBy = thing.GetCanOrderBy();
 Bool GetCanRestrictBy()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Can this column be used as a restriction?
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Can this column be used as a restriction?
 
 **Example:**
 
@@ -61,7 +61,7 @@ Bool canRestrictBy = thing.GetCanRestrictBy();
 String GetDisplayName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The column name to show, can be a resource identifier string.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The column name to show, can be a resource identifier string.
 
 **Example:**
 
@@ -76,7 +76,7 @@ String displayName = thing.GetDisplayName();
 String GetDisplayTooltip()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The column tooltip, used in the column list and in the column headings.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The column tooltip, used in the column list and in the column headings.
 
 **Example:**
 
@@ -91,7 +91,7 @@ String displayTooltip = thing.GetDisplayTooltip();
 String GetDisplayType()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Type of column, so that the archive knows how to display it (actual display values are always strings, invariant-culture formatted). This name can contain resource tags.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Type of column, so that the archive knows how to display it (actual display values are always strings, invariant-culture formatted). This name can contain resource tags.
 
 **Example:**
 
@@ -106,7 +106,7 @@ String displayType = thing.GetDisplayType();
 String GetHeadingIconHint()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Icon hint for the archive heading only. If this is a nonempty string, the archive header should use this icon and ignore the DisplayName. Otherwise, the DisplayName should be used as the heading.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Icon hint for the archive heading only. If this is a nonempty string, the archive header should use this icon and ignore the DisplayName. Otherwise, the DisplayName should be used as the heading.
 
 **Example:**
 
@@ -121,7 +121,7 @@ String headingIconHint = thing.GetHeadingIconHint();
 String GetIconHint()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Icon hint corresponding to the display name.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Icon hint corresponding to the display name.
 
 <Note>
 The icon hint is used in the configuration dialog and other places where we talk about the columns of the archive. The actual heading of the archive may also contain icons in lieu of textual names, the icon hint for that is specified in HeadingIconHint and is a different one.
@@ -140,7 +140,7 @@ String iconHint = thing.GetIconHint();
 Bool GetIsVisible()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is this column visible to the user in configuration dialogs and similar?
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Is this column visible to the user in configuration dialogs and similar?
 
 **Example:**
 
@@ -155,7 +155,7 @@ Bool isVisible = thing.GetIsVisible();
 String GetName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Unique identity of this column (in this particular context).
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Unique identity of this column (in this particular context).
 
 <Note>
 The name to be used when requesting the column from a provider, setting restrictions or order by criteria
@@ -174,7 +174,7 @@ String name = thing.GetName();
 String GetRestrictionListName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - If the restriction data type is list, this property contains the name of the SoList so that choices can be shown.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - If the restriction data type is list, this property contains the name of the SoList so that choices can be shown.
 
 **Example:**
 
@@ -189,7 +189,7 @@ String restrictionListName = thing.GetRestrictionListName();
 String GetRestrictionType()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The data type of the restriction; use this to retrieve the legal operators for the restriction.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The data type of the restriction; use this to retrieve the legal operators for the restriction.
 
 **Example:**
 
@@ -204,7 +204,7 @@ String restrictionType = thing.GetRestrictionType();
 String GetSourceCode()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 ## GetWidth()
 
@@ -212,7 +212,7 @@ String GetSourceCode()
 String GetWidth()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The width specification, if the column info has been extended with GUI-based information. It is either "n%" or "nc", where n is an integer.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The width specification, if the column info has been extended with GUI-based information. It is either "n%" or "nc", where n is an integer.
 
 <Note>
 Percent-formatted fields grow and shrink; number-of-characters formatted fields have constant width when the whole archive width changes.
@@ -233,7 +233,7 @@ Sets the CanOrderBy property.
 Void SetCanOrderBy(Bool canOrderBy)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -251,7 +251,7 @@ Sets whether the column can be used as an restriction.
 Void SetCanRestrictBy(Bool canRestrictBy)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -267,7 +267,7 @@ thing.SetCanRestrictBy(canRestrictBy);
 Void SetDisplayName(String displayName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -283,7 +283,7 @@ thing.SetDisplayName(displayName);
 Void SetDisplayTooltip(String displayTooltip)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -299,7 +299,7 @@ thing.SetDisplayTooltip(displayTooltip);
 Void SetDisplayType(String displayType)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -315,7 +315,7 @@ thing.SetDisplayType(displayType);
 Void SetHeadingIconHint(String headingIconHint)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 If this is a nonempty string, the archive header should use this icon and ignore the DisplayName. Otherwise, the DisplayName should be used as the heading.
@@ -335,7 +335,7 @@ thing.SetHeadingIconHint(headingIconHint);
 Void SetIconHint(String iconHint)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 This icon hint is used in the configuration dialog and other places where we talk about the columns of the archive. The actual heading of the archive may also contain icons in lieu of textual names, the icon hint for that is specified in HeadingIconHint and is a different one.
@@ -357,7 +357,7 @@ Sets the visibility of the column.
 Void SetIsVisible(Bool isVisible)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -373,7 +373,7 @@ thing.SetIsVisible(isVisible);
 Void SetName(String name)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 The name to be used when requesting the column from a provider, setting restrictions or order by criteria
@@ -393,7 +393,7 @@ thing.SetName(name);
 Void SetRestrictionListName(String restrictionListName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -409,7 +409,7 @@ thing.SetRestrictionListName(restrictionListName);
 Void SetRestrictionType(String restrictionType)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Use this to retrieve the legal operators for the restriction.
@@ -429,7 +429,7 @@ thing.SetRestrictionType(restrictionType);
 Void SetSourceCode(String code)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## SetWidth(String)
 
@@ -437,7 +437,7 @@ Void SetSourceCode(String code)
 Void SetWidth(String width)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Percent-formatted fields grow and shrink; number-of-characters formatted fields have constant width when the whole archive width changes.

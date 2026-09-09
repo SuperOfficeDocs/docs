@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Diagnostics_GetSystemInfoRequest"></a> Class Diagnostics\_GetSystemInfoRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Diagnostics_GetSystemInfoRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Diagnostics\_GetSystemInfoRequest](SuperOffice.WebApi.Data.Diagnostics\_GetSystemInfoRequest.md)
+[Diagnostics\_GetSystemInfoRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Diagnostics_GetSystemInfoRequest)
 
 #### Inherited Members
 

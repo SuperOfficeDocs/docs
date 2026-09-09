@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_BLOB_GetBlobEntityOnPersonRequest"></a> Class BLOB\_GetBlobEntityOnPersonRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class BLOB_GetBlobEntityOnPersonRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[BLOB\_GetBlobEntityOnPersonRequest](SuperOffice.WebApi.Data.BLOB\_GetBlobEntityOnPersonRequest.md)
+[BLOB\_GetBlobEntityOnPersonRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.BLOB_GetBlobEntityOnPersonRequest)
 
 #### Inherited Members
 

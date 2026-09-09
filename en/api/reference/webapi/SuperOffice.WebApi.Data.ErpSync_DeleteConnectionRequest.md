@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSync_DeleteConnectionRequest"></a> Class ErpSync\_DeleteConnectionRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ErpSync_DeleteConnectionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ErpSync\_DeleteConnectionRequest](SuperOffice.WebApi.Data.ErpSync\_DeleteConnectionRequest.md)
+[ErpSync\_DeleteConnectionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSync_DeleteConnectionRequest)
 
 #### Inherited Members
 

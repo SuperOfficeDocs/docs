@@ -33,7 +33,7 @@ Checks if the current user has access to the field.
 Bool checkFieldRights(String field, String fieldRight)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the current user has access to the field; otherwise, false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if the current user has access to the field; otherwise, false.
 
 **Example:**
 
@@ -52,7 +52,7 @@ Checks if the current user has access to this company.
 Bool checkTableRights(String tableRight)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the current user has access to the company; otherwise, false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if the current user has access to the company; otherwise, false.
 
 **Example:**
 
@@ -71,7 +71,7 @@ Find and load company object given a domain.
 findFromDomain(String domain)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if successfully loaded; otherwise, false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if successfully loaded; otherwise, false.
 
 ## getFormattedAddress()
 
@@ -81,7 +81,7 @@ Gets the formatted company address.
 NSLocalizedField[][] getFormattedAddress()
 ```
 
-**Returns:** [CRMScript.NetServer.NSLocalizedField](CRMScript.NetServer.NSLocalizedField)[][] - The formatted company address.
+**Returns:** [CRMScript.NetServer.NSLocalizedField](/en/automation/crmscript/reference/CRMScript.NetServer.NSLocalizedField)[][] - The formatted company address.
 
 ## getValue(String)
 
@@ -91,7 +91,7 @@ Gets a String with the value of a given column.
 String getValue(String colName)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A string value of the given column.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A string value of the given column.
 
 <Note>
 Possible colNames:
@@ -130,7 +130,7 @@ Load object with values from company with given ID.
 Bool load(Integer id)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if successfully loaded; otherwise, false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if successfully loaded; otherwise, false.
 
 **Example:**
 
@@ -148,7 +148,7 @@ Loads a company based on agent ID and external key.
 Bool loadFromAgentAndKey(Integer agent, String key)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if successfully loaded; false if the company does not exist.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if successfully loaded; false if the company does not exist.
 
 <Note>
 Loading might overwriting existing values.
@@ -162,7 +162,7 @@ Saves the object and returns its ID.
 Integer save()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The company ID.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The company ID.
 
 ## setFormattedAddress(NSLocalizedField[][])
 
@@ -172,7 +172,7 @@ Sets the formatted address for a company.
 Void SetFormattedAddress(NSLocalizedField[][] name)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## setValue(String,String)
 
@@ -182,7 +182,7 @@ Sets a value in a column of a company.
 Void SetValue(String colName, String value)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Possible column names
@@ -228,7 +228,7 @@ Puts a lot of fields into the input parser.
 toParser(Parser parser)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Fields that will be loaded:

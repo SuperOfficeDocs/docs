@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_PhoneList_GetDepartmentPhonesRequest"></a> Class PhoneList\_GetDepartmentPhonesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class PhoneList_GetDepartmentPhonesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[PhoneList\_GetDepartmentPhonesRequest](SuperOffice.WebApi.Data.PhoneList\_GetDepartmentPhonesRequest.md)
+[PhoneList\_GetDepartmentPhonesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneList_GetDepartmentPhonesRequest)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UpsertRowStatus"></a> Class UpsertRowStatus
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for UpsertRowStatus.
@@ -13,13 +13,13 @@ public class UpsertRowStatus : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[UpsertRowStatus](SuperOffice.WebApi.Data.UpsertRowStatus.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[UpsertRowStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.UpsertRowStatus)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -52,11 +52,11 @@ public UpsertRowActionStatus? Action { get; set; }
 
 #### Property Value
 
- [UpsertRowActionStatus](SuperOffice.WebApi.Data.UpsertRowActionStatus.md)?
+ [UpsertRowActionStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.UpsertRowActionStatus)?
 
 #### See Also
 
-[UpsertRowStatus](SuperOffice.WebApi.Data.UpsertRowStatus.md).[Action\_String](SuperOffice.WebApi.Data.UpsertRowStatus.md\#SuperOffice\_WebApi\_Data\_UpsertRowStatus\_Action\_String)
+[UpsertRowStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.UpsertRowStatus).[Action\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.UpsertRowStatus#SuperOffice_WebApi_Data_UpsertRowStatus_Action_String)
 
 ### <a id="SuperOffice_WebApi_Data_UpsertRowStatus_Action_String"></a> Action\_String
 
@@ -74,7 +74,7 @@ public string Action_String { get; set; }
 
 #### See Also
 
-[UpsertRowStatus](SuperOffice.WebApi.Data.UpsertRowStatus.md).[Action](SuperOffice.WebApi.Data.UpsertRowStatus.md\#SuperOffice\_WebApi\_Data\_UpsertRowStatus\_Action)
+[UpsertRowStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.UpsertRowStatus).[Action](/en/api/reference/webapi/SuperOffice.WebApi.Data.UpsertRowStatus#SuperOffice_WebApi_Data_UpsertRowStatus_Action)
 
 ### <a id="SuperOffice_WebApi_Data_UpsertRowStatus_PrimaryKey"></a> PrimaryKey
 
@@ -102,5 +102,5 @@ public virtual string[] RowKeys { get; set; }
 
 ## See Also
 
-[DatabaseTableAgent](SuperOffice.WebApi.Agents.DatabaseTableAgent.md)
+[DatabaseTableAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DatabaseTableAgent)
 

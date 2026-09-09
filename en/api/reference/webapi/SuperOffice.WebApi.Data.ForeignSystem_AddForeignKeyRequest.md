@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ForeignSystem_AddForeignKeyRequest"></a> Class ForeignSystem\_AddForeignKeyRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ForeignSystem_AddForeignKeyRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ForeignSystem\_AddForeignKeyRequest](SuperOffice.WebApi.Data.ForeignSystem\_AddForeignKeyRequest.md)
+[ForeignSystem\_AddForeignKeyRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignSystem_AddForeignKeyRequest)
 
 #### Inherited Members
 
@@ -70,5 +70,5 @@ public ForeignKey ForeignKey { get; set; }
 
 #### Property Value
 
- [ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)
+ [ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)
 

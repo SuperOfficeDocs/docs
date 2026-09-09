@@ -439,7 +439,6 @@
           "en/api/search/selection/entity/create-dynamic-entity",
           "en/api/search/selection/entity/get-selection-members-entity",
           "en/api/search/selection/archive/get-selection-members-provider",
-          "en/api/search/selection/osql/add-member-to-static-selection-osql",
           "en/api/search/selection/services/create-dynamic-services",
           "en/api/search/selection/services/get-selection-members-services",
           "en/api/search/selection/sql/add-person-to-selection"

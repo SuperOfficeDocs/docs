@@ -1,36 +1,31 @@
 #!/usr/bin/env python3
-"""Verify every entry in config/redirects.json actually resolves on a live
-deployed site -- built for issue #88 (pre-softlaunch smoke test).
+"""Verify every entry in config/redirects.json actually resolves on a live deployed site; built for issue
+#88 (pre-softlaunch smoke test).
 
-No existing tool in this repo makes a real HTTP request: the other
-redirect scripts (sort-redirects.py, compact-redirects.py) only reformat
-the JSON and check for local collisions. This is a plain HTTP-request
-script -- re-running it costs wall-clock/network time, not tokens, so it
-checks every non-wildcard entry rather than sampling.
+No existing tool in this repo makes a real HTTP request: the other redirect scripts (sort-redirects.py,
+compact-redirects.py) only reformat the JSON and check for local collisions. This is a plain HTTP-request
+script; re-running it costs wall-clock/network time, not tokens, so it checks every non-wildcard entry
+rather than sampling.
 
-Wildcard entries (~206 of ~2711, e.g. "/da/chat/learn/admin/*") can't be
-requested literally. For those, only the destination's own non-wildcard
-prefix is checked (a sanity check that the redirect's *target* is alive),
-not that every possible match resolves correctly -- reported as a
-separate, smaller-coverage bucket rather than silently skipped.
+Wildcard entries (~206 of ~2711, for example "/da/chat/learn/admin/*") can't be requested literally. For
+those, only the destination's own non-wildcard prefix is checked (a sanity check that the redirect's
+*target* is alive), not that every possible match resolves correctly; reported as a separate,
+smaller-coverage bucket rather than silently skipped.
 
-Each plain entry is checked as written ("bare"), and -- unless its source
-is a wildcard, ends in "/index" or "/", already ends in ".html", or already
-carries a real file extension (a static asset under /downloads/, never a
-DocFx-era page -- see #386) -- a second request is made for
-"<source>.html" ("html-suffix"), since the old DocFx site served every
-page with a literal .html extension and Mintlify's redirect matcher treats
-that as a completely distinct source string (#339). Failures are tagged by
-variant so a break is traceable to which URL form broke.
+Each plain entry is checked as written ("bare"), and, unless its source is a wildcard, ends in "/index" or
+"/", already ends in ".html", or already carries a real file extension (a static asset under /downloads/,
+never a DocFx-era page, see #386), a second request is made for "<source>.html" ("html-suffix"), since the
+old DocFx site served every page with a literal .html extension and Mintlify's redirect matcher treats that
+as a completely distinct source string (#339). Failures are tagged by variant so a break is traceable to
+which URL form broke.
 
 For each non-wildcard entry:
   1. Request base_url + source, following redirects.
-  2. Confirm the final response is 200 (not 404/500/etc.) -- catches the
-     known "404 page that itself returns 200" gap in Mintlify's own hosted
-     broken-link checker, per contribute/automated-tests.mdx.
-  3. Compare the final resolved path against the expected destination
-     (allowing for a trailing-slash/.html-suffix difference) -- catches a
-     redirect that resolves to *something* live, just not the right page.
+  2. Confirm the final response is 200 (not 404/500/etc.); catches the known "404 page that itself returns
+     200" gap in Mintlify's own hosted broken-link checker, per contribute/automated-tests.mdx.
+  3. Compare the final resolved path against the expected destination (allowing for a
+     trailing-slash/.html-suffix difference); catches a redirect that resolves to *something* live, just
+     not the right page.
 
 Usage:
     python tools/check-redirects-live.py --base-url https://superofficeas.mintlify.app
@@ -66,7 +61,7 @@ def needs_html_variant(source):
     behavior don't need a second, "<source>.html" request (see #339). A
     source that already carries a real file extension (a static asset
     under /downloads/, not a DocFx-era page) never had a bare/.html pair
-    to begin with -- appending ".html" would just test a nonsense URL like
+    to begin with, so appending ".html" would just test a nonsense URL like
     "foo.zip.html" (see #386)."""
     if source.endswith("/index") or source.endswith("/") or source.lower().endswith(".html"):
         return False
@@ -104,7 +99,7 @@ def check_one(base_url, entry, source, variant):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--base-url", required=True, help="e.g. https://superofficeas.mintlify.app")
+    parser.add_argument("--base-url", required=True, help="for example https://superofficeas.mintlify.app")
     parser.add_argument("--redirects", default="config/redirects.json")
     parser.add_argument("--workers", type=int, default=10)
     parser.add_argument("--limit", type=int, default=None, help="only check the first N non-wildcard entries")
@@ -153,7 +148,7 @@ def main():
         # Only meaningful for a path-segment wildcard ("/foo/*") where the
         # prefix is itself a real page/folder path. A filename-prefix
         # wildcard ("/foo/bar-*", matching bar-a.html, bar-b.html, ...) has
-        # no real page at the bare prefix -- e.g. ".../services-*" matches
+        # no real page at the bare prefix; for example ".../services-*" matches
         # "services-create-document" etc., and "services-" alone 404s by
         # design, not because anything is broken.
         if not dest_prefix.endswith("/"):
@@ -171,9 +166,9 @@ def main():
         }
         for fut in as_completed(futures):
             entry, variant, source, status, detail, final_url = fut.result()
-            # A wildcard's destination prefix (e.g. "/en/api/localization/culture"
+            # A wildcard's destination prefix (for example "/en/api/localization/culture"
             # from ".../culture/*") is a template, not necessarily a real page
-            # in its own right -- only a genuine failure (error status,
+            # in its own right; only a genuine failure (error status,
             # request failure, or loop) is meaningful here; a prefix that
             # itself redirects somewhere else entirely is not this check's
             # business to judge.

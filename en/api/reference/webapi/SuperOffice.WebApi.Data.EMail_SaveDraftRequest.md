@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_SaveDraftRequest"></a> Class EMail\_SaveDraftRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_SaveDraftRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_SaveDraftRequest](SuperOffice.WebApi.Data.EMail\_SaveDraftRequest.md)
+[EMail\_SaveDraftRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_SaveDraftRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public EMailEntity Entity { get; set; }
 
 #### Property Value
 
- [EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)
+ [EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_SanitizeMailContentRequest"></a> Class Ticket\_SanitizeMailContentRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_SanitizeMailContentRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_SanitizeMailContentRequest](SuperOffice.WebApi.Data.Ticket\_SanitizeMailContentRequest.md)
+[Ticket\_SanitizeMailContentRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_SanitizeMailContentRequest)
 
 #### Inherited Members
 

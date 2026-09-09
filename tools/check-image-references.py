@@ -22,7 +22,7 @@ the image is actually rendered somewhere.
 Resolution rules (mirrors how Mintlify actually resolves these):
   - A path starting with "/" is root-absolute, resolved from the repo root.
   - Any other path is resolved relative to the source file's own directory.
-  - http(s):// URLs are skipped -- external image hosting isn't this script's
+  - http(s):// URLs are skipped, since external image hosting isn't this script's
     concern (mint broken-links --check-external covers external targets).
 
 Usage:
@@ -36,6 +36,9 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent / "ci"))
+from lib.markdown_masking import mask_fenced_code  # noqa: E402
+
 IMAGE_EXT_RE = re.compile(r"\.(png|jpe?g|gif|svg|webp|bmp|ico)(\?.*)?$", re.IGNORECASE)
 
 INLINE_IMG_RE = re.compile(r'!\[[^\]]*\]\(\s*<?([^)\s>]+)>?(?:\s+"[^"]*")?\s*\)')
@@ -44,40 +47,6 @@ REF_DEF_RE = re.compile(r'^[ ]{0,3}\[([^\]]+)\]:\s*<?([^\s>]+)>?', re.MULTILINE)
 HTML_IMG_RE = re.compile(r'<img\b[^>]*?\bsrc\s*=\s*[\'"]([^\'"]+)[\'"]', re.IGNORECASE | re.DOTALL)
 
 CONTENT_EXTS = (".md", ".mdx")
-
-FENCE_LINE_RE = re.compile(r"^[ \t]{0,3}(`{3,}|~{3,})")
-
-
-def mask_fenced_code(text):
-    """Blank out fenced code-block bodies (```...``` / ~~~...~~~), keeping
-    line count and length identical so reported line numbers stay accurate.
-
-    Example doc that needs this: an <img src="..."> inside a ```html fence
-    demonstrating an API URL pattern (e.g. "/api/v1/Person/{id}/Image") is
-    prose illustration, not a real site asset reference.
-
-    A line can also be a self-closed, single-line fence (e.g. a literal URL
-    shown as ```http://example.com/path```, opening and closing backticks on
-    the same line) -- that's not a real fence delimiter and must not toggle
-    in_fence, or every real fence delimiter after it flips parity and the
-    mask silently blanks unrelated content (including real reference-style
-    link definitions) further down the file.
-    """
-    lines = text.split("\n")
-    in_fence = False
-    for i, line in enumerate(lines):
-        m = FENCE_LINE_RE.match(line)
-        if m:
-            fence_char = m.group(1)[0]
-            rest = line[m.end():]
-            self_closed = re.search(re.escape(fence_char) + "{3,}", rest)
-            lines[i] = ""
-            if not self_closed:
-                in_fence = not in_fence
-            continue
-        if in_fence:
-            lines[i] = ""
-    return "\n".join(lines)
 
 
 def iter_content_files(repo_root):

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_AuthenticateIncomingRequest"></a> Class EMail\_AuthenticateIncomingRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_AuthenticateIncomingRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_AuthenticateIncomingRequest](SuperOffice.WebApi.Data.EMail\_AuthenticateIncomingRequest.md)
+[EMail\_AuthenticateIncomingRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_AuthenticateIncomingRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public EMailConnectionInfo ConnectionInfo { get; set; }
 
 #### Property Value
 
- [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+ [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 

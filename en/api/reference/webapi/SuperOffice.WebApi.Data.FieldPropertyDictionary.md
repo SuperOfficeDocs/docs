@@ -1,6 +1,6 @@
 # Class FieldPropertyDictionary {#SuperOffice_WebApi_Data_FieldPropertyDictionary}
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Serializable dictionary.
@@ -14,7 +14,7 @@ public class FieldPropertyDictionary : Dictionary<string, FieldProperty>, IDicti
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
 [Dictionary&lt;string, FieldProperty\&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2) ← 
-[FieldPropertyDictionary](SuperOffice.WebApi.Data.FieldPropertyDictionary.md)
+[FieldPropertyDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldPropertyDictionary)
 
 #### Implements
 

@@ -1,25 +1,21 @@
 #!/usr/bin/env python3
 """Scan every .md/.mdx content file for encoding corruption.
 
-Built for issue #88 (pre-softlaunch smoke test), as the encoding half of the
-"catch cross-language/encoding corruption before softlaunch" ask -- distinct
-from the language-leakage check (see tools/vale-spelling-density.py), which
-reuses Vale's existing per-language Hunspell dictionaries instead.
+Built for issue #88 (pre-softlaunch smoke test), as the encoding half of the "catch cross-language/encoding
+corruption before softlaunch" ask, distinct from the language-leakage check (see
+tools/vale-spelling-density.py), which reuses Vale's existing per-language Hunspell dictionaries instead.
 
 Two independent things are flagged:
 
-  1. Invalid UTF-8 -- a file that fails strict utf-8 decoding outright. This
-     repo has intentionally BOM-prefixed files (utf-8-sig, see #189's
-     crmscript-generator notes) -- a leading BOM is not itself an error here,
-     just noted, since `errors="strict"` decodes a leading U+FEFF fine.
+  1. Invalid UTF-8: a file that fails strict utf-8 decoding outright. This repo has intentionally
+     BOM-prefixed files (utf-8-sig, see #189's crmscript-generator notes); a leading BOM is not itself an
+     error here, just noted, since `errors="strict"` decodes a leading U+FEFF fine.
 
-  2. Mojibake substrings -- text that decodes as valid UTF-8 but contains
-     byte sequences characteristic of UTF-8 content that was previously
-     mis-decoded as Latin-1/Windows-1252 and re-saved (e.g. Norwegian "å"
-     corrupted to "Ã¥", a right single quote corrupted to "â€™"). This is a
-     real, distinct failure mode from #189's PowerShell/core.autocrlf
-     encoding bugs -- those were about line-ending/BOM round-tripping during
-     *generation*; this is about double-encoded prose content.
+  2. Mojibake substrings: text that decodes as valid UTF-8 but contains byte sequences characteristic of
+     UTF-8 content that was previously mis-decoded as Latin-1/Windows-1252 and re-saved (for example
+     Norwegian "å" corrupted to "Ã¥", a right single quote corrupted to "â€™"). This is a real, distinct
+     failure mode from #189's PowerShell/core.autocrlf encoding bugs; those were about line-ending/BOM
+     round-tripping during *generation*, while this is about double-encoded prose content.
 
 Usage:
     python tools/check-encoding.py [--repo-root <dir>]
@@ -109,7 +105,7 @@ def main():
     print(f"Replacement char (U+FFFD): {len(replacement_findings)}")
 
     if not (invalid_utf8 or mojibake_findings or replacement_findings):
-        print("Clean -- no encoding corruption found.")
+        print("Clean, no encoding corruption found.")
         sys.exit(0)
 
     out_path = repo_root / "scratch-check-encoding.txt"

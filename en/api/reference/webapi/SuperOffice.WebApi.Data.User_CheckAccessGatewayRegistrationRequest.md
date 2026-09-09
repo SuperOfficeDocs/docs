@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_CheckAccessGatewayRegistrationRequest"></a> Class User\_CheckAccessGatewayRegistrationRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_CheckAccessGatewayRegistrationRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_CheckAccessGatewayRegistrationRequest](SuperOffice.WebApi.Data.User\_CheckAccessGatewayRegistrationRequest.md)
+[User\_CheckAccessGatewayRegistrationRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_CheckAccessGatewayRegistrationRequest)
 
 #### Inherited Members
 

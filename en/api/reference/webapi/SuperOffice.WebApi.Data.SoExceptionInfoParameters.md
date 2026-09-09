@@ -1,6 +1,6 @@
 # Class SoExceptionInfoParameters {#SuperOffice_WebApi_Data_SoExceptionInfoParameters}
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Serializable dictionary.
@@ -14,7 +14,7 @@ public class SoExceptionInfoParameters : Dictionary<string, string>, IDictionary
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
 [Dictionary&lt;string, string\&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2) ← 
-[SoExceptionInfoParameters](SuperOffice.WebApi.Data.SoExceptionInfoParameters.md)
+[SoExceptionInfoParameters](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoExceptionInfoParameters)
 
 #### Implements
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Workflow_CreateDefaultWorkflowStepOptionFromTypeRequest"></a> Class Workflow\_CreateDefaultWorkflowStepOptionFromTypeRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Workflow_CreateDefaultWorkflowStepOptionFromTypeRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Workflow\_CreateDefaultWorkflowStepOptionFromTypeRequest](SuperOffice.WebApi.Data.Workflow\_CreateDefaultWorkflowStepOptionFromTypeRequest.md)
+[Workflow\_CreateDefaultWorkflowStepOptionFromTypeRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Workflow_CreateDefaultWorkflowStepOptionFromTypeRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public WorkflowSplitOptionType OptionType { get; set; }
 
 #### Property Value
 
- [WorkflowSplitOptionType](SuperOffice.WebApi.Data.WorkflowSplitOptionType.md)
+ [WorkflowSplitOptionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowSplitOptionType)
 

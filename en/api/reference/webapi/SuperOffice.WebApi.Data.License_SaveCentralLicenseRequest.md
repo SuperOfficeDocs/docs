@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_License_SaveCentralLicenseRequest"></a> Class License\_SaveCentralLicenseRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class License_SaveCentralLicenseRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[License\_SaveCentralLicenseRequest](SuperOffice.WebApi.Data.License\_SaveCentralLicenseRequest.md)
+[License\_SaveCentralLicenseRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.License_SaveCentralLicenseRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public LicenseOwner[] License { get; set; }
 
 #### Property Value
 
- [LicenseOwner](SuperOffice.WebApi.Data.LicenseOwner.md)\[\]
+ [LicenseOwner](/en/api/reference/webapi/SuperOffice.WebApi.Data.LicenseOwner)\[\]
 

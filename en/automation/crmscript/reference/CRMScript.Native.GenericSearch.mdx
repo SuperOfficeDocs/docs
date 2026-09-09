@@ -41,7 +41,7 @@ Adds a criteria between two database-fields to the database query.
 Void addComparison(String field1, String compOperator, String field2, String rowOperator, Integer concatLevel)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## addCriteria(String,String,String,String,Integer)
 
@@ -51,7 +51,7 @@ Add search criteria to the search.
 Void addCriteria(String field, String operator, String value, String andOr, Integer concatLevel)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 The concatLevel specifies how this criteria will be concatenated with the rest of the query (parenthesis level). A higher concatLevel gives a "(", and a lower concatlevel gives a ")".
@@ -65,7 +65,7 @@ Adds a field to the queryAdds a field to be selected to the database query.
 Void addField(String field)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Use addField(String,Integer) to provide a field mask.
@@ -79,7 +79,7 @@ Adds a field to the queryAdds a field to be selected to the database query with 
 Void addField(String field, Integer fieldMask)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 fieldMask:
@@ -100,7 +100,7 @@ Adds order on specified field, descending or ascending.
 Void addOrder(String field, Bool asc)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## countRows()
 
@@ -110,7 +110,7 @@ Returns the number of rows in the result set.
 Integer countRows()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of rows in the result set.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The number of rows in the result set.
 
 ## eof()
 
@@ -120,7 +120,7 @@ Returns true if the result pointer has reached the end of result set, or false o
 Bool eof()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the result pointer has reached the end of result set; otherwise, false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if the result pointer has reached the end of result set; otherwise, false.
 
 ## execute()
 
@@ -130,7 +130,7 @@ Executes the query.
 Void execute()
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## first()
 
@@ -140,7 +140,7 @@ Sets the result pointer to point at the first row in the result set.
 Bool first()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - False if the result set is empty; otherwise, true.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - False if the result set is empty; otherwise, true.
 
 ## get(String,Integer)
 
@@ -150,7 +150,7 @@ Retrieves the value of a field according to a field mask.
 String get(String field)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the field.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The value of the field.
 
 <Note>
 fieldMask:
@@ -171,7 +171,7 @@ Retrieves the value of a field according to a field mask.
 String get(Integer id)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the field.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The value of the field.
 
 <Note>
 fieldMask:
@@ -192,7 +192,7 @@ Sets the result set pointer to next row, returns &lt;/li&gt;&lt;/ul&gt;
 Bool next()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if there is a next row; otherwise, false (the pointer has reached the last result set)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if there is a next row; otherwise, false (the pointer has reached the last result set)
 
 ## setLanguage(Integer)
 
@@ -202,7 +202,7 @@ Sets what language to use when showing display fields.
 Void setLanguage(Integer languageId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## setLimit(Integer)
 
@@ -212,4 +212,4 @@ Sets a limit of the number of rows that will be returned in the result set.
 Void setLimit(Integer limit)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ViewState_GetPreviousCurrentRequest"></a> Class ViewState\_GetPreviousCurrentRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ViewState_GetPreviousCurrentRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ViewState\_GetPreviousCurrentRequest](SuperOffice.WebApi.Data.ViewState\_GetPreviousCurrentRequest.md)
+[ViewState\_GetPreviousCurrentRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ViewState_GetPreviousCurrentRequest)
 
 #### Inherited Members
 

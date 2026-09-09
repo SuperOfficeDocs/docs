@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSync_GetEngineStatusRequest"></a> Class ErpSync\_GetEngineStatusRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ErpSync_GetEngineStatusRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ErpSync\_GetEngineStatusRequest](SuperOffice.WebApi.Data.ErpSync\_GetEngineStatusRequest.md)
+[ErpSync\_GetEngineStatusRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSync_GetEngineStatusRequest)
 
 #### Inherited Members
 

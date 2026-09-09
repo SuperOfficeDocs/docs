@@ -8,4 +8,4 @@
 
   * **Campagne**: Voer het type mailing in, zoals "nieuwsbrief" of 'lead-nurturing', of voer een specifieke campagnenaam in, zoals "lente-uitverkoop-juni-21" of "upgrade-campagne-v9".
 
-[1]: ../../../../tracked-links/learn/index#google
+[1]: /nl/marketing/tracked-links/learn/index#google

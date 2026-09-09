@@ -4,4 +4,4 @@ Klicken Sie auf die Schaltfläche **Suchen** unter der Registerkarte **Kriterien
 * Wenn Sie zu viele oder zu wenig Treffer erzielen, können Sie die Suchkriterien anpassen, indem Sie in den verschiedenen Listenfeldern andere Werte auswählen.
 * Öffnen, Vorschau anzeigen, oder speichern wie oben beschrieben in [Arbeiten mit Suchergebnissen][1].
 
-[1]: ../find-screen#results
+[1]: /de/search-options/learn/find-screen#results

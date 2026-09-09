@@ -232,7 +232,7 @@ items:
     content: NSDashTheme GetTheme()
     parameters: []
     return:
-      type: CRMScript.Netserver.NSDashTheme
+      type: CRMScript.NetServer.NSDashTheme
       description:
   example: 
 - uid: CRMScript.NetServer.NSDash.GetUniqueId()

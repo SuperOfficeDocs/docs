@@ -9,15 +9,15 @@ envir: onsite, online
 
 ## "Forms"
 
-This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.FormsProvider">SuperOffice.CRM.ArchiveLists.FormsProvider</see> inside NetServer's SODatabase assembly.
+This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.FormsProvider inside NetServer's SODatabase assembly.
 
 Archive provider for the list of forms (the form table). Backs the Forms
-pane's flat tabs — Recent (via <see cref="T:SuperOffice.CRM.ArchiveLists.FormsHistoryExtender" />'s
+pane's flat tabs — Recent (via FormsHistoryExtender's
 historyRank), My forms (registeredBy) and Active forms (formActive) — and,
-as a sub-provider, the folder-aware <see cref="T:SuperOffice.CRM.ArchiveLists.FormsAndFoldersProvider" />.
+as a sub-provider, the folder-aware [FormsAndFoldersProvider](./formsandfolders).
 
 No restriction on form.type is applied here: the type is exposed as the
-filter-only <see cref="F:SuperOffice.CRM.ArchiveLists.FormExtenderBase.ColFormType" /> column so the Forms
+filter-only ColFormType column so the Forms
 pane can ask for Normal forms and the Form-templates pane for Templates,
 both from this one provider.
 
@@ -80,5 +80,5 @@ Accept-Language: sv
 
 ```
 
-See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
+See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
 

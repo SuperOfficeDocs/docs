@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_QuoteContext"></a> Class QuoteContext
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for QuoteContext.
@@ -13,13 +13,13 @@ public class QuoteContext : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[QuoteContext](SuperOffice.WebApi.Data.QuoteContext.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[QuoteContext](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteContext)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -50,7 +50,7 @@ public virtual Associate CRMAssociate { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### <a id="SuperOffice_WebApi_Data_QuoteContext_CRMQuoteAlternative"></a> CRMQuoteAlternative
 
@@ -62,7 +62,7 @@ public virtual QuoteAlternative CRMQuoteAlternative { get; set; }
 
 #### Property Value
 
- [QuoteAlternative](SuperOffice.WebApi.Data.QuoteAlternative.md)
+ [QuoteAlternative](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteAlternative)
 
 ### <a id="SuperOffice_WebApi_Data_QuoteContext_CRMQuoteLine"></a> CRMQuoteLine
 
@@ -74,7 +74,7 @@ public virtual QuoteLine CRMQuoteLine { get; set; }
 
 #### Property Value
 
- [QuoteLine](SuperOffice.WebApi.Data.QuoteLine.md)
+ [QuoteLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteLine)
 
 ### <a id="SuperOffice_WebApi_Data_QuoteContext_CRMQuoteVersion"></a> CRMQuoteVersion
 
@@ -86,7 +86,7 @@ public virtual QuoteVersion CRMQuoteVersion { get; set; }
 
 #### Property Value
 
- [QuoteVersion](SuperOffice.WebApi.Data.QuoteVersion.md)
+ [QuoteVersion](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersion)
 
 ### <a id="SuperOffice_WebApi_Data_QuoteContext_CRMSale"></a> CRMSale
 
@@ -98,7 +98,7 @@ public virtual Sale CRMSale { get; set; }
 
 #### Property Value
 
- [Sale](SuperOffice.WebApi.Data.Sale.md)
+ [Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale)
 
 ### <a id="SuperOffice_WebApi_Data_QuoteContext_UserLanguageCode"></a> UserLanguageCode
 
@@ -114,5 +114,5 @@ public virtual string UserLanguageCode { get; set; }
 
 ## See Also
 
-[QuoteAgent](SuperOffice.WebApi.Agents.QuoteAgent.md)
+[QuoteAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.QuoteAgent)
 

@@ -33,6 +33,6 @@ View the [How-To pages][1] to see how to work with the lists endpoint to manage 
 
 [1]: /en/api/lists/services/how-to/index
 
-[2]: ../../../reference/restful/rest/List_MDO/index
-[3]: ../../../reference/restful/agent/MDO_Agent/index
+[2]: ../../../reference/restful/rest/list_mdo/get-list-of-lists
+[3]: ../../../reference/restful/agent/index
 [4]: ../../../reference/soap/services88/MDO/index

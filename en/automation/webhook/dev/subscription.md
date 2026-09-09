@@ -183,5 +183,5 @@ var webhook        = new Webhook(0, name, targetUrl, events, secret);
 webhookManager.SaveWebhook(webhook);
 ```
 
-[1]: ../../../api/reference/restful/rest/Webhook/index
-[2]: ../../../api/reference/restful/agent/Webhook_Agent/index
+[1]: ../../../api/reference/restful/rest/webhook/get-all-webhooks
+[2]: ../../../api/reference/restful/agent/index

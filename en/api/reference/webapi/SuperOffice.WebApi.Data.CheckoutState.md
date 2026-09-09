@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CheckoutState"></a> Enum CheckoutState
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Enum listing the possible checkout states of a document, as seen from outside the document plugin

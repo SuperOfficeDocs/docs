@@ -1,6 +1,6 @@
 # Interface IAssociateAgent {#SuperOffice_WebApi_Agents_IAssociateAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Associate utilities, notes, not user admininstration
@@ -11,7 +11,7 @@ public interface IAssociateAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -30,13 +30,13 @@ Task<Associate> GetAssociateAsync(int associateId, RequestOptions requestOptions
 
 The identifier of the Associate object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Associate](SuperOffice.WebApi.Data.Associate.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)\&gt;
 
 Associate
 
@@ -54,13 +54,13 @@ Task<Associate> GetAssociateByPersonIdAsync(int personId, RequestOptions request
 
 The person id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Associate](SuperOffice.WebApi.Data.Associate.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)\&gt;
 
 Associate if person is associate
 
@@ -78,13 +78,13 @@ Task<Associate[]> GetAssociateListAsync(int[] associateIds, RequestOptions reque
 
 The identifiers of the Associate object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Associate](SuperOffice.WebApi.Data.Associate.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)\[\]\&gt;
 
 Array of Associate objects
 
@@ -106,13 +106,13 @@ Id of the group
 
 The type of group. See DiaryGroupType
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Associate](SuperOffice.WebApi.Data.Associate.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)\[\]\&gt;
 
 Array of associate
 
@@ -126,7 +126,7 @@ Task<string> GetEncryptionKeyAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -150,7 +150,7 @@ Task<string[]> GetNoteAsync(int associateId, RequestOptions requestOptions = nul
 
 The associate id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -174,7 +174,7 @@ Task LogOffWindowsUsersAsync(int[] associateIds, RequestOptions requestOptions =
 
 The ids of the associates that shall be logged off
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -202,7 +202,7 @@ The associate id
 
 The array of strings(notepad pages).
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 

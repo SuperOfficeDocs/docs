@@ -1,6 +1,6 @@
 # Class CultureDataFormatter {#SuperOffice_WebApi_Data_CultureDataFormatter}
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 This is a helper class designed to encode, parse and reformat culturally sensitive data types between
@@ -13,7 +13,7 @@ public static class CultureDataFormatter
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CultureDataFormatter](SuperOffice.WebApi.Data.CultureDataFormatter.md)
+[CultureDataFormatter](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter)
 
 #### Inherited Members
 
@@ -34,11 +34,11 @@ server-side generated text. Before displaying this text to the user, culturally 
 to be parsed and reformatted to the correct culture.
 &lt;p&gt;&lt;/p&gt;
 The methods in this class take care of both sides of this process. The Encode methods, such as 
-&lt;xref href="SuperOffice.WebApi.Data.CultureDataFormatter.EncodeDate(System.DateTime)" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;, take a native data type as input and return a string that contains both
+[EncodeDate](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter#SuperOffice_WebApi_Data_CultureDataFormatter_EncodeDate_System_DateTime_), take a native data type as input and return a string that contains both
 a specification of what it is (a date) and the value formatted in the invariant culture.
 &lt;p&gt;&lt;/p&gt;
-The &lt;xref href="SuperOffice.WebApi.Data.CultureDataFormatter.LocalizeEncoded(System.String)" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; method will take such a formatted element, and by calling on the
-proper LocalFormat method (such as &lt;xref href="SuperOffice.WebApi.Data.CultureDataFormatter.LocalFormatDate(System.DateTime)" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;, return it in its correct form according
+The [LocalizeEncoded](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter#SuperOffice_WebApi_Data_CultureDataFormatter_LocalizeEncoded_System_String_) method will take such a formatted element, and by calling on the
+proper LocalFormat method (such as [LocalFormatDate](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter#SuperOffice_WebApi_Data_CultureDataFormatter_LocalFormatDate_System_DateTime_), return it in its correct form according
 to the current culture settings for the thread.
 
 ## Fields
@@ -1054,7 +1054,7 @@ See also &lt;a href="http://msdn.microsoft.com/en-us/library/system.globalizatio
 
 #### See Also
 
-[CultureDataFormatter](SuperOffice.WebApi.Data.CultureDataFormatter.md).[MapSuperOfficeLanguageToCulture](SuperOffice.WebApi.Data.CultureDataFormatter.md\#SuperOffice\_WebApi\_Data\_CultureDataFormatter\_MapSuperOfficeLanguageToCulture\_System\_String\_)\([string](https://learn.microsoft.com/dotnet/api/system.string)\)
+[CultureDataFormatter](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter).[MapSuperOfficeLanguageToCulture](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter#SuperOffice_WebApi_Data_CultureDataFormatter_MapSuperOfficeLanguageToCulture_System_String_)\([string](https://learn.microsoft.com/dotnet/api/system.string)\)
 
 ### MapLCIDToSuperOfficeLanguage\(int\) {#SuperOffice_WebApi_Data_CultureDataFormatter_MapLCIDToSuperOfficeLanguage_System_Int32_}
 
@@ -1120,7 +1120,7 @@ See also &lt;a href="http://msdn.microsoft.com/en-us/library/system.globalizatio
 
 #### See Also
 
-[CultureDataFormatter](SuperOffice.WebApi.Data.CultureDataFormatter.md).[MapCultureToSuperOfficeLanguage](SuperOffice.WebApi.Data.CultureDataFormatter.md\#SuperOffice\_WebApi\_Data\_CultureDataFormatter\_MapCultureToSuperOfficeLanguage\_System\_String\_)\([string](https://learn.microsoft.com/dotnet/api/system.string)\)
+[CultureDataFormatter](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter).[MapCultureToSuperOfficeLanguage](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter#SuperOffice_WebApi_Data_CultureDataFormatter_MapCultureToSuperOfficeLanguage_System_String_)\([string](https://learn.microsoft.com/dotnet/api/system.string)\)
 
 ### ParseEncoded\(string\) {#SuperOffice_WebApi_Data_CultureDataFormatter_ParseEncoded_System_String_}
 
@@ -1312,7 +1312,7 @@ Parsed resource string.
 
 ### ParseInlineMultiLanguageString\(string, string, int\) {#SuperOffice_WebApi_Data_CultureDataFormatter_ParseInlineMultiLanguageString_System_String_System_String_System_Int32_}
 
-Parses the string for multilang strings and uses &lt;xref href="SuperOffice.WebApi.Data.CultureDataFormatter.ParseMultiLanguageString(System.String%2cSystem.String)" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;	to translate
+Parses the string for multilang strings and uses [ParseMultiLanguageString](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter#SuperOffice_WebApi_Data_CultureDataFormatter_ParseMultiLanguageString_System_String_System_String_)	to translate
 the fragment to a culture specific string part
 
 ```csharp
@@ -1519,7 +1519,7 @@ String, either marked with [DT: ] or just a datetime
 
 `result` [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-DateTime value, if return value is true; otherwise &lt;xref href="System.DateTime.MinValue" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;
+DateTime value, if return value is true; otherwise [MinValue](https://learn.microsoft.com/dotnet/api/system.datetime.minvalue)
 
 #### Returns
 

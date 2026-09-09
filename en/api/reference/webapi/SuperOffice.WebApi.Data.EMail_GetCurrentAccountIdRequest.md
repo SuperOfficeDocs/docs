@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_GetCurrentAccountIdRequest"></a> Class EMail\_GetCurrentAccountIdRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_GetCurrentAccountIdRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_GetCurrentAccountIdRequest](SuperOffice.WebApi.Data.EMail\_GetCurrentAccountIdRequest.md)
+[EMail\_GetCurrentAccountIdRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_GetCurrentAccountIdRequest)
 
 #### Inherited Members
 

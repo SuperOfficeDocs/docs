@@ -11,53 +11,40 @@ folder, plus any page elsewhere hand-flagged by the Userflow team. This tool
 reproduces that page set for the Mintlify content tree.
 
 Selection logic per language <lang> (en, da, de, nl, no, sv):
-  - Every page whose path starts with `<lang>/` and contains a `/learn/`
-    segment anywhere after that, excluding anything under a `snippets/`
-    folder -- those are MDX-import-only fragments never served at their own
-    URL (same rule already documented in contribute/redirects.mdx's "Don't
-    self-redirect a snippets/ file" note, and enforced by
-    check-redirect-coverage.py's EXCLUDED_PREFIXES). Confirmed via #393:
-    37-81 dead snippet links per language were shipping in the sitemap
-    before this exclusion existed.
+  - Every page whose path starts with `<lang>/` and contains a `/learn/` segment anywhere after that,
+    excluding anything under a `snippets/` folder, since those are MDX-import-only fragments never served
+    at their own URL (same rule already documented in contribute/redirects.mdx's "Don't self-redirect a
+    snippets/ file" note, and enforced by check-redirect-coverage.py's EXCLUDED_PREFIXES). Confirmed via
+    #393: 37-81 dead snippet links per language were shipping in the sitemap before this exclusion existed.
   - Every page anywhere in the repo with `userflow_index: true` frontmatter:
-      - if its path starts with a recognized language prefix, it belongs to
-        that language only (a real per-language page, e.g. an `admin/`
-        how-to)
-      - if it has no language prefix at all (e.g. `integrations/`,
-        `release-notes/` -- content areas that were consolidated out of
-        per-language duplicates during the Mintlify migration, or were
+      - if its path starts with a recognized language prefix, it belongs to that language only (a real
+        per-language page, for example an `admin/` how-to)
+      - if it has no language prefix at all (for example `integrations/`, `release-notes/`, content areas
+        that were consolidated out of per-language duplicates during the Mintlify migration, or were
         always shared), it belongs to EVERY language's file. Confirmed via
-        `integrations/mail-link/index.md`'s `redirect_from` history, which
-        shows six separate per-language pages before consolidation.
+        `integrations/mail-link/index.md`'s `redirect_from` history, which shows six separate per-language
+        pages before consolidation.
 
-The resulting page set for each language is cross-checked against that
-language's own resolved nav tree (config/nav-<lang>.json, following `$ref`s
-the same way Mintlify's docs.json does) -- language-prefixed pages against
-their own language's nav, unprefixed/shared pages against the fully-resolved
-English nav tree (the only one that individually enumerates
-integrations/release-notes content; other languages only have a single
-shallow stub page for those tabs). A hand-flagged page missing from the
-relevant nav tree is logged, not dropped -- it is still a real page Userflow
-should be able to link to, but nav-listing drift is worth a human's
-attention.
+The resulting page set for each language is cross-checked against that language's own resolved nav tree
+(config/nav-<lang>.json, following `$ref`s the same way Mintlify's docs.json does): language-prefixed pages
+against their own language's nav, unprefixed/shared pages against the fully-resolved English nav tree (the
+only one that individually enumerates integrations/release-notes content; other languages only have a
+single shallow stub page for those tabs). A hand-flagged page missing from the relevant nav tree is logged,
+not dropped: it is still a real page Userflow should be able to link to, but nav-listing drift is worth a
+human's attention.
 
-No dependency on a built site, Mintlify's own `sitemap.xml`, or any other
-build artifact -- this walks the checked-in source tree and nav config
-directly, so it is safe and correct to re-run any time a `learn/` or
-`userflow_index` page is added, moved, renamed, or deleted, independent of
-any scheduled regeneration.
+No dependency on a built site, Mintlify's own `sitemap.xml`, or any other build artifact; this walks the
+checked-in source tree and nav config directly, so it is safe and correct to re-run any time a `learn/` or
+`userflow_index` page is added, moved, renamed, or deleted, independent of any scheduled regeneration.
 
-Output: `learn-<lang>.mdx` at the repo root, one per language, `hidden: true`
-(reachable by direct URL, excluded from the sidebar and from Mintlify's own
-`sitemap.xml`/search indexing -- see contribute/markdown-guide/metadata.mdx).
-Body is raw `<a href='URL'>URL</a><br />` lines, matching the legacy DocFx
-pipeline's own output format verbatim (confirmed against the live production
-`learn-en.html`) rather than a markdown list -- whatever reads this file may
-depend on that exact shape, not just on the links existing somewhere on the
-page. The old DocFx-era `/learn-<lang>.html` URL Userflow's dashboard
-setting still points at is bridged via a `config/redirects.json` entry, not
-`redirect_from` frontmatter (which has no practical build-time effect on its
-own).
+Output: `learn-<lang>.mdx` at the repo root, one per language, `hidden: true` (reachable by direct URL,
+excluded from the sidebar and from Mintlify's own `sitemap.xml`/search indexing; see
+contribute/markdown-guide/metadata.mdx). Body is raw `<a href='URL'>URL</a><br />` lines, matching the
+legacy DocFx pipeline's own output format verbatim (confirmed against the live production `learn-en.html`)
+rather than a markdown list, since whatever reads this file may depend on that exact shape, not just on the
+links existing somewhere on the page. The old DocFx-era `/learn-<lang>.html` URL Userflow's dashboard
+setting still points at is bridged via a `config/redirects.json` entry, not `redirect_from` frontmatter
+(which has no practical build-time effect on its own).
 
 Usage:
     python tools/build-learn-sitemaps.py            # audit, no writes
@@ -91,14 +78,14 @@ def list_content_files():
 
 
 def is_snippet(rel_path):
-    """Snippets are MDX-import-only fragments -- never served at their own
+    """Snippets are MDX-import-only fragments, never served at their own
     URL, so they must never be treated as a real page (see #393)."""
     segments = rel_path.split("/")
     return "snippets" in segments[:-1]
 
 
 def url_path_for(rel_path):
-    """Mintlify uses the bare repo-relative path (no extension) as the URL --
+    """Mintlify uses the bare repo-relative path (no extension) as the URL,
     confirmed via config/nav-*.json, which lists page paths this way,
     including a literal trailing `/index` (not collapsed to a directory
     root)."""
@@ -204,7 +191,7 @@ def main():
 
         print(f"{lang}: {len(pages)} page(s) for learn-{lang}.mdx")
         if missing_from_nav:
-            print(f"  NOT FOUND in relevant nav tree ({len(missing_from_nav)}) -- still included, flagged for review:")
+            print(f"  NOT FOUND in relevant nav tree ({len(missing_from_nav)}), still included, flagged for review:")
             for m in missing_from_nav:
                 print(f"    {m}")
 
@@ -221,10 +208,10 @@ def main():
             ]
             for rel_path in pages:
                 url = f"{CANONICAL_BASE}/{url_path_for(rel_path)}"
-                # The anchor text is a JSX expression (a quoted JS string), not literal
-                # MDX child text -- otherwise Mintlify's remark autolinker recognizes the
-                # bare URL in the text and wraps it in its own nested <a>, corrupting the
-                # markup (confirmed live: 720 links rendered as 1,440 nested anchors).
+                # The anchor text is a JSX expression (a quoted JS string), not literal MDX child text;
+                # otherwise Mintlify's remark autolinker recognizes the bare URL in the text and wraps it
+                # in its own nested <a>, corrupting the markup (confirmed live: 720 links rendered as
+                # 1,440 nested anchors).
                 lines.append(f"<a href='{url}'>{{'{url}'}}</a><br />")
             out_path = REPO_ROOT / f"learn-{lang}.mdx"
             out_path.write_text("\n".join(lines) + "\n", encoding="utf-8")

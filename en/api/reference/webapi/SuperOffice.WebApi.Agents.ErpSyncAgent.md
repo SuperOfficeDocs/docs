@@ -1,6 +1,6 @@
 # Class ErpSyncAgent {#SuperOffice_WebApi_Agents_ErpSyncAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Services for the ERP Integration Services feature
@@ -14,41 +14,41 @@ public class ErpSyncAgent : AgentBase, IErpSyncAgent, IAgentBase, IDisposable
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AgentBase](SuperOffice.WebApi.Agents.AgentBase.md) ← 
-[ErpSyncAgent](SuperOffice.WebApi.Agents.ErpSyncAgent.md)
+[AgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase) ← 
+[ErpSyncAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ErpSyncAgent)
 
 #### Implements
 
-[IErpSyncAgent](SuperOffice.WebApi.Agents.IErpSyncAgent.md), 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IErpSyncAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IErpSyncAgent), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 #### Inherited Members
 
-[AgentBase.\_json](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_json), 
-[AgentBase.\_binary](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_binary), 
-[AgentBase.\_config](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_config), 
-[AgentBase.\_client](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_client), 
-[AgentBase.\_disposeClient](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_disposeClient), 
-[AgentBase.Merge\(RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Merge\_SuperOffice\_WebApi\_RequestOptions\_), 
-[AgentBase.BuildRequestFromObject\(HttpMethod, string, object, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_BuildRequestFromObject\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
-[AgentBase.BuildRequestFromStream\(HttpMethod, string, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_BuildRequestFromStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
-[AgentBase.BuildRequestFromObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_BuildRequestFromObjectWithStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
-[AgentBase.ParseAuthorization\(IAuthorization\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseAuthorization\_SuperOffice\_WebApi\_Authorization\_IAuthorization\_), 
-[AgentBase.CancelRequest\(\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_CancelRequest), 
-[AgentBase.SendRequestObject\(HttpMethod, string, object, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequestObject\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
-[AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequestObjectWithStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
-[AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequest\_System\_Net\_Http\_HttpRequestMessage\_SuperOffice\_WebApi\_RequestOptions\_), 
-[AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ThrowOnResponseErrorAsync\_System\_Net\_Http\_HttpRequestMessage\_System\_Net\_Http\_HttpResponseMessage\_), 
-[AgentBase.ParseResponse&lt;T\&gt;\(HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseResponse\_\_1\_System\_Net\_Http\_HttpResponseMessage\_), 
-[AgentBase.Finally\(RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Finally\_SuperOffice\_WebApi\_RequestOptions\_), 
-[AgentBase.Dispose\(\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Dispose), 
-[AgentBase.Configuration](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Configuration), 
-[AgentBase.Client](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Client), 
-[AgentBase.HasRunningRequest](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_HasRunningRequest), 
-[AgentBase.ClientCancellationTokenSource](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ClientCancellationTokenSource), 
-[AgentBase.ProgressListener](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ProgressListener), 
-[AgentBase.UploadProgressListener](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_UploadProgressListener), 
+[AgentBase.\_json](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__json), 
+[AgentBase.\_binary](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__binary), 
+[AgentBase.\_config](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__config), 
+[AgentBase.\_client](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__client), 
+[AgentBase.\_disposeClient](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__disposeClient), 
+[AgentBase.Merge\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Merge_SuperOffice_WebApi_RequestOptions_), 
+[AgentBase.BuildRequestFromObject\(HttpMethod, string, object, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_), 
+[AgentBase.BuildRequestFromStream\(HttpMethod, string, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromStream_System_Net_Http_HttpMethod_System_String_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
+[AgentBase.BuildRequestFromObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
+[AgentBase.ParseAuthorization\(IAuthorization\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseAuthorization_SuperOffice_WebApi_Authorization_IAuthorization_), 
+[AgentBase.CancelRequest\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_CancelRequest), 
+[AgentBase.SendRequestObject\(HttpMethod, string, object, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_), 
+[AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
+[AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequest_System_Net_Http_HttpRequestMessage_SuperOffice_WebApi_RequestOptions_), 
+[AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ThrowOnResponseErrorAsync_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpResponseMessage_), 
+[AgentBase.ParseResponse&lt;T\&gt;\(HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseResponse__1_System_Net_Http_HttpResponseMessage_), 
+[AgentBase.Finally\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Finally_SuperOffice_WebApi_RequestOptions_), 
+[AgentBase.Dispose\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Dispose), 
+[AgentBase.Configuration](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Configuration), 
+[AgentBase.Client](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Client), 
+[AgentBase.HasRunningRequest](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_HasRunningRequest), 
+[AgentBase.ClientCancellationTokenSource](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ClientCancellationTokenSource), 
+[AgentBase.ProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ProgressListener), 
+[AgentBase.UploadProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_UploadProgressListener), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -95,7 +95,7 @@ public ErpSyncAgent(WebApiOptions options, HttpClient httpClient = null)
 
 #### Parameters
 
-`options` [WebApiOptions](SuperOffice.WebApi.WebApiOptions.md)
+`options` [WebApiOptions](/en/api/reference/webapi/SuperOffice.WebApi.WebApiOptions)
 
 Base URL and authentication values.
 
@@ -125,11 +125,11 @@ The ERP connection ID
 
 The ID of the CRM entity to connect to
 
-`crmActorType` [CrmActorType](SuperOffice.WebApi.Data.CrmActorType.md)
+`crmActorType` [CrmActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.CrmActorType)
 
 Identifies the CRM actor type corresponding to this CRM entity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -155,13 +155,13 @@ public Task<ErpSyncResponseCode> CanDeleteErpSyncConnectorEntityAsync(int erpSyn
 
 The ID of the ErpSync connector to check if can be deleted
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncResponseCode](SuperOffice.WebApi.Data.ErpSyncResponseCode.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncResponseCode](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncResponseCode)\&gt;
 
 Enum response says ok or what is wrong
 
@@ -181,7 +181,7 @@ public Task ChangeEngineIntervalAsync(TimeSpan interval, RequestOptions requestO
 
 The run interval for the engine
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -205,13 +205,13 @@ public Task<ErpSyncEngineStatus> ChangeEngineStatusAsync(bool run, RequestOption
 
 If true, then start the engine; otherwise stop it (requests to the Batch system, may not be immediately reflected)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncEngineStatus](SuperOffice.WebApi.Data.ErpSyncEngineStatus.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncEngineStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncEngineStatus)\&gt;
 
 The current status of the engine
 
@@ -235,21 +235,21 @@ ErpConnectionId
 
 CrmRecordId
 
-`crmActorType` [CrmActorType](SuperOffice.WebApi.Data.CrmActorType.md)
+`crmActorType` [CrmActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.CrmActorType)
 
 The Crm Actor type
 
 `erpKey` [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-`erpActorType` [ErpActorType](SuperOffice.WebApi.Data.ErpActorType.md)
+`erpActorType` [ErpActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpActorType)
 
 The Erp Actor type
 
-`fieldValues` [ErpSyncFieldValue](SuperOffice.WebApi.Data.ErpSyncFieldValue.md)\[\]
+`fieldValues` [ErpSyncFieldValue](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncFieldValue)\[\]
 
 The Crm Fields
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -277,7 +277,7 @@ The ERP connection ID
 
 The ID of the CRM entity to connect to
 
-`crmActorType` [CrmActorType](SuperOffice.WebApi.Data.CrmActorType.md)
+`crmActorType` [CrmActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.CrmActorType)
 
 Identifies the CRM actor type corresponding to this CRM entity
 
@@ -285,11 +285,11 @@ Identifies the CRM actor type corresponding to this CRM entity
 
 The ERP entity identifier
 
-`erpActorType` [ErpActorType](SuperOffice.WebApi.Data.ErpActorType.md)
+`erpActorType` [ErpActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpActorType)
 
 The ERP actor type
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -310,13 +310,13 @@ public Task<ErpSyncConnectorEntity> CreateDefaultErpSyncConnectorEntityAsync(Req
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncConnectorEntity](SuperOffice.WebApi.Data.ErpSyncConnectorEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncConnectorEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncConnectorEntity)\&gt;
 
 A blank ErpSyncConnectorEntity
 
@@ -340,19 +340,19 @@ The connection ID
 
 The ID of the CRM entity to create an ERP actor from
 
-`erpActorType` [ErpActorType](SuperOffice.WebApi.Data.ErpActorType.md)
+`erpActorType` [ErpActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpActorType)
 
 The ERP actor type
 
-`crmActorType` [CrmActorType](SuperOffice.WebApi.Data.CrmActorType.md)
+`crmActorType` [CrmActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.CrmActorType)
 
 The CRM actor type
 
-`erpFieldKeyValues` [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+`erpFieldKeyValues` [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 A map of matching erp field keys and values to set for the new erp entity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -378,7 +378,7 @@ public Task DeleteConnectionAsync(int erpConnectionId, RequestOptions requestOpt
 
 Primary key of the connection
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -404,7 +404,7 @@ public Task DeleteErpSyncConnectorEntityAsync(int erpSyncConnectorEntityId, Requ
 
 The identity of the ErpSyncConnectorEntity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -432,13 +432,13 @@ If positive, resync from the given erp connection
 
 The internal keys of the entities to resync, or empty to resync all
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](SuperOffice.WebApi.Data.PluginResponse.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](/en/api/reference/webapi/SuperOffice.WebApi.Data.PluginResponse)\&gt;
 
 The response
 
@@ -462,7 +462,7 @@ If positive, resync from the given erp connection
 
 The internal keys of the entities to resync, or empty to resync all
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -486,7 +486,7 @@ public Task<PluginResponse> ForceResyncExternalAsync(int erpConnectionId, ErpAct
 
 Resync from the given erp connection
 
-`erpActorType` [ErpActorType](SuperOffice.WebApi.Data.ErpActorType.md)
+`erpActorType` [ErpActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpActorType)
 
 Which actor type the external keys are associated with
 
@@ -494,13 +494,13 @@ Which actor type the external keys are associated with
 
 The internal keys of the entities to resync, or empty to resync all
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](SuperOffice.WebApi.Data.PluginResponse.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](/en/api/reference/webapi/SuperOffice.WebApi.Data.PluginResponse)\&gt;
 
 The response
 
@@ -520,7 +520,7 @@ public Task<PluginResponse> ForceResyncExternalNoBlankValuesAsync(int erpConnect
 
 Resync from the given erp connection
 
-`erpActorType` [ErpActorType](SuperOffice.WebApi.Data.ErpActorType.md)
+`erpActorType` [ErpActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpActorType)
 
 Which actor type the external keys are associated with
 
@@ -528,13 +528,13 @@ Which actor type the external keys are associated with
 
 The internal keys of the entities to resync, or empty to resync all
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](SuperOffice.WebApi.Data.PluginResponse.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](/en/api/reference/webapi/SuperOffice.WebApi.Data.PluginResponse)\&gt;
 
 The response
 
@@ -558,13 +558,13 @@ If positive, resync from the given erp connection
 
 The internal keys of the entities to resync, or empty to resync all
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](SuperOffice.WebApi.Data.PluginResponse.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](/en/api/reference/webapi/SuperOffice.WebApi.Data.PluginResponse)\&gt;
 
 The response
 
@@ -580,13 +580,13 @@ public Task<PluginResponse> ForceSyncAllAsync(RequestOptions requestOptions = nu
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](SuperOffice.WebApi.Data.PluginResponse.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](/en/api/reference/webapi/SuperOffice.WebApi.Data.PluginResponse)\&gt;
 
 The response
 
@@ -606,17 +606,17 @@ public Task<ErpSyncActorTypeMapping> GetActorTypeMappingAsync(int erpConnectionI
 
 The ERP connection ID
 
-`actorType` [ErpActorType](SuperOffice.WebApi.Data.ErpActorType.md)
+`actorType` [ErpActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpActorType)
 
 The actor type
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncActorTypeMapping](SuperOffice.WebApi.Data.ErpSyncActorTypeMapping.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncActorTypeMapping](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncActorTypeMapping)\&gt;
 
 The current mapping from the database
 
@@ -636,13 +636,13 @@ public Task<ErpConnection[]> GetAllConnectionsAsync(bool includeDeleted, Request
 
 Include deleted connections in the result?
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpConnection](SuperOffice.WebApi.Data.ErpConnection.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpConnection](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpConnection)\[\]\&gt;
 
 The connection id, name, description
 
@@ -658,13 +658,13 @@ public Task<ListItem[]> GetAllConnectorsAsync(RequestOptions requestOptions = nu
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ListItem](SuperOffice.WebApi.Data.ListItem.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItem)\[\]\&gt;
 
 The connector id, name, url
 
@@ -684,13 +684,13 @@ public Task<FieldMetadata[]> GetConfigurationFieldsAsync(int erpConnectorId, Req
 
 The id of the erp connector
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FieldMetadata](SuperOffice.WebApi.Data.FieldMetadata.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FieldMetadata](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldMetadata)\[\]\&gt;
 
 The fields
 
@@ -710,13 +710,13 @@ public Task<ErpConnection> GetConnectionAsync(int erpConnectionId, RequestOption
 
 Primary key of the connection
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpConnection](SuperOffice.WebApi.Data.ErpConnection.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpConnection](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpConnection)\&gt;
 
 The connection
 
@@ -736,13 +736,13 @@ public Task<ErpConnectionListMappingContainer> GetConnectionListMappingsAsync(in
 
 Primary key of the connection
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpConnectionListMappingContainer](SuperOffice.WebApi.Data.ErpConnectionListMappingContainer.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpConnectionListMappingContainer](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpConnectionListMappingContainer)\&gt;
 
 The listmappings
 
@@ -758,7 +758,7 @@ public Task<ErpConnectionData[]> GetConnectionsAndDisplayFieldsAsync(CrmActorTyp
 
 #### Parameters
 
-`crmActorType` [CrmActorType](SuperOffice.WebApi.Data.CrmActorType.md)
+`crmActorType` [CrmActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.CrmActorType)
 
 The type of the CRM entity
 
@@ -766,13 +766,13 @@ The type of the CRM entity
 
 The id of the entity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpConnectionData](SuperOffice.WebApi.Data.ErpConnectionData.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpConnectionData](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpConnectionData)\[\]\&gt;
 
 An array of ErpConnectionData carriers
 
@@ -792,17 +792,17 @@ public Task<CrmActorType> GetCrmActorTypeAsync(int erpConnectionId, ErpActorType
 
 The ERP connection ID
 
-`erpActorType` [ErpActorType](SuperOffice.WebApi.Data.ErpActorType.md)
+`erpActorType` [ErpActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpActorType)
 
 The ERP actor type
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CrmActorType](SuperOffice.WebApi.Data.CrmActorType.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CrmActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.CrmActorType)\&gt;
 
 The CrmActorType
 
@@ -822,13 +822,13 @@ public Task<ErpSyncDefaultValue> GetDefaultValueInfoAsync(int erpFieldId, Reques
 
 The id of the ERP field
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncDefaultValue](SuperOffice.WebApi.Data.ErpSyncDefaultValue.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncDefaultValue](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncDefaultValue)\&gt;
 
 Object with information about default values
 
@@ -844,13 +844,13 @@ public Task<ErpSyncEngineStatus> GetEngineStatusAsync(RequestOptions requestOpti
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncEngineStatus](SuperOffice.WebApi.Data.ErpSyncEngineStatus.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncEngineStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncEngineStatus)\&gt;
 
 The current status of the engine
 
@@ -870,13 +870,13 @@ public Task<StringDictionary> GetErpConnectionConfigFieldsAsync(int erpConnectio
 
 Primary key of the erp connection
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\&gt;
 
 Config Fields
 
@@ -896,7 +896,7 @@ public Task<string[]> GetErpFieldValuesAsync(int erpConnectionId, CrmActorType c
 
 The id of the connection
 
-`crmActorType` [CrmActorType](SuperOffice.WebApi.Data.CrmActorType.md)
+`crmActorType` [CrmActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.CrmActorType)
 
 The type of the CRM entity
 
@@ -908,7 +908,7 @@ The id of the entity
 
 The fields for which you want to get the values
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -934,13 +934,13 @@ public Task<ErpSyncConnectionSummary> GetErpSyncConnectionSummaryAsync(int erpSy
 
 The ID of the ErpSync connection for which information is sought
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncConnectionSummary](SuperOffice.WebApi.Data.ErpSyncConnectionSummary.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncConnectionSummary](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncConnectionSummary)\&gt;
 
 Summary of connection information, and one summary element per configured actor type
 
@@ -960,13 +960,13 @@ public Task<ErpSyncConnectorEntity> GetErpSyncConnectorEntityAsync(int erpSyncCo
 
 The identifier of the ErpSyncConnectorEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncConnectorEntity](SuperOffice.WebApi.Data.ErpSyncConnectorEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncConnectorEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncConnectorEntity)\&gt;
 
 ErpSyncConnectorEntity
 
@@ -986,17 +986,17 @@ public Task<ErpSyncFieldValue[]> GetFieldValuesFromCrmAsync(int recordId, CrmAct
 
 The id of the CRM entity
 
-`actorTypeCrm` [CrmActorType](SuperOffice.WebApi.Data.CrmActorType.md)
+`actorTypeCrm` [CrmActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.CrmActorType)
 
 CRM Actor type
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncFieldValue](SuperOffice.WebApi.Data.ErpSyncFieldValue.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncFieldValue](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncFieldValue)\[\]\&gt;
 
 The Crm Fields
 
@@ -1016,7 +1016,7 @@ public Task<ErpSyncFieldValue[]> GetFieldValuesFromErpAsync(int erpConnectionId,
 
 Erp connection id
 
-`actorTypeErp` [ErpActorType](SuperOffice.WebApi.Data.ErpActorType.md)
+`actorTypeErp` [ErpActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpActorType)
 
 ERP Actor type
 
@@ -1024,13 +1024,13 @@ ERP Actor type
 
 Primary key for the erp actor
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncFieldValue](SuperOffice.WebApi.Data.ErpSyncFieldValue.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncFieldValue](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncFieldValue)\[\]\&gt;
 
 The Erp Fields
 
@@ -1050,17 +1050,17 @@ public Task<FieldMetadata[]> GetFieldsForNewErpActorAsync(int erpConnectionId, E
 
 The id of the connection
 
-`erpActorType` [ErpActorType](SuperOffice.WebApi.Data.ErpActorType.md)
+`erpActorType` [ErpActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpActorType)
 
 The type of the ERP actor to create
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FieldMetadata](SuperOffice.WebApi.Data.FieldMetadata.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FieldMetadata](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldMetadata)\[\]\&gt;
 
 The fields that are required for the new ERP actor
 
@@ -1088,11 +1088,11 @@ Positive value to increase rank, negative to decrease.
 
 The id of the connection
 
-`erpActorType` [ErpActorType](SuperOffice.WebApi.Data.ErpActorType.md)
+`erpActorType` [ErpActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpActorType)
 
 The actor type for which we want to rank fields
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1112,17 +1112,17 @@ public Task<ErpSyncActorTypeMapping> SaveActorTypeMappingAsync(ErpSyncActorTypeM
 
 #### Parameters
 
-`mapping` [ErpSyncActorTypeMapping](SuperOffice.WebApi.Data.ErpSyncActorTypeMapping.md)
+`mapping` [ErpSyncActorTypeMapping](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncActorTypeMapping)
 
 The mapping to be saved; new mapping rows will be created in the database if needed
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncActorTypeMapping](SuperOffice.WebApi.Data.ErpSyncActorTypeMapping.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncActorTypeMapping](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncActorTypeMapping)\&gt;
 
 The current mapping from the database
 
@@ -1138,17 +1138,17 @@ public Task<ErpConnection> SaveConnectionAsync(ErpConnection connection, Request
 
 #### Parameters
 
-`connection` [ErpConnection](SuperOffice.WebApi.Data.ErpConnection.md)
+`connection` [ErpConnection](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpConnection)
 
 The connection to save.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpConnection](SuperOffice.WebApi.Data.ErpConnection.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpConnection](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpConnection)\&gt;
 
 The resulting connection.
 
@@ -1164,17 +1164,17 @@ public Task<ErpConnectionListMappingContainer> SaveConnectionListMappingsAsync(E
 
 #### Parameters
 
-`listMapping` [ErpConnectionListMappingContainer](SuperOffice.WebApi.Data.ErpConnectionListMappingContainer.md)
+`listMapping` [ErpConnectionListMappingContainer](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpConnectionListMappingContainer)
 
 The list item mappings to save.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpConnectionListMappingContainer](SuperOffice.WebApi.Data.ErpConnectionListMappingContainer.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpConnectionListMappingContainer](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpConnectionListMappingContainer)\&gt;
 
 The saved list mappings.
 
@@ -1190,17 +1190,17 @@ public Task<ErpSyncDefaultValue> SaveDefaultValueInfoAsync(ErpSyncDefaultValue e
 
 #### Parameters
 
-`erpSyncDefaultValue` [ErpSyncDefaultValue](SuperOffice.WebApi.Data.ErpSyncDefaultValue.md)
+`erpSyncDefaultValue` [ErpSyncDefaultValue](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncDefaultValue)
 
 The id of the ERPfield to save
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncDefaultValue](SuperOffice.WebApi.Data.ErpSyncDefaultValue.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncDefaultValue](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncDefaultValue)\&gt;
 
 The newly saved ErpSyncDefaultValue
 
@@ -1220,7 +1220,7 @@ public Task<bool> SaveErpConnectionSyncPrioritiesAsync(int[] erpConnectionIds, R
 
 The id put in array in the same order as the priorities
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1242,17 +1242,17 @@ public Task<ErpSyncConnectorEntity> SaveErpSyncConnectorEntityAsync(ErpSyncConne
 
 #### Parameters
 
-`erpSyncConnectorEntity` [ErpSyncConnectorEntity](SuperOffice.WebApi.Data.ErpSyncConnectorEntity.md)
+`erpSyncConnectorEntity` [ErpSyncConnectorEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncConnectorEntity)
 
 The ErpSyncConnectorEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncConnectorEntity](SuperOffice.WebApi.Data.ErpSyncConnectorEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncConnectorEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncConnectorEntity)\&gt;
 
 New or updated ErpSyncConnectorEntity
 
@@ -1272,11 +1272,11 @@ public Task<bool> SupportsAdvancedSearchAsync(int erpConnectionId, ErpActorType 
 
 Ths id of the connection
 
-`erpActorType` [ErpActorType](SuperOffice.WebApi.Data.ErpActorType.md)
+`erpActorType` [ErpActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpActorType)
 
 The erp actor type to check for
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1298,13 +1298,13 @@ public Task<PluginResponse> SyncAllAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](SuperOffice.WebApi.Data.PluginResponse.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PluginResponse](/en/api/reference/webapi/SuperOffice.WebApi.Data.PluginResponse)\&gt;
 
 The response
 
@@ -1324,11 +1324,11 @@ public Task<bool> TestConnectionByConfigAsync(int erpConnectionId, StringDiction
 
 The id of the connector we try to connect to
 
-`configFields` [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+`configFields` [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 The config fields used to test connection
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1354,7 +1354,7 @@ public Task<bool> TestConnectionByIdAsync(int erpConnectionId, RequestOptions re
 
 The id of the connection
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1380,13 +1380,13 @@ public Task<ErpSyncResponseCode> TestConnectorUrlAsync(string url, RequestOption
 
 The url to test connection on
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncResponseCode](SuperOffice.WebApi.Data.ErpSyncResponseCode.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ErpSyncResponseCode](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncResponseCode)\&gt;
 
 Enum response says ok or what is wrong
 
@@ -1406,7 +1406,7 @@ public Task<string[]> ToggleErpConnectionActiveAsync(int erpConnectionId, Reques
 
 Primary key of the erp connection
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1436,21 +1436,21 @@ ErpConnectionId
 
 CrmRecordId
 
-`crmActorType` [CrmActorType](SuperOffice.WebApi.Data.CrmActorType.md)
+`crmActorType` [CrmActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.CrmActorType)
 
 The Crm Actor type
 
 `erpKey` [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-`erpActorType` [ErpActorType](SuperOffice.WebApi.Data.ErpActorType.md)
+`erpActorType` [ErpActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpActorType)
 
 The Erp Actor type
 
-`fieldValues` [ErpSyncFieldValue](SuperOffice.WebApi.Data.ErpSyncFieldValue.md)\[\]
+`fieldValues` [ErpSyncFieldValue](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncFieldValue)\[\]
 
 The Crm Fields
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1474,7 +1474,7 @@ public Task<bool> UpdateConnectionFieldsAsync(int erpConnectionId, RequestOption
 
 The ERP connection ID
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1504,7 +1504,7 @@ GUI name used in archive control config
 
 The ERP connection ID
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 

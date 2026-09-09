@@ -31,7 +31,7 @@ Initializes a new instance of the NSStatusMonitor class.
 Integer GetDefaultTask()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Default task type for this status.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Default task type for this status.
 
 <Note>
 The default task text is in the text table (since it can be long), and may contain template variables
@@ -50,7 +50,7 @@ Integer defaultTask = thing.GetDefaultTask();
 String GetDefaultTaskText()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Default task text for this status.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Default task text for this status.
 
 **Example:**
 
@@ -65,7 +65,7 @@ String defaultTaskText = thing.GetDefaultTaskText();
 Bool GetDeleted()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Deleted flag, 1 if this record is deleted (never from the database).
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Deleted flag, 1 if this record is deleted (never from the database).
 
 **Example:**
 
@@ -80,7 +80,7 @@ Bool deleted = thing.GetDeleted();
 String GetDescription()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Description of the status monitor.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Description of the status monitor.
 
 **Example:**
 
@@ -95,7 +95,7 @@ String description = thing.GetDescription();
 DateTime GetGenerationStart()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When was the last regeneration started.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - When was the last regeneration started.
 
 **Example:**
 
@@ -110,7 +110,7 @@ DateTime generationStart = thing.GetGenerationStart();
 Bool GetIsVisual()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Should the status be visualized (active) in the client.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Should the status be visualized (active) in the client.
 
 **Example:**
 
@@ -125,7 +125,7 @@ Bool isVisual = thing.GetIsVisual();
 DateTime GetLastGenerated()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When was this status last generated (i.e., statusValue rows created).
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - When was this status last generated (i.e., statusValue rows created).
 
 **Example:**
 
@@ -140,7 +140,7 @@ DateTime lastGenerated = thing.GetLastGenerated();
 String GetName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of status monitor.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Name of status monitor.
 
 **Example:**
 
@@ -155,7 +155,7 @@ String name = thing.GetName();
 Bool GetNeedsUpdate()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is the definition dirty, ie., ALL values are invalid until a recalculation; this flag is set when the status DEFINITION is changed, as opposed to the flag on StatusValue.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Is the definition dirty, ie., ALL values are invalid until a recalculation; this flag is set when the status DEFINITION is changed, as opposed to the flag on StatusValue.
 
 **Example:**
 
@@ -170,7 +170,7 @@ Bool needsUpdate = thing.GetNeedsUpdate();
 Integer GetNumMatches()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of targets that have this status, this should be the number of rows in StatusValue pointing to this definition, and that have isSignalled set to 1
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Number of targets that have this status, this should be the number of rows in StatusValue pointing to this definition, and that have isSignalled set to 1
 
 **Example:**
 
@@ -185,7 +185,7 @@ Integer numMatches = thing.GetNumMatches();
 Integer GetNumNeedUpdate()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of targets that had this status, but have their needsUpdate bit set due to some change.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Number of targets that had this status, but have their needsUpdate bit set due to some change.
 
 **Example:**
 
@@ -200,7 +200,7 @@ Integer numNeedUpdate = thing.GetNumNeedUpdate();
 Integer GetOwnerTable()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of table that owns the status monitor.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - ID of table that owns the status monitor.
 
 **Example:**
 
@@ -215,7 +215,7 @@ Integer ownerTable = thing.GetOwnerTable();
 Integer GetPictureId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of BinaryObject row that contains image for status monitor.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - ID of BinaryObject row that contains image for status monitor.
 
 **Example:**
 
@@ -230,7 +230,7 @@ Integer pictureId = thing.GetPictureId();
 Integer GetRank()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Priority rank, in case more than one status is signalled. Lowest wins.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Priority rank, in case more than one status is signalled. Lowest wins.
 
 **Example:**
 
@@ -245,7 +245,7 @@ Integer rank = thing.GetRank();
 Integer GetStatusMonitorId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Primary key.
 
 **Example:**
 
@@ -260,7 +260,7 @@ Integer statusMonitorId = thing.GetStatusMonitorId();
 Void SetDefaultTask(Integer defaultTask)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 The default task text is in the text table (since it can be long), and may contain template variables
@@ -280,7 +280,7 @@ thing.SetDefaultTask(defaultTask);
 Void SetDefaultTaskText(String defaultTaskText)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -296,7 +296,7 @@ thing.SetDefaultTaskText(defaultTaskText);
 Void SetDeleted(Bool deleted)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -312,7 +312,7 @@ thing.SetDeleted(deleted);
 Void SetDescription(String description)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -328,7 +328,7 @@ thing.SetDescription(description);
 Void SetGenerationStart(DateTime generationStart)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -344,7 +344,7 @@ thing.SetGenerationStart(generationStart);
 Void SetIsVisual(Bool isVisual)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -360,7 +360,7 @@ thing.SetIsVisual(isVisual);
 Void SetLastGenerated(DateTime lastGenerated)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -376,7 +376,7 @@ thing.SetLastGenerated(lastGenerated);
 Void SetName(String name)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -392,7 +392,7 @@ thing.SetName(name);
 Void SetNeedsUpdate(Bool needsUpdate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -408,7 +408,7 @@ thing.SetNeedsUpdate(needsUpdate);
 Void SetNumMatches(Integer numMatches)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -424,7 +424,7 @@ thing.SetNumMatches(numMatches);
 Void SetNumNeedUpdate(Integer numNeedUpdate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -440,7 +440,7 @@ thing.SetNumNeedUpdate(numNeedUpdate);
 Void SetOwnerTable(Integer ownerTable)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -456,7 +456,7 @@ thing.SetOwnerTable(ownerTable);
 Void SetPictureId(Integer pictureId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -472,7 +472,7 @@ thing.SetPictureId(pictureId);
 Void SetRank(Integer rank)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -488,7 +488,7 @@ thing.SetRank(rank);
 Void SetStatusMonitorId(Integer statusMonitorId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

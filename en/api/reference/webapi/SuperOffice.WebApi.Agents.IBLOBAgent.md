@@ -1,6 +1,6 @@
 # Interface IBLOBAgent {#SuperOffice_WebApi_Agents_IBLOBAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Collection of all services that works with binary objects (BLOBS), e.g. Images and documents.
@@ -11,7 +11,7 @@ public interface IBLOBAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -34,7 +34,7 @@ The Contact the image is linked to
 
 The Binary object id. If the Binary object id is 0, any image link is removed from the Contact.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -58,7 +58,7 @@ The person the image is linked to
 
 The Binary object id. If the Binary object id is 0, any image link is removed from the person.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -82,7 +82,7 @@ The product the image is linked to
 
 The Binary object id. If the Binary object id is 0, any image link is removed from the product.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -108,7 +108,7 @@ The project the image is linked to
 
 The Binary object id. If the Binary object id is 0, any image link is removed from the project.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -130,7 +130,7 @@ Task CleanupBatchTaskAsync(int batchTaskId, RequestOptions requestOptions = null
 
 The ID of the batchtask that created the output data
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -149,13 +149,13 @@ Task<BlobEntity> CreateDefaultBlobEntityAsync(RequestOptions requestOptions = nu
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BlobEntity](SuperOffice.WebApi.Data.BlobEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BlobEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.BlobEntity)\&gt;
 
 A blank BlobEntity
 
@@ -173,7 +173,7 @@ Task DeleteBlobEntityAsync(int blobEntityId, RequestOptions requestOptions = nul
 
 The identity of the BlobEntity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -195,13 +195,13 @@ Task<BlobEntity> GetBlobEntityAsync(int blobEntityId, RequestOptions requestOpti
 
 The identifier of the BlobEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BlobEntity](SuperOffice.WebApi.Data.BlobEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BlobEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.BlobEntity)\&gt;
 
 BlobEntity
 
@@ -219,13 +219,13 @@ Task<BlobEntity> GetBlobEntityOnContactAsync(int contactId, RequestOptions reque
 
 The Contact id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BlobEntity](SuperOffice.WebApi.Data.BlobEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BlobEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.BlobEntity)\&gt;
 
 BlobEntity object
 
@@ -243,13 +243,13 @@ Task<BlobEntity> GetBlobEntityOnCountryAsync(int countryId, RequestOptions reque
 
 The country id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BlobEntity](SuperOffice.WebApi.Data.BlobEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BlobEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.BlobEntity)\&gt;
 
 BlobEntity object
 
@@ -267,13 +267,13 @@ Task<BlobEntity> GetBlobEntityOnPersonAsync(int personId, RequestOptions request
 
 The person id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BlobEntity](SuperOffice.WebApi.Data.BlobEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BlobEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.BlobEntity)\&gt;
 
 BlobEntity object
 
@@ -291,13 +291,13 @@ Task<BlobEntity> GetBlobEntityOnProductAsync(int productId, RequestOptions reque
 
 The product id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BlobEntity](SuperOffice.WebApi.Data.BlobEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BlobEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.BlobEntity)\&gt;
 
 BlobEntity object
 
@@ -315,13 +315,13 @@ Task<BlobEntity> GetBlobEntityOnProjectAsync(int projectId, RequestOptions reque
 
 The project id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BlobEntity](SuperOffice.WebApi.Data.BlobEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BlobEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.BlobEntity)\&gt;
 
 BlobEntity object
 
@@ -343,7 +343,7 @@ The ID of the BLOB entity object that refers to the binary data
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -379,7 +379,7 @@ The maximum height of the returned image. Specify &lt;= 0 to preserve aspect rat
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -407,7 +407,7 @@ The contact id of the contact the image belongs to.
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -443,7 +443,7 @@ The maximum height of the returned image. Specify &lt;= 0 to preserve aspect rat
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -471,7 +471,7 @@ The ID of the batchtask that created the output data
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -499,7 +499,7 @@ The person id of the person the image belongs to.
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -535,7 +535,7 @@ The maximum height of the returned image. Specify &lt;= 0 to preserve aspect rat
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -563,7 +563,7 @@ The product id of the product the image belongs to.
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -591,7 +591,7 @@ The product id of the product the thumbnail belongs to.
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -619,7 +619,7 @@ The project id of the project the image belongs to.
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -655,7 +655,7 @@ The maximum height of the returned image. Specify &lt;= 0 to preserve aspect rat
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -683,7 +683,7 @@ The product id of the quoteline the image belongs to.
 
 Accept content-type. Default "application/octet-stream". Could also be "application/pdf", "text/plain", "text/html", or "multipart/related"
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -703,17 +703,17 @@ Task<BlobEntity> SaveBlobEntityAsync(BlobEntity blobEntity, RequestOptions reque
 
 #### Parameters
 
-`blobEntity` [BlobEntity](SuperOffice.WebApi.Data.BlobEntity.md)
+`blobEntity` [BlobEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.BlobEntity)
 
 The BlobEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BlobEntity](SuperOffice.WebApi.Data.BlobEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BlobEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.BlobEntity)\&gt;
 
 New or updated BlobEntity
 
@@ -727,7 +727,7 @@ Task<int> SaveImageStreamAsync(BlobLinkType type, byte[] image, string descripti
 
 #### Parameters
 
-`type` [BlobLinkType](SuperOffice.WebApi.Data.BlobLinkType.md)
+`type` [BlobLinkType](/en/api/reference/webapi/SuperOffice.WebApi.Data.BlobLinkType)
 
 The type of the image.
 
@@ -739,7 +739,7 @@ Image to store.
 
 Image description.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -767,7 +767,7 @@ Image description. Should be image name (e.g. winter.jpg) for project images.
 
 The project image.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -793,7 +793,7 @@ Id of the BLOB entity object that the binary data should be stored to.
 
 The binary object as a Stream
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -819,7 +819,7 @@ The contact id of the contact the image belongs to.
 
 The contact image.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -845,7 +845,7 @@ The person id of the person the image belongs to.
 
 The person image.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -871,7 +871,7 @@ The product id of the product the image belongs to.
 
 The product image, scaled down to no more than 1000x1000.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -897,7 +897,7 @@ The product id of the product the image belongs to.
 
 The product thumbnail, scaled down to no more than 200x200.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -923,7 +923,7 @@ The project id of the project the image belongs to.
 
 The project image.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 

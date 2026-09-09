@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_DeclineInvitationFromEmailItemRequest"></a> Class Appointment\_DeclineInvitationFromEmailItemRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_DeclineInvitationFromEmailItemRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_DeclineInvitationFromEmailItemRequest](SuperOffice.WebApi.Data.Appointment\_DeclineInvitationFromEmailItemRequest.md)
+[Appointment\_DeclineInvitationFromEmailItemRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_DeclineInvitationFromEmailItemRequest)
 
 #### Inherited Members
 

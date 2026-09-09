@@ -130,7 +130,7 @@ items:
   syntax:
     content: NSWorkflowTriggerType GetTriggerType()
     return:
-      type: CRMScript.NetServer.NSWorkflowTriggerType
+      type: CRMScript.NetServer.WorkflowTriggerType
       description: "Trigger type."
 
 - uid: CRMScript.NetServer.NSWorkflowTrigger.SetTriggerType(NSWorkflowTriggerType)
@@ -149,7 +149,7 @@ items:
     content: Void SetTriggerType(NSWorkflowTriggerType triggerType)
     parameters:
     - id: triggerType
-      type: CRMScript.NetServer.NSWorkflowTriggerType
+      type: CRMScript.NetServer.WorkflowTriggerType
       description: "The trigger type to set."
     return:
       type: CRMScript.Global.Void
@@ -218,12 +218,12 @@ references:
   name: Void
   nameWithType: Void
   fullName: CRMScript.Global.Void
-- uid: CRMScript.NetServer.NSWorkflowTriggerType
-  commentId: T:CRMScript.NetServer.NSWorkflowTriggerType
+- uid: CRMScript.NetServer.WorkflowTriggerType
+  commentId: T:CRMScript.NetServer.WorkflowTriggerType
   isExternal: true
   name: NSWorkflowTriggerType
   nameWithType: NSWorkflowTriggerType
-  fullName: CRMScript.NetServer.NSWorkflowTriggerType
+  fullName: CRMScript.NetServer.WorkflowTriggerType
 - uid: CRMScript.NetServer.NSArchiveRestrictionGroup
   commentId: T:CRMScript.NetServer.NSArchiveRestrictionGroup
   isExternal: true

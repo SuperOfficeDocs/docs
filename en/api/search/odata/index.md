@@ -134,7 +134,7 @@ You can fetch [metadata - information about archives][13] to do "reflection" on 
 [13]: /en/api/search/odata/metadata
 [14]: /en/api/search/odata/dynamic-provider
 [15]: /en/api/archive-providers/reference/findsale
-[16]: ../../reference/restful/rest/Archive/index
+[16]: ../../reference/restful/rest/archive/get-archive
 
 [img1]: /media/loc/en/api/search/get-sale.png
 [img2]: /media/loc/en/api/search/find-sale.png

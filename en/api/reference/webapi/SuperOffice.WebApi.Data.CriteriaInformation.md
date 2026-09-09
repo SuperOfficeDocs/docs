@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CriteriaInformation"></a> Class CriteriaInformation
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for CriteriaInformation.
@@ -13,13 +13,13 @@ public class CriteriaInformation : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[CriteriaInformation](SuperOffice.WebApi.Data.CriteriaInformation.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[CriteriaInformation](/en/api/reference/webapi/SuperOffice.WebApi.Data.CriteriaInformation)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -50,7 +50,7 @@ public virtual ArchiveColumnInfo[] CriteriaArchiveColumns { get; set; }
 
 #### Property Value
 
- [ArchiveColumnInfo](SuperOffice.WebApi.Data.ArchiveColumnInfo.md)\[\]
+ [ArchiveColumnInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveColumnInfo)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_CriteriaInformation_CriteriaArchiveRows"></a> CriteriaArchiveRows
 
@@ -62,7 +62,7 @@ public virtual ArchiveListItem[] CriteriaArchiveRows { get; set; }
 
 #### Property Value
 
- [ArchiveListItem](SuperOffice.WebApi.Data.ArchiveListItem.md)\[\]
+ [ArchiveListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveListItem)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_CriteriaInformation_RestrictionGroups"></a> RestrictionGroups
 
@@ -74,7 +74,7 @@ public virtual ArchiveRestrictionGroup[] RestrictionGroups { get; set; }
 
 #### Property Value
 
- [ArchiveRestrictionGroup](SuperOffice.WebApi.Data.ArchiveRestrictionGroup.md)\[\]
+ [ArchiveRestrictionGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionGroup)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_CriteriaInformation_Restrictions"></a> Restrictions
 
@@ -86,9 +86,9 @@ public virtual ArchiveRestrictionInfo[] Restrictions { get; set; }
 
 #### Property Value
 
- [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
+ [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
 
 ## See Also
 
-[FindAgent](SuperOffice.WebApi.Agents.FindAgent.md)
+[FindAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.FindAgent)
 

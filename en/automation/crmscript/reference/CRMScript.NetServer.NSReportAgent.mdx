@@ -33,7 +33,7 @@ Sets default values into a new NSReportEntity.
 NSReportEntity CreateDefaultReportEntity()
 ```
 
-**Returns:** [CRMScript.NetServer.NSReportEntity](CRMScript.NetServer.NSReportEntity)
+**Returns:** [CRMScript.NetServer.NSReportEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSReportEntity)
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
@@ -55,7 +55,7 @@ Sets default values into a new NSReportLabelLayoutEntity.
 NSReportLabelLayoutEntity CreateDefaultReportLabelLayoutEntity()
 ```
 
-**Returns:** [CRMScript.NetServer.NSReportLabelLayoutEntity](CRMScript.NetServer.NSReportLabelLayoutEntity)
+**Returns:** [CRMScript.NetServer.NSReportLabelLayoutEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSReportLabelLayoutEntity)
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
@@ -77,7 +77,7 @@ Creates the report as favorite.
 NSReportEntity CreateFavorite(Integer sourceId, String name, String description)
 ```
 
-**Returns:** [CRMScript.NetServer.NSReportEntity](CRMScript.NetServer.NSReportEntity)
+**Returns:** [CRMScript.NetServer.NSReportEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSReportEntity)
 
 **Example:**
 
@@ -97,7 +97,7 @@ Deletes the report favorite.
 Void DeleteFavorite(Integer reportEntityId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## DeleteReport(Integer)
 
@@ -107,7 +107,7 @@ Deletes the report with the given ID.
 Bool DeleteReport(Integer reportId)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 **Example:**
 
@@ -125,7 +125,7 @@ Deletes the NSReportLabelLayoutEntity
 DeleteReportLabelLayoutEntity(Integer reportLabelLayoutEntity)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -142,7 +142,7 @@ Generates the report in PDF format.
 String GenerateReport(Integer reportId, Integer labelLayoutId, String filename, String language, String fileType, NSArchiveRestrictionInfo[] restrictions)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -165,7 +165,7 @@ Gets an NSReportEntity object.
 NSReportEntity GetReportEntity(Integer reportEntityId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSReportEntity](CRMScript.NetServer.NSReportEntity)
+**Returns:** [CRMScript.NetServer.NSReportEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSReportEntity)
 
 **Example:**
 
@@ -182,7 +182,7 @@ Gets an NSReportLabelLayoutEntity object.
 NSReportLabelLayoutEntity GetReportLabelLayoutEntity(Integer reportLabelLayoutEntityId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSReportLabelLayoutEntity](CRMScript.NetServer.NSReportLabelLayoutEntity)
+**Returns:** [CRMScript.NetServer.NSReportLabelLayoutEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSReportLabelLayoutEntity)
 
 **Example:**
 
@@ -199,7 +199,7 @@ Takes the input stream and create a report. This stream must be on a valid XML f
 Integer ImportReport(String report)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 **Example:**
 
@@ -217,7 +217,7 @@ Updates the existing NSReportEntity or creates a new NSReportEntity if the id pa
 NSReportEntity SaveReportEntity(NSReportEntity reportEntity)
 ```
 
-**Returns:** [CRMScript.NetServer.NSReportEntity](CRMScript.NetServer.NSReportEntity)
+**Returns:** [CRMScript.NetServer.NSReportEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSReportEntity)
 
 **Example:**
 
@@ -235,7 +235,7 @@ Updates the existing NSReportLabelLayoutEntity or creates a new NSReportLabelLay
 NSReportLabelLayoutEntity SaveReportLabelLayoutEntity(NSReportLabelLayoutEntity reportLabelLayoutEntity)
 ```
 
-**Returns:** [CRMScript.NetServer.NSReportLabelLayoutEntity](CRMScript.NetServer.NSReportLabelLayoutEntity) - The new or updated NSReportLabelLayoutEntity.
+**Returns:** [CRMScript.NetServer.NSReportLabelLayoutEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSReportLabelLayoutEntity) - The new or updated NSReportLabelLayoutEntity.
 
 **Example:**
 
@@ -253,7 +253,7 @@ Updates the favorite.
 NSReportEntity UpdateFavorite(NSReportEntity reportEntity)
 ```
 
-**Returns:** [CRMScript.NetServer.NSReportEntity](CRMScript.NetServer.NSReportEntity)
+**Returns:** [CRMScript.NetServer.NSReportEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSReportEntity)
 
 **Example:**
 

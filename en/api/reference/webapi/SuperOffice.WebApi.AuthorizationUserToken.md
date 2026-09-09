@@ -1,6 +1,6 @@
 # Class AuthorizationUserToken {#SuperOffice_WebApi_AuthorizationUserToken}
 
-Namespace: [SuperOffice.WebApi](SuperOffice.WebApi.md)  
+Namespace: [SuperOffice.WebApi](/en/api/reference/webapi/SuperOffice.WebApi)  
 Assembly: SuperOffice.WebApi.dll  
 
 Username and password are used to get an access token from given username and password
@@ -14,7 +14,7 @@ public class AuthorizationUserToken : IAuthorization
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AuthorizationUserToken](SuperOffice.WebApi.AuthorizationUserToken.md)
+[AuthorizationUserToken](/en/api/reference/webapi/SuperOffice.WebApi.AuthorizationUserToken)
 
 #### Implements
 
@@ -63,7 +63,7 @@ Optional access token. Should be a 8A: style bearer token, same as what UserAgen
 
 ### RefreshAuthorizationAsync {#SuperOffice_WebApi_AuthorizationUserToken_RefreshAuthorizationAsync}
 
-Try to refresh this &lt;xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instance.
+Try to refresh this [IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization) instance.
 
 ```csharp
 public Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync { get; set; }

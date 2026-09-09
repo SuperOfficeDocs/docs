@@ -50,4 +50,4 @@ In the example, we create an `Appointment` using the [CreateDefaultAppointmentEn
 * the `AssociateID` - the ID for whom the appointment should be created
 
 [1]: ../../index
-[2]: ../../../reference/restful/agent/Appointment_Agent/v1AppointmentAgent_CreateDefaultAppointmentEntityByTypeAndAssociate
+[2]: ../../../reference/restful/agent/appointment_agent/create-default-appointment-entity-by-type-and-associate

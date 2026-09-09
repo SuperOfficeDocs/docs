@@ -13,11 +13,11 @@ U kunt inhoudsblokken maken en opslaan waaruit al uw gebruikers kunnen kiezen, z
 * [Afbeeldingen toevoegen aan het bericht][2]
 * [De mailing testen][7]
 
-[1]: ../../../../editor/learn/index
-[2]: ../../../../editor/learn/insert-images-in-message
-[3]: ../../../../editor/learn/add-content
-[4]: ../../../../editor/learn/edit-paragraph
-[5]: ../../../../editor/learn/add-merge-tag
-[11]: ../../../../editor/learn/add-tracked-link-to-msg
-[8]: ../../../../editor/learn/add-unsubscribe-link
-[7]: ../send-test-email
+[1]: /nl/marketing/editor/learn/index
+[2]: /nl/marketing/editor/learn/insert-images-in-message
+[3]: /nl/marketing/editor/learn/add-content
+[4]: /nl/marketing/editor/learn/edit-paragraph
+[5]: /nl/marketing/editor/learn/add-merge-tag
+[11]: /nl/marketing/editor/learn/add-tracked-link-to-msg
+[8]: /nl/marketing/editor/learn/add-unsubscribe-link
+[7]: /nl/marketing/mailing/learn/create/send-test-email

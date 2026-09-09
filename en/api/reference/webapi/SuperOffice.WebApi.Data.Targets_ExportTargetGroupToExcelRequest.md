@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Targets_ExportTargetGroupToExcelRequest"></a> Class Targets\_ExportTargetGroupToExcelRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Targets_ExportTargetGroupToExcelRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Targets\_ExportTargetGroupToExcelRequest](SuperOffice.WebApi.Data.Targets\_ExportTargetGroupToExcelRequest.md)
+[Targets\_ExportTargetGroupToExcelRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Targets_ExportTargetGroupToExcelRequest)
 
 #### Inherited Members
 

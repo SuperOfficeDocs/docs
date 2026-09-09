@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_BatchForwardRequest"></a> Class Ticket\_BatchForwardRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_BatchForwardRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_BatchForwardRequest](SuperOffice.WebApi.Data.Ticket\_BatchForwardRequest.md)
+[Ticket\_BatchForwardRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_BatchForwardRequest)
 
 #### Inherited Members
 

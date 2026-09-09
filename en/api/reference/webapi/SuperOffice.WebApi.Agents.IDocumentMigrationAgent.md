@@ -1,6 +1,6 @@
 # Interface IDocumentMigrationAgent {#SuperOffice_WebApi_Agents_IDocumentMigrationAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Agent used to support migrating documents between different document-plugins, as single documents or batches.
@@ -13,7 +13,7 @@ public interface IDocumentMigrationAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -29,13 +29,13 @@ Task<DocumentMigrationItemList> CreateDefaultDocumentMigrationItemListAsync(Requ
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentMigrationItemList](SuperOffice.WebApi.Data.DocumentMigrationItemList.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentMigrationItemList](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentMigrationItemList)\&gt;
 
 A blank DocumentMigrationItemList
 
@@ -50,13 +50,13 @@ Task<DocumentTemplateMigrationList> CreateDefaultDocumentTemplateMigrationListAs
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentTemplateMigrationList](SuperOffice.WebApi.Data.DocumentTemplateMigrationList.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentTemplateMigrationList](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateMigrationList)\&gt;
 
 A blank DocumentTemplateMigrationList
 
@@ -80,13 +80,13 @@ The ID of the document-plugin to migrate to.
 
 True if documents to migrate should include emails.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentMigrationItemList](SuperOffice.WebApi.Data.DocumentMigrationItemList.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentMigrationItemList](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentMigrationItemList)\&gt;
 
 Never null.
 
@@ -118,13 +118,13 @@ Inclusive maximum.
 
 True if documents to migrate should include emails.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentMigrationItemList](SuperOffice.WebApi.Data.DocumentMigrationItemList.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentMigrationItemList](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentMigrationItemList)\&gt;
 
 Never null.
 
@@ -152,13 +152,13 @@ ID of the selection used to create the DocumentMigrationSummary instance.
 
 True if documents to migrate should include emails.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentMigrationItemList](SuperOffice.WebApi.Data.DocumentMigrationItemList.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentMigrationItemList](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentMigrationItemList)\&gt;
 
 Never null.
 
@@ -182,13 +182,13 @@ The ID of the document-plugin to migrate to.
 
 True if templates to migrate should include emails.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentTemplateMigrationList](SuperOffice.WebApi.Data.DocumentTemplateMigrationList.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentTemplateMigrationList](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateMigrationList)\&gt;
 
 Never null.
 
@@ -204,7 +204,7 @@ Task<int> GetNumberOfConfidentialDocumentsAsync(RequestOptions requestOptions = 
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -226,7 +226,7 @@ Task<bool> HasDocumentsToMigrateAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -256,7 +256,7 @@ The ID of the document to migrate.
 
 The ID of the document-plugin to migrate to.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -286,7 +286,7 @@ The ID of the document-template to migrate.
 
 The ID of the document-plugin to migrate to.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 

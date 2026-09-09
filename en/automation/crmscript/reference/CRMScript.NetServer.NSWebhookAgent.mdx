@@ -31,7 +31,7 @@ Sets default values into a new NSWebhook.
 NSWebhook CreateDefaultWebhook()
 ```
 
-**Returns:** [CRMScript.NetServer.NSWebhook](CRMScript.NetServer.NSWebhook) - A new NSWebhook with default values.
+**Returns:** [CRMScript.NetServer.NSWebhook](/en/automation/crmscript/reference/CRMScript.NetServer.NSWebhook) - A new NSWebhook with default values.
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
@@ -53,7 +53,7 @@ Deletes the NSWebhook
 DeleteWebhook(Integer webhook)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -70,7 +70,7 @@ Returns all webhooks, according to filter criteria
 NSWebhook[] GetAllWebhooks(String nameFilter, String eventFilter, Integer statusFilter)
 ```
 
-**Returns:** [CRMScript.NetServer.NSWebhook](CRMScript.NetServer.NSWebhook)[]
+**Returns:** [CRMScript.NetServer.NSWebhook](/en/automation/crmscript/reference/CRMScript.NetServer.NSWebhook)[]
 
 **Example:**
 
@@ -90,7 +90,7 @@ Return the most recent error message received when calling this webhook.
 String GetLastError(Integer webhookId)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -108,7 +108,7 @@ Gets an NSWebhook object.
 NSWebhook GetWebhook(Integer webhookId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSWebhook](CRMScript.NetServer.NSWebhook)
+**Returns:** [CRMScript.NetServer.NSWebhook](/en/automation/crmscript/reference/CRMScript.NetServer.NSWebhook)
 
 **Example:**
 
@@ -125,7 +125,7 @@ Updates the existing NSWebhook or creates a new NSWebhook if the id parameter is
 NSWebhook SaveWebhook(NSWebhook webhook)
 ```
 
-**Returns:** [CRMScript.NetServer.NSWebhook](CRMScript.NetServer.NSWebhook)
+**Returns:** [CRMScript.NetServer.NSWebhook](/en/automation/crmscript/reference/CRMScript.NetServer.NSWebhook)
 
 **Example:**
 
@@ -143,7 +143,7 @@ Signal webhooks that an event has occurred. All webhooks listening for the event
 Void SignalEvent(String eventName, Integer primaryKey, StringObjectDictionary data)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -163,7 +163,7 @@ Pings a webhook with a 'test' event, returns SUCCESS(true) or FAILURE(false) + t
 NSWebhookResult TestWebhook(NSWebhook webhook)
 ```
 
-**Returns:** [CRMScript.NetServer.NSWebhookResult](CRMScript.NetServer.NSWebhookResult)
+**Returns:** [CRMScript.NetServer.NSWebhookResult](/en/automation/crmscript/reference/CRMScript.NetServer.NSWebhookResult)
 
 **Example:**
 

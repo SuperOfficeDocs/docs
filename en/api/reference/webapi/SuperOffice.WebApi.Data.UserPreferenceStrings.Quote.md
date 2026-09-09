@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Quote"></a> Class UserPreferenceStrings.Quote
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Preference keys for the quote system.
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.Quote
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.Quote](SuperOffice.WebApi.Data.UserPreferenceStrings.Quote.md)
+[UserPreferenceStrings.Quote](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Quote)
 
 #### Inherited Members
 

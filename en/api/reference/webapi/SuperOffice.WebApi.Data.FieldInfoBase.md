@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_FieldInfoBase"></a> Class FieldInfoBase
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for FieldInfoBase.
@@ -28,25 +28,25 @@ public class FieldInfoBase
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[FieldInfoBase](SuperOffice.WebApi.Data.FieldInfoBase.md)
+[FieldInfoBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBase)
 
 #### Derived
 
-[FieldInfoAttachment](SuperOffice.WebApi.Data.FieldInfoAttachment.md), 
-[FieldInfoBlob](SuperOffice.WebApi.Data.FieldInfoBlob.md), 
-[FieldInfoBool](SuperOffice.WebApi.Data.FieldInfoBool.md), 
-[FieldInfoDate](SuperOffice.WebApi.Data.FieldInfoDate.md), 
-[FieldInfoDateTime](SuperOffice.WebApi.Data.FieldInfoDateTime.md), 
-[FieldInfoDecimal](SuperOffice.WebApi.Data.FieldInfoDecimal.md), 
-[FieldInfoDynamicLink](SuperOffice.WebApi.Data.FieldInfoDynamicLink.md), 
-[FieldInfoInt](SuperOffice.WebApi.Data.FieldInfoInt.md), 
-[FieldInfoListText](SuperOffice.WebApi.Data.FieldInfoListText.md), 
-[FieldInfoLongText](SuperOffice.WebApi.Data.FieldInfoLongText.md), 
-[FieldInfoMdoList](SuperOffice.WebApi.Data.FieldInfoMdoList.md), 
-[FieldInfoRelation](SuperOffice.WebApi.Data.FieldInfoRelation.md), 
-[FieldInfoShortText](SuperOffice.WebApi.Data.FieldInfoShortText.md), 
-[FieldInfoTime](SuperOffice.WebApi.Data.FieldInfoTime.md), 
-[FieldInfoTimeSpan](SuperOffice.WebApi.Data.FieldInfoTimeSpan.md)
+[FieldInfoAttachment](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoAttachment), 
+[FieldInfoBlob](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBlob), 
+[FieldInfoBool](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBool), 
+[FieldInfoDate](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoDate), 
+[FieldInfoDateTime](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoDateTime), 
+[FieldInfoDecimal](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoDecimal), 
+[FieldInfoDynamicLink](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoDynamicLink), 
+[FieldInfoInt](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoInt), 
+[FieldInfoListText](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoListText), 
+[FieldInfoLongText](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoLongText), 
+[FieldInfoMdoList](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoMdoList), 
+[FieldInfoRelation](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoRelation), 
+[FieldInfoShortText](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoShortText), 
+[FieldInfoTime](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoTime), 
+[FieldInfoTimeSpan](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoTimeSpan)
 
 #### Inherited Members
 
@@ -118,11 +118,11 @@ public CustomFieldType? FieldType { get; set; }
 
 #### Property Value
 
- [CustomFieldType](SuperOffice.WebApi.Data.CustomFieldType.md)?
+ [CustomFieldType](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomFieldType)?
 
 #### See Also
 
-[FieldInfoBase](SuperOffice.WebApi.Data.FieldInfoBase.md).[FieldType\_String](SuperOffice.WebApi.Data.FieldInfoBase.md\#SuperOffice\_WebApi\_Data\_FieldInfoBase\_FieldType\_String)
+[FieldInfoBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBase).[FieldType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBase#SuperOffice_WebApi_Data_FieldInfoBase_FieldType_String)
 
 ### <a id="SuperOffice_WebApi_Data_FieldInfoBase_FieldType_String"></a> FieldType\_String
 
@@ -140,7 +140,7 @@ public string FieldType_String { get; set; }
 
 #### See Also
 
-[FieldInfoBase](SuperOffice.WebApi.Data.FieldInfoBase.md).[FieldType](SuperOffice.WebApi.Data.FieldInfoBase.md\#SuperOffice\_WebApi\_Data\_FieldInfoBase\_FieldType)
+[FieldInfoBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBase).[FieldType](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldInfoBase#SuperOffice_WebApi_Data_FieldInfoBase_FieldType)
 
 ### <a id="SuperOffice_WebApi_Data_FieldInfoBase_HideField"></a> HideField
 
@@ -264,5 +264,5 @@ public virtual string TemplateVariableName { get; set; }
 
 ## See Also
 
-[UserDefinedFieldInfoAgent](SuperOffice.WebApi.Agents.UserDefinedFieldInfoAgent.md)
+[UserDefinedFieldInfoAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.UserDefinedFieldInfoAgent)
 

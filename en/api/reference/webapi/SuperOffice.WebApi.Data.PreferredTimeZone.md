@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_PreferredTimeZone"></a> Class PreferredTimeZone
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for PreferredTimeZone.
@@ -13,7 +13,7 @@ public class PreferredTimeZone
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[PreferredTimeZone](SuperOffice.WebApi.Data.PreferredTimeZone.md)
+[PreferredTimeZone](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferredTimeZone)
 
 #### Inherited Members
 
@@ -111,5 +111,5 @@ public virtual int TZLocationId { get; set; }
 
 ## See Also
 
-[TimeZoneAgent](SuperOffice.WebApi.Agents.TimeZoneAgent.md)
+[TimeZoneAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TimeZoneAgent)
 

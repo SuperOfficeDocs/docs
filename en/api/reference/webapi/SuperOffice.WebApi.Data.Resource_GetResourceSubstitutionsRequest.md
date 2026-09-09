@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Resource_GetResourceSubstitutionsRequest"></a> Class Resource\_GetResourceSubstitutionsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Resource_GetResourceSubstitutionsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Resource\_GetResourceSubstitutionsRequest](SuperOffice.WebApi.Data.Resource\_GetResourceSubstitutionsRequest.md)
+[Resource\_GetResourceSubstitutionsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Resource_GetResourceSubstitutionsRequest)
 
 #### Inherited Members
 

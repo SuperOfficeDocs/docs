@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Quote_DeleteQuoteAlternativeRequest"></a> Class Quote\_DeleteQuoteAlternativeRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Quote_DeleteQuoteAlternativeRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Quote\_DeleteQuoteAlternativeRequest](SuperOffice.WebApi.Data.Quote\_DeleteQuoteAlternativeRequest.md)
+[Quote\_DeleteQuoteAlternativeRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Quote_DeleteQuoteAlternativeRequest)
 
 #### Inherited Members
 

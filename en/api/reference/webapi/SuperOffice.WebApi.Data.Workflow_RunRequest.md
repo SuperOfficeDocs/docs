@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Workflow_RunRequest"></a> Class Workflow\_RunRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Workflow_RunRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Workflow\_RunRequest](SuperOffice.WebApi.Data.Workflow\_RunRequest.md)
+[Workflow\_RunRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Workflow_RunRequest)
 
 #### Inherited Members
 

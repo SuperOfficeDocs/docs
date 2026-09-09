@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_DocTemplateTypeMap"></a> Class UserPreferenceStrings.DocTemplateTypeMap
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 DocTemplate Type Mapping: [DocTemplateTypeMap] .xyz = .docx
@@ -14,7 +14,7 @@ public static class UserPreferenceStrings.DocTemplateTypeMap
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.DocTemplateTypeMap](SuperOffice.WebApi.Data.UserPreferenceStrings.DocTemplateTypeMap.md)
+[UserPreferenceStrings.DocTemplateTypeMap](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.DocTemplateTypeMap)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # Class StringObjectDictionary {#SuperOffice_WebApi_Data_StringObjectDictionary}
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Serializable dictionary.
@@ -14,7 +14,7 @@ public class StringObjectDictionary : Dictionary<string, object>, IDictionary<st
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
 [Dictionary&lt;string, object\&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2) ← 
-[StringObjectDictionary](SuperOffice.WebApi.Data.StringObjectDictionary.md)
+[StringObjectDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringObjectDictionary)
 
 #### Implements
 

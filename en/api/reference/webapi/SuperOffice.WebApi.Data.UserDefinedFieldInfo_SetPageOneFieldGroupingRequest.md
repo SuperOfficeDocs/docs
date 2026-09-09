@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserDefinedFieldInfo_SetPageOneFieldGroupingRequest"></a> Class UserDefinedFieldInfo\_SetPageOneFieldGroupingRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class UserDefinedFieldInfo_SetPageOneFieldGroupingRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserDefinedFieldInfo\_SetPageOneFieldGroupingRequest](SuperOffice.WebApi.Data.UserDefinedFieldInfo\_SetPageOneFieldGroupingRequest.md)
+[UserDefinedFieldInfo\_SetPageOneFieldGroupingRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo_SetPageOneFieldGroupingRequest)
 
 #### Inherited Members
 
@@ -50,5 +50,5 @@ public UDefType OwnerType { get; set; }
 
 #### Property Value
 
- [UDefType](SuperOffice.WebApi.Data.UDefType.md)
+ [UDefType](/en/api/reference/webapi/SuperOffice.WebApi.Data.UDefType)
 

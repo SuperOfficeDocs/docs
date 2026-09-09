@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_DbOptimizations"></a> Class UserPreferenceStrings.DbOptimizations
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Boss mod preferences for database-dependent special optimizations
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.DbOptimizations
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.DbOptimizations](SuperOffice.WebApi.Data.UserPreferenceStrings.DbOptimizations.md)
+[UserPreferenceStrings.DbOptimizations](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.DbOptimizations)
 
 #### Inherited Members
 

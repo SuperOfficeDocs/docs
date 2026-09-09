@@ -31,8 +31,9 @@ but the round-trip is kept for safety against a future regen that does).
 Modes:
   Default (no --apply): audit only, reports what would change, no writes.
   --apply: performs the writes for the scoped files.
-  Positional file args scope to an explicit list (e.g. a PR's changed-files
-  list); --path scopes to a folder instead (default: en/database/tables/enums).
+  Positional file args scope to an explicit list (for example, a PR's
+  changed-files list); --path scopes to a folder instead (default:
+  en/database/tables/enums).
 
 Usage:
     python tools/ci/add-database-enum-sidebar-titles.py                        # audit, default tree
@@ -42,9 +43,11 @@ Usage:
 
 import argparse
 import re
-import subprocess
 import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib.repo_files import list_path_files  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 DEFAULT_PATH = "en/database/tables/enums"
@@ -53,18 +56,6 @@ FM_RE = re.compile(r"^(---\n)(.*?\n)(---\n?)(.*)$", re.DOTALL)
 TITLE_LINE_RE = re.compile(r"(?m)^title:\s*(.*)$")
 SIDEBAR_TITLE_RE = re.compile(r"(?m)^sidebarTitle:")
 ENUM_TITLE_RE = re.compile(r"^Enum values for (.+)$")
-
-
-def list_path_files(scope):
-    out = subprocess.run(
-        ["git", "ls-files", "--", "*.md", "*.mdx"],
-        cwd=REPO_ROOT,
-        capture_output=True,
-        text=True,
-        check=True,
-    )
-    scope_norm = scope.strip("/\\").replace("\\", "/")
-    return [f for f in out.stdout.splitlines() if f == scope_norm or f.startswith(scope_norm + "/")]
 
 
 def process_file(rel_path, apply_changes):
@@ -113,7 +104,7 @@ def process_file(rel_path, apply_changes):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("files", nargs="*", help="Specific files to check (e.g. a PR's changed-files list)")
+    parser.add_argument("files", nargs="*", help="Specific files to check (for example, a PR's changed-files list)")
     parser.add_argument("--path", default=DEFAULT_PATH, help=f"Scope to one folder instead of an explicit file list (default: {DEFAULT_PATH})")
     parser.add_argument("--apply", action="store_true", help="Write the sidebarTitle (default: audit only, no writes)")
     args = parser.parse_args()

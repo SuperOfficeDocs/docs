@@ -10,7 +10,7 @@
     | ![Ikon - kontakt ändrad][img4] | Kontakten finns redan och kommer att uppdateras. |
     | tom | Ingen uppdatering. |
 
-[img1]: ../../../../media/icons/admin/import-preview-icon-company-new.png
-[img2]: ../../../../media/icons/admin/import-preview-icon-company-changed.png
-[img3]: ../../../../media/icons/admin/import-preview-icon-person-new.png
-[img4]: ../../../../media/icons/admin/import-preview-icon-person-changed.png
+[img1]: /media/icons/admin/import-preview-icon-company-new.png
+[img2]: /media/icons/admin/import-preview-icon-company-changed.png
+[img3]: /media/icons/admin/import-preview-icon-person-new.png
+[img4]: /media/icons/admin/import-preview-icon-person-changed.png

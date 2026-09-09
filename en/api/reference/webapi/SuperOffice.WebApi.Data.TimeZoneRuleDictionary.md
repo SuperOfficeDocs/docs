@@ -1,6 +1,6 @@
 # Class TimeZoneRuleDictionary {#SuperOffice_WebApi_Data_TimeZoneRuleDictionary}
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Serializable dictionary.
@@ -14,7 +14,7 @@ public class TimeZoneRuleDictionary : Dictionary<DateTime, TimeZoneRule>, IDicti
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
 [Dictionary&lt;DateTime, TimeZoneRule\&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2) ← 
-[TimeZoneRuleDictionary](SuperOffice.WebApi.Data.TimeZoneRuleDictionary.md)
+[TimeZoneRuleDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.TimeZoneRuleDictionary)
 
 #### Implements
 

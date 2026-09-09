@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DocumentMigration_HasDocumentsToMigrateRequest"></a> Class DocumentMigration\_HasDocumentsToMigrateRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class DocumentMigration_HasDocumentsToMigrateRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[DocumentMigration\_HasDocumentsToMigrateRequest](SuperOffice.WebApi.Data.DocumentMigration\_HasDocumentsToMigrateRequest.md)
+[DocumentMigration\_HasDocumentsToMigrateRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentMigration_HasDocumentsToMigrateRequest)
 
 #### Inherited Members
 

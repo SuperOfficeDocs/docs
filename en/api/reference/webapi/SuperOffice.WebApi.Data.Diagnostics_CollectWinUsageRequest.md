@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Diagnostics_CollectWinUsageRequest"></a> Class Diagnostics\_CollectWinUsageRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Diagnostics_CollectWinUsageRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Diagnostics\_CollectWinUsageRequest](SuperOffice.WebApi.Data.Diagnostics\_CollectWinUsageRequest.md)
+[Diagnostics\_CollectWinUsageRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Diagnostics_CollectWinUsageRequest)
 
 #### Inherited Members
 

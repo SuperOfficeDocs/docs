@@ -1,6 +1,6 @@
 # Interface IDashAgent {#SuperOffice_WebApi_Agents_IDashAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Agent that lets you configure dashboard tiles and retrieve dashboard data
@@ -11,7 +11,7 @@ public interface IDashAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -30,17 +30,17 @@ Task<DashTile> AddNewTileToDashboardAsync(int dashboardId, DashTileDefinition da
 
 The id of the dashboard to add the tile to
 
-`dashTileDefinition` [DashTileDefinition](SuperOffice.WebApi.Data.DashTileDefinition.md)
+`dashTileDefinition` [DashTileDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition)
 
 The tile definition data to add to the dashboard
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTile](SuperOffice.WebApi.Data.DashTile.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTile)\&gt;
 
 The newly added tile
 
@@ -62,13 +62,13 @@ The id of the dashboard to add the tile to
 
 The id of the dashboard tile definition
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTile](SuperOffice.WebApi.Data.DashTile.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTile)\&gt;
 
 The newly added tile
 
@@ -86,7 +86,7 @@ Task<int> CopyTileSelectionAsync(int selectionId, RequestOptions requestOptions 
 
 The id of the selection to copy from
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -110,7 +110,7 @@ Task<int> CreateDashTileSelectionFromEntityAsync(string entityName, RequestOptio
 
 The name of the entity to create a default selection for
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -131,13 +131,13 @@ Task<Dash> CreateDefaultDashAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Dash](SuperOffice.WebApi.Data.Dash.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Dash](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dash)\&gt;
 
 A blank Dash
 
@@ -152,13 +152,13 @@ Task<DashCollection> CreateDefaultDashCollectionAsync(RequestOptions requestOpti
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashCollection](SuperOffice.WebApi.Data.DashCollection.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashCollection](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashCollection)\&gt;
 
 A blank DashCollection
 
@@ -173,13 +173,13 @@ Task<DashTheme> CreateDefaultDashThemeAsync(RequestOptions requestOptions = null
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTheme](SuperOffice.WebApi.Data.DashTheme.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTheme](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTheme)\&gt;
 
 A blank DashTheme
 
@@ -194,13 +194,13 @@ Task<DashTile> CreateDefaultDashTileAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTile](SuperOffice.WebApi.Data.DashTile.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTile)\&gt;
 
 A blank DashTile
 
@@ -215,13 +215,13 @@ Task<DashTileDefinition> CreateDefaultDashTileDefinitionAsync(RequestOptions req
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTileDefinition](SuperOffice.WebApi.Data.DashTileDefinition.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTileDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition)\&gt;
 
 A blank DashTileDefinition
 
@@ -236,13 +236,13 @@ Task<PreviewDash> CreateDefaultPreviewDashAsync(RequestOptions requestOptions = 
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreviewDash](SuperOffice.WebApi.Data.PreviewDash.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreviewDash](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreviewDash)\&gt;
 
 A blank PreviewDash
 
@@ -257,13 +257,13 @@ Task<PreviewDashTile> CreateDefaultPreviewDashTileAsync(RequestOptions requestOp
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreviewDashTile](SuperOffice.WebApi.Data.PreviewDashTile.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreviewDashTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreviewDashTile)\&gt;
 
 A blank PreviewDashTile
 
@@ -281,13 +281,13 @@ Task<DashTileDefinition> CreateDefaultTileDefinitionForEntityAsync(string entity
 
 Name of entity to use for primary key
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTileDefinition](SuperOffice.WebApi.Data.DashTileDefinition.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTileDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition)\&gt;
 
 Default
 
@@ -305,13 +305,13 @@ Task<DashTile> CreateDefaultTileForEntityAsync(string entityName, RequestOptions
 
 Name of entity to use for primary key
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTile](SuperOffice.WebApi.Data.DashTile.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTile)\&gt;
 
 Default
 
@@ -329,7 +329,7 @@ Task DeleteDashAsync(int dashId, RequestOptions requestOptions = null)
 
 The identity of the Dash
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -351,7 +351,7 @@ Task DeleteDashThemeAsync(int dashThemeId, RequestOptions requestOptions = null)
 
 The identity of the DashTheme
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -373,7 +373,7 @@ Task DeleteDashTileAsync(int dashTileId, RequestOptions requestOptions = null)
 
 The identity of the DashTile
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -395,7 +395,7 @@ Task DeleteDashTileDefinitionAsync(int dashTileDefinitionId, RequestOptions requ
 
 The identity of the DashTileDefinition
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -421,13 +421,13 @@ The id of the dashboard to add the tile to
 
 The name of the new dashboard
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Dash](SuperOffice.WebApi.Data.Dash.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Dash](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dash)\&gt;
 
 New dashboard
 
@@ -449,13 +449,13 @@ The id of the tile to copy
 
 The name of the new tile
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTile](SuperOffice.WebApi.Data.DashTile.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTile)\&gt;
 
 New tile
 
@@ -473,13 +473,13 @@ Task<Dash> GetDashAsync(int dashId, RequestOptions requestOptions = null)
 
 The identifier of the Dash object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Dash](SuperOffice.WebApi.Data.Dash.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Dash](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dash)\&gt;
 
 Dash
 
@@ -493,13 +493,13 @@ Task<DashCollection> GetDashCollectionAsync(RequestOptions requestOptions = null
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashCollection](SuperOffice.WebApi.Data.DashCollection.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashCollection](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashCollection)\&gt;
 
 Dashboard collection
 
@@ -517,13 +517,13 @@ Task<Dash[]> GetDashListAsync(int[] dashboards, RequestOptions requestOptions = 
 
 List of dashboardIds
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Dash](SuperOffice.WebApi.Data.Dash.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Dash](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dash)\[\]\&gt;
 
 List of dashboards
 
@@ -541,13 +541,13 @@ Task<QuickFilterInfo[]> GetDashQuickFiltersAsync(int dashboardId, RequestOptions
 
 The id of the dashboard to get the quick filters for
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuickFilterInfo](SuperOffice.WebApi.Data.QuickFilterInfo.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuickFilterInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuickFilterInfo)\[\]\&gt;
 
 List of quick filters for the given dashboard
 
@@ -565,13 +565,13 @@ Task<DashTheme> GetDashThemeAsync(int dashThemeId, RequestOptions requestOptions
 
 The identifier of the DashTheme object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTheme](SuperOffice.WebApi.Data.DashTheme.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTheme](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTheme)\&gt;
 
 DashTheme
 
@@ -589,13 +589,13 @@ Task<DashTile> GetDashTileAsync(int dashTileId, RequestOptions requestOptions = 
 
 The identifier of the DashTile object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTile](SuperOffice.WebApi.Data.DashTile.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTile)\&gt;
 
 DashTile
 
@@ -613,13 +613,13 @@ Task<DashTileDefinition> GetDashTileDefinitionAsync(int dashTileDefinitionId, Re
 
 The identifier of the DashTileDefinition object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTileDefinition](SuperOffice.WebApi.Data.DashTileDefinition.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTileDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition)\&gt;
 
 DashTileDefinition
 
@@ -641,13 +641,13 @@ The id of the dashboard tile definition
 
 Preferred language code.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTileHtml](SuperOffice.WebApi.Data.DashTileHtml.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTileHtml](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileHtml)\&gt;
 
 HTML data
 
@@ -665,13 +665,13 @@ Task<DashTileHtml[]> GetDashTileHtmlListAsync(int dashboardTileDefinitionId, Req
 
 The id of the dashboard tile definition
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTileHtml](SuperOffice.WebApi.Data.DashTileHtml.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTileHtml](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileHtml)\[\]\&gt;
 
 ### GetDashTilesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_GetDashTilesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
@@ -687,13 +687,13 @@ Task<DashTile[]> GetDashTilesAsync(int dashboardId, RequestOptions requestOption
 
 The id of the dashboard
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTile](SuperOffice.WebApi.Data.DashTile.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTile)\[\]\&gt;
 
 Ordered list of dashboard tiles
 
@@ -707,13 +707,13 @@ Task<FencingInfo> GetDashboardFencingInfoAsync(RequestOptions requestOptions = n
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FencingInfo](SuperOffice.WebApi.Data.FencingInfo.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FencingInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.FencingInfo)\&gt;
 
 Current fencing status including count, maximum, and warning state
 
@@ -731,13 +731,13 @@ Task<QuickFilterInfo[]> GetPossibleDashQuickFiltersAsync(int dashboardId, Reques
 
 The id of the dashboard to get the possible quick filters for
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuickFilterInfo](SuperOffice.WebApi.Data.QuickFilterInfo.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuickFilterInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuickFilterInfo)\[\]\&gt;
 
 List of possible quick filters for the given dashboard
 
@@ -755,13 +755,13 @@ Task<PreviewDash> GetPreviewDashAsync(int dashboardId, RequestOptions requestOpt
 
 Dashboard ID
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreviewDash](SuperOffice.WebApi.Data.PreviewDash.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreviewDash](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreviewDash)\&gt;
 
 Dashboard suitable for preview
 
@@ -779,7 +779,7 @@ Task<int> GetSecondaryTempTileSelectionAsync(int selectionId, RequestOptions req
 
 The id of the selection to copy from
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -803,7 +803,7 @@ Task<int> GetTempTileSelectionAsync(int selectionId, RequestOptions requestOptio
 
 The id of the selection to copy from
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -823,17 +823,17 @@ Task<Dash> SaveDashAsync(Dash dash, RequestOptions requestOptions = null)
 
 #### Parameters
 
-`dash` [Dash](SuperOffice.WebApi.Data.Dash.md)
+`dash` [Dash](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dash)
 
 The Dash that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Dash](SuperOffice.WebApi.Data.Dash.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Dash](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dash)\&gt;
 
 New or updated Dash
 
@@ -851,17 +851,17 @@ Task<QuickFilterInfo[]> SaveDashQuickFiltersAsync(int dashboardId, QuickFilterIn
 
 The id of the dashboard these quick filters are associated with
 
-`quickFilters` [QuickFilterInfo](SuperOffice.WebApi.Data.QuickFilterInfo.md)\[\]
+`quickFilters` [QuickFilterInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuickFilterInfo)\[\]
 
 Complete list of quick filters for the given dashboard, overwriting the existing list
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuickFilterInfo](SuperOffice.WebApi.Data.QuickFilterInfo.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuickFilterInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuickFilterInfo)\[\]\&gt;
 
 List of saved quick filters for the given dashboard
 
@@ -875,17 +875,17 @@ Task<DashTheme> SaveDashThemeAsync(DashTheme dashTheme, RequestOptions requestOp
 
 #### Parameters
 
-`dashTheme` [DashTheme](SuperOffice.WebApi.Data.DashTheme.md)
+`dashTheme` [DashTheme](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTheme)
 
 The DashTheme that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTheme](SuperOffice.WebApi.Data.DashTheme.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTheme](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTheme)\&gt;
 
 New or updated DashTheme
 
@@ -899,17 +899,17 @@ Task<DashTile> SaveDashTileAsync(DashTile dashTile, RequestOptions requestOption
 
 #### Parameters
 
-`dashTile` [DashTile](SuperOffice.WebApi.Data.DashTile.md)
+`dashTile` [DashTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTile)
 
 The DashTile that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTile](SuperOffice.WebApi.Data.DashTile.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTile)\&gt;
 
 New or updated DashTile
 
@@ -923,17 +923,17 @@ Task<DashTileDefinition> SaveDashTileDefinitionAsync(DashTileDefinition dashTile
 
 #### Parameters
 
-`dashTileDefinition` [DashTileDefinition](SuperOffice.WebApi.Data.DashTileDefinition.md)
+`dashTileDefinition` [DashTileDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition)
 
 The DashTileDefinition that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTileDefinition](SuperOffice.WebApi.Data.DashTileDefinition.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTileDefinition](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileDefinition)\&gt;
 
 New or updated DashTileDefinition
 
@@ -951,17 +951,17 @@ Task<DashTileHtml[]> SaveDashTileHtmlListAsync(int dashboardTileDefinitionId, Da
 
 The id of the dashboard tile definition
 
-`languages` [DashTileHtml](SuperOffice.WebApi.Data.DashTileHtml.md)\[\]
+`languages` [DashTileHtml](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileHtml)\[\]
 
 List of HTML content per language
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTileHtml](SuperOffice.WebApi.Data.DashTileHtml.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashTileHtml](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileHtml)\[\]\&gt;
 
 ### SaveDashTilesAsync\(int, DashTile\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IDashAgent_SaveDashTilesAsync_System_Int32_SuperOffice_WebApi_Data_DashTile___SuperOffice_WebApi_RequestOptions_}
 
@@ -977,11 +977,11 @@ Task SaveDashTilesAsync(int dashboardId, DashTile[] dashTiles, RequestOptions re
 
 The id of the dashboard
 
-`dashTiles` [DashTile](SuperOffice.WebApi.Data.DashTile.md)\[\]
+`dashTiles` [DashTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTile)\[\]
 
 The tiles in order
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 

@@ -33,7 +33,7 @@ Adds a person to the given contact
 NSPersonEntity AddPerson(Integer contactId, NSPersonEntity newPersonEntity)
 ```
 
-**Returns:** [CRMScript.NetServer.NSPersonEntity](CRMScript.NetServer.NSPersonEntity) - Updated person object.
+**Returns:** [CRMScript.NetServer.NSPersonEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSPersonEntity) - Updated person object.
 
 **Example:**
 
@@ -52,7 +52,7 @@ Changes country regenerates the default values and localized information such as
 NSContactEntity ChangeCountry(NSContactEntity contactEntity, Integer toCountryId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSContactEntity](CRMScript.NetServer.NSContactEntity)
+**Returns:** [CRMScript.NetServer.NSContactEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSContactEntity)
 
 ## Copy(Integer,String,String,Bool)
 
@@ -62,7 +62,7 @@ Copies a contact. Activities and related data will be ignored
 Integer Copy(Integer sourceContactId, String destinationContactName, String destinationContactDepartment, Bool copyPersons)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of copied contact.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - ID of copied contact.
 
 **Example:**
 
@@ -83,7 +83,7 @@ Sets default values into a new NSContactEntity.
 NSContactEntity CreateDefaultContactEntity()
 ```
 
-**Returns:** [CRMScript.NetServer.NSContactEntity](CRMScript.NetServer.NSContactEntity) - New ContactEntity with default values.
+**Returns:** [CRMScript.NetServer.NSContactEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSContactEntity) - New ContactEntity with default values.
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
@@ -105,7 +105,7 @@ Creates a new contact based on external duplicate
 Integer CreateNewEntry(NSDuplicateEntry duplicate)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The database identity of the newly created entry.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The database identity of the newly created entry.
 
 **Example:**
 
@@ -123,7 +123,7 @@ Deletes the NSContactEntity
 Void DeleteContactEntity(Integer contactEntity)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -140,7 +140,7 @@ Triggers deletion of contacts (companies) that has been (soft) deleted and have 
 Void DeleteExpired()
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## GetAddress(Integer)
 
@@ -150,7 +150,7 @@ Gets a contact's localized addressGets the contact's localized address
 LocalizedField[][]GetAddress(Integer contact Id)
 ```
 
-**Returns:** [CRMScript.NetServer.LocalizedField](CRMScript.NetServer.LocalizedField)[][]
+**Returns:** CRMScript.NetServer.LocalizedField[][]
 
 **Example:**
 
@@ -168,7 +168,7 @@ Gets a contact's localized addressGets the contact's localized address
 LocalizedField[][] GetAddressByCountry(Integer contactId, Integer countryId)
 ```
 
-**Returns:** [CRMScript.NetServer.LocalizedField](CRMScript.NetServer.LocalizedField)[][]
+**Returns:** CRMScript.NetServer.LocalizedField[][]
 
 **Example:**
 
@@ -187,7 +187,7 @@ Gets an NSContact object.
 NSContact GetContact(Integer contactId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSContact](CRMScript.NetServer.NSContact)
+**Returns:** [CRMScript.NetServer.NSContact](/en/automation/crmscript/reference/CRMScript.NetServer.NSContact)
 
 **Example:**
 
@@ -204,7 +204,7 @@ Gets an NSContactEntity object.
 NSContactEntity GetContactEntity(Integer contactEntityId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSContactEntity](CRMScript.NetServer.NSContactEntity)
+**Returns:** [CRMScript.NetServer.NSContactEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSContactEntity)
 
 **Example:**
 
@@ -221,7 +221,7 @@ Gets an array of Contact objects.
 NSContact[] GetContactList(Integer[] contactIds)
 ```
 
-**Returns:** [CRMScript.NetServer.NSContact](CRMScript.NetServer.NSContact)[] - Array of NSContact.
+**Returns:** [CRMScript.NetServer.NSContact](/en/automation/crmscript/reference/CRMScript.NetServer.NSContact)[] - Array of NSContact.
 
 **Example:**
 
@@ -239,7 +239,7 @@ Gets summary of contact and its recent activity.
 NSContactSummary GetContactSummary(Integer contactId, Integer limit)
 ```
 
-**Returns:** [CRMScript.NetServer.NSContactSummary](CRMScript.NetServer.NSContactSummary) - Summary of contact, with recent requests, sales, follow-ups, chats.
+**Returns:** [CRMScript.NetServer.NSContactSummary](/en/automation/crmscript/reference/CRMScript.NetServer.NSContactSummary) - Summary of contact, with recent requests, sales, follow-ups, chats.
 
 **Example:**
 
@@ -258,7 +258,7 @@ Returns the contact with all the contact persons belonging to the contact
 NSContactEntity GetContactWithPersons(Integer contactId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSContactEntity](CRMScript.NetServer.NSContactEntity) - ContactEntity with all data and persons.
+**Returns:** [CRMScript.NetServer.NSContactEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSContactEntity) - ContactEntity with all data and persons.
 
 **Example:**
 
@@ -276,7 +276,7 @@ Retrieves all available duplicate rules for contact
 NSDuplicateRule[] GetDuplicateRules()
 ```
 
-**Returns:** [CRMScript.NetServer.NSDuplicateRule](CRMScript.NetServer.NSDuplicateRule)[] - All available duplicate rules.
+**Returns:** [CRMScript.NetServer.NSDuplicateRule](/en/automation/crmscript/reference/CRMScript.NetServer.NSDuplicateRule)[] - All available duplicate rules.
 
 **Example:**
 
@@ -293,7 +293,7 @@ Gets duplicates (exact or similar in the database) based on the name
 NSDuplicateEntry[] GetDuplicates(String name)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDuplicateEntry](CRMScript.NetServer.NSDuplicateEntry)[] - Any records matching the specified name.
+**Returns:** [CRMScript.NetServer.NSDuplicateEntry](/en/automation/crmscript/reference/CRMScript.NetServer.NSDuplicateEntry)[] - Any records matching the specified name.
 
 **Example:**
 
@@ -311,7 +311,7 @@ Returns the contacts where there has been activity since activityStartTime.
 NSContactActivity[] GetMyActiveContacts(DateTime activityStartTime, Integer[] contactCategories, Integer actionType)
 ```
 
-**Returns:** [CRMScript.NetServer.NSContactActivity](CRMScript.NetServer.NSContactActivity)[] - Array of contacts where there have been activity in the period.
+**Returns:** [CRMScript.NetServer.NSContactActivity](/en/automation/crmscript/reference/CRMScript.NetServer.NSContactActivity)[] - Array of contacts where there have been activity in the period.
 
 <Note>
 If activityStartTime is larger than the current date, all contacts with activity since the last log-out are returned. The result set can be filtered by category and action type.
@@ -335,7 +335,7 @@ Returns all data needed to display the logged on person's business card (company
 NSContactEntity GetMyBizCard()
 ```
 
-**Returns:** [CRMScript.NetServer.NSContactEntity](CRMScript.NetServer.NSContactEntity) - The contact object with persons and interests.
+**Returns:** [CRMScript.NetServer.NSContactEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSContactEntity) - The contact object with persons and interests.
 
 **Example:**
 
@@ -352,7 +352,7 @@ Gets the contact belonging to the currently logged-on user.
 NSContactEntity GetMyContact()
 ```
 
-**Returns:** [CRMScript.NetServer.NSContactEntity](CRMScript.NetServer.NSContactEntity)
+**Returns:** [CRMScript.NetServer.NSContactEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSContactEntity)
 
 **Example:**
 
@@ -369,7 +369,7 @@ Gets the contacts where the user currently logged in is set as contact owner.
 NSContact[] GetMyContacts()
 ```
 
-**Returns:** [CRMScript.NetServer.NSContact](CRMScript.NetServer.NSContact)[] - The contact.
+**Returns:** [CRMScript.NetServer.NSContact](/en/automation/crmscript/reference/CRMScript.NetServer.NSContact)[] - The contact.
 
 **Example:**
 
@@ -386,7 +386,7 @@ Returns a set of initial contacts.
 NSContact[] GetMyRecentContacts(Integer sourceType)
 ```
 
-**Returns:** [CRMScript.NetServer.NSContact](CRMScript.NetServer.NSContact)[] - Array of contacts.
+**Returns:** [CRMScript.NetServer.NSContact](/en/automation/crmscript/reference/CRMScript.NetServer.NSContact)[] - Array of contacts.
 
 <Note>
 This could be the contacts in a favorites selection, the history list, the diary, or from all sources. If retrieved from the diary it will get appointments for the current and the next day.
@@ -408,7 +408,7 @@ Gets duplicates based on the contact name and department
 NSDuplicateEntry[] GetNameDepartmentDuplicates(String name, String department)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDuplicateEntry](CRMScript.NetServer.NSDuplicateEntry)[] - Any records matching the specified name and department.
+**Returns:** [CRMScript.NetServer.NSDuplicateEntry](/en/automation/crmscript/reference/CRMScript.NetServer.NSDuplicateEntry)[] - Any records matching the specified name and department.
 
 **Example:**
 
@@ -427,7 +427,7 @@ Returns an array of all the contact persons for the company card.
 NSPerson[] GetPersons(Integer contactId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson)[] - Array of Persons.
+**Returns:** [CRMScript.NetServer.NSPerson](/en/automation/crmscript/reference/CRMScript.NetServer.NSPerson)[] - Array of Persons.
 
 **Example:**
 
@@ -445,7 +445,7 @@ Gets the associated billing and invoice quote version addresses.
 NSAddress[] GetQuoteVersionAddresses(Integer quoteVersionId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAddress](CRMScript.NetServer.NSAddress)[] - The quote version addresses. Invoice and billing address, in that order.
+**Returns:** [CRMScript.NetServer.NSAddress](/en/automation/crmscript/reference/CRMScript.NetServer.NSAddress)[] - The quote version addresses. Invoice and billing address, in that order.
 
 <Note>
 These addresses might be address on the contact, or a custom address.
@@ -467,7 +467,7 @@ Checks if the number is unique or required. The setting is configured from admin
 Bool IsNumberValid(Integer contactId, String number)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 ## Merge(Integer,Integer,Bool,Bool)
 
@@ -477,7 +477,7 @@ Merges two contacts. The destination contact will remain.
 Void Merge(Integer sourceContactId, Integer destinationContactId, Bool mergeIdenticalPersons, Bool replaceEmptyFieldsOnDestination)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## SaveContactEntity(NSContactEntity)
 
@@ -487,7 +487,7 @@ Updates the existing NSContactEntity or creates a new NSContactEntity if the ID 
 NSContactEntity SaveContactEntity(NSContactEntity contactEntityId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSContactEntity](CRMScript.NetServer.NSContactEntity) - The new or updated NSContactEntity.
+**Returns:** [CRMScript.NetServer.NSContactEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSContactEntity) - The new or updated NSContactEntity.
 
 **Example:**
 
@@ -505,7 +505,7 @@ Saves a custom quote version address.
 NSAddress SaveQuoteVersionAddress(Integer quoteVersionId, NSAddress address, Integer addressType, Integer countryId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAddress](CRMScript.NetServer.NSAddress) - The saved addresses.
+**Returns:** [CRMScript.NetServer.NSAddress](/en/automation/crmscript/reference/CRMScript.NetServer.NSAddress) - The saved addresses.
 
 **Example:**
 
@@ -526,7 +526,7 @@ Sets which duplicate rules should be active or not
 Void SetDuplicateRulesStatus(NSDuplicateRule[] rules)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## Undelete(Integer)
 
@@ -536,7 +536,7 @@ This entity supports Soft Delete. Call this method to Undelete a previously soft
 Void Undelete(Integer id)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -554,7 +554,7 @@ Checks that entity is ready for saving, return error messages by field.
 Map ValidateContactEntity(NSContactEntity contactEntity)
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map)
 
 **Example:**
 

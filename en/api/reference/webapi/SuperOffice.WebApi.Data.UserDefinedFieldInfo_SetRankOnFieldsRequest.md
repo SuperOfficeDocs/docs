@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserDefinedFieldInfo_SetRankOnFieldsRequest"></a> Class UserDefinedFieldInfo\_SetRankOnFieldsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class UserDefinedFieldInfo_SetRankOnFieldsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserDefinedFieldInfo\_SetRankOnFieldsRequest](SuperOffice.WebApi.Data.UserDefinedFieldInfo\_SetRankOnFieldsRequest.md)
+[UserDefinedFieldInfo\_SetRankOnFieldsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo_SetRankOnFieldsRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public UDefType OwnerType { get; set; }
 
 #### Property Value
 
- [UDefType](SuperOffice.WebApi.Data.UDefType.md)
+ [UDefType](/en/api/reference/webapi/SuperOffice.WebApi.Data.UDefType)
 
 ### <a id="SuperOffice_WebApi_Data_UserDefinedFieldInfo_SetRankOnFieldsRequest_RankedFieldsIds"></a> RankedFieldsIds
 

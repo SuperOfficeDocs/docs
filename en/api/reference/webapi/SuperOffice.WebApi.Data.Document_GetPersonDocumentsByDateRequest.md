@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_GetPersonDocumentsByDateRequest"></a> Class Document\_GetPersonDocumentsByDateRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_GetPersonDocumentsByDateRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_GetPersonDocumentsByDateRequest](SuperOffice.WebApi.Data.Document\_GetPersonDocumentsByDateRequest.md)
+[Document\_GetPersonDocumentsByDateRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_GetPersonDocumentsByDateRequest)
 
 #### Inherited Members
 

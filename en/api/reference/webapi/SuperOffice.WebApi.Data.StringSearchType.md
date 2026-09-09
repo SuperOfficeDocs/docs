@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_StringSearchType"></a> Enum StringSearchType
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Enumeration that exposes what search types that are supported.

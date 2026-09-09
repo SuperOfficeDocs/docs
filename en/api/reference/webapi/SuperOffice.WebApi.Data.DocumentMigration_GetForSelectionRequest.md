@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DocumentMigration_GetForSelectionRequest"></a> Class DocumentMigration\_GetForSelectionRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class DocumentMigration_GetForSelectionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[DocumentMigration\_GetForSelectionRequest](SuperOffice.WebApi.Data.DocumentMigration\_GetForSelectionRequest.md)
+[DocumentMigration\_GetForSelectionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentMigration_GetForSelectionRequest)
 
 #### Inherited Members
 

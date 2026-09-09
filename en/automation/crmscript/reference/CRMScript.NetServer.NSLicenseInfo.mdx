@@ -31,7 +31,7 @@ Initializes a new instance of the NSLicenseInfo class.
 DateTime GetAdminWarningDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When should nagging begin (for instance, during login to SoAdmin).
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - When should nagging begin (for instance, during login to SoAdmin).
 
 **Example:**
 
@@ -46,7 +46,7 @@ DateTime adminWarningDate = thing.GetAdminWarningDate();
 String GetCompanyName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Name of the database owner company.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Name of the database owner company.
 
 **Example:**
 
@@ -61,7 +61,7 @@ String companyName = thing.GetCompanyName();
 Integer GetDeploymentType()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Type of deployment.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Type of deployment.
 
 **Example:**
 
@@ -76,7 +76,7 @@ Integer deploymentType = thing.GetDeploymentType();
 DateTime GetExpiryDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Expiration date, 0 = forever.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Expiration date, 0 = forever.
 
 **Example:**
 
@@ -91,7 +91,7 @@ DateTime expiryDate = thing.GetExpiryDate();
 Integer GetExtraFlags()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Unspecified extra flags of license, part of checksum.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Unspecified extra flags of license, part of checksum.
 
 **Example:**
 
@@ -106,7 +106,7 @@ Integer extraFlags = thing.GetExtraFlags();
 String GetExtraInfo()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 ## GetGraceDate()
 
@@ -114,7 +114,7 @@ String GetExtraInfo()
 DateTime GetGraceDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Real expiration date, when the given module actually stops working.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Real expiration date, when the given module actually stops working.
 
 <Note>
 Modules that normally update data should switch to read-only mode. Modules that only read anyway, should disable themselves in some other way
@@ -133,7 +133,7 @@ DateTime graceDate = thing.GetGraceDate();
 String GetLicenseUrl()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL that will provide keycodes for all modules owned by this owner.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The URL that will provide keycodes for all modules owned by this owner.
 
 **Example:**
 
@@ -148,7 +148,7 @@ String licenseUrl = thing.GetLicenseUrl();
 String GetLicenseVersion()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL that will provide keycodes for all modules owned by this owner.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The URL that will provide keycodes for all modules owned by this owner.
 
 **Example:**
 
@@ -163,7 +163,7 @@ String licenseVersion = thing.GetLicenseVersion();
 DateTime GetMaintenanceDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Expiration date for maintenance. After this date, upgrades should refuse to install.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Expiration date for maintenance. After this date, upgrades should refuse to install.
 
 **Example:**
 
@@ -178,7 +178,7 @@ DateTime maintenanceDate = thing.GetMaintenanceDate();
 NSModuleLicense[] GetModuleLicenses()
 ```
 
-**Returns:** [CRMScript.NetServer.NSModuleLicense](CRMScript.NetServer.NSModuleLicense)[] - The module licenses.
+**Returns:** [CRMScript.NetServer.NSModuleLicense](/en/automation/crmscript/reference/CRMScript.NetServer.NSModuleLicense)[] - The module licenses.
 
 **Example:**
 
@@ -193,7 +193,7 @@ NSModuleLicense[] moduleLicenses = thing.GetModuleLicenses();
 DateTime GetNextCheckDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - When should the system next check with the license issuer.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - When should the system next check with the license issuer.
 
 **Example:**
 
@@ -208,7 +208,7 @@ DateTime nextCheckDate = thing.GetNextCheckDate();
 String GetOwnerDescription()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Human-readable description of owner, shown in GUI, default language.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Human-readable description of owner, shown in GUI, default language.
 
 <Note>
 Additional languages can be added to LocaleText, resource type 26
@@ -227,7 +227,7 @@ String ownerDescription = thing.GetOwnerDescription();
 String GetOwnerName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the module owner, not visible in GUI but used in the code.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The name of the module owner, not visible in GUI but used in the code.
 
 <Note>
 OwnerName SUPEROFFICE is reserved and may NEVER be used by partners. This must be in UPPER CASE and only contain A-Z and 0-9. NO EXTENDED CHARACTERS please.
@@ -246,7 +246,7 @@ String ownerName = thing.GetOwnerName();
 String GetProductDescription()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Description of type of product.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Description of type of product.
 
 **Example:**
 
@@ -261,7 +261,7 @@ String productDescription = thing.GetProductDescription();
 String GetProductType()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Type of product.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Type of product.
 
 **Example:**
 
@@ -276,7 +276,7 @@ String productType = thing.GetProductType();
 NSSignedPublicKey GetPublicKey()
 ```
 
-**Returns:** [CRMScript.NetServer.NSSignedPublicKey](CRMScript.NetServer.NSSignedPublicKey) - The public key used to verify licenses owned by this owner.
+**Returns:** [CRMScript.NetServer.NSSignedPublicKey](/en/automation/crmscript/reference/CRMScript.NetServer.NSSignedPublicKey) - The public key used to verify licenses owned by this owner.
 
 **Example:**
 
@@ -291,7 +291,7 @@ NSSignedPublicKey publicKey = thing.GetPublicKey();
 String GetSerialNr()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Serial number. For example, 1010000014.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Serial number. For example, 1010000014.
 
 **Example:**
 
@@ -306,7 +306,7 @@ String serialNr = thing.GetSerialNr();
 String GetSignature()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Signature of all non-zero-amount moduleLicense rows referring to this owner.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Signature of all non-zero-amount moduleLicense rows referring to this owner.
 
 **Example:**
 
@@ -321,7 +321,7 @@ String signature = thing.GetSignature();
 Void SetAdminWarningDate(DateTime adminWarningDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -337,7 +337,7 @@ thing.SetAdminWarningDate(adminWarningDate);
 Void SetCompanyName(String companyName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -353,7 +353,7 @@ thing.SetCompanyName(companyName);
 Void SetDeploymentType(Integer deploymentType)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -369,7 +369,7 @@ thing.SetDeploymentType(deploymentType);
 Void SetExpiryDate(DateTime expiryDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -385,7 +385,7 @@ thing.SetExpiryDate(expiryDate);
 Void SetExtraFlags(Integer extraFlags)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -401,7 +401,7 @@ thing.SetExtraFlags(extraFlags);
 Void SetExtraInfo(String extraInfo)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## SetGraceDate(DateTime)
 
@@ -409,7 +409,7 @@ Void SetExtraInfo(String extraInfo)
 Void SetGraceDate(DateTime graceDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Modules that normally update data should switch to read-only mode. Modules that only read anyway, should disable themselves in some other way
@@ -429,7 +429,7 @@ thing.SetGraceDate(graceDate);
 Void SetLicenseUrl(String licenseUrl)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -445,7 +445,7 @@ thing.SetLicenseUrl(licenseUrl);
 Void SetLicenseVersion(String licenseVersion)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -461,7 +461,7 @@ thing.SetLicenseVersion(licenseVersion);
 Void SetMaintenanceDate(DateTime maintenanceDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -477,7 +477,7 @@ thing.SetMaintenanceDate(maintenanceDate);
 Void SetModuleLicenses(NSModuleLicense[] moduleLicenses)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -493,7 +493,7 @@ thing.SetModuleLicenses(moduleLicenses);
 Void SetNextCheckDate(DateTime nextCheckDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -509,7 +509,7 @@ thing.SetNextCheckDate(nextCheckDate);
 Void SetOwnerDescription(String ownerDescription)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Additional languages can be added to LocaleText, resource type 26
@@ -529,7 +529,7 @@ thing.SetOwnerDescription(ownerDescription);
 Void SetOwnerName(String ownerName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 OwnerName SUPEROFFICE is reserved and may NEVER be used by partners. This must be in UPPER CASE and only contain A-Z and 0-9. NO EXTENDED CHARACTERS please.
@@ -549,7 +549,7 @@ thing.SetOwnerName(ownerName);
 Void SetProductDescription(String productDescription)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -565,7 +565,7 @@ thing.SetProductDescription(productDescription);
 Void SetProductType(String productType)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -581,7 +581,7 @@ thing.SetProductType(productType);
 Void SetPublicKey(NSSignedPublicKey publicKey)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -597,7 +597,7 @@ thing.SetPublicKey(publicKey);
 Void SetSerialNr(String serialNr)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -613,7 +613,7 @@ thing.SetSerialNr(serialNr);
 Void SetSignature(String signature)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

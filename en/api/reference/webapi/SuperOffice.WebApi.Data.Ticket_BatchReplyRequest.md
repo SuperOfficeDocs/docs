@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_BatchReplyRequest"></a> Class Ticket\_BatchReplyRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_BatchReplyRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_BatchReplyRequest](SuperOffice.WebApi.Data.Ticket\_BatchReplyRequest.md)
+[Ticket\_BatchReplyRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_BatchReplyRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public TicketBatchReplyData BatchReplyData { get; set; }
 
 #### Property Value
 
- [TicketBatchReplyData](SuperOffice.WebApi.Data.TicketBatchReplyData.md)
+ [TicketBatchReplyData](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketBatchReplyData)
 

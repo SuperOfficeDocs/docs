@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Defaults"></a> Class UserPreferenceStrings.Defaults
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Default values
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.Defaults
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.Defaults](SuperOffice.WebApi.Data.UserPreferenceStrings.Defaults.md)
+[UserPreferenceStrings.Defaults](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Defaults)
 
 #### Inherited Members
 

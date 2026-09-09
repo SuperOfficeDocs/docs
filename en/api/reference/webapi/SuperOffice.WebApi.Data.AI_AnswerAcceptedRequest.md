@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AI_AnswerAcceptedRequest"></a> Class AI\_AnswerAcceptedRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class AI_AnswerAcceptedRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AI\_AnswerAcceptedRequest](SuperOffice.WebApi.Data.AI\_AnswerAcceptedRequest.md)
+[AI\_AnswerAcceptedRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_AnswerAcceptedRequest)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # Interface ITooltipsAgent {#SuperOffice_WebApi_Agents_ITooltipsAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Tooltip system, hint to text transformation
@@ -11,7 +11,7 @@ public interface ITooltipsAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -28,7 +28,7 @@ Task<string> GetTooltipAsync(string tooltipHint, RequestOptions requestOptions =
 
 `tooltipHint` [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 

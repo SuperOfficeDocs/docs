@@ -33,7 +33,7 @@ Deletes the loaded object.
 Void delete()
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## delete(Bool)
 
@@ -43,7 +43,7 @@ Deletes the loaded object.
 Void delete(Bool signalWebhook)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## getValue(String)
 
@@ -53,7 +53,7 @@ Returns the value of the given field for the currently loaded entry.
 String getValue(String field)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the given field for the currently loaded entry.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The value of the given field for the currently loaded entry.
 
 **Example:**
 
@@ -72,7 +72,7 @@ Returns all the fields and values of the extraTable row as a Map.
 Map getValues()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - All the fields and values of the extraTable row.
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map) - All the fields and values of the extraTable row.
 
 ## load(Integer)
 
@@ -82,7 +82,7 @@ Loads the extra table entry with the given ID.
 Bool load(Integer id)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the entry was found and loaded; otherwise, false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if the entry was found and loaded; otherwise, false.
 
 **Example:**
 
@@ -100,7 +100,7 @@ Used for integrating data from external systems.
 Bool loadFromAgentAndKey(Integer agent, String key)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the entry was found and loaded; otherwise, false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if the entry was found and loaded; otherwise, false.
 
 ## save()
 
@@ -110,7 +110,7 @@ Creates a new or updates an existing extra-table entry. If ID is set, the table 
 Integer save()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the newly saved object.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the newly saved object.
 
 <Note>
 Use save(Bool) to signal that the entry should be reloaded after the save.
@@ -124,7 +124,7 @@ Creates a new or updates an existing extra-table entry. If ID is set, the table 
 Integer save(Bool reload)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the newly saved object.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the newly saved object.
 
 ## save(Bool,Bool)
 
@@ -134,7 +134,7 @@ Creates a new or updates an existing extra-table entry. If ID is set, the table 
 Integer save(Bool reload, Bool signalWebhook)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the newly saved object.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the newly saved object.
 
 ## setValue(String,String)
 
@@ -144,7 +144,7 @@ Sets the value of a given field if it exists.
 Void setValue(String field, String value)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

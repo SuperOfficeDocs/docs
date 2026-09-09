@@ -33,7 +33,7 @@ Adds an appointment to the class.
 addAppointment(Integer id, DateTime start, DateTime end, String title)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## clear()
 
@@ -43,7 +43,7 @@ Clears all the added appointments from the instance.
 Void clear()
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## eof()
 
@@ -53,7 +53,7 @@ Returns true if the internal iterator is past the appointments for the chosen da
 Bool eof()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the internal iterator is past the appointments for the chosen day; otherwise, false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if the internal iterator is past the appointments for the chosen day; otherwise, false.
 
 ## getLoadForDay(Date,Time,Time,Integer)
 
@@ -63,7 +63,7 @@ Returns the accumulated load for a given day.
 Integer getLoadForDay(Date day, Time start, Time stop, Integer max)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The calculated load for the given day.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The calculated load for the given day.
 
 <Note>
 The load is calculated by adding all the appointments for that day, cutting them at the start and stop times. Finally, the value returned is never more than max (unless max is -1, in which case there is no limit).
@@ -81,7 +81,7 @@ Returns the value for the given field for the appointment pointed to by the inte
 String getValue(String field)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value for the given field for the appointment pointed to by the internal iterator.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The value for the given field for the appointment pointed to by the internal iterator.
 
 <Note>
 Available fields: id, date, start, stop, stop, title
@@ -97,7 +97,7 @@ Returns false if &lt;code&gt;eof()&lt;/code&gt;; otherwise, true.
 next()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - False if eof(); otherwise, true.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - False if eof(); otherwise, true.
 
 ## setActiveDate(Date)
 
@@ -107,4 +107,4 @@ Sets the internal iterator to the given date.
 Void SetActiveDate(Date date)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)

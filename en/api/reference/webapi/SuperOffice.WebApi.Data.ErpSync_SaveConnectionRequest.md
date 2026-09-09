@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSync_SaveConnectionRequest"></a> Class ErpSync\_SaveConnectionRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ErpSync_SaveConnectionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ErpSync\_SaveConnectionRequest](SuperOffice.WebApi.Data.ErpSync\_SaveConnectionRequest.md)
+[ErpSync\_SaveConnectionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSync_SaveConnectionRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public ErpConnection Connection { get; set; }
 
 #### Property Value
 
- [ErpConnection](SuperOffice.WebApi.Data.ErpConnection.md)
+ [ErpConnection](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpConnection)
 

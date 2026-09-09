@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ViewState_SetHistoryLengthPrefValueRequest"></a> Class ViewState\_SetHistoryLengthPrefValueRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ViewState_SetHistoryLengthPrefValueRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ViewState\_SetHistoryLengthPrefValueRequest](SuperOffice.WebApi.Data.ViewState\_SetHistoryLengthPrefValueRequest.md)
+[ViewState\_SetHistoryLengthPrefValueRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ViewState_SetHistoryLengthPrefValueRequest)
 
 #### Inherited Members
 

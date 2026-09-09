@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DocumentMigrationItemList"></a> Class DocumentMigrationItemList
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for DocumentMigrationItemList.
@@ -12,7 +12,7 @@ public class DocumentMigrationItemList
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[DocumentMigrationItemList](SuperOffice.WebApi.Data.DocumentMigrationItemList.md)
+[DocumentMigrationItemList](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentMigrationItemList)
 
 #### Inherited Members
 
@@ -46,7 +46,7 @@ public virtual DocumentMigrationAssociate[] Associates { get; set; }
 
 #### Property Value
 
- [DocumentMigrationAssociate](SuperOffice.WebApi.Data.DocumentMigrationAssociate.md)\[\]
+ [DocumentMigrationAssociate](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentMigrationAssociate)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_DocumentMigrationItemList_Documents"></a> Documents
 
@@ -58,7 +58,7 @@ public virtual DocumentMigrationItem[] Documents { get; set; }
 
 #### Property Value
 
- [DocumentMigrationItem](SuperOffice.WebApi.Data.DocumentMigrationItem.md)\[\]
+ [DocumentMigrationItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentMigrationItem)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_DocumentMigrationItemList_NumDocumentsAlreadyMigrated"></a> NumDocumentsAlreadyMigrated
 
@@ -86,5 +86,5 @@ public virtual int NumDocumentsOmitted { get; set; }
 
 ## See Also
 
-[DocumentMigrationAgent](SuperOffice.WebApi.Agents.DocumentMigrationAgent.md)
+[DocumentMigrationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DocumentMigrationAgent)
 

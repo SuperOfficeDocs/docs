@@ -1,6 +1,6 @@
 # Interface IReportAgent {#SuperOffice_WebApi_Agents_IReportAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Run reports, set favourites, labels
@@ -11,7 +11,7 @@ public interface IReportAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -27,13 +27,13 @@ Task<ReportLabelLayoutEntity> CreateDefaultReportLabelLayoutEntityAsync(RequestO
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ReportLabelLayoutEntity](SuperOffice.WebApi.Data.ReportLabelLayoutEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ReportLabelLayoutEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReportLabelLayoutEntity)\&gt;
 
 A blank ReportLabelLayoutEntity
 
@@ -51,7 +51,7 @@ Task DeleteReportLabelLayoutEntityAsync(int reportLabelLayoutEntityId, RequestOp
 
 The identity of the ReportLabelLayoutEntity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -73,13 +73,13 @@ Task<ReportLabelLayoutEntity> GetReportLabelLayoutEntityAsync(int reportLabelLay
 
 The identifier of the ReportLabelLayoutEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ReportLabelLayoutEntity](SuperOffice.WebApi.Data.ReportLabelLayoutEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ReportLabelLayoutEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReportLabelLayoutEntity)\&gt;
 
 ReportLabelLayoutEntity
 
@@ -93,17 +93,17 @@ Task<ReportLabelLayoutEntity> SaveReportLabelLayoutEntityAsync(ReportLabelLayout
 
 #### Parameters
 
-`reportLabelLayoutEntity` [ReportLabelLayoutEntity](SuperOffice.WebApi.Data.ReportLabelLayoutEntity.md)
+`reportLabelLayoutEntity` [ReportLabelLayoutEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReportLabelLayoutEntity)
 
 The ReportLabelLayoutEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ReportLabelLayoutEntity](SuperOffice.WebApi.Data.ReportLabelLayoutEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ReportLabelLayoutEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReportLabelLayoutEntity)\&gt;
 
 New or updated ReportLabelLayoutEntity
 

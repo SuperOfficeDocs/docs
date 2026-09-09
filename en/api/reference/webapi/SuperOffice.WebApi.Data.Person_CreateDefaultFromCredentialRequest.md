@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Person_CreateDefaultFromCredentialRequest"></a> Class Person\_CreateDefaultFromCredentialRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Person_CreateDefaultFromCredentialRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Person\_CreateDefaultFromCredentialRequest](SuperOffice.WebApi.Data.Person\_CreateDefaultFromCredentialRequest.md)
+[Person\_CreateDefaultFromCredentialRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person_CreateDefaultFromCredentialRequest)
 
 #### Inherited Members
 

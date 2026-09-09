@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Pocket_NotifyUsersRequest"></a> Class Pocket\_NotifyUsersRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Pocket_NotifyUsersRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Pocket\_NotifyUsersRequest](SuperOffice.WebApi.Data.Pocket\_NotifyUsersRequest.md)
+[Pocket\_NotifyUsersRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Pocket_NotifyUsersRequest)
 
 #### Inherited Members
 
@@ -50,5 +50,5 @@ public NotificationEventType NotificationEventType { get; set; }
 
 #### Property Value
 
- [NotificationEventType](SuperOffice.WebApi.Data.NotificationEventType.md)
+ [NotificationEventType](/en/api/reference/webapi/SuperOffice.WebApi.Data.NotificationEventType)
 

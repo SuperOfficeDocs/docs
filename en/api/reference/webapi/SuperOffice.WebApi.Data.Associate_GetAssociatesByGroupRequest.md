@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Associate_GetAssociatesByGroupRequest"></a> Class Associate\_GetAssociatesByGroupRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Associate_GetAssociatesByGroupRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Associate\_GetAssociatesByGroupRequest](SuperOffice.WebApi.Data.Associate\_GetAssociatesByGroupRequest.md)
+[Associate\_GetAssociatesByGroupRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate_GetAssociatesByGroupRequest)
 
 #### Inherited Members
 

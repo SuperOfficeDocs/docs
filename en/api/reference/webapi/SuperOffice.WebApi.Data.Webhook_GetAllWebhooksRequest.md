@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Webhook_GetAllWebhooksRequest"></a> Class Webhook\_GetAllWebhooksRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Webhook_GetAllWebhooksRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Webhook\_GetAllWebhooksRequest](SuperOffice.WebApi.Data.Webhook\_GetAllWebhooksRequest.md)
+[Webhook\_GetAllWebhooksRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Webhook_GetAllWebhooksRequest)
 
 #### Inherited Members
 
@@ -60,5 +60,5 @@ public WebhookState StatusFilter { get; set; }
 
 #### Property Value
 
- [WebhookState](SuperOffice.WebApi.Data.WebhookState.md)
+ [WebhookState](/en/api/reference/webapi/SuperOffice.WebApi.Data.WebhookState)
 

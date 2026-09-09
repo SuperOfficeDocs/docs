@@ -145,8 +145,14 @@ function Clean-Description {
     $Text = $Text -replace '&amp;', '&'
 
     # The hand-rolled YAML parser never unescapes backslash-escaped quotes inside
-    # attribute values (e.g. <a href=\"...\">), so do it here before matching them
+    # attribute values (for example <a href=\"...\">), so do it here before matching them
     $Text = $Text -replace '\\"', '"'
+
+    # Convert DocFx <xref href="..."> cross-references (source data occasionally carries these in a
+    # description/summary field, for example "See <xref href=...>") to a real markdown link via the same
+    # resolution Get-TypeLink uses for return types. Mintlify's MDX renderer doesn't resolve <xref>, it just
+    # drops the unrecognized element and renders the inner text (here, empty). See #401/#404.
+    $Text = [regex]::Replace($Text, '(?is)<xref\s+href="([^"]+)"[^>]*>\s*</xref>', { param($m) Get-TypeLink -Type $m.Groups[1].Value })
 
     # Convert embedded HTML links and bold/italic markup to markdown equivalents
     # before the generic <, > escaping below turns them into unreadable tag soup
@@ -163,7 +169,7 @@ function Clean-Description {
     # <, > escaping below turns them into unreadable escaped tag soup
     $Text = Convert-HtmlTablesToMarkdown $Text
 
-    # Wrap JSON-like patterns in backticks (e.g., Format: {"key": "value"})
+    # Wrap JSON-like patterns in backticks (for example, Format: {"key": "value"})
     $Text = $Text -replace '(\{[^}]+\})', '`$1`'
 
     # Convert any remaining plain < and > to HTML entities for markdown
@@ -194,10 +200,9 @@ function Get-TypeLink {
         'NSStream' = 'CRMScript.NetServer.NSStream'
     }
     
-    # Strip every trailing "[]" level (not just one) -- a leftover "[]" on baseType
-    # still matches the CRMScript.* branch below and leaks into the href for
-    # array-of-array types like "NSLocalizedField[][]", which browsers then
-    # percent-encode into a broken URL. See #316.
+    # Strip every trailing "[]" level, not just one: a leftover "[]" on baseType still matches the
+    # CRMScript.* branch below and leaks into the href for array-of-array types like
+    # "NSLocalizedField[][]", which browsers then percent-encode into a broken URL. See #316.
     $baseType = $Type
     $arraySuffix = ""
     while ($baseType.EndsWith('[]')) {
@@ -212,6 +217,16 @@ function Get-TypeLink {
         $link = $baseType
     }
     else {
+        return $Type
+    }
+
+    # Only link types that actually have a generated page. The source YAML sometimes names a type under the
+    # wrong namespace (CRMScript.NetServer.Map, which lives at CRMScript.Native.Map) or a type with no doc
+    # page at all (CRMScript.NetServer.NSBinary); a link to either 404s. The set of generated pages is
+    # exactly the set of source .yml files, so test the source file rather than the not-yet-written output.
+    # Case-sensitive on purpose (see $SourceYamlFileNames above, #401): a casing mismatch must fail here the
+    # same way it fails on Linux, not silently resolve on this Windows dev machine's case-insensitive disk.
+    if (-not $SourceYamlFileNames.Contains($link + '.yml')) {
         return $Type
     }
 
@@ -233,11 +248,10 @@ function Build-Line {
     return $Parts -join ''
 }
 
-# The hand-rolled YAML parser captures raw text after a field's colon, which is
-# truthy in a later `if ($item.summary)` check even when the source YAML actually
-# means "empty" -- either an explicit `summary: ""`, or a bare `summary:` followed
-# only by a `# TODO` comment (which Clean-Description already treats as empty, but
-# only after the truthiness check has already let it through). Used at every raw
+# The hand-rolled YAML parser captures raw text after a field's colon, which is truthy in a later
+# `if ($item.summary)` check even when the source YAML actually means "empty": either an explicit
+# `summary: ""`, or a bare `summary:` followed only by a `# TODO` comment (which Clean-Description already
+# treats as empty, but only after the truthiness check has already let it through). Used at every raw
 # summary/remarks/description capture point so "empty" is decided once, see #189.
 function Test-EmptyRawField {
     param([string]$Text)
@@ -392,6 +406,16 @@ function Get-YamlItems {
 # Get all YAML files (excluding toc.yml)
 $yamlFiles = Get-ChildItem -Path $SourcePath -Filter "*.yml" | Where-Object { $_.Name -ne "toc.yml" }
 
+# Case-sensitive set of real source filenames, used by Get-TypeLink below. Test-Path is case-insensitive on
+# Windows (this dev machine's filesystem) but case-sensitive on GitHub Actions' Linux runners and the live
+# (Linux-served) site: a casing mismatch between a type name and its source .yml filename would silently
+# link-resolve here and only fail once it hits CI or production. Built once from the same enumeration above
+# rather than a fresh directory listing per Get-TypeLink call. See #401.
+$SourceYamlFileNames = [System.Collections.Generic.HashSet[string]]::new(
+    [string[]]$yamlFiles.Name,
+    [System.StringComparer]::Ordinal
+)
+
 Write-Host "Found $($yamlFiles.Count) YAML files to process" -ForegroundColor Green
 Write-Host ""
 
@@ -461,8 +485,8 @@ foreach ($yamlFile in $yamlFiles) {
     Add-Line $mdx (Build-Line @('uid: ', $mainUid.ToLower()))
     if ($isNamespace) {
         Add-Line $mdx (Build-Line @('title: Namespace ', $className))
-        # "Namespace" is a DocFx ManagedReference construct, not a real CRMScript
-        # language concept -- keep it out of the sidebar label (see #262).
+        # "Namespace" is a DocFx ManagedReference construct, not a real CRMScript language concept; keep it
+        # out of the sidebar label (see #262).
         $namespaceShortName = $className.Split('.')[-1]
         Add-Line $mdx (Build-Line @('sidebarTitle: ', $namespaceShortName))
     } elseif ($isEnum) {
@@ -755,28 +779,32 @@ foreach ($yamlFile in $yamlFiles) {
     
     } # End if/else for Namespace vs Class
     
-    # Write file. Line endings and BOM are hardcoded rather than left to
-    # [Environment]::NewLine / Out-File -Encoding UTF8 defaults, which are both
-    # version- and platform-dependent (Windows PowerShell 5.1: CRLF, BOM;
-    # PowerShell Core/pwsh: LF, no BOM by default). The actual bytes this repo stores
-    # are LF with a BOM -- confirmed via `git cat-file -p HEAD:<path>`, which bypasses
-    # any checkout-time filter, since local `core.autocrlf=true` round-trips every
-    # commit's line endings to LF in the object database regardless of what the
-    # working tree (or this script) wrote, then converts back to CRLF on checkout on
-    # this Windows machine. That round-trip masked the generator's real output for
-    # years -- inspecting the working tree (or a plain file read) shows CRLF, but the
-    # stored blob, and what a checkout with no such conversion (e.g. CI's pwsh on
-    # ubuntu-latest, see #189) actually sees, is LF. Writing LF directly here matches
-    # that canonical stored form on every platform, with no filter to rely on.
+    # Write file. Line endings and BOM are hardcoded rather than left to [Environment]::NewLine / Out-File
+    # -Encoding UTF8 defaults, which are both version- and platform-dependent (Windows PowerShell 5.1: CRLF,
+    # BOM; PowerShell Core/pwsh: LF, no BOM by default). The actual bytes this repo stores are LF with a BOM,
+    # confirmed via `git cat-file -p HEAD:<path>`, which bypasses any checkout-time filter, since local
+    # `core.autocrlf=true` round-trips every commit's line endings to LF in the object database regardless
+    # of what the working tree (or this script) wrote, then converts back to CRLF on checkout on this
+    # Windows machine. That round-trip masked the generator's real output for years: inspecting the working
+    # tree (or a plain file read) shows CRLF, but the stored blob, and what a checkout with no such
+    # conversion (for example CI's pwsh on ubuntu-latest, see #189) actually sees, is LF. Writing LF directly
+    # here matches that canonical stored form on every platform, with no filter to rely on.
     $content = $mdx -join "`n"
     # Remove lines with only whitespace. Matches only spaces/tabs, not newlines.
     $content = $content -replace '(?m)^[ \t]+$', ''
     # Collapse 3+ consecutive blank lines into 1. The HTML->markdown helpers above
     # (heading/list/table conversion) each pad their own blank-line margins; when two
     # converted blocks sit directly adjacent in the source with no prose between them
-    # (e.g. `<h3>Row operators</h3><table>...`), their margins stack into 2-3 blank
+    # (for example `<h3>Row operators</h3><table>...`), their margins stack into 2-3 blank
     # lines instead of 1. See #189.
     $content = $content -replace '\n{3,}', "`n`n"
+    # Root-relative cross-reference links. Mintlify's broken-link checker (and the
+    # llms.txt/markdown exports) resolve bare relative destinations like
+    # "(CRMScript.Global.Bool)" against the site root rather than the current page,
+    # so every "](CRMScript.*)" destination emitted above (Get-TypeLink type links
+    # and <a href="CRMScript.*"> conversions in Clean-Description alike) is prefixed
+    # with the reference tree's root-relative path as a final pass here.
+    $content = $content -replace '\]\(CRMScript\.', '](/en/automation/crmscript/reference/CRMScript.'
     [System.IO.File]::WriteAllText($outputFilePath, $content, (New-Object System.Text.UTF8Encoding($true)))
     
     Write-Host ('  Generated: ' + $outputFileName) -ForegroundColor Green

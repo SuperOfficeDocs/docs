@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Selection_GetDynamicSelectionCriteriaRequest"></a> Class Selection\_GetDynamicSelectionCriteriaRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Selection_GetDynamicSelectionCriteriaRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Selection\_GetDynamicSelectionCriteriaRequest](SuperOffice.WebApi.Data.Selection\_GetDynamicSelectionCriteriaRequest.md)
+[Selection\_GetDynamicSelectionCriteriaRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Selection_GetDynamicSelectionCriteriaRequest)
 
 #### Inherited Members
 

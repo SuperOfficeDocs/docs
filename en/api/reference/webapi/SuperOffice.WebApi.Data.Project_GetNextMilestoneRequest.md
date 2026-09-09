@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Project_GetNextMilestoneRequest"></a> Class Project\_GetNextMilestoneRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Project_GetNextMilestoneRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Project\_GetNextMilestoneRequest](SuperOffice.WebApi.Data.Project\_GetNextMilestoneRequest.md)
+[Project\_GetNextMilestoneRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project_GetNextMilestoneRequest)
 
 #### Inherited Members
 

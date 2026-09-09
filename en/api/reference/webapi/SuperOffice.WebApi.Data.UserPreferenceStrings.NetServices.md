@@ -1,6 +1,6 @@
 # Class UserPreferenceStrings.NetServices {#SuperOffice_WebApi_Data_UserPreferenceStrings_NetServices}
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 SuperOffice Web Services settings
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.NetServices
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.NetServices](SuperOffice.WebApi.Data.UserPreferenceStrings.NetServices.md)
+[UserPreferenceStrings.NetServices](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.NetServices)
 
 #### Inherited Members
 

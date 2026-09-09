@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Find_GetSpecifiedCriteriaInformationWithDefaultsRequest"></a> Class Find\_GetSpecifiedCriteriaInformationWithDefaultsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Find_GetSpecifiedCriteriaInformationWithDefaultsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Find\_GetSpecifiedCriteriaInformationWithDefaultsRequest](SuperOffice.WebApi.Data.Find\_GetSpecifiedCriteriaInformationWithDefaultsRequest.md)
+[Find\_GetSpecifiedCriteriaInformationWithDefaultsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Find_GetSpecifiedCriteriaInformationWithDefaultsRequest)
 
 #### Inherited Members
 

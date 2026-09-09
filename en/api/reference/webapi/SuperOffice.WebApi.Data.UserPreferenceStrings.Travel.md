@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Travel"></a> Class UserPreferenceStrings.Travel
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Travel
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.Travel
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.Travel](SuperOffice.WebApi.Data.UserPreferenceStrings.Travel.md)
+[UserPreferenceStrings.Travel](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Travel)
 
 #### Inherited Members
 

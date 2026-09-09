@@ -33,7 +33,7 @@ Accepts an appointment invitation.
 Void Accept(Integer appointmentId, Integer updateMode)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -52,7 +52,7 @@ Accepts that an invited participant has rejected your invitation or assignment.
 NSAppointmentEntity AcceptRejected(Integer appointmentId, Integer updateMode)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity)
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointmentEntity)
 
 **Example:**
 
@@ -71,7 +71,7 @@ Accepts an appointment invitation and sends an email confirmation to the meeting
 Void AcceptWithEmailConfirmation(Integer appointmentId, Integer updateMode)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -90,7 +90,7 @@ Accepts an appointment invitation and sends an email confirmation to the meeting
 Void AcceptWithSmtpEmailConfirmation(Integer appointmentId, Integer updateMode, NSEMailConnectionInfo smtpEMailConnectionInfo)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -110,7 +110,7 @@ Assigns an appointment to another person.
 NSAppointmentEntity AssignTo(Integer appointmentId, ParticipantInfo participant, Integer updateMode)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity) - Updated NSAppointmentEntity.
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointmentEntity) - Updated NSAppointmentEntity.
 
 **Example:**
 
@@ -130,7 +130,7 @@ Calculates the set of dates that represents a recurrence pattern. Adds conflict 
 NSRecurrenceInfo CalculateDays(NSAppointmentEntity appointmentEntity)
 ```
 
-**Returns:** [CRMScript.NetServer.NSRecurrenceInfo](CRMScript.NetServer.NSRecurrenceInfo)
+**Returns:** [CRMScript.NetServer.NSRecurrenceInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSRecurrenceInfo)
 
 ## CanAssignToProjectMember(Integer,Integer)
 
@@ -138,7 +138,7 @@ NSRecurrenceInfo CalculateDays(NSAppointmentEntity appointmentEntity)
 Bool CanAssignToProjectMember(Integer projectId, Integer suggestedAppointmentId)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 ## CleanUpBookingDeleted(Integer[])
 
@@ -148,7 +148,7 @@ Deletes all appointments(within the appointmentIds array) with status BookingDel
 Integer CleanUpBookingDeleted(Integer[] appointmentIds)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 ## CleanUpRecurringBookingDeleted()
 
@@ -158,7 +158,7 @@ Deletes all appointments with status BookingDeleted and for logged-in user.
 Integer CleanUpRecurringBookingDeleted()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 ## CreateAndAccept(Integer,Integer)
 
@@ -168,7 +168,7 @@ Creates an appointment from an emailItem invitation and accepting it.
 Void CreateAndAccept(Integer emailItemId, Integer updateMode)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## CreateAndAcceptWithEmailConfirmation(Integer,Integer)
 
@@ -178,7 +178,7 @@ Creates an appointment from an emailItem invitation and accepting it with email 
 Void CreateAndAcceptWithEmailConfirmation(Integer emailItemId, Integer updateMode)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## CreateAppointmentForUID(String)
 
@@ -188,7 +188,7 @@ Creates an invitation record and an appointment with a given UID to reserve it i
 NSAppointmentEntity CreateAppointmentForUID(NSAppointmentEntity appointmentEntity, String uID)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity) - The newly created NSAppointmentEntity or null if the UID is in the DB already.
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointmentEntity) - The newly created NSAppointmentEntity or null if the UID is in the DB already.
 
 **Example:**
 
@@ -207,7 +207,7 @@ Sets default values into a new NSAppointmentEntity.
 NSAppointmentEntity CreateDefaultAppointmentEntity()
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity) - A new NSAppointmentEntity with default values.
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointmentEntity) - A new NSAppointmentEntity with default values.
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance.
@@ -229,7 +229,7 @@ Creates an NSAppointmentEntity populated with the default values for the specifi
 NSAppointmentEntity CreateDefaultAppointmentEntityByType(Integer type)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity)
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointmentEntity)
 
 **Example:**
 
@@ -247,7 +247,7 @@ Creates an NSAppointmentEntity populated with the default values for the specifi
 NSAppointmentEntity CreateDefaultAppointmentEntityByTypeAndAssociate(Integer type, Integer associateId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity)
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointmentEntity)
 
 **Example:**
 
@@ -264,7 +264,7 @@ NSAppointmentEntity res = agent.CreateDefaultAppointmentEntityByTypeAndAssociate
 NSAppointmentEntity CreateDefaultAppointmentEntityFromProjectSuggestion(Integer suggestedAppointmentId, Integer projectId, Bool createNow, Integer ownerId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity)
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointmentEntity)
 
 ## CreateDefaultAppointmentEntityFromSaleSuggestion(Integer,Integer,Bool,Integer)
 
@@ -274,7 +274,7 @@ Creates an appointment based on a suggested appointment.
 NSAppointmentEntity CreateDefaultAppointmentEntityFromSaleSuggestion(Integer suggestedAppointmentId, Integer saleId, Bool createNow, Integer ownerId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity) - The newly created appointment.
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointmentEntity) - The newly created appointment.
 
 **Example:**
 
@@ -295,7 +295,7 @@ Creates an NSRecurrenceInfo object populated with the default values for the spe
 NSRecurrenceInfo CreateDefaultRecurrence()
 ```
 
-**Returns:** [CRMScript.NetServer.NSRecurrenceInfo](CRMScript.NetServer.NSRecurrenceInfo)
+**Returns:** [CRMScript.NetServer.NSRecurrenceInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSRecurrenceInfo)
 
 **Example:**
 
@@ -312,7 +312,7 @@ Creates an NSRecurrenceInfo object populated with the default values for the spe
 NSRecurrenceInfo CreateDefaultRecurrenceByDate(DateTime startDate)
 ```
 
-**Returns:** [CRMScript.NetServer.NSRecurrenceInfo](CRMScript.NetServer.NSRecurrenceInfo)
+**Returns:** [CRMScript.NetServer.NSRecurrenceInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSRecurrenceInfo)
 
 ## CreateDefaultReOpenAppointment(Integer)
 
@@ -322,7 +322,7 @@ A re-open appointment should be created as a reminder to re-open the sale at a c
 NSAppointmentEntity CreateDefaultReOpenAppointment(Integer saleId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity)
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointmentEntity)
 
 **Example:**
 
@@ -340,7 +340,7 @@ Sets default values into a new NSSuggestedAppointmentEntity.
 NSSuggestedAppointmentEntity CreateDefaultSuggestedAppointmentEntity()
 ```
 
-**Returns:** [CRMScript.NetServer.NSSuggestedAppointmentEntity](CRMScript.NetServer.NSSuggestedAppointmentEntity) - A new NSSuggestedAppointmentEntity with default values.
+**Returns:** [CRMScript.NetServer.NSSuggestedAppointmentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSSuggestedAppointmentEntity) - A new NSSuggestedAppointmentEntity with default values.
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance.
@@ -362,7 +362,7 @@ Sets default values into a new NSTaskListItem.
 NSTaskListItem CreateDefaultTaskListItem()
 ```
 
-**Returns:** [CRMScript.NetServer.NSTaskListItem](CRMScript.NetServer.NSTaskListItem) - A new NSTaskListItem with default values.
+**Returns:** [CRMScript.NetServer.NSTaskListItem](/en/automation/crmscript/reference/CRMScript.NetServer.NSTaskListItem) - A new NSTaskListItem with default values.
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance.
@@ -384,7 +384,7 @@ Declining an appointment invitation where no tentative appointments have been cr
 Void DeclineInvitationFromEmailItem(Integer emailItemId, String rejectReason)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## Delete(Integer,Integer,Bool)
 
@@ -394,7 +394,7 @@ Deletes a booking
 Void Delete(Integer appointmentId, Integer updateMode, Bool sendEmailToParticipants, NSEMailConnectionInfo smtpEMailConnectionInfo, NSEMailConnectionInfo imapEMailConnectionInfo)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## DeleteAppointmentEntity(Integer)
 
@@ -404,7 +404,7 @@ Deletes the NSAppointmentEntity.
 Void DeleteAppointmentEntity(Integer appointmentEntity)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -421,7 +421,7 @@ Adds a sales lead (task) to a contact in SuperOffice. If the contact or person i
 NSSalesActivity GenerateLead(Integer associateIdForNewContact, String leadDescription, String relation, Integer relationId, String leadContact, String leadPersonFirstname, String leadPersonLastname, String leadPersonEmail, String leadPhoneNumber, String creatorsContact, String creatorsFirstname, String creatorsLastname)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSalesActivity](CRMScript.NetServer.NSSalesActivity)
+**Returns:** [CRMScript.NetServer.NSSalesActivity](/en/automation/crmscript/reference/CRMScript.NetServer.NSSalesActivity)
 
 <Note>
 If more than one contact is found a list of contacts is returned.
@@ -454,7 +454,7 @@ Gets activity information for one or more days according to the given date inter
 NSActivityInformationListItem[] GetActivityInformationListByDatesAndAssociate(DateTime startDate, DateTime endDate, Integer associateId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSActivityInformationListItem](CRMScript.NetServer.NSActivityInformationListItem)[]
+**Returns:** [CRMScript.NetServer.NSActivityInformationListItem](/en/automation/crmscript/reference/CRMScript.NetServer.NSActivityInformationListItem)[]
 
 <Note>
 The time portion of the dates is ignored. Private appointments are counted, but may not be visible through tooltips or other more detailed services.
@@ -476,7 +476,7 @@ NSActivityInformationListItem[] res = agent.GetActivityInformationListByDatesAnd
 NSMultiAlarmData GetAlarms(Bool includeInvitations, Bool includeAllAppointments, Integer defaultAlarmLeadTimeInMinutes)
 ```
 
-**Returns:** [CRMScript.NetServer.NSMultiAlarmData](CRMScript.NetServer.NSMultiAlarmData)
+**Returns:** [CRMScript.NetServer.NSMultiAlarmData](/en/automation/crmscript/reference/CRMScript.NetServer.NSMultiAlarmData)
 
 ## GetAppointment(Integer)
 
@@ -486,7 +486,7 @@ Gets an NSAppointment object.
 NSAppointment GetAppointment(Integer appointmentId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)
 
 **Example:**
 
@@ -503,7 +503,7 @@ Gets an NSAppointmentEntity object.
 NSAppointmentEntity GetAppointmentEntity(Integer appointmentEntityId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity)
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointmentEntity)
 
 **Example:**
 
@@ -520,7 +520,7 @@ Gets the appointment that corresponds to the given UID.
 NSAppointmentEntity GetAppointmentFromUID(String uID)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity) - Appointment corresponding to uId.
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointmentEntity) - Appointment corresponding to uId.
 
 **Example:**
 
@@ -538,7 +538,7 @@ Checks if any of the participants is marked to receive emails on this appointmen
 Bool GetAppointmentHaveParticipantsWithEmail(Integer appointmentId)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - False if no participants are defined.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - False if no participants are defined.
 
 **Example:**
 
@@ -556,7 +556,7 @@ Retrieves an array of NSAppointment objects.
 NSAppointment[] GetAppointmentList()
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 **Example:**
 
@@ -574,7 +574,7 @@ Gets all records involved in a booking and/or recurring appointments.
 NSAppointment[] GetAppointmentRecords(Integer motherId, Integer recurrenceRuleId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 ## GetAppointmentsByTaskHeading(Integer)
 
@@ -584,7 +584,7 @@ Returns appointments of a specific appointment task heading.
 NSAppointment[] GetAppointmentsByTaskHeading(Integer taskHeadingId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 <Note>
 Task represents the different types of activities, such as Phone call or Meeting.
@@ -604,7 +604,7 @@ NSAppointment[] res = agent.GetAppointmentsByTaskHeading(taskHeadingId);
 NSAppointment[] GetAssociateDiary(Integer associateId, DateTime startTime, DateTime endTime, Integer count)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 ## GetAssociatesDiary(Integer[])
 
@@ -612,7 +612,7 @@ NSAppointment[] GetAssociateDiary(Integer associateId, DateTime startTime, DateT
 NSAppointment[] GetAssociatesDiary(Integer[] associateIds, DateTime startTime, DateTime endTime)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 ## GetCanInsertForAssociates(Integer[])
 
@@ -622,7 +622,7 @@ Checks if the current associate can create appointments in the diary of other as
 Bool[] GetCanInsertForAssociates(Integer[] associateIds)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)[] - An array of Bool corresponding to the associate array input parameter.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)[] - An array of Bool corresponding to the associate array input parameter.
 
 **Example:**
 
@@ -640,7 +640,7 @@ Returns a specified number of appointments within a time range. The appointments
 NSAppointment[] GetContactAppointments(Integer contactId, DateTime startTime, DateTime endTime, Integer count)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 <Note>
 If the logged-in user is not allowed to view this persons appointments an exception is thrown.
@@ -665,7 +665,7 @@ Returns a specified number of appointments of a specific appointment task type w
 NSAppointment[] GetContactAppointmentsByTask(Integer contactId, DateTime startTime, DateTime endTime, Integer count, Integer taskId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 <Note>
 Task represents the different types of activities, such as Phone call or Meeting.
@@ -691,7 +691,7 @@ Returns a specified number of appointments of a specific appointment task headin
 NSAppointment[] GetContactAppointmentsByTaskHeading(Integer contactId, DateTime startTime, DateTime endTime, Integer count, Integer taskHeadingId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 <Note>
 Task represents the different types of activities, such as Phone call or Meeting.
@@ -717,7 +717,7 @@ Returns a specified number of appointments belonging to an array of appointment 
 NSAppointment[] GetContactAppointmentsByTasks(Integer contactId, DateTime startTime, DateTime endTime, Integer count, Integer[] taskIds)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 <Note>
 Task represents the different types of activities, such as Phone call or Meeting.
@@ -743,7 +743,7 @@ Returns a specified number of appointments of a specific appointment type within
 NSAppointment[] GetContactAppointmentsByType(Integer contactId, DateTime startTime, DateTime endTime, Integer count, Integer appointmentType)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 <Note>
 If the logged-in user is not allowed to view this contacts appointments an exception is thrown.
@@ -769,7 +769,7 @@ Gets combined day information (activity + red-letter summary) for one or more da
 NSDayInformationListItem[] GetDayInformationListByDatesAndAssociate(DateTime startDate, DateTime endDate, Integer associateId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDayInformationListItem](CRMScript.NetServer.NSDayInformationListItem)[]
+**Returns:** [CRMScript.NetServer.NSDayInformationListItem](/en/automation/crmscript/reference/CRMScript.NetServer.NSDayInformationListItem)[]
 
 <Note>
 The time portion of the dates is ignored. Private appointments are counted, but may not be visible through tooltips or other more detailed services.
@@ -791,7 +791,7 @@ NSDayInformationListItem[] res = agent.GetDayInformationListByDatesAndAssociate(
 NSAppointment[] GetDiaryByGroup(Integer groupId, Integer groupType, DateTime startTime, DateTime endTime, Integer count)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 ## GetMyAppointments(Integer)
 
@@ -801,7 +801,7 @@ Returns a specified number of appointments within a time range. The appointments
 NSAppointment[] GetMyAppointments(DateTime startTime, DateTime endTime, Integer count)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 **Example:**
 
@@ -821,7 +821,7 @@ Returns a specified number of appointments within a time range. The appointments
 NSAppointment[] GetMyDiary(DateTime startTime, DateTime endTime, Integer count)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 <Note>
 It returns only appointments that would be displayed in the user's diary.
@@ -845,7 +845,7 @@ Gets published appointments from the logged in user.
 NSAppointment[] GetMyPublishedAppointments()
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 **Example:**
 
@@ -862,7 +862,7 @@ Returns a specified number of appointments within a time range. The appointments
 NSAppointmentSyncData[] GetMySyncAppointments(DateTime startTime, DateTime endTime)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointmentSyncData](CRMScript.NetServer.NSAppointmentSyncData)[]
+**Returns:** [CRMScript.NetServer.NSAppointmentSyncData](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointmentSyncData)[]
 
 **Example:**
 
@@ -881,7 +881,7 @@ Returns a specified number of appointments within a time range. The appointments
 NSAppointment[] GetMyTasks(Integer count)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 <Note>
 It returns only appointments that would be displayed in the user's task list.
@@ -903,7 +903,7 @@ Gets the next suggested appointment for a given sale (or rather a given sales gu
 NSSuggestedAppointment GetNextSuggestedAppointmentBySale(Integer saleId, Integer currentAppointmentId, Bool skipCompleteCheck)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSuggestedAppointment](CRMScript.NetServer.NSSuggestedAppointment)
+**Returns:** [CRMScript.NetServer.NSSuggestedAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSSuggestedAppointment)
 
 **Example:**
 
@@ -923,7 +923,7 @@ Looks up the name / email of an event-organizer
 String GetOrganizerName(Integer motherAppointmentId)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -941,7 +941,7 @@ Returns a specified number of appointments within a time range. The appointments
 NSAppointment[] GetPersonAppointments(Integer personId, Bool includeProjectAppointments, DateTime startTime, DateTime endTime, Integer count)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 <Note>
 If the person not is a SuperOffice user (associate) or the logged-on user is not allowed to view this persons appointments an exception is thrown.
@@ -967,7 +967,7 @@ Returns a specified number of appointments of a specific appointment task type w
 NSAppointment[] GetPersonAppointmentsByTask(Integer personId, Bool includeProjectAppointments, DateTime startTime, DateTime endTime, Integer count, Integer taskId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 <Note>
 Task represents the different types of activities, such as Phone call or Meeting.
@@ -994,7 +994,7 @@ Returns a specified number of appointments of a specific appointment task headin
 NSAppointment[] GetPersonAppointmentsByTaskHeading(Integer personId, Bool includeProjectAppointments, DateTime startTime, DateTime endTime, Integer count, Integer taskHeadingId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 <Note>
 Task represents the different types of activities, such as Phone call or Meeting.
@@ -1021,7 +1021,7 @@ Returns a specified number of appointments from a list of appointment task types
 NSAppointment[] GetPersonAppointmentsByTasks(Integer personId, Bool includeProjectAppointments, DateTime startTime, DateTime endTime, Integer count, Integer[] taskIds)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 <Note>
 Task represents the different types of activities, such as Phone call or Meeting.
@@ -1048,7 +1048,7 @@ Returns a specified number of appointments of a specific appointment type within
 NSAppointment[] GetPersonAppointmentsByType(Integer personId, Bool includeProjectAppointments, DateTime startTime, DateTime endTime, Integer count, Integer appointmentType)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 **Example:**
 
@@ -1071,7 +1071,7 @@ Returns a specified number of appointments within a time range.
 NSAppointment[] GetPersonDiary(Integer personId, DateTime startTime, DateTime endTime, Integer count)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 <Note>
 It only returns appointments that would be displayed in the user's diary. The appointments belong to the person specified. If the person not is a SuperOffice user (associate) or the logged-on user is not allowed to view this persons appointments an exception is thrown.
@@ -1096,7 +1096,7 @@ Returns a specified number of appointments within a time range.
 NSAppointment[] GetPersonTasks(Integer personId, Integer count)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 <Note>
 It only returns appointments that would be displayed in the user's task list. The appointments belong to the person specified. If the person not is a SuperOffice user (associate) or the logged-on user is not allowed to view this persons appointments an exception is thrown.
@@ -1119,7 +1119,7 @@ Returns a specified number of appointments within a time range. The appointments
 NSAppointment[] GetProjectAppointments(Integer projectId, DateTime startTime, DateTime endTime, Integer count)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 <Note>
 If the logged-on user is not allowed to view this projects appointments an exception is thrown.
@@ -1144,7 +1144,7 @@ Returns a specified number of appointments of a specific appointment task type w
 NSAppointment[] GetProjectAppointmentsByTask(Integer projectId, DateTime startTime, DateTime endTime, Integer count, Integer taskId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 **Example:**
 
@@ -1166,7 +1166,7 @@ Returns a specified number of appointments of a specific appointment task headin
 NSAppointment[] GetProjectAppointmentsByTaskHeading(Integer projectId, DateTime startTime, DateTime endTime, Integer count, Integer taskHeadingId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 **Example:**
 
@@ -1188,7 +1188,7 @@ Returns a specified number of appointments matching the list of appointment task
 NSAppointment[] GetProjectAppointmentsByTasks(Integer projectId, DateTime startTime, DateTime endTime, Integer count, Integer[] taskIds)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 **Example:**
 
@@ -1210,7 +1210,7 @@ Returns a specified number of appointments of a specific appointment type within
 NSAppointment[] GetProjectAppointmentsByType(Integer projectId, DateTime startTime, DateTime endTime, Integer count, Integer appointmentType)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 **Example:**
 
@@ -1232,7 +1232,7 @@ Returns a specified number of appointments within a time range. The appointments
 NSAppointment[] GetProjectMemberAppointments(Integer personId, DateTime startTime, DateTime endTime, Integer count)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 **Example:**
 
@@ -1253,7 +1253,7 @@ Returns a specified number of appointments of a specific appointment task type w
 NSAppointment[] GetProjectMemberAppointmentsByTask(Integer personId, DateTime startTime, DateTime endTime, Integer count, Integer taskId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 **Example:**
 
@@ -1275,7 +1275,7 @@ Returns a specified number of appointments of a specific appointment task headin
 NSAppointment[] GetProjectMemberAppointmentsByTaskHeading(Integer personId, DateTime startTime, DateTime endTime, Integer count, Integer taskHeadingId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 **Example:**
 
@@ -1297,7 +1297,7 @@ Returns a specified number of appointments matching a set of appointment task ty
 NSAppointment[] GetProjectMemberAppointmentsByTasks(Integer personId, DateTime startTime, DateTime endTime, Integer count, Integer[] taskIds)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 **Example:**
 
@@ -1319,7 +1319,7 @@ Returns a specified number of appointments of a specific appointment type within
 NSAppointment[] GetProjectMemberAppointmentsByType(Integer personId, DateTime startTime, DateTime endTime, Integer count, Integer appointmentType)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 **Example:**
 
@@ -1341,7 +1341,7 @@ Gets published appointment by appointment ID.
 NSAppointment GetPublishedAppointment(Integer appointmentId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)
 
 **Example:**
 
@@ -1359,7 +1359,7 @@ Gets published appointments by appointment IDs.
 NSAppointment[] GetPublishedAppointments(Integer[] appointmentIds)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 **Example:**
 
@@ -1377,7 +1377,7 @@ Gets published appointments by project ID.
 NSAppointment[] GetPublishedProjectAppointments(Integer projectId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)[]
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)[]
 
 **Example:**
 
@@ -1395,7 +1395,7 @@ Gets detailed red-letter day information (red-letter summary + individual day te
 NSRedLetterInformationListItem[] GetRedLetterInformationListByDatesAndAssociate(DateTime startDate, DateTime endDate, Integer associateId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSRedLetterInformationListItem](CRMScript.NetServer.NSRedLetterInformationListItem)[]
+**Returns:** [CRMScript.NetServer.NSRedLetterInformationListItem](/en/automation/crmscript/reference/CRMScript.NetServer.NSRedLetterInformationListItem)[]
 
 <Note>
 The time portion of the dates is ignored.
@@ -1419,7 +1419,7 @@ Gets an NSSuggestedAppointment object.
 NSSuggestedAppointment GetSuggestedAppointment(Integer suggestedAppointmentId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSuggestedAppointment](CRMScript.NetServer.NSSuggestedAppointment)
+**Returns:** [CRMScript.NetServer.NSSuggestedAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSSuggestedAppointment)
 
 **Example:**
 
@@ -1436,7 +1436,7 @@ Gets an NSSuggestedAppointmentEntity object.
 NSSuggestedAppointmentEntity GetSuggestedAppointmentEntity(Integer suggestedAppointmentEntityId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSuggestedAppointmentEntity](CRMScript.NetServer.NSSuggestedAppointmentEntity)
+**Returns:** [CRMScript.NetServer.NSSuggestedAppointmentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSSuggestedAppointmentEntity)
 
 **Example:**
 
@@ -1453,7 +1453,7 @@ Gets an NSTaskListItem object.
 NSTaskListItem GetTaskListItem(Integer taskListItemId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSTaskListItem](CRMScript.NetServer.NSTaskListItem)
+**Returns:** [CRMScript.NetServer.NSTaskListItem](/en/automation/crmscript/reference/CRMScript.NetServer.NSTaskListItem)
 
 **Example:**
 
@@ -1470,7 +1470,7 @@ Gets all takslist items
 NSTaskListItem[] GetTaskListItems(Bool includeDeleted)
 ```
 
-**Returns:** [CRMScript.NetServer.NSTaskListItem](CRMScript.NetServer.NSTaskListItem)[]
+**Returns:** [CRMScript.NetServer.NSTaskListItem](/en/automation/crmscript/reference/CRMScript.NetServer.NSTaskListItem)[]
 
 **Example:**
 
@@ -1488,7 +1488,7 @@ Gets the UID associated with the appointment id in the Invitation table.
 String GetUIDFromAppointmentId(Integer appointmentId, Bool useMotherId)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The associated UID, or null if none exist.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The associated UID, or null if none exist.
 
 **Example:**
 
@@ -1507,10 +1507,10 @@ Moving a booking to another start time.
 NSAppointmentEntity Move(Integer appointmentId, DateTime newStartTime, Integer updateMode)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity)
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointmentEntity)
 
 <Note>
-See &lt;xref href="CRMScript.NetServer.RecurrenceUpdateMode" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;
+See [CRMScript.NetServer.RecurrenceUpdateMode](/en/automation/crmscript/reference/CRMScript.NetServer.RecurrenceUpdateMode)
 </Note>
 
 **Example:**
@@ -1531,10 +1531,10 @@ Rejecting an appointment invitation
 Void Reject(Integer appointmentId, String rejectReason, Integer updateMode)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
-See &lt;xref href="CRMScript.NetServer.RecurrenceUpdateMode" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;
+See [CRMScript.NetServer.RecurrenceUpdateMode](/en/automation/crmscript/reference/CRMScript.NetServer.RecurrenceUpdateMode)
 </Note>
 
 **Example:**
@@ -1555,10 +1555,10 @@ Rejecting an appointment invitation and send an email confirmation to the meetin
 Void RejectWithEmailConfirmation(Integer appointmentId, String rejectReason, Integer updateMode)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
-See &lt;xref href="CRMScript.NetServer.RecurrenceUpdateMode" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;
+See [CRMScript.NetServer.RecurrenceUpdateMode](/en/automation/crmscript/reference/CRMScript.NetServer.RecurrenceUpdateMode)
 </Note>
 
 **Example:**
@@ -1579,10 +1579,10 @@ Rejecting an appointment invitation and send an email confirmation to the meetin
 Void RejectWithSmtpEmailConfirmation(Integer appointmentId, String rejectReason, Integer updateMode, NSEMailConnectionInfo smtpEMailConnectionInfo)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
-See &lt;xref href="CRMScript.NetServer.RecurrenceUpdateMode" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;
+See [CRMScript.NetServer.RecurrenceUpdateMode](/en/automation/crmscript/reference/CRMScript.NetServer.RecurrenceUpdateMode)
 </Note>
 
 **Example:**
@@ -1604,7 +1604,7 @@ Submits a request for information. The request is added to the task list of the 
 NSSalesActivity RequestForInfo(Integer associateIdForNewContact, String channel, String regarding, String contactName, String personFirstname, String personLastname, String emailAddress, String phoneNumber)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSalesActivity](CRMScript.NetServer.NSSalesActivity)
+**Returns:** [CRMScript.NetServer.NSSalesActivity](/en/automation/crmscript/reference/CRMScript.NetServer.NSSalesActivity)
 
 **Example:**
 
@@ -1629,7 +1629,7 @@ Saving a booking.
 NSAppointmentEntity Save(NSAppointmentEntity appointmentEntity, Integer updateMode, Bool sendEmailToParticipants, NSEMailConnectionInfo smtpEMailConnectionInfo, NSEMailConnectionInfo imapEMailConnectionInfo)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity)
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointmentEntity)
 
 **Example:**
 
@@ -1651,7 +1651,7 @@ Saves an appointmentUpdates the existing NSAppointmentEntity or creates a new NS
 NSAppointmentEntity SaveAppointmentEntity(NSAppointmentEntity appointmentEntity)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointmentEntity](CRMScript.NetServer.NSAppointmentEntity) - The new or updated NSAppointmentEntity.
+**Returns:** [CRMScript.NetServer.NSAppointmentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointmentEntity) - The new or updated NSAppointmentEntity.
 
 **Example:**
 
@@ -1669,7 +1669,7 @@ Updates the existing NSSuggestedAppointmentEntity or creates a new NSSuggestedAp
 NSSuggestedAppointmentEntity SaveSuggestedAppointmentEntity(NSSuggestedAppointmentEntity suggestedAppointmentEntity)
 ```
 
-**Returns:** [CRMScript.NetServer.NSSuggestedAppointmentEntity](CRMScript.NetServer.NSSuggestedAppointmentEntity) - New or updated NSSuggestedAppointmentEntity.
+**Returns:** [CRMScript.NetServer.NSSuggestedAppointmentEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSSuggestedAppointmentEntity) - New or updated NSSuggestedAppointmentEntity.
 
 **Example:**
 
@@ -1687,7 +1687,7 @@ Updates the existing NSTaskListItem or creates a new NSTaskListItem if the ID pa
 NSTaskListItem SaveTaskListItem(NSTaskListItem taskListItem)
 ```
 
-**Returns:** [CRMScript.NetServer.NSTaskListItem](CRMScript.NetServer.NSTaskListItem)
+**Returns:** [CRMScript.NetServer.NSTaskListItem](/en/automation/crmscript/reference/CRMScript.NetServer.NSTaskListItem)
 
 **Example:**
 
@@ -1705,7 +1705,7 @@ Sets the completed status for an array of activities. The changes are saved imme
 Void SetActivityStatus(String[] activityIdentifier, Integer activityStatus)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 If an invalid ID is passed in (nonexistent record), no changes will be made. If there is no write access to the record being changed, a Sentry exception will be thrown in the usual manner.
@@ -1719,7 +1719,7 @@ Sets an appointment invitation to seen.
 Void SetSeen(Integer appointmentId, Integer updateMode)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## ToggleActivities(String[])
 
@@ -1729,7 +1729,7 @@ Toggles the completed status for an array of activities.
 Integer ToggleActivities(String[] activityIdentifier)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 **Example:**
 
@@ -1747,7 +1747,7 @@ Toggles the completed status for an activity. The changes are saved immediately.
 Integer ToggleActivity(String activityIdentifier)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 **Example:**
 
@@ -1765,7 +1765,7 @@ Toggles the first activity and sets the rest of the activities to the result of 
 String[] ToggleAndSetActivities(String[] activityIdentifiers)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)[]
 
 <Note>
 There are some special rules for appointments that trigger a suggested appointment when they are completed. If more than one appointment in the set of identifiers triggers a suggestion, we will not toggle those appointments. This rule is only active when changing the status of an appointment to complete. There must be more than one appointment that triggers such an event for this rule to take effect.
@@ -1787,7 +1787,7 @@ Sets an appointment's status to Completed if the appointment had a different sta
 Integer ToggleAppointmentStatus(Integer appointmentId)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 **Example:**
 
@@ -1805,7 +1805,7 @@ Updates an appointment record.
 NSAppointment UpdateAppointment(Integer id, DateTime startTime, DateTime endTime, Integer status, Integer type, Integer associateId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)
 
 ## UpdateAppointmentFromIcsResponse(String)
 
@@ -1815,7 +1815,7 @@ Updates the attendance to an appointment based on incoming ICS RSVPs.
 Bool UpdateAppointmentFromIcsResponse(String emailAddress, NSStream icsData)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 **Example:**
 
@@ -1834,7 +1834,7 @@ Checks that entity is ready for saving.
 Map ValidateAppointmentEntity(NSAppointmentEntity appointmentEntity)
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map)
 
 **Example:**
 
@@ -1852,7 +1852,7 @@ Validates the set of dates to calculate any conflicts.
 NSRecurrenceDate[] ValidateDays(NSAppointmentEntity appointmentEntity, DateTime[] dates)
 ```
 
-**Returns:** [CRMScript.NetServer.NSRecurrenceDate](CRMScript.NetServer.NSRecurrenceDate)[]
+**Returns:** [CRMScript.NetServer.NSRecurrenceDate](/en/automation/crmscript/reference/CRMScript.NetServer.NSRecurrenceDate)[]
 
 **Example:**
 
@@ -1871,7 +1871,7 @@ Returns true if the changes will trigger email sending on Save, so you can infor
 Bool WillSendEmail(NSAppointmentEntity appointment)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - true if the changes will trigger email sending on Save.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - true if the changes will trigger email sending on Save.
 
 **Example:**
 

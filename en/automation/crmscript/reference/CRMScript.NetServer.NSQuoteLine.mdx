@@ -31,7 +31,7 @@ Initializes a new instance of the NSQuoteLine class.
 String GetCode()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A value the salesmen use to quickly find the correct product. Is stored here if the user changes the value from the product in the price list, or just enters a QuoteLine without a product link.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A value the salesmen use to quickly find the correct product. Is stored here if the user changes the value from the product in the price list, or just enters a QuoteLine without a product link.
 
 **Example:**
 
@@ -46,7 +46,7 @@ String code = thing.GetCode();
 Float GetDeliveredQuantity()
 ```
 
-**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - How many units have been delivered* updated by ERP system.
+**Returns:** [CRMScript.Global.Float](/en/automation/crmscript/reference/CRMScript.Global.Float) - How many units have been delivered* updated by ERP system.
 
 **Example:**
 
@@ -61,7 +61,7 @@ Float deliveredQuantity = thing.GetDeliveredQuantity();
 String GetDescription()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A longer description for the product. Is stored here if the user changes the value from the product in the price list, or just enters a QuoteLine without a product link.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A longer description for the product. Is stored here if the user changes the value from the product in the price list, or just enters a QuoteLine without a product link.
 
 **Example:**
 
@@ -76,7 +76,7 @@ String description = thing.GetDescription();
 Float GetDiscountAmount()
 ```
 
-**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The discount for the line, in whatever currency the sale is in. Both 'DiscountPercent' and 'DiscountAmount' shall be filled out, but the UserValueOverride field must be set to the field the user actually changed last. If this field is filled out by the user, it overrides any discount suggested by the connector. If the user has not filled this in, the system will copy the ERP discount amount to this field.
+**Returns:** [CRMScript.Global.Float](/en/automation/crmscript/reference/CRMScript.Global.Float) - The discount for the line, in whatever currency the sale is in. Both 'DiscountPercent' and 'DiscountAmount' shall be filled out, but the UserValueOverride field must be set to the field the user actually changed last. If this field is filled out by the user, it overrides any discount suggested by the connector. If the user has not filled this in, the system will copy the ERP discount amount to this field.
 
 **Example:**
 
@@ -91,7 +91,7 @@ Float discountAmount = thing.GetDiscountAmount();
 Float GetDiscountPercent()
 ```
 
-**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The discount for the line, in percent. Both 'DiscountPercent' and 'DiscountAmount' shall be filled out, but the UserValueOverride field must be set to the field the user actually changed last. If this field is filled out by the user, it overrides any discount suggested by the connector. If the user has not filled this in, the system will copy the ERP discount amount to this field. The Percentage is given in integer form, i.e. '12%' is represented as '12'.
+**Returns:** [CRMScript.Global.Float](/en/automation/crmscript/reference/CRMScript.Global.Float) - The discount for the line, in percent. Both 'DiscountPercent' and 'DiscountAmount' shall be filled out, but the UserValueOverride field must be set to the field the user actually changed last. If this field is filled out by the user, it overrides any discount suggested by the connector. If the user has not filled this in, the system will copy the ERP discount amount to this field. The Percentage is given in integer form, i.e. '12%' is represented as '12'.
 
 **Example:**
 
@@ -106,7 +106,7 @@ Float discountPercent = thing.GetDiscountPercent();
 Float GetEarningAmount()
 ```
 
-**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The earning, in whatever currency the sale is in. Both 'EarningAmount and 'EarningPercent shall be filled out, but the UserValueOverride field must be set to the field the user actually changed last.
+**Returns:** [CRMScript.Global.Float](/en/automation/crmscript/reference/CRMScript.Global.Float) - The earning, in whatever currency the sale is in. Both 'EarningAmount and 'EarningPercent shall be filled out, but the UserValueOverride field must be set to the field the user actually changed last.
 
 **Example:**
 
@@ -121,7 +121,7 @@ Float earningAmount = thing.GetEarningAmount();
 Float GetEarningPercent()
 ```
 
-**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The earning, in percent. Both 'EarningAmount and 'EarningPercent shall be filled out, but the UserValueOverride field must be set to the field the user actually changed last. The Percentage is given in integer form, i.e. '12%' is represented as '12'.
+**Returns:** [CRMScript.Global.Float](/en/automation/crmscript/reference/CRMScript.Global.Float) - The earning, in percent. Both 'EarningAmount and 'EarningPercent shall be filled out, but the UserValueOverride field must be set to the field the user actually changed last. The Percentage is given in integer form, i.e. '12%' is represented as '12'.
 
 **Example:**
 
@@ -136,7 +136,7 @@ Float earningPercent = thing.GetEarningPercent();
 Float GetERPDiscountAmount()
 ```
 
-**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The discount the system calculates based on customer / quantity / whatever. Can be overridden by the salesman in the field 'DiscountPercent' or 'DiscountAmount'. If UserValueOverride is set to 'None' then the value is copied to DiscountAmount. Both fields ERPDiscountPercent and ERPDiscountAmount will be filled out.
+**Returns:** [CRMScript.Global.Float](/en/automation/crmscript/reference/CRMScript.Global.Float) - The discount the system calculates based on customer / quantity / whatever. Can be overridden by the salesman in the field 'DiscountPercent' or 'DiscountAmount'. If UserValueOverride is set to 'None' then the value is copied to DiscountAmount. Both fields ERPDiscountPercent and ERPDiscountAmount will be filled out.
 
 **Example:**
 
@@ -151,7 +151,7 @@ Float eRPDiscountAmount = thing.GetERPDiscountAmount();
 Float GetERPDiscountPercent()
 ```
 
-**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The discount the system calculates based on customer / quantity / whatever. Can be overridden by the salesman in the field 'DiscountPercent' or 'DiscountAmount'. Both fields ERPDiscountPercent and ERPDiscountAmount will be filled out. If UserValueOverride is set to 'None' then the value is copied to DiscountPercent. The Percentage is given in integer form, i.e. '12%' is represented as '12'.
+**Returns:** [CRMScript.Global.Float](/en/automation/crmscript/reference/CRMScript.Global.Float) - The discount the system calculates based on customer / quantity / whatever. Can be overridden by the salesman in the field 'DiscountPercent' or 'DiscountAmount'. Both fields ERPDiscountPercent and ERPDiscountAmount will be filled out. If UserValueOverride is set to 'None' then the value is copied to DiscountPercent. The Percentage is given in integer form, i.e. '12%' is represented as '12'.
 
 **Example:**
 
@@ -166,7 +166,7 @@ Float eRPDiscountPercent = thing.GetERPDiscountPercent();
 String GetERPProductKey()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Foreign key of product+pricelist this line is based on. Can be blank since the QuoteLine doesn't have to be connected to a product.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Foreign key of product+pricelist this line is based on. Can be blank since the QuoteLine doesn't have to be connected to a product.
 
 **Example:**
 
@@ -181,7 +181,7 @@ String eRPProductKey = thing.GetERPProductKey();
 String GetERPQuoteLineKey()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The foreign key to the quoteline in ERP system (if it has such a representation).
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The foreign key to the quoteline in ERP system (if it has such a representation).
 
 **Example:**
 
@@ -196,7 +196,7 @@ String eRPQuoteLineKey = thing.GetERPQuoteLineKey();
 String GetExtraField1()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A simple field for adding information that the Connector can provide, and that the quote document need to display.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A simple field for adding information that the Connector can provide, and that the quote document need to display.
 
 **Example:**
 
@@ -211,7 +211,7 @@ String extraField1 = thing.GetExtraField1();
 String GetExtraField2()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A simple field for adding information that the Connector can provide, and that the quote document need to display.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A simple field for adding information that the Connector can provide, and that the quote document need to display.
 
 **Example:**
 
@@ -226,7 +226,7 @@ String extraField2 = thing.GetExtraField2();
 String GetExtraField3()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A simple field for adding information that the Connector can provide, and that the quote document need to display.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A simple field for adding information that the Connector can provide, and that the quote document need to display.
 
 **Example:**
 
@@ -241,7 +241,7 @@ String extraField3 = thing.GetExtraField3();
 String GetExtraField4()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A simple field for adding information that the Connector can provide, and that the quote document need to display.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A simple field for adding information that the Connector can provide, and that the quote document need to display.
 
 **Example:**
 
@@ -256,7 +256,7 @@ String extraField4 = thing.GetExtraField4();
 String GetExtraField5()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A simple field for adding information that the Connector can provide, and that the quote document need to display.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A simple field for adding information that the Connector can provide, and that the quote document need to display.
 
 **Example:**
 
@@ -271,7 +271,7 @@ String extraField5 = thing.GetExtraField5();
 NSProductExtraDataField[] GetExtraInfo()
 ```
 
-**Returns:** [CRMScript.NetServer.NSProductExtraDataField](CRMScript.NetServer.NSProductExtraDataField)[] - Extra information, supplied by QuoteConnector, used by a future dynamic GUI extension.
+**Returns:** [CRMScript.NetServer.NSProductExtraDataField](/en/automation/crmscript/reference/CRMScript.NetServer.NSProductExtraDataField)[] - Extra information, supplied by QuoteConnector, used by a future dynamic GUI extension.
 
 **Example:**
 
@@ -286,7 +286,7 @@ NSProductExtraDataField[] extraInfo = thing.GetExtraInfo();
 Bool GetIsSubscription()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is this a subscription product, sold in repeating intervals/amounts?
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Is this a subscription product, sold in repeating intervals/amounts?
 
 **Example:**
 
@@ -301,7 +301,7 @@ Bool isSubscription = thing.GetIsSubscription();
 String GetItemNumber()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Norwegian «Postnummer». Specific numbers from some hierarchy, for instance '1.4.3.2'. Is stored here if the user changes the value from the product in the price list, or just enters a QuoteLine without a product link.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Norwegian «Postnummer». Specific numbers from some hierarchy, for instance '1.4.3.2'. Is stored here if the user changes the value from the product in the price list, or just enters a QuoteLine without a product link.
 
 **Example:**
 
@@ -316,7 +316,7 @@ String itemNumber = thing.GetItemNumber();
 String GetName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the product. Is stored here if the user changes the value from the product in the price list, or just enters a QuoteLine without a product link.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The name of the product. Is stored here if the user changes the value from the product in the price list, or just enters a QuoteLine without a product link.
 
 **Example:**
 
@@ -331,7 +331,7 @@ String name = thing.GetName();
 String GetPriceUnit()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - What is the unit (meter, ton, bushel, microsecond, gradus, τρυβλίον, 五合枡, دونم or whatever); read-only for lines that originate in defined products.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - What is the unit (meter, ton, bushel, microsecond, gradus, τρυβλίον, 五合枡, دونم or whatever); read-only for lines that originate in defined products.
 
 **Example:**
 
@@ -346,7 +346,7 @@ String priceUnit = thing.GetPriceUnit();
 String GetProductCategoryKey()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text. Is stored here if the user changes the value from the product in the pricelist, or just enters a QuoteLine without a product link.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text. Is stored here if the user changes the value from the product in the pricelist, or just enters a QuoteLine without a product link.
 
 **Example:**
 
@@ -361,7 +361,7 @@ String productCategoryKey = thing.GetProductCategoryKey();
 String GetProductFamilyKey()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text. Is stored here if the user changes the value from the product in the price list, or just enters a QuoteLine without a product link.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text. Is stored here if the user changes the value from the product in the price list, or just enters a QuoteLine without a product link.
 
 **Example:**
 
@@ -376,7 +376,7 @@ String productFamilyKey = thing.GetProductFamilyKey();
 String GetProductTypeKey()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text. Is stored here if the user changes the value from the product in the price list, or just enters a QuoteLine without a product link.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text. Is stored here if the user changes the value from the product in the price list, or just enters a QuoteLine without a product link.
 
 **Example:**
 
@@ -391,7 +391,7 @@ String productTypeKey = thing.GetProductTypeKey();
 Float GetQuantity()
 ```
 
-**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - How many units; this is a decimal field since you might want to offer fractional units (2.5kg, or 0.5PC).
+**Returns:** [CRMScript.Global.Float](/en/automation/crmscript/reference/CRMScript.Global.Float) - How many units; this is a decimal field since you might want to offer fractional units (2.5kg, or 0.5PC).
 
 **Example:**
 
@@ -406,7 +406,7 @@ Float quantity = thing.GetQuantity();
 String GetQuantityUnit()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - What is the unit (meter, ton, bushel, microsecond, gradus, τρυβλίον, 五合枡, دونم or whatever); Connector handles conversion relative to PriceUnit if they are different.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - What is the unit (meter, ton, bushel, microsecond, gradus, τρυβλίον, 五合枡, دونم or whatever); Connector handles conversion relative to PriceUnit if they are different.
 
 **Example:**
 
@@ -421,7 +421,7 @@ String quantityUnit = thing.GetQuantityUnit();
 Integer GetQuoteAlternativeId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The alternative this line is part of, the conceptual Parent in CRM database.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The alternative this line is part of, the conceptual Parent in CRM database.
 
 **Example:**
 
@@ -436,7 +436,7 @@ Integer quoteAlternativeId = thing.GetQuoteAlternativeId();
 Integer GetQuoteLineId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Primary key.
 
 **Example:**
 
@@ -451,7 +451,7 @@ Integer quoteLineId = thing.GetQuoteLineId();
 Integer GetRank()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - QuoteLines can be re-ordered, so we must track the ordering.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - QuoteLines can be re-ordered, so we must track the ordering.
 
 **Example:**
 
@@ -466,7 +466,7 @@ Integer rank = thing.GetRank();
 String GetRawExtraInfo()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Read-only extra information in plain text, supplied by QuoteConnector, used by a future dynamic GUI extension.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Read-only extra information in plain text, supplied by QuoteConnector, used by a future dynamic GUI extension.
 
 **Example:**
 
@@ -481,7 +481,7 @@ String rawExtraInfo = thing.GetRawExtraInfo();
 String GetReason()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - If QuoteStatus is not OK, then this field contains a localized explanation that the user can be shown.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - If QuoteStatus is not OK, then this field contains a localized explanation that the user can be shown.
 
 **Example:**
 
@@ -496,7 +496,7 @@ String reason = thing.GetReason();
 String GetRights()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Field1=right&Field2=right, etc. of any fields that have non-standard field access rights. Rights can be one of N (=None or Hidden), R (=Read-only), W (=Writeable), M (=Mandatory). The fields will mostly be from the Quoteline table, but some added fields that are conceptually part of the quote line, like Image will also be possibly to set rights on.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Field1=right&Field2=right, etc. of any fields that have non-standard field access rights. Rights can be one of N (=None or Hidden), R (=Read-only), W (=Writeable), M (=Mandatory). The fields will mostly be from the Quoteline table, but some added fields that are conceptually part of the quote line, like Image will also be possibly to set rights on.
 
 <Note>
 Will be used by SuperOffice to control the user interface when showing the record.
@@ -515,7 +515,7 @@ String rights = thing.GetRights();
 String GetRule()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The names of one or more calculation rules that are in effect for this line, comma-separated case-insensitive.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The names of one or more calculation rules that are in effect for this line, comma-separated case-insensitive.
 
 **Example:**
 
@@ -530,7 +530,7 @@ String rule = thing.GetRule();
 Integer GetStatus()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - If there was a problem with for instance calculation, this field is set to warning or error. See &lt;xref href="CRMScript.NetServer.QuoteStatus" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - If there was a problem with for instance calculation, this field is set to warning or error. See [CRMScript.NetServer.QuoteStatus](/en/automation/crmscript/reference/CRMScript.NetServer.QuoteStatus).
 
 <Note>
 Typically shown as an icon.
@@ -549,7 +549,7 @@ Integer status = thing.GetStatus();
 Float GetSubscriptionQuantity()
 ```
 
-**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The default number of SubscriptionUnits to suggest when creating quote lines from this product.
+**Returns:** [CRMScript.Global.Float](/en/automation/crmscript/reference/CRMScript.Global.Float) - The default number of SubscriptionUnits to suggest when creating quote lines from this product.
 
 **Example:**
 
@@ -564,7 +564,7 @@ Float subscriptionQuantity = thing.GetSubscriptionQuantity();
 DateTime GetSubscriptionStart()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Start date for subscription, as offered.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Start date for subscription, as offered.
 
 **Example:**
 
@@ -579,7 +579,7 @@ DateTime subscriptionStart = thing.GetSubscriptionStart();
 String GetSubscriptionUnit()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text with the actual subscription unit.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Either a ListId to an ID from a connector provided list, or, if the connection doesn't support lists, a text with the actual subscription unit.
 
 **Example:**
 
@@ -594,7 +594,7 @@ String subscriptionUnit = thing.GetSubscriptionUnit();
 Float GetSubTotal()
 ```
 
-**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Value to help the user interface, is equal to 'Quantity * ListPrice'
+**Returns:** [CRMScript.Global.Float](/en/automation/crmscript/reference/CRMScript.Global.Float) - Value to help the user interface, is equal to 'Quantity * ListPrice'
 
 **Example:**
 
@@ -609,7 +609,7 @@ Float subTotal = thing.GetSubTotal();
 String GetSupplier()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the supplier. Is stored here if the user changes the value from the product in the price list, or just enters a QuoteLine without a product link.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The name of the supplier. Is stored here if the user changes the value from the product in the price list, or just enters a QuoteLine without a product link.
 
 **Example:**
 
@@ -624,7 +624,7 @@ String supplier = thing.GetSupplier();
 String GetSupplierCode()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The suppliers' code or part number for this product.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The suppliers' code or part number for this product.
 
 <Note>
 Is stored here if the user changes the value from the product in the price list, or just enters a QuoteLine without a product link.
@@ -643,7 +643,7 @@ String supplierCode = thing.GetSupplierCode();
 String GetThumbnail()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A small image of the product, typically used to show in a list. Base64 encoded png.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A small image of the product, typically used to show in a list. Base64 encoded png.
 
 **Example:**
 
@@ -658,7 +658,7 @@ String thumbnail = thing.GetThumbnail();
 Float GetTotalPrice()
 ```
 
-**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - TotalPrice = SubTotal* DiscountAmount or TotalPrice = (UnitCost * Quantity) + EarningAmount, according to what the user changed last.
+**Returns:** [CRMScript.Global.Float](/en/automation/crmscript/reference/CRMScript.Global.Float) - TotalPrice = SubTotal* DiscountAmount or TotalPrice = (UnitCost * Quantity) + EarningAmount, according to what the user changed last.
 
 **Example:**
 
@@ -673,7 +673,7 @@ Float totalPrice = thing.GetTotalPrice();
 Float GetUnitCost()
 ```
 
-**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The cost price per unit for this product. May be filled in by connector if it has the Provide-Cost capability.
+**Returns:** [CRMScript.Global.Float](/en/automation/crmscript/reference/CRMScript.Global.Float) - The cost price per unit for this product. May be filled in by connector if it has the Provide-Cost capability.
 
 **Example:**
 
@@ -688,7 +688,7 @@ Float unitCost = thing.GetUnitCost();
 Float GetUnitListPrice()
 ```
 
-**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The standard list price; as given by ERP Connector, OR overridden by user.
+**Returns:** [CRMScript.Global.Float](/en/automation/crmscript/reference/CRMScript.Global.Float) - The standard list price; as given by ERP Connector, OR overridden by user.
 
 **Example:**
 
@@ -703,7 +703,7 @@ Float unitListPrice = thing.GetUnitListPrice();
 Float GetUnitMinimumPrice()
 ```
 
-**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The minimum price this line can be sold for (to limit discounting). Will come from the connector. List price per unit must exceed the minimum price per unit.
+**Returns:** [CRMScript.Global.Float](/en/automation/crmscript/reference/CRMScript.Global.Float) - The minimum price this line can be sold for (to limit discounting). Will come from the connector. List price per unit must exceed the minimum price per unit.
 
 **Example:**
 
@@ -718,7 +718,7 @@ Float unitMinimumPrice = thing.GetUnitMinimumPrice();
 String GetUrl()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A URL to the product info. Can be empty. Is stored here if the user changes the value from the product in the price list, or just enters a QuoteLine without a product link.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A URL to the product info. Can be empty. Is stored here if the user changes the value from the product in the price list, or just enters a QuoteLine without a product link.
 
 **Example:**
 
@@ -733,7 +733,7 @@ String url = thing.GetUrl();
 Integer GetUserValueOverride()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Has the pre-calculated (from ERP) price information been overridden, and how. See &lt;xref href="CRMScript.NetServer.ValueOverride" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Has the pre-calculated (from ERP) price information been overridden, and how. See [CRMScript.NetServer.ValueOverride](/en/automation/crmscript/reference/CRMScript.NetServer.ValueOverride).
 
 <Note>
 If the user has filled out the discountpercentage field, then the UserValueOverride field is set to OverridePercent. (The DiscountAmount, EarningPercent, EarningAmount and TotalPrice fields are calculated based on the DiscountPercent.)
@@ -752,7 +752,7 @@ Integer userValueOverride = thing.GetUserValueOverride();
 Float GetVAT()
 ```
 
-**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - Tax/VAT* THIS IS A PERCENTAGE. The connector is responsible for populating this field; the percentage will be used to calculate VAT amounts available as merge fields in the document templates (but amounts are never stored in the database).
+**Returns:** [CRMScript.Global.Float](/en/automation/crmscript/reference/CRMScript.Global.Float) - Tax/VAT* THIS IS A PERCENTAGE. The connector is responsible for populating this field; the percentage will be used to calculate VAT amounts available as merge fields in the document templates (but amounts are never stored in the database).
 
 **Example:**
 
@@ -767,7 +767,7 @@ Float vAT = thing.GetVAT();
 String GetVATInfo()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Tax/VAT information, Extra info about VAT that the connector might insert, and the users might want to specify on the quote. The core CRM product has no business logic for this field, it is wholly up to connectors to use it.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Tax/VAT information, Extra info about VAT that the connector might insert, and the users might want to specify on the quote. The core CRM product has no business logic for this field, it is wholly up to connectors to use it.
 
 **Example:**
 
@@ -782,7 +782,7 @@ String vATInfo = thing.GetVATInfo();
 Void SetCode(String code)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -798,7 +798,7 @@ thing.SetCode(code);
 Void SetDeliveredQuantity(Float deliveredQuantity)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -814,7 +814,7 @@ thing.SetDeliveredQuantity(deliveredQuantity);
 Void SetDescription(String description)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -830,7 +830,7 @@ thing.SetDescription(description);
 Void SetDiscountAmount(Float discountAmount)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -846,7 +846,7 @@ thing.SetDiscountAmount(discountAmount);
 Void SetDiscountPercent(Float discountPercent)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -862,7 +862,7 @@ thing.SetDiscountPercent(discountPercent);
 Void SetEarningAmount(Float earningAmount)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -878,7 +878,7 @@ thing.SetEarningAmount(earningAmount);
 Void SetEarningPercent(Float earningPercent)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -894,7 +894,7 @@ thing.SetEarningPercent(earningPercent);
 Void SetERPDiscountAmount(Float eRPDiscountAmount)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -910,7 +910,7 @@ thing.SetERPDiscountAmount(eRPDiscountAmount);
 Void SetERPDiscountPercent(Float eRPDiscountPercent)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -926,7 +926,7 @@ thing.SetERPDiscountPercent(eRPDiscountPercent);
 Void SetERPProductKey(String eRPProductKey)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -942,7 +942,7 @@ thing.SetERPProductKey(eRPProductKey);
 Void SetERPQuoteLineKey(String eRPQuoteLineKey)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -958,7 +958,7 @@ thing.SetERPQuoteLineKey(eRPQuoteLineKey);
 Void SetExtraField1(String extraField1)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -974,7 +974,7 @@ thing.SetExtraField1(extraField1);
 Void SetExtraField2(String extraField2)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -990,7 +990,7 @@ thing.SetExtraField2(extraField2);
 Void SetExtraField3(String extraField3)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1006,7 +1006,7 @@ thing.SetExtraField3(extraField3);
 Void SetExtraField4(String extraField4)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1022,7 +1022,7 @@ thing.SetExtraField4(extraField4);
 Void SetExtraField5(String extraField5)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1038,7 +1038,7 @@ thing.SetExtraField5(extraField5);
 Void SetExtraInfo(NSProductExtraDataField[] extraInfo)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1054,7 +1054,7 @@ thing.SetExtraInfo(extraInfo);
 Void SetIsSubscription(Bool isSubscription)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1070,7 +1070,7 @@ thing.SetIsSubscription(isSubscription);
 Void SetItemNumber(String itemNumber)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1086,7 +1086,7 @@ thing.SetItemNumber(itemNumber);
 Void SetName(String name)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1102,7 +1102,7 @@ thing.SetName(name);
 Void SetPriceUnit(String priceUnit)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1118,7 +1118,7 @@ thing.SetPriceUnit(priceUnit);
 Void SetProductCategoryKey(String productCategoryKey)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1134,7 +1134,7 @@ thing.SetProductCategoryKey(productCategoryKey);
 Void SetProductFamilyKey(String productFamilyKey)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1150,7 +1150,7 @@ thing.SetProductFamilyKey(productFamilyKey);
 Void SetProductTypeKey(String productTypeKey)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1166,7 +1166,7 @@ thing.SetProductTypeKey(productTypeKey);
 Void SetQuantity(Float quantity)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1182,7 +1182,7 @@ thing.SetQuantity(quantity);
 Void SetQuantityUnit(String quantityUnit)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1198,7 +1198,7 @@ thing.SetQuantityUnit(quantityUnit);
 Void SetQuoteAlternativeId(Integer quoteAlternativeId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1214,7 +1214,7 @@ thing.SetQuoteAlternativeId(quoteAlternativeId);
 Void SetQuoteLineId(Integer quoteLineId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1230,7 +1230,7 @@ thing.SetQuoteLineId(quoteLineId);
 Void SetRank(Integer rank)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1246,7 +1246,7 @@ thing.SetRank(rank);
 Void SetRawExtraInfo(String rawExtraInfo)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1262,7 +1262,7 @@ thing.SetRawExtraInfo(rawExtraInfo);
 Void SetReason(String reason)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1278,7 +1278,7 @@ thing.SetReason(reason);
 Void SetRights(String rights)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1294,7 +1294,7 @@ thing.SetRights(rights);
 Void SetRule(String rule)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1310,7 +1310,7 @@ thing.SetRule(rule);
 Void SetStatus(Integer status)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1326,7 +1326,7 @@ thing.SetStatus(status);
 Void SetSubscriptionQuantity(Float subscriptionQuantity)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1342,7 +1342,7 @@ thing.SetSubscriptionQuantity(subscriptionQuantity);
 Void SetSubscriptionStart(DateTime subscriptionStart)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1358,7 +1358,7 @@ thing.SetSubscriptionStart(subscriptionStart);
 Void SetSubscriptionUnit(String subscriptionUnit)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1374,7 +1374,7 @@ thing.SetSubscriptionUnit(subscriptionUnit);
 Void SetSubTotal(Float subTotal)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1390,7 +1390,7 @@ thing.SetSubTotal(subTotal);
 Void SetSupplier(String supplier)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1406,7 +1406,7 @@ thing.SetSupplier(supplier);
 Void SetSupplierCode(String supplierCode)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1422,7 +1422,7 @@ thing.SetSupplierCode(supplierCode);
 Void SetThumbnail(String thumbnail)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1438,7 +1438,7 @@ thing.SetThumbnail(thumbnail);
 Void SetTotalPrice(Float totalPrice)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1454,7 +1454,7 @@ thing.SetTotalPrice(totalPrice);
 Void SetUnitCost(Float unitCost)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1470,7 +1470,7 @@ thing.SetUnitCost(unitCost);
 Void SetUnitListPrice(Float unitListPrice)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1486,7 +1486,7 @@ thing.SetUnitListPrice(unitListPrice);
 Void SetUnitMinimumPrice(Float unitMinimumPrice)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1502,7 +1502,7 @@ thing.SetUnitMinimumPrice(unitMinimumPrice);
 Void SetUrl(String url)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1518,7 +1518,7 @@ thing.SetUrl(url);
 Void SetUserValueOverride(Integer userValueOverride)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 If the user has filled out the discountpercentage field, then the UserValueOverride field is set to OverridePercent. (The DiscountAmount, EarningPercent, EarningAmount and TotalPrice fields are calculated based on the DiscountPercent.)
@@ -1538,7 +1538,7 @@ thing.SetUserValueOverride(userValueOverride);
 Void SetVAT(Float vAT)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1554,7 +1554,7 @@ thing.SetVAT(vAT);
 Void SetVATInfo(String vATInfo)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

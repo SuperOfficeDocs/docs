@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_CreateDefaultRecurrenceByDateRequest"></a> Class Appointment\_CreateDefaultRecurrenceByDateRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_CreateDefaultRecurrenceByDateRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_CreateDefaultRecurrenceByDateRequest](SuperOffice.WebApi.Data.Appointment\_CreateDefaultRecurrenceByDateRequest.md)
+[Appointment\_CreateDefaultRecurrenceByDateRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_CreateDefaultRecurrenceByDateRequest)
 
 #### Inherited Members
 

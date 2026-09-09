@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_License_GetModuleLicenseHistoryFromLicenseServerRequest"></a> Class License\_GetModuleLicenseHistoryFromLicenseServerRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class License_GetModuleLicenseHistoryFromLicenseServerRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[License\_GetModuleLicenseHistoryFromLicenseServerRequest](SuperOffice.WebApi.Data.License\_GetModuleLicenseHistoryFromLicenseServerRequest.md)
+[License\_GetModuleLicenseHistoryFromLicenseServerRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.License_GetModuleLicenseHistoryFromLicenseServerRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public ExtendedLicenseInfo LicenseInfo { get; set; }
 
 #### Property Value
 
- [ExtendedLicenseInfo](SuperOffice.WebApi.Data.ExtendedLicenseInfo.md)
+ [ExtendedLicenseInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtendedLicenseInfo)
 
 ### <a id="SuperOffice_WebApi_Data_License_GetModuleLicenseHistoryFromLicenseServerRequest_ModuleLicense"></a> ModuleLicense
 
@@ -50,5 +50,5 @@ public ExtendedModuleLicense ModuleLicense { get; set; }
 
 #### Property Value
 
- [ExtendedModuleLicense](SuperOffice.WebApi.Data.ExtendedModuleLicense.md)
+ [ExtendedModuleLicense](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtendedModuleLicense)
 

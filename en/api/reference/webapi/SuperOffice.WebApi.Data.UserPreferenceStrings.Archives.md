@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Archives"></a> Class UserPreferenceStrings.Archives
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public static class UserPreferenceStrings.Archives
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.Archives](SuperOffice.WebApi.Data.UserPreferenceStrings.Archives.md)
+[UserPreferenceStrings.Archives](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Archives)
 
 #### Inherited Members
 

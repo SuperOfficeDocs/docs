@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_CreateEMailFromDocumentEntityRequest"></a> Class EMail\_CreateEMailFromDocumentEntityRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_CreateEMailFromDocumentEntityRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_CreateEMailFromDocumentEntityRequest](SuperOffice.WebApi.Data.EMail\_CreateEMailFromDocumentEntityRequest.md)
+[EMail\_CreateEMailFromDocumentEntityRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_CreateEMailFromDocumentEntityRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public DocumentEntity DocumentEntity { get; set; }
 
 #### Property Value
 
- [DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)
+ [DocumentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity)
 

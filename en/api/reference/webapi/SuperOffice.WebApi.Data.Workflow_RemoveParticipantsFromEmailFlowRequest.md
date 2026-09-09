@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Workflow_RemoveParticipantsFromEmailFlowRequest"></a> Class Workflow\_RemoveParticipantsFromEmailFlowRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Workflow_RemoveParticipantsFromEmailFlowRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Workflow\_RemoveParticipantsFromEmailFlowRequest](SuperOffice.WebApi.Data.Workflow\_RemoveParticipantsFromEmailFlowRequest.md)
+[Workflow\_RemoveParticipantsFromEmailFlowRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Workflow_RemoveParticipantsFromEmailFlowRequest)
 
 #### Inherited Members
 

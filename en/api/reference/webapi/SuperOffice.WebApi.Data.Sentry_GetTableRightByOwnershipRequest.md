@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Sentry_GetTableRightByOwnershipRequest"></a> Class Sentry\_GetTableRightByOwnershipRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Sentry_GetTableRightByOwnershipRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Sentry\_GetTableRightByOwnershipRequest](SuperOffice.WebApi.Data.Sentry\_GetTableRightByOwnershipRequest.md)
+[Sentry\_GetTableRightByOwnershipRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sentry_GetTableRightByOwnershipRequest)
 
 #### Inherited Members
 

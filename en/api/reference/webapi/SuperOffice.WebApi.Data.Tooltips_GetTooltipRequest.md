@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Tooltips_GetTooltipRequest"></a> Class Tooltips\_GetTooltipRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Tooltips_GetTooltipRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Tooltips\_GetTooltipRequest](SuperOffice.WebApi.Data.Tooltips\_GetTooltipRequest.md)
+[Tooltips\_GetTooltipRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Tooltips_GetTooltipRequest)
 
 #### Inherited Members
 

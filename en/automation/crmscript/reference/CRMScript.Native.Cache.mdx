@@ -33,7 +33,7 @@ Checks if there are no more fields in the result.
 Bool eof()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if it is at end of file or there are no more fields to iterate through; otherwise, false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if it is at end of file or there are no more fields to iterate through; otherwise, false.
 
 <Note>
 A common usage is in the condition section in a for loop.
@@ -47,7 +47,7 @@ Sets the iterator variable to the first field in the field set.
 Bool first()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - False if the field set is empty; otherwise, true.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - False if the field set is empty; otherwise, true.
 
 ## getData(String)
 
@@ -57,7 +57,7 @@ This function will return data from a cached table.
 String getData(String tableId)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Data from the cached table specified in tableId.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Data from the cached table specified in tableId.
 
 ## getDataSubset(String,String,String)
 
@@ -67,7 +67,7 @@ Returns a subset of the data for a cached table based on a filter, where a field
 getDataSubset(String tableId, String filterField, String filterValue)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The rows from the table where filterField = filterValue.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The rows from the table where filterField = filterValue.
 
 ## getRow()
 
@@ -77,7 +77,7 @@ Returns a row of fields.
 Map getRow()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - A row of fields.
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map) - A row of fields.
 
 ## next()
 
@@ -87,7 +87,7 @@ Sets the iterator to the next field.
 Bool next()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - False if at end of file or the field set is empty; otherwise, true.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - False if at end of file or the field set is empty; otherwise, true.
 
 ## sort(String,Bool)
 
@@ -97,4 +97,4 @@ Sorts the cached data by given field in given order.
 sort(String field, Bool order)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)

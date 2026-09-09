@@ -4,53 +4,45 @@ with no corresponding `config/redirects.json` entry, or renames/moves an
 `en/` page without mirroring the change across its `da/de/nl/no/sv`
 translations (see issue #340).
 
-This is the CI guard #339/#341's own `.html`-404 incident asked for but
-didn't have time to build: nothing else in this repo's checks notices a
-rename/move/delete that leaves a dangling old URL, so every fix so far
-(#339, #341, #347, #349) has been reactive -- found in production, then
-patched. This guard surfaces the gap at PR time instead.
+This is the CI guard #339/#341's own `.html`-404 incident asked for but didn't have time to build:
+nothing else in this repo's checks notices a rename/move/delete that leaves a dangling old URL, so
+every fix so far (#339, #341, #347, #349) has been reactive, found in production, then patched. This
+guard surfaces the gap at PR time instead.
 
 ## Redirect-coverage check
 
-For every renamed or deleted `.md`/`.mdx` file (excluding non-routable
-trees -- see EXCLUDED_PREFIXES below), the old file path is converted to
-its site URL and checked against `config/redirects.json` for:
+For every renamed or deleted `.md`/`.mdx` file (excluding non-routable trees, see EXCLUDED_PREFIXES
+below), the old file path is converted to its site URL and checked against `config/redirects.json`
+for:
 
   * an exact-match `source` entry (bare form), or
   * a `source` entry covered by an existing wildcard (`prefix/*`), or
-  * (renamed only) any entry whose `destination` already equals the new
-    path -- someone already added the redirect, just not in the exact
-    string shape this script would have derived itself.
+  * (renamed only) any entry whose `destination` already equals the new path: someone already added
+    the redirect, just not in the exact string shape this script would have derived itself.
 
-Per `contribute/redirects.mdx`'s documented `.html`-suffix-duplicate rule
-(#339), a bare-form entry alone isn't enough unless the source is a
-wildcard, ends in `/index` or a trailing slash, or already ends in
-`.html` -- otherwise the `.html`-suffixed form needs its own entry too.
-Both forms are checked and named separately in the warning.
+Per `contribute/redirects.mdx`'s documented `.html`-suffix-duplicate rule (#339), a bare-form entry
+alone isn't enough unless the source is a wildcard, ends in `/index` or a trailing slash, or already
+ends in `.html`; otherwise the `.html`-suffixed form needs its own entry too. Both forms are checked
+and named separately in the warning.
 
 ## Translation-mirroring check
 
-For a renamed `en/` page only: derives each language's mirrored path by
-swapping just the leading `en/` segment for the target language code
-(`en/foo/bar.mdx` -> `da/foo/bar.mdx`), then checks whether a file still
-exists at the *old* mirrored path while nothing exists yet at the *new*
-one -- if so, the translation wasn't moved along with the English rename.
-Deliberately path-based, not identifier-based (uid is being phased out
-of this repo, so the check can't depend on it staying stable). This
-means it only catches the common case where a translation's path already
-mirrors English 1:1; it can't detect a mismatch for a page whose
-translated path never followed that convention to begin with (the same
-caveat #340's own issue body flagged for uid-based matching). A language
-with no file at either the old or new mirrored path is treated as
-untranslated and skipped silently -- full translation completeness isn't
-tracked by this guard (see the master journal's "Explicitly out of
-scope" section).
+For a renamed `en/` page only: derives each language's mirrored path by swapping just the leading
+`en/` segment for the target language code (`en/foo/bar.mdx` -> `da/foo/bar.mdx`), then checks
+whether a file still exists at the *old* mirrored path while nothing exists yet at the *new* one; if
+so, the translation wasn't moved along with the English rename. Deliberately path-based, not
+identifier-based (uid is being phased out of this repo, so the check can't depend on it staying
+stable). This means it only catches the common case where a translation's path already mirrors
+English 1:1; it can't detect a mismatch for a page whose translated path never followed that
+convention to begin with (the same caveat #340's own issue body flagged for uid-based matching). A
+language with no file at either the old or new mirrored path is treated as untranslated and skipped
+silently; full translation completeness isn't tracked by this guard (see the master journal's
+"Explicitly out of scope" section).
 
-This is advisory only -- it never fails the build. It emits a GitHub
-Actions warning annotation per hit so it shows up on the PR's Files
-Changed tab, and sets `found=true`/`translation_gap=true` on
-`$GITHUB_OUTPUT` (when running under Actions) so the calling workflow can
-label the PR without re-deriving anything itself.
+This is advisory only; it never fails the build. It emits a GitHub Actions warning annotation per hit
+so it shows up on the PR's Files Changed tab, and sets `found=true`/`translation_gap=true` on
+`$GITHUB_OUTPUT` (when running under Actions) so the calling workflow can label the PR without
+re-deriving anything itself.
 
 Usage:
     python tools/ci/check-redirect-coverage.py --base-ref origin/main
@@ -64,12 +56,15 @@ import subprocess
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib.repo_files import file_path_to_url  # noqa: E402
+
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 REDIRECTS_PATH = REPO_ROOT / "config" / "redirects.json"
 
 TRANSLATION_LANGUAGES = ("da", "de", "nl", "no", "sv")
 
-# Not standalone routable pages -- Mintlify never serves these at their own
+# Not standalone routable pages: Mintlify never serves these at their own
 # URL, so a missing redirect for one isn't a real gap (see
 # contribute/redirects.mdx's "Don't self-redirect a snippets/ file" note,
 # and the machine-generated reference trees documented throughout the
@@ -95,13 +90,6 @@ def is_in_scope(rel_path):
     return not rel_path.startswith(EXCLUDED_PREFIXES)
 
 
-def file_path_to_url(rel_file_path):
-    """`en/foo/bar.mdx` -> `/en/foo/bar`, `en/foo/index.mdx` -> `/en/foo`."""
-    p = Path(rel_file_path)
-    stem_path = p.with_suffix("")
-    if stem_path.name == "index":
-        stem_path = stem_path.parent
-    return "/" + stem_path.as_posix()
 
 
 def get_renamed_and_deleted(base_ref, scope=None):
@@ -155,7 +143,7 @@ def check_redirect_coverage(url_path, sources, destinations, wildcard_prefixes, 
     """Returns a list of warning message fragments (empty if fully covered)."""
     if new_url_path is not None and new_url_path in destinations:
         # Already redirected under a different source spelling than we'd
-        # derive -- treat as covered rather than double-flagging.
+        # derive; treat as covered rather than double-flagging.
         return []
 
     missing = []
@@ -172,7 +160,7 @@ def check_translation_mirroring(en_old_path, en_new_path):
     """Returns a list of warning message fragments for stale-pathed
     translations of a renamed en/ page (empty if none, or if untranslated).
     Purely path-based: swaps the leading en/ segment for each language and
-    checks file existence on disk at HEAD -- see the module docstring for
+    checks file existence on disk at HEAD; see the module docstring for
     why this doesn't use uid."""
     if not en_new_path.startswith("en/"):
         return []
@@ -202,7 +190,7 @@ def write_github_output(found, translation_gap):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--base-ref", required=True, help="Git ref to diff against (e.g. origin/main)")
+    parser.add_argument("--base-ref", required=True, help="Git ref to diff against (for example origin/main)")
     parser.add_argument("--path", help="Scope the diff to one folder instead of the whole repo")
     args = parser.parse_args()
 
@@ -220,7 +208,7 @@ def main():
             redirect_hits += 1
             print(
                 f"::warning file={new_path}::Renamed from '{old_path}' with no redirect covering "
-                f"the old URL -- missing {', '.join(missing)}. See contribute/redirects.mdx."
+                f"the old URL: missing {', '.join(missing)}. See contribute/redirects.mdx."
             )
         for message in check_translation_mirroring(old_path, new_path):
             translation_hits += 1
@@ -232,21 +220,21 @@ def main():
         if missing:
             redirect_hits += 1
             print(
-                f"::warning file={old_path}::Deleted with no redirect covering the old URL -- "
+                f"::warning file={old_path}::Deleted with no redirect covering the old URL: "
                 f"missing {', '.join(missing)}. See contribute/redirects.mdx."
             )
 
     if redirect_hits:
-        print(f"\n{redirect_hits} renamed/deleted page(s) missing redirect coverage -- see warnings above.")
+        print(f"\n{redirect_hits} renamed/deleted page(s) missing redirect coverage; see warnings above.")
     else:
         print("No renamed/deleted pages missing redirect coverage.")
 
     if translation_hits:
-        print(f"{translation_hits} translation(s) not mirrored to a renamed English page's new path -- see warnings above.")
+        print(f"{translation_hits} translation(s) not mirrored to a renamed English page's new path; see warnings above.")
 
     write_github_output(found=bool(redirect_hits or translation_hits), translation_gap=bool(translation_hits))
 
-    # Advisory only -- never fail the build.
+    # Advisory only; never fail the build.
     return 0
 
 

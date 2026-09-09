@@ -2,7 +2,7 @@
 
 ### Classes
 
- [UrlHelper](SuperOffice.WebApi.Authorization.Utility.UrlHelper.md)
+ [UrlHelper](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.Utility.UrlHelper)
 
 Useful for getting formatted URL strings.
 

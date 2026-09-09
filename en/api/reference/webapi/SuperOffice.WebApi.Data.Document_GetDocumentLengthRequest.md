@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_GetDocumentLengthRequest"></a> Class Document\_GetDocumentLengthRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_GetDocumentLengthRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_GetDocumentLengthRequest](SuperOffice.WebApi.Data.Document\_GetDocumentLengthRequest.md)
+[Document\_GetDocumentLengthRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_GetDocumentLengthRequest)
 
 #### Inherited Members
 

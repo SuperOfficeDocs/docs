@@ -8,4 +8,4 @@
 
   * **Kampanje**: Skriv inn typen utsendelse, for eksempel "nyhetsbrev" eller "leads-oppfølging", eller skriv inn et bestemt kampanjenavn, for eksempel "vårsalg-juni-21" eller "oppgraderingskampanje-v9".
 
-[1]: ../../../../tracked-links/learn/index#google
+[1]: /no/marketing/tracked-links/learn/index#google

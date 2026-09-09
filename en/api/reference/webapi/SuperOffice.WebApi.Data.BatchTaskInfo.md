@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_BatchTaskInfo"></a> Class BatchTaskInfo
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for BatchTaskInfo.
@@ -13,13 +13,13 @@ public class BatchTaskInfo : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[BatchTaskInfo](SuperOffice.WebApi.Data.BatchTaskInfo.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[BatchTaskInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -64,11 +64,11 @@ public BatchTaskCancellationBehaviour? CancellationBehaviour { get; set; }
 
 #### Property Value
 
- [BatchTaskCancellationBehaviour](SuperOffice.WebApi.Data.BatchTaskCancellationBehaviour.md)?
+ [BatchTaskCancellationBehaviour](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskCancellationBehaviour)?
 
 #### See Also
 
-[BatchTaskInfo](SuperOffice.WebApi.Data.BatchTaskInfo.md).[CancellationBehaviour\_String](SuperOffice.WebApi.Data.BatchTaskInfo.md\#SuperOffice\_WebApi\_Data\_BatchTaskInfo\_CancellationBehaviour\_String)
+[BatchTaskInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo).[CancellationBehaviour\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo#SuperOffice_WebApi_Data_BatchTaskInfo_CancellationBehaviour_String)
 
 ### <a id="SuperOffice_WebApi_Data_BatchTaskInfo_CancellationBehaviour_String"></a> CancellationBehaviour\_String
 
@@ -86,7 +86,7 @@ public string CancellationBehaviour_String { get; set; }
 
 #### See Also
 
-[BatchTaskInfo](SuperOffice.WebApi.Data.BatchTaskInfo.md).[CancellationBehaviour](SuperOffice.WebApi.Data.BatchTaskInfo.md\#SuperOffice\_WebApi\_Data\_BatchTaskInfo\_CancellationBehaviour)
+[BatchTaskInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo).[CancellationBehaviour](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo#SuperOffice_WebApi_Data_BatchTaskInfo_CancellationBehaviour)
 
 ### <a id="SuperOffice_WebApi_Data_BatchTaskInfo_Context"></a> Context
 
@@ -242,7 +242,7 @@ public virtual StringDictionary ParameterObject { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 ### <a id="SuperOffice_WebApi_Data_BatchTaskInfo_ProgressDescription"></a> ProgressDescription
 
@@ -328,11 +328,11 @@ public BatchTaskState? State { get; set; }
 
 #### Property Value
 
- [BatchTaskState](SuperOffice.WebApi.Data.BatchTaskState.md)?
+ [BatchTaskState](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskState)?
 
 #### See Also
 
-[BatchTaskInfo](SuperOffice.WebApi.Data.BatchTaskInfo.md).[State\_String](SuperOffice.WebApi.Data.BatchTaskInfo.md\#SuperOffice\_WebApi\_Data\_BatchTaskInfo\_State\_String)
+[BatchTaskInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo).[State\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo#SuperOffice_WebApi_Data_BatchTaskInfo_State_String)
 
 ### <a id="SuperOffice_WebApi_Data_BatchTaskInfo_State_String"></a> State\_String
 
@@ -350,9 +350,9 @@ public string State_String { get; set; }
 
 #### See Also
 
-[BatchTaskInfo](SuperOffice.WebApi.Data.BatchTaskInfo.md).[State](SuperOffice.WebApi.Data.BatchTaskInfo.md\#SuperOffice\_WebApi\_Data\_BatchTaskInfo\_State)
+[BatchTaskInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo).[State](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo#SuperOffice_WebApi_Data_BatchTaskInfo_State)
 
 ## See Also
 
-[BatchAgent](SuperOffice.WebApi.Agents.BatchAgent.md)
+[BatchAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.BatchAgent)
 

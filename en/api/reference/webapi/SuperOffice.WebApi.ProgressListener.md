@@ -1,6 +1,6 @@
 # Class ProgressListener {#SuperOffice_WebApi_ProgressListener}
 
-Namespace: [SuperOffice.WebApi](SuperOffice.WebApi.md)  
+Namespace: [SuperOffice.WebApi](/en/api/reference/webapi/SuperOffice.WebApi)  
 Assembly: SuperOffice.WebApi.dll  
 
 Default ProgressListener implementation with delegates for event callbacks.
@@ -12,11 +12,11 @@ public class ProgressListener : IProgressListener
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ProgressListener](SuperOffice.WebApi.ProgressListener.md)
+[ProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.ProgressListener)
 
 #### Implements
 
-[IProgressListener](SuperOffice.WebApi.IProgressListener.md)
+[IProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.IProgressListener)
 
 #### Inherited Members
 
@@ -92,7 +92,7 @@ URL being loaded
 
 `errorMessage` [Exception](https://learn.microsoft.com/dotnet/api/system.exception)
 
-Exception that is being thrown. Probably a &lt;xref href="SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiException" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+Exception that is being thrown. Probably a [SuperOfficeWebApiException](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiException).
 
 ### OnProgress\(string, float\) {#SuperOffice_WebApi_ProgressListener_OnProgress_System_String_System_Single_}
 

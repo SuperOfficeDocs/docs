@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Person_CreateDefaultByContactIdRequest"></a> Class Person\_CreateDefaultByContactIdRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Person_CreateDefaultByContactIdRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Person\_CreateDefaultByContactIdRequest](SuperOffice.WebApi.Data.Person\_CreateDefaultByContactIdRequest.md)
+[Person\_CreateDefaultByContactIdRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person_CreateDefaultByContactIdRequest)
 
 #### Inherited Members
 

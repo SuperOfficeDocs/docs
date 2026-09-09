@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Sale_OfferAutoNextStageOnApppointmentCompletedRequest"></a> Class Sale\_OfferAutoNextStageOnApppointmentCompletedRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Sale_OfferAutoNextStageOnApppointmentCompletedRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Sale\_OfferAutoNextStageOnApppointmentCompletedRequest](SuperOffice.WebApi.Data.Sale\_OfferAutoNextStageOnApppointmentCompletedRequest.md)
+[Sale\_OfferAutoNextStageOnApppointmentCompletedRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale_OfferAutoNextStageOnApppointmentCompletedRequest)
 
 #### Inherited Members
 

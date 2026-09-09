@@ -33,7 +33,7 @@ Adds an email to a customer.
 Void addEmail(String email, Integer extTable, Integer dbiAgentId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Commonly used in database integrations.
@@ -49,7 +49,7 @@ Adds an email to a customer with the external sorting rank.
 Void addEmail(String email, Integer externalRank, Integer extTable, Integer dbiAgentId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Commonly used in database integrations.
@@ -63,7 +63,7 @@ Checks if the current user has access to the field.
 Bool checkFieldRights(String field, String fieldRight)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the current user has access to the field; otherwise, false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if the current user has access to the field; otherwise, false.
 
 **Example:**
 
@@ -82,7 +82,7 @@ Use this function to see if the current user has access to this customer.
 Bool checkTableRights(String tableRight)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the current user has access to the customer; otherwise, false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if the current user has access to the customer; otherwise, false.
 
 **Example:**
 
@@ -101,7 +101,7 @@ Finds an entry in the external database based on an email address.
 Bool findExternallyFromEmail(String email)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if an entry is found; otherwise, false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if an entry is found; otherwise, false.
 
 <Note>
 It will search all external data sources for a Customer matching the given email address. If an entry is found, a proxy entry is created and saved.
@@ -117,7 +117,7 @@ Finds an entry in the external database based on an email address and an extTabl
 Bool findExternallyFromEmail(String email, Integer extTable)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if an entry is found; otherwise, false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if an entry is found; otherwise, false.
 
 <Note>
 It will search all external data sources for a Customer matching the given email address. If an entry is found, a proxy entry is created and saved.
@@ -131,7 +131,7 @@ Finds an external entry based on its primary key and table ID.
 Integer findExternallyFromKey(Integer table, String key)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - True if found; otherwise, false.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - True if found; otherwise, false.
 
 <Note>
 Searches for and possibly creates a proxy entry for an external entry based on the external table (implicitly defines data source), and the primary key.
@@ -147,7 +147,7 @@ Finds a customer entry in the database based on the given agent ID and external 
 Integer findFromAgentAndKey(Integer agent, String key)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID for the customer entry in the database; or -1 if not found.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID for the customer entry in the database; or -1 if not found.
 
 ## findFromCellphone(String)
 
@@ -157,7 +157,7 @@ Finds an entry based on the cellphone.
 Bool findFromCellphone(String cellphone)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if found; otherwise, false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if found; otherwise, false.
 
 ## findFromEmail(String)
 
@@ -167,7 +167,7 @@ Find a Customer instance based on the email address.
 findFromEmail(String email)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if found; otherwise, false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if found; otherwise, false.
 
 ## getValue(String)
 
@@ -177,7 +177,7 @@ Returns the value of the given field of the customer.
 String getValue(String colName)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of colName.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The value of colName.
 
 <Note>
 Available fields:
@@ -225,7 +225,7 @@ Loads the customer with the given ID.
 Bool load(Integer id)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the customer exists; otherwise, false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if the customer exists; otherwise, false.
 
 **Example:**
 
@@ -242,7 +242,7 @@ Loads a customer based on agent id and external key.
 Bool loadFromAgentAndKey(Integer agent, String key)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if operation was successful; false if the customer does not exist.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if operation was successful; false if the customer does not exist.
 
 <Note>
 Loading might overwriting existing values.
@@ -256,7 +256,7 @@ Creates a valid login session for the current customer.
 Void login()
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Use getValue("loginSessionKey") to get the actual session key created.
@@ -272,7 +272,7 @@ Logs out a customer.
 Void logout()
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## makeSalutation()
 
@@ -282,7 +282,7 @@ Creates a salutation greeting the customer.
 String makeSalutation()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A salutation string.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A salutation string.
 
 <Note>
 Can be used in the beginning of a document or email.
@@ -308,7 +308,7 @@ Removes the email address from the customer.
 Void removeEmail(String email)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 For the action to take place, you must save().
@@ -322,7 +322,7 @@ Removes all external emails from a given source (extTable).
 Void removeExternalEmails(Integer p_0, Integer p_1)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Used with set() to make sure emails deleted from the external source is deleted.
@@ -336,7 +336,7 @@ Saves a customer. If ID is set, the customer will be updated. Otherwise, a new c
 Integer save()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the saved customer.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the saved customer.
 
 <Note>
 Use save(String) to provide the source key of the StoreAndProcess consent.
@@ -350,7 +350,7 @@ Saves a customer with the source key of the StoreAndProcess consent. If ID is se
 Integer save(String gdprSourceKey)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the saved customer.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the saved customer.
 
 ## setValue(String,String)
 
@@ -360,7 +360,7 @@ Sets the given field with the given value.
 Void setValue(String field, String value)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Available fields:
@@ -423,7 +423,7 @@ Fills a Parser object with a Customer's values, including extra fields. The fiel
 Void toParser(Parser parser)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Consecutive calls will overwrite (rather than append) the values in the Parser instance.

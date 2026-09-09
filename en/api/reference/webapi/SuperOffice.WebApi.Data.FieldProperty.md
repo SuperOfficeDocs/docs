@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_FieldProperty"></a> Class FieldProperty
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for FieldProperty.
@@ -13,7 +13,7 @@ public class FieldProperty
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[FieldProperty](SuperOffice.WebApi.Data.FieldProperty.md)
+[FieldProperty](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldProperty)
 
 #### Inherited Members
 
@@ -59,7 +59,7 @@ public virtual FieldRight FieldRight { get; set; }
 
 #### Property Value
 
- [FieldRight](SuperOffice.WebApi.Data.FieldRight.md)
+ [FieldRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldRight)
 
 ### <a id="SuperOffice_WebApi_Data_FieldProperty_FieldType"></a> FieldType
 

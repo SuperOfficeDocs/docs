@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_SaveConsentPurposeRequest"></a> Class List\_SaveConsentPurposeRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_SaveConsentPurposeRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_SaveConsentPurposeRequest](SuperOffice.WebApi.Data.List\_SaveConsentPurposeRequest.md)
+[List\_SaveConsentPurposeRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_SaveConsentPurposeRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public ConsentPurpose ConsentPurpose { get; set; }
 
 #### Property Value
 
- [ConsentPurpose](SuperOffice.WebApi.Data.ConsentPurpose.md)
+ [ConsentPurpose](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConsentPurpose)
 

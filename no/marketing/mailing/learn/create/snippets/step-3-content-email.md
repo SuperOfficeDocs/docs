@@ -13,11 +13,11 @@ Du kan opprette og lagre innholdsblokker som alle brukerne dine kan velge og vra
 * [Legge til bilder i meldingen][2]
 * [Teste utsendelsen][7]
 
-[1]: ../../../../editor/learn/index
-[2]: ../../../../editor/learn/insert-images-in-message
-[3]: ../../../../editor/learn/add-content
-[4]: ../../../../editor/learn/edit-paragraph
-[5]: ../../../../editor/learn/add-merge-tag
-[11]: ../../../../editor/learn/add-tracked-link-to-msg
-[8]: ../../../../editor/learn/add-unsubscribe-link
-[7]: ../send-test-email
+[1]: /no/marketing/editor/learn/index
+[2]: /no/marketing/editor/learn/insert-images-in-message
+[3]: /no/marketing/editor/learn/add-content
+[4]: /no/marketing/editor/learn/edit-paragraph
+[5]: /no/marketing/editor/learn/add-merge-tag
+[11]: /no/marketing/editor/learn/add-tracked-link-to-msg
+[8]: /no/marketing/editor/learn/add-unsubscribe-link
+[7]: /no/marketing/mailing/learn/create/send-test-email

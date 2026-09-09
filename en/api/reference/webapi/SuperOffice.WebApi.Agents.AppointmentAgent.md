@@ -1,6 +1,6 @@
 # Class AppointmentAgent {#SuperOffice_WebApi_Agents_AppointmentAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Collection of all services that works with Appointment data.
@@ -12,41 +12,41 @@ public class AppointmentAgent : AgentBase, IAppointmentAgent, IAgentBase, IDispo
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AgentBase](SuperOffice.WebApi.Agents.AgentBase.md) ← 
-[AppointmentAgent](SuperOffice.WebApi.Agents.AppointmentAgent.md)
+[AgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase) ← 
+[AppointmentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AppointmentAgent)
 
 #### Implements
 
-[IAppointmentAgent](SuperOffice.WebApi.Agents.IAppointmentAgent.md), 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAppointmentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAppointmentAgent), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 #### Inherited Members
 
-[AgentBase.\_json](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_json), 
-[AgentBase.\_binary](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_binary), 
-[AgentBase.\_config](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_config), 
-[AgentBase.\_client](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_client), 
-[AgentBase.\_disposeClient](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_disposeClient), 
-[AgentBase.Merge\(RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Merge\_SuperOffice\_WebApi\_RequestOptions\_), 
-[AgentBase.BuildRequestFromObject\(HttpMethod, string, object, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_BuildRequestFromObject\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
-[AgentBase.BuildRequestFromStream\(HttpMethod, string, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_BuildRequestFromStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
-[AgentBase.BuildRequestFromObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_BuildRequestFromObjectWithStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
-[AgentBase.ParseAuthorization\(IAuthorization\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseAuthorization\_SuperOffice\_WebApi\_Authorization\_IAuthorization\_), 
-[AgentBase.CancelRequest\(\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_CancelRequest), 
-[AgentBase.SendRequestObject\(HttpMethod, string, object, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequestObject\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
-[AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequestObjectWithStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
-[AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequest\_System\_Net\_Http\_HttpRequestMessage\_SuperOffice\_WebApi\_RequestOptions\_), 
-[AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ThrowOnResponseErrorAsync\_System\_Net\_Http\_HttpRequestMessage\_System\_Net\_Http\_HttpResponseMessage\_), 
-[AgentBase.ParseResponse&lt;T\&gt;\(HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseResponse\_\_1\_System\_Net\_Http\_HttpResponseMessage\_), 
-[AgentBase.Finally\(RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Finally\_SuperOffice\_WebApi\_RequestOptions\_), 
-[AgentBase.Dispose\(\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Dispose), 
-[AgentBase.Configuration](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Configuration), 
-[AgentBase.Client](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Client), 
-[AgentBase.HasRunningRequest](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_HasRunningRequest), 
-[AgentBase.ClientCancellationTokenSource](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ClientCancellationTokenSource), 
-[AgentBase.ProgressListener](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ProgressListener), 
-[AgentBase.UploadProgressListener](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_UploadProgressListener), 
+[AgentBase.\_json](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__json), 
+[AgentBase.\_binary](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__binary), 
+[AgentBase.\_config](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__config), 
+[AgentBase.\_client](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__client), 
+[AgentBase.\_disposeClient](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__disposeClient), 
+[AgentBase.Merge\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Merge_SuperOffice_WebApi_RequestOptions_), 
+[AgentBase.BuildRequestFromObject\(HttpMethod, string, object, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_), 
+[AgentBase.BuildRequestFromStream\(HttpMethod, string, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromStream_System_Net_Http_HttpMethod_System_String_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
+[AgentBase.BuildRequestFromObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
+[AgentBase.ParseAuthorization\(IAuthorization\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseAuthorization_SuperOffice_WebApi_Authorization_IAuthorization_), 
+[AgentBase.CancelRequest\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_CancelRequest), 
+[AgentBase.SendRequestObject\(HttpMethod, string, object, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_), 
+[AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
+[AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequest_System_Net_Http_HttpRequestMessage_SuperOffice_WebApi_RequestOptions_), 
+[AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ThrowOnResponseErrorAsync_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpResponseMessage_), 
+[AgentBase.ParseResponse&lt;T\&gt;\(HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseResponse__1_System_Net_Http_HttpResponseMessage_), 
+[AgentBase.Finally\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Finally_SuperOffice_WebApi_RequestOptions_), 
+[AgentBase.Dispose\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Dispose), 
+[AgentBase.Configuration](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Configuration), 
+[AgentBase.Client](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Client), 
+[AgentBase.HasRunningRequest](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_HasRunningRequest), 
+[AgentBase.ClientCancellationTokenSource](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ClientCancellationTokenSource), 
+[AgentBase.ProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ProgressListener), 
+[AgentBase.UploadProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_UploadProgressListener), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -93,7 +93,7 @@ public AppointmentAgent(WebApiOptions options, HttpClient httpClient = null)
 
 #### Parameters
 
-`options` [WebApiOptions](SuperOffice.WebApi.WebApiOptions.md)
+`options` [WebApiOptions](/en/api/reference/webapi/SuperOffice.WebApi.WebApiOptions)
 
 Base URL and authentication values.
 
@@ -117,11 +117,11 @@ public Task AcceptAsync(int appointmentId, RecurrenceUpdateMode updateMode, Requ
 
 The appointmentId. Both master and child record ids are accepted.
 
-`updateMode` [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
+`updateMode` [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
 
 Update mode for a recurring appointment.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -145,17 +145,17 @@ public Task<AppointmentEntity> AcceptRejectedAsync(int appointmentId, Recurrence
 
 The appointmentId. Both master and child record ids are accepted.
 
-`updateMode` [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
+`updateMode` [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
 
 Update mode for a recurring appointment.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)\&gt;
 
 Updated AppointmentEntity
 
@@ -173,11 +173,11 @@ public Task AcceptWithEmailConfirmationAsync(int appointmentId, RecurrenceUpdate
 
 The appointmentId. Both master and child record ids are accepted.
 
-`updateMode` [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
+`updateMode` [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
 
 Update mode for a recurring appointment.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -201,15 +201,15 @@ public Task AcceptWithSmtpEmailConfirmationAsync(int appointmentId, RecurrenceUp
 
 The appointmentId. Both master and child record ids are accepted.
 
-`updateMode` [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
+`updateMode` [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
 
 Update mode for a recurring appointment.
 
-`smtpEMailConnectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`smtpEMailConnectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 Login information for outgoing smtp email server. Will be null if no login information is relevant.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -233,19 +233,19 @@ public Task<AppointmentEntity> AssignToAsync(int appointmentId, ParticipantInfo 
 
 The appointmentId. Both master and child record ids are accepted.
 
-`participant` [ParticipantInfo](SuperOffice.WebApi.Data.ParticipantInfo.md)
+`participant` [ParticipantInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ParticipantInfo)
 
-`updateMode` [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
+`updateMode` [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
 
 Update mode for a recurring appointment.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)\&gt;
 
 Updated AppointmentEntity
 
@@ -259,15 +259,15 @@ public Task<RecurrenceInfo> CalculateDaysAsync(AppointmentEntity appointmentEnti
 
 #### Parameters
 
-`appointmentEntity` [AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)
+`appointmentEntity` [AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RecurrenceInfo](SuperOffice.WebApi.Data.RecurrenceInfo.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RecurrenceInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceInfo)\&gt;
 
 ### CanAssignToProjectMemberAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_AppointmentAgent_CanAssignToProjectMemberAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
@@ -281,7 +281,7 @@ public Task<bool> CanAssignToProjectMemberAsync(int projectId, int suggestedAppo
 
 `suggestedAppointmentId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -301,7 +301,7 @@ public Task<int> CleanUpBookingDeletedAsync(int[] appointmentIds, RequestOptions
 
 `appointmentIds` [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -325,11 +325,11 @@ public Task CleanUpBookingDeletedWithUpdateModeAsync(int[] appointmentIds, Recur
 
 List of appointment IDs
 
-`updateMode` [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
+`updateMode` [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
 
 Update mode
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -347,7 +347,7 @@ public Task<int> CleanUpRecurringBookingDeletedAsync(RequestOptions requestOptio
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -369,13 +369,13 @@ public Task<AppointmentEntity> ConvertAppointmentToTaskAsync(int appointmentId, 
 
 Appointment ID
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)\&gt;
 
 Appointment entity
 
@@ -393,11 +393,11 @@ public Task CreateAndAcceptAsync(int emailItemId, RecurrenceUpdateMode updateMod
 
 The emailItemId
 
-`updateMode` [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
+`updateMode` [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
 
 Update mode for a recurring appointment.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -419,11 +419,11 @@ public Task CreateAndAcceptWithEmailConfirmationAsync(int emailItemId, Recurrenc
 
 The emailItemId
 
-`updateMode` [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
+`updateMode` [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
 
 Update mode for a recurring appointment.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -449,13 +449,13 @@ Source appointment ID
 
 Associate owning the new appointment. If 0 the current associate is used.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)\&gt;
 
 AppointmentEntity with values copied from an existing appointment. Values that are not copied will be the default values.
 
@@ -469,19 +469,19 @@ public Task<AppointmentEntity> CreateAppointmentForUIDAsync(AppointmentEntity ap
 
 #### Parameters
 
-`appointmentEntity` [AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)
+`appointmentEntity` [AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)
 
 `uID` [string](https://learn.microsoft.com/dotnet/api/system.string)
 
 The UID associated with the appointment
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)\&gt;
 
 The newly created AppointmentEntity or null if the UID is in the DB already.
 
@@ -496,13 +496,13 @@ public Task<AppointmentEntity> CreateDefaultAppointmentEntityAsync(RequestOption
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)\&gt;
 
 A blank AppointmentEntity
 
@@ -516,7 +516,7 @@ public Task<AppointmentEntity> CreateDefaultAppointmentEntityByTypeAndAssociateA
 
 #### Parameters
 
-`type` [TaskType](SuperOffice.WebApi.Data.TaskType.md)
+`type` [TaskType](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskType)
 
 The type of task requested.
 
@@ -524,13 +524,13 @@ The type of task requested.
 
 The associateId of the appointment owner.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)\&gt;
 
 AppointmentEntity with default values.
 
@@ -544,17 +544,17 @@ public Task<AppointmentEntity> CreateDefaultAppointmentEntityByTypeAsync(TaskTyp
 
 #### Parameters
 
-`type` [TaskType](SuperOffice.WebApi.Data.TaskType.md)
+`type` [TaskType](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskType)
 
 The type of task requested.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)\&gt;
 
 AppointmentEntity with default values.
 
@@ -574,13 +574,13 @@ public Task<AppointmentEntity> CreateDefaultAppointmentEntityFromProjectSuggesti
 
 `ownerId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)\&gt;
 
 ### CreateDefaultAppointmentEntityFromSaleSuggestionAsync\(int, int, bool, int, RequestOptions\) {#SuperOffice_WebApi_Agents_AppointmentAgent_CreateDefaultAppointmentEntityFromSaleSuggestionAsync_System_Int32_System_Int32_System_Boolean_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
@@ -606,13 +606,13 @@ If this parameter is true, we override the suggested start time and create the a
 
 `ownerId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)\&gt;
 
 The newly created appointment
 
@@ -630,13 +630,13 @@ public Task<AppointmentEntity> CreateDefaultReOpenAppointmentAsync(int saleId, R
 
 The identifier of the stalled sale from which we create a re-open appointment
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)\&gt;
 
 The re-open appointment with start date = the re-open date of the sale and a description matching the sales stalled reason.
 
@@ -650,13 +650,13 @@ public Task<RecurrenceInfo> CreateDefaultRecurrenceAsync(RequestOptions requestO
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RecurrenceInfo](SuperOffice.WebApi.Data.RecurrenceInfo.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RecurrenceInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceInfo)\&gt;
 
 RecurrenceInfo object with default values.
 
@@ -674,13 +674,13 @@ public Task<RecurrenceInfo> CreateDefaultRecurrenceByDateAsync(DateTime startDat
 
 Date of which the recurring pattern should start.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RecurrenceInfo](SuperOffice.WebApi.Data.RecurrenceInfo.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RecurrenceInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceInfo)\&gt;
 
 ### CreateDefaultSuggestedAppointmentEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_AppointmentAgent_CreateDefaultSuggestedAppointmentEntityAsync_SuperOffice_WebApi_RequestOptions_}
 
@@ -693,13 +693,13 @@ public Task<SuggestedAppointmentEntity> CreateDefaultSuggestedAppointmentEntityA
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SuggestedAppointmentEntity](SuperOffice.WebApi.Data.SuggestedAppointmentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SuggestedAppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SuggestedAppointmentEntity)\&gt;
 
 A blank SuggestedAppointmentEntity
 
@@ -714,13 +714,13 @@ public Task<TaskListItem> CreateDefaultTaskListItemAsync(RequestOptions requestO
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TaskListItem](SuperOffice.WebApi.Data.TaskListItem.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TaskListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem)\&gt;
 
 A blank TaskListItem
 
@@ -734,13 +734,13 @@ public Task<VideoMeetingReservation> CreateVideoMeetingReservationAsync(RequestO
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[VideoMeetingReservation](SuperOffice.WebApi.Data.VideoMeetingReservation.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[VideoMeetingReservation](/en/api/reference/webapi/SuperOffice.WebApi.Data.VideoMeetingReservation)\&gt;
 
 The created VideoMeetingReservation.
 
@@ -762,7 +762,7 @@ The emailItemId.
 
 The reason the invitation was rejected.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -784,7 +784,7 @@ public Task DeleteAppointmentEntityAsync(int appointmentEntityId, RequestOptions
 
 The identity of the AppointmentEntity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -806,7 +806,7 @@ public Task DeleteAsync(int appointmentId, RecurrenceUpdateMode updateMode, bool
 
 The appointmentId. Both master and child record ids are accepted.
 
-`updateMode` [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
+`updateMode` [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
 
 Update mode for a recurring appointment.
 
@@ -814,15 +814,15 @@ Update mode for a recurring appointment.
 
 If true, emails will be sent to all participants that is marked with send email flag. If false no mails will be sent even if the send email flag is true.
 
-`smtpEMailConnectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`smtpEMailConnectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 Login information for outgoing smtp email server. Will be null if no login information is relevant.
 
-`imapEMailConnectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`imapEMailConnectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 Login information for imap server. Will be null if no login information is relevant.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -844,7 +844,7 @@ public Task DeleteVideoMeetingReservationAsync(string videoMeetingId, RequestOpt
 
 The VideoMeetingReservation.VideoMeetingId to remove. System users are not allowed to delete video meeting reservations
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -910,13 +910,13 @@ The firstname of the person creating the lead
 
 The lastname of the person creating the lead
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SalesActivity](SuperOffice.WebApi.Data.SalesActivity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SalesActivity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SalesActivity)\&gt;
 
 True if successfull.
 
@@ -942,13 +942,13 @@ End date of interval. Time portion is ignored.
 
 Associate id to identify the calendar to scan. If 0 is passed in, the currently authenticated associate is used instead.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ActivityInformationListItem](SuperOffice.WebApi.Data.ActivityInformationListItem.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ActivityInformationListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.ActivityInformationListItem)\[\]\&gt;
 
 Exactly one item per day of the given time span is returned. Days where nothing happens will have all values set to 0, but will still be in the returned array. Start end dates are treated as inclusive.
 
@@ -966,13 +966,13 @@ public Task<MultiAlarmData> GetAlarmsAsync(bool includeInvitations, bool include
 
 `defaultAlarmLeadTimeInMinutes` [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MultiAlarmData](SuperOffice.WebApi.Data.MultiAlarmData.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MultiAlarmData](/en/api/reference/webapi/SuperOffice.WebApi.Data.MultiAlarmData)\&gt;
 
 ### GetAppointmentAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_AppointmentAgent_GetAppointmentAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
@@ -988,13 +988,13 @@ public Task<Appointment> GetAppointmentAsync(int appointmentId, RequestOptions r
 
 The identifier of the Appointment object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\&gt;
 
 Appointment
 
@@ -1008,7 +1008,7 @@ public Task<EMailEntity> GetAppointmentEmailInvitationAsync(AppointmentEntity ap
 
 #### Parameters
 
-`appointment` [AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)
+`appointment` [AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)
 
 The appointment carrier with changes made.
 
@@ -1020,13 +1020,13 @@ Filename of invitation template
 
 The desired SO-language for the template
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](SuperOffice.WebApi.Data.EMailEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EMailEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailEntity)\&gt;
 
 Email entity with the preview in HTMLBody
 
@@ -1044,13 +1044,13 @@ public Task<AppointmentEntity> GetAppointmentEntityAsync(int appointmentEntityId
 
 The identifier of the AppointmentEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)\&gt;
 
 AppointmentEntity
 
@@ -1068,13 +1068,13 @@ public Task<AppointmentEntity> GetAppointmentFromUIDAsync(string uID, RequestOpt
 
 The UID associated with the appointment
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)\&gt;
 
 The corresponding AppointmentEntity if exists or a default appointment entity.
 
@@ -1092,7 +1092,7 @@ public Task<bool> GetAppointmentHaveParticipantsWithEmailAsync(int appointmentId
 
 The appointmentId.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1116,13 +1116,13 @@ public Task<Appointment[]> GetAppointmentListAsync(int[] appointmentIds, Request
 
 The identifiers of the Appointment object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointment objects
 
@@ -1144,13 +1144,13 @@ Appointment id of the owner of a booking
 
 RecurrenceId of a recuring appointment
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 ### GetAppointmentsByTaskHeadingAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_AppointmentAgent_GetAppointmentsByTaskHeadingAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
@@ -1166,13 +1166,13 @@ public Task<Appointment[]> GetAppointmentsByTaskHeadingAsync(int taskHeadingId, 
 
 The task heading id. The heading represents a grouping or filtering of tasks. Task represents the different types of activities, like “Phone call”, “Meeting” and so on
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointments.
 
@@ -1192,13 +1192,13 @@ public Task<Appointment[]> GetAssociateDiaryAsync(int associateId, DateTime star
 
 `count` [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 ### GetAssociatesDiaryAsync\(int\[\], DateTime, DateTime, RequestOptions\) {#SuperOffice_WebApi_Agents_AppointmentAgent_GetAssociatesDiaryAsync_System_Int32___System_DateTime_System_DateTime_SuperOffice_WebApi_RequestOptions_}
 
@@ -1216,13 +1216,13 @@ public Task<Appointment[]> GetAssociatesDiaryAsync(int[] associateIds, DateTime 
 
 `endTime` [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 ### GetAssociatesDiaryInfoAsync\(int\[\], DateTime, DateTime, RequestOptions\) {#SuperOffice_WebApi_Agents_AppointmentAgent_GetAssociatesDiaryInfoAsync_System_Int32___System_DateTime_System_DateTime_SuperOffice_WebApi_RequestOptions_}
 
@@ -1240,13 +1240,13 @@ public Task<AppointmentInfo[]> GetAssociatesDiaryInfoAsync(int[] associateIds, D
 
 `endTime` [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentInfo](SuperOffice.WebApi.Data.AppointmentInfo.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentInfo)\[\]\&gt;
 
 ### GetCanInsertForAssociatesAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_AppointmentAgent_GetCanInsertForAssociatesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
 
@@ -1262,7 +1262,7 @@ public Task<bool[]> GetCanInsertForAssociatesAsync(int[] associateIds, RequestOp
 
 Array of associate ids to check for.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1298,13 +1298,13 @@ The end of the time interval.
 
 The maximum number of appointments that should be returned. -1 means no count restrictions.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointments.
 
@@ -1338,13 +1338,13 @@ The maximum number of appointments that should be returned. -1 means no count re
 
 The task id. Task represents the different types of activities, like “Phone call”, “Meeting” and so on.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointments.
 
@@ -1378,13 +1378,13 @@ The maximum number of appointments that should be returned. -1 means no count re
 
 The task heading id. The heading represents a grouping or filtering of tasks. Task represents the different types of activities, like “Phone call”, “Meeting” and so on.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointments.
 
@@ -1418,13 +1418,13 @@ The maximum number of appointments that should be returned. -1 means no count re
 
 The task ids as an integer array. Task represents the different types of activities, like “Phone call”, “Meeting” and so on.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointments.
 
@@ -1454,17 +1454,17 @@ The end of the time interval.
 
 The maximum number of appointments that should be returned. -1 means no count restrictions.
 
-`appointmentType` [AppointmentType](SuperOffice.WebApi.Data.AppointmentType.md)
+`appointmentType` [AppointmentType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentType)
 
 The appointment type, e.g. inDiary, inChecklist etc.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointments.
 
@@ -1490,13 +1490,13 @@ End date of interval. Time portion is ignored.
 
 Associate id to identify the calendar to scan. If 0 is passed in, the currently authenticated associate is used instead.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DayInformationListItem](SuperOffice.WebApi.Data.DayInformationListItem.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DayInformationListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.DayInformationListItem)\[\]\&gt;
 
 Exactly one item per day of the given time span is returned. Days where nothing happens will have all values set to 0, but will still be in the returned array. Start end dates are treated as inclusive.
 
@@ -1518,13 +1518,13 @@ public Task<Appointment[]> GetDiaryByGroupAsync(int groupId, int groupType, Date
 
 `count` [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 ### GetMyAppointmentsAsync\(DateTime, DateTime, int, RequestOptions\) {#SuperOffice_WebApi_Agents_AppointmentAgent_GetMyAppointmentsAsync_System_DateTime_System_DateTime_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
@@ -1548,13 +1548,13 @@ The end of the time interval.
 
 The maximum number of appointments that should be returned. -1 means no count restrictions.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointments.
 
@@ -1580,13 +1580,13 @@ The end of the time interval.
 
 The maximum number of appointments that should be returned. -1 means no count restrictions.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointments.
 
@@ -1600,13 +1600,13 @@ public Task<Appointment[]> GetMyPublishedAppointmentsAsync(RequestOptions reques
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Appointments
 
@@ -1628,13 +1628,13 @@ The start of the time interval in which we want appointments. This will usually 
 
 The end of the time interval.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentSyncData](SuperOffice.WebApi.Data.AppointmentSyncData.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentSyncData](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentSyncData)\[\]\&gt;
 
 Array of Appointments.
 
@@ -1652,13 +1652,13 @@ public Task<Appointment[]> GetMyTasksAsync(int count, RequestOptions requestOpti
 
 The maximum number of appointments that should be returned. -1 means no count restrictions.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointments.
 
@@ -1692,13 +1692,13 @@ How many next-available date time slots should be returned.
 
 Is the appointment an all day event.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[NextAvailableTime](SuperOffice.WebApi.Data.NextAvailableTime.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[NextAvailableTime](/en/api/reference/webapi/SuperOffice.WebApi.Data.NextAvailableTime)\[\]\&gt;
 
 Array of the soonest-available working time slots.
 
@@ -1724,13 +1724,13 @@ The identifier of the appointment from which we calculate the next suggestion. T
 
 If you want to get the next appointment step in a sales guide for an appointment which is not completed, this value must be true. In all other cases, this value should be false, as it would return the value of null if the current appointment is not completes.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SuggestedAppointment](SuperOffice.WebApi.Data.SuggestedAppointment.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SuggestedAppointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.SuggestedAppointment)\&gt;
 
 The next suggestion based on the sale id of a guided sale and the id of the current apopintment. If we cannot find a next suggestion or the sale is not guided (or if any of the paramters are invalid), we will return null.
 
@@ -1748,7 +1748,7 @@ public Task<string> GetOrganizerNameAsync(int motherAppointmentId, RequestOption
 
 The id of the mother-appointment.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -1788,13 +1788,13 @@ The end of the time interval.
 
 The maximum number of appointments that should be returned. -1 means no count restrictions.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointments.
 
@@ -1832,13 +1832,13 @@ The maximum number of appointments that should be returned. -1 means no count re
 
 The task id. Task represents the different types of activities, like “Phone call”, “Meeting” and so on.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointments.
 
@@ -1876,13 +1876,13 @@ The maximum number of appointments that should be returned. -1 means no count re
 
 The task heading id. The heading represents a grouping or filtering of tasks. Task represents the different types of activities, like “Phone call”, “Meeting” and so on.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointments.
 
@@ -1920,13 +1920,13 @@ The maximum number of appointments that should be returned. -1 means no count re
 
 The task ids as an integer array. Task represents the different types of activities, like “Phone call”, “Meeting” and so on.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointments.
 
@@ -1960,17 +1960,17 @@ The end of the time interval.
 
 The maximum number of appointments that should be returned. -1 means no count restrictions.
 
-`appointmentType` [AppointmentType](SuperOffice.WebApi.Data.AppointmentType.md)
+`appointmentType` [AppointmentType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentType)
 
 The appointment type, e.g. inDiary, inChecklist etc.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointments.
 
@@ -2000,13 +2000,13 @@ The end of the time interval.
 
 The maximum number of appointments that should be returned. -1 means no count restrictions.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointments.
 
@@ -2028,13 +2028,13 @@ The person id of the SuperOffice user (associate).
 
 The maximum number of appointments that should be returned. -1 means no count restrictions.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointments.
 
@@ -2064,13 +2064,13 @@ The end of the time interval.
 
 The maximum number of appointments that should be returned. -1 means no count restrictions.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointments.
 
@@ -2104,13 +2104,13 @@ The maximum number of appointments that should be returned. -1 means no count re
 
 The task id. Task represents the different types of activities, like “Phone call”, “Meeting” and so on.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointments.
 
@@ -2144,13 +2144,13 @@ The maximum number of appointments that should be returned. -1 means no count re
 
 The task heading id. The heading represents a grouping or filtering of tasks. Task represents the different types of activities, like “Phone call”, “Meeting” and so on.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointments.
 
@@ -2184,13 +2184,13 @@ The maximum number of appointments that should be returned. -1 means no count re
 
 The task ids as an integer array. Task represents the different types of activities, like “Phone call”, “Meeting” and so on.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointments.
 
@@ -2220,17 +2220,17 @@ The end of the time interval.
 
 The maximum number of appointments that should be returned. -1 means no count restrictions.
 
-`appointmentType` [AppointmentType](SuperOffice.WebApi.Data.AppointmentType.md)
+`appointmentType` [AppointmentType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentType)
 
 The appointment type, e.g. inDiary, inChecklist etc.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointments.
 
@@ -2260,13 +2260,13 @@ The end of the time interval.
 
 The maximum number of appointments that should be returned. -1 means no count restrictions.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointments.
 
@@ -2300,13 +2300,13 @@ The maximum number of appointments that should be returned. -1 means no count re
 
 The task id. Task represents the different types of activities, like “Phone call”, “Meeting” and so on.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointments.
 
@@ -2340,13 +2340,13 @@ The maximum number of appointments that should be returned. -1 means no count re
 
 The task heading id. The heading represents a grouping or filtering of tasks. Task represents the different types of activities, like “Phone call”, “Meeting” and so on.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointments.
 
@@ -2380,13 +2380,13 @@ The maximum number of appointments that should be returned. -1 means no count re
 
 The task ids as an integer array. Task represents the different types of activities, like “Phone call”, “Meeting” and so on.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointments.
 
@@ -2416,17 +2416,17 @@ The end of the time interval.
 
 The maximum number of appointments that should be returned. -1 means no count restrictions.
 
-`appointmentType` [AppointmentType](SuperOffice.WebApi.Data.AppointmentType.md)
+`appointmentType` [AppointmentType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentType)
 
 The appointment type, e.g. inDiary, inChecklist etc.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointments.
 
@@ -2444,13 +2444,13 @@ public Task<Appointment> GetPublishedAppointmentAsync(int appointmentId, Request
 
 The appointment id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\&gt;
 
 Appointment
 
@@ -2468,13 +2468,13 @@ public Task<Appointment[]> GetPublishedAppointmentsAsync(int[] appointmentIds, R
 
 The array of appointment ids
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointment
 
@@ -2492,13 +2492,13 @@ public Task<Appointment[]> GetPublishedProjectAppointmentsAsync(int projectId, R
 
 The project id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\[\]\&gt;
 
 Array of Appointment
 
@@ -2524,13 +2524,13 @@ End date of interval. Time portion is ignored.
 
 Associate id to identify the calendar to scan. If 0 is passed in, the currently authenticated associate is used instead.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RedLetterInformationListItem](SuperOffice.WebApi.Data.RedLetterInformationListItem.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RedLetterInformationListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.RedLetterInformationListItem)\[\]\&gt;
 
 Exactly one item per day of the given time span is returned. Days where nothing happens will have all values set to 0, but will still be in the returned array. Start end dates are treated as inclusive.
 
@@ -2548,13 +2548,13 @@ public Task<SuggestedAppointment> GetSuggestedAppointmentAsync(int suggestedAppo
 
 The identifier of the SuggestedAppointment object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SuggestedAppointment](SuperOffice.WebApi.Data.SuggestedAppointment.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SuggestedAppointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.SuggestedAppointment)\&gt;
 
 SuggestedAppointment
 
@@ -2572,13 +2572,13 @@ public Task<SuggestedAppointmentEntity> GetSuggestedAppointmentEntityAsync(int s
 
 The identifier of the SuggestedAppointmentEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SuggestedAppointmentEntity](SuperOffice.WebApi.Data.SuggestedAppointmentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SuggestedAppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SuggestedAppointmentEntity)\&gt;
 
 SuggestedAppointmentEntity
 
@@ -2596,13 +2596,13 @@ public Task<TaskListItem> GetTaskListItemAsync(int taskListItemId, RequestOption
 
 The identifier of the TaskListItem object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TaskListItem](SuperOffice.WebApi.Data.TaskListItem.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TaskListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem)\&gt;
 
 TaskListItem
 
@@ -2620,13 +2620,13 @@ public Task<TaskListItem[]> GetTaskListItemsAsync(bool includeDeleted, RequestOp
 
 Include deleted items
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TaskListItem](SuperOffice.WebApi.Data.TaskListItem.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TaskListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem)\[\]\&gt;
 
 An array of tasklist items
 
@@ -2646,7 +2646,7 @@ public Task<string> GetUIDFromAppointmentIdAsync(int appointmentId, bool useMoth
 
 Uses motherId if no UID is found for appointmentId.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2666,13 +2666,13 @@ public Task<UserConnectedState> GetVideoMeetingConnectedStateAsync(RequestOption
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserConnectedState](SuperOffice.WebApi.Data.UserConnectedState.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserConnectedState](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserConnectedState)\&gt;
 
 Details about the users connected state
 
@@ -2694,17 +2694,17 @@ The appointmentId. Both master and child record ids are accepted.
 
 The new start time for the moved booking.
 
-`updateMode` [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
+`updateMode` [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
 
 Update mode for a recurring appointment.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)\&gt;
 
 Updated AppointmentEntity
 
@@ -2718,17 +2718,17 @@ public Task<AppointmentEntity> MoveExtendedAsync(AppointmentMoveData appointment
 
 #### Parameters
 
-`appointmentMoveData` [AppointmentMoveData](SuperOffice.WebApi.Data.AppointmentMoveData.md)
+`appointmentMoveData` [AppointmentMoveData](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentMoveData)
 
 Move parameter data.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)\&gt;
 
 Updated AppointmentEntity
 
@@ -2750,7 +2750,7 @@ The appointmentId. Both master and child record ids are accepted.
 
 The new start time for the moved booking.
 
-`updateMode` [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
+`updateMode` [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
 
 Update mode for a recurring appointment.
 
@@ -2758,21 +2758,21 @@ Update mode for a recurring appointment.
 
 If true, emails will be sent to all participants that is marked with send email flag if deemed necessary. If false no mails will be sent even if the send email flag is true.
 
-`smtpEMailConnectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`smtpEMailConnectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 Login information for outgoing smtp email server. Will be null if no login information is relevant.
 
-`imapEMailConnectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`imapEMailConnectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 Login information for imap server. Will be null if no login information is relevant.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)\&gt;
 
 Updated AppointmentEntity
 
@@ -2794,11 +2794,11 @@ The appointmentId. Both master and child record ids are accepted.
 
 The reason the invitation was rejected.
 
-`updateMode` [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
+`updateMode` [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
 
 Update mode for a recurring appointment.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2826,11 +2826,11 @@ The appointmentId. Both master and child record ids are accepted.
 
 The reason the invitation was rejected.
 
-`updateMode` [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
+`updateMode` [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
 
 Update mode for a recurring appointment.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2858,15 +2858,15 @@ The appointmentId. Both master and child record ids are accepted.
 
 The reason the invitation was rejected.
 
-`updateMode` [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
+`updateMode` [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
 
 Update mode for a recurring appointment.
 
-`smtpEMailConnectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`smtpEMailConnectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 Login information for outgoing smtp email server. Will be null if no login information is relevant.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -2918,13 +2918,13 @@ The email address of the person that the RFI will be added to.
 
 Phone number of the contact or contact's person.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SalesActivity](SuperOffice.WebApi.Data.SalesActivity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SalesActivity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SalesActivity)\&gt;
 
 True if the submission was successful.
 
@@ -2938,17 +2938,17 @@ public Task<AppointmentEntity> SaveAppointmentEntityAsync(AppointmentEntity appo
 
 #### Parameters
 
-`appointmentEntity` [AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)
+`appointmentEntity` [AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)
 
 The AppointmentEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)\&gt;
 
 New or updated AppointmentEntity
 
@@ -2962,9 +2962,9 @@ public Task<AppointmentEntity> SaveAsync(AppointmentEntity appointmentEntity, Re
 
 #### Parameters
 
-`appointmentEntity` [AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)
+`appointmentEntity` [AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)
 
-`updateMode` [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
+`updateMode` [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
 
 Update mode for a recurring appointment.
 
@@ -2972,21 +2972,21 @@ Update mode for a recurring appointment.
 
 If true, emails will be sent to all participants that is marked with send email flag. If false no mails will be sent even if the send email flag is true.
 
-`smtpEMailConnectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`smtpEMailConnectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 Login information for outgoing smtp email server. Will be null if no login information is relevant.
 
-`imapEMailConnectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`imapEMailConnectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 Login information for imap server. Will be null if no login information is relevant.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)\&gt;
 
 Updated AppointmentEntity
 
@@ -3000,17 +3000,17 @@ public Task<SuggestedAppointmentEntity> SaveSuggestedAppointmentEntityAsync(Sugg
 
 #### Parameters
 
-`suggestedAppointmentEntity` [SuggestedAppointmentEntity](SuperOffice.WebApi.Data.SuggestedAppointmentEntity.md)
+`suggestedAppointmentEntity` [SuggestedAppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SuggestedAppointmentEntity)
 
 The SuggestedAppointmentEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SuggestedAppointmentEntity](SuperOffice.WebApi.Data.SuggestedAppointmentEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SuggestedAppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SuggestedAppointmentEntity)\&gt;
 
 New or updated SuggestedAppointmentEntity
 
@@ -3024,17 +3024,17 @@ public Task<TaskListItem> SaveTaskListItemAsync(TaskListItem taskListItem, Reque
 
 #### Parameters
 
-`taskListItem` [TaskListItem](SuperOffice.WebApi.Data.TaskListItem.md)
+`taskListItem` [TaskListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem)
 
 The TaskListItem that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TaskListItem](SuperOffice.WebApi.Data.TaskListItem.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TaskListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem)\&gt;
 
 New or updated TaskListItem
 
@@ -3048,9 +3048,9 @@ public Task<AppointmentSaveData> SaveWithCustomInvitationAsync(AppointmentEntity
 
 #### Parameters
 
-`appointmentEntity` [AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)
+`appointmentEntity` [AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)
 
-`updateMode` [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
+`updateMode` [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
 
 Update mode for a recurring appointment.
 
@@ -3058,11 +3058,11 @@ Update mode for a recurring appointment.
 
 If true, emails will be sent to all participants that is marked with send email flag. If false no mails will be sent even if the send email flag is true.
 
-`smtpEMailConnectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`smtpEMailConnectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 Login information for outgoing smtp email server. Will be null if no login information is relevant.
 
-`imapEMailConnectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`imapEMailConnectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 Login information for imap server. Will be null if no login information is relevant.
 
@@ -3078,13 +3078,13 @@ The email-subject to be used for new invitations
 
 The template language to use for invitation updates
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentSaveData](SuperOffice.WebApi.Data.AppointmentSaveData.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentSaveData](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentSaveData)\&gt;
 
 Appointment entity and flag for if email was queued to be sent
 
@@ -3102,11 +3102,11 @@ public Task SetActivityStatusAsync(string[] activityIdentifier, ActivityStatus a
 
 Array of activity ids. ex. appointment_id=666
 
-`activityStatus` [ActivityStatus](SuperOffice.WebApi.Data.ActivityStatus.md)
+`activityStatus` [ActivityStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ActivityStatus)
 
 The status to set the activities
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -3128,11 +3128,11 @@ public Task SetSeenAsync(int appointmentId, RecurrenceUpdateMode updateMode, Req
 
 The appointmentId. Both master and child record ids are accepted.
 
-`updateMode` [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
+`updateMode` [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
 
 Update mode for a recurring appointment.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -3154,11 +3154,11 @@ public Task SetSeenManyAsync(int[] appointmentIds, RecurrenceUpdateMode updateMo
 
 List of appointment IDs
 
-`updateMode` [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
+`updateMode` [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
 
 Update mode for a recurring appointment.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -3180,13 +3180,13 @@ public Task<ActivityStatus> ToggleActivitiesAsync(string[] activityIdentifier, R
 
 Contain of a mix of appointment_id, sale_id, document_id and todo_id.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ActivityStatus](SuperOffice.WebApi.Data.ActivityStatus.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ActivityStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ActivityStatus)\&gt;
 
 The resulting ActivityStatus of the first in the array
 
@@ -3204,13 +3204,13 @@ public Task<ActivityStatus> ToggleActivityAsync(string activityIdentifier, Reque
 
 May contain of a mix of appointment_id, sale_id, document_id and todo_id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ActivityStatus](SuperOffice.WebApi.Data.ActivityStatus.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ActivityStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ActivityStatus)\&gt;
 
 What the result after toggling was.
 
@@ -3228,7 +3228,7 @@ public Task<string[]> ToggleAndSetActivitiesAsync(string[] activityIdentifiers, 
 
 Array of activity ids. ex. appointment_id=666
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -3252,13 +3252,13 @@ public Task<AppointmentStatus> ToggleAppointmentStatusAsync(int appointmentId, R
 
 The appointment id.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentStatus](SuperOffice.WebApi.Data.AppointmentStatus.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AppointmentStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentStatus)\&gt;
 
 The new AppointmentStatus
 
@@ -3286,13 +3286,13 @@ public Task<Appointment> UpdateAppointmentAsync(int id, DateTime startTime, Date
 
 The appointment owner's id (associate id)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\&gt;
 
 ### UpdateAppointmentFromIcsResponseAsync\(string, byte\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_AppointmentAgent_UpdateAppointmentFromIcsResponseAsync_System_String_System_Byte___SuperOffice_WebApi_RequestOptions_}
 
@@ -3312,7 +3312,7 @@ The email-address of the person responding to our meeting-request.
 
 The iCal ICS RSVP-content in byte-form.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -3338,15 +3338,15 @@ public Task<Appointment> UpdateAppointmentWithModeAndEmailAsync(int id, DateTime
 
 `endTime` [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-`status` [AppointmentStatus](SuperOffice.WebApi.Data.AppointmentStatus.md)
+`status` [AppointmentStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentStatus)
 
-`type` [AppointmentType](SuperOffice.WebApi.Data.AppointmentType.md)
+`type` [AppointmentType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentType)
 
 `associateId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
 The appointment owner's id (associate id)
 
-`updateMode` [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
+`updateMode` [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
 
 Update mode for recurrence.
 
@@ -3354,21 +3354,21 @@ Update mode for recurrence.
 
 If true, emails will be sent to all participants that is marked with send email flag if deemed necessary. If false no mails will be sent even if the send email flag is true.
 
-`smtpEMailConnectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`smtpEMailConnectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 Login information for outgoing smtp email server. Will be null if no login information is relevant.
 
-`imapEMailConnectionInfo` [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+`imapEMailConnectionInfo` [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 Login information for imap server. Will be null if no login information is relevant.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\&gt;
 
 ### UpdateAppointmentWithModeAsync\(int, DateTime, DateTime, AppointmentStatus, AppointmentType, int, RecurrenceUpdateMode, RequestOptions\) {#SuperOffice_WebApi_Agents_AppointmentAgent_UpdateAppointmentWithModeAsync_System_Int32_System_DateTime_System_DateTime_SuperOffice_WebApi_Data_AppointmentStatus_SuperOffice_WebApi_Data_AppointmentType_System_Int32_SuperOffice_WebApi_Data_RecurrenceUpdateMode_SuperOffice_WebApi_RequestOptions_}
 
@@ -3386,25 +3386,25 @@ public Task<Appointment> UpdateAppointmentWithModeAsync(int id, DateTime startTi
 
 `endTime` [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-`status` [AppointmentStatus](SuperOffice.WebApi.Data.AppointmentStatus.md)
+`status` [AppointmentStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentStatus)
 
-`type` [AppointmentType](SuperOffice.WebApi.Data.AppointmentType.md)
+`type` [AppointmentType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentType)
 
 `associateId` [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
 The appointment owner's id (associate id)
 
-`updateMode` [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
+`updateMode` [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
 
 Update mode for recurrence.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](SuperOffice.WebApi.Data.Appointment.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Appointment](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment)\&gt;
 
 ### ValidateAppointmentEntityAsync\(AppointmentEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_AppointmentAgent_ValidateAppointmentEntityAsync_SuperOffice_WebApi_Data_AppointmentEntity_SuperOffice_WebApi_RequestOptions_}
 
@@ -3416,17 +3416,17 @@ public Task<StringDictionary> ValidateAppointmentEntityAsync(AppointmentEntity a
 
 #### Parameters
 
-`appointmentEntity` [AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)
+`appointmentEntity` [AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)
 
 Entity to be checked.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\&gt;
 
 Error messages tagged by field.
 
@@ -3440,19 +3440,19 @@ public Task<RecurrenceDate[]> ValidateDaysAsync(AppointmentEntity appointmentEnt
 
 #### Parameters
 
-`appointmentEntity` [AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)
+`appointmentEntity` [AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)
 
 `dates` [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)\[\]
 
 The dates to validate.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RecurrenceDate](SuperOffice.WebApi.Data.RecurrenceDate.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RecurrenceDate](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceDate)\[\]\&gt;
 
 Array of RecurrenceDate object for each validated date.
 
@@ -3466,11 +3466,11 @@ public Task<bool> WillSendEmailAsync(AppointmentEntity appointment, RequestOptio
 
 #### Parameters
 
-`appointment` [AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)
+`appointment` [AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)
 
 The appointment carrier with changes made, before saving the changes.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 

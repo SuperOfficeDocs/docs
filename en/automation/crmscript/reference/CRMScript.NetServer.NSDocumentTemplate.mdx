@@ -31,7 +31,7 @@ Initializes a new instance of the NSDocumentTemplate class.
 Integer GetAutoeventId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Which document plugin is responsible for the documents generated from this template.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Which document plugin is responsible for the documents generated from this template.
 
 **Example:**
 
@@ -46,7 +46,7 @@ Integer autoeventId = thing.GetAutoeventId();
 String GetDefaultOref()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Processed via tag substitution to give document reference.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Processed via tag substitution to give document reference.
 
 **Example:**
 
@@ -61,7 +61,7 @@ String defaultOref = thing.GetDefaultOref();
 Integer GetDeleted()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - 0 -&gt; record is active 1 -&gt; record is 'deleted' and should not be shown in lists.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - 0 -&gt; record is active 1 -&gt; record is 'deleted' and should not be shown in lists.
 
 **Example:**
 
@@ -76,7 +76,7 @@ Integer deleted = thing.GetDeleted();
 Integer GetDirection()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - 1 = incoming, 2 = outgoing. See &lt;xref href="CRMScript.NetServer.TaskDirection" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - 1 = incoming, 2 = outgoing. See [CRMScript.NetServer.TaskDirection](/en/automation/crmscript/reference/CRMScript.NetServer.TaskDirection)
 
 **Example:**
 
@@ -91,7 +91,7 @@ Integer direction = thing.GetDirection();
 Integer GetDocumentTemplateId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Primary key.
 
 **Example:**
 
@@ -106,7 +106,7 @@ Integer documentTemplateId = thing.GetDocumentTemplateId();
 String GetFilename()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Relative to TemplatePath.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Relative to TemplatePath.
 
 **Example:**
 
@@ -121,7 +121,7 @@ String filename = thing.GetFilename();
 String GetName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The list item.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The list item.
 
 **Example:**
 
@@ -136,7 +136,7 @@ String name = thing.GetName();
 Integer GetQuoteDocType()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - What type of quote document is this? See &lt;xref href="CRMScript.NetServer.DocTmplQuoteType" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - What type of quote document is this? See [CRMScript.NetServer.DocTmplQuoteType](/en/automation/crmscript/reference/CRMScript.NetServer.DocTmplQuoteType)
 
 **Example:**
 
@@ -151,7 +151,7 @@ NSDocTmplQuoteType quoteDocType = thing.GetQuoteDocType();
 NSDocTmplType GetRecordType()
 ```
 
-**Returns:** [CRMScript.NetServer.NSDocTmplType](CRMScript.NetServer.NSDocTmplType) - 1 = app, 2 = doc, 3 = email, 4 = fax, 5 = phone, 6 = todo See &lt;xref href="CRMScript.NetServer.TaskType" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;
+**Returns:** CRMScript.NetServer.NSDocTmplType - 1 = app, 2 = doc, 3 = email, 4 = fax, 5 = phone, 6 = todo See [CRMScript.NetServer.TaskType](/en/automation/crmscript/reference/CRMScript.NetServer.TaskType)
 
 **Example:**
 
@@ -166,7 +166,7 @@ NSDocTmplType recordType = thing.GetRecordType();
 Integer GetSaveInDb()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - 1 = save document records in DB; otherwise not.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - 1 = save document records in DB; otherwise not.
 
 **Example:**
 
@@ -181,7 +181,7 @@ Integer saveInDb = thing.GetSaveInDb();
 String GetTooltip()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Tooltip or other description.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Tooltip or other description.
 
 **Example:**
 
@@ -196,7 +196,7 @@ String tooltip = thing.GetTooltip();
 Void SetAutoeventId(Integer autoeventId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -212,7 +212,7 @@ thing.SetAutoeventId(autoeventId);
 Void SetDefaultOref(String defaultOref)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -228,7 +228,7 @@ thing.SetDefaultOref(defaultOref);
 Void SetDeleted(Integer deleted)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -246,7 +246,7 @@ Sets the direction of a document template
 Void SetDirection(Integer direction)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -262,7 +262,7 @@ thing.SetDirection(direction);
 Void SetDocumentTemplateId(Integer documentTemplateId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -278,7 +278,7 @@ thing.SetDocumentTemplateId(documentTemplateId);
 Void SetFilename(String filename)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -294,7 +294,7 @@ thing.SetFilename(filename);
 Void SetName(String name)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -310,7 +310,7 @@ thing.SetName(name);
 Void SetQuoteDocType(Integer quoteDocType)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -326,7 +326,7 @@ thing.SetQuoteDocType(quoteDocType);
 Void SetRecordType(NSDocTmplType recordType)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -342,7 +342,7 @@ thing.SetRecordType(recordType);
 Void SetSaveInDb(Integer saveInDb)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -358,7 +358,7 @@ thing.SetSaveInDb(saveInDb);
 Void SetTooltip(String tooltip)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

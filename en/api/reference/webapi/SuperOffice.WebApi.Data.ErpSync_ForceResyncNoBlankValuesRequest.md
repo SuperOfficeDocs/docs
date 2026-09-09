@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSync_ForceResyncNoBlankValuesRequest"></a> Class ErpSync\_ForceResyncNoBlankValuesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ErpSync_ForceResyncNoBlankValuesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ErpSync\_ForceResyncNoBlankValuesRequest](SuperOffice.WebApi.Data.ErpSync\_ForceResyncNoBlankValuesRequest.md)
+[ErpSync\_ForceResyncNoBlankValuesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSync_ForceResyncNoBlankValuesRequest)
 
 #### Inherited Members
 

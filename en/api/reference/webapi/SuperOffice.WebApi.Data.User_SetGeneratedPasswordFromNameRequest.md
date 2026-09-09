@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_SetGeneratedPasswordFromNameRequest"></a> Class User\_SetGeneratedPasswordFromNameRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_SetGeneratedPasswordFromNameRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_SetGeneratedPasswordFromNameRequest](SuperOffice.WebApi.Data.User\_SetGeneratedPasswordFromNameRequest.md)
+[User\_SetGeneratedPasswordFromNameRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_SetGeneratedPasswordFromNameRequest)
 
 #### Inherited Members
 

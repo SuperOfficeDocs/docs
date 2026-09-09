@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CRMScript_SaveCRMScriptByUniqueIdentifierRequest"></a> Class CRMScript\_SaveCRMScriptByUniqueIdentifierRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CRMScript_SaveCRMScriptByUniqueIdentifierRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CRMScript\_SaveCRMScriptByUniqueIdentifierRequest](SuperOffice.WebApi.Data.CRMScript\_SaveCRMScriptByUniqueIdentifierRequest.md)
+[CRMScript\_SaveCRMScriptByUniqueIdentifierRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScript_SaveCRMScriptByUniqueIdentifierRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public Script Crmscript { get; set; }
 
 #### Property Value
 
- [Script](SuperOffice.WebApi.Data.Script.md)
+ [Script](/en/api/reference/webapi/SuperOffice.WebApi.Data.Script)
 
 ### <a id="SuperOffice_WebApi_Data_CRMScript_SaveCRMScriptByUniqueIdentifierRequest_UniqueIdentifier"></a> UniqueIdentifier
 

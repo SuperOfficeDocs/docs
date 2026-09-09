@@ -362,7 +362,7 @@ items:
       type: CRMScript.Global.String
       description: "A dot-separated string containing either names of nodes or indexes."
     return:
-      type: CRMScript.Global.XMLNode
+      type: CRMScript.Native.XMLNode
       description: "The Node for the given path."
 references:
 - uid: CRMScript.Native.XMLNode

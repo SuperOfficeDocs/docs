@@ -1,6 +1,6 @@
 # Interface IChatAgent {#SuperOffice_WebApi_Agents_IChatAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Chat functions. Manage chat channels, sessions and messages.
@@ -11,7 +11,7 @@ public interface IChatAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -30,13 +30,13 @@ Task<ChatSessionEntity> AcceptChatSessionTransferAsync(int chatSessionId, Reques
 
 id of the chat session to send
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatSessionEntity](SuperOffice.WebApi.Data.ChatSessionEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatSessionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatSessionEntity)\&gt;
 
 The updated chat session
 
@@ -54,17 +54,17 @@ Task<ChatMessage> AddChatMessageAsync(int chatSessionId, ChatMessage message, Re
 
 id of the chat session to add message to
 
-`message` [ChatMessage](SuperOffice.WebApi.Data.ChatMessage.md)
+`message` [ChatMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatMessage)
 
 Message to add
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatMessage](SuperOffice.WebApi.Data.ChatMessage.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatMessage)\&gt;
 
 The chat message added to the session
 
@@ -82,17 +82,17 @@ Task<ChatTopicAgent> AddChatTopicUserAgentAsync(int chatTopicId, ChatTopicAgent 
 
 Id of the chat topic
 
-`useragent` [ChatTopicAgent](SuperOffice.WebApi.Data.ChatTopicAgent.md)
+`useragent` [ChatTopicAgent](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatTopicAgent)
 
 User's role within the chat topic to add to topic.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatTopicAgent](SuperOffice.WebApi.Data.ChatTopicAgent.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatTopicAgent](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatTopicAgent)\&gt;
 
 The user's role within the chat topic.
 
@@ -106,13 +106,13 @@ Task<ChatSessionEntity[]> ChatSessionsForUserAsync(RequestOptions requestOptions
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatSessionEntity](SuperOffice.WebApi.Data.ChatSessionEntity.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatSessionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatSessionEntity)\[\]\&gt;
 
 Array of chat sessions the current user can access
 
@@ -126,13 +126,13 @@ Task<ChatTopicEntity[]> ChatTopicsForUserAsync(RequestOptions requestOptions = n
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatTopicEntity](SuperOffice.WebApi.Data.ChatTopicEntity.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatTopicEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatTopicEntity)\[\]\&gt;
 
 Array of chat topics the current user can access
 
@@ -150,13 +150,13 @@ Task<ChatSessionEntity> CreateChatSessionForTopicAsync(int chatTopicId, RequestO
 
 Id of the chat topic
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatSessionEntity](SuperOffice.WebApi.Data.ChatSessionEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatSessionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatSessionEntity)\&gt;
 
 The new chat session.
 
@@ -171,13 +171,13 @@ Task<ChatSessionEntity> CreateDefaultChatSessionEntityAsync(RequestOptions reque
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatSessionEntity](SuperOffice.WebApi.Data.ChatSessionEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatSessionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatSessionEntity)\&gt;
 
 A blank ChatSessionEntity
 
@@ -192,13 +192,13 @@ Task<ChatTopicAgent> CreateDefaultChatTopicAgentAsync(RequestOptions requestOpti
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatTopicAgent](SuperOffice.WebApi.Data.ChatTopicAgent.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatTopicAgent](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatTopicAgent)\&gt;
 
 A blank ChatTopicAgent
 
@@ -213,13 +213,13 @@ Task<ChatTopicEntity> CreateDefaultChatTopicEntityAsync(RequestOptions requestOp
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatTopicEntity](SuperOffice.WebApi.Data.ChatTopicEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatTopicEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatTopicEntity)\&gt;
 
 A blank ChatTopicEntity
 
@@ -237,7 +237,7 @@ Task DeleteChatSessionEntityAsync(int chatSessionEntityId, RequestOptions reques
 
 The identity of the ChatSessionEntity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -259,7 +259,7 @@ Task DeleteChatTopicEntityAsync(int chatTopicEntityId, RequestOptions requestOpt
 
 The identity of the ChatTopicEntity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -285,7 +285,7 @@ Id of the chat topic
 
 Associate username or associate id to delete.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -313,13 +313,13 @@ id of the chat session to reset
 
 Return messages after this message id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatMessage](SuperOffice.WebApi.Data.ChatMessage.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatMessage)\[\]\&gt;
 
 Array of chat messages in the session
 
@@ -333,13 +333,13 @@ Task<ChatPresence[]> GetChatPresenceAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatPresence](SuperOffice.WebApi.Data.ChatPresence.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatPresence](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatPresence)\[\]\&gt;
 
 An array with ChatPresence objects for each user
 
@@ -357,13 +357,13 @@ Task<ChatSessionEntity> GetChatSessionEntityAsync(int chatSessionEntityId, Reque
 
 The identifier of the ChatSessionEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatSessionEntity](SuperOffice.WebApi.Data.ChatSessionEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatSessionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatSessionEntity)\&gt;
 
 ChatSessionEntity
 
@@ -381,13 +381,13 @@ Task<ChatTopicEntity> GetChatTopicEntityAsync(int chatTopicEntityId, RequestOpti
 
 The identifier of the ChatTopicEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatTopicEntity](SuperOffice.WebApi.Data.ChatTopicEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatTopicEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatTopicEntity)\&gt;
 
 ChatTopicEntity
 
@@ -409,13 +409,13 @@ Id of the chat topic
 
 Associate username or associate id to get.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatTopicAgent](SuperOffice.WebApi.Data.ChatTopicAgent.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatTopicAgent](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatTopicAgent)\&gt;
 
 The user's role within the chat topic.
 
@@ -433,13 +433,13 @@ Task<ChatTopicAgent[]> GetChatTopicUserAgentListAsync(int chatTopicId, RequestOp
 
 Id of the chat topic
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatTopicAgent](SuperOffice.WebApi.Data.ChatTopicAgent.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatTopicAgent](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatTopicAgent)\[\]\&gt;
 
 List of user agents assigned to chat topic.
 
@@ -461,7 +461,7 @@ id of the chat session to get the transcript for
 
 Get transcript as HTML
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -489,13 +489,13 @@ Return flat list instead of grouping by usergroup.
 
 Only show users who are present
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MDOListItem](SuperOffice.WebApi.Data.MDOListItem.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.MDOListItem)\[\]\&gt;
 
 List of user agents that can be assigned to chat topics, possibly grouped by usergroup.
 
@@ -513,7 +513,7 @@ Task<bool> IsWithinOpeningHoursAsync(int chatTopicId, RequestOptions requestOpti
 
 The id of the topic to check
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -537,13 +537,13 @@ Task<ChatSessionEntity> PickUpChatSessionAsync(int chatSessionId, RequestOptions
 
 id of the chat session to answer
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatSessionEntity](SuperOffice.WebApi.Data.ChatSessionEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatSessionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatSessionEntity)\&gt;
 
 The chat session
 
@@ -557,13 +557,13 @@ Task<ChatSessionEntity> PickUpFirstChatSessionAsync(RequestOptions requestOption
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatSessionEntity](SuperOffice.WebApi.Data.ChatSessionEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatSessionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatSessionEntity)\&gt;
 
 The picked-up chat session
 
@@ -581,13 +581,13 @@ Task<ChatSessionEntity> RejectChatSessionTransferAsync(int chatSessionId, Reques
 
 id of the chat session to send back
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatSessionEntity](SuperOffice.WebApi.Data.ChatSessionEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatSessionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatSessionEntity)\&gt;
 
 The updated chat session
 
@@ -605,13 +605,13 @@ Task<ChatSessionEntity> ResetChatSessionAsync(int chatSessionId, RequestOptions 
 
 id of the chat session to reset
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatSessionEntity](SuperOffice.WebApi.Data.ChatSessionEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatSessionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatSessionEntity)\&gt;
 
 The updated chat session
 
@@ -625,11 +625,11 @@ Task SaveChatPresenceAsync(ChatPresence[] chatPresence, RequestOptions requestOp
 
 #### Parameters
 
-`chatPresence` [ChatPresence](SuperOffice.WebApi.Data.ChatPresence.md)\[\]
+`chatPresence` [ChatPresence](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatPresence)\[\]
 
 An array with ChatPresence objects. Only the UserId and Present information is used while saving
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -649,17 +649,17 @@ Task<ChatSessionEntity> SaveChatSessionEntityAsync(ChatSessionEntity chatSession
 
 #### Parameters
 
-`chatSessionEntity` [ChatSessionEntity](SuperOffice.WebApi.Data.ChatSessionEntity.md)
+`chatSessionEntity` [ChatSessionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatSessionEntity)
 
 The ChatSessionEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatSessionEntity](SuperOffice.WebApi.Data.ChatSessionEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatSessionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatSessionEntity)\&gt;
 
 New or updated ChatSessionEntity
 
@@ -673,17 +673,17 @@ Task<ChatTopicEntity> SaveChatTopicEntityAsync(ChatTopicEntity chatTopicEntity, 
 
 #### Parameters
 
-`chatTopicEntity` [ChatTopicEntity](SuperOffice.WebApi.Data.ChatTopicEntity.md)
+`chatTopicEntity` [ChatTopicEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatTopicEntity)
 
 The ChatTopicEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatTopicEntity](SuperOffice.WebApi.Data.ChatTopicEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatTopicEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatTopicEntity)\&gt;
 
 New or updated ChatTopicEntity
 
@@ -705,13 +705,13 @@ id of the chat session to send
 
 Associate username or associate id to send session to.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatSessionEntity](SuperOffice.WebApi.Data.ChatSessionEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatSessionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatSessionEntity)\&gt;
 
 The updated chat session
 
@@ -733,17 +733,17 @@ Id of the chat topic
 
 Associate username or associate id to get.
 
-`useragent` [ChatTopicAgent](SuperOffice.WebApi.Data.ChatTopicAgent.md)
+`useragent` [ChatTopicAgent](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatTopicAgent)
 
 User's updated role within the chat topic.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatTopicAgent](SuperOffice.WebApi.Data.ChatTopicAgent.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatTopicAgent](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatTopicAgent)\&gt;
 
 The user's role within the chat topic.
 
@@ -761,17 +761,17 @@ Task<ChatTopicAgent[]> UpdateChatTopicUserAgentsAsync(int chatTopicId, ChatTopic
 
 Id of the chat topic
 
-`useragents` [ChatTopicAgent](SuperOffice.WebApi.Data.ChatTopicAgent.md)\[\]
+`useragents` [ChatTopicAgent](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatTopicAgent)\[\]
 
 Users new/updated roles within the chat topic. Replaces existing roles
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatTopicAgent](SuperOffice.WebApi.Data.ChatTopicAgent.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ChatTopicAgent](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatTopicAgent)\[\]\&gt;
 
 The updated agents within the chat topic.
 

@@ -8,10 +8,12 @@ on:
       - 'en/**'
       - 'integrations/**'
 
-# Automatically cancel in-progress runs on the same branch
+# Shared group with every other auto-fix workflow that pushes to this same PR branch: prevents a
+# cross-workflow push race (see the full rationale in generated-reference-autofix.yml). Queue, don't
+# cancel: a queued run's checkout picks up whatever an earlier run already pushed.
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  group: autofix-push-${{ github.ref }}
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -20,8 +22,8 @@ jobs:
   sync-recent-pages:
     name: "Regenerate the homepage's what's new list"
     runs-on: ubuntu-latest
-    # A fork PR's default token can't push back to the fork - skip cleanly
-    # rather than fail loudly. Same-repo branches proceed as usual.
+    # A fork PR's default token can't push back to the fork - skip cleanly rather than fail loudly.
+    # Same-repo branches proceed as usual.
     if: github.event.pull_request.head.repo.full_name == github.repository
     steps:
       - name: Checkout PR head

@@ -1,6 +1,6 @@
 # Interface IDiagnosticsAgent {#SuperOffice_WebApi_Agents_IDiagnosticsAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Diagnostics, usage data collection, caches and flushing
@@ -11,7 +11,7 @@ public interface IDiagnosticsAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -26,11 +26,11 @@ Task AddWebAppUsageAsync(WebAppUsage[] webAppUsages, RequestOptions requestOptio
 
 #### Parameters
 
-`webAppUsages` [WebAppUsage](SuperOffice.WebApi.Data.WebAppUsage.md)\[\]
+`webAppUsages` [WebAppUsage](/en/api/reference/webapi/SuperOffice.WebApi.Data.WebAppUsage)\[\]
 
 Web app usage.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -80,7 +80,7 @@ Log to file
 
 Log to trace
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -98,7 +98,7 @@ Task CollectDataAdditionsAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -118,7 +118,7 @@ Task CollectTableSizesAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -138,7 +138,7 @@ Task CollectWebUsageAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -158,7 +158,7 @@ Task CollectWinUsageAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -178,7 +178,7 @@ Task FlushCachesAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -200,7 +200,7 @@ Task FlushCachesByNameAsync(string[] cacheNames, RequestOptions requestOptions =
 
 Name of the cachnes to flush
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -220,13 +220,13 @@ Task<AnalyticsData> GetAnalyticsDataAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AnalyticsData](SuperOffice.WebApi.Data.AnalyticsData.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AnalyticsData](/en/api/reference/webapi/SuperOffice.WebApi.Data.AnalyticsData)\&gt;
 
 Description Analytics Data
 
@@ -244,13 +244,13 @@ Task<CacheInvalidation[]> GetCacheInvalidationGenerationsAsync(string[] names, R
 
 Name of caches
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CacheInvalidation](SuperOffice.WebApi.Data.CacheInvalidation.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CacheInvalidation](/en/api/reference/webapi/SuperOffice.WebApi.Data.CacheInvalidation)\[\]\&gt;
 
 Array of caches with generation number
 
@@ -264,7 +264,7 @@ Task<string[]> GetCacheNamesAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -288,7 +288,7 @@ Task<string> GetCacheStateAsync(string[] cacheNames, RequestOptions requestOptio
 
 Names of the caches to check
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -308,13 +308,13 @@ Task<EntityCounts[]> GetEntityCountsForAllUsersAsync(RequestOptions requestOptio
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EntityCounts](SuperOffice.WebApi.Data.EntityCounts.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EntityCounts](/en/api/reference/webapi/SuperOffice.WebApi.Data.EntityCounts)\[\]\&gt;
 
 Array of EntityCounts[] for all the users
 
@@ -328,13 +328,13 @@ Task<EntityCounts[]> GetEntityCountsForCurrentUserAsync(RequestOptions requestOp
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EntityCounts](SuperOffice.WebApi.Data.EntityCounts.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EntityCounts](/en/api/reference/webapi/SuperOffice.WebApi.Data.EntityCounts)\[\]\&gt;
 
 Array of EntityCounts[] for the current associate
 
@@ -348,7 +348,7 @@ Task<int> GetNextTableNumberAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -368,13 +368,13 @@ Task<SoSystemInfoCarrier> GetSystemInfoAsync(RequestOptions requestOptions = nul
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SoSystemInfoCarrier](SuperOffice.WebApi.Data.SoSystemInfoCarrier.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SoSystemInfoCarrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoSystemInfoCarrier)\&gt;
 
 License and configuration information.
 
@@ -392,13 +392,13 @@ Task<SystemMessage[]> GetSystemMessagesAsync(int associateId, RequestOptions req
 
 The associateId of the message target.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SystemMessage](SuperOffice.WebApi.Data.SystemMessage.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SystemMessage](/en/api/reference/webapi/SuperOffice.WebApi.Data.SystemMessage)\[\]\&gt;
 
 List of SystemMessages for desired associate
 
@@ -420,13 +420,13 @@ Task<WebAppUsage[]> GetWebAppUsagesForPeriodAsync(DateTime fromDate, DateTime to
 
 ViewState search term. '%' is the wildcard character, for example 'Pocket%' will match all viewstates starting with 'Pocket'. If empty, all viewstates will be matched
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WebAppUsage](SuperOffice.WebApi.Data.WebAppUsage.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WebAppUsage](/en/api/reference/webapi/SuperOffice.WebApi.Data.WebAppUsage)\[\]\&gt;
 
 ### LogViewStateAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IDiagnosticsAgent_LogViewStateAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
@@ -442,7 +442,7 @@ Task LogViewStateAsync(string viewState, RequestOptions requestOptions = null)
 
 Current view state to be logged
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -464,7 +464,7 @@ Task PerformTasksAfterCustomObjectTableCreatedAsync(string tableName, RequestOpt
 
 Name of DB table of the custom object that was created. E.g., 'y_car'
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -488,7 +488,7 @@ Task PerformTasksAfterCustomObjectTableDeletedAsync(string tableName, RequestOpt
 
 Name of DB table of the custom object that was deleted. E.g., 'y_car'
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -508,7 +508,7 @@ Task<string> PerformTasksAfterUpgradeAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -532,7 +532,7 @@ Task RegisterClosedTicketsUsageAsync(int[] ticketIds, RequestOptions requestOpti
 
 IDs of closed tickets
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -552,7 +552,7 @@ Task RemoveExpiredSystemMessagesAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -578,7 +578,7 @@ Id of the online app that owns this message
 
 Message identifier, used for message  removal
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -608,7 +608,7 @@ Message identifier, used for message update or removal
 
 The associateId of the message target.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -626,7 +626,7 @@ Task ResyncUsersAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -662,11 +662,11 @@ Markdown message to be displayed to the user
 
 When the message will no longer be available
 
-`type` [SystemMessageType](SuperOffice.WebApi.Data.SystemMessageType.md)
+`type` [SystemMessageType](/en/api/reference/webapi/SuperOffice.WebApi.Data.SystemMessageType)
 
 Type of message, example: info, warning, error
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -688,11 +688,11 @@ Task<long> TrackEventAsync(string trackEventName, StringDictionary eventProperti
 
 "Sale Completed" or "Sale Sold" etc. See the TrackEventNames class for suitable string constants.
 
-`eventProperties` [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+`eventProperties` [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 key-value pairs of event properties. client is set from the application token. Special keys: app_version, platform, os_name, os_version, device_brand, device_manufacturer
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -712,11 +712,11 @@ Task<long> TrackUserAsync(StringDictionary userProperties, RequestOptions reques
 
 #### Parameters
 
-`userProperties` [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+`userProperties` [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 Optional: Additional key-value pairs of user properties to set on the user. Special keys: app_version, platform, os_name, os_version, device_brand, device_manufacturer
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -748,7 +748,7 @@ The viewState to search for
 
 The datetime to restrict webapp usage on
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 

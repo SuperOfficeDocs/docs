@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Archive_GetArchiveListWithContext2Request"></a> Class Archive\_GetArchiveListWithContext2Request
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Archive_GetArchiveListWithContext2Request
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Archive\_GetArchiveListWithContext2Request](SuperOffice.WebApi.Data.Archive\_GetArchiveListWithContext2Request.md)
+[Archive\_GetArchiveListWithContext2Request](/en/api/reference/webapi/SuperOffice.WebApi.Data.Archive_GetArchiveListWithContext2Request)
 
 #### Inherited Members
 

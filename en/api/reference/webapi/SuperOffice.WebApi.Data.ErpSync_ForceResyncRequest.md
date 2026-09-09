@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSync_ForceResyncRequest"></a> Class ErpSync\_ForceResyncRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ErpSync_ForceResyncRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ErpSync\_ForceResyncRequest](SuperOffice.WebApi.Data.ErpSync\_ForceResyncRequest.md)
+[ErpSync\_ForceResyncRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSync_ForceResyncRequest)
 
 #### Inherited Members
 

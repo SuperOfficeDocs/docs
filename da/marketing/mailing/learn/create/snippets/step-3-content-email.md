@@ -13,11 +13,11 @@ Du kan oprette og gemme indholdsblokke, som alle dine brugere kan vælge imellem
 * [Tilføje billeder til meddelelsen][2]
 * [Teste udsendelsen][7]
 
-[1]: ../../../../editor/learn/index
-[2]: ../../../../editor/learn/insert-images-in-message
-[3]: ../../../../editor/learn/add-content
-[4]: ../../../../editor/learn/edit-paragraph
-[5]: ../../../../editor/learn/add-merge-tag
-[11]: ../../../../editor/learn/add-tracked-link-to-msg
-[8]: ../../../../editor/learn/add-unsubscribe-link
-[7]: ../send-test-email
+[1]: /da/marketing/editor/learn/index
+[2]: /da/marketing/editor/learn/insert-images-in-message
+[3]: /da/marketing/editor/learn/add-content
+[4]: /da/marketing/editor/learn/edit-paragraph
+[5]: /da/marketing/editor/learn/add-merge-tag
+[11]: /da/marketing/editor/learn/add-tracked-link-to-msg
+[8]: /da/marketing/editor/learn/add-unsubscribe-link
+[7]: /da/marketing/mailing/learn/create/send-test-email

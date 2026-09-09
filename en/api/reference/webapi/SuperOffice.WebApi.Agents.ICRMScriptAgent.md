@@ -1,6 +1,6 @@
 # Interface ICRMScriptAgent {#SuperOffice_WebApi_Agents_ICRMScriptAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Manage and execute CRMScript functions.
@@ -13,7 +13,7 @@ public interface ICRMScriptAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -29,13 +29,13 @@ Task<CRMScriptEntity> CreateDefaultCRMScriptEntityAsync(RequestOptions requestOp
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptEntity](SuperOffice.WebApi.Data.CRMScriptEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptEntity)\&gt;
 
 A blank CRMScriptEntity
 
@@ -50,13 +50,13 @@ Task<TriggerScriptEntity> CreateDefaultTriggerScriptEntityAsync(RequestOptions r
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TriggerScriptEntity](SuperOffice.WebApi.Data.TriggerScriptEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TriggerScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TriggerScriptEntity)\&gt;
 
 A blank TriggerScriptEntity
 
@@ -76,7 +76,7 @@ Task DeleteCRMScriptByUniqueIdentifierAsync(string uniqueIdentifier, RequestOpti
 
 Global unique reference to script (independent of installation)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -102,7 +102,7 @@ Task DeleteCRMScriptEntityAsync(int cRMScriptEntityId, RequestOptions requestOpt
 
 The identity of the CRMScriptEntity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -126,7 +126,7 @@ Task DeleteTriggerScriptByUniqueIdAsync(string triggerScriptUniqueId, RequestOpt
 
 The unique id of the CRMScript to validate
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -152,7 +152,7 @@ Task DeleteTriggerScriptEntityAsync(int triggerScriptEntityId, RequestOptions re
 
 The identity of the TriggerScriptEntity
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -176,17 +176,17 @@ Task<EventData> ExecuteScriptAsEventAsync(int cRMScriptId, EventData eventData, 
 
 The id of the CRMScript to execute
 
-`eventData` [EventData](SuperOffice.WebApi.Data.EventData.md)
+`eventData` [EventData](/en/api/reference/webapi/SuperOffice.WebApi.Data.EventData)
 
 The EventData instance sent to the crmscript with input values
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EventData](SuperOffice.WebApi.Data.EventData.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EventData](/en/api/reference/webapi/SuperOffice.WebApi.Data.EventData)\&gt;
 
 The EventData instance after script execution with output values
 
@@ -206,17 +206,17 @@ Task<EventData> ExecuteScriptAsEventByUniqueIdAsync(string cRMScriptUniqueId, Ev
 
 The unique id of the CRMScript to execute
 
-`eventData` [EventData](SuperOffice.WebApi.Data.EventData.md)
+`eventData` [EventData](/en/api/reference/webapi/SuperOffice.WebApi.Data.EventData)
 
 The EventData instance sent to the crmscript with input values
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EventData](SuperOffice.WebApi.Data.EventData.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[EventData](/en/api/reference/webapi/SuperOffice.WebApi.Data.EventData)\&gt;
 
 The EventData instance after script execution with output values
 
@@ -236,11 +236,11 @@ Task<string> ExecuteScriptAsync(int cRMScriptId, StringDictionary parameters, Re
 
 The id of the CRMScript to execute
 
-`parameters` [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+`parameters` [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 Parameters passed as variables to the CRMScript
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -266,11 +266,11 @@ Task<string> ExecuteScriptByIncludeIdAsync(string cRMScriptIncludeId, StringDict
 
 The include id of the CRMScript to validate
 
-`parameters` [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+`parameters` [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 Parameters passed as variables to the CRMScript
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -296,21 +296,21 @@ Task<CRMScriptRunResult> ExecuteScriptByStringAsync(string script, StringDiction
 
 The script to execute
 
-`parameters` [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+`parameters` [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 Parameters passed as variables to the CRMScript
 
-`eventData` [EventData](SuperOffice.WebApi.Data.EventData.md)
+`eventData` [EventData](/en/api/reference/webapi/SuperOffice.WebApi.Data.EventData)
 
 The EventData instance sent to the crmscript with input values
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptRunResult](SuperOffice.WebApi.Data.CRMScriptRunResult.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptRunResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptRunResult)\&gt;
 
 The output produced by the CRMScript
 
@@ -330,11 +330,11 @@ Task<string> ExecuteScriptByUniqueIdAsync(string cRMScriptUniqueId, StringDictio
 
 The unique id of the CRMScript to validate
 
-`parameters` [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+`parameters` [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 Parameters passed as variables to the CRMScript
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -360,13 +360,13 @@ Task<Script> GetCRMScriptByUniqueIdentifierAsync(string uniqueIdentifier, Reques
 
 Global unique reference to script (independent of installation)
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Script](SuperOffice.WebApi.Data.Script.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Script](/en/api/reference/webapi/SuperOffice.WebApi.Data.Script)\&gt;
 
 Information about CRMScript
 
@@ -386,13 +386,13 @@ Task<CRMScriptEntity> GetCRMScriptEntityAsync(int cRMScriptEntityId, RequestOpti
 
 The identifier of the CRMScriptEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptEntity](SuperOffice.WebApi.Data.CRMScriptEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptEntity)\&gt;
 
 CRMScriptEntity
 
@@ -412,13 +412,13 @@ Task<TriggerScriptEntity> GetTriggerScriptByUniqueIdAsync(string triggerScriptUn
 
 The unique id of the CRMScript to validate
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TriggerScriptEntity](SuperOffice.WebApi.Data.TriggerScriptEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TriggerScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TriggerScriptEntity)\&gt;
 
 Trigger script details and source code.
 
@@ -438,13 +438,13 @@ Task<TriggerScriptEntity> GetTriggerScriptEntityAsync(int triggerScriptEntityId,
 
 The identifier of the TriggerScriptEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TriggerScriptEntity](SuperOffice.WebApi.Data.TriggerScriptEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TriggerScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TriggerScriptEntity)\&gt;
 
 TriggerScriptEntity
 
@@ -468,7 +468,7 @@ The script to resolve includes for
 
 If true, then missing includes will be ignored
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -494,17 +494,17 @@ Task<Script> SaveCRMScriptByUniqueIdentifierAsync(string uniqueIdentifier, Scrip
 
 Global unique reference to script (independent of installation)
 
-`crmscript` [Script](SuperOffice.WebApi.Data.Script.md)
+`crmscript` [Script](/en/api/reference/webapi/SuperOffice.WebApi.Data.Script)
 
 Information about the CRMScript
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Script](SuperOffice.WebApi.Data.Script.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Script](/en/api/reference/webapi/SuperOffice.WebApi.Data.Script)\&gt;
 
 Information about the CRMScript as saved in the database
 
@@ -520,17 +520,17 @@ Task<CRMScriptEntity> SaveCRMScriptEntityAsync(CRMScriptEntity cRMScriptEntity, 
 
 #### Parameters
 
-`cRMScriptEntity` [CRMScriptEntity](SuperOffice.WebApi.Data.CRMScriptEntity.md)
+`cRMScriptEntity` [CRMScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptEntity)
 
 The CRMScriptEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptEntity](SuperOffice.WebApi.Data.CRMScriptEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptEntity)\&gt;
 
 New or updated CRMScriptEntity
 
@@ -546,17 +546,17 @@ Task<CRMScriptEntity> SaveCRMScriptEntityWithoutCompileAsync(CRMScriptEntity crm
 
 #### Parameters
 
-`crmScriptEntity` [CRMScriptEntity](SuperOffice.WebApi.Data.CRMScriptEntity.md)
+`crmScriptEntity` [CRMScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptEntity)
 
 The entity to save. Source and SourceCode should both be specified
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptEntity](SuperOffice.WebApi.Data.CRMScriptEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptEntity)\&gt;
 
 The saved entity
 
@@ -576,17 +576,17 @@ Task<TriggerScriptEntity> SaveTriggerScriptByUniqueIdAsync(string triggerScriptU
 
 The unique id of the CRMScript to validate
 
-`entity` [TriggerScriptEntity](SuperOffice.WebApi.Data.TriggerScriptEntity.md)
+`entity` [TriggerScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TriggerScriptEntity)
 
 Trigger script details and source code
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TriggerScriptEntity](SuperOffice.WebApi.Data.TriggerScriptEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TriggerScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TriggerScriptEntity)\&gt;
 
 Trigger script details and source code.
 
@@ -602,17 +602,17 @@ Task<TriggerScriptEntity> SaveTriggerScriptEntityAsync(TriggerScriptEntity trigg
 
 #### Parameters
 
-`triggerScriptEntity` [TriggerScriptEntity](SuperOffice.WebApi.Data.TriggerScriptEntity.md)
+`triggerScriptEntity` [TriggerScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TriggerScriptEntity)
 
 The TriggerScriptEntity that is saved.
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TriggerScriptEntity](SuperOffice.WebApi.Data.TriggerScriptEntity.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TriggerScriptEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TriggerScriptEntity)\&gt;
 
 New or updated TriggerScriptEntity
 
@@ -632,13 +632,13 @@ Task<CRMScriptResult> ValidateScriptAsync(int cRMScriptId, RequestOptions reques
 
 The id of the CRMScript to execute
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptResult](SuperOffice.WebApi.Data.CRMScriptResult.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptResult)\&gt;
 
 True if the syntax is correct
 
@@ -658,13 +658,13 @@ Task<CRMScriptResult> ValidateScriptByIncludeIdAsync(string cRMScriptIncludeId, 
 
 The include id of the CRMScript to validate
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptResult](SuperOffice.WebApi.Data.CRMScriptResult.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptResult)\&gt;
 
 True if the syntax is correct
 
@@ -684,13 +684,13 @@ Task<CRMScriptResult> ValidateScriptByStringAsync(string script, RequestOptions 
 
 The script to validate
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptResult](SuperOffice.WebApi.Data.CRMScriptResult.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptResult)\&gt;
 
 The result of the syntax check
 
@@ -710,13 +710,13 @@ Task<CRMScriptResult> ValidateScriptByUniqueIdAsync(string cRMScriptUniqueId, Re
 
 The unique id of the CRMScript to validate
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptResult](SuperOffice.WebApi.Data.CRMScriptResult.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptResult)\&gt;
 
 True if the syntax is correct
 
@@ -736,13 +736,13 @@ Task<CRMScriptResult> ValidateTriggerScriptAsync(int triggerScriptId, RequestOpt
 
 The id of the CRMScript Trigger to validate
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptResult](SuperOffice.WebApi.Data.CRMScriptResult.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptResult)\&gt;
 
 True if the syntax is correct
 
@@ -762,13 +762,13 @@ Task<CRMScriptResult> ValidateTriggerScriptByUniqueIdAsync(string triggerScriptU
 
 The unique id of the CRMScript to validate
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptResult](SuperOffice.WebApi.Data.CRMScriptResult.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CRMScriptResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptResult)\&gt;
 
 True if the syntax is correct
 

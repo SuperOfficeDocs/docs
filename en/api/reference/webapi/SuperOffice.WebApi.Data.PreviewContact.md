@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_PreviewContact"></a> Class PreviewContact
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for PreviewContact.
@@ -13,7 +13,7 @@ public class PreviewContact
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[PreviewContact](SuperOffice.WebApi.Data.PreviewContact.md)
+[PreviewContact](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreviewContact)
 
 #### Inherited Members
 
@@ -47,7 +47,7 @@ public virtual Address Address { get; set; }
 
 #### Property Value
 
- [Address](SuperOffice.WebApi.Data.Address.md)
+ [Address](/en/api/reference/webapi/SuperOffice.WebApi.Data.Address)
 
 ### <a id="SuperOffice_WebApi_Data_PreviewContact_AssociateFullName"></a> AssociateFullName
 
@@ -183,5 +183,5 @@ public virtual string URL { get; set; }
 
 ## See Also
 
-[ContactAgent](SuperOffice.WebApi.Agents.ContactAgent.md)
+[ContactAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ContactAgent)
 

@@ -33,7 +33,7 @@ Adds a group to the main menu (navigator) with the given label and image. By def
 Void addGroup(String label, String image)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 The image is specified by the URL to the actual file.
@@ -54,7 +54,7 @@ Adds a group to the main menu (navigator) with the given label and image in a sp
 Void addGroup(String label, String image, Integer position)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 The image is specified by the URL to the actual file.
@@ -77,7 +77,7 @@ In addition, you can specify on-click JavaScript code. Use this to create clicka
 Void addGroup(String label, String image, Integer position, String onClick)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 The image is specified by the URL to the actual file.
@@ -99,7 +99,7 @@ Adds an item to the SuperOffice main menu (navigator).
 Void addItem(String label, String url)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -117,7 +117,7 @@ Adds an item to the SuperOffice main menu (navigator).
 Void addItem(String label, String url, Integer group, Integer position)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -135,7 +135,7 @@ Adds an item to the SuperOffice main menu (navigator).
 Void addItem(String label, String url, Integer group, Integer position, String onClick, String itemId, String target)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -153,7 +153,7 @@ Adds an item to the SuperOffice main menu (navigator).
 Void addItem(String label, String url, Integer group, Integer position, String onClick, String itemId, String target, String iconUrl)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 The image is specified by the URL to the actual file.
@@ -175,7 +175,7 @@ Clears all the contents of the menu.
 Void clear()
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## deleteGroup(Integer)
 
@@ -185,7 +185,7 @@ Removes the group at the given index (starts at 0) from the main menu.
 Void deleteGroup(Integer index)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Verify that you're removing the correct group by checking with getGroupId() what's in that slot first.
@@ -209,7 +209,7 @@ Removes the item at the given index from the group.
 Void deleteItem(Integer group, Integer index)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## getGroupId(Integer)
 
@@ -219,7 +219,7 @@ Returns the label (ID) of a group in the main menu given its position.
 String getGroupId(Integer group)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 <Note>
 The IDs are unique strings starting at zero.
@@ -240,7 +240,7 @@ Returns the position of a specific group in the main menu given its label (ID)
 Integer getGroupIndex(String label)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The position of a specific group in the main menu.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The position of a specific group in the main menu.
 
 **Example:**
 
@@ -257,7 +257,7 @@ Returns the label (ID) of an item in a group given its position.
 String getItemId(Integer group, Integer pos)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The label (ID) of an item.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The label (ID) of an item.
 
 **Example:**
 
@@ -274,7 +274,7 @@ Returns the position of a specific item in the group given its label (ID).
 Integer getItemIndex(Integer group, String label)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The position of a specific item.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The position of a specific item.
 
 **Example:**
 
@@ -291,7 +291,7 @@ Returns the current number of groups in the main menu.
 Integer getNumGroups()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 **Example:**
 
@@ -308,7 +308,7 @@ Returns the current number of items in the group.
 Integer getNumItems(Integer group)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of items in the group.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The number of items in the group.
 
 **Example:**
 

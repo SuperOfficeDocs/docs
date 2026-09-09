@@ -1,9 +1,9 @@
 # Class AuthorizationTicket {#SuperOffice_WebApi_Authorization_AuthorizationTicket}
 
-Namespace: [SuperOffice.WebApi.Authorization](SuperOffice.WebApi.Authorization.md)  
+Namespace: [SuperOffice.WebApi.Authorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization)  
 Assembly: SuperOffice.WebApi.Authorization.dll  
 
-SOTicket for use in onsite scenarios. See also &lt;xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt;.
+SOTicket for use in onsite scenarios. See also [IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization).
 
 ```csharp
 public class AuthorizationTicket : IAuthorization
@@ -12,11 +12,11 @@ public class AuthorizationTicket : IAuthorization
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AuthorizationTicket](SuperOffice.WebApi.Authorization.AuthorizationTicket.md)
+[AuthorizationTicket](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.AuthorizationTicket)
 
 #### Implements
 
-[IAuthorization](SuperOffice.WebApi.Authorization.IAuthorization.md)
+[IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization)
 
 #### Inherited Members
 
@@ -48,7 +48,7 @@ SOTicket string: "7T:abc123=="
 
 ### RefreshAuthorizationAsync {#SuperOffice_WebApi_Authorization_AuthorizationTicket_RefreshAuthorizationAsync}
 
-Try to refresh this &lt;xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; instance.
+Try to refresh this [IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization) instance.
 
 ```csharp
 public Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync { get; set; }
@@ -56,7 +56,7 @@ public Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync
 
 #### Property Value
 
- [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)&lt;[ReAuthorizationArgs](SuperOffice.WebApi.Authorization.ReAuthorizationArgs.md), [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[IAuthorization](SuperOffice.WebApi.Authorization.IAuthorization.md)\&gt;\&gt;
+ [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)&lt;[ReAuthorizationArgs](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.ReAuthorizationArgs), [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization)\&gt;\&gt;
 
 ### Ticket {#SuperOffice_WebApi_Authorization_AuthorizationTicket_Ticket}
 
@@ -84,5 +84,5 @@ public AuthenticationHeaderValue GetAuthorization()
 
  [AuthenticationHeaderValue](https://learn.microsoft.com/dotnet/api/system.net.http.headers.authenticationheadervalue)
 
-Gets a &lt;xref href="System.Tuple%602" data-throw-if-not-resolved="false"&gt;&lt;/xref&gt; (string,string) where scheme is SOTicket and parameter is SOTicket string.
+Gets a [Tuple](https://learn.microsoft.com/dotnet/api/system.tuple-2) (string,string) where scheme is SOTicket and parameter is SOTicket string.
 

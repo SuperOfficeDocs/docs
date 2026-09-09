@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_PhoneList_SearchWithPreferencesRequest"></a> Class PhoneList\_SearchWithPreferencesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class PhoneList_SearchWithPreferencesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[PhoneList\_SearchWithPreferencesRequest](SuperOffice.WebApi.Data.PhoneList\_SearchWithPreferencesRequest.md)
+[PhoneList\_SearchWithPreferencesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneList_SearchWithPreferencesRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public PhoneListPreferences Preferences { get; set; }
 
 #### Property Value
 
- [PhoneListPreferences](SuperOffice.WebApi.Data.PhoneListPreferences.md)
+ [PhoneListPreferences](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneListPreferences)
 
 ### <a id="SuperOffice_WebApi_Data_PhoneList_SearchWithPreferencesRequest_SearchString"></a> SearchString
 

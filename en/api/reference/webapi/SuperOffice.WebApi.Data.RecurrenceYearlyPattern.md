@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_RecurrenceYearlyPattern"></a> Enum RecurrenceYearlyPattern
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Enumerator describing the different patterns for a yearly recurrence

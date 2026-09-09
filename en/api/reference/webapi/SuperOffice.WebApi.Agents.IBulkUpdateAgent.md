@@ -1,6 +1,6 @@
 # Interface IBulkUpdateAgent {#SuperOffice_WebApi_Agents_IBulkUpdateAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Agent used for bulk update methods
@@ -11,7 +11,7 @@ public interface IBulkUpdateAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -26,7 +26,7 @@ Task<int> ExecuteByEntityIdsAsync(FieldValueInfo[] fieldValueInfos, string table
 
 #### Parameters
 
-`fieldValueInfos` [FieldValueInfo](SuperOffice.WebApi.Data.FieldValueInfo.md)\[\]
+`fieldValueInfos` [FieldValueInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldValueInfo)\[\]
 
 The name of the wanted tablename
 
@@ -42,7 +42,7 @@ Where is the function called from
 
 Comma separated string of the ids of the entities to update
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -62,7 +62,7 @@ Task<int> ExecuteBySelectionIdAsync(FieldValueInfo[] fieldValueInfos, string tab
 
 #### Parameters
 
-`fieldValueInfos` [FieldValueInfo](SuperOffice.WebApi.Data.FieldValueInfo.md)\[\]
+`fieldValueInfos` [FieldValueInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldValueInfo)\[\]
 
 The name of the wanted tablename
 
@@ -82,7 +82,7 @@ The id of the selection
 
 Use the shadow selection
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -106,13 +106,13 @@ Task<FieldValueInfo[]> GetAvailableFieldsAsync(string tablename, RequestOptions 
 
 The name of the wanted tablename
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FieldValueInfo](SuperOffice.WebApi.Data.FieldValueInfo.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FieldValueInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldValueInfo)\[\]\&gt;
 
 Returns array of the available fields for the given entity
 
@@ -134,7 +134,7 @@ The name of the table that was updated to show the log from
 
 Which binaryobject id has stored the job result
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -154,7 +154,7 @@ Task<string[]> GetJobResultsFromStorageAsJsonAsync(RequestOptions requestOptions
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -182,13 +182,13 @@ The name of the wanted tablename
 
 Where is the function called for
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FieldValueInfo](SuperOffice.WebApi.Data.FieldValueInfo.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FieldValueInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldValueInfo)\[\]\&gt;
 
 Returns array of the stored or default fields for the given entity
 
@@ -210,13 +210,13 @@ The name of the table to remove stored settings from
 
 Where is the function called from that we will remove the settings from
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FieldValueInfo](SuperOffice.WebApi.Data.FieldValueInfo.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FieldValueInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.FieldValueInfo)\[\]\&gt;
 
 Returns array of the available fields for the given tablename
 
@@ -238,7 +238,7 @@ The name of the table to remove stored settings from
 
 Where is the function called from that we will remove the settings from
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 

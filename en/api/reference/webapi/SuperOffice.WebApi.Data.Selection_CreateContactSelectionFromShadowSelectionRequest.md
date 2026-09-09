@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Selection_CreateContactSelectionFromShadowSelectionRequest"></a> Class Selection\_CreateContactSelectionFromShadowSelectionRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Selection_CreateContactSelectionFromShadowSelectionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Selection\_CreateContactSelectionFromShadowSelectionRequest](SuperOffice.WebApi.Data.Selection\_CreateContactSelectionFromShadowSelectionRequest.md)
+[Selection\_CreateContactSelectionFromShadowSelectionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Selection_CreateContactSelectionFromShadowSelectionRequest)
 
 #### Inherited Members
 

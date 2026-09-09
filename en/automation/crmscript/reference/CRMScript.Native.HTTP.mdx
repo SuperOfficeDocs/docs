@@ -33,7 +33,7 @@ Adds the binary data in the Service attachment specified to the body of the requ
 Bool addAttachmentData(Integer attachmentId)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the attachment was found; otherwise, false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if the attachment was found; otherwise, false.
 
 <Note>
 Must be used together with POST, PUT or PATCH.
@@ -63,7 +63,7 @@ Adds the binary data to the body of the request.
 Void addBinaryData(Byte[] binaryData)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Must be used together with POST, PUT or PATCH.
@@ -98,7 +98,7 @@ Add the binary data in the document specified to the body of the request.
 Bool addDocumentData(Integer documentId)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the document was found; otherwise, false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if the document was found; otherwise, false.
 
 <Note>
 Must be used together with POST, PUT or PATCH.
@@ -129,7 +129,7 @@ Adds a new header. The new header will be placed after other existing headers.
 Void addHeader(String name, String value)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -151,7 +151,7 @@ Supports both HTTP and HTTPS.
 Byte[] delete(String url)
 ```
 
-**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - The result in a byte array.
+**Returns:** [CRMScript.Global.Byte](/en/automation/crmscript/reference/CRMScript.Global.Byte)[] - The result in a byte array.
 
 **Example:**
 
@@ -171,7 +171,7 @@ Supports both HTTP and HTTPS.
 NSStream deleteAsStream(String url)
 ```
 
-**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream)
+**Returns:** [CRMScript.NetServer.NSStream](/en/automation/crmscript/reference/CRMScript.NetServer.NSStream)
 
 **Example:**
 
@@ -191,7 +191,7 @@ Supports both HTTP and HTTPS.
 Byte[] get(String url)
 ```
 
-**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - The result in a byte array.
+**Returns:** [CRMScript.Global.Byte](/en/automation/crmscript/reference/CRMScript.Global.Byte)[] - The result in a byte array.
 
 **Example:**
 
@@ -215,7 +215,7 @@ Supports both HTTP and HTTPS.
 NSStream getAsStream(String url)
 ```
 
-**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream) - The result.
+**Returns:** [CRMScript.NetServer.NSStream](/en/automation/crmscript/reference/CRMScript.NetServer.NSStream) - The result.
 
 **Example:**
 
@@ -239,7 +239,7 @@ Retrieves debug output.
 String getDebug()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The debug output.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The debug output.
 
 <Note>
 Turn on debug mode by calling setDebugMode(true) before you use getDebug().
@@ -253,7 +253,7 @@ Returns the last error message.
 String getErrorMessage()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The last error message.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The last error message.
 
 **Example:**
 
@@ -277,7 +277,7 @@ Gets a named HTTP header from the response of the HTTP request.
 String getResponseHeader(String header)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The header.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The header.
 
 <Note>
 Case insensitive.
@@ -291,7 +291,7 @@ Gets a map of all the headers from the HTTP response headers after making a HTTP
 Map getResponseHeaders()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - A map of all the headers from the HTTP response headers after making a HTTP call.
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map) - A map of all the headers from the HTTP response headers after making a HTTP call.
 
 <Note>
 The key is in lower case regardless of what was returned by the response. The value will keep the case.
@@ -305,7 +305,7 @@ General function which returns various values from the instance.
 String getValue(String name)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Values from the instance.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Values from the instance.
 
 <Note>
 statusCode: Will return the status code from the HTTP request (such as 404, 200). Supported from v8.0sr3.
@@ -319,7 +319,7 @@ Checks if there was an error in the environment.
 Bool hasError()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if there was an error in the environment; otherwise, false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if there was an error in the environment; otherwise, false.
 
 ## open(String)
 
@@ -329,7 +329,7 @@ Opens a URL and returns the result as a Byte array.
 Byte[] open(String url)
 ```
 
-**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - Result as a Byte array.
+**Returns:** [CRMScript.Global.Byte](/en/automation/crmscript/reference/CRMScript.Global.Byte)[] - Result as a Byte array.
 
 **Example:**
 
@@ -349,7 +349,7 @@ Opens a URL and returns the result as an NSStream.
 NSStream openAsStream(String url)
 ```
 
-**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream)
+**Returns:** [CRMScript.NetServer.NSStream](/en/automation/crmscript/reference/CRMScript.NetServer.NSStream)
 
 **Example:**
 
@@ -369,7 +369,7 @@ Supports both HTTP and HTTPS.
 Byte[] patch(String url)
 ```
 
-**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - The result as a byte array.
+**Returns:** [CRMScript.Global.Byte](/en/automation/crmscript/reference/CRMScript.Global.Byte)[] - The result as a byte array.
 
 **Example:**
 
@@ -393,7 +393,7 @@ Supports both HTTP and HTTPS.
 NSStream patchAsStream(String url)
 ```
 
-**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream) - The result.
+**Returns:** [CRMScript.NetServer.NSStream](/en/automation/crmscript/reference/CRMScript.NetServer.NSStream) - The result.
 
 **Example:**
 
@@ -417,7 +417,7 @@ Supports both HTTP and HTTPS.
 Byte[] post(String url)
 ```
 
-**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - The result as a byte array.
+**Returns:** [CRMScript.Global.Byte](/en/automation/crmscript/reference/CRMScript.Global.Byte)[] - The result as a byte array.
 
 **Example:**
 
@@ -441,7 +441,7 @@ Supports both HTTP and HTTPS.
 NSStream postAsStream(String url)
 ```
 
-**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream) - The result.
+**Returns:** [CRMScript.NetServer.NSStream](/en/automation/crmscript/reference/CRMScript.NetServer.NSStream) - The result.
 
 **Example:**
 
@@ -465,7 +465,7 @@ Supports both HTTP and HTTPS.
 NSStream putAsStream(String url)
 ```
 
-**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream) - The result.
+**Returns:** [CRMScript.NetServer.NSStream](/en/automation/crmscript/reference/CRMScript.NetServer.NSStream) - The result.
 
 **Example:**
 
@@ -489,7 +489,7 @@ Turns debug mode on/off to record debug output.
 Void setDebugMode(Bool debug)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## setOption(String,Bool)
 
@@ -499,7 +499,7 @@ Option function.
 Void setOption(String name, String value)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 | Value | Description |
@@ -558,7 +558,7 @@ Adds a CGI variable and its according value to the HTTP request.
 Void setValue(String cgiVariable, String value)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

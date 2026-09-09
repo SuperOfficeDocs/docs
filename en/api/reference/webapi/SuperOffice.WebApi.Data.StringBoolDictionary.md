@@ -1,6 +1,6 @@
 # Class StringBoolDictionary {#SuperOffice_WebApi_Data_StringBoolDictionary}
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Serializable dictionary.
@@ -14,7 +14,7 @@ public class StringBoolDictionary : Dictionary<string, bool>, IDictionary<string
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
 [Dictionary&lt;string, bool\&gt;](https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary\-2) ← 
-[StringBoolDictionary](SuperOffice.WebApi.Data.StringBoolDictionary.md)
+[StringBoolDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringBoolDictionary)
 
 #### Implements
 

@@ -33,7 +33,7 @@ Loads a private key. The password is optional and should be specified if needed.
 Bool loadPrivateKey(String privateKey, String password)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the key was loaded successfully; otherwise, false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if the key was loaded successfully; otherwise, false.
 
 ## loadPublicKey(String)
 
@@ -43,7 +43,7 @@ Loads a public key. This method must be called in prior to creating a signature.
 Bool loadPublicKey(String publicKey)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the key was loaded successfully; otherwise, false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if the key was loaded successfully; otherwise, false.
 
 **Example:**
 
@@ -63,7 +63,7 @@ The private key must be loaded prior to calling this method.
 Byte[] createSignature(Byte[] data, Integer hashingAlgorithm)
 ```
 
-**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - Generated RSA signature as byte array.
+**Returns:** [CRMScript.Global.Byte](/en/automation/crmscript/reference/CRMScript.Global.Byte)[] - Generated RSA signature as byte array.
 
 <Note>
 Hashing algorithm:
@@ -98,7 +98,7 @@ The private key must be loaded prior to calling this method.
 Byte[] createSignature(String data, Integer hashingAlgorithm)
 ```
 
-**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - Generated RSA signature as byte array.
+**Returns:** [CRMScript.Global.Byte](/en/automation/crmscript/reference/CRMScript.Global.Byte)[] - Generated RSA signature as byte array.
 
 <Note>
 Hashing algorithm:
@@ -131,7 +131,7 @@ The public key must be loaded prior to calling this method.
 Bool verifySignature(Byte[] data, Byte[] signature, Integer hashingAlgorithm)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if valid; otherwise, false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if valid; otherwise, false.
 
 <Note>
 Hashing algorithm:
@@ -164,7 +164,7 @@ The public key must be loaded prior to calling this method.
 Bool verifySignature(String data, Byte[] signature, Integer hashingAlgorithm)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if valid; otherwise, false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if valid; otherwise, false.
 
 <Note>
 Hashing algorithm:
@@ -195,7 +195,7 @@ A valid public key must have been loaded into the class. This method will use th
 Byte[] encrypt(Byte[] data)
 ```
 
-**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - The returned byte array contains the encrypted data.
+**Returns:** [CRMScript.Global.Byte](/en/automation/crmscript/reference/CRMScript.Global.Byte)[] - The returned byte array contains the encrypted data.
 
 **Example:**
 
@@ -216,7 +216,7 @@ This method will use the private key and do an RSA decryption of the content. Th
 Byte[] decrypt(Byte[] data)
 ```
 
-**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - The returned byte array contains the decrypted data.
+**Returns:** [CRMScript.Global.Byte](/en/automation/crmscript/reference/CRMScript.Global.Byte)[] - The returned byte array contains the decrypted data.
 
 **Example:**
 

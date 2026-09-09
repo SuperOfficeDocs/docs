@@ -31,7 +31,7 @@ Initializes a new instance of the NSArchiveRestrictionInfo class.
 NSArchiveColumnInfo GetColumnInfo()
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveColumnInfo](CRMScript.NetServer.NSArchiveColumnInfo) - Optional complete NSArchiveColumnInfo for this restriction; in that case, ColumnInfo.Name == this.Name will always be true.
+**Returns:** [CRMScript.NetServer.NSArchiveColumnInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveColumnInfo) - Optional complete NSArchiveColumnInfo for this restriction; in that case, ColumnInfo.Name == this.Name will always be true.
 
 **Example:**
 
@@ -46,7 +46,7 @@ NSArchiveColumnInfo columnInfo = thing.GetColumnInfo();
 String[] GetDisplayValues()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - Display representation of values.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)[] - Display representation of values.
 
 <Note>
 List ID's are decoded to display texts, other values are represented in a format suitable for decoding and display through the CultureDataFormatter.
@@ -67,7 +67,7 @@ Gets inter-restriction operator that describes how this restriction is related t
 Integer GetInterOperator()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - inter-restriction operator 0 = None; 1 = And; 2 = Or.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - inter-restriction operator 0 = None; 1 = And; 2 = Or.
 
 <Note>
 Default for new ArchiveRestrictionInfo objects is And
@@ -88,7 +88,7 @@ Gets the parenthesis (if any) associated with this restriction.
 Integer GetInterParenthesis()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 <Note>
 Positive values indicate a number of opening parentheses (deepening nesting level), while negative numbers indicate closing parentheses. Zero means no change in nesting level (no parentheses).
@@ -107,7 +107,7 @@ Integer interParenthesis = thing.GetInterParenthesis();
 Bool GetIsActive()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Is this restriction active?
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Is this restriction active?
 
 <Note>
 Inactive restrictions will not influence the generated query.
@@ -126,7 +126,7 @@ Bool isActive = thing.GetIsActive();
 String GetName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The programmatic column name, including any required prefixes.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The programmatic column name, including any required prefixes.
 
 **Example:**
 
@@ -141,7 +141,7 @@ String name = thing.GetName();
 String GetOperator()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The operator, such as =
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The operator, such as =
 
 **Example:**
 
@@ -156,7 +156,7 @@ String operator = thing.GetOperator();
 Integer GetParenthesis()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 ## GetSubRestrictions()
 
@@ -164,7 +164,7 @@ Integer GetParenthesis()
 NSArchiveRestrictionInfo[] GetSubRestrictions()
 ```
 
-**Returns:** [CRMScript.NetServer.NSArchiveRestrictionInfo](CRMScript.NetServer.NSArchiveRestrictionInfo)[] - Optional collection of sub criteria, usually null but set for Saint counter fields.
+**Returns:** [CRMScript.NetServer.NSArchiveRestrictionInfo](/en/automation/crmscript/reference/CRMScript.NetServer.NSArchiveRestrictionInfo)[] - Optional collection of sub criteria, usually null but set for Saint counter fields.
 
 **Example:**
 
@@ -179,7 +179,7 @@ NSArchiveRestrictionInfo[] subRestrictions = thing.GetSubRestrictions();
 Integer GetUniqueHash()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 **Example:**
 
@@ -194,7 +194,7 @@ Integer uniqueHash = thing.GetUniqueHash();
 String[] GetValues()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - Values to test against.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)[] - Values to test against.
 
 **Example:**
 
@@ -209,7 +209,7 @@ String[] values = thing.GetValues();
 Void SetColumnInfo(NSArchiveColumnInfo columnInfo)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -225,7 +225,7 @@ thing.SetColumnInfo(columnInfo);
 Void SetDisplayValues(String[] displayValues)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 List IDs are decoded to display texts, other values are represented in a format suitable for decoding and display through the CultureDataFormatter.
@@ -247,7 +247,7 @@ Gets inter-restriction operator that describes how this restriction is related t
 Void SetInterOperator(Integer operator)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Default for new ArchiveRestrictionInfo objects is And
@@ -269,7 +269,7 @@ Gets the parenthesis (if any) associated with this restriction.
 Void SetInterParenthesis(Integer interParenthesis)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Positive values indicate a number of opening parentheses (deepening nesting level), while negative numbers indicate closing parentheses. Zero means no change in nesting level (no parentheses).
@@ -291,7 +291,7 @@ Activates or deactivates a restriction.
 Void SetIsActive(Bool isActive)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Inactive restrictions will not influence the generated query.
@@ -311,7 +311,7 @@ thing.SetIsActive(isActive);
 Void SetName(String name)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -327,7 +327,7 @@ thing.SetName(name);
 Void SetOperator(String operator)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -343,7 +343,7 @@ thing.SetOperator(operator);
 Void SetParenthesis(Integer p)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## SetSubRestrictions(NSArchiveRestrictionInfo[])
 
@@ -351,7 +351,7 @@ Void SetParenthesis(Integer p)
 Void SetSubRestrictions(NSArchiveRestrictionInfo[] subRestrictions)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -367,7 +367,7 @@ thing.SetSubRestrictions(subRestrictions);
 Void SetUniqueHash(Integer uniqueHash)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -383,7 +383,7 @@ thing.SetUniqueHash(uniqueHash);
 Void SetValues(String[] values)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

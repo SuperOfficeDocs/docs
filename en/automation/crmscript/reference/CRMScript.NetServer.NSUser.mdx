@@ -31,7 +31,7 @@ Initializes a new instance of the NSUser class.
 Integer GetAssociateId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Primary key.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Primary key.
 
 **Example:**
 
@@ -46,7 +46,7 @@ Integer associateId = thing.GetAssociateId();
 NSCredential[] GetCredentials()
 ```
 
-**Returns:** [CRMScript.NetServer.NSCredential](CRMScript.NetServer.NSCredential)[] - List of credentials registered for this user. i.e. valid authentication methods.
+**Returns:** [CRMScript.NetServer.NSCredential](/en/automation/crmscript/reference/CRMScript.NetServer.NSCredential)[] - List of credentials registered for this user. i.e. valid authentication methods.
 
 **Example:**
 
@@ -63,7 +63,7 @@ Gets the user-defined + extra fields on a User as a map.
 Map GetCustomFields()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map)
 
 **Example:**
 
@@ -82,7 +82,7 @@ for (fields.first(); !fields.eof(); fields.next())
 Bool GetDeleted()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - If true, the user is retired and should have no rights, not appear in lists, etc.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - If true, the user is retired and should have no rights, not appear in lists, etc.
 
 **Example:**
 
@@ -97,7 +97,7 @@ Bool deleted = thing.GetDeleted();
 Integer GetEjUserId()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of the ej user record corresponding to this associate; 0 for associates that are not ej users.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - ID of the ej user record corresponding to this associate; 0 for associates that are not ej users.
 
 **Example:**
 
@@ -114,7 +114,7 @@ Gets the extra fields on User as a map.
 Map GetExtraFields()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map)
 
 **Example:**
 
@@ -133,7 +133,7 @@ for (fields.first(); !fields.eof(); fields.next())
 Bool GetIsOnTravel()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the user is on travel.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if the user is on travel.
 
 **Example:**
 
@@ -148,7 +148,7 @@ Bool isOnTravel = thing.GetIsOnTravel();
 Bool GetIsPersonRetired()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the user is retired and should have no rights, not appear in lists, etc.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if the user is retired and should have no rights, not appear in lists, etc.
 
 **Example:**
 
@@ -163,7 +163,7 @@ Bool isPersonRetired = thing.GetIsPersonRetired();
 DateTime GetLastlogin()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last login date.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Last login date.
 
 **Example:**
 
@@ -178,7 +178,7 @@ DateTime lastlogin = thing.GetLastlogin();
 DateTime GetLastlogout()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Last logout date.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Last logout date.
 
 **Example:**
 
@@ -193,7 +193,7 @@ DateTime lastlogout = thing.GetLastlogout();
 NSLicenseOwner[] GetLicenseOwners()
 ```
 
-**Returns:** [CRMScript.NetServer.NSLicenseOwner](CRMScript.NetServer.NSLicenseOwner)[] - The restricted and unrestricted module licenses grouped by license owner.
+**Returns:** [CRMScript.NetServer.NSLicenseOwner](/en/automation/crmscript/reference/CRMScript.NetServer.NSLicenseOwner)[] - The restricted and unrestricted module licenses grouped by license owner.
 
 <Note>
 These module licenses are either assigned or unassigned to this user
@@ -212,7 +212,7 @@ NSLicenseOwner[] licenseOwners = thing.GetLicenseOwners();
 String GetName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Initials, UserId* also used as login name for on-site installations. Identifies user in archives.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Initials, UserId* also used as login name for on-site installations. Identifies user in archives.
 
 **Example:**
 
@@ -227,7 +227,7 @@ String name = thing.GetName();
 String GetNickName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The unique nick name for this user. Used in Service as an alias, similar to Name/Initials.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The unique nick name for this user. Used in Service as an alias, similar to Name/Initials.
 
 **Example:**
 
@@ -242,7 +242,7 @@ String nickName = thing.GetNickName();
 NSUserGroup[] GetOtherGroups()
 ```
 
-**Returns:** [CRMScript.NetServer.NSUserGroup](CRMScript.NetServer.NSUserGroup)[] - The other groups this user is a member of, apart from the main user group.
+**Returns:** [CRMScript.NetServer.NSUserGroup](/en/automation/crmscript/reference/CRMScript.NetServer.NSUserGroup)[] - The other groups this user is a member of, apart from the main user group.
 
 **Example:**
 
@@ -257,7 +257,7 @@ NSUserGroup[] otherGroups = thing.GetOtherGroups();
 NSPerson GetPerson()
 ```
 
-**Returns:** [CRMScript.NetServer.NSPerson](CRMScript.NetServer.NSPerson) - The person associated with this user. Detailed information about the user.
+**Returns:** [CRMScript.NetServer.NSPerson](/en/automation/crmscript/reference/CRMScript.NetServer.NSPerson) - The person associated with this user. Detailed information about the user.
 
 **Example:**
 
@@ -272,7 +272,7 @@ NSPerson person = thing.GetPerson();
 Integer GetRank()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Rank order.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Rank order.
 
 **Example:**
 
@@ -287,7 +287,7 @@ Integer rank = thing.GetRank();
 String GetRequestSignature()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - ej users request signature.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - ej users request signature.
 
 **Example:**
 
@@ -302,7 +302,7 @@ String requestSignature = thing.GetRequestSignature();
 NSRole GetRole()
 ```
 
-**Returns:** [CRMScript.NetServer.NSRole](CRMScript.NetServer.NSRole) - Users role for role-based security. Determines permissions and access rights for the user.
+**Returns:** [CRMScript.NetServer.NSRole](/en/automation/crmscript/reference/CRMScript.NetServer.NSRole) - Users role for role-based security. Determines permissions and access rights for the user.
 
 **Example:**
 
@@ -317,7 +317,7 @@ NSRole role = thing.GetRole();
 NSMDOListItem[] GetTicketCategories()
 ```
 
-**Returns:** [CRMScript.NetServer.NSMDOListItem](CRMScript.NetServer.NSMDOListItem)[] - Request Ticket Categories assigned to the user.
+**Returns:** [CRMScript.NetServer.NSMDOListItem](/en/automation/crmscript/reference/CRMScript.NetServer.NSMDOListItem)[] - Request Ticket Categories assigned to the user.
 
 **Example:**
 
@@ -332,7 +332,7 @@ NSMDOListItem[] ticketCategories = thing.GetTicketCategories();
 String GetTooltip()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Tooltip or other description.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Tooltip or other description.
 
 **Example:**
 
@@ -347,7 +347,7 @@ String tooltip = thing.GetTooltip();
 Integer GetType()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - NSUser type 1=InternalAssociate, 2=ResourceAssociate, 3=ExternalAssociate, 4=AnonymousAssociate, 5=SystemAssociate.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - NSUser type 1=InternalAssociate, 2=ResourceAssociate, 3=ExternalAssociate, 4=AnonymousAssociate, 5=SystemAssociate.
 
 **Example:**
 
@@ -362,7 +362,7 @@ Integer type = thing.GetType();
 NSUserGroup GetUserGroup()
 ```
 
-**Returns:** [CRMScript.NetServer.NSUserGroup](CRMScript.NetServer.NSUserGroup) - The main user group that this user belongs to.
+**Returns:** [CRMScript.NetServer.NSUserGroup](/en/automation/crmscript/reference/CRMScript.NetServer.NSUserGroup) - The main user group that this user belongs to.
 
 **Example:**
 
@@ -377,7 +377,7 @@ NSUserGroup userGroup = thing.GetUserGroup();
 String GetUserName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - User name, a.k.a. Login name. This might be an email address.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - User name, a.k.a. Login name. This might be an email address.
 
 **Example:**
 
@@ -392,7 +392,7 @@ String userName = thing.GetUserName();
 Bool GetWaitingForApproval()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - The user is waiting for an administrator to approve/grant her/him access.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - The user is waiting for an administrator to approve/grant her/him access.
 
 **Example:**
 
@@ -407,7 +407,7 @@ Bool waitingForApproval = thing.GetWaitingForApproval();
 Void SetAssociateId(Integer associateId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -423,7 +423,7 @@ thing.SetAssociateId(associateId);
 Void SetCredentials(NSCredential[] credentials)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -441,7 +441,7 @@ Sets the user-defined and extra fields on a User with a map.
 Void SetCustomFields(Map udefs)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -462,7 +462,7 @@ thing.SetCustomFields(udefs);
 Void SetDeleted(Bool deleted)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## SetEjUserId(Integer)
 
@@ -470,7 +470,7 @@ Void SetDeleted(Bool deleted)
 Void SetEjUserId(Integer ejUserId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -488,7 +488,7 @@ Sets the extra field values on User with a map.
 Void SetExtraFields(Map extras)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -507,7 +507,7 @@ thing.SetExtraFields(extras);
 Void SetIsOnTravel(Bool isOnTravel)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -523,7 +523,7 @@ thing.SetIsOnTravel(isOnTravel);
 Void SetIsPersonRetired(Bool isPersonRetired)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -539,7 +539,7 @@ thing.SetIsPersonRetired(isPersonRetired);
 Void SetLastlogin(DateTime lastlogin)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -555,7 +555,7 @@ thing.SetLastlogin(lastlogin);
 Void SetLastlogout(DateTime lastlogout)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -571,7 +571,7 @@ thing.SetLastlogout(lastlogout);
 Void SetLicenseOwners(NSLicenseOwner[] licenseOwners)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 These module licenses are either assigned or unassigned to this user
@@ -591,7 +591,7 @@ thing.SetLicenseOwners(licenseOwners);
 Void SetName(String name)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -607,7 +607,7 @@ thing.SetName(name);
 Void SetNickName(String nickName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -623,7 +623,7 @@ thing.SetNickName(nickName);
 Void SetOtherGroups(NSUserGroup[] otherGroups)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -639,7 +639,7 @@ thing.SetOtherGroups(otherGroups);
 Void SetPerson(NSPerson person)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -655,7 +655,7 @@ thing.SetPerson(person);
 Void SetRank(Integer rank)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -671,7 +671,7 @@ thing.SetRank(rank);
 Void SetRequestSignature(String requestSignature)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -687,7 +687,7 @@ thing.SetRequestSignature(requestSignature);
 Void SetRole(NSRole role)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -703,7 +703,7 @@ thing.SetRole(role);
 Void SetTicketCategories(NSMDOListItem[] ticketCategories)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -719,7 +719,7 @@ thing.SetTicketCategories(ticketCategories);
 Void SetTooltip(String tooltip)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -735,7 +735,7 @@ thing.SetTooltip(tooltip);
 Void SetType(Integer type)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -751,7 +751,7 @@ thing.SetType(type);
 Void SetUserGroup(NSUserGroup userGroup)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -767,7 +767,7 @@ thing.SetUserGroup(userGroup);
 Void SetUserName(String userName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -783,7 +783,7 @@ thing.SetUserName(userName);
 Void SetWaitingForApproval(Bool waitingForApproval)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSync_ToggleErpConnectionActiveRequest"></a> Class ErpSync\_ToggleErpConnectionActiveRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ErpSync_ToggleErpConnectionActiveRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ErpSync\_ToggleErpConnectionActiveRequest](SuperOffice.WebApi.Data.ErpSync\_ToggleErpConnectionActiveRequest.md)
+[ErpSync\_ToggleErpConnectionActiveRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSync_ToggleErpConnectionActiveRequest)
 
 #### Inherited Members
 

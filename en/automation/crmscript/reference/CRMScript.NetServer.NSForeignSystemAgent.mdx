@@ -31,7 +31,7 @@ Adds a new NSForeignDevice with deviceName that belongs to the application with 
 NSForeignDevice AddDeviceByIdentifier(String applicationName, String deviceName, String deviceIdentifier)
 ```
 
-**Returns:** [CRMScript.NetServer.NSForeignDevice](CRMScript.NetServer.NSForeignDevice)
+**Returns:** [CRMScript.NetServer.NSForeignDevice](/en/automation/crmscript/reference/CRMScript.NetServer.NSForeignDevice)
 
 **Example:**
 
@@ -51,7 +51,7 @@ Adds a new key belonging to the ForeignApp and NSForeignDevice specified.
 NSForeignKey AddForeignKey(NSForeignKey foreignKey, String applicationName, String deviceName, String deviceIdentifier)
 ```
 
-**Returns:** [CRMScript.NetServer.NSForeignKey](CRMScript.NetServer.NSForeignKey)
+**Returns:** [CRMScript.NetServer.NSForeignKey](/en/automation/crmscript/reference/CRMScript.NetServer.NSForeignKey)
 
 **Example:**
 
@@ -72,7 +72,7 @@ Sets default values into a new NSForeignAppEntity.
 NSForeignAppEntity CreateDefaultForeignAppEntity()
 ```
 
-**Returns:** [CRMScript.NetServer.NSForeignAppEntity](CRMScript.NetServer.NSForeignAppEntity)
+**Returns:** [CRMScript.NetServer.NSForeignAppEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSForeignAppEntity)
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
@@ -94,7 +94,7 @@ Deletes an NSForeignDevice with deviceName and deviceIdentifier that belongs to 
 Void DeleteDeviceByIdentifier(String applicationName, String deviceName, String deviceIdentifier)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -114,7 +114,7 @@ Deletes the NSForeignAppEntity
 Void DeleteForeignAppEntity(Integer foreignAppEntity)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -131,7 +131,7 @@ Deletes a foreign device from an application
 Void DeleteForeignDevice(NSForeignDevice foreignDevice, String applicationName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## DeleteForeignKey(NSForeignKey,String,String,String,String,Integer)
 
@@ -141,7 +141,7 @@ Deletes all specified occurrences of a key, belonging to the ForeignApp and NSFo
 Void DeleteForeignKey(NSForeignKey foreignKey, String applicationName, String deviceName, String deviceIdentifier, String tableName, Integer recordId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -164,7 +164,7 @@ Deletes all specified occurrences of a key, belonging to the ForeignApp and NSFo
 Void DeleteForeignKeyOnName(String applicationName, String deviceName, String deviceIdentifier, String keyName, String tableName, Integer recordId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -187,7 +187,7 @@ Gets a list of foreignkeys ('app.device.key') and their values ('123') that belo
 Map GetAllForeignKeysOnEntity(String entityType, Integer entityId)
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map)
 
 **Example:**
 
@@ -206,7 +206,7 @@ Gets the ForeignApp with the given name.
 NSForeignAppEntity GetAppByName(String applicationName)
 ```
 
-**Returns:** [CRMScript.NetServer.NSForeignAppEntity](CRMScript.NetServer.NSForeignAppEntity)
+**Returns:** [CRMScript.NetServer.NSForeignAppEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSForeignAppEntity)
 
 **Example:**
 
@@ -224,7 +224,7 @@ Gets all devices that belong to a foreign application.
 NSForeignDevice[] GetApplicationDevices(String applicationName)
 ```
 
-**Returns:** [CRMScript.NetServer.NSForeignDevice](CRMScript.NetServer.NSForeignDevice)[]
+**Returns:** [CRMScript.NetServer.NSForeignDevice](/en/automation/crmscript/reference/CRMScript.NetServer.NSForeignDevice)[]
 
 **Example:**
 
@@ -242,7 +242,7 @@ Returns all ForeignKeys that belong to an application.
 NSForeignKey[] GetApplicationKeys(String applicationName)
 ```
 
-**Returns:** [CRMScript.NetServer.NSForeignKey](CRMScript.NetServer.NSForeignKey)[] - All ForeignKeys that belong to this application.
+**Returns:** [CRMScript.NetServer.NSForeignKey](/en/automation/crmscript/reference/CRMScript.NetServer.NSForeignKey)[] - All ForeignKeys that belong to this application.
 
 **Example:**
 
@@ -260,7 +260,7 @@ Gets an NSForeignDevice with deviceName and deviceIdentifier that belongs to the
 NSForeignDevice GetDeviceByIdentifier(String applicationName, String deviceName, String deviceIdentifier)
 ```
 
-**Returns:** [CRMScript.NetServer.NSForeignDevice](CRMScript.NetServer.NSForeignDevice)
+**Returns:** [CRMScript.NetServer.NSForeignDevice](/en/automation/crmscript/reference/CRMScript.NetServer.NSForeignDevice)
 
 **Example:**
 
@@ -280,7 +280,7 @@ Gets an NSForeignDevice with deviceName that belongs to the application with app
 NSForeignDevice GetDeviceByName(String applicationName, String deviceName)
 ```
 
-**Returns:** [CRMScript.NetServer.NSForeignDevice](CRMScript.NetServer.NSForeignDevice)
+**Returns:** [CRMScript.NetServer.NSForeignDevice](/en/automation/crmscript/reference/CRMScript.NetServer.NSForeignDevice)
 
 **Example:**
 
@@ -299,7 +299,7 @@ Returns all ForeignKeys that belong to a device.
 NSForeignKey[] GetDeviceKeys(String applicationName, String deviceName)
 ```
 
-**Returns:** [CRMScript.NetServer.NSForeignKey](CRMScript.NetServer.NSForeignKey)[]
+**Returns:** [CRMScript.NetServer.NSForeignKey](/en/automation/crmscript/reference/CRMScript.NetServer.NSForeignKey)[]
 
 **Example:**
 
@@ -318,7 +318,7 @@ Returns all ForeignKeys that belong to a device with a given deviceIdentifier.
 NSForeignKey[] GetDeviceKeysOnDeviceIdentifier(String applicationName, String deviceName, String deviceIdentifier)
 ```
 
-**Returns:** [CRMScript.NetServer.NSForeignKey](CRMScript.NetServer.NSForeignKey)[]
+**Returns:** [CRMScript.NetServer.NSForeignKey](/en/automation/crmscript/reference/CRMScript.NetServer.NSForeignKey)[]
 
 **Example:**
 
@@ -338,7 +338,7 @@ Returns all ForeignKeys that belong to a device with a given deviceIdentifier an
 NSForeignKey[] GetDeviceKeysOnDeviceIdentifierTable(String applicationName, String deviceName, String deviceIdentifier, String tableName)
 ```
 
-**Returns:** [CRMScript.NetServer.NSForeignKey](CRMScript.NetServer.NSForeignKey)[]
+**Returns:** [CRMScript.NetServer.NSForeignKey](/en/automation/crmscript/reference/CRMScript.NetServer.NSForeignKey)[]
 
 **Example:**
 
@@ -359,7 +359,7 @@ Returns all ForeignKeys that belong to a device with a given deviceIdentifier an
 NSForeignKey[] GetDeviceKeysOnDeviceIdentifierTableRecordId(String applicationName, String deviceName, String deviceIdentifier, String tableName, Integer recordId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSForeignKey](CRMScript.NetServer.NSForeignKey)[]
+**Returns:** [CRMScript.NetServer.NSForeignKey](/en/automation/crmscript/reference/CRMScript.NetServer.NSForeignKey)[]
 
 **Example:**
 
@@ -381,7 +381,7 @@ Gets an NSForeignAppEntity object.
 NSForeignAppEntity GetForeignAppEntity(Integer foreignAppEntityId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSForeignAppEntity](CRMScript.NetServer.NSForeignAppEntity)
+**Returns:** [CRMScript.NetServer.NSForeignAppEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSForeignAppEntity)
 
 **Example:**
 
@@ -398,7 +398,7 @@ Gets an NSForeignDevice object.
 NSForeignDevice GetForeignDevice(Integer foreignDeviceId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSForeignDevice](CRMScript.NetServer.NSForeignDevice)
+**Returns:** [CRMScript.NetServer.NSForeignDevice](/en/automation/crmscript/reference/CRMScript.NetServer.NSForeignDevice)
 
 **Example:**
 
@@ -415,7 +415,7 @@ Returns a foreign key by its key name that belongs to the specified device and a
 NSForeignKey GetKey(String applicationName, String deviceName, String keyName, String tableName, Integer recordId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSForeignKey](CRMScript.NetServer.NSForeignKey)
+**Returns:** [CRMScript.NetServer.NSForeignKey](/en/automation/crmscript/reference/CRMScript.NetServer.NSForeignKey)
 
 **Example:**
 
@@ -437,7 +437,7 @@ Gets a foreignkey based on its name and value, that belongs to the specified dev
 NSForeignKey GetKeyByValue(String applicationName, String deviceName, String keyName, String keyValue, String tableName)
 ```
 
-**Returns:** [CRMScript.NetServer.NSForeignKey](CRMScript.NetServer.NSForeignKey)
+**Returns:** [CRMScript.NetServer.NSForeignKey](/en/automation/crmscript/reference/CRMScript.NetServer.NSForeignKey)
 
 **Example:**
 
@@ -459,7 +459,7 @@ Gets a foreignkey based on its name and value, that belongs to the specified dev
 NSForeignKey GetKeyByValueAndIdentifier(String applicationName, String deviceName, String deviceIdentifier, String keyName, String keyValue, String tableName)
 ```
 
-**Returns:** [CRMScript.NetServer.NSForeignKey](CRMScript.NetServer.NSForeignKey)
+**Returns:** [CRMScript.NetServer.NSForeignKey](/en/automation/crmscript/reference/CRMScript.NetServer.NSForeignKey)
 
 **Example:**
 
@@ -482,7 +482,7 @@ Returns a foreign key by its key name and device identifier, that belongs to the
 NSForeignKey GetKeyOnDeviceIdentifier(String applicationName, String deviceName, String deviceIdentifier, String keyName, String tableName, Integer recordId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSForeignKey](CRMScript.NetServer.NSForeignKey)
+**Returns:** [CRMScript.NetServer.NSForeignKey](/en/automation/crmscript/reference/CRMScript.NetServer.NSForeignKey)
 
 **Example:**
 
@@ -505,7 +505,7 @@ Gets the string value of an NSForeignKey, that belongs to the specified device a
 String GetKeyValue(String applicationName, String deviceName, String keyName, String tableName, Integer recordId)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -527,7 +527,7 @@ Returns a foreign key string value by its key name and device identifier, that b
 String GetKeyValueOnDeviceIdentifier(String applicationName, String deviceName, String deviceIdentifier, String keyName, String tableName, Integer recordId)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -550,7 +550,7 @@ Updates an NSForeignDevice with deviceName that belongs to the application with 
 NSForeignDevice SaveDeviceByIdentifier(String applicationName, String deviceName, String deviceIdentifier, NSForeignDevice foreignDevice)
 ```
 
-**Returns:** [CRMScript.NetServer.NSForeignDevice](CRMScript.NetServer.NSForeignDevice)
+**Returns:** [CRMScript.NetServer.NSForeignDevice](/en/automation/crmscript/reference/CRMScript.NetServer.NSForeignDevice)
 
 **Example:**
 
@@ -571,7 +571,7 @@ yUpdates the existing NSForeignAppEntity or creates a new NSForeignAppEntity if 
 NSForeignAppEntity SaveForeignAppEntity(NSForeignAppEntity foreignAppEntity)
 ```
 
-**Returns:** [CRMScript.NetServer.NSForeignAppEntity](CRMScript.NetServer.NSForeignAppEntity) - The new or updated NSForeignAppEntity.
+**Returns:** [CRMScript.NetServer.NSForeignAppEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSForeignAppEntity) - The new or updated NSForeignAppEntity.
 
 **Example:**
 
@@ -589,7 +589,7 @@ Saves a foreign device for an foreign application
 NSForeignDevice SaveForeignDevice(NSForeignDevice foreignDevice, String applicationName)
 ```
 
-**Returns:** [CRMScript.NetServer.NSForeignDevice](CRMScript.NetServer.NSForeignDevice)
+**Returns:** [CRMScript.NetServer.NSForeignDevice](/en/automation/crmscript/reference/CRMScript.NetServer.NSForeignDevice)
 
 **Example:**
 
@@ -608,7 +608,7 @@ Saves a key belonging to the ForeignApp and NSForeignDevice specified.
 NSForeignKey SaveForeignKey(NSForeignKey foreignKey, String applicationName, String deviceName, String deviceIdentifier)
 ```
 
-**Returns:** [CRMScript.NetServer.NSForeignKey](CRMScript.NetServer.NSForeignKey)
+**Returns:** [CRMScript.NetServer.NSForeignKey](/en/automation/crmscript/reference/CRMScript.NetServer.NSForeignKey)
 
 **Example:**
 

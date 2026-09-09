@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSync_BreakActorLinkRequest"></a> Class ErpSync\_BreakActorLinkRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ErpSync_BreakActorLinkRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ErpSync\_BreakActorLinkRequest](SuperOffice.WebApi.Data.ErpSync\_BreakActorLinkRequest.md)
+[ErpSync\_BreakActorLinkRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSync_BreakActorLinkRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public CrmActorType CrmActorType { get; set; }
 
 #### Property Value
 
- [CrmActorType](SuperOffice.WebApi.Data.CrmActorType.md)
+ [CrmActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.CrmActorType)
 
 ### <a id="SuperOffice_WebApi_Data_ErpSync_BreakActorLinkRequest_CrmRecordId"></a> CrmRecordId
 

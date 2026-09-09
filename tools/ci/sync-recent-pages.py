@@ -1,46 +1,37 @@
 #!/usr/bin/env python3
 """Regenerate the homepage's "what's new" list (issue #319).
 
-`index.mdx` carries the source-of-truth list in its own `recent_pages:`
-frontmatter (a small array of `{path, pinned?, since?, title?}` -- `since`
-is this repo's usual `MM.DD.YYYY` frontmatter date format; `title` is an
-optional override shown verbatim instead of the target page's own
-frontmatter title, e.g. for a page whose real title reads oddly out of
-context on a homepage list). This script:
+`index.mdx` carries the source-of-truth list in its own `recent_pages:` frontmatter (a small array of
+`{path, pinned?, since?, title?}`; `since` is this repo's usual `MM.DD.YYYY` frontmatter date format;
+`title` is an optional override shown verbatim instead of the target page's own frontmatter title,
+for example for a page whose real title reads oddly out of context on a homepage list). This script:
 
-  1. Auto-detects brand-new pages added by this PR under `en/` or
-     `integrations/` only (not the whole repo -- reference trees like
-     `database/`/`automation/crmscript/reference/` regenerate too often to
-     be a useful "what's new" signal) and adds them to the list, except
-     anything under GENERATED_TREE_PREFIXES (see below).
-  2. Stamps `since` with today's date on any entry that's missing it
-     (a freshly hand-added or auto-detected entry), and on any *pinned*
-     entry whose own target file was touched by this PR -- pinned pages
-     (e.g. the current release notes) should read as current, not stale,
+  1. Auto-detects brand-new pages added by this PR under `en/` or `integrations/` only (not the
+     whole repo; reference trees like `database/`/`automation/crmscript/reference/` regenerate too
+     often to be a useful "what's new" signal) and adds them to the list, except anything under
+     GENERATED_TREE_PREFIXES (see below).
+  2. Stamps `since` with today's date on any entry that's missing it (a freshly hand-added or
+     auto-detected entry), and on any *pinned* entry whose own target file was touched by this PR;
+     pinned pages (for example the current release notes) should read as current, not stale,
      whenever their content actually changes.
-  3. Drops any entry whose target has `generated: true` frontmatter, or
-     whose path falls under GENERATED_TREE_PREFIXES. The frontmatter
-     check alone isn't reliable: some generated reference trees (e.g.
-     `en/api/reference/webapi/`, `en/api/reference/restful/`) carry no
-     frontmatter block at all, so `generated: true` can never fire for
-     them (see #338, where hundreds of freshly-added WebAPI class-reference
-     pages under `en/api/reference/webapi/` -- frontmatter-less, "Added"
-     by that PR, and matching the plain `en/` auto-detect prefix -- wiped
-     out the homepage's curated "New content" list with raw generated
-     page paths as titles).
+  3. Drops any entry whose target has `generated: true` frontmatter, or whose path falls under
+     GENERATED_TREE_PREFIXES. The frontmatter check alone isn't reliable: some generated reference
+     trees (for example `en/api/reference/webapi/`, `en/api/reference/restful/`) carry no
+     frontmatter block at all, so `generated: true` can never fire for them (see #338, where
+     hundreds of freshly-added WebAPI class-reference pages under `en/api/reference/webapi/`,
+     frontmatter-less, "Added" by that PR, and matching the plain `en/` auto-detect prefix, wiped
+     out the homepage's curated "New content" list with raw generated page paths as titles).
   4. Drops non-pinned entries whose `since` is more than 120 days old.
   5. Caps the combined list at 7: pinned entries get guaranteed slots
      (they still count against the cap); the most recent eligible
      non-pinned entries fill whatever's left.
-  6. Writes the trimmed, `since`-refreshed list back into `index.mdx`'s
-     frontmatter, and a resolved copy (each entry's real page `title`
-     looked up and baked in) into the page body's own
-     `<RecentPages items={[...]} />` call -- passed as a literal prop
-     rather than fetched at runtime, since Mintlify's custom-component
-     sandbox has no JSON-import support and its static file server
-     doesn't serve arbitrary .json files (confirmed via `mint dev`: a
-     plain 404 for a root-level .json asset, even though .ico/.png at
-     the same level serve fine). See `components/recent-pages.jsx`.
+  6. Writes the trimmed, `since`-refreshed list back into `index.mdx`'s frontmatter, and a resolved
+     copy (each entry's real page `title` looked up and baked in) into the page body's own
+     `<RecentPages items={[...]} />` call, passed as a literal prop rather than fetched at runtime,
+     since Mintlify's custom-component sandbox has no JSON-import support and its static file server
+     doesn't serve arbitrary .json files (confirmed via `mint dev`: a plain 404 for a root-level
+     .json asset, even though .ico/.png at the same level serve fine). See
+     `components/recent-pages.jsx`.
 
 Modes:
   Default (no --apply): reports what would change, no writes.
@@ -58,6 +49,9 @@ import sys
 from datetime import datetime, timedelta
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib.repo_files import file_path_to_url  # noqa: E402
+
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 INDEX_PATH = REPO_ROOT / "index.mdx"
 
@@ -72,7 +66,7 @@ GENERATED_RE = re.compile(r"(?m)^generated:\s*true\s*$")
 MAX_TOTAL = 7
 MAX_AGE_DAYS = 120
 AUTO_DETECT_PREFIXES = ("en/", "integrations/")
-# Machine-generated reference trees -- regenerate too often, and often carry
+# Machine-generated reference trees: regenerate too often, and often carry
 # no frontmatter at all, to be a useful "what's new" signal or to reliably
 # self-report via `generated: true` (see #338).
 GENERATED_TREE_PREFIXES = (
@@ -112,13 +106,13 @@ def split_frontmatter(text):
 
 
 def parse_recent_pages_items(fm_text):
-    """Parse the `recent_pages:` YAML block. Fixed, narrow shape only --
-    a list of `{path, pinned?, since?, title?}` -- so a small hand-rolled
-    parser is enough; no need for a full YAML dependency this repo doesn't
-    otherwise use (see tools/README.md conventions). `title` is an optional
-    override -- when absent, the target page's own frontmatter `title` is
-    used (see get_page_title()); when present, it's shown verbatim instead
-    (e.g. "Marketing landing page" for a page whose real title is just
+    """Parse the `recent_pages:` YAML block. Fixed, narrow shape only, a list
+    of `{path, pinned?, since?, title?}`, so a small hand-rolled parser is
+    enough; no need for a full YAML dependency this repo doesn't otherwise
+    use (see tools/README.md conventions). `title` is an optional override;
+    when absent, the target page's own frontmatter `title` is used (see
+    get_page_title()); when present, it's shown verbatim instead (for
+    example "Marketing landing page" for a page whose real title is just
     "Marketing", or to tell two same-named sections apart)."""
     m = RECENT_PAGES_BLOCK_RE.search(fm_text)
     if not m:
@@ -198,15 +192,6 @@ def resolve_target_file(rel_url_path):
     return None
 
 
-def file_path_to_url(rel_file_path):
-    """Reverse of resolve_target_file, for auto-detected new files."""
-    p = Path(rel_file_path)
-    stem_path = p.with_suffix("")
-    if stem_path.name == "index":
-        stem_path = stem_path.parent
-    return "/" + stem_path.as_posix()
-
-
 def read_target_frontmatter(target_path):
     if target_path is None or not target_path.is_file():
         return None
@@ -268,7 +253,7 @@ def sync(base_ref, today_str):
     text, has_bom, uses_crlf = read_text_file(INDEX_PATH)
     parts = split_frontmatter(text)
     if not parts:
-        print("index.mdx has no frontmatter block -- nothing to do.", file=sys.stderr)
+        print("index.mdx has no frontmatter block; nothing to do.", file=sys.stderr)
         return None
     open_marker, fm, close_marker, rest = parts
 
@@ -343,7 +328,7 @@ def sync(base_ref, today_str):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--base-ref", required=True, help="Git ref to diff against (e.g. origin/main)")
+    parser.add_argument("--base-ref", required=True, help="Git ref to diff against (for example origin/main)")
     parser.add_argument("--apply", action="store_true", help="Write index.mdx (default: audit only)")
     parser.add_argument("--today", help="Override today's date as MM.DD.YYYY (for tests)")
     args = parser.parse_args()
@@ -363,7 +348,7 @@ def main():
             write_text_file(INDEX_PATH, result["new_index_text"], result["has_bom"], result["uses_crlf"])
             print("Updated index.mdx (recent_pages frontmatter + RecentPages call).")
         else:
-            print("Already up to date -- nothing to commit.")
+            print("Already up to date; nothing to commit.")
     else:
         print("Audit only (pass --apply to write index.mdx).")
 

@@ -8,4 +8,4 @@
 
   * **Kampanj**: Ange typ av utskick, t.ex. "nyhetsbrev" eller "lead-nurturing" eller ange ett specifikt kampanjnamn, som "vårrea-juni-21" eller "uppgraderingskampanj-v9".
 
-[1]: ../../../../tracked-links/learn/index#google
+[1]: /sv/marketing/tracked-links/learn/index#google

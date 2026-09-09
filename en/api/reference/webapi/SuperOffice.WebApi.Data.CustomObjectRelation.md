@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CustomObjectRelation"></a> Class CustomObjectRelation
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for CustomObjectRelation.
@@ -13,7 +13,7 @@ public class CustomObjectRelation
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CustomObjectRelation](SuperOffice.WebApi.Data.CustomObjectRelation.md)
+[CustomObjectRelation](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObjectRelation)
 
 #### Inherited Members
 
@@ -123,5 +123,5 @@ public virtual string RelationField { get; set; }
 
 ## See Also
 
-[CustomObjectAgent](SuperOffice.WebApi.Agents.CustomObjectAgent.md)
+[CustomObjectAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CustomObjectAgent)
 

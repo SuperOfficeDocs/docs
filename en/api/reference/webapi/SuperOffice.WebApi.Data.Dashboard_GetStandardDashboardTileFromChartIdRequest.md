@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Dashboard_GetStandardDashboardTileFromChartIdRequest"></a> Class Dashboard\_GetStandardDashboardTileFromChartIdRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Dashboard_GetStandardDashboardTileFromChartIdRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Dashboard\_GetStandardDashboardTileFromChartIdRequest](SuperOffice.WebApi.Data.Dashboard\_GetStandardDashboardTileFromChartIdRequest.md)
+[Dashboard\_GetStandardDashboardTileFromChartIdRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dashboard_GetStandardDashboardTileFromChartIdRequest)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_GetSupportedChangePasswordTypesRequest"></a> Class User\_GetSupportedChangePasswordTypesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_GetSupportedChangePasswordTypesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_GetSupportedChangePasswordTypesRequest](SuperOffice.WebApi.Data.User\_GetSupportedChangePasswordTypesRequest.md)
+[User\_GetSupportedChangePasswordTypesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_GetSupportedChangePasswordTypesRequest)
 
 #### Inherited Members
 

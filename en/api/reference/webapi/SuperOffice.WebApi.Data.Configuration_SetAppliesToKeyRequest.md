@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Configuration_SetAppliesToKeyRequest"></a> Class Configuration\_SetAppliesToKeyRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Configuration_SetAppliesToKeyRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Configuration\_SetAppliesToKeyRequest](SuperOffice.WebApi.Data.Configuration\_SetAppliesToKeyRequest.md)
+[Configuration\_SetAppliesToKeyRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_SetAppliesToKeyRequest)
 
 #### Inherited Members
 

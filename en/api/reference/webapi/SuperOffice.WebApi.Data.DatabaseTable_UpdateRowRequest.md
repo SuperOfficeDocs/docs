@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DatabaseTable_UpdateRowRequest"></a> Class DatabaseTable\_UpdateRowRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class DatabaseTable_UpdateRowRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[DatabaseTable\_UpdateRowRequest](SuperOffice.WebApi.Data.DatabaseTable\_UpdateRowRequest.md)
+[DatabaseTable\_UpdateRowRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.DatabaseTable_UpdateRowRequest)
 
 #### Inherited Members
 
@@ -60,5 +60,5 @@ public StringDictionary Values { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 

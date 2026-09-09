@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ActivityFilter"></a> Class ActivityFilter
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ActivityFilter.
@@ -13,13 +13,13 @@ public class ActivityFilter : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[ActivityFilter](SuperOffice.WebApi.Data.ActivityFilter.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[ActivityFilter](/en/api/reference/webapi/SuperOffice.WebApi.Data.ActivityFilter)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -50,7 +50,7 @@ public virtual SelectableMDOListItem[] AssociateList { get; set; }
 
 #### Property Value
 
- [SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]
+ [SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_ActivityFilter_FromDate"></a> FromDate
 
@@ -74,7 +74,7 @@ public virtual MDOListItem[] FutureDateList { get; set; }
 
 #### Property Value
 
- [MDOListItem](SuperOffice.WebApi.Data.MDOListItem.md)\[\]
+ [MDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.MDOListItem)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_ActivityFilter_GroupList"></a> GroupList
 
@@ -86,7 +86,7 @@ public virtual SelectableMDOListItem[] GroupList { get; set; }
 
 #### Property Value
 
- [SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]
+ [SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_ActivityFilter_ToDate"></a> ToDate
 
@@ -102,5 +102,5 @@ public virtual DateTime ToDate { get; set; }
 
 ## See Also
 
-[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md)
+[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent)
 

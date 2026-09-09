@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Quote_GetInUseQuoteLineConfigurationsRequest"></a> Class Quote\_GetInUseQuoteLineConfigurationsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Quote_GetInUseQuoteLineConfigurationsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Quote\_GetInUseQuoteLineConfigurationsRequest](SuperOffice.WebApi.Data.Quote\_GetInUseQuoteLineConfigurationsRequest.md)
+[Quote\_GetInUseQuoteLineConfigurationsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Quote_GetInUseQuoteLineConfigurationsRequest)
 
 #### Inherited Members
 

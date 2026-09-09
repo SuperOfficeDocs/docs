@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Previews_GetPreviewRequest"></a> Class Previews\_GetPreviewRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Previews_GetPreviewRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Previews\_GetPreviewRequest](SuperOffice.WebApi.Data.Previews\_GetPreviewRequest.md)
+[Previews\_GetPreviewRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Previews_GetPreviewRequest)
 
 #### Inherited Members
 

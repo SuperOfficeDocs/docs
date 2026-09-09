@@ -33,7 +33,7 @@ Adds a new quote attachment document to a sale type
 Integer AddSaleTypeQuoteAttachment(Integer saleTypeId, Integer documentId)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 **Example:**
 
@@ -52,7 +52,7 @@ Approves a quote version
 NSApproveRejectResponse ApproveQuoteVersion(Integer quoteVersionId, String approvedByText, Integer approvedByAssociateId, String approvalText)
 ```
 
-**Returns:** [CRMScript.NetServer.NSApproveRejectResponse](CRMScript.NetServer.NSApproveRejectResponse)
+**Returns:** [CRMScript.NetServer.NSApproveRejectResponse](/en/automation/crmscript/reference/CRMScript.NetServer.NSApproveRejectResponse)
 
 **Example:**
 
@@ -71,7 +71,7 @@ NSApproveRejectResponse res = agent.ApproveQuoteVersion(quoteVersionId, approved
 Bool CanConnectorProvideCapability(Integer quoteConnectionId, String capabilityName)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Can the connector provide the capability.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Can the connector provide the capability.
 
 **Example:**
 
@@ -90,7 +90,7 @@ Copies a quote alternative from the same sale and adds it to a version.
 NSQuoteAlternative CopyQuoteAlternative(Integer quoteVersionId, Integer quoteAlternativeId, String quoteAlternativeName)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteAlternative](CRMScript.NetServer.NSQuoteAlternative)
+**Returns:** [CRMScript.NetServer.NSQuoteAlternative](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteAlternative)
 
 **Example:**
 
@@ -110,7 +110,7 @@ Creates a copy of a PriceList in the SuperOffice database
 NSPriceList CopySuperOfficePriceList(Integer originalPriceListId, String newName, DateTime validFrom, DateTime validTo, Integer newCurrencyId, Bool convertCurrency)
 ```
 
-**Returns:** [CRMScript.NetServer.NSPriceList](CRMScript.NetServer.NSPriceList)
+**Returns:** [CRMScript.NetServer.NSPriceList](/en/automation/crmscript/reference/CRMScript.NetServer.NSPriceList)
 
 **Example:**
 
@@ -133,7 +133,7 @@ Creates a new quote on a sale.
 NSQuoteEntity CreateAndSaveQuote(Integer saleId, Integer connectionId, String firstAlternativeName)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteEntity](CRMScript.NetServer.NSQuoteEntity)
+**Returns:** [CRMScript.NetServer.NSQuoteEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteEntity)
 
 **Example:**
 
@@ -153,7 +153,7 @@ Creates a copy the active version with connected alternatives and quotelines fro
 NSQuoteEntity CreateAndSaveQuoteFromSale(Integer copyFromSaleId, Integer copyToSaleId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteEntity](CRMScript.NetServer.NSQuoteEntity)
+**Returns:** [CRMScript.NetServer.NSQuoteEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteEntity)
 
 **Example:**
 
@@ -172,7 +172,7 @@ Created a new NSQuoteVersion based on another NSQuoteVersion on the same Quote.
 NSQuoteVersion CreateAndSaveQuoteVersion(Integer quoteVersionId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteVersion](CRMScript.NetServer.NSQuoteVersion)
+**Returns:** [CRMScript.NetServer.NSQuoteVersion](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteVersion)
 
 **Example:**
 
@@ -190,7 +190,7 @@ Creates a new connection.
 NSQuoteConnection CreateConnectionFromConnectorName(String connectorName)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteConnection](CRMScript.NetServer.NSQuoteConnection)
+**Returns:** [CRMScript.NetServer.NSQuoteConnection](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteConnection)
 
 **Example:**
 
@@ -208,7 +208,7 @@ Sets default values into a new NSPriceList.
 NSPriceList CreateDefaultPriceList()
 ```
 
-**Returns:** [CRMScript.NetServer.NSPriceList](CRMScript.NetServer.NSPriceList)
+**Returns:** [CRMScript.NetServer.NSPriceList](/en/automation/crmscript/reference/CRMScript.NetServer.NSPriceList)
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
@@ -230,7 +230,7 @@ Sets default values into a new NSProduct.
 NSProduct CreateDefaultProduct()
 ```
 
-**Returns:** [CRMScript.NetServer.NSProduct](CRMScript.NetServer.NSProduct)
+**Returns:** [CRMScript.NetServer.NSProduct](/en/automation/crmscript/reference/CRMScript.NetServer.NSProduct)
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
@@ -252,7 +252,7 @@ Sets default values into a new NSQuoteAlternative.
 NSQuoteAlternative CreateDefaultQuoteAlternative()
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteAlternative](CRMScript.NetServer.NSQuoteAlternative)
+**Returns:** [CRMScript.NetServer.NSQuoteAlternative](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteAlternative)
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
@@ -274,7 +274,7 @@ Looks at the Quote version, related sale and sale type, and ensures that the cor
 NSQuoteVersionAttachment[] CreateOrUpdateQuoteVersionAttachments(Integer quoteVersionId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteVersionAttachment](CRMScript.NetServer.NSQuoteVersionAttachment)[]
+**Returns:** [CRMScript.NetServer.NSQuoteVersionAttachment](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteVersionAttachment)[]
 
 **Example:**
 
@@ -292,7 +292,7 @@ Creates a new quote alternative on a version.
 NSQuoteAlternative CreateQuoteAlternative(Integer quoteVersionId, String quoteAlternativeName, String quoteAlternativeDescription)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteAlternative](CRMScript.NetServer.NSQuoteAlternative)
+**Returns:** [CRMScript.NetServer.NSQuoteAlternative](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteAlternative)
 
 **Example:**
 
@@ -312,7 +312,7 @@ Creates a quoteline based on a product key.
 NSQuoteLine CreateQuoteLine(Integer quoteAlternativeId, String eRPProductKey)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteLine](CRMScript.NetServer.NSQuoteLine)
+**Returns:** [CRMScript.NetServer.NSQuoteLine](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteLine)
 
 **Example:**
 
@@ -331,7 +331,7 @@ Creates a quoteline based on a product.
 NSQuoteLine CreateQuoteLineFromProduct(Integer quoteAlternativeId, NSProduct product)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteLine](CRMScript.NetServer.NSQuoteLine)
+**Returns:** [CRMScript.NetServer.NSQuoteLine](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteLine)
 
 **Example:**
 
@@ -350,7 +350,7 @@ Marks a connection as deleted.
 Void DeleteConnection(Integer quoteConnectionId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -368,7 +368,7 @@ Deletes the NSPriceList
 Void DeletePriceList(Integer priceList)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -385,7 +385,7 @@ Deletes the NSProduct
 Void DeleteProduct(Integer product)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -402,7 +402,7 @@ Deletes a Quote
 Void DeleteQuote(Integer quoteId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## DeleteQuoteAlternative(Integer)
 
@@ -412,7 +412,7 @@ Deletes a quote alternative
 Void DeleteQuoteAlternative(Integer quoteAlternativeId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -430,7 +430,7 @@ Deletes the QuoteLine in the SuperOffice database
 Void DeleteQuoteLine(Integer quoteLineId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -448,7 +448,7 @@ Deletes the QuoteLines in the SuperOffice database
 Void DeleteQuoteLines(Integer[] quoteLineIds)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -466,7 +466,7 @@ Deletes the sale type quote attachment with the given ID
 Void DeleteSaleTypeQuoteAttachment(Integer saleTypeQuoteAttachmentId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## FindProduct(Integer,String,String)
 
@@ -476,7 +476,7 @@ Gets a product, from the ProductProvider
 NSProduct[] FindProduct(Integer quoteAlternativeId, String userInput, String priceListKey)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProduct](CRMScript.NetServer.NSProduct)[]
+**Returns:** [CRMScript.NetServer.NSProduct](/en/automation/crmscript/reference/CRMScript.NetServer.NSProduct)[]
 
 **Example:**
 
@@ -496,7 +496,7 @@ Generate all the documents required to send the Quote as an email to the prospec
 NSQuotePublishDocuments GenerateQuoteDocuments(Integer quoteVersionId, Integer emailBodyTemplateId, Bool attachMainDocument, Integer quotedProductsTemplateId, Bool includeAttachments, String rawMailSubject)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuotePublishDocuments](CRMScript.NetServer.NSQuotePublishDocuments)
+**Returns:** [CRMScript.NetServer.NSQuotePublishDocuments](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuotePublishDocuments)
 
 <Note>
 Quote version status is not changed by this method.
@@ -523,7 +523,7 @@ Gets the available active PriceLists in a specific currency.
 NSPriceList[] GetActivePriceLists(Integer quoteConnectionId, String currency)
 ```
 
-**Returns:** [CRMScript.NetServer.NSPriceList](CRMScript.NetServer.NSPriceList)[] - Will return empty array if there is no PriceList with the stated currency available.
+**Returns:** [CRMScript.NetServer.NSPriceList](/en/automation/crmscript/reference/CRMScript.NetServer.NSPriceList)[] - Will return empty array if there is no PriceList with the stated currency available.
 
 **Example:**
 
@@ -542,7 +542,7 @@ Gets the available active PriceLists in a specific currency.
 NSPriceList[] GetActivePriceListsByCurrencyId(Integer quoteConnectionId, Integer currencyId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSPriceList](CRMScript.NetServer.NSPriceList)[] - Will return empty array if there is no PriceList with the stated currency available.
+**Returns:** [CRMScript.NetServer.NSPriceList](/en/automation/crmscript/reference/CRMScript.NetServer.NSPriceList)[] - Will return empty array if there is no PriceList with the stated currency available.
 
 **Example:**
 
@@ -561,7 +561,7 @@ Gets all available connections. Some installed connections may not be available 
 NSQuoteConnection[] GetAllAvailableQuoteConnections()
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteConnection](CRMScript.NetServer.NSQuoteConnection)[]
+**Returns:** [CRMScript.NetServer.NSQuoteConnection](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteConnection)[]
 
 <Note>
 Use GetAllAvailableQuoteConnectionsWithPriceLists if you need the price lists on the connections as well.
@@ -582,7 +582,7 @@ Gets all available connections. Some installed connections may not be available 
 NSQuoteConnection[] GetAllAvailableQuoteConnectionsWithPriceLists()
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteConnection](CRMScript.NetServer.NSQuoteConnection)[]
+**Returns:** [CRMScript.NetServer.NSQuoteConnection](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteConnection)[]
 
 <Note>
 This is a heavy call
@@ -603,7 +603,7 @@ Gets all installed connections. Some installed connections may not be available 
 NSQuoteConnection[] GetAllInstalledQuoteConnections()
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteConnection](CRMScript.NetServer.NSQuoteConnection)[]
+**Returns:** [CRMScript.NetServer.NSQuoteConnection](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteConnection)[]
 
 **Example:**
 
@@ -620,7 +620,7 @@ Gets the all PriceLists in all currencies, including those inactive.
 NSPriceList[] GetAllPriceLists(Integer quoteConnectionId, String currency)
 ```
 
-**Returns:** [CRMScript.NetServer.NSPriceList](CRMScript.NetServer.NSPriceList)[] - Will return an empty array if there is no PriceList with the stated currency available.
+**Returns:** [CRMScript.NetServer.NSPriceList](/en/automation/crmscript/reference/CRMScript.NetServer.NSPriceList)[] - Will return an empty array if there is no PriceList with the stated currency available.
 
 **Example:**
 
@@ -639,7 +639,7 @@ Gets the all PriceLists in all currencies, including those inactive.
 NSPriceList[] GetAllPriceListsByCurrencyId(Integer quoteConnectionId, Integer currencyId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSPriceList](CRMScript.NetServer.NSPriceList)[] - Will return empty array if there is no PriceList available.
+**Returns:** [CRMScript.NetServer.NSPriceList](/en/automation/crmscript/reference/CRMScript.NetServer.NSPriceList)[] - Will return empty array if there is no PriceList available.
 
 **Example:**
 
@@ -658,7 +658,7 @@ Returns all the configuration fields
 NSQuoteLineConfiguration[] GetAllQuoteLineConfigurations()
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteLineConfiguration](CRMScript.NetServer.NSQuoteLineConfiguration)[]
+**Returns:** [CRMScript.NetServer.NSQuoteLineConfiguration](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteLineConfiguration)[]
 
 **Example:**
 
@@ -675,7 +675,7 @@ Used by ADMIN. Asks for metadata needed to populate admin dialog that takes in t
 Map GetConfigurationFields()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map)
 
 **Example:**
 
@@ -694,7 +694,7 @@ Returns the specified connection.
 NSQuoteConnection GetConnection(Integer quoteConnectionId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteConnection](CRMScript.NetServer.NSQuoteConnection)
+**Returns:** [CRMScript.NetServer.NSQuoteConnection](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteConnection)
 
 **Example:**
 
@@ -712,7 +712,7 @@ Returns the config fields for the connection.
 Map GetConnectionConfigFields(Integer quoteConnectionId)
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map)
 
 **Example:**
 
@@ -730,7 +730,7 @@ Returns all connections available for the specified user.
 NSQuoteConnection[] GetConnectionsForAssociate(Integer associateId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteConnection](CRMScript.NetServer.NSQuoteConnection)[]
+**Returns:** [CRMScript.NetServer.NSQuoteConnection](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteConnection)[]
 
 **Example:**
 
@@ -748,7 +748,7 @@ Returns an array of PluginResponseInfos for all failed connection initialization
 NSPluginResponse[] GetConnectionStartupErrors()
 ```
 
-**Returns:** [CRMScript.NetServer.NSPluginResponse](CRMScript.NetServer.NSPluginResponse)[]
+**Returns:** [CRMScript.NetServer.NSPluginResponse](/en/automation/crmscript/reference/CRMScript.NetServer.NSPluginResponse)[]
 
 **Example:**
 
@@ -765,7 +765,7 @@ Returns the PluginResponseInfo for the connection initialization.
 NSPluginResponse GetConnectionStartupResponse(Integer quoteConnectionId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSPluginResponse](CRMScript.NetServer.NSPluginResponse)
+**Returns:** [CRMScript.NetServer.NSPluginResponse](/en/automation/crmscript/reference/CRMScript.NetServer.NSPluginResponse)
 
 <Note>
 Does not initialize the connection, just returns what happened when initialize was called.
@@ -787,7 +787,7 @@ Gets a list of connector capabilities
 String[] GetConnectorCapabilities(Integer quoteConnectionId)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)[]
 
 **Example:**
 
@@ -805,7 +805,7 @@ Gets a list of all possible connector capabilities
 String[] GetConnectorCapabilityNames(Integer quoteConnectionId)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[]
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)[]
 
 **Example:**
 
@@ -823,7 +823,7 @@ Converts an XML string into an object representation.
 NSProductExtraDataField[] GetExtraInfo(String quoteLineExtraData)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProductExtraDataField](CRMScript.NetServer.NSProductExtraDataField)[]
+**Returns:** [CRMScript.NetServer.NSProductExtraDataField](/en/automation/crmscript/reference/CRMScript.NetServer.NSProductExtraDataField)[]
 
 **Example:**
 
@@ -841,7 +841,7 @@ Returns the configuration fields that should be visible in the GUI.
 NSQuoteLineConfiguration[] GetInUseQuoteLineConfigurations()
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteLineConfiguration](CRMScript.NetServer.NSQuoteLineConfiguration)[]
+**Returns:** [CRMScript.NetServer.NSQuoteLineConfiguration](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteLineConfiguration)[]
 
 **Example:**
 
@@ -858,7 +858,7 @@ Gets a base64-encoded data stream that is just the order confirmation document, 
 String GetOrderConfirmation(Integer quoteVersionId, Integer confirmationTemplateId)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -877,7 +877,7 @@ If there is a problem with a quoteline, the error description shall be placed in
 NSPluginUrlResponse GetOrderState(Integer quoteVersionId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSPluginUrlResponse](CRMScript.NetServer.NSPluginUrlResponse)
+**Returns:** [CRMScript.NetServer.NSPluginUrlResponse](/en/automation/crmscript/reference/CRMScript.NetServer.NSPluginUrlResponse)
 
 **Example:**
 
@@ -895,7 +895,7 @@ Gets an NSPriceList object.
 NSPriceList GetPriceList(Integer priceListId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSPriceList](CRMScript.NetServer.NSPriceList)
+**Returns:** [CRMScript.NetServer.NSPriceList](/en/automation/crmscript/reference/CRMScript.NetServer.NSPriceList)
 
 **Example:**
 
@@ -912,7 +912,7 @@ Gets a product with the given key
 NSProduct GetProduct(Integer quoteConnectionId, String eRPProductKey)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProduct](CRMScript.NetServer.NSProduct)
+**Returns:** [CRMScript.NetServer.NSProduct](/en/automation/crmscript/reference/CRMScript.NetServer.NSProduct)
 
 ## GetProductFromDbId(Integer)
 
@@ -922,7 +922,7 @@ Gets a product with the given database ID
 NSProduct GetProductFromDbId(Integer productId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProduct](CRMScript.NetServer.NSProduct)
+**Returns:** [CRMScript.NetServer.NSProduct](/en/automation/crmscript/reference/CRMScript.NetServer.NSProduct)
 
 **Example:**
 
@@ -940,7 +940,7 @@ Gets an image connected to a product, from the ProductProvider
 String GetProductImage(Integer quoteConnectionId, String eRPProductKey, Integer rank)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 **Example:**
 
@@ -960,7 +960,7 @@ Gets an NSQuote
 NSQuote GetQuote(Integer quoteId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuote](CRMScript.NetServer.NSQuote)
+**Returns:** [CRMScript.NetServer.NSQuote](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuote)
 
 **Example:**
 
@@ -978,7 +978,7 @@ Gets an NSQuoteAlternative object.
 NSQuoteAlternative GetQuoteAlternative(Integer quoteAlternativeId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteAlternative](CRMScript.NetServer.NSQuoteAlternative)
+**Returns:** [CRMScript.NetServer.NSQuoteAlternative](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteAlternative)
 
 **Example:**
 
@@ -995,7 +995,7 @@ Gets all quote alternatives for a quote version
 NSQuoteAlternative[] GetQuoteAlternatives(Integer quoteVersionId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteAlternative](CRMScript.NetServer.NSQuoteAlternative)[]
+**Returns:** [CRMScript.NetServer.NSQuoteAlternative](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteAlternative)[]
 
 **Example:**
 
@@ -1013,7 +1013,7 @@ Gets a Quote
 NSQuoteEntity GetQuoteEntity(Integer quoteId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteEntity](CRMScript.NetServer.NSQuoteEntity)
+**Returns:** [CRMScript.NetServer.NSQuoteEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteEntity)
 
 **Example:**
 
@@ -1031,7 +1031,7 @@ Gets a Quote for a sale
 NSQuoteEntity GetQuoteEntityFromSaleId(Integer saleId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteEntity](CRMScript.NetServer.NSQuoteEntity)
+**Returns:** [CRMScript.NetServer.NSQuoteEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteEntity)
 
 **Example:**
 
@@ -1049,7 +1049,7 @@ Gets an NSQuote for a sale
 NSQuote GetQuoteFromSaleId(Integer saleId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuote](CRMScript.NetServer.NSQuote)
+**Returns:** [CRMScript.NetServer.NSQuote](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuote)
 
 **Example:**
 
@@ -1067,7 +1067,7 @@ Gets QuoteLine from database
 NSQuoteLine GetQuoteLine(Integer quoteLineId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteLine](CRMScript.NetServer.NSQuoteLine)
+**Returns:** [CRMScript.NetServer.NSQuoteLine](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteLine)
 
 **Example:**
 
@@ -1085,7 +1085,7 @@ Returns the configuration field with the given ID
 NSQuoteLineConfiguration GetQuoteLineConfiguration(Integer quoteLineConfigurationId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteLineConfiguration](CRMScript.NetServer.NSQuoteLineConfiguration)
+**Returns:** [CRMScript.NetServer.NSQuoteLineConfiguration](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteLineConfiguration)
 
 **Example:**
 
@@ -1103,7 +1103,7 @@ Returns the configuration field with the given field name
 NSQuoteLineConfiguration GetQuoteLineConfigurationFromFieldName(String fieldName)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteLineConfiguration](CRMScript.NetServer.NSQuoteLineConfiguration)
+**Returns:** [CRMScript.NetServer.NSQuoteLineConfiguration](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteLineConfiguration)
 
 **Example:**
 
@@ -1121,7 +1121,7 @@ Gets an image connected to a quoteline, either from the ERPProvider or from the 
 NSImage GetQuoteLineImage(Integer quoteLineId, Integer rank)
 ```
 
-**Returns:** [CRMScript.NetServer.NSImage](CRMScript.NetServer.NSImage)
+**Returns:** [CRMScript.NetServer.NSImage](/en/automation/crmscript/reference/CRMScript.NetServer.NSImage)
 
 **Example:**
 
@@ -1140,7 +1140,7 @@ Gets all QuoteLines from an alternative
 NSQuoteLine[] GetQuoteLines(Integer quoteAlternativeId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteLine](CRMScript.NetServer.NSQuoteLine)[]
+**Returns:** [CRMScript.NetServer.NSQuoteLine](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteLine)[]
 
 **Example:**
 
@@ -1158,7 +1158,7 @@ Gets a named list from the connector.
 NSQuoteListItem[] GetQuoteList(String quoteListType)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteListItem](CRMScript.NetServer.NSQuoteListItem)[] - Array of QuoteListItems; NULL if the given list is not supported.
+**Returns:** [CRMScript.NetServer.NSQuoteListItem](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteListItem)[] - Array of QuoteListItems; NULL if the given list is not supported.
 
 **Example:**
 
@@ -1176,7 +1176,7 @@ Gets an NSQuoteVersion
 NSQuoteVersion GetQuoteVersion(Integer quoteVersionId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteVersion](CRMScript.NetServer.NSQuoteVersion)
+**Returns:** [CRMScript.NetServer.NSQuoteVersion](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteVersion)
 
 **Example:**
 
@@ -1194,7 +1194,7 @@ Gets all quote versions for a sale
 NSQuoteVersion[] GetQuoteVersions(Integer quoteId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteVersion](CRMScript.NetServer.NSQuoteVersion)[]
+**Returns:** [CRMScript.NetServer.NSQuoteVersion](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteVersion)[]
 
 **Example:**
 
@@ -1212,7 +1212,7 @@ Gets all button states for the Quote version dialog.
 NSQuoteVersionWorkflowState GetQuoteVersionWorkflowButtonStates(Integer quoteVersionId, Integer quoteAlternativeId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteVersionWorkflowState](CRMScript.NetServer.NSQuoteVersionWorkflowState)
+**Returns:** [CRMScript.NetServer.NSQuoteVersionWorkflowState](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteVersionWorkflowState)
 
 **Example:**
 
@@ -1231,7 +1231,7 @@ Gets state icon and name for the Quote version dialog header.
 NSQuoteVersionButtonState GetQuoteVersionWorkflowImageState(Integer quoteVersionId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteVersionButtonState](CRMScript.NetServer.NSQuoteVersionButtonState)
+**Returns:** [CRMScript.NetServer.NSQuoteVersionButtonState](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteVersionButtonState)
 
 **Example:**
 
@@ -1249,7 +1249,7 @@ Gets all button states for the Quote version dialog. Packages ImageState, Button
 NSQuoteVersionWorkflowState GetQuoteVersionWorkflowState(Integer quoteVersionId, Integer quoteAlternativeId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteVersionWorkflowState](CRMScript.NetServer.NSQuoteVersionWorkflowState)
+**Returns:** [CRMScript.NetServer.NSQuoteVersionWorkflowState](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteVersionWorkflowState)
 
 <Note>
 Collects most important warnings/errors from across all quote lines/alternatives in this quote version.
@@ -1272,7 +1272,7 @@ Gets status info for the Quote version dialog header.
 NSQuoteVersionStatusInformation GetQuoteVersionWorkflowStatusInfo(Integer quoteVersionId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteVersionStatusInformation](CRMScript.NetServer.NSQuoteVersionStatusInformation)
+**Returns:** [CRMScript.NetServer.NSQuoteVersionStatusInformation](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteVersionStatusInformation)
 
 <Note>
 Collects most important warnings/errors from across all quote lines/alternatives in this quote version.
@@ -1292,7 +1292,7 @@ NSQuoteVersionStatusInformation res = agent.GetQuoteVersionWorkflowStatusInfo(qu
 NSPluginResponse HasConnections()
 ```
 
-**Returns:** [CRMScript.NetServer.NSPluginResponse](CRMScript.NetServer.NSPluginResponse) - Whether or not the system has any connections available for this user.
+**Returns:** [CRMScript.NetServer.NSPluginResponse](/en/automation/crmscript/reference/CRMScript.NetServer.NSPluginResponse) - Whether or not the system has any connections available for this user.
 
 **Example:**
 
@@ -1309,7 +1309,7 @@ Toggles the 'included' state of a quote version attachment
 Bool IncludeQuoteVersionAttachment(Integer quoteVersionId, Integer documentId, Bool include)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 <Note>
 Throws exceptions if called on locked versions
@@ -1333,7 +1333,7 @@ Moves quote line rank up/down
 Void MoveQuoteLine(Integer quoteLineId, Bool direction)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1352,7 +1352,7 @@ Places an order in the ERP system.
 NSPluginUrlResponse PlaceOrder(Integer quoteAlternativeId, Bool markSaleAsSold, String poNumber, String orderComment, String culture)
 ```
 
-**Returns:** [CRMScript.NetServer.NSPluginUrlResponse](CRMScript.NetServer.NSPluginUrlResponse)
+**Returns:** [CRMScript.NetServer.NSPluginUrlResponse](/en/automation/crmscript/reference/CRMScript.NetServer.NSPluginUrlResponse)
 
 **Example:**
 
@@ -1374,7 +1374,7 @@ When the user changes one or more values in a quoteline or a quoteAlternative, t
 NSQuoteAlternativeRecalculated RecalculateQuoteAlternative(Integer quoteAlternative)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteAlternativeRecalculated](CRMScript.NetServer.NSQuoteAlternativeRecalculated)
+**Returns:** [CRMScript.NetServer.NSQuoteAlternativeRecalculated](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteAlternativeRecalculated)
 
 **Example:**
 
@@ -1392,7 +1392,7 @@ When the user changes one or more values in a quoteline, the connector gets to c
 NSQuoteLine RecalculateQuoteLine(NSQuoteLine quoteLine, String[] changedFields)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteLine](CRMScript.NetServer.NSQuoteLine)
+**Returns:** [CRMScript.NetServer.NSQuoteLine](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteLine)
 
 **Example:**
 
@@ -1411,7 +1411,7 @@ Rejects a quote version
 NSApproveRejectResponse RejectQuoteVersion(Integer quoteVersionId, String rejectedByText, Integer rejectedByAssociateId, String rejectionText)
 ```
 
-**Returns:** [CRMScript.NetServer.NSApproveRejectResponse](CRMScript.NetServer.NSApproveRejectResponse)
+**Returns:** [CRMScript.NetServer.NSApproveRejectResponse](/en/automation/crmscript/reference/CRMScript.NetServer.NSApproveRejectResponse)
 
 **Example:**
 
@@ -1432,7 +1432,7 @@ Removes a product from the database
 Void RemoveProduct(Integer productId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## RestoreConnection(Integer)
 
@@ -1442,7 +1442,7 @@ Restores a connection marked as deleted.
 Void RestoreConnection(Integer quoteConnectionId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1460,7 +1460,7 @@ Saves a connection to the database.
 NSQuoteConnection SaveConnection(NSQuoteConnection connection)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteConnection](CRMScript.NetServer.NSQuoteConnection)
+**Returns:** [CRMScript.NetServer.NSQuoteConnection](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteConnection)
 
 **Example:**
 
@@ -1478,7 +1478,7 @@ Saves the connection config fields.
 Map SaveConnectionConfigFields(Integer quoteConnectionId, Map connectionConfigFields)
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map)
 
 **Example:**
 
@@ -1497,7 +1497,7 @@ Updates the existing NSPriceList or creates a new NSPriceList if the id paramete
 NSPriceList SavePriceList(NSPriceList priceList)
 ```
 
-**Returns:** [CRMScript.NetServer.NSPriceList](CRMScript.NetServer.NSPriceList)
+**Returns:** [CRMScript.NetServer.NSPriceList](/en/automation/crmscript/reference/CRMScript.NetServer.NSPriceList)
 
 **Example:**
 
@@ -1515,7 +1515,7 @@ Updates the existing NSProduct or creates a new NSProduct if the id parameter is
 NSProduct SaveProduct(NSProduct product)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProduct](CRMScript.NetServer.NSProduct)
+**Returns:** [CRMScript.NetServer.NSProduct](/en/automation/crmscript/reference/CRMScript.NetServer.NSProduct)
 
 **Example:**
 
@@ -1533,7 +1533,7 @@ Saves an NSQuote
 NSQuote SaveQuote(NSQuote quote)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuote](CRMScript.NetServer.NSQuote)
+**Returns:** [CRMScript.NetServer.NSQuote](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuote)
 
 **Example:**
 
@@ -1551,7 +1551,7 @@ Updates the existing NSQuoteAlternative or creates a new NSQuoteAlternative if t
 NSQuoteAlternative SaveQuoteAlternative(NSQuoteAlternative quoteAlternative)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteAlternative](CRMScript.NetServer.NSQuoteAlternative)
+**Returns:** [CRMScript.NetServer.NSQuoteAlternative](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteAlternative)
 
 **Example:**
 
@@ -1569,7 +1569,7 @@ Saves an NSQuoteEntity.
 NSQuoteEntity SaveQuoteEntity(NSQuoteEntity quoteEntity)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteEntity](CRMScript.NetServer.NSQuoteEntity)
+**Returns:** [CRMScript.NetServer.NSQuoteEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteEntity)
 
 <Note>
 Versions and alternatives will not be saved by this call.
@@ -1591,7 +1591,7 @@ Saves the NSQuoteLine in the SuperOffice database
 NSQuoteLine SaveQuoteLine(NSQuoteLine quoteLine)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteLine](CRMScript.NetServer.NSQuoteLine)
+**Returns:** [CRMScript.NetServer.NSQuoteLine](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteLine)
 
 **Example:**
 
@@ -1609,7 +1609,7 @@ Saves an NSQuoteLineConfiguration object. It is not possible to add a new config
 NSQuoteLineConfiguration SaveQuoteLineConfiguration(NSQuoteLineConfiguration quoteLineConfiguration)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteLineConfiguration](CRMScript.NetServer.NSQuoteLineConfiguration)
+**Returns:** [CRMScript.NetServer.NSQuoteLineConfiguration](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteLineConfiguration)
 
 **Example:**
 
@@ -1627,7 +1627,7 @@ Saves a collection of QuoteLineConfigurations. It is not possible to add a new c
 NSQuoteLineConfiguration[] SaveQuoteLineConfigurations(NSQuoteLineConfiguration[] quoteLineConfigurations)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteLineConfiguration](CRMScript.NetServer.NSQuoteLineConfiguration)[]
+**Returns:** [CRMScript.NetServer.NSQuoteLineConfiguration](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteLineConfiguration)[]
 
 **Example:**
 
@@ -1645,7 +1645,7 @@ Saves the image connected to a quoteline in the SuperOffice database
 Void SaveQuoteLineImage(Integer quoteLineId, NSImage image, Integer rank)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -1665,7 +1665,7 @@ Saves the QuoteLines in the SuperOffice database
 NSQuoteLine[] SaveQuoteLines(NSQuoteLine[] quoteLines)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteLine](CRMScript.NetServer.NSQuoteLine)[]
+**Returns:** [CRMScript.NetServer.NSQuoteLine](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteLine)[]
 
 **Example:**
 
@@ -1683,7 +1683,7 @@ Saves a quote version
 NSQuoteVersion SaveQuoteVersion(NSQuoteVersion quoteVersion)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteVersion](CRMScript.NetServer.NSQuoteVersion)
+**Returns:** [CRMScript.NetServer.NSQuoteVersion](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteVersion)
 
 **Example:**
 
@@ -1701,7 +1701,7 @@ Save the quote version number if it is valid
 Bool SaveQuoteVersionNumber(Integer quoteVersionId, String number)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 **Example:**
 
@@ -1720,7 +1720,7 @@ Sends the quote to the user's customer.
 NSPluginUrlResponse SendQuoteVersion(Integer quoteVersionId, DateTime expiryDate, DateTime followupDate, String followupText, String culture)
 ```
 
-**Returns:** [CRMScript.NetServer.NSPluginUrlResponse](CRMScript.NetServer.NSPluginUrlResponse)
+**Returns:** [CRMScript.NetServer.NSPluginUrlResponse](/en/automation/crmscript/reference/CRMScript.NetServer.NSPluginUrlResponse)
 
 <Note>
 More parameters to be added later...
@@ -1746,7 +1746,7 @@ Tests if the connection data is sufficient to get a connection with the ERP syst
 NSPluginResponse TestConnection(String connectorName, Map connectionData)
 ```
 
-**Returns:** [CRMScript.NetServer.NSPluginResponse](CRMScript.NetServer.NSPluginResponse) - how the test went.
+**Returns:** [CRMScript.NetServer.NSPluginResponse](/en/automation/crmscript/reference/CRMScript.NetServer.NSPluginResponse) - how the test went.
 
 <Note>
 Used by the Admin clients
@@ -1769,7 +1769,7 @@ Toggles if the product is in assortment or not
 Void ToggleProductInAssortment(Integer productId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## ToggleQuoteVersionAttachmentIncluded(Integer)
 
@@ -1779,7 +1779,7 @@ Toggle the 'included' state of a quote version attachment
 Bool ToggleQuoteVersionAttachmentIncluded(Integer quoteVersionAttachmentId)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 **Example:**
 
@@ -1797,7 +1797,7 @@ Toggles the 'default included' state of a sale type quote attachment
 Bool ToggleSaleTypeQuoteAttachmentDefaultIncluded(Integer saleTypeQuoteAttachmentId)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 **Example:**
 
@@ -1815,7 +1815,7 @@ Updates price on the all the quote lines for each alternative in the current quo
 NSQuoteVersionValidated UpdateQuoteVersionPrices(Integer quoteVersionId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteVersionValidated](CRMScript.NetServer.NSQuoteVersionValidated)
+**Returns:** [CRMScript.NetServer.NSQuoteVersionValidated](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteVersionValidated)
 
 **Example:**
 
@@ -1833,7 +1833,7 @@ When the user changes one or more values in a quoteline or a quoteAlternative, t
 NSQuoteVersionValidated ValidateQuoteVersion(Integer quoteVersionId, Integer action)
 ```
 
-**Returns:** [CRMScript.NetServer.NSQuoteVersionValidated](CRMScript.NetServer.NSQuoteVersionValidated)
+**Returns:** [CRMScript.NetServer.NSQuoteVersionValidated](/en/automation/crmscript/reference/CRMScript.NetServer.NSQuoteVersionValidated)
 
 <Note>
 RecalculateQuoteAlternative should typically validate all alternatives, set values in extrafields, and set the state in the version.

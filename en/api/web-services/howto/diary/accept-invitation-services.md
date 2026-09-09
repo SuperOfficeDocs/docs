@@ -56,5 +56,5 @@ The reason that the details of an invitation with `appointmentId` 150 is not sho
 [1]: ./get-invitations-services
 [2]: ../../../../diary/learn/invitation/index
 [3]: ../../index
-[4]: ../../../reference/restful/agent/Appointment_Agent/index
+[4]: ../../../reference/restful/agent/index
 [5]: ../../../archive-providers/reference/invitation

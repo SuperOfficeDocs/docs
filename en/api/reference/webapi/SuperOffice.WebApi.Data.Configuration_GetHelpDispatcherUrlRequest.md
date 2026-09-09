@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Configuration_GetHelpDispatcherUrlRequest"></a> Class Configuration\_GetHelpDispatcherUrlRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Configuration_GetHelpDispatcherUrlRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Configuration\_GetHelpDispatcherUrlRequest](SuperOffice.WebApi.Data.Configuration\_GetHelpDispatcherUrlRequest.md)
+[Configuration\_GetHelpDispatcherUrlRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_GetHelpDispatcherUrlRequest)
 
 #### Inherited Members
 

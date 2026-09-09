@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_ValidateTicketRelationsRequest"></a> Class Ticket\_ValidateTicketRelationsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_ValidateTicketRelationsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_ValidateTicketRelationsRequest](SuperOffice.WebApi.Data.Ticket\_ValidateTicketRelationsRequest.md)
+[Ticket\_ValidateTicketRelationsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_ValidateTicketRelationsRequest)
 
 #### Inherited Members
 
@@ -50,7 +50,7 @@ public TicketRelationType RelationType { get; set; }
 
 #### Property Value
 
- [TicketRelationType](SuperOffice.WebApi.Data.TicketRelationType.md)
+ [TicketRelationType](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationType)
 
 ### <a id="SuperOffice_WebApi_Data_Ticket_ValidateTicketRelationsRequest_SourceTicketIds"></a> SourceTicketIds
 

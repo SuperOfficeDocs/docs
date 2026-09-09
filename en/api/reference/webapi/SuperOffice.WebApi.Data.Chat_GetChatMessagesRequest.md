@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Chat_GetChatMessagesRequest"></a> Class Chat\_GetChatMessagesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Chat_GetChatMessagesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Chat\_GetChatMessagesRequest](SuperOffice.WebApi.Data.Chat\_GetChatMessagesRequest.md)
+[Chat\_GetChatMessagesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Chat_GetChatMessagesRequest)
 
 #### Inherited Members
 

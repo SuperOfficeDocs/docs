@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ForeignSystem_GetAllForeignKeysOnEntityRequest"></a> Class ForeignSystem\_GetAllForeignKeysOnEntityRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ForeignSystem_GetAllForeignKeysOnEntityRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ForeignSystem\_GetAllForeignKeysOnEntityRequest](SuperOffice.WebApi.Data.ForeignSystem\_GetAllForeignKeysOnEntityRequest.md)
+[ForeignSystem\_GetAllForeignKeysOnEntityRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignSystem_GetAllForeignKeysOnEntityRequest)
 
 #### Inherited Members
 

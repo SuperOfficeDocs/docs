@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_GetPrioritiesRequest"></a> Class List\_GetPrioritiesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_GetPrioritiesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_GetPrioritiesRequest](SuperOffice.WebApi.Data.List\_GetPrioritiesRequest.md)
+[List\_GetPrioritiesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_GetPrioritiesRequest)
 
 #### Inherited Members
 

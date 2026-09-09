@@ -1,6 +1,6 @@
 # Interface IPhoneListAgent {#SuperOffice_WebApi_Agents_IPhoneListAgent}
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Collection of all services for searching for person or contact (company) phone numbers.
@@ -11,7 +11,7 @@ public interface IPhoneListAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -30,7 +30,7 @@ Task<int> AddToFavoritesAsync(int contactId, RequestOptions requestOptions = nul
 
 The contact id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -54,13 +54,13 @@ Task<PhoneListItem[]> GetContactPhonesAsync(int contactId, RequestOptions reques
 
 The contact id
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PhoneListItem](SuperOffice.WebApi.Data.PhoneListItem.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PhoneListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneListItem)\[\]\&gt;
 
 The contacts phone list.
 
@@ -78,13 +78,13 @@ Task<PhoneListItem[]> GetDepartmentPhonesAsync(int departmentId, RequestOptions 
 
 The department to get the phone list for
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PhoneListItem](SuperOffice.WebApi.Data.PhoneListItem.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PhoneListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneListItem)\[\]\&gt;
 
 The department phone list
 
@@ -98,13 +98,13 @@ Task<PhoneListItem[]> GetFavoritesPhonesAsync(RequestOptions requestOptions = nu
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PhoneListItem](SuperOffice.WebApi.Data.PhoneListItem.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PhoneListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneListItem)\[\]\&gt;
 
 The favorite contact phone list
 
@@ -118,13 +118,13 @@ Task<PhoneListPreferences> GetPreferencesAsync(RequestOptions requestOptions = n
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PhoneListPreferences](SuperOffice.WebApi.Data.PhoneListPreferences.md)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PhoneListPreferences](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneListPreferences)\&gt;
 
 The Phone List Preferences
 
@@ -142,13 +142,13 @@ Task<PhoneListItem[]> SearchAsync(string searchString, RequestOptions requestOpt
 
 The search string
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PhoneListItem](SuperOffice.WebApi.Data.PhoneListItem.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PhoneListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneListItem)\[\]\&gt;
 
 The resulting phone list
 
@@ -166,17 +166,17 @@ Task<PhoneListItem[]> SearchWithPreferencesAsync(string searchString, PhoneListP
 
 The search string.
 
-`preferences` [PhoneListPreferences](SuperOffice.WebApi.Data.PhoneListPreferences.md)
+`preferences` [PhoneListPreferences](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneListPreferences)
 
 The search preferences
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PhoneListItem](SuperOffice.WebApi.Data.PhoneListItem.md)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PhoneListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneListItem)\[\]\&gt;
 
 The resulting phone list.
 
@@ -190,11 +190,11 @@ Task SetPreferencesAsync(PhoneListPreferences preferences, RequestOptions reques
 
 #### Parameters
 
-`preferences` [PhoneListPreferences](SuperOffice.WebApi.Data.PhoneListPreferences.md)
+`preferences` [PhoneListPreferences](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneListPreferences)
 
 The preference that is set as user preferences
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Marketing_GetUserBlocksRequest"></a> Class Marketing\_GetUserBlocksRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Marketing_GetUserBlocksRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Marketing\_GetUserBlocksRequest](SuperOffice.WebApi.Data.Marketing\_GetUserBlocksRequest.md)
+[Marketing\_GetUserBlocksRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Marketing_GetUserBlocksRequest)
 
 #### Inherited Members
 

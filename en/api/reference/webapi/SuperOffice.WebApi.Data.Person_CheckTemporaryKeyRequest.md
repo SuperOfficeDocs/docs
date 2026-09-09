@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Person_CheckTemporaryKeyRequest"></a> Class Person\_CheckTemporaryKeyRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Person_CheckTemporaryKeyRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Person\_CheckTemporaryKeyRequest](SuperOffice.WebApi.Data.Person\_CheckTemporaryKeyRequest.md)
+[Person\_CheckTemporaryKeyRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person_CheckTemporaryKeyRequest)
 
 #### Inherited Members
 

@@ -17,6 +17,17 @@ text-splicing a fragment. Since the modular-config split, this file is a
 bare JSON array (docs.json only holds a $ref pointer to it) - every field
 within each redirect entry is left exactly as-is; only ordering changes.
 
+PINNED_FIRST_SOURCES (see #424): a handful of redirect sources depend on
+matching before any other rule in the array - Mintlify evaluates redirects
+in order, and a broader rule earlier in the array can shadow (or, worse,
+get shadowed by) one later on. `/:path*/index.html` is the first such case:
+it strips `.html` off every `index.html` request repo-wide, and needs to run
+before any wildcard rule that might otherwise catch the same URL first. This
+script excludes those sources from sorting entirely and always re-emits them
+at the very front, in their original relative order, ahead of the
+alphabetically-sorted remainder - so a routine maintenance run can never
+silently move one out of position.
+
 Usage:
     Sort in place:
         python tools/sort-redirects.py config/redirects.json
@@ -32,6 +43,12 @@ import argparse
 import json
 import sys
 
+# Redirect sources that must always stay first, in this exact order - see
+# the module docstring. Never let the alphabetical sort reorder these.
+PINNED_FIRST_SOURCES = [
+    "/:path*/index.html",
+]
+
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -43,7 +60,11 @@ def main():
     with open(args.redirects_json, encoding="utf-8") as f:
         redirects = json.load(f)
 
-    sorted_redirects = sorted(redirects, key=lambda r: r["source"])
+    pinned = [r for r in redirects if r["source"] in PINNED_FIRST_SOURCES]
+    pinned.sort(key=lambda r: PINNED_FIRST_SOURCES.index(r["source"]))
+    rest = [r for r in redirects if r["source"] not in PINNED_FIRST_SOURCES]
+
+    sorted_redirects = pinned + sorted(rest, key=lambda r: r["source"])
 
     moved = [(i, e["source"]) for i, (e, s) in enumerate(zip(redirects, sorted_redirects)) if e is not s]
 

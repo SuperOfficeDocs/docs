@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ModuleLicense"></a> Class ModuleLicense
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ModuleLicense.
@@ -13,7 +13,7 @@ public class ModuleLicense
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ModuleLicense](SuperOffice.WebApi.Data.ModuleLicense.md)
+[ModuleLicense](/en/api/reference/webapi/SuperOffice.WebApi.Data.ModuleLicense)
 
 #### Inherited Members
 
@@ -49,11 +49,11 @@ public UserType? AllowedUserType { get; set; }
 
 #### Property Value
 
- [UserType](SuperOffice.WebApi.Data.UserType.md)?
+ [UserType](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserType)?
 
 #### See Also
 
-[ModuleLicense](SuperOffice.WebApi.Data.ModuleLicense.md).[AllowedUserType\_String](SuperOffice.WebApi.Data.ModuleLicense.md\#SuperOffice\_WebApi\_Data\_ModuleLicense\_AllowedUserType\_String)
+[ModuleLicense](/en/api/reference/webapi/SuperOffice.WebApi.Data.ModuleLicense).[AllowedUserType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ModuleLicense#SuperOffice_WebApi_Data_ModuleLicense_AllowedUserType_String)
 
 ### <a id="SuperOffice_WebApi_Data_ModuleLicense_AllowedUserType_String"></a> AllowedUserType\_String
 
@@ -71,7 +71,7 @@ public string AllowedUserType_String { get; set; }
 
 #### See Also
 
-[ModuleLicense](SuperOffice.WebApi.Data.ModuleLicense.md).[AllowedUserType](SuperOffice.WebApi.Data.ModuleLicense.md\#SuperOffice\_WebApi\_Data\_ModuleLicense\_AllowedUserType)
+[ModuleLicense](/en/api/reference/webapi/SuperOffice.WebApi.Data.ModuleLicense).[AllowedUserType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ModuleLicense#SuperOffice_WebApi_Data_ModuleLicense_AllowedUserType)
 
 ### <a id="SuperOffice_WebApi_Data_ModuleLicense_ExtraFlags"></a> ExtraFlags
 
@@ -121,11 +121,11 @@ public LicenseType? LicenseType { get; set; }
 
 #### Property Value
 
- [LicenseType](SuperOffice.WebApi.Data.LicenseType.md)?
+ [LicenseType](/en/api/reference/webapi/SuperOffice.WebApi.Data.LicenseType)?
 
 #### See Also
 
-[ModuleLicense](SuperOffice.WebApi.Data.ModuleLicense.md).[LicenseType\_String](SuperOffice.WebApi.Data.ModuleLicense.md\#SuperOffice\_WebApi\_Data\_ModuleLicense\_LicenseType\_String)
+[ModuleLicense](/en/api/reference/webapi/SuperOffice.WebApi.Data.ModuleLicense).[LicenseType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ModuleLicense#SuperOffice_WebApi_Data_ModuleLicense_LicenseType_String)
 
 ### <a id="SuperOffice_WebApi_Data_ModuleLicense_LicenseType_String"></a> LicenseType\_String
 
@@ -143,7 +143,7 @@ public string LicenseType_String { get; set; }
 
 #### See Also
 
-[ModuleLicense](SuperOffice.WebApi.Data.ModuleLicense.md).[LicenseType](SuperOffice.WebApi.Data.ModuleLicense.md\#SuperOffice\_WebApi\_Data\_ModuleLicense\_LicenseType)
+[ModuleLicense](/en/api/reference/webapi/SuperOffice.WebApi.Data.ModuleLicense).[LicenseType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ModuleLicense#SuperOffice_WebApi_Data_ModuleLicense_LicenseType)
 
 ### <a id="SuperOffice_WebApi_Data_ModuleLicense_ModuleDescription"></a> ModuleDescription
 
@@ -267,5 +267,5 @@ public virtual bool Unrestricted { get; set; }
 
 ## See Also
 
-[LicenseAgent](SuperOffice.WebApi.Agents.LicenseAgent.md)
+[LicenseAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.LicenseAgent)
 

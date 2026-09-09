@@ -31,7 +31,7 @@ Initializes a new instance of the NSSignedPublicKey class.
 DateTime GetExpiryDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Date when the signature expires. No Timezone.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Date when the signature expires. No Timezone.
 
 **Example:**
 
@@ -46,7 +46,7 @@ DateTime expiryDate = thing.GetExpiryDate();
 NSDSAParameters GetKey()
 ```
 
-**Returns:** [CRMScript.NetServer.NSDSAParameters](CRMScript.NetServer.NSDSAParameters) - Public key held by module owner.
+**Returns:** [CRMScript.NetServer.NSDSAParameters](/en/automation/crmscript/reference/CRMScript.NetServer.NSDSAParameters) - Public key held by module owner.
 
 **Example:**
 
@@ -61,7 +61,7 @@ NSDSAParameters key = thing.GetKey();
 String GetOwnerName()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the module owner, not visible in GUI but used in the code.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The name of the module owner, not visible in GUI but used in the code.
 
 <Note>
 OwnerName SUPEROFFICE is reserved and may NEVER be used by partners. This must be in UPPER CASE and only contain A-Z and 0-9. NO EXTENDED CHARACTERS please.n
@@ -80,7 +80,7 @@ String ownerName = thing.GetOwnerName();
 String GetSignature()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Signature, Base64 encoded value.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Signature, Base64 encoded value.
 
 **Example:**
 
@@ -95,7 +95,7 @@ String signature = thing.GetSignature();
 DateTime GetSignDate()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - Date when the the public key was signed. No Timezone.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - Date when the the public key was signed. No Timezone.
 
 **Example:**
 
@@ -110,7 +110,7 @@ DateTime signDate = thing.GetSignDate();
 Void SetExpiryDate(DateTime expiryDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -126,7 +126,7 @@ thing.SetExpiryDate(expiryDate);
 Void SetKey(NSDSAParameters key)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -142,7 +142,7 @@ thing.SetKey(key);
 Void SetOwnerName(String ownerName)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -158,7 +158,7 @@ thing.SetOwnerName(ownerName);
 Void SetSignature(String signature)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -174,7 +174,7 @@ thing.SetSignature(signature);
 Void SetSignDate(DateTime signDate)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 

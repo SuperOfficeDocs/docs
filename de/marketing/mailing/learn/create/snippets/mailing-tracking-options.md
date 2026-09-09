@@ -8,4 +8,4 @@
 
   * **Kampagne**: Geben Sie die Art der Kampagne ein, z. B. "Newsletter" oder "Lead-Pflege", oder geben Sie einen bestimmten Kampagnennamen wie "frühlingsverkauf-juni-21" oder "upgrade-kampagne-v9" ein.
 
-[1]: ../../../../tracked-links/learn/index#google
+[1]: /de/marketing/tracked-links/learn/index#google

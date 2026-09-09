@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_MoveEmailsToFolderRequest"></a> Class EMail\_MoveEmailsToFolderRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_MoveEmailsToFolderRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_MoveEmailsToFolderRequest](SuperOffice.WebApi.Data.EMail\_MoveEmailsToFolderRequest.md)
+[EMail\_MoveEmailsToFolderRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_MoveEmailsToFolderRequest)
 
 #### Inherited Members
 

@@ -23,7 +23,7 @@ Adds an action to the Screen definition associated with this script (when the sc
 Void addAction(String button, String script, Bool doCheck)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Normally, doCheck should be True for buttons that submit the form, and False for buttons that add lines to grids, and so on.
@@ -37,7 +37,7 @@ Adds a message to a chat session.
 Integer addChatMessage(Integer sessionId, String message, Integer type, String author, Integer specialType, String specialParams)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 <Note>
 You can optionally pass a &lt;code&gt;DateTime&lt;/code&gt; to set when the message will show up.
@@ -51,7 +51,7 @@ Adds a message to a chat session and sets when the message will show up.
 Integer addChatMessage(Integer sessionId, String message, Integer type, String author, Integer specialType, String specialParams, DateTime whenPosted)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 <Note>
 This variant of addChatMessage() is especially used for ChatBot-integrations.
@@ -65,7 +65,7 @@ Adds an HTML element to the associated screen when this script is executed as th
 HtmlElement addHtmlElement(Integer id, String name, Integer type, Map config)
 ```
 
-**Returns:** [CRMScript.Native.HtmlElement](CRMScript.Native.HtmlElement) - The element that was added.
+**Returns:** [CRMScript.Native.HtmlElement](/en/automation/crmscript/reference/CRMScript.Native.HtmlElement) - The element that was added.
 
 <Note>
 You can optionally provide the zero-based position of the element in the list of elements for the screen.
@@ -79,7 +79,7 @@ Adds an HTML element to the associated screen with a zero-based position when th
 HtmlElement addHtmlElement(Integer id, String name, Integer type, Map config, Integer position)
 ```
 
-**Returns:** [CRMScript.Native.HtmlElement](CRMScript.Native.HtmlElement) - The element that was added.
+**Returns:** [CRMScript.Native.HtmlElement](/en/automation/crmscript/reference/CRMScript.Native.HtmlElement) - The element that was added.
 
 ## addHtmlElement(Integer,String,Integer,String)
 
@@ -89,7 +89,7 @@ Adds an HTML element to the associated screen when this script is executed as th
 HtmlElement addHtmlElement(Integer id, String name, Integer type, String config)
 ```
 
-**Returns:** [CRMScript.Native.HtmlElement](CRMScript.Native.HtmlElement) - The element that was added.
+**Returns:** [CRMScript.Native.HtmlElement](/en/automation/crmscript/reference/CRMScript.Native.HtmlElement) - The element that was added.
 
 <Note>
 You can optionally provide the zero-based position of the element in the list of elements for the screen.
@@ -103,7 +103,7 @@ Adds an HTML element to the associated screen with a zero-based position when th
 HtmlElement addHtmlElement(Integer id, String name, Integer type, String config, Integer position)
 ```
 
-**Returns:** [CRMScript.Native.HtmlElement](CRMScript.Native.HtmlElement) - The element that was added.
+**Returns:** [CRMScript.Native.HtmlElement](/en/automation/crmscript/reference/CRMScript.Native.HtmlElement) - The element that was added.
 
 ## assert(Bool)
 
@@ -113,7 +113,7 @@ Throws an AssertException if condition is false. The exception contains the line
 Void assert(Bool condition)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Used primarily with unit testing.
@@ -127,7 +127,7 @@ Throws an AssertException if the two parameters are not equal. Specifically: if 
 Void assertEquals(Bool bool1, Bool bool2)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Used primarily with unit testing.
@@ -141,7 +141,7 @@ Throws an AssertException if the two parameters are not equal. Specifically: if 
 Void assertEquals(Float float1, Float float2)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Used primarily with unit testing.
@@ -155,7 +155,7 @@ Throws an AssertException if the two parameters are not equal. Specifically: if 
 Void assertEquals(Integer integer1, Integer integer2)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Used primarily with unit testing.
@@ -169,7 +169,7 @@ Throws an AssertException if the two parameters are not equal. Specifically: if 
 Void assertEquals(String string1, String string2)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Used primarily with unit testing.
@@ -183,7 +183,7 @@ Checks a customer's username and password. Returns personId if successful, other
 Integer authenticateCustomer(String username, String password)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The personId of the found customer. A null-Integer if the username was not found, or the password was incorrect.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The personId of the found customer. A null-Integer if the username was not found, or the password was incorrect.
 
 ## buildUrl()
 
@@ -193,7 +193,7 @@ Returns all POST and GET variables for the current URL.
 String buildUrl()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - All POST and GET variables for the current URL.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - All POST and GET variables for the current URL.
 
 ## cgiWasPost()
 
@@ -203,7 +203,7 @@ Checks if the CGI HTTP request was of type POST.
 Bool cgiWasPost()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the CGI HTTP request was of type POST (not GET or anything else).
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if the CGI HTTP request was of type POST (not GET or anything else).
 
 <Note>
 Service uses only GET and POST. POST is used when submitting most forms, a GET request is usually someone clicking a link, first time entering the bLogic screen.
@@ -217,7 +217,7 @@ Checks if it is ok to send a receipt to the indicated email address.
 Bool checkReply(String email)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if it is ok to send a receipt to the indicated email address; otherwise, false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if it is ok to send a receipt to the indicated email address; otherwise, false.
 
 <Note>
 Every time this method is called, it records that an email has been sent to the email address. If this is done too often within a specified time interval (specified in config table), you should not send an email to the email address to prevent swamping.
@@ -231,7 +231,7 @@ Takes several strings, each containing an HTML document, and combines them into 
 String combineHtmlStrings(Vector htmlStrings)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - HTML string.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - HTML string.
 
 <Note>
 The head contents in each string is combined into the head tag of the output string, except for the title tag. The title tag is taken from the first string in the vector.
@@ -247,7 +247,7 @@ Converts a status given by its integer identifier to its string representation.
 String convertStatus(Integer status)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The status as a string.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The status as a string.
 
 <Note>
 The method is language-dependent.
@@ -261,7 +261,7 @@ Copies the content of a CRM Document, given the ID, to a new Service attachment.
 Integer copyCRMDocumentToAttachment(Integer crmDocId)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the newly created Service attachment.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the newly created Service attachment.
 
 <Note>
 There is no sync between these two, so only a copy at the point of time is made.
@@ -275,7 +275,7 @@ Pauses the script if it is in debug mode (see enableDebug). Stores the info stri
 Void debugWait(String info)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## decodeBase64(String)
 
@@ -285,7 +285,7 @@ Decodes a base64-encoded string into a byte array.
 Byte[] decodeBase64(String base64)
 ```
 
-**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - Decoded byte array.
+**Returns:** [CRMScript.Global.Byte](/en/automation/crmscript/reference/CRMScript.Global.Byte)[] - Decoded byte array.
 
 ## decodeBase64AsStream(String)
 
@@ -295,7 +295,7 @@ Decodes a base64-encoded string into an NSStream.
 NSStream decodeBase64AsStream(String base64)
 ```
 
-**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream)
+**Returns:** [CRMScript.NetServer.NSStream](/en/automation/crmscript/reference/CRMScript.NetServer.NSStream)
 
 ## decodeDBValue(String)
 
@@ -305,7 +305,7 @@ Decodes the value returned by for example NetServer archives, i.e [I:23], and re
 String decodeDBValue(String dbValue)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 <Note>
 You must convert it into the preferred type if used as anything else than a string.
@@ -319,7 +319,7 @@ Enables debugging for the current script, with the given ID. If the executing en
 Void enableDebug(String debugId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 To set the debugId in a browser, use the "?action=debug" parameter. It is possible to debug a script, while it will continue to run as normal for other users.
@@ -333,7 +333,7 @@ Encodes bytes to a base32 string.
 String encodeBase32(Byte[] data)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A base32-encoded string.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A base32-encoded string.
 
 ## encodeBase64(Byte[])
 
@@ -343,7 +343,7 @@ Encodes bytes to a base64 string.
 String encodeBase64(Byte[] data)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A base64-encoded string.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A base64-encoded string.
 
 <Note>
 You can optionally pass a Bool to control if the encoded data should be wrapped with new lines or not.
@@ -357,7 +357,7 @@ Encodes bytes to a base64 string specifying if the encoded data should be wrappe
 String encodeBase64(Byte[] data, bool wrapLines)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A base64-encoded string.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A base64-encoded string.
 
 ## encodeBase64(NSStream)
 
@@ -367,7 +367,7 @@ Encodes bytes to a base64 string.
 String encodeBase64(NSStream data)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A base64-encoded string.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A base64-encoded string.
 
 <Note>
 You can optionally pass a Bool to control if the encoded data should be wrapped with new lines or not.
@@ -381,7 +381,7 @@ Encodes bytes to a base64 string specifying if the encoded data should be wrappe
 String encodeBase64(NSStream data, bool wrapLines)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A base64-encoded string.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A base64-encoded string.
 
 ## encodeHMACSHA1(Byte[],Byte[])
 
@@ -391,7 +391,7 @@ Generates and returns a hash from a specified key-value pair using the HMAC SHA1
 Byte[] encodeHMACSHA1(Byte[] key, Byte[] value)
 ```
 
-**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - The generated hash.
+**Returns:** [CRMScript.Global.Byte](/en/automation/crmscript/reference/CRMScript.Global.Byte)[] - The generated hash.
 
 <Note>
 This can be used to ensure data integrity. The hash cannot be decrypted back.
@@ -405,7 +405,7 @@ Generates and returns a hash from a specified key-value pair using the HMAC SHA1
 String encodeHMACSHA1(String key, String value)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The generated hash (formatted as hex).
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The generated hash (formatted as hex).
 
 <Note>
 This can be used to ensure data integrity. The hash cannot be decrypted back.
@@ -419,7 +419,7 @@ Generates and returns a hash from a specified key-value pair using the HMAC SHA2
 Byte[] encodeHMACSHA256(String key, String value)
 ```
 
-**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - The generated hash.
+**Returns:** [CRMScript.Global.Byte](/en/automation/crmscript/reference/CRMScript.Global.Byte)[] - The generated hash.
 
 <Note>
 This can be used to ensure data integrity. The hash cannot be decrypted back.
@@ -433,7 +433,7 @@ Generates and returns a hash from a specified key-value pair using the HMAC SHA5
 Byte[] encodeHMACSHA512(String key, String value)
 ```
 
-**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - The generated hash.
+**Returns:** [CRMScript.Global.Byte](/en/automation/crmscript/reference/CRMScript.Global.Byte)[] - The generated hash.
 
 <Note>
 This can be used to ensure data integrity. The hash cannot be decrypted back.
@@ -447,7 +447,7 @@ Generates and returns a hash from a specified value using the SHA1 encoding algo
 String encodeSHA1(String value)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The generated hash (formatted as hex).
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The generated hash (formatted as hex).
 
 <Note>
 This can be used to ensure data integrity. The hash cannot be decrypted back.
@@ -470,7 +470,7 @@ Generates and returns a hash from a specified key-value pair using the HMAC SHA2
 String encodeSHA256(String key, String value)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The generated hash. The same key-value pair always returns the same hash (formatted as hex).
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The generated hash. The same key-value pair always returns the same hash (formatted as hex).
 
 <Note>
 This can be used to ensure data integrity. The hash cannot be decrypted back.
@@ -493,7 +493,7 @@ Manually starts a DBI agent schedule. It is possible to supply a map of paramete
 Void executeDbiAgentSchedule(Integer scheduleId, Map values)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## executeMacro(String)
 
@@ -503,7 +503,7 @@ The outermost function for executing a macro.
 String executeMacro(String parameters)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 ## executeScript(String,Map)
 
@@ -511,7 +511,7 @@ String executeMacro(String parameters)
 String executeScript(String script, Map values)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 <Note>
 Function to execute CRMScript code supplied.
@@ -525,7 +525,7 @@ Executes the specified SQL statement. **This function is not available in CRM On
 Void executeSQLQuery(String sql)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void) - Does not return anything!
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void) - Does not return anything!
 
 <Note>
 In case of an error in the SQL statement, an exception will be thrown.
@@ -539,7 +539,7 @@ Exits running the rest of the script and displays a message with text from the p
 Void exitWithMessage(String message)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Useful for exiting a script when for example detecting that the current user doesn't have access to a ticket.
@@ -553,7 +553,7 @@ Searches FAQ using the same search engine as the customer pages do and fills the
 Parser faqSearch(Integer root, Integer access, String message, Parser p, Integer max)
 ```
 
-**Returns:** [CRMScript.Native.Parser](CRMScript.Native.Parser) - The reference to the Parser instance.
+**Returns:** [CRMScript.Native.Parser](/en/automation/crmscript/reference/CRMScript.Native.Parser) - The reference to the Parser instance.
 
 <Note>
 Available parser variables (sorted, where the top most is the best hit):
@@ -583,7 +583,7 @@ If you have configured any categories to use specified ReplyTemplates, use this 
 Integer findReplyTemplateToMerge(Integer categoryId)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the reply template to use.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the reply template to use.
 
 ## flushCaches()
 
@@ -593,7 +593,7 @@ Flushes the caches in NetServer.
 Void flushCaches()
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## forceSaveTrace(Bool)
 
@@ -603,7 +603,7 @@ If there is a script trace enabled for the current script, with the exception-on
 Void forceSaveTrace(Bool)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -619,7 +619,7 @@ Forwards preformatted email.
 Void forwardMail(String mail, String to, Integer ticketId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## getActiveUser()
 
@@ -629,7 +629,7 @@ Returns a reference to the active user instance.
 User getActiveUser()
 ```
 
-**Returns:** [CRMScript.Native.User](CRMScript.Native.User) - A reference to the active user instance.
+**Returns:** [CRMScript.Native.User](/en/automation/crmscript/reference/CRMScript.Native.User) - A reference to the active user instance.
 
 ## getAgentId(String)
 
@@ -639,7 +639,7 @@ Returns the ID of the agent matching the parameter.
 Integer getAgentId(String idString)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the agent matching the parameter; null if no match found.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the agent matching the parameter; null if no match found.
 
 ## getAgentScheduleId(String)
 
@@ -649,7 +649,7 @@ Returns the ID of the agent schedule with the given name.
 Integer getAgentScheduleId(String name)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the agent schedule with the given name; -1 if no agent schedule was found.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the agent schedule with the given name; -1 if no agent schedule was found.
 
 ## getAttachmentsSize(Integer[])
 
@@ -659,7 +659,7 @@ Gets the total byte size of the specified attachments.
 Integer getAttachmentsSize(Integer[] attachmentIds)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The total size of the specified attachments.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The total size of the specified attachments.
 
 ## getCategoryIdFromFullname(String)
 
@@ -669,7 +669,7 @@ Finds category ID from the category's full name.
 Integer getCategoryIdFromFullname(String name)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of category.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - ID of category.
 
 ## getCgiContent()
 
@@ -679,7 +679,7 @@ Returns the raw content of the HTTP request.
 String getCgiContent()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The raw content of the HTTP request.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The raw content of the HTTP request.
 
 ## getCgiUrl()
 
@@ -689,7 +689,7 @@ Returns the cgiUrl value from the config table. For example, http://ejournal.com
 String getCgiUrl()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The string stored as the cgiUrl.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The string stored as the cgiUrl.
 
 <Note>
 Used for creating URLs.
@@ -703,7 +703,7 @@ Returns the CGI variable with the given name.
 String getCgiVariable(String varName)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The CGI variable with the given name.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The CGI variable with the given name.
 
 ## getCgiVariableArray(String)
 
@@ -713,7 +713,7 @@ Returns a string array of all CGI variables matching the given name
 String[] getCgiVariableArray(String name)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - All CGI variables matching the given name.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)[] - All CGI variables matching the given name.
 
 ## getCgiVariables()
 
@@ -723,7 +723,7 @@ Returns a map of all CGI variables.
 Map getCgiVariables()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - Map containing all CGI variables.
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map) - Map containing all CGI variables.
 
 ## getCookie(String)
 
@@ -733,7 +733,7 @@ Returns the CGI cookie with the given name. **This method is not available in CR
 String getCookie(String name)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The CGI cookie with the given name.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The CGI cookie with the given name.
 
 ## getCurrent(String)
 
@@ -743,7 +743,7 @@ Gets the value of the given key from the map of values common to all of the Supe
 String getCurrent(String key)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The corresponding value.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The corresponding value.
 
 ## getCurrentDate()
 
@@ -753,7 +753,7 @@ Returns the current date.
 Date getCurrentDate()
 ```
 
-**Returns:** [CRMScript.Global.Date](CRMScript.Global.Date) - The current date.
+**Returns:** [CRMScript.Global.Date](/en/automation/crmscript/reference/CRMScript.Global.Date) - The current date.
 
 **Example:**
 
@@ -769,7 +769,7 @@ Returns the current date and time.
 DateTime getCurrentDateTime()
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime)
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime)
 
 **Example:**
 
@@ -785,7 +785,7 @@ Gets the current time.
 Time getCurrentTime()
 ```
 
-**Returns:** [CRMScript.Global.Time](CRMScript.Global.Time) - The current time.
+**Returns:** [CRMScript.Global.Time](/en/automation/crmscript/reference/CRMScript.Global.Time) - The current time.
 
 ## getCustomerMainEmail(Integer)
 
@@ -795,7 +795,7 @@ Returns the main email of the specified customer.
 String getCustomerMainEmail(Integer custId)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - An empty string is returned if the customer does not have an email address or the customer does not exist.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - An empty string is returned if the customer does not have an email address or the customer does not exist.
 
 ## getDbiControl()
 
@@ -805,7 +805,7 @@ Used to access the global DBI control object, which is used for database integra
 DbiControl getDbiControl()
 ```
 
-**Returns:** [CRMScript.Native.DbiControl](CRMScript.Native.DbiControl) - The global dbi control object.
+**Returns:** [CRMScript.Native.DbiControl](/en/automation/crmscript/reference/CRMScript.Native.DbiControl) - The global dbi control object.
 
 ## getDefaultElementConfig(Integer,String,String)
 
@@ -815,7 +815,7 @@ Returns the default config for an element type given a table and language.
 String getDefaultElementConfig(Integer type, String table, String language)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The config as a string with name = value lines.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The config as a string with name = value lines.
 
 ## getDocumentId(String)
 
@@ -825,7 +825,7 @@ Returns the ID of the document with the given name.
 Integer getDocumentId(String name)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the document; -1 if no agent schedule was found.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the document; -1 if no agent schedule was found.
 
 ## getEnvVariable(String)
 
@@ -835,7 +835,7 @@ Returns the OS environment variable with the given name. **This method is not av
 String getEnvVariable(String name)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The OS environment variable with the given name.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The OS environment variable with the given name.
 
 ## getEventData()
 
@@ -845,7 +845,7 @@ Returns an EventData object connected to the current event.
 EventData getEventData()
 ```
 
-**Returns:** [CRMScript.Native.EventData](CRMScript.Native.EventData) - EventData object connected to the current event
+**Returns:** [CRMScript.Native.EventData](/en/automation/crmscript/reference/CRMScript.Native.EventData) - EventData object connected to the current event
 
 ## getExecutable()
 
@@ -855,7 +855,7 @@ Returns the executable with the full path that the current script is running in.
 String getExecutable()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 ## getExternalProgram(Integer)
 
@@ -865,7 +865,7 @@ Returns the external URL of the program module specified by progId (if available
 String getExternalProgram(Integer progId)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL for the given program.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The URL for the given program.
 
 <Note>
 ### progId
@@ -904,7 +904,7 @@ Returns the external URL of the program module specified after getProgram.
 String getExternalProgramAdmin()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The external URL for the given program.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The external URL for the given program.
 
 ## getExternalProgramAjax()
 
@@ -914,7 +914,7 @@ Returns the external URL of the program module specified after getProgram.
 String getExternalProgramAjax()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The external URL for the given program.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The external URL for the given program.
 
 ## getExternalProgramBlogic()
 
@@ -924,7 +924,7 @@ Returns the external URL of the program module specified after getProgram.
 String getExternalProgramBlogic()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The external URL for the given program.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The external URL for the given program.
 
 ## getExternalProgramChat()
 
@@ -934,7 +934,7 @@ Returns the external URL of the program module specified after getProgram.
 String getExternalProgramChat()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 ## getExternalProgramCustomer()
 
@@ -944,7 +944,7 @@ Returns the external URL of the program module specified after getProgram.
 String getExternalProgramCustomer()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The external URL for the given program.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The external URL for the given program.
 
 ## getExternalProgramDocument()
 
@@ -954,7 +954,7 @@ Returns the external URL of the program module specified after getProgram.
 String getExternalProgramDocument()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The external URL for the given program.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The external URL for the given program.
 
 ## getExternalProgramHelp()
 
@@ -964,7 +964,7 @@ Returns the external URL of the program module specified after getProgram.
 String getExternalProgramHelp()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The external URL for the given program.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The external URL for the given program.
 
 ## getExternalProgramKnowledge()
 
@@ -974,7 +974,7 @@ Returns the external URL of the program module specified after getProgram.
 String getExternalProgramKnowledge()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The external URL for the given program.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The external URL for the given program.
 
 ## getExternalProgramRms()
 
@@ -984,7 +984,7 @@ Returns the external URL of the program module specified after getProgram.
 String getExternalProgramRms()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The external URL for the given program.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The external URL for the given program.
 
 ## getExternalProgramSoap()
 
@@ -994,7 +994,7 @@ Returns the external URL of the program module specified after getProgram.
 String getExternalProgramSoap()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The external URL for the given program.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The external URL for the given program.
 
 ## getExternalProgramStat()
 
@@ -1004,7 +1004,7 @@ Returns the external URL of the program module specified after getProgram.
 String getExternalProgramStat()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The external URL for the given program.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The external URL for the given program.
 
 ## getExternalProgramTicket()
 
@@ -1014,7 +1014,7 @@ Returns the external URL of the program module specified after getProgram.
 String getExternalProgramTicket()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The external URL for the given program.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The external URL for the given program.
 
 ## getExtraTable(String)
 
@@ -1024,7 +1024,7 @@ Returns the ExtraTable instance for the given name.
 ExtraTable getExtraTable(String name)
 ```
 
-**Returns:** [CRMScript.Native.ExtraTable](CRMScript.Native.ExtraTable) - The ExtraTable.
+**Returns:** [CRMScript.Native.ExtraTable](/en/automation/crmscript/reference/CRMScript.Native.ExtraTable) - The ExtraTable.
 
 <Note>
 Throws an exception if the table does not exist.
@@ -1038,7 +1038,7 @@ Returns an array containing the IDs of all favorites in the given table.
 Integer[] getFavourites(String table)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)[] - Array containing IDs of favorites.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)[] - Array containing IDs of favorites.
 
 ## getFunctionList()
 
@@ -1048,7 +1048,7 @@ Returns an array with the description of all CRMScript functions defined in the 
 String[][] getFunctionList()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[][] - Double String array with the description of all CRMScript functions. The inner array contains 0 - class name; 1 - return type; 2 - function name; 3 - parameter list; 4 - author.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)[][] - Double String array with the description of all CRMScript functions. The inner array contains 0 - class name; 1 - return type; 2 - function name; 3 - parameter list; 4 - author.
 
 ## getGlobalStaticMap()
 
@@ -1058,7 +1058,7 @@ Returns a global and static map.
 Map getGlobalStaticMap()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map)
 
 <Note>
 Useful to eliminate the need to fetch the same info several times within one run of the app, bLogic events and ticket save especially.
@@ -1072,7 +1072,7 @@ Gets a value from the global variables.
 String getGlobalVariable(String name)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 <Note>
 Used for communication between different scripts.
@@ -1086,7 +1086,7 @@ Returns a reference to an HtmlElement in the associated screen.
 HtmlElement getHtmlElement(String name)
 ```
 
-**Returns:** [CRMScript.Native.HtmlElement](CRMScript.Native.HtmlElement) - The HtmlElement with the given name.
+**Returns:** [CRMScript.Native.HtmlElement](/en/automation/crmscript/reference/CRMScript.Native.HtmlElement) - The HtmlElement with the given name.
 
 ## getHtmlElementIndex(String)
 
@@ -1096,7 +1096,7 @@ Gets the index of the specified HTML element. This is useful if you want to inse
 Integer getHtmlElementIndex(String name)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The index of the specified element.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The index of the specified element.
 
 <Note>
 Can only be called from a screen definition, it will fail if called from a regular script.
@@ -1110,7 +1110,7 @@ Returns the name of the element with the given index.
 String getHtmlElementName(Integer index)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the element.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The name of the element.
 
 ## getHttpHeader(String)
 
@@ -1120,7 +1120,7 @@ Returns the value of the specified header name.
 String getHttpHeader(String headerName)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The header value.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The header value.
 
 <Note>
 ### Header names
@@ -1165,7 +1165,7 @@ Converts a language variable to a string in the language of the current user or,
 String getLanguageVariable(String langVar)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The language variable in the language given by language code or of the current user.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The language variable in the language given by language code or of the current user.
 
 <Note>
 Searches in the language variables for the current screen in addition to the common language variables.
@@ -1179,7 +1179,7 @@ Converts a language variable to a string in the language of the current user or,
 String getLanguageVariable(String langVar, String langCode)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The language variable in the language given by language code or of the current user.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The language variable in the language given by language code or of the current user.
 
 <Note>
 Searches in the language variables for the current screen in addition to the common language variables.
@@ -1193,7 +1193,7 @@ Returns the local timezone.
 TimeZone getLocalTimeZone()
 ```
 
-**Returns:** [CRMScript.Global.TimeZone](CRMScript.Global.TimeZone) - The local timezone.
+**Returns:** CRMScript.Global.TimeZone - The local timezone.
 
 ## getMainMenu()
 
@@ -1203,7 +1203,7 @@ Returns a reference to the global MainMenu instance.
 MainMenu getMainMenu()
 ```
 
-**Returns:** [CRMScript.Native.MainMenu](CRMScript.Native.MainMenu) - The global MainMenu instance.
+**Returns:** [CRMScript.Native.MainMenu](/en/automation/crmscript/reference/CRMScript.Native.MainMenu) - The global MainMenu instance.
 
 <Note>
 Used for changing the left-hand menu in the system.
@@ -1217,7 +1217,7 @@ Returns the username supplied from the web server.
 String getNtUser()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Nt user name.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Nt user name.
 
 <Note>
 Works with Apache and IIS, but required user authentication on the web server.
@@ -1233,7 +1233,7 @@ Returns the current number of the HtmlElements in the current screen.
 Integer getNumHtmlElements()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The current number of the HtmlElements in the current screen.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The current number of the HtmlElements in the current screen.
 
 ## getParser()
 
@@ -1243,7 +1243,7 @@ Returns a reference to the global Parser instance.
 Parser getParser()
 ```
 
-**Returns:** [CRMScript.Native.Parser](CRMScript.Native.Parser) - The reference to the Parser instance.
+**Returns:** [CRMScript.Native.Parser](/en/automation/crmscript/reference/CRMScript.Native.Parser) - The reference to the Parser instance.
 
 ## getParserParameter(String)
 
@@ -1253,7 +1253,7 @@ Returns the value of the given parameter in the global Parser instance.
 String getParserParameter(String name)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the given parameter in the global Parser instance.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The value of the given parameter in the global Parser instance.
 
 <Note>
 You can optionally pass the zero-based index of the value.
@@ -1267,7 +1267,7 @@ Returns the value of the given parameter at the zero-based index in the global P
 String getParserParameter(String name, Integer index)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the given parameter in the global Parser instance.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The value of the given parameter in the global Parser instance.
 
 ## getParserParameterCount(String)
 
@@ -1277,7 +1277,7 @@ Returns the number of values for the given parameters in the global Parser objec
 Integer getParserParameterCount(String paramName)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of values for the parameter the Parser.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The number of values for the parameter the Parser.
 
 ## getParserVariable(String)
 
@@ -1287,7 +1287,7 @@ Returns the (first) value for the given variable from the global Parser instance
 String getParserVariable(String varName)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 <Note>
 You can optionally pass the zero-based row of the parser-query result set.
@@ -1301,7 +1301,7 @@ Returns the (first) value for the given variable from the global Parser instance
 String getParserVariable(String varName, Integer row)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 ## getParserVariableAsCSV(String,Bool)
 
@@ -1311,7 +1311,7 @@ Returns a variable from the global Parser instance as a comma-separated string.
 String getParserVariableAsCSV(String paramName, Bool forceQuoting)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - If True, then each element will be quoted. If false, only elements that need to be quoted (i.e. when they contain a comma) will be quoted.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - If True, then each element will be quoted. If false, only elements that need to be quoted (i.e. when they contain a comma) will be quoted.
 
 ## getParserVariableCount(String)
 
@@ -1321,7 +1321,7 @@ Returns the number of values for the specified value in the global Parser instan
 Integer getParserVariableCount(String varName)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The number of values for the variable.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The number of values for the variable.
 
 ## getPID()
 
@@ -1331,7 +1331,7 @@ Returns the PID of the executable that the script is running in.
 Integer getPID()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The PID of the executable that the script is running in.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The PID of the executable that the script is running in.
 
 ## getPriorityIdFromName(String)
 
@@ -1341,7 +1341,7 @@ Returns the ID of the priority with the given name.
 Integer getPriorityIdFromName(String name)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the priority.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the priority.
 
 ## getProgram(Integer)
 
@@ -1351,7 +1351,7 @@ Returns the URL of the program module specified by progId.
 String getProgram(Integer progId)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 <Note>
 ### progId
@@ -1390,7 +1390,7 @@ Returns the URL of the program module specified after getProgram.
 String getProgramAdmin()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL for the given program.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The URL for the given program.
 
 ## getProgramAjax()
 
@@ -1400,7 +1400,7 @@ Returns the URL of the program module specified after getProgram.
 String getProgramAjax()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL for the given program.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The URL for the given program.
 
 ## getProgramBlogic()
 
@@ -1410,7 +1410,7 @@ Returns the URL of the program module specified after getProgram.
 String getProgramBlogic()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL for the given program.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The URL for the given program.
 
 ## getProgramChat()
 
@@ -1420,7 +1420,7 @@ Returns the URL of the program module specified after getProgram.
 String getProgramChat()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL for the given program.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The URL for the given program.
 
 ## getProgramCustomer()
 
@@ -1430,7 +1430,7 @@ Returns the URL of the program module specified after getProgram.
 String getProgramCustomer()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL for the given program.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The URL for the given program.
 
 ## getProgramDocument()
 
@@ -1440,7 +1440,7 @@ Returns the URL of the program module specified after getProgram.
 String getProgramDocument()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL for the given program.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The URL for the given program.
 
 ## getProgramHelp()
 
@@ -1450,7 +1450,7 @@ Returns the URL of the program module specified after getProgram.
 String getProgramHelp()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL for the given program.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The URL for the given program.
 
 ## getProgramKnowledge()
 
@@ -1460,7 +1460,7 @@ Returns the URL of the knowledge base (document.exe).
 String getProgramKnowledge()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL of the knowledge base (document.exe).
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The URL of the knowledge base (document.exe).
 
 ## getProgramRms()
 
@@ -1470,7 +1470,7 @@ Returns the URL of the program module specified after getProgram.
 String getProgramRms()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL for the given program.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The URL for the given program.
 
 ## getProgramSoap()
 
@@ -1480,7 +1480,7 @@ Returns the URL of the program module specified after getProgram.
 String getProgramSoap()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL for the given program.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The URL for the given program.
 
 ## getProgramStat()
 
@@ -1490,7 +1490,7 @@ Returns the URL of the program module specified after getProgram.
 String getProgramStat()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL for the given program.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The URL for the given program.
 
 ## getProgramTicket()
 
@@ -1500,7 +1500,7 @@ Returns the URL of the program module specified after getProgram.
 String getProgramTicket()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The URL for the given program.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The URL for the given program.
 
 ## getReplyTemplateBody(Integer,Bool,Integer)
 
@@ -1510,7 +1510,7 @@ Returns reply template text as specified by the parameters.
 String getReplyTemplateBody(Integer id, Bool useHTML, Integer langId)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 ## getReplyTemplateSubject(Integer,Integer)
 
@@ -1520,7 +1520,7 @@ Returns reply template subject.
 String getReplyTemplateSubject(Integer id, Integer langId)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 ## getScreenElementConfig(Integer)
 
@@ -1530,7 +1530,7 @@ Returns the config of the screen element with the given index in the current scr
 Map getScreenElementConfig(Integer index)
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - A map containing the config of the element.
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map) - A map containing the config of the element.
 
 <Note>
 Can only be called from a screen definition, it will fail if called from a regular script.
@@ -1544,7 +1544,7 @@ Returns the ID of the screen element with the given index in the current screen 
 Integer getScreenElementId(Integer index)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the element.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the element.
 
 <Note>
 Can only be called from a screen definition, it will fail if called from a regular script.
@@ -1558,7 +1558,7 @@ Returns the name of the screen element with the given index in the current scree
 String getScreenElementName(Integer index)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - An integer defining the type of the element.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - An integer defining the type of the element.
 
 <Note>
 Can only be called from a screen definition, it will fail if called from a regular script.
@@ -1572,7 +1572,7 @@ Returns the type of the screen element with the given index in the current scree
 Integer getScreenElementType(Integer index)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 <Note>
 Can only be called from a screen definition, it will fail if called from a regular script.
@@ -1663,7 +1663,7 @@ Returns the ID of the script matching the parameter
 Integer getScriptId(String idString)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the script matching the parameter; null if no match found.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the script matching the parameter; null if no match found.
 
 ## getSelectionIds(Integer)
 
@@ -1673,7 +1673,7 @@ Returns the IDs of the objects in the selection with the given ID.
 Integer[] getSelectionIds(Integer id)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)[] - The IDs of the objects in the selection.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)[] - The IDs of the objects in the selection.
 
 ## getSessionVariable(String)
 
@@ -1683,7 +1683,7 @@ Makes it possible to store variables in the database which the web application c
 String getSessionVariable(String name)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - String value if found.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - String value if found.
 
 ## getSessionVariables()
 
@@ -1693,7 +1693,7 @@ Returns a map containing all session variables for the current session.
 Map getSessionVariables()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - All session variables for the current session.
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map) - All session variables for the current session.
 
 ## getStatusIdFromName(String)
 
@@ -1703,7 +1703,7 @@ Returns the ID of the status with the given name.
 Integer getStatusIdFromName(String name)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the status.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the status.
 
 ## getSystemFlags()
 
@@ -1713,7 +1713,7 @@ Gets the system flags. This is the same value as is stored in the database table
 Integer getSystemFlags()
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Flags.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Flags.
 
 ## getSystemLang()
 
@@ -1723,7 +1723,7 @@ Returns the active system language.
 String getSystemLang()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The active system language.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The active system language.
 
 ## getUserLang()
 
@@ -1733,7 +1733,7 @@ Returns the active user language.
 String getUserLang()
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The active user language.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The active user language.
 
 ## getUsername(Integer)
 
@@ -1743,7 +1743,7 @@ Gets username from the user ID.
 String getUsername(Integer userId)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Username.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Username.
 
 ## getVariable(String)
 
@@ -1753,7 +1753,7 @@ Returns the value in the global environment (used for communication between the 
 String getVariable(String name)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The value of the variable.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The value of the variable.
 
 ## getVariables()
 
@@ -1763,7 +1763,7 @@ Returns a map containing all run time environment variables (available through g
 Map getVariables()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - All run time environment variables.
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map) - All run time environment variables.
 
 ## getWarnings()
 
@@ -1773,7 +1773,7 @@ Returns a map of the current system warnings.
 Map getWarnings()
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - The current system warnings.
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map) - The current system warnings.
 
 <Note>
 Warnings are messages intended for system administrators, such as email failure warnings, expired FAQ entries, etc. They are normally listed on the status screen.
@@ -1787,7 +1787,7 @@ Converts the given HTML text to plain text.
 String htmlConvToText(String text)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A textual version of the HTML text.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A textual version of the HTML text.
 
 ## idToLang(Integer)
 
@@ -1797,7 +1797,7 @@ Returns the code of the given language ID.
 String idToLang(Integer langId)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Language code of the given language Id.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Language code of the given language Id.
 
 ## installPackage(String)
 
@@ -1807,7 +1807,7 @@ Installs a package provided as xml.
 String installPackage(String xml)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Empty if no error, otherwise an error message.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Empty if no error, otherwise an error message.
 
 ## invoiceTypesExists()
 
@@ -1817,7 +1817,7 @@ Checks if invoice types exist in the database.
 Bool invoiceTypesExists()
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if there are invoice types; otherwise, False.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if there are invoice types; otherwise, False.
 
 ## isValidPhoneNumber(String,Bool)
 
@@ -1827,7 +1827,7 @@ Validates if it is a valid phonenumber
 Bool isValidPhoneNumber(String nr, Bool isMultiple)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if valid phone number; otherwise, false.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if valid phone number; otherwise, false.
 
 ## langToId(String)
 
@@ -1837,7 +1837,7 @@ Returns the ID of the given language code.
 Integer langToId(String langCode)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - ID of the given language code. If no match, it returns 0 (which is Norwegian).
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - ID of the given language code. If no match, it returns 0 (which is Norwegian).
 
 ## log(String)
 
@@ -1847,7 +1847,7 @@ Writes a message to the new log (the one in the database), which can be accessed
 Void log(String msg)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## logMessage(String)
 
@@ -1857,7 +1857,7 @@ Writes a message to the log file.
 Void logMessage(String message)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## makePassword(Integer)
 
@@ -1867,7 +1867,7 @@ Used to create a random password of length p, with the given seed charactersCrea
 String makePassword(Integer length)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A random password of the given length.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A random password of the given length.
 
 ## makePassword(Integer,String)
 
@@ -1877,7 +1877,7 @@ Used to create a random password of length p, with the given seed charactersCrea
 String makePassword(Integer length, String seed)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - A random password of the given length.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - A random password of the given length.
 
 ## mapValue(String)
 
@@ -1887,7 +1887,7 @@ Allocates a new map and maps the given value to the string "value".
 Map mapValue(String value)
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map) - A map containing the value.
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map) - A map containing the value.
 
 ## modulo(Integer,Integer)
 
@@ -1897,7 +1897,7 @@ Returns a modulo b. This can also be done with the syntax "a % b".
 Integer modulo(Integer a, Integer b)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The result of a modulo b.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The result of a modulo b.
 
 ## parseJSON(String)
 
@@ -1907,7 +1907,7 @@ Parses a JSON document and generate a tree of XMLNode's.
 XMLNode parseJSON(String jsonDocument)
 ```
 
-**Returns:** [CRMScript.Native.XMLNode](CRMScript.Native.XMLNode)
+**Returns:** [CRMScript.Native.XMLNode](/en/automation/crmscript/reference/CRMScript.Native.XMLNode)
 
 <Note>
 This function has a bug. Empty arrays will still return one child. We recommend using &lt;code&gt;parseJSON2()&lt;/code&gt; instead where this bug has been fixed. Except for the fix, the function is identical. It is available from 8.4R03.
@@ -1985,7 +1985,7 @@ Parses a JSON document and generate a tree of XMLNode's.
 XMLNode parseJSON2(String jsonDocument)
 ```
 
-**Returns:** [CRMScript.Native.XMLNode](CRMScript.Native.XMLNode)
+**Returns:** [CRMScript.Native.XMLNode](/en/automation/crmscript/reference/CRMScript.Native.XMLNode)
 
 **Example:**
 
@@ -2003,7 +2003,7 @@ Parses an XML document and generate a tree of XMLNode's.
 XMLNode parseXML(String xmlDocument)
 ```
 
-**Returns:** [CRMScript.Native.XMLNode](CRMScript.Native.XMLNode) - The root XMLNode.
+**Returns:** [CRMScript.Native.XMLNode](/en/automation/crmscript/reference/CRMScript.Native.XMLNode) - The root XMLNode.
 
 ## pauseTracing(Bool)
 
@@ -2013,7 +2013,7 @@ Pauses or unpauses script tracing, depending on the parameter. Multiple calls to
 Integer pauseTracing(Bool pause)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The current pause level after process this call.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The current pause level after process this call.
 
 ## pow()
 
@@ -2023,7 +2023,7 @@ The pow function returns base raised to the expth power.
 Float pow(Float base, Float exp)
 ```
 
-**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The base raised to the expth power. If the base is zero and exp is less than or equal to zero, or the base is negative and exp is not an integer, an invalid float like -1.#IND0 will be returned. If the result is too large an invalid float like 1.#INF0 will be returned.
+**Returns:** [CRMScript.Global.Float](/en/automation/crmscript/reference/CRMScript.Global.Float) - The base raised to the expth power. If the base is zero and exp is less than or equal to zero, or the base is negative and exp is not an integer, an invalid float like -1.#IND0 will be returned. If the result is too large an invalid float like 1.#INF0 will be returned.
 
 ## print(String)
 
@@ -2033,7 +2033,7 @@ Prints the string to the screen.
 Void print(String s)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Will only work in certain contexts (when there is a screen to print to).
@@ -2047,7 +2047,7 @@ Outputs the bytes to the standard output stream. You can pass the data to encode
 Void printBinary(Byte[])
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## printBinary(NSStream)
 
@@ -2057,7 +2057,7 @@ Outputs the bytes to the standard output stream. You can pass the data to encode
 Void printBinary(NSStream)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## printDebug(String)
 
@@ -2067,7 +2067,7 @@ Adds the input debug to the debug string which will be shown in the debug window
 Void printDebug(String debug)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## printLine(String)
 
@@ -2078,7 +2078,7 @@ Prints lines into standard output without appending \\r\
 Void printLine(String line)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## rand(Integer,Integer)
 
@@ -2088,7 +2088,7 @@ Returns a random value between min and max. The seed is set by the cgi applicati
 Integer rand(Integer min, Integer max)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - A random value min &lt;= r &lt;= max.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - A random value min &lt;= r &lt;= max.
 
 ## reloadAndSendShipment(Integer)
 
@@ -2098,7 +2098,7 @@ Reloads mailings selections and schedule to send again immediately.
 Bool reloadAndSendShipment(Integer shipmentId)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if it worked; False if it did not work, because the mailing was in an illegal state for this operation.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if it worked; False if it did not work, because the mailing was in an illegal state for this operation.
 
 <Note>
 Used when you have added more people to the selection and want to send to them as well.
@@ -2112,7 +2112,7 @@ Removes the element with the given index
 Void removeHtmlElement(Integer index)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Can only be called from a screen definition, it will fail if called from a regular script
@@ -2126,7 +2126,7 @@ Removes the package with the given name.
 String removePackage(String name)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - Empty if no error, otherwise an error message.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - Empty if no error, otherwise an error message.
 
 ## resetChat(Integer)
 
@@ -2136,7 +2136,7 @@ Resets a chat session and places it in queue/pre-chat-form/offline-form dependin
 Void resetChat(Integer sessionId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Typically called when a Bot wants to transfer a chat session to a human user agent.
@@ -2150,7 +2150,7 @@ Executes the program (given command) and returns what was sent to stdout. **This
 String runProgram(String command)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 <Note>
 The owner of the process running the CRMScript needs permissions to execute the program. You can optionally pass the codepage used.
@@ -2164,7 +2164,7 @@ Executes the program (given command) with a codepage and returns what was sent t
 String runProgram(String command, String codepage)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 <Note>
 The owner of the process running the CRMScript needs permissions to execute the program.
@@ -2178,7 +2178,7 @@ Saves all cgi attachments with the given name.
 Integer[] saveAllCgiAttachments (String name)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)[] - An array containing the attachment IDs of all the saved attachments.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)[] - An array containing the attachment IDs of all the saved attachments.
 
 ## saveCgiAttachment(String)
 
@@ -2188,7 +2188,7 @@ Saves the attachment in cgi variable with the name given and returns the ID of t
 Integer saveCgiAttachment(String varName)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The ID of the saved attachment.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The ID of the saved attachment.
 
 ## setChatStatus(Integer,Integer)
 
@@ -2198,7 +2198,7 @@ Changes the status of a chat session.
 Void SetChatStatus(Integer sessionId, Integer status)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 The available statuses are:
@@ -2224,7 +2224,7 @@ The available statuses are:
 Void setCookie(String name, String value, Bool persistent)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 NB! Doesn't work in the customer center, use parser variable with an underscore (_) instead.
@@ -2238,7 +2238,7 @@ Maps the given key and value in the map of the values common for all the SuperOf
 Void SetCurrent(String key, String value)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## setFromCgi()
 
@@ -2248,7 +2248,7 @@ Sets all the elements of the associated screen from the global CGI instance. Thi
 Void SetFromCgi()
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 This function allows one to force this element initialization in the script, so that values may be accessed.n
@@ -2262,7 +2262,7 @@ Sets the value of a global variable (used for communication between different sc
 Void SetGlobalVariable(String name, String value)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## setHidden(String,String)
 
@@ -2272,7 +2272,7 @@ Sets the value of a hidden variable in the associated screen. Hidden variables a
 Void SetHidden(String name, String value)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## setPageFocusFirstControl(Bool)
 
@@ -2282,7 +2282,7 @@ Used to set focus to first control in screens.
 Void SetPageFocusFirstControl(Bool p0)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## setPageOnLoad(String)
 
@@ -2292,7 +2292,7 @@ Void setPageOnLoad(String onLoad)
 Void SetPageOnLoad(String p0)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## setPageRefresh(Integer)
 
@@ -2302,7 +2302,7 @@ Sets the page meta refresh to the specified seconds, thus making the screen refr
 Void SetPageRefresh(Integer seconds)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 If this method is used in a script that is not connected to a screen, nothing will happen.
@@ -2316,7 +2316,7 @@ Alters the page title. You will be able to set the text after the version inform
 Void SetPageTitle(String title)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## setParserVariable(String,String)
 
@@ -2326,7 +2326,7 @@ Sets (adds) a variable to the global Parser instance.
 Void SetParserVariable(String name, String value)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## setSessionVariable(String,String)
 
@@ -2336,7 +2336,7 @@ Writes a SessionObject entry to the databaseWrites a SessionObject entry to the 
 String setSessionVariable(String name, String value)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)
 
 <Note>
 Stores variables in the database that the web application can use as long as a session lives (until a user logs out).
@@ -2350,7 +2350,7 @@ Sets or clears the "User is typing" flag of a chat session.
 Void SetUserIsTyping(Integer sessionId, Bool isTyping)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## setVariable(String,String)
 
@@ -2360,7 +2360,7 @@ Sets the value in the global environment (used for communication between the scr
 Void SetVariable(String name, String value)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## simpleTwoWay(Byte[])
 
@@ -2370,7 +2370,7 @@ Simple two-way data encryption.  Data -&gt; Encrypted data -&gt; data
 Byte[] simpleTwoWay(Byte[] data)
 ```
 
-**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte)[] - Byte array with encrypted/decrypted data.
+**Returns:** [CRMScript.Global.Byte](/en/automation/crmscript/reference/CRMScript.Global.Byte)[] - Byte array with encrypted/decrypted data.
 
 ## sleep()
 
@@ -2380,7 +2380,7 @@ Sleeps (give up CPU) for some time.
 Void sleep(Float seconds)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Useful in some CPU-intensive loops to maintain a responsive system.
@@ -2400,7 +2400,7 @@ Returns the type of a variable (will automatically be up-casted to generic).
 String getTypeName(Generic generic)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The name of the type as a String.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The name of the type as a String.
 
 **Example:**
 
@@ -2416,7 +2416,7 @@ Returns a variable from the run-time environment given its name and independent 
 Generic getGenericValue(Generic struct, String name)
 ```
 
-**Returns:** [CRMScript.Native.Generic](CRMScript.Native.Generic) - The variable as a Generic, independent of its type.
+**Returns:** [CRMScript.Native.Generic](/en/automation/crmscript/reference/CRMScript.Native.Generic) - The variable as a Generic, independent of its type.
 
 <Note>
 An exception is thrown if the name is unknown, or the struct is not a struct.
@@ -2444,7 +2444,7 @@ You can optionally provide a struct to scope the variable.
 Generic getGenericValue(String name)
 ```
 
-**Returns:** [CRMScript.Native.Generic](CRMScript.Native.Generic) - The variable as a Generic, independent of its type.
+**Returns:** [CRMScript.Native.Generic](/en/automation/crmscript/reference/CRMScript.Native.Generic) - The variable as a Generic, independent of its type.
 
 <Note>
 An exception is thrown if the name is unknown, or the struct is not a struct.
@@ -2466,7 +2466,7 @@ Converts a Generic variable to a Bool (explicit downcast). Together with getType
 Bool GenericToBool(Generic value)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - The variable as a Bool.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - The variable as a Bool.
 
 <Note>
 If the generic doesn't represent the correct type, an exception is thrown.
@@ -2480,7 +2480,7 @@ Converts a Generic variable to a Integer (explicit downcast). Together with getT
 Integer GenericToInteger(Generic value)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The variable as an Integer.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The variable as an Integer.
 
 <Note>
 If the generic does not represent the correct type, an exception is thrown.
@@ -2494,7 +2494,7 @@ Converts a Generic variable to a Float. Together with getTypeName(), this functi
 Float GenericToFloat(Generic value)
 ```
 
-**Returns:** [CRMScript.Global.Float](CRMScript.Global.Float) - The variable as a Float.
+**Returns:** [CRMScript.Global.Float](/en/automation/crmscript/reference/CRMScript.Global.Float) - The variable as a Float.
 
 <Note>
 If the generic does not represent the correct type, an exception is thrown.
@@ -2508,7 +2508,7 @@ Converts a Generic variable to a String (explicit downcast). Together with getTy
 String GenericToString(Generic value)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The variable as a String.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The variable as a String.
 
 <Note>
 If the generic does not represent the correct type, an exception is thrown.
@@ -2522,7 +2522,7 @@ Returns the string representation of a variable. The argument is automatically b
 String convertGenericToString(Generic variable)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The string representation of the value in the Generic.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The string representation of the value in the Generic.
 
 <Note>
 Not all types have implemented support for this, and might return "[complex]". All the basic types (String, Integer, Float, and so on) will return a correct string representation of their value.
@@ -2546,7 +2546,7 @@ In combination with for example getStructMembers() and getGenericValue(), this f
 Void setGenericFromString(Generic generic, String value)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Attempting to set an array or a complex type will throw an exception.
@@ -2562,7 +2562,7 @@ Converts a Generic variable to a Date (explicit downcast). Together with getType
 Date GenericToDate(Generic value)
 ```
 
-**Returns:** [CRMScript.Global.Date](CRMScript.Global.Date) - The variable as a Date.
+**Returns:** [CRMScript.Global.Date](/en/automation/crmscript/reference/CRMScript.Global.Date) - The variable as a Date.
 
 <Note>
 If the generic does not represent the correct type, an exception is thrown.
@@ -2576,7 +2576,7 @@ Converts a Generic variable to a DateTime (explicit downcast). Together with get
 DateTime GenericToDateTime(Generic value)
 ```
 
-**Returns:** [CRMScript.Global.DateTime](CRMScript.Global.DateTime) - The variable as a DateTime.
+**Returns:** [CRMScript.Global.DateTime](/en/automation/crmscript/reference/CRMScript.Global.DateTime) - The variable as a DateTime.
 
 <Note>
 If the generic does not represent the correct type, an exception is thrown.
@@ -2590,7 +2590,7 @@ Converts a Generic variable to a Time (explicit downcast). Together with getType
 Time GenericToTime(Generic value)
 ```
 
-**Returns:** [CRMScript.Global.Time](CRMScript.Global.Time) - The variable as a Time.
+**Returns:** [CRMScript.Global.Time](/en/automation/crmscript/reference/CRMScript.Global.Time) - The variable as a Time.
 
 <Note>
 If the generic does not represent the correct type, an exception is thrown.
@@ -2604,7 +2604,7 @@ Converts a Generic variable to a TimeSpan (explicit downcast). Together with get
 TimeSpan GenericToTimeSpan(Generic value)
 ```
 
-**Returns:** [CRMScript.Native.TimeSpan](CRMScript.Native.TimeSpan) - The variable as a TimeSpan.
+**Returns:** [CRMScript.Native.TimeSpan](/en/automation/crmscript/reference/CRMScript.Native.TimeSpan) - The variable as a TimeSpan.
 
 <Note>
 If the generic does not represent the correct type, an exception is thrown.
@@ -2618,7 +2618,7 @@ Converts a Generic variable to a Byte (explicit downcast). Together with getType
 Byte GenericToByte(Generic value)
 ```
 
-**Returns:** [CRMScript.Global.Byte](CRMScript.Global.Byte) - The variable as a Byte.
+**Returns:** [CRMScript.Global.Byte](/en/automation/crmscript/reference/CRMScript.Global.Byte) - The variable as a Byte.
 
 <Note>
 If the generic doesn't represent the correct type, an exception is thrown.
@@ -2632,7 +2632,7 @@ Converts a Generic variable to an array of Generic (explicit downcast). Typicall
 Generic[] GenericToArray(Generic value)
 ```
 
-**Returns:** [CRMScript.Native.Generic](CRMScript.Native.Generic)[] - The variable as an array.
+**Returns:** [CRMScript.Native.Generic](/en/automation/crmscript/reference/CRMScript.Native.Generic)[] - The variable as an array.
 
 <Note>
 If the generic does not represent an array, an exception is thrown.
@@ -2646,7 +2646,7 @@ Returns the number of array dimensions for a variable. The argument is automatic
 Integer getTypeDimensions(Generic value)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - Number of dimensions.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - Number of dimensions.
 
 <Note>
 This is the number of dimensions in, not the length of, the array!
@@ -2667,7 +2667,7 @@ Checks whether a variable is a struct or not. Any variable can be checked. The a
 Bool typeIsStruct(Generic generic)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - True if the variable is a struct.
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - True if the variable is a struct.
 
 **Example:**
 
@@ -2690,7 +2690,7 @@ Returns the variable names of a struct given its name. It does not includes func
 String[] getStructMembers(String name)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String)[] - String array of member names.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String)[] - String array of member names.
 
 <Note>
 This is the names, not the actual values. To get those, call getGenericValue() using the member names.

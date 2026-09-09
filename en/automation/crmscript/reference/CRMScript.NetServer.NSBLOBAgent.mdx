@@ -33,7 +33,7 @@ Changes the contact image link.
 Void ChangeContactImage(Integer contactId, Integer blobId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 If the Binary object ID is 0, any image link is removed from the contact.
@@ -45,7 +45,7 @@ If the Binary object ID is 0, any image link is removed from the contact.
 Void ChangePersonImage(Integer personId, Integer blobId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 If the Binary object ID is 0, any image link is removed from the person.
@@ -59,7 +59,7 @@ Changes the project image link.
 Void ChangeProductImage(Integer productId, Integer blobId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 If the Binary object ID is 0, any image link is removed from the project.
@@ -73,7 +73,7 @@ Changes the project image link.
 Void ChangeProjectImage(Integer projectId, Integer blobId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 If the Binary object ID is 0, any image link is removed from the project.
@@ -87,7 +87,7 @@ Removes the binary objects linked to the batch task, the links themselves and th
 Void CleanupBatchTask(Integer batchTaskId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## CreateDefaultBlobEntity()
 
@@ -97,7 +97,7 @@ Sets default values into a new NSBlobEntity.
 NSBlobEntity CreateDefaultBlobEntity()
 ```
 
-**Returns:** [CRMScript.NetServer.NSBlobEntity](CRMScript.NetServer.NSBlobEntity) - New BlobEntity with default values.
+**Returns:** [CRMScript.NetServer.NSBlobEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSBlobEntity) - New BlobEntity with default values.
 
 <Note>
 NetServer calculates default values (for example Country) on the entity, which is required when creating/storing a new instance.
@@ -119,7 +119,7 @@ Deletes the NSBlobEntity
 Void DeleteBlobEntity(Integer blobEntity)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -136,7 +136,7 @@ Gets a CLOB (limited to a reasonable size by the mechanics of Web Services) acco
 String GetAppData(String key)
 ```
 
-**Returns:** [CRMScript.Global.String](CRMScript.Global.String) - The applications value, suggested to be a JSON, XML or other readable structure.
+**Returns:** [CRMScript.Global.String](/en/automation/crmscript/reference/CRMScript.Global.String) - The applications value, suggested to be a JSON, XML or other readable structure.
 
 **Example:**
 
@@ -154,7 +154,7 @@ Gets an NSBlobEntity object.
 NSBlobEntity GetBlobEntity(Integer blobEntityId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSBlobEntity](CRMScript.NetServer.NSBlobEntity) - BlobEntity object.
+**Returns:** [CRMScript.NetServer.NSBlobEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSBlobEntity) - BlobEntity object.
 
 **Example:**
 
@@ -171,7 +171,7 @@ Gets the blob entity that represents the contact image binary object.
 NSBlobEntity GetBlobEntityOnContact(Integer contactId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSBlobEntity](CRMScript.NetServer.NSBlobEntity) - BlobEntity object.
+**Returns:** [CRMScript.NetServer.NSBlobEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSBlobEntity) - BlobEntity object.
 
 **Example:**
 
@@ -189,7 +189,7 @@ Gets the blob entity that represents the country flag binary object.
 NSBlobEntity GetBlobEntityOnCountry(Integer countryId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSBlobEntity](CRMScript.NetServer.NSBlobEntity) - BlobEntity object.
+**Returns:** [CRMScript.NetServer.NSBlobEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSBlobEntity) - BlobEntity object.
 
 **Example:**
 
@@ -207,7 +207,7 @@ Gets the blob entity that represents the person image binary object.
 NSBlobEntity GetBlobEntityOnPerson(Integer personId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSBlobEntity](CRMScript.NetServer.NSBlobEntity) - BlobEntity object.
+**Returns:** [CRMScript.NetServer.NSBlobEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSBlobEntity) - BlobEntity object.
 
 **Example:**
 
@@ -225,7 +225,7 @@ Gets the blob entity that represents the product image binary object.
 NSBlobEntity GetBlobEntityOnProduct(Integer productId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSBlobEntity](CRMScript.NetServer.NSBlobEntity) - BlobEntity object.
+**Returns:** [CRMScript.NetServer.NSBlobEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSBlobEntity) - BlobEntity object.
 
 **Example:**
 
@@ -243,7 +243,7 @@ Gets the blob entity that represents the project image binary object.
 NSBlobEntity GetBlobEntityOnProject(Integer projectId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSBlobEntity](CRMScript.NetServer.NSBlobEntity) - BlobEntity object.
+**Returns:** [CRMScript.NetServer.NSBlobEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSBlobEntity) - BlobEntity object.
 
 **Example:**
 
@@ -261,7 +261,7 @@ Gets the binary object as a stream
 NSStream GetBlobStream(Integer blobEntityId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream) - The binary object as a Stream.
+**Returns:** [CRMScript.NetServer.NSStream](/en/automation/crmscript/reference/CRMScript.NetServer.NSStream) - The binary object as a Stream.
 
 **Example:**
 
@@ -279,7 +279,7 @@ Returns the chat image that is displayed in chat with a specified maximum size.
 NSImage GetChatImageWithSize(Integer chatTopicId, Integer width, Integer height)
 ```
 
-**Returns:** [CRMScript.NetServer.NSImage](CRMScript.NetServer.NSImage) - The image as a System.Drawing.Image. (If the the image is returned over web services, the stream is returned as a jpeg/base64 encoded string.).
+**Returns:** [CRMScript.NetServer.NSImage](/en/automation/crmscript/reference/CRMScript.NetServer.NSImage) - The image as a System.Drawing.Image. (If the the image is returned over web services, the stream is returned as a jpeg/base64 encoded string.).
 
 **Example:**
 
@@ -299,7 +299,7 @@ Returns the contact image that is displayed in the CRM application.
 NSImage GetContactImage(Integer contactId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSImage](CRMScript.NetServer.NSImage) - The image as a System.Drawing.Image. (If the the image is returned over web services, the stream is returned as a Base64 encoded string.).
+**Returns:** [CRMScript.NetServer.NSImage](/en/automation/crmscript/reference/CRMScript.NetServer.NSImage) - The image as a System.Drawing.Image. (If the the image is returned over web services, the stream is returned as a Base64 encoded string.).
 
 **Example:**
 
@@ -317,7 +317,7 @@ Returns the contact image that is displayed in the CRM application with a specif
 NSImage GetContactImageWithSize(Integer contactId, Integer width, Integer height)
 ```
 
-**Returns:** [CRMScript.NetServer.NSImage](CRMScript.NetServer.NSImage) - The image as a System.Drawing.Image. (If the the image is returned over web services, the stream is returned as a Base64 encoded string.).
+**Returns:** [CRMScript.NetServer.NSImage](/en/automation/crmscript/reference/CRMScript.NetServer.NSImage) - The image as a System.Drawing.Image. (If the the image is returned over web services, the stream is returned as a Base64 encoded string.).
 
 **Example:**
 
@@ -337,7 +337,7 @@ Gets the output of a batchtask as a stream
 NSStream GetOutputFromBatch(Integer batchTaskId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSStream](CRMScript.NetServer.NSStream)
+**Returns:** [CRMScript.NetServer.NSStream](/en/automation/crmscript/reference/CRMScript.NetServer.NSStream)
 
 **Example:**
 
@@ -355,7 +355,7 @@ Returns the person image that is displayed in the CRM application.
 NSImage GetPersonImage(Integer personId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSImage](CRMScript.NetServer.NSImage) - The image as a System.Drawing.Image. (If the the image is returned over web services, the stream is returned as a Base64 encoded string.).
+**Returns:** [CRMScript.NetServer.NSImage](/en/automation/crmscript/reference/CRMScript.NetServer.NSImage) - The image as a System.Drawing.Image. (If the the image is returned over web services, the stream is returned as a Base64 encoded string.).
 
 **Example:**
 
@@ -373,7 +373,7 @@ Returns the person image that is displayed in the CRM application with a specifi
 NSImage GetPersonImageWithSize(Integer personId, Integer width, Integer height)
 ```
 
-**Returns:** [CRMScript.NetServer.NSImage](CRMScript.NetServer.NSImage) - The image as a System.Drawing.Image. (If the the image is returned over web services, the stream is returned as a Base64 encoded string.).
+**Returns:** [CRMScript.NetServer.NSImage](/en/automation/crmscript/reference/CRMScript.NetServer.NSImage) - The image as a System.Drawing.Image. (If the the image is returned over web services, the stream is returned as a Base64 encoded string.).
 
 **Example:**
 
@@ -393,7 +393,7 @@ Returns the product image (rank=1) that is displayed in the CRM application.
 NSImage GetProductImage(Integer productId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSImage](CRMScript.NetServer.NSImage) - The image as a System.Drawing.Image. (If the the image is returned over web services, the stream is returned as a Base64 encoded string.).
+**Returns:** [CRMScript.NetServer.NSImage](/en/automation/crmscript/reference/CRMScript.NetServer.NSImage) - The image as a System.Drawing.Image. (If the the image is returned over web services, the stream is returned as a Base64 encoded string.).
 
 **Example:**
 
@@ -411,7 +411,7 @@ Returns the product thumbnail that is displayed in the CRM application.
 NSImage GetProductThumbnail(Integer productId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSImage](CRMScript.NetServer.NSImage) - The image as a System.Drawing.Image. (If the the image is returned over web services, the stream is returned as a Base64 encoded string.).
+**Returns:** [CRMScript.NetServer.NSImage](/en/automation/crmscript/reference/CRMScript.NetServer.NSImage) - The image as a System.Drawing.Image. (If the the image is returned over web services, the stream is returned as a Base64 encoded string.).
 
 **Example:**
 
@@ -429,7 +429,7 @@ Returns the project image that is displayed in the CRM application.
 NSImage GetProjectImage(Integer projectId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSImage](CRMScript.NetServer.NSImage) - The image as a System.Drawing.Image. (If the the image is returned over web services, the stream is returned as a Base64 encoded string.).
+**Returns:** [CRMScript.NetServer.NSImage](/en/automation/crmscript/reference/CRMScript.NetServer.NSImage) - The image as a System.Drawing.Image. (If the the image is returned over web services, the stream is returned as a Base64 encoded string.).
 
 **Example:**
 
@@ -447,7 +447,7 @@ Returns the project image that is displayed in the CRM application with a specif
 NSImage GetProjectImageWithSize(Integer projectId, Integer width, Integer height)
 ```
 
-**Returns:** [CRMScript.NetServer.NSImage](CRMScript.NetServer.NSImage) - The image as a System.Drawing.Image. (If the the image is returned over web services, the stream is returned as a Base64 encoded string.).
+**Returns:** [CRMScript.NetServer.NSImage](/en/automation/crmscript/reference/CRMScript.NetServer.NSImage) - The image as a System.Drawing.Image. (If the the image is returned over web services, the stream is returned as a Base64 encoded string.).
 
 **Example:**
 
@@ -467,7 +467,7 @@ Returns the quoteline image (rank=1) that is displayed in the CRM application.
 NSImage GetQuoteLineImage(Integer quoteLineId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSImage](CRMScript.NetServer.NSImage) - The image as a System.Drawing.Image. (If the the image is returned over web services, the stream is returned as a Base64 encoded string.).
+**Returns:** [CRMScript.NetServer.NSImage](/en/automation/crmscript/reference/CRMScript.NetServer.NSImage) - The image as a System.Drawing.Image. (If the the image is returned over web services, the stream is returned as a Base64 encoded string.).
 
 **Example:**
 
@@ -485,7 +485,7 @@ Updates the existing NSBlobEntity or creates a new NSBlobEntity if the ID parame
 NSBlobEntity SaveBlobEntity(NSBlobEntity blobEntity)
 ```
 
-**Returns:** [CRMScript.NetServer.NSBlobEntity](CRMScript.NetServer.NSBlobEntity) - New or updated BlobEntity.
+**Returns:** [CRMScript.NetServer.NSBlobEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSBlobEntity) - New or updated BlobEntity.
 
 **Example:**
 
@@ -503,7 +503,7 @@ Stores an image in the database without linking it to a project or a person.
 Integer SaveImageStream(Integer type, NSImage image, String description)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer) - The blob Id.
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer) - The blob Id.
 
 <Note>
 It is possible to ChangePersonImage or ChangeProjectImage to attach image later.
@@ -527,7 +527,7 @@ Saves a project image that is displayed in the CRM application's project image s
 Void SaveProjectImage(String description, NSImage image)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## SetAppData(String,String)
 
@@ -537,7 +537,7 @@ Sets a CLOB (limited to a reasonable size by the mechanics of Web Services) acco
 Void SetAppData(String key, String data)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 <Note>
 Existing data, if any, will be overwritten. Overwrite with a blank value to delete.
@@ -560,7 +560,7 @@ Stores a binary object from its stream
 Void SetBlobStream(Integer blobEntityId, NSStream stream)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## SetContactImage(Integer,NSImage)
 
@@ -570,7 +570,7 @@ Stores the contact image that is displayed in the CRM application.
 Void SetContactImage(Integer contactId, NSImage image)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## SetPersonImage(Integer,NSImage)
 
@@ -580,7 +580,7 @@ Stores the person image that is displayed in the CRM application.
 Void SetPersonImage(Integer personId, NSImage image)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## SetProductImage(Integer,NSImage)
 
@@ -590,7 +590,7 @@ Stores the product image that is displayed in the CRM application. The image is 
 Void SetProductImage(Integer productId, NSImage image)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## SetProductThumbnail(Integer,NSImage)
 
@@ -600,7 +600,7 @@ Stores the product thumbnail that is displayed in the CRM application. The image
 Void SetProductThumbnail(Integer productId, NSImage image)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## SetProjectImage(Integer)
 
@@ -610,4 +610,4 @@ Stores the project image that is displayed in the CRM application.
 Void SetProjectImage(Integer projectId, NSImage image)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)

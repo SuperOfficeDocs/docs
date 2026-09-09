@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_ResolveUserFromInfoRequest"></a> Class User\_ResolveUserFromInfoRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_ResolveUserFromInfoRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_ResolveUserFromInfoRequest](SuperOffice.WebApi.Data.User\_ResolveUserFromInfoRequest.md)
+[User\_ResolveUserFromInfoRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_ResolveUserFromInfoRequest)
 
 #### Inherited Members
 
@@ -50,7 +50,7 @@ public Credential Credential { get; set; }
 
 #### Property Value
 
- [Credential](SuperOffice.WebApi.Data.Credential.md)
+ [Credential](/en/api/reference/webapi/SuperOffice.WebApi.Data.Credential)
 
 ### <a id="SuperOffice_WebApi_Data_User_ResolveUserFromInfoRequest_Emails"></a> Emails
 
@@ -90,5 +90,5 @@ public UserType UserType { get; set; }
 
 #### Property Value
 
- [UserType](SuperOffice.WebApi.Data.UserType.md)
+ [UserType](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserType)
 

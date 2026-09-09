@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Archive_GetActivityFilterRequest"></a> Class Archive\_GetActivityFilterRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Archive_GetActivityFilterRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Archive\_GetActivityFilterRequest](SuperOffice.WebApi.Data.Archive\_GetActivityFilterRequest.md)
+[Archive\_GetActivityFilterRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Archive_GetActivityFilterRequest)
 
 #### Inherited Members
 

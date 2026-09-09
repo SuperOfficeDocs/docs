@@ -33,7 +33,7 @@ Adds multiple project members to a project
 Void AddProjectMembers(Integer projectEntityId, NSProjectMember[] projectMembers)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## CreateDefaultProjectEntity()
 
@@ -43,7 +43,7 @@ Sets default values into a new NSProjectEntity.
 NSProjectEntity CreateDefaultProjectEntity()
 ```
 
-**Returns:** [CRMScript.NetServer.NSProjectEntity](CRMScript.NetServer.NSProjectEntity)
+**Returns:** [CRMScript.NetServer.NSProjectEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSProjectEntity)
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
@@ -65,7 +65,7 @@ Sets default values into a new NSProjectEventEntity.
 NSProjectEventEntity CreateDefaultProjectEventEntity()
 ```
 
-**Returns:** [CRMScript.NetServer.NSProjectEventEntity](CRMScript.NetServer.NSProjectEventEntity)
+**Returns:** [CRMScript.NetServer.NSProjectEventEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSProjectEventEntity)
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
@@ -87,7 +87,7 @@ Sets default values into a new NSProjectMember.
 NSProjectMember CreateDefaultProjectMember()
 ```
 
-**Returns:** [CRMScript.NetServer.NSProjectMember](CRMScript.NetServer.NSProjectMember)
+**Returns:** [CRMScript.NetServer.NSProjectMember](/en/automation/crmscript/reference/CRMScript.NetServer.NSProjectMember)
 
 <Note>
 NetServer calculates default values (for example, Country) on the entity, which is required when creating/storing a new instance
@@ -109,7 +109,7 @@ Creates a new project based on external duplicate
 Integer CreateNewEntry(NSDuplicateEntry duplicate)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 **Example:**
 
@@ -127,7 +127,7 @@ Deletes the NSProjectEntity
 DeleteProjectEntity(Integer projectEntity)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -144,7 +144,7 @@ Deletes the NSProjectEventEntity
 DeleteProjectEventEntity(Integer projectEventEntity)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -161,7 +161,7 @@ Deletes a project event based on a project ID. Does not delete the project, but 
 Void DeleteProjectEventEntityFromProjectId(Integer projectId)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -179,7 +179,7 @@ Deletes the NSProjectMember
 DeleteProjectMember(Integer projectMember)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 **Example:**
 
@@ -196,7 +196,7 @@ Deletes project-member rows.
 Void DeleteProjectMemberByIds(Integer[] projectMemberIds)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## DeleteProjectMembers(Integer,Integer[])
 
@@ -206,7 +206,7 @@ Deletes the given project members from a project
 Void DeleteProjectMembers(Integer projectEntityId, Integer[] memberIds)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## GetDuplicateRules()
 
@@ -216,7 +216,7 @@ Retrieve all available duplicate rules for project
 NSDuplicateRule[] GetDuplicateRules()
 ```
 
-**Returns:** [CRMScript.NetServer.NSDuplicateRule](CRMScript.NetServer.NSDuplicateRule)[]
+**Returns:** [CRMScript.NetServer.NSDuplicateRule](/en/automation/crmscript/reference/CRMScript.NetServer.NSDuplicateRule)[]
 
 **Example:**
 
@@ -233,7 +233,7 @@ Gets duplicates(exact or similar in the database) based on the name
 NSDuplicateEntry[] GetDuplicates(String name)
 ```
 
-**Returns:** [CRMScript.NetServer.NSDuplicateEntry](CRMScript.NetServer.NSDuplicateEntry)[]
+**Returns:** [CRMScript.NetServer.NSDuplicateEntry](/en/automation/crmscript/reference/CRMScript.NetServer.NSDuplicateEntry)[]
 
 **Example:**
 
@@ -251,7 +251,7 @@ Returns projects where an user is project member.
 NSProject[] GetMyMemberProjects()
 ```
 
-**Returns:** [CRMScript.NetServer.NSProject](CRMScript.NetServer.NSProject)[]
+**Returns:** [CRMScript.NetServer.NSProject](/en/automation/crmscript/reference/CRMScript.NetServer.NSProject)[]
 
 **Example:**
 
@@ -268,7 +268,7 @@ Gets all project events that belongs to the currently logged-on user.
 NSProjectEvent[] GetMyProjectEvents()
 ```
 
-**Returns:** [CRMScript.NetServer.NSProjectEvent](CRMScript.NetServer.NSProjectEvent)[] - The list of events is filtered by the Audience Visibility restrictions set when the project event is created.
+**Returns:** [CRMScript.NetServer.NSProjectEvent](/en/automation/crmscript/reference/CRMScript.NetServer.NSProjectEvent)[] - The list of events is filtered by the Audience Visibility restrictions set when the project event is created.
 
 **Example:**
 
@@ -285,7 +285,7 @@ Returns projects belonging to an associate. If memberProjects is false only the 
 NSProject[] GetMyProjects(Bool includeMemberProjects)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProject](CRMScript.NetServer.NSProject)[]
+**Returns:** [CRMScript.NetServer.NSProject](/en/automation/crmscript/reference/CRMScript.NetServer.NSProject)[]
 
 **Example:**
 
@@ -303,7 +303,7 @@ Gets published projects from the logged in user.
 NSProject[] GetMyPublishedProjects()
 ```
 
-**Returns:** [CRMScript.NetServer.NSProject](CRMScript.NetServer.NSProject)[]
+**Returns:** [CRMScript.NetServer.NSProject](/en/automation/crmscript/reference/CRMScript.NetServer.NSProject)[]
 
 **Example:**
 
@@ -318,7 +318,7 @@ NSProject[] res = agent.GetMyPublishedProjects();
 NSAppointment GetNextMilestone(Integer projectId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSAppointment](CRMScript.NetServer.NSAppointment)
+**Returns:** [CRMScript.NetServer.NSAppointment](/en/automation/crmscript/reference/CRMScript.NetServer.NSAppointment)
 
 **Example:**
 
@@ -334,7 +334,7 @@ NSAppointment res = agent.GetNextMilestone(projectId);
 Integer GetNextProjectStatus(Integer projectId)
 ```
 
-**Returns:** [CRMScript.Global.Integer](CRMScript.Global.Integer)
+**Returns:** [CRMScript.Global.Integer](/en/automation/crmscript/reference/CRMScript.Global.Integer)
 
 ## GetProject(Integer)
 
@@ -344,7 +344,7 @@ Gets an NSProject object.
 NSProject GetProject(Integer projectId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProject](CRMScript.NetServer.NSProject)
+**Returns:** [CRMScript.NetServer.NSProject](/en/automation/crmscript/reference/CRMScript.NetServer.NSProject)
 
 **Example:**
 
@@ -361,7 +361,7 @@ Gets an NSProjectEntity object.
 NSProjectEntity GetProjectEntity(Integer projectEntityId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProjectEntity](CRMScript.NetServer.NSProjectEntity)
+**Returns:** [CRMScript.NetServer.NSProjectEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSProjectEntity)
 
 **Example:**
 
@@ -378,7 +378,7 @@ Get a project entity with no project members. Project members property is always
 NSProjectEntity GetProjectEntityWithoutMembers(Integer projectEntityId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProjectEntity](CRMScript.NetServer.NSProjectEntity)
+**Returns:** [CRMScript.NetServer.NSProjectEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSProjectEntity)
 
 **Example:**
 
@@ -395,7 +395,7 @@ Gets an NSProjectEvent object.
 NSProjectEvent GetProjectEvent(Integer projectEventId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProjectEvent](CRMScript.NetServer.NSProjectEvent)
+**Returns:** [CRMScript.NetServer.NSProjectEvent](/en/automation/crmscript/reference/CRMScript.NetServer.NSProjectEvent)
 
 **Example:**
 
@@ -412,7 +412,7 @@ Gets an NSProjectEventEntity object.
 NSProjectEventEntity GetProjectEventEntity(Integer projectEventEntityId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProjectEventEntity](CRMScript.NetServer.NSProjectEventEntity)
+**Returns:** [CRMScript.NetServer.NSProjectEventEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSProjectEventEntity)
 
 **Example:**
 
@@ -429,7 +429,7 @@ Gets an NSProjectEventEntity based on a projectId.
 NSProjectEventEntity GetProjectEventEntityFromProjectId(Integer projectId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProjectEventEntity](CRMScript.NetServer.NSProjectEventEntity)
+**Returns:** [CRMScript.NetServer.NSProjectEventEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSProjectEventEntity)
 
 **Example:**
 
@@ -447,7 +447,7 @@ Gets an array of NSProjectEvent objects.
 NSProjectEvent[] GetProjectEventList(Integer[]  projectEventIds)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProjectEvent](CRMScript.NetServer.NSProjectEvent)[]
+**Returns:** [CRMScript.NetServer.NSProjectEvent](/en/automation/crmscript/reference/CRMScript.NetServer.NSProjectEvent)[]
 
 **Example:**
 
@@ -465,7 +465,7 @@ Gets an NSProjectEvent object from a project and a person.
 NSProjectEvent GetProjectEventOnPerson(Integer projectId, Integer personId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProjectEvent](CRMScript.NetServer.NSProjectEvent)
+**Returns:** [CRMScript.NetServer.NSProjectEvent](/en/automation/crmscript/reference/CRMScript.NetServer.NSProjectEvent)
 
 ## GetProjectEventsOnPerson(Integer)
 
@@ -475,7 +475,7 @@ Gets all project events that belongs to the person specified.
 NSProjectEvent[] GetProjectEventsOnPerson(Integer personId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProjectEvent](CRMScript.NetServer.NSProjectEvent)[] - The list of events are filtered by the Audience Visibility restrictions set when the project event is created.
+**Returns:** [CRMScript.NetServer.NSProjectEvent](/en/automation/crmscript/reference/CRMScript.NetServer.NSProjectEvent)[] - The list of events are filtered by the Audience Visibility restrictions set when the project event is created.
 
 **Example:**
 
@@ -493,7 +493,7 @@ Returns the project image that is displayed in the CRM application.
 NSImage GetProjectImage(Integer projectId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSImage](CRMScript.NetServer.NSImage)
+**Returns:** [CRMScript.NetServer.NSImage](/en/automation/crmscript/reference/CRMScript.NetServer.NSImage)
 
 **Example:**
 
@@ -511,7 +511,7 @@ Gets an array of Project objects.
 NSProject[] GetProjectList(Integer[] projectIds)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProject](CRMScript.NetServer.NSProject)[]
+**Returns:** [CRMScript.NetServer.NSProject](/en/automation/crmscript/reference/CRMScript.NetServer.NSProject)[]
 
 **Example:**
 
@@ -529,7 +529,7 @@ Gets an NSProjectMember object.
 NSProjectMember GetProjectMember(Integer projectMemberId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProjectMember](CRMScript.NetServer.NSProjectMember)
+**Returns:** [CRMScript.NetServer.NSProjectMember](/en/automation/crmscript/reference/CRMScript.NetServer.NSProjectMember)
 
 **Example:**
 
@@ -546,7 +546,7 @@ Returns an array of project members
 NSProjectMember[] GetProjectMembers(Integer projectId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProjectMember](CRMScript.NetServer.NSProjectMember)[]
+**Returns:** [CRMScript.NetServer.NSProjectMember](/en/automation/crmscript/reference/CRMScript.NetServer.NSProjectMember)[]
 
 **Example:**
 
@@ -564,7 +564,7 @@ Returns an array of project members.
 NSProjectMember[] GetProjectMembersById(Integer[] projectMemberIds)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProjectMember](CRMScript.NetServer.NSProjectMember)[]
+**Returns:** [CRMScript.NetServer.NSProjectMember](/en/automation/crmscript/reference/CRMScript.NetServer.NSProjectMember)[]
 
 **Example:**
 
@@ -582,7 +582,7 @@ Returns all projects where the given contact has project members.
 NSProject[] GetProjectsFromContact(Integer contactId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProject](CRMScript.NetServer.NSProject)[]
+**Returns:** [CRMScript.NetServer.NSProject](/en/automation/crmscript/reference/CRMScript.NetServer.NSProject)[]
 
 **Example:**
 
@@ -600,7 +600,7 @@ Returns all projects where the person is project member.
 NSProject[] GetProjectsFromPerson(Integer personId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProject](CRMScript.NetServer.NSProject)[]
+**Returns:** [CRMScript.NetServer.NSProject](/en/automation/crmscript/reference/CRMScript.NetServer.NSProject)[]
 
 **Example:**
 
@@ -618,7 +618,7 @@ Gets published project by project ID.
 NSProject GetPublishedProject(Integer projectId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProject](CRMScript.NetServer.NSProject)
+**Returns:** [CRMScript.NetServer.NSProject](/en/automation/crmscript/reference/CRMScript.NetServer.NSProject)
 
 **Example:**
 
@@ -636,7 +636,7 @@ Gets published projects by project IDs.
 NSProject[] GetPublishedProjects(Integer[] projectIds)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProject](CRMScript.NetServer.NSProject)[]
+**Returns:** [CRMScript.NetServer.NSProject](/en/automation/crmscript/reference/CRMScript.NetServer.NSProject)[]
 
 **Example:**
 
@@ -654,7 +654,7 @@ Gets published projects where person is a member
 NSProject[] GetPublishedProjectsOnPersonId(Integer personId)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProject](CRMScript.NetServer.NSProject)[]
+**Returns:** [CRMScript.NetServer.NSProject](/en/automation/crmscript/reference/CRMScript.NetServer.NSProject)[]
 
 **Example:**
 
@@ -670,7 +670,7 @@ NSProject[] res = agent.GetPublishedProjectsOnPersonId(personId);
 Bool HasGuide(Integer projectId)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool) - Does this project have a guide associated with its project type?
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool) - Does this project have a guide associated with its project type?
 
 **Example:**
 
@@ -686,7 +686,7 @@ Bool res = agent.HasGuide(projectId);
 Bool HasGuideActivities(Integer projectId)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 ## IsNumberValid(Integer,String)
 
@@ -696,7 +696,7 @@ Checks if the number is unique or required.
 Bool IsNumberValid(Integer contactId, String number)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 <Note>
 The setting is configured from admin under system options.
@@ -719,7 +719,7 @@ Merges two projects into one, removing the source project in the process
 Void Merge(Integer sourceProjectId, Integer destinationProjectId, Bool replaceEmptyFieldsOnDestination)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## OfferAutoNextStatusOnAppointmentCompleted(Integer)
 
@@ -727,7 +727,7 @@ Void Merge(Integer sourceProjectId, Integer destinationProjectId, Bool replaceEm
 Bool OfferAutoNextStatusOnAppointmentCompleted(Integer appointmentId)
 ```
 
-**Returns:** [CRMScript.Global.Bool](CRMScript.Global.Bool)
+**Returns:** [CRMScript.Global.Bool](/en/automation/crmscript/reference/CRMScript.Global.Bool)
 
 ## SaveProjectEntity(NSProjectEntity)
 
@@ -737,7 +737,7 @@ Updates the existing NSProjectEntity or creates a new NSProjectEntity if the  ID
 NSProjectEntity SaveProjectEntity(NSProjectEntity projectEntity)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProjectEntity](CRMScript.NetServer.NSProjectEntity) - New or updated NSProjectEntity.
+**Returns:** [CRMScript.NetServer.NSProjectEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSProjectEntity) - New or updated NSProjectEntity.
 
 **Example:**
 
@@ -755,7 +755,7 @@ Save or update a project entity, the project members are ignored.
 NSProjectEntity SaveProjectEntityWithoutMembers(NSProjectEntity projectEntity)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProjectEntity](CRMScript.NetServer.NSProjectEntity) - New or updated NSProjectEntity.
+**Returns:** [CRMScript.NetServer.NSProjectEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSProjectEntity) - New or updated NSProjectEntity.
 
 **Example:**
 
@@ -775,7 +775,7 @@ Returns.
 NSProjectEventEntity SaveProjectEventEntity(NSProjectEventEntity entity)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProjectEventEntity](CRMScript.NetServer.NSProjectEventEntity) - The new or updated NSProjectEventEntity.
+**Returns:** [CRMScript.NetServer.NSProjectEventEntity](/en/automation/crmscript/reference/CRMScript.NetServer.NSProjectEventEntity) - The new or updated NSProjectEventEntity.
 
 **Example:**
 
@@ -793,7 +793,7 @@ Updates the existing NSProjectMember or creates a new NSProjectMember if the id 
 NSProjectMember SaveProjectMember(NSProjectMember projectMember)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProjectMember](CRMScript.NetServer.NSProjectMember)
+**Returns:** [CRMScript.NetServer.NSProjectMember](/en/automation/crmscript/reference/CRMScript.NetServer.NSProjectMember)
 
 **Example:**
 
@@ -811,7 +811,7 @@ Saves role and comment on an array of project members represented by IDs.
 Void SaveProjectMembersFunctionAndComment(Integer[] projectMemberIds, Integer roleId, String comment)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## SetDuplicateRulesStatus(NSDuplicateRule[])
 
@@ -821,7 +821,7 @@ Sets which duplicate rules should be active or not
 Void SetDuplicateRulesStatus(NSDuplicateRule[] rules)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## SetProjectImage(Integer,NSImage)
 
@@ -831,7 +831,7 @@ Stores the project image that is displayed in the CRM application.
 Void SetProjectImage(Integer projectId, NSImage image)
 ```
 
-**Returns:** [CRMScript.Global.Void](CRMScript.Global.Void)
+**Returns:** [CRMScript.Global.Void](/en/automation/crmscript/reference/CRMScript.Global.Void)
 
 ## UpdateProjectMember(NSProjectMember)
 
@@ -841,7 +841,7 @@ Updates an NSProjectMember row.
 NSProjectMember UpdateProjectMember(NSProjectMember projectMember)
 ```
 
-**Returns:** [CRMScript.NetServer.NSProjectMember](CRMScript.NetServer.NSProjectMember)
+**Returns:** [CRMScript.NetServer.NSProjectMember](/en/automation/crmscript/reference/CRMScript.NetServer.NSProjectMember)
 
 **Example:**
 
@@ -859,7 +859,7 @@ Checks that entity is ready for saving, return error messages by field.
 Map ValidateProjectEntity(NSProjectEntity projectEntity)
 ```
 
-**Returns:** [CRMScript.Native.Map](CRMScript.Native.Map)
+**Returns:** [CRMScript.Native.Map](/en/automation/crmscript/reference/CRMScript.Native.Map)
 
 **Example:**
 
