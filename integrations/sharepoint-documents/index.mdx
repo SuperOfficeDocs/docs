@@ -3,8 +3,8 @@ uid: sharepoint-documents
 title: SharePoint documents
 description: SharePoint document integration for SuperOffice
 keywords: ['SharePoint', 'document', 'Microsoft Entra domain', 'ME-ID', 'AAD']
-author: Frode Berntsen
-date: 01.15.2024
+author: Frode Berntsen, schildea
+date: 09.03.2026
 so_version:
 content_type: concept
 category: integration
@@ -22,6 +22,7 @@ userflow_index: true
 import ReqDataRights from "./snippets/req-data-rights.md";
 import ReqGeneral from "./snippets/req-general.md";
 import ReqUsage from "./snippets/req-usage.md";
+import WarnSharingSettingsRequired from "./snippets/warn-sharing-settings-required.mdx";
 
 In today's digital age, effective document management is essential for businesses to streamline their operations and enhance collaboration among team members.
 
@@ -63,6 +64,10 @@ With SharePoint as your document library, all SuperOffice users MUST log in with
 
 SuperOffice users in this tenant cannot authenticate any longer with password, as they will be redirected to Microsoft to authenticate.
 </Danger>
+
+### Visible for sharing settings
+
+<WarnSharingSettingsRequired />
 
 ### Data rights for a role
 
