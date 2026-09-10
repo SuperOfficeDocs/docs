@@ -11,6 +11,8 @@ topic: archive providers
 redirect_from: /en/api/netserver/archive-providers/index
 ---
 
+import InstallSkill from "/snippets/install-skill.mdx";
+
 How to use archive providers for simple to complex data sources.
 
 From low-level Objectified-SQL to higher-level business Entities, SuperOffice integrations have several ways to access to SuperOffice data. Complete access to the database through web services, however, is subject to all kinds of security threats and therefore is not a simple problem to solve. Archive providers were later introduced as a means to execute complex queries through web services in a secure and easy-to-use manner. This section describes what they are and how to use them.
@@ -104,6 +106,12 @@ using(SoSession newSession = SoSession.Authenticate("SAL0", ""))
   }
 }
 ```
+
+## Use AI tools
+
+If you use an AI coding assistant such as Cursor or Claude Code to build against SuperOffice, install the SuperOffice CRM skill for up-to-date, agent-ready context.
+
+<InstallSkill />
 
 [1]: /en/api/archive-providers/reference/index
 [2]: /en/api/archive-providers/encoded-values
