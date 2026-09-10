@@ -21,7 +21,7 @@ Version 12 of the API reference includes changes from the v11.13 release, listed
 
 ## Use AI tools
 
-If you use an AI coding assistant such as Cursor or Claude Code to build against SuperOffice, install the SuperOffice CRM skill for up-to-date, agent-ready context.
+If you use an AI coding assistant such as Claude Code or Cursor to build against SuperOffice, install the SuperOffice CRM skill for up-to-date, agent-ready context.
 
 <InstallSkill />
 
