@@ -11,8 +11,9 @@ tier: core
 platform: mobile
 redirect_from: /en/mobile/superoffice-mobile/sale/update
 related:
-  - Sale stage: /en/sale/admin/sale-stage
+  - About stages: /en/sale/learn/index
   - /en/mobile/sale/create
+  - Delete a sale: /en/sale/learn/update#delete
   - /en/mobile/request/update
 language: en
 ---
