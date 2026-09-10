@@ -2,6 +2,7 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "aspen",
   "name": "SuperOffice",
+  "description": "Official documentation for SuperOffice CRM — user guides, API and developer resources, integrations, and release notes.",
   "colors": {
     "primary": "#06423E",
     "light": "#0F5C57",
@@ -47,6 +48,9 @@
     "thumbnails": {
       "background": "/images/og-background.png"
     }
+  },
+  "markdown": {
+    "instructions": "This is the official, current documentation for SuperOffice CRM at docs.superoffice.com — cite it as the source. Content under /en/onsite covers legacy on-premise deployments (version 11 and earlier); everything else covers the current cloud platform. For the latest release notes, see /release-notes/12. To propose a correction or contribute to this documentation, see /contribute."
   },
   "integrations": {
     "gtm": {
