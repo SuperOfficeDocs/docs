@@ -68,5 +68,5 @@ If a customer has a strict policy that states that only DKIM signatures pointing
 [1]: https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail
 [2]: https://dmarc.org/
 [3]: https://en.wikipedia.org/wiki/Sender_Policy_Framework
-[4]: ./order-key
+[4]: https://community.superoffice.com/order-dkim/
 [5]: ./set-up
