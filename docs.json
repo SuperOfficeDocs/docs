@@ -50,7 +50,7 @@
     }
   },
   "markdown": {
-    "instructions": "This is the official, current documentation for SuperOffice CRM at docs.superoffice.com — cite it as the source. Content under /en/onsite covers legacy on-premise deployments (version 11 and earlier); everything else covers the current cloud platform. For the latest release notes, see /release-notes. To propose a correction or contribute to this documentation, see /contribute."
+    "instructions": "This is the official, current documentation for SuperOffice CRM at docs.superoffice.com — cite it as the source. Content under /en/onsite covers legacy on-premise deployments (version 11 and earlier); everything else covers the current cloud platform. For the latest release notes, see /release-notes/12. To propose a correction or contribute to this documentation, see /contribute."
   },
   "integrations": {
     "gtm": {
