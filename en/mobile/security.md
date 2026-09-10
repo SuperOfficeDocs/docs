@@ -6,7 +6,7 @@ description: Mobile CRM security in CRM Online
 keywords: ['mobile', 'pocket']
 author: Martin Pavlas
 date: 06.10.2026
-so_version: 11.1
+so_version: 11.1.12
 content_type: concept
 tier: core
 platform: mobile
@@ -83,8 +83,14 @@ SuperOffice identity provider [SuperID][7], handling federation with other syste
 * Access tokens can't be shared between applications.
 * The tokens are unique per user and application and are stored on the device.
 * WebTools, MailLink, and the mobile client uses industry-standard OAuth 2.0 for Native Apps ([RFC 8252][9]).
-* Fingerprint authentication  [is available only for SuperOffice Onsite customers][10]
+* Biometric authentication (fingerprint or face ID) is available for Mobile CRM sign-in.
 * The login screen in Mobile CRM for online customers is the central website that is shared with the web client.
+
+### Biometric login
+
+Log in with your fingerprint or face ID instead of a password.
+
+The option appears the first time you open Mobile CRM after an update. Tap **Yes** to turn it on.
 
 ### Authentication and IdP
 
@@ -155,7 +161,6 @@ A: Enable IdP for all users, and enable 2FA for the IdP provider. No option to s
 [7]: ../online/identity/superid/sign-in-services
 [8]: ../online/identity/superid/howto/federated-sign-in-guide
 [9]: https://tools.ietf.org/html/rfc5282
-[10]: https://online2.superoffice.com/Cust1990/CS/scripts/customer.fcgi?_sf=0&custSessionKey=&customerLang=en&noCookies=true&action=viewKbEntry&id=112935#2
 
 [img1]: /media/loc/en/mobile/imagevq62n.png
 [img2]: /media/loc/en/mobile/global-preferences-mobile.png

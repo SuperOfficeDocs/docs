@@ -4,12 +4,17 @@ title: Update sale
 description: How to update a sale in SuperOffice Mobile CRM.
 keywords: ['open', 'sold', 'lost', 'stalled', 'stage', 'sale']
 author: digitaldiina
-date: 06.10.2026
+date: 09.09.2026
 so_version: 11.1
 content_type: howto
 tier: core
 platform: mobile
 redirect_from: /en/mobile/superoffice-mobile/sale/update
+related:
+  - About stages: /en/sale/learn/index
+  - /en/mobile/sale/create
+  - Delete a sale: /en/sale/learn/update#delete
+  - /en/mobile/request/update
 language: en
 ---
 
@@ -62,17 +67,5 @@ When available, you will be able to link a sale to an **incoming request** for b
 1. Tap <i class="ph ph-pencil-simple" aria-label="Edit icon"></i> to enter edit mode.
 1. Flick down and tap **Sale**, then select the relevant sale.
 1. Tap **Save**. The linked request will then appear in the **Requests** tab of that sale.
-
-## Related content
-
-* [About stages][3]
-* [Create a sale (in Mobile CRM)][1]
-* [Delete a sale (in SuperOffice CRM)][2]
-* [Update a request][4]
-
-[1]: ./create
-[2]: /en/sale/learn/delete
-[3]: /en/sale/learn/stages
-[4]: ../request/update
 
 [img2]: /media/loc/en/mobile/sale-details.png

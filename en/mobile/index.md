@@ -3,10 +3,10 @@ uid: help-en-mobile-crm-intro
 title: Mobile CRM - Access your CRM on the go
 sidebarTitle: "Introduction"
 description: Discover what's new in the refreshed Mobile CRM and how to get started on the go.
-keywords: ['mobile CRM app', 'SuperOffice mobile CRM', 'mobile', 'customer info', 'sales', 'on the go', 'refreshed interface']
+keywords: ['mobile CRM app', 'SuperOffice mobile CRM', 'mobile', 'on the go']
 author: digitaldiina
-date: 06.10.2026
-so_version: 11.1
+date: 08.25.2026
+so_version: 11.1.16
 content_type: concept
 tier: core
 platform: mobile
@@ -30,17 +30,17 @@ Whether you're meeting a customer, following up on a sale, or responding to serv
 
 ## What's new
 
-### Refreshed interface
+### Voice notes
 
-Cleaner, more intuitive design with thumb-friendly navigation and faster access to information.
+Dictate a note instead of typing it.
 
-### Compressed views
+### Request relations
 
-See contacts, activities, documents, sales, and projects in a single scrollable view-no need to tap through tabs.
+See requests that are linked to each other, and get a quick summary of a conversation.
 
-### Real-time notifications
+### Redesigned welcome screen
 
-Stay on top of tasks, updates, and approvals as they happen.
+A refreshed screen for logging in.
 
 ## What you can do with Mobile CRM
 
