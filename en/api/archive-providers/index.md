@@ -107,10 +107,6 @@ using(SoSession newSession = SoSession.Authenticate("SAL0", ""))
 }
 ```
 
-## Use AI tools
-
-If you use an AI coding assistant such as Claude Code or Cursor to build against SuperOffice, install the SuperOffice CRM skill for up-to-date, agent-ready context.
-
 <InstallSkill />
 
 [1]: /en/api/archive-providers/reference/index
