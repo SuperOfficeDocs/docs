@@ -11,11 +11,15 @@ category: api
 language: en
 ---
 
+import InstallSkill from "/snippets/install-skill.mdx";
+
 Version 12 of the API reference includes changes from the v11.13 release, listed by major.minor version.
 
 * [(12.0)][1]
 * [(12.1)][2]
 * [(12.2)][3]
+
+<InstallSkill />
 
 [1]: /release-notes/12/api/changes-webapi-12.0.342.0
 [2]: /release-notes/12/api/changes-webapi-12.1.1412
