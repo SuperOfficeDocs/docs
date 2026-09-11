@@ -15,12 +15,23 @@ language: en
 
 ## Product integrations updates
 
-* [SuperOffice for Outlook][3] - 6.3.5 (23.06.2026) - Search in the same field for company and contact
-* [SuperOffice for Outlook][3] - 6.3.0 (11.05.2026) - Shared mailbox, Pin the SuperOffice side panel, Archive attachments does not contain images
+* [SuperOffice for Outlook][3] - 6.4.4 (20.08.2026)
+  * Email archive status
+  * Stay informed with in-app announcements
+* [SuperOffice for Outlook][3] - 6.4.2 (19.08.2026)
+  * Archive reminder when sending email
+* [SuperOffice for Outlook][3] - 6.3.5 (23.06.2026)
+  * Search in the same field for company and contact
+* [SuperOffice for Outlook][3] - 6.3.0 (11.05.2026)
+  * Shared mailbox
+  * Pin the SuperOffice side panel
+  * Archive attachments does not contain images
 * [SuperOffice WebTools guide][21] - (04.05.2026)
 * [SuperNotes integration guide][43] - (04.02.2026)
 * [Zapier][15] - 3.5 (09.10.2025) - Breaking changes and improvements
-* [Video meetings][13] - 2.9 (01.09.2025) - Set configurations - Prefer direct link to Microsoft Teams
+* [Video meetings][13] - 2.9 (01.09.2025)
+  * Set configurations
+  * Prefer direct link to Microsoft Teams
 
 Documentation for all SuperOffice integrations is available at [docs.superoffice.com/integrations][26].
 
