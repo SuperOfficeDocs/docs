@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Flag (never fail) any PR that adds or changes a `boost` value (see #472).
 
-`boost` is Mintlify's on-site search relevance multiplier — page-level frontmatter or a
+`boost` is Mintlify's own search-box relevance multiplier — page-level frontmatter or a
 `docs.json`/`config/nav-*.json` navigation-group key. An unreviewed extreme value can make a
 barely-relevant page dominate search results repo-wide (Mintlify's own guidance warns against
 values above 10), and there was no CI signal at all before this guard: the property could be

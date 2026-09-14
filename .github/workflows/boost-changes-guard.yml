@@ -38,11 +38,17 @@ jobs:
         with:
           script: |
             const summary = process.env.BOOST_SUMMARY;
+            // The reviewer to notify is a repository variable, not a literal handle in
+            // tracked source: a public GitHub @-mention notifies and links to a real
+            // profile, so it doesn't belong in a file anyone can read. Falls back to no
+            // mention at all if the variable isn't set, rather than posting a broken one.
+            const mention = process.env.BOOST_GUARD_MENTION ? `${process.env.BOOST_GUARD_MENTION} ` : '';
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              body: `@digitaldiina this PR adds or changes a \`boost\` value:\n\n${summary}\n\nSee [Metadata][1] for Mintlify's guidance on valid ranges before merging.\n\n[1]: https://docs.superoffice.com/contribute/markdown-guide/metadata`,
+              body: `${mention}This PR adds or changes a \`boost\` value:\n\n${summary}\n\nSee [Metadata][1] for Mintlify's guidance on valid ranges before merging.\n\n[1]: https://docs.superoffice.com/contribute/markdown-guide/metadata`,
             });
         env:
           BOOST_SUMMARY: ${{ steps.check.outputs.boost_summary }}
+          BOOST_GUARD_MENTION: ${{ vars.BOOST_GUARD_MENTION }}
