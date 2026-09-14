@@ -72,14 +72,14 @@ Klicken Sie auf eine E-Mail in der [Bereichsregisterkarte Aktivitäten][14], um 
 ![E-Mail-Vorschau mit hervorgehobenen Aufgabenmenü-Optionen -screenshot][img1]
 
 [1]: /de/email/inbox/learn/index
-[2]: ../../../../integrations/gmail-link/index
-[3]: ../../../../integrations/gmail-link/email-archive-incoming
-[4]: ../../../../integrations/gmail-link/archive-emails-as-activities
-[5]: ../../../../integrations/gmail-link/archive-attachments
-[6]: ../../../../integrations/mail-link/index
-[7]: ../../../../integrations/mail-link/archive-as-activity
-[8]: ../../../../integrations/mail-link/archive-on-contact
-[9]: ../../../../integrations/mail-link/archive-attachment
+[2]: /integrations/gmail-link/index
+[3]: /integrations/gmail-link/email-archive-incoming
+[4]: /integrations/gmail-link/archive-emails-as-activities
+[5]: /integrations/gmail-link/archive-attachments
+[6]: /integrations/mail-link/index
+[7]: /integrations/mail-link/archive-as-activity
+[8]: /integrations/mail-link/archive-on-contact
+[9]: /integrations/mail-link/archive-attachment
 [11]: /de/contact/learn/send-email
 [12]: /de/document/learn/send-as-email
 [13]: /de/learn/getting-started/connect-your-accounts

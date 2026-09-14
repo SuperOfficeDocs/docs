@@ -72,14 +72,14 @@ Klik op een e-mail in het [sectietabblad Activiteiten][14] om de details te beki
 ![E-mailvoorbeeld met gemarkeerde taakmenuopties -screenshot][img1]
 
 [1]: /nl/email/inbox/learn/index
-[2]: ../../../../integrations/gmail-link/index
-[3]: ../../../../integrations/gmail-link/email-archive-incoming
-[4]: ../../../../integrations/gmail-link/archive-emails-as-activities
-[5]: ../../../../integrations/gmail-link/archive-attachments
-[6]: ../../../../integrations/mail-link/index
-[7]: ../../../../integrations/mail-link/archive-as-activity
-[8]: ../../../../integrations/mail-link/archive-on-contact
-[9]: ../../../../integrations/mail-link/archive-attachment
+[2]: /integrations/gmail-link/index
+[3]: /integrations/gmail-link/email-archive-incoming
+[4]: /integrations/gmail-link/archive-emails-as-activities
+[5]: /integrations/gmail-link/archive-attachments
+[6]: /integrations/mail-link/index
+[7]: /integrations/mail-link/archive-as-activity
+[8]: /integrations/mail-link/archive-on-contact
+[9]: /integrations/mail-link/archive-attachment
 [11]: /nl/contact/learn/send-email
 [12]: /nl/document/learn/send-as-email
 [13]: /nl/learn/getting-started/connect-your-accounts
