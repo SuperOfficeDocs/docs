@@ -1,6 +1,7 @@
 ---
 uid: crmscript-sale
-title: Sales
+title: Sales (CRMScript)
+sidebarTitle: "Sales"
 description: Working with sales in CRMScript
 keywords: ['sale']
 author: Bergfrid Dias
@@ -68,10 +69,10 @@ For a complete list of fields, see the [database reference][20].
 [6]: /en/automation/crmscript/howto/sale/guides
 [7]: /en/automation/crmscript/howto/sale/currency
 [8]: /en/automation/crmscript/howto/sale/samples
-[10]: ../../reference/CRMScript.NetServer.NSSaleAgent
-[11]: ../../reference/CRMScript.NetServer.NSSale
-[12]: ../../reference/CRMScript.NetServer.NSSaleEntity
-[13]: ../../reference/CRMScript.NetServer.NSSaleStakeholder
-[14]: ../../reference/CRMScript.NetServer.NSSaleStageEntity
-[15]: ../../reference/CRMScript.NetServer.NSSaleType
+[10]: /en/automation/crmscript/reference/CRMScript.NetServer.NSSaleAgent
+[11]: /en/automation/crmscript/reference/CRMScript.NetServer.NSSale
+[12]: /en/automation/crmscript/reference/CRMScript.NetServer.NSSaleEntity
+[13]: /en/automation/crmscript/reference/CRMScript.NetServer.NSSaleStakeholder
+[14]: /en/automation/crmscript/reference/CRMScript.NetServer.NSSaleStageEntity
+[15]: /en/automation/crmscript/reference/CRMScript.NetServer.NSSaleType
 [20]: /en/database/tables/sale
