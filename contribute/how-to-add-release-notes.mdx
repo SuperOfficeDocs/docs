@@ -4,7 +4,7 @@ title: Add or update release notes
 description: How to add and update release notes across major versions, mobile, EOL announcements, and generated API and database notes.
 keywords: ['release notes', 'update component', 'anchors', 'mobile CRM', 'eol']
 author: digitaldiina
-date: 09.10.2026
+date: 09.14.2026
 content_type: howto
 related: false
 language: en
@@ -60,10 +60,12 @@ Each minor update needs a persistent anchor:
 <a id="12.1"></a>
 ```
 
-Each feature H3 can also define a [Mintlify anchor override][2] so you can deep-link to that specific feature:
+Put the feature heading text first, the module `<Badge>` after it, so the heading text gets visual focus instead of being pushed right.
+
+Each feature H3 can also define a [Mintlify anchor override][2] so you can deep-link to that specific feature. The anchor must always be the last token on the heading line, regardless of what else is on it. Otherwise Mintlify fails to parse the page, and the Deployment check can still report success while it silently keeps serving the page's previous content:
 
 ```mdx
-### <Badge icon="gear" color="orange">Settings and maintenance</Badge> Feature title {#12.1-admin-1}
+### Feature title <Badge icon="gear" color="orange">Settings and maintenance</Badge> {#12.1-admin-1}
 ```
 
 ## Update mobile release notes
