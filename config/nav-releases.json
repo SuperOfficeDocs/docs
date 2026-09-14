@@ -7,6 +7,7 @@
   },
   {
     "group": "SuperOffice 12",
+    "boost": 2,
     "pages": [
       "release-notes/12/index",
       {
@@ -59,6 +60,7 @@
   {
     "group": "Mobile CRM (app)",
     "root": "release-notes/mobile/index",
+    "boost": 2,
     "pages": [
       "release-notes/mobile/v11",
       "release-notes/mobile/v10"
@@ -80,6 +82,7 @@
       {
         "group": "SuperOffice 10.5",
         "root": "release-notes/10.5/index",
+        "boost": 0.5,
         "pages": [
           {
             "group": "Core CRM",
@@ -124,6 +127,7 @@
       {
         "group": "SuperOffice 10.3",
         "root": "release-notes/10.3/index",
+        "boost": 0.5,
         "pages": [
           {
             "group": "Core CRM",
@@ -194,6 +198,7 @@
       {
         "group": "SuperOffice 10.2",
         "root": "release-notes/10.2/index",
+        "boost": 0.5,
         "pages": [
           {
             "group": "Core CRM",
@@ -258,6 +263,7 @@
       {
         "group": "SuperOffice 10.1",
         "root": "release-notes/10.1/index",
+        "boost": 0.5,
         "pages": [
           {
             "group": "Core CRM",
@@ -318,6 +324,7 @@
       {
         "group": "SuperOffice 10.0",
         "root": "release-notes/10.0/index",
+        "boost": 0.5,
         "pages": [
           {
             "group": "Core CRM",
@@ -375,6 +382,7 @@
         "group": "SuperOffice 9.2",
         "hidden": true,
         "searchable": true,
+        "boost": 0.5,
         "root": "release-notes/9.2/index",
         "pages": [
           {
@@ -438,6 +446,7 @@
         "group": "SuperOffice 9.1",
         "hidden": true,
         "searchable": true,
+        "boost": 0.5,
         "root": "release-notes/9.1/index",
         "pages": [
           {
@@ -664,6 +673,7 @@
   {
     "group": "End of life",
     "root": "release-notes/eol/index",
+    "boost": 1.1,
     "pages": [
       "release-notes/eol/lotus",
       "release-notes/eol/sharepoint-app",

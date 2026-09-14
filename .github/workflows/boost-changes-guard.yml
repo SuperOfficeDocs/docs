@@ -1,0 +1,54 @@
+name: Boost changes guard
+
+on:
+  pull_request:
+    branches: [main]
+
+# Automatically cancel in-progress runs on the same branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pull-requests: write   # only for the comment step below
+
+jobs:
+  boost-changes-guard:
+    name: "Notify on boost frontmatter/config changes"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Check for newly added/changed boost values
+        id: check
+        run: python tools/ci/check-boost-changes.py --base-ref origin/main
+
+      - name: "Comment on the PR"
+        if: steps.check.outputs.boost_changed == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const summary = process.env.BOOST_SUMMARY;
+            // The reviewer to notify is a repository variable, not a literal handle in
+            // tracked source: a public GitHub @-mention notifies and links to a real
+            // profile, so it doesn't belong in a file anyone can read. Falls back to no
+            // mention at all if the variable isn't set, rather than posting a broken one.
+            const mention = process.env.BOOST_GUARD_MENTION ? `${process.env.BOOST_GUARD_MENTION} ` : '';
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `${mention}This PR adds or changes a \`boost\` value:\n\n${summary}\n\nSee [Metadata][1] for Mintlify's guidance on valid ranges before merging.\n\n[1]: https://docs.superoffice.com/contribute/markdown-guide/metadata`,
+            });
+        env:
+          BOOST_SUMMARY: ${{ steps.check.outputs.boost_summary }}
+          BOOST_GUARD_MENTION: ${{ vars.BOOST_GUARD_MENTION }}

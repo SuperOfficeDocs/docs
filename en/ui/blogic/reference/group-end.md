@@ -4,6 +4,7 @@ uid: blogic_group_end
 description: Group end
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

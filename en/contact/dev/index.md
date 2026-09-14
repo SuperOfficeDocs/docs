@@ -13,6 +13,7 @@ redirect_from:
   - /en/contact/overview
   - /en/contact/howto/index
   - /en/contact/reference/index
+boost: 0.9
 related:
   - Company - overview (contact table): /en/company/index
   - Documents - overview: /en/document/index

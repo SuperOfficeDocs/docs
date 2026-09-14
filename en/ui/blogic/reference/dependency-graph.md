@@ -4,6 +4,7 @@ uid: blogic_dependency_graph
 description: Dependency graph
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

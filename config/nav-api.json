@@ -146,6 +146,7 @@
           {
             "group": "WebAPI class reference",
             "root": "en/api/reference/webapi/index",
+            "boost": 0.9,
             "pages": {
               "$ref": "./nav-api-webapi.json"
             }
@@ -449,6 +450,7 @@
         "group": "Archive provider reference",
         "root": "en/api/archive-providers/reference/index",
         "directory": "accordion",
+        "boost": 0.9,
         "pages": {
           "$ref": "./nav-archive-providers.json"
         }
@@ -458,6 +460,7 @@
         "group": "MDO provider reference",
         "root": "en/api/mdo-providers/reference/index",
         "directory": "accordion",
+        "boost": 0.9,
         "pages": {
           "$ref": "./nav-mdo-providers.json"
         }

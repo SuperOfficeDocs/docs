@@ -4,6 +4,7 @@ uid: blogic_htmlgrid
 description: HtmlGrid
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

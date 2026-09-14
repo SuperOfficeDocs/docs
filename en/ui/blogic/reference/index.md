@@ -4,6 +4,7 @@ uid: blogic_elements
 description: Element reference
 author:
 date:
+boost: 0.7
 keywords: ['bLogic']
 topic: reference
 ---

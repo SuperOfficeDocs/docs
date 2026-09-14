@@ -4,6 +4,7 @@ uid: blogic_select_slevel
 description: Select Slevel
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

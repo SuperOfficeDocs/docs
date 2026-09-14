@@ -4,6 +4,7 @@ uid: blogic_panel
 description: Panel
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

@@ -16,6 +16,7 @@
         "group": "Erste Schritte",
         "icon": "rocket",
         "root": "de/learn/getting-started/index",
+        "boost": 2,
         "pages": [
           {
             "group": "Die Layout-Elemente",

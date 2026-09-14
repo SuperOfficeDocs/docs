@@ -4,6 +4,7 @@ uid: blogic_select_sale
 description: Select sale
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

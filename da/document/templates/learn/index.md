@@ -9,6 +9,7 @@ so_version: 10.3
 content_type: concept
 tier: starter
 redirect_from: /da/admin/lists/learn/document-template
+boost: 1.5
 related:
   - Rediger eller erstat skabelon: /da/document/templates/admin/update-template
   - /da/document/templates/learn/create

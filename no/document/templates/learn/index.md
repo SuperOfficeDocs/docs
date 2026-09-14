@@ -9,6 +9,7 @@ so_version: 10.3
 content_type: concept
 tier: starter
 redirect_from: /no/admin/lists/learn/document-template
+boost: 1.5
 related:
   - Redigere eller erstatte en mal: /no/document/templates/admin/update-template
   - /no/document/templates/learn/create

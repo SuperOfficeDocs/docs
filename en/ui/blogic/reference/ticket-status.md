@@ -4,6 +4,7 @@ uid: blogic_ticket_status
 description: Ticket status
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

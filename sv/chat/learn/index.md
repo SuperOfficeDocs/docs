@@ -11,6 +11,7 @@ tier: growth
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /sv/chat/learn/screen/index
+boost: 1.5
 related:
   - /sv/chat/learn/respond
   - /sv/chat/learn/statistics

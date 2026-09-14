@@ -4,6 +4,7 @@ uid: blogic_select_contact
 description: Select contact
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

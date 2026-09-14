@@ -7,6 +7,7 @@ author: SuperOffice Product and Engineering
 date: 05.04.2026
 so_version: 11.13
 content_type: concept
+boost: 1.5
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
 audience: person
@@ -71,14 +72,14 @@ Klikk på en e-post i [detaljkortet Aktiviteter][14] for å se detaljene i [side
 ![E-post forhåndsvisning med uthevede oppgavemenyalternativer -screenshot][img1]
 
 [1]: /no/email/inbox/learn/index
-[2]: ../../../../integrations/gmail-link/index
-[3]: ../../../../integrations/gmail-link/email-archive-incoming
-[4]: ../../../../integrations/gmail-link/archive-emails-as-activities
-[5]: ../../../../integrations/gmail-link/archive-attachments
-[6]: ../../../../integrations/mail-link/index
-[7]: ../../../../integrations/mail-link/archive-as-activity
-[8]: ../../../../integrations/mail-link/archive-on-contact
-[9]: ../../../../integrations/mail-link/archive-attachment
+[2]: /integrations/gmail-link/index
+[3]: /integrations/gmail-link/email-archive-incoming
+[4]: /integrations/gmail-link/archive-emails-as-activities
+[5]: /integrations/gmail-link/archive-attachments
+[6]: /integrations/mail-link/index
+[7]: /integrations/mail-link/archive-as-activity
+[8]: /integrations/mail-link/archive-on-contact
+[9]: /integrations/mail-link/archive-attachment
 [11]: /no/contact/learn/send-email
 [12]: /no/document/learn/send-as-email
 [13]: /no/learn/getting-started/connect-your-accounts

@@ -8,6 +8,7 @@ author: Bergfrid Dias
 date: 02.11.2025
 so_version: 10.5.2
 content_type: howto
+boost: 1.5
 license: salespremium, servicepremium, marketingessentials
 tier: core
 audience: settings

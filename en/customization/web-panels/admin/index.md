@@ -16,6 +16,7 @@ redirect_from:
   - /en/ui/web-panels/learn/index
   - /en/ui/web-panels/index
   - /en/admin/lists/learn/web-panel
+boost: 1.5
 userflow_index: true
 related:
   - /en/customization/web-panels/admin/add-web-panel

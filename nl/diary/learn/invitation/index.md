@@ -8,6 +8,7 @@ author: digitaldiina
 date: 03.27.2026
 so_version: 11.11
 content_type: concept
+boost: 1.5
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
 audience: person

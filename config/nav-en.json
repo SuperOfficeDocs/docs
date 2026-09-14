@@ -25,6 +25,7 @@
     "icon": "server",
     "hidden": true,
     "searchable": true,
+    "boost": 0.5,
     "pages": {
       "$ref": "./nav-onsite.json"
     }
@@ -67,6 +68,7 @@
               {
                 "group": "Getting started",
                 "root": "en/developer-portal/getting-started/index",
+                "boost": 2,
                 "pages": [
                   "en/developer-portal/getting-started/get-access-to-sod",
                   "en/developer-portal/getting-started/quickstart",
@@ -561,6 +563,7 @@
                   {
                     "group": "For developers",
                     "root": "en/automation/webhook/dev/index",
+                    "boost": 0.9,
                     "pages": [
                       "en/automation/webhook/dev/event-details",
                       "en/automation/webhook/dev/subscription",
@@ -620,6 +623,7 @@
           },
           {
             "group": "Getting started",
+            "boost": 2,
             "pages": [
               "en/database/getting-started/index",
               "en/database/getting-started/naming-conventions",
@@ -630,6 +634,7 @@
             "group": "Reference",
             "root": "en/database/tables/index",
             "directory": "accordion",
+            "boost": 0.9,
             "pages": {
               "$ref": "./nav-database-tables.json"
             }
@@ -643,6 +648,7 @@
           {
             "group": "Reference",
             "root": "en/automation/crmscript/reference/index",
+            "boost": 0.9,
             "pages": {
               "$ref": "./nav-crmscript-ref.json"
             }

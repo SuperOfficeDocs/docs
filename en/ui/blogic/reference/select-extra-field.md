@@ -4,6 +4,7 @@ uid: blogic_select_extra_field
 description: Select extra field
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

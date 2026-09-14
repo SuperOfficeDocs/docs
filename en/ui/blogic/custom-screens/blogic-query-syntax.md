@@ -5,6 +5,7 @@ description: Query syntax
 author:
 date:
 content_type: concept
+boost: 0.7
 ---
 
 Custom screens use a line-based query syntax that is specific to SuperOffice. You don't have to construct complicated SQL queries, which may vary from one database vendor to another.

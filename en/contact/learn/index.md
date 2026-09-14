@@ -12,6 +12,7 @@ tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /en/contact/learn/screen/index
+boost: 1.5
 related:
   - /en/contact/learn/create
   - Edit privacy settings for a contact: /en/security/privacy/learn/edit-legal-base

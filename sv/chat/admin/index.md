@@ -11,6 +11,7 @@ tier: growth
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /sv/chat/learn/admin/index
+boost: 1.5
 userflow_index: true
 language: sv
 ---

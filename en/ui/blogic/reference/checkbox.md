@@ -4,6 +4,7 @@ uid: blogic_checkbox
 description: Checkbox
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

@@ -11,6 +11,7 @@ topic: Google Workspace documents
 deployment: online
 platform: web
 redirect_from: /en/document/cloud/g-suite/getting-started
+boost: 2
 language: en
 userflow_index: true
 ---

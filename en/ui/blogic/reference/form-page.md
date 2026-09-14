@@ -4,6 +4,7 @@ uid: blogic_form_page
 description: Form page
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

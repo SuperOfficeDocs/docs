@@ -16,6 +16,7 @@
         "group": "Komme i gang",
         "icon": "rocket",
         "root": "no/learn/getting-started/index",
+        "boost": 2,
         "pages": [
           {
             "group": "Elementene i utseende",

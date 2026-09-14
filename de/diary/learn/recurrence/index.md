@@ -7,6 +7,7 @@ author: Bergfrid Dias
 date: 02.11.2025
 so_version: 10.5.2
 content_type: concept
+boost: 1.5
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
 audience: person

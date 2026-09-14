@@ -8,6 +8,7 @@ author: digitaldiina
 date: 11.06.2025
 so_version: 11.6
 content_type: howto
+boost: 1.5
 tier: core
 audience: settings
 audience_tooltip: Inställningar och underhåll

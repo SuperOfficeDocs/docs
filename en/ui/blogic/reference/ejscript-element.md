@@ -4,6 +4,7 @@ uid: blogic_ejscript_element
 description: Ejscript element
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

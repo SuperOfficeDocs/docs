@@ -4,6 +4,7 @@ uid: blogic_select_faq
 description: Select FAQ
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

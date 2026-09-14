@@ -4,7 +4,7 @@ title: SEO and social previews
 description: How docs.json's seo settings control canonical URLs, social-preview thumbnails, and other search/discovery behavior for docs.superoffice.com.
 keywords: ['seo', 'opengraph', 'og:image', 'canonical', 'thumbnails', 'social preview', 'sitemap', 'robots.txt', 'indexing', 'userflow']
 author: digitaldiina
-date: 08.11.2026
+date: 09.14.2026
 content_type: concept
 related:
   - /contribute/configure-mintlify
@@ -53,6 +53,10 @@ Not yet configured. Mintlify can publish a `seo.organization` block (name, logo,
 Mintlify generates a standard `sitemap.xml` and `robots.txt` automatically, listing only pages included in `docs.json`'s navigation. Either file can be overridden by placing a same-named file at the project root. There is no per-language variant and no filtering hook beyond that: a hidden page (`hidden: true` frontmatter) is excluded from both by default unless `seo.indexing` is added to `docs.json`.
 
 This native sitemap is unrelated to the Userflow sitemap below: one is for search-engine crawling, the other feeds a third-party in-app tool.
+
+## The search box is a separate system
+
+Everything above is about `seo`, external search engines, and social platforms. The search bar in this site's own header is a different, unrelated system, not to be confused with the SuperOffice product's own "Onsite" (on-premise) deployment option. It has its own two levers, `boost` and `searchable`, set in page frontmatter or at the `docs.json`/`config/nav-*.json` group level, never under `docs.json`'s `seo` key. Don't reach for `seo.indexing` or `noindex` to change how a page ranks in this search box's own results, and don't expect `boost` to affect Google or social-preview behavior. See [Metadata][1] for both properties.
 
 ## Userflow's sitemap
 

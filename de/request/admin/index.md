@@ -13,6 +13,7 @@ tier: starter
 audience: settings
 audience_tooltip: Einstellungen und Verwaltung
 redirect_from: /de/request/learn/admin/index
+boost: 1.5
 userflow_index: true
 language: de
 ---

@@ -5,6 +5,7 @@ description: Expanding quick search functionality
 author: Hans Wilhelmsen
 keywords: ['Service', 'quicksearch', 'screen chooser']
 content_type: howto
+boost: 0.7
 date: 09.30.2013
 ---
 

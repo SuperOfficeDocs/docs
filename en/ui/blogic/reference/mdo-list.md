@@ -4,6 +4,7 @@ uid: blogic_mdolist
 description: MDO list
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

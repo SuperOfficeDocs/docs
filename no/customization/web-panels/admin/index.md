@@ -15,6 +15,7 @@ audience_tooltip: Settings and maintenance
 redirect_from:
   - /no/ui/web-panels/learn/index
   - /no/admin/lists/learn/web-panel
+boost: 1.5
 userflow_index: true
 related:
   - /no/customization/web-panels/admin/add-web-panel

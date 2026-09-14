@@ -4,6 +4,7 @@ uid: blogic_radiobuttons
 description: Radio buttons
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

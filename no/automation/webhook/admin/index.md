@@ -7,6 +7,7 @@ author: digitaldiina
 date: 06.16.2026
 so_version: 12.1
 content_type: concept
+boost: 1.5
 tier: core
 category: automation
 topic: webhook

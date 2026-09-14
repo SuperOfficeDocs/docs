@@ -15,6 +15,7 @@ topic: knowledge base
 audience: person
 audience_tooltip: SuperOffice Service
 redirect_from: /nl/request/learn/screen/knowledge-base
+boost: 1.5
 language: nl
 ---
 

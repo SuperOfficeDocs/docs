@@ -16,6 +16,7 @@ redirect_from:
   - /en/automation/crmscript/learn/macro-script
   - /en/automation/crmscript/learn/screen/index
   - /en/automation/crmscript/learn/index
+boost: 1.5
 userflow_index: true
 related:
   - Create a script: /en/customization/macros-and-scripts/admin/create-script

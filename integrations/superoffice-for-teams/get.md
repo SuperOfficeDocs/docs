@@ -7,6 +7,7 @@ keywords: ['SuperOffice for Teams', 'Teams', 'install', 'sign in', 'bot', 'user'
 author: schildea
 date: 02.06.2026
 content_type: howto
+boost: 2
 category: integration
 topic: SuperOffice for Teams
 pilot: yes

@@ -12,6 +12,7 @@ tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /en/diary/recurring-appointments
+boost: 1.5
 related:
   - Create a recurring follow-up: /en/diary/learn/recurrence/create
   - Edit a repeating follow-up: /en/diary/learn/edit-follow-up#repeat

@@ -4,6 +4,7 @@ uid: blogic_select_crm_selection
 description: Select CRM selection
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

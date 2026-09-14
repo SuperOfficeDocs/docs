@@ -17,14 +17,16 @@ REPO_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 _HUNK_RE = re.compile(r"^@@ -\d+(?:,\d+)? \+(\d+)(?:,\d+)? @@")
 
 
-def get_added_line_numbers(base_ref):
+def get_added_line_numbers(base_ref, patterns=("*.md", "*.mdx")):
     """Returns {path: set(line_no, ...)} for every line added by the PR's
-    diff (against base_ref) in a tracked .md/.mdx file. Uses a unified
-    diff with file-scoped hunk headers so added-line numbers in the new
-    file can be recovered without a full patch parser."""
+    diff (against base_ref) in a tracked file matching one of `patterns`
+    (git pathspecs; defaults to the .md/.mdx pair every existing caller
+    needs). Uses a unified diff with file-scoped hunk headers so
+    added-line numbers in the new file can be recovered without a full
+    patch parser."""
     cmd = [
         "git", "diff", "--unified=0", f"{base_ref}...HEAD",
-        "--", "*.md", "*.mdx",
+        "--", *patterns,
     ]
     out = subprocess.run(cmd, cwd=REPO_ROOT, capture_output=True, text=True, check=True)
 

@@ -145,6 +145,7 @@
           {
             "group": "Getting started",
             "root": "en/online/mirroring/getting-started/index",
+            "boost": 2,
             "pages": [
               "en/online/mirroring/getting-started/create-wfc",
               "en/online/mirroring/getting-started/i-mirror-client-service"

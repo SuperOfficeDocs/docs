@@ -4,6 +4,7 @@ uid: blogic_textarea
 description: Textarea
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 
