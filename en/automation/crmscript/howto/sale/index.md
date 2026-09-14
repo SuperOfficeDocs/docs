@@ -1,6 +1,7 @@
 ---
 uid: crmscript-sale
-title: Sales
+title: Sales (CRMScript)
+sidebarTitle: "Sales"
 description: Working with sales in CRMScript
 keywords: ['sale']
 author: Bergfrid Dias
