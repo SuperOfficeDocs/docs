@@ -4,8 +4,8 @@ title: Opprette et nytt skjema
 description: Lær hvordan du kan opprette et nettskjema i denne veiledningen.
 keywords: ['skjema', 'webskjema', 'nettskjema', 'påmelding']
 author: digitaldiina
-date: 05.04.2026
-so_version: 11.13
+date: 17.09.2026
+so_version: 12.4
 content_type: howto
 license: marketingessentials
 tier: growth
@@ -114,11 +114,35 @@ I kategorien **Felt** legger du til feltene som skal brukes i skjemaet. Når du 
 
     * Velg **Full bredde** hvis du vil at det valgte feltet skal ha samme bredde som skjemaet.
 
+    * Hvis felttypen støtter det, kan du klikke på **Legg til relatert felt** på et av alternativene eller verdiene for å legge til et betinget felt. Se [Legge til et betinget felt](#conditional) nedenfor.
+
 9. Rediger eventuelle andre [alternativer i feltet][4] etter behov.
 
 10. Klikk på **Bruk nå** når du er ferdig.
 
 11. Gjenta trinn 2-10 for å legge til et nytt felt. Du kan også klikke på **Dupliser felt** (<i class="ph ph-copy" aria-hidden="true"></i>) for å opprette en kopi av et felt.
+
+### Legge til et betinget felt {#conditional}
+
+Vis besøkende bare de spørsmålene som er relevante for dem. Et **betinget felt** (også kalt et relatert felt) viser et oppfølgingsspørsmål bare når et tidligere svar gjør det relevant, slik at hver besøkende bare ser det som er viktig for dem, samtidig som skjemaet fortsatt samler inn opplysningene som trengs fra alle andre. Feltet **Contact - Country** kan for eksempel vise feltet **Contact - Preferred language** bare når et bestemt land er valgt.
+
+Dette fungerer på nedtrekksmenyer (inkludert standard listefelt), alternativknapper, avmerkingsbokser, vurderingsfelt (stjerner, smilefjes, terninger eller tomler), ekstrafelt av typen nedtrekksmeny eller boolsk, og interessefelt. Felttyper som støtter dette, får merket **Betinget** når du legger til et nytt element, slik at du ikke trenger å legge til feltet først for å finne det ut.
+
+![Felt som støtter betingede felt, får merket Betinget i vinduet Legg til element -screenshot][img18]
+
+1. Velg alternativet eller verdien på et felt som støtter dette, som skal utløse oppfølgingsspørsmålet.
+1. Klikk på **Legg til relatert felt**.
+1. [Legg til og konfigurer det nye feltet](#fields) på samme måte som ethvert annet felt.
+
+Det overordnede feltet får nå merket **Har relaterte felter**, og det relaterte feltet vises rykket inn under det, med et banner som forklarer betingelsen i vanlig språk (for eksempel "Dette feltet vises når **Contact - Country** er **Sveits**"). Bruk redigeringsikonet på banneret for å endre betingelsen, eller fjern-ikonet for å slette det relaterte feltet. Hvis du velger flere utløsende verdier, kobler banneret dem sammen med "eller". Vurderingsfelt viser i stedet et intervall.
+
+![Et felt med et relatert felt og betingelsesbanneret -screenshot][img19]
+
+Du kan kjede relaterte felt flere nivåer dypt (et spørsmål kan utløse et oppfølgingsspørsmål, som igjen kan utløse et enda dypere oppfølgingsspørsmål), men hvert relaterte felt styres av nøyaktig én betingelse på ett felt.
+
+<Note>
+Et relatert felt er skjult som standard for den besøkende, vises umiddelbart når det utløsende svaret gis, og forsvinner og tømmes hvis svaret endres. Et skjult felt er aldri påkrevd, selv om det er merket som obligatorisk, og skjulte svar tas ikke med i innsendingen.
+</Note>
 
 ### Stil {#style}
 
@@ -222,3 +246,5 @@ Her kan du [definere hva som skjer når noen sender inn et skjemasvar][3].
 [img15]: ../../../../media/loc/en/marketing/contact-me-form-properties.png
 [img16]: ../../../../media/loc/en/marketing/form-custom-styling.png
 [img17]: ../../../../media/loc/en/marketing/form-extract-styles-ai.png
+[img18]: ../../../../media/loc/en/marketing/form-add-element-conditional-badge.png
+[img19]: ../../../../media/loc/en/marketing/form-field-has-related-fields.png

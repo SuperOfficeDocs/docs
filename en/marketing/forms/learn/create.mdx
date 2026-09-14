@@ -4,8 +4,8 @@ title: Create a new form
 description: Learn how you can create a web form in this how-to guide.
 keywords: ['form', 'form template', 'multi-page', 'custom styling', 'css']
 author: digitaldiina
-date: 05.04.2026
-so_version: 11.13
+date: 17.09.2026
+so_version: 12.4
 content_type: howto
 license: marketingessentials
 tier: growth
@@ -113,11 +113,35 @@ In the **Fields** category you add the fields that should be included in the for
 
     * Click the check box **Full width** if you want the selected field to be the same width as the form.
 
+    * If the field type supports it, click **Add related field** on one of its options or values to add a conditional field. See [Add a conditional field](#conditional) below.
+
 9. Edit any other [options in the field][4] as relevant.
 
 10. Click **Apply now** when you are done.
 
 11. Repeat steps 2-10 to add another field. You can also click **Duplicate field** (<i class="ph ph-copy" aria-hidden="true"></i>) to create a copy of a field.
+
+### Add a conditional field {#conditional}
+
+Show visitors only the questions that apply to them. A **conditional field** (also called a related field) reveals a follow-up question only when an earlier answer makes it relevant, so each visitor sees just what matters to them while the form still captures the detail needed from everyone else. For example, a **Contact - Country** field can reveal a **Contact - Preferred language** field only when a specific country is selected.
+
+This works on dropdowns (including standard list fields), radio buttons, checkboxes, rating fields (stars, smileys, dice, or thumbs), extra fields of the dropdown or Boolean type, and Interests fields. Eligible field types carry a **Conditional** badge when you add a new element, so you don't have to add a field first to find out.
+
+![Eligible fields carry a Conditional badge in the Add element window -screenshot][img18]
+
+1. On an eligible field, select the option or value that should trigger the follow-up question.
+1. Click **Add related field**.
+1. [Add and configure the new field](#fields) as you would any other field.
+
+The parent field now carries a **Has related fields** badge, and the related field appears indented below it, with a condition banner in plain language (for example, "This field is shown when **Contact - Country** is **Switzerland**"). Use the banner's edit icon to change the condition, or its remove icon to delete the related field. If you select multiple trigger values, the banner joins them with "or". Rating fields show a range instead of a single value.
+
+![A field with a related field and its condition banner -screenshot][img19]
+
+You can chain related fields several levels deep (a question can trigger a follow-up, which can trigger a deeper follow-up), though each related field is controlled by exactly one condition on one field.
+
+<Note>
+A related field is hidden by default for the visitor, appears instantly when the triggering answer is given, and disappears and clears if that answer changes. A hidden field is never required, even if marked mandatory, and hidden answers aren't included in the submission.
+</Note>
 
 ### Style {#style}
 
@@ -253,3 +277,5 @@ Here you can [define what happens when someone submits a form response][3].
 [img15]: /media/loc/en/marketing/contact-me-form-properties.png
 [img16]: /media/loc/en/marketing/form-custom-styling.png
 [img17]: /media/loc/en/marketing/form-extract-styles-ai.png
+[img18]: /media/loc/en/marketing/form-add-element-conditional-badge.png
+[img19]: /media/loc/en/marketing/form-field-has-related-fields.png
