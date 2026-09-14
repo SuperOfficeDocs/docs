@@ -1,16 +1,17 @@
 ---
-title: "Grouping restrictions"
-uid: "grouping_restrictions"
-description: "Learn about grouping restrictions with InterParenthesis."
-author: "Tony Yates"
-date: "09.14.2026"
+title: Grouping restrictions
+description: Learn about grouping restrictions with InterParenthesis.
+author: AnthonyYates
+date: 09.14.2026
 keywords: ['archive provider query', 'query database', 'archive restriction', 'criteria grouping']
-content_type: "concept"
-category: "api"
-topic: "archive providers"
+so_version: 12.4
+content_type: concept
+category: api
+topic: archive providers
+language: en
 ---
 
-The SuperOffice archive API accepts restrictions as a flat array of `ArchiveRestrictionInfo` objects. Unlike the Find API. there is no tree, no nested `children` collection. Yet the API can express arbitrarily nested boolean logic — `a AND (b OR (c AND d))` — through a single integer property on each element: `InterParenthesis`. This page explains what that integer means, how the server interprets it, and how to place it so your query does what you intend.
+The SuperOffice archive API accepts restrictions as a flat array of `ArchiveRestrictionInfo` objects. Unlike the Find API, there is no tree and no nested `children` collection. Yet the API can express arbitrarily nested boolean logic — `a AND (b OR (c AND d))` — through a single integer property on each element: `InterParenthesis`. This page explains what that integer means, how the server interprets it, and how to place it so your query does what you intend.
 
 ## The property
 
@@ -30,10 +31,10 @@ That's the whole contract. A restriction opens a group, closes a group, or does 
 
 The server walks the array in order and produces a token stream. For each element it emits:
 
-1. opening parentheses, if `InterParenthesis > 0`
-2. the restriction itself
-3. closing parentheses, if `InterParenthesis < 0`
-4. the element's `InterOperator` (`And` or `Or`) connecting it to the next element
+1. Opening parentheses, if `InterParenthesis > 0`
+2. The restriction itself
+3. Closing parentheses, if `InterParenthesis < 0`
+4. The element's `InterOperator` (`And` or `Or`) connecting it to the next element
 
 Then a standard precedence parser turns the stream into a SQL `WHERE` tree, with `AND` binding tighter than `OR` — exactly as SQL does. Two consequences follow:
 
@@ -128,11 +129,11 @@ Spelling out the defaults (`"And"`, `0`) is optional but recommended. A reader v
 
 ## Balance and robustness
 
-The sum of all `InterParenthesis` values across the array must be zero, and no prefix of the array may have a negative running total. That's just "parentheses must balance," and the server will reject a query that closes a group it never opened.
+The sum of all `InterParenthesis` values across the array must be zero, and no prefix of the array may have a negative running total. That's just "parentheses must balance", and the server will reject a query that closes a group it never opened.
 
 There is one subtler case. Archive providers are free to *ignore* a restriction — for example, a column handler may decide that an empty-string comparison is meaningless and produce no SQL for it. When that happens, the element is skipped in the token stream, and its parentheses go with it. The server tolerates a dropped **opening** parenthesis by also dropping the matching close. It does not tolerate a dropped **closing** parenthesis: the resulting unmatched `(` fails the parse.
 
-Practical rule: **put the closing parenthesis on a restriction you know the provider will honour** — a primary-key comparison, a status equality, a date bound. Avoid closing a group on a restriction whose value might be empty, null, or otherwise ignorable.
+Practical rule: **put the closing parenthesis on a restriction you know the provider will honor** — a primary-key comparison, a status equality, or a date bound. Avoid closing a group on a restriction whose value might be empty, null, or otherwise ignorable.
 
 ## If you'd rather not count brackets
 
