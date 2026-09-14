@@ -4,6 +4,7 @@ uid: blogic_language_menu
 description: Language menu
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

@@ -4,6 +4,7 @@ uid: blogic_select_project
 description: Select project
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

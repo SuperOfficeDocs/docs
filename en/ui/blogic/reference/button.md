@@ -4,6 +4,7 @@ uid: blogic_button
 description: Button
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

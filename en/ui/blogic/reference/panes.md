@@ -4,6 +4,7 @@ uid: blogic_panes
 description: Panes
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

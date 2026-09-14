@@ -10,6 +10,7 @@ tier: starter
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /sv/request/learn/priority/index
+boost: 1.5
 userflow_index: true
 related:
   - Skapa prioritet: /sv/request/admin/priority/create

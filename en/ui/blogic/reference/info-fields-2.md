@@ -4,6 +4,7 @@ uid: blogic_info_fields_2
 description: Info Fields v2
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

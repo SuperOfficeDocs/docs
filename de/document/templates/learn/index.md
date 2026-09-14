@@ -9,6 +9,7 @@ so_version: 10.3
 content_type: concept
 tier: starter
 redirect_from: /de/admin/lists/learn/document-template
+boost: 1.5
 related:
   - Vorlage bearbeiten: /de/document/templates/admin/update-template
   - /de/document/templates/learn/create

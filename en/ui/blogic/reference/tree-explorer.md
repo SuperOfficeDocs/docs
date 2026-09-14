@@ -4,6 +4,7 @@ uid: blogic_tree_explorer
 description: Tree explorer
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

@@ -14,6 +14,7 @@ topic: chat
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /nl/chat/learn/screen/
+boost: 1.5
 related:
   - /nl/chat/learn/respond
   - /nl/chat/learn/statistics

@@ -4,6 +4,7 @@ uid: blogic_br
 description: Horizontal separator (br)
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

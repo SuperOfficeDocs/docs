@@ -5,6 +5,7 @@ description: UI interaction and customization for service
 author: Bergfrid Dias
 date:
 content_type: concept
+boost: 0.7
 ---
 
 A guide to interacting with and customizing the SuperOffice UI through CRMScript.

@@ -4,6 +4,7 @@ uid: blogic_select_relation
 description: Select relation
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

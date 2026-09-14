@@ -4,6 +4,7 @@ uid: blogic_show_recipients
 description: Show recipients
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

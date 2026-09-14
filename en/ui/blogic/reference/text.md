@@ -4,6 +4,7 @@ uid: blogic_text
 description: Text
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

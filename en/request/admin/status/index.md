@@ -12,6 +12,7 @@ tier: starter
 audience: settings
 audience_tooltip: Settings and maintenance
 redirect_from: /en/request/learn/status/index
+boost: 1.5
 userflow_index: true
 language: en
 ---

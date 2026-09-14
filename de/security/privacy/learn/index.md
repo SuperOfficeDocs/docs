@@ -7,6 +7,7 @@ author: digitaldiina
 date: 11.06.2025
 so_version: 11.6
 content_type: concept
+boost: 1.5
 tier: starter
 category: privacy
 audience: person

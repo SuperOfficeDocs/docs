@@ -4,6 +4,7 @@ uid: blogic_header
 description: Header
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

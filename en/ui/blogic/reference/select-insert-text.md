@@ -4,6 +4,7 @@ uid: blogic_select_insert_text
 description: Select insert text
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

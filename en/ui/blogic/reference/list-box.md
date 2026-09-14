@@ -4,6 +4,7 @@ uid: blogic_listbox
 description: List box
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

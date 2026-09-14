@@ -4,7 +4,7 @@ title: Automated tests
 description: Every check that runs against a PR or on a schedule for this repo - markdownlint, Vale, build validation, broken-link checking, the CRMScript reference drift check, and the stale generated-pages check - what each covers, whether it blocks a merge, and where to look when one flags something.
 keywords: ['ci', 'automated tests', 'markdownlint', 'vale', 'broken links', 'mint validate', 'automations', 'crmscript', 'stale pages', 'generated pages', 'landing page', 'template guard', 'release notes', 'openapi', 'swagger', 'recent pages', 'homepage', 'pester', 'mdx escaping', 'downloads', 'office format', 'xlsx', 'docfx', 'see cref', 'xref', 'script injection', 'security', 'restful', 'agent', 'rest']
 author: digitaldiina
-date: 09.08.2026
+date: 09.14.2026
 content_type: concept
 related:
   - /contribute/deployment
@@ -31,6 +31,7 @@ This page is the single reference for every automatic check that runs against th
 | Md extension links guard | GitHub Action (`.github/workflows/md-extension-links-guard.yml`) | No - advisory (warns only) | This repo, `tools/ci/check-md-extension-links.py` |
 | Stale OpenAPI links guard | GitHub Action (`.github/workflows/stale-openapi-links-guard.yml`) | No - advisory (warns only) | This repo, `tools/ci/check-stale-openapi-links.py` |
 | Redirect coverage guard | GitHub Action (`.github/workflows/redirect-coverage-guard.yml`) | No - advisory (warns only, labels the PR) | This repo, `tools/ci/check-redirect-coverage.py` |
+| Boost changes guard | GitHub Action (`.github/workflows/boost-changes-guard.yml`) | No - advisory (warns only, comments on the PR) | This repo, `tools/ci/check-boost-changes.py` |
 | Office-format download guard | GitHub Action (`.github/workflows/office-format-download-guard.yml`) | **Yes** - fails the check | This repo, `tools/ci/check-no-office-format-downloads.py` |
 | DocFX legacy-tag guard | GitHub Action (`.github/workflows/docfx-legacy-tags-guard.yml`) | **Yes** - fails the check | This repo, `tools/ci/check-no-new-docfx-see-cref.py` + `check-no-new-docfx-xref.py` + `check-no-new-docfx-list.py` |
 | Workflow script-injection guard | GitHub Action (`.github/workflows/workflow-injection-guard.yml`) | **Yes** - fails the check | This repo, `tools/ci/check-workflow-injection.py` |
@@ -111,6 +112,10 @@ Checks every `.md`/`.mdx` file changed in a PR (or pushed directly to `main`), e
 ### Redirect coverage guard
 
 Runs on every PR (`fetch-depth: 0`, needed to diff against `origin/main`). Detects any `.md`/`.mdx` file this PR renamed, moved, or deleted (via git's own rename detection, not a plain add/delete pair), excluding `snippets/` and the machine-generated reference trees - those aren't standalone routable pages, so a missing redirect for one isn't a real gap. For each one, checks whether `config/redirects.json` already covers the old URL, including the `.html`-suffixed duplicate form documented in [Redirects](./redirects). Separately, for a renamed `en/` page, checks whether its translations were moved to the same relative location too - matched by path (swapping the language segment), not by `uid`. A translation left on its old path after the English page moves is a quieter version of the same failure mode. Never fails the check - a gap shows up as a warning annotation on the PR's Files Changed tab, and adds the `mintlify/nav-redirects` label (or `translation`, for a mirroring gap) to the PR so it's visible without opening the Actions tab; the label is removed automatically once a later push resolves the gap.
+
+### Boost changes guard
+
+Runs on every PR (`fetch-depth: 0`, needed to diff against the PR's base commit). Detects any *added* `boost:`/`"boost":` line - page frontmatter or a `docs.json`/`config/nav-*.json` navigation-group key - by scanning only the `+` lines of a `git diff` against the base, not a file's current content, so an unrelated edit to an already-boosted page isn't re-flagged. `boost` is Mintlify's on-site search relevance multiplier: unlike every other check on this page, it has no wrong-or-right shape to lint for, only a value that's easy to get wrong at scale (Mintlify's own guidance warns an unreviewed large multiplier can make a barely-relevant page dominate results). So instead of a warning annotation, this is the first guard in the family to post an actual PR comment, `@digitaldiina`, listing every changed value - see [Metadata](./markdown-guide/metadata) for the full guidance table before approving one. Never fails the check.
 
 ### Office-format download guard
 

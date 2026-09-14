@@ -11,6 +11,7 @@ tier: starter
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /no/contact/learn/screen/index
+boost: 1.5
 related:
   - Opprette en ny person: /no/contact/learn/create
   - Redigere personverninnstillinger for en person: /no/security/privacy/learn/edit-legal-base

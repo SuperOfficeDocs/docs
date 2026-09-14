@@ -9,6 +9,7 @@
     "group": "Get started",
     "icon": "rocket",
     "root": "en/learn/getting-started/index",
+    "boost": 2,
     "pages": [
       {
         "group": "The layout elements",
@@ -820,7 +821,8 @@
           "en/customization/web-panels/admin/url-encoding",
           {
             "group": "For consultants",
-            "root": "en/customization/web-panels/dev/index"
+            "root": "en/customization/web-panels/dev/index",
+            "boost": 0.9
           }
         ]
       },
@@ -858,6 +860,7 @@
       {
         "group": "System design",
         "root": "en/ui/blogic/learn/index",
+        "boost": 0.7,
         "pages": [
           {
             "group": "Profiles",
@@ -905,6 +908,7 @@
           {
             "group": "Technical details",
             "root": "en/admin/license/dev/index",
+            "boost": 0.9,
             "pages": [
               "en/admin/license/dev/user-plans",
               "en/admin/license/dev/module-licenses",

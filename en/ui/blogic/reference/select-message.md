@@ -4,6 +4,7 @@ uid: blogic_select_message
 description: Select Message
 author:
 date:
+boost: 0.7
 topic: reference
 ---
 

@@ -12,6 +12,7 @@ tier: starter
 audience: settings
 audience_tooltip: Innstillinger og vedlikehold
 redirect_from: /no/request/learn/priority/index
+boost: 1.5
 userflow_index: true
 related:
   - Opprett prioritet: /no/request/admin/priority/create

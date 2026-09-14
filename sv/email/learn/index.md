@@ -7,6 +7,7 @@ author: SuperOffice Product and Engineering
 date: 05.04.2026
 so_version: 11.13
 content_type: concept
+boost: 1.5
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
 audience: person

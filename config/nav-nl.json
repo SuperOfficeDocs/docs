@@ -16,6 +16,7 @@
         "group": "Aan de slag",
         "icon": "rocket",
         "root": "nl/learn/getting-started/index",
+        "boost": 2,
         "pages": [
           {
             "group": "De opmaakelementen",

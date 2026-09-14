@@ -11,6 +11,7 @@ tier: core
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /no/project/learn/screen/project-members-tab
+boost: 1.5
 related:
   - Legge til prosjektdeltaker: /no/project/learn/project-members/add
   - Redigere eller slette prosjektdeltaker: /no/project/learn/project-members/edit

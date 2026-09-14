@@ -16,6 +16,7 @@
         "group": "Kom godt i gang",
         "icon": "rocket",
         "root": "da/learn/getting-started/index",
+        "boost": 2,
         "pages": [
           {
             "group": "Layoutelementerne",
