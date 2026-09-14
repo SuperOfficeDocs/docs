@@ -49,7 +49,7 @@ Product content pages (everything outside `contribute/`) use a larger property s
 |---|---|---|---|
 | 1 | `uid` | Always | Unique identifier, hyphenated lowercase |
 | 2 | `title` | Always | The page's only title: rendered in the page header, the browser tab, and Mintlify's on-site search results. No H1 in the body (see [Markdown guide][2]) |
-| 3 | `sidebarTitle` | If present | Overrides the left-nav sidebar label when it needs to differ from `title` — for example when `title` carries disambiguating context for search (`Sale (Learn)`) but the sidebar should keep showing the plain module name (`Sale`). Set it to the pre-existing `title` value whenever adding context to `title` for this reason, so the sidebar itself never changes. Also used (required) on subcategory map pages, see below |
+| 3 | `sidebarTitle` | If present | Overrides the left-nav sidebar label when it needs to differ from `title` — for example when `title` carries disambiguating context for search (`Sale (User guide)`) but the sidebar should keep showing the plain module name (`Sale`). Set it to the pre-existing `title` value whenever adding context to `title` for this reason, so the sidebar itself never changes. Also used (required) on subcategory map pages, see below |
 | 4 | `description` | Always | Plain sentence, no quotes |
 | 5 | `keywords` | Always | YAML array of single-quoted search-term strings, for example `['term one', 'term two']`: Mintlify's internal-search format |
 | 6 | `author` | Always | GitHub alias: default `digitaldiina` |
