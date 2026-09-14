@@ -10,41 +10,55 @@ nudge, the same way #472 documented the property for the first time in
 contribute/markdown-guide/metadata.mdx (Mintlify guidance: 0.1-0.9 to de-prioritize, 1 is the
 untouched default, 2-5 for landing/quickstart pages, 5-10 reserved for top-level pages).
 
-Reads a unified diff on stdin (the workflow computes `git diff <base> <head> -- <changed files>`)
-and looks for added (`+`) lines matching a frontmatter `boost:` key or a JSON `"boost":` key.
-Advisory only: always exits 0. Sets `boost_changed=true` plus a `boost_summary` multi-line output
-on `$GITHUB_OUTPUT` (when running under Actions) so the calling workflow can post a PR comment
-without re-deriving anything itself.
+Uses the shared tools/ci/lib/diff_utils.get_added_line_numbers helper (same base-ref diff
+approach as the three check-no-new-docfx-*.py guards) to find lines the PR's own diff actually
+*added*, scoped to `.md`/`.mdx` content files and `config/nav-*.json`/`docs.json` navigation
+config — so a pre-existing `boost` value is never re-flagged just because an unrelated edit
+touched the same file. Re-reads each flagged file's own current content at those line numbers
+(rather than parsing the raw diff text) to get the actual `boost` value, the same
+masking-optional approach the DocFX guards use since a `boost:`/`"boost":` line can't collide
+with a fenced-code-block example the way an inline pattern could.
+
+Advisory only: always exits 0. Sets `boost_changed=true` plus a `boost_summary` multi-line
+output on `$GITHUB_OUTPUT` (when running under Actions) so the calling workflow can post a PR
+comment without re-deriving anything itself.
 
 Usage:
-    git diff <base> <head> -- <files> | python tools/ci/check-boost-changes.py
+    python tools/ci/check-boost-changes.py --base-ref origin/main
 """
 
+import argparse
 import os
 import re
 import sys
+from pathlib import Path
 
-DIFF_FILE_HEADER_RE = re.compile(r"^\+\+\+ b/(.+)$")
-ADDED_LINE_RE = re.compile(r"^\+(?!\+\+)(.*)$")
-FRONTMATTER_BOOST_RE = re.compile(r"^\s*boost:\s*([\d.]+)\s*$")
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib.diff_utils import get_added_line_numbers  # noqa: E402
+from lib.repo_files import resolve_safe_path  # noqa: E402
+
+PATTERNS = ("*.md", "*.mdx", "config/nav-*.json", "docs.json")
+
+FRONTMATTER_BOOST_RE = re.compile(r'^\s*boost:\s*([\d.]+)\s*$')
 JSON_BOOST_RE = re.compile(r'^\s*"boost":\s*([\d.]+)\s*,?\s*$')
 
 
-def find_boost_additions(diff_text):
-    current_file = None
+def find_boost_additions(base_ref):
+    added = get_added_line_numbers(base_ref, patterns=PATTERNS)
     hits = []
-    for line in diff_text.splitlines():
-        header = DIFF_FILE_HEADER_RE.match(line)
-        if header:
-            current_file = header.group(1)
+    for rel_path, line_numbers in added.items():
+        full_path = resolve_safe_path(rel_path)
+        if full_path is None or not full_path.is_file():
             continue
-        added = ADDED_LINE_RE.match(line)
-        if not added or current_file is None:
-            continue
-        content = added.group(1)
-        m = FRONTMATTER_BOOST_RE.match(content) or JSON_BOOST_RE.match(content)
-        if m:
-            hits.append((current_file, m.group(1)))
+        lines = full_path.read_bytes().decode("utf-8-sig", errors="replace").split("\n")
+        for line_no in sorted(line_numbers):
+            if line_no > len(lines):
+                continue
+            content = lines[line_no - 1]
+            m = FRONTMATTER_BOOST_RE.match(content) or JSON_BOOST_RE.match(content)
+            if m:
+                hits.append((rel_path, line_no, m.group(1)))
+    hits.sort()
     return hits
 
 
@@ -57,21 +71,28 @@ def write_github_output(hits):
         f.write(f"boost_changed={changed}\n")
         if hits:
             f.write("boost_summary<<BOOST_SUMMARY_EOF\n")
-            for path, value in hits:
+            for path, _line_no, value in hits:
                 f.write(f"- `{path}` -> `boost: {value}`\n")
             f.write("BOOST_SUMMARY_EOF\n")
 
 
 def main():
-    diff_text = sys.stdin.read()
-    hits = find_boost_additions(diff_text)
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--base-ref", required=True, help="Ref to diff against, e.g. origin/main")
+    args = parser.parse_args()
+
+    hits = find_boost_additions(args.base_ref)
 
     if hits:
-        for path, value in hits:
-            print(f"::warning file={path}::Added/changed boost: {value} - review against Mintlify's guidance in contribute/markdown-guide/metadata.mdx before merging.")
+        for path, line_no, value in hits:
+            print(
+                f"::warning file={path},line={line_no}::"
+                f"Added/changed boost: {value} - review against Mintlify's guidance in "
+                f"contribute/markdown-guide/metadata.mdx before merging."
+            )
         print(f"\n{len(hits)} boost change(s) found; see warnings above.")
     else:
-        print("No boost changes found in the checked files.")
+        print("No boost changes found in this diff.")
 
     write_github_output(hits)
 
