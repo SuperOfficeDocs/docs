@@ -400,6 +400,7 @@
         "pages": [
           "en/api/archive-providers/encoded-values",
           "en/api/archive-providers/how-to-query",
+          "en/api/archive-providers/grouping-restrictions",
           "en/api/archive-providers/data-aggregation",
           "en/api/archive-providers/aggregate-groupby",
           "en/api/archive-providers/nested-aggregate-functions"

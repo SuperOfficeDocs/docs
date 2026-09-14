@@ -1,0 +1,166 @@
+---
+title: Grouping restrictions
+description: Learn about grouping restrictions with InterParenthesis.
+author: AnthonyYates
+date: 09.14.2026
+keywords: ['archive provider query', 'query database', 'archive restriction', 'criteria grouping']
+so_version: 12.4
+content_type: concept
+category: api
+topic: archive providers
+language: en
+---
+
+The SuperOffice archive API accepts restrictions as a flat array of `ArchiveRestrictionInfo` objects. Unlike the Find API, there is no tree and no nested `children` collection. Yet the API can express arbitrarily nested boolean logic — `a AND (b OR (c AND d))` — through a single integer property on each element: `InterParenthesis`. This page explains what that integer means, how the server interprets it, and how to place it so your query does what you intend.
+
+## The property
+
+```text
+InterParenthesis : int   (default 0)
+```
+
+| Value | Effect |
+| --- | --- |
+| `+n` | Emit `n` opening parentheses **immediately before** this restriction |
+| `-n` | Emit `n` closing parentheses **immediately after** this restriction |
+| `0` | No parentheses on this element |
+
+That's the whole contract. A restriction opens a group, closes a group, or does neither. It cannot do both, because the two cases are represented by the sign of one number — which is fine, since a single-element group `(a)` is semantically identical to `a` and never needs to be expressed.
+
+## How the server reads the array
+
+The server walks the array in order and produces a token stream. For each element it emits:
+
+1. Opening parentheses, if `InterParenthesis > 0`
+2. The restriction itself
+3. Closing parentheses, if `InterParenthesis < 0`
+4. The element's `InterOperator` (`And` or `Or`) connecting it to the next element
+
+Then a standard precedence parser turns the stream into a SQL `WHERE` tree, with `AND` binding tighter than `OR` — exactly as SQL does. Two consequences follow:
+
+* The operator that joins two restrictions is carried by the **left-hand** one. In `a OR b`, `Or` is set on `a`.
+* Without parentheses, `a OR b AND c` is `a OR (b AND c)`. If you want `(a OR b) AND c`, you must say so.
+
+## Placing the parentheses
+
+The rule is mechanical: **open on the first member of the group, close on the last member.**
+
+### `a AND (b OR c)`
+
+```csharp
+new ArchiveRestrictionInfo("contactId",       "equals", "125"),
+new ArchiveRestrictionInfo("recipientStatus", "equals", "4") { InterParenthesis = 1,  InterOperator = InterRestrictionOperator.Or },
+new ArchiveRestrictionInfo("recipientStatus", "equals", "6") { InterParenthesis = -1 },
+```
+
+Token stream:
+
+```sql
+contactId=125  AND  ( recipientStatus=4  OR  recipientStatus=6 )
+```
+
+The `Or` sits on the first `recipientStatus` element because that's the element *before* the OR. The last element's `InterOperator` is never used — there is nothing after it to connect to.
+
+### `(a OR b) AND (c OR d)`
+
+```csharp
+new ArchiveRestrictionInfo("saleStatus",  "equals", "1") { InterParenthesis = 1,  InterOperator = InterRestrictionOperator.Or },
+new ArchiveRestrictionInfo("saleStatus",  "equals", "2") { InterParenthesis = -1 },
+new ArchiveRestrictionInfo("associateId", "equals", "5") { InterParenthesis = 1,  InterOperator = InterRestrictionOperator.Or },
+new ArchiveRestrictionInfo("associateId", "equals", "7") { InterParenthesis = -1 },
+```
+
+```sql
+( saleStatus=1 OR saleStatus=2 )  AND  ( associateId=5 OR associateId=7 )
+```
+
+The second element closes its group and, via the default `And`, connects to the third element, which opens the next group.
+
+### Nested groups: `(a AND (b OR c))`
+
+```csharp
+new ArchiveRestrictionInfo("contactId",       "equals", "125") { InterParenthesis = 1 },
+new ArchiveRestrictionInfo("recipientStatus", "equals", "4")   { InterParenthesis = 1, InterOperator = InterRestrictionOperator.Or },
+new ArchiveRestrictionInfo("recipientStatus", "equals", "6")   { InterParenthesis = -2 },
+```
+
+```sql
+( contactId=125  AND  ( recipientStatus=4  OR  recipientStatus=6 ) )
+```
+
+Parentheses are additive. The last element closes two groups with `-2`. If the outer group had continued past the inner one — `(a AND (b OR c) AND d)` — the inner close would be `-1` on `c` and the outer close `-1` on `d`.
+
+### Three-way OR inside an AND
+
+```csharp
+new ArchiveRestrictionInfo("category",  "equals", "3"),
+new ArchiveRestrictionInfo("business",  "equals", "1") { InterParenthesis = 1, InterOperator = InterRestrictionOperator.Or },
+new ArchiveRestrictionInfo("business",  "equals", "2") { InterOperator = InterRestrictionOperator.Or },
+new ArchiveRestrictionInfo("business",  "equals", "5") { InterParenthesis = -1 },
+new ArchiveRestrictionInfo("country",   "equals", "47"),
+```
+
+```sql
+category=3  AND  ( business=1 OR business=2 OR business=5 )  AND  country=47
+```
+
+Middle members of a group have `InterParenthesis = 0`. Only the edges carry the brackets.
+
+## The same thing over REST
+
+The JSON carrier exposes the same properties. `POST /api/v1/Agents/Archive/GetArchiveListByColumnsWithHeader` with:
+
+```json
+"Restriction": [
+  { "Name": "category", "Operator": "equals", "Values": ["3"],
+    "InterOperator": "And", "InterParenthesis": 0 },
+  { "Name": "business", "Operator": "equals", "Values": ["1"],
+    "InterOperator": "Or",  "InterParenthesis": 1 },
+  { "Name": "business", "Operator": "equals", "Values": ["2"],
+    "InterOperator": "Or",  "InterParenthesis": 0 },
+  { "Name": "business", "Operator": "equals", "Values": ["5"],
+    "InterOperator": "And", "InterParenthesis": -1 },
+  { "Name": "country",  "Operator": "equals", "Values": ["47"],
+    "InterOperator": "And", "InterParenthesis": 0 }
+]
+```
+
+Spelling out the defaults (`"And"`, `0`) is optional but recommended. A reader verifying the query shouldn't need to remember what the defaults are.
+
+## Balance and robustness
+
+The sum of all `InterParenthesis` values across the array must be zero, and no prefix of the array may have a negative running total. That's just "parentheses must balance", and the server will reject a query that closes a group it never opened.
+
+There is one subtler case. Archive providers are free to *ignore* a restriction — for example, a column handler may decide that an empty-string comparison is meaningless and produce no SQL for it. When that happens, the element is skipped in the token stream, and its parentheses go with it. The server tolerates a dropped **opening** parenthesis by also dropping the matching close. It does not tolerate a dropped **closing** parenthesis: the resulting unmatched `(` fails the parse.
+
+Practical rule: **put the closing parenthesis on a restriction you know the provider will honor** — a primary-key comparison, a status equality, or a date bound. Avoid closing a group on a restriction whose value might be empty, null, or otherwise ignorable.
+
+## If you'd rather not count brackets
+
+The `...WithHeader2` family of archive operations accepts the restriction as an OData-style string:
+
+```sql
+category eq 3 and (business eq 1 or business eq 2 or business eq 5) and country eq 47
+```
+
+The server parses this into precisely the `ArchiveRestrictionInfo[]` shown above — bracketed groups become `+1` on the first element and `-1` on the last. For ad-hoc queries, scripts, and tests, this is the harder-to-get-wrong option. For client code that assembles restrictions programmatically from UI state, the array form is the natural fit; just verify it the way the server does.
+
+## Verify like the server does
+
+Before sending a restriction array, write out its token stream by hand:
+
+```text
+[open parens] restriction [close parens] operator  [open parens] restriction [close parens] operator  ...
+```
+
+Then read it as SQL with `AND` binding tighter than `OR`. If the one-liner you produce isn't the query you meant, fix the array — not the expected results.
+
+## Checklist
+
+* `+1` on the **first** member of a group, `-1` on the **last**. Middle members stay `0`.
+* Nested groups stack: close two groups at once with `-2`.
+* The operator between two restrictions belongs to the one on the **left**.
+* `AND` outranks `OR`. Mixed operators without parentheses almost never mean what you intended.
+* Close groups on restrictions the provider is guaranteed to expand.
+* Total of all `InterParenthesis` values is zero; running total never negative.
+* When in doubt, write the token stream out and read it back.
