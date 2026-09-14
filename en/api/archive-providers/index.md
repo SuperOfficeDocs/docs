@@ -72,6 +72,7 @@ Namespace is `SuperOffice.CRM.ArchiveLists`.
 
 * [Encoded values][2]
 * [How to perform an archive provider query][3]
+* [Grouping restrictions][5]
 * [Aggregation][4]
 
 ## Example
@@ -113,3 +114,4 @@ using(SoSession newSession = SoSession.Authenticate("SAL0", ""))
 [2]: /en/api/archive-providers/encoded-values
 [3]: /en/api/archive-providers/how-to-query
 [4]: /en/api/archive-providers/data-aggregation
+[5]: /en/api/archive-providers/grouping-restrictions
