@@ -4,8 +4,8 @@ title: Opret en ny formular
 description: Få mere at vide om, hvordan du kan oprette en webformular, i denne vejledning.
 keywords: ['formular', 'webformular']
 author: digitaldiina
-date: 05.04.2026
-so_version: 11.13
+date: 17.09.2026
+so_version: 12.4
 content_type: howto
 license: marketingessentials
 tier: growth
@@ -114,11 +114,35 @@ I kategorien **Felter** kan du tilføje de felter, der skal medtages i formulare
 
     * Klik på afkrydsningsfeltet **Fuld bredde,** hvis det markerede felt skal have samme bredde som formularen.
 
+    * Hvis felttypen understøtter det, kan du klikke på **Tilføj relateret felt** på en af dets valgmuligheder eller værdier for at tilføje et betinget felt. Se [Tilføj et betinget felt](#conditional) nedenfor.
+
 9. Rediger eventuelle andre [indstillinger i feltet][4] efter behov.
 
 10. Klik på **Brug nu**, når du er færdig.
 
 11. Gentag trin 2-10 for at tilføje et andet felt. Du kan også klikke på **Dubler felt** (<i class="ph ph-copy" aria-hidden="true"></i>) for at oprette en kopi af et felt.
+
+### Tilføj et betinget felt {#conditional}
+
+Vis kun besøgende de spørgsmål, der er relevante for dem. Et **betinget felt** (også kaldet et relateret felt) viser et opfølgende spørgsmål kun, når et tidligere svar gør det relevant, så hver besøgende kun ser det, der betyder noget for dem, mens formularen stadig indsamler de oplysninger, der er nødvendige fra alle andre. Et felt for **Contact - Country** kan for eksempel vise feltet **Contact - Preferred language**, når et bestemt land er valgt.
+
+Dette fungerer på rullelister (herunder standardlistefelter), valgmulighedsknapper, afkrydsningsfelter, bedømmelsesfelter (stjerner, smileys, terninger eller tommelfingre), ekstrafelter af typen rulleliste eller boolsk, og interessefelter. Felttyper, der understøtter dette, har et **Betinget**-badge, når du tilføjer et nyt element, så du ikke behøver at tilføje feltet først for at finde ud af det.
+
+![Felttyper, der understøtter betingede felter, har et Betinget-badge i vinduet Tilføj element -screenshot][img18]
+
+1. Vælg den valgmulighed eller værdi på et felt, der understøtter det, som skal udløse det opfølgende spørgsmål.
+1. Klik på **Tilføj relateret felt**.
+1. [Tilføj og konfigurer det nye felt](#fields), som du ville gøre med et hvilket som helst andet felt.
+
+Det overordnede felt får nu badget **Har relaterede felter**, og det relaterede felt vises indrykket under det, med et banner med en forklaring i almindeligt sprog (for eksempel "Dette felt vises, når **Contact - Country** er **Schweiz**"). Brug bannerets redigeringsikon til at ændre betingelsen, eller ikonet til at fjerne det relaterede felt. Hvis du vælger flere udløsende værdier, sammenkæder banneret dem med "eller". Bedømmelsesfelter viser et interval i stedet for en enkelt værdi.
+
+![Et felt med et relateret felt og dets betingelsesbanner -screenshot][img19]
+
+Du kan kæde relaterede felter flere niveauer i dybden (et spørgsmål kan udløse et opfølgende spørgsmål, som igen kan udløse et endnu dybere opfølgende spørgsmål), men hvert relateret felt styres af præcis én betingelse på ét felt.
+
+<Note>
+Et relateret felt er som standard skjult for den besøgende, vises øjeblikkeligt, når det udløsende svar gives, og forsvinder og ryddes, hvis svaret ændres. Et skjult felt er aldrig påkrævet, selv om det er markeret som obligatorisk, og skjulte svar medtages ikke i indsendelsen.
+</Note>
 
 ### Stil {#style}
 
@@ -222,3 +246,5 @@ Her kan du [definere, hvad der sker, når nogen sender et svar på formularen][3
 [img15]: ../../../../media/loc/en/marketing/contact-me-form-properties.png
 [img16]: ../../../../media/loc/en/marketing/form-custom-styling.png
 [img17]: ../../../../media/loc/en/marketing/form-extract-styles-ai.png
+[img18]: ../../../../media/loc/en/marketing/form-add-element-conditional-badge.png
+[img19]: ../../../../media/loc/en/marketing/form-field-has-related-fields.png

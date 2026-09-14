@@ -4,8 +4,8 @@ title: Skapa nytt formulär
 description: Lär dig hur du kan skapa ett webbformulär i den här instruktionsguiden.
 keywords: ['formulär', 'webbformulär', 'anmäl dig']
 author: digitaldiina
-date: 05.04.2026
-so_version: 11.13
+date: 17.09.2026
+so_version: 12.4
 content_type: howto
 license: marketingessentials
 tier: growth
@@ -114,11 +114,35 @@ I kategorin **Fält** lägger du till fälten som ska finnas med i formuläret. 
 
     * Klicka på kryssrutan **Full bredd** om du vill att det markerade fältet ska ha samma bredd som formuläret.
 
+    * Om fälttypen stöder det kan du klicka på **Lägg till relaterat fält** på ett av dess alternativ eller värden för att lägga till ett villkorat fält. Se [Lägg till ett villkorat fält](#conditional) nedan.
+
 9. Redigera andra [alternativ i fältet][4] om det behövs.
 
 10. Klicka på **Använd nu** när du är klar.
 
 11. Upprepa steg 2-10 om du vill lägga till fler fält. Du kan också klicka på **Duplicera fält** (<i class="ph ph-copy" aria-hidden="true"></i>) om du vill skapa en kopia av ett fält.
+
+### Lägg till ett villkorat fält {#conditional}
+
+Visa bara besökarna de frågor som är relevanta för dem. Ett **villkorat fält** (även kallat ett relaterat fält) visar en följdfråga bara när ett tidigare svar gör den relevant, så att varje besökare bara ser det som är viktigt för dem, samtidigt som formuläret ändå samlar in de uppgifter som behövs från alla andra. Fältet **Contact - Country** kan till exempel visa fältet **Contact - Preferred language** bara när ett visst land har valts.
+
+Det här fungerar för listrutor (inklusive standardlistfält), alternativknappar, kryssrutor, bedömningsfält (stjärnor, smilisar, tärningar eller tummen upp/ner), extrafält av typen listruta eller booleskt, samt intressefält. Fälttyper som stöder det här får ett **Villkorad**-märke när du lägger till ett nytt element, så att du inte behöver lägga till fältet först för att ta reda på det.
+
+![Fält som stöder villkorade fält får märket Villkorad i fönstret Lägg till post -screenshot][img18]
+
+1. Välj alternativet eller värdet i ett fält som stöder det här, som ska utlösa följdfrågan.
+1. Klicka på **Lägg till relaterat fält**.
+1. [Lägg till och konfigurera det nya fältet](#fields) på samma sätt som för alla andra fält.
+
+Det överordnade fältet får nu märket **Har relaterade fält**, och det relaterade fältet visas indraget under det, med en banderoll som förklarar villkoret i vardagligt språk (till exempel "Det här fältet visas när **Contact - Country** är **Schweiz**"). Använd banderollens redigeringsikon för att ändra villkoret, eller borttagningsikonen för att ta bort det relaterade fältet. Om du väljer flera utlösande värden binder banderollen ihop dem med "eller". Bedömningsfält visar i stället ett intervall.
+
+![Ett fält med ett relaterat fält och dess villkorsbanderoll -screenshot][img19]
+
+Du kan kedja relaterade fält flera nivåer djupt (en fråga kan utlösa en följdfråga, som i sin tur kan utlösa en ännu djupare följdfråga), men varje relaterat fält styrs av exakt ett villkor på ett fält.
+
+<Note>
+Ett relaterat fält är dolt som standard för besökaren, visas direkt när det utlösande svaret ges, och försvinner och töms om svaret ändras. Ett dolt fält är aldrig obligatoriskt, även om det är markerat som obligatoriskt, och dolda svar tas inte med i inlämningen.
+</Note>
 
 ### Stil {#style}
 
@@ -222,3 +246,5 @@ Här kan du [definiera vad som händer när någon skickar in ett svarsformulär
 [img15]: ../../../../media/loc/en/marketing/contact-me-form-properties.png
 [img16]: ../../../../media/loc/en/marketing/form-custom-styling.png
 [img17]: ../../../../media/loc/en/marketing/form-extract-styles-ai.png
+[img18]: ../../../../media/loc/en/marketing/form-add-element-conditional-badge.png
+[img19]: ../../../../media/loc/en/marketing/form-field-has-related-fields.png
