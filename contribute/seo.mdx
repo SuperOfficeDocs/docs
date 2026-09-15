@@ -19,7 +19,7 @@ language: en
 Every page automatically gets `og:title`, `og:description`, `og:image`, and matching `twitter:*` meta tags, with no per-page configuration required. Mintlify renders these directly from that page's own frontmatter `title` and `description`. See [Metadata][1] for how those fields are written. Improving a page's link-preview text is a metadata edit, not an `seo` setting.
 
 <Note>
-This site's own `style.css` hides `description` from rendering under the page title, so it never shows up as on-page text here — its only jobs are the social-preview tags above and an external search-engine result snippet.
+This site's own `style.css` hides `description` from rendering under the page title, so it never shows up as on-page text here; its only jobs are the social-preview tags above and an external search-engine result snippet.
 </Note>
 
 ## Custom background
@@ -60,7 +60,7 @@ This native sitemap is unrelated to the Userflow sitemap below: one is for searc
 
 ## The search box is a separate system
 
-Everything above is about `seo`, external search engines, and social platforms. The search bar in this site's own header is a different, unrelated system, not to be confused with the SuperOffice product's own "Onsite" (on-premise) deployment option. It has its own two levers, `boost` and `searchable`, set in page frontmatter or at the `docs.json`/`config/nav-*.json` group level, never under `docs.json`'s `seo` key. `seo.indexing` doesn't touch it either way. `noindex`, however, does reach it: the boolean frontmatter field removes a page from this search box's results entirely, not just from Google — it's one bundled switch covering external indexing, the sitemap, this site's own search, and the AI assistant's context all at once (see [Metadata][1]'s `noindex` row, and its note on the separate `robots` field for an external-only alternative). Don't expect `boost` to affect Google or social-preview behavior either way.
+Everything above is about `seo`, external search engines, and social platforms. The search bar in this site's own header is a different, unrelated system, not to be confused with the SuperOffice product's own "Onsite" (on-premise) deployment option. It has its own two levers, `boost` and `searchable`, set in page frontmatter or at the `docs.json`/`config/nav-*.json` group level, never under `docs.json`'s `seo` key. `seo.indexing` doesn't touch it either way. `noindex`, however, does reach it: the boolean frontmatter field removes a page from this search box's results entirely, not just from Google. It's one bundled switch covering external indexing, the sitemap, this site's own search, and the AI assistant's context all at once (see [Metadata][1]'s `noindex` row, and its note on the separate `robots` field for an external-only alternative). Don't expect `boost` to affect Google or social-preview behavior either way.
 
 ## Userflow's sitemap
 
