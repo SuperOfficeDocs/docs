@@ -4,7 +4,7 @@ title: Reviews on SuperOfficeDocs
 description: Explanation of how to request a review, to handle feedback and suggested changes, and to review someone else's contributions on SuperOfficeDocs.
 keywords: ['review', 'pull request', 'contributor', 'reviewer', 'code owners']
 author: digitaldiina
-date: 08.10.2026
+date: 09.15.2026
 content_type: concept
 related:
   - /contribute/deployment
@@ -56,6 +56,7 @@ GitHub blocks self-approval of your own PR at the API level, so the Code Owner c
 * Reference to deleted pages should be removed from toc and other content.
 * Reference to moved or renamed pages should be updated so no links break.
 * Images and other resources used only in a deleted file should also be deleted.
+* If a touched page has no `description`, or a `keywords` entry that only repeats words already in its own `title` (see [Metadata][10] for what these fields actually do), fix it while you're there rather than leaving it for a future pass. Skip this for the generated reference trees (`database/tables`, `api/archive-providers`, `api/mdo-providers`, `api/webapi`, `automation/crmscript/reference`); a fix there belongs in the generator, not a hand-edit.
 
 [1]: /contribute/review/request-review
 [2]: /contribute/style-guide/index
@@ -66,3 +67,4 @@ GitHub blocks self-approval of your own PR at the API level, so the Code Owner c
 [7]: /contribute/branch-strategy
 [8]: /contribute/review/check-changes#preview
 [9]: /contribute/automated-tests
+[10]: /contribute/markdown-guide/metadata
