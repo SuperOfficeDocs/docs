@@ -142,6 +142,11 @@ You can also check out our [webinar about the SharePoint integration][1].
     5. [Create a document library for templates][7].
         (R) Use the *Microsoft Entra service account* user.
     6. [Set up SharePoint document library permissions for *Documents*][11]
+
+        <Warning>
+        The SharePoint site must allow members, or users with Edit permissions, to share files and folders. If only site owners can share, *Visible for* restrictions can't be applied. See [Visible for sharing settings](#visible-for-sharing-settings) above for the full explanation.
+        </Warning>
+
         * Grant permissions to the Microsoft Entra domain groups you added above in step 2.2 *except TemplateEditors*.
 
             | Group | Permission level | Values |
