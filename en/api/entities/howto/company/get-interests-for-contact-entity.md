@@ -2,9 +2,9 @@
 title: How to list all selected interests for a contact
 sidebarTitle: "List interests for a contact"
 description: How to list all selected interests for a contact using entities
-keywords: ['contact', 'company', 'interest', 'entity', 'API', 'ContactInterestHelper', 'SelectHeadingItems', 'SelectRootItems']
+keywords: ['company', 'interest', 'entity', 'API', 'ContactInterestHelper', 'SelectHeadingItems', 'SelectRootItems', 'get interests', 'company interests']
 author: Tony Yates
-date: 05.11.2016
+date: 09.15.2026
 so_version: 11
 content_type: howto
 deployment: onsite

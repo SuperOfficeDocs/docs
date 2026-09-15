@@ -2,7 +2,6 @@
 uid: localization-addresshelper
 title: AddressHelper class
 description: AddressHelper class
-keywords: ['AddressHelper class']
 author: Tony Yates
 date: 10.09.2025
 content_type: reference

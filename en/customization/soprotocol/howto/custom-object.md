@@ -3,7 +3,7 @@ uid: sop-custom-objects
 title: How to work with custom objects using SoProtocol
 sidebarTitle: "Custom objects via SoProtocol"
 description: How to show or create a custom object with or without prefilled values using SoProtocol.
-keywords: ['soprotocol', 'custom object']
+keywords: ['custom object']
 author: Michel Krohn-Dale
 date: 09.24.2024
 so_version: 10.3.8

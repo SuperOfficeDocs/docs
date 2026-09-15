@@ -2,7 +2,7 @@
 title: Get a CategoryList through typed list providers
 sidebarTitle: "CategoryList via typed providers"
 description: Get a CategoryList through typed list providers
-keywords: ['category', 'list provider', 'CategoryList']
+keywords: ['category', 'list provider']
 author: Tony Yates
 date: 05.11.2016
 so_version: 11

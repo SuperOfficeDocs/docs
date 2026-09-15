@@ -5,7 +5,7 @@ uid: set_validation_rules_in_trigger
 description: What if I want to specify what to validate?
 author: Simen Mostuen Iversen
 date: 06.06.2019
-keywords: ['automation', 'validate', 'contact']
+keywords: ['automation', 'contact']
 content_type: howto
 userflow_index: true
 ---

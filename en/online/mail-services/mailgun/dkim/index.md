@@ -2,7 +2,7 @@
 uid: mailgun-dkim
 title: DKIM
 description: DKIM record for Mailgun
-keywords: ['DKIM', 'email', 'authentication', 'domain', 'DNS', 'record', 'security']
+keywords: ['email', 'authentication', 'domain', 'DNS', 'record', 'security']
 author: SuperOffice Product and Engineering
 date: 01.07.2026
 so_version: 12

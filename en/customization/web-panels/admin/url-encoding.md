@@ -2,7 +2,7 @@
 uid: help-en-url-encoding
 title: Url encoding
 description: URL encoding in web panels
-keywords: ['web panel', 'URL encoding']
+keywords: ['web panel']
 author: digitaldiina
 date: 10.13.2025
 so_version: 11.5

@@ -2,7 +2,7 @@
 uid: help-en-fastsearcher-navigator
 title: Using FastSearcher in the Navigator
 description: How to use FastSearcher in the Navigator in SuperOffice
-keywords: ['search', 'FastSearcher']
+keywords: ['search']
 author: Bergfrid Dias
 date: 01.20.2025
 so_version: 10.5

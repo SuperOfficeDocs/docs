@@ -4,7 +4,7 @@ description: How to update a user-defined field
 author: Tony Yates
 date: 11.05.2021
 so_version: 11
-keywords: ['udef', 'user-defined field', 'custom field', 'API', 'UdefHelper', 'UdefLarge', 'UdefSmall', 'progId', 'udeffield']
+keywords: ['user-defined field', 'custom field', 'API', 'UdefHelper', 'UdefLarge', 'UdefSmall', 'progId', 'udeffield']
 content_type: howto
 deployment: onsite
 audience: api

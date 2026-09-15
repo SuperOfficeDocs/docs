@@ -3,7 +3,7 @@ uid: chatbot_registration
 title: Chatbot registration
 author: christianm
 date: 03.08.2021
-keywords: ['chatbot', 'ai']
+keywords: ['ai']
 content_type: concept
 userflow_index: true
 ---

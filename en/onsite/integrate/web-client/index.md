@@ -5,7 +5,7 @@ sidebarTitle: "Web client integration scenarios"
 description: Integration in the onsite Web client
 author: Tony Yates
 date: 11.25.2021
-keywords: ['API', 'integration point', 'web client']
+keywords: ['API', 'integration point']
 content_type: reference
 deployment: onsite
 platform: web

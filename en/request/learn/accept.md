@@ -2,7 +2,7 @@
 uid: help-en-request-accept
 title: Accept (take responsibility for) request
 description: How to accept a request to avoid someone else answering the request at the same time.
-keywords: ['accept request', 'accept', 'responsibility', 'request owner', 'next in queue', 'request']
+keywords: ['request owner', 'next in queue']
 author: digitaldiina
 date: 06.10.2026
 so_version: 12.0

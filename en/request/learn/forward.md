@@ -2,7 +2,6 @@
 uid: help-en-request-forward
 title: Forward request to external contact
 description: Learn how to forward a request in this how-to guide.
-keywords: ['forward request', 'request']
 author: digitaldiina
 date: 06.10.2026
 so_version: 12.0

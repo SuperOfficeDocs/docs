@@ -2,7 +2,7 @@
 uid: crmscript-reply-template
 title: How to use a reply template in CRMScript
 description: How to use a reply template in CRMScript.
-keywords: ['crmscript', 'reply template', 'service', 'template', 'load', 'parse']
+keywords: ['service', 'load', 'parse']
 author: Bergfrid Skaara Dias
 date: 05.30.2023
 so_version: 10

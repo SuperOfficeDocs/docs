@@ -2,7 +2,7 @@
 uid: api-rest-flow-save
 title: Save email flow
 description: Save email flow
-keywords: ['flow', 'EmailFlow', 'SaveEmailFlow']
+keywords: ['EmailFlow', 'SaveEmailFlow']
 author: Eivind Fasting
 date: 05.24.2024
 so_version: 10.3.5

@@ -2,7 +2,7 @@
 uid: sms-connectors
 title: SMS connectors
 description: NetServer SMS connectors for SuperOffice
-keywords: ['SMS connector', 'SMS plugin', 'SMS plug-in', 'SMS']
+keywords: ['SMS connector', 'SMS plugin', 'SMS plug-in']
 author: digitalidiina
 date: 10.07.2025
 so_version: 11.5

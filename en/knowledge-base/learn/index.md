@@ -2,7 +2,6 @@
 uid: help-en-knowledge-base
 title: Knowledge Base
 description: Knowledge Base
-keywords: ['knowledge base']
 author: Kirsti Aakerholt
 date: 07.05.2023
 so_version: 10.5

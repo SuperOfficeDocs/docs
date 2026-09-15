@@ -2,7 +2,7 @@
 uid: crmsetup-crmtask-utils
 title: CrmSetup and CrmTask utilities
 description: CrmSetup.exe and CrmTask.exe utilities
-keywords: ['crmsetup', 'crmsetup.exe', 'crmtask', 'crmtask.exe']
+keywords: ['crmsetup.exe', 'crmtask.exe']
 author: pavlas77
 date: 06.10.2026
 so_version: 12.0

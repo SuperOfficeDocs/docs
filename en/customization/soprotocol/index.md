@@ -2,7 +2,7 @@
 uid: soprotocol
 title: SoProtocol
 description: SoProtocol
-keywords: ['soprotocol', 'deeplinking']
+keywords: ['deeplinking']
 author: Tony Yates, Eivind Fasting
 date: 12.06.2024
 so_version: 10.3

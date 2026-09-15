@@ -2,7 +2,7 @@
 title: Create a Contact entity through an entity collection
 sidebarTitle: "Create a contact (entity collection)"
 description: How to create a Contact entity through an ContactCollection entity collection.
-keywords: ['contact', 'company', 'entity', 'API', 'collection', 'ContactCollection']
+keywords: ['company', 'API', 'ContactCollection']
 author: Tony Yates
 date: 05.11.2016
 so_version: 11

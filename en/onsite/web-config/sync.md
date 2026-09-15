@@ -5,7 +5,7 @@ uid: ns_config_sync
 description: NetServer configuration values related to SuperOffice Sync (SoSync).
 date: 12.07.2021
 author: Bergfrid Dias
-keywords: ['config', 'NetServer', 'web.config', 'Sync', 'SoSync', 'synchronization', 'SoSyncAdmin', 'SettingsAbsoluteExpiration', 'SettingsSlidingExpiration']
+keywords: ['config', 'web.config', 'SoSync', 'synchronization', 'SoSyncAdmin', 'SettingsAbsoluteExpiration', 'SettingsSlidingExpiration']
 content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/sync

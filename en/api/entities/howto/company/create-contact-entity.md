@@ -1,7 +1,7 @@
 ---
 title: Create a Contact entity
 description: Create a contact entity
-keywords: ['contact', 'company', 'entity', 'API', 'assert', 'SetDefaults']
+keywords: ['company', 'API', 'assert', 'SetDefaults']
 author: Bergfrid Dias
 date: 02.22.2022
 so_version: 11

@@ -3,7 +3,7 @@ uid: help-en-contact
 title: Contact (User guide)
 sidebarTitle: "Contact"
 description: The Contact screen provides an instant snapshot of all communication and interaction with a person. Here, you can manage contact details, track activities, and access GDPR-related documentation.
-keywords: ['Contact screen', 'person', 'contact']
+keywords: ['Contact screen', 'person']
 author: Bergfrid Dias
 date: 12.17.2024
 so_version: 10

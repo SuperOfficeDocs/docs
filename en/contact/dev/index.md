@@ -2,7 +2,7 @@
 uid: contact-overview
 title: Contact (person)
 description: SuperOffice view of the world and working with persons. The associate database table represents employees, resources, and other users - except for external persons.
-keywords: ['person', 'contact', 'associate', 'blob']
+keywords: ['associate', 'blob']
 author: Bergfrid Skaara Dias
 date: 10.25.2024
 so_version: 10

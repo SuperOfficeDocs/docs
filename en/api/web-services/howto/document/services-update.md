@@ -2,7 +2,7 @@
 uid: api-services-document-update
 title: How to update a document in SO_ARC
 description: How to update a document in SO_ARC.
-keywords: ['document', 'API', 'services', 'document agent', 'DocumentAgent.CreateTempFile', 'DocumentAgent.GetDocumentStream', 'DocumentAgent.SetDocumentStream', 'SO_ARC']
+keywords: ['API', 'services', 'document agent', 'DocumentAgent.CreateTempFile', 'DocumentAgent.GetDocumentStream', 'DocumentAgent.SetDocumentStream']
 author: Tony Yates
 date: 06.11.2008
 so_version: 10

@@ -2,7 +2,6 @@
 uid: webhook_quote_event
 title: Quote webhook events
 description: Quote events
-keywords: ['quote webhook']
 author: SuperOffice Product and Engineering
 date: 07.07.2025
 content_type: reference

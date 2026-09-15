@@ -2,7 +2,6 @@
 uid: mobile-crm-company-add
 title: Add company
 description: How to register a company in SuperOffice Mobile CRM.
-keywords: ['company']
 author: digitaldiina
 date: 01.07.2026
 so_version: 11.1.5

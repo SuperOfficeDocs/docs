@@ -3,7 +3,7 @@ uid: get-preferences-ws
 title: Get the current value of a given preference
 sidebarTitle: "Get a preference (PreferenceAgent)"
 description: How to get preferences using services
-keywords: ['preference', 'PreferenceSpec', 'PreferenceAgent']
+keywords: ['PreferenceSpec', 'PreferenceAgent']
 author: digitaldiina
 date: 02.22.2022
 content_type: howto

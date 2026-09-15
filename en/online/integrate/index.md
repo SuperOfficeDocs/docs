@@ -2,7 +2,7 @@
 title: "Integration scenarios (cloud)"
 sidebarTitle: "Integration scenarios"
 description: Integration in the online Web client
-keywords: ['API', 'integration point', 'online', 'cloud']
+keywords: ['API', 'integration point', 'online']
 author: AtonyYates
 date: 08.20.2026
 so_version: 12

@@ -2,7 +2,7 @@
 title: Create an Appointment entity through an entity collection
 sidebarTitle: "Create an appointment (entity collection)"
 description: How to create an Appointment entity through an entity collection at the NetServer data layer.
-keywords: ['diary', 'calendar', 'appointment', 'API', 'entity', 'collection', 'AppointmentCollection']
+keywords: ['diary', 'calendar', 'API', 'AppointmentCollection']
 author: Bergfrid Skaara Dias
 date: 11.04.2021
 so_version: 11

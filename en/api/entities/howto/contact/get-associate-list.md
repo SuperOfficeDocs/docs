@@ -1,7 +1,7 @@
 ---
 title: Get the associate list
 description: How to retrieve the associate list
-keywords: ['associate', 'list', 'GetAssociateList']
+keywords: ['GetAssociateList']
 author: Tony Yates
 date: 02.22.2022
 so_version: 11

@@ -4,7 +4,6 @@ uid: quote_connectors_approve_quote
 description: Approving the quote
 author: SuperOffice Product and Engineering
 date:
-keywords: ['quote']
 content_type: howto
 redirect_from: /en/api/netserver/plugins/quote-connectors/approve-quote
 ---

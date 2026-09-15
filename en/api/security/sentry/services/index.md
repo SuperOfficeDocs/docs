@@ -4,7 +4,6 @@ uid: sentry_in_services
 description: Sentry in services
 author: SuperOffice Product and Engineering
 date:
-keywords: ['sentry']
 content_type: concept
 area: api-services
 hidden: true

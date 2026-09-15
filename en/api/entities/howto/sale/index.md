@@ -1,7 +1,7 @@
 ---
 title: Sale - entity
 description: Working with sales at the entity layer of NetServer.
-keywords: ['sale', 'API', 'entity']
+keywords: ['API']
 author: Bergfrid Skaara Dias
 date: 06.02.2023
 so_version: 11

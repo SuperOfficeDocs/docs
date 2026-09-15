@@ -2,7 +2,6 @@
 uid: automated-task-ejsender
 title: ejSender
 description: Automated tasks in Service - ejSender
-keywords: ['ejsender']
 author: SuperOffice Product and Engineering
 date: 11.21.2025
 content_type: reference

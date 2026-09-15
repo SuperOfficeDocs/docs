@@ -3,7 +3,7 @@ uid: help-en-mobile-crm-intro
 title: Mobile CRM - Access your CRM on the go
 sidebarTitle: "Introduction"
 description: Discover what's new in the refreshed Mobile CRM and how to get started on the go.
-keywords: ['mobile CRM app', 'SuperOffice mobile CRM', 'mobile', 'on the go']
+keywords: ['mobile CRM app', 'SuperOffice mobile CRM']
 author: digitaldiina
 date: 08.25.2026
 so_version: 11.1.16

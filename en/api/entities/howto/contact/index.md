@@ -1,7 +1,7 @@
 ---
 title: Contact - entity
 description: Working with contacts (person) in API with entities.
-keywords: ['person', 'contact', 'entity', 'API']
+keywords: ['person', 'API']
 author: Bergfrid Skaara Dias
 date: 11.04.2021
 so_version: 11

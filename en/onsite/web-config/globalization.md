@@ -4,7 +4,7 @@ uid: ns_config_globalization
 description: NetServer configuration used to access the Globalization section in the config file
 date: 12.09.2021
 author: Bergfrid Dias
-keywords: ['config', 'NetServer', 'web.config', 'Globalization', 'ApplicationCountryCode', 'AllwaysUseGsmPhoneStyle', 'UseApplicationCountryForPersons']
+keywords: ['config', 'web.config', 'ApplicationCountryCode', 'AllwaysUseGsmPhoneStyle', 'UseApplicationCountryForPersons']
 content_type: reference
 deployment: onsite
 redirect_from: /en/api/netserver/config/globalization

@@ -4,7 +4,6 @@ description: The Nested Persist concept is a concept that allows for multiple re
 author: Tony Yates
 date: 06.12.2009
 so_version: 11
-keywords: ['NetServer']
 content_type: concept
 deployment: onsite
 redirect_from: /en/api/netserver/entities/nested-persist

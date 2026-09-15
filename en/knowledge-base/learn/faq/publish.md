@@ -2,7 +2,6 @@
 uid: help-en-document-faq-publish
 title: Publish FAQ entries
 description: Publish FAQ entries
-keywords: ['publish FAQ']
 author: SuperOffice Product and Engineering
 date: 06.29.2022
 so_version: 10.5

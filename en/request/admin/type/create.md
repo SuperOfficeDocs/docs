@@ -2,7 +2,7 @@
 uid: help-en-request-type-create
 title: Create request type
 description: Create request type
-keywords: ['create request type', 'new request type', 'add request type', 'request type', 'Request types tab', 'type', 'request']
+keywords: ['new request type', 'add request type', 'Request types tab']
 author: Bergfrid Dias
 date: 06.10.2026
 so_version: 12.0
