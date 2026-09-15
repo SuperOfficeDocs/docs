@@ -35,4 +35,4 @@ View the [How-To pages][1] to see how to work with the lists endpoint to manage 
 
 [2]: /en/api/reference/restful/rest/list_mdo/get-list-of-lists
 [3]: /en/api/reference/restful/agent/index
-[4]: ../../../reference/soap/services88/MDO/index
+[4]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/reference/soap/Services88/MDO/index.md

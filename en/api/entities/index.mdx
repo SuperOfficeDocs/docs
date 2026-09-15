@@ -69,8 +69,8 @@ Entities are objects that may contain property values that are fetched from more
 
 * **A single entity:** a logical real-world object, such as `Contact`, `Person`, or `Appointment`.
 * **[Entity collections][12]:** collections of the business models, such as `ContactCollection`, `PersonCollection`, and `AppointmentCollection`.
-* **Row and Rows:** properties of type XRow, where X is the name of the property, are similar to that of ADO.NET DataRows. For example, `AppointmentText` (a `TextRow` object) or `Contact.Business` (a `BusinessRow` object).
-* **TableInfo:** every entity type has a TableInfo property that describes the schema of the base entity object (also categorically in the Rows layer).
+* **[Row and Rows][1]:** properties of type XRow, where X is the name of the property, are similar to that of ADO.NET DataRows. For example, `AppointmentText` (a `TextRow` object) or `Contact.Business` (a `BusinessRow` object).
+* **[TableInfo][3]:** every entity type has a TableInfo property that describes the schema of the base entity object (also categorically in the Rows layer).
 
 ![TableInfo intellisense -screenshot][img4]
 
@@ -145,7 +145,9 @@ Entities such as Contact, Person, and Sale represent business objects. The main 
 
 An entity is suitable for **one-at-a-time work**. Each entity will load its sub-objects greedily, so loading an entity will load its related data in one big SELECT. Entity collections should be used with care, since accessing a sub-entity of an item in the collection in a loop may trigger an extra SELECT for each item in the collection.
 
+[1]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/rows/index.md
 [2]: /en/api/overview/netserver
+[3]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/rows/index.md#tableinfo-and-fieldinfo
 [4]: /en/api/entities/get-entity
 [6]: /en/api/entities/create-entity
 [8]: /en/api/entities/update-entity
