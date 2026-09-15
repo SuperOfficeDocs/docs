@@ -2,7 +2,7 @@
 uid: crmscript-request-accept
 title: Accept ticket
 description: How to accept ticket with CRMScript.
-keywords: ['Service', 'ticket', 'request', 'CRMScript']
+keywords: ['Service', 'request', 'CRMScript']
 author: Bergfrid Skaara Dias
 date: 05.26.2023
 so_version: 10

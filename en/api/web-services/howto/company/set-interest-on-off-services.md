@@ -3,7 +3,7 @@ uid: toggle-contact-interest-ws
 title: How to set an interest on or off for a contact (services)
 sidebarTitle: "Set interest on/off (services)"
 description: How to set an interest on or off for a contact using services
-keywords: ['contact', 'company', 'services', 'API', 'interest', 'ContactAgent', 'electableMDOListItem']
+keywords: ['company', 'API', 'ContactAgent', 'electableMDOListItem']
 author: Tony Yates
 date: 11.04.2021
 content_type: howto

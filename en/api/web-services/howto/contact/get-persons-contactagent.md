@@ -3,7 +3,7 @@ uid: get-person-contactagent
 title: Retrieving list of persons with ContactAgent
 sidebarTitle: "List persons (ContactAgent)"
 description: How to retrieve a list of persons with ContactAgent.
-keywords: ['person', 'contact', 'services', 'API', 'api-services', 'ContactAgent', 'PersonAgent', 'GetContactWithPersons']
+keywords: ['person', 'contact', 'services', 'API', 'api-services', 'PersonAgent', 'GetContactWithPersons']
 author: Bergfrid Skaara Dias
 date: 11.04.2021
 content_type: howto

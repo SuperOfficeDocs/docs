@@ -1,7 +1,7 @@
 ---
 title: IMirrorClientService interface (legacy)
 description: IMirrorClientService interface
-keywords: ['IMirrorClientService', 'mirroring', 'WCF', 'legacy']
+keywords: ['mirroring', 'WCF']
 author: SuperOffice Product and Engineering
 date: 06.05.2026
 so_version: 12

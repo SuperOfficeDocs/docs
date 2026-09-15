@@ -2,7 +2,7 @@
 title: How to display an image from the Blob table (data layer)
 sidebarTitle: "Display image from Blob table (entities)"
 description: How to display an image from the Blob table
-keywords: ['person', 'contact', 'entity', 'API', 'BinaryObject', 'BLOB', 'image', 'BinaryObjectRow', 'GetFromIdxMimeType']
+keywords: ['person', 'contact', 'entity', 'API', 'BinaryObject', 'BinaryObjectRow', 'GetFromIdxMimeType']
 author: Bergfrid Skaara Dias
 date: 11.02.2021
 so_version: 11

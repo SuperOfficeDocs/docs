@@ -2,7 +2,7 @@
 uid: so-protocol-nav
 title: SoProtocol targets reference
 description: SoProtocol navigation targets, dialog targets, query parameters, and admin screens reference
-keywords: ['soprotocol', 'deeplinking', 'navigation', 'targets']
+keywords: ['deeplinking', 'navigation']
 author: Michel Krohn-Dale, digitaldiina, MargretheR
 date: 06.10.2026
 so_version: 12.0

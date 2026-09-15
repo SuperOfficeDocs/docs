@@ -2,7 +2,6 @@
 uid: api-ws-document
 title: Document API options
 description: Working with documents via SuperOffice APIs.
-keywords: ['document', 'API']
 author: Bergfrid Skaara Dias
 date: 07.11.2024
 so_version: 10

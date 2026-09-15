@@ -2,7 +2,7 @@
 uid: help-en-email-inbox-create-request
 title: Create request
 description: Learn how to create a request in SuperOffice Service based on an email message
-keywords: ['create request', 'inbox', 'service', 'ticket', 'customer service', 'email', 'request']
+keywords: ['inbox', 'service', 'ticket', 'customer service', 'email']
 author: Bergfrid Dias
 date: 05.28.2025
 so_version: 10.5

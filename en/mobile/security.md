@@ -3,7 +3,7 @@ uid: mobile-security
 title: Mobile CRM security in SuperOffice CRM Online
 sidebarTitle: "Mobile CRM security"
 description: Mobile CRM security in CRM Online
-keywords: ['mobile', 'pocket']
+keywords: ['pocket']
 author: Martin Pavlas
 date: 06.10.2026
 so_version: 11.1.12

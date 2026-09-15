@@ -2,7 +2,6 @@
 uid: help-en-sales-targets-create
 title: Set up sales targets
 description: Keep track of your budgets by setting up sales targets. This will help you to set the right expectations, plan your growth, increase motivation and save time.
-keywords: ['sales targets']
 author: digitaldiina
 date: 06.10.2026
 so_version: 12.0

@@ -3,7 +3,7 @@ title: Reports in SuperOffice Win and Web
 uid: reports
 description: Reports in SuperOffice
 author: SuperOffice Product and Engineering
-keywords: ['reports', 'printing', 'print']
+keywords: ['printing', 'print']
 content_type: reference
 ---
 

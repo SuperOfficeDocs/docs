@@ -3,7 +3,7 @@ uid: chatbot_messages
 title: Chatbot messages
 author: christianm
 date: 03.08.2021
-keywords: ['chatbot', 'ai']
+keywords: ['ai']
 content_type: concept
 userflow_index: true
 ---

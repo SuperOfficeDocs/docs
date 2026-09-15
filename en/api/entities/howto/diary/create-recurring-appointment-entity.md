@@ -2,7 +2,7 @@
 title: How to create a recurring appointment (data layer)
 sidebarTitle: "Recurring appointment (entities)"
 description: How to create a recurring appointment using entities at the NetServer data layer.
-keywords: ['diary', 'calendar', 'appointment', 'API', 'entity', 'AppointmentMatrix', 'RecurrencePattern', 'RecurrenceDailyPattern']
+keywords: ['diary', 'calendar', 'API', 'entity', 'AppointmentMatrix', 'RecurrencePattern', 'RecurrenceDailyPattern']
 author: Bergfrid Skaara Dias
 date: 11.04.2021
 so_version: 11

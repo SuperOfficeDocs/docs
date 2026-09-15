@@ -3,7 +3,7 @@ title: Multi-Departmental Organizational (MDO) API
 sidebarTitle: "MDO API"
 description: Describes Multi-departmental organization lists (MDO) APIs
 author: AnthonyYates
-keywords: ['list', 'MDO']
+keywords: ['list']
 content_type: concept
 date: 03.03.2022
 category: list

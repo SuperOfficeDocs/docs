@@ -1,7 +1,7 @@
 ---
 title: Cookies overview
 description: Cookies overview
-keywords: ['security', 'cookies']
+keywords: ['security']
 author: SuperOffice Product and Engineering
 date: 08.20.2026
 so_version: 12

@@ -2,7 +2,6 @@
 uid: quote-connector-base
 title: QuoteConnectorBase implementation
 description: QuoteConnectorBase implementation
-keywords: ['QuoteConnectorBase']
 author: SuperOffice Product and Engineering
 date: 08.25.2025
 content_type: reference

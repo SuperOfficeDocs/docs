@@ -2,7 +2,7 @@
 title: "Understanding document migration: reasons why some documents may not be migrated"
 sidebarTitle: "Document migration"
 description: Understanding document migration
-keywords: ['migrate', 'document']
+keywords: ['migrate']
 author: Martin Pavlas
 date: 10.18.2023
 content_type: tutorial

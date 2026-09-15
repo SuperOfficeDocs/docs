@@ -2,7 +2,7 @@
 uid: sale-howto-ws
 title: Sale - web services
 description: Working with sales in SuperOffice web services.
-keywords: ['sale', 'API', 'web services']
+keywords: ['API']
 author: Bergfrid Skaara Dias
 date: 11.05.2021
 so_version: 10

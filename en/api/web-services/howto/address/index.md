@@ -2,7 +2,6 @@
 uid: address-howto-ws
 title: Address - web services
 description: Working with addresses in web services.
-keywords: ['address']
 author: Bergfrid Dias
 date: 02.16.2022
 so_version: 9

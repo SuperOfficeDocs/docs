@@ -2,7 +2,7 @@
 title: How to link a sale to a follow-up (data layer)
 sidebarTitle: "Link a sale to a follow-up (entities)"
 description: How to link a sale to a follow-up using entities
-keywords: ['sale', 'API', 'entity', 'ActivityLinksHelper', 'appointment', 'follow-up']
+keywords: ['API', 'entity', 'ActivityLinksHelper', 'appointment']
 author: Bergfrid Skaara Dias
 date: 11.05.2021
 so_version: 11

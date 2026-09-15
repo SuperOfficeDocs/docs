@@ -4,7 +4,7 @@ description: Working with custom fields and entities.
 author: Bergfrid Skaara Dias
 date: 11.05.2021
 so_version: 11
-keywords: ['udef', 'user-defined field', 'custom field', 'API']
+keywords: ['user-defined field', 'custom field', 'API']
 content_type: concept
 deployment: onsite
 audience: api

@@ -1,7 +1,7 @@
 ---
 title: Diary - entity
 description: Working with appointments via entities at the NetServer data layer.
-keywords: ['diary', 'calendar', 'appointment', 'API', 'entity']
+keywords: ['calendar', 'appointment', 'API']
 author: Bergfrid Skaara Dias
 date: 11.04.2021
 so_version: 11

@@ -5,7 +5,7 @@ description: The definitive NetServer user-defined field lookup class.
 author: Tony Yates
 date: 11.05.2021
 so_version: 11
-keywords: ['udef', 'user-defined field', 'custom field', 'API', 'UDFHelper', 'SyncRoot', 'GetUDFInfo', 'SetUDFValue', 'UDFSearch', 'GetUDFColumnID', 'GetUDFData']
+keywords: ['udef', 'user-defined field', 'custom field', 'API', 'SyncRoot', 'GetUDFInfo', 'SetUDFValue', 'UDFSearch', 'GetUDFColumnID', 'GetUDFData']
 content_type: reference
 deployment: onsite
 audience: api

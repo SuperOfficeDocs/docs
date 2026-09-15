@@ -2,7 +2,6 @@
 uid: crmscript-tutorials
 title: CRMScript tutorials
 description: CRMScript tutorials
-keywords: ['CRMScript']
 author: Bergfrid Dias
 date: 04.15.2024
 content_type: howto

@@ -3,7 +3,7 @@ uid: get-person-ipersonagent
 title: Retrieving list of persons with PersonAgent
 sidebarTitle: "List persons (PersonAgent)"
 description: How to retrieve a list of persons with PersonAgent.
-keywords: ['person', 'contact', 'services', 'API', 'api-services', 'PersonAgent', 'GetPersonList']
+keywords: ['person', 'contact', 'services', 'API', 'api-services', 'GetPersonList']
 author: Bergfrid Skaara Dias
 date: 11.04.2021
 content_type: howto

@@ -2,7 +2,7 @@
 title: Get the current value of a given preference
 sidebarTitle: "Get a preference value (SoPreference)"
 description: How to get preferences using SoPreferene at the data layer
-keywords: ['preference', 'SoPreference']
+keywords: ['SoPreference']
 author: digitaldiina
 date: 02.22.2022
 so_version: 11

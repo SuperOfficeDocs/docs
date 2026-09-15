@@ -4,7 +4,6 @@ uid: webapi_auth_basic
 description: Web API authentication anon
 author: SuperOffice Product and Engineering
 date:
-keywords: ['authentication', 'basic']
 content_type: concept
 ---
 

@@ -3,7 +3,6 @@ uid: superid-complete-user-transition
 title: Complete user account transition from password to federated login
 sidebarTitle: "Complete user transition"
 description: Complete user account transition from password to federated login
-keywords: ['federated login']
 author: digitaldiina
 date: 12.18.2025
 so_version: 12

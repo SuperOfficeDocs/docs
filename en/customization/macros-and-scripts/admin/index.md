@@ -2,7 +2,6 @@
 uid: help-en-crmscript
 title: CRMScript
 description: CRMScript is a feature that allows you to automate tasks in or modify the behavior of SuperOffice.
-keywords: ['CRMScript']
 author: digitaldiina
 date: 11.26.2025
 so_version: 11.6

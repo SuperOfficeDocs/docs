@@ -4,7 +4,6 @@ uid: erp_arch_soap
 description: ERP connector SOAP Sync Service
 author: SuperOffice Product and Engineering
 date: 05.11.2016
-keywords: ['soap']
 content_type: concept
 redirect_from: /en/api/netserver/plugins/erp-connectors/architecture/soap-service
 ---

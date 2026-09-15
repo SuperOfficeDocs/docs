@@ -3,7 +3,6 @@ uid: prepare-crm-server-10
 title: Prepare CRM Server computer for SuperOffice 8-10
 sidebarTitle: "Prepare server (SuperOffice 8-10)"
 description: Prepare CRM Server computer
-keywords: ['prepare CRM server']
 author: SuperOffice Product and Engineering
 date: 12.01.2025
 so_version: 10

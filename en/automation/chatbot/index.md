@@ -1,9 +1,10 @@
 ---
 uid: chatbot_overview
 title: Chatbot overview
+description: How chatbots work in SuperOffice, and the licenses required to use them.
 author: christianm
 date: 03.08.2021
-keywords: ['chatbot', 'ai']
+keywords: ['ai']
 content_type: concept
 userflow_index: true
 ---

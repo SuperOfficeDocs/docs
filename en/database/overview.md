@@ -2,7 +2,6 @@
 uid: database-documentation-overview
 title: "Expander SDK: database documentation"
 description: SuperOffice database documentation
-keywords: ['database']
 author: SuperOffice Product and Engineering
 date: 07.28.2026
 content_type: concept

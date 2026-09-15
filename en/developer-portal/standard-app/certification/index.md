@@ -3,7 +3,6 @@ uid: app-certification
 title: About our certification process for standard apps
 sidebarTitle: "Certification process"
 description: About our certification process for standard apps
-keywords: ['certification']
 author: Margrethe Romnes
 date: 12.04.2025
 ---

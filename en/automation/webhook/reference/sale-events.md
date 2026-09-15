@@ -2,7 +2,6 @@
 uid: webhook_sales_event
 title: Sale webhook events
 description: Sales events
-keywords: ['sale webhook']
 author: SuperOffice Product and Engineering
 date: 07.07.2025
 content_type: reference

@@ -2,7 +2,6 @@
 uid: help-en-language-change
 title: Change active language
 description: Change active language
-keywords: ['change language', 'Active language']
 author: digitaldiina
 date: 10.09.2025
 so_version: 11.5
