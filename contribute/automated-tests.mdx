@@ -4,7 +4,7 @@ title: Automated tests
 description: Every check that runs against a PR or on a schedule for this repo - markdownlint, Vale, build validation, broken-link checking, the CRMScript reference drift check, and the stale generated-pages check - what each covers, whether it blocks a merge, and where to look when one flags something.
 keywords: ['ci', 'automated tests', 'markdownlint', 'vale', 'broken links', 'mint validate', 'automations', 'crmscript', 'stale pages', 'generated pages', 'landing page', 'template guard', 'release notes', 'openapi', 'swagger', 'recent pages', 'homepage', 'pester', 'mdx escaping', 'downloads', 'office format', 'xlsx', 'docfx', 'see cref', 'xref', 'script injection', 'security', 'restful', 'agent', 'rest']
 author: digitaldiina
-date: 09.14.2026
+date: 09.15.2026
 content_type: concept
 related:
   - /contribute/deployment
@@ -13,7 +13,7 @@ related:
 language: en
 ---
 
-This page is the single reference for every automatic check that runs against this repo, whether it is triggered by a pull request or runs on its own schedule. It does not duplicate the general mechanics already covered in [Mintlify deployment and CI/CD](./deployment) - only what each check covers and how to act on it.
+This page is the single reference for every automatic check that runs against this repo, whether it is triggered by a pull request or runs on its own schedule. It does not duplicate the general mechanics already covered in [Mintlify deployment and CI/CD](./deployment) - only what each check covers and how to act on it. An annotation on **Files changed** can lag behind the PR's latest commit. See [Reviewing a PR][1] for how to confirm the current state before trusting one you see while scrolling a multi-commit diff.
 
 ## Per-PR checks
 
@@ -207,3 +207,5 @@ mint automations create --name "Broken link detection" --type broken-link-detect
 * [Reviewing a PR](./review/index) - the review checklist that links back here.
 * [Update the CRMScript reference](./how-to-update-crmscript-reference) - the regeneration workflow the drift check enforces.
 * [Acceptance testing](./acceptance-testing) - the on-demand checklist to run after a refactor, design change, or site reorg, rather than every PR.
+
+[1]: ./review/check-changes#stale-annotations

@@ -4,7 +4,7 @@ title: Reviewing a PR
 description: How to check proposed changes in a PR
 keywords: ['review', 'PR', 'comment', 'suggestion', 'preview']
 author: digitaldiina
-date: 08.10.2026
+date: 09.15.2026
 content_type: howto
 related:
   - /contribute/review/request-review
@@ -50,6 +50,12 @@ A PR with no bot comment is usually not a build failure - it is most likely a PR
 1. Type your comment.
 1. Click **Add single comment**.
 
+## Annotations can lag behind the latest push {#stale-annotations}
+
+A check-run annotation on **Files changed**, such as one from an advisory check documented in [Automated tests][2], reflects the commit it was generated against, not necessarily the PR's current HEAD. GitHub attaches each annotation to the specific commit its check run was generated against, and the multi-commit diff view can still surface an old annotation next to a line a later commit already fixed.
+
+To see the true current state, check the **Checks** tab, or the latest run of the specific check, instead of trusting an annotation seen while scrolling a multi-commit diff. Watch for this especially on a PR that has had several pushes before you start reviewing.
+
 ## Start and submit review
 
 1. Add one or more line comments as described above.
@@ -83,6 +89,7 @@ A PR with no bot comment is usually not a build failure - it is most likely a PR
 * If you approved and all checks are green, you can merge the PR and delete the branch.
 
 [1]: https://github.com/SuperOfficeDocs/docs
+[2]: ../automated-tests
 [8]: ../deployment#manual-previews
 [9]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks
 
