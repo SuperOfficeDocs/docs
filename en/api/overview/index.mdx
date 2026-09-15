@@ -39,7 +39,7 @@ The lowest layer of NetServer is only used by clients or an application server i
 * **[SQL data objects (OSQL)][1]**: low-level, high-performance, database-independent objectified SQL.
 * **[Row and Rows][2]**: medium-level data table and row-level access.
 * **[Entities][3]**: high-level business model classes that abstract multiple table joins.
-* **[Archive providers][4]** and **[MDO Providers][17]**: provide read-only search capabilities.
+* **[Archive providers][4]** and **MDO Providers**: provide read-only search capabilities.
 
 ### Web service APIs
 
@@ -205,7 +205,7 @@ The difference between the two is that automation primarily deals with [scriptin
 
 <AutomationIntro />
 
-**NetServer**, although used as an umbrella term that encapsulates a variety of data access capabilities, is just as much if not more extensible than the SuperOffice clients. With constructs such as [low-level database objects][17] to [high-level business objects][18], to [higher-level web services][19] and web service proxy libraries, NetServer is itself an extensible SuperOffice product.
+**NetServer**, although used as an umbrella term that encapsulates a variety of data access capabilities, is just as much if not more extensible than the SuperOffice clients. With constructs such as low-level database objects to [high-level business objects][18], to [higher-level web services][19] and web service proxy libraries, NetServer is itself an extensible SuperOffice product.
 
 SuperOffice has several partners and 3rd party vendors who have built tightly-coupled integrations with SuperOffice using external APIs. The different types of integrations built range from tiny edge-case security plugins to integrations with completely new document management systems. There are even complete enterprise resource planning systems that leverage SuperOffice CRM as the heart of its ecosystem.
 
@@ -247,7 +247,7 @@ The following table compares some of the most common extensibility points and de
 |               | [MDO Providers][29] | Sales          | X | |
 |               | [Document Plugins][35]    | Sales          | X | |
 |               | [Sentry Plugins][36]      | Sales          | X | |
-|               | [Batch Task Plugins][37]  | Sales          | X | |
+|               | Batch Task Plugins  | Sales          | X | |
 | Database      | Database access API | Sales, Service | X | X |
 |               | Continuous Database | Sales, Service | X | |
 |               | SQL Scripts         | Sales, Service | X | |
@@ -300,7 +300,6 @@ Assistance and guidance are available:
 [14]: /en/automation/overview#languages
 [15]: /en/api/web-services/endpoints/index
 [16]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/automation/netserver-scripting/index.md
-[17]: ../osql/index
 [18]: /en/api/entities/index
 [19]: https://online.superoffice.com/appstore
 [20]: /en/admin/user-preferences/index
@@ -314,11 +313,10 @@ Assistance and guidance are available:
 [30]: /en/custom-objects/learn/extra-table
 [31]: /en/mobile/index
 [32]: /en/api/overview/netserver#domain-level-apis-netserver-core
-[33]: ../config/services
+[33]: /en/onsite/web-config/services
 [34]: /en/automation/webhook/dev/index
 [35]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/plugins/document/soarc-document-plugin.md
 [36]: https://github.com/SuperOfficeDocs/superoffice-docs/blob/main/docs/en/api/plugins/sentry/index.md
-[37]: ../tutorials/sem-batch-processing/index
 [38]: /en/api/lists/index
 [40]: https://zapier.com/apps/superofficecrm/integrations
 
