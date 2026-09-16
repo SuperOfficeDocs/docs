@@ -16,7 +16,6 @@ language: en
 ## Product integrations updates
 
 * [SuperOffice for Outlook][3] - 6.4.4 (20.08.2026)
-  * Email archive status
   * Stay informed with in-app announcements
 * [SuperOffice for Outlook][3] - 6.4.2 (19.08.2026)
   * Archive reminder when sending email
