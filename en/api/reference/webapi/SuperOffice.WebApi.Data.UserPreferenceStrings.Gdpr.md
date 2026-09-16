@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Gdpr"></a> Class UserPreferenceStrings.Gdpr
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 GDPR - Misc
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.Gdpr
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.Gdpr](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Gdpr)
+[UserPreferenceStrings.Gdpr](SuperOffice.WebApi.Data.UserPreferenceStrings.Gdpr.md)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Chat_SaveChatPresenceRequest"></a> Class Chat\_SaveChatPresenceRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Chat_SaveChatPresenceRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Chat\_SaveChatPresenceRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Chat_SaveChatPresenceRequest)
+[Chat\_SaveChatPresenceRequest](SuperOffice.WebApi.Data.Chat\_SaveChatPresenceRequest.md)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public ChatPresence[] ChatPresence { get; set; }
 
 #### Property Value
 
- [ChatPresence](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatPresence)\[\]
+ [ChatPresence](SuperOffice.WebApi.Data.ChatPresence.md)\[\]
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CRMScript_ExecuteScriptByUniqueIdRequest"></a> Class CRMScript\_ExecuteScriptByUniqueIdRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CRMScript_ExecuteScriptByUniqueIdRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CRMScript\_ExecuteScriptByUniqueIdRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScript_ExecuteScriptByUniqueIdRequest)
+[CRMScript\_ExecuteScriptByUniqueIdRequest](SuperOffice.WebApi.Data.CRMScript\_ExecuteScriptByUniqueIdRequest.md)
 
 #### Inherited Members
 
@@ -50,5 +50,5 @@ public StringDictionary Parameters { get; set; }
 
 #### Property Value
 
- [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
+ [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
 

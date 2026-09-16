@@ -1,6 +1,6 @@
-# Class ForeignSystemAgent {#SuperOffice_WebApi_Agents_ForeignSystemAgent}
+# <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent"></a> Class ForeignSystemAgent
 
-Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
+Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Collection of all services that works with Foreign key data (Key/Value pairs)
@@ -12,41 +12,41 @@ public class ForeignSystemAgent : AgentBase, IForeignSystemAgent, IAgentBase, ID
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase) ← 
-[ForeignSystemAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ForeignSystemAgent)
+[AgentBase](SuperOffice.WebApi.Agents.AgentBase.md) ← 
+[ForeignSystemAgent](SuperOffice.WebApi.Agents.ForeignSystemAgent.md)
 
 #### Implements
 
-[IForeignSystemAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IForeignSystemAgent), 
-[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
+[IForeignSystemAgent](SuperOffice.WebApi.Agents.IForeignSystemAgent.md), 
+[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 #### Inherited Members
 
-[AgentBase.\_json](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__json), 
-[AgentBase.\_binary](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__binary), 
-[AgentBase.\_config](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__config), 
-[AgentBase.\_client](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__client), 
-[AgentBase.\_disposeClient](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__disposeClient), 
-[AgentBase.Merge\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Merge_SuperOffice_WebApi_RequestOptions_), 
-[AgentBase.BuildRequestFromObject\(HttpMethod, string, object, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_), 
-[AgentBase.BuildRequestFromStream\(HttpMethod, string, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromStream_System_Net_Http_HttpMethod_System_String_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
-[AgentBase.BuildRequestFromObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
-[AgentBase.ParseAuthorization\(IAuthorization\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseAuthorization_SuperOffice_WebApi_Authorization_IAuthorization_), 
-[AgentBase.CancelRequest\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_CancelRequest), 
-[AgentBase.SendRequestObject\(HttpMethod, string, object, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_), 
-[AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
-[AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequest_System_Net_Http_HttpRequestMessage_SuperOffice_WebApi_RequestOptions_), 
-[AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ThrowOnResponseErrorAsync_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpResponseMessage_), 
-[AgentBase.ParseResponse&lt;T\&gt;\(HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseResponse__1_System_Net_Http_HttpResponseMessage_), 
-[AgentBase.Finally\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Finally_SuperOffice_WebApi_RequestOptions_), 
-[AgentBase.Dispose\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Dispose), 
-[AgentBase.Configuration](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Configuration), 
-[AgentBase.Client](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Client), 
-[AgentBase.HasRunningRequest](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_HasRunningRequest), 
-[AgentBase.ClientCancellationTokenSource](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ClientCancellationTokenSource), 
-[AgentBase.ProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ProgressListener), 
-[AgentBase.UploadProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_UploadProgressListener), 
+[AgentBase.\_json](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_json), 
+[AgentBase.\_binary](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_binary), 
+[AgentBase.\_config](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_config), 
+[AgentBase.\_client](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_client), 
+[AgentBase.\_disposeClient](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_disposeClient), 
+[AgentBase.Merge\(RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Merge\_SuperOffice\_WebApi\_RequestOptions\_), 
+[AgentBase.BuildRequestFromObject\(HttpMethod, string, object, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_BuildRequestFromObject\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
+[AgentBase.BuildRequestFromStream\(HttpMethod, string, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_BuildRequestFromStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
+[AgentBase.BuildRequestFromObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_BuildRequestFromObjectWithStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
+[AgentBase.ParseAuthorization\(IAuthorization\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseAuthorization\_SuperOffice\_WebApi\_Authorization\_IAuthorization\_), 
+[AgentBase.CancelRequest\(\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_CancelRequest), 
+[AgentBase.SendRequestObject\(HttpMethod, string, object, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequestObject\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
+[AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequestObjectWithStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
+[AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequest\_System\_Net\_Http\_HttpRequestMessage\_SuperOffice\_WebApi\_RequestOptions\_), 
+[AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ThrowOnResponseErrorAsync\_System\_Net\_Http\_HttpRequestMessage\_System\_Net\_Http\_HttpResponseMessage\_), 
+[AgentBase.ParseResponse<T\>\(HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseResponse\_\_1\_System\_Net\_Http\_HttpResponseMessage\_), 
+[AgentBase.Finally\(RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Finally\_SuperOffice\_WebApi\_RequestOptions\_), 
+[AgentBase.Dispose\(\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Dispose), 
+[AgentBase.Configuration](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Configuration), 
+[AgentBase.Client](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Client), 
+[AgentBase.HasRunningRequest](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_HasRunningRequest), 
+[AgentBase.ClientCancellationTokenSource](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ClientCancellationTokenSource), 
+[AgentBase.ProgressListener](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ProgressListener), 
+[AgentBase.UploadProgressListener](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_UploadProgressListener), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -57,19 +57,19 @@ public class ForeignSystemAgent : AgentBase, IForeignSystemAgent, IAgentBase, ID
 
 ## Examples
 
-&lt;pre&gt;&lt;code class="lang-csharp"&gt;using SuperOffice.WebApi;
+<pre><code class="lang-csharp">using SuperOffice.WebApi;
 using SuperOffice.WebApi.Agents;
 
 var mySession = new WebApiOptions("http://example.com/super/api");
 mySession.Authorization = new AuthorizationUsernamePassword("user", "pass");
 using (ForeignSystemAgent agent = new ForeignSystemAgent(mySession))
-\{
+{
       // call methods on agent here...
-\}&lt;/code&gt;&lt;/pre&gt;
+}</code></pre>
 
 ## Constructors
 
-### ForeignSystemAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent__ctor_System_Net_Http_HttpClient_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent__ctor_System_Net_Http_HttpClient_"></a> ForeignSystemAgent\(HttpClient\)
 
 Constructor: Collection of all services that works with Foreign key data (Key/Value pairs)
 
@@ -83,7 +83,7 @@ public ForeignSystemAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### ForeignSystemAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"></a> ForeignSystemAgent\(WebApiOptions, HttpClient\)
 
 Constructor: Collection of all services that works with Foreign key data (Key/Value pairs)
 
@@ -93,7 +93,7 @@ public ForeignSystemAgent(WebApiOptions options, HttpClient httpClient = null)
 
 #### Parameters
 
-`options` [WebApiOptions](/en/api/reference/webapi/SuperOffice.WebApi.WebApiOptions)
+`options` [WebApiOptions](SuperOffice.WebApi.WebApiOptions.md)
 
 Base URL and authentication values.
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### AddDeviceByIdentifierAsync\(string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_AddDeviceByIdentifierAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_AddDeviceByIdentifierAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> AddDeviceByIdentifierAsync\(string, string, string, RequestOptions\)
 
 Adds a new ForeignDevice with deviceName that belongs to the application with applicationName, with an optional device-specific identifier.
 
@@ -125,17 +125,17 @@ The name of the foreign device.
 
 Unique id of device (Palm pilot device ID, version number, etc)
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignDevice](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignDevice)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ForeignDevice](SuperOffice.WebApi.Data.ForeignDevice.md)\>
 
 The ForeignDevice.
 
-### AddForeignKeyAsync\(ForeignKey, string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_AddForeignKeyAsync_SuperOffice_WebApi_Data_ForeignKey_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_AddForeignKeyAsync_SuperOffice_WebApi_Data_ForeignKey_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> AddForeignKeyAsync\(ForeignKey, string, string, string, RequestOptions\)
 
 Add a new key belonging to the ForeignApp and ForeignDevice specified.
 
@@ -145,7 +145,7 @@ public Task<ForeignKey> AddForeignKeyAsync(ForeignKey foreignKey, string applica
 
 #### Parameters
 
-`foreignKey` [ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)
+`foreignKey` [ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)
 
 Foreign key to save
 
@@ -161,17 +161,17 @@ The name of the foreign device.
 
 The device identifier. Optional if device identifier is not used.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)\>
 
 The new or updated ForeignKey
 
-### CreateDefaultForeignAppEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_CreateDefaultForeignAppEntityAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_CreateDefaultForeignAppEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultForeignAppEntityAsync\(RequestOptions\)
 
 Set default values into a new ForeignAppEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -182,17 +182,17 @@ public Task<ForeignAppEntity> CreateDefaultForeignAppEntityAsync(RequestOptions 
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignAppEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignAppEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ForeignAppEntity](SuperOffice.WebApi.Data.ForeignAppEntity.md)\>
 
 A blank ForeignAppEntity
 
-### DeleteDeviceByIdentifierAsync\(string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_DeleteDeviceByIdentifierAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_DeleteDeviceByIdentifierAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> DeleteDeviceByIdentifierAsync\(string, string, string, RequestOptions\)
 
 Delete a ForeignDevice with deviceName and deviceIdentifier that belongs to the application with applicationName.
 
@@ -214,7 +214,7 @@ The name of the foreign device.
 
 Unique id of device (Palm pilot device ID, version number, etc)
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -224,7 +224,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### DeleteForeignAppEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_DeleteForeignAppEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_DeleteForeignAppEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteForeignAppEntityAsync\(int, RequestOptions\)
 
 Deletes the ForeignAppEntity
 
@@ -238,7 +238,7 @@ public Task DeleteForeignAppEntityAsync(int foreignAppEntityId, RequestOptions r
 
 The identity of the ForeignAppEntity
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -246,7 +246,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### DeleteForeignDeviceAsync\(ForeignDevice, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_DeleteForeignDeviceAsync_SuperOffice_WebApi_Data_ForeignDevice_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_DeleteForeignDeviceAsync_SuperOffice_WebApi_Data_ForeignDevice_System_String_SuperOffice_WebApi_RequestOptions_"></a> DeleteForeignDeviceAsync\(ForeignDevice, string, RequestOptions\)
 
 Deletes a foreign device from an application
 
@@ -256,7 +256,7 @@ public Task DeleteForeignDeviceAsync(ForeignDevice foreignDevice, string applica
 
 #### Parameters
 
-`foreignDevice` [ForeignDevice](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignDevice)
+`foreignDevice` [ForeignDevice](SuperOffice.WebApi.Data.ForeignDevice.md)
 
 foreign device to delete
 
@@ -264,7 +264,7 @@ foreign device to delete
 
 Name of application to delete from
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -272,7 +272,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### DeleteForeignKeyAsync\(ForeignKey, string, string, string, string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_DeleteForeignKeyAsync_SuperOffice_WebApi_Data_ForeignKey_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_DeleteForeignKeyAsync_SuperOffice_WebApi_Data_ForeignKey_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteForeignKeyAsync\(ForeignKey, string, string, string, string, int, RequestOptions\)
 
 Deletes all specified occurrences of a key, belonging to the ForeignApp and ForeignDevice, table and record specified. Specifying a blank table name will delete ALL keys of the given name; specifying a recordId of 0 will delete ALL keys of the given name for the given table.
 
@@ -282,7 +282,7 @@ public Task DeleteForeignKeyAsync(ForeignKey foreignKey, string applicationName,
 
 #### Parameters
 
-`foreignKey` [ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)
+`foreignKey` [ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)
 
 Key name to delete.
 
@@ -306,7 +306,7 @@ Table name, transformed to and from numeric table id by the service layer.&lt;p/
 
 Id of record that this key refers to. If the table name was blank, then this parameter must be 0. It can also be 0 to mean that the foreign key record was not bound to any particular record of the target table.&lt;p/&gt;Specifying a zero recordId will remove the recordId restriction and delete all keys that otherwise match.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -316,7 +316,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### DeleteForeignKeyOnNameAsync\(string, string, string, string, string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_DeleteForeignKeyOnNameAsync_System_String_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_DeleteForeignKeyOnNameAsync_System_String_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteForeignKeyOnNameAsync\(string, string, string, string, string, int, RequestOptions\)
 
 Deletes all specified occurrences of a key, belonging to the ForeignApp and ForeignDevice, table and record specified. Specifying a blank table name will delete ALL keys of the given name; specifying a recordId of 0 will delete ALL keys of the given name for the given table.
 
@@ -350,7 +350,7 @@ Table name, transformed to and from numeric table id by the service layer.&lt;p/
 
 Id of record that this key refers to. If the table name was blank, then this parameter must be 0. It can also be 0 to mean that the foreign key record was not bound to any particular record of the target table.&lt;p/&gt;Specifying a zero recordId will remove the recordId restriction and delete all keys that otherwise match.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -360,7 +360,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### GetAllForeignKeysOnEntityAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetAllForeignKeysOnEntityAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetAllForeignKeysOnEntityAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetAllForeignKeysOnEntityAsync\(string, int, RequestOptions\)
 
 Get a list of foreignkeys ('app.device.key') and their values ('123') that belong to the specified entity.
 
@@ -378,17 +378,17 @@ Entity type (table name): 'contact', 'project' etc.
 
 Primary key of Entity
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)\>
 
 Dictionary of 'appname.deviceid.keyname' = '123' key values
 
-### GetAppByNameAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetAppByNameAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetAppByNameAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetAppByNameAsync\(string, RequestOptions\)
 
 Gets the ForeignApp with the given name.
 
@@ -402,17 +402,17 @@ public Task<ForeignAppEntity> GetAppByNameAsync(string applicationName, RequestO
 
 The name of the foreign application.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignAppEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignAppEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ForeignAppEntity](SuperOffice.WebApi.Data.ForeignAppEntity.md)\>
 
 The ForeignApp that matches the name.
 
-### GetApplicationDevicesAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetApplicationDevicesAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetApplicationDevicesAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetApplicationDevicesAsync\(string, RequestOptions\)
 
 Gets all devices that belong to a foreign application.
 
@@ -426,17 +426,17 @@ public Task<ForeignDevice[]> GetApplicationDevicesAsync(string applicationName, 
 
 The foreign application name
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignDevice](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignDevice)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ForeignDevice](SuperOffice.WebApi.Data.ForeignDevice.md)\[\]\>
 
 Array of ForeignDevices
 
-### GetApplicationKeysAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetApplicationKeysAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetApplicationKeysAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetApplicationKeysAsync\(string, RequestOptions\)
 
 Returns all ForeignKeys that belong to an application.
 
@@ -450,17 +450,17 @@ public Task<ForeignKey[]> GetApplicationKeysAsync(string applicationName, Reques
 
 The name of the foreign application.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)\[\]\>
 
 Array of all ForeignKeys in the ForeignApp.
 
-### GetDeviceByIdentifierAsync\(string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetDeviceByIdentifierAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetDeviceByIdentifierAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetDeviceByIdentifierAsync\(string, string, string, RequestOptions\)
 
 Gets a ForeignDevice with deviceName and deviceIdentifier that belongs to the application with applicationName.
 
@@ -482,17 +482,17 @@ The name of the foreign device.
 
 Optional unique id of device (Palm pilot device ID, version number, etc)
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignDevice](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignDevice)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ForeignDevice](SuperOffice.WebApi.Data.ForeignDevice.md)\>
 
 The ForeignDevice.
 
-### GetDeviceByNameAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetDeviceByNameAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetDeviceByNameAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetDeviceByNameAsync\(string, string, RequestOptions\)
 
 Gets a ForeignDevice with deviceName that belongs to the application with applicationName.
 
@@ -510,17 +510,17 @@ The name of the foreign application.
 
 The name of the foreign device.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignDevice](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignDevice)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ForeignDevice](SuperOffice.WebApi.Data.ForeignDevice.md)\>
 
 The ForeignDevice.
 
-### GetDeviceKeysAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetDeviceKeysAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetDeviceKeysAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetDeviceKeysAsync\(string, string, RequestOptions\)
 
 Returns all ForeignKeys that belong to a device.
 
@@ -538,17 +538,17 @@ The name of the foreign application.
 
 The name of the foreign device.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)\[\]\>
 
 Array of all ForeignKeys in the ForeignDevice.
 
-### GetDeviceKeysOnDeviceIdentifierAsync\(string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetDeviceKeysOnDeviceIdentifierAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetDeviceKeysOnDeviceIdentifierAsync_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetDeviceKeysOnDeviceIdentifierAsync\(string, string, string, RequestOptions\)
 
 Returns all ForeignKeys that belong to a device with a given deviceIdentifier.
 
@@ -570,17 +570,17 @@ The name of the foreign device.
 
 Identifier for a unique grouping of keys within a device.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)\[\]\>
 
 Array of all ForeignKeys in the ForeignDevice that belong to the DeviceIdentifier.
 
-### GetDeviceKeysOnDeviceIdentifierTableAsync\(string, string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetDeviceKeysOnDeviceIdentifierTableAsync_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetDeviceKeysOnDeviceIdentifierTableAsync_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetDeviceKeysOnDeviceIdentifierTableAsync\(string, string, string, string, RequestOptions\)
 
 Returns all ForeignKeys that belong to a device with a given deviceIdentifier and table name.
 
@@ -606,17 +606,17 @@ Identifier for a unique grouping of keys within a device.
 
 Table name, transformed to and from numeric table id by the service layer.&lt;p/&gt;Use an empty string to indicate that your key is not bound to any specific table.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)\[\]\>
 
 Array of all ForeignKeys in the ForeignDevice that belong to the DeviceIdentifier.
 
-### GetDeviceKeysOnDeviceIdentifierTableRecordIdAsync\(string, string, string, string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetDeviceKeysOnDeviceIdentifierTableRecordIdAsync_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetDeviceKeysOnDeviceIdentifierTableRecordIdAsync_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetDeviceKeysOnDeviceIdentifierTableRecordIdAsync\(string, string, string, string, int, RequestOptions\)
 
 Returns all ForeignKeys that belong to a device with a given deviceIdentifier and table name, as well as record id.
 
@@ -646,17 +646,17 @@ Table name, transformed to and from numeric table id by the service layer.&lt;p/
 
 Id of record that this key refers to. If the table name was blank, then this parameter must be 0. It can also be 0 to mean that the foreign key record was not bound to any particular record of the target table.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)\[\]\>
 
 Array of all ForeignKeys in the ForeignDevice that match the criteria
 
-### GetForeignAppEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetForeignAppEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetForeignAppEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetForeignAppEntityAsync\(int, RequestOptions\)
 
 Gets a specific ForeignAppEntity object.
 
@@ -670,17 +670,17 @@ public Task<ForeignAppEntity> GetForeignAppEntityAsync(int foreignAppEntityId, R
 
 The identifier of the ForeignAppEntity object
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignAppEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignAppEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ForeignAppEntity](SuperOffice.WebApi.Data.ForeignAppEntity.md)\>
 
 ForeignAppEntity
 
-### GetForeignDeviceAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetForeignDeviceAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetForeignDeviceAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetForeignDeviceAsync\(int, RequestOptions\)
 
 Gets a specific ForeignDevice object.
 
@@ -694,17 +694,17 @@ public Task<ForeignDevice> GetForeignDeviceAsync(int foreignDeviceId, RequestOpt
 
 The identifier of the ForeignDevice object
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignDevice](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignDevice)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ForeignDevice](SuperOffice.WebApi.Data.ForeignDevice.md)\>
 
 ForeignDevice
 
-### GetKeyAsync\(string, string, string, string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetKeyAsync_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetKeyAsync_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetKeyAsync\(string, string, string, string, int, RequestOptions\)
 
 Returning a foreign key by its key name, that belongs to the specified device and application. A table name and record ID can also be specified.
 
@@ -734,17 +734,17 @@ Table name, transformed to and from numeric table id by the service layer.&lt;p/
 
 Id of record that this key refers to. If the table name was blank, then this parameter must be 0. It can also be 0 to mean that the foreign key record was not bound to any particular record of the target table.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)\>
 
 The ForeignKey.
 
-### GetKeyByValueAndIdentifierAsync\(string, string, string, string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetKeyByValueAndIdentifierAsync_System_String_System_String_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetKeyByValueAndIdentifierAsync_System_String_System_String_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetKeyByValueAndIdentifierAsync\(string, string, string, string, string, string, RequestOptions\)
 
 Get a foreignkey based on its name and value, that belongs to the specified deviceId, device, and application.
 
@@ -778,17 +778,17 @@ Foreignkey value
 
 Table name, transformed to and from numeric table id by the service layer.&lt;p/&gt;Use an empty string to indicate that your key is not bound to any specific table.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)\>
 
 The ForeignKey.
 
-### GetKeyByValueAsync\(string, string, string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetKeyByValueAsync_System_String_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetKeyByValueAsync_System_String_System_String_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetKeyByValueAsync\(string, string, string, string, string, RequestOptions\)
 
 Get a foreignkey based on its name and value, that belongs to the specified device and application.
 
@@ -818,17 +818,17 @@ Foreignkey value
 
 Table name, transformed to and from numeric table id by the service layer.&lt;p/&gt;Use an empty string to indicate that your key is not bound to any specific table.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)\>
 
 The ForeignKey.
 
-### GetKeyOnDeviceIdentifierAsync\(string, string, string, string, string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetKeyOnDeviceIdentifierAsync_System_String_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetKeyOnDeviceIdentifierAsync_System_String_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetKeyOnDeviceIdentifierAsync\(string, string, string, string, string, int, RequestOptions\)
 
 Returning a foreign key by its key name and device identifier, that belongs to the specified device and application. A table name and record ID can also be specified.
 
@@ -862,17 +862,17 @@ Table name, transformed to and from numeric table id by the service layer.&lt;p/
 
 Id of record that this key refers to. If the table name was blank, then this parameter must be 0. It can also be 0 to mean that the foreign key record was not bound to any particular record of the target table.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)\>
 
 The ForeignKey.
 
-### GetKeyValueAsync\(string, string, string, string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetKeyValueAsync_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetKeyValueAsync_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetKeyValueAsync\(string, string, string, string, int, RequestOptions\)
 
 Gets the string value of a ForeignKey, that belongs to the specified device and application. The table name and record ID must also be specified.
 
@@ -902,17 +902,17 @@ Table name, transformed to and from numeric table id by the service layer.&lt;p/
 
 Id of record that this key refers to. If the table name was blank, then this parameter must be 0. It can also be 0 to mean that the foreign key record was not bound to any particular record of the target table.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
 
 The ForeignKey value as string.
 
-### GetKeyValueOnDeviceIdentifierAsync\(string, string, string, string, string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_GetKeyValueOnDeviceIdentifierAsync_System_String_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_GetKeyValueOnDeviceIdentifierAsync_System_String_System_String_System_String_System_String_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetKeyValueOnDeviceIdentifierAsync\(string, string, string, string, string, int, RequestOptions\)
 
 Returning a foreign key string value by its key name and device identifier, that belongs to the specified device and application. A table name and record ID can also be specified.
 
@@ -946,17 +946,17 @@ Table name, transformed to and from numeric table id by the service layer.&lt;p/
 
 Id of record that this key refers to. If the table name was blank, then this parameter must be 0. It can also be 0 to mean that the foreign key record was not bound to any particular record of the target table.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
 
 The ForeignKey's string value.
 
-### SaveDeviceByIdentifierAsync\(string, string, string, ForeignDevice, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_SaveDeviceByIdentifierAsync_System_String_System_String_System_String_SuperOffice_WebApi_Data_ForeignDevice_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_SaveDeviceByIdentifierAsync_System_String_System_String_System_String_SuperOffice_WebApi_Data_ForeignDevice_SuperOffice_WebApi_RequestOptions_"></a> SaveDeviceByIdentifierAsync\(string, string, string, ForeignDevice, RequestOptions\)
 
 Updates a ForeignDevice with deviceName that belongs to the application with applicationName.
 
@@ -978,21 +978,21 @@ The name of the foreign device.
 
 Unique id of device (Palm pilot device ID, version number, etc)
 
-`foreignDevice` [ForeignDevice](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignDevice)
+`foreignDevice` [ForeignDevice](SuperOffice.WebApi.Data.ForeignDevice.md)
 
 Foreign device to save. Can be null if adding new device.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignDevice](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignDevice)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ForeignDevice](SuperOffice.WebApi.Data.ForeignDevice.md)\>
 
 The ForeignDevice.
 
-### SaveForeignAppEntityAsync\(ForeignAppEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_SaveForeignAppEntityAsync_SuperOffice_WebApi_Data_ForeignAppEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_SaveForeignAppEntityAsync_SuperOffice_WebApi_Data_ForeignAppEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveForeignAppEntityAsync\(ForeignAppEntity, RequestOptions\)
 
 Updates the existing ForeignAppEntity or creates a new ForeignAppEntity if the id parameter is 0.
 
@@ -1002,21 +1002,21 @@ public Task<ForeignAppEntity> SaveForeignAppEntityAsync(ForeignAppEntity foreign
 
 #### Parameters
 
-`foreignAppEntity` [ForeignAppEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignAppEntity)
+`foreignAppEntity` [ForeignAppEntity](SuperOffice.WebApi.Data.ForeignAppEntity.md)
 
 The ForeignAppEntity that is saved.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignAppEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignAppEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ForeignAppEntity](SuperOffice.WebApi.Data.ForeignAppEntity.md)\>
 
 New or updated ForeignAppEntity
 
-### SaveForeignDeviceAsync\(ForeignDevice, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_SaveForeignDeviceAsync_SuperOffice_WebApi_Data_ForeignDevice_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_SaveForeignDeviceAsync_SuperOffice_WebApi_Data_ForeignDevice_System_String_SuperOffice_WebApi_RequestOptions_"></a> SaveForeignDeviceAsync\(ForeignDevice, string, RequestOptions\)
 
 Saves a foreign device for an foreign application
 
@@ -1026,7 +1026,7 @@ public Task<ForeignDevice> SaveForeignDeviceAsync(ForeignDevice foreignDevice, s
 
 #### Parameters
 
-`foreignDevice` [ForeignDevice](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignDevice)
+`foreignDevice` [ForeignDevice](SuperOffice.WebApi.Data.ForeignDevice.md)
 
 Foreign device to save
 
@@ -1034,17 +1034,17 @@ Foreign device to save
 
 The name of the foreign application.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignDevice](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignDevice)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ForeignDevice](SuperOffice.WebApi.Data.ForeignDevice.md)\>
 
 Returns the saved foreign device
 
-### SaveForeignKeyAsync\(ForeignKey, string, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ForeignSystemAgent_SaveForeignKeyAsync_SuperOffice_WebApi_Data_ForeignKey_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ForeignSystemAgent_SaveForeignKeyAsync_SuperOffice_WebApi_Data_ForeignKey_System_String_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> SaveForeignKeyAsync\(ForeignKey, string, string, string, RequestOptions\)
 
 Saves a key belonging to the ForeignApp and ForeignDevice specified.
 
@@ -1054,7 +1054,7 @@ public Task<ForeignKey> SaveForeignKeyAsync(ForeignKey foreignKey, string applic
 
 #### Parameters
 
-`foreignKey` [ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)
+`foreignKey` [ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)
 
 Foreign key to save
 
@@ -1070,13 +1070,13 @@ The name of the foreign device.
 
 The device identifier. Optional if device identifier is not used.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ForeignKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignKey)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ForeignKey](SuperOffice.WebApi.Data.ForeignKey.md)\>
 
 The new or updated ForeignKey
 

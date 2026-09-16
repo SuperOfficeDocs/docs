@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Category"></a> Class Category
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for Category.
@@ -12,13 +12,13 @@ public class Category : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[Category](/en/api/reference/webapi/SuperOffice.WebApi.Data.Category)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[Category](SuperOffice.WebApi.Data.Category.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -58,11 +58,11 @@ public CategoryGroup? CategoryGroup { get; set; }
 
 #### Property Value
 
- [CategoryGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.CategoryGroup)?
+ [CategoryGroup](SuperOffice.WebApi.Data.CategoryGroup.md)?
 
 #### See Also
 
-[Category](/en/api/reference/webapi/SuperOffice.WebApi.Data.Category).[CategoryGroup\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.Category#SuperOffice_WebApi_Data_Category_CategoryGroup_String)
+[Category](SuperOffice.WebApi.Data.Category.md).[CategoryGroup\_String](SuperOffice.WebApi.Data.Category.md\#SuperOffice\_WebApi\_Data\_Category\_CategoryGroup\_String)
 
 ### <a id="SuperOffice_WebApi_Data_Category_CategoryGroup_String"></a> CategoryGroup\_String
 
@@ -80,7 +80,7 @@ public string CategoryGroup_String { get; set; }
 
 #### See Also
 
-[Category](/en/api/reference/webapi/SuperOffice.WebApi.Data.Category).[CategoryGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.Category#SuperOffice_WebApi_Data_Category_CategoryGroup)
+[Category](SuperOffice.WebApi.Data.Category.md).[CategoryGroup](SuperOffice.WebApi.Data.Category.md\#SuperOffice\_WebApi\_Data\_Category\_CategoryGroup)
 
 ### <a id="SuperOffice_WebApi_Data_Category_Deleted"></a> Deleted
 
@@ -156,5 +156,5 @@ public virtual string Value { get; set; }
 
 ## See Also
 
-[ListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ListAgent)
+[ListAgent](SuperOffice.WebApi.Agents.ListAgent.md)
 

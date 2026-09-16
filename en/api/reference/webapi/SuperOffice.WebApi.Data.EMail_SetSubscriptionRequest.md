@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_SetSubscriptionRequest"></a> Class EMail\_SetSubscriptionRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_SetSubscriptionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_SetSubscriptionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_SetSubscriptionRequest)
+[EMail\_SetSubscriptionRequest](SuperOffice.WebApi.Data.EMail\_SetSubscriptionRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public EMailConnectionInfo ConnectionInfo { get; set; }
 
 #### Property Value
 
- [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
+ [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
 
 ### <a id="SuperOffice_WebApi_Data_EMail_SetSubscriptionRequest_Folders"></a> Folders
 
@@ -50,5 +50,5 @@ public EMailFolder[] Folders { get; set; }
 
 #### Property Value
 
- [EMailFolder](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailFolder)\[\]
+ [EMailFolder](SuperOffice.WebApi.Data.EMailFolder.md)\[\]
 

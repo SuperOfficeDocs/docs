@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_NaturalLanguageSearch"></a> Class NaturalLanguageSearch
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for NaturalLanguageSearch.
@@ -13,7 +13,7 @@ public class NaturalLanguageSearch
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[NaturalLanguageSearch](/en/api/reference/webapi/SuperOffice.WebApi.Data.NaturalLanguageSearch)
+[NaturalLanguageSearch](SuperOffice.WebApi.Data.NaturalLanguageSearch.md)
 
 #### Inherited Members
 
@@ -107,9 +107,9 @@ public virtual ArchiveRestrictionInfo[] Restrictions { get; set; }
 
 #### Property Value
 
- [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
+ [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
 
 ## See Also
 
-[AIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AIAgent)
+[AIAgent](SuperOffice.WebApi.Agents.AIAgent.md)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_SuggestedDocumentEntity"></a> Class SuggestedDocumentEntity
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for SuggestedDocumentEntity.
@@ -12,13 +12,13 @@ public class SuggestedDocumentEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[SuggestedDocumentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SuggestedDocumentEntity)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[SuggestedDocumentEntity](SuperOffice.WebApi.Data.SuggestedDocumentEntity.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -68,7 +68,7 @@ public virtual DocumentTemplate DocTmpl { get; set; }
 
 #### Property Value
 
- [DocumentTemplate](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplate)
+ [DocumentTemplate](SuperOffice.WebApi.Data.DocumentTemplate.md)
 
 ### <a id="SuperOffice_WebApi_Data_SuggestedDocumentEntity_DoctmplId"></a> DoctmplId
 
@@ -128,7 +128,7 @@ public virtual ProjectTypeStatusLink ProjectTypeStatusLink { get; set; }
 
 #### Property Value
 
- [ProjectTypeStatusLink](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectTypeStatusLink)
+ [ProjectTypeStatusLink](SuperOffice.WebApi.Data.ProjectTypeStatusLink.md)
 
 ### <a id="SuperOffice_WebApi_Data_SuggestedDocumentEntity_Rank"></a> Rank
 
@@ -152,7 +152,7 @@ public virtual SaleTypeStageLink SaleTypeStageLink { get; set; }
 
 #### Property Value
 
- [SaleTypeStageLink](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleTypeStageLink)
+ [SaleTypeStageLink](SuperOffice.WebApi.Data.SaleTypeStageLink.md)
 
 ### <a id="SuperOffice_WebApi_Data_SuggestedDocumentEntity_SuggestedDocumentId"></a> SuggestedDocumentId
 
@@ -180,5 +180,5 @@ public virtual string Tooltip { get; set; }
 
 ## See Also
 
-[DocumentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DocumentAgent)
+[DocumentAgent](SuperOffice.WebApi.Agents.DocumentAgent.md)
 

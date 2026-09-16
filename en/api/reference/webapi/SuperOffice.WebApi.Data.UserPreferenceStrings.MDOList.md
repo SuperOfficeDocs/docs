@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_MDOList"></a> Class UserPreferenceStrings.MDOList
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Grouped and filtered lists
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.MDOList
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.MDOList](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.MDOList)
+[UserPreferenceStrings.MDOList](SuperOffice.WebApi.Data.UserPreferenceStrings.MDOList.md)
 
 #### Inherited Members
 

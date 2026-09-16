@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_SaveCredentialRequest"></a> Class User\_SaveCredentialRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_SaveCredentialRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_SaveCredentialRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_SaveCredentialRequest)
+[User\_SaveCredentialRequest](SuperOffice.WebApi.Data.User\_SaveCredentialRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public Credential Credential { get; set; }
 
 #### Property Value
 
- [Credential](/en/api/reference/webapi/SuperOffice.WebApi.Data.Credential)
+ [Credential](SuperOffice.WebApi.Data.Credential.md)
 
 ### <a id="SuperOffice_WebApi_Data_User_SaveCredentialRequest_UserId"></a> UserId
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_AdminImportRules"></a> Class UserPreferenceStrings.AdminImportRules
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Preference keys for the mini panel.
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.AdminImportRules
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.AdminImportRules](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.AdminImportRules)
+[UserPreferenceStrings.AdminImportRules](SuperOffice.WebApi.Data.UserPreferenceStrings.AdminImportRules.md)
 
 #### Inherited Members
 

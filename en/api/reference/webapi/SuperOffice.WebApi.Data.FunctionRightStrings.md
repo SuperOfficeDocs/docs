@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_FunctionRightStrings"></a> Class FunctionRightStrings
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public static class FunctionRightStrings
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[FunctionRightStrings](/en/api/reference/webapi/SuperOffice.WebApi.Data.FunctionRightStrings)
+[FunctionRightStrings](SuperOffice.WebApi.Data.FunctionRightStrings.md)
 
 #### Inherited Members
 

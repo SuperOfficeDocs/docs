@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CallerIDCollection"></a> Class CallerIDCollection
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for CallerIDCollection.
@@ -13,7 +13,7 @@ public class CallerIDCollection
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CallerIDCollection](/en/api/reference/webapi/SuperOffice.WebApi.Data.CallerIDCollection)
+[CallerIDCollection](SuperOffice.WebApi.Data.CallerIDCollection.md)
 
 #### Inherited Members
 
@@ -59,9 +59,9 @@ public virtual CallerID[] CallerIDs { get; set; }
 
 #### Property Value
 
- [CallerID](/en/api/reference/webapi/SuperOffice.WebApi.Data.CallerID)\[\]
+ [CallerID](SuperOffice.WebApi.Data.CallerID.md)\[\]
 
 ## See Also
 
-[PocketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PocketAgent)
+[PocketAgent](SuperOffice.WebApi.Agents.PocketAgent.md)
 

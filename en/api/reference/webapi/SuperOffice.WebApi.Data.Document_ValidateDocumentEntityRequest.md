@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_ValidateDocumentEntityRequest"></a> Class Document\_ValidateDocumentEntityRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_ValidateDocumentEntityRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_ValidateDocumentEntityRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_ValidateDocumentEntityRequest)
+[Document\_ValidateDocumentEntityRequest](SuperOffice.WebApi.Data.Document\_ValidateDocumentEntityRequest.md)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public DocumentEntity DocumentEntity { get; set; }
 
 #### Property Value
 
- [DocumentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity)
+ [DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)
 

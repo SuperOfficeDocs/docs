@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_GetContactAppointmentsByTypeRequest"></a> Class Appointment\_GetContactAppointmentsByTypeRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_GetContactAppointmentsByTypeRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_GetContactAppointmentsByTypeRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_GetContactAppointmentsByTypeRequest)
+[Appointment\_GetContactAppointmentsByTypeRequest](SuperOffice.WebApi.Data.Appointment\_GetContactAppointmentsByTypeRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public AppointmentType AppointmentType { get; set; }
 
 #### Property Value
 
- [AppointmentType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentType)
+ [AppointmentType](SuperOffice.WebApi.Data.AppointmentType.md)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_GetContactAppointmentsByTypeRequest_ContactId"></a> ContactId
 

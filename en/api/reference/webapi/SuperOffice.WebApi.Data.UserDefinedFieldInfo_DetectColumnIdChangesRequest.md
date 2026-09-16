@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserDefinedFieldInfo_DetectColumnIdChangesRequest"></a> Class UserDefinedFieldInfo\_DetectColumnIdChangesRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class UserDefinedFieldInfo_DetectColumnIdChangesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserDefinedFieldInfo\_DetectColumnIdChangesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserDefinedFieldInfo_DetectColumnIdChangesRequest)
+[UserDefinedFieldInfo\_DetectColumnIdChangesRequest](SuperOffice.WebApi.Data.UserDefinedFieldInfo\_DetectColumnIdChangesRequest.md)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public UDefType OwnerType { get; set; }
 
 #### Property Value
 
- [UDefType](/en/api/reference/webapi/SuperOffice.WebApi.Data.UDefType)
+ [UDefType](SuperOffice.WebApi.Data.UDefType.md)
 

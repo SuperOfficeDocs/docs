@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_GetCurrenciesRequest"></a> Class List\_GetCurrenciesRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_GetCurrenciesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_GetCurrenciesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_GetCurrenciesRequest)
+[List\_GetCurrenciesRequest](SuperOffice.WebApi.Data.List\_GetCurrenciesRequest.md)
 
 #### Inherited Members
 

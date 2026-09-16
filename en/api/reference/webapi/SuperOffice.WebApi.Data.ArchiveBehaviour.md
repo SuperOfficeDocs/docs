@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ArchiveBehaviour"></a> Enum ArchiveBehaviour
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Behaviour in archives

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_WorkflowWaitForAction"></a> Class WorkflowWaitForAction
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for WorkflowWaitForAction.
@@ -13,13 +13,13 @@ public class WorkflowWaitForAction : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[WorkflowWaitForAction](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowWaitForAction)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[WorkflowWaitForAction](SuperOffice.WebApi.Data.WorkflowWaitForAction.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -59,11 +59,11 @@ public WorkflowWaitForActionType? ActionType { get; set; }
 
 #### Property Value
 
- [WorkflowWaitForActionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowWaitForActionType)?
+ [WorkflowWaitForActionType](SuperOffice.WebApi.Data.WorkflowWaitForActionType.md)?
 
 #### See Also
 
-[WorkflowWaitForAction](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowWaitForAction).[ActionType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowWaitForAction#SuperOffice_WebApi_Data_WorkflowWaitForAction_ActionType_String)
+[WorkflowWaitForAction](SuperOffice.WebApi.Data.WorkflowWaitForAction.md).[ActionType\_String](SuperOffice.WebApi.Data.WorkflowWaitForAction.md\#SuperOffice\_WebApi\_Data\_WorkflowWaitForAction\_ActionType\_String)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowWaitForAction_ActionType_String"></a> ActionType\_String
 
@@ -81,7 +81,7 @@ public string ActionType_String { get; set; }
 
 #### See Also
 
-[WorkflowWaitForAction](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowWaitForAction).[ActionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowWaitForAction#SuperOffice_WebApi_Data_WorkflowWaitForAction_ActionType)
+[WorkflowWaitForAction](SuperOffice.WebApi.Data.WorkflowWaitForAction.md).[ActionType](SuperOffice.WebApi.Data.WorkflowWaitForAction.md\#SuperOffice\_WebApi\_Data\_WorkflowWaitForAction\_ActionType)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowWaitForAction_Rank"></a> Rank
 
@@ -105,7 +105,7 @@ public virtual ArchiveRestrictionGroup[] RestrictionGroups { get; set; }
 
 #### Property Value
 
- [ArchiveRestrictionGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionGroup)\[\]
+ [ArchiveRestrictionGroup](SuperOffice.WebApi.Data.ArchiveRestrictionGroup.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowWaitForAction_WorkflowId"></a> WorkflowId
 
@@ -145,5 +145,5 @@ public virtual int WorkflowWaitForActionId { get; set; }
 
 ## See Also
 
-[WorkflowAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.WorkflowAgent)
+[WorkflowAgent](SuperOffice.WebApi.Agents.WorkflowAgent.md)
 

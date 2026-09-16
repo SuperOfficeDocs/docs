@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Batch"></a> Class Batch
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for Batch.
@@ -13,13 +13,13 @@ public class Batch : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[Batch](/en/api/reference/webapi/SuperOffice.WebApi.Data.Batch)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[Batch](SuperOffice.WebApi.Data.Batch.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -37,7 +37,7 @@ var batch = agent.GetBatch( 123 );</code></pre>
 
 ## Remarks
 
-Use [Archive agent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent):
+Use <xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" data-throw-if-not-resolved="false"></xref>:
             All Batch: <pre><code class="lang-csharp">"BatchTasks"</code></pre>
 
 ## Constructors
@@ -52,7 +52,7 @@ public Batch()
 
 ## See Also
 
-[BatchAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.BatchAgent), 
-[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent), 
+[BatchAgent](SuperOffice.WebApi.Agents.BatchAgent.md), 
+[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md), 
 
 

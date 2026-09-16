@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Find_GetAvailableRestrictionColumnsRequest"></a> Class Find\_GetAvailableRestrictionColumnsRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Find_GetAvailableRestrictionColumnsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Find\_GetAvailableRestrictionColumnsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Find_GetAvailableRestrictionColumnsRequest)
+[Find\_GetAvailableRestrictionColumnsRequest](SuperOffice.WebApi.Data.Find\_GetAvailableRestrictionColumnsRequest.md)
 
 #### Inherited Members
 

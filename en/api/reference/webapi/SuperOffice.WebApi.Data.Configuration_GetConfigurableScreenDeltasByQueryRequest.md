@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Configuration_GetConfigurableScreenDeltasByQueryRequest"></a> Class Configuration\_GetConfigurableScreenDeltasByQueryRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Configuration_GetConfigurableScreenDeltasByQueryRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Configuration\_GetConfigurableScreenDeltasByQueryRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_GetConfigurableScreenDeltasByQueryRequest)
+[Configuration\_GetConfigurableScreenDeltasByQueryRequest](SuperOffice.WebApi.Data.Configuration\_GetConfigurableScreenDeltasByQueryRequest.md)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public DeltaQuery DeltaQuery { get; set; }
 
 #### Property Value
 
- [DeltaQuery](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeltaQuery)
+ [DeltaQuery](SuperOffice.WebApi.Data.DeltaQuery.md)
 

@@ -1,9 +1,9 @@
-# Class AuthorizationUsernamePassword {#SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword}
+# <a id="SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword"></a> Class AuthorizationUsernamePassword
 
-Namespace: [SuperOffice.WebApi.Authorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization)  
+Namespace: [SuperOffice.WebApi.Authorization](SuperOffice.WebApi.Authorization.md)  
 Assembly: SuperOffice.WebApi.Authorization.dll  
 
-Username and password [IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization) using Basic scheme.
+Username and password <xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"></xref> using Basic scheme.
 
 ```csharp
 public class AuthorizationUsernamePassword : IAuthorization
@@ -12,11 +12,11 @@ public class AuthorizationUsernamePassword : IAuthorization
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AuthorizationUsernamePassword](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.AuthorizationUsernamePassword)
+[AuthorizationUsernamePassword](SuperOffice.WebApi.Authorization.AuthorizationUsernamePassword.md)
 
 #### Implements
 
-[IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization)
+[IAuthorization](SuperOffice.WebApi.Authorization.IAuthorization.md)
 
 #### Inherited Members
 
@@ -30,7 +30,7 @@ public class AuthorizationUsernamePassword : IAuthorization
 
 ## Constructors
 
-### AuthorizationUsernamePassword\(string, string\) {#SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword__ctor_System_String_System_String_}
+### <a id="SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword__ctor_System_String_System_String_"></a> AuthorizationUsernamePassword\(string, string\)
 
 UserNamePasswordAuthorization Constructor
 
@@ -50,9 +50,9 @@ Users password.
 
 ## Properties
 
-### RefreshAuthorizationAsync {#SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword_RefreshAuthorizationAsync}
+### <a id="SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword_RefreshAuthorizationAsync"></a> RefreshAuthorizationAsync
 
-Try to refresh this [IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization) instance.
+Try to refresh this <xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"></xref> instance.
 
 ```csharp
 public Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync { get; set; }
@@ -60,11 +60,11 @@ public Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync
 
 #### Property Value
 
- [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)&lt;[ReAuthorizationArgs](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.ReAuthorizationArgs), [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization)\&gt;\&gt;
+ [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)<[ReAuthorizationArgs](SuperOffice.WebApi.Authorization.ReAuthorizationArgs.md), [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[IAuthorization](SuperOffice.WebApi.Authorization.IAuthorization.md)\>\>
 
 ## Methods
 
-### GetAuthorization\(\) {#SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword_GetAuthorization}
+### <a id="SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword_GetAuthorization"></a> GetAuthorization\(\)
 
 Gets a tuple that represents authorization scheme and parameter for a base64 encoded username:password.
 
@@ -76,5 +76,5 @@ public AuthenticationHeaderValue GetAuthorization()
 
  [AuthenticationHeaderValue](https://learn.microsoft.com/dotnet/api/system.net.http.headers.authenticationheadervalue)
 
-Gets a [Tuple](https://learn.microsoft.com/dotnet/api/system.tuple-2) (string,string) where scheme is Basic and parameter is base64 encoded username:password.
+Gets a <xref href="System.Tuple%602" data-throw-if-not-resolved="false"></xref> (string,string) where scheme is Basic and parameter is base64 encoded username:password.
 

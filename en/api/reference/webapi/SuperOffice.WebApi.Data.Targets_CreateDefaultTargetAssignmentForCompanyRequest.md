@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Targets_CreateDefaultTargetAssignmentForCompanyRequest"></a> Class Targets\_CreateDefaultTargetAssignmentForCompanyRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Targets_CreateDefaultTargetAssignmentForCompanyRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Targets\_CreateDefaultTargetAssignmentForCompanyRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Targets_CreateDefaultTargetAssignmentForCompanyRequest)
+[Targets\_CreateDefaultTargetAssignmentForCompanyRequest](SuperOffice.WebApi.Data.Targets\_CreateDefaultTargetAssignmentForCompanyRequest.md)
 
 #### Inherited Members
 

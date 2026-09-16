@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_BoardViewSettingsBase"></a> Class BoardViewSettingsBase
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for BoardViewSettingsBase.
@@ -16,13 +16,13 @@ public class BoardViewSettingsBase
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[BoardViewSettingsBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewSettingsBase)
+[BoardViewSettingsBase](SuperOffice.WebApi.Data.BoardViewSettingsBase.md)
 
 #### Derived
 
-[ContactPersonBoardViewSettings](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactPersonBoardViewSettings), 
-[ProjectBoardViewSettings](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectBoardViewSettings), 
-[SaleBoardViewSettings](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleBoardViewSettings)
+[ContactPersonBoardViewSettings](SuperOffice.WebApi.Data.ContactPersonBoardViewSettings.md), 
+[ProjectBoardViewSettings](SuperOffice.WebApi.Data.ProjectBoardViewSettings.md), 
+[SaleBoardViewSettings](SuperOffice.WebApi.Data.SaleBoardViewSettings.md)
 
 #### Inherited Members
 
@@ -94,11 +94,11 @@ public BoardViewEntityType? EntityType { get; set; }
 
 #### Property Value
 
- [BoardViewEntityType](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewEntityType)?
+ [BoardViewEntityType](SuperOffice.WebApi.Data.BoardViewEntityType.md)?
 
 #### See Also
 
-[BoardViewSettingsBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewSettingsBase).[EntityType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewSettingsBase#SuperOffice_WebApi_Data_BoardViewSettingsBase_EntityType_String)
+[BoardViewSettingsBase](SuperOffice.WebApi.Data.BoardViewSettingsBase.md).[EntityType\_String](SuperOffice.WebApi.Data.BoardViewSettingsBase.md\#SuperOffice\_WebApi\_Data\_BoardViewSettingsBase\_EntityType\_String)
 
 ### <a id="SuperOffice_WebApi_Data_BoardViewSettingsBase_EntityType_String"></a> EntityType\_String
 
@@ -116,7 +116,7 @@ public string EntityType_String { get; set; }
 
 #### See Also
 
-[BoardViewSettingsBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewSettingsBase).[EntityType](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewSettingsBase#SuperOffice_WebApi_Data_BoardViewSettingsBase_EntityType)
+[BoardViewSettingsBase](SuperOffice.WebApi.Data.BoardViewSettingsBase.md).[EntityType](SuperOffice.WebApi.Data.BoardViewSettingsBase.md\#SuperOffice\_WebApi\_Data\_BoardViewSettingsBase\_EntityType)
 
 ### <a id="SuperOffice_WebApi_Data_BoardViewSettingsBase_Filters"></a> Filters
 
@@ -216,5 +216,5 @@ public virtual string SumBy { get; set; }
 
 ## See Also
 
-[SelectionAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SelectionAgent)
+[SelectionAgent](SuperOffice.WebApi.Agents.SelectionAgent.md)
 

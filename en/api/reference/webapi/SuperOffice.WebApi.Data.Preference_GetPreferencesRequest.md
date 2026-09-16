@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Preference_GetPreferencesRequest"></a> Class Preference\_GetPreferencesRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Preference_GetPreferencesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Preference\_GetPreferencesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Preference_GetPreferencesRequest)
+[Preference\_GetPreferencesRequest](SuperOffice.WebApi.Data.Preference\_GetPreferencesRequest.md)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public PreferenceSpec[] Specifications { get; set; }
 
 #### Property Value
 
- [PreferenceSpec](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferenceSpec)\[\]
+ [PreferenceSpec](SuperOffice.WebApi.Data.PreferenceSpec.md)\[\]
 

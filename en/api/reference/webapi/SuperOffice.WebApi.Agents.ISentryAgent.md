@@ -1,6 +1,6 @@
-# Interface ISentryAgent {#SuperOffice_WebApi_Agents_ISentryAgent}
+# <a id="SuperOffice_WebApi_Agents_ISentryAgent"></a> Interface ISentryAgent
 
-Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
+Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Data and function right queries
@@ -11,12 +11,12 @@ public interface ISentryAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
+[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
 
-### CanCreateAppointmentInAllDiariesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ISentryAgent_CanCreateAppointmentInAllDiariesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ISentryAgent_CanCreateAppointmentInAllDiariesAsync_SuperOffice_WebApi_RequestOptions_"></a> CanCreateAppointmentInAllDiariesAsync\(RequestOptions\)
 
 CanCreateAppointmentInAllDiaries will check if the current associate can create appointments in diaries belonging all other associates. CanCreateAppointmentInAssociateDiaries will only check against associates that are diary owners.
 
@@ -26,17 +26,17 @@ Task<bool> CanCreateAppointmentInAllDiariesAsync(RequestOptions requestOptions =
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
 
 Returns true if the current associate can create appointments in the diary of all the other associates, otherwise false.
 
-### CanCreateAppointmentInAssociateDiariesAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ISentryAgent_CanCreateAppointmentInAssociateDiariesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ISentryAgent_CanCreateAppointmentInAssociateDiariesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> CanCreateAppointmentInAssociateDiariesAsync\(int\[\], RequestOptions\)
 
 CanCreateAppointmentInAssociateDiaries will check if the current associate can create appointments in diaries belonging to the associates listed in associateIds. CanCreateAppointmentInAssociateDiaries will only check against associates that are diary owners. If none of the associates listed in the associateIds parameter is a diary owner, the method will return true.
 
@@ -50,17 +50,17 @@ Task<bool> CanCreateAppointmentInAssociateDiariesAsync(int[] associateIds, Reque
 
 Array of associate ids to check.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
 
 Returns true if the current associate can create appointments in the diary of all the other associates, otherwise false.
 
-### CanCreateAppointmentInEachAssociatesDiaryAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ISentryAgent_CanCreateAppointmentInEachAssociatesDiaryAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ISentryAgent_CanCreateAppointmentInEachAssociatesDiaryAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> CanCreateAppointmentInEachAssociatesDiaryAsync\(int\[\], RequestOptions\)
 
 CanCreateAppointmentInEachAssociateDiary will check if the current associate can create appointments in diaries belonging to the associates listed in associateIds. CanCreateAppointmentInEachAssociateDiary will only check against associates that are diary owners. If none of the associates listed in the associateIds parameter is a diary owner, the method will return true.
 
@@ -74,17 +74,17 @@ Task<bool[]> CanCreateAppointmentInEachAssociatesDiaryAsync(int[] associateIds, 
 
 Array of associate ids to check.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\[\]\>
 
 Returns true if for each given associate if the current associate can create appointments in that diary, otherwise false.
 
-### GetFunctionRightsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ISentryAgent_GetFunctionRightsAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ISentryAgent_GetFunctionRightsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetFunctionRightsAsync\(RequestOptions\)
 
 Get a string array of all functions rights for the role of the current associate.
 
@@ -94,17 +94,17 @@ Task<string[]> GetFunctionRightsAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\[\]\>
 
 String array with the technical names of assigned function rights
 
-### GetNewTableRightAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_ISentryAgent_GetNewTableRightAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ISentryAgent_GetNewTableRightAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetNewTableRightAsync\(string, RequestOptions\)
 
 Returns a TableRight for a new row based on tableName parameter.
 
@@ -118,17 +118,17 @@ Task<TableRight> GetNewTableRightAsync(string tableName, RequestOptions requestO
 
 Name of the table to get the TableRights from
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.TableRight)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TableRight](SuperOffice.WebApi.Data.TableRight.md)\>
 
 The TableRight
 
-### GetTableRightByContactOwnershipAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ISentryAgent_GetTableRightByContactOwnershipAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ISentryAgent_GetTableRightByContactOwnershipAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTableRightByContactOwnershipAsync\(string, int, RequestOptions\)
 
 Return the TableRight from the relationship between the current user and the given user and group.
 
@@ -146,17 +146,17 @@ Name of the table to get the TableRights from.
 
 The owner contact.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.TableRight)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TableRight](SuperOffice.WebApi.Data.TableRight.md)\>
 
 The TableRight
 
-### GetTableRightByOwnershipAsync\(string, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_ISentryAgent_GetTableRightByOwnershipAsync_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ISentryAgent_GetTableRightByOwnershipAsync_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTableRightByOwnershipAsync\(string, int, int, RequestOptions\)
 
 Return the TableRight from the relationship between the current user and the given user and group.
 
@@ -178,17 +178,17 @@ The user-group that the associate id is part of.
 
 The associate id of the owner of the record
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.TableRight)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TableRight](SuperOffice.WebApi.Data.TableRight.md)\>
 
 The TableRight
 
-### HasFunctionRightAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_ISentryAgent_HasFunctionRightAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ISentryAgent_HasFunctionRightAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> HasFunctionRightAsync\(string, RequestOptions\)
 
 Get a boolean value indicating if the current user has the functional right.
 
@@ -202,11 +202,11 @@ Task<bool> HasFunctionRightAsync(string functionRight, RequestOptions requestOpt
 
 Function right to check.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
 

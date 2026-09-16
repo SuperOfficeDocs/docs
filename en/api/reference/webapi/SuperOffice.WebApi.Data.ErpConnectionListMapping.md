@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpConnectionListMapping"></a> Class ErpConnectionListMapping
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ErpConnectionListMapping.
@@ -13,13 +13,13 @@ public class ErpConnectionListMapping : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[ErpConnectionListMapping](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpConnectionListMapping)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[ErpConnectionListMapping](SuperOffice.WebApi.Data.ErpConnectionListMapping.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -50,7 +50,7 @@ public virtual MDOListItem CrmList { get; set; }
 
 #### Property Value
 
- [MDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.MDOListItem)
+ [MDOListItem](SuperOffice.WebApi.Data.MDOListItem.md)
 
 ### <a id="SuperOffice_WebApi_Data_ErpConnectionListMapping_ErpActorTypeName"></a> ErpActorTypeName
 
@@ -74,7 +74,7 @@ public virtual ErpCrmListItemMapping[] ErpCrmListItemMappings { get; set; }
 
 #### Property Value
 
- [ErpCrmListItemMapping](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpCrmListItemMapping)\[\]
+ [ErpCrmListItemMapping](SuperOffice.WebApi.Data.ErpCrmListItemMapping.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_ErpConnectionListMapping_ErpFieldId"></a> ErpFieldId
 
@@ -102,5 +102,5 @@ public virtual string ErpListName { get; set; }
 
 ## See Also
 
-[ErpSyncAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ErpSyncAgent)
+[ErpSyncAgent](SuperOffice.WebApi.Agents.ErpSyncAgent.md)
 

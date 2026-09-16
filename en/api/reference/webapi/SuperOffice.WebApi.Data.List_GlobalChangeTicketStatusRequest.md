@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_GlobalChangeTicketStatusRequest"></a> Class List\_GlobalChangeTicketStatusRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_GlobalChangeTicketStatusRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_GlobalChangeTicketStatusRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_GlobalChangeTicketStatusRequest)
+[List\_GlobalChangeTicketStatusRequest](SuperOffice.WebApi.Data.List\_GlobalChangeTicketStatusRequest.md)
 
 #### Inherited Members
 
