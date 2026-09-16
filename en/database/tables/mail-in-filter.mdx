@@ -1,6 +1,6 @@
 ---
-title: mail_in_filter table
-description: This table contains entries for the mailboxes the eJournal system is fetching mail from (POP3 or IMAP).
+title: "mail_in_filter table"
+description: "This table contains entries for the mailboxes the eJournal system is fetching mail from (POP3 or IMAP)."
 generated: true
 content_type: reference
 envir: online
@@ -8,24 +8,24 @@ envir: online
 
 import MailInFilter from "./includes/mail-in-filter.mdx";
 
-## mail\_in\_filter Table (271)
-
 This table contains entries for the mailboxes the eJournal system is fetching mail from (POP3 or IMAP).
+
+Table number: 271
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|server\_type|Enum indicating the protocol to use (POP/IMAP).|Enum [MailboxType](./enums/mailboxtype.mdx)|Yes|
+|server\_type|Enum indicating the protocol to use (POP/IMAP).|Enum [MailboxType](./enums/mailboxtype)|Yes|
 |pop\_server|The hostname/IP address of the server.|String(255)|Yes|
 |pop\_user|The username used to login.|String(255)|Yes|
 |pop\_password|The password used to login.|String(255)|Yes|
 |domain|The domain used to login.|String(255)|Yes|
 |address|The address associated with this mailbox (used as FROM: address when sending emails).|String(255)|Yes|
-|category\_id|The id of the category this mailbox assigns tickets to (unless overridden by a sortfilter).|FK [ej_category](./ej-category.mdx)|Yes|
-|priority|The id of the priority tickets are assigned when imported from this mailbox.|FK [ticket_priority](./ticket-priority.mdx)|Yes|
-|reply\_template\_id|ID of the reply template used on this mail box.|FK [reply_template](./reply-template.mdx)|No|
+|category\_id|The id of the category this mailbox assigns tickets to (unless overridden by a sortfilter).|FK [ej_category](./ej-category)|Yes|
+|priority|The id of the priority tickets are assigned when imported from this mailbox.|FK [ticket_priority](./ticket-priority)|Yes|
+|reply\_template\_id|ID of the reply template used on this mail box.|FK [reply_template](./reply-template)|No|
 |checkwait|How often (in minutes) to check this mailbox.|Int|No|
 |next\_check|When this mailbox should be checked the next time.|DateTime|Yes|
 |noautoreply|If set, then this mailbox should not send an autoreply.|Bool|Yes|
@@ -36,13 +36,13 @@ This table contains entries for the mailboxes the eJournal system is fetching ma
 |last\_error|The last error message recieved from the underlying email system (such as POP3 protocol errors, etc).|Clob|Yes|
 |num\_seq\_failures|The number of sequential failures for this mailbox.|Int|Yes|
 |keep\_headers|A commaseparated list of headers to store for emails imported. E.g. &amp;apos;to,from,recieved-by,subject&amp;apos;. |String(255)|Yes|
-|language\_id|The id of the customer language entry this entry is connected to.|FK [cust_lang](./cust-lang.mdx)|Yes|
+|language\_id|The id of the customer language entry this entry is connected to.|FK [cust_lang](./cust-lang)|Yes|
 |autofaq|Whether to suggest FAQ entries for this email account or not|Bool|Yes|
-|autofaq\_kb\_category|The root folder for the auto faq search.|FK [kb_category](./kb-category.mdx)|Yes|
+|autofaq\_kb\_category|The root folder for the auto faq search.|FK [kb_category](./kb-category)|Yes|
 |mailgun\_dsn|If this is set to 1, the route created in Mailgun will be set up to deliver emails of type auto-replies, system messsages etc|Bool|Yes|
 |ai\_suggest\_category|If this is set to 0 (false), then there will be no AI for suggesting categories on incoming emails|Bool|No|
 |ai\_text\_analysis|If this is set to 0 (false), then there will be no AI text analysis on incoming emails|Bool|No|
-|ticket\_type|Tickettype of the ticket|FK [ticket_type](./ticket-type.mdx)|Yes|
+|ticket\_type|Tickettype of the ticket|FK [ticket_type](./ticket-type)|Yes|
 
 
 ![mail_in_filter table relationship diagram](/media/loc/en/database/tables/mail_in_filter.png)

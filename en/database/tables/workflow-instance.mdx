@@ -1,6 +1,6 @@
 ---
-title: workflow_instance table
-description: A set of properties related to the workflow instance of one participant going through the flow
+title: "workflow_instance table"
+description: "A set of properties related to the workflow instance of one participant going through the flow"
 generated: true
 content_type: reference
 envir: online
@@ -8,28 +8,28 @@ envir: online
 
 import WorkflowInstance from "./includes/workflow-instance.mdx";
 
-## workflow\_instance Table (528)
-
 A set of properties related to the workflow instance of one participant going through the flow
+
+Table number: 529
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |workflow\_instance\_id|Primary key|PK|No|
-|workflow\_id|The flow this instance belongs to|FK [workflow](./workflow.mdx)|Yes|
-|status|Status of the workflow instance|Enum [WorkflowInstanceStatus](./enums/workflowinstancestatus.mdx)|Yes|
-|person\_id|Person ID of person going through the flow|FK [person](./person.mdx)|Yes|
-|contact\_id|Contact ID of contact contact going through the flow|FK [contact](./contact.mdx)|Yes|
+|workflow\_id|The flow this instance belongs to|FK [workflow](./workflow)|Yes|
+|status|Status of the workflow instance|Enum [WorkflowInstanceStatus](./enums/workflowinstancestatus)|Yes|
+|person\_id|Person ID of person going through the flow|FK [person](./person)|Yes|
+|contact\_id|Contact ID of contact contact going through the flow|FK [contact](./contact)|Yes|
 |variables|Instance data and variables|Clob|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
-|current\_step|Next step to be executed when conditions are met|FK [workflow_step](./workflow-step.mdx)|Yes|
+|current\_step|Next step to be executed when conditions are met|FK [workflow_step](./workflow-step)|Yes|
 |wait\_until|Don&apos;t evaluate conditions until given time (set by a waiting step, and status Suspended). An event may change the wait_until or status to Running.|DateTime|Yes|
-|last\_communication\_step|Last completed step with email/sms to customer|FK [workflow_step](./workflow-step.mdx)|Yes|
+|last\_communication\_step|Last completed step with email/sms to customer|FK [workflow_step](./workflow-step)|Yes|
 |dropout\_reason|Reason for dropout/failure|String(255)|Yes|
 |step\_started|The currently executing step was started at this time|DateTime|Yes|
 |step\_level|Some steps have multiple levels, this indicates what level is reached|Int|Yes|

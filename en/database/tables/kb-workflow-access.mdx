@@ -1,6 +1,6 @@
 ---
-title: kb_workflow_access table
-description: Control of who can do what in a knowledge base workflow step
+title: "kb_workflow_access table"
+description: "Control of who can do what in a knowledge base workflow step"
 generated: true
 content_type: reference
 envir: online
@@ -8,17 +8,17 @@ envir: online
 
 import KbWorkflowAccess from "./includes/kb-workflow-access.mdx";
 
-## kb\_workflow\_access Table (293)
-
 Control of who can do what in a knowledge base workflow step
+
+Table number: 293
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|kb\_workflow|The workflow to access.|FK [kb_workflow](./kb-workflow.mdx)|No|
-|user\_id|The user with access.|FK [ejuser](./ejuser.mdx)|No|
+|kb\_workflow|The workflow to access.|FK [kb_workflow](./kb-workflow)|No|
+|user\_id|The user with access.|FK [ejuser](./ejuser)|No|
 |kb\_access|The access given to a user for entries in a given workflow phase. 1 for viewing entries, 2 for moving entries between workflow phases, 3 for editing entries|kb_access|No|
 
 

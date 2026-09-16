@@ -1,6 +1,6 @@
 ---
-title: temp_db_lock table
-description: Represents a temporary lock on a resource identified by table_id and key
+title: "temp_db_lock table"
+description: "Represents a temporary lock on a resource identified by table_id and key"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import TempDbLock from "./includes/temp-db-lock.mdx";
 
-## temp\_db\_lock Table (535)
-
 Represents a temporary lock on a resource identified by table_id and key
+
+Table number: 536
 
 ## Fields
 
@@ -21,9 +21,9 @@ Represents a temporary lock on a resource identified by table_id and key
 |key|The key/id of the locked resource|RecordId|Yes|
 |timeout\_at|When this lock times out. Refreshing this while working is a good idea.|UtcDateTime|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

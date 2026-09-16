@@ -1,6 +1,6 @@
 ---
-title: s_list_shipment table
-description: A connector between shipment and list so that one shipment can have many lists, and one list can have many shipments
+title: "s_list_shipment table"
+description: "A connector between shipment and list so that one shipment can have many lists, and one list can have many shipments"
 generated: true
 content_type: reference
 envir: online
@@ -8,19 +8,19 @@ envir: online
 
 import SListShipment from "./includes/s-list-shipment.mdx";
 
-## s\_list\_shipment Table (348)
-
 A connector between shipment and list so that one shipment can have many lists, and one list can have many shipments
+
+Table number: 348
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|Primary key|PK|No|
-|list\_id|Reference to the list|FK [s_list](./s-list.mdx)|No|
-|shipment\_id|Reference to the shipment|FK [s_shipment](./s-shipment.mdx)|No|
+|list\_id|Reference to the list|FK [s_list](./s-list)|No|
+|shipment\_id|Reference to the shipment|FK [s_shipment](./s-shipment)|No|
 |type|Indicates if this is a static/dynamic spmlist or a selection|Int|Yes|
-|status|Status of shipment list|Enum [ShipmentListStatus](./enums/shipmentliststatus.mdx)|Yes|
+|status|Status of shipment list|Enum [ShipmentListStatus](./enums/shipmentliststatus)|Yes|
 
 
 ![s_list_shipment table relationship diagram](/media/loc/en/database/tables/s_list_shipment.png)

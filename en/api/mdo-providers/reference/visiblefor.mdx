@@ -1,13 +1,12 @@
 ---
-title: visiblefor
+title: "visiblefor"
 keywords: mdoprovider mdo provider visiblefor
-description: List provider for the VisibleFor dropdown control. Items are of type associate, usergroup or all, with a separate id space for each type. The current associate, its primary and secondary groups, and 'all' are the returned elements. MDO list sorting preferences for the UserGroup list are respected.
+description: "List provider for the VisibleFor dropdown control. Items are of type associate, usergroup or all, with a separate id space for each type. The current associate, its primary and secondary groups, and 'all' are the returned elements. MDO list sorting preferences for the UserGroup list are respected."
 generated: true
 content_type: reference
 envir: online
 ---
 
-## "visiblefor" MDO List
 List provider for the VisibleFor dropdown control. Items are of type associate, usergroup or all, with
 a separate id space for each type. The current associate, its primary and secondary groups, and 'all' are
 the returned elements. MDO list sorting preferences for the UserGroup list are respected.
@@ -16,8 +15,10 @@ Associate items have positive ID's equal to the associate id, group items have n
 and the All item has the id value int.MinValue.
 
 
+
 You can pass in an associate ID in the additionalInfo parameter, this will return a VisibleFor list customized to that
 associate's view of the world. If additionalInfo is blank, not a number, or 0, the current associate is used.
+
 
 
 You can also pass in a list of associate ids, as a string with space/comma delimiters.
@@ -25,15 +26,14 @@ Example: '1, 2, 45, 999,12'. In this case, you will get a VisibleFor populated w
 plus the intersection of all the groups of all the associates. I.e., something set as Visible For
 one of these choices will be visible to all these associates.
 
-Implemented by the VisibleForListProvider class.
+Implemented by the `SuperOffice.CRM.Lists.VisibleForListProvider` class.
 The name of the MDO list is 'visiblefor'.
 
 ## Additional Attributes
 
 | Description | Name | Example Value |
 |-----|-----|------|
-|Comma separated list of associate ids| |123,234,34|
-
+|Comma separated list of associate ids| 123,234,34||
 
 
 
@@ -68,10 +68,10 @@ foreach (var item in listProvider.RootItems) {
 
 ## Related MDO Lists
 
-* "visibleforheadings"
-* "visibleforheadingswithallitem"
-* "visibleforheadingswithallitemwithnoselection"
-* "visibleforheadingswithnoselection"
-* "visibleforwithallitem"
-* "visibleforwithallitemwithnoselection"
-* "visibleforwithnoselection"
+* `visibleforheadings`
+* `visibleforheadingswithallitem`
+* `visibleforheadingswithallitemwithnoselection`
+* `visibleforheadingswithnoselection`
+* `visibleforwithallitem`
+* `visibleforwithallitemwithnoselection`
+* `visibleforwithnoselection`

@@ -1,18 +1,18 @@
 ---
-title: erpproductfamily
+title: "erpproductfamily"
 keywords: mdoprovider mdo provider erpproductfamily
-description: 
+description: "Dynamic provider that dispatches Quote Connector lists, based on QuoteAlternativeId or SaleId and \"Erp\"+&lt;list name&gt;. Consider using \"QM_\"+&lt;sale_id&gt;+&lt;list name&gt; instead if you can."
 generated: true
 content_type: reference
 envir: online
 ---
 
-## "erpproductfamily" MDO List
+Dynamic provider that dispatches Quote Connector lists, based on QuoteAlternativeId or SaleId and "Erp"+&lt;list name&gt;.
+Consider using "QM_"+&lt;sale_id&gt;+&lt;list name&gt; instead if you can.
 
+See the remarks on `QuoteListsByNameProvider` for an overview of Quote List dispatching, which is fairly complex.
 
-
-
-Implemented by the QuoteListsByIdProvider class.
+Implemented by the `SuperOffice.CRM.Lists.QuoteListsByIdProvider` class.
 The name of the MDO list is 'erpproductfamily'.
 
 ## Additional Attributes
@@ -23,7 +23,6 @@ The name of the MDO list is 'erpproductfamily'.
 |Sale to get quotes from which tells us which quote connection to get| SaleId|1234|
 
 Separator: &
-
 
 
 
@@ -56,10 +55,10 @@ foreach (var item in listProvider.RootItems) {
 
 ## Related MDO Lists
 
-* "erpproductfamilyheadings"
-* "erpproductfamilyheadingswithallitem"
-* "erpproductfamilyheadingswithallitemwithnoselection"
-* "erpproductfamilyheadingswithnoselection"
-* "erpproductfamilywithallitem"
-* "erpproductfamilywithallitemwithnoselection"
-* "erpproductfamilywithnoselection"
+* `erpproductfamilyheadings`
+* `erpproductfamilyheadingswithallitem`
+* `erpproductfamilyheadingswithallitemwithnoselection`
+* `erpproductfamilyheadingswithnoselection`
+* `erpproductfamilywithallitem`
+* `erpproductfamilywithallitemwithnoselection`
+* `erpproductfamilywithnoselection`

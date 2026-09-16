@@ -1,21 +1,21 @@
 ---
-title: salestage
+title: "salestage"
 keywords: mdoprovider mdo provider salestage
-description: Provider for selecting a stage. AdditionalInfo is used as criteria to filter stages based on SaleType.
+description: "Provider for selecting a stage. AdditionalInfo is used as criteria to filter stages based on SaleType."
 generated: true
 content_type: reference
 envir: online
 ---
 
-## "salestage" MDO List
 Provider for selecting a stage. AdditionalInfo is used as criteria to filter stages based on SaleType.
 
 Sold(-2) and Lost(-1) items are appended  at the end of the list.
 
 
+
 AdditionalInfo "SaleTypeID=123&amp;GetDeletedStages=true&amp;HideOptionalRows=false&amp;GetDeletedStageLinks=true"
 
-Implemented by the SaleStageProvider class.
+Implemented by the `SuperOffice.CRM.Lists.SaleStageProvider` class.
 The name of the MDO list is 'salestage'.
 
 ## Additional Attributes
@@ -29,7 +29,6 @@ The name of the MDO list is 'salestage'.
 |Filter out optional stages| HideOptionalRows|False|
 
 Separator: &
-
 
 
 
@@ -68,10 +67,10 @@ foreach (var item in listProvider.RootItems) {
 
 ## Related MDO Lists
 
-* "salestageheadings"
-* "salestageheadingswithallitem"
-* "salestageheadingswithallitemwithnoselection"
-* "salestageheadingswithnoselection"
-* "salestagewithallitem"
-* "salestagewithallitemwithnoselection"
-* "salestagewithnoselection"
+* `salestageheadings`
+* `salestageheadingswithallitem`
+* `salestageheadingswithallitemwithnoselection`
+* `salestageheadingswithnoselection`
+* `salestagewithallitem`
+* `salestagewithallitemwithnoselection`
+* `salestagewithnoselection`

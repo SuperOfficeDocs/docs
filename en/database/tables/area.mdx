@@ -1,6 +1,6 @@
 ---
-title: area table
-description: Definition of an Area (database subset for satellite and travel)
+title: "area table"
+description: "Definition of an Area (database subset for satellite and travel)"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Area from "./includes/area.mdx";
 
-## area Table (38)
-
 Definition of an Area (database subset for satellite and travel)
+
+Table number: 38
 
 ## Fields
 
@@ -18,16 +18,16 @@ Definition of an Area (database subset for satellite and travel)
 |------|-------------|------|:----:|
 |area\_id|Primary key|PK|No|
 |name|Area name|String(49)|Yes|
-|parent\_area\_id|Reserved/not implemented: for subareas, travel from satellite, maybe future multi-level satellites|FK [area](./area.mdx)|Yes|
+|parent\_area\_id|Reserved/not implemented: for subareas, travel from satellite, maybe future multi-level satellites|FK [area](./area)|Yes|
 |allData|if set to 1, means &apos;no filtering&apos;|UShort|Yes|
 |dbType|0 = as in preferences, 1 = Sybase Anywhere, 2 = Ctree; used when generating prototypes|UShort|Yes|
 |filterType|Area filtering algorithm - reserved for future use|UShort|Yes|
 |encryptedComm|Use encryption for this Area?|UShort|Yes|
 |maxDataAge|Max age of data when generating db&apos;s based on this area|UShort|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

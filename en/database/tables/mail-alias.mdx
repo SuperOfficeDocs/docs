@@ -1,6 +1,6 @@
 ---
-title: mail_alias table
-description: This table contains the alias&amp;apos;es for each mailbox, one-to-many-relation. It is in so we can substract the alias&amp;apos;es when when listing the recipients of a message.     
+title: "mail_alias table"
+description: "This table contains the alias&amp;apos;es for each mailbox, one-to-many-relation. It is in so we can substract the alias&amp;apos;es when when listing the recipients of a message."
 generated: true
 content_type: reference
 envir: online
@@ -8,16 +8,16 @@ envir: online
 
 import MailAlias from "./includes/mail-alias.mdx";
 
-## mail\_alias Table (273)
-
 This table contains the alias&amp;apos;es for each mailbox, one-to-many-relation. It is in so we can substract the alias&amp;apos;es when when listing the recipients of a message.     
+
+Table number: 273
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|filter\_id|The mailbox which the alias belongs to|FK [mail_in_filter](./mail-in-filter.mdx)|No|
+|filter\_id|The mailbox which the alias belongs to|FK [mail_in_filter](./mail-in-filter)|No|
 |alias|The alias for the mailbox|String(255)|Yes|
 
 

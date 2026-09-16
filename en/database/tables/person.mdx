@@ -1,6 +1,6 @@
 ---
-title: person table
-description: Persons
+title: "person table"
+description: "Persons"
 generated: true
 content_type: reference
 envir: online
@@ -8,32 +8,32 @@ envir: online
 
 import Person from "./includes/person.mdx";
 
-## person Table (6)
-
 Persons
+
+Table number: 6
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |person\_id|Primary key|PK|No|
-|contact\_id|Owning contact ID|FK [contact](./contact.mdx)|No|
+|contact\_id|Owning contact ID|FK [contact](./contact)|No|
 |rank|Display sort sequence for default sort order|UShort|No|
 |lastname|Last name|String(99)|Yes|
 |firstname|First name|String(99)|No|
 |mrmrs|e.g. Mrs   sex_title|String(239)|Yes|
 |title|Title|String(239)|Yes|
-|text\_id|Info tab contents|FK [text](./text.mdx)|Yes|
-|position\_idx|Link to Position list|FK [PersPos](./perspos.mdx)|Yes|
+|text\_id|Info tab contents|FK [text](./text)|Yes|
+|position\_idx|Link to Position list|FK [PersPos](./perspos)|Yes|
 |year\_of\_birth|Birth year (4 digit), 0 if not specifed|UShort|Yes|
 |month\_of\_birth|Birth month (1-12), 0 if not specified|UShort|Yes|
 |day\_of\_birth|Birth date (day of month), 0 if not specified|UShort|Yes|
 |phone\_present|flag to show there are phone registrations |UShort|Yes|
-|userdef\_id|User defined table record 1|FK [udpersonSmall](./udpersonsmall.mdx)|Yes|
+|userdef\_id|User defined table record 1|FK [udpersonSmall](./udpersonsmall)|Yes|
 |registered|Registered date|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated date|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |person\_number|Alphanumeric user field|String(49)|Yes|
 |kanalname|Kana last name, used in Japanese versions only|String(99)|Yes|
 |kanafname|Kana last name, used in Japanese versions only|String(99)|Yes|
@@ -44,8 +44,8 @@ Persons
 |middleName|Middle name or &apos;van&apos; etc.|String(99)|Yes|
 |source|How did we get this person? For future integration needs|UShort|Yes|
 |nomailing|Do not send DM&apos;s to this person|Bool|Yes|
-|country\_id|Country|FK [country](./country.mdx)|No|
-|userdef2\_id|User defined table record 2|FK [udpersonLarge](./udpersonlarge.mdx)|Yes|
+|country\_id|Country|FK [country](./country)|No|
+|userdef2\_id|User defined table record 2|FK [udpersonLarge](./udpersonlarge)|Yes|
 |retired|1 = the user is retired and should have no rights, not appear in lists, etc.|UShort|Yes|
 |activeInterests|Number of records in pintr table; select count(*) from pintr pi where pi.person_id = this.person_id == activeInterests is always true|UShort|Yes|
 |updatedCount|Number of times updated|UShort|No|
@@ -54,26 +54,26 @@ Persons
 |salutation|Academic title, populated from Salutation list but can be overwritten with anything at all|String(239)|Yes|
 |department|Internal department address|String(254)|Yes|
 |initials|Where Pierre van Mever becomes P. van Mever.  Actually, initials to be used in formal addresses, mostly in the Ducth market|String(63)|Yes|
-|gender|Male/female. No jokes please.  To be used for selecting correct salutations &amp; grammar. 0 = unknown, 1 = female, 2 = male|Enum [PersonGender](./enums/persongender.mdx)|Yes|
-|business\_idx|Business if this is a B2C person, otherwise mirror of contact.business_idx|FK [Business](./business.mdx)|No|
-|category\_idx|Category if this is a B2C person, otherwise mirror of contact.category_idx|FK [Category](./category.mdx)|No|
-|tzLocationId|Default timezone location for this person|FK [TZLocation](./tzlocation.mdx)|Yes|
+|gender|Male/female. No jokes please.  To be used for selecting correct salutations &amp; grammar. 0 = unknown, 1 = female, 2 = male|Enum [PersonGender](./enums/persongender)|Yes|
+|business\_idx|Business if this is a B2C person, otherwise mirror of contact.business_idx|FK [Business](./business)|No|
+|category\_idx|Category if this is a B2C person, otherwise mirror of contact.category_idx|FK [Category](./category)|No|
+|tzLocationId|Default timezone location for this person|FK [TZLocation](./tzlocation)|Yes|
 |sentInfo|Has information on username/password been sent (ejournal)|UShort|Yes|
 |showContactTickets|Should tickets related to the company be shown to this person|UShort|Yes|
-|ticketPriorityId|Default ticket priority for new tickets|FK [ticket_priority](./ticket-priority.mdx)|Yes|
-|supportLanguageId|Customers language (does not necessarily map to ISO languages)|FK [cust_lang](./cust-lang.mdx)|Yes|
-|supportAssociateId|Our contact, but for support context, not sales/primary contact|FK [associate](./associate.mdx)|Yes|
-|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent.mdx)|Yes|
+|ticketPriorityId|Default ticket priority for new tickets|FK [ticket_priority](./ticket-priority)|Yes|
+|supportLanguageId|Customers language (does not necessarily map to ISO languages)|FK [cust_lang](./cust-lang)|Yes|
+|supportAssociateId|Our contact, but for support context, not sales/primary contact|FK [associate](./associate)|Yes|
+|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent)|Yes|
 |dbi\_key|The primary key for the integrated entry in the external datasource.|String(255)|Yes|
 |dbi\_last\_syncronized|Last external syncronization.|DateTime|Yes|
 |dbi\_last\_modified|When the entry was last modified.|DateTime|Yes|
 |blockEmarketing|Do not send E-marketing materials to this person|Bool|Yes|
 |activeErpLinks|The number of Erp Sync connections this record is synced with; count of the ErpExternalKey+ErpInternalKey relations|Int|Yes|
 |DeletedDate|Datetime (utc) when this record was soft-deleted; if this value is set then the record should not be shown|UtcDateTime|Yes|
-|created\_by\_form\_id|The form this person was created by|FK [form](./form.mdx)|Yes|
-|modified\_by\_workflow\_id|The workflow this person last was modified by|FK [workflow](./workflow.mdx)|Yes|
+|created\_by\_form\_id|The form this person was created by|FK [form](./form)|Yes|
+|modified\_by\_workflow\_id|The workflow this person last was modified by|FK [workflow](./workflow)|Yes|
 |modified\_by\_workflow\_when|When the workflow modified this person|UtcDateTime|Yes|
-|leadstatus\_id|Refinement of categories of lead type. Empty if the category is not a lead type. If this person has a contact, the leadstatus is from the contact and not editable on the person|FK [leadstatus](./leadstatus.mdx)|Yes|
+|leadstatus\_id|Refinement of categories of lead type. Empty if the category is not a lead type. If this person has a contact, the leadstatus is from the contact and not editable on the person|FK [leadstatus](./leadstatus)|Yes|
 
 
 ![person table relationship diagram](/media/loc/en/database/tables/person.png)

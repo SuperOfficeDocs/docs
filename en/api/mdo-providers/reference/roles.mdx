@@ -1,13 +1,12 @@
 ---
-title: roles
+title: "roles"
 keywords: mdoprovider mdo provider roles
-description: RoleListProvider creates a MDO list of roles in the database. Default list are the employee roles. Use ExtraInfo to get other RoleTypes. ExtraInfo - "0" Default, to get employee roles ExtraInfo - "1" to get external users roles ExtraInfo - "2" to get anonymous roles. ExtraInfo - "3" to get system user roles.
+description: "RoleListProvider creates a MDO list of roles in the database. Default list are the employee roles. Use ExtraInfo to get other RoleTypes. ExtraInfo : \"0\" Default, to get employee roles ExtraInfo : \"1\" to get external users roles ExtraInfo : \"2\" to get anonymous roles. ExtraInfo : \"3\" to get system user roles."
 generated: true
 content_type: reference
 envir: online
 ---
 
-## "roles" MDO List
 RoleListProvider creates a MDO list of roles in the database.
 Default list are the employee roles.
 Use ExtraInfo to get other RoleTypes.
@@ -16,19 +15,16 @@ ExtraInfo : "1" to get external users roles
 ExtraInfo : "2" to get anonymous roles.
 ExtraInfo : "3" to get system user roles.
 
-
-
-Implemented by the RolesListProvider class.
+Implemented by the `SuperOffice.CRM.Lists.RolesListProvider` class.
 The name of the MDO list is 'roles'.
 
 ## Additional Attributes
 
 | Description | Name | Example Value |
 |-----|-----|------|
-|Role type (0=employees, 1=ext users, 2=anon, 3=system)| |0|
+|Role type (0=employees, 1=ext users, 2=anon, 3=system)| 0||
 
 Separator: ;
-
 
 
 
@@ -73,10 +69,10 @@ foreach (var item in listProvider.RootItems) {
 
 ## Related MDO Lists
 
-* "rolesheadings"
-* "rolesheadingswithallitem"
-* "rolesheadingswithallitemwithnoselection"
-* "rolesheadingswithnoselection"
-* "roleswithallitem"
-* "roleswithallitemwithnoselection"
-* "roleswithnoselection"
+* `rolesheadings`
+* `rolesheadingswithallitem`
+* `rolesheadingswithallitemwithnoselection`
+* `rolesheadingswithnoselection`
+* `roleswithallitem`
+* `roleswithallitemwithnoselection`
+* `roleswithnoselection`

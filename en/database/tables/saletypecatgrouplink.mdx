@@ -1,6 +1,6 @@
 ---
-title: SaleTypeCatGroupLink table
-description: User group link table for SaleTypeCat, for MDO item hiding
+title: "SaleTypeCatGroupLink table"
+description: "User group link table for SaleTypeCat, for MDO item hiding"
 generated: true
 content_type: reference
 envir: online
@@ -8,21 +8,21 @@ envir: online
 
 import Saletypecatgrouplink from "./includes/saletypecatgrouplink.mdx";
 
-## SaleTypeCatGroupLink Table (119)
-
 User group link table for SaleTypeCat, for MDO item hiding
+
+Table number: 119
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |saletypecatgrouplink\_id|Primary key|PK|No|
-|saletypecat\_id|Link to SaleTypeCat list table|FK [SaleTypeCat](./saletypecat.mdx)|No|
-|group\_id|Link to Group table|FK [UserGroup](./usergroup.mdx)|No|
+|saletypecat\_id|Link to SaleTypeCat list table|FK [SaleTypeCat](./saletypecat)|No|
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

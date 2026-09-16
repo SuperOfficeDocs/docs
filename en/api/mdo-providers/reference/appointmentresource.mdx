@@ -1,18 +1,13 @@
 ---
-title: appointmentresource
+title: "appointmentresource"
 keywords: mdoprovider mdo provider appointmentresource
-description: 
+description: ""
 generated: true
 content_type: reference
 envir: online
 ---
 
-## "appointmentresource" MDO List
-
-
-
-
-Implemented by the AppointmentResource class.
+Implemented by the `SuperOffice.CRM.Lists.AppointmentResource` class.
 The name of the MDO list is 'appointmentresource'.
 
 ## Additional Attributes
@@ -20,11 +15,10 @@ The name of the MDO list is 'appointmentresource'.
 | Description | Name | Example Value |
 |-----|-----|------|
 |Removes resources with conflicts. Requires start and end times for conflict, either explicitly set or from appointment_id.| remove_conflicts|False|
-|Conflict datetime start.| |conflict_start|
-|Conflict datetime end.| |conflict_end|
-|Conflict datetimes are in UTC time.| |conflict_utc|
-|Appointment id used for conflict resolution. Preferentially used to determine conflict start/end.| |appointment_id|
-
+|Conflict datetime start.| conflict_start||
+|Conflict datetime end.| conflict_end||
+|Conflict datetimes are in UTC time.| conflict_utc||
+|Appointment id used for conflict resolution. Preferentially used to determine conflict start/end.| appointment_id||
 
 
 
@@ -67,10 +61,10 @@ foreach (var item in listProvider.RootItems) {
 
 ## Related MDO Lists
 
-* "appointmentresourceheadings"
-* "appointmentresourceheadingswithallitem"
-* "appointmentresourceheadingswithallitemwithnoselection"
-* "appointmentresourceheadingswithnoselection"
-* "appointmentresourcewithallitem"
-* "appointmentresourcewithallitemwithnoselection"
-* "appointmentresourcewithnoselection"
+* `appointmentresourceheadings`
+* `appointmentresourceheadingswithallitem`
+* `appointmentresourceheadingswithallitemwithnoselection`
+* `appointmentresourceheadingswithnoselection`
+* `appointmentresourcewithallitem`
+* `appointmentresourcewithallitemwithnoselection`
+* `appointmentresourcewithnoselection`

@@ -1,6 +1,6 @@
 ---
-title: screen_chooser table
-description: Screen choosers
+title: "screen_chooser table"
+description: "Screen choosers"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import ScreenChooser from "./includes/screen-chooser.mdx";
 
-## screen\_chooser Table (375)
-
 Screen choosers
+
+Table number: 375
 
 ## Fields
 
@@ -24,11 +24,11 @@ Screen choosers
 |enabled|Whether this screen chooser is enabled or not|Bool|Yes|
 |unique\_identifier|Global unique identifier, accross customers/tenants|String(64)|No|
 |registered|Registered when|UtcDateTime|Yes|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|Yes|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|Yes|
 |updated|Last updated when|UtcDateTime|Yes|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|Yes|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|Yes|
 |updatedCount|Number of updates made to this record|UShort|No|
-|ejscript\_id|The ejscript row containing the TypeScript for this trigger|FK [ejscript](./ejscript.mdx)|Yes|
+|ejscript\_id|The ejscript row containing the TypeScript for this trigger|FK [ejscript](./ejscript)|Yes|
 
 
 ![screen_chooser table relationship diagram](/media/loc/en/database/tables/screen_chooser.png)

@@ -1,6 +1,6 @@
 ---
-title: cust_category table
-description: This table contains entries for categories exposed through a customer language.
+title: "cust_category table"
+description: "This table contains entries for categories exposed through a customer language."
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import CustCategory from "./includes/cust-category.mdx";
 
-## cust\_category Table (321)
-
 This table contains entries for categories exposed through a customer language.
+
+Table number: 321
 
 ## Fields
 
@@ -18,9 +18,9 @@ This table contains entries for categories exposed through a customer language.
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
 |name|The external name for this category.|String(255)|Yes|
-|language\_id|The reference to the associated customer language.|FK [cust_lang](./cust-lang.mdx)|Yes|
-|category\_id|The reference to the associated category.|FK [ej_category](./ej-category.mdx)|Yes|
-|parent\_id|The parent category for this cust_category. -1 if this is a toplevel cust_category.|FK [cust_category](./cust-category.mdx)|Yes|
+|language\_id|The reference to the associated customer language.|FK [cust_lang](./cust-lang)|Yes|
+|category\_id|The reference to the associated category.|FK [ej_category](./ej-category)|Yes|
+|parent\_id|The parent category for this cust_category. -1 if this is a toplevel cust_category.|FK [cust_category](./cust-category)|Yes|
 |fullname|The fullname (compiled from parents&amp;apos; names) for this category. E.g. &amp;apos;norway/product A/support&amp;apos;.|String(255)|Yes|
 
 

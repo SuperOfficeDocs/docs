@@ -1,15 +1,13 @@
 ---
-title: SelectionMemberStatic
-description: Provider for the Selection Member table
+title: "SelectionMemberStatic"
+description: "Provider for the Selection Member table"
 keywords: SelectionMemberStatic archive provider
 generated: true
 content_type: reference
 envir: onsite, online
 ---
 
-## "SelectionMemberStatic"
-
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SelectionMemberStaticProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.SelectionMemberStaticProvider` inside NetServer's SODatabase assembly.
 
 Provider for the Selection Member table
 
@@ -24,25 +22,25 @@ It will only return fields from the SelectionMember table.
 ## Supported Columns
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|contactId|int|Company ID: Database ID of company| x |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
+|personId|int|Contact ID: Database ID of the contact row| x |
+|rowKind| *None* |Icon indicating whether the row comes from a static or a dynamic selection|  |
 |selectionId|int|Selection ID: The database ID of the selection|  |
 |selectionMemberId|int|Selection member ID: The database ID of the selection member record|  |
-|rowKind| *None* |Icon indicating whether the row comes from a static or a dynamic selection|  |
-|targetTableNumber|int|TargetTableNumber: TargetTableNumber| x |
 |targetRecordId|int|TargetRecordId: TargetRecordId| x |
-|contactId|int|Company ID: Database ID of company| x |
-|personId|int|Contact ID: Database ID of the contact row| x |
+|targetTableNumber|int|TargetTableNumber: TargetTableNumber| x |
 
 ## Sample
 
 ```http!
-GET /api/v1/archive/SelectionMemberStatic?$select=selectionMemberId,rowKind
+GET /api/v1/archive/SelectionMemberStatic?$select=contactId,personId,rowKind,selectionId,targetTableNumber
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: `IArchiveAgent`.
 

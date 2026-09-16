@@ -1,6 +1,6 @@
 ---
-title: form table
-description: A form which can be published on a webpage and submitted by visitors
+title: "form table"
+description: "A form which can be published on a webpage and submitted by visitors"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Form from "./includes/form.mdx";
 
-## form Table (488)
-
 A form which can be published on a webpage and submitted by visitors
+
+Table number: 488
 
 ## Fields
 
@@ -20,20 +20,20 @@ A form which can be published on a webpage and submitted by visitors
 |name|The name of this form|String(4000)|Yes|
 |description|Detailed description|String(4000)|Yes|
 |config|The JSON-formatted config of this form|Clob|Yes|
-|folder\_id|The folder which this form belongs to. -1 indicates that the shipment is on the root|FK [s_picture_folder](./s-picture-folder.mdx)|No|
-|script\_id|The CRMScript Macro which will be run when the form is submitted.|FK [ejscript](./ejscript.mdx)|No|
-|response\_shipment\_id|The id of the s_shipment that is used to send the response mails|FK [s_shipment](./s-shipment.mdx)|No|
+|folder\_id|The folder which this form belongs to. -1 indicates that the shipment is on the root|FK [s_picture_folder](./s-picture-folder)|No|
+|script\_id|The CRMScript Macro which will be run when the form is submitted.|FK [ejscript](./ejscript)|No|
+|response\_shipment\_id|The id of the s_shipment that is used to send the response mails|FK [s_shipment](./s-shipment)|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 |active|Indicates if this form is active and available for customers|Bool|Yes|
 |expires|After this datetime, the form will become inactive|DateTime|Yes|
 |maxSubmits|After this number of submits, the form will become inactive|Int|Yes|
-|type|What kind of form is this? Indicates if this is a normal form or a template|Enum [FormType](./enums/formtype.mdx)|No|
+|type|What kind of form is this? Indicates if this is a normal form or a template|Enum [FormType](./enums/formtype)|No|
 |recipe|The JSON-formatted recipe of this form|Clob|Yes|
-|group\_id|The group which this form belongs to.|FK [UserGroup](./usergroup.mdx)|No|
+|group\_id|The group which this form belongs to.|FK [UserGroup](./usergroup)|No|
 |form\_key|A short string used as unique id to access this form|String(32)|Yes|
 |new\_ticket|True if this form creates a new ticket|Bool|Yes|
 

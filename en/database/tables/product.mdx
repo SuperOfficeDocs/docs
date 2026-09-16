@@ -1,6 +1,6 @@
 ---
-title: Product table
-description: One Product, member of one price list
+title: "Product table"
+description: "One Product, member of one price list"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Product from "./includes/product.mdx";
 
-## Product Table (129)
-
 One Product, member of one price list
+
+Table number: 129
 
 ## Fields
 
@@ -18,7 +18,7 @@ One Product, member of one price list
 |------|-------------|------|:----:|
 |product\_id|Primary key|PK|No|
 |ERPProductKey|Reference/foreign key to the product in the given pricelist in the product supplier system, if it exists there.|String(254)|Yes|
-|PriceListId|Foreign key to the price list that this product is a part of.|FK [PriceList](./pricelist.mdx)|Yes|
+|PriceListId|Foreign key to the price list that this product is a part of.|FK [PriceList](./pricelist)|Yes|
 |Name|The name to use in the user interface.|String(254)|Yes|
 |Description|The description to use, with potentially several lines. Will be used as tool-tip to use in the list user interface too.|String(2047)|Yes|
 |Code|The product code / article number in the product supplier system.|String(254)|Yes|
@@ -49,9 +49,9 @@ One Product, member of one price list
 |extraField4|This a simple field for adding information that the Connector can provide, and that the qoute document need to display.|String(1023)|Yes|
 |extraField5|This a simple field for adding information that the Connector can provide, and that the qoute document need to display.|String(1023)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

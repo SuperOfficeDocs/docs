@@ -1,6 +1,6 @@
 ---
-title: target_revision table
-description: One batch of changes made to targets
+title: "target_revision table"
+description: "One batch of changes made to targets"
 generated: true
 content_type: reference
 envir: online
@@ -8,22 +8,22 @@ envir: online
 
 import TargetRevision from "./includes/target-revision.mdx";
 
-## target\_revision Table (520)
-
 One batch of changes made to targets
+
+Table number: 521
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |target\_revision\_id|Primary key|PK|No|
-|target\_revision\_history\_id|Info about the target group this history is for|FK [target_revision_history](./target-revision-history.mdx)|Yes|
-|assignment\_info\_id|The assignment info id - but it may have been deleted|FK [target_assignment_info](./target-assignment-info.mdx)|Yes|
-|log\_event|Log event class (create, edit, delete, lock, unlock...|Enum [LogEvent](./enums/logevent.mdx)|Yes|
+|target\_revision\_history\_id|Info about the target group this history is for|FK [target_revision_history](./target-revision-history)|Yes|
+|assignment\_info\_id|The assignment info id - but it may have been deleted|FK [target_assignment_info](./target-assignment-info)|Yes|
+|log\_event|Log event class (create, edit, delete, lock, unlock...|Enum [LogEvent](./enums/logevent)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

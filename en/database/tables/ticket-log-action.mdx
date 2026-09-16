@@ -1,6 +1,6 @@
 ---
-title: ticket_log_action table
-description: This table contains actions for the tickets.
+title: "ticket_log_action table"
+description: "This table contains actions for the tickets."
 generated: true
 content_type: reference
 envir: online
@@ -8,22 +8,22 @@ envir: online
 
 import TicketLogAction from "./includes/ticket-log-action.mdx";
 
-## ticket\_log\_action Table (269)
-
 This table contains actions for the tickets.
+
+Table number: 269
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|ticket\_id|The id of the ticket this entry is connected to.|FK [ticket](./ticket.mdx)|No|
-|org\_ticket\_id|The id of the orignal ticket this entry was connected to.|FK [ticket](./ticket.mdx)|No|
-|message\_id|If this entry is connected to a message, then this is a message change log entry.|FK [ej_message](./ej-message.mdx)|No|
-|user\_id|The id of the user this entry is connected to.|FK [ejuser](./ejuser.mdx)|No|
-|customer\_id|The id of the customer this entry is connected to.|FK [person](./person.mdx)|No|
+|ticket\_id|The id of the ticket this entry is connected to.|FK [ticket](./ticket)|No|
+|org\_ticket\_id|The id of the orignal ticket this entry was connected to.|FK [ticket](./ticket)|No|
+|message\_id|If this entry is connected to a message, then this is a message change log entry.|FK [ej_message](./ej-message)|No|
+|user\_id|The id of the user this entry is connected to.|FK [ejuser](./ejuser)|No|
+|customer\_id|The id of the customer this entry is connected to.|FK [person](./person)|No|
 |log\_when|When the action occured.|DateTime|Yes|
-|log\_action|An enum indicating what kind of log-entry this is.|Enum [TicketLogAction](./enums/ticketlogaction.mdx)|Yes|
+|log\_action|An enum indicating what kind of log-entry this is.|Enum [TicketLogAction](./enums/ticketlogaction)|Yes|
 |description|Action description, only used by customer actions like ejscript|String(255)|No|
 |details|Field for storing details of the log action as e.g. JSON|Clob|Yes|
 

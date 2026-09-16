@@ -1,13 +1,12 @@
 ---
-title: selection_freetextsearch
+title: "selection_freetextsearch"
 keywords: mdoprovider mdo provider selection_freetextsearch
-description: Provider for selecting a Selection. Does keyword matching and scoring across multiple string fields. Checks name, description, soundex fields.
+description: "Provider for selecting a Selection. Does keyword matching and scoring across multiple string fields. Checks name, description, soundex fields."
 generated: true
 content_type: reference
 envir: online
 ---
 
-## "selection_freetextsearch" MDO List
 Provider for selecting a Selection.
 Does keyword matching and scoring across multiple
 string fields. Checks name, description, soundex fields.
@@ -16,16 +15,15 @@ User's own selections, recently added + modified selections, selections modified
 Matches on word boundaries or at start of field are scored extra highly.
 
 
+
 Returns selection items only: Id = selection-id, Name = Selection name, Type = "Selection", IconHint="deleted_item", ExtraInfo= static/dynamic
+
 
 
 Completed/Done selections are marked with stylehint = "deleted_item" (but item.deleted = false)
 
-Implemented by the SelectionListFreetextSearchProvider class.
+Implemented by the `SuperOffice.CRM.Lists.SelectionListFreetextSearchProvider` class.
 The name of the MDO list is 'selection_freetextsearch'.
-
-
-
 
 ## Sample Request
 
@@ -75,10 +73,10 @@ foreach (var item in listProvider.RootItems) {
 
 ## Related MDO Lists
 
-* "selection_freetextsearchheadings"
-* "selection_freetextsearchheadingswithallitem"
-* "selection_freetextsearchheadingswithallitemwithnoselection"
-* "selection_freetextsearchheadingswithnoselection"
-* "selection_freetextsearchwithallitem"
-* "selection_freetextsearchwithallitemwithnoselection"
-* "selection_freetextsearchwithnoselection"
+* `selection_freetextsearchheadings`
+* `selection_freetextsearchheadingswithallitem`
+* `selection_freetextsearchheadingswithallitemwithnoselection`
+* `selection_freetextsearchheadingswithnoselection`
+* `selection_freetextsearchwithallitem`
+* `selection_freetextsearchwithallitemwithnoselection`
+* `selection_freetextsearchwithnoselection`

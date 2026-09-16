@@ -1,6 +1,6 @@
 ---
-title: Quote table
-description: Quote root level, at most one per Sale, always connected to one Sale
+title: "Quote table"
+description: "Quote root level, at most one per Sale, always connected to one Sale"
 generated: true
 content_type: reference
 envir: online
@@ -8,30 +8,30 @@ envir: online
 
 import Quote from "./includes/quote.mdx";
 
-## Quote Table (34)
-
 Quote root level, at most one per Sale, always connected to one Sale
+
+Table number: 34
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |quote\_id|Primary key|PK|No|
-|SaleId|The foreign key to the corresponding sale|FK [sale](./sale.mdx)|Yes|
-|QuoteConnectionId|The connection in the CRM system to where this quote came from. Identifies the ERP connection used for this quote. Each quote is bound to one and only one connection.|FK [QuoteConnection](./quoteconnection.mdx)|Yes|
+|SaleId|The foreign key to the corresponding sale|FK [sale](./sale)|Yes|
+|QuoteConnectionId|The connection in the CRM system to where this quote came from. Identifies the ERP connection used for this quote. Each quote is bound to one and only one connection.|FK [QuoteConnection](./quoteconnection)|Yes|
 |ERPQuoteKey|Foreign key of quote (if available). The key in the ERP system that identifies this sale&apos;s Quote (as opposed to the later Order information)|String(254)|Yes|
 |ERPOrderKey|The key in the ERP system that identifies this sale&apos;s Order, as transferred and possibly later edited in the ERP system.  Only filled out if there exists a corresponding order representation of the quote in the ERP system.|String(254)|Yes|
-|ActiveQuoteVersionId|The primary key of the Quote Version that is currently active. (The active version will always be the latest version.)|FK [QuoteVersion](./quoteversion.mdx)|Yes|
-|AcceptedQuoteAlternativeId|The primary key of the Quote Alternative which was finally accepted by the customer. Set when the user is marking a quote as accepted.|FK [QuoteAlternative](./quotealternative.mdx)|Yes|
+|ActiveQuoteVersionId|The primary key of the Quote Version that is currently active. (The active version will always be the latest version.)|FK [QuoteVersion](./quoteversion)|Yes|
+|AcceptedQuoteAlternativeId|The primary key of the Quote Alternative which was finally accepted by the customer. Set when the user is marking a quote as accepted.|FK [QuoteAlternative](./quotealternative)|Yes|
 |UseValuesFromQuote|If true, then the Earning, Earning_Percent and Amount fields are populated from the QuoteVersion.QuoteAlternative (current revision, most-likely alternative).|Bool|Yes|
-|DocumentId|The ID of the main Quote Document|FK [document](./document.mdx)|Yes|
+|DocumentId|The ID of the main Quote Document|FK [document](./document)|Yes|
 |PreferredEmailCulture|When emails are sent (offer or confirmation), a language can be chosen in the GUI; this field saves the most recent choice and can be used to default the next such choice. Default-default is user&apos;s current language|String(19)|Yes|
 |PoNumber|Customer&apos;s Purchase order number|String(127)|Yes|
 |OrderComment|A comment that is intended for the Invoice, Order, Packing list and similar stages - AFTER the quote has become an order and goes to ERP for processing|String(2046)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

@@ -1,6 +1,6 @@
 ---
-title: TZDstRule table
-description: Time zone rule for daylight saving time
+title: "TZDstRule table"
+description: "Time zone rule for daylight saving time"
 generated: true
 content_type: reference
 envir: online
@@ -8,16 +8,16 @@ envir: online
 
 import Tzdstrule from "./includes/tzdstrule.mdx";
 
-## TZDstRule Table (247)
-
 Time zone rule for daylight saving time
+
+Table number: 247
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |TZDstRule\_id|Primary key|PK|No|
-|TZLocationId|Location that this rule is valid for - one location may have one or more rules; multiple rules are discerned by their validFrom dates|FK [TZLocation](./tzlocation.mdx)|No|
+|TZLocationId|Location that this rule is valid for - one location may have one or more rules; multiple rules are discerned by their validFrom dates|FK [TZLocation](./tzlocation)|No|
 |validFrom|Date this rule is valid from|DateTime|No|
 |bias|number of minutes bias relative to UTC time|Short|No|
 |startRule|DST start rule, such as 0200 1ST-SUN-APR; limited to rules that we have parse code for; use dayOfMonth etc for custom rules|String(254)|Yes|
@@ -29,9 +29,9 @@ Time zone rule for daylight saving time
 |description|Description, for identifying the rule in SoAdmin|String(2047)|Yes|
 |isBuiltIn|Is this row part of SuperOffice priming data|Bool|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

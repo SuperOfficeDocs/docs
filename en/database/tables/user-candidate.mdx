@@ -1,6 +1,6 @@
 ---
-title: user_candidate table
-description: This table will hold user candidate secrets
+title: "user_candidate table"
+description: "This table will hold user candidate secrets"
 generated: true
 content_type: reference
 envir: online
@@ -8,16 +8,16 @@ envir: online
 
 import UserCandidate from "./includes/user-candidate.mdx";
 
-## user\_candidate Table (389)
-
 This table will hold user candidate secrets
+
+Table number: 389
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|Primary key|PK|No|
-|person\_id|Foreign key. Id of a person representing Customer Center User.|FK [person](./person.mdx)|No|
+|person\_id|Foreign key. Id of a person representing Customer Center User.|FK [person](./person)|No|
 |secret\_key|Username of a Customer Centre User.|String(255)|Yes|
 |secret\_value|Password of a Customer Centre User.|String(255)|Yes|
 

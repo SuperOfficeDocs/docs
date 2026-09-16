@@ -1,6 +1,6 @@
 ---
-title: screen_definition_action table
-description: An action to perform for a certain button in an screen
+title: "screen_definition_action table"
+description: "An action to perform for a certain button in an screen"
 generated: true
 content_type: reference
 envir: online
@@ -8,18 +8,18 @@ envir: online
 
 import ScreenDefinitionAction from "./includes/screen-definition-action.mdx";
 
-## screen\_definition\_action Table (371)
-
 An action to perform for a certain button in an screen
+
+Table number: 371
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|Primary key|PK|No|
-|screen\_definition|The screen-definition this element belongs to|FK [screen_definition](./screen-definition.mdx)|Yes|
+|screen\_definition|The screen-definition this element belongs to|FK [screen_definition](./screen-definition)|Yes|
 |button|The name of the button triggering this action|String(255)|Yes|
-|ejscript|Deprecated. The ejscript to execute if this is a form which is posted|FK [ejscript](./ejscript.mdx)|Yes|
+|ejscript|Deprecated. The ejscript to execute if this is a form which is posted|FK [ejscript](./ejscript)|Yes|
 |ejscript\_body|The script to execute for this button/action|Clob|Yes|
 |do\_check|If set, then run check() before executing button (making sure values in form fields are ok)|Bool|Yes|
 

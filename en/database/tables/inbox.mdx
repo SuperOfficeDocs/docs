@@ -1,6 +1,6 @@
 ---
-title: inbox table
-description: Info and status for safe email import
+title: "inbox table"
+description: "Info and status for safe email import"
 generated: true
 content_type: reference
 envir: online
@@ -8,17 +8,17 @@ envir: online
 
 import Inbox from "./includes/inbox.mdx";
 
-## inbox Table (352)
-
 Info and status for safe email import
+
+Table number: 352
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|Primary key|PK|No|
-|mail\_in\_filter|A reference to the id of the mail box|FK [mail_in_filter](./mail-in-filter.mdx)|No|
-|locking\_id|A reference to the id of lock|FK [locking](./locking.mdx)|No|
+|mail\_in\_filter|A reference to the id of the mail box|FK [mail_in_filter](./mail-in-filter)|No|
+|locking\_id|A reference to the id of lock|FK [locking](./locking)|No|
 |uidl|The uidl of the message. Stored before the retrieval starts to prevent double import. For locking purposes|String(2047)|Yes|
 |created|When the mail was created|DateTime|Yes|
 |imported|When the mail was imported|DateTime|No|

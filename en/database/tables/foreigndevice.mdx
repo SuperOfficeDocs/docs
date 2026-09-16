@@ -1,6 +1,6 @@
 ---
-title: foreigndevice table
-description: Middle level of Foreign Key system
+title: "foreigndevice table"
+description: "Middle level of Foreign Key system"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Foreigndevice from "./includes/foreigndevice.mdx";
 
-## foreigndevice Table (182)
-
 Middle level of Foreign Key system
+
+Table number: 182
 
 ## Fields
 
@@ -19,14 +19,14 @@ Middle level of Foreign Key system
 |foreigndevice\_id|Primary key|PK|No|
 |name|Name of device|String(31)|No|
 |device\_id|Optional unique id of device (Palm pilot device ID, etc)|String(239)|Yes|
-|foreignapp\_id|Reference to foregin application (device type)|FK [foreignapp](./foreignapp.mdx)|No|
-|owner\_id|Reference to SO user owning this device|FK [associate](./associate.mdx)|No|
+|foreignapp\_id|Reference to foregin application (device type)|FK [foreignapp](./foreignapp)|No|
+|owner\_id|Reference to SO user owning this device|FK [associate](./associate)|No|
 |lastsynced|Last sync date|DateTime|Yes|
 |lastsynced\_trans|Last sync traveltransactionlog id number|DateTime|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

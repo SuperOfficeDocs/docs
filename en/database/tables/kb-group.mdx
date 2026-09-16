@@ -1,6 +1,6 @@
 ---
-title: kb_group table
-description: This table contains FAQ groups. A group is a cluster of entries (potentially located anywhere in the FAQ hierarchy). A group is located in a certain category.
+title: "kb_group table"
+description: "This table contains FAQ groups. A group is a cluster of entries (potentially located anywhere in the FAQ hierarchy). A group is located in a certain category."
 generated: true
 content_type: reference
 envir: online
@@ -8,22 +8,22 @@ envir: online
 
 import KbGroup from "./includes/kb-group.mdx";
 
-## kb\_group Table (286)
-
 This table contains FAQ groups. A group is a cluster of entries (potentially located anywhere in the FAQ hierarchy). A group is located in a certain category.
+
+Table number: 286
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|kb\_category\_id|The id of the kb_category in which this group is located.|FK [kb_category](./kb-category.mdx)|No|
+|kb\_category\_id|The id of the kb_category in which this group is located.|FK [kb_category](./kb-category)|No|
 |description|The description for this group.|Clob|Yes|
-|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent.mdx)|No|
+|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent)|No|
 |dbi\_key|The primary key for the integrated entry in the external datasource.|String(255)|No|
 |dbi\_last\_syncronized|Last external syncronization.|DateTime|No|
 |dbi\_last\_modified|When the entry was last modified.|DateTime|No|
-|parent\_id|The parent group for this group. -1 if this is a toplevel group.|FK [ej_category](./ej-category.mdx)|No|
+|parent\_id|The parent group for this group. -1 if this is a toplevel group.|FK [ej_category](./ej-category)|No|
 
 
 ![kb_group table relationship diagram](/media/loc/en/database/tables/kb_group.png)

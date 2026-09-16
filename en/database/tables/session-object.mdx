@@ -1,6 +1,6 @@
 ---
-title: session_object table
-description: Generic session object, accessible from ejscript etc, typically xml or name=value syntax, may be stored over several rows if big
+title: "session_object table"
+description: "Generic session object, accessible from ejscript etc, typically xml or name=value syntax, may be stored over several rows if big"
 generated: true
 content_type: reference
 envir: online
@@ -8,16 +8,16 @@ envir: online
 
 import SessionObject from "./includes/session-object.mdx";
 
-## session\_object Table (254)
-
 Generic session object, accessible from ejscript etc, typically xml or name=value syntax, may be stored over several rows if big
+
+Table number: 254
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|login\_id|The id of the login session owning this session object|FK [login](./login.mdx)|No|
+|login\_id|The id of the login session owning this session object|FK [login](./login)|No|
 |name|A unique name for the entry|String(255)|No|
 |part|Part number used to concatinate long values|Int|No|
 |value|The object value|Clob|Yes|

@@ -1,6 +1,6 @@
 ---
-title: copilot_data_source_setting table
-description: Stores specific configuration values for each data source
+title: "copilot_data_source_setting table"
+description: "Stores specific configuration values for each data source"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import CopilotDataSourceSetting from "./includes/copilot-data-source-setting.mdx";
 
-## copilot\_data\_source\_setting Table (475)
-
 Stores specific configuration values for each data source
+
+Table number: 475
 
 ## Fields
 
@@ -19,11 +19,11 @@ Stores specific configuration values for each data source
 |copilot\_data\_source\_setting\_id|Primary key|PK|No|
 |key|The key of data source setting|String(100)|No|
 |value|The value of data source setting|String(4000)|No|
-|copilot\_data\_source\_id|The associated copilot data source|FK [copilot_data_source](./copilot-data-source.mdx)|No|
+|copilot\_data\_source\_id|The associated copilot data source|FK [copilot_data_source](./copilot-data-source)|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

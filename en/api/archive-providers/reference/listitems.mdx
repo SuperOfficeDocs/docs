@@ -1,15 +1,13 @@
 ---
-title: ListItems
-description: Archive provider for the list of ListItems
+title: "ListItems"
+description: "Archive provider for the list of ListItems"
 keywords: ListItems archive provider
 generated: true
 content_type: reference
 envir: onsite, online
 ---
 
-## "ListItems"
-
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.ListItemsProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.ListItemsProvider` inside NetServer's SODatabase assembly.
 
 Archive provider for the list of ListItems
 
@@ -24,26 +22,26 @@ Archive provider for the list of ListItems
 | ---- | ----- | ------- | ------ |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
-|udlistDefinitionId|int|UDListDefinitionId|  |
-|listItemsId|int|ID: ID|  |
-|listItemsName|string|Full name: Name|  |
-|listItemsRank|int|Rank: Rank|  |
-|listItemsTooltip|string|Description: Description|  |
 |listItemsDeleted|int|Deleted: Deleted|  |
-|listItemsLocation|bool|Location: Location|  |
-|listItemsProbability|int|Probability: Probability|  |
-|listItemsRecordType|int|Record type : Shows the record type|  |
 |listItemsEmailTemplateType| *None* |Template type: Shows the template type|  |
+|listItemsId|int|ID: ID|  |
+|listItemsLocation|bool|Location: Location|  |
+|listItemsName|string|Full name: Name|  |
+|listItemsProbability|int|Probability: Probability|  |
+|listItemsRank|int|Rank: Rank|  |
+|listItemsRecordType|int|Record type : Shows the record type|  |
+|listItemsTooltip|string|Description: Description|  |
+|udlistDefinitionId|int|UDListDefinitionId|  |
 
 ## Sample
 
 ```http!
-GET /api/v1/archive/ListItems?$select=listItemsName,listItemsTooltip
+GET /api/v1/archive/ListItems?$select=listItemsEmailTemplateType,listItemsId,listItemsName,listItemsRank,listItemsTooltip
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: `IArchiveAgent`.
 

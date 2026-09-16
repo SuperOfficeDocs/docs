@@ -1,6 +1,6 @@
 ---
-title: Email table
-description: Email addresses for contacts, projects and persons
+title: "Email table"
+description: "Email addresses for contacts, projects and persons"
 generated: true
 content_type: reference
 envir: online
@@ -8,35 +8,35 @@ envir: online
 
 import Email from "./includes/email.mdx";
 
-## Email Table (55)
-
 Email addresses for contacts, projects and persons
+
+Table number: 55
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |email\_id|Primary key|PK|No|
-|contact\_id|Relations to possible owners|FK [contact](./contact.mdx)|Yes|
-|person\_id|Relations to possible owners|FK [person](./person.mdx)|Yes|
-|project\_id|Relations to possible owners|FK [project](./project.mdx)|Yes|
+|contact\_id|Relations to possible owners|FK [contact](./contact)|Yes|
+|person\_id|Relations to possible owners|FK [person](./person)|Yes|
+|project\_id|Relations to possible owners|FK [project](./project)|Yes|
 |reserved\_id1|Reserved for potential future owners|Id|Yes|
 |reserved\_id2|Reserved for potential future owners|Id|Yes|
 |protocol|SMTP, MSN, Skype, etc|String(11)|Yes|
-|type|0 = email, 1 = chat/instant msg, 2 = voip; see protocol field for more info|Enum [EmailType](./enums/emailtype.mdx)|No|
+|type|0 = email, 1 = chat/instant msg, 2 = voip; see protocol field for more info|Enum [EmailType](./enums/emailtype)|No|
 |description|Visible field|String(254)|No|
 |email\_address|The address itself|String(239)|No|
 |rank|Rank order in lists|UShort|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 |bounceCount|Number of bounces detected|UShort|Yes|
 |lastBounce|When did last bounce happen|DateTime|Yes|
 |lastSent|Last transmission (regardless of success/bounce)|DateTime|Yes|
-|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent.mdx)|Yes|
-|appointment\_id|The id of the invitation appointment record, used when unknown person is associated with an appointment invitation|FK [appointment](./appointment.mdx)|Yes|
+|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent)|Yes|
+|appointment\_id|The id of the invitation appointment record, used when unknown person is associated with an appointment invitation|FK [appointment](./appointment)|Yes|
 |lastBounceCode|If this email address has bounced and we have a bounce code, this field will contain the code for the last bounce|Int|Yes|
 |lastBounceReason|If this email address has bounced and we have a bounce reason, this field will contain the reason for the last bounce|String(4000)|Yes|
 

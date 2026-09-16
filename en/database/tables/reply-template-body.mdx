@@ -1,6 +1,6 @@
 ---
-title: reply_template_body table
-description: Contains the body of the reply templates in different languages
+title: "reply_template_body table"
+description: "Contains the body of the reply templates in different languages"
 generated: true
 content_type: reference
 envir: online
@@ -8,18 +8,18 @@ envir: online
 
 import ReplyTemplateBody from "./includes/reply-template-body.mdx";
 
-## reply\_template\_body Table (279)
-
 Contains the body of the reply templates in different languages
+
+Table number: 279
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|reply\_template\_id|Links the body to a reply template|FK [reply_template](./reply-template.mdx)|No|
-|language\_id|Links the body to a reply template|FK [cust_lang](./cust-lang.mdx)|No|
-|flags|Identifies the status of the template body. Default, not default etc.|Enum [ReplyTemplateBodyFlags](./enums/replytemplatebodyflags.mdx)|No|
+|reply\_template\_id|Links the body to a reply template|FK [reply_template](./reply-template)|No|
+|language\_id|Links the body to a reply template|FK [cust_lang](./cust-lang)|No|
+|flags|Identifies the status of the template body. Default, not default etc.|Enum [ReplyTemplateBodyFlags](./enums/replytemplatebodyflags)|No|
 |body\_plain|The plain text version of the body.|Clob|Yes|
 |body\_html|The html version of the body.|Clob|Yes|
 |subject|Subject of the outgoing message. Ignored if not needed|Clob|Yes|

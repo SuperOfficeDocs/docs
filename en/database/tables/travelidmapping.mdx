@@ -1,6 +1,6 @@
 ---
-title: travelidmapping table
-description: Mapping of primary keys between Travel databases and the mother database  All travel database transactions get a high id to be able to see that this entry came from a database outside the central database. When update files are read into the central database, they get a normal low id. This table remembers the high travel id to map it to the low central id as long as this travel user is travelling. 
+title: "travelidmapping table"
+description: "Mapping of primary keys between Travel databases and the mother database All travel database transactions get a high id to be able to see that this entry came from a database outside the central database. When update files are read into the central database, they get a normal low id. This table remembers the high travel id to map it to the low central id as long as this travel user is travelling."
 generated: true
 content_type: reference
 envir: online
@@ -8,25 +8,25 @@ envir: online
 
 import Travelidmapping from "./includes/travelidmapping.mdx";
 
-## travelidmapping Table (43)
-
 Mapping of primary keys between Travel databases and the mother database  All travel database transactions get a high id to be able to see that this entry came from a database outside the central database. When update files are read into the central database, they get a normal low id. This table remembers the high travel id to map it to the low central id as long as this travel user is travelling. 
+
+Table number: 43
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |travelidmapping\_id|Primary key|PK|No|
-|associate\_id|Associate id (traveller)|FK [associate](./associate.mdx)|No|
+|associate\_id|Associate id (traveller)|FK [associate](./associate)|No|
 |table\_number|Database table number|TableNumber|No|
 |local\_id|ID on traveller|Id|No|
 |parent\_id|ID on parent database|Id|No|
 |counter|How many consecutive ID&apos;s|UInt|Yes|
 |cdbName|Conceptual database name if != standard database|String(29)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

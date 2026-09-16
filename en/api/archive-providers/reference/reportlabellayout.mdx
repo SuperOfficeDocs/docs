@@ -1,15 +1,13 @@
 ---
-title: ReportLabelLayout
-description: This archive provider enables access to the information regarding report label layout.
+title: "ReportLabelLayout"
+description: "This archive provider enables access to the information regarding report label layout."
 keywords: ReportLabelLayout archive provider
 generated: true
 content_type: reference
 envir: onsite, online
 ---
 
-## "ReportLabelLayout"
-
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.ReportLabelLayoutProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.ReportLabelLayoutProvider` inside NetServer's SODatabase assembly.
 
 This archive provider enables access to the information regarding report label layout.
 
@@ -21,24 +19,24 @@ This archive provider enables access to the information regarding report label l
 ## Supported Columns
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|description| *None* |Description|  |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
 |labelLayoutId| *None* |labelLayoutId|  |
-|name| *None* |Name|  |
-|description| *None* |Description|  |
 |layout| *None* |Layout|  |
-|papersize| *None* |Paper size|  |
+|name| *None* |Name|  |
 |orientation| *None* |Orientation|  |
+|papersize| *None* |Paper size|  |
 
 ## Sample
 
 ```http!
-GET /api/v1/archive/ReportLabelLayout?$select=labelLayoutId,description
+GET /api/v1/archive/ReportLabelLayout?$select=description,layout,name,orientation,papersize
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: `IArchiveAgent`.
 

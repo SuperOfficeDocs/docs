@@ -1,6 +1,6 @@
 ---
-title: form_submission table
-description: A form submission
+title: "form_submission table"
+description: "A form submission"
 generated: true
 content_type: reference
 envir: online
@@ -8,23 +8,23 @@ envir: online
 
 import FormSubmission from "./includes/form-submission.mdx";
 
-## form\_submission Table (489)
-
 A form submission
+
+Table number: 489
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |form\_submission\_id|Primary key|PK|No|
-|form\_id|The id of the parent form.|FK [form](./form.mdx)|No|
+|form\_id|The id of the parent form.|FK [form](./form)|No|
 |when\_submitted|The time of the submit.|DateTime|Yes|
-|contact\_id|The optional id of the contact of the person who submitted.|FK [contact](./contact.mdx)|No|
-|person\_id|The optional id of the person who submitted.|FK [person](./person.mdx)|No|
+|contact\_id|The optional id of the contact of the person who submitted.|FK [contact](./contact)|No|
+|person\_id|The optional id of the person who submitted.|FK [person](./person)|No|
 |email\_address|The email address of the person who submitted|String(255)|Yes|
-|response\_shipment\_addr\_id|The id of the s_shipment_addr that is the response mail|FK [s_shipment_addr](./s-shipment-addr.mdx)|No|
+|response\_shipment\_addr\_id|The id of the s_shipment_addr that is the response mail|FK [s_shipment_addr](./s-shipment-addr)|No|
 |response|The JSON-formatted response from this form|Clob|Yes|
-|status|What is the status of this submission|Enum [FormSubmissionStatus](./enums/formsubmissionstatus.mdx)|No|
+|status|What is the status of this submission|Enum [FormSubmissionStatus](./enums/formsubmissionstatus)|No|
 |processing\_log|A log of what happened during processing|String(4000)|Yes|
 
 

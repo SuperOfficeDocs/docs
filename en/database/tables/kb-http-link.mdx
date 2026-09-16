@@ -1,6 +1,6 @@
 ---
-title: kb_http_link table
-description: This table contains URL&amp;apos;s associated with a single FAQ entry.
+title: "kb_http_link table"
+description: "This table contains URL&amp;apos;s associated with a single FAQ entry."
 generated: true
 content_type: reference
 envir: online
@@ -8,16 +8,16 @@ envir: online
 
 import KbHttpLink from "./includes/kb-http-link.mdx";
 
-## kb\_http\_link Table (285)
-
 This table contains URL&amp;apos;s associated with a single FAQ entry.
+
+Table number: 285
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|entry\_id|The id of the kb entry this entry is connected to.|FK [kb_entry](./kb-entry.mdx)|No|
+|entry\_id|The id of the kb entry this entry is connected to.|FK [kb_entry](./kb-entry)|No|
 |name|The name for this link.|String(255)|No|
 |http\_link|The URL for this link.|String(255)|No|
 

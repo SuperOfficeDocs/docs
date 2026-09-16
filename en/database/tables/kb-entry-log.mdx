@@ -1,6 +1,6 @@
 ---
-title: kb_entry_log table
-description: Who and when, if somebody edits a knowledge base entry
+title: "kb_entry_log table"
+description: "Who and when, if somebody edits a knowledge base entry"
 generated: true
 content_type: reference
 envir: online
@@ -8,17 +8,17 @@ envir: online
 
 import KbEntryLog from "./includes/kb-entry-log.mdx";
 
-## kb\_entry\_log Table (290)
-
 Who and when, if somebody edits a knowledge base entry
+
+Table number: 290
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|kb\_entry\_id|The id of the kb_entry that triggered this action.|FK [kb_entry](./kb-entry.mdx)|No|
-|user\_id|The id of the user that created this comment.|FK [ejuser](./ejuser.mdx)|No|
+|kb\_entry\_id|The id of the kb_entry that triggered this action.|FK [kb_entry](./kb-entry)|No|
+|user\_id|The id of the user that created this comment.|FK [ejuser](./ejuser)|No|
 |log\_when|When the action occured.|DateTime|Yes|
 
 

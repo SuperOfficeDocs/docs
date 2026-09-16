@@ -1,6 +1,6 @@
 ---
-title: ErpConnectionAccess table
-description: Access control for Erp Connections
+title: "ErpConnectionAccess table"
+description: "Access control for Erp Connections"
 generated: true
 content_type: reference
 envir: online
@@ -8,24 +8,24 @@ envir: online
 
 import Erpconnectionaccess from "./includes/erpconnectionaccess.mdx";
 
-## ErpConnectionAccess Table (420)
-
 Access control for Erp Connections
+
+Table number: 420
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |erpconnectionaccess\_id|Primary key|PK|No|
-|ErpConnectionId|Link to Erp connection we&apos;re granting access for|FK [ErpConnection](./erpconnection.mdx)|No|
-|AssociateId|If set, then this row grants access for a particular associate|FK [associate](./associate.mdx)|Yes|
-|UserGroupId|If set, then this row grants access for a particular group of users|FK [UserGroup](./usergroup.mdx)|Yes|
+|ErpConnectionId|Link to Erp connection we&apos;re granting access for|FK [ErpConnection](./erpconnection)|No|
+|AssociateId|If set, then this row grants access for a particular associate|FK [associate](./associate)|Yes|
+|UserGroupId|If set, then this row grants access for a particular group of users|FK [UserGroup](./usergroup)|Yes|
 |CanConnect|If set, then this user/group is allowed to create and break connections between EXISTING actors in ERP and CRM|Bool|Yes|
 |CanCreateERP|If set, then this user/group is allowed to create NEW actors in ERP and connect them to CRM|Bool|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

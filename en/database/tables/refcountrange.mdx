@@ -1,6 +1,6 @@
 ---
-title: RefCountRange table
-description: Number allocation system, for keeping track of ranges of numbers loaned out to travel and satellite databases
+title: "RefCountRange table"
+description: "Number allocation system, for keeping track of ranges of numbers loaned out to travel and satellite databases"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Refcountrange from "./includes/refcountrange.mdx";
 
-## RefCountRange Table (172)
-
 Number allocation system, for keeping track of ranges of numbers loaned out to travel and satellite databases
+
+Table number: 172
 
 ## Fields
 
@@ -19,12 +19,12 @@ Number allocation system, for keeping track of ranges of numbers loaned out to t
 |RefCountRange\_id|Primary key|PK|No|
 |rangeStart|Start of range that is in use|UInt|No|
 |rangeSize|Size of in-use range|UInt|No|
-|RefCounts\_id|ID of counter this range is reserved for|FK [RefCounts](./refcounts.mdx)|No|
+|RefCounts\_id|ID of counter this range is reserved for|FK [RefCounts](./refcounts)|No|
 |traveller\_id|ID of traveller (associate) who owns this range|UShort|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 |highestInUse|The highest number (within the range) that is currently in use. This used to be the infamous preference!|UInt|No|
 

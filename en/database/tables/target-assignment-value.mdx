@@ -1,6 +1,6 @@
 ---
-title: target_assignment_value table
-description: A set of values linked to assignment info and a period in a target group.
+title: "target_assignment_value table"
+description: "A set of values linked to assignment info and a period in a target group."
 generated: true
 content_type: reference
 envir: online
@@ -8,21 +8,21 @@ envir: online
 
 import TargetAssignmentValue from "./includes/target-assignment-value.mdx";
 
-## target\_assignment\_value Table (518)
-
 A set of values linked to assignment info and a period in a target group.
+
+Table number: 519
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |target\_assignment\_value\_id|Primary key|PK|No|
-|target\_assignment\_info\_id|Who or what this value is assigned to|FK [target_assignment_info](./target-assignment-info.mdx)|Yes|
-|target\_period\_id|The group this target belongs to|FK [target_period](./target-period.mdx)|Yes|
+|target\_assignment\_info\_id|Who or what this value is assigned to|FK [target_assignment_info](./target-assignment-info)|Yes|
+|target\_period\_id|The group this target belongs to|FK [target_period](./target-period)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 |target\_value|Target value|Double|Yes|
 

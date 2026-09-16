@@ -1,6 +1,6 @@
 ---
-title: chat_topic table
-description: This table contains chat topics.
+title: "chat_topic table"
+description: "This table contains chat topics."
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import ChatTopic from "./includes/chat-topic.mdx";
 
-## chat\_topic Table (330)
-
 This table contains chat topics.
+
+Table number: 330
 
 ## Fields
 
@@ -18,19 +18,19 @@ This table contains chat topics.
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
 |description|The descriptiong for this topic.|String(255)|Yes|
-|language\_id|The reference to the associated customer language. NULL or -1 if not set.|FK [cust_lang](./cust-lang.mdx)|Yes|
+|language\_id|The reference to the associated customer language. NULL or -1 if not set.|FK [cust_lang](./cust-lang)|Yes|
 |welcome\_message|The welcome message sent to the customer when the chat session starts.|Clob|Yes|
 |last\_accept|The last time a session was accepted from the inside for this topic.|DateTime|Yes|
 |seconds\_pr\_accept|The average number of seconds per accept for this topic.|Int|Yes|
 |alert\_timeout|The number of seconds for an unanswered session before we alert|Int|Yes|
 |alert\_template|The reply template to use for alerting|Int|Yes|
 |alert\_recipient|The recipient(s) for the alert template|String(255)|Yes|
-|flags|Flags for this topic: show popup alert?, collect consent first?, use custom message?|Enum [ChatTopicFlag](./enums/chattopicflag.mdx)|Yes|
+|flags|Flags for this topic: show popup alert?, collect consent first?, use custom message?|Enum [ChatTopicFlag](./enums/chattopicflag)|Yes|
 |name|The name of this chat topic|String(255)|Yes|
 |badge\_header|The badge header of the chat topic|String(255)|Yes|
 |warning\_new\_chat|Contains the user notify time in minutes|Int|Yes|
 |manager\_warning\_new\_chat|Contains the manager notify time in minutes|Int|Yes|
-|widget\_theme|Predefined themes for the chat widget|Enum [WidgetTheme](./enums/widgettheme.mdx)|Yes|
+|widget\_theme|Predefined themes for the chat widget|Enum [WidgetTheme](./enums/widgettheme)|Yes|
 |widget\_color|The base color of the widget|String(16)|Yes|
 |widget\_font|The font used in the widget|String(64)|Yes|
 |widget\_show\_logo|Indicates if the logo should be shown in the widget|Bool|Yes|
@@ -40,21 +40,21 @@ This table contains chat topics.
 |widget\_offline\_header|Offline text shown in widget header|String(255)|Yes|
 |widget\_offline\_message|Offline message shown in widget|String(1024)|Yes|
 |widget\_enable\_ticket|Enable ticket submission in offline mode|Bool|Yes|
-|category\_id|Category on ticket created from off-line request|FK [ej_category](./ej-category.mdx)|Yes|
-|priority\_id|Priority on ticket created from off-line request|FK [ticket_priority](./ticket-priority.mdx)|Yes|
-|widget\_offline\_fields|Required field when creating ticket in offline mode|Enum [WidgetRequiredFields](./enums/widgetrequiredfields.mdx)|Yes|
+|category\_id|Category on ticket created from off-line request|FK [ej_category](./ej-category)|Yes|
+|priority\_id|Priority on ticket created from off-line request|FK [ticket_priority](./ticket-priority)|Yes|
+|widget\_offline\_fields|Required field when creating ticket in offline mode|Enum [WidgetRequiredFields](./enums/widgetrequiredfields)|Yes|
 |widget\_auto\_faq|Enable automatic FAQ suggestions|Bool|Yes|
-|kb\_category\_id|Root folder for FAQ suggestions|FK [kb_category](./kb-category.mdx)|Yes|
+|kb\_category\_id|Root folder for FAQ suggestions|FK [kb_category](./kb-category)|Yes|
 |widget\_pre\_form|Enable pre-chat form for anonymous users|Bool|Yes|
 |widget\_pre\_message|Message to be shown in a pre-chat|String(1024)|Yes|
-|widget\_required\_fields|Fields required to start a chat|Enum [WidgetRequiredFields](./enums/widgetrequiredfields.mdx)|Yes|
+|widget\_required\_fields|Fields required to start a chat|Enum [WidgetRequiredFields](./enums/widgetrequiredfields)|Yes|
 |widget\_post\_form|Enable post chat form|Bool|Yes|
 |widget\_post\_header|Header text to show in post chat form|String(255)|Yes|
 |widget\_post\_message|Message text to show in post chat form|String(1024)|Yes|
 |widget\_post\_transcript|Enable transcript of chat session|Bool|Yes|
 |widget\_language|The language ISO code for the widget language|String(63)|Yes|
 |use\_opening\_hours|Whether to use opening hours or not.|Bool|Yes|
-|tzLocationId|Timezone used for the start/stop times for this topic.|FK [TZLocation](./tzlocation.mdx)|Yes|
+|tzLocationId|Timezone used for the start/stop times for this topic.|FK [TZLocation](./tzlocation)|Yes|
 |mon\_enabled|Whether open on Mondays.|Bool|Yes|
 |mon\_start|When opening hours start on Mondays. Only time-part is used.|DateTime|Yes|
 |mon\_stop|When opening hours stop on Mondays. Only time-part is used.|DateTime|Yes|
@@ -79,10 +79,10 @@ This table contains chat topics.
 |custom\_queue\_text|A text to be used in the queue message in the chat widget. Usage is controlled by the flags field, bit number 3|String(255)|Yes|
 |bot\_enabled|Enable chatbot on this topic. Run the trigger scripts on bot events.|Bool|Yes|
 |bot\_name|Chatbot name|String(80)|Yes|
-|bot\_register\_scriptid|Script id to register/unregister chatbot. 0 if there is no bot|FK [ejscript](./ejscript.mdx)|Yes|
-|bot\_session\_created\_scriptid|Script id to run on new session.|FK [ejscript](./ejscript.mdx)|Yes|
-|bot\_session\_changed\_scriptid|Script id to run when session state changes.|FK [ejscript](./ejscript.mdx)|Yes|
-|bot\_message\_received\_scriptid|Script id to run when new messages received from customer.|FK [ejscript](./ejscript.mdx)|Yes|
+|bot\_register\_scriptid|Script id to register/unregister chatbot. 0 if there is no bot|FK [ejscript](./ejscript)|Yes|
+|bot\_session\_created\_scriptid|Script id to run on new session.|FK [ejscript](./ejscript)|Yes|
+|bot\_session\_changed\_scriptid|Script id to run when session state changes.|FK [ejscript](./ejscript)|Yes|
+|bot\_message\_received\_scriptid|Script id to run when new messages received from customer.|FK [ejscript](./ejscript)|Yes|
 |use\_lunch\_hours|Whether to use lunch hours or not.|Bool|Yes|
 |lunch\_start|When opening hours starts for lunch. Only time-part is used.|DateTime|Yes|
 |lunch\_stop|When opening hours stops for lunch. Only time-part is used.|DateTime|Yes|

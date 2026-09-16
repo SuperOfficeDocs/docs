@@ -1,6 +1,6 @@
 ---
-title: target_change table
-description: A single field change.
+title: "target_change table"
+description: "A single field change."
 generated: true
 content_type: reference
 envir: online
@@ -8,21 +8,21 @@ envir: online
 
 import TargetChange from "./includes/target-change.mdx";
 
-## target\_change Table (521)
-
 A single field change.
+
+Table number: 522
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |target\_change\_id|Primary key|PK|No|
-|target\_revision\_id|The revision history changeset this change belongs to|FK [target_revision](./target-revision.mdx)|Yes|
+|target\_revision\_id|The revision history changeset this change belongs to|FK [target_revision](./target-revision)|Yes|
 |field\_identifier|What field was changed - target_group.period_type or target_assignment_value.month01.target_value or target_assignment_value.quarter01.target_value etc.|String(255)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 |value\_change\_from|Previous value|Double|Yes|
 |value\_change\_to|New value|Double|Yes|

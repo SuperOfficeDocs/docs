@@ -1,6 +1,6 @@
 ---
-title: chat_topic_user table
-description: This table connected the chat topics with the users (i.e. the membership).
+title: "chat_topic_user table"
+description: "This table connected the chat topics with the users (i.e. the membership)."
 generated: true
 content_type: reference
 envir: online
@@ -8,17 +8,17 @@ envir: online
 
 import ChatTopicUser from "./includes/chat-topic-user.mdx";
 
-## chat\_topic\_user Table (331)
-
 This table connected the chat topics with the users (i.e. the membership).
+
+Table number: 331
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|user\_id|The reference to the associated user|FK [ejuser](./ejuser.mdx)|No|
-|topic\_id|The reference to the associated chat topic.|FK [chat_topic](./chat-topic.mdx)|No|
+|user\_id|The reference to the associated user|FK [ejuser](./ejuser)|No|
+|topic\_id|The reference to the associated chat topic.|FK [chat_topic](./chat-topic)|No|
 |can\_respond|True if the user can respond to chats in this topic|Bool|Yes|
 |notifications|True if the user should receive notifications for this topic|Bool|Yes|
 |can\_listen|True of a user can listen in on this topic|Bool|Yes|

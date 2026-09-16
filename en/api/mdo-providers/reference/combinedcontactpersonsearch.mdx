@@ -1,13 +1,12 @@
 ---
-title: combinedcontactpersonsearch
+title: "combinedcontactpersonsearch"
 keywords: mdoprovider mdo provider combinedcontactpersonsearch
-description: Consider using the ContactAndPersonListFreetextSearchProvider/"contact_and_person_freetextsearch" MDO list instead of this one. Provider for selecting a Person or a Contact, including search on contacts that match as well as persons. this provider will return a mix of contact and person records. The type is indicated in the Type property of the item, and the contact ID is always in the extraInfo.
+description: "Consider using the ContactAndPersonListFreetextSearchProvider/\"contact_and_person_freetextsearch\" MDO list instead of this one. Provider for selecting a Person or a Contact, including search on contacts that match as well as persons. this provider will return a mix of contact and person records. The type is indicated in the Type property of the item, and the contact ID is always in the extraInfo."
 generated: true
 content_type: reference
 envir: online
 ---
 
-## "combinedcontactpersonsearch" MDO List
 Consider using the ContactAndPersonListFreetextSearchProvider/"contact_and_person_freetextsearch" MDO list instead of this one.
 
 Provider for selecting a Person or a Contact, including search on contacts that match as well as persons. this provider will
@@ -18,29 +17,32 @@ Searchs contact and person tables for matches, in addition to the contact
 search of the base class "contact" search.
 
 
+
 Returns a mix of Persons with Contact and Person without contact items sorted by relevance: own contacts, recently added or updated
 are more relevant.
+
 
 
 id = contact or person_id,
 
 
+
 Name = contact.name + department or person first+last name (contact name + department)
+
 
 
 ExtraInfo = contact_id,
 
 
+
 Type = "Person", "Contact"
+
 
 
 IconHint = "Personwithcontact", "contact", "Personwithoutcontact"
 
-Implemented by the CombinedContactPersonSearchProvider class.
+Implemented by the `SuperOffice.CRM.Lists.CombinedContactPersonSearchProvider` class.
 The name of the MDO list is 'combinedcontactpersonsearch'.
-
-
-
 
 ## Sample Request
 
@@ -70,10 +72,10 @@ foreach (var item in listProvider.RootItems) {
 
 ## Related MDO Lists
 
-* "combinedcontactpersonsearchheadings"
-* "combinedcontactpersonsearchheadingswithallitem"
-* "combinedcontactpersonsearchheadingswithallitemwithnoselection"
-* "combinedcontactpersonsearchheadingswithnoselection"
-* "combinedcontactpersonsearchwithallitem"
-* "combinedcontactpersonsearchwithallitemwithnoselection"
-* "combinedcontactpersonsearchwithnoselection"
+* `combinedcontactpersonsearchheadings`
+* `combinedcontactpersonsearchheadingswithallitem`
+* `combinedcontactpersonsearchheadingswithallitemwithnoselection`
+* `combinedcontactpersonsearchheadingswithnoselection`
+* `combinedcontactpersonsearchwithallitem`
+* `combinedcontactpersonsearchwithallitemwithnoselection`
+* `combinedcontactpersonsearchwithnoselection`

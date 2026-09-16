@@ -1,6 +1,6 @@
 ---
-title: ErpField table
-description: Store the metadata describing the fields that belong to an actor/connection combination, as described by the Erp Connector
+title: "ErpField table"
+description: "Store the metadata describing the fields that belong to an actor/connection combination, as described by the Erp Connector"
 generated: true
 content_type: reference
 envir: online
@@ -8,24 +8,24 @@ envir: online
 
 import Erpfield from "./includes/erpfield.mdx";
 
-## ErpField Table (425)
-
 Store the metadata describing the fields that belong to an actor/connection combination, as described by the Erp Connector
+
+Table number: 425
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |erpfield\_id|Primary key|PK|No|
-|ErpConnectionActorTypeId|Link to Erp Connection/Actor type|FK [ErpConnectionActorType](./erpconnectionactortype.mdx)|No|
+|ErpConnectionActorTypeId|Link to Erp Connection/Actor type|FK [ErpConnectionActorType](./erpconnectionactortype)|No|
 |ErpFieldKey|The ERP field key|String(254)|No|
 |DisplayName|Localized field name – shown in the GUI as the label for the control.|String(254)|No|
 |DisplayDescription|Tooltip for the field name.|String(254)|Yes|
-|FieldType|Field type|Enum [FieldMetadataType](./enums/fieldmetadatatype.mdx)|Yes|
+|FieldType|Field type|Enum [FieldMetadataType](./enums/fieldmetadatatype)|Yes|
 |ListName|The ERP list name, if the field has a list of values supplied by the ERP Connector|String(254)|Yes|
 |DefaultValue|Default value, stored using CultureDataFormatter format if it is not a string|String(254)|Yes|
 |MaxLength|Maximum size of the field, if there is a limit|Int|Yes|
-|Access|Access restrictions for the field|Enum [FieldAccess](./enums/fieldaccess.mdx)|Yes|
+|Access|Access restrictions for the field|Enum [FieldAccess](./enums/fieldaccess)|Yes|
 |HasFirstSyncDefaultValue|Should a default value be set on first sync|Bool|Yes|
 |FirstSyncDefaultValue|The default value to be set, can be blank|String(254)|Yes|
 |PromptUser|Should the field be shown in the first-sync GUI; independent of whether a default value should be set|Bool|Yes|
@@ -39,9 +39,9 @@ Store the metadata describing the fields that belong to an actor/connection comb
 |ListReference|Reference to CRM list, if a mapping exists. Format: table=&lt;table name&gt;[&amp;&lt;extra id&gt;=&lt;value&gt;], to make it independent of actual table numbers|String(254)|Yes|
 |MissingInERP|Set to true if this field has previously been defined, but was no longer in the &apos;supported fields&apos; response from the connector. This typically happens if the target ERP system changes, and means the field needs to be unmapped.|Bool|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

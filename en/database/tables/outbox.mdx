@@ -1,6 +1,6 @@
 ---
-title: outbox table
-description: Outgoing emails with sending status and other info
+title: "outbox table"
+description: "Outgoing emails with sending status and other info"
 generated: true
 content_type: reference
 envir: online
@@ -8,17 +8,17 @@ envir: online
 
 import Outbox from "./includes/outbox.mdx";
 
-## outbox Table (351)
-
 Outgoing emails with sending status and other info
+
+Table number: 351
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|Primary key|PK|No|
-|ticket\_id|The ticket.id this reference is connected to.|FK [ticket](./ticket.mdx)|Yes|
-|message\_id|The message.id this reference is connected to.|FK [ej_message](./ej-message.mdx)|Yes|
+|ticket\_id|The ticket.id this reference is connected to.|FK [ticket](./ticket)|Yes|
+|message\_id|The message.id this reference is connected to.|FK [ej_message](./ej-message)|Yes|
 |subject|Subject of the mail|String(255)|No|
 |from\_email|Mail address of the sender|String(255)|No|
 |from\_envelope|Envelope (smtp) Mail address of the sender|String(255)|No|

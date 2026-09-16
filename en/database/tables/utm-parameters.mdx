@@ -1,6 +1,6 @@
 ---
-title: utm_parameters table
-description: Table for utm parameters collected from visits and formsubmissions
+title: "utm_parameters table"
+description: "Table for utm parameters collected from visits and formsubmissions"
 generated: true
 content_type: reference
 envir: online
@@ -8,18 +8,18 @@ envir: online
 
 import UtmParameters from "./includes/utm-parameters.mdx";
 
-## utm\_parameters Table (548)
-
 Table for utm parameters collected from visits and formsubmissions
+
+Table number: 549
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |utm\_parameters\_id|Primary key|PK|No|
-|created\_person\_id|Id of the created person|FK [person](./person.mdx)|Yes|
-|created\_contact\_id|Id of the created contact|FK [contact](./contact.mdx)|Yes|
-|form\_submission\_id|Id of formsubmission|FK [form_submission](./form-submission.mdx)|Yes|
+|created\_person\_id|Id of the created person|FK [person](./person)|Yes|
+|created\_contact\_id|Id of the created contact|FK [contact](./contact)|Yes|
+|form\_submission\_id|Id of formsubmission|FK [form_submission](./form-submission)|Yes|
 |firsttouch\_source|First touch UTM Source|String(255)|Yes|
 |firsttouch\_medium|First touch UTM Medium|String(255)|Yes|
 |firsttouch\_campaign|First touch UTM Campaign|String(255)|Yes|
@@ -35,9 +35,9 @@ Table for utm parameters collected from visits and formsubmissions
 |referrerdomain|Referrer domain|String(255)|Yes|
 |when|Date of the visit or form submission|DateTime|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

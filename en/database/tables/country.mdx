@@ -1,6 +1,6 @@
 ---
-title: country table
-description: Country information
+title: "country table"
+description: "Country information"
 generated: true
 content_type: reference
 envir: online
@@ -8,10 +8,10 @@ envir: online
 
 import Country from "./includes/country.mdx";
 
-## country Table (19)
-
 country MDO list item table.
 Country information
+
+Table number: 19
 
 ## Fields
 
@@ -28,13 +28,13 @@ Country information
 |addressLayout|Points to address format used in the GUI|Id|No|
 |addressLayoutDomestic|Points to address format used for labels to own country|Id|No|
 |addressLayoutForeign|Points to address format used for labels to other countries than own country|Id|No|
-|currency\_id|Default currency for this country|FK [Currency](./currency.mdx)|Yes|
+|currency\_id|Default currency for this country|FK [Currency](./currency)|Yes|
 |orgNrText|Lead text for organisation field|String(254)|Yes|
 |domainName|Default Web domain identifier (.no, .uk, etc; but without the dot)|String(9)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 |defaultLcid|LCID code in .NET, this should be the defaultLcid of the language that has the isDefault flag set in the LanguageInforCountry link table|UInt|Yes|
 |dialInPrefix|Prefix for dialing into the country from outside (country code)|String(31)|Yes|
@@ -46,7 +46,7 @@ Country information
 |isoNumber|The primary key used by ISO to identify countries when they have a revolution and change their name from Upper Volta to Burkina Faso :-)|UInt|Yes|
 |abbrev3|ISO 3-letter abbreviation|String(3)|Yes|
 |abbrev2|ISO 2-letter abbreviation|String(2)|Yes|
-|tzLocationId|Default timezone location for this country|FK [TZLocation](./tzlocation.mdx)|Yes|
+|tzLocationId|Default timezone location for this country|FK [TZLocation](./tzlocation)|Yes|
 
 
 ![country table relationship diagram](/media/loc/en/database/tables/country.png)

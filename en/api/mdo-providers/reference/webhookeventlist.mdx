@@ -1,17 +1,18 @@
 ---
-title: webhookeventlist
+title: "webhookeventlist"
 keywords: mdoprovider mdo provider webhookeventlist
-description: 
+description: "MDO list provider for webhook event names. Includes predefined entity events, custom object events, and custom events found on existing webhooks. Supports tree (grouped by entity) or flat output via `ForceFlatList`."
 generated: true
 content_type: reference
 envir: online
 ---
 
-## "webhookeventlist" MDO List
+MDO list provider for webhook event names.
+Includes predefined entity events, custom object events, and custom events found on existing webhooks.
+Supports tree (grouped by entity) or flat output via `ForceFlatList`.
+
+Implemented by the `SuperOffice.CRM.Lists.WebhookEventListProvider` class.
 The name of the MDO list is 'webhookeventlist'.
-
-
-
 
 ## Sample Request
 
@@ -36,15 +37,35 @@ foreach (var item in listProvider.RootItems) {
 
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
-| 2 | Example | | |
+|1|contact.created|contact|contact.created|
+|2|contact.changed|contact|contact.changed|
+|3|contact.deleted|contact|contact.deleted|
+|4|person.created|person|person.created|
+|5|person.changed|person|person.changed|
+|6|person.deleted|person|person.deleted|
+|7|associate.created|associate_webhook|associate.created|
+|8|associate.changed|associate_webhook|associate.changed|
+|9|associate.deleted|associate_webhook|associate.deleted|
+|10|quote.sent|ph-currency-circle-dollar|quote.sent|
+|11|quote.ordered|ph-currency-circle-dollar|quote.ordered|
+|12|quote.rejected|ph-currency-circle-dollar|quote.rejected|
+|13|quote.approved|ph-currency-circle-dollar|quote.approved|
+|14|project.created|project|project.created|
+|15|project.changed|project|project.changed|
+|16|project.deleted|project|project.deleted|
+|17|projectmember.created|projectmember|projectmember.created|
+|18|projectmember.changed|projectmember|projectmember.changed|
+|19|projectmember.deleted|projectmember|projectmember.deleted|
+|20|sale.created|sale|sale.created|
+|21|sale.changed|sale|sale.changed|
 
 
 ## Related MDO Lists
 
-* "webhookeventlistheadings"
-* "webhookeventlistheadingswithallitem"
-* "webhookeventlistheadingswithallitemwithnoselection"
-* "webhookeventlistheadingswithnoselection"
-* "webhookeventlistwithallitem"
-* "webhookeventlistwithallitemwithnoselection"
-* "webhookeventlistwithnoselection"
+* `webhookeventlistheadings`
+* `webhookeventlistheadingswithallitem`
+* `webhookeventlistheadingswithallitemwithnoselection`
+* `webhookeventlistheadingswithnoselection`
+* `webhookeventlistwithallitem`
+* `webhookeventlistwithallitemwithnoselection`
+* `webhookeventlistwithnoselection`

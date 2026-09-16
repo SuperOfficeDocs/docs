@@ -1,6 +1,6 @@
 ---
-title: SaleType table
-description: Type of sale - large solution, incremental, whatever fits the organization
+title: "SaleType table"
+description: "Type of sale - large solution, incremental, whatever fits the organization"
 generated: true
 content_type: reference
 envir: online
@@ -8,10 +8,10 @@ envir: online
 
 import Saletype from "./includes/saletype.mdx";
 
-## SaleType Table (149)
-
 SaleType MDO list item table.
 Type of sale - large solution, incremental, whatever fits the organization
+
+Table number: 149
 
 ## Fields
 
@@ -23,24 +23,24 @@ Type of sale - large solution, incremental, whatever fits the organization
 |tooltip|Tooltip or other description|String(254)|Yes|
 |deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|Yes|
 |saleDuration|Expected number of dales from initiation to close of sale|Int|Yes|
-|durationUnit|Units for the duration (day, week, whatever)|Enum [DurationUnit](./enums/durationunit.mdx)|Yes|
+|durationUnit|Units for the duration (day, week, whatever)|Enum [DurationUnit](./enums/durationunit)|Yes|
 |hasGuide|Does this sale type have a guide attached|Bool|Yes|
 |isAutoAdvance|Does the sale stage advance automatically, when the last guided activity in a stage is completed?|Bool|Yes|
-|saleTypeCat\_id|Category of sale type, copied to sale|FK [SaleTypeCat](./saletypecat.mdx)|Yes|
+|saleTypeCat\_id|Category of sale type, copied to sale|FK [SaleTypeCat](./saletypecat)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 |hasStakeholders|Does this sale type have stakeholders|UShort|Yes|
 |allowQuoteAlternatives|Can quotes linked to sales of this type, have multiple Alternatives|Bool|Yes|
 |defaultQuoteValidity|Default valid days for quotes linked to sales of this type (valid from quote transmission)|Int|Yes|
-|quoteLinesTemplate|The template that this sale type should use when producing the product lines offer document; the template must have DocTmplQuoteType=QuoteLines|FK [DocTmpl](./doctmpl.mdx)|Yes|
+|quoteLinesTemplate|The template that this sale type should use when producing the product lines offer document; the template must have DocTmplQuoteType=QuoteLines|FK [DocTmpl](./doctmpl)|Yes|
 |maxDiscountPercentSet|Is there a limit, in percent, to the total discount on quotes linked to sales of this type|Bool|Yes|
 |minEarningPercentSet|Is there a limit, in earning as percent of total, on quotes linked to sales of this type|Bool|Yes|
 |maxDiscountPercent|The maximum discount in percent of total, if set, on quotes linked to sales of this type|Int|Yes|
 |minEarningPercent|The minimum earning in percent of total, if set, on quotes linked to sales of this type|Int|Yes|
-|confirmationLinesTemplate|The template that this sale type should use when producing the order confirmation lines document; the template must have DocTmplQuoteType=ConfirmationLines|FK [DocTmpl](./doctmpl.mdx)|Yes|
+|confirmationLinesTemplate|The template that this sale type should use when producing the order confirmation lines document; the template must have DocTmplQuoteType=ConfirmationLines|FK [DocTmpl](./doctmpl)|Yes|
 |documentGroupingFields|Comma-separated names of grouping fields for quote lines, when generating the documents|String(59)|Yes|
 |archiveGroupingFields|Comma-separated names of grouping fields for quote lines, in the quote lines archive|String(59)|Yes|
 

@@ -1,6 +1,6 @@
 ---
-title: workflow_step table
-description: A set of steps related to a workflow.
+title: "workflow_step table"
+description: "A set of steps related to a workflow."
 generated: true
 content_type: reference
 envir: online
@@ -8,21 +8,21 @@ envir: online
 
 import WorkflowStep from "./includes/workflow-step.mdx";
 
-## workflow\_step Table (530)
-
 A set of steps related to a workflow.
+
+Table number: 531
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |workflow\_step\_id|Primary key|PK|No|
-|step\_type|Step type|Enum [WorkflowStepType](./enums/workflowsteptype.mdx)|Yes|
+|step\_type|Step type|Enum [WorkflowStepType](./enums/workflowsteptype)|Yes|
 |settings|Step settings/configuration/variables|Clob|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

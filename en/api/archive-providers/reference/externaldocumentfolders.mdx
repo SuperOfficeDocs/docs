@@ -1,15 +1,13 @@
 ---
-title: externaldocumentfolders
-description: 
+title: "externaldocumentfolders"
+description: ""
 keywords: externaldocumentfolders archive provider
 generated: true
 content_type: reference
 envir: onsite, online
 ---
 
-## "externaldocumentfolders"
-
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.ExternalDocumentFolderProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.ExternalDocumentFolderProvider` inside NetServer's SODatabase assembly.
 
 ## Supported Entities
 | Name | Description |
@@ -19,27 +17,27 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Exte
 ## Supported Columns
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|created|date|Created: Displays when the request was created| x |
+|description|string|Description: Description of an External Document| x |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
-|hierarchyId|int|Hierarchy ID: Foreign key to hierarchy table| x |
 |hierarchyFullname|string|Hierarchy name: The full name/path from table hierarchy| x |
+|hierarchyFullpathIds| *None* |Folder path IDs: An integer array of nodes leading to a hierarchy/folder item, in root => leaf order|  |
+|hierarchyId|int|Hierarchy ID: Foreign key to hierarchy table| x |
 |hierarchyName|string|Hierarchy name: The full name/path from table hierarchy| x |
 |hierarchyParentId|int|Hierarchy ID: Foreign key to hierarchy table| x |
-|hierarchyFullpathIds| *None* |Folder path IDs: An integer array of nodes leading to a hierarchy/folder item, in root => leaf order|  |
-|title|string|Title: Title of an External Document| x |
-|description|string|Description: Description of an External Document| x |
-|created|date|Created: Displays when the request was created| x |
 |ownerHierarchyId|int|HierarchyId| x |
+|title|string|Title: Title of an External Document| x |
 
 ## Sample
 
 ```http!
-GET /api/v1/archive/externaldocumentfolders?$select=hierarchyFullname,hierarchyParentId
+GET /api/v1/archive/externaldocumentfolders?$select=created,description,hierarchyFullname,hierarchyName,title
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: `IArchiveAgent`.
 

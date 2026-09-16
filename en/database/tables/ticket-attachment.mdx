@@ -1,6 +1,6 @@
 ---
-title: ticket_attachment table
-description: This table connects an attachment to a message. It references the entry in the attachment table, and the message.
+title: "ticket_attachment table"
+description: "This table connects an attachment to a message. It references the entry in the attachment table, and the message."
 generated: true
 content_type: reference
 envir: online
@@ -8,17 +8,17 @@ envir: online
 
 import TicketAttachment from "./includes/ticket-attachment.mdx";
 
-## ticket\_attachment Table (256)
-
 This table connects an attachment to a message. It references the entry in the attachment table, and the message.
+
+Table number: 256
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|attachment\_id|The attachment.id this reference is connected to.|FK [attachment](./attachment.mdx)|Yes|
-|message\_id|The message.id this reference is connected to.|FK [ej_message](./ej-message.mdx)|No|
+|attachment\_id|The attachment.id this reference is connected to.|FK [attachment](./attachment)|Yes|
+|message\_id|The message.id this reference is connected to.|FK [ej_message](./ej-message)|No|
 |content\_id|The content_id of this attachment, used for inline images|String(255)|Yes|
 |inline\_image|True if this attachment is inlined in the html_body.|Bool|No|
 

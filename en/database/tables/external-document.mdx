@@ -1,6 +1,6 @@
 ---
-title: external_document table
-description: This table stores documents which can be viewed externaly, through the customer module
+title: "external_document table"
+description: "This table stores documents which can be viewed externaly, through the customer module"
 generated: true
 content_type: reference
 envir: online
@@ -8,25 +8,25 @@ envir: online
 
 import ExternalDocument from "./includes/external-document.mdx";
 
-## external\_document Table (401)
-
 This table stores documents which can be viewed externaly, through the customer module
+
+Table number: 401
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|Primary key|PK|No|
-|hierarchy\_id|This document belongs to the following folder|FK [hierarchy](./hierarchy.mdx)|No|
-|attachment\_id|The attachment.id for the attachment associated with this external document.|FK [attachment](./attachment.mdx)|No|
+|hierarchy\_id|This document belongs to the following folder|FK [hierarchy](./hierarchy)|No|
+|attachment\_id|The attachment.id for the attachment associated with this external document.|FK [attachment](./attachment)|No|
 |title|The title for the document|String(255)|No|
 |description|The description of the external document|Clob|Yes|
 |created\_at|When the document was created|DateTime|Yes|
-|created\_by|Who created the document|FK [ejuser](./ejuser.mdx)|No|
+|created\_by|Who created the document|FK [ejuser](./ejuser)|No|
 |last\_changed|When the document last was changed|DateTime|Yes|
-|changed\_by|Who last changed the document|FK [ejuser](./ejuser.mdx)|Yes|
+|changed\_by|Who last changed the document|FK [ejuser](./ejuser)|Yes|
 |deleted|A boolean telling if the external document is to be treated as deleted|Bool|No|
-|s\_message|Relation to s_message if this document is an image in a newsletter|FK [s_message](./s-message.mdx)|Yes|
+|s\_message|Relation to s_message if this document is an image in a newsletter|FK [s_message](./s-message)|Yes|
 
 
 ![external_document table relationship diagram](/media/loc/en/database/tables/external_document.png)

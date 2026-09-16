@@ -1,6 +1,6 @@
 ---
-title: SearchCriteriaGroup table
-description: Criteria storage for Selection and other Find mechanisms
+title: "SearchCriteriaGroup table"
+description: "Criteria storage for Selection and other Find mechanisms"
 generated: true
 content_type: reference
 envir: online
@@ -8,25 +8,25 @@ envir: online
 
 import Searchcriteriagroup from "./includes/searchcriteriagroup.mdx";
 
-## SearchCriteriaGroup Table (202)
-
 Criteria storage for Selection and other Find mechanisms
+
+Table number: 202
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |SearchCriteriaGroup\_id|Primary key|PK|No|
-|SearchCriteria\_id|Owning model|FK [SearchCriteria](./searchcriteria.mdx)|No|
+|SearchCriteria\_id|Owning model|FK [SearchCriteria](./searchcriteria)|No|
 |name|The name of this criteria group|String(254)|No|
-|textId|Extra information (descriptive) for this Criteria Group|FK [text](./text.mdx)|Yes|
-|direction|0 = Add, 1 = Subtract this group from the total result|Enum [CriteriaGroupDirection](./enums/criteriagroupdirection.mdx)|No|
+|textId|Extra information (descriptive) for this Criteria Group|FK [text](./text)|Yes|
+|direction|0 = Add, 1 = Subtract this group from the total result|Enum [CriteriaGroupDirection](./enums/criteriagroupdirection)|No|
 |rank|Rank order within this CriteriaModel|UShort|No|
 |active|Should this group be executed|UShort|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

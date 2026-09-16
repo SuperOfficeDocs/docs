@@ -1,6 +1,6 @@
 ---
-title: ProductVersion table
-description: Version information for code modules. Owner + code module must be unique
+title: "ProductVersion table"
+description: "Version information for code modules. Owner + code module must be unique"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Productversion from "./includes/productversion.mdx";
 
-## ProductVersion Table (240)
-
 Version information for code modules. Owner + code module must be unique
+
+Table number: 240
 
 ## Fields
 
@@ -23,9 +23,9 @@ Version information for code modules. Owner + code module must be unique
 |comment|Possible comment string added by code|String(254)|No|
 |updatePath|Path MSI or other files, that contain the installation for this version; used for auto-update|String(1023)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

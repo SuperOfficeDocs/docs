@@ -1,6 +1,6 @@
 ---
-title: associate table
-description: Employees, resources and other users - except for External persons
+title: "associate table"
+description: "Employees, resources and other users - except for External persons"
 generated: true
 content_type: reference
 envir: online
@@ -8,10 +8,10 @@ envir: online
 
 import Associate from "./includes/associate.mdx";
 
-## associate Table (2)
-
 associate MDO list item table.
 Employees, resources and other users - except for External persons
+
+Table number: 2
 
 ## Fields
 
@@ -22,22 +22,22 @@ Employees, resources and other users - except for External persons
 |rank|Rank order |UShort|Yes|
 |tooltip|Tooltip or other description|String(254)|Yes|
 |deleted|1 = the user is retired and should have no rights, not appear in lists, etc.|UShort|Yes|
-|group\_idx|Primary group membership, see UserGroupLink for secondary memberships|FK [UserGroup](./usergroup.mdx)|No|
+|group\_idx|Primary group membership, see UserGroupLink for secondary memberships|FK [UserGroup](./usergroup)|No|
 |lastlogin|Last login date|DateTime|No|
 |lastlogout|Last logout date|DateTime|No|
-|person\_id|Owning person record|FK [person](./person.mdx)|No|
+|person\_id|Owning person record|FK [person](./person)|No|
 |checklistlimit|Diary checklist scan limit|DateTime|No|
-|type|Associate type|Enum [AssociateType](./enums/associatetype.mdx)|Yes|
+|type|Associate type|Enum [AssociateType](./enums/associatetype)|Yes|
 |userFlags|user-specific GUI flags|String(127)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates|UShort|No|
 |isLocation|For resources only: 1 if this resource represents a location|Bool|Yes|
-|tzLocationId|Default timezone location for this associate|FK [TZLocation](./tzlocation.mdx)|Yes|
+|tzLocationId|Default timezone location for this associate|FK [TZLocation](./tzlocation)|Yes|
 |locationAddress|Address of location, if this is a resource that is a location|String(239)|Yes|
-|ejuserId|ID of the ej user record corresponding to this associate; 0 for associates that are not ej users|FK [ejuser](./ejuser.mdx)|Yes|
+|ejuserId|ID of the ej user record corresponding to this associate; 0 for associates that are not ej users|FK [ejuser](./ejuser)|Yes|
 |encryptedCheck|Encrypted hash checksum|String(254)|No|
 |userName|Associate user name|String(254)|Yes|
 |waiting\_for\_approval|0 = Approved (default). 1 = Associate/User must be approved by an administrator. User cannot log in while waiting, but can be assigned licenses. Used in Online.|Bool|No|
@@ -197,6 +197,7 @@ Employees, resources and other users - except for External persons
 |[LicenseSatlLink](./licensesatllink)  |Link between License and Satellite, for per-database licenses |
 |[LocaleText](./localetext)  |Multi-language text items. Used for user-defined field labels. Must be assigned correct name to match the language they start SuperOffice in.  This table should be viewed in conjunction with FieldLabel. If a row in FieldLable has active = 1 this table will need to contain at least one row with the same resourceId as the FieldLabel row. The language id can be either 0 or one of the Windows language ID&apos;s; SuperOffice will pick the correct language on startup according to the user settings. If a label cannot be found with the given language and also not with language 0, it will not be substituted.  |
 |[MailingDomains](./mailingdomains)  |List of allowed domains used in a Mailing |
+|[mention](./mention)  |A colleague tagged with @ in a request comment |
 |[MergeMoveLog](./mergemovelog)  |Log of merge and move operations (person, contact, project) |
 |[Message](./message)  |Definition of a message, corresponding to the header of a protocol |
 |[MessageHandler](./messagehandler)  |Presence and heartbeat of a message handler, should be updated once a minute. Older records are stale |

@@ -1,6 +1,6 @@
 ---
-title: script_trace_run table
-description: Traces of executed scripts
+title: "script_trace_run table"
+description: "Traces of executed scripts"
 generated: true
 content_type: reference
 envir: online
@@ -8,16 +8,16 @@ envir: online
 
 import ScriptTraceRun from "./includes/script-trace-run.mdx";
 
-## script\_trace\_run Table (477)
-
 Traces of executed scripts
+
+Table number: 477
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |script\_trace\_run\_id|Primary key|PK|No|
-|script\_trace\_id|Id of parent script_trace record|FK [script_trace](./script-trace.mdx)|Yes|
+|script\_trace\_id|Id of parent script_trace record|FK [script_trace](./script-trace)|Yes|
 |started\_at|When the trace was started|DateTime|Yes|
 |ended\_at|When the trace was ended|DateTime|Yes|
 |execution\_time|Real seconds spent executing|Int|Yes|
@@ -25,7 +25,7 @@ Traces of executed scripts
 |peak\_memory|The maximum amount of used memory during execution (in kB)|Int|Yes|
 |num\_frames|The number of frames saved|Int|Yes|
 |file\_size|The size of the trace file|Int|Yes|
-|associate\_id|Associate who the script was executed as|FK [associate](./associate.mdx)|Yes|
+|associate\_id|Associate who the script was executed as|FK [associate](./associate)|Yes|
 |status|The status of the script, or exception if it fails|String(2047)|Yes|
 |frames|The frames of the the trace|Clob|Yes|
 

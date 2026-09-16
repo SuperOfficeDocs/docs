@@ -1,6 +1,6 @@
 ---
-title: invitation table
-description: Invitations to events
+title: "invitation table"
+description: "Invitations to events"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Invitation from "./includes/invitation.mdx";
 
-## invitation Table (496)
-
 Invitations to events
+
+Table number: 496
 
 ## Fields
 
@@ -20,11 +20,11 @@ Invitations to events
 |event\_uid|The UID associated with this event, all integrators should refer to this UID when referring to the event|String(255)|Yes|
 |event\_sequence|The current sequence number of the event info, so we know if we got a new or old event update|Int|Yes|
 |event\_dtstamp|DTSTAMP so we know if we got a new or old event update when sequence is the same|DateTime|Yes|
-|appointment\_id|The id of the mother appointment record|FK [appointment](./appointment.mdx)|Yes|
+|appointment\_id|The id of the mother appointment record|FK [appointment](./appointment)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 |organizer\_email|The email address of the organizer of the event.|String(255)|Yes|
 |organizer\_fullname|The organizer&apos;s full name|String(255)|Yes|

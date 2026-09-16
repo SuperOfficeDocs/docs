@@ -1,6 +1,6 @@
 ---
-title: landing_page_tab table
-description: A tab (pinned selection or entity record) on a landing page
+title: "landing_page_tab table"
+description: "A tab (pinned selection or entity record) on a landing page"
 generated: true
 content_type: reference
 envir: online
@@ -8,26 +8,26 @@ envir: online
 
 import LandingPageTab from "./includes/landing-page-tab.mdx";
 
-## landing\_page\_tab Table (498)
-
 A tab (pinned selection or entity record) on a landing page
+
+Table number: 498
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |landing\_page\_tab\_id|Primary key|PK|No|
-|landing\_page\_id|The landing page this pin belongs to|FK [landing_page](./landing-page.mdx)|No|
+|landing\_page\_id|The landing page this pin belongs to|FK [landing_page](./landing-page)|No|
 |table\_number|Table number of the pinned record (selection table number, or entity table number such as contact, person, sale)|TableNumber|No|
 |record\_id|The id of the pinned record in the referenced table|RecordId|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 |pinned|Whether this tab is pinned by the associate|Bool|No|
 |rank|Display order of the tab within the landing page|Int|No|
-|tab\_type|What kind of content the tab shows (selection, entity record, or a hardcoded provider)|Enum [LandingPageTabType](./enums/landingpagetabtype.mdx)|No|
+|tab\_type|What kind of content the tab shows (selection, entity record, or a hardcoded provider)|Enum [LandingPageTabType](./enums/landingpagetabtype)|No|
 |provider\_name|Provider key for a provider tab (e.g. LastTickets, FavouriteTickets); empty for selection and entity tabs|String(128)|No|
 
 

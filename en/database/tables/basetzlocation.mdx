@@ -1,6 +1,6 @@
 ---
-title: BaseTZLocation table
-description: Time zone location for the database (how tz-related datetimes should be stored in the database)
+title: "BaseTZLocation table"
+description: "Time zone location for the database (how tz-related datetimes should be stored in the database)"
 generated: true
 content_type: reference
 envir: online
@@ -8,23 +8,23 @@ envir: online
 
 import Basetzlocation from "./includes/basetzlocation.mdx";
 
-## BaseTZLocation Table (248)
-
 Time zone location for the database (how tz-related datetimes should be stored in the database)
+
+Table number: 248
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |BaseTZLocation\_id|Primary key|PK|No|
-|TZLocation\_id|Country that this timezone location is defined for|FK [TZLocation](./tzlocation.mdx)|No|
+|TZLocation\_id|Country that this timezone location is defined for|FK [TZLocation](./tzlocation)|No|
 |validFrom|When is this tzLocation valid from, as THE database timezonelocation|DateTime|No|
 |databaseId|Actually travelcurrent.current_id, the id of the database this basetimezonelocation is meant for|Id|No|
 |description|Descriptive text|String(254)|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

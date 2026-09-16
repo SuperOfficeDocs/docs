@@ -1,15 +1,13 @@
 ---
-title: CRMScripts
-description: 
+title: "CRMScripts"
+description: ""
 keywords: CRMScripts archive provider
 generated: true
 content_type: reference
 envir: onsite, online
 ---
 
-## "CRMScripts"
-
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.CrmScriptsProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.CrmScriptsProvider` inside NetServer's SODatabase assembly.
 
 ## Supported Entities
 | Name | Description |
@@ -20,40 +18,40 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.CrmS
 ## Supported Columns
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|accessKey| *None* |Access key: Key to be used when calling this script externally|  |
+|description| *None* |Description: Description of script|  |
+|ejscriptId| *None* |CRMScript ID: Primary key from the CRMScript table|  |
+|enabled| *None* |Enabled: Enables or disables this ScreenChooser|  |
+|extraMenuId| *None* |ExtraMenuId: Foreign key to the extra\_menu table|  |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
+|hierarchyFullname| *None* |Hierarchy name: The full name/path from table hierarchy|  |
+|hierarchyFullpathIds| *None* |Folder path IDs: An integer array of nodes leading to a hierarchy/folder item, in root => leaf order|  |
+|hierarchyId| *None* |Hierarchy ID: Foreign key to hierarchy table|  |
+|hierarchyName| *None* |Hierarchy name: The full name/path from table hierarchy|  |
+|hierarchyParentId| *None* |Hierarchy ID: Foreign key to hierarchy table|  |
+|htmlOutput| *None* |HTML: Read the script output as HTML|  |
+|includeId| *None* |IncludeID: Name to be used when including this script in another script|  |
 |name|string|Name: Name of script. Can be used in file name.| x |
-|description| *None* |Description: Description of script|  |
+|path|string|Path: Full path that identifies the type of script| x |
+|registeredBy|associate|Registered by: The user who registered the data| x |
+|registeredDate|date|Registered date: The date/time the data was registered in UTC.| x |
+|screenChooserId| *None* |ScreenChooser ID: Primary key for table ScreenChooser|  |
+|screenType| *None* |ScreenType: Determines type of ScreenChooser|  |
+|type| *None* |Type: The type/language of this script|  |
 |uniqueIdentifier|string|UniqueIdentifier: An identifier that is globally unique, across all scripts and customers| x |
 |updatedBy|associate|Updated by: The user who last updated the data| x |
 |updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
-|registeredBy|associate|Registered by: The user who registered the data| x |
-|registeredDate|date|Registered date: The date/time the data was registered in UTC.| x |
-|path|string|Path: Full path that identifies the type of script| x |
-|type| *None* |Type: The type/language of this script|  |
-|ejscriptId| *None* |CRMScript ID: Primary key from the CRMScript table|  |
-|includeId| *None* |IncludeID: Name to be used when including this script in another script|  |
-|accessKey| *None* |Access key: Key to be used when calling this script externally|  |
-|htmlOutput| *None* |HTML: Read the script output as HTML|  |
-|extraMenuId| *None* |ExtraMenuId: Foreign key to the extra\_menu table|  |
-|hierarchyId| *None* |Hierarchy ID: Foreign key to hierarchy table|  |
-|hierarchyFullname| *None* |Hierarchy name: The full name/path from table hierarchy|  |
-|hierarchyName| *None* |Hierarchy name: The full name/path from table hierarchy|  |
-|hierarchyParentId| *None* |Hierarchy ID: Foreign key to hierarchy table|  |
-|hierarchyFullpathIds| *None* |Folder path IDs: An integer array of nodes leading to a hierarchy/folder item, in root => leaf order|  |
-|screenChooserId| *None* |ScreenChooser ID: Primary key for table ScreenChooser|  |
-|screenType| *None* |ScreenType: Determines type of ScreenChooser|  |
-|enabled| *None* |Enabled: Enables or disables this ScreenChooser|  |
 
 ## Sample
 
 ```http!
-GET /api/v1/archive/CRMScripts?$select=path,extraMenuId,registeredDate
+GET /api/v1/archive/CRMScripts?$select=accessKey,hierarchyFullname,name,screenType,updatedDate
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: `IArchiveAgent`.
 

@@ -1,6 +1,6 @@
 ---
-title: SystemEvent table
-description: System events, such as freetext rebuild, SAINT rebuild and such. Makes broadcasts to keep its siblings and clients updated. 
+title: "SystemEvent table"
+description: "System events, such as freetext rebuild, SAINT rebuild and such. Makes broadcasts to keep its siblings and clients updated."
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Systemevent from "./includes/systemevent.mdx";
 
-## SystemEvent Table (153)
-
 System events, such as freetext rebuild, SAINT rebuild and such. Makes broadcasts to keep its siblings and clients updated. 
+
+Table number: 153
 
 ## Fields
 
@@ -24,9 +24,9 @@ System events, such as freetext rebuild, SAINT rebuild and such. Makes broadcast
 |extraInfo|Extra information (area id for prototype rebuild, etc)|Id|Yes|
 |eta|Estimated Time of Arrival, i.e., when will this event finish?|DateTime|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

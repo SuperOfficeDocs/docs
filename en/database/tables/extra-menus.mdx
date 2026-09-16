@@ -1,6 +1,6 @@
 ---
-title: extra_menus table
-description: This table contains entries for the extra menus in the system.
+title: "extra_menus table"
+description: "This table contains entries for the extra menus in the system."
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import ExtraMenus from "./includes/extra-menus.mdx";
 
-## extra\_menus Table (307)
-
 This table contains entries for the extra menus in the system.
+
+Table number: 307
 
 ## Fields
 
@@ -26,8 +26,8 @@ This table contains entries for the extra menus in the system.
 |order\_pos|Used to order elements when listed.|Int|Yes|
 |flags|Flags|UInt|Yes|
 |base\_program|Base program used in url (ticket, rms, ...)|base_program|Yes|
-|extra\_table|ExtraTable that the menu is connected to|FK [extra_tables](./extra-tables.mdx)|Yes|
-|group\_id|Link to extra_menus table if this menu item is to be shown in a custom menu group|FK [extra_menus](./extra-menus.mdx)|Yes|
+|extra\_table|ExtraTable that the menu is connected to|FK [extra_tables](./extra-tables)|Yes|
+|group\_id|Link to extra_menus table if this menu item is to be shown in a custom menu group|FK [extra_menus](./extra-menus)|Yes|
 
 
 ![extra_menus table relationship diagram](/media/loc/en/database/tables/extra_menus.png)

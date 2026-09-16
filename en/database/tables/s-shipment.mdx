@@ -1,6 +1,6 @@
 ---
-title: s_shipment table
-description: Contains info about one shipment. The addresses are stored in s_shipment_addr
+title: "s_shipment table"
+description: "Contains info about one shipment. The addresses are stored in s_shipment_addr"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import SShipment from "./includes/s-shipment.mdx";
 
-## s\_shipment Table (334)
-
 Contains info about one shipment. The addresses are stored in s_shipment_addr
+
+Table number: 334
 
 ## Fields
 
@@ -18,7 +18,7 @@ Contains info about one shipment. The addresses are stored in s_shipment_addr
 |------|-------------|------|:----:|
 |id|Primary key|PK|No|
 |description|Describes the shipment|String(255)|Yes|
-|message\_id|The id of the message that is sent in this shipment|FK [s_message](./s-message.mdx)|No|
+|message\_id|The id of the message that is sent in this shipment|FK [s_message](./s-message)|No|
 |start\_date|The date and time when to start this shipment|DateTime|Yes|
 |end\_date|Is set when this shipment is ended|DateTime|Yes|
 |from\_addr|Email address to put in the From header of the messages|String(255)|No|
@@ -27,7 +27,7 @@ Contains info about one shipment. The addresses are stored in s_shipment_addr
 |smtp\_serv|The server to use for this shipment.|String(255)|Yes|
 |smtp\_port|The port of the SMTP server to use for this shipment.|Int|No|
 |send\_rate|Maximum number of messages sent per minute. |Int|No|
-|status|Sending/stopped/failed etc.|Enum [ShipmentStatus](./enums/shipmentstatus.mdx)|No|
+|status|Sending/stopped/failed etc.|Enum [ShipmentStatus](./enums/shipmentstatus)|No|
 |recipients|The total number of recipients to send message to.|Int|No|
 |actual\_rate|The actual rate of messages per minute. can be lower than send_rate|Int|No|
 |actual\_time|The time of the last checkpoint|DateTime|Yes|
@@ -38,16 +38,16 @@ Contains info about one shipment. The addresses are stored in s_shipment_addr
 |flags|Various flags for a shipment|UInt|Yes|
 |folder\_id|The folder which this shipment belongs to. -1 indicates that the shipment is on the root|Int|No|
 |configuration|This field indicates what kind of shipment this is.|Int|No|
-|selection\_id|Set if this shipment should be related to a Selection|FK [selection](./selection.mdx)|Yes|
-|project\_id|Set if this shipment should be related to a Project|FK [project](./project.mdx)|Yes|
-|generated\_document\_id|ID of the merged document that is the result of the shipment|FK [document](./document.mdx)|Yes|
+|selection\_id|Set if this shipment should be related to a Selection|FK [selection](./selection)|Yes|
+|project\_id|Set if this shipment should be related to a Project|FK [project](./project)|Yes|
+|generated\_document\_id|ID of the merged document that is the result of the shipment|FK [document](./document)|Yes|
 |registered|Registered when|UtcDateTime|Yes|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|Yes|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|Yes|
 |updated|Last updated when|UtcDateTime|Yes|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|Yes|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|Yes|
 |updatedCount|Number of updates made to this record|UShort|Yes|
 |active\_pane|The currently active pane in the mailing wizard|Int|Yes|
-|sorting|Which sorting should be used on the document mailing recipient list, used when generating PDF|Enum [RecipientSorting](./enums/recipientsorting.mdx)|No|
+|sorting|Which sorting should be used on the document mailing recipient list, used when generating PDF|Enum [RecipientSorting](./enums/recipientsorting)|No|
 |delivered\_num|Number of mails sent minus bounces|Int|Yes|
 |open\_num|Number of opened emails count|Int|Yes|
 |open\_rate|Open rate % (open_num / delivered_num)|Double|Yes|
@@ -61,7 +61,7 @@ Contains info about one shipment. The addresses are stored in s_shipment_addr
 |totalbounce\_rate|Total bounce rate % (totalbounce_num / number_transmitted)|Double|Yes|
 |are\_statistics\_dirty|Indicates if shipment needs statistics calculation, set by code that changes the shipment or receives clicks/opens|Bool|No|
 |sent\_num|Number of mails sent|Int|Yes|
-|shipmenttype\_id|Id of subscriptionType that this shipment has, so we may check for reservations|FK [ShipmentType](./shipmenttype.mdx)|Yes|
+|shipmenttype\_id|Id of subscriptionType that this shipment has, so we may check for reservations|FK [ShipmentType](./shipmenttype)|Yes|
 
 
 ![s_shipment table relationship diagram](/media/loc/en/database/tables/s_shipment.png)

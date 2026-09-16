@@ -1,6 +1,6 @@
 ---
-title: screen_definition table
-description: A configurable screen
+title: "screen_definition table"
+description: "A configurable screen"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import ScreenDefinition from "./includes/screen-definition.mdx";
 
-## screen\_definition Table (370)
-
 A configurable screen
+
+Table number: 370
 
 ## Fields
 
@@ -19,7 +19,7 @@ A configurable screen
 |id|Primary key|PK|No|
 |name|A field for entering the name of this entry|String(255)|No|
 |id\_string|A field for an id_string which may be used to access the screen|String(255)|No|
-|hierarchy\_id|The screen definition is inside this hierarchy folder|FK [hierarchy](./hierarchy.mdx)|No|
+|hierarchy\_id|The screen definition is inside this hierarchy folder|FK [hierarchy](./hierarchy)|No|
 |screen\_key|This field holds the authentication key if used|String(255)|No|
 |layout\_model|An enum for which layout model this screen is using.|layout_model|Yes|
 |load\_script\_body|The ejscript to execute the first time this screen is loaded, e.g. for form loading|Clob|Yes|

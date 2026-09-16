@@ -1,6 +1,6 @@
 ---
-title: chat_session table
-description: This table contains chat sessions.
+title: "chat_session table"
+description: "This table contains chat sessions."
 generated: true
 content_type: reference
 envir: online
@@ -8,20 +8,20 @@ envir: online
 
 import ChatSession from "./includes/chat-session.mdx";
 
-## chat\_session Table (332)
-
 This table contains chat sessions.
+
+Table number: 332
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|topic\_id|The reference to the associated chat topic.|FK [chat_topic](./chat-topic.mdx)|No|
-|user\_id|The reference to the associated user.|FK [ejuser](./ejuser.mdx)|No|
-|customer\_id|The reference to the associated customer. May be NULL or -1.|FK [person](./person.mdx)|No|
+|topic\_id|The reference to the associated chat topic.|FK [chat_topic](./chat-topic)|No|
+|user\_id|The reference to the associated user.|FK [ejuser](./ejuser)|No|
+|customer\_id|The reference to the associated customer. May be NULL or -1.|FK [person](./person)|No|
 |customer\_alias|The alias for the customer.|String(64)|Yes|
-|status|Enum indicating the status for the session (pending, active, closed, etc).|Enum [ChatSessionStatus](./enums/chatsessionstatus.mdx)|Yes|
+|status|Enum indicating the status for the session (pending, active, closed, etc).|Enum [ChatSessionStatus](./enums/chatsessionstatus)|Yes|
 |when\_requested|When the session was requested by the customer.|DateTime|Yes|
 |when\_started|When the session was accepted by a user.|DateTime|Yes|
 |when\_ended|When the session was ended.|DateTime|Yes|
@@ -38,12 +38,12 @@ This table contains chat sessions.
 |phone|The phone number of the customer, if provided|String(32)|Yes|
 |first\_message|A copy of the first message in the chat session|String(1024)|Yes|
 |last\_message|A copy of the last message in the chat session|String(1024)|Yes|
-|flags|Various flags for the chat session|Enum [ChatSessionFlags](./enums/chatsessionflags.mdx)|Yes|
-|project\_id|The project that this chat session is connected to|FK [project](./project.mdx)|Yes|
-|sale\_id|The sale that this chat session is connected to|FK [sale](./sale.mdx)|Yes|
-|ticket\_id|The ticket that this chat session is connected to|FK [ticket](./ticket.mdx)|Yes|
-|contact\_id|The contact that this chat session is connected to|FK [contact](./contact.mdx)|Yes|
-|transfer\_to|The ejuser that has a pending transfer of the chat session|FK [ejuser](./ejuser.mdx)|Yes|
+|flags|Various flags for the chat session|Enum [ChatSessionFlags](./enums/chatsessionflags)|Yes|
+|project\_id|The project that this chat session is connected to|FK [project](./project)|Yes|
+|sale\_id|The sale that this chat session is connected to|FK [sale](./sale)|Yes|
+|ticket\_id|The ticket that this chat session is connected to|FK [ticket](./ticket)|Yes|
+|contact\_id|The contact that this chat session is connected to|FK [contact](./contact)|Yes|
+|transfer\_to|The ejuser that has a pending transfer of the chat session|FK [ejuser](./ejuser)|Yes|
 |consented|The customer consented when starting the session|Bool|Yes|
 |chatbot\_isactive|Indicates that a chatbot is active on the session. This will cause bot triggers to fire. Set to 0 when bot hands off to user.|Bool|Yes|
 |country|The country that the chat customer selected.|Int|Yes|

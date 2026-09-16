@@ -1,6 +1,6 @@
 ---
-title: help table
-description: This table contains the help pages.
+title: "help table"
+description: "This table contains the help pages."
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Help from "./includes/help.mdx";
 
-## help Table (302)
-
 This table contains the help pages.
+
+Table number: 302
 
 ## Fields
 
@@ -19,7 +19,7 @@ This table contains the help pages.
 |id|The primary key (auto-incremented)|PK|No|
 |name|The name for this help page.|String(64)|Yes|
 |title|The title for this help page.|String(255)|Yes|
-|parent\_id|The id of the parent help page. NULL or -1 if this is a toplevel helppage.|FK [help](./help.mdx)|Yes|
+|parent\_id|The id of the parent help page. NULL or -1 if this is a toplevel helppage.|FK [help](./help)|Yes|
 |language|A string indicating the language for this helppage (&amp;apos;no&amp;apos; or &amp;apos;en&amp;apos;).|String(5)|Yes|
 |sort\_order|The sort-order for this helppage when listed among its siblings.|Int|Yes|
 |module\_id|The id of the module, if this page is the description for a module..|Int|No|

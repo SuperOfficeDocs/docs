@@ -1,6 +1,6 @@
 ---
-title: ext_field table
-description: This table contains entries mapping an external field to an internal field. Used for database integration.
+title: "ext_field table"
+description: "This table contains entries mapping an external field to an internal field. Used for database integration."
 generated: true
 content_type: reference
 envir: online
@@ -8,16 +8,16 @@ envir: online
 
 import ExtField from "./includes/ext-field.mdx";
 
-## ext\_field Table (319)
-
 This table contains entries mapping an external field to an internal field. Used for database integration.
+
+Table number: 319
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|ext\_table|The reference to the associated ext_table|FK [ext_table](./ext-table.mdx)|Yes|
+|ext\_table|The reference to the associated ext_table|FK [ext_table](./ext-table)|Yes|
 |seq\_order|The column number for this field. Strictly ascending.|Int|Yes|
 |name|The name for this field.|String(255)|Yes|
 |target|The target for this field. E.g. &amp;apos;customer.name&amp;apos;. |String(64)|Yes|

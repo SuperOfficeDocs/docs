@@ -1,6 +1,6 @@
 ---
-title: reply_template_folder table
-description: This table contains entries for folders for reply templates.
+title: "reply_template_folder table"
+description: "This table contains entries for folders for reply templates."
 generated: true
 content_type: reference
 envir: online
@@ -8,16 +8,16 @@ envir: online
 
 import ReplyTemplateFolder from "./includes/reply-template-folder.mdx";
 
-## reply\_template\_folder Table (276)
-
 This table contains entries for folders for reply templates.
+
+Table number: 276
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|parent\_id|The id of the parent folder of this folder. NULL or -1 of this is a toplevel folder.|FK [reply_template_folder](./reply-template-folder.mdx)|No|
+|parent\_id|The id of the parent folder of this folder. NULL or -1 of this is a toplevel folder.|FK [reply_template_folder](./reply-template-folder)|No|
 |name|The name of this folder.|String(64)|No|
 |description|The description of this folder.|String(255)|Yes|
 |flags|A bitmap for this folder.|Int|Yes|

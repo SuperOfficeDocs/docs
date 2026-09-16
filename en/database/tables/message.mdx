@@ -1,6 +1,6 @@
 ---
-title: Message table
-description: Definition of a message, corresponding to the header of a protocol
+title: "Message table"
+description: "Definition of a message, corresponding to the header of a protocol"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Message from "./includes/message.mdx";
 
-## Message Table (242)
-
 Definition of a message, corresponding to the header of a protocol
+
+Table number: 242
 
 ## Fields
 
@@ -18,16 +18,16 @@ Definition of a message, corresponding to the header of a protocol
 |------|-------------|------|:----:|
 |Message\_id|Primary key|PK|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
-|associateId|The associate that is the target of this message|FK [associate](./associate.mdx)|No|
-|onlineapp\_id|The online app that owns this message|FK [OnlineApp](./onlineapp.mdx)|No|
+|associateId|The associate that is the target of this message|FK [associate](./associate)|No|
+|onlineapp\_id|The online app that owns this message|FK [OnlineApp](./onlineapp)|No|
 |systemMessageId|Message identifier, used for message update or removal|String(255)|No|
 |markdownMessage|Markdown message to be displayed to user|String(4000)|No|
 |expire|The date and time the message expires|UtcDateTime|No|
-|type|Type of message, example: info, warning, error|Enum [SystemMessageType](./enums/systemmessagetype.mdx)|No|
+|type|Type of message, example: info, warning, error|Enum [SystemMessageType](./enums/systemmessagetype)|No|
 
 
 ![Message table relationship diagram](/media/loc/en/database/tables/Message.png)

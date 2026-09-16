@@ -1,6 +1,6 @@
 ---
-title: NewsFeedItemHtml table
-description: Detailed description of the news item, in a specific language.
+title: "NewsFeedItemHtml table"
+description: "Detailed description of the news item, in a specific language."
 generated: true
 content_type: reference
 envir: online
@@ -8,16 +8,16 @@ envir: online
 
 import Newsfeeditemhtml from "./includes/newsfeeditemhtml.mdx";
 
-## NewsFeedItemHtml Table (507)
-
 Detailed description of the news item, in a specific language.
+
+Table number: 508
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |newsfeeditemhtml\_id|Primary key|PK|No|
-|newsfeeditem\_id|Foreign key to NewsFeedItem that this description belongs to.|FK [NewsFeedItem](./newsfeeditem.mdx)|No|
+|newsfeeditem\_id|Foreign key to NewsFeedItem that this description belongs to.|FK [NewsFeedItem](./newsfeeditem)|No|
 |Iso2Lang|ISO 2 letter Language code for the content. &quot;en&quot;, &quot;us&quot;, &quot;no&quot;|String(10)|No|
 |HtmlContent|The HTML content for the news feed item in the specified language. Styling through pre-defined CSS classes. No SCRIPT or STYLE tags allowed|Clob|No|
 

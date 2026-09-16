@@ -1,6 +1,6 @@
 ---
-title: form_field_restriction table
-description: This table contains all form fields restrictions
+title: "form_field_restriction table"
+description: "This table contains all form fields restrictions"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import FormFieldRestriction from "./includes/form-field-restriction.mdx";
 
-## form\_field\_restriction Table (490)
-
 This table contains all form fields restrictions
+
+Table number: 490
 
 ## Fields
 
@@ -18,11 +18,11 @@ This table contains all form fields restrictions
 |------|-------------|------|:----:|
 |form\_field\_restriction\_id|Primary key|PK|No|
 |field\_identifier|the identifier for the field|String(255)|Yes|
-|field\_restriction|The restriction set on the field|Enum [FormFieldRestrictionType](./enums/formfieldrestrictiontype.mdx)|Yes|
+|field\_restriction|The restriction set on the field|Enum [FormFieldRestrictionType](./enums/formfieldrestrictiontype)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

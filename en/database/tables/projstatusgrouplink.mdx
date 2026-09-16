@@ -1,6 +1,6 @@
 ---
-title: ProjStatusGroupLink table
-description: User group link table for ProjStatus, for MDO item hiding
+title: "ProjStatusGroupLink table"
+description: "User group link table for ProjStatus, for MDO item hiding"
 generated: true
 content_type: reference
 envir: online
@@ -8,21 +8,21 @@ envir: online
 
 import Projstatusgrouplink from "./includes/projstatusgrouplink.mdx";
 
-## ProjStatusGroupLink Table (89)
-
 User group link table for ProjStatus, for MDO item hiding
+
+Table number: 89
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |projstatusgrouplink\_id|Primary key|PK|No|
-|projstatus\_id|Link to ProjStatus list table|FK [ProjStatus](./projstatus.mdx)|No|
-|group\_id|Link to Group table|FK [UserGroup](./usergroup.mdx)|No|
+|projstatus\_id|Link to ProjStatus list table|FK [ProjStatus](./projstatus)|No|
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

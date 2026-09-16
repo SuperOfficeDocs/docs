@@ -1,6 +1,6 @@
 ---
-title: address table
-description: Contact and Person addresses
+title: "address table"
+description: "Contact and Person addresses"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Address from "./includes/address.mdx";
 
-## address Table (7)
-
 Contact and Person addresses
+
+Table number: 7
 
 ## Fields
 
@@ -18,7 +18,7 @@ Contact and Person addresses
 |------|-------------|------|:----:|
 |address\_id|Primary key|PK|No|
 |owner\_id|Record id of owner: Contact or Person|Id|No|
-|atype\_idx|Bit mask, combines address type (EAddressType) and owner type (EOwnerType)|Enum [AddressType](./enums/addresstype.mdx)|No|
+|atype\_idx|Bit mask, combines address type (EAddressType) and owner type (EOwnerType)|Enum [AddressType](./enums/addresstype)|No|
 |zipcode|Zip code, alphanumeric|String(11)|No|
 |city|City corresponding to zip code|String(79)|Yes|
 |state|State|String(5)|Yes|
@@ -27,9 +27,9 @@ Contact and Person addresses
 |address2|Address line 2|String(79)|Yes|
 |address3|Address line 3|String(79)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 |validFrom|Valid from date for this record|DateTime|Yes|
 |validTo|Valid to date for this record|DateTime|Yes|

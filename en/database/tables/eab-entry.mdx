@@ -1,6 +1,6 @@
 ---
-title: eab_entry table
-description: This table contains eab (email address book) entries, i.e. an alias (&amp;apos;Ola Hansen&amp;apos;) and an address (&amp;apos;ola@hansen.as&amp;apos;).
+title: "eab_entry table"
+description: "This table contains eab (email address book) entries, i.e. an alias (&amp;apos;Ola Hansen&amp;apos;) and an address (&amp;apos;ola@hansen.as&amp;apos;)."
 generated: true
 content_type: reference
 envir: online
@@ -8,20 +8,20 @@ envir: online
 
 import EabEntry from "./includes/eab-entry.mdx";
 
-## eab\_entry Table (315)
-
 This table contains eab (email address book) entries, i.e. an alias (&amp;apos;Ola Hansen&amp;apos;) and an address (&amp;apos;ola@hansen.as&amp;apos;).
+
+Table number: 315
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|folder\_id|The id of the folder in which this entry is located.|FK [eab_folder](./eab-folder.mdx)|No|
+|folder\_id|The id of the folder in which this entry is located.|FK [eab_folder](./eab-folder)|No|
 |name|The name of this email address|String(64)|No|
 |email\_address|The actual email address.|String(255)|Yes|
 |sms\_number|The sms number for this person|String(255)|Yes|
-|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent.mdx)|No|
+|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent)|No|
 |dbi\_key|The primary key for the integrated entry in the external datasource.|String(255)|No|
 |dbi\_last\_syncronized|Last external syncronization.|DateTime|No|
 |dbi\_last\_modified|When the entry was last modified.|DateTime|No|

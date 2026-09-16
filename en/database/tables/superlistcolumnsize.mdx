@@ -1,6 +1,6 @@
 ---
-title: SuperListColumnSize table
-description: Stores the relative size (in percent) or in characters of a column in a SuperList
+title: "SuperListColumnSize table"
+description: "Stores the relative size (in percent) or in characters of a column in a SuperList"
 generated: true
 content_type: reference
 envir: online
@@ -8,31 +8,31 @@ envir: online
 
 import Superlistcolumnsize from "./includes/superlistcolumnsize.mdx";
 
-## SuperListColumnSize Table (209)
-
 Stores the relative size (in percent) or in characters of a column in a SuperList
+
+Table number: 209
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |SuperListColumnSize\_id|Primary key|PK|No|
-|assoc\_id|Owning associate|FK [associate](./associate.mdx)|No|
+|assoc\_id|Owning associate|FK [associate](./associate)|No|
 |listOwner|The dialog, panel or whatever that owns this record|String(254)|No|
 |listColumn|The name of the column|String(254)|No|
 |columnSize|The size, either as a percentage, characters, or other code as needed|String(254)|No|
 |extraInfo|Extra information - show state, or whatever is required|String(254)|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 |rank|Column rank, from left to right in display|UShort|Yes|
 |orderByRank|Order by rank, 0 if this column is not part of orderby|UShort|Yes|
 |orderByDirection|Direction, 1 = ascending, 2 = descending; 0 = not an orderby column|UShort|Yes|
 |ownerTable|Optional owner table, if layout is bound to an owner (Selection, ...)|TableNumber|Yes|
 |ownerRecord|Optional owner record id, if layout is bound to an owner|RecordId|Yes|
-|group\_id|Optional group id, if layout is bound to a group|FK [UserGroup](./usergroup.mdx)|Yes|
+|group\_id|Optional group id, if layout is bound to a group|FK [UserGroup](./usergroup)|Yes|
 |configurationName|Name to show in dropdowns/menus so this configuration can be selected|String(255)|Yes|
 
 

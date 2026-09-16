@@ -1,6 +1,6 @@
 ---
-title: ProjStatusHeadingLink table
-description: Heading link table for ProjStatus, for MDO headers
+title: "ProjStatusHeadingLink table"
+description: "Heading link table for ProjStatus, for MDO headers"
 generated: true
 content_type: reference
 envir: online
@@ -8,21 +8,21 @@ envir: online
 
 import Projstatusheadinglink from "./includes/projstatusheadinglink.mdx";
 
-## ProjStatusHeadingLink Table (90)
-
 Heading link table for ProjStatus, for MDO headers
+
+Table number: 90
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |projstatusheadinglink\_id|Primary key|PK|No|
-|projstatus\_id|Link to ProjStatus list table|FK [ProjStatus](./projstatus.mdx)|No|
-|heading\_id|Link to Heading table|FK [Heading](./heading.mdx)|No|
+|projstatus\_id|Link to ProjStatus list table|FK [ProjStatus](./projstatus)|No|
+|heading\_id|Link to Heading table|FK [Heading](./heading)|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

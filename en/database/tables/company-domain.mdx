@@ -1,6 +1,6 @@
 ---
-title: company_domain table
-description: This table contains web-domains associated with a certain cust_company entry.
+title: "company_domain table"
+description: "This table contains web-domains associated with a certain cust_company entry."
 generated: true
 content_type: reference
 envir: online
@@ -8,16 +8,16 @@ envir: online
 
 import CompanyDomain from "./includes/company-domain.mdx";
 
-## company\_domain Table (303)
-
 This table contains web-domains associated with a certain cust_company entry.
+
+Table number: 303
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|company\_id|The cust_company entry this domain is associated with.|FK [contact](./contact.mdx)|No|
+|company\_id|The cust_company entry this domain is associated with.|FK [contact](./contact)|No|
 |domain\_name|The domain. E.g. &amp;apos;www.ejournal.no&amp;apos;, &amp;apos;company.com&amp;apos;, &amp;apos;http://some.domain.net&amp;apos;|String(255)|No|
 |rank|The rank|Int|No|
 

@@ -1,6 +1,6 @@
 ---
-title: EntityCounts table
-description: Number of different entities an associate has created for usage statistics
+title: "EntityCounts table"
+description: "Number of different entities an associate has created for usage statistics"
 generated: true
 content_type: reference
 envir: online
@@ -8,16 +8,16 @@ envir: online
 
 import Entitycounts from "./includes/entitycounts.mdx";
 
-## EntityCounts Table (547)
-
 Number of different entities an associate has created for usage statistics
+
+Table number: 548
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |entitycounts\_id|Primary key|PK|No|
-|associate\_id|Associate who created the entity|FK [associate](./associate.mdx)|Yes|
+|associate\_id|Associate who created the entity|FK [associate](./associate)|Yes|
 |entity\_name|The entity measured by this tile|String(255)|Yes|
 |records|Number of related entities an associate has created|Int|Yes|
 |registered|Registered when|UtcDateTime|Yes|

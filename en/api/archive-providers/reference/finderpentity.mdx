@@ -1,15 +1,15 @@
 ---
-title: FindErpEntity
-description: 
+title: "FindErpEntity"
+description: "Provider for searching in projects"
 keywords: FindErpEntity archive provider
 generated: true
 content_type: reference
 envir: onsite, online
 ---
 
-## "FindErpEntity"
+This provider name is implemented by the class `SuperOffice.ErpSync.FindErpEntityProvider` inside NetServer's SODatabase assembly.
 
-This provider name is implemented by the class SuperOffice.ErpSync.FindErpEntityProvider inside NetServer's SODatabase assembly.
+Provider for searching in projects
 
 ## Supported Entities
 | Name | Description |
@@ -19,22 +19,10 @@ This provider name is implemented by the class SuperOffice.ErpSync.FindErpEntity
 ## Supported Columns
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
-|ConnectionId| *None* |ERP connection ID: ERP connection ID| x |
-|SearchText| *None* |Search text: Search text| x |
-|ErpActorType| *None* |Actor type: Actor type| x |
 |Connected| *None* |Connected: Connected| x |
-|OnlyParentConnected| *None* |OnlyParentConnected: OnlyParentConnected| x |
+|ConnectionId| *None* |ERP connection ID: ERP connection ID| x |
+|ErpActorType| *None* |Actor type: Actor type| x |
 |ErpKey| *None* |ErpKey: ErpKey| x |
-
-## Sample
-
-```http!
-GET /api/v1/archive/FindErpEntity?$select=ErpActorType,Connected
-Authorization: Basic dGplMDpUamUw
-Accept: application/json; charset=utf-8
-Accept-Language: sv
-
-```
-
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
-
+|OnlyParentConnected| *None* |OnlyParentConnected: OnlyParentConnected| x |
+|SearchText| *None* |Search text: Search text| x |
+There is no generated sample for this provider.

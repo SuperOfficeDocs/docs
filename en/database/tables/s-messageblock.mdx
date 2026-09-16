@@ -1,6 +1,6 @@
 ---
-title: s_messageblock table
-description: Contains a block of a mailing message, that can be reused in a mailing
+title: "s_messageblock table"
+description: "Contains a block of a mailing message, that can be reused in a mailing"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import SMessageblock from "./includes/s-messageblock.mdx";
 
-## s\_messageblock Table (499)
-
 Contains a block of a mailing message, that can be reused in a mailing
+
+Table number: 499
 
 ## Fields
 
@@ -18,11 +18,11 @@ Contains a block of a mailing message, that can be reused in a mailing
 |------|-------------|------|:----:|
 |s\_messageblock\_id|Primary key|PK|No|
 |block|The block definition. Normally this will be a json structure|Clob|Yes|
-|associateId|The associate that owns this block|FK [associate](./associate.mdx)|Yes|
+|associateId|The associate that owns this block|FK [associate](./associate)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

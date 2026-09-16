@@ -1,15 +1,13 @@
 ---
-title: TimeZones
-description: 
+title: "TimeZones"
+description: ""
 keywords: TimeZones archive provider
 generated: true
 content_type: reference
 envir: onsite, online
 ---
 
-## "TimeZones"
-
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.TimeZonesProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.TimeZonesProvider` inside NetServer's SODatabase assembly.
 
 ## Supported Entities
 | Name | Description |
@@ -19,29 +17,29 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Time
 ## Supported Columns
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|cities|string|Cities| x |
+|country|string|Country| x |
+|daylight| *None* |Daylight|  |
+|daylightRaw| *None* |Daylight|  |
+|flag| *None* || x |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
 |id| *None* ||  |
 |isActive| *None* || x |
-|flag| *None* || x |
-|timeZone|string|Time zone| x |
-|country|string|Country| x |
-|region|string|Region| x |
-|cities|string|Cities| x |
 |offset| *None* |Offset|  |
-|daylight| *None* |Daylight|  |
 |offsetRaw| *None* |Offset|  |
-|daylightRaw| *None* |Daylight|  |
+|region|string|Region| x |
+|timeZone|string|Time zone| x |
 
 ## Sample
 
 ```http!
-GET /api/v1/archive/TimeZones?$select=flag,country
+GET /api/v1/archive/TimeZones?$select=cities,country,flag,offset,timeZone
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: `IArchiveAgent`.
 

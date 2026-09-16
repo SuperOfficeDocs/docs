@@ -1,6 +1,6 @@
 ---
-title: ejpackage_item table
-description: This table stores info on installed packages in the system
+title: "ejpackage_item table"
+description: "This table stores info on installed packages in the system"
 generated: true
 content_type: reference
 envir: online
@@ -8,21 +8,21 @@ envir: online
 
 import EjpackageItem from "./includes/ejpackage-item.mdx";
 
-## ejpackage\_item Table (385)
-
 This table stores info on installed packages in the system
+
+Table number: 385
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|Primary key|PK|No|
-|ejpackage|The id of the package for which this item belongs|FK [ejpackage](./ejpackage.mdx)|No|
+|ejpackage|The id of the package for which this item belongs|FK [ejpackage](./ejpackage)|No|
 |idx|The index in the package|Int|No|
 |domain|The domain for which this item belongs (domains are defined in PackageLib.h)|Int|No|
 |item\_id|The id of the element for which this item belongs|Int|No|
 |ref\_name|Used to reference the item in installscript|String(255)|Yes|
-|parent\_id|The parent for this package item link. -1 if this is a toplevel item link.|FK [ejpackage_item](./ejpackage-item.mdx)|No|
+|parent\_id|The parent for this package item link. -1 if this is a toplevel item link.|FK [ejpackage_item](./ejpackage-item)|No|
 
 
 ![ejpackage_item table relationship diagram](/media/loc/en/database/tables/ejpackage_item.png)

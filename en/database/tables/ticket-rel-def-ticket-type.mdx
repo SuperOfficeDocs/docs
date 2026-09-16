@@ -1,6 +1,6 @@
 ---
-title: ticket_rel_def_ticket_type table
-description: Link table defining what Ticket types are involved in this relation. Will have M;N rows for a single relation definition
+title: "ticket_rel_def_ticket_type table"
+description: "Link table defining what Ticket types are involved in this relation. Will have M;N rows for a single relation definition"
 generated: true
 content_type: reference
 envir: online
@@ -8,18 +8,18 @@ envir: online
 
 import TicketRelDefTicketType from "./includes/ticket-rel-def-ticket-type.mdx";
 
-## ticket\_rel\_def\_ticket\_type Table (556)
-
 Link table defining what Ticket types are involved in this relation. Will have M;N rows for a single relation definition
+
+Table number: 557
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |ticket\_rel\_def\_ticket\_type\_id|Primary key|PK|No|
-|ticket\_relation\_def\_id|Ticket relation definition|FK [ticket_relation_def](./ticket-relation-def.mdx)|No|
-|source\_ticket\_type\_id|Ticket type|FK [ticket_type](./ticket-type.mdx)|No|
-|destination\_ticket\_type\_id|Ticket type|FK [ticket_type](./ticket-type.mdx)|No|
+|ticket\_relation\_def\_id|Ticket relation definition|FK [ticket_relation_def](./ticket-relation-def)|No|
+|source\_ticket\_type\_id|Ticket type|FK [ticket_type](./ticket-type)|No|
+|destination\_ticket\_type\_id|Ticket type|FK [ticket_type](./ticket-type)|No|
 
 
 ![ticket_rel_def_ticket_type table relationship diagram](/media/loc/en/database/tables/ticket_rel_def_ticket_type.png)

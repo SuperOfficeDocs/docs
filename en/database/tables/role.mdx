@@ -1,6 +1,6 @@
 ---
-title: Role table
-description: User roles for role-based security, names and tooltips are in LocaleText. For more information regarding role based security, see http;//techdoc.superoffice.com
+title: "Role table"
+description: "User roles for role-based security, names and tooltips are in LocaleText. For more information regarding role based security, see http;//techdoc.superoffice.com"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Role from "./includes/role.mdx";
 
-## Role Table (191)
-
 User roles for role-based security, names and tooltips are in LocaleText. For more information regarding role based security, see http;//techdoc.superoffice.com
+
+Table number: 191
 
 ## Fields
 
@@ -21,12 +21,12 @@ User roles for role-based security, names and tooltips are in LocaleText. For mo
 |rank|Sorting rank of this role in lists|UShort|No|
 |tooltip|Visible tooltip|String(254)|Yes|
 |deleted|1 if role has been deleted (we do not actually delete)|UShort|No|
-|roleType|0 = employee, 1 = external user, 2 = anonymous|Enum [RoleType](./enums/roletype.mdx)|No|
+|roleType|0 = employee, 1 = external user, 2 = anonymous|Enum [RoleType](./enums/roletype)|No|
 |encryptedCheck|Encrypted data, to detect unwanted changes|String(254)|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 |use\_categories|Override user categories with role categories|Bool|Yes|
 

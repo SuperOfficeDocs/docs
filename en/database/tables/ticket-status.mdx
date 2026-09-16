@@ -1,6 +1,6 @@
 ---
-title: ticket_status table
-description: This table user defined ticket status values.
+title: "ticket_status table"
+description: "This table user defined ticket status values."
 generated: true
 content_type: reference
 envir: online
@@ -8,19 +8,19 @@ envir: online
 
 import TicketStatus from "./includes/ticket-status.mdx";
 
-## ticket\_status Table (263)
-
 This table user defined ticket status values.
+
+Table number: 263
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|status|The &amp;apos;classic&amp;apos; ticket status. I.e. active/closed/postponed/deleted|Enum [TicketBaseStatus](./enums/ticketbasestatus.mdx)|No|
+|status|The &amp;apos;classic&amp;apos; ticket status. I.e. active/closed/postponed/deleted|Enum [TicketBaseStatus](./enums/ticketbasestatus)|No|
 |ts\_rank|Sort order|Int|No|
 |name|Name of user defined ticket status|String(255)|No|
-|time\_counter|Which field in ticket we count time spent on (queue, internal, external) |Enum [TicketStatusTimeCounter](./enums/ticketstatustimecounter.mdx)|Yes|
+|time\_counter|Which field in ticket we count time spent on (queue, internal, external) |Enum [TicketStatusTimeCounter](./enums/ticketstatustimecounter)|Yes|
 |deleted|Whether the status is deleted (unavailable) or not|Bool|Yes|
 |no\_email\_reopen|Whether inbound emails can reopen requests with this status or not|Bool|Yes|
 

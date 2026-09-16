@@ -1,20 +1,18 @@
 ---
-title: FormFolders
-description: Archive of form folders. Lists all rows of s_picture_folder where
+title: "FormFolders"
+description: "Archive of form folders. Lists all rows of s_picture_folder where folder_type = formFolder. Mirrors `MailingFolderProvider`. Named in the plural — `SuperOffice.CRM.Lists.FormFolderProvider` is the MDO list that backs the folder pickers, and several files in this assembly import both namespaces."
 keywords: FormFolders archive provider
 generated: true
 content_type: reference
 envir: onsite, online
 ---
 
-## "FormFolders"
-
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.FormFoldersProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.FormFoldersProvider` inside NetServer's SODatabase assembly.
 
 Archive of form folders. Lists all rows of s_picture_folder where
-folder_type = formFolder. Mirrors [MailingFolderProvider](./mailingfolders).
+folder_type = formFolder. Mirrors `MailingFolderProvider`.
 
-Named in the plural — <c>SuperOffice.CRM.Lists.FormFolderProvider</c> is the
+Named in the plural — `SuperOffice.CRM.Lists.FormFolderProvider` is the
 MDO list that backs the folder pickers, and several files in this assembly
 import both namespaces.
 
@@ -26,12 +24,12 @@ import both namespaces.
 ## Supported Columns
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
-|getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
-|getNoRows|bool|GetNone: Do not get any rows from the archive|  |
 |folderId|int|Hierarchy ID: Foreign key to hierarchy table| x |
-|parentFolderId|int|Hierarchy ID: Foreign key to hierarchy table| x |
 |folderName|string|Hierarchy name: The full name/path from table hierarchy| x |
 |formThumbnail| *None* |Thumbnail: Form thumbnail|  |
+|getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
+|getNoRows|bool|GetNone: Do not get any rows from the archive|  |
+|parentFolderId|int|Hierarchy ID: Foreign key to hierarchy table| x |
 |sortGroup| *None* || x |
 |sortName| *None* || x |
 |type| *None* |Type: Displays the type of an activity|  |
@@ -39,12 +37,12 @@ import both namespaces.
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormFolders?$select=parentFolderId,folderName
+GET /api/v1/archive/FormFolders?$select=folderName,formThumbnail,type
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: `IArchiveAgent`.
 

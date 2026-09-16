@@ -1,15 +1,13 @@
 ---
-title: Criteria
-description: 
+title: "Criteria"
+description: ""
 keywords: Criteria archive provider
 generated: true
 content_type: reference
 envir: onsite, online
 ---
 
-## "Criteria"
-
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.CriteriaProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.CriteriaProvider` inside NetServer's SODatabase assembly.
 
 ## Supported Entities
 | Name | Description |
@@ -19,22 +17,22 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Crit
 ## Supported Columns
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
-|key| *None* |Key: Unique key, based on criterion name and any subcriteria| x |
 |active| *None* |Enabled: Specifies whether the criterion is enabled| x |
-|icon| *None* |Icon: Criterion icon, based on icon of current column| x |
 |criterion| *None* |Name: The name of the search criterion| x |
+|icon| *None* |Icon: Criterion icon, based on icon of current column| x |
+|key| *None* |Key: Unique key, based on criterion name and any subcriteria| x |
 |operator| *None* |Operator: The operator used by this search criterion| x |
 |value| *None* |Value: The value used by the search criterion.| x |
 
 ## Sample
 
 ```http!
-GET /api/v1/archive/Criteria?$select=icon,criterion
+GET /api/v1/archive/Criteria?$select=active,criterion,icon,operator,value
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: `IArchiveAgent`.
 

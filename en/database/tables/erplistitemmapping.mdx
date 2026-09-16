@@ -1,6 +1,6 @@
 ---
-title: ErpListItemMapping table
-description: Defines a mapping of ERP to CRM fields, per connection and actor type
+title: "ErpListItemMapping table"
+description: "Defines a mapping of ERP to CRM fields, per connection and actor type"
 generated: true
 content_type: reference
 envir: online
@@ -8,22 +8,22 @@ envir: online
 
 import Erplistitemmapping from "./includes/erplistitemmapping.mdx";
 
-## ErpListItemMapping Table (424)
-
 Defines a mapping of ERP to CRM fields, per connection and actor type
+
+Table number: 424
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |erplistitemmapping\_id|Primary key|PK|No|
-|ErpFieldId|Link to the Erp field (and implicitly to crm list and Erp Connection)|FK [ErpField](./erpfield.mdx)|No|
+|ErpFieldId|Link to the Erp field (and implicitly to crm list and Erp Connection)|FK [ErpField](./erpfield)|No|
 |ErpItemKey|The unique key in the ERP system for this list item|String(254)|No|
 |CrmItemKey|The unique key in the CRM database for this list item (list/table is identified by the ListReference in ErpField)|Int|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

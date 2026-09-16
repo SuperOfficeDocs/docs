@@ -1,6 +1,6 @@
 ---
-title: LicenseAssocLink table
-description: Link between ModuleLicense and Associate, for per-assoc licenses; this is how licenses are assigned/consumed
+title: "LicenseAssocLink table"
+description: "Link between ModuleLicense and Associate, for per-assoc licenses; this is how licenses are assigned/consumed"
 generated: true
 content_type: reference
 envir: online
@@ -8,26 +8,26 @@ envir: online
 
 import Licenseassoclink from "./includes/licenseassoclink.mdx";
 
-## LicenseAssocLink Table (238)
-
 Link between ModuleLicense and Associate, for per-assoc licenses; this is how licenses are assigned/consumed
+
+Table number: 238
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |LicenseAssocLink\_id|Primary key|PK|No|
-|moduleLicenseId|The license being linked|FK [ModuleLicense](./modulelicense.mdx)|No|
-|assocId|The associate who occupies one instance of this license|FK [associate](./associate.mdx)|No|
+|moduleLicenseId|The license being linked|FK [ModuleLicense](./modulelicense)|No|
+|assocId|The associate who occupies one instance of this license|FK [associate](./associate)|No|
 |validFrom|Reserved field: Valid from date|DateTime|No|
 |validTo|Reserved field: Valid to date|DateTime|No|
 |licenseNumber|Number of license items occupied by this associate - each module will have to decide on the semantics of this|UInt|No|
 |comment|Optional comment field|String(254)|No|
 |encryptedCheck|Encrypted checksum; tampering will block system usage|String(254)|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

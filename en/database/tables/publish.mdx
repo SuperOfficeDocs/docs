@@ -1,6 +1,6 @@
 ---
-title: Publish table
-description: Publishing system for external users
+title: "Publish table"
+description: "Publishing system for external users"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Publish from "./includes/publish.mdx";
 
-## Publish Table (200)
-
 Publishing system for external users
+
+Table number: 200
 
 ## Fields
 
@@ -19,15 +19,15 @@ Publishing system for external users
 |Publish\_id|Primary key|PK|No|
 |tableNumber|Table number this record refers to|TableNumber|No|
 |recordId|Record number that has been published|RecordId|Yes|
-|publishType|Type of publishing action, 0 = Unknown, 1 = to external persons|Enum [PublishType](./enums/publishtype.mdx)|Yes|
+|publishType|Type of publishing action, 0 = Unknown, 1 = to external persons|Enum [PublishType](./enums/publishtype)|Yes|
 |publishFrom|Publication valid from (inclusive)|DateTime|Yes|
 |publishTo|Publication valid to (inclusive)|DateTime|Yes|
 |eventDate|The date an event actually happens; you may want to have some special processing around that date|DateTime|Yes|
 |encryptedCheck|Encrypted data, to detect unwanted changes|String(254)|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

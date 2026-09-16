@@ -1,6 +1,6 @@
 ---
-title: chat_message table
-description: This table contains messages in a chat session.
+title: "chat_message table"
+description: "This table contains messages in a chat session."
 generated: true
 content_type: reference
 envir: online
@@ -8,24 +8,24 @@ envir: online
 
 import ChatMessage from "./includes/chat-message.mdx";
 
-## chat\_message Table (333)
-
 This table contains messages in a chat session.
+
+Table number: 333
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|session\_id|The reference to the associated chat session.|FK [chat_session](./chat-session.mdx)|No|
+|session\_id|The reference to the associated chat session.|FK [chat_session](./chat-session)|No|
 |message|The message.|Clob|Yes|
 |when\_posted|When the message was posted (UTC timestamp).|DateTime|Yes|
-|special\_type|Enum indicating if it is a special message, such as an URL redirection, etc.|Enum [ChatMessageSpecialType](./enums/chatmessagespecialtype.mdx)|Yes|
+|special\_type|Enum indicating if it is a special message, such as an URL redirection, etc.|Enum [ChatMessageSpecialType](./enums/chatmessagespecialtype)|Yes|
 |special\_param|Special parameter for the special_type.|String(255)|Yes|
 |read\_by\_customer|Whether the message has been read by the customer or not.|Bool|Yes|
-|type|The type of the message.|Enum [ChatMessageType](./enums/chatmessagetype.mdx)|Yes|
+|type|The type of the message.|Enum [ChatMessageType](./enums/chatmessagetype)|Yes|
 |author|The author of the message.|String(255)|Yes|
-|created\_by|The user agent who wrote the message. -1 if customer|FK [ejuser](./ejuser.mdx)|Yes|
+|created\_by|The user agent who wrote the message. -1 if customer|FK [ejuser](./ejuser)|Yes|
 
 
 ![chat_message table relationship diagram](/media/loc/en/database/tables/chat_message.png)

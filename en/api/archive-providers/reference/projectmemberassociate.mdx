@@ -1,15 +1,13 @@
 ---
-title: ProjectMemberAssociate
-description: 
+title: "ProjectMemberAssociate"
+description: ""
 keywords: ProjectMemberAssociate archive provider
 generated: true
 content_type: reference
 envir: onsite, online
 ---
 
-## "ProjectMemberAssociate"
-
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.ProjectMemberAssociateProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.ProjectMemberAssociateProvider` inside NetServer's SODatabase assembly.
 
 ## Supported Entities
 | Name | Description |
@@ -20,23 +18,23 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Proj
 ## Supported Columns
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|conflictStatus| *None* |Status: Shows any conflicts with other follow-ups|  |
+|fullName|string|Contact: Displays the contact to which an item is linked| x |
+|function|listAny|Function: Displays the project member's function in the project| x |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
-|conflictStatus| *None* |Status: Shows any conflicts with other follow-ups|  |
-|function|listAny|Function: Displays the project member's function in the project| x |
-|fullName|string|Contact: Displays the contact to which an item is linked| x |
 |nameDepartment|string|Company: Displays the company an activity is linked to| x |
 |projectId|int|Project ID: Project ID| x |
 
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectMemberAssociate?$select=conflictStatus,function
+GET /api/v1/archive/ProjectMemberAssociate?$select=conflictStatus,fullName,function,nameDepartment
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: `IArchiveAgent`.
 

@@ -1,6 +1,6 @@
 ---
-title: PushNotificationService table
-description: Used for storing handles to user devices that should receive push notifications
+title: "PushNotificationService table"
+description: "Used for storing handles to user devices that should receive push notifications"
 generated: true
 content_type: reference
 envir: online
@@ -8,28 +8,28 @@ envir: online
 
 import Pushnotificationservice from "./includes/pushnotificationservice.mdx";
 
-## PushNotificationService Table (511)
-
 Used for storing handles to user devices that should receive push notifications
+
+Table number: 512
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |pushnotificationservice\_id|Primary key|PK|No|
-|AssociateId|To whom does this handle belong|FK [associate](./associate.mdx)|No|
+|AssociateId|To whom does this handle belong|FK [associate](./associate)|No|
 |DeviceIdentifier|Unique device identifier|String(256)|No|
 |DeviceDisplayName|Userfriendly name for device. Ex: &apos;My iPhone 5S&apos;|String(256)|Yes|
-|DevicePlatform|Device platform. Apple, Google, Microsoft, etc.|Enum [NotificationPlatform](./enums/notificationplatform.mdx)|No|
+|DevicePlatform|Device platform. Apple, Google, Microsoft, etc.|Enum [NotificationPlatform](./enums/notificationplatform)|No|
 |PNSHandle|The platform specific handle needed for pushing messages directly to this device|String(1024)|No|
 |Tags|Comma separated list of notification types this device should or should not receive notifications about. Ex: &apos;invitations=0,meetings=1|String(3072)|Yes|
 |PNSHandleUpdateDate|When was the PNSHandle for this device last updated|DateTime|Yes|
 |LastNotificationDate|When was a notification last sent to this device|DateTime|Yes|
 |TotalNotificationCount|How many notifications have been sent to this device|Int|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 |Language|The language to send translated messages in|String(256)|Yes|
 |PocketVersion|The version of Pocket CRM this device is using|String(256)|Yes|

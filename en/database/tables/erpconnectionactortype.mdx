@@ -1,6 +1,6 @@
 ---
-title: ErpConnectionActorType table
-description: Data about the configuration of one Erp Actor on one ErpConnection
+title: "ErpConnectionActorType table"
+description: "Data about the configuration of one Erp Actor on one ErpConnection"
 generated: true
 content_type: reference
 envir: online
@@ -8,23 +8,23 @@ envir: online
 
 import Erpconnectionactortype from "./includes/erpconnectionactortype.mdx";
 
-## ErpConnectionActorType Table (419)
-
 Data about the configuration of one Erp Actor on one ErpConnection
+
+Table number: 419
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |erpconnectionactortype\_id|Primary key|PK|No|
-|ErpConnectionId|The connection this actor is configured for|FK [ErpConnection](./erpconnection.mdx)|No|
-|ActorTypeErp|The actor type (ERP side)|Enum [ErpActorType](./enums/erpactortype.mdx)|No|
-|ActorTypeCrm|The actor type (CRM side)|Enum [CrmActorType](./enums/crmactortype.mdx)|Yes|
+|ErpConnectionId|The connection this actor is configured for|FK [ErpConnection](./erpconnection)|No|
+|ActorTypeErp|The actor type (ERP side)|Enum [ErpActorType](./enums/erpactortype)|No|
+|ActorTypeCrm|The actor type (CRM side)|Enum [CrmActorType](./enums/crmactortype)|Yes|
 |IsActive|Is this mapping/synchronization configuration currently active|Bool|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

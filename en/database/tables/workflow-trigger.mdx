@@ -1,6 +1,6 @@
 ---
-title: workflow_trigger table
-description: A set of triggers related to a workflow.
+title: "workflow_trigger table"
+description: "A set of triggers related to a workflow."
 generated: true
 content_type: reference
 envir: online
@@ -8,21 +8,21 @@ envir: online
 
 import WorkflowTrigger from "./includes/workflow-trigger.mdx";
 
-## workflow\_trigger Table (531)
-
 A set of triggers related to a workflow.
+
+Table number: 532
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |workflow\_trigger\_id|Primary key|PK|No|
-|workflow\_id|The flow this trigger belongs to|FK [workflow](./workflow.mdx)|Yes|
-|trigger\_type|What kind of trigger is this|Enum [WorkflowTriggerType](./enums/workflowtriggertype.mdx)|Yes|
+|workflow\_id|The flow this trigger belongs to|FK [workflow](./workflow)|Yes|
+|trigger\_type|What kind of trigger is this|Enum [WorkflowTriggerType](./enums/workflowtriggertype)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

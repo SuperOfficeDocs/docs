@@ -1,6 +1,6 @@
 ---
-title: kb_entry table
-description: This table contains FAQ entries.
+title: "kb_entry table"
+description: "This table contains FAQ entries."
 generated: true
 content_type: reference
 envir: online
@@ -8,22 +8,22 @@ envir: online
 
 import KbEntry from "./includes/kb-entry.mdx";
 
-## kb\_entry Table (282)
-
 This table contains FAQ entries.
+
+Table number: 282
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|category\_id|The id of the category in which this entry is located.|FK [kb_category](./kb-category.mdx)|No|
+|category\_id|The id of the category in which this entry is located.|FK [kb_category](./kb-category)|No|
 |title|The title of this entry.|String(255)|Yes|
 |question|The question for this entry.|Clob|Yes|
 |answer|The answer for this entry.|Clob|Yes|
 |keywords|The keywords for this entry|String(255)|Yes|
 |access\_level|The access level for this entry (enum).|access_level|Yes|
-|created\_by|The id of the user who owns this entry.|FK [ejuser](./ejuser.mdx)|Yes|
+|created\_by|The id of the user who owns this entry.|FK [ejuser](./ejuser)|Yes|
 |sort\_order|A scrictly ascending number indicating the sort-order when listing entries.|Int|No|
 |last\_changed|When the entry was last changed.|DateTime|Yes|
 |read\_count|The number of times someone has read this entry from the customer frontend.|Int|No|
@@ -32,8 +32,8 @@ This table contains FAQ entries.
 |flags|A bitmap field.|UInt|Yes|
 |status|The status for this entry (enum).|status|Yes|
 |expire\_date|The date until which this entry is valid.|DateTime|Yes|
-|workflow\_phase|The workflow phase this entry is in|FK [kb_workflow](./kb-workflow.mdx)|No|
-|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent.mdx)|No|
+|workflow\_phase|The workflow phase this entry is in|FK [kb_workflow](./kb-workflow)|No|
+|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent)|No|
 |dbi\_key|The primary key for the integrated entry in the external datasource.|String(255)|No|
 |dbi\_last\_syncronized|Last external syncronization.|DateTime|No|
 |dbi\_last\_modified|When the entry was last modified.|DateTime|No|

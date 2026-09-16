@@ -1,6 +1,6 @@
 ---
-title: ejuser table
-description: This table contains entries for the users of the system.
+title: "ejuser table"
+description: "This table contains entries for the users of the system."
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Ejuser from "./includes/ejuser.mdx";
 
-## ejuser Table (299)
-
 This table contains entries for the users of the system.
+
+Table number: 299
 
 ## Fields
 
@@ -18,7 +18,7 @@ This table contains entries for the users of the system.
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
 |loginname|The unique loginname for this user.|String(63)|No|
-|usergroup|The group this user is member of |FK [hierarchy](./hierarchy.mdx)|No|
+|usergroup|The group this user is member of |FK [hierarchy](./hierarchy)|No|
 |username|The unique username for this user.|String(63)|No|
 |password|The encrypted password for this user.|String(127)|Yes|
 |firstname|The firstname for this user.|String(127)|Yes|
@@ -33,11 +33,11 @@ This table contains entries for the users of the system.
 |sms\_mask|A bitmask indicated to which extent the user should recieve sms warnings for various events.|Int|Yes|
 |language|A string indicating the user&amp;apos;s language (&amp;apos;no&amp;apos; or &amp;apos;en&amp;apos;).|String(5)|Yes|
 |dictionary|A string indicating the user&amp;apos;s prefered dictionary language (&amp;apos;no&amp;apos; or &amp;apos;en&amp;apos;).|String(5)|Yes|
-|default\_category|The default category for this user when posting tickets and use_last_category is false. |FK [ej_category](./ej-category.mdx)|No|
+|default\_category|The default category for this user when posting tickets and use_last_category is false. |FK [ej_category](./ej-category)|No|
 |textareasize|Size of textarea for each user, example &amp;apos;80x40&amp;apos;|String(31)|Yes|
 |flags|A bitmask indicating flags for this entry.|Int|Yes|
-|last\_category|The last chosen category for this user when posting tickets.|FK [ej_category](./ej-category.mdx)|Yes|
-|profile\_id|Reference to the profile connected to this ejuser|FK [profile](./profile.mdx)|Yes|
+|last\_category|The last chosen category for this user when posting tickets.|FK [ej_category](./ej-category)|Yes|
+|profile\_id|Reference to the profile connected to this ejuser|FK [profile](./profile)|Yes|
 |hidden\_bag\_bitset|Each character represent a bit to set a HtmlBagHideable to default open or closed (1=open 0=closed)|String(255)|Yes|
 |notify\_external\_lock|A datetime lock to make sure notifications are only displayed by one notifcation system (ejournal or external programs)|DateTime|Yes|
 |notify\_external\_source|A name (id) of the external notifications system (ejournal or external programs)|String(255)|Yes|
@@ -47,22 +47,22 @@ This table contains entries for the users of the system.
 |default\_user|The default user to set on new tickets in this category (1=automatically, 2=unasigned, 3=the owner|Int|Yes|
 |sms|The SMS number for this user|String(64)|Yes|
 |new\_gui|Whether to use the new gui or not|Bool|No|
-|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent.mdx)|No|
+|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent)|No|
 |dbi\_key|The primary key for the integrated entry in the external datasource.|String(255)|No|
 |dbi\_last\_syncronized|Last external syncronization.|DateTime|No|
 |dbi\_last\_modified|When the entry was last modified.|DateTime|No|
 |minute\_offset|Offset in hours between server and ejuser timezone.|Int|No|
 |date\_format|The preferred format of dates and datetimes (enum) for this user.|date_format|No|
 |simultaneous\_login|A boolean telling if the user is counted as one of the simultaneous ones, or one who alway may log in|Bool|No|
-|picture\_id|The attachment.id this reference is connected to.|FK [attachment](./attachment.mdx)|Yes|
+|picture\_id|The attachment.id this reference is connected to.|FK [attachment](./attachment)|Yes|
 |not\_present|Comment to add for user when status is not present.|String(255)|Yes|
-|default\_status\_new\_ticket|Default status on new requests.|FK [ticket_status](./ticket-status.mdx)|Yes|
-|default\_status\_add\_message|Default status on add message.|FK [ticket_status](./ticket-status.mdx)|Yes|
+|default\_status\_new\_ticket|Default status on new requests.|FK [ticket_status](./ticket-status)|Yes|
+|default\_status\_add\_message|Default status on add message.|FK [ticket_status](./ticket-status)|Yes|
 |num\_expanded\_messages|The number of expanded messages in show-ticket view.|Int|No|
 |date\_format\_string|Chosen date format as a string for this user|String(64)|Yes|
 |time\_format\_string|Chosen time format as a string for this user|String(64)|Yes|
 |date\_format\_long\_string|Chosen date format for lists as a string for this user|String(64)|Yes|
-|chat\_status|Various chat statuses for an agent|Enum [ChatStatus](./enums/chatstatus.mdx)|Yes|
+|chat\_status|Various chat statuses for an agent|Enum [ChatStatus](./enums/chatstatus)|Yes|
 
 
 ![ejuser table relationship diagram](/media/loc/en/database/tables/ejuser.png)

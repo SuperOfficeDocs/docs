@@ -1,6 +1,6 @@
 ---
-title: ticket_type table
-description: A ticket (request) type
+title: "ticket_type table"
+description: "A ticket (request) type"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import TicketType from "./includes/ticket-type.mdx";
 
-## ticket\_type Table (552)
-
 A ticket (request) type
+
+Table number: 553
 
 ## Fields
 
@@ -21,14 +21,14 @@ A ticket (request) type
 |rank|Rank order|UShort|Yes|
 |tooltip|Tooltip or other description|String(4000)|Yes|
 |icon|Name of the icon|String(32)|No|
-|default\_status|Default ticket status for new tickets|FK [ticket_status](./ticket-status.mdx)|Yes|
-|default\_priority|Default ticket priority for new tickets|FK [ticket_priority](./ticket-priority.mdx)|Yes|
-|reply\_template|Reply template to use when replying to a ticket of this type|FK [reply_template](./reply-template.mdx)|Yes|
+|default\_status|Default ticket status for new tickets|FK [ticket_status](./ticket-status)|Yes|
+|default\_priority|Default ticket priority for new tickets|FK [ticket_priority](./ticket-priority)|Yes|
+|reply\_template|Reply template to use when replying to a ticket of this type|FK [reply_template](./reply-template)|Yes|
 |is\_external|Is this request type visible to external people and they can submit requests of this type|Bool|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 |is\_default|Is this Ticket Type marked as default|Bool|Yes|
 |show\_in\_new|Enables this request type to be accessible in +New in top bar|Bool|No|

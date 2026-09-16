@@ -1,0 +1,78 @@
+---
+title: "FormDynamicSelectionSingleCriteriaGroup"
+description: "Form selection archive using the selectionId as criterionmapping. There is no shadow variant, since a form has no person to shadow onto. The criteria the user gets to pick from are the columns of `FormFormExtender` - the same ones the Forms pane shows - so a column that should be usable as a criterion needs a restriction type on its `ArchiveColumnInfo` in `FormExtenderBase` and nothing more here."
+keywords: FormDynamicSelectionSingleCriteriaGroup archive provider
+generated: true
+content_type: reference
+envir: onsite, online
+---
+
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Archive.FormSelectionDynamicProviderSingleCriteriaGroup` inside NetServer's SODatabase assembly.
+
+Form selection archive using the selectionId as criterionmapping.
+There is no shadow variant, since a form has no person to shadow onto.
+
+The criteria the user gets to pick from are the columns of `FormFormExtender` - the same
+ones the Forms pane shows - so a column that should be usable as a criterion needs a restriction type
+on its `ArchiveColumnInfo` in `FormExtenderBase` and nothing more here.
+
+## Supported Entities
+| Name | Description |
+| ---- | ----- |
+|"form"|Form|
+
+## Supported Columns
+| Name | Restriction | Description | OrderBy |
+| ---- | ----- | ------- | ------ |
+|emailFlow/emailFlowHierarchyId|int|Hierarchy ID: Foreign key to hierarchy table| x |
+|emailFlow/emailFlowId|int|E-mail flow ID: The database ID of the e-mail flow| x |
+|emailFlow/jumpToFinish|bool|Jump to finish: Should participant jump to finish when the goals are met?| x |
+|emailFlow/mediumThumbnail| *None* |Thumbnail|  |
+|emailFlow/overrideConsentSubscription|bool|Override consent: Should consent subscriptions be overridden for this flow?| x |
+|emailFlow/registeredBy|associate|Registered by: The user who registered the data| x |
+|emailFlow/registeredDate|date|Registered date: The date/time the data was registered in UTC.| x |
+|emailFlow/shipmentType|listAny|Mailing type: Mailing type this e-mail flow represents| x |
+|emailFlow/startOnlyOnce|bool|Start only once: Should the participant enter the flow only once?| x |
+|emailFlow/thumbnail| *None* |Thumbnail|  |
+|emailFlow/updatedBy|associate|Updated by: The user who last updated the data| x |
+|emailFlow/updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
+|emailFlow/workflowCompletedCount| *None* |Completed: How many participants are completed|  |
+|emailFlow/workflowDefinitionStatus|listAny|Status: Status of the flow definition| x |
+|emailFlow/workflowDefinitionStatusId|listAny|Status: Status of the flow definition| x |
+|emailFlow/workflowDescription|string|Description: Description of flow definition| x |
+|emailFlow/workflowEnrolledCount| *None* |Enrolled: How many times has a participant entered this flow?|  |
+|emailFlow/workflowId|int|Flow id: Id of a flow definition| x |
+|emailFlow/workflowInProgressCount| *None* |In progress: How many participants are in progress|  |
+|emailFlow/workflowName|string|Name: Name of the flow definition| x |
+|emailFlow/workflowSucceededCount| *None* |Succeeded: How many participants have successfully completed the flow (goal criteria met)?|  |
+|emailFlow/workflowSuccessRate| *None* |Success rate: Success rate, based on goals criteria met|  |
+|formActive|int|Active: Active| x |
+|formDescription|string|Description: Form description| x |
+|formFolderId|int|Hierarchy ID: Foreign key to hierarchy table| x |
+|formId|int|ID: Form ID| x |
+|formName|string|Name: Form name| x |
+|formSubmissionCount| *None* |Form submissions: List of form submissions|  |
+|formThumbnail| *None* |Thumbnail: Form thumbnail|  |
+|getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
+|getNoRows|bool|GetNone: Do not get any rows from the archive|  |
+|historyRank|int|Rank: Rank of list item, if available| x |
+|registeredBy|associate|Registered by: The user who registered the data| x |
+|registeredByFullName|associate|Registered by - Full name: The user who registered the data| x |
+|registeredDate|date|Registered date: The date/time the data was registered in UTC.| x |
+|sortName| *None* || x |
+|type| *None* |Type: Displays the type of an activity|  |
+|updatedBy|associate|Updated by: The user who last updated the data| x |
+|updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
+
+## Sample
+
+```http!
+GET /api/v1/archive/FormDynamicSelectionSingleCriteriaGroup?$select=emailFlow/emailFlowId,emailFlow/thumbnail,emailFlow/workflowInProgressCount,formName,updatedDate
+Authorization: Basic dGplMDpUamUw
+Accept: application/json; charset=utf-8
+Accept-Language: sv
+
+```
+
+See also: `IArchiveAgent`.
+

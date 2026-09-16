@@ -1,24 +1,20 @@
 ---
-title: What's new in version 12.3.2570.0
-description: What's new in database version 12.3.2570.0.
-sidebarTitle: "12.3 - database changelog"
+title: "What's new in version 12.5.295.0"
+description: "What's new in database version 12.5.295.0."
+sidebarTitle: "12.5 - database changelog"
 generated: true
 keywords: database
 content_type: release-note
 envir: online
 ---
 
-## Released database changes in version 12.3.2570.0
-
 ## SuperOffice
 
 The fieldId type should be used for all fields that contain a tablenumber + fieldnumber; needed for correct mapping in the
 Windows client. Some were not correctly set earlier. We also finish off the heading.listTableId dance
 
-* Modify table CacheTables
-subKeyId
-* Modify table ImportRelation
-foreignKey
+* Modify table CacheTables: subKeyId
+* Modify table ImportRelation: foreignKey
 
 **Step 10**
 
@@ -49,18 +45,15 @@ Clear out orphan person records (contact_id != 0, no such contact record exists)
 
 Add fields and attributes to support the Soft Delete feature on person and contact tables
 
-* Modify table Contact
-DeletedDate
-* Modify table Person
-DeletedDate
+* Modify table Contact: DeletedDate
+* Modify table Person: DeletedDate
 
 **Step 20**
 
 Support Saint V2, with more entities and enable/disable
 
 * Add table SaintConfiguration
-* Modify table StatusDef
-generationStart, lastGenerated
+* Modify table StatusDef: generationStart, lastGenerated
 
 **Step 22**
 
@@ -72,8 +65,7 @@ We must handle upgrade from 8.0 RC2, since that is the version Online database m
 
 Add UserName to Associate
 
-* Modify table Associate
-userName
+* Modify table Associate: userName
 
 **Step 24**
 
@@ -100,8 +92,7 @@ NB When this step was submitted, some updated imp files for new databases were a
 
 Preference Description update with Service mappings and new rank/group fields; also cleanup of obsolete Counter preferences (#63450)
 
-* Modify table PrefDesc
-rank, subGroup, minLevel
+* Modify table PrefDesc: rank, subGroup, minLevel
 
 **Step 28**
 
@@ -120,12 +111,9 @@ Reload the CacheTabs table, to add new lists
 
 It is now possible to turn off trailing-whitespace trimming of string fields in the database; and specify this and TimeZone processing in a generic manner
 
-* Modify table appointment
-do\_By, done, endDate, activeDate
-* Modify table recurrenceRule
-startDate, endDate
-* Modify table email\_folder
-name
+* Modify table appointment: do\_By, done, endDate, activeDate
+* Modify table recurrenceRule: startDate, endDate
+* Modify table email\_folder: name
 
 **Step 31**
 
@@ -141,8 +129,7 @@ Transfer any password rules set in the now-obsolete preference System/PasswordPo
 
 Add 4 fields to DocTemplate table to support Email-templates and prime in 1 row in UdListDefinition table to declare Email templates as a list
 
-* Modify table DocTmpl
-includeSignature, showCurrents, senderEmailMode, senderEmailAddress
+* Modify table DocTmpl: includeSignature, showCurrents, senderEmailMode, senderEmailAddress
 
 **Step 34**
 
@@ -158,8 +145,7 @@ Preference descriptions for the R project
 
 New classifier fields to enabled personalized and source-bound archive layouts
 
-* Modify table SuperListColumnSize
-ownerTable, ownerRecord, group\_id, configurationName
+* Modify table SuperListColumnSize: ownerTable, ownerRecord, group\_id, configurationName
 
 **Step 37**
 
@@ -206,10 +192,8 @@ Add a table to keep historical information related to deleted associates
 
 Add a field snum to table document, and cautionWarning to appointment
 
-* Modify table Document
-snum
-* Modify table Appointment
-cautionWarning
+* Modify table Document: snum
+* Modify table Appointment: cautionWarning
 
 **Step 46**
 
@@ -220,23 +204,20 @@ Updated preferences
 
 Update preferences priming; add a virtual field on person (dotsyntax); populate the new Main Contact field on all contact records
 
-* Modify table person
-emailBounceCount
+* Modify table person: emailBounceCount
 * Modify table contact
 
 **Step 48**
 
 Add fields for language and sentiment to ej_message; Update preferences priming: move the EmailBounceThreshold preference from the System section to the Mail section
 
-* Modify table ej\_message
-language, sentiment, sentimentConfidence
+* Modify table ej\_message: language, sentiment, sentimentConfidence
 
 **Step 49**
 
 Add fields for language and sentiment to ej_message; Update preferences priming: move the EmailBounceThreshold preference from the System section to the Mail section
 
-* Modify table ej\_message
-suggestedCategory\_id
+* Modify table ej\_message: suggestedCategory\_id
 
 **Step 50**
 
@@ -247,15 +228,13 @@ Fix inconsistent Main Contact (supportPersonId) after bug in Sales.Web GUI
 
 Add a virtual field on contact (dotsyntax)
 
-* Modify table contact
-emailBounceCount
+* Modify table contact: emailBounceCount
 
 **Step 52**
 
 Add 1 field to DocTemplate table to support Invitation type templates
 
-* Modify table DocTmpl
-invitationDocType, privacyDocType
+* Modify table DocTmpl: invitationDocType, privacyDocType
 
 **Step 53**
 
@@ -266,10 +245,8 @@ Update Red Letter Days, table is overwritten, adding Red days for 2005-2030 for 
 
 Add a virtual field on person and contact (dotsyntax): emailLastBounce
 
-* Modify table contact
-emailLastBounce
-* Modify table person
-emailLastBounce
+* Modify table contact: emailLastBounce
+* Modify table person: emailLastBounce
 
 **Step 55**
 
@@ -281,28 +258,20 @@ Reset bounceCount and lastBounce on the Email table for rows where lastBounce is
 Remove several sections and some individual preferences, that were only relevant to the Windows client. 
 Remove never-used fields in searchcriterionvalue and replace with a string field for valueType
 
-* Modify table searchcriterionvalue
-valueType, valueDataType
-* Modify table searchcriterionvalue
-valueType
+* Modify table searchcriterionvalue: valueType, valueDataType
+* Modify table searchcriterionvalue: valueType
 
 **Step 57**
 
 Add TimeSpan=Minutes markers to relevant fields on the ticket, ej_message, invoice and ticket_priority tables; controls behaviour in Archives including Selection
 
 * Modify table ticket
-* Modify table ej\_message
-time\_spent, time\_charge
-* Modify table invoice
-time\_charged
-* Modify table ticket\_priority
-deadline
-* Modify table ticket\_status\_history
-timespan, real\_timespan
-* Modify table appointment
-done, do\_by, activeDate, endDate
-* Modify table text
-updatedCount
+* Modify table ej\_message: time\_spent, time\_charge
+* Modify table invoice: time\_charged
+* Modify table ticket\_priority: deadline
+* Modify table ticket\_status\_history: timespan, real\_timespan
+* Modify table appointment: done, do\_by, activeDate, endDate
+* Modify table text: updatedCount
 
 **Step 58**
 
@@ -313,17 +282,14 @@ Update SOCompany information for new Online databases based on what is in the te
 
 Add mother_associate_id to appointments to optimize logic that depends on the owner of the mother appointment
 
-* Modify table appointment
-mother\_associate\_id
+* Modify table appointment: mother\_associate\_id
 
 **Step 61**
 
 Add soundex field to freetext words table to enable soundex searching
 
-* Modify table freetextwords
-word, soundEx
-* Modify table freetextindex
-contact\_id
+* Modify table freetextwords: word, soundEx
+* Modify table freetextindex: contact\_id
 
 **Step 62**
 
@@ -369,8 +335,7 @@ Update some languageinfo and languageinfocountry for correct detecting of langua
 
 Added filename field to BatchTask table to be used by ExportArchiveBatchTask.
 
-* Modify table BatchTask
-FileName
+* Modify table BatchTask: FileName
 
 **Step 71**
 
@@ -381,8 +346,7 @@ New preference for Mailing, DisableFormsPoweredBy. Rename Mailing header to Mark
 
 New field in Document-table for URL to external documents. Should be used internally by DocPlugins only!
 
-* Modify table document
-ExtUrl
+* Modify table document: ExtUrl
 
 **Step 73**
 
@@ -448,8 +412,7 @@ Update translations for functional right 'Can lock and unlock target assignment'
 
 New fields in QuoteVersion-table for use when requesting quote approval
 
-* Modify table QuoteVersion
-request\_associate\_id, request\_comment
+* Modify table QuoteVersion: request\_associate\_id, request\_comment
 
 **Step 86**
 
@@ -476,8 +439,7 @@ Add functional right 'Targets Administrator'
 
 Add phone description and searchphone fields to freetext index
 
-* Modify table phone
-description, searchPhoneNumber
+* Modify table phone: description, searchPhoneNumber
 
 **Step 90**
 
@@ -515,8 +477,7 @@ Update SOCompany information for new Online databases based on data wanted decem
 
 Updated descriptions for UserCandidate fields. This removes the need to define descriptions further up in the carrier etc.
 
-* Modify table user\_candidate
-person\_id, secret\_key, secret\_value
+* Modify table user\_candidate: person\_id, secret\_key, secret\_value
 
 **Step 98**
 
@@ -565,8 +526,7 @@ FreetextWords and FreetextIndex tables used random primary keys during increment
 
 Add FirstChange date, and reset the counters in the CacheInvalidation table, after changes to cache invalidation policies
 
-* Modify table CacheInvalidation
-FirstChange
+* Modify table CacheInvalidation: FirstChange
 
 **Step 106**
 
@@ -588,10 +548,8 @@ Add new index on freetext index table to improve query performance.
 
 Increase length of Credentials.Secret and login.ns_secret.
 
-* Modify table Credentials
-secret
-* Modify table login
-ns\_secret
+* Modify table Credentials: secret
+* Modify table login: ns\_secret
 
 **Step 110**
 
@@ -623,8 +581,7 @@ Update requiredModule for cs-listextratablecontent and cs-editextratablecontent 
 
 Add ContentSetCount to Document table.
 
-* Modify table document
-contentSetCount
+* Modify table document: contentSetCount
 
 **Step 116**
 
@@ -648,8 +605,7 @@ Add indexes for the search-criteria storage tables, which have become unexpected
 
 Add OwnedExternally to Appointment.
 
-* Modify table appointment
-owned\_externally
+* Modify table appointment: owned\_externally
 
 **Step 120**
 
@@ -665,8 +621,7 @@ Update RedLetterDays for Denmark, remove Store Bededag as red day from 2024, but
 
 Add fields contactId and personId to the Notify table
 
-* Modify table notify
-contact\_id, person\_id
+* Modify table notify: contact\_id, person\_id
 
 **Step 123**
 
@@ -678,8 +633,7 @@ Add table UtmParameters
 
 Add fields categorygroup and enable lead status
 
-* Modify table Category
-category\_group, enable\_lead\_status
+* Modify table Category: category\_group, enable\_lead\_status
 
 **Step 125**
 
@@ -689,17 +643,14 @@ category\_group, enable\_lead\_status
 
 Adding field leadstatus on contact and person table
 
-* Modify table contact
-leadstatus\_id
-* Modify table person
-leadstatus\_id
+* Modify table contact: leadstatus\_id
+* Modify table person: leadstatus\_id
 
 **Step 127**
 
 Remove unused column leadstatus on contact table
 
-* Modify table contact
-leadstatus\_id
+* Modify table contact: leadstatus\_id
 * Modify table person
 
 **Step 128**
@@ -714,10 +665,8 @@ Remove ServiceAssociates rows from history. They are redundant and not used anym
 
 **Step 130**
 
-* Modify table sale
-stage\_when\_closed\_id
-* Modify table SaleHist
-stage\_when\_closed\_id
+* Modify table sale: stage\_when\_closed\_id
+* Modify table SaleHist: stage\_when\_closed\_id
 
 **Step 131**
 
@@ -734,15 +683,13 @@ This table will contain info on how to autoupdate category on contact and person
 
 This table will contain info on how to autoupdate category on contact and person when changing sale and leadstatus
 
-* Modify table AutomatedCategoryUpdate
-leadstatus\_id
+* Modify table AutomatedCategoryUpdate: leadstatus\_id
 
 **Step 134**
 
 Add column OwnerLock on table s_shipment_addr
 
-* Modify table s\_shipment\_addr
-owner\_lock
+* Modify table s\_shipment\_addr: owner\_lock
 
 **Step 136**
 
@@ -754,28 +701,22 @@ This step creates a table that contains all fonts selected to be available for e
 
 Change attributes of the 'parent' fields on the Quote tables, to ensure that Sentry calculations are reset when these fields are changed
 
-* Modify table Quote
-SaleId
-* Modify table QuoteVersion
-QuoteId
-* Modify table QuoteAlternative
-QuoteVersionId
-* Modify table QuoteLine
-QuoteAlternativeId
+* Modify table Quote: SaleId
+* Modify table QuoteVersion: QuoteId
+* Modify table QuoteAlternative: QuoteVersionId
+* Modify table QuoteLine: QuoteAlternativeId
 
 **Step 138**
 
 Add ExternalParticipants to Appointment.
 
-* Modify table appointment
-external\_participants
+* Modify table appointment: external\_participants
 
 **Step 139**
 
 This step adds column deleted to table AvailableFonts to support soft delete of available fonts.
 
-* Modify table available\_fonts
-deleted
+* Modify table available\_fonts: deleted
 
 **Step 140**
 
@@ -811,10 +752,8 @@ Remove the 'hide-reporter' function right; it's no longer needed since the Repor
 
 Add new project/projectmember fields for Lyyti events
 
-* Modify table project
-event\_id, startDate
-* Modify table projectmember
-event\_participant\_status
+* Modify table project: event\_id, startDate
+* Modify table projectmember: event\_participant\_status
 
 **Step 144**
 
@@ -857,10 +796,24 @@ Updated ZipToCity for Norway
 
 Add `sale.sale_cycle` and the mirroring `sale_hist.sale_cycle`. Number of days from a sale being registered until it entered its current closed (Sold or Lost) state; 0/empty while open. Back-fills existing closed sales from salehist. Save-time maintenance lives in SaleRowImplementation.OnSaveAsync.
 
-* Modify table sale
-sale\_cycle
-* Modify table SaleHist
-sale\_cycle
+* Modify table sale: sale\_cycle
+* Modify table SaleHist: sale\_cycle
+
+**Step 152**
+
+Improve the Dutch translations of the built-in Lead status list items 'Contacting' and 'Re-nurture'
+
+
+**Step 153**
+
+Ensure SaintConfiguration has exactly one row per owner table: remove duplicates (highest id wins) and insert missing rows for contact, person and project
+
+
+**Step 154**
+
+Add a unique index on SaintConfiguration.ownerTable, so that an owner table can never get more than one configuration row
+
+* Modify table SaintConfiguration
 
 ## ai
 
@@ -876,39 +829,29 @@ Set default values for AI preferences.
 ## chat
 
 * Modify table chat\_topic
-* Modify table chat\_topic\_user
-can\_respond, notifications, can\_listen, manager
-* Modify table chat\_session
-name, company\_name, email, phone, first\_message, last\_message, flags
-* Modify table chat\_message
-created\_by
-* Modify table ejuser
-chat\_status
+* Modify table chat\_topic\_user: can\_respond, notifications, can\_listen, manager
+* Modify table chat\_session: name, company\_name, email, phone, first\_message, last\_message, flags
+* Modify table chat\_message: created\_by
+* Modify table ejuser: chat\_status
 
 **Step 2**
 
-* Modify table chat\_topic
-widget\_language
-* Modify table cust\_lang
-iso\_code
+* Modify table chat\_topic: widget\_language
+* Modify table cust\_lang: iso\_code
 
 **Step 3**
 
-* Modify table chat\_session
-project\_id, sale\_id, ticket\_id, contact\_id, transfer\_to
-* Modify table config
-feature\_toggle
+* Modify table chat\_session: project\_id, sale\_id, ticket\_id, contact\_id, transfer\_to
+* Modify table config: feature\_toggle
 
 **Step 4**
 
-* Modify table login\_customer
-created\_at
+* Modify table login\_customer: created\_at
 * Add table quick\_reply
 
 **Step 6**
 
-* Modify table chat\_session
-consented
+* Modify table chat\_session: consented
 
 **Step 7**
 
@@ -918,8 +861,7 @@ consented
 
 Adding field for using a custom message in the chat widget queue message
 
-* Modify table chat\_topic
-custom\_queue\_text
+* Modify table chat\_topic: custom\_queue\_text
 
 **Step 9**
 
@@ -936,94 +878,77 @@ Add index on the chat_session table, to optimize the 'anything happening now?' r
 
 **Step 11**
 
-* Modify table chat\_topic
-flags
+* Modify table chat\_topic: flags
 
 **Step 12**
 
-* Modify table chat\_session
-status
-* Modify table chat\_message
-type, special\_type
+* Modify table chat\_session: status
+* Modify table chat\_message: type, special\_type
 
 **Step 13**
 
-* Modify table chat\_topic
-bot\_enabled, bot\_name, bot\_register\_trigger\_id, bot\_newsession\_trigger\_id, bot\_statechange\_trigger\_id, bot\_newmessage\_trigger\_id
-* Modify table chat\_session
-chatbot\_isactive
+* Modify table chat\_topic: bot\_enabled, bot\_name, bot\_register\_trigger\_id, bot\_newsession\_trigger\_id, bot\_statechange\_trigger\_id, bot\_newmessage\_trigger\_id
+* Modify table chat\_session: chatbot\_isactive
 
 **Step 14**
 
-* Modify table chat\_topic
-bot\_register\_trigger\_id, bot\_newsession\_trigger\_id, bot\_statechange\_trigger\_id, bot\_newmessage\_trigger\_id, bot\_register\_scriptid, bot\_session\_created\_scriptid, bot\_session\_changed\_scriptid, bot\_message\_received\_scriptid
+* Modify table chat\_topic: bot\_register\_trigger\_id, bot\_newsession\_trigger\_id, bot\_statechange\_trigger\_id, bot\_newmessage\_trigger\_id, bot\_register\_scriptid, bot\_session\_created\_scriptid, bot\_session\_changed\_scriptid, bot\_message\_received\_scriptid
 
 **Step 15**
 
 Add fields for setting lunch hours on a chat topic.
 
-* Modify table chat\_topic
-use\_lunch\_hours, lunch\_start, lunch\_stop
+* Modify table chat\_topic: use\_lunch\_hours, lunch\_start, lunch\_stop
 
 **Step 16**
 
 Add more fields to chat_topic for agent use firstname.
 
-* Modify table chat\_topic
-widget\_agent\_use\_firstname
+* Modify table chat\_topic: widget\_agent\_use\_firstname
 
 **Step 17**
 
 Add suport for country in chat_session.
 
-* Modify table chat\_session
-country
+* Modify table chat\_session: country
 
 **Step 18**
 
 Add notification interval for new chat messages in chat_topic.
 
-* Modify table chat\_topic
-warning\_chat\_message, manager\_warning\_chat\_message
+* Modify table chat\_topic: warning\_chat\_message, manager\_warning\_chat\_message
 
 **Step 19**
 
 Add fields for enabling offline form capabilites when customer is in chat queue.
 
-* Modify table chat\_topic
-offline\_form\_time\_limit, offline\_form\_queue\_length
+* Modify table chat\_topic: offline\_form\_time\_limit, offline\_form\_queue\_length
 
 **Step 20**
 
 Add fields for support rating of a chat session.
 
-* Modify table chat\_topic
-widget\_enable\_rating, widget\_rating\_text
-* Modify table chat\_session
-rating
+* Modify table chat\_topic: widget\_enable\_rating, widget\_rating\_text
+* Modify table chat\_session: rating
 
 **Step 21**
 
 Add field for chat widget badge color
 
-* Modify table chat\_topic
-widget\_badge\_color
+* Modify table chat\_topic: widget\_badge\_color
 
 **Step 22**
 
 Add field for chat widget styles
 
-* Modify table chat\_topic
-widget\_badge\_text\_color, widget\_cust\_msg\_color, widget\_cust\_msg\_text\_color, widget\_agent\_msg\_color, widget\_agent\_msg\_text\_color, widget\_font\_size, widget\_button\_color, widget\_button\_text\_color
+* Modify table chat\_topic: widget\_badge\_text\_color, widget\_cust\_msg\_color, widget\_cust\_msg\_text\_color, widget\_agent\_msg\_color, widget\_agent\_msg\_text\_color, widget\_font\_size, widget\_button\_color, widget\_button\_text\_color
 
 ## CollaborationMeeting
 
 Add fields required for incoming VideoMeeting feature, and plan for outgoing too.
 
-* Modify table appointment
-join\_videomeet\_url, centralservice\_videomeet\_id
-* Modify table task
-default\_videomeeting\_status
+* Modify table appointment: join\_videomeet\_url, centralservice\_videomeet\_id
+* Modify table task: default\_videomeeting\_status
 
 ## configurablescreens
 
@@ -1035,8 +960,7 @@ This table will contain deltas for configurable screens to add and remove from r
 
 Added state enum for draft and published state for the json recipe deltas
 
-* Modify table ConfigurableScreenDelta
-deltaState
+* Modify table ConfigurableScreenDelta: deltaState
 
 **Step 3**
 
@@ -1067,8 +991,7 @@ This table will contain list items for merging in as menu items in taskmenus
 
 Added enocding enum ANSI UniCode or None
 
-* Modify table TaskMenu
-encoding
+* Modify table TaskMenu: encoding
 
 **Step 8**
 
@@ -1094,13 +1017,11 @@ Update existing ticket status related CONFIGURABLESCREENDELTA because of the new
 
 This class is now empty, since step 5 nuked the consent tables
 
-* Modify table category
-family\_id
+* Modify table category: family\_id
 
 **Step 6**
 
-* Modify table Category
-family\_id
+* Modify table Category: family\_id
 * Remove table consent\_person
 * Remove table consent\_purpose
 * Remove table ConsentSource
@@ -1111,15 +1032,12 @@ family\_id
 * Add table ConsentSource
 * Add table ConsentPerson
 * Add table CategoryFamily
-* Modify table DocTmpl
-privacyDocType, emailSubject
-* Modify table Category
-CategoryFamily\_id
+* Modify table DocTmpl: privacyDocType, emailSubject
+* Modify table Category: CategoryFamily\_id
 
 **Step 7**
 
-* Modify table outbox
-rfc822\_content
+* Modify table outbox: rfc822\_content
 
 **Step 9**
 
@@ -1148,15 +1066,13 @@ Make the person_id + consentPurpose_id index unique, this is an important constr
 
 Add to fields to ErpConnection table. ConsentSourceId and LegalBaseId. Both are foreign keys to GDPR tables. These fields will be set for all new persons synced to SuperOffice
 
-* Modify table ErpConnection
-ConsentSourceId, LegalBaseId
+* Modify table ErpConnection: ConsentSourceId, LegalBaseId
 
 **Step 13**
 
 Add to fields to ErpConnection table. ConsentSourceId and LegalBaseId. Both are foreign keys to GDPR tables. These fields will be set for all new persons synced to SuperOffice
 
-* Modify table ErpConnection
-ConsentSourceId, LegalBaseId
+* Modify table ErpConnection: ConsentSourceId, LegalBaseId
 
 **Step 14**
 
@@ -1180,14 +1096,11 @@ Update document template to sync emailmode with privacytype
 
 **Step 24**
 
-Improve GDPR field descriptions: adopt the more meaningful list-specific text for LegalBase and ConsentSource (name/rank/tooltip/key), and fix the copy/paste ConsentPerson.consentPurpose_id description ('Legal base' -\> 'Consent purpose').
+Improve GDPR field descriptions: adopt the more meaningful list-specific text for LegalBase and ConsentSource (name/rank/tooltip/key), and fix the copy/paste ConsentPerson.consentPurpose_id description ('Legal base' -> 'Consent purpose').
 
-* Modify table LegalBase
-name, tooltip, rank, key
-* Modify table ConsentSource
-name, tooltip, rank, key
-* Modify table ConsentPerson
-consentPurpose\_id
+* Modify table LegalBase: name, tooltip, rank, key
+* Modify table ConsentSource: name, tooltip, rank, key
+* Modify table ConsentPerson: consentPurpose\_id
 
 ## Copilot
 
@@ -1206,45 +1119,36 @@ Add initial Copilot
 
 * Add table script\_trace
 * Add table script\_trace\_run
-* Modify table screen\_chooser
-description, enabled
+* Modify table screen\_chooser: description, enabled
 
 **Step 2**
 
-* Modify table ejscript
-extra\_menus\_id
+* Modify table ejscript: extra\_menus\_id
 
 **Step 3**
 
-* Modify table ejscript
-unique\_identifier, registered, registered\_associate\_id, updated, updated\_associate\_id, updatedCount
-* Modify table screen\_chooser
-unique\_identifier, registered, registered\_associate\_id, updated, updated\_associate\_id, updatedCount
+* Modify table ejscript: unique\_identifier, registered, registered\_associate\_id, updated, updated\_associate\_id, updatedCount
+* Modify table screen\_chooser: unique\_identifier, registered, registered\_associate\_id, updated, updated\_associate\_id, updatedCount
 
 **Step 4**
 
 Flag unique_identfier fields that they should be auto-populated with a GUID on creation; and populate existing rows with GUID's
 
-* Modify table ejscript
-unique\_identifier
-* Modify table screen\_chooser
-unique\_identifier
+* Modify table ejscript: unique\_identifier
+* Modify table screen\_chooser: unique\_identifier
 
 **Step 5**
 
 Create unique indexes for GUID identifiers
 
-* Modify table ejscript
-unique\_identifier
-* Modify table screen\_chooser
-unique\_identifier
+* Modify table ejscript: unique\_identifier
+* Modify table screen\_chooser: unique\_identifier
 
 **Step 6**
 
 New flag field in screen_definition: autosave
 
-* Modify table screen\_definition
-autosave
+* Modify table screen\_definition: autosave
 
 **Step 7**
 
@@ -1255,74 +1159,60 @@ Fix triggers with screen_type = 130. Set to 113 and disable.
 
 Adds a type field to the ej_script table, to indicate what type of script this is.
 
-* Modify table ejscript
-type
+* Modify table ejscript: type
 
 **Step 9**
 
 Adds a frames field to the script_trace_run table to contain the JSON frames of the trace.
 
-* Modify table script\_trace\_run
-frames
+* Modify table script\_trace\_run: frames
 
 **Step 10**
 
 Support for email notification and exceptions only for script trace.
 
-* Modify table script\_trace
-notification\_email, notify, num\_notifications, exception\_only, sum\_runs, sum\_size
+* Modify table script\_trace: notification\_email, notify, num\_notifications, exception\_only, sum\_runs, sum\_size
 
 **Step 11**
 
 Adds a fk from screen_chooser to ejscript for TypeScript triggers.
 
-* Modify table screen\_chooser
-ejscript\_id
+* Modify table screen\_chooser: ejscript\_id
 
 ## CS
 
-* Modify table ticket
-from\_address
+* Modify table ticket: from\_address
 
 **Step 3**
 
-* Modify table s\_message
-long\_description
+* Modify table s\_message: long\_description
 
 **Step 4**
 
-* Modify table ticket\_status
-status
-* Modify table ticket\_priority
-status, flags, ticket\_read, changed\_owner, ticket\_newinfo, ticket\_closed, ticket\_changed\_priority, ticket\_new
-* Modify table ej\_category
-delegate\_method, closing\_status, msg\_closing\_status, flags
+* Modify table ticket\_status: status
+* Modify table ticket\_priority: status, flags, ticket\_read, changed\_owner, ticket\_newinfo, ticket\_closed, ticket\_changed\_priority, ticket\_new
+* Modify table ej\_category: delegate\_method, closing\_status, msg\_closing\_status, flags
 
 **Step 5**
 
-* Modify table ticket
-status, slevel, origin, read\_status
-* Modify table ticket\_status
-status
+* Modify table ticket: status, slevel, origin, read\_status
+* Modify table ticket\_status: status
 
 **Step 6**
 
-* Modify table ej\_message
-slevel, type, message\_category
+* Modify table ej\_message: slevel, type, message\_category
 
 **Step 7**
 
 Adding a field to ej_message, allowing the user to filter and view only important messages
 
-* Modify table ej\_message
-important
+* Modify table ej\_message: important
 
 **Step 8**
 
 Add a ForeignKeyArray field to the ticket table as the first entity to use Tags; and add a contact_id to start off that project
 
-* Modify table Ticket
-tags, contact\_id
+* Modify table Ticket: tags, contact\_id
 
 **Step 9**
 
@@ -1338,16 +1228,14 @@ Set ticket.contact_id to be consistent with ticket.cust_id.contact_id; and copy 
 
 Add flags to s_list_element table.
 
-* Modify table s\_list\_element
-status
+* Modify table s\_list\_element: status
 
 **Step 12**
 
 Create new table, attachment_location, to be able to store attachments in multiple locations
 
 * Add table attachment\_location
-* Modify table attachment
-attachment\_location\_id
+* Modify table attachment: attachment\_location\_id
 
 **Step 13**
 
@@ -1358,25 +1246,21 @@ Create and enable password rules if they have not been changed from the default
 
 Add field for storing Mailgun DSN setting for each mailbox
 
-* Modify table mail\_in\_filter
-mailgun\_dsn
+* Modify table mail\_in\_filter: mailgun\_dsn
 
 **Step 15**
 
 Add sentiment and language values to ticket table. Add index on ej_message.created_at
 
 * Modify table ej\_message
-* Modify table ticket
-language, sentiment, sentimentConfidence
+* Modify table ticket: language, sentiment, sentimentConfidence
 
 **Step 16**
 
 Move ej_message.suggestedCategory_id to the ticket table. Add ticket.orig_human_category_id
 
-* Modify table ej\_message
-suggestedCategory\_id
-* Modify table ticket
-suggestedCategory\_id, origHumanCategory\_id
+* Modify table ej\_message: suggestedCategory\_id
+* Modify table ticket: suggestedCategory\_id, origHumanCategory\_id
 
 **Step 17**
 
@@ -1387,36 +1271,31 @@ Add details clob to ticket_log_action table for JSON logging
 
 Change type of mail_in_filter.server_type to a defined enum called MailboxType
 
-* Modify table mail\_in\_filter
-server\_type
+* Modify table mail\_in\_filter: server\_type
 
 **Step 19**
 
 Stage 1 of 3: Introduce proper ForeignKey fields for ej_category: closing_status and msg_closing_status, and populate them
 
-* Modify table ej\_category
-closing\_status\_temp, msg\_closing\_status\_temp
+* Modify table ej\_category: closing\_status\_temp, msg\_closing\_status\_temp
 
 **Step 20**
 
 Stage 2 of 3: Drop old fields for ej_category: closing_status and msg_closing_status
 
-* Modify table ej\_category
-closing\_status, msg\_closing\_status
+* Modify table ej\_category: closing\_status, msg\_closing\_status
 
 **Step 21**
 
 Stage 3 of 3: Rename new fields for ej_category: closing_status_temp and msg_closing_status_temp to original names
 
-* Modify table ej\_category
-closing\_status\_temp, msg\_closing\_status\_temp
+* Modify table ej\_category: closing\_status\_temp, msg\_closing\_status\_temp
 
 **Step 22**
 
 Add fields for enabling/disabling AI operations on a Service mailbox
 
-* Modify table mail\_in\_filter
-ai\_suggest\_category, ai\_text\_analysis
+* Modify table mail\_in\_filter: ai\_suggest\_category, ai\_text\_analysis
 
 **Step 23**
 
@@ -1427,108 +1306,91 @@ Change ticket notification expiry from 10 minutes to 24 hours
 
 Add support for setting tags on email filter
 
-* Modify table ms\_filter
-new\_tags
+* Modify table ms\_filter: new\_tags
 
 **Step 25**
 
 Add field for setting an URL on custom notifications
 
-* Modify table notify
-custom\_url
+* Modify table notify: custom\_url
 
 **Step 26**
 
 Increase the length of the field inbox.uidl
 
-* Modify table inbox
-uidl
+* Modify table inbox: uidl
 
 **Step 28**
 
-* Modify table reply\_template\_body
-flags
-* Modify table reply\_template
-flags
+* Modify table reply\_template\_body: flags
+* Modify table reply\_template: flags
 
 **Step 29**
 
 Mark Ticket fields as freetext indexable.
 
-* Modify table ticket
-title, author, from\_address
+* Modify table ticket: title, author, from\_address
 
 **Step 30**
 
 Add changed_at and changed_by fields to EjMessage table.
 
-* Modify table ej\_message
-changed\_at
-* Modify table ej\_message
-changed\_by
+* Modify table ej\_message: changed\_at
+* Modify table ej\_message: changed\_by
 
 **Step 31**
 
 Add sale_id, project_id to Ticket table.
 
-* Modify table ticket
-sale\_id, project\_id
+* Modify table ticket: sale\_id, project\_id
 
 **Step 32**
 
 Add IsDefinedByUserGroup field to CATEGORY_MEMBERSHIP table.
 
-* Modify table category\_membership
-is\_defined\_by\_usergroup, weight
+* Modify table category\_membership: is\_defined\_by\_usergroup, weight
 
 **Step 33**
 
 Increase the length of the field ej_message.message_id to 850 (as this is max size for an indexed field).
 
-* Modify table ej\_message
-message\_id
+* Modify table ej\_message: message\_id
 
 **Step 34**
 
 Interprets TicketLogAction table's LogAction field as enum instead of int
 
-* Modify table ticket\_log\_action
-log\_action
+* Modify table ticket\_log\_action: log\_action
 
 **Step 35**
 
 Adds badge column to explicitly determine how a message was generated
 
-* Modify table ej\_message
-badge
+* Modify table ej\_message: badge
 
 **Step 36**
 
 Add registered and registered_associate_id fields to Notify table
 
-* Modify table notify
-registered, registered\_associate\_id
+* Modify table notify: registered, registered\_associate\_id
 
 **Step 37**
 
 Mark Ticket status field as freetext indexable.
 
-* Modify table ticket
-status
+* Modify table ticket: status
 
 **Step 38**
 
 Add time_spent field to Ticket table
 
-* Modify table ticket
-time\_spent
+* Modify table ticket: time\_spent
 
 **Step 39**
 
 This step has been superseded by a later step
 
-* Modify table ticket
-ticket\_type, request\_type
+* Modify table ticket: ticket\_type, request\_type
 
 **Step 40**
 
@@ -1542,13 +1404,11 @@ Remove tables for never-implemented TicketType functionality. The motivation is 
 * Modify table ticket\_type
 * Modify table ticket\_relation\_type
 * Modify table ticket\_relation\_action
-* Modify table ticket\_relation
-source, target, relation\_type, registered, registered\_associate\_id, updated, updated\_associate\_id, updatedCount
+* Modify table ticket\_relation: source, target, relation\_type, registered, registered\_associate\_id, updated, updated\_associate\_id, updatedCount
 * Remove table request\_type
 * Remove table request\_type\_priority
 * Remove table request\_type\_status
-* Modify table ticket
-request\_type
+* Modify table ticket: request\_type
 * Rename table ticket\_type to obsolete\_1
 * Rename table ticket\_relation\_type to obsolete\_2
 * Rename table ticket\_relation\_action to obsolete\_3
@@ -1561,22 +1421,19 @@ Re-create the tables needed for the new ticket_type functionality
 * Add table ticket\_type
 * Add table ticket\_type\_priority
 * Add table ticket\_type\_status
-* Modify table ticket
-ticket\_type
+* Modify table ticket: ticket\_type
 
 **Step 43**
 
 Adjust tables and priming data needed for the new ticket_type functionality
 
-* Modify table ticket\_type
-deleted
+* Modify table ticket\_type: deleted
 
 **Step 44**
 
 Add TimeSpan=Minutes marker to ticket.time_spent column; controls behaviour in Archives including Selection
 
-* Modify table ticket
-time\_spent
+* Modify table ticket: time\_spent
 
 **Step 45**
 
@@ -1587,17 +1444,14 @@ Remove primary key constraint from now-obsolete tables, to prevent faults during
 
 Add ticket_type.is_default column and insert the first, default, request type
 
-* Modify table ticket\_type
-is\_default
+* Modify table ticket\_type: is\_default
 
 **Step 47**
 
 Add ticket_type as fields on mail_in_filter and ms_filter
 
-* Modify table mail\_in\_filter
-ticket\_type
-* Modify table ms\_filter
-new\_ticket\_type
+* Modify table mail\_in\_filter: ticket\_type
+* Modify table ms\_filter: new\_ticket\_type
 
 **Step 48**
 
@@ -1608,8 +1462,7 @@ This step has been superseded by a later step
 
 Update ticket_type.icon column with default icon value
 
-* Modify table ticket\_type
-icon
+* Modify table ticket\_type: icon
 
 **Step 50**
 
@@ -1625,78 +1478,67 @@ Change CreatedBy criteria to be based on EjUser instead of Associate
 
 Add dates for last execution over HTTP to Ejscript table
 
-* Modify table ejscript
-last\_exec\_http, last\_exec\_anon\_http
+* Modify table ejscript: last\_exec\_http, last\_exec\_anon\_http
 
 **Step 53**
 
 Add field for storing an id for icons on a extra table
 
-* Modify table extra\_tables
-icon\_id
+* Modify table extra\_tables: icon\_id
 
 **Step 54**
 
 Add ticket_type.show_in_new, ticket_type.exclude_signature, ticket_type.exclude_email_recipients, ticket_type.external_as_default columns and insert the first, default, request type
 
-* Modify table ticket\_type
-show\_in\_new, exclude\_signature, exclude\_email\_recipients, external\_as\_default
+* Modify table ticket\_type: show\_in\_new, exclude\_signature, exclude\_email\_recipients, external\_as\_default
 
 **Step 55**
 
 Add ticket_type.visible_for_groups field.
 
-* Modify table ticket\_type
-visible\_for\_groups
+* Modify table ticket\_type: visible\_for\_groups
 
 **Step 56**
 
 Add ticket_type.reply_forward_no_signature
 
-* Modify table ticket\_type
-reply\_forward\_no\_signature
+* Modify table ticket\_type: reply\_forward\_no\_signature
 
 **Step 57**
 
 Add field source_code, which will contain the source code for the script, for example in Typescript.
 
-* Modify table ejscript
-source\_code
+* Modify table ejscript: source\_code
 
 **Step 58**
 
 Add fields includes and last_compiled, which will be used to check if we need to just-in-time compile again.
 
-* Modify table ejscript
-includes, last\_compiled
+* Modify table ejscript: includes, last\_compiled
 
 **Step 59**
 
 Add ticket_type.reply_external_as_default
 
-* Modify table ticket\_type
-reply\_external\_as\_default
+* Modify table ticket\_type: reply\_external\_as\_default
 
 **Step 60**
 
 Add field source_maps, which will contain mappings from location in body to source_code (with includes).
 
-* Modify table ejscript
-source\_maps
+* Modify table ejscript: source\_maps
 
 **Step 61**
 
 Adds ejscript HTTP verb access field
 
-* Modify table ejscript
-blocked\_verbs
+* Modify table ejscript: blocked\_verbs
 
 **Step 62**
 
 Add a table number field
 
-* Modify table extra\_tables
-table\_number
+* Modify table extra\_tables: table\_number
 
 **Step 63**
 
@@ -1735,17 +1577,14 @@ Create tables for ticket relations
 
 Update tables for ticket relations; truncate ticket relation table data
 
-* Modify table ticket\_relation
-relation\_type
-* Modify table ticket\_relation\_def
-name\_passive, isBuiltIn
+* Modify table ticket\_relation: relation\_type
+* Modify table ticket\_relation\_def: name\_passive, isBuiltIn
 
 **Step 70**
 
 Alter ticket_relation.ticket_relation_def_id NOT NULL. (Note, the data was truncated in previous DB step)
 
-* Modify table ticket\_relation
-ticket\_relation\_def\_id
+* Modify table ticket\_relation: ticket\_relation\_def\_id
 
 **Step 71**
 
@@ -1782,8 +1621,7 @@ Create cc_template table for customer center templates
 
 Add payload column to the TemporaryKey table
 
-* Modify table TemporaryKey
-payload
+* Modify table TemporaryKey: payload
 
 **Step 5**
 
@@ -1919,31 +1757,26 @@ Add tables for Dashboard V2, these will store info about dashboards and dashboar
 
 Add rank to tiles
 
-* Modify table dashboard\_tile
-rank
+* Modify table dashboard\_tile: rank
 
 **Step 3**
 
 Add selection foreign key, currency and more to tile definition
 
-* Modify table dashboard\_tile\_definition
-selection\_id, currency\_id, currency\_mode, sort\_by, measure, measure\_field
+* Modify table dashboard\_tile\_definition: selection\_id, currency\_id, currency\_mode, sort\_by, measure, measure\_field
 
 **Step 4**
 
 Add visible for, pinning, and more
 
-* Modify table dashboard\_tile\_definition
-secondary\_selection\_id, layout\_config, entity\_name
-* Modify table dashboard
-visible\_for\_all, visible\_for\_associates, visible\_for\_groups, pin\_for\_all, pin\_for\_associates, pin\_for\_groups
+* Modify table dashboard\_tile\_definition: secondary\_selection\_id, layout\_config, entity\_name
+* Modify table dashboard: visible\_for\_all, visible\_for\_associates, visible\_for\_groups, pin\_for\_all, pin\_for\_associates, pin\_for\_groups
 
 **Step 5**
 
 Add rank to DashboardTheme
 
-* Modify table dashboard\_theme
-rank
+* Modify table dashboard\_theme: rank
 
 **Step 6**
 
@@ -1960,45 +1793,38 @@ Remove fulltext indexing generated by the FkArray datatype. FT indexing is good 
 
 Add columns to dashboard
 
-* Modify table dashboard
-columns
+* Modify table dashboard: columns
 
 **Step 9**
 
 Add measure_by_field column to dashboard
 
-* Modify table dashboard\_tile\_definition
-measure\_by\_field
+* Modify table dashboard\_tile\_definition: measure\_by\_field
 
 **Step 10**
 
 Add dashboard_tile_definition_id foreign key to selection
 
-* Modify table selection
-dashboard\_tile\_definition\_id
+* Modify table selection: dashboard\_tile\_definition\_id
 
 **Step 11**
 
 Add client column to dashboard_theme table
 
-* Modify table dashboard\_theme
-client
+* Modify table dashboard\_theme: client
 
 **Step 12**
 
 Prime default data
 
-* Modify table dashboard\_theme
-isBuiltIn
-* Modify table dashboard
-guid
+* Modify table dashboard\_theme: isBuiltIn
+* Modify table dashboard: guid
 
 **Step 13**
 
 Add currency_code to DashboardTileDefinition
 
-* Modify table dashboard\_tile\_definition
-currency\_id, currency\_code
+* Modify table dashboard\_tile\_definition: currency\_id, currency\_code
 
 **Step 14**
 
@@ -2022,8 +1848,7 @@ Generate Dataright rows for the new Dashboard, in the data right matrix in Admin
 
 Add 'style' to DashTheme
 
-* Modify table dashboard\_theme
-style
+* Modify table dashboard\_theme: style
 
 **Step 18**
 
@@ -2034,8 +1859,7 @@ Update big number colors in dark mode for built-in dashboard themes
 
 Update DashboardTileDefinition with information about where it can be used
 
-* Modify table dashboard\_tile\_definition
-usage
+* Modify table dashboard\_tile\_definition: usage
 
 **Step 20**
 
@@ -2076,50 +1900,41 @@ Adds support for external_owner system, used to keep track of external data that
 
 **Step 2**
 
-* Modify table form
-active, expires, maxSubmits
+* Modify table form: active, expires, maxSubmits
 
 **Step 3**
 
-* Modify table form
-type
+* Modify table form: type
 
 **Step 4**
 
-* Modify table form
-recipe
+* Modify table form: recipe
 
 **Step 5**
 
-* Modify table form\_submission
-is\_submitted
+* Modify table form\_submission: is\_submitted
 
 **Step 6**
 
-* Modify table form\_submission
-is\_submitted, status, processing\_log
+* Modify table form\_submission: is\_submitted, status, processing\_log
 
 **Step 7**
 
-* Modify table form
-group\_id
+* Modify table form: group\_id
 
 **Step 8**
 
-* Modify table ticket
-form\_submission\_id
+* Modify table ticket: form\_submission\_id
 
 **Step 9**
 
-* Modify table form
-form\_key
+* Modify table form: form\_key
 
 **Step 10**
 
 Create new field to be able to filter out forms that are used to creating tickets
 
-* Modify table form
-new\_ticket
+* Modify table form: new\_ticket
 
 **Step 11**
 
@@ -2140,55 +1955,42 @@ Create new table FormFieldRestriction, used for saving restrictions for fields u
 
 **Step 3**
 
-* Modify table email\_item
-replied\_at, in\_reply\_to, messageId
-* Modify table email\_account
-default
+* Modify table email\_item: replied\_at, in\_reply\_to, messageId
+* Modify table email\_account: default
 
 **Step 4**
 
-* Modify table email\_account
-account\_status
-* Modify table email\_item
-cc
-* Modify table service\_auth
-associate\_id, auth\_status
+* Modify table email\_account: account\_status
+* Modify table email\_item: cc
+* Modify table service\_auth: associate\_id, auth\_status
 
 **Step 5**
 
-* Modify table timestamps
-mailsync
+* Modify table timestamps: mailsync
 
 **Step 6**
 
-* Modify table email\_account
-email\_address
-* Modify table email\_folder
-account\_id
+* Modify table email\_account: email\_address
+* Modify table email\_folder: account\_id
 
 **Step 7**
 
-* Modify table email\_account
-encryptedCheck, associate\_id, incoming\_auth, outgoing\_auth
-* Modify table service\_auth
-encryptedCheck, associate\_id, server, port, auth\_type, username, password
+* Modify table email\_account: encryptedCheck, associate\_id, incoming\_auth, outgoing\_auth
+* Modify table service\_auth: encryptedCheck, associate\_id, server, port, auth\_type, username, password
 
 **Step 8**
 
-* Modify table email\_account
-error\_count, error\_reason
+* Modify table email\_account: error\_count, error\_reason
 * Modify table email\_item
 * Add table email\_attachment
 
 **Step 9**
 
-* Modify table email\_folder
-folder\_separator
+* Modify table email\_folder: folder\_separator
 
 **Step 10**
 
-* Modify table email\_item
-cal\_data
+* Modify table email\_item: cal\_data
 
 **Step 11**
 
@@ -2197,39 +1999,33 @@ Ensure all email-IDs used as foreignkeys in the foreignkey-table are enclosed in
 
 **Step 12**
 
-* Modify table email\_account
-simple\_mode, last\_fetch
+* Modify table email\_account: simple\_mode, last\_fetch
 
 **Step 13**
 
 Add string server_identifier on email_item, and bool use_graph_api on email_account
 
-* Modify table email\_item
-server\_identifier
-* Modify table email\_account
-use\_graph\_api
+* Modify table email\_item: server\_identifier
+* Modify table email\_account: use\_graph\_api
 
 **Step 14**
 
 Delete obsolete field simple_mode on email_account (superseded by the user preference), and remove the obsolete Mail preferences (EnableMailSync, FirstMailSync, MailSyncTimer, CheckForDuplicates, RemoveAfterArchive, IsEmailInstalled, IsFaxInstalled) from prefdesc and userpreference.
 
-* Modify table email\_account
-simple\_mode
+* Modify table email\_account: simple\_mode
 
 ## invitation
 
 Adds support for invitations (iCal) leading to appointments
 
 * Add table invitation
-* Modify table email
-appointment\_id
+* Modify table email: appointment\_id
 
 **Step 2**
 
 Allows for storage of the organizer's email and full name in the table; Adds support for recurring invitations.
 
-* Modify table invitation
-organizer\_email, organizer\_fullname, recurring\_end\_date
+* Modify table invitation: organizer\_email, organizer\_fullname, recurring\_end\_date
 
 **Step 3**
 
@@ -2240,23 +2036,20 @@ Set preference "Diary sync active" if Infobridge synchronizer seem to be in use.
 
 Adds support for modifications of single appointments in a recurring series.
 
-* Modify table invitation
-recurring\_start\_date
+* Modify table invitation: recurring\_start\_date
 * Modify table erpexternalkey
 
 **Step 5**
 
 Adds better support for modifications of single appointments in a recurring series.
 
-* Modify table appointment
-original\_start\_date
+* Modify table appointment: original\_start\_date
 
 **Step 6**
 
 Adds support for storing a chosen template language for email invitations.
 
-* Modify table invitation
-template\_language
+* Modify table invitation: template\_language
 
 ## LandingPage
 
@@ -2270,39 +2063,33 @@ Add table for landing pages. One row per associate per entity (table number) sto
 Rename table landing_page_pin to landing_page_tab and its primary key landing_page_pin_id to landing_page_tab_id.
 
 * Rename table landing\_page\_pin to landing\_page\_tab
-* Modify table landing\_page\_tab
-landing\_page\_pin\_id
+* Modify table landing\_page\_tab: landing\_page\_pin\_id
 
 **Step 3**
 
 Add columns pinned, rank and tab_type to landing_page_tab, now that it stores all tabs (not only pinned ones).
 
-* Modify table landing\_page\_tab
-pinned, rank, tab\_type
+* Modify table landing\_page\_tab: pinned, rank, tab\_type
 
 **Step 4**
 
 Add provider_name to landing_page_tab (and widen its unique index to include it) so hardcoded provider tabs (e.g. LastTickets, FavouriteTickets) can be stored alongside selection and entity tabs.
 
-* Modify table landing\_page\_tab
-provider\_name
+* Modify table landing\_page\_tab: provider\_name
 
 ## Mailings
 
 Adding field to store the document mailing recipient sort order
 
-* Modify table s\_shipment
-sorting
+* Modify table s\_shipment: sorting
 
 **Step 2**
 
 Add fields for storing the design of a mailing message and mailing design type
 
-* Modify table s\_message
-design, designtype
+* Modify table s\_message: design, designtype
 * Add table s\_messageblock
-* Modify table s\_message
-flags
+* Modify table s\_message: flags
 
 **Step 3**
 
@@ -2313,28 +2100,22 @@ Remove the old SOEditor mailing templates for new Online installations
 
 Change type of S_Shipment.Status to a defined enum called ShipmentStatus and change type of (S_Link_Customer/S_Link_Customer_Statical).LinkType to ShipmentLinkType.
 
-* Modify table s\_shipment
-status
-* Modify table s\_link\_customer
-link\_type
-* Modify table s\_link\_customer\_statical
-link\_type
+* Modify table s\_shipment: status
+* Modify table s\_link\_customer: link\_type
+* Modify table s\_link\_customer\_statical: link\_type
 
 **Step 5**
 
 Add field for storing foreign key to form_submission in s_shipment_addr. This is used to connect a mailing recipient with a form_submission, to be used to populate the parser.
 
-* Modify table s\_shipment\_addr
-form\_submission\_id
+* Modify table s\_shipment\_addr: form\_submission\_id
 
 **Step 6**
 
 Add two new fields so s_shipment_addr and Email for storing bounce code and bounce reason as separate fields.
 
-* Modify table s\_shipment\_addr
-bounce\_code, bounce\_reasontag, cleaned
-* Modify table Email
-lastBounceCode, lastBounceReason
+* Modify table s\_shipment\_addr: bounce\_code, bounce\_reasontag, cleaned
+* Modify table Email: lastBounceCode, lastBounceReason
 
 **Step 7**
 
@@ -2349,15 +2130,13 @@ Add fields to s_shipment for cached statistical values
 
 Remove are_statistics_dirty from s_shipment, we want it to be NOT NULL with a DEFAULT (see next step)
 
-* Modify table s\_shipment
-are\_statistics\_dirty
+* Modify table s\_shipment: are\_statistics\_dirty
 
 **Step 9**
 
 Add are_statistics_dirty to s_shipment, with a NOT NULL and a DEFAULT of 1 (true)
 
-* Modify table s\_shipment
-are\_statistics\_dirty
+* Modify table s\_shipment: are\_statistics\_dirty
 
 **Step 10**
 
@@ -2369,43 +2148,43 @@ Creates a new List called MailingDomains. The table will contain entries consist
 
 Add sent_num field to s_shipment for cached statistical values
 
-* Modify table s\_shipment
-sent\_num
+* Modify table s\_shipment: sent\_num
 
 **Step 12**
 
 Add a foreign key to s_message from s_link, to denote that a link is a local link, belonging to that particular message
 
-* Modify table s\_link
-local\_link
+* Modify table s\_link: local\_link
 
 **Step 13**
 
 Increase length of url column from 255 to 4000 characters
 
-* Modify table s\_link
-url
+* Modify table s\_link: url
 
 **Step 14**
 
 Move Bool redirect_is_url to a new enum field: redirect_kind
 
-* Modify table s\_link
-redirect\_kind, link\_parameters
+* Modify table s\_link: redirect\_kind, link\_parameters
 
 **Step 15**
 
 Delete obsolete field redirect_is_url (moved to redirect_kind)
 
-* Modify table s\_link
-redirect\_is\_url
+* Modify table s\_link: redirect\_is\_url
 
 **Step 16**
 
 Add additional fields for form redirects
 
-* Modify table s\_link
-form\_id, form\_parameters
+* Modify table s\_link: form\_id, form\_parameters
+
+## Mention
+
+Add table for @-mentions: one row per colleague tagged with @ in a request comment, tracking read state and a text snippet for display.
+
+* Add table mention
 
 ## Metering
 
@@ -2423,17 +2202,14 @@ Create the navigation_history table, holding per-associate Current (persisted so
 
 Changes length of text-field in Text-table, and adds html_text-field. Adds agenda_text_id and internal_notes_text_id to appointment.
 
-* Modify table text
-text, html\_text
-* Modify table appointment
-agenda\_text\_id, internal\_notes\_text\_id
+* Modify table text: text, html\_text
+* Modify table appointment: agenda\_text\_id, internal\_notes\_text\_id
 
 **Step 2**
 
 Add SendEmail field to Appointment table.
 
-* Modify table appointment
-SendEmail
+* Modify table appointment: SendEmail
 
 **Step 3**
 
@@ -2445,8 +2221,7 @@ Add index on appointment agenda_text_id
 
 Add sentry to html text
 
-* Modify table text
-html\_text
+* Modify table text: html\_text
 
 ## NewSelection
 
@@ -2469,15 +2244,13 @@ Define the TypicalSearch table from scratch
 
 Cleanup 'temporary selection' marking by introducing the IsTemporary field
 
-* Modify table selection
-SystemType
+* Modify table selection: SystemType
 
 **Step 5**
 
 Add fields to table selection for more functionality. Also update the default sidepanel view for all pages, in userpreference
 
-* Modify table selection
-chartKey, lastLoaded, lastLoadedBy, lastMembershipChange, lastMembershipChangeBy
+* Modify table selection: chartKey, lastLoaded, lastLoadedBy, lastMembershipChange, lastMembershipChangeBy
 
 **Step 6**
 
@@ -2493,8 +2266,7 @@ Update targetTableNumber to 5 where it was 0, and reset membercounts to -1 where
 
 Due to limitations in the Windows code stack, the chartKey field is shortened to 254 characters
 
-* Modify table selection
-chartKey
+* Modify table selection: chartKey
 
 **Step 9**
 
@@ -2512,12 +2284,11 @@ Board view badge statistics (and other time accumulation statistics)
 
 Making time_keeping table compatible with our standard generated code, easier cleanup of orphan records, and easier db merge
 
-* Modify table time\_keeping
-ownerTable, ownerRecord, entity\_id
+* Modify table time\_keeping: ownerTable, ownerRecord, entity\_id
 
 **Step 12**
 
-Bug 105828: migrate the 'Owned by user group' criterion from `'<prefix>/otherGroups'` (matched any group membership via usergrouplink) to `'<prefix>/usergroup'` (the owner's primary group, associate.group_idx) for the associate, contactAssociate, contactSupportAssociate, personAssociate and projectAssociate prefixes. Only the stored criterion column name changes; operators and values are unaffected. Bare 'otherGroups' is not migrated.
+Bug 105828: migrate the 'Owned by user group' criterion from '&lt;prefix>/otherGroups' (matched any group membership via usergrouplink) to '&lt;prefix>/usergroup' (the owner's primary group, associate.group_idx) for the associate, contactAssociate, contactSupportAssociate, personAssociate and projectAssociate prefixes. Only the stored criterion column name changes; operators and values are unaffected. Bare 'otherGroups' is not migrated.
 
 Bug 105828: the "Owned by user group" criterion must filter on the owner's current PRIMARY group.
 It used to be bound to the '.../otherGroups' column, which restricts via the usergrouplink table
@@ -2544,17 +2315,26 @@ The `NewsFeedItem` and related tables allow agents and other systems to post new
 
 Add Location and RatingPercent to `NewsFeedItem`. Bump CTA Identifier length to 1000.
 
-* Modify table NewsFeedItem
-Location, RatingPercent
-* Modify table NewsFeedItemCta
-Identifier
+* Modify table NewsFeedItem: Location, RatingPercent
+* Modify table NewsFeedItemCta: Identifier
+
+**Step 3**
+
+Add SourceSoProtocol to `NewsFeedItem` so that start page can open the agent topic directly.
+
+* Modify table NewsFeedItem: SourceSoProtocol
+
+**Step 4**
+
+Add Type to `NewsFeedItem` so that start page can open filter/count by message type without analyzing the CTAs or message content.
+
+* Modify table NewsFeedItem: Type
 
 ## Notifications
 
 Adds modified_appointment_fields field to appointment, and defines related ModifiedAppointmentFields enum.
 
-* Modify table appointment
-modified\_appointment\_fields
+* Modify table appointment: modified\_appointment\_fields
 
 **Step 2**
 
@@ -2586,34 +2366,29 @@ Deleting obsolete counter-preferences
 
 **Step 2**
 
-* Modify table PushNotificationService
-Language
+* Modify table PushNotificationService: Language
 
 **Step 3**
 
-* Modify table PushNotificationService
-PocketVersion, OSVersion
+* Modify table PushNotificationService: PocketVersion, OSVersion
 
 **Step 5**
 
 Adding rank field to favourites
 
-* Modify table Favourite
-Rank
+* Modify table Favourite: Rank
 
 **Step 6**
 
 Add TimeZoneId field to PushNotificationService, so notifications can use the recipients preferred timezone
 
-* Modify table PushNotificationService
-TimeZoneId
+* Modify table PushNotificationService: TimeZoneId
 
 ## R_Service
 
 Add field for storing flags on a service login session
 
-* Modify table login
-flags
+* Modify table login: flags
 
 **Step 2**
 
@@ -2629,8 +2404,7 @@ Make sure the row with id=1 in ejuser contains the '(System)' user
 
 * Add table MailingType
 * Add table MailingTypeReservation
-* Modify table s\_shipment
-mailingtype\_id
+* Modify table s\_shipment: mailingtype\_id
 
 **Step 3**
 
@@ -2640,18 +2414,13 @@ mailingtype\_id
 
 The "MailingType" list conflicts with an existing, hard-coded list in NetServer with the same name. Not good.
 
-* Modify table MailingTypeReservation
-MailingType\_id
-* Modify table s\_shipment
-mailingtype\_id
+* Modify table MailingTypeReservation: MailingType\_id
+* Modify table s\_shipment: mailingtype\_id
 * Rename table MailingType to ShipmentType
-* Modify table ShipmentType
-MailingType\_id
+* Modify table ShipmentType: MailingType\_id
 * Rename table MailingTypeReservation to ShipmentTypeReservation
-* Modify table ShipmentTypeReservation
-MailingTypeReservation\_id, MailingType\_id
-* Modify table s\_shipment
-mailingtype\_id
+* Modify table ShipmentTypeReservation: MailingTypeReservation\_id, MailingType\_id
+* Modify table s\_shipment: mailingtype\_id
 
 **Step 6**
 
@@ -2661,18 +2430,15 @@ The "MailingType" list conflicts with an existing, hard-coded list in NetServer 
 
 ## SuperId
 
-* Modify table associate
-waiting\_for\_approval
+* Modify table associate: waiting\_for\_approval
 
 **Step 2**
 
-* Modify table associate
-waiting\_for\_approval
+* Modify table associate: waiting\_for\_approval
 
 **Step 3**
 
-* Modify table associate
-waiting\_for\_approval
+* Modify table associate: waiting\_for\_approval
 
 ## targets
 
@@ -2708,38 +2474,30 @@ Add tables for Targets revision history
 
 Support larger values than 2 billion and log more revision details
 
-* Modify table target\_revision\_history
-target\_assignment\_info\_id, target\_group\_id
-* Modify table target\_assignment\_value
-target\_value2
-* Modify table target\_change
-value\_change\_from2, value\_change\_to2
+* Modify table target\_revision\_history: target\_assignment\_info\_id, target\_group\_id
+* Modify table target\_assignment\_value: target\_value2
+* Modify table target\_change: value\_change\_from2, value\_change\_to2
 
 **Step 6**
 
 Remove old value fields
 
-* Modify table target\_assignment\_value
-target\_value, target\_value2
-* Modify table target\_change
-value\_change\_from, value\_change\_to, value\_change\_from2, value\_change\_to2
+* Modify table target\_assignment\_value: target\_value, target\_value2
+* Modify table target\_change: value\_change\_from, value\_change\_to, value\_change\_from2, value\_change\_to2
 
 **Step 7**
 
 Support for new dimensions in targets system
 
 * Add table target\_dimension
-* Modify table target\_group
-target\_dimension\_id
-* Modify table target\_assignment\_info
-target\_dimension\_item\_id
+* Modify table target\_group: target\_dimension\_id
+* Modify table target\_assignment\_info: target\_dimension\_item\_id
 
 **Step 8**
 
 List field rename
 
-* Modify table target\_dimension
-dimension\_list
+* Modify table target\_dimension: dimension\_list
 
 ## TechnicalDebt
 
@@ -2791,8 +2549,7 @@ Remove the old usage fields from the webhooks table after the usage has been cop
 Define the new WebhookUsage table to keep track of how much a webhook is used.
 Move these fields off the webhook table so we can update without bothering webhook cache
 
-* Modify table Webhook
-total\_calls, total\_errors, consecutive\_errors, last\_error
+* Modify table Webhook: total\_calls, total\_errors, consecutive\_errors, last\_error
 
 **Step 4**
 
@@ -2801,8 +2558,7 @@ The **errors_email** field tracks where to send an e-mail when NetServer receive
 Add error e-mail field to webhooks
 Allow e-mail to be sent to maintainer when webhook errors out
 
-* Modify table Webhook
-errors\_email
+* Modify table Webhook: errors\_email
 
 **Step 5**
 
@@ -2812,8 +2568,7 @@ Add Webhook_notify table for notifying multiple associates/emails on webhook fai
 Add description, notify_via and notify_when columns to Webhook.
 Migrate existing errors_email data to Webhook_notify.
 
-* Modify table Webhook
-description, notify\_via, notify\_when
+* Modify table Webhook: description, notify\_via, notify\_when
 * Add table Webhook\_notify
 
 ## Workflows
@@ -2831,50 +2586,41 @@ Add tables for Workflows (email flows etc.)
 
 Add step rank
 
-* Modify table workflow\_step
-Rank
+* Modify table workflow\_step: Rank
 
 **Step 3**
 
 Add hierarchy_id (folder structure)
 
-* Modify table email\_flow
-hierarchy\_id
+* Modify table email\_flow: hierarchy\_id
 
 **Step 4**
 
 Email settings on email flow
 
 * Modify table email\_flow
-* Modify table workflow\_instance
-next\_step, wait\_until
+* Modify table workflow\_instance: next\_step, wait\_until
 
 **Step 5**
 
 Workflow settings for start, stop, remove from flow
 
-* Modify table workflow
-use\_workflow\_start, workflow\_start, use\_enrollment\_end, enrollment\_end, tzLocationId, remove\_from\_flows
-* Modify table email\_flow
-tzLocationId
+* Modify table workflow: use\_workflow\_start, workflow\_start, use\_enrollment\_end, enrollment\_end, tzLocationId, remove\_from\_flows
+* Modify table email\_flow: tzLocationId
 
 **Step 6**
 
 Workflow blocklist and more
 
-* Modify table workflow
-block\_lists
-* Modify table email\_flow
-from\_type, reply\_to\_type
+* Modify table workflow: block\_lists
+* Modify table email\_flow: from\_type, reply\_to\_type
 
 **Step 7**
 
 WorkflowStepOptions and Reply-To name
 
-* Modify table workflow\_step
-parent\_workflow\_step\_id
-* Modify table email\_flow
-reply\_to\_name
+* Modify table workflow\_step: parent\_workflow\_step\_id
+* Modify table email\_flow: reply\_to\_name
 * Add table workflow\_step\_option
 * Add table workflow\_step\_option\_link
 
@@ -2899,15 +2645,13 @@ Locking system for concurrency control needed by workflows (and others)
 
 Workflow instance fields added
 
-* Modify table workflow\_instance
-next\_step, last\_communication\_step, dropout\_reason, step\_started, step\_level
+* Modify table workflow\_instance: next\_step, last\_communication\_step, dropout\_reason, step\_started, step\_level
 
 **Step 12**
 
 Linking s_shipment_addr to workflow step and workflow instance to track responses
 
-* Modify table s\_shipment\_addr
-workflow\_step\_id, workflow\_instance\_id
+* Modify table s\_shipment\_addr: workflow\_step\_id, workflow\_instance\_id
 
 **Step 13**
 
@@ -2919,15 +2663,13 @@ Indexing new foreign keys on s_shipment_addr
 
 Change the key field from string to int
 
-* Modify table workflow\_step\_option
-key, key\_id
+* Modify table workflow\_step\_option: key, key\_id
 
 **Step 15**
 
 Exit settings for flow
 
-* Modify table workflow
-exit\_flow\_id, exit\_success\_flow\_id
+* Modify table workflow: exit\_flow\_id, exit\_success\_flow\_id
 
 **Step 16**
 
@@ -2944,29 +2686,23 @@ Workflow add 2 functional rights (obsolete)
 
 Email flow content (more assets)
 
-* Modify table email\_flow\_content\_link
-s\_message\_id, email\_flow\_id, form\_id, s\_link\_id
+* Modify table email\_flow\_content\_link: s\_message\_id, email\_flow\_id, form\_id, s\_link\_id
 
 **Step 19**
 
 Workflow id elimination, simplification, optimization
 
-* Modify table email\_flow
-workflow\_id, main\_message\_id
-* Modify table workflow\_step\_option\_link
-Rank
+* Modify table email\_flow: workflow\_id, main\_message\_id
+* Modify table workflow\_step\_option\_link: Rank
 * Add table workflow\_root\_step\_link
 
 **Step 20**
 
 Workflow id elimination, and simplification
 
-* Modify table workflow\_step
-workflow\_id, rank
-* Modify table workflow\_wait\_for\_action
-workflow\_id
-* Modify table workflow\_step\_option
-workflow\_id
+* Modify table workflow\_step: workflow\_id, rank
+* Modify table workflow\_wait\_for\_action: workflow\_id
+* Modify table workflow\_step\_option: workflow\_id
 
 **Step 21**
 
@@ -2978,12 +2714,8 @@ Searchable form fields
 
 Add references to flow from other entities to track them (and some more)
 
-* Modify table person
-created\_by\_form\_id, modified\_by\_workflow\_id, modified\_by\_workflow\_when
-* Modify table sale
-created\_by\_workflow\_id
-* Modify table ticket
-created\_by\_workflow\_id
-* Modify table appointment
-created\_by\_workflow\_id
+* Modify table person: created\_by\_form\_id, modified\_by\_workflow\_id, modified\_by\_workflow\_when
+* Modify table sale: created\_by\_workflow\_id
+* Modify table ticket: created\_by\_workflow\_id
+* Modify table appointment: created\_by\_workflow\_id
 

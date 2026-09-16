@@ -1,6 +1,6 @@
 ---
-title: login table
-description: This table contains entries for the user sessions. 
+title: "login table"
+description: "This table contains entries for the user sessions."
 generated: true
 content_type: reference
 envir: online
@@ -8,16 +8,16 @@ envir: online
 
 import Login from "./includes/login.mdx";
 
-## login Table (297)
-
 This table contains entries for the user sessions. 
+
+Table number: 297
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|user\_id|The id of the user this entry references.|FK [ejuser](./ejuser.mdx)|No|
+|user\_id|The id of the user this entry references.|FK [ejuser](./ejuser)|No|
 |session\_key|A random 32 characters value used as authentication key for the session.|String(32)|No|
 |remote\_addr|The IP address of the client for this session.|String(64)|Yes|
 |remote\_host|The hostname (depending on whether reverse lookup is enabled in httpd) or IP address of the client for this session.|String(64)|Yes|
@@ -29,7 +29,7 @@ This table contains entries for the user sessions.
 |authentication\_type|The authentication type (enum) for this session.|authentication_type|Yes|
 |active\_menu|The currently active (open) left-menu for this session.|Int|Yes|
 |ns\_secret|Netserver login secret.|String(2000)|Yes|
-|flags|Bitmask of flags for a service login session|Enum [LoginFlags](./enums/loginflags.mdx)|Yes|
+|flags|Bitmask of flags for a service login session|Enum [LoginFlags](./enums/loginflags)|Yes|
 
 
 ![login table relationship diagram](/media/loc/en/database/tables/login.png)

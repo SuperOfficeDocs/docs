@@ -1,6 +1,6 @@
 ---
-title: service_auth table
-description: Authentication for a service (imap, smtp...)
+title: "service_auth table"
+description: "Authentication for a service (imap, smtp...)"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import ServiceAuth from "./includes/service-auth.mdx";
 
-## service\_auth Table (493)
-
 Authentication for a service (imap, smtp...)
+
+Table number: 493
 
 ## Fields
 
@@ -23,12 +23,12 @@ Authentication for a service (imap, smtp...)
 |username|The username|String(255)|Yes|
 |password|The (encrypted) password or token|String(255)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
-|associate\_id|Associate who owns this authentication entry|FK [associate](./associate.mdx)|Yes|
-|auth\_status|The status of this authentication entry|Enum [ServiceAuthStatus](./enums/serviceauthstatus.mdx)|Yes|
+|associate\_id|Associate who owns this authentication entry|FK [associate](./associate)|Yes|
+|auth\_status|The status of this authentication entry|Enum [ServiceAuthStatus](./enums/serviceauthstatus)|Yes|
 |encryptedCheck|Encrypted hash checksum|String(254)|No|
 
 

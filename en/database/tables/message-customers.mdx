@@ -1,6 +1,6 @@
 ---
-title: message_customers table
-description: This table contains all cutomers who are involved in a message
+title: "message_customers table"
+description: "This table contains all cutomers who are involved in a message"
 generated: true
 content_type: reference
 envir: online
@@ -8,17 +8,17 @@ envir: online
 
 import MessageCustomers from "./includes/message-customers.mdx";
 
-## message\_customers Table (260)
-
 This table contains all cutomers who are involved in a message
+
+Table number: 260
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|message\_id|The id of the message the customer is involved in|FK [ej_message](./ej-message.mdx)|No|
-|customer\_id|The id of the customer who has received this message, or another message in this ticket|FK [person](./person.mdx)|No|
+|message\_id|The id of the message the customer is involved in|FK [ej_message](./ej-message)|No|
+|customer\_id|The id of the customer who has received this message, or another message in this ticket|FK [person](./person)|No|
 |email|The email-adresse used in this message|String(255)|Yes|
 
 

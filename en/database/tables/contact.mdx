@@ -1,6 +1,6 @@
 ---
-title: contact table
-description: Companies and Organizations.
+title: "contact table"
+description: "Companies and Organizations."
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Contact from "./includes/contact.mdx";
 
-## contact Table (5)
-
 Companies and Organizations.
+
+Table number: 5
 
 ## Fields
 
@@ -22,33 +22,33 @@ Companies and Organizations.
 |department|Department|String(219)|Yes|
 |number1|Alphanumeric user field|String(49)|Yes|
 |number2|Alphanumeric user field|String(49)|Yes|
-|associate\_id|Our contact|FK [associate](./associate.mdx)|Yes|
-|country\_id|Country|FK [country](./country.mdx)|No|
-|business\_idx|Link to Business|FK [Business](./business.mdx)|No|
-|category\_idx|Link to Category|FK [Category](./category.mdx)|No|
+|associate\_id|Our contact|FK [associate](./associate)|Yes|
+|country\_id|Country|FK [country](./country)|No|
+|business\_idx|Link to Business|FK [Business](./business)|No|
+|category\_idx|Link to Category|FK [Category](./category)|No|
 |xstop|STOP flag|Bool|Yes|
 |nomailing|No mailings flags|Bool|Yes|
 |registered|Date registered|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Date last updated|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
-|text\_id|Paperclip note|FK [text](./text.mdx)|Yes|
-|mother\_id|Reserved|FK [contact](./contact.mdx)|Yes|
-|userdef\_id|User defined table record 1|FK [udcontactSmall](./udcontactsmall.mdx)|Yes|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
+|text\_id|Paperclip note|FK [text](./text)|Yes|
+|mother\_id|Reserved|FK [contact](./contact)|Yes|
+|userdef\_id|User defined table record 1|FK [udcontactSmall](./udcontactsmall)|Yes|
 |orgNr|VAT number or similar|String(49)|Yes|
 |soundEx|What the name sounds like, for duplicate detection|String(9)|Yes|
 |source|How did we get this contact? For future integration needs|UShort|Yes|
-|userdef2\_id|User defined table record 2|FK [udcontactLarge](./udcontactlarge.mdx)|Yes|
+|userdef2\_id|User defined table record 2|FK [udcontactLarge](./udcontactlarge)|Yes|
 |activeInterests|Number of records in cintr table; select count(*) from cintr ci where ci.contact_id = this.contact_id == activeInterests is always true|UShort|Yes|
 |updatedCount|Number of times updated|UShort|No|
-|group\_id|Group id of original owning associate, semantics like appnt.grp_id|FK [UserGroup](./usergroup.mdx)|Yes|
-|tzLocationId|Default timezone location for this contact|FK [TZLocation](./tzlocation.mdx)|Yes|
-|ticketPriorityId|Default ticket priority for new tickets|FK [ticket_priority](./ticket-priority.mdx)|Yes|
+|group\_id|Group id of original owning associate, semantics like appnt.grp_id|FK [UserGroup](./usergroup)|Yes|
+|tzLocationId|Default timezone location for this contact|FK [TZLocation](./tzlocation)|Yes|
+|ticketPriorityId|Default ticket priority for new tickets|FK [ticket_priority](./ticket-priority)|Yes|
 |deleted|If nonzero, then this contact is &apos;deleted&apos; and should generally not be shown|UShort|Yes|
-|supportLanguageId|Customers language (does not necessarily map to ISO languages)|FK [cust_lang](./cust-lang.mdx)|Yes|
-|supportAssociateId|Our contact, but for support context, not sales/primary contact|FK [associate](./associate.mdx)|Yes|
-|supportPersonId|The person (at the customer) who support talks to (the counterpart of supportAssociateId)|FK [person](./person.mdx)|Yes|
-|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent.mdx)|Yes|
+|supportLanguageId|Customers language (does not necessarily map to ISO languages)|FK [cust_lang](./cust-lang)|Yes|
+|supportAssociateId|Our contact, but for support context, not sales/primary contact|FK [associate](./associate)|Yes|
+|supportPersonId|The person (at the customer) who support talks to (the counterpart of supportAssociateId)|FK [person](./person)|Yes|
+|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent)|Yes|
 |dbi\_key|The primary key for the integrated entry in the external datasource.|String(255)|Yes|
 |dbi\_last\_syncronized|Last external syncronization.|DateTime|Yes|
 |dbi\_last\_modified|When the entry was last modified.|DateTime|Yes|

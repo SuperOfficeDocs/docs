@@ -1,13 +1,12 @@
 ---
-title: person_freetextsearch
+title: "person_freetextsearch"
 keywords: mdoprovider mdo provider person_freetextsearch
-description: Provider for selecting a Person - without contact search. Does keyword matching and scoring across multiple tables using freetext index.
+description: "Provider for selecting a Person - without contact search. Does keyword matching and scoring across multiple tables using freetext index."
 generated: true
 content_type: reference
 envir: online
 ---
 
-## "person_freetextsearch" MDO List
 Provider for selecting a Person - without contact search.
 Does keyword matching and scoring across multiple
 tables using freetext index.
@@ -16,22 +15,27 @@ User's own contacts, recently added + modified contacts, contacts modified or cr
 Matches on word boundaries or at start of field are scored extra highly.
 
 
+
 id = person_id,
+
 
 
 Name = contact.name + department or person first+last name (contact name + department)
 
 
+
 ExtraInfo = contact_id,
+
 
 
 IconHint = Personwithcontact or Personwithoutcontact
 
 
+
 Type = "Person"
 Stopped contacts are marked with stylehint = "stop" (but item.deleted = false)
 
-Implemented by the PersonListFreetextSearchProvider class.
+Implemented by the `SuperOffice.CRM.Lists.PersonListFreetextSearchProvider` class.
 The name of the MDO list is 'person_freetextsearch'.
 
 ## Additional Attributes
@@ -39,7 +43,6 @@ The name of the MDO list is 'person_freetextsearch'.
 | Description | Name | Example Value |
 |-----|-----|------|
 |Skip retired employees| skipRetired|False|
-
 
 
 
@@ -92,10 +95,10 @@ foreach (var item in listProvider.RootItems) {
 
 ## Related MDO Lists
 
-* "person_freetextsearchheadings"
-* "person_freetextsearchheadingswithallitem"
-* "person_freetextsearchheadingswithallitemwithnoselection"
-* "person_freetextsearchheadingswithnoselection"
-* "person_freetextsearchwithallitem"
-* "person_freetextsearchwithallitemwithnoselection"
-* "person_freetextsearchwithnoselection"
+* `person_freetextsearchheadings`
+* `person_freetextsearchheadingswithallitem`
+* `person_freetextsearchheadingswithallitemwithnoselection`
+* `person_freetextsearchheadingswithnoselection`
+* `person_freetextsearchwithallitem`
+* `person_freetextsearchwithallitemwithnoselection`
+* `person_freetextsearchwithnoselection`

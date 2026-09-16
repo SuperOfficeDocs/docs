@@ -1,6 +1,6 @@
 ---
-title: message_header table
-description: This table contains small pieces of information which is listed over the body for each message.
+title: "message_header table"
+description: "This table contains small pieces of information which is listed over the body for each message."
 generated: true
 content_type: reference
 envir: online
@@ -8,16 +8,16 @@ envir: online
 
 import MessageHeader from "./includes/message-header.mdx";
 
-## message\_header Table (259)
-
 This table contains small pieces of information which is listed over the body for each message.
+
+Table number: 259
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|message\_id|The id of the message this header entry is connected to.|FK [ej_message](./ej-message.mdx)|No|
+|message\_id|The id of the message this header entry is connected to.|FK [ej_message](./ej-message)|No|
 |type|The type for this header entry.|type|Yes|
 |name|A name for this entry.|String(64)|Yes|
 |value|A value for this entry.|Clob|Yes|

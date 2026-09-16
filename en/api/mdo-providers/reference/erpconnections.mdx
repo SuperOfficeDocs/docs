@@ -1,21 +1,21 @@
 ---
-title: erpconnections
+title: "erpconnections"
 keywords: mdoprovider mdo provider erpconnections
-description: Retrieve the list of all defined Erp Connections (not Connectors, that's another list)
+description: "Retrieve the list of all defined Erp Connections (not Connectors, that's another list)"
 generated: true
 content_type: reference
 envir: online
 ---
 
-## "erpconnections" MDO List
 Retrieve the list of all defined Erp Connections (not Connectors, that's another list)
 
-Implementation relies on the [ErpConnectionProvider](/en/api/archive-providers/reference/erpconnection) archivelist, and simply reformats its data.
+Implementation relies on the `ErpConnectionProvider` archivelist, and simply reformats its data.
+
 
 
 The items contain the GUID (ErpId) used by the connection, in the ExtraInfo field
 
-Implemented by the ErpConnections class.
+Implemented by the `SuperOffice.CRM.Lists.ErpConnections` class.
 The name of the MDO list is 'erpconnections'.
 
 ## Additional Attributes
@@ -24,7 +24,6 @@ The name of the MDO list is 'erpconnections'.
 |-----|-----|------|
 |Sort by rank| useRank|true|
 |Add connector name to names| prefixwithconnector|true|
-
 
 
 
@@ -59,10 +58,10 @@ foreach (var item in listProvider.RootItems) {
 
 ## Related MDO Lists
 
-* "erpconnectionsheadings"
-* "erpconnectionsheadingswithallitem"
-* "erpconnectionsheadingswithallitemwithnoselection"
-* "erpconnectionsheadingswithnoselection"
-* "erpconnectionswithallitem"
-* "erpconnectionswithallitemwithnoselection"
-* "erpconnectionswithnoselection"
+* `erpconnectionsheadings`
+* `erpconnectionsheadingswithallitem`
+* `erpconnectionsheadingswithallitemwithnoselection`
+* `erpconnectionsheadingswithnoselection`
+* `erpconnectionswithallitem`
+* `erpconnectionswithallitemwithnoselection`
+* `erpconnectionswithnoselection`
