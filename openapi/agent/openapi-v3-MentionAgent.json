@@ -3,7 +3,7 @@
   "info": {
     "version": "v1-Agents",
     "title": "SuperOffice Agent API v1",
-    "description": "SuperOffice Agent API - NumberAllocationAgent",
+    "description": "SuperOffice Agent API - MentionAgent",
     "contact": {
       "name": "SuperOffice DevNet",
       "url": "https://docs.superoffice.com/en/api/index.html",
@@ -11,115 +11,24 @@
     }
   },
   "paths": {
-    "/api/v1/Agents/NumberAllocation/CreateDefaultRefCountEntity": {
+    "/api/v1/Agents/Mention/GetMyMentions": {
       "post": {
         "tags": [
-          "NumberAllocation_Agent"
+          "Mention_Agent"
         ],
-        "summary": "Create Default Ref Count Entity",
-        "description": "Loading default values into a new RefCountEntity.\n\nNsApiSlow threshold: 1000 ms.",
-        "operationId": "v1NumberAllocationAgent_CreateDefaultRefCountEntity",
+        "summary": "Get My Mentions",
+        "description": "Get the current associate's @-mentions\n\nNsApiSlow threshold: 2000 ms.\r\n<para />## Experimental: ## The Mention agent is experimental, subject to change, and not intended for partners.",
+        "operationId": "v1MentionAgent_GetMyMentions",
         "parameters": [
           {
-            "name": "Accept-Language",
-            "in": "header",
-            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
             "required": false,
             "schema": {
               "type": "string"
             }
           },
-          {
-            "name": "SO-Language",
-            "in": "header",
-            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-Culture",
-            "in": "header",
-            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-TimeZone",
-            "in": "header",
-            "description": "Specify the timezone code that you would like date/time responses converted to.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-AppToken",
-            "in": "header",
-            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.RefCountEntity"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.RefCountEntity"
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.RefCountEntity"
-                }
-              },
-              "text/xml": {
-                "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.RefCountEntity"
-                }
-              },
-              "application/json-patch+json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.RefCountEntity"
-                }
-              },
-              "application/merge-patch+json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.RefCountEntity"
-                }
-              }
-            }
-          }
-        },
-        "security": [
-          {
-            "SOPassword": [],
-            "SuperId": []
-          }
-        ]
-      }
-    },
-    "/api/v1/Agents/NumberAllocation/SaveRefCountEntity": {
-      "post": {
-        "tags": [
-          "NumberAllocation_Agent"
-        ],
-        "summary": "Save Ref Count Entity",
-        "description": "Updates the existing RefCountEntity or creates a new RefCountEntity if the id parameter is 0.\n\nNsApiSlow threshold: 1000 ms.",
-        "operationId": "v1NumberAllocationAgent_SaveRefCountEntity",
-        "parameters": [
           {
             "name": "Accept-Language",
             "in": "header",
@@ -170,41 +79,41 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.CRM.Services.RefCountEntity"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.GetMyMentionsRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.CRM.Services.RefCountEntity"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.GetMyMentionsRequest"
               }
             },
             "application/xml": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.CRM.Services.RefCountEntity"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.GetMyMentionsRequest"
               }
             },
             "text/xml": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.CRM.Services.RefCountEntity"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.GetMyMentionsRequest"
               }
             },
             "application/x-www-form-urlencoded": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.CRM.Services.RefCountEntity"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.GetMyMentionsRequest"
               }
             },
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.CRM.Services.RefCountEntity"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.GetMyMentionsRequest"
               }
             },
             "application/merge-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.CRM.Services.RefCountEntity"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.GetMyMentionsRequest"
               }
             }
           },
-          "description": "The RefCountEntity that is saved",
+          "description": "UnreadOnly",
           "required": true
         },
         "responses": {
@@ -213,32 +122,50 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.RefCountEntity"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Mention"
+                  }
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.RefCountEntity"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Mention"
+                  }
                 }
               },
               "application/xml": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.RefCountEntity"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Mention"
+                  }
                 }
               },
               "text/xml": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.RefCountEntity"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Mention"
+                  }
                 }
               },
               "application/json-patch+json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.RefCountEntity"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Mention"
+                  }
                 }
               },
               "application/merge-patch+json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.RefCountEntity"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Mention"
+                  }
                 }
               }
             }
@@ -252,23 +179,58 @@
         ]
       }
     },
-    "/api/v1/Agents/NumberAllocation/DeleteRefCountEntity": {
+    "/api/v1/Agents/Mention/GetMyMentionsUnreadCount": {
       "post": {
         "tags": [
-          "NumberAllocation_Agent"
+          "Mention_Agent"
         ],
-        "summary": "Delete Ref Count Entity",
-        "description": "Deletes the RefCountEntity\n\nNsApiSlow threshold: 1000 ms.",
-        "operationId": "v1NumberAllocationAgent_DeleteRefCountEntity",
+        "summary": "Get My Mentions Unread Count",
+        "description": "Get the current associate's unread @-mention count\n\nNsApiSlow threshold: 2000 ms.\r\n<para />## Experimental: ## The Mention agent is experimental, subject to change, and not intended for partners.",
+        "operationId": "v1MentionAgent_GetMyMentionsUnreadCount",
         "parameters": [
           {
-            "name": "refCountEntityId",
+            "name": "$select",
             "in": "query",
-            "description": "The identity of the RefCountEntity",
-            "required": true,
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
             }
           },
           {
@@ -281,6 +243,253 @@
             }
           }
         ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "format": "int32",
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Mention/GetMentionsCreatedByMe": {
+      "post": {
+        "tags": [
+          "Mention_Agent"
+        ],
+        "summary": "Get Mentions Created By Me",
+        "description": "Get the @-mentions the current associate created (tagged someone else)\n\nNsApiSlow threshold: 2000 ms.\r\n<para />## Experimental: ## The Mention agent is experimental, subject to change, and not intended for partners.",
+        "operationId": "v1MentionAgent_GetMentionsCreatedByMe",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Mention"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Mention"
+                  }
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Mention"
+                  }
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Mention"
+                  }
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Mention"
+                  }
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperOffice.CRM.Services.Mention"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Mention/MarkMentionsAsRead": {
+      "post": {
+        "tags": [
+          "Mention_Agent"
+        ],
+        "summary": "Mark Mentions As Read",
+        "description": "Mark mentions as read\n\nNsApiSlow threshold: 2000 ms.\r\n<para />## Experimental: ## The Mention agent is experimental, subject to change, and not intended for partners.",
+        "operationId": "v1MentionAgent_MarkMentionsAsRead",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.MarkMentionsAsReadRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.MarkMentionsAsReadRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.MarkMentionsAsReadRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.MarkMentionsAsReadRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.MarkMentionsAsReadRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.MarkMentionsAsReadRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.MarkMentionsAsReadRequest"
+              }
+            }
+          },
+          "description": "MentionIds",
+          "required": true
+        },
         "responses": {
           "204": {
             "description": "No Content"
@@ -294,133 +503,14 @@
         ]
       }
     },
-    "/api/v1/Agents/NumberAllocation/GetRefCountEntity": {
+    "/api/v1/Agents/Mention/DeleteMentions": {
       "post": {
         "tags": [
-          "NumberAllocation_Agent"
+          "Mention_Agent"
         ],
-        "summary": "Get Ref Count Entity",
-        "description": "Gets a RefCountEntity object.\n\nNsApiSlow threshold: 1000 ms.",
-        "operationId": "v1NumberAllocationAgent_GetRefCountEntity",
-        "parameters": [
-          {
-            "name": "refCountEntityId",
-            "in": "query",
-            "description": "The identifier of the RefCountEntity object",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "$select",
-            "in": "query",
-            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "Accept-Language",
-            "in": "header",
-            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-Language",
-            "in": "header",
-            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-Culture",
-            "in": "header",
-            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-TimeZone",
-            "in": "header",
-            "description": "Specify the timezone code that you would like date/time responses converted to.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-AppToken",
-            "in": "header",
-            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.RefCountEntity"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.RefCountEntity"
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.RefCountEntity"
-                }
-              },
-              "text/xml": {
-                "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.RefCountEntity"
-                }
-              },
-              "application/json-patch+json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.RefCountEntity"
-                }
-              },
-              "application/merge-patch+json": {
-                "schema": {
-                  "$ref": "#/components/schemas/SuperOffice.CRM.Services.RefCountEntity"
-                }
-              }
-            }
-          }
-        },
-        "security": [
-          {
-            "SOPassword": [],
-            "SuperId": []
-          }
-        ]
-      }
-    },
-    "/api/v1/Agents/NumberAllocation/SaveDefaultNumbering": {
-      "post": {
-        "tags": [
-          "NumberAllocation_Agent"
-        ],
-        "summary": "Save Default Numbering",
-        "description": "Saves default numbering values in preferences\n\nNsApiSlow threshold: 1000 ms.",
-        "operationId": "v1NumberAllocationAgent_SaveDefaultNumbering",
+        "summary": "Delete Mentions",
+        "description": "Delete mentions by id\n\nNsApiSlow threshold: 2000 ms.\r\n<para />## Experimental: ## The Mention agent is experimental, subject to change, and not intended for partners.",
+        "operationId": "v1MentionAgent_DeleteMentions",
         "parameters": [
           {
             "name": "$select",
@@ -445,41 +535,41 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.NumberAllocationCarriers.SaveDefaultNumberingRequest"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.DeleteMentionsRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.NumberAllocationCarriers.SaveDefaultNumberingRequest"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.DeleteMentionsRequest"
               }
             },
             "application/xml": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.NumberAllocationCarriers.SaveDefaultNumberingRequest"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.DeleteMentionsRequest"
               }
             },
             "text/xml": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.NumberAllocationCarriers.SaveDefaultNumberingRequest"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.DeleteMentionsRequest"
               }
             },
             "application/x-www-form-urlencoded": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.NumberAllocationCarriers.SaveDefaultNumberingRequest"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.DeleteMentionsRequest"
               }
             },
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.NumberAllocationCarriers.SaveDefaultNumberingRequest"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.DeleteMentionsRequest"
               }
             },
             "application/merge-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.NumberAllocationCarriers.SaveDefaultNumberingRequest"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.DeleteMentionsRequest"
               }
             }
           },
-          "description": "RefCountEntity",
+          "description": "MentionIds",
           "required": true
         },
         "responses": {
@@ -495,123 +585,14 @@
         ]
       }
     },
-    "/api/v1/Agents/NumberAllocation/GetNumberEachTemplate": {
+    "/api/v1/Agents/Mention/UpdateMentionSnippets": {
       "post": {
         "tags": [
-          "NumberAllocation_Agent"
+          "Mention_Agent"
         ],
-        "summary": "Get Number Each Template",
-        "description": "Returns true or false if Automatically create new counters for new document templates\n\nNsApiSlow threshold: 1000 ms.",
-        "operationId": "v1NumberAllocationAgent_GetNumberEachTemplate",
-        "parameters": [
-          {
-            "name": "$select",
-            "in": "query",
-            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "Accept-Language",
-            "in": "header",
-            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-Language",
-            "in": "header",
-            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-Culture",
-            "in": "header",
-            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-TimeZone",
-            "in": "header",
-            "description": "Specify the timezone code that you would like date/time responses converted to.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "SO-AppToken",
-            "in": "header",
-            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "boolean"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "boolean"
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "type": "boolean"
-                }
-              },
-              "text/xml": {
-                "schema": {
-                  "type": "boolean"
-                }
-              },
-              "application/json-patch+json": {
-                "schema": {
-                  "type": "boolean"
-                }
-              },
-              "application/merge-patch+json": {
-                "schema": {
-                  "type": "boolean"
-                }
-              }
-            }
-          }
-        },
-        "security": [
-          {
-            "SOPassword": [],
-            "SuperId": []
-          }
-        ]
-      }
-    },
-    "/api/v1/Agents/NumberAllocation/SetNumberEachTemplate": {
-      "post": {
-        "tags": [
-          "NumberAllocation_Agent"
-        ],
-        "summary": "Set Number Each Template",
-        "description": "Saves true or false if Automatically create new counters for new document templates\n\nNsApiSlow threshold: 1000 ms.",
-        "operationId": "v1NumberAllocationAgent_SetNumberEachTemplate",
+        "summary": "Update Mention Snippets",
+        "description": "Insert-missing and refresh-existing mention rows for a saved message\n\nNsApiSlow threshold: 2000 ms.\r\n<para />## Experimental: ## The Mention agent is experimental, subject to change, and not intended for partners.",
+        "operationId": "v1MentionAgent_UpdateMentionSnippets",
         "parameters": [
           {
             "name": "$select",
@@ -636,41 +617,41 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.NumberAllocationCarriers.SetNumberEachTemplateRequest"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.UpdateMentionSnippetsRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.NumberAllocationCarriers.SetNumberEachTemplateRequest"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.UpdateMentionSnippetsRequest"
               }
             },
             "application/xml": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.NumberAllocationCarriers.SetNumberEachTemplateRequest"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.UpdateMentionSnippetsRequest"
               }
             },
             "text/xml": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.NumberAllocationCarriers.SetNumberEachTemplateRequest"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.UpdateMentionSnippetsRequest"
               }
             },
             "application/x-www-form-urlencoded": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.NumberAllocationCarriers.SetNumberEachTemplateRequest"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.UpdateMentionSnippetsRequest"
               }
             },
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.NumberAllocationCarriers.SetNumberEachTemplateRequest"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.UpdateMentionSnippetsRequest"
               }
             },
             "application/merge-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.NumberAllocationCarriers.SetNumberEachTemplateRequest"
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MentionCarriers.UpdateMentionSnippetsRequest"
               }
             }
           },
-          "description": "SetValue",
+          "description": "MessageId, MentionedAssociateIds",
           "required": true
         },
         "responses": {
@@ -719,130 +700,63 @@
       }
     },
     "schemas": {
-      "SuperOffice.CRM.Services.RefCountEntity": {
-        "description": "A refcount entity for a number allocation\r\n<para />\r\nCarrier object for RefCountEntity.\r\nServices for the RefCountEntity Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.INumberAllocationAgent\">NumberAllocation Agent</see>.",
+      "SuperOffice.WebApi.v1.Carriers.MentionCarriers.GetMyMentionsRequest": {
+        "description": "GetMyMentions: Get the current associate's @-mentions",
         "type": "object",
         "properties": {
-          "RefCountsId": {
-            "format": "int32",
-            "description": "Primary key",
-            "type": "integer"
-          },
-          "Field": {
-            "description": "Field identifier in string format table.field",
-            "type": "string"
-          },
-          "RecordId": {
-            "format": "int32",
-            "description": "Record id in target table, used when there are separate counters for each target record",
-            "type": "integer"
-          },
-          "SuggestedRecords": {
-            "description": "List of valid entities, the associated record is selected in the list, used records are filtered out",
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
-            }
-          },
-          "CurrentValue": {
-            "format": "int32",
-            "description": "Current value of counter",
-            "type": "integer"
-          },
-          "TravelPrefix": {
-            "format": "int32",
-            "description": "size of prefix for Travel use of ths counter",
-            "type": "integer"
-          },
-          "SatPrefix": {
-            "format": "int32",
-            "description": "size of prefix for Satellite use of this counter",
-            "type": "integer"
-          },
-          "Allocate": {
-            "description": "Allocate numbers automatically",
+          "UnreadOnly": {
             "type": "boolean"
-          },
-          "Unique": {
-            "description": "Check that entered value is unique",
-            "type": "boolean"
-          },
-          "ReadOnly": {
-            "description": "Target field is read only in GUI",
-            "type": "boolean"
-          },
-          "AllowBlank": {
-            "description": "Allow blank  as a valid value",
-            "type": "boolean"
-          },
-          "TableRight": {
-            "$ref": "#/components/schemas/SuperOffice.CRM.Security.TableRight"
-          },
-          "FieldProperties": {
-            "description": "Field property dictionary mapping field names to field access rights.",
-            "type": "object",
-            "additionalProperties": {
-              "$ref": "#/components/schemas/SuperOffice.CRM.Security.FieldProperty"
-            }
           }
         }
       },
-      "SuperOffice.CRM.Services.MDOListItem": {
-        "description": "Carrier object for MDOListItem.\r\nServices for the MDOListItem Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IMDOAgent\">MDO Agent</see>.",
+      "SuperOffice.CRM.Services.Mention": {
+        "description": "Mention carrier.\r\n<para />\r\nCarrier object for Mention.\r\nServices for the Mention Carrier is available from the <see cref=\"T:SuperOffice.CRM.Services.IMentionAgent\">Mention Agent</see>.",
         "type": "object",
         "properties": {
-          "Id": {
+          "MentionId": {
             "format": "int32",
-            "description": "The Id of the ListItem",
+            "description": "Id of the mention row.",
             "type": "integer"
           },
-          "Name": {
-            "description": "The name of the ListItem",
+          "MessageId": {
+            "format": "int32",
+            "description": "The request comment (ej_message) the mention was made in.",
+            "type": "integer"
+          },
+          "TicketId": {
+            "format": "int32",
+            "description": "Id of the ticket the mention's comment belongs to.",
+            "type": "integer"
+          },
+          "Title": {
+            "description": "Display title for the item the mention was made in, combined server-side.",
             "type": "string"
           },
-          "ToolTip": {
-            "description": "The tooltip of the ListItem",
+          "MentionedByAssociateId": {
+            "format": "int32",
+            "description": "The colleague who wrote the @mention.",
+            "type": "integer"
+          },
+          "MentionedByFullName": {
+            "description": "Display name of the colleague who wrote the @mention.",
             "type": "string"
           },
-          "Deleted": {
-            "description": "The deleted status of the ListItem",
+          "MentionedAssociateId": {
+            "format": "int32",
+            "description": "The colleague who was tagged.",
+            "type": "integer"
+          },
+          "MentionedDate": {
+            "format": "date-time",
+            "description": "When the mention was created.  in UTC.",
+            "type": "string"
+          },
+          "IsRead": {
+            "description": "Whether the mentioned colleague has seen this mention.",
             "type": "boolean"
           },
-          "Rank": {
-            "format": "int32",
-            "description": "The rank of the ListItem",
-            "type": "integer"
-          },
-          "Type": {
-            "description": "The type of the ListItem. Custom field.",
-            "type": "string"
-          },
-          "ChildItems": {
-            "description": "The child items of the MDOListItem",
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/SuperOffice.CRM.Services.MDOListItem"
-            }
-          },
-          "IconHint": {
-            "description": "The Icon hint of the ListItem. Custom field.",
-            "type": "string"
-          },
-          "ColorBlock": {
-            "format": "int32",
-            "description": "The color indicator of the ListItem color block",
-            "type": "integer"
-          },
-          "ExtraInfo": {
-            "description": "Extra information added to the ListItem. Could be information such as sort order etc or other meta data. Custom field.",
-            "type": "string"
-          },
-          "StyleHint": {
-            "description": "Style hint indicating, information such as background color etc. Custom field.",
-            "type": "string"
-          },
-          "FullName": {
-            "description": "The name of the ListItem in its context",
+          "Snippet": {
+            "description": "Short snippet of the mentioned text.",
             "type": "string"
           },
           "TableRight": {
@@ -898,21 +812,46 @@
           }
         }
       },
-      "SuperOffice.WebApi.v1.Carriers.NumberAllocationCarriers.SaveDefaultNumberingRequest": {
-        "description": "SaveDefaultNumbering: Saves default numbering values in preferences",
+      "SuperOffice.WebApi.v1.Carriers.MentionCarriers.MarkMentionsAsReadRequest": {
+        "description": "MarkMentionsAsRead: Mark mentions as read",
         "type": "object",
         "properties": {
-          "RefCountEntity": {
-            "$ref": "#/components/schemas/SuperOffice.CRM.Services.RefCountEntity"
+          "MentionIds": {
+            "type": "array",
+            "items": {
+              "format": "int32",
+              "type": "integer"
+            }
           }
         }
       },
-      "SuperOffice.WebApi.v1.Carriers.NumberAllocationCarriers.SetNumberEachTemplateRequest": {
-        "description": "SetNumberEachTemplate: Saves true or false if Automatically create new counters for new document templates",
+      "SuperOffice.WebApi.v1.Carriers.MentionCarriers.DeleteMentionsRequest": {
+        "description": "DeleteMentions: Delete mentions by id",
         "type": "object",
         "properties": {
-          "SetValue": {
-            "type": "boolean"
+          "MentionIds": {
+            "type": "array",
+            "items": {
+              "format": "int32",
+              "type": "integer"
+            }
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.MentionCarriers.UpdateMentionSnippetsRequest": {
+        "description": "UpdateMentionSnippets: Insert-missing and refresh-existing mention rows for a saved message",
+        "type": "object",
+        "properties": {
+          "MessageId": {
+            "format": "int32",
+            "type": "integer"
+          },
+          "MentionedAssociateIds": {
+            "type": "array",
+            "items": {
+              "format": "int32",
+              "type": "integer"
+            }
           }
         }
       }
