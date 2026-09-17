@@ -2,16 +2,17 @@
 uid: mobile-crm-appointment-create
 title: Create follow-up
 description: How to create follow-ups in SuperOffice Mobile CRM.
-keywords: ['new appointment', 'add appointment', 'New based on existing', 'create meeting', 'diary']
+keywords: ['new appointment', 'add appointment', 'New based on existing', 'create meeting', 'diary', 'repeat', 'recurring']
 author: digitaldiina
-date: 06.10.2026
-so_version: 11.1
+date: 09.18.2026
+so_version: 11.1.17
 content_type: howto
 tier: core
 platform: mobile
 redirect_from: /en/mobile/superoffice-mobile/diary/create-appointment
 related:
   - /en/mobile/diary/update-appointment
+  - Desktop: /en/diary/learn/recurrence/create
 language: en
 ---
 
@@ -54,6 +55,23 @@ You can create follow-ups directly in another person's calendar, as long as you 
     * Their name will display in **red** to indicate the switch.
 1. Tap **+** and follow the steps in **Create a follow-up**.
 
+## Set a repeating follow-up {#repeat}
+
+You can turn a follow-up into a recurring series without leaving Mobile CRM, the same way recurring follow-ups already work in the desktop and web client.
+
+1. In the follow-up form, tap the **Repeat** field, directly below **Starts** and **Ends**. It's set to **Never** by default.
+1. Select a frequency: **Every day**, **Every workday** (Monday to Friday only), **Every week**, **Every month**, or **Every year**.
+1. Set an **End repeat** date or a **Number of repeats**. Whichever one you set, the other is calculated for you, so the series always has a defined end.
+1. Tap **Save** to create the series.
+
+![Follow-up screen showing the Repeat field with frequency options -app-screen][img23]
+
+<Note>
+Mobile CRM offers a fixed set of frequencies rather than the desktop client's full custom pattern builder, and every series must be bounded by an end date or a number of repeats.
+</Note>
+
+To turn recurrence off again, set **Repeat** back to **Never**. The **End repeat** and **Number of repeats** fields clear and disappear.
+
 ## Add attendee and resources
 
 After creating a follow-up, you can invite attendees or book resources (such as a meeting room and projector).
@@ -73,3 +91,4 @@ You must be the owner of the follow-up to add attendees and resources.
 1. Tap **Save** to finalize.
 
 [img1]: /media/loc/en/mobile/diary-menu.png
+[img23]: /media/loc/en/mobile/mobile-crm-follow-up-repeat.png
