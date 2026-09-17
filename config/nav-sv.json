@@ -443,6 +443,7 @@
             "pages": [
               "sv/marketing/forms/learn/create",
               "sv/marketing/forms/learn/field-options",
+              "sv/marketing/forms/learn/recaptcha",
               "sv/marketing/forms/learn/define-form-actions",
               "sv/marketing/forms/learn/form-templates",
               "sv/marketing/forms/learn/publish",

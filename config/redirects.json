@@ -2885,14 +2885,6 @@
     "destination": "/da/marketing/forms/learn/publish"
   },
   {
-    "source": "/da/marketing/forms/learn/recaptcha",
-    "destination": "/en/marketing/forms/learn/recaptcha"
-  },
-  {
-    "source": "/da/marketing/forms/learn/recaptcha.html",
-    "destination": "/en/marketing/forms/learn/recaptcha"
-  },
-  {
     "source": "/da/marketing/forms/learn/submissions/index",
     "destination": "/da/marketing/forms/learn/index"
   },
@@ -7263,14 +7255,6 @@
   {
     "source": "/de/marketing/forms/learn/publish.html",
     "destination": "/de/marketing/forms/learn/publish"
-  },
-  {
-    "source": "/de/marketing/forms/learn/recaptcha",
-    "destination": "/en/marketing/forms/learn/recaptcha"
-  },
-  {
-    "source": "/de/marketing/forms/learn/recaptcha.html",
-    "destination": "/en/marketing/forms/learn/recaptcha"
   },
   {
     "source": "/de/marketing/forms/learn/submissions/index",
@@ -22053,14 +22037,6 @@
     "destination": "/nl/marketing/forms/learn/publish"
   },
   {
-    "source": "/nl/marketing/forms/learn/recaptcha",
-    "destination": "/en/marketing/forms/learn/recaptcha"
-  },
-  {
-    "source": "/nl/marketing/forms/learn/recaptcha.html",
-    "destination": "/en/marketing/forms/learn/recaptcha"
-  },
-  {
     "source": "/nl/marketing/forms/learn/submissions/index",
     "destination": "/nl/marketing/forms/learn/index"
   },
@@ -26419,14 +26395,6 @@
   {
     "source": "/no/marketing/forms/learn/publish.html",
     "destination": "/no/marketing/forms/learn/publish"
-  },
-  {
-    "source": "/no/marketing/forms/learn/recaptcha",
-    "destination": "/en/marketing/forms/learn/recaptcha"
-  },
-  {
-    "source": "/no/marketing/forms/learn/recaptcha.html",
-    "destination": "/en/marketing/forms/learn/recaptcha"
   },
   {
     "source": "/no/marketing/forms/learn/submissions/index",
@@ -31299,14 +31267,6 @@
   {
     "source": "/sv/marketing/forms/learn/publish.html",
     "destination": "/sv/marketing/forms/learn/publish"
-  },
-  {
-    "source": "/sv/marketing/forms/learn/recaptcha",
-    "destination": "/en/marketing/forms/learn/recaptcha"
-  },
-  {
-    "source": "/sv/marketing/forms/learn/recaptcha.html",
-    "destination": "/en/marketing/forms/learn/recaptcha"
   },
   {
     "source": "/sv/marketing/forms/learn/submissions/index",

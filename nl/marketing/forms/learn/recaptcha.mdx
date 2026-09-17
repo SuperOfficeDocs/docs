@@ -1,0 +1,58 @@
+---
+uid: help-nl-form-recaptcha
+title: Google reCAPTCHA in formulieren
+description: Voeg Google reCAPTCHA toe aan een SuperOffice Marketing-formulier om het te beschermen tegen spam.
+keywords: ['reCAPTCHA profile', 'formulier', "I'm not a robot", 'site key', 'secret key']
+author: Bergfrid Dias
+date: 05.04.2026
+so_version: 11.13
+content_type: howto
+license: marketingessentials
+tier: growth
+category: marketing
+topic: forms
+audience: person
+audience_tooltip: SuperOffice Marketing
+language: nl
+---
+
+## Een reCAPTCHA-element toevoegen
+
+1. Maak of open een formulier.
+1. Selecteer **Velden**.
+1. Klik op **Element toevoegen** en kies **Formulierelementen** > **Google reCAPTCHA**.
+
+    ![imagehkoheq.png -screenshot][img1]
+
+Wanneer het element is toegevoegd, kunt u bepalen hoe u de Site key en Secret key wilt gebruiken.
+
+<Note>
+Het is alleen mogelijk om 1 reCAPTCHA per formulier toe te voegen.
+</Note>
+
+SuperOffice Online biedt u standaardsleutels voor reCAPTCHA, die uw formulier beschermen tegen robots. U hoeft niets in te voeren voor Site key en Secret key, tenzij u uw eigen reCAPTCHA-profiel wilt maken en statistieken wilt bekijken. Volg hiervoor de onderstaande stappen en voer uw SiteKey en SecretKey in. [Statistieken][1] laten zien hoeveel aanvragen zijn geslaagd of mislukt, de gemiddelde score, het aantal voltooide sessies en de gemiddelde responstijd.
+
+![imagehekct.png -screenshot][img2]
+
+## Een Google reCAPTCHA-profiel maken
+
+Om aangepaste sleutels te maken, meldt u zich aan met een Google-account bij [https://www.google.com/u/0/recaptcha/admin/create][2].
+
+1. Voer een sitelabel in.
+1. Selecteer "reCAPTCHA v2".
+1. En vervolgens het selectievakje "Ik ben geen robot".
+1. Voeg het domein toe. Onder "domains" moet u het domein invoeren waarop het Customer Center (customer.fcgi) wordt uitgevoerd, of een bovenliggend domein van dat subdomein.
+
+![imagerlc6j.png -screenshot][img3]
+
+Nadat u op **Submit** hebt geklikt, worden uw Site key en Secret key weergegeven:
+
+![imagehn8rh.png -screenshot][img4]
+
+[1]: https://www.google.com/recaptcha/admin
+[2]: https://www.google.com/u/0/recaptcha/admin/create
+
+[img1]: /media/loc/en/marketing/add-element-dialog.png
+[img2]: /media/loc/en/marketing/recaptcha-form-element.png
+[img3]: /media/loc/en/marketing/imagerlc6j.png
+[img4]: /media/loc/en/marketing/imagehn8rh.png

@@ -1,0 +1,58 @@
+---
+uid: help-no-form-recaptcha
+title: Google reCAPTCHA i skjemaer
+description: Legg til Google reCAPTCHA i et SuperOffice Marketing-skjema for å beskytte det mot spam.
+keywords: ['reCAPTCHA profile', 'skjema', "I'm not a robot", 'site key', 'secret key']
+author: Bergfrid Dias
+date: 05.04.2026
+so_version: 11.13
+content_type: howto
+license: marketingessentials
+tier: growth
+category: marketing
+topic: forms
+audience: person
+audience_tooltip: SuperOffice Marketing
+language: no
+---
+
+## Legge til reCAPTCHA-element
+
+1. Opprett eller åpne et skjema.
+1. Velg **Felt**.
+1. Klikk på **Legg til element**, og velg **Skjemaelementer** > **Google reCAPTCHA**.
+
+    ![imagehkoheq.png -screenshot][img1]
+
+Når elementet er lagt til, kan du bestemme hvordan du vil bruke Site key og Secret key.
+
+<Note>
+Det er bare mulig å legge til 1 reCAPTCHA per skjema.
+</Note>
+
+SuperOffice Online gir deg standardnøkler for reCAPTCHA, som beskytter skjemaet ditt mot roboter. Du trenger ikke å angi noe for Site key og Secret key med mindre du vil opprette din egen reCAPTCHA-profil og se statistikk. For å gjøre det følger du trinnene nedenfor og angir din SiteKey og SecretKey. [Statistikk][1] viser deg hvor mange forespørsler som var vellykket eller mislyktes, gjennomsnittlig poengsum, gjennomførte økter og gjennomsnittlig svartid.
+
+![imagehekct.png -screenshot][img2]
+
+## Slik oppretter du en Google reCAPTCHA-profil
+
+For å opprette egendefinerte nøkler logger du på med en Google-konto på [https://www.google.com/u/0/recaptcha/admin/create][2].
+
+1. Angi en nettstedetikett.
+1. Velg "reCAPTCHA v2".
+1. Og deretter avmerkingsboksen "Jeg er ikke en robot".
+1. Legg til domenet. Under "domains" må du angi domenet som Customer Center (customer.fcgi) kjører på, eller et overordnet domene til dette underdomenet.
+
+![imagerlc6j.png -screenshot][img3]
+
+Når du klikker på **Submit**, vises Site key og Secret key:
+
+![imagehn8rh.png -screenshot][img4]
+
+[1]: https://www.google.com/recaptcha/admin
+[2]: https://www.google.com/u/0/recaptcha/admin/create
+
+[img1]: /media/loc/en/marketing/add-element-dialog.png
+[img2]: /media/loc/en/marketing/recaptcha-form-element.png
+[img3]: /media/loc/en/marketing/imagerlc6j.png
+[img4]: /media/loc/en/marketing/imagehn8rh.png
