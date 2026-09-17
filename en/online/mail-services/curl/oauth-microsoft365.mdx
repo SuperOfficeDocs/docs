@@ -4,7 +4,7 @@ title: OAuth 2.0 with Microsoft 365
 description: How SuperOffice Service (Onsite) connects to Microsoft 365 mailboxes using OAuth 2.0 - covering connectivity verification, IDP registration, provider detection, token lifecycle, and troubleshooting.
 keywords: ['email', 'Exchange Online', 'IMAP', 'AccessGateway', 'MailKit']
 author: fbhub2
-date: 04.14.2026
+date: 09.17.2026
 so_version: 12
 content_type: howto
 category: email
@@ -54,7 +54,7 @@ rem  Replace user%40domain.com and Password with real credentials
 curl -v smtps://user%40domain.com:Password@smtp.office365.com:587
 ```
 
-Success shows `235 2.7.0 Authentication successful`. A timeout means port 587 is blocked outbound.
+Success shows `235 2.7.0 Authentication successful`. A timeout means port 587 is blocked outbound. An authentication failure here despite correct credentials, rather than a timeout, is the signature of [SMTP AUTH being disabled on the mailbox](#smtp-auth-disabled).
 
 <Note>
 OAuth for SMTP in Service mailboxes requires 10.1.5 or newer (PR 39769). Earlier versions send via basic auth on port 587 regardless of IMAP OAuth configuration.
@@ -72,6 +72,7 @@ All of the following must be in place. Missing any one is the most common cause 
 | MX record > Exchange Online | Required for auto-detection. Hybrid setups (Mimecast, Proofpoint, and so on) must use the "Sign in with Microsoft" button instead. |
 | **Port 993 open - outbound from SO server** | Must reach Exchange Online directly, even if MX routes through a filter. Verify with cURL test above. |
 | NetServer using MailKit | OAuth bypasses `reg_id=320` and always uses NetServer/MailKit. EasyMail and POP3 are not supported for OAuth mailboxes. |
+| **SMTP AUTH enabled on the mailbox** | Disabled by default for some tenants/mailboxes. Must be enabled in Exchange Online, independent of whether the mailbox uses OAuth or password authentication, or outgoing mail will fail. See [Troubleshooting](#smtp-auth-disabled). |
 
 ## How it works
 
@@ -226,6 +227,18 @@ You can verify what SuperOffice sees for your domain at `https://autoconfig.thun
 
 **Option B:** Contact SuperOffice support, provide the serial number, and request deletion of the existing registration. The old environment will stop working immediately. Once confirmed, the serial can be reused for the new environment.
 
+### Mail doesn't send even though IMAP/OAuth setup succeeds {#smtp-auth-disabled}
+
+**Cause:** Exchange Online has authenticated SMTP submission ("SMTP AUTH") disabled for the mailbox, or for the tenant as a whole. This is a Microsoft-side setting that governs the SMTP protocol itself, not the credential type, so it applies whether the SuperOffice mailbox uses OAuth or password authentication. IMAP fetch (port 993) can succeed while SMTP send (port 587) fails for exactly this reason.
+
+**Fix:**
+
+* **Microsoft 365 admin center (per mailbox):** **Users** > **Active users** > select the user > **Mail** > **Manage email apps** > enable the **Authenticated SMTP** checkbox.
+* **Exchange Online PowerShell (per mailbox):** `Set-CASMailbox -Identity <mailbox> -SmtpClientAuthenticationDisabled $false`
+* **Exchange Online PowerShell (whole tenant):** `Set-TransportConfig -SmtpClientAuthenticationDisabled $false`, if SMTP AUTH is disabled at the organization level rather than per mailbox.
+
+See Microsoft's [Enable or disable SMTP AUTH in Exchange Online][10] for the full admin reference.
+
 ## Older versions
 
 ### Setup in 10.1.4 and older
@@ -261,3 +274,4 @@ When a mailbox uses OAuth 2.0, **this setting is ignored entirely**. OAuth alway
 Microsoft discontinued Basic Authentication for Exchange Online in **October 2022**. App Passwords no longer work. **OAuth 2.0 is the only supported authentication method for Microsoft 365 mailboxes in SuperOffice Service.**
 
 [1]: ./index
+[10]: https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission
