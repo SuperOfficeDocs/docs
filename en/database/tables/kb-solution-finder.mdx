@@ -1,6 +1,6 @@
 ---
-title: kb_solution_finder table
-description: Knowledge base problem solving wizard, categories and subcategories for drilling down
+title: "kb_solution_finder table"
+description: "Knowledge base problem solving wizard, categories and subcategories for drilling down"
 generated: true
 content_type: reference
 envir: online
@@ -8,16 +8,16 @@ envir: online
 
 import KbSolutionFinder from "./includes/kb-solution-finder.mdx";
 
-## kb\_solution\_finder Table (294)
-
 Knowledge base problem solving wizard, categories and subcategories for drilling down
+
+Table number: 294
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|parent\_id|The parent of this solution finder.|FK [kb_solution_finder](./kb-solution-finder.mdx)|No|
+|parent\_id|The parent of this solution finder.|FK [kb_solution_finder](./kb-solution-finder)|No|
 |name||String(255)|Yes|
 |body|The body for the solution finder. HTML format.|Clob|Yes|
 

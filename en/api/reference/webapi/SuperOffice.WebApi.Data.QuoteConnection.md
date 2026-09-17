@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_QuoteConnection"></a> Class QuoteConnection
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for QuoteConnection.
@@ -13,13 +13,13 @@ public class QuoteConnection : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[QuoteConnection](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteConnection)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[QuoteConnection](SuperOffice.WebApi.Data.QuoteConnection.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -158,7 +158,7 @@ public virtual PluginResponse InitializeResponse { get; set; }
 
 #### Property Value
 
- [PluginResponse](/en/api/reference/webapi/SuperOffice.WebApi.Data.PluginResponse)
+ [PluginResponse](SuperOffice.WebApi.Data.PluginResponse.md)
 
 ### <a id="SuperOffice_WebApi_Data_QuoteConnection_IsAvailable"></a> IsAvailable
 
@@ -182,7 +182,7 @@ public virtual PriceList[] PriceLists { get; set; }
 
 #### Property Value
 
- [PriceList](/en/api/reference/webapi/SuperOffice.WebApi.Data.PriceList)\[\]
+ [PriceList](SuperOffice.WebApi.Data.PriceList.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_QuoteConnection_QuoteConnectionId"></a> QuoteConnectionId
 
@@ -222,5 +222,5 @@ public virtual int[] UserGroupAccessIds { get; set; }
 
 ## See Also
 
-[QuoteAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.QuoteAgent)
+[QuoteAgent](SuperOffice.WebApi.Agents.QuoteAgent.md)
 

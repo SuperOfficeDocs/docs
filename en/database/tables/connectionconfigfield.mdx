@@ -1,6 +1,6 @@
 ---
-title: ConnectionConfigField table
-description: Configuration data for Erp and Quote Connections
+title: "ConnectionConfigField table"
+description: "Configuration data for Erp and Quote Connections"
 generated: true
 content_type: reference
 envir: online
@@ -8,23 +8,23 @@ envir: online
 
 import Connectionconfigfield from "./includes/connectionconfigfield.mdx";
 
-## ConnectionConfigField Table (421)
-
 Configuration data for Erp and Quote Connections
+
+Table number: 421
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |connectionconfigfield\_id|Primary key|PK|No|
-|ErpConnectionId|Erp connection, if this row belongs to an ERP Connector|FK [ErpConnection](./erpconnection.mdx)|Yes|
-|QuoteConnectionId|Quote connection, if this row belongs to a Quote Connector|FK [QuoteConnection](./quoteconnection.mdx)|Yes|
+|ErpConnectionId|Erp connection, if this row belongs to an ERP Connector|FK [ErpConnection](./erpconnection)|Yes|
+|QuoteConnectionId|Quote connection, if this row belongs to a Quote Connector|FK [QuoteConnection](./quoteconnection)|Yes|
 |FieldKey|The key that identifies the field, taken from the connector&apos;s metadata|String(254)|Yes|
 |FieldValue|The field value, formatted for transport as a string using CultureDataFormatter|String(1023)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

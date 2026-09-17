@@ -105,8 +105,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -147,8 +147,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -266,8 +266,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -416,8 +416,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -584,8 +584,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -752,8 +752,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -834,8 +834,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -984,8 +984,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -1134,8 +1134,90 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/NewsFeed/DeleteNewsFeedItemsById": {
+      "post": {
+        "tags": [
+          "NewsFeed_Agent"
+        ],
+        "summary": "Delete News Feed Items By Id",
+        "description": "Deletes an array of items from the newsfeed by id.\n\nIf the current user cannot access a particular item, the call fails, unless the user is an administrator. Deleting an item removes it from all users.\r\nNsApiSlow threshold: 2000 ms.\r\n<para />## Experimental: ## The NewsFeed agent is experimental, subject to change, and not intended for partners.",
+        "operationId": "v1NewsFeedAgent_DeleteNewsFeedItemsById",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.NewsFeedCarriers.DeleteNewsFeedItemsByIdRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.NewsFeedCarriers.DeleteNewsFeedItemsByIdRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.NewsFeedCarriers.DeleteNewsFeedItemsByIdRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.NewsFeedCarriers.DeleteNewsFeedItemsByIdRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.NewsFeedCarriers.DeleteNewsFeedItemsByIdRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.NewsFeedCarriers.DeleteNewsFeedItemsByIdRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.NewsFeedCarriers.DeleteNewsFeedItemsByIdRequest"
+              }
+            }
+          },
+          "description": "NewsFeedItemIds",
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "No Content"
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -1148,15 +1230,15 @@
   },
   "servers": [
     {
-      "url": "http://localhost:49843"
+      "url": "http://localhost:55590"
     },
     {
-      "url": "https://localhost:49843"
+      "url": "https://localhost:55590"
     }
   ],
   "components": {
     "securitySchemes": {
-      "Password": {
+      "SOPassword": {
         "type": "http",
         "description": "SuperOffice username:password are passed in Base64-encoded. \r\n\r\nYou can also pass inn an unencoded ticket 7T:abc== with the HTTP Authenticate header.\r\n",
         "scheme": "basic"
@@ -1293,6 +1375,14 @@
             "format": "int32",
             "description": "Rating as percentage (0-100). 0 = undefined. 1-9 = No stars, 10-30 = One star, Two stars = 31-50, 90-100 = Five stars. Client can render rating as stars, pie chart, thumbs up or down, however they want. Default 0 indicates no rating.",
             "type": "integer"
+          },
+          "SourceSoProtocol": {
+            "description": "SoProtocol to the agent's chat topic so that start page can open the agent topic directly. e.g. 'contact.main?contact_id=1234' or 'agents.main?instance_id=6a8&topic_id=534'",
+            "type": "string"
+          },
+          "Type": {
+            "description": "Type identifier for the message type. Optional. To allow clients to filter for specific message types without analyzing the CTAs or message content. e.g. 'mergeContact' or 'mergeOrphan'",
+            "type": "string"
           }
         }
       },
@@ -2160,6 +2250,19 @@
           "NewsFeedItemId": {
             "format": "int32",
             "type": "integer"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.NewsFeedCarriers.DeleteNewsFeedItemsByIdRequest": {
+        "description": "DeleteNewsFeedItemsById: Deletes an array of items from the newsfeed by id. If the current user cannot access a particular item, the call fails, unless the user is an administrator. Deleting an item removes it from all users.",
+        "type": "object",
+        "properties": {
+          "NewsFeedItemIds": {
+            "type": "array",
+            "items": {
+              "format": "int32",
+              "type": "integer"
+            }
           }
         }
       }

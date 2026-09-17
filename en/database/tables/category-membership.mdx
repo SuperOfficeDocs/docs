@@ -1,6 +1,6 @@
 ---
-title: category_membership table
-description: This table connects users to categories (many-to-many).
+title: "category_membership table"
+description: "This table connects users to categories (many-to-many)."
 generated: true
 content_type: reference
 envir: online
@@ -8,17 +8,17 @@ envir: online
 
 import CategoryMembership from "./includes/category-membership.mdx";
 
-## category\_membership Table (270)
-
 This table connects users to categories (many-to-many).
+
+Table number: 270
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|category\_id|The reference to the category.|FK [ej_category](./ej-category.mdx)|No|
-|user\_id|The reference to the ej user.|FK [ejuser](./ejuser.mdx)|No|
+|category\_id|The reference to the category.|FK [ej_category](./ej-category)|No|
+|user\_id|The reference to the ej user.|FK [ejuser](./ejuser)|No|
 |weight|The proportion used for weighted delegation within category if weighted assignment is active. 0 = no automatic assignment.|Short|Yes|
 |is\_defined\_by\_usergroup|Specifies if membership was defined by usergroup via ejCategoryGroup|Bool|No|
 

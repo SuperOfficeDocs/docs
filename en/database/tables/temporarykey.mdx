@@ -1,6 +1,6 @@
 ---
-title: TemporaryKey table
-description: Temporary keys for lightweight authentications such as changing ones subscriptions
+title: "TemporaryKey table"
+description: "Temporary keys for lightweight authentications such as changing ones subscriptions"
 generated: true
 content_type: reference
 envir: online
@@ -8,24 +8,24 @@ envir: online
 
 import Temporarykey from "./includes/temporarykey.mdx";
 
-## TemporaryKey Table (514)
-
 Temporary keys for lightweight authentications such as changing ones subscriptions
+
+Table number: 515
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |temporarykey\_id|Primary key|PK|No|
-|domain|The domain this is a key for|Enum [TemporaryKeyDomain](./enums/temporarykeydomain.mdx)|No|
+|domain|The domain this is a key for|Enum [TemporaryKeyDomain](./enums/temporarykeydomain)|No|
 |target\_id|The primary key in the table this is a key for|Int|Yes|
-|person\_id|The person this is a key for|FK [person](./person.mdx)|Yes|
+|person\_id|The person this is a key for|FK [person](./person)|Yes|
 |authkey|The actual key|String(256)|No|
 |expires|When this key expires (server localtime)|DateTime|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 |payload|Optional field that may contain arbitrary data used when the key is verified, dependent on the domain|String(4000)|Yes|
 

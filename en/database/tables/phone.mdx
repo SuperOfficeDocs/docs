@@ -1,6 +1,6 @@
 ---
-title: phone table
-description: Contact and Person phonenumbers (+fax)
+title: "phone table"
+description: "Contact and Person phonenumbers (+fax)"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Phone from "./includes/phone.mdx";
 
-## phone Table (8)
-
 Contact and Person phonenumbers (+fax)
+
+Table number: 8
 
 ## Fields
 
@@ -18,14 +18,14 @@ Contact and Person phonenumbers (+fax)
 |------|-------------|------|:----:|
 |phone\_id|Primary key|PK|No|
 |owner\_id|Record id of owner: Contact or Person|Id|No|
-|ptype\_idx|Bit mask, combines phone type (EPhoneType) and owner type (EOwnerType)|Enum [PhoneType](./enums/phonetype.mdx)|No|
+|ptype\_idx|Bit mask, combines phone type (EPhoneType) and owner type (EOwnerType)|Enum [PhoneType](./enums/phonetype)|No|
 |phone|Actual phone number as enterd by the user|String(239)|No|
 |rank|Sort order|UShort|Yes|
 |description|Visible description|String(99)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 |validFrom|Valid from date for this record|DateTime|Yes|
 |validTo|Valid to date for this record|DateTime|Yes|

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserConnectedState"></a> Class UserConnectedState
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for UserConnectedState.
@@ -13,7 +13,7 @@ public class UserConnectedState
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserConnectedState](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserConnectedState)
+[UserConnectedState](SuperOffice.WebApi.Data.UserConnectedState.md)
 
 #### Inherited Members
 
@@ -75,5 +75,5 @@ public virtual string ProviderId { get; set; }
 
 ## See Also
 
-[AppointmentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AppointmentAgent)
+[AppointmentAgent](SuperOffice.WebApi.Agents.AppointmentAgent.md)
 

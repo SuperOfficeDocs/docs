@@ -1,6 +1,6 @@
 ---
-title: ej_category table
-description: This table contains categories, in which tickets are categorized. The categories are organized in a hierarchial manner.
+title: "ej_category table"
+description: "This table contains categories, in which tickets are categorized. The categories are organized in a hierarchial manner."
 generated: true
 content_type: reference
 envir: online
@@ -8,28 +8,28 @@ envir: online
 
 import EjCategory from "./includes/ej-category.mdx";
 
-## ej\_category Table (257)
-
 This table contains categories, in which tickets are categorized. The categories are organized in a hierarchial manner.
+
+Table number: 257
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|parent\_id|The parent category for this category. -1 if this is a toplevel category.|FK [ej_category](./ej-category.mdx)|No|
+|parent\_id|The parent category for this category. -1 if this is a toplevel category.|FK [ej_category](./ej-category)|No|
 |name|The (short) name of this category. E.g. &amp;apos;support&amp;apos;.|String(64)|Yes|
-|category\_master|The user associated with this category.|FK [ejuser](./ejuser.mdx)|Yes|
+|category\_master|The user associated with this category.|FK [ejuser](./ejuser)|Yes|
 |fullname|The fullname (compiled from parents&amp;apos; names) for this category. E.g. &amp;apos;norway/product A/support&amp;apos;.|String(255)|Yes|
-|flags|A bitmask representing flags for this category.|Enum [TicketCategoryFlags](./enums/ticketcategoryflags.mdx)|Yes|
-|delegate\_method|An integer indicating the delegation method for this category.|Enum [TicketCategoryDelegateMethod](./enums/ticketcategorydelegatemethod.mdx)|Yes|
+|flags|A bitmask representing flags for this category.|Enum [TicketCategoryFlags](./enums/ticketcategoryflags)|Yes|
+|delegate\_method|An integer indicating the delegation method for this category.|Enum [TicketCategoryDelegateMethod](./enums/ticketcategorydelegatemethod)|Yes|
 |delegate\_counter|A delegate counter, incremented by 1 for every delegation|Int|No|
 |external\_name|The external name for this category, used for the customer frontend.|String(255)|Yes|
 |assignment\_lag|Number of minutes we shall override the assignment if a customer sends consecutive messages to this category|Int|Yes|
-|reply\_template|Reply template to merge with messages posted in this category|FK [reply_template](./reply-template.mdx)|Yes|
+|reply\_template|Reply template to merge with messages posted in this category|FK [reply_template](./reply-template)|Yes|
 |notification\_email|Comma separated list of addresses to notify when requests are redelegated to (unassigned) in this category.|String(2047)|Yes|
-|closing\_status|Default status for new tickets, if 0 then there is a fallback to a user-dependent value|FK [ticket_status](./ticket-status.mdx)|Yes|
-|msg\_closing\_status|Default status for new messages, if 0 then there is a fallback to a user-dependent value|FK [ticket_status](./ticket-status.mdx)|Yes|
+|closing\_status|Default status for new tickets, if 0 then there is a fallback to a user-dependent value|FK [ticket_status](./ticket-status)|Yes|
+|msg\_closing\_status|Default status for new messages, if 0 then there is a fallback to a user-dependent value|FK [ticket_status](./ticket-status)|Yes|
 
 
 ![ej_category table relationship diagram](/media/loc/en/database/tables/ej_category.png)

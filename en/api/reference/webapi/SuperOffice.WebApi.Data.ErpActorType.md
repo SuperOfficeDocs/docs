@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpActorType"></a> Enum ErpActorType
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Actor type within the ERP system, related but not identitcal to SuperOffice Entity type

@@ -1,6 +1,6 @@
 ---
-title: ai_chat_turn table
-description: Contains AI Chatbot history - contains whole chat, not just what is sent to the chatbot. History is ready ordered by timestamp
+title: "ai_chat_turn table"
+description: "Contains AI Chatbot history - contains whole chat, not just what is sent to the chatbot. History is ready ordered by timestamp"
 generated: true
 content_type: reference
 envir: online
@@ -8,16 +8,16 @@ envir: online
 
 import AiChatTurn from "./includes/ai-chat-turn.mdx";
 
-## ai\_chat\_turn Table (461)
-
 Contains AI Chatbot history - contains whole chat, not just what is sent to the chatbot. History is ready ordered by timestamp
+
+Table number: 461
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |ai\_chat\_turn\_id|Primary key|PK|No|
-|associate\_id|User id that is chatting with the bot|FK [associate](./associate.mdx)|No|
+|associate\_id|User id that is chatting with the bot|FK [associate](./associate)|No|
 |chat\_id|The name of this chat topic - usually soproto + id (contact-123, sale-43, diary) but could also be an arbitrary name|String(40)|No|
 |timestamp|When the chat happened (UTC)|UtcDateTime|No|
 |user\_prompt|What the user typed|Clob|Yes|

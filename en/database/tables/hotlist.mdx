@@ -1,6 +1,6 @@
 ---
-title: hotlist table
-description: The table is used by the hotlist to store the relationship between tickets and users
+title: "hotlist table"
+description: "The table is used by the hotlist to store the relationship between tickets and users"
 generated: true
 content_type: reference
 envir: online
@@ -8,17 +8,17 @@ envir: online
 
 import Hotlist from "./includes/hotlist.mdx";
 
-## hotlist Table (363)
-
 The table is used by the hotlist to store the relationship between tickets and users
+
+Table number: 363
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|user\_id|The reference to the user.|FK [ejuser](./ejuser.mdx)|No|
-|ticket\_id|The ticket the user what to have in his hotlist|FK [ticket](./ticket.mdx)|No|
+|user\_id|The reference to the user.|FK [ejuser](./ejuser)|No|
+|ticket\_id|The ticket the user what to have in his hotlist|FK [ticket](./ticket)|No|
 
 
 ![hotlist table relationship diagram](/media/loc/en/database/tables/hotlist.png)

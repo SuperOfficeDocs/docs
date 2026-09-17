@@ -1,6 +1,6 @@
 ---
-title: dictionary table
-description: User added dictionary words
+title: "dictionary table"
+description: "User added dictionary words"
 generated: true
 content_type: reference
 envir: online
@@ -8,17 +8,17 @@ envir: online
 
 import Dictionary from "./includes/dictionary.mdx";
 
-## dictionary Table (358)
-
 User added dictionary words
+
+Table number: 358
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|base\_id|The reference to the dictionary base.|FK [dictionary_base](./dictionary-base.mdx)|No|
-|user\_id|The reference to the user.|FK [ejuser](./ejuser.mdx)|No|
+|base\_id|The reference to the dictionary base.|FK [dictionary_base](./dictionary-base)|No|
+|user\_id|The reference to the user.|FK [ejuser](./ejuser)|No|
 |include|Include/Exclude word.|Int|No|
 |word|User word|String(32)|No|
 

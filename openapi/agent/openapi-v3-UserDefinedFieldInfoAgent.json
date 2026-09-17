@@ -173,8 +173,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -323,8 +323,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -423,8 +423,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -564,8 +564,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -606,8 +606,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -725,8 +725,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -893,8 +893,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -1061,8 +1061,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -1211,8 +1211,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -1361,8 +1361,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -1511,8 +1511,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -1661,8 +1661,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -1829,8 +1829,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -1997,8 +1997,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -2147,8 +2147,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -2297,8 +2297,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -2465,8 +2465,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -2633,8 +2633,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -2789,8 +2789,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -2871,8 +2871,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -2953,8 +2953,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -3103,8 +3103,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -3253,8 +3253,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -3335,8 +3335,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -3485,8 +3485,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -3594,8 +3594,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -3762,8 +3762,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -3844,8 +3844,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -3994,8 +3994,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -4150,8 +4150,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -4232,8 +4232,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -4244,7 +4244,7 @@
           "UserDefinedFieldInfo_Agent"
         ],
         "summary": "Set Publish Start System Event",
-        "description": "Set the start flag for udef publishing.\n\nMust be called before PUBLISH, or PUBLISH will fail. Start flag is removed when publish process completes.\r\nNsApiSlow threshold: 5000 ms.",
+        "description": "No-op, retained for API compatibility.\n\nPublish and Revert manage the publish lock themselves; there is nothing to start ahead of time, and calling this is harmless but unnecessary.\r\nNsApiSlow threshold: 5000 ms.",
         "operationId": "v1UserDefinedFieldInfoAgent_SetPublishStartSystemEvent",
         "parameters": [
           {
@@ -4314,8 +4314,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -4355,8 +4355,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -4369,15 +4369,15 @@
   },
   "servers": [
     {
-      "url": "http://localhost:49843"
+      "url": "http://localhost:55590"
     },
     {
-      "url": "https://localhost:49843"
+      "url": "https://localhost:55590"
     }
   ],
   "components": {
     "securitySchemes": {
-      "Password": {
+      "SOPassword": {
         "type": "http",
         "description": "SuperOffice username:password are passed in Base64-encoded. \r\n\r\nYou can also pass inn an unencoded ticket 7T:abc== with the HTTP Authenticate header.\r\n",
         "scheme": "basic"
@@ -5255,7 +5255,7 @@
         }
       },
       "SuperOffice.WebApi.v1.Carriers.UserDefinedFieldInfoCarriers.SetPublishStartSystemEventRequest": {
-        "description": "SetPublishStartSystemEvent: Set the start flag for udef publishing. Must be called before PUBLISH, or PUBLISH will fail. Start flag is removed when publish process completes.",
+        "description": "SetPublishStartSystemEvent: No-op, retained for API compatibility. Publish and Revert manage the publish lock themselves; there is nothing to start ahead of time, and calling this is harmless but unnecessary.",
         "type": "object",
         "properties": {
           "OwnerType": {

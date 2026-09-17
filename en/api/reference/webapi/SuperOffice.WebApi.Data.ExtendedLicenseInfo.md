@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ExtendedLicenseInfo"></a> Class ExtendedLicenseInfo
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ExtendedLicenseInfo.
@@ -12,7 +12,7 @@ public class ExtendedLicenseInfo
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ExtendedLicenseInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtendedLicenseInfo)
+[ExtendedLicenseInfo](SuperOffice.WebApi.Data.ExtendedLicenseInfo.md)
 
 #### Inherited Members
 
@@ -64,7 +64,7 @@ public virtual LicenseInfo Current { get; set; }
 
 #### Property Value
 
- [LicenseInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.LicenseInfo)
+ [LicenseInfo](SuperOffice.WebApi.Data.LicenseInfo.md)
 
 ### <a id="SuperOffice_WebApi_Data_ExtendedLicenseInfo_ExtendedModuleLicenses"></a> ExtendedModuleLicenses
 
@@ -74,7 +74,7 @@ public virtual ExtendedModuleLicense[] ExtendedModuleLicenses { get; set; }
 
 #### Property Value
 
- [ExtendedModuleLicense](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtendedModuleLicense)\[\]
+ [ExtendedModuleLicense](SuperOffice.WebApi.Data.ExtendedModuleLicense.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_ExtendedLicenseInfo_New"></a> New
 
@@ -84,7 +84,7 @@ public virtual LicenseInfo New { get; set; }
 
 #### Property Value
 
- [LicenseInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.LicenseInfo)
+ [LicenseInfo](SuperOffice.WebApi.Data.LicenseInfo.md)
 
 ### <a id="SuperOffice_WebApi_Data_ExtendedLicenseInfo_Reason"></a> Reason
 
@@ -98,5 +98,5 @@ public virtual string Reason { get; set; }
 
 ## See Also
 
-[LicenseAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.LicenseAgent)
+[LicenseAgent](SuperOffice.WebApi.Agents.LicenseAgent.md)
 

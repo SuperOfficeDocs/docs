@@ -1,6 +1,6 @@
 ---
-title: AmountClassGroupLink table
-description: User group link table for AmountClass, for MDO item hiding
+title: "AmountClassGroupLink table"
+description: "User group link table for AmountClass, for MDO item hiding"
 generated: true
 content_type: reference
 envir: online
@@ -8,21 +8,21 @@ envir: online
 
 import Amountclassgrouplink from "./includes/amountclassgrouplink.mdx";
 
-## AmountClassGroupLink Table (226)
-
 User group link table for AmountClass, for MDO item hiding
+
+Table number: 226
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |amountclassgrouplink\_id|Primary key|PK|No|
-|amountclass\_id|Link to AmountClass list table|FK [AmountClass](./amountclass.mdx)|No|
-|group\_id|Link to Group table|FK [UserGroup](./usergroup.mdx)|No|
+|amountclass\_id|Link to AmountClass list table|FK [AmountClass](./amountclass)|No|
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

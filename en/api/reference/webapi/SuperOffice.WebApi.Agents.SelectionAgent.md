@@ -1,6 +1,6 @@
-# Class SelectionAgent {#SuperOffice_WebApi_Agents_SelectionAgent}
+# <a id="SuperOffice_WebApi_Agents_SelectionAgent"></a> Class SelectionAgent
 
-Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
+Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Selections, entities, members and tasks
@@ -12,41 +12,41 @@ public class SelectionAgent : AgentBase, ISelectionAgent, IAgentBase, IDisposabl
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase) ← 
-[SelectionAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SelectionAgent)
+[AgentBase](SuperOffice.WebApi.Agents.AgentBase.md) ← 
+[SelectionAgent](SuperOffice.WebApi.Agents.SelectionAgent.md)
 
 #### Implements
 
-[ISelectionAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ISelectionAgent), 
-[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
+[ISelectionAgent](SuperOffice.WebApi.Agents.ISelectionAgent.md), 
+[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 #### Inherited Members
 
-[AgentBase.\_json](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__json), 
-[AgentBase.\_binary](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__binary), 
-[AgentBase.\_config](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__config), 
-[AgentBase.\_client](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__client), 
-[AgentBase.\_disposeClient](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase__disposeClient), 
-[AgentBase.Merge\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Merge_SuperOffice_WebApi_RequestOptions_), 
-[AgentBase.BuildRequestFromObject\(HttpMethod, string, object, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_), 
-[AgentBase.BuildRequestFromStream\(HttpMethod, string, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromStream_System_Net_Http_HttpMethod_System_String_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
-[AgentBase.BuildRequestFromObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_BuildRequestFromObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
-[AgentBase.ParseAuthorization\(IAuthorization\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseAuthorization_SuperOffice_WebApi_Authorization_IAuthorization_), 
-[AgentBase.CancelRequest\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_CancelRequest), 
-[AgentBase.SendRequestObject\(HttpMethod, string, object, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObject_System_Net_Http_HttpMethod_System_String_System_Object_SuperOffice_WebApi_WebApiOptions_System_String_), 
-[AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
-[AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequest_System_Net_Http_HttpRequestMessage_SuperOffice_WebApi_RequestOptions_), 
-[AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ThrowOnResponseErrorAsync_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpResponseMessage_), 
-[AgentBase.ParseResponse&lt;T\&gt;\(HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseResponse__1_System_Net_Http_HttpResponseMessage_), 
-[AgentBase.Finally\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Finally_SuperOffice_WebApi_RequestOptions_), 
-[AgentBase.Dispose\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Dispose), 
-[AgentBase.Configuration](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Configuration), 
-[AgentBase.Client](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Client), 
-[AgentBase.HasRunningRequest](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_HasRunningRequest), 
-[AgentBase.ClientCancellationTokenSource](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ClientCancellationTokenSource), 
-[AgentBase.ProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ProgressListener), 
-[AgentBase.UploadProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_UploadProgressListener), 
+[AgentBase.\_json](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_json), 
+[AgentBase.\_binary](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_binary), 
+[AgentBase.\_config](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_config), 
+[AgentBase.\_client](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_client), 
+[AgentBase.\_disposeClient](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_\_disposeClient), 
+[AgentBase.Merge\(RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Merge\_SuperOffice\_WebApi\_RequestOptions\_), 
+[AgentBase.BuildRequestFromObject\(HttpMethod, string, object, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_BuildRequestFromObject\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
+[AgentBase.BuildRequestFromStream\(HttpMethod, string, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_BuildRequestFromStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
+[AgentBase.BuildRequestFromObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_BuildRequestFromObjectWithStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
+[AgentBase.ParseAuthorization\(IAuthorization\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseAuthorization\_SuperOffice\_WebApi\_Authorization\_IAuthorization\_), 
+[AgentBase.CancelRequest\(\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_CancelRequest), 
+[AgentBase.SendRequestObject\(HttpMethod, string, object, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequestObject\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
+[AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequestObjectWithStream\_System\_Net\_Http\_HttpMethod\_System\_String\_System\_Object\_System\_IO\_Stream\_SuperOffice\_WebApi\_WebApiOptions\_System\_String\_), 
+[AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_SendRequest\_System\_Net\_Http\_HttpRequestMessage\_SuperOffice\_WebApi\_RequestOptions\_), 
+[AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ThrowOnResponseErrorAsync\_System\_Net\_Http\_HttpRequestMessage\_System\_Net\_Http\_HttpResponseMessage\_), 
+[AgentBase.ParseResponse<T\>\(HttpResponseMessage\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ParseResponse\_\_1\_System\_Net\_Http\_HttpResponseMessage\_), 
+[AgentBase.Finally\(RequestOptions\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Finally\_SuperOffice\_WebApi\_RequestOptions\_), 
+[AgentBase.Dispose\(\)](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Dispose), 
+[AgentBase.Configuration](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Configuration), 
+[AgentBase.Client](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_Client), 
+[AgentBase.HasRunningRequest](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_HasRunningRequest), 
+[AgentBase.ClientCancellationTokenSource](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ClientCancellationTokenSource), 
+[AgentBase.ProgressListener](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_ProgressListener), 
+[AgentBase.UploadProgressListener](SuperOffice.WebApi.Agents.AgentBase.md\#SuperOffice\_WebApi\_Agents\_AgentBase\_UploadProgressListener), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -57,19 +57,19 @@ public class SelectionAgent : AgentBase, ISelectionAgent, IAgentBase, IDisposabl
 
 ## Examples
 
-&lt;pre&gt;&lt;code class="lang-csharp"&gt;using SuperOffice.WebApi;
+<pre><code class="lang-csharp">using SuperOffice.WebApi;
 using SuperOffice.WebApi.Agents;
 
 var mySession = new WebApiOptions("http://example.com/super/api");
 mySession.Authorization = new AuthorizationUsernamePassword("user", "pass");
 using (SelectionAgent agent = new SelectionAgent(mySession))
-\{
+{
       // call methods on agent here...
-\}&lt;/code&gt;&lt;/pre&gt;
+}</code></pre>
 
 ## Constructors
 
-### SelectionAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_SelectionAgent__ctor_System_Net_Http_HttpClient_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent__ctor_System_Net_Http_HttpClient_"></a> SelectionAgent\(HttpClient\)
 
 Constructor: Selections, entities, members and tasks
 
@@ -83,7 +83,7 @@ public SelectionAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### SelectionAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_SelectionAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"></a> SelectionAgent\(WebApiOptions, HttpClient\)
 
 Constructor: Selections, entities, members and tasks
 
@@ -93,7 +93,7 @@ public SelectionAgent(WebApiOptions options, HttpClient httpClient = null)
 
 #### Parameters
 
-`options` [WebApiOptions](/en/api/reference/webapi/SuperOffice.WebApi.WebApiOptions)
+`options` [WebApiOptions](SuperOffice.WebApi.WebApiOptions.md)
 
 Base URL and authentication values.
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### AddContactSelectionMembersAsync\(int, ContactPersonId\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_AddContactSelectionMembersAsync_System_Int32_SuperOffice_WebApi_Data_ContactPersonId___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_AddContactSelectionMembersAsync_System_Int32_SuperOffice_WebApi_Data_ContactPersonId___SuperOffice_WebApi_RequestOptions_"></a> AddContactSelectionMembersAsync\(int, ContactPersonId\[\], RequestOptions\)
 
 Adds the collection of ContactPersonId as members to the static selection
 
@@ -117,11 +117,11 @@ public Task AddContactSelectionMembersAsync(int selectionId, ContactPersonId[] c
 
 The id of the selection where to members will be added to.
 
-`contactPersonIds` [ContactPersonId](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactPersonId)\[\]
+`contactPersonIds` [ContactPersonId](SuperOffice.WebApi.Data.ContactPersonId.md)\[\]
 
 A collection of ContactPersonId to add to the selection.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -129,7 +129,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### AddContactSelectionMembersFromSearchAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_AddContactSelectionMembersFromSearchAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_AddContactSelectionMembersFromSearchAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> AddContactSelectionMembersFromSearchAsync\(int, string, RequestOptions\)
 
 Adds members to the selection from the search result.
 
@@ -147,17 +147,17 @@ The id of the selection to add members
 
 Storage key to be interpreted by the restriction storage provider, when it fetches criteria for the search
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
 
 Number of members added
 
-### AddRemoveContactSelectionMemberInterestsAsync\(int, int\[\], int\[\], int\[\], int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_AddRemoveContactSelectionMemberInterestsAsync_System_Int32_System_Int32___System_Int32___System_Int32___System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_AddRemoveContactSelectionMemberInterestsAsync_System_Int32_System_Int32___System_Int32___System_Int32___System_Int32___SuperOffice_WebApi_RequestOptions_"></a> AddRemoveContactSelectionMemberInterestsAsync\(int, int\[\], int\[\], int\[\], int\[\], RequestOptions\)
 
 Adds or removes interests on companies and persons in a selection.
 
@@ -187,7 +187,7 @@ Array of int containing the id's of the interests to add to the contact.
 
 Array of int containing the id's of the interests to remove from the contact.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -195,7 +195,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### AddSelectionMembersAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_AddSelectionMembersAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_AddSelectionMembersAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> AddSelectionMembersAsync\(int, int\[\], RequestOptions\)
 
 Add selection members to a static selection of type others than contacts.
 
@@ -213,17 +213,17 @@ The selection id to add the members to.
 
 Collection of ids to add to the selection.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
 
 Returns number of members added to the selection.
 
-### AddSelectionMembersFromSearchAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_AddSelectionMembersFromSearchAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_AddSelectionMembersFromSearchAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> AddSelectionMembersFromSearchAsync\(int, string, RequestOptions\)
 
 Adds members from the selection using the search result.
 
@@ -241,17 +241,17 @@ The id of the selection to add members
 
 Storage key to be interpreted by the restriction storage provider, when it fetches criteria for the search
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
 
 Number of members added.
 
-### CopyContactSelectionMembersAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_CopyContactSelectionMembersAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_CopyContactSelectionMembersAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> CopyContactSelectionMembersAsync\(int, int, RequestOptions\)
 
 Copy contact selection members from selection into an existing selection.
 
@@ -269,7 +269,7 @@ The id of the selection to copy members from.
 
 The id of the selection to copy members to.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -277,7 +277,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### CopySelectionMembersAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_CopySelectionMembersAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_CopySelectionMembersAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> CopySelectionMembersAsync\(int, int, RequestOptions\)
 
 Copy selection members from selection into an existing selection.
 
@@ -295,7 +295,7 @@ The id of the selection to copy members from.
 
 The id of the selection to copy members to.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -303,7 +303,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### CreateContactSelectionFromSelectionAsync\(int, string, SelectionType, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_CreateContactSelectionFromSelectionAsync_System_Int32_System_String_SuperOffice_WebApi_Data_SelectionType_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_CreateContactSelectionFromSelectionAsync_System_Int32_System_String_SuperOffice_WebApi_Data_SelectionType_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> CreateContactSelectionFromSelectionAsync\(int, string, SelectionType, bool, RequestOptions\)
 
 Creates a new selection based on selection members from an existing selection.
 
@@ -321,7 +321,7 @@ The id of the selection to copy members from.
 
 The name of the new selection.
 
-`targetSelectionType` [SelectionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionType)
+`targetSelectionType` [SelectionType](SuperOffice.WebApi.Data.SelectionType.md)
 
 The type of ContactSelection to create. The type can be static or dynamic. If the original selection to copy from is static, the SelectionType can only be static. If the original selection is dynamic, both a static and dynamic selection can be created.
 
@@ -329,17 +329,17 @@ The type of ContactSelection to create. The type can be static or dynamic. If th
 
 If true, the members from the original selection will be added to the newly created selection.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectionEntity](SuperOffice.WebApi.Data.SelectionEntity.md)\>
 
 Returns the newly created SelectionEntity.
 
-### CreateContactSelectionFromShadowSelectionAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_CreateContactSelectionFromShadowSelectionAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_CreateContactSelectionFromShadowSelectionAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> CreateContactSelectionFromShadowSelectionAsync\(int, string, RequestOptions\)
 
 Creates a new contact selection based on contact selection members from an existing shadow sale, appointment, project or document selection. The new selection will always be static even if the original selection is dynamic.
 
@@ -357,17 +357,17 @@ The id of the selection to copy members from.
 
 The name of the new selection.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectionEntity](SuperOffice.WebApi.Data.SelectionEntity.md)\>
 
 Returns the newly created SelectionEntity.
 
-### CreateDefaultBoardViewSettingsFromEntityTypeAsync\(BoardViewEntityType, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_CreateDefaultBoardViewSettingsFromEntityTypeAsync_SuperOffice_WebApi_Data_BoardViewEntityType_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_CreateDefaultBoardViewSettingsFromEntityTypeAsync_SuperOffice_WebApi_Data_BoardViewEntityType_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultBoardViewSettingsFromEntityTypeAsync\(BoardViewEntityType, RequestOptions\)
 
 Creates a new carrier from the entity type given, with the right kind of properties, defaults set.
 
@@ -377,19 +377,19 @@ public Task<BoardViewSettingsBase> CreateDefaultBoardViewSettingsFromEntityTypeA
 
 #### Parameters
 
-`entityType` [BoardViewEntityType](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewEntityType)
+`entityType` [BoardViewEntityType](SuperOffice.WebApi.Data.BoardViewEntityType.md)
 
 Entity type to create settings for
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BoardViewSettingsBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewSettingsBase)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BoardViewSettingsBase](SuperOffice.WebApi.Data.BoardViewSettingsBase.md)\>
 
-### CreateDefaultSelectionEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_CreateDefaultSelectionEntityAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_CreateDefaultSelectionEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultSelectionEntityAsync\(RequestOptions\)
 
 Set default values into a new SelectionEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -400,17 +400,17 @@ public Task<SelectionEntity> CreateDefaultSelectionEntityAsync(RequestOptions re
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectionEntity](SuperOffice.WebApi.Data.SelectionEntity.md)\>
 
 A blank SelectionEntity
 
-### CreateNewEntryAsync\(DuplicateEntry, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_CreateNewEntryAsync_SuperOffice_WebApi_Data_DuplicateEntry_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_CreateNewEntryAsync_SuperOffice_WebApi_Data_DuplicateEntry_SuperOffice_WebApi_RequestOptions_"></a> CreateNewEntryAsync\(DuplicateEntry, RequestOptions\)
 
 Creates a new selection based on external duplicate
 
@@ -420,21 +420,21 @@ public Task<int> CreateNewEntryAsync(DuplicateEntry duplicate, RequestOptions re
 
 #### Parameters
 
-`duplicate` [DuplicateEntry](/en/api/reference/webapi/SuperOffice.WebApi.Data.DuplicateEntry)
+`duplicate` [DuplicateEntry](SuperOffice.WebApi.Data.DuplicateEntry.md)
 
 The duplicate to create a new entry based upon
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
 
 The database identity of the newly created entry
 
-### CreateSelectionEntityAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_CreateSelectionEntityAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_CreateSelectionEntityAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> CreateSelectionEntityAsync\(string, RequestOptions\)
 
 Create (but do not save) a new selection entity, for the current user and the given target table; other fields populated as by CreateDefaultSelectionEntity()
 
@@ -448,17 +448,17 @@ public Task<SelectionEntity> CreateSelectionEntityAsync(string targetTableName, 
 
 The name of the target table, such as 'contact' or 'appointment'; any table for which Selection functionality is enabled
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectionEntity](SuperOffice.WebApi.Data.SelectionEntity.md)\>
 
 The new SelectionEntity, which has not yet been saved
 
-### CreateSelectionFromSelectionAsync\(int, string, SelectionType, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_CreateSelectionFromSelectionAsync_System_Int32_System_String_SuperOffice_WebApi_Data_SelectionType_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_CreateSelectionFromSelectionAsync_System_Int32_System_String_SuperOffice_WebApi_Data_SelectionType_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> CreateSelectionFromSelectionAsync\(int, string, SelectionType, bool, RequestOptions\)
 
 Creates a new selection based on selection members from an existing selection.
 
@@ -476,7 +476,7 @@ The id of the selection to copy members from.
 
 The name of the new selection.
 
-`targetSelectionType` [SelectionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionType)
+`targetSelectionType` [SelectionType](SuperOffice.WebApi.Data.SelectionType.md)
 
 The type of Selection to create. The type can be static or dynamic. If the original selection to copy from is static, the SelectionType can only be static. If the original selection is dynamic, both a static and dynamic selection can be created.
 
@@ -484,17 +484,17 @@ The type of Selection to create. The type can be static or dynamic. If the origi
 
 If true, the members from the original selection will be added to the newly created selection.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectionEntity](SuperOffice.WebApi.Data.SelectionEntity.md)\>
 
 Returns the newly created SelectionEntity.
 
-### CreateTemporaryContactSelectionAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_CreateTemporaryContactSelectionAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_CreateTemporaryContactSelectionAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateTemporaryContactSelectionAsync\(RequestOptions\)
 
 Creates a temporary selection.
 
@@ -504,17 +504,17 @@ public Task<SelectionEntity> CreateTemporaryContactSelectionAsync(RequestOptions
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectionEntity](SuperOffice.WebApi.Data.SelectionEntity.md)\>
 
 Returns the newly created SelectionEntity.
 
-### CreateTemporaryContactSelectionFromContactPersonIdsAsync\(ContactPersonId\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_CreateTemporaryContactSelectionFromContactPersonIdsAsync_SuperOffice_WebApi_Data_ContactPersonId___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_CreateTemporaryContactSelectionFromContactPersonIdsAsync_SuperOffice_WebApi_Data_ContactPersonId___SuperOffice_WebApi_RequestOptions_"></a> CreateTemporaryContactSelectionFromContactPersonIdsAsync\(ContactPersonId\[\], RequestOptions\)
 
 Creates a temporary selection with members from a collection of ContactPerson id's.
 
@@ -524,21 +524,21 @@ public Task<SelectionEntity> CreateTemporaryContactSelectionFromContactPersonIds
 
 #### Parameters
 
-`contactPersonIds` [ContactPersonId](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactPersonId)\[\]
+`contactPersonIds` [ContactPersonId](SuperOffice.WebApi.Data.ContactPersonId.md)\[\]
 
 A collection of ContactPersonId to copy into the temporary contact selection as members.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectionEntity](SuperOffice.WebApi.Data.SelectionEntity.md)\>
 
 Returns the newly created SelectionEntity.
 
-### CreateTemporaryContactSelectionFromSelectionMemberIdsAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_CreateTemporaryContactSelectionFromSelectionMemberIdsAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_CreateTemporaryContactSelectionFromSelectionMemberIdsAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> CreateTemporaryContactSelectionFromSelectionMemberIdsAsync\(int, int\[\], RequestOptions\)
 
 Creates a temporary selection with members from a collection of selectionmember id's.
 
@@ -556,17 +556,17 @@ The selectionId the selectionmembers is a part of.
 
 A collection of int ids to copy into the temporary contact selection as members.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectionEntity](SuperOffice.WebApi.Data.SelectionEntity.md)\>
 
 Returns the newly created SelectionEntity.
 
-### CreateTemporarySelectionFromIdsAsync\(int\[\], int, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_CreateTemporarySelectionFromIdsAsync_System_Int32___System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_CreateTemporarySelectionFromIdsAsync_System_Int32___System_Int32_SuperOffice_WebApi_RequestOptions_"></a> CreateTemporarySelectionFromIdsAsync\(int\[\], int, RequestOptions\)
 
 Creates a temporary selection with members from a collection of entity id's.
 
@@ -584,17 +584,17 @@ A collection of Ids to copy into the temporary selection as members. The ids are
 
 The type of selection to create.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectionEntity](SuperOffice.WebApi.Data.SelectionEntity.md)\>
 
 Returns the newly created SelectionEntity.
 
-### DeleteBoardViewSettingsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_DeleteBoardViewSettingsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_DeleteBoardViewSettingsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteBoardViewSettingsAsync\(int, RequestOptions\)
 
 Delete BoardViewSettings
 
@@ -608,7 +608,7 @@ public Task DeleteBoardViewSettingsAsync(int boardViewSettingsId, RequestOptions
 
 Primary key of BoardViewSettings
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -618,7 +618,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### DeleteContactsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_DeleteContactsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_DeleteContactsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteContactsAsync\(int, RequestOptions\)
 
 Deletes all contacts from a selection. If a contact does not have delete rights, it will be skipped.
 
@@ -632,7 +632,7 @@ public Task DeleteContactsAsync(int selectionId, RequestOptions requestOptions =
 
 Id of the selection the delete operation will be performed.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -640,7 +640,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### DeleteEntitiesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_DeleteEntitiesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_DeleteEntitiesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteEntitiesAsync\(int, RequestOptions\)
 
 Deletes all entities from a selection. If an entity does not have delete rights, it will be skipped.
 
@@ -654,7 +654,7 @@ public Task DeleteEntitiesAsync(int selectionId, RequestOptions requestOptions =
 
 Id of the selection the delete operation will be performed.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -662,7 +662,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### DeletePersonsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_DeletePersonsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_DeletePersonsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeletePersonsAsync\(int, RequestOptions\)
 
 Deletes all persons from a selection. If a person does not have delete rights, it will be skipped.
 
@@ -676,7 +676,7 @@ public Task DeletePersonsAsync(int selectionId, RequestOptions requestOptions = 
 
 Id of the selection the delete operation will be performed.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -684,7 +684,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### DeleteSelectionEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_DeleteSelectionEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_DeleteSelectionEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteSelectionEntityAsync\(int, RequestOptions\)
 
 Deletes the SelectionEntity
 
@@ -698,7 +698,7 @@ public Task DeleteSelectionEntityAsync(int selectionEntityId, RequestOptions req
 
 The identity of the SelectionEntity
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -708,7 +708,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### EditContactSelectionMemberDetailsAsync\(int, SelectionMemberEditValues, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_EditContactSelectionMemberDetailsAsync_System_Int32_SuperOffice_WebApi_Data_SelectionMemberEditValues_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_EditContactSelectionMemberDetailsAsync_System_Int32_SuperOffice_WebApi_Data_SelectionMemberEditValues_SuperOffice_WebApi_RequestOptions_"></a> EditContactSelectionMemberDetailsAsync\(int, SelectionMemberEditValues, RequestOptions\)
 
 Edit company and contact details in a selection based on contents in selectionMemberEditValues.
 
@@ -722,11 +722,11 @@ public Task EditContactSelectionMemberDetailsAsync(int selectionId, SelectionMem
 
 The id of the selection to edit members from.
 
-`selectionMemberEditValues` [SelectionMemberEditValues](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionMemberEditValues)
+`selectionMemberEditValues` [SelectionMemberEditValues](SuperOffice.WebApi.Data.SelectionMemberEditValues.md)
 
-An object of [SelectionMemberEditValues](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionMemberEditValues) describing what should be changed for companys and contacts.
+An object of &lt;see cref="SelectionMemberEditValues"/&gt; describing what should be changed for companys and contacts.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -734,7 +734,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### ExportSelectionMembersAsync\(int, string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_ExportSelectionMembersAsync_System_Int32_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_ExportSelectionMembersAsync_System_Int32_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> ExportSelectionMembersAsync\(int, string, bool, RequestOptions\)
 
 ExportSelectionMembers will generate a string that is the result of substituting the template variables with values from selectionmembers.
 
@@ -756,17 +756,17 @@ The templateName parameter is the relative path of a .sxf file template. The .sx
 
 If the selection contains other members than contacts, setting this to true will export the contact archive of the selection.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
 
 Returns a unicode byte array with the file to export to the user.
 
-### ExportSelectionMembersWithOrderByAsync\(int, string, bool, string, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_ExportSelectionMembersWithOrderByAsync_System_Int32_System_String_System_Boolean_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_ExportSelectionMembersWithOrderByAsync_System_Int32_System_String_System_Boolean_System_String_SuperOffice_WebApi_RequestOptions_"></a> ExportSelectionMembersWithOrderByAsync\(int, string, bool, string, RequestOptions\)
 
 ExportSelectionMembers will generate a string that is the result of substituting the template variables with values from selectionmembers.
 
@@ -792,17 +792,17 @@ If the selection contains other members than contacts, setting this to true will
 
 OrderBy. &lt;Column,OrderBySortType&gt;
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
 
 Returns a unicode byte array with the file to export to the user.
 
-### GenerateFollowUpsAsync\(int, AppointmentEntity, int, bool, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_GenerateFollowUpsAsync_System_Int32_SuperOffice_WebApi_Data_AppointmentEntity_System_Int32_System_Boolean_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_GenerateFollowUpsAsync_System_Int32_SuperOffice_WebApi_Data_AppointmentEntity_System_Int32_System_Boolean_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GenerateFollowUpsAsync\(int, AppointmentEntity, int, bool, bool, RequestOptions\)
 
 Generate follow-ups for members in the selection.
 
@@ -816,7 +816,7 @@ public Task GenerateFollowUpsAsync(int selectionId, AppointmentEntity appointmen
 
 The id of the selection to generate the follow-ups for.
 
-`appointmentEntity` [AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)
+`appointmentEntity` [AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)
 
 The AppointmentEntity with information about the appointment.
 
@@ -832,7 +832,7 @@ If true, the appointments will be saved on contact owner (Our contact). This par
 
 If true, only one appointment will be created for each contact.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -840,7 +840,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### GetBoardViewSettingsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_GetBoardViewSettingsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_GetBoardViewSettingsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetBoardViewSettingsAsync\(int, RequestOptions\)
 
 Get BoardViewSettings by ID
 
@@ -854,17 +854,17 @@ public Task<BoardViewSettingsBase> GetBoardViewSettingsAsync(int boardViewSettin
 
 Primary key of BoardViewSettings
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BoardViewSettingsBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewSettingsBase)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BoardViewSettingsBase](SuperOffice.WebApi.Data.BoardViewSettingsBase.md)\>
 
 The settings, of appropriate sub type
 
-### GetBoardViewSettingsForSelectionAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_GetBoardViewSettingsForSelectionAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_GetBoardViewSettingsForSelectionAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetBoardViewSettingsForSelectionAsync\(int, int, RequestOptions\)
 
 Get BoardViewSettings by associate id and selection id
 
@@ -882,17 +882,17 @@ Id of associate
 
 Id of selection
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BoardViewSettingsBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewSettingsBase)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BoardViewSettingsBase](SuperOffice.WebApi.Data.BoardViewSettingsBase.md)\>
 
 The settings, of appropriate sub type
 
-### GetDuplicateRulesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_GetDuplicateRulesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_GetDuplicateRulesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetDuplicateRulesAsync\(RequestOptions\)
 
 Retrieve all available duplicate rules for selection
 
@@ -902,17 +902,17 @@ public Task<DuplicateRule[]> GetDuplicateRulesAsync(RequestOptions requestOption
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DuplicateRule](/en/api/reference/webapi/SuperOffice.WebApi.Data.DuplicateRule)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DuplicateRule](SuperOffice.WebApi.Data.DuplicateRule.md)\[\]\>
 
 All available duplicate rules
 
-### GetDuplicatesAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_GetDuplicatesAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_GetDuplicatesAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetDuplicatesAsync\(string, RequestOptions\)
 
 Get duplicates(exact or similar in the database) based on the name
 
@@ -926,17 +926,17 @@ public Task<DuplicateEntry[]> GetDuplicatesAsync(string name, RequestOptions req
 
 Name used for lookup
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DuplicateEntry](/en/api/reference/webapi/SuperOffice.WebApi.Data.DuplicateEntry)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DuplicateEntry](SuperOffice.WebApi.Data.DuplicateEntry.md)\[\]\>
 
 Any records matching the specified name
 
-### GetDynamicSelectionCriteriaAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_GetDynamicSelectionCriteriaAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_GetDynamicSelectionCriteriaAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetDynamicSelectionCriteriaAsync\(int, RequestOptions\)
 
 Get the criteria for this dynamic selection.
 
@@ -950,17 +950,17 @@ public Task<ArchiveRestrictionInfo[]> GetDynamicSelectionCriteriaAsync(int selec
 
 The id of the selection to add members
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]\>
 
 Criteria defining the selection result. NULL if selection does not exist, or if this is not a dynamic selection.
 
-### GetDynamicSelectionCriteriaGroupsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_GetDynamicSelectionCriteriaGroupsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_GetDynamicSelectionCriteriaGroupsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetDynamicSelectionCriteriaGroupsAsync\(int, RequestOptions\)
 
 Get the criteria for this dynamic selection. This call supports multiple criteria groups.
 
@@ -974,17 +974,17 @@ public Task<ArchiveRestrictionGroup[]> GetDynamicSelectionCriteriaGroupsAsync(in
 
 The id of the selection to add members
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveRestrictionGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionGroup)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ArchiveRestrictionGroup](SuperOffice.WebApi.Data.ArchiveRestrictionGroup.md)\[\]\>
 
 Criteria groups defining the selection result. NULL if selection does not exist, or if this is not a dynamic selection.
 
-### GetParentCombinedSelectionsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_GetParentCombinedSelectionsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_GetParentCombinedSelectionsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetParentCombinedSelectionsAsync\(int, RequestOptions\)
 
 Get a list of all selection ids where the given selection is used to create a combined selection.
 
@@ -998,17 +998,17 @@ public Task<int[]> GetParentCombinedSelectionsAsync(int selectionId, RequestOpti
 
 The selectionId to query for.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]\>
 
 Array of selectionIds.
 
-### GetRecipientStatisticsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_GetRecipientStatisticsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_GetRecipientStatisticsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetRecipientStatisticsAsync\(int, RequestOptions\)
 
 Returns a RecipientStatistics object with a count of addresses, emailaddresses and emailaddresses.
 
@@ -1022,17 +1022,17 @@ public Task<RecipientStatistics> GetRecipientStatisticsAsync(int selectionId, Re
 
 The id of the selection to get the statistics for.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RecipientStatistics](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecipientStatistics)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[RecipientStatistics](SuperOffice.WebApi.Data.RecipientStatistics.md)\>
 
 Returns a RecipientStatistics object.
 
-### GetRecipientStatisticsFromContactPersonIdsAsync\(ContactPersonId\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_GetRecipientStatisticsFromContactPersonIdsAsync_SuperOffice_WebApi_Data_ContactPersonId___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_GetRecipientStatisticsFromContactPersonIdsAsync_SuperOffice_WebApi_Data_ContactPersonId___SuperOffice_WebApi_RequestOptions_"></a> GetRecipientStatisticsFromContactPersonIdsAsync\(ContactPersonId\[\], RequestOptions\)
 
 Returns a RecipientStatistics object with a count of addresses, emailaddresses and emailaddresses based on contact and persons in a collection of ContactPersonId.
 
@@ -1042,21 +1042,21 @@ public Task<RecipientStatistics> GetRecipientStatisticsFromContactPersonIdsAsync
 
 #### Parameters
 
-`contactPersonIds` [ContactPersonId](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactPersonId)\[\]
+`contactPersonIds` [ContactPersonId](SuperOffice.WebApi.Data.ContactPersonId.md)\[\]
 
 A collection of ContactPersonId to get the statistics for.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RecipientStatistics](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecipientStatistics)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[RecipientStatistics](SuperOffice.WebApi.Data.RecipientStatistics.md)\>
 
 Returns a RecipientStatistics object.
 
-### GetRecipientStatisticsFromProjectMembersAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_GetRecipientStatisticsFromProjectMembersAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_GetRecipientStatisticsFromProjectMembersAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetRecipientStatisticsFromProjectMembersAsync\(int, RequestOptions\)
 
 Returns a RecipientStatistics object with a count of addresses, emailaddresses and emailaddresses based on members in a project.
 
@@ -1070,17 +1070,17 @@ public Task<RecipientStatistics> GetRecipientStatisticsFromProjectMembersAsync(i
 
 The id of the project to get the member statistics for.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RecipientStatistics](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecipientStatistics)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[RecipientStatistics](SuperOffice.WebApi.Data.RecipientStatistics.md)\>
 
 Returns a RecipientStatistics object.
 
-### GetSelectionEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_GetSelectionEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_GetSelectionEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetSelectionEntityAsync\(int, RequestOptions\)
 
 Gets a specific SelectionEntity object.
 
@@ -1094,17 +1094,17 @@ public Task<SelectionEntity> GetSelectionEntityAsync(int selectionEntityId, Requ
 
 The identifier of the SelectionEntity object
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectionEntity](SuperOffice.WebApi.Data.SelectionEntity.md)\>
 
 SelectionEntity
 
-### GetSelectionForFindAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_GetSelectionForFindAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_GetSelectionForFindAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetSelectionForFindAsync\(string, int, RequestOptions\)
 
 Obtain a selection for the given entity, for the current user, of type WorkingSetForFind. Optionally populate criteria from the TypicalSearches system
 
@@ -1122,17 +1122,17 @@ The name of the entity to make a selection for; examples 'sale', 'project', 'y_e
 
 If 0, keep existing criteria; if -1, reset to entity default; &gt; 0 get criteria from given TypicalSearch
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectionForFind](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionForFind)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectionForFind](SuperOffice.WebApi.Data.SelectionForFind.md)\>
 
 Target selection id and provider name
 
-### GetSelectionMembersArchiveRowsAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_GetSelectionMembersArchiveRowsAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_GetSelectionMembersArchiveRowsAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetSelectionMembersArchiveRowsAsync\(int, string, RequestOptions\)
 
 Get the list of members in this selection. The type of members depends on the target table of the selection.
 
@@ -1150,17 +1150,17 @@ The selectionId we want selection members for.
 
 (optional) Comma separated Column names to include in result. List of columns varies depending on the selection's TargetTable. e.g. 'name', 'firstname', 'startTime'
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveListItem)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ArchiveListItem](SuperOffice.WebApi.Data.ArchiveListItem.md)\[\]\>
 
 Array of archive rows, where each item represents one row of data (row level data + the requested columns). NULL if selection does not exist.
 
-### GetSelectionShadowMembersArchiveRowsAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_GetSelectionShadowMembersArchiveRowsAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_GetSelectionShadowMembersArchiveRowsAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetSelectionShadowMembersArchiveRowsAsync\(int, string, RequestOptions\)
 
 Get the list of members in this selection's shadow (i.e. the list of contacts + persons referenced in the main selection).
 
@@ -1178,17 +1178,17 @@ The selectionId we want selection members for.
 
 (optional) Comma separated Column names to include in result. List of columns varies depending on the selection's TargetTable. e.g. 'name', 'firstname,name', 'startTime,firstname,name'
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveListItem)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ArchiveListItem](SuperOffice.WebApi.Data.ArchiveListItem.md)\[\]\>
 
 Array of archive rows, where each item represents one row of data (row level data + the requested columns). NULL if selection does not exist.
 
-### GetSelectionSummariesAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_GetSelectionSummariesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_GetSelectionSummariesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetSelectionSummariesAsync\(int\[\], RequestOptions\)
 
 Get an array of summaryitem for the given selections
 
@@ -1202,17 +1202,17 @@ public Task<SelectionSummaryItem[]> GetSelectionSummariesAsync(int[] selectionId
 
 The selections to fetch summaries for
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectionSummaryItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionSummaryItem)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectionSummaryItem](SuperOffice.WebApi.Data.SelectionSummaryItem.md)\[\]\>
 
 Summary items for the given id's, in no particular order
 
-### RemoveContactSelectionMembersAsync\(int, ContactPersonId\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_RemoveContactSelectionMembersAsync_System_Int32_SuperOffice_WebApi_Data_ContactPersonId___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_RemoveContactSelectionMembersAsync_System_Int32_SuperOffice_WebApi_Data_ContactPersonId___SuperOffice_WebApi_RequestOptions_"></a> RemoveContactSelectionMembersAsync\(int, ContactPersonId\[\], RequestOptions\)
 
 Removes members from the selection as  specified in the collection of ContactPersonId.
 
@@ -1226,11 +1226,11 @@ public Task RemoveContactSelectionMembersAsync(int selectionId, ContactPersonId[
 
 The id of the selection where to members will be removed.
 
-`contactPersonIds` [ContactPersonId](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactPersonId)\[\]
+`contactPersonIds` [ContactPersonId](SuperOffice.WebApi.Data.ContactPersonId.md)\[\]
 
 A collection of ContactPersonId to remove from the static selection.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -1238,7 +1238,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### RemoveContactSelectionMembersFromIdsAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_RemoveContactSelectionMembersFromIdsAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_RemoveContactSelectionMembersFromIdsAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> RemoveContactSelectionMembersFromIdsAsync\(int, int\[\], RequestOptions\)
 
 Removes members from the selection using a collection a selectionmember id's. Members can only be removed from single selection.
 
@@ -1256,7 +1256,7 @@ The id of the selection where to members will be removed.
 
 An array of selectionmember id's to remove from the selection.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -1264,7 +1264,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### RemoveContactSelectionMembersFromSearchAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_RemoveContactSelectionMembersFromSearchAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_RemoveContactSelectionMembersFromSearchAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> RemoveContactSelectionMembersFromSearchAsync\(int, string, RequestOptions\)
 
 Removes members from the selection using the search result.
 
@@ -1282,17 +1282,17 @@ The id of the selection to remove members.
 
 Storage key to be interpreted by the restriction storage provider, when it fetches criteria for the search.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
 
 Number of members removed
 
-### RemoveSelectionMembersAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_RemoveSelectionMembersAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_RemoveSelectionMembersAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> RemoveSelectionMembersAsync\(int, int\[\], RequestOptions\)
 
 Removes members from the selection as  specified in the collection of entity ids. The ids are selection member ids (selection member primary key)
 
@@ -1310,7 +1310,7 @@ The id of the selection where to members will be removed.
 
 Selection member primary keys
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -1318,7 +1318,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### RemoveSelectionMembersByIdAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_RemoveSelectionMembersByIdAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_RemoveSelectionMembersByIdAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> RemoveSelectionMembersByIdAsync\(int, int\[\], RequestOptions\)
 
 Removes members from the selection as specified in the collection of entity ids. The ids can be a collection of sale ids, or other supported types.
 
@@ -1336,7 +1336,7 @@ The id of the selection where to members will be removed.
 
 A collection of sale/project/contact ids to remove from the selection. The ids can be a collection of sale ids, or other supported types.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -1344,7 +1344,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### RemoveSelectionMembersFromSearchAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_RemoveSelectionMembersFromSearchAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_RemoveSelectionMembersFromSearchAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> RemoveSelectionMembersFromSearchAsync\(int, string, RequestOptions\)
 
 Removes members from the selection using the search result.
 
@@ -1362,17 +1362,17 @@ The id of the selection to remove members.
 
 Storage key to be interpreted by the restriction storage provider, when it fetches criteria for the search.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
 
 Number of members removed
 
-### SaveBoardViewSettingsAsync\(BoardViewSettingsBase, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_SaveBoardViewSettingsAsync_SuperOffice_WebApi_Data_BoardViewSettingsBase_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_SaveBoardViewSettingsAsync_SuperOffice_WebApi_Data_BoardViewSettingsBase_SuperOffice_WebApi_RequestOptions_"></a> SaveBoardViewSettingsAsync\(BoardViewSettingsBase, RequestOptions\)
 
 Save BoardViewSettings
 
@@ -1382,21 +1382,21 @@ public Task<BoardViewSettingsBase> SaveBoardViewSettingsAsync(BoardViewSettingsB
 
 #### Parameters
 
-`boardViewSettings` [BoardViewSettingsBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewSettingsBase)
+`boardViewSettings` [BoardViewSettingsBase](SuperOffice.WebApi.Data.BoardViewSettingsBase.md)
 
 Typed BoardViewSettings carrier object
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BoardViewSettingsBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewSettingsBase)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BoardViewSettingsBase](SuperOffice.WebApi.Data.BoardViewSettingsBase.md)\>
 
 The settings, of appropriate sub type
 
-### SaveBoardViewSettingsForSelectionAndAssociateAsync\(BoardViewSettingsBase, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_SaveBoardViewSettingsForSelectionAndAssociateAsync_SuperOffice_WebApi_Data_BoardViewSettingsBase_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_SaveBoardViewSettingsForSelectionAndAssociateAsync_SuperOffice_WebApi_Data_BoardViewSettingsBase_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> SaveBoardViewSettingsForSelectionAndAssociateAsync\(BoardViewSettingsBase, int, int, RequestOptions\)
 
 Save BoardViewSettings on the given selection/associate
 
@@ -1406,7 +1406,7 @@ public Task<BoardViewSettingsBase> SaveBoardViewSettingsForSelectionAndAssociate
 
 #### Parameters
 
-`boardViewSettings` [BoardViewSettingsBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewSettingsBase)
+`boardViewSettings` [BoardViewSettingsBase](SuperOffice.WebApi.Data.BoardViewSettingsBase.md)
 
 Typed BoardViewSettings carrier object
 
@@ -1418,17 +1418,17 @@ Id of associate
 
 Id of selection
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BoardViewSettingsBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.BoardViewSettingsBase)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BoardViewSettingsBase](SuperOffice.WebApi.Data.BoardViewSettingsBase.md)\>
 
 The settings, of appropriate sub type
 
-### SaveSelectionEntityAsync\(SelectionEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_SaveSelectionEntityAsync_SuperOffice_WebApi_Data_SelectionEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_SaveSelectionEntityAsync_SuperOffice_WebApi_Data_SelectionEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveSelectionEntityAsync\(SelectionEntity, RequestOptions\)
 
 Updates the existing SelectionEntity or creates a new SelectionEntity if the id parameter is 0.
 
@@ -1438,21 +1438,21 @@ public Task<SelectionEntity> SaveSelectionEntityAsync(SelectionEntity selectionE
 
 #### Parameters
 
-`selectionEntity` [SelectionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionEntity)
+`selectionEntity` [SelectionEntity](SuperOffice.WebApi.Data.SelectionEntity.md)
 
 The SelectionEntity that is saved.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectionEntity](SuperOffice.WebApi.Data.SelectionEntity.md)\>
 
 New or updated SelectionEntity
 
-### SetDuplicateRulesStatusAsync\(DuplicateRule\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_SetDuplicateRulesStatusAsync_SuperOffice_WebApi_Data_DuplicateRule___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_SetDuplicateRulesStatusAsync_SuperOffice_WebApi_Data_DuplicateRule___SuperOffice_WebApi_RequestOptions_"></a> SetDuplicateRulesStatusAsync\(DuplicateRule\[\], RequestOptions\)
 
 Set which duplicate rules should be active or not
 
@@ -1462,11 +1462,11 @@ public Task SetDuplicateRulesStatusAsync(DuplicateRule[] rules, RequestOptions r
 
 #### Parameters
 
-`rules` [DuplicateRule](/en/api/reference/webapi/SuperOffice.WebApi.Data.DuplicateRule)\[\]
+`rules` [DuplicateRule](SuperOffice.WebApi.Data.DuplicateRule.md)\[\]
 
 Duplicate rules to update active status for
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -1474,7 +1474,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### SetDynamicSelectionCriteria2Async\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_SetDynamicSelectionCriteria2Async_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_SetDynamicSelectionCriteria2Async_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> SetDynamicSelectionCriteria2Async\(int, string, RequestOptions\)
 
 Update the criteria for this dynamic selection using string. Criteria are parsed from the OData filter form: ''name startswith 'foo' and category in (1,2,3)''
 
@@ -1492,17 +1492,17 @@ The id of the selection to add members
 
 Criteria defining the selection result in OData filter form: `category in (1,2,3) and name = 'foo'`
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]\>
 
 Criteria defining the selection result. NULL if this is not a dynamic selection.
 
-### SetDynamicSelectionCriteria3Async\(int, ArchiveRestrictionInfo\[\], string, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_SetDynamicSelectionCriteria3Async_System_Int32_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_SetDynamicSelectionCriteria3Async_System_Int32_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_String_SuperOffice_WebApi_RequestOptions_"></a> SetDynamicSelectionCriteria3Async\(int, ArchiveRestrictionInfo\[\], string, RequestOptions\)
 
 Update the criteria for this dynamic selection. Use criteria as either restriction objects or OData string format. Criteria are parsed from the OData filter form: ''name startswith 'foo' and category in (1,2,3)''
 
@@ -1516,7 +1516,7 @@ public Task<ArchiveRestrictionInfo[]> SetDynamicSelectionCriteria3Async(int sele
 
 The id of the selection to add members
 
-`criteria` [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
+`criteria` [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
 
 Criteria defining the selection result. Pass NULL if using the filter string instead.
 
@@ -1524,17 +1524,17 @@ Criteria defining the selection result. Pass NULL if using the filter string ins
 
 Criteria defining the selection result in OData filter form: `category in (1,2,3) and name = 'foo'`. Pass NULL or empty string '' if using the criteria objects.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]\>
 
 Criteria defining the selection result. NULL if this is not a dynamic selection.
 
-### SetDynamicSelectionCriteriaAsync\(int, ArchiveRestrictionInfo\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_SetDynamicSelectionCriteriaAsync_System_Int32_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_SetDynamicSelectionCriteriaAsync_System_Int32_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___SuperOffice_WebApi_RequestOptions_"></a> SetDynamicSelectionCriteriaAsync\(int, ArchiveRestrictionInfo\[\], RequestOptions\)
 
 Update the criteria for this dynamic selection. Replaces existing criteria with the new values.
 
@@ -1548,21 +1548,21 @@ public Task<ArchiveRestrictionInfo[]> SetDynamicSelectionCriteriaAsync(int selec
 
 The id of the selection to add members
 
-`criteria` [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
+`criteria` [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
 
 Criteria defining the selection result.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]\>
 
 Criteria defining the selection result. NULL if this is not a dynamic selection.
 
-### SetDynamicSelectionCriteriaGroupsAsync\(int, ArchiveRestrictionGroup\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_SetDynamicSelectionCriteriaGroupsAsync_System_Int32_SuperOffice_WebApi_Data_ArchiveRestrictionGroup___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_SetDynamicSelectionCriteriaGroupsAsync_System_Int32_SuperOffice_WebApi_Data_ArchiveRestrictionGroup___SuperOffice_WebApi_RequestOptions_"></a> SetDynamicSelectionCriteriaGroupsAsync\(int, ArchiveRestrictionGroup\[\], RequestOptions\)
 
 Update the criteria for this dynamic selection. Replaces existing criteria with the new values. This call supports multiple criteria groups.
 
@@ -1576,21 +1576,21 @@ public Task<ArchiveRestrictionGroup[]> SetDynamicSelectionCriteriaGroupsAsync(in
 
 The id of the selection to add members
 
-`criteria` [ArchiveRestrictionGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionGroup)\[\]
+`criteria` [ArchiveRestrictionGroup](SuperOffice.WebApi.Data.ArchiveRestrictionGroup.md)\[\]
 
 Criteria groups defining the selection result. Empty array is legal, simply means no criteria have been set
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ArchiveRestrictionGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionGroup)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ArchiveRestrictionGroup](SuperOffice.WebApi.Data.ArchiveRestrictionGroup.md)\[\]\>
 
 Criteria groups defining the selection result. NULL if this is not a dynamic selection.
 
-### UpdateTypicalSearchAsync\(TypicalSearches, RequestOptions\) {#SuperOffice_WebApi_Agents_SelectionAgent_UpdateTypicalSearchAsync_SuperOffice_WebApi_Data_TypicalSearches_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_SelectionAgent_UpdateTypicalSearchAsync_SuperOffice_WebApi_Data_TypicalSearches_SuperOffice_WebApi_RequestOptions_"></a> UpdateTypicalSearchAsync\(TypicalSearches, RequestOptions\)
 
 Update (import) TypicalSearch information in the database
 
@@ -1600,17 +1600,17 @@ public Task<string> UpdateTypicalSearchAsync(TypicalSearches searches, RequestOp
 
 #### Parameters
 
-`searches` [TypicalSearches](/en/api/reference/webapi/SuperOffice.WebApi.Data.TypicalSearches)
+`searches` [TypicalSearches](SuperOffice.WebApi.Data.TypicalSearches.md)
 
 TypicalSearch structures to import. If null, then the fileset is scanned for *TypicalSearch.json files and those are imported instead
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
 
 Message that can be shown to the user, summarizing what has been done, if anything.
 

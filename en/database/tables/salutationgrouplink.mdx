@@ -1,6 +1,6 @@
 ---
-title: SalutationGroupLink table
-description: User group link table for Salutation, for MDO item hiding
+title: "SalutationGroupLink table"
+description: "User group link table for Salutation, for MDO item hiding"
 generated: true
 content_type: reference
 envir: online
@@ -8,21 +8,21 @@ envir: online
 
 import Salutationgrouplink from "./includes/salutationgrouplink.mdx";
 
-## SalutationGroupLink Table (220)
-
 User group link table for Salutation, for MDO item hiding
+
+Table number: 220
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |salutationgrouplink\_id|Primary key|PK|No|
-|salutation\_id|Link to Salutation list table|FK [Salutation](./salutation.mdx)|No|
-|group\_id|Link to Group table|FK [UserGroup](./usergroup.mdx)|No|
+|salutation\_id|Link to Salutation list table|FK [Salutation](./salutation)|No|
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

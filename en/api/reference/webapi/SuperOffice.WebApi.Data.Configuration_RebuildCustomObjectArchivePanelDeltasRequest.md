@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Configuration_RebuildCustomObjectArchivePanelDeltasRequest"></a> Class Configuration\_RebuildCustomObjectArchivePanelDeltasRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Configuration_RebuildCustomObjectArchivePanelDeltasRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Configuration\_RebuildCustomObjectArchivePanelDeltasRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Configuration_RebuildCustomObjectArchivePanelDeltasRequest)
+[Configuration\_RebuildCustomObjectArchivePanelDeltasRequest](SuperOffice.WebApi.Data.Configuration\_RebuildCustomObjectArchivePanelDeltasRequest.md)
 
 #### Inherited Members
 

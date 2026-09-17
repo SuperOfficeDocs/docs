@@ -1,6 +1,6 @@
 ---
-title: ejselection table
-description: This table stores selections, dynamic groups.
+title: "ejselection table"
+description: "This table stores selections, dynamic groups."
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Ejselection from "./includes/ejselection.mdx";
 
-## ejselection Table (391)
-
 This table stores selections, dynamic groups.
+
+Table number: 391
 
 ## Fields
 
@@ -21,12 +21,12 @@ This table stores selections, dynamic groups.
 |include\_id|A unique name used for refering to selections in scripts, url&amp;apos;s etc.|String(255)|No|
 |ej\_table|The source table|String(255)|Yes|
 |display\_properties|The display properties of this selection|Clob|Yes|
-|hierarchy\_id|This extra table is inside this hierarchy folder|FK [hierarchy](./hierarchy.mdx)|No|
+|hierarchy\_id|This extra table is inside this hierarchy folder|FK [hierarchy](./hierarchy)|No|
 |source\_type|The source type of this selection|Int|No|
 |source\_id|The id of the source we links to|Int|No|
 |access\_level|Access level for this selection|Int|No|
 |left\_menu|Will this selection be listed in the left menu?|Bool|Yes|
-|creator|The user who created this selection|FK [ejuser](./ejuser.mdx)|No|
+|creator|The user who created this selection|FK [ejuser](./ejuser)|No|
 |last\_count|Last result count|Int|Yes|
 |result\_config|XML data|Clob|Yes|
 

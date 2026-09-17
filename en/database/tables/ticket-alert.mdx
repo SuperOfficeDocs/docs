@@ -1,6 +1,6 @@
 ---
-title: ticket_alert table
-description: This table will contain ticket escalation levels. A ticket will be escalated along a &amp;apos;chain&amp;apos; of these levels.
+title: "ticket_alert table"
+description: "This table will contain ticket escalation levels. A ticket will be escalated along a &amp;apos;chain&amp;apos; of these levels."
 generated: true
 content_type: reference
 envir: online
@@ -8,31 +8,31 @@ envir: online
 
 import TicketAlert from "./includes/ticket-alert.mdx";
 
-## ticket\_alert Table (274)
-
 This table will contain ticket escalation levels. A ticket will be escalated along a &amp;apos;chain&amp;apos; of these levels.
+
+Table number: 274
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|priority|The id of the ticket_priority entry this entry is connected to.|FK [ticket_priority](./ticket-priority.mdx)|No|
+|priority|The id of the ticket_priority entry this entry is connected to.|FK [ticket_priority](./ticket-priority)|No|
 |alert\_level|The alert level (strictly ascending number).|Short|Yes|
 |alert\_timeout|The time (in minutes) before ticket is escalated to next level.|Int|Yes|
 |action|Bitmap indicating what should be done when escalating *to* this level.|Int|Yes|
-|delegate\_to|If ticket should be redelegated on escalation, this field contains the id of the target user.|FK [ejuser](./ejuser.mdx)|Yes|
-|script\_id|Script that can be executed then the ticket alert action occur.|FK [ejscript](./ejscript.mdx)|Yes|
+|delegate\_to|If ticket should be redelegated on escalation, this field contains the id of the target user.|FK [ejuser](./ejuser)|Yes|
+|script\_id|Script that can be executed then the ticket alert action occur.|FK [ejscript](./ejscript)|Yes|
 |email\_to|If an email should be sent when escalating, this field will contain the recipient email address.|String(255)|Yes|
 |sms\_to|If an sms should be sent when escalating, this field will contain the recipient email address.|String(255)|Yes|
-|reply\_template\_id\_customer|Reference to the reply template used in this alert, for mail to customer|FK [reply_template](./reply-template.mdx)|Yes|
-|reply\_template\_id\_user|Reference to the reply template used in this alert, for mail to owner of ticket|FK [reply_template](./reply-template.mdx)|Yes|
-|reply\_template\_id\_catmast|Reference to the reply template used in this alert, for mail to category master|FK [reply_template](./reply-template.mdx)|Yes|
-|reply\_template\_id\_email|Reference to the reply template used in this alert, for mail to custom address|FK [reply_template](./reply-template.mdx)|Yes|
-|rti\_customer\_sms|Reference to the reply template used in this alert, for sms to customer|FK [reply_template](./reply-template.mdx)|Yes|
-|reply\_template\_id\_user\_sms|Reference to the reply template used in this alert, for sms to owner of ticket|FK [reply_template](./reply-template.mdx)|Yes|
-|reply\_template\_id\_catmast\_sms|Reference to the reply template used in this alert, for sms to category master|FK [reply_template](./reply-template.mdx)|Yes|
-|reply\_template\_id\_sms|Reference to the reply template used in this alert, for sms to custom address|FK [reply_template](./reply-template.mdx)|Yes|
+|reply\_template\_id\_customer|Reference to the reply template used in this alert, for mail to customer|FK [reply_template](./reply-template)|Yes|
+|reply\_template\_id\_user|Reference to the reply template used in this alert, for mail to owner of ticket|FK [reply_template](./reply-template)|Yes|
+|reply\_template\_id\_catmast|Reference to the reply template used in this alert, for mail to category master|FK [reply_template](./reply-template)|Yes|
+|reply\_template\_id\_email|Reference to the reply template used in this alert, for mail to custom address|FK [reply_template](./reply-template)|Yes|
+|rti\_customer\_sms|Reference to the reply template used in this alert, for sms to customer|FK [reply_template](./reply-template)|Yes|
+|reply\_template\_id\_user\_sms|Reference to the reply template used in this alert, for sms to owner of ticket|FK [reply_template](./reply-template)|Yes|
+|reply\_template\_id\_catmast\_sms|Reference to the reply template used in this alert, for sms to category master|FK [reply_template](./reply-template)|Yes|
+|reply\_template\_id\_sms|Reference to the reply template used in this alert, for sms to custom address|FK [reply_template](./reply-template)|Yes|
 
 
 ![ticket_alert table relationship diagram](/media/loc/en/database/tables/ticket_alert.png)

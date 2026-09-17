@@ -1,6 +1,6 @@
-# Interface IDashboardAgent {#SuperOffice_WebApi_Agents_IDashboardAgent}
+# <a id="SuperOffice_WebApi_Agents_IDashboardAgent"></a> Interface IDashboardAgent
 
-Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
+Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Agent lets you configure dashboard tiles and retrieve dashboard data
@@ -16,7 +16,7 @@ public interface IDashboardAgent : IDisposable
 
 ## Methods
 
-### CreateDefaultDashboardAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_CreateDefaultDashboardAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDashboardAgent_CreateDefaultDashboardAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultDashboardAsync\(RequestOptions\)
 
 Set default values into a new Dashboard.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -27,17 +27,17 @@ Task<Dashboard> CreateDefaultDashboardAsync(RequestOptions requestOptions = null
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Dashboard](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dashboard)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Dashboard](SuperOffice.WebApi.Data.Dashboard.md)\>
 
 A blank Dashboard
 
-### CreateDefaultDashboardTileAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_CreateDefaultDashboardTileAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDashboardAgent_CreateDefaultDashboardTileAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultDashboardTileAsync\(RequestOptions\)
 
 Set default values into a new DashboardTile.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -48,17 +48,17 @@ Task<DashboardTile> CreateDefaultDashboardTileAsync(RequestOptions requestOption
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashboardTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTile)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DashboardTile](SuperOffice.WebApi.Data.DashboardTile.md)\>
 
 A blank DashboardTile
 
-### CreateNewFromTemplateAsync\(int, string, string, int, VisibleFor\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_CreateNewFromTemplateAsync_System_Int32_System_String_System_String_System_Int32_SuperOffice_WebApi_Data_VisibleFor___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDashboardAgent_CreateNewFromTemplateAsync_System_Int32_System_String_System_String_System_Int32_SuperOffice_WebApi_Data_VisibleFor___SuperOffice_WebApi_RequestOptions_"></a> CreateNewFromTemplateAsync\(int, string, string, int, VisibleFor\[\], RequestOptions\)
 
 Create new tile from another tile used as template
 
@@ -84,21 +84,21 @@ Description of new tile
 
 Selection id of new tile
 
-`visibleFor` [VisibleFor](/en/api/reference/webapi/SuperOffice.WebApi.Data.VisibleFor)\[\]
+`visibleFor` [VisibleFor](SuperOffice.WebApi.Data.VisibleFor.md)\[\]
 
 Who the tile should be visible for
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashboardTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTile)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DashboardTile](SuperOffice.WebApi.Data.DashboardTile.md)\>
 
 The new tile
 
-### DeleteDashboardAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_DeleteDashboardAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDashboardAgent_DeleteDashboardAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteDashboardAsync\(int, RequestOptions\)
 
 Deletes the Dashboard
 
@@ -112,7 +112,7 @@ Task DeleteDashboardAsync(int dashboardId, RequestOptions requestOptions = null)
 
 The identity of the Dashboard
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -120,7 +120,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### DeleteDashboardTileAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_DeleteDashboardTileAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDashboardAgent_DeleteDashboardTileAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteDashboardTileAsync\(int, RequestOptions\)
 
 Deletes the DashboardTile
 
@@ -134,7 +134,7 @@ Task DeleteDashboardTileAsync(int dashboardTileId, RequestOptions requestOptions
 
 The identity of the DashboardTile
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -142,7 +142,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### GetDashboardAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_GetDashboardAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDashboardAgent_GetDashboardAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetDashboardAsync\(int, RequestOptions\)
 
 Gets a specific Dashboard object.
 
@@ -156,17 +156,17 @@ Task<Dashboard> GetDashboardAsync(int dashboardId, RequestOptions requestOptions
 
 The identifier of the Dashboard object
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Dashboard](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dashboard)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Dashboard](SuperOffice.WebApi.Data.Dashboard.md)\>
 
 Dashboard
 
-### GetDashboardTileAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_GetDashboardTileAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDashboardAgent_GetDashboardTileAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetDashboardTileAsync\(int, RequestOptions\)
 
 Gets a specific DashboardTile object.
 
@@ -180,17 +180,17 @@ Task<DashboardTile> GetDashboardTileAsync(int dashboardTileId, RequestOptions re
 
 The identifier of the DashboardTile object
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashboardTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTile)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DashboardTile](SuperOffice.WebApi.Data.DashboardTile.md)\>
 
 DashboardTile
 
-### GetDashboardTilesAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_GetDashboardTilesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDashboardAgent_GetDashboardTilesAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetDashboardTilesAsync\(int\[\], RequestOptions\)
 
 Gets an array of dashboard tiles for the provided ids
 
@@ -204,17 +204,17 @@ Task<DashboardTile[]> GetDashboardTilesAsync(int[] dashboardTileIds, RequestOpti
 
 The ids of the tiles to get
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashboardTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTile)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DashboardTile](SuperOffice.WebApi.Data.DashboardTile.md)\[\]\>
 
 Dashboard tiles
 
-### GetDashboardsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_GetDashboardsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDashboardAgent_GetDashboardsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetDashboardsAsync\(int, RequestOptions\)
 
 Gets all dashboards for an associate
 
@@ -228,17 +228,17 @@ Task<Dashboard[]> GetDashboardsAsync(int associateId, RequestOptions requestOpti
 
 Associate Id
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Dashboard](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dashboard)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Dashboard](SuperOffice.WebApi.Data.Dashboard.md)\[\]\>
 
 All the users dashboards
 
-### GetDataAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_GetDataAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDashboardAgent_GetDataAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetDataAsync\(int, string, RequestOptions\)
 
 Get data for this tile
 
@@ -256,17 +256,17 @@ Tile Id
 
 Replacement restrictions
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TileData](/en/api/reference/webapi/SuperOffice.WebApi.Data.TileData)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TileData](SuperOffice.WebApi.Data.TileData.md)\[\]\>
 
 The data
 
-### GetDataWithSelectionAsync\(int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_GetDataWithSelectionAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDashboardAgent_GetDataWithSelectionAsync_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetDataWithSelectionAsync\(int, int, string, RequestOptions\)
 
 Get data for this tile
 
@@ -288,17 +288,17 @@ Selection Id
 
 Replacement restrictions
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TileData](/en/api/reference/webapi/SuperOffice.WebApi.Data.TileData)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TileData](SuperOffice.WebApi.Data.TileData.md)\[\]\>
 
 The data
 
-### GetStandardDashboardTileFromChartIdAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_GetStandardDashboardTileFromChartIdAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDashboardAgent_GetStandardDashboardTileFromChartIdAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetStandardDashboardTileFromChartIdAsync\(string, RequestOptions\)
 
 Gets the standard tile (not personal tile) corresponding to the given chart id
 
@@ -312,17 +312,17 @@ Task<DashboardTile> GetStandardDashboardTileFromChartIdAsync(string chartId, Req
 
 The ChartId of the wanted chart/tile
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashboardTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTile)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DashboardTile](SuperOffice.WebApi.Data.DashboardTile.md)\>
 
 Standard tile
 
-### SaveDashboardAsync\(Dashboard, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_SaveDashboardAsync_SuperOffice_WebApi_Data_Dashboard_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDashboardAgent_SaveDashboardAsync_SuperOffice_WebApi_Data_Dashboard_SuperOffice_WebApi_RequestOptions_"></a> SaveDashboardAsync\(Dashboard, RequestOptions\)
 
 Updates the existing Dashboard or creates a new Dashboard if the id parameter is 0.
 
@@ -332,21 +332,21 @@ Task<Dashboard> SaveDashboardAsync(Dashboard dashboard, RequestOptions requestOp
 
 #### Parameters
 
-`dashboard` [Dashboard](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dashboard)
+`dashboard` [Dashboard](SuperOffice.WebApi.Data.Dashboard.md)
 
 The Dashboard that is saved.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Dashboard](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dashboard)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Dashboard](SuperOffice.WebApi.Data.Dashboard.md)\>
 
 New or updated Dashboard
 
-### SaveDashboardTileAsync\(DashboardTile, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_SaveDashboardTileAsync_SuperOffice_WebApi_Data_DashboardTile_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDashboardAgent_SaveDashboardTileAsync_SuperOffice_WebApi_Data_DashboardTile_SuperOffice_WebApi_RequestOptions_"></a> SaveDashboardTileAsync\(DashboardTile, RequestOptions\)
 
 Updates the existing DashboardTile or creates a new DashboardTile if the id parameter is 0.
 
@@ -356,21 +356,21 @@ Task<DashboardTile> SaveDashboardTileAsync(DashboardTile dashboardTile, RequestO
 
 #### Parameters
 
-`dashboardTile` [DashboardTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTile)
+`dashboardTile` [DashboardTile](SuperOffice.WebApi.Data.DashboardTile.md)
 
 The DashboardTile that is saved.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DashboardTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTile)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DashboardTile](SuperOffice.WebApi.Data.DashboardTile.md)\>
 
 New or updated DashboardTile
 
-### SetTileAsync\(int, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDashboardAgent_SetTileAsync_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDashboardAgent_SetTileAsync_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> SetTileAsync\(int, int, int, RequestOptions\)
 
 Sets tile in the given dashboard position
 
@@ -392,13 +392,13 @@ Tile Id
 
 Tile position in the dashboard
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Dashboard](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dashboard)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Dashboard](SuperOffice.WebApi.Data.Dashboard.md)\>
 
 The new dashboard is returned after the tile change
 

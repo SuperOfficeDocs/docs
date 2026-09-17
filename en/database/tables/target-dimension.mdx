@@ -1,6 +1,6 @@
 ---
-title: target_dimension table
-description: Defining target dimension
+title: "target_dimension table"
+description: "Defining target dimension"
 generated: true
 content_type: reference
 envir: online
@@ -8,24 +8,24 @@ envir: online
 
 import TargetDimension from "./includes/target-dimension.mdx";
 
-## target\_dimension Table (522)
-
 Defining target dimension
+
+Table number: 523
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |target\_dimension\_id|Primary key|PK|No|
-|entity\_type|Entity type for this set of targets (Sale, Project, Selection, Appointment...)|Enum [TargetEntityType](./enums/targetentitytype.mdx)|Yes|
-|measurement\_unit|What to measure (Amount, Count, Profit...|Enum [TargetMeasurementUnit](./enums/targetmeasurementunit.mdx)|Yes|
-|assignment\_level|What level this dimension can be assigned to (Company, Group, Associate)|Enum [TargetAssignementLevel](./enums/targetassignementlevel.mdx)|Yes|
+|entity\_type|Entity type for this set of targets (Sale, Project, Selection, Appointment...)|Enum [TargetEntityType](./enums/targetentitytype)|Yes|
+|measurement\_unit|What to measure (Amount, Count, Profit...|Enum [TargetMeasurementUnit](./enums/targetmeasurementunit)|Yes|
+|assignment\_level|What level this dimension can be assigned to (Company, Group, Associate)|Enum [TargetAssignementLevel](./enums/targetassignementlevel)|Yes|
 |dimension\_list\_field|List that defines the dimensions for this target matrix (ex: Sale type, source, partner, business, udef or extrafield lists...)|String(255)|Yes|
 |selected\_dimensions|id&apos;s of the selected/wanted dimensions (what sale types or udef list lines that should be target dimensions)|FKArray|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

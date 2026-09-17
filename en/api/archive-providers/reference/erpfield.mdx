@@ -1,15 +1,15 @@
 ---
-title: ErpField
-description: 
+title: "ErpField"
+description: "Archive provider for the list of Erp Fields (among else to list their default values)"
 keywords: ErpField archive provider
 generated: true
 content_type: reference
 envir: onsite, online
 ---
 
-## "ErpField"
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.ErpFieldProvider` inside NetServer's SODatabase assembly.
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.ErpFieldProvider inside NetServer's SODatabase assembly.
+Archive provider for the list of Erp Fields (among else to list their default values)
 
 ## Supported Entities
 | Name | Description |
@@ -19,47 +19,47 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.ErpF
 ## Supported Columns
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
-|getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
-|getNoRows|bool|GetNone: Do not get any rows from the archive|  |
-|Id|stringorPK|Id: Id| x |
+|Access|int|Access: Access| x |
+|ActorTypeErp|string|ActorTypeErp: ActorTypeErp| x |
+|ConnectionId|int|ConnectionId: ConnectionId| x |
+|CrmFieldKey|string|CrmFieldKey: CrmFieldKey| x |
+|DefaultValue|string|DefaultValue: DefaultValue| x |
+|DisplayDescription|string|Description: Description| x |
+|DisplayName|string|ERP field: ERP field| x |
 |ErpConnectionActorTypeId|int|ErpConnectionActorTypeId: ErpConnectionActorTypeId| x |
 |ErpFieldKey|string|ErpFieldKey: ErpFieldKey| x |
-|DisplayName|string|ERP field: ERP field| x |
-|DisplayDescription|string|Description: Description| x |
 |FieldType|int|FieldType: FieldType| x |
-|ListName|string|ListName: ListName| x |
-|DefaultValue|string|DefaultValue: DefaultValue| x |
-|MaxLength|int|MaxLength: MaxLength| x |
-|Access|int|Access: Access| x |
-|HasFirstSyncDefaultValue|int|HasFirstSyncDefaultValue: HasFirstSyncDefaultValue| x |
 |FirstSyncDefaultValue|string|Default value: Default value| x |
-|PromptUser|bool|Ask user: Ask user| x |
+|HasFirstSyncDefaultValue|int|HasFirstSyncDefaultValue: HasFirstSyncDefaultValue| x |
+|Id|stringorPK|Id: Id| x |
+|ListName|string|ListName: ListName| x |
+|ListReference|string|ListReference: ListReference| x |
 |Mandatory|bool|Mandatory: Mandatory| x |
-|CrmFieldKey|string|CrmFieldKey: CrmFieldKey| x |
-|SyncToCrm|int|SyncToCrm: SyncToCrm| x |
-|SyncToErp|int|SyncToErp: SyncToErp| x |
+|MaxLength|int|MaxLength: MaxLength| x |
+|MissingInERP|int|MissingInERP: MissingInERP| x |
+|PromptOrHasDefault|bool|PromptOrHasDefault: PromptOrHasDefault| x |
+|PromptUser|bool|Ask user: Ask user| x |
+|Rank|int|Rank: Rank| x |
 |ShowInGui|int|ShowInGui: ShowInGui| x |
 |ShowInSearch|int|ShowInSearch: ShowInSearch| x |
-|Rank|int|Rank: Rank| x |
-|ListReference|string|ListReference: ListReference| x |
-|MissingInERP|int|MissingInERP: MissingInERP| x |
-|updatedBy|associate|Updated by: The user who last updated the data| x |
-|updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
+|SyncToCrm|int|SyncToCrm: SyncToCrm| x |
+|SyncToErp|int|SyncToErp: SyncToErp| x |
+|getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
+|getNoRows|bool|GetNone: Do not get any rows from the archive|  |
 |registeredBy|associate|Registered by: The user who registered the data| x |
 |registeredDate|date|Registered date: The date/time the data was registered in UTC.| x |
-|ConnectionId|int|ConnectionId: ConnectionId| x |
-|ActorTypeErp|string|ActorTypeErp: ActorTypeErp| x |
-|PromptOrHasDefault|bool|PromptOrHasDefault: PromptOrHasDefault| x |
+|updatedBy|associate|Updated by: The user who last updated the data| x |
+|updatedDate|date|Updated: The date/time the data was last updated in UTC.| x |
 
 ## Sample
 
 ```http!
-GET /api/v1/archive/ErpField?$select=MaxLength,Mandatory
+GET /api/v1/archive/ErpField?$select=Access,DisplayName,ListReference,ShowInGui,updatedDate
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: `IArchiveAgent`.
 

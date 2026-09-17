@@ -1,6 +1,6 @@
-# Interface ISaintAgent {#SuperOffice_WebApi_Agents_ISaintAgent}
+# <a id="SuperOffice_WebApi_Agents_ISaintAgent"></a> Interface ISaintAgent
 
-Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
+Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Administration and maintenance of SAINT counters and statuses
@@ -11,12 +11,12 @@ public interface ISaintAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
+[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
 
-### CreateDefaultSaintConfigurationAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_CreateDefaultSaintConfigurationAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ISaintAgent_CreateDefaultSaintConfigurationAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultSaintConfigurationAsync\(RequestOptions\)
 
 Set default values into a new SaintConfiguration.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -27,17 +27,17 @@ Task<SaintConfiguration> CreateDefaultSaintConfigurationAsync(RequestOptions req
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaintConfiguration](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaintConfiguration)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaintConfiguration](SuperOffice.WebApi.Data.SaintConfiguration.md)\>
 
 A blank SaintConfiguration
 
-### CreateDefaultStatusMonitorAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_CreateDefaultStatusMonitorAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ISaintAgent_CreateDefaultStatusMonitorAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultStatusMonitorAsync\(RequestOptions\)
 
 Set default values into a new StatusMonitor.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -48,17 +48,17 @@ Task<StatusMonitor> CreateDefaultStatusMonitorAsync(RequestOptions requestOption
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StatusMonitor](/en/api/reference/webapi/SuperOffice.WebApi.Data.StatusMonitor)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StatusMonitor](SuperOffice.WebApi.Data.StatusMonitor.md)\>
 
 A blank StatusMonitor
 
-### CreateDefaultStatusMonitorPeriodsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_CreateDefaultStatusMonitorPeriodsAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ISaintAgent_CreateDefaultStatusMonitorPeriodsAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultStatusMonitorPeriodsAsync\(RequestOptions\)
 
 Set default values into a new StatusMonitorPeriods.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -69,17 +69,17 @@ Task<StatusMonitorPeriods> CreateDefaultStatusMonitorPeriodsAsync(RequestOptions
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StatusMonitorPeriods](/en/api/reference/webapi/SuperOffice.WebApi.Data.StatusMonitorPeriods)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StatusMonitorPeriods](SuperOffice.WebApi.Data.StatusMonitorPeriods.md)\>
 
 A blank StatusMonitorPeriods
 
-### GetSaintConfigurationsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_GetSaintConfigurationsAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ISaintAgent_GetSaintConfigurationsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetSaintConfigurationsAsync\(RequestOptions\)
 
 Returns the StatusMonitorPeriods entity.
 
@@ -89,17 +89,17 @@ Task<SaintConfiguration[]> GetSaintConfigurationsAsync(RequestOptions requestOpt
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaintConfiguration](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaintConfiguration)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaintConfiguration](SuperOffice.WebApi.Data.SaintConfiguration.md)\[\]\>
 
 The SaintConfiguration for all entities
 
-### GetStatusMonitorAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_GetStatusMonitorAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ISaintAgent_GetStatusMonitorAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetStatusMonitorAsync\(int, RequestOptions\)
 
 Get a single status monitor based on its identity
 
@@ -113,17 +113,17 @@ Task<StatusMonitor> GetStatusMonitorAsync(int id, RequestOptions requestOptions 
 
 Identity of status monitor
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StatusMonitor](/en/api/reference/webapi/SuperOffice.WebApi.Data.StatusMonitor)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StatusMonitor](SuperOffice.WebApi.Data.StatusMonitor.md)\>
 
 The requested status monitor
 
-### GetStatusMonitorPeriodsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_GetStatusMonitorPeriodsAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ISaintAgent_GetStatusMonitorPeriodsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetStatusMonitorPeriodsAsync\(RequestOptions\)
 
 Returns the StatusMonitorPeriods entity.
 
@@ -133,17 +133,17 @@ Task<StatusMonitorPeriods> GetStatusMonitorPeriodsAsync(RequestOptions requestOp
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StatusMonitorPeriods](/en/api/reference/webapi/SuperOffice.WebApi.Data.StatusMonitorPeriods)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StatusMonitorPeriods](SuperOffice.WebApi.Data.StatusMonitorPeriods.md)\>
 
 The StatusMonitorEntity
 
-### GetStatusMonitorsAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_GetStatusMonitorsAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ISaintAgent_GetStatusMonitorsAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetStatusMonitorsAsync\(int, string, RequestOptions\)
 
 Get all active status monitors for a specified target
 
@@ -161,17 +161,17 @@ Identity of target type(contact identity, project identity etc.)
 
 Type to get status monitors for("contact", "project", etc.)
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StatusMonitor](/en/api/reference/webapi/SuperOffice.WebApi.Data.StatusMonitor)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StatusMonitor](SuperOffice.WebApi.Data.StatusMonitor.md)\[\]\>
 
 Active status monitors
 
-### RegenerateCountersAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_RegenerateCountersAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ISaintAgent_RegenerateCountersAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> RegenerateCountersAsync\(bool, RequestOptions\)
 
 Regenerate the Saint counters - this can take several minutes
 
@@ -185,17 +185,17 @@ Task<BatchTaskInfo> RegenerateCountersAsync(bool runAsBatch, RequestOptions requ
 
 If true, then execute the regeneration as a Batch Task; the service call will return immediately. Otherwise wait until the task completes, may cause a timeout if called as a Web Service
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BatchTaskInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BatchTaskInfo](SuperOffice.WebApi.Data.BatchTaskInfo.md)\>
 
 Information about the batch task, if batch execution was requested. Otherwise null
 
-### RegenerateStatusMonitorAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_RegenerateStatusMonitorAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ISaintAgent_RegenerateStatusMonitorAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> RegenerateStatusMonitorAsync\(int, RequestOptions\)
 
 Regenerate the given status monitor
 
@@ -209,7 +209,7 @@ Task RegenerateStatusMonitorAsync(int statusMonitorId, RequestOptions requestOpt
 
 The id of the statusmonitor to regenerate
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -219,7 +219,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### RegenerateStatusMonitorsAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_RegenerateStatusMonitorsAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ISaintAgent_RegenerateStatusMonitorsAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> RegenerateStatusMonitorsAsync\(bool, RequestOptions\)
 
 Regenerate status monitors
 
@@ -233,17 +233,17 @@ Task<BatchTaskInfo> RegenerateStatusMonitorsAsync(bool runAsBatch, RequestOption
 
 If true, then execute the regeneration as a Batch Task; the service call will return immediately. Otherwise wait until the task completes, may cause a timeout if called as a Web Service
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BatchTaskInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BatchTaskInfo](SuperOffice.WebApi.Data.BatchTaskInfo.md)\>
 
 Information about the batch task, if batch execution was requested. Otherwise null
 
-### SaveSaintConfigurationAsync\(SaintConfiguration, RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_SaveSaintConfigurationAsync_SuperOffice_WebApi_Data_SaintConfiguration_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ISaintAgent_SaveSaintConfigurationAsync_SuperOffice_WebApi_Data_SaintConfiguration_SuperOffice_WebApi_RequestOptions_"></a> SaveSaintConfigurationAsync\(SaintConfiguration, RequestOptions\)
 
 Updates the existing SaintConfiguration or creates a new SaintConfiguration if the id parameter is 0.
 
@@ -253,21 +253,21 @@ Task<SaintConfiguration> SaveSaintConfigurationAsync(SaintConfiguration saintCon
 
 #### Parameters
 
-`saintConfiguration` [SaintConfiguration](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaintConfiguration)
+`saintConfiguration` [SaintConfiguration](SuperOffice.WebApi.Data.SaintConfiguration.md)
 
 The SaintConfiguration that is saved.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaintConfiguration](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaintConfiguration)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaintConfiguration](SuperOffice.WebApi.Data.SaintConfiguration.md)\>
 
 New or updated SaintConfiguration
 
-### SaveStatusMonitorAsync\(StatusMonitor, RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_SaveStatusMonitorAsync_SuperOffice_WebApi_Data_StatusMonitor_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ISaintAgent_SaveStatusMonitorAsync_SuperOffice_WebApi_Data_StatusMonitor_SuperOffice_WebApi_RequestOptions_"></a> SaveStatusMonitorAsync\(StatusMonitor, RequestOptions\)
 
 Updates the existing StatusMonitor or creates a new StatusMonitor if the id parameter is 0.
 
@@ -277,21 +277,21 @@ Task<StatusMonitor> SaveStatusMonitorAsync(StatusMonitor statusMonitor, RequestO
 
 #### Parameters
 
-`statusMonitor` [StatusMonitor](/en/api/reference/webapi/SuperOffice.WebApi.Data.StatusMonitor)
+`statusMonitor` [StatusMonitor](SuperOffice.WebApi.Data.StatusMonitor.md)
 
 The StatusMonitor that is saved.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StatusMonitor](/en/api/reference/webapi/SuperOffice.WebApi.Data.StatusMonitor)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StatusMonitor](SuperOffice.WebApi.Data.StatusMonitor.md)\>
 
 New or updated StatusMonitor
 
-### SaveStatusMonitorPeriodsAsync\(StatusMonitorPeriods, RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_SaveStatusMonitorPeriodsAsync_SuperOffice_WebApi_Data_StatusMonitorPeriods_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ISaintAgent_SaveStatusMonitorPeriodsAsync_SuperOffice_WebApi_Data_StatusMonitorPeriods_SuperOffice_WebApi_RequestOptions_"></a> SaveStatusMonitorPeriodsAsync\(StatusMonitorPeriods, RequestOptions\)
 
 Updates the existing StatusMonitorPeriods or creates a new StatusMonitorPeriods if the id parameter is 0.
 
@@ -301,21 +301,21 @@ Task<StatusMonitorPeriods> SaveStatusMonitorPeriodsAsync(StatusMonitorPeriods st
 
 #### Parameters
 
-`statusMonitorPeriods` [StatusMonitorPeriods](/en/api/reference/webapi/SuperOffice.WebApi.Data.StatusMonitorPeriods)
+`statusMonitorPeriods` [StatusMonitorPeriods](SuperOffice.WebApi.Data.StatusMonitorPeriods.md)
 
 The StatusMonitorPeriods that is saved.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StatusMonitorPeriods](/en/api/reference/webapi/SuperOffice.WebApi.Data.StatusMonitorPeriods)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StatusMonitorPeriods](SuperOffice.WebApi.Data.StatusMonitorPeriods.md)\>
 
 New or updated StatusMonitorPeriods
 
-### SetRankOnStatusMonitorsAsync\(string, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_ISaintAgent_SetRankOnStatusMonitorsAsync_System_String_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_ISaintAgent_SetRankOnStatusMonitorsAsync_System_String_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> SetRankOnStatusMonitorsAsync\(string, int\[\], RequestOptions\)
 
 Set rank order on status monitors
 
@@ -333,7 +333,7 @@ Type of status monitors to reorder ("contact", "project", etc.)
 
 The ids of the items in the order you want
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 

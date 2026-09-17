@@ -1,6 +1,6 @@
 ---
-title: QuoteApprReasonGroupLink table
-description: User group link table for QuoteApprReason, for MDO item hiding
+title: "QuoteApprReasonGroupLink table"
+description: "User group link table for QuoteApprReason, for MDO item hiding"
 generated: true
 content_type: reference
 envir: online
@@ -8,21 +8,21 @@ envir: online
 
 import Quoteapprreasongrouplink from "./includes/quoteapprreasongrouplink.mdx";
 
-## QuoteApprReasonGroupLink Table (542)
-
 User group link table for QuoteApprReason, for MDO item hiding
+
+Table number: 543
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |quoteapprreasongrouplink\_id|Primary key|PK|No|
-|quoteapprreason\_id|Link to QuoteApprReason list table|FK [QuoteApprReason](./quoteapprreason.mdx)|No|
-|group\_id|Link to Group table|FK [UserGroup](./usergroup.mdx)|No|
+|quoteapprreason\_id|Link to QuoteApprReason list table|FK [QuoteApprReason](./quoteapprreason)|No|
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

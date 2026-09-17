@@ -1,6 +1,6 @@
 ---
-title: reply_template_attachment table
-description: This table is used to connect attachments to reply templates (many-to-many).
+title: "reply_template_attachment table"
+description: "This table is used to connect attachments to reply templates (many-to-many)."
 generated: true
 content_type: reference
 envir: online
@@ -8,17 +8,17 @@ envir: online
 
 import ReplyTemplateAttachment from "./includes/reply-template-attachment.mdx";
 
-## reply\_template\_attachment Table (278)
-
 This table is used to connect attachments to reply templates (many-to-many).
+
+Table number: 278
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|entry\_id|The id of the reply_template this entry is connected to.|FK [reply_template](./reply-template.mdx)|No|
-|attachment\_id|The id of the attachment this entry is connected to.|FK [attachment](./attachment.mdx)|No|
+|entry\_id|The id of the reply_template this entry is connected to.|FK [reply_template](./reply-template)|No|
+|attachment\_id|The id of the attachment this entry is connected to.|FK [attachment](./attachment)|No|
 
 
 ![reply_template_attachment table relationship diagram](/media/loc/en/database/tables/reply_template_attachment.png)

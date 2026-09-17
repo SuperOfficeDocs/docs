@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Agents_IAgentBase"></a> Interface IAgentBase
 
-Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
+Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Base interface for interacting with SuperOffice WebApi agents.
@@ -25,7 +25,7 @@ WebApiOptions Configuration { get; }
 
 #### Property Value
 
- [WebApiOptions](/en/api/reference/webapi/SuperOffice.WebApi.WebApiOptions)
+ [WebApiOptions](SuperOffice.WebApi.WebApiOptions.md)
 
 ### <a id="SuperOffice_WebApi_Agents_IAgentBase_HasRunningRequest"></a> HasRunningRequest
 
@@ -49,7 +49,7 @@ IProgressListener ProgressListener { get; set; }
 
 #### Property Value
 
- [IProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.IProgressListener)
+ [IProgressListener](SuperOffice.WebApi.IProgressListener.md)
 
 ### <a id="SuperOffice_WebApi_Agents_IAgentBase_UploadProgressListener"></a> UploadProgressListener
 
@@ -61,7 +61,7 @@ IProgressListener UploadProgressListener { get; set; }
 
 #### Property Value
 
- [IProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.IProgressListener)
+ [IProgressListener](SuperOffice.WebApi.IProgressListener.md)
 
 ## Methods
 

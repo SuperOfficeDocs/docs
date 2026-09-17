@@ -1,6 +1,6 @@
 ---
-title: AssociateHistory table
-description: Historical information about associates that have been deleted. Most references are NOT declared as foreign keys; this is a historical table that should not be updated when further changes occur in the database
+title: "AssociateHistory table"
+description: "Historical information about associates that have been deleted. Most references are NOT declared as foreign keys; this is a historical table that should not be updated when further changes occur in the database"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Associatehistory from "./includes/associatehistory.mdx";
 
-## AssociateHistory Table (539)
-
 Historical information about associates that have been deleted. Most references are NOT declared as foreign keys; this is a historical table that should not be updated when further changes occur in the database
+
+Table number: 540
 
 ## Fields
 
@@ -20,7 +20,7 @@ Historical information about associates that have been deleted. Most references 
 |associateId|The original primary key of the deleted associate|Int|Yes|
 |groupId|The group id|Int|Yes|
 |personId|The person id|Int|Yes|
-|type|Associate type|Enum [AssociateType](./enums/associatetype.mdx)|Yes|
+|type|Associate type|Enum [AssociateType](./enums/associatetype)|Yes|
 |originalRegistered|Registered when|UtcDateTime|Yes|
 |locationAddress|Address of location, if this is a resource that is a location|String(239)|Yes|
 |ejUserId|The ejuser reference, if any|Int|Yes|
@@ -30,7 +30,7 @@ Historical information about associates that have been deleted. Most references 
 |lastname|Last name|String(99)|Yes|
 |contactId|The original contact_id|Int|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 
 
 ![AssociateHistory table relationship diagram](/media/loc/en/database/tables/AssociateHistory.png)

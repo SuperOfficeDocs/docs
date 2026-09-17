@@ -1,16 +1,26 @@
 ---
-title: CustomObjectDynamicSelectionV2
-description: CustomObject selection archive with OR-able selection groups. Each group is represented with the CustomObjectSelectionDynamicProviderSingleCriteriaGroup.
+title: "CustomObjectDynamicSelectionV2"
+description: "CustomObject selection archive with OR-able selection groups. Each group is represented with the `CustomObjectSelectionDynamicProviderSingleCriteriaGroup`."
 keywords: CustomObjectDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
 envir: onsite, online
 ---
 
-## "CustomObjectDynamicSelectionV2"
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Archive.CustomObjectSelectionDynamicProviderV2` inside NetServer's SODatabase assembly.
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.CustomObjectSelectionDynamicProviderV2 inside NetServer's SODatabase assembly.
+CustomObject selection archive with OR-able selection groups. Each group is represented with the `CustomObjectSelectionDynamicProviderSingleCriteriaGroup`.
 
-CustomObject selection archive with OR-able selection groups. Each group is represented with the [CustomObjectSelectionDynamicProviderSingleCriteriaGroup](./customobjectdynamicselectionsinglecriteriagroup).
 
-There is no generated sample for this provider.
+## Sample
+
+```http!
+GET /api/v1/archive/CustomObjectDynamicSelectionV2:y_car?$select=x_name
+Authorization: Basic dGplMDpUamUw
+Accept: application/json; charset=utf-8
+Accept-Language: sv
+
+```
+
+See also: `IArchiveAgent`.
+

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_SaveUntrustedCredentialsRequest"></a> Class User\_SaveUntrustedCredentialsRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_SaveUntrustedCredentialsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_SaveUntrustedCredentialsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_SaveUntrustedCredentialsRequest)
+[User\_SaveUntrustedCredentialsRequest](SuperOffice.WebApi.Data.User\_SaveUntrustedCredentialsRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public UntrustedCredentials Credentials { get; set; }
 
 #### Property Value
 
- [UntrustedCredentials](/en/api/reference/webapi/SuperOffice.WebApi.Data.UntrustedCredentials)
+ [UntrustedCredentials](SuperOffice.WebApi.Data.UntrustedCredentials.md)
 
 ### <a id="SuperOffice_WebApi_Data_User_SaveUntrustedCredentialsRequest_Type"></a> Type
 

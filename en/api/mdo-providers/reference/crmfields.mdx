@@ -1,22 +1,20 @@
 ---
-title: crmfields
+title: "crmfields"
 keywords: mdoprovider mdo provider crmfields
-description: 
+description: "Get the list of Crm fields relevant to one particular Erp field, for field mapping."
 generated: true
 content_type: reference
 envir: online
 ---
 
-## "crmfields" MDO List
+Get the list of Crm fields relevant to one particular Erp field, for field mapping.
 
+Relevant fields are those that come from the same connection/actor type as the
+target ERP field, and have matching types. Except - fields already mapped, as well
+as more complex rules for list fields.
 
-
-
-Implemented by the CrmFieldMdoProvider class.
+Implemented by the `SuperOffice.ErpSync.CrmFieldMdoProvider` class.
 The name of the MDO list is 'crmfields'.
-
-
-
 
 ## Sample Request
 
@@ -46,10 +44,10 @@ foreach (var item in listProvider.RootItems) {
 
 ## Related MDO Lists
 
-* "crmfieldsheadings"
-* "crmfieldsheadingswithallitem"
-* "crmfieldsheadingswithallitemwithnoselection"
-* "crmfieldsheadingswithnoselection"
-* "crmfieldswithallitem"
-* "crmfieldswithallitemwithnoselection"
-* "crmfieldswithnoselection"
+* `crmfieldsheadings`
+* `crmfieldsheadingswithallitem`
+* `crmfieldsheadingswithallitemwithnoselection`
+* `crmfieldsheadingswithnoselection`
+* `crmfieldswithallitem`
+* `crmfieldswithallitemwithnoselection`
+* `crmfieldswithnoselection`

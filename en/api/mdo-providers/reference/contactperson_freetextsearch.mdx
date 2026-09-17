@@ -1,13 +1,12 @@
 ---
-title: contactperson_freetextsearch
+title: "contactperson_freetextsearch"
 keywords: mdoprovider mdo provider contactperson_freetextsearch
-description: Provider for selecting a Contact - with person search. Does keyword matching and scoring across multiple string fields. Checks name, department, soundex fields.
+description: "Provider for selecting a Contact - with person search. Does keyword matching and scoring across multiple string fields. Checks name, department, soundex fields."
 generated: true
 content_type: reference
 envir: online
 ---
 
-## "contactperson_freetextsearch" MDO List
 Provider for selecting a Contact - with person search.
 Does keyword matching and scoring across multiple
 string fields. Checks name, department, soundex fields.
@@ -18,12 +17,14 @@ Contacts with lots of activity or lots of recent activity (according to the SAIN
 preferred.
 
 
+
 Returns contact items only: Id = ExtraInfo = contact_id, Type = "Contact", StyleHint = "stop"
+
 
 
 Stopped contacts are marked with stylehint = "stop" (but item.deleted = false)
 
-Implemented by the ContactPersonListFreetextSearchProvider class.
+Implemented by the `SuperOffice.CRM.Lists.ContactPersonListFreetextSearchProvider` class.
 The name of the MDO list is 'contactperson_freetextsearch'.
 
 ## Additional Attributes
@@ -31,7 +32,6 @@ The name of the MDO list is 'contactperson_freetextsearch'.
 | Description | Name | Example Value |
 |-----|-----|------|
 |Skip retired employees| skipRetired|False|
-
 
 
 
@@ -84,10 +84,10 @@ foreach (var item in listProvider.RootItems) {
 
 ## Related MDO Lists
 
-* "contactperson_freetextsearchheadings"
-* "contactperson_freetextsearchheadingswithallitem"
-* "contactperson_freetextsearchheadingswithallitemwithnoselection"
-* "contactperson_freetextsearchheadingswithnoselection"
-* "contactperson_freetextsearchwithallitem"
-* "contactperson_freetextsearchwithallitemwithnoselection"
-* "contactperson_freetextsearchwithnoselection"
+* `contactperson_freetextsearchheadings`
+* `contactperson_freetextsearchheadingswithallitem`
+* `contactperson_freetextsearchheadingswithallitemwithnoselection`
+* `contactperson_freetextsearchheadingswithnoselection`
+* `contactperson_freetextsearchwithallitem`
+* `contactperson_freetextsearchwithallitemwithnoselection`
+* `contactperson_freetextsearchwithnoselection`

@@ -1,6 +1,6 @@
 ---
-title: ms_substitute table
-description: Regexp for extracting info from emails when they enter they system
+title: "ms_substitute table"
+description: "Regexp for extracting info from emails when they enter they system"
 generated: true
 content_type: reference
 envir: online
@@ -8,16 +8,16 @@ envir: online
 
 import MsSubstitute from "./includes/ms-substitute.mdx";
 
-## ms\_substitute Table (313)
-
 Regexp for extracting info from emails when they enter they system
+
+Table number: 313
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|ms\_filter\_id||FK [ms_filter](./ms-filter.mdx)|No|
+|ms\_filter\_id||FK [ms_filter](./ms-filter)|No|
 |parser\_name|The name of the variable as used in the parser.|String(255)|Yes|
 |the\_regexp|The regular expression searched for.|String(255)|Yes|
 |subst\_type|Enum indicating the target domain for this regexp (customer connection, parser, etc).|subst_type|Yes|

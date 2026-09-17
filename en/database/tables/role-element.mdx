@@ -1,6 +1,6 @@
 ---
-title: role_element table
-description: Profiles associated with a role
+title: "role_element table"
+description: "Profiles associated with a role"
 generated: true
 content_type: reference
 envir: online
@@ -8,18 +8,18 @@ envir: online
 
 import RoleElement from "./includes/role-element.mdx";
 
-## role\_element Table (326)
-
 Profiles associated with a role
+
+Table number: 326
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|role|The id of the group. Deprecated.|FK [ej_role](./ej-role.mdx)|No|
-|element\_profile|The id of the element_profile.|FK [element_profile](./element-profile.mdx)|No|
-|crm\_role|Link to Role|FK [Role](./role.mdx)|Yes|
+|role|The id of the group. Deprecated.|FK [ej_role](./ej-role)|No|
+|element\_profile|The id of the element_profile.|FK [element_profile](./element-profile)|No|
+|crm\_role|Link to Role|FK [Role](./role)|Yes|
 
 
 ![role_element table relationship diagram](/media/loc/en/database/tables/role_element.png)

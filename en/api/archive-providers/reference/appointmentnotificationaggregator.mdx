@@ -1,60 +1,58 @@
 ---
-title: AppointmentNotificationAggregator
-description: 
+title: "AppointmentNotificationAggregator"
+description: ""
 keywords: AppointmentNotificationAggregator archive provider
 generated: true
 content_type: reference
 envir: onsite, online
 ---
 
-## "AppointmentNotificationAggregator"
-
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.AppointmentNotificationAggregatorProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.AppointmentNotificationAggregatorProvider` inside NetServer's SODatabase assembly.
 
 ## Supported Entities
 | Name | Description |
 | ---- | ----- |
-|"appointmentNew"|Appointment|
-|"appointmentUpdated"|Appointment|
-|"appointmentCancelled"|Appointment|
 |"appointmentAccepted"|Appointment|
+|"appointmentCancelled"|Appointment|
+|"appointmentNew"|Appointment|
 |"appointmentRejected"|Appointment|
 |"appointmentRejectedByAssociate"|Appointment|
+|"appointmentUpdated"|Appointment|
 
 ## Supported Columns
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|associateId|associate|Associate: SR\_SINGULAR\_ASSOCIATE\_TOOLTIP| x |
+|endDateTime| *None* |!!endDateTime|  |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
-|id| *None* |!!id| x |
-|associateId|associate|Associate: SR\_SINGULAR\_ASSOCIATE\_TOOLTIP| x |
-|originatorFullName| *None* |!!originatorFullName|  |
-|notifyDateTime|datetime|!!notifyDateTime| x |
-|title| *None* |!!title|  |
-|updateType| *None* |!!updateType|  |
-|startDateTime| *None* |!!startDateTime| x |
-|endDateTime| *None* |!!endDateTime|  |
-|location| *None* |!!location|  |
-|isRecurring| *None* |!!isRecurring|  |
-|isEmailInvitation| *None* |!!isEmailInvitation|  |
-|invitedPersonId| *None* |!!invitedPersonId| x |
-|isSeen| *None* |!!isSeen|  |
 |hasConflict| *None* |!!hasConflict|  |
+|id| *None* |!!id| x |
+|invitedPersonId| *None* |!!invitedPersonId| x |
+|isAssignment| *None* |!!isAssignment|  |
+|isEmailInvitation| *None* |!!isEmailInvitation|  |
+|isFree| *None* |!!isFree: bool| x |
+|isRecurring| *None* |!!isRecurring|  |
+|isSeen| *None* |!!isSeen|  |
+|isSystemUserAssignment| *None* |!!isSystemUserAssignment: bool| x |
+|location| *None* |!!location|  |
+|notifyDateTime|datetime|!!notifyDateTime| x |
+|originatorFullName| *None* |!!originatorFullName|  |
 |recurrencePattern| *None* |!!recurrencePattern| x |
 |rejectReason| *None* |!!rejectReason| x |
-|isAssignment| *None* |!!isAssignment|  |
-|isFree| *None* |!!isFree: bool| x |
-|isSystemUserAssignment| *None* |!!isSystemUserAssignment: bool| x |
+|startDateTime| *None* |!!startDateTime| x |
+|title| *None* |!!title|  |
+|updateType| *None* |!!updateType|  |
 
 ## Sample
 
 ```http!
-GET /api/v1/archive/AppointmentNotificationAggregator?$select=title,updateType,location
+GET /api/v1/archive/AppointmentNotificationAggregator?$select=associateId,id,invitedPersonId,notifyDateTime,startDateTime
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: `IArchiveAgent`.
 

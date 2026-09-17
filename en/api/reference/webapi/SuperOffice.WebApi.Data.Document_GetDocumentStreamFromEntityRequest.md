@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_GetDocumentStreamFromEntityRequest"></a> Class Document\_GetDocumentStreamFromEntityRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_GetDocumentStreamFromEntityRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_GetDocumentStreamFromEntityRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_GetDocumentStreamFromEntityRequest)
+[Document\_GetDocumentStreamFromEntityRequest](SuperOffice.WebApi.Data.Document\_GetDocumentStreamFromEntityRequest.md)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public DocumentEntity DocumentEntity { get; set; }
 
 #### Property Value
 
- [DocumentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity)
+ [DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)
 

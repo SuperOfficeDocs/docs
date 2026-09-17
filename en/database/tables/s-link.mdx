@@ -1,6 +1,6 @@
 ---
-title: s_link table
-description: Links in messages to measure success rate of a campaign.
+title: "s_link table"
+description: "Links in messages to measure success rate of a campaign."
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import SLink from "./includes/s-link.mdx";
 
-## s\_link Table (336)
-
 Links in messages to measure success rate of a campaign.
+
+Table number: 336
 
 ## Fields
 
@@ -25,40 +25,40 @@ Links in messages to measure success rate of a campaign.
 |extra\_field|The name of the extra field to set if the customer clicks a link. empty if no extra field|String(255)|Yes|
 |value|The value of the extra field to set if the customer clicks a link.|String(255)|Yes|
 |folder\_id|The folder which this link belongs to. -1 indicates that the link is on the root|Int|No|
-|script\_id|The ejScript which will be run when the link is clicked. -1 means no script is run|FK [ejscript](./ejscript.mdx)|No|
+|script\_id|The ejScript which will be run when the link is clicked. -1 means no script is run|FK [ejscript](./ejscript)|No|
 |ticket\_title|The title on the ticket if the clicks results in creating a request.|String(255)|Yes|
-|ticket\_category|The id of the category a ticket is in.|FK [ej_category](./ej-category.mdx)|No|
-|ticket\_priority|The reference to the ticket_priority table.|FK [ticket_priority](./ticket-priority.mdx)|No|
-|ticket\_owned\_by|The id of the user who owns the ticket. 1 (system user) if the ticket is unassigned.|FK [ejuser](./ejuser.mdx)|No|
-|remove\_from\_selection|The id of the selection that the customer shall be removed from|FK [ejselection](./ejselection.mdx)|No|
-|add\_to\_selection|The id of the selection that the customer shall be added to|FK [ejselection](./ejselection.mdx)|No|
+|ticket\_category|The id of the category a ticket is in.|FK [ej_category](./ej-category)|No|
+|ticket\_priority|The reference to the ticket_priority table.|FK [ticket_priority](./ticket-priority)|No|
+|ticket\_owned\_by|The id of the user who owns the ticket. 1 (system user) if the ticket is unassigned.|FK [ejuser](./ejuser)|No|
+|remove\_from\_selection|The id of the selection that the customer shall be removed from|FK [ejselection](./ejselection)|No|
+|add\_to\_selection|The id of the selection that the customer shall be added to|FK [ejselection](./ejselection)|No|
 |template\_text|Text to print when link is clicked.|Clob|Yes|
-|action\_flags|Bitmask defining what action should be taken|Enum [ShipmentLinkAction](./enums/shipmentlinkaction.mdx)|Yes|
-|add\_contact\_interest|Contact interest to add to recipient person|FK [ContInt](./contint.mdx)|Yes|
-|remove\_contact\_interest|Person interest to remove from recipient person|FK [ContInt](./contint.mdx)|Yes|
-|add\_person\_interest|Person interest to add to recipient person|FK [PersInt](./persint.mdx)|Yes|
-|remove\_person\_interest|Person interest to remove from recipient person|FK [PersInt](./persint.mdx)|Yes|
-|add\_contact\_selection|Static contact selection to add person to|FK [selection](./selection.mdx)|Yes|
-|remove\_contact\_selection|Static contact selection to remove person from|FK [selection](./selection.mdx)|Yes|
-|add\_project|Project to add person to, as member|FK [project](./project.mdx)|Yes|
-|remove\_project|Project to remove person from, as member|FK [project](./project.mdx)|Yes|
+|action\_flags|Bitmask defining what action should be taken|Enum [ShipmentLinkAction](./enums/shipmentlinkaction)|Yes|
+|add\_contact\_interest|Contact interest to add to recipient person|FK [ContInt](./contint)|Yes|
+|remove\_contact\_interest|Person interest to remove from recipient person|FK [ContInt](./contint)|Yes|
+|add\_person\_interest|Person interest to add to recipient person|FK [PersInt](./persint)|Yes|
+|remove\_person\_interest|Person interest to remove from recipient person|FK [PersInt](./persint)|Yes|
+|add\_contact\_selection|Static contact selection to add person to|FK [selection](./selection)|Yes|
+|remove\_contact\_selection|Static contact selection to remove person from|FK [selection](./selection)|Yes|
+|add\_project|Project to add person to, as member|FK [project](./project)|Yes|
+|remove\_project|Project to remove person from, as member|FK [project](./project)|Yes|
 |task\_text|Text of task to be created|String(2047)|Yes|
-|task\_idx|Task type of new task|FK [Task](./task.mdx)|Yes|
-|task\_flags|Flags that control how the task is created|Enum [ShipmentLinkTaskFlags](./enums/shipmentlinktaskflags.mdx)|Yes|
-|task\_associate\_id|Associate whose diary should receive the task or assignment (unless AssignToOurContact is specified)|FK [associate](./associate.mdx)|Yes|
-|task\_creating\_associate\_id|Associate who should stand as creator of task; also works as fallback if an assigned task is rejected. Usually the associate who ordered the shipment|FK [associate](./associate.mdx)|Yes|
-|task\_project|Project to connect task to, can be 0|FK [project](./project.mdx)|Yes|
+|task\_idx|Task type of new task|FK [Task](./task)|Yes|
+|task\_flags|Flags that control how the task is created|Enum [ShipmentLinkTaskFlags](./enums/shipmentlinktaskflags)|Yes|
+|task\_associate\_id|Associate whose diary should receive the task or assignment (unless AssignToOurContact is specified)|FK [associate](./associate)|Yes|
+|task\_creating\_associate\_id|Associate who should stand as creator of task; also works as fallback if an assigned task is rejected. Usually the associate who ordered the shipment|FK [associate](./associate)|Yes|
+|task\_project|Project to connect task to, can be 0|FK [project](./project)|Yes|
 |task\_start|Start time of task, unless UseNextAvailableTime is specified|DateTime|Yes|
 |task\_duration|Task duration in minutes|Int|Yes|
 |registered|Registered when|UtcDateTime|Yes|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|Yes|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|Yes|
 |updated|Last updated when|UtcDateTime|Yes|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|Yes|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|Yes|
 |updatedCount|Number of updates made to this record|UShort|Yes|
-|local\_link|If this references a shipment message, then this is a local link belonging to that message|FK [s_message](./s-message.mdx)|Yes|
-|redirect\_kind|Enum defining the redirect kind (show text, url, etc) of the link|Enum [ShipmentLinkRedirectKind](./enums/shipmentlinkredirectkind.mdx)|Yes|
+|local\_link|If this references a shipment message, then this is a local link belonging to that message|FK [s_message](./s-message)|Yes|
+|redirect\_kind|Enum defining the redirect kind (show text, url, etc) of the link|Enum [ShipmentLinkRedirectKind](./enums/shipmentlinkredirectkind)|Yes|
 |link\_parameters|Contains parameters that will be added to the link when it is used|Clob|Yes|
-|form\_id|Relation to the form this link redirects to|FK [form](./form.mdx)|Yes|
+|form\_id|Relation to the form this link redirects to|FK [form](./form)|Yes|
 |form\_parameters|Contains url parameters that will be added when link is inserted in message|String(4000)|Yes|
 
 

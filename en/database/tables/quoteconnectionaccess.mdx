@@ -1,6 +1,6 @@
 ---
-title: QuoteConnectionAccess table
-description: Access control for Quote Connections
+title: "QuoteConnectionAccess table"
+description: "Access control for Quote Connections"
 generated: true
 content_type: reference
 envir: online
@@ -8,22 +8,22 @@ envir: online
 
 import Quoteconnectionaccess from "./includes/quoteconnectionaccess.mdx";
 
-## QuoteConnectionAccess Table (27)
-
 Access control for Quote Connections
+
+Table number: 27
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |quoteconnectionaccess\_id|Primary key|PK|No|
-|QuoteConnectionId|Link to quote connection we&apos;re granting access for|FK [QuoteConnection](./quoteconnection.mdx)|No|
-|AssociateId|If set, then this row grants access for a particular associate|FK [associate](./associate.mdx)|Yes|
-|UserGroupId|If set, then this row grants access for a particular group of users|FK [UserGroup](./usergroup.mdx)|Yes|
+|QuoteConnectionId|Link to quote connection we&apos;re granting access for|FK [QuoteConnection](./quoteconnection)|No|
+|AssociateId|If set, then this row grants access for a particular associate|FK [associate](./associate)|Yes|
+|UserGroupId|If set, then this row grants access for a particular group of users|FK [UserGroup](./usergroup)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

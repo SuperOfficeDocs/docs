@@ -1,6 +1,6 @@
 ---
-title: NewsFeedItemCta table
-description: List of Calls-to-Action buttons to attach to a given news item. One item may have multiple CTAs (e.g. Approve + Reject).
+title: "NewsFeedItemCta table"
+description: "List of Calls-to-Action buttons to attach to a given news item. One item may have multiple CTAs (e.g. Approve + Reject)."
 generated: true
 content_type: reference
 envir: online
@@ -8,21 +8,21 @@ envir: online
 
 import Newsfeeditemcta from "./includes/newsfeeditemcta.mdx";
 
-## NewsFeedItemCta Table (508)
-
 List of Calls-to-Action buttons to attach to a given news item. One item may have multiple CTAs (e.g. Approve + Reject).
+
+Table number: 509
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |newsfeeditemcta\_id|Primary key|PK|No|
-|newsfeeditem\_id|Foreign key to NewsFeedItem that this description belongs to.|FK [NewsFeedItem](./newsfeeditem.mdx)|No|
+|newsfeeditem\_id|Foreign key to NewsFeedItem that this description belongs to.|FK [NewsFeedItem](./newsfeeditem)|No|
 |SortOrder|Sort order for the CTA buttons. CTAs with lower sort order should be rendered first.|Int|No|
 |Title|The title of the CTA button. E.g. &apos;Approve&apos;, &apos;Reject&apos;, &apos;View details&apos;. Multi-language string supported: &apos;US:&quot;english&quot;;NO:&quot;norsk&quot;&apos;.|String(400)|No|
 |Identifier|An identifier for the CTA, which will be sent back to the application when the user clicks the CTA button. E.g. &apos;approve_button/234&apos;, &apos;reject/53fw1&apos;, &apos;5235faq143=&apos;. Where to route is determined by the ApplicationId on the NewsFeedItem|String(1000)|No|
-|CtaType|The type of the CTA, which determines how the CTA button renders. Primary/Secondary/Link|Enum [CtaType](./enums/ctatype.mdx)|No|
-|CtaFlavor|The flavor of the CTA, which determines the style/color/icon the CTA button renders with. Info/Warning/Error/Accept/Reject|Enum [CtaFlavor](./enums/ctaflavor.mdx)|No|
+|CtaType|The type of the CTA, which determines how the CTA button renders. Primary/Secondary/Link|Enum [CtaType](./enums/ctatype)|No|
+|CtaFlavor|The flavor of the CTA, which determines the style/color/icon the CTA button renders with. Info/Warning/Error/Accept/Reject|Enum [CtaFlavor](./enums/ctaflavor)|No|
 
 
 ![NewsFeedItemCta table relationship diagram](/media/loc/en/database/tables/NewsFeedItemCta.png)

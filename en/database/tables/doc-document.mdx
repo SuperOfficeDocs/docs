@@ -1,6 +1,6 @@
 ---
-title: doc_document table
-description: This table contains documents.
+title: "doc_document table"
+description: "This table contains documents."
 generated: true
 content_type: reference
 envir: online
@@ -8,22 +8,22 @@ envir: online
 
 import DocDocument from "./includes/doc-document.mdx";
 
-## doc\_document Table (280)
-
 This table contains documents.
+
+Table number: 280
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|folder\_id|The id of the document folder this entry is located in.|FK [doc_folder](./doc-folder.mdx)|No|
-|attachment\_id|The attachment.id for the attachment associated with this document.|FK [attachment](./attachment.mdx)|No|
+|folder\_id|The id of the document folder this entry is located in.|FK [doc_folder](./doc-folder)|No|
+|attachment\_id|The attachment.id for the attachment associated with this document.|FK [attachment](./attachment)|No|
 |title|The title for the document|String(255)|No|
 |created\_at|When the document was created|DateTime|Yes|
-|created\_by|Who created the document|FK [ejuser](./ejuser.mdx)|No|
+|created\_by|Who created the document|FK [ejuser](./ejuser)|No|
 |last\_changed|When the document last was changed|DateTime|Yes|
-|changed\_by|Who last changed the document|FK [ejuser](./ejuser.mdx)|Yes|
+|changed\_by|Who last changed the document|FK [ejuser](./ejuser)|Yes|
 |status|The status of the document|status|Yes|
 |access\_level|The access level of the document|access_level|Yes|
 |description|A descriptive text for the document|Clob|Yes|

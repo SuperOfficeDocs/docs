@@ -1,6 +1,6 @@
 ---
-title: s_picture_entry table
-description: This table describes each picture in the database
+title: "s_picture_entry table"
+description: "This table describes each picture in the database"
 generated: true
 content_type: reference
 envir: online
@@ -8,25 +8,25 @@ envir: online
 
 import SPictureEntry from "./includes/s-picture-entry.mdx";
 
-## s\_picture\_entry Table (340)
-
 This table describes each picture in the database
+
+Table number: 340
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|Primary key|PK|No|
-|attachment\_id|The id of the attachment in the attachment table|FK [attachment](./attachment.mdx)|Yes|
+|attachment\_id|The id of the attachment in the attachment table|FK [attachment](./attachment)|Yes|
 |description|A description of the picture|String(255)|Yes|
 |folder\_id|The folder which this picture belongs to. -1 indicates that the picture is on the root|Int|No|
 |flags|Various flags for this picture|UInt|Yes|
 |status|Indicates the status of the picture. 0 = ok, 1 = deleted|Short|No|
 |hits|Number of hits on this image|Int|Yes|
 |registered|Registered when|UtcDateTime|Yes|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|Yes|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|Yes|
 |updated|Last updated when|UtcDateTime|Yes|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|Yes|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|Yes|
 |updatedCount|Number of updates made to this record|UShort|Yes|
 
 

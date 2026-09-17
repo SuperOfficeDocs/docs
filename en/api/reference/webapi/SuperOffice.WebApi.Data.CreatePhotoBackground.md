@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CreatePhotoBackground"></a> Class CreatePhotoBackground
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for CreatePhotoBackground.
@@ -13,7 +13,7 @@ public class CreatePhotoBackground
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CreatePhotoBackground](/en/api/reference/webapi/SuperOffice.WebApi.Data.CreatePhotoBackground)
+[CreatePhotoBackground](SuperOffice.WebApi.Data.CreatePhotoBackground.md)
 
 #### Inherited Members
 
@@ -37,5 +37,5 @@ public CreatePhotoBackground()
 
 ## See Also
 
-[AIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AIAgent)
+[AIAgent](SuperOffice.WebApi.Agents.AIAgent.md)
 

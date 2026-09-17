@@ -1,20 +1,20 @@
 ---
-title: ticket
+title: "ticket"
 keywords: mdoprovider mdo provider ticket
-description: Provider for selecting a ticket. Supported additionalInfo - nameformat=includePersonAndCompany or nameformat=includeTicketId indicates how to format item name. If not specified, includePersonAndCompany is used.
+description: "Provider for selecting a ticket. Supported additionalInfo: nameformat=includePersonAndCompany or nameformat=includeTicketId indicates how to format item name. If not specified, includePersonAndCompany is used."
 generated: true
 content_type: reference
 envir: online
 ---
 
-## "ticket" MDO List
 Provider for selecting a ticket.
 Supported additionalInfo:
 nameformat=includePersonAndCompany or nameformat=includeTicketId indicates how to format item name. If not specified, includePersonAndCompany is used.
 
-Sentry rights are honoured; if you do not have Read acces the ticket will not be listed here.
+Sentry rights are honoured; if you do not have Read access the ticket will not be listed here. The one exception is an explicitly
+requested history id (resolve-by-id of a stored value), which is listed as a masked "&lt;id&gt; - Access is denied" placeholder.
 
-Implemented by the TicketListProvider class.
+Implemented by the `SuperOffice.CRM.Lists.TicketListProvider` class.
 The name of the MDO list is 'ticket'.
 
 ## Additional Attributes
@@ -22,7 +22,6 @@ The name of the MDO list is 'ticket'.
 | Description | Name | Example Value |
 |-----|-----|------|
 |Indicates how to format item name| nameformat|includePersonAndCompany|
-
 
 
 
@@ -65,10 +64,10 @@ foreach (var item in listProvider.RootItems) {
 
 ## Related MDO Lists
 
-* "ticketheadings"
-* "ticketheadingswithallitem"
-* "ticketheadingswithallitemwithnoselection"
-* "ticketheadingswithnoselection"
-* "ticketwithallitem"
-* "ticketwithallitemwithnoselection"
-* "ticketwithnoselection"
+* `ticketheadings`
+* `ticketheadingswithallitem`
+* `ticketheadingswithallitemwithnoselection`
+* `ticketheadingswithnoselection`
+* `ticketwithallitem`
+* `ticketwithallitemwithnoselection`
+* `ticketwithnoselection`

@@ -1,15 +1,13 @@
 ---
-title: MailFolder
-description: Provides list of subscribed and unsubscribed mail folders available for an account
+title: "MailFolder"
+description: "Provides list of subscribed and unsubscribed mail folders available for an account"
 keywords: MailFolder archive provider
 generated: true
 content_type: reference
 envir: onsite, online
 ---
 
-## "MailFolder"
-
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.MailFolderProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.MailFolderProvider` inside NetServer's SODatabase assembly.
 
 Provides list of subscribed and unsubscribed mail folders available for an account
 
@@ -22,18 +20,18 @@ Provides list of subscribed and unsubscribed mail folders available for an accou
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |id| *None* |id|  |
-|subscribed| *None* ||  |
 |name| *None* ||  |
+|subscribed| *None* ||  |
 
 ## Sample
 
 ```http!
-GET /api/v1/archive/MailFolder?$select=
+GET /api/v1/archive/MailFolder?$select=name,subscribed
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: `IArchiveAgent`.
 

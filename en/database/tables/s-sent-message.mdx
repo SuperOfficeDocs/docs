@@ -1,6 +1,6 @@
 ---
-title: s_sent_message table
-description: Emarketeer message control
+title: "s_sent_message table"
+description: "Emarketeer message control"
 generated: true
 content_type: reference
 envir: online
@@ -8,18 +8,18 @@ envir: online
 
 import SSentMessage from "./includes/s-sent-message.mdx";
 
-## s\_sent\_message Table (405)
-
 Emarketeer message control
+
+Table number: 405
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|shipment\_id|Which shipment the customer received.|FK [s_shipment](./s-shipment.mdx)|No|
-|message\_id|The id of the message that is sent in this shipment|FK [s_message](./s-message.mdx)|No|
-|customer\_id|The id of the customer that received the message|FK [person](./person.mdx)|No|
+|shipment\_id|Which shipment the customer received.|FK [s_shipment](./s-shipment)|No|
+|message\_id|The id of the message that is sent in this shipment|FK [s_message](./s-message)|No|
+|customer\_id|The id of the customer that received the message|FK [person](./person)|No|
 |email|The email-adresse the received the message|String(255)|Yes|
 |when\_sent|When the email was sent.|DateTime|Yes|
 |when\_read|When the email was read or link was clicked.|DateTime|Yes|

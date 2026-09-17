@@ -1,6 +1,6 @@
 ---
-title: DiaryView table
-description: Configuration of a multi-user diary view
+title: "DiaryView table"
+description: "Configuration of a multi-user diary view"
 generated: true
 content_type: reference
 envir: online
@@ -8,27 +8,27 @@ envir: online
 
 import Diaryview from "./includes/diaryview.mdx";
 
-## DiaryView Table (214)
-
 Configuration of a multi-user diary view
+
+Table number: 214
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |DiaryView\_id|Primary key|PK|No|
-|assoc\_id|Owning associate|FK [associate](./associate.mdx)|No|
+|assoc\_id|Owning associate|FK [associate](./associate)|No|
 |name|The name of the view (defined by the user during saving)|String(254)|No|
 |rank|Sorting rank|UShort|No|
 |tooltip|Tooltip shown in dropdown list|String(254)|Yes|
 |visibleColumns|The number of columns to actually show in this view (as opposed to the number of columns defined)|UShort|No|
 |extraInfo|Extra information, whatever it might be|String(254)|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
-|tzLocationId|Default timezone location for this view|FK [TZLocation](./tzlocation.mdx)|Yes|
+|tzLocationId|Default timezone location for this view|FK [TZLocation](./tzlocation)|Yes|
 
 
 ![DiaryView table relationship diagram](/media/loc/en/database/tables/DiaryView.png)

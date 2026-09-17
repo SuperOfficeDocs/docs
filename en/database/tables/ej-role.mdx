@@ -1,6 +1,6 @@
 ---
-title: ej_role table
-description: Define access rights, memberships and other properties for role user members
+title: "ej_role table"
+description: "Define access rights, memberships and other properties for role user members"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import EjRole from "./includes/ej-role.mdx";
 
-## ej\_role Table (323)
-
 Define access rights, memberships and other properties for role user members
+
+Table number: 323
 
 ## Fields
 
@@ -19,7 +19,7 @@ Define access rights, memberships and other properties for role user members
 |id|The primary key (auto-incremented)|PK|No|
 |name|This is the name of the role|String(255)|Yes|
 |use\_user\_group|Override user user group with role|Bool|Yes|
-|user\_group|The group this user is member of |FK [hierarchy](./hierarchy.mdx)|No|
+|user\_group|The group this user is member of |FK [hierarchy](./hierarchy)|No|
 |access\_mask|Access mask for users using this role|Int|Yes|
 |access\_values|Access values for users using this role|Int|Yes|
 |use\_categories|Override user categories with role categories|Bool|Yes|

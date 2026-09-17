@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_SetSpamStatusByProviderRequest"></a> Class Ticket\_SetSpamStatusByProviderRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_SetSpamStatusByProviderRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_SetSpamStatusByProviderRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_SetSpamStatusByProviderRequest)
+[Ticket\_SetSpamStatusByProviderRequest](SuperOffice.WebApi.Data.Ticket\_SetSpamStatusByProviderRequest.md)
 
 #### Inherited Members
 
@@ -50,5 +50,5 @@ public ArchiveRestrictionInfo[] Restrictions { get; set; }
 
 #### Property Value
 
- [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
+ [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
 

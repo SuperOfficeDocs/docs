@@ -1,6 +1,6 @@
 ---
-title: invoice_entry table
-description: This table contain all invoices, connected to a message
+title: "invoice_entry table"
+description: "This table contain all invoices, connected to a message"
 generated: true
 content_type: reference
 envir: online
@@ -8,18 +8,18 @@ envir: online
 
 import InvoiceEntry from "./includes/invoice-entry.mdx";
 
-## invoice\_entry Table (360)
-
 This table contain all invoices, connected to a message
+
+Table number: 360
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|Primary key|PK|No|
-|message\_id|The message.id this invoice entry is connected to.|FK [ej_message](./ej-message.mdx)|No|
+|message\_id|The message.id this invoice entry is connected to.|FK [ej_message](./ej-message)|No|
 |description|A description of the invoice entry|String(255)|Yes|
-|type|The type of this invoice entry|FK [invoice_type](./invoice-type.mdx)|No|
+|type|The type of this invoice entry|FK [invoice_type](./invoice-type)|No|
 |quantity|Number of units|Double|No|
 |price\_pr\_unit|Price per unit. This is copied from the invoice_type when created so that changes to the price in the future does not affect this one.|Int|No|
 |discount|Discount for this invoice entry|Int|No|

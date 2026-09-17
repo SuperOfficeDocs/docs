@@ -1,6 +1,6 @@
 # <a id="SuperOffice_License_SoLicenseNames"></a> Class SoLicenseNames
 
-Namespace: [SuperOffice.License](/en/api/reference/webapi/SuperOffice.License)  
+Namespace: [SuperOffice.License](SuperOffice.License.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 License names for SuperOffice Module Licenses. Use
@@ -14,7 +14,7 @@ public static class SoLicenseNames
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[SoLicenseNames](/en/api/reference/webapi/SuperOffice.License.SoLicenseNames)
+[SoLicenseNames](SuperOffice.License.SoLicenseNames.md)
 
 #### Inherited Members
 

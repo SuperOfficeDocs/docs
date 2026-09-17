@@ -1,6 +1,6 @@
 ---
-title: Webhook_usage table
-description: Webhook usage statistics - tracks call+error statistics. Same primary key as the webhook.
+title: "Webhook_usage table"
+description: "Webhook usage statistics - tracks call+error statistics. Same primary key as the webhook."
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import WebhookUsage from "./includes/webhook-usage.mdx";
 
-## Webhook\_usage Table (524)
-
 Webhook usage statistics - tracks call+error statistics. Same primary key as the webhook.
+
+Table number: 525
 
 ## Fields
 
@@ -22,9 +22,9 @@ Webhook usage statistics - tracks call+error statistics. Same primary key as the
 |consecutive\_errors|Number of consecutive errors. Reset to 0 when an non-error is received. If too many errors, webhook.state is changed to TooManyErrors(3) to deactivate webhook.|Int|No|
 |last\_error|Most recent error message received from target. HTTP Headers + body. To help with debugging webhooks.|String(4000)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

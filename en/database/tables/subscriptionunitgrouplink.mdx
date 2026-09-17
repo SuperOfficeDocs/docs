@@ -1,6 +1,6 @@
 ---
-title: SubscriptionUnitGroupLink table
-description: User group link table for SubscriptionUnit, for MDO item hiding
+title: "SubscriptionUnitGroupLink table"
+description: "User group link table for SubscriptionUnit, for MDO item hiding"
 generated: true
 content_type: reference
 envir: online
@@ -8,21 +8,21 @@ envir: online
 
 import Subscriptionunitgrouplink from "./includes/subscriptionunitgrouplink.mdx";
 
-## SubscriptionUnitGroupLink Table (443)
-
 User group link table for SubscriptionUnit, for MDO item hiding
+
+Table number: 443
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |subscriptionunitgrouplink\_id|Primary key|PK|No|
-|subscriptionunit\_id|Link to SubscriptionUnit list table|FK [SubscriptionUnit](./subscriptionunit.mdx)|No|
-|group\_id|Link to Group table|FK [UserGroup](./usergroup.mdx)|No|
+|subscriptionunit\_id|Link to SubscriptionUnit list table|FK [SubscriptionUnit](./subscriptionunit)|No|
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

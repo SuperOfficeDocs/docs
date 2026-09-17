@@ -1,6 +1,6 @@
 ---
-title: ms_filter_mail table
-description: This table connects mail filters (ms_filter) to mailboxes (mail_in_filter).
+title: "ms_filter_mail table"
+description: "This table connects mail filters (ms_filter) to mailboxes (mail_in_filter)."
 generated: true
 content_type: reference
 envir: online
@@ -8,17 +8,17 @@ envir: online
 
 import MsFilterMail from "./includes/ms-filter-mail.mdx";
 
-## ms\_filter\_mail Table (311)
-
 This table connects mail filters (ms_filter) to mailboxes (mail_in_filter).
+
+Table number: 311
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|mail\_sorter\_id|The reference to the mail filter entry.|FK [ms_filter](./ms-filter.mdx)|No|
-|mail\_in\_filter\_id|The reference to the mailbox.|FK [mail_in_filter](./mail-in-filter.mdx)|No|
+|mail\_sorter\_id|The reference to the mail filter entry.|FK [ms_filter](./ms-filter)|No|
+|mail\_in\_filter\_id|The reference to the mailbox.|FK [mail_in_filter](./mail-in-filter)|No|
 
 
 ![ms_filter_mail table relationship diagram](/media/loc/en/database/tables/ms_filter_mail.png)

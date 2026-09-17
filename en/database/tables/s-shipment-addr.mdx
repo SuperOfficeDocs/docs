@@ -1,6 +1,6 @@
 ---
-title: s_shipment_addr table
-description: Addresses that are ready to be sent in a shipment.
+title: "s_shipment_addr table"
+description: "Addresses that are ready to be sent in a shipment."
 generated: true
 content_type: reference
 envir: online
@@ -8,33 +8,33 @@ envir: online
 
 import SShipmentAddr from "./includes/s-shipment-addr.mdx";
 
-## s\_shipment\_addr Table (347)
-
 Addresses that are ready to be sent in a shipment.
+
+Table number: 347
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|Primary key|PK|No|
-|shipment\_id|Which shipment this address belongs to|FK [s_shipment](./s-shipment.mdx)|No|
+|shipment\_id|Which shipment this address belongs to|FK [s_shipment](./s-shipment)|No|
 |address|The email address|String(255)|No|
 |name|The name of the recipient|String(255)|Yes|
 |timestamp|A stamp set when this address it taken by ejSender to prevent two ejSenders to take one address.|Int|Yes|
-|customer\_id|Id of the customer if this entry is created by a dynamic list|FK [person](./person.mdx)|No|
+|customer\_id|Id of the customer if this entry is created by a dynamic list|FK [person](./person)|No|
 |type|Indicates if this is an email or a sms|Int|Yes|
 |sender\_nr|Used for multiple ejSenders. This field indicate which ejSender process this belongs to|Int|Yes|
-|ticket\_id|Id of the ticket if this entry is created by a ticketSelection list|FK [ticket](./ticket.mdx)|No|
-|status|Status for sending to this particular recipient|Enum [ShipmentAddrStatus](./enums/shipmentaddrstatus.mdx)|Yes|
-|contact\_id|Id of contact bound to shipment address|FK [contact](./contact.mdx)|Yes|
+|ticket\_id|Id of the ticket if this entry is created by a ticketSelection list|FK [ticket](./ticket)|No|
+|status|Status for sending to this particular recipient|Enum [ShipmentAddrStatus](./enums/shipmentaddrstatus)|Yes|
+|contact\_id|Id of contact bound to shipment address|FK [contact](./contact)|Yes|
 |sending\_time|Estimated or actual sent time (depends on status)|DateTime|Yes|
 |bounce\_reason|Reason text received from mailing system|String(1023)|Yes|
-|form\_submission\_id|If this mailing recipient is created from a form submission, this will contain a reference to that submission|FK [form_submission](./form-submission.mdx)|Yes|
+|form\_submission\_id|If this mailing recipient is created from a form submission, this will contain a reference to that submission|FK [form_submission](./form-submission)|Yes|
 |bounce\_code|If this recipient bounced and we have a bounce code, this field will contain the code|Int|Yes|
 |bounce\_reasontag|If this recipient bounced and we have a bounce reason, this field will contain the reason|String(4000)|Yes|
 |cleaned|Used for indicating that a bounced recipient row has been cleaned, and now will not be presented again in the cleaning list|Bool|Yes|
-|workflow\_step\_id|The row was created by this workflow step|FK [workflow_step](./workflow-step.mdx)|Yes|
-|workflow\_instance\_id|The row was created by this workflow instance|FK [workflow_instance](./workflow-instance.mdx)|Yes|
+|workflow\_step\_id|The row was created by this workflow step|FK [workflow_step](./workflow-step)|Yes|
+|workflow\_instance\_id|The row was created by this workflow instance|FK [workflow_instance](./workflow-instance)|Yes|
 |owner\_lock|A guid to set when trying to send to that address, to ensure no other ejsender also try to send it|String(255)|Yes|
 
 

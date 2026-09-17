@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_WorkflowGoal"></a> Class WorkflowGoal
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for WorkflowGoal.
@@ -13,13 +13,13 @@ public class WorkflowGoal : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[WorkflowGoal](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowGoal)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[WorkflowGoal](SuperOffice.WebApi.Data.WorkflowGoal.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -59,11 +59,11 @@ public WorkflowGoalType? GoalType { get; set; }
 
 #### Property Value
 
- [WorkflowGoalType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowGoalType)?
+ [WorkflowGoalType](SuperOffice.WebApi.Data.WorkflowGoalType.md)?
 
 #### See Also
 
-[WorkflowGoal](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowGoal).[GoalType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowGoal#SuperOffice_WebApi_Data_WorkflowGoal_GoalType_String)
+[WorkflowGoal](SuperOffice.WebApi.Data.WorkflowGoal.md).[GoalType\_String](SuperOffice.WebApi.Data.WorkflowGoal.md\#SuperOffice\_WebApi\_Data\_WorkflowGoal\_GoalType\_String)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowGoal_GoalType_String"></a> GoalType\_String
 
@@ -81,7 +81,7 @@ public string GoalType_String { get; set; }
 
 #### See Also
 
-[WorkflowGoal](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowGoal).[GoalType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowGoal#SuperOffice_WebApi_Data_WorkflowGoal_GoalType)
+[WorkflowGoal](SuperOffice.WebApi.Data.WorkflowGoal.md).[GoalType](SuperOffice.WebApi.Data.WorkflowGoal.md\#SuperOffice\_WebApi\_Data\_WorkflowGoal\_GoalType)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowGoal_RestrictionGroups"></a> RestrictionGroups
 
@@ -93,7 +93,7 @@ public virtual ArchiveRestrictionGroup[] RestrictionGroups { get; set; }
 
 #### Property Value
 
- [ArchiveRestrictionGroup](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionGroup)\[\]
+ [ArchiveRestrictionGroup](SuperOffice.WebApi.Data.ArchiveRestrictionGroup.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowGoal_WorkflowGoalId"></a> WorkflowGoalId
 
@@ -121,5 +121,5 @@ public virtual int WorkflowId { get; set; }
 
 ## See Also
 
-[WorkflowAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.WorkflowAgent)
+[WorkflowAgent](SuperOffice.WebApi.Agents.WorkflowAgent.md)
 

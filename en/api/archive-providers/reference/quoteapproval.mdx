@@ -1,15 +1,13 @@
 ---
-title: QuoteApproval
-description: Retrieves pending sale quotes for current associate with state approved, denied, approval needed or approval requested
+title: "QuoteApproval"
+description: "Retrieves pending sale quotes for current associate with state approved, denied, approval needed or approval requested"
 keywords: QuoteApproval archive provider
 generated: true
 content_type: reference
 envir: onsite, online
 ---
 
-## "QuoteApproval"
-
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.QuoteApprovalProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.QuoteApprovalProvider` inside NetServer's SODatabase assembly.
 
 Retrieves pending sale quotes for current associate with state approved, denied, approval needed or approval requested
 
@@ -18,47 +16,47 @@ Retrieves pending sale quotes for current associate with state approved, denied,
 | ---- | ----- |
 |"approved"|Quotes with state Approved|
 |"denied"|Quotes with state Lost|
-|"requested"|Quotes with state Needs approval|
 |"needsapproval"|Quotes that need approval|
+|"requested"|Quotes with state Needs approval|
 
 ## Supported Columns
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|amount|decimal|Amount| x |
+|approvedById|associate|Approved by ID| x |
+|approvedByName| *None* |Approved by: Associate who approved a quote that broke one or more of the workflow rules that trigger an approval process|  |
+|approvedText|string|Approval reason| x |
+|contactId|int|Company ID: Database ID of company| x |
+|contactName|string|Company: Displays the company an activity is linked to| x |
+|currency|listAny|Currency|  |
 |getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
 |getNoRows|bool|GetNone: Do not get any rows from the archive|  |
 |lastUpdated|date|Last updated| x |
-|quoteId|int|Quote ID: Database ID of quote| x |
-|quoteVersionId|int|ID: Database ID of QuoteVersion record| x |
-|quoteAlternativeVersionId|int|Description: Description of the quote alternative| x |
-|saleId|int|Sale ID: The database ID of the sale record| x |
-|saleStatus|listAny|Status: The status of the sale - open, lost or sold| x |
-|quoteVersionState|int|State: The current state the quote is in| x |
-|quoteOwnerAssociateId|associate|Quote owner ID| x |
-|quoteOwnerAssociateName| *None* |Quote owner|  |
-|saleHeading|string|Sale title| x |
-|amount|decimal|Amount| x |
-|currency|listAny|Currency|  |
-|contactId|int|Company ID: Database ID of company| x |
-|contactName|string|Company: Displays the company an activity is linked to| x |
 |personId|int|Contact ID: Database ID of the contact row| x |
 |personName| *None* |Contact: Displays the contact to which an item is linked|  |
-|approvedText|string|Approval reason| x |
-|approvedByName| *None* |Approved by: Associate who approved a quote that broke one or more of the workflow rules that trigger an approval process|  |
-|approvedById|associate|Approved by ID| x |
+|quoteAlternativeVersionId|int|Description: Description of the quote alternative| x |
+|quoteId|int|Quote ID: Database ID of quote| x |
+|quoteOwnerAssociateId|associate|Quote owner ID| x |
+|quoteOwnerAssociateName| *None* |Quote owner|  |
 |quoteReason|string|Quote warning| x |
-|requestComment|string|Approval comment| x |
+|quoteVersionId|int|ID: Database ID of QuoteVersion record| x |
+|quoteVersionState|int|State: The current state the quote is in| x |
 |requestAssociateId|associate|Approval associate| x |
 |requestAssociateName| *None* |Approval associate|  |
+|requestComment|string|Approval comment| x |
+|saleHeading|string|Sale title| x |
+|saleId|int|Sale ID: The database ID of the sale record| x |
+|saleStatus|listAny|Status: The status of the sale - open, lost or sold| x |
 
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteApproval?$select=quoteOwnerAssociateName,quoteVersionState,amount
+GET /api/v1/archive/QuoteApproval?$select=amount,contactName,quoteId,quoteVersionState,saleStatus
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: `IArchiveAgent`.
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ForeignSystem_DeleteDeviceByIdentifierRequest"></a> Class ForeignSystem\_DeleteDeviceByIdentifierRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ForeignSystem_DeleteDeviceByIdentifierRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ForeignSystem\_DeleteDeviceByIdentifierRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ForeignSystem_DeleteDeviceByIdentifierRequest)
+[ForeignSystem\_DeleteDeviceByIdentifierRequest](SuperOffice.WebApi.Data.ForeignSystem\_DeleteDeviceByIdentifierRequest.md)
 
 #### Inherited Members
 

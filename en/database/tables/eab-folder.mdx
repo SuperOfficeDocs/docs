@@ -1,6 +1,6 @@
 ---
-title: eab_folder table
-description: This table contains eab (email address book) folders, used for containing email addresses.
+title: "eab_folder table"
+description: "This table contains eab (email address book) folders, used for containing email addresses."
 generated: true
 content_type: reference
 envir: online
@@ -8,16 +8,16 @@ envir: online
 
 import EabFolder from "./includes/eab-folder.mdx";
 
-## eab\_folder Table (314)
-
 This table contains eab (email address book) folders, used for containing email addresses.
+
+Table number: 314
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|folder\_id|The id of the parent folder for this folder. NULL or -1 if this is a toplevel folder.|FK [eab_folder](./eab-folder.mdx)|No|
+|folder\_id|The id of the parent folder for this folder. NULL or -1 if this is a toplevel folder.|FK [eab_folder](./eab-folder)|No|
 |name|The folder&amp;apos;s name.|String(64)|No|
 |description|The folder&amp;apos;s description.|String(255)|Yes|
 |fullname|The full name of this category, i.e. Foo/bar/test.|Clob|Yes|

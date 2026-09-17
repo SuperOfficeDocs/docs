@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DocumentMigration_GetForDateRangeRequest"></a> Class DocumentMigration\_GetForDateRangeRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class DocumentMigration_GetForDateRangeRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[DocumentMigration\_GetForDateRangeRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentMigration_GetForDateRangeRequest)
+[DocumentMigration\_GetForDateRangeRequest](SuperOffice.WebApi.Data.DocumentMigration\_GetForDateRangeRequest.md)
 
 #### Inherited Members
 

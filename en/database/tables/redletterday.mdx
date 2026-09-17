@@ -1,6 +1,6 @@
 ---
-title: redletterday table
-description: Red letter days for calendar (holidays, birthday of king etc)
+title: "redletterday table"
+description: "Red letter days for calendar (holidays, birthday of king etc)"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Redletterday from "./includes/redletterday.mdx";
 
-## redletterday Table (17)
-
 Red letter days for calendar (holidays, birthday of king etc)
+
+Table number: 17
 
 ## Fields
 
@@ -18,7 +18,7 @@ Red letter days for calendar (holidays, birthday of king etc)
 |------|-------------|------|:----:|
 |redletterday\_id|Primary key|PK|No|
 |reddate|The date |DateTime|No|
-|country\_id|Which country does this red letter day belong to. It will show up in the diary for associates with this country as homecountry.|FK [country](./country.mdx)|No|
+|country\_id|Which country does this red letter day belong to. It will show up in the diary for associates with this country as homecountry.|FK [country](./country)|No|
 |reds|The n´th bit corresponding to the date in dates month, is true if the color is active.|UInt|Yes|
 |colored|The n´th bit corresponding to the date in dates month, is true if the color is active.|UInt|Yes|
 |color|color can be one of the following: RLD_COLOR_BLACK, RLD_COLOR_RED, RLD_COLOR_SPES|UShort|Yes|

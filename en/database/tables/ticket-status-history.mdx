@@ -1,6 +1,6 @@
 ---
-title: ticket_status_history table
-description: This table contains the history of a tickets statuses. Each time a ticket changes status a copy of the previous status of the record will be saved 
+title: "ticket_status_history table"
+description: "This table contains the history of a tickets statuses. Each time a ticket changes status a copy of the previous status of the record will be saved"
 generated: true
 content_type: reference
 envir: online
@@ -8,17 +8,17 @@ envir: online
 
 import TicketStatusHistory from "./includes/ticket-status-history.mdx";
 
-## ticket\_status\_history Table (261)
-
 This table contains the history of a tickets statuses. Each time a ticket changes status a copy of the previous status of the record will be saved 
+
+Table number: 261
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|ticket\_id|Reference to a ticket|FK [ticket](./ticket.mdx)|No|
-|ticket\_status|User defined ticket status|FK [ticket_status](./ticket-status.mdx)|No|
+|ticket\_id|Reference to a ticket|FK [ticket](./ticket)|No|
+|ticket\_status|User defined ticket status|FK [ticket_status](./ticket-status)|No|
 |timespan|The time (seconds) the ticket was in that status. Calculated based on priority&amp;apos;s timeframe.|Int|Yes|
 |real\_timespan|The time (seconds) the ticket was in that status. Not calculated based on priority&amp;apos;s timeframe.|Int|Yes|
 |from\_datetime||DateTime|Yes|

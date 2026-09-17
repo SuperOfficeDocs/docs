@@ -1,6 +1,6 @@
 ---
-title: SaleStakeholder table
-description: Stakeholders in the sale, very similar to project members
+title: "SaleStakeholder table"
+description: "Stakeholders in the sale, very similar to project members"
 generated: true
 content_type: reference
 envir: online
@@ -8,25 +8,25 @@ envir: online
 
 import Salestakeholder from "./includes/salestakeholder.mdx";
 
-## SaleStakeholder Table (121)
-
 Stakeholders in the sale, very similar to project members
+
+Table number: 121
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |salestakeholder\_id|Primary key|PK|No|
-|sale\_id|Parent sale|FK [sale](./sale.mdx)|Yes|
-|contact\_id|Contact ID of person or contact who is the sale stakeholder|FK [contact](./contact.mdx)|Yes|
-|person\_id|Person ID of person who is the sale stakeholder, or 0 if it&apos;s just a contact|FK [person](./person.mdx)|Yes|
+|sale\_id|Parent sale|FK [sale](./sale)|Yes|
+|contact\_id|Contact ID of person or contact who is the sale stakeholder|FK [contact](./contact)|Yes|
+|person\_id|Person ID of person who is the sale stakeholder, or 0 if it&apos;s just a contact|FK [person](./person)|Yes|
 |rank|Rank in list|UShort|Yes|
-|stakeholderrole\_id|Member type link|FK [StakeholderRole](./stakeholderrole.mdx)|Yes|
+|stakeholderrole\_id|Member type link|FK [StakeholderRole](./stakeholderrole)|Yes|
 |comment|Optional comment|String(2047)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

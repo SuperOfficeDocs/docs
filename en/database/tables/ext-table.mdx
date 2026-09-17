@@ -1,6 +1,6 @@
 ---
-title: ext_table table
-description: This table contains entries used for mapping an external table to an internal table (customer or cust_company) for database integration.
+title: "ext_table table"
+description: "This table contains entries used for mapping an external table to an internal table (customer or cust_company) for database integration."
 generated: true
 content_type: reference
 envir: online
@@ -8,18 +8,18 @@ envir: online
 
 import ExtTable from "./includes/ext-table.mdx";
 
-## ext\_table Table (318)
-
 This table contains entries used for mapping an external table to an internal table (customer or cust_company) for database integration.
+
+Table number: 318
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|ext\_datasource|The reference to the associated datasource.|FK [ext_datasource](./ext-datasource.mdx)|Yes|
-|parent\_table|The reference to the parent table.|FK [ext_table](./ext-table.mdx)|Yes|
-|child\_table|The reference to the child table.|FK [ext_table](./ext-table.mdx)|Yes|
+|ext\_datasource|The reference to the associated datasource.|FK [ext_datasource](./ext-datasource)|Yes|
+|parent\_table|The reference to the parent table.|FK [ext_table](./ext-table)|Yes|
+|child\_table|The reference to the child table.|FK [ext_table](./ext-table)|Yes|
 |name|The name for this field|String(64)|Yes|
 |target|Enum indicating the target table (customer or cust_company).|Int|Yes|
 |priority|TODO: depreciated?|Int|Yes|

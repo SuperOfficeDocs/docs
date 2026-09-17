@@ -1,6 +1,6 @@
 ---
-title: cust_config table
-description: This table contains JSON structures used for customizing the customer center
+title: "cust_config table"
+description: "This table contains JSON structures used for customizing the customer center"
 generated: true
 content_type: reference
 envir: online
@@ -8,22 +8,22 @@ envir: online
 
 import CustConfig from "./includes/cust-config.mdx";
 
-## cust\_config Table (479)
-
 This table contains JSON structures used for customizing the customer center
+
+Table number: 479
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |cust\_config\_id|Primary key|PK|No|
-|type|What kind of data is in this row|Enum [ConfigType](./enums/configtype.mdx)|Yes|
+|type|What kind of data is in this row|Enum [ConfigType](./enums/configtype)|Yes|
 |config|A JSON-formatted config|Clob|Yes|
-|cust\_lang\_id|The customer language which this config belongs to. 0 indicates that the config is global|FK [cust_lang](./cust-lang.mdx)|No|
+|cust\_lang\_id|The customer language which this config belongs to. 0 indicates that the config is global|FK [cust_lang](./cust-lang)|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

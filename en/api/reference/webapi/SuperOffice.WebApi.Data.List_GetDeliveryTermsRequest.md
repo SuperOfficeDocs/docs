@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_GetDeliveryTermsRequest"></a> Class List\_GetDeliveryTermsRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_GetDeliveryTermsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_GetDeliveryTermsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_GetDeliveryTermsRequest)
+[List\_GetDeliveryTermsRequest](SuperOffice.WebApi.Data.List\_GetDeliveryTermsRequest.md)
 
 #### Inherited Members
 

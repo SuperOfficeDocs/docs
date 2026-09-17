@@ -1,6 +1,6 @@
 ---
-title: extra_tables_result table
-description: Result set of executed search in ejournal extra tables
+title: "extra_tables_result table"
+description: "Result set of executed search in ejournal extra tables"
 generated: true
 content_type: reference
 envir: online
@@ -8,17 +8,17 @@ envir: online
 
 import ExtraTablesResult from "./includes/extra-tables-result.mdx";
 
-## extra\_tables\_result Table (308)
-
 Result set of executed search in ejournal extra tables
+
+Table number: 308
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|login\_id|The id of the login session this result set belongs to.|FK [login](./login.mdx)|No|
-|extra\_table|The id of the extra table.|FK [extra_tables](./extra-tables.mdx)|No|
+|login\_id|The id of the login session this result set belongs to.|FK [login](./login)|No|
+|extra\_table|The id of the extra table.|FK [extra_tables](./extra-tables)|No|
 |num\_entries|The number of results.|Int|Yes|
 |active\_page|The current active page.|Int|Yes|
 

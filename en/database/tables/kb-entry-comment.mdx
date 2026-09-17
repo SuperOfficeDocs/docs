@@ -1,6 +1,6 @@
 ---
-title: kb_entry_comment table
-description: Comments to entries in the knowledge base, typically made by customers
+title: "kb_entry_comment table"
+description: "Comments to entries in the knowledge base, typically made by customers"
 generated: true
 content_type: reference
 envir: online
@@ -8,22 +8,22 @@ envir: online
 
 import KbEntryComment from "./includes/kb-entry-comment.mdx";
 
-## kb\_entry\_comment Table (289)
-
 Comments to entries in the knowledge base, typically made by customers
+
+Table number: 289
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|kb\_entry\_id|The id of the kb_entry which this comment belongs to.|FK [kb_entry](./kb-entry.mdx)|No|
+|kb\_entry\_id|The id of the kb_entry which this comment belongs to.|FK [kb_entry](./kb-entry)|No|
 |time\_posted|When the comment was posted.|DateTime|No|
 |publish\_status|Publish status of comment. 0 is undefined, 1 is not published, 2 is published|publish_status|No|
 |author|The author of the entry|String(255)|Yes|
-|customer\_id|The id of the customer that created this comment.|FK [person](./person.mdx)|No|
+|customer\_id|The id of the customer that created this comment.|FK [person](./person)|No|
 |body|The contents of the comment.|Clob|Yes|
-|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent.mdx)|No|
+|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent)|No|
 |dbi\_key|The primary key for the integrated entry in the external datasource.|String(255)|No|
 |dbi\_last\_syncronized|Last external syncronization.|DateTime|No|
 |dbi\_last\_modified|When the entry was last modified.|DateTime|No|

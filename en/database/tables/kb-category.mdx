@@ -1,6 +1,6 @@
 ---
-title: kb_category table
-description: Knowledge base folder hierarchy
+title: "kb_category table"
+description: "Knowledge base folder hierarchy"
 generated: true
 content_type: reference
 envir: online
@@ -8,25 +8,25 @@ envir: online
 
 import KbCategory from "./includes/kb-category.mdx";
 
-## kb\_category Table (283)
-
 Knowledge base folder hierarchy
+
+Table number: 283
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|parent\_id|This entry contains a reference to the parent category. NULL or -1 if this is a toplevel category.|FK [kb_category](./kb-category.mdx)|No|
+|parent\_id|This entry contains a reference to the parent category. NULL or -1 if this is a toplevel category.|FK [kb_category](./kb-category)|No|
 |name|The name of this category.|String(64)|Yes|
 |fullname|The full name of this category, i.e. Foo/bar/test.|Clob|Yes|
 |description|The description of this category.|Clob|Yes|
 |sort\_order|A strictly ascending number used for sorting categories when they are listed.|Int|No|
 |access\_level|The access level for this category (enum).|access_level|Yes|
 |inherited\_access\_level|The lowest access level for this category or any parent|inherited_access_level|Yes|
-|created\_by|The id of the user who created this category.|FK [ejuser](./ejuser.mdx)|Yes|
+|created\_by|The id of the user who created this category.|FK [ejuser](./ejuser)|Yes|
 |access\_check|Contains a Parser-script used for evaluating customer access to this category.|Clob|Yes|
-|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent.mdx)|No|
+|dbi\_agent\_id|Integration agent (eJournal)|FK [dbi_agent](./dbi-agent)|No|
 |dbi\_key|The primary key for the integrated entry in the external datasource.|String(255)|No|
 |dbi\_last\_syncronized|Last external syncronization.|DateTime|No|
 |dbi\_last\_modified|When the entry was last modified.|DateTime|No|

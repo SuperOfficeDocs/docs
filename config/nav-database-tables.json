@@ -1,5 +1,4 @@
 [
-  "en/database/tables/index",
   "en/database/tables/access-script",
   "en/database/tables/activeuser",
   "en/database/tables/address",
@@ -226,6 +225,7 @@
   "en/database/tables/mail-in-filter",
   "en/database/tables/mail-in-uidl",
   "en/database/tables/mailingdomains",
+  "en/database/tables/mention",
   "en/database/tables/mergemovelog",
   "en/database/tables/message",
   "en/database/tables/message-customers",

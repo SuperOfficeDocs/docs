@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ErpSync_TryConnectActorRequest"></a> Class ErpSync\_TryConnectActorRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class ErpSync_TryConnectActorRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ErpSync\_TryConnectActorRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSync_TryConnectActorRequest)
+[ErpSync\_TryConnectActorRequest](SuperOffice.WebApi.Data.ErpSync\_TryConnectActorRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public CrmActorType CrmActorType { get; set; }
 
 #### Property Value
 
- [CrmActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.CrmActorType)
+ [CrmActorType](SuperOffice.WebApi.Data.CrmActorType.md)
 
 ### <a id="SuperOffice_WebApi_Data_ErpSync_TryConnectActorRequest_CrmRecordId"></a> CrmRecordId
 
@@ -60,7 +60,7 @@ public ErpActorType ErpActorType { get; set; }
 
 #### Property Value
 
- [ErpActorType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpActorType)
+ [ErpActorType](SuperOffice.WebApi.Data.ErpActorType.md)
 
 ### <a id="SuperOffice_WebApi_Data_ErpSync_TryConnectActorRequest_ErpConnectionId"></a> ErpConnectionId
 
@@ -90,5 +90,5 @@ public ErpSyncFieldValue[] FieldValues { get; set; }
 
 #### Property Value
 
- [ErpSyncFieldValue](/en/api/reference/webapi/SuperOffice.WebApi.Data.ErpSyncFieldValue)\[\]
+ [ErpSyncFieldValue](SuperOffice.WebApi.Data.ErpSyncFieldValue.md)\[\]
 

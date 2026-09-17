@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ChatSummaryItem"></a> Class ChatSummaryItem
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ChatSummaryItem.
@@ -13,7 +13,7 @@ public class ChatSummaryItem
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ChatSummaryItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChatSummaryItem)
+[ChatSummaryItem](SuperOffice.WebApi.Data.ChatSummaryItem.md)
 
 #### Inherited Members
 
@@ -123,5 +123,5 @@ public virtual DateTime WhenRequested { get; set; }
 
 ## See Also
 
-[ChatAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ChatAgent)
+[ChatAgent](SuperOffice.WebApi.Agents.ChatAgent.md)
 

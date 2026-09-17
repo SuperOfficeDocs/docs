@@ -1,14 +1,24 @@
 ---
-title: customobjectfavourites
-description: 
+title: "customobjectfavourites"
+description: ""
 keywords: customobjectfavourites archive provider
 generated: true
 content_type: reference
 envir: onsite, online
 ---
 
-## "customobjectfavourites"
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.CustomObjectFavouritesProvider` inside NetServer's SODatabase assembly.
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.CustomObjectFavouritesProvider inside NetServer's SODatabase assembly.
 
-There is no generated sample for this provider.
+## Sample
+
+```http!
+GET /api/v1/archive/customobjectfavourites:y_car?$select=x_name
+Authorization: Basic dGplMDpUamUw
+Accept: application/json; charset=utf-8
+Accept-Language: sv
+
+```
+
+See also: `IArchiveAgent`.
+

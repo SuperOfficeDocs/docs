@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Person_AddBounceWithCountRequest"></a> Class Person\_AddBounceWithCountRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Person_AddBounceWithCountRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Person\_AddBounceWithCountRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person_AddBounceWithCountRequest)
+[Person\_AddBounceWithCountRequest](SuperOffice.WebApi.Data.Person\_AddBounceWithCountRequest.md)
 
 #### Inherited Members
 

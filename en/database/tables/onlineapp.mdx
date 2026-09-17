@@ -1,6 +1,6 @@
 ---
-title: OnlineApp table
-description: Echo and track information about Online Apps and their usage
+title: "OnlineApp table"
+description: "Echo and track information about Online Apps and their usage"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Onlineapp from "./includes/onlineapp.mdx";
 
-## OnlineApp Table (510)
-
 Echo and track information about Online Apps and their usage
+
+Table number: 511
 
 ## Fields
 
@@ -23,9 +23,9 @@ Echo and track information about Online Apps and their usage
 |authorizationRevoked|Has the authorization for this app been revoked|Bool|Yes|
 |lastUsed|Last app use date (not time, to reduce number of writes)|DateTime|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

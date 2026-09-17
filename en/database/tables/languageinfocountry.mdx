@@ -1,6 +1,6 @@
 ---
-title: LanguageInfoCountry table
-description: Many-many link between countries and languages, to give intelligent choices for language
+title: "LanguageInfoCountry table"
+description: "Many-many link between countries and languages, to give intelligent choices for language"
 generated: true
 content_type: reference
 envir: online
@@ -8,25 +8,25 @@ envir: online
 
 import Languageinfocountry from "./includes/languageinfocountry.mdx";
 
-## LanguageInfoCountry Table (211)
-
 Many-many link between countries and languages, to give intelligent choices for language
+
+Table number: 211
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |LanguageInfoCountry\_id|Primary key|PK|No|
-|languageId|Key to language|FK [LanguageInfo](./languageinfo.mdx)|No|
-|countryId|Key to country|FK [country](./country.mdx)|No|
+|languageId|Key to language|FK [LanguageInfo](./languageinfo)|No|
+|countryId|Key to country|FK [country](./country)|No|
 |percentage|Percentage of Country that speaks Language, 0 means we don&apos;t know|Short|No|
-|official|1: This is an official language; 2: it&apos;s not; 0: We don&apos;t know|Enum [OfficialLanguage](./enums/officiallanguage.mdx)|No|
+|official|1: This is an official language; 2: it&apos;s not; 0: We don&apos;t know|Enum [OfficialLanguage](./enums/officiallanguage)|No|
 |lcid|Language/culture as a string, such as en-us or nb-no|Id|No|
 |isDefault|If 1, this is the default language for the country|Bool|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 |isBuiltIn|Has this row been inserted by SuperOffice priming data|UShort|No|
 

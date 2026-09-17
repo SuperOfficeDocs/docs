@@ -1,6 +1,6 @@
 ---
-title: text table
-description: Long text fields from all over the system
+title: "text table"
+description: "Long text fields from all over the system"
 generated: true
 content_type: reference
 envir: online
@@ -8,21 +8,21 @@ envir: online
 
 import Text from "./includes/text.mdx";
 
-## text Table (18)
-
 Long text fields from all over the system
+
+Table number: 18
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |text\_id|Primary key|PK|No|
-|type|Text type, enum that specifies owning table and role|Enum [TextType](./enums/texttype.mdx)|Yes|
+|type|Text type, enum that specifies owning table and role|Enum [TextType](./enums/texttype)|Yes|
 |owner\_id|Record ID of owner record|Id|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Table number of list table that this text contains an extension of; this is obsolete functionality|TableNumber|No|
 |text|The actual text, max 2047 significant characters even though it is stored as a larger data type on some databases|String(4000)|Yes|
 |lcid|Language/culture code of the text, if known. This is a reserved field for future use|UShort|Yes|

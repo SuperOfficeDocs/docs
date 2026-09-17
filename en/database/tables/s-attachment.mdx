@@ -1,6 +1,6 @@
 ---
-title: s_attachment table
-description: A connector between a message and attachments. One message can contain many attachments.
+title: "s_attachment table"
+description: "A connector between a message and attachments. One message can contain many attachments."
 generated: true
 content_type: reference
 envir: online
@@ -8,17 +8,17 @@ envir: online
 
 import SAttachment from "./includes/s-attachment.mdx";
 
-## s\_attachment Table (349)
-
 A connector between a message and attachments. One message can contain many attachments.
+
+Table number: 349
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|Primary key|PK|No|
-|attachment\_id|The id of the attachment|FK [attachment](./attachment.mdx)|No|
-|message\_id|The id of the message|FK [s_message](./s-message.mdx)|No|
+|attachment\_id|The id of the attachment|FK [attachment](./attachment)|No|
+|message\_id|The id of the message|FK [s_message](./s-message)|No|
 
 
 ![s_attachment table relationship diagram](/media/loc/en/database/tables/s_attachment.png)

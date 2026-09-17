@@ -1,6 +1,6 @@
 ---
-title: Webhook table
-description: Webhook URL to call when events occur in the client or in NetServer. Also tracks call+error statistics.
+title: "Webhook table"
+description: "Webhook URL to call when events occur in the client or in NetServer. Also tracks call+error statistics."
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Webhook from "./includes/webhook.mdx";
 
-## Webhook Table (523)
-
 Webhook URL to call when events occur in the client or in NetServer. Also tracks call+error statistics.
+
+Table number: 524
 
 ## Fields
 
@@ -25,16 +25,16 @@ Webhook URL to call when events occur in the client or in NetServer. Also tracks
 |headers|Hook specific additional HTTP headers that should be added to HTTP request, stored as JSON blob|Clob|Yes|
 |properties|Hook specific additional data that should be added to payload, stored as JSON blob|Clob|Yes|
 |secret|Shared secret key used for generating SHA256 HMAC signature, so that receiver can verify that call came from this server|String(400)|Yes|
-|state|Webhook status - should we post events to the URL? 1=Active, 2=Stopped or 3=TooManyErrors|Enum [WebhookState](./enums/webhookstate.mdx)|No|
+|state|Webhook status - should we post events to the URL? 1=Active, 2=Stopped or 3=TooManyErrors|Enum [WebhookState](./enums/webhookstate)|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 |errors\_email|Email address to send error message to when this webhook state changes to too-many errors.|String(239)|Yes|
 |description|Human-readable description of what this webhook does.|String(4000)|Yes|
-|notify\_via|How to notify recipients when this webhook changes state. 1=Email, 2=InApp.|Enum [WebhookNotifyVia](./enums/webhooknotifyvia.mdx)|No|
-|notify\_when|When to notify recipients. Bitflag: 1=FirstFailure, 2=Disabling.|Enum [WebhookNotifyWhen](./enums/webhooknotifywhen.mdx)|No|
+|notify\_via|How to notify recipients when this webhook changes state. 1=Email, 2=InApp.|Enum [WebhookNotifyVia](./enums/webhooknotifyvia)|No|
+|notify\_when|When to notify recipients. Bitflag: 1=FirstFailure, 2=Disabling.|Enum [WebhookNotifyWhen](./enums/webhooknotifywhen)|No|
 
 
 ![Webhook table relationship diagram](/media/loc/en/database/tables/Webhook.png)

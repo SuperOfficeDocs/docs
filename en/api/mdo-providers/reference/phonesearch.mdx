@@ -1,13 +1,12 @@
 ---
-title: phonesearch
+title: "phonesearch"
 keywords: mdoprovider mdo provider phonesearch
-description: Search phone numbers for matching stripped numbers, across person and contacts. Return company name + department, or person name. Use AdditionInfo to restrict search to just Person or Contact phone numbers using "P" or "C".
+description: "Search phone numbers for matching stripped numbers, across person and contacts. Return company name + department, or person name. Use AdditionInfo to restrict search to just Person or Contact phone numbers using \"P\" or \"C\"."
 generated: true
 content_type: reference
 envir: online
 ---
 
-## "phonesearch" MDO List
 Search phone numbers for matching stripped numbers, across person and contacts.
 Return company name + department, or person name.
 Use AdditionInfo to restrict search to just Person or Contact phone numbers using "P" or "C".
@@ -15,33 +14,38 @@ Use AdditionInfo to restrict search to just Person or Contact phone numbers usin
 Returns: list item with
 
 
+
 id = person or contact id
+
 
 
 Name = company name + phone number or person name + company name + phone number
 
 
+
 ExtraInfo + Tooltip = GSM formatted phone number (with country prefix)
+
 
 
 Full Name = person name or company name
 
 
+
 Type = "Person" or "Contact"
+
 
 
 IconHint = "Person" or "Contact"
 
-Implemented by the PhoneSearchProvider class.
+Implemented by the `SuperOffice.CRM.Lists.PhoneSearchProvider` class.
 The name of the MDO list is 'phonesearch'.
 
 ## Additional Attributes
 
 | Description | Name | Example Value |
 |-----|-----|------|
-|Person only search| |P|
-|Company only search| |C|
-
+|Person only search| P||
+|Company only search| C||
 
 
 
@@ -94,10 +98,10 @@ foreach (var item in listProvider.RootItems) {
 
 ## Related MDO Lists
 
-* "phonesearchheadings"
-* "phonesearchheadingswithallitem"
-* "phonesearchheadingswithallitemwithnoselection"
-* "phonesearchheadingswithnoselection"
-* "phonesearchwithallitem"
-* "phonesearchwithallitemwithnoselection"
-* "phonesearchwithnoselection"
+* `phonesearchheadings`
+* `phonesearchheadingswithallitem`
+* `phonesearchheadingswithallitemwithnoselection`
+* `phonesearchheadingswithnoselection`
+* `phonesearchwithallitem`
+* `phonesearchwithallitemwithnoselection`
+* `phonesearchwithnoselection`

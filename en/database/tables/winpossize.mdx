@@ -1,6 +1,6 @@
 ---
-title: WinPosSize table
-description: Stores the position and size of each window, so they can be shown in the same place again
+title: "WinPosSize table"
+description: "Stores the position and size of each window, so they can be shown in the same place again"
 generated: true
 content_type: reference
 envir: online
@@ -8,18 +8,18 @@ envir: online
 
 import Winpossize from "./includes/winpossize.mdx";
 
-## WinPosSize Table (208)
-
 Stores the position and size of each window, so they can be shown in the same place again
+
+Table number: 208
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |WinPosSize\_id|Primary key|PK|No|
-|assoc\_id|Owning associate|FK [associate](./associate.mdx)|No|
+|assoc\_id|Owning associate|FK [associate](./associate)|No|
 |owner|The dialog, panel or whatever that owns this record|String(254)|No|
-|state|Normal = 0, Maximized = 1, Minimized = 2|Enum [ShowWindowState](./enums/showwindowstate.mdx)|No|
+|state|Normal = 0, Maximized = 1, Minimized = 2|Enum [ShowWindowState](./enums/showwindowstate)|No|
 |extraId|Spare ID, not yet in use|Id|Yes|
 |leftX|X of origin, left edge of widget|Int|No|
 |upperY|Y of origin, upper edge of widget|Int|No|
@@ -27,9 +27,9 @@ Stores the position and size of each window, so they can be shown in the same pl
 |height|The height of the widget|Int|No|
 |extraInfo|Extra information - show state, or whatever is required|String(254)|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

@@ -1,13 +1,12 @@
 ---
-title: locatecontact_new
+title: "locatecontact_new"
 keywords: mdoprovider mdo provider locatecontact_new
-description: Provider for selecting a Contact, including search on persons that match as well as contacts. this provider will return contact records, even for person matches.
+description: "Provider for selecting a Contact, including search on persons that match as well as contacts. this provider will return contact records, even for person matches."
 generated: true
 content_type: reference
 envir: online
 ---
 
-## "locatecontact_new" MDO List
 Provider for selecting a Contact, including search on persons that match as well as contacts. this provider will
 return contact records, even for person matches.
 
@@ -17,25 +16,27 @@ but the id = contact-id, not John Rowling's person id.
 The type is always "Contact".
 
 
+
 Returns Contact items:
+
 
 
 id = contact id,
 
 
+
 Name = contact.name + department or person first+last name (contact name + department)
+
 
 
 ExtraInfo = contact_id,
 
 
+
 Type = "Contact"
 
-Implemented by the LocateContactProvider class.
+Implemented by the `SuperOffice.CRM.Lists.LocateContactProvider` class.
 The name of the MDO list is 'locatecontact_new'.
-
-
-
 
 ## Sample Request
 
@@ -85,10 +86,10 @@ foreach (var item in listProvider.RootItems) {
 
 ## Related MDO Lists
 
-* "locatecontact_newheadings"
-* "locatecontact_newheadingswithallitem"
-* "locatecontact_newheadingswithallitemwithnoselection"
-* "locatecontact_newheadingswithnoselection"
-* "locatecontact_newwithallitem"
-* "locatecontact_newwithallitemwithnoselection"
-* "locatecontact_newwithnoselection"
+* `locatecontact_newheadings`
+* `locatecontact_newheadingswithallitem`
+* `locatecontact_newheadingswithallitemwithnoselection`
+* `locatecontact_newheadingswithnoselection`
+* `locatecontact_newwithallitem`
+* `locatecontact_newwithallitemwithnoselection`
+* `locatecontact_newwithnoselection`

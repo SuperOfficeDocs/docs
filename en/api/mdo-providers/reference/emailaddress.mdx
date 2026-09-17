@@ -1,13 +1,12 @@
 ---
-title: emailaddress
+title: "emailaddress"
 keywords: mdoprovider mdo provider emailaddress
-description: List of e-mail addresses matching the search value Searches e-mail address, person name, company name. E-mail address matches - return e-mail addresses + owner name (person or contact name) Person name matches - return all e-mail addresses for matched persons Company name matches. return all persons + first e-mail address for matched persons. 
+description: "List of e-mail addresses matching the search value Searches e-mail address, person name, company name. E-mail address matches: return e-mail addresses + owner name (person or contact name) . Person name matches: return all e-mail addresses for matched persons . Company name matches. return all persons + first e-mail address for matched persons. ."
 generated: true
 content_type: reference
 envir: online
 ---
 
-## "emailaddress" MDO List
 List of e-mail addresses matching the search value
 Searches e-mail address, person name, company name.
 
@@ -57,16 +56,15 @@ Type = "Person" or "Contact"
 
 
 
-Implemented by the EmailAddressProvider class.
+Implemented by the `SuperOffice.CRM.Lists.EmailAddressProvider` class.
 The name of the MDO list is 'emailaddress'.
 
 ## Additional Attributes
 
 | Description | Name | Example Value |
 |-----|-----|------|
-|excludeEmailDescription| |false|
+|excludeEmailDescription| false||
 |Operator used for search. Available values: 'contains', 'startsWith'. Default value is 'contains'.| operator|contains|
-
 
 
 
@@ -94,35 +92,35 @@ foreach (var item in listProvider.RootItems) {
 
 |Id   | Name  |StyleHint|ExtraInfo |
 | --- | ----- | ------- | -------- |
-|11|Brede Bredesen &lt;qa.testbruker@superoffice.com&gt;||qa.testbruker@superoffice.com|
-|12|Cato Carlsson &lt;qa.testbruker@superoffice.com&gt;|nomail|qa.testbruker@superoffice.com|
-|13|Donald Duck &lt;qa.testbruker@superoffice.com&gt;||qa.testbruker@superoffice.com|
-|14|Erik Eide &lt;qa.testbruker@superoffice.com&gt;||qa.testbruker@superoffice.com|
-|15|Frode Freestad &lt;qa.testbruker@superoffice.com&gt;||qa.testbruker@superoffice.com|
-|16|Geir Grønbeck &lt;qa.testbruker@superoffice.com&gt;|nomail|qa.testbruker@superoffice.com|
-|17|Hans Hansen &lt;qa.testbruker@superoffice.com&gt;||qa.testbruker@superoffice.com|
-|18|Ingrid Istad &lt;qa.testbruker@superoffice.com&gt;||qa.testbruker@superoffice.com|
-|19|Arne Arnesen &lt;qa.testbruker@superoffice.com&gt;||qa.testbruker@superoffice.com|
-|20|Admin Adminson &lt;qa.testbruker@superoffice.com&gt;||qa.testbruker@superoffice.com|
-|23|Arne Arnesen &lt;qa0@superoffice.com&gt;||qa0@superoffice.com|
-|24|Arnt Arntsen &lt;qa5@superoffice.com&gt;|nomail|qa5@superoffice.com|
-|25|Arnhild Arvestad &lt;qa.testbruker@superoffice.com&gt;||qa.testbruker@superoffice.com|
-|26|Arjan Abelsen &lt;qa.testbruker@superoffice.com&gt;||qa.testbruker@superoffice.com|
-|91|Britt Bærum &lt;qa5@superoffice.com&gt;||qa5@superoffice.com|
-|92|Bente Båstad &lt;qa5@superoffice.com&gt;|nomail|qa5@superoffice.com|
-|93|Bjørn Bjørnsen &lt;qa5@superoffice.com&gt;||qa5@superoffice.com|
-|94|Bjørge Bastesen &lt;qa5@superoffice.com&gt;||qa5@superoffice.com|
-|95|Carl-Oskar Cederström &lt;qa5@superoffice.com&gt;||qa5@superoffice.com|
-|96|Cidrik Culien &lt;qa5@superoffice.com&gt;|nomail|qa5@superoffice.com|
-|97|Cecilie Carlsen &lt;qa5@superoffice.com&gt;||qa5@superoffice.com|
+|11|Brede Bredesen &lt;qa.testbruker@superoffice.com>||qa.testbruker@superoffice.com|
+|12|Cato Carlsson &lt;qa.testbruker@superoffice.com>|nomail|qa.testbruker@superoffice.com|
+|13|Donald Duck &lt;qa.testbruker@superoffice.com>||qa.testbruker@superoffice.com|
+|14|Erik Eide &lt;qa.testbruker@superoffice.com>||qa.testbruker@superoffice.com|
+|15|Frode Freestad &lt;qa.testbruker@superoffice.com>||qa.testbruker@superoffice.com|
+|16|Geir Grønbeck &lt;qa.testbruker@superoffice.com>|nomail|qa.testbruker@superoffice.com|
+|17|Hans Hansen &lt;qa.testbruker@superoffice.com>||qa.testbruker@superoffice.com|
+|18|Ingrid Istad &lt;qa.testbruker@superoffice.com>||qa.testbruker@superoffice.com|
+|19|Arne Arnesen &lt;qa.testbruker@superoffice.com>||qa.testbruker@superoffice.com|
+|20|Admin Adminson &lt;qa.testbruker@superoffice.com>||qa.testbruker@superoffice.com|
+|23|Arne Arnesen &lt;qa0@superoffice.com>||qa0@superoffice.com|
+|24|Arnt Arntsen &lt;qa5@superoffice.com>|nomail|qa5@superoffice.com|
+|25|Arnhild Arvestad &lt;qa.testbruker@superoffice.com>||qa.testbruker@superoffice.com|
+|26|Arjan Abelsen &lt;qa.testbruker@superoffice.com>||qa.testbruker@superoffice.com|
+|91|Britt Bærum &lt;qa5@superoffice.com>||qa5@superoffice.com|
+|92|Bente Båstad &lt;qa5@superoffice.com>|nomail|qa5@superoffice.com|
+|93|Bjørn Bjørnsen &lt;qa5@superoffice.com>||qa5@superoffice.com|
+|94|Bjørge Bastesen &lt;qa5@superoffice.com>||qa5@superoffice.com|
+|95|Carl-Oskar Cederström &lt;qa5@superoffice.com>||qa5@superoffice.com|
+|96|Cidrik Culien &lt;qa5@superoffice.com>|nomail|qa5@superoffice.com|
+|97|Cecilie Carlsen &lt;qa5@superoffice.com>||qa5@superoffice.com|
 
 
 ## Related MDO Lists
 
-* "emailaddressheadings"
-* "emailaddressheadingswithallitem"
-* "emailaddressheadingswithallitemwithnoselection"
-* "emailaddressheadingswithnoselection"
-* "emailaddresswithallitem"
-* "emailaddresswithallitemwithnoselection"
-* "emailaddresswithnoselection"
+* `emailaddressheadings`
+* `emailaddressheadingswithallitem`
+* `emailaddressheadingswithallitemwithnoselection`
+* `emailaddressheadingswithnoselection`
+* `emailaddresswithallitem`
+* `emailaddresswithallitemwithnoselection`
+* `emailaddresswithnoselection`

@@ -1,6 +1,6 @@
 ---
-title: s_message table
-description: A message used in a shipment. Can be html and/or plain text
+title: "s_message table"
+description: "A message used in a shipment. Can be html and/or plain text"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import SMessage from "./includes/s-message.mdx";
 
-## s\_message Table (335)
-
 A message used in a shipment. Can be html and/or plain text
+
+Table number: 335
 
 ## Fields
 
@@ -23,20 +23,20 @@ A message used in a shipment. Can be html and/or plain text
 |description|Describes this message|String(255)|Yes|
 |subject|The mail subject field of the message|String(255)|Yes|
 |header\_field|Extra header fields added to mail. Must be formatted correctly|Clob|Yes|
-|flags|Identifies if HTML or plain message is included in message.|Enum [ShipmentMessageType](./enums/shipmentmessagetype.mdx)|No|
+|flags|Identifies if HTML or plain message is included in message.|Enum [ShipmentMessageType](./enums/shipmentmessagetype)|No|
 |folder\_id|The folder which this message belongs to. -1 indicates that the message is on the root|Int|No|
 |inline\_images|Should images be included inline?|Bool|Yes|
 |register\_views|Register message views?|Bool|Yes|
 |access\_key|Key used for access verification|String(255)|Yes|
 |registered|Registered when|UtcDateTime|Yes|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|Yes|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|Yes|
 |updated|Last updated when|UtcDateTime|Yes|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|Yes|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|Yes|
 |updatedCount|Number of updates made to this record|UShort|Yes|
-|document\_message|The SM document used as template for this mailing|FK [document](./document.mdx)|Yes|
+|document\_message|The SM document used as template for this mailing|FK [document](./document)|Yes|
 |long\_description|A field for a long description of this template|String(4000)|Yes|
 |design|Will contain the design part of a message. The format will vary based on the type of designer used to create the message|Clob|Yes|
-|designtype|Enum containing the type of the design|Enum [DesignType](./enums/designtype.mdx)|No|
+|designtype|Enum containing the type of the design|Enum [DesignType](./enums/designtype)|No|
 
 
 ![s_message table relationship diagram](/media/loc/en/database/tables/s_message.png)

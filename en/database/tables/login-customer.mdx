@@ -1,6 +1,6 @@
 ---
-title: login_customer table
-description: This table contains entries for customer sessions. At first only used for Soap logins, but will later also be used for web logins
+title: "login_customer table"
+description: "This table contains entries for customer sessions. At first only used for Soap logins, but will later also be used for web logins"
 generated: true
 content_type: reference
 envir: online
@@ -8,16 +8,16 @@ envir: online
 
 import LoginCustomer from "./includes/login-customer.mdx";
 
-## login\_customer Table (298)
-
 This table contains entries for customer sessions. At first only used for Soap logins, but will later also be used for web logins
+
+Table number: 298
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|customer\_id|The id of the customer this entry references.|FK [person](./person.mdx)|No|
+|customer\_id|The id of the customer this entry references.|FK [person](./person)|No|
 |session\_key|A random 32 characters value used as authentication key for the session.|String(32)|No|
 |expire|The last time this session was active.|DateTime|Yes|
 |seconds\_to\_live|The session key will expire after a given number of seconds.|Int|No|

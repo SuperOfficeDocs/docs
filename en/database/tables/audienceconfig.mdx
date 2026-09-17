@@ -1,6 +1,6 @@
 ---
-title: AudienceConfig table
-description: Configuration data for Audience core and webparts
+title: "AudienceConfig table"
+description: "Configuration data for Audience core and webparts"
 generated: true
 content_type: reference
 envir: online
@@ -8,23 +8,23 @@ envir: online
 
 import Audienceconfig from "./includes/audienceconfig.mdx";
 
-## AudienceConfig Table (236)
-
 Configuration data for Audience core and webparts
+
+Table number: 236
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |AudienceConfig\_id|Primary key|PK|No|
-|audienceLayoutId|The name of the installed instance of Audience - must match the web.config file|FK [AudienceLayout](./audiencelayout.mdx)|No|
+|audienceLayoutId|The name of the installed instance of Audience - must match the web.config file|FK [AudienceLayout](./audiencelayout)|No|
 |configName|The name of the configuration parameter|String(239)|No|
 |configValue|The value of the configuration parameter|String(239)|No|
 |seqno|Sequence number, for chaining multiple records in case the value is too long|UShort|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

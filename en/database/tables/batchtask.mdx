@@ -1,6 +1,6 @@
 ---
-title: BatchTask table
-description: Batch task request details, corresponding to the message body of a batch request message
+title: "BatchTask table"
+description: "Batch task request details, corresponding to the message body of a batch request message"
 generated: true
 content_type: reference
 envir: online
@@ -8,16 +8,16 @@ envir: online
 
 import Batchtask from "./includes/batchtask.mdx";
 
-## BatchTask Table (243)
-
 Batch task request details, corresponding to the message body of a batch request message
+
+Table number: 243
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |BatchTask\_id|Primary key|PK|No|
-|BatchTaskDefinition\_id|Batch task definition, which is populated from code attributes|FK [BatchTaskDefinition](./batchtaskdefinition.mdx)|Yes|
+|BatchTaskDefinition\_id|Batch task definition, which is populated from code attributes|FK [BatchTaskDefinition](./batchtaskdefinition)|Yes|
 |description|Description of task (for monitoring and debugging)|String(254)|No|
 |dbTag|Database tag that this task applies to, to ensure tasks are execute on the correct database only|String(39)|No|
 |state|0=Unknown; 1=New; 2=Assigned; 3=Started; 4=Succeeded; 5=Failed|Int|No|
@@ -30,9 +30,9 @@ Batch task request details, corresponding to the message body of a batch request
 |progressPercent|Task progress, in percent of estimated total|UShort|Yes|
 |progressDescription|Descriptive text for the current stage|String(254)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|&apos;heartbeat&apos; that is updated once a minute by the batch task process|UtcDateTime|No|
-|updated\_associate\_id|&apos;heartbeat&apos; that is updated once a minute by the batch task process|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|&apos;heartbeat&apos; that is updated once a minute by the batch task process|FK [associate](./associate)|No|
 |updatedCount|&apos;heartbeat&apos; that is updated once a minute by the batch task process|UShort|No|
 |FileName|The filename related to the batchtask.|String(260)|Yes|
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_GetUnsanitizedEMailFromAttachmentIdRequest"></a> Class EMail\_GetUnsanitizedEMailFromAttachmentIdRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_GetUnsanitizedEMailFromAttachmentIdRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_GetUnsanitizedEMailFromAttachmentIdRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_GetUnsanitizedEMailFromAttachmentIdRequest)
+[EMail\_GetUnsanitizedEMailFromAttachmentIdRequest](SuperOffice.WebApi.Data.EMail\_GetUnsanitizedEMailFromAttachmentIdRequest.md)
 
 #### Inherited Members
 

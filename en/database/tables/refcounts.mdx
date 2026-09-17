@@ -1,6 +1,6 @@
 ---
-title: RefCounts table
-description: Number counter for all tables that generate numbers, e.g. templates, contacts...   This table is used for the number allocation system and should not be confused with sequence, used for allocating internal ID&apos;s. This table is replicated during generation of satellites and during local update for travellers, using special logic. By default it contains rows for the SuperOffice standard counters, including one row for each DocTemplate record.  It is permissible to add new rows to this table, and such records are maintainable through the Maintenance client.  Changing the contents of the standard records is not recommended. 
+title: "RefCounts table"
+description: "Number counter for all tables that generate numbers, e.g. templates, contacts... This table is used for the number allocation system and should not be confused with sequence, used for allocating internal ID&apos;s. This table is replicated during generation of satellites and during local update for travellers, using special logic. By default it contains rows for the SuperOffice standard counters, including one row for each DocTemplate record. It is permissible to add new rows to this table, and such records are maintainable through the Maintenance client. Changing the contents of the standard records is not recommended."
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Refcounts from "./includes/refcounts.mdx";
 
-## RefCounts Table (171)
-
 Number counter for all tables that generate numbers, e.g. templates, contacts...   This table is used for the number allocation system and should not be confused with sequence, used for allocating internal ID&apos;s. This table is replicated during generation of satellites and during local update for travellers, using special logic. By default it contains rows for the SuperOffice standard counters, including one row for each DocTemplate record.  It is permissible to add new rows to this table, and such records are maintainable through the Maintenance client.  Changing the contents of the standard records is not recommended. 
+
+Table number: 171
 
 ## Fields
 
@@ -22,11 +22,11 @@ Number counter for all tables that generate numbers, e.g. templates, contacts...
 |currentValue|Current value of counter|Id|No|
 |travelPrefix|size of prefix for Travel use of ths counter|UInt|No|
 |satPrefix|size of prefix for Satellite use of this counter|UInt|No|
-|flags|Unique, active, read-only, allow blank, …|Enum [RefcountFlags](./enums/refcountflags.mdx)|No|
+|flags|Unique, active, read-only, allow blank, …|Enum [RefcountFlags](./enums/refcountflags)|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

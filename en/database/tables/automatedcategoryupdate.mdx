@@ -1,6 +1,6 @@
 ---
-title: AutomatedCategoryUpdate table
-description: Info on how to autoupdate category when changing sale or leadstatus on person
+title: "AutomatedCategoryUpdate table"
+description: "Info on how to autoupdate category when changing sale or leadstatus on person"
 generated: true
 content_type: reference
 envir: online
@@ -8,24 +8,24 @@ envir: online
 
 import Automatedcategoryupdate from "./includes/automatedcategoryupdate.mdx";
 
-## AutomatedCategoryUpdate Table (550)
-
 Info on how to autoupdate category when changing sale or leadstatus on person
+
+Table number: 551
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |automatedcategoryupdate\_id|Primary key|PK|No|
-|trigger\_type|The type of change to trigger the auto update|Enum [CategoryUpdateTrigger](./enums/categoryupdatetrigger.mdx)|Yes|
+|trigger\_type|The type of change to trigger the auto update|Enum [CategoryUpdateTrigger](./enums/categoryupdatetrigger)|Yes|
 |user\_confirmation|Whether to ask the user for confirmation before applying the autoupdate|Bool|Yes|
-|default\_category|The default category id to update to, and the actual new value if no user confirmation is needed|FK [Category](./category.mdx)|Yes|
+|default\_category|The default category id to update to, and the actual new value if no user confirmation is needed|FK [Category](./category)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
-|leadstatus\_id|The leadstatus id to match on person, to trigger autoupdate of category|FK [leadstatus](./leadstatus.mdx)|Yes|
+|leadstatus\_id|The leadstatus id to match on person, to trigger autoupdate of category|FK [leadstatus](./leadstatus)|Yes|
 
 
 ![AutomatedCategoryUpdate table relationship diagram](/media/loc/en/database/tables/AutomatedCategoryUpdate.png)

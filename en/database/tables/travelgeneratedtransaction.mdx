@@ -1,6 +1,6 @@
 ---
-title: travelgeneratedtransaction table
-description: Record of all generated replication data files from this database (*.dwn files from mother database to child, *.up from child database to mother)
+title: "travelgeneratedtransaction table"
+description: "Record of all generated replication data files from this database (*.dwn files from mother database to child, *.up from child database to mother)"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Travelgeneratedtransaction from "./includes/travelgeneratedtransaction.mdx";
 
-## travelgeneratedtransaction Table (30)
-
 Record of all generated replication data files from this database (*.dwn files from mother database to child, *.up from child database to mother)
+
+Table number: 30
 
 ## Fields
 
@@ -18,15 +18,15 @@ Record of all generated replication data files from this database (*.dwn files f
 |------|-------------|------|:----:|
 |travelgeneratedtransaction\_id|Primary key|PK|No|
 |travel\_id|Central=0, Departm.=H01000000-H7F000000, Travel=assoc_id|Id|Yes|
-|tranlogfirst\_id|This up/dwnfile holds transaction from traveltransactionlog_id = this number|FK [traveltransactionlog](./traveltransactionlog.mdx)|Yes|
-|tranloglast\_id|This up/dwnfile holds transaction to traveltransactionlog_id = this number|FK [traveltransactionlog](./traveltransactionlog.mdx)|Yes|
+|tranlogfirst\_id|This up/dwnfile holds transaction from traveltransactionlog_id = this number|FK [traveltransactionlog](./traveltransactionlog)|Yes|
+|tranloglast\_id|This up/dwnfile holds transaction to traveltransactionlog_id = this number|FK [traveltransactionlog](./traveltransactionlog)|Yes|
 |recordstatus|gen, sent, ack.|UShort|Yes|
 |transmissionnumber|sequence pr. user|UInt|Yes|
 |transmissiontype|File or direct communication|UShort|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

@@ -1,6 +1,6 @@
 ---
-title: SaleTypeQuoteAttachment table
-description: Default attachments to quotes linked to sales of this type
+title: "SaleTypeQuoteAttachment table"
+description: "Default attachments to quotes linked to sales of this type"
 generated: true
 content_type: reference
 envir: online
@@ -8,22 +8,22 @@ envir: online
 
 import Saletypequoteattachment from "./includes/saletypequoteattachment.mdx";
 
-## SaleTypeQuoteAttachment Table (446)
-
 Default attachments to quotes linked to sales of this type
+
+Table number: 446
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |saletypequoteattachment\_id|Primary key|PK|No|
-|SaleTypeId|Link to sale type|FK [SaleType](./saletype.mdx)|No|
-|DocumentId|Link to document|FK [document](./document.mdx)|No|
+|SaleTypeId|Link to sale type|FK [SaleType](./saletype)|No|
+|DocumentId|Link to document|FK [document](./document)|No|
 |DefaultIncluded|Should this be a standard attachment (default state is &apos;include&apos;)|Bool|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

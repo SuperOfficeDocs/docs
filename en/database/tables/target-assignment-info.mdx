@@ -1,6 +1,6 @@
 ---
-title: target_assignment_info table
-description: Linking associate, company or user group target and other information with target values
+title: "target_assignment_info table"
+description: "Linking associate, company or user group target and other information with target values"
 generated: true
 content_type: reference
 envir: online
@@ -8,24 +8,24 @@ envir: online
 
 import TargetAssignmentInfo from "./includes/target-assignment-info.mdx";
 
-## target\_assignment\_info Table (517)
-
 Linking associate, company or user group target and other information with target values
+
+Table number: 518
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |target\_assignment\_info\_id|Primary key|PK|No|
-|associate\_id|Associate who owns this target|FK [associate](./associate.mdx)|Yes|
-|contact\_id|Company who owns this target|FK [contact](./contact.mdx)|Yes|
-|usergroup\_id|User group who owns this target|FK [UserGroup](./usergroup.mdx)|Yes|
-|currency\_id|Currency for value|FK [Currency](./currency.mdx)|Yes|
+|associate\_id|Associate who owns this target|FK [associate](./associate)|Yes|
+|contact\_id|Company who owns this target|FK [contact](./contact)|Yes|
+|usergroup\_id|User group who owns this target|FK [UserGroup](./usergroup)|Yes|
+|currency\_id|Currency for value|FK [Currency](./currency)|Yes|
 |locked|Locked, should not be editable|Bool|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 |target\_dimension\_item\_id|Dimension item this target assignment is in|Int|Yes|
 

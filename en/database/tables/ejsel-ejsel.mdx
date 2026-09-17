@@ -1,6 +1,6 @@
 ---
-title: ejsel_ejsel table
-description: This table defines sources for complex selections in a many/many relationship
+title: "ejsel_ejsel table"
+description: "This table defines sources for complex selections in a many/many relationship"
 generated: true
 content_type: reference
 envir: online
@@ -8,17 +8,17 @@ envir: online
 
 import EjselEjsel from "./includes/ejsel-ejsel.mdx";
 
-## ejsel\_ejsel Table (392)
-
 This table defines sources for complex selections in a many/many relationship
+
+Table number: 392
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|Primary key|PK|No|
-|parent|The id of the selection for which this item is a source|FK [ejselection](./ejselection.mdx)|No|
-|child|The id of the child item selection|FK [ejselection](./ejselection.mdx)|No|
+|parent|The id of the selection for which this item is a source|FK [ejselection](./ejselection)|No|
+|child|The id of the child item selection|FK [ejselection](./ejselection)|No|
 |operation|The operation to be performed when this source is added to the selection|Int|No|
 |order\_pos|The order in which the operations are performed|Int|No|
 

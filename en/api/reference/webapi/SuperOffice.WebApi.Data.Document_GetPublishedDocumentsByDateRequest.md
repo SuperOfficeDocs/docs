@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_GetPublishedDocumentsByDateRequest"></a> Class Document\_GetPublishedDocumentsByDateRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_GetPublishedDocumentsByDateRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_GetPublishedDocumentsByDateRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_GetPublishedDocumentsByDateRequest)
+[Document\_GetPublishedDocumentsByDateRequest](SuperOffice.WebApi.Data.Document\_GetPublishedDocumentsByDateRequest.md)
 
 #### Inherited Members
 

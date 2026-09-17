@@ -1,6 +1,6 @@
-# Interface IResourceAgent {#SuperOffice_WebApi_Agents_IResourceAgent}
+# <a id="SuperOffice_WebApi_Agents_IResourceAgent"></a> Interface IResourceAgent
 
-Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
+Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 String resource substitution management.
@@ -11,12 +11,12 @@ public interface IResourceAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
+[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
 
-### ActivateResourceSubstitutionAsync\(string, string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IResourceAgent_ActivateResourceSubstitutionAsync_System_String_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IResourceAgent_ActivateResourceSubstitutionAsync_System_String_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> ActivateResourceSubstitutionAsync\(string, string, bool, RequestOptions\)
 
 Activate or deactive a resource substitution for one or more cultures
 
@@ -38,7 +38,7 @@ The .NET culture string; if blank, then ALL substitutions for this resource will
 
 New status of override
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -48,7 +48,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### DeleteResourceSubstitutionAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IResourceAgent_DeleteResourceSubstitutionAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IResourceAgent_DeleteResourceSubstitutionAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> DeleteResourceSubstitutionAsync\(string, string, RequestOptions\)
 
 Permanentely delete a resource substitution for one or more cultures
 
@@ -66,7 +66,7 @@ The name of the resource, without any brackets
 
 The .NET culture string; if blank, then ALL substitutions for this resource will be dropped
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -76,7 +76,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### GetResourceSubstitutionsAsync\(string\[\], string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IResourceAgent_GetResourceSubstitutionsAsync_System_String___System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IResourceAgent_GetResourceSubstitutionsAsync_System_String___System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetResourceSubstitutionsAsync\(string\[\], string, bool, RequestOptions\)
 
 Get substitutions for some or all resources for one culture
 
@@ -98,17 +98,17 @@ Array of names of resources for which overrides are sought; if empty, then get a
 
 If true, then only resources with active substitutions will be returned; if false then ALL existing overrides will be returned
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ResourceOverride](/en/api/reference/webapi/SuperOffice.WebApi.Data.ResourceOverride)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ResourceOverride](SuperOffice.WebApi.Data.ResourceOverride.md)\[\]\>
 
 Array of override objects, empty if there are none
 
-### IsResourceSubstitutionActiveAsync\(string\[\], string, RequestOptions\) {#SuperOffice_WebApi_Agents_IResourceAgent_IsResourceSubstitutionActiveAsync_System_String___System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IResourceAgent_IsResourceSubstitutionActiveAsync_System_String___System_String_SuperOffice_WebApi_RequestOptions_"></a> IsResourceSubstitutionActiveAsync\(string\[\], string, RequestOptions\)
 
 Determine if resource substitution/override is active, globally or for a subset of resources/cultures
 
@@ -126,17 +126,17 @@ Array of names of resources for which overrides are sought; if empty, then get t
 
 .NET culture string; if empty, then get for all cultures (unless resourceName
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ResourceOverride](/en/api/reference/webapi/SuperOffice.WebApi.Data.ResourceOverride)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ResourceOverride](SuperOffice.WebApi.Data.ResourceOverride.md)\[\]\>
 
 Array of override objects, empty if there are none; the ResourceValue member is not set by this call
 
-### SetResourceSubstitutionAsync\(string, string, string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IResourceAgent_SetResourceSubstitutionAsync_System_String_System_String_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IResourceAgent_SetResourceSubstitutionAsync_System_String_System_String_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> SetResourceSubstitutionAsync\(string, string, string, bool, RequestOptions\)
 
 Create or update a resource substitution
 
@@ -162,7 +162,7 @@ The .NET culture string
 
 Is the subsitution now active
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 

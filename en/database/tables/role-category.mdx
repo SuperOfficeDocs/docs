@@ -1,6 +1,6 @@
 ---
-title: role_category table
-description: Category membership associated with a role
+title: "role_category table"
+description: "Category membership associated with a role"
 generated: true
 content_type: reference
 envir: online
@@ -8,18 +8,18 @@ envir: online
 
 import RoleCategory from "./includes/role-category.mdx";
 
-## role\_category Table (325)
-
 Category membership associated with a role
+
+Table number: 325
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|role|The id of the group. Deprecated.|FK [ej_role](./ej-role.mdx)|No|
-|category|The id of the category.|FK [ej_category](./ej-category.mdx)|No|
-|crm\_role|Link to Role|FK [Role](./role.mdx)|Yes|
+|role|The id of the group. Deprecated.|FK [ej_role](./ej-role)|No|
+|category|The id of the category.|FK [ej_category](./ej-category)|No|
+|crm\_role|Link to Role|FK [Role](./role)|Yes|
 
 
 ![role_category table relationship diagram](/media/loc/en/database/tables/role_category.png)

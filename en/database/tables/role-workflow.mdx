@@ -1,6 +1,6 @@
 ---
-title: role_workflow table
-description: Knowledge base workflow access rights associated with a role
+title: "role_workflow table"
+description: "Knowledge base workflow access rights associated with a role"
 generated: true
 content_type: reference
 envir: online
@@ -8,19 +8,19 @@ envir: online
 
 import RoleWorkflow from "./includes/role-workflow.mdx";
 
-## role\_workflow Table (327)
-
 Knowledge base workflow access rights associated with a role
+
+Table number: 327
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|role|The id of the group. Deprecated.|FK [ej_role](./ej-role.mdx)|No|
-|workflow\_id|The id of the workflow.|FK [kb_workflow](./kb-workflow.mdx)|No|
+|role|The id of the group. Deprecated.|FK [ej_role](./ej-role)|No|
+|workflow\_id|The id of the workflow.|FK [kb_workflow](./kb-workflow)|No|
 |workflow\_access|The access level.|Int|Yes|
-|crm\_role|Link to Role|FK [Role](./role.mdx)|Yes|
+|crm\_role|Link to Role|FK [Role](./role)|Yes|
 
 
 ![role_workflow table relationship diagram](/media/loc/en/database/tables/role_workflow.png)

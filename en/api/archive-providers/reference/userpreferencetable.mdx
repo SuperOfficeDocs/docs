@@ -1,54 +1,52 @@
 ---
-title: UserPreferenceTable
-description: Archive provider for preferences that live in the <b>userpreference</b> table. MappedPreferenceProvider for those that
+title: "UserPreferenceTable"
+description: "Archive provider for preferences that live in the **userpreference** table. `MappedPreferenceProvider` for those that actually live in the Service tables."
 keywords: UserPreferenceTable archive provider
 generated: true
 content_type: reference
 envir: onsite, online
 ---
 
-## "UserPreferenceTable"
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.UserPreferenceTableProvider` inside NetServer's SODatabase assembly.
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.UserPreferenceTableProvider inside NetServer's SODatabase assembly.
-
-Archive provider for preferences that live in the <b>userpreference</b> table. [MappedPreferenceProvider](./mappedpreferences) for those that
+Archive provider for preferences that live in the **userpreference** table. `MappedPreferenceProvider` for those that
 actually live in the Service tables.
 
 ## Supported Entities
 | Name | Description |
 | ---- | ----- |
-|"default"|default|
-|"system"|system|
 |"database"|Database|
+|"default"|default|
 |"group"|Group|
+|"system"|system|
 |"user"|User|
 
 ## Supported Columns
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
-|getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
-|getNoRows|bool|GetNone: Do not get any rows from the archive|  |
-|userpreferenceId|int|Database ID: The database ID of the row in the userpreference table| x |
 |deflevel|int|Level: The level at which the preference is defined; closest-to-the-user wins| x |
 |deflevelname|string|Level: The type of the preference value (string, company, yes/no etc)| x |
+|getAllRows|bool|GetAll: Get all rows of archive - use with care, you may be fetching the whole database|  |
+|getNoRows|bool|GetNone: Do not get any rows from the archive|  |
 |maxlevel|int|Max level: The maximum (closest to the user) level this preference is allowed on| x |
 |maxlevelname|string|Max level: The maximum (closest to the user) level this preference is allowed on| x |
-|ownerId|int|Owner: The owner of the preference value| x |
 |owner|string|Who: Who is the owner of this preference value| x |
-|prefsection|string|Section: The prefsection field in the database| x |
+|ownerId|int|Owner: The owner of the preference value| x |
 |prefkey|string|Key: The prefkey field in the database| x |
+|prefsection|string|Section: The prefsection field in the database| x |
 |prefvalue|string|Raw value: The raw value as it is in the database| x |
+|userpreferenceId|int|Database ID: The database ID of the row in the userpreference table| x |
 |value|string|Value: The value of the preference| x |
 
 ## Sample
 
 ```http!
-GET /api/v1/archive/UserPreferenceTable?$select=deflevelname,maxlevelname
+GET /api/v1/archive/UserPreferenceTable?$select=deflevel,maxlevel,ownerId,prefsection,value
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: `IArchiveAgent`.
 

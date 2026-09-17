@@ -1,28 +1,46 @@
 ---
-title: timezone
+title: "timezone"
 keywords: mdoprovider mdo provider timezone
-description: 
+description: "Provides the timezone list. If no search value is passed in the list is restricted to 'available' timezones"
 generated: true
 content_type: reference
 envir: online
 ---
 
-## "timezone" MDO List
+Provides the timezone list.
+
+
+If no search value is passed in the list is restricted to 'available' timezones
+
+
+
+AdditionalInfo = "[all]" returns all timezones
+
+
+
+AdditionalInfo = "123" returns all active timezones and the specific location
+
+
+
+AdditionalInfo = "locationId=123" returns only the given location.
+
+
+
+/// AdditionalInfo = "countryFlag=true" returns an iconhint for the country's flag.
 
 
 
 
-Implemented by the TimeZoneProvider class.
+Implemented by the `SuperOffice.CRM.Lists.TimeZoneProvider` class.
 The name of the MDO list is 'timezone'.
 
 ## Additional Attributes
 
 | Description | Name | Example Value |
 |-----|-----|------|
-|Get all timezones| |[all]|
-|Get all active timezones and the given location| |1234|
+|Get all timezones| [all]||
+|Get all active timezones and the given location| 1234||
 |Get the specific Timezone location| locationId|1234|
-
 
 
 
@@ -75,10 +93,10 @@ foreach (var item in listProvider.RootItems) {
 
 ## Related MDO Lists
 
-* "timezoneheadings"
-* "timezoneheadingswithallitem"
-* "timezoneheadingswithallitemwithnoselection"
-* "timezoneheadingswithnoselection"
-* "timezonewithallitem"
-* "timezonewithallitemwithnoselection"
-* "timezonewithnoselection"
+* `timezoneheadings`
+* `timezoneheadingswithallitem`
+* `timezoneheadingswithallitemwithnoselection`
+* `timezoneheadingswithnoselection`
+* `timezonewithallitem`
+* `timezonewithallitemwithnoselection`
+* `timezonewithnoselection`

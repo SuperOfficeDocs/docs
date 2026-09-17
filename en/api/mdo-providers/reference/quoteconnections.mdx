@@ -1,19 +1,18 @@
 ---
-title: quoteconnections
+title: "quoteconnections"
 keywords: mdoprovider mdo provider quoteconnections
-description: Retrieve the list of all defined Quote Connections - i.e. not the connectors (DLLs). ExtraInfo - "connectorname=Name-of-connector" - restricts results to connections defined by one particular connector.
+description: "Retrieve the list of all defined Quote Connections - i.e. not the connectors (DLLs). ExtraInfo: \"connectorname=Name-of-connector\" - restricts results to connections defined by one particular connector."
 generated: true
 content_type: reference
 envir: online
 ---
 
-## "quoteconnections" MDO List
 Retrieve the list of all defined Quote Connections - i.e. not the connectors (DLLs).
 ExtraInfo: "connectorname=Name-of-connector" - restricts results to connections defined by one particular connector.
 
-Implementation relies on the [QuoteConnectionProvider](/en/api/archive-providers/reference/quoteconnection) archivelist, and simply reformats its data
+Implementation relies on the `QuoteConnectionProvider` archivelist, and simply reformats its data
 
-Implemented by the QuoteConnections class.
+Implemented by the `SuperOffice.CRM.Lists.QuoteConnections` class.
 The name of the MDO list is 'quoteconnections'.
 
 ## Additional Attributes
@@ -21,7 +20,6 @@ The name of the MDO list is 'quoteconnections'.
 | Description | Name | Example Value |
 |-----|-----|------|
 |Name of the connector to get connections for| connectorname|Custom Quote Connector Name|
-
 
 
 
@@ -57,10 +55,10 @@ foreach (var item in listProvider.RootItems) {
 
 ## Related MDO Lists
 
-* "quoteconnectionsheadings"
-* "quoteconnectionsheadingswithallitem"
-* "quoteconnectionsheadingswithallitemwithnoselection"
-* "quoteconnectionsheadingswithnoselection"
-* "quoteconnectionswithallitem"
-* "quoteconnectionswithallitemwithnoselection"
-* "quoteconnectionswithnoselection"
+* `quoteconnectionsheadings`
+* `quoteconnectionsheadingswithallitem`
+* `quoteconnectionsheadingswithallitemwithnoselection`
+* `quoteconnectionsheadingswithnoselection`
+* `quoteconnectionswithallitem`
+* `quoteconnectionswithallitemwithnoselection`
+* `quoteconnectionswithnoselection`

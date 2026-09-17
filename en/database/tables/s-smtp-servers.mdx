@@ -1,6 +1,6 @@
 ---
-title: s_smtp_servers table
-description: Contains the smtp server for a shipment
+title: "s_smtp_servers table"
+description: "Contains the smtp server for a shipment"
 generated: true
 content_type: reference
 envir: online
@@ -8,16 +8,16 @@ envir: online
 
 import SSmtpServers from "./includes/s-smtp-servers.mdx";
 
-## s\_smtp\_servers Table (390)
-
 Contains the smtp server for a shipment
+
+Table number: 390
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|Primary key|PK|No|
-|shipment\_id|Reference to the shipment which this smtp server belongs to|FK [s_shipment](./s-shipment.mdx)|No|
+|shipment\_id|Reference to the shipment which this smtp server belongs to|FK [s_shipment](./s-shipment)|No|
 |smtp\_server|The actual smtp server|String(255)|Yes|
 |smtp\_port|The port of the SMTP server.|Int|No|
 

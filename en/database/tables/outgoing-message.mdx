@@ -1,6 +1,6 @@
 ---
-title: outgoing_message table
-description: Delivery of outgoing messages to messageplugins, updated with status asynchroneously
+title: "outgoing_message table"
+description: "Delivery of outgoing messages to messageplugins, updated with status asynchroneously"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import OutgoingMessage from "./includes/outgoing-message.mdx";
 
-## outgoing\_message Table (407)
-
 Delivery of outgoing messages to messageplugins, updated with status asynchroneously
+
+Table number: 407
 
 ## Fields
 
@@ -23,9 +23,9 @@ Delivery of outgoing messages to messageplugins, updated with status asynchroneo
 |status\_description|Description of current status|String(255)|No|
 |plugin|Name of plugin|String(255)|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 
 
 ![outgoing_message table relationship diagram](/media/loc/en/database/tables/outgoing_message.png)

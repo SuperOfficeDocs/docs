@@ -1,15 +1,13 @@
 ---
-title: TemplateLanguage
-description: Archive Provider for retriving the registered languages for a given document template.
+title: "TemplateLanguage"
+description: "Archive Provider for retriving the registered languages for a given document template. The provider will use the document plugin to get the languages registered."
 keywords: TemplateLanguage archive provider
 generated: true
 content_type: reference
 envir: onsite, online
 ---
 
-## "TemplateLanguage"
-
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive___ListItems.TemplateLanguageProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.Archive___ListItems.TemplateLanguageProvider` inside NetServer's SODatabase assembly.
 
 Archive Provider for retriving the registered languages for a given document template.
 The provider will use the document plugin to get the languages registered.
@@ -28,12 +26,12 @@ The provider will use the document plugin to get the languages registered.
 ## Sample
 
 ```http!
-GET /api/v1/archive/TemplateLanguage?$select=
+GET /api/v1/archive/TemplateLanguage?$select=name
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: `IArchiveAgent`.
 

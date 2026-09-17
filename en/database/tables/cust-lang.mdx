@@ -1,6 +1,6 @@
 ---
-title: cust_lang table
-description: This table contains entries for customer languages.
+title: "cust_lang table"
+description: "This table contains entries for customer languages."
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import CustLang from "./includes/cust-lang.mdx";
 
-## cust\_lang Table (320)
-
 This table contains entries for customer languages.
+
+Table number: 320
 
 ## Fields
 
@@ -23,7 +23,7 @@ This table contains entries for customer languages.
 |web\_domains|The domains from where the user should originate (when surfing) in order to trigger this language. Commaseparated list.|String(255)|Yes|
 |email\_domains|Commaseparated list of toplevel domains from where an email should originate in order to trigger this language.|String(255)|Yes|
 |email\_header|The email header line for this language (&amp;apos;Please keep the subject in any replies...&amp;apos;).|String(255)|Yes|
-|kb\_root|The reference to the FAQ category which is the root category for this language (for separating the FAQ per language).|FK [kb_category](./kb-category.mdx)|Yes|
+|kb\_root|The reference to the FAQ category which is the root category for this language (for separating the FAQ per language).|FK [kb_category](./kb-category)|Yes|
 |is\_default|Bool indicating whether this language is the default (fallback) language.|Bool|Yes|
 |iso\_code|A two letter iso code for this customer language|String(63)|Yes|
 

@@ -1,6 +1,6 @@
 ---
-title: hierarchy table
-description: This table contains folders used to group the extra tables in the system.
+title: "hierarchy table"
+description: "This table contains folders used to group the extra tables in the system."
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Hierarchy from "./includes/hierarchy.mdx";
 
-## hierarchy Table (306)
-
 This table contains folders used to group the extra tables in the system.
+
+Table number: 306
 
 ## Fields
 
@@ -18,13 +18,13 @@ This table contains folders used to group the extra tables in the system.
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
 |domain|Domain seperating the different hierarchy|Int|No|
-|parent\_id|Parent table|FK [hierarchy](./hierarchy.mdx)|No|
+|parent\_id|Parent table|FK [hierarchy](./hierarchy)|No|
 |name|Name of this hierarchy folder.|String(128)|No|
 |fullname|The full name of this category, i.e. Foo/bar/test.|Clob|Yes|
 |registered|Registered when|UtcDateTime|Yes|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|Yes|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|Yes|
 |updated|Last updated when|UtcDateTime|Yes|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|Yes|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|Yes|
 |updatedCount|Number of updates made to this record|UShort|Yes|
 
 

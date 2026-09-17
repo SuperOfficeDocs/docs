@@ -1,6 +1,6 @@
 ---
-title: UserPreference table
-description: Preference system. If deflevel is set to 5; the user may change the preferences
+title: "UserPreference table"
+description: "Preference system. If deflevel is set to 5; the user may change the preferences"
 generated: true
 content_type: reference
 envir: online
@@ -8,25 +8,25 @@ envir: online
 
 import Userpreference from "./includes/userpreference.mdx";
 
-## UserPreference Table (56)
-
 Preference system. If deflevel is set to 5; the user may change the preferences
+
+Table number: 56
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |userpreference\_id|Primary key|PK|No|
-|deflevel|The level: 0=hard default, 1=systemwide, 2=database, 3=group, 4=individual|Enum [PreferenceLevel](./enums/preferencelevel.mdx)|No|
-|maxlevel|Highest override level allowed|Enum [PreferenceLevel](./enums/preferencelevel.mdx)|No|
+|deflevel|The level: 0=hard default, 1=systemwide, 2=database, 3=group, 4=individual|Enum [PreferenceLevel](./enums/preferencelevel)|No|
+|maxlevel|Highest override level allowed|Enum [PreferenceLevel](./enums/preferencelevel)|No|
 |owner\_id|level=3: group; level=4: associate|Id|No|
 |prefsection|Preference section name|String(199)|No|
 |prefkey|Preference key name|String(199)|No|
 |prefvalue|Preference value|String(2046)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

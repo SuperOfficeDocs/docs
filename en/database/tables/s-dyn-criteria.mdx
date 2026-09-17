@@ -1,6 +1,6 @@
 ---
-title: s_dyn_criteria table
-description: Contains criterias for a dynamic list.
+title: "s_dyn_criteria table"
+description: "Contains criterias for a dynamic list."
 generated: true
 content_type: reference
 envir: online
@@ -8,16 +8,16 @@ envir: online
 
 import SDynCriteria from "./includes/s-dyn-criteria.mdx";
 
-## s\_dyn\_criteria Table (350)
-
 Contains criterias for a dynamic list.
+
+Table number: 350
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|Primary key|PK|No|
-|list\_id|Connects the criteria to a list.|FK [s_list](./s-list.mdx)|No|
+|list\_id|Connects the criteria to a list.|FK [s_list](./s-list)|No|
 |sort\_order|The order to sort the query. Not really relevant|Int|No|
 |field|Which field to test in this criteria|String(64)|No|
 |operator|Equals, gt, lt etc.|operator|No|

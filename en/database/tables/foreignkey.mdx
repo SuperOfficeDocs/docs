@@ -1,6 +1,6 @@
 ---
-title: foreignkey table
-description: Foreign Key - enables storage of arbitrary extra key information for every table/row in SuperOffice. You may use this table to store your extra information instead of using the dictionary SDK to create your own tables.
+title: "foreignkey table"
+description: "Foreign Key - enables storage of arbitrary extra key information for every table/row in SuperOffice. You may use this table to store your extra information instead of using the dictionary SDK to create your own tables."
 generated: true
 content_type: reference
 envir: online
@@ -8,25 +8,25 @@ envir: online
 
 import Foreignkey from "./includes/foreignkey.mdx";
 
-## foreignkey Table (183)
-
 Foreign Key - enables storage of arbitrary extra key information for every table/row in SuperOffice. You may use this table to store your extra information instead of using the dictionary SDK to create your own tables.
+
+Table number: 183
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |foreignkey\_id|Primary key|PK|No|
-|foreigndevice\_id|Reference to device definition|FK [foreigndevice](./foreigndevice.mdx)|No|
+|foreigndevice\_id|Reference to device definition|FK [foreigndevice](./foreigndevice)|No|
 |table\_id|SuperOffice table reference|TableNumber|No|
 |record\_id|Record in the referenced table|RecordId|No|
 |seqno|Sequence number, order of subkeys within one key|Id|No|
 |subkey|Subkey (optional)|String(239)|Yes|
 |subvalue|Key value|String(239)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

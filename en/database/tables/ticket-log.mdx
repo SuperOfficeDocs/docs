@@ -1,6 +1,6 @@
 ---
-title: ticket_log table
-description: This table contains log entries for the tickets.
+title: "ticket_log table"
+description: "This table contains log entries for the tickets."
 generated: true
 content_type: reference
 envir: online
@@ -8,16 +8,16 @@ envir: online
 
 import TicketLog from "./includes/ticket-log.mdx";
 
-## ticket\_log Table (267)
-
 This table contains log entries for the tickets.
+
+Table number: 267
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|ticket\_id|The id of the ticket this entry is connected to.|FK [ticket](./ticket.mdx)|No|
+|ticket\_id|The id of the ticket this entry is connected to.|FK [ticket](./ticket)|No|
 |log\_code|An enum indicating what kind of log-entry this is.|log_code|Yes|
 |log\_who|The username/alias of the user performing the action.|String(255)|Yes|
 |log\_when|When the action occured.|DateTime|Yes|

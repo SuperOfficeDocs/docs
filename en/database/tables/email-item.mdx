@@ -1,6 +1,6 @@
 ---
-title: email_item table
-description: Email data
+title: "email_item table"
+description: "Email data"
 generated: true
 content_type: reference
 envir: online
@@ -8,19 +8,19 @@ envir: online
 
 import EmailItem from "./includes/email-item.mdx";
 
-## email\_item Table (494)
-
 Email data
+
+Table number: 494
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |email\_item\_id|Primary key|PK|No|
-|account\_id|Account id|FK [email_account](./email-account.mdx)|Yes|
+|account\_id|Account id|FK [email_account](./email-account)|Yes|
 |server\_id|Email server id of this email item|Int|No|
-|flags|Email flags - answered, deleted, seen, flagged, draft, recent...|Enum [EMailFlags](./enums/emailflags.mdx)|Yes|
-|email\_folder\_id|Folder this email is in on the imap server|FK [email_folder](./email-folder.mdx)|Yes|
+|flags|Email flags - answered, deleted, seen, flagged, draft, recent...|Enum [EMailFlags](./enums/emailflags)|Yes|
+|email\_folder\_id|Folder this email is in on the imap server|FK [email_folder](./email-folder)|Yes|
 |mime|Mime text|Clob|Yes|
 |messageId|Email MessageId|String(512)|Yes|
 |sent\_at|Sent datetime from mime|DateTime|Yes|
@@ -28,21 +28,21 @@ Email data
 |subject|Email subject|String(255)|Yes|
 |plain\_body|Plain body text|Clob|Yes|
 |html\_body|Html body text|Clob|Yes|
-|priority|Email priority|Enum [EMailPriority](./enums/emailpriority.mdx)|Yes|
+|priority|Email priority|Enum [EMailPriority](./enums/emailpriority)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 |has\_attachment|Has attachment(s)|Bool|Yes|
 |from|From address|String(4000)|Yes|
 |to|To|String(4000)|Yes|
 |size|The size of the email|Int|No|
-|person\_id|From person|FK [person](./person.mdx)|Yes|
-|contact\_id|From company|FK [contact](./contact.mdx)|Yes|
-|document\_id|Archived document|FK [document](./document.mdx)|Yes|
-|appointment\_id|Archived on appointment|FK [appointment](./appointment.mdx)|Yes|
-|sale\_id|Archived on sale|FK [sale](./sale.mdx)|Yes|
+|person\_id|From person|FK [person](./person)|Yes|
+|contact\_id|From company|FK [contact](./contact)|Yes|
+|document\_id|Archived document|FK [document](./document)|Yes|
+|appointment\_id|Archived on appointment|FK [appointment](./appointment)|Yes|
+|sale\_id|Archived on sale|FK [sale](./sale)|Yes|
 |replied\_at|When this email was replied to|DateTime|Yes|
 |in\_reply\_to|In reply to, a message-id, used for threading|String(512)|Yes|
 |cc|Cc|String(4000)|Yes|

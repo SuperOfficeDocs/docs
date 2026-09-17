@@ -1,28 +1,24 @@
 ---
-title: restrictionoperators
+title: "restrictionoperators"
 keywords: mdoprovider mdo provider restrictionoperators
-description: This SoList provider will generate the operator list for a given search criterion data type. The data type is passed in as the extraInfo parameter, and is generally one of the constants in ColumnTypes. The RestrictionOperations class is the source of the data, so this list will change if that class is extended.
+description: "This SoList provider will generate the operator list for a given search criterion data type. The data type is passed in as the extraInfo parameter, and is generally one of the constants in `ColumnTypes`. The `RestrictionOperations` class is the source of the data, so this list will change if that class is extended."
 generated: true
 content_type: reference
 envir: online
 ---
 
-## "restrictionoperators" MDO List
 This SoList provider will generate the operator list for a given search criterion data type. The data type is
-passed in as the extraInfo parameter, and is generally one of the constants in ColumnTypes.
-The RestrictionOperations class is the source of the data, so this list will change if that class is extended.
+passed in as the extraInfo parameter, and is generally one of the constants in `ColumnTypes`.
+The `RestrictionOperations` class is the source of the data, so this list will change if that class is extended.
 
-
-
-Implemented by the OperatorProvider class.
+Implemented by the `SuperOffice.CRM.ArchiveLists.OperatorProvider` class.
 The name of the MDO list is 'restrictionoperators'.
 
 ## Additional Attributes
 
 | Description | Name | Example Value |
 |-----|-----|------|
-|RestrictionType for which we want the list of supported operators, and their value hints; use the SuperOffice.CRM.ArchiveLists.Constants.RestrictionTypes constant strings| |associate|
-
+|RestrictionType for which we want the list of supported operators, and their value hints; use the SuperOffice.CRM.ArchiveLists.Constants.RestrictionTypes constant strings| associate||
 
 
 
@@ -55,10 +51,10 @@ foreach (var item in listProvider.RootItems) {
 
 ## Related MDO Lists
 
-* "restrictionoperatorsheadings"
-* "restrictionoperatorsheadingswithallitem"
-* "restrictionoperatorsheadingswithallitemwithnoselection"
-* "restrictionoperatorsheadingswithnoselection"
-* "restrictionoperatorswithallitem"
-* "restrictionoperatorswithallitemwithnoselection"
-* "restrictionoperatorswithnoselection"
+* `restrictionoperatorsheadings`
+* `restrictionoperatorsheadingswithallitem`
+* `restrictionoperatorsheadingswithallitemwithnoselection`
+* `restrictionoperatorsheadingswithnoselection`
+* `restrictionoperatorswithallitem`
+* `restrictionoperatorswithallitemwithnoselection`
+* `restrictionoperatorswithnoselection`

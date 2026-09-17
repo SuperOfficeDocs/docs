@@ -1,0 +1,57 @@
+---
+title: "mention table"
+description: "A colleague tagged with @ in a request comment"
+generated: true
+content_type: reference
+envir: online
+---
+
+import Mention from "./includes/mention.mdx";
+
+A colleague tagged with @ in a request comment
+
+Table number: 501
+
+## Fields
+
+| Name | Description | Type | Nullable |
+|------|-------------|------|:----:|
+|mention\_id|Primary key|PK|No|
+|message\_id|The request comment (ej_message) the mention was made in|FK [ej_message](./ej-message)|No|
+|mentioned\_associate\_id|The colleague who was tagged|FK [associate](./associate)|No|
+|is\_read|Whether the mentioned colleague has seen this mention|Bool|No|
+|snippet|Short snippet of the mentioned text, for display without loading the full message|String(100)|No|
+|registered|Registered when|UtcDateTime|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
+|updated|Last updated when|UtcDateTime|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
+|updatedCount|Number of updates made to this record|UShort|No|
+
+
+![mention table relationship diagram](/media/loc/en/database/tables/mention.png)
+
+<Mention />
+
+## Indexes
+
+| Fields | Types | Description |
+|--------|-------|-------------|
+|message\_id, mentioned\_associate\_id |FK, FK |Unique |
+|mentioned\_associate\_id, is\_read |FK, Bool |Index |
+
+## Relationships
+
+| Table|  Description |
+|------|-------------|
+|[associate](./associate)  |Employees, resources and other users - except for External persons |
+|[ej\_message](./ej-message)  |This table contains the messages listed under tickets. |
+
+
+## Replication Flags
+
+* None
+
+## Security Flags
+
+* No access control via user's Role.
+

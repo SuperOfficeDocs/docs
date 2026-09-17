@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_SanitizeMailContentWithOptionsRequest"></a> Class Ticket\_SanitizeMailContentWithOptionsRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_SanitizeMailContentWithOptionsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_SanitizeMailContentWithOptionsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_SanitizeMailContentWithOptionsRequest)
+[Ticket\_SanitizeMailContentWithOptionsRequest](SuperOffice.WebApi.Data.Ticket\_SanitizeMailContentWithOptionsRequest.md)
 
 #### Inherited Members
 
@@ -50,5 +50,5 @@ public HtmlSanitizerOptions Options { get; set; }
 
 #### Property Value
 
- [HtmlSanitizerOptions](/en/api/reference/webapi/SuperOffice.WebApi.Data.HtmlSanitizerOptions)
+ [HtmlSanitizerOptions](SuperOffice.WebApi.Data.HtmlSanitizerOptions.md)
 

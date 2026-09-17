@@ -1,6 +1,6 @@
 ---
-title: ProductFamilyGroupLink table
-description: User group link table for ProductFamily, for MDO item hiding
+title: "ProductFamilyGroupLink table"
+description: "User group link table for ProductFamily, for MDO item hiding"
 generated: true
 content_type: reference
 envir: online
@@ -8,21 +8,21 @@ envir: online
 
 import Productfamilygrouplink from "./includes/productfamilygrouplink.mdx";
 
-## ProductFamilyGroupLink Table (412)
-
 User group link table for ProductFamily, for MDO item hiding
+
+Table number: 412
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |productfamilygrouplink\_id|Primary key|PK|No|
-|productfamily\_id|Link to ProductFamily list table|FK [ProductFamily](./productfamily.mdx)|No|
-|group\_id|Link to Group table|FK [UserGroup](./usergroup.mdx)|No|
+|productfamily\_id|Link to ProductFamily list table|FK [ProductFamily](./productfamily)|No|
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

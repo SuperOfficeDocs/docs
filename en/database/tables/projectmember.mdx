@@ -1,6 +1,6 @@
 ---
-title: projectmember table
-description: Project members. Link-table between person and project
+title: "projectmember table"
+description: "Project members. Link-table between person and project"
 generated: true
 content_type: reference
 envir: online
@@ -8,27 +8,27 @@ envir: online
 
 import Projectmember from "./includes/projectmember.mdx";
 
-## projectmember Table (12)
-
 Project members. Link-table between person and project
+
+Table number: 12
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |projectmember\_id|Primary key|PK|No|
-|project\_id|Parent project|FK [project](./project.mdx)|Yes|
-|contact\_id|Contact ID of person who is the project member (slight denormalization)|FK [contact](./contact.mdx)|Yes|
-|person\_id|Person ID of person who is the project member|FK [person](./person.mdx)|Yes|
+|project\_id|Parent project|FK [project](./project)|Yes|
+|contact\_id|Contact ID of person who is the project member (slight denormalization)|FK [contact](./contact)|Yes|
+|person\_id|Person ID of person who is the project member|FK [person](./person)|Yes|
 |rank|Rank in list|UShort|Yes|
-|mtype\_idx|Member type link|FK [PMembType](./pmembtype.mdx)|Yes|
-|text\_id|Optional comment|FK [text](./text.mdx)|Yes|
+|mtype\_idx|Member type link|FK [PMembType](./pmembtype)|Yes|
+|text\_id|Optional comment|FK [text](./text)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
-|event\_participant\_status|Reserved field for Lyyti event participants.|Enum [ProjectMemberEventParticipantStatus](./enums/projectmembereventparticipantstatus.mdx)|No|
+|event\_participant\_status|Reserved field for Lyyti event participants.|Enum [ProjectMemberEventParticipantStatus](./enums/projectmembereventparticipantstatus)|No|
 
 
 ![projectmember table relationship diagram](/media/loc/en/database/tables/projectmember.png)

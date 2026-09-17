@@ -1,6 +1,6 @@
 ---
-title: ticket_type_priority table
-description: Link table defining what Priorities are relevant to a particular Ticket type
+title: "ticket_type_priority table"
+description: "Link table defining what Priorities are relevant to a particular Ticket type"
 generated: true
 content_type: reference
 envir: online
@@ -8,21 +8,21 @@ envir: online
 
 import TicketTypePriority from "./includes/ticket-type-priority.mdx";
 
-## ticket\_type\_priority Table (553)
-
 Link table defining what Priorities are relevant to a particular Ticket type
+
+Table number: 554
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |ticket\_type\_priority\_id|Primary key|PK|No|
-|ticket\_type\_id|Ticket type |FK [ticket_type](./ticket-type.mdx)|No|
-|ticket\_priority\_id|Ticket priority|FK [ticket_priority](./ticket-priority.mdx)|No|
+|ticket\_type\_id|Ticket type |FK [ticket_type](./ticket-type)|No|
+|ticket\_priority\_id|Ticket priority|FK [ticket_priority](./ticket-priority)|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

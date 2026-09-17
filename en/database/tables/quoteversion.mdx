@@ -1,6 +1,6 @@
 ---
-title: QuoteVersion table
-description: There may be multiple Versions of a Quote, with one of them active
+title: "QuoteVersion table"
+description: "There may be multiple Versions of a Quote, with one of them active"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Quoteversion from "./includes/quoteversion.mdx";
 
-## QuoteVersion Table (39)
-
 There may be multiple Versions of a Quote, with one of them active
+
+Table number: 39
 
 ## Fields
 
@@ -18,29 +18,29 @@ There may be multiple Versions of a Quote, with one of them active
 |------|-------------|------|:----:|
 |quoteversion\_id|Primary key|PK|No|
 |ERPQuoteVersionKey|Key in the ERP system that uniquely identifies this Version within the ERP system (if available, the field may be empty).|String(254)|Yes|
-|QuoteId|Foreign key to CRM quote (the conceptual parent). Owning Quote of this Quote Version.|FK [Quote](./quote.mdx)|No|
+|QuoteId|Foreign key to CRM quote (the conceptual parent). Owning Quote of this Quote Version.|FK [Quote](./quote)|No|
 |Description|Description of Version. Potentially longer text description, typically used in a tooltip. Max 2K.|String(2047)|Yes|
 |Number|A quote number that the user (or ERP connector) can fill out.|String(254)|Yes|
-|State|Current state of this quote version.|Enum [QuoteVersionState](./enums/quoteversionstate.mdx)|Yes|
-|ArchivedState|State that this quote version had, right before it was changed to Archived; in this way we can show what happened before the archiving.|Enum [QuoteVersionState](./enums/quoteversionstate.mdx)|Yes|
-|Status|If there was a problem with for instance calculation, this field is set to warning or error.|Enum [QuoteStatus](./enums/quotestatus.mdx)|Yes|
+|State|Current state of this quote version.|Enum [QuoteVersionState](./enums/quoteversionstate)|Yes|
+|ArchivedState|State that this quote version had, right before it was changed to Archived; in this way we can show what happened before the archiving.|Enum [QuoteVersionState](./enums/quoteversionstate)|Yes|
+|Status|If there was a problem with for instance calculation, this field is set to warning or error.|Enum [QuoteStatus](./enums/quotestatus)|Yes|
 |Reason|If there was a problem, this field contains a localized explanation of the problem and possible steps to fix it that the user can be shown.|String(2047)|Yes|
-|LikelyQuoteAlternativeId|The alternative that is considered most likely to be accepted. Used to calculate probable income.|FK [QuoteAlternative](./quotealternative.mdx)|Yes|
+|LikelyQuoteAlternativeId|The alternative that is considered most likely to be accepted. Used to calculate probable income.|FK [QuoteAlternative](./quotealternative)|Yes|
 |SentDate|The date the version was sent to the customer.|DateTime|Yes|
-|FollowupId|Link to a follow-up activity, created when this quote version was sent to the customer.|FK [appointment](./appointment.mdx)|Yes|
+|FollowupId|Link to a follow-up activity, created when this quote version was sent to the customer.|FK [appointment](./appointment)|Yes|
 |ExpirationDate|Last date the quote Version is valid, expiration is at midnight end of this day.|DateTime|Yes|
-|DeliveryCountryId|Country of delivery address, typically copied from the contact record|FK [country](./country.mdx)|Yes|
+|DeliveryCountryId|Country of delivery address, typically copied from the contact record|FK [country](./country)|Yes|
 |HasOwnDeliveryAddress|The delivery address is not the same as the contact&apos;s Street address|Bool|Yes|
-|InvoiceCountryId|Country of invoice address, typically copied from contact record|FK [country](./country.mdx)|Yes|
+|InvoiceCountryId|Country of invoice address, typically copied from contact record|FK [country](./country)|Yes|
 |HasOwnInvoiceAddress|The quote has an address for Invoicing. This will typically be copied from the company&apos;s addresses. |Bool|Yes|
 |ERPPaymentTermsKey|Either a List id to an id from a connector provided list, or, if the connection doesn’t support lists, a text. For instance: ‘Standard 30 days’.|String(254)|Yes|
 |ERPPaymentTypeKey|Either a List id to an id from a connector provided list, or, if the connection doesn’t support lists, a text. For instance: &apos;Invoice&apos;.|String(254)|Yes|
 |ERPDeliveryTermsKey|Either a List id to an id from a connector provided list, or, if the connection doesn’t support lists, a text. For instance: ‘FOB’ (‘Free on board’).|String(254)|Yes|
 |ERPDeliveryTypeKey|Either a List id to an id from a connector provided list, or, if the connection doesn’t support lists, a text. For instance: ‘Air’.|String(254)|Yes|
 |Rank|Rank/Version number, starts at 1|Int|Yes|
-|ApprovedBy|Id of associate who approved (or rejected approval) for this version|FK [associate](./associate.mdx)|Yes|
+|ApprovedBy|Id of associate who approved (or rejected approval) for this version|FK [associate](./associate)|Yes|
 |ApprovedText|Text with comments on why approval was granted (or rejected)|String(1023)|Yes|
-|ApprovedRegisteredBy|Id of associate who actually entered the approval; might be different from ApprovedBy (f.x. due to telephone consultation/approval)|FK [associate](./associate.mdx)|Yes|
+|ApprovedRegisteredBy|Id of associate who actually entered the approval; might be different from ApprovedBy (f.x. due to telephone consultation/approval)|FK [associate](./associate)|Yes|
 |ApprovedRegisteredDate|When was approval granted or rejected|DateTime|Yes|
 |extraField1|Optional information added by Quote Connector; usable in the quote document merge process|String(1023)|Yes|
 |extraField2|Optional information added by Quote Connector; usable in the quote document merge process|String(1023)|Yes|
@@ -49,11 +49,11 @@ There may be multiple Versions of a Quote, with one of them active
 |extraField5|Optional information added by Quote Connector; usable in the quote document merge process|String(1023)|Yes|
 |LastRecalculated|When this version was last subjected to a total recalculation. This field must be set by the connector, since the connector may choose to ignore a RecalculateVersion call based on policies and possibly the current value of this field. SuperOffice will set this field to 1.1.1760 whenever any change occurs to the quote, to indicate that a recalculation is needed.|DateTime|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
-|request\_associate\_id|User to whom the request proposal should be delivered|FK [associate](./associate.mdx)|Yes|
+|request\_associate\_id|User to whom the request proposal should be delivered|FK [associate](./associate)|Yes|
 |request\_comment|Comment for why quote should be approved|String(1023)|Yes|
 
 

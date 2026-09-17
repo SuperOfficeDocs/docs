@@ -1,6 +1,6 @@
 ---
-title: EjCategoryGroupLink table
-description: User group link table for EjCategory, for mass handling ej_category members
+title: "EjCategoryGroupLink table"
+description: "User group link table for EjCategory, for mass handling ej_category members"
 generated: true
 content_type: reference
 envir: online
@@ -8,21 +8,21 @@ envir: online
 
 import Ejcategorygrouplink from "./includes/ejcategorygrouplink.mdx";
 
-## EjCategoryGroupLink Table (450)
-
 User group link table for EjCategory, for mass handling ej_category members
+
+Table number: 450
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |ej\_categorygrouplink\_id|Primary key|PK|No|
-|ej\_category\_id|Link to EjCategory list table|FK [ej_category](./ej-category.mdx)|No|
-|group\_id|Link to Group table|FK [UserGroup](./usergroup.mdx)|No|
+|ej\_category\_id|Link to EjCategory list table|FK [ej_category](./ej-category)|No|
+|group\_id|Link to Group table|FK [UserGroup](./usergroup)|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

@@ -1,6 +1,6 @@
 ---
-title: email_account table
-description: Email account information
+title: "email_account table"
+description: "Email account information"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import EmailAccount from "./includes/email-account.mdx";
 
-## email\_account Table (491)
-
 Email account information
+
+Table number: 491
 
 ## Fields
 
@@ -18,16 +18,16 @@ Email account information
 |------|-------------|------|:----:|
 |email\_account\_id|Primary key|PK|No|
 |email\_address|The From-address|String(255)|Yes|
-|associate\_id|Associate who owns this email account|FK [associate](./associate.mdx)|Yes|
-|incoming\_auth|Incoming server (imap) authentication |FK [service_auth](./service-auth.mdx)|Yes|
-|outgoing\_auth|Outgoing server (smtp) authentication |FK [service_auth](./service-auth.mdx)|Yes|
+|associate\_id|Associate who owns this email account|FK [associate](./associate)|Yes|
+|incoming\_auth|Incoming server (imap) authentication |FK [service_auth](./service-auth)|Yes|
+|outgoing\_auth|Outgoing server (smtp) authentication |FK [service_auth](./service-auth)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 |default|True if this account is the default account for the associate who owns it|Bool|Yes|
-|account\_status|The status of this email account|Enum [EmailAccountStatus](./enums/emailaccountstatus.mdx)|Yes|
+|account\_status|The status of this email account|Enum [EmailAccountStatus](./enums/emailaccountstatus)|Yes|
 |encryptedCheck|Encrypted hash checksum|String(254)|No|
 |error\_count|How many failures since reset|Int|Yes|
 |error\_reason|Reason for last failure if available|String(254)|No|

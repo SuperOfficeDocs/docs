@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AI_SearchRequest"></a> Class AI\_SearchRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class AI_SearchRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AI\_SearchRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_SearchRequest)
+[AI\_SearchRequest](SuperOffice.WebApi.Data.AI\_SearchRequest.md)
 
 #### Inherited Members
 
@@ -70,5 +70,5 @@ public RagType Type { get; set; }
 
 #### Property Value
 
- [RagType](/en/api/reference/webapi/SuperOffice.WebApi.Data.RagType)
+ [RagType](SuperOffice.WebApi.Data.RagType.md)
 

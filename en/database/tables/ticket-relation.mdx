@@ -1,6 +1,6 @@
 ---
-title: ticket_relation table
-description: A relation between 2 tickets
+title: "ticket_relation table"
+description: "A relation between 2 tickets"
 generated: true
 content_type: reference
 envir: online
@@ -8,23 +8,23 @@ envir: online
 
 import TicketRelation from "./includes/ticket-relation.mdx";
 
-## ticket\_relation Table (557)
-
 A relation between 2 tickets
+
+Table number: 558
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |ticket\_relation\_id|Primary key|PK|No|
-|source\_ticket\_id|Source ticket in this relation|FK [ticket](./ticket.mdx)|No|
-|destination\_ticket\_id|Destination ticket in this relation|FK [ticket](./ticket.mdx)|No|
-|ticket\_relation\_def\_id|The (optional) relation definition where this relation originated from|FK [ticket_relation_def](./ticket-relation-def.mdx)|No|
+|source\_ticket\_id|Source ticket in this relation|FK [ticket](./ticket)|No|
+|destination\_ticket\_id|Destination ticket in this relation|FK [ticket](./ticket)|No|
+|ticket\_relation\_def\_id|The (optional) relation definition where this relation originated from|FK [ticket_relation_def](./ticket-relation-def)|No|
 |comment|Comment for relation|String(255)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

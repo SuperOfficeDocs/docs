@@ -1,6 +1,6 @@
 ---
-title: StatusValue table
-description: Values for statuses
+title: "StatusValue table"
+description: "Values for statuses"
 generated: true
 content_type: reference
 envir: online
@@ -8,27 +8,27 @@ envir: online
 
 import Statusvalue from "./includes/statusvalue.mdx";
 
-## StatusValue Table (199)
-
 Values for statuses
+
+Table number: 199
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |StatusValue\_id|Primary key|PK|No|
-|StatusDef\_id|Link to statusdefinition|FK [StatusDef](./statusdef.mdx)|No|
-|contact\_id|Link to contact, 0 if this status is not for contacts|FK [contact](./contact.mdx)|No|
-|person\_id|Link to person, 0 if this status is not for person (always 0 in 6.0)|FK [person](./person.mdx)|No|
-|project\_id|Link to project, 0 if this status is not for project|FK [project](./project.mdx)|No|
+|StatusDef\_id|Link to statusdefinition|FK [StatusDef](./statusdef)|No|
+|contact\_id|Link to contact, 0 if this status is not for contacts|FK [contact](./contact)|No|
+|person\_id|Link to person, 0 if this status is not for person (always 0 in 6.0)|FK [person](./person)|No|
+|project\_id|Link to project, 0 if this status is not for project|FK [project](./project)|No|
 |extra1\_id|Spare ID for future links|Id|No|
 |extra2\_id|Spare ID for future links|Id|No|
 |isSignalled|1 = this status is &apos;true&apos;, and the GUI should display it|Bool|No|
 |needsUpdate|1 = the value is dirty and needs updating; set when the target (contact, project) is changed (or its activities and sales are changed)|Bool|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

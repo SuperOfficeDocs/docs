@@ -1,6 +1,6 @@
 ---
-title: History table
-description: History lists for lists and searchable controls. Maintains history for Navigator or other search (find dialogs). A single table may have more than one record here, as indicated by the extra_id field. The HistorySize (preference may be set in maintenance client) defines how many records you can have in a history list.
+title: "History table"
+description: "History lists for lists and searchable controls. Maintains history for Navigator or other search (find dialogs). A single table may have more than one record here, as indicated by the extra_id field. The HistorySize (preference may be set in maintenance client) defines how many records you can have in a history list."
 generated: true
 content_type: reference
 envir: online
@@ -8,16 +8,16 @@ envir: online
 
 import History from "./includes/history.mdx";
 
-## History Table (53)
-
 History lists for lists and searchable controls. Maintains history for Navigator or other search (find dialogs). A single table may have more than one record here, as indicated by the extra_id field. The HistorySize (preference may be set in maintenance client) defines how many records you can have in a history list.
+
+Table number: 53
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |history\_id|Primary key|PK|No|
-|associate\_id|Owner of history list|FK [associate](./associate.mdx)|No|
+|associate\_id|Owner of history list|FK [associate](./associate)|No|
 |table\_id|Table this is a history of|TableNumber|No|
 |record\_id|Record within the table|RecordId|No|
 |extra\_id|Extra ID, used to manage multiple histories per table|Id|No|

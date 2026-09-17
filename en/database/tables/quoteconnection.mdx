@@ -1,6 +1,6 @@
 ---
-title: QuoteConnection table
-description: Primary key in the CRM database. Definition of a connection to an external system, for the Quote system.
+title: "QuoteConnection table"
+description: "Primary key in the CRM database. Definition of a connection to an external system, for the Quote system."
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Quoteconnection from "./includes/quoteconnection.mdx";
 
-## QuoteConnection Table (26)
-
 Primary key in the CRM database. Definition of a connection to an external system, for the Quote system.
+
+Table number: 26
 
 ## Fields
 
@@ -23,13 +23,13 @@ Primary key in the CRM database. Definition of a connection to an external syste
 |Rank|Rank order |Int|Yes|
 |ConnectorName|Programmatic name of the Connector plugin that implements this kind of connection|String(254)|No|
 |ExtraData|Optional extra data, in XML format, for configuring the connector. Connector-specific!|String(3999)|Yes|
-|ErpConnectionId|The ERP Connection that this Quote connection is an extension of|FK [ErpConnection](./erpconnection.mdx)|Yes|
+|ErpConnectionId|The ERP Connection that this Quote connection is an extension of|FK [ErpConnection](./erpconnection)|Yes|
 |AllAccess|Is this connection accessible to everyone?  If not, then the QuoteConnectionAccess table tells us who can access it|Bool|Yes|
 |Deleted|If set, then this is a row that has been &apos;deleted&apos;; we do not physically delete rows to avoid disaster|Bool|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

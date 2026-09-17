@@ -1,18 +1,16 @@
 ---
-title: MappedPreferences
-description: Get all the mapped ('fake') Service preferences known to the ServicePreferenceMapper.
+title: "MappedPreferences"
+description: "Get all the mapped ('fake') Service preferences known to the `ServicePreferenceMapper`. **NOTE** that only **section** and **key** are supported as restrictions, and only with the **equals** operator. Anything else needs to be coded!"
 keywords: MappedPreferences archive provider
 generated: true
 content_type: reference
 envir: onsite, online
 ---
 
-## "MappedPreferences"
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.MappedPreferenceProvider` inside NetServer's SODatabase assembly.
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.MappedPreferenceProvider inside NetServer's SODatabase assembly.
-
-Get all the mapped ('fake') Service preferences known to the ServicePreferenceMapper.
-<b>NOTE</b> that only <b>section</b> and <b>key</b> are supported as restrictions, and only with the <b>equals</b> operator.
+Get all the mapped ('fake') Service preferences known to the `ServicePreferenceMapper`.
+**NOTE** that only **section** and **key** are supported as restrictions, and only with the **equals** operator.
 Anything else needs to be coded!
 
 ## Supported Entities
@@ -24,27 +22,27 @@ Anything else needs to be coded!
 ## Supported Columns
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
-|userpreferenceId|int|Database ID: The database ID of the row in the userpreference table| x |
 |deflevel|int|Level: The level at which the preference is defined; closest-to-the-user wins| x |
 |deflevelname|string|Level: The type of the preference value (string, company, yes/no etc)| x |
 |maxlevel|int|Max level: The maximum (closest to the user) level this preference is allowed on| x |
 |maxlevelname|string|Max level: The maximum (closest to the user) level this preference is allowed on| x |
-|ownerId|int|Owner: The owner of the preference value| x |
 |owner|string|Who: Who is the owner of this preference value| x |
-|prefsection|string|Section: The prefsection field in the database| x |
+|ownerId|int|Owner: The owner of the preference value| x |
 |prefkey|string|Key: The prefkey field in the database| x |
+|prefsection|string|Section: The prefsection field in the database| x |
 |prefvalue|string|Raw value: The raw value as it is in the database| x |
+|userpreferenceId|int|Database ID: The database ID of the row in the userpreference table| x |
 |value|string|Value: The value of the preference| x |
 
 ## Sample
 
 ```http!
-GET /api/v1/archive/MappedPreferences?$select=maxlevel,ownerId
+GET /api/v1/archive/MappedPreferences?$select=deflevel,maxlevel,ownerId,prefsection,value
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: `IArchiveAgent`.
 

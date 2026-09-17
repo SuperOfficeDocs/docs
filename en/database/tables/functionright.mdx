@@ -1,6 +1,6 @@
 ---
-title: FunctionRight table
-description: Functional right definition
+title: "FunctionRight table"
+description: "Functional right definition"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Functionright from "./includes/functionright.mdx";
 
-## FunctionRight Table (193)
-
 Functional right definition
+
+Table number: 193
 
 ## Fields
 
@@ -18,14 +18,14 @@ Functional right definition
 |------|-------------|------|:----:|
 |FunctionRight\_id|Primary key|PK|No|
 |name|Readable, internal ID (not a GUI text)|String(254)|No|
-|rightType|0 = functional right|Enum [FunctionRightType](./enums/functionrighttype.mdx)|No|
+|rightType|0 = functional right|Enum [FunctionRightType](./enums/functionrighttype)|No|
 |isBuiltIn|0 = added by partner, 1 = supplied by SuperOffice|Bool|No|
 |encryptedCheck|Encrypted data, to detect unwanted changes|String(254)|No|
 |requiredModule|If non-blank, specifies a module license that is also needed, for this right to be granted|String(239)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

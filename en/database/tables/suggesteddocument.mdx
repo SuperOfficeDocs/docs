@@ -1,6 +1,6 @@
 ---
-title: SuggestedDocument table
-description: Unique owner of a set of licensed modules
+title: "SuggestedDocument table"
+description: "Unique owner of a set of licensed modules"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Suggesteddocument from "./includes/suggesteddocument.mdx";
 
-## SuggestedDocument Table (126)
-
 Unique owner of a set of licensed modules
+
+Table number: 126
 
 ## Fields
 
@@ -21,15 +21,15 @@ Unique owner of a set of licensed modules
 |rank|Rank, controls rank of non-instantiated items in Guide|UShort|Yes|
 |tooltip|Tooltip / description|String(254)|Yes|
 |deleted|0 -&gt; record is active 1 -&gt; record is &apos;deleted&apos; and should not be shown in lists|UShort|Yes|
-|saleTypeStageLinkId|Link to saleTypeStageLink, the anchor for sale guide items. Either this OR projectAnchorId should be set, not both at the same time.|FK [SaleTypeStageLink](./saletypestagelink.mdx)|Yes|
-|projectTypeStatusLinkId|Link to projectTypeStatusLink, the anchor for project guide items. Either this OR saleAnchorId should be set, not both at the same time.|FK [ProjectTypeStatusLink](./projecttypestatuslink.mdx)|Yes|
-|doctmpl\_id|Type of the suggested document|FK [DocTmpl](./doctmpl.mdx)|Yes|
+|saleTypeStageLinkId|Link to saleTypeStageLink, the anchor for sale guide items. Either this OR projectAnchorId should be set, not both at the same time.|FK [SaleTypeStageLink](./saletypestagelink)|Yes|
+|projectTypeStatusLinkId|Link to projectTypeStatusLink, the anchor for project guide items. Either this OR saleAnchorId should be set, not both at the same time.|FK [ProjectTypeStatusLink](./projecttypestatuslink)|Yes|
+|doctmpl\_id|Type of the suggested document|FK [DocTmpl](./doctmpl)|Yes|
 |header|Suggested &apos;header&apos;|String(219)|Yes|
 |our\_ref|Suggested &apos;our reference&apos;|String(99)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

@@ -1,6 +1,6 @@
 ---
-title: word_relations table
-description: This table shows which word are used in which FAQ entry, and how many times            they are used in each
+title: "word_relations table"
+description: "This table shows which word are used in which FAQ entry, and how many times they are used in each"
 generated: true
 content_type: reference
 envir: online
@@ -8,17 +8,17 @@ envir: online
 
 import WordRelations from "./includes/word-relations.mdx";
 
-## word\_relations Table (355)
-
 This table shows which word are used in which FAQ entry, and how many times            they are used in each
+
+Table number: 355
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|Primary key|PK|No|
-|entry\_word\_id|A reference to the id of the word|FK [kb_entry_words](./kb-entry-words.mdx)|No|
-|entry\_id|A reference to the id of the entry|FK [kb_entry](./kb-entry.mdx)|No|
+|entry\_word\_id|A reference to the id of the word|FK [kb_entry_words](./kb-entry-words)|No|
+|entry\_id|A reference to the id of the entry|FK [kb_entry](./kb-entry)|No|
 |used|Indicates how many times this word is used in the FAQ entry|Int|No|
 |origin|Indicates if it is an entry word (0) or a category word (1).|Short|No|
 

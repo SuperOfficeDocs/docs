@@ -1,6 +1,6 @@
 ---
-title: kb_workflow table
-description: Knowledge base workflow steps
+title: "kb_workflow table"
+description: "Knowledge base workflow steps"
 generated: true
 content_type: reference
 envir: online
@@ -8,17 +8,17 @@ envir: online
 
 import KbWorkflow from "./includes/kb-workflow.mdx";
 
-## kb\_workflow Table (292)
-
 Knowledge base workflow steps
+
+Table number: 292
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |id|The primary key (auto-incremented)|PK|No|
-|next|The next workflow phase.|FK [kb_workflow](./kb-workflow.mdx)|No|
-|previous|The previous workflow phase.|FK [kb_workflow](./kb-workflow.mdx)|No|
+|next|The next workflow phase.|FK [kb_workflow](./kb-workflow)|No|
+|previous|The previous workflow phase.|FK [kb_workflow](./kb-workflow)|No|
 |name||String(255)|Yes|
 
 

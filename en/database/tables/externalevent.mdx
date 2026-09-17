@@ -1,6 +1,6 @@
 ---
-title: ExternalEvent table
-description: The definition of projects as events in Audience (or other Collaborative apps)
+title: "ExternalEvent table"
+description: "The definition of projects as events in Audience (or other Collaborative apps)"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Externalevent from "./includes/externalevent.mdx";
 
-## ExternalEvent Table (233)
-
 The definition of projects as events in Audience (or other Collaborative apps)
+
+Table number: 233
 
 ## Fields
 
@@ -23,22 +23,22 @@ The definition of projects as events in Audience (or other Collaborative apps)
 |parentRecord|The thing, that has now become an Event|RecordId|No|
 |signOn|Is Sign On functionality enabled|Bool|No|
 |signOnTaskEnable|If not 0, a task should be created when the external user Signs On to an event|Bool|No|
-|signOnTaskId|If not 0, sign on should cause an Activity of this type to be registered|FK [Task](./task.mdx)|No|
-|signOnAssocId|If 0, the signOn Activity should go into the persons Our Contact; if not 0, this is the Associate whose diary should get the activity|FK [associate](./associate.mdx)|No|
-|signOnTextId|If not 0, the given text should be entered into the appointment|FK [text](./text.mdx)|No|
-|signOnConfTextId|If not 0, the given text should be shown as a confirmation text before accpting Sign On|FK [text](./text.mdx)|No|
+|signOnTaskId|If not 0, sign on should cause an Activity of this type to be registered|FK [Task](./task)|No|
+|signOnAssocId|If 0, the signOn Activity should go into the persons Our Contact; if not 0, this is the Associate whose diary should get the activity|FK [associate](./associate)|No|
+|signOnTextId|If not 0, the given text should be entered into the appointment|FK [text](./text)|No|
+|signOnConfTextId|If not 0, the given text should be shown as a confirmation text before accpting Sign On|FK [text](./text)|No|
 |signOnTriggersAssign|If 1, the SignOn task should be created as an Assigned task, triggering the invitation dialog|Bool|No|
 |signOff|Is Sign Off functionality enabled|Bool|No|
 |signOffTaskEnable|If not 0, a task should be created when the external user Signs Off an event|Bool|No|
-|signOffTaskId|If not 0, sign off should cause an Activity of this type to be registered|FK [Task](./task.mdx)|No|
-|signOffAssocId|If 0, the signOn Activity should go into the persons Our Contact; if not 0, this is the Associate whose diary should get the activity|FK [associate](./associate.mdx)|No|
-|signOffTextId|If not 0, the given text should be shown as a confirmation text before accpting Sign Off|FK [text](./text.mdx)|No|
-|signOffConfTextId|If not 0, the given text should be shown as a confirmation text before accpting Sign Off|FK [text](./text.mdx)|No|
+|signOffTaskId|If not 0, sign off should cause an Activity of this type to be registered|FK [Task](./task)|No|
+|signOffAssocId|If 0, the signOn Activity should go into the persons Our Contact; if not 0, this is the Associate whose diary should get the activity|FK [associate](./associate)|No|
+|signOffTextId|If not 0, the given text should be shown as a confirmation text before accpting Sign Off|FK [text](./text)|No|
+|signOffConfTextId|If not 0, the given text should be shown as a confirmation text before accpting Sign Off|FK [text](./text)|No|
 |signOffTriggersAssign|If 1, the SignOff task should be created as an Assigned task, triggering the invitation dialog|Bool|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

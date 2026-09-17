@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Sentry_GetFunctionRightsRequest"></a> Class Sentry\_GetFunctionRightsRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Sentry_GetFunctionRightsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Sentry\_GetFunctionRightsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sentry_GetFunctionRightsRequest)
+[Sentry\_GetFunctionRightsRequest](SuperOffice.WebApi.Data.Sentry\_GetFunctionRightsRequest.md)
 
 #### Inherited Members
 

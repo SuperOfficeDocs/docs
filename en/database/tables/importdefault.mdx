@@ -1,6 +1,6 @@
 ---
-title: ImportDefault table
-description: Defaults for import fields/objects
+title: "ImportDefault table"
+description: "Defaults for import fields/objects"
 generated: true
 content_type: reference
 envir: online
@@ -8,24 +8,24 @@ envir: online
 
 import Importdefault from "./includes/importdefault.mdx";
 
-## ImportDefault Table (189)
-
 Defaults for import fields/objects
+
+Table number: 189
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |ImportDefault\_id|Primary key|PK|No|
-|ImportObject\_id|The object this default applies to|FK [ImportObject](./importobject.mdx)|No|
+|ImportObject\_id|The object this default applies to|FK [ImportObject](./importobject)|No|
 |dbFieldId|The database field (within that object, presumably!) this default applies to|FieldId|No|
 |intValue|Integer default value|UInt|Yes|
 |strValue|String value|String(254)|Yes|
 |isSearchField|If 1, the given db field is part of the search criteria for the given object|UShort|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 |isBuiltin|1 = This row populated and maintained by SuperOffice|UShort|Yes|
 

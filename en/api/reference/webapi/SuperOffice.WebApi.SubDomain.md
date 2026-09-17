@@ -1,11 +1,11 @@
 # <a id="SuperOffice_WebApi_SubDomain"></a> Class SubDomain
 
-Namespace: [SuperOffice.WebApi](/en/api/reference/webapi/SuperOffice.WebApi)  
+Namespace: [SuperOffice.WebApi](SuperOffice.WebApi.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Development("sod") / Stage("qoonline") / Production("online")
 <p>
-Use with the <pre><code class="lang-csharp">subdomain</code></pre> parameter in SuperOffice.WebApi.Authorization.AuthorizationAccessToken or [GetTenantStatusAsync](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ApiAgent#SuperOffice_WebApi_Agents_ApiAgent_GetTenantStatusAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_)
+Use with the <pre><code class="lang-csharp">subdomain</code></pre> parameter in SuperOffice.WebApi.Authorization.AuthorizationAccessToken or <xref href="SuperOffice.WebApi.Agents.ApiAgent.GetTenantStatusAsync(System.String%2cSystem.String%2cSuperOffice.WebApi.RequestOptions)" data-throw-if-not-resolved="false"></xref>
 </p>
 
 ```csharp
@@ -15,7 +15,7 @@ public static class SubDomain
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[SubDomain](/en/api/reference/webapi/SuperOffice.WebApi.SubDomain)
+[SubDomain](SuperOffice.WebApi.SubDomain.md)
 
 #### Inherited Members
 

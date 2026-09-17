@@ -1,6 +1,6 @@
 ---
-title: script_trace table
-description: Scripts which should be traced
+title: "script_trace table"
+description: "Scripts which should be traced"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import ScriptTrace from "./includes/script-trace.mdx";
 
-## script\_trace Table (476)
-
 Scripts which should be traced
+
+Table number: 476
 
 ## Fields
 
@@ -22,11 +22,11 @@ Scripts which should be traced
 |skip\_frames|Skip n frames between each save to optimize|Int|Yes|
 |enabled|Whether this trace is enabled or not|Bool|Yes|
 |ttl|How long traces should be kept before being deleted (in seconds)|Int|Yes|
-|associate\_id|Optionally limit traces to a specific associate|FK [associate](./associate.mdx)|Yes|
+|associate\_id|Optionally limit traces to a specific associate|FK [associate](./associate)|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 |notification\_email|Email to notify when trace saved|String(255)|Yes|
 |notify|Send notification by email when trace run is saved|Bool|Yes|

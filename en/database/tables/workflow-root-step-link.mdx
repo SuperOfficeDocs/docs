@@ -1,6 +1,6 @@
 ---
-title: workflow_root_step_link table
-description: Link root steps to the workflow
+title: "workflow_root_step_link table"
+description: "Link root steps to the workflow"
 generated: true
 content_type: reference
 envir: online
@@ -8,22 +8,22 @@ envir: online
 
 import WorkflowRootStepLink from "./includes/workflow-root-step-link.mdx";
 
-## workflow\_root\_step\_link Table (537)
-
 Link root steps to the workflow
+
+Table number: 538
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |workflow\_root\_step\_link\_id|Primary key|PK|No|
-|workflow\_id|The workflow to connect to|FK [workflow](./workflow.mdx)|Yes|
-|workflow\_step\_id|A workflow step connected to the option|FK [workflow_step](./workflow-step.mdx)|Yes|
+|workflow\_id|The workflow to connect to|FK [workflow](./workflow)|Yes|
+|workflow\_step\_id|A workflow step connected to the option|FK [workflow_step](./workflow-step)|Yes|
 |Rank|Step order|Int|Yes|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

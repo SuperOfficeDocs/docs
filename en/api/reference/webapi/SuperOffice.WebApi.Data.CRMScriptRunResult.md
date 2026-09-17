@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CRMScriptRunResult"></a> Class CRMScriptRunResult
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for CRMScriptRunResult.
@@ -13,13 +13,13 @@ public class CRMScriptRunResult : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[CRMScriptRunResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptRunResult)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[CRMScriptRunResult](SuperOffice.WebApi.Data.CRMScriptRunResult.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -50,7 +50,7 @@ public virtual CRMScriptErrorInfo ErrorInformation { get; set; }
 
 #### Property Value
 
- [CRMScriptErrorInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptErrorInfo)
+ [CRMScriptErrorInfo](SuperOffice.WebApi.Data.CRMScriptErrorInfo.md)
 
 ### <a id="SuperOffice_WebApi_Data_CRMScriptRunResult_Eventdata"></a> Eventdata
 
@@ -62,7 +62,7 @@ public virtual EventData Eventdata { get; set; }
 
 #### Property Value
 
- [EventData](/en/api/reference/webapi/SuperOffice.WebApi.Data.EventData)
+ [EventData](SuperOffice.WebApi.Data.EventData.md)
 
 ### <a id="SuperOffice_WebApi_Data_CRMScriptRunResult_Headers"></a> Headers
 
@@ -74,7 +74,7 @@ public virtual StringDictionary Headers { get; set; }
 
 #### Property Value
 
- [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
+ [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
 
 ### <a id="SuperOffice_WebApi_Data_CRMScriptRunResult_Output"></a> Output
 
@@ -98,7 +98,7 @@ public virtual StringDictionary Parameters { get; set; }
 
 #### Property Value
 
- [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
+ [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
 
 ### <a id="SuperOffice_WebApi_Data_CRMScriptRunResult_StatusCode"></a> StatusCode
 
@@ -146,9 +146,9 @@ public virtual CRMScriptTraceRun TraceRun { get; set; }
 
 #### Property Value
 
- [CRMScriptTraceRun](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScriptTraceRun)
+ [CRMScriptTraceRun](SuperOffice.WebApi.Data.CRMScriptTraceRun.md)
 
 ## See Also
 
-[CRMScriptAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CRMScriptAgent)
+[CRMScriptAgent](SuperOffice.WebApi.Agents.CRMScriptAgent.md)
 

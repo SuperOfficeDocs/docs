@@ -1,13 +1,12 @@
 ---
-title: project_freetextsearch
+title: "project_freetextsearch"
 keywords: mdoprovider mdo provider project_freetextsearch
-description: Provider for selecting a Project. Does keyword matching and scoring across multiple string fields. Checks name, description, soundex fields.
+description: "Provider for selecting a Project. Does keyword matching and scoring across multiple string fields. Checks name, description, soundex fields."
 generated: true
 content_type: reference
 envir: online
 ---
 
-## "project_freetextsearch" MDO List
 Provider for selecting a Project.
 Does keyword matching and scoring across multiple
 string fields. Checks name, description, soundex fields.
@@ -16,16 +15,15 @@ User's own projects, recently added + modified projects, projects modified or cr
 Matches on word boundaries or at start of field are scored extra highly.
 
 
+
 Returns project items only: Id = project-id, Name = Project name, Type = "Project", IconHint="deleted_item", ExtraInfo= project-id
+
 
 
 Completed/Done projects are marked with stylehint = "deleted_item" (but item.deleted = false)
 
-Implemented by the ProjectListFreetextSearchProvider class.
+Implemented by the `SuperOffice.CRM.Lists.ProjectListFreetextSearchProvider` class.
 The name of the MDO list is 'project_freetextsearch'.
-
-
-
 
 ## Sample Request
 
@@ -75,10 +73,10 @@ foreach (var item in listProvider.RootItems) {
 
 ## Related MDO Lists
 
-* "project_freetextsearchheadings"
-* "project_freetextsearchheadingswithallitem"
-* "project_freetextsearchheadingswithallitemwithnoselection"
-* "project_freetextsearchheadingswithnoselection"
-* "project_freetextsearchwithallitem"
-* "project_freetextsearchwithallitemwithnoselection"
-* "project_freetextsearchwithnoselection"
+* `project_freetextsearchheadings`
+* `project_freetextsearchheadingswithallitem`
+* `project_freetextsearchheadingswithallitemwithnoselection`
+* `project_freetextsearchheadingswithnoselection`
+* `project_freetextsearchwithallitem`
+* `project_freetextsearchwithallitemwithnoselection`
+* `project_freetextsearchwithnoselection`

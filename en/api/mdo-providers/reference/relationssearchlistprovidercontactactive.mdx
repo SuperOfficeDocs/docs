@@ -1,30 +1,27 @@
 ---
-title: RelationsSearchListProviderContactActive
+title: "RelationsSearchListProviderContactActive"
 sidebarTitle: "Contact Active"
 keywords: mdoprovider mdo provider relationssearchlistprovidercontactactive
-description: Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).
+description: "Serve the active and passive texts of relations, with a given table as source (active) or destination (passive)."
 generated: true
 content_type: reference
 envir: online
 ---
 
-## "relationssearchlistprovidercontactactive" MDO List
 Serve the active and passive texts of relations, with a given table as source (active)
 or destination (passive).
 
-To facilitate relation searching, we need to provide a way to choose <b>which</b> relation we
+To facilitate relation searching, we need to provide a way to choose **which** relation we
 would like to find. This provider supplies one list (dynamically named) for each table that
 is used as a source or destination (relationdefinition --&gt; relationtarget).
+
 
 
 Each relation target combination supplied by relationtarget causes the relationdefinition to
 appear in the correct direction, in the list for a table. Each such list is always flat.
 
-Implemented by the RelationsSearchListProvider class.
+Implemented by the `SuperOffice.CRM.Lists.RelationsSearchListProvider` class.
 The name of the MDO list is 'relationssearchlistprovidercontactactive'.
-
-
-
 
 ## Sample Request
 
@@ -56,10 +53,10 @@ foreach (var item in listProvider.RootItems) {
 
 ## Related MDO Lists
 
-* "relationssearchlistprovidercontactactiveheadings"
-* "relationssearchlistprovidercontactactiveheadingswithallitem"
-* "relationssearchlistprovidercontactactiveheadingswithallitemwithnoselection"
-* "relationssearchlistprovidercontactactiveheadingswithnoselection"
-* "relationssearchlistprovidercontactactivewithallitem"
-* "relationssearchlistprovidercontactactivewithallitemwithnoselection"
-* "relationssearchlistprovidercontactactivewithnoselection"
+* `relationssearchlistprovidercontactactiveheadings`
+* `relationssearchlistprovidercontactactiveheadingswithallitem`
+* `relationssearchlistprovidercontactactiveheadingswithallitemwithnoselection`
+* `relationssearchlistprovidercontactactiveheadingswithnoselection`
+* `relationssearchlistprovidercontactactivewithallitem`
+* `relationssearchlistprovidercontactactivewithallitemwithnoselection`
+* `relationssearchlistprovidercontactactivewithnoselection`

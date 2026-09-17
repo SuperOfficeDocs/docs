@@ -1,6 +1,6 @@
 ---
-title: BatchTaskDefinition table
-description: Batch task definitiopns, populated from the SuperOffice.CRM.BatchProcessing.BatchTask attribute
+title: "BatchTaskDefinition table"
+description: "Batch task definitiopns, populated from the SuperOffice.CRM.BatchProcessing.BatchTask attribute"
 generated: true
 content_type: reference
 envir: online
@@ -8,9 +8,9 @@ envir: online
 
 import Batchtaskdefinition from "./includes/batchtaskdefinition.mdx";
 
-## BatchTaskDefinition Table (244)
-
 Batch task definitiopns, populated from the SuperOffice.CRM.BatchProcessing.BatchTask attribute
+
+Table number: 244
 
 ## Fields
 
@@ -26,9 +26,9 @@ Batch task definitiopns, populated from the SuperOffice.CRM.BatchProcessing.Batc
 |autoRestartCount|Number of times the whole batch task should be restarted; -1 means infinite, which is useful for things like Travel Gateway that should &apos;always&apos; be available|Int|No|
 |assemblyVersion|Version of the assembly that contains the code this batch task definition was populated from|String(49)|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|&apos;heartbeat&apos; that is updated once a minute by the batch task process|UtcDateTime|No|
-|updated\_associate\_id|&apos;heartbeat&apos; that is updated once a minute by the batch task process|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|&apos;heartbeat&apos; that is updated once a minute by the batch task process|FK [associate](./associate)|No|
 |updatedCount|heartbeat&apos; that is updated once a minute by the batch task process|UShort|No|
 
 

@@ -1,15 +1,13 @@
 ---
-title: ErpEntity
-description: 
+title: "ErpEntity"
+description: ""
 keywords: ErpEntity archive provider
 generated: true
 content_type: reference
 envir: onsite, online
 ---
 
-## "ErpEntity"
-
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.ErpEntityProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class `SuperOffice.CRM.ArchiveLists.ErpEntityProvider` inside NetServer's SODatabase assembly.
 
 ## Supported Entities
 | Name | Description |
@@ -19,22 +17,10 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.ErpE
 ## Supported Columns
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
-|ConnectionId| *None* |ERP connection ID: ERP connection ID| x |
-|SearchText| *None* |Search text: Search text| x |
-|ErpActorType| *None* |Actor type: Actor type| x |
 |Connected| *None* |Connected: Connected| x |
-|OnlyParentConnected| *None* |OnlyParentConnected: OnlyParentConnected| x |
+|ConnectionId| *None* |ERP connection ID: ERP connection ID| x |
+|ErpActorType| *None* |Actor type: Actor type| x |
 |ErpKey| *None* |ErpKey: ErpKey| x |
-
-## Sample
-
-```http!
-GET /api/v1/archive/ErpEntity?$select=ErpActorType,Connected
-Authorization: Basic dGplMDpUamUw
-Accept: application/json; charset=utf-8
-Accept-Language: sv
-
-```
-
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
-
+|OnlyParentConnected| *None* |OnlyParentConnected: OnlyParentConnected| x |
+|SearchText| *None* |Search text: Search text| x |
+There is no generated sample for this provider.

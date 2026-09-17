@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Summarizer"></a> Class Summarizer
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for Summarizer.
@@ -13,7 +13,7 @@ public class Summarizer
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Summarizer](/en/api/reference/webapi/SuperOffice.WebApi.Data.Summarizer)
+[Summarizer](SuperOffice.WebApi.Data.Summarizer.md)
 
 #### Inherited Members
 
@@ -37,5 +37,5 @@ public Summarizer()
 
 ## See Also
 
-[AIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AIAgent)
+[AIAgent](SuperOffice.WebApi.Agents.AIAgent.md)
 

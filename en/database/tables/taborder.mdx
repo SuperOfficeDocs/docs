@@ -1,6 +1,6 @@
 ---
-title: TabOrder table
-description: Order of tabs within a tab control, if configured by a user
+title: "TabOrder table"
+description: "Order of tabs within a tab control, if configured by a user"
 generated: true
 content_type: reference
 envir: online
@@ -8,22 +8,22 @@ envir: online
 
 import Taborder from "./includes/taborder.mdx";
 
-## TabOrder Table (152)
-
 Order of tabs within a tab control, if configured by a user
+
+Table number: 152
 
 ## Fields
 
 | Name | Description | Type | Nullable |
 |------|-------------|------|:----:|
 |TabOrder\_id|Primary key|PK|No|
-|associateId|Associate who owns this tab order|FK [associate](./associate.mdx)|No|
+|associateId|Associate who owns this tab order|FK [associate](./associate)|No|
 |tabName|Name of tab control|String(239)|No|
 |tabOrder|The actual tab order|String(2047)|No|
 |registered|Registered when|UtcDateTime|No|
-|registered\_associate\_id|Registered by whom|FK [associate](./associate.mdx)|No|
+|registered\_associate\_id|Registered by whom|FK [associate](./associate)|No|
 |updated|Last updated when|UtcDateTime|No|
-|updated\_associate\_id|Last updated by whom|FK [associate](./associate.mdx)|No|
+|updated\_associate\_id|Last updated by whom|FK [associate](./associate)|No|
 |updatedCount|Number of updates made to this record|UShort|No|
 
 

@@ -1,14 +1,11 @@
 ---
-title: MDO List Provider names
-description: Valid list of provider names
+title: "MDO List Provider names"
+description: "Valid list of provider names"
 generated: true
 keywords: mdoprovider mdo provider
 content_type: reference
 envir: online
-mode: "wide"
 ---
-
-## MDO List Providers
 
 ## List of MDO table names
 
@@ -68,8 +65,8 @@ mode: "wide"
 | [Activelanguage](./activelanguage) ||
 | [Activitystatus](./activitystatus) |MDO provider for the ActivityStatus enum: NotStarted, Started, Completed|
 | [Addressformat](./addressformat) |MDO list provider for AddressFormats Id returned is the layout_id, not the addressformat_id.|
-| [Allpersonsearch](./allpersonsearch) |Provider for selecting a Person, including search on contacts that match as well as persons. This provider wil|
-| [Allpersonwithassociatesearch](./allpersonwithassociatesearch) |Provides the same baseline functionality as AllPersonListSearchProvider, but additionally adds the associateId of the person to the extrainf|
+| [Allpersonsearch](./allpersonsearch) |Provider for selecting a Person, including search on contacts that match as well as persons. This provider will return a mix of contact and person records. The type is indicated in the Type property of the item, and the contact ID is always in the extraInfo. Uses freetext to perform a speedy search on the contact and person tables. Does not include sub-tables, like userdefined fields, text records etc.|
+| [Allpersonwithassociatesearch](./allpersonwithassociatesearch) |Provides the same baseline functionality as `AllPersonListSearchProvider`, but additionally adds the associateId of the person to the extrainfo and changes the iconhint if the person is an associate. Uses freetext to perform a speedy search on the contact and person tables. Does not include sub-tables, like userdefined fields, text records etc.|
 | [Allpreferencekeys](./allpreferencekeys) |MDO Provider that retrieves all preference keys|
 | [Amountclass](./amountclass) |GenericMDOProvider reads MDO lists with default settings|
 | [Appointment](./appointment) ||
@@ -79,59 +76,59 @@ mode: "wide"
 | [Appointmentfavourite](./appointmentfavourite) |MDO list provider for Favourites|
 | [Appointmentgroup](./appointmentgroup) |Appointment grouping types: TaskType.Appointment, Phone, ToDo|
 | [Appointmentresource](./appointmentresource) ||
-| [Appointmenttask](./appointmenttask) |MDO list provider for the task list of the AppointmentDialog. This list extends the basic TaskRow wit|
-| [Appointmenttextid](./appointmenttextid) |Special case of appointment list where we get the id value from the Text table. For use when we wan|
+| [Appointmenttask](./appointmenttask) |MDO list provider for the task list of the AppointmentDialog. This list extends the basic `TaskRow` with specialized icons based on the `TaskType`.|
+| [Appointmenttextid](./appointmenttextid) |Special case of appointment list where we get the id value from the Text table. For use when we want to represent an appointment with the text.|
 | [Appointmenttype](./appointmenttype) |List of AppointmentType values: inDiary, inChecklist, Note, Document, SavedReport, BookingForDiary, BookingForChecklist|
-| [Archiveprovider](./archiveprovider) |MDO provider for available archive providers for Configurable screens|
+| [Archiveprovider](./archiveprovider) |MDO provider for available archive providers for Configurable screens. The items will be added by scanning ArchiveProviderFactory.KnownArchiveProviders for this pattern;|
 | [Area](./area) |List of all defined areas.|
 | [Associaterestrictions](./associaterestrictions) |Public MDO provider based on the AssociateRestrictionsMDOProviderBase.|
-| [Associatewithmail](./associatewithmail) |Returns associates with their email addresses in the format "Full Name &lt;email&gt;"|
+| [Associatewithmail](./associatewithmail) |Returns associates with their email addresses in the format "Full Name &lt;email&gt;". Associates without an e-mail address are returned as "Full Name".|
 | [Attachment](./attachment) ||
 | [Business](./business) |GenericMDOProvider reads MDO lists with default settings|
 | [Category](./category) |GenericMDOProvider reads MDO lists with default settings|
 | [Categorygroup](./categorygroup) |MDO provider for the CategoryGroup enum.|
 | [Chartselection](./chartselection) ||
-| [Chatbot](./chatbot) |List of all script folders that contain a script named like "%bot%register%"|
+| [Chatbot](./chatbot) |List of all script folders that contain a script named like "%bot%register%". Returns script id + folder name as flat list.|
 | [Chatchannel](./chatchannel) ||
 | [Chatservice](./chatservice) ||
 | [Chatsessionstatus](./chatsessionstatus) |Chat session status values|
 | [Chatuser](./chatuser) ||
-| [Colorindex](./colorindex) |List of named colors from the "ColorIndex" enum|
-| [Combinedcontactpersonsearch](./combinedcontactpersonsearch) |Consider using the ContactAndPersonListFreetextSearchProvider/"contact_and_person_freetextsearch" MDO list instead of this one|
+| [Colorindex](./colorindex) |List of named colors from the "ColorIndex" enum. Steps to change the palette: 1. Add to the end of the ColorIndex enum (in Modelling) 2. Add to this provider. The color palette in SCIL uses the color code in the styleHint field 3. Update colors in fullcalendar.so.less so that css class colorX has the same color code returned by this list.|
+| [Combinedcontactpersonsearch](./combinedcontactpersonsearch) |Consider using the ContactAndPersonListFreetextSearchProvider/"contact_and_person_freetextsearch" MDO list instead of this one. Provider for selecting a Person or a Contact, including search on contacts that match as well as persons. this provider will return a mix of contact and person records. The type is indicated in the Type property of the item, and the contact ID is always in the extraInfo.|
 | [Comptr](./comptr) |GenericMDOProvider reads MDO lists with default settings|
 | [Consentpurpose](./consentpurpose) |MDO list provider for ConsentPurpose|
 | [Consentsource](./consentsource) |MDO list provider for Consent source|
 | [Contact](./contact) |Provider for selecting a Contact - without person search|
 | [Contactfavourite](./contactfavourite) |MDO list provider for Favourites|
-| [Contactperson_freetextsearch](./contactperson_freetextsearch) |Provider for selecting a Contact - with person search|
+| [Contactperson_freetextsearch](./contactperson_freetextsearch) |Provider for selecting a Contact - with person search. Does keyword matching and scoring across multiple string fields. Checks name, department, soundex fields.|
 | [Contactphone](./contactphone) ||
-| [Contactrelationdefinition](./contactrelationdefinition) |MDO list provider for contact/person relation definitions. This provider is a takes a mandator|
-| [Contactwithpersonsearch](./contactwithpersonsearch) |Provider for selecting a Contact, including search on persons that match as well as contacts. this provider wil|
-| [Contactwithpersonsearch_new](./contactwithpersonsearch_new) |Provider for selecting a Contact, including search on persons that match as well as contacts. this provider wil|
-| [Contact_and_person_freetextsearch](./contact_and_person_freetextsearch) |Provider for selecting a Contact or a Perso|
+| [Contactrelationdefinition](./contactrelationdefinition) |MDO list provider for contact/person relation definitions. This provider is a takes a mandatory additionalInfo parameter, that specifies what kind of relation should be fetched.|
+| [Contactwithpersonsearch](./contactwithpersonsearch) |Provider for selecting a Contact, including search on persons that match as well as contacts. this provider will return a mix of contact and person records. The type is indicated in the Type property of the item, and the contact ID is always in the extraInfo.|
+| [Contactwithpersonsearch_new](./contactwithpersonsearch_new) |Provider for selecting a Contact, including search on persons that match as well as contacts. this provider will return a mix of contact and person records. The type is indicated in the Type property of the item, and the contact ID is always in the extraInfo.|
+| [Contact_and_person_freetextsearch](./contact_and_person_freetextsearch) |Provider for selecting a Contact or a Person Does keyword matching and scoring across multiple string fields. Checks name, department, soundex fields. . Additional: Name = Person or PersonContact or ContactPerson, AddContact = true or false - add a contact item for person items, ExpandContact = TRUE or false - add all persons for a contact items, SkipRetired = TRUE or false - skip retired persons, ContactId = 123 - boost persons belonging to contact id in results rank|
 | [Contact_and_person_freetextsearch_hierarchical](./contact_and_person_freetextsearch_hierarchical) ||
-| [Contact_freetextsearch](./contact_freetextsearch) |Provider for selecting a Contact - without person search|
-| [Contact_new](./contact_new) |Provider for selecting a Contact - without person search|
+| [Contact_freetextsearch](./contact_freetextsearch) |Provider for selecting a Contact - without person search. Does keyword matching and scoring across multiple string fields. Checks name, department, soundex fields.|
+| [Contact_new](./contact_new) |Provider for selecting a Contact - without person search. Does keyword matching and scoring across multiple string fields. Checks name, department, soundex fields.|
 | [Contint](./contint) |GenericMDOProvider reads MDO lists with default settings|
 | [Country2](./country2) |Same as CountryProvider, but with icon hints based on the countrys name.|
 | [Createdocumenttemplateplugin](./createdocumenttemplateplugin) |List of document plugins that can create document templates.|
 | [Credentialgroup](./credentialgroup) |List of user groups supported by a named creditial plugin, sorted by group name.|
 | [Credited](./credited) |GenericMDOProvider reads MDO lists with default settings|
-| [Crmfields](./crmfields) ||
+| [Crmfields](./crmfields) |Get the list of Crm fields relevant to one particular Erp field, for field mapping.|
 | [Crmscript](./crmscript) |Archive of CRMScripts. Returns script id + name of script as hierarchy.|
 | [Culture](./culture) ||
-| [Culturesolanguage](./culturesolanguage) |List of SuperOffice cultures with old-style SO Culture name in ExtraInfo|
+| [Culturesolanguage](./culturesolanguage) |List of SuperOffice cultures with old-style SO Culture name in ExtraInfo. ( 1031, "German","GE" )|
 | [Currency](./currency) |GenericMDOProvider reads MDO lists with default settings|
-| [Currentudeffields](./currentudeffields) |Get a list of udef fields for a given type. Pass the type as AdditionalInfo|
+| [Currentudeffields](./currentudeffields) |Get a list of udef fields for a given type. Pass the type as AdditionalInfo. Optionally it is possible to exclude page one fields by adding extrainfo ( 'Contact,excludepageone' )|
 | [Customerlanguage](./customerlanguage) |Customer Languages list. From the CustLang table.|
-| [Customobjectfavourite](./customobjectfavourite) ||
-| [Customobjectlist](./customobjectlist) |CustomObjectListProvider creates tree list of the custom objects|
-| [Customobjectrelation](./customobjectrelation) |MDO list provider for custom object relation|
+| [Customobjectfavourite](./customobjectfavourite) |MDO list provider for Favourites|
+| [Customobjectlist](./customobjectlist) |`CustomObjectListProvider` creates tree list of the custom objects|
+| [Customobjectrelation](./customobjectrelation) |MDO list provider for custom object relations Custom object's name is passed as additionalInfo parameter|
 | [Dashboard](./dashboard) |MDO list provider for Dashboard, can be used by Navigator.|
 | [Dashboardcurrency](./dashboardcurrency) ||
 | [Dashboardentity](./dashboardentity) ||
 | [Dashboardtheme](./dashboardtheme) ||
-| [Dashboardtile](./dashboardtile) |MDO list provider for Dashboard tile|
+| [Dashboardtile](./dashboardtile) |MDO list provider for Dashboard tiles If the DashboardTileEntityType parameter is given in the ExtraInfo, only this type will be shown in list, so no tree view in that case. Example: DashboardTileEntityType=Company|
 | [Dashboardtileentitytype](./dashboardtileentitytype) |List of dashboard tile types: Company, Project, Sale, Product, Activity, Web Panel|
 | [Dashtilemeasure](./dashtilemeasure) ||
 | [Dayofmonth](./dayofmonth) |MDO provider for the hard-coded list of day alternatives in the recurrence dialog.|
@@ -151,46 +148,46 @@ mode: "wide"
 | [Documentmailingtemplate](./documentmailingtemplate) |Document mailing templates|
 | [Documenttemplatelanguage](./documenttemplatelanguage) |MDO Provider for Document Template langauges.|
 | [Documenttemplatesfiltered](./documenttemplatesfiltered) |MDO Provider for Document Templates, excluding Document details and quote mail templates, which are for system use rather than end-user choosing.|
-| [Documenttypes](./documenttypes) |List of document types for the given plugin|
-| [Efd_13](./efd_13) |Extra fields dropdown lists. Contains list of string values defined on the extra_field|
+| [Documenttypes](./documenttypes) |List of document types for the given plugin. ExtraInfo = document plugin-id.|
+| [Efd_13](./efd_13) |Extra fields dropdown lists. Contains list of string values defined on the extra_field. List names are 'EFD_123' where 123 is the extra field id.|
 | [Ejcategory](./ejcategory) |EjCategoryProvider creates a flat or tree list based on the table: EJ_CATEGORY|
 | [Ejuser](./ejuser) ||
-| [Emailaddress](./emailaddress) |List of e-mail addresses matching the search valu|
+| [Emailaddress](./emailaddress) |List of e-mail addresses matching the search value Searches e-mail address, person name, company name. E-mail address matches: return e-mail addresses + owner name (person or contact name) . Person name matches: return all e-mail addresses for matched persons . Company name matches. return all persons + first e-mail address for matched persons. .|
 | [Emailflow](./emailflow) |List provider for EmailFlow|
 | [Emailfolder](./emailfolder) |EmailFolderProvider gives you the folder hierarchy of a given mail account|
 | [Emailfromtype](./emailfromtype) |MDO provider for the EmailFromType enum|
-| [Emailphone](./emailphone) |List of e-mail addresses and phone numbers matching the search valu|
-| [Emailpriorityprovider](./emailpriorityprovider) |MDO List provider for email priority: Highest, High, Normal, Low, Lowest, No Priority|
+| [Emailphone](./emailphone) |List of e-mail addresses and phone numbers matching the search value Searches e-mail address, phone number, person name, company name. E-mail address/phone number matches: return e-mail addresses/phone numbers + owner name (person or contact name) . Person name matches: return all e-mail addresses/phone numbers for matched persons . Company name matches. return all persons + first e-mail address/phone number for matched persons. .|
+| [Emailpriorityprovider](./emailpriorityprovider) |MDO List provider for email priority: Highest, High, Normal, Low, Lowest, No Priority. Enum value in the extrainfo field|
 | [Emailreplytotype](./emailreplytotype) |MDO provider for the EmailReplyToType enum|
 | [Enrichcontact](./enrichcontact) |List of possible contacts to import from outside sources.|
-| [Erpactortype](./erpactortype) ||
+| [Erpactortype](./erpactortype) |List of ERP actor types. Supported values in the AdditionalInfo: **crmactortype** - Enum for looking up matching ERP actor types in table, **connectionid** - Only return ERP actor types supported by this connection AdditionalInfo string: "crmactortype=1&amp;connectionid=1"|
 | [Erpconnections](./erpconnections) |Retrieve the list of all defined Erp Connections (not Connectors, that's another list)|
 | [Erpconnectors](./erpconnectors) |Retrieve the list of all defined Erp Connectors (not Connections, that's another list)|
-| [Erpdeliveryterms](./erpdeliveryterms) ||
-| [Erpdeliverytype](./erpdeliverytype) ||
-| [Erpfields](./erpfields) ||
-| [Erppaymentterms](./erppaymentterms) ||
-| [Erppaymenttype](./erppaymenttype) ||
-| [Erpproductcategory](./erpproductcategory) ||
-| [Erpproductfamily](./erpproductfamily) ||
-| [Erpproducttype](./erpproducttype) ||
-| [Eventhandlertype](./eventhandlertype) |Screen trigger event types: members of [EventHandlerType](/en/api/reference/webapi/SuperOffice.WebApi.Data.EventHandlerType) enum.|
+| [Erpdeliveryterms](./erpdeliveryterms) |Dynamic provider that dispatches Quote Connector lists, based on QuoteAlternativeId or SaleId and "Erp"+&lt;list name&gt;. Consider using "QM_"+&lt;sale_id&gt;+&lt;list name&gt; instead if you can.|
+| [Erpdeliverytype](./erpdeliverytype) |Dynamic provider that dispatches Quote Connector lists, based on QuoteAlternativeId or SaleId and "Erp"+&lt;list name&gt;. Consider using "QM_"+&lt;sale_id&gt;+&lt;list name&gt; instead if you can.|
+| [Erpfields](./erpfields) |Get the list of Erp fields for one specific connection|
+| [Erppaymentterms](./erppaymentterms) |Dynamic provider that dispatches Quote Connector lists, based on QuoteAlternativeId or SaleId and "Erp"+&lt;list name&gt;. Consider using "QM_"+&lt;sale_id&gt;+&lt;list name&gt; instead if you can.|
+| [Erppaymenttype](./erppaymenttype) |Dynamic provider that dispatches Quote Connector lists, based on QuoteAlternativeId or SaleId and "Erp"+&lt;list name&gt;. Consider using "QM_"+&lt;sale_id&gt;+&lt;list name&gt; instead if you can.|
+| [Erpproductcategory](./erpproductcategory) |Dynamic provider that dispatches Quote Connector lists, based on QuoteAlternativeId or SaleId and "Erp"+&lt;list name&gt;. Consider using "QM_"+&lt;sale_id&gt;+&lt;list name&gt; instead if you can.|
+| [Erpproductfamily](./erpproductfamily) |Dynamic provider that dispatches Quote Connector lists, based on QuoteAlternativeId or SaleId and "Erp"+&lt;list name&gt;. Consider using "QM_"+&lt;sale_id&gt;+&lt;list name&gt; instead if you can.|
+| [Erpproducttype](./erpproducttype) |Dynamic provider that dispatches Quote Connector lists, based on QuoteAlternativeId or SaleId and "Erp"+&lt;list name&gt;. Consider using "QM_"+&lt;sale_id&gt;+&lt;list name&gt; instead if you can.|
+| [Eventhandlertype](./eventhandlertype) |Screen trigger event types: members of `EventHandlerType` enum.|
 | [Everymonth](./everymonth) |MDO provider for the hard-coded list of day month in the recurrence dialog.|
 | [Executeonevent](./executeonevent) |List of windows client events to execute tasks on: Logon, Logoff, LocalUpdate|
-| [Exporttemplate](./exporttemplate) |MDO provider for the list of template files for the 'export to file' functio|
+| [Exporttemplate](./exporttemplate) |MDO provider for the list of template files for the 'export to file' function in the Selection Task pane. These are .sxf files found in so_arc/template, as well as in the so_arc/&lt;username&gt; directory of the current user. . Impersonation is used if specified by the config file to access the document directories. . The file name is returned as the list item name, while the full path is in the extrainfo.|
 | [Extapp](./extapp) |GenericMDOProvider reads MDO lists with default settings|
 | [Faqcategory](./faqcategory) ||
 | [Faqreplytemplate](./faqreplytemplate) ||
 | [Faqreplytemplatefavourite](./faqreplytemplatefavourite) |MDO list provider for Favourites|
 | [Favouritetype](./favouritetype) |MDO list provider for Favourite types|
-| [Filterassociates](./filterassociates) |Associate list for the Filter dialog. This associate list differs from the standard list in two ways|
-| [Filterfuturedate](./filterfuturedate) |MDO provider for the hard-coded list of future date alternatives in the Filter dialog|
+| [Filterassociates](./filterassociates) |Associate list for the Filter dialog. This associate list differs from the standard list in two ways: a) It contains even former employees (you may wnat to filter in our out their activites, even though they have gone); and b) It is of type Selectable, with the currently selected associates marked as such.|
+| [Filterfuturedate](./filterfuturedate) |MDO provider for the hard-coded list of future date alternatives in the Filter dialog. Each items' extraInfo contains the number of days into the future that this choice represents, slightly simplified (30 days per month and no leap years).|
 | [Filtergroups](./filtergroups) |User groups, filtered according to the usergroups selected in the filter dialog.|
-| [Findproduct](./findproduct) |QuickSearch for the Add Quote Line dialog, where a single-line user input is passed to th|
+| [Findproduct](./findproduct) |QuickSearch for the Add Quote Line dialog, where a single-line user input is passed to the correct QuoteConnection FindProduct method, and results are returned in a standard or specified format back. The format can be specified by setting a columnLayout part in the extrainfo. For example "columnLayout=Code\tName\tUnitListPrice\tQuantityUnit"|
 | [Font](./font) |List provider for availablefonts table.|
 | [Fontsize](./fontsize) |List of font types|
 | [Fonttype](./fonttype) |List of font types|
-| [Form](./form) |Get all forms with folder hierarchy|
+| [Form](./form) |Get all forms with folder hierarchy. Set ExtraInfo "onlyActive=true" if you only want to get active forms and "onlyNewTicket=true" if only forms that create tickets. Set extrainfo "onlyForms=true" if you do not want form templates.|
 | [Formfields](./formfields) |List of customizable fields for forms|
 | [Formfolder](./formfolder) |FormFolderProvider creates a flat or tree list based on the table: s_picture_folder|
 | [Formmailings](./formmailings) ||
@@ -200,13 +197,13 @@ mode: "wide"
 | [Formratingstars](./formratingstars) |MDO provider for the Ratings as used in forms|
 | [Formratingthumbs](./formratingthumbs) ||
 | [Formsubmissionstatusprovider](./formsubmissionstatusprovider) ||
-| [Freetextsearchentity](./freetextsearchentity) |List provider that returns the entities supported by free text search. The extraInfo field contains th|
-| [Functionrights](./functionrights) |FunctionRightsListProvider returns a MDO list of function rights in the database|
-| [Genericperson](./genericperson) |List of persons with mail. Supports Selection(any type), project and associate|
-| [Genericpersonwithmail](./genericpersonwithmail) |List of persons with mail. Supports Selection(any type), project and associate|
+| [Freetextsearchentity](./freetextsearchentity) |List provider that returns the entities supported by free text search. The extraInfo field contains the programmatic table name, which can be used as input for the OwnerEntityName restriction of the `FreetextCountProvider`. The ID of each item is the table number corresponding to the entity, and can also be used as a restriction value.|
+| [Functionrights](./functionrights) |FunctionRightsListProvider returns a MDO list of function rights in the database. Additional Info = "role=123;languageId=1024;roleType=1"|
+| [Genericperson](./genericperson) |List of persons with mail. Supports Selection(any type), project and associate. Uses an inner provider `PersonListGenericContactProjectProvider`.|
+| [Genericpersonwithmail](./genericpersonwithmail) |List of persons with mail. Supports Selection(any type), project and associate. Uses an inner provider `PersonWithMailListProvider`.|
 | [Groupview](./groupview) |GroupViewMDOProvider uses the AssociateMDOProvider + DiaryView to create the MDOlist for Groupview in Diary view.|
-| [Heading](./heading) |List provider for the Heading table. While this table looks like an MDO table|
-| [Hierarchy](./hierarchy) |List provider for the Hierarchy table. Pass the domain using Additional info|
+| [Heading](./heading) |List provider for the Heading table. While this table looks like an MDO table, it lacks the standardized grouplink and headinglink companion tables for good reason, since it is the heading table itself.|
+| [Hierarchy](./hierarchy) |List provider for the Hierarchy table. Pass the domain using Additional info. MDO can be nested arbitrary levels deep. Fullname contains path separated. returns a list of domains if no domain is specified.|
 | [Htmlmailing](./htmlmailing) |MDO provider for the different types of Mailings|
 | [Htmlmailingtemplate](./htmlmailingtemplate) |MDO provider for the different types of Mailing templates|
 | [Importblankaction](./importblankaction) |Import actions for blank values: Use Person Name, Skip|
@@ -219,7 +216,7 @@ mode: "wide"
 | [Importnewproductlistitem](./importnewproductlistitem) |Import product list items: add, use blank|
 | [Importpersonduplicatematch](./importpersonduplicatematch) |Import Person Fields to match on: Name, E-mail, phone, number, id, None|
 | [Importphoneurlsemail](./importphoneurlsemail) |Import phone/url/email values: Add, Replace, Skip|
-| [Importproductduplicatematch](./importproductduplicatematch) |Import product detect duplicates based on field:  Name, Code, Name+Code|
+| [Importproductduplicatematch](./importproductduplicatematch) |Import product detect duplicates based on field: Name, Code, Name+Code|
 | [Importproductfields](./importproductfields) |MDO provider for column headers used in import|
 | [Intent](./intent) |GenericMDOProvider reads MDO lists with default settings|
 | [Invitationtemplatelanguage](./invitationtemplatelanguage) ||
@@ -232,10 +229,10 @@ mode: "wide"
 | [Leadstatus](./leadstatus) |List provider for LeadStatus|
 | [Legalbase](./legalbase) |MDO list provider for Legal base|
 | [Lists](./lists) |List of all MDO list providers.|
-| [Locatecontact](./locatecontact) |Provider for selecting a Contact, including search on persons that match as well as contacts. this provider wil|
-| [Locatecontact_new](./locatecontact_new) |Provider for selecting a Contact, including search on persons that match as well as contacts. this provider wil|
+| [Locatecontact](./locatecontact) |Provider for selecting a Contact, including search on persons that match as well as contacts. this provider will return contact records.|
+| [Locatecontact_new](./locatecontact_new) |Provider for selecting a Contact, including search on persons that match as well as contacts. this provider will return contact records, even for person matches.|
 | [Locateperson](./locateperson) |Person list with contact name.|
-| [Location](./location) |Implements the mdo provider for the list of avaiable locations. This list aggregates element|
+| [Location](./location) |Implements the mdo provider for the list of avaiable locations. This list aggregates elements from different sources like contact, person, associate, participants and resources to build a list that represents all the relevant, available locations that can be used when creating a new appointment. The provider uses a set of name/value pairs in the additionalinfo parameter used in the construct() function. The available names are: ownercontactid (mandatory): id of the contact for the owner of the appointment currentassociate (mandatory): currently logged in associate appointmentcontactid: id of the contact in the appointment appointmentpersonid: id of the person in the appointment appointmentid: id of existing appointment startdate: startdate used for conflict resolution enddate: enddate used for conflict resolution participantpersonidlist: comma separated list of existing participant person ids participantassociateidlist: comma separated list of existing participant associate ids(resources) skipresourcelocation: Skip resource locations|
 | [Mailclient](./mailclient) ||
 | [Mailhtmltemplate](./mailhtmltemplate) |List provider for the Mailtemplates.|
 | [Mailing](./mailing) |All mailings - history ids|
@@ -246,11 +243,12 @@ mode: "wide"
 | [Mailingtemplate](./mailingtemplate) |General mailing templates|
 | [Mailingtype](./mailingtype) |Mailing types: Html mail, SMS, Word Document|
 | [Mailtemplate](./mailtemplate) |List provider for the Mailtemplates.|
-| [Mergedocument](./mergedocument) |MDO list provider for documents marked as type MailMergeDraft.|
+| [Marketing_freetextsearch](./marketing_freetextsearch) |Freetext search across the three real tables backing Marketing entities (mailings, forms, email flows) - the Marketing landing page's entities list spans all three, unlike every other landing page's single-table search. Registered as "marketing_freetextsearch", matching LandingpageProvider's "{page}_freetextsearch" convention (LandingpageProvider.cs), and plugged in the same way as SaleListFreetextSearchProvider/ProjectListFreetextSearchProvider (both FreetextSearchProviderBase). . None of the three tables carry a SoundEx field, so fuzzy matching (as Sale/Project implement it) isn't possible here - RunFuzzy is disabled, and mailings is picked as the (otherwise unused) "main" table the base class requires. . Browsing history is deliberately always empty for now (see GetHistoryItemsFromDbAsync) - merging history across three unrelated tables needs its own design pass.|
+| [Mergedocument](./mergedocument) |MDO list provider for documents marked as type `MailMergeDraft`.|
 | [Mergetags](./mergetags) ||
 | [Month](./month) |MDO provider for the hard-coded list of "of" months in the recurrence dialog.|
 | [Mrmrs](./mrmrs) |GenericMDOProvider reads MDO lists with default settings|
-| [Newsfeeditemstatusprovider](./newsfeeditemstatusprovider) |MDO List provider for news feed item status: Normal, Handling, Handled|
+| [Newsfeeditemstatusprovider](./newsfeeditemstatusprovider) |MDO List provider for news feed item status: Normal, Handling, Handled. Enum value in the extrainfo field.|
 | [Ofmonth](./ofmonth) |MDO provider for the hard-coded list of "of" months in the recurrence dialog.|
 | [Onlinefontlibrary](./onlinefontlibrary) |MDO provider for the available fonts from the Online Template Library.|
 | [Ownercontact](./ownercontact) |MDO provider for listing owner contacts.|
@@ -261,23 +259,23 @@ mode: "wide"
 | [Persint](./persint) |GenericMDOProvider reads MDO lists with default settings|
 | [Person](./person) |List of persons from the Archive provider|
 | [Personcontactfavourite](./personcontactfavourite) |MDO list provider for Favourites|
-| [Personcontact_freetextsearch](./personcontact_freetextsearch) |Provider for selecting a Person - with contact search|
+| [Personcontact_freetextsearch](./personcontact_freetextsearch) |Provider for selecting a Person - with contact search. Does keyword matching and scoring across multiple tables using freetext index. First does BEGINS and CONTAINS searches in parallel. If neither results in anything, then falls back to SOUNDEX search.|
 | [Personemailaddress](./personemailaddress) |List of e-mail addresses matching the search value, possibly restricted to a given company or person.|
 | [Personfavourite](./personfavourite) |MDO list provider for Favourites|
 | [Personphone](./personphone) |Search phone numbers for matching values, restricted to a given company or person.|
-| [Personrestrictions](./personrestrictions) |Implements a person mdolist provider that uses the conflicts detector to append information o|
+| [Personrestrictions](./personrestrictions) |Implements a person mdolist provider that uses the conflicts detector to append information on conflicts|
 | [Personurl](./personurl) |List of urls (web pages) matching the search value, possibly restricted to a given company or person.|
-| [Personwithmail](./personwithmail) |List of persons fetched based on provided criteri|
-| [Person_freetextsearch](./person_freetextsearch) |Provider for selecting a Person - without contact search|
+| [Personwithmail](./personwithmail) |List of persons fetched based on provided criteria Output is in format: "Person Full Name &lt;person@mail.com&gt;" Optional: Get multiple emails pr. person. (getallemails)|
+| [Person_freetextsearch](./person_freetextsearch) |Provider for selecting a Person - without contact search. Does keyword matching and scoring across multiple tables using freetext index.|
 | [Perspos](./perspos) |GenericMDOProvider reads MDO lists with default settings|
-| [Phonesearch](./phonesearch) |Search phone numbers for matching stripped numbers, across person and contacts|
+| [Phonesearch](./phonesearch) |Search phone numbers for matching stripped numbers, across person and contacts. Return company name + department, or person name. Use AdditionInfo to restrict search to just Person or Contact phone numbers using "P" or "C".|
 | [Plugin](./plugin) |List of installed and available Document plugins|
 | [Pmembtype](./pmembtype) |GenericMDOProvider reads MDO lists with default settings|
 | [Prefdescline](./prefdescline) |PrefDesc creates a MDO list of prefdesclines for a given prefdesc id.|
 | [Preferencekey](./preferencekey) |MDO Provider that retrieves a list of preference keys corresponding to a given section|
 | [Preferencelineitem](./preferencelineitem) |MDO Provider for preferences that have a list of possible values in the database|
 | [Preferencesection](./preferencesection) |MDO Provider that retrieves a list of preference sections|
-| [Pricelist](./pricelist) |List of pricelists from the PriceList table|
+| [Pricelist](./pricelist) |List of pricelists from the PriceList table. Supported values in the AdditionalInfo: **all** - true\|false. If true is specified, inactive items is also returned., **QuoteConnectionId** - Gets items for a specific Quote connection. If not specified, only SuperOffice pricelists (where IsErpCopy=false) will be returned. AdditionalInfo string: "all=true&amp;QuoteConnectionId=2"|
 | [Priceunit](./priceunit) |GenericMDOProvider reads MDO lists with default settings|
 | [Priority](./priority) |GenericMDOProvider reads MDO lists with default settings|
 | [Privacytemplate](./privacytemplate) |This is a variant of the DocTmpl list - document templates - restricted to those that are of some privacy document type.|
@@ -291,114 +289,114 @@ mode: "wide"
 | [Projectfavourite](./projectfavourite) |MDO list provider for Favourites|
 | [Projectimage](./projectimage) |Project images from the blob table|
 | [Projectmembereventparticipantstatus](./projectmembereventparticipantstatus) |List of project member event status fields.|
-| [Projectmemberwithmail](./projectmemberwithmail) ||
+| [Projectmemberwithmail](./projectmemberwithmail) |List of project members fetched based on provided criteria Output is in format: "Person Full Name &lt;person@mail.com&gt;"|
 | [Projectstatus](./projectstatus) |List of project guide steps status values.|
 | [Projecttype](./projecttype) |Project type list. Encodes Default project duration in extra info.|
 | [Projecttypeflatlist](./projecttypeflatlist) |Project type list. Encodes Default project duration in extra info.|
-| [Project_freetextsearch](./project_freetextsearch) |Provider for selecting a Project|
-| [Project_new](./project_new) |Provider for selecting a project. Returns search results in rank orde|
+| [Project_freetextsearch](./project_freetextsearch) |Provider for selecting a Project. Does keyword matching and scoring across multiple string fields. Checks name, description, soundex fields.|
+| [Project_new](./project_new) |Provider for selecting a project. Returns search results in rank order Supports searching across project text fields. Respects the Project.SkipCompletedProjects user preference.|
 | [Projstatus](./projstatus) |GenericMDOProvider reads MDO lists with default settings|
 | [Projtype](./projtype) |GenericMDOProvider reads MDO lists with default settings|
 | [Quotealternatives](./quotealternatives) |Quote alternative selector for one Quote Version. Send QuoteVersionId=&lt;id&gt; in ExtraInfo to specify quote version id|
 | [Quoteapprovalassociate](./quoteapprovalassociate) |MDO provider for associates that are allowed to approve a quote.|
 | [Quoteapprovers](./quoteapprovers) |Retrieve the list of all users that can approve quotes|
 | [Quoteapprreason](./quoteapprreason) |GenericMDOProvider reads MDO lists with default settings|
-| [Quoteconnections](./quoteconnections) |Retrieve the list of all defined Quote Connections - i.e. not the connectors (DLLs)|
+| [Quoteconnections](./quoteconnections) |Retrieve the list of all defined Quote Connections - i.e. not the connectors (DLLs). ExtraInfo: "connectorname=Name-of-connector" - restricts results to connections defined by one particular connector.|
 | [Quoteconnectors](./quoteconnectors) |Retrieve the list of all installed (i.e., loaded assemblies) Quote Connectors|
 | [Quotedenyreason](./quotedenyreason) |GenericMDOProvider reads MDO lists with default settings|
 | [Quotedocumentgroupfields](./quotedocumentgroupfields) |Possible choices for fields that you can GROUP BY in quote detail documents.|
 | [Quotedocumentorderbyfields](./quotedocumentorderbyfields) |Possible choices for fields you can ORDER BY, within a group (or without grouping)|
 | [Quotedocuments](./quotedocuments) |MDO provider for the list of current / candidate "main document" for a given quote|
 | [Quotedocumenttype](./quotedocumenttype) |List of quote document types - assumes ExtraInfo is the name of RecordType enum value|
-| [Quotelinestatus](./quotelinestatus) |Hard-coded list of values for the QuoteLine.Status field, see [QuoteStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteStatus) enum.|
-| [Quotetemplate](./quotetemplate) |This is a variant of the DocTmpl list - document templates - restricted to those that are of some quote document type|
+| [Quotelinestatus](./quotelinestatus) |Hard-coded list of values for the QuoteLine.Status field, see `QuoteStatus` enum.|
+| [Quotetemplate](./quotetemplate) |This is a variant of the DocTmpl list - document templates - restricted to those that are of some quote document type. Use AdditionalInfo 'DocTmplQuoteType=&lt;a valid DocTmplQuoteType enum string value&gt;' to specify which one it should be|
 | [Quoteversion](./quoteversion) |Quote version selector for one Quote. Send QuoteId=&lt;id&gt; in ExtraInfo to specify quote id|
-| [Quoteversionstate](./quoteversionstate) |List provider for the [QuoteVersionState](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteVersionState) enum|
+| [Quoteversionstate](./quoteversionstate) |List provider for the `QuoteVersionState` enum|
 | [Reason](./reason) |GenericMDOProvider reads MDO lists with default settings|
 | [Reasonsold](./reasonsold) |GenericMDOProvider reads MDO lists with default settings|
 | [Reasonstalled](./reasonstalled) |GenericMDOProvider reads MDO lists with default settings|
-| [Recentnavigation](./recentnavigation) |MDO list provider for the Recent navigation history of the current associate: the ranked list o|
+| [Recentnavigation](./recentnavigation) |MDO list provider for the Recent navigation history of the current associate: the ranked list of recently visited entities written by the ViewState agent's `UpsertRecentNavigation` operation. . Items are returned most-recent first (descending `navigation_history.rank`). Keys of the form `&lt;table&gt;\|&lt;pkfield&gt;=&lt;id&gt;` (e.g. `person\|person_id=123`) are resolved to display names for known tables (currently contact, person, dashboard, email_flow, selection, project, sale, ticket and the virtual mailitem, ticketselection, saleselection and projectselection); anything else falls back to the raw key as name. . An entry of a known table that resolves to nothing — the record was deleted, or the associate's rights changed and the sentry-filtered lookup no longer sees it — is left OUT of the list: it can no longer be opened, so it must not linger as a raw key. (The stored row stays; it ages out.) A key of a table with no resolver here is still returned raw, but the CRM client drops any entity key it receives still labelled with its own key — so a newly recorded entity table needs a resolver in one of the two layers or its entries never reach the user. . That drop rule makes the return-field order load-bearing: row-level access filtering happens on the FIRST return field's table (`SoDataReader` checks `RF` on it), so every fetcher below puts the entity's own primary key first. Reordering `ReturnFields` would move the sentry onto a joined table and silently change which entries survive, not just how they are labelled. . The name follows the functional spec's entry format (§4.1-4.9): the record's own name followed by its context in parentheses — "Rema 1000 (Purchasing)", "John Smith (Rema 1000)". A record whose icon carries information of its own (the company's country flag §4.2) also returns an `IconHint` that replaces the generic entity icon.|
 | [Recipientfavourite](./recipientfavourite) |MDO list provider for Favourites|
-| [Recordtype](./recordtype) |A complete and generic mapping of record types to resource strings|
+| [Recordtype](./recordtype) |A complete and generic mapping of record types to resource strings. This is a simple, hard-coded list corresponding to Task table `Task` record_type column which is defined by a typed field `TaskTypeFieldInfo` using the TaskType enum AN.|
 | [Recurrenceweekcycle](./recurrenceweekcycle) |MDO provider for the hard-coded list of week cycle alternatives in the recurrence dialog.|
 | [Rejectreason](./rejectreason) |GenericMDOProvider reads MDO lists with default settings|
 | [Relateddatafields](./relateddatafields) ||
-| [Relationssearchlistproviderappointmentactive](./relationssearchlistproviderappointmentactive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistproviderappointmentappointmentactive](./relationssearchlistproviderappointmentappointmentactive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistproviderappointmentappointmentpassive](./relationssearchlistproviderappointmentappointmentpassive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistproviderappointmentdocumentactive](./relationssearchlistproviderappointmentdocumentactive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistproviderappointmentdocumentpassive](./relationssearchlistproviderappointmentdocumentpassive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistproviderappointmentpassive](./relationssearchlistproviderappointmentpassive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistproviderappointmentsaleactive](./relationssearchlistproviderappointmentsaleactive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistproviderappointmentsalepassive](./relationssearchlistproviderappointmentsalepassive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistprovidercontactactive](./relationssearchlistprovidercontactactive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistprovidercontactcontactactive](./relationssearchlistprovidercontactcontactactive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistprovidercontactcontactpassive](./relationssearchlistprovidercontactcontactpassive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistprovidercontactpassive](./relationssearchlistprovidercontactpassive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistprovidercontactpersonactive](./relationssearchlistprovidercontactpersonactive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistprovidercontactpersonpassive](./relationssearchlistprovidercontactpersonpassive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistproviderdocumentactive](./relationssearchlistproviderdocumentactive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistproviderdocumentappointmentactive](./relationssearchlistproviderdocumentappointmentactive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistproviderdocumentappointmentpassive](./relationssearchlistproviderdocumentappointmentpassive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistproviderdocumentdocumentactive](./relationssearchlistproviderdocumentdocumentactive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistproviderdocumentdocumentpassive](./relationssearchlistproviderdocumentdocumentpassive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistproviderdocumentpassive](./relationssearchlistproviderdocumentpassive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistproviderdocumentsaleactive](./relationssearchlistproviderdocumentsaleactive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistproviderdocumentsalepassive](./relationssearchlistproviderdocumentsalepassive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistproviderpersonactive](./relationssearchlistproviderpersonactive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistproviderpersoncontactactive](./relationssearchlistproviderpersoncontactactive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistproviderpersoncontactpassive](./relationssearchlistproviderpersoncontactpassive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistproviderpersonpassive](./relationssearchlistproviderpersonpassive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistproviderpersonpersonactive](./relationssearchlistproviderpersonpersonactive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistproviderpersonpersonpassive](./relationssearchlistproviderpersonpersonpassive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistprovidersaleactive](./relationssearchlistprovidersaleactive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistprovidersaleappointmentactive](./relationssearchlistprovidersaleappointmentactive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistprovidersaleappointmentpassive](./relationssearchlistprovidersaleappointmentpassive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistprovidersaledocumentactive](./relationssearchlistprovidersaledocumentactive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistprovidersaledocumentpassive](./relationssearchlistprovidersaledocumentpassive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistprovidersalepassive](./relationssearchlistprovidersalepassive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistprovidersalesaleactive](./relationssearchlistprovidersalesaleactive) |Serve the active and passive texts of relations, with a given table as source (active|
-| [Relationssearchlistprovidersalesalepassive](./relationssearchlistprovidersalesalepassive) |Serve the active and passive texts of relations, with a given table as source (active|
+| [Relationssearchlistproviderappointmentactive](./relationssearchlistproviderappointmentactive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistproviderappointmentappointmentactive](./relationssearchlistproviderappointmentappointmentactive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistproviderappointmentappointmentpassive](./relationssearchlistproviderappointmentappointmentpassive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistproviderappointmentdocumentactive](./relationssearchlistproviderappointmentdocumentactive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistproviderappointmentdocumentpassive](./relationssearchlistproviderappointmentdocumentpassive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistproviderappointmentpassive](./relationssearchlistproviderappointmentpassive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistproviderappointmentsaleactive](./relationssearchlistproviderappointmentsaleactive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistproviderappointmentsalepassive](./relationssearchlistproviderappointmentsalepassive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistprovidercontactactive](./relationssearchlistprovidercontactactive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistprovidercontactcontactactive](./relationssearchlistprovidercontactcontactactive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistprovidercontactcontactpassive](./relationssearchlistprovidercontactcontactpassive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistprovidercontactpassive](./relationssearchlistprovidercontactpassive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistprovidercontactpersonactive](./relationssearchlistprovidercontactpersonactive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistprovidercontactpersonpassive](./relationssearchlistprovidercontactpersonpassive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistproviderdocumentactive](./relationssearchlistproviderdocumentactive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistproviderdocumentappointmentactive](./relationssearchlistproviderdocumentappointmentactive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistproviderdocumentappointmentpassive](./relationssearchlistproviderdocumentappointmentpassive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistproviderdocumentdocumentactive](./relationssearchlistproviderdocumentdocumentactive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistproviderdocumentdocumentpassive](./relationssearchlistproviderdocumentdocumentpassive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistproviderdocumentpassive](./relationssearchlistproviderdocumentpassive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistproviderdocumentsaleactive](./relationssearchlistproviderdocumentsaleactive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistproviderdocumentsalepassive](./relationssearchlistproviderdocumentsalepassive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistproviderpersonactive](./relationssearchlistproviderpersonactive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistproviderpersoncontactactive](./relationssearchlistproviderpersoncontactactive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistproviderpersoncontactpassive](./relationssearchlistproviderpersoncontactpassive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistproviderpersonpassive](./relationssearchlistproviderpersonpassive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistproviderpersonpersonactive](./relationssearchlistproviderpersonpersonactive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistproviderpersonpersonpassive](./relationssearchlistproviderpersonpersonpassive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistprovidersaleactive](./relationssearchlistprovidersaleactive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistprovidersaleappointmentactive](./relationssearchlistprovidersaleappointmentactive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistprovidersaleappointmentpassive](./relationssearchlistprovidersaleappointmentpassive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistprovidersaledocumentactive](./relationssearchlistprovidersaledocumentactive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistprovidersaledocumentpassive](./relationssearchlistprovidersaledocumentpassive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistprovidersalepassive](./relationssearchlistprovidersalepassive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistprovidersalesaleactive](./relationssearchlistprovidersalesaleactive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
+| [Relationssearchlistprovidersalesalepassive](./relationssearchlistprovidersalesalepassive) |Serve the active and passive texts of relations, with a given table as source (active) or destination (passive).|
 | [Replytemplate](./replytemplate) ||
 | [Replytemplateaccesslevel](./replytemplateaccesslevel) |MDO provider for the ReplyTemplateAccessLevel enum|
 | [Resource](./resource) |MDO provider for resources (from the associate table)|
-| [Resourcerestrictions](./resourcerestrictions) |MDO provider for resources (from the associate table) that uses restrictions to includ|
-| [Restrictionoperators](./restrictionoperators) |This SoList provider will generate the operator list for a given search criterion data type. The data type i|
-| [Roles](./roles) |RoleListProvider creates a MDO list of roles in the database|
-| [Saintactivitytype](./saintactivitytype) |This SoList provider generates the appointment/task type list for the Saint criteria. This is a simple, hard-coded list correspondin|
-| [Saintamountclass](./saintamountclass) |This SoList provider generates the amount class list for the Saint criteria. This list is an extension of the basi|
-| [Saintdirection](./saintdirection) |This SoList provider generates the appointment/task direction list for the Saint criteria. This is a simple, hard-coded list correspondin|
-| [Saintintention](./saintintention) |This SoList provider generates the Intent list for the Saint criteria. This list is an extension of the basi|
-| [Saintsalestatus](./saintsalestatus) |This SoList provider generates the sale status list for the Saint criteria. This is a simple, hard-coded list correspondin|
+| [Resourcerestrictions](./resourcerestrictions) |MDO provider for resources (from the associate table) that uses restrictions to include conflict checking|
+| [Restrictionoperators](./restrictionoperators) |This SoList provider will generate the operator list for a given search criterion data type. The data type is passed in as the extraInfo parameter, and is generally one of the constants in `ColumnTypes`. The `RestrictionOperations` class is the source of the data, so this list will change if that class is extended.|
+| [Roles](./roles) |RoleListProvider creates a MDO list of roles in the database. Default list are the employee roles. Use ExtraInfo to get other RoleTypes. ExtraInfo : "0" Default, to get employee roles ExtraInfo : "1" to get external users roles ExtraInfo : "2" to get anonymous roles. ExtraInfo : "3" to get system user roles.|
+| [Saintactivitytype](./saintactivitytype) |This SoList provider generates the appointment/task type list for the Saint criteria. This is a simple, hard-coded list corresponding to the type field of the `DocTmpl` and `Task` tables. Tasks are both appointments and documents.|
+| [Saintamountclass](./saintamountclass) |This SoList provider generates the amount class list for the Saint criteria. This list is an extension of the basic AmountClass MDO list, with the addition of an ALL choice with ID 0.|
+| [Saintdirection](./saintdirection) |This SoList provider generates the appointment/task direction list for the Saint criteria. This is a simple, hard-coded list corresponding to the direction field of the `DocTmpl` and `Task` tables. Tasks are both appointments and documents.|
+| [Saintintention](./saintintention) |This SoList provider generates the Intent list for the Saint criteria. This list is an extension of the basic Intent MDO list, with the addition of an ALL choice with ID 0.|
+| [Saintsalestatus](./saintsalestatus) |This SoList provider generates the sale status list for the Saint criteria. This is a simple, hard-coded list corresponding to the status field of the `Sale` table.|
 | [Saintticketcategory](./saintticketcategory) |This SoList provider generates the eJournal top-level categories, meant for the saint system|
 | [Saintticketstatus](./saintticketstatus) |This SoList provider generates the ticket status list for the Saint criteria. This is a simple, hard-coded list, special for this context|
-| [Sale](./sale) |List of sales|
+| [Sale](./sale) |List of sales. Skips completed sales SkipCompletedSales userpref is set. Skips sales without quotes if AdditionalInfo contains "hasQuoteOnline=1". Skips sales without stakeholders if AdditionalInfo contains "stakeholderOnly=1". Filter sales according to currency if AdditionalInfo contains "hasCurrency=(currency-id)"|
 | [Salecategory](./salecategory) ||
 | [Saledone](./saledone) |Sale Done status: SaleDone.Done or NotDone.|
 | [Salefavourite](./salefavourite) |MDO list provider for Favourites|
 | [Saleguidestage](./saleguidestage) |MDO provider for the stage list, customized for the sale guide stage button row|
-| [Saleprobability](./saleprobability) |MDO list provider for the probability list of the Sale dialog. This list extends the basic ProbRow list with a leadin|
-| [Salesource](./salesource) |MDO list provider for the source list of the Sale dialog|
+| [Saleprobability](./saleprobability) |MDO list provider for the probability list of the Sale dialog. This list extends the basic `ProbRow` list with a leading 'lost' and a trailing 'sold' item, and specialized icons. It also adds the probability as part of the text, and again in the extraInfo field.|
+| [Salesource](./salesource) |MDO list provider for the source list of the Sale dialog. This list extends the basic `SourceRow` list with icons|
 | [Salestage](./salestage) |Provider for selecting a stage. AdditionalInfo is used as criteria to filter stages based on SaleType.|
 | [Salestatus](./salestatus) |List for the Sale.Status field: Open, Lost, Sold, Stalled.|
 | [Saletype](./saletype) |List of sale types, with default sale duration in minutes in extra info.|
 | [Saletypecat](./saletypecat) |GenericMDOProvider reads MDO lists with default settings|
 | [Saletypecategories](./saletypecategories) |SaleTypeCategories creates a MDO list of sale type categories in the database.|
-| [Sale_freetextsearch](./sale_freetextsearch) |Provider for selecting a Sale|
-| [Sale_new](./sale_new) |List of sales|
+| [Sale_freetextsearch](./sale_freetextsearch) |Provider for selecting a Sale. Does keyword matching and scoring across multiple string fields. Checks name, description, soundex fields as well as contact, person and project tables linked to sale. Supports cross-table matching: "Guttorm Teacup" will find sales from person "Guttorm" with title containing "Teacup", as well as from person "Guttorm" in project "Teacup".|
+| [Sale_new](./sale_new) |List of sales. Searches sale + company names + person names. . Skips completed sales SkipCompletedSales userpref is set. . Skips sales without quotes if AdditionalInfo contains "hasQuoteOnline=1". . Skips sales without stakeholders if AdditionalInfo contains "stakeholderOnly=1". . Filter sales according to currency if AdditionalInfo contains "hasCurrency=(currency-id)"|
 | [Salutation](./salutation) |GenericMDOProvider reads MDO lists with default settings|
 | [Satellites](./satellites) |SatelliteProvider creates a MDO list of satellites.|
 | [Searchcat](./searchcat) |GenericMDOProvider reads MDO lists with default settings|
-| [Selection](./selection) |Provider for selecting a selection|
+| [Selection](./selection) |Provider for selecting a selection. Supported additionalInfo: kind=static or kind=dynamic to restrict to static or dynamic selections only. Otherwise you'll get both kinds. membertype=[tablename\|tablenumber] to restrict to one kind of entities. Both tableNumber and table name can be used. Any combination of these are supported.|
 | [Selectioncriteriamembertype](./selectioncriteriamembertype) ||
-| [Selectionfavourite](./selectionfavourite) |MDO list provider for selection favourites|
-| [Selectionmembertype](./selectionmembertype) |MDO provider for the selection archive providers types|
+| [Selectionfavourite](./selectionfavourite) |MDO list provider for selection favourites. Supported additionalInfo: membertype=[tablename] to restrict to one kind of entities.|
+| [Selectionmembertype](./selectionmembertype) |MDO provider for the selection archive providers types. The items will be added by scanning ArchiveProviderFactory.KnownArchiveProviders for this pattern; [TableName]Selection. If the prefix is a known table, the tablename will be added to list with the TableNumber as the ID.|
 | [Selectionmembertypeclean](./selectionmembertypeclean) ||
-| [Selectionmembertypev2](./selectionmembertypev2) |MDO provider for the selection archive providers types|
-| [Selectionmemberwithmail](./selectionmemberwithmail) |List of selection members fetched based on provided criteri|
-| [Selectiontype](./selectiontype) |MDO provider for the hard-coded list of selection kinds: Static, Dynamic, Combined|
+| [Selectionmembertypev2](./selectionmembertypev2) |MDO provider for the selection archive providers types. The items will be added by scanning ArchiveProviderFactory.KnownArchiveProviders for this pattern; [TableName]Selection. If the prefix is a known table, the tablename will be added to list with the TableNumber as the ID.|
+| [Selectionmemberwithmail](./selectionmemberwithmail) |List of selection members fetched based on provided criteria Output is in format: "[ContactName, Department/PersonFullName] &lt;registered@email.com&gt;" Ex: "Contact, Department &lt;registered@email.com&gt;" "Person Name &lt;registered@email.com&gt;"|
+| [Selectiontype](./selectiontype) |MDO provider for the hard-coded list of selection kinds: Static, Dynamic, Combined. Combined requires the Combined Selection CAL license.|
 | [Selectionuniontype](./selectionuniontype) |Different ways to combine selections: Union, Intersect, Disjoin, Left or Right Subtraction.|
-| [Selection_freetextsearch](./selection_freetextsearch) |Provider for selecting a Selection|
+| [Selection_freetextsearch](./selection_freetextsearch) |Provider for selecting a Selection. Does keyword matching and scoring across multiple string fields. Checks name, description, soundex fields.|
 | [Sentiment](./sentiment) ||
 | [Serviceassociate](./serviceassociate) |MDO provider for associates that are allowed to approve a quote.|
 | [Shipmentaddrstatusprovider](./shipmentaddrstatusprovider) ||
@@ -412,7 +410,7 @@ mode: "wide"
 | [Sourceproduct](./sourceproduct) |Products: Sales &amp; Marketing, Customer Service|
 | [Specifiedmailings](./specifiedmailings) |Create a list of mailings (flow, form, regular mailing/shipment...), hierarchy optional|
 | [Stakeholderrole](./stakeholderrole) |GenericMDOProvider reads MDO lists with default settings|
-| [Statusdef](./statusdef) |Return list of status monitors defined in the system|
+| [Statusdef](./statusdef) |Return list of status monitors defined in the system. Additional info query parameter = "Contact" or "project".|
 | [Statusmonitorimage](./statusmonitorimage) |List of images for status monitors in the blob table.|
 | [Subscriptionunit](./subscriptionunit) |GenericMDOProvider reads MDO lists with default settings|
 | [Suggestedappointment](./suggestedappointment) |Suggested Appointment Provider creates a MDO list of suggested appointments for a given guide stage.|
@@ -426,9 +424,9 @@ mode: "wide"
 | [Task](./task) |Task table MDO list. Optional include "None" as first value.|
 | [Taskmenu](./taskmenu) |GenericMDOProvider reads MDO lists with default settings|
 | [Taskmenudestination](./taskmenudestination) ||
-| [Taskmenugroup](./taskmenugroup) |List of TaskMenus with visible for groups as commaseperated ids in extrainfo field|
+| [Taskmenugroup](./taskmenugroup) |List of TaskMenus with visible for groups as commaseperated ids in extrainfo field. This list only makes sence if the setting use groups and heading are turned on for|
 | [Templatevariables](./templatevariables) ||
-| [Ticket](./ticket) |Provider for selecting a ticket|
+| [Ticket](./ticket) |Provider for selecting a ticket. Supported additionalInfo: nameformat=includePersonAndCompany or nameformat=includeTicketId indicates how to format item name. If not specified, includePersonAndCompany is used.|
 | [Ticketalert](./ticketalert) ||
 | [Ticketfavourite](./ticketfavourite) ||
 | [Ticketorigin](./ticketorigin) |Ticket Origin|
@@ -439,40 +437,40 @@ mode: "wide"
 | [Ticketrelationtype](./ticketrelationtype) |Ticket Relation Type|
 | [Ticketselectionwithstaticmenu](./ticketselectionwithstaticmenu) |Provider for selecting ticket selections|
 | [Ticketslevel](./ticketslevel) |Ticket Security Level|
-| [Ticketstatus](./ticketstatus) |Ticket status values: Open, Closed, Inactive, Deleted, Connected and Spam (if enabled).|
+| [Ticketstatus](./ticketstatus) |Ticket status values: Open, Closed, Inactive, Deleted, Connected and Spam.|
 | [Ticketstatustimecounter](./ticketstatustimecounter) |Ticket status timer count values: None, Internall, Externally, Queue|
 | [Ticketstatuswithoutpostpone](./ticketstatuswithoutpostpone) ||
 | [Ticketstatuswithpostpone](./ticketstatuswithpostpone) ||
 | [Ticketticketstatus](./ticketticketstatus) |TicketTicketStatusProvider creates a flat list based on the table: TICKET_STATUS|
 | [Tickettype](./tickettype) |TicketTypeProvider creates a flat list based on the table: TICKET_TYPE|
-| [Ticket_freetextsearch](./ticket_freetextsearch) |Provider for selecting a Ticket - with contact and person search|
-| [Ticket_selection_freetextsearch](./ticket_selection_freetextsearch) |Provider for selecting Ticket Selection or a Ticket|
-| [Time](./time) |MDO provider for the hard-coded list of time alternatives in the appointment dialog and in edit/preference|
-| [Timezone](./timezone) ||
-| [Timezoneiana](./timezoneiana) |Provides the timezone list|
-| [Timezonewithcode](./timezonewithcode) |Provides the timezone list. The country code is given in the type field|
+| [Ticket_freetextsearch](./ticket_freetextsearch) |Provider for selecting a Ticket - with contact and person search. Does keyword matching and scoring across multiple string fields. Checks ticket heading, from, author as well as contact, person and project tables. Supports cross-table matching: "Guttorm Teacup" will find tickets from person "Guttorm" with title containing "Teacup".|
+| [Ticket_selection_freetextsearch](./ticket_selection_freetextsearch) |Provider for selecting Ticket Selection or a Ticket. Does keyword matching and scoring. Searches selection table and ticket table.|
+| [Time](./time) |MDO provider for the hard-coded list of time alternatives in the appointment dialog and in edit/preferences The type field contains seconds past midnight for the items' hour/minute value; extrainfo contains hh:mm (always 2 + 2 digits and colon, regardless of culture); and name/tooltip contain a time value encoded with CultureDataFormatter.`EncodeTime`.|
+| [Timezone](./timezone) |Provides the timezone list. If no search value is passed in the list is restricted to 'available' timezones|
+| [Timezoneiana](./timezoneiana) |Provides the timezone list. The extrainfo contains the IANA-id of the timezone. The iconhint follows the structure 'Flag_[country_name]'.|
+| [Timezonewithcode](./timezonewithcode) |Provides the timezone list. The country code is given in the type field. If no search value is passed in the list is restricted to 'available' timezones|
 | [Typegroup](./typegroup) |Type Group: Task, Activity, Document, Sale|
-| [Typicalsearch](./typicalsearch) |MDO provider for the TypicalSearch Title, Tooltip and I|
-| [Udeffields](./udeffields) |Get a list of udef fields for a given type|
-| [Udeffieldswithchanges](./udeffieldswithchanges) |Get a list of udef fields for a given type|
+| [Typicalsearch](./typicalsearch) |MDO provider for the TypicalSearch Title, Tooltip and Id ExtraInfo parameter specifies the entity of the typical search rows to fetch|
+| [Udeffields](./udeffields) |Get a list of udef fields for a given type. Optionally it is possible to exclude page one fields by adding extrainfo ( 'Contact,excludepageone' )|
+| [Udeffieldswithchanges](./udeffieldswithchanges) |Get a list of udef fields for a given type. Optionally it is possible to exclude page one fields by adding extrainfo ( 'Contact,excludepageone' )|
 | [Udeffieldtype](./udeffieldtype) |List of UDef field types for a given owner table, and possibly restricted based on the current field type|
-| [Udlist](./udlist) |MDO Provider for 'user-defined' lists, i.e., those that reside in the UDList table. Mandatory additionalInfo is th|
-| [Udlist28](./udlist28) |Dynamic MDO provider that will create a list with the name udlist&lt;id&gt; for each user-defined list in the UDListDefinition table|
+| [Udlist](./udlist) |MDO Provider for 'user-defined' lists, i.e., those that reside in the UDList table. Mandatory additionalInfo is the udListId, which identifies the actual sublist. There is also a dynamic provider that will make a provider called 'udlist&lt;id&gt;, for instance udlist123, where the sublist id is part of the name. Nice if you are in a situation where you can only get a list name and not the additionalInfo as a separate parameter.|
+| [Udlist28](./udlist28) |Dynamic MDO provider that will create a list with the name udlist&lt;id&gt; for each user-defined list in the UDListDefinition table. The actual fetching is done by an inner `UdListMDOProvider` for whatever list is implicitly specified by the id suffix of the dynamic list name|
 | [Udlist30002](./udlist30002) |MDO provider for the ChatService|
 | [Urlencoding](./urlencoding) ||
-| [Usergroup](./usergroup) |List provider for the UserGroup table. While this table looks like an MDO table|
-| [Usergroupwithhistoryall](./usergroupwithhistoryall) |List provider for the UserGroup table. While this table looks like an MDO table|
-| [Userplan](./userplan) |List provider for the UserPlan in the module license table|
+| [Usergroup](./usergroup) |List provider for the UserGroup table. While this table looks like an MDO table, it lacks the standardized grouplink and headinglink companion tables (for good reason, since it is the group table itself).|
+| [Usergroupwithhistoryall](./usergroupwithhistoryall) |List provider for the UserGroup table. While this table looks like an MDO table, it lacks the standardized grouplink and headinglink companion tables (for good reason, since it is the group table itself). . This provider includes the 'History' and 'All' choices, with id's -1 and -2. The `ParticipantsProvider` (actually, the `ExplicitParticipantsAssociateProvider` subchannel), used in the Assign To dialog, has a groupRestrictionId restriction that correctly decodes these special values.|
+| [Userplan](./userplan) |List provider for the UserPlan in the module license table. Returns all user plans except the one specified by additional-info "exclude_id"|
 | [Usertype](./usertype) |Simple, hard-coded provider for the associate type: Employee, ExternalPerson, Resource, Anonymous, System, Invalid User Type|
-| [Visiblefor](./visiblefor) |List provider for the VisibleFor dropdown control. Items are of type associate, usergroup or all, wit|
+| [Visiblefor](./visiblefor) |List provider for the VisibleFor dropdown control. Items are of type associate, usergroup or all, with a separate id space for each type. The current associate, its primary and secondary groups, and 'all' are the returned elements. MDO list sorting preferences for the UserGroup list are respected.|
 | [Visibleforassociate](./visibleforassociate) |List provider that returns a list suitable for VisibleFor and PinTo (with groups and possibly some other special items like All).|
 | [Visiblein](./visiblein) |Visible in list for web panels.|
 | [Visibleinmenu](./visibleinmenu) |Visible in menu list: Toolbox menu, View menu|
 | [Visibleintask](./visibleintask) |Visible in list for tasks: places where task button can appear.|
-| [Webhookentitylist](./webhookentitylist) ||
-| [Webhookeventlist](./webhookeventlist) ||
+| [Webhookentitylist](./webhookentitylist) |MDO provider that returns webhook entity types found in the webhook table. Scans the Events property across all webhooks, extracts entity names (the part before the dot), and maps them to predefined display names. Custom objects are resolved by their friendly name and listed after predefined entities. Entities not in either list are grouped as "Custom".|
+| [Webhookeventlist](./webhookeventlist) |MDO list provider for webhook event names. Includes predefined entity events, custom object events, and custom events found on existing webhooks. Supports tree (grouped by entity) or flat output via `ForceFlatList`.|
 | [Webpanel](./webpanel) |List of WebPanels visible possible for use with groups and headings.|
-| [Webpanelgroup](./webpanelgroup) |List of WebPanels with visible for groups as commaseperated ids in extrainfo field|
+| [Webpanelgroup](./webpanelgroup) |List of WebPanels with visible for groups as commaseperated ids in extrainfo field. This list only makes sence if the setting use groups and heading are turned on for|
 | [Weekday](./weekday) |MDO provider for the hard-coded list of week days.|
 | [Weeknumber](./weeknumber) |MDO provider for the hard-coded list of numbered weeks in the recurrence dialog.|
 | [Workflowdefinitionstatus](./workflowdefinitionstatus) |MDO provider for the WorkflowDefinitionStatus enum|
@@ -483,5 +481,5 @@ mode: "wide"
 | [Workflowtimewaitalgorithm](./workflowtimewaitalgorithm) |MDO provider for the WorkflowTimeWaitAlgorithm enum|
 | [Workflowtimewaitintervaltype](./workflowtimewaitintervaltype) |MDO provider for the WorkflowTimeWaitIntervalType enum|
 | [Workflowtriggertype](./workflowtriggertype) |MDO provider for the WorkflowTriggerType enum|
-| [Y_car](./y_car) |Extra tables lists. List names are 'y_xyz' - based on the custom table name|
+| [Y_car](./y_car) |Extra tables lists. List names are 'y_xyz' - based on the custom table name. Contents of the list are based on the display_field for the table|
 
