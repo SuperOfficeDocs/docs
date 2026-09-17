@@ -654,6 +654,46 @@
             }
           }
         ]
+      },
+      {
+        "item": "WebAPI reference (shortcut)",
+        "icon": "brackets-curly",
+        "groups": [
+          {
+            "group": "WebAPI class reference",
+            "root": "en/api/reference/webapi/index"
+          }
+        ]
+      },
+      {
+        "item": "REST Agent reference (shortcut)",
+        "icon": "brackets-curly",
+        "groups": [
+          {
+            "group": "HTTP RPC Agent API",
+            "root": "en/api/reference/restful/agent/index"
+          }
+        ]
+      },
+      {
+        "item": "RESTful REST API (shortcut)",
+        "icon": "brackets-curly",
+        "groups": [
+          {
+            "group": "RESTful REST API",
+            "root": "en/api/reference/restful/rest/index"
+          }
+        ]
+      },
+      {
+        "item": "Archive providers (shortcut)",
+        "icon": "database",
+        "groups": [
+          {
+            "group": "Archive provider reference",
+            "root": "en/api/archive-providers/reference/index"
+          }
+        ]
       }
     ]
   },
