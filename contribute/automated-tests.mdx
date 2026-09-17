@@ -111,11 +111,11 @@ Checks every `.md`/`.mdx` file changed in a PR (or pushed directly to `main`), e
 
 ### Redirect coverage guard
 
-Runs on every PR (`fetch-depth: 0`, needed to diff against `origin/main`). Detects any `.md`/`.mdx` file this PR renamed, moved, or deleted (via git's own rename detection, not a plain add/delete pair), excluding `snippets/` and the machine-generated reference trees - those aren't standalone routable pages, so a missing redirect for one isn't a real gap. For each one, checks whether `config/redirects.json` already covers the old URL, including the `.html`-suffixed duplicate form documented in [Redirects](./redirects). Separately, for a renamed `en/` page, checks whether its translations were moved to the same relative location too - matched by path (swapping the language segment), not by `uid`. A translation left on its old path after the English page moves is a quieter version of the same failure mode.
+Runs on every PR (`fetch-depth: 0`, needed to diff against `origin/main`). Detects any `.md`/`.mdx` file this PR renamed, moved, or deleted (via git's own rename detection, not a plain add/delete pair), excluding `snippets/` and the machine-generated reference trees - those aren't standalone routable pages, so a missing redirect for one isn't a real gap. For each one, checks whether `config/redirects.json` already covers the old URL, including the `.html`-suffixed duplicate form documented in [Redirects][2]. Separately, for a renamed `en/` page, checks whether its translations were moved to the same relative location too - matched by path (swapping the language segment), not by `uid`. A translation left on its old path after the English page moves is a quieter version of the same failure mode.
 
 A third, narrower check covers a gap neither of the above can: a page added to `config/nav-learn.json` without a rename ever being involved, but with no matching entry added to `config/nav-da.json`, `nav-de.json`, `nav-nl.json`, `nav-no.json`, or `nav-sv.json`. It flattens `config/nav-learn.json`'s nested `pages`/`groups`/`root` structure, finds any `en/learn/**` or `en/admin/**` page present now but absent at the PR's base commit, and checks the same language set for a mirrored path, skipping the same permanently English-only trees (`reference/`, `dev/`, `mobile/`, `en/admin/user-preferences/`) the manual translation-parity audits already exclude. It only watches for a newly added entry losing parity, not full historical completeness across the whole nav.
 
-Never fails the check - a gap shows up as a warning annotation on the PR's Files Changed tab, and adds the `mintlify/nav-redirects` label (or `translation`, for a mirroring gap, from either the rename check or the nav-parity check) to the PR so it's visible without opening the Actions tab; the label is removed automatically once a later push resolves the gap.
+This check never fails the build. A gap shows up as a warning annotation on the PR's Files Changed tab, and adds the `mintlify/nav-redirects` label (or `translation`, for a mirroring gap, from either the rename check or the nav-parity check) to the PR so it's visible without opening the Actions tab; the label is removed automatically once a later push resolves the gap.
 
 ### Boost changes guard
 
@@ -213,3 +213,4 @@ mint automations create --name "Broken link detection" --type broken-link-detect
 * [Acceptance testing](./acceptance-testing) - the on-demand checklist to run after a refactor, design change, or site reorg, rather than every PR.
 
 [1]: ./review/check-changes#stale-annotations
+[2]: ./redirects
