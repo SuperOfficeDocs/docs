@@ -37,11 +37,11 @@ You can also use the **Site feedback** link in the site footer to raise an issue
 
 The search box uses keyword matching, not natural-language understanding. A short or partial query, such as a single common word, often returns nothing useful. Use full terms that describe what you are looking for, for example "create a follow-up" rather than "follow-up."
 
-Search also filters results to the language of the page you are currently on and shows only the top 7 matches. Only the user guide, covering both end-user and administrator topics, is translated (see [Language switching](#language-switching)), so searching from a non-English page searches a smaller, translated subset of the content. Use a search term in the same language as the page you are on; a German term typed while viewing an English page will not match. If you are on a non-English page and cannot find what you need, switch to English and search again from there.
+Search also filters results to the language of the page you are currently on and shows only the top 7 matches. Because only the user guide is translated, searching while on a non-English page searches a smaller, translated subset of the content. Use a search term in the same language as the page you are on; a German term typed while viewing an English page will not match. If you are on a non-English page and cannot find what you need, switch to English and search again from there.
 
 ## Language switching
 
-Only the user guide, the **Guides** section of this site, covering both end-user and administrator topics, is translated into Danish, German, Dutch, Norwegian, and Swedish. This is a permanent decision about the scope of translation, not a gap that will eventually close. Developer, API, reference, mobile, and onsite content stays in English by design and will not be translated.
+Only the user guide, the **Guides** section of this site, is translated into Danish, German, Dutch, Norwegian, and Swedish. This is a permanent decision about the scope of translation, not a gap that will eventually close. Developer, API, reference, and mobile content stays in English by design and will not be translated.
 
 <Note>
 Switching language while viewing a page that has no translation can take you to that language's home page instead of keeping you on the same topic. If this happens, the fastest way back to where you were is your browser's back button, not navigating from the home page again.
