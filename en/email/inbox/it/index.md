@@ -4,7 +4,7 @@ title: SuperOffice Inbox
 description: SuperOffice Inbox
 keywords: ['email']
 author: Bergfrid Dias
-date: 03.21.2024
+date: 09.17.2026
 content_type: concept
 redirect_from: /en/email/inbox/index
 userflow_index: true
@@ -146,6 +146,12 @@ MailKit expects connections to port 465 to be encrypted.
 
 Yet to be completed, please submit your experiences
 
+#### SMTP AUTH
+
+Exchange Online has an authenticated SMTP submission ("SMTP AUTH") setting that can be disabled by default, per mailbox or for the whole tenant. If IMAP fetch and OAuth authentication succeed but the mailbox still can't send email, this is the most common cause, for both CRM Online and Onsite. It's a Microsoft-side setting that governs the SMTP protocol itself, so it applies regardless of whether the mailbox uses OAuth or password authentication.
+
+An admin can enable it per mailbox in the Microsoft 365 admin center (**Users** > **Active users** > select user > **Mail** > **Manage email apps** > **Authenticated SMTP**), or with Exchange Online PowerShell (`Set-CASMailbox -Identity <mailbox> -SmtpClientAuthenticationDisabled $false`). See Microsoft's [Enable or disable SMTP AUTH in Exchange Online][8] for the full reference, including the organization-wide setting.
+
 ### Logging
 
 **Online:**
@@ -163,5 +169,6 @@ Read section [Mail logging][1].
 [5]: /en/email/inbox/learn/index
 [6]: https://www.codetwo.com/kb/upn/#exchange
 [7]: https://www.codetwo.com/kb/upn/#office-365
+[8]: https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission
 
 [img1]: /media/loc/en/email/mailkit.jpg

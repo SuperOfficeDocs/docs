@@ -4,7 +4,7 @@ title: Konfigurera inkorgen i SuperOffice
 description: Läs om hur du konfigurerar och loggar in på inkorgen i SuperOffice. Den här funktionen är ett alternativ till WebTools för att koppla din e-post till SuperOffice CRM.
 keywords: ['SuperOffice Inkorg', 'inkorgen i SuperOffice', 'konfigurera inkorg', 'e-postinställningar', 'IMAP', 'e-postanslutning', 'applösenord']
 author: Bergfrid Dias
-date: 09.08.2026
+date: 09.17.2026
 so_version: 10.5
 content_type: concept
 license: salesessentials, serviceessentials, marketingessentials
@@ -17,6 +17,7 @@ related:
   - Skapa och använda applösenord i Gmail - Google Support: https://support.google.com/mail/answer/185833?hl=en
   - Aktivera eller inaktivera POP och IMAP för användare - Google Workspace administratörshjälp: https://knowledge.workspace.google.com/admin/sync/turn-pop-and-imap-on-or-off-for-users
   - POP3 och IMAP4 i Exchange Online - Microsoft Learn: https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/pop3-and-imap4
+  - Aktivera eller inaktivera SMTP AUTH i Exchange Online - Microsoft Learn: https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission
   - Ändra standard e-postklient i SuperOffice: /sv/email/learn/change-default-mail-client
 language: sv
 ---
@@ -103,6 +104,8 @@ Att ta bort ett konto raderar **inte** själva e-postkontot (till exempel ditt G
   * Följ instruktionerna för att ge SuperOffice åtkomst till kontot.
 
 * **Gmail-användare:** Från och med januari 2025 är IMAP aktiverat som standard. Om du ombeds ange lösenord, använd ett **applösenord** i stället för ditt vanliga Gmail-lösenord.
+
+* **Microsoft 365-användare:** Om inkorgen ansluter utan problem men e-post inte kan skickas, be administratören aktivera **Authenticated SMTP** för din brevlåda i Microsoft 365 administrationscenter. Det är en inställning som Microsoft kan ha inaktiverat som standard.
 
 <Tip>
 För att justera layout, teckensnitt eller beteende för meddelanden, gå till <i class="ph ph-user-circle" aria-hidden="true"></i> **Personliga inställningar** > **Alternativ för e-post** > fliken **Allmänt**.

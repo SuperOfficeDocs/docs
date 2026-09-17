@@ -4,7 +4,7 @@ title: Opsætning af SuperOffice Indbakke
 description: Lær, hvordan du opsætter og logger ind i SuperOffice Indbakke. Denne funktion er et alternativ til WebTools for at forbinde din e-mailkonto til SuperOffice CRM.
 keywords: ['SuperOffice Indbakke', 'opsæt indbakke', 'e-mailopsætning', 'IMAP', 'e-mailforbindelse', 'appadgangskoder']
 author: Bergfrid Dias
-date: 09.08.2026
+date: 09.17.2026
 so_version: 10.5
 content_type: concept
 license: salesessentials, serviceessentials, marketingessentials
@@ -17,6 +17,7 @@ related:
   - Opret og brug appadgangskoder i Gmail - Google Support: https://support.google.com/mail/answer/185833?hl=en
   - Aktivér eller deaktivér POP og IMAP for brugere - Google Workspace Admin Help: https://knowledge.workspace.google.com/admin/sync/turn-pop-and-imap-on-or-off-for-users
   - POP3 og IMAP4 i Exchange Online - Microsoft Learn: https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/pop3-and-imap4
+  - Aktivér eller deaktivér SMTP AUTH i Exchange Online - Microsoft Learn: https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission
   - /da/email/learn/change-default-mail-client
 language: da
 ---
@@ -103,6 +104,8 @@ Fjernelse af e-mailkontoen sletter **ikke** din faktiske e-mailkonto (f.eks. din
   * Følg instruktionerne for at give SuperOffice adgang til din konto.
 
 * **Gmail-brugere:** Fra januar 2025 er IMAP permanent aktiveret som standard. Hvis du bliver bedt om en adgangskode, skal du bruge en **app-adgangskode** i stedet for din almindelige Gmail-adgangskode.
+
+* **Microsoft 365-brugere:** Hvis din indbakke opretter forbindelse uden problemer, men e-mail ikke kan sendes, skal du bede din administrator om at aktivere **Authenticated SMTP** for din postkasse i Microsoft 365 admin center. Det er en indstilling, Microsoft kan have deaktiveret som standard.
 
 <Tip>
 Hvis du vil justere layout, skrifttype eller opførsel for meddelelser, skal du gå til <i class="ph ph-user-circle" aria-hidden="true"></i> **Personlige indstillinger** > **E-mailindstillinger** > fanen **Generelt**.

@@ -4,7 +4,7 @@ title: Set up SuperOffice Inbox
 description: Learn how to set up and log in to the SuperOffice Inbox. This feature is an alternative to WebTools for connecting your email account to SuperOffice CRM.
 keywords: ['email setup', 'IMAP', 'email connection', 'app passwords']
 author: Bergfrid Dias
-date: 09.08.2026
+date: 09.17.2026
 so_version: 10.5
 content_type: concept
 license: salesessentials, serviceessentials, marketingessentials
@@ -17,6 +17,7 @@ related:
   - Create and use app passwords in Gmail - Google Support: https://support.google.com/mail/answer/185833?hl=en
   - Turn POP and IMAP on or off for users - Google Workspace Admin Help: https://knowledge.workspace.google.com/admin/sync/turn-pop-and-imap-on-or-off-for-users
   - POP3 and IMAP4 in Exchange Online - Microsoft Learn: https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/pop3-and-imap4
+  - Enable or disable SMTP AUTH in Exchange Online - Microsoft Learn: https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission
   - /en/email/learn/change-default-mail-client
 language: en
 ---
@@ -103,6 +104,8 @@ Removing the email account does **not** delete your actual email account (for ex
   * Follow the instructions to allow SuperOffice to access your account.
 
 * **Gmail users:** As of January 2025, IMAP is permanently enabled by default. If you are asked for a password, use an **app password** instead of your regular Gmail password.
+
+* **Microsoft 365 users:** If your inbox connects fine but email won't send, ask your admin to enable **Authenticated SMTP** for your mailbox in the Microsoft 365 admin center. It's a setting Microsoft can disable by default.
 
 <Tip>
 To adjust layout, font, or behavior for messages, go to <i class="ph ph-user-circle" aria-hidden="true"></i> **Personal settings** > **Email options** > **General** tab.
