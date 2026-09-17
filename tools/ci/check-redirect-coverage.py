@@ -39,10 +39,40 @@ language with no file at either the old or new mirrored path is treated as untra
 silently; full translation completeness isn't tracked by this guard (see the master journal's
 "Explicitly out of scope" section).
 
-This is advisory only; it never fails the build. It emits a GitHub Actions warning annotation per hit
+## Nav-language-parity check
+
+For any page path newly added to `config/nav-learn.json` (present in the current worktree's copy of
+that file but absent from it at `--base-ref`, comparing after fully flattening the nested
+`pages`/`groups`/`root` structure), checks whether the page is in scope (see below) and, if so,
+whether each of `config/nav-da.json`, `nav-de.json`, `nav-nl.json`, `nav-no.json`, and `nav-sv.json`
+already contains the mirrored path (same `en/` -> `da/`/etc. prefix swap as the translation-mirroring
+check above). This catches the failure mode the rename check above can't: a page that was simply added
+to the English nav without ever getting a per-language nav entry, with no rename involved at all (see
+issue #496, which is the one current real instance of this: `marketing/forms/learn/recaptcha`).
+
+In scope means: the path starts with `en/` and has `learn` or `admin` as one of its path segments (the
+`en/{learn,admin}/**` pages that make up the user guide, i.e. what most people are reading), and is not
+one of the same permanently-English carve-outs this repo's manual translation-parity audits already
+use: any path containing `/reference/` or `/dev/` as a segment, any path with `mobile/` immediately
+after the language segment, and `en/admin/user-preferences/` specifically. A page outside this scope
+(for example a bare `en/foo/index` overview root with no `learn`/`admin` segment) is silently skipped,
+not flagged.
+
+This is a narrower, more targeted version of what this module's docstring previously called explicitly
+out of scope: it only watches for a newly added nav entry losing language parity going forward, not
+full historical completeness auditing of every existing page (that remains untracked; see the master
+journal's "Explicitly out of scope" section for the pre-existing gaps this doesn't catch).
+
+Like the checks above, this is advisory only; it never fails the build, and it only runs on a full
+(unscoped) invocation, since a `--path`-scoped run is asking about one folder's redirect/rename
+coverage, not repo-wide nav parity.
+
+All three checks emit a GitHub Actions warning annotation per hit
 so it shows up on the PR's Files Changed tab, and sets `found=true`/`translation_gap=true` on
 `$GITHUB_OUTPUT` (when running under Actions) so the calling workflow can label the PR without
-re-deriving anything itself.
+re-deriving anything itself. The nav-language-parity check above also feeds into both of those
+booleans: a missing per-language nav entry counts as a `found` hit and sets `translation_gap` just like
+a stale-pathed rename does.
 
 Usage:
     python tools/ci/check-redirect-coverage.py --base-ref origin/main
@@ -61,8 +91,15 @@ from lib.repo_files import file_path_to_url  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 REDIRECTS_PATH = REPO_ROOT / "config" / "redirects.json"
+NAV_LEARN_PATH = "config/nav-learn.json"
 
 TRANSLATION_LANGUAGES = ("da", "de", "nl", "no", "sv")
+
+# Same permanently-English carve-outs this repo's manual translation-parity
+# audits already use: these trees are never translated by design, so a
+# missing per-language nav entry for one isn't a real gap.
+NAV_PARITY_EXCLUDED_SUBSTRINGS = ("/reference/", "/dev/")
+NAV_PARITY_EXCLUDED_PREFIXES = ("en/admin/user-preferences/",)
 
 # Not standalone routable pages: Mintlify never serves these at their own
 # URL, so a missing redirect for one isn't a real gap (see
@@ -179,6 +216,101 @@ def check_translation_mirroring(en_old_path, en_new_path):
     return warnings
 
 
+def flatten_nav_pages(nodes):
+    """Flattens a parsed nav-*.json structure (a list of nodes, each either a
+    bare page-path string or a group/tab object with an optional `root` page
+    path and a `pages` list of more nodes, nested arbitrarily deep) into a
+    flat set of every page-path string it contains, `root` values included."""
+    paths = set()
+
+    def walk(node):
+        if isinstance(node, str):
+            paths.add(node)
+        elif isinstance(node, dict):
+            root = node.get("root")
+            if isinstance(root, str):
+                paths.add(root)
+            for child in node.get("pages") or []:
+                walk(child)
+
+    if isinstance(nodes, list):
+        for node in nodes:
+            walk(node)
+    return paths
+
+
+def load_nav_file(rel_path):
+    """Parses a config/nav-*.json file from the current worktree. Returns an
+    empty list if it doesn't exist (a language nav file could theoretically
+    be missing outright, which should read as "no pages", not crash)."""
+    full_path = REPO_ROOT / rel_path
+    if not full_path.is_file():
+        return []
+    with open(full_path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def load_nav_file_at_ref(rel_path, ref):
+    """Same as load_nav_file(), but reads the file as it existed at git ref
+    `ref` instead of the current worktree. Returns an empty list if the file
+    didn't exist at that ref."""
+    result = subprocess.run(
+        ["git", "show", f"{ref}:{rel_path}"],
+        cwd=REPO_ROOT,
+        capture_output=True,
+        text=True,
+    )
+    if result.returncode != 0:
+        return []
+    return json.loads(result.stdout)
+
+
+def is_nav_parity_in_scope(en_path):
+    """Whether a config/nav-learn.json page path is one of the `en/{learn,
+    admin}/**` user-guide pages this check tracks, per the module docstring's
+    "Nav-language-parity check" section."""
+    if not en_path.startswith("en/"):
+        return False
+    if any(substring in en_path for substring in NAV_PARITY_EXCLUDED_SUBSTRINGS):
+        return False
+    if en_path.startswith(NAV_PARITY_EXCLUDED_PREFIXES):
+        return False
+    if en_path[len("en/"):].startswith("mobile/"):
+        return False
+    segments = en_path.split("/")
+    return "learn" in segments or "admin" in segments
+
+
+def check_nav_language_parity(base_ref):
+    """Returns a list of warning message fragments (one per missing
+    per-language nav entry) for any en/learn or en/admin page newly added to
+    config/nav-learn.json since base_ref."""
+    current_pages = flatten_nav_pages(load_nav_file(NAV_LEARN_PATH))
+    base_pages = flatten_nav_pages(load_nav_file_at_ref(NAV_LEARN_PATH, base_ref))
+    new_pages = sorted(
+        path for path in (current_pages - base_pages) if is_nav_parity_in_scope(path)
+    )
+    if not new_pages:
+        return []
+
+    lang_pages = {
+        lang: flatten_nav_pages(load_nav_file(f"config/nav-{lang}.json"))
+        for lang in TRANSLATION_LANGUAGES
+    }
+
+    warnings = []
+    for en_path in new_pages:
+        rest = en_path[len("en/"):]
+        for lang in TRANSLATION_LANGUAGES:
+            mirrored_path = f"{lang}/{rest}"
+            if mirrored_path not in lang_pages[lang]:
+                warnings.append(
+                    f"New nav entry '{en_path}' in config/nav-learn.json has no matching "
+                    f"'{lang}' entry ('{mirrored_path}') in config/nav-{lang}.json."
+                )
+    return warnings
+
+
 def write_github_output(found, translation_gap):
     out_path = os.environ.get("GITHUB_OUTPUT")
     if not out_path:
@@ -232,7 +364,21 @@ def main():
     if translation_hits:
         print(f"{translation_hits} translation(s) not mirrored to a renamed English page's new path; see warnings above.")
 
-    write_github_output(found=bool(redirect_hits or translation_hits), translation_gap=bool(translation_hits))
+    nav_parity_hits = 0
+    if not args.path:
+        # Repo-wide nav parity, not scoped to one folder's redirect/rename coverage; see the
+        # module docstring's "Nav-language-parity check" section.
+        for message in check_nav_language_parity(args.base_ref):
+            nav_parity_hits += 1
+            print(f"::warning file={NAV_LEARN_PATH}::{message}")
+
+        if nav_parity_hits:
+            print(f"{nav_parity_hits} new nav entr{'y' if nav_parity_hits == 1 else 'ies'} missing per-language nav coverage; see warnings above.")
+
+    write_github_output(
+        found=bool(redirect_hits or translation_hits or nav_parity_hits),
+        translation_gap=bool(translation_hits or nav_parity_hits),
+    )
 
     # Advisory only; never fail the build.
     return 0
