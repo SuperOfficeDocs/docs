@@ -1,0 +1,58 @@
+---
+uid: help-de-form-recaptcha
+title: Google reCAPTCHA in Formularen
+description: Fügen Sie einem SuperOffice Marketing-Formular Google reCAPTCHA hinzu, um es vor Spam zu schützen.
+keywords: ['reCAPTCHA profile', 'Formular', "I'm not a robot", 'site key', 'secret key']
+author: Bergfrid Dias
+date: 05.04.2026
+so_version: 11.13
+content_type: howto
+license: marketingessentials
+tier: growth
+category: marketing
+topic: forms
+audience: person
+audience_tooltip: SuperOffice Marketing
+language: de
+---
+
+## reCAPTCHA-Element hinzufügen
+
+1. Erstellen oder öffnen Sie ein Formular.
+1. Wählen Sie **Felder**.
+1. Klicken Sie auf **Element hinzufügen**, und wählen Sie **Formularelemente** > **Google reCAPTCHA**.
+
+    ![imagehkoheq.png -screenshot][img1]
+
+Wenn das Element hinzugefügt wurde, können Sie entscheiden, wie Sie den Site key und den Secret key verwenden möchten.
+
+<Note>
+Es ist nur möglich, 1 reCAPTCHA pro Formular hinzuzufügen.
+</Note>
+
+SuperOffice Online stellt Ihnen Standardschlüssel für reCAPTCHA zur Verfügung, die Ihr Formular vor Robotern schützen. Sie müssen für Site key und Secret key nichts eingeben, es sei denn, Sie möchten ein eigenes reCAPTCHA-Profil erstellen und Statistiken einsehen. Folgen Sie dazu den nachstehenden Schritten, und geben Sie Ihren SiteKey und SecretKey ein. [Statistiken][1] zeigen Ihnen, wie viele Anfragen erfolgreich oder fehlgeschlagen waren, den durchschnittlichen Score, die abgeschlossenen Sitzungen und die durchschnittliche Antwortzeit.
+
+![imagehekct.png -screenshot][img2]
+
+## So erstellen Sie ein Google reCAPTCHA-Profil
+
+Um benutzerdefinierte Schlüssel zu erstellen, melden Sie sich mit einem Google-Konto bei [https://www.google.com/u/0/recaptcha/admin/create][2] an.
+
+1. Geben Sie eine Websitebezeichnung ein
+2. Wählen Sie "reCAPTCHA v2"
+3. Und dann das Kontrollkästchen "Ich bin kein Roboter"
+4. Fügen Sie die Domain hinzu. Unter "domains" müssen Sie die Domain angeben, auf der das Customer Center (customer.fcgi) ausgeführt wird, oder eine übergeordnete Domain dieser Subdomain.
+
+![imagerlc6j.png -screenshot][img3]
+
+Nachdem Sie auf **Submit** geklickt haben, werden Ihr Site key und Secret key angezeigt:
+
+![imagehn8rh.png -screenshot][img4]
+
+[1]: https://www.google.com/recaptcha/admin
+[2]: https://www.google.com/u/0/recaptcha/admin/create
+
+[img1]: /media/loc/en/marketing/add-element-dialog.png
+[img2]: /media/loc/en/marketing/recaptcha-form-element.png
+[img3]: /media/loc/en/marketing/imagerlc6j.png
+[img4]: /media/loc/en/marketing/imagehn8rh.png

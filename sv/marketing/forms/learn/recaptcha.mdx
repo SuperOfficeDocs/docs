@@ -1,0 +1,58 @@
+---
+uid: help-sv-form-recaptcha
+title: Google reCAPTCHA i formulär
+description: Lägg till Google reCAPTCHA i ett SuperOffice Marketing-formulär för att skydda det mot skräppost.
+keywords: ['reCAPTCHA profile', 'formulär', "I'm not a robot", 'site key', 'secret key']
+author: Bergfrid Dias
+date: 05.04.2026
+so_version: 11.13
+content_type: howto
+license: marketingessentials
+tier: growth
+category: marketing
+topic: forms
+audience: person
+audience_tooltip: SuperOffice Marketing
+language: sv
+---
+
+## Lägg till reCAPTCHA-post
+
+1. Skapa eller öppna ett formulär.
+1. Välj **Fält**.
+1. Klicka på **Lägg till post** och välj **Formulärposter** > **Google reCAPTCHA**.
+
+    ![imagehkoheq.png -screenshot][img1]
+
+När posten har lagts till kan du bestämma hur du vill använda Site key och Secret key.
+
+<Note>
+Det går bara att lägga till 1 reCAPTCHA per formulär.
+</Note>
+
+SuperOffice Online ger dig standardnycklar för reCAPTCHA, som skyddar formuläret mot robotar. Du behöver inte ange något för Site key och Secret key om du inte vill skapa din egen reCAPTCHA-profil och se statistik. Följ i så fall stegen nedan och ange din SiteKey och SecretKey. [Statistik][1] visar hur många förfrågningar som lyckades eller misslyckades, det genomsnittliga resultatet, antalet slutförda sessioner och den genomsnittliga svarstiden.
+
+![imagehekct.png -screenshot][img2]
+
+## Så skapar du en Google reCAPTCHA-profil
+
+För att skapa egna nycklar loggar du in med ett Google-konto på [https://www.google.com/u/0/recaptcha/admin/create][2].
+
+1. Ange en webbplatsetikett
+2. Välj "reCAPTCHA v2"
+3. Och sedan kryssrutan "I'm not a robot"
+4. Lägg till domänen. Under "domains" måste du ange domänen som Customer Center (customer.fcgi) körs på, eller en överordnad domän till underdomänen.
+
+![imagerlc6j.png -screenshot][img3]
+
+När du klickar på **Submit** visas din Site key och Secret key:
+
+![imagehn8rh.png -screenshot][img4]
+
+[1]: https://www.google.com/recaptcha/admin
+[2]: https://www.google.com/u/0/recaptcha/admin/create
+
+[img1]: /media/loc/en/marketing/add-element-dialog.png
+[img2]: /media/loc/en/marketing/recaptcha-form-element.png
+[img3]: /media/loc/en/marketing/imagerlc6j.png
+[img4]: /media/loc/en/marketing/imagehn8rh.png
