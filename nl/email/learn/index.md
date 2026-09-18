@@ -3,7 +3,7 @@ uid: help-nl-email
 title: E-mail
 description: Met SuperOffice CRM kunt u ervoor kiezen om uw e-mails op verschillende manieren op te slaan en te delen, waardoor u en uw team productiever kunnen werken.
 keywords: ['e-mail', 'postvak IN', 'downloaden']
-author: SuperOffice Product and Engineering
+author: digitaldiina
 date: 18.09.2026
 so_version: 12.2
 content_type: concept

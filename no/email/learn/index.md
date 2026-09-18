@@ -3,7 +3,7 @@ uid: help-no-email
 title: E-post
 description: Med SuperOffice CRM kan du velge å lagre og dele e-postene dine på ulike måter som får deg og teamet ditt til å jobbe mer produktivt.
 keywords: ['e-post', 'innboks', 'laste ned']
-author: SuperOffice Product and Engineering
+author: digitaldiina
 date: 18.09.2026
 so_version: 12.2
 content_type: concept
