@@ -2,10 +2,10 @@
 uid: help-da-email
 title: E-mail
 description: Med SuperOffice CRM kan du vælge at gemme og dele dine mails på forskellige måder, der får dig og dit team til at arbejde mere produktivt.
-keywords: ['e-mail', 'indbakke']
-author: SuperOffice Product and Engineering
-date: 05.04.2026
-so_version: 11.13
+keywords: ['e-mail', 'indbakke', 'download']
+author: digitaldiina
+date: 18.09.2026
+so_version: 12.2
 content_type: concept
 boost: 1.5
 license: salesessentials, serviceessentials, marketingessentials
@@ -64,10 +64,10 @@ Hvis du vil gemme en vedhæftet fil i en e-mail, men ikke selve mailen i SuperOf
 
 ## Forhåndsvis gemt e-mail i SuperOffice {#preview}
 
-Klik på en e-mail i [detaljekortet Aktiviteter][14] for at se dens detaljer i [sidepanelet][15]. (Aktiver forhåndsvisningen ved at vælge den fra rullegardinmenuen øverst i sidepanelet).
+Klik på en e-mail i [detaljekortet Aktiviteter][14] for at se dens detaljer i [sidepanelet][15]. (Aktiver forhåndsvisningen ved at vælge den fra rullegardinmenuen øverst i sidepanelet). Klik på udvidelsesikonet i forhåndsvisningen for at åbne den samme visning som en fuld **E-mail**-dialogboks med den samme opgavemenu.
 
 * Klik på en vedhæftet fil for at åbne den.
-* Klik på <i class="ph ph-dots-three-circle-vertical" aria-label="Opgavemenu"></i> og vælg **Svar** eller **Svar til alle** for at svare på e-mailen, eller **Videresend** for at sende den til en anden.
+* Klik på <i class="ph ph-dots-three-circle-vertical" aria-label="Opgavemenu"></i> og vælg **Svar** eller **Svar til alle** for at svare på e-mailen, **Videresend** for at sende den til en anden, eller **Download** for at gemme en kopi af e-mailen på din enhed.
 
 ![E-mail forhåndsvisning med opgavemenu muligheder fremhævet -screenshot][img1]
 

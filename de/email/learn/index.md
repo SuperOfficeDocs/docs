@@ -2,10 +2,10 @@
 uid: help-de-email
 title: E-Mail
 description: Mit SuperOffice CRM können Sie Ihre E-Mails auf verschiedene Arten speichern und teilen, damit Sie und Ihr Team produktiver arbeiten können.
-keywords: ['E-Mail', 'Posteingang']
-author: SuperOffice Product and Engineering
-date: 05.04.2026
-so_version: 11.13
+keywords: ['E-Mail', 'Posteingang', 'herunterladen']
+author: digitaldiina
+date: 18.09.2026
+so_version: 12.2
 content_type: concept
 boost: 1.5
 license: salesessentials, serviceessentials, marketingessentials
@@ -64,10 +64,10 @@ Wenn Sie einen E-Mail-Anhang, nicht aber die E-Mail in SuperOffice CRM speichern
 
 ## Gespeicherte E-Mail in SuperOffice anzeigen {#preview}
 
-Klicken Sie auf eine E-Mail in der [Bereichsregisterkarte Aktivitäten][14], um ihre Details in der [Seitenleiste][15] anzuzeigen. (Aktivieren Sie die Vorschau, indem Sie sie aus dem Dropdown-Menü oben in der Seitenleiste auswählen).
+Klicken Sie auf eine E-Mail in der [Bereichsregisterkarte Aktivitäten][14], um ihre Details in der [Seitenleiste][15] anzuzeigen. (Aktivieren Sie die Vorschau, indem Sie sie aus dem Dropdown-Menü oben in der Seitenleiste auswählen). Klicken Sie auf das Erweitern-Symbol in der Vorschau, um dieselbe Ansicht als vollständigen **E-Mail**-Dialog mit demselben Aufgabenmenü zu öffnen.
 
 * Klicken Sie auf einen Anhang, um ihn zu öffnen.
-* Klicken Sie auf <i class="ph ph-dots-three-circle-vertical" aria-label="Aufgabenmenü"></i> und wählen Sie **Antworten** oder **Allen antworten**, um auf die E-Mail zu antworten, oder **Weiterleiten**, um sie an jemand anderen zu senden.
+* Klicken Sie auf <i class="ph ph-dots-three-circle-vertical" aria-label="Aufgabenmenü"></i> und wählen Sie **Antworten** oder **Allen antworten**, um auf die E-Mail zu antworten, **Weiterleiten**, um sie an jemand anderen zu senden, oder **Herunterladen**, um eine Kopie der E-Mail auf Ihrem Gerät zu speichern.
 
 ![E-Mail-Vorschau mit hervorgehobenen Aufgabenmenü-Optionen -screenshot][img1]
 

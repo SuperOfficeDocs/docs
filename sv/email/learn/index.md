@@ -2,10 +2,10 @@
 uid: help-sv-email
 title: E-post
 description: Med SuperOffice CRM kan du välja att spara och dela dina e-postmeddelanden på olika sätt som gör att du och ditt team blir mer produktiva.
-keywords: ['e-post', 'inkorg']
-author: SuperOffice Product and Engineering
-date: 05.04.2026
-so_version: 11.13
+keywords: ['e-post', 'inkorg', 'ladda ned']
+author: digitaldiina
+date: 18.09.2026
+so_version: 12.2
 content_type: concept
 boost: 1.5
 license: salesessentials, serviceessentials, marketingessentials
@@ -64,10 +64,10 @@ Om du vill spara en e-postbilaga men inte själva e-postmeddelandet i SuperOffic
 
 ## Förhandsgranska sparad e-post i SuperOffice {#preview}
 
-Klicka på ett e-postmeddelande på [detaljkortet Aktiviteter][14] för att visa information om det i [sidopanelen][15]. (Aktivera förhandsgranskningen genom att välja den i listrutan högst upp på sidopanelen).
+Klicka på ett e-postmeddelande på [detaljkortet Aktiviteter][14] för att visa information om det i [sidopanelen][15]. (Aktivera förhandsgranskningen genom att välja den i listrutan högst upp på sidopanelen). Klicka på utökningsikonen i förhandsgranskningen för att öppna samma vy som en fullständig **E-post**-dialog, med samma uppgiftsmeny.
 
 * Klicka på en bilaga för att öppna den.
-* Klicka på <i class="ph ph-dots-three-circle-vertical" aria-label="Uppgiftsmeny"></i> och välj **Svara** eller **Svara alla** för att svara på e-postmeddelandet eller **Vidarebefordra** för att skicka det till någon annan.
+* Klicka på <i class="ph ph-dots-three-circle-vertical" aria-label="Uppgiftsmeny"></i> och välj **Svara** eller **Svara alla** för att svara på e-postmeddelandet, **Vidarebefordra** för att skicka det till någon annan, eller **Ladda ned** för att spara en kopia av e-postmeddelandet på din enhet.
 
 ![E-postförhandsgranskning med markerade alternativ i uppgiftsmenyn -screenshot][img1]
 
