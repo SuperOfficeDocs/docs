@@ -2,7 +2,7 @@
 uid: help-de-email
 title: E-Mail
 description: Mit SuperOffice CRM können Sie Ihre E-Mails auf verschiedene Arten speichern und teilen, damit Sie und Ihr Team produktiver arbeiten können.
-keywords: ['E-Mail', 'Posteingang', 'Download']
+keywords: ['E-Mail', 'Posteingang', 'herunterladen']
 author: SuperOffice Product and Engineering
 date: 18.09.2026
 so_version: 12.2
