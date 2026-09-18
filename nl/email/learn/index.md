@@ -2,10 +2,10 @@
 uid: help-nl-email
 title: E-mail
 description: Met SuperOffice CRM kunt u ervoor kiezen om uw e-mails op verschillende manieren op te slaan en te delen, waardoor u en uw team productiever kunnen werken.
-keywords: ['e-mail', 'postvak IN']
+keywords: ['e-mail', 'postvak IN', 'downloaden']
 author: SuperOffice Product and Engineering
-date: 05.04.2026
-so_version: 11.13
+date: 18.09.2026
+so_version: 12.2
 content_type: concept
 boost: 1.5
 license: salesessentials, serviceessentials, marketingessentials
@@ -64,10 +64,10 @@ Als u een e-mailbijlage wilt opslaan, maar niet de e-mail zelf in SuperOffice CR
 
 ## Opgeslagen e-mail bekijken in SuperOffice {#preview}
 
-Klik op een e-mail in het [sectietabblad Activiteiten][14] om de details te bekijken in het [zijpaneel][15]. (Schakel de voorbeeldweergave in door deze te selecteren in het vervolgkeuzemenu bovenaan het zijpaneel).
+Klik op een e-mail in het [sectietabblad Activiteiten][14] om de details te bekijken in het [zijpaneel][15]. (Schakel de voorbeeldweergave in door deze te selecteren in het vervolgkeuzemenu bovenaan het zijpaneel). Klik op het uitvouwpictogram in de voorbeeldweergave om dezelfde weergave te openen als een volledig **E-mail**-dialoogvenster, met hetzelfde taakmenu.
 
 * Klik op een bijlage om deze te openen.
-* Klik op <i class="ph ph-dots-three-circle-vertical" aria-label="Taakmenu"></i> en selecteer **Beantwoorden** of **Allen beantwoorden** om te reageren op de e-mail, of **Doorsturen** om deze naar iemand anders te verzenden.
+* Klik op <i class="ph ph-dots-three-circle-vertical" aria-label="Taakmenu"></i> en selecteer **Beantwoorden** of **Allen beantwoorden** om te reageren op de e-mail, **Doorsturen** om deze naar iemand anders te verzenden, of **Downloaden** om een kopie van de e-mail op uw apparaat op te slaan.
 
 ![E-mailvoorbeeld met gemarkeerde taakmenuopties -screenshot][img1]
 

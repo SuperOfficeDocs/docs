@@ -2,10 +2,10 @@
 uid: help-no-email
 title: E-post
 description: Med SuperOffice CRM kan du velge å lagre og dele e-postene dine på ulike måter som får deg og teamet ditt til å jobbe mer produktivt.
-keywords: ['e-post', 'innboks']
+keywords: ['e-post', 'innboks', 'laste ned']
 author: SuperOffice Product and Engineering
-date: 05.04.2026
-so_version: 11.13
+date: 18.09.2026
+so_version: 12.2
 content_type: concept
 boost: 1.5
 license: salesessentials, serviceessentials, marketingessentials
@@ -64,10 +64,10 @@ Hvis du vil lagre et e-postvedlegg, men ikke selve e-posten i SuperOffice CRM, k
 
 ## Forhåndsvis lagret e-post i SuperOffice {#preview}
 
-Klikk på en e-post i [detaljkortet Aktiviteter][14] for å se detaljene i [sidepanelet][15]. (Aktiver forhåndsvisningen ved å velge den fra rullegardinmenyen øverst på sidepanelet).
+Klikk på en e-post i [detaljkortet Aktiviteter][14] for å se detaljene i [sidepanelet][15]. (Aktiver forhåndsvisningen ved å velge den fra rullegardinmenyen øverst på sidepanelet). Klikk på utvidelsesikonet i forhåndsvisningen for å åpne den samme visningen som en full **E-post**-dialog, med samme oppgavemeny.
 
 * Klikk på et vedlegg for å åpne det.
-* Klikk på <i class="ph ph-dots-three-circle-vertical" aria-label="Oppgavemeny"></i> og velg **Svar** eller **Svar til alle** for å svare på e-posten, eller **Videresend** for å sende den til noen andre.
+* Klikk på <i class="ph ph-dots-three-circle-vertical" aria-label="Oppgavemeny"></i> og velg **Svar** eller **Svar til alle** for å svare på e-posten, **Videresend** for å sende den til noen andre, eller **Last ned** for å lagre en kopi av e-posten på enheten din.
 
 ![E-post forhåndsvisning med uthevede oppgavemenyalternativer -screenshot][img1]
 

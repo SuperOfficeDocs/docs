@@ -2,10 +2,10 @@
 uid: help-en-email
 title: Email
 description: With SuperOffice CRM you can choose to save and share your emails in various ways that will make you and your team work more productively.
-keywords: ['inbox']
+keywords: ['inbox', 'download']
 author: SuperOffice Product and Engineering
-date: 05.04.2026
-so_version: 11.13
+date: 18.09.2026
+so_version: 12.2
 content_type: concept
 boost: 1.5
 license: salesessentials, serviceessentials, marketingessentials
@@ -64,10 +64,10 @@ If you would like to save an email attachment but not the email itself in SuperO
 
 ## Preview saved email in SuperOffice {#preview}
 
-Click an email in the [Activities section tab][14] to view its details in the [side panel][15]. (Enable the preview by selecting it from the drop-down menu at the top of the side panel).
+Click an email in the [Activities section tab][14] to view its details in the [side panel][15]. (Enable the preview by selecting it from the drop-down menu at the top of the side panel). Click the expand icon in the preview to open the same view as a full **Email** dialog, with the same Task menu.
 
 * Click an attachment to open it.
-* Click <i class="ph ph-dots-three-circle-vertical" aria-label="Task menu"></i> and select **Reply** or **Reply all** to respond to the email, or **Forward** to send it to someone else.
+* Click <i class="ph ph-dots-three-circle-vertical" aria-label="Task menu"></i> and select **Reply** or **Reply all** to respond to the email, **Forward** to send it to someone else, or **Download** to save a copy of the email to your device.
 
 ![Email preview with task menu options highlighted -screenshot][img1]
 
