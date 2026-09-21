@@ -98,7 +98,7 @@
         "pages": [
           "sv/ai/learn/text-analysis",
           "sv/ai/learn/categorization",
-          "sv/ai/learn/copilot",
+          "sv/ai/learn/workspace-assist",
           {
             "group": "För administratörer",
             "pages": [

@@ -393,6 +393,18 @@ foreach ($file in $files) {
     $inRedirectFrom = $false
 
     foreach ($line in $frontmatterLines) {
+        # An array-item line only belongs to redirect_from's own array; any other
+        # line (including another property's array items, e.g. `related:`) ends it.
+        if ($inRedirectFrom) {
+            if ($line -match '^\s*-\s*(.+)$') {
+                $value = $matches[1].Trim().Trim('"', '''')
+                $redirectFromValues += $value
+                continue
+            } else {
+                $inRedirectFrom = $false
+            }
+        }
+
         # Check for redirect_url
         if ($line -match '^\s*redirect_url\s*:\s*(.+)$') {
             $hasRedirectUrl = $true
@@ -406,19 +418,12 @@ foreach ($file in $files) {
             if ($value -ne '') {
                 $redirectFromValues += $value
             }
-            $inRedirectFrom = $false
         }
 
         # Check for redirect_from (array start)
         if ($line -match '^\s*redirect_from\s*:\s*$') {
             $hasRedirectFrom = $true
             $inRedirectFrom = $true
-        }
-
-        # Array item
-        if ($inRedirectFrom -and $line -match '^\s*-\s*(.+)$') {
-            $value = $matches[1].Trim().Trim('"', '''')
-            $redirectFromValues += $value
         }
     }
 
