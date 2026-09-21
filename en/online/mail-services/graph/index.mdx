@@ -42,7 +42,7 @@ The generic authorization URL and the link a user shares both open the same Micr
 
 1. Review the permissions SuperOffice is requesting, then select **Accept**.
 
-    Two of the listed permissions cover the mail connection itself: **Send mail as user** and **Read and write access to user mail**. Accepting grants all of the listed permissions for **all users** in your organization; no one else will be prompted to review them.
+    Two of the listed permissions cover the mail connection itself; see [Permissions used for the mail connection][3] below. Accepting grants all of the listed permissions for **all users** in your organization; no one else will be prompted to review them.
 
     ![Microsoft permissions requested dialog with Accept and Cancel -screenshot][img2]
 
@@ -53,6 +53,13 @@ The generic authorization URL and the link a user shares both open the same Micr
 <Note>
 If a later SuperOffice update requires additional permissions, Microsoft may ask a Global Administrator to re-approve consent before the update takes effect.
 </Note>
+
+## Permissions used for the mail connection
+
+| Scope | Permission display name | Description | Why we need it |
+|---|---|---|---|
+| `Mail.Send` | Send mail as user | Allows the app to send mail as users in the organization. | To send email from SuperOffice on the user's behalf. |
+| `Mail.ReadWrite` | Read and write access to user mail | Allows the app to create, read, update, and delete email in user mailboxes. Does not include permission to send mail. | To read and sync the user's inbox in SuperOffice. |
 
 ## Review the granted permissions in Microsoft Entra admin center
 
@@ -65,6 +72,7 @@ Once consent has been granted, SuperOffice's mail connection appears as an enter
 
 [1]: /en/learn/getting-started/connect-your-accounts
 [2]: https://entra.microsoft.com/
+[3]: #permissions-used-for-the-mail-connection
 [img1]: /media/loc/en/online/graph-consent-pick-account.png
 [img2]: /media/loc/en/online/graph-consent-permissions-requested.png
 [img3]: /media/loc/en/online/graph-consent-granted.png
