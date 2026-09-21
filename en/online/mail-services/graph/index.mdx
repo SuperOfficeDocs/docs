@@ -1,8 +1,7 @@
 ---
-uid: mail-services-graph-consent
 title: Microsoft Graph
 description: How a Microsoft 365 Global Administrator grants tenant-wide consent for SuperOffice's Microsoft Graph email connection.
-keywords: ['Microsoft Graph', 'admin consent', 'Microsoft 365', 'Entra ID', 'IMAP', 'SMTP', 'Global Administrator']
+keywords: ['admin consent', 'Microsoft 365', 'Entra ID', 'IMAP', 'SMTP', 'Global Administrator']
 author: digitaldiina
 date: 09.21.2026
 so_version: 12.5
@@ -27,13 +26,13 @@ Admin consent is a one-time, per-tenant step. Once granted, individual users can
 
 Consent can be granted in three ways:
 
-* Using a generic authorization URL (recommended — can be done before any user encounters a prompt)
-* Using a URL that a user copies from the permission dialog they encounter when they try to connect their own mailbox
-* Directly from the sign-in prompt, using a Global Administrator account
+* Using a generic authorization URL, which is recommended since it can be done before any user encounters a prompt.
+* Using a URL that a user copies from the permission dialog they encounter when they try to connect their own mailbox.
+* Directly from the sign-in prompt, using a Global Administrator account.
 
 If a user without admin rights reaches the sign-in prompt, they can select **Return to the application without granting consent**, then copy a link to share with their Microsoft 365 Global Administrator. See [Connect your accounts][1] for what this looks like from the user's side.
 
-To grant consent directly:
+The generic authorization URL and the link a user shares both open the same Microsoft sign-in page. From there:
 
 1. Sign in with a Microsoft 365 **Global Administrator** account.
 
@@ -43,11 +42,11 @@ To grant consent directly:
 
 1. Review the permissions SuperOffice is requesting, then select **Accept**.
 
-    Accepting grants these permissions for **all users** in your organization — no one else will be prompted to review them.
+    Two of the listed permissions cover the mail connection itself: **Send mail as user** and **Read and write access to user mail**. Accepting grants all of the listed permissions for **all users** in your organization; no one else will be prompted to review them.
 
     ![Microsoft permissions requested dialog with Accept and Cancel -screenshot][img2]
 
-1. Once consent is recorded, you'll see a confirmation. Close the tab and return to SuperOffice to sign in.
+1. Once consent is recorded, you will see a confirmation. Close the tab and return to SuperOffice to sign in.
 
     ![Microsoft consent granted confirmation -screenshot][img3]
 
@@ -55,12 +54,7 @@ To grant consent directly:
 If a later SuperOffice update requires additional permissions, Microsoft may ask a Global Administrator to re-approve consent before the update takes effect.
 </Note>
 
-## Related reading
-
-SuperOffice for Outlook (the Outlook add-in) uses a similar three-method consent process for its own, separate Microsoft 365 app registration. See [SuperOffice for Outlook: Authorization guide][2] for that walkthrough — it doesn't cover the Graph email connection described on this page.
-
 [1]: /en/learn/getting-started/connect-your-accounts
-[2]: https://community.superoffice.com/en/support-faqs/faq/superoffice-for-outlook-authorisation-guide/
 [img1]: /media/loc/en/online/graph-consent-pick-account.png
 [img2]: /media/loc/en/online/graph-consent-permissions-requested.png
 [img3]: /media/loc/en/online/graph-consent-granted.png
