@@ -1,0 +1,78 @@
+---
+title: Microsoft Graph
+description: How a Microsoft 365 Global Administrator grants tenant-wide consent for SuperOffice's Microsoft Graph email connection.
+keywords: ['admin consent', 'Microsoft 365', 'Entra ID', 'IMAP', 'SMTP', 'Global Administrator']
+author: digitaldiina
+date: 09.21.2026
+so_version: 12.5
+content_type: howto
+category: email
+topic: graph
+deployment: online
+related:
+  - Connect your accounts: /en/learn/getting-started/connect-your-accounts
+  - Set up SuperOffice Inbox: /en/email/inbox/learn/setup
+  - SuperOffice for Outlook admin consent: /integrations/superoffice-for-outlook/deploy
+language: en
+---
+
+SuperOffice can connect to a user's Microsoft 365 mailbox using Microsoft Graph instead of legacy IMAP/SMTP. Before any user in your organization can connect this way, a **Microsoft 365 Global Administrator** must grant tenant-wide consent for the SuperOffice app once.
+
+<Note>
+Admin consent is a one-time, per-tenant step. Once granted, individual users can connect their own mailbox without further admin involvement.
+</Note>
+
+## Grant consent
+
+Consent can be granted in three ways:
+
+* Using a generic authorization URL provided by SuperOffice, which is recommended since it can be granted before any user encounters a prompt.
+* Using a URL that a user copies from the permission dialog they encounter when they try to connect their own mailbox.
+* Directly from the sign-in prompt, using a Global Administrator account.
+
+If a user without admin rights reaches the sign-in prompt, they can select **Return to the application without granting consent**, then copy a link to share with their Microsoft 365 Global Administrator. See [Connect your accounts][1] for what this looks like from the user's side.
+
+The generic authorization URL and the link a user shares both open the same Microsoft sign-in page. From there:
+
+1. Sign in with a Microsoft 365 **Global Administrator** account.
+
+    If you are not already signed in, or need to switch accounts, choose the correct account or select **Use another account**.
+
+    ![Microsoft sign-in account picker -screenshot][img1]
+
+1. Review the permissions SuperOffice is requesting, then select **Accept**.
+
+    Two of the listed permissions cover the mail connection itself; see [Permissions used for the mail connection][3] below. Accepting grants all of the listed permissions for **all users** in your organization; no one else will be prompted to review them.
+
+    ![Microsoft permissions requested dialog with Accept and Cancel -screenshot][img2]
+
+1. Once consent is recorded, you will see a confirmation. Close the tab and return to SuperOffice to sign in.
+
+    ![Microsoft consent granted confirmation -screenshot][img3]
+
+<Note>
+If a later SuperOffice update requires additional permissions, Microsoft may ask a Global Administrator to re-approve consent before the update takes effect.
+</Note>
+
+## Permissions used for the mail connection {#scopes}
+
+| Scope | Permission display name | Description | Why we need it |
+|---|---|---|---|
+| `Mail.Send` | Send mail as user | Allows the app to send mail as users in the organization. | To send email from SuperOffice on the user's behalf. |
+| `Mail.ReadWrite` | Read and write access to user mail | Allows the app to create, read, update, and delete email in user mailboxes. Does not include permission to send mail. | To read and sync the user's inbox in SuperOffice. |
+
+## Review the granted permissions in Microsoft Entra admin center
+
+Once consent has been granted, SuperOffice's mail connection appears as an enterprise application in your tenant. To review or manage it later:
+
+1. In a browser, sign in to the [Microsoft Entra admin center][2].
+1. From the left pane, select **Enterprise applications**.
+1. Search for **SuperOffice**, then select it.
+1. Select **Permissions** from the left pane to see the full list of granted permissions.
+
+[1]: /en/learn/getting-started/connect-your-accounts
+[2]: https://entra.microsoft.com/
+[3]: #scopes
+[img1]: /media/loc/en/online/graph-consent-pick-account.png
+[img2]: /media/loc/en/online/graph-consent-permissions-requested.png
+[img3]: /media/loc/en/online/graph-consent-granted.png
