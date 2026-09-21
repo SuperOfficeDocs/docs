@@ -4,7 +4,7 @@ title: About docs.superoffice.com
 description: Overview of the SuperOfficeDocs GitHub organization and how to contribute to the SuperOffice documentation site.
 keywords: ['SuperOfficeDocs', 'GitHub', 'contribute', 'documentation', 'Mintlify']
 author: digitaldiina
-date: 09.17.2026
+date: 09.21.2026
 content_type: concept
 language: en
 ---
@@ -44,7 +44,7 @@ Search also filters results to the language of the page you are currently on and
 Only the user guide, the **Guides** section of this site, is translated into Danish, German, Dutch, Norwegian, and Swedish. This is a permanent decision about the scope of translation, not a gap that will eventually close. Developer, API, reference, and mobile content stays in English by design and will not be translated.
 
 <Note>
-Switching language while viewing a page that has no translation can take you to that language's home page instead of keeping you on the same topic. If this happens, the fastest way back to where you were is your browser's back button, not navigating from the home page again.
+The switcher shows a language as unavailable when the page you are on has no translation into it. If switching language ever takes you to that language's home page instead of the same topic, the fastest way back to where you were is your browser's back button, not navigating from the home page again.
 </Note>
 
 ## Contributing to SuperOfficeDocs
