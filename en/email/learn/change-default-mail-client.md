@@ -24,8 +24,7 @@ language: en
 
 ![Local settings dialog showing email client options -screenshot][img1]
 
-<Note>
-This setting stops applying once new email connectivity is available on your system. From that point, whether new emails and email addresses you click open in your local email application is instead controlled by the **Use local e-mail app for new e-mail** preference, under **Personal settings** > **Preferences** > **Email**.
-</Note>
+This setting stops applying once the new email connectivity has been enabled in your tenant. From that point, see [Connect your accounts][2] for the preference that controls whether new emails and email addresses you click open in your local email application instead.
 
 [img1]: /media/loc/en/email/local-settings-email-client.png
+[2]: ../../learn/getting-started/connect-your-accounts
