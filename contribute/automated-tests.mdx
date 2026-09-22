@@ -4,7 +4,7 @@ title: Automated tests
 description: Every check that runs against a PR or on a schedule for this repo - markdownlint, Vale, build validation, broken-link checking, the CRMScript reference drift check, and the stale generated-pages check - what each covers, whether it blocks a merge, and where to look when one flags something.
 keywords: ['ci', 'automated tests', 'markdownlint', 'vale', 'broken links', 'mint validate', 'automations', 'crmscript', 'stale pages', 'generated pages', 'landing page', 'template guard', 'release notes', 'openapi', 'swagger', 'recent pages', 'homepage', 'pester', 'mdx escaping', 'downloads', 'office format', 'xlsx', 'docfx', 'see cref', 'xref', 'script injection', 'security', 'restful', 'agent', 'rest']
 author: digitaldiina
-date: 09.22.2026
+date: 09.17.2026
 content_type: concept
 related:
   - /contribute/deployment
@@ -21,7 +21,7 @@ This page is the single reference for every automatic check that runs against th
 |---|---|---|---|
 | Database enum sidebarTitle auto-fix | GitHub Action (`.github/workflows/database-enum-sidebar-title.yml`) | No - auto-fixes and pushes a commit | This repo, `tools/ci/add-database-enum-sidebar-titles.py` |
 | Reserved `version` frontmatter auto-fix | GitHub Action (`.github/workflows/version-frontmatter-guard.yml`) | No - auto-fixes and pushes a commit | This repo, `tools/ci/fix-reserved-version-property.py` |
-| Generated-reference auto-fix | GitHub Action (`.github/workflows/generated-reference-autofix.yml`) | No - auto-fixes and pushes a commit | This repo, `tools/ci/add-mdo-provider-sidebar-titles.py` + `apply-wide-mode.py` + `apply-code-wrap.py` + `fix-webapi-bare-relative-links.py` + `fix-docfx-see-cref.py` + `fix-docfx-xref.py` |
+| Generated-reference auto-fix | GitHub Action (`.github/workflows/generated-reference-autofix.yml`) | No - auto-fixes and pushes a commit | This repo, `tools/ci/add-mdo-provider-sidebar-titles.py` + `apply-wide-mode.py` + `apply-code-wrap.py` + `fix-webapi-bare-relative-links.py` + `fix-docfx-see-cref.py` |
 | OpenAPI conversion auto-fix | GitHub Action (`.github/workflows/openapi-conversion-guard.yml`) | No - auto-fixes and pushes a commit | This repo, `tools/convert-swagger-to-openapi.ps1` + `tools/ci/generate-openapi-nav.py` |
 | Recent-pages sync auto-fix | GitHub Action (`.github/workflows/recent-pages-sync.yml`) | No - auto-fixes and pushes a commit | This repo, `tools/ci/sync-recent-pages.py` |
 | Markdownlint | GitHub Action (`.github/workflows/markdownlint.yml`) | No - advisory | This repo, `.markdownlint.yaml` / `.markdownlintignore` |
