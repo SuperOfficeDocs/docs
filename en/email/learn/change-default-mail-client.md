@@ -4,9 +4,9 @@ title: Change default email client in SuperOffice
 sidebarTitle: "Change default mail client"
 description: How to change default email client in SuperOffice
 keywords: ['email setup', 'preferred email client', 'mail client', 'e-mail client', 'email client settings']
-author: Bergfrid Dias
-date: 05.28.2025
-so_version: 10.5
+author: digitaldiina
+date: 09.22.2026
+so_version: 12.5
 content_type: howto
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
@@ -24,4 +24,7 @@ language: en
 
 ![Local settings dialog showing email client options -screenshot][img1]
 
+This setting stops applying once the new email connectivity has been enabled in your tenant. From that point, see [Connect your accounts][2] for the preference that controls whether new emails and email addresses you click open in your local email application instead.
+
 [img1]: /media/loc/en/email/local-settings-email-client.png
+[2]: ../../learn/getting-started/connect-your-accounts
