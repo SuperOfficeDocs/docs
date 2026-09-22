@@ -34,11 +34,11 @@ server-side generated text. Before displaying this text to the user, culturally 
 to be parsed and reformatted to the correct culture.
 <p></p>
 The methods in this class take care of both sides of this process. The Encode methods, such as 
-<xref href="SuperOffice.WebApi.Data.CultureDataFormatter.EncodeDate(System.DateTime)" data-throw-if-not-resolved="false"></xref>, take a native data type as input and return a string that contains both
+[EncodeDate](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter#SuperOffice_WebApi_Data_CultureDataFormatter_EncodeDate_System_DateTime_), take a native data type as input and return a string that contains both
 a specification of what it is (a date) and the value formatted in the invariant culture.
 <p></p>
-The <xref href="SuperOffice.WebApi.Data.CultureDataFormatter.LocalizeEncoded(System.String)" data-throw-if-not-resolved="false"></xref> method will take such a formatted element, and by calling on the
-proper LocalFormat method (such as <xref href="SuperOffice.WebApi.Data.CultureDataFormatter.LocalFormatDate(System.DateTime)" data-throw-if-not-resolved="false"></xref>, return it in its correct form according
+The [LocalizeEncoded](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter#SuperOffice_WebApi_Data_CultureDataFormatter_LocalizeEncoded_System_String_) method will take such a formatted element, and by calling on the
+proper LocalFormat method (such as [LocalFormatDate](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter#SuperOffice_WebApi_Data_CultureDataFormatter_LocalFormatDate_System_DateTime_), return it in its correct form according
 to the current culture settings for the thread.
 
 ## Fields
@@ -759,7 +759,7 @@ The distinct language values, or the original string when it is not multi-langua
 
 #### Remarks
 
-Shares the single-pass scanner with <xref href="SuperOffice.WebApi.Data.CultureDataFormatter.ParseMultiLanguageString(System.String%2cSystem.String)" data-throw-if-not-resolved="false"></xref>, but returns all language
+Shares the single-pass scanner with [ParseMultiLanguageString](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter#SuperOffice_WebApi_Data_CultureDataFormatter_ParseMultiLanguageString_System_String_System_String_), but returns all language
 values rather than resolving one culture, so callers that index list-item text (e.g. the freetext
 indexer) can cover every language without indexing the language codes.
 
@@ -1341,7 +1341,7 @@ Parsed resource string.
 
 ### <a id="SuperOffice_WebApi_Data_CultureDataFormatter_ParseInlineMultiLanguageString_System_String_System_String_System_Int32_"></a> ParseInlineMultiLanguageString\(string, string, int\)
 
-Parses the string for multilang strings and uses <xref href="SuperOffice.WebApi.Data.CultureDataFormatter.ParseMultiLanguageString(System.String%2cSystem.String)" data-throw-if-not-resolved="false"></xref>	to translate
+Parses the string for multilang strings and uses [ParseMultiLanguageString](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter#SuperOffice_WebApi_Data_CultureDataFormatter_ParseMultiLanguageString_System_String_System_String_)	to translate
 the fragment to a culture specific string part
 
 ```csharp
@@ -1548,7 +1548,7 @@ String, either marked with [DT: ] or just a datetime
 
 `result` [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-DateTime value, if return value is true; otherwise <xref href="System.DateTime.MinValue" data-throw-if-not-resolved="false"></xref>
+DateTime value, if return value is true; otherwise [MinValue](https://learn.microsoft.com/dotnet/api/system.datetime.minvalue)
 
 #### Returns
 

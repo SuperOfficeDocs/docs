@@ -3,7 +3,7 @@
 Namespace: [SuperOffice.WebApi.Authorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization)  
 Assembly: SuperOffice.WebApi.Authorization.AccessToken.dll  
 
-OAuth 2.0 access token (and refresh token) <xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"></xref>. 
+OAuth 2.0 access token (and refresh token) [IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization). 
 With a refresh token, AppToken and AppSecret defined we can automatically 
 refresh access token on expiry.
 
@@ -174,7 +174,7 @@ public string RedirectUrl { get; }
 
 ### <a id="SuperOffice_WebApi_Authorization_AuthorizationAccessToken_RefreshAuthorizationAsync"></a> RefreshAuthorizationAsync
 
-Try to refresh this <xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"></xref> instance.
+Try to refresh this [IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization) instance.
 
 ```csharp
 public Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync { get; set; }
@@ -222,5 +222,5 @@ public AuthenticationHeaderValue GetAuthorization()
 
  [AuthenticationHeaderValue](https://learn.microsoft.com/dotnet/api/system.net.http.headers.authenticationheadervalue)
 
-Gets a <xref href="System.Tuple%602" data-throw-if-not-resolved="false"></xref> (string,string) where scheme is Bearer and parameter is the access token.
+Gets a [Tuple`2](https://learn.microsoft.com/dotnet/api/system.tuple-2) (string,string) where scheme is Bearer and parameter is the access token.
 

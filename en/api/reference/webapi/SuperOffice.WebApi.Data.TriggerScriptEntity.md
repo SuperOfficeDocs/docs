@@ -37,7 +37,7 @@ var triggerScriptEntity = agent.GetTriggerScriptEntity( 123 );</code></pre>
 
 ## Remarks
 
-Use <xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" data-throw-if-not-resolved="false"></xref>:
+Use [Archive agent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent):
             All TriggerScriptEntity: <pre><code class="lang-csharp">"EventHandler"</code></pre>
 
 ## Constructors

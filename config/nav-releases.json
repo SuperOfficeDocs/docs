@@ -14,6 +14,7 @@
         "group": "API",
         "root": "release-notes/12/api/index",
         "pages": [
+          "release-notes/12/api/changes-webapi-12.4.1514",
           "release-notes/12/api/12.3.2570-update",
           "release-notes/12/api/12.2/12.2.2115-update",
           "release-notes/12/api/changes-webapi-12.2.2072.0",

@@ -63,7 +63,7 @@ Optional access token. Should be a 8A: style bearer token, same as what UserAgen
 
 ### <a id="SuperOffice_WebApi_AuthorizationUserToken_RefreshAuthorizationAsync"></a> RefreshAuthorizationAsync
 
-Try to refresh this <xref href="SuperOffice.WebApi.Authorization.IAuthorization" data-throw-if-not-resolved="false"></xref> instance.
+Try to refresh this [IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization) instance.
 
 ```csharp
 public Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync { get; set; }

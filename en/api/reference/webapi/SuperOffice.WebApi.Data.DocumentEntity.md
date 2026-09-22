@@ -36,7 +36,7 @@ var documentEntity = agent.GetDocumentEntity( 123 );</code></pre>
 
 ## Remarks
 
-Use <xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" data-throw-if-not-resolved="false"></xref>:
+Use [Archive agent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent):
             All DocumentEntity: <pre><code class="lang-csharp">"FindDocument"</code></pre>
             Links: <pre><code class="lang-csharp">"Links"</code></pre> with restriction <pre><code class="lang-csharp">"sourceDocumentRestrictionId eq " + id</code></pre>.
 
@@ -166,7 +166,7 @@ public virtual DateTime CreatedDate { get; set; }
 
 Udef + Extra fields added to the carrier. Extra fields as defined by changes to database schema + user-defined fields as defined by admin.
 Custom fields combines user defined fields and extra fields into one bucket. 
-The individual <xref href="SuperOffice.WebApi.Data.DocumentEntity.ExtraFields" data-throw-if-not-resolved="false"></xref> and <xref href="SuperOffice.WebApi.Data.DocumentEntity.UserDefinedFields?text=UserDefinedFields" data-throw-if-not-resolved="false"></xref> properties are deprecated in favor of this
+The individual [ExtraFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.ExtraFields) and [UserDefinedFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity#SuperOffice_WebApi_Data_DocumentEntity_UserDefinedFields) properties are deprecated in favor of this
 combined collection.
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
 
@@ -252,7 +252,7 @@ public virtual string ExternalRef { get; set; }
 
 ### <a id="SuperOffice_WebApi_Data_DocumentEntity_ExtraFields"></a> ExtraFields
 
-Deprecated: Use <xref href="SuperOffice.WebApi.Data.DocumentEntity.CustomFields" data-throw-if-not-resolved="false"></xref> instead.
+Deprecated: Use [CustomFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity#SuperOffice_WebApi_Data_DocumentEntity_CustomFields) instead.
 Extra fields added to the carrier. This could be data from Plug-ins, the foreign key system, external applications, etc.
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
 
@@ -538,7 +538,7 @@ public virtual DateTime UpdatedDate { get; set; }
 
 ### <a id="SuperOffice_WebApi_Data_DocumentEntity_UserDefinedFields"></a> UserDefinedFields
 
-Deprecated: Use <xref href="SuperOffice.WebApi.Data.DocumentEntity.CustomFields" data-throw-if-not-resolved="false"></xref> instead.
+Deprecated: Use [CustomFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity#SuperOffice_WebApi_Data_DocumentEntity_CustomFields) instead.
 Dictionary of user defined field data.
 The key string is the ProgId of the UdefField, or if the ProgId is empty it is a string of the format "SuperOffice:[UdefFieldIdentity]", e.g. "SuperOffice:1234"
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".

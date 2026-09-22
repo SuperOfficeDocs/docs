@@ -153,7 +153,7 @@ The Online customer id: "Cust1234"
 
 `subdomain` [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-"sod", "qastage" or "online". Default "online" (production). See <xref href="SuperOffice.WebApi.SubDomain" data-throw-if-not-resolved="false"></xref>
+"sod", "qastage" or "online". Default "online" (production). See [SubDomain](/en/api/reference/webapi/SuperOffice.WebApi.SubDomain)
 
 `requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 

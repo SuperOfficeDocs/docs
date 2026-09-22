@@ -98,6 +98,12 @@ jobs:
       - name: "Resolve or fall back dead <see cref> references (#407)"
         run: python tools/ci/fix-docfx-see-cref.py --apply
 
+      # Sibling fixer for the sibling tag (#404/#312): same idempotent full-tree-rescan reasoning, and
+      # ordered after fix-docfx-see-cref.py for the same reason - each fixer only ever emits real
+      # Markdown, so running one after the other never re-touches the other's output.
+      - name: "Resolve dead <xref> references (#404/#312)"
+        run: python tools/ci/fix-docfx-xref.py --apply
+
       - name: Commit and push fixes, if any
         env:
           HEAD_REF: ${{ github.event.pull_request.head.ref }}
@@ -109,5 +115,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add en/api/mdo-providers/reference en/database/tables en/api/archive-providers/reference en/api/reference/webapi
-          git commit -m "Apply generated-reference auto-fixes (sidebarTitle, overflow, bare-relative links, see-cref)"
+          git commit -m "Apply generated-reference auto-fixes (sidebarTitle, overflow, bare-relative links, see-cref, xref)"
           git push origin "HEAD:$HEAD_REF"
