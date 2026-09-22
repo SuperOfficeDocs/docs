@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "ContactStaticSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SelectionStaticProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SelectionStaticProvider">SuperOffice.CRM.ArchiveLists.SelectionStaticProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
 | Name | Description |
@@ -1266,12 +1266,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 ## Sample
 
 ```http!
-GET /api/v1/archive/ContactStaticSelection?$select=business,saintSaleStatus,saintTicketStatus,appointment/associate/isLocation,personUdef/SuperOffice:9
+GET /api/v1/archive/ContactStaticSelection?$select=postAddress/line2,targetRelation/associateId,targetRelation/registeredBy,sale/associate/credentialDisplayValue,appointment/projectId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

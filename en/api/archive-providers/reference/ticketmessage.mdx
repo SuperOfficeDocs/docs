@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "TicketMessage"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.TicketMessageProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.TicketMessageProvider">SuperOffice.CRM.ArchiveLists.TicketMessageProvider</see> inside NetServer's SODatabase assembly.
 
 Messages on support tickets. Messages are typically e-mail messages with attachments, but not always.
 
@@ -876,12 +876,12 @@ Messages on support tickets. Messages are typically e-mail messages with attachm
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketMessage?$select=ticket/person/whenUpdatedByWorkflow,ticket/person/personAddress/line1,ticket/person/personExtra/y_rental/x_end,ticket/person/personAssociate/usergroup,ticket/person/personAssociate/isActiveText
+GET /api/v1/archive/TicketMessage?$select=ticket/project/completed,ticket/project/updatedByFullName,ticket/person/personExtra/y_rental/x_start
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

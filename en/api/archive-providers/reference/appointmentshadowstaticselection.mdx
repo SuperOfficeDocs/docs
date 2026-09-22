@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "AppointmentShadowStaticSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.AppointmentShadowSelectionStaticProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.AppointmentShadowSelectionStaticProvider">SuperOffice.CRM.ArchiveLists.Archive.AppointmentShadowSelectionStaticProvider</see> inside NetServer's SODatabase assembly.
 
 Shadow contact provider for the static appointment provider.
 
@@ -759,12 +759,12 @@ Shadow contact provider for the static appointment provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/AppointmentShadowStaticSelection?$select=person/personSource,person/restrictionAddress/line2,person/personExtra/x_person_date,person/correspondingAssociate/lastName,project/projectAssociate/mrMrs
+GET /api/v1/archive/AppointmentShadowStaticSelection?$select=contact/business,contact/NumberOfNotCompletedActivitiesInPeriod,person/hasInterests,person/personAddress/addressId,project/projectAssociate/usergroupId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

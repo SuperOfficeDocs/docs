@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "ContactSelectionCombined"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SelectionCombinedProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SelectionCombinedProvider">SuperOffice.CRM.ArchiveLists.SelectionCombinedProvider</see> inside NetServer's SODatabase assembly.
 
 Implementation of the provider for the combined selection
 
@@ -1268,12 +1268,12 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/ContactSelectionCombined?$select=selectionMemberId,saintTicketCategory,sourceRelation/associateId,sale/salePublish/publishedTo,sale/associate/contactDepartment
+GET /api/v1/archive/ContactSelectionCombined?$select=email/emailLastSent,contactAssociate/fullName,contactExtra/x_contact_float,sale/hasGuide,appointment/associate/contactCategory
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

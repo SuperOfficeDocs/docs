@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "QuoteLineSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.QuoteLineSelectionProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.QuoteLineSelectionProviderV2">SuperOffice.CRM.ArchiveLists.Archive.QuoteLineSelectionProviderV2</see> inside NetServer's SODatabase assembly.
 
 This is the archive Provider for the Selection QuoteLine archive.
 
@@ -781,12 +781,12 @@ This is the archive Provider for the Selection QuoteLine archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteLineSelectionV2?$select=alternative/version/quote/sale/person/personCountry,alternative/version/quote/sale/person/correspondingAssociate/mrMrs,alternative/version/quote/sale/contact/contactPhone/formattedNumber,alternative/version/quote/connection/erpConnection/erpId
+GET /api/v1/archive/QuoteLineSelectionV2?$select=alternative/version/quote/sale/person/personAssociate/ejUserId,alternative/version/quote/sale/person/correspondingAssociate/ejStatus,alternative/version/quote/sale/contact/LastCompletedSale,alternative/version/quote/sale/associate/usergroup,alternative/version/quote/sale/project/NumberOfNotCompletedSalesInPeriod
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

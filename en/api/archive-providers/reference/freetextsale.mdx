@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "FreetextSale"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.FreetextSaleResultProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.FreetextSaleResultProvider">SuperOffice.CRM.ArchiveLists.FreetextSaleResultProvider</see> inside NetServer's SODatabase assembly.
 
 Archive provider for freetext search on the Sale entity.
 
@@ -1170,12 +1170,12 @@ as well as before any ORDER BY, are applied.
 ## Sample
 
 ```http!
-GET /api/v1/archive/FreetextSale?$select=person/personId,person/hasInfoText,project/projectAssociate/contactName,project/projectUdef/SuperOffice:7,saleStakeholder/person/personAssociateId
+GET /api/v1/archive/FreetextSale?$select=person/personAssociate/contactFullName,person/personAssociate/isLocation,contact/postAddress/county,contact/contactExtra/x_contact_shorttext,project/projectAssociate/simultaneousEjUser
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

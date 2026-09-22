@@ -1,6 +1,6 @@
 ---
 title: FormSubmissionShadowDynamicSelectionV2
-description: FormSubmission shadow selection archive with OR-able selection groups. Each group is represented with the FormSubmissionShadowSelectionDynamicProviderSingleCriteriaGroup.
+description: FormSubmission shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 keywords: FormSubmissionShadowDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,9 +9,9 @@ envir: onsite, online
 
 ## "FormSubmissionShadowDynamicSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionShadowSelectionDynamicProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionShadowSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionShadowSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
 
-FormSubmission shadow selection archive with OR-able selection groups. Each group is represented with the [FormSubmissionShadowSelectionDynamicProviderSingleCriteriaGroup](./formsubmissionshadowdynamicselectionsinglecriteriagroup).
+FormSubmission shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
 | Name | Description |
@@ -488,12 +488,12 @@ FormSubmission shadow selection archive with OR-able selection groups. Each grou
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormSubmissionShadowDynamicSelectionV2?$select=person/personAssociate/middleName,person/personAssociate/userName,person/consentSourceStore
+GET /api/v1/archive/FormSubmissionShadowDynamicSelectionV2?$select=date,associate/assocTooltip,person/supportAssociate,person/personMobilePhone/description,person/personPager/formattedNumber
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "MailingsSelectionCombinedV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.MailingsSelectionCombinedProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.MailingsSelectionCombinedProviderV2">SuperOffice.CRM.ArchiveLists.Archive.MailingsSelectionCombinedProviderV2</see> inside NetServer's SODatabase assembly.
 
 Implementation of the provider for the combined selection
 
@@ -682,12 +682,12 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/MailingsSelectionCombinedV2?$select=contactId,mailingAddr/contact/contactExtra/x_contact_default_integer,mailingAddr/person/restrictionAddress/zip,mailingAddr/person/personAssociate/role,mailingAddr/person/withdrawnStoreConsent
+GET /api/v1/archive/MailingsSelectionCombinedV2?$select=mailingSelectionId,mailingAddr/contact/postAddress/line2,emailFlow/workflowAssociate/contactCategory,project/projectUdef/SuperOffice:2,project/LastSale
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

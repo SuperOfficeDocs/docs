@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "FindQuoteLine"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.FindQuoteLineProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.FindQuoteLineProvider">SuperOffice.CRM.ArchiveLists.FindQuoteLineProvider</see> inside NetServer's SODatabase assembly.
 
 QuoteLine provider for Find
 
@@ -774,12 +774,12 @@ QuoteLine provider for Find
 ## Sample
 
 ```http!
-GET /api/v1/archive/FindQuoteLine?$select=quoteLineId,alternative/totalPriceIncVAT,alternative/version/quote/sale/person/personInfo/textId,alternative/version/quote/sale/person/subscription,alternative/version/quote/sale/contact/contactExtra/x_contact_contact_relation
+GET /api/v1/archive/FindQuoteLine?$select=quoteLineThumbnail,alternative/totalPrice,alternative/version/quote/sale/person/restrictionAddress/county,alternative/version/quote/sale/person/personExtra/x_person_appointment_relation,alternative/version/quote/sale/person/withdrawnEmarketingConsent
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "ConfigurableArchiveProject"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.ConfigurableArchiveProjectProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.ConfigurableArchiveProjectProvider">SuperOffice.CRM.ArchiveLists.ConfigurableArchiveProjectProvider</see> inside NetServer's SODatabase assembly.
 
 This is the archive Provider for the Configurable project Archive.
 
@@ -817,12 +817,12 @@ This is the archive Provider for the Configurable project Archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ConfigurableArchiveProject?$select=NumberOfNotCompletedSalesInPeriod,sale/reopenDate,appointment/duration,projectMember/personAssociate/portraitThumbnail,projectMember/hasStoreConsent
+GET /api/v1/archive/ConfigurableArchiveProject?$select=status,imageThumbnail,projectPublish/publishedTo,saintDirection,sale/associate/ejUserId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

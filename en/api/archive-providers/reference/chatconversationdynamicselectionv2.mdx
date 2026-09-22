@@ -1,6 +1,6 @@
 ---
 title: ChatConversationDynamicSelectionV2
-description: ChatConversation selection archive with OR-able selection groups. Each group is represented with the ChatConversationSelectionDynamicProviderSingleCriteriaGroup.
+description: ChatConversation selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.ChatConversationSelectionDynamicProviderSingleCriteriaGroup" />.
 keywords: ChatConversationDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,9 +9,9 @@ envir: onsite, online
 
 ## "ChatConversationDynamicSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ChatConversationSelectionDynamicProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ChatConversationSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.ChatConversationSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
 
-ChatConversation selection archive with OR-able selection groups. Each group is represented with the [ChatConversationSelectionDynamicProviderSingleCriteriaGroup](./chatconversationdynamicselectionsinglecriteriagroup).
+ChatConversation selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ChatConversationSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
 | Name | Description |
@@ -495,12 +495,12 @@ ChatConversation selection archive with OR-able selection groups. Each group is 
 ## Sample
 
 ```http!
-GET /api/v1/archive/ChatConversationDynamicSelectionV2?$select=associate/locationAddress,person/personInfo/infoText,person/personAddress/county,contact/categoryGroup,contact/postAddress/city
+GET /api/v1/archive/ChatConversationDynamicSelectionV2?$select=person/personAssociate/usergroup,person/personAddress/formattedAddress,person/personAssociate/isActiveText
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "Mail2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.EMailItemProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.EMailItemProvider">SuperOffice.CRM.ArchiveLists.EMailItemProvider</see> inside NetServer's SODatabase assembly.
 
 Provides populated mail envelope rows as an archive
 
@@ -496,12 +496,12 @@ Provides populated mail envelope rows as an archive
 ## Sample
 
 ```http!
-GET /api/v1/archive/Mail2?$select=person/personDirectPhone/formattedNumber,person/personAssociate/isLocation,contact/email/emailHasBounced,contact/restrictionAddress/line1,contact/restrictionAddress/county
+GET /api/v1/archive/Mail2?$select=person/personUdef/SuperOffice:7,person/personExtra/x_person_time,person/correspondingAssociate/isActive
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

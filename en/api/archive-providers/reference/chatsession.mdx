@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "ChatSession"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.ChatSessionProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.ChatSessionProvider">SuperOffice.CRM.ArchiveLists.ChatSessionProvider</see> inside NetServer's SODatabase assembly.
 
 Archive provider for listing chat session and related data to a chat
 
@@ -493,12 +493,12 @@ Archive provider for listing chat session and related data to a chat
 ## Sample
 
 ```http!
-GET /api/v1/archive/ChatSession?$select=associateId,person/leadstatusRank,person/personAssociate/isActive,contact/contactAssociate/assocTooltip
+GET /api/v1/archive/ChatSession?$select=personId,person/email/emailLastBounce,person/personAssociate/simultaneousEjUser
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

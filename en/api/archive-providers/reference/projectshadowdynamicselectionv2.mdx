@@ -1,6 +1,6 @@
 ---
 title: ProjectShadowDynamicSelectionV2
-description: Project shadow selection archive with OR-able selection groups. Each group is represented with the ProjectShadowSelectionDynamicProviderSingleCriteriaGroup.
+description: Project shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 keywords: ProjectShadowDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,9 +9,9 @@ envir: onsite, online
 
 ## "ProjectShadowDynamicSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionDynamicProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
 
-Project shadow selection archive with OR-able selection groups. Each group is represented with the [ProjectShadowSelectionDynamicProviderSingleCriteriaGroup](./projectshadowdynamicselectionsinglecriteriagroup).
+Project shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
 | Name | Description |
@@ -827,12 +827,12 @@ Project shadow selection archive with OR-able selection groups. Each group is re
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectShadowDynamicSelectionV2?$select=projectUdef/SuperOffice:10,sale/salePublish/publishedTo,document/associate/middleName,projectMember/personDeletedDate,projectMember/email/emailAddress
+GET /api/v1/archive/ProjectShadowDynamicSelectionV2?$select=projectUdef/SuperOffice:1,appointment/appointmentUdef/SuperOffice:5,appointment/associate/assocTooltip,document/name,projectMember/correspondingAssociate/contactId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

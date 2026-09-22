@@ -1,6 +1,6 @@
 ---
 title: ProjectDynamicSelectionV2
-description: Project selection archive with OR-able selection groups. Each group is represented with the ProjectSelectionDynamicProviderSingleCriteriaGroup.
+description: Project selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionDynamicProviderSingleCriteriaGroup" />.
 keywords: ProjectDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,9 +9,9 @@ envir: onsite, online
 
 ## "ProjectDynamicSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionDynamicProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
 
-Project selection archive with OR-able selection groups. Each group is represented with the [ProjectSelectionDynamicProviderSingleCriteriaGroup](./projectdynamicselectionsinglecriteriagroup).
+Project selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
 | Name | Description |
@@ -827,12 +827,12 @@ Project selection archive with OR-able selection groups. Each group is represent
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectDynamicSelectionV2?$select=document/yourref,projectMember/personId,projectMember/restrictionAddress/city,projectMember/code
+GET /api/v1/archive/ProjectDynamicSelectionV2?$select=name,projectPublish/isPublished,sale/hasQuote,sale/associate/userName,document/registeredBy
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

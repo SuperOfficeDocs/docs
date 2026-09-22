@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "FreetextSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.FreetextSelectionResultProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.FreetextSelectionResultProvider">SuperOffice.CRM.ArchiveLists.FreetextSelectionResultProvider</see> inside NetServer's SODatabase assembly.
 
 Archive provider for freetext search on the Selection entity.
 
@@ -96,12 +96,12 @@ as well as before any ORDER BY, are applied.
 ## Sample
 
 ```http!
-GET /api/v1/archive/FreetextSelection?$select=lastLoadedBy,lastMembershipChangeBy,selectionAssociate/firstName
+GET /api/v1/archive/FreetextSelection?$select=targetTableNumber,lastLoadedByFullName,selectionAssociate/contactId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

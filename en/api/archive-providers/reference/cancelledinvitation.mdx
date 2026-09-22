@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "CancelledInvitation"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.CancelledInvitationProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.CancelledInvitationProvider">SuperOffice.CRM.ArchiveLists.CancelledInvitationProvider</see> inside NetServer's SODatabase assembly.
 
 This is the query provider for invitations, of subtype 'Cancelled'
 
@@ -760,12 +760,12 @@ This is an optional entity and is fetched only if the user checks the correspond
 ## Sample
 
 ```http!
-GET /api/v1/archive/CancelledInvitation?$select=contact/name,person/personInterestIds,project/projectUdef/SuperOffice:9,sale/registeredByFullName,sale/associate/middleName
+GET /api/v1/archive/CancelledInvitation?$select=rawStatus,contact/postAddress/county,person/supportAssociate,person/createdByForm,person/personExtra/x_person_appointment_relation
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

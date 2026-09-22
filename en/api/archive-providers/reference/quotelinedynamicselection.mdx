@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "QuoteLineDynamicSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.QuoteLineSelectionDynamicProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.QuoteLineSelectionDynamicProvider">SuperOffice.CRM.ArchiveLists.Archive.QuoteLineSelectionDynamicProvider</see> inside NetServer's SODatabase assembly.
 
 Quoteline selection archive using the selectionId as criterionmapping.
 
@@ -776,12 +776,12 @@ Quoteline selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteLineDynamicSelection?$select=alternative/version/expiration,alternative/version/deliveryTerms,alternative/version/quote/sale/description,alternative/version/quote/sale/person/personAssociate/ejUserId,alternative/version/quote/sale/contact/business
+GET /api/v1/archive/QuoteLineDynamicSelection?$select=alternative/version/quote/sale/text,alternative/version/quote/sale/projectId,alternative/version/quote/sale/person/personExtra/x_person_boolean,alternative/version/quote/sale/contact/contactSource,alternative/version/quote/sale/contact/searchPhone/formattedNumber
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

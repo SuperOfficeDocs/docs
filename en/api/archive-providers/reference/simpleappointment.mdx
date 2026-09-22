@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "SimpleAppointment"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SimpleAppointmentsProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SimpleAppointmentsProvider">SuperOffice.CRM.ArchiveLists.SimpleAppointmentsProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
 | Name | Description |
@@ -752,12 +752,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 ## Sample
 
 ```http!
-GET /api/v1/archive/SimpleAppointment?$select=contact/contactAssociate/isActive,person/personUdef/SuperOffice:11,project/status,project/nextMilestone,project/projectEvent/hasSignOff
+GET /api/v1/archive/SimpleAppointment?$select=userGroup,contact/contactAssociate/contactDepartment,contact/NumberOfNotCompletedSalesInPeriod,associate/contactDepartment
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

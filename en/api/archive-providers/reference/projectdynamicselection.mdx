@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "ProjectDynamicSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionDynamicProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionDynamicProvider">SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionDynamicProvider</see> inside NetServer's SODatabase assembly.
 
 Project selection archive using the selectionId as criterionmapping.
 
@@ -827,12 +827,12 @@ Project selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectDynamicSelection?$select=sale/who,appointment/alarm,projectMember/personInterestIds,projectMember/personExtra/y_rental/x_amount,projectMember/personAssociate/mrMrs
+GET /api/v1/archive/ProjectDynamicSelection?$select=saintSaleStatus,sale/saleType,sale/associate/assocTooltip,appointment/registeredBy,projectMember/personNoMail
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

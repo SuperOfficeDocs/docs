@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "AppointmentSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.AppointmentSelectionProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.AppointmentSelectionProvider">SuperOffice.CRM.ArchiveLists.Archive.AppointmentSelectionProvider</see> inside NetServer's SODatabase assembly.
 
 This is the archive Provider for the Selection appouintment archive.
 
@@ -760,12 +760,12 @@ This is the archive Provider for the Selection appouintment archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/AppointmentSelection?$select=contact/activeErpLinks,contact/streetAddress/addressId,contact/streetAddress/state,person/correspondingAssociate/fullName,project/projectAssociate/usergroup
+GET /api/v1/archive/AppointmentSelection?$select=contact/number,contact/streetAddress/line3,contact/contactExtra/x_contact_short_dropdown,contact/contactExtra/y_organization/x_name,person/position
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

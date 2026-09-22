@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "SaleStakeholder"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SaleStakeholderProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SaleStakeholderProvider">SuperOffice.CRM.ArchiveLists.SaleStakeholderProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
 | Name | Description |
@@ -436,12 +436,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sale
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleStakeholder?$select=person/personExtra/y_rental/x_amount,contact/streetAddress/line2,contact/contactAssociate/isActive,contact/contactAssociate/isLocation
+GET /api/v1/archive/SaleStakeholder?$select=person/email/emailLastBounce,person/personUrl/URLAddress,person/restrictionAddress/line3,person/personUdef/SuperOffice:1,person/isMailingRecipient
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

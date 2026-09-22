@@ -39,6 +39,8 @@ Contains news feed items - published to one or more users, with one or more lang
 |updatedCount|Number of updates made to this record|UShort|No|
 |Location|Place related to news item (city or city + country) (optional)|String(200)|No|
 |RatingPercent|Rating as percentage (0-100). 0 = undefined. 1-9 = No stars, 10-30 = One star, Two stars = 31-50, 90-100 = Five stars. Client can render rating as stars, pie chart, thumbs up or down, however they want. Default 0 indicates no rating.|Int|No|
+|SourceSoProtocol|SoProtocol to the agent&apos;s chat topic so that start page can open the agent topic directly. e.g. &apos;contact.main?contact_id=1234&apos; or &apos;agents.main?instance_id=6a8&amp;topic_id=534&apos; |String(200)|No|
+|Type|Type identifier for the message type. Optional. To allow clients to filter for specific message types without analyzing the CTAs or message content. e.g. &apos;mergeContact&apos; or &apos;mergeOrphan&apos; |String(40)|No|
 
 
 ![NewsFeedItem table relationship diagram](/media/loc/en/database/tables/NewsFeedItem.png)

@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "AssociateProjectStaticSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.AssociateProjectSelectionStaticProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.AssociateProjectSelectionStaticProvider">SuperOffice.CRM.ArchiveLists.Archive.AssociateProjectSelectionStaticProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
 | Name | Description |
@@ -92,12 +92,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/AssociateProjectStaticSelection?$select=imageThumbnail,projectAssociate/title
+GET /api/v1/archive/AssociateProjectStaticSelection?$select=activeErpLinks,imageThumbnail,projectAssociate/title
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

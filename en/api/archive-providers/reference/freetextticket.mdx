@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "FreetextTicket"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.FreetextTicketResultProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.FreetextTicketResultProvider">SuperOffice.CRM.ArchiveLists.FreetextTicketResultProvider</see> inside NetServer's SODatabase assembly.
 
 Combined multi-query ticket search provider supporting freetext and finding ticket by ID.
 
@@ -796,12 +796,12 @@ Combined multi-query ticket search provider supporting freetext and finding tick
 ## Sample
 
 ```http!
-GET /api/v1/archive/FreetextTicket?$select=createdDate,readByOwner,status,ownedBy/isLocation,person/personAddress/formattedMultiLineAddress
+GET /api/v1/archive/FreetextTicket?$select=ticketStatusId,person/correspondingAssociate/middleName,person/personExtra/x_person_date
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

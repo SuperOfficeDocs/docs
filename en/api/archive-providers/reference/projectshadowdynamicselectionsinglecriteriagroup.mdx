@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "ProjectShadowDynamicSelectionSingleCriteriaGroup"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionDynamicProviderSingleCriteriaGroup inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionDynamicProviderSingleCriteriaGroup">SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionDynamicProviderSingleCriteriaGroup</see> inside NetServer's SODatabase assembly.
 
 Shadow contact provider for the dynamic Project provider.
 
@@ -825,12 +825,12 @@ Shadow contact provider for the dynamic Project provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectShadowDynamicSelectionSingleCriteriaGroup?$select=projectAssociate/associateDbId,sale/type,appointment/appointmentUdef/SuperOffice:3,projectMember/email/emailAddress,projectMember/personExtra/x_person_time
+GET /api/v1/archive/ProjectShadowDynamicSelectionSingleCriteriaGroup?$select=projectUdef/SuperOffice:3,appointment/appointmentUdef/SuperOffice:7,appointment/associate/ejUserId,document/snum,projectMember/correspondingAssociate/mrMrs
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "ProjectShadowSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionProvider">SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionProvider</see> inside NetServer's SODatabase assembly.
 
 Shadow contact provider for the Project provider.
 
@@ -832,12 +832,12 @@ Shadow contact provider for the Project provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectShadowSelection?$select=projectPublish/isPublished,projectAssociate/lastName,sale/stageRank,appointment/booking,appointment/associate/associateDbId
+GET /api/v1/archive/ProjectShadowSelection?$select=updatedByFullName,saintDirection,document/associate/contactDepartment,projectMember/correspondingAssociate/firstName,projectMember/country
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

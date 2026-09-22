@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "TicketShadowSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.TicketShadowSelectionProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.TicketShadowSelectionProvider">SuperOffice.CRM.ArchiveLists.Archive.TicketShadowSelectionProvider</see> inside NetServer's SODatabase assembly.
 
 Shadow contact provider for the ticket provider.
 
@@ -800,12 +800,12 @@ Shadow contact provider for the ticket provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketShadowSelection?$select=createdBy/personId,person/contactId,person/personCategoryGroup,person/personAssociate/title,person/personAssociate/assocName
+GET /api/v1/archive/TicketShadowSelection?$select=createdBy/credentialDisplayValue,person/personUdef/SuperOffice:8,person/correspondingAssociate/contactName,sale/associate/ejUserId,project/projectAssociate/title
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

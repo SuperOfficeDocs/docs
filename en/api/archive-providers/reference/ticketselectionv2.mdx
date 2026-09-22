@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "TicketSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.TicketSelectionProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.TicketSelectionProviderV2">SuperOffice.CRM.ArchiveLists.Archive.TicketSelectionProviderV2</see> inside NetServer's SODatabase assembly.
 
 This is the archive Provider for the Selection ticket archive.
 
@@ -800,12 +800,12 @@ This is the archive Provider for the Selection ticket archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketSelectionV2?$select=createdBy/role,ownedBy/contactFullName,person/personPrivate/description,person/personAddress/county,person/withdrawnEmarketingConsent
+GET /api/v1/archive/TicketSelectionV2?$select=person/restrictionAddress/city,person/restrictionAddress/zip,person/correspondingAssociate/isLocation,contact/contactUdef/SuperOffice:1
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

@@ -1,6 +1,6 @@
 ---
 title: AppointmentShadowDynamicSelectionV2
-description: Appointment shadow selection archive with OR-able selection groups. Each group is represented with the AppointmentShadowSelectionDynamicProviderSingleCriteriaGroup.
+description: Appointment shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.AppointmentShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 keywords: AppointmentShadowDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,9 +9,9 @@ envir: onsite, online
 
 ## "AppointmentShadowDynamicSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.AppointmentShadowSelectionDynamicProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.AppointmentShadowSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.AppointmentShadowSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
 
-Appointment shadow selection archive with OR-able selection groups. Each group is represented with the [AppointmentShadowSelectionDynamicProviderSingleCriteriaGroup](./appointmentshadowdynamicselectionsinglecriteriagroup).
+Appointment shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.AppointmentShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
 | Name | Description |
@@ -757,12 +757,12 @@ Appointment shadow selection archive with OR-able selection groups. Each group i
 ## Sample
 
 ```http!
-GET /api/v1/archive/AppointmentShadowDynamicSelectionV2?$select=appointmentId,contact/streetAddress/city,contact/contactAssociate/ejUserId,person/personPrivate/description,person/restrictionAddress/formattedAddress
+GET /api/v1/archive/AppointmentShadowDynamicSelectionV2?$select=rowKind,contact/deletedDate,contact/NumberOfNotCompletedTicketsInPeriod,person/leadstatusRank,person/personUdef/SuperOffice:8
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "AppointmentStaticSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.AppointmentSelectionStaticProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.AppointmentSelectionStaticProviderV2">SuperOffice.CRM.ArchiveLists.Archive.AppointmentSelectionStaticProviderV2</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
 | Name | Description |
@@ -757,12 +757,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/AppointmentStaticSelectionV2?$select=contact/updatedByFullName,contact/postAddress/formattedMultiLineAddress,person/personAddress/county,person/personAssociate/personId,person/personAssociate/contactName
+GET /api/v1/archive/AppointmentStaticSelectionV2?$select=updatedDate,contact/registeredByFullName,contact/contactExtra/x_contact_hidden_integer,sale/associate/ejStatus
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

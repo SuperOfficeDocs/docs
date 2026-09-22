@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "Relation"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.RelationProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.RelationProvider">SuperOffice.CRM.ArchiveLists.RelationProvider</see> inside NetServer's SODatabase assembly.
 
 Data provider class for the 'Relation' archive under the company card. This class combines output from
 the up to eight basic sub-providers (CC, PC, PP and CP plus their reversed cousins) into one data stream.
@@ -575,12 +575,12 @@ the up to eight basic sub-providers (CC, PC, PP and CP plus their reversed cousi
 ## Sample
 
 ```http!
-GET /api/v1/archive/Relation?$select=relationId,source/personAssociateFullName,target/contactExtra/x_contact_time,target/SaintStatus2,source/email/emailLastBounce
+GET /api/v1/archive/Relation?$select=source/personCountryId,target/contactExtra/x_contact_request_relation,target/streetAddress/wgs84latitude
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

@@ -1,6 +1,6 @@
 ---
 title: DocumentDynamicSelectionV2
-description: Document selection archive with OR-able selection groups. Each group is represented with the DocumentSelectionDynamicProviderSingleCriteriaGroup.
+description: Document selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.DocumentSelectionDynamicProviderSingleCriteriaGroup" />.
 keywords: DocumentDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,9 +9,9 @@ envir: onsite, online
 
 ## "DocumentDynamicSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.DocumentSelectionDynamicProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.DocumentSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.DocumentSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
 
-Document selection archive with OR-able selection groups. Each group is represented with the [DocumentSelectionDynamicProviderSingleCriteriaGroup](./documentdynamicselectionsinglecriteriagroup).
+Document selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.DocumentSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
 | Name | Description |
@@ -733,12 +733,12 @@ Document selection archive with OR-able selection groups. Each group is represen
 ## Sample
 
 ```http!
-GET /api/v1/archive/DocumentDynamicSelectionV2?$select=mailMergeDraft,person/personCountryId,person/correspondingAssociate/role,contact/restrictionAddress/county,contact/contactAssociate/contactDepartment
+GET /api/v1/archive/DocumentDynamicSelectionV2?$select=person/personUpdatedByFullName,contact/hasInterests,contact/business,contact/streetAddress/zip,sale/saleTypeCategory
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

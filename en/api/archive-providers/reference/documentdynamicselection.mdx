@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "DocumentDynamicSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.DocumentSelectionDynamicProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.DocumentSelectionDynamicProvider">SuperOffice.CRM.ArchiveLists.Archive.DocumentSelectionDynamicProvider</see> inside NetServer's SODatabase assembly.
 
 Document selection archive using the selectionId as criterionmapping.
 
@@ -733,12 +733,12 @@ Document selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/DocumentDynamicSelection?$select=subject,person/personAssociateId,person/personAssociate/assocName,contact/restrictionAddress/formattedAddress,contact/contactAssociate/isActive
+GET /api/v1/archive/DocumentDynamicSelection?$select=person/email/emailProtocol,person/personExtra/y_rental/x_end,person/personAssociate/ejUserId,person/hasStoreConsent,contact/saintIntention
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

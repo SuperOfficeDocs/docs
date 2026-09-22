@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "SaleGuideAppointment"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SaleGuideAppointmentProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SaleGuideAppointmentProvider">SuperOffice.CRM.ArchiveLists.SaleGuideAppointmentProvider</see> inside NetServer's SODatabase assembly.
 
 Specific provider for Sale Guide Items of type Appointment
 
@@ -774,12 +774,12 @@ to drive the sentry calculations, as well as the specialization with the correct
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleGuideAppointment?$select=appointmentInstance/contact/postAddress/addressId,appointmentInstance/person/correspondingAssociate/isLocation,appointmentInstance/appointmentUdef/SuperOffice:8,appointmentInstance/project/projectUrl/URLDescription,appointmentInstance/project/NumberOfActivitiesInPeriod
+GET /api/v1/archive/SaleGuideAppointment?$select=appointmentInstance/contact/streetAddress/state,appointmentInstance/contact/LastSale,appointmentInstance/person/personPrivate/description,appointmentInstance/person/restrictionAddress/addressId,appointmentInstance/project/SaintStatus3
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

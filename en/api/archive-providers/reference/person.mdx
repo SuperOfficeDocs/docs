@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "Person"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.PersonProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.PersonProvider">SuperOffice.CRM.ArchiveLists.PersonProvider</see> inside NetServer's SODatabase assembly.
 
 This is the archive Provide for the Person Archive of the Contact Panel - or to use GUI terminology, the Contact archive of the Company panel.
 It provides two entities, person and retiredPerson, and a large number of columns. Through the constructor one can choose to include Contact
@@ -848,12 +848,12 @@ table data; this will also pull in contact udef and related fields.
 ## Sample
 
 ```http!
-GET /api/v1/archive/Person?$select=hasCompany,personSourceRelation/whenUpdatedByWorkflow,correspondingAssociate/ejUserId,personContact/postAddress/formattedMultiLineAddress,personContact/contactAssociate/ejDisplayName
+GET /api/v1/archive/Person?$select=personContact/postAddress/formattedAddress,personContact/streetAddress/city,personContact/contactAssociate/contactId,request/realTimeSpentQueue,request/content
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "LinksAppointments"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.LinksAppointmentProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.LinksAppointmentProvider">SuperOffice.CRM.ArchiveLists.LinksAppointmentProvider</see> inside NetServer's SODatabase assembly.
 
 Link data provider for appointments, handles both addressing by source or by destination (not both at the same time!)
 
@@ -764,12 +764,12 @@ Link data provider for appointments, handles both addressing by source or by des
 ## Sample
 
 ```http!
-GET /api/v1/archive/LinksAppointments?$select=location,contact/restrictionAddress/line2,contact/NumberOfActivities,contact/saintActivityType,person/personExtra/y_rental/x_amount
+GET /api/v1/archive/LinksAppointments?$select=appointmentPublish/isPublished,person/personRegisteredByFullName,person/restrictionAddress/wgs84latitude,person/personUdef/SuperOffice:7,person/correspondingAssociate/isActiveText
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

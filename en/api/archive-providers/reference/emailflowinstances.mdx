@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "EmailFlowInstances"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.EmailFlowInstanceProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.EmailFlowInstanceProvider">SuperOffice.CRM.ArchiveLists.EmailFlowInstanceProvider</see> inside NetServer's SODatabase assembly.
 
 Archive of Email flow Instances.
 Lists all email flow Instances
@@ -511,12 +511,12 @@ Lists all email flow Instances
 ## Sample
 
 ```http!
-GET /api/v1/archive/EmailFlowInstances?$select=person/retired,person/supportAssociateFullName,person/personAssociate/mrMrs,contact/email/emailDescription,contact/contactAssociate/credentialDisplayValue
+GET /api/v1/archive/EmailFlowInstances?$select=workflowInstanceLastCommunicationStatus,emailFlow/workflowAssociate/personEmail,person/correspondingAssociate/contactCategory
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

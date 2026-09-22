@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "QuoteApproval"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.QuoteApprovalProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.QuoteApprovalProvider">SuperOffice.CRM.ArchiveLists.QuoteApprovalProvider</see> inside NetServer's SODatabase assembly.
 
 Retrieves pending sale quotes for current associate with state approved, denied, approval needed or approval requested
 
@@ -53,12 +53,12 @@ Retrieves pending sale quotes for current associate with state approved, denied,
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteApproval?$select=quoteOwnerAssociateName,quoteVersionState,amount
+GET /api/v1/archive/QuoteApproval?$select=quoteVersionState,amount
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

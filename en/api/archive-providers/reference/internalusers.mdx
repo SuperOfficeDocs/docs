@@ -1,6 +1,6 @@
 ---
 title: InternalUsers
-description: Concrete provider for Internal Users - our own employees. See UsersProviderBase for
+description: Concrete provider for Internal Users - our own employees. See <see cref="T -SuperOffice.CRM.ArchiveLists.UsersProviderBase" /> for
 keywords: InternalUsers archive provider
 generated: true
 content_type: reference
@@ -9,9 +9,9 @@ envir: onsite, online
 
 ## "InternalUsers"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.InternalUsersProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.InternalUsersProvider">SuperOffice.CRM.ArchiveLists.InternalUsersProvider</see> inside NetServer's SODatabase assembly.
 
-Concrete provider for Internal Users - our own employees. See UsersProviderBase for
+Concrete provider for Internal Users - our own employees. See <see cref="T:SuperOffice.CRM.ArchiveLists.UsersProviderBase" /> for
 the actual functionality of the provider.
 
 ## Supported Entities
@@ -79,12 +79,12 @@ the actual functionality of the provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/InternalUsers?$select=contactId,usergroup
+GET /api/v1/archive/InternalUsers?$select=getAllRows,contactId,usergroup
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

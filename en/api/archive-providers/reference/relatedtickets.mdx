@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "RelatedTickets"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.RelatedTicketsProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.RelatedTicketsProvider">SuperOffice.CRM.ArchiveLists.RelatedTicketsProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
 | Name | Description |
@@ -797,12 +797,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Rela
 ## Sample
 
 ```http!
-GET /api/v1/archive/RelatedTickets?$select=createdByWorkflow,person/personUdef/SuperOffice:11,contact/activeErpLinks,contact/contactAssociate/isActive,sale/stageId
+GET /api/v1/archive/RelatedTickets?$select=person/personAssociate/isLocation,person/withdrawnEmarketingConsent,contact/contactExtra/y_organization/x_name,sale/saleUdef/SuperOffice:8
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

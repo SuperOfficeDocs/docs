@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "Invitation"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.InvitationProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.InvitationProvider">SuperOffice.CRM.ArchiveLists.InvitationProvider</see> inside NetServer's SODatabase assembly.
 
 Invitation provider multichannel combiner, consisting of simple, cancelled, rejected, repeating and response invitations. You can also
 call up appointments explicitly through the Explicit provider.
@@ -768,12 +768,12 @@ because someone may explicitly request an instance an a recurring booking, so th
 ## Sample
 
 ```http!
-GET /api/v1/archive/Invitation?$select=saleId,excludeParticipants,person/leadstatusRank,person/personExtra/x_person_longtext,person/correspondingAssociate/locationAddress
+GET /api/v1/archive/Invitation?$select=recordType,person/restrictionAddress/formattedMultiLineAddress,person/personExtra/x_person_date,project/status,project/description
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

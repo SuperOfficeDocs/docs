@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "FindSale"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.FindSaleProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.FindSaleProvider">SuperOffice.CRM.ArchiveLists.FindSaleProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
 | Name | Description |
@@ -1343,12 +1343,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Find
 ## Sample
 
 ```http!
-GET /api/v1/archive/FindSale?$select=saleStatus,hasGuide,person/personRegisteredBy,person/personAddress/city,contact/postAddress/formattedAddress
+GET /api/v1/archive/FindSale?$select=updatedDate,person/title,person/createdByForm,person/restrictionAddress/line3,person/restrictionAddress/city
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

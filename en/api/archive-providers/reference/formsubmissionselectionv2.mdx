@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "FormSubmissionSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionSelectionProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionSelectionProviderV2">SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionSelectionProviderV2</see> inside NetServer's SODatabase assembly.
 
 This is the archive Provider for the Selection FormSubmission archive.
 
@@ -491,12 +491,12 @@ This is the archive Provider for the Selection FormSubmission archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormSubmissionSelectionV2?$select=person/correspondingAssociate/title,contact/contactDeleted,contact/saintSaleStatus
+GET /api/v1/archive/FormSubmissionSelectionV2?$select=person/searchPhone/formattedNumber,person/personAssociate/lastName,person/personAssociate/assocTooltip,person/personAssociate/isLocation,person/correspondingAssociate/contactCategory
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

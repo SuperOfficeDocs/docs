@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "QuoteLineShadowStaticSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.QuoteLineShadowSelectionStaticProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.QuoteLineShadowSelectionStaticProvider">SuperOffice.CRM.ArchiveLists.Archive.QuoteLineShadowSelectionStaticProvider</see> inside NetServer's SODatabase assembly.
 
 Shadow contact provider for the static quoteline provider.
 
@@ -781,12 +781,12 @@ Shadow contact provider for the static quoteline provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteLineShadowStaticSelection?$select=quantity,alternative/version/quote/sale/saleNumber,alternative/version/quote/sale/person/personExtra/x_person_time,alternative/version/quote/sale/person/correspondingAssociate/title,alternative/version/quote/sale/contact/searchPhone/description
+GET /api/v1/archive/QuoteLineShadowStaticSelection?$select=alternative/version/quote/sale/person/personSource,alternative/version/quote/sale/person/supportAssociateFullName,alternative/version/quote/sale/person/correspondingAssociate/credentialDisplayValue,alternative/version/quote/sale/person/correspondingAssociate/isActiveText,alternative/version/quote/sale/contact/contactUdef/SuperOffice:12
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

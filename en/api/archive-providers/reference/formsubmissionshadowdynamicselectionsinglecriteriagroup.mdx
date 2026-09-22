@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "FormSubmissionShadowDynamicSelectionSingleCriteriaGroup"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionShadowSelectionDynamicProviderSingleCriteriaGroup inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionShadowSelectionDynamicProviderSingleCriteriaGroup">SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionShadowSelectionDynamicProviderSingleCriteriaGroup</see> inside NetServer's SODatabase assembly.
 
 Shadow contact provider for the dynamic appointmnet provider.
 
@@ -486,12 +486,12 @@ Shadow contact provider for the dynamic appointmnet provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormSubmissionShadowDynamicSelectionSingleCriteriaGroup?$select=person/correspondingAssociate/title,contact/contactDeleted,contact/saintSaleStatus
+GET /api/v1/archive/FormSubmissionShadowDynamicSelectionSingleCriteriaGroup?$select=person/searchPhone/formattedNumber,person/personAssociate/lastName,person/personAssociate/assocTooltip,person/personAssociate/isLocation,person/correspondingAssociate/contactCategory
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

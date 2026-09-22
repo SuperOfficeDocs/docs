@@ -9,10 +9,10 @@ envir: onsite, online
 
 ## "Sale"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SaleProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SaleProvider">SuperOffice.CRM.ArchiveLists.SaleProvider</see> inside NetServer's SODatabase assembly.
 
 Archive provider for Sale type activities. This provider can be used on its own, or can form part of the
-[ActivityArchiveProvider](./activity), which mixes sales, appointments, tasks and documents.
+<see cref="T:SuperOffice.CRM.ArchiveLists.ActivityArchiveProvider" />, which mixes sales, appointments, tasks and documents.
 
 ## Supported Entities
 | Name | Description |
@@ -1157,12 +1157,12 @@ Archive provider for Sale type activities. This provider can be used on its own,
 ## Sample
 
 ```http!
-GET /api/v1/archive/Sale?$select=person/personSource,person/email/emailId,person/personExtra/x_person_shorttext,person/correspondingAssociate/assocName,person/correspondingAssociate/isActive
+GET /api/v1/archive/Sale?$select=person/personCountryId,person/correspondingAssociate/portraitThumbnail,contact/activeErpLinks,contact/email/emailId,contact/LastCompletedSale
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

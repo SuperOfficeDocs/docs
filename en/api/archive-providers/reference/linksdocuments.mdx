@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "LinksDocuments"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.LinksDocumentProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.LinksDocumentProvider">SuperOffice.CRM.ArchiveLists.LinksDocumentProvider</see> inside NetServer's SODatabase assembly.
 
 Link data provider for documents, handles both addressing by source or by destination (not both at the same time!)
 
@@ -741,12 +741,12 @@ Link data provider for documents, handles both addressing by source or by destin
 ## Sample
 
 ```http!
-GET /api/v1/archive/LinksDocuments?$select=personId,person/correspondingAssociate/ejDisplayName,contact/postAddress/line2,contact/NumberOfActivities,contact/LastSale
+GET /api/v1/archive/LinksDocuments?$select=person/portraitThumbnail,contact/searchPhone/description,contact/postAddress/addressId,associate/contactId,documentUdef/SuperOffice:4
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

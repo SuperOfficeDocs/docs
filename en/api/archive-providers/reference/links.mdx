@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "Links"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.LinksProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.LinksProvider">SuperOffice.CRM.ArchiveLists.LinksProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
 | Name | Description |
@@ -1536,12 +1536,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Link
 ## Sample
 
 ```http!
-GET /api/v1/archive/Links?$select=contact/companyCategoryRank,contact/updatedByFullName,contact/restrictionAddress/line2,contact/contactAssociate/locationAddress,contact/NumberOfTicketsInPeriod
+GET /api/v1/archive/Links?$select=getNoRows,contact/mainContact,contact/contactAssociate/contactDepartment,contact/contactAssociate/isActiveText,contact/saintActivityType
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

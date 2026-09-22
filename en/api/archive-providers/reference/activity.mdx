@@ -5,12 +5,11 @@ keywords: Activity archive provider
 generated: true
 content_type: reference
 envir: onsite, online
-mode: "wide"
 ---
 
 ## "Activity"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.ActivityArchiveProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.ActivityArchiveProvider">SuperOffice.CRM.ArchiveLists.ActivityArchiveProvider</see> inside NetServer's SODatabase assembly.
 
 Activity archive provider that performs no filtering. This archive is not present anywhere in the standard six.web GUI.
 
@@ -783,12 +782,12 @@ Activity archive provider that performs no filtering. This archive is not presen
 ## Sample
 
 ```http!
-GET /api/v1/archive/Activity?$select=icon,person/personUrl/URLAddress,person/correspondingAssociate/locationAddress,contact/contactAssociate/personId,contact/contactAssociate/usergroupId
+GET /api/v1/archive/Activity?$select=associateId,person/personPrivate/description,person/email/emailLastSent,person/correspondingAssociate/assocName,contact/contactUdef/SuperOffice:8
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

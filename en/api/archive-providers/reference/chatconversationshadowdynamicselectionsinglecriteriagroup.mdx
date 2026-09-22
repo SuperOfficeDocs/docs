@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "ChatConversationShadowDynamicSelectionSingleCriteriaGroup"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ChatConversationShadowSelectionDynamicProviderSingleCriteriaGroup inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ChatConversationShadowSelectionDynamicProviderSingleCriteriaGroup">SuperOffice.CRM.ArchiveLists.Archive.ChatConversationShadowSelectionDynamicProviderSingleCriteriaGroup</see> inside NetServer's SODatabase assembly.
 
 Shadow contact provider for the dynamic appointmnet provider.
 
@@ -493,12 +493,12 @@ Shadow contact provider for the dynamic appointmnet provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ChatConversationShadowDynamicSelectionSingleCriteriaGroup?$select=person/correspondingAssociate/credentialDisplayValue,contact/contactAssociate/firstName,person/personAddress/formattedMultiLineAddress
+GET /api/v1/archive/ChatConversationShadowDynamicSelectionSingleCriteriaGroup?$select=person/phone/formattedNumber,contact/email/emailBounceCount,contact/LastCompletedSale
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

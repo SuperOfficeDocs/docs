@@ -1,6 +1,6 @@
 ---
 title: QuoteLineShadowDynamicSelectionV2
-description: QuoteLine shadow selection archive with OR-able selection groups. Each group is represented with the QuoteLineShadowSelectionDynamicProviderSingleCriteriaGroup.
+description: QuoteLine shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.QuoteLineShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 keywords: QuoteLineShadowDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,9 +9,9 @@ envir: onsite, online
 
 ## "QuoteLineShadowDynamicSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.QuoteLineShadowSelectionDynamicProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.QuoteLineShadowSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.QuoteLineShadowSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
 
-QuoteLine shadow selection archive with OR-able selection groups. Each group is represented with the [QuoteLineShadowSelectionDynamicProviderSingleCriteriaGroup](./quotelineshadowdynamicselectionsinglecriteriagroup).
+QuoteLine shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.QuoteLineShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
 | Name | Description |
@@ -776,12 +776,12 @@ QuoteLine shadow selection archive with OR-able selection groups. Each group is 
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteLineShadowDynamicSelectionV2?$select=alternative/version/quote/sale/person/personUdef/SuperOffice:3,alternative/version/quote/sale/person/personExtra/y_rental/x_start,alternative/version/quote/sale/person/withdrawnStoreConsent,alternative/version/quote/sale/project/projectUrl/URLDescription,alternative/version/quote/sale/project/NumberOfNotCompletedSalesInPeriod
+GET /api/v1/archive/QuoteLineShadowDynamicSelectionV2?$select=alternative/version/quote/sale/originalStage,alternative/version/quote/sale/stageRank,alternative/version/quote/sale/person/ticketPriority,alternative/version/quote/sale/person/personAssociate/ejUserId,alternative/version/quote/sale/contact/email/emailDescription
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

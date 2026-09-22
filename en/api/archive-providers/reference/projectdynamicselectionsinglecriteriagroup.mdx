@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "ProjectDynamicSelectionSingleCriteriaGroup"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionDynamicProviderSingleCriteriaGroup inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionDynamicProviderSingleCriteriaGroup">SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionDynamicProviderSingleCriteriaGroup</see> inside NetServer's SODatabase assembly.
 
 Project selection archive using the selectionId as criterionmapping.
 
@@ -825,12 +825,12 @@ Project selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectDynamicSelectionSingleCriteriaGroup?$select=document/subject,projectMember/function,projectMember/restrictionAddress/state,projectMember/stop
+GET /api/v1/archive/ProjectDynamicSelectionSingleCriteriaGroup?$select=type,projectPublish/publishedTo,sale/description,sale/associate/locationAddress,document/registeredDate
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

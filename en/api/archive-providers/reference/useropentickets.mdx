@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "UserOpenTickets"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.UserOpenTicketsProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.UserOpenTicketsProvider">SuperOffice.CRM.ArchiveLists.UserOpenTicketsProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
 | Name | Description |
@@ -793,12 +793,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.User
 ## Sample
 
 ```http!
-GET /api/v1/archive/UserOpenTickets?$select=readStatus,ownedBy/title,person/correspondingAssociate/associateDbId,person/correspondingAssociate/ejStatus,contact/registeredDate
+GET /api/v1/archive/UserOpenTickets?$select=has_attachment,person/portraitThumbnail,person/personAssociate/associateDbId,person/personAssociate/isLocation,person/correspondingAssociate/otherGroups
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

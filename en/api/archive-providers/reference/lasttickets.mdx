@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "LastTickets"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.LastTicketsProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.LastTicketsProvider">SuperOffice.CRM.ArchiveLists.LastTicketsProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
 | Name | Description |
@@ -794,12 +794,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Last
 ## Sample
 
 ```http!
-GET /api/v1/archive/LastTickets?$select=person/hasInterests,contact/forceCompany,contact/email/emailDescription,contact/streetAddress/city
+GET /api/v1/archive/LastTickets?$select=person/correspondingAssociate/ejUserId,contact/department,contact/contactAssociate/contactCategory,contact/contactAssociate/assocTooltip,project/text
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

@@ -1,6 +1,6 @@
 ---
 title: DocumentShadowDynamicSelectionV2
-description: Document shadow selection archive with OR-able selection groups. Each group is represented with the DocumentShadowSelectionDynamicProviderSingleCriteriaGroup.
+description: Document shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.DocumentShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 keywords: DocumentShadowDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,9 +9,9 @@ envir: onsite, online
 
 ## "DocumentShadowDynamicSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.DocumentShadowSelectionDynamicProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.DocumentShadowSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.DocumentShadowSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
 
-Document shadow selection archive with OR-able selection groups. Each group is represented with the [DocumentShadowSelectionDynamicProviderSingleCriteriaGroup](./documentshadowdynamicselectionsinglecriteriagroup).
+Document shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.DocumentShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
 | Name | Description |
@@ -733,12 +733,12 @@ Document shadow selection archive with OR-able selection groups. Each group is r
 ## Sample
 
 ```http!
-GET /api/v1/archive/DocumentShadowDynamicSelectionV2?$select=person/personAssociate/isActiveText,contact/categoryGroup,contact/postAddress/formattedAddress,contact/restrictionAddress/county,contact/saintTicketCategory
+GET /api/v1/archive/DocumentShadowDynamicSelectionV2?$select=time,person/personAssociate/contactName,contact/contactAssociate/usergroup,contact/contactExtra/x_contact_short_dropdown,associate/ejStatus
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

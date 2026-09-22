@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "QuoteVersionAttachment"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.QuoteVersionAttachmentProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.QuoteVersionAttachmentProvider">SuperOffice.CRM.ArchiveLists.QuoteVersionAttachmentProvider</see> inside NetServer's SODatabase assembly.
 
 This is the archive Provider for quote version attachments.
 
@@ -111,12 +111,12 @@ This is the archive Provider for quote version attachments.
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteVersionAttachment?$select=quoteVersionId,name,associate/firstName
+GET /api/v1/archive/QuoteVersionAttachment?$select=name,associate/firstName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

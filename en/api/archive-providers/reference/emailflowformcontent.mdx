@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "EmailFlowFormContent"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.EmailFlowFormContentProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.EmailFlowFormContentProvider">SuperOffice.CRM.ArchiveLists.EmailFlowFormContentProvider</see> inside NetServer's SODatabase assembly.
 
 Email flow form content.
 Lists all email flow form content
@@ -64,12 +64,12 @@ Lists all email flow form content
 ## Sample
 
 ```http!
-GET /api/v1/archive/EmailFlowFormContent?$select=registeredBy,emailFlow/thumbnail
+GET /api/v1/archive/EmailFlowFormContent?$select=updatedDate,registeredBy,emailFlow/emailFlowId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

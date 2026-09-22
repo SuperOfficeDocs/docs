@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "AppointmentShadowDynamicSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.AppointmentShadowSelectionDynamicProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.AppointmentShadowSelectionDynamicProvider">SuperOffice.CRM.ArchiveLists.Archive.AppointmentShadowSelectionDynamicProvider</see> inside NetServer's SODatabase assembly.
 
 Shadow contact provider for the dynamic appointmnet provider.
 
@@ -757,12 +757,12 @@ Shadow contact provider for the dynamic appointmnet provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/AppointmentShadowDynamicSelection?$select=createdByWorkflow,contact/registeredDate,contact/contactAssociate/isLocation,contact/SaintStatus2,person/personCategoryGroup
+GET /api/v1/archive/AppointmentShadowDynamicSelection?$select=selectionId,personId,registeredByFullName,contact/email/emailAddress,person/personAddress/wgs84latitude
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

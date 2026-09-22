@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "DocumentStaticSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.DocumentSelectionStaticProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.DocumentSelectionStaticProviderV2">SuperOffice.CRM.ArchiveLists.Archive.DocumentSelectionStaticProviderV2</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
 | Name | Description |
@@ -734,12 +734,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/DocumentStaticSelectionV2?$select=person/correspondingAssociate/isLocation,project/LastCompletedActivity,sale/userGroup
+GET /api/v1/archive/DocumentStaticSelectionV2?$select=person/personSource,person/email/emailBounceCount,contact/contactAssociate/middleName,documentUdef/SuperOffice:8,sale/time
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

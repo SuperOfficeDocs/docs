@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "LinksPerson"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.LinksPersonProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.LinksPersonProvider">SuperOffice.CRM.ArchiveLists.LinksPersonProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
 | Name | Description |
@@ -129,12 +129,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Link
 ## Sample
 
 ```http!
-GET /api/v1/archive/LinksPerson?$select=icon,contact/orgnr,destinationPersonRestrictionId
+GET /api/v1/archive/LinksPerson?$select=contact/country,birthMonth,personAssociateFullName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "ProjectSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionProviderV2">SuperOffice.CRM.ArchiveLists.Archive.ProjectSelectionProviderV2</see> inside NetServer's SODatabase assembly.
 
 This is the archive Provider for the Selection Project archive.
 
@@ -832,12 +832,12 @@ This is the archive Provider for the Selection Project archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectSelectionV2?$select=sale/competitor,sale/saleTypeCategory,sale/associate/contactFullName,sale/associate/assocType,projectMember/birthdate
+GET /api/v1/archive/ProjectSelectionV2?$select=number,projectUdef/SuperOffice:4,sale/associate/usergroupId,appointment/icon,appointment/excludeParticipants
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

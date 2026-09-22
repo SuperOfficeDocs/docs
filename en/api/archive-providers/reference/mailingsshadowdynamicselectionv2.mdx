@@ -1,6 +1,6 @@
 ---
 title: MailingsShadowDynamicSelectionV2
-description: Mailings shadow selection archive with OR-able selection groups. Each group is represented with the MailingsShadowSelectionDynamicProviderSingleCriteriaGroup.
+description: Mailings shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.MailingsShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 keywords: MailingsShadowDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,9 +9,9 @@ envir: onsite, online
 
 ## "MailingsShadowDynamicSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.MailingsShadowSelectionDynamicProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.MailingsShadowSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.MailingsShadowSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
 
-Mailings shadow selection archive with OR-able selection groups. Each group is represented with the [MailingsShadowSelectionDynamicProviderSingleCriteriaGroup](./mailingsshadowdynamicselectionsinglecriteriagroup).
+Mailings shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.MailingsShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
 | Name | Description |
@@ -680,12 +680,12 @@ Mailings shadow selection archive with OR-able selection groups. Each group is r
 ## Sample
 
 ```http!
-GET /api/v1/archive/MailingsShadowDynamicSelectionV2?$select=mailingAddr/contact/url/URLDescription,mailingAddr/contact/NumberOfNotCompletedActivities,mailingAddr/contact/SaintStatus1,mailingAddr/person/correspondingAssociate/assocName,mailingAddr/person/correspondingAssociate/ejDisplayName
+GET /api/v1/archive/MailingsShadowDynamicSelectionV2?$select=mailingAddr/contact/streetAddress/city,mailingAddr/person/personPrivate/description,emailFlow/mediumThumbnail,emailFlow/workflowAssociate/ejUserId,emailFlow/workflowAssociate/locationAddress
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

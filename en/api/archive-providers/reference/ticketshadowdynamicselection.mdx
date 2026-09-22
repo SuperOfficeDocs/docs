@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "TicketShadowDynamicSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.TicketShadowSelectionDynamicProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.TicketShadowSelectionDynamicProvider">SuperOffice.CRM.ArchiveLists.Archive.TicketShadowSelectionDynamicProvider</see> inside NetServer's SODatabase assembly.
 
 Shadow contact provider for the dynamic ticket provider.
 
@@ -797,12 +797,12 @@ Shadow contact provider for the dynamic ticket provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketShadowDynamicSelection?$select=contact/department,contact/category,contact/postAddress/line2,project/projectAssociate/title
+GET /api/v1/archive/TicketShadowDynamicSelection?$select=person/restrictionAddress/line3,person/restrictionAddress/county,person/correspondingAssociate/personEmail,contact/contactAssociate/isLocation
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

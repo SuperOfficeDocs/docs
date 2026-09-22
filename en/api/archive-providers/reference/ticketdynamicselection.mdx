@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "TicketDynamicSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.TicketSelectionDynamicProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.TicketSelectionDynamicProvider">SuperOffice.CRM.ArchiveLists.Archive.TicketSelectionDynamicProvider</see> inside NetServer's SODatabase assembly.
 
 Ticket selection archive using the selectionId as criterionmapping.
 
@@ -797,12 +797,12 @@ Ticket selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketDynamicSelection?$select=numberOfReplies,createdBy/contactFullName,ownedBy/ejStatus,person/position,person/personNoMail
+GET /api/v1/archive/TicketDynamicSelection?$select=person/personUdef/SuperOffice:3,person/personExtra/x_person_user_relation,person/personAssociate/isActive,person/subscription,contact/postAddress/county
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

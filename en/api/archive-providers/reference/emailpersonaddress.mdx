@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "emailpersonaddress"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.EmailPersonAddressProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.EmailPersonAddressProvider">SuperOffice.CRM.ArchiveLists.EmailPersonAddressProvider</see> inside NetServer's SODatabase assembly.
 
 Person subchannel for special purpose archive provider used to search for email addresses.
 
@@ -195,12 +195,12 @@ the email_id.
 ## Sample
 
 ```http!
-GET /api/v1/archive/emailpersonaddress?$select=personUpdatedBy,personAddress/addressId,personContact/restrictionAddress/wgs84latitude
+GET /api/v1/archive/emailpersonaddress?$select=personAddress/state,personCategory,personAddress/line1
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

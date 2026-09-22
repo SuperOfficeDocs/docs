@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "ChatConversationShadowSelectionCombinedV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ChatConversationShadowSelectionCombinedProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ChatConversationShadowSelectionCombinedProviderV2">SuperOffice.CRM.ArchiveLists.Archive.ChatConversationShadowSelectionCombinedProviderV2</see> inside NetServer's SODatabase assembly.
 
 Implementation of the provider for the combined selection
 
@@ -498,12 +498,12 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/ChatConversationShadowSelectionCombinedV2?$select=associate/role,contact/categoryGroup,contact/contactFax/formattedNumber,contact/restrictionAddress/line3,contact/contactAssociate/fullName
+GET /api/v1/archive/ChatConversationShadowSelectionCombinedV2?$select=associate/contactId,associate/portraitThumbnail,person/restrictionAddress/state,person/personAssociate/associateDbId,person/correspondingAssociate/lastName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "OwnerContacts"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.OwnerContactsProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.OwnerContactsProvider">SuperOffice.CRM.ArchiveLists.OwnerContactsProvider</see> inside NetServer's SODatabase assembly.
 
 Archive provider for the list of own contacts in SoAdmin
 
@@ -367,12 +367,12 @@ Archive provider for the list of own contacts in SoAdmin
 ## Sample
 
 ```http!
-GET /api/v1/archive/OwnerContacts?$select=postAddress/wgs84latitude,contactInterestIds,contactAssociate/usergroup
+GET /api/v1/archive/OwnerContacts?$select=category,contactSupportAssociate/personId,contactSupportPerson/personCategoryRank
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

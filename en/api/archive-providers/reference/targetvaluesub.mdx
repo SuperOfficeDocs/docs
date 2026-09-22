@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "TargetValueSub"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.TargetValueSubProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.TargetValueSubProvider">SuperOffice.CRM.ArchiveLists.TargetValueSubProvider</see> inside NetServer's SODatabase assembly.
 
 Archive of TargetValue - used by .
 
@@ -413,12 +413,12 @@ Archive of TargetValue - used by .
 ## Sample
 
 ```http!
-GET /api/v1/archive/TargetValueSub?$select=associate/simultaneousEjUser,contact/postAddress/line2,contact/contactAssociate/isLocation,contact/contactSupportPerson/personExtra/x_person_integer
+GET /api/v1/archive/TargetValueSub?$select=contact/email/emailBounceCount,contact/contactAssociate/personId,contact/contactSupportPerson/leadstatusRank,contact/contactSupportPerson/withdrawnEmarketingConsent,contact/contactUdef/SuperOffice:4
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

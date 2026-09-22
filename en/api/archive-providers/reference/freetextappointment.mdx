@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "FreetextAppointment"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.FreetextAppointmentResultProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.FreetextAppointmentResultProvider">SuperOffice.CRM.ArchiveLists.FreetextAppointmentResultProvider</see> inside NetServer's SODatabase assembly.
 
 Archive provider for freetext search on the Appointment entity (any kind of appointment, phone call, or task).
 
@@ -771,12 +771,12 @@ Private appointments that are not fully readable will not be shown (they are ski
 ## Sample
 
 ```http!
-GET /api/v1/archive/FreetextAppointment?$select=saleId,contact/email/emailAddress,contact/contactAssociate/assocTooltip,contact/NumberOfNotCompletedActivities,person/useAsMailingAddress
+GET /api/v1/archive/FreetextAppointment?$select=searchwords,isFree,visibleFor,contact/contactUdef/SuperOffice:7,person/correspondingAssociate/associateDbId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

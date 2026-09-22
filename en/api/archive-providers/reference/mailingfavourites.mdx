@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "mailingfavourites"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.MailingFavouritesProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.MailingFavouritesProvider">SuperOffice.CRM.ArchiveLists.MailingFavouritesProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
 | Name | Description |
@@ -171,12 +171,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Mail
 ## Sample
 
 ```http!
-GET /api/v1/archive/mailingfavourites?$select=project/associateId,project/projectEvent/hasSignOn
+GET /api/v1/archive/mailingfavourites?$select=project/saintTicketCategory,project/associateId,project/projectEvent/hasSignOn
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

@@ -1,6 +1,6 @@
 ---
 title: TicketDynamicSelectionV2
-description: Ticket selection archive with OR-able selection groups. Each group is represented with the TicketSelectionDynamicProviderSingleCriteriaGroup.
+description: Ticket selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.TicketSelectionDynamicProviderSingleCriteriaGroup" />.
 keywords: TicketDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,9 +9,9 @@ envir: onsite, online
 
 ## "TicketDynamicSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.TicketSelectionDynamicProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.TicketSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.TicketSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
 
-Ticket selection archive with OR-able selection groups. Each group is represented with the [TicketSelectionDynamicProviderSingleCriteriaGroup](./ticketdynamicselectionsinglecriteriagroup).
+Ticket selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.TicketSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
 | Name | Description |
@@ -797,12 +797,12 @@ Ticket selection archive with OR-able selection groups. Each group is represente
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketDynamicSelectionV2?$select=categoryFullName,ownedBy/simultaneousEjUser,person/mrMrs,person/personDeletedDate,person/restrictionAddress/zip
+GET /api/v1/archive/TicketDynamicSelectionV2?$select=person/middleName,person/personBusiness,person/correspondingAssociate/assocType,project/status
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

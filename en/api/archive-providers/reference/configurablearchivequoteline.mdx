@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "ConfigurableArchiveQuoteLine"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.ConfigurableArchiveQuoteLineProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.ConfigurableArchiveQuoteLineProvider">SuperOffice.CRM.ArchiveLists.ConfigurableArchiveQuoteLineProvider</see> inside NetServer's SODatabase assembly.
 
 This is the archive Provider for the QuoteLine Archive.
 
@@ -774,12 +774,12 @@ This is the archive Provider for the QuoteLine Archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ConfigurableArchiveQuoteLine?$select=alternative/extraField1,alternative/version/quote/sale/who,alternative/version/quote/sale/person/personNoMail,alternative/version/quote/sale/person/personPrivate/description,alternative/version/quote/sale/person/personAssociate/personId
+GET /api/v1/archive/ConfigurableArchiveQuoteLine?$select=erpProductKey,alternative/version/quote/sale/date,alternative/version/quote/sale/saleStatus,alternative/version/quote/sale/person/isProjectMember,alternative/version/quote/sale/person/restrictionAddress/wgs84longitude
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "ProjecthadowSelectionCombined"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionCombinedProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionCombinedProvider">SuperOffice.CRM.ArchiveLists.Archive.ProjectShadowSelectionCombinedProvider</see> inside NetServer's SODatabase assembly.
 
 Implementation of the provider for the combined selection
 
@@ -824,12 +824,12 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjecthadowSelectionCombined?$select=sale/saleCycle,appointment/type,projectMember/projectMemberId,projectMember/personAssociate/otherGroups,projectMember/contactFax/description
+GET /api/v1/archive/ProjecthadowSelectionCombined?$select=sale/stageId,appointment/userGroup,appointment/updatedBy,appointment/associate/simultaneousEjUser,projectMember/mrMrs
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

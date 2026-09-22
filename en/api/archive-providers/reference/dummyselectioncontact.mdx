@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "DummySelectionContact"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.DummySelectionContactProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.DummySelectionContactProvider">SuperOffice.CRM.ArchiveLists.Archive.DummySelectionContactProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
 | Name | Description |
@@ -576,12 +576,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/DummySelectionContact?$select=sale/associate/assocTooltip,document/updatedDate,saintTicketStatus
+GET /api/v1/archive/DummySelectionContact?$select=streetAddress/line1,contactAssociate/userName,sale/associate/userName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

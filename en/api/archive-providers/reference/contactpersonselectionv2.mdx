@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "ContactPersonSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ContactPersonSelectionProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ContactPersonSelectionProviderV2">SuperOffice.CRM.ArchiveLists.Archive.ContactPersonSelectionProviderV2</see> inside NetServer's SODatabase assembly.
 
 This is the archive Provider for the Selection contact/person archive.
 
@@ -1272,7 +1272,6 @@ This is the archive Provider for the Selection contact/person archive.
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
 |includePersonWithNoDMRestriction| *None* |Include contacts with No Mailings: Should contacts with the 'No Mailings' flag set be included|  |
-|selectionIdRequest| *None* |Selection ID: Database ID of selection which members are to be fetched from|  |
 |linkClicked/linkId| *None* |Link ID: Link ID|  |
 |linkClicked/shipmentId| *None* |ID: Displays the ID of the mailing|  |
 |formSubmission/formSubmissionId| *None* |Form submission ID: ID of the form submission record| x |
@@ -1356,6 +1355,7 @@ This is the archive Provider for the Selection contact/person archive.
 |chatSession/chatTopic/name| *None* |Name: Name| x |
 |chatSession/chatTopic/description| *None* |Description: The description of the chat channel| x |
 |chatSession/chatTopic/badgeHeader| *None* |Badge header: The value of the badge header for the chat channel| x |
+|selectionIdRequest| *None* |Selection ID: Database ID of selection which members are to be fetched from|  |
 |sale/quote/quoteId| *None* |Quote ID: SuperOffice database ID of quote record| x |
 |sale/quote/poNumber| *None* |P.O. Number: Customer's purchase order number| x |
 |sale/quote/orderComment| *None* |Comment: Customer's comment| x |
@@ -1457,12 +1457,12 @@ This is the archive Provider for the Selection contact/person archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ContactPersonSelectionV2?$select=LastCompletedActivity,NumberOfSalesInPeriod,LastDoBySale,targetRelation/country,sale/saleType
+GET /api/v1/archive/ContactPersonSelectionV2?$select=rowKind,email/emailDescription,targetRelation/updatedDate,sale/saleUdef/SuperOffice:6,personTargetRelation/supportAssociate
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

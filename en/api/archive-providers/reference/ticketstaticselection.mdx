@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "TicketStaticSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.TicketSelectionStaticProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.TicketSelectionStaticProvider">SuperOffice.CRM.ArchiveLists.Archive.TicketSelectionStaticProvider</see> inside NetServer's SODatabase assembly.
 
 Static archive Provider for a Selection of tickets archive.
 
@@ -800,12 +800,12 @@ Static archive Provider for a Selection of tickets archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketStaticSelection?$select=realTimeSpentQueue,person/personAssociate/locationAddress,contact/contactAssociate/credentialType,project/projectUrl/URLDescription
+GET /api/v1/archive/TicketStaticSelection?$select=ticketPriority/name,person/personAssociate/fullName,person/personAssociate/contactFullName,person/personAssociate/ejDisplayName,contact/contactFax/description
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

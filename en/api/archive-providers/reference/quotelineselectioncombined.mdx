@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "QuoteLineSelectionCombined"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.QuoteLineSelectionCombinedProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.QuoteLineSelectionCombinedProvider">SuperOffice.CRM.ArchiveLists.Archive.QuoteLineSelectionCombinedProvider</see> inside NetServer's SODatabase assembly.
 
 Implementation of the provider for the combined selection
 
@@ -781,12 +781,12 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/QuoteLineSelectionCombined?$select=quoteAlternativeId,contactId,alternative/version/quote/sale/person/title,alternative/version/quote/sale/person/personAssociate/contactDepartment,alternative/version/quote/sale/contact/NumberOfNotCompletedSales
+GET /api/v1/archive/QuoteLineSelectionCombined?$select=alternative/version/quote/sale/type,alternative/version/quote/sale/currency,alternative/version/quote/sale/person/personUdef/SuperOffice:10,alternative/version/quote/sale/contact/contactAssociate/contactDepartment,alternative/version/quote/sale/contact/contactExtra/x_contact_request_relation
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

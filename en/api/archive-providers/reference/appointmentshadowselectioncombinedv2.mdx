@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "AppointmentShadowSelectionCombinedV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.AppointmentShadowSelectionCombinedProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.AppointmentShadowSelectionCombinedProviderV2">SuperOffice.CRM.ArchiveLists.Archive.AppointmentShadowSelectionCombinedProviderV2</see> inside NetServer's SODatabase assembly.
 
 Implementation of the provider for the combined selection
 
@@ -759,12 +759,12 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/AppointmentShadowSelectionCombinedV2?$select=contact/orgnr,contact/postAddress/zip,contact/contactExtra/x_contact_dropdown,person/personUdef/SuperOffice:3,person/personAssociate/lastName
+GET /api/v1/archive/AppointmentShadowSelectionCombinedV2?$select=contactId,endDate,contact/contactAssociate/fullName,person/personHasInterests,person/personActiveErpLinks
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

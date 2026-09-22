@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "FormSubmissionDynamicSelectionSingleCriteriaGroup"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionSelectionDynamicProviderSingleCriteriaGroup inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionSelectionDynamicProviderSingleCriteriaGroup">SuperOffice.CRM.ArchiveLists.Archive.FormSubmissionSelectionDynamicProviderSingleCriteriaGroup</see> inside NetServer's SODatabase assembly.
 
 FormSubmission selection archive using the selectionId as criterionmapping.
 
@@ -486,12 +486,12 @@ FormSubmission selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/FormSubmissionDynamicSelectionSingleCriteriaGroup?$select=person/personAssociateId,person/personAssociate/isActiveText,person/restrictionAddress/county
+GET /api/v1/archive/FormSubmissionDynamicSelectionSingleCriteriaGroup?$select=person/personDirectFax/description,person/personUdef/SuperOffice:3,person/personAssociate/contactId,person/correspondingAssociate/firstName,contact/contactAssociate/lastName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

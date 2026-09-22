@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "RecycleTicket"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.RecycleTicketProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.RecycleTicketProvider">SuperOffice.CRM.ArchiveLists.RecycleTicketProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
 | Name | Description |
@@ -793,12 +793,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Recy
 ## Sample
 
 ```http!
-GET /api/v1/archive/RecycleTicket?$select=createdByWorkflow,ownedBy/ejStatus,person/personPrivate/description,person/personAssociate/assocName,contact/postAddress/formattedMultiLineAddress
+GET /api/v1/archive/RecycleTicket?$select=getNoRows,person/lastName,person/personActiveErpLinks,person/personUdef/SuperOffice:8,person/correspondingAssociate/isActiveText
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "ProjectMember"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.ProjectMemberProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.ProjectMemberProvider">SuperOffice.CRM.ArchiveLists.ProjectMemberProvider</see> inside NetServer's SODatabase assembly.
 
 Provider for the Project Member archive under Project
 
@@ -558,12 +558,12 @@ from the result.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectMember?$select=project/projectUdef/SuperOffice:3,person/personAddress/wgs84longitude,person/restrictionAddress/line1,person/personExtra/x_person_shorttext,person/correspondingAssociate/role
+GET /api/v1/archive/ProjectMember?$select=person/personExtra/x_person_timespan,person/legalBaseEmarketing,contact/contactAssociate/contactName,contact/contactExtra/x_contact_float
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

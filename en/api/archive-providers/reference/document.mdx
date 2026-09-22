@@ -9,10 +9,10 @@ envir: onsite, online
 
 ## "Document"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.DocumentProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.DocumentProvider">SuperOffice.CRM.ArchiveLists.DocumentProvider</see> inside NetServer's SODatabase assembly.
 
 Archive provider for Document type activities. This provider can be used on its own, or can form part of the
-[ActivityArchiveProvider](./activity), which mixes Documents, appointments, tasks and documents.
+<see cref="T:SuperOffice.CRM.ArchiveLists.ActivityArchiveProvider" />, which mixes Documents, appointments, tasks and documents.
 
 ## Supported Entities
 | Name | Description |
@@ -732,12 +732,12 @@ Archive provider for Document type activities. This provider can be used on its 
 ## Sample
 
 ```http!
-GET /api/v1/archive/Document?$select=mailMergeDraft,person/personCategory,person/personAssociate/assocType,contact/url/URLAddress,contact/contactAssociate/portraitThumbnail
+GET /api/v1/archive/Document?$select=contact/contactNoMail,contact/contactAssociate/contactDepartment,project/projectAssociate/personEmail,project/saintActivityType,documentUdef/SuperOffice:3
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

@@ -1,6 +1,6 @@
 ---
 title: TicketShadowDynamicSelectionV2
-description: Ticket shadow selection archive with OR-able selection groups. Each group is represented with the TicketShadowSelectionDynamicProviderSingleCriteriaGroup.
+description: Ticket shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.TicketShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 keywords: TicketShadowDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,9 +9,9 @@ envir: onsite, online
 
 ## "TicketShadowDynamicSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.TicketShadowSelectionDynamicProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.TicketShadowSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.TicketShadowSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
 
-Ticket shadow selection archive with OR-able selection groups. Each group is represented with the [TicketShadowSelectionDynamicProviderSingleCriteriaGroup](./ticketshadowdynamicselectionsinglecriteriagroup).
+Ticket shadow selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.TicketShadowSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
 | Name | Description |
@@ -797,12 +797,12 @@ Ticket shadow selection archive with OR-able selection groups. Each group is rep
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketShadowDynamicSelectionV2?$select=ownedBy/contactName,person/hasInfoText,person/birthYear,person/legalBaseStore,contact/searchPhone/formattedNumber
+GET /api/v1/archive/TicketShadowDynamicSelectionV2?$select=createdBy/lastName,person/personUdef/SuperOffice:3,person/personAssociate/portraitThumbnail,person/consentSourceEmarketing,sale/associate/fullName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

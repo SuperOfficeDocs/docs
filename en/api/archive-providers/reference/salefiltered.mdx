@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "SaleFiltered"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SaleFilteredProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SaleFilteredProvider">SuperOffice.CRM.ArchiveLists.SaleFilteredProvider</see> inside NetServer's SODatabase assembly.
 
 Sale archive provider for the Contact/Project card
 
@@ -1156,12 +1156,12 @@ Sale archive provider for the Contact/Project card
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleFiltered?$select=person/personUrl/URLAddress,person/personAssociate/simultaneousEjUser,contact/contactNoMail,contact/email/emailLastSent,project/registeredDate
+GET /api/v1/archive/SaleFiltered?$select=person/personUpdatedBy,person/personRegisteredByFullName,person/personDeletedDate,person/personAssociate/credentialDisplayValue,person/hasEmarketingConsent
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "DocumentQuoteLineInnerData"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.DocumentQuoteLineInnerDataProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.DocumentQuoteLineInnerDataProvider">SuperOffice.CRM.ArchiveLists.DocumentQuoteLineInnerDataProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
 | Name | Description |
@@ -258,12 +258,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Docu
 ## Sample
 
 ```http!
-GET /api/v1/archive/DocumentQuoteLineInnerData?$select=alternative/version/quote/sale/associate/assocType,alternative/version/status,alternative/version/quote/sale/registeredByFullName
+GET /api/v1/archive/DocumentQuoteLineInnerData?$select=updatedByFullName,alternative/vat,alternative/version/quote/connection/erpConnection/name
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

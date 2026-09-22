@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "ChatConversationDynamicSelectionSingleCriteriaGroup"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ChatConversationSelectionDynamicProviderSingleCriteriaGroup inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ChatConversationSelectionDynamicProviderSingleCriteriaGroup">SuperOffice.CRM.ArchiveLists.Archive.ChatConversationSelectionDynamicProviderSingleCriteriaGroup</see> inside NetServer's SODatabase assembly.
 
 ChatConversation selection archive using the selectionId as criterionmapping.
 
@@ -493,12 +493,12 @@ ChatConversation selection archive using the selectionId as criterionmapping.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ChatConversationDynamicSelectionSingleCriteriaGroup?$select=associate/assocTooltip,person/personAssociate/personEmail,person/correspondingAssociate/title,contact/updatedDate,contact/contactExtra/x_contact_float
+GET /api/v1/archive/ChatConversationDynamicSelectionSingleCriteriaGroup?$select=person/personAssociate/isLocation,person/legalBaseEmarketing,person/personAddress/formattedMultiLineAddress
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "FreetextDocument"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.FreetextDocumentResultProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.FreetextDocumentResultProvider">SuperOffice.CRM.ArchiveLists.FreetextDocumentResultProvider</see> inside NetServer's SODatabase assembly.
 
 Archive provider for freetext search on the Document entity (any kind of document).
 
@@ -745,12 +745,12 @@ as well as before any ORDER BY, are applied.
 ## Sample
 
 ```http!
-GET /api/v1/archive/FreetextDocument?$select=text,person/correspondingAssociate/contactId,person/correspondingAssociate/contactName,contact/SaintStatus2,project/imageThumbnail
+GET /api/v1/archive/FreetextDocument?$select=person/lastName,person/personPager/description,person/personAddress/line2,contact/restrictionAddress/county,project/projectAssociate/usergroupId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

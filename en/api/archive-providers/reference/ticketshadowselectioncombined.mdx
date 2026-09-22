@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "TicketShadowSelectionCombined"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.TicketShadowSelectionCombinedProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.TicketShadowSelectionCombinedProvider">SuperOffice.CRM.ArchiveLists.Archive.TicketShadowSelectionCombinedProvider</see> inside NetServer's SODatabase assembly.
 
 Implementation of the provider for the combined selection
 
@@ -800,12 +800,12 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketShadowSelectionCombined?$select=person/lastName,person/restrictionAddress/formattedMultiLineAddress,person/personExtra/x_person_float,person/withdrawnStoreConsent,contact/companyCategoryRank
+GET /api/v1/archive/TicketShadowSelectionCombined?$select=ticketPriority/name,person/personAssociate/ejUserId,person/personAssociate/isActive,contact/contactPhone/description,sale/associate/assocType
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

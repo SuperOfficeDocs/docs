@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "ProjectGuide"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.ProjectGuideProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.ProjectGuideProvider">SuperOffice.CRM.ArchiveLists.ProjectGuideProvider</see> inside NetServer's SODatabase assembly.
 
 Provider for the Project Guide, common to both Appointment and Document guide items and instances
 
@@ -1482,12 +1482,12 @@ This provider is a trivial aggregation of the Appointment and Document providers
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectGuide?$select=appointmentInstance/contact/restrictionAddress/line3,appointmentInstance/contact/contactAssociate/contactFullName,appointmentInstance/contact/contactAssociate/assocName,appointmentInstance/contact/contactAssociate/ejUserId,appointmentInstance/contact/SaintStatus1
+GET /api/v1/archive/ProjectGuide?$select=appointmentInstance/person/personUrl/URLAddress,appointmentInstance/person/personExtra/y_rental/x_end,appointmentInstance/person/personExtra/y_rental/y_equipment/x_name,appointmentInstance/person/personAssociate/usergroupId,appointmentInstance/person/personAssociate/isLocation
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

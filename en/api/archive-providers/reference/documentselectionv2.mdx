@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "DocumentSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.DocumentSelectionProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.DocumentSelectionProviderV2">SuperOffice.CRM.ArchiveLists.Archive.DocumentSelectionProviderV2</see> inside NetServer's SODatabase assembly.
 
 This is the archive Provider for the Selection document archive.
 
@@ -736,12 +736,12 @@ This is the archive Provider for the Selection document archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/DocumentSelectionV2?$select=visibleFor,person/personBusiness,person/correspondingAssociate/isActive,contact/hasInterests,contact/postAddress/formattedMultiLineAddress
+GET /api/v1/archive/DocumentSelectionV2?$select=text,person/personUdef/SuperOffice:1,person/personAssociate/assocTooltip,contact/contactAssociate/ejUserId,project/updatedByFullName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

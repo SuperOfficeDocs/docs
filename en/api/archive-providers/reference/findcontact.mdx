@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "FindContact"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.FindContactProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.FindContactProvider">SuperOffice.CRM.ArchiveLists.FindContactProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
 | Name | Description |
@@ -782,12 +782,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Find
 ## Sample
 
 ```http!
-GET /api/v1/archive/FindContact?$select=contactExtra/x_contact_contact,appointment/associate/personEmail,firstName,personPager/description,correspondingAssociate/contactName
+GET /api/v1/archive/FindContact?$select=hasInterests,streetAddress/zip,contactAssociate/lastName,contactAssociate/usergroup,contactExtra/x_contact_datetime
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "DocumentShadowSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.DocumentShadowSelectionProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.DocumentShadowSelectionProvider">SuperOffice.CRM.ArchiveLists.Archive.DocumentShadowSelectionProvider</see> inside NetServer's SODatabase assembly.
 
 Shadow contact provider for the Document provider.
 
@@ -736,12 +736,12 @@ Shadow contact provider for the Document provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/DocumentShadowSelection?$select=person/personExtra/y_rental/y_equipment/x_name,person/correspondingAssociate/mrMrs,contact/associateId,contact/NumberOfSales,project/projectAssociate/simultaneousEjUser
+GET /api/v1/archive/DocumentShadowSelection?$select=person/personCategory,person/leadstatusRank,person/email/emailProtocol,person/personAddress/zip,person/personExtra/x_person_integer
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

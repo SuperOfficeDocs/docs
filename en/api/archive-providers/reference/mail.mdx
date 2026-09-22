@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "Mail"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.MailItemSearchProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.MailItemSearchProvider">SuperOffice.CRM.ArchiveLists.MailItemSearchProvider</see> inside NetServer's SODatabase assembly.
 
 Provides populated mail envelope rows as an archive based on a query string
 This subclass filter envelopes based on a provided string, only envelopes containing
@@ -41,12 +41,12 @@ the string in either subject, sender, recipient or date are returned
 ## Sample
 
 ```http!
-GET /api/v1/archive/Mail?$select=to,size
+GET /api/v1/archive/Mail?$select=from,to,size
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

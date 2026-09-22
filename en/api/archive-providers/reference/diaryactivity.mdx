@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "DiaryActivity"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.DiaryActivityArchiveProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.DiaryActivityArchiveProvider">SuperOffice.CRM.ArchiveLists.DiaryActivityArchiveProvider</see> inside NetServer's SODatabase assembly.
 
 Activity archive provider for the Diary (checklist)
 
@@ -783,12 +783,12 @@ Activity archive provider for the Diary (checklist)
 ## Sample
 
 ```http!
-GET /api/v1/archive/DiaryActivity?$select=person/retired,person/restrictionAddress/line2,person/correspondingAssociate/locationAddress,person/hasStoreConsent,contact/contactAssociate/contactId
+GET /api/v1/archive/DiaryActivity?$select=person/personUdef/SuperOffice:7,person/personExtra/y_rental/id,person/correspondingAssociate/ejDisplayName,contact/country,contact/contactAssociate/assocType
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

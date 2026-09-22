@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "SaintProject"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SaintProjectProviderWithRestrictionGroupSupport inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SaintProjectProviderWithRestrictionGroupSupport">SuperOffice.CRM.ArchiveLists.SaintProjectProviderWithRestrictionGroupSupport</see> inside NetServer's SODatabase assembly.
 
 Archive provider for Project Saint Status - same as Find Project, but adds ability to call up stored definitions via a statusDefId column
 
@@ -826,12 +826,12 @@ Archive provider for Project Saint Status - same as Find Project, but adds abili
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaintProject?$select=nextMilestone,appointment/updatedDate,projectMember/position,projectMember/correspondingAssociate/isActiveText,projectMember/contactAssociate/isActive
+GET /api/v1/archive/SaintProject?$select=name,appointment/associate/ejUserId,projectMember/personActiveErpLinks,projectMember/personAssociate/personId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

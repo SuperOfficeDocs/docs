@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "ChatConversationShadowStaticSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.ChatConversationShadowSelectionStaticProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.ChatConversationShadowSelectionStaticProviderV2">SuperOffice.CRM.ArchiveLists.Archive.ChatConversationShadowSelectionStaticProviderV2</see> inside NetServer's SODatabase assembly.
 
 Shadow contact provider for the static ChatConversation provider.
 
@@ -498,12 +498,12 @@ Shadow contact provider for the static ChatConversation provider.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ChatConversationShadowStaticSelectionV2?$select=person/personHasInterests,person/personAssociate/personId,contact/contactAssociate/contactId
+GET /api/v1/archive/ChatConversationShadowStaticSelectionV2?$select=personId,associate/assocTooltip,person/personAssociate/credentialType,person/withdrawnEmarketingConsent,contact/updatedBy
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

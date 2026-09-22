@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "SaleSelection"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.SaleSelectionProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.SaleSelectionProvider">SuperOffice.CRM.ArchiveLists.Archive.SaleSelectionProvider</see> inside NetServer's SODatabase assembly.
 
 This is the archive Provider for the Selection sale archive.
 
@@ -1350,12 +1350,12 @@ This is the archive Provider for the Selection sale archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleSelection?$select=person/personUdef/SuperOffice:2,contact/LastDoByActivity,contact/SaintStatus2,appointment/appointmentId,appointment/rawType
+GET /api/v1/archive/SaleSelection?$select=person/retired,person/kanaLastName,person/personDirectPhone/description,person/personExtra/x_person_float,person/personAssociate/ejUserId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

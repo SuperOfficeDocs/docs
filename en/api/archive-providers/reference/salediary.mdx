@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "SaleDiary"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SaleDiaryProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SaleDiaryProvider">SuperOffice.CRM.ArchiveLists.SaleDiaryProvider</see> inside NetServer's SODatabase assembly.
 
 Sale archive provider for the Diary card
 
@@ -1156,12 +1156,12 @@ Sale archive provider for the Diary card
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleDiary?$select=soldReason,person/correspondingAssociate/ejUserId,person/correspondingAssociate/portraitThumbnail,contact/postAddress/line2,contact/restrictionAddress/formattedAddress
+GET /api/v1/archive/SaleDiary?$select=salePublish/isPublished,person/personAssociate/contactDepartment,person/personAssociate/assocName,person/correspondingAssociate/assocType,project/number
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "simpleshipment"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.SimpleShipmentProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.SimpleShipmentProvider">SuperOffice.CRM.ArchiveLists.SimpleShipmentProvider</see> inside NetServer's SODatabase assembly.
 
 Archive provider for the list of mailings
 
@@ -678,12 +678,12 @@ Archive provider for the list of mailings
 ## Sample
 
 ```http!
-GET /api/v1/archive/simpleshipment?$select=mailingAddr/contact/restrictionAddress/line2,mailingAddr/contact/NumberOfActivities,mailingAddr/contact/saintSaleStatus,mailingAddr/person/personRegisteredByFullName,project/projectAssociate/assocName
+GET /api/v1/archive/simpleshipment?$select=mailingAddr/contact/contactUdef/SuperOffice:10,mailingAddr/person/email/emailId,mailingAddr/person/personAssociate/portraitThumbnail,emailFlow/workflowCompletedCount,project/activeErpLinks
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

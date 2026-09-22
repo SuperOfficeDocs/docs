@@ -9,7 +9,7 @@ envir: onsite, online
 
 ## "contactfavourites"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.ContactFavouritesProvider inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.ContactFavouritesProvider">SuperOffice.CRM.ArchiveLists.ContactFavouritesProvider</see> inside NetServer's SODatabase assembly.
 
 ## Supported Entities
 | Name | Description |
@@ -210,12 +210,12 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Cont
 ## Sample
 
 ```http!
-GET /api/v1/archive/contactfavourites?$select=contactAssociate/contactName,postAddress/formattedAddress,contactAssociate/middleName
+GET /api/v1/archive/contactfavourites?$select=streetAddress/line3,streetAddress/wgs84latitude,contactExtra/x_contact_integer,NumberOfNotCompletedSales
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 

@@ -1,6 +1,6 @@
 ---
 title: MailingsDynamicSelectionV2
-description: Mailings selection archive with OR-able selection groups. Each group is represented with the MailingsSelectionDynamicProviderSingleCriteriaGroup.
+description: Mailings selection archive with OR-able selection groups. Each group is represented with the <see cref="T -SuperOffice.CRM.ArchiveLists.Archive.MailingsSelectionDynamicProviderSingleCriteriaGroup" />.
 keywords: MailingsDynamicSelectionV2 archive provider
 generated: true
 content_type: reference
@@ -9,9 +9,9 @@ envir: onsite, online
 
 ## "MailingsDynamicSelectionV2"
 
-This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Archive.MailingsSelectionDynamicProviderV2 inside NetServer's SODatabase assembly.
+This provider name is implemented by the class <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.MailingsSelectionDynamicProviderV2">SuperOffice.CRM.ArchiveLists.Archive.MailingsSelectionDynamicProviderV2</see> inside NetServer's SODatabase assembly.
 
-Mailings selection archive with OR-able selection groups. Each group is represented with the [MailingsSelectionDynamicProviderSingleCriteriaGroup](./mailingsdynamicselectionsinglecriteriagroup).
+Mailings selection archive with OR-able selection groups. Each group is represented with the <see cref="T:SuperOffice.CRM.ArchiveLists.Archive.MailingsSelectionDynamicProviderSingleCriteriaGroup" />.
 
 ## Supported Entities
 | Name | Description |
@@ -680,12 +680,12 @@ Mailings selection archive with OR-able selection groups. Each group is represen
 ## Sample
 
 ```http!
-GET /api/v1/archive/MailingsDynamicSelectionV2?$select=mailingAddr/mailingAddrId,mailingAddr/contact/updatedBy,mailingAddr/contact/contactAssociate/ejStatus,mailingAddr/person/supportAssociateFullName,mailingAddr/person/isProjectMember
+GET /api/v1/archive/MailingsDynamicSelectionV2?$select=recordTypeText,mailingAddr/contact/NumberOfNotCompletedTicketsInPeriod,mailingAddr/person/correspondingAssociate/lastName,project/number
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv
 
 ```
 
-See also: [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent).
+See also: <see cref="T:SuperOffice.CRM.Services.IArchiveAgent">IArchiveAgent</see>.
 
