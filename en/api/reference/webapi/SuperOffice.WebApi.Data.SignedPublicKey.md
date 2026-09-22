@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_SignedPublicKey"></a> Class SignedPublicKey
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for SignedPublicKey.
@@ -13,7 +13,7 @@ public class SignedPublicKey
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[SignedPublicKey](SuperOffice.WebApi.Data.SignedPublicKey.md)
+[SignedPublicKey](/en/api/reference/webapi/SuperOffice.WebApi.Data.SignedPublicKey)
 
 #### Inherited Members
 
@@ -99,5 +99,5 @@ public virtual string Signature { get; set; }
 
 ## See Also
 
-[LicenseAgent](SuperOffice.WebApi.Agents.LicenseAgent.md)
+[LicenseAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.LicenseAgent)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Archive_GetRelatedDataRequest"></a> Class Archive\_GetRelatedDataRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Archive_GetRelatedDataRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Archive\_GetRelatedDataRequest](SuperOffice.WebApi.Data.Archive\_GetRelatedDataRequest.md)
+[Archive\_GetRelatedDataRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Archive_GetRelatedDataRequest)
 
 #### Inherited Members
 

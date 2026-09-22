@@ -2,514 +2,514 @@
 
 ### Classes
 
- [AIAgent](SuperOffice.WebApi.Agents.AIAgent.md)
+ [AIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AIAgent)
 
 AI services, such as Translation, Statistics, Sentiment analysis, backed by calls to Public Cloud providers
 
- [AgentBase](SuperOffice.WebApi.Agents.AgentBase.md)
+ [AgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase)
 
 Base class for client Agents. Uses a <xref href="System.Net.Http.HttpClient" data-throw-if-not-resolved="false"></xref> to call the SuperOffice REST API.
 Will use a default implementation with gzip and progress callbacks if nothing is specified.
 
- [ApiAgent](SuperOffice.WebApi.Agents.ApiAgent.md)
+ [ApiAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ApiAgent)
 
 API info: tenant status, API version, Client library version
 
- [AppointmentAgent](SuperOffice.WebApi.Agents.AppointmentAgent.md)
+ [AppointmentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AppointmentAgent)
 
 Collection of all services that works with Appointment data.
 
- [ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md)
+ [ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent)
 
 ArchiveList functions of all kinds
 
- [AssociateAgent](SuperOffice.WebApi.Agents.AssociateAgent.md)
+ [AssociateAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AssociateAgent)
 
 Associate utilities, notes, not user admininstration
 
- [BLOBAgent](SuperOffice.WebApi.Agents.BLOBAgent.md)
+ [BLOBAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.BLOBAgent)
 
 Collection of all services that works with binary objects (BLOBS), e.g. Images and documents.
 
- [BatchAgent](SuperOffice.WebApi.Agents.BatchAgent.md)
+ [BatchAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.BatchAgent)
 
 Start, stop and monitor predefined batch tasks
 
- [BulkUpdateAgent](SuperOffice.WebApi.Agents.BulkUpdateAgent.md)
+ [BulkUpdateAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.BulkUpdateAgent)
 
 Agent used for bulk update methods
 
- [CRMScriptAgent](SuperOffice.WebApi.Agents.CRMScriptAgent.md)
+ [CRMScriptAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CRMScriptAgent)
 
 Manage and execute CRMScript functions.
 <p></p>
 <b>Online Restricted:</b> This agent is not available in Online by default. Access must be requested specifically when app is registered.
 
- [ChatAgent](SuperOffice.WebApi.Agents.ChatAgent.md)
+ [ChatAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ChatAgent)
 
 Chat functions. Manage chat channels, sessions and messages.
 
- [ConfigurationAgent](SuperOffice.WebApi.Agents.ConfigurationAgent.md)
+ [ConfigurationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ConfigurationAgent)
 
 User interface configuration - XMLs and other elements such as inter-client URLs
 
- [ContactAgent](SuperOffice.WebApi.Agents.ContactAgent.md)
+ [ContactAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ContactAgent)
 
 Contact (company) data services.
 
- [CustomObjectAgent](SuperOffice.WebApi.Agents.CustomObjectAgent.md)
+ [CustomObjectAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CustomObjectAgent)
 
 Agent for working with Custom Objects (extra tables): read schema and full CRUD over rows. Purpose-built replacement for using DatabaseTableAgent against custom objects.
 
- [CustomerServiceAgent](SuperOffice.WebApi.Agents.CustomerServiceAgent.md)
+ [CustomerServiceAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CustomerServiceAgent)
 
 Agent used for Customer Service methods
 
- [DashAgent](SuperOffice.WebApi.Agents.DashAgent.md)
+ [DashAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DashAgent)
 
 Agent that lets you configure dashboard tiles and retrieve dashboard data
 
- [DashboardAgent](SuperOffice.WebApi.Agents.DashboardAgent.md)
+ [DashboardAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DashboardAgent)
 
 Agent lets you configure dashboard tiles and retrieve dashboard data
 
- [DatabaseAgent](SuperOffice.WebApi.Agents.DatabaseAgent.md)
+ [DatabaseAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DatabaseAgent)
 
 Database schema queries and changes
 
- [DatabaseTableAgent](SuperOffice.WebApi.Agents.DatabaseTableAgent.md)
+ [DatabaseTableAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DatabaseTableAgent)
 
 Agent used for CRUD operations on database tables. Read, add, update, delete rows in tables.
 
- [DiagnosticsAgent](SuperOffice.WebApi.Agents.DiagnosticsAgent.md)
+ [DiagnosticsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DiagnosticsAgent)
 
 Diagnostics, usage data collection, caches and flushing
 
- [DocumentAgent](SuperOffice.WebApi.Agents.DocumentAgent.md)
+ [DocumentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DocumentAgent)
 
 Collection of all services that works with Document data. This is services for the document information, not the physical document themselves. These are handled by the BLOB service methods.
 
- [DocumentMigrationAgent](SuperOffice.WebApi.Agents.DocumentMigrationAgent.md)
+ [DocumentMigrationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DocumentMigrationAgent)
 
 Agent used to support migrating documents between different document-plugins, as single documents or batches.
 <p></p>
 <b>Online Restricted:</b> This agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.
 
- [EMailAgent](SuperOffice.WebApi.Agents.EMailAgent.md)
+ [EMailAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.EMailAgent)
 
 Email connection, reading, sending
 <p></p>
 <b>Online Restricted:</b> This agent is not available in Online by default. Access must be requested specifically when app is registered.
 
- [ErpSyncAgent](SuperOffice.WebApi.Agents.ErpSyncAgent.md)
+ [ErpSyncAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ErpSyncAgent)
 
 Services for the ERP Integration Services feature
 <p></p>
 <b>Online Restricted:</b> This agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
- [FavouriteAgent](SuperOffice.WebApi.Agents.FavouriteAgent.md)
+ [FavouriteAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.FavouriteAgent)
 
 Agent used for retrieveing and setting favourites
 
- [FindAgent](SuperOffice.WebApi.Agents.FindAgent.md)
+ [FindAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.FindAgent)
 
 Find functions
 
- [ForeignSystemAgent](SuperOffice.WebApi.Agents.ForeignSystemAgent.md)
+ [ForeignSystemAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ForeignSystemAgent)
 
 Collection of all services that works with Foreign key data (Key/Value pairs)
 
- [FreeTextAgent](SuperOffice.WebApi.Agents.FreeTextAgent.md)
+ [FreeTextAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.FreeTextAgent)
 
 This agent can be used to manage the free text system
 
- [ImportAgent](SuperOffice.WebApi.Agents.ImportAgent.md)
+ [ImportAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ImportAgent)
 
 This agent can be used to import data into the system
 
- [LicenseAgent](SuperOffice.WebApi.Agents.LicenseAgent.md)
+ [LicenseAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.LicenseAgent)
 
 License query, download, activation
 
- [ListAgent](SuperOffice.WebApi.Agents.ListAgent.md)
+ [ListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ListAgent)
 
 Collection of all services that works with Lists. These are typical lists of data shown in dropdown list, checkbox lists, etc.
 
- [MDOAgent](SuperOffice.WebApi.Agents.MDOAgent.md)
+ [MDOAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.MDOAgent)
 
 MDO Lists, reading, searching, and item lookup.
 
- [MarketingAgent](SuperOffice.WebApi.Agents.MarketingAgent.md)
+ [MarketingAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.MarketingAgent)
 
 Agent used for Marketing functions, such as Forms
 
- [MessagingAgent](SuperOffice.WebApi.Agents.MessagingAgent.md)
+ [MessagingAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.MessagingAgent)
 
 SMS and other external messaging systems
 <p></p>
 <b>Online Restricted:</b> This agent is not available in Online by default. Access must be requested specifically when app is registered.
 
- [NavigatorAgent](SuperOffice.WebApi.Agents.NavigatorAgent.md)
+ [NavigatorAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.NavigatorAgent)
 
 Navigator stuff.
 
- [NewsFeedAgent](SuperOffice.WebApi.Agents.NewsFeedAgent.md)
+ [NewsFeedAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.NewsFeedAgent)
 
 Posting and reading Newsfeed items, marking them as read or as handled.
 
- [NumberAllocationAgent](SuperOffice.WebApi.Agents.NumberAllocationAgent.md)
+ [NumberAllocationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.NumberAllocationAgent)
 
 This agent can be used to manage number allocation
 
- [PersonAgent](SuperOffice.WebApi.Agents.PersonAgent.md)
+ [PersonAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PersonAgent)
 
 Person data services.
 
- [PhoneListAgent](SuperOffice.WebApi.Agents.PhoneListAgent.md)
+ [PhoneListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PhoneListAgent)
 
 Collection of all services for searching for person or contact (company) phone numbers.
 
- [PocketAgent](SuperOffice.WebApi.Agents.PocketAgent.md)
+ [PocketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PocketAgent)
 
 Agent with Pocket specific functionality
 
- [PreferenceAgent](SuperOffice.WebApi.Agents.PreferenceAgent.md)
+ [PreferenceAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PreferenceAgent)
 
 Preferences, user interface tab configuration
 
- [PreviewsAgent](SuperOffice.WebApi.Agents.PreviewsAgent.md)
+ [PreviewsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PreviewsAgent)
 
 Get preview strings from a hint
 
- [ProjectAgent](SuperOffice.WebApi.Agents.ProjectAgent.md)
+ [ProjectAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ProjectAgent)
 
 Collection of all services that works with Project data.
 
- [QuoteAgent](SuperOffice.WebApi.Agents.QuoteAgent.md)
+ [QuoteAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.QuoteAgent)
 
 Services for the Quote Management feature, part of the Sale module
 
- [RelationAgent](SuperOffice.WebApi.Agents.RelationAgent.md)
+ [RelationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.RelationAgent)
 
 Contact/Person relations
 
- [ReportAgent](SuperOffice.WebApi.Agents.ReportAgent.md)
+ [ReportAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ReportAgent)
 
 Run reports, set favourites, labels
 
- [ResourceAgent](SuperOffice.WebApi.Agents.ResourceAgent.md)
+ [ResourceAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ResourceAgent)
 
 String resource substitution management.
 
- [SaintAgent](SuperOffice.WebApi.Agents.SaintAgent.md)
+ [SaintAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SaintAgent)
 
 Administration and maintenance of SAINT counters and statuses
 
- [SaleAgent](SuperOffice.WebApi.Agents.SaleAgent.md)
+ [SaleAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SaleAgent)
 
 Sale data services
 
- [SelectionAgent](SuperOffice.WebApi.Agents.SelectionAgent.md)
+ [SelectionAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SelectionAgent)
 
 Selections, entities, members and tasks
 
- [SentryAgent](SuperOffice.WebApi.Agents.SentryAgent.md)
+ [SentryAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SentryAgent)
 
 Data and function right queries
 
- [TargetsAgent](SuperOffice.WebApi.Agents.TargetsAgent.md)
+ [TargetsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TargetsAgent)
 
 Agent lets you configure targets, and retrieve targets
 
- [TicketAgent](SuperOffice.WebApi.Agents.TicketAgent.md)
+ [TicketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TicketAgent)
 
 Agent used for Ticket functions
 
- [TimeZoneAgent](SuperOffice.WebApi.Agents.TimeZoneAgent.md)
+ [TimeZoneAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TimeZoneAgent)
 
 TimeZone maintenance
 
- [TooltipsAgent](SuperOffice.WebApi.Agents.TooltipsAgent.md)
+ [TooltipsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TooltipsAgent)
 
 Tooltip system, hint to text transformation
 
- [UserAgent](SuperOffice.WebApi.Agents.UserAgent.md)
+ [UserAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.UserAgent)
 
 User administration
 <p></p>
 <b>Online Restricted:</b> This agent is not available in Online by default. User management is not allowed for partner apps.
 
- [UserDefinedFieldInfoAgent](SuperOffice.WebApi.Agents.UserDefinedFieldInfoAgent.md)
+ [UserDefinedFieldInfoAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.UserDefinedFieldInfoAgent)
 
 Returns information about user-defined fields, like field type, field size, field label text, default value. Does not return the actual values in the user-defined fields. The values are returned on the entity objects.
 
- [ViewStateAgent](SuperOffice.WebApi.Agents.ViewStateAgent.md)
+ [ViewStateAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ViewStateAgent)
 
 User interface view state, history, currentXXX values
 
- [WebhookAgent](SuperOffice.WebApi.Agents.WebhookAgent.md)
+ [WebhookAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.WebhookAgent)
 
 Webhook definitions - webhooks signal other systems about events inside NetServer
 <p></p>
 <b>Online Restricted:</b> This agent is not available in Online by default. Access must be requested specifically when app is registered.
 
- [WorkflowAgent](SuperOffice.WebApi.Agents.WorkflowAgent.md)
+ [WorkflowAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.WorkflowAgent)
 
 Agent lets you configure workflow automation
 
 ### Interfaces
 
- [IAIAgent](SuperOffice.WebApi.Agents.IAIAgent.md)
+ [IAIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAIAgent)
 
 AI services, such as Translation, Statistics, Sentiment analysis, backed by calls to Public Cloud providers
 
- [IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md)
+ [IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase)
 
 Base interface for interacting with SuperOffice WebApi agents.
 
- [IApiAgent](SuperOffice.WebApi.Agents.IApiAgent.md)
+ [IApiAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IApiAgent)
 
 Interface for API agents: API info, tenant status, Client library version
 
- [IAppointmentAgent](SuperOffice.WebApi.Agents.IAppointmentAgent.md)
+ [IAppointmentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAppointmentAgent)
 
 Collection of all services that works with Appointment data.
 
- [IArchiveAgent](SuperOffice.WebApi.Agents.IArchiveAgent.md)
+ [IArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IArchiveAgent)
 
 ArchiveList functions of all kinds
 
- [IAssociateAgent](SuperOffice.WebApi.Agents.IAssociateAgent.md)
+ [IAssociateAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAssociateAgent)
 
 Associate utilities, notes, not user admininstration
 
- [IBLOBAgent](SuperOffice.WebApi.Agents.IBLOBAgent.md)
+ [IBLOBAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IBLOBAgent)
 
 Collection of all services that works with binary objects (BLOBS), e.g. Images and documents.
 
- [IBatchAgent](SuperOffice.WebApi.Agents.IBatchAgent.md)
+ [IBatchAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IBatchAgent)
 
 Start, stop and monitor predefined batch tasks
 
- [IBulkUpdateAgent](SuperOffice.WebApi.Agents.IBulkUpdateAgent.md)
+ [IBulkUpdateAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IBulkUpdateAgent)
 
 Agent used for bulk update methods
 
- [ICRMScriptAgent](SuperOffice.WebApi.Agents.ICRMScriptAgent.md)
+ [ICRMScriptAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ICRMScriptAgent)
 
 Manage and execute CRMScript functions.
 <p></p>
 <b>Online Restricted:</b> This agent is not available in Online by default. Access must be requested specifically when app is registered.
 
- [IChatAgent](SuperOffice.WebApi.Agents.IChatAgent.md)
+ [IChatAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IChatAgent)
 
 Chat functions. Manage chat channels, sessions and messages.
 
- [IConfigurationAgent](SuperOffice.WebApi.Agents.IConfigurationAgent.md)
+ [IConfigurationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IConfigurationAgent)
 
 User interface configuration - XMLs and other elements such as inter-client URLs
 
- [IContactAgent](SuperOffice.WebApi.Agents.IContactAgent.md)
+ [IContactAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IContactAgent)
 
 Contact (company) data services.
 
- [ICustomObjectAgent](SuperOffice.WebApi.Agents.ICustomObjectAgent.md)
+ [ICustomObjectAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ICustomObjectAgent)
 
 Agent for working with Custom Objects (extra tables): read schema and full CRUD over rows. Purpose-built replacement for using DatabaseTableAgent against custom objects.
 
- [ICustomerServiceAgent](SuperOffice.WebApi.Agents.ICustomerServiceAgent.md)
+ [ICustomerServiceAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ICustomerServiceAgent)
 
 Agent used for Customer Service methods
 
- [IDashAgent](SuperOffice.WebApi.Agents.IDashAgent.md)
+ [IDashAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IDashAgent)
 
 Agent that lets you configure dashboard tiles and retrieve dashboard data
 
- [IDashboardAgent](SuperOffice.WebApi.Agents.IDashboardAgent.md)
+ [IDashboardAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IDashboardAgent)
 
 Agent lets you configure dashboard tiles and retrieve dashboard data
 
- [IDatabaseAgent](SuperOffice.WebApi.Agents.IDatabaseAgent.md)
+ [IDatabaseAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IDatabaseAgent)
 
 Database schema queries and changes
 
- [IDatabaseTableAgent](SuperOffice.WebApi.Agents.IDatabaseTableAgent.md)
+ [IDatabaseTableAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IDatabaseTableAgent)
 
 Agent used for CRUD operations on database tables. Read, add, update, delete rows in tables.
 
- [IDiagnosticsAgent](SuperOffice.WebApi.Agents.IDiagnosticsAgent.md)
+ [IDiagnosticsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IDiagnosticsAgent)
 
 Diagnostics, usage data collection, caches and flushing
 
- [IDocumentAgent](SuperOffice.WebApi.Agents.IDocumentAgent.md)
+ [IDocumentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IDocumentAgent)
 
 Collection of all services that works with Document data. This is services for the document information, not the physical document themselves. These are handled by the BLOB service methods.
 
- [IDocumentMigrationAgent](SuperOffice.WebApi.Agents.IDocumentMigrationAgent.md)
+ [IDocumentMigrationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IDocumentMigrationAgent)
 
 Agent used to support migrating documents between different document-plugins, as single documents or batches.
 <p></p>
 <b>Online Restricted:</b> This agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.
 
- [IEMailAgent](SuperOffice.WebApi.Agents.IEMailAgent.md)
+ [IEMailAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IEMailAgent)
 
 Email connection, reading, sending
 <p></p>
 <b>Online Restricted:</b> This agent is not available in Online by default. Access must be requested specifically when app is registered.
 
- [IErpSyncAgent](SuperOffice.WebApi.Agents.IErpSyncAgent.md)
+ [IErpSyncAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IErpSyncAgent)
 
 Services for the ERP Integration Services feature
 <p></p>
 <b>Online Restricted:</b> This agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for ERP integration apps.
 
- [IFavouriteAgent](SuperOffice.WebApi.Agents.IFavouriteAgent.md)
+ [IFavouriteAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IFavouriteAgent)
 
 Agent used for retrieveing and setting favourites
 
- [IFindAgent](SuperOffice.WebApi.Agents.IFindAgent.md)
+ [IFindAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IFindAgent)
 
 Find functions
 
- [IForeignSystemAgent](SuperOffice.WebApi.Agents.IForeignSystemAgent.md)
+ [IForeignSystemAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IForeignSystemAgent)
 
 Collection of all services that works with Foreign key data (Key/Value pairs)
 
- [IFreeTextAgent](SuperOffice.WebApi.Agents.IFreeTextAgent.md)
+ [IFreeTextAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IFreeTextAgent)
 
 This agent can be used to manage the free text system
 
- [IImportAgent](SuperOffice.WebApi.Agents.IImportAgent.md)
+ [IImportAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IImportAgent)
 
 This agent can be used to import data into the system
 
- [ILicenseAgent](SuperOffice.WebApi.Agents.ILicenseAgent.md)
+ [ILicenseAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ILicenseAgent)
 
 License query, download, activation
 
- [IListAgent](SuperOffice.WebApi.Agents.IListAgent.md)
+ [IListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IListAgent)
 
 Collection of all services that works with Lists. These are typical lists of data shown in dropdown list, checkbox lists, etc.
 
- [IMDOAgent](SuperOffice.WebApi.Agents.IMDOAgent.md)
+ [IMDOAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IMDOAgent)
 
 MDO Lists, reading, searching, and item lookup.
 
- [IMarketingAgent](SuperOffice.WebApi.Agents.IMarketingAgent.md)
+ [IMarketingAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IMarketingAgent)
 
 Agent used for Marketing functions, such as Forms
 
- [IMessagingAgent](SuperOffice.WebApi.Agents.IMessagingAgent.md)
+ [IMessagingAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IMessagingAgent)
 
 SMS and other external messaging systems
 <p></p>
 <b>Online Restricted:</b> This agent is not available in Online by default. Access must be requested specifically when app is registered.
 
- [INavigatorAgent](SuperOffice.WebApi.Agents.INavigatorAgent.md)
+ [INavigatorAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.INavigatorAgent)
 
 Navigator stuff.
 
- [INewsFeedAgent](SuperOffice.WebApi.Agents.INewsFeedAgent.md)
+ [INewsFeedAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.INewsFeedAgent)
 
 Posting and reading Newsfeed items, marking them as read or as handled.
 
- [INumberAllocationAgent](SuperOffice.WebApi.Agents.INumberAllocationAgent.md)
+ [INumberAllocationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.INumberAllocationAgent)
 
 This agent can be used to manage number allocation
 
- [IPersonAgent](SuperOffice.WebApi.Agents.IPersonAgent.md)
+ [IPersonAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IPersonAgent)
 
 Person data services.
 
- [IPhoneListAgent](SuperOffice.WebApi.Agents.IPhoneListAgent.md)
+ [IPhoneListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IPhoneListAgent)
 
 Collection of all services for searching for person or contact (company) phone numbers.
 
- [IPocketAgent](SuperOffice.WebApi.Agents.IPocketAgent.md)
+ [IPocketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IPocketAgent)
 
 Agent with Pocket specific functionality
 
- [IPreferenceAgent](SuperOffice.WebApi.Agents.IPreferenceAgent.md)
+ [IPreferenceAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IPreferenceAgent)
 
 Preferences, user interface tab configuration
 
- [IPreviewsAgent](SuperOffice.WebApi.Agents.IPreviewsAgent.md)
+ [IPreviewsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IPreviewsAgent)
 
 Get preview strings from a hint
 
- [IProjectAgent](SuperOffice.WebApi.Agents.IProjectAgent.md)
+ [IProjectAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IProjectAgent)
 
 Collection of all services that works with Project data.
 
- [IQuoteAgent](SuperOffice.WebApi.Agents.IQuoteAgent.md)
+ [IQuoteAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IQuoteAgent)
 
 Services for the Quote Management feature, part of the Sale module
 
- [IRelationAgent](SuperOffice.WebApi.Agents.IRelationAgent.md)
+ [IRelationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IRelationAgent)
 
 Contact/Person relations
 
- [IReportAgent](SuperOffice.WebApi.Agents.IReportAgent.md)
+ [IReportAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IReportAgent)
 
 Run reports, set favourites, labels
 
- [IResourceAgent](SuperOffice.WebApi.Agents.IResourceAgent.md)
+ [IResourceAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IResourceAgent)
 
 String resource substitution management.
 
- [ISaintAgent](SuperOffice.WebApi.Agents.ISaintAgent.md)
+ [ISaintAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ISaintAgent)
 
 Administration and maintenance of SAINT counters and statuses
 
- [ISaleAgent](SuperOffice.WebApi.Agents.ISaleAgent.md)
+ [ISaleAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ISaleAgent)
 
 Sale data services
 
- [ISelectionAgent](SuperOffice.WebApi.Agents.ISelectionAgent.md)
+ [ISelectionAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ISelectionAgent)
 
 Selections, entities, members and tasks
 
- [ISentryAgent](SuperOffice.WebApi.Agents.ISentryAgent.md)
+ [ISentryAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ISentryAgent)
 
 Data and function right queries
 
- [ITargetsAgent](SuperOffice.WebApi.Agents.ITargetsAgent.md)
+ [ITargetsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ITargetsAgent)
 
 Agent lets you configure targets, and retrieve targets
 
- [ITicketAgent](SuperOffice.WebApi.Agents.ITicketAgent.md)
+ [ITicketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ITicketAgent)
 
 Agent used for Ticket functions
 
- [ITimeZoneAgent](SuperOffice.WebApi.Agents.ITimeZoneAgent.md)
+ [ITimeZoneAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ITimeZoneAgent)
 
 TimeZone maintenance
 
- [ITooltipsAgent](SuperOffice.WebApi.Agents.ITooltipsAgent.md)
+ [ITooltipsAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ITooltipsAgent)
 
 Tooltip system, hint to text transformation
 
- [IUserAgent](SuperOffice.WebApi.Agents.IUserAgent.md)
+ [IUserAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IUserAgent)
 
 User administration
 <p></p>
 <b>Online Restricted:</b> This agent is not available in Online by default. User management is not allowed for partner apps.
 
- [IUserDefinedFieldInfoAgent](SuperOffice.WebApi.Agents.IUserDefinedFieldInfoAgent.md)
+ [IUserDefinedFieldInfoAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IUserDefinedFieldInfoAgent)
 
 Returns information about user-defined fields, like field type, field size, field label text, default value. Does not return the actual values in the user-defined fields. The values are returned on the entity objects.
 
- [IViewStateAgent](SuperOffice.WebApi.Agents.IViewStateAgent.md)
+ [IViewStateAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IViewStateAgent)
 
 User interface view state, history, currentXXX values
 
- [IWebhookAgent](SuperOffice.WebApi.Agents.IWebhookAgent.md)
+ [IWebhookAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IWebhookAgent)
 
 Webhook definitions - webhooks signal other systems about events inside NetServer
 <p></p>
 <b>Online Restricted:</b> This agent is not available in Online by default. Access must be requested specifically when app is registered.
 
- [IWorkflowAgent](SuperOffice.WebApi.Agents.IWorkflowAgent.md)
+ [IWorkflowAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IWorkflowAgent)
 
 Agent lets you configure workflow automation
 

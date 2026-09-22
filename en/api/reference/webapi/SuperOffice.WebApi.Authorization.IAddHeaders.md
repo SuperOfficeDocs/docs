@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Authorization_IAddHeaders"></a> Interface IAddHeaders
 
-Namespace: [SuperOffice.WebApi.Authorization](SuperOffice.WebApi.Authorization.md)  
+Namespace: [SuperOffice.WebApi.Authorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization)  
 Assembly: SuperOffice.WebApi.Authorization.dll  
 
 Used by IAuthorization implementations to add headers for each request.

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Diagnostics_GetEntityCountsForAllUsersRequest"></a> Class Diagnostics\_GetEntityCountsForAllUsersRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Diagnostics_GetEntityCountsForAllUsersRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Diagnostics\_GetEntityCountsForAllUsersRequest](SuperOffice.WebApi.Data.Diagnostics\_GetEntityCountsForAllUsersRequest.md)
+[Diagnostics\_GetEntityCountsForAllUsersRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Diagnostics_GetEntityCountsForAllUsersRequest)
 
 #### Inherited Members
 

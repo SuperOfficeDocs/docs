@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CustomObjectField"></a> Class CustomObjectField
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for CustomObjectField.
@@ -13,7 +13,7 @@ public class CustomObjectField
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CustomObjectField](SuperOffice.WebApi.Data.CustomObjectField.md)
+[CustomObjectField](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObjectField)
 
 #### Inherited Members
 
@@ -135,5 +135,5 @@ public virtual bool UseDefaultValue { get; set; }
 
 ## See Also
 
-[CustomObjectAgent](SuperOffice.WebApi.Agents.CustomObjectAgent.md)
+[CustomObjectAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CustomObjectAgent)
 

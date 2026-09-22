@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_IProgressListener"></a> Interface IProgressListener
 
-Namespace: [SuperOffice.WebApi](SuperOffice.WebApi.md)  
+Namespace: [SuperOffice.WebApi](/en/api/reference/webapi/SuperOffice.WebApi)  
 Assembly: SuperOffice.WebApi.dll  
 
 Defines callbacks for web-client progress notifications.

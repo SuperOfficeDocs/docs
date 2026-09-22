@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UpsertNomatchAction"></a> Enum UpsertNomatchAction
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Upsert: Action to take on target table rows that do not match any incoming keys

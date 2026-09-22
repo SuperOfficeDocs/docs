@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_GetProjectDocumentsByTemplateHeadingRequest"></a> Class Document\_GetProjectDocumentsByTemplateHeadingRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_GetProjectDocumentsByTemplateHeadingRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_GetProjectDocumentsByTemplateHeadingRequest](SuperOffice.WebApi.Data.Document\_GetProjectDocumentsByTemplateHeadingRequest.md)
+[Document\_GetProjectDocumentsByTemplateHeadingRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_GetProjectDocumentsByTemplateHeadingRequest)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Workflow_TryAddPersonsToEmailFlowRequest"></a> Class Workflow\_TryAddPersonsToEmailFlowRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Workflow_TryAddPersonsToEmailFlowRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Workflow\_TryAddPersonsToEmailFlowRequest](SuperOffice.WebApi.Data.Workflow\_TryAddPersonsToEmailFlowRequest.md)
+[Workflow\_TryAddPersonsToEmailFlowRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Workflow_TryAddPersonsToEmailFlowRequest)
 
 #### Inherited Members
 

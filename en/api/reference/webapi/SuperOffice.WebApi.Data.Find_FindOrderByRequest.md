@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Find_FindOrderByRequest"></a> Class Find\_FindOrderByRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Find_FindOrderByRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Find\_FindOrderByRequest](SuperOffice.WebApi.Data.Find\_FindOrderByRequest.md)
+[Find\_FindOrderByRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Find_FindOrderByRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public ArchiveOrderByInfo[] OrderBy { get; set; }
 
 #### Property Value
 
- [ArchiveOrderByInfo](SuperOffice.WebApi.Data.ArchiveOrderByInfo.md)\[\]
+ [ArchiveOrderByInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveOrderByInfo)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_Find_FindOrderByRequest_PageNumber"></a> PageNumber
 

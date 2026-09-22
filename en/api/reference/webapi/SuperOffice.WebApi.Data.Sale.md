@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Sale"></a> Class Sale
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for Sale.
@@ -12,13 +12,13 @@ public class Sale : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[Sale](SuperOffice.WebApi.Data.Sale.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -106,11 +106,11 @@ public ActivityStatus? Completed { get; set; }
 
 #### Property Value
 
- [ActivityStatus](SuperOffice.WebApi.Data.ActivityStatus.md)?
+ [ActivityStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ActivityStatus)?
 
 #### See Also
 
-[Sale](SuperOffice.WebApi.Data.Sale.md).[Completed\_String](SuperOffice.WebApi.Data.Sale.md\#SuperOffice\_WebApi\_Data\_Sale\_Completed\_String)
+[Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale).[Completed\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale#SuperOffice_WebApi_Data_Sale_Completed_String)
 
 ### <a id="SuperOffice_WebApi_Data_Sale_Completed_String"></a> Completed\_String
 
@@ -128,7 +128,7 @@ public string Completed_String { get; set; }
 
 #### See Also
 
-[Sale](SuperOffice.WebApi.Data.Sale.md).[Completed](SuperOffice.WebApi.Data.Sale.md\#SuperOffice\_WebApi\_Data\_Sale\_Completed)
+[Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale).[Completed](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale#SuperOffice_WebApi_Data_Sale_Completed)
 
 ### <a id="SuperOffice_WebApi_Data_Sale_ContactId"></a> ContactId
 
@@ -346,11 +346,11 @@ public SaleStatus? Status { get; set; }
 
 #### Property Value
 
- [SaleStatus](SuperOffice.WebApi.Data.SaleStatus.md)?
+ [SaleStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleStatus)?
 
 #### See Also
 
-[Sale](SuperOffice.WebApi.Data.Sale.md).[Status\_String](SuperOffice.WebApi.Data.Sale.md\#SuperOffice\_WebApi\_Data\_Sale\_Status\_String)
+[Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale).[Status\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale#SuperOffice_WebApi_Data_Sale_Status_String)
 
 ### <a id="SuperOffice_WebApi_Data_Sale_Status_String"></a> Status\_String
 
@@ -368,7 +368,7 @@ public string Status_String { get; set; }
 
 #### See Also
 
-[Sale](SuperOffice.WebApi.Data.Sale.md).[Status](SuperOffice.WebApi.Data.Sale.md\#SuperOffice\_WebApi\_Data\_Sale\_Status)
+[Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale).[Status](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale#SuperOffice_WebApi_Data_Sale_Status)
 
 ### <a id="SuperOffice_WebApi_Data_Sale_Title"></a> Title
 
@@ -396,5 +396,5 @@ public virtual double WeightedAmount { get; set; }
 
 ## See Also
 
-[SaleAgent](SuperOffice.WebApi.Agents.SaleAgent.md)
+[SaleAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SaleAgent)
 

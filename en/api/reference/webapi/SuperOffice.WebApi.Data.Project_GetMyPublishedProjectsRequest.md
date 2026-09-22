@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Project_GetMyPublishedProjectsRequest"></a> Class Project\_GetMyPublishedProjectsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Project_GetMyPublishedProjectsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Project\_GetMyPublishedProjectsRequest](SuperOffice.WebApi.Data.Project\_GetMyPublishedProjectsRequest.md)
+[Project\_GetMyPublishedProjectsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project_GetMyPublishedProjectsRequest)
 
 #### Inherited Members
 

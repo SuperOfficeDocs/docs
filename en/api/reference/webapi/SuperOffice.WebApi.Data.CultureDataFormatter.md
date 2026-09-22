@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CultureDataFormatter"></a> Class CultureDataFormatter
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 This is a helper class designed to encode, parse and reformat culturally sensitive data types between
@@ -13,7 +13,7 @@ public static class CultureDataFormatter
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CultureDataFormatter](SuperOffice.WebApi.Data.CultureDataFormatter.md)
+[CultureDataFormatter](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter)
 
 #### Inherited Members
 
@@ -1083,7 +1083,7 @@ See also <a href="http://msdn.microsoft.com/en-us/library/system.globalization.c
 
 #### See Also
 
-[CultureDataFormatter](SuperOffice.WebApi.Data.CultureDataFormatter.md).[MapSuperOfficeLanguageToCulture](SuperOffice.WebApi.Data.CultureDataFormatter.md\#SuperOffice\_WebApi\_Data\_CultureDataFormatter\_MapSuperOfficeLanguageToCulture\_System\_String\_)\([string](https://learn.microsoft.com/dotnet/api/system.string)\)
+[CultureDataFormatter](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter).[MapSuperOfficeLanguageToCulture](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter#SuperOffice_WebApi_Data_CultureDataFormatter_MapSuperOfficeLanguageToCulture_System_String_)\([string](https://learn.microsoft.com/dotnet/api/system.string)\)
 
 ### <a id="SuperOffice_WebApi_Data_CultureDataFormatter_MapLCIDToSuperOfficeLanguage_System_Int32_"></a> MapLCIDToSuperOfficeLanguage\(int\)
 
@@ -1149,7 +1149,7 @@ See also <a href="http://msdn.microsoft.com/en-us/library/system.globalization.c
 
 #### See Also
 
-[CultureDataFormatter](SuperOffice.WebApi.Data.CultureDataFormatter.md).[MapCultureToSuperOfficeLanguage](SuperOffice.WebApi.Data.CultureDataFormatter.md\#SuperOffice\_WebApi\_Data\_CultureDataFormatter\_MapCultureToSuperOfficeLanguage\_System\_String\_)\([string](https://learn.microsoft.com/dotnet/api/system.string)\)
+[CultureDataFormatter](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter).[MapCultureToSuperOfficeLanguage](/en/api/reference/webapi/SuperOffice.WebApi.Data.CultureDataFormatter#SuperOffice_WebApi_Data_CultureDataFormatter_MapCultureToSuperOfficeLanguage_System_String_)\([string](https://learn.microsoft.com/dotnet/api/system.string)\)
 
 ### <a id="SuperOffice_WebApi_Data_CultureDataFormatter_ParseEncoded_System_String_"></a> ParseEncoded\(string\)
 

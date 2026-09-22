@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_VideoMeetingReservation"></a> Class VideoMeetingReservation
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for VideoMeetingReservation.
@@ -13,7 +13,7 @@ public class VideoMeetingReservation
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[VideoMeetingReservation](SuperOffice.WebApi.Data.VideoMeetingReservation.md)
+[VideoMeetingReservation](/en/api/reference/webapi/SuperOffice.WebApi.Data.VideoMeetingReservation)
 
 #### Inherited Members
 
@@ -63,5 +63,5 @@ public virtual string VideoMeetingUrl { get; set; }
 
 ## See Also
 
-[AppointmentAgent](SuperOffice.WebApi.Agents.AppointmentAgent.md)
+[AppointmentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AppointmentAgent)
 

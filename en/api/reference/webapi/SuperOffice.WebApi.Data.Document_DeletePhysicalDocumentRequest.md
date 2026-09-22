@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_DeletePhysicalDocumentRequest"></a> Class Document\_DeletePhysicalDocumentRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_DeletePhysicalDocumentRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_DeletePhysicalDocumentRequest](SuperOffice.WebApi.Data.Document\_DeletePhysicalDocumentRequest.md)
+[Document\_DeletePhysicalDocumentRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_DeletePhysicalDocumentRequest)
 
 #### Inherited Members
 

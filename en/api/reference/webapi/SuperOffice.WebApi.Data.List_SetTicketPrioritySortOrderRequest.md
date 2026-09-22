@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_SetTicketPrioritySortOrderRequest"></a> Class List\_SetTicketPrioritySortOrderRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_SetTicketPrioritySortOrderRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_SetTicketPrioritySortOrderRequest](SuperOffice.WebApi.Data.List\_SetTicketPrioritySortOrderRequest.md)
+[List\_SetTicketPrioritySortOrderRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_SetTicketPrioritySortOrderRequest)
 
 #### Inherited Members
 

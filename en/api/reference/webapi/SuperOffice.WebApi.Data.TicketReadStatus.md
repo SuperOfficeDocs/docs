@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TicketReadStatus"></a> Enum TicketReadStatus
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Whether the owner has read the ticket or not (red, yellow, green)

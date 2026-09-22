@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_RefreshFolderRequest"></a> Class EMail\_RefreshFolderRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_RefreshFolderRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_RefreshFolderRequest](SuperOffice.WebApi.Data.EMail\_RefreshFolderRequest.md)
+[EMail\_RefreshFolderRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_RefreshFolderRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public EMailConnectionInfo ConnectionInfo { get; set; }
 
 #### Property Value
 
- [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
+ [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
 
 ### <a id="SuperOffice_WebApi_Data_EMail_RefreshFolderRequest_Folders"></a> Folders
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_GetTempFileRequest"></a> Class Document\_GetTempFileRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_GetTempFileRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_GetTempFileRequest](SuperOffice.WebApi.Data.Document\_GetTempFileRequest.md)
+[Document\_GetTempFileRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_GetTempFileRequest)
 
 #### Inherited Members
 

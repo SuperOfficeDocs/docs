@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_ToggleActivitiesRequest"></a> Class Appointment\_ToggleActivitiesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_ToggleActivitiesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_ToggleActivitiesRequest](SuperOffice.WebApi.Data.Appointment\_ToggleActivitiesRequest.md)
+[Appointment\_ToggleActivitiesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_ToggleActivitiesRequest)
 
 #### Inherited Members
 

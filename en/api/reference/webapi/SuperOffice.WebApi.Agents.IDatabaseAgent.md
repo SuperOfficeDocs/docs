@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Agents_IDatabaseAgent"></a> Interface IDatabaseAgent
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Database schema queries and changes
@@ -11,7 +11,7 @@ public interface IDatabaseAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -26,13 +26,13 @@ Task<DictionaryStepInformation[]> GetStepsFromNetServerCodeAsync(RequestOptions 
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DictionaryStepInformation](SuperOffice.WebApi.Data.DictionaryStepInformation.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DictionaryStepInformation](/en/api/reference/webapi/SuperOffice.WebApi.Data.DictionaryStepInformation)\[\]\>
 
 Array of dictionary steps used when NetServer was generated, listing only the highest number for each step
 
@@ -46,13 +46,13 @@ Task<DictionaryStepInformation[]> GetStepsInDatabaseAsync(RequestOptions request
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DictionaryStepInformation](SuperOffice.WebApi.Data.DictionaryStepInformation.md)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DictionaryStepInformation](/en/api/reference/webapi/SuperOffice.WebApi.Data.DictionaryStepInformation)\[\]\>
 
 Array of dictionary steps in the database, listing only the highest number for each step
 

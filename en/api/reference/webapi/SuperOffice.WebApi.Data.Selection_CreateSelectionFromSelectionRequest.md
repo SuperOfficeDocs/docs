@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Selection_CreateSelectionFromSelectionRequest"></a> Class Selection\_CreateSelectionFromSelectionRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Selection_CreateSelectionFromSelectionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Selection\_CreateSelectionFromSelectionRequest](SuperOffice.WebApi.Data.Selection\_CreateSelectionFromSelectionRequest.md)
+[Selection\_CreateSelectionFromSelectionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Selection_CreateSelectionFromSelectionRequest)
 
 #### Inherited Members
 
@@ -70,5 +70,5 @@ public SelectionType TargetSelectionType { get; set; }
 
 #### Property Value
 
- [SelectionType](SuperOffice.WebApi.Data.SelectionType.md)
+ [SelectionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionType)
 

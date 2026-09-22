@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_NewsFeed_MarkAsReadRequest"></a> Class NewsFeed\_MarkAsReadRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class NewsFeed_MarkAsReadRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[NewsFeed\_MarkAsReadRequest](SuperOffice.WebApi.Data.NewsFeed\_MarkAsReadRequest.md)
+[NewsFeed\_MarkAsReadRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeed_MarkAsReadRequest)
 
 #### Inherited Members
 

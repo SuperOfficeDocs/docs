@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Preference_UpdateNetServicesStatusRequest"></a> Class Preference\_UpdateNetServicesStatusRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Preference_UpdateNetServicesStatusRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Preference\_UpdateNetServicesStatusRequest](SuperOffice.WebApi.Data.Preference\_UpdateNetServicesStatusRequest.md)
+[Preference\_UpdateNetServicesStatusRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Preference_UpdateNetServicesStatusRequest)
 
 #### Inherited Members
 

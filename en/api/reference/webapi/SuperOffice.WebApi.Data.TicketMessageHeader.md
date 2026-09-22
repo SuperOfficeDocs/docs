@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TicketMessageHeader"></a> Class TicketMessageHeader
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TicketMessageHeader.
@@ -13,13 +13,13 @@ public class TicketMessageHeader : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[TicketMessageHeader](SuperOffice.WebApi.Data.TicketMessageHeader.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[TicketMessageHeader](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageHeader)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -76,11 +76,11 @@ public MessageHeaderStdItem? StdItem { get; set; }
 
 #### Property Value
 
- [MessageHeaderStdItem](SuperOffice.WebApi.Data.MessageHeaderStdItem.md)?
+ [MessageHeaderStdItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.MessageHeaderStdItem)?
 
 #### See Also
 
-[TicketMessageHeader](SuperOffice.WebApi.Data.TicketMessageHeader.md).[StdItem\_String](SuperOffice.WebApi.Data.TicketMessageHeader.md\#SuperOffice\_WebApi\_Data\_TicketMessageHeader\_StdItem\_String)
+[TicketMessageHeader](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageHeader).[StdItem\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageHeader#SuperOffice_WebApi_Data_TicketMessageHeader_StdItem_String)
 
 ### <a id="SuperOffice_WebApi_Data_TicketMessageHeader_StdItemCol"></a> StdItemCol
 
@@ -94,11 +94,11 @@ public MessageHeaderStdItemCol? StdItemCol { get; set; }
 
 #### Property Value
 
- [MessageHeaderStdItemCol](SuperOffice.WebApi.Data.MessageHeaderStdItemCol.md)?
+ [MessageHeaderStdItemCol](/en/api/reference/webapi/SuperOffice.WebApi.Data.MessageHeaderStdItemCol)?
 
 #### See Also
 
-[TicketMessageHeader](SuperOffice.WebApi.Data.TicketMessageHeader.md).[StdItemCol\_String](SuperOffice.WebApi.Data.TicketMessageHeader.md\#SuperOffice\_WebApi\_Data\_TicketMessageHeader\_StdItemCol\_String)
+[TicketMessageHeader](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageHeader).[StdItemCol\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageHeader#SuperOffice_WebApi_Data_TicketMessageHeader_StdItemCol_String)
 
 ### <a id="SuperOffice_WebApi_Data_TicketMessageHeader_StdItemCol_String"></a> StdItemCol\_String
 
@@ -116,7 +116,7 @@ public string StdItemCol_String { get; set; }
 
 #### See Also
 
-[TicketMessageHeader](SuperOffice.WebApi.Data.TicketMessageHeader.md).[StdItemCol](SuperOffice.WebApi.Data.TicketMessageHeader.md\#SuperOffice\_WebApi\_Data\_TicketMessageHeader\_StdItemCol)
+[TicketMessageHeader](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageHeader).[StdItemCol](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageHeader#SuperOffice_WebApi_Data_TicketMessageHeader_StdItemCol)
 
 ### <a id="SuperOffice_WebApi_Data_TicketMessageHeader_StdItem_String"></a> StdItem\_String
 
@@ -134,7 +134,7 @@ public string StdItem_String { get; set; }
 
 #### See Also
 
-[TicketMessageHeader](SuperOffice.WebApi.Data.TicketMessageHeader.md).[StdItem](SuperOffice.WebApi.Data.TicketMessageHeader.md\#SuperOffice\_WebApi\_Data\_TicketMessageHeader\_StdItem)
+[TicketMessageHeader](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageHeader).[StdItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketMessageHeader#SuperOffice_WebApi_Data_TicketMessageHeader_StdItem)
 
 ### <a id="SuperOffice_WebApi_Data_TicketMessageHeader_Value"></a> Value
 

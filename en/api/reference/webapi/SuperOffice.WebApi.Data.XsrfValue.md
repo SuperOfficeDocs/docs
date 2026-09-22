@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_XsrfValue"></a> Class XsrfValue
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for XsrfValue.
@@ -13,7 +13,7 @@ public class XsrfValue
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[XsrfValue](SuperOffice.WebApi.Data.XsrfValue.md)
+[XsrfValue](/en/api/reference/webapi/SuperOffice.WebApi.Data.XsrfValue)
 
 #### Inherited Members
 
@@ -63,5 +63,5 @@ public virtual string Value { get; set; }
 
 ## See Also
 
-[PreferenceAgent](SuperOffice.WebApi.Agents.PreferenceAgent.md)
+[PreferenceAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.PreferenceAgent)
 

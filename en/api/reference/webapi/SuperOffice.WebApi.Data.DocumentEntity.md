@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DocumentEntity"></a> Class DocumentEntity
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for DocumentEntity.
@@ -12,13 +12,13 @@ public class DocumentEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[DocumentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -75,7 +75,7 @@ public virtual Associate Associate { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentEntity_Attention"></a> Attention
 
@@ -101,11 +101,11 @@ public ActivityStatus? Completed { get; set; }
 
 #### Property Value
 
- [ActivityStatus](SuperOffice.WebApi.Data.ActivityStatus.md)?
+ [ActivityStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ActivityStatus)?
 
 #### See Also
 
-[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md).[Completed\_String](SuperOffice.WebApi.Data.DocumentEntity.md\#SuperOffice\_WebApi\_Data\_DocumentEntity\_Completed\_String)
+[DocumentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity).[Completed\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity#SuperOffice_WebApi_Data_DocumentEntity_Completed_String)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentEntity_Completed_String"></a> Completed\_String
 
@@ -123,7 +123,7 @@ public string Completed_String { get; set; }
 
 #### See Also
 
-[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md).[Completed](SuperOffice.WebApi.Data.DocumentEntity.md\#SuperOffice\_WebApi\_Data\_DocumentEntity\_Completed)
+[DocumentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity).[Completed](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity#SuperOffice_WebApi_Data_DocumentEntity_Completed)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentEntity_Contact"></a> Contact
 
@@ -136,7 +136,7 @@ public virtual Contact Contact { get; set; }
 
 #### Property Value
 
- [Contact](SuperOffice.WebApi.Data.Contact.md)
+ [Contact](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentEntity_CreatedBy"></a> CreatedBy
 
@@ -148,7 +148,7 @@ public virtual Associate CreatedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentEntity_CreatedDate"></a> CreatedDate
 
@@ -176,7 +176,7 @@ public virtual StringDictionary CustomFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 #### Remarks
 
@@ -236,7 +236,7 @@ public virtual DocumentTemplate DocumentTemplate { get; set; }
 
 #### Property Value
 
- [DocumentTemplate](SuperOffice.WebApi.Data.DocumentTemplate.md)
+ [DocumentTemplate](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplate)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentEntity_ExternalRef"></a> ExternalRef
 
@@ -262,7 +262,7 @@ public virtual StringDictionary ExtraFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 #### Remarks
 
@@ -317,7 +317,7 @@ public virtual Link[] Links { get; set; }
 
 #### Property Value
 
- [Link](SuperOffice.WebApi.Data.Link.md)\[\]
+ [Link](/en/api/reference/webapi/SuperOffice.WebApi.Data.Link)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_DocumentEntity_LockSemantics"></a> LockSemantics
 
@@ -330,11 +330,11 @@ public DocumentLockSemantics? LockSemantics { get; set; }
 
 #### Property Value
 
- [DocumentLockSemantics](SuperOffice.WebApi.Data.DocumentLockSemantics.md)?
+ [DocumentLockSemantics](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentLockSemantics)?
 
 #### See Also
 
-[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md).[LockSemantics\_String](SuperOffice.WebApi.Data.DocumentEntity.md\#SuperOffice\_WebApi\_Data\_DocumentEntity\_LockSemantics\_String)
+[DocumentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity).[LockSemantics\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity#SuperOffice_WebApi_Data_DocumentEntity_LockSemantics_String)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentEntity_LockSemantics_String"></a> LockSemantics\_String
 
@@ -351,7 +351,7 @@ public string LockSemantics_String { get; set; }
 
 #### See Also
 
-[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md).[LockSemantics](SuperOffice.WebApi.Data.DocumentEntity.md\#SuperOffice\_WebApi\_Data\_DocumentEntity\_LockSemantics)
+[DocumentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity).[LockSemantics](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity#SuperOffice_WebApi_Data_DocumentEntity_LockSemantics)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentEntity_Name"></a> Name
 
@@ -388,7 +388,7 @@ public virtual Person Person { get; set; }
 
 #### Property Value
 
- [Person](SuperOffice.WebApi.Data.Person.md)
+ [Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentEntity_Project"></a> Project
 
@@ -401,7 +401,7 @@ public virtual Project Project { get; set; }
 
 #### Property Value
 
- [Project](SuperOffice.WebApi.Data.Project.md)
+ [Project](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentEntity_PublishEventDate"></a> PublishEventDate
 
@@ -450,7 +450,7 @@ public virtual Sale Sale { get; set; }
 
 #### Property Value
 
- [Sale](SuperOffice.WebApi.Data.Sale.md)
+ [Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentEntity_Snum"></a> Snum
 
@@ -488,11 +488,11 @@ public AppointmentType? Type { get; set; }
 
 #### Property Value
 
- [AppointmentType](SuperOffice.WebApi.Data.AppointmentType.md)?
+ [AppointmentType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentType)?
 
 #### See Also
 
-[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md).[Type\_String](SuperOffice.WebApi.Data.DocumentEntity.md\#SuperOffice\_WebApi\_Data\_DocumentEntity\_Type\_String)
+[DocumentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity).[Type\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity#SuperOffice_WebApi_Data_DocumentEntity_Type_String)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentEntity_Type_String"></a> Type\_String
 
@@ -510,7 +510,7 @@ public string Type_String { get; set; }
 
 #### See Also
 
-[DocumentEntity](SuperOffice.WebApi.Data.DocumentEntity.md).[Type](SuperOffice.WebApi.Data.DocumentEntity.md\#SuperOffice\_WebApi\_Data\_DocumentEntity\_Type)
+[DocumentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity).[Type](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity#SuperOffice_WebApi_Data_DocumentEntity_Type)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentEntity_UpdatedBy"></a> UpdatedBy
 
@@ -522,7 +522,7 @@ public virtual Associate UpdatedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentEntity_UpdatedDate"></a> UpdatedDate
 
@@ -549,7 +549,7 @@ public virtual StringDictionary UserDefinedFields { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 ### <a id="SuperOffice_WebApi_Data_DocumentEntity_VisibleFor"></a> VisibleFor
 
@@ -561,7 +561,7 @@ public virtual VisibleFor[] VisibleFor { get; set; }
 
 #### Property Value
 
- [VisibleFor](SuperOffice.WebApi.Data.VisibleFor.md)\[\]
+ [VisibleFor](/en/api/reference/webapi/SuperOffice.WebApi.Data.VisibleFor)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_DocumentEntity_YourRef"></a> YourRef
 
@@ -577,7 +577,7 @@ public virtual string YourRef { get; set; }
 
 ## See Also
 
-[DocumentAgent](SuperOffice.WebApi.Agents.DocumentAgent.md), 
-[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md), 
+[DocumentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DocumentAgent), 
+[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent), 
 
 

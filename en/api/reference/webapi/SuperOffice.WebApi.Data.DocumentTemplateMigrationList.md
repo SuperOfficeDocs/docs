@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DocumentTemplateMigrationList"></a> Class DocumentTemplateMigrationList
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for DocumentTemplateMigrationList.
@@ -12,7 +12,7 @@ public class DocumentTemplateMigrationList
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[DocumentTemplateMigrationList](SuperOffice.WebApi.Data.DocumentTemplateMigrationList.md)
+[DocumentTemplateMigrationList](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateMigrationList)
 
 #### Inherited Members
 
@@ -74,5 +74,5 @@ public virtual int[] TemplateIds { get; set; }
 
 ## See Also
 
-[DocumentMigrationAgent](SuperOffice.WebApi.Agents.DocumentMigrationAgent.md)
+[DocumentMigrationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DocumentMigrationAgent)
 

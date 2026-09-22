@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Sale_GetSummaryByGroupRequest"></a> Class Sale\_GetSummaryByGroupRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Sale_GetSummaryByGroupRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Sale\_GetSummaryByGroupRequest](SuperOffice.WebApi.Data.Sale\_GetSummaryByGroupRequest.md)
+[Sale\_GetSummaryByGroupRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale_GetSummaryByGroupRequest)
 
 #### Inherited Members
 

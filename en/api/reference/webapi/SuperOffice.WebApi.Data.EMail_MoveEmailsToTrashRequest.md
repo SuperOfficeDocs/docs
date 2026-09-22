@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_MoveEmailsToTrashRequest"></a> Class EMail\_MoveEmailsToTrashRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_MoveEmailsToTrashRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_MoveEmailsToTrashRequest](SuperOffice.WebApi.Data.EMail\_MoveEmailsToTrashRequest.md)
+[EMail\_MoveEmailsToTrashRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_MoveEmailsToTrashRequest)
 
 #### Inherited Members
 

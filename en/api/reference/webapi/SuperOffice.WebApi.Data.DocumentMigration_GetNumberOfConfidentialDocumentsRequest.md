@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DocumentMigration_GetNumberOfConfidentialDocumentsRequest"></a> Class DocumentMigration\_GetNumberOfConfidentialDocumentsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class DocumentMigration_GetNumberOfConfidentialDocumentsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[DocumentMigration\_GetNumberOfConfidentialDocumentsRequest](SuperOffice.WebApi.Data.DocumentMigration\_GetNumberOfConfidentialDocumentsRequest.md)
+[DocumentMigration\_GetNumberOfConfidentialDocumentsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentMigration_GetNumberOfConfidentialDocumentsRequest)
 
 #### Inherited Members
 

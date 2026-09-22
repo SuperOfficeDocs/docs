@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Preference_GetFromSectionAndKeyRequest"></a> Class Preference\_GetFromSectionAndKeyRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Preference_GetFromSectionAndKeyRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Preference\_GetFromSectionAndKeyRequest](SuperOffice.WebApi.Data.Preference\_GetFromSectionAndKeyRequest.md)
+[Preference\_GetFromSectionAndKeyRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Preference_GetFromSectionAndKeyRequest)
 
 #### Inherited Members
 

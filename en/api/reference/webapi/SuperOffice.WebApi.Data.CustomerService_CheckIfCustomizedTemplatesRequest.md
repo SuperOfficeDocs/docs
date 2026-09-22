@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CustomerService_CheckIfCustomizedTemplatesRequest"></a> Class CustomerService\_CheckIfCustomizedTemplatesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CustomerService_CheckIfCustomizedTemplatesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CustomerService\_CheckIfCustomizedTemplatesRequest](SuperOffice.WebApi.Data.CustomerService\_CheckIfCustomizedTemplatesRequest.md)
+[CustomerService\_CheckIfCustomizedTemplatesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerService_CheckIfCustomizedTemplatesRequest)
 
 #### Inherited Members
 

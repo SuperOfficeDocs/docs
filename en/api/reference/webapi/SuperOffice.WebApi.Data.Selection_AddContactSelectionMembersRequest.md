@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Selection_AddContactSelectionMembersRequest"></a> Class Selection\_AddContactSelectionMembersRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Selection_AddContactSelectionMembersRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Selection\_AddContactSelectionMembersRequest](SuperOffice.WebApi.Data.Selection\_AddContactSelectionMembersRequest.md)
+[Selection\_AddContactSelectionMembersRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Selection_AddContactSelectionMembersRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public ContactPersonId[] ContactPersonIds { get; set; }
 
 #### Property Value
 
- [ContactPersonId](SuperOffice.WebApi.Data.ContactPersonId.md)\[\]
+ [ContactPersonId](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactPersonId)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_Selection_AddContactSelectionMembersRequest_SelectionId"></a> SelectionId
 

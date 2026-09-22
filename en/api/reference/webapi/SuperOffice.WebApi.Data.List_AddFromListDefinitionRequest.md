@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_AddFromListDefinitionRequest"></a> Class List\_AddFromListDefinitionRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_AddFromListDefinitionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_AddFromListDefinitionRequest](SuperOffice.WebApi.Data.List\_AddFromListDefinitionRequest.md)
+[List\_AddFromListDefinitionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_AddFromListDefinitionRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public ListItemEntity Item { get; set; }
 
 #### Property Value
 
- [ListItemEntity](SuperOffice.WebApi.Data.ListItemEntity.md)
+ [ListItemEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItemEntity)
 
 ### <a id="SuperOffice_WebApi_Data_List_AddFromListDefinitionRequest_UdListDefinitionId"></a> UdListDefinitionId
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_CreateUserGroupRequest"></a> Class User\_CreateUserGroupRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_CreateUserGroupRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_CreateUserGroupRequest](SuperOffice.WebApi.Data.User\_CreateUserGroupRequest.md)
+[User\_CreateUserGroupRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_CreateUserGroupRequest)
 
 #### Inherited Members
 

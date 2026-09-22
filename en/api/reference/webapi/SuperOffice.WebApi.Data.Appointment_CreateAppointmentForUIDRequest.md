@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_CreateAppointmentForUIDRequest"></a> Class Appointment\_CreateAppointmentForUIDRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_CreateAppointmentForUIDRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_CreateAppointmentForUIDRequest](SuperOffice.WebApi.Data.Appointment\_CreateAppointmentForUIDRequest.md)
+[Appointment\_CreateAppointmentForUIDRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_CreateAppointmentForUIDRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public AppointmentEntity AppointmentEntity { get; set; }
 
 #### Property Value
 
- [AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)
+ [AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_CreateAppointmentForUIDRequest_UID"></a> UID
 

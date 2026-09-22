@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Selection_GenerateFollowUpsRequest"></a> Class Selection\_GenerateFollowUpsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Selection_GenerateFollowUpsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Selection\_GenerateFollowUpsRequest](SuperOffice.WebApi.Data.Selection\_GenerateFollowUpsRequest.md)
+[Selection\_GenerateFollowUpsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Selection_GenerateFollowUpsRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public AppointmentEntity AppointmentEntity { get; set; }
 
 #### Property Value
 
- [AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)
+ [AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)
 
 ### <a id="SuperOffice_WebApi_Data_Selection_GenerateFollowUpsRequest_AssociateId"></a> AssociateId
 

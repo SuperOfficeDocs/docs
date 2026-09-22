@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_FieldReplication"></a> Class UserPreferenceStrings.FieldReplication
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Enables replication of user-defined fields at field level instead of record level. This ensures that field changes for the customer are retained, but may affect the performance of the replication process
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.FieldReplication
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.FieldReplication](SuperOffice.WebApi.Data.UserPreferenceStrings.FieldReplication.md)
+[UserPreferenceStrings.FieldReplication](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.FieldReplication)
 
 #### Inherited Members
 

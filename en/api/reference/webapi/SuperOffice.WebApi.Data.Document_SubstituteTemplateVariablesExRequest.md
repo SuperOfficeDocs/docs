@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Document_SubstituteTemplateVariablesExRequest"></a> Class Document\_SubstituteTemplateVariablesExRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Document_SubstituteTemplateVariablesExRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Document\_SubstituteTemplateVariablesExRequest](SuperOffice.WebApi.Data.Document\_SubstituteTemplateVariablesExRequest.md)
+[Document\_SubstituteTemplateVariablesExRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Document_SubstituteTemplateVariablesExRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public TemplateVariablesParameters Parameters { get; set; }
 
 #### Property Value
 
- [TemplateVariablesParameters](SuperOffice.WebApi.Data.TemplateVariablesParameters.md)
+ [TemplateVariablesParameters](/en/api/reference/webapi/SuperOffice.WebApi.Data.TemplateVariablesParameters)
 

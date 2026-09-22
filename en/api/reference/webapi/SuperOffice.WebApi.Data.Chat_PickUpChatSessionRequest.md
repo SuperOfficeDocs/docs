@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Chat_PickUpChatSessionRequest"></a> Class Chat\_PickUpChatSessionRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Chat_PickUpChatSessionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Chat\_PickUpChatSessionRequest](SuperOffice.WebApi.Data.Chat\_PickUpChatSessionRequest.md)
+[Chat\_PickUpChatSessionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Chat_PickUpChatSessionRequest)
 
 #### Inherited Members
 

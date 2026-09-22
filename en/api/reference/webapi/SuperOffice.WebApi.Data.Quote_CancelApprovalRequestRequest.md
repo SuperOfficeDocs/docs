@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Quote_CancelApprovalRequestRequest"></a> Class Quote\_CancelApprovalRequestRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Quote_CancelApprovalRequestRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Quote\_CancelApprovalRequestRequest](SuperOffice.WebApi.Data.Quote\_CancelApprovalRequestRequest.md)
+[Quote\_CancelApprovalRequestRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Quote_CancelApprovalRequestRequest)
 
 #### Inherited Members
 

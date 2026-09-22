@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_FormDesignCarrier"></a> Class FormDesignCarrier
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for FormDesignCarrier.
@@ -13,7 +13,7 @@ public class FormDesignCarrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[FormDesignCarrier](SuperOffice.WebApi.Data.FormDesignCarrier.md)
+[FormDesignCarrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormDesignCarrier)
 
 #### Inherited Members
 
@@ -75,5 +75,5 @@ public virtual string Notes { get; set; }
 
 ## See Also
 
-[AIAgent](SuperOffice.WebApi.Agents.AIAgent.md)
+[AIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AIAgent)
 

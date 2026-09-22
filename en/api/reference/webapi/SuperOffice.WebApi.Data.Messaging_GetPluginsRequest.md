@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Messaging_GetPluginsRequest"></a> Class Messaging\_GetPluginsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Messaging_GetPluginsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Messaging\_GetPluginsRequest](SuperOffice.WebApi.Data.Messaging\_GetPluginsRequest.md)
+[Messaging\_GetPluginsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Messaging_GetPluginsRequest)
 
 #### Inherited Members
 

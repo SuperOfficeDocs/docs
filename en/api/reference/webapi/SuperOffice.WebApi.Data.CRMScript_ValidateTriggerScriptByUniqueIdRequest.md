@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CRMScript_ValidateTriggerScriptByUniqueIdRequest"></a> Class CRMScript\_ValidateTriggerScriptByUniqueIdRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CRMScript_ValidateTriggerScriptByUniqueIdRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CRMScript\_ValidateTriggerScriptByUniqueIdRequest](SuperOffice.WebApi.Data.CRMScript\_ValidateTriggerScriptByUniqueIdRequest.md)
+[CRMScript\_ValidateTriggerScriptByUniqueIdRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CRMScript_ValidateTriggerScriptByUniqueIdRequest)
 
 #### Inherited Members
 

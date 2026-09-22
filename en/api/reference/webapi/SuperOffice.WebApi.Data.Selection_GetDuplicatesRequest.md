@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Selection_GetDuplicatesRequest"></a> Class Selection\_GetDuplicatesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Selection_GetDuplicatesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Selection\_GetDuplicatesRequest](SuperOffice.WebApi.Data.Selection\_GetDuplicatesRequest.md)
+[Selection\_GetDuplicatesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Selection_GetDuplicatesRequest)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Dashboard"></a> Class UserPreferenceStrings.Dashboard
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public static class UserPreferenceStrings.Dashboard
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.Dashboard](SuperOffice.WebApi.Data.UserPreferenceStrings.Dashboard.md)
+[UserPreferenceStrings.Dashboard](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Dashboard)
 
 #### Inherited Members
 

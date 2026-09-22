@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Quote_GetConnectionsForAssociateRequest"></a> Class Quote\_GetConnectionsForAssociateRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Quote_GetConnectionsForAssociateRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Quote\_GetConnectionsForAssociateRequest](SuperOffice.WebApi.Data.Quote\_GetConnectionsForAssociateRequest.md)
+[Quote\_GetConnectionsForAssociateRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Quote_GetConnectionsForAssociateRequest)
 
 #### Inherited Members
 

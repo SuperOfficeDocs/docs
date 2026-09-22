@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DashboardTile"></a> Class DashboardTile
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for DashboardTile.
@@ -13,13 +13,13 @@ public class DashboardTile : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[DashboardTile](SuperOffice.WebApi.Data.DashboardTile.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[DashboardTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTile)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -143,11 +143,11 @@ public DashboardTileEntityType? EntityType { get; set; }
 
 #### Property Value
 
- [DashboardTileEntityType](SuperOffice.WebApi.Data.DashboardTileEntityType.md)?
+ [DashboardTileEntityType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTileEntityType)?
 
 #### See Also
 
-[DashboardTile](SuperOffice.WebApi.Data.DashboardTile.md).[EntityType\_String](SuperOffice.WebApi.Data.DashboardTile.md\#SuperOffice\_WebApi\_Data\_DashboardTile\_EntityType\_String)
+[DashboardTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTile).[EntityType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTile#SuperOffice_WebApi_Data_DashboardTile_EntityType_String)
 
 ### <a id="SuperOffice_WebApi_Data_DashboardTile_EntityType_String"></a> EntityType\_String
 
@@ -165,7 +165,7 @@ public string EntityType_String { get; set; }
 
 #### See Also
 
-[DashboardTile](SuperOffice.WebApi.Data.DashboardTile.md).[EntityType](SuperOffice.WebApi.Data.DashboardTile.md\#SuperOffice\_WebApi\_Data\_DashboardTile\_EntityType)
+[DashboardTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTile).[EntityType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTile#SuperOffice_WebApi_Data_DashboardTile_EntityType)
 
 ### <a id="SuperOffice_WebApi_Data_DashboardTile_GroupId"></a> GroupId
 
@@ -201,7 +201,7 @@ public virtual DashboardTileOption[] Options { get; set; }
 
 #### Property Value
 
- [DashboardTileOption](SuperOffice.WebApi.Data.DashboardTileOption.md)\[\]
+ [DashboardTileOption](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTileOption)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_DashboardTile_SelectionId"></a> SelectionId
 
@@ -227,11 +227,11 @@ public DashboardTileType? Type { get; set; }
 
 #### Property Value
 
- [DashboardTileType](SuperOffice.WebApi.Data.DashboardTileType.md)?
+ [DashboardTileType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTileType)?
 
 #### See Also
 
-[DashboardTile](SuperOffice.WebApi.Data.DashboardTile.md).[Type\_String](SuperOffice.WebApi.Data.DashboardTile.md\#SuperOffice\_WebApi\_Data\_DashboardTile\_Type\_String)
+[DashboardTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTile).[Type\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTile#SuperOffice_WebApi_Data_DashboardTile_Type_String)
 
 ### <a id="SuperOffice_WebApi_Data_DashboardTile_Type_String"></a> Type\_String
 
@@ -249,7 +249,7 @@ public string Type_String { get; set; }
 
 #### See Also
 
-[DashboardTile](SuperOffice.WebApi.Data.DashboardTile.md).[Type](SuperOffice.WebApi.Data.DashboardTile.md\#SuperOffice\_WebApi\_Data\_DashboardTile\_Type)
+[DashboardTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTile).[Type](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashboardTile#SuperOffice_WebApi_Data_DashboardTile_Type)
 
 ### <a id="SuperOffice_WebApi_Data_DashboardTile_VisibleFor"></a> VisibleFor
 
@@ -261,9 +261,9 @@ public virtual VisibleFor[] VisibleFor { get; set; }
 
 #### Property Value
 
- [VisibleFor](SuperOffice.WebApi.Data.VisibleFor.md)\[\]
+ [VisibleFor](/en/api/reference/webapi/SuperOffice.WebApi.Data.VisibleFor)\[\]
 
 ## See Also
 
-[DashboardAgent](SuperOffice.WebApi.Agents.DashboardAgent.md)
+[DashboardAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DashboardAgent)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_GetAppointmentEmailInvitationRequest"></a> Class Appointment\_GetAppointmentEmailInvitationRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_GetAppointmentEmailInvitationRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_GetAppointmentEmailInvitationRequest](SuperOffice.WebApi.Data.Appointment\_GetAppointmentEmailInvitationRequest.md)
+[Appointment\_GetAppointmentEmailInvitationRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_GetAppointmentEmailInvitationRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public AppointmentEntity Appointment { get; set; }
 
 #### Property Value
 
- [AppointmentEntity](SuperOffice.WebApi.Data.AppointmentEntity.md)
+ [AppointmentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AppointmentEntity)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_GetAppointmentEmailInvitationRequest_Language"></a> Language
 

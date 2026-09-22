@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_GetPersonsFromEmailAddressRequest"></a> Class EMail\_GetPersonsFromEmailAddressRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_GetPersonsFromEmailAddressRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_GetPersonsFromEmailAddressRequest](SuperOffice.WebApi.Data.EMail\_GetPersonsFromEmailAddressRequest.md)
+[EMail\_GetPersonsFromEmailAddressRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_GetPersonsFromEmailAddressRequest)
 
 #### Inherited Members
 

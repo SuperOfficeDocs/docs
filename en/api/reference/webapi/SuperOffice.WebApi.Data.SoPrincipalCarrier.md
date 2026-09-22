@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_SoPrincipalCarrier"></a> Class SoPrincipalCarrier
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for SoPrincipalCarrier.
@@ -13,7 +13,7 @@ public class SoPrincipalCarrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[SoPrincipalCarrier](SuperOffice.WebApi.Data.SoPrincipalCarrier.md)
+[SoPrincipalCarrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoPrincipalCarrier)
 
 #### Inherited Members
 
@@ -181,11 +181,11 @@ public EjUserStatus? EjUserStatus { get; set; }
 
 #### Property Value
 
- [EjUserStatus](SuperOffice.WebApi.Data.EjUserStatus.md)?
+ [EjUserStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.EjUserStatus)?
 
 #### See Also
 
-[SoPrincipalCarrier](SuperOffice.WebApi.Data.SoPrincipalCarrier.md).[EjUserStatus\_String](SuperOffice.WebApi.Data.SoPrincipalCarrier.md\#SuperOffice\_WebApi\_Data\_SoPrincipalCarrier\_EjUserStatus\_String)
+[SoPrincipalCarrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoPrincipalCarrier).[EjUserStatus\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoPrincipalCarrier#SuperOffice_WebApi_Data_SoPrincipalCarrier_EjUserStatus_String)
 
 ### <a id="SuperOffice_WebApi_Data_SoPrincipalCarrier_EjUserStatus_String"></a> EjUserStatus\_String
 
@@ -203,7 +203,7 @@ public string EjUserStatus_String { get; set; }
 
 #### See Also
 
-[SoPrincipalCarrier](SuperOffice.WebApi.Data.SoPrincipalCarrier.md).[EjUserStatus](SuperOffice.WebApi.Data.SoPrincipalCarrier.md\#SuperOffice\_WebApi\_Data\_SoPrincipalCarrier\_EjUserStatus)
+[SoPrincipalCarrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoPrincipalCarrier).[EjUserStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoPrincipalCarrier#SuperOffice_WebApi_Data_SoPrincipalCarrier_EjUserStatus)
 
 ### <a id="SuperOffice_WebApi_Data_SoPrincipalCarrier_FullName"></a> FullName
 
@@ -275,7 +275,7 @@ public virtual GrantedModuleLicense[] Licenses { get; set; }
 
 #### Property Value
 
- [GrantedModuleLicense](SuperOffice.WebApi.Data.GrantedModuleLicense.md)\[\]
+ [GrantedModuleLicense](/en/api/reference/webapi/SuperOffice.WebApi.Data.GrantedModuleLicense)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_SoPrincipalCarrier_PersonId"></a> PersonId
 
@@ -299,7 +299,7 @@ public virtual ProvidedCredential[] ProvidedCredentials { get; set; }
 
 #### Property Value
 
- [ProvidedCredential](SuperOffice.WebApi.Data.ProvidedCredential.md)\[\]
+ [ProvidedCredential](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProvidedCredential)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_SoPrincipalCarrier_RoleDescription"></a> RoleDescription
 
@@ -349,11 +349,11 @@ public RoleType? RoleType { get; set; }
 
 #### Property Value
 
- [RoleType](SuperOffice.WebApi.Data.RoleType.md)?
+ [RoleType](/en/api/reference/webapi/SuperOffice.WebApi.Data.RoleType)?
 
 #### See Also
 
-[SoPrincipalCarrier](SuperOffice.WebApi.Data.SoPrincipalCarrier.md).[RoleType\_String](SuperOffice.WebApi.Data.SoPrincipalCarrier.md\#SuperOffice\_WebApi\_Data\_SoPrincipalCarrier\_RoleType\_String)
+[SoPrincipalCarrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoPrincipalCarrier).[RoleType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoPrincipalCarrier#SuperOffice_WebApi_Data_SoPrincipalCarrier_RoleType_String)
 
 ### <a id="SuperOffice_WebApi_Data_SoPrincipalCarrier_RoleType_String"></a> RoleType\_String
 
@@ -371,7 +371,7 @@ public string RoleType_String { get; set; }
 
 #### See Also
 
-[SoPrincipalCarrier](SuperOffice.WebApi.Data.SoPrincipalCarrier.md).[RoleType](SuperOffice.WebApi.Data.SoPrincipalCarrier.md\#SuperOffice\_WebApi\_Data\_SoPrincipalCarrier\_RoleType)
+[SoPrincipalCarrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoPrincipalCarrier).[RoleType](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoPrincipalCarrier#SuperOffice_WebApi_Data_SoPrincipalCarrier_RoleType)
 
 ### <a id="SuperOffice_WebApi_Data_SoPrincipalCarrier_SecondaryGroups"></a> SecondaryGroups
 
@@ -397,11 +397,11 @@ public UserType? UserType { get; set; }
 
 #### Property Value
 
- [UserType](SuperOffice.WebApi.Data.UserType.md)?
+ [UserType](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserType)?
 
 #### See Also
 
-[SoPrincipalCarrier](SuperOffice.WebApi.Data.SoPrincipalCarrier.md).[UserType\_String](SuperOffice.WebApi.Data.SoPrincipalCarrier.md\#SuperOffice\_WebApi\_Data\_SoPrincipalCarrier\_UserType\_String)
+[SoPrincipalCarrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoPrincipalCarrier).[UserType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoPrincipalCarrier#SuperOffice_WebApi_Data_SoPrincipalCarrier_UserType_String)
 
 ### <a id="SuperOffice_WebApi_Data_SoPrincipalCarrier_UserType_String"></a> UserType\_String
 
@@ -419,5 +419,5 @@ public string UserType_String { get; set; }
 
 #### See Also
 
-[SoPrincipalCarrier](SuperOffice.WebApi.Data.SoPrincipalCarrier.md).[UserType](SuperOffice.WebApi.Data.SoPrincipalCarrier.md\#SuperOffice\_WebApi\_Data\_SoPrincipalCarrier\_UserType)
+[SoPrincipalCarrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoPrincipalCarrier).[UserType](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoPrincipalCarrier#SuperOffice_WebApi_Data_SoPrincipalCarrier_UserType)
 

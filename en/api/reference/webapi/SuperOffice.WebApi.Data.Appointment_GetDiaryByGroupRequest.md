@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_GetDiaryByGroupRequest"></a> Class Appointment\_GetDiaryByGroupRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_GetDiaryByGroupRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_GetDiaryByGroupRequest](SuperOffice.WebApi.Data.Appointment\_GetDiaryByGroupRequest.md)
+[Appointment\_GetDiaryByGroupRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_GetDiaryByGroupRequest)
 
 #### Inherited Members
 

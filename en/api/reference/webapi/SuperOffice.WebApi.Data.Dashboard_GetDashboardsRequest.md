@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Dashboard_GetDashboardsRequest"></a> Class Dashboard\_GetDashboardsRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Dashboard_GetDashboardsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Dashboard\_GetDashboardsRequest](SuperOffice.WebApi.Data.Dashboard\_GetDashboardsRequest.md)
+[Dashboard\_GetDashboardsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Dashboard_GetDashboardsRequest)
 
 #### Inherited Members
 

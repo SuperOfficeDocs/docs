@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Sentry_CanCreateAppointmentInAssociateDiariesRequest"></a> Class Sentry\_CanCreateAppointmentInAssociateDiariesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Sentry_CanCreateAppointmentInAssociateDiariesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Sentry\_CanCreateAppointmentInAssociateDiariesRequest](SuperOffice.WebApi.Data.Sentry\_CanCreateAppointmentInAssociateDiariesRequest.md)
+[Sentry\_CanCreateAppointmentInAssociateDiariesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sentry_CanCreateAppointmentInAssociateDiariesRequest)
 
 #### Inherited Members
 

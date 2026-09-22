@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_GetWebPanelListRequest"></a> Class List\_GetWebPanelListRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_GetWebPanelListRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_GetWebPanelListRequest](SuperOffice.WebApi.Data.List\_GetWebPanelListRequest.md)
+[List\_GetWebPanelListRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_GetWebPanelListRequest)
 
 #### Inherited Members
 

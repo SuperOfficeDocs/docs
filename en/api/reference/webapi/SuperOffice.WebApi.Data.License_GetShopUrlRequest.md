@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_License_GetShopUrlRequest"></a> Class License\_GetShopUrlRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class License_GetShopUrlRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[License\_GetShopUrlRequest](SuperOffice.WebApi.Data.License\_GetShopUrlRequest.md)
+[License\_GetShopUrlRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.License_GetShopUrlRequest)
 
 #### Inherited Members
 

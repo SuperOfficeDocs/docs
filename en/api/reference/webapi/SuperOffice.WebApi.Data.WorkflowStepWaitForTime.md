@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_WorkflowStepWaitForTime"></a> Class WorkflowStepWaitForTime
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for WorkflowStepWaitForTime.
@@ -13,16 +13,16 @@ public class WorkflowStepWaitForTime : WorkflowStepBase
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[WorkflowStepBase](SuperOffice.WebApi.Data.WorkflowStepBase.md) ← 
-[WorkflowStepWaitForTime](SuperOffice.WebApi.Data.WorkflowStepWaitForTime.md)
+[WorkflowStepBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase) ← 
+[WorkflowStepWaitForTime](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepWaitForTime)
 
 #### Inherited Members
 
-[WorkflowStepBase.WorkflowStepId](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_WorkflowStepId), 
-[WorkflowStepBase.WorkflowId](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_WorkflowId), 
-[WorkflowStepBase.StepType\_String](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_StepType\_String), 
-[WorkflowStepBase.StepType](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_StepType), 
-[WorkflowStepBase.Rank](SuperOffice.WebApi.Data.WorkflowStepBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepBase\_Rank), 
+[WorkflowStepBase.WorkflowStepId](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_WorkflowStepId), 
+[WorkflowStepBase.WorkflowId](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_WorkflowId), 
+[WorkflowStepBase.StepType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_StepType_String), 
+[WorkflowStepBase.StepType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_StepType), 
+[WorkflowStepBase.Rank](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase#SuperOffice_WebApi_Data_WorkflowStepBase_Rank), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -55,11 +55,11 @@ public WorkflowTimeWaitIntervalType? IntervalType { get; set; }
 
 #### Property Value
 
- [WorkflowTimeWaitIntervalType](SuperOffice.WebApi.Data.WorkflowTimeWaitIntervalType.md)?
+ [WorkflowTimeWaitIntervalType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowTimeWaitIntervalType)?
 
 #### See Also
 
-[WorkflowStepWaitForTime](SuperOffice.WebApi.Data.WorkflowStepWaitForTime.md).[IntervalType\_String](SuperOffice.WebApi.Data.WorkflowStepWaitForTime.md\#SuperOffice\_WebApi\_Data\_WorkflowStepWaitForTime\_IntervalType\_String)
+[WorkflowStepWaitForTime](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepWaitForTime).[IntervalType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepWaitForTime#SuperOffice_WebApi_Data_WorkflowStepWaitForTime_IntervalType_String)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowStepWaitForTime_IntervalType_String"></a> IntervalType\_String
 
@@ -77,7 +77,7 @@ public string IntervalType_String { get; set; }
 
 #### See Also
 
-[WorkflowStepWaitForTime](SuperOffice.WebApi.Data.WorkflowStepWaitForTime.md).[IntervalType](SuperOffice.WebApi.Data.WorkflowStepWaitForTime.md\#SuperOffice\_WebApi\_Data\_WorkflowStepWaitForTime\_IntervalType)
+[WorkflowStepWaitForTime](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepWaitForTime).[IntervalType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepWaitForTime#SuperOffice_WebApi_Data_WorkflowStepWaitForTime_IntervalType)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowStepWaitForTime_NumIntervals"></a> NumIntervals
 
@@ -103,11 +103,11 @@ public WorkflowTimeWaitAlgorithm? TimeWaitAlgorithm { get; set; }
 
 #### Property Value
 
- [WorkflowTimeWaitAlgorithm](SuperOffice.WebApi.Data.WorkflowTimeWaitAlgorithm.md)?
+ [WorkflowTimeWaitAlgorithm](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowTimeWaitAlgorithm)?
 
 #### See Also
 
-[WorkflowStepWaitForTime](SuperOffice.WebApi.Data.WorkflowStepWaitForTime.md).[TimeWaitAlgorithm\_String](SuperOffice.WebApi.Data.WorkflowStepWaitForTime.md\#SuperOffice\_WebApi\_Data\_WorkflowStepWaitForTime\_TimeWaitAlgorithm\_String)
+[WorkflowStepWaitForTime](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepWaitForTime).[TimeWaitAlgorithm\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepWaitForTime#SuperOffice_WebApi_Data_WorkflowStepWaitForTime_TimeWaitAlgorithm_String)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowStepWaitForTime_TimeWaitAlgorithm_String"></a> TimeWaitAlgorithm\_String
 
@@ -125,7 +125,7 @@ public string TimeWaitAlgorithm_String { get; set; }
 
 #### See Also
 
-[WorkflowStepWaitForTime](SuperOffice.WebApi.Data.WorkflowStepWaitForTime.md).[TimeWaitAlgorithm](SuperOffice.WebApi.Data.WorkflowStepWaitForTime.md\#SuperOffice\_WebApi\_Data\_WorkflowStepWaitForTime\_TimeWaitAlgorithm)
+[WorkflowStepWaitForTime](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepWaitForTime).[TimeWaitAlgorithm](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepWaitForTime#SuperOffice_WebApi_Data_WorkflowStepWaitForTime_TimeWaitAlgorithm)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowStepWaitForTime_Until"></a> Until
 
@@ -141,5 +141,5 @@ public virtual string Until { get; set; }
 
 ## See Also
 
-[WorkflowAgent](SuperOffice.WebApi.Agents.WorkflowAgent.md)
+[WorkflowAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.WorkflowAgent)
 

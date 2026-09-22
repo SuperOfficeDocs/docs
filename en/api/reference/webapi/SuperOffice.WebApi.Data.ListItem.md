@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ListItem"></a> Class ListItem
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ListItem.
@@ -13,7 +13,7 @@ public class ListItem
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[ListItem](SuperOffice.WebApi.Data.ListItem.md)
+[ListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItem)
 
 #### Inherited Members
 
@@ -75,5 +75,5 @@ public virtual string ToolTip { get; set; }
 
 ## See Also
 
-[ListAgent](SuperOffice.WebApi.Agents.ListAgent.md)
+[ListAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ListAgent)
 

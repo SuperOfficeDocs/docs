@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Targets_GetTargetDimensionsForEntityTypeRequest"></a> Class Targets\_GetTargetDimensionsForEntityTypeRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Targets_GetTargetDimensionsForEntityTypeRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Targets\_GetTargetDimensionsForEntityTypeRequest](SuperOffice.WebApi.Data.Targets\_GetTargetDimensionsForEntityTypeRequest.md)
+[Targets\_GetTargetDimensionsForEntityTypeRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Targets_GetTargetDimensionsForEntityTypeRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public TargetEntityType EntityType { get; set; }
 
 #### Property Value
 
- [TargetEntityType](SuperOffice.WebApi.Data.TargetEntityType.md)
+ [TargetEntityType](/en/api/reference/webapi/SuperOffice.WebApi.Data.TargetEntityType)
 

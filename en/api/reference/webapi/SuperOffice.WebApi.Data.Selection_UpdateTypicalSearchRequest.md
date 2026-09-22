@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Selection_UpdateTypicalSearchRequest"></a> Class Selection\_UpdateTypicalSearchRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Selection_UpdateTypicalSearchRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Selection\_UpdateTypicalSearchRequest](SuperOffice.WebApi.Data.Selection\_UpdateTypicalSearchRequest.md)
+[Selection\_UpdateTypicalSearchRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Selection_UpdateTypicalSearchRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public TypicalSearches Searches { get; set; }
 
 #### Property Value
 
- [TypicalSearches](SuperOffice.WebApi.Data.TypicalSearches.md)
+ [TypicalSearches](/en/api/reference/webapi/SuperOffice.WebApi.Data.TypicalSearches)
 

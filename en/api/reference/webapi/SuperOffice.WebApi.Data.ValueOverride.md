@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ValueOverride"></a> Enum ValueOverride
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Has a pre-calculated value been overriden in a QuoteAlternative or QuoteLine, and in that case what &amp; how?

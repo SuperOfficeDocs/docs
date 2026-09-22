@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_RelationTarget"></a> Enum RelationTarget
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Target type of relation. (Contact, person or both)

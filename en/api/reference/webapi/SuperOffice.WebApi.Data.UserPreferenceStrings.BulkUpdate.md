@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_BulkUpdate"></a> Class UserPreferenceStrings.BulkUpdate
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 BulkUpdate - Misc
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.BulkUpdate
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.BulkUpdate](SuperOffice.WebApi.Data.UserPreferenceStrings.BulkUpdate.md)
+[UserPreferenceStrings.BulkUpdate](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.BulkUpdate)
 
 #### Inherited Members
 

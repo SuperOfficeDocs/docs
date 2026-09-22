@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ConfigurableScreenDelta"></a> Class ConfigurableScreenDelta
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ConfigurableScreenDelta.
@@ -13,13 +13,13 @@ public class ConfigurableScreenDelta : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[ConfigurableScreenDelta](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConfigurableScreenDelta)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -93,7 +93,7 @@ public virtual Associate CreatedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### <a id="SuperOffice_WebApi_Data_ConfigurableScreenDelta_CreatedDate"></a> CreatedDate
 
@@ -131,11 +131,11 @@ public DeltaState? DeltaState { get; set; }
 
 #### Property Value
 
- [DeltaState](SuperOffice.WebApi.Data.DeltaState.md)?
+ [DeltaState](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeltaState)?
 
 #### See Also
 
-[ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md).[DeltaState\_String](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md\#SuperOffice\_WebApi\_Data\_ConfigurableScreenDelta\_DeltaState\_String)
+[ConfigurableScreenDelta](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConfigurableScreenDelta).[DeltaState\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConfigurableScreenDelta#SuperOffice_WebApi_Data_ConfigurableScreenDelta_DeltaState_String)
 
 ### <a id="SuperOffice_WebApi_Data_ConfigurableScreenDelta_DeltaState_String"></a> DeltaState\_String
 
@@ -153,7 +153,7 @@ public string DeltaState_String { get; set; }
 
 #### See Also
 
-[ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md).[DeltaState](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md\#SuperOffice\_WebApi\_Data\_ConfigurableScreenDelta\_DeltaState)
+[ConfigurableScreenDelta](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConfigurableScreenDelta).[DeltaState](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConfigurableScreenDelta#SuperOffice_WebApi_Data_ConfigurableScreenDelta_DeltaState)
 
 ### <a id="SuperOffice_WebApi_Data_ConfigurableScreenDelta_DeltaType"></a> DeltaType
 
@@ -167,11 +167,11 @@ public DeltaType? DeltaType { get; set; }
 
 #### Property Value
 
- [DeltaType](SuperOffice.WebApi.Data.DeltaType.md)?
+ [DeltaType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeltaType)?
 
 #### See Also
 
-[ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md).[DeltaType\_String](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md\#SuperOffice\_WebApi\_Data\_ConfigurableScreenDelta\_DeltaType\_String)
+[ConfigurableScreenDelta](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConfigurableScreenDelta).[DeltaType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConfigurableScreenDelta#SuperOffice_WebApi_Data_ConfigurableScreenDelta_DeltaType_String)
 
 ### <a id="SuperOffice_WebApi_Data_ConfigurableScreenDelta_DeltaType_String"></a> DeltaType\_String
 
@@ -189,7 +189,7 @@ public string DeltaType_String { get; set; }
 
 #### See Also
 
-[ConfigurableScreenDelta](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md).[DeltaType](SuperOffice.WebApi.Data.ConfigurableScreenDelta.md\#SuperOffice\_WebApi\_Data\_ConfigurableScreenDelta\_DeltaType)
+[ConfigurableScreenDelta](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConfigurableScreenDelta).[DeltaType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConfigurableScreenDelta#SuperOffice_WebApi_Data_ConfigurableScreenDelta_DeltaType)
 
 ### <a id="SuperOffice_WebApi_Data_ConfigurableScreenDelta_Description"></a> Description
 
@@ -237,7 +237,7 @@ public virtual Associate UpdatedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### <a id="SuperOffice_WebApi_Data_ConfigurableScreenDelta_UpdatedDate"></a> UpdatedDate
 
@@ -253,5 +253,5 @@ public virtual DateTime UpdatedDate { get; set; }
 
 ## See Also
 
-[ConfigurationAgent](SuperOffice.WebApi.Agents.ConfigurationAgent.md)
+[ConfigurationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ConfigurationAgent)
 

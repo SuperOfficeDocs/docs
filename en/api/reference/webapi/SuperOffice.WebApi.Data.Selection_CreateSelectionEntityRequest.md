@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Selection_CreateSelectionEntityRequest"></a> Class Selection\_CreateSelectionEntityRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Selection_CreateSelectionEntityRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Selection\_CreateSelectionEntityRequest](SuperOffice.WebApi.Data.Selection\_CreateSelectionEntityRequest.md)
+[Selection\_CreateSelectionEntityRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Selection_CreateSelectionEntityRequest)
 
 #### Inherited Members
 

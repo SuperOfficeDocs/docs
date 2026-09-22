@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_ExtraFields"></a> Class UserPreferenceStrings.ExtraFields
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public static class UserPreferenceStrings.ExtraFields
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.ExtraFields](SuperOffice.WebApi.Data.UserPreferenceStrings.ExtraFields.md)
+[UserPreferenceStrings.ExtraFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.ExtraFields)
 
 #### Inherited Members
 

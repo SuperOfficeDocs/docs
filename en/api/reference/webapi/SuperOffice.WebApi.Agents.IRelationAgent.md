@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Agents_IRelationAgent"></a> Interface IRelationAgent
 
-Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
+Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
 
 Contact/Person relations
@@ -11,7 +11,7 @@ public interface IRelationAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
+[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
@@ -27,13 +27,13 @@ Task<ContactRelationEntity> CreateDefaultContactRelationEntityAsync(RequestOptio
 
 #### Parameters
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ContactRelationEntity](SuperOffice.WebApi.Data.ContactRelationEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ContactRelationEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactRelationEntity)\>
 
 A blank ContactRelationEntity
 
@@ -51,7 +51,7 @@ Task DeleteContactRelationAsync(int contactRelationEntityId, RequestOptions requ
 
 Relation to delete
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
@@ -73,13 +73,13 @@ Task<ContactRelationEntity> GetContactRelationEntityAsync(int contactRelationEnt
 
 The identifier of the ContactRelationEntity object
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ContactRelationEntity](SuperOffice.WebApi.Data.ContactRelationEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ContactRelationEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactRelationEntity)\>
 
 ContactRelationEntity
 
@@ -93,17 +93,17 @@ Task<ContactRelationEntity> SaveContactRelationAsync(ContactRelationEntity conta
 
 #### Parameters
 
-`contactRelationEntity` [ContactRelationEntity](SuperOffice.WebApi.Data.ContactRelationEntity.md)
+`contactRelationEntity` [ContactRelationEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactRelationEntity)
 
 Relation to save
 
-`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
+`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ContactRelationEntity](SuperOffice.WebApi.Data.ContactRelationEntity.md)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ContactRelationEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ContactRelationEntity)\>
 
 Saved relation
 

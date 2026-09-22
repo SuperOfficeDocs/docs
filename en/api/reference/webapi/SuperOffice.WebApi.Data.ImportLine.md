@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_ImportLine"></a> Class ImportLine
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for ImportLine.
@@ -13,13 +13,13 @@ public class ImportLine : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[ImportLine](SuperOffice.WebApi.Data.ImportLine.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[ImportLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.ImportLine)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -64,11 +64,11 @@ public ImportAction? Operation { get; set; }
 
 #### Property Value
 
- [ImportAction](SuperOffice.WebApi.Data.ImportAction.md)?
+ [ImportAction](/en/api/reference/webapi/SuperOffice.WebApi.Data.ImportAction)?
 
 #### See Also
 
-[ImportLine](SuperOffice.WebApi.Data.ImportLine.md).[Operation\_String](SuperOffice.WebApi.Data.ImportLine.md\#SuperOffice\_WebApi\_Data\_ImportLine\_Operation\_String)
+[ImportLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.ImportLine).[Operation\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ImportLine#SuperOffice_WebApi_Data_ImportLine_Operation_String)
 
 ### <a id="SuperOffice_WebApi_Data_ImportLine_Operation_String"></a> Operation\_String
 
@@ -86,7 +86,7 @@ public string Operation_String { get; set; }
 
 #### See Also
 
-[ImportLine](SuperOffice.WebApi.Data.ImportLine.md).[Operation](SuperOffice.WebApi.Data.ImportLine.md\#SuperOffice\_WebApi\_Data\_ImportLine\_Operation)
+[ImportLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.ImportLine).[Operation](/en/api/reference/webapi/SuperOffice.WebApi.Data.ImportLine#SuperOffice_WebApi_Data_ImportLine_Operation)
 
 ### <a id="SuperOffice_WebApi_Data_ImportLine_Selected"></a> Selected
 
@@ -112,11 +112,11 @@ public ImportEntityType? Type { get; set; }
 
 #### Property Value
 
- [ImportEntityType](SuperOffice.WebApi.Data.ImportEntityType.md)?
+ [ImportEntityType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ImportEntityType)?
 
 #### See Also
 
-[ImportLine](SuperOffice.WebApi.Data.ImportLine.md).[Type\_String](SuperOffice.WebApi.Data.ImportLine.md\#SuperOffice\_WebApi\_Data\_ImportLine\_Type\_String)
+[ImportLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.ImportLine).[Type\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.ImportLine#SuperOffice_WebApi_Data_ImportLine_Type_String)
 
 ### <a id="SuperOffice_WebApi_Data_ImportLine_Type_String"></a> Type\_String
 
@@ -134,7 +134,7 @@ public string Type_String { get; set; }
 
 #### See Also
 
-[ImportLine](SuperOffice.WebApi.Data.ImportLine.md).[Type](SuperOffice.WebApi.Data.ImportLine.md\#SuperOffice\_WebApi\_Data\_ImportLine\_Type)
+[ImportLine](/en/api/reference/webapi/SuperOffice.WebApi.Data.ImportLine).[Type](/en/api/reference/webapi/SuperOffice.WebApi.Data.ImportLine#SuperOffice_WebApi_Data_ImportLine_Type)
 
 ### <a id="SuperOffice_WebApi_Data_ImportLine_Values"></a> Values
 
@@ -150,5 +150,5 @@ public virtual string[] Values { get; set; }
 
 ## See Also
 
-[ImportAgent](SuperOffice.WebApi.Agents.ImportAgent.md)
+[ImportAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ImportAgent)
 

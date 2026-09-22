@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_GetProductTypesRequest"></a> Class List\_GetProductTypesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_GetProductTypesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_GetProductTypesRequest](SuperOffice.WebApi.Data.List\_GetProductTypesRequest.md)
+[List\_GetProductTypesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_GetProductTypesRequest)
 
 #### Inherited Members
 

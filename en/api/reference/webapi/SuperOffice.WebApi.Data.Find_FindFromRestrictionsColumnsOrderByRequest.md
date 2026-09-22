@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Find_FindFromRestrictionsColumnsOrderByRequest"></a> Class Find\_FindFromRestrictionsColumnsOrderByRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Find_FindFromRestrictionsColumnsOrderByRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Find\_FindFromRestrictionsColumnsOrderByRequest](SuperOffice.WebApi.Data.Find\_FindFromRestrictionsColumnsOrderByRequest.md)
+[Find\_FindFromRestrictionsColumnsOrderByRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Find_FindFromRestrictionsColumnsOrderByRequest)
 
 #### Inherited Members
 
@@ -50,7 +50,7 @@ public ArchiveOrderByInfo[] OrderBy { get; set; }
 
 #### Property Value
 
- [ArchiveOrderByInfo](SuperOffice.WebApi.Data.ArchiveOrderByInfo.md)\[\]
+ [ArchiveOrderByInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveOrderByInfo)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_Find_FindFromRestrictionsColumnsOrderByRequest_PageNumber"></a> PageNumber
 
@@ -90,5 +90,5 @@ public ArchiveRestrictionInfo[] Restrictions { get; set; }
 
 #### Property Value
 
- [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
+ [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
 

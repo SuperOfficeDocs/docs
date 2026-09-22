@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_SystemEventEntity"></a> Class SystemEventEntity
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for SystemEventEntity.
@@ -13,13 +13,13 @@ public class SystemEventEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[SystemEventEntity](SuperOffice.WebApi.Data.SystemEventEntity.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[SystemEventEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SystemEventEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -62,7 +62,7 @@ public virtual Associate ActivatedBy { get; set; }
 
 #### Property Value
 
- [Associate](SuperOffice.WebApi.Data.Associate.md)
+ [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
 ### <a id="SuperOffice_WebApi_Data_SystemEventEntity_Eta"></a> Eta
 
@@ -148,11 +148,11 @@ public SystemEventScope? Scope { get; set; }
 
 #### Property Value
 
- [SystemEventScope](SuperOffice.WebApi.Data.SystemEventScope.md)?
+ [SystemEventScope](/en/api/reference/webapi/SuperOffice.WebApi.Data.SystemEventScope)?
 
 #### See Also
 
-[SystemEventEntity](SuperOffice.WebApi.Data.SystemEventEntity.md).[Scope\_String](SuperOffice.WebApi.Data.SystemEventEntity.md\#SuperOffice\_WebApi\_Data\_SystemEventEntity\_Scope\_String)
+[SystemEventEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SystemEventEntity).[Scope\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.SystemEventEntity#SuperOffice_WebApi_Data_SystemEventEntity_Scope_String)
 
 ### <a id="SuperOffice_WebApi_Data_SystemEventEntity_Scope_String"></a> Scope\_String
 
@@ -170,7 +170,7 @@ public string Scope_String { get; set; }
 
 #### See Also
 
-[SystemEventEntity](SuperOffice.WebApi.Data.SystemEventEntity.md).[Scope](SuperOffice.WebApi.Data.SystemEventEntity.md\#SuperOffice\_WebApi\_Data\_SystemEventEntity\_Scope)
+[SystemEventEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SystemEventEntity).[Scope](/en/api/reference/webapi/SuperOffice.WebApi.Data.SystemEventEntity#SuperOffice_WebApi_Data_SystemEventEntity_Scope)
 
 ### <a id="SuperOffice_WebApi_Data_SystemEventEntity_SystemEventId"></a> SystemEventId
 
@@ -198,7 +198,7 @@ public virtual short UpdatedCount { get; set; }
 
 ## See Also
 
-[ConfigurationAgent](SuperOffice.WebApi.Agents.ConfigurationAgent.md), 
-[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md), 
+[ConfigurationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ConfigurationAgent), 
+[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent), 
 
 

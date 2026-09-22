@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_CleanUpBookingDeletedWithUpdateModeRequest"></a> Class Appointment\_CleanUpBookingDeletedWithUpdateModeRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_CleanUpBookingDeletedWithUpdateModeRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_CleanUpBookingDeletedWithUpdateModeRequest](SuperOffice.WebApi.Data.Appointment\_CleanUpBookingDeletedWithUpdateModeRequest.md)
+[Appointment\_CleanUpBookingDeletedWithUpdateModeRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_CleanUpBookingDeletedWithUpdateModeRequest)
 
 #### Inherited Members
 
@@ -50,5 +50,5 @@ public RecurrenceUpdateMode UpdateMode { get; set; }
 
 #### Property Value
 
- [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
+ [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
 

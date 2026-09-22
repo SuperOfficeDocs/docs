@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_SelectionSummaryItem"></a> Class SelectionSummaryItem
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for SelectionSummaryItem.
@@ -13,7 +13,7 @@ public class SelectionSummaryItem
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[SelectionSummaryItem](SuperOffice.WebApi.Data.SelectionSummaryItem.md)
+[SelectionSummaryItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionSummaryItem)
 
 #### Inherited Members
 
@@ -99,5 +99,5 @@ public virtual string TargetTable { get; set; }
 
 ## See Also
 
-[SelectionAgent](SuperOffice.WebApi.Agents.SelectionAgent.md)
+[SelectionAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SelectionAgent)
 

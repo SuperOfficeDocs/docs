@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_MailboxEntity"></a> Class MailboxEntity
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for MailboxEntity.
@@ -13,13 +13,13 @@ public class MailboxEntity : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[MailboxEntity](SuperOffice.WebApi.Data.MailboxEntity.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[MailboxEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.MailboxEntity)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -119,11 +119,11 @@ public MailboxType? ServerType { get; set; }
 
 #### Property Value
 
- [MailboxType](SuperOffice.WebApi.Data.MailboxType.md)?
+ [MailboxType](/en/api/reference/webapi/SuperOffice.WebApi.Data.MailboxType)?
 
 #### See Also
 
-[MailboxEntity](SuperOffice.WebApi.Data.MailboxEntity.md).[ServerType\_String](SuperOffice.WebApi.Data.MailboxEntity.md\#SuperOffice\_WebApi\_Data\_MailboxEntity\_ServerType\_String)
+[MailboxEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.MailboxEntity).[ServerType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.MailboxEntity#SuperOffice_WebApi_Data_MailboxEntity_ServerType_String)
 
 ### <a id="SuperOffice_WebApi_Data_MailboxEntity_ServerType_String"></a> ServerType\_String
 
@@ -141,7 +141,7 @@ public string ServerType_String { get; set; }
 
 #### See Also
 
-[MailboxEntity](SuperOffice.WebApi.Data.MailboxEntity.md).[ServerType](SuperOffice.WebApi.Data.MailboxEntity.md\#SuperOffice\_WebApi\_Data\_MailboxEntity\_ServerType)
+[MailboxEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.MailboxEntity).[ServerType](/en/api/reference/webapi/SuperOffice.WebApi.Data.MailboxEntity#SuperOffice_WebApi_Data_MailboxEntity_ServerType)
 
 ### <a id="SuperOffice_WebApi_Data_MailboxEntity_Username"></a> Username
 
@@ -157,5 +157,5 @@ public virtual string Username { get; set; }
 
 ## See Also
 
-[CustomerServiceAgent](SuperOffice.WebApi.Agents.CustomerServiceAgent.md)
+[CustomerServiceAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CustomerServiceAgent)
 

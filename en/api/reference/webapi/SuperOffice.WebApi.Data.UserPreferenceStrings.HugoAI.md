@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_HugoAI"></a> Class UserPreferenceStrings.HugoAI
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public static class UserPreferenceStrings.HugoAI
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.HugoAI](SuperOffice.WebApi.Data.UserPreferenceStrings.HugoAI.md)
+[UserPreferenceStrings.HugoAI](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.HugoAI)
 
 #### Inherited Members
 

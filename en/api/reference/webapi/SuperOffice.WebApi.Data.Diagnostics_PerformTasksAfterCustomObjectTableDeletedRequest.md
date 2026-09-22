@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Diagnostics_PerformTasksAfterCustomObjectTableDeletedRequest"></a> Class Diagnostics\_PerformTasksAfterCustomObjectTableDeletedRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Diagnostics_PerformTasksAfterCustomObjectTableDeletedRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Diagnostics\_PerformTasksAfterCustomObjectTableDeletedRequest](SuperOffice.WebApi.Data.Diagnostics\_PerformTasksAfterCustomObjectTableDeletedRequest.md)
+[Diagnostics\_PerformTasksAfterCustomObjectTableDeletedRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Diagnostics_PerformTasksAfterCustomObjectTableDeletedRequest)
 
 #### Inherited Members
 

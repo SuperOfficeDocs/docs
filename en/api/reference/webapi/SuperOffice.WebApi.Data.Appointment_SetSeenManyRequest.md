@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_SetSeenManyRequest"></a> Class Appointment\_SetSeenManyRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_SetSeenManyRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_SetSeenManyRequest](SuperOffice.WebApi.Data.Appointment\_SetSeenManyRequest.md)
+[Appointment\_SetSeenManyRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_SetSeenManyRequest)
 
 #### Inherited Members
 
@@ -50,5 +50,5 @@ public RecurrenceUpdateMode UpdateMode { get; set; }
 
 #### Property Value
 
- [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
+ [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
 

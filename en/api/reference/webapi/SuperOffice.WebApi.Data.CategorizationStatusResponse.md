@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CategorizationStatusResponse"></a> Class CategorizationStatusResponse
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for CategorizationStatusResponse.
@@ -13,13 +13,13 @@ public class CategorizationStatusResponse : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[CategorizationStatusResponse](SuperOffice.WebApi.Data.CategorizationStatusResponse.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[CategorizationStatusResponse](/en/api/reference/webapi/SuperOffice.WebApi.Data.CategorizationStatusResponse)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -62,7 +62,7 @@ public virtual CategorizationModelDetails CurrentModel { get; set; }
 
 #### Property Value
 
- [CategorizationModelDetails](SuperOffice.WebApi.Data.CategorizationModelDetails.md)
+ [CategorizationModelDetails](/en/api/reference/webapi/SuperOffice.WebApi.Data.CategorizationModelDetails)
 
 ### <a id="SuperOffice_WebApi_Data_CategorizationStatusResponse_PreviousModel"></a> PreviousModel
 
@@ -74,7 +74,7 @@ public virtual CategorizationModelDetails PreviousModel { get; set; }
 
 #### Property Value
 
- [CategorizationModelDetails](SuperOffice.WebApi.Data.CategorizationModelDetails.md)
+ [CategorizationModelDetails](/en/api/reference/webapi/SuperOffice.WebApi.Data.CategorizationModelDetails)
 
 ### <a id="SuperOffice_WebApi_Data_CategorizationStatusResponse_Status"></a> Status
 
@@ -90,5 +90,5 @@ public virtual string Status { get; set; }
 
 ## See Also
 
-[AIAgent](SuperOffice.WebApi.Agents.AIAgent.md)
+[AIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AIAgent)
 

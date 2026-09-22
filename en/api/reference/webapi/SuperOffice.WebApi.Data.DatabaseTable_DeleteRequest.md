@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DatabaseTable_DeleteRequest"></a> Class DatabaseTable\_DeleteRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class DatabaseTable_DeleteRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[DatabaseTable\_DeleteRequest](SuperOffice.WebApi.Data.DatabaseTable\_DeleteRequest.md)
+[DatabaseTable\_DeleteRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.DatabaseTable_DeleteRequest)
 
 #### Inherited Members
 

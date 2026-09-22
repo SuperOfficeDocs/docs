@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_PocketSection"></a> Class UserPreferenceStrings.PocketSection
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Preferences for Pocket client.
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.PocketSection
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.PocketSection](SuperOffice.WebApi.Data.UserPreferenceStrings.PocketSection.md)
+[UserPreferenceStrings.PocketSection](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.PocketSection)
 
 #### Inherited Members
 

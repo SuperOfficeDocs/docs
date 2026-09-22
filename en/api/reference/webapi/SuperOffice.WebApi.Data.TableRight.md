@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TableRight"></a> Class TableRight
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TableRight.
@@ -13,7 +13,7 @@ public class TableRight
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[TableRight](SuperOffice.WebApi.Data.TableRight.md)
+[TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.TableRight)
 
 #### Inherited Members
 
@@ -49,11 +49,11 @@ public ETableRight? Mask { get; set; }
 
 #### Property Value
 
- [ETableRight](SuperOffice.WebApi.Data.ETableRight.md)?
+ [ETableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.ETableRight)?
 
 #### See Also
 
-[TableRight](SuperOffice.WebApi.Data.TableRight.md).[Mask\_String](SuperOffice.WebApi.Data.TableRight.md\#SuperOffice\_WebApi\_Data\_TableRight\_Mask\_String)
+[TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.TableRight).[Mask\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.TableRight#SuperOffice_WebApi_Data_TableRight_Mask_String)
 
 ### <a id="SuperOffice_WebApi_Data_TableRight_Mask_String"></a> Mask\_String
 
@@ -71,7 +71,7 @@ public string Mask_String { get; set; }
 
 #### See Also
 
-[TableRight](SuperOffice.WebApi.Data.TableRight.md).[Mask](SuperOffice.WebApi.Data.TableRight.md\#SuperOffice\_WebApi\_Data\_TableRight\_Mask)
+[TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.TableRight).[Mask](/en/api/reference/webapi/SuperOffice.WebApi.Data.TableRight#SuperOffice_WebApi_Data_TableRight_Mask)
 
 ### <a id="SuperOffice_WebApi_Data_TableRight_Reason"></a> Reason
 

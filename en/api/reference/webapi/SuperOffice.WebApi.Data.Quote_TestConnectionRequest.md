@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Quote_TestConnectionRequest"></a> Class Quote\_TestConnectionRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Quote_TestConnectionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Quote\_TestConnectionRequest](SuperOffice.WebApi.Data.Quote\_TestConnectionRequest.md)
+[Quote\_TestConnectionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Quote_TestConnectionRequest)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public StringDictionary ConnectionData { get; set; }
 
 #### Property Value
 
- [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
+ [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
 ### <a id="SuperOffice_WebApi_Data_Quote_TestConnectionRequest_ConnectorName"></a> ConnectorName
 

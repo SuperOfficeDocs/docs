@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AddressSyncData"></a> Class AddressSyncData
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for AddressSyncData.
@@ -12,13 +12,13 @@ public class AddressSyncData : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[AddressSyncData](SuperOffice.WebApi.Data.AddressSyncData.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[AddressSyncData](/en/api/reference/webapi/SuperOffice.WebApi.Data.AddressSyncData)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -92,11 +92,11 @@ public AddressType? AddressType { get; set; }
 
 #### Property Value
 
- [AddressType](SuperOffice.WebApi.Data.AddressType.md)?
+ [AddressType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AddressType)?
 
 #### See Also
 
-[AddressSyncData](SuperOffice.WebApi.Data.AddressSyncData.md).[AddressType\_String](SuperOffice.WebApi.Data.AddressSyncData.md\#SuperOffice\_WebApi\_Data\_AddressSyncData\_AddressType\_String)
+[AddressSyncData](/en/api/reference/webapi/SuperOffice.WebApi.Data.AddressSyncData).[AddressType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.AddressSyncData#SuperOffice_WebApi_Data_AddressSyncData_AddressType_String)
 
 ### <a id="SuperOffice_WebApi_Data_AddressSyncData_AddressType_String"></a> AddressType\_String
 
@@ -113,7 +113,7 @@ public string AddressType_String { get; set; }
 
 #### See Also
 
-[AddressSyncData](SuperOffice.WebApi.Data.AddressSyncData.md).[AddressType](SuperOffice.WebApi.Data.AddressSyncData.md\#SuperOffice\_WebApi\_Data\_AddressSyncData\_AddressType)
+[AddressSyncData](/en/api/reference/webapi/SuperOffice.WebApi.Data.AddressSyncData).[AddressType](/en/api/reference/webapi/SuperOffice.WebApi.Data.AddressSyncData#SuperOffice_WebApi_Data_AddressSyncData_AddressType)
 
 ### <a id="SuperOffice_WebApi_Data_AddressSyncData_City"></a> City
 
@@ -187,5 +187,5 @@ public virtual string ZipCode { get; set; }
 
 ## See Also
 
-[AppointmentAgent](SuperOffice.WebApi.Agents.AppointmentAgent.md)
+[AppointmentAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AppointmentAgent)
 

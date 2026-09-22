@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Sale_GetSalesByDateRequest"></a> Class Sale\_GetSalesByDateRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Sale_GetSalesByDateRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Sale\_GetSalesByDateRequest](SuperOffice.WebApi.Data.Sale\_GetSalesByDateRequest.md)
+[Sale\_GetSalesByDateRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale_GetSalesByDateRequest)
 
 #### Inherited Members
 
@@ -60,7 +60,7 @@ public SaleStatus Status { get; set; }
 
 #### Property Value
 
- [SaleStatus](SuperOffice.WebApi.Data.SaleStatus.md)
+ [SaleStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleStatus)
 
 ### <a id="SuperOffice_WebApi_Data_Sale_GetSalesByDateRequest_ToDate"></a> ToDate
 

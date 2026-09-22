@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_DeleteAllHeadingsFromListDefinitionRequest"></a> Class List\_DeleteAllHeadingsFromListDefinitionRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_DeleteAllHeadingsFromListDefinitionRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_DeleteAllHeadingsFromListDefinitionRequest](SuperOffice.WebApi.Data.List\_DeleteAllHeadingsFromListDefinitionRequest.md)
+[List\_DeleteAllHeadingsFromListDefinitionRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_DeleteAllHeadingsFromListDefinitionRequest)
 
 #### Inherited Members
 

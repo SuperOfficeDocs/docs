@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Script"></a> Class Script
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for Script.
@@ -13,13 +13,13 @@ public class Script : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[Script](SuperOffice.WebApi.Data.Script.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[Script](/en/api/reference/webapi/SuperOffice.WebApi.Data.Script)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -64,11 +64,11 @@ public EjScriptVerb? BlockedVerbs { get; set; }
 
 #### Property Value
 
- [EjScriptVerb](SuperOffice.WebApi.Data.EjScriptVerb.md)?
+ [EjScriptVerb](/en/api/reference/webapi/SuperOffice.WebApi.Data.EjScriptVerb)?
 
 #### See Also
 
-[Script](SuperOffice.WebApi.Data.Script.md).[BlockedVerbs\_String](SuperOffice.WebApi.Data.Script.md\#SuperOffice\_WebApi\_Data\_Script\_BlockedVerbs\_String)
+[Script](/en/api/reference/webapi/SuperOffice.WebApi.Data.Script).[BlockedVerbs\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.Script#SuperOffice_WebApi_Data_Script_BlockedVerbs_String)
 
 ### <a id="SuperOffice_WebApi_Data_Script_BlockedVerbs_String"></a> BlockedVerbs\_String
 
@@ -86,7 +86,7 @@ public string BlockedVerbs_String { get; set; }
 
 #### See Also
 
-[Script](SuperOffice.WebApi.Data.Script.md).[BlockedVerbs](SuperOffice.WebApi.Data.Script.md\#SuperOffice\_WebApi\_Data\_Script\_BlockedVerbs)
+[Script](/en/api/reference/webapi/SuperOffice.WebApi.Data.Script).[BlockedVerbs](/en/api/reference/webapi/SuperOffice.WebApi.Data.Script#SuperOffice_WebApi_Data_Script_BlockedVerbs)
 
 ### <a id="SuperOffice_WebApi_Data_Script_Description"></a> Description
 
@@ -210,7 +210,7 @@ public virtual string UpdatedBy { get; set; }
 
 ## See Also
 
-[CRMScriptAgent](SuperOffice.WebApi.Agents.CRMScriptAgent.md), 
-[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md), 
+[CRMScriptAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CRMScriptAgent), 
+[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent), 
 
 

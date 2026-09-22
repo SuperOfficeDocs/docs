@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Marketing_DeleteAvailableFontRequest"></a> Class Marketing\_DeleteAvailableFontRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Marketing_DeleteAvailableFontRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Marketing\_DeleteAvailableFontRequest](SuperOffice.WebApi.Data.Marketing\_DeleteAvailableFontRequest.md)
+[Marketing\_DeleteAvailableFontRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Marketing_DeleteAvailableFontRequest)
 
 #### Inherited Members
 

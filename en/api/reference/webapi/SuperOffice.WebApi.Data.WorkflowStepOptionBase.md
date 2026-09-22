@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_WorkflowStepOptionBase"></a> Class WorkflowStepOptionBase
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for WorkflowStepOptionBase.
@@ -19,16 +19,16 @@ public class WorkflowStepOptionBase
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[WorkflowStepOptionBase](SuperOffice.WebApi.Data.WorkflowStepOptionBase.md)
+[WorkflowStepOptionBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepOptionBase)
 
 #### Derived
 
-[WorkflowStepOptionFormData](SuperOffice.WebApi.Data.WorkflowStepOptionFormData.md), 
-[WorkflowStepOptionFormSubmission](SuperOffice.WebApi.Data.WorkflowStepOptionFormSubmission.md), 
-[WorkflowStepOptionLinkClicked](SuperOffice.WebApi.Data.WorkflowStepOptionLinkClicked.md), 
-[WorkflowStepOptionPersonData](SuperOffice.WebApi.Data.WorkflowStepOptionPersonData.md), 
-[WorkflowStepOptionProjectMembership](SuperOffice.WebApi.Data.WorkflowStepOptionProjectMembership.md), 
-[WorkflowStepOptionSelectionMembership](SuperOffice.WebApi.Data.WorkflowStepOptionSelectionMembership.md)
+[WorkflowStepOptionFormData](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepOptionFormData), 
+[WorkflowStepOptionFormSubmission](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepOptionFormSubmission), 
+[WorkflowStepOptionLinkClicked](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepOptionLinkClicked), 
+[WorkflowStepOptionPersonData](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepOptionPersonData), 
+[WorkflowStepOptionProjectMembership](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepOptionProjectMembership), 
+[WorkflowStepOptionSelectionMembership](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepOptionSelectionMembership)
 
 #### Inherited Members
 
@@ -76,11 +76,11 @@ public WorkflowSplitOptionType? OptionType { get; set; }
 
 #### Property Value
 
- [WorkflowSplitOptionType](SuperOffice.WebApi.Data.WorkflowSplitOptionType.md)?
+ [WorkflowSplitOptionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowSplitOptionType)?
 
 #### See Also
 
-[WorkflowStepOptionBase](SuperOffice.WebApi.Data.WorkflowStepOptionBase.md).[OptionType\_String](SuperOffice.WebApi.Data.WorkflowStepOptionBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepOptionBase\_OptionType\_String)
+[WorkflowStepOptionBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepOptionBase).[OptionType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepOptionBase#SuperOffice_WebApi_Data_WorkflowStepOptionBase_OptionType_String)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowStepOptionBase_OptionType_String"></a> OptionType\_String
 
@@ -98,7 +98,7 @@ public string OptionType_String { get; set; }
 
 #### See Also
 
-[WorkflowStepOptionBase](SuperOffice.WebApi.Data.WorkflowStepOptionBase.md).[OptionType](SuperOffice.WebApi.Data.WorkflowStepOptionBase.md\#SuperOffice\_WebApi\_Data\_WorkflowStepOptionBase\_OptionType)
+[WorkflowStepOptionBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepOptionBase).[OptionType](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepOptionBase#SuperOffice_WebApi_Data_WorkflowStepOptionBase_OptionType)
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowStepOptionBase_Rank"></a> Rank
 
@@ -122,7 +122,7 @@ public virtual WorkflowStepBase[] Steps { get; set; }
 
 #### Property Value
 
- [WorkflowStepBase](SuperOffice.WebApi.Data.WorkflowStepBase.md)\[\]
+ [WorkflowStepBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.WorkflowStepBase)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_WorkflowStepOptionBase_WorkflowId"></a> WorkflowId
 
@@ -162,5 +162,5 @@ public virtual int WorkflowStepOptionId { get; set; }
 
 ## See Also
 
-[WorkflowAgent](SuperOffice.WebApi.Agents.WorkflowAgent.md)
+[WorkflowAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.WorkflowAgent)
 

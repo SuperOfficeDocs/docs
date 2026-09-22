@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_User_RemoveLicensesRequest"></a> Class User\_RemoveLicensesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class User_RemoveLicensesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[User\_RemoveLicensesRequest](SuperOffice.WebApi.Data.User\_RemoveLicensesRequest.md)
+[User\_RemoveLicensesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.User_RemoveLicensesRequest)
 
 #### Inherited Members
 

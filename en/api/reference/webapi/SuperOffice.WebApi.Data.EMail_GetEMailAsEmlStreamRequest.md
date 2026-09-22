@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_EMail_GetEMailAsEmlStreamRequest"></a> Class EMail\_GetEMailAsEmlStreamRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class EMail_GetEMailAsEmlStreamRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[EMail\_GetEMailAsEmlStreamRequest](SuperOffice.WebApi.Data.EMail\_GetEMailAsEmlStreamRequest.md)
+[EMail\_GetEMailAsEmlStreamRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMail_GetEMailAsEmlStreamRequest)
 
 #### Inherited Members
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_FieldMetadataType"></a> Enum FieldMetadataType
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Describes the different types of controls that can appear in the Configure connection dialog

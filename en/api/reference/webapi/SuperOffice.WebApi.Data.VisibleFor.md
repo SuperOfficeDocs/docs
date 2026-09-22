@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_VisibleFor"></a> Class VisibleFor
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for VisibleFor.
@@ -12,13 +12,13 @@ public class VisibleFor : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[VisibleFor](SuperOffice.WebApi.Data.VisibleFor.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[VisibleFor](/en/api/reference/webapi/SuperOffice.WebApi.Data.VisibleFor)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -60,11 +60,11 @@ public Visibility? Visibility { get; set; }
 
 #### Property Value
 
- [Visibility](SuperOffice.WebApi.Data.Visibility.md)?
+ [Visibility](/en/api/reference/webapi/SuperOffice.WebApi.Data.Visibility)?
 
 #### See Also
 
-[VisibleFor](SuperOffice.WebApi.Data.VisibleFor.md).[Visibility\_String](SuperOffice.WebApi.Data.VisibleFor.md\#SuperOffice\_WebApi\_Data\_VisibleFor\_Visibility\_String)
+[VisibleFor](/en/api/reference/webapi/SuperOffice.WebApi.Data.VisibleFor).[Visibility\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.VisibleFor#SuperOffice_WebApi_Data_VisibleFor_Visibility_String)
 
 ### <a id="SuperOffice_WebApi_Data_VisibleFor_Visibility_String"></a> Visibility\_String
 
@@ -81,7 +81,7 @@ public string Visibility_String { get; set; }
 
 #### See Also
 
-[VisibleFor](SuperOffice.WebApi.Data.VisibleFor.md).[Visibility](SuperOffice.WebApi.Data.VisibleFor.md\#SuperOffice\_WebApi\_Data\_VisibleFor\_Visibility)
+[VisibleFor](/en/api/reference/webapi/SuperOffice.WebApi.Data.VisibleFor).[Visibility](/en/api/reference/webapi/SuperOffice.WebApi.Data.VisibleFor#SuperOffice_WebApi_Data_VisibleFor_Visibility)
 
 ### <a id="SuperOffice_WebApi_Data_VisibleFor_VisibleId"></a> VisibleId
 
@@ -95,5 +95,5 @@ public virtual int VisibleId { get; set; }
 
 ## See Also
 
-[SentryAgent](SuperOffice.WebApi.Agents.SentryAgent.md)
+[SentryAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.SentryAgent)
 

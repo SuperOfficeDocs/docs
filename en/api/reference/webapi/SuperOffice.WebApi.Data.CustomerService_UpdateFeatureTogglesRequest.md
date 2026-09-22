@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CustomerService_UpdateFeatureTogglesRequest"></a> Class CustomerService\_UpdateFeatureTogglesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CustomerService_UpdateFeatureTogglesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CustomerService\_UpdateFeatureTogglesRequest](SuperOffice.WebApi.Data.CustomerService\_UpdateFeatureTogglesRequest.md)
+[CustomerService\_UpdateFeatureTogglesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerService_UpdateFeatureTogglesRequest)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public CsFeatureToggle[] FeatureToggles { get; set; }
 
 #### Property Value
 
- [CsFeatureToggle](SuperOffice.WebApi.Data.CsFeatureToggle.md)\[\]
+ [CsFeatureToggle](/en/api/reference/webapi/SuperOffice.WebApi.Data.CsFeatureToggle)\[\]
 

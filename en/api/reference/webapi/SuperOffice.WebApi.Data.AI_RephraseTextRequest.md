@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AI_RephraseTextRequest"></a> Class AI\_RephraseTextRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class AI_RephraseTextRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AI\_RephraseTextRequest](SuperOffice.WebApi.Data.AI\_RephraseTextRequest.md)
+[AI\_RephraseTextRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_RephraseTextRequest)
 
 #### Inherited Members
 
@@ -50,7 +50,7 @@ public AiTextStyle Style { get; set; }
 
 #### Property Value
 
- [AiTextStyle](SuperOffice.WebApi.Data.AiTextStyle.md)
+ [AiTextStyle](/en/api/reference/webapi/SuperOffice.WebApi.Data.AiTextStyle)
 
 ### <a id="SuperOffice_WebApi_Data_AI_RephraseTextRequest_Text"></a> Text
 

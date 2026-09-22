@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_PreviewFaqEntry"></a> Class PreviewFaqEntry
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for PreviewFaqEntry.
@@ -13,13 +13,13 @@ public class PreviewFaqEntry : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
-[PreviewFaqEntry](SuperOffice.WebApi.Data.PreviewFaqEntry.md)
+[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
+[PreviewFaqEntry](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreviewFaqEntry)
 
 #### Inherited Members
 
-[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
-[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
+[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
+[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -52,11 +52,11 @@ public KbAccessLevel? AccessLevel { get; set; }
 
 #### Property Value
 
- [KbAccessLevel](SuperOffice.WebApi.Data.KbAccessLevel.md)?
+ [KbAccessLevel](/en/api/reference/webapi/SuperOffice.WebApi.Data.KbAccessLevel)?
 
 #### See Also
 
-[PreviewFaqEntry](SuperOffice.WebApi.Data.PreviewFaqEntry.md).[AccessLevel\_String](SuperOffice.WebApi.Data.PreviewFaqEntry.md\#SuperOffice\_WebApi\_Data\_PreviewFaqEntry\_AccessLevel\_String)
+[PreviewFaqEntry](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreviewFaqEntry).[AccessLevel\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreviewFaqEntry#SuperOffice_WebApi_Data_PreviewFaqEntry_AccessLevel_String)
 
 ### <a id="SuperOffice_WebApi_Data_PreviewFaqEntry_AccessLevel_String"></a> AccessLevel\_String
 
@@ -74,7 +74,7 @@ public string AccessLevel_String { get; set; }
 
 #### See Also
 
-[PreviewFaqEntry](SuperOffice.WebApi.Data.PreviewFaqEntry.md).[AccessLevel](SuperOffice.WebApi.Data.PreviewFaqEntry.md\#SuperOffice\_WebApi\_Data\_PreviewFaqEntry\_AccessLevel)
+[PreviewFaqEntry](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreviewFaqEntry).[AccessLevel](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreviewFaqEntry#SuperOffice_WebApi_Data_PreviewFaqEntry_AccessLevel)
 
 ### <a id="SuperOffice_WebApi_Data_PreviewFaqEntry_Answer"></a> Answer
 
@@ -138,5 +138,5 @@ public virtual DateTime Updated { get; set; }
 
 ## See Also
 
-[CustomerServiceAgent](SuperOffice.WebApi.Agents.CustomerServiceAgent.md)
+[CustomerServiceAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.CustomerServiceAgent)
 

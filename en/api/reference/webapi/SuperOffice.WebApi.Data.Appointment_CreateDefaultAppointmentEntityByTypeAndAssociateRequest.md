@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_CreateDefaultAppointmentEntityByTypeAndAssociateRequest"></a> Class Appointment\_CreateDefaultAppointmentEntityByTypeAndAssociateRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_CreateDefaultAppointmentEntityByTypeAndAssociateRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_CreateDefaultAppointmentEntityByTypeAndAssociateRequest](SuperOffice.WebApi.Data.Appointment\_CreateDefaultAppointmentEntityByTypeAndAssociateRequest.md)
+[Appointment\_CreateDefaultAppointmentEntityByTypeAndAssociateRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_CreateDefaultAppointmentEntityByTypeAndAssociateRequest)
 
 #### Inherited Members
 
@@ -50,5 +50,5 @@ public TaskType Type { get; set; }
 
 #### Property Value
 
- [TaskType](SuperOffice.WebApi.Data.TaskType.md)
+ [TaskType](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskType)
 

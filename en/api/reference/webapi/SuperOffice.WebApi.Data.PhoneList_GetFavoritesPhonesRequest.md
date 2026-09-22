@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_PhoneList_GetFavoritesPhonesRequest"></a> Class PhoneList\_GetFavoritesPhonesRequest
 
-Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
+Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class PhoneList_GetFavoritesPhonesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[PhoneList\_GetFavoritesPhonesRequest](SuperOffice.WebApi.Data.PhoneList\_GetFavoritesPhonesRequest.md)
+[PhoneList\_GetFavoritesPhonesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.PhoneList_GetFavoritesPhonesRequest)
 
 #### Inherited Members
 
