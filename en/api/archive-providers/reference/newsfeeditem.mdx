@@ -32,9 +32,11 @@ Entity name: "newsfeeditem"
 |newsFeedItemId|int|Id: Primary key| x |
 |title|string|Title: Headline| x |
 |summary|string|Summary: Short text| x |
+|type|string|Type: Item type| x |
 |fromName|string|From: Sender's name| x |
 |fromCategory|string|Category: Sender's category| x |
 |sourceLink|string|Source link: Link to source material| x |
+|sourceSoProtocol|string|SuperOffice Protocol Source link: SOProtocol link to source within SuperOffice| x |
 |imageLink|string|Image link: Link to image| x |
 |previewHint|string|Preview hint: Preview hint| x |
 |status|listAny|Status: Newsfeed item processing status| x |
@@ -124,12 +126,12 @@ Entity name: "newsfeeditem"
 |person/mrMrs|string|Contact - Mr/Ms: Displays whether the contact is addressed as Mr or Ms| x |
 |person/position|listAny|Contact - Position| x |
 |person/personNumber|string|Contact - Number: Displays the contact's number| x |
-|person/title|string|Contact - Title: Displays the contact's job title| x |
-|person/personCountry|listAny|Contact - Country: Country| x |
 
 ## Supported Columns (cont.)
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|person/title|string|Contact - Title: Displays the contact's job title| x |
+|person/personCountry|listAny|Contact - Country: Country| x |
 |person/personCountryId|int|Contact - Country ID: Country ID| x |
 |person/personNoMail|bool|Contact - No Mailings: Displays the contact's No Mailings checkbox| x |
 |person/rank|int|Contact - Rank: Displays a contact's current rank| x |
@@ -228,12 +230,12 @@ Entity name: "newsfeeditem"
 |project/activeErpLinks|bool|Project - ERP connected: Is there an active ERP Sync?| x |
 |project/eventId|int|Project - Event ID: Event ID| x |
 |project/startDate|date|Project - Start date: Project start date| x |
-|project/projectUrl/URLAddress|string|Project - URL| x |
-|project/projectUrl/URLDescription|string|Project - Description| x |
 
 ## Supported Columns (cont.)
 | Name | Restriction | Description | OrderBy |
 | ---- | ----- | ------- | ------ |
+|project/projectUrl/URLAddress|string|Project - URL| x |
+|project/projectUrl/URLDescription|string|Project - Description| x |
 |project/project/textId|int|Project - Text ID| x |
 |project/project/infoText|positiveString|Project - Information: Displays the text entered in the description field| x |
 |sale/completed|bool|Sale - Completed: Displays a checkbox showing if an appointment is completed| x |
@@ -302,7 +304,7 @@ Entity name: "newsfeeditem"
 ## Sample
 
 ```http!
-GET /api/v1/archive/NewsFeedItem?$select=contact/updatedByFullName,person/isStakeholder,project/imageThumbnail,sale/updatedDate
+GET /api/v1/archive/NewsFeedItem?$select=project/hasInfoText,sale/saleTypeId,person/firstName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

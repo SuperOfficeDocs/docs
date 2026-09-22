@@ -797,7 +797,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Rela
 ## Sample
 
 ```http!
-GET /api/v1/archive/RelatedTickets?$select=createdByWorkflow,person/personUdef/SuperOffice:11,contact/activeErpLinks,contact/contactAssociate/isActive,sale/stageId
+GET /api/v1/archive/RelatedTickets?$select=person/personAssociate/isLocation,person/withdrawnEmarketingConsent,contact/contactExtra/y_organization/x_name,sale/saleUdef/SuperOffice:8
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

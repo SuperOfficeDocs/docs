@@ -114,8 +114,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -196,8 +196,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -370,8 +370,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -520,8 +520,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -670,8 +670,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -752,8 +752,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -834,8 +834,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -916,8 +916,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -1066,8 +1066,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -1148,8 +1148,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -1230,8 +1230,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -1312,8 +1312,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -1480,8 +1480,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -1648,8 +1648,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -1816,8 +1816,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -1984,8 +1984,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -2134,8 +2134,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -2261,8 +2261,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -2411,8 +2411,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -2579,8 +2579,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -2747,8 +2747,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -2915,8 +2915,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -3083,8 +3083,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -3251,8 +3251,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -3419,8 +3419,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -3569,8 +3569,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -3719,8 +3719,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -3869,8 +3869,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -3969,8 +3969,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -4137,8 +4137,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -4305,8 +4305,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -4319,15 +4319,15 @@
   },
   "servers": [
     {
-      "url": "http://localhost:49843"
+      "url": "http://localhost:62507"
     },
     {
-      "url": "https://localhost:49843"
+      "url": "https://localhost:62507"
     }
   ],
   "components": {
     "securitySchemes": {
-      "Password": {
+      "SOPassword": {
         "type": "http",
         "description": "SuperOffice username:password are passed in Base64-encoded. \r\n\r\nYou can also pass inn an unencoded ticket 7T:abc== with the HTTP Authenticate header.\r\n",
         "scheme": "basic"

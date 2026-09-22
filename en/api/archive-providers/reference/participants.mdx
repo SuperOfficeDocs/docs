@@ -22,7 +22,6 @@ or one of the slaves.
 For appointments under construction, where the data have not yet been saved to the database, the
 caller must specify all data through the use of restrictions - some of which are then used for
 information, and some as keys to fetch actual person or associate/resource records from the database.
-
 | Restriction | Meaning |
 |---|---|
 | `appointmentRestrictionId` | Single appointment id, using the = operator. This restriction is used on its own for fetching information from existing appointment records. The id may be of any appointment in the booking, and all participants will be fetched (limited by entity selection). |
@@ -237,7 +236,7 @@ in through the externalPersonRestrictionId are actually associates, then that to
 ## Sample
 
 ```http!
-GET /api/v1/archive/Participants?$select=hasCompany,fullNameWithContact,ticketPriority
+GET /api/v1/archive/Participants?$select=fullNameWithContact,ticketPriority
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

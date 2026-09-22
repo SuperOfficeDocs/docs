@@ -1350,7 +1350,7 @@ Static archive Provider for the Selection sale archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleStaticSelectionV2?$select=soldReason,person/restrictionAddress/county,person/personExtra/x_person_timespan,contact/NumberOfNotCompletedActivities,contact/LastSale
+GET /api/v1/archive/SaleStaticSelectionV2?$select=person/personAssociate/assocName,appointment/alarm,appointment/associate/isActive,document/associate/locationAddress,saleStakeholder/salesRoleId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

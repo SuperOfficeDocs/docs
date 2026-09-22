@@ -1,4 +1,4 @@
-# Class TimeZoneAgent {#SuperOffice_WebApi_Agents_TimeZoneAgent}
+# <a id="SuperOffice_WebApi_Agents_TimeZoneAgent"></a> Class TimeZoneAgent
 
 Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
@@ -38,7 +38,7 @@ public class TimeZoneAgent : AgentBase, ITimeZoneAgent, IAgentBase, IDisposable
 [AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
 [AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequest_System_Net_Http_HttpRequestMessage_SuperOffice_WebApi_RequestOptions_), 
 [AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ThrowOnResponseErrorAsync_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpResponseMessage_), 
-[AgentBase.ParseResponse&lt;T\&gt;\(HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseResponse__1_System_Net_Http_HttpResponseMessage_), 
+[AgentBase.ParseResponse<T\>\(HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseResponse__1_System_Net_Http_HttpResponseMessage_), 
 [AgentBase.Finally\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Finally_SuperOffice_WebApi_RequestOptions_), 
 [AgentBase.Dispose\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Dispose), 
 [AgentBase.Configuration](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Configuration), 
@@ -57,19 +57,19 @@ public class TimeZoneAgent : AgentBase, ITimeZoneAgent, IAgentBase, IDisposable
 
 ## Examples
 
-&lt;pre&gt;&lt;code class="lang-csharp"&gt;using SuperOffice.WebApi;
+<pre><code class="lang-csharp">using SuperOffice.WebApi;
 using SuperOffice.WebApi.Agents;
 
 var mySession = new WebApiOptions("http://example.com/super/api");
 mySession.Authorization = new AuthorizationUsernamePassword("user", "pass");
 using (TimeZoneAgent agent = new TimeZoneAgent(mySession))
-\{
+{
       // call methods on agent here...
-\}&lt;/code&gt;&lt;/pre&gt;
+}</code></pre>
 
 ## Constructors
 
-### TimeZoneAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_TimeZoneAgent__ctor_System_Net_Http_HttpClient_}
+### <a id="SuperOffice_WebApi_Agents_TimeZoneAgent__ctor_System_Net_Http_HttpClient_"></a> TimeZoneAgent\(HttpClient\)
 
 Constructor: TimeZone maintenance
 
@@ -83,7 +83,7 @@ public TimeZoneAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### TimeZoneAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_TimeZoneAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
+### <a id="SuperOffice_WebApi_Agents_TimeZoneAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"></a> TimeZoneAgent\(WebApiOptions, HttpClient\)
 
 Constructor: TimeZone maintenance
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### CheckNewTimeZoneDataAvailableAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_TimeZoneAgent_CheckNewTimeZoneDataAvailableAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_TimeZoneAgent_CheckNewTimeZoneDataAvailableAsync_SuperOffice_WebApi_RequestOptions_"></a> CheckNewTimeZoneDataAvailableAsync\(RequestOptions\)
 
 Check to see if new timezone data is available
 
@@ -119,11 +119,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
 
 Returns true if new timezone info is found available, false otherwise
 
-### DeleteTimeZonesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_TimeZoneAgent_DeleteTimeZonesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_TimeZoneAgent_DeleteTimeZonesAsync_SuperOffice_WebApi_RequestOptions_"></a> DeleteTimeZonesAsync\(RequestOptions\)
 
 Deletes all time zone data (locations and rules) from the database
 
@@ -141,7 +141,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### GetBaseTimeZoneIdAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_TimeZoneAgent_GetBaseTimeZoneIdAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_TimeZoneAgent_GetBaseTimeZoneIdAsync_SuperOffice_WebApi_RequestOptions_"></a> GetBaseTimeZoneIdAsync\(RequestOptions\)
 
 Get the base timezone id.
 
@@ -157,11 +157,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
 
 Returns the base timezone id. Returns 0 if not set.
 
-### GetDefaultTimeZoneInformationAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_TimeZoneAgent_GetDefaultTimeZoneInformationAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_TimeZoneAgent_GetDefaultTimeZoneInformationAsync_SuperOffice_WebApi_RequestOptions_"></a> GetDefaultTimeZoneInformationAsync\(RequestOptions\)
 
 Get information about the current, preferred timezone for the current user. If no such preference has been set, returns the correct fallback (and UserPreferenceId is 0)
 
@@ -177,11 +177,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PreferredTimeZone](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferredTimeZone)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PreferredTimeZone](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreferredTimeZone)\>
 
 Get information about the current, preferred timezone for the current user.
 
-### GetDefaultTimeZonePreferenceAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_TimeZoneAgent_GetDefaultTimeZonePreferenceAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_TimeZoneAgent_GetDefaultTimeZonePreferenceAsync_SuperOffice_WebApi_RequestOptions_"></a> GetDefaultTimeZonePreferenceAsync\(RequestOptions\)
 
 Returns the id of the default timezone preference with deflevel system wide
 
@@ -197,11 +197,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
 
 The id of the system wide default timezone preference
 
-### InitializeTimeZoneDataAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_TimeZoneAgent_InitializeTimeZoneDataAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_TimeZoneAgent_InitializeTimeZoneDataAsync_SuperOffice_WebApi_RequestOptions_"></a> InitializeTimeZoneDataAsync\(RequestOptions\)
 
 Initalizes the TimeZoneData
 
@@ -217,9 +217,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TimeZoneData](/en/api/reference/webapi/SuperOffice.WebApi.Data.TimeZoneData)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TimeZoneData](/en/api/reference/webapi/SuperOffice.WebApi.Data.TimeZoneData)\[\]\>
 
-### SetActiveTimeZoneRowAsync\(int, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_TimeZoneAgent_SetActiveTimeZoneRowAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_TimeZoneAgent_SetActiveTimeZoneRowAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> SetActiveTimeZoneRowAsync\(int, bool, RequestOptions\)
 
 Set active state of singe row in the TZLocation table
 
@@ -245,7 +245,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### SetActiveTimeZonesByFilterAsync\(string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_TimeZoneAgent_SetActiveTimeZonesByFilterAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_TimeZoneAgent_SetActiveTimeZonesByFilterAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> SetActiveTimeZonesByFilterAsync\(string, bool, RequestOptions\)
 
 Toggles active state of a single row in the TZLocation table
 
@@ -271,7 +271,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### SetBaseTimeZoneIdAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TimeZoneAgent_SetBaseTimeZoneIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_TimeZoneAgent_SetBaseTimeZoneIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> SetBaseTimeZoneIdAsync\(int, RequestOptions\)
 
 Set the base timezone id.
 
@@ -291,11 +291,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
 
 Returns true if setting of base timezone was done
 
-### TimeOfLastTimeZoneUpdateAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_TimeZoneAgent_TimeOfLastTimeZoneUpdateAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_TimeZoneAgent_TimeOfLastTimeZoneUpdateAsync_SuperOffice_WebApi_RequestOptions_"></a> TimeOfLastTimeZoneUpdateAsync\(RequestOptions\)
 
 Get the time time zone data was last updated
 
@@ -311,11 +311,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)\>
 
 Time of last update
 
-### ToggleActiveTimeZoneRowAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_TimeZoneAgent_ToggleActiveTimeZoneRowAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_TimeZoneAgent_ToggleActiveTimeZoneRowAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> ToggleActiveTimeZoneRowAsync\(int, RequestOptions\)
 
 Toggles active state of a single row in the TZLocation table
 
@@ -337,7 +337,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### UpdateTimeZoneDataAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_TimeZoneAgent_UpdateTimeZoneDataAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_TimeZoneAgent_UpdateTimeZoneDataAsync_SuperOffice_WebApi_RequestOptions_"></a> UpdateTimeZoneDataAsync\(RequestOptions\)
 
 Retrieve time zone data from the SuperOffice server and update TimeZone data in the database
 
@@ -353,7 +353,7 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
 
 Returns true if the operation succeeded
 

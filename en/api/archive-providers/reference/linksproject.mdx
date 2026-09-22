@@ -141,7 +141,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Link
 ## Sample
 
 ```http!
-GET /api/v1/archive/LinksProject?$select=projectAssociate/ejUserId,projectUdef/SuperOffice:8,LastCompletedSale
+GET /api/v1/archive/LinksProject?$select=projectPublish/publishedTo,projectAssociate/usergroup
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -793,7 +793,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Recy
 ## Sample
 
 ```http!
-GET /api/v1/archive/RecycleTicket?$select=createdByWorkflow,ownedBy/ejStatus,person/personPrivate/description,person/personAssociate/assocName,contact/postAddress/formattedMultiLineAddress
+GET /api/v1/archive/RecycleTicket?$select=getNoRows,person/lastName,person/personActiveErpLinks,person/personUdef/SuperOffice:8,person/correspondingAssociate/isActiveText
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

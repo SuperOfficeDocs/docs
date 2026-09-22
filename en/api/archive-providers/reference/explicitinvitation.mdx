@@ -756,7 +756,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Expl
 ## Sample
 
 ```http!
-GET /api/v1/archive/ExplicitInvitation?$select=cautionWarning,contact/contactExtra/x_contact_float,person/personExtra/x_person_hidden_integer,person/personAssociate/title,person/correspondingAssociate/middleName
+GET /api/v1/archive/ExplicitInvitation?$select=intention,contact/registeredBy,contact/postAddress/line1,person/personDeletedDate,project/projectAssociate/ejUserId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

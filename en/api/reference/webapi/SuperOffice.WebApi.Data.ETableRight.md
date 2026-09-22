@@ -103,6 +103,12 @@ public enum ETableRight
 
 
 
+`URU = 34` 
+
+34: Update or RestrictedUpdate
+
+
+
 `Uninitialized = 128` 
 
 128: Magic value to indicate not
@@ -118,6 +124,12 @@ public enum ETableRight
 `Update = 2` 
 
 2: The user is allowed to modify the values in this row.
+
+
+
+`WRITE = 38` 
+
+38: Update/RestrictedUpdate or Insert
 
 
 

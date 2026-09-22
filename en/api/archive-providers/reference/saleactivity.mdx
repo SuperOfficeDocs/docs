@@ -782,7 +782,7 @@ Activity archive provider for the Sale card
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleActivity?$select=contact/contactNoMail,project/projectAssociate/contactFullName,sale/updatedDate
+GET /api/v1/archive/SaleActivity?$select=person/title,person/supportAssociate,contact/restrictionAddress/wgs84latitude,documentUdef/SuperOffice:8
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

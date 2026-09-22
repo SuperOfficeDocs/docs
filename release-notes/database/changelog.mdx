@@ -1,14 +1,14 @@
 ---
-title: What's new in version 12.3.2570.0
-description: What's new in database version 12.3.2570.0.
-sidebarTitle: "12.3 - database changelog"
+title: What's new in version 12.4.1514.0
+description: What's new in database version 12.4.1514.0.
+sidebarTitle: "12.4 - database changelog"
 generated: true
 keywords: database
 content_type: release-note
 envir: online
 ---
 
-## Released database changes in version 12.3.2570.0
+## Released database changes in version 12.4.1514.0
 
 ## SuperOffice
 
@@ -862,6 +862,22 @@ sale\_cycle
 * Modify table SaleHist
 sale\_cycle
 
+**Step 152**
+
+Improve the Dutch translations of the built-in Lead status list items 'Contacting' and 'Re-nurture'
+
+
+**Step 153**
+
+Ensure SaintConfiguration has exactly one row per owner table: remove duplicates (highest id wins) and insert missing rows for contact, person and project
+
+
+**Step 154**
+
+Add a unique index on SaintConfiguration.ownerTable, so that an owner table can never get more than one configuration row
+
+* Modify table SaintConfiguration
+
 ## ai
 
 The `ai_chat_turn` table contains chat history for user's chatbot sessions with GPT. Chats are keyed by the chat_id and associate_id, and ordered by timestamp. Chat Messages are automatically added to the history as the bot generates answers.
@@ -1180,7 +1196,7 @@ Update document template to sync emailmode with privacytype
 
 **Step 24**
 
-Improve GDPR field descriptions: adopt the more meaningful list-specific text for LegalBase and ConsentSource (name/rank/tooltip/key), and fix the copy/paste ConsentPerson.consentPurpose_id description ('Legal base' -\> 'Consent purpose').
+Improve GDPR field descriptions: adopt the more meaningful list-specific text for LegalBase and ConsentSource (name/rank/tooltip/key), and fix the copy/paste ConsentPerson.consentPurpose_id description ('Legal base' -> 'Consent purpose').
 
 * Modify table LegalBase
 name, tooltip, rank, key
@@ -2548,6 +2564,20 @@ Add Location and RatingPercent to `NewsFeedItem`. Bump CTA Identifier length to 
 Location, RatingPercent
 * Modify table NewsFeedItemCta
 Identifier
+
+**Step 3**
+
+Add SourceSoProtocol to `NewsFeedItem` so that start page can open the agent topic directly.
+
+* Modify table NewsFeedItem
+SourceSoProtocol
+
+**Step 4**
+
+Add Type to `NewsFeedItem` so that start page can open filter/count by message type without analyzing the CTAs or message content.
+
+* Modify table NewsFeedItem
+Type
 
 ## Notifications
 

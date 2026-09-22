@@ -1,4 +1,4 @@
-# Class AuthorizationImplicit {#SuperOffice_WebApi_Authorization_AuthorizationImplicit}
+# <a id="SuperOffice_WebApi_Authorization_AuthorizationImplicit"></a> Class AuthorizationImplicit
 
 Namespace: [SuperOffice.WebApi.Authorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization)  
 Assembly: SuperOffice.WebApi.Authorization.dll  
@@ -31,7 +31,7 @@ public class AuthorizationImplicit : IAuthorization
 
 ## Constructors
 
-### AuthorizationImplicit\(\) {#SuperOffice_WebApi_Authorization_AuthorizationImplicit__ctor}
+### <a id="SuperOffice_WebApi_Authorization_AuthorizationImplicit__ctor"></a> AuthorizationImplicit\(\)
 
 ```csharp
 public AuthorizationImplicit()
@@ -39,7 +39,7 @@ public AuthorizationImplicit()
 
 ## Properties
 
-### RefreshAuthorizationAsync {#SuperOffice_WebApi_Authorization_AuthorizationImplicit_RefreshAuthorizationAsync}
+### <a id="SuperOffice_WebApi_Authorization_AuthorizationImplicit_RefreshAuthorizationAsync"></a> RefreshAuthorizationAsync
 
 Try to refresh this [IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization) instance.
 
@@ -49,11 +49,11 @@ public Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync
 
 #### Property Value
 
- [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)&lt;[ReAuthorizationArgs](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.ReAuthorizationArgs), [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization)\&gt;\&gt;
+ [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)<[ReAuthorizationArgs](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.ReAuthorizationArgs), [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization)\>\>
 
 ## Methods
 
-### GetAuthorization\(\) {#SuperOffice_WebApi_Authorization_AuthorizationImplicit_GetAuthorization}
+### <a id="SuperOffice_WebApi_Authorization_AuthorizationImplicit_GetAuthorization"></a> GetAuthorization\(\)
 
 Returns an empty tuple. Signifies no authorization header - use NTLM/Negotiate with IIS.
 

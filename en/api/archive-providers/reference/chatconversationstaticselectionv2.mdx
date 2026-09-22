@@ -496,7 +496,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/ChatConversationStaticSelectionV2?$select=person/rank,person/personAssociate/contactDepartment,person/personAssociate/assocType,person/correspondingAssociate/role,contact/contactAssociate/locationAddress
+GET /api/v1/archive/ChatConversationStaticSelectionV2?$select=personId,person/email/emailLastBounce,person/personAssociate/simultaneousEjUser
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

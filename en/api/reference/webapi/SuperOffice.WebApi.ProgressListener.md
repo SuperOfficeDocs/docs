@@ -1,4 +1,4 @@
-# Class ProgressListener {#SuperOffice_WebApi_ProgressListener}
+# <a id="SuperOffice_WebApi_ProgressListener"></a> Class ProgressListener
 
 Namespace: [SuperOffice.WebApi](/en/api/reference/webapi/SuperOffice.WebApi)  
 Assembly: SuperOffice.WebApi.dll  
@@ -30,13 +30,13 @@ public class ProgressListener : IProgressListener
 
 ## Constructors
 
-### ProgressListener\(\) {#SuperOffice_WebApi_ProgressListener__ctor}
+### <a id="SuperOffice_WebApi_ProgressListener__ctor"></a> ProgressListener\(\)
 
 ```csharp
 public ProgressListener()
 ```
 
-### ProgressListener\(Action&lt;string, float\&gt;, Action&lt;string, Exception\&gt;\) {#SuperOffice_WebApi_ProgressListener__ctor_System_Action_System_String_System_Single__System_Action_System_String_System_Exception__}
+### <a id="SuperOffice_WebApi_ProgressListener__ctor_System_Action_System_String_System_Single__System_Action_System_String_System_Exception__"></a> ProgressListener\(Action<string, float\>, Action<string, Exception\>\)
 
 ```csharp
 public ProgressListener(Action<string, float> onProgress, Action<string, Exception> onError)
@@ -44,13 +44,13 @@ public ProgressListener(Action<string, float> onProgress, Action<string, Excepti
 
 #### Parameters
 
-`onProgress` [Action](https://learn.microsoft.com/dotnet/api/system.action\-2)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string), [float](https://learn.microsoft.com/dotnet/api/system.single)\&gt;
+`onProgress` [Action](https://learn.microsoft.com/dotnet/api/system.action\-2)<[string](https://learn.microsoft.com/dotnet/api/system.string), [float](https://learn.microsoft.com/dotnet/api/system.single)\>
 
-`onError` [Action](https://learn.microsoft.com/dotnet/api/system.action\-2)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string), [Exception](https://learn.microsoft.com/dotnet/api/system.exception)\&gt;
+`onError` [Action](https://learn.microsoft.com/dotnet/api/system.action\-2)<[string](https://learn.microsoft.com/dotnet/api/system.string), [Exception](https://learn.microsoft.com/dotnet/api/system.exception)\>
 
 ## Properties
 
-### OnErrorDelegate {#SuperOffice_WebApi_ProgressListener_OnErrorDelegate}
+### <a id="SuperOffice_WebApi_ProgressListener_OnErrorDelegate"></a> OnErrorDelegate
 
 Triggered if request fails.
 
@@ -60,9 +60,9 @@ public Action<string, Exception> OnErrorDelegate { get; set; }
 
 #### Property Value
 
- [Action](https://learn.microsoft.com/dotnet/api/system.action\-2)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string), [Exception](https://learn.microsoft.com/dotnet/api/system.exception)\&gt;
+ [Action](https://learn.microsoft.com/dotnet/api/system.action\-2)<[string](https://learn.microsoft.com/dotnet/api/system.string), [Exception](https://learn.microsoft.com/dotnet/api/system.exception)\>
 
-### OnProgressDelegate {#SuperOffice_WebApi_ProgressListener_OnProgressDelegate}
+### <a id="SuperOffice_WebApi_ProgressListener_OnProgressDelegate"></a> OnProgressDelegate
 
 Triggered when request has made progress.
 
@@ -72,11 +72,11 @@ public Action<string, float> OnProgressDelegate { get; set; }
 
 #### Property Value
 
- [Action](https://learn.microsoft.com/dotnet/api/system.action\-2)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string), [float](https://learn.microsoft.com/dotnet/api/system.single)\&gt;
+ [Action](https://learn.microsoft.com/dotnet/api/system.action\-2)<[string](https://learn.microsoft.com/dotnet/api/system.string), [float](https://learn.microsoft.com/dotnet/api/system.single)\>
 
 ## Methods
 
-### OnError\(string, Exception\) {#SuperOffice_WebApi_ProgressListener_OnError_System_String_System_Exception_}
+### <a id="SuperOffice_WebApi_ProgressListener_OnError_System_String_System_Exception_"></a> OnError\(string, Exception\)
 
 Called when request fails.
 
@@ -94,7 +94,7 @@ URL being loaded
 
 Exception that is being thrown. Probably a [SuperOfficeWebApiException](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.Exceptions.SuperOfficeWebApiException).
 
-### OnProgress\(string, float\) {#SuperOffice_WebApi_ProgressListener_OnProgress_System_String_System_Single_}
+### <a id="SuperOffice_WebApi_ProgressListener_OnProgress_System_String_System_Single_"></a> OnProgress\(string, float\)
 
 Called during upload/download, and at end to indicate completion.
 

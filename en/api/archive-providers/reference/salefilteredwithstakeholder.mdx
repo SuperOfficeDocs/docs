@@ -1157,7 +1157,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sale
 ## Sample
 
 ```http!
-GET /api/v1/archive/SaleFilteredWithStakeholder?$select=saleStatus,salePublish/publishedFrom,person/leadStatus,person/personAddress/city,person/personAssociate/firstName
+GET /api/v1/archive/SaleFilteredWithStakeholder?$select=isStakeholderSale,reopenDate,person/hasInfoText,person/personDirectFax/formattedNumber,person/email/emailDescription
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

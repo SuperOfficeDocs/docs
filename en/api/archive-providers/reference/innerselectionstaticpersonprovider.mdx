@@ -864,7 +864,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 ## Sample
 
 ```http!
-GET /api/v1/archive/InnerSelectionStaticPersonProvider?$select=updatedByWorkflow,selectionId,personExtra/x_person_request_relation,personSourceRelation/supportAssociateFullName,correspondingAssociate/firstName
+GET /api/v1/archive/InnerSelectionStaticPersonProvider?$select=getAllRows,isProjectMember,personSourceRelation/position,personSourceRelation/kanaFirstName,personTargetRelation/rank
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

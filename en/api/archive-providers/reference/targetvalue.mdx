@@ -411,7 +411,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Targ
 ## Sample
 
 ```http!
-GET /api/v1/archive/TargetValue?$select=associate/title,associate/contactDepartment,contact/contactAssociate/simultaneousEjUser,contact/contactSupportPerson/withdrawnEmarketingConsent,contact/saintSaleStatus
+GET /api/v1/archive/TargetValue?$select=contact/phone/formattedNumber,contact/email/emailLastSent,contact/contactAssociate/title,contact/contactExtra/x_contact_time
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

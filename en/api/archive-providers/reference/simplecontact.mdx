@@ -363,7 +363,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 ## Sample
 
 ```http!
-GET /api/v1/archive/SimpleContact?$select=updatedBy,streetAddress/line3,contactUdef/SuperOffice:5
+GET /api/v1/archive/SimpleContact?$select=contactExtra/x_contact_float,contactAssociate/usergroupId,contactSupportPerson/firstName
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

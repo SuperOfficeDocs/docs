@@ -760,7 +760,7 @@ This is the archive Provider for the Selection appouintment archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/AppointmentSelection?$select=contact/activeErpLinks,contact/streetAddress/addressId,contact/streetAddress/state,person/correspondingAssociate/fullName,project/projectAssociate/usergroup
+GET /api/v1/archive/AppointmentSelection?$select=contact/number,contact/streetAddress/line3,contact/contactExtra/x_contact_short_dropdown,contact/contactExtra/y_organization/x_name,person/position
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

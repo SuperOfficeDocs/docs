@@ -682,7 +682,7 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/MailingsSelectionCombinedV2?$select=contactId,mailingAddr/contact/contactExtra/x_contact_default_integer,mailingAddr/person/restrictionAddress/zip,mailingAddr/person/personAssociate/role,mailingAddr/person/withdrawnStoreConsent
+GET /api/v1/archive/MailingsSelectionCombinedV2?$select=mailingSelectionId,mailingAddr/contact/postAddress/line2,emailFlow/workflowAssociate/contactCategory,project/projectUdef/SuperOffice:2,project/LastSale
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -825,7 +825,7 @@ Provider for searching in projects
 ## Sample
 
 ```http!
-GET /api/v1/archive/FindProject?$select=sale/stalledComment,appointment/associate/usergroup,document/completed,projectMember/projectMemberId,projectMember/personRegisteredDate
+GET /api/v1/archive/FindProject?$select=appointment/createdByWorkflow,appointment/appointmentPublish/publishedFrom,document/completed,document/documentUdef/SuperOffice:3,projectMember/email/emailLastBounce
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -313,6 +313,18 @@ public virtual string SourceLink { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
+### <a id="SuperOffice_WebApi_Data_NewsFeedItem_SourceSoProtocol"></a> SourceSoProtocol
+
+SoProtocol to the agent's chat topic so that start page can open the agent topic directly. e.g. 'contact.main?contact_id=1234' or 'agents.main?instance_id=6a8&amp;topic_id=534'
+
+```csharp
+public virtual string SourceSoProtocol { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
 ### <a id="SuperOffice_WebApi_Data_NewsFeedItem_Status"></a> Status
 
 Indicates if the item is being handled by a CTA. (normal, processing, processed)
@@ -367,6 +379,18 @@ Short, descriptive headline. Plain text title. Multi-language string supported: 
 
 ```csharp
 public virtual string Title { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+### <a id="SuperOffice_WebApi_Data_NewsFeedItem_Type"></a> Type
+
+Type identifier for the message type. Optional. To allow clients to filter for specific message types without analyzing the CTAs or message content. e.g. 'mergeContact' or 'mergeOrphan'
+
+```csharp
+public virtual string Type { get; set; }
 ```
 
 #### Property Value

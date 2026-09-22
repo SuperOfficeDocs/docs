@@ -794,7 +794,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Last
 ## Sample
 
 ```http!
-GET /api/v1/archive/LastTickets?$select=person/hasInterests,contact/forceCompany,contact/email/emailDescription,contact/streetAddress/city
+GET /api/v1/archive/LastTickets?$select=person/correspondingAssociate/ejUserId,contact/department,contact/contactAssociate/contactCategory,contact/contactAssociate/assocTooltip,project/text
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

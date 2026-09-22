@@ -1,0 +1,68 @@
+---
+title: marketing_freetextsearch
+keywords: mdoprovider mdo provider marketing_freetextsearch
+description: Freetext search across the three real tables backing Marketing entities (mailings, forms, email flows) - the Marketing landing page's entities list spans all three, unlike every other landing page's single-table search. Registered as "marketing_freetextsearch", matching LandingpageProvider's "{page}_freetextsearch" convention (LandingpageProvider.cs), and plugged in the same way as SaleListFreetextSearchProvider/ProjectListFreetextSearchProvider (both FreetextSearchProviderBase). None of the three tables carry a SoundEx field, so fuzzy matching (as Sale/Project implement it) isn't possible here - RunFuzzy is disabled, and mailings is picked as the (otherwise unused) "main" table the base class requires. Browsing history is deliberately always empty for now (see GetHistoryItemsFromDbAsync) - merging history across three unrelated tables needs its own design pass.
+generated: true
+content_type: reference
+envir: online
+---
+
+## "marketing_freetextsearch" MDO List
+Freetext search across the three real tables backing Marketing entities (mailings, forms, email
+flows) - the Marketing landing page's entities list spans all three, unlike every other landing
+page's single-table search. Registered as "marketing_freetextsearch", matching LandingpageProvider's
+"{page}_freetextsearch" convention (LandingpageProvider.cs), and plugged in the same way as
+SaleListFreetextSearchProvider/ProjectListFreetextSearchProvider (both FreetextSearchProviderBase).
+
+
+None of the three tables carry a SoundEx field, so fuzzy matching (as Sale/Project implement it)
+isn't possible here - RunFuzzy is disabled, and mailings is picked as the (otherwise unused)
+"main" table the base class requires.
+
+
+Browsing history is deliberately always empty for now (see GetHistoryItemsFromDbAsync) - merging
+history across three unrelated tables needs its own design pass.
+
+
+
+Implemented by the MarketingListFreetextSearchProvider class.
+The name of the MDO list is 'marketing_freetextsearch'.
+
+
+
+
+## Sample Request
+
+```http!
+GET /api/v1/MDOList/marketing_freetextsearch
+Authorization: Basic dGplMDpUamUw
+Accept: application/json; charset=utf-8
+Accept-Language: *
+
+```
+
+## Sample Code
+```cs
+var listProvider = ClassFactory.CreateRequired<SuperOffice.CRM.Lists.ISoListProviderFactory>().Create("marketing_freetextsearch", forceFlatList: true);
+foreach (var item in listProvider.RootItems) {
+    Console.WriteLine("{0} {1} {2} {3}", 
+         item.Id, ResourceManager.ParseInlineResources(item.Name), item.StyleHint, item.ExtraInfo);
+}
+```
+
+## Sample Output
+
+|Id   | Name  |StyleHint|ExtraInfo |
+| --- | ----- | ------- | -------- |
+| 2 | Example | | |
+
+
+## Related MDO Lists
+
+* "marketing_freetextsearchheadings"
+* "marketing_freetextsearchheadingswithallitem"
+* "marketing_freetextsearchheadingswithallitemwithnoselection"
+* "marketing_freetextsearchheadingswithnoselection"
+* "marketing_freetextsearchwithallitem"
+* "marketing_freetextsearchwithallitemwithnoselection"
+* "marketing_freetextsearchwithnoselection"

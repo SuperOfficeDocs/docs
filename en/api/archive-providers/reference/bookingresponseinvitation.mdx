@@ -761,7 +761,7 @@ must be &gt;= start of today. This is an optional entity and is fetched if the u
 ## Sample
 
 ```http!
-GET /api/v1/archive/BookingResponseInvitation?$select=contact/contactUdef/SuperOffice:3,contact/NumberOfNotCompletedTickets,contact/LastTicket,person/hasInterests,person/ticketPriority
+GET /api/v1/archive/BookingResponseInvitation?$select=joinVideomeetUrl,contact/streetAddress/wgs84longitude,person/personRegisteredBy,project/projectAssociate/isActiveText
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

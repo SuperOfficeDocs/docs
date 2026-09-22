@@ -1,4 +1,4 @@
-# Interface IDatabaseTableAgent {#SuperOffice_WebApi_Agents_IDatabaseTableAgent}
+# <a id="SuperOffice_WebApi_Agents_IDatabaseTableAgent"></a> Interface IDatabaseTableAgent
 
 Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface IDatabaseTableAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### DeleteAsync\(string, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IDatabaseTableAgent_DeleteAsync_System_String_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDatabaseTableAgent_DeleteAsync_System_String_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> DeleteAsync\(string, int\[\], RequestOptions\)
 
 Delete rows, by primary key; traveltransactionlog and WebHooks are supported
 
@@ -40,11 +40,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MassOperationResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.MassOperationResult)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MassOperationResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.MassOperationResult)\>
 
 Summary of results
 
-### DeleteRowAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDatabaseTableAgent_DeleteRowAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDatabaseTableAgent_DeleteRowAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteRowAsync\(string, int, RequestOptions\)
 
 Delete a row from a table
 
@@ -70,7 +70,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### InsertAsync\(string, string\[\], string\[\]\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IDatabaseTableAgent_InsertAsync_System_String_System_String___System_String_____SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDatabaseTableAgent_InsertAsync_System_String_System_String___System_String_____SuperOffice_WebApi_RequestOptions_"></a> InsertAsync\(string, string\[\], string\[\]\[\], RequestOptions\)
 
 Mass-insert rows, with or without primary keys specified. Works on physical tables with no special processing for udef etc.; traveltransactionlog and WebHooks are supported
 
@@ -98,11 +98,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MassOperationResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.MassOperationResult)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MassOperationResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.MassOperationResult)\>
 
 Summary of results
 
-### InsertRowAsync\(string, StringDictionary, RequestOptions\) {#SuperOffice_WebApi_Agents_IDatabaseTableAgent_InsertRowAsync_System_String_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDatabaseTableAgent_InsertRowAsync_System_String_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_"></a> InsertRowAsync\(string, StringDictionary, RequestOptions\)
 
 Insert a row into a table
 
@@ -126,11 +126,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
 
 The id of the newly inserted row
 
-### ReadRowAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDatabaseTableAgent_ReadRowAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDatabaseTableAgent_ReadRowAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> ReadRowAsync\(string, int, RequestOptions\)
 
 Read a row from a table
 
@@ -154,11 +154,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TableRecord](/en/api/reference/webapi/SuperOffice.WebApi.Data.TableRecord)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TableRecord](/en/api/reference/webapi/SuperOffice.WebApi.Data.TableRecord)\>
 
 The row from the table
 
-### TruncateAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IDatabaseTableAgent_TruncateAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDatabaseTableAgent_TruncateAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> TruncateAsync\(string, RequestOptions\)
 
 Drop all rows in a table. This clearance is not individually logged in TravelTransactionlog or Webhook/script calls
 
@@ -178,11 +178,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MassOperationResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.MassOperationResult)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MassOperationResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.MassOperationResult)\>
 
 Summary of results
 
-### UpdateRowAsync\(string, int, StringDictionary, RequestOptions\) {#SuperOffice_WebApi_Agents_IDatabaseTableAgent_UpdateRowAsync_System_String_System_Int32_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDatabaseTableAgent_UpdateRowAsync_System_String_System_Int32_SuperOffice_WebApi_Data_StringDictionary_SuperOffice_WebApi_RequestOptions_"></a> UpdateRowAsync\(string, int, StringDictionary, RequestOptions\)
 
 Update a row in a table
 
@@ -212,7 +212,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### UpsertAsync\(string, string\[\], string\[\], string\[\]\[\], UpsertNomatchAction, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IDatabaseTableAgent_UpsertAsync_System_String_System_String___System_String___System_String_____SuperOffice_WebApi_Data_UpsertNomatchAction_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDatabaseTableAgent_UpsertAsync_System_String_System_String___System_String___System_String_____SuperOffice_WebApi_Data_UpsertNomatchAction_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> UpsertAsync\(string, string\[\], string\[\], string\[\]\[\], UpsertNomatchAction, bool, RequestOptions\)
 
 Insert or update rows, optionally deleting/zeroing 'leftover' rows. Special support for UDEF, as well as optional extensive information return. Traveltransactionlog and WebHooks are supported
 
@@ -252,7 +252,7 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MassOperationResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.MassOperationResult)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MassOperationResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.MassOperationResult)\>
 
 Summary of results
 

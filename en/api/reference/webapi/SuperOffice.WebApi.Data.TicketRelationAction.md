@@ -51,15 +51,15 @@ public virtual bool CanCloseCurrentTicket { get; set; }
 
 ### <a id="SuperOffice_WebApi_Data_TicketRelationAction_Children"></a> Children
 
-Ids of unclosed child tickets. If CanCloseCurrentTicket is false, these are the tickets blocking the close.
+Unclosed child tickets. If CanCloseCurrentTicket is false, these are the tickets blocking the close.
 
 ```csharp
-public virtual int[] Children { get; set; }
+public virtual TicketRelationActionChild[] Children { get; set; }
 ```
 
 #### Property Value
 
- [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
+ [TicketRelationActionChild](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationActionChild)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_TicketRelationAction_IsParentRequired"></a> IsParentRequired
 

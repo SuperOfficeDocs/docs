@@ -1,4 +1,4 @@
-# Class DocumentEntity {#SuperOffice_WebApi_Data_DocumentEntity}
+# <a id="SuperOffice_WebApi_Data_DocumentEntity"></a> Class DocumentEntity
 
 Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
 Assembly: SuperOffice.WebApi.dll  
@@ -30,19 +30,19 @@ public class DocumentEntity : Carrier
 ## Examples
 
 Get DocumentEntity 123 using the WebApi client:
-&lt;pre&gt;&lt;code class="lang-csharp"&gt;var configuration = new WebApiConfiguration(url);
+<pre><code class="lang-csharp">var configuration = new WebApiConfiguration(url);
 var agent = new DocumentAgent(configuration);
-var documentEntity = agent.GetDocumentEntity( 123 );&lt;/code&gt;&lt;/pre&gt;
+var documentEntity = agent.GetDocumentEntity( 123 );</code></pre>
 
 ## Remarks
 
 Use [Archive agent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent):
-            All DocumentEntity: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"FindDocument"&lt;/code&gt;&lt;/pre&gt;
-            Links: &lt;pre&gt;&lt;code class="lang-csharp"&gt;"Links"&lt;/code&gt;&lt;/pre&gt; with restriction &lt;pre&gt;&lt;code class="lang-csharp"&gt;"sourceDocumentRestrictionId eq " + id&lt;/code&gt;&lt;/pre&gt;.
+            All DocumentEntity: <pre><code class="lang-csharp">"FindDocument"</code></pre>
+            Links: <pre><code class="lang-csharp">"Links"</code></pre> with restriction <pre><code class="lang-csharp">"sourceDocumentRestrictionId eq " + id</code></pre>.
 
 ## Constructors
 
-### DocumentEntity\(\) {#SuperOffice_WebApi_Data_DocumentEntity__ctor}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity__ctor"></a> DocumentEntity\(\)
 
 Default constructor - defaults any enum props to 0.
 
@@ -52,7 +52,7 @@ public DocumentEntity()
 
 ## Properties
 
-### ActiveLinks {#SuperOffice_WebApi_Data_DocumentEntity_ActiveLinks}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_ActiveLinks"></a> ActiveLinks
 
 Number of active links to sale, document, appointment.
 
@@ -64,10 +64,10 @@ public virtual int ActiveLinks { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### Associate {#SuperOffice_WebApi_Data_DocumentEntity_Associate}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_Associate"></a> Associate
 
 The owner of the document - the associate whose checklist the document is in.
-&lt;p&gt;Use MDO List name "associate" to get list items.&lt;/p&gt;
+<p>Use MDO List name "associate" to get list items.</p>
 
 ```csharp
 public virtual Associate Associate { get; set; }
@@ -77,7 +77,7 @@ public virtual Associate Associate { get; set; }
 
  [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
-### Attention {#SuperOffice_WebApi_Data_DocumentEntity_Attention}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_Attention"></a> Attention
 
 Attention/salutation
 
@@ -89,7 +89,7 @@ public virtual string Attention { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### Completed {#SuperOffice_WebApi_Data_DocumentEntity_Completed}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_Completed"></a> Completed
 
 Document Completed state. This is the part of the Status property. 
 NULL if unknown enum value.
@@ -107,7 +107,7 @@ public ActivityStatus? Completed { get; set; }
 
 [DocumentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity).[Completed\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity#SuperOffice_WebApi_Data_DocumentEntity_Completed_String)
 
-### Completed\_String {#SuperOffice_WebApi_Data_DocumentEntity_Completed_String}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_Completed_String"></a> Completed\_String
 
 Document Completed state. This is the part of the Status property. 
 Raw string enum value.
@@ -125,10 +125,10 @@ public string Completed_String { get; set; }
 
 [DocumentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity).[Completed](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity#SuperOffice_WebApi_Data_DocumentEntity_Completed)
 
-### Contact {#SuperOffice_WebApi_Data_DocumentEntity_Contact}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_Contact"></a> Contact
 
 The contact associated with the document. It may also be null if no contact is associated with the document.
-&lt;p&gt;Use MDO List name "contact" to get list items.&lt;/p&gt;
+<p>Use MDO List name "contact" to get list items.</p>
 
 ```csharp
 public virtual Contact Contact { get; set; }
@@ -138,7 +138,7 @@ public virtual Contact Contact { get; set; }
 
  [Contact](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact)
 
-### CreatedBy {#SuperOffice_WebApi_Data_DocumentEntity_CreatedBy}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_CreatedBy"></a> CreatedBy
 
 The person that first created the document. The property is read-only.
 
@@ -150,7 +150,7 @@ public virtual Associate CreatedBy { get; set; }
 
  [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
-### CreatedDate {#SuperOffice_WebApi_Data_DocumentEntity_CreatedDate}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_CreatedDate"></a> CreatedDate
 
 Registered when
 
@@ -162,11 +162,11 @@ public virtual DateTime CreatedDate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### CustomFields {#SuperOffice_WebApi_Data_DocumentEntity_CustomFields}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_CustomFields"></a> CustomFields
 
 Udef + Extra fields added to the carrier. Extra fields as defined by changes to database schema + user-defined fields as defined by admin.
 Custom fields combines user defined fields and extra fields into one bucket. 
-The individual [ExtraFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity#SuperOffice_WebApi_Data_DocumentEntity_ExtraFields) and [UserDefinedFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity#SuperOffice_WebApi_Data_DocumentEntity_UserDefinedFields) properties are deprecated in favor of this
+The individual [ExtraFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.ExtraFields) and [UserDefinedFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity#SuperOffice_WebApi_Data_DocumentEntity_UserDefinedFields) properties are deprecated in favor of this
 combined collection.
 The value string is the encoded value: "[I:123]" or "[DT:2019-09-11]".
 
@@ -181,15 +181,15 @@ public virtual StringDictionary CustomFields { get; set; }
 #### Remarks
 
 The naming convention of the key string is as follows:
-&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="term"&gt;Extra field data&lt;/td&gt;&lt;td class="description"&gt;
-       [Extra field name]&lt;p&gt;&lt;/p&gt;
-       Example: &lt;pre&gt;&lt;code class="lang-csharp"&gt;'x_gorp' = '[I:123]'&lt;/code&gt;&lt;/pre&gt;
-       &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;User defined field data&lt;/td&gt;&lt;td class="description"&gt;
-       [Prog-id name]&lt;p&gt;&lt;/p&gt;
-    Example: &lt;pre&gt;&lt;code class="lang-csharp"&gt;'SuperOffice:1' = '[I:123]'&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
-       &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+<table><tbody><tr><td class="term">Extra field data</td><td class="description">
+       [Extra field name]<p></p>
+       Example: <pre><code class="lang-csharp">'x_gorp' = '[I:123]'</code></pre>
+       </td></tr><tr><td class="term">User defined field data</td><td class="description">
+       [Prog-id name]<p></p>
+    Example: <pre><code class="lang-csharp">'SuperOffice:1' = '[I:123]'</code></pre><p></p>
+       </td></tr></tbody></table>
 
-### Date {#SuperOffice_WebApi_Data_DocumentEntity_Date}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_Date"></a> Date
 
 date + start time planned
 
@@ -201,7 +201,7 @@ public virtual DateTime Date { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### Description {#SuperOffice_WebApi_Data_DocumentEntity_Description}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_Description"></a> Description
 
 The actual text, max 2047 significant characters even though it is stored as a larger data type on some databases
 
@@ -213,7 +213,7 @@ public virtual string Description { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### DocumentId {#SuperOffice_WebApi_Data_DocumentEntity_DocumentId}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_DocumentId"></a> DocumentId
 
 Primary key
 
@@ -225,10 +225,10 @@ public virtual int DocumentId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### DocumentTemplate {#SuperOffice_WebApi_Data_DocumentEntity_DocumentTemplate}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_DocumentTemplate"></a> DocumentTemplate
 
 The template type of the document.
-&lt;p&gt;Use MDO List name "doctmpl" to get list items.&lt;/p&gt;
+<p>Use MDO List name "doctmpl" to get list items.</p>
 
 ```csharp
 public virtual DocumentTemplate DocumentTemplate { get; set; }
@@ -238,7 +238,7 @@ public virtual DocumentTemplate DocumentTemplate { get; set; }
 
  [DocumentTemplate](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplate)
 
-### ExternalRef {#SuperOffice_WebApi_Data_DocumentEntity_ExternalRef}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_ExternalRef"></a> ExternalRef
 
 External reference for document plugin to resolve document identity (Notes ID, e-mail message ID, whatever)
 
@@ -250,7 +250,7 @@ public virtual string ExternalRef { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### ExtraFields {#SuperOffice_WebApi_Data_DocumentEntity_ExtraFields}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_ExtraFields"></a> ExtraFields
 
 Deprecated: Use [CustomFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity#SuperOffice_WebApi_Data_DocumentEntity_CustomFields) instead.
 Extra fields added to the carrier. This could be data from Plug-ins, the foreign key system, external applications, etc.
@@ -267,23 +267,23 @@ public virtual StringDictionary ExtraFields { get; set; }
 #### Remarks
 
 The naming convention of the key string is as follows:
-&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class="term"&gt;Plug-in data&lt;/td&gt;&lt;td class="description"&gt;
+<table><tbody><tr><td class="term">Plug-in data</td><td class="description">
        [Plug-in name].[Property name]
        Example: DocumentPlugin.DocumentType
-       &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;Foreign key data&lt;/td&gt;&lt;td class="description"&gt;
+       </td></tr><tr><td class="term">Foreign key data</td><td class="description">
        The device identity is appended directly to the device name if it exists. 
     This is not commonly used, but the database opens for this as a possibility to have several devices with the same name, 
     and hence we would ensure an unique key if this field is used.
     Example: Audience.SecretService.DefaultCountry
-    &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;User defined table data&lt;/td&gt;&lt;td class="description"&gt;
+    </td></tr><tr><td class="term">User defined table data</td><td class="description">
        [Table name].[Field name]
        Example: Phunneling.AggregatedSales
-       &lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="term"&gt;Other&lt;/td&gt;&lt;td class="description"&gt;
+       </td></tr><tr><td class="term">Other</td><td class="description">
        Other data sources must ensure an unique name. If the key already exists we do not add the data to the dictionary. 
        We also ensure that SuperOffice data are added first, so that existing data doesnt change when more data sources are added (with duplicate data keys).
-       &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+       </td></tr></tbody></table>
 
-### Header {#SuperOffice_WebApi_Data_DocumentEntity_Header}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_Header"></a> Header
 
 Visible document name
 
@@ -295,7 +295,7 @@ public virtual string Header { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### IsPublished {#SuperOffice_WebApi_Data_DocumentEntity_IsPublished}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_IsPublished"></a> IsPublished
 
 Publication is published
 
@@ -307,7 +307,7 @@ public virtual bool IsPublished { get; set; }
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
-### Links {#SuperOffice_WebApi_Data_DocumentEntity_Links}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_Links"></a> Links
 
 List of all elements linked to the document.
 
@@ -319,7 +319,7 @@ public virtual Link[] Links { get; set; }
 
  [Link](/en/api/reference/webapi/SuperOffice.WebApi.Data.Link)\[\]
 
-### LockSemantics {#SuperOffice_WebApi_Data_DocumentEntity_LockSemantics}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_LockSemantics"></a> LockSemantics
 
 NULL if unknown enum value.
 
@@ -336,7 +336,7 @@ public DocumentLockSemantics? LockSemantics { get; set; }
 
 [DocumentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity).[LockSemantics\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity#SuperOffice_WebApi_Data_DocumentEntity_LockSemantics_String)
 
-### LockSemantics\_String {#SuperOffice_WebApi_Data_DocumentEntity_LockSemantics_String}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_LockSemantics_String"></a> LockSemantics\_String
 
 Raw string enum value.
 
@@ -353,7 +353,7 @@ public string LockSemantics_String { get; set; }
 
 [DocumentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity).[LockSemantics](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity#SuperOffice_WebApi_Data_DocumentEntity_LockSemantics)
 
-### Name {#SuperOffice_WebApi_Data_DocumentEntity_Name}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_Name"></a> Name
 
 File name
 
@@ -365,7 +365,7 @@ public virtual string Name { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### OurRef {#SuperOffice_WebApi_Data_DocumentEntity_OurRef}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_OurRef"></a> OurRef
 
 Our reference, searchable field from freetext search
 
@@ -377,10 +377,10 @@ public virtual string OurRef { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### Person {#SuperOffice_WebApi_Data_DocumentEntity_Person}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_Person"></a> Person
 
 A document may also be connected to a person; this must be a contact person registered on the current company. This does not mean however that a person is required.
-&lt;p&gt;Use MDO List name "person" to get list items.&lt;/p&gt;
+<p>Use MDO List name "person" to get list items.</p>
 
 ```csharp
 public virtual Person Person { get; set; }
@@ -390,10 +390,10 @@ public virtual Person Person { get; set; }
 
  [Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person)
 
-### Project {#SuperOffice_WebApi_Data_DocumentEntity_Project}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_Project"></a> Project
 
 A document may also be connected to a project, so you see the document both on the company card, and on the project card. This does not mean however that a project is required.
-&lt;p&gt;Use MDO List name "project" to get list items.&lt;/p&gt;
+<p>Use MDO List name "project" to get list items.</p>
 
 ```csharp
 public virtual Project Project { get; set; }
@@ -403,7 +403,7 @@ public virtual Project Project { get; set; }
 
  [Project](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project)
 
-### PublishEventDate {#SuperOffice_WebApi_Data_DocumentEntity_PublishEventDate}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_PublishEventDate"></a> PublishEventDate
 
 Publish event date
 
@@ -415,7 +415,7 @@ public virtual DateTime PublishEventDate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### PublishFrom {#SuperOffice_WebApi_Data_DocumentEntity_PublishFrom}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_PublishFrom"></a> PublishFrom
 
 Publication valid from (inclusive)
 
@@ -427,7 +427,7 @@ public virtual DateTime PublishFrom { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### PublishTo {#SuperOffice_WebApi_Data_DocumentEntity_PublishTo}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_PublishTo"></a> PublishTo
 
 Publication valid to (inclusive)
 
@@ -439,10 +439,10 @@ public virtual DateTime PublishTo { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### Sale {#SuperOffice_WebApi_Data_DocumentEntity_Sale}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_Sale"></a> Sale
 
 A document may also be connected to a sale, so you see the document on the company card, on the project card and on the sale card. This does not mean however that a sale is required. May be null.
-&lt;p&gt;Use MDO List name "sale" to get list items.&lt;/p&gt;
+<p>Use MDO List name "sale" to get list items.</p>
 
 ```csharp
 public virtual Sale Sale { get; set; }
@@ -452,7 +452,7 @@ public virtual Sale Sale { get; set; }
 
  [Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale)
 
-### Snum {#SuperOffice_WebApi_Data_DocumentEntity_Snum}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_Snum"></a> Snum
 
 The sequence number allocated from refcount on used template when creating the document
 
@@ -464,7 +464,7 @@ public virtual int Snum { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### SuggestedDocumentId {#SuperOffice_WebApi_Data_DocumentEntity_SuggestedDocumentId}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_SuggestedDocumentId"></a> SuggestedDocumentId
 
 Suggested guide item that this document is an instance of (Note: NOT valid for appointments, they have their own link)
 
@@ -476,7 +476,7 @@ public virtual int SuggestedDocumentId { get; set; }
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### Type {#SuperOffice_WebApi_Data_DocumentEntity_Type}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_Type"></a> Type
 
 Is this a normal document or a mail-merge or report?
 NULL if unknown enum value.
@@ -494,7 +494,7 @@ public AppointmentType? Type { get; set; }
 
 [DocumentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity).[Type\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity#SuperOffice_WebApi_Data_DocumentEntity_Type_String)
 
-### Type\_String {#SuperOffice_WebApi_Data_DocumentEntity_Type_String}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_Type_String"></a> Type\_String
 
 Is this a normal document or a mail-merge or report?
 Raw string enum value.
@@ -512,7 +512,7 @@ public string Type_String { get; set; }
 
 [DocumentEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity).[Type](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity#SuperOffice_WebApi_Data_DocumentEntity_Type)
 
-### UpdatedBy {#SuperOffice_WebApi_Data_DocumentEntity_UpdatedBy}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_UpdatedBy"></a> UpdatedBy
 
 The person that last updated the appointment.
 
@@ -524,7 +524,7 @@ public virtual Associate UpdatedBy { get; set; }
 
  [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
 
-### UpdatedDate {#SuperOffice_WebApi_Data_DocumentEntity_UpdatedDate}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_UpdatedDate"></a> UpdatedDate
 
 Last updated when
 
@@ -536,7 +536,7 @@ public virtual DateTime UpdatedDate { get; set; }
 
  [DateTime](https://learn.microsoft.com/dotnet/api/system.datetime)
 
-### UserDefinedFields {#SuperOffice_WebApi_Data_DocumentEntity_UserDefinedFields}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_UserDefinedFields"></a> UserDefinedFields
 
 Deprecated: Use [CustomFields](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentEntity#SuperOffice_WebApi_Data_DocumentEntity_CustomFields) instead.
 Dictionary of user defined field data.
@@ -551,7 +551,7 @@ public virtual StringDictionary UserDefinedFields { get; set; }
 
  [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
 
-### VisibleFor {#SuperOffice_WebApi_Data_DocumentEntity_VisibleFor}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_VisibleFor"></a> VisibleFor
 
 The set of users or groups the record is visible for
 
@@ -563,7 +563,7 @@ public virtual VisibleFor[] VisibleFor { get; set; }
 
  [VisibleFor](/en/api/reference/webapi/SuperOffice.WebApi.Data.VisibleFor)\[\]
 
-### YourRef {#SuperOffice_WebApi_Data_DocumentEntity_YourRef}
+### <a id="SuperOffice_WebApi_Data_DocumentEntity_YourRef"></a> YourRef
 
 Your reference
 

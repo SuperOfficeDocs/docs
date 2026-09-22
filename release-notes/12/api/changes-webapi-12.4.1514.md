@@ -1,0 +1,75 @@
+---
+title: Agent API changes in 12.4
+description: Agent API release notes for SuperOffice 12.4
+date: 09.22.2026
+so_version: 12.4.1514
+content_type: release-note
+category: api
+---
+
+# API changes
+
+Compared versions: v12.3.2570 to v12.4.1514.
+
+## Web API
+
+The following represent changes to the SuperOffice.WebApi assembly.
+
+### Assembly: SuperOffice.WebApi
+
+### New Types
+
+* `SuperOffice.WebApi.Data.Marketing_StopMailingRequest`
+* `SuperOffice.WebApi.Data.TicketRelationActionChild`
+
+### Modified Types
+
+#### SuperOffice.License.SoLicenseNames is Modified
+
+* New items
+  * Field `StartPage`
+
+#### SuperOffice.WebApi.Agents.IMarketingAgent is Modified
+
+* New items
+  * Method `StopMailingAsync(Int32, RequestOptions)`
+
+#### SuperOffice.WebApi.Agents.MarketingAgent is Modified
+
+* New items
+  * Method `StopMailingAsync(Int32, RequestOptions)`
+
+#### SuperOffice.WebApi.Data.CultureDataFormatter is Modified
+
+* New items
+  * Method `GetAllMultiLanguageValues(String)`
+
+#### SuperOffice.WebApi.Data.EjScriptVerb is Modified
+
+* New items
+  * Field `BlockNone`
+
+#### SuperOffice.WebApi.Data.ETableRight is Modified
+
+* New items
+  * Field `URU`
+  * Field `WRITE`
+
+#### SuperOffice.WebApi.Data.NewsFeedItem is Modified
+
+* New items
+  * Property `SourceSoProtocol`
+  * Property `Type`
+
+#### SuperOffice.WebApi.Data.TicketRelationAction is Modified
+
+* Modified items
+  * Property `Children`
+
+
+## Web API Authorization
+
+The following represent changes to the SuperOffice.WebApi.Authorization assembly.
+
+
+

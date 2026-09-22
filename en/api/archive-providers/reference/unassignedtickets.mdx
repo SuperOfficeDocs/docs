@@ -793,7 +793,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Unas
 ## Sample
 
 ```http!
-GET /api/v1/archive/UnassignedTickets?$select=createdBy/contactId,person/personAssociate/role,person/personAssociate/simultaneousEjUser,person/correspondingAssociate/usergroupId,contact/searchPhone/formattedNumber
+GET /api/v1/archive/UnassignedTickets?$select=person/searchPhone/formattedNumber,person/restrictionAddress/line1,person/personExtra/x_person_request_relation,person/correspondingAssociate/isActive,extra/x_ticket_time
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -1,4 +1,4 @@
-# Interface IFreeTextAgent {#SuperOffice_WebApi_Agents_IFreeTextAgent}
+# <a id="SuperOffice_WebApi_Agents_IFreeTextAgent"></a> Interface IFreeTextAgent
 
 Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface IFreeTextAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### FreetextIndexRowsAsync\(string, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IFreeTextAgent_FreetextIndexRowsAsync_System_String_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IFreeTextAgent_FreetextIndexRowsAsync_System_String_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> FreetextIndexRowsAsync\(string, int\[\], RequestOptions\)
 
 Update the freetext index for one or more rows from the same table
 
@@ -44,7 +44,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### GetStatusAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IFreeTextAgent_GetStatusAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IFreeTextAgent_GetStatusAsync_SuperOffice_WebApi_RequestOptions_"></a> GetStatusAsync\(RequestOptions\)
 
 Returns status for the freetext search words
 
@@ -60,11 +60,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FreeText](/en/api/reference/webapi/SuperOffice.WebApi.Data.FreeText)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FreeText](/en/api/reference/webapi/SuperOffice.WebApi.Data.FreeText)\>
 
 The freetext status
 
-### RegenerateIndexAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IFreeTextAgent_RegenerateIndexAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IFreeTextAgent_RegenerateIndexAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> RegenerateIndexAsync\(bool, RequestOptions\)
 
 Wipe and regenerate the freetext index by scanning the database (freetext search will be unavailable while this operation runs
 
@@ -84,11 +84,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[BatchTaskInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[BatchTaskInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.BatchTaskInfo)\>
 
 Information about the batch task, if batch execution was requested. Otherwise null
 
-### SetEnabledAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IFreeTextAgent_SetEnabledAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IFreeTextAgent_SetEnabledAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> SetEnabledAsync\(bool, RequestOptions\)
 
 Sets freetext search to enabled (true) or disabled (false)
 
@@ -112,7 +112,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### SetMultiWordOperatorAsync\(FreeTextOperator, RequestOptions\) {#SuperOffice_WebApi_Agents_IFreeTextAgent_SetMultiWordOperatorAsync_SuperOffice_WebApi_Data_FreeTextOperator_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IFreeTextAgent_SetMultiWordOperatorAsync_SuperOffice_WebApi_Data_FreeTextOperator_SuperOffice_WebApi_RequestOptions_"></a> SetMultiWordOperatorAsync\(FreeTextOperator, RequestOptions\)
 
 Sets the operator used when matching multiple words
 
@@ -136,7 +136,7 @@ Override language/culture codes on this request.
 
 No return value
 
-### SetSingleWordOperatorAsync\(FreeTextOperator, RequestOptions\) {#SuperOffice_WebApi_Agents_IFreeTextAgent_SetSingleWordOperatorAsync_SuperOffice_WebApi_Data_FreeTextOperator_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IFreeTextAgent_SetSingleWordOperatorAsync_SuperOffice_WebApi_Data_FreeTextOperator_SuperOffice_WebApi_RequestOptions_"></a> SetSingleWordOperatorAsync\(FreeTextOperator, RequestOptions\)
 
 Sets the operator used when matching single words
 

@@ -2723,14 +2723,14 @@ Carrier object for LanguageInfo.
 
 Carrier object for LegalBase.
 
- [UserPreferenceStrings.License](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.License)
-
-License counters to track when to upgrade license
-
  [License](/en/api/reference/webapi/SuperOffice.WebApi.Data.License)
 
 Carrier object for License.
 License information, hashed and signed with public keys to prevent tampering. Counts License usage and assignments.
+
+ [UserPreferenceStrings.License](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.License)
+
+License counters to track when to upgrade license
 
  [LicenseInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.LicenseInfo)
 
@@ -3255,6 +3255,8 @@ Methods for calculating mailing statistics
 
  [Marketing\_SetFontRankRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Marketing_SetFontRankRequest)
 
+ [Marketing\_StopMailingRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Marketing_StopMailingRequest)
+
  [Marketing\_VerifyGoogleRecaptchaRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Marketing_VerifyGoogleRecaptchaRequest)
 
  [MassOperationResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.MassOperationResult)
@@ -3408,13 +3410,13 @@ The built-in payment terms list. Used by the SuperOffice Quote Connector to cate
 Carrier object for PaymentType.
 The built-in payment types list. Used by the SuperOffice Quote Connector in quote versions.
 
- [UserPreferenceStrings.Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Person)
-
-Person preferences
-
  [Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person)
 
 Carrier object for Person.
+
+ [UserPreferenceStrings.Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Person)
+
+Person preferences
 
  [PersonEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.PersonEntity)
 
@@ -5074,6 +5076,11 @@ Entity for ticket priority escalation level. Entity describes properties/actions
 
 Carrier object for TicketRelationAction.
 Relation-driven actions applicable to a ticket, indicating whether to offer closing the parent or whether open children are blocking the ticket from being closed.
+
+ [TicketRelationActionChild](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationActionChild)
+
+Carrier object for TicketRelationActionChild.
+An unclosed child ticket affected by a relation-driven action, with the resolved contact e-mail address a close message would be sent to.
 
  [TicketRelationDefinitionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationDefinitionEntity)
 

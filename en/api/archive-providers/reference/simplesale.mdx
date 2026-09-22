@@ -648,7 +648,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 ## Sample
 
 ```http!
-GET /api/v1/archive/SimpleSale?$select=person/personExtra/x_person_date,person/hasEmarketingConsent,contact/contactExtra/x_contact_contact,project/projectAssociate/usergroup
+GET /api/v1/archive/SimpleSale?$select=person/restrictionAddress/formattedAddress,contact/companyCategoryRank,contact/contactAssociate/simultaneousEjUser,associate/credentialType,project/projectAssociate/contactCategory
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

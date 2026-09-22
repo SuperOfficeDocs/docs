@@ -760,7 +760,7 @@ This is an optional entity and is fetched only if the user checks the correspond
 ## Sample
 
 ```http!
-GET /api/v1/archive/RejectedInvitation?$select=contact/contactId,person/position,person/personExtra/y_car/id,appointmentUdef/SuperOffice:5,sale/registeredByFullName
+GET /api/v1/archive/RejectedInvitation?$select=contact/postAddress/wgs84latitude,person/email/emailId,person/personUdef/SuperOffice:3,project/projectAssociate/contactDepartment,project/projectAssociate/credentialType
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

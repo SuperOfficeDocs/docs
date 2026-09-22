@@ -114,8 +114,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -264,8 +264,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -414,8 +414,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -564,8 +564,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -714,8 +714,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -814,8 +814,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -955,8 +955,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -997,8 +997,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -1116,8 +1116,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -1198,8 +1198,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -1348,8 +1348,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -1430,8 +1430,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -1530,8 +1530,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -1671,8 +1671,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -1713,8 +1713,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -1832,8 +1832,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -1932,8 +1932,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -2073,8 +2073,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -2115,8 +2115,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -2234,8 +2234,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -2316,8 +2316,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -2398,8 +2398,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -2548,8 +2548,158 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
+          }
+        ]
+      }
+    },
+    "/api/v1/Agents/Marketing/StopMailing": {
+      "post": {
+        "tags": [
+          "Marketing_Agent"
+        ],
+        "summary": "Stop Mailing",
+        "description": "Stop a mailing that is queued or currently sending, leaving it in status Canceled\n\nNsApiSlow threshold: 5000 ms.",
+        "operationId": "v1MarketingAgent_StopMailing",
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "description": "Optional comma separated list of properties to include in the result. Other fields are then nulled out to reduce payload size: \"Name,department,category\". Default = show all fields.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Accept-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Language",
+            "in": "header",
+            "description": "Convert string references and multi-language values into a specified language (iso2) code. Overrides Accept-Language value.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-Culture",
+            "in": "header",
+            "description": "Number, date formatting in a specified culture (iso2 language) code. Partially overrides SO-Language/Accept-Language value. Ignored if no Language set.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-TimeZone",
+            "in": "header",
+            "description": "Specify the timezone code that you would like date/time responses converted to.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SO-AppToken",
+            "in": "header",
+            "description": "The application token that identifies the partner app. Used when calling Online WebAPI from a server.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.StopMailingRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.StopMailingRequest"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.StopMailingRequest"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.StopMailingRequest"
+              }
+            },
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.StopMailingRequest"
+              }
+            },
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.StopMailingRequest"
+              }
+            },
+            "application/merge-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuperOffice.WebApi.v1.Carriers.MarketingCarriers.StopMailingRequest"
+              }
+            }
+          },
+          "description": "MailingId",
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/xml": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json-patch+json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/merge-patch+json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -2704,8 +2854,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -2860,8 +3010,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -3010,8 +3160,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -3160,8 +3310,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -3260,8 +3410,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -3401,8 +3551,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -3443,8 +3593,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -3562,8 +3712,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -3730,8 +3880,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -3830,8 +3980,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -3971,8 +4121,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -4013,8 +4163,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -4132,8 +4282,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -4214,8 +4364,8 @@
         },
         "security": [
           {
-            "SuperOffice_Password": [],
-            "SuperId_Authentication": []
+            "SOPassword": [],
+            "SuperId": []
           }
         ]
       }
@@ -4228,15 +4378,15 @@
   },
   "servers": [
     {
-      "url": "http://localhost:49843"
+      "url": "http://localhost:62507"
     },
     {
-      "url": "https://localhost:49843"
+      "url": "https://localhost:62507"
     }
   ],
   "components": {
     "securitySchemes": {
-      "Password": {
+      "SOPassword": {
         "type": "http",
         "description": "SuperOffice username:password are passed in Base64-encoded. \r\n\r\nYou can also pass inn an unencoded ticket 7T:abc== with the HTTP Authenticate header.\r\n",
         "scheme": "basic"
@@ -4826,6 +4976,16 @@
       },
       "SuperOffice.WebApi.v1.Carriers.MarketingCarriers.ReloadAndSendMailingRequest": {
         "description": "ReloadAndSendMailing: Reload and send a mailing",
+        "type": "object",
+        "properties": {
+          "MailingId": {
+            "format": "int32",
+            "type": "integer"
+          }
+        }
+      },
+      "SuperOffice.WebApi.v1.Carriers.MarketingCarriers.StopMailingRequest": {
+        "description": "StopMailing: Stop a mailing that is queued or currently sending, leaving it in status Canceled",
         "type": "object",
         "properties": {
           "MailingId": {

@@ -681,7 +681,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 ## Sample
 
 ```http!
-GET /api/v1/archive/InnerSelectionStaticContactProvider?$select=streetAddress/county,sourceRelation/countryId,sale/originalStage,sale/salePublish/publishedTo,sale/associate/role
+GET /api/v1/archive/InnerSelectionStaticContactProvider?$select=contactSource,sale/associate/userName,document/associate/personId,fullName,isMailingRecipient
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

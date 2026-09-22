@@ -822,7 +822,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Arch
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectStaticSelectionV2?$select=document/who,projectMember/middleName,projectMember/hasCompany,projectMember/personAddress/line2,projectMember/personUdef/SuperOffice:8
+GET /api/v1/archive/ProjectStaticSelectionV2?$select=appointment/isFree,document/userGroup,document/documentId,projectMember/projectId,projectMember/email/emailProtocol
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -752,7 +752,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Simp
 ## Sample
 
 ```http!
-GET /api/v1/archive/SimpleAppointment?$select=contact/contactAssociate/isActive,person/personUdef/SuperOffice:11,project/status,project/nextMilestone,project/projectEvent/hasSignOff
+GET /api/v1/archive/SimpleAppointment?$select=userGroup,contact/contactAssociate/contactDepartment,contact/NumberOfNotCompletedSalesInPeriod,associate/contactDepartment
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

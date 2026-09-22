@@ -132,7 +132,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Cont
 ## Sample
 
 ```http!
-GET /api/v1/archive/ContactProjects?$select=statusRank,projectAssociate/firstName,projectEvent/hasSignOff
+GET /api/v1/archive/ContactProjects?$select=projectUdef/SuperOffice:1,projectEvent/hasSignOff,projectAssociate/contactCategory
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

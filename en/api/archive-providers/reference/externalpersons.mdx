@@ -731,7 +731,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Exte
 ## Sample
 
 ```http!
-GET /api/v1/archive/ExternalPersons?$select=correspondingAssociate/mrMrs,correspondingAssociate/personEmail,request/readByCustomer,request/createdBy/personEmail,projectMembers/projectAssociate/assocName
+GET /api/v1/archive/ExternalPersons?$select=hasCompany,personUrl/URLAddress,personTargetRelation/hasInterests,personTargetRelation/kanaFirstName,request/saleId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -832,7 +832,7 @@ This is the archive Provider for the Selection Project archive.
 ## Sample
 
 ```http!
-GET /api/v1/archive/ProjectSelection?$select=appointment/appointment/titleHtml,appointment/appointment/internalNotesHtml,projectMember/personPrivate/description,projectMember/searchPhone/description,projectMember/personAddress/city
+GET /api/v1/archive/ProjectSelection?$select=text,projectAssociate/portraitThumbnail,sale/reopenDate,document/mailMergeDraft,document/recordTypeText
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

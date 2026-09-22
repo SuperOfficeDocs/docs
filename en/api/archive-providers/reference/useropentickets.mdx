@@ -793,7 +793,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.User
 ## Sample
 
 ```http!
-GET /api/v1/archive/UserOpenTickets?$select=readStatus,ownedBy/title,person/correspondingAssociate/associateDbId,person/correspondingAssociate/ejStatus,contact/registeredDate
+GET /api/v1/archive/UserOpenTickets?$select=has_attachment,person/portraitThumbnail,person/personAssociate/associateDbId,person/personAssociate/isLocation,person/correspondingAssociate/otherGroups
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

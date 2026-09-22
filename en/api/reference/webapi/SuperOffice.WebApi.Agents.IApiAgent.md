@@ -1,4 +1,4 @@
-# Interface IApiAgent {#SuperOffice_WebApi_Agents_IApiAgent}
+# <a id="SuperOffice_WebApi_Agents_IApiAgent"></a> Interface IApiAgent
 
 Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface IApiAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### GetApiVersionAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IApiAgent_GetApiVersionAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IApiAgent_GetApiVersionAsync_SuperOffice_WebApi_RequestOptions_"></a> GetApiVersionAsync\(RequestOptions\)
 
 Gets version info from base URL.
 
@@ -32,11 +32,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\>
 
 Dictionary containing meta-data: "NetServerVersion", "Services", "Version"
 
-### GetTenantStatusAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IApiAgent_GetTenantStatusAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IApiAgent_GetTenantStatusAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetTenantStatusAsync\(string, string, RequestOptions\)
 
 Returns the tenant status for a given customer, in a given environment. 
 Does not need base URL to be set.
@@ -61,7 +61,7 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TenantStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TenantStatus)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TenantStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.TenantStatus)\>
 
 Tenant status
 

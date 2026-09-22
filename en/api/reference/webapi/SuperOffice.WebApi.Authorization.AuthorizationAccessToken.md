@@ -1,4 +1,4 @@
-# Class AuthorizationAccessToken {#SuperOffice_WebApi_Authorization_AuthorizationAccessToken}
+# <a id="SuperOffice_WebApi_Authorization_AuthorizationAccessToken"></a> Class AuthorizationAccessToken
 
 Namespace: [SuperOffice.WebApi.Authorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization)  
 Assembly: SuperOffice.WebApi.Authorization.AccessToken.dll  
@@ -32,7 +32,7 @@ IAuthorization
 
 ## Constructors
 
-### AuthorizationAccessToken\(string\) {#SuperOffice_WebApi_Authorization_AuthorizationAccessToken__ctor_System_String_}
+### <a id="SuperOffice_WebApi_Authorization_AuthorizationAccessToken__ctor_System_String_"></a> AuthorizationAccessToken\(string\)
 
 AccessTokenAuthorization Constructor. Using this constructor will not renew an access token when it has expired.
 
@@ -46,7 +46,7 @@ public AuthorizationAccessToken(string accessToken)
 
 An OAuth 2.0 access_token.
 
-### AuthorizationAccessToken\(string, string, string, string, string, string\) {#SuperOffice_WebApi_Authorization_AuthorizationAccessToken__ctor_System_String_System_String_System_String_System_String_System_String_System_String_}
+### <a id="SuperOffice_WebApi_Authorization_AuthorizationAccessToken__ctor_System_String_System_String_System_String_System_String_System_String_System_String_"></a> AuthorizationAccessToken\(string, string, string, string, string, string\)
 
 AccessTokenAuthorization Constructor. This will attempt to renew the access token when it has expired.
 
@@ -80,7 +80,7 @@ Redirect URL registered to your app
 
 Determines CRM online subdomain, i.e. sod, qastage or online.
 
-### AuthorizationAccessToken\(string, string, string, string, string\) {#SuperOffice_WebApi_Authorization_AuthorizationAccessToken__ctor_System_String_System_String_System_String_System_String_System_String_}
+### <a id="SuperOffice_WebApi_Authorization_AuthorizationAccessToken__ctor_System_String_System_String_System_String_System_String_System_String_"></a> AuthorizationAccessToken\(string, string, string, string, string\)
 
 AccessTokenAuthorization Constructor. This will attempt to renew the access token when it has expired for Native/Mobile apps, which don't require a ClientSecret.
 
@@ -112,7 +112,7 @@ Determines CRM online subdomain, i.e. sod, qastage or online.
 
 ## Properties
 
-### AccessToken {#SuperOffice_WebApi_Authorization_AuthorizationAccessToken_AccessToken}
+### <a id="SuperOffice_WebApi_Authorization_AuthorizationAccessToken_AccessToken"></a> AccessToken
 
 OAuth access_token value.
 
@@ -124,7 +124,7 @@ public string AccessToken { get; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### ClientId {#SuperOffice_WebApi_Authorization_AuthorizationAccessToken_ClientId}
+### <a id="SuperOffice_WebApi_Authorization_AuthorizationAccessToken_ClientId"></a> ClientId
 
 OAuth client_id value.
 
@@ -136,7 +136,7 @@ public string ClientId { get; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### ClientSecret {#SuperOffice_WebApi_Authorization_AuthorizationAccessToken_ClientSecret}
+### <a id="SuperOffice_WebApi_Authorization_AuthorizationAccessToken_ClientSecret"></a> ClientSecret
 
 OAuth client_secret value.
 
@@ -148,7 +148,7 @@ public string ClientSecret { get; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### IdToken {#SuperOffice_WebApi_Authorization_AuthorizationAccessToken_IdToken}
+### <a id="SuperOffice_WebApi_Authorization_AuthorizationAccessToken_IdToken"></a> IdToken
 
 OAuth id_token value.
 
@@ -160,7 +160,7 @@ public string IdToken { get; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### RedirectUrl {#SuperOffice_WebApi_Authorization_AuthorizationAccessToken_RedirectUrl}
+### <a id="SuperOffice_WebApi_Authorization_AuthorizationAccessToken_RedirectUrl"></a> RedirectUrl
 
 OAuth redirect_uri value.
 
@@ -172,7 +172,7 @@ public string RedirectUrl { get; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### RefreshAuthorizationAsync {#SuperOffice_WebApi_Authorization_AuthorizationAccessToken_RefreshAuthorizationAsync}
+### <a id="SuperOffice_WebApi_Authorization_AuthorizationAccessToken_RefreshAuthorizationAsync"></a> RefreshAuthorizationAsync
 
 Try to refresh this [IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization) instance.
 
@@ -182,9 +182,9 @@ public Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync
 
 #### Property Value
 
- [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)&lt;ReAuthorizationArgs, [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;IAuthorization\&gt;\&gt;
+ [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)<ReAuthorizationArgs, [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<IAuthorization\>\>
 
-### RefreshToken {#SuperOffice_WebApi_Authorization_AuthorizationAccessToken_RefreshToken}
+### <a id="SuperOffice_WebApi_Authorization_AuthorizationAccessToken_RefreshToken"></a> RefreshToken
 
 OAuth refresh_token value.
 
@@ -196,7 +196,7 @@ public string RefreshToken { get; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
-### SubDomain {#SuperOffice_WebApi_Authorization_AuthorizationAccessToken_SubDomain}
+### <a id="SuperOffice_WebApi_Authorization_AuthorizationAccessToken_SubDomain"></a> SubDomain
 
 SuperOffice CRM Online subdomain; SOD, Stage, Production.
 
@@ -210,7 +210,7 @@ public string SubDomain { get; }
 
 ## Methods
 
-### GetAuthorization\(\) {#SuperOffice_WebApi_Authorization_AuthorizationAccessToken_GetAuthorization}
+### <a id="SuperOffice_WebApi_Authorization_AuthorizationAccessToken_GetAuthorization"></a> GetAuthorization\(\)
 
 Gets a tuple that represents authorization scheme and parameter.
 
@@ -222,5 +222,5 @@ public AuthenticationHeaderValue GetAuthorization()
 
  [AuthenticationHeaderValue](https://learn.microsoft.com/dotnet/api/system.net.http.headers.authenticationheadervalue)
 
-Gets a [Tuple](https://learn.microsoft.com/dotnet/api/system.tuple-2) (string,string) where scheme is Bearer and parameter is the access token.
+Gets a [Tuple`2](https://learn.microsoft.com/dotnet/api/system.tuple-2) (string,string) where scheme is Bearer and parameter is the access token.
 

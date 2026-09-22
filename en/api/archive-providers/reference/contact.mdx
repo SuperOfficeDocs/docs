@@ -365,7 +365,7 @@ Contact provider for general use
 ## Sample
 
 ```http!
-GET /api/v1/archive/Contact?$select=contactSupportPerson/personUpdatedDate,contactSupportPerson/updatedByWorkflow,LastActivity
+GET /api/v1/archive/Contact?$select=contactSupportPerson/personInfo/textId,contactSupportPerson/hasEmarketingConsent,LastCompletedTicket
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

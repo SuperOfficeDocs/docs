@@ -1266,7 +1266,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Sele
 ## Sample
 
 ```http!
-GET /api/v1/archive/ContactStaticSelection?$select=business,saintSaleStatus,saintTicketStatus,appointment/associate/isLocation,personUdef/SuperOffice:9
+GET /api/v1/archive/ContactStaticSelection?$select=postAddress/line2,targetRelation/associateId,targetRelation/registeredBy,sale/associate/credentialDisplayValue,appointment/projectId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

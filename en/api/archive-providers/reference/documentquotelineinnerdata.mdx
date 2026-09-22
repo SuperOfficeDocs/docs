@@ -258,7 +258,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Docu
 ## Sample
 
 ```http!
-GET /api/v1/archive/DocumentQuoteLineInnerData?$select=alternative/version/quote/sale/associate/assocType,alternative/version/status,alternative/version/quote/sale/registeredByFullName
+GET /api/v1/archive/DocumentQuoteLineInnerData?$select=updatedByFullName,alternative/vat,alternative/version/quote/connection/erpConnection/name
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

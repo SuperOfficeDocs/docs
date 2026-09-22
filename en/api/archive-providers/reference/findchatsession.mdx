@@ -493,7 +493,7 @@ ChatSession provider for Find
 ## Sample
 
 ```http!
-GET /api/v1/archive/FindChatSession?$select=person/rank,person/personAssociateId,person/correspondingAssociate/credentialType,contact/associateId,contact/number
+GET /api/v1/archive/FindChatSession?$select=contact/restrictionAddress/wgs84longitude,contact/NumberOfTicketsInPeriod,person/personAddress/formattedMultiLineAddress
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

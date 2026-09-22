@@ -795,7 +795,7 @@ This provider name is implemented by the class SuperOffice.CRM.ArchiveLists.Favo
 ## Sample
 
 ```http!
-GET /api/v1/archive/FavouriteTickets?$select=categoryFullName,person/portraitThumbnail,person/restrictionAddress/zip,contact/streetAddress/wgs84latitude,contact/restrictionAddress/formattedMultiLineAddress
+GET /api/v1/archive/FavouriteTickets?$select=createdBy/associateDbId,ownedBy/role,ownedBy/userName,person/birthMonth,person/personAddress/wgs84longitude
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

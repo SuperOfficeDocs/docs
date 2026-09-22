@@ -496,7 +496,7 @@ Provides populated mail envelope rows as an archive
 ## Sample
 
 ```http!
-GET /api/v1/archive/Mail2?$select=person/personDirectPhone/formattedNumber,person/personAssociate/isLocation,contact/email/emailHasBounced,contact/restrictionAddress/line1,contact/restrictionAddress/county
+GET /api/v1/archive/Mail2?$select=person/personUdef/SuperOffice:7,person/personExtra/x_person_time,person/correspondingAssociate/isActive
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

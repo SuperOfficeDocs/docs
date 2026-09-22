@@ -800,7 +800,7 @@ Implementation of the provider for the combined selection
 ## Sample
 
 ```http!
-GET /api/v1/archive/TicketSelectionCombinedV2?$select=createdBy/assocTooltip,person/mrMrs,person/personNumber,contact/contactSource,contact/contactAssociate/contactDepartment
+GET /api/v1/archive/TicketSelectionCombinedV2?$select=person/personExtra/x_person_integer,person/personAssociate/userName,contact/email/emailAddress,contact/NumberOfNotCompletedSales,sale/who
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

@@ -2764,6 +2764,8 @@
     href: SuperOffice.WebApi.Data.Marketing_SetAllFormFieldRestrictionsRequest.md
   - name: Marketing_SetFontRankRequest
     href: SuperOffice.WebApi.Data.Marketing_SetFontRankRequest.md
+  - name: Marketing_StopMailingRequest
+    href: SuperOffice.WebApi.Data.Marketing_StopMailingRequest.md
   - name: Marketing_VerifyGoogleRecaptchaRequest
     href: SuperOffice.WebApi.Data.Marketing_VerifyGoogleRecaptchaRequest.md
   - name: MassOperationResult
@@ -3922,6 +3924,8 @@
     href: SuperOffice.WebApi.Data.TicketPriorityEscalationLevelEntity.md
   - name: TicketRelationAction
     href: SuperOffice.WebApi.Data.TicketRelationAction.md
+  - name: TicketRelationActionChild
+    href: SuperOffice.WebApi.Data.TicketRelationActionChild.md
   - name: TicketRelationDefinitionEntity
     href: SuperOffice.WebApi.Data.TicketRelationDefinitionEntity.md
   - name: TicketRelationDefinitionResult

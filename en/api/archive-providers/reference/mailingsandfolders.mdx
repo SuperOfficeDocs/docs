@@ -700,7 +700,7 @@ EmailFlowsAndFoldersProvider (workflowName / hierarchyName both → name).
 ## Sample
 
 ```http!
-GET /api/v1/archive/MailingsAndFolders?$select=mailingAddr/person/personAssociate/contactName,mailingAddr/person/correspondingAssociate/contactId,emailFlow/workflowDefinitionStatus,project/projectUdef/SuperOffice:5,project/projectUdef/SuperOffice:6
+GET /api/v1/archive/MailingsAndFolders?$select=name,sortName,mailingAddr/contact/SaintStatus2,mailingAddr/person/correspondingAssociate/contactDepartment,mailingAddr/person/correspondingAssociate/ejUserId
 Authorization: Basic dGplMDpUamUw
 Accept: application/json; charset=utf-8
 Accept-Language: sv

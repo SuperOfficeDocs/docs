@@ -38,6 +38,12 @@ public enum EjScriptVerb
 
 
 
+`BlockNone = 0` 
+
+0: All verbs allowed
+
+
+
 `BlockOPTIONS = 32` 
 
 32: Block OPTIONS access

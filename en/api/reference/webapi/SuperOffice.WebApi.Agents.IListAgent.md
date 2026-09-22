@@ -1,4 +1,4 @@
-# Interface IListAgent {#SuperOffice_WebApi_Agents_IListAgent}
+# <a id="SuperOffice_WebApi_Agents_IListAgent"></a> Interface IListAgent
 
 Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface IListAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### AddFromListDefinitionAsync\(int, ListItemEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_AddFromListDefinitionAsync_System_Int32_SuperOffice_WebApi_Data_ListItemEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_AddFromListDefinitionAsync_System_Int32_SuperOffice_WebApi_Data_ListItemEntity_SuperOffice_WebApi_RequestOptions_"></a> AddFromListDefinitionAsync\(int, ListItemEntity, RequestOptions\)
 
 Save a new list item for the specified list defintion
 
@@ -40,11 +40,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ListItemEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItemEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ListItemEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItemEntity)\>
 
 The saved list item
 
-### AddFromListNameAsync\(string, ListItemEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_AddFromListNameAsync_System_String_SuperOffice_WebApi_Data_ListItemEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_AddFromListNameAsync_System_String_SuperOffice_WebApi_Data_ListItemEntity_SuperOffice_WebApi_RequestOptions_"></a> AddFromListNameAsync\(string, ListItemEntity, RequestOptions\)
 
 Save a new list item for the specified list defintion
 
@@ -68,11 +68,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ListItemEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItemEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ListItemEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItemEntity)\>
 
 The saved list item
 
-### AddHierarchyToPathAsync\(Domain, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_AddHierarchyToPathAsync_SuperOffice_WebApi_Data_Domain_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_AddHierarchyToPathAsync_SuperOffice_WebApi_Data_Domain_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> AddHierarchyToPathAsync\(Domain, string, string, RequestOptions\)
 
 Add a hierarchy item to a path
 
@@ -100,11 +100,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[HierarchyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HierarchyEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[HierarchyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HierarchyEntity)\>
 
 The hierarchy node added to the path
 
-### ChangeCurrencyAsync\(double, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_ChangeCurrencyAsync_System_Double_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_ChangeCurrencyAsync_System_Double_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> ChangeCurrencyAsync\(double, string, string, RequestOptions\)
 
 Recalculates the amount to the new currency.
 
@@ -132,11 +132,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[double](https://learn.microsoft.com/dotnet/api/system.double)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[double](https://learn.microsoft.com/dotnet/api/system.double)\>
 
 Amount in new currency
 
-### CreateDefaultAmountClassEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_CreateDefaultAmountClassEntityAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_CreateDefaultAmountClassEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultAmountClassEntityAsync\(RequestOptions\)
 
 Set default values into a new AmountClassEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -153,11 +153,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AmountClassEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AmountClassEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[AmountClassEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AmountClassEntity)\>
 
 A blank AmountClassEntity
 
-### CreateDefaultCategoryEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_CreateDefaultCategoryEntityAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_CreateDefaultCategoryEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultCategoryEntityAsync\(RequestOptions\)
 
 Set default values into a new CategoryEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -174,11 +174,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CategoryEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CategoryEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CategoryEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CategoryEntity)\>
 
 A blank CategoryEntity
 
-### CreateDefaultCountryAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_CreateDefaultCountryAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_CreateDefaultCountryAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultCountryAsync\(RequestOptions\)
 
 Gets a new country
 
@@ -194,11 +194,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Country](/en/api/reference/webapi/SuperOffice.WebApi.Data.Country)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Country](/en/api/reference/webapi/SuperOffice.WebApi.Data.Country)\>
 
 A new country with default values
 
-### CreateDefaultCurrencyEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_CreateDefaultCurrencyEntityAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_CreateDefaultCurrencyEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultCurrencyEntityAsync\(RequestOptions\)
 
 Set default values into a new CurrencyEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -215,11 +215,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CurrencyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CurrencyEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CurrencyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CurrencyEntity)\>
 
 A blank CurrencyEntity
 
-### CreateDefaultDocumentTemplateEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_CreateDefaultDocumentTemplateEntityAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_CreateDefaultDocumentTemplateEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultDocumentTemplateEntityAsync\(RequestOptions\)
 
 Set default values into a new DocumentTemplateEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -236,11 +236,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentTemplateEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentTemplateEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity)\>
 
 A blank DocumentTemplateEntity
 
-### CreateDefaultDocumentTemplateLanguageAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_CreateDefaultDocumentTemplateLanguageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_CreateDefaultDocumentTemplateLanguageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultDocumentTemplateLanguageAsync\(int, string, RequestOptions\)
 
 Create a new document template language based on an existing template
 
@@ -268,7 +268,7 @@ Override language/culture codes on this request.
 
 Returns nothing - throws on error
 
-### CreateDefaultExtAppEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_CreateDefaultExtAppEntityAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_CreateDefaultExtAppEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultExtAppEntityAsync\(RequestOptions\)
 
 Set default values into a new ExtAppEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -285,11 +285,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ExtAppEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtAppEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ExtAppEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtAppEntity)\>
 
 A blank ExtAppEntity
 
-### CreateDefaultHeadingEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_CreateDefaultHeadingEntityAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_CreateDefaultHeadingEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultHeadingEntityAsync\(RequestOptions\)
 
 Set default values into a new HeadingEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -306,11 +306,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[HeadingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HeadingEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[HeadingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HeadingEntity)\>
 
 A blank HeadingEntity
 
-### CreateDefaultHeadingFromListDefinitionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_CreateDefaultHeadingFromListDefinitionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_CreateDefaultHeadingFromListDefinitionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultHeadingFromListDefinitionAsync\(int, RequestOptions\)
 
 Get a heading for the specified list defintion
 
@@ -330,11 +330,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[HeadingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HeadingEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[HeadingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HeadingEntity)\>
 
 The loaded heading
 
-### CreateDefaultHierarchyEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_CreateDefaultHierarchyEntityAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_CreateDefaultHierarchyEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultHierarchyEntityAsync\(RequestOptions\)
 
 Set default values into a new HierarchyEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -351,11 +351,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[HierarchyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HierarchyEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[HierarchyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HierarchyEntity)\>
 
 A blank HierarchyEntity
 
-### CreateDefaultListEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_CreateDefaultListEntityAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_CreateDefaultListEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultListEntityAsync\(RequestOptions\)
 
 Set default values into a new ListEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -372,11 +372,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ListEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ListEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListEntity)\>
 
 A blank ListEntity
 
-### CreateDefaultListItemEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_CreateDefaultListItemEntityAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_CreateDefaultListItemEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultListItemEntityAsync\(RequestOptions\)
 
 Set default values into a new ListItemEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -393,11 +393,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ListItemEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItemEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ListItemEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItemEntity)\>
 
 A blank ListItemEntity
 
-### CreateDefaultPictureFolderEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_CreateDefaultPictureFolderEntityAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_CreateDefaultPictureFolderEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultPictureFolderEntityAsync\(RequestOptions\)
 
 Set default values into a new PictureFolderEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -414,11 +414,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PictureFolderEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.PictureFolderEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PictureFolderEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.PictureFolderEntity)\>
 
 A blank PictureFolderEntity
 
-### CreateDefaultProjectTypeEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_CreateDefaultProjectTypeEntityAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_CreateDefaultProjectTypeEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultProjectTypeEntityAsync\(RequestOptions\)
 
 Set default values into a new ProjectTypeEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -435,11 +435,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectTypeEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectTypeEntity)\>
 
 A blank ProjectTypeEntity
 
-### CreateDefaultRelationDefinitionEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_CreateDefaultRelationDefinitionEntityAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_CreateDefaultRelationDefinitionEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultRelationDefinitionEntityAsync\(RequestOptions\)
 
 Set default values into a new RelationDefinitionEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -456,11 +456,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RelationDefinitionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.RelationDefinitionEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[RelationDefinitionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.RelationDefinitionEntity)\>
 
 A blank RelationDefinitionEntity
 
-### CreateDefaultResourceEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_CreateDefaultResourceEntityAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_CreateDefaultResourceEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultResourceEntityAsync\(RequestOptions\)
 
 Set default values into a new ResourceEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -477,11 +477,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ResourceEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ResourceEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ResourceEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ResourceEntity)\>
 
 A blank ResourceEntity
 
-### CreateDefaultSaleStageEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_CreateDefaultSaleStageEntityAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_CreateDefaultSaleStageEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultSaleStageEntityAsync\(RequestOptions\)
 
 Set default values into a new SaleStageEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -498,11 +498,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleStageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleStageEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleStageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleStageEntity)\>
 
 A blank SaleStageEntity
 
-### CreateDefaultSaleTypeEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_CreateDefaultSaleTypeEntityAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_CreateDefaultSaleTypeEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultSaleTypeEntityAsync\(RequestOptions\)
 
 Set default values into a new SaleTypeEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -519,11 +519,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleTypeEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleTypeEntity)\>
 
 A blank SaleTypeEntity
 
-### CreateDefaultTaskMenuAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_CreateDefaultTaskMenuAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_CreateDefaultTaskMenuAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultTaskMenuAsync\(RequestOptions\)
 
 Set default values into a new TaskMenu.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -540,11 +540,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TaskMenu](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TaskMenu](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu)\>
 
 A blank TaskMenu
 
-### CreateDefaultTicketCategoryEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_CreateDefaultTicketCategoryEntityAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_CreateDefaultTicketCategoryEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultTicketCategoryEntityAsync\(RequestOptions\)
 
 Set default values into a new TicketCategoryEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -561,11 +561,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketCategoryEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketCategoryEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity)\>
 
 A blank TicketCategoryEntity
 
-### CreateDefaultTicketPriorityEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_CreateDefaultTicketPriorityEntityAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_CreateDefaultTicketPriorityEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultTicketPriorityEntityAsync\(RequestOptions\)
 
 Set default values into a new TicketPriorityEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -582,11 +582,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketPriorityEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketPriorityEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity)\>
 
 A blank TicketPriorityEntity
 
-### CreateDefaultTicketRelationDefinitionEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_CreateDefaultTicketRelationDefinitionEntityAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_CreateDefaultTicketRelationDefinitionEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultTicketRelationDefinitionEntityAsync\(RequestOptions\)
 
 Set default values into a new TicketRelationDefinitionEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -603,11 +603,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketRelationDefinitionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationDefinitionEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketRelationDefinitionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationDefinitionEntity)\>
 
 A blank TicketRelationDefinitionEntity
 
-### CreateDefaultTicketStatusEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_CreateDefaultTicketStatusEntityAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_CreateDefaultTicketStatusEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultTicketStatusEntityAsync\(RequestOptions\)
 
 Set default values into a new TicketStatusEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -624,11 +624,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketStatusEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStatusEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketStatusEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStatusEntity)\>
 
 A blank TicketStatusEntity
 
-### CreateDefaultTicketTypeEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_CreateDefaultTicketTypeEntityAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_CreateDefaultTicketTypeEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultTicketTypeEntityAsync\(RequestOptions\)
 
 Set default values into a new TicketTypeEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -645,11 +645,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketTypeEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketTypeEntity)\>
 
 A blank TicketTypeEntity
 
-### CreateDefaultWebPanelEntityAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_CreateDefaultWebPanelEntityAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_CreateDefaultWebPanelEntityAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultWebPanelEntityAsync\(RequestOptions\)
 
 Set default values into a new WebPanelEntity.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -666,11 +666,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WebPanelEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.WebPanelEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[WebPanelEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.WebPanelEntity)\>
 
 A blank WebPanelEntity
 
-### DeleteAllFromListDefinitionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_DeleteAllFromListDefinitionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_DeleteAllFromListDefinitionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteAllFromListDefinitionAsync\(int, RequestOptions\)
 
 Marks all items in the list deleted
 
@@ -694,7 +694,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### DeleteAllFromListNameAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_DeleteAllFromListNameAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_DeleteAllFromListNameAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> DeleteAllFromListNameAsync\(string, RequestOptions\)
 
 Marks all items in the list deleted
 
@@ -718,7 +718,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### DeleteAllHeadingsFromListDefinitionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_DeleteAllHeadingsFromListDefinitionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_DeleteAllHeadingsFromListDefinitionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteAllHeadingsFromListDefinitionAsync\(int, RequestOptions\)
 
 Delete all headings for list resolved by the provided id.
 
@@ -742,7 +742,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### DeleteAllHeadingsFromNameAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_DeleteAllHeadingsFromNameAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_DeleteAllHeadingsFromNameAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> DeleteAllHeadingsFromNameAsync\(string, RequestOptions\)
 
 Delete all headings for list resolved by the provided name.
 
@@ -766,7 +766,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### DeleteAppTaskMenusAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_DeleteAppTaskMenusAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_DeleteAppTaskMenusAsync_SuperOffice_WebApi_RequestOptions_"></a> DeleteAppTaskMenusAsync\(RequestOptions\)
 
 Permanentely delete all task menus owned by your app; works in Online only, for registered Apps that send a valid ApplicationToken; otherwise nothing happens
 
@@ -786,7 +786,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### DeleteAppWebPanelsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_DeleteAppWebPanelsAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_DeleteAppWebPanelsAsync_SuperOffice_WebApi_RequestOptions_"></a> DeleteAppWebPanelsAsync\(RequestOptions\)
 
 Permanentely delete all web panels owned by your app; works in Online only, for registered Apps that send a valid ApplicationToken; otherwise nothing happens
 
@@ -806,7 +806,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### DeleteDocumentTemplateLanguageAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_DeleteDocumentTemplateLanguageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_DeleteDocumentTemplateLanguageAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> DeleteDocumentTemplateLanguageAsync\(int, string, RequestOptions\)
 
 Deletes language variant of the document template
 
@@ -834,7 +834,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### DeleteFromListDefinitionAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_DeleteFromListDefinitionAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_DeleteFromListDefinitionAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteFromListDefinitionAsync\(int, int, RequestOptions\)
 
 Delete a list item from the specified list defintion
 
@@ -862,7 +862,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### DeleteFromListNameAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_DeleteFromListNameAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_DeleteFromListNameAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> DeleteFromListNameAsync\(int, string, RequestOptions\)
 
 Delete a list item from the specified list defintion
 
@@ -890,7 +890,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### DeleteHierarchyEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_DeleteHierarchyEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_DeleteHierarchyEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteHierarchyEntityAsync\(int, RequestOptions\)
 
 Deletes the HierarchyEntity
 
@@ -912,7 +912,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### DeleteHierarchyFromPathAsync\(Domain, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_DeleteHierarchyFromPathAsync_SuperOffice_WebApi_Data_Domain_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_DeleteHierarchyFromPathAsync_SuperOffice_WebApi_Data_Domain_System_String_SuperOffice_WebApi_RequestOptions_"></a> DeleteHierarchyFromPathAsync\(Domain, string, RequestOptions\)
 
 Remove a hierarchy item and its children from a path
 
@@ -940,7 +940,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### DeleteListEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_DeleteListEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_DeleteListEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteListEntityAsync\(int, RequestOptions\)
 
 Deletes the ListEntity
 
@@ -962,7 +962,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### DeleteListEntityByNameAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_DeleteListEntityByNameAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_DeleteListEntityByNameAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> DeleteListEntityByNameAsync\(string, RequestOptions\)
 
 Delete a ListEntity resolved by the provided name.
 
@@ -986,7 +986,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### DeletePictureFolderEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_DeletePictureFolderEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_DeletePictureFolderEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeletePictureFolderEntityAsync\(int, RequestOptions\)
 
 Deletes the PictureFolderEntity
 
@@ -1008,7 +1008,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### DeleteProjectStatusAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_DeleteProjectStatusAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_DeleteProjectStatusAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteProjectStatusAsync\(int, RequestOptions\)
 
 Deletes a project status
 
@@ -1032,7 +1032,7 @@ Override language/culture codes on this request.
 
 No return
 
-### DeleteResourceEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_DeleteResourceEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_DeleteResourceEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteResourceEntityAsync\(int, RequestOptions\)
 
 Deletes the ResourceEntity
 
@@ -1054,7 +1054,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### DeleteTaskMenuAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_DeleteTaskMenuAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_DeleteTaskMenuAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteTaskMenuAsync\(int, RequestOptions\)
 
 Deletes the TaskMenu
 
@@ -1076,7 +1076,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### DeleteTicketCategoryEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_DeleteTicketCategoryEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_DeleteTicketCategoryEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteTicketCategoryEntityAsync\(int, RequestOptions\)
 
 Deletes the TicketCategoryEntity
 
@@ -1098,7 +1098,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### DeleteTicketPriorityEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_DeleteTicketPriorityEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_DeleteTicketPriorityEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteTicketPriorityEntityAsync\(int, RequestOptions\)
 
 Deletes the TicketPriorityEntity
 
@@ -1120,7 +1120,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### DeleteTicketRelationDefinitionEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_DeleteTicketRelationDefinitionEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_DeleteTicketRelationDefinitionEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteTicketRelationDefinitionEntityAsync\(int, RequestOptions\)
 
 Deletes the TicketRelationDefinitionEntity
 
@@ -1142,7 +1142,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### DeleteTicketStatusEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_DeleteTicketStatusEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_DeleteTicketStatusEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteTicketStatusEntityAsync\(int, RequestOptions\)
 
 Deletes the TicketStatusEntity
 
@@ -1164,7 +1164,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### DeleteTicketTypeEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_DeleteTicketTypeEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_DeleteTicketTypeEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteTicketTypeEntityAsync\(int, RequestOptions\)
 
 Deletes the TicketTypeEntity
 
@@ -1186,7 +1186,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### DeleteWebPanelAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_DeleteWebPanelAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_DeleteWebPanelAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> DeleteWebPanelAsync\(int, RequestOptions\)
 
 Hard-delete (real, permanent DELETE in the database) the given web panel. Use with care!
 
@@ -1210,7 +1210,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### GenerateNavigationUrlAsync\(Navigation, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GenerateNavigationUrlAsync_SuperOffice_WebApi_Data_Navigation_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GenerateNavigationUrlAsync_SuperOffice_WebApi_Data_Navigation_System_String_SuperOffice_WebApi_RequestOptions_"></a> GenerateNavigationUrlAsync\(Navigation, string, RequestOptions\)
 
 This methods generates the navigation URL to be used to navigate to the panel
 
@@ -1234,11 +1234,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
 
 The navigation url
 
-### GetAllAutomatedCategoryUpdatesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetAllAutomatedCategoryUpdatesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetAllAutomatedCategoryUpdatesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetAllAutomatedCategoryUpdatesAsync\(RequestOptions\)
 
 Save the automated category update settings
 
@@ -1254,11 +1254,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AutomatedCategoryUpdate](/en/api/reference/webapi/SuperOffice.WebApi.Data.AutomatedCategoryUpdate)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[AutomatedCategoryUpdate](/en/api/reference/webapi/SuperOffice.WebApi.Data.AutomatedCategoryUpdate)\[\]\>
 
 Returns all settings
 
-### GetAllConsentSourceAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetAllConsentSourceAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetAllConsentSourceAsync_SuperOffice_WebApi_RequestOptions_"></a> GetAllConsentSourceAsync\(RequestOptions\)
 
 Gets array of all ConsentSource objects.
 
@@ -1274,11 +1274,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConsentSource](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConsentSource)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ConsentSource](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConsentSource)\[\]\>
 
 Array of all ConsentSource objects
 
-### GetAllCountriesAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetAllCountriesAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetAllCountriesAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetAllCountriesAsync\(bool, RequestOptions\)
 
 Returns all available countries a contact or person could belong to.
 
@@ -1298,11 +1298,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Country](/en/api/reference/webapi/SuperOffice.WebApi.Data.Country)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Country](/en/api/reference/webapi/SuperOffice.WebApi.Data.Country)\[\]\>
 
 An array of all available countries
 
-### GetAllCurrenciesAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetAllCurrenciesAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetAllCurrenciesAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetAllCurrenciesAsync\(bool, RequestOptions\)
 
 Returns all currencies
 
@@ -1322,11 +1322,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CurrencyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CurrencyEntity)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CurrencyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CurrencyEntity)\[\]\>
 
 Array of currencies
 
-### GetAllDocumentTemplatesAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetAllDocumentTemplatesAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetAllDocumentTemplatesAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetAllDocumentTemplatesAsync\(bool, RequestOptions\)
 
 Returns all templates
 
@@ -1346,11 +1346,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentTemplateEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentTemplateEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity)\[\]\>
 
 Array of all template items
 
-### GetAllDomainsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetAllDomainsAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetAllDomainsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetAllDomainsAsync\(RequestOptions\)
 
 Get list of all domains
 
@@ -1366,11 +1366,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Domain](/en/api/reference/webapi/SuperOffice.WebApi.Data.Domain)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Domain](/en/api/reference/webapi/SuperOffice.WebApi.Data.Domain)\[\]\>
 
 Domain types (scripts, extra tables, etc)
 
-### GetAllFromListDefinitionAsync\(int, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetAllFromListDefinitionAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetAllFromListDefinitionAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetAllFromListDefinitionAsync\(int, bool, RequestOptions\)
 
 Get all list items for the specified list defintion
 
@@ -1394,11 +1394,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ListItemEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItemEntity)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ListItemEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItemEntity)\[\]\>
 
 The list items
 
-### GetAllFromListNameAsync\(string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetAllFromListNameAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetAllFromListNameAsync_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetAllFromListNameAsync\(string, bool, RequestOptions\)
 
 Get all list items for the specified list defintion
 
@@ -1422,11 +1422,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ListItemEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItemEntity)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ListItemEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItemEntity)\[\]\>
 
 The list items
 
-### GetAllInDomainAsync\(Domain, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetAllInDomainAsync_SuperOffice_WebApi_Data_Domain_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetAllInDomainAsync_SuperOffice_WebApi_Data_Domain_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetAllInDomainAsync\(Domain, bool, RequestOptions\)
 
 Get all items in a domain
 
@@ -1450,11 +1450,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[HierarchyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HierarchyEntity)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[HierarchyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HierarchyEntity)\[\]\>
 
 All items and child items within a domain
 
-### GetAllLegalBaseAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetAllLegalBaseAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetAllLegalBaseAsync_SuperOffice_WebApi_RequestOptions_"></a> GetAllLegalBaseAsync\(RequestOptions\)
 
 Gets array of all LegalBase objects.
 
@@ -1470,11 +1470,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LegalBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.LegalBase)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LegalBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.LegalBase)\[\]\>
 
 Array of all LegalBase objects
 
-### GetAllReasonSoldAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetAllReasonSoldAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetAllReasonSoldAsync_SuperOffice_WebApi_RequestOptions_"></a> GetAllReasonSoldAsync\(RequestOptions\)
 
 Gets array of all ReasonSold objects.
 
@@ -1490,11 +1490,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ReasonSold](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReasonSold)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ReasonSold](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReasonSold)\[\]\>
 
 Array of all ReasonSold objects
 
-### GetAllReasonStalledAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetAllReasonStalledAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetAllReasonStalledAsync_SuperOffice_WebApi_RequestOptions_"></a> GetAllReasonStalledAsync\(RequestOptions\)
 
 Gets array of all ReasonStalled objects.
 
@@ -1510,11 +1510,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ReasonStalled](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReasonStalled)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ReasonStalled](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReasonStalled)\[\]\>
 
 Array of all ReasonStalled objects
 
-### GetAllSaleStagesAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetAllSaleStagesAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetAllSaleStagesAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetAllSaleStagesAsync\(bool, RequestOptions\)
 
 Returns all ratings
 
@@ -1534,11 +1534,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleStageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleStageEntity)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleStageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleStageEntity)\[\]\>
 
 Array of sale stage ratings
 
-### GetAllSaleTypeAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetAllSaleTypeAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetAllSaleTypeAsync_SuperOffice_WebApi_RequestOptions_"></a> GetAllSaleTypeAsync\(RequestOptions\)
 
 Returns all sale types as simple list items
 
@@ -1554,11 +1554,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleType](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleType)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleType](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleType)\[\]\>
 
 Array of simple sale type list items
 
-### GetAllSaleTypeEntitiesAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetAllSaleTypeEntitiesAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetAllSaleTypeEntitiesAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetAllSaleTypeEntitiesAsync\(bool, RequestOptions\)
 
 Returns all sale types as entities with stakeholders, guide and quote properties
 
@@ -1578,11 +1578,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleTypeEntity)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleTypeEntity)\[\]\>
 
 Array of sale type entities with stakeholders, guide and quote properties
 
-### GetAllSelectionCategoryAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetAllSelectionCategoryAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetAllSelectionCategoryAsync_SuperOffice_WebApi_RequestOptions_"></a> GetAllSelectionCategoryAsync\(RequestOptions\)
 
 Gets array of all SelectionCategory objects.
 
@@ -1598,11 +1598,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectionCategory](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionCategory)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectionCategory](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionCategory)\[\]\>
 
 Array of all SelectionCategory objects
 
-### GetAllTasksAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetAllTasksAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetAllTasksAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetAllTasksAsync\(bool, RequestOptions\)
 
 Returns all appointment tasks
 
@@ -1622,11 +1622,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TaskListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TaskListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskListItem)\[\]\>
 
 An array of all available tasks
 
-### GetAllTicketPrioritiesAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetAllTicketPrioritiesAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetAllTicketPrioritiesAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetAllTicketPrioritiesAsync\(bool, RequestOptions\)
 
 Returns all available ticket priorities.
 
@@ -1646,11 +1646,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketPriorityEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketPriorityEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity)\[\]\>
 
 An array of all available ticket priorities
 
-### GetAllTicketRelationDefinitionEntitiesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetAllTicketRelationDefinitionEntitiesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetAllTicketRelationDefinitionEntitiesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetAllTicketRelationDefinitionEntitiesAsync\(RequestOptions\)
 
 Returns all non-built-in ticket relation definitions, including their source and destination ticket type associations.
 
@@ -1666,11 +1666,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketRelationDefinitionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationDefinitionEntity)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketRelationDefinitionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationDefinitionEntity)\[\]\>
 
 An array of all non-built-in ticket relation definition entities
 
-### GetAmountClassEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetAmountClassEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetAmountClassEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetAmountClassEntityAsync\(int, RequestOptions\)
 
 Gets a specific AmountClassEntity object.
 
@@ -1690,11 +1690,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AmountClassEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AmountClassEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[AmountClassEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AmountClassEntity)\>
 
 AmountClassEntity
 
-### GetAppTaskMenusAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetAppTaskMenusAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetAppTaskMenusAsync_SuperOffice_WebApi_RequestOptions_"></a> GetAppTaskMenusAsync\(RequestOptions\)
 
 Get all task menus owned by your app; works in Online only, for registered Apps that send a valid ApplicationToken
 
@@ -1710,11 +1710,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TaskMenu](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TaskMenu](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu)\[\]\>
 
 List of all task menus owned by the current App
 
-### GetAppWebPanelsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetAppWebPanelsAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetAppWebPanelsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetAppWebPanelsAsync\(RequestOptions\)
 
 Get all web panels owned by your app; works in Online only, for registered Apps that send a valid ApplicationToken
 
@@ -1730,11 +1730,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WebPanelEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.WebPanelEntity)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[WebPanelEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.WebPanelEntity)\[\]\>
 
 List of all web panels owned by the current App
 
-### GetBaseCurrencyAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetBaseCurrencyAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetBaseCurrencyAsync_SuperOffice_WebApi_RequestOptions_"></a> GetBaseCurrencyAsync\(RequestOptions\)
 
 Get the base currency, used for calculating exchange rates
 
@@ -1750,11 +1750,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CurrencyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CurrencyEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CurrencyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CurrencyEntity)\>
 
 The base currency that other currencies are expressed in terms of
 
-### GetBusinessAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetBusinessAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetBusinessAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetBusinessAsync\(int, RequestOptions\)
 
 Gets a specific Business object.
 
@@ -1774,11 +1774,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Business](/en/api/reference/webapi/SuperOffice.WebApi.Data.Business)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Business](/en/api/reference/webapi/SuperOffice.WebApi.Data.Business)\>
 
 Business
 
-### GetBusinessListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetBusinessListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetBusinessListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetBusinessListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific Business objects.
 
@@ -1798,11 +1798,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Business](/en/api/reference/webapi/SuperOffice.WebApi.Data.Business)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Business](/en/api/reference/webapi/SuperOffice.WebApi.Data.Business)\[\]\>
 
 Array of Business objects
 
-### GetBusinessesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetBusinessesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetBusinessesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetBusinessesAsync\(RequestOptions\)
 
 Returns all available businesses that a contact could have.
 
@@ -1818,11 +1818,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Business](/en/api/reference/webapi/SuperOffice.WebApi.Data.Business)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Business](/en/api/reference/webapi/SuperOffice.WebApi.Data.Business)\[\]\>
 
 An array of all available businesses
 
-### GetCategoriesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetCategoriesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetCategoriesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetCategoriesAsync\(RequestOptions\)
 
 Returns all categories a contact could belong to
 
@@ -1838,11 +1838,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Category](/en/api/reference/webapi/SuperOffice.WebApi.Data.Category)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Category](/en/api/reference/webapi/SuperOffice.WebApi.Data.Category)\[\]\>
 
 An array of all available categories
 
-### GetCategoryAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetCategoryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetCategoryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetCategoryAsync\(int, RequestOptions\)
 
 Gets a specific Category object.
 
@@ -1862,11 +1862,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Category](/en/api/reference/webapi/SuperOffice.WebApi.Data.Category)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Category](/en/api/reference/webapi/SuperOffice.WebApi.Data.Category)\>
 
 Category
 
-### GetCategoryEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetCategoryEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetCategoryEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetCategoryEntityAsync\(int, RequestOptions\)
 
 Gets a specific CategoryEntity object.
 
@@ -1886,11 +1886,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CategoryEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CategoryEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CategoryEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CategoryEntity)\>
 
 CategoryEntity
 
-### GetCategoryListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetCategoryListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetCategoryListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetCategoryListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific Category objects.
 
@@ -1910,11 +1910,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Category](/en/api/reference/webapi/SuperOffice.WebApi.Data.Category)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Category](/en/api/reference/webapi/SuperOffice.WebApi.Data.Category)\[\]\>
 
 Array of Category objects
 
-### GetCompetitorAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetCompetitorAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetCompetitorAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetCompetitorAsync\(int, RequestOptions\)
 
 Gets a specific Competitor object.
 
@@ -1934,11 +1934,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Competitor](/en/api/reference/webapi/SuperOffice.WebApi.Data.Competitor)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Competitor](/en/api/reference/webapi/SuperOffice.WebApi.Data.Competitor)\>
 
 Competitor
 
-### GetCompetitorListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetCompetitorListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetCompetitorListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetCompetitorListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific Competitor objects.
 
@@ -1958,11 +1958,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Competitor](/en/api/reference/webapi/SuperOffice.WebApi.Data.Competitor)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Competitor](/en/api/reference/webapi/SuperOffice.WebApi.Data.Competitor)\[\]\>
 
 Array of Competitor objects
 
-### GetCompetitorsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetCompetitorsAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetCompetitorsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetCompetitorsAsync\(RequestOptions\)
 
 Returns all competitors
 
@@ -1978,9 +1978,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Competitor](/en/api/reference/webapi/SuperOffice.WebApi.Data.Competitor)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Competitor](/en/api/reference/webapi/SuperOffice.WebApi.Data.Competitor)\[\]\>
 
-### GetConsentPurposeAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetConsentPurposeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetConsentPurposeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetConsentPurposeAsync\(int, RequestOptions\)
 
 Gets a specific ConsentPurpose object.
 
@@ -2000,11 +2000,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConsentPurpose](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConsentPurpose)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ConsentPurpose](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConsentPurpose)\>
 
 ConsentPurpose
 
-### GetConsentPurposeListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetConsentPurposeListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetConsentPurposeListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetConsentPurposeListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific ConsentPurpose objects.
 
@@ -2024,11 +2024,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConsentPurpose](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConsentPurpose)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ConsentPurpose](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConsentPurpose)\[\]\>
 
 Array of ConsentPurpose objects
 
-### GetConsentPurposesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetConsentPurposesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetConsentPurposesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetConsentPurposesAsync\(RequestOptions\)
 
 Returns all defined purposes.
 
@@ -2044,11 +2044,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConsentPurpose](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConsentPurpose)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ConsentPurpose](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConsentPurpose)\[\]\>
 
 An array of all defined purposes
 
-### GetConsentSourceAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetConsentSourceAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetConsentSourceAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetConsentSourceAsync\(int, RequestOptions\)
 
 Gets a specific ConsentSource object.
 
@@ -2068,11 +2068,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConsentSource](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConsentSource)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ConsentSource](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConsentSource)\>
 
 ConsentSource
 
-### GetConsentSourceListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetConsentSourceListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetConsentSourceListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetConsentSourceListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific ConsentSource objects.
 
@@ -2092,11 +2092,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConsentSource](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConsentSource)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ConsentSource](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConsentSource)\[\]\>
 
 Array of ConsentSource objects
 
-### GetConsentSourcesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetConsentSourcesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetConsentSourcesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetConsentSourcesAsync\(RequestOptions\)
 
 Returns all defined Sources.
 
@@ -2112,11 +2112,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConsentSource](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConsentSource)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ConsentSource](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConsentSource)\[\]\>
 
 An array of all defined Sources
 
-### GetCountriesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetCountriesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetCountriesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetCountriesAsync\(RequestOptions\)
 
 Returns all available countries a contact or person could belong to.
 
@@ -2132,11 +2132,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Country](/en/api/reference/webapi/SuperOffice.WebApi.Data.Country)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Country](/en/api/reference/webapi/SuperOffice.WebApi.Data.Country)\[\]\>
 
 An array of all available countries
 
-### GetCountryAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetCountryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetCountryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetCountryAsync\(int, RequestOptions\)
 
 Gets a specific Country object.
 
@@ -2156,11 +2156,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Country](/en/api/reference/webapi/SuperOffice.WebApi.Data.Country)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Country](/en/api/reference/webapi/SuperOffice.WebApi.Data.Country)\>
 
 Country
 
-### GetCountryListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetCountryListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetCountryListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetCountryListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific Country objects.
 
@@ -2180,11 +2180,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Country](/en/api/reference/webapi/SuperOffice.WebApi.Data.Country)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Country](/en/api/reference/webapi/SuperOffice.WebApi.Data.Country)\[\]\>
 
 Array of Country objects
 
-### GetCreditedAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetCreditedAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetCreditedAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetCreditedAsync\(int, RequestOptions\)
 
 Gets a specific Credited object.
 
@@ -2204,11 +2204,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Credited](/en/api/reference/webapi/SuperOffice.WebApi.Data.Credited)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Credited](/en/api/reference/webapi/SuperOffice.WebApi.Data.Credited)\>
 
 Credited
 
-### GetCreditedListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetCreditedListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetCreditedListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetCreditedListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific Credited objects.
 
@@ -2228,11 +2228,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Credited](/en/api/reference/webapi/SuperOffice.WebApi.Data.Credited)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Credited](/en/api/reference/webapi/SuperOffice.WebApi.Data.Credited)\[\]\>
 
 Array of Credited objects
 
-### GetCreditedsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetCreditedsAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetCreditedsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetCreditedsAsync\(RequestOptions\)
 
 Returns all credited
 
@@ -2248,9 +2248,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Credited](/en/api/reference/webapi/SuperOffice.WebApi.Data.Credited)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Credited](/en/api/reference/webapi/SuperOffice.WebApi.Data.Credited)\[\]\>
 
-### GetCurrenciesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetCurrenciesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetCurrenciesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetCurrenciesAsync\(RequestOptions\)
 
 Returns all currencies
 
@@ -2266,11 +2266,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Currency](/en/api/reference/webapi/SuperOffice.WebApi.Data.Currency)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Currency](/en/api/reference/webapi/SuperOffice.WebApi.Data.Currency)\[\]\>
 
 Array of currencies
 
-### GetCurrencyAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetCurrencyAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetCurrencyAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetCurrencyAsync\(int, RequestOptions\)
 
 Gets a specific Currency object.
 
@@ -2290,11 +2290,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Currency](/en/api/reference/webapi/SuperOffice.WebApi.Data.Currency)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Currency](/en/api/reference/webapi/SuperOffice.WebApi.Data.Currency)\>
 
 Currency
 
-### GetCurrencyEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetCurrencyEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetCurrencyEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetCurrencyEntityAsync\(int, RequestOptions\)
 
 Gets a specific CurrencyEntity object.
 
@@ -2314,11 +2314,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CurrencyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CurrencyEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CurrencyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CurrencyEntity)\>
 
 CurrencyEntity
 
-### GetCurrencyListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetCurrencyListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetCurrencyListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetCurrencyListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific Currency objects.
 
@@ -2338,11 +2338,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Currency](/en/api/reference/webapi/SuperOffice.WebApi.Data.Currency)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Currency](/en/api/reference/webapi/SuperOffice.WebApi.Data.Currency)\[\]\>
 
 Array of Currency objects
 
-### GetCustomerLanguageAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetCustomerLanguageAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetCustomerLanguageAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetCustomerLanguageAsync\(int, RequestOptions\)
 
 Gets a specific CustomerLanguage object.
 
@@ -2362,11 +2362,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CustomerLanguage](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerLanguage)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomerLanguage](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerLanguage)\>
 
 CustomerLanguage
 
-### GetCustomerLanguageListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetCustomerLanguageListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetCustomerLanguageListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetCustomerLanguageListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific CustomerLanguage objects.
 
@@ -2386,11 +2386,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CustomerLanguage](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerLanguage)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomerLanguage](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerLanguage)\[\]\>
 
 Array of CustomerLanguage objects
 
-### GetCustomerLanguagesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetCustomerLanguagesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetCustomerLanguagesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetCustomerLanguagesAsync\(RequestOptions\)
 
 ```csharp
 Task<CustomerLanguage[]> GetCustomerLanguagesAsync(RequestOptions requestOptions = null)
@@ -2404,9 +2404,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CustomerLanguage](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerLanguage)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CustomerLanguage](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomerLanguage)\[\]\>
 
-### GetDeliveryTermAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetDeliveryTermAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetDeliveryTermAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetDeliveryTermAsync\(int, RequestOptions\)
 
 Gets a specific DeliveryTerm object.
 
@@ -2426,11 +2426,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DeliveryTerm](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeliveryTerm)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DeliveryTerm](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeliveryTerm)\>
 
 DeliveryTerm
 
-### GetDeliveryTermsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetDeliveryTermsAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetDeliveryTermsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetDeliveryTermsAsync\(RequestOptions\)
 
 Returns all DeliveryTerms in SuperOffice db.
 
@@ -2446,11 +2446,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DeliveryTerm](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeliveryTerm)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DeliveryTerm](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeliveryTerm)\[\]\>
 
 An array of all available DeliveryTerms
 
-### GetDeliveryTypeAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetDeliveryTypeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetDeliveryTypeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetDeliveryTypeAsync\(int, RequestOptions\)
 
 Gets a specific DeliveryType object.
 
@@ -2470,11 +2470,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DeliveryType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeliveryType)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DeliveryType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeliveryType)\>
 
 DeliveryType
 
-### GetDeliveryTypesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetDeliveryTypesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetDeliveryTypesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetDeliveryTypesAsync\(RequestOptions\)
 
 Returns all DeliveryTypes in SuperOffice db.
 
@@ -2490,11 +2490,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DeliveryType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeliveryType)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DeliveryType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DeliveryType)\[\]\>
 
 An array of all available DeliveryType
 
-### GetDepartmentAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetDepartmentAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetDepartmentAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetDepartmentAsync\(int, RequestOptions\)
 
 Gets a specific Department object.
 
@@ -2514,11 +2514,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Department](/en/api/reference/webapi/SuperOffice.WebApi.Data.Department)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Department](/en/api/reference/webapi/SuperOffice.WebApi.Data.Department)\>
 
 Department
 
-### GetDepartmentListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetDepartmentListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetDepartmentListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetDepartmentListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific Department objects.
 
@@ -2538,11 +2538,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Department](/en/api/reference/webapi/SuperOffice.WebApi.Data.Department)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Department](/en/api/reference/webapi/SuperOffice.WebApi.Data.Department)\[\]\>
 
 Array of Department objects
 
-### GetDepartmentsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetDepartmentsAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetDepartmentsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetDepartmentsAsync\(RequestOptions\)
 
 Getting all departments/user groups for the internal phone list with the user's colleagues.
 
@@ -2558,11 +2558,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Department](/en/api/reference/webapi/SuperOffice.WebApi.Data.Department)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Department](/en/api/reference/webapi/SuperOffice.WebApi.Data.Department)\[\]\>
 
 Returns all departments.
 
-### GetDocumentTemplateAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetDocumentTemplateAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetDocumentTemplateAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetDocumentTemplateAsync\(int, RequestOptions\)
 
 Gets a specific DocumentTemplate object.
 
@@ -2582,11 +2582,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentTemplate](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplate)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentTemplate](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplate)\>
 
 DocumentTemplate
 
-### GetDocumentTemplateEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetDocumentTemplateEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetDocumentTemplateEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetDocumentTemplateEntityAsync\(int, RequestOptions\)
 
 Gets a specific DocumentTemplateEntity object.
 
@@ -2606,11 +2606,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentTemplateEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentTemplateEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity)\>
 
 DocumentTemplateEntity
 
-### GetDocumentTemplateExtensionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetDocumentTemplateExtensionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetDocumentTemplateExtensionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetDocumentTemplateExtensionAsync\(int, RequestOptions\)
 
 Get the file extension for the document template
 
@@ -2630,11 +2630,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
 
 File name extension including '.': '.doc' or '.xlsx'
 
-### GetDocumentTemplateLanguagesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetDocumentTemplateLanguagesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetDocumentTemplateLanguagesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetDocumentTemplateLanguagesAsync\(int, RequestOptions\)
 
 Get the supported language variations for a document template
 
@@ -2654,11 +2654,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\[\]\>
 
 Returns the list of languages as ISO cultures (en-US, no, sv, etc)
 
-### GetDocumentTemplateListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetDocumentTemplateListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetDocumentTemplateListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetDocumentTemplateListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific DocumentTemplate objects.
 
@@ -2678,11 +2678,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentTemplate](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplate)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentTemplate](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplate)\[\]\>
 
 Array of DocumentTemplate objects
 
-### GetDocumentTemplatePropertiesAsync\(int, string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetDocumentTemplatePropertiesAsync_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetDocumentTemplatePropertiesAsync_System_Int32_System_String___SuperOffice_WebApi_RequestOptions_"></a> GetDocumentTemplatePropertiesAsync\(int, string\[\], RequestOptions\)
 
 Get document template properties
 
@@ -2706,11 +2706,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\>
 
 Dictionary of key=value pairs of requested properties
 
-### GetDocumentTemplateStreamFromIdAsync\(int, string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetDocumentTemplateStreamFromIdAsync_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetDocumentTemplateStreamFromIdAsync_System_Int32_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetDocumentTemplateStreamFromIdAsync\(int, string, string, RequestOptions\)
 
 Retrieve a stream to a document template based on its id
 
@@ -2738,11 +2738,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[byte](https://learn.microsoft.com/dotnet/api/system.byte)\[\]\>
 
 Open stream to the template content
 
-### GetDocumentTemplateTaskAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetDocumentTemplateTaskAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetDocumentTemplateTaskAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetDocumentTemplateTaskAsync\(int, RequestOptions\)
 
 Returns a Document Template list item as a TaskListItem. The appointment's task is a Document template item when the appointment is a document.
 
@@ -2762,11 +2762,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SoTask](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoTask)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SoTask](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoTask)\>
 
 Document Template item as TaskListItem.
 
-### GetDocumentTemplateUrlAsync\(int, bool, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetDocumentTemplateUrlAsync_System_Int32_System_Boolean_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetDocumentTemplateUrlAsync_System_Int32_System_Boolean_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetDocumentTemplateUrlAsync\(int, bool, string, RequestOptions\)
 
 Get a url to the document template
 
@@ -2794,11 +2794,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
 
 The URL to the document template
 
-### GetDocumentTemplateUsedInProjectStageAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetDocumentTemplateUsedInProjectStageAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetDocumentTemplateUsedInProjectStageAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetDocumentTemplateUsedInProjectStageAsync\(int, RequestOptions\)
 
 Get a String array of names in project guide that this template is used in
 
@@ -2818,11 +2818,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\[\]\>
 
 The name of the projectguides that use this template
 
-### GetDocumentTemplateUsedInSalesStageAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetDocumentTemplateUsedInSalesStageAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetDocumentTemplateUsedInSalesStageAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetDocumentTemplateUsedInSalesStageAsync\(int, RequestOptions\)
 
 Get a String array of names in sales guide that this template is used in
 
@@ -2842,11 +2842,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\[\]\>
 
 The name of the salesguides that use this template
 
-### GetDocumentTemplatesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetDocumentTemplatesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetDocumentTemplatesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetDocumentTemplatesAsync\(RequestOptions\)
 
 Returns all available document templates
 
@@ -2862,11 +2862,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentTemplate](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplate)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentTemplate](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplate)\[\]\>
 
 Array of DocumentTemplates
 
-### GetDocumentTemplatesTasksAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetDocumentTemplatesTasksAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetDocumentTemplatesTasksAsync_SuperOffice_WebApi_RequestOptions_"></a> GetDocumentTemplatesTasksAsync\(RequestOptions\)
 
 The appointment's task is a Document template item when the appointment is a document.
 
@@ -2882,11 +2882,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SoTask](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoTask)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SoTask](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoTask)\[\]\>
 
 Document Template list as a array of Tasks
 
-### GetDocumentTypesForPluginAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetDocumentTypesForPluginAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetDocumentTypesForPluginAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetDocumentTypesForPluginAsync\(int, RequestOptions\)
 
 Get a list of document types supported by a given document plugin. Use the document template type when creating a new template.
 
@@ -2906,11 +2906,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[IntStringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.IntStringDictionary)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[IntStringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.IntStringDictionary)\>
 
 Dictionary mapping document type id=name
 
-### GetEmarketingStrictModeAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetEmarketingStrictModeAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetEmarketingStrictModeAsync_SuperOffice_WebApi_RequestOptions_"></a> GetEmarketingStrictModeAsync\(RequestOptions\)
 
 Get the value of the Emarketing strict mode setting
 
@@ -2926,11 +2926,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
 
 Returns true if Emarkerint strict mode is set, false otherwise
 
-### GetExtAppEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetExtAppEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetExtAppEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetExtAppEntityAsync\(int, RequestOptions\)
 
 Gets a specific ExtAppEntity object.
 
@@ -2950,11 +2950,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ExtAppEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtAppEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ExtAppEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtAppEntity)\>
 
 ExtAppEntity
 
-### GetFromListDefinitionAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetFromListDefinitionAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetFromListDefinitionAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetFromListDefinitionAsync\(int, int, RequestOptions\)
 
 Get a list item for the specified list defintion
 
@@ -2978,11 +2978,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ListItemEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItemEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ListItemEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItemEntity)\>
 
 The loaded list item
 
-### GetFromListNameAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetFromListNameAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetFromListNameAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetFromListNameAsync\(int, string, RequestOptions\)
 
 Get a list item for the specified list defintion
 
@@ -3006,11 +3006,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ListItemEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItemEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ListItemEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItemEntity)\>
 
 The loaded list item
 
-### GetHeadingEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetHeadingEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetHeadingEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetHeadingEntityAsync\(int, RequestOptions\)
 
 Gets a specific HeadingEntity object.
 
@@ -3030,11 +3030,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[HeadingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HeadingEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[HeadingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HeadingEntity)\>
 
 HeadingEntity
 
-### GetHeadingsAsync\(int, int, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetHeadingsAsync_System_Int32_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetHeadingsAsync_System_Int32_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetHeadingsAsync\(int, int, bool, RequestOptions\)
 
 Gets a selectable MDO list of the headings for this list item
 
@@ -3062,11 +3062,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]\>
 
 Array of headings
 
-### GetHeadingsForListItemFromListNameAsync\(string, int, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetHeadingsForListItemFromListNameAsync_System_String_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetHeadingsForListItemFromListNameAsync_System_String_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetHeadingsForListItemFromListNameAsync\(string, int, bool, RequestOptions\)
 
 Gets a selectable MDO list of the headings for this list item
 
@@ -3094,11 +3094,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]\>
 
 Array of headings
 
-### GetHeadingsFromListDefinitionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetHeadingsFromListDefinitionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetHeadingsFromListDefinitionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetHeadingsFromListDefinitionAsync\(int, RequestOptions\)
 
 Gets headings for list resolved by the provided id.
 
@@ -3118,11 +3118,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[HeadingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HeadingEntity)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[HeadingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HeadingEntity)\[\]\>
 
 List of headings
 
-### GetHeadingsFromNameAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetHeadingsFromNameAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetHeadingsFromNameAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetHeadingsFromNameAsync\(string, RequestOptions\)
 
 Gets headings for list resolved by the provided name.
 
@@ -3142,11 +3142,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[HeadingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HeadingEntity)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[HeadingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HeadingEntity)\[\]\>
 
 List of headings
 
-### GetHierarchyEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetHierarchyEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetHierarchyEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetHierarchyEntityAsync\(int, RequestOptions\)
 
 Gets a specific HierarchyEntity object.
 
@@ -3166,11 +3166,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[HierarchyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HierarchyEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[HierarchyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HierarchyEntity)\>
 
 HierarchyEntity
 
-### GetHierarchyFromPathAsync\(Domain, string, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetHierarchyFromPathAsync_SuperOffice_WebApi_Data_Domain_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetHierarchyFromPathAsync_SuperOffice_WebApi_Data_Domain_System_String_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetHierarchyFromPathAsync\(Domain, string, bool, RequestOptions\)
 
 Get a hierarchy item from a path
 
@@ -3198,11 +3198,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[HierarchyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HierarchyEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[HierarchyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HierarchyEntity)\>
 
 The hierarchy node at the path
 
-### GetInstalledLanguagesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetInstalledLanguagesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetInstalledLanguagesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetInstalledLanguagesAsync\(RequestOptions\)
 
 Returns the list of all languages installed in this database.
 
@@ -3218,11 +3218,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LanguageInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.LanguageInfo)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LanguageInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.LanguageInfo)\[\]\>
 
 Array of installed languages
 
-### GetLanguageInfoAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetLanguageInfoAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetLanguageInfoAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetLanguageInfoAsync\(int, RequestOptions\)
 
 Gets a specific LanguageInfo object.
 
@@ -3242,11 +3242,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LanguageInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.LanguageInfo)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LanguageInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.LanguageInfo)\>
 
 LanguageInfo
 
-### GetLanguageInfoListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetLanguageInfoListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetLanguageInfoListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetLanguageInfoListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific LanguageInfo objects.
 
@@ -3266,11 +3266,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LanguageInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.LanguageInfo)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LanguageInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.LanguageInfo)\[\]\>
 
 Array of LanguageInfo objects
 
-### GetLegalBaseAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetLegalBaseAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetLegalBaseAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetLegalBaseAsync\(int, RequestOptions\)
 
 Gets a specific LegalBase object.
 
@@ -3290,11 +3290,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LegalBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.LegalBase)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LegalBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.LegalBase)\>
 
 LegalBase
 
-### GetLegalBaseListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetLegalBaseListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetLegalBaseListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetLegalBaseListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific LegalBase objects.
 
@@ -3314,11 +3314,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LegalBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.LegalBase)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LegalBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.LegalBase)\[\]\>
 
 Array of LegalBase objects
 
-### GetLegalBasesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetLegalBasesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetLegalBasesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetLegalBasesAsync\(RequestOptions\)
 
 Returns all defined bases.
 
@@ -3334,11 +3334,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LegalBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.LegalBase)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LegalBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.LegalBase)\[\]\>
 
 An array of all defined bases
 
-### GetLinkAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetLinkAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetLinkAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetLinkAsync\(int, RequestOptions\)
 
 Gets a specific Link object.
 
@@ -3358,11 +3358,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Link](/en/api/reference/webapi/SuperOffice.WebApi.Data.Link)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Link](/en/api/reference/webapi/SuperOffice.WebApi.Data.Link)\>
 
 Link
 
-### GetLinkListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetLinkListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetLinkListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetLinkListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific Link objects.
 
@@ -3382,11 +3382,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Link](/en/api/reference/webapi/SuperOffice.WebApi.Data.Link)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Link](/en/api/reference/webapi/SuperOffice.WebApi.Data.Link)\[\]\>
 
 Array of Link objects
 
-### GetListDefinitionsAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetListDefinitionsAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetListDefinitionsAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetListDefinitionsAsync\(bool, RequestOptions\)
 
 Get a list of the lists - built-in and user-defined.
 
@@ -3406,11 +3406,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ListEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListEntity)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ListEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListEntity)\[\]\>
 
 The list definitions
 
-### GetListEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetListEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetListEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetListEntityAsync\(int, RequestOptions\)
 
 Gets a specific ListEntity object.
 
@@ -3430,11 +3430,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ListEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ListEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListEntity)\>
 
 ListEntity
 
-### GetListEntityByNameAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetListEntityByNameAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetListEntityByNameAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetListEntityByNameAsync\(string, RequestOptions\)
 
 Gets a ListEntity resolved by the provided name.
 
@@ -3454,11 +3454,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ListEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ListEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListEntity)\>
 
 A ListEntity or null.
 
-### GetListItemsForHeadingAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetListItemsForHeadingAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetListItemsForHeadingAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetListItemsForHeadingAsync\(int, int, RequestOptions\)
 
 List of list items that is selected if under this heading
 
@@ -3482,11 +3482,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]\>
 
 Array of selectable list items
 
-### GetListItemsForHeadingFromListNameAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetListItemsForHeadingFromListNameAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetListItemsForHeadingFromListNameAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetListItemsForHeadingFromListNameAsync\(string, int, RequestOptions\)
 
 List of list items that is selected if under this heading
 
@@ -3510,11 +3510,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]\>
 
 Array of selectable list items
 
-### GetListItemsForUserGroupAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetListItemsForUserGroupAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetListItemsForUserGroupAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetListItemsForUserGroupAsync\(int, int, RequestOptions\)
 
 List of list items that is visible in the usergroup
 
@@ -3538,11 +3538,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]\>
 
 Array of selectable list items
 
-### GetListItemsForUserGroupFromListNameAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetListItemsForUserGroupFromListNameAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetListItemsForUserGroupFromListNameAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetListItemsForUserGroupFromListNameAsync\(string, int, RequestOptions\)
 
 List of list items that is visible in the usergroup
 
@@ -3566,11 +3566,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]\>
 
 Array of selectable list items
 
-### GetLocalizedTextAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetLocalizedTextAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetLocalizedTextAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetLocalizedTextAsync\(int, RequestOptions\)
 
 Gets a specific LocalizedText object.
 
@@ -3590,11 +3590,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LocalizedText](/en/api/reference/webapi/SuperOffice.WebApi.Data.LocalizedText)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LocalizedText](/en/api/reference/webapi/SuperOffice.WebApi.Data.LocalizedText)\>
 
 LocalizedText
 
-### GetLocalizedTextByTypeAsync\(LocalizedTextType, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetLocalizedTextByTypeAsync_SuperOffice_WebApi_Data_LocalizedTextType_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetLocalizedTextByTypeAsync_SuperOffice_WebApi_Data_LocalizedTextType_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetLocalizedTextByTypeAsync\(LocalizedTextType, int, int, RequestOptions\)
 
 Returns a localized text based on the resource id for the selected language.
 
@@ -3622,11 +3622,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LocalizedText](/en/api/reference/webapi/SuperOffice.WebApi.Data.LocalizedText)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LocalizedText](/en/api/reference/webapi/SuperOffice.WebApi.Data.LocalizedText)\>
 
 A LocalizedText carrier.
 
-### GetLocalizedTextListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetLocalizedTextListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetLocalizedTextListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetLocalizedTextListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific LocalizedText objects.
 
@@ -3646,11 +3646,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LocalizedText](/en/api/reference/webapi/SuperOffice.WebApi.Data.LocalizedText)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LocalizedText](/en/api/reference/webapi/SuperOffice.WebApi.Data.LocalizedText)\[\]\>
 
 Array of LocalizedText objects
 
-### GetLocalizedTextsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetLocalizedTextsAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetLocalizedTextsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetLocalizedTextsAsync\(RequestOptions\)
 
 Gets all localized texts in the CRM database.
 
@@ -3666,11 +3666,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LocalizedText](/en/api/reference/webapi/SuperOffice.WebApi.Data.LocalizedText)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LocalizedText](/en/api/reference/webapi/SuperOffice.WebApi.Data.LocalizedText)\[\]\>
 
 Array of LocalizedText objects
 
-### GetLocalizedTextsByLanguageIdAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetLocalizedTextsByLanguageIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetLocalizedTextsByLanguageIdAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetLocalizedTextsByLanguageIdAsync\(int, RequestOptions\)
 
 Gets all localized text belonging to a specific language.
 
@@ -3690,11 +3690,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LocalizedText](/en/api/reference/webapi/SuperOffice.WebApi.Data.LocalizedText)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LocalizedText](/en/api/reference/webapi/SuperOffice.WebApi.Data.LocalizedText)\[\]\>
 
 Array of LocalizedText objects
 
-### GetLocalizedTextsByTypeAsync\(LocalizedTextType\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetLocalizedTextsByTypeAsync_SuperOffice_WebApi_Data_LocalizedTextType___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetLocalizedTextsByTypeAsync_SuperOffice_WebApi_Data_LocalizedTextType___SuperOffice_WebApi_RequestOptions_"></a> GetLocalizedTextsByTypeAsync\(LocalizedTextType\[\], RequestOptions\)
 
 Gets localized text by their type
 
@@ -3714,11 +3714,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LocalizedText](/en/api/reference/webapi/SuperOffice.WebApi.Data.LocalizedText)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LocalizedText](/en/api/reference/webapi/SuperOffice.WebApi.Data.LocalizedText)\[\]\>
 
 Array of LocalizedText objects
 
-### GetMrMrsAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetMrMrsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetMrMrsAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetMrMrsAsync\(int, RequestOptions\)
 
 Gets a specific MrMrs object.
 
@@ -3738,11 +3738,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MrMrs](/en/api/reference/webapi/SuperOffice.WebApi.Data.MrMrs)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MrMrs](/en/api/reference/webapi/SuperOffice.WebApi.Data.MrMrs)\>
 
 MrMrs
 
-### GetMrMrsListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetMrMrsListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetMrMrsListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetMrMrsListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific MrMrs objects.
 
@@ -3762,11 +3762,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MrMrs](/en/api/reference/webapi/SuperOffice.WebApi.Data.MrMrs)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MrMrs](/en/api/reference/webapi/SuperOffice.WebApi.Data.MrMrs)\[\]\>
 
 Array of MrMrs objects
 
-### GetMrMrsesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetMrMrsesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetMrMrsesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetMrMrsesAsync\(RequestOptions\)
 
 Returns all Items from the MrMrs table sorted by their value.
 
@@ -3782,11 +3782,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MrMrs](/en/api/reference/webapi/SuperOffice.WebApi.Data.MrMrs)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MrMrs](/en/api/reference/webapi/SuperOffice.WebApi.Data.MrMrs)\[\]\>
 
 All items from the MrMrs table sorted by their value
 
-### GetNeedCategoryUpdateForPersonAsync\(int, int, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetNeedCategoryUpdateForPersonAsync_System_Int32_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetNeedCategoryUpdateForPersonAsync_System_Int32_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetNeedCategoryUpdateForPersonAsync\(int, int, int, int, RequestOptions\)
 
 Before saving a person with changed leadstatus, call this to see if we should ask for a userconfirmation to automatically update category on contact or person
 
@@ -3818,11 +3818,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AutomatedCategoryUpdate](/en/api/reference/webapi/SuperOffice.WebApi.Data.AutomatedCategoryUpdate)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[AutomatedCategoryUpdate](/en/api/reference/webapi/SuperOffice.WebApi.Data.AutomatedCategoryUpdate)\>
 
 Returns the info on the trigger that will update with userconfirmation. Returns void if no update or no need for confirmation
 
-### GetNeedCategoryUpdateForSaleAsync\(SaleStatus, int, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetNeedCategoryUpdateForSaleAsync_SuperOffice_WebApi_Data_SaleStatus_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetNeedCategoryUpdateForSaleAsync_SuperOffice_WebApi_Data_SaleStatus_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetNeedCategoryUpdateForSaleAsync\(SaleStatus, int, int, int, RequestOptions\)
 
 Before saving a sale, call this to see if the current changes on the sale should result in a userconfirmation dialog asking to automatically update category on contact or person
 
@@ -3854,11 +3854,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AutomatedCategoryUpdate](/en/api/reference/webapi/SuperOffice.WebApi.Data.AutomatedCategoryUpdate)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[AutomatedCategoryUpdate](/en/api/reference/webapi/SuperOffice.WebApi.Data.AutomatedCategoryUpdate)\>
 
 Returns the info on the trigger that will update with userconfirmation. Returns void if no update or no need for confirmation
 
-### GetOurCurrencyAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetOurCurrencyAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetOurCurrencyAsync_SuperOffice_WebApi_RequestOptions_"></a> GetOurCurrencyAsync\(RequestOptions\)
 
 Gets the Our currency object if currency is enabled
 
@@ -3874,11 +3874,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Currency](/en/api/reference/webapi/SuperOffice.WebApi.Data.Currency)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Currency](/en/api/reference/webapi/SuperOffice.WebApi.Data.Currency)\>
 
 Our currency
 
-### GetOwnerCompanysCurrencyAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetOwnerCompanysCurrencyAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetOwnerCompanysCurrencyAsync_SuperOffice_WebApi_RequestOptions_"></a> GetOwnerCompanysCurrencyAsync\(RequestOptions\)
 
 Get the currency of the user's owner company
 
@@ -3894,11 +3894,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Currency](/en/api/reference/webapi/SuperOffice.WebApi.Data.Currency)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Currency](/en/api/reference/webapi/SuperOffice.WebApi.Data.Currency)\>
 
 Currency of the user's owner company
 
-### GetPaymentTermAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetPaymentTermAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetPaymentTermAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPaymentTermAsync\(int, RequestOptions\)
 
 Gets a specific PaymentTerm object.
 
@@ -3918,11 +3918,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PaymentTerm](/en/api/reference/webapi/SuperOffice.WebApi.Data.PaymentTerm)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PaymentTerm](/en/api/reference/webapi/SuperOffice.WebApi.Data.PaymentTerm)\>
 
 PaymentTerm
 
-### GetPaymentTermsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetPaymentTermsAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetPaymentTermsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetPaymentTermsAsync\(RequestOptions\)
 
 Returns all PaymentTerms in SuperOffice db.
 
@@ -3938,11 +3938,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PaymentTerm](/en/api/reference/webapi/SuperOffice.WebApi.Data.PaymentTerm)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PaymentTerm](/en/api/reference/webapi/SuperOffice.WebApi.Data.PaymentTerm)\[\]\>
 
 An array of all available PaymentTerms
 
-### GetPaymentTypeAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetPaymentTypeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetPaymentTypeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPaymentTypeAsync\(int, RequestOptions\)
 
 Gets a specific PaymentType object.
 
@@ -3962,11 +3962,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PaymentType](/en/api/reference/webapi/SuperOffice.WebApi.Data.PaymentType)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PaymentType](/en/api/reference/webapi/SuperOffice.WebApi.Data.PaymentType)\>
 
 PaymentType
 
-### GetPaymentTypesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetPaymentTypesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetPaymentTypesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetPaymentTypesAsync\(RequestOptions\)
 
 Returns all PaymentTypes in SuperOffice db.
 
@@ -3982,11 +3982,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PaymentType](/en/api/reference/webapi/SuperOffice.WebApi.Data.PaymentType)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PaymentType](/en/api/reference/webapi/SuperOffice.WebApi.Data.PaymentType)\[\]\>
 
 An array of all available PaymentTypes
 
-### GetPictureFolderEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetPictureFolderEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetPictureFolderEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPictureFolderEntityAsync\(int, RequestOptions\)
 
 Gets a specific PictureFolderEntity object.
 
@@ -4006,11 +4006,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PictureFolderEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.PictureFolderEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PictureFolderEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.PictureFolderEntity)\>
 
 PictureFolderEntity
 
-### GetPluginCapabilitiesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetPluginCapabilitiesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetPluginCapabilitiesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPluginCapabilitiesAsync\(int, RequestOptions\)
 
 Get a list of plugin-dependent capabilities for a given document archive plugin.&lt;br/&gt;A standard set of properties is defined in SuperOffice.CRM.Documents.Constants.Capabilities.
 
@@ -4030,11 +4030,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\>
 
 Dictionary mapping capability names=values
 
-### GetPluginListAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetPluginListAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetPluginListAsync_SuperOffice_WebApi_RequestOptions_"></a> GetPluginListAsync\(RequestOptions\)
 
 Get a list of installed document plugins
 
@@ -4050,11 +4050,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)\>
 
 Dictionary mapping plugin id=plugin name
 
-### GetPositionAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetPositionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetPositionAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPositionAsync\(int, RequestOptions\)
 
 Gets a specific Position object.
 
@@ -4074,11 +4074,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Position](/en/api/reference/webapi/SuperOffice.WebApi.Data.Position)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Position](/en/api/reference/webapi/SuperOffice.WebApi.Data.Position)\>
 
 Position
 
-### GetPositionListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetPositionListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetPositionListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetPositionListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific Position objects.
 
@@ -4098,11 +4098,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Position](/en/api/reference/webapi/SuperOffice.WebApi.Data.Position)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Position](/en/api/reference/webapi/SuperOffice.WebApi.Data.Position)\[\]\>
 
 Array of Position objects
 
-### GetPositionsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetPositionsAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetPositionsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetPositionsAsync\(RequestOptions\)
 
 Returns all the positions a person could have.
 
@@ -4118,11 +4118,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Position](/en/api/reference/webapi/SuperOffice.WebApi.Data.Position)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Position](/en/api/reference/webapi/SuperOffice.WebApi.Data.Position)\[\]\>
 
 An array of all available positions
 
-### GetPrioritiesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetPrioritiesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetPrioritiesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetPrioritiesAsync\(RequestOptions\)
 
 Returns all priorities an appointment could have.
 
@@ -4138,11 +4138,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Priority](/en/api/reference/webapi/SuperOffice.WebApi.Data.Priority)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Priority](/en/api/reference/webapi/SuperOffice.WebApi.Data.Priority)\[\]\>
 
 An array of all available priorities
 
-### GetPriorityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetPriorityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetPriorityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetPriorityAsync\(int, RequestOptions\)
 
 Gets a specific Priority object.
 
@@ -4162,11 +4162,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Priority](/en/api/reference/webapi/SuperOffice.WebApi.Data.Priority)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Priority](/en/api/reference/webapi/SuperOffice.WebApi.Data.Priority)\>
 
 Priority
 
-### GetPriorityListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetPriorityListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetPriorityListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetPriorityListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific Priority objects.
 
@@ -4186,11 +4186,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Priority](/en/api/reference/webapi/SuperOffice.WebApi.Data.Priority)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Priority](/en/api/reference/webapi/SuperOffice.WebApi.Data.Priority)\[\]\>
 
 Array of Priority objects
 
-### GetProductCategoriesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetProductCategoriesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetProductCategoriesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetProductCategoriesAsync\(RequestOptions\)
 
 Returns all ProductCategories in SuperOffice list.
 
@@ -4206,11 +4206,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProductCategory](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProductCategory)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProductCategory](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProductCategory)\[\]\>
 
 An array of all available ProductCategory
 
-### GetProductCategoryAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetProductCategoryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetProductCategoryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetProductCategoryAsync\(int, RequestOptions\)
 
 Gets a specific ProductCategory object.
 
@@ -4230,11 +4230,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProductCategory](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProductCategory)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProductCategory](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProductCategory)\>
 
 ProductCategory
 
-### GetProductFamiliesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetProductFamiliesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetProductFamiliesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetProductFamiliesAsync\(RequestOptions\)
 
 Returns all ProductFamily in SuperOffice list.
 
@@ -4250,11 +4250,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProductFamily](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProductFamily)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProductFamily](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProductFamily)\[\]\>
 
 An array of all available ProductFamilies
 
-### GetProductFamilyAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetProductFamilyAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetProductFamilyAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetProductFamilyAsync\(int, RequestOptions\)
 
 Gets a specific ProductFamily object.
 
@@ -4274,11 +4274,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProductFamily](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProductFamily)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProductFamily](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProductFamily)\>
 
 ProductFamily
 
-### GetProductTypeAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetProductTypeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetProductTypeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetProductTypeAsync\(int, RequestOptions\)
 
 Gets a specific ProductType object.
 
@@ -4298,11 +4298,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProductType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProductType)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProductType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProductType)\>
 
 ProductType
 
-### GetProductTypesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetProductTypesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetProductTypesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetProductTypesAsync\(RequestOptions\)
 
 Returns all ProductTypes in SuperOffice list.
 
@@ -4318,11 +4318,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProductType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProductType)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProductType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProductType)\[\]\>
 
 An array of all available ProductTypes
 
-### GetProjectStatusAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetProjectStatusAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetProjectStatusAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetProjectStatusAsync\(int, RequestOptions\)
 
 Gets a specific ProjectStatus object.
 
@@ -4342,11 +4342,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectStatus)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectStatus)\>
 
 ProjectStatus
 
-### GetProjectStatusListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetProjectStatusListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetProjectStatusListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetProjectStatusListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific ProjectStatus objects.
 
@@ -4366,11 +4366,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectStatus)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectStatus)\[\]\>
 
 Array of ProjectStatus objects
 
-### GetProjectStatusesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetProjectStatusesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetProjectStatusesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetProjectStatusesAsync\(RequestOptions\)
 
 Gets all items from the Project Status (ProjStatus) table.
 
@@ -4386,11 +4386,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectStatus)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectStatus)\[\]\>
 
 List of all Project statuses.
 
-### GetProjectTypeAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetProjectTypeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetProjectTypeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetProjectTypeAsync\(int, RequestOptions\)
 
 Gets a specific ProjectType object.
 
@@ -4410,11 +4410,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectType)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectType)\>
 
 ProjectType
 
-### GetProjectTypeEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetProjectTypeEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetProjectTypeEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetProjectTypeEntityAsync\(int, RequestOptions\)
 
 Gets a specific ProjectTypeEntity object.
 
@@ -4434,11 +4434,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectTypeEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectTypeEntity)\>
 
 ProjectTypeEntity
 
-### GetProjectTypeListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetProjectTypeListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetProjectTypeListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetProjectTypeListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific ProjectType objects.
 
@@ -4458,11 +4458,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectType)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectType)\[\]\>
 
 Array of ProjectType objects
 
-### GetProjectTypesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetProjectTypesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetProjectTypesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetProjectTypesAsync\(RequestOptions\)
 
 Gets all items from the Project Type (ProjType) table.
 
@@ -4478,11 +4478,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectType)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectType](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectType)\[\]\>
 
 List of all project types.
 
-### GetQuickRepliesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetQuickRepliesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetQuickRepliesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetQuickRepliesAsync\(RequestOptions\)
 
 Method to return all quick replies for a given associate
 
@@ -4498,11 +4498,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuickReply](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuickReply)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[QuickReply](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuickReply)\[\]\>
 
 Array of quick replies
 
-### GetQuoteApproveReasonAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetQuoteApproveReasonAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetQuoteApproveReasonAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetQuoteApproveReasonAsync\(int, RequestOptions\)
 
 Gets a specific QuoteApproveReason object.
 
@@ -4522,11 +4522,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteApproveReason](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteApproveReason)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[QuoteApproveReason](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteApproveReason)\>
 
 QuoteApproveReason
 
-### GetQuoteApproveReasonListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetQuoteApproveReasonListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetQuoteApproveReasonListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetQuoteApproveReasonListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific QuoteApproveReason objects.
 
@@ -4546,11 +4546,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteApproveReason](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteApproveReason)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[QuoteApproveReason](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteApproveReason)\[\]\>
 
 Array of QuoteApproveReason objects
 
-### GetQuoteApproveReasonsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetQuoteApproveReasonsAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetQuoteApproveReasonsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetQuoteApproveReasonsAsync\(RequestOptions\)
 
 Returns all available QuoteApproveReasons.
 
@@ -4566,11 +4566,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteApproveReason](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteApproveReason)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[QuoteApproveReason](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteApproveReason)\[\]\>
 
 An array of all non-deleted QuoteApproveReason
 
-### GetQuoteDenyReasonAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetQuoteDenyReasonAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetQuoteDenyReasonAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetQuoteDenyReasonAsync\(int, RequestOptions\)
 
 Gets a specific QuoteDenyReason object.
 
@@ -4590,11 +4590,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteDenyReason](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteDenyReason)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[QuoteDenyReason](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteDenyReason)\>
 
 QuoteDenyReason
 
-### GetQuoteDenyReasonListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetQuoteDenyReasonListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetQuoteDenyReasonListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetQuoteDenyReasonListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific QuoteDenyReason objects.
 
@@ -4614,11 +4614,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteDenyReason](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteDenyReason)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[QuoteDenyReason](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteDenyReason)\[\]\>
 
 Array of QuoteDenyReason objects
 
-### GetQuoteDenyReasonsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetQuoteDenyReasonsAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetQuoteDenyReasonsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetQuoteDenyReasonsAsync\(RequestOptions\)
 
 Returns all available QuoteDenyReasons.
 
@@ -4634,11 +4634,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[QuoteDenyReason](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteDenyReason)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[QuoteDenyReason](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteDenyReason)\[\]\>
 
 An array of all non-deleted QuoteDenyReason
 
-### GetRatingAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetRatingAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetRatingAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetRatingAsync\(int, RequestOptions\)
 
 Gets a specific Rating object.
 
@@ -4658,11 +4658,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Rating](/en/api/reference/webapi/SuperOffice.WebApi.Data.Rating)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Rating](/en/api/reference/webapi/SuperOffice.WebApi.Data.Rating)\>
 
 Rating
 
-### GetRatingListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetRatingListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetRatingListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetRatingListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific Rating objects.
 
@@ -4682,11 +4682,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Rating](/en/api/reference/webapi/SuperOffice.WebApi.Data.Rating)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Rating](/en/api/reference/webapi/SuperOffice.WebApi.Data.Rating)\[\]\>
 
 Array of Rating objects
 
-### GetRatingsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetRatingsAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetRatingsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetRatingsAsync\(RequestOptions\)
 
 Returns all ratings
 
@@ -4702,11 +4702,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Rating](/en/api/reference/webapi/SuperOffice.WebApi.Data.Rating)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Rating](/en/api/reference/webapi/SuperOffice.WebApi.Data.Rating)\[\]\>
 
 Array of ratings
 
-### GetReasonAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetReasonAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetReasonAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetReasonAsync\(int, RequestOptions\)
 
 Gets a specific Reason object.
 
@@ -4726,11 +4726,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Reason](/en/api/reference/webapi/SuperOffice.WebApi.Data.Reason)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Reason](/en/api/reference/webapi/SuperOffice.WebApi.Data.Reason)\>
 
 Reason
 
-### GetReasonListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetReasonListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetReasonListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetReasonListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific Reason objects.
 
@@ -4750,11 +4750,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Reason](/en/api/reference/webapi/SuperOffice.WebApi.Data.Reason)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Reason](/en/api/reference/webapi/SuperOffice.WebApi.Data.Reason)\[\]\>
 
 Array of Reason objects
 
-### GetReasonSoldAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetReasonSoldAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetReasonSoldAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetReasonSoldAsync\(int, RequestOptions\)
 
 Gets a specific ReasonSold object.
 
@@ -4774,11 +4774,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ReasonSold](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReasonSold)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ReasonSold](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReasonSold)\>
 
 ReasonSold
 
-### GetReasonSoldListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetReasonSoldListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetReasonSoldListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetReasonSoldListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific ReasonSold objects.
 
@@ -4798,11 +4798,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ReasonSold](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReasonSold)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ReasonSold](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReasonSold)\[\]\>
 
 Array of ReasonSold objects
 
-### GetReasonStalledAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetReasonStalledAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetReasonStalledAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetReasonStalledAsync\(int, RequestOptions\)
 
 Gets a specific ReasonStalled object.
 
@@ -4822,11 +4822,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ReasonStalled](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReasonStalled)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ReasonStalled](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReasonStalled)\>
 
 ReasonStalled
 
-### GetReasonStalledListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetReasonStalledListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetReasonStalledListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetReasonStalledListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific ReasonStalled objects.
 
@@ -4846,11 +4846,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ReasonStalled](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReasonStalled)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ReasonStalled](/en/api/reference/webapi/SuperOffice.WebApi.Data.ReasonStalled)\[\]\>
 
 Array of ReasonStalled objects
 
-### GetReasonsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetReasonsAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetReasonsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetReasonsAsync\(RequestOptions\)
 
 Returns all reasons
 
@@ -4866,11 +4866,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Reason](/en/api/reference/webapi/SuperOffice.WebApi.Data.Reason)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Reason](/en/api/reference/webapi/SuperOffice.WebApi.Data.Reason)\[\]\>
 
 Array of reasons
 
-### GetRelationDefinitionEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetRelationDefinitionEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetRelationDefinitionEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetRelationDefinitionEntityAsync\(int, RequestOptions\)
 
 Gets a specific RelationDefinitionEntity object.
 
@@ -4890,11 +4890,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RelationDefinitionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.RelationDefinitionEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[RelationDefinitionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.RelationDefinitionEntity)\>
 
 RelationDefinitionEntity
 
-### GetResourceEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetResourceEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetResourceEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetResourceEntityAsync\(int, RequestOptions\)
 
 Gets a specific ResourceEntity object.
 
@@ -4914,11 +4914,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ResourceEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ResourceEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ResourceEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ResourceEntity)\>
 
 ResourceEntity
 
-### GetSaleStageEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetSaleStageEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetSaleStageEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetSaleStageEntityAsync\(int, RequestOptions\)
 
 Gets a specific SaleStageEntity object.
 
@@ -4938,11 +4938,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleStageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleStageEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleStageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleStageEntity)\>
 
 SaleStageEntity
 
-### GetSaleTypeAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetSaleTypeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetSaleTypeAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetSaleTypeAsync\(int, RequestOptions\)
 
 Gets a specific SaleType object.
 
@@ -4962,11 +4962,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleType](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleType)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleType](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleType)\>
 
 SaleType
 
-### GetSaleTypeEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetSaleTypeEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetSaleTypeEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetSaleTypeEntityAsync\(int, RequestOptions\)
 
 Gets a specific SaleTypeEntity object.
 
@@ -4986,11 +4986,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleTypeEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleTypeEntity)\>
 
 SaleTypeEntity
 
-### GetSaleTypeListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetSaleTypeListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetSaleTypeListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetSaleTypeListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific SaleType objects.
 
@@ -5010,11 +5010,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleType](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleType)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleType](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleType)\[\]\>
 
 Array of SaleType objects
 
-### GetSelectionCategoryAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetSelectionCategoryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetSelectionCategoryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetSelectionCategoryAsync\(int, RequestOptions\)
 
 Gets a specific SelectionCategory object.
 
@@ -5034,11 +5034,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectionCategory](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionCategory)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectionCategory](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionCategory)\>
 
 SelectionCategory
 
-### GetSelectionCategoryListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetSelectionCategoryListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetSelectionCategoryListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetSelectionCategoryListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific SelectionCategory objects.
 
@@ -5058,11 +5058,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectionCategory](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionCategory)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectionCategory](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectionCategory)\[\]\>
 
 Array of SelectionCategory objects
 
-### GetSoTaskAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetSoTaskAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetSoTaskAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetSoTaskAsync\(int, RequestOptions\)
 
 Gets a specific SoTask object.
 
@@ -5082,11 +5082,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SoTask](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoTask)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SoTask](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoTask)\>
 
 SoTask
 
-### GetSourceAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetSourceAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetSourceAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetSourceAsync\(int, RequestOptions\)
 
 Gets a specific Source object.
 
@@ -5106,11 +5106,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Source](/en/api/reference/webapi/SuperOffice.WebApi.Data.Source)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Source](/en/api/reference/webapi/SuperOffice.WebApi.Data.Source)\>
 
 Source
 
-### GetSourceListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetSourceListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetSourceListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetSourceListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific Source objects.
 
@@ -5130,11 +5130,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Source](/en/api/reference/webapi/SuperOffice.WebApi.Data.Source)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Source](/en/api/reference/webapi/SuperOffice.WebApi.Data.Source)\[\]\>
 
 Array of Source objects
 
-### GetSourcesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetSourcesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetSourcesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetSourcesAsync\(RequestOptions\)
 
 Returns all sources
 
@@ -5150,11 +5150,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Source](/en/api/reference/webapi/SuperOffice.WebApi.Data.Source)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Source](/en/api/reference/webapi/SuperOffice.WebApi.Data.Source)\[\]\>
 
 Array of sources
 
-### GetTaskListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetTaskListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetTaskListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetTaskListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific SoTask objects.
 
@@ -5174,11 +5174,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SoTask](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoTask)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SoTask](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoTask)\[\]\>
 
 Array of SoTask objects
 
-### GetTaskMenuAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetTaskMenuAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetTaskMenuAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTaskMenuAsync\(int, RequestOptions\)
 
 Gets a specific TaskMenu object.
 
@@ -5198,11 +5198,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TaskMenu](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TaskMenu](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu)\>
 
 TaskMenu
 
-### GetTaskMenuByProgIdAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetTaskMenuByProgIdAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetTaskMenuByProgIdAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetTaskMenuByProgIdAsync\(string, RequestOptions\)
 
 Get a task menu using the ProgId key that was specified when it was created
 
@@ -5222,11 +5222,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TaskMenu](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TaskMenu](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu)\>
 
 The task menu
 
-### GetTasksAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetTasksAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetTasksAsync_SuperOffice_WebApi_RequestOptions_"></a> GetTasksAsync\(RequestOptions\)
 
 Returns all appointment tasks
 
@@ -5242,11 +5242,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SoTask](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoTask)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SoTask](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoTask)\[\]\>
 
 An array of all available tasks
 
-### GetTicketCategoriesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetTicketCategoriesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetTicketCategoriesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetTicketCategoriesAsync\(RequestOptions\)
 
 ```csharp
 Task<TicketCategoryEntity[]> GetTicketCategoriesAsync(RequestOptions requestOptions = null)
@@ -5260,9 +5260,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketCategoryEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketCategoryEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity)\[\]\>
 
-### GetTicketCategoriesForUserGroupsAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetTicketCategoriesForUserGroupsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetTicketCategoriesForUserGroupsAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetTicketCategoriesForUserGroupsAsync\(int\[\], RequestOptions\)
 
 Ticket categories for user groups
 
@@ -5282,9 +5282,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[MDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.MDOListItem)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[MDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.MDOListItem)\[\]\>
 
-### GetTicketCategoryAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetTicketCategoryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetTicketCategoryAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTicketCategoryAsync\(int, RequestOptions\)
 
 Gets a specific TicketCategory object.
 
@@ -5304,11 +5304,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketCategory](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategory)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketCategory](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategory)\>
 
 TicketCategory
 
-### GetTicketCategoryEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetTicketCategoryEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetTicketCategoryEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTicketCategoryEntityAsync\(int, RequestOptions\)
 
 Gets a specific TicketCategoryEntity object.
 
@@ -5328,11 +5328,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketCategoryEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketCategoryEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity)\>
 
 TicketCategoryEntity
 
-### GetTicketCategoryListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetTicketCategoryListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetTicketCategoryListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetTicketCategoryListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific TicketCategoryEntity objects.
 
@@ -5352,11 +5352,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketCategoryEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketCategoryEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity)\[\]\>
 
 Array of TicketCategoryEntity objects
 
-### GetTicketPrioritiesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetTicketPrioritiesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetTicketPrioritiesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetTicketPrioritiesAsync\(RequestOptions\)
 
 ```csharp
 Task<TicketPriority[]> GetTicketPrioritiesAsync(RequestOptions requestOptions = null)
@@ -5370,9 +5370,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketPriority](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriority)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketPriority](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriority)\[\]\>
 
-### GetTicketPriorityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetTicketPriorityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetTicketPriorityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTicketPriorityAsync\(int, RequestOptions\)
 
 Gets a specific TicketPriority object.
 
@@ -5392,11 +5392,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketPriority](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriority)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketPriority](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriority)\>
 
 TicketPriority
 
-### GetTicketPriorityEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetTicketPriorityEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetTicketPriorityEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTicketPriorityEntityAsync\(int, RequestOptions\)
 
 Gets a specific TicketPriorityEntity object.
 
@@ -5416,11 +5416,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketPriorityEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketPriorityEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity)\>
 
 TicketPriorityEntity
 
-### GetTicketPriorityListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetTicketPriorityListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetTicketPriorityListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetTicketPriorityListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific TicketPriority objects.
 
@@ -5440,11 +5440,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketPriority](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriority)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketPriority](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriority)\[\]\>
 
 Array of TicketPriority objects
 
-### GetTicketRelationDefinitionEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetTicketRelationDefinitionEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetTicketRelationDefinitionEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTicketRelationDefinitionEntityAsync\(int, RequestOptions\)
 
 Gets a specific TicketRelationDefinitionEntity object.
 
@@ -5464,11 +5464,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketRelationDefinitionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationDefinitionEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketRelationDefinitionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationDefinitionEntity)\>
 
 TicketRelationDefinitionEntity
 
-### GetTicketStatusEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetTicketStatusEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetTicketStatusEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTicketStatusEntityAsync\(int, RequestOptions\)
 
 Gets a specific TicketStatusEntity object.
 
@@ -5488,11 +5488,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketStatusEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStatusEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketStatusEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStatusEntity)\>
 
 TicketStatusEntity
 
-### GetTicketStatusListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetTicketStatusListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetTicketStatusListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetTicketStatusListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific TicketStatusEntity objects.
 
@@ -5512,11 +5512,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketStatusEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStatusEntity)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketStatusEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStatusEntity)\[\]\>
 
 Array of TicketStatusEntity objects
 
-### GetTicketStatusesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetTicketStatusesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetTicketStatusesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetTicketStatusesAsync\(RequestOptions\)
 
 ```csharp
 Task<TicketStatusEntity[]> GetTicketStatusesAsync(RequestOptions requestOptions = null)
@@ -5530,9 +5530,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketStatusEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStatusEntity)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketStatusEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStatusEntity)\[\]\>
 
-### GetTicketTypeEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetTicketTypeEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetTicketTypeEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetTicketTypeEntityAsync\(int, RequestOptions\)
 
 Gets a specific TicketTypeEntity object.
 
@@ -5552,11 +5552,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketTypeEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketTypeEntity)\>
 
 TicketTypeEntity
 
-### GetTicketTypeListAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetTicketTypeListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetTicketTypeListAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> GetTicketTypeListAsync\(int\[\], RequestOptions\)
 
 Gets an array of specific TicketTypeEntity objects.
 
@@ -5576,11 +5576,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketTypeEntity)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketTypeEntity)\[\]\>
 
 Array of TicketTypeEntity objects
 
-### GetTicketTypesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetTicketTypesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetTicketTypesAsync_SuperOffice_WebApi_RequestOptions_"></a> GetTicketTypesAsync\(RequestOptions\)
 
 Get all TicketTypes
 
@@ -5596,9 +5596,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketTypeEntity)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketTypeEntity)\[\]\>
 
-### GetVisibleForUserGroupsAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetVisibleForUserGroupsAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetVisibleForUserGroupsAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetVisibleForUserGroupsAsync\(int, int, RequestOptions\)
 
 List of User groups that this list item is visible for
 
@@ -5622,11 +5622,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]\>
 
 Array of selectable user groups
 
-### GetVisibleForUserGroupsFromListNameAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetVisibleForUserGroupsFromListNameAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetVisibleForUserGroupsFromListNameAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetVisibleForUserGroupsFromListNameAsync\(string, int, RequestOptions\)
 
 List of User groups that this list item is visible for
 
@@ -5650,11 +5650,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]\>
 
 Array of selectable user groups
 
-### GetWebPanelByProgIdAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetWebPanelByProgIdAsync_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetWebPanelByProgIdAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetWebPanelByProgIdAsync\(string, RequestOptions\)
 
 Get a web panel using the ProgId key that was specified when it was created
 
@@ -5674,11 +5674,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WebPanelEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.WebPanelEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[WebPanelEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.WebPanelEntity)\>
 
 The Web panel information
 
-### GetWebPanelEntityAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetWebPanelEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetWebPanelEntityAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetWebPanelEntityAsync\(int, RequestOptions\)
 
 Gets a specific WebPanelEntity object.
 
@@ -5698,11 +5698,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WebPanelEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.WebPanelEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[WebPanelEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.WebPanelEntity)\>
 
 WebPanelEntity
 
-### GetWebPanelListAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GetWebPanelListAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GetWebPanelListAsync_SuperOffice_WebApi_RequestOptions_"></a> GetWebPanelListAsync\(RequestOptions\)
 
 Return a list of all web panels.
 
@@ -5718,11 +5718,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WebPanelEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.WebPanelEntity)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[WebPanelEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.WebPanelEntity)\[\]\>
 
 List of all web panels
 
-### GlobalChangeTicketStatusAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GlobalChangeTicketStatusAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GlobalChangeTicketStatusAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GlobalChangeTicketStatusAsync\(int, int, RequestOptions\)
 
 This method will change all references from one ticket status to another. Typically used in conjuction with delete
 
@@ -5750,7 +5750,7 @@ Override language/culture codes on this request.
 
 Does not return anything
 
-### GlobalChangeTicketTypeAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_GlobalChangeTicketTypeAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_GlobalChangeTicketTypeAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GlobalChangeTicketTypeAsync\(int, int, RequestOptions\)
 
 Change all references from one ticket type to another. Typically used in conjuction with ticket type delete
 
@@ -5778,7 +5778,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### MoveAllTicketsAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_MoveAllTicketsAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_MoveAllTicketsAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> MoveAllTicketsAsync\(int, int, RequestOptions\)
 
 Move all tickets from one ticket category to another
 
@@ -5806,7 +5806,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### MoveListItemAsync\(int, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_MoveListItemAsync_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_MoveListItemAsync_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> MoveListItemAsync\(int, int, int, RequestOptions\)
 
 Move a list item up or down in the list based on rank
 
@@ -5836,7 +5836,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### PerformNeededCategoryUpdateAsync\(int, int, int, AutomatedCategoryUpdate, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_PerformNeededCategoryUpdateAsync_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_Data_AutomatedCategoryUpdate_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_PerformNeededCategoryUpdateAsync_System_Int32_System_Int32_System_Int32_SuperOffice_WebApi_Data_AutomatedCategoryUpdate_SuperOffice_WebApi_RequestOptions_"></a> PerformNeededCategoryUpdateAsync\(int, int, int, AutomatedCategoryUpdate, RequestOptions\)
 
 Does the actual update of the category. Ask the user first, if user confirmed yes, do automatically update category, this call will do that actual update
 
@@ -5872,7 +5872,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### RebuildFullnamesAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_RebuildFullnamesAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_RebuildFullnamesAsync_SuperOffice_WebApi_RequestOptions_"></a> RebuildFullnamesAsync\(RequestOptions\)
 
 Update the fullname field of all categories. Use this e.g. when changing parentId or renaming a category with children.
 
@@ -5892,7 +5892,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### SaveAllAutomatedCategoryUpdatesAsync\(AutomatedCategoryUpdate\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveAllAutomatedCategoryUpdatesAsync_SuperOffice_WebApi_Data_AutomatedCategoryUpdate___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveAllAutomatedCategoryUpdatesAsync_SuperOffice_WebApi_Data_AutomatedCategoryUpdate___SuperOffice_WebApi_RequestOptions_"></a> SaveAllAutomatedCategoryUpdatesAsync\(AutomatedCategoryUpdate\[\], RequestOptions\)
 
 Save the automated category update settings
 
@@ -5912,11 +5912,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AutomatedCategoryUpdate](/en/api/reference/webapi/SuperOffice.WebApi.Data.AutomatedCategoryUpdate)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[AutomatedCategoryUpdate](/en/api/reference/webapi/SuperOffice.WebApi.Data.AutomatedCategoryUpdate)\[\]\>
 
 Returns the saved settings
 
-### SaveAllFromListDefinitionAsync\(int, ListItemEntity\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveAllFromListDefinitionAsync_System_Int32_SuperOffice_WebApi_Data_ListItemEntity___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveAllFromListDefinitionAsync_System_Int32_SuperOffice_WebApi_Data_ListItemEntity___SuperOffice_WebApi_RequestOptions_"></a> SaveAllFromListDefinitionAsync\(int, ListItemEntity\[\], RequestOptions\)
 
 Save all list items for the specified list defintion
 
@@ -5940,11 +5940,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ListItemEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItemEntity)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ListItemEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItemEntity)\[\]\>
 
 The list items
 
-### SaveAllFromListNameAsync\(string, ListItemEntity\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveAllFromListNameAsync_System_String_SuperOffice_WebApi_Data_ListItemEntity___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveAllFromListNameAsync_System_String_SuperOffice_WebApi_Data_ListItemEntity___SuperOffice_WebApi_RequestOptions_"></a> SaveAllFromListNameAsync\(string, ListItemEntity\[\], RequestOptions\)
 
 Save all list items for the specified list defintion
 
@@ -5968,11 +5968,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ListItemEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItemEntity)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ListItemEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItemEntity)\[\]\>
 
 The list items
 
-### SaveAmountClassEntityAsync\(AmountClassEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveAmountClassEntityAsync_SuperOffice_WebApi_Data_AmountClassEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveAmountClassEntityAsync_SuperOffice_WebApi_Data_AmountClassEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveAmountClassEntityAsync\(AmountClassEntity, RequestOptions\)
 
 Updates the existing AmountClassEntity or creates a new AmountClassEntity if the id parameter is 0.
 
@@ -5992,11 +5992,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[AmountClassEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AmountClassEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[AmountClassEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.AmountClassEntity)\>
 
 New or updated AmountClassEntity
 
-### SaveCategoryEntityAsync\(CategoryEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveCategoryEntityAsync_SuperOffice_WebApi_Data_CategoryEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveCategoryEntityAsync_SuperOffice_WebApi_Data_CategoryEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveCategoryEntityAsync\(CategoryEntity, RequestOptions\)
 
 Updates the existing CategoryEntity or creates a new CategoryEntity if the id parameter is 0.
 
@@ -6016,11 +6016,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CategoryEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CategoryEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CategoryEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CategoryEntity)\>
 
 New or updated CategoryEntity
 
-### SaveConsentPurposeAsync\(ConsentPurpose, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveConsentPurposeAsync_SuperOffice_WebApi_Data_ConsentPurpose_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveConsentPurposeAsync_SuperOffice_WebApi_Data_ConsentPurpose_SuperOffice_WebApi_RequestOptions_"></a> SaveConsentPurposeAsync\(ConsentPurpose, RequestOptions\)
 
 Save a ConsentPurpose object
 
@@ -6040,11 +6040,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConsentPurpose](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConsentPurpose)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ConsentPurpose](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConsentPurpose)\>
 
 The saved ConsentPurpose object, updated with the ConsentPurposeId if it is a new database entry
 
-### SaveConsentSourceAsync\(ConsentSource, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveConsentSourceAsync_SuperOffice_WebApi_Data_ConsentSource_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveConsentSourceAsync_SuperOffice_WebApi_Data_ConsentSource_SuperOffice_WebApi_RequestOptions_"></a> SaveConsentSourceAsync\(ConsentSource, RequestOptions\)
 
 ```csharp
 Task<ConsentSource> SaveConsentSourceAsync(ConsentSource consentSource, RequestOptions requestOptions = null)
@@ -6060,9 +6060,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ConsentSource](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConsentSource)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ConsentSource](/en/api/reference/webapi/SuperOffice.WebApi.Data.ConsentSource)\>
 
-### SaveCountryAsync\(Country, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveCountryAsync_SuperOffice_WebApi_Data_Country_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveCountryAsync_SuperOffice_WebApi_Data_Country_SuperOffice_WebApi_RequestOptions_"></a> SaveCountryAsync\(Country, RequestOptions\)
 
 Saves a country
 
@@ -6082,11 +6082,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Country](/en/api/reference/webapi/SuperOffice.WebApi.Data.Country)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Country](/en/api/reference/webapi/SuperOffice.WebApi.Data.Country)\>
 
 The country that is saved
 
-### SaveCurrencyEntityAsync\(CurrencyEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveCurrencyEntityAsync_SuperOffice_WebApi_Data_CurrencyEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveCurrencyEntityAsync_SuperOffice_WebApi_Data_CurrencyEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveCurrencyEntityAsync\(CurrencyEntity, RequestOptions\)
 
 Updates the existing CurrencyEntity or creates a new CurrencyEntity if the id parameter is 0.
 
@@ -6106,11 +6106,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CurrencyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CurrencyEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CurrencyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.CurrencyEntity)\>
 
 New or updated CurrencyEntity
 
-### SaveDocumentTemplateEntityAsync\(DocumentTemplateEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveDocumentTemplateEntityAsync_SuperOffice_WebApi_Data_DocumentTemplateEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveDocumentTemplateEntityAsync_SuperOffice_WebApi_Data_DocumentTemplateEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveDocumentTemplateEntityAsync\(DocumentTemplateEntity, RequestOptions\)
 
 Updates the existing DocumentTemplateEntity or creates a new DocumentTemplateEntity if the id parameter is 0.
 
@@ -6130,11 +6130,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentTemplateEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentTemplateEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity)\>
 
 New or updated DocumentTemplateEntity
 
-### SaveDocumentTemplateStreamAsync\(int, byte\[\], string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveDocumentTemplateStreamAsync_System_Int32_System_Byte___System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveDocumentTemplateStreamAsync_System_Int32_System_Byte___System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> SaveDocumentTemplateStreamAsync\(int, byte\[\], string, int, RequestOptions\)
 
 Writes content in stream to document template file
 
@@ -6166,11 +6166,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TemplateInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.TemplateInfo)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TemplateInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.TemplateInfo)\>
 
 Template info
 
-### SaveExtAppEntityAsync\(ExtAppEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveExtAppEntityAsync_SuperOffice_WebApi_Data_ExtAppEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveExtAppEntityAsync_SuperOffice_WebApi_Data_ExtAppEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveExtAppEntityAsync\(ExtAppEntity, RequestOptions\)
 
 Updates the existing ExtAppEntity or creates a new ExtAppEntity if the id parameter is 0.
 
@@ -6190,11 +6190,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ExtAppEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtAppEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ExtAppEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtAppEntity)\>
 
 New or updated ExtAppEntity
 
-### SaveFromListDefinitionAsync\(int, int, ListItemEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveFromListDefinitionAsync_System_Int32_System_Int32_SuperOffice_WebApi_Data_ListItemEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveFromListDefinitionAsync_System_Int32_System_Int32_SuperOffice_WebApi_Data_ListItemEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveFromListDefinitionAsync\(int, int, ListItemEntity, RequestOptions\)
 
 Save a list item for the specified list defintion
 
@@ -6222,11 +6222,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ListItemEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItemEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ListItemEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItemEntity)\>
 
 The saved list item
 
-### SaveFromListNameAsync\(int, string, ListItemEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveFromListNameAsync_System_Int32_System_String_SuperOffice_WebApi_Data_ListItemEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveFromListNameAsync_System_Int32_System_String_SuperOffice_WebApi_Data_ListItemEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveFromListNameAsync\(int, string, ListItemEntity, RequestOptions\)
 
 Save a list item for the specified list defintion
 
@@ -6254,11 +6254,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ListItemEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItemEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ListItemEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItemEntity)\>
 
 The saved list item
 
-### SaveHeadingEntityAsync\(HeadingEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveHeadingEntityAsync_SuperOffice_WebApi_Data_HeadingEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveHeadingEntityAsync_SuperOffice_WebApi_Data_HeadingEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveHeadingEntityAsync\(HeadingEntity, RequestOptions\)
 
 Updates the existing HeadingEntity or creates a new HeadingEntity if the id parameter is 0.
 
@@ -6278,11 +6278,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[HeadingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HeadingEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[HeadingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HeadingEntity)\>
 
 New or updated HeadingEntity
 
-### SaveHeadingFromListDefinitionAsync\(int, HeadingEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveHeadingFromListDefinitionAsync_System_Int32_SuperOffice_WebApi_Data_HeadingEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveHeadingFromListDefinitionAsync_System_Int32_SuperOffice_WebApi_Data_HeadingEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveHeadingFromListDefinitionAsync\(int, HeadingEntity, RequestOptions\)
 
 Save new heading for list resolved by the provided id.
 
@@ -6306,11 +6306,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[HeadingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HeadingEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[HeadingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HeadingEntity)\>
 
 The saved entity.
 
-### SaveHeadingFromNameAsync\(string, HeadingEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveHeadingFromNameAsync_System_String_SuperOffice_WebApi_Data_HeadingEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveHeadingFromNameAsync_System_String_SuperOffice_WebApi_Data_HeadingEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveHeadingFromNameAsync\(string, HeadingEntity, RequestOptions\)
 
 Save new heading for list resolved by the provided name.
 
@@ -6334,11 +6334,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[HeadingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HeadingEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[HeadingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HeadingEntity)\>
 
 The saved entity.
 
-### SaveHeadingsForListItemFromListDefinitionAsync\(int, int, SelectableMDOListItem\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveHeadingsForListItemFromListDefinitionAsync_System_Int32_System_Int32_SuperOffice_WebApi_Data_SelectableMDOListItem___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveHeadingsForListItemFromListDefinitionAsync_System_Int32_System_Int32_SuperOffice_WebApi_Data_SelectableMDOListItem___SuperOffice_WebApi_RequestOptions_"></a> SaveHeadingsForListItemFromListDefinitionAsync\(int, int, SelectableMDOListItem\[\], RequestOptions\)
 
 Saves the active headings for the list item.
 
@@ -6366,11 +6366,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]\>
 
 Array of headings
 
-### SaveHeadingsForListItemFromListNameAsync\(string, int, SelectableMDOListItem\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveHeadingsForListItemFromListNameAsync_System_String_System_Int32_SuperOffice_WebApi_Data_SelectableMDOListItem___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveHeadingsForListItemFromListNameAsync_System_String_System_Int32_SuperOffice_WebApi_Data_SelectableMDOListItem___SuperOffice_WebApi_RequestOptions_"></a> SaveHeadingsForListItemFromListNameAsync\(string, int, SelectableMDOListItem\[\], RequestOptions\)
 
 Saves the headings for the list item.
 
@@ -6398,11 +6398,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]\>
 
 Array of selectable headings
 
-### SaveHeadingsFromListDefinitionAsync\(int, HeadingEntity\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveHeadingsFromListDefinitionAsync_System_Int32_SuperOffice_WebApi_Data_HeadingEntity___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveHeadingsFromListDefinitionAsync_System_Int32_SuperOffice_WebApi_Data_HeadingEntity___SuperOffice_WebApi_RequestOptions_"></a> SaveHeadingsFromListDefinitionAsync\(int, HeadingEntity\[\], RequestOptions\)
 
 Save headings for list resolved by the provided id.
 
@@ -6426,11 +6426,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[HeadingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HeadingEntity)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[HeadingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HeadingEntity)\[\]\>
 
 List of headings
 
-### SaveHeadingsFromNameAsync\(string, HeadingEntity\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveHeadingsFromNameAsync_System_String_SuperOffice_WebApi_Data_HeadingEntity___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveHeadingsFromNameAsync_System_String_SuperOffice_WebApi_Data_HeadingEntity___SuperOffice_WebApi_RequestOptions_"></a> SaveHeadingsFromNameAsync\(string, HeadingEntity\[\], RequestOptions\)
 
 Save headings for list resolved by the provided name.
 
@@ -6454,11 +6454,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[HeadingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HeadingEntity)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[HeadingEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HeadingEntity)\[\]\>
 
 List of headings
 
-### SaveHierarchyEntityAsync\(HierarchyEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveHierarchyEntityAsync_SuperOffice_WebApi_Data_HierarchyEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveHierarchyEntityAsync_SuperOffice_WebApi_Data_HierarchyEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveHierarchyEntityAsync\(HierarchyEntity, RequestOptions\)
 
 Updates the existing HierarchyEntity or creates a new HierarchyEntity if the id parameter is 0.
 
@@ -6478,11 +6478,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[HierarchyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HierarchyEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[HierarchyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HierarchyEntity)\>
 
 New or updated HierarchyEntity
 
-### SaveLegalBaseAsync\(LegalBase, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveLegalBaseAsync_SuperOffice_WebApi_Data_LegalBase_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveLegalBaseAsync_SuperOffice_WebApi_Data_LegalBase_SuperOffice_WebApi_RequestOptions_"></a> SaveLegalBaseAsync\(LegalBase, RequestOptions\)
 
 ```csharp
 Task<LegalBase> SaveLegalBaseAsync(LegalBase legalBase, RequestOptions requestOptions = null)
@@ -6498,9 +6498,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LegalBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.LegalBase)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LegalBase](/en/api/reference/webapi/SuperOffice.WebApi.Data.LegalBase)\>
 
-### SaveListEntityAsync\(ListEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveListEntityAsync_SuperOffice_WebApi_Data_ListEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveListEntityAsync_SuperOffice_WebApi_Data_ListEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveListEntityAsync\(ListEntity, RequestOptions\)
 
 Updates the existing ListEntity or creates a new ListEntity if the id parameter is 0.
 
@@ -6520,11 +6520,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ListEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ListEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListEntity)\>
 
 New or updated ListEntity
 
-### SaveListEntityByNameAsync\(string, ListEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveListEntityByNameAsync_System_String_SuperOffice_WebApi_Data_ListEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveListEntityByNameAsync_System_String_SuperOffice_WebApi_Data_ListEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveListEntityByNameAsync\(string, ListEntity, RequestOptions\)
 
 Save a ListEntity resolved by the provided name.
 
@@ -6548,11 +6548,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ListEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ListEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListEntity)\>
 
 A ListEntity or null.
 
-### SaveListItemEntityAsync\(ListItemEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveListItemEntityAsync_SuperOffice_WebApi_Data_ListItemEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveListItemEntityAsync_SuperOffice_WebApi_Data_ListItemEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveListItemEntityAsync\(ListItemEntity, RequestOptions\)
 
 Save the ListItemEntity.
 
@@ -6572,11 +6572,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ListItemEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItemEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ListItemEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ListItemEntity)\>
 
 The saved ListItemEntity.
 
-### SavePictureFolderEntityAsync\(PictureFolderEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SavePictureFolderEntityAsync_SuperOffice_WebApi_Data_PictureFolderEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SavePictureFolderEntityAsync_SuperOffice_WebApi_Data_PictureFolderEntity_SuperOffice_WebApi_RequestOptions_"></a> SavePictureFolderEntityAsync\(PictureFolderEntity, RequestOptions\)
 
 Updates the existing PictureFolderEntity or creates a new PictureFolderEntity if the id parameter is 0.
 
@@ -6596,11 +6596,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[PictureFolderEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.PictureFolderEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[PictureFolderEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.PictureFolderEntity)\>
 
 New or updated PictureFolderEntity
 
-### SaveProjectTypeEntityAsync\(ProjectTypeEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveProjectTypeEntityAsync_SuperOffice_WebApi_Data_ProjectTypeEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveProjectTypeEntityAsync_SuperOffice_WebApi_Data_ProjectTypeEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveProjectTypeEntityAsync\(ProjectTypeEntity, RequestOptions\)
 
 Updates the existing ProjectTypeEntity or creates a new ProjectTypeEntity if the id parameter is 0.
 
@@ -6620,11 +6620,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ProjectTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectTypeEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ProjectTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ProjectTypeEntity)\>
 
 New or updated ProjectTypeEntity
 
-### SaveQuickRepliesAsync\(QuickReply\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveQuickRepliesAsync_SuperOffice_WebApi_Data_QuickReply___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveQuickRepliesAsync_SuperOffice_WebApi_Data_QuickReply___SuperOffice_WebApi_RequestOptions_"></a> SaveQuickRepliesAsync\(QuickReply\[\], RequestOptions\)
 
 Method to save all quick replies for a given associate
 
@@ -6646,7 +6646,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### SaveRelationDefinitionEntityAsync\(RelationDefinitionEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveRelationDefinitionEntityAsync_SuperOffice_WebApi_Data_RelationDefinitionEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveRelationDefinitionEntityAsync_SuperOffice_WebApi_Data_RelationDefinitionEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveRelationDefinitionEntityAsync\(RelationDefinitionEntity, RequestOptions\)
 
 Updates the existing RelationDefinitionEntity or creates a new RelationDefinitionEntity if the id parameter is 0.
 
@@ -6666,11 +6666,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[RelationDefinitionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.RelationDefinitionEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[RelationDefinitionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.RelationDefinitionEntity)\>
 
 New or updated RelationDefinitionEntity
 
-### SaveResourceEntityAsync\(ResourceEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveResourceEntityAsync_SuperOffice_WebApi_Data_ResourceEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveResourceEntityAsync_SuperOffice_WebApi_Data_ResourceEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveResourceEntityAsync\(ResourceEntity, RequestOptions\)
 
 Updates the existing ResourceEntity or creates a new ResourceEntity if the id parameter is 0.
 
@@ -6690,11 +6690,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ResourceEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ResourceEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ResourceEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.ResourceEntity)\>
 
 New or updated ResourceEntity
 
-### SaveSaleStageEntityAsync\(SaleStageEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveSaleStageEntityAsync_SuperOffice_WebApi_Data_SaleStageEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveSaleStageEntityAsync_SuperOffice_WebApi_Data_SaleStageEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveSaleStageEntityAsync\(SaleStageEntity, RequestOptions\)
 
 Updates the existing SaleStageEntity or creates a new SaleStageEntity if the id parameter is 0.
 
@@ -6714,11 +6714,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleStageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleStageEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleStageEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleStageEntity)\>
 
 New or updated SaleStageEntity
 
-### SaveSaleTypeEntityAsync\(SaleTypeEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveSaleTypeEntityAsync_SuperOffice_WebApi_Data_SaleTypeEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveSaleTypeEntityAsync_SuperOffice_WebApi_Data_SaleTypeEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveSaleTypeEntityAsync\(SaleTypeEntity, RequestOptions\)
 
 Updates the existing SaleTypeEntity or creates a new SaleTypeEntity if the id parameter is 0.
 
@@ -6738,11 +6738,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SaleTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleTypeEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SaleTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleTypeEntity)\>
 
 New or updated SaleTypeEntity
 
-### SaveTaskMenuAsync\(TaskMenu, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveTaskMenuAsync_SuperOffice_WebApi_Data_TaskMenu_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveTaskMenuAsync_SuperOffice_WebApi_Data_TaskMenu_SuperOffice_WebApi_RequestOptions_"></a> SaveTaskMenuAsync\(TaskMenu, RequestOptions\)
 
 Updates the existing TaskMenu or creates a new TaskMenu if the id parameter is 0.
 
@@ -6762,11 +6762,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TaskMenu](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TaskMenu](/en/api/reference/webapi/SuperOffice.WebApi.Data.TaskMenu)\>
 
 New or updated TaskMenu
 
-### SaveTicketCategoryEntityAsync\(TicketCategoryEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveTicketCategoryEntityAsync_SuperOffice_WebApi_Data_TicketCategoryEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveTicketCategoryEntityAsync_SuperOffice_WebApi_Data_TicketCategoryEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveTicketCategoryEntityAsync\(TicketCategoryEntity, RequestOptions\)
 
 Updates the existing TicketCategoryEntity or creates a new TicketCategoryEntity if the id parameter is 0.
 
@@ -6786,11 +6786,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketCategoryEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketCategoryEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketCategoryEntity)\>
 
 New or updated TicketCategoryEntity
 
-### SaveTicketPriorityEntityAsync\(TicketPriorityEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveTicketPriorityEntityAsync_SuperOffice_WebApi_Data_TicketPriorityEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveTicketPriorityEntityAsync_SuperOffice_WebApi_Data_TicketPriorityEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveTicketPriorityEntityAsync\(TicketPriorityEntity, RequestOptions\)
 
 Updates the existing TicketPriorityEntity or creates a new TicketPriorityEntity if the id parameter is 0.
 
@@ -6810,11 +6810,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketPriorityEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketPriorityEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketPriorityEntity)\>
 
 New or updated TicketPriorityEntity
 
-### SaveTicketRelationDefinitionEntityAsync\(TicketRelationDefinitionEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveTicketRelationDefinitionEntityAsync_SuperOffice_WebApi_Data_TicketRelationDefinitionEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveTicketRelationDefinitionEntityAsync_SuperOffice_WebApi_Data_TicketRelationDefinitionEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveTicketRelationDefinitionEntityAsync\(TicketRelationDefinitionEntity, RequestOptions\)
 
 Updates the existing TicketRelationDefinitionEntity or creates a new TicketRelationDefinitionEntity if the id parameter is 0.
 
@@ -6834,11 +6834,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketRelationDefinitionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationDefinitionEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketRelationDefinitionEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationDefinitionEntity)\>
 
 New or updated TicketRelationDefinitionEntity
 
-### SaveTicketStatusEntityAsync\(TicketStatusEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveTicketStatusEntityAsync_SuperOffice_WebApi_Data_TicketStatusEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveTicketStatusEntityAsync_SuperOffice_WebApi_Data_TicketStatusEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveTicketStatusEntityAsync\(TicketStatusEntity, RequestOptions\)
 
 Updates the existing TicketStatusEntity or creates a new TicketStatusEntity if the id parameter is 0.
 
@@ -6858,11 +6858,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketStatusEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStatusEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketStatusEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketStatusEntity)\>
 
 New or updated TicketStatusEntity
 
-### SaveTicketTypeEntityAsync\(TicketTypeEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveTicketTypeEntityAsync_SuperOffice_WebApi_Data_TicketTypeEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveTicketTypeEntityAsync_SuperOffice_WebApi_Data_TicketTypeEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveTicketTypeEntityAsync\(TicketTypeEntity, RequestOptions\)
 
 Updates the existing TicketTypeEntity or creates a new TicketTypeEntity if the id parameter is 0.
 
@@ -6882,11 +6882,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketTypeEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketTypeEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketTypeEntity)\>
 
 New or updated TicketTypeEntity
 
-### SaveWebPanelEntityAsync\(WebPanelEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SaveWebPanelEntityAsync_SuperOffice_WebApi_Data_WebPanelEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SaveWebPanelEntityAsync_SuperOffice_WebApi_Data_WebPanelEntity_SuperOffice_WebApi_RequestOptions_"></a> SaveWebPanelEntityAsync\(WebPanelEntity, RequestOptions\)
 
 Updates the existing WebPanelEntity or creates a new WebPanelEntity if the id parameter is 0.
 
@@ -6906,11 +6906,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[WebPanelEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.WebPanelEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[WebPanelEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.WebPanelEntity)\>
 
 New or updated WebPanelEntity
 
-### SetDocumentPluginForAllDocumentTemplatesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SetDocumentPluginForAllDocumentTemplatesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SetDocumentPluginForAllDocumentTemplatesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> SetDocumentPluginForAllDocumentTemplatesAsync\(int, RequestOptions\)
 
 Sets the document-plugin to be used for all templates of type 'document'.
 
@@ -6934,7 +6934,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### SetDocumentTemplateFromDocumentTemplateAsync\(int, DocumentTemplateEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SetDocumentTemplateFromDocumentTemplateAsync_System_Int32_SuperOffice_WebApi_Data_DocumentTemplateEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SetDocumentTemplateFromDocumentTemplateAsync_System_Int32_SuperOffice_WebApi_Data_DocumentTemplateEntity_SuperOffice_WebApi_RequestOptions_"></a> SetDocumentTemplateFromDocumentTemplateAsync\(int, DocumentTemplateEntity, RequestOptions\)
 
 Create a new document template based on another template
 
@@ -6958,11 +6958,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentTemplateEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentTemplateEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity)\>
 
 The new document template entity
 
-### SetDocumentTemplateStreamAsync\(DocumentTemplateEntity, byte\[\], string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SetDocumentTemplateStreamAsync_SuperOffice_WebApi_Data_DocumentTemplateEntity_System_Byte___System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SetDocumentTemplateStreamAsync_SuperOffice_WebApi_Data_DocumentTemplateEntity_System_Byte___System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> SetDocumentTemplateStreamAsync\(DocumentTemplateEntity, byte\[\], string, int, RequestOptions\)
 
 Store a document template from its stream. Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.
 
@@ -6994,11 +6994,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentTemplateEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentTemplateEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateEntity)\>
 
 Since there is a potential for a name conflict (the file name stored by the document entity earlier may prove to be invalid), the (possibly amended) document entity is returned. The client should not assume that any earlier, cached entity information is valid.
 
-### SetEmarketingStrictModeAsync\(bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SetEmarketingStrictModeAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SetEmarketingStrictModeAsync_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> SetEmarketingStrictModeAsync\(bool, RequestOptions\)
 
 Turn on the Emarketing strict mode, which will enable full GDPR rules concerning Emarketing consents and subscriptions
 
@@ -7022,7 +7022,7 @@ Override language/culture codes on this request.
 
 A void return
 
-### SetHeadingsForListItemAsync\(int, int, int\[\], bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SetHeadingsForListItemAsync_System_Int32_System_Int32_System_Int32___System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SetHeadingsForListItemAsync_System_Int32_System_Int32_System_Int32___System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> SetHeadingsForListItemAsync\(int, int, int\[\], bool, RequestOptions\)
 
 Set headings which this list item should be listed under
 
@@ -7056,7 +7056,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### SetListItemsForHeadingAsync\(int, int, int\[\], bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SetListItemsForHeadingAsync_System_Int32_System_Int32_System_Int32___System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SetListItemsForHeadingAsync_System_Int32_System_Int32_System_Int32___System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> SetListItemsForHeadingAsync\(int, int, int\[\], bool, RequestOptions\)
 
 Update listItems that will be visible for this usergroup
 
@@ -7090,7 +7090,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### SetListItemsForHeadingFromListNameAsync\(string, int, int\[\], bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SetListItemsForHeadingFromListNameAsync_System_String_System_Int32_System_Int32___System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SetListItemsForHeadingFromListNameAsync_System_String_System_Int32_System_Int32___System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> SetListItemsForHeadingFromListNameAsync\(string, int, int\[\], bool, RequestOptions\)
 
 Update listItems under this heading
 
@@ -7124,7 +7124,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### SetListItemsForUserGroupAsync\(int, int, int\[\], bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SetListItemsForUserGroupAsync_System_Int32_System_Int32_System_Int32___System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SetListItemsForUserGroupAsync_System_Int32_System_Int32_System_Int32___System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> SetListItemsForUserGroupAsync\(int, int, int\[\], bool, RequestOptions\)
 
 Update listItems that will be visible for this usergroup
 
@@ -7158,7 +7158,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### SetListItemsForUserGroupFromListNameAsync\(string, int, int\[\], bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SetListItemsForUserGroupFromListNameAsync_System_String_System_Int32_System_Int32___System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SetListItemsForUserGroupFromListNameAsync_System_String_System_Int32_System_Int32___System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> SetListItemsForUserGroupFromListNameAsync\(string, int, int\[\], bool, RequestOptions\)
 
 Update listItems that will be visible for this usergroup
 
@@ -7192,7 +7192,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### SetRankOnHeadingsAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SetRankOnHeadingsAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SetRankOnHeadingsAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> SetRankOnHeadingsAsync\(int, int\[\], RequestOptions\)
 
 Set rank order on headings
 
@@ -7218,7 +7218,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### SetRankOnProjectActivityAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SetRankOnProjectActivityAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SetRankOnProjectActivityAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> SetRankOnProjectActivityAsync\(int, int\[\], RequestOptions\)
 
 Set rank order on project activity
 
@@ -7244,7 +7244,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### SetRankOnProjectDocumentAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SetRankOnProjectDocumentAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SetRankOnProjectDocumentAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> SetRankOnProjectDocumentAsync\(int, int\[\], RequestOptions\)
 
 Set rank order on project document
 
@@ -7270,7 +7270,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### SetRankOnSaleActivityAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SetRankOnSaleActivityAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SetRankOnSaleActivityAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> SetRankOnSaleActivityAsync\(int, int\[\], RequestOptions\)
 
 Set rank order on sale activity
 
@@ -7296,7 +7296,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### SetRankOnSaleDocumentAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SetRankOnSaleDocumentAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SetRankOnSaleDocumentAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> SetRankOnSaleDocumentAsync\(int, int\[\], RequestOptions\)
 
 Set rank order on project document
 
@@ -7322,7 +7322,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### SetTicketCategoriesForUserGroupAsync\(int, int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SetTicketCategoriesForUserGroupAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SetTicketCategoriesForUserGroupAsync_System_Int32_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> SetTicketCategoriesForUserGroupAsync\(int, int\[\], RequestOptions\)
 
 Set ticket categories for one user group
 
@@ -7350,7 +7350,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### SetTicketPrioritySortOrderAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SetTicketPrioritySortOrderAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SetTicketPrioritySortOrderAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> SetTicketPrioritySortOrderAsync\(int, int, RequestOptions\)
 
 This method will set sort order of ticket priority in a list
 
@@ -7378,7 +7378,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### SetTicketRelationDefinitionSortOrderAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SetTicketRelationDefinitionSortOrderAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SetTicketRelationDefinitionSortOrderAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> SetTicketRelationDefinitionSortOrderAsync\(int, int, RequestOptions\)
 
 This method will set sort order of ticket relation definition in a list
 
@@ -7406,7 +7406,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### SetTicketStatusSortOrderAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SetTicketStatusSortOrderAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SetTicketStatusSortOrderAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> SetTicketStatusSortOrderAsync\(int, int, RequestOptions\)
 
 This method will set sort order of ticket status in a list
 
@@ -7434,7 +7434,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### SetTicketTypeSortOrderAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SetTicketTypeSortOrderAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SetTicketTypeSortOrderAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> SetTicketTypeSortOrderAsync\(int, int, RequestOptions\)
 
 This method will set sort order of ticket type in a list
 
@@ -7462,7 +7462,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### SetVisibleForUserGroupAsync\(int, int, int\[\], bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SetVisibleForUserGroupAsync_System_Int32_System_Int32_System_Int32___System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SetVisibleForUserGroupAsync_System_Int32_System_Int32_System_Int32___System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> SetVisibleForUserGroupAsync\(int, int, int\[\], bool, RequestOptions\)
 
 Set a group which this list item should be visible for
 
@@ -7496,7 +7496,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### SetVisibleForUserGroupsAsync\(int, int, SelectableMDOListItem\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SetVisibleForUserGroupsAsync_System_Int32_System_Int32_SuperOffice_WebApi_Data_SelectableMDOListItem___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SetVisibleForUserGroupsAsync_System_Int32_System_Int32_SuperOffice_WebApi_Data_SelectableMDOListItem___SuperOffice_WebApi_RequestOptions_"></a> SetVisibleForUserGroupsAsync\(int, int, SelectableMDOListItem\[\], RequestOptions\)
 
 Update User groups that this list item is visible for
 
@@ -7524,11 +7524,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]\>
 
 Array of selectable user groups
 
-### SetVisibleForUserGroupsFromListNameAsync\(string, int, SelectableMDOListItem\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SetVisibleForUserGroupsFromListNameAsync_System_String_System_Int32_SuperOffice_WebApi_Data_SelectableMDOListItem___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SetVisibleForUserGroupsFromListNameAsync_System_String_System_Int32_SuperOffice_WebApi_Data_SelectableMDOListItem___SuperOffice_WebApi_RequestOptions_"></a> SetVisibleForUserGroupsFromListNameAsync\(string, int, SelectableMDOListItem\[\], RequestOptions\)
 
 Update User groups that this list item is visible for
 
@@ -7556,11 +7556,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]\>
 
 Array of selectable user groups
 
-### SortListItemsAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_SortListItemsAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_SortListItemsAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> SortListItemsAsync\(int, string, RequestOptions\)
 
 Sort the list items in a given list alphabetically
 
@@ -7586,7 +7586,7 @@ Override language/culture codes on this request.
 
  [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task)
 
-### UpdateCategoryMembershipsAsync\(int, TicketCategoryMembershipEntity\[\], TicketCategoryMembershipEntity\[\], TicketCategoryMembershipEntity\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_UpdateCategoryMembershipsAsync_System_Int32_SuperOffice_WebApi_Data_TicketCategoryMembershipEntity___SuperOffice_WebApi_Data_TicketCategoryMembershipEntity___SuperOffice_WebApi_Data_TicketCategoryMembershipEntity___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_UpdateCategoryMembershipsAsync_System_Int32_SuperOffice_WebApi_Data_TicketCategoryMembershipEntity___SuperOffice_WebApi_Data_TicketCategoryMembershipEntity___SuperOffice_WebApi_Data_TicketCategoryMembershipEntity___SuperOffice_WebApi_RequestOptions_"></a> UpdateCategoryMembershipsAsync\(int, TicketCategoryMembershipEntity\[\], TicketCategoryMembershipEntity\[\], TicketCategoryMembershipEntity\[\], RequestOptions\)
 
 Updates category memberships
 
@@ -7622,7 +7622,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### UpdateHierarchyFromPathAsync\(Domain, string, HierarchyEntity, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_UpdateHierarchyFromPathAsync_SuperOffice_WebApi_Data_Domain_System_String_SuperOffice_WebApi_Data_HierarchyEntity_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_UpdateHierarchyFromPathAsync_SuperOffice_WebApi_Data_Domain_System_String_SuperOffice_WebApi_Data_HierarchyEntity_SuperOffice_WebApi_RequestOptions_"></a> UpdateHierarchyFromPathAsync\(Domain, string, HierarchyEntity, RequestOptions\)
 
 Update a hierarchy item from a path
 
@@ -7650,11 +7650,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[HierarchyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HierarchyEntity)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[HierarchyEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.HierarchyEntity)\>
 
 The hierarchy node updated to the path
 
-### ValidateTicketRelationDefinitionAsync\(int, int\[\], int\[\], TicketRelationType, RequestOptions\) {#SuperOffice_WebApi_Agents_IListAgent_ValidateTicketRelationDefinitionAsync_System_Int32_System_Int32___System_Int32___SuperOffice_WebApi_Data_TicketRelationType_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IListAgent_ValidateTicketRelationDefinitionAsync_System_Int32_System_Int32___System_Int32___SuperOffice_WebApi_Data_TicketRelationType_SuperOffice_WebApi_RequestOptions_"></a> ValidateTicketRelationDefinitionAsync\(int, int\[\], int\[\], TicketRelationType, RequestOptions\)
 
 Validate a ticket relation definition against combinations of source and destination ticket types. Returns one result per source/destination pair.
 
@@ -7686,7 +7686,7 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[TicketRelationDefinitionResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationDefinitionResult)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[TicketRelationDefinitionResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationDefinitionResult)\[\]\>
 
 Validation results, one per source/destination ticket type combination.
 

@@ -160,7 +160,7 @@ public ILogger Logger { get; }
 ### <a id="SuperOffice_WebApi_WebApiOptions_ProgressListener"></a> ProgressListener
 
 Callback for progress during downloads.
-Copied to the agent during initialization - can be overridden on each agent using [ProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ProgressListener).
+Copied to the agent during initialization - can be overridden on each agent using [ProgressListener](/en/api/reference/webapi/SuperOffice.WebApi.ProgressListener).
 
 ```csharp
 public IProgressListener ProgressListener { get; set; }

@@ -1,4 +1,4 @@
-# Interface IFavouriteAgent {#SuperOffice_WebApi_Agents_IFavouriteAgent}
+# <a id="SuperOffice_WebApi_Agents_IFavouriteAgent"></a> Interface IFavouriteAgent
 
 Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
@@ -16,7 +16,7 @@ public interface IFavouriteAgent : IAgentBase, IDisposable
 
 ## Methods
 
-### AddFavouriteAsync\(string, int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IFavouriteAgent_AddFavouriteAsync_System_String_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IFavouriteAgent_AddFavouriteAsync_System_String_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> AddFavouriteAsync\(string, int, int, string, RequestOptions\)
 
 Add a record in a table as a favourite for an associate
 
@@ -52,7 +52,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### AddFavouritesAsync\(string, int\[\], int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IFavouriteAgent_AddFavouritesAsync_System_String_System_Int32___System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IFavouriteAgent_AddFavouritesAsync_System_String_System_Int32___System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> AddFavouritesAsync\(string, int\[\], int, string, RequestOptions\)
 
 Add a list of record ids as favourites for an associate
 
@@ -88,7 +88,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### AddTicketsToFavouritesByProviderAsync\(string, ArchiveRestrictionInfo\[\], int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IFavouriteAgent_AddTicketsToFavouritesByProviderAsync_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IFavouriteAgent_AddTicketsToFavouritesByProviderAsync_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> AddTicketsToFavouritesByProviderAsync\(string, ArchiveRestrictionInfo\[\], int, string, RequestOptions\)
 
 Add a list of tickets as favourites that are given by the ticket provider.
 
@@ -124,7 +124,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### GetFavouritesAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IFavouriteAgent_GetFavouritesAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IFavouriteAgent_GetFavouritesAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetFavouritesAsync\(string, int, RequestOptions\)
 
 Get all favourites for a table and associate
 
@@ -148,11 +148,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[Favourite](/en/api/reference/webapi/SuperOffice.WebApi.Data.Favourite)\[\]\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[Favourite](/en/api/reference/webapi/SuperOffice.WebApi.Data.Favourite)\[\]\>
 
 Requested favourites for a table and associate
 
-### IsFavouriteAsync\(string, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IFavouriteAgent_IsFavouriteAsync_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IFavouriteAgent_IsFavouriteAsync_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> IsFavouriteAsync\(string, int, int, RequestOptions\)
 
 Checks if a record in a table is a favourite for an associate
 
@@ -180,11 +180,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
 
 Is Favourite?
 
-### RemoveAllFavouritesAsync\(string, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IFavouriteAgent_RemoveAllFavouritesAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IFavouriteAgent_RemoveAllFavouritesAsync_System_String_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> RemoveAllFavouritesAsync\(string, int, RequestOptions\)
 
 Remove all favourites for a table and associate
 
@@ -212,7 +212,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### RemoveFavouriteAsync\(string, int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IFavouriteAgent_RemoveFavouriteAsync_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IFavouriteAgent_RemoveFavouriteAsync_System_String_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> RemoveFavouriteAsync\(string, int, int, RequestOptions\)
 
 Remove favourite for a table, record id and associate
 
@@ -244,7 +244,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### RemoveFavouritesAsync\(string, int\[\], int, RequestOptions\) {#SuperOffice_WebApi_Agents_IFavouriteAgent_RemoveFavouritesAsync_System_String_System_Int32___System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IFavouriteAgent_RemoveFavouritesAsync_System_String_System_Int32___System_Int32_SuperOffice_WebApi_RequestOptions_"></a> RemoveFavouritesAsync\(string, int\[\], int, RequestOptions\)
 
 Remove a list of record ids from favourites for an associate
 
@@ -276,7 +276,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### RemoveFavouritesByIdAsync\(int\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_IFavouriteAgent_RemoveFavouritesByIdAsync_System_Int32___SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IFavouriteAgent_RemoveFavouritesByIdAsync_System_Int32___SuperOffice_WebApi_RequestOptions_"></a> RemoveFavouritesByIdAsync\(int\[\], RequestOptions\)
 
 Remove favourite using favourite id
 
@@ -300,7 +300,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### RemoveTicketsFromFavouritesByProviderAsync\(string, ArchiveRestrictionInfo\[\], int, RequestOptions\) {#SuperOffice_WebApi_Agents_IFavouriteAgent_RemoveTicketsFromFavouritesByProviderAsync_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IFavouriteAgent_RemoveTicketsFromFavouritesByProviderAsync_System_String_SuperOffice_WebApi_Data_ArchiveRestrictionInfo___System_Int32_SuperOffice_WebApi_RequestOptions_"></a> RemoveTicketsFromFavouritesByProviderAsync\(string, ArchiveRestrictionInfo\[\], int, RequestOptions\)
 
 Remove a list of tickets from favourites that are given by the ticket provider.
 
@@ -332,7 +332,7 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### ToggleFavouriteAsync\(string, int, int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_IFavouriteAgent_ToggleFavouriteAsync_System_String_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IFavouriteAgent_ToggleFavouriteAsync_System_String_System_Int32_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> ToggleFavouriteAsync\(string, int, int, string, RequestOptions\)
 
 Toggle a record in a table as a favourite for an associate
 
@@ -364,7 +364,7 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
 
 Return the new value, true if added, false if removed
 

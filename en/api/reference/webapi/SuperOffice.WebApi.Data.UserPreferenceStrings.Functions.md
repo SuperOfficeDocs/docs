@@ -458,7 +458,7 @@ public const string RecentNavigationLimit = "RecentNavigationLimit"
 Hard default for RecentNavigationLimit
 
 ```csharp
-public const int RecentNavigationLimit_HardDefault = 25
+public const int RecentNavigationLimit_HardDefault = 20
 ```
 
 #### Field Value
