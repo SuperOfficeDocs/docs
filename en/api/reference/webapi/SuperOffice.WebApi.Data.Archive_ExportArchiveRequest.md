@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Archive_ExportArchiveRequest"></a> Class Archive\_ExportArchiveRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Archive_ExportArchiveRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Archive\_ExportArchiveRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Archive_ExportArchiveRequest)
+[Archive\_ExportArchiveRequest](SuperOffice.WebApi.Data.Archive\_ExportArchiveRequest.md)
 
 #### Inherited Members
 
@@ -100,7 +100,7 @@ public ArchiveRestrictionInfo[] Restrictions { get; set; }
 
 #### Property Value
 
- [ArchiveRestrictionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveRestrictionInfo)\[\]
+ [ArchiveRestrictionInfo](SuperOffice.WebApi.Data.ArchiveRestrictionInfo.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_Archive_ExportArchiveRequest_SelectedRowIds"></a> SelectedRowIds
 
@@ -120,5 +120,5 @@ public ArchiveOrderByInfo[] SortOrder { get; set; }
 
 #### Property Value
 
- [ArchiveOrderByInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ArchiveOrderByInfo)\[\]
+ [ArchiveOrderByInfo](SuperOffice.WebApi.Data.ArchiveOrderByInfo.md)\[\]
 

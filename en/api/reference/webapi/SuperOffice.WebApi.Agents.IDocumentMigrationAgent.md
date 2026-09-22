@@ -1,11 +1,11 @@
-# Interface IDocumentMigrationAgent {#SuperOffice_WebApi_Agents_IDocumentMigrationAgent}
+# <a id="SuperOffice_WebApi_Agents_IDocumentMigrationAgent"></a> Interface IDocumentMigrationAgent
 
-Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
+Namespace: [SuperOffice.WebApi.Agents](SuperOffice.WebApi.Agents.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Agent used to support migrating documents between different document-plugins, as single documents or batches.
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; This agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.
+<p></p>
+<b>Online Restricted:</b> This agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.
 
 ```csharp
 public interface IDocumentMigrationAgent : IAgentBase, IDisposable
@@ -13,12 +13,12 @@ public interface IDocumentMigrationAgent : IAgentBase, IDisposable
 
 #### Implements
 
-[IAgentBase](/en/api/reference/webapi/SuperOffice.WebApi.Agents.IAgentBase), 
+[IAgentBase](SuperOffice.WebApi.Agents.IAgentBase.md), 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 ## Methods
 
-### CreateDefaultDocumentMigrationItemListAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IDocumentMigrationAgent_CreateDefaultDocumentMigrationItemListAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDocumentMigrationAgent_CreateDefaultDocumentMigrationItemListAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultDocumentMigrationItemListAsync\(RequestOptions\)
 
 Set default values into a new DocumentMigrationItemList.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -29,17 +29,17 @@ Task<DocumentMigrationItemList> CreateDefaultDocumentMigrationItemListAsync(Requ
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentMigrationItemList](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentMigrationItemList)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentMigrationItemList](SuperOffice.WebApi.Data.DocumentMigrationItemList.md)\>
 
 A blank DocumentMigrationItemList
 
-### CreateDefaultDocumentTemplateMigrationListAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IDocumentMigrationAgent_CreateDefaultDocumentTemplateMigrationListAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDocumentMigrationAgent_CreateDefaultDocumentTemplateMigrationListAsync_SuperOffice_WebApi_RequestOptions_"></a> CreateDefaultDocumentTemplateMigrationListAsync\(RequestOptions\)
 
 Set default values into a new DocumentTemplateMigrationList.
 NetServer calculates default values on the entity, which is required when creating/storing a new instance
@@ -50,21 +50,21 @@ Task<DocumentTemplateMigrationList> CreateDefaultDocumentTemplateMigrationListAs
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentTemplateMigrationList](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateMigrationList)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentTemplateMigrationList](SuperOffice.WebApi.Data.DocumentTemplateMigrationList.md)\>
 
 A blank DocumentTemplateMigrationList
 
-### GetForAllDocumentsAsync\(int, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IDocumentMigrationAgent_GetForAllDocumentsAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDocumentMigrationAgent_GetForAllDocumentsAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetForAllDocumentsAsync\(int, bool, RequestOptions\)
 
 Gets a migration summary for all documents stored in CRM. Warning: Expensive!
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The DocumentMigration agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.
+<p></p>
+<b>Online Restricted:</b> The DocumentMigration agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.
 
 ```csharp
 Task<DocumentMigrationItemList> GetForAllDocumentsAsync(int documentPluginId, bool includeEmails, RequestOptions requestOptions = null)
@@ -80,21 +80,21 @@ The ID of the document-plugin to migrate to.
 
 True if documents to migrate should include emails.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentMigrationItemList](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentMigrationItemList)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentMigrationItemList](SuperOffice.WebApi.Data.DocumentMigrationItemList.md)\>
 
 Never null.
 
-### GetForDateRangeAsync\(int, DateTime, DateTime, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IDocumentMigrationAgent_GetForDateRangeAsync_System_Int32_System_DateTime_System_DateTime_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDocumentMigrationAgent_GetForDateRangeAsync_System_Int32_System_DateTime_System_DateTime_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetForDateRangeAsync\(int, DateTime, DateTime, bool, RequestOptions\)
 
 Gets a migration summary for documents in the provided date-rage
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The DocumentMigration agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.
+<p></p>
+<b>Online Restricted:</b> The DocumentMigration agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.
 
 ```csharp
 Task<DocumentMigrationItemList> GetForDateRangeAsync(int documentPluginId, DateTime minDate, DateTime maxDate, bool includeEmails, RequestOptions requestOptions = null)
@@ -118,21 +118,21 @@ Inclusive maximum.
 
 True if documents to migrate should include emails.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentMigrationItemList](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentMigrationItemList)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentMigrationItemList](SuperOffice.WebApi.Data.DocumentMigrationItemList.md)\>
 
 Never null.
 
-### GetForSelectionAsync\(int, int, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IDocumentMigrationAgent_GetForSelectionAsync_System_Int32_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDocumentMigrationAgent_GetForSelectionAsync_System_Int32_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetForSelectionAsync\(int, int, bool, RequestOptions\)
 
 Gets a migration summary for documents in the provided selection
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The DocumentMigration agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.
+<p></p>
+<b>Online Restricted:</b> The DocumentMigration agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.
 
 ```csharp
 Task<DocumentMigrationItemList> GetForSelectionAsync(int documentPluginId, int selectionId, bool includeEmails, RequestOptions requestOptions = null)
@@ -152,21 +152,21 @@ ID of the selection used to create the DocumentMigrationSummary instance.
 
 True if documents to migrate should include emails.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentMigrationItemList](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentMigrationItemList)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentMigrationItemList](SuperOffice.WebApi.Data.DocumentMigrationItemList.md)\>
 
 Never null.
 
-### GetForTemplatesAsync\(int, bool, RequestOptions\) {#SuperOffice_WebApi_Agents_IDocumentMigrationAgent_GetForTemplatesAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDocumentMigrationAgent_GetForTemplatesAsync_System_Int32_System_Boolean_SuperOffice_WebApi_RequestOptions_"></a> GetForTemplatesAsync\(int, bool, RequestOptions\)
 
 Gets a migration summary for all templates stored in CRM.
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The DocumentMigration agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.
+<p></p>
+<b>Online Restricted:</b> The DocumentMigration agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.
 
 ```csharp
 Task<DocumentTemplateMigrationList> GetForTemplatesAsync(int targetDocumentPluginId, bool includeEmails, RequestOptions requestOptions = null)
@@ -182,21 +182,21 @@ The ID of the document-plugin to migrate to.
 
 True if templates to migrate should include emails.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[DocumentTemplateMigrationList](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentTemplateMigrationList)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[DocumentTemplateMigrationList](SuperOffice.WebApi.Data.DocumentTemplateMigrationList.md)\>
 
 Never null.
 
-### GetNumberOfConfidentialDocumentsAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IDocumentMigrationAgent_GetNumberOfConfidentialDocumentsAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDocumentMigrationAgent_GetNumberOfConfidentialDocumentsAsync_SuperOffice_WebApi_RequestOptions_"></a> GetNumberOfConfidentialDocumentsAsync\(RequestOptions\)
 
 Gets the total number of documents that is not visible to everyone
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The DocumentMigration agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.
+<p></p>
+<b>Online Restricted:</b> The DocumentMigration agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.
 
 ```csharp
 Task<int> GetNumberOfConfidentialDocumentsAsync(RequestOptions requestOptions = null)
@@ -204,21 +204,21 @@ Task<int> GetNumberOfConfidentialDocumentsAsync(RequestOptions requestOptions = 
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[int](https://learn.microsoft.com/dotnet/api/system.int32)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[int](https://learn.microsoft.com/dotnet/api/system.int32)\>
 
 Number of confidential documents.
 
-### HasDocumentsToMigrateAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_IDocumentMigrationAgent_HasDocumentsToMigrateAsync_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDocumentMigrationAgent_HasDocumentsToMigrateAsync_SuperOffice_WebApi_RequestOptions_"></a> HasDocumentsToMigrateAsync\(RequestOptions\)
 
 Checks if there are any documents in the current database stored using a non-default document-plugin, and which can be migrated.
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The DocumentMigration agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.
+<p></p>
+<b>Online Restricted:</b> The DocumentMigration agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.
 
 ```csharp
 Task<bool> HasDocumentsToMigrateAsync(RequestOptions requestOptions = null)
@@ -226,21 +226,21 @@ Task<bool> HasDocumentsToMigrateAsync(RequestOptions requestOptions = null)
 
 #### Parameters
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\&gt;
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
 
 True if there are documents available to migrate.
 
-### MigrateDocumentToNewDocPluginAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDocumentMigrationAgent_MigrateDocumentToNewDocPluginAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDocumentMigrationAgent_MigrateDocumentToNewDocPluginAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> MigrateDocumentToNewDocPluginAsync\(int, int, RequestOptions\)
 
 Migrates the document with the provided id to the specified document-plugin.
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The DocumentMigration agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.
+<p></p>
+<b>Online Restricted:</b> The DocumentMigration agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.
 
 ```csharp
 Task MigrateDocumentToNewDocPluginAsync(int documentId, int documentPluginId, RequestOptions requestOptions = null)
@@ -256,7 +256,7 @@ The ID of the document to migrate.
 
 The ID of the document-plugin to migrate to.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 
@@ -266,11 +266,11 @@ Override language/culture codes on this request.
 
 This method has no return value
 
-### MigrateTemplateToNewDocPluginAsync\(int, int, RequestOptions\) {#SuperOffice_WebApi_Agents_IDocumentMigrationAgent_MigrateTemplateToNewDocPluginAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_}
+### <a id="SuperOffice_WebApi_Agents_IDocumentMigrationAgent_MigrateTemplateToNewDocPluginAsync_System_Int32_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> MigrateTemplateToNewDocPluginAsync\(int, int, RequestOptions\)
 
 Migrates the template with the provided id to the specified document-plugin.
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;Online Restricted:&lt;/b&gt; The DocumentMigration agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.
+<p></p>
+<b>Online Restricted:</b> The DocumentMigration agent is not available in Online by default. Access must be requested specifically when app is registered. Intended for SuperOffice-internal apps.
 
 ```csharp
 Task MigrateTemplateToNewDocPluginAsync(int documentTemplateId, int targetDocumentPluginId, RequestOptions requestOptions = null)
@@ -286,7 +286,7 @@ The ID of the document-template to migrate.
 
 The ID of the document-plugin to migrate to.
 
-`requestOptions` [RequestOptions](/en/api/reference/webapi/SuperOffice.WebApi.RequestOptions)
+`requestOptions` [RequestOptions](SuperOffice.WebApi.RequestOptions.md)
 
 Override language/culture codes on this request.
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_AI"></a> Class UserPreferenceStrings.AI
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 AI - Artificial Intelligence
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.AI
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.AI](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.AI)
+[UserPreferenceStrings.AI](SuperOffice.WebApi.Data.UserPreferenceStrings.AI.md)
 
 #### Inherited Members
 

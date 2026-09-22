@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_CustomObject_SaveCustomObjectRequest"></a> Class CustomObject\_SaveCustomObjectRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class CustomObject_SaveCustomObjectRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[CustomObject\_SaveCustomObjectRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject_SaveCustomObjectRequest)
+[CustomObject\_SaveCustomObjectRequest](SuperOffice.WebApi.Data.CustomObject\_SaveCustomObjectRequest.md)
 
 #### Inherited Members
 
@@ -50,5 +50,5 @@ public CustomObject Row { get; set; }
 
 #### Property Value
 
- [CustomObject](/en/api/reference/webapi/SuperOffice.WebApi.Data.CustomObject)
+ [CustomObject](SuperOffice.WebApi.Data.CustomObject.md)
 

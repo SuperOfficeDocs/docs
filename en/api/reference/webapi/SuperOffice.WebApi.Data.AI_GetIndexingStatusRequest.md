@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_AI_GetIndexingStatusRequest"></a> Class AI\_GetIndexingStatusRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class AI_GetIndexingStatusRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[AI\_GetIndexingStatusRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.AI_GetIndexingStatusRequest)
+[AI\_GetIndexingStatusRequest](SuperOffice.WebApi.Data.AI\_GetIndexingStatusRequest.md)
 
 #### Inherited Members
 

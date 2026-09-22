@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DashboardTileOptionType"></a> Enum DashboardTileOptionType
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Dashboard tile option type

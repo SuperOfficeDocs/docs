@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Sale_GetSaleStakeholderByIdRequest"></a> Class Sale\_GetSaleStakeholderByIdRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Sale_GetSaleStakeholderByIdRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Sale\_GetSaleStakeholderByIdRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale_GetSaleStakeholderByIdRequest)
+[Sale\_GetSaleStakeholderByIdRequest](SuperOffice.WebApi.Data.Sale\_GetSaleStakeholderByIdRequest.md)
 
 #### Inherited Members
 

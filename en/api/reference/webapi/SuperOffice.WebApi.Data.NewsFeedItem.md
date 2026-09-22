@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_NewsFeedItem"></a> Class NewsFeedItem
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for NewsFeedItem.
@@ -13,7 +13,7 @@ public class NewsFeedItem
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[NewsFeedItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItem)
+[NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md)
 
 #### Inherited Members
 
@@ -34,7 +34,7 @@ var newsFeedItem = agent.GetNewsFeedItem( 123 );</code></pre>
 
 ## Remarks
 
-Use [Archive agent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent):
+Use <xref href="SuperOffice.CRM.Services.ArchiveAgent?text=Archive+agent" data-throw-if-not-resolved="false"></xref>:
             All NewsFeedItem: <pre><code class="lang-csharp">"NewsFeedItem"</code></pre>
 
 ## Constructors
@@ -59,7 +59,7 @@ public virtual NewsFeedCTA[] Actions { get; set; }
 
 #### Property Value
 
- [NewsFeedCTA](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedCTA)\[\]
+ [NewsFeedCTA](SuperOffice.WebApi.Data.NewsFeedCTA.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedItem_ApplicationId"></a> ApplicationId
 
@@ -83,7 +83,7 @@ public virtual Contact Contact { get; set; }
 
 #### Property Value
 
- [Contact](/en/api/reference/webapi/SuperOffice.WebApi.Data.Contact)
+ [Contact](SuperOffice.WebApi.Data.Contact.md)
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedItem_Description"></a> Description
 
@@ -95,7 +95,7 @@ public virtual StringDictionary Description { get; set; }
 
 #### Property Value
 
- [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
+ [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedItem_ExpiresAt"></a> ExpiresAt
 
@@ -191,7 +191,7 @@ public virtual Person Person { get; set; }
 
 #### Property Value
 
- [Person](/en/api/reference/webapi/SuperOffice.WebApi.Data.Person)
+ [Person](SuperOffice.WebApi.Data.Person.md)
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedItem_PreviewHint"></a> PreviewHint
 
@@ -217,11 +217,11 @@ public EMailPriority? Priority { get; set; }
 
 #### Property Value
 
- [EMailPriority](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailPriority)?
+ [EMailPriority](SuperOffice.WebApi.Data.EMailPriority.md)?
 
 #### See Also
 
-[NewsFeedItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItem).[Priority\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItem#SuperOffice_WebApi_Data_NewsFeedItem_Priority_String)
+[NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md).[Priority\_String](SuperOffice.WebApi.Data.NewsFeedItem.md\#SuperOffice\_WebApi\_Data\_NewsFeedItem\_Priority\_String)
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedItem_Priority_String"></a> Priority\_String
 
@@ -239,7 +239,7 @@ public string Priority_String { get; set; }
 
 #### See Also
 
-[NewsFeedItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItem).[Priority](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItem#SuperOffice_WebApi_Data_NewsFeedItem_Priority)
+[NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md).[Priority](SuperOffice.WebApi.Data.NewsFeedItem.md\#SuperOffice\_WebApi\_Data\_NewsFeedItem\_Priority)
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedItem_Project"></a> Project
 
@@ -251,7 +251,7 @@ public virtual Project Project { get; set; }
 
 #### Property Value
 
- [Project](/en/api/reference/webapi/SuperOffice.WebApi.Data.Project)
+ [Project](SuperOffice.WebApi.Data.Project.md)
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedItem_RatingPercent"></a> RatingPercent
 
@@ -299,7 +299,7 @@ public virtual Sale Sale { get; set; }
 
 #### Property Value
 
- [Sale](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale)
+ [Sale](SuperOffice.WebApi.Data.Sale.md)
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedItem_SourceLink"></a> SourceLink
 
@@ -307,6 +307,18 @@ URL Link to the source of the news item, or an SOProtocol link to a SuperOffice 
 
 ```csharp
 public virtual string SourceLink { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+### <a id="SuperOffice_WebApi_Data_NewsFeedItem_SourceSoProtocol"></a> SourceSoProtocol
+
+SoProtocol to the agent's chat topic so that start page can open the agent topic directly. e.g. 'contact.main?contact_id=1234' or 'agents.main?instance_id=6a8&amp;topic_id=534'
+
+```csharp
+public virtual string SourceSoProtocol { get; set; }
 ```
 
 #### Property Value
@@ -325,11 +337,11 @@ public NewsFeedItemStatus? Status { get; set; }
 
 #### Property Value
 
- [NewsFeedItemStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItemStatus)?
+ [NewsFeedItemStatus](SuperOffice.WebApi.Data.NewsFeedItemStatus.md)?
 
 #### See Also
 
-[NewsFeedItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItem).[Status\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItem#SuperOffice_WebApi_Data_NewsFeedItem_Status_String)
+[NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md).[Status\_String](SuperOffice.WebApi.Data.NewsFeedItem.md\#SuperOffice\_WebApi\_Data\_NewsFeedItem\_Status\_String)
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedItem_Status_String"></a> Status\_String
 
@@ -347,7 +359,7 @@ public string Status_String { get; set; }
 
 #### See Also
 
-[NewsFeedItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItem).[Status](/en/api/reference/webapi/SuperOffice.WebApi.Data.NewsFeedItem#SuperOffice_WebApi_Data_NewsFeedItem_Status)
+[NewsFeedItem](SuperOffice.WebApi.Data.NewsFeedItem.md).[Status](SuperOffice.WebApi.Data.NewsFeedItem.md\#SuperOffice\_WebApi\_Data\_NewsFeedItem\_Status)
 
 ### <a id="SuperOffice_WebApi_Data_NewsFeedItem_Summary"></a> Summary
 
@@ -373,6 +385,18 @@ public virtual string Title { get; set; }
 
  [string](https://learn.microsoft.com/dotnet/api/system.string)
 
+### <a id="SuperOffice_WebApi_Data_NewsFeedItem_Type"></a> Type
+
+Type identifier for the message type. Optional. To allow clients to filter for specific message types without analyzing the CTAs or message content. e.g. 'mergeContact' or 'mergeOrphan'
+
+```csharp
+public virtual string Type { get; set; }
+```
+
+#### Property Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
 ### <a id="SuperOffice_WebApi_Data_NewsFeedItem_Updated"></a> Updated
 
 Last updated when
@@ -387,7 +411,7 @@ public virtual DateTime Updated { get; set; }
 
 ## See Also
 
-[NewsFeedAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.NewsFeedAgent), 
-[ArchiveAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.ArchiveAgent), 
+[NewsFeedAgent](SuperOffice.WebApi.Agents.NewsFeedAgent.md), 
+[ArchiveAgent](SuperOffice.WebApi.Agents.ArchiveAgent.md), 
 
 

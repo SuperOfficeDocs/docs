@@ -1,6 +1,6 @@
 # <a id="SuperOffice_License_SoLicenseNames"></a> Class SoLicenseNames
 
-Namespace: [SuperOffice.License](/en/api/reference/webapi/SuperOffice.License)  
+Namespace: [SuperOffice.License](SuperOffice.License.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 License names for SuperOffice Module Licenses. Use
@@ -14,7 +14,7 @@ public static class SoLicenseNames
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[SoLicenseNames](/en/api/reference/webapi/SuperOffice.License.SoLicenseNames)
+[SoLicenseNames](SuperOffice.License.SoLicenseNames.md)
 
 #### Inherited Members
 
@@ -125,6 +125,8 @@ public const string AdminSystemUser = "superoffice.admin-system-user"
 ### <a id="SuperOffice_License_SoLicenseNames_AiAgent"></a> AiAgent
 
 superoffice.ai-agent: Enable AI Agent features such as agent marketplace in admin, and agent panel in client.
+Extra info field contains the list of allowed agents: "only=lead,salesassistant,enrichment,deduplicate"
+Blank extra info means all agents are enabled.
 Site license.
 
 ```csharp
@@ -2092,6 +2094,19 @@ User license
 ```csharp
 [UserLicense]
 public const string StakeholderCal = "superoffice.stakeholder-cal"
+```
+
+#### Field Value
+
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
+
+### <a id="SuperOffice_License_SoLicenseNames_StartPage"></a> StartPage
+
+superoffice.start-page: Show start page
+Site license.
+
+```csharp
+public const string StartPage = "superoffice.start-page"
 ```
 
 #### Field Value

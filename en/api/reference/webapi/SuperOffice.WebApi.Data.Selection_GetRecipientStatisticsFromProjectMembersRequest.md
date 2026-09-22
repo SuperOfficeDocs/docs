@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Selection_GetRecipientStatisticsFromProjectMembersRequest"></a> Class Selection\_GetRecipientStatisticsFromProjectMembersRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Selection_GetRecipientStatisticsFromProjectMembersRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Selection\_GetRecipientStatisticsFromProjectMembersRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Selection_GetRecipientStatisticsFromProjectMembersRequest)
+[Selection\_GetRecipientStatisticsFromProjectMembersRequest](SuperOffice.WebApi.Data.Selection\_GetRecipientStatisticsFromProjectMembersRequest.md)
 
 #### Inherited Members
 

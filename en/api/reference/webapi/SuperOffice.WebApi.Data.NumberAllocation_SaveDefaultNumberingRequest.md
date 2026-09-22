@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_NumberAllocation_SaveDefaultNumberingRequest"></a> Class NumberAllocation\_SaveDefaultNumberingRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class NumberAllocation_SaveDefaultNumberingRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[NumberAllocation\_SaveDefaultNumberingRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.NumberAllocation_SaveDefaultNumberingRequest)
+[NumberAllocation\_SaveDefaultNumberingRequest](SuperOffice.WebApi.Data.NumberAllocation\_SaveDefaultNumberingRequest.md)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public RefCountEntity RefCountEntity { get; set; }
 
 #### Property Value
 
- [RefCountEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.RefCountEntity)
+ [RefCountEntity](SuperOffice.WebApi.Data.RefCountEntity.md)
 

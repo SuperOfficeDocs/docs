@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Appointment_RejectWithSmtpEmailConfirmationRequest"></a> Class Appointment\_RejectWithSmtpEmailConfirmationRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Appointment_RejectWithSmtpEmailConfirmationRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Appointment\_RejectWithSmtpEmailConfirmationRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Appointment_RejectWithSmtpEmailConfirmationRequest)
+[Appointment\_RejectWithSmtpEmailConfirmationRequest](SuperOffice.WebApi.Data.Appointment\_RejectWithSmtpEmailConfirmationRequest.md)
 
 #### Inherited Members
 
@@ -60,7 +60,7 @@ public EMailConnectionInfo SmtpEMailConnectionInfo { get; set; }
 
 #### Property Value
 
- [EMailConnectionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.EMailConnectionInfo)
+ [EMailConnectionInfo](SuperOffice.WebApi.Data.EMailConnectionInfo.md)
 
 ### <a id="SuperOffice_WebApi_Data_Appointment_RejectWithSmtpEmailConfirmationRequest_UpdateMode"></a> UpdateMode
 
@@ -70,5 +70,5 @@ public RecurrenceUpdateMode UpdateMode { get; set; }
 
 #### Property Value
 
- [RecurrenceUpdateMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.RecurrenceUpdateMode)
+ [RecurrenceUpdateMode](SuperOffice.WebApi.Data.RecurrenceUpdateMode.md)
 

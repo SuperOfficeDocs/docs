@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_DocumentMigrationItem"></a> Class DocumentMigrationItem
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for DocumentMigrationItem.
@@ -13,7 +13,7 @@ public class DocumentMigrationItem
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[DocumentMigrationItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.DocumentMigrationItem)
+[DocumentMigrationItem](SuperOffice.WebApi.Data.DocumentMigrationItem.md)
 
 #### Inherited Members
 
@@ -147,5 +147,5 @@ public virtual int VisibleForId { get; set; }
 
 ## See Also
 
-[DocumentMigrationAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DocumentMigrationAgent)
+[DocumentMigrationAgent](SuperOffice.WebApi.Agents.DocumentMigrationAgent.md)
 

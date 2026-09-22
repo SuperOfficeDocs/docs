@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Sale_AddSaleStakeholdersRequest"></a> Class Sale\_AddSaleStakeholdersRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Sale_AddSaleStakeholdersRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Sale\_AddSaleStakeholdersRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Sale_AddSaleStakeholdersRequest)
+[Sale\_AddSaleStakeholdersRequest](SuperOffice.WebApi.Data.Sale\_AddSaleStakeholdersRequest.md)
 
 #### Inherited Members
 
@@ -50,5 +50,5 @@ public SaleStakeholder[] SaleStakeholders { get; set; }
 
 #### Property Value
 
- [SaleStakeholder](/en/api/reference/webapi/SuperOffice.WebApi.Data.SaleStakeholder)\[\]
+ [SaleStakeholder](SuperOffice.WebApi.Data.SaleStakeholder.md)\[\]
 

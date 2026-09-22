@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_SaveHeadingsForListItemFromListNameRequest"></a> Class List\_SaveHeadingsForListItemFromListNameRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_SaveHeadingsForListItemFromListNameRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_SaveHeadingsForListItemFromListNameRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_SaveHeadingsForListItemFromListNameRequest)
+[List\_SaveHeadingsForListItemFromListNameRequest](SuperOffice.WebApi.Data.List\_SaveHeadingsForListItemFromListNameRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public SelectableMDOListItem[] Headings { get; set; }
 
 #### Property Value
 
- [SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]
+ [SelectableMDOListItem](SuperOffice.WebApi.Data.SelectableMDOListItem.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_List_SaveHeadingsForListItemFromListNameRequest_ListItemId"></a> ListItemId
 

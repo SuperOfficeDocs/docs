@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_PreviewDashTile"></a> Class PreviewDashTile
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for PreviewDashTile.
@@ -13,13 +13,13 @@ public class PreviewDashTile : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[PreviewDashTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreviewDashTile)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[PreviewDashTile](SuperOffice.WebApi.Data.PreviewDashTile.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -64,11 +64,11 @@ public DashTileType? TileType { get; set; }
 
 #### Property Value
 
- [DashTileType](/en/api/reference/webapi/SuperOffice.WebApi.Data.DashTileType)?
+ [DashTileType](SuperOffice.WebApi.Data.DashTileType.md)?
 
 #### See Also
 
-[PreviewDashTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreviewDashTile).[TileType\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreviewDashTile#SuperOffice_WebApi_Data_PreviewDashTile_TileType_String)
+[PreviewDashTile](SuperOffice.WebApi.Data.PreviewDashTile.md).[TileType\_String](SuperOffice.WebApi.Data.PreviewDashTile.md\#SuperOffice\_WebApi\_Data\_PreviewDashTile\_TileType\_String)
 
 ### <a id="SuperOffice_WebApi_Data_PreviewDashTile_TileType_String"></a> TileType\_String
 
@@ -86,9 +86,9 @@ public string TileType_String { get; set; }
 
 #### See Also
 
-[PreviewDashTile](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreviewDashTile).[TileType](/en/api/reference/webapi/SuperOffice.WebApi.Data.PreviewDashTile#SuperOffice_WebApi_Data_PreviewDashTile_TileType)
+[PreviewDashTile](SuperOffice.WebApi.Data.PreviewDashTile.md).[TileType](SuperOffice.WebApi.Data.PreviewDashTile.md\#SuperOffice\_WebApi\_Data\_PreviewDashTile\_TileType)
 
 ## See Also
 
-[DashAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.DashAgent)
+[DashAgent](SuperOffice.WebApi.Agents.DashAgent.md)
 

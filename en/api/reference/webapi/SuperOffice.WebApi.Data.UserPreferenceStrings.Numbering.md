@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Numbering"></a> Class UserPreferenceStrings.Numbering
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Numbering
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.Numbering
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.Numbering](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Numbering)
+[UserPreferenceStrings.Numbering](SuperOffice.WebApi.Data.UserPreferenceStrings.Numbering.md)
 
 #### Inherited Members
 

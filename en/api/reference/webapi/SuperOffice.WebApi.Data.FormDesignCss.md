@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_FormDesignCss"></a> Class FormDesignCss
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for FormDesignCss.
@@ -13,7 +13,7 @@ public class FormDesignCss
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[FormDesignCss](/en/api/reference/webapi/SuperOffice.WebApi.Data.FormDesignCss)
+[FormDesignCss](SuperOffice.WebApi.Data.FormDesignCss.md)
 
 #### Inherited Members
 
@@ -75,5 +75,5 @@ public virtual string State { get; set; }
 
 ## See Also
 
-[AIAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AIAgent)
+[AIAgent](SuperOffice.WebApi.Agents.AIAgent.md)
 

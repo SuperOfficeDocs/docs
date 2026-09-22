@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_List_SaveQuickRepliesRequest"></a> Class List\_SaveQuickRepliesRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class List_SaveQuickRepliesRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[List\_SaveQuickRepliesRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.List_SaveQuickRepliesRequest)
+[List\_SaveQuickRepliesRequest](SuperOffice.WebApi.Data.List\_SaveQuickRepliesRequest.md)
 
 #### Inherited Members
 
@@ -40,5 +40,5 @@ public QuickReply[] QuickReplies { get; set; }
 
 #### Property Value
 
- [QuickReply](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuickReply)\[\]
+ [QuickReply](SuperOffice.WebApi.Data.QuickReply.md)\[\]
 

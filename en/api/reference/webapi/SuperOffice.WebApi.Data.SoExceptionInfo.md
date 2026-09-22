@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_SoExceptionInfo"></a> Class SoExceptionInfo
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for SoExceptionInfo.
@@ -13,7 +13,7 @@ public class SoExceptionInfo
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[SoExceptionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoExceptionInfo)
+[SoExceptionInfo](SuperOffice.WebApi.Data.SoExceptionInfo.md)
 
 #### Inherited Members
 
@@ -71,7 +71,7 @@ public virtual SoExceptionInfo InnerException { get; set; }
 
 #### Property Value
 
- [SoExceptionInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoExceptionInfo)
+ [SoExceptionInfo](SuperOffice.WebApi.Data.SoExceptionInfo.md)
 
 ### <a id="SuperOffice_WebApi_Data_SoExceptionInfo_Message"></a> Message
 
@@ -95,7 +95,7 @@ public virtual SoExceptionInfoParameters Parameters { get; set; }
 
 #### Property Value
 
- [SoExceptionInfoParameters](/en/api/reference/webapi/SuperOffice.WebApi.Data.SoExceptionInfoParameters)
+ [SoExceptionInfoParameters](SuperOffice.WebApi.Data.SoExceptionInfoParameters.md)
 
 ### <a id="SuperOffice_WebApi_Data_SoExceptionInfo_Source"></a> Source
 

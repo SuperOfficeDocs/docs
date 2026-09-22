@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Functions"></a> Class UserPreferenceStrings.Functions
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Functions
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.Functions
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.Functions](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Functions)
+[UserPreferenceStrings.Functions](SuperOffice.WebApi.Data.UserPreferenceStrings.Functions.md)
 
 #### Inherited Members
 
@@ -458,7 +458,7 @@ public const string RecentNavigationLimit = "RecentNavigationLimit"
 Hard default for RecentNavigationLimit
 
 ```csharp
-public const int RecentNavigationLimit_HardDefault = 25
+public const int RecentNavigationLimit_HardDefault = 20
 ```
 
 #### Field Value

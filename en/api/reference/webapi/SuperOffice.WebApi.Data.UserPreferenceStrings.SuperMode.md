@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_SuperMode"></a> Class UserPreferenceStrings.SuperMode
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 SuperMode
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.SuperMode
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.SuperMode](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.SuperMode)
+[UserPreferenceStrings.SuperMode](SuperOffice.WebApi.Data.UserPreferenceStrings.SuperMode.md)
 
 #### Inherited Members
 

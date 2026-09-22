@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_TicketRelationAction"></a> Class TicketRelationAction
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for TicketRelationAction.
@@ -13,7 +13,7 @@ public class TicketRelationAction
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[TicketRelationAction](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketRelationAction)
+[TicketRelationAction](SuperOffice.WebApi.Data.TicketRelationAction.md)
 
 #### Inherited Members
 
@@ -51,15 +51,15 @@ public virtual bool CanCloseCurrentTicket { get; set; }
 
 ### <a id="SuperOffice_WebApi_Data_TicketRelationAction_Children"></a> Children
 
-Ids of unclosed child tickets. If CanCloseCurrentTicket is false, these are the tickets blocking the close.
+Unclosed child tickets. If CanCloseCurrentTicket is false, these are the tickets blocking the close.
 
 ```csharp
-public virtual int[] Children { get; set; }
+public virtual TicketRelationActionChild[] Children { get; set; }
 ```
 
 #### Property Value
 
- [int](https://learn.microsoft.com/dotnet/api/system.int32)\[\]
+ [TicketRelationActionChild](SuperOffice.WebApi.Data.TicketRelationActionChild.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_TicketRelationAction_IsParentRequired"></a> IsParentRequired
 
@@ -87,5 +87,5 @@ public virtual int TicketIdToClose { get; set; }
 
 ## See Also
 
-[TicketAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.TicketAgent)
+[TicketAgent](SuperOffice.WebApi.Agents.TicketAgent.md)
 

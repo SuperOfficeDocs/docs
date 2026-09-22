@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_UserPreferenceStrings_Copilot"></a> Class UserPreferenceStrings.Copilot
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Copilot Hugo AI
@@ -12,7 +12,7 @@ public static class UserPreferenceStrings.Copilot
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[UserPreferenceStrings.Copilot](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserPreferenceStrings.Copilot)
+[UserPreferenceStrings.Copilot](SuperOffice.WebApi.Data.UserPreferenceStrings.Copilot.md)
 
 #### Inherited Members
 

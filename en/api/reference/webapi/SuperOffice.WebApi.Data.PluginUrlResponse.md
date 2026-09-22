@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_PluginUrlResponse"></a> Class PluginUrlResponse
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for PluginUrlResponse.
@@ -13,13 +13,13 @@ public class PluginUrlResponse : Carrier
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Carrier](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier) ← 
-[PluginUrlResponse](/en/api/reference/webapi/SuperOffice.WebApi.Data.PluginUrlResponse)
+[Carrier](SuperOffice.WebApi.Data.Carrier.md) ← 
+[PluginUrlResponse](SuperOffice.WebApi.Data.PluginUrlResponse.md)
 
 #### Inherited Members
 
-[Carrier.TableRight](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_TableRight), 
-[Carrier.FieldProperties](/en/api/reference/webapi/SuperOffice.WebApi.Data.Carrier#SuperOffice_WebApi_Data_Carrier_FieldProperties), 
+[Carrier.TableRight](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_TableRight), 
+[Carrier.FieldProperties](SuperOffice.WebApi.Data.Carrier.md\#SuperOffice\_WebApi\_Data\_Carrier\_FieldProperties), 
 [object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
 [object.Equals\(object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
 [object.Equals\(object, object\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
@@ -50,7 +50,7 @@ public virtual ChangedData Changes { get; set; }
 
 #### Property Value
 
- [ChangedData](/en/api/reference/webapi/SuperOffice.WebApi.Data.ChangedData)
+ [ChangedData](SuperOffice.WebApi.Data.ChangedData.md)
 
 ### <a id="SuperOffice_WebApi_Data_PluginUrlResponse_ErrorCode"></a> ErrorCode
 
@@ -88,11 +88,11 @@ public QuoteStatus? Status { get; set; }
 
 #### Property Value
 
- [QuoteStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.QuoteStatus)?
+ [QuoteStatus](SuperOffice.WebApi.Data.QuoteStatus.md)?
 
 #### See Also
 
-[PluginUrlResponse](/en/api/reference/webapi/SuperOffice.WebApi.Data.PluginUrlResponse).[Status\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.PluginUrlResponse#SuperOffice_WebApi_Data_PluginUrlResponse_Status_String)
+[PluginUrlResponse](SuperOffice.WebApi.Data.PluginUrlResponse.md).[Status\_String](SuperOffice.WebApi.Data.PluginUrlResponse.md\#SuperOffice\_WebApi\_Data\_PluginUrlResponse\_Status\_String)
 
 ### <a id="SuperOffice_WebApi_Data_PluginUrlResponse_Status_String"></a> Status\_String
 
@@ -110,7 +110,7 @@ public string Status_String { get; set; }
 
 #### See Also
 
-[PluginUrlResponse](/en/api/reference/webapi/SuperOffice.WebApi.Data.PluginUrlResponse).[Status](/en/api/reference/webapi/SuperOffice.WebApi.Data.PluginUrlResponse#SuperOffice_WebApi_Data_PluginUrlResponse_Status)
+[PluginUrlResponse](SuperOffice.WebApi.Data.PluginUrlResponse.md).[Status](SuperOffice.WebApi.Data.PluginUrlResponse.md\#SuperOffice\_WebApi\_Data\_PluginUrlResponse\_Status)
 
 ### <a id="SuperOffice_WebApi_Data_PluginUrlResponse_TechExplanation"></a> TechExplanation
 
@@ -150,5 +150,5 @@ public virtual string UserExplanation { get; set; }
 
 ## See Also
 
-[QuoteAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.QuoteAgent)
+[QuoteAgent](SuperOffice.WebApi.Agents.QuoteAgent.md)
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Ticket_MergeTicketsRequest"></a> Class Ticket\_MergeTicketsRequest
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 ```csharp
@@ -10,7 +10,7 @@ public class Ticket_MergeTicketsRequest
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Ticket\_MergeTicketsRequest](/en/api/reference/webapi/SuperOffice.WebApi.Data.Ticket_MergeTicketsRequest)
+[Ticket\_MergeTicketsRequest](SuperOffice.WebApi.Data.Ticket\_MergeTicketsRequest.md)
 
 #### Inherited Members
 
@@ -40,7 +40,7 @@ public TicketEntity MergedTicketEntity { get; set; }
 
 #### Property Value
 
- [TicketEntity](/en/api/reference/webapi/SuperOffice.WebApi.Data.TicketEntity)
+ [TicketEntity](SuperOffice.WebApi.Data.TicketEntity.md)
 
 ### <a id="SuperOffice_WebApi_Data_Ticket_MergeTicketsRequest_SecondaryTicketIds"></a> SecondaryTicketIds
 

@@ -1,6 +1,6 @@
 # <a id="SuperOffice_WebApi_Data_Webhook"></a> Class Webhook
 
-Namespace: [SuperOffice.WebApi.Data](/en/api/reference/webapi/SuperOffice.WebApi.Data)  
+Namespace: [SuperOffice.WebApi.Data](SuperOffice.WebApi.Data.md)  
 Assembly: SuperOffice.WebApi.dll  
 
 Carrier object for Webhook.
@@ -13,7 +13,7 @@ public class Webhook
 #### Inheritance
 
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
-[Webhook](/en/api/reference/webapi/SuperOffice.WebApi.Data.Webhook)
+[Webhook](SuperOffice.WebApi.Data.Webhook.md)
 
 #### Inherited Members
 
@@ -78,7 +78,7 @@ public virtual MDOListItem[] ErrorAssociates { get; set; }
 
 #### Property Value
 
- [MDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.MDOListItem)\[\]
+ [MDOListItem](SuperOffice.WebApi.Data.MDOListItem.md)\[\]
 
 ### <a id="SuperOffice_WebApi_Data_Webhook_ErrorEmails"></a> ErrorEmails
 
@@ -126,7 +126,7 @@ public virtual StringDictionary Headers { get; set; }
 
 #### Property Value
 
- [StringDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringDictionary)
+ [StringDictionary](SuperOffice.WebApi.Data.StringDictionary.md)
 
 ### <a id="SuperOffice_WebApi_Data_Webhook_LastError"></a> LastError
 
@@ -164,11 +164,11 @@ public WebhookNotifyVia? NotifyVia { get; set; }
 
 #### Property Value
 
- [WebhookNotifyVia](/en/api/reference/webapi/SuperOffice.WebApi.Data.WebhookNotifyVia)?
+ [WebhookNotifyVia](SuperOffice.WebApi.Data.WebhookNotifyVia.md)?
 
 #### See Also
 
-[Webhook](/en/api/reference/webapi/SuperOffice.WebApi.Data.Webhook).[NotifyVia\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.Webhook#SuperOffice_WebApi_Data_Webhook_NotifyVia_String)
+[Webhook](SuperOffice.WebApi.Data.Webhook.md).[NotifyVia\_String](SuperOffice.WebApi.Data.Webhook.md\#SuperOffice\_WebApi\_Data\_Webhook\_NotifyVia\_String)
 
 ### <a id="SuperOffice_WebApi_Data_Webhook_NotifyVia_String"></a> NotifyVia\_String
 
@@ -186,7 +186,7 @@ public string NotifyVia_String { get; set; }
 
 #### See Also
 
-[Webhook](/en/api/reference/webapi/SuperOffice.WebApi.Data.Webhook).[NotifyVia](/en/api/reference/webapi/SuperOffice.WebApi.Data.Webhook#SuperOffice_WebApi_Data_Webhook_NotifyVia)
+[Webhook](SuperOffice.WebApi.Data.Webhook.md).[NotifyVia](SuperOffice.WebApi.Data.Webhook.md\#SuperOffice\_WebApi\_Data\_Webhook\_NotifyVia)
 
 ### <a id="SuperOffice_WebApi_Data_Webhook_NotifyWhen"></a> NotifyWhen
 
@@ -200,11 +200,11 @@ public WebhookNotifyWhen? NotifyWhen { get; set; }
 
 #### Property Value
 
- [WebhookNotifyWhen](/en/api/reference/webapi/SuperOffice.WebApi.Data.WebhookNotifyWhen)?
+ [WebhookNotifyWhen](SuperOffice.WebApi.Data.WebhookNotifyWhen.md)?
 
 #### See Also
 
-[Webhook](/en/api/reference/webapi/SuperOffice.WebApi.Data.Webhook).[NotifyWhen\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.Webhook#SuperOffice_WebApi_Data_Webhook_NotifyWhen_String)
+[Webhook](SuperOffice.WebApi.Data.Webhook.md).[NotifyWhen\_String](SuperOffice.WebApi.Data.Webhook.md\#SuperOffice\_WebApi\_Data\_Webhook\_NotifyWhen\_String)
 
 ### <a id="SuperOffice_WebApi_Data_Webhook_NotifyWhen_String"></a> NotifyWhen\_String
 
@@ -222,7 +222,7 @@ public string NotifyWhen_String { get; set; }
 
 #### See Also
 
-[Webhook](/en/api/reference/webapi/SuperOffice.WebApi.Data.Webhook).[NotifyWhen](/en/api/reference/webapi/SuperOffice.WebApi.Data.Webhook#SuperOffice_WebApi_Data_Webhook_NotifyWhen)
+[Webhook](SuperOffice.WebApi.Data.Webhook.md).[NotifyWhen](SuperOffice.WebApi.Data.Webhook.md\#SuperOffice\_WebApi\_Data\_Webhook\_NotifyWhen)
 
 ### <a id="SuperOffice_WebApi_Data_Webhook_Properties"></a> Properties
 
@@ -234,7 +234,7 @@ public virtual StringObjectDictionary Properties { get; set; }
 
 #### Property Value
 
- [StringObjectDictionary](/en/api/reference/webapi/SuperOffice.WebApi.Data.StringObjectDictionary)
+ [StringObjectDictionary](SuperOffice.WebApi.Data.StringObjectDictionary.md)
 
 ### <a id="SuperOffice_WebApi_Data_Webhook_Registered"></a> Registered
 
@@ -258,7 +258,7 @@ public virtual Associate RegisteredAssociate { get; set; }
 
 #### Property Value
 
- [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
+ [Associate](SuperOffice.WebApi.Data.Associate.md)
 
 ### <a id="SuperOffice_WebApi_Data_Webhook_Secret"></a> Secret
 
@@ -284,11 +284,11 @@ public WebhookState? State { get; set; }
 
 #### Property Value
 
- [WebhookState](/en/api/reference/webapi/SuperOffice.WebApi.Data.WebhookState)?
+ [WebhookState](SuperOffice.WebApi.Data.WebhookState.md)?
 
 #### See Also
 
-[Webhook](/en/api/reference/webapi/SuperOffice.WebApi.Data.Webhook).[State\_String](/en/api/reference/webapi/SuperOffice.WebApi.Data.Webhook#SuperOffice_WebApi_Data_Webhook_State_String)
+[Webhook](SuperOffice.WebApi.Data.Webhook.md).[State\_String](SuperOffice.WebApi.Data.Webhook.md\#SuperOffice\_WebApi\_Data\_Webhook\_State\_String)
 
 ### <a id="SuperOffice_WebApi_Data_Webhook_State_String"></a> State\_String
 
@@ -306,7 +306,7 @@ public string State_String { get; set; }
 
 #### See Also
 
-[Webhook](/en/api/reference/webapi/SuperOffice.WebApi.Data.Webhook).[State](/en/api/reference/webapi/SuperOffice.WebApi.Data.Webhook#SuperOffice_WebApi_Data_Webhook_State)
+[Webhook](SuperOffice.WebApi.Data.Webhook.md).[State](SuperOffice.WebApi.Data.Webhook.md\#SuperOffice\_WebApi\_Data\_Webhook\_State)
 
 ### <a id="SuperOffice_WebApi_Data_Webhook_TargetUrl"></a> TargetUrl
 
@@ -378,7 +378,7 @@ public virtual Associate UpdatedAssociate { get; set; }
 
 #### Property Value
 
- [Associate](/en/api/reference/webapi/SuperOffice.WebApi.Data.Associate)
+ [Associate](SuperOffice.WebApi.Data.Associate.md)
 
 ### <a id="SuperOffice_WebApi_Data_Webhook_WebhookId"></a> WebhookId
 
@@ -394,5 +394,5 @@ public virtual int WebhookId { get; set; }
 
 ## See Also
 
-[WebhookAgent](/en/api/reference/webapi/SuperOffice.WebApi.Agents.WebhookAgent)
+[WebhookAgent](SuperOffice.WebApi.Agents.WebhookAgent.md)
 
