@@ -2,9 +2,9 @@
 uid: help-de-connect-your-accounts
 title: Konten verbinden
 description: So verwenden Sie den Assistenten Benutzereinrichtung, um Ihr E-Mail-Konto und Ihre Dokumentenverwaltung mit SuperOffice CRM zu verbinden.
-keywords: ['Benutzereinrichtung', 'E-Mail-Verbindung', 'Dokumentenverwaltung', 'WebTools', 'E-Mail verbinden', 'E-Mail-Konto', 'Assistent', 'persönliche Einstellungen']
+keywords: ['Benutzereinrichtung', 'E-Mail-Verbindung', 'Dokumentenverwaltung', 'WebTools', 'E-Mail verbinden', 'E-Mail-Konto', 'Assistent', 'persönliche Einstellungen', 'Microsoft Graph', 'Administratorzustimmung']
 author: digitaldiina
-date: 09.22.2026
+date: 09.23.2026
 so_version: 12.5
 content_type: howto
 tier: starter
@@ -16,6 +16,7 @@ related:
   - SuperOffice für Outlook installieren: /integrations/superoffice-for-outlook/index
   - SuperOffice Gmail Link installieren: /integrations/gmail-link/index
   - WebTools installieren: /integrations/webtools/install
+  - Microsoft Graph-Administratorzustimmung: /en/online/mail-services/graph/index
 language: de
 ---
 
@@ -32,19 +33,33 @@ Als neuer Benutzer oder beim Einrichten eines neuen Computers sollten Sie Ihr E-
 1. Klicken Sie auf <i class="ph ph-user-circle" aria-label="Persönliche Einstellungen"></i> **Persönliche Einstellungen** oben rechts.
 1. Wählen Sie **Benutzereinrichtung**.
 
-Der Assistent führt Sie durch drei Schritte.
+Der Assistent führt Sie normalerweise durch vier Schritte. Die Anzahl der Schritte, die Sie sehen, kann variieren: Wenn Sie bereits mit einem Microsoft Entra ID-Konto bei SuperOffice angemeldet sind und Ihre Organisation bereits die Zustimmung für SuperOffices E-Mail-Verbindung erteilt hat, verbindet der Assistent Ihr E-Mail-Konto automatisch und springt direkt zum Verbinden Ihrer Dokumentenverwaltung.
 
-## Schritt 1: Übersicht
+## Schritt 1: Erste Schritte
 
-Der erste Bildschirm fasst zusammen, womit der Assistent Ihnen helfen wird. Klicken Sie auf **Weiter**, um fortzufahren.
+Der erste Bildschirm begrüßt Sie namentlich und fasst zusammen, womit der Assistent Ihnen helfen wird. Klicken Sie auf **Los geht's**, um fortzufahren, oder auf **Später**, um dies zu einem anderen Zeitpunkt einzurichten.
 
-![SuperOffice Benutzereinrichtung - Übersicht über den ersten Bildschirm des Assistenten -screenshot][img1]
+![SuperOffice Benutzereinrichtung - Willkommensbildschirm des Assistenten -screenshot][img1]
 
 ## Schritt 2: E-Mail-Konto verbinden
 
-Klicken Sie auf **Verbinden**, und folgen Sie den Aufforderungen zur Validierung Ihrer Anmeldedaten.
+Klicken Sie auf **Verbinden**, geben Sie Ihre E-Mail-Adresse ein, und klicken Sie auf **Weiter**.
 
 ![SuperOffice Benutzereinrichtung - E-Mail-Konto verbinden -screenshot][img2]
+
+![SuperOffice Benutzereinrichtung - E-Mail-Adresse eingeben -screenshot][img2-email]
+
+![SuperOffice Benutzereinrichtung - E-Mail-Adresse eingegeben -screenshot][img2-email-filled]
+
+Melden Sie sich mit Ihren Microsoft 365-Anmeldedaten an. Wenn Ihre Organisation die Multi-Faktor-Authentifizierung (MFA) erfordert, geben Sie den in Ihrer Authenticator-App angezeigten Bestätigungscode ein.
+
+![SuperOffice Benutzereinrichtung - Anmeldung bei Microsoft -screenshot][img2-signin]
+
+![SuperOffice Benutzereinrichtung - MFA-Code eingeben -screenshot][img2-mfa]
+
+Sobald Ihr Konto verbunden ist, wird es mit einem Häkchen angezeigt. Klicken Sie auf **Weiter**, um fortzufahren.
+
+![SuperOffice Benutzereinrichtung - E-Mail-Konto verbunden -screenshot][img2-connected]
 
 Durch die Verbindung Ihres E-Mail-Kontos können Sie E-Mails aus SuperOffice senden und ausgehende Nachrichten automatisch archivieren. Sie können auch Besprechungseinladungen senden und annehmen.
 
@@ -52,7 +67,25 @@ Durch die Verbindung Ihres E-Mail-Kontos können Sie E-Mails aus SuperOffice sen
 Um mit **eingehenden** E-Mails zu arbeiten und SuperOffice-Funktionen direkt in Ihrem E-Mail-Client nutzen zu können, installieren Sie nach Abschluss des Assistenten [SuperOffice für Outlook][3] (Microsoft 365) oder [SuperOffice Gmail Link][4] (Google Workspace).
 </Note>
 
+<Note>
+**Wechseln Sie von Outlook MailLink?** Microsoft stellt die Technologie hinter Outlook MailLink ein, sodass Outlook MailLink nicht mehr verfügbar sein wird. [SuperOffice für Outlook][3] ersetzt es durch ein cloudbasiertes Add-in, das denselben vertrauten Arbeitsablauf beibehält.
+</Note>
+
+![SuperOffice Benutzereinrichtung - Hinweis zum Wechsel von Outlook MailLink -screenshot][img2-maillink]
+
+### Wenn Ihr E-Mail-Konto nicht verbunden werden kann
+
+Wenn Sie kein Microsoft 365-Administrator sind, sehen Sie möglicherweise die Meldung **Need admin approval**. Bitten Sie Ihren Administrator, die Zustimmung für SuperOffices E-Mail-Verbindung zu erteilen, oder teilen Sie den auf dem Bildschirm angezeigten Link direkt mit ihm. Die Schritte, die Ihr Administrator befolgen muss, finden Sie unter [Microsoft Graph-Administratorzustimmung][1].
+
+![SuperOffice Benutzereinrichtung - Meldung zur Administratorgenehmigung -screenshot][img2-admin-approval]
+
+Wenn SuperOffice überhaupt keine Verbindung zu Ihrem E-Mail-Konto herstellen kann, sehen Sie den Fehler **We couldn't connect your email account** mit einem Link, den Sie kopieren und an Ihren IT-Administrator senden können. Dieser Link führt Ihren Administrator durch denselben Zustimmungsprozess, der unter [Microsoft Graph-Administratorzustimmung][1] beschrieben ist.
+
+![SuperOffice Benutzereinrichtung - Fehler bei der Verbindung des E-Mail-Kontos -screenshot][img2-error]
+
 Nach dem Verbinden können Sie außerdem festlegen, ob neue E-Mails, die Sie erstellen, und E-Mail-Adressen, auf die Sie klicken, stattdessen in Ihrem eigenen lokalen E-Mail-Programm geöffnet werden statt im eigenen Dialog von SuperOffice. Aktivieren Sie dies unter [Persönliche Einstellungen > Einstellungen > E-Mail][2] mit der Einstellung **Use local email app for new email**.
+
+Wenn Ihre Organisation kein Microsoft 365 verwendet, oder Sie die Verbindung lieber manuell einrichten möchten, finden Sie unter [Erweiterte Einstellungen konfigurieren][7] die IMAP/SMTP-Einrichtung.
 
 ## Schritt 3: Dokumentenverwaltung verbinden
 
@@ -80,16 +113,35 @@ WebTools mit der SuperOffice-Dokumentenbibliothek ist die Standardeinstellung. I
 
 * **Google Workspace:** Speichert Dokumente in Google Workspace. Sie können Dokumente von jedem Computer aus öffnen, bearbeiten und speichern.
 
+## Schritt 4: Einrichtungsübersicht
+
+Der letzte Bildschirm zeigt den Status Ihrer Einrichtung: ob Ihr E-Mail-Konto verbunden und ob Ihre Dokumentenverwaltung installiert ist. Klicken Sie auf **Schließen**, um abzuschließen, oder auf **Zurück**, um einen vorherigen Schritt zu überprüfen.
+
+![SuperOffice Benutzereinrichtung - Einrichtungsübersicht -screenshot][img4]
+
+Sie können diese Einstellungen jederzeit über **Persönliche Einstellungen** vervollständigen oder aktualisieren.
+
 ## Kalender synchronisieren
 
 Die Kalendersynchronisierung ist nicht Teil des Assistenten. Wenn Sie Termine und Folgeaufgaben zwischen SuperOffice und Ihrem Outlook- oder Google-Kalender synchronisieren möchten, richten Sie [Synchronizer für SuperOffice][8] ein (verfügbar im App Store).
 
+[1]: /en/online/mail-services/graph/index#grant-consent
 [2]: ./preferences
 [3]: /integrations/superoffice-for-outlook/index
 [4]: /integrations/gmail-link/index
 [5]: /integrations/sharepoint-documents/set-up
 [6]: /integrations/g-suite/index
+[7]: /de/email/inbox/learn/setup
 [8]: https://appstore.superoffice.com/infobridge-software-b-v-/synchronizer-for-superoffice
 [img1]: ../../../media/loc/en/learn/superoffice-user-setup-1.png
 [img2]: ../../../media/loc/en/learn/superoffice-user-setup-2-connect-email.png
+[img2-email]: ../../../media/loc/en/learn/superoffice-user-setup-2-email-address.png
+[img2-email-filled]: ../../../media/loc/en/learn/superoffice-user-setup-2-email-address-filled.png
+[img2-signin]: ../../../media/loc/en/learn/superoffice-user-setup-2-signin-password.png
+[img2-mfa]: ../../../media/loc/en/learn/superoffice-user-setup-2-signin-mfa.png
+[img2-connected]: ../../../media/loc/en/learn/superoffice-user-setup-2-connected.png
+[img2-maillink]: ../../../media/loc/en/learn/superoffice-user-setup-2-maillink-retirement.png
+[img2-admin-approval]: ../../../media/loc/en/learn/superoffice-user-setup-2-admin-approval-needed.png
+[img2-error]: ../../../media/loc/en/learn/superoffice-user-setup-2-connection-error.png
 [img3]: ../../../media/loc/en/learn/superoffice-user-setup-3-webtools.png
+[img4]: ../../../media/loc/en/learn/superoffice-user-setup-4-summary.png
