@@ -1,5 +1,4 @@
 ---
-uid: help-sv-work-with-lead-agent
 title: Arbeta med Lead Agent
 description: Granska och godkänn de prospekt Lead Agent hittar, med hjälp av dess flikar Chatt, Historik och Prestanda.
 keywords: ['lead agent', 'prospektrapport', 'AI-agenter']
@@ -7,7 +6,6 @@ author: digitaldiina, Claudia Dias
 date: 10.01.2026
 so_version: 12.5
 content_type: howto
-license: aiplatform
 tier: plus
 pilot: yes
 category: sale
@@ -16,7 +14,7 @@ audience: person
 audience_tooltip: SuperOffice CRM
 related:
   - Lead Agent: /sv/ai/learn/lead-agent
-  - Konfigurera Lead Agent: /sv/ai/admin/set-up-ai-agents#set-up-lead-agent
+  - Konfigurera Lead Agent: /sv/ai/admin/set-up-ai-agents#lead-agent
   - Översikt över leadhantering: /sv/lead/learn/index
 language: sv
 ---
@@ -31,7 +29,7 @@ När Lead Agent har konfigurerats körs den i bakgrunden och tar fram prospekt �
 
 Öppna en instans från **Mina agenter** eller dess kort för att se dess arbetsyta. Längst upp finns tre flikar, och till höger en växel för **Meddela**, en redigeringsknapp och en meny med tre punkter.
 
-| Flik | Vad den används för |
+| Flik | Syfte |
 |---|---|
 | Chatt | Prata med agenten och granska upptäckta leads. |
 | Historik | En detaljerad logg över allt agenten har gjort. Visas endast för ägaren och dess godkännare. |
@@ -43,8 +41,8 @@ När Lead Agent har konfigurerats körs den i bakgrunden och tar fram prospekt �
 
 Fliken **Chatt** organiserar allt i trådar till vänster:
 
-* **Allmän chatt** - ett fritt samtal med agenten. Be den undersöka ett specifikt företag, och se den arbeta sig igenom stegen. Om den hittar en genuin lead på detta sätt skapar den en vanlig godkännandeuppgift för den, precis som en lead som hittas vid den dagliga schemalagda körningen.
-* **Leadtrådar** - varje upptäckt prospekt anländer som en egen tråd, uppkallad efter företaget. Det är här du godkänner eller avvisar leaden.
+* **Allmän chatt**: ett fritt samtal med agenten. Be den undersöka ett specifikt företag, och se den arbeta sig igenom stegen. Om den hittar en genuin lead på detta sätt skapar den en vanlig godkännandeuppgift för den, precis som en lead som hittas vid den dagliga schemalagda körningen.
+* **Leadtrådar**: varje upptäckt prospekt anländer som en egen tråd, uppkallad efter företaget. Det är här du godkänner eller avvisar leaden.
 
 ![Fliken Chatt - Allmän chatt och leadtrådar per företag -screenshot][img2]
 
@@ -66,9 +64,9 @@ Samma väljare är tillgänglig när du **massgodkänner** flera leads samtidigt
 
 ![Lägga till ett godkänt företag i ett statiskt urval -screenshot][img4]
 
-**Godkänn** - en bekräftelse beskriver exakt vad som kommer att hända, till exempel vilka fält som läggs till på en ny företagspost. Bekräfta, och företaget, och eventuella kontakter, sparas i SuperOffice med godkännaren som ägare. Två anteckningar läggs också till på den nya företagsposten: en anteckning för Företagssammanfattning och en anteckning för Produkterbjudanden.
+**Godkänn**: en bekräftelse beskriver exakt vad som kommer att hända, till exempel vilka fält som läggs till på en ny företagspost. Bekräfta, och företaget, och eventuella kontakter, sparas i SuperOffice med godkännaren som ägare. Två anteckningar läggs också till på den nya företagsposten: en anteckning för Företagssammanfattning och en anteckning för Produkterbjudanden.
 
-**Avvisa** - leaden hoppas över och inget sparas.
+**Avvisa**: leaden hoppas över och inget sparas.
 
 ![Godkänna en lead och avvisa en lead -screenshot][img5]
 
@@ -84,13 +82,13 @@ Fliken **Prestanda** visar hur instansen presterar under en period du väljer: b
 
 ## Felsökning
 
-**En lead jag granskade försvann.** En lead som väntar på godkännande har en begränsad livslängd - 30 dagar som standard. När den är inom 5 dagar från att förfalla visas en nedräkningsbanner på dess tråd. Om den inte godkänns eller avvisas i tid förfaller den automatiskt och agenten går vidare; inget sparas i ditt CRM för en förfallen lead.
+**En lead jag granskade försvann.** En lead som väntar på godkännande har en begränsad livslängd: 30 dagar som standard. När den är inom 5 dagar från att förfalla visas en nedräkningsbanner på dess tråd. Om den inte godkänns eller avvisas i tid förfaller den automatiskt och agenten går vidare, och inget sparas i ditt CRM för en förfallen lead.
 
 **Jag avaktiverade instansen och mina väntande leads är borta.** Att avaktivera en instans kasserar alla leads som väntar på godkännande. Godkänn eller avvisa det du behöver först om du vill behålla det.
 
 **Jag kan se inställningarna för en instans men kan inte ändra något.** Du är en godkännare, inte ägaren. Endast instansens ägare kan spara ändringar i dess konfiguration; en godkännare som inte är ägaren kan visa konfigurationen men inte redigera den.
 
-[1]: /sv/ai/admin/set-up-ai-agents#set-up-lead-agent
+[1]: /sv/ai/admin/set-up-ai-agents#lead-agent
 
 [img1]: /media/loc/en/ai/lead-workspace-tabs.png
 [img2]: /media/loc/en/ai/lead-chat-threads.png

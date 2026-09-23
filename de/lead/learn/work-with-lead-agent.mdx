@@ -1,5 +1,4 @@
 ---
-uid: help-de-work-with-lead-agent
 title: Mit Lead Agent arbeiten
 description: Prüfen und genehmigen Sie die von Lead Agent gefundenen Interessenten über dessen Registerkarten Chat, Verlauf und Leistung.
 keywords: ['Lead Agent', 'Interessentenbericht', 'KI-Agenten']
@@ -7,7 +6,6 @@ author: digitaldiina, Claudia Dias
 date: 10.01.2026
 so_version: 12.5
 content_type: howto
-license: aiplatform
 tier: plus
 pilot: yes
 category: sale
@@ -16,7 +14,7 @@ audience: person
 audience_tooltip: SuperOffice CRM
 related:
   - Lead Agent: /de/ai/learn/lead-agent
-  - Lead Agent einrichten: /de/ai/admin/set-up-ai-agents#set-up-lead-agent
+  - Lead Agent einrichten: /de/ai/admin/set-up-ai-agents#lead-agent
   - Übersicht Lead-Management: /de/lead/learn/index
 language: de
 ---
@@ -31,7 +29,7 @@ Sobald Lead Agent eingerichtet ist, läuft er im Hintergrund und legt Ihnen Inte
 
 Öffnen Sie eine Instanz über **Meine Agenten** oder ihre Karte, um ihren Arbeitsbereich zu sehen. Oben befinden sich drei Registerkarten, und rechts ein **Benachrichtigen**-Schalter, eine Bearbeiten-Schaltfläche und ein Drei-Punkte-Menü.
 
-| Registerkarte | Wofür sie dient |
+| Registerkarte | Zweck |
 |---|---|
 | Chat | Mit dem Agenten sprechen und gefundene Leads prüfen. |
 | Verlauf | Ein detailliertes Protokoll aller Aktivitäten des Agenten. Nur dem Eigentümer und dessen Genehmigenden angezeigt. |
@@ -43,10 +41,10 @@ Sobald Lead Agent eingerichtet ist, läuft er im Hintergrund und legt Ihnen Inte
 
 Die Registerkarte **Chat** organisiert alles in Threads auf der linken Seite:
 
-* **Allgemeiner Chat** - eine freie Unterhaltung mit dem Agenten. Bitten Sie ihn, eine bestimmte Firma zu recherchieren, und beobachten Sie, wie er die Schritte durcharbeitet. Findet er auf diese Weise einen echten Lead, legt er dafür eine normale Genehmigungsaufgabe an, genau wie bei einem im täglichen geplanten Lauf gefundenen Lead.
-* **Lead-Threads** - jeder gefundene Interessent erscheint als eigener Thread, benannt nach der Firma. Hier genehmigen oder lehnen Sie den Lead ab.
+* **Allgemeiner Chat**: eine freie Unterhaltung mit dem Agenten. Bitten Sie ihn, eine bestimmte Firma zu recherchieren, und beobachten Sie, wie er die Schritte durcharbeitet. Findet er auf diese Weise einen echten Lead, legt er dafür eine normale Genehmigungsaufgabe an, genau wie bei einem im täglichen geplanten Lauf gefundenen Lead.
+* **Lead-Threads**: jeder gefundene Interessent erscheint als eigener Thread, benannt nach der Firma. Hier genehmigen oder lehnen Sie den Lead ab.
 
-![Die Registerkarte Chat - Allgemeiner Chat und firmenbezogene Lead-Threads -screenshot][img2]
+![Die Registerkarte Chat: Allgemeiner Chat und firmenbezogene Lead-Threads -screenshot][img2]
 
 ### Der Interessentenbericht
 
@@ -66,9 +64,9 @@ Dieselbe Auswahl steht auch beim **Massengenehmigen** mehrerer Leads gleichzeiti
 
 ![Eine genehmigte Firma zu einer statischen Selektion hinzufügen -screenshot][img4]
 
-**Genehmigen** - eine Bestätigung listet genau auf, was passieren wird, zum Beispiel die Felder, die einem neuen Firmendatensatz hinzugefügt werden. Bestätigen Sie, und die Firma sowie alle Kontakte werden mit dem Genehmigenden als Eigentümer in SuperOffice gespeichert. Dem neuen Firmendatensatz werden außerdem zwei Notizen hinzugefügt: eine Firmenzusammenfassung-Notiz und eine Produktangebote-Notiz.
+**Genehmigen**: eine Bestätigung listet genau auf, was passieren wird, zum Beispiel die Felder, die einem neuen Firmendatensatz hinzugefügt werden. Bestätigen Sie, und die Firma sowie alle Kontakte werden mit dem Genehmigenden als Eigentümer in SuperOffice gespeichert. Dem neuen Firmendatensatz werden außerdem zwei Notizen hinzugefügt: eine Firmenzusammenfassung-Notiz und eine Produktangebote-Notiz.
 
-**Ablehnen** - der Lead wird übersprungen und nichts wird gespeichert.
+**Ablehnen**: der Lead wird übersprungen und nichts wird gespeichert.
 
 ![Einen Lead genehmigen und einen Lead ablehnen -screenshot][img5]
 
@@ -84,13 +82,13 @@ Die Registerkarte **Leistung** zeigt, wie die Instanz über einen von Ihnen gew�
 
 ## Fehlerbehebung
 
-**Ein Lead, den ich geprüft habe, ist verschwunden.** Ein auf Genehmigung wartender Lead hat eine begrenzte Lebensdauer - standardmäßig 30 Tage. Sobald er innerhalb von 5 Tagen vor Ablauf ist, erscheint ein Countdown-Banner auf seinem Thread. Wird er nicht rechtzeitig genehmigt oder abgelehnt, läuft er automatisch ab und der Agent macht weiter; für einen abgelaufenen Lead wird nichts in Ihrem CRM gespeichert.
+**Ein Lead, den ich geprüft habe, ist verschwunden.** Ein auf Genehmigung wartender Lead hat eine begrenzte Lebensdauer: standardmäßig 30 Tage. Sobald er innerhalb von 5 Tagen vor Ablauf ist, erscheint ein Countdown-Banner auf seinem Thread. Wird er nicht rechtzeitig genehmigt oder abgelehnt, läuft er automatisch ab und der Agent macht weiter; für einen abgelaufenen Lead wird nichts in Ihrem CRM gespeichert.
 
 **Ich habe die Instanz deaktiviert, und meine ausstehenden Leads sind weg.** Das Deaktivieren einer Instanz verwirft alle auf Genehmigung wartenden Leads. Genehmigen oder lehnen Sie zuerst ab, was Sie behalten möchten.
 
 **Ich sehe die Einstellungen einer Instanz, kann aber nichts ändern.** Sie sind Genehmigender, nicht Eigentümer. Nur der Eigentümer der Instanz kann Änderungen an ihrer Einrichtung speichern; ein Genehmigender, der nicht der Eigentümer ist, kann die Konfiguration ansehen, aber nicht bearbeiten.
 
-[1]: /de/ai/admin/set-up-ai-agents#set-up-lead-agent
+[1]: /de/ai/admin/set-up-ai-agents#lead-agent
 
 [img1]: /media/loc/en/ai/lead-workspace-tabs.png
 [img2]: /media/loc/en/ai/lead-chat-threads.png

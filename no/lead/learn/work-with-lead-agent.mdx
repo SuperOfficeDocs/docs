@@ -1,5 +1,4 @@
 ---
-uid: help-no-work-with-lead-agent
 title: Arbeid med Lead Agent
 description: Gjennomgå og godkjenn prospektene Lead Agent finner, ved hjelp av fanene Chat, Historikk og Ytelse.
 keywords: ['lead agent', 'prospektrapport', 'AI agents']
@@ -7,7 +6,6 @@ author: digitaldiina, Claudia Dias
 date: 10.01.2026
 so_version: 12.5
 content_type: howto
-license: aiplatform
 tier: plus
 pilot: yes
 category: sale
@@ -16,7 +14,7 @@ audience: person
 audience_tooltip: SuperOffice CRM
 related:
   - Lead Agent: /no/ai/learn/lead-agent
-  - Sett opp Lead Agent: /no/ai/admin/set-up-ai-agents#set-up-lead-agent
+  - Sett opp Lead Agent: /no/ai/admin/set-up-ai-agents#lead-agent
   - Oversikt over leadhåndtering: /no/lead/learn/index
 language: no
 ---
@@ -31,7 +29,7 @@ Når Lead Agent er satt opp, kjører den i bakgrunnen og bringer prospekter til 
 
 Åpne en instans fra **Mine agenter** eller kortet dens for å se arbeidsområdet. Øverst er det tre faner, og til høyre en **Varsle**-vekslebryter, en rediger-knapp og en tre-punkts-meny.
 
-| Fane | Hva den er til |
+| Fane | Formål |
 |---|---|
 | Chat | Snakk med agenten og gjennomgå oppdagede leads. |
 | Historikk | En detaljert logg over alt agenten har gjort. Vises bare til eieren og godkjennerne. |
@@ -43,10 +41,10 @@ Når Lead Agent er satt opp, kjører den i bakgrunnen og bringer prospekter til 
 
 **Chat**-fanen organiserer alt i tråder til venstre:
 
-* **Generell chat** - en fri samtale med agenten. Be den se nærmere på et bestemt firma, og se den jobbe seg gjennom trinnene. Hvis den finner en reell lead på denne måten, oppretter den en vanlig godkjenningsoppgave for den, akkurat som en lead funnet i den daglige planlagte kjøringen.
-* **Lead-tråder** - hvert oppdagede prospekt kommer som sin egen tråd, oppkalt etter firmaet. Her godkjenner eller avviser du leaden.
+* **Generell chat**: en fri samtale med agenten. Be den se nærmere på et bestemt firma, og se den jobbe seg gjennom trinnene. Hvis den finner en reell lead på denne måten, oppretter den en vanlig godkjenningsoppgave for den, akkurat som en lead funnet i den daglige planlagte kjøringen.
+* **Lead-tråder**: hvert oppdagede prospekt kommer som sin egen tråd, oppkalt etter firmaet. Her godkjenner eller avviser du leaden.
 
-![Chat-fanen - Generell chat og lead-tråder per firma -screenshot][img2]
+![Chat-fanen: Generell chat og lead-tråder per firma -screenshot][img2]
 
 ### Prospektrapporten
 
@@ -66,9 +64,9 @@ Den samme velgeren er tilgjengelig ved **massegodkjenning** av flere leads samti
 
 ![Legge til et godkjent firma i et statisk utvalg -screenshot][img4]
 
-**Godkjenn** - en bekreftelse spesifiserer nøyaktig hva som vil skje, for eksempel feltene som legges til i en ny firmapost. Bekreft, og firmaet, og eventuelle kontaktpersoner, lagres i SuperOffice med godkjenneren som eier. To notater legges også til den nye firmaposten: et Firmasammendrag-notat og et Produkttilbud-notat.
+**Godkjenn**: en bekreftelse spesifiserer nøyaktig hva som vil skje, for eksempel feltene som legges til i en ny firmapost. Bekreft, og firmaet, og eventuelle kontaktpersoner, lagres i SuperOffice med godkjenneren som eier. To notater legges også til den nye firmaposten: et Firmasammendrag-notat og et Produkttilbud-notat.
 
-**Avvis** - leaden hoppes over og ingenting lagres.
+**Avvis**: leaden hoppes over og ingenting lagres.
 
 ![Godkjenne en lead og avvise en lead -screenshot][img5]
 
@@ -84,13 +82,13 @@ Den samme velgeren er tilgjengelig ved **massegodkjenning** av flere leads samti
 
 ## Feilsøking
 
-**En lead jeg gjennomgikk, forsvant.** En lead som venter på godkjenning, har en begrenset levetid - 30 dager som standard. Når den er innenfor 5 dager fra å utløpe, vises et nedtellingsbanner på tråden. Hvis den ikke godkjennes eller avvises i tide, utløper den automatisk og agenten går videre; ingenting lagres i CRM-en din for en utløpt lead.
+**En lead jeg gjennomgikk, forsvant.** En lead som venter på godkjenning, har en begrenset levetid: 30 dager som standard. Når den er innenfor 5 dager fra å utløpe, vises et nedtellingsbanner på tråden. Hvis den ikke godkjennes eller avvises i tide, utløper den automatisk og agenten går videre; ingenting lagres i CRM-en din for en utløpt lead.
 
 **Jeg deaktiverte instansen, og de ventende leadene mine er borte.** Å deaktivere en instans forkaster alle leads som venter på godkjenning. Godkjenn eller avvis det du trenger først, hvis du vil beholde det.
 
 **Jeg kan se innstillingene til en instans, men kan ikke endre noe.** Du er en godkjenner, ikke eieren. Bare instansens eier kan lagre endringer i oppsettet; en godkjenner som ikke er eieren, kan se konfigurasjonen, men ikke redigere den.
 
-[1]: /no/ai/admin/set-up-ai-agents#set-up-lead-agent
+[1]: /no/ai/admin/set-up-ai-agents#lead-agent
 
 [img1]: /media/loc/en/ai/lead-workspace-tabs.png
 [img2]: /media/loc/en/ai/lead-chat-threads.png
