@@ -41,7 +41,7 @@ När Lead Agent har konfigurerats körs den i bakgrunden och tar fram prospekt �
 
 Fliken **Chatt** organiserar allt i trådar till vänster:
 
-* **Allmän chatt**: ett fritt samtal med agenten. Be den undersöka ett specifikt företag, och se den arbeta sig igenom stegen. Om den hittar en genuin lead på detta sätt skapar den en vanlig godkännandeuppgift för den, precis som en lead som hittas vid den dagliga schemalagda körningen.
+* **Allmän chatt**: ett fritt samtal med agenten. Be den undersöka ett specifikt företag och se den arbeta sig igenom stegen. En genuin lead som hittas på detta sätt skapar en vanlig godkännandeuppgift, precis som en lead som hittas vid den dagliga körningen.
 * **Leadtrådar**: varje upptäckt prospekt anländer som en egen tråd, uppkallad efter företaget. Det är här du godkänner eller avvisar leaden.
 
 ![Fliken Chatt - Allmän chatt och leadtrådar per företag -screenshot][img2]
@@ -50,7 +50,7 @@ Fliken **Chatt** organiserar allt i trådar till vänster:
 
 Att öppna en leadtråd visar agentens prospektrapport. Den öppnas hopfälld till det viktigaste: ett matchningsbetyg, källorna den använde och viktiga nyckeltal.
 
-Välj **Expandera rapport** för att se hela texten: en företagssammanfattning, företagsposten som skulle sparas (namn, verksamhet, adress, land, telefon, e-post, webbplats och eventuella hittade kontakter), och varför det är en bra match, med källhänvisningar.
+Välj **Expandera rapport** för hela texten: en företagssammanfattning, posten som ska sparas (namn, verksamhet, adress, land, telefon, e-post, webbplats och eventuella hittade kontakter), och varför det är en bra match, med källhänvisningar.
 
 Välj dokumentikonen för att ladda ner rapporten som en PDF, eller **Fäll ihop rapport** för att gå tillbaka till sammanfattningsvyn.
 
@@ -58,13 +58,13 @@ Välj dokumentikonen för att ladda ner rapporten som en PDF, eller **Fäll ihop
 
 ### Godkänn eller avvisa
 
-Ovanför knappen **Godkänn** finns ett fält, **Välj eller skapa ett statiskt urval**, där du valfritt kan välja ett befintligt statiskt SuperOffice-urval, eller skapa ett direkt. Om du väljer eller skapar ett urval innan du godkänner läggs företaget, och eventuella kontakter, till i det i samma stund du godkänner.
+Ovanför knappen **Godkänn** finns fältet **Välj eller skapa ett statiskt urval**, där du kan välja ett befintligt urval eller skapa ett direkt. Att välja ett innan du godkänner lägger till företaget, och eventuella kontakter, i det i samma stund du godkänner.
 
-Samma väljare är tillgänglig när du **massgodkänner** flera leads samtidigt: håll ner Ctrl/Cmd för att välja flera väntande leads, och godkänn eller avvisa dem tillsammans. Välj ett urval en gång så gäller det för alla företag som godkänns i den omgången.
+Samma väljare fungerar för **massgodkännande** av flera leads: håll ner Ctrl/Cmd för att välja flera väntande leads, och godkänn eller avvisa dem tillsammans. Det valda urvalet gäller för alla företag i den omgången.
 
 ![Lägga till ett godkänt företag i ett statiskt urval -screenshot][img4]
 
-**Godkänn**: en bekräftelse beskriver exakt vad som kommer att hända, till exempel vilka fält som läggs till på en ny företagspost. Bekräfta, och företaget, och eventuella kontakter, sparas i SuperOffice med godkännaren som ägare. Två anteckningar läggs också till på den nya företagsposten: en anteckning för Företagssammanfattning och en anteckning för Produkterbjudanden.
+**Godkänn**: en bekräftelse beskriver exakt vad som händer, till exempel vilka fält en ny företagspost får. Bekräfta för att spara företaget, och eventuella kontakter, i SuperOffice med godkännaren som ägare. Två anteckningar läggs också till: en anteckning för Företagssammanfattning och en anteckning för Produkterbjudanden.
 
 **Avvisa**: leaden hoppas över och inget sparas.
 
@@ -82,11 +82,11 @@ Fliken **Prestanda** visar hur instansen presterar under en period du väljer: b
 
 ## Felsökning
 
-**En lead jag granskade försvann.** En lead som väntar på godkännande har en begränsad livslängd: 30 dagar som standard. När den är inom 5 dagar från att förfalla visas en nedräkningsbanner på dess tråd. Om den inte godkänns eller avvisas i tid förfaller den automatiskt och agenten går vidare, och inget sparas i ditt CRM för en förfallen lead.
+**En lead jag granskade försvann.** En lead som väntar på godkännande har en begränsad livslängd: 30 dagar som standard. En nedräkningsbanner visas på dess tråd när den är inom 5 dagar från att förfalla. Om den inte godkänns eller avvisas i tid förfaller den, och inget sparas i ditt CRM.
 
 **Jag avaktiverade instansen och mina väntande leads är borta.** Att avaktivera en instans kasserar alla leads som väntar på godkännande. Godkänn eller avvisa det du behöver först om du vill behålla det.
 
-**Jag kan se inställningarna för en instans men kan inte ändra något.** Du är en godkännare, inte ägaren. Endast instansens ägare kan spara ändringar i dess konfiguration; en godkännare som inte är ägaren kan visa konfigurationen men inte redigera den.
+**Jag kan se inställningarna för en instans men kan inte ändra något.** Du är en godkännare, inte ägaren. Endast instansens ägare kan spara ändringar i dess konfiguration; en godkännare som inte är ägaren kan visa men inte redigera den.
 
 [1]: /sv/ai/admin/set-up-ai-agents#lead-agent
 

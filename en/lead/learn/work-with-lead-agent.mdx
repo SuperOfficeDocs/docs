@@ -23,7 +23,7 @@ language: en
 Lead Agent is coming soon. This page describes a feature that is not generally available yet.
 </Note>
 
-Once Lead Agent is set up, it runs in the background and brings prospects to you for review. This page covers reviewing and approving what it finds. For setup, see [Set up Lead Agent][1].
+Once Lead Agent is set up, it runs in the background and brings prospects to you for review. This page covers reviewing and approving what it finds. For set-up, see [Set up Lead Agent][1].
 
 ## The workspace: three tabs
 
@@ -41,7 +41,7 @@ Open an instance from **My agents** or its card to see its workspace. Across the
 
 The **Chat** tab organizes everything into threads on the left:
 
-* **General chat**: a free conversation with the agent. Ask it to look into a specific company, and watch it work through the steps. If it finds a genuine lead this way, it raises a normal approval task for it, exactly like a lead found on the daily scheduled run.
+* **General chat**: a free conversation with the agent. Ask it to look into a specific company and watch it work through the steps. A genuine lead found this way raises a normal approval task, just like one found on the daily run.
 * **Lead threads**: each discovered prospect arrives as its own thread, named after the company. This is where you approve or reject the lead.
 
 ![The Chat tab: General chat and per-company lead threads -screenshot][img2]
@@ -50,7 +50,7 @@ The **Chat** tab organizes everything into threads on the left:
 
 Opening a lead thread shows the agent's prospect report. It opens collapsed to the essentials: a fit rating, the sources it used, and key stats.
 
-Select **Expand report** to see the full write-up: a company summary, the company record that would be saved (name, business, address, country, phone, email, website, and any contacts found), and why it is a good fit, citing its sources.
+Select **Expand report** for the full write-up: a company summary, the record to be saved (name, business, address, country, phone, email, website, and any contacts found), and why it is a good fit, with sources cited.
 
 Select the document icon to download the report as a PDF, or **Collapse report** to go back to the summary view.
 
@@ -58,13 +58,13 @@ Select the document icon to download the report as a PDF, or **Collapse report**
 
 ### Approve or reject
 
-Above the **Approve** button, a **Choose or create a static selection** field lets you optionally pick an existing SuperOffice static selection, or create one on the fly. If you pick or create a selection before approving, the company, and any contacts, are added to it the moment you approve.
+Above the **Approve** button, a **Choose or create a static selection** field lets you pick an existing selection or create one on the fly. Choosing one before approving adds the company, and any contacts, to it the moment you approve.
 
-The same picker is available when **bulk-approving** several leads at once. Hold Ctrl/Cmd to select multiple pending leads, then approve or reject them together. Choose a selection once and it applies to every company approved in that batch.
+The same picker works for **bulk-approving** several leads: hold Ctrl/Cmd to select multiple pending leads, then approve or reject them together. The chosen selection applies to every company in that batch.
 
 ![Adding an approved company to a static selection -screenshot][img4]
 
-**Approve**: a confirmation spells out exactly what will happen, for example the fields that will be added to a new company record. Confirm, and the company, and any contacts, are saved to SuperOffice with the approver as owner. Two notes are also added to the new company record: a Company Summary note and a Product Offerings note.
+**Approve**: a confirmation spells out exactly what happens, for example which fields a new company record will get. Confirm to save the company, and any contacts, to SuperOffice with the approver as owner. Two notes are added too: a Company Summary note and a Product Offerings note.
 
 **Reject**: the lead is skipped and nothing is saved.
 
@@ -72,7 +72,7 @@ The same picker is available when **bulk-approving** several leads at once. Hold
 
 ## History and Performance
 
-The **History** tab is a detailed log of everything the agent has done: companies processed, ratings, reports sent for approval, prospects saved, and any items skipped, with the reason. Use **Filter** to narrow it down by date range.
+The **History** tab is a detailed log of everything the agent has done: companies processed, ratings, reports sent for approval, prospects saved, and any items skipped, with the reason why. Use **Filter** to narrow it down by date range.
 
 ![The History tab and its period filter -screenshot][img6]
 
@@ -82,11 +82,11 @@ The **Performance** tab shows how the instance is performing over a period you c
 
 ## Troubleshooting
 
-**A lead I was reviewing disappeared.** A lead awaiting approval has a limited lifetime: 30 days by default. Once it is within 5 days of expiring, a countdown banner appears on its thread. If it is not approved or rejected in time, it expires automatically and the agent moves on, and nothing is saved to your CRM for an expired lead.
+**A lead I was reviewing disappeared.** A lead awaiting approval has a limited lifetime: 30 days by default. A countdown banner appears once it is within 5 days of expiring. If it is not approved or rejected in time, it expires and nothing is saved to your CRM.
 
 **I deactivated the instance and my pending leads are gone.** Deactivating an instance discards any leads awaiting approval. Approve or reject what you need first if you want to keep it.
 
-**I can see an instance's settings but cannot change anything.** You are an approver, not the owner. Only the instance's owner can save changes to its setup; an approver who is not the owner can view the configuration but not edit it.
+**I can see an instance's settings but cannot change anything.** You are an approver, not the owner. Only the instance's owner can save changes to its set-up; an approver who is not the owner can view but not edit it.
 
 [1]: /en/ai/admin/set-up-ai-agents#lead-agent
 

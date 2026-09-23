@@ -25,28 +25,26 @@ language: no
 SuperOffices AI-agenter kommer snart. Denne siden beskriver oppsettstrinn for en funksjon som ennå ikke er allment tilgjengelig.
 </Note>
 
-SuperOffices AI-agenter arbeider i bakgrunnen og foreslår resultater som en person må godkjenne før noe endres i SuperOffice. Hver agent åpnes, aktiveres og administreres på samme måte. Denne siden dekker disse felles trinnene én gang, og deretter en seksjon per agent for det som er spesifikt for å sette den opp.
+SuperOffices AI-agenter arbeider i bakgrunnen og foreslår resultater som en person må godkjenne. Hver agent åpnes, aktiveres og administreres på samme måte. Denne siden dekker disse felles trinnene én gang, og deretter en seksjon per agent for oppsettet.
 
-## Åpne Agenter-området
+Se [Åpne Agenter-området][open-agents-area] for innloggingstrinnene. **Agenter**-ikonet vises først når AI-funksjoner er aktivert, nedenfor.
 
-1. Logg inn i SuperOffice CRM og velg **Agenter**-ikonet i Navigator.
-1. Velg **Logg inn** for å åpne Agenter-området.
+## Aktiver AI-funksjoner
 
-    ![Åpne Agenter-området: velg Agenter-ikonet, deretter Logg inn -screenshot][img1]
+**Agenter**-ikonet vises i Navigator bare når **Aktiver AI-funksjoner i SuperOffice** er satt til **Ja** i globale CRM-innstillinger.
 
-<Tip>
-Ser du ikke **Agenter** i Navigator? Ikonet vises bare når **Aktiver AI-funksjoner i SuperOffice** er satt til **Ja** i globale CRM-innstillinger. Gå til **Innstillinger og vedlikehold** > **Innstillinger** > **Globale innstillinger** > **AI** > **Aktiver AI-funksjoner i SuperOffice**.
-</Tip>
+1. Gå til **Innstillinger og vedlikehold** > **Innstillinger** > **Globale innstillinger** > **AI**.
+1. Sett **Aktiver AI-funksjoner i SuperOffice** til **Ja**.
 
 ![Aktiver AI-funksjoner i SuperOffice må være satt til Ja -screenshot][img2]
 
 ## Finn og aktiver en agent
 
-**Agenter**-siden viser et startsett med agentkort. For å se alle agentene som er inkludert i abonnementet ditt:
+**Agenter**-siden viser et startsett med agentkort. For å se alle agentene i abonnementet ditt:
 
 1. Velg **Bla gjennom agenter** øverst til høyre på **Agenter**-siden.
 1. Bruk søkefeltet eller kategorifiltrene for å finne agenten du vil ha.
-1. Velg **Aktiver** for å gå rett inn i denne agentens oppsettveiviser og opprette din første **instans**: én konfigurert, kjørende kopi av agenten.
+1. Velg **Aktiver** for å åpne denne agentens oppsettveiviser og opprette din første **instans**: én konfigurert, kjørende kopi av agenten.
 
 ![Standardkortene på Agenter-siden og skuffen Bla gjennom agenter -screenshot][img3]
 
@@ -54,12 +52,12 @@ Ser du ikke **Agenter** i Navigator? Ikonet vises bare når **Aktiver AI-funksjo
 **Bla gjennom agenter** viser bare agenter som er inkludert i abonnementsnivået ditt. Hvis en agent du forventer ikke er listet, kontakt SuperOffice-administratoren eller -partneren din.
 </Note>
 
-Når en agent har minst én instans, viser agentkortet en **N aktive**-lenke i stedet for **Aktiver**. Velg den for å se agentens instanser, gruppert i Aktive og Inaktive, og hoppe rett inn i hvilken som helst av dem. For agenter som tillater mer enn én instans, blir en **+ Ny instans**-knapp værende ved siden av lenken, slik at du kan legge til en ny når som helst.
+Når en agent har en instans, viser agentkortet en **N aktive**-lenke i stedet for **Aktiver**. Velg den for å se agentens instanser, gruppert i Aktive og Inaktive, og åpne hvilken som helst av dem. Agenter som tillater mer enn én instans, viser også en **+ Ny instans**-knapp, slik at du kan legge til en ny når som helst.
 
 ![Instans-popoveren på et agentkort -screenshot][img4]
 
 <Note>
-**Hvor mange instanser kan jeg opprette?** Lead Agent tillater opptil 3 instanser totalt, aktive og inaktive kombinert. Data Quality Agent, Duplicate Agent og Sales Assistant Agent tillater bare 1 instans per bruker. Grensen teller inaktive instanser også: å deaktivere en frigjør ikke en plass, bare å slette den gjør det.
+Se [Agentinstanser][agent-instances] for hvor mange instanser hver agent tillater.
 </Note>
 
 ![Bla gjennom agenter beholder et + Ny instans-alternativ for agenter som tillater mer enn én -screenshot][img5]
@@ -68,18 +66,18 @@ Når en agent har minst én instans, viser agentkortet en **N aktive**-lenke i s
 
 Bare instansens eier (den som opprettet den) kan redigere innstillingene, aktivere eller deaktivere den, eller slette den.
 
-* **Rediger innstillinger**: velg rediger-knappen (blyanten) i instansens header for å åpne den samme trinnvise dialogen som brukes ved oppsett. Endringer gjelder fra neste kjøring.
+* **Rediger innstillinger**: velg rediger-knappen (blyanten) i instansens header for å åpne samme oppsettdialog. Endringer gjelder fra neste kjøring.
 
     ![Redigeringsdialogen slik en godkjenner ser den (skrivebeskyttet), og slik eieren ser den (redigerbar) -screenshot][img6]
 
-* **Varsle**: hver bruker som kan se en instans, har sin egen **Varsle**-bjelle-vekslebryter i instansens header. Å dempe den påvirker bare den personen; instansen fortsetter å kjøre for alle andre.
+* **Varsle**: hver bruker med tilgang til instansen, har sin egen **Varsle**-bjelle-vekslebryter. Å dempe den påvirker bare den personen. Instansen fortsetter å kjøre for alle andre.
 
     ![Den brukerspesifikke Varsle-vekslebryteren -screenshot][img7]
 
 * **Aktiver eller deaktiver**: bruk **Aktiv**-vekslebryteren i instansens tre-punkts-meny.
 
     <Warning>
-    Å deaktivere en instans mens oppgaver venter på gjennomgang, forkaster alle av dem. Dette kan ikke angres.
+    Å deaktivere en instans forkaster alle oppgaver som venter på gjennomgang. Dette kan ikke angres.
     </Warning>
 
     ![Deaktivering fra tre-punkts-menyen, med advarselen om ventende godkjenninger -screenshot][img8]
@@ -87,7 +85,7 @@ Bare instansens eier (den som opprettet den) kan redigere innstillingene, aktive
 * **Slett**: tilgjengelig når en instans er deaktivert, fra samme tre-punkts-meny.
 
     <Danger>
-    Å slette en instans er permanent. All data for den instansen fjernes.
+    Å slette en instans er permanent og fjerner all data for den.
     </Danger>
 
     ![Sletting av en instans fra tre-punkts-menyen og bekreftelsen -screenshot][img9]
@@ -111,36 +109,36 @@ Lead Agents oppsettveiviser har 4 obligatoriske trinn:
 
 * **Navn**: identifiserer instansen; det må være unikt og kan ikke endres etter aktivering.
 * **Beskrivelse**: forhåndsutfylt med et foreslått sammendrag; rediger den hvis du ønsker noe annet.
-* **Land**: standardverdien er organisasjonens hjemland. Den bestemmer både hvilke foretaksregistre agenten søker i, og hvilket land leadene skannes fra som standard.
+* **Land**: standardverdien er organisasjonens hjemland, og bestemmer både hvilke registre agenten søker i, og hvilket land den skanner som standard.
 * **Rapporteringsspråk**: språket agenten skriver rapportene og chattesvarene sine på.
-* **Tidsplan**: agenten kjører **Daglig**, automatisk én gang om dagen på et systemtildelt tidspunkt.
+* **Tidsplan**: agenten kjører **Daglig**, én gang om dagen på et systemtildelt tidspunkt.
 * **Maks oppgaver per dag**: setter et tak på hvor mange godkjenningsoppgaver agenten oppretter hver dag (1, 2, 5, 10, 15, 20, 25 eller 30; standard 10), slik at gjennomgangsvolumet holdes håndterbart.
-* **Legg til kontaktpersoner**: når dette er på, henter agenten også kontaktpersoner knyttet til hver lead, inkludert e-post- og telefonopplysninger. Når det er av, jobber den bare på firmanivå.
+* **Legg til kontaktpersoner**: når dette er på, finner agenten også kontaktpersoner for hver lead, med e-post- og telefonopplysninger. Når det er av, jobber den bare på firmanivå.
 
 <Note>
-**Den ideelle kundeprofilens lokasjon vinner over Land.** **Land** du velger her, er bare standardverdien. Hvis du for eksempel velger Tyskland, men angir Frankrike i den ideelle kundeprofilen din, søker agenten i franske foretaksregistre og skanner franske leads.
+**Den ideelle kundeprofilens lokasjon vinner over Land.** **Land** du velger, er bare en standardverdi. Å velge Tyskland, men angi Frankrike i profilen din, får for eksempel agenten til å søke i franske registre og skanne franske leads.
 </Note>
 
 ![Lead Agents oppsettveiviser, Generelle innstillinger -screenshot][img11]
 
 ### 2. Ideell kunde
 
-Dette definerer hvem som regnes som en god lead, og hvordan agenten skal opptre.
+Dette definerer hva som regnes som en god lead, og hvordan agenten skal opptre.
 
 **Instruksjoner**: beskriv i vanlig språk kundene du ønsker deg, og hvordan agenten skal jobbe. Vær konkret, for eksempel: *Fokuser på firmaer som viser vekstsignaler, som nylig finansiering, nye kontorer eller ansettelser.*
 
 <Tip>
-Vær konkret om hva som betyr noe, som bransje, størrelse og region, og ta med diskvalifiserende kriterier, som «ikke offentlig sektor». Du kan justere dette når som helst. Endringer gjelder fremtidige kjøringer.
+Ta med det som betyr noe, som bransje, størrelse og region, pluss diskvalifiserende kriterier, som «ikke offentlig sektor». Juster det når som helst; endringer gjelder fremtidige kjøringer.
 </Tip>
 
 ![Definere din ideelle kunde -screenshot][img12]
 
 ### 3. Kilder
 
-* **Nyhetskilder**: offentlige kilder agenten skanner for leads og kjøpssignaler. Legg til hver med en etikett og en nettadresse.
+* **Nyhetskilder**: offentlige kilder agenten skanner for kjøpssignaler. Legg til hver med en etikett og nettadresse.
 * **Berikelseskilder**: brukes til å verifisere og berike hver lead:
   * **Innebygde kilder**: foretaksregistre valgt automatisk for landet ditt, for eksempel Brønnøysundregistrene for Norge eller Northdata for Tyskland.
-  * **Leadfeeder**: en B2B-firmadatatjeneste som brukes til å berike oppdagede leads og prioritere dem mer presist. Den er på som standard for nye instanser; slå den av hvis du heller vil stole på web-skraping alene.
+  * **Leadfeeder**: en B2B-firmadatatjeneste som beriker og prioriterer oppdagede leads. På som standard for nye instanser; slå den av for å stole på web-skraping alene.
 
 ![Kilder-trinnet, med berikelseskilder inkludert Leadfeeder -screenshot][img13]
 
@@ -163,7 +161,9 @@ Valget mellom **Førstemann til mølla** og **Round-robin** settes når du oppre
 
 Velg **Lagre** på det siste trinnet for å aktivere instansen.
 
-[img1]: /media/loc/en/ai/open-agents-area.png
+[open-agents-area]: /no/ai/learn/index#open-the-agents-area
+[agent-instances]: /no/ai/learn/index#agent-instances
+
 [img2]: /media/loc/en/ai/enable-ai-functions.png
 [img3]: /media/loc/en/ai/browse-agents.png
 [img4]: /media/loc/en/ai/instances-popover.png

@@ -25,28 +25,26 @@ language: sv
 SuperOffice AI-agenter lanseras snart. Den här sidan beskriver konfigurationssteg för en funktion som ännu inte är allmänt tillgänglig.
 </Note>
 
-SuperOffice AI-agenter arbetar i bakgrunden och föreslår resultat som en person godkänner innan något ändras i SuperOffice. Varje agent öppnas, aktiveras och hanteras på samma sätt. Den här sidan går igenom dessa gemensamma steg en gång, och sedan ett avsnitt per agent för det som är specifikt för att konfigurera den.
+SuperOffice AI-agenter arbetar i bakgrunden och föreslår resultat som en person godkänner. Varje agent öppnas, aktiveras och hanteras på samma sätt. Den här sidan går igenom dessa gemensamma steg en gång, och sedan ett avsnitt per agent för dess egen konfigurering.
 
-## Öppna Agenter-området
+Se [Öppna Agenter-området][open-agents-area] för inloggningsstegen. Ikonen **Agenter** visas bara när AI-funktioner är aktiverade, nedan.
 
-1. Logga in i SuperOffice CRM och välj ikonen **Agenter** i Navigator.
-1. Välj **Logga in** för att öppna Agenter-området.
+## Aktivera AI-funktioner
 
-    ![Öppna Agenter-området - välj Agenter i vänstermenyn och sedan Logga in -screenshot][img1]
+Ikonen **Agenter** visas i Navigator bara när **Aktivera AI-funktioner i SuperOffice** är satt till **Ja** i CRM:ets globala inställningar.
 
-<Tip>
-Ser du inte **Agenter** i Navigator? Ikonen visas bara när **Aktivera AI-funktioner i SuperOffice** är satt till **Ja** i CRM:ets globala inställningar. Gå till **Inställningar och underhåll** > **Preferenser** > **Globala inställningar** > **AI** > **Aktivera AI-funktioner i SuperOffice**.
-</Tip>
+1. Gå till **Inställningar och underhåll** > **Preferenser** > **Globala inställningar** > **AI**.
+1. Sätt **Aktivera AI-funktioner i SuperOffice** till **Ja**.
 
 ![Aktivera AI-funktioner i SuperOffice måste vara satt till Ja -screenshot][img2]
 
 ## Hitta och aktivera en agent
 
-**Agenter**-sidan visar ett startset med agentkort. För att se alla agenter som ingår i ditt abonnemang:
+**Agenter**-sidan visar ett startset med agentkort. För att se alla agenter i ditt abonnemang:
 
 1. Välj **Bläddra bland agenter** längst upp till höger på **Agenter**-sidan.
 1. Använd sökrutan eller kategorifiltren för att hitta agenten du vill ha.
-1. Välj **Aktivera** för att gå direkt in i agentens konfigurationsguide och skapa din första **instans**: en konfigurerad, körande kopia av agenten.
+1. Välj **Aktivera** för att öppna agentens konfigurationsguide och skapa din första **instans**: en konfigurerad, körande kopia av agenten.
 
 ![Agenter-sidans standardkort och panelen Bläddra bland agenter -screenshot][img3]
 
@@ -54,12 +52,12 @@ Ser du inte **Agenter** i Navigator? Ikonen visas bara när **Aktivera AI-funkti
 **Bläddra bland agenter** visar bara agenter som ingår i din abonnemangsnivå. Om en agent du förväntar dig inte listas, kontakta din SuperOffice-administratör eller -partner.
 </Note>
 
-När en agent har minst en instans visar dess kort en länk **N aktiva** istället för **Aktivera**. Välj den för att se agentens instanser, grupperade i Aktiva och Inaktiva, och hoppa in i valfri av dem. För agenter som tillåter fler än en instans finns knappen **+ Ny instans** kvar bredvid länken, så att du kan lägga till ytterligare en när som helst.
+När en agent har en instans visar dess kort en länk **N aktiva** istället för **Aktivera**. Välj den för att se agentens instanser, grupperade i Aktiva och Inaktiva, och öppna valfri av dem. Agenter som tillåter fler än en instans visar även knappen **+ Ny instans**, så att du kan lägga till ytterligare en när som helst.
 
 ![Instanspopupen på ett agentkort -screenshot][img4]
 
 <Note>
-**Hur många instanser kan jag skapa?** Lead Agent tillåter upp till 3 instanser totalt, aktiva och inaktiva sammanräknat. Data Quality Agent, Duplicate Agent och Sales Assistant Agent tillåter vardera bara 1 instans per användare. Gränsen räknar även inaktiva instanser: att avaktivera en frigör ingen plats, bara att radera den gör det.
+Se [Agentinstanser][agent-instances] för hur många instanser varje agent tillåter.
 </Note>
 
 ![Bläddra bland agenter behåller alternativet + Ny instans för agenter som tillåter fler än en -screenshot][img5]
@@ -68,18 +66,18 @@ När en agent har minst en instans visar dess kort en länk **N aktiva** iställ
 
 Endast instansens ägare (den som skapade den) kan redigera dess inställningar, aktivera eller avaktivera den, eller radera den.
 
-* **Redigera inställningar**: välj redigeringsknappen (pennan) i instansens sidhuvud för att öppna samma steg-för-steg-dialog som används vid konfigurering. Ändringar gäller från nästa körning.
+* **Redigera inställningar**: välj redigeringsknappen (pennan) i instansens sidhuvud för att öppna samma konfigureringsdialog. Ändringar gäller från nästa körning.
 
     ![Redigeringsdialogen så som en godkännare ser den (skrivskyddad), och så som ägaren ser den (redigerbar) -screenshot][img6]
 
-* **Meddela**: varje användare som kan se en instans har sin egen klockväxel för **Meddela** i instansens sidhuvud. Att stänga av ljud påverkar bara den personen, och instansen fortsätter köras för alla andra.
+* **Meddela**: varje användare med åtkomst till instansen har sin egen klockväxel för **Meddela**. Att stänga av ljud påverkar bara den personen. Instansen fortsätter köras för alla andra.
 
     ![Meddela-växeln per användare -screenshot][img7]
 
 * **Aktivera eller avaktivera**: använd växeln **Aktiv** i instansens meny med tre punkter.
 
     <Warning>
-    Att avaktivera en instans medan uppgifter väntar på granskning kasserar alla av dem. Detta kan inte ångras.
+    Att avaktivera en instans kasserar alla uppgifter som väntar på granskning. Detta kan inte ångras.
     </Warning>
 
     ![Avaktivera från menyn med tre punkter, med varningen om väntande godkännanden -screenshot][img8]
@@ -87,7 +85,7 @@ Endast instansens ägare (den som skapade den) kan redigera dess inställningar,
 * **Radera**: tillgängligt när en instans har avaktiverats, från samma meny med tre punkter.
 
     <Danger>
-    Att radera en instans är permanent. All data för den instansen tas bort.
+    Att radera en instans är permanent och tar bort all dess data.
     </Danger>
 
     ![Radera en instans från menyn med tre punkter och bekräftelsen -screenshot][img9]
@@ -111,42 +109,42 @@ Lead Agents konfigurationsguide har 4 obligatoriska steg:
 
 * **Namn**: identifierar instansen. Det måste vara unikt och kan inte ändras efter aktivering.
 * **Beskrivning**: förifylld med en föreslagen sammanfattning. Redigera den om du vill ha något annat.
-* **Land**: standardvärdet är din organisations hemland. Det avgör både vilka företagsregister agenten söker i och vilket lands leads som genomsöks som standard.
+* **Land**: standardvärdet är din organisations hemland, och det avgör både vilka register agenten söker i och vilket land den genomsöker som standard.
 * **Rapportspråk**: språket agenten skriver sina rapporter och chattsvar på.
-* **Schema**: agenten körs **Dagligen**, automatiskt en gång om dagen vid en systemtilldelad tidpunkt.
+* **Schema**: agenten körs **Dagligen**, en gång om dagen vid en systemtilldelad tidpunkt.
 * **Max antal uppgifter per dag**: begränsar hur många godkännandeuppgifter agenten skapar varje dag (1, 2, 5, 10, 15, 20, 25 eller 30; standard 10), så att granskningsvolymen förblir hanterbar.
-* **Lägg till kontakter**: när aktiverat hittar agenten även kontaktpersoner kopplade till varje lead, inklusive deras e-post- och telefonuppgifter. När avaktiverat arbetar den bara på företagsnivå.
+* **Lägg till kontakter**: när aktiverat hittar agenten även kontaktpersoner för varje lead, med e-post- och telefonuppgifter. När avaktiverat arbetar den bara på företagsnivå.
 
 <Note>
-**Platsen i din ideala kundprofil har företräde framför Land.** **Land** du väljer här är bara standardvärdet. Om du till exempel väljer Tyskland men anger Frankrike i din ideala kundprofil, söker agenten i franska företagsregister och genomsöker franska leads.
+**Platsen i din ideala kundprofil har företräde framför Land.** **Land** du väljer är bara ett standardvärde. Om du till exempel väljer Tyskland men anger Frankrike i din profil, söker agenten i franska register och genomsöker franska leads.
 </Note>
 
 ![Lead Agents konfigurationsguide, Allmänna inställningar -screenshot][img11]
 
 ### 2. Idealkund
 
-Detta definierar vem som räknas som en bra lead och hur agenten ska bete sig.
+Detta definierar vad som räknas som en bra lead och hur agenten ska bete sig.
 
 **Instruktioner**: beskriv i vanligt språk de kunder du vill ha och hur agenten ska arbeta. Var specifik, till exempel: *Fokusera på företag som visar tillväxtsignaler, till exempel nyligen genomförd finansiering, nya kontor eller nyanställningar.*
 
 <Tip>
-Var specifik om vad som spelar roll, till exempel bransch, storlek och region, och inkludera diskvalificerare, till exempel "inte offentlig sektor". Du kan finjustera detta när som helst. Ändringar gäller för framtida körningar.
+Beskriv vad som spelar roll, till exempel bransch, storlek och region, samt diskvalificerare, till exempel "inte offentlig sektor". Finjustera när som helst; ändringar gäller framtida körningar.
 </Tip>
 
 ![Definiera din idealkund -screenshot][img12]
 
 ### 3. Källor
 
-* **Nyhetskällor**: offentliga källor agenten genomsöker efter leads och köpsignaler. Lägg till varje källa med en etikett och en webbadress.
+* **Nyhetskällor**: offentliga källor agenten genomsöker efter köpsignaler. Lägg till varje källa med etikett och webbadress.
 * **Berikningskällor**: används för att verifiera och berika varje lead.
   * **Inbyggda källor**: företagsregister som väljs automatiskt för ditt land, till exempel Brønnøysundregistret för Norge eller Northdata för Tyskland.
-  * **Leadfeeder**: en B2B-tjänst för företagsdata som används för att berika upptäckta leads och prioritera dem mer exakt. Den är aktiverad som standard för nya instanser. Stäng av den om du hellre vill förlita dig enbart på webbskrapning.
+  * **Leadfeeder**: en B2B-tjänst för företagsdata som berikar och prioriterar upptäckta leads. Aktiverad som standard för nya instanser; stäng av den för att förlita dig enbart på webbskrapning.
 
 ![Steget Källor, med berikningskällor inklusive Leadfeeder -screenshot][img13]
 
 ### 4. Godkännare
 
-Välj vem som granskar och godkänner leadsen som denna agent lyfter fram. Att godkänna en lead gör den personen till leadens ägare. För Lead Agent kan godkännaren vara någon annan än instansens ägare.
+Välj vem som granskar och godkänner leadsen som denna agent hittar. Att godkänna en lead gör den personen till dess ägare. För Lead Agent kan godkännaren vara någon annan än instansens ägare.
 
 Hur leads **delas** mellan godkännare beror på hur många du lägger till:
 
@@ -163,7 +161,9 @@ Valet mellan **Först till kvarn** och **Rundgång** görs när du skapar instan
 
 Välj **Spara** på det sista steget för att aktivera instansen.
 
-[img1]: /media/loc/en/ai/open-agents-area.png
+[open-agents-area]: /sv/ai/learn/index#open-the-agents-area
+[agent-instances]: /sv/ai/learn/index#agent-instances
+
 [img2]: /media/loc/en/ai/enable-ai-functions.png
 [img3]: /media/loc/en/ai/browse-agents.png
 [img4]: /media/loc/en/ai/instances-popover.png

@@ -17,6 +17,8 @@ audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /da/ai/index
 boost: 1.5
+related:
+  - Opsæt AI-agenter: /da/ai/admin/set-up-ai-agents
 language: da
 ---
 
@@ -42,7 +44,28 @@ Disse funktioner giver dit team mulighed for at fokusere på meningsfuldt arbejd
 | [Reply Assist][8] | Foreslår et svar på en indgående sag baseret på dit CRM-indhold, som du kan gennemgå og sende. | CRM Suite Plus |
 | [Lead Agent][9] | Finder, undersøger og kvalificerer nye emner fra konfigurerede nyhedskilder, og vurderer dem ud fra din ideelle kundeprofil, så en person kan godkende dem. | CRM Suite Plus |
 
-![Oversigt over AI-tjenester -screenshot][img1]
+## Insight, Assist, and Agent
+
+Nyere AI-funktioner følger et navngivningsmønster, der fortæller dig, hvordan hver enkelt fungerer:
+
+* **Insight** foreslår eksterne data direkte i arbejdsgangen, uden noget at åbne eller administrere. [Company Insight][7] er en Insight-tjeneste.
+* **Assist** bruger generativ AI til at hjælpe dig med at oprette indhold eller beslutte, hvad du skal gøre næste, lige der hvor du allerede arbejder. [Workspace Assist][4] og [Reply Assist][8] er Assist-tjenester.
+* **Agent** kører i baggrunden efter sin egen tidsplan og foreslår resultater, som en person skal godkende, i sit eget dedikerede Agenter-område. [Lead Agent][9] er en Agent-tjeneste.
+
+### Agentinstanser {#agent-instances}
+
+En konfigureret, kørende kopi af en agent kaldes en **instans**. Nogle agenter tillader mere end én: Lead Agent tillader op til 3, aktive og inaktive tilsammen. Andre, såsom Data Quality Agent, Duplicate Agent og Sales Assistant Agent, tillader kun 1 instans pr. bruger. Grænsen tæller også inaktive instanser: at deaktivere en frigør ikke en plads, kun at slette den gør.
+
+## Åbn Agenter-området {#open-the-agents-area}
+
+1. Log ind på SuperOffice CRM, og vælg ikonet **Agenter** i Navigator.
+1. Vælg **Log ind** for at åbne Agenter-området.
+
+    ![Åbning af Agenter-området: vælg ikonet Agenter, derefter Log ind -screenshot][img1]
+
+<Tip>
+Kan du ikke se **Agenter** i Navigator? Bed din administrator om at aktivere den. Se [Opsæt AI-agenter][10].
+</Tip>
 
 [1]: /da/ai/learn/text-analysis
 [2]: /da/ai/learn/categorization
@@ -53,5 +76,6 @@ Disse funktioner giver dit team mulighed for at fokusere på meningsfuldt arbejd
 [7]: /da/company/learn/create#company-insight
 [8]: /da/request/learn/handle-request-ai#reply-assist
 [9]: /da/ai/learn/lead-agent
+[10]: /da/ai/admin/set-up-ai-agents
 
-[img1]: /media/loc/en/ai/ai-services.png
+[img1]: /media/loc/en/ai/open-agents-area.png

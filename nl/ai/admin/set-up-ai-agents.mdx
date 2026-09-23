@@ -25,28 +25,26 @@ language: nl
 De AI-agents van SuperOffice komen binnenkort beschikbaar. Deze pagina beschrijft de installatiestappen voor een functie die nog niet algemeen beschikbaar is.
 </Note>
 
-De AI-agents van SuperOffice werken op de achtergrond en stellen resultaten voor die een persoon moet goedkeuren voordat er iets verandert in SuperOffice. Elke agent wordt op dezelfde manier geopend, geactiveerd en beheerd. Deze pagina behandelt die gedeelde stappen eenmalig, gevolgd door een sectie per agent voor wat specifiek is aan het instellen ervan.
+De AI-agents van SuperOffice werken op de achtergrond en stellen resultaten voor die een persoon moet goedkeuren. Elke agent wordt op dezelfde manier geopend, geactiveerd en beheerd. Deze pagina behandelt die gedeelde stappen eenmalig, gevolgd door een sectie per agent voor de eigen installatie.
 
-## Het gebied Agents openen
+Zie [Het gebied Agents openen][open-agents-area] voor de aanmeldstappen. Het pictogram **Agents** verschijnt pas zodra AI-functies zijn ingeschakeld, hieronder.
 
-1. Meld u aan bij SuperOffice CRM en selecteer het pictogram **Agents** in de Navigator.
-1. Selecteer **Aanmelden** om het gebied Agents te openen.
+## AI-functies inschakelen
 
-    ![Het gebied Agents openen: selecteer het pictogram Agents, daarna Aanmelden -screenshot][img1]
+Het pictogram **Agents** verschijnt alleen in de Navigator wanneer **AI-functies inschakelen in SuperOffice** is ingesteld op **Ja** in de globale CRM-voorkeuren.
 
-<Tip>
-Ziet u **Agents** niet in de Navigator? Het pictogram verschijnt alleen wanneer **AI-functies inschakelen in SuperOffice** is ingesteld op **Ja** in de globale CRM-voorkeuren. Ga naar **Instellingen en onderhoud** > **Voorkeuren** > **Globale voorkeuren** > **AI** > **AI-functies inschakelen in SuperOffice**.
-</Tip>
+1. Ga naar **Instellingen en onderhoud** > **Voorkeuren** > **Globale voorkeuren** > **AI**.
+1. Stel **AI-functies inschakelen in SuperOffice** in op **Ja**.
 
 ![AI-functies inschakelen in SuperOffice moet zijn ingesteld op Ja -screenshot][img2]
 
 ## Een agent zoeken en activeren
 
-De pagina **Agents** toont een startset aan agentkaarten. Om elke agent te zien die in uw abonnement is inbegrepen:
+De pagina **Agents** toont een startset aan agentkaarten. Om elke agent in uw abonnement te zien:
 
 1. Selecteer **Agents doorbladeren** rechtsboven op de pagina **Agents**.
 1. Gebruik het zoekvak of de categoriefilters om de gewenste agent te vinden.
-1. Selecteer **Activeren** om direct naar de installatiewizard van die agent te gaan en uw eerste **instantie** te maken: één geconfigureerde, actieve kopie van de agent.
+1. Selecteer **Activeren** om de installatiewizard van die agent te openen en uw eerste **instantie** te maken: één geconfigureerde, actieve kopie van de agent.
 
 ![De standaardkaarten van de pagina Agents en het paneel Agents doorbladeren -screenshot][img3]
 
@@ -54,12 +52,12 @@ De pagina **Agents** toont een startset aan agentkaarten. Om elke agent te zien 
 **Agents doorbladeren** toont alleen agents die zijn inbegrepen in uw abonnement. Als een agent die u verwacht niet wordt vermeld, neem dan contact op met uw SuperOffice-beheerder of partner.
 </Note>
 
-Zodra een agent minstens één instantie heeft, toont de kaart een koppeling **N actief** in plaats van **Activeren**. Selecteer deze om de instanties van die agent te zien, gegroepeerd naar Actief en Inactief, en spring naar een van hen. Voor agents die meer dan één instantie toestaan, blijft een knop **+ Nieuwe instantie** naast de koppeling staan, zodat u op elk moment nog een instantie kunt toevoegen.
+Zodra een agent een instantie heeft, toont de kaart een koppeling **N actief** in plaats van **Activeren**. Selecteer deze om de instanties van de agent te zien, gegroepeerd naar Actief en Inactief, en open een van hen. Agents die meer dan één instantie toestaan, tonen ook een knop **+ Nieuwe instantie**, zodat u op elk moment nog een instantie kunt toevoegen.
 
 ![Het instantiepaneel op de kaart van een agent -screenshot][img4]
 
 <Note>
-**Hoeveel instanties kan ik maken?** Lead Agent staat maximaal 3 instanties in totaal toe, actief en inactief samen. Data Quality Agent, Duplicate Agent en Sales Assistant Agent staan elk slechts 1 instantie per gebruiker toe. De limiet telt ook inactieve instanties mee: een instantie deactiveren maakt geen plek vrij, alleen verwijderen doet dat.
+Zie [Agent-instanties][agent-instances] voor het aantal instanties dat elke agent toestaat.
 </Note>
 
 ![Agents doorbladeren behoudt een optie + Nieuwe instantie voor agents die er meer dan één toestaan -screenshot][img5]
@@ -68,18 +66,18 @@ Zodra een agent minstens één instantie heeft, toont de kaart een koppeling **N
 
 Alleen de eigenaar van de instantie (de maker ervan) kan de instellingen ervan bewerken, deze activeren of deactiveren, of verwijderen.
 
-* **Instellingen bewerken**: selecteer de bewerk-knop (potlood) in de instantiekop om dezelfde stapsgewijze dialoog te openen die bij het instellen wordt gebruikt. Wijzigingen gelden vanaf de volgende uitvoering.
+* **Instellingen bewerken**: selecteer de bewerk-knop (potlood) in de instantiekop om dezelfde installatiedialoog te openen. Wijzigingen gelden vanaf de volgende uitvoering.
 
     ![De bewerkdialoog zoals een goedkeurder deze ziet (alleen-lezen), en zoals de eigenaar deze ziet (bewerkbaar) -screenshot][img6]
 
-* **Melden**: elke gebruiker die een instantie kan zien, heeft een eigen **Melden**-belschakelaar in de instantiekop. Dempen heeft alleen invloed op die persoon; de instantie blijft voor iedereen anders actief.
+* **Melden**: elke gebruiker met toegang tot de instantie heeft een eigen **Melden**-belschakelaar. Dempen heeft alleen invloed op die persoon. De instantie blijft voor iedereen anders actief.
 
     ![De schakelaar Melden per gebruiker -screenshot][img7]
 
 * **Activeren of deactiveren**: gebruik de schakelaar **Actief** in het menu met drie puntjes van de instantie.
 
     <Warning>
-    Het deactiveren van een instantie terwijl taken op beoordeling wachten, verwijdert deze allemaal. Dit kan niet ongedaan worden gemaakt.
+    Het deactiveren van een instantie verwijdert alle taken die op beoordeling wachten. Dit kan niet ongedaan worden gemaakt.
     </Warning>
 
     ![Deactiveren vanuit het menu met drie puntjes, met de waarschuwing over openstaande goedkeuringen -screenshot][img8]
@@ -87,7 +85,7 @@ Alleen de eigenaar van de instantie (de maker ervan) kan de instellingen ervan b
 * **Verwijderen**: beschikbaar zodra een instantie is gedeactiveerd, vanuit hetzelfde menu met drie puntjes.
 
     <Danger>
-    Het verwijderen van een instantie is permanent. Alle gegevens van die instantie worden verwijderd.
+    Het verwijderen van een instantie is permanent en verwijdert alle gegevens ervan.
     </Danger>
 
     ![Een instantie verwijderen vanuit het menu met drie puntjes en de bevestiging -screenshot][img9]
@@ -111,14 +109,14 @@ De installatiewizard van Lead Agent heeft 4 verplichte stappen:
 
 * **Naam**: identificeert de instantie; moet uniek zijn en kan na activering niet meer worden gewijzigd.
 * **Beschrijving**: vooraf ingevuld met een voorgestelde samenvatting; bewerk deze als u iets anders wilt.
-* **Land**: staat standaard op het thuisland van uw organisatie. Het bepaalt zowel de handelsregisters die de agent doorzoekt als het land waarvan de leads standaard worden gescand.
+* **Land**: staat standaard op het thuisland van uw organisatie, en bepaalt zowel de handelsregisters die de agent doorzoekt als het land dat het standaard scant.
 * **Rapportagetaal**: de taal waarin de agent zijn rapporten en chatantwoorden schrijft.
-* **Schema**: de agent draait **Dagelijks**, automatisch eenmaal per dag op een systeembepaald tijdstip.
+* **Schema**: de agent draait **Dagelijks**, eenmaal per dag op een systeembepaald tijdstip.
 * **Max. taken per dag**: beperkt hoeveel goedkeuringstaken de agent per dag maakt (1, 2, 5, 10, 15, 20, 25 of 30; standaard 10), zodat het beoordelingsvolume beheersbaar blijft.
-* **Contacten toevoegen**: indien ingeschakeld, zoekt de agent ook contactpersonen op die aan elke lead zijn gerelateerd, inclusief hun e-mail- en telefoongegevens. Indien uitgeschakeld, werkt het alleen op bedrijfsniveau.
+* **Contacten toevoegen**: indien ingeschakeld, zoekt de agent ook contactpersonen bij elke lead, met hun e-mail- en telefoongegevens. Indien uitgeschakeld, werkt het alleen op bedrijfsniveau.
 
 <Note>
-**De locatie van uw ideale klantprofiel gaat voor op Land.** Het **Land** dat u hier kiest, is alleen de standaardwaarde. Als u bijvoorbeeld Duitsland selecteert maar Frankrijk noemt in uw ideale klantprofiel, doorzoekt de agent Franse handelsregisters en scant Franse leads.
+**De locatie van uw ideale klantprofiel gaat voor op Land.** Het **Land** dat u kiest, is alleen een standaardwaarde. Duitsland selecteren maar Frankrijk noemen in uw profiel laat de agent bijvoorbeeld Franse handelsregisters doorzoeken en Franse leads scannen.
 </Note>
 
 ![De installatiewizard van Lead Agent, Algemene instellingen -screenshot][img11]
@@ -130,23 +128,23 @@ Dit definieert wat telt als een goede lead en hoe de agent zich moet gedragen.
 **Instructies**: beschrijf in gewone taal de klanten die u wilt en hoe de agent moet werken. Wees specifiek, bijvoorbeeld: *Focus op bedrijven die groeisignalen tonen, zoals recente financiering, nieuwe kantoren of aanwervingen.*
 
 <Tip>
-Wees specifiek over wat belangrijk is, zoals branche, omvang en regio, en neem uitsluitingscriteria op, zoals "geen overheidssector." U kunt dit op elk moment aanpassen. Wijzigingen gelden voor toekomstige uitvoeringen.
+Beschrijf wat belangrijk is, zoals branche, omvang en regio, plus uitsluitingscriteria zoals "geen overheidssector." Pas dit op elk moment aan; wijzigingen gelden voor toekomstige uitvoeringen.
 </Tip>
 
 ![Uw ideale klant definiëren -screenshot][img12]
 
 ### 3. Bronnen
 
-* **Nieuwsbronnen**: openbare bronnen die de agent doorzoekt op leads en koopsignalen. Voeg elke bron toe met een label en een webadres.
+* **Nieuwsbronnen**: openbare bronnen die de agent doorzoekt op koopsignalen. Voeg elke bron toe met een label en webadres.
 * **Verrijkingsbronnen**: gebruikt om elke lead te verifiëren en verrijken:
   * **Ingebouwde bronnen**: handelsregisters die automatisch worden geselecteerd voor uw land, bijvoorbeeld Brønnøysundregistret voor Noorwegen of Northdata voor Duitsland.
-  * **Leadfeeder**: een B2B-bedrijfsgegevensdienst die wordt gebruikt om gevonden leads te verrijken en nauwkeuriger te prioriteren. Deze staat standaard aan voor nieuwe instanties; schakel deze uit als u liever alleen op webscannen vertrouwt.
+  * **Leadfeeder**: een B2B-bedrijfsgegevensdienst die gevonden leads verrijkt en prioriteert. Staat standaard aan voor nieuwe instanties; schakel uit om alleen op webscannen te vertrouwen.
 
 ![De stap Bronnen, met verrijkingsbronnen inclusief Leadfeeder -screenshot][img13]
 
 ### 4. Goedkeurders
 
-Kies wie de leads die deze agent vindt beoordeelt en goedkeurt. Het goedkeuren van een lead maakt die persoon de eigenaar van de lead. Bij Lead Agent kan de goedkeurder iemand anders zijn dan de eigenaar van de instantie.
+Kies wie de leads die deze agent vindt beoordeelt en goedkeurt. Het goedkeuren van een lead maakt die persoon de eigenaar ervan. Bij Lead Agent kan de goedkeurder iemand anders zijn dan de eigenaar van de instantie.
 
 Hoe leads worden **verdeeld** tussen goedkeurders hangt af van hoeveel u toevoegt:
 
@@ -163,7 +161,9 @@ De keuze tussen **Wie het eerst komt, wie het eerst maalt** en **Round-robin** w
 
 Selecteer **Opslaan** bij de laatste stap om de instantie te activeren.
 
-[img1]: /media/loc/en/ai/open-agents-area.png
+[open-agents-area]: /nl/ai/learn/index#open-the-agents-area
+[agent-instances]: /nl/ai/learn/index#agent-instances
+
 [img2]: /media/loc/en/ai/enable-ai-functions.png
 [img3]: /media/loc/en/ai/browse-agents.png
 [img4]: /media/loc/en/ai/instances-popover.png

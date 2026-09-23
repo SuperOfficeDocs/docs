@@ -17,6 +17,8 @@ audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /en/ai/index
 boost: 1.5
+related:
+  - Set up AI agents: /en/ai/admin/set-up-ai-agents
 language: en
 ---
 
@@ -42,7 +44,28 @@ These features allow your team to focus on meaningful work, while AI handles rep
 | [Reply Assist][8] | Drafts a suggested reply to an incoming service request from your CRM content, for a person to review and send. | CRM Suite Plus |
 | [Lead Agent][9] | Finds, researches, and qualifies new prospects from configured news sources, and rates them against your ideal customer profile, for a person to approve. | CRM Suite Plus |
 
-![AI services overview -screenshot][img1]
+## Insight, Assist, and Agent
+
+Newer AI capabilities follow a naming pattern that tells you how each one works:
+
+* **Insight** suggests external data inline while you work, with nothing to open or manage. [Company Insight][7] is an Insight service.
+* **Assist** uses generative AI to help you create content or decide what to do next, right where you already work. [Workspace Assist][4] and [Reply Assist][8] are Assist services.
+* **Agent** runs in the background on its own schedule and proposes results for a person to approve, in its own dedicated Agents area. [Lead Agent][9] is an Agent service.
+
+### Agent instances {#agent-instances}
+
+One configured, running copy of an agent is called an **instance**. Some agents allow more than one: Lead Agent allows up to 3, active and inactive combined. Others, such as Data Quality Agent, Duplicate Agent, and Sales Assistant Agent, allow only 1 instance per user. The limit counts inactive instances too: deactivating one does not free a slot, only deleting it does.
+
+## Open the Agents area {#open-the-agents-area}
+
+1. Sign in to SuperOffice CRM and select the **Agents** icon in the Navigator.
+1. Select **Log in** to open the Agents area.
+
+    ![Opening the Agents area: select the Agents icon, then Log in -screenshot][img1]
+
+<Tip>
+Do not see **Agents** in the Navigator? Ask your administrator to enable it. See [Set up AI agents][10].
+</Tip>
 
 [1]: /en/ai/learn/text-analysis
 [2]: /en/ai/learn/categorization
@@ -53,5 +76,6 @@ These features allow your team to focus on meaningful work, while AI handles rep
 [7]: /en/company/learn/create#company-insight
 [8]: /en/request/learn/handle-request-ai#reply-assist
 [9]: /en/ai/learn/lead-agent
+[10]: /en/ai/admin/set-up-ai-agents
 
-[img1]: /media/loc/en/ai/ai-services.png
+[img1]: /media/loc/en/ai/open-agents-area.png

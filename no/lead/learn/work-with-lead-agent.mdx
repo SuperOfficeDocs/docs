@@ -41,7 +41,7 @@ Når Lead Agent er satt opp, kjører den i bakgrunnen og bringer prospekter til 
 
 **Chat**-fanen organiserer alt i tråder til venstre:
 
-* **Generell chat**: en fri samtale med agenten. Be den se nærmere på et bestemt firma, og se den jobbe seg gjennom trinnene. Hvis den finner en reell lead på denne måten, oppretter den en vanlig godkjenningsoppgave for den, akkurat som en lead funnet i den daglige planlagte kjøringen.
+* **Generell chat**: en fri samtale med agenten. Be den se nærmere på et bestemt firma, og se den jobbe seg gjennom trinnene. En reell lead funnet på denne måten, oppretter en vanlig godkjenningsoppgave, akkurat som en lead funnet i den daglige kjøringen.
 * **Lead-tråder**: hvert oppdagede prospekt kommer som sin egen tråd, oppkalt etter firmaet. Her godkjenner eller avviser du leaden.
 
 ![Chat-fanen: Generell chat og lead-tråder per firma -screenshot][img2]
@@ -50,7 +50,7 @@ Når Lead Agent er satt opp, kjører den i bakgrunnen og bringer prospekter til 
 
 Å åpne en lead-tråd viser agentens prospektrapport. Den åpnes i kompakt visning med bare det viktigste: en treffgrad, kildene den brukte, og nøkkeltall.
 
-Velg **Utvid rapport** for å se hele utredningen: et firmasammendrag, firmaposten som ville blitt lagret (navn, virksomhet, adresse, land, telefon, e-post, nettside og eventuelle kontaktpersoner funnet), og hvorfor det er en god match, med henvisning til kildene.
+Velg **Utvid rapport** for hele utredningen: et firmasammendrag, posten som skal lagres (navn, virksomhet, adresse, land, telefon, e-post, nettside og eventuelle kontaktpersoner funnet), og hvorfor det er en god match, med kildene oppgitt.
 
 Velg dokument-ikonet for å laste ned rapporten som en PDF, eller **Skjul rapport** for å gå tilbake til sammendragsvisningen.
 
@@ -58,13 +58,13 @@ Velg dokument-ikonet for å laste ned rapporten som en PDF, eller **Skjul rappor
 
 ### Godkjenn eller avvis
 
-Over **Godkjenn**-knappen lar feltet **Velg eller opprett et statisk utvalg** deg valgfritt velge et eksisterende SuperOffice-statisk utvalg, eller opprette ett direkte. Hvis du velger eller oppretter et utvalg før du godkjenner, legges firmaet, og eventuelle kontaktpersoner, til i det i det øyeblikket du godkjenner.
+Over **Godkjenn**-knappen lar feltet **Velg eller opprett et statisk utvalg** deg velge et eksisterende utvalg, eller opprette ett direkte. Å velge ett før du godkjenner, legger firmaet, og eventuelle kontaktpersoner, til i det i det øyeblikket du godkjenner.
 
-Den samme velgeren er tilgjengelig ved **massegodkjenning** av flere leads samtidig: hold nede Ctrl/Cmd for å velge flere ventende leads, og godkjenn eller avvis dem sammen. Velg et utvalg én gang, så gjelder det for alle firmaer godkjent i den batchen.
+Den samme velgeren fungerer for **massegodkjenning** av flere leads: hold nede Ctrl/Cmd for å velge flere ventende leads, og godkjenn eller avvis dem sammen. Det valgte utvalget gjelder for alle firmaer i batchen.
 
 ![Legge til et godkjent firma i et statisk utvalg -screenshot][img4]
 
-**Godkjenn**: en bekreftelse spesifiserer nøyaktig hva som vil skje, for eksempel feltene som legges til i en ny firmapost. Bekreft, og firmaet, og eventuelle kontaktpersoner, lagres i SuperOffice med godkjenneren som eier. To notater legges også til den nye firmaposten: et Firmasammendrag-notat og et Produkttilbud-notat.
+**Godkjenn**: en bekreftelse spesifiserer nøyaktig hva som skjer, for eksempel hvilke felt en ny firmapost får. Bekreft for å lagre firmaet, og eventuelle kontaktpersoner, i SuperOffice med godkjenneren som eier. To notater legges også til: et Firmasammendrag-notat og et Produkttilbud-notat.
 
 **Avvis**: leaden hoppes over og ingenting lagres.
 
@@ -82,11 +82,11 @@ Den samme velgeren er tilgjengelig ved **massegodkjenning** av flere leads samti
 
 ## Feilsøking
 
-**En lead jeg gjennomgikk, forsvant.** En lead som venter på godkjenning, har en begrenset levetid: 30 dager som standard. Når den er innenfor 5 dager fra å utløpe, vises et nedtellingsbanner på tråden. Hvis den ikke godkjennes eller avvises i tide, utløper den automatisk og agenten går videre; ingenting lagres i CRM-en din for en utløpt lead.
+**En lead jeg gjennomgikk, forsvant.** En lead som venter på godkjenning, har en begrenset levetid: 30 dager som standard. Et nedtellingsbanner vises på tråden når den er innenfor 5 dager fra å utløpe. Hvis den ikke godkjennes eller avvises i tide, utløper den, og ingenting lagres i CRM-en din.
 
 **Jeg deaktiverte instansen, og de ventende leadene mine er borte.** Å deaktivere en instans forkaster alle leads som venter på godkjenning. Godkjenn eller avvis det du trenger først, hvis du vil beholde det.
 
-**Jeg kan se innstillingene til en instans, men kan ikke endre noe.** Du er en godkjenner, ikke eieren. Bare instansens eier kan lagre endringer i oppsettet; en godkjenner som ikke er eieren, kan se konfigurasjonen, men ikke redigere den.
+**Jeg kan se innstillingene til en instans, men kan ikke endre noe.** Du er en godkjenner, ikke eieren. Bare instansens eier kan lagre endringer i oppsettet; en godkjenner som ikke er eieren, kan se, men ikke redigere det.
 
 [1]: /no/ai/admin/set-up-ai-agents#lead-agent
 

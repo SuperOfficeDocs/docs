@@ -17,6 +17,8 @@ audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /nl/ai/index
 boost: 1.5
+related:
+  - AI-agents instellen: /nl/ai/admin/set-up-ai-agents
 language: nl
 ---
 
@@ -42,7 +44,28 @@ Deze functies stellen uw team in staat om zich te concentreren op zinvol werk, t
 | [Reply Assist][8] | Stelt een antwoord voor op een inkomend verzoek op basis van uw CRM-inhoud, dat u kunt controleren en verzenden. | CRM Suite Plus |
 | [Lead Agent][9] | Vindt, onderzoekt en kwalificeert nieuwe prospects op basis van geconfigureerde nieuwsbronnen en beoordeelt ze aan de hand van uw ideale klantprofiel, zodat een persoon ze kan goedkeuren. | CRM Suite Plus |
 
-![Overzicht AI-diensten -screenshot][img1]
+## Insight, Assist en Agent
+
+Nieuwere AI-mogelijkheden volgen een naamgevingspatroon dat aangeeft hoe elke dienst werkt:
+
+* **Insight** stelt externe gegevens voor terwijl u werkt, zonder dat u iets hoeft te openen of te beheren. [Company Insight][7] is een Insight-dienst.
+* **Assist** gebruikt generatieve AI om u te helpen bij het maken van content of het bepalen van de volgende stap, direct waar u al werkt. [Workspace Assist][4] en [Reply Assist][8] zijn Assist-diensten.
+* **Agent** draait op de achtergrond volgens een eigen schema en stelt resultaten voor die een persoon moet goedkeuren, in een eigen, toegewijd gebied Agents. [Lead Agent][9] is een Agent-dienst.
+
+### Agent-instanties {#agent-instances}
+
+Eén geconfigureerde, actieve kopie van een agent wordt een **instantie** genoemd. Sommige agents staan meer dan één instantie toe: Lead Agent staat er maximaal 3 toe, actief en inactief samen. Andere, zoals Data Quality Agent, Duplicate Agent en Sales Assistant Agent, staan slechts 1 instantie per gebruiker toe. De limiet telt ook inactieve instanties mee: het deactiveren van een instantie maakt geen plek vrij, alleen het verwijderen ervan doet dat.
+
+## Het gebied Agents openen {#open-the-agents-area}
+
+1. Meld u aan bij SuperOffice CRM en selecteer het pictogram **Agents** in de Navigator.
+1. Selecteer **Aanmelden** om het gebied Agents te openen.
+
+    ![Het gebied Agents openen: selecteer het pictogram Agents, daarna Aanmelden -screenshot][img1]
+
+<Tip>
+Ziet u **Agents** niet in de Navigator? Vraag uw beheerder om deze functie in te schakelen. Zie [AI-agents instellen][10].
+</Tip>
 
 [1]: /nl/ai/learn/text-analysis
 [2]: /nl/ai/learn/categorization
@@ -53,5 +76,6 @@ Deze functies stellen uw team in staat om zich te concentreren op zinvol werk, t
 [7]: /nl/company/learn/create#company-insight
 [8]: /nl/request/learn/handle-request-ai#reply-assist
 [9]: /nl/ai/learn/lead-agent
+[10]: /nl/ai/admin/set-up-ai-agents
 
-[img1]: /media/loc/en/ai/ai-services.png
+[img1]: /media/loc/en/ai/open-agents-area.png

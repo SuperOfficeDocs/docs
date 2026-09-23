@@ -17,6 +17,8 @@ audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /de/ai/index
 boost: 1.5
+related:
+  - KI-Agenten einrichten: /de/ai/admin/set-up-ai-agents
 language: de
 ---
 
@@ -42,7 +44,28 @@ Diese Funktionen ermöglichen es Ihrem Team, sich auf sinnvolle Arbeit zu konzen
 | [Reply Assist][8] | Schlägt eine Antwort auf eine eingehende Anfrage basierend auf Ihren CRM-Daten vor, die Sie prüfen und senden können. | CRM Suite Plus |
 | [Lead Agent][9] | Findet, recherchiert und qualifiziert neue Interessenten aus konfigurierten Nachrichtenquellen und bewertet sie anhand Ihres idealen Kundenprofils, damit eine Person sie genehmigen kann. | CRM Suite Plus |
 
-![Übersicht KI-Services -screenshot][img1]
+## Insight, Assist und Agent
+
+Neuere KI-Funktionen folgen einem Namensmuster, das zeigt, wie sie jeweils funktionieren:
+
+* **Insight** schlägt externe Daten direkt bei der Arbeit vor, ohne dass etwas geöffnet oder verwaltet werden muss. [Company Insight][7] ist ein Insight-Service.
+* **Assist** nutzt generative KI, um Ihnen bei der Inhaltserstellung zu helfen oder den nächsten Schritt vorzuschlagen, direkt in Ihrem gewohnten Arbeitsablauf. [Workspace Assist][4] und [Reply Assist][8] sind Assist-Services.
+* **Agent** läuft im Hintergrund nach eigenem Zeitplan und schlägt Ergebnisse zur Genehmigung durch eine Person vor, in einem eigenen Bereich Agenten. [Lead Agent][9] ist ein Agent-Service.
+
+### Agenteninstanzen {#agent-instances}
+
+Eine konfigurierte, laufende Kopie eines Agenten wird als **Instanz** bezeichnet. Manche Agenten erlauben mehr als eine: Lead Agent erlaubt bis zu 3, aktive und inaktive zusammengerechnet. Andere, wie Data Quality Agent, Duplicate Agent und Sales Assistant Agent, erlauben nur 1 Instanz pro Benutzer. Das Limit zählt auch inaktive Instanzen: Das Deaktivieren einer Instanz gibt keinen Platz frei, nur das Löschen tut das.
+
+## Bereich Agenten öffnen {#open-the-agents-area}
+
+1. Melden Sie sich bei SuperOffice CRM an und wählen Sie das Symbol **Agenten** im Navigator.
+1. Wählen Sie **Anmelden**, um den Bereich Agenten zu öffnen.
+
+    ![Öffnen des Bereichs Agenten: Agenten-Symbol wählen, dann Anmelden -screenshot][img1]
+
+<Tip>
+Sehen Sie **Agenten** nicht im Navigator? Bitten Sie Ihren Administrator, es zu aktivieren. Siehe [KI-Agenten einrichten][10].
+</Tip>
 
 [1]: /de/ai/learn/text-analysis
 [2]: /de/ai/learn/categorization
@@ -53,5 +76,6 @@ Diese Funktionen ermöglichen es Ihrem Team, sich auf sinnvolle Arbeit zu konzen
 [7]: /de/company/learn/create#company-insight
 [8]: /de/request/learn/handle-request-ai#reply-assist
 [9]: /de/ai/learn/lead-agent
+[10]: /de/ai/admin/set-up-ai-agents
 
-[img1]: /media/loc/en/ai/ai-services.png
+[img1]: /media/loc/en/ai/open-agents-area.png
