@@ -1,0 +1,53 @@
+---
+uid: help-sv-ai-lead-agent
+title: Lead Agent
+description: Lead Agent hittar, undersöker och kvalificerar nya prospekt automatiskt, där varje resultat granskas och godkänns av en person innan något sparas.
+keywords: ['lead agent', 'AI-agenter', 'leadidentifiering', 'prospektering', 'ICP']
+author: digitaldiina, Claudia Dias
+date: 10.01.2026
+so_version: 12.5
+content_type: concept
+license: aiplatform
+tier: plus
+pilot: yes
+category: automation
+topic: ai
+platform: web
+deployment: online
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Konfigurera Lead Agent: /sv/ai/admin/set-up-ai-agents#set-up-lead-agent
+  - Arbeta med Lead Agent: /sv/lead/learn/work-with-lead-agent
+  - Andra AI-tjänster: /sv/ai/learn/index
+language: sv
+---
+
+<Note>
+Lead Agent lanseras snart. Den här sidan beskriver en funktion som ännu inte är allmänt tillgänglig.
+</Note>
+
+Lead Agent arbetar tyst i bakgrunden för att hålla din pipeline full. Varje dag letar den efter företag som matchar den typ av kund du vill ha, undersöker dem, bedömer hur väl de passar och tar fram en färdig prospektrapport. Den ber sedan en säljare om godkännande innan något sparas i SuperOffice.
+
+## Vad den gör för dig
+
+* **Hittar prospekt automatiskt** - genomsöker de nyhetskällor du konfigurerar efter företag som visar köpsignaler.
+* **Undersöker och berikar** - verifierar varje företag mot företagsregister och, valfritt, Leadfeeder, och kan även hitta kontaktpersoner.
+* **Bedömer passformen** - varje kandidat får ett ICP-matchningsbetyg.
+* **Skriver en prospektrapport** - en sammanfattning, dess källor, viktiga nyckeltal, företagsposten som skulle sparas i ditt CRM, och varför det är en bra match.
+* **Lägger godkända leads i ett urval** - samlar valfritt de företag du godkänner i ett statiskt SuperOffice-urval, så att du kan agera på dem tillsammans.
+* **Frågar innan den agerar** - lyfter en lead till dina utsedda godkännare; inget sparas i CRM:et förrän en säljare godkänner det.
+
+<Note>
+Agenten föreslår; en säljare bestämmer. Upptäckta företag och kontakter skrivs bara till SuperOffice efter godkännande. Om ingen godkänner en lead ändras ingenting i ditt CRM.
+</Note>
+
+![Lead Agent presenterar ett matchat prospekt för godkännande -screenshot][img1]
+
+<Note>
+Lead Agent kräver [CRM Suite Plus][9] eller högre.
+</Note>
+
+[9]: /sv/admin/license/crm-suite
+
+[img1]: /media/loc/en/ai/lead-agent-widget.png

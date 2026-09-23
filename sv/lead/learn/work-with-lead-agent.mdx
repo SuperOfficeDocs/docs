@@ -1,0 +1,101 @@
+---
+uid: help-sv-work-with-lead-agent
+title: Arbeta med Lead Agent
+description: Granska och godkänn de prospekt Lead Agent hittar, med hjälp av dess flikar Chatt, Historik och Prestanda.
+keywords: ['lead agent', 'prospektrapport', 'AI-agenter']
+author: digitaldiina, Claudia Dias
+date: 10.01.2026
+so_version: 12.5
+content_type: howto
+license: aiplatform
+tier: plus
+pilot: yes
+category: sale
+topic: lead
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Lead Agent: /sv/ai/learn/lead-agent
+  - Konfigurera Lead Agent: /sv/ai/admin/set-up-ai-agents#set-up-lead-agent
+  - Översikt över leadhantering: /sv/lead/learn/index
+language: sv
+---
+
+<Note>
+Lead Agent lanseras snart. Den här sidan beskriver en funktion som ännu inte är allmänt tillgänglig.
+</Note>
+
+När Lead Agent har konfigurerats körs den i bakgrunden och tar fram prospekt åt dig för granskning. Den här sidan beskriver hur du granskar och godkänner det den hittar. För konfigurering, se [Konfigurera Lead Agent][1].
+
+## Arbetsytan: tre flikar
+
+Öppna en instans från **Mina agenter** eller dess kort för att se dess arbetsyta. Längst upp finns tre flikar, och till höger en växel för **Meddela**, en redigeringsknapp och en meny med tre punkter.
+
+| Flik | Vad den används för |
+|---|---|
+| Chatt | Prata med agenten och granska upptäckta leads. |
+| Historik | En detaljerad logg över allt agenten har gjort. Visas endast för ägaren och dess godkännare. |
+| Prestanda | Prestandavyer för instansen under en vald period. |
+
+![Lead Agents arbetsyta och dess tre flikar -screenshot][img1]
+
+## Granska leads i Chatt
+
+Fliken **Chatt** organiserar allt i trådar till vänster:
+
+* **Allmän chatt** - ett fritt samtal med agenten. Be den undersöka ett specifikt företag, och se den arbeta sig igenom stegen. Om den hittar en genuin lead på detta sätt skapar den en vanlig godkännandeuppgift för den, precis som en lead som hittas vid den dagliga schemalagda körningen.
+* **Leadtrådar** - varje upptäckt prospekt anländer som en egen tråd, uppkallad efter företaget. Det är här du godkänner eller avvisar leaden.
+
+![Fliken Chatt - Allmän chatt och leadtrådar per företag -screenshot][img2]
+
+### Prospektrapporten
+
+Att öppna en leadtråd visar agentens prospektrapport. Den öppnas hopfälld till det viktigaste: ett matchningsbetyg, källorna den använde och viktiga nyckeltal.
+
+Välj **Expandera rapport** för att se hela texten: en företagssammanfattning, företagsposten som skulle sparas (namn, verksamhet, adress, land, telefon, e-post, webbplats och eventuella hittade kontakter), och varför det är en bra match, med källhänvisningar.
+
+Välj dokumentikonen för att ladda ner rapporten som en PDF, eller **Fäll ihop rapport** för att gå tillbaka till sammanfattningsvyn.
+
+![En prospektrapport, hopfälld och expanderad -screenshot][img3]
+
+### Godkänn eller avvisa
+
+Ovanför knappen **Godkänn** finns ett fält, **Välj eller skapa ett statiskt urval**, där du valfritt kan välja ett befintligt statiskt SuperOffice-urval, eller skapa ett direkt. Om du väljer eller skapar ett urval innan du godkänner läggs företaget, och eventuella kontakter, till i det i samma stund du godkänner.
+
+Samma väljare är tillgänglig när du **massgodkänner** flera leads samtidigt: håll ner Ctrl/Cmd för att välja flera väntande leads, och godkänn eller avvisa dem tillsammans. Välj ett urval en gång så gäller det för alla företag som godkänns i den omgången.
+
+![Lägga till ett godkänt företag i ett statiskt urval -screenshot][img4]
+
+**Godkänn** - en bekräftelse beskriver exakt vad som kommer att hända, till exempel vilka fält som läggs till på en ny företagspost. Bekräfta, och företaget, och eventuella kontakter, sparas i SuperOffice med godkännaren som ägare. Två anteckningar läggs också till på den nya företagsposten: en anteckning för Företagssammanfattning och en anteckning för Produkterbjudanden.
+
+**Avvisa** - leaden hoppas över och inget sparas.
+
+![Godkänna en lead och avvisa en lead -screenshot][img5]
+
+## Historik och Prestanda
+
+Fliken **Historik** är en detaljerad logg över allt agenten har gjort: behandlade företag, betyg, rapporter skickade för godkännande, sparade prospekt och eventuella hoppade poster, med anledning. Använd **Filter** för att avgränsa efter datumintervall.
+
+![Fliken Historik och dess periodfilter -screenshot][img6]
+
+Fliken **Prestanda** visar hur instansen presterar under en period du väljer: behandlade länkar, kvalificerade leads, undersökta leads, leads skickade för godkännande, godkända, avvisade, förfallna och genomförda körningar. Varje mätvärde visas som ett trenddiagram.
+
+![Fliken Prestanda -screenshot][img7]
+
+## Felsökning
+
+**En lead jag granskade försvann.** En lead som väntar på godkännande har en begränsad livslängd - 30 dagar som standard. När den är inom 5 dagar från att förfalla visas en nedräkningsbanner på dess tråd. Om den inte godkänns eller avvisas i tid förfaller den automatiskt och agenten går vidare; inget sparas i ditt CRM för en förfallen lead.
+
+**Jag avaktiverade instansen och mina väntande leads är borta.** Att avaktivera en instans kasserar alla leads som väntar på godkännande. Godkänn eller avvisa det du behöver först om du vill behålla det.
+
+**Jag kan se inställningarna för en instans men kan inte ändra något.** Du är en godkännare, inte ägaren. Endast instansens ägare kan spara ändringar i dess konfiguration; en godkännare som inte är ägaren kan visa konfigurationen men inte redigera den.
+
+[1]: /sv/ai/admin/set-up-ai-agents#set-up-lead-agent
+
+[img1]: /media/loc/en/ai/lead-workspace-tabs.png
+[img2]: /media/loc/en/ai/lead-chat-threads.png
+[img3]: /media/loc/en/ai/lead-prospect-report.png
+[img4]: /media/loc/en/ai/lead-static-selection.png
+[img5]: /media/loc/en/ai/lead-approve-reject.png
+[img6]: /media/loc/en/ai/lead-history.png
+[img7]: /media/loc/en/ai/lead-performance.png

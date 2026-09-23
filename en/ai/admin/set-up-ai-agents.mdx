@@ -1,0 +1,181 @@
+---
+uid: help-en-ai-agents-setup
+title: Set up AI agents
+description: How to open the Agents area, activate an agent, create and manage an instance, and set up each individual AI agent.
+keywords: ['AI agents', 'agent instance', 'activate agent', 'Lead Agent']
+author: digitaldiina, Claudia Dias
+date: 10.01.2026
+so_version: 12.5
+content_type: tutorial
+license: aiplatform
+tier: plus
+pilot: yes
+category: automation
+topic: ai
+platform: web
+deployment: online
+audience: settings
+audience_tooltip: Settings and maintenance
+related:
+  - Lead Agent: /en/ai/learn/lead-agent
+  - Work with Lead Agent: /en/lead/learn/work-with-lead-agent
+  - Other AI services: /en/ai/learn/index
+language: en
+---
+
+<Note>
+SuperOffice's AI agents are coming soon. This page describes setup steps for a feature that isn't generally available yet.
+</Note>
+
+SuperOffice's AI agents work in the background and propose results for a person to approve before anything changes in SuperOffice. Every agent is opened, activated, and managed the same way. This page covers those shared steps once, then a section per agent for what's specific to setting it up.
+
+## Open the Agents area
+
+1. Sign in to SuperOffice CRM and select **Agents** in the left navigation menu.
+1. Select **Log in** to open the Agents area.
+
+    ![Opening the Agents area - select Agents in the left menu, then Log in -screenshot][img1]
+
+<Tip>
+Don't see **Agents** in the menu? The menu item appears only when **Enable AI functions in SuperOffice** is set to **Yes** in CRM global preferences. Go to **Settings and maintenance** > **Preferences** > **Global preferences** > **AI** > **Enable AI functions in SuperOffice**.
+</Tip>
+
+![Enable AI functions in SuperOffice must be set to Yes -screenshot][img2]
+
+## Find and activate an agent
+
+The Overview page shows a starter set of agent cards. To see every agent included in your subscription:
+
+1. Select **Browse agents** in the top-right of Overview.
+1. Use the search box or the category filters to find the agent you want.
+1. Select **Activate** to go straight into that agent's setup wizard and create your first **instance** - one configured, running copy of the agent.
+
+![The Overview page's default cards and the Browse agents drawer -screenshot][img3]
+
+<Note>
+**Browse agents** only shows agents included in your subscription tier. If an agent you expect isn't listed, contact your SuperOffice administrator or partner.
+</Note>
+
+Once an agent has at least one instance, its card shows an **N active** link instead of **Activate** - select it to see that agent's instances, grouped Active and Inactive, and jump into any of them. For agents that allow more than one instance, a **+ New instance** button stays alongside the link so you can add another at any time.
+
+![The instances popover on an agent's card -screenshot][img4]
+
+<Note>
+**How many instances can I create?** Lead Agent allows up to 3 instances in total, active and inactive combined. Data Quality Agent, Duplicate Agent, and Sales Assistant Agent each allow only 1 instance per user. The limit counts inactive instances too - deactivating one doesn't free up a slot, only deleting it does.
+</Note>
+
+![Browse agents keeps a + New instance option for agents that allow more than one -screenshot][img5]
+
+## Manage an instance
+
+Only the instance's owner (its creator) can edit its settings, activate or deactivate it, or delete it.
+
+* **Edit settings** - select the edit (pencil) button in the instance header to open the same step-by-step dialog used at setup. Changes apply from the next run.
+
+    ![The edit dialog as an approver sees it (read-only), and as the owner sees it (editable) -screenshot][img6]
+
+* **Notify** - every user who can see an instance has their own **Notify** bell toggle in the instance header. Muting only affects that person; the instance keeps running for everyone else.
+
+    ![The per-user Notify toggle -screenshot][img7]
+
+* **Activate or deactivate** - use the **Active** toggle in the instance's three-dots menu.
+
+    <Warning>
+    Deactivating an instance while tasks are awaiting review discards all of them. This can't be undone.
+    </Warning>
+
+    ![Deactivating from the three-dots menu, with the pending-approvals warning -screenshot][img8]
+
+* **Delete** - available once an instance is deactivated, from the same three-dots menu.
+
+    <Danger>
+    Deleting an instance is permanent - all of that instance's data is removed.
+    </Danger>
+
+    ![Deleting an instance from the three-dots menu and the confirmation -screenshot][img9]
+
+* **About this agent** - select **About** from the three-dots menu for a read-only summary: display name, agent type, owner, activation date, schedule, and approvers.
+
+    ![The About this agent summary -screenshot][img10]
+
+## Set up Lead Agent {#set-up-lead-agent}
+
+Lead Agent's setup wizard has 4 steps. Steps marked with an asterisk are required and must be completed before you can save.
+
+| # | Step | What it covers |
+|---|---|---|
+| 1 | General settings | Name, region and language, schedule, daily volume, add contacts |
+| 2 | Ideal customer\* | Instructions that define a good lead |
+| 3 | Sources\* | News sources to scan, plus enrichment sources |
+| 4 | Approvers\* | Who reviews and approves the leads |
+
+### 1. General settings
+
+* **Name** - identifies the instance; it must be unique and can't be changed after activation.
+* **Description** - pre-filled with a suggested summary; edit it if you'd like something different.
+* **Country** - defaults to your organization's home country. It sets both the business registries the agent searches and the country whose leads are scanned by default.
+* **Reporting language** - the language the agent writes its reports and chat replies in.
+* **Schedule** - the agent runs **Daily**, automatically once a day at a system-assigned time.
+* **Max tasks per day** - caps how many approval tasks the agent creates each day (1, 2, 5, 10, 15, 20, 25, or 30; default 10), so the review volume stays manageable.
+* **Add contacts** - when on, the agent also sources contact persons related to each lead, including their email and phone details. When off, it works at company level only.
+
+<Note>
+**Your ideal customer profile's location wins over Country.** The **Country** you pick here is only the default. For example, if you select Germany but name France in your ideal customer profile, the agent searches French business registries and scans French leads.
+</Note>
+
+![The Lead Agent setup wizard, General settings -screenshot][img11]
+
+### 2. Ideal customer
+
+This defines who counts as a good lead and how the agent should behave.
+
+**Instructions** - in plain language, describe the customers you want and how the agent should work. Be specific, for example: *Focus on companies showing growth signals - recent funding, new offices, or hiring.*
+
+<Tip>
+Be specific about what matters - industry, size, region - and include disqualifiers, such as "not public sector." You can refine this at any time; changes apply to future runs.
+</Tip>
+
+![Defining your ideal customer -screenshot][img12]
+
+### 3. Sources
+
+* **News sources** - public sources the agent scans for leads and buying signals. Add each one with a label and a web address.
+* **Enrichment sources** - used to verify and enrich each lead:
+  * **Built-in sources** - business registries selected automatically for your country, for example Brønnøysundregistret for Norway or Northdata for Germany.
+  * **Leadfeeder** - a B2B company-data service used to enrich discovered leads and prioritize them more accurately. It's on by default for new instances; turn it off if you'd rather rely on web scraping alone.
+
+![The Sources step, with enrichment sources including Leadfeeder -screenshot][img13]
+
+### 4. Approvers
+
+Choose who reviews and approves the leads this agent surfaces. Approving a lead makes that person the lead's owner. For Lead Agent, the approver can be someone other than the instance owner.
+
+How leads are **shared** between approvers depends on how many you add:
+
+* **One approver** - every lead goes to that person; the sharing setting is disabled.
+* **Two or more approvers, or a group**:
+  * **First come, first served** - the first person to act owns the lead; it clears from the others' queue.
+  * **Round-robin** - each new lead goes to the next approver in turn.
+
+<Warning>
+The **First come, first served** / **Round-robin** choice is set when you create the instance and can't be changed afterwards. You can still add or remove approvers.
+</Warning>
+
+![Choosing approvers -screenshot][img14]
+
+Select **Save** on the last step to activate the instance.
+
+[img1]: /media/loc/en/ai/open-agents-area.png
+[img2]: /media/loc/en/ai/enable-ai-functions.png
+[img3]: /media/loc/en/ai/browse-agents.png
+[img4]: /media/loc/en/ai/instances-popover.png
+[img5]: /media/loc/en/ai/new-instance.png
+[img6]: /media/loc/en/ai/edit-dialog-owner-approver.png
+[img7]: /media/loc/en/ai/notify-toggle.png
+[img8]: /media/loc/en/ai/deactivate-agent.png
+[img9]: /media/loc/en/ai/delete-instance.png
+[img10]: /media/loc/en/ai/about-this-agent.png
+[img11]: /media/loc/en/ai/lead-wizard-general.png
+[img12]: /media/loc/en/ai/lead-wizard-ideal-customer.png
+[img13]: /media/loc/en/ai/lead-wizard-sources.png
+[img14]: /media/loc/en/ai/lead-wizard-approvers.png

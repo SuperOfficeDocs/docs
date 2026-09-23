@@ -1,0 +1,101 @@
+---
+uid: help-nl-work-with-lead-agent
+title: Werken met Lead Agent
+description: Beoordeel en keur de prospects goed die Lead Agent vindt, met behulp van de tabbladen Chat, Geschiedenis en Prestaties.
+keywords: ['lead agent', 'prospectrapport', 'AI-agents']
+author: digitaldiina, Claudia Dias
+date: 10.01.2026
+so_version: 12.5
+content_type: howto
+license: aiplatform
+tier: plus
+pilot: yes
+category: sale
+topic: lead
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Lead Agent: /nl/ai/learn/lead-agent
+  - Lead Agent instellen: /nl/ai/admin/set-up-ai-agents#set-up-lead-agent
+  - Overzicht leadbeheer: /nl/lead/learn/index
+language: nl
+---
+
+<Note>
+Lead Agent komt binnenkort beschikbaar. Deze pagina beschrijft een functie die nog niet algemeen beschikbaar is.
+</Note>
+
+Zodra Lead Agent is ingesteld, werkt het op de achtergrond en brengt het prospects naar u toe voor beoordeling. Deze pagina behandelt het beoordelen en goedkeuren van wat het vindt. Zie voor het instellen [Lead Agent instellen][1].
+
+## De werkruimte: drie tabbladen
+
+Open een instantie vanuit **Mijn agents** of de kaart ervan om de werkruimte te zien. Bovenaan staan drie tabbladen, en rechts een **Melden**-schakelaar, een bewerkknop en een menu met drie puntjes.
+
+| Tabblad | Waarvoor het dient |
+|---|---|
+| Chat | Praat met de agent en beoordeel gevonden leads. |
+| Geschiedenis | Een gedetailleerd logboek van alles wat de agent heeft gedaan. Alleen zichtbaar voor de eigenaar en de goedkeurders ervan. |
+| Prestaties | Prestatieoverzichten voor de instantie over een gekozen periode. |
+
+![De werkruimte van Lead Agent en de drie tabbladen -screenshot][img1]
+
+## Leads beoordelen in Chat
+
+Het tabblad **Chat** organiseert alles in threads aan de linkerkant:
+
+* **Algemene chat** - een vrij gesprek met de agent. Vraag het om een specifiek bedrijf te onderzoeken, en kijk hoe het de stappen doorloopt. Als het op deze manier een echte lead vindt, maakt het hiervoor een normale goedkeuringstaak aan, net als bij een lead die is gevonden tijdens de dagelijkse geplande uitvoering.
+* **Leadthreads** - elke gevonden prospect komt binnen als een eigen thread, genoemd naar het bedrijf. Hier keurt u de lead goed of af.
+
+![Het tabblad Chat - Algemene chat en leadthreads per bedrijf -screenshot][img2]
+
+### Het prospectrapport
+
+Het openen van een leadthread toont het prospectrapport van de agent. Dit opent samengevouwen tot de essentie: een fitbeoordeling, de bronnen die het gebruikte, en belangrijke statistieken.
+
+Selecteer **Rapport uitvouwen** om de volledige uitwerking te zien: een bedrijfssamenvatting, het bedrijfsrecord dat zou worden opgeslagen (naam, branche, adres, land, telefoon, e-mail, website en eventuele gevonden contactpersonen), en waarom het een goede fit is, met vermelding van de bronnen.
+
+Selecteer het documentpictogram om het rapport als PDF te downloaden, of **Rapport samenvouwen** om terug te gaan naar de samenvattingsweergave.
+
+![Een prospectrapport, samengevouwen en uitgevouwen -screenshot][img3]
+
+### Goedkeuren of afwijzen
+
+Boven de knop **Goedkeuren** kunt u met het veld **Kies of maak een statische selectie** optioneel een bestaande statische SuperOffice-selectie kiezen, of er direct een maken. Als u een selectie kiest of maakt voordat u goedkeurt, worden het bedrijf en eventuele contactpersonen op het moment van goedkeuring eraan toegevoegd.
+
+Dezelfde kiezer is beschikbaar bij **bulk-goedkeuring** van meerdere leads tegelijk: houd Ctrl/Cmd ingedrukt om meerdere openstaande leads te selecteren, en keur ze samen goed of af. Kies een selectie eenmalig en deze geldt voor elk bedrijf dat in die batch wordt goedgekeurd.
+
+![Een goedgekeurd bedrijf toevoegen aan een statische selectie -screenshot][img4]
+
+**Goedkeuren** - een bevestiging geeft precies aan wat er zal gebeuren, bijvoorbeeld welke velden worden toegevoegd aan een nieuw bedrijfsrecord. Bevestig, en het bedrijf, en eventuele contactpersonen, worden opgeslagen in SuperOffice met de goedkeurder als eigenaar. Er worden ook twee notities toegevoegd aan het nieuwe bedrijfsrecord: een notitie Bedrijfssamenvatting en een notitie Productaanbod.
+
+**Afwijzen** - de lead wordt overgeslagen en er wordt niets opgeslagen.
+
+![Een lead goedkeuren en een lead afwijzen -screenshot][img5]
+
+## Geschiedenis en Prestaties
+
+Het tabblad **Geschiedenis** is een gedetailleerd logboek van alles wat de agent heeft gedaan: verwerkte bedrijven, beoordelingen, rapporten ter goedkeuring verstuurd, opgeslagen prospects, en eventuele overgeslagen items, met de reden. Gebruik **Filteren** om dit te versmallen op datumbereik.
+
+![Het tabblad Geschiedenis en de periodefilter -screenshot][img6]
+
+Het tabblad **Prestaties** toont hoe de instantie presteert over een door u gekozen periode: verwerkte links, gekwalificeerde leads, onderzochte leads, ter goedkeuring verstuurde leads, goedgekeurd, afgewezen, verlopen, en voltooide uitvoeringen. Elke metriek wordt weergegeven als een trendgrafiek.
+
+![Het tabblad Prestaties -screenshot][img7]
+
+## Probleemoplossing
+
+**Een lead die ik aan het beoordelen was, is verdwenen.** Een lead die op goedkeuring wacht, heeft een beperkte levensduur - standaard 30 dagen. Zodra deze binnen 5 dagen van het verlopen zit, verschijnt er een afteltelling op de thread. Als deze niet op tijd wordt goedgekeurd of afgewezen, verloopt deze automatisch en gaat de agent verder; er wordt niets opgeslagen in uw CRM voor een verlopen lead.
+
+**Ik heb de instantie gedeactiveerd en mijn openstaande leads zijn verdwenen.** Het deactiveren van een instantie verwijdert alle leads die op goedkeuring wachten. Keur eerst goed of af wat u wilt behouden.
+
+**Ik kan de instellingen van een instantie zien, maar niets wijzigen.** U bent een goedkeurder, niet de eigenaar. Alleen de eigenaar van de instantie kan wijzigingen in de instelling opslaan; een goedkeurder die niet de eigenaar is, kan de configuratie bekijken maar niet bewerken.
+
+[1]: /nl/ai/admin/set-up-ai-agents#set-up-lead-agent
+
+[img1]: /media/loc/en/ai/lead-workspace-tabs.png
+[img2]: /media/loc/en/ai/lead-chat-threads.png
+[img3]: /media/loc/en/ai/lead-prospect-report.png
+[img4]: /media/loc/en/ai/lead-static-selection.png
+[img5]: /media/loc/en/ai/lead-approve-reject.png
+[img6]: /media/loc/en/ai/lead-history.png
+[img7]: /media/loc/en/ai/lead-performance.png

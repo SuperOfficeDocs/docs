@@ -93,10 +93,12 @@
       "en/ai/learn/text-analysis",
       "en/ai/learn/categorization",
       "en/ai/learn/workspace-assist",
+      "en/ai/learn/lead-agent",
       {
         "group": "For administrators",
         "pages": [
-          "en/ai/admin/set-up-categorization"
+          "en/ai/admin/set-up-categorization",
+          "en/ai/admin/set-up-ai-agents"
         ]
       }
     ]
@@ -503,6 +505,7 @@
     "root": "en/lead/learn/index",
     "pages": [
       "en/lead/learn/work-with-leads",
+      "en/lead/learn/work-with-lead-agent",
       {
         "group": "For administrators",
         "root": "en/lead/admin/index",

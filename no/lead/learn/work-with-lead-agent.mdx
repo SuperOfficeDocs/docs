@@ -1,0 +1,101 @@
+---
+uid: help-no-work-with-lead-agent
+title: Arbeid med Lead Agent
+description: Gjennomgå og godkjenn prospektene Lead Agent finner, ved hjelp av fanene Chat, Historikk og Ytelse.
+keywords: ['lead agent', 'prospektrapport', 'AI agents']
+author: digitaldiina, Claudia Dias
+date: 10.01.2026
+so_version: 12.5
+content_type: howto
+license: aiplatform
+tier: plus
+pilot: yes
+category: sale
+topic: lead
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Lead Agent: /no/ai/learn/lead-agent
+  - Sett opp Lead Agent: /no/ai/admin/set-up-ai-agents#set-up-lead-agent
+  - Oversikt over leadhåndtering: /no/lead/learn/index
+language: no
+---
+
+<Note>
+Lead Agent kommer snart. Denne siden beskriver en funksjon som ennå ikke er allment tilgjengelig.
+</Note>
+
+Når Lead Agent er satt opp, kjører den i bakgrunnen og bringer prospekter til deg for gjennomgang. Denne siden dekker gjennomgang og godkjenning av det den finner. For oppsett, se [Sett opp Lead Agent][1].
+
+## Arbeidsområdet: tre faner
+
+Åpne en instans fra **Mine agenter** eller kortet dens for å se arbeidsområdet. Øverst er det tre faner, og til høyre en **Varsle**-vekslebryter, en rediger-knapp og en tre-punkts-meny.
+
+| Fane | Hva den er til |
+|---|---|
+| Chat | Snakk med agenten og gjennomgå oppdagede leads. |
+| Historikk | En detaljert logg over alt agenten har gjort. Vises bare til eieren og godkjennerne. |
+| Ytelse | Ytelsesvisninger for instansen over en valgt periode. |
+
+![Lead Agent-arbeidsområdet og dets tre faner -screenshot][img1]
+
+## Gjennomgå leads i Chat
+
+**Chat**-fanen organiserer alt i tråder til venstre:
+
+* **Generell chat** - en fri samtale med agenten. Be den se nærmere på et bestemt firma, og se den jobbe seg gjennom trinnene. Hvis den finner en reell lead på denne måten, oppretter den en vanlig godkjenningsoppgave for den, akkurat som en lead funnet i den daglige planlagte kjøringen.
+* **Lead-tråder** - hvert oppdagede prospekt kommer som sin egen tråd, oppkalt etter firmaet. Her godkjenner eller avviser du leaden.
+
+![Chat-fanen - Generell chat og lead-tråder per firma -screenshot][img2]
+
+### Prospektrapporten
+
+Å åpne en lead-tråd viser agentens prospektrapport. Den åpnes i kompakt visning med bare det viktigste: en treffgrad, kildene den brukte, og nøkkeltall.
+
+Velg **Utvid rapport** for å se hele utredningen: et firmasammendrag, firmaposten som ville blitt lagret (navn, virksomhet, adresse, land, telefon, e-post, nettside og eventuelle kontaktpersoner funnet), og hvorfor det er en god match, med henvisning til kildene.
+
+Velg dokument-ikonet for å laste ned rapporten som en PDF, eller **Skjul rapport** for å gå tilbake til sammendragsvisningen.
+
+![En prospektrapport, i kompakt og utvidet visning -screenshot][img3]
+
+### Godkjenn eller avvis
+
+Over **Godkjenn**-knappen lar feltet **Velg eller opprett et statisk utvalg** deg valgfritt velge et eksisterende SuperOffice-statisk utvalg, eller opprette ett direkte. Hvis du velger eller oppretter et utvalg før du godkjenner, legges firmaet, og eventuelle kontaktpersoner, til i det i det øyeblikket du godkjenner.
+
+Den samme velgeren er tilgjengelig ved **massegodkjenning** av flere leads samtidig: hold nede Ctrl/Cmd for å velge flere ventende leads, og godkjenn eller avvis dem sammen. Velg et utvalg én gang, så gjelder det for alle firmaer godkjent i den batchen.
+
+![Legge til et godkjent firma i et statisk utvalg -screenshot][img4]
+
+**Godkjenn** - en bekreftelse spesifiserer nøyaktig hva som vil skje, for eksempel feltene som legges til i en ny firmapost. Bekreft, og firmaet, og eventuelle kontaktpersoner, lagres i SuperOffice med godkjenneren som eier. To notater legges også til den nye firmaposten: et Firmasammendrag-notat og et Produkttilbud-notat.
+
+**Avvis** - leaden hoppes over og ingenting lagres.
+
+![Godkjenne en lead og avvise en lead -screenshot][img5]
+
+## Historikk og Ytelse
+
+**Historikk**-fanen er en detaljert logg over alt agenten har gjort: firmaer behandlet, vurderinger, rapporter sendt til godkjenning, prospekter lagret, og eventuelle elementer hoppet over, med årsak. Bruk **Filter** for å avgrense det etter datoperiode.
+
+![Historikk-fanen og periodefilteret -screenshot][img6]
+
+**Ytelse**-fanen viser hvordan instansen presterer over en periode du velger: lenker behandlet, leads kvalifisert, leads undersøkt, leads sendt til godkjenning, godkjent, avvist, utløpt, og kjøringer fullført. Hver metrikk vises som et trenddiagram.
+
+![Ytelse-fanen -screenshot][img7]
+
+## Feilsøking
+
+**En lead jeg gjennomgikk, forsvant.** En lead som venter på godkjenning, har en begrenset levetid - 30 dager som standard. Når den er innenfor 5 dager fra å utløpe, vises et nedtellingsbanner på tråden. Hvis den ikke godkjennes eller avvises i tide, utløper den automatisk og agenten går videre; ingenting lagres i CRM-en din for en utløpt lead.
+
+**Jeg deaktiverte instansen, og de ventende leadene mine er borte.** Å deaktivere en instans forkaster alle leads som venter på godkjenning. Godkjenn eller avvis det du trenger først, hvis du vil beholde det.
+
+**Jeg kan se innstillingene til en instans, men kan ikke endre noe.** Du er en godkjenner, ikke eieren. Bare instansens eier kan lagre endringer i oppsettet; en godkjenner som ikke er eieren, kan se konfigurasjonen, men ikke redigere den.
+
+[1]: /no/ai/admin/set-up-ai-agents#set-up-lead-agent
+
+[img1]: /media/loc/en/ai/lead-workspace-tabs.png
+[img2]: /media/loc/en/ai/lead-chat-threads.png
+[img3]: /media/loc/en/ai/lead-prospect-report.png
+[img4]: /media/loc/en/ai/lead-static-selection.png
+[img5]: /media/loc/en/ai/lead-approve-reject.png
+[img6]: /media/loc/en/ai/lead-history.png
+[img7]: /media/loc/en/ai/lead-performance.png

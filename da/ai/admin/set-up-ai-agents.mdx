@@ -1,0 +1,181 @@
+---
+uid: help-da-ai-agents-setup
+title: Opsæt AI-agenter
+description: Sådan åbner du Agenter-området, aktiverer en agent, opretter og administrerer en instans, og opsætter hver enkelt AI-agent.
+keywords: ['AI-agenter', 'agentinstans', 'aktiver agent', 'Lead Agent']
+author: digitaldiina, Claudia Dias
+date: 10.01.2026
+so_version: 12.5
+content_type: tutorial
+license: aiplatform
+tier: plus
+pilot: yes
+category: automation
+topic: ai
+platform: web
+deployment: online
+audience: settings
+audience_tooltip: Indstillinger og vedligeholdelse
+related:
+  - Lead Agent: /da/ai/learn/lead-agent
+  - Arbejd med Lead Agent: /da/lead/learn/work-with-lead-agent
+  - Andre AI-tjenester: /da/ai/learn/index
+language: da
+---
+
+<Note>
+SuperOffices AI-agenter kommer snart. Denne side beskriver opsætningstrin for en funktion, der endnu ikke er generelt tilgængelig.
+</Note>
+
+SuperOffices AI-agenter arbejder i baggrunden og foreslår resultater, som en person skal godkende, før noget ændres i SuperOffice. Hver agent åbnes, aktiveres og administreres på samme måde. Denne side gennemgår disse fælles trin én gang og derefter et afsnit pr. agent for det, der er specifikt for at opsætte den.
+
+## Åbn Agenter-området
+
+1. Log ind på SuperOffice CRM, og vælg **Agenter** i venstre menu.
+1. Vælg **Log ind** for at åbne Agenter-området.
+
+    ![Åbning af Agenter-området - vælg Agenter i venstre menu, derefter Log ind -screenshot][img1]
+
+<Tip>
+Kan du ikke se **Agenter** i menuen? Menupunktet vises kun, når **Aktivér AI-funktioner i SuperOffice** er sat til **Ja** i globale CRM-præferencer. Gå til **Indstillinger og vedligeholdelse** > **Præferencer** > **Globale præferencer** > **AI** > **Aktivér AI-funktioner i SuperOffice**.
+</Tip>
+
+![Aktivér AI-funktioner i SuperOffice skal være sat til Ja -screenshot][img2]
+
+## Find og aktivér en agent
+
+Siden Oversigt viser et opstartssæt af agentkort. Sådan ser du hver agent, der indgår i dit abonnement:
+
+1. Vælg **Gennemse agenter** øverst til højre på Oversigt.
+1. Brug søgefeltet eller kategorifiltrene til at finde den agent, du ønsker.
+1. Vælg **Aktivér** for at gå direkte til den agents opsætningsguide og oprette din første **instans** - en konfigureret, kørende kopi af agenten.
+
+![Oversigts standardkort og skuffen Gennemse agenter -screenshot][img3]
+
+<Note>
+**Gennemse agenter** viser kun agenter, der indgår i dit abonnements plan. Hvis en agent, du forventer, ikke er på listen, skal du kontakte din SuperOffice-administrator eller -partner.
+</Note>
+
+Når en agent har mindst én instans, viser dens kort et **N aktive**-link i stedet for **Aktivér** - vælg det for at se den agents instanser, grupperet i Aktive og Inaktive, og gå ind i en af dem. For agenter, der tillader mere end én instans, forbliver en **+ Ny instans**-knap ved siden af linket, så du kan tilføje en mere når som helst.
+
+![Instans-popoveren på et agentkort -screenshot][img4]
+
+<Note>
+**Hvor mange instanser kan jeg oprette?** Lead Agent tillader op til 3 instanser i alt, aktive og inaktive tilsammen. Data Quality Agent, Duplicate Agent og Sales Assistant Agent tillader hver kun 1 instans pr. bruger. Grænsen tæller også inaktive instanser - at deaktivere en frigør ikke en plads, kun sletning gør.
+</Note>
+
+![Gennemse agenter beholder en + Ny instans-mulighed for agenter, der tillader mere end én -screenshot][img5]
+
+## Administrér en instans
+
+Kun instansens ejer (den, der oprettede den) kan redigere dens indstillinger, aktivere eller deaktivere den, eller slette den.
+
+* **Redigér indstillinger** - vælg redigeringsknappen (blyanten) i instansens header for at åbne den samme trin-for-trin-dialog, der bruges ved opsætning. Ændringer træder i kraft fra næste kørsel.
+
+    ![Redigeringsdialogen som en godkender ser den (skrivebeskyttet), og som ejeren ser den (redigerbar) -screenshot][img6]
+
+* **Notifikation** - hver bruger, der kan se en instans, har sin egen **Notifikation**-klokke i instansens header. At slå den fra påvirker kun den pågældende person; instansen fortsætter med at køre for alle andre.
+
+    ![Den brugerspecifikke Notifikation-kontakt -screenshot][img7]
+
+* **Aktivér eller deaktivér** - brug **Aktiv**-kontakten i instansens tre-prikker-menu.
+
+    <Warning>
+    Hvis du deaktiverer en instans, mens opgaver afventer gennemgang, kasseres alle disse. Dette kan ikke fortrydes.
+    </Warning>
+
+    ![Deaktivering fra tre-prikker-menuen, med advarslen om afventende godkendelser -screenshot][img8]
+
+* **Slet** - tilgængelig, når en instans er deaktiveret, fra samme tre-prikker-menu.
+
+    <Danger>
+    Sletning af en instans er permanent - al data for den instans fjernes.
+    </Danger>
+
+    ![Sletning af en instans fra tre-prikker-menuen og bekræftelsen -screenshot][img9]
+
+* **Om denne agent** - vælg **Om** fra tre-prikker-menuen for et skrivebeskyttet resumé: visningsnavn, agenttype, ejer, aktiveringsdato, tidsplan og godkendere.
+
+    ![Resuméet Om denne agent -screenshot][img10]
+
+## Opsæt Lead Agent {#set-up-lead-agent}
+
+Lead Agents opsætningsguide har 4 trin. Trin markeret med en stjerne er obligatoriske og skal udfyldes, før du kan gemme.
+
+| # | Trin | Hvad det dækker |
+|---|---|---|
+| 1 | Generelle indstillinger | Navn, region og sprog, tidsplan, dagligt volumen, tilføj kontakter |
+| 2 | Ideel kunde\* | Instruktioner, der definerer et godt lead |
+| 3 | Kilder\* | Nyhedskilder, der skal scannes, samt berigelseskilder |
+| 4 | Godkendere\* | Hvem der gennemgår og godkender leads |
+
+### 1. Generelle indstillinger
+
+* **Navn** - identificerer instansen; det skal være unikt og kan ikke ændres efter aktivering.
+* **Beskrivelse** - forudfyldt med et foreslået resumé; redigér den, hvis du gerne vil have noget andet.
+* **Land** - som standard din organisations hjemland. Det bestemmer både de virksomhedsregistre, agenten søger i, og det land, hvis leads scannes som standard.
+* **Rapporteringssprog** - det sprog, agenten skriver sine rapporter og chatsvar på.
+* **Tidsplan** - agenten kører **Dagligt**, automatisk én gang om dagen på et systemtildelt tidspunkt.
+* **Maks. opgaver pr. dag** - begrænser, hvor mange godkendelsesopgaver agenten opretter hver dag (1, 2, 5, 10, 15, 20, 25 eller 30; standard 10), så gennemgangsvolumen forbliver overskuelig.
+* **Tilføj kontakter** - når slået til, finder agenten også kontaktpersoner relateret til hvert lead, inklusive deres e-mail- og telefonoplysninger. Når slået fra, arbejder den kun på firmaniveau.
+
+<Note>
+**Din ideelle kundeprofils placering vinder over Land.** **Land**, du vælger her, er kun standardværdien. Hvis du for eksempel vælger Tyskland, men angiver Frankrig i din ideelle kundeprofil, søger agenten i franske virksomhedsregistre og scanner franske leads.
+</Note>
+
+![Lead Agents opsætningsguide, Generelle indstillinger -screenshot][img11]
+
+### 2. Ideel kunde
+
+Dette definerer, hvad der tæller som et godt lead, og hvordan agenten bør opføre sig.
+
+**Instruktioner** - beskriv i almindeligt sprog de kunder, du ønsker, og hvordan agenten skal arbejde. Vær specifik, for eksempel: *Fokusér på firmaer, der viser vækstsignaler - ny finansiering, nye kontorer eller ansættelser.*
+
+<Tip>
+Vær specifik omkring, hvad der betyder noget - branche, størrelse, region - og inkludér diskvalifikationskriterier, såsom "ikke offentlig sektor." Du kan til enhver tid finjustere dette; ændringer gælder for fremtidige kørsler.
+</Tip>
+
+![Definition af din ideelle kunde -screenshot][img12]
+
+### 3. Kilder
+
+* **Nyhedskilder** - offentlige kilder, agenten scanner for leads og købssignaler. Tilføj hver enkelt med en etiket og en webadresse.
+* **Berigelseskilder** - bruges til at verificere og berige hvert lead:
+  * **Indbyggede kilder** - virksomhedsregistre valgt automatisk for dit land, for eksempel Brønnøysundregistret for Norge eller Northdata for Tyskland.
+  * **Leadfeeder** - en B2B-virksomhedsdatatjeneste, der bruges til at berige fundne leads og prioritere dem mere præcist. Den er slået til som standard for nye instanser; slå den fra, hvis du hellere vil stole på webscraping alene.
+
+![Trinnet Kilder, med berigelseskilder inklusive Leadfeeder -screenshot][img13]
+
+### 4. Godkendere
+
+Vælg, hvem der gennemgår og godkender de leads, denne agent finder. At godkende et lead gør den person til leadets ejer. For Lead Agent kan godkenderen være en anden end instansens ejer.
+
+Hvordan leads **deles** mellem godkendere afhænger af, hvor mange du tilføjer:
+
+* **Én godkender** - alle leads går til den person; delingsindstillingen er deaktiveret.
+* **To eller flere godkendere, eller en gruppe**:
+  * **Først til mølle** - den første person, der handler, ejer leadet; det forsvinder fra de andres kø.
+  * **Round-robin** - hvert nyt lead går til den næste godkender i rækkefølgen.
+
+<Warning>
+Valget mellem **Først til mølle** og **Round-robin** angives, når du opretter instansen, og kan ikke ændres bagefter. Du kan stadig tilføje eller fjerne godkendere.
+</Warning>
+
+![Valg af godkendere -screenshot][img14]
+
+Vælg **Gem** på det sidste trin for at aktivere instansen.
+
+[img1]: /media/loc/en/ai/open-agents-area.png
+[img2]: /media/loc/en/ai/enable-ai-functions.png
+[img3]: /media/loc/en/ai/browse-agents.png
+[img4]: /media/loc/en/ai/instances-popover.png
+[img5]: /media/loc/en/ai/new-instance.png
+[img6]: /media/loc/en/ai/edit-dialog-owner-approver.png
+[img7]: /media/loc/en/ai/notify-toggle.png
+[img8]: /media/loc/en/ai/deactivate-agent.png
+[img9]: /media/loc/en/ai/delete-instance.png
+[img10]: /media/loc/en/ai/about-this-agent.png
+[img11]: /media/loc/en/ai/lead-wizard-general.png
+[img12]: /media/loc/en/ai/lead-wizard-ideal-customer.png
+[img13]: /media/loc/en/ai/lead-wizard-sources.png
+[img14]: /media/loc/en/ai/lead-wizard-approvers.png
