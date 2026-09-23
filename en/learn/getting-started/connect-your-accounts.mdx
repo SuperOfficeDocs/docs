@@ -33,7 +33,7 @@ As a new user, or when setting up a new computer, you should connect your email 
 1. Click <i class="ph ph-user-circle" aria-label="Personal settings"></i> **Personal settings** in the upper-right corner.
 1. Select **User setup**.
 
-The wizard normally guides you through four steps. The number of steps you actually see can vary: if you are already signed in to SuperOffice with a Microsoft Entra ID account, and your organization has already granted consent for SuperOffice's email connection, the wizard connects your email account automatically and skips straight to connecting your document handler.
+The wizard normally guides you through four steps, but what you actually see depends on what is already set up for you. If you already have a working email connection, whether through SuperOffice Inbox or a Microsoft Entra ID sign-in your organization has already approved, the wizard skips the email step and goes straight to connecting your document handler. If your document handling is also already set up, either because your organization already uses SharePoint or Google Workspace for documents, or because the latest version of WebTools is already installed, the wizard does not appear at all.
 
 ## Step 1: Get started
 
@@ -87,9 +87,13 @@ Once connected, you can also choose whether new emails you create, and email add
 
 If your organization does not use Microsoft 365, or you would rather connect manually, see [Configure advanced settings][7] for the IMAP/SMTP setup option.
 
+If you skip connecting your email account, SuperOffice reminds you with a banner whenever you try to send an email or a meeting invitation, until you connect it. You can connect at any time from **Email options**.
+
 ## Step 3: Connect your document handler
 
 Your document handler controls how you create, open, and edit documents in SuperOffice.
+
+If your organization already uses SharePoint or Google Workspace for documents, or if the latest version of WebTools is already installed, this step is skipped. If WebTools is installed but out of date, the wizard shows an upgrade prompt instead of the installation steps below.
 
 Click **Download WebTools**, run the installer, and follow the on-screen instructions. WebTools connects your SuperOffice tenant to your local Office applications.
 

@@ -33,7 +33,7 @@ Som ny användare, eller när du konfigurerar en ny dator, bör du ansluta ditt 
 1. Klicka på <i class="ph ph-user-circle" aria-label="Personliga inställningar"></i> **Personliga inställningar** längst upp till höger.
 1. Välj **Användarinställningar**.
 
-Guiden leder dig normalt genom fyra steg. Antalet steg du ser kan variera: om du redan är inloggad i SuperOffice med ett Microsoft Entra ID-konto, och din organisation redan har gett sitt godkännande till SuperOffices e-postanslutning, ansluter guiden ditt e-postkonto automatiskt och går direkt vidare till att ansluta din dokumenthantering.
+Guiden leder dig normalt genom fyra steg, men vad du faktiskt ser beror på vad som redan är konfigurerat för dig. Om du redan har en fungerande e-postanslutning, antingen via SuperOffice Inbox eller en Microsoft Entra ID-inloggning som din organisation redan har godkänt, hoppar guiden över e-poststeget och går direkt vidare till att ansluta din dokumenthantering. Om din dokumenthantering också redan är konfigurerad, antingen eftersom din organisation redan använder SharePoint eller Google Workspace för dokument, eller eftersom den senaste versionen av WebTools redan är installerad, visas guiden inte alls.
 
 ## Steg 1: Kom igång
 
@@ -87,9 +87,13 @@ När du är ansluten kan du också välja om nya e-postmeddelanden du skapar, oc
 
 Om din organisation inte använder Microsoft 365, eller om du hellre vill ansluta manuellt, se [Konfigurera avancerade inställningar][7] för IMAP/SMTP-konfigurationen.
 
+Om du hoppar över att ansluta ditt e-postkonto påminner SuperOffice dig med en banner varje gång du försöker skicka ett e-postmeddelande eller en mötesinbjudning, tills du ansluter det. Du kan ansluta det när som helst under **Alternativ för e-post**.
+
 ## Steg 3: Anslut din dokumenthantering
 
 Din dokumenthantering styr hur du skapar, öppnar och redigerar dokument i SuperOffice.
+
+Om din organisation redan använder SharePoint eller Google Workspace för dokument, eller om den senaste versionen av WebTools redan är installerad, hoppas detta steg över. Om WebTools är installerat men inte uppdaterat visar guiden en uppgraderingsuppmaning i stället för installationsstegen nedan.
 
 Klicka på **Ladda ned WebTools**, kör installationsprogrammet och följ anvisningarna på skärmen. WebTools ansluter din SuperOffice-klientorganisation till dina lokala Office-program.
 
