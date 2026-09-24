@@ -28,6 +28,12 @@ Som ny bruger, eller når du opsætter en ny computer, bør du tilslutte din e-m
 * Sende mødeforslagsindkaldelser til eksterne modtagere og modtage invitationer fra andre.
 * Oprette, åbne og redigere dokumenter direkte fra SuperOffice.
 
+<Note>
+For at arbejde med **indgående** e-mails og få adgang til SuperOffice-funktionerne direkte i din e-mailklient skal du installere [SuperOffice for Outlook][3] (Microsoft 365) eller [SuperOffice Gmail Link][4] (Google Workspace) efter at have fuldført guiden.
+
+**Skifter du fra Outlook MailLink?** Microsoft udfaser teknologien bag Outlook MailLink, så den ikke længere vil være tilgængelig. [SuperOffice for Outlook][3] afløser den med et cloud-baseret add-in, der bevarer den samme velkendte arbejdsgang.
+</Note>
+
 ## Åbn guiden
 
 1. Klik på <i class="ph ph-user-circle" aria-label="Personlige indstillinger"></i> **Personlige indstillinger** øverst til højre.
@@ -41,55 +47,47 @@ Det første skærmbillede byder dig velkommen ved navn og opsummerer, hvad guide
 
 ![SuperOffice Brugeropsætning - velkomstskærm i guiden -screenshot][img1]
 
-## Trin 2: Tilslut din e-mailkonto
+## Trin 2: Tilslut din e-mailkonto {#email}
 
-Klik på **Tilslut**, indtast din e-mailadresse, og klik på **Næste**.
+Tilslutning af din e-mailkonto giver dig mulighed for at sende e-mails fra SuperOffice og automatisk arkivere udgående beskeder. Du kan også sende og acceptere mødeforslagsindkaldelser.
+
+1. Klik på **Tilslut**.
 
 ![SuperOffice Brugeropsætning - tilslut din e-mailkonto -screenshot][img2]
 
+1. Indtast din e-mailadresse, og klik på **Næste**.
+
 ![SuperOffice Brugeropsætning - indtast din e-mailadresse -screenshot][img3]
 
-![SuperOffice Brugeropsætning - e-mailadresse indtastet -screenshot][img4]
-
-Log ind med dine Microsoft 365-oplysninger. Hvis din organisation kræver multifaktorgodkendelse (MFA), skal du indtaste den bekræftelseskode, der vises i din godkendelsesapp.
+1. Log ind med dine e-mailkontooplysninger. Hvis din organisation kræver multifaktorgodkendelse (MFA), skal du indtaste den bekræftelseskode, der vises i din godkendelsesapp.
 
 ![SuperOffice Brugeropsætning - log ind med Microsoft -screenshot][img5]
 
 ![SuperOffice Brugeropsætning - indtast din MFA-kode -screenshot][img6]
 
-Når din konto er tilsluttet, vises den med et flueben. Klik på **Næste** for at fortsætte.
+1. Når din konto er tilsluttet, skal du klikke på **Næste** for at fortsætte.
 
 ![SuperOffice Brugeropsætning - e-mailkonto tilsluttet -screenshot][img7]
 
-Tilslutning af din e-mailkonto giver dig mulighed for at sende e-mails fra SuperOffice og automatisk arkivere udgående beskeder. Du kan også sende og acceptere mødeforslagsindkaldelser.
+### Hvis samtykke er påkrævet {#consent}
 
-<Note>
-For at arbejde med **indgående** e-mails og få adgang til SuperOffice-funktionerne direkte i din e-mailklient skal du installere [SuperOffice for Outlook][3] (Microsoft 365) eller [SuperOffice Gmail Link][4] (Google Workspace) efter at have fuldført guiden.
-</Note>
-
-<Note>
-**Skifter du fra Outlook MailLink?** Microsoft udfaser teknologien bag Outlook MailLink, så den ikke længere vil være tilgængelig. [SuperOffice for Outlook][3] afløser den med et cloud-baseret add-in, der bevarer den samme velkendte arbejdsgang.
-</Note>
-
-![SuperOffice Brugeropsætning - meddelelse om skift fra Outlook MailLink -screenshot][img8]
-
-### Hvis din e-mailkonto ikke kan tilsluttes
-
-Hvis du ikke er administrator for Microsoft 365, kan du se meddelelsen **Need admin approval**. Bed din administrator om at give samtykke til SuperOffices e-mailforbindelse, eller del linket på skærmen direkte med vedkommende. Se [Microsoft Graph-administratorsamtykke][1] for de trin, din administrator skal følge.
+Du kan se meddelelsen **Need admin approval**.
 
 ![SuperOffice Brugeropsætning - meddelelse om administratorgodkendelse -screenshot][img9]
 
-Hvis SuperOffice slet ikke kan oprette forbindelse til din e-mailkonto, ser du fejlen **We couldn't connect your email account** med et link, du kan kopiere og sende til din it-administrator. Dette link fører din administrator gennem den samme administratorsamtykkeproces, som er beskrevet i [Microsoft Graph-administratorsamtykke][1].
+* **Hvis du ikke er administrator for Microsoft 365:** Vælg den anden mulighed (**Return to the application without granting consent**), kopiér linket på skærmen, og del det med din administrator. Bed vedkommende om at give samtykke til SuperOffices e-mailforbindelse.
 
-![SuperOffice Brugeropsætning - fejl ved tilslutning af e-mailkonto -screenshot][img10]
+    ![SuperOffice Brugeropsætning - fejl ved tilslutning af e-mailkonto -screenshot][img10]
 
-Når du er tilsluttet, kan du også vælge, om nye e-mails du opretter, og e-mailadresser du klikker på, skal åbnes i dit eget lokale e-mailprogram i stedet for SuperOffices egen dialog. Aktivér dette under [Personlige indstillinger > Præferencer > E-mail][2] med præferencen **Use local email app for new email**.
+* **Hvis du *er* administrator:** Vælg den første mulighed, og følg trinnene i [Microsoft Graph-administratorsamtykke][1].
+
+### Hvis din e-mailkonto ikke kan tilsluttes {#advanced}
 
 Hvis din organisation ikke bruger Microsoft 365, eller du hellere vil oprette forbindelse manuelt, kan du se [Konfigurér avancerede indstillinger][7] for opsætning af IMAP/SMTP.
 
 Hvis du springer over at tilslutte din e-mailkonto, gør SuperOffice dig opmærksom på det med en banner, hver gang du forsøger at sende en e-mail eller en mødeforslagsindkaldelse, indtil du tilslutter den. Du kan tilslutte den når som helst under **E-mailindstillinger**.
 
-## Trin 3: Tilslut din dokumenthåndtering
+## Trin 3: Tilslut din dokumenthåndtering {#document}
 
 Din dokumenthåndtering styrer, hvordan du opretter, åbner og redigerer dokumenter i SuperOffice.
 
@@ -125,27 +123,32 @@ Det sidste skærmbillede viser status for din opsætning: om din e-mailkonto er 
 
 Du kan til enhver tid gennemføre eller opdatere disse indstillinger fra **Personlige indstillinger**.
 
+## Brug lokal e-mail-app
+
+Når du er tilsluttet, kan du også vælge, om nye e-mails du opretter, og e-mailadresser du klikker på, skal åbnes i dit eget lokale e-mailprogram i stedet for i SuperOffices egen dialog.
+
+1. Gå til **Personlige indstillinger** > **Præferencer** > **E-mail**.
+1. Aktivér præferencen **Use local email app for new email**.
+1. Klik på **Gem**.
+
 ## Synkroniser din kalender
 
 Synkronisering af din kalender er ikke en del af guiden. Hvis du ønsker at holde aftaler og opfølgninger synkroniserede mellem SuperOffice og din Outlook- eller Google-kalender, skal du opsætte [Synchronizer for SuperOffice][8] (tilgængelig i App Store).
 
 [1]: /en/online/mail-services/graph/index#grant-consent
-[2]: ./preferences
 [3]: /integrations/superoffice-for-outlook/index
 [4]: /integrations/gmail-link/index
 [5]: /integrations/sharepoint-documents/set-up
 [6]: /integrations/g-suite/index
 [7]: /da/email/inbox/learn/setup
 [8]: https://appstore.superoffice.com/infobridge-software-b-v-/synchronizer-for-superoffice
-[img1]: /media/loc/en/learn/superoffice-user-setup-1-welcome.png
-[img2]: /media/loc/en/learn/superoffice-user-setup-2-start.png
-[img3]: /media/loc/en/learn/superoffice-user-setup-2-email-address.png
-[img4]: /media/loc/en/learn/superoffice-user-setup-2-email-address-filled.png
-[img5]: /media/loc/en/learn/superoffice-user-setup-2-signin-password.png
-[img6]: /media/loc/en/learn/superoffice-user-setup-2-signin-mfa.png
-[img7]: /media/loc/en/learn/superoffice-user-setup-2-connected.png
-[img8]: /media/loc/en/learn/superoffice-user-setup-2-maillink-retirement.png
-[img9]: /media/loc/en/learn/superoffice-user-setup-2-admin-approval-needed.png
-[img10]: /media/loc/en/learn/superoffice-user-setup-2-connection-error.png
-[img11]: /media/loc/en/learn/superoffice-user-setup-3-download-webtools.png
-[img12]: /media/loc/en/learn/superoffice-user-setup-4-summary.png
+[img1]: /media/loc/en/learn/user-setup-1-welcome.png
+[img2]: /media/loc/en/learn/user-setup-2-start.png
+[img3]: /media/loc/en/learn/user-setup-2-email-address.png
+[img5]: /media/loc/en/learn/user-setup-2-signin-password.png
+[img6]: /media/loc/en/learn/user-setup-2-signin-mfa.png
+[img7]: /media/loc/en/learn/user-setup-2-connected.png
+[img9]: /media/loc/en/learn/user-setup-2-admin-approval-needed.png
+[img10]: /media/loc/en/learn/user-setup-2-connection-error.png
+[img11]: /media/loc/en/learn/user-setup-3-download-webtools.png
+[img12]: /media/loc/en/learn/user-setup-4-summary.png

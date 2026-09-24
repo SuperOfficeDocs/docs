@@ -28,6 +28,12 @@ As a new user, or when setting up a new computer, you should connect your email 
 * Send meeting invitations to external recipients and receive invitations from others.
 * Create, open, and edit documents directly from SuperOffice.
 
+<Note>
+To work with **incoming** emails and access SuperOffice features from within your email client, install [SuperOffice for Outlook][3] (Microsoft 365) or [SuperOffice Gmail Link][4] (Google Workspace) after completing the wizard.
+
+**Moving from Outlook MailLink?** Microsoft is retiring the technology behind Outlook MailLink, so it will no longer be available. [SuperOffice for Outlook][3] replaces it with a cloud-based add-in that keeps the same familiar workflow.
+</Note>
+
 ## Open the wizard
 
 1. Click <i class="ph ph-user-circle" aria-label="Personal settings"></i> **Personal settings** in the upper-right corner.
@@ -41,55 +47,47 @@ The first screen welcomes you by name and summarizes what the wizard will help y
 
 ![SuperOffice User setup - welcome screen of wizard -screenshot][img1]
 
-## Step 2: Connect your email account
+## Step 2: Connect your email account {#email}
 
-Click **Connect**, enter your email address, and click **Next**.
+Connecting your email account enables you to send emails from SuperOffice and archive outgoing messages automatically. You can also send and accept meeting invitations.
+
+1. Click **Connect**.
 
 ![SuperOffice User setup - connect to your email account -screenshot][img2]
 
+1. Enter your email address, and click **Next**.
+
 ![SuperOffice User setup - enter your email address -screenshot][img3]
 
-![SuperOffice User setup - email address entered -screenshot][img4]
-
-Sign in with your Microsoft 365 credentials. If your organization requires multi-factor authentication (MFA), enter the verification code shown in your authenticator app.
+1. Sign in with your email account credentials. If your organization requires multi-factor authentication (MFA), enter the verification code shown in your authenticator app.
 
 ![SuperOffice User setup - sign in with Microsoft -screenshot][img5]
 
 ![SuperOffice User setup - enter your MFA code -screenshot][img6]
 
-Once your account is connected, it is shown with a checkmark. Click **Next** to continue.
+1. Once your account is connected, click **Next** to continue.
 
 ![SuperOffice User setup - email account connected -screenshot][img7]
 
-Connecting your email account enables you to send emails from SuperOffice and archive outgoing messages automatically. You can also send and accept meeting invitations.
+### If approval is required {#consent}
 
-<Note>
-To work with **incoming** emails and access SuperOffice features from within your email client, install [SuperOffice for Outlook][3] (Microsoft 365) or [SuperOffice Gmail Link][4] (Google Workspace) after completing the wizard.
-</Note>
-
-<Note>
-**Moving from Outlook MailLink?** Microsoft is retiring the technology behind Outlook MailLink, so it will no longer be available. [SuperOffice for Outlook][3] replaces it with a cloud-based add-in that keeps the same familiar workflow.
-</Note>
-
-![SuperOffice User setup - moving from Outlook MailLink notice -screenshot][img8]
-
-### If your email account cannot be connected
-
-If you are not a Microsoft 365 administrator, you may see a **Need admin approval** message. Ask your administrator to grant consent for SuperOffice's email connection, or share the link shown on screen with them directly. See [Microsoft Graph admin consent][1] for the steps your administrator needs to follow.
+You may see a **Need admin approval** message.
 
 ![SuperOffice User setup - need admin approval message -screenshot][img9]
 
-If SuperOffice cannot connect to your email account at all, you will see a **We couldn't connect your email account** error, with a link you can copy and send to your IT administrator. This link takes your administrator through the same admin consent process described in [Microsoft Graph admin consent][1].
+* **If you are not a Microsoft 365 administrator:** Select the second option (**Return to the application without granting consent**), copy the link shown on screen, and share it with your administrator. Ask them to grant consent for SuperOffice's email connection.
 
-![SuperOffice User setup - email account connection error -screenshot][img10]
+    ![SuperOffice User setup - email account connection error -screenshot][img10]
 
-Once connected, you can also choose whether new emails you create, and email addresses you click, open in your own local email application instead of SuperOffice's own compose dialog. Enable this under [Personal settings > Preferences > Email][2], using the **Use local email app for new email** preference.
+* **If you *are* an administrator:** Select the first option and follow the steps in [Microsoft Graph admin consent][1].
+
+### If your email account cannot be connected {#advanced}
 
 If your organization does not use Microsoft 365, or you would rather connect manually, see [Configure advanced settings][7] for the IMAP/SMTP setup option.
 
 If you skip connecting your email account, SuperOffice reminds you with a banner whenever you try to send an email or a meeting invitation, until you connect it. You can connect at any time from **Email options**.
 
-## Step 3: Connect your document handler
+## Step 3: Connect your document handler {#document}
 
 Your document handler controls how you create, open, and edit documents in SuperOffice.
 
@@ -125,27 +123,32 @@ The final screen shows the status of your setup: whether your email account is c
 
 You can complete or update any of these settings at any time from **Personal settings**.
 
+## Use local email application
+
+Once connected, you can also choose whether new emails you create, and email addresses you click, open in your own local email application instead of SuperOffice's own compose dialog.
+
+1. Go to **Personal settings** > **Preferences** > **Email**.
+1. Enable the **Use local email app for new email** preference.
+1. Click **Save**.
+
 ## Synchronize your calendar
 
 Synchronizing your calendar is not part of the wizard. If you want to keep appointments and follow-ups in sync between SuperOffice and your Outlook or Google calendar, set up [Synchronizer for SuperOffice][8] (available from the App Store).
 
 [1]: /en/online/mail-services/graph/index#grant-consent
-[2]: ./preferences
 [3]: /integrations/superoffice-for-outlook/index
 [4]: /integrations/gmail-link/index
 [5]: /integrations/sharepoint-documents/set-up
 [6]: /integrations/g-suite/index
 [7]: /en/email/inbox/learn/setup#configure-advanced-settings
 [8]: https://appstore.superoffice.com/infobridge-software-b-v-/synchronizer-for-superoffice
-[img1]: /media/loc/en/learn/superoffice-user-setup-1-welcome.png
-[img2]: /media/loc/en/learn/superoffice-user-setup-2-start.png
-[img3]: /media/loc/en/learn/superoffice-user-setup-2-email-address.png
-[img4]: /media/loc/en/learn/superoffice-user-setup-2-email-address-filled.png
-[img5]: /media/loc/en/learn/superoffice-user-setup-2-signin-password.png
-[img6]: /media/loc/en/learn/superoffice-user-setup-2-signin-mfa.png
-[img7]: /media/loc/en/learn/superoffice-user-setup-2-connected.png
-[img8]: /media/loc/en/learn/superoffice-user-setup-2-maillink-retirement.png
-[img9]: /media/loc/en/learn/superoffice-user-setup-2-admin-approval-needed.png
-[img10]: /media/loc/en/learn/superoffice-user-setup-2-connection-error.png
-[img11]: /media/loc/en/learn/superoffice-user-setup-3-download-webtools.png
-[img12]: /media/loc/en/learn/superoffice-user-setup-4-summary.png
+[img1]: /media/loc/en/learn/user-setup-1-welcome.png
+[img2]: /media/loc/en/learn/user-setup-2-start.png
+[img3]: /media/loc/en/learn/user-setup-2-email-address.png
+[img5]: /media/loc/en/learn/user-setup-2-signin-password.png
+[img6]: /media/loc/en/learn/user-setup-2-signin-mfa.png
+[img7]: /media/loc/en/learn/user-setup-2-connected.png
+[img9]: /media/loc/en/learn/user-setup-2-admin-approval-needed.png
+[img10]: /media/loc/en/learn/user-setup-2-connection-error.png
+[img11]: /media/loc/en/learn/user-setup-3-download-webtools.png
+[img12]: /media/loc/en/learn/user-setup-4-summary.png
