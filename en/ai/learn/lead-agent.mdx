@@ -15,15 +15,15 @@ deployment: online
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
-  - Set up Lead Agent: /en/ai/admin/set-up-ai-agents#lead-agent
-  - Work with Lead Agent: /en/lead/learn/work-with-lead-agent
+  - /en/lead/learn/set-up-lead-agent
+  - /en/lead/learn/work-with-lead-agent
   - Other AI services: /en/ai/learn/index
 language: en
 ---
 
-<Note>
-Lead Agent is coming soon. This page describes a feature that is not generally available yet.
-</Note>
+import LeadAgentPilotNote from "../../../snippets/ai/lead-agent-pilot-note.mdx";
+
+<LeadAgentPilotNote />
 
 Lead Agent runs quietly in the background to keep your pipeline full. Each day, it finds companies that match your ideal customer, researches them, scores the fit, and builds a prospect report. A salesperson approves it before anything is saved to SuperOffice.
 
@@ -41,11 +41,5 @@ The agent proposes; a salesperson decides. Discovered companies and contacts are
 </Note>
 
 ![Lead Agent surfacing a matched prospect for approval][img1]
-
-<Note>
-Lead Agent requires [CRM Suite Plus][9] or above.
-</Note>
-
-[9]: /en/admin/license/crm-suite
 
 [img1]: /media/loc/en/ai/lead-agent-widget.png

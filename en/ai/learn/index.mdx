@@ -2,7 +2,7 @@
 uid: help-en-ai
 title: AI services
 description: Overview of artificial intelligence services in SuperOffice CRM
-keywords: ['artificial intelligence', 'AI Platform', 'machine learning', 'automation']
+keywords: ['artificial intelligence', 'AI Platform', 'machine learning', 'automation', 'insight', 'assist', 'agent', 'mcp', 'instance']
 author: digitaldiina
 date: 10.01.2026
 so_version: 12.4
@@ -16,14 +16,14 @@ deployment: online
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /en/ai/index
-boost: 1.5
+boost: 2
 related:
-  - Set up AI agents: /en/ai/admin/set-up-ai-agents
+  - /en/ai/learn/set-up-ai-agents
 language: en
 ---
 
 <Note>
-SuperOffice AI is available in CRM Online only. It requires the **AI Platform** add-on and specific service licenses. These services are billed monthly per active AI service.
+SuperOffice AI is available in CRM Online only. It requires the [CRMSuite][11] *or* the **AI Platform** add-on plus specific service licenses. These services are billed monthly per active AI service.
 </Note>
 
 SuperOffice AI helps automate routine tasks and reduce manual work by embedding artificial intelligence directly into the CRM. You can improve response times, reduce errors, and work more efficiently-without needing technical expertise or coding skills.
@@ -56,16 +56,21 @@ Newer AI capabilities follow a naming pattern that tells you how each one works:
 
 One configured, running copy of an agent is called an **instance**. Some agents allow more than one: Lead Agent allows up to 3, active and inactive combined. Others, such as Data Quality Agent, Duplicate Agent, and Sales Assistant Agent, allow only 1 instance per user. The limit counts inactive instances too: deactivating one does not free a slot, only deleting it does.
 
-## Open the Agents area {#open-the-agents-area}
+## Open the Agents area {#goto-agents}
 
-1. Sign in to SuperOffice CRM and select the **Agents** icon in the Navigator.
-1. Select **Log in** to open the Agents area.
+1. Select the <i class="ph ph-robot" aria-label="Agents icon"></i> **Agents** icon in the Navigator.
+
+    <Tip>
+    Do not see **Agents** in the Navigator? Ask your administrator to [enable AI functions][10].
+    </Tip>
+
+1. The first time, click **Log in** and approve access when prompted: select **I approve**.
 
     ![Opening the Agents area: select the Agents icon, then Log in -screenshot][img1]
 
-<Tip>
-Do not see **Agents** in the Navigator? Ask your administrator to enable it. See [Set up AI agents][10].
-</Tip>
+    ![Approving AI Agents' access to your SuperOffice installation -screenshot][img2]
+
+1. Proceed to [choose, activate, and set up your agents][10].
 
 [1]: /en/ai/learn/text-analysis
 [2]: /en/ai/learn/categorization
@@ -76,6 +81,8 @@ Do not see **Agents** in the Navigator? Ask your administrator to enable it. See
 [7]: /en/company/learn/create#company-insight
 [8]: /en/request/learn/handle-request-ai#reply-assist
 [9]: /en/ai/learn/lead-agent
-[10]: /en/ai/admin/set-up-ai-agents
+[10]: /en/ai/learn/set-up-ai-agents
+[11]: /en/admin/license/crm-suite
 
 [img1]: /media/loc/en/ai/open-agents-area.png
+[img2]: /media/loc/en/ai/approve-ai-agents.png

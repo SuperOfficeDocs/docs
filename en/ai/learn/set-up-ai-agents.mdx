@@ -1,0 +1,128 @@
+---
+title: Set up AI agents
+description: How to open the Agents area, activate an agent, and create and manage an instance. No admin access is needed - agent instances are personal, per user.
+keywords: ['agent instance', 'activate agent', 'Lead Agent']
+author: digitaldiina, Claudia Dias
+date: 10.01.2026
+so_version: 12.5
+content_type: tutorial
+tier: plus
+pilot: yes
+category: automation
+topic: ai
+platform: web
+deployment: online
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - /en/ai/learn/lead-agent
+  - /en/lead/learn/set-up-lead-agent
+  - Other AI services: /en/ai/learn/index
+language: en
+---
+
+<Note>
+SuperOffice's AI agents are coming soon. This page describes set-up steps for a feature that is not generally available yet.
+</Note>
+
+SuperOffice's AI agents work in the background and propose results for a person to approve. Every agent opens, activates, and is managed the same way. This page covers those shared steps once, then each agent has its own set-up page, for example [Set up Lead Agent][11].
+
+## Requirements
+
+* Your organization must be on **CRM Suite Plus** or above.
+* An administrator must [enable AI functions][10] in CRM global preferences before the **Agents** icon appears.
+
+<Note>
+Agent instances themselves are personal, per user. You do not need admin access or **Settings and maintenance** to create or manage one.
+</Note>
+
+See [Open the Agents area][12] for the sign-in steps.
+
+## Activate agent
+
+The **Agents** page shows a starter set of agent cards.
+
+![The Agents page's starter set of agent cards -screenshot][img2]
+
+To see every agent in your subscription:
+
+1. Select **Browse agents** in the top-right of the **Agents** page.
+1. Use the search box or the category filters to find the agent you want.
+1. Select **Activate** to open that agent's set-up wizard and create your first **instance**: one configured, running copy of the agent.
+
+![The Browse agents drawer, listing every agent in your subscription -screenshot][img3]
+
+<Note>
+**Browse agents** only shows agents included in your subscription tier. If an agent you expect is not listed, contact your SuperOffice administrator or partner.
+</Note>
+
+Once an agent has an instance, its card shows an **N active** link instead of **Activate**. Select it to see the agent's instances, grouped Active and Inactive, and open any of them.
+
+![The instances popover on an agent's card -screenshot][img4]
+
+<Note>
+See [Agent instances][13] for how many instances each agent allows.
+</Note>
+
+## Add instance
+
+Agents that allow more than one instance show a **+ New instance** button, so you can add another at any time.
+
+![Browse agents keeps a + New instance option for agents that allow more than one -screenshot][img5]
+
+## Manage an instance
+
+Only the instance's owner (its creator) can edit its settings, activate or deactivate it, or delete it.
+
+### Edit settings
+
+Select the edit (pencil) button in the instance header to open the same set-up dialog. Changes apply from the next run.
+
+![The edit dialog as an approver sees it (read-only), and as the owner sees it (editable) -screenshot][img6]
+
+### Mute notifications
+
+Every user with access to the instance has their own **Notify** bell toggle. Muting only affects that person; the instance keeps running for everyone else.
+
+![The per-user Notify toggle -screenshot][img7]
+
+### Activate or deactivate an instance
+
+Use the **Active** toggle in the instance's three-dots menu.
+
+<Warning>
+Deactivating an instance discards any tasks awaiting review. This cannot be undone.
+</Warning>
+
+![Deactivating from the three-dots menu, with the pending-approvals warning -screenshot][img8]
+
+### Delete an instance
+
+Available once an instance is deactivated, from the same three-dots menu.
+
+<Danger>
+Deleting an instance is permanent and removes all its data.
+</Danger>
+
+![Deleting an instance from the three-dots menu and the confirmation -screenshot][img9]
+
+### View instance details
+
+Select **About** from the three-dots menu for a read-only summary, including display name, agent type, owner, activation date, schedule, and approvers.
+
+![The About this agent summary -screenshot][img10]
+
+[10]: ../admin/index
+[11]: /en/lead/learn/set-up-lead-agent
+[12]: index#goto-agents
+[13]: index#agent-instances
+
+[img2]: /media/loc/en/ai/agents-overview-starter-cards.png
+[img3]: /media/loc/en/ai/browse-agents.png
+[img4]: /media/loc/en/ai/instances-popover.png
+[img5]: /media/loc/en/ai/new-instance.png
+[img6]: /media/loc/en/ai/edit-dialog-owner-approver.png
+[img7]: /media/loc/en/ai/notify-toggle.png
+[img8]: /media/loc/en/ai/deactivate-agent.png
+[img9]: /media/loc/en/ai/delete-instance.png
+[img10]: /media/loc/en/ai/about-this-agent.png
