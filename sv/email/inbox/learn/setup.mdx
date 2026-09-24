@@ -1,7 +1,7 @@
 ---
 uid: help-sv-email-inbox-setup
 title: Konfigurera inkorgen i SuperOffice
-description: Läs om hur du konfigurerar och loggar in på inkorgen i SuperOffice, med antingen Microsoft Graph eller manuella IMAP/SMTP-inställningar. Den här funktionen är ett alternativ till WebTools för att koppla din e-post till SuperOffice CRM.
+description: Läs om hur du konfigurerar och loggar in på inkorgen i SuperOffice, med antingen Microsoft Graph eller manuella IMAP/SMTP-inställningar. Den här funktionen är ett alternativ till SuperOffice för Outlook eller SuperOffice Gmail Link för att koppla din e-post till SuperOffice CRM.
 keywords: ['SuperOffice Inkorg', 'inkorgen i SuperOffice', 'konfigurera inkorg', 'e-postinställningar', 'SMTP', 'IMAP', 'e-postanslutning', 'applösenord', 'Microsoft Graph', 'on-premise Exchange-server']
 author: digitaldiina
 date: 09.24.2026
@@ -23,15 +23,15 @@ related:
 language: sv
 ---
 
-Inkorgen i SuperOffice är ett alternativt sätt att koppla din e-post till SuperOffice CRM. Den är avsedd för användare som inte kan använda [WebTools][9].
+Inkorgen i SuperOffice är ett alternativt sätt att koppla din e-post till SuperOffice CRM. Den är avsedd för användare som inte kan installera [SuperOffice för Outlook][9] (Microsoft 365) eller [SuperOffice Gmail Link][13] (Google Workspace) på sin enhet.
 
 Inkorgen i SuperOffice stöder två sätt att ansluta ditt e-postkonto:
 
-* **Microsoft 365, med Microsoft Graph (rekommenderas för Microsoft 365-konton):** Anslut via [guiden Anslut dina konton][10] i stället för inifrån inkorgen. När anslutningen sker på det här sättet går skickande och mottagande av e-post, mappar samt uppföljningsinbjudningar och avbokningar via Microsoft Graph i stället för IMAP/SMTP.
+* **Microsoft 365, med Microsoft Graph (rekommenderas för Microsoft 365-konton):** Anslut via [guiden Användarinställningar][10] i stället för inifrån inkorgen. När anslutningen sker på det här sättet går skickande och mottagande av e-post, mappar samt uppföljningsinbjudningar och avbokningar via Microsoft Graph i stället för IMAP/SMTP.
 * **IMAP och SMTP (Gmail, en on-premise Exchange-server eller en annan leverantör):** Anslut manuellt inifrån inkorgen, enligt beskrivningen nedan.
 
 <Note>
-Inkorgen i SuperOffice stöder endast **ett** e-postkonto per användare. Om WebTools är installerat och anslutet till din e-post är funktionen Inkorg inte tillgänglig.
+Inkorgen i SuperOffice stöder endast **ett** e-postkonto per användare. Om SuperOffice för Outlook eller SuperOffice Gmail Link är installerat och anslutet till din e-post är funktionen Inkorg inte tillgänglig.
 </Note>
 
 ## Innan du börjar
@@ -44,7 +44,7 @@ Inkorgen i SuperOffice stöder endast **ett** e-postkonto per användare. Om Web
 
 ## Anslut ditt e-postkonto
 
-Använd den här metoden för ett Gmail-konto, en on-premise Exchange-server eller en annan IMAP/SMTP-leverantör. Om du har ett Microsoft 365-konto använder du i stället [guiden Anslut dina konton][10].
+Använd den här metoden för ett Gmail-konto, en on-premise Exchange-server eller en annan IMAP/SMTP-leverantör. Om du har ett Microsoft 365-konto använder du i stället [guiden Användarinställningar][10].
 
 1. Klicka på <i class="ph ph-at" aria-hidden="true"></i> **Inkorg** i navigatorn.
 
@@ -123,10 +123,11 @@ För att justera layout, teckensnitt eller beteende för meddelanden, gå till <
 
 [1]: ../../../contact/learn/index
 [8]: ../../learn/change-default-mail-client
-[9]: ../../../../../integrations/webtools/index
+[9]: ../../../../../integrations/superoffice-for-outlook/index
 [10]: ../../../learn/getting-started/connect-your-accounts#email
 [11]: https://support.google.com/mail/answer/185833?hl=en
 [12]: https://knowledge.workspace.google.com/admin/sync/turn-pop-and-imap-on-or-off-for-users
+[13]: ../../../../../integrations/gmail-link/index
 [img1]: ../../../../media/loc/en/email/inbox-setup-dialog.png
 [img4]: ../../../../media/loc/en/email/so-inbox-advanced-settings.png
 [img6]: ../../../../media/loc/en/email/email-options-account.png
