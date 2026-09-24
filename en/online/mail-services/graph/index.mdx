@@ -26,7 +26,7 @@ Admin consent is a one-time, per-tenant step. Once granted, individual users can
 
 Consent can be granted in three ways:
 
-* Using a generic authorization URL provided by SuperOffice, which is recommended since it can be granted before any user encounters a prompt.
+* Using a generic authorization URL provided by SuperOffice, or by navigating directly to the app's Permissions page in the Microsoft Entra admin center and granting consent there. This proactive action is recommended, because it can be granted before any user encounters a prompt.
 * Using a URL that a user copies from the permission dialog they encounter when they try to connect their own mailbox.
 * Directly from the sign-in prompt, using a Global Administrator account.
 
@@ -61,18 +61,28 @@ If a later SuperOffice update requires additional permissions, Microsoft may ask
 | `Mail.Send` | Send mail as user | Allows the app to send mail as users in the organization. | To send email from SuperOffice on the user's behalf. |
 | `Mail.ReadWrite` | Read and write access to user mail | Allows the app to create, read, update, and delete email in user mailboxes. Does not include permission to send mail. | To read and sync the user's inbox in SuperOffice. |
 
-## Review the granted permissions in Microsoft Entra admin center
+## Grant or review permissions in the Microsoft Entra admin center
 
-Once consent has been granted, SuperOffice's mail connection appears as an enterprise application in your tenant. To review or manage it later:
+SuperOffice's mail connection appears as an enterprise application in your tenant once consent has been granted for the first time. From the same page, you can also grant consent yourself, without waiting for a user to encounter a prompt.
 
 1. In a browser, sign in to the [Microsoft Entra admin center][2].
 1. From the left pane, select **Enterprise applications**.
 1. Search for **SuperOffice**, then select it.
-1. Select **Permissions** from the left pane to see the full list of granted permissions.
+1. Select **Permissions** from the left pane.
+
+    To grant consent, select **Grant admin consent for `<tenant name>`**, then sign in again if prompted.
+
+    ![Microsoft Entra admin center Permissions page with the Grant admin consent button -screenshot][img4]
+
+    The same permissions requested dialog described [above][4] appears; review the listed permissions, then select **Accept**.
+
+    To review permissions already granted, this same page lists them under **Admin consent**.
 
 [1]: /en/learn/getting-started/connect-your-accounts
 [2]: https://entra.microsoft.com/
 [3]: #scopes
+[4]: #grant-consent
 [img1]: /media/loc/en/online/graph-consent-pick-account.png
 [img2]: /media/loc/en/online/graph-consent-permissions-requested.png
 [img3]: /media/loc/en/online/graph-consent-granted.png
+[img4]: /media/loc/en/online/graph-consent-admin-center-button.png
