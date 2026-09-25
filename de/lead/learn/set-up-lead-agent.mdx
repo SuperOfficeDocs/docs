@@ -1,0 +1,132 @@
+---
+title: Lead Agent einrichten
+description: "Konfigurieren und aktivieren Sie eine Lead-Agent-Instanz: allgemeine Einstellungen, Ihr ideales Kundenprofil, Quellen und Genehmigende."
+keywords: ['Lead-Agent-Einrichtung', 'ideales Kundenprofil', 'ICP', 'Lead-Quellen', 'Genehmigende']
+author: digitaldiina, Claudia Dias
+date: 10.01.2026
+so_version: 12.5
+content_type: howto
+tier: plus
+category: sale
+topic: lead
+platform: web
+deployment: online
+pilot: yes
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - /de/ai/learn/lead-agent
+  - /de/lead/learn/work-with-lead-agent
+  - /de/ai/learn/set-up-ai-agents
+language: de
+---
+
+import LeadAgentPilotNote from "../../../snippets/ai/lead-agent-pilot-note.mdx";
+
+<LeadAgentPilotNote />
+
+Der Einrichtungsassistent von Lead Agent umfasst 4 erforderliche Schritte.
+
+| # | Schritt | Was er abdeckt |
+|---|---|---|
+| 1 | Allgemeine Einstellungen | Name, Region und Sprache, Zeitplan, tägliches Volumen, Kontakte hinzufügen |
+| 2 | Idealer Kunde | Anweisungen, die einen guten Lead definieren |
+| 3 | Quellen | Zu durchsuchende Nachrichtenquellen sowie Anreicherungsquellen |
+| 4 | Genehmigende | Wer die Leads prüft und genehmigt |
+
+## Bevor Sie beginnen
+
+Wenn Sie Lead Agent noch nicht aktiviert haben, müssen Sie dies zuerst tun.
+
+1. Wählen Sie <i class="ph ph-robot" aria-label="Agenten-Symbol"></i> **Agenten** im Navigator aus.
+
+    Beim ersten Zugriff auf die **Agenten**-Seite müssen Sie sich anmelden und KI-Agenten in SuperOffice genehmigen.
+
+1. Klicken Sie oben rechts in der **Agenten**-Übersicht auf **Agenten durchsuchen** und wählen Sie **Lead Agent** aus.
+
+1. Klicken Sie auf **Aktivieren**. Dies öffnet den Einrichtungsassistenten.
+
+## Allgemeine Einstellungen
+
+1. Geben Sie einen eindeutigen **Namen** für die Agenteninstanz ein. **Dieser kann nach der Aktivierung nicht mehr geändert werden.**
+1. Bearbeiten Sie optional die vorgeschlagene **Beschreibung**, wenn Sie etwas anderes möchten.
+1. Wählen Sie **Land** und **Berichtssprache**:
+
+    * Die Werte werden basierend auf dem Heimatland Ihrer Organisation vorausgefüllt. Passen Sie sie nach Bedarf an.
+    * Das Land bestimmt, welche Register der Agent durchsucht und welches Land er standardmäßig scannt.
+    * Die Sprache wirkt sich sowohl auf Berichte als auch auf Chat-Antworten aus.
+
+    <Note>
+    **Der Standort in Ihrem idealen Kundenprofil hat Vorrang vor Land.** Das von Ihnen gewählte **Land** ist nur ein Standardwert. Wenn Sie beispielsweise Deutschland auswählen, aber Frankreich in Ihrem Profil (nächster Schritt) angeben, durchsucht der Agent französische Register und scannt französische Leads.
+    </Note>
+
+1. Wählen Sie, wie viele Genehmigungsaufgaben der Agent pro Tag erstellt (1-30). Der Standardwert für **Max. Aufgaben pro Tag** ist 10.
+
+1. Aktivieren Sie optional **Kontakte hinzufügen**. Wenn diese Option aktiviert ist, findet der Agent auch Kontaktpersonen für jeden Lead, mit E-Mail- und Telefondaten. Wenn sie deaktiviert ist, arbeitet er nur auf Firmenebene.
+
+1. Klicken Sie auf **Weiter**.
+
+![Der Einrichtungsassistent von Lead Agent, Allgemeine Einstellungen -screenshot][img11]
+
+## Idealer Kunde
+
+Dies definiert, was als guter Lead zählt und wie sich der Agent verhalten soll. Decken Sie ab, was wichtig ist, etwa Branche, Größe und Region, sowie Ausschlusskriterien wie „kein öffentlicher Sektor".
+
+1. Beschreiben Sie in einfacher Sprache die gewünschten Kunden und wie der Agent arbeiten soll. Seien Sie konkret, zum Beispiel: *Konzentriere dich auf Firmen mit Wachstumssignalen, etwa kürzlichen Finanzierungen, neuen Standorten oder Neueinstellungen.*
+1. Klicken Sie auf **Weiter**.
+
+<Tip>
+Passen Sie die Anweisungen jederzeit an. Änderungen gelten für künftige Läufe.
+</Tip>
+
+![Ihren idealen Kunden definieren -screenshot][img12]
+
+## Quellen
+
+![Der Schritt Quellen, mit Anreicherungsquellen einschließlich Leadfeeder -screenshot][img13]
+
+* **Nachrichtenquellen:** öffentliche Quellen, die der Agent nach Kaufsignalen durchsucht.
+* **Anreicherungsquellen:** dienen zur Überprüfung und Anreicherung jedes Leads. **Integrierte Quellen** sind Handelsregister, die basierend auf Ihrem Land ausgewählt werden, zum Beispiel Brønnøysundregistret für Norwegen oder Northdata für Deutschland.
+
+1. Fügen Sie relevante Nachrichtenquellen hinzu:
+    1. Klicken Sie auf **Quelle hinzufügen**.
+    1. Geben Sie eine Bezeichnung und eine Webadresse an.
+    1. Klicken Sie auf **Quelle hinzufügen**.
+
+    ![Hinzufügen einer Nachrichtenquelle -screenshot][img15]
+
+1. Wählen Sie, ob **Leadfeeder** zur Anreicherung und Priorisierung gefundener Leads verwendet werden soll, oder ob Sie sich allein auf Web-Scraping verlassen möchten. Standardmäßig aktiviert.
+1. Klicken Sie auf **Weiter**.
+
+## Genehmigende
+
+Wählen Sie, wer die von diesem Agenten gefundenen Leads prüft und genehmigt. Die Genehmigung eines Leads macht diese Person zu dessen Eigentümer. Bei Lead Agent kann der Genehmigende eine andere Person als der Instanzeigentümer sein.
+
+Wie Leads zwischen Genehmigenden **verteilt** werden, hängt davon ab, wie viele Sie hinzufügen:
+
+* **Ein Genehmigender:** jeder Lead geht an diese Person, und die Verteilungseinstellung ist deaktiviert.
+* **Zwei oder mehr Genehmigende, oder eine Gruppe:**
+  * **Wer zuerst kommt, mahlt zuerst:** die erste Person, die handelt, besitzt den Lead, und er verschwindet aus der Warteschlange der anderen.
+  * **Round-Robin:** jeder neue Lead geht der Reihe nach an den nächsten Genehmigenden.
+
+<Warning>
+Die Wahl zwischen **Wer zuerst kommt, mahlt zuerst** und **Round-Robin** kann nach dem Erstellen der Instanz nicht mehr geändert werden. Sie können weiterhin Genehmigende hinzufügen oder entfernen.
+</Warning>
+
+![Genehmigende auswählen -screenshot][img14]
+
+## Speichern
+
+1. Überprüfen Sie, ob der Name und die Wahl bei mehreren Genehmigenden Ihren Vorstellungen entsprechen. Dies ist Ihre letzte Gelegenheit, diese beiden Einstellungen zu ändern.
+1. Klicken Sie auf **Speichern**.
+1. Wählen Sie **Zur Instanz** aus, um Ihren neuen Lead Agent zu öffnen und [loszulegen][1].
+
+![Instanz aktiviert Bestätigung -screenshot][img16]
+
+[1]: ./work-with-lead-agent
+[img11]: ../../../media/loc/en/ai/lead-wizard-general.png
+[img12]: ../../../media/loc/en/ai/lead-wizard-ideal-customer.png
+[img13]: ../../../media/loc/en/ai/lead-wizard-sources.png
+[img14]: ../../../media/loc/en/ai/lead-wizard-approvers.png
+[img15]: ../../../media/loc/en/ai/lead-wizard-add-source.png
+[img16]: ../../../media/loc/en/ai/lead-agent-activated.png

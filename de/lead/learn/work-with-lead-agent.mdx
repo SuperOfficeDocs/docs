@@ -1,99 +1,151 @@
 ---
 title: Mit Lead Agent arbeiten
-description: Prüfen und genehmigen Sie die von Lead Agent gefundenen Interessenten über dessen Registerkarten Chat, Verlauf und Leistung.
-keywords: ['Lead Agent', 'Interessentenbericht', 'KI-Agenten']
+description: Prüfen und genehmigen Sie die von Lead Agent gefundenen Interessenten über die Registerkarten Chat, Verlauf und Leistung.
+keywords: ['Lead Agent', 'Interessentenbericht', 'Leads finden', 'Lead genehmigen', 'Lead ablehnen', 'KI-Agenten']
 author: digitaldiina, Claudia Dias
 date: 10.01.2026
 so_version: 12.5
 content_type: howto
 tier: plus
-pilot: yes
 category: sale
 topic: lead
+platform: web
+deployment: online
+pilot: yes
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
-  - Lead Agent: /de/ai/learn/lead-agent
-  - Lead Agent einrichten: /de/ai/admin/set-up-ai-agents#lead-agent
+  - /de/ai/learn/lead-agent
+  - /de/lead/learn/set-up-lead-agent
   - Übersicht Lead-Management: /de/lead/learn/index
 language: de
 ---
 
-<Note>
-Lead Agent kommt in Kürze. Diese Seite beschreibt eine Funktion, die noch nicht allgemein verfügbar ist.
-</Note>
+import LeadAgentPilotNote from "../../../snippets/ai/lead-agent-pilot-note.mdx";
 
-Sobald Lead Agent eingerichtet ist, läuft er im Hintergrund und legt Ihnen Interessenten zur Prüfung vor. Diese Seite behandelt das Prüfen und Genehmigen dessen, was er findet. Zur Einrichtung siehe [Lead Agent einrichten][1].
+<LeadAgentPilotNote />
 
-## Der Arbeitsbereich: drei Registerkarten
+Nachdem [Lead Agent eingerichtet wurde][1], läuft er täglich im Hintergrund und legt Ihnen Interessenten zur Prüfung vor. Diese Seite behandelt das Prüfen und Genehmigen dessen, was er findet.
 
-Öffnen Sie eine Instanz über **Meine Agenten** oder ihre Karte, um ihren Arbeitsbereich zu sehen. Oben befinden sich drei Registerkarten, und rechts ein **Benachrichtigen**-Schalter, eine Bearbeiten-Schaltfläche und ein Drei-Punkte-Menü.
+## Ihren Agenten finden
 
-| Registerkarte | Zweck |
-|---|---|
-| Chat | Mit dem Agenten sprechen und gefundene Leads prüfen. |
-| Verlauf | Ein detailliertes Protokoll aller Aktivitäten des Agenten. Nur dem Eigentümer und dessen Genehmigenden angezeigt. |
-| Leistung | Leistungsansichten für die Instanz über einen gewählten Zeitraum. |
+1. Wählen Sie <i class="ph ph-robot" aria-label="Agenten-Symbol"></i> **Agenten** im Navigator aus.
+1. Wählen Sie die Lead-Agent-Instanz aus der Liste **Meine Agenten** oder über die Lead-Agent-Karte in der **Agentenübersicht**.
+
+![Auswahl der Lead-Agent-Instanz aus der Liste Meine Agenten -screenshot][img8]
+![Auswahl der Lead-Agent-Instanz aus der Agentenübersicht -screenshot][img9]
+
+## Der Arbeitsbereich des Agenten
+
+Oben befinden sich drei Registerkarten.
 
 ![Der Arbeitsbereich von Lead Agent und seine drei Registerkarten -screenshot][img1]
 
-## Leads im Chat prüfen
+### Registerkarte Chat
 
-Die Registerkarte **Chat** organisiert alles in Threads auf der linken Seite:
+In der Registerkarte **Chat** können Sie mit dem Agenten sprechen und gefundene Leads prüfen.
 
-* **Allgemeiner Chat**: eine freie Unterhaltung mit dem Agenten. Bitten Sie ihn, eine bestimmte Firma zu recherchieren, und beobachten Sie, wie er die Schritte durcharbeitet. Findet er auf diese Weise einen echten Lead, legt er dafür eine normale Genehmigungsaufgabe an, genau wie bei einem im täglichen Lauf gefundenen Lead.
-* **Lead-Threads**: jeder gefundene Interessent erscheint als eigener Thread, benannt nach der Firma. Hier genehmigen oder lehnen Sie den Lead ab.
+* **Allgemeiner Chat:** eine freie Unterhaltung mit dem Agenten. Bitten Sie ihn, eine bestimmte Firma zu recherchieren, und beobachten Sie, wie er die Schritte durcharbeitet. Findet er auf diese Weise einen echten Lead, legt er dafür eine normale Genehmigungsaufgabe an, genau wie bei einem im täglichen Lauf gefundenen Lead.
 
-![Die Registerkarte Chat: Allgemeiner Chat und firmenbezogene Lead-Threads -screenshot][img2]
+* **Lead-Threads:** jeder gefundene Interessent erscheint als eigener Thread, benannt nach der Firma. Hier genehmigen oder lehnen Sie den Lead ab.
 
-### Der Interessentenbericht
-
-Das Öffnen eines Lead-Threads zeigt den Interessentenbericht des Agenten. Er öffnet sich zunächst eingeklappt auf das Wesentliche: eine Passgenauigkeitsbewertung, die verwendeten Quellen und wichtige Kennzahlen.
-
-Wählen Sie **Bericht erweitern** für die vollständige Ausarbeitung: eine Firmenzusammenfassung, den zu speichernden Datensatz (Name, Geschäft, Adresse, Land, Telefon, E-Mail, Website und alle gefundenen Kontakte), und warum die Firma gut passt, mit Quellenangabe.
-
-Wählen Sie das Dokumentsymbol, um den Bericht als PDF herunterzuladen, oder **Bericht einklappen**, um zur Zusammenfassungsansicht zurückzukehren.
-
-![Ein Interessentenbericht, eingeklappt und erweitert -screenshot][img3]
-
-### Genehmigen oder ablehnen
-
-Über der Schaltfläche **Genehmigen** ermöglicht Ihnen das Feld **Statische Selektion wählen oder erstellen**, eine bestehende Selektion zu wählen oder spontan eine zu erstellen. Wählen Sie eine Selektion vor dem Genehmigen, werden die Firma und alle Kontakte in dem Moment hinzugefügt, in dem Sie genehmigen.
-
-Dieselbe Auswahl funktioniert auch beim **Massengenehmigen** mehrerer Leads: Halten Sie Strg/Cmd gedrückt, um mehrere ausstehende Leads auszuwählen, und genehmigen oder lehnen Sie sie dann gemeinsam ab. Die gewählte Selektion gilt für jede Firma in diesem Durchgang.
-
-![Eine genehmigte Firma zu einer statischen Selektion hinzufügen -screenshot][img4]
-
-**Genehmigen**: eine Bestätigung listet genau auf, was passiert, zum Beispiel welche Felder ein neuer Firmendatensatz erhält. Bestätigen Sie, um die Firma sowie alle Kontakte mit dem Genehmigenden als Eigentümer in SuperOffice zu speichern. Zwei Notizen werden ebenfalls hinzugefügt: eine Firmenzusammenfassung-Notiz und eine Produktangebote-Notiz.
-
-**Ablehnen**: der Lead wird übersprungen und nichts wird gespeichert.
-
-![Einen Lead genehmigen und einen Lead ablehnen -screenshot][img5]
-
-## Verlauf und Leistung
+### Verlauf
 
 Die Registerkarte **Verlauf** ist ein detailliertes Protokoll aller Aktivitäten des Agenten: bearbeitete Firmen, Bewertungen, zur Genehmigung gesendete Berichte, gespeicherte Interessenten und übersprungene Elemente mit Begründung. Verwenden Sie **Filter**, um den Zeitraum einzugrenzen.
 
 ![Die Registerkarte Verlauf und ihr Zeitraumfilter -screenshot][img6]
 
+<Note>
+Diese Registerkarte ist nur für den Eigentümer des Agenten und dessen Genehmigende verfügbar.
+</Note>
+
+### Leistung
+
 Die Registerkarte **Leistung** zeigt, wie die Instanz über einen von Ihnen gewählten Zeitraum abschneidet: verarbeitete Links, qualifizierte Leads, recherchierte Leads, zur Genehmigung gesendete Leads, genehmigte, abgelehnte, abgelaufene und abgeschlossene Läufe. Jede Kennzahl erscheint als Trenddiagramm.
 
 ![Die Registerkarte Leistung -screenshot][img7]
 
+## Einen Interessenten prüfen
+
+1. Wählen Sie die Registerkarte **Chat**.
+1. Klicken Sie auf <i class="ph ph-sliders-horizontal" aria-label="Filter-Symbol"></i> und wählen Sie **Ausstehend**.
+1. Wählen Sie einen Lead aus der Liste aus, um den **Interessentenbericht** des Agenten anzuzeigen.
+
+    * Der Bericht öffnet sich zunächst eingeklappt auf das Wesentliche: eine Passgenauigkeitsbewertung, die verwendeten Quellen und wichtige Kennzahlen.
+    * Klicken Sie auf **Bericht erweitern** für die vollständige Ausarbeitung: eine Firmenzusammenfassung, den zu speichernden Datensatz (Name, Geschäft, Adresse, Land, Telefon, E-Mail, Website und alle gefundenen Kontakte) und warum die Firma gut passt, mit Quellenangabe.
+
+1. Klicken Sie optional auf <i class="ph ph-file-text" aria-label="Dokument-Symbol"></i>, um den Bericht als PDF herunterzuladen.
+
+![Ein Interessentenbericht, eingeklappt -screenshot][img3]
+![Ein Interessentenbericht, erweitert -screenshot][img10]
+
+## Eine bestimmte Firma recherchieren
+
+1. Wählen Sie die Registerkarte **Chat**.
+1. Bitten Sie den Agenten im **Allgemeinen Chat**, eine bestimmte Firma zu recherchieren.
+1. Wird ein echter Lead gefunden, wird der Interessentenbericht der Liste hinzugefügt. Prüfen Sie ihn wie oben beschrieben.
+
+![Die Registerkarte Chat: Allgemeiner Chat und firmenbezogene Lead-Threads -screenshot][img2]
+
+## Einen Interessenten genehmigen
+
+![Ein ausstehender Interessent, bewertet mit Gut, bereit zur Genehmigung -screenshot][img14]
+
+Wenn Sie sich entscheiden, einen Interessenten in SuperOffice zu speichern:
+
+1. Wählen oder erstellen Sie optional eine **statische Selektion**, um die Firma und alle Kontakte bei der Genehmigung zur Selektion hinzuzufügen.
+
+1. Klicken Sie auf **Genehmigen** beim ausgewählten Interessenten.
+
+    ![Der Bestätigungsdialog zum Genehmigen eines Leads -screenshot][img5]
+
+1. Prüfen Sie im Bestätigungsdialog, was in SuperOffice gespeichert wird, und klicken Sie auf **Genehmigen**.
+
+    * Der Genehmigende wird als Eigentümer festgelegt.
+    * Zwei Notizen werden hinzugefügt: Firmenzusammenfassung und Produktangebote.
+
+![Der Lead nach der Bestätigung, markiert als Genehmigt -screenshot][img5b]
+
+## Einen Interessenten ablehnen
+
+Wenn Sie sich entscheiden, einen Interessenten nicht zu SuperOffice hinzuzufügen, haben Sie zwei Möglichkeiten:
+
+* **Ignorieren:** der Lead bleibt in der Liste, bis er abläuft, und nichts wird gespeichert.
+* **Ablehnen:** der Lead wird übersprungen und nichts wird gespeichert. So wissen andere Genehmigende, dass der Lead bereits geprüft wurde.
+
+![Der Bestätigungsdialog zum Ablehnen einer Aufgabe -screenshot][img12]
+
+![Der Lead nach der Bestätigung, markiert als Abgelehnt -screenshot][img13]
+
+<Tip>
+Um die Liste zu bereinigen, wählen Sie mehrere ausstehende Interessenten aus und klicken Sie auf **Ablehnen**, um sie alle auf einmal zu verwerfen.
+
+Verwenden Sie den Filter, um nur abgelehnte Interessenten anzuzeigen.
+</Tip>
+
+![Filtern der Lead-Liste in der Registerkarte Chat, um nur abgelehnte Leads anzuzeigen -screenshot][img11]
+
 ## Fehlerbehebung
 
-**Ein Lead, den ich geprüft habe, ist verschwunden.** Ein auf Genehmigung wartender Lead hat eine begrenzte Lebensdauer: standardmäßig 30 Tage. Sobald er innerhalb von 5 Tagen vor Ablauf ist, erscheint ein Countdown-Banner auf seinem Thread. Wird er nicht rechtzeitig genehmigt oder abgelehnt, läuft er ab, und nichts wird in Ihrem CRM gespeichert.
+**Ein Lead, den ich geprüft habe, ist verschwunden.** Ein auf Genehmigung wartender Lead hat eine begrenzte Lebensdauer: standardmäßig 30 Tage. Sobald er innerhalb von 5 Tagen vor Ablauf ist, erscheint ein Countdown-Banner. Wird er nicht rechtzeitig genehmigt oder abgelehnt, läuft er ab, und nichts wird in Ihrem CRM gespeichert.
 
 **Ich habe die Instanz deaktiviert, und meine ausstehenden Leads sind weg.** Das Deaktivieren einer Instanz verwirft alle auf Genehmigung wartenden Leads. Genehmigen oder lehnen Sie zuerst ab, was Sie behalten möchten.
 
 **Ich sehe die Einstellungen einer Instanz, kann aber nichts ändern.** Sie sind Genehmigender, nicht Eigentümer. Nur der Eigentümer der Instanz kann Änderungen an ihrer Einrichtung speichern; ein Genehmigender, der nicht der Eigentümer ist, kann sie ansehen, aber nicht bearbeiten.
 
-[1]: /de/ai/admin/set-up-ai-agents#lead-agent
+[1]: set-up-lead-agent
 
-[img1]: /media/loc/en/ai/lead-workspace-tabs.png
-[img2]: /media/loc/en/ai/lead-chat-threads.png
-[img3]: /media/loc/en/ai/lead-prospect-report.png
-[img4]: /media/loc/en/ai/lead-static-selection.png
-[img5]: /media/loc/en/ai/lead-approve-reject.png
-[img6]: /media/loc/en/ai/lead-history.png
-[img7]: /media/loc/en/ai/lead-performance.png
+[img1]: ../../../media/loc/en/lead/lead-agent-general-chat.png
+[img2]: ../../../media/loc/en/lead/lead-chat-threads.png
+[img3]: ../../../media/loc/en/lead/poor-lead-compact-report.png
+[img10]: ../../../media/loc/en/lead/poor-lead-expanded-report.png
+[img5]: ../../../media/loc/en/lead/approve-lead-dialog.png
+[img5b]: ../../../media/loc/en/lead/approved-lead.png
+[img6]: ../../../media/loc/en/lead/lead-history.png
+[img7]: ../../../media/loc/en/lead/lead-performance.png
+[img8]: ../../../media/loc/en/lead/my-agents-sidebar-list.png
+[img9]: ../../../media/loc/en/ai/agent-overview-1-active.png
+[img11]: ../../../media/loc/en/lead/filter-rejected-leads.png
+[img12]: ../../../media/loc/en/lead/poor-lead-reject.png
+[img13]: ../../../media/loc/en/lead/rejected-lead.png
+[img14]: ../../../media/loc/en/lead/good-lead.png
