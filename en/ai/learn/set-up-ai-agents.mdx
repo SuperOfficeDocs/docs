@@ -1,11 +1,11 @@
 ---
 title: Set up AI agents
 description: How to open the Agents area, activate an agent, and create and manage an instance. No admin access is needed - agent instances are personal, per user.
-keywords: ['agent instance', 'activate agent', 'Lead Agent']
+keywords: ['agent instance', 'activate agent', 'add instance', 'Lead Agent']
 author: digitaldiina, Claudia Dias
 date: 10.01.2026
 so_version: 12.5
-content_type: tutorial
+content_type: howto
 tier: plus
 pilot: yes
 category: automation
@@ -15,7 +15,6 @@ deployment: online
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
-  - /en/ai/learn/lead-agent
   - /en/lead/learn/set-up-lead-agent
   - Other AI services: /en/ai/learn/index
 language: en
@@ -25,7 +24,7 @@ language: en
 SuperOffice's AI agents are coming soon. This page describes set-up steps for a feature that is not generally available yet.
 </Note>
 
-SuperOffice's AI agents work in the background and propose results for a person to approve. Every agent opens, activates, and is managed the same way. This page covers those shared steps once, then each agent has its own set-up page, for example [Set up Lead Agent][11].
+SuperOffice's AI agents work in the background and propose results for a person to approve. Every agent opens, activates, and is managed the same way. This page covers those shared steps once, then each agent has its own set-up page, for example [Set up Lead Agent][2].
 
 ## Agent instances
 
@@ -34,7 +33,7 @@ One configured, running copy of an agent is called an **instance**. Some agents 
 ## Requirements
 
 * Your organization must be on **CRM Suite Plus** or above.
-* An administrator must [enable AI functions][10] in CRM global preferences before the **Agents** icon appears.
+* An administrator must [enable AI functions][1] in CRM global preferences before the **Agents** icon appears.
 
 <Note>
 Agent instances themselves are personal, per user. You do not need admin access or **Settings and maintenance** to create or manage one.
@@ -94,12 +93,13 @@ Every user with access to the instance has their own **Notify** bell toggle. Mut
 
 ![The mute notifications confirmation dialog -screenshot][img6]
 
-Click the <i class="ph ph-bell-slash" aria-label="Muted icon"></i> bell (with a strike-through) icon to unmute.
+Click <i class="ph ph-bell-slash" aria-label="Bell with strike-through icon"></i> to turn notifications back on.
 
 ## Deactivate an instance
 
-1. Click the <i class="ph ph-dots-three-vertical" aria-label="More options"></i> three-dots menu.
+1. Click the Task menu (<i class="ph ph-dots-three-vertical" aria-label="three-dots icon"></i>).
 1. Select the **Active** toggle.
+1. Click **Deactivate**.
 
 <Warning>
 Deactivating an instance discards any tasks awaiting review. This cannot be undone.
@@ -120,11 +120,10 @@ Deleting an instance is permanent and removes all its data.
 
 ![Deleting an instance from the three-dots menu and the confirmation -screenshot][img9]
 
-[10]: ../admin/index
-[11]: /en/lead/learn/set-up-lead-agent
-[12]: index#goto-agents
-[13]: index#agent-instances
+[1]: ../admin/index
+[2]: /en/lead/learn/set-up-lead-agent
 
+[img1]: /media/loc/en/ai/inactive-agent.png
 [img2]: /media/loc/en/ai/agents-overview-starter-cards.png
 [img3]: /media/loc/en/ai/browse-agents.png
 [img4]: /media/loc/en/ai/agent-overview-1-active.png
@@ -132,6 +131,5 @@ Deleting an instance is permanent and removes all its data.
 [img6]: /media/loc/en/ai/mute-agent-notifications-warning.png
 [img7]: /media/loc/en/ai/agent-task-button.png
 [img8]: /media/loc/en/ai/deactivate-agent-new.png
-[img1]: /media/loc/en/ai/inactive-agent.png
 [img9]: /media/loc/en/ai/delete-instance.png
 [img10]: /media/loc/en/ai/about-this-agent.png
