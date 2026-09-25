@@ -10057,10 +10057,6 @@
     "destination": "/en/admin/user-preferences/reference/visual"
   },
   {
-    "source": "/en/ai/admin/index",
-    "destination": "/en/ai/admin/set-up-categorization"
-  },
-  {
     "source": "/en/ai/admin/set-up-categorization.html",
     "destination": "/en/ai/admin/set-up-categorization"
   },

@@ -1,0 +1,132 @@
+---
+title: Konfigurera Lead Agent
+description: Konfigurera och aktivera en Lead Agent-instans - allmänna inställningar, din ideala kundprofil, källor och godkännare.
+keywords: ['lead agent-konfiguration', 'ideal kundprofil', 'ICP', 'leadkällor', 'godkännare']
+author: digitaldiina, Claudia Dias
+date: 10.01.2026
+so_version: 12.5
+content_type: howto
+tier: plus
+category: sale
+topic: lead
+platform: web
+deployment: online
+pilot: yes
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - /sv/ai/learn/lead-agent
+  - /sv/lead/learn/work-with-lead-agent
+  - /sv/ai/learn/set-up-ai-agents
+language: sv
+---
+
+import LeadAgentPilotNote from "../../../snippets/ai/lead-agent-pilot-note.mdx";
+
+<LeadAgentPilotNote />
+
+Lead Agents konfigurationsguide har 4 obligatoriska steg.
+
+| # | Steg | Vad det omfattar |
+|---|---|---|
+| 1 | Allmänna inställningar | Namn, region och språk, schema, daglig volym, lägg till kontakter |
+| 2 | Ideal kund | Instruktioner som definierar en bra lead |
+| 3 | Källor | Nyhetskällor att skanna, plus berikningskällor |
+| 4 | Godkännare | Vem som granskar och godkänner leadsen |
+
+## Innan du börjar
+
+Om du ännu inte har aktiverat Lead Agent behöver du göra det först.
+
+1. Välj <i class="ph ph-robot" aria-label="Agenter-ikon"></i> **Agenter** i Navigator.
+
+    Första gången du går till sidan **Agenter** behöver du logga in och godkänna AI-agenter i SuperOffice.
+
+1. Klicka på **Bläddra bland agenter** i det övre högra hörnet på **Agenter**-översikten och välj **Lead Agent**.
+
+1. Klicka på **Aktivera**. Detta öppnar konfigurationsguiden.
+
+## Allmänna inställningar
+
+1. Ange ett unikt **Namn** för agentinstansen. **Detta kan inte ändras efter aktivering.**
+1. Redigera vid behov den föreslagna **Beskrivningen** om du vill ha något annat.
+1. Välj **Land** och **Rapporteringsspråk**:
+
+    * Värdena är förifyllda baserat på din organisations hemland. Anpassa efter dina behov.
+    * Land avgör vilka register agenten söker i och vilket land den skannar som standard.
+    * Språk påverkar både rapporter och chattsvar.
+
+    <Note>
+    **Platsen i din ideala kundprofil vinner över Land.** **Land** du väljer är bara ett standardvärde. Om du till exempel väljer Tyskland men anger Frankrike i din profil (nästa steg) gör agenten sökningar i franska register och skannar franska leads.
+    </Note>
+
+1. Välj hur många godkännandeuppgifter agenten skapar per dag (1-30). Standardvärdet för **Max antal uppgifter per dag** är 10.
+
+1. Aktivera vid behov **Lägg till kontakter**. När det är på hittar agenten även kontaktpersoner för varje lead, med e-post och telefonuppgifter. När det är av arbetar den endast på företagsnivå.
+
+1. Klicka på **Nästa**.
+
+![Lead Agents konfigurationsguide, Allmänna inställningar -screenshot][img11]
+
+## Ideal kund
+
+Detta definierar vad som räknas som en bra lead och hur agenten bör agera. Täck det som är viktigt, till exempel bransch, storlek och region, samt diskvalificerande faktorer som "inte offentlig sektor".
+
+1. Beskriv i vanligt språk vilka kunder du vill ha och hur agenten ska arbeta. Var specifik, till exempel: *Fokusera på företag som visar tillväxtsignaler, som ny finansiering, nya kontor eller nyanställningar.*
+1. Klicka på **Nästa**.
+
+<Tip>
+Förfina instruktionerna när som helst. Ändringar gäller för framtida körningar.
+</Tip>
+
+![Definiera din ideala kund -screenshot][img12]
+
+## Källor
+
+![Steget Källor, med berikningskällor inklusive Leadfeeder -screenshot][img13]
+
+* **Nyhetskällor:** offentliga källor som agenten skannar efter köpsignaler.
+* **Berikningskällor:** används för att verifiera och berika varje lead. **Inbyggda källor** är företagsregister valda utifrån ditt land, till exempel Brønnøysundregistret för Norge eller Northdata för Tyskland.
+
+1. Lägg till relevanta nyhetskällor:
+    1. Klicka på **Lägg till en källa**.
+    1. Ange en etikett och en webbadress.
+    1. Klicka på **Lägg till källa**.
+
+    ![Lägga till en nyhetskälla -screenshot][img15]
+
+1. Välj om du vill använda **Leadfeeder** för att berika och prioritera upptäckta leads, eller enbart förlita dig på webbskanning. På som standard.
+1. Klicka på **Nästa**.
+
+## Godkännare
+
+Välj vem som granskar och godkänner leadsen den här agenten hittar. Att godkänna en lead gör den personen till dess ägare. För Lead Agent kan godkännaren vara någon annan än instansens ägare.
+
+Hur leads **delas** mellan godkännare beror på hur många du lägger till:
+
+* **En godkännare:** varje lead går till den personen, och delningsinställningen avaktiveras.
+* **Två eller fler godkännare, eller en grupp:**
+  * **Först till kvarn:** den första personen som agerar äger leadden, och den försvinner från de andras kö.
+  * **Turordning:** varje ny lead går till nästa godkännare i tur och ordning.
+
+<Warning>
+Valet mellan **Först till kvarn** och **Turordning** **kan inte ändras efter att instansen har skapats**. Du kan fortfarande lägga till eller ta bort godkännare.
+</Warning>
+
+![Välja godkännare -screenshot][img14]
+
+## Spara
+
+1. Kontrollera att namnet och valet för flera godkännare är det du vill ha. Detta är din sista chans att ändra dessa två inställningar.
+1. Klicka på **Spara**.
+1. Välj **Gå till instans** för att öppna din nya Lead Agent och [komma igång][1].
+
+![Bekräftelse på att instansen är aktiverad -screenshot][img16]
+
+[1]: ./work-with-lead-agent
+[img11]: ../../../media/loc/en/ai/lead-wizard-general.png
+[img12]: ../../../media/loc/en/ai/lead-wizard-ideal-customer.png
+[img13]: ../../../media/loc/en/ai/lead-wizard-sources.png
+[img14]: ../../../media/loc/en/ai/lead-wizard-approvers.png
+[img15]: ../../../media/loc/en/ai/lead-wizard-add-source.png
+[img16]: ../../../media/loc/en/ai/lead-agent-activated.png

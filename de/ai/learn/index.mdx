@@ -2,7 +2,7 @@
 uid: help-de-ai
 title: KI-Services
 description: Übersicht über Künstliche Intelligenz-Services in SuperOffice CRM
-keywords: ['KI', 'künstliche Intelligenz', 'KI-Plattform', 'maschinelles Lernen', 'Automatisierung']
+keywords: ['KI', 'künstliche Intelligenz', 'KI-Plattform', 'maschinelles Lernen', 'Automatisierung', 'Insight', 'Assist', 'Agent', 'MCP', 'Instanz']
 author: digitaldiina
 date: 10.01.2026
 so_version: 12.4
@@ -16,17 +16,20 @@ deployment: online
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /de/ai/index
-boost: 1.5
+boost: 2
+related:
+  - /de/ai/learn/set-up-ai-agents
+  - /de/admin/license/crm-suite
 language: de
 ---
-
-<Note>
-SuperOffice KI ist nur in CRM Online verfügbar. Es erfordert das **AI-Plattform**-Add-on und spezifische Service-Lizenzen. Diese Services werden monatlich pro aktivem KI-Service abgerechnet.
-</Note>
 
 SuperOffice KI hilft dabei, Routineaufgaben zu automatisieren und manuelle Arbeit zu reduzieren, indem künstliche Intelligenz direkt in das CRM eingebettet wird. Sie können Antwortzeiten verbessern, Fehler reduzieren und effizienter arbeiten-ohne technische Expertise oder Programmierkenntnisse zu benötigen.
 
 Diese Funktionen ermöglichen es Ihrem Team, sich auf sinnvolle Arbeit zu konzentrieren, während KI repetitive Prozesse im Hintergrund abwickelt.
+
+<Note>
+SuperOffice KI ist nur in CRM Online verfügbar. Lizenzanforderungen sind dienstspezifisch.
+</Note>
 
 ## Verfügbare Services
 
@@ -40,8 +43,31 @@ Diese Funktionen ermöglichen es Ihrem Team, sich auf sinnvolle Arbeit zu konzen
 | [KI-Zusammenfassungen in SuperOffice for Teams][6] | Erstellt eine Zusammenfassung einer Microsoft Teams-Unterhaltung beim Archivieren in SuperOffice. | AI Lab (Pilotfunktion) |
 | [Company Insight][7] | Schlägt Firmendetails aus offiziellen Handelsregistern vor, wie Brreg, Virk, Companies House und Zefix, wenn Sie eine neue Firma erstellen. | CRM Suite Growth |
 | [Reply Assist][8] | Schlägt eine Antwort auf eine eingehende Anfrage basierend auf Ihren CRM-Daten vor, die Sie prüfen und senden können. | CRM Suite Plus |
+| [Lead Agent][9] | Findet, recherchiert und qualifiziert neue Interessenten aus konfigurierten Nachrichtenquellen und bewertet sie anhand Ihres idealen Kundenprofils, damit eine Person sie genehmigen kann. | CRM Suite Plus |
 
-![Übersicht KI-Services -screenshot][img1]
+## Insight, Assist und Agent
+
+Neuere KI-Funktionen folgen einem Namensmuster, das zeigt, wie sie jeweils funktionieren:
+
+* **Insight** schlägt externe Daten direkt bei der Arbeit vor, ohne dass etwas geöffnet oder verwaltet werden muss. [Company Insight][7] ist ein Insight-Service.
+* **Assist** nutzt generative KI, um Ihnen bei der Inhaltserstellung zu helfen oder den nächsten Schritt vorzuschlagen, direkt in Ihrem gewohnten Arbeitsablauf. [Workspace Assist][4] und [Reply Assist][8] sind Assist-Services.
+* **Agent** läuft im Hintergrund nach eigenem Zeitplan und schlägt Ergebnisse zur Genehmigung durch eine Person vor, in einem eigenen Bereich Agenten. [Lead Agent][9] ist ein Agent-Service.
+
+## Bereich Agenten öffnen {#goto-agents}
+
+1. Wählen Sie <i class="ph ph-robot" aria-label="Agenten-Symbol"></i> **Agenten** im Navigator aus.
+
+    <Tip>
+    Sehen Sie **Agenten** nicht im Navigator? Bitten Sie Ihren Administrator, [die KI-Funktionen zu aktivieren][10].
+    </Tip>
+
+1. Klicken Sie beim ersten Mal auf **Anmelden** und genehmigen Sie den Zugriff, wenn Sie dazu aufgefordert werden: Wählen Sie **Ich stimme zu**.
+
+    ![Öffnen des Bereichs Agenten: Agenten-Symbol auswählen, dann Anmelden -screenshot][img1]
+
+    ![Genehmigung des Zugriffs von AI Agents auf Ihre SuperOffice-Installation -screenshot][img2]
+
+1. Fahren Sie fort, um [Ihre Agenten auszuwählen, zu aktivieren und einzurichten][10].
 
 [1]: /de/ai/learn/text-analysis
 [2]: /de/ai/learn/categorization
@@ -51,5 +77,8 @@ Diese Funktionen ermöglichen es Ihrem Team, sich auf sinnvolle Arbeit zu konzen
 [6]: /integrations/superoffice-for-teams/ai-summary
 [7]: /de/company/learn/create#company-insight
 [8]: /de/request/learn/handle-request-ai#reply-assist
+[9]: /de/ai/learn/lead-agent
+[10]: /de/ai/learn/set-up-ai-agents
 
-[img1]: /media/loc/en/ai/ai-services.png
+[img1]: ../../../media/loc/en/ai/open-agents-area.png
+[img2]: ../../../media/loc/en/ai/approve-ai-agents.png

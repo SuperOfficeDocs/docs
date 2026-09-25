@@ -1,0 +1,136 @@
+---
+title: AI-agents instellen
+description: Hoe u het gebied Agents opent, een agent activeert en een instantie aanmaakt en beheert. Er is geen beheerderstoegang nodig - agentinstanties zijn persoonlijk, per gebruiker.
+keywords: ['agentinstantie', 'agent activeren', 'instantie toevoegen', 'Lead Agent']
+author: digitaldiina, Claudia Dias
+date: 10.01.2026
+so_version: 12.5
+content_type: howto
+tier: plus
+category: automation
+topic: ai
+platform: web
+deployment: online
+pilot: yes
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - /nl/lead/learn/set-up-lead-agent
+  - Overige AI-diensten: /nl/ai/learn/index
+language: nl
+---
+
+<Note>
+De AI-agents van SuperOffice komen binnenkort beschikbaar. Deze pagina beschrijft de instelstappen voor een functie die nog niet algemeen beschikbaar is.
+</Note>
+
+De AI-agents van SuperOffice werken op de achtergrond en stellen resultaten voor die een persoon moet goedkeuren. Elke agent wordt op dezelfde manier geopend, geactiveerd en beheerd. Deze pagina behandelt deze gedeelde stappen eenmalig; daarna heeft elke agent zijn eigen instelpagina, bijvoorbeeld [Lead Agent instellen][2].
+
+## Agentinstanties
+
+Eén geconfigureerde, actieve kopie van een agent wordt een **instantie** genoemd. Sommige agents staan er meer dan één toe: Lead Agent staat er maximaal 3 toe, actief en inactief samen. Andere, zoals Data Quality Agent, Duplicate Agent en Sales Assistant Agent, staan slechts 1 instantie per gebruiker toe. De limiet telt ook inactieve instanties mee: het deactiveren van een instantie maakt geen plek vrij, alleen het verwijderen ervan doet dat.
+
+## Vereisten
+
+* Uw organisatie moet **CRM Suite Plus** of hoger hebben.
+* Een beheerder moet [AI-functies inschakelen][1] in de algemene CRM-voorkeuren voordat het pictogram **Agents** verschijnt.
+
+<Note>
+Agentinstanties zelf zijn persoonlijk, per gebruiker. U hebt geen beheerderstoegang of **Instellingen en onderhoud** nodig om er een aan te maken of te beheren.
+</Note>
+
+Alleen de eigenaar van de instantie (de maker ervan) kan de instellingen bewerken, deze activeren of deactiveren, of verwijderen.
+
+## Agent activeren
+
+![De startset agentkaarten op de pagina Agents -screenshot][img2]
+
+1. Selecteer <i class="ph ph-robot" aria-label="Agentspictogram"></i> **Agents** in de Navigator.
+1. Klik op **Agents doorbladeren** in de rechterbovenhoek van de pagina **Agents**.
+1. Gebruik het zoekvak of de categoriefilters om de gewenste agent te vinden.
+
+    ![Het paneel Agents doorbladeren, met alle agents in uw abonnement -screenshot][img3]
+
+1. Klik op **Activeren** om de instelwizard van die agent te openen en uw eerste **instantie** aan te maken.
+
+<Note>
+**Agents doorbladeren** toont alleen agents die zijn opgenomen in uw CRM Suite-abonnement. Staat een agent die u verwacht er niet tussen, neem dan contact op met uw SuperOffice-beheerder of -partner.
+</Note>
+
+Zodra een agent een instantie heeft, toont de kaart een koppeling **N actief** in plaats van **Activeren**. Selecteer deze om de instanties van de agent te bekijken, gegroepeerd in Actief en Inactief, en om er een te openen.
+
+![Het instantiesvenster op de kaart van een agent -screenshot][img4]
+
+## Instantie toevoegen
+
+Agents die meer dan één instantie toestaan tonen een knop **+ Nieuwe instantie**.
+
+![Agents doorbladeren toont een optie + Nieuwe instantie voor agents die er meer dan één toestaan -screenshot][img5]
+
+1. Klik op **+ Nieuwe instantie** op de agentkaart of in de lijst **Agents doorbladeren**.
+1. Doorloop de agentspecifieke instelwizard.
+
+## Instantiedetails bekijken
+
+Selecteer **Over** in het drie-puntjesmenu voor een alleen-lezen overzicht, met weergavenaam, agenttype, eigenaar, activeringsdatum, planning en goedkeurders.
+
+![Het drie-puntjesmenu, met de opties Over en Verwijderen -screenshot][img7]
+
+![Het overzicht Over deze agent -screenshot][img10]
+
+## Instellingen bewerken
+
+1. Selecteer de <i class="ph ph-pencil-simple" aria-label="Bewerken"></i> bewerkknop (potlood) in de koptekst van de instantie.
+1. Breng uw wijzigingen aan in de instelwizard.
+1. Klik op **Wijzigingen opslaan**. Wijzigingen gelden vanaf de volgende run.
+
+## Meldingen dempen
+
+Elke gebruiker met toegang tot de instantie heeft een eigen **Melden**-belschakelaar. Dempen heeft alleen invloed op die persoon. De instantie blijft voor iedereen anders gewoon actief.
+
+1. Klik op het <i class="ph ph-bell" aria-label="Meldingspictogram"></i> belpictogram.
+1. Klik op **Meldingen dempen**.
+
+![Het bevestigingsvenster voor meldingen dempen -screenshot][img6]
+
+Klik op <i class="ph ph-bell-slash" aria-label="Bel met streep erdoor pictogram"></i> om meldingen weer in te schakelen.
+
+## Een instantie deactiveren
+
+1. Klik op het Taakmenu (<i class="ph ph-dots-three-vertical" aria-label="Drie-puntjespictogram"></i>).
+1. Selecteer de schakelaar **Actief**.
+1. Klik op **Deactiveren**.
+
+<Warning>
+Het deactiveren van een instantie verwijdert alle taken die nog op beoordeling wachten. Dit kan niet ongedaan worden gemaakt. Als u een Lead Agent-instantie deactiveert, keur leads eerst goed of af als u ze wilt behouden.
+</Warning>
+
+![Deactiveren via het taakmenu, met de waarschuwing over openstaande goedkeuringen -screenshot][img8]
+
+![Inactieve agent -screenshot][img1]
+
+## Een instantie verwijderen
+
+<Danger>
+Het verwijderen van een instantie is permanent en verwijdert alle bijbehorende gegevens.
+</Danger>
+
+1. Deactiveer eerst de instantie.
+1. Klik op het <i class="ph ph-dots-three-vertical" aria-label="Meer opties"></i> drie-puntjesmenu en selecteer Verwijderen.
+1. Klik op **Verwijderen**.
+
+![Een instantie verwijderen via het drie-puntjesmenu en de bevestiging -screenshot][img9]
+
+[1]: ../admin/index
+[2]: /nl/lead/learn/set-up-lead-agent
+
+[img1]: ../../../media/loc/en/ai/inactive-agent.png
+[img2]: ../../../media/loc/en/ai/agents-overview-starter-cards.png
+[img3]: ../../../media/loc/en/ai/browse-agents.png
+[img4]: ../../../media/loc/en/ai/agent-overview-1-active.png
+[img5]: ../../../media/loc/en/ai/new-instance-button.png
+[img6]: ../../../media/loc/en/ai/mute-agent-notifications-warning.png
+[img7]: ../../../media/loc/en/ai/agent-task-button.png
+[img8]: ../../../media/loc/en/ai/deactivate-agent-new.png
+[img9]: ../../../media/loc/en/ai/delete-instance.png
+[img10]: ../../../media/loc/en/ai/about-this-agent.png

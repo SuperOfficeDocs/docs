@@ -1,0 +1,50 @@
+---
+title: Lead Agent
+description: Lead Agent hittar, undersöker och kvalificerar nya prospekt automatiskt, och varje resultat granskas och godkänns av en person innan något sparas.
+keywords: ['AI-agenter', 'leadupptäckt', 'prospektering', 'ICP', 'ideal kundprofil']
+author: digitaldiina, Claudia Dias
+date: 10.01.2026
+so_version: 12.5
+content_type: concept
+tier: plus
+category: automation
+topic: ai
+platform: web
+deployment: online
+pilot: yes
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Aktivera agent: /sv/ai/learn/set-up-ai-agents
+  - /sv/lead/learn/set-up-lead-agent
+  - /sv/lead/learn/work-with-lead-agent
+  - Andra AI-tjänster: /sv/ai/learn/index
+language: sv
+---
+
+import LeadAgentPilotNote from "../../../snippets/ai/lead-agent-pilot-note.mdx";
+
+<LeadAgentPilotNote />
+
+Lead Agent körs tyst i bakgrunden för att hålla din pipeline full. Varje dag hittar den företag som matchar din ideala kund, undersöker dem, poängsätter passformen och bygger en prospektrapport. En säljare godkänner den innan något sparas i SuperOffice.
+
+![Lead Agent visar ett matchat prospekt för godkännande][img1]
+
+## Vad den gör för dig
+
+* **Hittar prospekt:** skannar dina konfigurerade nyhetskällor efter företag som visar köpsignaler.
+* **Undersöker och berikar:** verifierar varje företag mot företagsregister och, valfritt, Leadfeeder, och hittar även kontaktpersoner.
+* **Poängsätter passformen:** varje kandidat får ett ICP-matchningsbetyg.
+* **Skriver en prospektrapport:** en sammanfattning, källor, viktiga nyckeltal, företagsposten som ska sparas, och varför den är en bra matchning.
+* **Lägger till godkända leads i ett urval:** grupperar valfritt godkända företag i ett statiskt urval, så att du kan agera på dem tillsammans.
+* **Frågar innan den agerar:** väcker en lead för dina godkännare, och sparar ingenting förrän någon godkänner den.
+
+<Note>
+Agenten föreslår; en säljare bestämmer. Upptäckta företag och kontakter skrivs bara till SuperOffice efter godkännande. Om ingen godkänner en lead ändras ingenting i din CRM.
+</Note>
+
+## Schema
+
+Agenten körs **dagligen**, en gång om dagen vid en systemtilldelad tidpunkt. Du styr hur många leads agenten hittar varje dag, så att granskningsvolymen förblir hanterbar.
+
+[img1]: ../../../media/loc/en/ai/lead-agent-widget.png

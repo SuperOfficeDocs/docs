@@ -2,7 +2,7 @@
 uid: help-nl-ai
 title: AI-diensten
 description: Overzicht van kunstmatige intelligentie-diensten in SuperOffice CRM
-keywords: ['AI', 'kunstmatige intelligentie', 'AI Platform', 'machine learning', 'automatisering']
+keywords: ['AI', 'kunstmatige intelligentie', 'AI Platform', 'machine learning', 'automatisering', 'insight', 'assist', 'agent', 'mcp', 'instantie']
 author: digitaldiina
 date: 10.01.2026
 so_version: 12.4
@@ -16,17 +16,20 @@ deployment: online
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /nl/ai/index
-boost: 1.5
+boost: 2
+related:
+  - /nl/ai/learn/set-up-ai-agents
+  - /nl/admin/license/crm-suite
 language: nl
 ---
-
-<Note>
-SuperOffice AI is alleen beschikbaar in CRM Online. Het vereist de **AI Platform**-uitbreiding en specifieke servicelicenties. Deze diensten worden maandelijks gefactureerd per actieve AI-dienst.
-</Note>
 
 SuperOffice AI helpt bij het automatiseren van routinetaken en het verminderen van handmatig werk door kunstmatige intelligentie direct in de CRM in te bedden. U kunt reactietijden verbeteren, fouten verminderen en efficiënter werken-zonder technische expertise of programmeervaardigheden nodig te hebben.
 
 Deze functies stellen uw team in staat om zich te concentreren op zinvol werk, terwijl AI repetitieve processen op de achtergrond afhandelt.
+
+<Note>
+SuperOffice AI is alleen beschikbaar in CRM Online. Licentievereisten zijn dienstspecifiek.
+</Note>
 
 ## Beschikbare diensten
 
@@ -40,8 +43,33 @@ Deze functies stellen uw team in staat om zich te concentreren op zinvol werk, t
 | [AI-samenvattingen in SuperOffice for Teams][6] | Genereert een samenvatting van een Microsoft Teams-gesprek bij het archiveren in SuperOffice. | AI Lab (pilotfunctie) |
 | [Company Insight][7] | Stelt bedrijfsgegevens voor uit officiële handelsregisters, zoals Brreg, Virk, Companies House en Zefix, wanneer u een nieuw bedrijf maakt. | CRM Suite Growth |
 | [Reply Assist][8] | Stelt een antwoord voor op een inkomend verzoek op basis van uw CRM-inhoud, dat u kunt controleren en verzenden. | CRM Suite Plus |
+| [Lead Agent][9] | Vindt, onderzoekt en kwalificeert nieuwe prospects op basis van geconfigureerde nieuwsbronnen en beoordeelt ze aan de hand van uw ideale klantprofiel, zodat een persoon ze kan goedkeuren. | CRM Suite Plus |
 
-![Overzicht AI-diensten -screenshot][img1]
+## Insight, Assist en Agent
+
+Nieuwere AI-mogelijkheden volgen een naamgevingspatroon dat aangeeft hoe elke dienst werkt:
+
+* **Insight** stelt externe gegevens voor terwijl u werkt, zonder dat u iets hoeft te openen of te beheren. [Company Insight][7] is een Insight-dienst.
+
+* **Assist** gebruikt generatieve AI om u te helpen bij het maken van content of het bepalen van de volgende stap, direct waar u al werkt. [Workspace Assist][4] en [Reply Assist][8] zijn Assist-diensten.
+
+* **Agent** draait op de achtergrond volgens een eigen schema en stelt resultaten voor die een persoon moet goedkeuren, in een eigen, toegewijd gebied Agents. [Lead Agent][9] is een Agent-dienst.
+
+## Het gebied Agents openen {#goto-agents}
+
+1. Selecteer <i class="ph ph-robot" aria-label="Agentspictogram"></i> **Agents** in de Navigator.
+
+    <Tip>
+    Ziet u **Agents** niet in de Navigator? Vraag uw beheerder om [AI-functies in te schakelen][10].
+    </Tip>
+
+1. Klik de eerste keer op **Log in** en keur toegang goed wanneer u dat wordt gevraagd: selecteer **Ik keur goed**.
+
+    ![Het gebied Agents openen: selecteer het pictogram Agents, daarna Log in -screenshot][img1]
+
+    ![AI Agents' toegang tot uw SuperOffice-installatie goedkeuren -screenshot][img2]
+
+1. Ga verder met [uw agents kiezen, activeren en instellen][10].
 
 [1]: /nl/ai/learn/text-analysis
 [2]: /nl/ai/learn/categorization
@@ -51,5 +79,8 @@ Deze functies stellen uw team in staat om zich te concentreren op zinvol werk, t
 [6]: /integrations/superoffice-for-teams/ai-summary
 [7]: /nl/company/learn/create#company-insight
 [8]: /nl/request/learn/handle-request-ai#reply-assist
+[9]: /nl/ai/learn/lead-agent
+[10]: /nl/ai/learn/set-up-ai-agents
 
-[img1]: /media/loc/en/ai/ai-services.png
+[img1]: ../../../media/loc/en/ai/open-agents-area.png
+[img2]: ../../../media/loc/en/ai/approve-ai-agents.png

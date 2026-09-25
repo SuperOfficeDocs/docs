@@ -1,0 +1,136 @@
+---
+title: Set up AI agents
+description: How to open the Agents area, activate an agent, and create and manage an instance. No admin access is needed - agent instances are personal, per user.
+keywords: ['agent instance', 'activate agent', 'add instance', 'Lead Agent']
+author: digitaldiina, Claudia Dias
+date: 10.01.2026
+so_version: 12.5
+content_type: howto
+tier: plus
+category: automation
+topic: ai
+platform: web
+deployment: online
+pilot: yes
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - /en/lead/learn/set-up-lead-agent
+  - Other AI services: /en/ai/learn/index
+language: en
+---
+
+<Note>
+SuperOffice's AI agents are coming soon. This page describes set-up steps for a feature that is not generally available yet.
+</Note>
+
+SuperOffice's AI agents work in the background and propose results for a person to approve. Every agent opens, activates, and is managed the same way. This page covers those shared steps once, then each agent has its own set-up page, for example [Set up Lead Agent][2].
+
+## Agent instances
+
+One configured, running copy of an agent is called an **instance**. Some agents allow more than one: Lead Agent allows up to 3, active and inactive combined. Others, such as Data Quality Agent, Duplicate Agent, and Sales Assistant Agent, allow only 1 instance per user. The limit counts inactive instances too: deactivating one does not free a slot, only deleting it does.
+
+## Requirements
+
+* Your organization must be on **CRM Suite Plus** or above.
+* An administrator must [enable AI functions][1] in CRM global preferences before the **Agents** icon appears.
+
+<Note>
+Agent instances themselves are personal, per user. You do not need admin access or **Settings and maintenance** to create or manage one.
+</Note>
+
+Only the instance's owner (its creator) can edit its settings, activate or deactivate it, or delete it.
+
+## Activate agent
+
+![The Agents page's starter set of agent cards -screenshot][img2]
+
+1. Select <i class="ph ph-robot" aria-label="Agents icon"></i> **Agents** in the Navigator.
+1. Click **Browse agents** in the upper-right corner of the **Agents** page.
+1. Use the search box or the category filters to find the agent you want.
+
+    ![The Browse agents drawer, listing every agent in your subscription -screenshot][img3]
+
+1. Click **Activate** to open that agent's set-up wizard and create your first **instance**.
+
+<Note>
+**Browse agents** shows only agents included in your CRMSuite subscription tier. If an agent you expect is not listed, contact your SuperOffice administrator or partner.
+</Note>
+
+When an agent has an instance, its card shows an **N active** link instead of **Activate**. Select it to see the agent's instances, grouped Active and Inactive, and open any of them.
+
+![The instances popover on an agent's card -screenshot][img4]
+
+## Add instance
+
+Agents that allow more than one instance show a **+ New instance** button.
+
+![Browse agents keeps a + New instance option for agents that allow more than one -screenshot][img5]
+
+1. Click **+ New instance** on the agent card or in the **Browse agents** list.
+1. Complete the agent-specific set-up wizard.
+
+## View instance details
+
+Select **About** from the three-dots menu for a read-only summary, including display name, agent type, owner, activation date, schedule, and approvers.
+
+![The three-dots menu, with About and Delete options -screenshot][img7]
+
+![The About this agent summary -screenshot][img10]
+
+## Edit settings
+
+1. Select the <i class="ph ph-pencil-simple" aria-label="Edit"></i> edit (pencil) button in the instance header.
+1. Make your changes in the set-up wizard.
+1. Click **Save changes**. Changes apply from the next run.
+
+## Mute notifications
+
+Every user with access to the instance has their own **Notify** bell toggle. Muting only affects that person. The instance keeps running for everyone else.
+
+1. Click the <i class="ph ph-bell" aria-label="Notify icon"></i> bell icon.
+1. Click **Mute notifications**.
+
+![The mute notifications confirmation dialog -screenshot][img6]
+
+Click <i class="ph ph-bell-slash" aria-label="Bell with strike-through icon"></i> to turn notifications back on.
+
+## Deactivate an instance
+
+1. Click the Task menu (<i class="ph ph-dots-three-vertical" aria-label="three-dots icon"></i>).
+1. Select the **Active** toggle.
+1. Click **Deactivate**.
+
+<Warning>
+Deactivating an instance discards any tasks awaiting review. This cannot be undone. If deactivating a Lead Agent instance, approve or reject leads first if you want to keep them.
+</Warning>
+
+![Deactivating from the task menu, with the pending-approvals warning -screenshot][img8]
+
+![Inactive agent -screenshot][img1]
+
+## Delete an instance
+
+<Danger>
+Deleting an instance is permanent and removes all its data.
+</Danger>
+
+1. First, deactivate the instance.
+1. Click the <i class="ph ph-dots-three-vertical" aria-label="More options"></i> three-dots menu and select Delete.
+1. Click **Delete**.
+
+![Deleting an instance from the three-dots menu and the confirmation -screenshot][img9]
+
+[1]: ../admin/index
+[2]: /en/lead/learn/set-up-lead-agent
+
+[img1]: /media/loc/en/ai/inactive-agent.png
+[img2]: /media/loc/en/ai/agents-overview-starter-cards.png
+[img3]: /media/loc/en/ai/browse-agents.png
+[img4]: /media/loc/en/ai/agent-overview-1-active.png
+[img5]: /media/loc/en/ai/new-instance-button.png
+[img6]: /media/loc/en/ai/mute-agent-notifications-warning.png
+[img7]: /media/loc/en/ai/agent-task-button.png
+[img8]: /media/loc/en/ai/deactivate-agent-new.png
+[img9]: /media/loc/en/ai/delete-instance.png
+[img10]: /media/loc/en/ai/about-this-agent.png

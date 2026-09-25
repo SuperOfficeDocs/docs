@@ -1,0 +1,136 @@
+---
+title: KI-Agenten einrichten
+description: Wie Sie den Bereich Agenten öffnen, einen Agenten aktivieren sowie eine Instanz erstellen und verwalten. Ein Administratorzugriff ist nicht nötig, denn Agenteninstanzen sind persönlich und pro Benutzer angelegt.
+keywords: ['Agenteninstanz', 'Agent aktivieren', 'Instanz hinzufügen', 'Lead Agent']
+author: digitaldiina, Claudia Dias
+date: 10.01.2026
+so_version: 12.5
+content_type: howto
+tier: plus
+category: automation
+topic: ai
+platform: web
+deployment: online
+pilot: yes
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - /de/lead/learn/set-up-lead-agent
+  - Andere KI-Services: /de/ai/learn/index
+language: de
+---
+
+<Note>
+SuperOffices KI-Agenten kommen in Kürze. Diese Seite beschreibt die Einrichtungsschritte für eine Funktion, die noch nicht allgemein verfügbar ist.
+</Note>
+
+SuperOffices KI-Agenten arbeiten im Hintergrund und schlagen Ergebnisse vor, die eine Person genehmigt. Jeder Agent wird auf dieselbe Weise geöffnet, aktiviert und verwaltet. Diese Seite behandelt diese gemeinsamen Schritte einmal; danach hat jeder Agent seine eigene Einrichtungsseite, zum Beispiel [Lead Agent einrichten][2].
+
+## Agenteninstanzen
+
+Eine konfigurierte, laufende Kopie eines Agenten wird als **Instanz** bezeichnet. Manche Agenten erlauben mehr als eine: Lead Agent erlaubt bis zu 3, aktive und inaktive zusammengerechnet. Andere, wie Data Quality Agent, Duplicate Agent und Sales Assistant Agent, erlauben nur 1 Instanz pro Benutzer. Das Limit zählt auch inaktive Instanzen: Das Deaktivieren einer Instanz gibt keinen Platz frei, nur das Löschen tut das.
+
+## Anforderungen
+
+* Ihre Organisation muss den Plan **CRM Suite Plus** oder höher haben.
+* Ein Administrator muss die [KI-Funktionen aktivieren][1] in den globalen CRM-Einstellungen, bevor das Symbol **Agenten** erscheint.
+
+<Note>
+Agenteninstanzen selbst sind persönlich, pro Benutzer. Sie benötigen keinen Administratorzugriff oder **Einstellungen und Verwaltung**, um eine zu erstellen oder zu verwalten.
+</Note>
+
+Nur der Eigentümer der Instanz (ihr Ersteller) kann ihre Einstellungen bearbeiten, sie aktivieren oder deaktivieren oder sie löschen.
+
+## Agent aktivieren
+
+![Die Startkarten-Auswahl auf der Agenten-Seite -screenshot][img2]
+
+1. Wählen Sie <i class="ph ph-robot" aria-label="Agenten-Symbol"></i> **Agenten** im Navigator aus.
+1. Klicken Sie oben rechts auf der **Agenten**-Seite auf **Agenten durchsuchen**.
+1. Verwenden Sie das Suchfeld oder die Kategoriefilter, um den gewünschten Agenten zu finden.
+
+    ![Die Schublade Agenten durchsuchen mit allen Agenten Ihres Abonnements -screenshot][img3]
+
+1. Klicken Sie auf **Aktivieren**, um den Einrichtungsassistenten dieses Agenten zu öffnen und Ihre erste **Instanz** zu erstellen.
+
+<Note>
+**Agenten durchsuchen** zeigt nur Agenten, die in Ihrem CRMSuite-Abonnement-Plan enthalten sind. Wenn ein erwarteter Agent nicht aufgeführt ist, wenden Sie sich an Ihren SuperOffice-Administrator oder -Partner.
+</Note>
+
+Sobald ein Agent eine Instanz hat, zeigt seine Karte statt **Aktivieren** einen Link **N aktiv**. Wählen Sie diesen, um die Instanzen des Agenten zu sehen, gruppiert in Aktiv und Inaktiv, und eine davon zu öffnen.
+
+![Das Instanzen-Popover auf der Karte eines Agenten -screenshot][img4]
+
+## Instanz hinzufügen
+
+Agenten, die mehr als eine Instanz zulassen, zeigen eine Schaltfläche **+ Neue Instanz**.
+
+![Agenten durchsuchen behält eine Option + Neue Instanz für Agenten, die mehr als eine zulassen -screenshot][img5]
+
+1. Klicken Sie auf **+ Neue Instanz** auf der Agentenkarte oder in der Liste **Agenten durchsuchen**.
+1. Schließen Sie den agentenspezifischen Einrichtungsassistenten ab.
+
+## Instanzdetails anzeigen
+
+Wählen Sie **Über** im Drei-Punkte-Menü für eine schreibgeschützte Zusammenfassung, einschließlich Anzeigename, Agententyp, Eigentümer, Aktivierungsdatum, Zeitplan und Genehmigende.
+
+![Das Drei-Punkte-Menü mit den Optionen Über und Löschen -screenshot][img7]
+
+![Die Zusammenfassung Über diesen Agenten -screenshot][img10]
+
+## Einstellungen bearbeiten
+
+1. Wählen Sie die <i class="ph ph-pencil-simple" aria-label="Bearbeiten"></i> Bearbeiten-Schaltfläche (Stift) im Instanzheader.
+1. Nehmen Sie Ihre Änderungen im Einrichtungsassistenten vor.
+1. Klicken Sie auf **Änderungen speichern**. Die Änderungen gelten ab dem nächsten Lauf.
+
+## Benachrichtigungen stummschalten
+
+Jeder Benutzer mit Zugriff auf die Instanz hat seinen eigenen **Benachrichtigen**-Glockenschalter. Das Stummschalten betrifft nur diese Person. Die Instanz läuft für alle anderen weiter.
+
+1. Klicken Sie auf das <i class="ph ph-bell" aria-label="Benachrichtigen-Symbol"></i> Glockensymbol.
+1. Klicken Sie auf **Benachrichtigungen stummschalten**.
+
+![Der Bestätigungsdialog zum Stummschalten von Benachrichtigungen -screenshot][img6]
+
+Klicken Sie auf <i class="ph ph-bell-slash" aria-label="Durchgestrichene Glocke"></i>, um Benachrichtigungen wieder zu aktivieren.
+
+## Eine Instanz deaktivieren
+
+1. Klicken Sie auf das Aufgabenmenü (<i class="ph ph-dots-three-vertical" aria-label="Drei-Punkte-Symbol"></i>).
+1. Wählen Sie den Schalter **Aktiv**.
+1. Klicken Sie auf **Deaktivieren**.
+
+<Warning>
+Das Deaktivieren einer Instanz verwirft alle auf Prüfung wartenden Aufgaben. Dies kann nicht rückgängig gemacht werden. Wenn Sie eine Lead-Agent-Instanz deaktivieren, genehmigen oder lehnen Sie zuerst die Leads ab, wenn Sie diese behalten möchten.
+</Warning>
+
+![Deaktivieren über das Aufgabenmenü, mit der Warnung zu ausstehenden Genehmigungen -screenshot][img8]
+
+![Inaktiver Agent -screenshot][img1]
+
+## Eine Instanz löschen
+
+<Danger>
+Das Löschen einer Instanz ist endgültig und entfernt alle ihre Daten.
+</Danger>
+
+1. Deaktivieren Sie zunächst die Instanz.
+1. Klicken Sie auf das <i class="ph ph-dots-three-vertical" aria-label="Weitere Optionen"></i> Drei-Punkte-Menü und wählen Sie Löschen.
+1. Klicken Sie auf **Löschen**.
+
+![Löschen einer Instanz über das Drei-Punkte-Menü und die Bestätigung -screenshot][img9]
+
+[1]: ../admin/index
+[2]: /de/lead/learn/set-up-lead-agent
+
+[img1]: ../../../media/loc/en/ai/inactive-agent.png
+[img2]: ../../../media/loc/en/ai/agents-overview-starter-cards.png
+[img3]: ../../../media/loc/en/ai/browse-agents.png
+[img4]: ../../../media/loc/en/ai/agent-overview-1-active.png
+[img5]: ../../../media/loc/en/ai/new-instance-button.png
+[img6]: ../../../media/loc/en/ai/mute-agent-notifications-warning.png
+[img7]: ../../../media/loc/en/ai/agent-task-button.png
+[img8]: ../../../media/loc/en/ai/deactivate-agent-new.png
+[img9]: ../../../media/loc/en/ai/delete-instance.png
+[img10]: ../../../media/loc/en/ai/about-this-agent.png
