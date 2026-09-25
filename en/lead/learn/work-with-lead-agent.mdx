@@ -1,15 +1,17 @@
 ---
 title: Work with Lead Agent
 description: Review and approve the prospects Lead Agent finds, using its Chat, History, and Performance tabs.
-keywords: ['lead agent', 'prospect report', 'AI agents']
+keywords: ['lead agent', 'prospect report', 'find leads', 'approve lead', 'reject lead', 'AI agents']
 author: digitaldiina, Claudia Dias
 date: 10.01.2026
 so_version: 12.5
 content_type: howto
 tier: plus
-pilot: yes
 category: sale
 topic: lead
+platform: web
+deployment: online
+pilot: yes
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
@@ -23,62 +25,105 @@ import LeadAgentPilotNote from "../../../snippets/ai/lead-agent-pilot-note.mdx";
 
 <LeadAgentPilotNote />
 
-Once Lead Agent is set up, it runs in the background and brings prospects to you for review. This page covers reviewing and approving what it finds. For set-up, see [Set up Lead Agent][1].
+After [Lead Agent is set up][1], it runs in the background daily and brings prospects to you for review. This page covers reviewing and approving what it finds.
 
-## The workspace: three tabs
+## Find your agent
 
-Open an instance from **My agents** or its card to see its workspace. Across the top are three tabs, and on the right a **Notify** toggle, an edit button, and a three-dots menu.
+1. Select <i class="ph ph-robot" aria-label="Agents icon"></i> **Agents** in the Navigator.
+1. Select the Lead Agent instance from the **My agents** list or the Lead Agent card in the **Agent overview**.
 
-| Tab | Purpose |
-|---|---|
-| Chat | Talk to the agent and review discovered leads. |
-| History | A detailed log of everything the agent has done. Shown only to the owner and its approvers. |
-| Performance | Performance views for the instance over a chosen period. |
+![Selecting the Lead Agent instance from the My agents list -screenshot][img8]
+![Selecting the Lead Agent instance from the Agent overview -screenshot][img9]
+
+## The agent workspace
+
+Across the top are three tabs.
 
 ![The Lead Agent workspace and its three tabs -screenshot][img1]
 
-## Review leads in Chat
+### Chat tab
 
-The **Chat** tab organizes everything into threads on the left:
+In the **Chat** tab, you can talk to the agent and review discovered leads.
 
-* **General chat**: a free conversation with the agent. Ask it to look into a specific company and watch it work through the steps. A genuine lead found this way raises a normal approval task, just like one found on the daily run.
-* **Lead threads**: each discovered prospect arrives as its own thread, named after the company. This is where you approve or reject the lead.
+* **General chat:** a free conversation with the agent. Ask it to look into a specific company and watch it work through the steps. A genuine lead found this way raises a normal approval task, just like one found on the daily run.
 
-![The Chat tab: General chat and per-company lead threads -screenshot][img2]
+* **Lead threads:** each discovered prospect arrives as its own thread, named after the company. This is where you approve or reject the lead.
 
-### The prospect report
-
-Opening a lead thread shows the agent's prospect report. It opens collapsed to the essentials: a fit rating, the sources it used, and key stats.
-
-Select **Expand report** for the full write-up: a company summary, the record to be saved (name, business, address, country, phone, email, website, and any contacts found), and why it is a good fit, with sources cited.
-
-Select the document icon to download the report as a PDF, or **Collapse report** to go back to the summary view.
-
-![A prospect report, collapsed and expanded -screenshot][img3]
-
-### Approve or reject
-
-Above the **Approve** button, a **Choose or create a static selection** field lets you pick an existing selection or create one on the fly. Choosing one before approving adds the company, and any contacts, to it the moment you approve.
-
-The same picker works for **bulk-approving** several leads: hold Ctrl/Cmd to select multiple pending leads, then approve or reject them together. The chosen selection applies to every company in that batch.
-
-![Adding an approved company to a static selection -screenshot][img4]
-
-**Approve**: a confirmation spells out exactly what happens, for example which fields a new company record will get. Confirm to save the company, and any contacts, to SuperOffice with the approver as owner. Two notes are added too: a Company Summary note and a Product Offerings note.
-
-**Reject**: the lead is skipped and nothing is saved.
-
-![Approving a lead and rejecting a lead -screenshot][img5]
-
-## History and Performance
+### History
 
 The **History** tab is a detailed log of everything the agent has done: companies processed, ratings, reports sent for approval, prospects saved, and any items skipped, with the reason why. Use **Filter** to narrow it down by date range.
 
 ![The History tab and its period filter -screenshot][img6]
 
+<Note>
+This tab is available only to the agent's owner and its approvers.
+</Note>
+
+### Performance
+
 The **Performance** tab shows how the instance is performing over a period you choose: links processed, leads qualified, leads researched, leads sent for approval, approved, rejected, expired, and runs completed. Each metric appears as a trend chart.
 
 ![The Performance tab -screenshot][img7]
+
+## Review a prospect
+
+1. Select the **Chat** tab.
+1. Click <i class="ph ph-sliders-horizontal" aria-label="Filter icon"></i> and select **Pending**.
+1. Choose a lead from the list to show the agent's **prospect report**.
+
+    * The report opens collapsed to the essentials: a fit rating, the sources it used, and key stats.
+    * Click **Expand report** for the full write-up: a company summary, the record to be saved (name, business, address, country, phone, email, website, and any contacts found), and why it is a good fit, with sources cited.
+
+1. Optionally, click <i class="ph ph-file-text" aria-label="Document icon"></i> to download the report as a PDF.
+
+![A prospect report, collapsed -screenshot][img3]
+![A prospect report, expanded -screenshot][img10]
+
+## Look into a specific company
+
+1. Select the **Chat** tab.
+1. In the **General** chat, ask the agent to explore a specific company.
+1. If a genuine lead is found, the prospect report is added to the list. Review it as described above.
+
+![The Chat tab: General chat and per-company lead threads -screenshot][img2]
+
+## Approve a prospect
+
+![A pending prospect rated Good, ready for approval -screenshot][img14]
+
+When you decide to save a prospect to SuperOffice:
+
+1. Optionally, **Choose or create a static selection** to add the company, and any contacts, to the selection when you approve.
+
+1. Click **Approve** on the selected prospect.
+
+    ![The approve-lead confirmation dialog -screenshot][img5]
+
+1. In the confirmation dialog, review what will be saved to SuperOffice and click **Approve**.
+
+    * The approver is set as owner.
+    * Two notes are added: Company Summary and Product Offerings.
+
+![The lead marked Approved after confirming -screenshot][img5b]
+
+## Reject a prospect
+
+If you decide not to add a prospect to SuperOffice, you have two options:
+
+* **Ignore:** the lead remains in the list until it expires and nothing is saved.
+* **Reject:** the lead is skipped and nothing is saved. This lets other approvers know the lead has been vetted.
+
+![The reject-task confirmation dialog -screenshot][img12]
+
+![The lead marked Rejected after confirming -screenshot][img13]
+
+<Tip>
+To clean up the list, select multiple pending prospects and click **Reject** to dismiss them all at once.
+
+Use the filter to show only rejected prospects.
+</Tip>
+
+![Filtering the Chat tab's lead list to show only Rejected leads -screenshot][img11]
 
 ## Troubleshooting
 
@@ -90,10 +135,17 @@ The **Performance** tab shows how the instance is performing over a period you c
 
 [1]: set-up-lead-agent
 
-[img1]: /media/loc/en/ai/lead-workspace-tabs.png
-[img2]: /media/loc/en/ai/lead-chat-threads.png
-[img3]: /media/loc/en/ai/lead-prospect-report.png
-[img4]: /media/loc/en/ai/lead-static-selection.png
-[img5]: /media/loc/en/ai/lead-approve-reject.png
-[img6]: /media/loc/en/ai/lead-history.png
-[img7]: /media/loc/en/ai/lead-performance.png
+[img1]: /media/loc/en/lead/lead-agent-general-chat.png
+[img2]: /media/loc/en/lead/lead-chat-threads.png
+[img3]: /media/loc/en/lead/poor-lead-compact-report.png
+[img10]: /media/loc/en/lead/poor-lead-expanded-report.png
+[img5]: /media/loc/en/lead/approve-lead-dialog.png
+[img5b]: /media/loc/en/lead/approved-lead.png
+[img6]: /media/loc/en/lead/lead-history.png
+[img7]: /media/loc/en/lead/lead-performance.png
+[img8]: /media/loc/en/lead/my-agents-sidebar-list.png
+[img9]: /media/loc/en/ai/agent-overview-1-active.png
+[img11]: /media/loc/en/lead/filter-rejected-leads.png
+[img12]: /media/loc/en/lead/poor-lead-reject.png
+[img13]: /media/loc/en/lead/rejected-lead.png
+[img14]: /media/loc/en/lead/good-lead.png
