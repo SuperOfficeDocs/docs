@@ -1,51 +1,50 @@
 ---
 title: Lead Agent
-description: Lead Agent finner, undersøker og kvalifiserer nye prospekter automatisk, og hvert resultat gjennomgås og godkjennes av en person før noe lagres.
-keywords: ['lead agent', 'AI agents', 'leadoppdagelse', 'prospektering', 'ICP']
+description: Lead Agent finner, undersøker og kvalifiserer nye prospekter automatisk, og hvert resultat blir gjennomgått og godkjent av en person før noe lagres.
+keywords: ['AI-agenter', 'leadoppdagelse', 'prospektering', 'ICP', 'ideell kundeprofil']
 author: digitaldiina, Claudia Dias
 date: 10.01.2026
 so_version: 12.5
 content_type: concept
 tier: plus
-pilot: yes
 category: automation
 topic: ai
 platform: web
 deployment: online
+pilot: yes
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
-  - Sett opp Lead Agent: /no/ai/admin/set-up-ai-agents#lead-agent
-  - Arbeid med Lead Agent: /no/lead/learn/work-with-lead-agent
+  - Aktiver agent: /no/ai/learn/set-up-ai-agents
+  - /no/lead/learn/set-up-lead-agent
+  - /no/lead/learn/work-with-lead-agent
   - Andre AI-tjenester: /no/ai/learn/index
 language: no
 ---
 
-<Note>
-Lead Agent kommer snart. Denne siden beskriver en funksjon som ennå ikke er allment tilgjengelig.
-</Note>
+import LeadAgentPilotNote from "../../../snippets/ai/lead-agent-pilot-note.mdx";
 
-Lead Agent jobber stille i bakgrunnen for å holde pipelinen din full. Hver dag finner den firmaer som passer din ideelle kunde, undersøker dem, vurderer hvor godt de passer, og lager en prospektrapport. En selger godkjenner den før noe lagres i SuperOffice.
+<LeadAgentPilotNote />
+
+Lead Agent kjører stille i bakgrunnen for å holde pipelinen din full. Hver dag finner den firmaer som matcher din ideelle kunde, undersøker dem, vurderer treffet og bygger en prospektrapport. En selger godkjenner den før noe lagres i SuperOffice.
+
+![Lead Agent viser et matchet prospekt for godkjenning][img1]
 
 ## Hva den gjør for deg
 
-* **Finner prospekter**: skanner de konfigurerte nyhetskildene dine for firmaer som viser kjøpssignaler.
-* **Undersøker og beriker**: verifiserer hvert firma mot foretaksregistre og, valgfritt, Leadfeeder, og finner kontaktpersoner også.
-* **Vurderer treffgraden**: hver kandidat får en ICP-matchscore.
-* **Skriver en prospektrapport**: et sammendrag, kilder, nøkkeltall, firmaposten som skal lagres, og hvorfor det er en god match.
-* **Legger godkjente leads til et utvalg**: grupperer valgfritt godkjente firmaer i et statisk utvalg, slik at du kan følge dem opp samlet.
-* **Spør før den handler**: reiser en lead for godkjennerne dine, og lagrer ingenting før en av dem godkjenner den.
+* **Finner prospekter:** skanner dine konfigurerte nyhetskilder for firmaer som viser kjøpssignaler.
+* **Undersøker og beriker:** verifiserer hvert firma mot foretaksregistre og, valgfritt, Leadfeeder, og finner også kontaktpersoner.
+* **Vurderer treffet:** hver kandidat får en ICP-matchvurdering.
+* **Skriver en prospektrapport:** et sammendrag, kilder, nøkkeltall, firmaposten som skal lagres, og hvorfor det er et godt treff.
+* **Legger godkjente leads til et utvalg:** grupperer valgfritt godkjente firmaer i et statisk utvalg, slik at du kan handle på dem samlet.
+* **Spør før den handler:** oppretter en lead for godkjennerne dine, og lagrer ingenting før én godkjenner den.
 
 <Note>
-Agenten foreslår; en selger bestemmer. Oppdagede firmaer og kontaktpersoner skrives bare til SuperOffice etter godkjenning. Hvis ingen godkjenner en lead, endres ingenting i CRM-en din.
+Agenten foreslår; en selger bestemmer. Oppdagede firmaer og kontakter skrives kun til SuperOffice etter godkjenning. Hvis ingen godkjenner en lead, endres ingenting i CRM-en din.
 </Note>
 
-![Lead Agent som viser et matchet prospekt til godkjenning][img1]
+## Tidsplan
 
-<Note>
-Lead Agent krever [CRM Suite Plus][9] eller høyere.
-</Note>
+Agenten kjører **Daglig**, én gang om dagen på et systemtildelt tidspunkt. Du kontrollerer hvor mange leads agenten finner hver dag, slik at gjennomgangsvolumet forblir håndterbart.
 
-[9]: /no/admin/license/crm-suite
-
-[img1]: /media/loc/en/ai/lead-agent-widget.png
+[img1]: ../../../media/loc/en/ai/lead-agent-widget.png
