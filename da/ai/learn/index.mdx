@@ -2,7 +2,7 @@
 uid: help-da-ai
 title: AI-tjenester
 description: Oversigt over kunstig intelligens-tjenester i SuperOffice CRM
-keywords: ['AI', 'kunstig intelligens', 'AI Platform', 'maskinlæring', 'automatisering']
+keywords: ['AI', 'kunstig intelligens', 'AI Platform', 'maskinlæring', 'automatisering', 'indsigt', 'assist', 'agent', 'mcp', 'instans']
 author: digitaldiina
 date: 10.01.2026
 so_version: 12.4
@@ -16,19 +16,20 @@ deployment: online
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /da/ai/index
-boost: 1.5
+boost: 2
 related:
-  - Opsæt AI-agenter: /da/ai/admin/set-up-ai-agents
+  - /da/ai/learn/set-up-ai-agents
+  - /da/admin/license/crm-suite
 language: da
 ---
-
-<Note>
-SuperOffice AI er kun tilgængelig i CRM Online. Det kræver **AI Platform**-tilføjelsesprogrammet og specifikke tjenestelicenser. Disse tjenester faktureres månedligt pr. aktiv AI-tjeneste.
-</Note>
 
 SuperOffice AI hjælper med at automatisere rutineopgaver og reducere manuelt arbejde ved at integrere kunstig intelligens direkte i CRM'et. Du kan forbedre svartider, reducere fejl og arbejde mere effektivt-uden at have brug for teknisk ekspertise eller kodningsevner.
 
 Disse funktioner giver dit team mulighed for at fokusere på meningsfuldt arbejde, mens AI håndterer repetitive processer i baggrunden.
+
+<Note>
+SuperOffice AI er kun tilgængelig i CRM Online. Licenskrav er tjenestespecifikke.
+</Note>
 
 ## Tilgængelige tjenester
 
@@ -44,7 +45,7 @@ Disse funktioner giver dit team mulighed for at fokusere på meningsfuldt arbejd
 | [Reply Assist][8] | Foreslår et svar på en indgående sag baseret på dit CRM-indhold, som du kan gennemgå og sende. | CRM Suite Plus |
 | [Lead Agent][9] | Finder, undersøger og kvalificerer nye emner fra konfigurerede nyhedskilder, og vurderer dem ud fra din ideelle kundeprofil, så en person kan godkende dem. | CRM Suite Plus |
 
-## Insight, Assist, and Agent
+## Insight, Assist og Agent
 
 Nyere AI-funktioner følger et navngivningsmønster, der fortæller dig, hvordan hver enkelt fungerer:
 
@@ -52,20 +53,21 @@ Nyere AI-funktioner følger et navngivningsmønster, der fortæller dig, hvordan
 * **Assist** bruger generativ AI til at hjælpe dig med at oprette indhold eller beslutte, hvad du skal gøre næste, lige der hvor du allerede arbejder. [Workspace Assist][4] og [Reply Assist][8] er Assist-tjenester.
 * **Agent** kører i baggrunden efter sin egen tidsplan og foreslår resultater, som en person skal godkende, i sit eget dedikerede Agenter-område. [Lead Agent][9] er en Agent-tjeneste.
 
-### Agentinstanser {#agent-instances}
+## Åbn Agenter-området {#goto-agents}
 
-En konfigureret, kørende kopi af en agent kaldes en **instans**. Nogle agenter tillader mere end én: Lead Agent tillader op til 3, aktive og inaktive tilsammen. Andre, såsom Data Quality Agent, Duplicate Agent og Sales Assistant Agent, tillader kun 1 instans pr. bruger. Grænsen tæller også inaktive instanser: at deaktivere en frigør ikke en plads, kun at slette den gør.
+1. Vælg <i class="ph ph-robot" aria-label="Agenter ikon"></i> **Agenter** i Navigator.
 
-## Åbn Agenter-området {#open-the-agents-area}
+    <Tip>
+    Kan du ikke se **Agenter** i Navigator? Bed din administrator om at [aktivere AI-funktioner][10].
+    </Tip>
 
-1. Log ind på SuperOffice CRM, og vælg ikonet **Agenter** i Navigator.
-1. Vælg **Log ind** for at åbne Agenter-området.
+1. Første gang skal du klikke på **Log ind** og godkende adgang, når du bliver bedt om det: vælg **Jeg godkender**.
 
     ![Åbning af Agenter-området: vælg ikonet Agenter, derefter Log ind -screenshot][img1]
 
-<Tip>
-Kan du ikke se **Agenter** i Navigator? Bed din administrator om at aktivere den. Se [Opsæt AI-agenter][10].
-</Tip>
+    ![Godkendelse af AI-agenters adgang til din SuperOffice-installation -screenshot][img2]
+
+1. Fortsæt til [at vælge, aktivere og opsætte dine agenter][10].
 
 [1]: /da/ai/learn/text-analysis
 [2]: /da/ai/learn/categorization
@@ -76,6 +78,7 @@ Kan du ikke se **Agenter** i Navigator? Bed din administrator om at aktivere den
 [7]: /da/company/learn/create#company-insight
 [8]: /da/request/learn/handle-request-ai#reply-assist
 [9]: /da/ai/learn/lead-agent
-[10]: /da/ai/admin/set-up-ai-agents
+[10]: /da/ai/learn/set-up-ai-agents
 
-[img1]: /media/loc/en/ai/open-agents-area.png
+[img1]: ../../../media/loc/en/ai/open-agents-area.png
+[img2]: ../../../media/loc/en/ai/approve-ai-agents.png
