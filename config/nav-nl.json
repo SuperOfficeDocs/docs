@@ -99,10 +99,12 @@
           "nl/ai/learn/text-analysis",
           "nl/ai/learn/categorization",
           "nl/ai/learn/workspace-assist",
+          "nl/ai/learn/lead-agent",
           {
             "group": "Voor beheerders",
             "pages": [
-              "nl/ai/admin/set-up-categorization"
+              "nl/ai/admin/set-up-categorization",
+              "nl/ai/admin/set-up-ai-agents"
             ]
           }
         ]
@@ -491,6 +493,7 @@
         "root": "nl/lead/learn/index",
         "pages": [
           "nl/lead/learn/work-with-leads",
+          "nl/lead/learn/work-with-lead-agent",
           {
             "group": "Voor beheerders",
             "root": "nl/lead/admin/index",

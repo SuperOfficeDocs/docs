@@ -1,0 +1,132 @@
+---
+title: Set up Lead Agent
+description: Configure and activate a Lead Agent instance - general settings, your ideal customer profile, sources, and approvers.
+keywords: ['lead agent setup', 'ideal customer profile', 'ICP', 'lead sources', 'approvers']
+author: digitaldiina, Claudia Dias
+date: 10.01.2026
+so_version: 12.5
+content_type: howto
+tier: plus
+category: sale
+topic: lead
+platform: web
+deployment: online
+pilot: yes
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - /en/ai/learn/lead-agent
+  - /en/lead/learn/work-with-lead-agent
+  - /en/ai/learn/set-up-ai-agents
+language: en
+---
+
+import LeadAgentPilotNote from "../../../snippets/ai/lead-agent-pilot-note.mdx";
+
+<LeadAgentPilotNote />
+
+Lead Agent's set-up wizard has 4 required steps.
+
+| # | Step | What it covers |
+|---|---|---|
+| 1 | General settings | Name, region and language, schedule, daily volume, add contacts |
+| 2 | Ideal customer | Instructions that define a good lead |
+| 3 | Sources | News sources to scan, plus enrichment sources |
+| 4 | Approvers | Who reviews and approves the leads |
+
+## Before you begin
+
+If you have not yet activated the Lead Agent, you need to do so first.
+
+1. Select <i class="ph ph-robot" aria-label="Agents icon"></i> **Agents** in the Navigator.
+
+    The first time you access the **Agents** page, you need to log in and approve AI agents in SuperOffice.
+
+1. Click **Browse agents** in the upper-right corner of the **Agents** overview and select **Lead Agent**.
+
+1. Click **Activate**. This opens the set-up wizard.
+
+## General settings
+
+1. Enter a unique **Name** for the agent instance. **This cannot be changed after activation.**
+1. Optionally, edit the suggested **Description** if you want something different.
+1. Choose **Country** and **Reporting language**:
+
+    * The values are pre-filled based on your organization's home country. Customize to meet your needs.
+    * Country determines which registries the agent searches and which country it scans by default.
+    * Language affects both reports and chat replies.
+
+    <Note>
+    **Your ideal customer profile's location wins over Country.** The **Country** you pick is only a default. For example, selecting Germany but naming France in your profile (next step) makes the agent search French registries and scan French leads.
+    </Note>
+
+1. Select how many approval tasks the agent creates per day (1-30). The default **Max tasks per day** is 10.
+
+1. Optionally, enable **Add contacts**. When on, the agent also finds contact persons for each lead, with email and phone details. When off, it works at company level only.
+
+1. Click **Next**.
+
+![The Lead Agent setup wizard, General settings -screenshot][img11]
+
+## Ideal customer
+
+This defines what counts as a good lead and how the agent should behave. Cover what matters, such as industry, size, and region, plus disqualifiers such as "not public sector".
+
+1. In plain language, describe the customers you want and how the agent should work. Be specific, for example: *Focus on companies showing growth signals, such as recent funding, new offices, or hiring.*
+1. Click **Next**.
+
+<Tip>
+Refine the instructions any time. Changes apply to future runs.
+</Tip>
+
+![Defining your ideal customer -screenshot][img12]
+
+## Sources
+
+![The Sources step, with enrichment sources including Leadfeeder -screenshot][img13]
+
+* **News sources:** public sources the agent scans for buying signals.
+* **Enrichment sources:** used to verify and enrich each lead. **Built-in sources** are business registries selected based on your country, for example, Brønnøysundregistret for Norway or Northdata for Germany.
+
+1. Add relevant news sources:
+    1. Click **Add a source**.
+    1. Provide a label and web address.
+    1. Click **Add source**.
+
+    ![Adding a news source -screenshot][img15]
+
+1. Choose whether to use **Leadfeeder** to enrich and prioritize discovered leads, or rely on web scraping alone. On by default.
+1. Click **Next**.
+
+## Approvers
+
+Choose who reviews and approves the leads this agent finds. Approving a lead makes that person its owner. For Lead Agent, the approver can be someone other than the instance owner.
+
+How leads are **shared** between approvers depends on how many you add:
+
+* **One approver:** every lead goes to that person, and the sharing setting is deactivated.
+* **Two or more approvers, or a group:**
+  * **First come, first served:** the first person to act owns the lead, and it clears from the others' queue.
+  * **Round-robin:** each new lead goes to the next approver in turn.
+
+<Warning>
+The **First come, first served** / **Round-robin** choice **cannot be changed after the instance is created**. You can still add or remove approvers.
+</Warning>
+
+![Choosing approvers -screenshot][img14]
+
+## Save
+
+1. Verify that the name and multiple-approvers choice are what you want. This is your last chance to change these two settings.
+1. Click **Save**.
+1. Select **Go to instance** to open your new Lead Agent and [get started][1].
+
+![Instance activated confirmation -screenshot][img16]
+
+[1]: ./work-with-lead-agent
+[img11]: /media/loc/en/ai/lead-wizard-general.png
+[img12]: /media/loc/en/ai/lead-wizard-ideal-customer.png
+[img13]: /media/loc/en/ai/lead-wizard-sources.png
+[img14]: /media/loc/en/ai/lead-wizard-approvers.png
+[img15]: /media/loc/en/ai/lead-wizard-add-source.png
+[img16]: /media/loc/en/ai/lead-agent-activated.png

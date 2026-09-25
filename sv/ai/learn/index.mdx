@@ -2,9 +2,9 @@
 uid: help-sv-ai
 title: AI-tjänster
 description: Översikt över artificiell intelligens-tjänster i SuperOffice CRM
-keywords: ['AI', 'artificiell intelligens', 'AI Platform', 'maskininlärning', 'automatisering']
+keywords: ['AI', 'artificiell intelligens', 'AI Platform', 'maskininlärning', 'automatisering', 'insikt', 'assist', 'agent', 'mcp', 'instans']
 author: digitaldiina
-date: 09.22.2026
+date: 10.01.2026
 so_version: 12.4
 content_type: concept
 license: aiplatform
@@ -16,17 +16,20 @@ deployment: online
 audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from: /sv/ai/index
-boost: 1.5
+boost: 2
+related:
+  - /sv/ai/learn/set-up-ai-agents
+  - /sv/admin/license/crm-suite
 language: sv
 ---
-
-<Note>
-SuperOffice AI är endast tillgängligt i CRM Online. Det kräver **AI Platform**-tillägget och specifika tjänstelicenser. Dessa tjänster faktureras månadsvis per aktiv AI-tjänst.
-</Note>
 
 SuperOffice AI hjälper till att automatisera rutinuppgifter och minska manuellt arbete genom att bädda in artificiell intelligens direkt i CRM:et. Du kan förbättra svarstider, minska fel och arbeta mer effektivt-utan att behöva teknisk expertis eller programmeringskunskaper.
 
 Dessa funktioner gör det möjligt för ditt team att fokusera på meningsfullt arbete, medan AI hanterar repetitiva processer i bakgrunden.
+
+<Note>
+SuperOffice AI är endast tillgängligt i CRM Online. Licenskrav är tjänstespecifika.
+</Note>
 
 ## Tillgängliga tjänster
 
@@ -39,8 +42,34 @@ Dessa funktioner gör det möjligt för ditt team att fokusera på meningsfullt 
 | [SuperNotes][5] | AI-driven mötesassistent som spelar in, transkriberar och sammanfattar möten, och kopplar insikterna tillbaka till SuperOffice. | Separat integration (inte en del av AI Platform) |
 | [AI-sammanfattningar i SuperOffice for Teams][6] | Genererar en sammanfattning av en Microsoft Teams-konversation vid arkivering i SuperOffice. | AI Lab (pilotfunktion) |
 | [Company Insight][7] | Föreslår företagsuppgifter från officiella företagsregister, till exempel Brreg, Virk, Companies House och Zefix, när du skapar ett nytt företag. | CRM Suite Growth |
+| [Reply Assist][8] | Föreslår ett svar på ett inkommande ärende baserat på ditt CRM-innehåll, som du kan granska och skicka. | CRM Suite Plus |
+| [Lead Agent][9] | Hittar, undersöker och kvalificerar nya prospekt från konfigurerade nyhetskällor, och bedömer dem mot din ideala kundprofil, så att en person kan godkänna dem. | CRM Suite Plus |
 
-![Översikt AI-tjänster -screenshot][img1]
+## Insight, Assist och Agent
+
+Nyare AI-funktioner följer ett namngivningsmönster som visar hur var och en fungerar:
+
+* **Insight** föreslår extern data direkt i flödet medan du arbetar, utan något att öppna eller hantera. [Company Insight][7] är en Insight-tjänst.
+
+* **Assist** använder generativ AI för att hjälpa dig skapa innehåll eller bestämma nästa steg, direkt där du redan arbetar. [Workspace Assist][4] och [Reply Assist][8] är Assist-tjänster.
+
+* **Agent** körs i bakgrunden enligt ett eget schema och föreslår resultat som en person godkänner, i ett eget dedikerat Agenter-område. [Lead Agent][9] är en Agent-tjänst.
+
+## Öppna Agenter-området {#goto-agents}
+
+1. Välj <i class="ph ph-robot" aria-label="Agenter-ikon"></i> **Agenter** i Navigator.
+
+    <Tip>
+    Ser du inte **Agenter** i Navigator? Be din administratör att [aktivera AI-funktioner][10].
+    </Tip>
+
+1. Första gången klickar du på **Logga in** och godkänner åtkomst när du blir tillfrågad: välj **Jag godkänner**.
+
+    ![Öppna Agenter-området: välj Agenter-ikonen, sedan Logga in -screenshot][img1]
+
+    ![Godkänna AI-agenters åtkomst till din SuperOffice-installation -screenshot][img2]
+
+1. Fortsätt till [att välja, aktivera och konfigurera dina agenter][10].
 
 [1]: /sv/ai/learn/text-analysis
 [2]: /sv/ai/learn/categorization
@@ -49,5 +78,9 @@ Dessa funktioner gör det möjligt för ditt team att fokusera på meningsfullt 
 [5]: /integrations/supernotes/index
 [6]: /integrations/superoffice-for-teams/ai-summary
 [7]: /sv/company/learn/create#company-insight
+[8]: /sv/request/learn/handle-request-ai#reply-assist
+[9]: /sv/ai/learn/lead-agent
+[10]: /sv/ai/learn/set-up-ai-agents
 
-[img1]: /media/loc/en/ai/ai-services.png
+[img1]: ../../../media/loc/en/ai/open-agents-area.png
+[img2]: ../../../media/loc/en/ai/approve-ai-agents.png

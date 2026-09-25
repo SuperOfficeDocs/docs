@@ -1,0 +1,136 @@
+---
+title: Konfigurera AI-agenter
+description: Hur du öppnar Agenter-området, aktiverar en agent och skapar och hanterar en instans. Ingen administratörsåtkomst krävs - agentinstanser är personliga, per användare.
+keywords: ['agentinstans', 'aktivera agent', 'lägg till instans', 'Lead Agent']
+author: digitaldiina, Claudia Dias
+date: 10.01.2026
+so_version: 12.5
+content_type: howto
+tier: plus
+category: automation
+topic: ai
+platform: web
+deployment: online
+pilot: yes
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - /sv/lead/learn/set-up-lead-agent
+  - Andra AI-tjänster: /sv/ai/learn/index
+language: sv
+---
+
+<Note>
+SuperOffice AI-agenter lanseras snart. Den här sidan beskriver konfigurationssteg för en funktion som ännu inte är allmänt tillgänglig.
+</Note>
+
+SuperOffice AI-agenter arbetar i bakgrunden och föreslår resultat för en person att godkänna. Varje agent öppnas, aktiveras och hanteras på samma sätt. Den här sidan går igenom dessa gemensamma steg en gång, och sedan har varje agent sin egen konfigurationssida, till exempel [Konfigurera Lead Agent][2].
+
+## Agentinstanser
+
+En konfigurerad, körande kopia av en agent kallas en **instans**. Vissa agenter tillåter fler än en: Lead Agent tillåter upp till 3, aktiva och inaktiva sammanräknat. Andra, till exempel Data Quality Agent, Duplicate Agent och Sales Assistant Agent, tillåter bara 1 instans per användare. Gränsen räknar även inaktiva instanser: att avaktivera en frigör ingen plats, bara att radera den gör det.
+
+## Krav
+
+* Din organisation måste ha **CRM Suite Plus** eller högre.
+* En administratör måste [aktivera AI-funktioner][1] i de globala CRM-preferenserna innan ikonen **Agenter** visas.
+
+<Note>
+Agentinstanser är personliga, per användare. Du behöver ingen administratörsåtkomst eller **Inställningar och underhåll** för att skapa eller hantera en.
+</Note>
+
+Endast instansens ägare (den som skapade den) kan redigera dess inställningar, aktivera eller avaktivera den, eller radera den.
+
+## Aktivera agent
+
+![Agenter-sidans standarduppsättning av agentkort -screenshot][img2]
+
+1. Välj <i class="ph ph-robot" aria-label="Agenter-ikon"></i> **Agenter** i Navigator.
+1. Klicka på **Bläddra bland agenter** i det övre högra hörnet på sidan **Agenter**.
+1. Använd sökrutan eller kategorifiltren för att hitta agenten du vill ha.
+
+    ![Bläddra bland agenter-panelen, som listar varje agent i din prenumeration -screenshot][img3]
+
+1. Klicka på **Aktivera** för att öppna den agentens konfigurationsguide och skapa din första **instans**.
+
+<Note>
+**Bläddra bland agenter** visar endast agenter som ingår i din CRM Suite-prenumerationsnivå. Om en agent du förväntar dig inte listas, kontakta din SuperOffice-administratör eller partner.
+</Note>
+
+När en agent har en instans visar dess kort en **N aktiva**-länk istället för **Aktivera**. Välj den för att se agentens instanser, grupperade Aktiva och Inaktiva, och öppna någon av dem.
+
+![Instanspopoveren på ett agentkort -screenshot][img4]
+
+## Lägg till instans
+
+Agenter som tillåter fler än en instans visar en **+ Ny instans**-knapp.
+
+![Bläddra bland agenter behåller alternativet + Ny instans för agenter som tillåter fler än en -screenshot][img5]
+
+1. Klicka på **+ Ny instans** på agentkortet eller i listan **Bläddra bland agenter**.
+1. Slutför den agentspecifika konfigurationsguiden.
+
+## Visa instansdetaljer
+
+Välj **Om** i trepunktsmenyn för en skrivskyddad sammanfattning, inklusive visningsnamn, agenttyp, ägare, aktiveringsdatum, schema och godkännare.
+
+![Trepunktsmenyn, med alternativen Om och Radera -screenshot][img7]
+
+![Sammanfattningen Om denna agent -screenshot][img10]
+
+## Redigera inställningar
+
+1. Välj knappen <i class="ph ph-pencil-simple" aria-label="Redigera"></i> redigera (penna) i instansrubriken.
+1. Gör dina ändringar i konfigurationsguiden.
+1. Klicka på **Spara ändringar**. Ändringarna gäller från nästa körning.
+
+## Stäng av aviseringar
+
+Varje användare med åtkomst till instansen har sin egen **Meddela**-klockväxel. Att stänga av påverkar bara den personen. Instansen fortsätter köra för alla andra.
+
+1. Klicka på klockikonen <i class="ph ph-bell" aria-label="Meddela-ikon"></i>.
+1. Klicka på **Stäng av aviseringar**.
+
+![Bekräftelsedialogrutan för att stänga av aviseringar -screenshot][img6]
+
+Klicka på <i class="ph ph-bell-slash" aria-label="Klocka med genomstrykning-ikon"></i> för att slå på aviseringar igen.
+
+## Avaktivera en instans
+
+1. Klicka på uppgiftsmenyn (<i class="ph ph-dots-three-vertical" aria-label="tre punkter-ikon"></i>).
+1. Välj **Aktiv**-växeln.
+1. Klicka på **Avaktivera**.
+
+<Warning>
+Att avaktivera en instans slänger bort alla uppgifter som väntar på granskning. Detta kan inte ångras. Om du avaktiverar en Lead Agent-instans, godkänn eller avvisa leads först om du vill behålla dem.
+</Warning>
+
+![Avaktivering från uppgiftsmenyn, med varningen om väntande godkännanden -screenshot][img8]
+
+![Inaktiv agent -screenshot][img1]
+
+## Radera en instans
+
+<Danger>
+Att radera en instans är permanent och tar bort all dess data.
+</Danger>
+
+1. Avaktivera först instansen.
+1. Klicka på trepunktsmenyn <i class="ph ph-dots-three-vertical" aria-label="Fler alternativ"></i> och välj Radera.
+1. Klicka på **Radera**.
+
+![Radera en instans från trepunktsmenyn och bekräftelsen -screenshot][img9]
+
+[1]: ../admin/index
+[2]: /sv/lead/learn/set-up-lead-agent
+
+[img1]: ../../../media/loc/en/ai/inactive-agent.png
+[img2]: ../../../media/loc/en/ai/agents-overview-starter-cards.png
+[img3]: ../../../media/loc/en/ai/browse-agents.png
+[img4]: ../../../media/loc/en/ai/agent-overview-1-active.png
+[img5]: ../../../media/loc/en/ai/new-instance-button.png
+[img6]: ../../../media/loc/en/ai/mute-agent-notifications-warning.png
+[img7]: ../../../media/loc/en/ai/agent-task-button.png
+[img8]: ../../../media/loc/en/ai/deactivate-agent-new.png
+[img9]: ../../../media/loc/en/ai/delete-instance.png
+[img10]: ../../../media/loc/en/ai/about-this-agent.png

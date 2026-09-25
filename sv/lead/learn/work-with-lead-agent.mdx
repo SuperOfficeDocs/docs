@@ -1,0 +1,151 @@
+---
+title: Arbeta med Lead Agent
+description: Granska och godkänn de prospekt Lead Agent hittar, med hjälp av flikarna Chatt, Historik och Prestanda.
+keywords: ['lead agent', 'prospektrapport', 'hitta leads', 'godkänna lead', 'avvisa lead', 'AI-agenter']
+author: digitaldiina, Claudia Dias
+date: 10.01.2026
+so_version: 12.5
+content_type: howto
+tier: plus
+category: sale
+topic: lead
+platform: web
+deployment: online
+pilot: yes
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - /sv/ai/learn/lead-agent
+  - /sv/lead/learn/set-up-lead-agent
+  - Översikt över leadhantering: /sv/lead/learn/index
+language: sv
+---
+
+import LeadAgentPilotNote from "../../../snippets/ai/lead-agent-pilot-note.mdx";
+
+<LeadAgentPilotNote />
+
+Efter att [Lead Agent är konfigurerad][1] körs den i bakgrunden varje dag och tar fram prospekt för dig att granska. Den här sidan går igenom hur du granskar och godkänner det den hittar.
+
+## Hitta din agent
+
+1. Välj <i class="ph ph-robot" aria-label="Agenter-ikon"></i> **Agenter** i Navigator.
+1. Välj Lead Agent-instansen från listan **Mina agenter** eller Lead Agent-kortet i **Agentöversikten**.
+
+![Välja Lead Agent-instansen från listan Mina agenter -screenshot][img8]
+![Välja Lead Agent-instansen från Agentöversikten -screenshot][img9]
+
+## Agentens arbetsyta
+
+Längst upp finns tre flikar.
+
+![Lead Agents arbetsyta och dess tre flikar -screenshot][img1]
+
+### Chatt-fliken
+
+I fliken **Chatt** kan du prata med agenten och granska upptäckta leads.
+
+* **Allmän chatt:** ett fritt samtal med agenten. Be den undersöka ett specifikt företag och se den arbeta sig igenom stegen. En äkta lead som hittas på detta sätt skapar en vanlig godkännandeuppgift, precis som en som hittats i den dagliga körningen.
+
+* **Leadtrådar:** varje upptäckt prospekt kommer som en egen tråd, namngiven efter företaget. Här godkänner eller avvisar du leadden.
+
+### Historik
+
+Fliken **Historik** är en detaljerad logg över allt agenten har gjort: bearbetade företag, betyg, rapporter skickade för godkännande, sparade prospekt och eventuella hoppade poster, med orsaken varför. Använd **Filter** för att avgränsa efter datumintervall.
+
+![Fliken Historik och dess periodfilter -screenshot][img6]
+
+<Note>
+Den här fliken är endast tillgänglig för agentens ägare och dess godkännare.
+</Note>
+
+### Prestanda
+
+Fliken **Prestanda** visar hur instansen presterar under en period du väljer: bearbetade länkar, kvalificerade leads, undersökta leads, leads skickade för godkännande, godkända, avvisade, utgångna och avslutade körningar. Varje mätvärde visas som ett trenddiagram.
+
+![Fliken Prestanda -screenshot][img7]
+
+## Granska ett prospekt
+
+1. Välj fliken **Chatt**.
+1. Klicka på <i class="ph ph-sliders-horizontal" aria-label="Filter-ikon"></i> och välj **Väntande**.
+1. Välj en lead från listan för att visa agentens **prospektrapport**.
+
+    * Rapporten öppnas hopfälld till det väsentliga: ett matchningsbetyg, källorna den använde och viktiga nyckeltal.
+    * Klicka på **Expandera rapport** för hela redogörelsen: en företagssammanfattning, posten som ska sparas (namn, verksamhet, adress, land, telefon, e-post, webbplats och eventuella hittade kontakter), och varför den är en bra matchning, med källor angivna.
+
+1. Klicka valfritt på <i class="ph ph-file-text" aria-label="Dokument-ikon"></i> för att ladda ner rapporten som PDF.
+
+![En prospektrapport, hopfälld -screenshot][img3]
+![En prospektrapport, expanderad -screenshot][img10]
+
+## Undersök ett specifikt företag
+
+1. Välj fliken **Chatt**.
+1. Be agenten i **Allmän**-chatten att undersöka ett specifikt företag.
+1. Om en äkta lead hittas läggs prospektrapporten till i listan. Granska den enligt beskrivningen ovan.
+
+![Fliken Chatt: Allmän chatt och leadtrådar per företag -screenshot][img2]
+
+## Godkänn ett prospekt
+
+![Ett väntande prospekt bedömt som Bra, redo för godkännande -screenshot][img14]
+
+När du bestämmer dig för att spara ett prospekt i SuperOffice:
+
+1. Välj valfritt **Välj eller skapa ett statiskt urval** för att lägga till företaget, och eventuella kontakter, i urvalet när du godkänner.
+
+1. Klicka på **Godkänn** på det valda prospektet.
+
+    ![Bekräftelsedialogrutan för att godkänna en lead -screenshot][img5]
+
+1. I bekräftelsedialogrutan, granska vad som kommer att sparas i SuperOffice och klicka på **Godkänn**.
+
+    * Godkännaren anges som ägare.
+    * Två anteckningar läggs till: Företagssammanfattning och Produkterbjudanden.
+
+![Leadden markerad som Godkänd efter bekräftelse -screenshot][img5b]
+
+## Avvisa ett prospekt
+
+Om du bestämmer dig för att inte lägga till ett prospekt i SuperOffice har du två alternativ:
+
+* **Ignorera:** leadden ligger kvar i listan tills den går ut och ingenting sparas.
+* **Avvisa:** leadden hoppas över och ingenting sparas. Detta låter andra godkännare veta att leadden har granskats.
+
+![Bekräftelsedialogrutan för att avvisa en uppgift -screenshot][img12]
+
+![Leadden markerad som Avvisad efter bekräftelse -screenshot][img13]
+
+<Tip>
+För att städa upp listan kan du välja flera väntande prospekt och klicka på **Avvisa** för att avfärda dem alla på en gång.
+
+Använd filtret för att bara visa avvisade prospekt.
+</Tip>
+
+![Filtrera Chatt-flikens leadlista för att bara visa Avvisade leads -screenshot][img11]
+
+## Felsökning
+
+**En lead jag granskade försvann.** En lead som väntar på godkännande har en begränsad livslängd: 30 dagar som standard. En nedräkningsbanner visas när det är inom 5 dagar till den går ut. Om den inte godkänns eller avvisas i tid går den ut och ingenting sparas i din CRM.
+
+**Jag avaktiverade instansen och mina väntande leads är borta.** Att avaktivera en instans slänger bort alla leads som väntar på godkännande. Godkänn eller avvisa det du behöver först om du vill behålla det.
+
+**Jag kan se en instans inställningar men kan inte ändra något.** Du är en godkännare, inte ägaren. Endast instansens ägare kan spara ändringar i dess konfiguration; en godkännare som inte är ägaren kan visa men inte redigera den.
+
+[1]: set-up-lead-agent
+
+[img1]: ../../../media/loc/en/lead/lead-agent-general-chat.png
+[img2]: ../../../media/loc/en/lead/lead-chat-threads.png
+[img3]: ../../../media/loc/en/lead/poor-lead-compact-report.png
+[img10]: ../../../media/loc/en/lead/poor-lead-expanded-report.png
+[img5]: ../../../media/loc/en/lead/approve-lead-dialog.png
+[img5b]: ../../../media/loc/en/lead/approved-lead.png
+[img6]: ../../../media/loc/en/lead/lead-history.png
+[img7]: ../../../media/loc/en/lead/lead-performance.png
+[img8]: ../../../media/loc/en/lead/my-agents-sidebar-list.png
+[img9]: ../../../media/loc/en/ai/agent-overview-1-active.png
+[img11]: ../../../media/loc/en/lead/filter-rejected-leads.png
+[img12]: ../../../media/loc/en/lead/poor-lead-reject.png
+[img13]: ../../../media/loc/en/lead/rejected-lead.png
+[img14]: ../../../media/loc/en/lead/good-lead.png

@@ -1,0 +1,136 @@
+---
+title: Sett opp AI-agenter
+description: Hvordan åpne Agenter-området, aktivere en agent, og opprette og administrere en instans. Ingen administratortilgang er nødvendig - agentinstanser er personlige, per bruker.
+keywords: ['agentinstans', 'aktivere agent', 'legge til instans', 'Lead Agent']
+author: digitaldiina, Claudia Dias
+date: 10.01.2026
+so_version: 12.5
+content_type: howto
+tier: plus
+category: automation
+topic: ai
+platform: web
+deployment: online
+pilot: yes
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - /no/lead/learn/set-up-lead-agent
+  - Andre AI-tjenester: /no/ai/learn/index
+language: no
+---
+
+<Note>
+SuperOffices AI-agenter kommer snart. Denne siden beskriver oppsettstrinnene for en funksjon som ennå ikke er allment tilgjengelig.
+</Note>
+
+SuperOffices AI-agenter jobber i bakgrunnen og foreslår resultater som en person kan godkjenne. Hver agent åpnes, aktiveres og administreres på samme måte. Denne siden dekker disse felles trinnene én gang, og hver agent har deretter sin egen oppsettside, for eksempel [Sett opp Lead Agent][2].
+
+## Agentinstanser
+
+Én konfigurert, kjørende kopi av en agent kalles en **instans**. Noen agenter tillater mer enn én: Lead Agent tillater opptil 3, aktive og inaktive kombinert. Andre, som Data Quality Agent, Duplicate Agent og Sales Assistant Agent, tillater bare 1 instans per bruker. Grensen teller også inaktive instanser: å deaktivere en frigjør ikke en plass, bare å slette den gjør det.
+
+## Krav
+
+* Organisasjonen din må ha **CRM Suite Plus** eller høyere.
+* En administrator må [aktivere AI-funksjoner][1] i CRM globale preferanser før **Agenter**-ikonet vises.
+
+<Note>
+Agentinstanser er i seg selv personlige, per bruker. Du trenger ikke administratortilgang eller **Innstillinger og vedlikehold** for å opprette eller administrere en.
+</Note>
+
+Kun instansens eier (den som opprettet den) kan redigere innstillingene, aktivere eller deaktivere den, eller slette den.
+
+## Aktiver agent
+
+![Agenter-sidens startsett med agentkort -screenshot][img2]
+
+1. Velg <i class="ph ph-robot" aria-label="Agenter-ikon"></i> **Agenter** i Navigator.
+1. Klikk **Bla gjennom agenter** øverst til høyre på **Agenter**-siden.
+1. Bruk søkefeltet eller kategorifiltrene for å finne agenten du ønsker.
+
+    ![Skuffen Bla gjennom agenter, som viser alle agentene i abonnementet ditt -screenshot][img3]
+
+1. Klikk **Aktiver** for å åpne agentens oppsettveiviser og opprette din første **instans**.
+
+<Note>
+**Bla gjennom agenter** viser bare agenter som er inkludert i CRM Suite-abonnementsnivået ditt. Hvis en agent du forventer ikke vises i listen, kontakt SuperOffice-administratoren eller -partneren din.
+</Note>
+
+Når en agent har en instans, viser kortet en **N aktive**-lenke i stedet for **Aktiver**. Velg den for å se agentens instanser, gruppert i Aktive og Inaktive, og åpne en av dem.
+
+![Instansvinduet på et agentkort -screenshot][img4]
+
+## Legg til instans
+
+Agenter som tillater mer enn én instans, viser en knapp for **+ Ny instans**.
+
+![Bla gjennom agenter beholder alternativet + Ny instans for agenter som tillater mer enn én -screenshot][img5]
+
+1. Klikk **+ Ny instans** på agentkortet eller i listen **Bla gjennom agenter**.
+1. Fullfør den agentspesifikke oppsettveiviseren.
+
+## Vis instansdetaljer
+
+Velg **Om** fra trepunktsmenyen for et skrivebeskyttet sammendrag, inkludert visningsnavn, agenttype, eier, aktiveringsdato, tidsplan og godkjennere.
+
+![Trepunktsmenyen, med alternativene Om og Slett -screenshot][img7]
+
+![Sammendraget Om denne agenten -screenshot][img10]
+
+## Rediger innstillinger
+
+1. Velg <i class="ph ph-pencil-simple" aria-label="Rediger"></i> rediger-knappen (blyanten) i instansens topptekst.
+1. Gjør endringene dine i oppsettveiviseren.
+1. Klikk **Lagre endringer**. Endringene gjelder fra neste kjøring.
+
+## Demp varsler
+
+Hver bruker med tilgang til instansen har sin egen **Varsle**-bjelle-bryter. Demping påvirker bare den personen. Instansen fortsetter å kjøre for alle andre.
+
+1. Klikk på <i class="ph ph-bell" aria-label="Varsle-ikon"></i> bjelle-ikonet.
+1. Klikk **Demp varsler**.
+
+![Bekreftelsesdialogen for demping av varsler -screenshot][img6]
+
+Klikk på <i class="ph ph-bell-slash" aria-label="Bjelle med gjennomstreking"></i> for å slå varsler på igjen.
+
+## Deaktiver en instans
+
+1. Klikk på oppgavemenyen (<i class="ph ph-dots-three-vertical" aria-label="tre-punkter-ikon"></i>).
+1. Velg **Aktiv**-bryteren.
+1. Klikk **Deaktiver**.
+
+<Warning>
+Å deaktivere en instans forkaster alle oppgaver som venter på gjennomgang. Dette kan ikke angres. Hvis du deaktiverer en Lead Agent-instans, må du godkjenne eller avvise leads først hvis du vil beholde dem.
+</Warning>
+
+![Deaktivering fra oppgavemenyen, med advarselen om ventende godkjenninger -screenshot][img8]
+
+![Inaktiv agent -screenshot][img1]
+
+## Slett en instans
+
+<Danger>
+Sletting av en instans er permanent og fjerner alle dataene.
+</Danger>
+
+1. Deaktiver først instansen.
+1. Klikk på trepunktsmenyen (<i class="ph ph-dots-three-vertical" aria-label="Flere alternativer"></i>) og velg Slett.
+1. Klikk **Slett**.
+
+![Sletting av en instans fra trepunktsmenyen og bekreftelsen -screenshot][img9]
+
+[1]: ../admin/index
+[2]: /no/lead/learn/set-up-lead-agent
+
+[img1]: ../../../media/loc/en/ai/inactive-agent.png
+[img2]: ../../../media/loc/en/ai/agents-overview-starter-cards.png
+[img3]: ../../../media/loc/en/ai/browse-agents.png
+[img4]: ../../../media/loc/en/ai/agent-overview-1-active.png
+[img5]: ../../../media/loc/en/ai/new-instance-button.png
+[img6]: ../../../media/loc/en/ai/mute-agent-notifications-warning.png
+[img7]: ../../../media/loc/en/ai/agent-task-button.png
+[img8]: ../../../media/loc/en/ai/deactivate-agent-new.png
+[img9]: ../../../media/loc/en/ai/delete-instance.png
+[img10]: ../../../media/loc/en/ai/about-this-agent.png

@@ -1,0 +1,132 @@
+---
+title: Opsæt Lead Agent
+description: Konfigurer og aktivér en Lead Agent-instans - generelle indstillinger, din ideelle kundeprofil, kilder og godkendere.
+keywords: ['opsætning af lead agent', 'ideel kundeprofil', 'ICP', 'leadkilder', 'godkendere']
+author: digitaldiina, Claudia Dias
+date: 10.01.2026
+so_version: 12.5
+content_type: howto
+tier: plus
+category: sale
+topic: lead
+platform: web
+deployment: online
+pilot: yes
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - /da/ai/learn/lead-agent
+  - /da/lead/learn/work-with-lead-agent
+  - /da/ai/learn/set-up-ai-agents
+language: da
+---
+
+import LeadAgentPilotNote from "../../../snippets/ai/lead-agent-pilot-note.mdx";
+
+<LeadAgentPilotNote />
+
+Lead Agents opsætningsguide har 4 obligatoriske trin.
+
+| # | Trin | Hvad det dækker |
+|---|---|---|
+| 1 | Generelle indstillinger | Navn, region og sprog, tidsplan, dagligt volumen, tilføj kontakter |
+| 2 | Ideel kunde | Instruktioner, der definerer et godt lead |
+| 3 | Kilder | Nyhedskilder, der skal scannes, samt berigelseskilder |
+| 4 | Godkendere | Hvem der gennemgår og godkender leads |
+
+## Før du begynder
+
+Hvis du endnu ikke har aktiveret Lead Agent, skal du gøre det først.
+
+1. Vælg <i class="ph ph-robot" aria-label="Agenter ikon"></i> **Agenter** i Navigator.
+
+    Første gang du åbner siden **Agenter**, skal du logge ind og godkende AI-agenter i SuperOffice.
+
+1. Klik **Gennemse agenter** øverst til højre på oversigten **Agenter**, og vælg **Lead Agent**.
+
+1. Klik **Aktivér**. Dette åbner opsætningsguiden.
+
+## Generelle indstillinger
+
+1. Angiv et unikt **Navn** til agentinstansen. **Dette kan ikke ændres efter aktivering.**
+1. Redigér eventuelt den foreslåede **Beskrivelse**, hvis du ønsker noget andet.
+1. Vælg **Land** og **Rapporteringssprog**:
+
+    * Værdierne er forudfyldt baseret på din organisations hjemland. Tilpas dem efter behov.
+    * Land bestemmer, hvilke registre agenten søger i, og hvilket land den scanner som standard.
+    * Sprog påvirker både rapporter og chatsvar.
+
+    <Note>
+    **Din ideelle kundeprofils placering vinder over Land.** **Land**, du vælger, er kun en standardværdi. Hvis du for eksempel vælger Tyskland, men angiver Frankrig i din profil (næste trin), søger agenten i franske registre og scanner franske leads.
+    </Note>
+
+1. Vælg, hvor mange godkendelsesopgaver agenten opretter pr. dag (1-30). Standardværdien for **Maks. opgaver pr. dag** er 10.
+
+1. Aktivér eventuelt **Tilføj kontakter**. Når den er slået til, finder agenten også kontaktpersoner til hvert lead, med e-mail- og telefonoplysninger. Når den er slået fra, arbejder den kun på firmaniveau.
+
+1. Klik **Næste**.
+
+![Lead Agents opsætningsguide, Generelle indstillinger -screenshot][img11]
+
+## Ideel kunde
+
+Dette definerer, hvad der tæller som et godt lead, og hvordan agenten bør opføre sig. Dæk det, der betyder noget, såsom branche, størrelse og region, samt diskvalifikationskriterier såsom "ikke offentlig sektor".
+
+1. Beskriv i almindeligt sprog de kunder, du ønsker, og hvordan agenten skal arbejde. Vær specifik, for eksempel: *Fokusér på firmaer, der viser vækstsignaler, såsom ny finansiering, nye kontorer eller ansættelser.*
+1. Klik **Næste**.
+
+<Tip>
+Finjustér instruktionerne når som helst. Ændringer gælder for fremtidige kørsler.
+</Tip>
+
+![Definition af din ideelle kunde -screenshot][img12]
+
+## Kilder
+
+![Trinnet Kilder, med berigelseskilder inklusive Leadfeeder -screenshot][img13]
+
+* **Nyhedskilder:** offentlige kilder, agenten scanner for købssignaler.
+* **Berigelseskilder:** bruges til at verificere og berige hvert lead. **Indbyggede kilder** er virksomhedsregistre valgt baseret på dit land, for eksempel Brønnøysundregistret for Norge eller Northdata for Tyskland.
+
+1. Tilføj relevante nyhedskilder:
+    1. Klik **Tilføj en kilde**.
+    1. Angiv en etiket og en webadresse.
+    1. Klik **Tilføj kilde**.
+
+    ![Tilføjelse af en nyhedskilde -screenshot][img15]
+
+1. Vælg, om du vil bruge **Leadfeeder** til at berige og prioritere fundne leads, eller udelukkende stole på webscraping. Slået til som standard.
+1. Klik **Næste**.
+
+## Godkendere
+
+Vælg, hvem der gennemgår og godkender de leads, denne agent finder. At godkende et lead gør den person til leadets ejer. For Lead Agent kan godkenderen være en anden end instansens ejer.
+
+Hvordan leads **deles** mellem godkendere afhænger af, hvor mange du tilføjer:
+
+* **Én godkender:** alle leads går til den person, og delingsindstillingen deaktiveres.
+* **To eller flere godkendere, eller en gruppe:**
+  * **Først til mølle:** den første person, der handler, ejer leadet, og det forsvinder fra de andres kø.
+  * **Round-robin:** hvert nyt lead går til den næste godkender i rækkefølgen.
+
+<Warning>
+Valget mellem **Først til mølle** og **Round-robin** **kan ikke ændres, efter instansen er oprettet**. Du kan stadig tilføje eller fjerne godkendere.
+</Warning>
+
+![Valg af godkendere -screenshot][img14]
+
+## Gem
+
+1. Bekræft, at navnet og valget om flere godkendere er, som du ønsker det. Dette er din sidste chance for at ændre disse to indstillinger.
+1. Klik **Gem**.
+1. Vælg **Gå til instans** for at åbne din nye Lead Agent og [komme i gang][1].
+
+![Bekræftelse af aktiveret instans -screenshot][img16]
+
+[1]: ./work-with-lead-agent
+[img11]: ../../../media/loc/en/ai/lead-wizard-general.png
+[img12]: ../../../media/loc/en/ai/lead-wizard-ideal-customer.png
+[img13]: ../../../media/loc/en/ai/lead-wizard-sources.png
+[img14]: ../../../media/loc/en/ai/lead-wizard-approvers.png
+[img15]: ../../../media/loc/en/ai/lead-wizard-add-source.png
+[img16]: ../../../media/loc/en/ai/lead-agent-activated.png

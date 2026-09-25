@@ -1,0 +1,132 @@
+---
+title: Lead Agent instellen
+description: Configureer en activeer een Lead Agent-instantie - algemene instellingen, uw ideale klantprofiel, bronnen en goedkeurders.
+keywords: ['lead agent instellen', 'ideaal klantprofiel', 'ICP', 'leadbronnen', 'goedkeurders']
+author: digitaldiina, Claudia Dias
+date: 10.01.2026
+so_version: 12.5
+content_type: howto
+tier: plus
+category: sale
+topic: lead
+platform: web
+deployment: online
+pilot: yes
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - /nl/ai/learn/lead-agent
+  - /nl/lead/learn/work-with-lead-agent
+  - /nl/ai/learn/set-up-ai-agents
+language: nl
+---
+
+import LeadAgentPilotNote from "../../../snippets/ai/lead-agent-pilot-note.mdx";
+
+<LeadAgentPilotNote />
+
+De instelwizard van Lead Agent bestaat uit 4 verplichte stappen.
+
+| # | Stap | Wat het omvat |
+|---|---|---|
+| 1 | Algemene instellingen | Naam, regio en taal, planning, dagelijks volume, contactpersonen toevoegen |
+| 2 | Ideale klant | Instructies die een goede lead definiëren |
+| 3 | Bronnen | Te scannen nieuwsbronnen, plus verrijkingsbronnen |
+| 4 | Goedkeurders | Wie de leads beoordeelt en goedkeurt |
+
+## Voordat u begint
+
+Als u Lead Agent nog niet hebt geactiveerd, moet u dit eerst doen.
+
+1. Selecteer <i class="ph ph-robot" aria-label="Agentspictogram"></i> **Agents** in de Navigator.
+
+    De eerste keer dat u de pagina **Agents** opent, moet u zich aanmelden en AI-agents in SuperOffice goedkeuren.
+
+1. Klik op **Agents doorbladeren** in de rechterbovenhoek van het overzicht **Agents** en selecteer **Lead Agent**.
+
+1. Klik op **Activeren**. Dit opent de instelwizard.
+
+## Algemene instellingen
+
+1. Voer een unieke **Naam** in voor de agentinstantie. **Dit kan na activering niet meer worden gewijzigd.**
+1. Bewerk desgewenst de voorgestelde **Beschrijving** als u iets anders wilt.
+1. Kies **Land** en **Rapportagetaal**:
+
+    * De waarden zijn vooraf ingevuld op basis van het thuisland van uw organisatie. Pas ze aan naar wens.
+    * Land bepaalt welke registers de agent doorzoekt en welk land standaard wordt gescand.
+    * Taal is van invloed op zowel rapporten als chatantwoorden.
+
+    <Note>
+    **De locatie in uw ideale klantprofiel heeft voorrang op Land.** Het **Land** dat u kiest is alleen een standaardwaarde. Als u bijvoorbeeld Duitsland selecteert maar Frankrijk noemt in uw profiel (volgende stap), doorzoekt de agent Franse registers en scant deze Franse leads.
+    </Note>
+
+1. Selecteer hoeveel goedkeuringstaken de agent per dag aanmaakt (1-30). De standaardwaarde voor **Max. taken per dag** is 10.
+
+1. Schakel desgewenst **Contactpersonen toevoegen** in. Indien ingeschakeld, vindt de agent ook contactpersonen voor elke lead, met e-mail- en telefoongegevens. Indien uitgeschakeld, werkt de agent alleen op bedrijfsniveau.
+
+1. Klik op **Volgende**.
+
+![De instelwizard van Lead Agent, Algemene instellingen -screenshot][img11]
+
+## Ideale klant
+
+Dit definieert wat telt als een goede lead en hoe de agent zich moet gedragen. Beschrijf wat belangrijk is, zoals branche, omvang en regio, plus uitsluitingscriteria zoals "geen overheidssector".
+
+1. Beschrijf in gewone taal de klanten die u wilt en hoe de agent moet werken. Wees specifiek, bijvoorbeeld: *Focus op bedrijven die groeisignalen tonen, zoals recente financiering, nieuwe vestigingen of werving van personeel.*
+1. Klik op **Volgende**.
+
+<Tip>
+Verfijn de instructies op elk gewenst moment. Wijzigingen gelden voor toekomstige runs.
+</Tip>
+
+![Uw ideale klant definiëren -screenshot][img12]
+
+## Bronnen
+
+![De stap Bronnen, met verrijkingsbronnen waaronder Leadfeeder -screenshot][img13]
+
+* **Nieuwsbronnen:** openbare bronnen die de agent scant op koopsignalen.
+* **Verrijkingsbronnen:** gebruikt om elke lead te verifiëren en te verrijken. **Ingebouwde bronnen** zijn handelsregisters die worden geselecteerd op basis van uw land, bijvoorbeeld Brønnøysundregistret voor Noorwegen of Northdata voor Duitsland.
+
+1. Voeg relevante nieuwsbronnen toe:
+    1. Klik op **Bron toevoegen**.
+    1. Geef een label en webadres op.
+    1. Klik op **Bron toevoegen**.
+
+    ![Een nieuwsbron toevoegen -screenshot][img15]
+
+1. Kies of u **Leadfeeder** wilt gebruiken om gevonden leads te verrijken en te prioriteren, of dat u alleen op webscraping wilt vertrouwen. Standaard ingeschakeld.
+1. Klik op **Volgende**.
+
+## Goedkeurders
+
+Kies wie de leads die deze agent vindt beoordeelt en goedkeurt. Het goedkeuren van een lead maakt die persoon de eigenaar ervan. Bij Lead Agent kan de goedkeurder iemand anders zijn dan de eigenaar van de instantie.
+
+Hoe leads worden **verdeeld** tussen goedkeurders hangt af van hoeveel u er toevoegt:
+
+* **Eén goedkeurder:** elke lead gaat naar die persoon, en de verdeelinstelling wordt gedeactiveerd.
+* **Twee of meer goedkeurders, of een groep:**
+  * **Wie het eerst komt, het eerst maalt:** de eerste persoon die actie onderneemt wordt eigenaar van de lead, en deze verdwijnt uit de wachtrij van de anderen.
+  * **Round-robin:** elke nieuwe lead gaat om de beurt naar de volgende goedkeurder.
+
+<Warning>
+De keuze tussen **Wie het eerst komt, het eerst maalt** en **Round-robin** **kan niet worden gewijzigd nadat de instantie is aangemaakt**. U kunt nog wel goedkeurders toevoegen of verwijderen.
+</Warning>
+
+![Goedkeurders kiezen -screenshot][img14]
+
+## Opslaan
+
+1. Controleer of de naam en de keuze voor meerdere goedkeurders zijn wat u wilt. Dit is uw laatste kans om deze twee instellingen te wijzigen.
+1. Klik op **Opslaan**.
+1. Selecteer **Naar instantie** om uw nieuwe Lead Agent te openen en [aan de slag te gaan][1].
+
+![Bevestiging dat de instantie is geactiveerd -screenshot][img16]
+
+[1]: ./work-with-lead-agent
+[img11]: ../../../media/loc/en/ai/lead-wizard-general.png
+[img12]: ../../../media/loc/en/ai/lead-wizard-ideal-customer.png
+[img13]: ../../../media/loc/en/ai/lead-wizard-sources.png
+[img14]: ../../../media/loc/en/ai/lead-wizard-approvers.png
+[img15]: ../../../media/loc/en/ai/lead-wizard-add-source.png
+[img16]: ../../../media/loc/en/ai/lead-agent-activated.png
