@@ -29,15 +29,15 @@ The Duplicate Agent tidies up your SuperOffice CRM from the inside. Each day it 
 
 ## What the agent does for you
 
-* **Finds duplicate companies:** compares your companies against each other, by name and other details such as organization number, domain, and phone, to find likely duplicates.
+* **Finds duplicate companies:** compares your companies by name and other details, such as organization number, domain, and phone, to find likely duplicates.
 
-* **Finds duplicate contacts:** looks for duplicate contacts within the same company.
+* **Finds duplicate contacts:** looks for two contact records within the same company that seem to be the same person.
 
-* **Rates each match:** internally scores every candidate from 1-5 and only suggests the strongest ones, 4-5 for a company match, 5 only for a contact match. The score is shown as stars on a duplicate-contact suggestion, but not on a company suggestion.
+* **Rates each match:** scores every candidate from 1-5 and only suggests the strongest matches.
 
-* **Proposes a safe merge:** for companies, always suggests keeping the oldest record and combining the others into it. Blank fields are filled in from the extra record, and a note records what happened.
+* **Proposes a safe merge:** for companies, always suggests keeping the oldest record.
 
-* **Reconnects orphaned contacts:** finds contacts with no company whose email uses a company's domain, and proposes linking them to that company.
+* **Reconnects orphaned contacts:** finds contacts with no company whose email points to one, and proposes linking them.
 
 * **Asks before acting:** every merge and every link waits for your approval. The agent never changes anything on its own.
 
@@ -51,15 +51,9 @@ The agent runs **Daily**, once a day at a system-assigned time.
 
 **There is no daily limit on how many companies it checks.** There is nothing to configure here. The agent keeps up to 50 suggestions of each type (company merges, contact merges, and orphaned contacts) waiting for your decision. When you clear enough to free up room, its next scheduled scan tops that type back up toward 50 if there is more to find.
 
-## Set up the agent
+## Before you begin
 
-Setup is a single step. The agent works only on your own CRM records, you are its approver, and you can create one instance.
-
-![The Agent overview, with Data Quality Agent, Lead Agent, and Duplicate Agent cards -screenshot][img9]
-
-### Activate agent {#setup}
-
-If you have not yet activated Duplicate Agent, you need to do so first.
+If you have not yet activated Duplicate Agent, you need to do so first. Setup is a single step, and you are automatically the approver for the one instance you can create.
 
 1. Select <i class="ph ph-robot" aria-label="Agents icon"></i> **Agents** in the Navigator.
 
@@ -67,7 +61,9 @@ If you have not yet activated Duplicate Agent, you need to do so first.
 
 1. Locate the **Duplicate Agent** card in the **Agent overview** and click **Activate**. This opens the set-up wizard.
 
-### General settings
+    ![The Agent overview, with Data Quality Agent, Lead Agent, and Duplicate Agent cards -screenshot][img9]
+
+## General settings
 
 1. Enter a unique **Name** for the agent instance. **This cannot be changed after activation.**
 
@@ -99,7 +95,7 @@ Click <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i> to pull in
 
 ## Merge suggestion: duplicate companies {#merge-companies}
 
-1. In the **Chat** tab, select a company-merge suggestion from the list.
+1. In the **Chat** tab, select a company-merge suggestion (<i class="ph ph-buildings" aria-label="Company icon"></i>) from the list.
 
 1. Review the side-by-side remove/keep **company comparison** and what happens if you approve the merge.
 
@@ -109,7 +105,7 @@ Click <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i> to pull in
 
 1. Optionally, ask the agent (in chat) to tidy up the company you are keeping, before you approve.
 
-1. Click **Accept**.
+1. Click **Approve**.
 
     <Danger>
     **A merge cannot be undone.** Combining two companies permanently removes the extra record.
@@ -120,15 +116,15 @@ Click <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i> to pull in
     ![The merge confirmation dialog, spelling out exactly what will happen -screenshot][img6]
 
     * The kept (oldest) company retains its details and its owner, who becomes the owner of the merged result.
-    * Any blank fields are filled in from the other record
+    * Any blank fields are filled in from the other record.
     * A note is added to the kept company recording the change.
     * The owner of the removed company is notified of the merge and the ownership change, even when both records already had the same owner.
 
 ## Merge suggestion: duplicate contacts {#merge-contacts}
 
-1. In the **Chat** tab, select a duplicate-contact suggestion from the list.
+1. In the **Chat** tab, select a duplicate-contact suggestion (<i class="ph ph-user-circle" aria-label="Contact icon"></i>) from the list.
 
-1. Review the **Possible duplicate people** card: the company the contacts belong to, a **Match confidence** rating (1-5 stars), why they look like the same person, and what the agent matched on, for example an identical full name and compatible salutations.
+1. Review the **possible duplicate people**: the company the contacts belong to, a **Match confidence** rating (1-5 stars), why they look like the same person, and what the agent matched on, for example an identical full name.
 
     A data-loss warning appears if the contact you are keeping already has an email or phone number that the other record's differing value would otherwise overwrite: check both before approving.
 
@@ -143,14 +139,14 @@ Click <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i> to pull in
 1. Click **Approve** in the confirmation dialog.
 
     * The two contacts are combined into the one you are keeping.
-    * Existing details on the kept contact stay as they are; any blank fields are filled in from the other record.
+    * Existing details on the kept contact stay as they are. Any blank fields are filled in from the other record.
     * The merged-away contact is marked as a former employee rather than removed.
 
 ## Orphaned contacts (no company) {#orphans}
 
 The agent looks for **orphaned contacts**, people with no company whose email address uses a company's domain, and matches each to the company that owns that domain. When the domain does not clearly point to one company, it also looks for a company whose name is a close match and offers that instead.
 
-1. In the **Chat** tab, select an orphaned-contact suggestion from the list.
+1. In the **Chat** tab, select an orphaned-contact suggestion (<i class="ph ph-user-circle" aria-label="Contact icon"></i>) from the list.
 
 1. Review the **Contact** and **Suggested company** sections, and why the agent is suggesting the link.
 
@@ -160,7 +156,7 @@ The agent looks for **orphaned contacts**, people with no company whose email ad
 
 1. Click **Link contact**.
 
-    The contact is connected to that company; nothing else about the contact or the company is changed. Unlike a merge, this can be reversed later by unlinking the contact in CRM.
+    The contact is connected to that company. Nothing else about the contact or the company is changed. Unlike a merge, this can be reversed later by unlinking the contact.
 
 ## Look into a specific company or contact
 
