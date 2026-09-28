@@ -1,0 +1,193 @@
+---
+title: Duplicate Agent
+description: Find and merge duplicate companies and contacts, and reconnect orphaned contacts that have lost their company, with every change approved by you.
+keywords: ['duplicate agent', 'AI agents', 'merge companies', 'duplicate contacts', 'orphaned contacts']
+author: digitaldiina, Claudia Dias
+date: 09.28.2026
+so_version: 12.5
+content_type: concept
+tier: growth
+category: automation
+topic: ai
+platform: web
+deployment: online
+pilot: yes
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Activate agent: /en/ai/learn/set-up-ai-agents
+  - Other AI services: /en/ai/learn/index
+language: en
+---
+
+import DuplicateAgentPilotNote from "../../../snippets/ai/duplicate-agent-pilot-note.mdx";
+
+<DuplicateAgentPilotNote />
+
+Duplicate Agent tidies up your SuperOffice CRM from the inside. Each day it checks a batch of your company records for likely duplicates, looks for two contact records that seem to be the same person, and finds orphaned contacts that have no company but whose email points to one. It proposes a merge or a link for each, and does nothing until you approve.
+
+## What it does for you
+
+* **Finds duplicate companies:** compares your companies against each other, by name and other details such as organization number, domain, and phone, to find likely duplicates.
+* **Finds duplicate contacts:** looks for duplicate contacts within the same company.
+* **Rates each match:** internally scores every candidate from 1-5 and only suggests the strongest ones, 4-5 for a company match, 5 only for a contact match. The score is shown as stars on a duplicate-contact suggestion, but not on a company one.
+* **Proposes a safe merge:** for companies, always suggests keeping the oldest record and combining the others into it. Blank fields are filled in from the extra record, and a note records what happened.
+* **Reconnects orphaned contacts:** finds contacts with no company whose email uses a company's domain, and proposes linking them to that company.
+* **Asks before acting:** every merge and every link waits for your approval; the agent never changes anything on its own.
+
+<Note>
+The agent proposes; you decide. No records are merged or linked until you approve, there is no automatic mode. It works only inside your SuperOffice CRM; there is no web search or external enrichment.
+</Note>
+
+<Tip>
+Opening the Agents area, activating the agent, and creating a new instance are the same for every agent. See [Set up AI agents][1]. This page covers what is specific to Duplicate Agent.
+</Tip>
+
+## Set up the agent
+
+Setup is a single step. The agent works only on your own CRM records, you are automatically its approver, and you can create one instance of your own.
+
+| # | Step | What it covers |
+|---|---|---|
+| 1 | General settings | Name, description, language, and schedule |
+
+### General settings
+
+* **Name:** identifies the instance. It must be unique and cannot be changed after activation.
+* **Description:** pre-filled with a suggested summary of what the agent does. Edit it if you would like something different.
+* **Reporting language:** the language the agent writes its reports and chat replies in. There is no Country setting.
+* **Schedule:** the agent runs **Daily**, automatically once a day at a system-assigned time.
+
+<Note>
+**There is no daily limit on how many companies it checks.** The agent can look across your whole book on every run; there is nothing to configure here.
+
+Instead, it keeps up to 50 suggestions of each kind, company merges, contact merges, and orphaned contacts, waiting for your decision at a time. Once you clear enough to free up room, its next scheduled scan tops that type back up toward 50 if there is more to find.
+</Note>
+
+![The Duplicate Agent setup wizard -screenshot][img1]
+
+Select **Save**. The instance is activated, appears under **My agents** on the Overview page, and begins working on its next daily run.
+
+## Review and approve suggestions
+
+Open the instance and go to the **Chat** tab. The left side lists a **General chat** thread plus one thread per suggestion the agent has raised.
+
+In General chat you can ask the agent to check a specific company for duplicates, look up a contact, or ask how many suggestions it currently has waiting for your review. If it finds a genuine duplicate or orphaned contact this way, it raises a normal approval task for it, exactly like one found on the daily scheduled run, rather than reporting it inline only.
+
+Use the Status filter and multi-select from [Set up AI agents][1] to work through a busy queue. There are three kinds of suggestion.
+
+### Merge suggestion: duplicate companies
+
+A merge suggestion shows everything you need to decide:
+
+* A heading naming the company being removed and the one being kept, for example "Techconsult AS - Techconsult AS", and a **Company comparison** with **Remove** and **Keep** columns: name, company id, department, org. number, domain, website, email, phone, city, country, and linked contacts for each record.
+* The company it suggests keeping: always the oldest record.
+* A plain-language explanation of what happens if you approve, and a short note on why they look like the same company.
+
+![A company merge suggestion, with the company to keep and Approve / Reject -screenshot][img2]
+
+**Approve:** the extra company is combined into the one you are keeping and then removed. The kept (oldest) company keeps its details and its owner, who becomes the owner of the merged result. Any blank fields are filled in from the other record, and a note is added to the kept company recording the change. The owner of the removed company is notified of the merge and the ownership change, even when both records already had the same owner.
+
+**Reject:** both records are kept as they are.
+
+<Danger>
+**A merge cannot be undone.** Combining two companies permanently removes the extra record, so you will be asked to confirm. The oldest record is always the one kept. If you want to tidy up the record you are keeping first, ask the agent to do so in chat before you approve.
+</Danger>
+
+### Merge suggestion: duplicate contacts
+
+The agent also looks for two contact records that appear to be the same person and proposes combining them. The card shows:
+
+* A heading **Possible duplicate people**, the company they belong to, and a **Match confidence** (1-5 stars).
+* A data-loss warning: where the contact you keep already has an email or phone number, the other record's differing value is discarded rather than added, so check both before approving.
+* **Why these look like the same person**, the agent's reasoning, and **What we matched on**, the specific signals, for example an identical full name and compatible salutations.
+* **Contacts to combine into it:** the contact being kept, with name, contact id, and created date.
+* **What happens if you approve:** the other record is combined into the one you keep, existing details on the kept contact stay as they are, any blank fields are filled in from the other record, and the merged-away contact is marked as a former employee rather than removed.
+
+**Approve**, labelled **Combine and retire**, combines the two contacts into a single record and marks the merged-away contact as a former employee. Like a company merge, this cannot be undone, so review carefully before approving. **Reject**, labelled **Ignore**, leaves both contacts as they are.
+
+![A duplicate-contact merge suggestion -screenshot][img3]
+
+### Orphaned contacts (no company)
+
+The agent also looks for **orphaned contacts**, people with no company whose email address uses a company's domain, and matches each to the company that owns that domain, so you can link them. When the domain does not clearly point to one company, it also looks for a company whose name is a close match and offers that instead.
+
+The card shows a heading naming the contact and the matched company, for example "Ingrid Testperson - KONGSBERG", with **Contact** and **Suggested company** sections, a "what happens if you approve" explanation, and a "why this suggestion" reasoning section.
+
+* If a contact could belong to more than one company, you get a single suggestion asking you to pick which one. Contacts with no company-domain email are not surfaced.
+* **Link contact:** connects the contact to that company; nothing else about the contact or the company is changed. Unlike a merge, this can be reversed later by unlinking the contact in CRM.
+* **Ignore:** leaves the contact as it is.
+
+![An orphaned-contact suggestion, with the Link contact and Ignore actions -screenshot][img4]
+
+<Warning>
+A suggestion awaiting your decision has a limited lifetime, **30 days by default**. Once it is within 5 days of expiring, a countdown banner appears on its thread. If you do not act in time, it is discarded automatically and the agent moves on. Nothing is changed for an expired suggestion, and the same pair may be surfaced again on a later check.
+</Warning>
+
+Deciding on several suggestions at once works the same way as any other agent: select multiple pending suggestions and use **Approve** or **Reject**. See [Set up AI agents][1].
+
+## Settings, History, and Performance
+
+The Duplicate Agent's workspace has three tabs: **Chat**, **History**, and **Performance**. There is no Knowledge tab; the matching rules it uses are managed by SuperOffice. The owner is the single approver.
+
+![The Duplicate Agent workspace and its three tabs -screenshot][img5]
+
+### Settings and editing
+
+Use the **edit (pencil)** button to change the editable fields: the description and the reporting language. The name and schedule are fixed. Changes apply from the next run. You can also change the language by chat.
+
+![The edit dialog, name fixed; description and reporting language editable -screenshot][img6]
+
+### History
+
+The **History** tab is a detailed log of everything the agent has done: companies checked, suggestions raised, merges and links approved, and any items skipped, with the reason. Use **Filter** to narrow it down by date range (last 24 hours, 7, 30, or 90 days), and the refresh button beside it to pull in the latest entries. Long histories are paged.
+
+![The History tab and its period filter -screenshot][img7]
+
+### Performance
+
+The **Performance** tab shows how the instance is performing over a period you choose (last 7, 30, or 90 days): Company Duplicates Suggested, Orphan Contacts Suggested, Person Duplicates Suggested, Merges Approved, Duplicates Rejected, Duplicates Expired, and Runs Completed.
+
+![The Performance tab -screenshot][img8]
+
+<Note>
+Activating, deactivating, deleting, and muting all work as described in [Set up AI agents][1], including that deactivating while items are awaiting approval discards them. Only the owner can change or delete the instance.
+</Note>
+
+## Frequently asked questions
+
+**Will it merge companies or contacts automatically?**<br />
+No. Every merge waits for your approval, and you confirm before it runs. There is no automatic mode.
+
+**Which record is kept in a company merge?**<br />
+Always the oldest one. Its details are preserved; only blank fields are filled in from the other record, and a note is added recording the change.
+
+**Can I undo a merge?**<br />
+No. A merge permanently removes the extra record, so review before approving. Linking an orphaned contact, by contrast, can be reversed by unlinking it in CRM.
+
+**Is there a daily limit on how many companies it checks?**<br />
+No. Every run can look across your whole book. Instead, up to 50 suggestions of each kind, company merges, contact merges, orphaned contacts, can be waiting for your decision at once. Once you clear some, the next scheduled scan tops that type back up toward 50. Each company it raises comes as a single task thread grouping all its suggestions.
+
+**Can I decide on several suggestions at once?**<br />
+Yes. Select multiple pending suggestions and use Approve or Reject from the bulk panel.
+
+**Does it use external data?**<br />
+No. Duplicate Agent works only inside your SuperOffice CRM; there is no web search or external enrichment.
+
+**Whose records does it check?**<br />
+Mainly your own: the daily scan only looks at companies where you are the CRM owner, and its list of orphaned contacts only looks at contacts you own. A suggestion can still involve a record owned by someone else in your tenant; only one side of a match needs to be yours for it to be raised to you.
+
+<Tip>
+Need more help? Contact your SuperOffice administrator or partner.
+</Tip>
+
+[1]: /en/ai/learn/set-up-ai-agents
+
+[img1]: /media/loc/en/ai/dup-wizard-general.png
+[img2]: /media/loc/en/ai/dup-company-merge.png
+[img3]: /media/loc/en/ai/dup-contact-merge.png
+[img4]: /media/loc/en/ai/dup-orphaned-contact.png
+[img5]: /media/loc/en/ai/dup-workspace-tabs.png
+[img6]: /media/loc/en/ai/dup-edit-dialog.png
+[img7]: /media/loc/en/ai/dup-history.png
+[img8]: /media/loc/en/ai/dup-performance.png
