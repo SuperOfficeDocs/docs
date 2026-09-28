@@ -1,7 +1,7 @@
 ---
 title: Duplicate Agent
 description: Find and merge duplicate companies and contacts, and reconnect orphaned contacts that have lost their company, with every change approved by you.
-keywords: ['Data Quality Agents', 'AI agent', 'merge companies', 'duplicate contacts', 'orphaned contact']
+keywords: ['duplicate agent', 'AI agents', 'merge companies', 'duplicate contacts', 'orphaned contacts']
 author: digitaldiina, Claudia Dias
 date: 09.28.2026
 so_version: 12.5
@@ -16,6 +16,7 @@ audience: person
 audience_tooltip: SuperOffice CRM
 related:
   - Activate agent: /en/ai/learn/set-up-ai-agents
+  - Edit settings: /en/ai/learn/set-up-ai-agents#edit
   - Other AI services: /en/ai/learn/index
 language: en
 ---
@@ -44,15 +45,17 @@ Duplicate Agent tidies up your SuperOffice CRM from the inside. Each day it chec
 The agent proposes; you decide. No records are merged or linked until you approve, there is no automatic mode. It works only inside your SuperOffice CRM. There is no web search or external enrichment. The daily scan mainly checks records you own, but a suggestion can still involve a record owned by someone else in your tenant: only one side of a match needs to be yours for it to be raised to you.
 </Note>
 
+## Schedule
+
+The agent runs **Daily**, once a day at a system-assigned time.
+
+**There is no daily limit on how many companies it checks.** There is nothing to configure here. The agent keeps up to 50 suggestions of each type (company merges, contact merges, and orphaned contacts) waiting for your decision. When you clear enough to free up room, its next scheduled scan tops that type back up toward 50 if there is more to find.
+
 ## Set up the agent
 
-Setup is a single step. The agent works only on your own CRM records, you are automatically its approver, and you can create one instance of your own.
+Setup is a single step. The agent works only on your own CRM records, you are automatically its approver, and you can create one instance.
 
-| # | Step | What it covers |
-|---|---|---|
-| 1 | General settings | Name, description, language, and schedule |
-
-## Before you begin
+### Activate agent {#setup}
 
 If you have not yet activated Duplicate Agent, you need to do so first.
 
@@ -60,33 +63,43 @@ If you have not yet activated Duplicate Agent, you need to do so first.
 
     The first time you access the **Agents** page, you need to log in and approve AI agents in SuperOffice.
 
-1. Click **Browse agents** in the upper-right corner of the **Agents** overview and select **Duplicate Agent**.
-1. Click **Activate**. This opens the set-up wizard.
+1. Locate the **Duplicate Agent** card in the **Agent overview** and click **Activate**. This opens the set-up wizard.
 
-## General settings
+![The Agent overview, with Data Quality Agent, Lead Agent, and Duplicate Agent cards -screenshot][img9]
+
+### General settings
 
 1. Enter a unique **Name** for the agent instance. **This cannot be changed after activation.**
+
+    ![The Duplicate Agent's General settings, with Name, Description, Reporting language, and Schedule -screenshot][img1]
+
 1. Optionally, edit the suggested **Description** if you want something different.
-1. Choose **Reporting language**. This affects both reports and chat replies. There is no Country setting.
+
+1. Choose **Reporting language**. This affects both reports and chat replies.
+
 1. Click **Save**.
 
-<Note>
-**There is no daily limit on how many companies it checks.** The agent can look across your whole book on every run; there is nothing to configure here.
+    The instance is activated, appears under **My agents** on the Overview page, and begins working on its next daily run.
 
-Instead, it keeps up to 50 suggestions of each kind, company merges, contact merges, and orphaned contacts, waiting for your decision at a time. Once you clear enough to free up room, its next scheduled scan tops that type back up toward 50 if there is more to find.
-</Note>
-
-![The Duplicate Agent setup wizard -screenshot][img1]
-
-The instance is activated, appears under **My agents** on the Overview page, and begins working on its next daily run.
-
-## Review and approve suggestions
-
-Open the instance and go to the **Chat** tab. The left side lists a **General chat** thread plus one thread per suggestion the agent has raised.
+1. Click **Go to instance** in the confirmation dialog to chat with your Duplicate Agent.
 
 In General chat you can ask the agent to check a specific company for duplicates, look up a contact, or ask how many suggestions it currently has waiting for your review. If it finds a genuine duplicate or orphaned contact this way, it raises a normal approval task for it, exactly like one found on the daily scheduled run, rather than reporting it inline only.
 
-Use the Status filter and multi-select from [Set up AI agents][1] to work through a busy queue. There are three kinds of suggestion.
+## The agent workspace
+
+The Duplicate Agent's workspace has three tabs: **Chat**, **History**, and **Performance**.
+
+| Tab | Description |
+|---|---|
+| Chat | A **General chat** thread plus one thread per suggestion the agent has raised. |
+| History | A detailed log of companies checked, suggestions raised, merges and links approved, and any items skipped, with the reason. Select a period (last 24 hours, 7, 30, or 90 days). Long histories are paged. |
+| Performance | Shows how the agent performed over a period (last 7, 30, or 90 days): Company duplicates suggested, orphan contacts suggested, person duplicates suggested, merges approved, duplicates rejected, duplicates expired, and runs completed. |
+
+![The History tab, with the Period filter and refresh button -screenshot][img7]
+
+Click <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i> to pull in the latest entries. Click an entry to expand it and see its full workflow and run details.
+
+![A History entry expanded, showing its workflow ID and run ID -screenshot][img10]
 
 ### Merge suggestion: duplicate companies {#merge-companies}
 
@@ -132,51 +145,22 @@ The card shows a heading naming the contact and the matched company, for example
 
 ![An orphaned-contact suggestion, with the Link contact and Ignore actions -screenshot][img4]
 
-<Warning>
+## Tips and troubleshooting
+
+Activating, deactivating, deleting, and muting all work as described in [Set up AI agents][1].
+
+Use the Status filter and multi-select to work through a busy queue.
+
 A suggestion awaiting your decision has a limited lifetime, **30 days by default**. Once it is within 5 days of expiring, a countdown banner appears on its thread. If you do not act in time, it is discarded automatically and the agent moves on. Nothing is changed for an expired suggestion, and the same pair may be surfaced again on a later check.
-</Warning>
 
 Deciding on several suggestions at once works the same way as any other agent: select multiple pending suggestions and use **Approve** or **Reject**. See [Set up AI agents][1].
 
-## Settings, History, and Performance
-
-The Duplicate Agent's workspace has three tabs: **Chat**, **History**, and **Performance**. There is no Knowledge tab; the matching rules it uses are managed by SuperOffice. The owner is the single approver.
-
-![The Duplicate Agent workspace and its three tabs -screenshot][img5]
-
-### Settings and editing
-
-Use the **edit (pencil)** button to change the editable fields: the description and the reporting language. The name and schedule are fixed. Changes apply from the next run. You can also change the language by chat.
-
-![The edit dialog, name fixed; description and reporting language editable -screenshot][img6]
-
-### History
-
-The **History** tab is a detailed log of everything the agent has done: companies checked, suggestions raised, merges and links approved, and any items skipped, with the reason. Use **Filter** to narrow it down by date range (last 24 hours, 7, 30, or 90 days), and the refresh button beside it to pull in the latest entries. Long histories are paged.
-
-![The History tab and its period filter -screenshot][img7]
-
-### Performance
-
-The **Performance** tab shows how the instance is performing over a period you choose (last 7, 30, or 90 days): Company Duplicates Suggested, Orphan Contacts Suggested, Person Duplicates Suggested, Merges Approved, Duplicates Rejected, Duplicates Expired, and Runs Completed.
-
-![The Performance tab -screenshot][img8]
-
-<Note>
-Activating, deactivating, deleting, and muting all work as described in [Set up AI agents][1], including that deactivating while items are awaiting approval discards them. Only the owner can change or delete the instance.
-</Note>
-
-<Tip>
-Need more help? Contact your SuperOffice administrator or partner.
-</Tip>
-
 [1]: /en/ai/learn/set-up-ai-agents
 
-[img1]: /media/loc/en/ai/dup-wizard-general.png
+[img1]: /media/loc/en/ai/duplicate-agent-settings.png
 [img2]: /media/loc/en/ai/dup-company-merge.png
 [img3]: /media/loc/en/ai/dup-contact-merge.png
 [img4]: /media/loc/en/ai/dup-orphaned-contact.png
-[img5]: /media/loc/en/ai/dup-workspace-tabs.png
-[img6]: /media/loc/en/ai/dup-edit-dialog.png
 [img7]: /media/loc/en/ai/dup-history.png
-[img8]: /media/loc/en/ai/dup-performance.png
+[img9]: /media/loc/en/ai/agent-overview.png
+[img10]: /media/loc/en/ai/duplicate-history-expanded.png
