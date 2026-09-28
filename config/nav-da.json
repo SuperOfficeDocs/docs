@@ -100,11 +100,14 @@
           "da/ai/learn/categorization",
           "da/ai/learn/workspace-assist",
           "da/ai/learn/lead-agent",
+          "da/ai/learn/data-quality-agent",
+          "da/ai/learn/duplicate-agent",
+          "da/ai/learn/set-up-ai-agents",
           {
             "group": "For administratorer",
+            "root": "da/ai/admin/index",
             "pages": [
-              "da/ai/admin/set-up-categorization",
-              "da/ai/admin/set-up-ai-agents"
+              "da/ai/admin/set-up-categorization"
             ]
           }
         ]

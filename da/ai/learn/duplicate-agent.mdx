@@ -1,0 +1,190 @@
+---
+title: Duplicate Agent
+description: Find og sammenlæg duplikerede firmaer og kontakter, og genforbind forældreløse kontakter, der har mistet deres firma, med hver ændring godkendt af dig.
+keywords: ['datakvalitet', 'AI-agent', 'sammenlæg firmaer', 'duplikerede firmaer', 'duplikerede kontakter', 'duplikerede personer', 'forældreløs kontakt']
+author: digitaldiina, Claudia Dias
+date: 09.28.2026
+so_version: 12.5
+content_type: concept
+tier: growth
+category: automation
+topic: ai
+platform: web
+deployment: online
+pilot: yes
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Aktivér agent: /da/ai/learn/set-up-ai-agents
+  - Redigér indstillinger: /da/ai/learn/set-up-ai-agents#edit
+  - /da/ai/learn/data-quality-agent
+  - Andre AI-tjenester: /da/ai/learn/index
+language: da
+---
+
+import DuplicateAgentPilotNote from "../../../snippets/ai/duplicate-agent-pilot-note.mdx";
+
+<DuplicateAgentPilotNote />
+
+Duplicate Agent rydder op i dit SuperOffice CRM fra indersiden. Hver dag kontrollerer den en batch af dine firmaposter for sandsynlige duplikater, leder efter to kontaktposter, der ser ud til at være samme person, og finder forældreløse kontakter, der ikke har et firma, men hvis e-mail peger på et. Den foreslår en sammenlægning eller et link for hver, og gør intet, før du godkender.
+
+## Hvad agenten gør for dig
+
+* **Finder duplikerede firmaer:** sammenligner dine firmaer efter navn og andre oplysninger, såsom organisationsnummer, domæne og telefon, for at finde sandsynlige duplikater.
+
+* **Finder duplikerede kontakter:** leder efter to kontaktposter inden for samme firma, der ser ud til at være samme person.
+
+* **Vurderer hvert match:** scorer hver kandidat fra 1-5 og foreslår kun de stærkeste matches.
+
+* **Foreslår en sikker sammenlægning:** for firmaer foreslår den altid at bevare den ældste post.
+
+* **Genforbinder forældreløse kontakter:** finder kontakter uden firma, hvis e-mail peger på et, og foreslår at forbinde dem.
+
+<Note>
+Agenten foreslår; du beslutter. Ingen poster sammenlægges eller forbindes, før du godkender, der er ingen automatisk tilstand. Den arbejder kun inden i dit SuperOffice CRM. Der er ingen websøgning eller ekstern berigelse. Den daglige scanning kontrollerer primært poster, du ejer, men et forslag kan stadig involvere en post, der ejes af en anden i din organisation: kun den ene side af et match skal være din, for at det bliver rejst til dig.
+</Note>
+
+## Tidsplan
+
+Agenten kører **Dagligt**, én gang om dagen på et systemtildelt tidspunkt.
+
+**Der er ingen daglig grænse for, hvor mange firmaer den kontrollerer.** Der er ikke noget at konfigurere her. Agenten holder op til 50 forslag af hver type (firmasammenlægninger, kontaktsammenlægninger og forældreløse kontakter) afventende din beslutning. Når du rydder tilstrækkeligt til at frigøre plads, fylder dens næste planlagte scanning den type op mod 50 igen, hvis der er mere at finde.
+
+## Aktivér agenten {#setup}
+
+Opsætning er et enkelt trin. Du er automatisk godkenderen, og du kan oprette én instans.
+
+1. Vælg <i class="ph ph-robot" aria-label="Agenter ikon"></i> **Agenter** i Navigator.
+
+    Første gang du tilgår siden **Agenter**, skal du logge ind og godkende AI-agenter i SuperOffice.
+
+1. Find kortet **Duplicate Agent** i **Agentoversigt**, og klik **Aktivér**. Dette åbner opsætningsguiden.
+
+    ![Agentoversigten, med kortene Data Quality Agent, Lead Agent og Duplicate Agent -screenshot][img9]
+
+    <Tip>
+    Kan du ikke se kortet? Klik **Gennemse agenter** for at finde det.
+    </Tip>
+
+## Generelle indstillinger {#settings}
+
+1. Angiv et unikt **Navn** for agentinstansen. **Dette kan ikke ændres efter aktivering.**
+
+    ![Duplicate Agents Generelle indstillinger, med Navn, Beskrivelse, Rapporteringssprog og Tidsplan -screenshot][img1]
+
+1. Redigér valgfrit den foreslåede **Beskrivelse**, hvis du vil have noget andet.
+
+1. Vælg **Rapporteringssprog**. Dette påvirker både rapporter og chatsvar.
+
+1. Klik **Gem**.
+
+    Instansen aktiveres, vises under **Mine agenter** på oversigtssiden, og begynder at arbejde på sin næste daglige kørsel.
+
+1. Klik **Gå til instans** i bekræftelsesdialogen for at chatte med din Duplicate Agent.
+
+## Agentens arbejdsområde
+
+Duplicate Agents arbejdsområde har tre faner: **Chat**, **Historik** og **Ydeevne**.
+
+| Fane | Beskrivelse |
+|---|---|
+| Chat | En **Generel chat**-tråd plus én tråd pr. forslag, agenten har rejst. |
+| Historik | En detaljeret log over kontrollerede firmaer, rejste forslag, godkendte sammenlægninger og links, og eventuelle sprungne emner, med årsagen. Vælg en periode (seneste 24 timer, 7, 30 eller 90 dage). Lange historikker sideopdeles. |
+| Ydeevne | Viser, hvordan agenten har klaret sig over en periode (seneste 7, 30 eller 90 dage): foreslåede firmaduplikater, foreslåede forældreløse kontakter, foreslåede personduplikater, godkendte sammenlægninger, afviste duplikater, udløbne duplikater og gennemførte kørsler. |
+
+![Fanen Historik, med filteret Periode og opdateringsknappen. Et emne udvidet, som viser dets workflow-id og kørsels-id -screenshot][img5]
+
+Klik <i class="ph ph-arrow-clockwise" aria-label="Opdateringsikon"></i> for at hente de seneste emner. Klik på et emne for at udvide det og se dets fulde workflow- og kørselsdetaljer.
+
+## Sammenlægningsforslag: duplikerede firmaer {#merge-companies}
+
+1. I fanen **Chat** skal du vælge et firmasammenlægningsforslag (<i class="ph ph-buildings" aria-label="Firmaikon"></i>) fra listen.
+
+1. Gennemgå side-om-side fjern/bevar **firmasammenligningen**, og hvad der sker, hvis du godkender sammenlægningen.
+
+    Agenten foreslår altid at bevare det ældste firma.
+
+    ![Et firmasammenlægningsforslag, med firmaet der skal bevares og Godkend/Afvis -screenshot][img2]
+
+1. Bed valgfrit agenten (i chatten) om at rydde op i det firma, du bevarer, før du godkender.
+
+1. Klik **Godkend**.
+
+    <Danger>
+    **En sammenlægning kan ikke fortrydes.** At kombinere to firmaer fjerner permanent den ekstra post.
+    </Danger>
+
+1. Klik **Godkend** i bekræftelsesdialogen.
+
+    ![Sammenlægningsbekræftelsesdialogen, som beskriver præcis hvad der vil ske -screenshot][img6]
+
+    * Det bevarede (ældste) firma bevarer sine oplysninger og sin ejer, som bliver ejeren af det sammenlagte resultat.
+    * Eventuelle tomme felter udfyldes fra den anden post.
+    * Der tilføjes en note til det bevarede firma, der registrerer ændringen.
+    * Ejeren af det fjernede firma får besked om sammenlægningen og ejerskifte, selv når begge poster allerede havde samme ejer.
+
+## Sammenlægningsforslag: duplikerede kontakter {#merge-contacts}
+
+1. I fanen **Chat** skal du vælge et duplikeret kontaktforslag (<i class="ph ph-user-circle" aria-label="Kontaktikon"></i>) fra listen.
+
+1. Gennemgå **de mulige duplikerede personer**: firmaet kontakterne tilhører, en vurdering af **matchsikkerhed** (1-5 stjerner), hvorfor de ser ud til at være samme person, og hvad agenten har matchet på, for eksempel et identisk fulde navn.
+
+    En advarsel om datatab vises, hvis den kontakt du bevarer allerede har en e-mail eller et telefonnummer, som den anden posts afvigende værdi ellers ville overskrive: kontrollér begge, før du godkender.
+
+    ![Et duplikeret kontaktsammenlægningsforslag -screenshot][img3]
+
+1. Klik **Kombinér og pensionér**.
+
+    <Danger>
+    **Dette kan ikke fortrydes.** At kombinere to kontakter pensionerer permanent den ekstra post.
+    </Danger>
+
+1. Klik **Godkend** i bekræftelsesdialogen.
+
+    * De to kontakter kombineres til den, du bevarer.
+    * Eksisterende oplysninger på den bevarede kontakt forbliver som de er. Eventuelle tomme felter udfyldes fra den anden post.
+    * Den sammenlagte kontakt markeres som tidligere medarbejder i stedet for at blive fjernet.
+
+## Forældreløse kontakter (uden firma) {#orphans}
+
+Agenten leder efter **forældreløse kontakter**, personer uden firma hvis e-mailadresse bruger et firmas domæne, og matcher hver med det firma, der ejer det domæne. Når domænet ikke tydeligt peger på et bestemt firma, leder den også efter et firma, hvis navn er et tæt match, og foreslår det i stedet.
+
+1. I fanen **Chat** skal du vælge et forældreløst kontaktforslag (<i class="ph ph-user-circle" aria-label="Kontaktikon"></i>) fra listen.
+
+1. Gennemgå afsnittene **Kontakt** og **Foreslået firma**, og hvorfor agenten foreslår linket.
+
+    Hvis en kontakt kunne tilhøre mere end ét firma, får du et enkelt forslag, der beder dig vælge hvilket. En kontakt uden en e-mail med firmadomæne vises ikke.
+
+    ![Et forældreløst kontaktforslag, med handlingerne Link kontakt og Ignorér -screenshot][img4]
+
+1. Klik **Link kontakt**.
+
+    Kontakten forbindes til det firma. Intet andet om kontakten eller firmaet ændres. I modsætning til en sammenlægning kan dette senere fortrydes ved at fjerne linket til kontakten.
+
+## Undersøg et bestemt firma eller kontakt
+
+1. Vælg fanen **Chat**.
+
+1. I **Generel** chat skal du bede agenten om at kontrollere et bestemt firma for duplikater eller slå en kontakt op.
+
+1. Hvis den finder en ægte duplikat eller forældreløs kontakt på denne måde, rejser den en normal godkendelsesopgave for det, præcis som en fundet på den daglige planlagte kørsel. Gennemgå det som beskrevet ovenfor.
+
+## Tips og fejlfinding
+
+Hvis du **afviser** en sammenlægning eller **ignorerer** et forslag, ændres intet: begge poster bevares som de er.
+
+Aktivering, deaktivering, sletning og lydløs tilstand fungerer alle som beskrevet i [Opsæt AI-agenter][1].
+
+Et forslag, der afventer din beslutning, har en begrænset levetid, **30 dage som standard**. Når det er inden for 5 dage fra at udløbe, vises et nedtællingsbanner på dets tråd. Hvis du ikke handler i tide, kasseres det, og agenten går videre. Intet ændres for et udløbet forslag, og det samme par kan blive vist igen ved en senere kontrol.
+
+Brug statusfilteret og multivalg til at arbejde dig igennem en travl kø. At beslutte om flere forslag på én gang fungerer på samme måde som for enhver anden agent: vælg flere afventende forslag, og brug **Godkend** eller **Afvis**. Se [Opsæt AI-agenter][1].
+
+[1]: /da/ai/learn/set-up-ai-agents
+
+[img1]: ../../../media/loc/en/ai/duplicate-agent-settings.png
+[img2]: ../../../media/loc/en/ai/duplicate-company-comparison.png
+[img3]: ../../../media/loc/en/ai/dup-contact-merge.png
+[img4]: ../../../media/loc/en/ai/dup-orphaned-contact.png
+[img9]: ../../../media/loc/en/ai/agent-overview.png
+[img5]: ../../../media/loc/en/ai/duplicate-history-expanded.png
+[img6]: ../../../media/loc/en/ai/approve-merge-companies.png
