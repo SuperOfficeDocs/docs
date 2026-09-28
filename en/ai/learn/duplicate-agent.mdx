@@ -1,7 +1,7 @@
 ---
 title: Duplicate Agent
 description: Find and merge duplicate companies and contacts, and reconnect orphaned contacts that have lost their company, with every change approved by you.
-keywords: ['Data Quality Agents', 'AI agent', 'merge companies', 'duplicate contacts', 'orphaned contacts']
+keywords: ['Data Quality Agents', 'AI agent', 'merge companies', 'duplicate contacts', 'orphaned contact']
 author: digitaldiina, Claudia Dias
 date: 09.28.2026
 so_version: 12.5
@@ -26,12 +26,6 @@ import DuplicateAgentPilotNote from "../../../snippets/ai/duplicate-agent-pilot-
 
 Duplicate Agent tidies up your SuperOffice CRM from the inside. Each day it checks a batch of your company records for likely duplicates, looks for two contact records that seem to be the same person, and finds orphaned contacts that have no company but whose email points to one. It proposes a merge or a link for each, and does nothing until you approve.
 
-![Duplicate Agent's Start Page widget, showing pending company merges and orphan contacts][img9]
-
-<Tip>
-A **Duplicate agent** widget on your Start Page shows how many company merges and orphan contacts are waiting, and links straight to **View agent proposals**.
-</Tip>
-
 ## What it does for you
 
 * **Finds duplicate companies:** compares your companies against each other, by name and other details such as organization number, domain, and phone, to find likely duplicates.
@@ -52,22 +46,29 @@ The agent proposes; you decide. No records are merged or linked until you approv
 
 ## Set up the agent
 
-<Tip>
-Opening the Agents area, activating the agent, and creating a new instance are the same for every agent. See [Set up AI agents][1]. This page covers what is specific to Duplicate Agent.
-</Tip>
-
 Setup is a single step. The agent works only on your own CRM records, you are automatically its approver, and you can create one instance of your own.
 
 | # | Step | What it covers |
 |---|---|---|
 | 1 | General settings | Name, description, language, and schedule |
 
-### General settings
+## Before you begin
 
-* **Name:** identifies the instance. It must be unique and cannot be changed after activation.
-* **Description:** pre-filled with a suggested summary of what the agent does. Edit it if you would like something different.
-* **Reporting language:** the language the agent writes its reports and chat replies in. There is no Country setting.
-* **Schedule:** the agent runs **Daily**, automatically once a day at a system-assigned time.
+If you have not yet activated Duplicate Agent, you need to do so first.
+
+1. Select <i class="ph ph-robot" aria-label="Agents icon"></i> **Agents** in the Navigator.
+
+    The first time you access the **Agents** page, you need to log in and approve AI agents in SuperOffice.
+
+1. Click **Browse agents** in the upper-right corner of the **Agents** overview and select **Duplicate Agent**.
+1. Click **Activate**. This opens the set-up wizard.
+
+## General settings
+
+1. Enter a unique **Name** for the agent instance. **This cannot be changed after activation.**
+1. Optionally, edit the suggested **Description** if you want something different.
+1. Choose **Reporting language**. This affects both reports and chat replies. There is no Country setting.
+1. Click **Save**.
 
 <Note>
 **There is no daily limit on how many companies it checks.** The agent can look across your whole book on every run; there is nothing to configure here.
@@ -77,7 +78,7 @@ Instead, it keeps up to 50 suggestions of each kind, company merges, contact mer
 
 ![The Duplicate Agent setup wizard -screenshot][img1]
 
-Select **Save**. The instance is activated, appears under **My agents** on the Overview page, and begins working on its next daily run.
+The instance is activated, appears under **My agents** on the Overview page, and begins working on its next daily run.
 
 ## Review and approve suggestions
 
@@ -179,4 +180,3 @@ Need more help? Contact your SuperOffice administrator or partner.
 [img6]: /media/loc/en/ai/dup-edit-dialog.png
 [img7]: /media/loc/en/ai/dup-history.png
 [img8]: /media/loc/en/ai/dup-performance.png
-[img9]: /media/loc/en/ai/duplicate-agent-widget.png

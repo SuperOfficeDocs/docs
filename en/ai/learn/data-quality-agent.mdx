@@ -27,59 +27,68 @@ import DataQualityAgentPilotNote from "../../../snippets/ai/data-quality-agent-p
 
 Data Quality Agent keeps the companies and people already in your SuperOffice CRM in good shape. Each day it works through a batch of your records, companies where you are the assigned CRM owner, looking for quality problems such as badly formatted phone numbers, missing details, and out-of-date or undeliverable information. It researches the gaps against trusted business sources and prepares a set of proposed fixes for you to review. Nothing is written back to SuperOffice until you approve it.
 
-![Data Quality Agent's Start Page widget, showing pending company updates][img8]
-
-<Tip>
-A **Data quality agent** widget on your Start Page shows how many company updates are waiting, and links straight to **View agent proposals**.
-</Tip>
-
 ## What it does for you
 
 * **Fixes formatting problems:** normalizes phone numbers and tidies up addresses, flagging anything it cannot safely correct.
+
 * **Fills in missing details:** finds missing company information, such as website, description, or industry, from trusted business sources and proposes it.
+
 * **Flags undeliverable emails:** highlights contact email addresses recorded as bounced, on every run. When **Enrich contacts** is on, it also proposes a corrected address if it can find one.
+
 * **Checks GDPR consent:** flags contacts with missing or withdrawn consent so you can act on them.
+
 * **Spots companies with no contacts:** surfaces company records that have no people attached and, optionally, proposes contacts to add.
+
 * **Asks before acting:** groups everything it finds for a company into a single review, and changes nothing until you approve.
 
 <Note>
 The agent proposes; you decide. Every proposed change is reviewed and approved by you before it is written to SuperOffice. If you do not approve a review, nothing changes.
 </Note>
 
-<Tip>
-Opening the Agents area, activating the agent, and creating a new instance are the same for every agent. See [Set up AI agents][1]. This page covers what is specific to Data Quality Agent.
-</Tip>
-
 ## Set up the agent
 
-The Data Quality Agent setup wizard has 2 steps. You are automatically the approver for the records it reviews, and you can create one instance of your own.
+Data Quality Agent's set-up wizard has 2 steps. You are automatically the approver for the records it reviews, and you can create one instance of your own.
 
 | # | Step | What it covers |
 |---|---|---|
 | 1 | General settings | Name, description, language, schedule, daily limit, Enrich contacts |
 | 2 | Sources | The built-in enrichment sources plus the optional Leadfeeder add-on |
 
-### 1. General settings
+## Before you begin
 
-* **Name:** identifies the instance. It must be unique and cannot be changed after activation.
-* **Description:** pre-filled with a suggested summary of what the agent does. Edit it if you would like something different.
-* **Reporting language:** the language the agent writes its reports and chat replies in. There is no Country setting: this agent enriches each company against its own home-country business registry automatically.
-* **Schedule:** the agent runs **Daily**, automatically once a day at a system-assigned time.
-* **Max tasks per day:** caps how many review tasks the agent creates each day (1, 2, 5, 10, 15, 20, 25, or 30, default 10), so cost and review volume stay manageable.
-* **Enrich contacts:** when on, the agent also proposes adding missing contact persons to a company, including email and phone details where it finds them. When off, it only flags companies that have no contacts and adds no people.
+If you have not yet activated Data Quality Agent, you need to do so first.
+
+1. Select <i class="ph ph-robot" aria-label="Agents icon"></i> **Agents** in the Navigator.
+
+    The first time you access the **Agents** page, you need to log in and approve AI agents in SuperOffice.
+
+1. Click **Browse agents** in the upper-right corner of the **Agents** overview and select **Data Quality Agent**.
+1. Click **Activate**. This opens the set-up wizard.
+
+## General settings
+
+1. Enter a unique **Name** for the agent instance. **This cannot be changed after activation.**
+1. Optionally, edit the suggested **Description** if you want something different.
+1. Choose **Reporting language**. This affects both reports and chat replies. There is no Country setting: the agent enriches each company against its own home-country business registry automatically.
+1. Select how many review tasks the agent creates per day (1, 2, 5, 10, 15, 20, 25, or 30). The default **Max tasks per day** is 10.
+1. Optionally, enable **Enrich contacts**. When on, the agent also proposes adding missing contact persons to a company, including email and phone details where it finds them. When off, it only flags companies that have no contacts and adds no people.
+1. Click **Next**.
 
 ![The Data Quality Agent setup wizard, General settings -screenshot][img1]
 
-### 2. Sources
+## Sources
 
-Tell the agent what to enrich with. There are two parts, and neither needs a list from you.
+Tell the agent what to enrich with. Neither part needs a list from you.
 
-* **Built-in sources:** an information card explaining that each company is enriched using the built-in business registries for its own home country, the same registry [Lead Agent][2] uses, for example Brønnøysundregistrene in Norway or Northdata in Germany, plus that company's own website. These are managed by SuperOffice and are not edited here. Every proposed update shows exactly which source backs it, and none of it overwrites existing data without your review.
-* **Leadfeeder** (optional): on by default for new instances, always billed at **2x credits** when used, using SuperOffice's own Leadfeeder account.
+* **Built-in sources:** each company is enriched using the built-in business registries for its own home country, the same registry [Lead Agent][2] uses, for example Brønnøysundregistrene in Norway or Northdata in Germany, plus that company's own website. These are managed by SuperOffice and are not edited here. Every proposed update shows exactly which source backs it, and none of it overwrites existing data without your review.
+* **Leadfeeder:** optional, on by default for new instances, always billed at **2x credits** when used, using SuperOffice's own Leadfeeder account.
+
+1. Choose whether to use **Leadfeeder** to enrich companies, or rely on the built-in registries alone.
+1. Click **Save**.
 
 ![The Sources step, built-in registries and the optional Leadfeeder add-on -screenshot][img2]
 
-On the last step, select **Save**. The instance is activated and appears under **My agents** on the Overview page. It begins working on its next daily run.
+The instance is activated and appears under **My agents** on the Overview page. It begins working on its next daily run.
 
 ## Review and approve changes
 
@@ -178,4 +187,3 @@ Need more help? Contact your SuperOffice administrator or partner.
 [img5]: /media/loc/en/ai/dq-edit-dialog.png
 [img6]: /media/loc/en/ai/dq-history.png
 [img7]: /media/loc/en/ai/dq-performance.png
-[img8]: /media/loc/en/ai/data-quality-agent-widget.png
