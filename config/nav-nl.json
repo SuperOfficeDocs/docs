@@ -100,11 +100,14 @@
           "nl/ai/learn/categorization",
           "nl/ai/learn/workspace-assist",
           "nl/ai/learn/lead-agent",
+          "nl/ai/learn/data-quality-agent",
+          "nl/ai/learn/duplicate-agent",
+          "nl/ai/learn/set-up-ai-agents",
           {
             "group": "Voor beheerders",
+            "root": "nl/ai/admin/index",
             "pages": [
-              "nl/ai/admin/set-up-categorization",
-              "nl/ai/admin/set-up-ai-agents"
+              "nl/ai/admin/set-up-categorization"
             ]
           }
         ]
