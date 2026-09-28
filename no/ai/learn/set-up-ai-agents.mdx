@@ -3,7 +3,7 @@ title: Sett opp AI-agenter
 description: Hvordan åpne Agenter-området, aktivere en agent, og opprette og administrere en instans. Ingen administratortilgang er nødvendig - agentinstanser er personlige, per bruker.
 keywords: ['agentinstans', 'aktivere agent', 'legge til instans', 'Lead Agent']
 author: digitaldiina, Claudia Dias
-date: 10.01.2026
+date: 09.28.2026
 so_version: 12.5
 content_type: howto
 tier: plus
@@ -16,6 +16,8 @@ audience: person
 audience_tooltip: SuperOffice CRM
 related:
   - /no/lead/learn/set-up-lead-agent
+  - Sett opp Data Quality Agent: /no/ai/learn/data-quality-agent
+  - Sett opp Duplicate Agent: /no/ai/learn/duplicate-agent
   - Andre AI-tjenester: /no/ai/learn/index
 language: no
 ---
@@ -24,11 +26,11 @@ language: no
 SuperOffices AI-agenter kommer snart. Denne siden beskriver oppsettstrinnene for en funksjon som ennå ikke er allment tilgjengelig.
 </Note>
 
-SuperOffices AI-agenter jobber i bakgrunnen og foreslår resultater som en person kan godkjenne. Hver agent åpnes, aktiveres og administreres på samme måte. Denne siden dekker disse felles trinnene én gang, og hver agent har deretter sin egen oppsettside, for eksempel [Sett opp Lead Agent][2].
+SuperOffices AI-agenter jobber i bakgrunnen og foreslår resultater som en person kan godkjenne. Alle agenter bor i det samme **Agenter**-området, og aktiveres og administreres på samme måte. Denne siden dekker disse felles trinnene én gang, og hver agent har deretter sin egen oppsettside, for eksempel [Sett opp Lead Agent][2].
 
 ## Agentinstanser
 
-Én konfigurert, kjørende kopi av en agent kalles en **instans**. Noen agenter tillater mer enn én: Lead Agent tillater opptil 3, aktive og inaktive kombinert. Andre, som Data Quality Agent, Duplicate Agent og Sales Assistant Agent, tillater bare 1 instans per bruker. Grensen teller også inaktive instanser: å deaktivere en frigjør ikke en plass, bare å slette den gjør det.
+Én konfigurert, kjørende kopi av en agent kalles en **instans**. Noen agenter tillater mer enn én: Lead Agent tillater opptil 3. Andre, som Data Quality Agent og Duplicate Agent, tillater bare 1 instans per bruker. Grensen teller også inaktive instanser: å deaktivere en frigjør ikke en plass, bare å slette den gjør det.
 
 ## Krav
 
@@ -46,7 +48,7 @@ Kun instansens eier (den som opprettet den) kan redigere innstillingene, aktiver
 ![Agenter-sidens startsett med agentkort -screenshot][img2]
 
 1. Velg <i class="ph ph-robot" aria-label="Agenter-ikon"></i> **Agenter** i Navigator.
-1. Klikk **Bla gjennom agenter** øverst til høyre på **Agenter**-siden.
+1. Klikk **Bla gjennom agenter** øverst til høyre i **Agentoversikten**.
 1. Bruk søkefeltet eller kategorifiltrene for å finne agenten du ønsker.
 
     ![Skuffen Bla gjennom agenter, som viser alle agentene i abonnementet ditt -screenshot][img3]
@@ -57,7 +59,7 @@ Kun instansens eier (den som opprettet den) kan redigere innstillingene, aktiver
 **Bla gjennom agenter** viser bare agenter som er inkludert i CRM Suite-abonnementsnivået ditt. Hvis en agent du forventer ikke vises i listen, kontakt SuperOffice-administratoren eller -partneren din.
 </Note>
 
-Når en agent har en instans, viser kortet en **N aktive**-lenke i stedet for **Aktiver**. Velg den for å se agentens instanser, gruppert i Aktive og Inaktive, og åpne en av dem.
+Når en agent har en instans, viser kortet en **N aktive**-lenke i stedet for **Aktiver**. Velg den for å se agentens aktive og inaktive instanser, og åpne en av dem.
 
 ![Instansvinduet på et agentkort -screenshot][img4]
 
@@ -78,9 +80,9 @@ Velg **Om** fra trepunktsmenyen for et skrivebeskyttet sammendrag, inkludert vis
 
 ![Sammendraget Om denne agenten -screenshot][img10]
 
-## Rediger innstillinger
+## Rediger innstillinger {#edit}
 
-1. Velg <i class="ph ph-pencil-simple" aria-label="Rediger"></i> rediger-knappen (blyanten) i instansens topptekst.
+1. Klikk på <i class="ph ph-pencil-simple" aria-label="Rediger"></i> rediger-knappen (blyanten) i instansens topptekst.
 1. Gjør endringene dine i oppsettveiviseren.
 1. Klikk **Lagre endringer**. Endringene gjelder fra neste kjøring.
 

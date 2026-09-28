@@ -100,11 +100,13 @@
           "sv/ai/learn/categorization",
           "sv/ai/learn/workspace-assist",
           "sv/ai/learn/lead-agent",
+          "sv/ai/learn/data-quality-agent",
+          "sv/ai/learn/duplicate-agent",
+          "sv/ai/learn/set-up-ai-agents",
           {
             "group": "För administratörer",
             "pages": [
-              "sv/ai/admin/set-up-categorization",
-              "sv/ai/admin/set-up-ai-agents"
+              "sv/ai/admin/set-up-categorization"
             ]
           }
         ]

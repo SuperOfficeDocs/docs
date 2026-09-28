@@ -1,0 +1,195 @@
+---
+title: Duplicate Agent
+description: Finn og slå sammen duplikate firmaer og kontakter, og koble sammen foreldreløse kontakter som har mistet firmaet sitt, med hver endring godkjent av deg.
+keywords: ['datakvalitet', 'AI-agent', 'slå sammen firmaer', 'duplikate firmaer', 'duplikate kontakter', 'duplikate personer', 'foreldreløs kontakt']
+author: digitaldiina, Claudia Dias
+date: 09.28.2026
+so_version: 12.5
+content_type: concept
+tier: growth
+category: automation
+topic: ai
+platform: web
+deployment: online
+pilot: yes
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Aktiver agent: /no/ai/learn/set-up-ai-agents
+  - Rediger innstillinger: /no/ai/learn/set-up-ai-agents#edit
+  - /no/ai/learn/data-quality-agent
+  - Andre AI-tjenester: /no/ai/learn/index
+language: no
+---
+
+import DuplicateAgentPilotNote from "../../../snippets/ai/duplicate-agent-pilot-note.mdx";
+
+<DuplicateAgentPilotNote />
+
+Duplicate Agent rydder opp i SuperOffice CRM-en din fra innsiden. Hver dag kontrollerer den en batch av dine firmaposter for sannsynlige duplikater, ser etter to kontaktposter som virker å være samme person, og finner foreldreløse kontakter som ikke har noe firma, men hvor e-posten peker til ett. Den foreslår en sammenslåing eller en kobling for hver, og gjør ingenting før du godkjenner.
+
+## Hva agenten gjør for deg
+
+* **Finner duplikate firmaer:** sammenligner firmaene dine etter navn og andre detaljer, som organisasjonsnummer, domene og telefon, for å finne sannsynlige duplikater.
+
+* **Finner duplikate kontakter:** ser etter to kontaktposter innenfor samme firma som virker å være samme person.
+
+* **Vurderer hvert treff:** poengsetter hver kandidat fra 1-5, og foreslår bare de sterkeste treffene.
+
+* **Foreslår en trygg sammenslåing:** for firmaer foreslår den alltid å beholde den eldste posten.
+
+* **Kobler sammen foreldreløse kontakter:** finner kontakter uten firma hvis e-post peker til ett, og foreslår å koble dem.
+
+<Note>
+Agenten foreslår; du bestemmer. Ingen poster slås sammen eller kobles før du godkjenner, det finnes ingen automatisk modus. Den fungerer bare inne i SuperOffice CRM-en din. Det er ingen websøk eller ekstern berikelse. Det daglige skanningen sjekker hovedsakelig poster du eier, men et forslag kan likevel involvere en post som eies av en annen i din organisasjon: bare én side av et treff må være din for at det skal foreslås til deg.
+</Note>
+
+## Tidsplan
+
+Agenten kjører **Daglig**, én gang om dagen på et systemtildelt tidspunkt.
+
+Det er ingen daglig grense for hvor mange firmaer den kontrollerer. Agenten holder opptil 50 forslag av hver type (firmasammenslåinger, kontaktsammenslåinger og foreldreløse kontakter) ventende på din beslutning. Når du godkjenner eller avviser nok til å frigjøre plass, fyller neste planlagte skanning den typen opp mot 50 igjen, hvis det finnes mer å finne.
+
+## Aktiver agenten {#setup}
+
+Oppsett er ett enkelt trinn. Du er automatisk godkjenner, og du kan opprette én instans.
+
+1. Velg <i class="ph ph-robot" aria-label="Agenter-ikon"></i> **Agenter** i Navigator.
+
+    Første gang du åpner **Agenter**-siden, må du logge inn og godkjenne AI-agenter i SuperOffice.
+
+1. Finn kortet for **Duplicate Agent** i **Agentoversikt**, og klikk **Aktiver**. Dette åpner oppsettveiviseren.
+
+    ![Agentoversikt, med kortene Data Quality Agent, Lead Agent og Duplicate Agent -screenshot][img9]
+
+    <Tip>
+    Ser du ikke kortet? Klikk **Bla gjennom agenter** for å finne det.
+    </Tip>
+
+## Generelle innstillinger {#settings}
+
+1. Skriv inn et unikt **Navn** for agentinstansen. **Dette kan ikke endres etter aktivering.**
+
+    ![Duplicate Agents generelle innstillinger, med Navn, Beskrivelse, Rapporteringsspråk og Tidsplan -screenshot][img1]
+
+1. Rediger, valgfritt, den foreslåtte **Beskrivelsen** hvis du vil ha noe annet.
+
+1. Velg **Rapporteringsspråk**. Dette påvirker både rapporter og chattesvar.
+
+1. Klikk **Lagre**.
+
+    Instansen aktiveres, vises under **Mine agenter** i Agenter-sidepanelet, og begynner å jobbe på sin neste daglige kjøring.
+
+1. Velg **Gå til instans** for å åpne din nye Duplicate Agent og [komme i gang][3].
+
+Før du gjennomgår, velg fanen **Chat**, klikk deretter på <i class="ph ph-sliders-horizontal" aria-label="Filter-ikon"></i> og velg **Venter** for å begrense en travel kø til forslag som venter på din beslutning.
+
+## Sammenslåingsforslag: duplikate firmaer {#merge-companies}
+
+1. Velg et firmasammenslåingsforslag (<i class="ph ph-buildings" aria-label="Firma-ikon"></i>) fra listen.
+
+1. Gjennomgå side-om-side fjern/behold **firmasammenligningen**, og hva som skjer hvis du godkjenner sammenslåingen.
+
+    Agenten foreslår alltid å beholde det eldste firmaet.
+
+    ![Et firmasammenslåingsforslag, med firmaet som skal beholdes og Godkjenn / Avvis -screenshot][img2]
+
+1. Be, valgfritt, agenten (i chatten) om å rydde opp i firmaet du beholder, før du godkjenner.
+
+1. Klikk **Godkjenn**.
+
+    <Danger>
+    **En sammenslåing kan ikke reverseres.** Å kombinere to firmaer fjerner den ekstra posten permanent.
+    </Danger>
+
+1. Klikk **Godkjenn** i bekreftelsesdialogen.
+
+    ![Sammenslåingsbekreftelsesdialogen, som forklarer nøyaktig hva som vil skje -screenshot][img6]
+
+    * Firmaet som beholdes (det eldste) beholder sine detaljer og sin eier, som blir eier av det sammenslåtte resultatet.
+    * Tomme felt fylles inn fra den andre posten.
+    * En notis legges til på det beholdte firmaet som registrerer endringen.
+    * Eieren av det fjernede firmaet blir varslet om sammenslåingen og eierskapsendringen, selv når begge postene allerede hadde samme eier.
+
+## Sammenslåingsforslag: duplikate kontakter {#merge-contacts}
+
+1. Velg et duplikat-kontaktforslag (<i class="ph ph-user-circle" aria-label="Kontakt-ikon"></i>) fra listen.
+
+1. Gjennomgå **mulige duplikate personer**: firmaet kontaktene tilhører, en vurdering av **treffsikkerhet** (1-5 stjerner), hvorfor de virker å være samme person, og hva agenten matchet på, for eksempel et identisk fullt navn.
+
+    En datatapsadvarsel vises hvis kontakten du beholder allerede har en e-post eller et telefonnummer som den andre postens avvikende verdi ellers ville overskrevet: kontroller begge før du godkjenner.
+
+    ![Et duplikat-kontaktsammenslåingsforslag -screenshot][img3]
+
+1. Klikk **Slå sammen og pensjoner**.
+
+    <Danger>
+    **Dette kan ikke reverseres.** Å kombinere to kontakter pensjonerer den ekstra posten permanent.
+    </Danger>
+
+1. Klikk **Godkjenn** i bekreftelsesdialogen.
+
+    * De to kontaktene kombineres til den du beholder.
+    * Eksisterende detaljer på den beholdte kontakten forblir som de er. Tomme felt fylles inn fra den andre posten.
+    * Kontakten som slås sammen bort, markeres som tidligere ansatt i stedet for å bli fjernet.
+
+## Foreldreløse kontakter (ingen firma) {#orphans}
+
+Agenten ser etter **foreldreløse kontakter**, personer uten firma hvis e-postadresse bruker et firmas domene, og matcher hver med firmaet som eier det domenet. Når domenet ikke tydelig peker til ett firma, ser den også etter et firma hvis navn er en nær match, og tilbyr det i stedet.
+
+1. Velg et foreldreløs-kontaktforslag (<i class="ph ph-user-circle" aria-label="Kontakt-ikon"></i>) fra listen.
+
+1. Gjennomgå seksjonene **Kontakt** og **Foreslått firma**, og hvorfor agenten foreslår koblingen.
+
+    Hvis en kontakt kan tilhøre mer enn ett firma, får du et enkelt forslag som ber deg velge hvilket. En kontakt uten en e-post med firmadomene vises ikke.
+
+    ![Et foreldreløs-kontaktforslag, med handlingene Koble kontakt og Ignorer -screenshot][img4]
+
+1. Klikk **Koble kontakt**.
+
+    Kontakten kobles til det firmaet. Ingenting annet ved kontakten eller firmaet endres. I motsetning til en sammenslåing kan dette reverseres senere ved å koble fra kontakten.
+
+## Se nærmere på et bestemt firma eller kontakt
+
+1. Velg **Chat**-fanen.
+
+1. I **Generell**-chatten, be agenten om å kontrollere et bestemt firma for duplikater, eller slå opp en kontakt.
+
+1. Hvis den finner en reell duplikat eller foreldreløs kontakt på denne måten, oppretter den en normal godkjenningsoppgave for det, akkurat som en funnet på den daglige planlagte kjøringen. Gjennomgå det som beskrevet ovenfor.
+
+## Agentens arbeidsområde {#workspace}
+
+Duplicate Agents arbeidsområde har tre faner: **Chat**, **Historikk** og **Ytelse**.
+
+| Fane | Beskrivelse |
+|---|---|
+| Chat | En **Generell chat**-tråd, pluss én tråd per forslag agenten har reist. |
+| Historikk | En detaljert logg over kontrollerte firmaer, reiste forslag, godkjente sammenslåinger og koblinger, og eventuelle hoppede elementer, med begrunnelse. Velg en **Periode** (siste 24 timer, 7, 30 eller 90 dager) for å begrense den. Lange historikker vises sidevis. |
+| Ytelse | Viser hvordan agenten har prestert over en periode (siste 7, 30 eller 90 dager): foreslåtte firmaduplikater, foreslåtte foreldreløse kontakter, foreslåtte personduplikater, godkjente sammenslåinger, avviste duplikater, utløpte duplikater og fullførte kjøringer. |
+
+![Historikk-fanen, med periodefilteret og oppdateringsknappen. En oppføring utvidet, som viser dens arbeidsflyt-ID og kjøre-ID -screenshot][img5]
+
+Klikk <i class="ph ph-arrow-clockwise" aria-label="Oppdater-ikon"></i> for å hente inn de nyeste oppføringene. Klikk en oppføring for å utvide den og se hele arbeidsflyten og kjøredetaljene.
+
+## Tips og feilsøking
+
+**Hva skjer hvis jeg avviser eller ignorerer?** Ingenting endres; begge postene beholdes som de er.
+
+**Kan jeg ta beslutning om flere forslag samtidig?** Ja. Velg flere ventende forslag og bruk **Godkjenn** eller **Avvis** fra fellespanelet, på samme måte som for enhver annen agent.
+
+**Hva skjer med et forslag jeg ikke får behandlet i tide?** Et forslag som venter på din beslutning har en begrenset levetid, **30 dager som standard**. Når det er innen 5 dager fra å utløpe, vises et nedtellingsbanner på tråden. Hvis du ikke handler i tide, forkastes det, og agenten fortsetter. Ingenting endres for et utløpt forslag, og samme par kan bli foreslått på nytt ved en senere kontroll.
+
+**Jeg deaktiverte instansen, og de ventende forslagene mine er borte.** Å deaktivere en instans forkaster alle forslag som venter på godkjenning, som beskrevet i [Sett opp AI-agenter][1]. Godkjenn eller avvis det du trenger først, hvis du vil beholde dem.
+
+Bare instansens eier kan endre innstillingene eller slette den.
+
+[1]: /no/ai/learn/set-up-ai-agents
+[3]: #workspace
+
+[img1]: ../../../media/loc/en/ai/duplicate-agent-settings.png
+[img2]: ../../../media/loc/en/ai/duplicate-company-comparison.png
+[img3]: ../../../media/loc/en/ai/dup-contact-merge.png
+[img4]: ../../../media/loc/en/ai/dup-orphaned-contact.png
+[img9]: ../../../media/loc/en/ai/agent-overview.png
+[img5]: ../../../media/loc/en/ai/duplicate-history-expanded.png
+[img6]: ../../../media/loc/en/ai/approve-merge-companies.png

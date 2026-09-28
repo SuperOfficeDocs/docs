@@ -4,7 +4,7 @@ title: AI-tjänster
 description: Översikt över artificiell intelligens-tjänster i SuperOffice CRM
 keywords: ['AI', 'artificiell intelligens', 'AI Platform', 'maskininlärning', 'automatisering', 'insikt', 'assist', 'agent', 'mcp', 'instans']
 author: digitaldiina
-date: 10.01.2026
+date: 09.28.2026
 so_version: 12.4
 content_type: concept
 license: aiplatform
@@ -44,16 +44,22 @@ SuperOffice AI är endast tillgängligt i CRM Online. Licenskrav är tjänstespe
 | [Company Insight][7] | Föreslår företagsuppgifter från officiella företagsregister, till exempel Brreg, Virk, Companies House och Zefix, när du skapar ett nytt företag. | CRM Suite Growth |
 | [Reply Assist][8] | Föreslår ett svar på ett inkommande ärende baserat på ditt CRM-innehåll, som du kan granska och skicka. | CRM Suite Plus |
 | [Lead Agent][9] | Hittar, undersöker och kvalificerar nya prospekt från konfigurerade nyhetskällor, och bedömer dem mot din ideala kundprofil, så att en person kan godkänna dem. | CRM Suite Plus |
+| [Data Quality Agent][12] | Verifierar och berikar företagen och kontakterna som redan finns i din CRM mot pålitliga företagskällor, så att en person kan godkänna dem. | CRM Suite Growth |
+| [Duplicate Agent][13] | Hittar dubblerade företag och kontakter, och återansluter föräldralösa kontakter till sitt företag, så att en person kan godkänna dem. | CRM Suite Growth |
 
 ## Insight, Assist och Agent
 
 Nyare AI-funktioner följer ett namngivningsmönster som visar hur var och en fungerar:
 
-* **Insight** föreslår extern data direkt i flödet medan du arbetar, utan något att öppna eller hantera. [Company Insight][7] är en Insight-tjänst.
+* **Insight** föreslår extern data direkt i flödet medan du arbetar, utan något att öppna eller hantera. [Company Insight][7] är en insight-tjänst.
 
-* **Assist** använder generativ AI för att hjälpa dig skapa innehåll eller bestämma nästa steg, direkt där du redan arbetar. [Workspace Assist][4] och [Reply Assist][8] är Assist-tjänster.
+* **Assist** använder generativ AI för att hjälpa dig skapa innehåll eller bestämma nästa steg, direkt där du redan arbetar. [Workspace Assist][4] och [Reply Assist][8] är assist-tjänster.
 
-* **Agent** körs i bakgrunden enligt ett eget schema och föreslår resultat som en person godkänner, i ett eget dedikerat Agenter-område. [Lead Agent][9] är en Agent-tjänst.
+* **Agent** körs i bakgrunden enligt ett eget schema och föreslår resultat som en person godkänner, i ett eget dedikerat Agenter-område. [Lead Agent][9], [Data Quality Agent][12] och [Duplicate Agent][13] är agent-tjänster.
+
+### Krediter och fakturering
+
+En agent som utför åtgärder på dina data, till exempel Data Quality Agent, använder AI-krediter, så du betalar bara för det arbete AI faktiskt utför för dig. En tjänst märkt "kommer snart" blir en del av din plan i samma stund den lanseras, utan extra köp.
 
 ## Öppna Agenter-området {#goto-agents}
 
@@ -81,6 +87,8 @@ Nyare AI-funktioner följer ett namngivningsmönster som visar hur var och en fu
 [8]: /sv/request/learn/handle-request-ai#reply-assist
 [9]: /sv/ai/learn/lead-agent
 [10]: /sv/ai/learn/set-up-ai-agents
+[12]: /sv/ai/learn/data-quality-agent
+[13]: /sv/ai/learn/duplicate-agent
 
 [img1]: ../../../media/loc/en/ai/open-agents-area.png
 [img2]: ../../../media/loc/en/ai/approve-ai-agents.png

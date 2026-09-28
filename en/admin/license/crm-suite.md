@@ -17,6 +17,7 @@ related:
   - CRM and licenses: /en/admin/license/index
   - SuperOffice CRM Online user plans: /en/admin/license/user-plans
   - /en/admin/license/activate
+  - AI assists and agents: /en/ai/learn/index
 language: en
 ---
 

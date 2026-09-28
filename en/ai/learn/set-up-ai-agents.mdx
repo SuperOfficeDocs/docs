@@ -16,6 +16,8 @@ audience: person
 audience_tooltip: SuperOffice CRM
 related:
   - /en/lead/learn/set-up-lead-agent
+  - Set up Data Quality Agent: /en/ai/learn/data-quality-agent
+  - Set up Duplicate Agent: /en/ai/learn/duplicate-agent
   - Other AI services: /en/ai/learn/index
 language: en
 ---
@@ -24,11 +26,11 @@ language: en
 SuperOffice's AI agents are coming soon. This page describes set-up steps for a feature that is not generally available yet.
 </Note>
 
-SuperOffice's AI agents work in the background and propose results for a person to approve. Every agent opens, activates, and is managed the same way. This page covers those shared steps once, then each agent has its own set-up page, for example [Set up Lead Agent][2].
+SuperOffice's AI agents work in the background and propose results for a person to approve. All agents live on the same **Agents** area and are activated and managed the same way. This page covers those shared steps once, then each agent has its own set-up page, for example [Set up Lead Agent][2].
 
 ## Agent instances
 
-One configured, running copy of an agent is called an **instance**. Some agents allow more than one: Lead Agent allows up to 3, active and inactive combined. Others, such as Data Quality Agent, Duplicate Agent, and Sales Assistant Agent, allow only 1 instance per user. The limit counts inactive instances too: deactivating one does not free a slot, only deleting it does.
+One configured, running copy of an agent is called an **instance**. Some agents allow more than one: Lead Agent allows up to 3. Others, such as the Data Quality Agent and Duplicate Agent, allow only 1 instance per user. The limit counts inactive instances too: deactivating one does not free a slot, only deleting it does.
 
 ## Requirements
 
@@ -46,7 +48,7 @@ Only the instance's owner (its creator) can edit its settings, activate or deact
 ![The Agents page's starter set of agent cards -screenshot][img2]
 
 1. Select <i class="ph ph-robot" aria-label="Agents icon"></i> **Agents** in the Navigator.
-1. Click **Browse agents** in the upper-right corner of the **Agents** page.
+1. Click **Browse agents** in the upper-right corner of the **Agents overview**.
 1. Use the search box or the category filters to find the agent you want.
 
     ![The Browse agents drawer, listing every agent in your subscription -screenshot][img3]
@@ -57,7 +59,7 @@ Only the instance's owner (its creator) can edit its settings, activate or deact
 **Browse agents** shows only agents included in your CRMSuite subscription tier. If an agent you expect is not listed, contact your SuperOffice administrator or partner.
 </Note>
 
-When an agent has an instance, its card shows an **N active** link instead of **Activate**. Select it to see the agent's instances, grouped Active and Inactive, and open any of them.
+When an agent has an instance, its card shows an **N active** link instead of **Activate**. Select it to see the agent's active and inactive instances, and open any of them.
 
 ![The instances popover on an agent's card -screenshot][img4]
 
@@ -78,9 +80,9 @@ Select **About** from the three-dots menu for a read-only summary, including dis
 
 ![The About this agent summary -screenshot][img10]
 
-## Edit settings
+## Edit settings {#edit}
 
-1. Select the <i class="ph ph-pencil-simple" aria-label="Edit"></i> edit (pencil) button in the instance header.
+1. Click the <i class="ph ph-pencil-simple" aria-label="Edit"></i> edit (pencil) button in the instance header.
 1. Make your changes in the set-up wizard.
 1. Click **Save changes**. Changes apply from the next run.
 

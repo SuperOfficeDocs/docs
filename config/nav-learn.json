@@ -94,6 +94,8 @@
       "en/ai/learn/categorization",
       "en/ai/learn/workspace-assist",
       "en/ai/learn/lead-agent",
+      "en/ai/learn/data-quality-agent",
+      "en/ai/learn/duplicate-agent",
       "en/ai/learn/set-up-ai-agents",
       {
         "group": "For administrators",

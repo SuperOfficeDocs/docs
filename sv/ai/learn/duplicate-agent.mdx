@@ -1,0 +1,195 @@
+---
+title: Duplicate Agent
+description: Hitta och sammanfoga dubblerade företag och kontakter, och återanslut föräldralösa kontakter som tappat sitt företag, där varje ändring godkänns av dig.
+keywords: ['datakvalitet', 'AI-agent', 'sammanfoga företag', 'dubblerade företag', 'dubblerade kontakter', 'dubblerade personer', 'föräldralös kontakt']
+author: digitaldiina, Claudia Dias
+date: 09.28.2026
+so_version: 12.5
+content_type: concept
+tier: growth
+category: automation
+topic: ai
+platform: web
+deployment: online
+pilot: yes
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Aktivera agent: /sv/ai/learn/set-up-ai-agents
+  - Redigera inställningar: /sv/ai/learn/set-up-ai-agents#edit
+  - /sv/ai/learn/data-quality-agent
+  - Andra AI-tjänster: /sv/ai/learn/index
+language: sv
+---
+
+import DuplicateAgentPilotNote from "../../../snippets/ai/duplicate-agent-pilot-note.mdx";
+
+<DuplicateAgentPilotNote />
+
+Duplicate Agent städar upp din SuperOffice CRM från insidan. Varje dag kontrollerar den en batch av dina företagsposter efter troliga dubbletter, letar efter två kontaktposter som verkar vara samma person, och hittar föräldralösa kontakter som saknar företag men vars e-post pekar mot ett. Den föreslår en sammanfogning eller en koppling för varje, och gör ingenting förrän du godkänner.
+
+## Vad agenten gör för dig
+
+* **Hittar dubblerade företag:** jämför dina företag efter namn och andra uppgifter, till exempel organisationsnummer, domän och telefon, för att hitta troliga dubbletter.
+
+* **Hittar dubblerade kontakter:** letar efter två kontaktposter inom samma företag som verkar vara samma person.
+
+* **Bedömer varje match:** poängsätter varje kandidat från 1-5 och föreslår bara de starkaste matchningarna.
+
+* **Föreslår en säker sammanfogning:** för företag föreslås alltid att den äldsta posten behålls.
+
+* **Återansluter föräldralösa kontakter:** hittar kontakter utan företag vars e-post pekar mot ett, och föreslår att koppla dem.
+
+<Note>
+Agenten föreslår; du bestämmer. Inga poster sammanfogas eller kopplas förrän du godkänner, det finns inget automatiskt läge. Den arbetar bara inom din SuperOffice CRM. Det finns ingen webbsökning eller extern berikning. Den dagliga genomgången kontrollerar främst poster du äger, men ett förslag kan fortfarande gälla en post som ägs av någon annan i din klientorganisation: bara en sida av en matchning behöver vara din för att den ska visas för dig.
+</Note>
+
+## Schema
+
+Agenten körs **dagligen**, en gång om dagen vid en systemtilldelad tidpunkt.
+
+Det finns ingen daglig gräns för hur många företag den kontrollerar. Agenten håller upp till 50 förslag av varje typ (företagssammanfogningar, kontaktsammanfogningar och föräldralösa kontakter) väntande på ditt beslut. När du godkänner eller avvisar tillräckligt för att frigöra utrymme fyller nästa schemalagda körning på den typen igen mot 50 om det finns mer att hitta.
+
+## Aktivera agenten {#setup}
+
+Konfigurationen är ett enda steg. Du är automatiskt godkännare, och du kan skapa en instans.
+
+1. Välj <i class="ph ph-robot" aria-label="Agenter-ikon"></i> **Agenter** i Navigator.
+
+    Första gången du öppnar sidan **Agenter** måste du logga in och godkänna AI-agenter i SuperOffice.
+
+1. Hitta kortet **Duplicate Agent** i **Agentöversikt** och klicka på **Aktivera**. Detta öppnar konfigurationsguiden.
+
+    ![Agentöversikten, med korten Data Quality Agent, Lead Agent och Duplicate Agent -screenshot][img9]
+
+    <Tip>
+    Ser du inte kortet? Klicka på **Bläddra bland agenter** för att hitta det.
+    </Tip>
+
+## Allmänna inställningar {#settings}
+
+1. Ange ett unikt **Namn** för agentinstansen. **Detta kan inte ändras efter aktivering.**
+
+    ![Duplicate Agents Allmänna inställningar, med Namn, Beskrivning, Rapporteringsspråk och Schema -screenshot][img1]
+
+1. Redigera valfritt den föreslagna **Beskrivningen** om du vill ha något annat.
+
+1. Välj **Rapporteringsspråk**. Detta påverkar både rapporter och chattsvar.
+
+1. Klicka på **Spara**.
+
+    Instansen aktiveras, visas under **Mina agenter** i Agenter-sidofältet och börjar arbeta på sin nästa dagliga körning.
+
+1. Välj **Gå till instans** för att öppna din nya Duplicate Agent och [komma igång][3].
+
+Innan du granskar, välj fliken **Chatt**, klicka sedan på <i class="ph ph-sliders-horizontal" aria-label="Filter-ikon"></i> och välj **Väntande** för att avgränsa en full kö till förslag som väntar på ditt beslut.
+
+## Sammanfogningsförslag: dubblerade företag {#merge-companies}
+
+1. Välj ett företagssammanfogningsförslag (<i class="ph ph-buildings" aria-label="Företag-ikon"></i>) från listan.
+
+1. Granska sida vid sida-jämförelsen av vad som tas bort/behålls i **företagsjämförelsen**, och vad som händer om du godkänner sammanfogningen.
+
+    Agenten föreslår alltid att det äldsta företaget behålls.
+
+    ![Ett förslag om att sammanfoga företag, med företaget som ska behållas och Godkänn/Avvisa -screenshot][img2]
+
+1. Be valfritt agenten (i chatten) att städa upp företaget du behåller, innan du godkänner.
+
+1. Klicka på **Godkänn**.
+
+    <Danger>
+    **En sammanfogning kan inte ångras.** Att kombinera två företag tar permanent bort den extra posten.
+    </Danger>
+
+1. Klicka på **Godkänn** i bekräftelsedialogrutan.
+
+    ![Bekräftelsedialogrutan för sammanfogning, som anger exakt vad som kommer att hända -screenshot][img6]
+
+    * Det bevarade (äldsta) företaget behåller sina uppgifter och sin ägare, som blir ägare av det sammanfogade resultatet.
+    * Alla tomma fält fylls i från den andra posten.
+    * En anteckning läggs till på det bevarade företaget som dokumenterar ändringen.
+    * Ägaren av det borttagna företaget meddelas om sammanfogningen och ägarbytet, även om båda posterna redan hade samma ägare.
+
+## Sammanfogningsförslag: dubblerade kontakter {#merge-contacts}
+
+1. Välj ett förslag om dubblerad kontakt (<i class="ph ph-user-circle" aria-label="Kontakt-ikon"></i>) från listan.
+
+1. Granska de **möjliga dubblerade personerna**: företaget kontakterna hör till, ett betyg för **Matchningssäkerhet** (1-5 stjärnor), varför de verkar vara samma person, och vad agenten matchade på, till exempel ett identiskt fullständigt namn.
+
+    En varning om dataförlust visas om kontakten du behåller redan har en e-postadress eller ett telefonnummer som den andra postens avvikande värde annars skulle skriva över: kontrollera båda innan du godkänner.
+
+    ![Ett förslag om att sammanfoga dubblerade kontakter -screenshot][img3]
+
+1. Klicka på **Kombinera och avsluta**.
+
+    <Danger>
+    **Detta kan inte ångras.** Att kombinera två kontakter avslutar permanent den extra posten.
+    </Danger>
+
+1. Klicka på **Godkänn** i bekräftelsedialogrutan.
+
+    * De två kontakterna kombineras till den du behåller.
+    * Befintliga uppgifter på den bevarade kontakten förblir som de är. Alla tomma fält fylls i från den andra posten.
+    * Den bortsammanfogade kontakten markeras som tidigare anställd i stället för att tas bort.
+
+## Föräldralösa kontakter (utan företag) {#orphans}
+
+Agenten letar efter **föräldralösa kontakter**, personer utan företag vars e-postadress använder ett företags domän, och matchar var och en mot företaget som äger domänen. Om domänen inte tydligt pekar mot ett företag letar den även efter ett företag med ett namn som nästan matchar och föreslår det i stället.
+
+1. Välj ett förslag om föräldralös kontakt (<i class="ph ph-user-circle" aria-label="Kontakt-ikon"></i>) från listan.
+
+1. Granska avsnitten **Kontakt** och **Föreslaget företag**, och varför agenten föreslår kopplingen.
+
+    Om en kontakt kan höra till mer än ett företag får du ett enda förslag som ber dig välja vilket. En kontakt utan e-post med företagsdomän visas inte.
+
+    ![Ett förslag om föräldralös kontakt, med åtgärderna Koppla kontakt och Ignorera -screenshot][img4]
+
+1. Klicka på **Koppla kontakt**.
+
+    Kontakten kopplas till det företaget. Inget annat om kontakten eller företaget ändras. Till skillnad från en sammanfogning kan detta återställas senare genom att koppla bort kontakten.
+
+## Undersök ett specifikt företag eller en kontakt
+
+1. Välj fliken **Chatt**.
+
+1. I den **Allmänna** chatten ber du agenten att kontrollera ett specifikt företag efter dubbletter eller slå upp en kontakt.
+
+1. Om den hittar en äkta dubblett eller föräldralös kontakt på detta sätt väcker den en normal godkännandeuppgift för det, precis som en som hittats vid den dagliga schemalagda körningen. Granska den enligt beskrivningen ovan.
+
+## Agentens arbetsyta {#workspace}
+
+Duplicate Agents arbetsyta har tre flikar: **Chatt**, **Historik** och **Prestanda**.
+
+| Flik | Beskrivning |
+|---|---|
+| Chatt | En **Allmän chatt**-tråd plus en tråd per förslag agenten har väckt. |
+| Historik | En detaljerad logg över kontrollerade företag, väckta förslag, godkända sammanfogningar och kopplingar, och eventuella hoppade poster, med orsak. Välj en **Period** (senaste 24 timmarna, 7, 30 eller 90 dagar) för att avgränsa den. Långa historiker delas upp i sidor. |
+| Prestanda | Visar hur agenten har presterat under en period (senaste 7, 30 eller 90 dagarna): föreslagna företagsdubbletter, föreslagna föräldralösa kontakter, föreslagna persondubbletter, godkända sammanfogningar, avvisade dubbletter, förfallna dubbletter och slutförda körningar. |
+
+![Fliken Historik, med filtret Period och uppdateringsknappen. En post expanderad, som visar dess arbetsflödes-ID och körnings-ID -screenshot][img5]
+
+Klicka på <i class="ph ph-arrow-clockwise" aria-label="Uppdatera-ikon"></i> för att hämta de senaste posterna. Klicka på en post för att expandera den och se dess fullständiga arbetsflödes- och körningsdetaljer.
+
+## Tips och felsökning
+
+**Vad händer om jag avvisar eller ignorerar?** Ingenting ändras; båda posterna behålls som de är.
+
+**Kan jag besluta om flera förslag samtidigt?** Ja. Markera flera väntande förslag och använd **Godkänn** eller **Avvisa** från panelen för massåtgärder, på samma sätt som för alla andra agenter.
+
+**Vad händer med ett förslag jag inte hinner med i tid?** Ett förslag som väntar på ditt beslut har en begränsad livslängd, **30 dagar som standard**. Så snart det är inom 5 dagar från att förfalla visas en nedräkningsbanner i dess tråd. Om du inte agerar i tid slängs det, och agenten går vidare. Ingenting ändras för ett förfallet förslag, och samma par kan visas igen vid en senare kontroll.
+
+**Jag avaktiverade instansen och mina väntande förslag är borta.** Att avaktivera en instans slänger bort alla förslag som väntar på godkännande, enligt beskrivningen i [Konfigurera AI-agenter][1]. Godkänn eller avvisa det du behöver först om du vill behålla dem.
+
+Endast instansens ägare kan ändra dess inställningar eller radera den.
+
+[1]: /sv/ai/learn/set-up-ai-agents
+[3]: #workspace
+
+[img1]: ../../../media/loc/en/ai/duplicate-agent-settings.png
+[img2]: ../../../media/loc/en/ai/duplicate-company-comparison.png
+[img3]: ../../../media/loc/en/ai/dup-contact-merge.png
+[img4]: ../../../media/loc/en/ai/dup-orphaned-contact.png
+[img9]: ../../../media/loc/en/ai/agent-overview.png
+[img5]: ../../../media/loc/en/ai/duplicate-history-expanded.png
+[img6]: ../../../media/loc/en/ai/approve-merge-companies.png

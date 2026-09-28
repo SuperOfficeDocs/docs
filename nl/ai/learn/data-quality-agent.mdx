@@ -1,0 +1,175 @@
+---
+title: Data Quality Agent
+description: Houd de bedrijven en contactpersonen die al in uw CRM staan nauwkeurig, volledig en actueel, waarbij elke voorgestelde wijziging door u wordt beoordeeld en goedgekeurd.
+keywords: ['AI-agent', 'verrijking', 'AVG-toestemming', 'gebounced e-mailadres', 'Leadfeeder']
+author: digitaldiina, Claudia Dias
+date: 09.28.2026
+so_version: 12.5
+content_type: concept
+tier: growth
+category: automation
+topic: ai
+platform: web
+deployment: online
+pilot: yes
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Agent activeren: /nl/ai/learn/set-up-ai-agents
+  - Instellingen bewerken: /nl/ai/learn/set-up-ai-agents#edit
+  - /nl/ai/learn/duplicate-agent
+  - Overige AI-diensten: /nl/ai/learn/index
+language: nl
+---
+
+import DataQualityAgentPilotNote from "../../../snippets/ai/data-quality-agent-pilot-note.mdx";
+
+<DataQualityAgentPilotNote />
+
+De Data Quality Agent houdt de bedrijven en personen die al in SuperOffice CRM staan nauwkeurig en volledig. Elke dag verwerkt de agent een batch van uw records, bedrijven waarvan u de toegewezen eigenaar bent, op zoek naar kwaliteitsproblemen zoals slecht opgemaakte telefoonnummers, ontbrekende gegevens en verouderde informatie. De agent onderzoekt de hiaten aan de hand van betrouwbare handelsbronnen en stelt een set voorgestelde correcties op voor u om te beoordelen. Er wordt niets naar SuperOffice teruggeschreven totdat u het goedkeurt.
+
+## Wat het voor u doet
+
+* **Corrigeert opmaakproblemen:** normaliseert telefoonnummers en ordent adressen, en markeert alles wat niet veilig automatisch kan worden gecorrigeerd.
+
+* **Vult ontbrekende gegevens aan:** vindt ontbrekende bedrijfsgegevens, zoals website, beschrijving of branche, uit betrouwbare handelsbronnen.
+
+* **Markeert onbestelbare e-mails:** markeert bij elke run contact-e-mailadressen die als gebounced zijn geregistreerd.
+
+* **Controleert AVG-toestemming:** markeert contactpersonen met ontbrekende of ingetrokken toestemming, zodat u actie kunt ondernemen.
+
+* **Signaleert bedrijven zonder contactpersonen:** brengt bedrijfsrecords in beeld die geen gekoppelde personen hebben en stelt, optioneel, contactpersonen voor om toe te voegen.
+
+<Note>
+De agent stelt voor; u beslist. Elke voorgestelde wijziging wordt door u beoordeeld en goedgekeurd voordat deze naar SuperOffice wordt geschreven. Als u een beoordeling niet goedkeurt, verandert er niets.
+</Note>
+
+## Planning
+
+De agent draait **Dagelijks**, één keer per dag op een door het systeem toegewezen tijdstip. U bepaalt met **Max aantal taken per dag** hoeveel beoordelingstaken de agent per dag aanmaakt, zodat het beoordelingsvolume beheersbaar blijft.
+
+## Agent activeren {#setup}
+
+U bent automatisch de goedkeurder voor de records die de agent beoordeelt, en u kunt één instantie aanmaken.
+
+1. Selecteer <i class="ph ph-robot" aria-label="Agentspictogram"></i> **Agents** in de Navigator.
+
+    De eerste keer dat u de pagina **Agents** opent, moet u inloggen en AI-agents in SuperOffice goedkeuren.
+
+1. Zoek de kaart **Data Quality Agent** in het **Agentoverzicht** en klik op **Activeren**. Dit opent de instelwizard.
+
+    ![Het Agentoverzicht, met de kaarten Data Quality Agent, Lead Agent en Duplicate Agent -screenshot][img9]
+
+    <Tip>
+    Ziet u de kaart niet? Klik op **Agents doorbladeren** om deze te vinden.
+    </Tip>
+
+## Algemene instellingen {#settings}
+
+1. Voer een unieke **Naam** in voor de agentinstantie. **Dit kan na activering niet meer worden gewijzigd.**
+
+    ![De Algemene instellingen van Data Quality Agent, met Naam, Beschrijving, Rapportagetaal en Planning -screenshot][img1]
+
+1. Bewerk desgewenst de voorgestelde **Beschrijving** als u iets anders wilt.
+
+1. Kies de **Rapportagetaal**. Dit is van invloed op zowel rapporten als chatantwoorden.
+
+1. Selecteer hoeveel beoordelingstaken de agent per dag aanmaakt (1-30). De standaardwaarde voor **Max aantal taken per dag** is 10.
+
+1. Schakel desgewenst **Contactpersonen verrijken** in. Indien ingeschakeld, stelt de agent ook ontbrekende contactpersonen en gecorrigeerde gebounced e-mailadressen voor, met e-mail- en telefoongegevens waar deze worden gevonden. Indien uitgeschakeld, worden alleen de hiaten gemarkeerd.
+
+1. Klik op **Volgende**.
+
+## Bronnen
+
+![De stap Bronnen, met ingebouwde registers en de optionele Leadfeeder-add-on -screenshot][img2]
+
+* **Ingebouwde bronnen:** handelsregisters geselecteerd op basis van het thuisland van elk bedrijf, bijvoorbeeld Brønnøysundregistret voor Noorwegen of Northdata voor Duitsland, plus de eigen website van dat bedrijf. Beheerd door SuperOffice en hier niet bewerkbaar.
+
+* **Leadfeeder:** gebruikt om bedrijven te verifiëren en verrijken. Standaard ingeschakeld, altijd gefactureerd met **2x credits** bij gebruik, via het eigen Leadfeeder-account van SuperOffice.
+
+1. Kies of u **Leadfeeder** gebruikt om bedrijven te verrijken, of alleen op de ingebouwde registers vertrouwt. Standaard ingeschakeld.
+
+1. Klik op **Opslaan**.
+
+    De instantie wordt geactiveerd, verschijnt onder **Mijn agents** in de zijbalk Agents en begint te werken op de volgende dagelijkse run.
+
+1. Selecteer **Naar instantie** om uw nieuwe Data Quality Agent te openen en [aan de slag te gaan][3].
+
+## Wijzigingen beoordelen en goedkeuren
+
+1. Selecteer het tabblad **Chat**.
+
+1. Klik op <i class="ph ph-sliders-horizontal" aria-label="Filterpictogram"></i> en selecteer **In behandeling**.
+
+1. Kies een beoordelingsthread van een bedrijf (<i class="ph ph-buildings" aria-label="Bedrijfspictogram"></i>) uit de lijst.
+
+1. Beoordeel de samenvattingstegels, **Velden om bij te werken**, **Nieuwe contactpersonen**, **Bestaande contactpersonen** en **Handmatige acties**, en de tabel **Bij te werken velden**: Veld, Huidige waarde, Voorgestelde waarde en Bron, bijvoorbeeld een handelsregister, de homepage van het bedrijf, of Leadfeeder.
+
+    Hiaten die de agent niet automatisch kon opvullen, worden vermeld onder **Handmatige actie nodig**; werk deze direct bij in het bedrijfs- of contactrecord. Een contactpersoon die is gemarkeerd wegens ontbrekende AVG-toestemming wordt weergegeven als "wordt soft-deleted".
+
+    ![Een datakwaliteitsbeoordeling, met de tabel Bij te werken velden en de lijst Handmatige actie nodig -screenshot][img4]
+
+1. Vraag desgewenst de agent in de chat om aan te passen wat er wordt voorgesteld, voordat u goedkeurt.
+
+1. Klik op **Goedkeuren**.
+
+    <Danger>
+    **Wijzigingen kunnen niet ongedaan worden gemaakt.** Goedgekeurde wijzigingen kunnen in deze versie niet ongedaan worden gemaakt, dus beoordeel zorgvuldig voordat u goedkeurt.
+    </Danger>
+
+1. Klik op **Goedkeuren** in het bevestigingsvenster, waarin precies staat hoeveel velden worden bijgewerkt.
+
+    ![Het bevestigingsvenster voor goedkeuring, met een precieze omschrijving van wat er gaat gebeuren -screenshot][img5]
+
+    * Alle wijzigingen in de beoordeling worden in één keer naar SuperOffice geschreven.
+    * Voor een AVG-toestemmingsitem wordt de contactpersoon bij goedkeuring soft-deleted, en SuperOffice verwijdert deze 30 dagen later definitief.
+
+    ![De beoordeling na goedkeuring, met het label Goedgekeurd en een samenvatting van de toegepaste wijzigingen -screenshot][img3]
+
+U keurt alles wat voor een bedrijf is gevonden in één keer goed of af; er is nog geen goedkeuring per veld. Als de enige bevindingen voor een bedrijf zaken zijn die de agent niet kan corrigeren, zoals een gebounced e-mailadres zonder gevonden vervanging, of helemaal geen contactpersonen, is de beoordeling informatief: **Goedkeuren** bevestigt alleen dat u dit heeft gezien, **Afkeuren** wijst de beoordeling af, en geen van beide schrijft iets naar SuperOffice.
+
+## Een specifiek bedrijf onderzoeken
+
+1. Selecteer het tabblad **Chat**.
+
+1. Vraag de agent in de **Algemene** chat om nu een specifiek bedrijf te controleren, bijvoorbeeld *controleer de gegevens van Acme*, of om de huidige gegevens van een bedrijf of contactpersoon op te zoeken.
+
+1. Als de agent op deze manier echte wijzigingen vindt om voor te stellen, maakt de agent hiervoor een normale beoordelingstaak aan, precies zoals bij een bedrijf dat is gevonden tijdens de dagelijkse geplande run. Beoordeel deze zoals hierboven beschreven.
+
+## De werkruimte van de agent {#workspace}
+
+De werkruimte van Data Quality Agent heeft drie tabbladen: **Chat**, **Geschiedenis** en **Prestaties**.
+
+| Tabblad | Beschrijving |
+|---|---|
+| Chat | Een **Algemene chat**-thread plus één thread per bedrijf dat de agent heeft beoordeeld. |
+| Geschiedenis | Een gedetailleerd logboek van verwerkte bedrijven, voorgestelde, goedgekeurde en toegepaste wijzigingen, en overgeslagen items, met de reden. Selecteer een **Periode** (laatste 24 uur, 7, 30 of 90 dagen) om dit te beperken. Lange geschiedenissen worden gepagineerd. |
+| Prestaties | Toont hoe de instantie presteert over een periode (laatste 7, 30 of 90 dagen): wijzigingen ter goedkeuring verzonden, goedgekeurde wijzigingen, afgekeurde wijzigingen, verlopen wijzigingen, bevestigde beoordelingen, afgewezen beoordelingen, verlopen beoordelingen en voltooide runs. Een afzonderlijke groep **Verrijking** splitst uit hoeveel bedrijven zijn verrijkt via Leadfeeder versus het web. |
+
+![Het tabblad Geschiedenis, met het filter Periode en de vernieuwknop -screenshot][img6]
+
+Klik op <i class="ph ph-arrow-clockwise" aria-label="Vernieuwpictogram"></i> om de meest recente items op te halen.
+
+## Tips en probleemoplossing
+
+**Wat gebeurt er als ik afkeur?** Er wordt niets geschreven; de beoordeling wordt verwijderd.
+
+**Kan ik meerdere beoordelingen in één keer afhandelen?** Ja. Selecteer meerdere openstaande beoordelingen en gebruik **Goedkeuren** of **Afkeuren** in het bulkpaneel. Het goedkeuren van een batch schrijft elke wijziging in elke geselecteerde beoordeling in één keer, dus dezelfde waarschuwing "kan niet ongedaan worden gemaakt" geldt voor elk van deze wijzigingen.
+
+**Wat gebeurt er met een beoordeling waar ik niet op tijd bij ben?** Een beoordeling die op goedkeuring wacht, heeft een beperkte levensduur, **standaard 30 dagen**. Zodra deze binnen 5 dagen voor het verlopen zit, verschijnt een aftelbanner op de thread. Als u niet op tijd actie onderneemt, wordt deze automatisch verwijderd en gaat de agent verder. Er wordt niets geschreven voor een verlopen beoordeling.
+
+**Ik heb de instantie gedeactiveerd en mijn openstaande beoordelingen zijn verdwenen.** Het deactiveren van een instantie verwijdert alle beoordelingen die nog op goedkeuring wachten, zoals beschreven in [AI-agents instellen][1]. Keur eerst goed of af wat u wilt behouden als u dit wilt bewaren.
+
+Alleen de eigenaar van de instantie kan de instellingen wijzigen of de instantie verwijderen.
+
+[1]: /nl/ai/learn/set-up-ai-agents
+[3]: #workspace
+
+[img1]: ../../../media/loc/en/ai/data-quality-agent-settings.png
+[img2]: ../../../media/loc/en/ai/data-quality-agent-sources.png
+[img3]: ../../../media/loc/en/ai/data-quality-approved.png
+[img4]: ../../../media/loc/en/ai/data-quality-suggestion.png
+[img5]: ../../../media/loc/en/ai/approve-data-quality-update.png
+[img6]: ../../../media/loc/en/ai/dq-history.png
+[img9]: ../../../media/loc/en/ai/agent-overview.png

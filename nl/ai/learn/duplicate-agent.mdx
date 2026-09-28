@@ -1,0 +1,195 @@
+---
+title: Duplicate Agent
+description: Vind en voeg dubbele bedrijven en contactpersonen samen, en herstel de koppeling van contactpersonen zonder bedrijf die hun bedrijf zijn kwijtgeraakt, waarbij elke wijziging door u wordt goedgekeurd.
+keywords: ['datakwaliteit', 'AI-agent', 'bedrijven samenvoegen', 'dubbele bedrijven', 'dubbele contactpersonen', 'dubbele personen', 'contactpersoon zonder bedrijf']
+author: digitaldiina, Claudia Dias
+date: 09.28.2026
+so_version: 12.5
+content_type: concept
+tier: growth
+category: automation
+topic: ai
+platform: web
+deployment: online
+pilot: yes
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Agent activeren: /nl/ai/learn/set-up-ai-agents
+  - Instellingen bewerken: /nl/ai/learn/set-up-ai-agents#edit
+  - /nl/ai/learn/data-quality-agent
+  - Overige AI-diensten: /nl/ai/learn/index
+language: nl
+---
+
+import DuplicateAgentPilotNote from "../../../snippets/ai/duplicate-agent-pilot-note.mdx";
+
+<DuplicateAgentPilotNote />
+
+De Duplicate Agent ruimt uw SuperOffice CRM van binnenuit op. Elke dag controleert de agent een batch van uw bedrijfsrecords op waarschijnlijke duplicaten, zoekt naar twee contactrecords die dezelfde persoon lijken te zijn, en vindt contactpersonen zonder bedrijf waarvan het e-mailadres naar een bedrijf verwijst. De agent stelt voor elk geval een samenvoeging of koppeling voor, en doet niets totdat u goedkeurt.
+
+## Wat het voor u doet
+
+* **Vindt dubbele bedrijven:** vergelijkt uw bedrijven op naam en andere gegevens, zoals organisatienummer, domein en telefoonnummer, om waarschijnlijke duplicaten te vinden.
+
+* **Vindt dubbele contactpersonen:** zoekt naar twee contactrecords binnen hetzelfde bedrijf die dezelfde persoon lijken te zijn.
+
+* **Beoordeelt elke match:** scoort elke kandidaat van 1-5 en stelt alleen de sterkste matches voor.
+
+* **Stelt een veilige samenvoeging voor:** stelt bij bedrijven altijd voor het oudste record te behouden.
+
+* **Herstelt de koppeling van contactpersonen zonder bedrijf:** vindt contactpersonen zonder bedrijf waarvan het e-mailadres naar een bedrijf verwijst, en stelt voor deze te koppelen.
+
+<Note>
+De agent stelt voor; u beslist. Er worden geen records samengevoegd of gekoppeld totdat u goedkeurt, er is geen automatische modus. De agent werkt alleen binnen uw SuperOffice CRM. Er is geen websearch of externe verrijking. De dagelijkse scan controleert voornamelijk records die u zelf bezit, maar een suggestie kan ook een record betreffen dat eigendom is van iemand anders in uw tenant: slechts één kant van een match hoeft van u te zijn om deze aan u voor te leggen.
+</Note>
+
+## Planning
+
+De agent draait **Dagelijks**, één keer per dag op een door het systeem toegewezen tijdstip.
+
+Er is geen dagelijkse limiet op het aantal bedrijven dat wordt gecontroleerd. De agent houdt tot 50 suggesties van elk type (bedrijfssamenvoegingen, contactsamenvoegingen en contactpersonen zonder bedrijf) klaar in afwachting van uw beslissing. Zodra u genoeg goedkeurt of afkeurt om ruimte vrij te maken, vult de volgende geplande scan dat type weer aan tot 50, als er meer te vinden is.
+
+## Agent activeren {#setup}
+
+Het instellen is één enkele stap. U bent automatisch de goedkeurder, en u kunt één instantie aanmaken.
+
+1. Selecteer <i class="ph ph-robot" aria-label="Agentspictogram"></i> **Agents** in de Navigator.
+
+    De eerste keer dat u de pagina **Agents** opent, moet u inloggen en AI-agents in SuperOffice goedkeuren.
+
+1. Zoek de kaart **Duplicate Agent** in het **Agentoverzicht** en klik op **Activeren**. Dit opent de instelwizard.
+
+    ![Het Agentoverzicht, met de kaarten Data Quality Agent, Lead Agent en Duplicate Agent -screenshot][img9]
+
+    <Tip>
+    Ziet u de kaart niet? Klik op **Agents doorbladeren** om deze te vinden.
+    </Tip>
+
+## Algemene instellingen {#settings}
+
+1. Voer een unieke **Naam** in voor de agentinstantie. **Dit kan na activering niet meer worden gewijzigd.**
+
+    ![De Algemene instellingen van Duplicate Agent, met Naam, Beschrijving, Rapportagetaal en Planning -screenshot][img1]
+
+1. Bewerk desgewenst de voorgestelde **Beschrijving** als u iets anders wilt.
+
+1. Kies de **Rapportagetaal**. Dit is van invloed op zowel rapporten als chatantwoorden.
+
+1. Klik op **Opslaan**.
+
+    De instantie wordt geactiveerd, verschijnt onder **Mijn agents** in de zijbalk Agents en begint te werken op de volgende dagelijkse run.
+
+1. Selecteer **Naar instantie** om uw nieuwe Duplicate Agent te openen en [aan de slag te gaan][3].
+
+Selecteer voordat u begint met beoordelen het tabblad **Chat**, klik daarna op <i class="ph ph-sliders-horizontal" aria-label="Filterpictogram"></i> en selecteer **In behandeling** om een drukke wachtrij te beperken tot suggesties die op uw beslissing wachten.
+
+## Samenvoegingssuggestie: dubbele bedrijven {#merge-companies}
+
+1. Kies een bedrijfssamenvoegingssuggestie (<i class="ph ph-buildings" aria-label="Bedrijfspictogram"></i>) uit de lijst.
+
+1. Beoordeel de naast elkaar geplaatste verwijderen/behouden **bedrijfsvergelijking** en wat er gebeurt als u de samenvoeging goedkeurt.
+
+    De agent stelt altijd voor het oudste bedrijf te behouden.
+
+    ![Een samenvoegingssuggestie voor bedrijven, met het te behouden bedrijf en Goedkeuren / Afkeuren -screenshot][img2]
+
+1. Vraag desgewenst de agent (in de chat) om het bedrijf dat u behoudt op te schonen, voordat u goedkeurt.
+
+1. Klik op **Goedkeuren**.
+
+    <Danger>
+    **Een samenvoeging kan niet ongedaan worden gemaakt.** Het combineren van twee bedrijven verwijdert het extra record permanent.
+    </Danger>
+
+1. Klik op **Goedkeuren** in het bevestigingsvenster.
+
+    ![Het bevestigingsvenster voor de samenvoeging, met een precieze omschrijving van wat er gaat gebeuren -screenshot][img6]
+
+    * Het behouden (oudste) bedrijf houdt zijn gegevens en zijn eigenaar, die de eigenaar wordt van het samengevoegde resultaat.
+    * Lege velden worden aangevuld vanuit het andere record.
+    * Er wordt een notitie toegevoegd aan het behouden bedrijf om de wijziging vast te leggen.
+    * De eigenaar van het verwijderde bedrijf wordt op de hoogte gesteld van de samenvoeging en de wijziging van eigenaarschap, ook als beide records al dezelfde eigenaar hadden.
+
+## Samenvoegingssuggestie: dubbele contactpersonen {#merge-contacts}
+
+1. Kies een suggestie voor dubbele contactpersonen (<i class="ph ph-user-circle" aria-label="Contactpersoonpictogram"></i>) uit de lijst.
+
+1. Beoordeel de **mogelijk dubbele personen**: het bedrijf waartoe de contactpersonen behoren, een beoordeling van de **Matchbetrouwbaarheid** (1-5 sterren), waarom ze dezelfde persoon lijken te zijn, en waarop de agent heeft gematcht, bijvoorbeeld een identieke volledige naam.
+
+    Er verschijnt een waarschuwing voor gegevensverlies als de contactpersoon die u behoudt al een e-mailadres of telefoonnummer heeft dat anders zou worden overschreven door de afwijkende waarde van het andere record: controleer beide voordat u goedkeurt.
+
+    ![Een samenvoegingssuggestie voor dubbele contactpersonen -screenshot][img3]
+
+1. Klik op **Combineren en intrekken**.
+
+    <Danger>
+    **Dit kan niet ongedaan worden gemaakt.** Het combineren van twee contactpersonen trekt het extra record permanent in.
+    </Danger>
+
+1. Klik op **Goedkeuren** in het bevestigingsvenster.
+
+    * De twee contactpersonen worden gecombineerd tot de contactpersoon die u behoudt.
+    * Bestaande gegevens op de behouden contactpersoon blijven ongewijzigd. Lege velden worden aangevuld vanuit het andere record.
+    * De samengevoegde contactpersoon wordt gemarkeerd als voormalig werknemer in plaats van verwijderd.
+
+## Contactpersonen zonder bedrijf {#orphans}
+
+De agent zoekt naar **contactpersonen zonder bedrijf**, personen zonder bedrijf waarvan het e-mailadres het domein van een bedrijf gebruikt, en matcht elk met het bedrijf dat dat domein bezit. Als het domein niet duidelijk naar één bedrijf verwijst, zoekt de agent ook naar een bedrijf met een sterk overeenkomende naam en biedt deze in plaats daarvan aan.
+
+1. Kies een suggestie voor een contactpersoon zonder bedrijf (<i class="ph ph-user-circle" aria-label="Contactpersoonpictogram"></i>) uit de lijst.
+
+1. Beoordeel de secties **Contactpersoon** en **Voorgesteld bedrijf**, en waarom de agent deze koppeling voorstelt.
+
+    Als een contactpersoon bij meer dan één bedrijf zou kunnen horen, krijgt u één suggestie waarin u wordt gevraagd er één te kiezen. Een contactpersoon zonder e-mailadres met een bedrijfsdomein wordt niet weergegeven.
+
+    ![Een suggestie voor een contactpersoon zonder bedrijf, met de acties Contactpersoon koppelen en Negeren -screenshot][img4]
+
+1. Klik op **Contactpersoon koppelen**.
+
+    De contactpersoon wordt gekoppeld aan dat bedrijf. Er verandert niets anders aan de contactpersoon of het bedrijf. In tegenstelling tot een samenvoeging kan dit later worden teruggedraaid door de contactpersoon te ontkoppelen.
+
+## Een specifiek bedrijf of contactpersoon onderzoeken
+
+1. Selecteer het tabblad **Chat**.
+
+1. Vraag de agent in de **Algemene** chat om een specifiek bedrijf op duplicaten te controleren of een contactpersoon op te zoeken.
+
+1. Als de agent op deze manier een echt duplicaat of een contactpersoon zonder bedrijf vindt, maakt de agent hiervoor een normale goedkeuringstaak aan, precies zoals bij een taak die is gevonden tijdens de dagelijkse geplande run. Beoordeel deze zoals hierboven beschreven.
+
+## De werkruimte van de agent {#workspace}
+
+De werkruimte van Duplicate Agent heeft drie tabbladen: **Chat**, **Geschiedenis** en **Prestaties**.
+
+| Tabblad | Beschrijving |
+|---|---|
+| Chat | Een **Algemene chat**-thread plus één thread per suggestie die de agent heeft aangedragen. |
+| Geschiedenis | Een gedetailleerd logboek van gecontroleerde bedrijven, aangedragen suggesties, goedgekeurde samenvoegingen en koppelingen, en overgeslagen items, met de reden. Selecteer een **Periode** (laatste 24 uur, 7, 30 of 90 dagen) om dit te beperken. Lange geschiedenissen worden gepagineerd. |
+| Prestaties | Toont hoe de agent presteert over een periode (laatste 7, 30 of 90 dagen): voorgestelde bedrijfsduplicaten, voorgestelde contactpersonen zonder bedrijf, voorgestelde persoonsduplicaten, goedgekeurde samenvoegingen, afgekeurde duplicaten, verlopen duplicaten en voltooide runs. |
+
+![Het tabblad Geschiedenis, met het filter Periode en de vernieuwknop. Een uitgevouwen item, met de bijbehorende workflow-ID en run-ID -screenshot][img5]
+
+Klik op <i class="ph ph-arrow-clockwise" aria-label="Vernieuwpictogram"></i> om de meest recente items op te halen. Klik op een item om het uit te vouwen en de volledige workflow- en rundetails te bekijken.
+
+## Tips en probleemoplossing
+
+**Wat gebeurt er als ik afkeur of negeer?** Er verandert niets; beide records blijven ongewijzigd.
+
+**Kan ik meerdere suggesties in één keer afhandelen?** Ja. Selecteer meerdere openstaande suggesties en gebruik **Goedkeuren** of **Afkeuren** in het bulkpaneel, op dezelfde manier als bij elke andere agent.
+
+**Wat gebeurt er met een suggestie waar ik niet op tijd bij ben?** Een suggestie die op uw beslissing wacht, heeft een beperkte levensduur, **standaard 30 dagen**. Zodra deze binnen 5 dagen voor het verlopen zit, verschijnt een aftelbanner op de thread. Als u niet op tijd actie onderneemt, wordt deze verwijderd en gaat de agent verder. Er verandert niets voor een verlopen suggestie, en hetzelfde paar kan later opnieuw naar boven komen bij een volgende controle.
+
+**Ik heb de instantie gedeactiveerd en mijn openstaande suggesties zijn verdwenen.** Het deactiveren van een instantie verwijdert alle suggesties die nog op goedkeuring wachten, zoals beschreven in [AI-agents instellen][1]. Keur eerst goed of af wat u wilt behouden als u dit wilt bewaren.
+
+Alleen de eigenaar van de instantie kan de instellingen wijzigen of de instantie verwijderen.
+
+[1]: /nl/ai/learn/set-up-ai-agents
+[3]: #workspace
+
+[img1]: ../../../media/loc/en/ai/duplicate-agent-settings.png
+[img2]: ../../../media/loc/en/ai/duplicate-company-comparison.png
+[img3]: ../../../media/loc/en/ai/dup-contact-merge.png
+[img4]: ../../../media/loc/en/ai/dup-orphaned-contact.png
+[img9]: ../../../media/loc/en/ai/agent-overview.png
+[img5]: ../../../media/loc/en/ai/duplicate-history-expanded.png
+[img6]: ../../../media/loc/en/ai/approve-merge-companies.png
