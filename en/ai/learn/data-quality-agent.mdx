@@ -16,6 +16,7 @@ audience: person
 audience_tooltip: SuperOffice CRM
 related:
   - Activate agent: /en/ai/learn/set-up-ai-agents
+  - Edit settings: /en/ai/learn/set-up-ai-agents#edit
   - /en/ai/learn/lead-agent
   - Other AI services: /en/ai/learn/index
 language: en
@@ -25,15 +26,15 @@ import DataQualityAgentPilotNote from "../../../snippets/ai/data-quality-agent-p
 
 <DataQualityAgentPilotNote />
 
-Data Quality Agent keeps the companies and people already in your SuperOffice CRM in good shape. Each day it works through a batch of your records, companies where you are the assigned CRM owner, looking for quality problems such as badly formatted phone numbers, missing details, and out-of-date or undeliverable information. It researches the gaps against trusted business sources and prepares a set of proposed fixes for you to review. Nothing is written back to SuperOffice until you approve it.
+Data Quality Agent keeps the companies and people already in your SuperOffice CRM accurate and complete. Each day it works through a batch of your records, companies where you are the assigned CRM owner, looking for quality problems such as badly formatted phone numbers, missing details, and out-of-date or undeliverable information. It researches the gaps against trusted business sources and prepares a set of proposed fixes for you to review. Nothing is written back to SuperOffice until you approve it.
 
-## What it does for you
+## What the agent does for you
 
 * **Fixes formatting problems:** normalizes phone numbers and tidies up addresses, flagging anything it cannot safely correct.
 
-* **Fills in missing details:** finds missing company information, such as website, description, or industry, from trusted business sources and proposes it.
+* **Fills in missing details:** finds missing company information, such as website, description, or industry, from trusted business sources.
 
-* **Flags undeliverable emails:** highlights contact email addresses recorded as bounced, on every run. When **Enrich contacts** is on, it also proposes a corrected address if it can find one.
+* **Flags undeliverable emails:** highlights contact email addresses recorded as bounced, on every run.
 
 * **Checks GDPR consent:** flags contacts with missing or withdrawn consent so you can act on them.
 
@@ -45,14 +46,9 @@ Data Quality Agent keeps the companies and people already in your SuperOffice CR
 The agent proposes; you decide. Every proposed change is reviewed and approved by you before it is written to SuperOffice. If you do not approve a review, nothing changes.
 </Note>
 
-## Set up the agent
+## Schedule
 
-Data Quality Agent's set-up wizard has 2 steps. You are automatically the approver for the records it reviews, and you can create one instance of your own.
-
-| # | Step | What it covers |
-|---|---|---|
-| 1 | General settings | Name, description, language, schedule, daily limit, Enrich contacts |
-| 2 | Sources | The built-in enrichment sources plus the optional Leadfeeder add-on |
+The agent runs **Daily**, automatically once a day at a system-assigned time. You control how many review tasks it creates each day with **Max tasks per day**, so review volume stays manageable.
 
 ## Before you begin
 
@@ -62,19 +58,25 @@ If you have not yet activated Data Quality Agent, you need to do so first.
 
     The first time you access the **Agents** page, you need to log in and approve AI agents in SuperOffice.
 
-1. Click **Browse agents** in the upper-right corner of the **Agents** overview and select **Data Quality Agent**.
-1. Click **Activate**. This opens the set-up wizard.
+1. Locate the **Data Quality Agent** card in the **Agent overview** and click **Activate**. This opens the set-up wizard.
+
+    ![The Agent overview, with Data Quality Agent, Lead Agent, and Duplicate Agent cards -screenshot][img9]
 
 ## General settings
 
 1. Enter a unique **Name** for the agent instance. **This cannot be changed after activation.**
-1. Optionally, edit the suggested **Description** if you want something different.
-1. Choose **Reporting language**. This affects both reports and chat replies. There is no Country setting: the agent enriches each company against its own home-country business registry automatically.
-1. Select how many review tasks the agent creates per day (1, 2, 5, 10, 15, 20, 25, or 30). The default **Max tasks per day** is 10.
-1. Optionally, enable **Enrich contacts**. When on, the agent also proposes adding missing contact persons to a company, including email and phone details where it finds them. When off, it only flags companies that have no contacts and adds no people.
-1. Click **Next**.
 
-![The Data Quality Agent setup wizard, General settings -screenshot][img1]
+    ![The Data Quality Agent's General settings, with Name, Description, Reporting language, and Schedule -screenshot][img1]
+
+1. Optionally, edit the suggested **Description** if you want something different.
+
+1. Choose **Reporting language**. This affects both reports and chat replies. There is no Country setting: the agent enriches each company against its own home-country business registry automatically.
+
+1. Select how many review tasks the agent creates per day (1, 2, 5, 10, 15, 20, 25, or 30). The default **Max tasks per day** is 10.
+
+1. Optionally, enable **Enrich contacts**. When on, the agent also proposes adding missing contact persons to a company, including email and phone details where it finds them, and proposes a corrected address for a bounced email if it finds a replacement. When off, it only flags companies that have no contacts and adds no people, and only flags bounced emails without proposing a fix.
+
+1. Click **Next**.
 
 ## Sources
 
@@ -84,42 +86,47 @@ Tell the agent what to enrich with. Neither part needs a list from you.
 * **Leadfeeder:** optional, on by default for new instances, always billed at **2x credits** when used, using SuperOffice's own Leadfeeder account.
 
 1. Choose whether to use **Leadfeeder** to enrich companies, or rely on the built-in registries alone.
+
 1. Click **Save**.
 
-![The Sources step, built-in registries and the optional Leadfeeder add-on -screenshot][img2]
+    The instance is activated, appears under **My agents** on the Overview page, and begins working on its next daily run.
 
-The instance is activated and appears under **My agents** on the Overview page. It begins working on its next daily run.
+    ![The Sources step, built-in registries and the optional Leadfeeder add-on -screenshot][img2]
+
+## The agent workspace
+
+The Data Quality Agent's workspace has three tabs: **Chat**, **History**, and **Performance**.
+
+| Tab | Description |
+|---|---|
+| Chat | A **General chat** thread plus one thread per company the agent has reviewed. |
+| History | A detailed log of companies processed, changes proposed, approved, and applied, and any items skipped, with the reason. Select a period (last 24 hours, 7, 30, or 90 days). Long histories are paged. |
+| Performance | Shows how the instance is performing over a period (last 7, 30, or 90 days): Changes Sent for Approval, Changes Approved, Changes Rejected, Changes Expired, Reviews Acknowledged, Reviews Dismissed, Reviews Expired, and Runs Completed. A separate **Enrichment** group breaks down how many companies were enriched via Leadfeeder versus the web. |
+
+![The History tab, with the Period filter and refresh button -screenshot][img6]
+
+Click <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i> to pull in the latest entries.
 
 ## Review and approve changes
 
-Open the instance and go to the **Chat** tab. The left side lists a **General chat** thread plus one thread per company the agent has reviewed.
+1. In the **Chat** tab, select a company review thread (<i class="ph ph-buildings" aria-label="Company icon"></i>) from the list.
 
-* **General chat:** a free conversation with the agent. You can ask it to check a specific company now, for example *check Acme's data*. The result comes back in the chat, and if it finds genuine changes to propose, it also raises a normal review task for it, exactly like a company found on the daily scheduled run. You can also ask it to list the companies assigned to you, or look up a company's or contact's current details with nothing triggered.
-* **Review (task) threads:** each company the agent has proposed changes for arrives as its own thread, named after the company. This is where you approve or reject the changes.
+1. Review the summary tiles, **Fields to update**, **New contacts**, **Existing contacts**, and **Manual actions**, and the **Fields to be updated** table: Field, Current value, Proposed value, and Source, for example a business registry, the company homepage, or Leadfeeder.
 
-Use the Status filter and multi-select from [Set up AI agents][1] to work through a busy queue.
+    Gaps the agent could not fill automatically are listed under **Manual action needed**; update those directly in the company or contact record. A contact flagged for missing GDPR consent is shown as "will be soft-deleted".
 
-### The data quality review
+    ![A data quality review, with the Fields to be updated table and Manual action needed list -screenshot][img3]
 
-Opening a company's thread shows a **Data quality review** for that company, so you can decide quickly.
+1. Click **Approve**.
 
-Summary tiles at the top count what is proposed, **Fields to update**, **New contacts**, **Existing contacts**, and **Manual actions**, followed by a **Fields to be updated** table with Field, Current value, Proposed value, and Source, for example a business registry, the company homepage, or Leadfeeder.
+    <Danger>
+    **Changes cannot be undone.** Approved changes have no undo in this version, so review carefully before approving.
+    </Danger>
 
-A contact flagged for missing GDPR consent is shown as "will be soft-deleted". Other manual-action gaps the agent could not fill automatically are for you to update yourself, directly in the company or contact record.
+1. Click **Approve** in the confirmation dialog.
 
-### Approve or reject
-
-**Approve:** a confirmation spells out exactly what will happen, for example "4 fields will be updated. 3 new contacts will be added (privacy e-mail will be sent).", with a reminder that field updates cannot be undone. Confirm, and all the changes in the review are written to SuperOffice at once. For a GDPR-consent item, approving soft-deletes the contact, and SuperOffice removes it permanently 30 days later.
-
-**Reject:** nothing is written; the review is discarded.
-
-![A data quality review, with the approve and reject confirmations -screenshot][img3]
-
-<Danger>
-**Changes cannot be undone.** Approved changes have no undo in this version, so review carefully before approving.
-
-The agent never deletes data silently. A bounced email address is flagged for review, and a corrected address is proposed only when **Enrich contacts** is on and a replacement is found; otherwise you fix it manually. A contact is only removed (soft-deleted) when you approve a missing-consent item.
-</Danger>
+    * All the changes in the review are written to SuperOffice at once.
+    * For a GDPR-consent item, approving soft-deletes the contact, and SuperOffice removes it permanently 30 days later.
 
 <Warning>
 **Everything goes through your approval in this release.** Proposed changes are classified by risk: lower-risk fixes are designed to be applied automatically, while higher-risk changes always need your approval.
@@ -135,47 +142,23 @@ In this release every change is treated as higher-risk, so all proposed changes 
 **One decision per company.** In this version you approve or reject everything found for a company as a single decision; there is no per-field approval yet. If you want to adjust what is proposed first, ask the agent in chat before approving.
 </Note>
 
-Approving or rejecting several reviews at once works the same way as any other agent: hold Ctrl/Cmd and select to multi-select, or use the checkbox next to **RECENT** to select them all, then **Approve** or **Reject**. Approving a batch writes every change in every selected review at once, so the same "cannot be undone" caution applies to each of them.
+## Look into a specific company
 
-<Warning>
+1. Select the **Chat** tab.
+
+1. In the **General** chat, ask the agent to check a specific company now, for example *check Acme's data*, or look up a company's or contact's current details.
+
+1. If it finds genuine changes to propose this way, it raises a normal review task for it, exactly like a company found on the daily scheduled run. Review it as described above.
+
+## Tips and troubleshooting
+
+If you **reject**, nothing is written and the review is discarded.
+
+Activating, deactivating, deleting, and muting all work as described in [Set up AI agents][1]. Only the owner can change or delete the instance.
+
 A review awaiting approval has a limited lifetime, **30 days by default**. Once it is within 5 days of expiring, a countdown banner appears on its thread. If you do not act in time, it is discarded automatically and the agent moves on. Nothing is written for an expired review.
-</Warning>
 
-## Settings, History, and Performance
-
-The Data Quality Agent's workspace has three tabs: **Chat**, **History**, and **Performance**. The person who creates the instance is always its approver.
-
-![The Data Quality Agent workspace and its three tabs -screenshot][img4]
-
-### Settings and editing
-
-Use the **edit (pencil)** button to open the instance's **General settings** and **Sources** in the same sidebar layout as the setup wizard: description, language, Max tasks per day, the Enrich contacts toggle, and the Leadfeeder toggle.
-
-The name and schedule are fixed. Changes apply from the next run. You can also change the language by chat, for example *change my language to Swedish*.
-
-![The edit dialog for changing settings and sources -screenshot][img5]
-
-### History
-
-The **History** tab is a detailed log of everything the agent has done: companies processed, changes proposed, approved, and applied, and any items skipped, with the reason. Use **Filter** to narrow it down by date range (last 24 hours, 7, 30, or 90 days), and the refresh button beside it to pull in the latest entries. Long histories are paged.
-
-![The History tab and its period filter -screenshot][img6]
-
-### Performance
-
-The **Performance** tab shows how the instance is performing over a period you choose (last 7, 30, or 90 days): Changes Sent for Approval, Changes Approved, Changes Rejected, Changes Expired, Reviews Acknowledged, Reviews Dismissed, Reviews Expired, and Runs Completed.
-
-A separate **Enrichment** group breaks down how many companies were enriched via Leadfeeder versus the web.
-
-![The Performance tab -screenshot][img7]
-
-<Note>
-Activating, deactivating, deleting, and muting all work as described in [Set up AI agents][1], including that deactivating while items are awaiting approval discards them. Only the owner can change or delete the instance.
-</Note>
-
-<Tip>
-Need more help? Contact your SuperOffice administrator or partner.
-</Tip>
+Use the Status filter and multi-select to work through a busy queue. Approving or rejecting several reviews at once works the same way as any other agent: select multiple pending reviews and use **Approve** or **Reject**. Approving a batch writes every change in every selected review at once, so the same "cannot be undone" caution applies to each of them. See [Set up AI agents][1].
 
 [1]: /en/ai/learn/set-up-ai-agents
 [2]: /en/ai/learn/lead-agent
@@ -183,7 +166,5 @@ Need more help? Contact your SuperOffice administrator or partner.
 [img1]: /media/loc/en/ai/dq-wizard-general.png
 [img2]: /media/loc/en/ai/dq-wizard-sources.png
 [img3]: /media/loc/en/ai/dq-review.png
-[img4]: /media/loc/en/ai/dq-workspace-tabs.png
-[img5]: /media/loc/en/ai/dq-edit-dialog.png
 [img6]: /media/loc/en/ai/dq-history.png
-[img7]: /media/loc/en/ai/dq-performance.png
+[img9]: /media/loc/en/ai/agent-overview.png
