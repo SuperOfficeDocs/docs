@@ -88,29 +88,21 @@ Sie sind automatisch der Genehmigende für die geprüften Datensätze und könne
 
 * **Leadfeeder:** wird zur Prüfung und Anreicherung von Firmen verwendet. Standardmäßig aktiviert, bei Nutzung immer mit **2-fachen Credits** abgerechnet, über das eigene Leadfeeder-Konto von SuperOffice.
 
-1. Wählen Sie, ob **Leadfeeder** zur Anreicherung von Firmen verwendet werden soll oder ob Sie sich allein auf die integrierten Register verlassen möchten.
+1. Wählen Sie, ob **Leadfeeder** zur Anreicherung von Firmen verwendet werden soll oder ob Sie sich allein auf die integrierten Register verlassen möchten. Standardmäßig aktiviert.
 
 1. Klicken Sie auf **Speichern**.
 
-    Die Instanz wird aktiviert, erscheint unter **Meine Agenten** auf der Übersichtsseite und beginnt mit ihrem nächsten täglichen Lauf.
+    Die Instanz wird aktiviert, erscheint unter **Meine Agenten** in der Agenten-Seitenleiste und beginnt mit ihrem nächsten täglichen Lauf.
 
-## Der Agenten-Arbeitsbereich
-
-Der Arbeitsbereich des Data Quality Agent hat drei Registerkarten: **Chat**, **Verlauf** und **Leistung**.
-
-| Registerkarte | Beschreibung |
-|---|---|
-| Chat | Ein **Allgemeiner Chat**-Thread plus ein Thread pro Firma, die der Agent geprüft hat. |
-| Verlauf | Ein detailliertes Protokoll der verarbeiteten Firmen, vorgeschlagenen, genehmigten und angewendeten Änderungen sowie übersprungener Einträge mit Begründung. Wählen Sie einen Zeitraum (letzte 24 Stunden, 7, 30 oder 90 Tage). Lange Verläufe werden seitenweise angezeigt. |
-| Leistung | Zeigt, wie die Instanz über einen Zeitraum (letzte 7, 30 oder 90 Tage) performt: zur Genehmigung gesendete Änderungen, genehmigte Änderungen, abgelehnte Änderungen, abgelaufene Änderungen, bestätigte Prüfungen, verworfene Prüfungen, abgelaufene Prüfungen und abgeschlossene Läufe. Eine separate Gruppe **Anreicherung** zeigt, wie viele Firmen über Leadfeeder gegenüber dem Web angereichert wurden. |
-
-![Die Registerkarte Verlauf mit dem Zeitraumfilter und der Aktualisierungsschaltfläche -screenshot][img6]
-
-Klicken Sie auf <i class="ph ph-arrow-clockwise" aria-label="Aktualisieren-Symbol"></i>, um die neuesten Einträge abzurufen.
+1. Wählen Sie **Zur Instanz**, um Ihren neuen Data Quality Agent zu öffnen und [loszulegen][3].
 
 ## Änderungen prüfen und genehmigen
 
-1. Wählen Sie in der Registerkarte **Chat** einen Firmen-Prüfungs-Thread (<i class="ph ph-buildings" aria-label="Firmen-Symbol"></i>) aus der Liste aus.
+1. Wählen Sie die Registerkarte **Chat**.
+
+1. Klicken Sie auf <i class="ph ph-sliders-horizontal" aria-label="Filter-Symbol"></i> und wählen Sie **Ausstehend**.
+
+1. Wählen Sie einen Firmen-Prüfungs-Thread (<i class="ph ph-buildings" aria-label="Firmen-Symbol"></i>) aus der Liste aus.
 
 1. Prüfen Sie die Übersichtskacheln **Zu aktualisierende Felder**, **Neue Kontakte**, **Vorhandene Kontakte** und **Manuelle Aktionen** sowie die Tabelle **Zu aktualisierende Felder**: Feld, Aktueller Wert, Vorgeschlagener Wert und Quelle, zum Beispiel ein Handelsregister, die Firmen-Homepage oder Leadfeeder.
 
@@ -145,17 +137,34 @@ Sie genehmigen oder lehnen alle für eine Firma gefundenen Punkte als eine einzi
 
 1. Findet er auf diesem Weg echte Änderungen vorzuschlagen, erstellt er dafür eine normale Prüfaufgabe, genau wie bei einer Firma aus dem täglichen geplanten Lauf. Prüfen Sie sie wie oben beschrieben.
 
+## Der Agenten-Arbeitsbereich {#workspace}
+
+Der Arbeitsbereich des Data Quality Agent hat drei Registerkarten: **Chat**, **Verlauf** und **Leistung**.
+
+| Registerkarte | Beschreibung |
+|---|---|
+| Chat | Ein **Allgemeiner Chat**-Thread plus ein Thread pro Firma, die der Agent geprüft hat. |
+| Verlauf | Ein detailliertes Protokoll der verarbeiteten Firmen, vorgeschlagenen, genehmigten und angewendeten Änderungen sowie übersprungener Einträge mit Begründung. Wählen Sie einen **Zeitraum** (letzte 24 Stunden, 7, 30 oder 90 Tage), um ihn einzugrenzen. Lange Verläufe werden seitenweise angezeigt. |
+| Leistung | Zeigt, wie die Instanz über einen Zeitraum (letzte 7, 30 oder 90 Tage) performt: zur Genehmigung gesendete Änderungen, genehmigte Änderungen, abgelehnte Änderungen, abgelaufene Änderungen, bestätigte Prüfungen, verworfene Prüfungen, abgelaufene Prüfungen und abgeschlossene Läufe. Eine separate Gruppe **Anreicherung** zeigt, wie viele Firmen über Leadfeeder gegenüber dem Web angereichert wurden. |
+
+![Die Registerkarte Verlauf mit dem Zeitraumfilter und der Aktualisierungsschaltfläche -screenshot][img6]
+
+Klicken Sie auf <i class="ph ph-arrow-clockwise" aria-label="Aktualisieren-Symbol"></i>, um die neuesten Einträge abzurufen.
+
 ## Tipps und Fehlerbehebung
 
-Wenn Sie **ablehnen**, wird nichts geschrieben und die Prüfung verworfen.
+**Was passiert, wenn ich ablehne?** Es wird nichts geschrieben; die Prüfung wird verworfen.
 
-Aktivieren, Deaktivieren, Löschen und Stummschalten funktionieren alle wie unter [KI-Agenten einrichten][1] beschrieben. Nur der Eigentümer kann die Instanz ändern oder löschen.
+**Kann ich über mehrere Prüfungen gleichzeitig entscheiden?** Ja. Wählen Sie mehrere ausstehende Prüfungen aus und verwenden Sie **Genehmigen** oder **Ablehnen** im Sammelbereich. Das Genehmigen eines Stapels schreibt jede Änderung in jeder ausgewählten Prüfung gleichzeitig, daher gilt für jede von ihnen derselbe Hinweis "kann nicht rückgängig gemacht werden".
 
-Eine auf Genehmigung wartende Prüfung hat eine begrenzte Lebensdauer, **standardmäßig 30 Tage**. Sobald sie innerhalb von 5 Tagen abläuft, erscheint ein Countdown-Banner auf ihrem Thread. Handeln Sie nicht rechtzeitig, wird sie automatisch verworfen, und der Agent macht weiter. Für eine abgelaufene Prüfung wird nichts geschrieben.
+**Was passiert mit einer Prüfung, die ich nicht rechtzeitig bearbeite?** Eine auf Genehmigung wartende Prüfung hat eine begrenzte Lebensdauer, **standardmäßig 30 Tage**. Sobald sie innerhalb von 5 Tagen abläuft, erscheint ein Countdown-Banner auf ihrem Thread. Handeln Sie nicht rechtzeitig, wird sie automatisch verworfen, und der Agent macht weiter. Für eine abgelaufene Prüfung wird nichts geschrieben.
 
-Verwenden Sie den Statusfilter und die Mehrfachauswahl, um eine umfangreiche Warteschlange abzuarbeiten. Das gleichzeitige Genehmigen oder Ablehnen mehrerer Prüfungen funktioniert wie bei jedem anderen Agenten: Wählen Sie mehrere ausstehende Prüfungen aus und verwenden Sie **Genehmigen** oder **Ablehnen**. Das Genehmigen eines Stapels schreibt jede Änderung in jeder ausgewählten Prüfung gleichzeitig, daher gilt für jede von ihnen derselbe Hinweis "kann nicht rückgängig gemacht werden". Siehe [KI-Agenten einrichten][1].
+**Ich habe die Instanz deaktiviert, und meine ausstehenden Prüfungen sind weg.** Das Deaktivieren einer Instanz verwirft alle auf Genehmigung wartenden Prüfungen, wie unter [KI-Agenten einrichten][1] beschrieben. Genehmigen oder lehnen Sie zuerst ab, was Sie behalten möchten.
+
+Nur der Eigentümer der Instanz kann ihre Einstellungen ändern oder sie löschen.
 
 [1]: /de/ai/learn/set-up-ai-agents
+[3]: #workspace
 
 [img1]: ../../../media/loc/en/ai/data-quality-agent-settings.png
 [img2]: ../../../media/loc/en/ai/data-quality-agent-sources.png
