@@ -1,7 +1,7 @@
 ---
 title: Data Quality Agent
 description: Keep the companies and contacts already in your CRM accurate, complete, and up to date, with every proposed change reviewed and approved by you.
-keywords: ['data quality agent', 'AI agents', 'enrichment', 'GDPR consent', 'bounced email', 'Leadfeeder']
+keywords: ['AI agent', 'enrichment', 'GDPR consent', 'bounced email', 'Leadfeeder']
 author: digitaldiina, Claudia Dias
 date: 09.28.2026
 so_version: 12.5
@@ -17,7 +17,7 @@ audience_tooltip: SuperOffice CRM
 related:
   - Activate agent: /en/ai/learn/set-up-ai-agents
   - Edit settings: /en/ai/learn/set-up-ai-agents#edit
-  - /en/ai/learn/lead-agent
+  - /en/ai/learn/duplicate-agent
   - Other AI services: /en/ai/learn/index
 language: en
 ---
@@ -128,19 +128,9 @@ Click <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i> to pull in
     * All the changes in the review are written to SuperOffice at once.
     * For a GDPR-consent item, approving soft-deletes the contact, and SuperOffice removes it permanently 30 days later.
 
-<Warning>
-**Everything goes through your approval in this release.** Proposed changes are classified by risk: lower-risk fixes are designed to be applied automatically, while higher-risk changes always need your approval.
+You approve or reject everything found for a company as a single decision; there is no per-field approval yet. If you want to adjust what is proposed first, ask the agent in chat before approving. If the only findings for a company are things the agent cannot fix, such as a bounced email with no replacement found, or no contacts at all, the review is informational: **Approve** just acknowledges you have seen it, **Reject** dismisses it, and neither writes anything to SuperOffice.
 
-In this release every change is treated as higher-risk, so all proposed changes wait for your approval before anything is written. A future update will apply the lowest-risk fixes automatically, recorded in the company's Notes, while still sending higher-risk changes for your review.
-</Warning>
-
-<Note>
-**Some reviews do not change anything.** If the only findings for a company are things the agent cannot fix for you, such as a bounced email with no replacement found, or no contacts at all, the review is informational. **Approve** just acknowledges you have seen it, **Reject** dismisses it, and neither writes anything to SuperOffice.
-</Note>
-
-<Note>
-**One decision per company.** In this version you approve or reject everything found for a company as a single decision; there is no per-field approval yet. If you want to adjust what is proposed first, ask the agent in chat before approving.
-</Note>
+Every change is treated as higher-risk in this release, so all proposed changes wait for your approval before anything is written. A future update will apply the lowest-risk fixes automatically, recorded in the company's Notes, while still sending higher-risk changes for your review.
 
 ## Look into a specific company
 
