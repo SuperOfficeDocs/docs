@@ -88,29 +88,21 @@ U bent automatisch de goedkeurder voor de records die de agent beoordeelt, en u 
 
 * **Leadfeeder:** gebruikt om bedrijven te verifiëren en verrijken. Standaard ingeschakeld, altijd gefactureerd met **2x credits** bij gebruik, via het eigen Leadfeeder-account van SuperOffice.
 
-1. Kies of u **Leadfeeder** gebruikt om bedrijven te verrijken, of alleen op de ingebouwde registers vertrouwt.
+1. Kies of u **Leadfeeder** gebruikt om bedrijven te verrijken, of alleen op de ingebouwde registers vertrouwt. Standaard ingeschakeld.
 
 1. Klik op **Opslaan**.
 
-    De instantie wordt geactiveerd, verschijnt onder **Mijn agents** op de overzichtspagina en begint te werken op de volgende dagelijkse run.
+    De instantie wordt geactiveerd, verschijnt onder **Mijn agents** in de zijbalk Agents en begint te werken op de volgende dagelijkse run.
 
-## De werkruimte van de agent
-
-De werkruimte van Data Quality Agent heeft drie tabbladen: **Chat**, **Geschiedenis** en **Prestaties**.
-
-| Tabblad | Beschrijving |
-|---|---|
-| Chat | Een **Algemene chat**-thread plus één thread per bedrijf dat de agent heeft beoordeeld. |
-| Geschiedenis | Een gedetailleerd logboek van verwerkte bedrijven, voorgestelde, goedgekeurde en toegepaste wijzigingen, en overgeslagen items, met de reden. Selecteer een periode (laatste 24 uur, 7, 30 of 90 dagen). Lange geschiedenissen worden gepagineerd. |
-| Prestaties | Toont hoe de instantie presteert over een periode (laatste 7, 30 of 90 dagen): wijzigingen ter goedkeuring verzonden, goedgekeurde wijzigingen, afgekeurde wijzigingen, verlopen wijzigingen, bevestigde beoordelingen, afgewezen beoordelingen, verlopen beoordelingen en voltooide runs. Een afzonderlijke groep **Verrijking** splitst uit hoeveel bedrijven zijn verrijkt via Leadfeeder versus het web. |
-
-![Het tabblad Geschiedenis, met het filter Periode en de vernieuwknop -screenshot][img6]
-
-Klik op <i class="ph ph-arrow-clockwise" aria-label="Vernieuwpictogram"></i> om de meest recente items op te halen.
+1. Selecteer **Naar instantie** om uw nieuwe Data Quality Agent te openen en [aan de slag te gaan][3].
 
 ## Wijzigingen beoordelen en goedkeuren
 
-1. Selecteer in het tabblad **Chat** een beoordelingsthread van een bedrijf (<i class="ph ph-buildings" aria-label="Bedrijfspictogram"></i>) uit de lijst.
+1. Selecteer het tabblad **Chat**.
+
+1. Klik op <i class="ph ph-sliders-horizontal" aria-label="Filterpictogram"></i> en selecteer **In behandeling**.
+
+1. Kies een beoordelingsthread van een bedrijf (<i class="ph ph-buildings" aria-label="Bedrijfspictogram"></i>) uit de lijst.
 
 1. Beoordeel de samenvattingstegels, **Velden om bij te werken**, **Nieuwe contactpersonen**, **Bestaande contactpersonen** en **Handmatige acties**, en de tabel **Bij te werken velden**: Veld, Huidige waarde, Voorgestelde waarde en Bron, bijvoorbeeld een handelsregister, de homepage van het bedrijf, of Leadfeeder.
 
@@ -145,17 +137,34 @@ U keurt alles wat voor een bedrijf is gevonden in één keer goed of af; er is n
 
 1. Als de agent op deze manier echte wijzigingen vindt om voor te stellen, maakt de agent hiervoor een normale beoordelingstaak aan, precies zoals bij een bedrijf dat is gevonden tijdens de dagelijkse geplande run. Beoordeel deze zoals hierboven beschreven.
 
+## De werkruimte van de agent {#workspace}
+
+De werkruimte van Data Quality Agent heeft drie tabbladen: **Chat**, **Geschiedenis** en **Prestaties**.
+
+| Tabblad | Beschrijving |
+|---|---|
+| Chat | Een **Algemene chat**-thread plus één thread per bedrijf dat de agent heeft beoordeeld. |
+| Geschiedenis | Een gedetailleerd logboek van verwerkte bedrijven, voorgestelde, goedgekeurde en toegepaste wijzigingen, en overgeslagen items, met de reden. Selecteer een **Periode** (laatste 24 uur, 7, 30 of 90 dagen) om dit te beperken. Lange geschiedenissen worden gepagineerd. |
+| Prestaties | Toont hoe de instantie presteert over een periode (laatste 7, 30 of 90 dagen): wijzigingen ter goedkeuring verzonden, goedgekeurde wijzigingen, afgekeurde wijzigingen, verlopen wijzigingen, bevestigde beoordelingen, afgewezen beoordelingen, verlopen beoordelingen en voltooide runs. Een afzonderlijke groep **Verrijking** splitst uit hoeveel bedrijven zijn verrijkt via Leadfeeder versus het web. |
+
+![Het tabblad Geschiedenis, met het filter Periode en de vernieuwknop -screenshot][img6]
+
+Klik op <i class="ph ph-arrow-clockwise" aria-label="Vernieuwpictogram"></i> om de meest recente items op te halen.
+
 ## Tips en probleemoplossing
 
-Als u **afkeurt**, wordt er niets geschreven en wordt de beoordeling verwijderd.
+**Wat gebeurt er als ik afkeur?** Er wordt niets geschreven; de beoordeling wordt verwijderd.
 
-Activeren, deactiveren, verwijderen en dempen werken allemaal zoals beschreven in [AI-agents instellen][1]. Alleen de eigenaar kan de instantie wijzigen of verwijderen.
+**Kan ik meerdere beoordelingen in één keer afhandelen?** Ja. Selecteer meerdere openstaande beoordelingen en gebruik **Goedkeuren** of **Afkeuren** in het bulkpaneel. Het goedkeuren van een batch schrijft elke wijziging in elke geselecteerde beoordeling in één keer, dus dezelfde waarschuwing "kan niet ongedaan worden gemaakt" geldt voor elk van deze wijzigingen.
 
-Een beoordeling die op goedkeuring wacht, heeft een beperkte levensduur, **standaard 30 dagen**. Zodra deze binnen 5 dagen voor het verlopen zit, verschijnt een aftelbanner op de thread. Als u niet op tijd actie onderneemt, wordt deze automatisch verwijderd en gaat de agent verder. Er wordt niets geschreven voor een verlopen beoordeling.
+**Wat gebeurt er met een beoordeling waar ik niet op tijd bij ben?** Een beoordeling die op goedkeuring wacht, heeft een beperkte levensduur, **standaard 30 dagen**. Zodra deze binnen 5 dagen voor het verlopen zit, verschijnt een aftelbanner op de thread. Als u niet op tijd actie onderneemt, wordt deze automatisch verwijderd en gaat de agent verder. Er wordt niets geschreven voor een verlopen beoordeling.
 
-Gebruik het statusfilter en multi-select om een drukke wachtrij te doorlopen. Meerdere beoordelingen in één keer goedkeuren of afkeuren werkt net als bij elke andere agent: selecteer meerdere openstaande beoordelingen en gebruik **Goedkeuren** of **Afkeuren**. Het goedkeuren van een batch schrijft elke wijziging in elke geselecteerde beoordeling in één keer, dus dezelfde waarschuwing "kan niet ongedaan worden gemaakt" geldt voor elk van deze wijzigingen. Zie [AI-agents instellen][1].
+**Ik heb de instantie gedeactiveerd en mijn openstaande beoordelingen zijn verdwenen.** Het deactiveren van een instantie verwijdert alle beoordelingen die nog op goedkeuring wachten, zoals beschreven in [AI-agents instellen][1]. Keur eerst goed of af wat u wilt behouden als u dit wilt bewaren.
+
+Alleen de eigenaar van de instantie kan de instellingen wijzigen of de instantie verwijderen.
 
 [1]: /nl/ai/learn/set-up-ai-agents
+[3]: #workspace
 
 [img1]: ../../../media/loc/en/ai/data-quality-agent-settings.png
 [img2]: ../../../media/loc/en/ai/data-quality-agent-sources.png

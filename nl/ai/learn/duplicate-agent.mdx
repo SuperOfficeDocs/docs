@@ -48,7 +48,7 @@ De agent stelt voor; u beslist. Er worden geen records samengevoegd of gekoppeld
 
 De agent draait **Dagelijks**, één keer per dag op een door het systeem toegewezen tijdstip.
 
-**Er is geen dagelijkse limiet op het aantal bedrijven dat wordt gecontroleerd.** Hier is niets te configureren. De agent houdt tot 50 suggesties van elk type (bedrijfssamenvoegingen, contactsamenvoegingen en contactpersonen zonder bedrijf) klaar in afwachting van uw beslissing. Wanneer u genoeg ruimte vrijmaakt, vult de volgende geplande scan dat type weer aan tot 50, als er meer te vinden is.
+Er is geen dagelijkse limiet op het aantal bedrijven dat wordt gecontroleerd. De agent houdt tot 50 suggesties van elk type (bedrijfssamenvoegingen, contactsamenvoegingen en contactpersonen zonder bedrijf) klaar in afwachting van uw beslissing. Zodra u genoeg goedkeurt of afkeurt om ruimte vrij te maken, vult de volgende geplande scan dat type weer aan tot 50, als er meer te vinden is.
 
 ## Agent activeren {#setup}
 
@@ -78,27 +78,15 @@ Het instellen is één enkele stap. U bent automatisch de goedkeurder, en u kunt
 
 1. Klik op **Opslaan**.
 
-    De instantie wordt geactiveerd, verschijnt onder **Mijn agents** op de overzichtspagina en begint te werken op de volgende dagelijkse run.
+    De instantie wordt geactiveerd, verschijnt onder **Mijn agents** in de zijbalk Agents en begint te werken op de volgende dagelijkse run.
 
-1. Klik op **Naar instantie** in het bevestigingsvenster om te chatten met uw Duplicate Agent.
+1. Selecteer **Naar instantie** om uw nieuwe Duplicate Agent te openen en [aan de slag te gaan][3].
 
-## De werkruimte van de agent
-
-De werkruimte van Duplicate Agent heeft drie tabbladen: **Chat**, **Geschiedenis** en **Prestaties**.
-
-| Tabblad | Beschrijving |
-|---|---|
-| Chat | Een **Algemene chat**-thread plus één thread per suggestie die de agent heeft aangedragen. |
-| Geschiedenis | Een gedetailleerd logboek van gecontroleerde bedrijven, aangedragen suggesties, goedgekeurde samenvoegingen en koppelingen, en overgeslagen items, met de reden. Selecteer een periode (laatste 24 uur, 7, 30 of 90 dagen). Lange geschiedenissen worden gepagineerd. |
-| Prestaties | Toont hoe de agent presteert over een periode (laatste 7, 30 of 90 dagen): voorgestelde bedrijfsduplicaten, voorgestelde contactpersonen zonder bedrijf, voorgestelde persoonsduplicaten, goedgekeurde samenvoegingen, afgekeurde duplicaten, verlopen duplicaten en voltooide runs. |
-
-![Het tabblad Geschiedenis, met het filter Periode en de vernieuwknop. Een uitgevouwen item, met de bijbehorende workflow-ID en run-ID -screenshot][img5]
-
-Klik op <i class="ph ph-arrow-clockwise" aria-label="Vernieuwpictogram"></i> om de meest recente items op te halen. Klik op een item om het uit te vouwen en de volledige workflow- en rundetails te bekijken.
+Selecteer voordat u begint met beoordelen het tabblad **Chat**, klik daarna op <i class="ph ph-sliders-horizontal" aria-label="Filterpictogram"></i> en selecteer **In behandeling** om een drukke wachtrij te beperken tot suggesties die op uw beslissing wachten.
 
 ## Samenvoegingssuggestie: dubbele bedrijven {#merge-companies}
 
-1. Selecteer in het tabblad **Chat** een bedrijfssamenvoegingssuggestie (<i class="ph ph-buildings" aria-label="Bedrijfspictogram"></i>) uit de lijst.
+1. Kies een bedrijfssamenvoegingssuggestie (<i class="ph ph-buildings" aria-label="Bedrijfspictogram"></i>) uit de lijst.
 
 1. Beoordeel de naast elkaar geplaatste verwijderen/behouden **bedrijfsvergelijking** en wat er gebeurt als u de samenvoeging goedkeurt.
 
@@ -125,7 +113,7 @@ Klik op <i class="ph ph-arrow-clockwise" aria-label="Vernieuwpictogram"></i> om 
 
 ## Samenvoegingssuggestie: dubbele contactpersonen {#merge-contacts}
 
-1. Selecteer in het tabblad **Chat** een suggestie voor dubbele contactpersonen (<i class="ph ph-user-circle" aria-label="Contactpersoonpictogram"></i>) uit de lijst.
+1. Kies een suggestie voor dubbele contactpersonen (<i class="ph ph-user-circle" aria-label="Contactpersoonpictogram"></i>) uit de lijst.
 
 1. Beoordeel de **mogelijk dubbele personen**: het bedrijf waartoe de contactpersonen behoren, een beoordeling van de **Matchbetrouwbaarheid** (1-5 sterren), waarom ze dezelfde persoon lijken te zijn, en waarop de agent heeft gematcht, bijvoorbeeld een identieke volledige naam.
 
@@ -149,7 +137,7 @@ Klik op <i class="ph ph-arrow-clockwise" aria-label="Vernieuwpictogram"></i> om 
 
 De agent zoekt naar **contactpersonen zonder bedrijf**, personen zonder bedrijf waarvan het e-mailadres het domein van een bedrijf gebruikt, en matcht elk met het bedrijf dat dat domein bezit. Als het domein niet duidelijk naar één bedrijf verwijst, zoekt de agent ook naar een bedrijf met een sterk overeenkomende naam en biedt deze in plaats daarvan aan.
 
-1. Selecteer in het tabblad **Chat** een suggestie voor een contactpersoon zonder bedrijf (<i class="ph ph-user-circle" aria-label="Contactpersoonpictogram"></i>) uit de lijst.
+1. Kies een suggestie voor een contactpersoon zonder bedrijf (<i class="ph ph-user-circle" aria-label="Contactpersoonpictogram"></i>) uit de lijst.
 
 1. Beoordeel de secties **Contactpersoon** en **Voorgesteld bedrijf**, en waarom de agent deze koppeling voorstelt.
 
@@ -169,17 +157,34 @@ De agent zoekt naar **contactpersonen zonder bedrijf**, personen zonder bedrijf 
 
 1. Als de agent op deze manier een echt duplicaat of een contactpersoon zonder bedrijf vindt, maakt de agent hiervoor een normale goedkeuringstaak aan, precies zoals bij een taak die is gevonden tijdens de dagelijkse geplande run. Beoordeel deze zoals hierboven beschreven.
 
+## De werkruimte van de agent {#workspace}
+
+De werkruimte van Duplicate Agent heeft drie tabbladen: **Chat**, **Geschiedenis** en **Prestaties**.
+
+| Tabblad | Beschrijving |
+|---|---|
+| Chat | Een **Algemene chat**-thread plus één thread per suggestie die de agent heeft aangedragen. |
+| Geschiedenis | Een gedetailleerd logboek van gecontroleerde bedrijven, aangedragen suggesties, goedgekeurde samenvoegingen en koppelingen, en overgeslagen items, met de reden. Selecteer een **Periode** (laatste 24 uur, 7, 30 of 90 dagen) om dit te beperken. Lange geschiedenissen worden gepagineerd. |
+| Prestaties | Toont hoe de agent presteert over een periode (laatste 7, 30 of 90 dagen): voorgestelde bedrijfsduplicaten, voorgestelde contactpersonen zonder bedrijf, voorgestelde persoonsduplicaten, goedgekeurde samenvoegingen, afgekeurde duplicaten, verlopen duplicaten en voltooide runs. |
+
+![Het tabblad Geschiedenis, met het filter Periode en de vernieuwknop. Een uitgevouwen item, met de bijbehorende workflow-ID en run-ID -screenshot][img5]
+
+Klik op <i class="ph ph-arrow-clockwise" aria-label="Vernieuwpictogram"></i> om de meest recente items op te halen. Klik op een item om het uit te vouwen en de volledige workflow- en rundetails te bekijken.
+
 ## Tips en probleemoplossing
 
-Als u een samenvoeging **afkeurt** of een suggestie **negeert**, verandert er niets: beide records blijven ongewijzigd.
+**Wat gebeurt er als ik afkeur of negeer?** Er verandert niets; beide records blijven ongewijzigd.
 
-Activeren, deactiveren, verwijderen en dempen werken allemaal zoals beschreven in [AI-agents instellen][1].
+**Kan ik meerdere suggesties in één keer afhandelen?** Ja. Selecteer meerdere openstaande suggesties en gebruik **Goedkeuren** of **Afkeuren** in het bulkpaneel, op dezelfde manier als bij elke andere agent.
 
-Een suggestie die op uw beslissing wacht, heeft een beperkte levensduur, **standaard 30 dagen**. Zodra deze binnen 5 dagen voor het verlopen zit, verschijnt een aftelbanner op de thread. Als u niet op tijd actie onderneemt, wordt deze verwijderd en gaat de agent verder. Er verandert niets voor een verlopen suggestie, en hetzelfde paar kan later opnieuw naar boven komen bij een volgende controle.
+**Wat gebeurt er met een suggestie waar ik niet op tijd bij ben?** Een suggestie die op uw beslissing wacht, heeft een beperkte levensduur, **standaard 30 dagen**. Zodra deze binnen 5 dagen voor het verlopen zit, verschijnt een aftelbanner op de thread. Als u niet op tijd actie onderneemt, wordt deze verwijderd en gaat de agent verder. Er verandert niets voor een verlopen suggestie, en hetzelfde paar kan later opnieuw naar boven komen bij een volgende controle.
 
-Gebruik het statusfilter en multi-select om een drukke wachtrij te doorlopen. Meerdere suggesties in één keer beoordelen werkt net als bij elke andere agent: selecteer meerdere openstaande suggesties en gebruik **Goedkeuren** of **Afkeuren**. Zie [AI-agents instellen][1].
+**Ik heb de instantie gedeactiveerd en mijn openstaande suggesties zijn verdwenen.** Het deactiveren van een instantie verwijdert alle suggesties die nog op goedkeuring wachten, zoals beschreven in [AI-agents instellen][1]. Keur eerst goed of af wat u wilt behouden als u dit wilt bewaren.
+
+Alleen de eigenaar van de instantie kan de instellingen wijzigen of de instantie verwijderen.
 
 [1]: /nl/ai/learn/set-up-ai-agents
+[3]: #workspace
 
 [img1]: ../../../media/loc/en/ai/duplicate-agent-settings.png
 [img2]: ../../../media/loc/en/ai/duplicate-company-comparison.png
