@@ -88,29 +88,21 @@ Du er automatisk godkjenner for postene den gjennomgår, og du kan opprette én 
 
 * **Leadfeeder:** brukes til å verifisere og berike firmaer. På som standard, alltid fakturert med **2x kreditter** når det brukes, ved bruk av SuperOffices egen Leadfeeder-konto.
 
-1. Velg om du vil bruke **Leadfeeder** til å berike firmaer, eller stole på de innebygde registrene alene.
+1. Velg om du vil bruke **Leadfeeder** til å berike firmaer, eller stole på de innebygde registrene alene. På som standard.
 
 1. Klikk **Lagre**.
 
-    Instansen aktiveres, vises under **Mine agenter** på Oversikt-siden, og begynner å jobbe på sin neste daglige kjøring.
+    Instansen aktiveres, vises under **Mine agenter** i Agenter-sidepanelet, og begynner å jobbe på sin neste daglige kjøring.
 
-## Agentens arbeidsområde
-
-Data Quality Agents arbeidsområde har tre faner: **Chat**, **Historikk** og **Ytelse**.
-
-| Fane | Beskrivelse |
-|---|---|
-| Chat | En **Generell chat**-tråd, pluss én tråd per firma agenten har gjennomgått. |
-| Historikk | En detaljert logg over behandlede firmaer, foreslåtte, godkjente og anvendte endringer, og eventuelle hoppede elementer, med begrunnelse. Velg en periode (siste 24 timer, 7, 30 eller 90 dager). Lange historikker vises sidevis. |
-| Ytelse | Viser hvordan instansen har prestert over en periode (siste 7, 30 eller 90 dager): endringer sendt til godkjenning, godkjente endringer, avviste endringer, utløpte endringer, bekreftede gjennomganger, avviste gjennomganger, utløpte gjennomganger og fullførte kjøringer. En egen **Berikelse**-gruppe viser hvor mange firmaer som ble beriket via Leadfeeder versus nettet. |
-
-![Historikk-fanen, med periodefilteret og oppdateringsknappen -screenshot][img6]
-
-Klikk <i class="ph ph-arrow-clockwise" aria-label="Oppdater-ikon"></i> for å hente inn de nyeste oppføringene.
+1. Velg **Gå til instans** for å åpne din nye Data Quality Agent og [komme i gang][3].
 
 ## Gjennomgå og godkjenn endringer
 
-1. I **Chat**-fanen, velg en firmagjennomgangstråd (<i class="ph ph-buildings" aria-label="Firma-ikon"></i>) fra listen.
+1. Velg fanen **Chat**.
+
+1. Klikk på <i class="ph ph-sliders-horizontal" aria-label="Filter-ikon"></i> og velg **Venter**.
+
+1. Velg en firmagjennomgangstråd (<i class="ph ph-buildings" aria-label="Firma-ikon"></i>) fra listen.
 
 1. Gjennomgå sammendragsflisene, **Felt å oppdatere**, **Nye kontakter**, **Eksisterende kontakter** og **Manuelle handlinger**, og tabellen **Felt som skal oppdateres**: Felt, Nåværende verdi, Foreslått verdi og Kilde, for eksempel et foretaksregister, firmaets hjemmeside eller Leadfeeder.
 
@@ -145,17 +137,34 @@ Du godkjenner eller avviser alt som er funnet for et firma som én samlet beslut
 
 1. Hvis den finner reelle endringer å foreslå på denne måten, oppretter den en normal gjennomgangsoppgave for det, akkurat som et firma funnet på den daglige planlagte kjøringen. Gjennomgå det som beskrevet ovenfor.
 
+## Agentens arbeidsområde {#workspace}
+
+Data Quality Agents arbeidsområde har tre faner: **Chat**, **Historikk** og **Ytelse**.
+
+| Fane | Beskrivelse |
+|---|---|
+| Chat | En **Generell chat**-tråd, pluss én tråd per firma agenten har gjennomgått. |
+| Historikk | En detaljert logg over behandlede firmaer, foreslåtte, godkjente og anvendte endringer, og eventuelle hoppede elementer, med begrunnelse. Velg en **Periode** (siste 24 timer, 7, 30 eller 90 dager) for å begrense den. Lange historikker vises sidevis. |
+| Ytelse | Viser hvordan instansen har prestert over en periode (siste 7, 30 eller 90 dager): endringer sendt til godkjenning, godkjente endringer, avviste endringer, utløpte endringer, bekreftede gjennomganger, avviste gjennomganger, utløpte gjennomganger og fullførte kjøringer. En egen **Berikelse**-gruppe viser hvor mange firmaer som ble beriket via Leadfeeder versus nettet. |
+
+![Historikk-fanen, med periodefilteret og oppdateringsknappen -screenshot][img6]
+
+Klikk <i class="ph ph-arrow-clockwise" aria-label="Oppdater-ikon"></i> for å hente inn de nyeste oppføringene.
+
 ## Tips og feilsøking
 
-Hvis du **avviser**, skrives ingenting, og gjennomgangen forkastes.
+**Hva skjer hvis jeg avviser?** Ingenting skrives; gjennomgangen forkastes.
 
-Aktivering, deaktivering, sletting og demping fungerer alle som beskrevet i [Sett opp AI-agenter][1]. Bare eieren kan endre eller slette instansen.
+**Kan jeg ta beslutning om flere gjennomganger samtidig?** Ja. Velg flere ventende gjennomganger og bruk **Godkjenn** eller **Avvis** fra fellespanelet. Å godkjenne en batch skriver alle endringer i alle valgte gjennomganger samtidig, så samme "kan ikke reverseres"-forbehold gjelder for hver av dem.
 
-En gjennomgang som venter på godkjenning har en begrenset levetid, **30 dager som standard**. Når den er innen 5 dager fra å utløpe, vises et nedtellingsbanner på tråden. Hvis du ikke handler i tide, forkastes den automatisk, og agenten fortsetter. Ingenting skrives for en utløpt gjennomgang.
+**Hva skjer med en gjennomgang jeg ikke får behandlet i tide?** En gjennomgang som venter på godkjenning har en begrenset levetid, **30 dager som standard**. Når den er innen 5 dager fra å utløpe, vises et nedtellingsbanner på tråden. Hvis du ikke handler i tide, forkastes den automatisk, og agenten fortsetter. Ingenting skrives for en utløpt gjennomgang.
 
-Bruk statusfilteret og flervalg for å arbeide gjennom en travel kø. Å godkjenne eller avvise flere gjennomganger samtidig fungerer på samme måte som for enhver annen agent: velg flere ventende gjennomganger og bruk **Godkjenn** eller **Avvis**. Å godkjenne en batch skriver alle endringer i alle valgte gjennomganger samtidig, så samme "kan ikke reverseres"-forbehold gjelder for hver av dem. Se [Sett opp AI-agenter][1].
+**Jeg deaktiverte instansen, og de ventende gjennomgangene mine er borte.** Å deaktivere en instans forkaster alle gjennomganger som venter på godkjenning, som beskrevet i [Sett opp AI-agenter][1]. Godkjenn eller avvis det du trenger først, hvis du vil beholde det.
+
+Bare instansens eier kan endre innstillingene eller slette den.
 
 [1]: /no/ai/learn/set-up-ai-agents
+[3]: #workspace
 
 [img1]: ../../../media/loc/en/ai/data-quality-agent-settings.png
 [img2]: ../../../media/loc/en/ai/data-quality-agent-sources.png

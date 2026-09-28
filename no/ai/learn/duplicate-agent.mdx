@@ -48,7 +48,7 @@ Agenten foreslår; du bestemmer. Ingen poster slås sammen eller kobles før du 
 
 Agenten kjører **Daglig**, én gang om dagen på et systemtildelt tidspunkt.
 
-**Det er ingen daglig grense for hvor mange firmaer den kontrollerer.** Det er ingenting å konfigurere her. Agenten holder opptil 50 forslag av hver type (firmasammenslåinger, kontaktsammenslåinger og foreldreløse kontakter) ventende på din beslutning. Når du frigjør nok plass, fyller neste planlagte skanning den typen opp mot 50 igjen, hvis det finnes mer å finne.
+Det er ingen daglig grense for hvor mange firmaer den kontrollerer. Agenten holder opptil 50 forslag av hver type (firmasammenslåinger, kontaktsammenslåinger og foreldreløse kontakter) ventende på din beslutning. Når du godkjenner eller avviser nok til å frigjøre plass, fyller neste planlagte skanning den typen opp mot 50 igjen, hvis det finnes mer å finne.
 
 ## Aktiver agenten {#setup}
 
@@ -78,27 +78,15 @@ Oppsett er ett enkelt trinn. Du er automatisk godkjenner, og du kan opprette én
 
 1. Klikk **Lagre**.
 
-    Instansen aktiveres, vises under **Mine agenter** på Oversikt-siden, og begynner å jobbe på sin neste daglige kjøring.
+    Instansen aktiveres, vises under **Mine agenter** i Agenter-sidepanelet, og begynner å jobbe på sin neste daglige kjøring.
 
-1. Klikk **Gå til instans** i bekreftelsesdialogen for å chatte med din Duplicate Agent.
+1. Velg **Gå til instans** for å åpne din nye Duplicate Agent og [komme i gang][3].
 
-## Agentens arbeidsområde
-
-Duplicate Agents arbeidsområde har tre faner: **Chat**, **Historikk** og **Ytelse**.
-
-| Fane | Beskrivelse |
-|---|---|
-| Chat | En **Generell chat**-tråd, pluss én tråd per forslag agenten har reist. |
-| Historikk | En detaljert logg over kontrollerte firmaer, reiste forslag, godkjente sammenslåinger og koblinger, og eventuelle hoppede elementer, med begrunnelse. Velg en periode (siste 24 timer, 7, 30 eller 90 dager). Lange historikker vises sidevis. |
-| Ytelse | Viser hvordan agenten har prestert over en periode (siste 7, 30 eller 90 dager): foreslåtte firmaduplikater, foreslåtte foreldreløse kontakter, foreslåtte personduplikater, godkjente sammenslåinger, avviste duplikater, utløpte duplikater og fullførte kjøringer. |
-
-![Historikk-fanen, med periodefilteret og oppdateringsknappen. En oppføring utvidet, som viser dens arbeidsflyt-ID og kjøre-ID -screenshot][img5]
-
-Klikk <i class="ph ph-arrow-clockwise" aria-label="Oppdater-ikon"></i> for å hente inn de nyeste oppføringene. Klikk en oppføring for å utvide den og se hele arbeidsflyten og kjøredetaljene.
+Før du gjennomgår, velg fanen **Chat**, klikk deretter på <i class="ph ph-sliders-horizontal" aria-label="Filter-ikon"></i> og velg **Venter** for å begrense en travel kø til forslag som venter på din beslutning.
 
 ## Sammenslåingsforslag: duplikate firmaer {#merge-companies}
 
-1. I **Chat**-fanen, velg et firmasammenslåingsforslag (<i class="ph ph-buildings" aria-label="Firma-ikon"></i>) fra listen.
+1. Velg et firmasammenslåingsforslag (<i class="ph ph-buildings" aria-label="Firma-ikon"></i>) fra listen.
 
 1. Gjennomgå side-om-side fjern/behold **firmasammenligningen**, og hva som skjer hvis du godkjenner sammenslåingen.
 
@@ -125,7 +113,7 @@ Klikk <i class="ph ph-arrow-clockwise" aria-label="Oppdater-ikon"></i> for å he
 
 ## Sammenslåingsforslag: duplikate kontakter {#merge-contacts}
 
-1. I **Chat**-fanen, velg et duplikat-kontaktforslag (<i class="ph ph-user-circle" aria-label="Kontakt-ikon"></i>) fra listen.
+1. Velg et duplikat-kontaktforslag (<i class="ph ph-user-circle" aria-label="Kontakt-ikon"></i>) fra listen.
 
 1. Gjennomgå **mulige duplikate personer**: firmaet kontaktene tilhører, en vurdering av **treffsikkerhet** (1-5 stjerner), hvorfor de virker å være samme person, og hva agenten matchet på, for eksempel et identisk fullt navn.
 
@@ -149,7 +137,7 @@ Klikk <i class="ph ph-arrow-clockwise" aria-label="Oppdater-ikon"></i> for å he
 
 Agenten ser etter **foreldreløse kontakter**, personer uten firma hvis e-postadresse bruker et firmas domene, og matcher hver med firmaet som eier det domenet. Når domenet ikke tydelig peker til ett firma, ser den også etter et firma hvis navn er en nær match, og tilbyr det i stedet.
 
-1. I **Chat**-fanen, velg et foreldreløs-kontaktforslag (<i class="ph ph-user-circle" aria-label="Kontakt-ikon"></i>) fra listen.
+1. Velg et foreldreløs-kontaktforslag (<i class="ph ph-user-circle" aria-label="Kontakt-ikon"></i>) fra listen.
 
 1. Gjennomgå seksjonene **Kontakt** og **Foreslått firma**, og hvorfor agenten foreslår koblingen.
 
@@ -169,17 +157,34 @@ Agenten ser etter **foreldreløse kontakter**, personer uten firma hvis e-postad
 
 1. Hvis den finner en reell duplikat eller foreldreløs kontakt på denne måten, oppretter den en normal godkjenningsoppgave for det, akkurat som en funnet på den daglige planlagte kjøringen. Gjennomgå det som beskrevet ovenfor.
 
+## Agentens arbeidsområde {#workspace}
+
+Duplicate Agents arbeidsområde har tre faner: **Chat**, **Historikk** og **Ytelse**.
+
+| Fane | Beskrivelse |
+|---|---|
+| Chat | En **Generell chat**-tråd, pluss én tråd per forslag agenten har reist. |
+| Historikk | En detaljert logg over kontrollerte firmaer, reiste forslag, godkjente sammenslåinger og koblinger, og eventuelle hoppede elementer, med begrunnelse. Velg en **Periode** (siste 24 timer, 7, 30 eller 90 dager) for å begrense den. Lange historikker vises sidevis. |
+| Ytelse | Viser hvordan agenten har prestert over en periode (siste 7, 30 eller 90 dager): foreslåtte firmaduplikater, foreslåtte foreldreløse kontakter, foreslåtte personduplikater, godkjente sammenslåinger, avviste duplikater, utløpte duplikater og fullførte kjøringer. |
+
+![Historikk-fanen, med periodefilteret og oppdateringsknappen. En oppføring utvidet, som viser dens arbeidsflyt-ID og kjøre-ID -screenshot][img5]
+
+Klikk <i class="ph ph-arrow-clockwise" aria-label="Oppdater-ikon"></i> for å hente inn de nyeste oppføringene. Klikk en oppføring for å utvide den og se hele arbeidsflyten og kjøredetaljene.
+
 ## Tips og feilsøking
 
-Hvis du **avviser** en sammenslåing eller **ignorerer** et forslag, endres ingenting: begge postene beholdes som de er.
+**Hva skjer hvis jeg avviser eller ignorerer?** Ingenting endres; begge postene beholdes som de er.
 
-Aktivering, deaktivering, sletting og demping fungerer alle som beskrevet i [Sett opp AI-agenter][1].
+**Kan jeg ta beslutning om flere forslag samtidig?** Ja. Velg flere ventende forslag og bruk **Godkjenn** eller **Avvis** fra fellespanelet, på samme måte som for enhver annen agent.
 
-Et forslag som venter på din beslutning har en begrenset levetid, **30 dager som standard**. Når det er innen 5 dager fra å utløpe, vises et nedtellingsbanner på tråden. Hvis du ikke handler i tide, forkastes det, og agenten fortsetter. Ingenting endres for et utløpt forslag, og samme par kan bli foreslått på nytt ved en senere kontroll.
+**Hva skjer med et forslag jeg ikke får behandlet i tide?** Et forslag som venter på din beslutning har en begrenset levetid, **30 dager som standard**. Når det er innen 5 dager fra å utløpe, vises et nedtellingsbanner på tråden. Hvis du ikke handler i tide, forkastes det, og agenten fortsetter. Ingenting endres for et utløpt forslag, og samme par kan bli foreslått på nytt ved en senere kontroll.
 
-Bruk statusfilteret og flervalg for å arbeide gjennom en travel kø. Å ta beslutning om flere forslag samtidig fungerer på samme måte som for enhver annen agent: velg flere ventende forslag og bruk **Godkjenn** eller **Avvis**. Se [Sett opp AI-agenter][1].
+**Jeg deaktiverte instansen, og de ventende forslagene mine er borte.** Å deaktivere en instans forkaster alle forslag som venter på godkjenning, som beskrevet i [Sett opp AI-agenter][1]. Godkjenn eller avvis det du trenger først, hvis du vil beholde dem.
+
+Bare instansens eier kan endre innstillingene eller slette den.
 
 [1]: /no/ai/learn/set-up-ai-agents
+[3]: #workspace
 
 [img1]: ../../../media/loc/en/ai/duplicate-agent-settings.png
 [img2]: ../../../media/loc/en/ai/duplicate-company-comparison.png
