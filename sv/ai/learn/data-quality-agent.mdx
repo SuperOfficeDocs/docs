@@ -88,29 +88,21 @@ Du är automatiskt godkännare för de poster den granskar, och du kan skapa en 
 
 * **Leadfeeder:** används för att verifiera och berika företag. På som standard, debiteras alltid med **2x krediter** vid användning, via SuperOffice eget Leadfeeder-konto.
 
-1. Välj om du vill använda **Leadfeeder** för att berika företag, eller endast förlita dig på de inbyggda registren.
+1. Välj om du vill använda **Leadfeeder** för att berika företag, eller endast förlita dig på de inbyggda registren. På som standard.
 
 1. Klicka på **Spara**.
 
-    Instansen aktiveras, visas under **Mina agenter** på översiktssidan och börjar arbeta på sin nästa dagliga körning.
+    Instansen aktiveras, visas under **Mina agenter** i Agenter-sidofältet och börjar arbeta på sin nästa dagliga körning.
 
-## Agentens arbetsyta
-
-Data Quality Agents arbetsyta har tre flikar: **Chatt**, **Historik** och **Prestanda**.
-
-| Flik | Beskrivning |
-|---|---|
-| Chatt | En **Allmän chatt**-tråd plus en tråd per företag agenten har granskat. |
-| Historik | En detaljerad logg över behandlade företag, föreslagna, godkända och tillämpade ändringar, och eventuella hoppade poster, med orsak. Välj en period (senaste 24 timmarna, 7, 30 eller 90 dagar). Långa historiker delas upp i sidor. |
-| Prestanda | Visar hur instansen har presterat under en period (senaste 7, 30 eller 90 dagarna): ändringar skickade för godkännande, godkända ändringar, avvisade ändringar, förfallna ändringar, bekräftade granskningar, avfärdade granskningar, förfallna granskningar och slutförda körningar. En separat **Berikning**-grupp visar hur många företag som berikades via Leadfeeder jämfört med webben. |
-
-![Fliken Historik, med filtret Period och uppdateringsknappen -screenshot][img6]
-
-Klicka på <i class="ph ph-arrow-clockwise" aria-label="Uppdatera-ikon"></i> för att hämta de senaste posterna.
+1. Välj **Gå till instans** för att öppna din nya Data Quality Agent och [komma igång][3].
 
 ## Granska och godkänn ändringar
 
-1. I fliken **Chatt** väljer du en granskningstråd för ett företag (<i class="ph ph-buildings" aria-label="Företag-ikon"></i>) från listan.
+1. Välj fliken **Chatt**.
+
+1. Klicka på <i class="ph ph-sliders-horizontal" aria-label="Filter-ikon"></i> och välj **Väntande**.
+
+1. Välj en granskningstråd för ett företag (<i class="ph ph-buildings" aria-label="Företag-ikon"></i>) från listan.
 
 1. Granska sammanfattningsrutorna **Fält att uppdatera**, **Nya kontakter**, **Befintliga kontakter** och **Manuella åtgärder**, samt tabellen **Fält som ska uppdateras**: Fält, Nuvarande värde, Föreslaget värde och Källa, till exempel ett företagsregister, företagets webbplats eller Leadfeeder.
 
@@ -145,17 +137,34 @@ Du godkänner eller avvisar allt som hittats för ett företag som ett enda besl
 
 1. Om den hittar äkta ändringar att föreslå på detta sätt väcker den en normal granskningsuppgift för det, precis som ett företag som hittats vid den dagliga schemalagda körningen. Granska den enligt beskrivningen ovan.
 
+## Agentens arbetsyta {#workspace}
+
+Data Quality Agents arbetsyta har tre flikar: **Chatt**, **Historik** och **Prestanda**.
+
+| Flik | Beskrivning |
+|---|---|
+| Chatt | En **Allmän chatt**-tråd plus en tråd per företag agenten har granskat. |
+| Historik | En detaljerad logg över behandlade företag, föreslagna, godkända och tillämpade ändringar, och eventuella hoppade poster, med orsak. Välj en **Period** (senaste 24 timmarna, 7, 30 eller 90 dagar) för att avgränsa den. Långa historiker delas upp i sidor. |
+| Prestanda | Visar hur instansen har presterat under en period (senaste 7, 30 eller 90 dagarna): ändringar skickade för godkännande, godkända ändringar, avvisade ändringar, förfallna ändringar, bekräftade granskningar, avfärdade granskningar, förfallna granskningar och slutförda körningar. En separat **Berikning**-grupp visar hur många företag som berikades via Leadfeeder jämfört med webben. |
+
+![Fliken Historik, med filtret Period och uppdateringsknappen -screenshot][img6]
+
+Klicka på <i class="ph ph-arrow-clockwise" aria-label="Uppdatera-ikon"></i> för att hämta de senaste posterna.
+
 ## Tips och felsökning
 
-Om du **avvisar** skrivs ingenting, och granskningen slängs.
+**Vad händer om jag avvisar?** Ingenting skrivs; granskningen slängs.
 
-Aktivering, avaktivering, radering och avstängning av aviseringar fungerar alla enligt beskrivningen i [Konfigurera AI-agenter][1]. Endast ägaren kan ändra eller radera instansen.
+**Kan jag besluta om flera granskningar samtidigt?** Ja. Markera flera väntande granskningar och använd **Godkänn** eller **Avvisa** från panelen för massåtgärder. Att godkänna en batch skriver varje ändring i varje markerad granskning på en gång, så samma varning om att det inte kan ångras gäller för var och en av dem.
 
-En granskning som väntar på godkännande har en begränsad livslängd, **30 dagar som standard**. Så snart den är inom 5 dagar från att förfalla visas en nedräkningsbanner i dess tråd. Om du inte agerar i tid slängs den automatiskt och agenten går vidare. Ingenting skrivs för en förfallen granskning.
+**Vad händer med en granskning jag inte hinner med i tid?** En granskning som väntar på godkännande har en begränsad livslängd, **30 dagar som standard**. Så snart den är inom 5 dagar från att förfalla visas en nedräkningsbanner i dess tråd. Om du inte agerar i tid slängs den automatiskt och agenten går vidare. Ingenting skrivs för en förfallen granskning.
 
-Använd statusfiltret och flervalet för att arbeta igenom en full kö. Att godkänna eller avvisa flera granskningar samtidigt fungerar på samma sätt som för alla andra agenter: markera flera väntande granskningar och använd **Godkänn** eller **Avvisa**. Att godkänna en batch skriver varje ändring i varje markerad granskning på en gång, så samma varning om att det inte kan ångras gäller för var och en av dem. Se [Konfigurera AI-agenter][1].
+**Jag avaktiverade instansen och mina väntande granskningar är borta.** Att avaktivera en instans slänger bort alla granskningar som väntar på godkännande, enligt beskrivningen i [Konfigurera AI-agenter][1]. Godkänn eller avvisa det du behöver först om du vill behålla det.
+
+Endast instansens ägare kan ändra dess inställningar eller radera den.
 
 [1]: /sv/ai/learn/set-up-ai-agents
+[3]: #workspace
 
 [img1]: ../../../media/loc/en/ai/data-quality-agent-settings.png
 [img2]: ../../../media/loc/en/ai/data-quality-agent-sources.png
