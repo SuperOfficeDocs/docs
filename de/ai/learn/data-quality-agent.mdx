@@ -1,0 +1,166 @@
+---
+title: Data Quality Agent
+description: Halten Sie die Firmen und Personen, die bereits in Ihrem CRM erfasst sind, korrekt, vollständig und aktuell, wobei jede vorgeschlagene Änderung von Ihnen geprüft und genehmigt wird.
+keywords: ['KI-Agent', 'Anreicherung', 'DSGVO-Einwilligung', 'unzustellbare E-Mail', 'Leadfeeder']
+author: digitaldiina, Claudia Dias
+date: 09.28.2026
+so_version: 12.5
+content_type: concept
+tier: growth
+category: automation
+topic: ai
+platform: web
+deployment: online
+pilot: yes
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Agent aktivieren: /de/ai/learn/set-up-ai-agents
+  - Einstellungen bearbeiten: /de/ai/learn/set-up-ai-agents#edit
+  - /de/ai/learn/duplicate-agent
+  - Andere KI-Services: /de/ai/learn/index
+language: de
+---
+
+import DataQualityAgentPilotNote from "../../../snippets/ai/data-quality-agent-pilot-note.mdx";
+
+<DataQualityAgentPilotNote />
+
+Der Data Quality Agent hält die Firmen und Personen, die bereits in SuperOffice CRM erfasst sind, korrekt und vollständig. Jeden Tag arbeitet er einen Stapel Ihrer Datensätze durch, Firmen, bei denen Sie als Eigentümer zugewiesen sind, und sucht nach Qualitätsproblemen wie schlecht formatierten Telefonnummern, fehlenden Angaben und veralteten Informationen. Er recherchiert die Lücken anhand vertrauenswürdiger Geschäftsquellen und erstellt eine Reihe vorgeschlagener Korrekturen zur Prüfung durch Sie. Nichts wird in SuperOffice zurückgeschrieben, bevor Sie es genehmigen.
+
+## Was der Agent für Sie tut
+
+* **Behebt Formatierungsprobleme:** normalisiert Telefonnummern und bereinigt Adressen, wobei alles gekennzeichnet wird, was er nicht sicher korrigieren kann.
+
+* **Ergänzt fehlende Angaben:** findet fehlende Firmeninformationen, wie Website, Beschreibung oder Branche, aus vertrauenswürdigen Geschäftsquellen.
+
+* **Kennzeichnet unzustellbare E-Mails:** hebt bei jedem Lauf Kontakt-E-Mail-Adressen hervor, die als unzustellbar erfasst wurden.
+
+* **Prüft die DSGVO-Einwilligung:** kennzeichnet Kontakte mit fehlender oder widerrufener Einwilligung, damit Sie reagieren können.
+
+* **Erkennt Firmen ohne Kontakte:** zeigt Firmendatensätze ohne verknüpfte Personen und schlägt optional Kontakte zum Hinzufügen vor.
+
+<Note>
+Der Agent schlägt vor, Sie entscheiden. Jede vorgeschlagene Änderung wird von Ihnen geprüft und genehmigt, bevor sie in SuperOffice geschrieben wird. Genehmigen Sie eine Prüfung nicht, ändert sich nichts.
+</Note>
+
+## Zeitplan
+
+Der Agent läuft **täglich**, einmal am Tag zu einer vom System festgelegten Zeit. Mit **Max. Aufgaben pro Tag** legen Sie fest, wie viele Prüfaufgaben er täglich erstellt, damit der Prüfumfang überschaubar bleibt.
+
+## Agent aktivieren {#setup}
+
+Sie sind automatisch der Genehmigende für die geprüften Datensätze und können eine Instanz erstellen.
+
+1. Wählen Sie <i class="ph ph-robot" aria-label="Agenten-Symbol"></i> **Agenten** im Navigator aus.
+
+    Beim ersten Zugriff auf die Seite **Agenten** müssen Sie sich anmelden und KI-Agenten in SuperOffice genehmigen.
+
+1. Suchen Sie die Karte **Data Quality Agent** in der **Agentenübersicht** und klicken Sie auf **Aktivieren**. Dies öffnet den Einrichtungsassistenten.
+
+    ![Die Agentenübersicht mit den Karten Data Quality Agent, Lead Agent und Duplicate Agent -screenshot][img9]
+
+    <Tip>
+    Sehen Sie die Karte nicht? Klicken Sie auf **Agenten durchsuchen**, um sie zu finden.
+    </Tip>
+
+## Allgemeine Einstellungen {#settings}
+
+1. Geben Sie einen eindeutigen **Namen** für die Agenteninstanz ein. **Dieser kann nach der Aktivierung nicht mehr geändert werden.**
+
+    ![Die allgemeinen Einstellungen des Data Quality Agent mit Name, Beschreibung, Berichtssprache und Zeitplan -screenshot][img1]
+
+1. Optional können Sie die vorgeschlagene **Beschreibung** bearbeiten, wenn Sie etwas anderes möchten.
+
+1. Wählen Sie die **Berichtssprache**. Diese wirkt sich sowohl auf Berichte als auch auf Chat-Antworten aus.
+
+1. Wählen Sie, wie viele Prüfaufgaben der Agent pro Tag erstellt (1-30). Der Standardwert für **Max. Aufgaben pro Tag** ist 10.
+
+1. Aktivieren Sie optional **Kontakte anreichern**. Wenn aktiviert, schlägt der Agent auch fehlende Kontaktpersonen und korrigierte, unzustellbare E-Mail-Adressen vor, mit E-Mail- und Telefonangaben, wenn er sie findet. Ist die Option deaktiviert, kennzeichnet er nur die Lücken.
+
+1. Klicken Sie auf **Weiter**.
+
+## Quellen
+
+![Der Schritt Quellen, integrierte Register und das optionale Leadfeeder-Add-on -screenshot][img2]
+
+* **Integrierte Quellen:** Handelsregister, die anhand des Sitzlandes jeder Firma ausgewählt werden, zum Beispiel das Brønnøysundregistret für Norwegen oder Northdata für Deutschland, plus die eigene Website der Firma. Wird von SuperOffice verwaltet und hier nicht bearbeitet.
+
+* **Leadfeeder:** wird zur Prüfung und Anreicherung von Firmen verwendet. Standardmäßig aktiviert, bei Nutzung immer mit **2-fachen Credits** abgerechnet, über das eigene Leadfeeder-Konto von SuperOffice.
+
+1. Wählen Sie, ob **Leadfeeder** zur Anreicherung von Firmen verwendet werden soll oder ob Sie sich allein auf die integrierten Register verlassen möchten.
+
+1. Klicken Sie auf **Speichern**.
+
+    Die Instanz wird aktiviert, erscheint unter **Meine Agenten** auf der Übersichtsseite und beginnt mit ihrem nächsten täglichen Lauf.
+
+## Der Agenten-Arbeitsbereich
+
+Der Arbeitsbereich des Data Quality Agent hat drei Registerkarten: **Chat**, **Verlauf** und **Leistung**.
+
+| Registerkarte | Beschreibung |
+|---|---|
+| Chat | Ein **Allgemeiner Chat**-Thread plus ein Thread pro Firma, die der Agent geprüft hat. |
+| Verlauf | Ein detailliertes Protokoll der verarbeiteten Firmen, vorgeschlagenen, genehmigten und angewendeten Änderungen sowie übersprungener Einträge mit Begründung. Wählen Sie einen Zeitraum (letzte 24 Stunden, 7, 30 oder 90 Tage). Lange Verläufe werden seitenweise angezeigt. |
+| Leistung | Zeigt, wie die Instanz über einen Zeitraum (letzte 7, 30 oder 90 Tage) performt: zur Genehmigung gesendete Änderungen, genehmigte Änderungen, abgelehnte Änderungen, abgelaufene Änderungen, bestätigte Prüfungen, verworfene Prüfungen, abgelaufene Prüfungen und abgeschlossene Läufe. Eine separate Gruppe **Anreicherung** zeigt, wie viele Firmen über Leadfeeder gegenüber dem Web angereichert wurden. |
+
+![Die Registerkarte Verlauf mit dem Zeitraumfilter und der Aktualisierungsschaltfläche -screenshot][img6]
+
+Klicken Sie auf <i class="ph ph-arrow-clockwise" aria-label="Aktualisieren-Symbol"></i>, um die neuesten Einträge abzurufen.
+
+## Änderungen prüfen und genehmigen
+
+1. Wählen Sie in der Registerkarte **Chat** einen Firmen-Prüfungs-Thread (<i class="ph ph-buildings" aria-label="Firmen-Symbol"></i>) aus der Liste aus.
+
+1. Prüfen Sie die Übersichtskacheln **Zu aktualisierende Felder**, **Neue Kontakte**, **Vorhandene Kontakte** und **Manuelle Aktionen** sowie die Tabelle **Zu aktualisierende Felder**: Feld, Aktueller Wert, Vorgeschlagener Wert und Quelle, zum Beispiel ein Handelsregister, die Firmen-Homepage oder Leadfeeder.
+
+    Lücken, die der Agent nicht automatisch schließen konnte, werden unter **Manuelle Aktion erforderlich** aufgeführt; aktualisieren Sie diese direkt im Firmen- oder Kontaktdatensatz. Ein Kontakt, der wegen fehlender DSGVO-Einwilligung gekennzeichnet ist, wird als "wird vorübergehend gelöscht" angezeigt.
+
+    ![Eine Datenqualitätsprüfung mit der Tabelle Zu aktualisierende Felder und der Liste Manuelle Aktion erforderlich -screenshot][img4]
+
+1. Optional können Sie den Agenten im Chat bitten, den Vorschlag anzupassen, bevor Sie genehmigen.
+
+1. Klicken Sie auf **Genehmigen**.
+
+    <Danger>
+    **Änderungen können nicht rückgängig gemacht werden.** Genehmigte Änderungen haben in dieser Version kein Rückgängig, prüfen Sie daher sorgfältig, bevor Sie genehmigen.
+    </Danger>
+
+1. Klicken Sie im Bestätigungsdialog auf **Genehmigen**. Der Dialog gibt genau an, wie viele Felder aktualisiert werden.
+
+    ![Der Bestätigungsdialog zur Genehmigung, der genau angibt, was passieren wird -screenshot][img5]
+
+    * Alle Änderungen in der Prüfung werden gleichzeitig in SuperOffice geschrieben.
+    * Bei einem DSGVO-Einwilligungseintrag wird der Kontakt beim Genehmigen vorübergehend gelöscht, und SuperOffice entfernt ihn 30 Tage später endgültig.
+
+    ![Die Prüfung nach der Genehmigung mit dem Abzeichen Genehmigt und einer Zusammenfassung der angewendeten Änderungen -screenshot][img3]
+
+Sie genehmigen oder lehnen alle für eine Firma gefundenen Punkte als eine einzige Entscheidung ab; eine Genehmigung pro Feld gibt es noch nicht. Wenn die einzigen Befunde für eine Firma Dinge sind, die der Agent nicht beheben kann, etwa eine unzustellbare E-Mail ohne gefundenen Ersatz oder gar keine Kontakte, ist die Prüfung nur informativ: **Genehmigen** bestätigt lediglich, dass Sie sie gesehen haben, **Ablehnen** verwirft sie, und keine der beiden Aktionen schreibt etwas in SuperOffice.
+
+## Eine bestimmte Firma untersuchen
+
+1. Wählen Sie die Registerkarte **Chat** aus.
+
+1. Bitten Sie den Agenten im **Allgemeinen** Chat, eine bestimmte Firma jetzt zu prüfen, zum Beispiel *Prüfe die Daten von Acme*, oder suchen Sie die aktuellen Angaben einer Firma oder eines Kontakts.
+
+1. Findet er auf diesem Weg echte Änderungen vorzuschlagen, erstellt er dafür eine normale Prüfaufgabe, genau wie bei einer Firma aus dem täglichen geplanten Lauf. Prüfen Sie sie wie oben beschrieben.
+
+## Tipps und Fehlerbehebung
+
+Wenn Sie **ablehnen**, wird nichts geschrieben und die Prüfung verworfen.
+
+Aktivieren, Deaktivieren, Löschen und Stummschalten funktionieren alle wie unter [KI-Agenten einrichten][1] beschrieben. Nur der Eigentümer kann die Instanz ändern oder löschen.
+
+Eine auf Genehmigung wartende Prüfung hat eine begrenzte Lebensdauer, **standardmäßig 30 Tage**. Sobald sie innerhalb von 5 Tagen abläuft, erscheint ein Countdown-Banner auf ihrem Thread. Handeln Sie nicht rechtzeitig, wird sie automatisch verworfen, und der Agent macht weiter. Für eine abgelaufene Prüfung wird nichts geschrieben.
+
+Verwenden Sie den Statusfilter und die Mehrfachauswahl, um eine umfangreiche Warteschlange abzuarbeiten. Das gleichzeitige Genehmigen oder Ablehnen mehrerer Prüfungen funktioniert wie bei jedem anderen Agenten: Wählen Sie mehrere ausstehende Prüfungen aus und verwenden Sie **Genehmigen** oder **Ablehnen**. Das Genehmigen eines Stapels schreibt jede Änderung in jeder ausgewählten Prüfung gleichzeitig, daher gilt für jede von ihnen derselbe Hinweis "kann nicht rückgängig gemacht werden". Siehe [KI-Agenten einrichten][1].
+
+[1]: /de/ai/learn/set-up-ai-agents
+
+[img1]: ../../../media/loc/en/ai/data-quality-agent-settings.png
+[img2]: ../../../media/loc/en/ai/data-quality-agent-sources.png
+[img3]: ../../../media/loc/en/ai/data-quality-approved.png
+[img4]: ../../../media/loc/en/ai/data-quality-suggestion.png
+[img5]: ../../../media/loc/en/ai/approve-data-quality-update.png
+[img6]: ../../../media/loc/en/ai/dq-history.png
+[img9]: ../../../media/loc/en/ai/agent-overview.png
