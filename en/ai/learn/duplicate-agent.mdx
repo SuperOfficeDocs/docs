@@ -1,7 +1,7 @@
 ---
 title: Duplicate Agent
 description: Find and merge duplicate companies and contacts, and reconnect orphaned contacts that have lost their company, with every change approved by you.
-keywords: ['duplicate agent', 'AI agents', 'merge companies', 'duplicate contacts', 'orphaned contacts']
+keywords: ['Data Quality Agents', 'AI agent', 'merge companies', 'duplicate contacts', 'orphaned contacts']
 author: digitaldiina, Claudia Dias
 date: 09.28.2026
 so_version: 12.5
@@ -35,21 +35,26 @@ A **Duplicate agent** widget on your Start Page shows how many company merges an
 ## What it does for you
 
 * **Finds duplicate companies:** compares your companies against each other, by name and other details such as organization number, domain, and phone, to find likely duplicates.
+
 * **Finds duplicate contacts:** looks for duplicate contacts within the same company.
-* **Rates each match:** internally scores every candidate from 1-5 and only suggests the strongest ones, 4-5 for a company match, 5 only for a contact match. The score is shown as stars on a duplicate-contact suggestion, but not on a company one.
+
+* **Rates each match:** internally scores every candidate from 1-5 and only suggests the strongest ones, 4-5 for a company match, 5 only for a contact match. The score is shown as stars on a duplicate-contact suggestion, but not on a company suggestion.
+
 * **Proposes a safe merge:** for companies, always suggests keeping the oldest record and combining the others into it. Blank fields are filled in from the extra record, and a note records what happened.
+
 * **Reconnects orphaned contacts:** finds contacts with no company whose email uses a company's domain, and proposes linking them to that company.
-* **Asks before acting:** every merge and every link waits for your approval; the agent never changes anything on its own.
+
+* **Asks before acting:** every merge and every link waits for your approval. The agent never changes anything on its own.
 
 <Note>
-The agent proposes; you decide. No records are merged or linked until you approve, there is no automatic mode. It works only inside your SuperOffice CRM; there is no web search or external enrichment.
+The agent proposes; you decide. No records are merged or linked until you approve, there is no automatic mode. It works only inside your SuperOffice CRM. There is no web search or external enrichment. The daily scan mainly checks records you own, but a suggestion can still involve a record owned by someone else in your tenant: only one side of a match needs to be yours for it to be raised to you.
 </Note>
+
+## Set up the agent
 
 <Tip>
 Opening the Agents area, activating the agent, and creating a new instance are the same for every agent. See [Set up AI agents][1]. This page covers what is specific to Duplicate Agent.
 </Tip>
-
-## Set up the agent
 
 Setup is a single step. The agent works only on your own CRM records, you are automatically its approver, and you can create one instance of your own.
 
@@ -82,7 +87,7 @@ In General chat you can ask the agent to check a specific company for duplicates
 
 Use the Status filter and multi-select from [Set up AI agents][1] to work through a busy queue. There are three kinds of suggestion.
 
-### Merge suggestion: duplicate companies
+### Merge suggestion: duplicate companies {#merge-companies}
 
 A merge suggestion shows everything you need to decide:
 
@@ -100,7 +105,7 @@ A merge suggestion shows everything you need to decide:
 **A merge cannot be undone.** Combining two companies permanently removes the extra record, so you will be asked to confirm. The oldest record is always the one kept. If you want to tidy up the record you are keeping first, ask the agent to do so in chat before you approve.
 </Danger>
 
-### Merge suggestion: duplicate contacts
+### Merge suggestion: duplicate contacts {#merge-contacts}
 
 The agent also looks for two contact records that appear to be the same person and proposes combining them. The card shows:
 
@@ -114,7 +119,7 @@ The agent also looks for two contact records that appear to be the same person a
 
 ![A duplicate-contact merge suggestion -screenshot][img3]
 
-### Orphaned contacts (no company)
+### Orphaned contacts (no company) {#orphans}
 
 The agent also looks for **orphaned contacts**, people with no company whose email address uses a company's domain, and matches each to the company that owns that domain, so you can link them. When the domain does not clearly point to one company, it also looks for a company whose name is a close match and offers that instead.
 
@@ -159,29 +164,6 @@ The **Performance** tab shows how the instance is performing over a period you c
 <Note>
 Activating, deactivating, deleting, and muting all work as described in [Set up AI agents][1], including that deactivating while items are awaiting approval discards them. Only the owner can change or delete the instance.
 </Note>
-
-## Frequently asked questions
-
-**Will it merge companies or contacts automatically?**<br />
-No. Every merge waits for your approval, and you confirm before it runs. There is no automatic mode.
-
-**Which record is kept in a company merge?**<br />
-Always the oldest one. Its details are preserved; only blank fields are filled in from the other record, and a note is added recording the change.
-
-**Can I undo a merge?**<br />
-No. A merge permanently removes the extra record, so review before approving. Linking an orphaned contact, by contrast, can be reversed by unlinking it in CRM.
-
-**Is there a daily limit on how many companies it checks?**<br />
-No. Every run can look across your whole book. Instead, up to 50 suggestions of each kind, company merges, contact merges, orphaned contacts, can be waiting for your decision at once. Once you clear some, the next scheduled scan tops that type back up toward 50. Each company it raises comes as a single task thread grouping all its suggestions.
-
-**Can I decide on several suggestions at once?**<br />
-Yes. Select multiple pending suggestions and use Approve or Reject from the bulk panel.
-
-**Does it use external data?**<br />
-No. Duplicate Agent works only inside your SuperOffice CRM; there is no web search or external enrichment.
-
-**Whose records does it check?**<br />
-Mainly your own: the daily scan only looks at companies where you are the CRM owner, and its list of orphaned contacts only looks at contacts you own. A suggestion can still involve a record owned by someone else in your tenant; only one side of a match needs to be yours for it to be raised to you.
 
 <Tip>
 Need more help? Contact your SuperOffice administrator or partner.
