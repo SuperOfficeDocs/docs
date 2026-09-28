@@ -48,7 +48,7 @@ The agent proposes; you decide. No records are merged or linked until you approv
 
 The agent runs **Daily**, once a day at a system-assigned time.
 
-**There is no daily limit on how many companies it checks.** There is nothing to configure here. The agent keeps up to 50 suggestions of each type (company merges, contact merges, and orphaned contacts) waiting for your decision. When you clear enough to free up room, its next scheduled scan tops that type back up toward 50 if there is more to find.
+There is no daily limit on how many companies it checks. The agent keeps up to 50 suggestions of each type (company merges, contact merges, and orphaned contacts) waiting for your decision. Once you approve or reject enough to free up room, its next scheduled scan tops that type back up toward 50 if there is more to find.
 
 ## Activate the agent {#setup}
 
@@ -78,27 +78,15 @@ Setup is a single step. You are automatically the approver, and you can create o
 
 1. Click **Save**.
 
-    The instance is activated, appears under **My agents** on the Overview page, and begins working on its next daily run.
+    The instance is activated, appears under **My agents** in the Agents sidebar, and begins working on its next daily run.
 
-1. Click **Go to instance** in the confirmation dialog to chat with your Duplicate Agent.
+1. Select **Go to instance** to open your new Duplicate Agent and [get started][3].
 
-## The agent workspace
-
-The Duplicate Agent's workspace has three tabs: **Chat**, **History**, and **Performance**.
-
-| Tab | Description |
-|---|---|
-| Chat | A **General chat** thread plus one thread per suggestion the agent has raised. |
-| History | A detailed log of companies checked, suggestions raised, merges and links approved, and any items skipped, with the reason. Select a period (last 24 hours, 7, 30, or 90 days). Long histories are paged. |
-| Performance | Shows how the agent performed over a period (last 7, 30, or 90 days): Company duplicates suggested, orphan contacts suggested, person duplicates suggested, merges approved, duplicates rejected, duplicates expired, and runs completed. |
-
-![The History tab, with the Period filter and refresh button. An entry expanded, showing its workflow ID and run ID -screenshot][img5]
-
-Click <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i> to pull in the latest entries. Click an entry to expand it and see its full workflow and run details.
+Before reviewing, select the **Chat** tab, then click <i class="ph ph-sliders-horizontal" aria-label="Filter icon"></i> and select **Pending** to narrow a busy queue to suggestions awaiting your decision.
 
 ## Merge suggestion: duplicate companies {#merge-companies}
 
-1. In the **Chat** tab, select a company-merge suggestion (<i class="ph ph-buildings" aria-label="Company icon"></i>) from the list.
+1. Choose a company-merge suggestion (<i class="ph ph-buildings" aria-label="Company icon"></i>) from the list.
 
 1. Review the side-by-side remove/keep **company comparison** and what happens if you approve the merge.
 
@@ -125,7 +113,7 @@ Click <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i> to pull in
 
 ## Merge suggestion: duplicate contacts {#merge-contacts}
 
-1. In the **Chat** tab, select a duplicate-contact suggestion (<i class="ph ph-user-circle" aria-label="Contact icon"></i>) from the list.
+1. Choose a duplicate-contact suggestion (<i class="ph ph-user-circle" aria-label="Contact icon"></i>) from the list.
 
 1. Review the **possible duplicate people**: the company the contacts belong to, a **Match confidence** rating (1-5 stars), why they look like the same person, and what the agent matched on, for example an identical full name.
 
@@ -149,7 +137,7 @@ Click <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i> to pull in
 
 The agent looks for **orphaned contacts**, people with no company whose email address uses a company's domain, and matches each to the company that owns that domain. When the domain does not clearly point to one company, it also looks for a company whose name is a close match and offers that instead.
 
-1. In the **Chat** tab, select an orphaned-contact suggestion (<i class="ph ph-user-circle" aria-label="Contact icon"></i>) from the list.
+1. Choose an orphaned-contact suggestion (<i class="ph ph-user-circle" aria-label="Contact icon"></i>) from the list.
 
 1. Review the **Contact** and **Suggested company** sections, and why the agent is suggesting the link.
 
@@ -169,17 +157,34 @@ The agent looks for **orphaned contacts**, people with no company whose email ad
 
 1. If it finds a genuine duplicate or orphaned contact this way, it raises a normal approval task for it, exactly like one found on the daily scheduled run. Review it as described above.
 
+## The agent workspace {#workspace}
+
+The Duplicate Agent's workspace has three tabs: **Chat**, **History**, and **Performance**.
+
+| Tab | Description |
+|---|---|
+| Chat | A **General chat** thread plus one thread per suggestion the agent has raised. |
+| History | A detailed log of companies checked, suggestions raised, merges and links approved, and any items skipped, with the reason. Select a **Period** (last 24 hours, 7, 30, or 90 days) to narrow it down. Long histories are paged. |
+| Performance | Shows how the agent performed over a period (last 7, 30, or 90 days): company duplicates suggested, orphan contacts suggested, person duplicates suggested, merges approved, duplicates rejected, duplicates expired, and runs completed. |
+
+![The History tab, with the Period filter and refresh button. An entry expanded, showing its workflow ID and run ID -screenshot][img5]
+
+Click <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i> to pull in the latest entries. Click an entry to expand it and see its full workflow and run details.
+
 ## Tips and troubleshooting
 
-If you **reject** a merge or **ignore** a suggestion, nothing changes: both records are kept as they are.
+**What happens if I reject or ignore?** Nothing changes; both records are kept as they are.
 
-Activating, deactivating, deleting, and muting all work as described in [Set up AI agents][1].
+**Can I decide on several suggestions at once?** Yes. Select multiple pending suggestions and use **Approve** or **Reject** from the bulk panel, the same way as any other agent.
 
-A suggestion awaiting your decision has a limited lifetime, **30 days by default**. Once it is within 5 days of expiring, a countdown banner appears on its thread. If you do not act in time, it is discarded, and the agent moves on. Nothing is changed for an expired suggestion, and the same pair may be surfaced again on a later check.
+**What happens to a suggestion I do not get to in time?** A suggestion awaiting your decision has a limited lifetime, **30 days by default**. Once it is within 5 days of expiring, a countdown banner appears on its thread. If you do not act in time, it is discarded, and the agent moves on. Nothing is changed for an expired suggestion, and the same pair may be surfaced again on a later check.
 
-Use the Status filter and multi-select to work through a busy queue. Deciding on several suggestions at once works the same way as any other agent: select multiple pending suggestions and use **Approve** or **Reject**. See [Set up AI agents][1].
+**I deactivated the instance and my pending suggestions are gone.** Deactivating an instance discards any suggestions awaiting approval, as described in [Set up AI agents][1]. Approve or reject what you need first if you want to keep them.
+
+Only the instance's owner can change its settings or delete it.
 
 [1]: /en/ai/learn/set-up-ai-agents
+[3]: #workspace
 
 [img1]: /media/loc/en/ai/duplicate-agent-settings.png
 [img2]: /media/loc/en/ai/duplicate-company-comparison.png

@@ -88,29 +88,21 @@ You are automatically the approver for the records it reviews, and you can creat
 
 * **Leadfeeder:** used to verify and enrich companies. On by default, always billed at **2x credits** when used, using SuperOffice's own Leadfeeder account.
 
-1. Choose whether to use **Leadfeeder** to enrich companies, or rely on the built-in registries alone.
+1. Choose whether to use **Leadfeeder** to enrich companies, or rely on the built-in registries alone. On by default.
 
 1. Click **Save**.
 
-    The instance is activated, appears under **My agents** on the Overview page, and begins working on its next daily run.
+    The instance is activated, appears under **My agents** in the Agents sidebar, and begins working on its next daily run.
 
-## The agent workspace
-
-The Data Quality Agent's workspace has three tabs: **Chat**, **History**, and **Performance**.
-
-| Tab | Description |
-|---|---|
-| Chat | A **General chat** thread plus one thread per company the agent has reviewed. |
-| History | A detailed log of companies processed, changes proposed, approved, and applied, and any items skipped, with the reason. Select a period (last 24 hours, 7, 30, or 90 days). Long histories are paged. |
-| Performance | Shows how the instance is performing over a period (last 7, 30, or 90 days): changes sent for approval, changes approved, changes rejected, changes expired, reviews acknowledged, reviews dismissed, reviews expired, and runs completed. A separate **Enrichment** group breaks down how many companies were enriched via Leadfeeder versus the web. |
-
-![The History tab, with the Period filter and refresh button -screenshot][img6]
-
-Click <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i> to pull in the latest entries.
+1. Select **Go to instance** to open your new Data Quality Agent and [get started][3].
 
 ## Review and approve changes
 
-1. In the **Chat** tab, select a company review thread (<i class="ph ph-buildings" aria-label="Company icon"></i>) from the list.
+1. Select the **Chat** tab.
+
+1. Click <i class="ph ph-sliders-horizontal" aria-label="Filter icon"></i> and select **Pending**.
+
+1. Choose a company review thread (<i class="ph ph-buildings" aria-label="Company icon"></i>) from the list.
 
 1. Review the summary tiles, **Fields to update**, **New contacts**, **Existing contacts**, and **Manual actions**, and the **Fields to be updated** table: Field, Current value, Proposed value, and Source, for example a business registry, the company homepage, or Leadfeeder.
 
@@ -145,17 +137,34 @@ You approve or reject everything found for a company as a single decision; there
 
 1. If it finds genuine changes to propose this way, it raises a normal review task for it, exactly like a company found on the daily scheduled run. Review it as described above.
 
+## The agent workspace {#workspace}
+
+The Data Quality Agent's workspace has three tabs: **Chat**, **History**, and **Performance**.
+
+| Tab | Description |
+|---|---|
+| Chat | A **General chat** thread plus one thread per company the agent has reviewed. |
+| History | A detailed log of companies processed, changes proposed, approved, and applied, and any items skipped, with the reason. Select a **Period** (last 24 hours, 7, 30, or 90 days) to narrow it down. Long histories are paged. |
+| Performance | Shows how the instance is performing over a period (last 7, 30, or 90 days): changes sent for approval, changes approved, changes rejected, changes expired, reviews acknowledged, reviews dismissed, reviews expired, and runs completed. A separate **Enrichment** group breaks down how many companies were enriched via Leadfeeder versus the web. |
+
+![The History tab, with the Period filter and refresh button -screenshot][img6]
+
+Click <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i> to pull in the latest entries.
+
 ## Tips and troubleshooting
 
-If you **reject**, nothing is written and the review is discarded.
+**What happens if I reject?** Nothing is written; the review is discarded.
 
-Activating, deactivating, deleting, and muting all work as described in [Set up AI agents][1]. Only the owner can change or delete the instance.
+**Can I decide on several reviews at once?** Yes. Select multiple pending reviews and use **Approve** or **Reject** from the bulk panel. Approving a batch writes every change in every selected review at once, so the same "cannot be undone" caution applies to each of them.
 
-A review awaiting approval has a limited lifetime, **30 days by default**. Once it is within 5 days of expiring, a countdown banner appears on its thread. If you do not act in time, it is discarded automatically and the agent moves on. Nothing is written for an expired review.
+**What happens to a review I do not get to in time?** A review awaiting approval has a limited lifetime, **30 days by default**. Once it is within 5 days of expiring, a countdown banner appears on its thread. If you do not act in time, it is discarded automatically and the agent moves on. Nothing is written for an expired review.
 
-Use the Status filter and multi-select to work through a busy queue. Approving or rejecting several reviews at once works the same way as any other agent: select multiple pending reviews and use **Approve** or **Reject**. Approving a batch writes every change in every selected review at once, so the same "cannot be undone" caution applies to each of them. See [Set up AI agents][1].
+**I deactivated the instance and my pending reviews are gone.** Deactivating an instance discards any reviews awaiting approval, as described in [Set up AI agents][1]. Approve or reject what you need first if you want to keep it.
+
+Only the instance's owner can change its settings or delete it.
 
 [1]: /en/ai/learn/set-up-ai-agents
+[3]: #workspace
 
 [img1]: /media/loc/en/ai/data-quality-agent-settings.png
 [img2]: /media/loc/en/ai/data-quality-agent-sources.png
