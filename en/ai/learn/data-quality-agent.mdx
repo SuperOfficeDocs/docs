@@ -3,8 +3,8 @@ title: Data Quality Agent
 description: Keep the companies and contacts already in your CRM accurate, complete, and up to date, with every proposed change reviewed and approved by you.
 keywords: ['AI agent', 'enrichment', 'GDPR consent', 'bounced email', 'Leadfeeder']
 author: digitaldiina, Claudia Dias
-date: 09.28.2026
-so_version: 12.5
+date: 10.01.2026
+so_version: 12.4
 content_type: concept
 tier: growth
 category: automation
@@ -41,7 +41,7 @@ The Data Quality Agent keeps the companies and people already in SuperOffice CRM
 * **Spots companies with no contacts:** surfaces company records that have no people attached and, optionally, proposes contacts to add.
 
 <Note>
-The agent proposes; you decide. Every proposed change is reviewed and approved by you before it is written to SuperOffice. If you do not approve a review, nothing changes.
+The agent proposes. You decide. Every proposed change is reviewed and approved by you before it is written to SuperOffice. If you do not approve a review, nothing changes.
 </Note>
 
 ## Schedule
@@ -56,12 +56,12 @@ You are automatically the approver for the records it reviews, and you can creat
 
     The first time you access the **Agents** page, you need to log in and approve AI agents in SuperOffice.
 
-1. Locate the **Data Quality Agent** card in the **Agent overview** and click **Activate**. This opens the set-up wizard.
+1. Locate the **Data Quality Agent** card in the **Agent overview** and select **Activate**. This opens the set-up wizard.
 
     ![The Agent overview, with Data Quality Agent, Lead Agent, and Duplicate Agent cards -screenshot][img9]
 
     <Tip>
-    Do not see the card? Click **Browse agents** to find it.
+    Do not see the card? Select **Browse agents** to find it.
     </Tip>
 
 ## General settings {#settings}
@@ -78,7 +78,7 @@ You are automatically the approver for the records it reviews, and you can creat
 
 1. Optionally, enable **Enrich contacts**. When on, the agent also proposes missing contact persons and corrected bounced-email addresses, with email and phone details where it finds them. When off, it only flags the gaps.
 
-1. Click **Next**.
+1. Select **Next**.
 
 ## Sources
 
@@ -90,7 +90,7 @@ You are automatically the approver for the records it reviews, and you can creat
 
 1. Choose whether to use **Leadfeeder** to enrich companies, or rely on the built-in registries alone. On by default.
 
-1. Click **Save**.
+1. Select **Save**.
 
     The instance is activated, appears under **My agents** in the Agents sidebar, and begins working on its next daily run.
 
@@ -100,25 +100,25 @@ You are automatically the approver for the records it reviews, and you can creat
 
 1. Select the **Chat** tab.
 
-1. Click <i class="ph ph-sliders-horizontal" aria-label="Filter icon"></i> and select **Pending**.
+1. Select <i class="ph ph-sliders-horizontal" aria-label="Filter icon"></i> and select **Pending**.
 
 1. Choose a company review thread (<i class="ph ph-buildings" aria-label="Company icon"></i>) from the list.
 
 1. Review the summary tiles, **Fields to update**, **New contacts**, **Existing contacts**, and **Manual actions**, and the **Fields to be updated** table: Field, Current value, Proposed value, and Source, for example a business registry, the company homepage, or Leadfeeder.
 
-    Gaps the agent could not fill automatically are listed under **Manual action needed**; update those directly in the company or contact record. A contact flagged for missing GDPR consent is shown as "will be soft-deleted".
+    Gaps the agent could not fill automatically are listed under **Manual action needed**. Update those directly in the company or contact record. A contact flagged for missing GDPR consent is shown as "will be soft-deleted".
 
     ![A data quality review, with the Fields to be updated table and Manual action needed list -screenshot][img4]
 
 1. Optionally, ask the agent in chat to adjust what is proposed, before you approve.
 
-1. Click **Approve**.
+1. Select **Approve**.
 
     <Danger>
-    **Changes cannot be undone.** Approved changes have no undo in this version, so review carefully before approving.
+    **Changes cannot be undone.** Approved changes cannot be undone, so review carefully before approving.
     </Danger>
 
-1. Click **Approve** in the confirmation dialog, for example "1 field will be updated."
+1. Select **Approve** in the confirmation dialog, for example "1 field will be updated."
 
     ![The approve confirmation dialog, spelling out exactly what will happen -screenshot][img5]
 
@@ -127,7 +127,7 @@ You are automatically the approver for the records it reviews, and you can creat
 
     ![The review after approval, with the Approved badge and a summary of the applied changes -screenshot][img3]
 
-You approve or reject everything found for a company as a single decision; there is no per-field approval yet. If the only findings for a company are things the agent cannot fix, such as a bounced email with no replacement found, or no contacts at all, the review is informational: **Approve** just acknowledges you have seen it, **Reject** dismisses it, and neither writes anything to SuperOffice.
+You approve or reject everything found for a company as a single decision. There is no per-field approval. If the only findings for a company are things the agent cannot fix, such as a bounced email with no replacement found, or no contacts at all, the review is informational: **Approve** just acknowledges you have seen it, **Reject** dismisses it, and neither writes anything to SuperOffice.
 
 ## Look into a specific company
 
@@ -149,11 +149,11 @@ The Data Quality Agent's workspace has three tabs: **Chat**, **History**, and **
 
 ![The History tab, with the Period filter and refresh button -screenshot][img6]
 
-Click <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i> to pull in the latest entries.
+Select <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i> to pull in the latest entries.
 
 ## Tips and troubleshooting
 
-**What happens if I reject?** Nothing is written; the review is discarded.
+**What happens if I reject?** Nothing is written. The review is discarded.
 
 **Can I decide on several reviews at once?** Yes. Select multiple pending reviews and use **Approve** or **Reject** from the bulk panel. Approving a batch writes every change in every selected review at once, so the same "cannot be undone" caution applies to each of them.
 

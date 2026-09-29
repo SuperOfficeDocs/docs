@@ -1137,10 +1137,6 @@
     "destination": "/da/admin/user-management/user-groups"
   },
   {
-    "source": "/da/ai/admin/index",
-    "destination": "/da/ai/admin/set-up-categorization"
-  },
-  {
     "source": "/da/ai/admin/set-up-categorization.html",
     "destination": "/da/ai/admin/set-up-categorization"
   },
@@ -5511,10 +5507,6 @@
   {
     "source": "/de/admin/user-management/user-groups.html",
     "destination": "/de/admin/user-management/user-groups"
-  },
-  {
-    "source": "/de/ai/admin/index",
-    "destination": "/de/ai/admin/set-up-categorization"
   },
   {
     "source": "/de/ai/admin/set-up-categorization.html",
@@ -20305,10 +20297,6 @@
     "destination": "/nl/admin/user-management/user-groups"
   },
   {
-    "source": "/nl/ai/admin/index",
-    "destination": "/nl/ai/admin/set-up-categorization"
-  },
-  {
     "source": "/nl/ai/admin/set-up-categorization.html",
     "destination": "/nl/ai/admin/set-up-categorization"
   },
@@ -24667,10 +24655,6 @@
   {
     "source": "/no/admin/user-management/user-groups.html",
     "destination": "/no/admin/user-management/user-groups"
-  },
-  {
-    "source": "/no/ai/admin/index",
-    "destination": "/no/ai/admin/set-up-categorization"
   },
   {
     "source": "/no/ai/admin/set-up-categorization.html",
@@ -29547,10 +29531,6 @@
   {
     "source": "/sv/admin/user-management/user-groups.html",
     "destination": "/sv/admin/user-management/user-groups"
-  },
-  {
-    "source": "/sv/ai/admin/index",
-    "destination": "/sv/ai/admin/set-up-categorization"
   },
   {
     "source": "/sv/ai/admin/set-up-categorization.html",

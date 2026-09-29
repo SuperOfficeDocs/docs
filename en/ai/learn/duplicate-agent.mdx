@@ -3,8 +3,8 @@ title: Duplicate Agent
 description: Find and merge duplicate companies and contacts, and reconnect orphaned contacts that have lost their company, with every change approved by you.
 keywords: ['data quality', 'AI agent', 'merge companies', 'duplicate companies', 'duplicate contacts', 'duplicate persons', 'orphaned contact']
 author: digitaldiina, Claudia Dias
-date: 09.28.2026
-so_version: 12.5
+date: 10.01.2026
+so_version: 12.4
 content_type: concept
 tier: growth
 category: automation
@@ -41,7 +41,7 @@ The Duplicate Agent tidies up your SuperOffice CRM from the inside. Each day it 
 * **Reconnects orphaned contacts:** finds contacts with no company whose email points to one, and proposes linking them.
 
 <Note>
-The agent proposes; you decide. No records are merged or linked until you approve, there is no automatic mode. It works only inside your SuperOffice CRM. There is no web search or external enrichment. The daily scan mainly checks records you own, but a suggestion can still involve a record owned by someone else in your tenant: only one side of a match needs to be yours for it to be raised to you.
+The agent proposes. You decide. No records are merged or linked until you approve. There is no automatic mode. It works only inside your SuperOffice CRM. There is no web search or external enrichment. The daily scan mainly checks records you own, but a suggestion can still involve a record owned by someone else in your tenant: only one side of a match needs to be yours for it to be raised to you.
 </Note>
 
 ## Schedule
@@ -58,12 +58,12 @@ Setup is a single step. You are automatically the approver, and you can create o
 
     The first time you access the **Agents** page, you need to log in and approve AI agents in SuperOffice.
 
-1. Locate the **Duplicate Agent** card in the **Agent overview** and click **Activate**. This opens the set-up wizard.
+1. Locate the **Duplicate Agent** card in the **Agent overview** and select **Activate**. This opens the set-up wizard.
 
     ![The Agent overview, with Data Quality Agent, Lead Agent, and Duplicate Agent cards -screenshot][img9]
 
     <Tip>
-    Do not see the card? Click **Browse agents** to find it.
+    Do not see the card? Select **Browse agents** to find it.
     </Tip>
 
 ## General settings {#settings}
@@ -76,13 +76,13 @@ Setup is a single step. You are automatically the approver, and you can create o
 
 1. Choose **Reporting language**. This affects both reports and chat replies.
 
-1. Click **Save**.
+1. Select **Save**.
 
     The instance is activated, appears under **My agents** in the Agents sidebar, and begins working on its next daily run.
 
 1. Select **Go to instance** to open your new Duplicate Agent and [get started][3].
 
-Before reviewing, select the **Chat** tab, then click <i class="ph ph-sliders-horizontal" aria-label="Filter icon"></i> and select **Pending** to narrow a busy queue to suggestions awaiting your decision.
+Before reviewing, select the **Chat** tab, then select <i class="ph ph-sliders-horizontal" aria-label="Filter icon"></i> and select **Pending** to narrow a busy queue to suggestions awaiting your decision.
 
 ## Merge suggestion: duplicate companies {#merge-companies}
 
@@ -96,13 +96,13 @@ Before reviewing, select the **Chat** tab, then click <i class="ph ph-sliders-ho
 
 1. Optionally, ask the agent (in chat) to tidy up the company you are keeping, before you approve.
 
-1. Click **Approve**.
+1. Select **Approve**.
 
     <Danger>
     **A merge cannot be undone.** Combining two companies permanently removes the extra record.
     </Danger>
 
-1. Click **Approve** in the confirmation dialog.
+1. Select **Approve** in the confirmation dialog.
 
     ![The merge confirmation dialog, spelling out exactly what will happen -screenshot][img6]
 
@@ -121,13 +121,13 @@ Before reviewing, select the **Chat** tab, then click <i class="ph ph-sliders-ho
 
     ![A duplicate-contact merge suggestion -screenshot][img3]
 
-1. Click **Combine and retire**.
+1. Select **Combine and retire**.
 
     <Danger>
     **This cannot be undone.** Combining two contacts permanently retires the extra record.
     </Danger>
 
-1. Click **Approve** in the confirmation dialog.
+1. Select **Approve** in the confirmation dialog.
 
     * The two contacts are combined into the one you are keeping.
     * Existing details on the kept contact stay as they are. Any blank fields are filled in from the other record.
@@ -145,7 +145,7 @@ The agent looks for **orphaned contacts**, people with no company whose email ad
 
     ![An orphaned-contact suggestion, with the Link contact and Ignore actions -screenshot][img4]
 
-1. Click **Link contact**.
+1. Select **Link contact**.
 
     The contact is connected to that company. Nothing else about the contact or the company is changed. Unlike a merge, this can be reversed later by unlinking the contact.
 
@@ -169,11 +169,11 @@ The Duplicate Agent's workspace has three tabs: **Chat**, **History**, and **Per
 
 ![The History tab, with the Period filter and refresh button. An entry expanded, showing its workflow ID and run ID -screenshot][img5]
 
-Click <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i> to pull in the latest entries. Click an entry to expand it and see its full workflow and run details.
+Select <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i> to pull in the latest entries. Select an entry to expand it and see its full workflow and run details.
 
 ## Tips and troubleshooting
 
-**What happens if I reject or ignore?** Nothing changes; both records are kept as they are.
+**What happens if I reject or ignore?** Nothing changes. Both records are kept as they are.
 
 **Can I decide on several suggestions at once?** Yes. Select multiple pending suggestions and use **Approve** or **Reject** from the bulk panel, the same way as any other agent.
 

@@ -3,8 +3,8 @@ title: Data Quality Agent
 description: Halten Sie die Firmen und Personen, die bereits in Ihrem CRM erfasst sind, korrekt, vollständig und aktuell, wobei jede vorgeschlagene Änderung von Ihnen geprüft und genehmigt wird.
 keywords: ['KI-Agent', 'Anreicherung', 'DSGVO-Einwilligung', 'unzustellbare E-Mail', 'Leadfeeder']
 author: digitaldiina, Claudia Dias
-date: 09.28.2026
-so_version: 12.5
+date: 10.01.2026
+so_version: 12.4
 content_type: concept
 tier: growth
 category: automation
@@ -22,11 +22,11 @@ related:
 language: de
 ---
 
-import DataQualityAgentPilotNote from "../../../snippets/ai/data-quality-agent-pilot-note.mdx";
+import DataQualityAgentPilotNote from "../../../snippets/ai/de/data-quality-agent-pilot-note.mdx";
 
 <DataQualityAgentPilotNote />
 
-Der Data Quality Agent hält die Firmen und Personen, die bereits in SuperOffice CRM erfasst sind, korrekt und vollständig. Jeden Tag arbeitet er einen Stapel Ihrer Datensätze durch, Firmen, bei denen Sie als Eigentümer zugewiesen sind, und sucht nach Qualitätsproblemen wie schlecht formatierten Telefonnummern, fehlenden Angaben und veralteten Informationen. Er recherchiert die Lücken anhand vertrauenswürdiger Geschäftsquellen und erstellt eine Reihe vorgeschlagener Korrekturen zur Prüfung durch Sie. Nichts wird in SuperOffice zurückgeschrieben, bevor Sie es genehmigen.
+Der Data Quality Agent hält die Firmen und Personen, die bereits in SuperOffice CRM erfasst sind, korrekt und vollständig. Jeden Tag arbeitet er einen Stapel Ihrer Datensätze durch, Firmen, bei denen Sie als Eigentümer eingetragen sind, und sucht nach Qualitätsproblemen wie schlecht formatierten Telefonnummern, fehlenden Angaben und veralteten Informationen. Er recherchiert die Lücken anhand vertrauenswürdiger Geschäftsquellen und erstellt eine Reihe vorgeschlagener Korrekturen zur Prüfung durch Sie. Nichts wird in SuperOffice zurückgeschrieben, bevor Sie es genehmigen.
 
 ## Was der Agent für Sie tut
 
@@ -34,11 +34,11 @@ Der Data Quality Agent hält die Firmen und Personen, die bereits in SuperOffice
 
 * **Ergänzt fehlende Angaben:** findet fehlende Firmeninformationen, wie Website, Beschreibung oder Branche, aus vertrauenswürdigen Geschäftsquellen.
 
-* **Kennzeichnet unzustellbare E-Mails:** hebt bei jedem Lauf Kontakt-E-Mail-Adressen hervor, die als unzustellbar erfasst wurden.
+* **Kennzeichnet unzustellbare E-Mails:** hebt bei jedem Lauf E-Mail-Adressen von Personen hervor, die als unzustellbar erfasst wurden.
 
-* **Prüft die DSGVO-Einwilligung:** kennzeichnet Kontakte mit fehlender oder widerrufener Einwilligung, damit Sie reagieren können.
+* **Prüft die DSGVO-Einwilligung:** kennzeichnet Personen mit fehlender oder widerrufener Einwilligung, damit Sie reagieren können.
 
-* **Erkennt Firmen ohne Kontakte:** zeigt Firmendatensätze ohne verknüpfte Personen und schlägt optional Kontakte zum Hinzufügen vor.
+* **Erkennt Firmen ohne Personen:** zeigt Firmendatensätze ohne verknüpfte Personen und schlägt optional Personen zum Hinzufügen vor.
 
 <Note>
 Der Agent schlägt vor, Sie entscheiden. Jede vorgeschlagene Änderung wird von Ihnen geprüft und genehmigt, bevor sie in SuperOffice geschrieben wird. Genehmigen Sie eine Prüfung nicht, ändert sich nichts.
@@ -50,7 +50,7 @@ Der Agent läuft **täglich**, einmal am Tag zu einer vom System festgelegten Ze
 
 ## Agent aktivieren {#setup}
 
-Sie sind automatisch der Genehmigende für die geprüften Datensätze und können eine Instanz erstellen.
+Sie sind automatisch der Genehmiger für die geprüften Datensätze und können eine Instanz erstellen.
 
 1. Wählen Sie <i class="ph ph-robot" aria-label="Agenten-Symbol"></i> **Agenten** im Navigator aus.
 
@@ -74,9 +74,9 @@ Sie sind automatisch der Genehmigende für die geprüften Datensätze und könne
 
 1. Wählen Sie die **Berichtssprache**. Diese wirkt sich sowohl auf Berichte als auch auf Chat-Antworten aus.
 
-1. Wählen Sie, wie viele Prüfaufgaben der Agent pro Tag erstellt (1-30). Der Standardwert für **Max. Aufgaben pro Tag** ist 10.
+1. Wählen Sie, wie viele Prüfaufgaben der Agent pro Tag erstellt (1 bis 30). Der Standardwert für **Max. Aufgaben pro Tag** ist 10.
 
-1. Aktivieren Sie optional **Kontakte anreichern**. Wenn aktiviert, schlägt der Agent auch fehlende Kontaktpersonen und korrigierte, unzustellbare E-Mail-Adressen vor, mit E-Mail- und Telefonangaben, wenn er sie findet. Ist die Option deaktiviert, kennzeichnet er nur die Lücken.
+1. Aktivieren Sie optional **Kontakte anreichern**. Wenn aktiviert, schlägt der Agent auch fehlende Personen und korrigierte, unzustellbare E-Mail-Adressen vor, mit E-Mail- und Telefonangaben, wenn er sie findet. Ist die Option deaktiviert, kennzeichnet er nur die Lücken.
 
 1. Klicken Sie auf **Weiter**.
 
@@ -102,11 +102,11 @@ Sie sind automatisch der Genehmigende für die geprüften Datensätze und könne
 
 1. Klicken Sie auf <i class="ph ph-sliders-horizontal" aria-label="Filter-Symbol"></i> und wählen Sie **Ausstehend**.
 
-1. Wählen Sie einen Firmen-Prüfungs-Thread (<i class="ph ph-buildings" aria-label="Firmen-Symbol"></i>) aus der Liste aus.
+1. Wählen Sie einen Prüfungs-Thread einer Firma (<i class="ph ph-buildings" aria-label="Firmen-Symbol"></i>) aus der Liste aus.
 
 1. Prüfen Sie die Übersichtskacheln **Zu aktualisierende Felder**, **Neue Kontakte**, **Vorhandene Kontakte** und **Manuelle Aktionen** sowie die Tabelle **Zu aktualisierende Felder**: Feld, Aktueller Wert, Vorgeschlagener Wert und Quelle, zum Beispiel ein Handelsregister, die Firmen-Homepage oder Leadfeeder.
 
-    Lücken, die der Agent nicht automatisch schließen konnte, werden unter **Manuelle Aktion erforderlich** aufgeführt; aktualisieren Sie diese direkt im Firmen- oder Kontaktdatensatz. Ein Kontakt, der wegen fehlender DSGVO-Einwilligung gekennzeichnet ist, wird als "wird vorübergehend gelöscht" angezeigt.
+    Lücken, die der Agent nicht automatisch schließen konnte, werden unter **Manuelle Aktion erforderlich** aufgeführt. Aktualisieren Sie diese direkt im Firmen- oder Personendatensatz. Eine Person, die wegen fehlender DSGVO-Einwilligung gekennzeichnet ist, wird als „wird vorübergehend gelöscht“ angezeigt.
 
     ![Eine Datenqualitätsprüfung mit der Tabelle Zu aktualisierende Felder und der Liste Manuelle Aktion erforderlich -screenshot][img4]
 
@@ -115,27 +115,27 @@ Sie sind automatisch der Genehmigende für die geprüften Datensätze und könne
 1. Klicken Sie auf **Genehmigen**.
 
     <Danger>
-    **Änderungen können nicht rückgängig gemacht werden.** Genehmigte Änderungen haben in dieser Version kein Rückgängig, prüfen Sie daher sorgfältig, bevor Sie genehmigen.
+    **Änderungen können nicht rückgängig gemacht werden.** Genehmigte Änderungen können nicht rückgängig gemacht werden. Prüfen Sie daher sorgfältig, bevor Sie genehmigen.
     </Danger>
 
-1. Klicken Sie im Bestätigungsdialog auf **Genehmigen**. Der Dialog gibt genau an, wie viele Felder aktualisiert werden.
+1. Klicken Sie im Bestätigungsdialog auf **Genehmigen**, zum Beispiel bei „1 Feld wird aktualisiert“.
 
     ![Der Bestätigungsdialog zur Genehmigung, der genau angibt, was passieren wird -screenshot][img5]
 
     * Alle Änderungen in der Prüfung werden gleichzeitig in SuperOffice geschrieben.
-    * Bei einem DSGVO-Einwilligungseintrag wird der Kontakt beim Genehmigen vorübergehend gelöscht, und SuperOffice entfernt ihn 30 Tage später endgültig.
+    * Bei einem DSGVO-Einwilligungseintrag wird die Person beim Genehmigen vorübergehend gelöscht, und SuperOffice entfernt ihn 30 Tage später endgültig.
 
-    ![Die Prüfung nach der Genehmigung mit dem Abzeichen Genehmigt und einer Zusammenfassung der angewendeten Änderungen -screenshot][img3]
+    ![Die Prüfung nach der Genehmigung mit dem Status Genehmigt und einer Zusammenfassung der angewendeten Änderungen -screenshot][img3]
 
-Sie genehmigen oder lehnen alle für eine Firma gefundenen Punkte als eine einzige Entscheidung ab; eine Genehmigung pro Feld gibt es noch nicht. Wenn die einzigen Befunde für eine Firma Dinge sind, die der Agent nicht beheben kann, etwa eine unzustellbare E-Mail ohne gefundenen Ersatz oder gar keine Kontakte, ist die Prüfung nur informativ: **Genehmigen** bestätigt lediglich, dass Sie sie gesehen haben, **Ablehnen** verwirft sie, und keine der beiden Aktionen schreibt etwas in SuperOffice.
+Sie genehmigen oder lehnen alle für eine Firma gefundenen Punkte als eine einzige Entscheidung ab. Eine Genehmigung pro Feld gibt es nicht. Wenn die einzigen Befunde für eine Firma Dinge sind, die der Agent nicht beheben kann, etwa eine unzustellbare E-Mail ohne gefundenen Ersatz oder gar keine Personen, ist die Prüfung nur informativ: **Genehmigen** bestätigt lediglich, dass Sie sie gesehen haben, **Ablehnen** verwirft sie, und keine der beiden Aktionen schreibt etwas in SuperOffice.
 
 ## Eine bestimmte Firma untersuchen
 
 1. Wählen Sie die Registerkarte **Chat** aus.
 
-1. Bitten Sie den Agenten im **Allgemeinen** Chat, eine bestimmte Firma jetzt zu prüfen, zum Beispiel *Prüfe die Daten von Acme*, oder suchen Sie die aktuellen Angaben einer Firma oder eines Kontakts.
+1. Bitten Sie den Agenten im Chat **Allgemein**, eine bestimmte Firma jetzt zu prüfen, zum Beispiel *Prüfe die Daten von Acme*, oder suchen Sie die aktuellen Angaben einer Firma oder einer Person.
 
-1. Findet er auf diesem Weg echte Änderungen vorzuschlagen, erstellt er dafür eine normale Prüfaufgabe, genau wie bei einer Firma aus dem täglichen geplanten Lauf. Prüfen Sie sie wie oben beschrieben.
+1. Findet er auf diesem Weg tatsächliche Änderungen, die er vorschlagen kann, erstellt er dafür eine normale Prüfaufgabe, genau wie bei einer Firma aus dem täglichen geplanten Lauf. Prüfen Sie sie wie oben beschrieben.
 
 ## Der Agenten-Arbeitsbereich {#workspace}
 
@@ -145,7 +145,7 @@ Der Arbeitsbereich des Data Quality Agent hat drei Registerkarten: **Chat**, **V
 |---|---|
 | Chat | Ein **Allgemeiner Chat**-Thread plus ein Thread pro Firma, die der Agent geprüft hat. |
 | Verlauf | Ein detailliertes Protokoll der verarbeiteten Firmen, vorgeschlagenen, genehmigten und angewendeten Änderungen sowie übersprungener Einträge mit Begründung. Wählen Sie einen **Zeitraum** (letzte 24 Stunden, 7, 30 oder 90 Tage), um ihn einzugrenzen. Lange Verläufe werden seitenweise angezeigt. |
-| Leistung | Zeigt, wie die Instanz über einen Zeitraum (letzte 7, 30 oder 90 Tage) performt: zur Genehmigung gesendete Änderungen, genehmigte Änderungen, abgelehnte Änderungen, abgelaufene Änderungen, bestätigte Prüfungen, verworfene Prüfungen, abgelaufene Prüfungen und abgeschlossene Läufe. Eine separate Gruppe **Anreicherung** zeigt, wie viele Firmen über Leadfeeder gegenüber dem Web angereichert wurden. |
+| Leistung | Zeigt die Leistung der Instanz über einen Zeitraum (letzte 7, 30 oder 90 Tage): zur Genehmigung gesendete Änderungen, genehmigte Änderungen, abgelehnte Änderungen, abgelaufene Änderungen, bestätigte Prüfungen, verworfene Prüfungen, abgelaufene Prüfungen und abgeschlossene Läufe. Eine separate Gruppe **Anreicherung** zeigt, wie viele Firmen über Leadfeeder gegenüber dem Web angereichert wurden. |
 
 ![Die Registerkarte Verlauf mit dem Zeitraumfilter und der Aktualisierungsschaltfläche -screenshot][img6]
 
@@ -153,9 +153,9 @@ Klicken Sie auf <i class="ph ph-arrow-clockwise" aria-label="Aktualisieren-Symbo
 
 ## Tipps und Fehlerbehebung
 
-**Was passiert, wenn ich ablehne?** Es wird nichts geschrieben; die Prüfung wird verworfen.
+**Was passiert, wenn ich ablehne?** Es wird nichts geschrieben. Die Prüfung wird verworfen.
 
-**Kann ich über mehrere Prüfungen gleichzeitig entscheiden?** Ja. Wählen Sie mehrere ausstehende Prüfungen aus und verwenden Sie **Genehmigen** oder **Ablehnen** im Sammelbereich. Das Genehmigen eines Stapels schreibt jede Änderung in jeder ausgewählten Prüfung gleichzeitig, daher gilt für jede von ihnen derselbe Hinweis "kann nicht rückgängig gemacht werden".
+**Kann ich über mehrere Prüfungen gleichzeitig entscheiden?** Ja. Wählen Sie mehrere ausstehende Prüfungen aus und verwenden Sie **Genehmigen** oder **Ablehnen** im Bereich für Sammelaktionen. Das Genehmigen eines Stapels schreibt jede Änderung in jeder ausgewählten Prüfung gleichzeitig. Daher gilt für jede von ihnen derselbe Hinweis „kann nicht rückgängig gemacht werden“.
 
 **Was passiert mit einer Prüfung, die ich nicht rechtzeitig bearbeite?** Eine auf Genehmigung wartende Prüfung hat eine begrenzte Lebensdauer, **standardmäßig 30 Tage**. Sobald sie innerhalb von 5 Tagen abläuft, erscheint ein Countdown-Banner auf ihrem Thread. Handeln Sie nicht rechtzeitig, wird sie automatisch verworfen, und der Agent macht weiter. Für eine abgelaufene Prüfung wird nichts geschrieben.
 

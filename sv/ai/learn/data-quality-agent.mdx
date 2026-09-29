@@ -1,10 +1,10 @@
 ---
 title: Data Quality Agent
-description: Håll företagen och kontakterna som redan finns i din CRM korrekta, kompletta och uppdaterade, där varje föreslagen ändring granskas och godkänns av dig.
+description: Håll företagen och kontakterna som redan finns i ditt CRM korrekta, kompletta och uppdaterade, där varje föreslagen ändring granskas och godkänns av dig.
 keywords: ['AI-agent', 'berikning', 'GDPR-samtycke', 'studsat e-postmeddelande', 'Leadfeeder']
 author: digitaldiina, Claudia Dias
-date: 09.28.2026
-so_version: 12.5
+date: 10.01.2026
+so_version: 12.4
 content_type: concept
 tier: growth
 category: automation
@@ -22,11 +22,11 @@ related:
 language: sv
 ---
 
-import DataQualityAgentPilotNote from "../../../snippets/ai/data-quality-agent-pilot-note.mdx";
+import DataQualityAgentPilotNote from "../../../snippets/ai/sv/data-quality-agent-pilot-note.mdx";
 
 <DataQualityAgentPilotNote />
 
-Data Quality Agent håller företagen och personerna som redan finns i SuperOffice CRM korrekta och kompletta. Varje dag går den igenom en batch av dina poster, företag där du är den tilldelade ägaren, och letar efter kvalitetsproblem som felformaterade telefonnummer, saknade uppgifter och inaktuell information. Den undersöker luckorna mot pålitliga företagskällor och tar fram ett förslag på ändringar för dig att granska. Ingenting skrivs tillbaka till SuperOffice förrän du godkänner det.
+Data Quality Agent håller företagen och kontakterna som redan finns i SuperOffice CRM korrekta och kompletta. Varje dag går den igenom en omgång av dina poster, företag där du är den tilldelade ägaren, och letar efter kvalitetsproblem som felformaterade telefonnummer, saknade uppgifter och inaktuell information. Den undersöker luckorna mot pålitliga företagskällor och tar fram förslag till ändringar för dig att granska. Ingenting skrivs tillbaka till SuperOffice förrän du godkänner det.
 
 ## Vad agenten gör för dig
 
@@ -38,10 +38,10 @@ Data Quality Agent håller företagen och personerna som redan finns i SuperOffi
 
 * **Kontrollerar GDPR-samtycke:** flaggar kontakter med saknat eller återkallat samtycke så att du kan agera på dem.
 
-* **Upptäcker företag utan kontakter:** hittar företagsposter som saknar kopplade personer och föreslår, valfritt, kontakter att lägga till.
+* **Upptäcker företag utan kontakter:** hittar företagsposter som saknar kopplade kontakter och kan föreslå kontakter att lägga till.
 
 <Note>
-Agenten föreslår; du bestämmer. Varje föreslagen ändring granskas och godkänns av dig innan den skrivs till SuperOffice. Om du inte godkänner en granskning ändras ingenting.
+Agenten föreslår. Du bestämmer. Varje föreslagen ändring granskas och godkänns av dig innan den skrivs till SuperOffice. Om du inte godkänner en granskning ändras ingenting.
 </Note>
 
 ## Schema
@@ -52,7 +52,7 @@ Agenten körs **dagligen**, en gång om dagen vid en systemtilldelad tidpunkt. D
 
 Du är automatiskt godkännare för de poster den granskar, och du kan skapa en instans.
 
-1. Välj <i class="ph ph-robot" aria-label="Agenter-ikon"></i> **Agenter** i Navigator.
+1. Välj <i class="ph ph-robot" aria-label="Agenter-ikon"></i> **Agenter** i Navigatorn.
 
     Första gången du öppnar sidan **Agenter** måste du logga in och godkänna AI-agenter i SuperOffice.
 
@@ -68,15 +68,15 @@ Du är automatiskt godkännare för de poster den granskar, och du kan skapa en 
 
 1. Ange ett unikt **Namn** för agentinstansen. **Detta kan inte ändras efter aktivering.**
 
-    ![Data Quality Agents Allmänna inställningar, med Namn, Beskrivning, Rapporteringsspråk och Schema -screenshot][img1]
+    ![Data Quality Agents allmänna inställningar, med Namn, Beskrivning, Rapporteringsspråk och Schema -screenshot][img1]
 
-1. Redigera valfritt den föreslagna **Beskrivningen** om du vill ha något annat.
+1. Redigera vid behov den föreslagna **Beskrivningen** om du vill ha något annat.
 
 1. Välj **Rapporteringsspråk**. Detta påverkar både rapporter och chattsvar.
 
 1. Välj hur många granskningsuppgifter agenten skapar per dag (1-30). Standardvärdet för **Max uppgifter per dag** är 10.
 
-1. Aktivera valfritt **Berika kontakter**. När detta är på föreslår agenten även saknade kontaktpersoner och korrigerade studsade e-postadresser, med e-post- och telefonuppgifter där den hittar dem. När det är av flaggar den bara luckorna.
+1. Aktivera vid behov **Berika kontakter**. När alternativet är aktiverat föreslår agenten även saknade kontakter och korrigerade studsade e-postadresser, med e-post- och telefonuppgifter där den hittar dem. När det är avaktiverat flaggar agenten bara luckorna.
 
 1. Klicka på **Nästa**.
 
@@ -86,13 +86,13 @@ Du är automatiskt godkännare för de poster den granskar, och du kan skapa en 
 
 * **Inbyggda källor:** företagsregister som väljs baserat på varje företags hemland, till exempel Brønnøysundregistret för Norge eller Northdata för Tyskland, plus företagets egen webbplats. Hanteras av SuperOffice och redigeras inte här.
 
-* **Leadfeeder:** används för att verifiera och berika företag. På som standard, debiteras alltid med **2x krediter** vid användning, via SuperOffice eget Leadfeeder-konto.
+* **Leadfeeder:** används för att verifiera och berika företag. Aktiverat som standard. Debiteras alltid med **2x krediter** vid användning, via SuperOffices eget Leadfeeder-konto.
 
-1. Välj om du vill använda **Leadfeeder** för att berika företag, eller endast förlita dig på de inbyggda registren. På som standard.
+1. Välj om du vill använda **Leadfeeder** för att berika företag, eller endast förlita dig på de inbyggda registren. Aktiverat som standard.
 
 1. Klicka på **Spara**.
 
-    Instansen aktiveras, visas under **Mina agenter** i Agenter-sidofältet och börjar arbeta på sin nästa dagliga körning.
+    Instansen aktiveras, visas under **Mina agenter** i Agenter-sidofältet och börjar arbeta vid nästa dagliga körning.
 
 1. Välj **Gå till instans** för att öppna din nya Data Quality Agent och [komma igång][3].
 
@@ -106,16 +106,16 @@ Du är automatiskt godkännare för de poster den granskar, och du kan skapa en 
 
 1. Granska sammanfattningsrutorna **Fält att uppdatera**, **Nya kontakter**, **Befintliga kontakter** och **Manuella åtgärder**, samt tabellen **Fält som ska uppdateras**: Fält, Nuvarande värde, Föreslaget värde och Källa, till exempel ett företagsregister, företagets webbplats eller Leadfeeder.
 
-    Luckor agenten inte kunde fylla automatiskt listas under **Manuell åtgärd krävs**; uppdatera dem direkt i företags- eller kontaktposten. En kontakt flaggad för saknat GDPR-samtycke visas som "kommer att mjukraderas".
+    Luckor som agenten inte kunde fylla automatiskt listas under **Manuell åtgärd krävs**. Uppdatera dem direkt i företags- eller kontaktposten. En kontakt flaggad för saknat GDPR-samtycke visas som "kommer att mjukraderas".
 
     ![En datakvalitetsgranskning, med tabellen Fält som ska uppdateras och listan Manuell åtgärd krävs -screenshot][img4]
 
-1. Be valfritt agenten i chatten att justera förslaget innan du godkänner.
+1. Be vid behov agenten i chatten att justera förslaget innan du godkänner.
 
 1. Klicka på **Godkänn**.
 
     <Danger>
-    **Ändringar kan inte ångras.** Godkända ändringar kan inte återställas i denna version, så granska noggrant innan du godkänner.
+    **Ändringar kan inte ångras.** Godkända ändringar kan inte ångras, så granska noggrant innan du godkänner.
     </Danger>
 
 1. Klicka på **Godkänn** i bekräftelsedialogrutan, som anger exakt hur många fält som kommer att uppdateras.
@@ -123,11 +123,11 @@ Du är automatiskt godkännare för de poster den granskar, och du kan skapa en 
     ![Bekräftelsedialogrutan för godkännande, som anger exakt vad som kommer att hända -screenshot][img5]
 
     * Alla ändringar i granskningen skrivs till SuperOffice på en gång.
-    * För ett GDPR-samtyckesärende mjukraderar godkännandet kontakten, och SuperOffice tar bort den permanent 30 dagar senare.
+    * För en post med GDPR-samtycke mjukraderar godkännandet kontakten, och SuperOffice tar bort den permanent 30 dagar senare.
 
     ![Granskningen efter godkännande, med märket Godkänd och en sammanfattning av de tillämpade ändringarna -screenshot][img3]
 
-Du godkänner eller avvisar allt som hittats för ett företag som ett enda beslut; det finns ännu inget godkännande per fält. Om de enda resultaten för ett företag är saker agenten inte kan åtgärda, till exempel en studsad e-postadress utan ersättning eller inga kontakter alls, är granskningen informativ: **Godkänn** bekräftar bara att du har sett den, **Avvisa** avfärdar den, och ingetdera skriver något till SuperOffice.
+Du godkänner eller avvisar allt som hittats för ett företag som ett enda beslut. Det finns inget godkännande per fält. Om de enda resultaten för ett företag är saker agenten inte kan åtgärda, till exempel en studsad e-postadress utan ersättning eller inga kontakter alls, är granskningen informativ: **Godkänn** bekräftar bara att du har sett den, **Avvisa** avfärdar den, och ingetdera skriver något till SuperOffice.
 
 ## Undersök ett specifikt företag
 
@@ -135,7 +135,7 @@ Du godkänner eller avvisar allt som hittats för ett företag som ett enda besl
 
 1. I den **Allmänna** chatten ber du agenten att kontrollera ett specifikt företag nu, till exempel *kontrollera Acmes data*, eller slå upp ett företags eller en kontakts aktuella uppgifter.
 
-1. Om den hittar äkta ändringar att föreslå på detta sätt väcker den en normal granskningsuppgift för det, precis som ett företag som hittats vid den dagliga schemalagda körningen. Granska den enligt beskrivningen ovan.
+1. Om den hittar verkliga ändringar att föreslå på detta sätt skapar den en vanlig granskningsuppgift för det, precis som ett företag som hittats vid den dagliga schemalagda körningen. Granska den enligt beskrivningen ovan.
 
 ## Agentens arbetsyta {#workspace}
 
@@ -143,8 +143,8 @@ Data Quality Agents arbetsyta har tre flikar: **Chatt**, **Historik** och **Pres
 
 | Flik | Beskrivning |
 |---|---|
-| Chatt | En **Allmän chatt**-tråd plus en tråd per företag agenten har granskat. |
-| Historik | En detaljerad logg över behandlade företag, föreslagna, godkända och tillämpade ändringar, och eventuella hoppade poster, med orsak. Välj en **Period** (senaste 24 timmarna, 7, 30 eller 90 dagar) för att avgränsa den. Långa historiker delas upp i sidor. |
+| Chatt | En **Allmän chatt**-tråd plus en tråd per företag som agenten har granskat. |
+| Historik | En detaljerad logg över behandlade företag, föreslagna, godkända och tillämpade ändringar, och eventuella överhoppade poster, med orsak. Välj en **Period** (senaste 24 timmarna, 7, 30 eller 90 dagar) för att avgränsa den. Långa historiker delas upp i sidor. |
 | Prestanda | Visar hur instansen har presterat under en period (senaste 7, 30 eller 90 dagarna): ändringar skickade för godkännande, godkända ändringar, avvisade ändringar, förfallna ändringar, bekräftade granskningar, avfärdade granskningar, förfallna granskningar och slutförda körningar. En separat **Berikning**-grupp visar hur många företag som berikades via Leadfeeder jämfört med webben. |
 
 ![Fliken Historik, med filtret Period och uppdateringsknappen -screenshot][img6]
@@ -153,13 +153,13 @@ Klicka på <i class="ph ph-arrow-clockwise" aria-label="Uppdatera-ikon"></i> fö
 
 ## Tips och felsökning
 
-**Vad händer om jag avvisar?** Ingenting skrivs; granskningen slängs.
+**Vad händer om jag avvisar?** Ingenting skrivs. Granskningen kasseras.
 
 **Kan jag besluta om flera granskningar samtidigt?** Ja. Markera flera väntande granskningar och använd **Godkänn** eller **Avvisa** från panelen för massåtgärder. Att godkänna en batch skriver varje ändring i varje markerad granskning på en gång, så samma varning om att det inte kan ångras gäller för var och en av dem.
 
-**Vad händer med en granskning jag inte hinner med i tid?** En granskning som väntar på godkännande har en begränsad livslängd, **30 dagar som standard**. Så snart den är inom 5 dagar från att förfalla visas en nedräkningsbanner i dess tråd. Om du inte agerar i tid slängs den automatiskt och agenten går vidare. Ingenting skrivs för en förfallen granskning.
+**Vad händer med en granskning jag inte hinner med i tid?** En granskning som väntar på godkännande har en begränsad livslängd, **30 dagar som standard**. Så snart den är inom 5 dagar från att förfalla visas en nedräkningsbanner i dess tråd. Om du inte agerar i tid kasseras den automatiskt och agenten går vidare. Ingenting skrivs för en förfallen granskning.
 
-**Jag avaktiverade instansen och mina väntande granskningar är borta.** Att avaktivera en instans slänger bort alla granskningar som väntar på godkännande, enligt beskrivningen i [Konfigurera AI-agenter][1]. Godkänn eller avvisa det du behöver först om du vill behålla det.
+**Jag avaktiverade instansen och mina väntande granskningar är borta.** Att avaktivera en instans tar bort alla granskningar som väntar på godkännande, enligt beskrivningen i [Konfigurera AI-agenter][1]. Godkänn eller avvisa det du behöver först om du vill behålla det.
 
 Endast instansens ägare kan ändra dess inställningar eller radera den.
 

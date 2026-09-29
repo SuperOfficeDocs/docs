@@ -6,9 +6,9 @@ keywords: ['AI', 'kategorisering', 'maskinlæring', 'træning']
 author: digitaldiina
 date: 10.01.2026
 so_version: 12.4
-content_type: howto
+content_type: tutorial
 license: aiplatform, categorization
-tier: core
+tier: growth
 category: automation
 topic: ai
 platform: web
@@ -19,12 +19,12 @@ redirect_from: /da/ai/configuration-ai/getting-started
 userflow_index: true
 related:
   - Sådan opretter du et udvalg: /da/search-options/selection/learn/create
-  - Kategorisering af sager: /da/request/learn/handle-request-ai#categorization
+  - Brug foreslåede kategorier: /da/request/learn/handle-request-ai
   - Andre AI-tjenester: /da/ai/learn/index
 language: da
 ---
 
-Category Insight bruger maskinlæring til at foreslå kategorier for indkommende sager baseret på deres indhold. Opret først et udvalg af eksisterende sager, træn derefter modellen, og aktivér til sidst forslagene. En sagsbehandler skal godkende forslaget, før kategorien anvendes.
+Category Insight bruger maskinlæring til at foreslå kategorier for indkommende sager baseret på deres indhold. Opret først et udvalg af eksisterende sager, træn derefter modellen, og aktivér til sidst forslagene. Sagsbehandlere vælger, om de vil anvende hvert forslag.
 
 <Note>
 Category Insight kræver SuperOffice AI Platform og en **Categorization-licens** eller CRM Suite Growth. SuperOffice AI er kun tilgængelig for CRM Online.
@@ -38,7 +38,7 @@ Du skal først oprette et udvalg af sager i SuperOffice for at træne AI-modelle
 
 1. Klik på <i class="ph ph-list-magnifying-glass" aria-label="Find ikon"></i> **Find** eller gå til **Ny** > **Udvalg**.
 
-    ![Nye udvalgsmuligheder i Sales-klienten -screenshot][img1]
+    ![Nye udvalgsmuligheder -screenshot][img1]
 
 1. Vælg **Sag** som udvalgstype. Brug **Find sag** eller vælg fra **Typiske søgninger**.
 
@@ -96,7 +96,7 @@ Efter vellykket træning:
 
 ## 5. Resultat: kategoriforslag i sager
 
-Når funktionen er aktiveret, vises en foreslået kategori i sagens bund. Kategorien anvendes ikke automatisk. Sagsbehandleren skal vælge linket for at anvende kategorien; derefter forsvinder forslaget. Se [kategorisering i sager][2].
+Når funktionen er aktiveret, ser sagsbehandlere en foreslået kategori i sagens sidefod. De skal vælge forslaget for at anvende det. Kategorien anvendes ikke automatisk. Se [Brug foreslåede kategorier][2] for trinnene i sagsbehandlingen.
 
 Hvis der ikke er et match, vises intet forslag.
 

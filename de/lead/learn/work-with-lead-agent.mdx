@@ -4,7 +4,7 @@ description: Prüfen und genehmigen Sie die von Lead Agent gefundenen Interessen
 keywords: ['Lead Agent', 'Interessentenbericht', 'Leads finden', 'Lead genehmigen', 'Lead ablehnen', 'KI-Agenten']
 author: digitaldiina, Claudia Dias
 date: 10.01.2026
-so_version: 12.5
+so_version: 12.4
 content_type: howto
 tier: plus
 category: sale
@@ -21,11 +21,11 @@ related:
 language: de
 ---
 
-import LeadAgentPilotNote from "../../../snippets/ai/lead-agent-pilot-note.mdx";
+import LeadAgentPilotNote from "../../../snippets/ai/de/lead-agent-pilot-note.mdx";
 
 <LeadAgentPilotNote />
 
-Nachdem [Lead Agent eingerichtet wurde][1], läuft er täglich im Hintergrund und legt Ihnen Interessenten zur Prüfung vor. Diese Seite behandelt das Prüfen und Genehmigen dessen, was er findet.
+Nachdem [Lead Agent eingerichtet wurde][1], läuft er täglich im Hintergrund und legt Ihnen Interessenten zur Prüfung vor. Diese Seite beschreibt, wie Sie die gefundenen Interessenten prüfen und genehmigen.
 
 ## Ihren Agenten finden
 
@@ -56,12 +56,12 @@ Die Registerkarte **Verlauf** ist ein detailliertes Protokoll aller Aktivitäten
 ![Die Registerkarte Verlauf und ihr Zeitraumfilter -screenshot][img6]
 
 <Note>
-Diese Registerkarte ist nur für den Eigentümer des Agenten und dessen Genehmigende verfügbar.
+Diese Registerkarte ist nur für den Eigentümer des Agenten und dessen Genehmiger verfügbar.
 </Note>
 
 ### Leistung
 
-Die Registerkarte **Leistung** zeigt, wie die Instanz über einen von Ihnen gewählten Zeitraum abschneidet: verarbeitete Links, qualifizierte Leads, recherchierte Leads, zur Genehmigung gesendete Leads, genehmigte, abgelehnte, abgelaufene und abgeschlossene Läufe. Jede Kennzahl erscheint als Trenddiagramm.
+Die Registerkarte **Leistung** zeigt, wie die Instanz über einen von Ihnen gewählten Zeitraum abschneidet: verarbeitete Links, qualifizierte Leads, recherchierte Leads, zur Genehmigung gesendete, genehmigte, abgelehnte und abgelaufene Leads sowie abgeschlossene Läufe. Jede Kennzahl erscheint als Trenddiagramm.
 
 ![Die Registerkarte Leistung -screenshot][img7]
 
@@ -72,7 +72,7 @@ Die Registerkarte **Leistung** zeigt, wie die Instanz über einen von Ihnen gew�
 1. Wählen Sie einen Lead aus der Liste aus, um den **Interessentenbericht** des Agenten anzuzeigen.
 
     * Der Bericht öffnet sich zunächst eingeklappt auf das Wesentliche: eine Passgenauigkeitsbewertung, die verwendeten Quellen und wichtige Kennzahlen.
-    * Klicken Sie auf **Bericht erweitern** für die vollständige Ausarbeitung: eine Firmenzusammenfassung, den zu speichernden Datensatz (Name, Geschäft, Adresse, Land, Telefon, E-Mail, Website und alle gefundenen Kontakte) und warum die Firma gut passt, mit Quellenangabe.
+    * Klicken Sie auf **Bericht erweitern**, um den vollständigen Bericht anzuzeigen: eine Firmenzusammenfassung, den zu speichernden Datensatz (Name, Geschäft, Adresse, Land, Telefon, E-Mail, Website und alle gefundenen Personen) und warum die Firma gut passt, mit Quellenangaben.
 
 1. Klicken Sie optional auf <i class="ph ph-file-text" aria-label="Dokument-Symbol"></i>, um den Bericht als PDF herunterzuladen.
 
@@ -93,15 +93,15 @@ Die Registerkarte **Leistung** zeigt, wie die Instanz über einen von Ihnen gew�
 
 Wenn Sie sich entscheiden, einen Interessenten in SuperOffice zu speichern:
 
-1. Wählen oder erstellen Sie optional eine **statische Selektion**, um die Firma und alle Kontakte bei der Genehmigung zur Selektion hinzuzufügen.
+1. Wählen oder erstellen Sie optional eine **statische Selektion**, um die Firma und alle Personen bei der Genehmigung zur Selektion hinzuzufügen.
 
-1. Klicken Sie auf **Genehmigen** beim ausgewählten Interessenten.
+1. Klicken Sie beim ausgewählten Interessenten auf **Genehmigen**.
 
     ![Der Bestätigungsdialog zum Genehmigen eines Leads -screenshot][img5]
 
 1. Prüfen Sie im Bestätigungsdialog, was in SuperOffice gespeichert wird, und klicken Sie auf **Genehmigen**.
 
-    * Der Genehmigende wird als Eigentümer festgelegt.
+    * Der Genehmiger wird als Eigentümer festgelegt.
     * Zwei Notizen werden hinzugefügt: Firmenzusammenfassung und Produktangebote.
 
 ![Der Lead nach der Bestätigung, markiert als Genehmigt -screenshot][img5b]
@@ -110,8 +110,8 @@ Wenn Sie sich entscheiden, einen Interessenten in SuperOffice zu speichern:
 
 Wenn Sie sich entscheiden, einen Interessenten nicht zu SuperOffice hinzuzufügen, haben Sie zwei Möglichkeiten:
 
-* **Ignorieren:** der Lead bleibt in der Liste, bis er abläuft, und nichts wird gespeichert.
-* **Ablehnen:** der Lead wird übersprungen und nichts wird gespeichert. So wissen andere Genehmigende, dass der Lead bereits geprüft wurde.
+* **Ignorieren:** Der Lead bleibt in der Liste, bis er abläuft, und nichts wird gespeichert.
+* **Ablehnen:** Der Lead wird übersprungen und nichts wird gespeichert. So wissen andere Genehmiger, dass der Lead bereits geprüft wurde.
 
 ![Der Bestätigungsdialog zum Ablehnen einer Aufgabe -screenshot][img12]
 
@@ -127,11 +127,11 @@ Verwenden Sie den Filter, um nur abgelehnte Interessenten anzuzeigen.
 
 ## Fehlerbehebung
 
-**Ein Lead, den ich geprüft habe, ist verschwunden.** Ein auf Genehmigung wartender Lead hat eine begrenzte Lebensdauer: standardmäßig 30 Tage. Sobald er innerhalb von 5 Tagen vor Ablauf ist, erscheint ein Countdown-Banner. Wird er nicht rechtzeitig genehmigt oder abgelehnt, läuft er ab, und nichts wird in Ihrem CRM gespeichert.
+**Ein Lead, den ich geprüft habe, ist verschwunden.** Ein auf Genehmigung wartender Lead hat eine begrenzte Lebensdauer: standardmäßig 30 Tage. Sobald weniger als 5 Tage bis zum Ablauf verbleiben, erscheint ein Countdown-Banner. Wird er nicht rechtzeitig genehmigt oder abgelehnt, läuft er ab, und nichts wird in Ihrem CRM gespeichert.
 
 **Ich habe die Instanz deaktiviert, und meine ausstehenden Leads sind weg.** Das Deaktivieren einer Instanz verwirft alle auf Genehmigung wartenden Leads. Genehmigen oder lehnen Sie zuerst ab, was Sie behalten möchten.
 
-**Ich sehe die Einstellungen einer Instanz, kann aber nichts ändern.** Sie sind Genehmigender, nicht Eigentümer. Nur der Eigentümer der Instanz kann Änderungen an ihrer Einrichtung speichern. Ein Genehmigender, der nicht der Eigentümer ist, kann sie ansehen, aber nicht bearbeiten.
+**Ich sehe die Einstellungen einer Instanz, kann aber nichts ändern.** Sie sind Genehmiger, nicht Eigentümer. Nur der Eigentümer der Instanz kann Änderungen an ihrer Einrichtung speichern. Ein Genehmiger, der nicht der Eigentümer ist, kann sie ansehen, aber nicht bearbeiten.
 
 [1]: set-up-lead-agent
 

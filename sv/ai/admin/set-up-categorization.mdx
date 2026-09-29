@@ -6,9 +6,9 @@ keywords: ['AI', 'kategorisering', 'maskininlärning', 'träning']
 author: digitaldiina
 date: 10.01.2026
 so_version: 12.4
-content_type: howto
+content_type: tutorial
 license: aiplatform, categorization
-tier: core
+tier: growth
 category: automation
 topic: ai
 platform: web
@@ -19,12 +19,12 @@ redirect_from: /sv/ai/configuration-ai/getting-started
 userflow_index: true
 related:
   - Hur du skapar ett urval: /sv/search-options/selection/learn/create
-  - Kategorisering av ärenden: /sv/request/learn/handle-request-ai#categorization
+  - Använd föreslagna kategorier: /sv/request/learn/handle-request-ai
   - Andra AI-tjänster: /sv/ai/learn/index
 language: sv
 ---
 
-Category Insight använder maskininlärning för att föreslå kategorier för inkommande ärenden baserat på deras innehåll. Skapa först ett urval av befintliga ärenden, träna sedan modellen och aktivera därefter förslagen. En handläggare måste godkänna förslaget innan kategorin används.
+Category Insight använder maskininlärning för att föreslå kategorier för inkommande ärenden baserat på deras innehåll. Skapa först ett urval av befintliga ärenden, träna sedan modellen och aktivera därefter förslagen. Handläggare väljer själva om de tillämpar varje förslag.
 
 <Note>
 Category Insight kräver SuperOffice AI Platform och en **Categorization-licens** eller CRM Suite Growth. SuperOffice AI är endast tillgängligt för CRM Online.
@@ -38,7 +38,7 @@ Du måste först skapa ett urval av ärenden i SuperOffice för att träna AI-mo
 
 1. Klicka på <i class="ph ph-list-magnifying-glass" aria-label="Sök ikon"></i> **Sök** eller gå till **Ny** > **Urval**.
 
-    ![Nya urvalsalternativ i Sales-klienten -screenshot][img1]
+    ![Nya urvalsalternativ -screenshot][img1]
 
 1. Välj **Ärende** som urvalstyp. Använd **Sök ärende** eller välj från **Typiska sökningar**.
 
@@ -96,7 +96,7 @@ Efter framgångsrik träning:
 
 ## 5. Resultat: kategoriförslag i ärenden
 
-När funktionen är aktiverad visas en föreslagen kategori längst ned i ärendet. Kategorin tillämpas inte automatiskt. Handläggaren måste välja länken för att tillämpa kategorin; därefter försvinner förslaget. Se [kategorisering i ärenden][2].
+När funktionen är aktiverad visas en föreslagen kategori längst ned i ärendet. Kategorin tillämpas inte automatiskt. Handläggaren måste välja länken för att tillämpa kategorin. Därefter försvinner förslaget. Se [Använd föreslagna kategorier][2] för stegen vid ärendehantering.
 
 Om det inte finns någon träff visas inget förslag.
 

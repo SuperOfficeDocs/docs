@@ -1,14 +1,14 @@
 ---
 uid: help-de-ai-categorization-setup
-title: AI-basierte Kategorisierung einrichten
+title: KI-basierte Kategorisierung einrichten
 description: So trainieren und konfigurieren Sie die Kategorisierung in SuperOffice AI
-keywords: ['AI', 'Kategorisierung', 'maschinelles Lernen', 'Training']
+keywords: ['KI', 'Kategorisierung', 'maschinelles Lernen', 'Training']
 author: digitaldiina
 date: 10.01.2026
 so_version: 12.4
-content_type: howto
+content_type: tutorial
 license: aiplatform, categorization
-tier: core
+tier: growth
 category: automation
 topic: ai
 platform: web
@@ -19,12 +19,12 @@ redirect_from: /de/ai/configuration-ai/getting-started
 userflow_index: true
 related:
   - Wie man eine Selektion erstellt: /de/search-options/selection/learn/create
-  - Kategorisierung von Anfragen: /de/request/learn/handle-request-ai#categorization
-  - Andere AI-Dienste: /de/ai/learn/index
+  - Vorgeschlagene Kategorien verwenden: /de/request/learn/handle-request-ai
+  - Andere KI-Services: /de/ai/learn/index
 language: de
 ---
 
-Category Insight nutzt maschinelles Lernen, um Kategorien für eingehende Anfragen anhand ihres Inhalts vorzuschlagen. Erstellen Sie zuerst eine Selektion bestehender Anfragen, trainieren Sie dann das Modell und aktivieren Sie anschließend die Vorschläge. Ein Bearbeiter muss den Vorschlag bestätigen, bevor die Kategorie angewendet wird.
+Category Insight nutzt maschinelles Lernen, um Kategorien für eingehende Anfragen anhand ihres Inhalts vorzuschlagen. Um Vorschläge verfügbar zu machen, erstellen Sie eine Selektion bestehender Anfragen, trainieren Sie das Modell und aktivieren Sie die Vorschläge. Bearbeiter von Anfragen entscheiden, ob sie jeden Vorschlag anwenden.
 
 <Note>
 Category Insight erfordert die SuperOffice AI Platform und eine **Categorization-Lizenz** oder CRM Suite Growth. SuperOffice AI ist nur für CRM Online verfügbar.
@@ -34,11 +34,11 @@ Aktivieren Sie zuerst die [KI-Funktionen][1] für Ihre Organisation.
 
 ## 1. Eine Selektion von Anfragen erstellen
 
-Sie müssen zunächst eine Selektion von Anfragen in SuperOffice erstellen, um das AI-Modell zu trainieren.
+Sie müssen zunächst eine Selektion von Anfragen in SuperOffice erstellen, um das KI-Modell zu trainieren.
 
 1. Klicken Sie auf <i class="ph ph-list-magnifying-glass" aria-label="Suchen-Symbol"></i> **Suchen** oder gehen Sie zu **Neu** > **Selektion**.
 
-    ![Neue Selektionsoptionen im Sales-Client -screenshot][img1]
+    ![Neue Selektionsoptionen -screenshot][img1]
 
 1. Wählen Sie **Anfrage** als Selektionstyp. Verwenden Sie **Anfrage suchen** oder wählen Sie aus **Typische Suchen**.
 
@@ -65,11 +65,11 @@ Nur die ersten 5.000 Anfragen in der Selektion werden analysiert. Wählen Sie ei
 ## 2. Die Selektion in Einstellungen und Verwaltung auswählen
 
 1. Öffnen Sie **Einstellungen und Verwaltung**.
-1. Wählen Sie **AI-Dienste** aus dem Navigator.
+1. Wählen Sie **KI-Services** aus dem Navigator.
 1. Unter **Kategorisierung** öffnen Sie das Dropdown-Menü und suchen Sie nach dem Selektionsnamen.
 1. Wählen Sie die korrekte Anfrageselektion.
 
-    ![Anfrageselektion in AI-Diensten auswählen -screenshot][img6]
+    ![Anfrageselektion in den KI-Services auswählen -screenshot][img6]
 
 ## 3. Die Anfrageselektion analysieren
 
@@ -90,13 +90,13 @@ Große Datensätze können Stunden oder sogar Tage zur Analyse benötigen.
 
 Nach erfolgreichem Training:
 
-1. Aktivieren Sie das Kontrollkästchen **AI verwenden, um Kategorien vorzuschlagen**, um die Funktion zu aktivieren.
+1. Aktivieren Sie das Kontrollkästchen **KI verwenden, um Kategorien vorzuschlagen**, um die Funktion zu aktivieren.
 
-    ![Kontrollkästchen zum Aktivieren von AI-Vorschlägen -screenshot][img9]
+    ![Kontrollkästchen zum Aktivieren von KI-Vorschlägen -screenshot][img9]
 
 ## 5. Ergebnis: Kategorievorschläge in Anfragen
 
-Nach der Aktivierung erscheint eine vorgeschlagene Kategorie in der Fußzeile der Anfrage. Die Kategorie wird nicht automatisch angewendet. Der Bearbeiter muss den Link auswählen, um die Kategorie anzuwenden; danach verschwindet der Vorschlag. Siehe [Kategorisierung in Anfragen][2].
+Nach der Aktivierung sehen Bearbeiter von Anfragen eine vorgeschlagene Kategorie in der Fußzeile der Anfrage. Sie müssen den Vorschlag auswählen, um ihn anzuwenden. Die Kategorie wird nicht automatisch angewendet. Die Schritte zur Bearbeitung von Anfragen finden Sie unter [Vorgeschlagene Kategorien verwenden][2].
 
 Wenn es keine Übereinstimmung gibt, wird kein Vorschlag angezeigt.
 
@@ -104,7 +104,7 @@ Wenn es keine Übereinstimmung gibt, wird kein Vorschlag angezeigt.
 
 Sie können jederzeit eine neue oder aktualisierte Selektion erneut analysieren:
 
-1. Gehen Sie zu **Einstellungen und Verwaltung** > **AI-Dienste**.
+1. Gehen Sie zu **Einstellungen und Verwaltung** > **KI-Services**.
 1. Unter **Kategorisierung** wählen Sie eine neue Selektion.
 1. Wählen Sie **Anfragen analysieren**, um erneut zu trainieren. Prüfen Sie **Letztes Training**, bevor Sie das neue Modell verwenden.
 

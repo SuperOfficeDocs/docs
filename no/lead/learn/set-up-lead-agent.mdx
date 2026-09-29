@@ -1,10 +1,10 @@
 ---
 title: Sett opp Lead Agent
-description: Konfigurer og aktiver en Lead Agent-instans - generelle innstillinger, din ideelle kundeprofil, kilder og godkjennere.
+description: "Konfigurer og aktiver en Lead Agent-instans: generelle innstillinger, din ideelle kundeprofil, kilder og godkjennere."
 keywords: ['lead agent-oppsett', 'ideell kundeprofil', 'ICP', 'leadkilder', 'godkjennere']
 author: digitaldiina, Claudia Dias
-date: 09.28.2026
-so_version: 12.5
+date: 10.01.2026
+so_version: 12.4
 content_type: howto
 tier: plus
 category: sale
@@ -21,7 +21,7 @@ related:
 language: no
 ---
 
-import LeadAgentPilotNote from "../../../snippets/ai/lead-agent-pilot-note.mdx";
+import LeadAgentPilotNote from "../../../snippets/ai/no/lead-agent-pilot-note.mdx";
 
 <LeadAgentPilotNote />
 
@@ -38,13 +38,13 @@ Oppsettveiviseren for Lead Agent har 4 obligatoriske trinn.
 
 Hvis du ennå ikke har aktivert Lead Agent, må du gjøre det først.
 
-1. Velg <i class="ph ph-robot" aria-label="Agenter-ikon"></i> **Agenter** i Navigator.
+1. Velg <i class="ph ph-robot" aria-label="Agenter-ikon"></i> **Agenter** i navigatoren.
 
     Første gang du åpner **Agenter**-siden, må du logge inn og godkjenne AI-agenter i SuperOffice.
 
-1. Klikk **Bla gjennom agenter** øverst til høyre i **Agenter**-oversikten og velg **Lead Agent**.
+1. Klikk på **Bla gjennom agenter** øverst til høyre i **Agenter**-oversikten og velg **Lead Agent**.
 
-1. Klikk **Aktiver**. Dette åpner oppsettveiviseren.
+1. Klikk på **Aktiver**. Dette åpner oppsettveiviseren.
 
 ## Generelle innstillinger
 
@@ -57,23 +57,23 @@ Hvis du ennå ikke har aktivert Lead Agent, må du gjøre det først.
     * Språk påvirker både rapporter og chattesvar.
 
     <Note>
-    **Lokasjonen i den ideelle kundeprofilen din overstyrer Land.** **Landet** du velger, er bare en standardverdi. Hvis du for eksempel velger Tyskland, men nevner Frankrike i profilen din (neste trinn), vil agenten søke i franske registre og skanne franske leads.
+    **Stedet du oppgir i den ideelle kundeprofilen, overstyrer Land.** **Landet** du velger, er bare en standardverdi. Hvis du for eksempel velger Tyskland, men nevner Frankrike i profilen din (neste trinn), vil agenten søke i franske registre og skanne franske leads.
     </Note>
 
-1. Velg hvor mange godkjenningsoppgaver agenten skal opprette per dag (1–30). Standardverdien for **Maks oppgaver per dag** er 10.
+1. Velg hvor mange godkjenningsoppgaver agenten skal opprette per dag (1-30). Standardverdien for **Maks oppgaver per dag** er 10.
 
-1. Aktiver eventuelt **Legg til kontakter**. Når dette er på, finner agenten også kontaktpersoner for hver lead, med e-post- og telefonopplysninger. Når det er av, jobber den bare på firmanivå.
+1. Aktiver eventuelt **Legg til kontakter**. Når dette er på, finner agenten også personer for hver lead, med e-post- og telefonopplysninger. Når det er av, jobber den bare på firmanivå.
 
-1. Klikk **Neste**.
+1. Klikk på **Neste**.
 
 ![Oppsettveiviseren for Lead Agent, Generelle innstillinger -screenshot][img11]
 
 ## Ideell kunde
 
-Dette definerer hva som regnes som en god lead, og hvordan agenten skal opptre. Dekk det som er viktig, som bransje, størrelse og region, samt diskvalifiserende faktorer som «ikke offentlig sektor».
+Dette definerer hva som regnes som en god lead, og hvordan agenten skal jobbe. Ta med det som er viktig, som bransje, størrelse og region, samt diskvalifiserende faktorer som «ikke offentlig sektor».
 
-1. Beskriv i klartekst hvilke kunder du ønsker, og hvordan agenten skal jobbe. Vær spesifikk, for eksempel: *Fokuser på firmaer som viser vekstsignaler, som nylig finansiering, nye kontorer eller ansettelser.*
-1. Klikk **Neste**.
+1. Beskriv med vanlige ord hvilke kunder du ønsker, og hvordan agenten skal jobbe. Vær spesifikk, for eksempel: *Fokuser på firmaer som viser vekstsignaler, som nylig finansiering, nye kontorer eller ansettelser.*
+1. Klikk på **Neste**.
 
 <Tip>
 Finjuster instruksjonene når som helst. Endringene gjelder for fremtidige kjøringer.
@@ -89,18 +89,18 @@ Finjuster instruksjonene når som helst. Endringene gjelder for fremtidige kjør
 * **Berikelseskilder:** brukes til å verifisere og berike hver lead. **Innebygde kilder** er foretaksregistre valgt basert på landet ditt, for eksempel Brønnøysundregistrene for Norge eller Northdata for Tyskland.
 
 1. Legg til relevante nyhetskilder:
-    1. Klikk **Legg til en kilde**.
-    2. Angi en etikett og en nettadresse.
-    3. Klikk **Legg til kilde**.
+    1. Klikk på **Legg til en kilde**.
+    1. Angi en etikett og en nettadresse.
+    1. Klikk på **Legg til kilde**.
 
     ![Legge til en nyhetskilde -screenshot][img15]
 
-1. Velg om du vil bruke **Leadfeeder** til å berike og prioritere oppdagede leads, eller bare stole på web-skraping. På som standard.
-1. Klikk **Neste**.
+1. Velg om du vil bruke **Leadfeeder** til å berike og prioritere oppdagede leads, eller bare bruke nettskraping. Slått på som standard.
+1. Klikk på **Neste**.
 
 ## Godkjennere
 
-Velg hvem som gjennomgår og godkjenner leadene denne agenten finner. Å godkjenne en lead gjør den personen til eieren av den. For Lead Agent kan godkjenneren være en annen enn instanseieren.
+Velg hvem som gjennomgår og godkjenner leadene denne agenten finner. Når du godkjenner en lead, blir vedkommende eier av den. For Lead Agent kan godkjenneren være en annen enn instanseieren.
 
 Hvordan leads **deles** mellom godkjennere, avhenger av hvor mange du legger til:
 
@@ -118,7 +118,7 @@ Valget om flere godkjennere **kan ikke endres etter at instansen er opprettet**.
 ## Lagre
 
 1. Bekreft at navnet og valget for flere godkjennere er slik du ønsker. Dette er din siste sjanse til å endre disse to innstillingene.
-1. Klikk **Lagre**.
+1. Klikk på **Lagre**.
 1. Velg **Gå til instans** for å åpne din nye Lead Agent og [komme i gang][1].
 
 ![Bekreftelse på at instansen er aktivert -screenshot][img16]

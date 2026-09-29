@@ -1,10 +1,10 @@
 ---
 title: Duplicate Agent
-description: Finden und zusammenführen Sie doppelte Firmen und Kontakte, und verbinden Sie verwaiste Kontakte, die ihre Firma verloren haben, wieder, wobei jede Änderung von Ihnen genehmigt wird.
-keywords: ['Datenqualität', 'KI-Agent', 'Firmen zusammenführen', 'doppelte Firmen', 'doppelte Kontakte', 'doppelte Personen', 'verwaister Kontakt']
+description: Finden und führen Sie doppelte Firmen und Personen zusammen und verbinden Sie verwaiste Personen, die ihre Firma verloren haben, wieder mit ihrer Firma. Jede Änderung wird von Ihnen genehmigt.
+keywords: ['Datenqualität', 'KI-Agent', 'Firmen zusammenführen', 'doppelte Firmen', 'doppelte Personen', 'verwaiste Person']
 author: digitaldiina, Claudia Dias
-date: 09.28.2026
-so_version: 12.5
+date: 10.01.2026
+so_version: 12.4
 content_type: concept
 tier: growth
 category: automation
@@ -22,37 +22,37 @@ related:
 language: de
 ---
 
-import DuplicateAgentPilotNote from "../../../snippets/ai/duplicate-agent-pilot-note.mdx";
+import DuplicateAgentPilotNote from "../../../snippets/ai/de/duplicate-agent-pilot-note.mdx";
 
 <DuplicateAgentPilotNote />
 
-Der Duplicate Agent räumt Ihr SuperOffice CRM von innen auf. Jeden Tag prüft er einen Stapel Ihrer Firmendatensätze auf mögliche Duplikate, sucht nach zwei Kontaktdatensätzen, die dieselbe Person zu sein scheinen, und findet verwaiste Kontakte, die keine Firma haben, deren E-Mail aber auf eine hinweist. Er schlägt für jeden Fall eine Zusammenführung oder eine Verknüpfung vor und unternimmt nichts, bis Sie genehmigen.
+Der Duplicate Agent räumt Ihr SuperOffice CRM von innen auf. Jeden Tag prüft er einen Stapel Ihrer Firmendatensätze auf mögliche Duplikate, sucht nach zwei Personendatensätzen, die dieselbe Person zu sein scheinen, und findet verwaiste Personen, die keine Firma haben, deren E-Mail aber auf eine hinweist. Er schlägt für jeden Fall eine Zusammenführung oder eine Verknüpfung vor und unternimmt nichts, bis Sie genehmigen.
 
 ## Was der Agent für Sie tut
 
-* **Findet doppelte Firmen:** vergleicht Ihre Firmen anhand von Namen und anderen Angaben, wie Handelsregisternummer, Domain und Telefonnummer, um mögliche Duplikate zu finden.
+* **Findet doppelte Firmen:** vergleicht Ihre Firmen anhand von Namen und anderen Angaben, wie Organisationsnummer, Domain und Telefonnummer, um mögliche Duplikate zu finden.
 
-* **Findet doppelte Kontakte:** sucht innerhalb derselben Firma nach zwei Kontaktdatensätzen, die dieselbe Person zu sein scheinen.
+* **Findet doppelte Personen:** sucht innerhalb derselben Firma nach zwei Personendatensätzen, die dieselbe Person zu sein scheinen.
 
-* **Bewertet jeden Treffer:** bewertet jeden Kandidaten von 1-5 und schlägt nur die stärksten Übereinstimmungen vor.
+* **Bewertet jeden Treffer:** bewertet jeden Kandidaten auf einer Skala von 1 bis 5 und schlägt nur die stärksten Übereinstimmungen vor.
 
 * **Schlägt eine sichere Zusammenführung vor:** empfiehlt bei Firmen immer, den ältesten Datensatz zu behalten.
 
-* **Verbindet verwaiste Kontakte wieder:** findet Kontakte ohne Firma, deren E-Mail auf eine hinweist, und schlägt vor, sie zu verknüpfen.
+* **Verbindet verwaiste Personen wieder:** findet Personen ohne Firma, deren E-Mail auf eine hinweist, und schlägt vor, sie zu verknüpfen.
 
 <Note>
-Der Agent schlägt vor, Sie entscheiden. Es werden keine Datensätze zusammengeführt oder verknüpft, bevor Sie genehmigen, einen automatischen Modus gibt es nicht. Er arbeitet nur innerhalb Ihres SuperOffice CRM. Es gibt keine Websuche und keine externe Anreicherung. Die tägliche Prüfung betrachtet vor allem Datensätze, die Ihnen gehören, aber ein Vorschlag kann auch einen Datensatz betreffen, der jemand anderem in Ihrem Mandanten gehört: Nur eine Seite einer Übereinstimmung muss Ihnen gehören, damit er Ihnen vorgelegt wird.
+Der Agent schlägt vor, Sie entscheiden. Es werden keine Datensätze zusammengeführt oder verknüpft, bevor Sie genehmigen. Einen automatischen Modus gibt es nicht. Er arbeitet nur innerhalb Ihres SuperOffice CRM. Es gibt keine Websuche und keine externe Anreicherung. Die tägliche Prüfung betrachtet vor allem Datensätze, die Ihnen gehören, aber ein Vorschlag kann auch einen Datensatz betreffen, der jemand anderem in Ihrem Tenant gehört: Nur eine Seite einer Übereinstimmung muss Ihnen gehören, damit er Ihnen vorgelegt wird.
 </Note>
 
 ## Zeitplan
 
 Der Agent läuft **täglich**, einmal am Tag zu einer vom System festgelegten Zeit.
 
-Es gibt kein Tageslimit, wie viele Firmen er prüft. Der Agent hält bis zu 50 Vorschläge jedes Typs (Firmenzusammenführungen, Kontaktzusammenführungen und verwaiste Kontakte) für Ihre Entscheidung bereit. Sobald Sie genug genehmigt oder abgelehnt haben, füllt sein nächster geplanter Durchlauf diesen Typ wieder auf bis zu 50 auf, sofern es mehr zu finden gibt.
+Es gibt kein Tageslimit, wie viele Firmen er prüft. Der Agent hält bis zu 50 Vorschläge jedes Typs (Firmenzusammenführungen, Personenzusammenführungen und verwaiste Personen) für Ihre Entscheidung bereit. Sobald Sie genug genehmigt oder abgelehnt haben, füllt sein nächster geplanter Durchlauf diesen Typ wieder auf bis zu 50 auf, sofern es mehr zu finden gibt.
 
 ## Agent aktivieren {#setup}
 
-Die Einrichtung ist ein einziger Schritt. Sie sind automatisch der Genehmigende und können eine Instanz erstellen.
+Die Einrichtung ist ein einziger Schritt. Sie sind automatisch der Genehmiger und können eine Instanz erstellen.
 
 1. Wählen Sie <i class="ph ph-robot" aria-label="Agenten-Symbol"></i> **Agenten** im Navigator aus.
 
@@ -88,7 +88,7 @@ Wählen Sie vor der Prüfung die Registerkarte **Chat**, klicken Sie dann auf <i
 
 1. Wählen Sie einen Firmen-Zusammenführungsvorschlag (<i class="ph ph-buildings" aria-label="Firmen-Symbol"></i>) aus der Liste aus.
 
-1. Prüfen Sie den nebeneinanderstehenden Entfernen/Behalten-**Firmenvergleich** und was beim Genehmigen der Zusammenführung passiert.
+1. Prüfen Sie den **Firmenvergleich** mit den Spalten „Entfernen“ und „Behalten“ nebeneinander und was beim Genehmigen der Zusammenführung passiert.
 
     Der Agent schlägt immer vor, die ältere Firma zu behalten.
 
@@ -111,51 +111,51 @@ Wählen Sie vor der Prüfung die Registerkarte **Chat**, klicken Sie dann auf <i
     * Der behaltenen Firma wird eine Notiz hinzugefügt, die die Änderung dokumentiert.
     * Der Eigentümer der entfernten Firma wird über die Zusammenführung und den Eigentümerwechsel informiert, selbst wenn beide Datensätze bereits denselben Eigentümer hatten.
 
-## Zusammenführungsvorschlag: doppelte Kontakte {#merge-contacts}
+## Zusammenführungsvorschlag: doppelte Personen {#merge-contacts}
 
-1. Wählen Sie einen Vorschlag für doppelte Kontakte (<i class="ph ph-user-circle" aria-label="Kontakt-Symbol"></i>) aus der Liste aus.
+1. Wählen Sie einen Vorschlag für doppelte Personen (<i class="ph ph-user-circle" aria-label="Kontakt-Symbol"></i>) aus der Liste aus.
 
-1. Prüfen Sie die **möglichen doppelten Personen**: die Firma, zu der die Kontakte gehören, eine **Übereinstimmungssicherheit**-Bewertung (1-5 Sterne), warum sie wie dieselbe Person aussehen, und worauf der Agent die Übereinstimmung gestützt hat, zum Beispiel einen identischen vollständigen Namen.
+1. Prüfen Sie die **möglichen doppelten Personen**: die Firma, zu der die Personen gehören, eine Bewertung der **Übereinstimmungssicherheit** (1 bis 5 Sterne), warum sie wie dieselbe Person aussehen, und worauf der Agent die Übereinstimmung gestützt hat, zum Beispiel einen identischen vollständigen Namen.
 
-    Eine Datenverlustwarnung erscheint, wenn der zu behaltende Kontakt bereits eine E-Mail-Adresse oder Telefonnummer hat, die der abweichende Wert des anderen Datensatzes sonst überschreiben würde: prüfen Sie beide, bevor Sie genehmigen.
+    Eine Datenverlustwarnung erscheint, wenn die zu behaltende Person bereits eine E-Mail-Adresse oder Telefonnummer hat, die der abweichende Wert des anderen Datensatzes sonst überschreiben würde. Prüfen Sie beide, bevor Sie genehmigen.
 
-    ![Ein Zusammenführungsvorschlag für doppelte Kontakte -screenshot][img3]
+    ![Ein Zusammenführungsvorschlag für doppelte Personen -screenshot][img3]
 
 1. Klicken Sie auf **Zusammenführen und stilllegen**.
 
     <Danger>
-    **Dies kann nicht rückgängig gemacht werden.** Beim Zusammenführen zweier Kontakte wird der zusätzliche Datensatz endgültig stillgelegt.
+    **Dies kann nicht rückgängig gemacht werden.** Beim Zusammenführen zweier Personen wird der zusätzliche Datensatz endgültig stillgelegt.
     </Danger>
 
 1. Klicken Sie im Bestätigungsdialog auf **Genehmigen**.
 
-    * Die beiden Kontakte werden zu dem behaltenen Kontakt zusammengeführt.
-    * Vorhandene Angaben des behaltenen Kontakts bleiben unverändert. Alle leeren Felder werden aus dem anderen Datensatz übernommen.
-    * Der zusammengeführte Kontakt wird als ehemaliger Mitarbeiter markiert, statt entfernt zu werden.
+    * Die beiden Personen werden zur behaltenen Person zusammengeführt.
+    * Vorhandene Angaben der behaltenen Person bleiben unverändert. Alle leeren Felder werden aus dem anderen Datensatz übernommen.
+    * Die aufgelöste Person (das Duplikat) wird als ehemaliger Mitarbeiter markiert, statt entfernt zu werden.
 
-## Verwaiste Kontakte (ohne Firma) {#orphans}
+## Verwaiste Personen (ohne Firma) {#orphans}
 
-Der Agent sucht nach **verwaisten Kontakten**, Personen ohne Firma, deren E-Mail-Adresse die Domain einer Firma verwendet, und ordnet jeden der Firma zu, der diese Domain gehört. Weist die Domain nicht eindeutig auf eine Firma hin, sucht er zusätzlich nach einer Firma mit ähnlichem Namen und schlägt diese stattdessen vor.
+Der Agent sucht nach **verwaisten Personen**, also Personen ohne Firma, deren E-Mail-Adresse die Domain einer Firma verwendet, und ordnet jede Person der Firma zu, der diese Domain gehört. Weist die Domain nicht eindeutig auf eine Firma hin, sucht er zusätzlich nach einer Firma mit ähnlichem Namen und schlägt diese stattdessen vor.
 
-1. Wählen Sie einen Vorschlag für verwaiste Kontakte (<i class="ph ph-user-circle" aria-label="Kontakt-Symbol"></i>) aus der Liste aus.
+1. Wählen Sie einen Vorschlag für verwaiste Personen (<i class="ph ph-user-circle" aria-label="Kontakt-Symbol"></i>) aus der Liste aus.
 
 1. Prüfen Sie die Bereiche **Kontakt** und **Vorgeschlagene Firma** sowie den Grund für den Vorschlag des Agenten.
 
-    Könnte ein Kontakt zu mehr als einer Firma gehören, erhalten Sie einen einzelnen Vorschlag, in dem Sie auswählen, welche Firma zutrifft. Ein Kontakt ohne E-Mail-Adresse mit Firmen-Domain wird nicht angezeigt.
+    Könnte eine Person zu mehr als einer Firma gehören, erhalten Sie einen einzelnen Vorschlag, in dem Sie auswählen, welche Firma zutrifft. Eine Person ohne E-Mail-Adresse mit Firmendomain wird nicht angezeigt.
 
-    ![Ein Vorschlag für einen verwaisten Kontakt mit den Aktionen Kontakt verknüpfen und Ignorieren -screenshot][img4]
+    ![Ein Vorschlag für eine verwaiste Person mit den Aktionen Kontakt verknüpfen und Ignorieren -screenshot][img4]
 
 1. Klicken Sie auf **Kontakt verknüpfen**.
 
-    Der Kontakt wird mit dieser Firma verbunden. Ansonsten ändert sich nichts am Kontakt oder an der Firma. Anders als eine Zusammenführung kann dies später durch Trennen der Verknüpfung rückgängig gemacht werden.
+    Die Person wird mit dieser Firma verbunden. Ansonsten ändert sich nichts an der Person oder an der Firma. Anders als eine Zusammenführung kann dies später durch Trennen der Verknüpfung rückgängig gemacht werden.
 
-## Eine bestimmte Firma oder einen bestimmten Kontakt untersuchen
+## Eine bestimmte Firma oder eine bestimmte Person untersuchen
 
 1. Wählen Sie die Registerkarte **Chat** aus.
 
-1. Bitten Sie den Agenten im **Allgemeinen** Chat, eine bestimmte Firma auf Duplikate zu prüfen, oder suchen Sie einen Kontakt.
+1. Bitten Sie den Agenten im Chat **Allgemein**, eine bestimmte Firma auf Duplikate zu prüfen, oder suchen Sie eine Person.
 
-1. Findet er auf diesem Weg ein echtes Duplikat oder einen verwaisten Kontakt, erstellt er dafür eine normale Genehmigungsaufgabe, genau wie bei einem Fund aus dem täglichen geplanten Lauf. Prüfen Sie sie wie oben beschrieben.
+1. Findet er auf diesem Weg ein echtes Duplikat oder eine verwaiste Person, erstellt er dafür eine normale Genehmigungsaufgabe, genau wie bei einem Fund aus dem täglichen geplanten Lauf. Prüfen Sie sie wie oben beschrieben.
 
 ## Der Agenten-Arbeitsbereich {#workspace}
 
@@ -165,17 +165,17 @@ Der Arbeitsbereich des Duplicate Agent hat drei Registerkarten: **Chat**, **Verl
 |---|---|
 | Chat | Ein **Allgemeiner Chat**-Thread plus ein Thread pro Vorschlag, den der Agent erstellt hat. |
 | Verlauf | Ein detailliertes Protokoll der geprüften Firmen, erstellten Vorschläge, genehmigten Zusammenführungen und Verknüpfungen sowie übersprungener Einträge mit Begründung. Wählen Sie einen **Zeitraum** (letzte 24 Stunden, 7, 30 oder 90 Tage), um ihn einzugrenzen. Lange Verläufe werden seitenweise angezeigt. |
-| Leistung | Zeigt, wie der Agent über einen Zeitraum (letzte 7, 30 oder 90 Tage) performt hat: vorgeschlagene Firmenduplikate, vorgeschlagene verwaiste Kontakte, vorgeschlagene Personenduplikate, genehmigte Zusammenführungen, abgelehnte Duplikate, abgelaufene Duplikate und abgeschlossene Läufe. |
+| Leistung | Zeigt die Leistung des Agenten über einen Zeitraum (letzte 7, 30 oder 90 Tage): vorgeschlagene Firmenduplikate, vorgeschlagene verwaiste Personen, vorgeschlagene Personenduplikate, genehmigte Zusammenführungen, abgelehnte Duplikate, abgelaufene Duplikate und abgeschlossene Läufe. |
 
-![Die Registerkarte Verlauf mit dem Zeitraumfilter und der Aktualisierungsschaltfläche. Ein erweiterter Eintrag zeigt seine Workflow-ID und Lauf-ID -screenshot][img5]
+![Die Registerkarte Verlauf mit dem Zeitraumfilter und der Aktualisierungsschaltfläche. Ein aufgeklappter Eintrag mit seiner Workflow-ID und Lauf-ID -screenshot][img5]
 
 Klicken Sie auf <i class="ph ph-arrow-clockwise" aria-label="Aktualisieren-Symbol"></i>, um die neuesten Einträge abzurufen. Klicken Sie auf einen Eintrag, um ihn zu erweitern und seine vollständigen Workflow- und Laufdetails anzuzeigen.
 
 ## Tipps und Fehlerbehebung
 
-**Was passiert, wenn ich ablehne oder ignoriere?** Es ändert sich nichts; beide Datensätze bleiben unverändert.
+**Was passiert, wenn ich ablehne oder ignoriere?** Es ändert sich nichts. Beide Datensätze bleiben unverändert.
 
-**Kann ich über mehrere Vorschläge gleichzeitig entscheiden?** Ja. Wählen Sie mehrere ausstehende Vorschläge aus und verwenden Sie **Genehmigen** oder **Ablehnen** im Sammelbereich, genau wie bei jedem anderen Agenten.
+**Kann ich über mehrere Vorschläge gleichzeitig entscheiden?** Ja. Wählen Sie mehrere ausstehende Vorschläge aus und verwenden Sie **Genehmigen** oder **Ablehnen** im Bereich für Sammelaktionen, genau wie bei jedem anderen Agenten.
 
 **Was passiert mit einem Vorschlag, den ich nicht rechtzeitig bearbeite?** Ein auf Ihre Entscheidung wartender Vorschlag hat eine begrenzte Lebensdauer, **standardmäßig 30 Tage**. Sobald er innerhalb von 5 Tagen abläuft, erscheint ein Countdown-Banner auf seinem Thread. Handeln Sie nicht rechtzeitig, wird er verworfen, und der Agent macht weiter. Für einen abgelaufenen Vorschlag ändert sich nichts, und dasselbe Paar kann bei einer späteren Prüfung erneut auftauchen.
 

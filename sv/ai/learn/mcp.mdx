@@ -3,7 +3,7 @@ title: MCP Connect
 description: Anslut SuperOffice CRM till Claude, Microsoft Copilot eller ChatGPT som en live datakälla med hjälp av Model Context Protocol.
 keywords: ['MCP', 'Model Context Protocol', 'Claude', 'Copilot', 'ChatGPT', 'AI-integration']
 author: digitaldiina
-date: 09.29.2026
+date: 10.01.2026
 so_version: 12.4
 content_type: concept
 tier: plus
@@ -20,22 +20,18 @@ related:
 language: sv
 ---
 
-MCP Connect gör SuperOffice CRM till en live datakälla för Claude, Microsoft Copilot och ChatGPT, ansluten genom det öppna Model Context Protocol (MCP). Istället för att kopiera och klistra in CRM-data i en AI-chatt läser assistenten direkt från dina egna företag, kontakter, försäljningar, ärenden, projekt, uppföljningar och dokument, så att svaren förblir förankrade i dina verkliga data.
-
-<Note>
-MCP Connect lanseras snart. Det kräver [CRM Suite Plus][7] eller högre.
-</Note>
+MCP Connect gör SuperOffice CRM till en live datakälla för Claude, Microsoft Copilot och ChatGPT, ansluten genom det öppna Model Context Protocol (MCP). I stället för att kopiera och klistra in CRM-data i en AI-chatt läser assistenten direkt från dina egna företag, kontakter, försäljningar, ärenden, projekt, uppföljningar och dokument, så att svaren förblir förankrade i dina verkliga data.
 
 ## Vad MCP Connect gör
 
-* Ingen mer kopiering av inaktuella CRM-data till en AI-chatt, eftersom assistenten läser direkt från din live miljö.
+* Ingen mer kopiering av inaktuella CRM-data till en AI-chatt, eftersom assistenten läser direkt från din livemiljö.
 * Fungerar på samma sätt hos alla AI-leverantörer: Claude, Microsoft Copilot och ChatGPT ansluter alla genom samma MCP Connect-server, så att du inte är bunden till ett enda AI-verktyg.
-* Svaren förblir förankrade i dina egna data, eftersom varje läsning kommer direkt från SuperOffice istället för från det modellen minns.
+* Svaren förblir förankrade i dina egna data, eftersom varje läsning kommer direkt från SuperOffice i stället för från det som modellen minns.
 
 ## Krav
 
-* Din organisation måste ha **CRM Suite Plus** eller högre.
-* Ett SuperOffice-användarkonto. Första gången du ansluter en klient loggar du in och godkänner åtkomst via en vanlig inloggningsdialog; ingen separat API-nyckel eller utvecklarinställning krävs.
+* Din organisation måste ha **[CRM Suite Plus][7]** eller högre.
+* Ett SuperOffice-användarkonto. Första gången du ansluter en klient loggar du in och godkänner åtkomst via en vanlig inloggningsdialog. Ingen separat API-nyckel eller särskild utvecklarkonfiguration krävs.
 
 ## Ansluta en klient
 
@@ -51,7 +47,7 @@ Steg-för-steg-guider för varje klient finns på [SuperOffice MCP Server-webbpl
 
 ## Läs- och uppdateringsverktyg
 
-MCP Connect exponerar en uppsättning verktyg som den anslutna AI-klienten kan anropa, för att söka, läsa och uppdatera SuperOffice CRM-data å dina vägnar. MCP Connect skapar inte nya poster.
+MCP Connect tillhandahåller en uppsättning verktyg som den anslutna AI-klienten kan anropa, för att söka, läsa och uppdatera SuperOffice CRM-data å dina vägnar. MCP Connect skapar inte nya poster.
 
 | Verktyg | Vad de gör |
 |---|---|
@@ -63,8 +59,8 @@ MCP Connect exponerar en uppsättning verktyg som den anslutna AI-klienten kan a
 | `search_appointments`, `get_appointment` | Hittar och läser uppföljningar i kalendern. |
 | `search_documents`, `get_document_markdown`, `get_document_contents`, `list_document_templates` | Hittar dokument, inklusive e-postmeddelanden och offerter, och läser innehållet. |
 | `list_contact_activities`, `list_person_activities`, `list_user_activities` | Listar aktivitetshistorik för ett företag, en kontakt eller en användare. |
-| `list_custom_objects`, `search_custom_object_rows`, `describe_custom_object`, `get_custom_object_row` | Hittar och läser rader i [extratabeller][8] (egendefinierade objekt). |
-| `get_associate`, `search_external_companies`, `whoami`, `server_info` | Slår upp en användares identitet, söker i externa företagsregister, och hämtar server- och sessionsinformation. |
+| `list_custom_objects`, `search_custom_object_rows`, `describe_custom_object`, `get_custom_object_row` | Hittar och läser rader i [extratabeller (egendefinierade objekt)][8]. |
+| `get_associate`, `search_external_companies`, `whoami`, `server_info` | Slår upp en användares identitet, söker i externa företagsregister och hämtar server- och sessionsinformation. |
 | `update_company`, `update_person`, `update_appointment`, `update_sale`, `update_project`, `update_ticket` | Uppdaterar fält på en befintlig post. |
 
 [1]: https://mcp.superoffice.com/

@@ -6,9 +6,9 @@ keywords: ['AI', 'categorisering', 'machine learning', 'training']
 author: digitaldiina
 date: 10.01.2026
 so_version: 12.4
-content_type: howto
+content_type: tutorial
 license: aiplatform, categorization
-tier: core
+tier: growth
 category: automation
 topic: ai
 platform: web
@@ -19,26 +19,26 @@ redirect_from: /nl/ai/configuration-ai/getting-started
 userflow_index: true
 related:
   - Hoe u een selectie maakt: /nl/search-options/selection/learn/create
-  - Verzoekencategorisering: /nl/request/learn/handle-request-ai#categorization
+  - Voorgestelde categorieën gebruiken: /nl/request/learn/handle-request-ai
   - Andere AI-diensten: /nl/ai/learn/index
 language: nl
 ---
 
-Category Insight gebruikt machine learning om categorieën voor te stellen voor binnenkomende verzoeken op basis van hun inhoud. Maak eerst een selectie van bestaande verzoeken, train vervolgens het model en schakel daarna de suggesties in. Een behandelaar moet de suggestie bevestigen voordat de categorie wordt toegepast.
+Category Insight gebruikt machine learning om categorieën voor te stellen voor binnenkomende verzoeken op basis van hun inhoud. Maak eerst een selectie van bestaande verzoeken, train vervolgens het model en schakel daarna de suggesties in. De behandelaar bepaalt per suggestie of deze wordt toegepast.
 
 <Note>
 Category Insight vereist het SuperOffice AI Platform en een **Categorization-licentie** of CRM Suite Growth. SuperOffice AI is alleen beschikbaar voor CRM Online.
 </Note>
 
-Schakel eerst de [AI-functies][1] voor uw organisatie in.
+Schakel eerst [AI-functies][1] in voor uw organisatie.
 
 ## 1. Een selectie van verzoeken maken
 
 U moet eerst een selectie van verzoeken in SuperOffice maken om het AI-model te trainen.
 
-1. Klik op <i class="ph ph-list-magnifying-glass" aria-label="Zoeken pictogram"></i> **Zoeken** of ga naar **Nieuw** > **Selectie**.
+1. Selecteer <i class="ph ph-list-magnifying-glass" aria-label="Zoeken pictogram"></i> **Zoeken** of ga naar **Nieuw** > **Selectie**.
 
-    ![Nieuwe selectieopties in Sales client -screenshot][img1]
+    ![Nieuwe selectieopties -screenshot][img1]
 
 1. Kies **Verzoek** als selectietype. Gebruik **Verzoek zoeken** of kies uit **Typische zoekopdrachten**.
 
@@ -46,14 +46,14 @@ U moet eerst een selectie van verzoeken in SuperOffice maken om het AI-model te 
 
 1. Zoekercriteria definiëren:
     1. Voeg filters toe om de verzoeken te matchen die u wilt gebruiken voor training.
-    2. Klik op **Zoeken**.
+    2. Selecteer **Zoeken**.
 
     ![Criteria voor verzoekselectie -screenshot][img3]
 
 1. De selectie opslaan:
-    1. Klik op **Opslaan als selectie**.
+    1. Selecteer **Opslaan als selectie**.
     2. Kies statisch of dynamisch.
-    3. Voer een naam in en klik op **Opslaan**.
+    3. Voer een naam in en selecteer **Opslaan**.
 
     ![Selectietype kiezen -screenshot][img4]
     ![Selectienaam invoeren -screenshot][img5]
@@ -79,7 +79,7 @@ Zodra een geldige selectie is gekozen, wordt de knop **Verzoeken analyseren** ac
 Grote datasets kunnen uren of zelfs dagen duren om te analyseren.
 </Note>
 
-1. Klik op **Verzoeken analyseren** om het trainingsproces te starten.
+1. Selecteer **Verzoeken analyseren** om het trainingsproces te starten.
 1. Wanneer de training is voltooid, toont de status **Laatste training** *model succesvol getraind*.
 1. Als de training mislukt, bekijk dan het bericht, pas de selectie indien nodig aan en analyseer deze opnieuw voordat u suggesties inschakelt.
 
@@ -96,7 +96,7 @@ Na succesvolle training:
 
 ## 5. Resultaat: categoriesuggesties in verzoeken
 
-Na inschakeling verschijnt een voorgestelde categorie onderaan het verzoek. De categorie wordt niet automatisch toegepast. De behandelaar moet de link selecteren om de categorie toe te passen; daarna verdwijnt de suggestie. Zie [categorisering in verzoeken][2].
+Na inschakeling verschijnt een voorgestelde categorie onderaan het verzoek. De categorie wordt niet automatisch toegepast. De behandelaar moet de link selecteren om de categorie toe te passen. Daarna verdwijnt de suggestie. Zie [categorisering in verzoeken][2].
 
 Als er geen match is, wordt geen suggestie getoond.
 
