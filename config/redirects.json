@@ -4389,6 +4389,10 @@
     "destination": "/da/customization/web-panels/admin/index"
   },
   {
+    "source": "/database/tables",
+    "destination": "/en/database/tables"
+  },
+  {
     "source": "/de/admin/adjusting-views.html",
     "destination": "/de/admin/adjusting-views"
   },
@@ -8753,6 +8757,10 @@
     "destination": "/de/customization/web-panels/admin/index"
   },
   {
+    "source": "/email/mailgun/dkim/set-up.html",
+    "destination": "/en/online/mail-services/mailgun/dkim/set-up"
+  },
+  {
     "source": "/en/admin/adjusting-views.html",
     "destination": "/en/admin/adjusting-views"
   },
@@ -10721,6 +10729,10 @@
     "destination": "/en/api/*"
   },
   {
+    "source": "/en/api/netserver/archive-providers/reference/ticket.html",
+    "destination": "/en/api/archive-providers/reference/ticket"
+  },
+  {
     "source": "/en/api/nuget/crm-online-core.html",
     "destination": "/en/api/nuget/crm-online-core"
   },
@@ -11629,8 +11641,16 @@
     "destination": "/en/api/web-services/proxies/superoffice-webapi/systemuserclient"
   },
   {
+    "source": "/en/api/web-services/reference/restful/rest/index",
+    "destination": "/en/api/reference/restful/rest"
+  },
+  {
     "source": "/en/api/web-services/so-timezone.html",
     "destination": "/en/api/web-services/so-timezone"
+  },
+  {
+    "source": "/en/api/web-services/web-services/endpoints/rest-webapi/index",
+    "destination": "/en/api/web-services/endpoints/rest-webapi"
   },
   {
     "source": "/en/authentication/index",
@@ -28407,6 +28427,10 @@
   {
     "source": "/release-notes/mobile/v11.html",
     "destination": "/release-notes/mobile/v11"
+  },
+  {
+    "source": "/search.html",
+    "destination": "/"
   },
   {
     "source": "/sv/admin/adjusting-views.html",
