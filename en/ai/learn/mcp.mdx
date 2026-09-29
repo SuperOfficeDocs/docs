@@ -15,13 +15,14 @@ audience: person
 audience_tooltip: SuperOffice CRM
 related:
   - Other AI services: /en/ai/learn/index
+  - /en/ai/learn/set-up-ai-agents
 language: en
 ---
 
 MCP Connect turns SuperOffice CRM into a live data source for Claude, Microsoft Copilot, and ChatGPT, connected through the open Model Context Protocol (MCP). Instead of copying and pasting CRM data into an AI chat, the assistant reads directly from your tenant's own companies, contacts, sales, requests, projects, follow-ups, and documents, so its answers stay grounded in your real data.
 
 <Note>
-MCP Connect is coming soon. This page describes a feature that is not generally available yet. It requires [CRM Suite Plus](/en/admin/license/crm-suite) or above.
+MCP Connect is coming soon. It requires [CRM Suite Plus][7] or above.
 </Note>
 
 ## What it does
@@ -32,14 +33,7 @@ MCP Connect is coming soon. This page describes a feature that is not generally 
 
 ## Read and update tools
 
-MCP Connect exposes a set of tools that the connected AI client can call. Which tools are available depends on your license:
-
-* **Read** (`superoffice.ai-mcp`): search and read companies, contacts, sales, requests, projects, follow-ups, and documents.
-* **Update** (`superoffice.ai-mcp-plus`): everything in Read, plus updating fields on an existing record. MCP Connect does not create new records.
-
-<Note>
-The tools use their own internal names for some entities: a **ticket** is a request, and an **appointment** is a follow-up.
-</Note>
+MCP Connect exposes a set of tools that the connected AI client can call, to search, read, and update SuperOffice CRM data on your behalf. MCP Connect does not create new records.
 
 | Tools | What they do |
 |---|---|
@@ -53,7 +47,7 @@ The tools use their own internal names for some entities: a **ticket** is a requ
 | `list_contact_activities`, `list_person_activities`, `list_user_activities` | List activity history for a company, person, or user. |
 | `list_custom_objects`, `search_custom_object_rows`, `describe_custom_object`, `get_custom_object_row` | Find and read rows in custom tables (user-defined objects). |
 | `get_associate`, `search_external_companies`, `whoami`, `server_info` | Resolve a user's identity, search external business registries, and get server/session information. |
-| `update_company`, `update_person`, `update_appointment`, `update_sale`, `update_project`, `update_ticket` | Update fields on an existing record. Requires the Update license. |
+| `update_company`, `update_person`, `update_appointment`, `update_sale`, `update_project`, `update_ticket` | Update fields on an existing record. |
 
 ## Connect a client
 
@@ -78,3 +72,4 @@ Step-by-step setup guides for each client are available on the [SuperOffice MCP 
 [4]: https://mcp.superoffice.com/static/how-to-connect/chatgpt.html
 [5]: https://mcp.superoffice.com/static/how-to-connect/vscode-copilot.html
 [6]: https://mcp.superoffice.com/static/how-to-connect/copilot-studio.html
+[7]: /en/admin/license/crm-suite
