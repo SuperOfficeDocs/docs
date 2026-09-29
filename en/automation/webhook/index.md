@@ -9,6 +9,8 @@ so_version: 12.1
 content_type: concept
 tier: core
 userflow_index: true
+related:
+  - MCP Connect: /en/ai/learn/mcp
 language: en
 ---
 
