@@ -19,6 +19,8 @@ redirect_from:
   - /en/ai/index
   - /en/ai/learn/text-analysis
   - /en/ai/text-analysis/index
+  - /en/ai/learn/categorization
+  - /en/ai/configuration-ai/index
 boost: 2
 related:
   - /en/ai/learn/set-up-ai-agents
@@ -38,7 +40,7 @@ SuperOffice AI is available in CRM Online only. License requirements are service
 
 | Service | Description | License |
 |---|---|---|
-| [Categorization][2] | Suggests a category for new requests based on the message content. | Categorization |
+| [Category Insight][2] | Suggests a category for incoming requests based on the message content. An administrator [trains the model on a selection of existing requests][18] and enables suggestions. Request handlers review the suggestion before applying it. | Categorization, or CRM Suite Growth |
 | **Writing Assist** | Drafts emails, notes, and follow-ups for you to edit and send. | CRM Suite Starter |
 | [Request Insight][1] | Analyzes the sentiment of an incoming request so you can prioritize your response. | Text Services, or CRM Suite Core |
 | [Summary Assist][15] | Summarizes the messages in a request so you can act on it without reading the full thread. | Text Services, or CRM Suite Core |
@@ -56,6 +58,8 @@ SuperOffice AI is available in CRM Online only. License requirements are service
 
 <Note>
 Request Insight, Summary Assist, and Translation Assist require the SuperOffice AI Platform and a Text Services license, or CRM Suite Core. An administrator must [enable text analysis][17] before these features appear. Once enabled, they are visible directly in the request view and do not require any configuration by the end user.
+
+Category Insight requires the SuperOffice AI Platform and a Categorization license, or CRM Suite Growth. An administrator must [train the model and enable suggestions][18] before request handlers can [use suggested categories][2].
 </Note>
 
 ## Insight, Assist, and Agent
@@ -89,7 +93,7 @@ An agent that takes action on your data, such as the Data Quality Agent, uses AI
 1. Proceed to [choose, activate, and set up your agents][10].
 
 [1]: /en/request/learn/handle-request-ai#sentiment
-[2]: /en/ai/learn/categorization
+[2]: /en/request/learn/handle-request-ai#categorization
 [3]: /en/chat/admin/channel-create#chatbot
 [4]: /en/ai/learn/workspace-assist
 [5]: /integrations/supernotes/index
@@ -105,6 +109,7 @@ An agent that takes action on your data, such as the Data Quality Agent, uses AI
 [15]: /en/request/learn/handle-request-ai#summary
 [16]: /en/request/learn/handle-request-ai#translate
 [17]: /en/ai/admin/index#enable-text-analysis
+[18]: /en/ai/admin/set-up-categorization
 
 [img1]: /media/loc/en/ai/open-agents-area.png
 [img2]: /media/loc/en/ai/approve-ai-agents.png

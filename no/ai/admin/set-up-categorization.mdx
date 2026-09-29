@@ -4,8 +4,8 @@ title: Sett opp AI-basert kategorisering
 description: Hvordan trene og konfigurere kategorisering i SuperOffice AI
 keywords: ['AI', 'kategorisering', 'maskinlæring', 'trening']
 author: digitaldiina
-date: 10.15.2025
-so_version: 11.5
+date: 10.01.2026
+so_version: 12.4
 content_type: howto
 license: aiplatform, categorization
 tier: core
@@ -19,16 +19,18 @@ redirect_from: /no/ai/configuration-ai/getting-started
 userflow_index: true
 related:
   - Hvordan opprette et utvalg: /no/search-options/selection/learn/create
-  - Sakkategorisering: /no/ai/learn/categorization
+  - Kategorisering av saker: /no/request/learn/handle-request-ai#categorization
   - Andre AI-tjenester: /no/ai/learn/index
 language: no
 ---
 
-Kategorisering bruker maskinlæring til å foreslå kategorier for innkommende saker basert på innholdet deres. Før denne funksjonen kan brukes, må AI-en trenes ved hjelp av et utvalg av eksisterende saker.
+Category Insight bruker maskinlæring til å foreslå kategorier for innkommende saker basert på innholdet deres. Opprett først et utvalg av eksisterende saker, tren deretter modellen, og aktiver til slutt forslagene. En saksbehandler må godkjenne forslaget før kategorien brukes.
 
 <Note>
-Kategorisering krever SuperOffice AI Platform og en **Categorization-lisens**. SuperOffice AI er kun tilgjengelig for CRM Online.
+Category Insight krever SuperOffice AI Platform og en **Categorization-lisens** eller CRM Suite Growth. SuperOffice AI er kun tilgjengelig for CRM Online.
 </Note>
+
+Først må du [aktivere AI-funksjoner][1] for organisasjonen.
 
 ## 1. Opprett et utvalg av saker
 
@@ -57,7 +59,7 @@ Du må først opprette et utvalg av saker i SuperOffice for å trene AI-modellen
     ![Skriv inn utvalgsnavn -screenshot][img5]
 
 <Note>
-Kun de første 5000 sakene i utvalget vil bli analysert.
+Kun de første 5 000 sakene i utvalget analyseres. Velg et utvalg med kategorier som er representative for sakene du vil kategorisere.
 </Note>
 
 ## 2. Velg utvalget i Innstillinger og vedlikehold
@@ -79,7 +81,7 @@ Store datasett kan ta timer eller til og med dager å analysere.
 
 1. Klikk på **Analyser saker** for å starte treningsprosessen.
 1. Når treningen er fullført, vil statusen **Siste trening** vise *modell trent med suksess*.
-1. Hvis det oppstår feil, gjennomgå meldingen og opprett et nytt utvalg om nødvendig.
+1. Hvis treningen mislykkes, må du gå gjennom meldingen, justere utvalget om nødvendig og analysere det på nytt før du aktiverer forslag.
 
     ![Treningsresultater og tilbakemelding -screenshot][img7]
     ![Eksempler på treningssammendrag -screenshot][img8]
@@ -94,7 +96,7 @@ Etter vellykket trening:
 
 ## 5. Resultat: kategoriforslag i saker
 
-Når aktivert, vil brukere se en foreslått kategori i sakbunnteksten. Ved å klikke på lenken brukes kategorien på saken og forslaget fjernes.
+Når funksjonen er aktivert, vises en foreslått kategori nederst i saken. Kategorien brukes ikke automatisk. Saksbehandleren må velge lenken for å bruke kategorien; deretter forsvinner forslaget. Se [kategorisering i saker][2].
 
 Hvis det ikke er noe treff, vises intet forslag.
 
@@ -104,7 +106,10 @@ Du kan analysere et nytt eller oppdatert utvalg på nytt når som helst:
 
 1. Gå til **Innstillinger og vedlikehold** > **AI-tjenester**.
 1. Under **Kategorisering** velger du et nytt utvalg.
-1. Klikk på **Analyser saker** for å trene på nytt.
+1. Velg **Analyser saker** for å trene på nytt. Kontroller **Siste trening** før du bruker den nye modellen.
+
+[1]: /no/ai/admin/index
+[2]: /no/request/learn/handle-request-ai#categorization
 
 [img1]: ../../../media/loc/en/search-options/choose-new-selection.png
 [img2]: ../../../media/loc/en/search-options/typical-request-searches.png

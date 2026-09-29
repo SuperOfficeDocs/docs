@@ -96,7 +96,6 @@
         "icon": "wand-magic-sparkles",
         "root": "de/ai/learn/index",
         "pages": [
-          "de/ai/learn/categorization",
           "de/ai/learn/workspace-assist",
           "de/ai/learn/lead-agent",
           "de/ai/learn/data-quality-agent",

@@ -2,7 +2,7 @@
 uid: help-da-request-ai
 title: Effektiv håndtering af sager ved hjælp af AI
 sidebarTitle: "Håndtering med AI"
-description: Indførelsen af kunstig intelligens (AI) i SuperOffice 10 giver salgsbehandlere / supportagenter et nyt sæt smarte værktøjer til at gøre deres arbejdsdag mere effektiv.
+description: Indførelsen af kunstig intelligens (AI) i SuperOffice giver salgsbehandlere / supportagenter et nyt sæt smarte værktøjer til at gøre deres arbejdsdag mere effektiv.
 keywords: ['sag', 'ai', 'effektiv', 'Reply Assist', 'Service Copilot']
 author: digitaldiina
 date: 10.01.2026
@@ -13,7 +13,7 @@ audience: person
 audience_tooltip: SuperOffice Service
 related:
   - Sådan bruger du AI-tjenester: /da/ai/learn/index
-  - Kategorisering af sager: /da/ai/learn/categorization
+  - Opsæt AI-baseret kategorisering: /da/ai/admin/set-up-categorization
 language: da
 ---
 
@@ -21,7 +21,11 @@ language: da
 AI-tjenester kræver en separat licens. SuperOffice AI er cloud-baseret og et separat tilføjelsesprogram.
 </Note>
 
-Indførelsen af kunstig intelligens (AI) i SuperOffice 10 giver salgsbehandlere / supportagenter et nyt sæt smarte værktøjer til at gøre deres arbejdsdag mere effektiv.
+Indførelsen af kunstig intelligens (AI) i SuperOffice giver salgsbehandlere / supportagenter et nyt sæt smarte værktøjer til at gøre deres arbejdsdag mere effektiv.
+
+<Tip>
+Kan du ikke se disse funktioner i en sag? Bed din administrator om at aktivere tekstanalyse.
+</Tip>
 
 ## Request Insight {#sentiment}
 
@@ -61,9 +65,23 @@ Denne funktion registrerer automatisk sproget i en indgående sag. Det registrer
 
 Hvis du modtager en meddelelse på et sprog, du ikke kan læse, kan du klikke på **oversætte fra** ***sprog*** under meddelelsen. Emnet og brødteksten i meddelelsen er oversat og tilføjet under den oprindelige meddelelse.
 
-## Automatisk kategorisering
+## Category Insight {#categorization}
 
-Spar tid ved at lade systemet kategorisere sager for dig. Hvis denne funktion er aktiv, analyseres indgående e-mail-sager for at bestemme den bedste kategori for hver sag. I sidefoden af en anmodning vil du se den kategori, der foreslås af systemet. Klik på kategorilinket for at opdatere sagen med den foreslåede kategori.
+Category Insight bruger en trænet model til at foreslå en kategori for indgående e-mail-sager ud fra beskedens indhold. Forslaget anvendes først, når du godkender det.
+
+<Note>
+Category Insight kræver SuperOffice AI Platform og en Categorization-licens eller CRM Suite Growth. Funktionen er kun tilgængelig i CRM Online.
+</Note>
+
+Ser du ingen forslag? Bed din administrator om at [træne modellen og aktivere forslag][18].
+
+1. Åbn en indgående sag, og se efter den foreslåede kategori i sagens bund.
+1. Gennemgå forslaget, og vælg kategorilinket, hvis kategorien passer til sagen.
+1. Kontroller, at kategorien er opdateret. Forslaget forsvinder, når du har anvendt det.
+
+![Foreslået kategori i en sag -screenshot][img2]
+
+Hvis ingen kategori passer, vises intet forslag. Du kan stadig selv vælge en kategori.
 
 ## Reply Assist {#reply-assist}
 
@@ -78,5 +96,7 @@ Reply Assist kræver [CRM Suite Plus][8] eller højere.
 ![Reply Assists forslag til svar på en sag -screenshot][img1]
 
 [8]: ../../admin/license/crm-suite#plans
+[18]: ../../ai/admin/set-up-categorization
 
 [img1]: /media/loc/en/request/reply-assist.png
+[img2]: /media/loc/en/request/suggested-category-demo.png

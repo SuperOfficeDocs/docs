@@ -1,7 +1,7 @@
 ---
 uid: help-sv-request-ai
 title: Effektiv hantering av ärenden med AI
-description: Introduktionen av artificiell intelligens (AI) i SuperOffice 10 ger ärendehandläggare/supportagenter tillgång till en ny uppsättning smarta verktyg för att göra deras arbetsdag effektivare.
+description: Introduktionen av artificiell intelligens (AI) i SuperOffice ger ärendehandläggare/supportagenter tillgång till en ny uppsättning smarta verktyg för att göra deras arbetsdag effektivare.
 keywords: ['ärende', 'ai', 'effektiv', 'Reply Assist', 'Service Copilot']
 author: digitaldiina
 date: 10.01.2026
@@ -10,6 +10,9 @@ content_type: concept
 tier: core
 audience: person
 audience_tooltip: SuperOffice Service
+related:
+  - Så här använder du AI-tjänster: /sv/ai/learn/index
+  - Konfigurera AI-baserad kategorisering: /sv/ai/admin/set-up-categorization
 language: sv
 ---
 
@@ -17,7 +20,11 @@ language: sv
 AI-tjänster kräver en separat licens. SuperOffice AI är endast molnbaserat och är ett separat tillägg.
 </Note>
 
-Introduktionen av artificiell intelligens (AI) i SuperOffice 10 ger ärendehandläggare/supportagenter tillgång till en ny uppsättning smarta verktyg för att göra deras arbetsdag effektivare.
+Introduktionen av artificiell intelligens (AI) i SuperOffice ger ärendehandläggare/supportagenter tillgång till en ny uppsättning smarta verktyg för att göra deras arbetsdag effektivare.
+
+<Tip>
+Ser du inte dessa funktioner i ett ärende? Be administratören aktivera textanalys.
+</Tip>
 
 ## Request Insight {#sentiment}
 
@@ -57,9 +64,23 @@ Denna funktion identifierar automatiskt språket i ett inkommande ärende. Det i
 
 Om du får ett meddelande på ett språk du inte kan läsa, kan du klicka på **Översätt från** ***språk*** under meddelandet. Meddelandets ämne och brödtext översätts och läggs till under det ursprungliga meddelandet.
 
-## Automatisk kategorisering
+## Category Insight {#categorization}
 
-Spara tid genom att låta systemet kategorisera ärenden åt dig. Om den här funktionen är aktiverad, analyseras inkommande e-postförfrågningar för att avgöra den bästa kategorin för varje ärende. I sidfoten i ett ärende kommer du att se kategorin som systemet föreslår. Klicka på kategorilänken för att uppdatera ärendet med den föreslagna kategorin.
+Category Insight använder en tränad modell för att föreslå en kategori för inkommande e-postärenden utifrån meddelandets innehåll. Förslaget tillämpas först när du godkänner det.
+
+<Note>
+Category Insight kräver SuperOffice AI Platform och en Categorization-licens eller CRM Suite Growth. Funktionen är endast tillgänglig i CRM Online.
+</Note>
+
+Ser du inga förslag? Be administratören att [träna modellen och aktivera förslag][2].
+
+1. Öppna ett inkommande ärende och leta efter den föreslagna kategorin längst ned i ärendet.
+1. Granska förslaget och välj kategorilänken om kategorin passar ärendet.
+1. Kontrollera att kategorin har uppdaterats. Förslaget försvinner när du har tillämpat det.
+
+![Föreslagen kategori i ett ärende -screenshot][img2]
+
+Om ingen kategori passar visas inget förslag. Du kan fortfarande välja en kategori själv.
 
 ## Reply Assist {#reply-assist}
 
@@ -76,9 +97,9 @@ Reply Assist kräver [CRM Suite Plus][3] eller högre.
 ## Relaterade ämnen
 
 * [Så här använder du AI-tjänster][1]
-* [Kategorisering av ärenden][2]
 
 [1]: ../../ai/learn/index
-[2]: ../../ai/learn/categorization
+[2]: ../../ai/admin/set-up-categorization
 [3]: ../../admin/license/crm-suite#plans
 [img1]: /media/loc/en/request/reply-assist.png
+[img2]: /media/loc/en/request/suggested-category-demo.png

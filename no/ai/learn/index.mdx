@@ -4,7 +4,7 @@ title: AI-tjenester
 description: Oversikt over kunstig intelligens-tjenester i SuperOffice CRM
 keywords: ['AI', 'kunstig intelligens', 'AI Platform', 'maskinlæring', 'automatisering', 'insight', 'assist', 'agent', 'mcp', 'instans', 'tekstanalyse']
 author: digitaldiina
-date: 09.28.2026
+date: 10.01.2026
 so_version: 12.4
 content_type: concept
 license: aiplatform
@@ -18,6 +18,9 @@ audience_tooltip: SuperOffice CRM
 redirect_from:
   - /no/ai/index
   - /no/ai/learn/text-analysis
+  - /no/ai/text-analysis/index
+  - /no/ai/learn/categorization
+  - /no/ai/configuration-ai/index
 boost: 2
 related:
   - /no/ai/learn/set-up-ai-agents
@@ -37,7 +40,7 @@ SuperOffice AI er kun tilgjengelig i CRM Online. Lisenskrav er tjenestespesifikk
 
 | Tjeneste | Beskrivelse | Lisens |
 |---|---|---|
-| [Kategorisering][2] | Foreslår en kategori for nye saker basert på meldingsinnholdet. | Categorization |
+| [Category Insight][2] | Foreslår en kategori basert på saksinnholdet. En administrator [trener modellen på et utvalg av saker][18] og aktiverer forslag. Saksbehandleren vurderer forslaget før det brukes. | Categorization eller CRM Suite Growth |
 | **Writing Assist** | Utkast til e-poster, notater og oppfølginger som du kan redigere og sende. | CRM Suite Starter |
 | [Request Insight][1] | Analyserer sentimentet i en innkommende sak, slik at du kan prioritere svaret ditt. | Text Services eller CRM Suite Core |
 | [Summary Assist][15] | Oppsummerer meldingene i en sak, slik at du kan handle uten å lese hele forløpet. | Text Services eller CRM Suite Core |
@@ -54,7 +57,9 @@ SuperOffice AI er kun tilgjengelig i CRM Online. Lisenskrav er tjenestespesifikk
 | [MCP Connect][14] | Kobler SuperOffice CRM til som en live datakilde for Claude, Microsoft Copilot eller ChatGPT, slik at de kan lese og oppdatere. | CRM Suite Plus |
 
 <Note>
-Request Insight, Summary Assist og Translation Assist krever SuperOffice AI Platform og en Text Services-lisens eller CRM Suite Core. Disse funksjonene er synlige direkte i saksvisningen og krever ingen konfigurasjon av sluttbrukeren.
+Request Insight, Summary Assist og Translation Assist krever SuperOffice AI Platform og en Text Services-lisens eller CRM Suite Core. En administrator må aktivere tekstanalyse før funksjonene vises i saksvisningen. Sluttbrukeren trenger ikke konfigurere dem.
+
+Category Insight krever SuperOffice AI Platform og en Categorization-lisens eller CRM Suite Growth. En administrator må trene modellen og aktivere forslag før saksbehandlere kan bruke dem.
 </Note>
 
 ## Insight, Assist og Agent
@@ -88,7 +93,7 @@ En agent som utfører handlinger på dataene dine, som Data Quality Agent, bruke
 1. Fortsett med å [velge, aktivere og sette opp agentene dine][10].
 
 [1]: /no/request/learn/handle-request-ai#sentiment
-[2]: /no/ai/learn/categorization
+[2]: /no/request/learn/handle-request-ai#categorization
 [3]: /no/chat/admin/channel-create#chatbot
 [4]: /no/ai/learn/workspace-assist
 [5]: /integrations/supernotes/index
@@ -103,6 +108,7 @@ En agent som utfører handlinger på dataene dine, som Data Quality Agent, bruke
 
 [15]: /no/request/learn/handle-request-ai#summary
 [16]: /no/request/learn/handle-request-ai#translate
+[18]: /no/ai/admin/set-up-categorization
 
 [img1]: ../../../media/loc/en/ai/open-agents-area.png
 [img2]: ../../../media/loc/en/ai/approve-ai-agents.png
