@@ -31,6 +31,23 @@ MCP Connect is coming soon. It requires [CRM Suite Plus][7] or above.
 * Works the same way across AI providers: Claude, Microsoft Copilot, and ChatGPT all connect through the same MCP Connect server, so you are not locked into one AI tool.
 * Answers stay grounded in your own data, because every read comes from SuperOffice itself rather than from what the model remembers.
 
+## Requirements
+
+* Your organization must be on **CRM Suite Plus** or above.
+* A SuperOffice user account. The first time you connect a client, you sign in and approve access through a standard login prompt; no separate API key or developer setup is needed.
+
+## Connect a client
+
+MCP Connect authenticates through SuperOffice OpenID Connect: the client signs in with a SuperOffice user account, and the server proxies every request through that identity.
+
+Step-by-step setup guides for each client are available on the [SuperOffice MCP Server site][1]:
+
+* [Claude Desktop][2]
+* [Claude Code][3]
+* [ChatGPT][4]
+* [GitHub Copilot in VS Code][5]
+* [Microsoft Copilot Studio][6]
+
 ## Read and update tools
 
 MCP Connect exposes a set of tools that the connected AI client can call, to search, read, and update SuperOffice CRM data on your behalf. MCP Connect does not create new records.
@@ -48,23 +65,6 @@ MCP Connect exposes a set of tools that the connected AI client can call, to sea
 | `list_custom_objects`, `search_custom_object_rows`, `describe_custom_object`, `get_custom_object_row` | Find and read rows in custom tables ([custom objects][8]). |
 | `get_associate`, `search_external_companies`, `whoami`, `server_info` | Resolve a user's identity, search external business registries, and get server/session information. |
 | `update_company`, `update_person`, `update_appointment`, `update_sale`, `update_project`, `update_ticket` | Update fields on an existing record. |
-
-## Connect a client
-
-MCP Connect authenticates through SuperOffice OpenID Connect: the client signs in with a SuperOffice user account, and the server proxies every request through that identity.
-
-Step-by-step setup guides for each client are available on the [SuperOffice MCP Server site][1]:
-
-* [Claude Desktop][2]
-* [Claude Code][3]
-* [ChatGPT][4]
-* [GitHub Copilot in VS Code][5]
-* [Microsoft Copilot Studio][6]
-
-## Requirements
-
-* Your organization must be on **CRM Suite Plus** or above.
-* A SuperOffice user account. The first time you connect a client, you sign in and approve access through a standard login prompt; no separate API key or developer setup is needed.
 
 [1]: https://mcp.superoffice.com/
 [2]: https://mcp.superoffice.com/static/how-to-connect/claude-desktop.html

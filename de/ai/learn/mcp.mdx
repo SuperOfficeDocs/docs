@@ -31,6 +31,23 @@ MCP Connect ist in Kürze verfügbar. Es erfordert [CRM Suite Plus][7] oder höh
 * Funktioniert bei allen KI-Anbietern gleich: Claude, Microsoft Copilot und ChatGPT verbinden sich alle über denselben MCP Connect-Server, sodass Sie nicht an ein KI-Tool gebunden sind.
 * Antworten bleiben in Ihren eigenen Daten verankert, da jeder Lesevorgang direkt aus SuperOffice stammt und nicht aus dem, was das Modell sich merkt.
 
+## Anforderungen
+
+* Ihre Organisation muss **CRM Suite Plus** oder höher haben.
+* Ein SuperOffice-Benutzerkonto. Wenn Sie zum ersten Mal einen Client verbinden, melden Sie sich über einen normalen Anmeldedialog an und genehmigen den Zugriff; ein separater API-Schlüssel oder eine Entwicklereinrichtung sind nicht erforderlich.
+
+## Client verbinden
+
+MCP Connect authentifiziert über SuperOffice OpenID Connect: Der Client meldet sich mit einem SuperOffice-Benutzerkonto an, und der Server leitet jede Anfrage über diese Identität weiter.
+
+Schritt-für-Schritt-Anleitungen für jeden Client finden Sie auf der [SuperOffice MCP Server-Website][1]:
+
+* [Claude Desktop][2]
+* [Claude Code][3]
+* [ChatGPT][4]
+* [GitHub Copilot in VS Code][5]
+* [Microsoft Copilot Studio][6]
+
 ## Lese- und Aktualisierungstools
 
 MCP Connect stellt eine Reihe von Tools bereit, die der verbundene KI-Client aufrufen kann, um SuperOffice CRM-Daten in Ihrem Auftrag zu suchen, zu lesen und zu aktualisieren. MCP Connect legt keine neuen Datensätze an.
@@ -48,23 +65,6 @@ MCP Connect stellt eine Reihe von Tools bereit, die der verbundene KI-Client auf
 | `list_custom_objects`, `search_custom_object_rows`, `describe_custom_object`, `get_custom_object_row` | Findet und liest Zeilen in [Zusatztabellen][8] (benutzerdefinierten Objekten). |
 | `get_associate`, `search_external_companies`, `whoami`, `server_info` | Löst die Identität eines Benutzers auf, durchsucht externe Handelsregister und ruft Server- und Sitzungsinformationen ab. |
 | `update_company`, `update_person`, `update_appointment`, `update_sale`, `update_project`, `update_ticket` | Aktualisiert Felder in einem bestehenden Datensatz. |
-
-## Client verbinden
-
-MCP Connect authentifiziert über SuperOffice OpenID Connect: Der Client meldet sich mit einem SuperOffice-Benutzerkonto an, und der Server leitet jede Anfrage über diese Identität weiter.
-
-Schritt-für-Schritt-Anleitungen für jeden Client finden Sie auf der [SuperOffice MCP Server-Website][1]:
-
-* [Claude Desktop][2]
-* [Claude Code][3]
-* [ChatGPT][4]
-* [GitHub Copilot in VS Code][5]
-* [Microsoft Copilot Studio][6]
-
-## Anforderungen
-
-* Ihre Organisation muss **CRM Suite Plus** oder höher haben.
-* Ein SuperOffice-Benutzerkonto. Wenn Sie zum ersten Mal einen Client verbinden, melden Sie sich über einen normalen Anmeldedialog an und genehmigen den Zugriff; ein separater API-Schlüssel oder eine Entwicklereinrichtung sind nicht erforderlich.
 
 [1]: https://mcp.superoffice.com/
 [2]: https://mcp.superoffice.com/static/how-to-connect/claude-desktop.html

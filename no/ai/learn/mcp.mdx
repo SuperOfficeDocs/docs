@@ -31,6 +31,23 @@ MCP Connect kommer snart. Det krever [CRM Suite Plus][7] eller høyere.
 * Fungerer på samme måte på tvers av AI-leverandører: Claude, Microsoft Copilot og ChatGPT kobler alle til gjennom den samme MCP Connect-serveren, slik at du ikke er låst til ett AI-verktøy.
 * Svarene forblir forankret i dine egne data, fordi hver lesing kommer direkte fra SuperOffice i stedet for fra det modellen husker.
 
+## Krav
+
+* Organisasjonen din må ha **CRM Suite Plus** eller høyere.
+* En SuperOffice-brukerkonto. Første gang du kobler til en klient, logger du inn og godkjenner tilgang via en vanlig innloggingsdialog; det kreves ingen egen API-nøkkel eller utvikleroppsett.
+
+## Koble til en klient
+
+MCP Connect autentiserer gjennom SuperOffice OpenID Connect: klienten logger inn med en SuperOffice-brukerkonto, og serveren viderefører hver forespørsel gjennom den identiteten.
+
+Trinnvise oppsettsveiledninger for hver klient finnes på [SuperOffice MCP Server-siden][1]:
+
+* [Claude Desktop][2]
+* [Claude Code][3]
+* [ChatGPT][4]
+* [GitHub Copilot i VS Code][5]
+* [Microsoft Copilot Studio][6]
+
 ## Lese- og oppdateringsverktøy
 
 MCP Connect stiller til rådighet et sett med verktøy som den tilkoblede AI-klienten kan kalle, for å søke, lese og oppdatere SuperOffice CRM-data på dine vegne. MCP Connect oppretter ikke nye poster.
@@ -48,23 +65,6 @@ MCP Connect stiller til rådighet et sett med verktøy som den tilkoblede AI-kli
 | `list_custom_objects`, `search_custom_object_rows`, `describe_custom_object`, `get_custom_object_row` | Finner og leser rader i [ekstratabeller][8] (egendefinerte objekter). |
 | `get_associate`, `search_external_companies`, `whoami`, `server_info` | Slår opp en brukers identitet, søker i eksterne foretaksregistre, og henter server- og sesjonsinformasjon. |
 | `update_company`, `update_person`, `update_appointment`, `update_sale`, `update_project`, `update_ticket` | Oppdaterer felt på en eksisterende post. |
-
-## Koble til en klient
-
-MCP Connect autentiserer gjennom SuperOffice OpenID Connect: klienten logger inn med en SuperOffice-brukerkonto, og serveren viderefører hver forespørsel gjennom den identiteten.
-
-Trinnvise oppsettsveiledninger for hver klient finnes på [SuperOffice MCP Server-siden][1]:
-
-* [Claude Desktop][2]
-* [Claude Code][3]
-* [ChatGPT][4]
-* [GitHub Copilot i VS Code][5]
-* [Microsoft Copilot Studio][6]
-
-## Krav
-
-* Organisasjonen din må ha **CRM Suite Plus** eller høyere.
-* En SuperOffice-brukerkonto. Første gang du kobler til en klient, logger du inn og godkjenner tilgang via en vanlig innloggingsdialog; det kreves ingen egen API-nøkkel eller utvikleroppsett.
 
 [1]: https://mcp.superoffice.com/
 [2]: https://mcp.superoffice.com/static/how-to-connect/claude-desktop.html
