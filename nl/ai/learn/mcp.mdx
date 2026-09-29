@@ -1,0 +1,77 @@
+---
+title: MCP Connect
+description: Verbind SuperOffice CRM met Claude, Microsoft Copilot of ChatGPT als live gegevensbron via het Model Context Protocol.
+keywords: ['MCP', 'Model Context Protocol', 'Claude', 'Copilot', 'ChatGPT', 'AI-integratie']
+author: digitaldiina
+date: 09.29.2026
+so_version: 12.4
+content_type: concept
+tier: plus
+category: automation
+topic: ai
+platform: web
+deployment: online
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Overige AI-diensten: /nl/ai/learn/index
+  - /nl/ai/learn/set-up-ai-agents
+  - SuperOffice Trust Center: https://trust.superoffice.com/
+language: nl
+---
+
+MCP Connect maakt van SuperOffice CRM een live gegevensbron voor Claude, Microsoft Copilot en ChatGPT, verbonden via het open Model Context Protocol (MCP). In plaats van CRM-gegevens te kopiëren en plakken in een AI-chat, leest de assistent rechtstreeks uit uw eigen bedrijven, contactpersonen, verkopen, verzoeken, projecten, vervolgactiviteiten en documenten, zodat antwoorden gebaseerd blijven op uw echte gegevens.
+
+<Note>
+MCP Connect is binnenkort beschikbaar. Hiervoor is [CRM Suite Plus][7] of hoger vereist.
+</Note>
+
+## Wat MCP Connect doet
+
+* Geen verouderde CRM-gegevens meer kopiëren naar een AI-chat, omdat de assistent rechtstreeks uit uw live omgeving leest.
+* Werkt op dezelfde manier bij alle AI-aanbieders: Claude, Microsoft Copilot en ChatGPT maken allemaal verbinding via dezelfde MCP Connect-server, zodat u niet vastzit aan één AI-tool.
+* Antwoorden blijven gebaseerd op uw eigen gegevens, omdat elke leesactie rechtstreeks van SuperOffice komt in plaats van uit wat het model onthoudt.
+
+## Vereisten
+
+* Uw organisatie moet **CRM Suite Plus** of hoger hebben.
+* Een SuperOffice-gebruikersaccount. De eerste keer dat u een client verbindt, meldt u zich aan en keurt u de toegang goed via een standaard aanmeldscherm; een aparte API-sleutel of ontwikkelaarsinstellingen zijn niet nodig.
+
+## Een client verbinden
+
+MCP Connect authenticeert via SuperOffice OpenID Connect: de client meldt zich aan met een SuperOffice-gebruikersaccount, en de server geeft elk verzoek door via die identiteit.
+
+Stapsgewijze installatiehandleidingen voor elke client zijn beschikbaar op de [website van de SuperOffice MCP Server][1]:
+
+* [Claude Desktop][2]
+* [Claude Code][3]
+* [ChatGPT][4]
+* [GitHub Copilot in VS Code][5]
+* [Microsoft Copilot Studio][6]
+
+## Lees- en bijwerktools
+
+MCP Connect biedt een set tools die de verbonden AI-client kan aanroepen om SuperOffice CRM-gegevens namens u te zoeken, te lezen en bij te werken. MCP Connect maakt geen nieuwe records aan.
+
+| Tools | Wat ze doen |
+|---|---|
+| `search_companies`, `get_company` | Vindt en leest bedrijfsrecords. |
+| `search_persons`, `get_person` | Vindt en leest contactpersonen. |
+| `search_sales`, `get_sale`, `get_sale_guide`, `list_sale_stakeholders`, `list_sales_for_stakeholder`, `list_sale_activities` | Vindt en leest verkopen, hun verkoopgids, belanghebbenden en activiteitengeschiedenis. |
+| `search_tickets`, `search_tickets_freetext`, `get_ticket`, `get_ticket_message`, `get_ticket_metadata` | Vindt verzoeken en leest hun gesprek of administratieve gegevens. |
+| `search_projects`, `get_project`, `list_project_members`, `list_projects_for_member`, `list_project_activities` | Vindt en leest projecten, hun leden en activiteitengeschiedenis. |
+| `search_appointments`, `get_appointment` | Vindt en leest vervolgactiviteiten in de agenda. |
+| `search_documents`, `get_document_markdown`, `get_document_contents`, `list_document_templates` | Vindt documenten, waaronder e-mails en offertes, en leest de inhoud. |
+| `list_contact_activities`, `list_person_activities`, `list_user_activities` | Toont de activiteitengeschiedenis voor een bedrijf, contactpersoon of gebruiker. |
+| `list_custom_objects`, `search_custom_object_rows`, `describe_custom_object`, `get_custom_object_row` | Vindt en leest rijen in [extra tabellen][8] (aangepaste objecten). |
+| `get_associate`, `search_external_companies`, `whoami`, `server_info` | Herleidt de identiteit van een gebruiker, doorzoekt externe handelsregisters en haalt server- en sessie-informatie op. |
+| `update_company`, `update_person`, `update_appointment`, `update_sale`, `update_project`, `update_ticket` | Werkt velden bij op een bestaand record. |
+
+[1]: https://mcp.superoffice.com/
+[2]: https://mcp.superoffice.com/static/how-to-connect/claude-desktop.html
+[3]: https://mcp.superoffice.com/static/how-to-connect/claude-code.html
+[4]: https://mcp.superoffice.com/static/how-to-connect/chatgpt.html
+[5]: https://mcp.superoffice.com/static/how-to-connect/vscode-copilot.html
+[6]: https://mcp.superoffice.com/static/how-to-connect/copilot-studio.html
+[7]: /nl/admin/license/crm-suite
+[8]: /nl/custom-objects/learn/extra-table
