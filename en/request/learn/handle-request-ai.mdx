@@ -10,9 +10,11 @@ content_type: concept
 tier: core
 audience: person
 audience_tooltip: SuperOffice Service
+redirect_from:
+  - /en/ai/learn/text-analysis
+  - /en/ai/text-analysis/index
 related:
   - How to use AI services: /en/ai/learn/index
-  - Text analysis of requests: /en/ai/learn/text-analysis
   - Categorisation of requests: /en/ai/learn/categorization
 language: en
 ---
@@ -23,15 +25,23 @@ AI services require a separate license. SuperOffice AI is cloud only and is a se
 
 The introduction of Artificial Intelligence (AI) in SuperOffice 10 gives request handlers / support agents a new set of smart tools to make their workday more efficient.
 
-## Language detection
+## <a id="text-analysis"></a>Text analysis
+
+Text analysis detects the language and sentiment of an incoming request, and offers translation for messages written in an unfamiliar language. These features appear directly in the request view and do not require any configuration.
+
+<Note>
+Text analysis requires a Text Services license.
+</Note>
+
+### Language detection
 
 This functionality automatically detects the language of an incoming request. The detected language is displayed under the message.
 
-## Translation
+### Translation
 
 If you receive a message in a language you cannot read, you can click the **Translate from** ***language*** below the message. The subject and body of the message is translated and added below the original message.
 
-## Sentiment analysis
+### Sentiment analysis
 
 Is the contact happy or angry?
 
@@ -39,9 +49,9 @@ Is the contact happy or angry?
 * Neutral <i class="ph ph-smiley-meh" aria-hidden="true"></i>
 * Positive <i class="ph ph-smiley" aria-hidden="true"></i>
 
-If this function is active, incoming email requests are analysed to determine the mood of the contact. An emoticon below the message indicates the detected sentiment (happy, unhappy, or neutral).
+If this function is active, incoming email requests are analyzed to determine the mood of the contact. An emoticon below the message indicates the detected sentiment (happy, unhappy, or neutral).
 
-### Automatic categorisation
+## Automatic categorisation
 
 Save time by letting the system categorise requests for you. If this function is active, incoming email requests are analysed to determine the best category for each request. The footer of a request shows the category suggested by the system. Click the category link to update the request with the suggested category.
 

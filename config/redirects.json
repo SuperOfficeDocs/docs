@@ -1158,7 +1158,11 @@
   },
   {
     "source": "/da/ai/learn/text-analysis.html",
-    "destination": "/da/ai/learn/text-analysis"
+    "destination": "/da/request/learn/handle-request-ai#text-analysis"
+  },
+  {
+    "source": "/da/ai/learn/text-analysis",
+    "destination": "/da/request/learn/handle-request-ai#text-analysis"
   },
   {
     "source": "/da/automation/crmscript/learn/create-folder",
@@ -5530,7 +5534,11 @@
   },
   {
     "source": "/de/ai/learn/text-analysis.html",
-    "destination": "/de/ai/learn/text-analysis"
+    "destination": "/de/request/learn/handle-request-ai#text-analysis"
+  },
+  {
+    "source": "/de/ai/learn/text-analysis",
+    "destination": "/de/request/learn/handle-request-ai#text-analysis"
   },
   {
     "source": "/de/automation/crmscript/learn/create-folder",
@@ -10090,11 +10098,15 @@
   },
   {
     "source": "/en/ai/learn/text-analysis.html",
-    "destination": "/en/ai/learn/text-analysis"
+    "destination": "/en/request/learn/handle-request-ai#text-analysis"
+  },
+  {
+    "source": "/en/ai/learn/text-analysis",
+    "destination": "/en/request/learn/handle-request-ai#text-analysis"
   },
   {
     "source": "/en/ai/text-analysis/index",
-    "destination": "/en/ai/learn/text-analysis"
+    "destination": "/en/request/learn/handle-request-ai#text-analysis"
   },
   {
     "source": "/en/api/archive-providers/add-columns.html",
@@ -20306,7 +20318,11 @@
   },
   {
     "source": "/nl/ai/learn/text-analysis.html",
-    "destination": "/nl/ai/learn/text-analysis"
+    "destination": "/nl/request/learn/handle-request-ai#text-analysis"
+  },
+  {
+    "source": "/nl/ai/learn/text-analysis",
+    "destination": "/nl/request/learn/handle-request-ai#text-analysis"
   },
   {
     "source": "/nl/automation/crmscript/learn/create-folder",
@@ -24670,7 +24686,11 @@
   },
   {
     "source": "/no/ai/learn/text-analysis.html",
-    "destination": "/no/ai/learn/text-analysis"
+    "destination": "/no/request/learn/handle-request-ai#text-analysis"
+  },
+  {
+    "source": "/no/ai/learn/text-analysis",
+    "destination": "/no/request/learn/handle-request-ai#text-analysis"
   },
   {
     "source": "/no/automation/crmscript/learn/create-folder",
@@ -29546,7 +29566,11 @@
   },
   {
     "source": "/sv/ai/learn/text-analysis.html",
-    "destination": "/sv/ai/learn/text-analysis"
+    "destination": "/sv/request/learn/handle-request-ai#text-analysis"
+  },
+  {
+    "source": "/sv/ai/learn/text-analysis",
+    "destination": "/sv/request/learn/handle-request-ai#text-analysis"
   },
   {
     "source": "/sv/automation/crmscript/learn/create-folder",
