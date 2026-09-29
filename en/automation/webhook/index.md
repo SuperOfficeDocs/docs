@@ -10,7 +10,7 @@ content_type: concept
 tier: core
 userflow_index: true
 related:
-  - MCP Connect: /en/ai/learn/mcp
+  - /en/ai/learn/mcp
 language: en
 ---
 
