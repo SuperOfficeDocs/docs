@@ -2,7 +2,7 @@
 uid: help-en-ai
 title: AI services
 description: Overview of artificial intelligence services in SuperOffice CRM
-keywords: ['artificial intelligence', 'AI Platform', 'machine learning', 'automation', 'insight', 'assist', 'agent', 'mcp', 'instance']
+keywords: ['artificial intelligence', 'AI Platform', 'machine learning', 'automation', 'insight', 'assist', 'agent', 'mcp', 'instance', 'text analysis']
 author: digitaldiina
 date: 10.01.2026
 so_version: 12.4
@@ -15,7 +15,10 @@ platform: web
 deployment: online
 audience: person
 audience_tooltip: SuperOffice CRM
-redirect_from: /en/ai/index
+redirect_from:
+  - /en/ai/index
+  - /en/ai/learn/text-analysis
+  - /en/ai/text-analysis/index
 boost: 2
 related:
   - /en/ai/learn/set-up-ai-agents
@@ -36,7 +39,10 @@ SuperOffice AI is available in CRM Online only. License requirements are service
 | Service | Description | License |
 |---|---|---|
 | [Categorization][2] | Suggests a category for new requests based on the message content. | Categorization |
-| [Translation, language detection, mood detection][1] | Analyzes text to detect language, translate it, and determine sentiment. | Text Services |
+| **Writing Assist** | Drafts emails, notes, and follow-ups for you to edit and send. | CRM Suite Starter |
+| [Request Insight][1] | Analyzes the sentiment of an incoming request so you can prioritize your response. | Text Services, or CRM Suite Core |
+| [Summary Assist][15] | Summarizes the messages in a request so you can act on it without reading the full thread. | Text Services, or CRM Suite Core |
+| [Translation Assist][16] | Detects the language of an incoming request and translates it into your language. | Text Services, or CRM Suite Core |
 | [Chatbot Connector][3] | Enables integration with external chat bots to handle incoming chats automatically. | Chatbot |
 | [Workspace Assist][4] | Uses generative AI to assist users with content creation and task guidance. | CRM Suite Core, or AI Lab (opt in/opt out in Settings and maintenance) |
 | [SuperNotes][5] | AI-powered meeting assistant that captures, transcribes, and summarizes meetings, then links the insights back to SuperOffice. | Separate integration (not part of AI Platform) |
@@ -47,6 +53,10 @@ SuperOffice AI is available in CRM Online only. License requirements are service
 | [Data Quality Agent][12] | Verifies and enriches the companies and contacts already in your CRM against trusted business sources, for a person to approve. | CRM Suite Growth |
 | [Duplicate Agent][13] | Finds duplicate companies and contacts, and reconnects orphaned contacts to their company, for a person to approve. | CRM Suite Growth |
 | [MCP Connect][14] | Connects SuperOffice CRM as a live data source for Claude, Microsoft Copilot, or ChatGPT to read and update. | CRM Suite Plus |
+
+<Note>
+Request Insight, Summary Assist, and Translation Assist require the SuperOffice AI Platform and a Text Services license, or CRM Suite Core. An administrator must [enable text analysis][17] before these features appear. Once enabled, they are visible directly in the request view and do not require any configuration by the end user.
+</Note>
 
 ## Insight, Assist, and Agent
 
@@ -78,7 +88,7 @@ An agent that takes action on your data, such as the Data Quality Agent, uses AI
 
 1. Proceed to [choose, activate, and set up your agents][10].
 
-[1]: /en/ai/learn/text-analysis
+[1]: /en/request/learn/handle-request-ai#sentiment
 [2]: /en/ai/learn/categorization
 [3]: /en/chat/admin/channel-create#chatbot
 [4]: /en/ai/learn/workspace-assist
@@ -91,6 +101,10 @@ An agent that takes action on your data, such as the Data Quality Agent, uses AI
 [12]: /en/ai/learn/data-quality-agent
 [13]: /en/ai/learn/duplicate-agent
 [14]: /en/ai/learn/mcp
+
+[15]: /en/request/learn/handle-request-ai#summary
+[16]: /en/request/learn/handle-request-ai#translate
+[17]: /en/ai/admin/index#enable-text-analysis
 
 [img1]: /media/loc/en/ai/open-agents-area.png
 [img2]: /media/loc/en/ai/approve-ai-agents.png

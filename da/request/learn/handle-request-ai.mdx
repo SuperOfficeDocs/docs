@@ -13,7 +13,6 @@ audience: person
 audience_tooltip: SuperOffice Service
 related:
   - Sådan bruger du AI-tjenester: /da/ai/learn/index
-  - Tekstanalyse af sager: /da/ai/learn/text-analysis
   - Kategorisering af sager: /da/ai/learn/categorization
 language: da
 ---
@@ -24,25 +23,45 @@ AI-tjenester kræver en separat licens. SuperOffice AI er cloud-baseret og et se
 
 Indførelsen af kunstig intelligens (AI) i SuperOffice 10 giver salgsbehandlere / supportagenter et nyt sæt smarte værktøjer til at gøre deres arbejdsdag mere effektiv.
 
-## Registrering af sprog
+## Request Insight {#sentiment}
 
-Denne funktion registrerer automatisk sproget i en indgående sag. Det registrerede sprog vises under meddelelsen.
+Request Insight analyserer sentimentet i en indgående sag, så du kan prioritere den kunde, der har mest brug for dig.
 
-## Oversættelse
+<Note>
+Request Insight kræver en Text Services-licens eller CRM Suite Core.
+</Note>
 
-Hvis du modtager en meddelelse på et sprog, du ikke kan læse, kan du klikke på **oversætte fra** ***sprog*** under meddelelsen. Emnet og brødteksten i meddelelsen er oversat og tilføjet under den oprindelige meddelelse.
-
-## Analyse af synspunkt
-
-Er personen glad eller vred?
+Er personen glad eller vred? Hvis denne funktion er aktiv, analyseres indgående e-mailsager for at fastslå personens humør. Et humørikon under meddelelsen angiver den fundne følelse:
 
 * Negativ <i class="ph ph-smiley-sad" aria-hidden="true"></i>
 * Neutral <i class="ph ph-smiley-meh" aria-hidden="true"></i>
-* Positiv <i class="ph ph-smiley-meh" aria-hidden="true"></i>
+* Positiv <i class="ph ph-smiley" aria-hidden="true"></i>
 
-Hvis denne funktion er aktiv, analyseres indgående e-mailsager for at fastslå personens "humør". Et humørikon under meddelelsen vil indikere den fundne følelse (glad, ulykkelig eller neutral).
+## Summary Assist {#summary}
 
-### Automatisk kategorisering
+Summary Assist opsummerer beskederne i en sag, så du kan handle uden at læse hele forløbet. Funktionen vises som en handling i det samme panel som Reply Assist.
+
+<Note>
+Summary Assist kræver en Text Services-licens eller CRM Suite Core.
+</Note>
+
+1. Vælg **Opsummer** i sagspanelet.
+2. Gennemgå det genererede resumé af sagens beskeder.
+3. Vælg **Tilbage** for at vende tilbage til panelet.
+
+## Translation Assist {#translate}
+
+Translation Assist registrerer sproget i en indgående sag og tilbyder oversættelse, så du kan læse og besvare sager på ethvert sprog.
+
+<Note>
+Translation Assist kræver en Text Services-licens eller CRM Suite Core.
+</Note>
+
+Denne funktion registrerer automatisk sproget i en indgående sag. Det registrerede sprog vises under meddelelsen.
+
+Hvis du modtager en meddelelse på et sprog, du ikke kan læse, kan du klikke på **oversætte fra** ***sprog*** under meddelelsen. Emnet og brødteksten i meddelelsen er oversat og tilføjet under den oprindelige meddelelse.
+
+## Automatisk kategorisering
 
 Spar tid ved at lade systemet kategorisere sager for dig. Hvis denne funktion er aktiv, analyseres indgående e-mail-sager for at bestemme den bedste kategori for hver sag. I sidefoden af en anmodning vil du se den kategori, der foreslås af systemet. Klik på kategorilinket for at opdatere sagen med den foreslåede kategori.
 

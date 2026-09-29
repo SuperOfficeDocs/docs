@@ -96,7 +96,6 @@
         "icon": "wand-magic-sparkles",
         "root": "da/ai/learn/index",
         "pages": [
-          "da/ai/learn/text-analysis",
           "da/ai/learn/categorization",
           "da/ai/learn/workspace-assist",
           "da/ai/learn/lead-agent",

@@ -2,7 +2,7 @@
 uid: help-da-ai
 title: AI-tjenester
 description: Oversigt over kunstig intelligens-tjenester i SuperOffice CRM
-keywords: ['AI', 'kunstig intelligens', 'AI Platform', 'maskinlæring', 'automatisering', 'indsigt', 'assist', 'agent', 'mcp', 'instans']
+keywords: ['AI', 'kunstig intelligens', 'AI Platform', 'maskinlæring', 'automatisering', 'indsigt', 'assist', 'agent', 'mcp', 'instans', 'tekstanalyse']
 author: digitaldiina
 date: 09.28.2026
 so_version: 12.4
@@ -15,7 +15,9 @@ platform: web
 deployment: online
 audience: person
 audience_tooltip: SuperOffice CRM
-redirect_from: /da/ai/index
+redirect_from:
+  - /da/ai/index
+  - /da/ai/learn/text-analysis
 boost: 2
 related:
   - /da/ai/learn/set-up-ai-agents
@@ -36,7 +38,10 @@ SuperOffice AI er kun tilgængelig i CRM Online. Licenskrav er tjenestespecifikk
 | Tjeneste | Beskrivelse | Licens |
 |---|---|---|
 | [Kategorisering][2] | Foreslår en kategori for nye sager baseret på beskedindholdet. | Categorization |
-| [Oversættelse, sprogregistrering, stemningsregistrering][1] | Analyserer tekst for at registrere sprog, oversætte det og bestemme sentiment. | Text Services |
+| **Writing Assist** | Udkast til e-mails, noter og opfølgninger, som du kan redigere og sende. | CRM Suite Starter |
+| [Request Insight][1] | Analyserer sentimentet i en indgående sag, så du kan prioritere dit svar. | Text Services eller CRM Suite Core |
+| [Summary Assist][15] | Opsummerer beskederne i en sag, så du kan handle uden at læse hele forløbet. | Text Services eller CRM Suite Core |
+| [Translation Assist][16] | Registrerer sproget i en indgående sag og oversætter den til dit sprog. | Text Services eller CRM Suite Core |
 | [Chatbot Connector][3] | Muliggør integration med eksterne chatbots til automatisk håndtering af indgående chats. | Chatbot |
 | [Workspace Assist][4] | Bruger generativ AI til at hjælpe brugere med indholdsoprettelse og opgavevejledning. | CRM Suite Core eller AI Lab (tilmelding/framelding i Indstillinger og vedligeholdelse) |
 | [SuperNotes][5] | AI-drevet mødeassistent, der optager, transskriberer og opsummerer møder og knytter indsigterne tilbage til SuperOffice. | Separat integration (ikke en del af AI Platform) |
@@ -47,6 +52,10 @@ SuperOffice AI er kun tilgængelig i CRM Online. Licenskrav er tjenestespecifikk
 | [Data Quality Agent][12] | Verificerer og beriger de firmaer og kontakter, der allerede findes i dit CRM, mod troværdige forretningskilder, så en person kan godkende dem. | CRM Suite Growth |
 | [Duplicate Agent][13] | Finder duplikerede firmaer og kontakter, og genforbinder forældreløse kontakter til deres firma, så en person kan godkende dem. | CRM Suite Growth |
 | [MCP Connect][14] | Forbinder SuperOffice CRM som en live datakilde for Claude, Microsoft Copilot eller ChatGPT til at læse og opdatere. | CRM Suite Plus |
+
+<Note>
+Request Insight, Summary Assist og Translation Assist kræver SuperOffice AI Platform og en Text Services-licens eller CRM Suite Core. Disse funktioner er synlige direkte i sagsvisningen og kræver ingen konfiguration af slutbrugeren.
+</Note>
 
 ## Insight, Assist og Agent
 
@@ -76,7 +85,7 @@ En agent, der handler på dine data, såsom Data Quality Agent, bruger AI-credit
 
 1. Fortsæt til [at vælge, aktivere og opsætte dine agenter][10].
 
-[1]: /da/ai/learn/text-analysis
+[1]: /da/request/learn/handle-request-ai#sentiment
 [2]: /da/ai/learn/categorization
 [3]: /da/chat/admin/channel-create#chatbot
 [4]: /da/ai/learn/workspace-assist
@@ -89,6 +98,9 @@ En agent, der handler på dine data, såsom Data Quality Agent, bruger AI-credit
 [12]: /da/ai/learn/data-quality-agent
 [13]: /da/ai/learn/duplicate-agent
 [14]: /da/ai/learn/mcp
+
+[15]: /da/request/learn/handle-request-ai#summary
+[16]: /da/request/learn/handle-request-ai#translate
 
 [img1]: ../../../media/loc/en/ai/open-agents-area.png
 [img2]: ../../../media/loc/en/ai/approve-ai-agents.png

@@ -2,7 +2,7 @@
 uid: help-de-ai
 title: KI-Services
 description: Übersicht über Künstliche Intelligenz-Services in SuperOffice CRM
-keywords: ['KI', 'künstliche Intelligenz', 'KI-Plattform', 'maschinelles Lernen', 'Automatisierung', 'Insight', 'Assist', 'Agent', 'MCP', 'Instanz']
+keywords: ['KI', 'künstliche Intelligenz', 'KI-Plattform', 'maschinelles Lernen', 'Automatisierung', 'Insight', 'Assist', 'Agent', 'MCP', 'Instanz', 'Textanalyse']
 author: digitaldiina
 date: 10.01.2026
 so_version: 12.4
@@ -15,7 +15,9 @@ platform: web
 deployment: online
 audience: person
 audience_tooltip: SuperOffice CRM
-redirect_from: /de/ai/index
+redirect_from:
+  - /de/ai/index
+  - /de/ai/learn/text-analysis
 boost: 2
 related:
   - /de/ai/learn/set-up-ai-agents
@@ -36,7 +38,10 @@ SuperOffice KI ist nur in CRM Online verfügbar. Lizenzanforderungen sind dienst
 | Service | Beschreibung | Lizenz |
 |---|---|---|
 | [Kategorisierung][2] | Schlägt eine Kategorie für neue Anfragen basierend auf dem Nachrichteninhalt vor. | Categorization |
-| [Übersetzung, Spracherkennung, Stimmungserkennung][1] | Analysiert Text zur Spracherkennung, Übersetzung und Sentiment-Bestimmung. | Text Services |
+| **Writing Assist** | Entwirft E-Mails, Notizen und Follow-ups, die Sie bearbeiten und senden können. | CRM Suite Starter |
+| [Request Insight][1] | Analysiert das Sentiment einer eingehenden Anfrage, damit Sie Ihre Antwort priorisieren können. | Text Services oder CRM Suite Core |
+| [Summary Assist][15] | Fasst die Nachrichten einer Anfrage zusammen, damit Sie handeln können, ohne den gesamten Verlauf zu lesen. | Text Services oder CRM Suite Core |
+| [Translation Assist][16] | Erkennt die Sprache einer eingehenden Anfrage und übersetzt sie in Ihre Sprache. | Text Services oder CRM Suite Core |
 | [Chatbot Connector][3] | Ermöglicht die Integration mit externen Chatbots zur automatischen Bearbeitung eingehender Chats. | Chatbot |
 | [Workspace Assist][4] | Nutzt generative KI zur Unterstützung von Benutzern bei der Inhaltserstellung und Aufgabenführung. | CRM Suite Core oder AI Lab (An-/Abmeldung in Einstellungen und Verwaltung) |
 | [SuperNotes][5] | KI-gestützter Besprechungsassistent, der Besprechungen aufzeichnet, transkribiert und zusammenfasst und die Erkenntnisse mit SuperOffice verknüpft. | Separate Integration (nicht Teil der AI-Plattform) |
@@ -47,6 +52,10 @@ SuperOffice KI ist nur in CRM Online verfügbar. Lizenzanforderungen sind dienst
 | [Data Quality Agent][12] | Prüft und reichert die bereits in Ihrem CRM erfassten Firmen und Kontakte anhand vertrauenswürdiger Geschäftsquellen an, damit eine Person sie genehmigen kann. | CRM Suite Growth |
 | [Duplicate Agent][13] | Findet doppelte Firmen und Kontakte und verbindet verwaiste Kontakte wieder mit ihrer Firma, damit eine Person sie genehmigen kann. | CRM Suite Growth |
 | [MCP Connect][14] | Verbindet SuperOffice CRM als Live-Datenquelle mit Claude, Microsoft Copilot oder ChatGPT zum Lesen und Aktualisieren. | CRM Suite Plus |
+
+<Note>
+Request Insight, Summary Assist und Translation Assist erfordern die SuperOffice AI-Plattform und eine Text Services-Lizenz oder CRM Suite Core. Diese Funktionen sind direkt in der Anfragenansicht sichtbar und erfordern keine Konfiguration durch den Endbenutzer.
+</Note>
 
 ## Insight, Assist und Agent
 
@@ -76,7 +85,7 @@ Ein Agent, der Aktionen an Ihren Daten durchführt, wie der Data Quality Agent, 
 
 1. Fahren Sie fort, um [Ihre Agenten auszuwählen, zu aktivieren und einzurichten][10].
 
-[1]: /de/ai/learn/text-analysis
+[1]: /de/request/learn/handle-request-ai#sentiment
 [2]: /de/ai/learn/categorization
 [3]: /de/chat/admin/channel-create#chatbot
 [4]: /de/ai/learn/workspace-assist
@@ -89,6 +98,9 @@ Ein Agent, der Aktionen an Ihren Daten durchführt, wie der Data Quality Agent, 
 [12]: /de/ai/learn/data-quality-agent
 [13]: /de/ai/learn/duplicate-agent
 [14]: /de/ai/learn/mcp
+
+[15]: /de/request/learn/handle-request-ai#summary
+[16]: /de/request/learn/handle-request-ai#translate
 
 [img1]: ../../../media/loc/en/ai/open-agents-area.png
 [img2]: ../../../media/loc/en/ai/approve-ai-agents.png

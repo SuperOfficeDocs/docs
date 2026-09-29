@@ -19,25 +19,45 @@ AI-tjänster kräver en separat licens. SuperOffice AI är endast molnbaserat oc
 
 Introduktionen av artificiell intelligens (AI) i SuperOffice 10 ger ärendehandläggare/supportagenter tillgång till en ny uppsättning smarta verktyg för att göra deras arbetsdag effektivare.
 
-## Språkidentifiering
+## Request Insight {#sentiment}
 
-Denna funktion identifierar automatiskt språket i ett inkommande ärende. Det identifierade språket visas under meddelandet.
+Request Insight analyserar sentimentet i ett inkommande ärende, så att du kan prioritera den kund som behöver dig mest.
 
-## Översättning
+<Note>
+Request Insight kräver en Text Services-licens eller CRM Suite Core.
+</Note>
 
-Om du får ett meddelande på ett språk du inte kan läsa, kan du klicka på **Översätt från** ***språk*** under meddelandet. Meddelandets ämne och brödtext översätts och läggs till under det ursprungliga meddelandet.
-
-## Sentimentanalys
-
-Är kontakten glad eller arg?
+Är kontakten glad eller arg? Om den här funktionen är aktiverad, analyseras inkommande e-postförfrågningar för att avgöra kontaktens sinnesstämning. En emoticon under meddelandet visar det identifierade sentimentet:
 
 * Negativ <i class="ph ph-smiley-sad" aria-hidden="true"></i>
 * Neutral <i class="ph ph-smiley-meh" aria-hidden="true"></i>
 * Positiv <i class="ph ph-smiley" aria-hidden="true"></i>
 
-Om den här funktionen är aktiverad, analyseras inkommande e-postförfrågningar för att avgöra kontaktens "sinnesstämning". En emoticon under meddelandet visar det sentiment som har identifierats (glad, ledsen eller neutral).
+## Summary Assist {#summary}
 
-### Automatisk kategorisering
+Summary Assist sammanfattar meddelandena i ett ärende, så att du kan agera utan att läsa hela historiken. Funktionen visas som en åtgärd i samma panel som Reply Assist.
+
+<Note>
+Summary Assist kräver en Text Services-licens eller CRM Suite Core.
+</Note>
+
+1. Välj **Sammanfatta** i ärendepanelen.
+2. Granska den genererade sammanfattningen av ärendets meddelanden.
+3. Välj **Tillbaka** för att återgå till panelen.
+
+## Translation Assist {#translate}
+
+Translation Assist identifierar språket i ett inkommande ärende och erbjuder översättning, så att du kan läsa och besvara ärenden på vilket språk som helst.
+
+<Note>
+Translation Assist kräver en Text Services-licens eller CRM Suite Core.
+</Note>
+
+Denna funktion identifierar automatiskt språket i ett inkommande ärende. Det identifierade språket visas under meddelandet.
+
+Om du får ett meddelande på ett språk du inte kan läsa, kan du klicka på **Översätt från** ***språk*** under meddelandet. Meddelandets ämne och brödtext översätts och läggs till under det ursprungliga meddelandet.
+
+## Automatisk kategorisering
 
 Spara tid genom att låta systemet kategorisera ärenden åt dig. Om den här funktionen är aktiverad, analyseras inkommande e-postförfrågningar för att avgöra den bästa kategorin för varje ärende. I sidfoten i ett ärende kommer du att se kategorin som systemet föreslår. Klicka på kategorilänken för att uppdatera ärendet med den föreslagna kategorin.
 
@@ -48,7 +68,7 @@ Istället för en tom sida föreslår Reply Assist ett skräddarsytt svar på et
 Precis som med alla SuperOffice AI-funktioner är detta ett förslag som du måste godkänna. Inget sparas eller skickas automatiskt.
 
 <Note>
-Reply Assist kräver [CRM Suite Plus][4] eller högre.
+Reply Assist kräver [CRM Suite Plus][3] eller högre.
 </Note>
 
 ![Reply Assists föreslagna svar på ett ärende -screenshot][img1]
@@ -56,11 +76,9 @@ Reply Assist kräver [CRM Suite Plus][4] eller högre.
 ## Relaterade ämnen
 
 * [Så här använder du AI-tjänster][1]
-* [Textanalys av ärenden][2]
-* [Kategorisering av ärenden][3]
+* [Kategorisering av ärenden][2]
 
 [1]: ../../ai/learn/index
-[2]: ../../ai/learn/text-analysis
-[3]: ../../ai/learn/categorization
-[4]: ../../admin/license/crm-suite#plans
+[2]: ../../ai/learn/categorization
+[3]: ../../admin/license/crm-suite#plans
 [img1]: /media/loc/en/request/reply-assist.png

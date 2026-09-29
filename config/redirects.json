@@ -1157,8 +1157,8 @@
     "destination": "/da/ai/learn/workspace-assist"
   },
   {
-    "source": "/da/ai/learn/text-analysis.html",
-    "destination": "/da/ai/learn/text-analysis"
+    "source": "/da/ai/learn/text-analysis*",
+    "destination": "/da/ai/learn/index"
   },
   {
     "source": "/da/automation/crmscript/learn/create-folder",
@@ -5529,8 +5529,8 @@
     "destination": "/de/ai/learn/workspace-assist"
   },
   {
-    "source": "/de/ai/learn/text-analysis.html",
-    "destination": "/de/ai/learn/text-analysis"
+    "source": "/de/ai/learn/text-analysis*",
+    "destination": "/de/ai/learn/index"
   },
   {
     "source": "/de/automation/crmscript/learn/create-folder",
@@ -10089,12 +10089,12 @@
     "destination": "/en/ai/learn/workspace-assist"
   },
   {
-    "source": "/en/ai/learn/text-analysis.html",
-    "destination": "/en/ai/learn/text-analysis"
+    "source": "/en/ai/learn/text-analysis*",
+    "destination": "/en/ai/learn/index"
   },
   {
     "source": "/en/ai/text-analysis/index",
-    "destination": "/en/ai/learn/text-analysis"
+    "destination": "/en/ai/learn/index"
   },
   {
     "source": "/en/api/archive-providers/add-columns.html",
@@ -20305,8 +20305,8 @@
     "destination": "/nl/ai/learn/workspace-assist"
   },
   {
-    "source": "/nl/ai/learn/text-analysis.html",
-    "destination": "/nl/ai/learn/text-analysis"
+    "source": "/nl/ai/learn/text-analysis*",
+    "destination": "/nl/ai/learn/index"
   },
   {
     "source": "/nl/automation/crmscript/learn/create-folder",
@@ -24669,8 +24669,8 @@
     "destination": "/no/ai/learn/workspace-assist"
   },
   {
-    "source": "/no/ai/learn/text-analysis.html",
-    "destination": "/no/ai/learn/text-analysis"
+    "source": "/no/ai/learn/text-analysis*",
+    "destination": "/no/ai/learn/index"
   },
   {
     "source": "/no/automation/crmscript/learn/create-folder",
@@ -29545,8 +29545,8 @@
     "destination": "/sv/ai/learn/workspace-assist"
   },
   {
-    "source": "/sv/ai/learn/text-analysis.html",
-    "destination": "/sv/ai/learn/text-analysis"
+    "source": "/sv/ai/learn/text-analysis*",
+    "destination": "/sv/ai/learn/index"
   },
   {
     "source": "/sv/automation/crmscript/learn/create-folder",

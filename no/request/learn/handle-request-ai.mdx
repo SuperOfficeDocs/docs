@@ -20,25 +20,45 @@ AI-tjenester krever en egen lisens. SuperOffice AI er kun skybasert og er et ege
 
 Innføringen av kunstig intelligens (AI) i SuperOffice 10 gir saksbehandlere/brukerstøtteagenter et nytt sett med smarte verktøy for å effektivisere arbeidsdagen.
 
-## Språkgjenkjenning
+## Request Insight {#sentiment}
 
-Denne funksjonaliteten oppdager automatisk språket av en innkommende sak. Det oppdagede språket vises under meldingen.
+Request Insight analyserer sentimentet i en innkommende sak, slik at du kan prioritere kunden som trenger deg mest.
 
-## Oversettelse
+<Note>
+Request Insight krever en Text Services-lisens eller CRM Suite Core.
+</Note>
 
-Hvis du mottar en melding på et språk du ikke kan lese, kan du klikke på **Oversett fra** ***språk*** under meldingen. Emnet og brødteksten i meldingen oversettes og legges til under den opprinnelige meldingen.
-
-## Sentimentanalyse
-
-Er personen glad eller sint?
+Er personen glad eller sint? Hvis denne funksjonen er aktiv, analyseres innkommende e-postsaker for å finne personens humør. Et uttrykksikon under meldingen indikerer det oppdagede sentiment:
 
 * Negativ <i class="ph ph-smiley-sad" aria-hidden="true"></i>
 * Nøytral <i class="ph ph-smiley-meh" aria-hidden="true"></i>
 * Positiv <i class="ph ph-smiley" aria-hidden="true"></i>
 
-Hvis denne funksjonen er aktiv, analyseres innkommende e-postsaker for å finne personens humør. Et uttrykksikon under meldingen indikerer det oppdagede sentiment (lykkelig, trist eller nøytral).
+## Summary Assist {#summary}
 
-### Automatisk kategorisering
+Summary Assist oppsummerer meldingene i en sak, slik at du kan handle uten å lese hele forløpet. Funksjonen vises som en handling i det samme panelet som Reply Assist.
+
+<Note>
+Summary Assist krever en Text Services-lisens eller CRM Suite Core.
+</Note>
+
+1. Velg **Oppsummer** i sakspanelet.
+2. Gå gjennom det genererte sammendraget av sakens meldinger.
+3. Velg **Tilbake** for å gå tilbake til panelet.
+
+## Translation Assist {#translate}
+
+Translation Assist gjenkjenner språket i en innkommende sak og tilbyr oversettelse, slik at du kan lese og svare på saker på ethvert språk.
+
+<Note>
+Translation Assist krever en Text Services-lisens eller CRM Suite Core.
+</Note>
+
+Denne funksjonaliteten oppdager automatisk språket av en innkommende sak. Det oppdagede språket vises under meldingen.
+
+Hvis du mottar en melding på et språk du ikke kan lese, kan du klikke på **Oversett fra** ***språk*** under meldingen. Emnet og brødteksten i meldingen oversettes og legges til under den opprinnelige meldingen.
+
+## Automatisk kategorisering
 
 Spar tid ved å la systemet kategorisere saker for deg. Hvis denne funksjonen er aktiv, analyseres innkommende e-postsaker for å finne den beste kategorien for hver sak. I bunnteksten av en sak vil du se kategorien systemet foreslår. Klikk på kategorikoblingen for å oppdatere saken med den foreslåtte kategorien.
 
@@ -49,7 +69,7 @@ I stedet for en tom side foreslår Reply Assist et skreddersydd svar på en innk
 Som med alle SuperOffice AI-funksjoner er dette et forslag du må godkjenne. Ingenting lagres eller sendes automatisk.
 
 <Note>
-Reply Assist krever [CRM Suite Plus][4] eller høyere.
+Reply Assist krever [CRM Suite Plus][3] eller høyere.
 </Note>
 
 ![Reply Assists foreslåtte svar på en sak -screenshot][img1]
@@ -57,11 +77,9 @@ Reply Assist krever [CRM Suite Plus][4] eller høyere.
 ## Aktuelle emner
 
 * [Slik bruker du AI-tjenester][1]
-* [Tekstanalyse av saker][2]
-* [Kategorisering av saker][3]
+* [Kategorisering av saker][2]
 
 [1]: ../../ai/learn/index
-[2]: ../../ai/learn/text-analysis
-[3]: ../../ai/learn/categorization
-[4]: ../../admin/license/crm-suite#plans
+[2]: ../../ai/learn/categorization
+[3]: ../../admin/license/crm-suite#plans
 [img1]: /media/loc/en/request/reply-assist.png
