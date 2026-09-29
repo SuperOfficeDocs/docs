@@ -1,0 +1,78 @@
+---
+title: MCP Connect
+description: Connect SuperOffice CRM to Claude, Microsoft Copilot, or ChatGPT as a live data source using the Model Context Protocol.
+keywords: ['MCP', 'Model Context Protocol', 'Claude', 'Copilot', 'ChatGPT', 'AI integration']
+author: digitaldiina
+date: 09.29.2026
+so_version: 12.5
+content_type: concept
+tier: plus
+category: automation
+topic: ai
+platform: web
+deployment: online
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Other AI services: /en/ai/learn/index
+  - /en/api/authentication/index
+  - /en/automation/webhook/index
+language: en
+---
+
+MCP Connect turns SuperOffice CRM into a live data source for Claude, Microsoft Copilot, and ChatGPT, connected through the open Model Context Protocol (MCP). Instead of copying and pasting CRM data into an AI chat, the assistant reads directly from your tenant's own companies, contacts, sales, tickets, projects, appointments, and documents, so its answers stay grounded in your real data.
+
+<Note>
+MCP Connect is coming soon, with general availability on October 1, 2026, on **CRM Suite Plus**.
+</Note>
+
+## What it does
+
+* No more copying stale CRM data into an AI chat, since the assistant reads straight from your live tenant.
+* Works the same way across AI providers: Claude, Microsoft Copilot, and ChatGPT all connect through the same MCP Connect server, so you aren't locked into one AI tool.
+* Answers stay grounded in your own data, because every read comes from SuperOffice itself rather than from what the model remembers.
+
+## Read and update tools
+
+MCP Connect exposes a set of tools that the connected AI client can call. Which tools are available depends on your license:
+
+* **Read** (`superoffice.ai-mcp`): search and read companies, contacts, sales, tickets, projects, appointments, and documents.
+* **Update** (`superoffice.ai-mcp-plus`): everything in Read, plus updating fields on an existing record. MCP Connect doesn't create new records.
+
+| Tools | What they do |
+|---|---|
+| `search_companies`, `get_company` | Find and read company records. |
+| `search_persons`, `get_person` | Find and read contacts. |
+| `search_sales`, `get_sale`, `get_sale_guide`, `list_sale_stakeholders`, `list_sales_for_stakeholder`, `list_sale_activities` | Find and read sales (opportunities), their pipeline guide, stakeholders, and activity history. |
+| `search_tickets`, `search_tickets_freetext`, `get_ticket`, `get_ticket_message`, `get_ticket_metadata` | Find tickets and read their conversation or bookkeeping details. |
+| `search_projects`, `get_project`, `list_project_members`, `list_projects_for_member`, `list_project_activities` | Find and read projects, their members, and activity history. |
+| `search_appointments`, `get_appointment` | Find and read diary appointments. |
+| `search_documents`, `get_document_markdown`, `get_document_contents`, `list_document_templates` | Find documents, including emails and quotes, and read their contents. |
+| `list_contact_activities`, `list_person_activities`, `list_user_activities` | List activity history for a company, person, or user. |
+| `list_custom_objects`, `search_custom_object_rows`, `describe_custom_object`, `get_custom_object_row` | Find and read rows in custom tables (user-defined objects). |
+| `get_associate`, `search_external_companies`, `whoami`, `server_info` | Resolve a user's identity, search external business registries, and get server/session information. |
+| `update_company`, `update_person`, `update_appointment`, `update_sale`, `update_project`, `update_ticket` | Update fields on an existing record. Requires the Update license. |
+
+## Connect a client
+
+MCP Connect authenticates through SuperOffice OpenID Connect: the client signs in with a SuperOffice user account, and the server proxies every request through that identity.
+
+Step-by-step setup guides for each client are maintained on the [SuperOffice MCP Server site][1]:
+
+* [Claude Desktop][2]
+* [Claude Code][3]
+* [ChatGPT][4]
+* [GitHub Copilot in VS Code][5]
+* [Microsoft Copilot Studio][6]
+
+## Requirements
+
+* Your organization must be on **CRM Suite Plus** or above.
+* A SuperOffice user account to authenticate with, via OpenID Connect.
+
+[1]: https://mcp.superoffice.com/
+[2]: https://mcp.superoffice.com/static/how-to-connect/claude-desktop.html
+[3]: https://mcp.superoffice.com/static/how-to-connect/claude-code.html
+[4]: https://mcp.superoffice.com/static/how-to-connect/chatgpt.html
+[5]: https://mcp.superoffice.com/static/how-to-connect/vscode-copilot.html
+[6]: https://mcp.superoffice.com/static/how-to-connect/copilot-studio.html
