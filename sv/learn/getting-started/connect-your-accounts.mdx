@@ -2,10 +2,10 @@
 uid: help-sv-connect-your-accounts
 title: Anslut dina konton
 description: Hur du använder guiden Användarinställningar för att ansluta ditt e-postkonto och dokumenthantering till SuperOffice CRM.
-keywords: ['användarinställningar', 'e-postanslutning', 'dokumenthantering', 'WebTools', 'anslut e-post', 'e-postkonto', 'guide', 'personliga inställningar']
+keywords: ['användarinställningar', 'e-postanslutning', 'dokumenthantering', 'WebTools', 'anslut e-post', 'e-postkonto', 'guide', 'personliga inställningar', 'Microsoft Graph', 'administratörsgodkännande']
 author: digitaldiina
-date: 05.04.2026
-so_version: 11.13
+date: 09.23.2026
+so_version: 12.5
 content_type: howto
 tier: starter
 audience: person
@@ -16,6 +16,7 @@ related:
   - Installera SuperOffice för Outlook: /integrations/superoffice-for-outlook/index
   - Installera SuperOffice Gmail Link: /integrations/gmail-link/index
   - Installera WebTools: /integrations/webtools/install
+  - Administratörsgodkännande för Microsoft Graph: /en/online/mail-services/graph/index
 language: sv
 ---
 
@@ -27,38 +28,74 @@ Som ny användare, eller när du konfigurerar en ny dator, bör du ansluta ditt 
 * Skicka mötesinbjudningar till externa mottagare och ta emot inbjudningar från andra.
 * Skapa, öppna och redigera dokument direkt från SuperOffice.
 
+<Note>
+Om du vill arbeta med **inkommande** e-post och komma åt SuperOffice-funktioner direkt i din e-postklient installerar du [SuperOffice för Outlook][3] (Microsoft 365) eller [SuperOffice Gmail Link][4] (Google Workspace) efter att ha slutfört guiden.
+
+**Byter du från Outlook MailLink?** Microsoft fasar ut tekniken bakom Outlook MailLink, så Outlook MailLink kommer inte längre att vara tillgängligt. [SuperOffice för Outlook][3] ersätter det med ett molnbaserat tillägg som behåller samma välbekanta arbetsflöde.
+</Note>
+
 ## Öppna guiden
 
 1. Klicka på <i class="ph ph-user-circle" aria-label="Personliga inställningar"></i> **Personliga inställningar** längst upp till höger.
 1. Välj **Användarinställningar**.
 
-Guiden leder dig genom tre steg.
+Guiden leder dig normalt genom fyra steg, men vad du faktiskt ser beror på vad som redan är konfigurerat för dig. Om du redan har en fungerande e-postanslutning, antingen via SuperOffice Inbox eller en Microsoft Entra ID-inloggning som din organisation redan har godkänt, hoppar guiden över e-poststeget och går direkt vidare till att ansluta din dokumenthantering. Om din dokumenthantering också redan är konfigurerad, antingen eftersom din organisation redan använder SharePoint eller Google Workspace för dokument, eller eftersom den senaste versionen av WebTools redan är installerad, visas guiden inte alls.
 
-## Steg 1: Översikt
+## Steg 1: Kom igång
 
-Den första skärmbilden sammanfattar vad guiden hjälper dig att konfigurera. Klicka på **Nästa** för att fortsätta.
+Den första skärmbilden hälsar dig välkommen vid namn och sammanfattar vad guiden hjälper dig att konfigurera. Klicka på **Kom igång** för att fortsätta, eller **Senare** för att konfigurera detta en annan gång.
 
-![SuperOffice Användarinställningar - översikt över guidens första skärm -screenshot][img1]
+![SuperOffice Användarinställningar - välkomstskärm i guiden -screenshot][img1]
 
-## Steg 2: Anslut ditt e-postkonto
-
-Klicka på **Anslut** och följ anvisningarna för att verifiera dina inloggningsuppgifter.
-
-![SuperOffice Användarinställningar - anslut ditt e-postkonto -screenshot][img2]
+## Steg 2: Anslut ditt e-postkonto {#email}
 
 Genom att ansluta ditt e-postkonto kan du skicka e-post från SuperOffice och arkivera utgående meddelanden automatiskt. Du kan också skicka och acceptera mötesinbjudningar.
 
-<Note>
-Om du vill arbeta med **inkommande** e-post och komma åt SuperOffice-funktioner direkt i din e-postklient installerar du [SuperOffice för Outlook][3] (Microsoft 365) eller [SuperOffice Gmail Link][4] (Google Workspace) efter att ha slutfört guiden.
-</Note>
+1. Klicka på **Anslut**.
 
-## Steg 3: Anslut din dokumenthantering
+![SuperOffice Användarinställningar - anslut ditt e-postkonto -screenshot][img2]
+
+1. Ange din e-postadress och klicka på **Nästa**.
+
+![SuperOffice Användarinställningar - ange din e-postadress -screenshot][img3]
+
+1. Logga in med dina e-postkontouppgifter. Om din organisation kräver multifaktorautentisering (MFA) anger du den verifieringskod som visas i din autentiseringsapp.
+
+![SuperOffice Användarinställningar - logga in med Microsoft -screenshot][img5]
+
+![SuperOffice Användarinställningar - ange din MFA-kod -screenshot][img6]
+
+1. När ditt konto är anslutet klickar du på **Nästa** för att fortsätta.
+
+![SuperOffice Användarinställningar - e-postkonto anslutet -screenshot][img7]
+
+### Om godkännande krävs {#consent}
+
+Du kan se meddelandet **Need admin approval**.
+
+![SuperOffice Användarinställningar - meddelande om att administratörsgodkännande krävs -screenshot][img9]
+
+* **Om du inte är Microsoft 365-administratör:** Välj det andra alternativet (**Return to the application without granting consent**), kopiera länken som visas på skärmen och dela den med din administratör. Be denna person godkänna SuperOffices e-postanslutning.
+
+    ![SuperOffice Användarinställningar - fel vid anslutning av e-postkonto -screenshot][img10]
+
+* **Om du *är* administratör:** Välj det första alternativet och följ stegen i [Administratörsgodkännande för Microsoft Graph][1].
+
+### Om ditt e-postkonto inte kan anslutas {#advanced}
+
+Om din organisation inte använder Microsoft 365, eller om du hellre vill ansluta manuellt, se [Konfigurera avancerade inställningar][7] för IMAP/SMTP-konfigurationen.
+
+Om du hoppar över att ansluta ditt e-postkonto påminner SuperOffice dig med en banner varje gång du försöker skicka ett e-postmeddelande eller en mötesinbjudning, tills du ansluter det. Du kan ansluta det när som helst under **Alternativ för e-post**.
+
+## Steg 3: Anslut din dokumenthantering {#document}
 
 Din dokumenthantering styr hur du skapar, öppnar och redigerar dokument i SuperOffice.
 
+Om din organisation redan använder SharePoint eller Google Workspace för dokument, eller om den senaste versionen av WebTools redan är installerad, hoppas detta steg över. Om WebTools är installerat men inte uppdaterat visar guiden en uppgraderingsuppmaning i stället för installationsstegen nedan.
+
 Klicka på **Ladda ned WebTools**, kör installationsprogrammet och följ anvisningarna på skärmen. WebTools ansluter din SuperOffice-klientorganisation till dina lokala Office-program.
 
-![SuperOffice Användarinställningar - ladda ned WebTools för dokumenthantering -screenshot][img3]
+![SuperOffice Användarinställningar - ladda ned WebTools för dokumenthantering -screenshot][img11]
 
 <Note>
 Installationsprogrammet väljs automatiskt utifrån ditt operativsystem. Om du laddar ned WebTools direkt från SuperOffice-nedladdningstjänsten väljer du rätt installationsprogram för ditt operativsystem (Windows eller macOS) och din version.
@@ -78,15 +115,40 @@ WebTools med SuperOffice-dokumentbiblioteket är standard. Din administratör ka
 
 * **Google Workspace:** Lagrar dokument i Google Workspace. Du kan öppna, redigera och spara dokument från vilken dator som helst.
 
+## Steg 4: Sammanfattning av konfigurationen
+
+Den sista skärmbilden visar status för din konfiguration: om ditt e-postkonto är anslutet och om din dokumenthantering är installerad. Klicka på **Stäng** för att avsluta, eller **Tillbaka** för att gå igenom ett tidigare steg.
+
+![SuperOffice Användarinställningar - sammanfattning av konfigurationen -screenshot][img12]
+
+Du kan slutföra eller uppdatera dessa inställningar när som helst från **Personliga inställningar**.
+
+## Använd lokal e-postapp
+
+När du är ansluten kan du också välja om nya e-postmeddelanden du skapar, och e-postadresser du klickar på, i stället ska öppnas i ditt eget lokala e-postprogram, i stället för i SuperOffice egen dialogruta.
+
+1. Gå till **Personliga inställningar** > **Inställningar** > **E-post**.
+1. Aktivera inställningen **Use local email app for new email**.
+1. Klicka på **Spara**.
+
 ## Synkronisera din kalender
 
 Kalendersynkronisering är inte en del av guiden. Om du vill hålla möten och uppföljningar synkroniserade mellan SuperOffice och din Outlook- eller Google-kalender konfigurerar du [Synchronizer för SuperOffice][8] (tillgänglig i App Store).
 
-[3]: ../../../../integrations/superoffice-for-outlook/index
-[4]: ../../../../integrations/gmail-link/index
-[5]: ../../../../integrations/sharepoint-documents/set-up
-[6]: ../../../../integrations/g-suite/index
+[1]: /en/online/mail-services/graph/index#grant-consent
+[3]: /integrations/superoffice-for-outlook/index
+[4]: /integrations/gmail-link/index
+[5]: /integrations/sharepoint-documents/set-up
+[6]: /integrations/g-suite/index
+[7]: /sv/email/inbox/learn/setup
 [8]: https://appstore.superoffice.com/infobridge-software-b-v-/synchronizer-for-superoffice
-[img1]: ../../../media/loc/en/learn/superoffice-user-setup-1.png
-[img2]: ../../../media/loc/en/learn/superoffice-user-setup-2-connect-email.png
-[img3]: ../../../media/loc/en/learn/superoffice-user-setup-3-webtools.png
+[img1]: /media/loc/en/learn/user-setup-1-welcome.png
+[img2]: /media/loc/en/learn/user-setup-2-start.png
+[img3]: /media/loc/en/learn/user-setup-2-email-address.png
+[img5]: /media/loc/en/learn/user-setup-2-signin-password.png
+[img6]: /media/loc/en/learn/user-setup-2-signin-mfa.png
+[img7]: /media/loc/en/learn/user-setup-2-connected.png
+[img9]: /media/loc/en/learn/user-setup-2-admin-approval-needed.png
+[img10]: /media/loc/en/learn/user-setup-2-connection-error.png
+[img11]: /media/loc/en/learn/user-setup-3-download-webtools.png
+[img12]: /media/loc/en/learn/user-setup-4-summary.png

@@ -194,7 +194,8 @@
           "en/online/mail-services/curl/migrate",
           "en/online/mail-services/curl/oauth-microsoft365"
         ]
-      }
+      },
+      "en/online/mail-services/graph/index"
     ]
   }
 ]

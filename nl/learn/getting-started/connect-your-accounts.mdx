@@ -2,10 +2,10 @@
 uid: help-nl-connect-your-accounts
 title: Accounts koppelen
 description: Hoe je de wizard Gebruikersinstellingen gebruikt om je e-mailaccount en documentbeheer te koppelen aan SuperOffice CRM.
-keywords: ['gebruikersinstellingen', 'e-mailverbinding', 'documentbeheer', 'WebTools', 'e-mail koppelen', 'e-mailaccount', 'wizard', 'persoonlijke instellingen']
+keywords: ['gebruikersinstellingen', 'e-mailverbinding', 'documentbeheer', 'WebTools', 'e-mail koppelen', 'e-mailaccount', 'wizard', 'persoonlijke instellingen', 'Microsoft Graph', 'beheerderstoestemming']
 author: digitaldiina
-date: 05.04.2026
-so_version: 11.13
+date: 09.23.2026
+so_version: 12.5
 content_type: howto
 tier: starter
 audience: person
@@ -16,6 +16,7 @@ related:
   - SuperOffice voor Outlook installeren: /integrations/superoffice-for-outlook/index
   - SuperOffice Gmail Link installeren: /integrations/gmail-link/index
   - WebTools installeren: /integrations/webtools/install
+  - Beheerderstoestemming voor Microsoft Graph: /en/online/mail-services/graph/index
 language: nl
 ---
 
@@ -27,38 +28,74 @@ Als nieuwe gebruiker, of bij het instellen van een nieuwe computer, moet je je e
 * Vergaderuitnodigingen sturen naar externe ontvangers en uitnodigingen van anderen ontvangen.
 * Documenten rechtstreeks vanuit SuperOffice aanmaken, openen en bewerken.
 
+<Note>
+Om met **inkomende** e-mails te werken en SuperOffice-functies rechtstreeks in je e-mailclient te gebruiken, installeer je na het voltooien van de wizard [SuperOffice voor Outlook][3] (Microsoft 365) of [SuperOffice Gmail Link][4] (Google Workspace).
+
+**Stap je over van Outlook MailLink?** Microsoft faseert de technologie achter Outlook MailLink uit, waardoor Outlook MailLink niet langer beschikbaar zal zijn. [SuperOffice voor Outlook][3] vervangt het door een cloudgebaseerde add-in die dezelfde vertrouwde werkwijze behoudt.
+</Note>
+
 ## De wizard openen
 
 1. Klik op <i class="ph ph-user-circle" aria-label="Persoonlijke instellingen"></i> **Persoonlijke instellingen** rechtsboven.
 1. Selecteer **Gebruikersinstellingen**.
 
-De wizard leidt je door drie stappen.
+De wizard leidt je normaal gesproken door vier stappen, maar wat je daadwerkelijk ziet, hangt af van wat er al voor je is ingesteld. Als je al een werkende e-mailverbinding hebt, via SuperOffice Inbox of via een Microsoft Entra ID-aanmelding die je organisatie al heeft goedgekeurd, slaat de wizard de e-mailstap over en gaat direct verder met het koppelen van je documentbeheer. Als je documentbeheer ook al is ingesteld, doordat je organisatie al SharePoint of Google Workspace gebruikt voor documenten, of doordat de nieuwste versie van WebTools al is geïnstalleerd, wordt de wizard helemaal niet weergegeven.
 
-## Stap 1: Overzicht
+## Stap 1: Aan de slag
 
-Het eerste scherm geeft een samenvatting van wat de wizard je zal helpen instellen. Klik op **Volgende** om door te gaan.
+Het eerste scherm verwelkomt je bij naam en geeft een samenvatting van wat de wizard je zal helpen instellen. Klik op **Aan de slag** om door te gaan, of op **Later** om dit op een ander moment in te stellen.
 
-![SuperOffice Gebruikersinstellingen - overzicht van het eerste scherm van de wizard -screenshot][img1]
+![SuperOffice Gebruikersinstellingen - welkomstscherm van de wizard -screenshot][img1]
 
-## Stap 2: E-mailaccount koppelen
-
-Klik op **Koppelen** en volg de aanwijzingen om je inloggegevens te valideren.
-
-![SuperOffice Gebruikersinstellingen - e-mailaccount koppelen -screenshot][img2]
+## Stap 2: E-mailaccount koppelen {#email}
 
 Door je e-mailaccount te koppelen, kun je e-mails versturen vanuit SuperOffice en uitgaande berichten automatisch archiveren. Je kunt ook vergaderuitnodigingen versturen en accepteren.
 
-<Note>
-Om met **inkomende** e-mails te werken en SuperOffice-functies rechtstreeks in je e-mailclient te gebruiken, installeer je na het voltooien van de wizard [SuperOffice voor Outlook][3] (Microsoft 365) of [SuperOffice Gmail Link][4] (Google Workspace).
-</Note>
+1. Klik op **Koppelen**.
 
-## Stap 3: Documentbeheer koppelen
+![SuperOffice Gebruikersinstellingen - e-mailaccount koppelen -screenshot][img2]
+
+1. Voer je e-mailadres in en klik op **Volgende**.
+
+![SuperOffice Gebruikersinstellingen - e-mailadres invoeren -screenshot][img3]
+
+1. Meld je aan met je e-mailaccountgegevens. Als je organisatie meervoudige authenticatie (MFA) vereist, voer je de verificatiecode in die wordt weergegeven in je authenticator-app.
+
+![SuperOffice Gebruikersinstellingen - aanmelden bij Microsoft -screenshot][img5]
+
+![SuperOffice Gebruikersinstellingen - MFA-code invoeren -screenshot][img6]
+
+1. Zodra je account is gekoppeld, klik je op **Volgende** om door te gaan.
+
+![SuperOffice Gebruikersinstellingen - e-mailaccount gekoppeld -screenshot][img7]
+
+### Als toestemming vereist is {#consent}
+
+Mogelijk zie je het bericht **Need admin approval**.
+
+![SuperOffice Gebruikersinstellingen - bericht dat beheerdersgoedkeuring nodig is -screenshot][img9]
+
+* **Als je geen Microsoft 365-beheerder bent:** Selecteer de tweede optie (**Return to the application without granting consent**), kopieer de link op het scherm en deel deze met je beheerder. Vraag deze persoon om toestemming te geven voor de e-mailverbinding van SuperOffice.
+
+    ![SuperOffice Gebruikersinstellingen - foutmelding bij koppelen van e-mailaccount -screenshot][img10]
+
+* **Als je *zelf* beheerder bent:** Selecteer de eerste optie en volg de stappen in [Beheerderstoestemming voor Microsoft Graph][1].
+
+### Als je e-mailaccount niet kan worden gekoppeld {#advanced}
+
+Als je organisatie geen Microsoft 365 gebruikt, of als je liever handmatig verbinding maakt, zie [Geavanceerde instellingen configureren][7] voor de IMAP/SMTP-instellingen.
+
+Als je het koppelen van je e-mailaccount overslaat, herinnert SuperOffice je met een banner zodra je een e-mail of vergaderuitnodiging probeert te verzenden, totdat je het koppelt. Je kunt het op elk moment koppelen vanuit **E-mailopties**.
+
+## Stap 3: Documentbeheer koppelen {#document}
 
 Je documentbeheer bepaalt hoe je documenten in SuperOffice aanmaakt, opent en bewerkt.
 
+Als je organisatie al SharePoint of Google Workspace gebruikt voor documenten, of als de nieuwste versie van WebTools al is geïnstalleerd, wordt deze stap overgeslagen. Als WebTools is geïnstalleerd maar verouderd is, toont de wizard in plaats van de onderstaande installatiestappen een upgrademelding.
+
 Klik op **WebTools downloaden**, voer het installatieprogramma uit en volg de instructies op het scherm. WebTools verbindt je SuperOffice-tenant met je lokale Office-toepassingen.
 
-![SuperOffice Gebruikersinstellingen - WebTools downloaden voor documentbeheer -screenshot][img3]
+![SuperOffice Gebruikersinstellingen - WebTools downloaden voor documentbeheer -screenshot][img11]
 
 <Note>
 Het installatieprogramma wordt automatisch geselecteerd voor je besturingssysteem. Als je WebTools rechtstreeks downloadt van de SuperOffice-downloadservice, kies dan het juiste installatieprogramma voor je besturingssysteem (Windows of macOS) en versie.
@@ -78,15 +115,40 @@ WebTools met de SuperOffice-documentbibliotheek is de standaard. Je beheerder he
 
 * **Google Workspace:** Slaat documenten op in Google Workspace. Je kunt documenten vanaf elke computer openen, bewerken en opslaan.
 
+## Stap 4: Overzicht van de installatie
+
+Het laatste scherm toont de status van je installatie: of je e-mailaccount is gekoppeld en of je documentbeheer is geïnstalleerd. Klik op **Sluiten** om te voltooien, of op **Terug** om een vorige stap te bekijken.
+
+![SuperOffice Gebruikersinstellingen - overzicht van de installatie -screenshot][img12]
+
+Je kunt deze instellingen op elk moment voltooien of bijwerken vanuit **Persoonlijke instellingen**.
+
+## Lokale e-mailapp gebruiken
+
+Zodra je verbonden bent, kun je ook aangeven of nieuwe e-mails die je opstelt, en e-mailadressen waarop je klikt, in plaats daarvan worden geopend in je eigen lokale e-mailprogramma, in plaats van in het eigen dialoogvenster van SuperOffice.
+
+1. Ga naar **Persoonlijke instellingen** > **Voorkeuren** > **E-mail**.
+1. Schakel de voorkeur **Use local email app for new email** in.
+1. Klik op **Opslaan**.
+
 ## Agenda synchroniseren
 
 Het synchroniseren van je agenda maakt geen deel uit van de wizard. Als je afspraken en follow-ups gesynchroniseerd wilt houden tussen SuperOffice en je Outlook- of Google-agenda, stel je [Synchronizer voor SuperOffice][8] in (beschikbaar in de App Store).
 
-[3]: ../../../../integrations/superoffice-for-outlook/index
-[4]: ../../../../integrations/gmail-link/index
-[5]: ../../../../integrations/sharepoint-documents/set-up
-[6]: ../../../../integrations/g-suite/index
+[1]: /en/online/mail-services/graph/index#grant-consent
+[3]: /integrations/superoffice-for-outlook/index
+[4]: /integrations/gmail-link/index
+[5]: /integrations/sharepoint-documents/set-up
+[6]: /integrations/g-suite/index
+[7]: /nl/email/inbox/learn/setup
 [8]: https://appstore.superoffice.com/infobridge-software-b-v-/synchronizer-for-superoffice
-[img1]: ../../../media/loc/en/learn/superoffice-user-setup-1.png
-[img2]: ../../../media/loc/en/learn/superoffice-user-setup-2-connect-email.png
-[img3]: ../../../media/loc/en/learn/superoffice-user-setup-3-webtools.png
+[img1]: /media/loc/en/learn/user-setup-1-welcome.png
+[img2]: /media/loc/en/learn/user-setup-2-start.png
+[img3]: /media/loc/en/learn/user-setup-2-email-address.png
+[img5]: /media/loc/en/learn/user-setup-2-signin-password.png
+[img6]: /media/loc/en/learn/user-setup-2-signin-mfa.png
+[img7]: /media/loc/en/learn/user-setup-2-connected.png
+[img9]: /media/loc/en/learn/user-setup-2-admin-approval-needed.png
+[img10]: /media/loc/en/learn/user-setup-2-connection-error.png
+[img11]: /media/loc/en/learn/user-setup-3-download-webtools.png
+[img12]: /media/loc/en/learn/user-setup-4-summary.png
