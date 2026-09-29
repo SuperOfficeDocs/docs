@@ -4,8 +4,8 @@ title: AI-gebaseerde categorisering instellen
 description: Hoe u categorisering in SuperOffice AI traint en configureert
 keywords: ['AI', 'categorisering', 'machine learning', 'training']
 author: digitaldiina
-date: 10.15.2025
-so_version: 11.5
+date: 10.01.2026
+so_version: 12.4
 content_type: howto
 license: aiplatform, categorization
 tier: core
@@ -19,16 +19,18 @@ redirect_from: /nl/ai/configuration-ai/getting-started
 userflow_index: true
 related:
   - Hoe u een selectie maakt: /nl/search-options/selection/learn/create
-  - Verzoekencategorisering: /nl/ai/learn/categorization
+  - Verzoekencategorisering: /nl/request/learn/handle-request-ai#categorization
   - Andere AI-diensten: /nl/ai/learn/index
 language: nl
 ---
 
-Categorisering gebruikt machine learning om categorieën voor te stellen voor binnenkomende verzoeken op basis van hun inhoud. Voordat deze functie kan worden gebruikt, moet de AI worden getraind met een selectie van bestaande verzoeken.
+Categorisering gebruikt machine learning om categorieën voor te stellen voor binnenkomende verzoeken op basis van hun inhoud. Maak eerst een selectie van bestaande verzoeken, train vervolgens het model en schakel daarna de suggesties in. Een behandelaar moet de suggestie bevestigen voordat de categorie wordt toegepast.
 
 <Note>
 Categorisering vereist het SuperOffice AI Platform en een **Categorization-licentie**. SuperOffice AI is alleen beschikbaar voor CRM Online.
 </Note>
+
+Schakel eerst de [AI-functies][1] voor uw organisatie in.
 
 ## 1. Een selectie van verzoeken maken
 
@@ -57,7 +59,7 @@ U moet eerst een selectie van verzoeken in SuperOffice maken om het AI-model te 
     ![Selectienaam invoeren -screenshot][img5]
 
 <Note>
-Alleen de eerste 5000 verzoeken in de selectie worden geanalyseerd.
+Alleen de eerste 5.000 verzoeken in de selectie worden geanalyseerd. Kies een selectie met categorieën die representatief zijn voor de verzoeken die u wilt categoriseren.
 </Note>
 
 ## 2. De selectie kiezen in Instellingen en onderhoud
@@ -79,7 +81,7 @@ Grote datasets kunnen uren of zelfs dagen duren om te analyseren.
 
 1. Klik op **Verzoeken analyseren** om het trainingsproces te starten.
 1. Wanneer de training is voltooid, toont de status **Laatste training** *model succesvol getraind*.
-1. Als er fouten optreden, bekijk dan het bericht en maak indien nodig een nieuwe selectie.
+1. Als de training mislukt, bekijk dan het bericht, pas de selectie indien nodig aan en analyseer deze opnieuw voordat u suggesties inschakelt.
 
     ![Trainingsresultaten en feedback -screenshot][img7]
     ![Voorbeelden van trainingsoverzicht -screenshot][img8]
@@ -94,7 +96,7 @@ Na succesvolle training:
 
 ## 5. Resultaat: categoriesuggesties in verzoeken
 
-Wanneer ingeschakeld, zien gebruikers een voorgestelde categorie in de verzoekvoettekst. Door op de link te klikken wordt de categorie toegepast op het verzoek en wordt de suggestie weggenomen.
+Na inschakeling verschijnt een voorgestelde categorie onderaan het verzoek. De categorie wordt niet automatisch toegepast. De behandelaar moet de link selecteren om de categorie toe te passen; daarna verdwijnt de suggestie. Zie [categorisering in verzoeken][2].
 
 Als er geen match is, wordt geen suggestie getoond.
 
@@ -104,7 +106,10 @@ U kunt op elk moment een nieuwe of bijgewerkte selectie opnieuw analyseren:
 
 1. Ga naar **Instellingen en onderhoud** > **AI-diensten**.
 1. Onder **Categorisering** kiest u een nieuwe selectie.
-1. Klik op **Verzoeken analyseren** om opnieuw te trainen.
+1. Selecteer **Verzoeken analyseren** om opnieuw te trainen. Controleer **Laatste training** voordat u het nieuwe model gebruikt.
+
+[1]: /nl/ai/admin/index
+[2]: /nl/request/learn/handle-request-ai#categorization
 
 [img1]: ../../../media/loc/en/search-options/choose-new-selection.png
 [img2]: ../../../media/loc/en/search-options/typical-request-searches.png

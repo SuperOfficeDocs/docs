@@ -11,6 +11,9 @@ content_type: concept
 tier: core
 audience: person
 audience_tooltip: SuperOffice Service
+related:
+  - Slik bruker du AI-tjenester: /no/ai/learn/index
+  - Sett opp AI-basert kategorisering: /no/ai/admin/set-up-categorization
 language: no
 ---
 
@@ -19,6 +22,10 @@ AI-tjenester krever en egen lisens. SuperOffice AI er kun skybasert og er et ege
 </Note>
 
 Innføringen av kunstig intelligens (AI) i SuperOffice 10 gir saksbehandlere/brukerstøtteagenter et nytt sett med smarte verktøy for å effektivisere arbeidsdagen.
+
+<Tip>
+Ser du ikke disse funksjonene i en sak? Be administratoren om å aktivere tekstanalyse.
+</Tip>
 
 ## Request Insight {#sentiment}
 
@@ -58,9 +65,23 @@ Denne funksjonaliteten oppdager automatisk språket av en innkommende sak. Det o
 
 Hvis du mottar en melding på et språk du ikke kan lese, kan du klikke på **Oversett fra** ***språk*** under meldingen. Emnet og brødteksten i meldingen oversettes og legges til under den opprinnelige meldingen.
 
-## Automatisk kategorisering
+## Automatisk kategorisering {#categorization}
 
-Spar tid ved å la systemet kategorisere saker for deg. Hvis denne funksjonen er aktiv, analyseres innkommende e-postsaker for å finne den beste kategorien for hver sak. I bunnteksten av en sak vil du se kategorien systemet foreslår. Klikk på kategorikoblingen for å oppdatere saken med den foreslåtte kategorien.
+Kategorisering bruker en trent modell til å foreslå en kategori for innkommende e-postsaker basert på meldingsinnholdet. Forslaget brukes først når du godkjenner det.
+
+<Note>
+Kategorisering krever SuperOffice AI Platform og en Categorization-lisens. Funksjonen er kun tilgjengelig i CRM Online.
+</Note>
+
+Ser du ingen forslag? Be administratoren om å [trene modellen og aktivere forslag][2].
+
+1. Åpne en innkommende sak, og se etter den foreslåtte kategorien nederst i saken.
+1. Vurder forslaget, og velg kategorilenken hvis kategorien passer til saken.
+1. Kontroller at kategorien er oppdatert. Forslaget forsvinner når du har brukt det.
+
+![Foreslått kategori i en sak -screenshot][img2]
+
+Hvis ingen kategori passer, vises ikke noe forslag. Du kan fortsatt velge en kategori selv.
 
 ## Reply Assist {#reply-assist}
 
@@ -77,9 +98,9 @@ Reply Assist krever [CRM Suite Plus][3] eller høyere.
 ## Aktuelle emner
 
 * [Slik bruker du AI-tjenester][1]
-* [Kategorisering av saker][2]
 
 [1]: ../../ai/learn/index
-[2]: ../../ai/learn/categorization
+[2]: ../../ai/admin/set-up-categorization
 [3]: ../../admin/license/crm-suite#plans
 [img1]: /media/loc/en/request/reply-assist.png
+[img2]: /media/loc/en/ai/suggested-category-demo.png

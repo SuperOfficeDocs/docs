@@ -4,7 +4,7 @@ title: AI-diensten
 description: Overzicht van kunstmatige intelligentie-diensten in SuperOffice CRM
 keywords: ['AI', 'kunstmatige intelligentie', 'AI Platform', 'machine learning', 'automatisering', 'insight', 'assist', 'agent', 'mcp', 'instantie', 'tekstanalyse']
 author: digitaldiina
-date: 09.28.2026
+date: 10.01.2026
 so_version: 12.4
 content_type: concept
 license: aiplatform
@@ -18,6 +18,9 @@ audience_tooltip: SuperOffice CRM
 redirect_from:
   - /nl/ai/index
   - /nl/ai/learn/text-analysis
+  - /nl/ai/text-analysis/index
+  - /nl/ai/learn/categorization
+  - /nl/ai/configuration-ai/index
 boost: 2
 related:
   - /nl/ai/learn/set-up-ai-agents
@@ -37,7 +40,7 @@ SuperOffice AI is alleen beschikbaar in CRM Online. Licentievereisten zijn diens
 
 | Dienst | Beschrijving | Licentie |
 |---|---|---|
-| [Categorisatie][2] | Stelt een categorie voor nieuwe verzoeken voor op basis van de berichtinhoud. | Categorization |
+| [Categorisatie][2] | Stelt een categorie voor op basis van de inhoud van het verzoek. Een beheerder [traint het model met een selectie van verzoeken][18] en schakelt suggesties in. De behandelaar controleert de suggestie voordat deze wordt toegepast. | Categorization |
 | **Writing Assist** | Stelt e-mails, notities en follow-ups op die u kunt bewerken en verzenden. | CRM Suite Starter |
 | [Request Insight][1] | Analyseert het sentiment van een inkomend verzoek, zodat u uw antwoord kunt prioriteren. | Text Services of CRM Suite Core |
 | [Summary Assist][15] | Vat de berichten in een verzoek samen, zodat u kunt handelen zonder de volledige geschiedenis te lezen. | Text Services of CRM Suite Core |
@@ -54,7 +57,11 @@ SuperOffice AI is alleen beschikbaar in CRM Online. Licentievereisten zijn diens
 | [MCP Connect][14] | Verbindt SuperOffice CRM als live gegevensbron met Claude, Microsoft Copilot of ChatGPT om te lezen en bij te werken. | CRM Suite Plus |
 
 <Note>
-Request Insight, Summary Assist en Translation Assist vereisen het SuperOffice AI Platform en een Text Services-licentie of CRM Suite Core. Deze functies zijn direct zichtbaar in de verzoekweergave en vereisen geen configuratie door de eindgebruiker.
+Request Insight, Summary Assist en Translation Assist vereisen het SuperOffice AI Platform en een Text Services-licentie of CRM Suite Core. Een beheerder moet tekstanalyse inschakelen voordat deze functies in het verzoek zichtbaar zijn. Eindgebruikers hoeven niets te configureren.
+</Note>
+
+<Note>
+Categorisatie vereist het SuperOffice AI Platform en een Categorization-licentie. Een beheerder moet het model trainen en suggesties inschakelen voordat behandelaars deze kunnen gebruiken.
 </Note>
 
 ## Insight, Assist en Agent
@@ -88,7 +95,7 @@ Een agent die actie ondernemt op uw gegevens, zoals de Data Quality Agent, gebru
 1. Ga verder met [uw agents kiezen, activeren en instellen][10].
 
 [1]: /nl/request/learn/handle-request-ai#sentiment
-[2]: /nl/ai/learn/categorization
+[2]: /nl/request/learn/handle-request-ai#categorization
 [3]: /nl/chat/admin/channel-create#chatbot
 [4]: /nl/ai/learn/workspace-assist
 [5]: /integrations/supernotes/index
@@ -103,6 +110,7 @@ Een agent die actie ondernemt op uw gegevens, zoals de Data Quality Agent, gebru
 
 [15]: /nl/request/learn/handle-request-ai#summary
 [16]: /nl/request/learn/handle-request-ai#translate
+[18]: /nl/ai/admin/set-up-categorization
 
 [img1]: ../../../media/loc/en/ai/open-agents-area.png
 [img2]: ../../../media/loc/en/ai/approve-ai-agents.png

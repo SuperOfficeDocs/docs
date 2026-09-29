@@ -13,7 +13,7 @@ audience: person
 audience_tooltip: SuperOffice Service
 related:
   - Wie man KI-Dienste verwendet: /de/ai/learn/index
-  - Klassifikation von Anfragen: /de/ai/learn/categorization
+  - AI-basierte Kategorisierung einrichten: /de/ai/admin/set-up-categorization
 language: de
 ---
 
@@ -22,6 +22,10 @@ Für KI Services ist eine separate Lizenz erforderlich. SuperOffice AI steht nur
 </Note>
 
 Die Einführung von Künstlicher Intelligenz (KI) in SuperOffice 10 bietet Bearbeitern von Anfragen/Supportmitarbeitern ein neues Set intelligenter Tools für einen effizienteren Arbeitstag.
+
+<Tip>
+Sehen Sie diese Funktionen nicht in einer Anfrage? Bitten Sie Ihren Administrator, die Textanalyse zu aktivieren.
+</Tip>
 
 ## Request Insight {#sentiment}
 
@@ -61,9 +65,23 @@ Mit dieser Funktion wird die Sprache einer eingehenden Anfrage automatisch erkan
 
 Wenn Sie eine Mitteilung in einer Sprache erhalten, die Sie nicht lesen können, können Sie unter der Mitteilung auf **Übersetzen aus** ***Sprache*** klicken. Betreff und Text der Nachricht werden übersetzt und unter der ursprünglichen Nachricht hinzugefügt.
 
-## Automatische Kategorisierung
+## Automatische Kategorisierung {#categorization}
 
-Lassen Sie das System Anfragen für Sie kategorisieren und sparen Sie damit Zeit. Wenn diese Funktion aktiv ist, werden eingehende E-Mail-Anfragen analysiert, um für jede Anfrage die beste Kategorie zu ermitteln. In der Fußzeile einer Anfrage wird die vom System vorgeschlagene Kategorie angezeigt. Klicken Sie auf den Link für die Kategorie, um die Anfrage mit der vorgeschlagenen Kategorie zu aktualisieren.
+Die Kategorisierung verwendet ein trainiertes Modell, um anhand des Nachrichteninhalts eine Kategorie für eingehende E-Mail-Anfragen vorzuschlagen. Der Vorschlag wird erst angewendet, wenn Sie ihn bestätigen.
+
+<Note>
+Die Kategorisierung erfordert die SuperOffice AI Platform und eine Categorization-Lizenz. Sie ist nur in CRM Online verfügbar.
+</Note>
+
+Sehen Sie keine Vorschläge? Bitten Sie Ihren Administrator, [das Modell zu trainieren und Vorschläge zu aktivieren][18].
+
+1. Öffnen Sie eine eingehende Anfrage und suchen Sie in der Fußzeile nach der vorgeschlagenen Kategorie.
+1. Prüfen Sie den Vorschlag und wählen Sie den Kategorielink aus, wenn die Kategorie zur Anfrage passt.
+1. Prüfen Sie die aktualisierte Kategorie. Nach dem Anwenden verschwindet der Vorschlag.
+
+![Vorgeschlagene Kategorie in einer Anfrage -screenshot][img2]
+
+Wenn keine Kategorie passt, wird kein Vorschlag angezeigt. Sie können die Kategorie weiterhin selbst auswählen.
 
 ## Reply Assist {#reply-assist}
 
@@ -78,5 +96,7 @@ Reply Assist erfordert [CRM Suite Plus][8] oder höher.
 ![Von Reply Assist vorgeschlagene Antwort auf eine Anfrage -screenshot][img1]
 
 [8]: ../../admin/license/crm-suite#plans
+[18]: ../../ai/admin/set-up-categorization
 
 [img1]: /media/loc/en/request/reply-assist.png
+[img2]: /media/loc/en/ai/suggested-category-demo.png

@@ -18,6 +18,9 @@ audience_tooltip: SuperOffice CRM
 redirect_from:
   - /de/ai/index
   - /de/ai/learn/text-analysis
+  - /de/ai/text-analysis/index
+  - /de/ai/learn/categorization
+  - /de/ai/configuration-ai/index
 boost: 2
 related:
   - /de/ai/learn/set-up-ai-agents
@@ -37,7 +40,7 @@ SuperOffice KI ist nur in CRM Online verfügbar. Lizenzanforderungen sind dienst
 
 | Service | Beschreibung | Lizenz |
 |---|---|---|
-| [Kategorisierung][2] | Schlägt eine Kategorie für neue Anfragen basierend auf dem Nachrichteninhalt vor. | Categorization |
+| [Kategorisierung][2] | Schlägt eine Kategorie anhand des Anfrageninhalts vor. Ein Administrator [trainiert das Modell mit einer Selektion von Anfragen][18] und aktiviert Vorschläge. Der Bearbeiter prüft den Vorschlag, bevor er ihn anwendet. | Categorization |
 | **Writing Assist** | Entwirft E-Mails, Notizen und Follow-ups, die Sie bearbeiten und senden können. | CRM Suite Starter |
 | [Request Insight][1] | Analysiert das Sentiment einer eingehenden Anfrage, damit Sie Ihre Antwort priorisieren können. | Text Services oder CRM Suite Core |
 | [Summary Assist][15] | Fasst die Nachrichten einer Anfrage zusammen, damit Sie handeln können, ohne den gesamten Verlauf zu lesen. | Text Services oder CRM Suite Core |
@@ -54,7 +57,11 @@ SuperOffice KI ist nur in CRM Online verfügbar. Lizenzanforderungen sind dienst
 | [MCP Connect][14] | Verbindet SuperOffice CRM als Live-Datenquelle mit Claude, Microsoft Copilot oder ChatGPT zum Lesen und Aktualisieren. | CRM Suite Plus |
 
 <Note>
-Request Insight, Summary Assist und Translation Assist erfordern die SuperOffice AI-Plattform und eine Text Services-Lizenz oder CRM Suite Core. Diese Funktionen sind direkt in der Anfragenansicht sichtbar und erfordern keine Konfiguration durch den Endbenutzer.
+Request Insight, Summary Assist und Translation Assist erfordern die SuperOffice AI Platform und eine Text Services-Lizenz oder CRM Suite Core. Ein Administrator muss die Textanalyse aktivieren, bevor diese Funktionen in der Anfragenansicht erscheinen. Endbenutzer müssen nichts konfigurieren.
+</Note>
+
+<Note>
+Die Kategorisierung erfordert die SuperOffice AI Platform und eine Categorization-Lizenz. Ein Administrator muss das Modell trainieren und Vorschläge aktivieren, bevor Bearbeiter sie verwenden können.
 </Note>
 
 ## Insight, Assist und Agent
@@ -86,7 +93,7 @@ Ein Agent, der Aktionen an Ihren Daten durchführt, wie der Data Quality Agent, 
 1. Fahren Sie fort, um [Ihre Agenten auszuwählen, zu aktivieren und einzurichten][10].
 
 [1]: /de/request/learn/handle-request-ai#sentiment
-[2]: /de/ai/learn/categorization
+[2]: /de/request/learn/handle-request-ai#categorization
 [3]: /de/chat/admin/channel-create#chatbot
 [4]: /de/ai/learn/workspace-assist
 [5]: /integrations/supernotes/index
@@ -101,6 +108,7 @@ Ein Agent, der Aktionen an Ihren Daten durchführt, wie der Data Quality Agent, 
 
 [15]: /de/request/learn/handle-request-ai#summary
 [16]: /de/request/learn/handle-request-ai#translate
+[18]: /de/ai/admin/set-up-categorization
 
 [img1]: ../../../media/loc/en/ai/open-agents-area.png
 [img2]: ../../../media/loc/en/ai/approve-ai-agents.png
