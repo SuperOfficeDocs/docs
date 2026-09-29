@@ -2,9 +2,9 @@
 uid: sofo-settings
 title: Settings
 description: How to open and configure the settings menu in SuperOffice for Outlook.
-keywords: ['SuperOffice for Outlook', 'Outlook', 'settings', 'archive reminder', 'SOFO']
+keywords: ['SuperOffice for Outlook', 'Outlook', 'settings', 'archive reminder', 'SOFO', 'email archive status', 'category']
 author: schildea
-date: 06.16.2026
+date: 09.29.2026
 version_sofo: 2026.6.3
 content_type: reference
 category: integration
@@ -14,6 +14,7 @@ platform: web
 audience: person
 audience_tooltip: SuperOffice CRM
 related:
+  - /integrations/superoffice-for-outlook/email-archive-status
   - /integrations/superoffice-for-outlook/archive-reminder
   - /integrations/superoffice-for-outlook/send-and-archive
   - Add CRM data to Outlook calendar events: /integrations/superoffice-for-outlook/add-crm-data-to-event
@@ -45,6 +46,7 @@ The Settings menu opens and shows:
 | Show contextual projects and sales | Displays projects and sales registered to the selected company or contact. |
 | Remove from inbox | Moves the email to deleted items after archiving. |
 | Archive reminder | Controls when you are reminded to archive before sending an email or meeting. See [Archive reminder](#archive-reminder) below. |
+| E-mail archive status | Adds the **Archived in SuperOffice** category to archived emails in your Outlook message list. See [E-mail archive status](#e-mail-archive-status) below. |
 
 ## Archive reminder
 
@@ -82,4 +84,39 @@ Your settings are saved automatically and synchronized across all your devices.
 The archive reminder feature is only available in Outlook versions that support Microsoft Mailbox requirement set 1.12 or later. If it's not supported, the reminder won't appear and your email or meeting will be sent as usual.
 </Note>
 
+## E-mail archive status
+
+The **E-mail archive status** section lets you control whether SuperOffice for Outlook adds the **Archived in SuperOffice** category to archived emails, and when.
+
+![E-mail archive status settings showing the main toggle, apply options, category name, and category color -screenshot][img2]
+
+### Show archive category in Outlook
+
+The main toggle. When it's on, SuperOffice for Outlook adds the category to archived emails as you open or archive them. When it's off, no new categories are added; categories already on emails stay until you remove them.
+
+### Apply archive category
+
+When **Show archive category in Outlook** is on, you can choose when the category is added:
+
+| Sub-setting | Default | Description |
+|---|---|---|
+| When opening archived e-mails | On | Adds the category when you open an email that is already archived. |
+| When using Send & Archive | On | Adds the category to emails you archive as you send them. The category appears the next time you view an email with SuperOffice for Outlook open. |
+| In shared mailboxes | On | Also adds the category to emails you open or archive in shared mailboxes. Requires a category named exactly **Archived in SuperOffice** in that shared mailbox. |
+
+### Category name
+
+The category is always named **Archived in SuperOffice**. For your personal mailbox the name is fixed and can't be changed here.
+
+### Category color
+
+Choose the color used for the category in your personal mailbox. For shared mailboxes, the color is set in the shared mailbox itself by someone with permission to manage its categories.
+
+Your settings are saved automatically and synchronized across all your devices.
+
+See [Email archive status in your mailbox][1] for how the feature works and how to set it up for a shared mailbox.
+
+[1]: ./email-archive-status
+
 [img1]: /media/loc/en/integrations/superoffice-for-outlook/outlook-settings-archive-reminder.png
+[img2]: /media/loc/en/integrations/superoffice-for-outlook/outlook-settings-email-archive-status.png

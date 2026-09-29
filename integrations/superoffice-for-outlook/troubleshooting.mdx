@@ -1,0 +1,98 @@
+---
+uid: sofo-troubleshooting
+title: Troubleshooting SuperOffice for Outlook
+sidebarTitle: Troubleshooting
+description: Solutions to common issues in SuperOffice for Outlook.
+keywords: ['SuperOffice for Outlook', 'Outlook', 'troubleshooting', 'add-in missing', 'permissions', 'consent', 'category missing', 'archive status not showing', 'shared mailbox category', 'SOFO']
+author: schildea
+date: 09.29.2026
+version_sofo: 2026.6.4
+content_type: reference
+category: integration
+topic: SuperOffice for Outlook
+deployment: online
+platform: web
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - /integrations/superoffice-for-outlook/index
+  - /integrations/superoffice-for-outlook/email-archive-status
+  - /integrations/superoffice-for-outlook/archive-reminder
+  - /integrations/superoffice-for-outlook/deploy
+  - /release-notes/integrations/sofo
+language: en
+userflow_index: true
+---
+
+## Getting started and access
+
+### SuperOffice for Outlook doesn't appear in Outlook after deployment
+
+Some features require approval from your IT administrator in the [Microsoft Admin portal][1]. Once approved, it can take up to 72 hours before the add-in or feature becomes available in Outlook, and some users may see it earlier than others. If you still don't see it after 72 hours, contact your IT administrator. See [Centralized deployment][2].
+
+### A new feature is missing after an update
+
+Some new features require an updated add-in manifest, for example features that react when you send an email or that need additional Microsoft permissions. If your organization deployed SuperOffice for Outlook centrally, the update isn't applied until your IT administrator accepts the updated manifest in the [Microsoft Admin portal][1]. Users who installed the add-in themselves from AppSource receive the update automatically.
+
+Ask your IT administrator to check for a pending update of SuperOffice for Outlook. Once accepted, allow up to 72 hours before the feature appears for everyone. See [Centralized deployment][2].
+
+### You're asked to approve additional Microsoft permissions in a shared mailbox
+
+The first time you use SuperOffice for Outlook with a shared mailbox, you might be asked to approve additional Microsoft permissions. If you don't have sufficient rights to approve these yourself, contact your Microsoft 365 administrator. See the [authorization guide][3].
+
+## Archive reminder
+
+### The archive reminder doesn't appear
+
+The reminder isn't shown if any of the following apply:
+
+* The email or meeting already contains the required SuperOffice information.
+* **Remind me before sending emails** or **Remind me before sending meetings** is turned off in Settings.
+* Your Outlook client doesn't meet the minimum requirement (Mailbox requirement set 1.12). In that case the email or meeting is sent as usual.
+* Your organization deployed SuperOffice for Outlook centrally before version 6.4 and hasn't yet accepted the updated manifest. See [A new feature is missing after an update](#a-new-feature-is-missing-after-an-update).
+
+See [Archive reminder][4] and [Settings - Archive reminder][5].
+
+## Email archive status
+
+Issues with the **Archived in SuperOffice** category. See [Email archive status in your mailbox][6] for how the feature works.
+
+### Older archived emails don't have the category
+
+The category is added as you work, not to your whole mailbox at once. An email archived before you turned the feature on gets the category the next time you open it.
+
+### A whole conversation looks archived, but only one email in it is
+
+When a thread is collapsed, Outlook may show the category from one email on the conversation row. Expand the conversation to see which individual emails carry the category.
+
+### Archive status isn't added after Send & Archive
+
+The category doesn't appear at the moment you send. It's added to the sent email the next time you view an email with SuperOffice for Outlook open.
+
+If it still doesn't appear, check that **Show archive category in Outlook** is turned on. For a shared mailbox, also check that **In shared mailboxes** hasn't been turned off and that the category exists in that mailbox.
+
+### No archive status appears in a shared mailbox
+
+Check that a category named exactly **Archived in SuperOffice** exists in that specific shared mailbox. Each shared mailbox needs its own setup, and a category with a different name isn't used.
+
+A common cause is that the category was created while your personal mailbox was selected, so it exists in your own category list but not in the shared mailbox's. It then shows up in your **Categorize** menu, but SuperOffice for Outlook can't apply it to emails in the shared mailbox. Create it in the shared mailbox itself, following the steps for your Outlook version in [Using archive status in a shared mailbox][7]. Colleagues may need to restart Outlook before it appears.
+
+Also keep in mind that the category is added as people work: only emails that someone has opened or archived since the category was created carry it.
+
+### I can't create or edit the category in a shared mailbox
+
+Ask the mailbox owner or administrator to confirm you have permission to manage categories in that mailbox, typically Full Access to the shared mailbox. The same permission is needed to change the category color.
+
+In new Outlook for Windows, adding a shared mailbox as an account isn't yet available in every version. If you don't see the option, use Outlook on the web or classic Outlook instead.
+
+### The shared mailbox category was renamed or deleted
+
+A renamed or deleted category is no longer used, so the archive status stops appearing on new emails in that shared mailbox. Emails that were already tagged keep the old label. Archiving itself continues to work. Recreate the category with the exact name **Archived in SuperOffice**.
+
+[1]: https://admin.microsoft.com/Adminportal/Home#/homepage
+[2]: ./deploy
+[3]: https://community.superoffice.com/en/support-faqs/faq/superoffice-for-outlook-authorisation-guide/
+[4]: ./archive-reminder
+[5]: ./settings#archive-reminder
+[6]: ./email-archive-status
+[7]: ./email-archive-status#using-archive-status-in-a-shared-mailbox
