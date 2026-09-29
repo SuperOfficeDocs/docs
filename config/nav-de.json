@@ -102,6 +102,7 @@
           "de/ai/learn/lead-agent",
           "de/ai/learn/data-quality-agent",
           "de/ai/learn/duplicate-agent",
+          "de/ai/learn/mcp",
           "de/ai/learn/set-up-ai-agents",
           {
             "group": "Für Administratoren",

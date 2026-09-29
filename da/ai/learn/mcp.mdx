@@ -1,0 +1,76 @@
+---
+title: MCP Connect
+description: Forbind SuperOffice CRM til Claude, Microsoft Copilot eller ChatGPT som en live datakilde ved hjælp af Model Context Protocol.
+keywords: ['MCP', 'Model Context Protocol', 'Claude', 'Copilot', 'ChatGPT', 'AI-integration']
+author: digitaldiina
+date: 09.29.2026
+so_version: 12.4
+content_type: concept
+tier: plus
+category: automation
+topic: ai
+platform: web
+deployment: online
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Andre AI-tjenester: /da/ai/learn/index
+  - /da/ai/learn/set-up-ai-agents
+language: da
+---
+
+MCP Connect gør SuperOffice CRM til en live datakilde for Claude, Microsoft Copilot og ChatGPT, forbundet gennem den åbne Model Context Protocol (MCP). I stedet for at kopiere og indsætte CRM-data i en AI-chat, læser assistenten direkte fra dit eget miljøs firmaer, personer, salg, sager, projekter, opfølgninger og dokumenter, så svarene forbliver forankret i dine reelle data.
+
+<Note>
+MCP Connect kommer snart. Det kræver [CRM Suite Plus][7] eller højere.
+</Note>
+
+## Hvad MCP Connect gør
+
+* Ikke mere kopiering af forældede CRM-data ind i en AI-chat, da assistenten læser direkte fra dit live miljø.
+* Fungerer på samme måde på tværs af AI-udbydere: Claude, Microsoft Copilot og ChatGPT opretter alle forbindelse gennem den samme MCP Connect-server, så du ikke er bundet til ét AI-værktøj.
+* Svarene forbliver forankret i dine egne data, fordi hver læsning kommer direkte fra SuperOffice i stedet for fra det, modellen husker.
+
+## Læse- og opdateringsværktøjer
+
+MCP Connect stiller en række værktøjer til rådighed, som den tilsluttede AI-klient kan kalde, til at søge, læse og opdatere SuperOffice CRM-data på dine vegne. MCP Connect opretter ikke nye poster.
+
+| Værktøjer | Hvad de gør |
+|---|---|
+| `search_companies`, `get_company` | Finder og læser firmaposter. |
+| `search_persons`, `get_person` | Finder og læser personer. |
+| `search_sales`, `get_sale`, `get_sale_guide`, `list_sale_stakeholders`, `list_sales_for_stakeholder`, `list_sale_activities` | Finder og læser salg, deres salgsguide, interessenter og aktivitetshistorik. |
+| `search_tickets`, `search_tickets_freetext`, `get_ticket`, `get_ticket_message`, `get_ticket_metadata` | Finder sager og læser deres samtale eller bogføringsdetaljer. |
+| `search_projects`, `get_project`, `list_project_members`, `list_projects_for_member`, `list_project_activities` | Finder og læser projekter, deres medlemmer og aktivitetshistorik. |
+| `search_appointments`, `get_appointment` | Finder og læser opfølgninger i dagbogen. |
+| `search_documents`, `get_document_markdown`, `get_document_contents`, `list_document_templates` | Finder dokumenter, herunder e-mails og tilbud, og læser deres indhold. |
+| `list_contact_activities`, `list_person_activities`, `list_user_activities` | Viser aktivitetshistorik for et firma, en person eller en bruger. |
+| `list_custom_objects`, `search_custom_object_rows`, `describe_custom_object`, `get_custom_object_row` | Finder og læser rækker i [ekstra tabeller][8] (brugerdefinerede objekter). |
+| `get_associate`, `search_external_companies`, `whoami`, `server_info` | Slår en brugers identitet op, søger i eksterne virksomhedsregistre, og henter server- og sessionsoplysninger. |
+| `update_company`, `update_person`, `update_appointment`, `update_sale`, `update_project`, `update_ticket` | Opdaterer felter på en eksisterende post. |
+
+## Opret forbindelse til en klient
+
+MCP Connect godkender gennem SuperOffice OpenID Connect: klienten logger ind med en SuperOffice-brugerkonto, og serveren viderefører hver anmodning gennem den identitet.
+
+Trinvise opsætningsvejledninger for hver klient findes på [SuperOffice MCP Server-siden][1]:
+
+* [Claude Desktop][2]
+* [Claude Code][3]
+* [ChatGPT][4]
+* [GitHub Copilot i VS Code][5]
+* [Microsoft Copilot Studio][6]
+
+## Krav
+
+* Din organisation skal have **CRM Suite Plus** eller højere.
+* En SuperOffice-brugerkonto. Første gang du tilslutter en klient, logger du ind og godkender adgang via en almindelig login-dialog; der kræves ikke en separat API-nøgle eller udvikleropsætning.
+
+[1]: https://mcp.superoffice.com/
+[2]: https://mcp.superoffice.com/static/how-to-connect/claude-desktop.html
+[3]: https://mcp.superoffice.com/static/how-to-connect/claude-code.html
+[4]: https://mcp.superoffice.com/static/how-to-connect/chatgpt.html
+[5]: https://mcp.superoffice.com/static/how-to-connect/vscode-copilot.html
+[6]: https://mcp.superoffice.com/static/how-to-connect/copilot-studio.html
+[7]: /da/admin/license/crm-suite
+[8]: /da/custom-objects/learn/extra-table
