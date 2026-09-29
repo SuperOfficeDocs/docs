@@ -10069,11 +10069,7 @@
     "destination": "/en/ai/admin/set-up-categorization"
   },
   {
-    "source": "/en/ai/configuration-ai/index",
-    "destination": "/en/ai/learn/index"
-  },
-  {
-    "source": "/en/ai/configuration-ai/index.html",
+    "source": "/en/ai/configuration-ai/index*",
     "destination": "/en/ai/learn/index"
   },
   {
