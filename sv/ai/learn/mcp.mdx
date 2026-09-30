@@ -45,9 +45,9 @@ Steg-för-steg-guider för varje klient finns på [SuperOffice MCP Server-webbpl
 * [GitHub Copilot i VS Code][5]
 * [Microsoft Copilot Studio][6]
 
-## Läs- och uppdateringsverktyg
+## Läsverktyg
 
-MCP Connect tillhandahåller en uppsättning verktyg som den anslutna AI-klienten kan anropa, för att söka, läsa och uppdatera SuperOffice CRM-data å dina vägnar. MCP Connect skapar inte nya poster.
+Med de här verktygen kan den anslutna AI-klienten söka i och läsa SuperOffice CRM-data å dina vägnar. De finns med CRM Suite Plus eller högre.
 
 | Verktyg | Vad de gör |
 |---|---|
@@ -61,7 +61,18 @@ MCP Connect tillhandahåller en uppsättning verktyg som den anslutna AI-kliente
 | `list_contact_activities`, `list_person_activities`, `list_user_activities` | Listar aktivitetshistorik för ett företag, en kontakt eller en användare. |
 | `list_custom_objects`, `search_custom_object_rows`, `describe_custom_object`, `get_custom_object_row` | Hittar och läser rader i [extratabeller (egendefinierade objekt)][8]. |
 | `get_associate`, `search_external_companies`, `whoami`, `server_info` | Slår upp en användares identitet, söker i externa företagsregister och hämtar server- och sessionsinformation. |
-| `update_company`, `update_person`, `update_appointment`, `update_sale`, `update_project`, `update_ticket` | Uppdaterar fält på en befintlig post. Kräver CRM Suite Super. |
+
+## Uppdateringsverktyg
+
+<Note>
+Uppdateringsverktyg kräver CRM Suite Super.
+</Note>
+
+Med de här verktygen kan den anslutna AI-klienten ändra fält på en befintlig post å dina vägnar. MCP Connect skapar inte nya poster.
+
+| Verktyg | Vad de gör |
+|---|---|
+| `update_company`, `update_person`, `update_appointment`, `update_sale`, `update_project`, `update_ticket` | Uppdaterar fält på en befintlig post. |
 
 [1]: https://mcp.superoffice.com/
 [2]: https://mcp.superoffice.com/static/how-to-connect/claude-desktop.html

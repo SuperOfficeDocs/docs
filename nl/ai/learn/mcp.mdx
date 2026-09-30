@@ -45,9 +45,9 @@ Stapsgewijze installatiehandleidingen voor elke client zijn beschikbaar op de [w
 * [GitHub Copilot in VS Code][5]
 * [Microsoft Copilot Studio][6]
 
-## Tools om te lezen en bij te werken
+## Tools om te lezen
 
-MCP Connect biedt een set tools die de verbonden AI-client kan aanroepen om SuperOffice CRM-gegevens namens u te zoeken, te lezen en bij te werken. MCP Connect maakt geen nieuwe records aan.
+Met deze tools kan de verbonden AI-client SuperOffice CRM-gegevens namens u zoeken en lezen. Ze zijn beschikbaar met CRM Suite Plus of hoger.
 
 | Tools | Wat ze doen |
 |---|---|
@@ -61,7 +61,18 @@ MCP Connect biedt een set tools die de verbonden AI-client kan aanroepen om Supe
 | `list_contact_activities`, `list_person_activities`, `list_user_activities` | Toont de activiteitengeschiedenis voor een bedrijf, contactpersoon of gebruiker. |
 | `list_custom_objects`, `search_custom_object_rows`, `describe_custom_object`, `get_custom_object_row` | Vindt en leest rijen in [extra tabellen][8] (aangepaste objecten). |
 | `get_associate`, `search_external_companies`, `whoami`, `server_info` | Bepaalt de identiteit van een gebruiker, doorzoekt externe handelsregisters en haalt server- en sessie-informatie op. |
-| `update_company`, `update_person`, `update_appointment`, `update_sale`, `update_project`, `update_ticket` | Werkt velden bij op een bestaand record. Vereist CRM Suite Super. |
+
+## Tools om bij te werken
+
+<Note>
+Voor de tools om bij te werken is CRM Suite Super vereist.
+</Note>
+
+Met deze tools kan de verbonden AI-client velden van een bestaand record namens u wijzigen. MCP Connect maakt geen nieuwe records aan.
+
+| Tools | Wat ze doen |
+|---|---|
+| `update_company`, `update_person`, `update_appointment`, `update_sale`, `update_project`, `update_ticket` | Werkt velden bij op een bestaand record. |
 
 [1]: https://mcp.superoffice.com/
 [2]: https://mcp.superoffice.com/static/how-to-connect/claude-desktop.html

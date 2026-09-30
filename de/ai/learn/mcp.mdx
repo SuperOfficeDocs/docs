@@ -45,9 +45,9 @@ Schritt-für-Schritt-Anleitungen für jeden Client finden Sie auf der [SuperOffi
 * [GitHub Copilot in VS Code][5]
 * [Microsoft Copilot Studio][6]
 
-## Lese- und Aktualisierungstools
+## Lesetools
 
-MCP Connect stellt eine Reihe von Tools bereit, die der verbundene KI-Client aufrufen kann, um SuperOffice CRM-Daten in Ihrem Auftrag zu suchen, zu lesen und zu aktualisieren. MCP Connect legt keine neuen Datensätze an.
+Mit diesen Tools kann der verbundene KI-Client SuperOffice CRM-Daten in Ihrem Auftrag suchen und lesen. Sie sind ab CRM Suite Plus verfügbar.
 
 | Tools | Was sie tun |
 |---|---|
@@ -61,7 +61,18 @@ MCP Connect stellt eine Reihe von Tools bereit, die der verbundene KI-Client auf
 | `list_contact_activities`, `list_person_activities`, `list_user_activities` | Listet den Aktivitätsverlauf einer Firma, einer Person oder eines Benutzers auf. |
 | `list_custom_objects`, `search_custom_object_rows`, `describe_custom_object`, `get_custom_object_row` | Findet und liest Zeilen in [Zusatztabellen][8] (benutzerdefinierten Objekten). |
 | `get_associate`, `search_external_companies`, `whoami`, `server_info` | Löst die Identität eines Benutzers auf, durchsucht externe Handelsregister und ruft Server- und Sitzungsinformationen ab. |
-| `update_company`, `update_person`, `update_appointment`, `update_sale`, `update_project`, `update_ticket` | Aktualisiert Felder in einem bestehenden Datensatz. Erfordert CRM Suite Super. |
+
+## Aktualisierungstools
+
+<Note>
+Aktualisierungstools erfordern CRM Suite Super.
+</Note>
+
+Mit diesen Tools kann der verbundene KI-Client Felder eines bestehenden Datensatzes in Ihrem Auftrag ändern. MCP Connect legt keine neuen Datensätze an.
+
+| Tools | Was sie tun |
+|---|---|
+| `update_company`, `update_person`, `update_appointment`, `update_sale`, `update_project`, `update_ticket` | Aktualisiert Felder in einem bestehenden Datensatz. |
 
 [1]: https://mcp.superoffice.com/
 [2]: https://mcp.superoffice.com/static/how-to-connect/claude-desktop.html
