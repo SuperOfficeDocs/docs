@@ -1,0 +1,175 @@
+---
+title: Data Quality Agent
+description: Hold de firmaer og personer, der allerede findes i dit CRM, nøjagtige, komplette og opdaterede, med hver foreslået ændring gennemgået og godkendt af dig.
+keywords: ['AI-agent', 'berigelse', 'GDPR-samtykke', 'afvist e-mail', 'Leadfeeder']
+author: digitaldiina, Claudia Dias
+date: 10.01.2026
+so_version: 12.4
+content_type: concept
+tier: growth
+category: automation
+topic: ai
+platform: web
+deployment: online
+pilot: yes
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Aktivér agent: /da/ai/learn/set-up-ai-agents
+  - Rediger indstillinger: /da/ai/learn/set-up-ai-agents#edit
+  - /da/ai/learn/duplicate-agent
+  - Andre AI-tjenester: /da/ai/learn/index
+language: da
+---
+
+import DataQualityAgentPilotNote from "../../../snippets/ai/da/data-quality-agent-pilot-note.mdx";
+
+<DataQualityAgentPilotNote />
+
+Data Quality Agent holder de firmaer og personer, der allerede findes i SuperOffice CRM, nøjagtige og komplette. Hver dag arbejder den sig igennem en batch af dine poster, firmaer hvor du er den tildelte ejer, og leder efter kvalitetsproblemer såsom dårligt formaterede telefonnumre, manglende oplysninger og forældet information. Den slår de manglende oplysninger op i troværdige forretningskilder og udarbejder et sæt foreslåede rettelser, som du kan gennemgå. Intet skrives tilbage til SuperOffice, før du godkender det.
+
+## Hvad agenten gør for dig
+
+* **Retter formateringsproblemer:** normaliserer telefonnumre og rydder op i adresser, og markerer alt, den ikke sikkert kan rette.
+
+* **Udfylder manglende oplysninger:** finder manglende firmaoplysninger, såsom hjemmeside, beskrivelse eller branche, fra troværdige forretningskilder.
+
+* **Markerer ikke-leverbare e-mails:** fremhæver personers e-mailadresser, der er registreret som afvist, ved hver kørsel.
+
+* **Kontrollerer GDPR-samtykke:** markerer personer med manglende eller tilbagekaldt samtykke, så du kan handle på dem.
+
+* **Finder firmaer uden personer:** viser firmaposter, der ikke har nogen personer knyttet, og foreslår valgfrit personer, der kan tilføjes.
+
+<Note>
+Agenten foreslår. Du beslutter. Hver foreslået ændring gennemgås og godkendes af dig, før den skrives til SuperOffice. Hvis du ikke godkender en gennemgang, ændres intet.
+</Note>
+
+## Tidsplan
+
+Agenten kører **Dagligt**, én gang om dagen på et systemtildelt tidspunkt. Du styrer, hvor mange gennemgangsopgaver den skaber hver dag, med **Maks. opgaver pr. dag**, så gennemgangsvolumen forbliver overskuelig.
+
+## Aktivér agenten {#setup}
+
+Du er automatisk godkender for de poster, den gennemgår, og du kan oprette én instans.
+
+1. Vælg <i class="ph ph-robot" aria-label="Agenter ikon"></i> **Agenter** i Navigator.
+
+    Første gang du åbner siden **Agenter**, skal du logge ind og godkende AI-agenter i SuperOffice.
+
+1. Find kortet **Data Quality Agent** i **Agentoversigt**, og klik på **Aktivér**. Dette åbner opsætningsguiden.
+
+    ![Agentoversigten, med kortene Data Quality Agent, Lead Agent og Duplicate Agent -screenshot][img9]
+
+    <Tip>
+    Kan du ikke se kortet? Klik på **Gennemse agenter** for at finde det.
+    </Tip>
+
+## Generelle indstillinger {#settings}
+
+1. Angiv et unikt **Navn** for agentinstansen. **Dette kan ikke ændres efter aktivering.**
+
+    ![Data Quality Agents Generelle indstillinger, med Navn, Beskrivelse, Rapporteringssprog og Tidsplan -screenshot][img1]
+
+1. Redigér valgfrit den foreslåede **Beskrivelse**, hvis du vil have noget andet.
+
+1. Vælg **Rapporteringssprog**. Dette påvirker både rapporter og chatsvar.
+
+1. Vælg, hvor mange gennemgangsopgaver agenten skaber pr. dag (1-30). Standarden for **Maks. opgaver pr. dag** er 10.
+
+1. Aktivér valgfrit **Berig kontakter**. Når den er slået til, foreslår agenten også manglende kontaktpersoner og korrigerede afviste e-mailadresser, med e-mail- og telefonoplysninger, hvor den finder dem. Når den er slået fra, markerer den kun hullerne.
+
+1. Klik på **Næste**.
+
+## Kilder
+
+![Trinnet Kilder, indbyggede registre og det valgfrie Leadfeeder-tilføjelsesmodul -screenshot][img2]
+
+* **Indbyggede kilder:** virksomhedsregistre valgt baseret på hvert firmas hjemland, for eksempel Brønnøysundregistret for Norge eller Northdata for Tyskland, plus firmaets egen hjemmeside. Administreres af SuperOffice og redigeres ikke her.
+
+* **Leadfeeder:** bruges til at verificere og berige firmaer. Slået til som standard. Faktureres altid til **2x credits** ved brug, via SuperOffices egen Leadfeeder-konto.
+
+1. Vælg, om du vil bruge **Leadfeeder** til at berige firmaer, eller kun stole på de indbyggede registre. Slået til som standard.
+
+1. Klik på **Gem**.
+
+    Instansen aktiveres, vises under **Mine agenter** i sidepanelet Agenter, og begynder at arbejde på sin næste daglige kørsel.
+
+1. Vælg **Gå til instans** for at åbne din nye Data Quality Agent og [komme i gang][3].
+
+## Gennemgå og godkend ændringer
+
+1. Vælg fanen **Chat**.
+
+1. Klik på <i class="ph ph-sliders-horizontal" aria-label="Filterikon"></i>, og vælg **Afventende**.
+
+1. Vælg en firmagennemgangstråd (<i class="ph ph-buildings" aria-label="Firmaikon"></i>) fra listen.
+
+1. Gennemgå resuméfelterne **Felter til opdatering**, **Nye kontakter**, **Eksisterende kontakter** og **Manuelle handlinger**, samt tabellen **Felter, der skal opdateres**: Felt, Nuværende værdi, Foreslået værdi og Kilde, for eksempel et virksomhedsregister, firmaets hjemmeside eller Leadfeeder.
+
+    Oplysninger, som agenten ikke kunne udfylde automatisk, er angivet under **Manuel handling nødvendig**. Opdater dem direkte i firma- eller personposten. En person markeret for manglende GDPR-samtykke vises som "vil blive soft-slettet".
+
+    ![En datakvalitetsgennemgang, med tabellen Felter, der skal opdateres, og listen Manuel handling nødvendig -screenshot][img4]
+
+1. Bed valgfrit agenten i chatten om at justere det foreslåede, før du godkender.
+
+1. Klik på **Godkend**.
+
+    <Danger>
+    **Ændringer kan ikke fortrydes.** Godkendte ændringer kan ikke fortrydes, så gennemgå omhyggeligt, før du godkender.
+    </Danger>
+
+1. Klik på **Godkend** i bekræftelsesdialogen, der oplyser præcis hvor mange felter der bliver opdateret.
+
+    ![Godkendelsesbekræftelsesdialogen, som beskriver præcis hvad der vil ske -screenshot][img5]
+
+    * Alle ændringerne i gennemgangen skrives til SuperOffice på én gang.
+    * For en post med manglende GDPR-samtykke soft-sletter godkendelsen personen, og SuperOffice fjerner den permanent 30 dage senere.
+
+    ![Gennemgangen efter godkendelse, med badgen Godkendt og et resumé af de anvendte ændringer -screenshot][img3]
+
+Du godkender eller afviser alt, der er fundet for et firma, som én samlet beslutning. Der er ingen feltvis godkendelse. Hvis de eneste fund for et firma er ting, agenten ikke kan rette, såsom en afvist e-mail uden fundet erstatning, eller slet ingen personer, er gennemgangen informativ: **Godkend** bekræfter blot, at du har set den, **Afvis** afviser den, og ingen af dem skriver noget til SuperOffice.
+
+## Undersøg et bestemt firma
+
+1. Vælg fanen **Chat**.
+
+1. I **Generel** chat skal du bede agenten om at kontrollere et bestemt firma nu, for eksempel *kontrollér Acmes data*, eller slå et firmas eller en persons aktuelle oplysninger op.
+
+1. Hvis den finder ægte ændringer at foreslå på denne måde, opretter den en normal gennemgangsopgave for det, præcis som et firma fundet på den daglige planlagte kørsel. Gennemgå det som beskrevet ovenfor.
+
+## Agentens arbejdsområde {#workspace}
+
+Data Quality Agents arbejdsområde har tre faner: **Chat**, **Historik** og **Ydeevne**.
+
+| Fane | Beskrivelse |
+|---|---|
+| Chat | En **Generel chat**-tråd plus én tråd pr. firma, agenten har gennemgået. |
+| Historik | En detaljeret log over behandlede firmaer, foreslåede, godkendte og anvendte ændringer, og eventuelle oversprungne poster, med årsagen. Vælg en **Periode** (seneste 24 timer, 7, 30 eller 90 dage) for at indsnævre det. Lange historikker vises på flere sider. |
+| Ydeevne | Viser, hvordan instansen har klaret sig over en periode (seneste 7, 30 eller 90 dage): ændringer sendt til godkendelse, godkendte ændringer, afviste ændringer, udløbne ændringer, bekræftede gennemgange, afviste gennemgange, udløbne gennemgange og gennemførte kørsler. En separat gruppe **Berigelse** viser en opdeling af, hvor mange firmaer der blev beriget via Leadfeeder versus web. |
+
+![Fanen Historik, med filteret Periode og opdateringsknappen -screenshot][img6]
+
+Klik på <i class="ph ph-arrow-clockwise" aria-label="Opdateringsikon"></i> for at hente de seneste emner.
+
+## Tips og fejlfinding
+
+**Hvad sker der, hvis jeg afviser?** Intet skrives. Gennemgangen kasseres.
+
+**Kan jeg beslutte om flere gennemgange på én gang?** Ja. Vælg flere afventende gennemgange, og brug **Godkend** eller **Afvis** fra bulk-panelet. At godkende en batch skriver hver ændring i hver valgt gennemgang på én gang, så den samme "kan ikke fortrydes"-advarsel gælder for hver af dem.
+
+**Hvad sker der med en gennemgang, jeg ikke får behandlet i tide?** En gennemgang, der afventer godkendelse, har en begrænset levetid, **30 dage som standard**. Når den er inden for 5 dage fra at udløbe, vises et nedtællingsbanner på dens tråd. Hvis du ikke handler i tide, kasseres den automatisk, og agenten går videre. Der gemmes ingenting for en udløbet gennemgang.
+
+**Jeg deaktiverede instansen, og mine afventende gennemgange er væk.** At deaktivere en instans kasserer alle gennemgange, der afventer godkendelse, som beskrevet i [Opsæt AI-agenter][1]. Godkend eller afvis det, du har brug for, først, hvis du vil beholde det.
+
+Kun instansens ejer kan ændre dens indstillinger eller slette den.
+
+[1]: /da/ai/learn/set-up-ai-agents
+[3]: #workspace
+
+[img1]: /media/loc/en/ai/data-quality-agent-settings.png
+[img2]: /media/loc/en/ai/data-quality-agent-sources.png
+[img3]: /media/loc/en/ai/data-quality-approved.png
+[img4]: /media/loc/en/ai/data-quality-suggestion.png
+[img5]: /media/loc/en/ai/approve-data-quality-update.png
+[img6]: /media/loc/en/ai/dq-history.png
+[img9]: /media/loc/en/ai/agent-overview.png

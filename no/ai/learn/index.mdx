@@ -2,9 +2,9 @@
 uid: help-no-ai
 title: AI-tjenester
 description: Oversikt over kunstig intelligens-tjenester i SuperOffice CRM
-keywords: ['AI', 'kunstig intelligens', 'AI Platform', 'maskinlæring', 'automatisering']
+keywords: ['AI', 'kunstig intelligens', 'AI Platform', 'maskinlæring', 'automatisering', 'insight', 'assist', 'agent', 'mcp', 'instans', 'tekstanalyse']
 author: digitaldiina
-date: 09.22.2026
+date: 10.01.2026
 so_version: 12.4
 content_type: concept
 license: aiplatform
@@ -15,39 +15,102 @@ platform: web
 deployment: online
 audience: person
 audience_tooltip: SuperOffice CRM
-redirect_from: /no/ai/index
-boost: 1.5
+redirect_from:
+  - /no/ai/index
+  - /no/ai/learn/text-analysis
+  - /no/ai/text-analysis/index
+  - /no/ai/learn/categorization
+  - /no/ai/configuration-ai/index
+boost: 2
+related:
+  - /no/ai/learn/set-up-ai-agents
+  - /no/admin/license/crm-suite
 language: no
 ---
 
-<Note>
-SuperOffice AI er kun tilgjengelig i CRM Online. Det krever **AI Platform**-tillegget og spesifikke tjenestelisenser. Disse tjenestene faktureres månedlig per aktiv AI-tjeneste.
-</Note>
-
-SuperOffice AI hjelper med å automatisere rutineoppgaver og redusere manuelt arbeid ved å bygge inn kunstig intelligens direkte i CRM-en. Du kan forbedre responstider, redusere feil og arbeide mer effektivt-uten å trenge teknisk ekspertise eller programmeringsferdigheter.
+SuperOffice AI hjelper med å automatisere rutineoppgaver og redusere manuelt arbeid ved å bygge inn kunstig intelligens direkte i CRM-en. Du kan forbedre responstider, redusere feil og arbeide mer effektivt, uten å trenge teknisk ekspertise eller programmeringsferdigheter.
 
 Disse funksjonene lar teamet ditt fokusere på meningsfylt arbeid, mens AI håndterer repetitive prosesser i bakgrunnen.
+
+<Note>
+SuperOffice AI er kun tilgjengelig i CRM Online. Lisenskrav er tjenestespesifikke.
+</Note>
 
 ## Tilgjengelige tjenester
 
 | Tjeneste | Beskrivelse | Lisens |
 |---|---|---|
-| [Kategorisering][2] | Foreslår en kategori for nye saker basert på meldingsinnholdet. | Categorization |
-| [Oversettelse, språkgjenkjenning, stemningsgjenkjenning][1] | Analyserer tekst for å gjenkjenne språk, oversette det og bestemme sentiment. | Text Services |
-| [Chatbot Connector][3] | Gjør det mulig å integrere med eksterne chatboter for automatisk håndtering av innkommende chatter. | Chatbot |
-| [Workspace Assist][4] | Bruker generativ AI til å hjelpe brukere med innholdsoppretting og oppgaveveiledning. | CRM Suite Core eller AI Lab (påmelding/avmelding i Innstillinger og vedlikehold) |
-| [SuperNotes][5] | AI-drevet møteassistent som tar opp, transkriberer og oppsummerer møter, og kobler innsiktene tilbake til SuperOffice. | Separat integrasjon (ikke en del av AI Platform) |
 | [AI-sammendrag i SuperOffice for Teams][6] | Genererer et sammendrag av en Microsoft Teams-samtale når den arkiveres i SuperOffice. | AI Lab (pilotfunksjon) |
+| [Category Insight][2] | Foreslår en kategori for innkommende saker basert på meldingsinnholdet. En administrator [trener modellen på et utvalg av saker][18] og aktiverer forslag. Saksbehandleren vurderer forslaget før det brukes. | Categorization eller CRM Suite Growth |
+| [Chatbot Connector][3] | Gjør det mulig å integrere med eksterne chatboter for automatisk håndtering av innkommende chatter. | Chatbot |
 | [Company Insight][7] | Foreslår firmadetaljer fra offisielle foretaksregistre, som Brreg, Virk, Companies House og Zefix, når du oppretter et nytt firma. | CRM Suite Growth |
+| [Data Quality Agent][12] | Verifiserer og beriker firmaene og personene som allerede finnes i CRM-en din, mot pålitelige forretningskilder, slik at en person kan godkjenne dem. | CRM Suite Growth |
+| [Duplicate Agent][13] | Finner duplikate firmaer og personer, og kobler foreldreløse personer til firmaet sitt, slik at en person kan godkjenne dem. | CRM Suite Growth |
+| [Lead Agent][9] | Finner, undersøker og kvalifiserer nye prospekter fra konfigurerte nyhetskilder, og vurderer dem opp mot din ideelle kundeprofil, slik at en person kan godkjenne dem. | CRM Suite Plus |
+| [MCP Connect][14] | Kobler SuperOffice CRM til Claude, Microsoft Copilot eller ChatGPT som en datakilde i sanntid, slik at de kan lese og oppdatere data. | CRM Suite Plus for å lese, CRM Suite Super for å oppdatere |
+| [Reply Assist][8] | Foreslår et svar på en innkommende sak basert på ditt CRM-innhold, som du kan gjennomgå og sende. | CRM Suite Plus |
+| [Request Insight][1] | Analyserer sentimentet i en innkommende sak, slik at du kan prioritere svaret ditt. | Text Services eller CRM Suite Core |
+| [Summary Assist][15] | Oppsummerer meldingene i en sak, slik at du kan handle uten å lese hele forløpet. | Text Services eller CRM Suite Core |
+| [SuperNotes][5] | AI-drevet møteassistent som tar opp, transkriberer og oppsummerer møter, og kobler innsiktene tilbake til SuperOffice. | Separat integrasjon (ikke en del av AI Platform) |
+| [Translation Assist][16] | Gjenkjenner språket i en innkommende sak og oversetter det til ditt språk. | Text Services eller CRM Suite Core |
+| [Workspace Assist][4] | Bruker generativ AI til å hjelpe brukere med innholdsoppretting og oppgaveveiledning. | CRM Suite Core eller AI Lab (påmelding/avmelding i Innstillinger og vedlikehold) |
+| Writing Assist | Lager utkast til e-poster, notater og oppfølginger som du kan redigere og sende. | CRM Suite Starter |
 
-![Oversikt over AI-tjenester -screenshot][img1]
+<Note>
+Request Insight, Summary Assist og Translation Assist krever SuperOffice AI Platform og en Text Services-lisens eller CRM Suite Core. En administrator må [aktivere tekstanalyse][17] før funksjonene vises. Når de er aktivert, vises de direkte i saksvisningen, og sluttbrukeren trenger ikke konfigurere dem.
 
-[1]: /no/ai/learn/text-analysis
-[2]: /no/ai/learn/categorization
+Category Insight krever SuperOffice AI Platform og en Categorization-lisens eller CRM Suite Growth. En administrator må [trene modellen og aktivere forslag][18] før saksbehandlere kan [bruke foreslåtte kategorier][2].
+</Note>
+
+## Insight, Assist og Agent
+
+Nyere AI-funksjoner følger et navnemønster som forteller hvordan hver av dem virker:
+
+* **Insight** foreslår eksterne data direkte i arbeidsflyten, uten noe å åpne eller administrere. [Company Insight][7] er en insight-tjeneste.
+
+* **Assist** bruker generativ AI til å hjelpe deg med å opprette innhold eller bestemme neste steg, der du allerede jobber. [Workspace Assist][4] og [Reply Assist][8] er assist-tjenester.
+
+* **Agent** kjører i bakgrunnen etter sin egen tidsplan og foreslår resultater som en person kan godkjenne, i sitt eget dedikerte Agenter-område. [Lead Agent][9], [Data Quality Agent][12] og [Duplicate Agent][13] er agent-tjenester.
+
+### Kreditter og fakturering
+
+Noen AI-handlinger bruker AI-kreditter, særlig handlinger utført av agenter som Data Quality Agent. Kreditter trekkes fra når en slik handling utløses. CRM Suite inkluderer en årlig kredittkvote som øker med teamstørrelsen. Du kan kjøpe ekstra kvoter. Se [prislisten for CRM Suite][20] for gjeldende kvoter, kredittkostnad per handling og priser for ekstra bruk.
+
+## Åpne Agenter-området {#goto-agents}
+
+1. Velg <i class="ph ph-robot" aria-label="Agenter-ikon"></i> **Agenter** i navigatoren.
+
+    <Tip>
+    Ser du ikke **Agenter** i navigatoren? Be administratoren din om å [aktivere AI-funksjoner][10].
+    </Tip>
+
+1. Første gang klikker du på **Logg inn** og godkjenner tilgang når du blir bedt om det: velg **Jeg godkjenner**.
+
+    ![Åpne Agenter-området: velg Agenter-ikonet, deretter Logg inn -screenshot][img1]
+
+    ![Godkjenne AI-agenters tilgang til SuperOffice-installasjonen din -screenshot][img2]
+
+1. Fortsett med å [velge, aktivere og sette opp agentene dine][10].
+
+[1]: /no/request/learn/handle-request-ai#sentiment
+[2]: /no/request/learn/handle-request-ai#categorization
 [3]: /no/chat/admin/channel-create#chatbot
 [4]: /no/ai/learn/workspace-assist
 [5]: /integrations/supernotes/index
 [6]: /integrations/superoffice-for-teams/ai-summary
 [7]: /no/company/learn/create#company-insight
+[8]: /no/request/learn/handle-request-ai#reply-assist
+[9]: /no/ai/learn/lead-agent
+[10]: /no/ai/learn/set-up-ai-agents
+[12]: /no/ai/learn/data-quality-agent
+[13]: /no/ai/learn/duplicate-agent
+[14]: /no/ai/learn/mcp
 
-[img1]: /media/loc/en/ai/ai-services.png
+[15]: /no/request/learn/handle-request-ai#summary
+[16]: /no/request/learn/handle-request-ai#translate
+[17]: /no/ai/admin/index#enable-text-analysis
+[18]: /no/ai/admin/set-up-categorization
+[20]: https://community.superoffice.com/en/product-releases/prices-customer/crm-suite-prices/
+
+[img1]: /media/loc/en/ai/open-agents-area.png
+[img2]: /media/loc/en/ai/approve-ai-agents.png

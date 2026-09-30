@@ -2,19 +2,18 @@
 uid: help-nl-request-ai
 title: Efficiënte afhandeling van verzoeken met AI
 sidebarTitle: "Afhandeling met AI"
-description: De introductie van kunstmatige intelligentie (AI) in SuperOffice 10 biedt verzoekbehandelaars/ondersteuningsagenten een nieuwe set slimme tools om hun werkdag efficiënter te maken.
-keywords: ['verzoek', 'ai', 'efficiënt']
+description: De introductie van kunstmatige intelligentie (AI) in SuperOffice biedt verzoekbehandelaars/ondersteuningsagenten een nieuwe set slimme tools om hun werkdag efficiënter te maken.
+keywords: ['verzoek', 'ai', 'efficiënt', 'Reply Assist', 'antwoordsuggestie']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 10.01.2026
+so_version: 12.4
 content_type: concept
 tier: core
 audience: person
 audience_tooltip: SuperOffice Service
 related:
   - Het gebruik van AI-services: /nl/ai/learn/index
-  - Tekstanalyse van verzoeken: /nl/ai/learn/text-analysis
-  - Classificatie van verzoeken: /nl/ai/learn/categorization
+  - AI-gebaseerde categorisering instellen: /nl/ai/admin/set-up-categorization
 language: nl
 ---
 
@@ -22,26 +21,83 @@ language: nl
 Voor AI-services is een aparte licentie vereist. SuperOffice AI bestaat alleen in de cloud en is een aparte uitbreiding.
 </Note>
 
-De introductie van kunstmatige intelligentie (AI) in SuperOffice 10 biedt verzoekbehandelaars/ondersteuningsagenten een nieuwe set slimme tools om hun werkdag efficiënter te maken.
+De introductie van kunstmatige intelligentie (AI) in SuperOffice biedt verzoekbehandelaars/ondersteuningsagenten een nieuwe set slimme tools om hun werkdag efficiënter te maken.
 
-## Taaldetectie
+<Tip>
+Ziet u deze functies niet in een verzoek? Vraag uw beheerder om [tekstanalyse in te schakelen][17].
+</Tip>
 
-Deze functionaliteit detecteert automatisch de taal van een inkomend verzoek. De gedetecteerde taal wordt onder het bericht weergegeven.
+## Request Insight {#sentiment}
 
-## Vertaling
+Request Insight analyseert het sentiment van een inkomend verzoek, zodat u de klant kunt prioriteren die u het eerst nodig heeft.
 
-Als u een bericht ontvangt in een taal die u niet kunt lezen, kunt u op **Vertalen uit** ***taal*** onder het bericht klikken. Het onderwerp en de hoofdtekst van het bericht is vertaald en onder het oorspronkelijke bericht toegevoegd.
+<Note>
+Voor Request Insight is een Text Services-licentie of CRM Suite Core vereist.
+</Note>
 
-## Gevoelsanalyse
-
-Is het contact blij of boos?
+Is de contactpersoon blij of boos? Als deze functie actief is, worden inkomende e-mailverzoeken geanalyseerd om de stemming van de contactpersoon te bepalen. Een emoticon onder het bericht geeft het gedetecteerde sentiment aan:
 
 * Negatief <i class="ph ph-smiley-sad" aria-hidden="true"></i>
 * Neutraal <i class="ph ph-smiley-meh" aria-hidden="true"></i>
-* Positief <i class="ph ph-smiley-meh" aria-hidden="true"></i>
+* Positief <i class="ph ph-smiley" aria-hidden="true"></i>
 
-Als deze functie actief is, worden inkomende e-mailverzoeken geanalyseerd om de "stemming" van het contact te bepalen. Een emoticon onder het bericht geeft het gedetecteerde sentiment aan (gelukkig, ongelukkig of neutraal).
+## Summary Assist {#summary}
 
-### Automatische categorisatie
+Summary Assist vat de berichten in een verzoek samen, zodat u kunt handelen zonder de volledige geschiedenis te lezen. De functie verschijnt als een actie in hetzelfde paneel als Reply Assist.
 
-Bespaar tijd door het systeem verzoeken voor u te laten categoriseren. Als deze functie actief is, worden inkomende e-mailverzoeken geanalyseerd om de beste categorie voor elk verzoek te bepalen. In de voettekst van een verzoek ziet u de categorie die door het systeem wordt voorgesteld. Klik op de categoriekoppeling om het verzoek bij te werken met de voorgestelde categorie.
+<Note>
+Voor Summary Assist is een Text Services-licentie of CRM Suite Core vereist.
+</Note>
+
+1. Selecteer **Samenvatten** in het verzoekpaneel.
+2. Bekijk de gegenereerde samenvatting van de berichten van het verzoek.
+3. Selecteer **Terug** om terug te keren naar het paneel.
+
+## Translation Assist {#translate}
+
+Translation Assist detecteert de taal van een inkomend verzoek en biedt vertaling aan, zodat u verzoeken in elke taal kunt lezen en beantwoorden.
+
+<Note>
+Voor Translation Assist is een Text Services-licentie of CRM Suite Core vereist.
+</Note>
+
+Deze functionaliteit detecteert automatisch de taal van een inkomend verzoek. De gedetecteerde taal wordt onder het bericht weergegeven.
+
+Als u een bericht ontvangt in een taal die u niet kunt lezen, kunt u **Vertalen uit** ***taal*** onder het bericht selecteren. Het onderwerp en de hoofdtekst van het bericht is vertaald en onder het oorspronkelijke bericht toegevoegd.
+
+## Category Insight {#categorization}
+
+Category Insight gebruikt een getraind model om op basis van de berichtinhoud een categorie voor inkomende e-mailverzoeken voor te stellen. De suggestie wordt pas toegepast wanneer u deze bevestigt.
+
+<Note>
+Category Insight vereist het SuperOffice AI Platform en een Categorization-licentie of CRM Suite Growth. De functie is alleen beschikbaar in CRM Online.
+</Note>
+
+Ziet u geen suggesties? Vraag uw beheerder om [het model te trainen en suggesties in te schakelen][18].
+
+1. Open een inkomend verzoek en zoek de voorgestelde categorie onderaan het verzoek.
+1. Controleer de suggestie en selecteer de categorielink als de categorie bij het verzoek past.
+1. Controleer of de categorie is bijgewerkt. Na het toepassen verdwijnt de suggestie.
+
+![Voorgestelde categorie in een verzoek -screenshot][img2]
+
+Als er geen passende categorie is, verschijnt er geen suggestie. U kunt nog steeds zelf een categorie kiezen.
+
+## Reply Assist {#reply-assist}
+
+In plaats van een leeg scherm stelt Reply Assist een antwoord op maat voor op een inkomend verzoek. Het concept wordt opgebouwd uit uw eigen CRM-inhoud: eerdere verzoeken, antwoordsjablonen, FAQ-items, documenten en, optioneel, webinhoud.
+
+Zoals bij elke SuperOffice AI-functie is dit een suggestie die u moet goedkeuren. Er wordt niets automatisch opgeslagen of verzonden.
+
+<Note>
+Reply Assist vereist [CRM Suite Plus][8] of hoger.
+</Note>
+
+![Door Reply Assist voorgesteld antwoord op een verzoek -screenshot][img1]
+
+[8]: ../../admin/license/crm-suite#plans
+[17]: ../../ai/admin/index#enable-text-analysis
+[18]: ../../ai/admin/set-up-categorization
+
+[img1]: /media/loc/en/request/reply-assist.png
+[img2]: /media/loc/en/request/suggested-category-demo.png

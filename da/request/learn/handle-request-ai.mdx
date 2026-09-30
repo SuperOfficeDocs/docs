@@ -2,19 +2,18 @@
 uid: help-da-request-ai
 title: Effektiv håndtering af sager ved hjælp af AI
 sidebarTitle: "Håndtering med AI"
-description: Indførelsen af kunstig intelligens (AI) i SuperOffice 10 giver salgsbehandlere / supportagenter et nyt sæt smarte værktøjer til at gøre deres arbejdsdag mere effektiv.
-keywords: ['sag', 'ai', 'effektiv']
+description: Indførelsen af kunstig intelligens (AI) i SuperOffice giver salgsbehandlere / supportagenter et nyt sæt smarte værktøjer til at gøre deres arbejdsdag mere effektiv.
+keywords: ['sag', 'ai', 'effektiv', 'Reply Assist', 'svarforslag']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 10.01.2026
+so_version: 12.4
 content_type: concept
 tier: core
 audience: person
 audience_tooltip: SuperOffice Service
 related:
   - Sådan bruger du AI-tjenester: /da/ai/learn/index
-  - Tekstanalyse af sager: /da/ai/learn/text-analysis
-  - Kategorisering af sager: /da/ai/learn/categorization
+  - Opsæt AI-baseret kategorisering: /da/ai/admin/set-up-categorization
 language: da
 ---
 
@@ -22,26 +21,83 @@ language: da
 AI-tjenester kræver en separat licens. SuperOffice AI er cloud-baseret og et separat tilføjelsesprogram.
 </Note>
 
-Indførelsen af kunstig intelligens (AI) i SuperOffice 10 giver salgsbehandlere / supportagenter et nyt sæt smarte værktøjer til at gøre deres arbejdsdag mere effektiv.
+Indførelsen af kunstig intelligens (AI) i SuperOffice giver salgsbehandlere / supportagenter et nyt sæt smarte værktøjer til at gøre deres arbejdsdag mere effektiv.
 
-## Registrering af sprog
+<Tip>
+Kan du ikke se disse funktioner i en sag? Bed din administrator om at [aktivere tekstanalyse][17].
+</Tip>
 
-Denne funktion registrerer automatisk sproget i en indgående sag. Det registrerede sprog vises under meddelelsen.
+## Request Insight {#sentiment}
 
-## Oversættelse
+Request Insight analyserer sentimentet i en indgående sag, så du kan prioritere den kunde, der har mest brug for dig.
 
-Hvis du modtager en meddelelse på et sprog, du ikke kan læse, kan du klikke på **oversætte fra** ***sprog*** under meddelelsen. Emnet og brødteksten i meddelelsen er oversat og tilføjet under den oprindelige meddelelse.
+<Note>
+Request Insight kræver en Text Services-licens eller CRM Suite Core.
+</Note>
 
-## Analyse af synspunkt
-
-Er personen glad eller vred?
+Er personen glad eller vred? Hvis denne funktion er aktiv, analyseres indgående e-mailsager for at fastslå personens humør. Et humørikon under meddelelsen angiver den fundne følelse:
 
 * Negativ <i class="ph ph-smiley-sad" aria-hidden="true"></i>
 * Neutral <i class="ph ph-smiley-meh" aria-hidden="true"></i>
-* Positiv <i class="ph ph-smiley-meh" aria-hidden="true"></i>
+* Positiv <i class="ph ph-smiley" aria-hidden="true"></i>
 
-Hvis denne funktion er aktiv, analyseres indgående e-mailsager for at fastslå personens "humør". Et humørikon under meddelelsen vil indikere den fundne følelse (glad, ulykkelig eller neutral).
+## Summary Assist {#summary}
 
-### Automatisk kategorisering
+Summary Assist opsummerer beskederne i en sag, så du kan handle uden at læse hele forløbet. Funktionen vises som en handling i det samme panel som Reply Assist.
 
-Spar tid ved at lade systemet kategorisere sager for dig. Hvis denne funktion er aktiv, analyseres indgående e-mail-sager for at bestemme den bedste kategori for hver sag. I sidefoden af en anmodning vil du se den kategori, der foreslås af systemet. Klik på kategorilinket for at opdatere sagen med den foreslåede kategori.
+<Note>
+Summary Assist kræver en Text Services-licens eller CRM Suite Core.
+</Note>
+
+1. Vælg **Opsummer** i sagspanelet.
+2. Gennemgå det genererede resumé af sagens beskeder.
+3. Vælg **Tilbage** for at vende tilbage til panelet.
+
+## Translation Assist {#translate}
+
+Translation Assist registrerer sproget i en indgående sag og tilbyder oversættelse, så du kan læse og besvare sager på ethvert sprog.
+
+<Note>
+Translation Assist kræver en Text Services-licens eller CRM Suite Core.
+</Note>
+
+Denne funktion registrerer automatisk sproget i en indgående sag. Det registrerede sprog vises under meddelelsen.
+
+Hvis du modtager en meddelelse på et sprog, du ikke kan læse, kan du klikke på **oversætte fra** ***sprog*** under meddelelsen. Emnet og brødteksten i meddelelsen er oversat og tilføjet under den oprindelige meddelelse.
+
+## Category Insight {#categorization}
+
+Category Insight bruger en trænet model til at foreslå en kategori for indgående e-mail-sager ud fra beskedens indhold. Forslaget anvendes først, når du godkender det.
+
+<Note>
+Category Insight kræver SuperOffice AI Platform og en Categorization-licens eller CRM Suite Growth. Funktionen er kun tilgængelig i CRM Online.
+</Note>
+
+Ser du ingen forslag? Bed din administrator om at [træne modellen og aktivere forslag][18].
+
+1. Åbn en indgående sag, og se efter den foreslåede kategori i sagens sidefod.
+1. Gennemgå forslaget, og vælg kategorilinket, hvis kategorien passer til sagen.
+1. Kontroller, at kategorien er opdateret. Forslaget forsvinder, når du har anvendt det.
+
+![Foreslået kategori i en sag -screenshot][img2]
+
+Hvis ingen kategori passer, vises intet forslag. Du kan stadig selv vælge en kategori.
+
+## Reply Assist {#reply-assist}
+
+I stedet for en tom side foreslår Reply Assist et skræddersyet svar på en indgående sag. Svaret bygges ud fra dit eget CRM-indhold: tidligere sager, svarskabeloner, FAQ-poster, dokumenter og, valgfrit, webindhold.
+
+Som med alle SuperOffice AI-funktioner er dette et forslag, du skal godkende. Intet gemmes eller sendes automatisk.
+
+<Note>
+Reply Assist kræver [CRM Suite Plus][8] eller højere.
+</Note>
+
+![Reply Assists forslag til svar på en sag -screenshot][img1]
+
+[8]: ../../admin/license/crm-suite#plans
+[17]: ../../ai/admin/index#enable-text-analysis
+[18]: ../../ai/admin/set-up-categorization
+
+[img1]: /media/loc/en/request/reply-assist.png
+[img2]: /media/loc/en/request/suggested-category-demo.png

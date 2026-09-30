@@ -1,15 +1,18 @@
 ---
 uid: help-sv-request-ai
 title: Effektiv hantering av ärenden med AI
-description: Introduktionen av artificiell intelligens (AI) i SuperOffice 10 ger ärendehandläggare/supportagenter tillgång till en ny uppsättning smarta verktyg för att göra deras arbetsdag effektivare.
-keywords: ['ärende', 'ai', 'effektiv']
+description: Introduktionen av artificiell intelligens (AI) i SuperOffice ger ärendehandläggare/supportagenter tillgång till en ny uppsättning smarta verktyg för att göra deras arbetsdag effektivare.
+keywords: ['ärende', 'ai', 'effektiv', 'Reply Assist', 'svarsförslag']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 10.01.2026
+so_version: 12.4
 content_type: concept
 tier: core
 audience: person
 audience_tooltip: SuperOffice Service
+related:
+  - Så här använder du AI-tjänster: /sv/ai/learn/index
+  - Konfigurera AI-baserad kategorisering: /sv/ai/admin/set-up-categorization
 language: sv
 ---
 
@@ -17,36 +20,82 @@ language: sv
 AI-tjänster kräver en separat licens. SuperOffice AI är endast molnbaserat och är ett separat tillägg.
 </Note>
 
-Introduktionen av artificiell intelligens (AI) i SuperOffice 10 ger ärendehandläggare/supportagenter tillgång till en ny uppsättning smarta verktyg för att göra deras arbetsdag effektivare.
+Introduktionen av artificiell intelligens (AI) i SuperOffice ger ärendehandläggare/supportagenter tillgång till en ny uppsättning smarta verktyg för att göra deras arbetsdag effektivare.
 
-## Språkidentifiering
+<Tip>
+Ser du inte dessa funktioner i ett ärende? Be administratören [aktivera textanalys][17].
+</Tip>
 
-Denna funktion identifierar automatiskt språket i ett inkommande ärende. Det identifierade språket visas under meddelandet.
+## Request Insight {#sentiment}
 
-## Översättning
+Request Insight analyserar sentimentet i ett inkommande ärende, så att du kan prioritera den kund som behöver dig mest.
 
-Om du får ett meddelande på ett språk du inte kan läsa, kan du klicka på **Översätt från** ***språk*** under meddelandet. Meddelandets ämne och brödtext översätts och läggs till under det ursprungliga meddelandet.
+<Note>
+Request Insight kräver en Text Services-licens eller CRM Suite Core.
+</Note>
 
-## Sentimentanalys
-
-Är kontakten glad eller arg?
+Är kontakten glad eller arg? Om den här funktionen är aktiverad analyseras inkommande e-postärenden för att avgöra kontaktens sinnesstämning. En emoticon under meddelandet visar det identifierade sentimentet:
 
 * Negativ <i class="ph ph-smiley-sad" aria-hidden="true"></i>
 * Neutral <i class="ph ph-smiley-meh" aria-hidden="true"></i>
 * Positiv <i class="ph ph-smiley" aria-hidden="true"></i>
 
-Om den här funktionen är aktiverad, analyseras inkommande e-postförfrågningar för att avgöra kontaktens "sinnesstämning". En emoticon under meddelandet visar det sentiment som har identifierats (glad, ledsen eller neutral).
+## Summary Assist {#summary}
 
-### Automatisk kategorisering
+Summary Assist sammanfattar meddelandena i ett ärende, så att du kan agera utan att läsa hela historiken. Funktionen visas som en åtgärd i samma panel som Reply Assist.
 
-Spara tid genom att låta systemet kategorisera ärenden åt dig. Om den här funktionen är aktiverad, analyseras inkommande e-postförfrågningar för att avgöra den bästa kategorin för varje ärende. I sidfoten i ett ärende kommer du att se kategorin som systemet föreslår. Klicka på kategorilänken för att uppdatera ärendet med den föreslagna kategorin.
+<Note>
+Summary Assist kräver en Text Services-licens eller CRM Suite Core.
+</Note>
 
-## Relaterade ämnen
+1. Välj **Sammanfatta** i ärendepanelen.
+2. Granska den genererade sammanfattningen av ärendets meddelanden.
+3. Välj **Tillbaka** för att återgå till panelen.
 
-* [Så här använder du AI-tjänster][1]
-* [Textanalys av ärenden][2]
-* [Kategorisering av ärenden][3]
+## Translation Assist {#translate}
 
-[1]: ../../ai/learn/index
-[2]: ../../ai/learn/text-analysis
-[3]: ../../ai/learn/categorization
+Translation Assist identifierar språket i ett inkommande ärende och erbjuder översättning, så att du kan läsa och besvara ärenden på vilket språk som helst.
+
+<Note>
+Translation Assist kräver en Text Services-licens eller CRM Suite Core.
+</Note>
+
+Denna funktion identifierar automatiskt språket i ett inkommande ärende. Det identifierade språket visas under meddelandet.
+
+Om du får ett meddelande på ett språk du inte kan läsa, kan du klicka på **Översätt från** ***språk*** under meddelandet. Meddelandets ämne och brödtext översätts och läggs till under det ursprungliga meddelandet.
+
+## Category Insight {#categorization}
+
+Category Insight använder en tränad modell för att föreslå en kategori för inkommande e-postärenden utifrån meddelandets innehåll. Förslaget tillämpas först när du godkänner det.
+
+<Note>
+Category Insight kräver SuperOffice AI Platform och en Categorization-licens eller CRM Suite Growth. Funktionen är endast tillgänglig i CRM Online.
+</Note>
+
+Ser du inga förslag? Be administratören att [träna modellen och aktivera förslag][2].
+
+1. Öppna ett inkommande ärende och leta efter den föreslagna kategorin längst ned i ärendet.
+1. Granska förslaget och välj kategorilänken om kategorin passar ärendet.
+1. Kontrollera att kategorin har uppdaterats. Förslaget försvinner när du har tillämpat det.
+
+![Föreslagen kategori i ett ärende -screenshot][img2]
+
+Om ingen kategori passar visas inget förslag. Du kan fortfarande välja en kategori själv.
+
+## Reply Assist {#reply-assist}
+
+I stället för en tom sida föreslår Reply Assist ett skräddarsytt svar på ett inkommande ärende. Utkastet byggs utifrån ditt eget CRM-innehåll: tidigare ärenden, svarsmallar, vanliga frågor (FAQ), dokument och, valfritt, webbinnehåll.
+
+Precis som med alla SuperOffice AI-funktioner är detta ett förslag som du måste godkänna. Inget sparas eller skickas automatiskt.
+
+<Note>
+Reply Assist kräver [CRM Suite Plus][3] eller högre.
+</Note>
+
+![Reply Assists föreslagna svar på ett ärende -screenshot][img1]
+
+[2]: ../../ai/admin/set-up-categorization
+[3]: ../../admin/license/crm-suite#plans
+[17]: ../../ai/admin/index#enable-text-analysis
+[img1]: /media/loc/en/request/reply-assist.png
+[img2]: /media/loc/en/request/suggested-category-demo.png
