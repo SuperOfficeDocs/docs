@@ -30,7 +30,7 @@ MCP Connect gör SuperOffice CRM till en live datakälla för Claude, Microsoft 
 
 ## Krav
 
-* Din organisation måste ha **[CRM Suite Plus][7]** eller högre.
+* Din organisation måste ha **[CRM Suite Plus][7]** eller högre för att läsa CRM-data och **[CRM Suite Super][7]** för att uppdatera dem.
 * Ett SuperOffice-användarkonto. Första gången du ansluter en klient loggar du in och godkänner åtkomst via en vanlig inloggningsdialog. Ingen separat API-nyckel eller särskild utvecklarkonfiguration krävs.
 
 ## Ansluta en klient
@@ -61,7 +61,7 @@ MCP Connect tillhandahåller en uppsättning verktyg som den anslutna AI-kliente
 | `list_contact_activities`, `list_person_activities`, `list_user_activities` | Listar aktivitetshistorik för ett företag, en kontakt eller en användare. |
 | `list_custom_objects`, `search_custom_object_rows`, `describe_custom_object`, `get_custom_object_row` | Hittar och läser rader i [extratabeller (egendefinierade objekt)][8]. |
 | `get_associate`, `search_external_companies`, `whoami`, `server_info` | Slår upp en användares identitet, söker i externa företagsregister och hämtar server- och sessionsinformation. |
-| `update_company`, `update_person`, `update_appointment`, `update_sale`, `update_project`, `update_ticket` | Uppdaterar fält på en befintlig post. |
+| `update_company`, `update_person`, `update_appointment`, `update_sale`, `update_project`, `update_ticket` | Uppdaterar fält på en befintlig post. Kräver CRM Suite Super. |
 
 [1]: https://mcp.superoffice.com/
 [2]: https://mcp.superoffice.com/static/how-to-connect/claude-desktop.html

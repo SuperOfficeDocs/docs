@@ -30,7 +30,7 @@ MCP Connect maakt van SuperOffice CRM een live gegevensbron voor Claude, Microso
 
 ## Vereisten
 
-* Uw organisatie moet **[CRM Suite Plus][7]** of hoger hebben.
+* Uw organisatie moet **[CRM Suite Plus][7]** of hoger hebben om CRM-gegevens te lezen en **[CRM Suite Super][7]** om ze bij te werken.
 * Een SuperOffice-gebruikersaccount. De eerste keer dat u een client verbindt, meldt u zich aan en keurt u de toegang goed via een standaard aanmeldscherm. Een aparte API-sleutel of ontwikkelaarsinstellingen zijn niet nodig.
 
 ## Een client verbinden
@@ -61,7 +61,7 @@ MCP Connect biedt een set tools die de verbonden AI-client kan aanroepen om Supe
 | `list_contact_activities`, `list_person_activities`, `list_user_activities` | Toont de activiteitengeschiedenis voor een bedrijf, contactpersoon of gebruiker. |
 | `list_custom_objects`, `search_custom_object_rows`, `describe_custom_object`, `get_custom_object_row` | Vindt en leest rijen in [extra tabellen][8] (aangepaste objecten). |
 | `get_associate`, `search_external_companies`, `whoami`, `server_info` | Bepaalt de identiteit van een gebruiker, doorzoekt externe handelsregisters en haalt server- en sessie-informatie op. |
-| `update_company`, `update_person`, `update_appointment`, `update_sale`, `update_project`, `update_ticket` | Werkt velden bij op een bestaand record. |
+| `update_company`, `update_person`, `update_appointment`, `update_sale`, `update_project`, `update_ticket` | Werkt velden bij op een bestaand record. Vereist CRM Suite Super. |
 
 [1]: https://mcp.superoffice.com/
 [2]: https://mcp.superoffice.com/static/how-to-connect/claude-desktop.html
