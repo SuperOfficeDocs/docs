@@ -5,7 +5,7 @@ sidebarTitle: Troubleshooting
 description: Solutions to common issues in SuperOffice for Outlook.
 keywords: ['SuperOffice for Outlook', 'Outlook', 'troubleshooting', 'add-in missing', 'permissions', 'consent', 'category missing', 'archive status not showing', 'shared mailbox category', 'SOFO']
 author: schildea
-date: 09.29.2026
+date: 09.30.2026
 version_sofo: 2026.6.4
 content_type: reference
 category: integration
@@ -30,7 +30,7 @@ userflow_index: true
 
 Some features require approval from your IT administrator in the [Microsoft Admin portal][1]. Once approved, it can take up to 72 hours before the add-in or feature becomes available in Outlook, and some users may see it earlier than others. If you still don't see it after 72 hours, contact your IT administrator. See [Centralized deployment][2].
 
-### A new feature is missing after an update
+### A new feature is missing after an update {#missing-feature}
 
 Some new features require an updated add-in manifest, for example features that react when you send an email or that need additional Microsoft permissions. If your organization deployed SuperOffice for Outlook centrally, the update isn't applied until your IT administrator accepts the updated manifest in the [Microsoft Admin portal][1]. Users who installed the add-in themselves from AppSource receive the update automatically.
 
@@ -49,11 +49,11 @@ The reminder isn't shown if any of the following apply:
 * The email or meeting already contains the required SuperOffice information.
 * **Remind me before sending emails** or **Remind me before sending meetings** is turned off in Settings.
 * Your Outlook client doesn't meet the minimum requirement (Mailbox requirement set 1.12). In that case the email or meeting is sent as usual.
-* Your organization deployed SuperOffice for Outlook centrally before version 6.4 and hasn't yet accepted the updated manifest. See [A new feature is missing after an update](#a-new-feature-is-missing-after-an-update).
+* Your organization deployed SuperOffice for Outlook centrally before version 6.4 and hasn't yet accepted the updated manifest. See [A new feature is missing after an update](#missing-feature).
 
 See [Archive reminder][4] and [Settings - Archive reminder][5].
 
-## Email archive status
+## Email archive status {#archive-status}
 
 Issues with the **Archived in SuperOffice** category. See [Email archive status in your mailbox][6] for how the feature works.
 
@@ -85,9 +85,13 @@ Ask the mailbox owner or administrator to confirm you have permission to manage 
 
 In new Outlook for Windows, adding a shared mailbox as an account isn't yet available in every version. If you don't see the option, use Outlook on the web or classic Outlook instead.
 
-### The shared mailbox category was renamed or deleted
+### The archive category was renamed or deleted
 
-A renamed or deleted category is no longer used, so the archive status stops appearing on new emails in that shared mailbox. Emails that were already tagged keep the old label. Archiving itself continues to work. Recreate the category with the exact name **Archived in SuperOffice**.
+Deleting the **Archived in SuperOffice** category from a mailbox's category list removes it from every email in that mailbox. This applies to your personal mailbox and to shared mailboxes. In a shared mailbox, it affects everyone with access.
+
+A renamed category is no longer used either. In both cases, archive status stops appearing on emails in that mailbox, but archiving itself continues to work.
+
+To use archive status again, recreate the category with the exact name **Archived in SuperOffice**. Emails get the category again as they're opened and archived.
 
 [1]: https://admin.microsoft.com/Adminportal/Home#/homepage
 [2]: ./deploy
@@ -95,4 +99,4 @@ A renamed or deleted category is no longer used, so the archive status stops app
 [4]: ./archive-reminder
 [5]: ./settings#archive-reminder
 [6]: ./email-archive-status
-[7]: ./email-archive-status#using-archive-status-in-a-shared-mailbox
+[7]: ./email-archive-status#shared-mailbox
