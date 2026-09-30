@@ -495,8 +495,8 @@
         "root": "sv/lead/learn/index",
         "pages": [
           "sv/lead/learn/work-with-leads",
-          "sv/lead/learn/work-with-lead-agent",
           "sv/lead/learn/set-up-lead-agent",
+          "sv/lead/learn/work-with-lead-agent",
           {
             "group": "För administratörer",
             "root": "sv/lead/admin/index",

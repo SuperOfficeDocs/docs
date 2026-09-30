@@ -507,8 +507,8 @@
     "root": "en/lead/learn/index",
     "pages": [
       "en/lead/learn/work-with-leads",
-      "en/lead/learn/work-with-lead-agent",
       "en/lead/learn/set-up-lead-agent",
+      "en/lead/learn/work-with-lead-agent",
       {
         "group": "For administrators",
         "root": "en/lead/admin/index",

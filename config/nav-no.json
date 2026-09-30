@@ -495,8 +495,8 @@
         "root": "no/lead/learn/index",
         "pages": [
           "no/lead/learn/work-with-leads",
-          "no/lead/learn/work-with-lead-agent",
           "no/lead/learn/set-up-lead-agent",
+          "no/lead/learn/work-with-lead-agent",
           {
             "group": "For administratorer",
             "root": "no/lead/admin/index",
