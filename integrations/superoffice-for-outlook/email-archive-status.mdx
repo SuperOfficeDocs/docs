@@ -1,0 +1,142 @@
+---
+uid: sofo-email-archive-status
+title: Email archive status in your mailbox
+sidebarTitle: Email archive status in mailbox
+description: See which emails are already archived to SuperOffice directly in your Outlook message list, using the Archived in SuperOffice category.
+keywords: ['SuperOffice for Outlook', 'Outlook', 'archive status', 'category', 'Archived in SuperOffice', 'already archived', 'shared mailbox', 'conversation view', 'SOFO']
+author: schildea
+date: 09.30.2026
+version_sofo: 2026.6.4
+content_type: howto
+category: integration
+topic: SuperOffice for Outlook
+deployment: online
+platform: web
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - /integrations/superoffice-for-outlook/settings
+  - /integrations/superoffice-for-outlook/archive-email
+  - /integrations/superoffice-for-outlook/send-and-archive
+  - /integrations/superoffice-for-outlook/shared-mailboxes
+  - /integrations/superoffice-for-outlook/troubleshooting
+  - /release-notes/integrations/sofo
+language: en
+userflow_index: true
+---
+
+Email archive status marks emails in your Outlook mailbox that have already been archived to SuperOffice, so you can recognize them at a glance in your message list.
+
+When turned on, SuperOffice for Outlook adds an **Archived in SuperOffice** category to archived emails as you work with them, whether you or a colleague archived them. The category color appears next to the email in your message list.
+
+![Outlook message list showing the Archived in SuperOffice category on archived emails -screenshot][img1]
+
+<Note>
+The **Archived in SuperOffice** category only shows that an email has been archived to SuperOffice. It has nothing to do with Outlook's own Archive folder or Archive button.
+</Note>
+
+## How it works
+
+The **Archived in SuperOffice** category shows the same status as the **Already done** indicator in the SuperOffice for Outlook panel. It brings that information into your message list, where it matters most when you're working through a large number of emails. Instead of opening each email to check, you can see at a glance which ones are archived and which still need attention.
+
+It makes no difference who archived the email. If a colleague archived an email you're looking at, it carries the category too.
+
+This is especially useful when:
+
+* You handle a high volume of email and want to avoid archiving the same message twice.
+* You work in a shared mailbox with others and need to know at a glance what still needs archiving.
+
+### When the category is added
+
+The category is added gradually as you use SuperOffice for Outlook, not all at once:
+
+* When you open an email that is already archived, the category is added at the same moment the panel shows **Already done**.
+* When you archive an email you're viewing, the category appears in your message list as soon as archiving completes.
+* When you send an email with **Send & Archive**, the category is added to the sent email the next time you view an email with SuperOffice for Outlook open. It doesn't appear at the moment you send.
+
+The archive status builds up over time as you work through your emails, so the longer you use it, the more complete the picture in your mailbox becomes.
+
+## Before you start
+
+* SuperOffice for Outlook is installed and available in Outlook.
+* You have access to the mailbox where you want to see archive status.
+* For shared mailboxes, the **Archived in SuperOffice** category has been created in that mailbox. See [Using archive status in a shared mailbox](#shared-mailbox).
+
+## Turn on and configure archive status
+
+1. Open SuperOffice for Outlook and click the **gear icon** to open Settings.
+
+1. Go to **E-mail archive status**.
+
+1. Turn on **Show archive category in Outlook**.
+
+1. Under **Apply archive category**, choose when the category should be added:
+
+    * **When opening archived e-mails**: adds the category when you open an email that's already archived.
+    * **When using Send & Archive**: adds the category to emails you archive as you send them.
+    * **In shared mailboxes**: also adds the category to emails you open or archive in shared mailboxes you have access to.
+
+1. Choose a **Category color**.
+
+![E-mail archive status section in SuperOffice for Outlook settings -screenshot][img2]
+
+For your personal mailbox, SuperOffice for Outlook creates the category for you. Its name is fixed; you only choose the color. Turning the setting off stops new categories from being added, but any categories already on your emails stay until you remove them yourself.
+
+See [Settings - E-mail archive status][1] for a full description of each option.
+
+## Using archive status in a shared mailbox {#shared-mailbox}
+
+To use archive status in a shared mailbox, a category named exactly **Archived in SuperOffice** needs to be created in that mailbox first. This is done once per shared mailbox by a user with permission to manage categories there. Once the category exists, SuperOffice for Outlook starts adding it as people open and archive emails there.
+
+### Create the category in the shared mailbox
+
+Create a category named **Archived in SuperOffice** and choose a color. Both apply to everyone with access to the mailbox, and any later change to either is seen by everyone.
+
+<Warning>
+The category name must be exactly **Archived in SuperOffice**. SuperOffice for Outlook looks for this name to apply the archive status. If the name doesn't match, archiving still works as usual, but the category won't be added to emails in the shared mailbox.
+</Warning>
+
+Where you create the category depends on your Outlook version:
+
+| Your Outlook version | How to reach the shared mailbox's categories |
+|---|---|
+| Classic Outlook for Windows | Select any email in the shared mailbox, then go to **Home** > **Categorize** > **All Categories**. |
+| New Outlook for Windows | First add the shared mailbox as an account: **Settings** > **Accounts** > **Shared with me**, then **Convert** (or **+ Add**). Then go to **Settings** > **Accounts** > **Categories** and select the shared mailbox. |
+| Outlook on the web | Open the shared mailbox in its own browser window: select your profile picture, then **Open another mailbox**. In that window, open **Settings** and go to **Categories**. |
+| Outlook for Mac | Microsoft reports a [known issue with categories in shared mailboxes in Outlook for Mac][3]. Use Outlook on the web or Outlook for Windows to create the category. |
+
+Once you're in the shared mailbox's category list, create the category and choose a color.
+
+<Note>
+Make sure you're managing the shared mailbox's categories, not your own. A category created in your personal mailbox isn't visible to the other users of the shared mailbox.
+</Note>
+
+### Each user: choose whether your activity adds the category
+
+The **In shared mailboxes** setting is on by default, so the emails you open or archive in a shared mailbox get the category without any further setup. If you prefer that your own activity doesn't add the category, open SuperOffice for Outlook settings from any mailbox: click the **gear icon**, go to **E-mail archive status**, and turn off **In shared mailboxes**.
+
+This setting controls only what your own actions add. The category is stored on the email itself in the shared mailbox, so categories already on emails, including those added by colleagues, stay visible to everyone who opens that mailbox, whether your setting is on or off.
+
+### Remove archive status from a shared mailbox
+
+To remove it for everyone with access to the shared mailbox, delete the **Archived in SuperOffice** category from that mailbox. You need permission to manage categories to do this. Since it affects everyone, coordinate with the other mailbox users first.
+
+## Emails in conversation threads
+
+Outlook can group related emails into conversation threads. When a thread is collapsed, Outlook shows a single row for the whole conversation and may display the category from one email on that row. This means a thread can look archived even if only some of the emails in it are.
+
+The category on each individual email is accurate. To see which specific emails in a thread are archived, expand the conversation.
+
+How Outlook displays categories on collapsed threads varies slightly between Outlook versions, but the category on the individual email is the same everywhere.
+
+## Something not working?
+
+See [Troubleshooting SuperOffice for Outlook][2] for solutions to common issues with email archive status.
+
+[1]: ./settings#archive-status
+[2]: ./troubleshooting#archive-status
+[3]: https://support.microsoft.com/en-us/office/unable-to-assign-categories-to-items-in-shared-and-delegated-mailboxes-in-outlook-for-mac-5898ad9c-8705-4e0a-b376-aeb5e75fa278
+
+[img1]: /media/loc/en/integrations/superoffice-for-outlook/outlook-email-archive-status-message-list.png
+
+[img2]: /media/loc/en/integrations/superoffice-for-outlook/outlook-settings-email-archive-status.png
