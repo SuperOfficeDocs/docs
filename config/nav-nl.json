@@ -100,8 +100,8 @@
           "nl/ai/learn/lead-agent",
           "nl/ai/learn/data-quality-agent",
           "nl/ai/learn/duplicate-agent",
-          "nl/ai/learn/mcp",
           "nl/ai/learn/set-up-ai-agents",
+          "nl/ai/learn/mcp",
           {
             "group": "Voor beheerders",
             "root": "nl/ai/admin/index",

@@ -101,8 +101,8 @@
           "sv/ai/learn/lead-agent",
           "sv/ai/learn/data-quality-agent",
           "sv/ai/learn/duplicate-agent",
-          "sv/ai/learn/mcp",
           "sv/ai/learn/set-up-ai-agents",
+          "sv/ai/learn/mcp",
           {
             "group": "För administratörer",
             "root": "sv/ai/admin/index",

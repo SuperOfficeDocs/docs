@@ -100,8 +100,8 @@
           "no/ai/learn/lead-agent",
           "no/ai/learn/data-quality-agent",
           "no/ai/learn/duplicate-agent",
-          "no/ai/learn/mcp",
           "no/ai/learn/set-up-ai-agents",
+          "no/ai/learn/mcp",
           {
             "group": "For administratorer",
             "root": "no/ai/admin/index",

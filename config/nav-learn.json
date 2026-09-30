@@ -94,8 +94,8 @@
       "en/ai/learn/lead-agent",
       "en/ai/learn/data-quality-agent",
       "en/ai/learn/duplicate-agent",
-      "en/ai/learn/mcp",
       "en/ai/learn/set-up-ai-agents",
+      "en/ai/learn/mcp",
       {
         "group": "For administrators",
         "root": "en/ai/admin/index",
