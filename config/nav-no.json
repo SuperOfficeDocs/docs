@@ -97,9 +97,9 @@
         "root": "no/ai/learn/index",
         "pages": [
           "no/ai/learn/workspace-assist",
-          "no/ai/learn/lead-agent",
           "no/ai/learn/data-quality-agent",
           "no/ai/learn/duplicate-agent",
+          "no/ai/learn/lead-agent",
           "no/ai/learn/set-up-ai-agents",
           "no/ai/learn/mcp",
           {
