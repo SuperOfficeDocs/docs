@@ -496,6 +496,7 @@
         "pages": [
           "de/lead/learn/work-with-leads",
           "de/lead/learn/work-with-lead-agent",
+          "de/lead/learn/set-up-lead-agent",
           {
             "group": "Für Admins",
             "root": "de/lead/admin/index",
