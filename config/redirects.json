@@ -1149,10 +1149,6 @@
     "destination": "/da/ai/learn/index"
   },
   {
-    "source": "/da/ai/learn/copilot.html",
-    "destination": "/da/ai/learn/workspace-assist"
-  },
-  {
     "source": "/da/ai/learn/text-analysis*",
     "destination": "/da/ai/learn/index"
   },
@@ -5519,10 +5515,6 @@
   {
     "source": "/de/ai/learn/categorization*",
     "destination": "/de/ai/learn/index"
-  },
-  {
-    "source": "/de/ai/learn/copilot.html",
-    "destination": "/de/ai/learn/workspace-assist"
   },
   {
     "source": "/de/ai/learn/text-analysis*",
@@ -10083,10 +10075,6 @@
   {
     "source": "/en/ai/learn/categorization*",
     "destination": "/en/ai/learn/index"
-  },
-  {
-    "source": "/en/ai/learn/copilot.html",
-    "destination": "/en/ai/learn/workspace-assist"
   },
   {
     "source": "/en/ai/learn/text-analysis*",
@@ -20309,10 +20297,6 @@
     "destination": "/nl/ai/learn/index"
   },
   {
-    "source": "/nl/ai/learn/copilot.html",
-    "destination": "/nl/ai/learn/workspace-assist"
-  },
-  {
     "source": "/nl/ai/learn/text-analysis*",
     "destination": "/nl/ai/learn/index"
   },
@@ -24667,10 +24651,6 @@
   {
     "source": "/no/ai/learn/categorization*",
     "destination": "/no/ai/learn/index"
-  },
-  {
-    "source": "/no/ai/learn/copilot.html",
-    "destination": "/no/ai/learn/workspace-assist"
   },
   {
     "source": "/no/ai/learn/text-analysis*",
@@ -29545,10 +29525,6 @@
     "destination": "/sv/ai/learn/index"
   },
   {
-    "source": "/sv/ai/learn/copilot.html",
-    "destination": "/sv/ai/learn/workspace-assist"
-  },
-  {
     "source": "/sv/ai/learn/text-analysis*",
     "destination": "/sv/ai/learn/index"
   },
@@ -32909,27 +32885,27 @@
     "destination": "/downloads/cloud-office/cloud-office-superoffice.zip"
   },
   {
-    "source": "/en/ai/learn/copilot",
+    "source": "/en/ai/learn/copilot*",
     "destination": "/en/ai/learn/workspace-assist"
   },
   {
-    "source": "/da/ai/learn/copilot",
+    "source": "/da/ai/learn/copilot*",
     "destination": "/da/ai/learn/workspace-assist"
   },
   {
-    "source": "/de/ai/learn/copilot",
+    "source": "/de/ai/learn/copilot*",
     "destination": "/de/ai/learn/workspace-assist"
   },
   {
-    "source": "/nl/ai/learn/copilot",
+    "source": "/nl/ai/learn/copilot*",
     "destination": "/nl/ai/learn/workspace-assist"
   },
   {
-    "source": "/no/ai/learn/copilot",
+    "source": "/no/ai/learn/copilot*",
     "destination": "/no/ai/learn/workspace-assist"
   },
   {
-    "source": "/sv/ai/learn/copilot",
+    "source": "/sv/ai/learn/copilot*",
     "destination": "/sv/ai/learn/workspace-assist"
   }
 ]
