@@ -84,7 +84,6 @@
           "sv/search-options/learn/in-dialogs",
           {
             "group": "För administratörer",
-            "root": "sv/ai/admin/index",
             "pages": [
               "sv/search-options/admin/configure-free-text-search",
               "sv/search-options/admin/stopwords"
@@ -190,7 +189,6 @@
           },
           {
             "group": "För administratörer",
-            "root": "sv/ai/admin/index",
             "pages": [
               "sv/diary/admin/add-follow-up-type",
               "sv/diary/admin/add-resource"
@@ -301,7 +299,6 @@
           },
           {
             "group": "För administratörer",
-            "root": "sv/ai/admin/index",
             "pages": [
               "sv/email/admin/add-email-template",
               {
@@ -358,7 +355,6 @@
           },
           {
             "group": "För administratörer",
-            "root": "sv/ai/admin/index",
             "root": "sv/sale/admin/index",
             "pages": [
               "sv/sale/admin/sale-stage",
@@ -485,7 +481,6 @@
               "sv/marketing/utm/learn/parameters",
               {
                 "group": "För administratörer",
-                "root": "sv/ai/admin/index",
                 "pages": [
                   "sv/marketing/utm/admin/set-up"
                 ]
@@ -504,7 +499,6 @@
           "sv/lead/learn/set-up-lead-agent",
           {
             "group": "För administratörer",
-            "root": "sv/ai/admin/index",
             "root": "sv/lead/admin/index",
             "pages": [
               "sv/lead/admin/add-company-category",
@@ -540,7 +534,6 @@
           "sv/project/learn/tutorial",
           {
             "group": "För administratörer",
-            "root": "sv/ai/admin/index",
             "root": "sv/project/admin/index",
             "pages": [
               "sv/project/admin/project-status",
@@ -577,7 +570,6 @@
           "sv/request/learn/delete",
           {
             "group": "För administratörer",
-            "root": "sv/ai/admin/index",
             "root": "sv/request/admin/index",
             "pages": [
               {
@@ -723,7 +715,6 @@
           "sv/chat/learn/as-customer",
           {
             "group": "För administratörer",
-            "root": "sv/ai/admin/index",
             "root": "sv/chat/admin/index",
             "pages": [
               "sv/chat/admin/channel-create",
@@ -760,7 +751,6 @@
         "pages": [
           {
             "group": "För administratörer",
-            "root": "sv/ai/admin/index",
             "root": "sv/saint/admin/index",
             "pages": [
               "sv/saint/admin/set-up",
@@ -780,7 +770,6 @@
           "sv/erp/learn/disconnect",
           {
             "group": "För administratörer",
-            "root": "sv/ai/admin/index",
             "root": "sv/erp/admin/index",
             "pages": [
               "sv/erp/admin/add-connection",
@@ -843,7 +832,6 @@
               "sv/customer-center/learn/publish-faq",
               {
                 "group": "För administratörer",
-                "root": "sv/ai/admin/index",
                 "pages": [
                   "sv/customer-center/admin/style-subscription-page",
                   "sv/customer-center/admin/password-policy"
@@ -982,7 +970,6 @@
           "sv/localization/learn/time-zones",
           {
             "group": "För administratörer",
-            "root": "sv/ai/admin/index",
             "pages": [
               "sv/localization/admin/enable-time-zones",
               "sv/localization/admin/select-time-zones",
