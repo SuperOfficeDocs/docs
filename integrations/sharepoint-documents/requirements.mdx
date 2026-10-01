@@ -4,7 +4,7 @@ title: Requirements
 description: Requirements for SharePoint Documents
 keywords: ['SharePoint', 'document', 'Microsoft Entra', 'ME-ID', 'AAD', 'IDP']
 author: digitaldiina, fbhub, schildea
-date: 09.03.2026
+date: 10.01.2026
 content_type: reference
 category: integration
 topic: SharePoint documents
@@ -23,13 +23,13 @@ import ReqDataRights from "./snippets/req-data-rights.md";
 
 ### VisibleFor - confidential documents: Too many confidential documents
 
-CRM Online tenants with over 25000 confidential documents cannot migrate automatically due to [SharePoint Online restrictions (ref. 'Unique security scopes per list or library')][3]. Please contact SuperOffice Support for assistance.
+CRM Online tenants with over 25000 confidential documents can't migrate automatically due to [SharePoint Online restrictions (ref. 'Unique security scopes per list or library')][3]. Please contact SuperOffice Support for assistance.
 
 ## To set it up
 
 * SuperOffice Online tenant
   * Microsoft Entra (formerly AAD) authentication of SuperOffice Admin. For more info, see [IDP authentication][2].
-  * You will not be able to continue to set up the integration [until ALL users with user plan use IDP](#to-use-it).
+  * You can't continue to set up the integration [until ALL users with user plan use IDP](#to-use-it).
 
 * Microsoft 365 for business subscription
   * If you don't have a Microsoft 365 subscription, you have to sign up for one at Microsoft.
@@ -39,13 +39,38 @@ CRM Online tenants with over 25000 confidential documents cannot migrate automat
 
 * Permissions to your SharePoint document libraries using Microsoft Entra domain groups.
   * The Group type must be Microsoft 365 and not Security.
-  * This is mandatory if you plan to use *Visible for* in SuperOffice Online and recommended either way.
+  * Recommended for all setups, and required for [Visible for](#visible-for).
 
-* If you want to enable group access on SharePoint documents based on *Visible for* settings in SuperOffice.
-  * *Global Admin* rights in Microsoft 365 (to be able to authenticate SuperOffice document library as a trusted app in your Microsoft 365 solution)
-    * Either during setup
-    * Or, send a link to someone who is
-  * The SharePoint site must allow members, or users with Edit permissions, to share files and folders. See [SharePoint sharing settings required for Visible for][4] for the required configuration.
+<Note>
+The site list in the wizard comes from SharePoint search. A new or private site shows up only after SharePoint has indexed it and you have Owner access to it.
+</Note>
+
+### Admin rights {#admin-rights}
+
+| Task | Required role |
+|---|---|
+| Run the configuration wizard | SuperOffice administrator signed in with Microsoft, and **Owner** of the SharePoint sites you select |
+| [Enable the system user][1] (authorize the SuperOffice Document Library app), one time | Microsoft 365 **Global Administrator** who is also **Owner** of the selected site. SharePoint Administrator isn't sufficient. If you aren't a Global Administrator, copy the authorization link and send it to one. |
+
+If your tenant doesn't allow users to approve apps themselves, a Global Administrator must approve the app before other users can finish the setup.
+
+### When you need the system user {#system-user}
+
+The system user lets SuperOffice work with documents in the selected site without a signed-in user. Access is limited to that one site (`Sites.Selected`). See [Permissions for SuperOffice Document Library integration (app)][5].
+
+The system user is **required** if you:
+
+* Use *Visible for*.
+* Migrate existing documents to SharePoint.
+* Use apps or integrations that create or update documents in SuperOffice.
+
+We recommend you enable it even if you don't use *Visible for* now. You can then start using these features later without needing a Global Administrator again.
+
+### Additional requirements for Visible for {#visible-for}
+
+* Microsoft 365 groups (not Security) that correspond to your SuperOffice user groups.
+* The system user must be enabled. See [When you need the system user](#system-user).
+* The SharePoint site must allow members, or users with Edit permissions, to share files and folders. Don't select **Only site owners can share files, folders, and the site**. With that setting, documents are saved, but the restriction is silently not applied. See [SharePoint sharing settings required for Visible for][4].
 
 ## To use it
 
@@ -55,6 +80,8 @@ CRM Online tenants with over 25000 confidential documents cannot migrate automat
 
 * <ReqDataRights />
 
+[1]: ./configure-superoffice#apps
 [2]: /en/online/identity/federated-id-and-identity-providers
 [3]: https://learn.microsoft.com/en-us/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#unique-security-scopes-per-list-or-library
 [4]: /integrations/sharepoint-documents/permissions-in-sharepoint#visible-for
+[5]: ./permissions-app
