@@ -5,7 +5,7 @@ sidebarTitle: "Release overview"
 description: Release notes. What's new in SuperOffice Integrations
 keywords: ['integration', 'app', 'App Store', 'product release']
 author: kirstiaa
-date: 09.17.2026
+date: 10.13.2026
 content_type: release-note
 audience: person
 audience_tooltip: SuperOffice CRM
@@ -15,6 +15,8 @@ language: en
 
 ## Product integrations updates
 
+* [SuperOffice for Outlook][3] - 6.4.8 (01.10.2026)
+  * Email archive status
 * [SuperOffice for Outlook][3] - 6.4.4 (20.08.2026)
   * Stay informed with in-app announcements
 * [SuperOffice for Outlook][3] - 6.4.2 (19.08.2026)
