@@ -1,0 +1,195 @@
+---
+title: Duplicate Agent
+description: Find and merge duplicate companies and contacts, and reconnect orphaned contacts that have lost their company, with every change approved by you.
+keywords: ['data quality', 'AI agent', 'merge companies', 'duplicate companies', 'duplicate contacts', 'duplicate persons', 'orphaned contact']
+author: digitaldiina, Claudia Dias
+date: 10.01.2026
+so_version: 12.4
+content_type: concept
+tier: growth
+category: automation
+topic: ai
+platform: web
+deployment: online
+pilot: yes
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - Activate agent: /en/ai/learn/set-up-ai-agents
+  - Edit settings: /en/ai/learn/set-up-ai-agents#edit
+  - /en/ai/learn/data-quality-agent
+  - Other AI services: /en/ai/learn/index
+language: en
+---
+
+import DuplicateAgentPilotNote from "../../../snippets/ai/duplicate-agent-pilot-note.mdx";
+
+<DuplicateAgentPilotNote />
+
+The Duplicate Agent tidies up your SuperOffice CRM from the inside. Each day it checks a batch of your company records for likely duplicates, looks for two contact records that seem to be the same person, and finds orphaned contacts that have no company but whose email points to one. It proposes a merge or a link for each, and does nothing until you approve.
+
+## What the agent does for you
+
+* **Finds duplicate companies:** compares your companies by name and other details, such as organization number, domain, and phone, to find likely duplicates.
+
+* **Finds duplicate contacts:** looks for two contact records within the same company that seem to be the same person.
+
+* **Rates each match:** scores every candidate from 1-5 and only suggests the strongest matches.
+
+* **Proposes a safe merge:** for companies, always suggests keeping the oldest record.
+
+* **Reconnects orphaned contacts:** finds contacts with no company whose email points to one, and proposes linking them.
+
+<Note>
+The agent proposes. You decide. No records are merged or linked until you approve. There is no automatic mode. It works only inside your SuperOffice CRM. There is no web search or external enrichment. The daily scan mainly checks records you own, but a suggestion can still involve a record owned by someone else in your tenant: only one side of a match needs to be yours for it to be raised to you.
+</Note>
+
+## Schedule
+
+The agent runs **Daily**, once a day at a system-assigned time.
+
+There is no daily limit on how many companies it checks. The agent keeps up to 50 suggestions of each type (company merges, contact merges, and orphaned contacts) waiting for your decision. Once you approve or reject enough to free up room, its next scheduled scan tops that type back up toward 50 if there is more to find.
+
+## Activate the agent {#setup}
+
+Setup is a single step. You are automatically the approver, and you can create one instance.
+
+1. Select <i class="ph ph-robot" aria-label="Agents icon"></i> **Agents** in the Navigator.
+
+    The first time you access the **Agents** page, you need to log in and approve AI agents in SuperOffice.
+
+1. Locate the **Duplicate Agent** card in the **Agent overview** and select **Activate**. This opens the set-up wizard.
+
+    ![The Agent overview, with Data Quality Agent, Lead Agent, and Duplicate Agent cards -screenshot][img9]
+
+    <Tip>
+    Do not see the card? Select **Browse agents** to find it.
+    </Tip>
+
+## General settings {#settings}
+
+1. Enter a unique **Name** for the agent instance. **This cannot be changed after activation.**
+
+    ![The Duplicate Agent's General settings, with Name, Description, Reporting language, and Schedule -screenshot][img1]
+
+1. Optionally, edit the suggested **Description** if you want something different.
+
+1. Choose **Reporting language**. This affects both reports and chat replies.
+
+1. Select **Save**.
+
+    The instance is activated, appears under **My agents** in the Agents sidebar, and begins working on its next daily run.
+
+1. Select **Go to instance** to open your new Duplicate Agent and [get started][3].
+
+Before reviewing, select the **Chat** tab, then select <i class="ph ph-sliders-horizontal" aria-label="Filter icon"></i> and select **Pending** to narrow a busy queue to suggestions awaiting your decision.
+
+## Merge suggestion: duplicate companies {#merge-companies}
+
+1. Choose a company-merge suggestion (<i class="ph ph-buildings" aria-label="Company icon"></i>) from the list.
+
+1. Review the side-by-side remove/keep **company comparison** and what happens if you approve the merge.
+
+    The agent always suggests keeping the oldest company.
+
+    ![A company merge suggestion, with the company to keep and Approve / Reject -screenshot][img2]
+
+1. Optionally, ask the agent (in chat) to tidy up the company you are keeping, before you approve.
+
+1. Select **Approve**.
+
+    <Danger>
+    **A merge cannot be undone.** Combining two companies permanently removes the extra record.
+    </Danger>
+
+1. Select **Approve** in the confirmation dialog.
+
+    ![The merge confirmation dialog, spelling out exactly what will happen -screenshot][img6]
+
+    * The kept (oldest) company retains its details and its owner, who becomes the owner of the merged result.
+    * Any blank fields are filled in from the other record.
+    * A note is added to the kept company recording the change.
+    * The owner of the removed company is notified of the merge and the ownership change, even when both records already had the same owner.
+
+## Merge suggestion: duplicate contacts {#merge-contacts}
+
+1. Choose a duplicate-contact suggestion (<i class="ph ph-user-circle" aria-label="Contact icon"></i>) from the list.
+
+1. Review the **possible duplicate people**: the company the contacts belong to, a **Match confidence** rating (1-5 stars), why they look like the same person, and what the agent matched on, for example an identical full name.
+
+    A data-loss warning appears if the contact you are keeping already has an email or phone number that the other record's differing value would otherwise overwrite: check both before approving.
+
+    ![A duplicate-contact merge suggestion -screenshot][img3]
+
+1. Select **Combine and retire**.
+
+    <Danger>
+    **This cannot be undone.** Combining two contacts permanently retires the extra record.
+    </Danger>
+
+1. Select **Approve** in the confirmation dialog.
+
+    * The two contacts are combined into the one you are keeping.
+    * Existing details on the kept contact stay as they are. Any blank fields are filled in from the other record.
+    * The merged-away contact is marked as a former employee rather than removed.
+
+## Orphaned contacts (no company) {#orphans}
+
+The agent looks for **orphaned contacts**, people with no company whose email address uses a company's domain, and matches each to the company that owns that domain. When the domain does not clearly point to one company, it also looks for a company whose name is a close match and offers that instead.
+
+1. Choose an orphaned-contact suggestion (<i class="ph ph-user-circle" aria-label="Contact icon"></i>) from the list.
+
+1. Review the **Contact** and **Suggested company** sections, and why the agent is suggesting the link.
+
+    If a contact could belong to more than one company, you get a single suggestion asking you to pick which one. A contact with no company-domain email is not surfaced.
+
+    ![An orphaned-contact suggestion, with the Link contact and Ignore actions -screenshot][img4]
+
+1. Select **Link contact**.
+
+    The contact is connected to that company. Nothing else about the contact or the company is changed. Unlike a merge, this can be reversed later by unlinking the contact.
+
+## Look into a specific company or contact
+
+1. Select the **Chat** tab.
+
+1. In the **General** chat, ask the agent to check a specific company for duplicates or look up a contact.
+
+1. If it finds a genuine duplicate or orphaned contact this way, it raises a normal approval task for it, exactly like one found on the daily scheduled run. Review it as described above.
+
+## The agent workspace {#workspace}
+
+The Duplicate Agent's workspace has three tabs: **Chat**, **History**, and **Performance**.
+
+| Tab | Description |
+|---|---|
+| Chat | A **General chat** thread plus one thread per suggestion the agent has raised. |
+| History | A detailed log of companies checked, suggestions raised, merges and links approved, and any items skipped, with the reason. Select a **Period** (last 24 hours, 7, 30, or 90 days) to narrow it down. Long histories are paged. |
+| Performance | Shows how the agent performed over a period (last 7, 30, or 90 days): company duplicates suggested, orphan contacts suggested, person duplicates suggested, merges approved, duplicates rejected, duplicates expired, and runs completed. |
+
+![The History tab, with the Period filter and refresh button. An entry expanded, showing its workflow ID and run ID -screenshot][img5]
+
+Select <i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i> to pull in the latest entries. Select an entry to expand it and see its full workflow and run details.
+
+## Tips and troubleshooting
+
+**What happens if I reject or ignore?** Nothing changes. Both records are kept as they are.
+
+**Can I decide on several suggestions at once?** Yes. Select multiple pending suggestions and use **Approve** or **Reject** from the bulk panel, the same way as any other agent.
+
+**What happens to a suggestion I do not get to in time?** A suggestion awaiting your decision has a limited lifetime, **30 days by default**. Once it is within 5 days of expiring, a countdown banner appears on its thread. If you do not act in time, it is discarded, and the agent moves on. Nothing is changed for an expired suggestion, and the same pair may be surfaced again on a later check.
+
+**I deactivated the instance and my pending suggestions are gone.** Deactivating an instance discards any suggestions awaiting approval, as described in [Set up AI agents][1]. Approve or reject what you need first if you want to keep them.
+
+Only the instance's owner can change its settings or delete it.
+
+[1]: /en/ai/learn/set-up-ai-agents
+[3]: #workspace
+
+[img1]: /media/loc/en/ai/duplicate-agent-settings.png
+[img2]: /media/loc/en/ai/duplicate-company-comparison.png
+[img3]: /media/loc/en/ai/dup-contact-merge.png
+[img4]: /media/loc/en/ai/dup-orphaned-contact.png
+[img9]: /media/loc/en/ai/agent-overview.png
+[img5]: /media/loc/en/ai/duplicate-history-expanded.png
+[img6]: /media/loc/en/ai/approve-merge-companies.png

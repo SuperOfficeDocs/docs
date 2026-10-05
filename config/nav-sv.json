@@ -96,11 +96,15 @@
         "icon": "wand-magic-sparkles",
         "root": "sv/ai/learn/index",
         "pages": [
-          "sv/ai/learn/text-analysis",
-          "sv/ai/learn/categorization",
           "sv/ai/learn/workspace-assist",
+          "sv/ai/learn/data-quality-agent",
+          "sv/ai/learn/duplicate-agent",
+          "sv/ai/learn/lead-agent",
+          "sv/ai/learn/set-up-ai-agents",
+          "sv/ai/learn/mcp",
           {
             "group": "För administratörer",
+            "root": "sv/ai/admin/index",
             "pages": [
               "sv/ai/admin/set-up-categorization"
             ]
@@ -491,6 +495,8 @@
         "root": "sv/lead/learn/index",
         "pages": [
           "sv/lead/learn/work-with-leads",
+          "sv/lead/learn/set-up-lead-agent",
+          "sv/lead/learn/work-with-lead-agent",
           {
             "group": "För administratörer",
             "root": "sv/lead/admin/index",

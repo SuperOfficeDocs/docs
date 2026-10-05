@@ -1,0 +1,138 @@
+---
+title: Opsæt AI-agenter
+description: Sådan åbner du Agenter-området, aktiverer en agent og opretter og administrerer en instans. Der kræves ikke administratoradgang. Agentinstanser er personlige, pr. bruger.
+keywords: ['agentinstans', 'aktivér agent', 'tilføj instans', 'Lead Agent']
+author: digitaldiina, Claudia Dias
+date: 10.01.2026
+so_version: 12.4
+content_type: howto
+tier: plus
+category: automation
+topic: ai
+platform: web
+deployment: online
+pilot: yes
+audience: person
+audience_tooltip: SuperOffice CRM
+related:
+  - /da/lead/learn/set-up-lead-agent
+  - Opsæt Data Quality Agent: /da/ai/learn/data-quality-agent
+  - Opsæt Duplicate Agent: /da/ai/learn/duplicate-agent
+  - Andre AI-tjenester: /da/ai/learn/index
+language: da
+---
+
+<Note>
+SuperOffices AI-agenter kommer snart. Denne side beskriver opsætningstrin for en funktion, der endnu ikke er generelt tilgængelig.
+</Note>
+
+SuperOffices AI-agenter arbejder i baggrunden og foreslår resultater, som en person skal godkende. Alle agenter findes i det samme **Agenter**-område og aktiveres og administreres på samme måde. Denne side beskriver de fælles trin. Derudover har hver agent sin egen opsætningsside, for eksempel [Opsæt Lead Agent][2].
+
+## Agentinstanser
+
+En konfigureret, kørende kopi af en agent kaldes en **instans**. Nogle agenter tillader mere end én: Lead Agent tillader op til 3. Andre, såsom Data Quality Agent og Duplicate Agent, tillader kun 1 instans pr. bruger. Grænsen tæller også inaktive instanser: at deaktivere en frigør ikke en plads, kun sletning gør.
+
+## Krav
+
+* Din organisation skal være på **CRM Suite Plus** eller derover.
+* En administrator skal [aktivere AI-funktioner][1] i de globale CRM-præferencer, før ikonet **Agenter** vises.
+
+<Note>
+Agentinstanser er selv personlige, pr. bruger. Du behøver ikke administratoradgang eller **Indstillinger og vedligeholdelse** for at oprette eller administrere en.
+</Note>
+
+Kun instansens ejer (den, der oprettede den) kan redigere dens indstillinger, aktivere eller deaktivere den, eller slette den.
+
+## Aktivér agent
+
+![De første agentkort på siden Agenter -screenshot][img2]
+
+1. Vælg <i class="ph ph-robot" aria-label="Agenter ikon"></i> **Agenter** i Navigator.
+1. Klik på **Gennemse agenter** øverst til højre i **Agenter-overblikket**.
+1. Brug søgefeltet eller kategorifiltrene til at finde den agent, du ønsker.
+
+    ![Panelet Gennemse agenter med hver agent i dit abonnement -screenshot][img3]
+
+1. Klik på **Aktivér** for at åbne den agents opsætningsguide og oprette din første **instans**.
+
+<Note>
+**Gennemse agenter** viser kun agenter, der er inkluderet i din CRM Suite-plan. Hvis en agent, du forventer, ikke er på listen, skal du kontakte din SuperOffice-administrator eller -partner.
+</Note>
+
+Når en agent har en instans, viser dens kort et **N aktive**-link i stedet for **Aktivér**. Vælg det for at se agentens aktive og inaktive instanser, og åbne en af dem.
+
+![Pop-op-vinduet for instanser på et agentkort -screenshot][img4]
+
+## Tilføj instans
+
+Agenter, der tillader mere end én instans, viser en **+ Ny instans**-knap.
+
+![Gennemse agenter beholder en + Ny instans-mulighed for agenter, der tillader mere end én -screenshot][img5]
+
+1. Klik på **+ Ny instans** på agentkortet eller i listen **Gennemse agenter**.
+1. Gennemfør den agentspecifikke opsætningsguide.
+
+## Vis instansdetaljer
+
+Vælg **Om** fra menuen med tre prikker for et skrivebeskyttet resumé, inklusive visningsnavn, agenttype, ejer, aktiveringsdato, tidsplan og godkendere.
+
+![Menuen med tre prikker med mulighederne Om og Slet -screenshot][img7]
+
+![Resuméet Om denne agent -screenshot][img10]
+
+## Rediger indstillinger {#edit}
+
+1. Klik på <i class="ph ph-pencil-simple" aria-label="Rediger"></i> redigeringsknappen (blyanten) i instansens overskrift.
+1. Foretag dine ændringer i opsætningsguiden.
+1. Klik på **Gem ændringer**. Ændringer træder i kraft fra næste kørsel.
+
+## Slå notifikationer fra
+
+Hver bruger med adgang til instansen har sin egen **Notifikation**-klokke. At slå den fra påvirker kun den pågældende person. Instansen fortsætter med at køre for alle andre.
+
+1. Klik på <i class="ph ph-bell" aria-label="Notifikationsikon"></i> klokkeikonet.
+1. Klik på **Slå notifikationer fra**.
+
+![Bekræftelsesdialogen for at slå notifikationer fra -screenshot][img6]
+
+Klik på <i class="ph ph-bell-slash" aria-label="Klokke med gennemstregning"></i> for at slå notifikationer til igen.
+
+## Deaktiver en instans
+
+1. Klik på Opgave-menuen (<i class="ph ph-dots-three-vertical" aria-label="tre-prikker-ikon"></i>).
+1. Vælg til/fra-knappen **Aktiv**.
+1. Klik på **Deaktivér**.
+
+<Warning>
+At deaktivere en instans kasserer alle opgaver, der afventer gennemgang. Dette kan ikke fortrydes. Hvis du deaktiverer en Lead Agent-instans, skal du først godkende eller afvise leads, hvis du vil beholde dem.
+</Warning>
+
+![Deaktivering fra opgavemenuen, med advarslen om afventende godkendelser -screenshot][img8]
+
+![Inaktiv agent -screenshot][img1]
+
+## Slet en instans
+
+<Danger>
+Sletning af en instans er permanent og fjerner al dens data.
+</Danger>
+
+1. Deaktivér først instansen.
+1. Klik på <i class="ph ph-dots-three-vertical" aria-label="Flere muligheder"></i> menuen med tre prikker, og vælg Slet.
+1. Klik på **Slet**.
+
+![Sletning af en instans fra menuen med tre prikker og bekræftelsen -screenshot][img9]
+
+[1]: ../admin/index
+[2]: /da/lead/learn/set-up-lead-agent
+
+[img1]: /media/loc/en/ai/inactive-agent.png
+[img2]: /media/loc/en/ai/agents-overview-starter-cards.png
+[img3]: /media/loc/en/ai/browse-agents.png
+[img4]: /media/loc/en/ai/agent-overview-1-active.png
+[img5]: /media/loc/en/ai/new-instance-button.png
+[img6]: /media/loc/en/ai/mute-agent-notifications-warning.png
+[img7]: /media/loc/en/ai/agent-task-button.png
+[img8]: /media/loc/en/ai/deactivate-agent-new.png
+[img9]: /media/loc/en/ai/delete-instance.png
+[img10]: /media/loc/en/ai/about-this-agent.png

@@ -1,0 +1,129 @@
+---
+uid: help-da-crm-suite
+title: SuperOffice CRM Suite
+description: Oversigt over de 5 SuperOffice CRM Suite-planer, styring af pladser, plangrænser og prismodel.
+keywords: ['CRM Suite', 'plan', 'Starter', 'Core', 'Growth', 'Plus', 'Super', 'plangrænser', 'fencing', 'skalering', 'plads', 'abonnement', 'AI-credits']
+author: digitaldiina
+date: 10.01.2026
+so_version: 12.4
+content_type: concept
+tier: starter
+category: Indstillinger og vedligehold
+topic: licenses
+audience: settings
+audience_tooltip: Indstillinger og vedligehold
+userflow_index: true
+related:
+  - CRM og licenser: /da/admin/license/index
+  - Brugerplaner til SuperOffice CRM Online: /da/admin/license/user-plans
+  - Aktiver licens: /da/admin/license/activate
+  - AI-tjenester: /da/ai/learn/index
+language: da
+---
+
+import CrmSuiteIncludedApps from "../../../snippets/license/crm-suite-included-apps.md";
+import CrmSuiteFreeApps from "../../../snippets/license/crm-suite-free-apps.md";
+
+SuperOffice CRM Suite er en samlet, integreret CRM-platform, der dækker salg, marketing og service. Alle brugere i din organisation deler én plan, og planen bestemmer, hvilke funktioner der er tilgængelige i hele organisationen.
+
+## Planer {#plans}
+
+Fem planer er tilgængelige. Planerne er kumulative, så hver plan inkluderer alt fra planerne nedenfor.
+
+| Plan | Beskrivelse | Produktrundvisning |
+| --- | --- | --- |
+| **Starter** | Begynd at opbygge kunderelationer. Dækker administration af salgspipeline, sagshåndtering, marketingkampagner, person- og dokumentadministration og indbyggede databeskyttelsesværktøjer. | [Se en produktrundvisning af CRM Suite-planen Starter][3] |
+| **Core** | Øg produktiviteten og samarbejdet. Tilføjer mobil CRM, workflowautomatisering, indbygget AI-support, projektstyring, dashboardanalyse, kalendersynkronisering og CRM-tilpasning. | [Se en produktrundvisning af CRM Suite-planen Core][4] |
+| **Growth** | Accelerer omsætningen med mål og indsigt. Tilføjer sporing af salgsmål og KPI'er, datadrevne indsigter og CRM-ERP-integration. | [Se en produktrundvisning af CRM Suite-planen Growth][5] |
+| **Plus** | Forbedre kundeoplevelsen og øg fastholdelsen. Tilføjer avanceret sagshåndtering, automatiserede marketingflows, styring af kundecyklus og naturlig sprogssøgning. | [Se en produktrundvisning af CRM Suite-planen Plus][6] |
+| **Super** | Kør et salgsteam på enterprise-niveau. Tilføjer prædiktive salgsindsigter, ubegrænset sporing af mål og KPI'er, AI-drevet serviceoptimering og databasereplikering. | [Se en produktrundvisning af CRM Suite-planen Super][7] |
+
+## Apps
+
+Disse apps er gratis for alle brugere:
+
+<CrmSuiteFreeApps />
+
+Tilgængeligheden afhænger af planen. Se i [App Store][2], hvilke apps der er inkluderet i din plan, og aktiver dem der:
+
+<CrmSuiteIncludedApps />
+
+## Styring af pladser
+
+Alle brugere i organisationen deler den samme plan. En **plads** er en navngiven bruger med indstillingen **Kan logge på** aktiveret.
+
+* Hvis du vil give en bruger adgang, skal du aktivere **Kan logge på** på brugerens brugerkort i **Indstillinger og vedligehold** > **Brugere**.
+* Hvis du vil frigøre en plads uden at fjerne brugerens data og historik, skal du deaktivere **Kan logge på** i stedet for at slette brugeren. Sletning af en bruger er permanent.
+
+Du kan se pladsforbrug i **Indstillinger og vedligehold** > **Licenser** > fanen **SuperOffice**.
+
+## Prismodel
+
+Dit abonnement har tre komponenter:
+
+* **Grundpris:** Et gebyr pr. bruger, der giver adgang til den fulde CRM Suite.
+
+* **Skaleringsmålinger:** Forbrugsbaseret prissætning for områder med højt forbrug. Planen inkluderer en grundkvote. Yderligere kapacitet kan købes i blokke ved behov.
+
+* **Plangrænser (fencing):** Faste niveaubaserede grænser, der differentierer planerne. Overskridelse af en plangrænse begrænser den relaterede funktion, indtil du frigør kapacitet eller opgraderer planen.
+
+### Skaleringsmålinger
+
+Skaleringsmålinger sporer løbende forbrug. Planen inkluderer en grundkvote, og du kan købe yderligere kapacitet efter behov. Områder, der er underlagt skalering, omfatter:
+
+* Sendte marketing-e-mails
+* Løste sager
+* Lager
+* AI-credits
+
+### AI-credits
+
+Din CRM Suite inkluderer AI-credits baseret på antallet af brugere. Den inkluderede kvote fornys hvert år. Du kan købe yderligere forbrugskvoter. Se [prislisten for CRM Suite][8] for aktuelle priser i din valuta og prisen i credits for hver AI-handling.
+
+### Plangrænser {#plan-limits}
+
+Plangrænser er faste pr. niveau. Når en grænse nås, begrænses den relaterede funktion, indtil du reducerer forbruget eller opgraderer.
+
+| Grænse | Starter | Core | Growth | Plus | Super |
+| --- | --- | --- | --- | --- | --- |
+| Dashboards | 3 | Ubegrænset | Ubegrænset | Ubegrænset | Ubegrænset |
+| Aktive projekter | 0 | 100 | Ubegrænset | Ubegrænset | Ubegrænset |
+| Brugerdefinerede objekter | 0 | 0 | 15 | Ubegrænset | Ubegrænset |
+| Aktive marketingflows | 0 | 0 | 0 | 10 | Ubegrænset |
+
+Både **kørende** og **pausede** flows tæller mod grænsen for aktive flows i Plus-planen. Et pauset flow betragtes stadig som aktivt, fordi det fortsætter med at indsamle indkommende personer til senere behandling.
+
+Indikatoren **Begrænsninger** i **Indstillinger og vedligehold** > **Licenser** > fanen **Status** > **Database** viser dit aktuelle forbrug i forhold til de enkelte plangrænser.
+
+| Forbrug | Indikator | Betydning |
+| --- | --- | --- |
+| Under 85 % | Antal vist i sort | Normal, ingen handling påkrævet |
+| 85 % eller mere | <i class="ph ph-warning" aria-label="Advarsel"></i> Antal vist i gult | Nærmer sig grænsen |
+| 100 % | <i class="ph ph-prohibit" aria-label="Grænsen er nået"></i> Antal vist i rødt | Grænsen er nået. Funktionen er begrænset |
+
+![Fanen Status under Licenser med en advarsel om plangrænse og knappen Opgrader -screenshot][img1]
+
+Hvis du er administrator, vises en **Opgrader**-knap ud for en advarsels- eller stopindikator. Vælg den for at åbne en kontaktformular til at anmode om mere kapacitet eller en planopgradering.
+
+## Overgang fra SuperOffice CRM Online
+
+Organisationer, der migrerer fra **SuperOffice CRM Online** (det modulbaserede abonnement), placeres på den CRM Suite-plan, der svarer til den aktuelle licens. Hvis du havde flere licenser, er din plan baseret på det højeste licensniveau. Overgangstidspunktet fastsættes individuelt pr. konto. Du vil blive kontaktet.
+
+| Nuværende licens | CRM Suite-plan |
+| --- | --- |
+| Sales Essentials | Core |
+| Service Essentials | Core |
+| Marketing Essentials | Growth |
+| Sales Premium | Growth |
+| Service Premium | Growth |
+| Marketing Premium | Plus |
+
+[2]: https://appstore.superoffice.com/Category/Plus
+[3]: https://community.superoffice.com/en/product-releases/whats-new/general/crm-suite-starter/
+[4]: https://community.superoffice.com/en/product-releases/whats-new/general/crm-suite-core/
+[5]: https://community.superoffice.com/en/product-releases/whats-new/general/crm-suite-growth/
+[6]: https://community.superoffice.com/en/product-releases/whats-new/general/crm-suite-plus/
+[7]: https://community.superoffice.com/en/product-releases/whats-new/general/crm-suite-super/
+[8]: https://community.superoffice.com/en/product-releases/prices-customer/crm-suite-prices/
+
+[img1]: /media/loc/en/admin/licenses-suite-core-with-upgrade.png

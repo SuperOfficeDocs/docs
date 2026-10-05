@@ -2,9 +2,9 @@
 uid: help-de-ai
 title: KI-Services
 description: Übersicht über Künstliche Intelligenz-Services in SuperOffice CRM
-keywords: ['KI', 'künstliche Intelligenz', 'KI-Plattform', 'maschinelles Lernen', 'Automatisierung']
+keywords: ['KI', 'künstliche Intelligenz', 'KI-Plattform', 'maschinelles Lernen', 'Automatisierung', 'Insight', 'Assist', 'Agent', 'MCP', 'Instanz', 'Textanalyse']
 author: digitaldiina
-date: 09.22.2026
+date: 10.01.2026
 so_version: 12.4
 content_type: concept
 license: aiplatform
@@ -15,39 +15,100 @@ platform: web
 deployment: online
 audience: person
 audience_tooltip: SuperOffice CRM
-redirect_from: /de/ai/index
-boost: 1.5
+redirect_from:
+  - /de/ai/index
+  - /de/ai/learn/text-analysis
+  - /de/ai/text-analysis/index
+  - /de/ai/learn/categorization
+  - /de/ai/configuration-ai/index
+boost: 2
+related:
+  - /de/ai/learn/set-up-ai-agents
+  - /de/admin/license/crm-suite
 language: de
 ---
 
-<Note>
-SuperOffice KI ist nur in CRM Online verfügbar. Es erfordert das **AI-Plattform**-Add-on und spezifische Service-Lizenzen. Diese Services werden monatlich pro aktivem KI-Service abgerechnet.
-</Note>
-
-SuperOffice KI hilft dabei, Routineaufgaben zu automatisieren und manuelle Arbeit zu reduzieren, indem künstliche Intelligenz direkt in das CRM eingebettet wird. Sie können Antwortzeiten verbessern, Fehler reduzieren und effizienter arbeiten-ohne technische Expertise oder Programmierkenntnisse zu benötigen.
+SuperOffice KI hilft dabei, Routineaufgaben zu automatisieren und manuelle Arbeit zu reduzieren, indem künstliche Intelligenz direkt in das CRM eingebettet wird. Sie können Antwortzeiten verbessern, Fehler reduzieren und effizienter arbeiten, ohne technische Expertise oder Programmierkenntnisse zu benötigen.
 
 Diese Funktionen ermöglichen es Ihrem Team, sich auf sinnvolle Arbeit zu konzentrieren, während KI repetitive Prozesse im Hintergrund abwickelt.
+
+<Note>
+SuperOffice KI ist nur in CRM Online verfügbar. Lizenzanforderungen sind dienstspezifisch.
+</Note>
 
 ## Verfügbare Services
 
 | Service | Beschreibung | Lizenz |
 |---|---|---|
-| [Kategorisierung][2] | Schlägt eine Kategorie für neue Anfragen basierend auf dem Nachrichteninhalt vor. | Categorization |
-| [Übersetzung, Spracherkennung, Stimmungserkennung][1] | Analysiert Text zur Spracherkennung, Übersetzung und Sentiment-Bestimmung. | Text Services |
-| [Chatbot Connector][3] | Ermöglicht die Integration mit externen Chatbots zur automatischen Bearbeitung eingehender Chats. | Chatbot |
-| [Workspace Assist][4] | Nutzt generative KI zur Unterstützung von Benutzern bei der Inhaltserstellung und Aufgabenführung. | CRM Suite Core oder AI Lab (An-/Abmeldung in Einstellungen und Verwaltung) |
-| [SuperNotes][5] | KI-gestützter Besprechungsassistent, der Besprechungen aufzeichnet, transkribiert und zusammenfasst und die Erkenntnisse mit SuperOffice verknüpft. | Separate Integration (nicht Teil der AI-Plattform) |
 | [KI-Zusammenfassungen in SuperOffice for Teams][6] | Erstellt eine Zusammenfassung einer Microsoft Teams-Unterhaltung beim Archivieren in SuperOffice. | AI Lab (Pilotfunktion) |
+| [Category Insight][2] | Schlägt eine Kategorie anhand des Anfrageninhalts vor. Ein Administrator [trainiert das Modell mit einer Selektion von Anfragen][18] und aktiviert Vorschläge. Der Bearbeiter prüft den Vorschlag, bevor er ihn anwendet. | Categorization oder CRM Suite Growth |
+| [Chatbot Connector][3] | Ermöglicht die Integration mit externen Chatbots zur automatischen Bearbeitung eingehender Chats. | Chatbot |
 | [Company Insight][7] | Schlägt Firmendetails aus offiziellen Handelsregistern vor, wie Brreg, Virk, Companies House und Zefix, wenn Sie eine neue Firma erstellen. | CRM Suite Growth |
+| [Data Quality Agent][12] | Prüft und reichert die bereits in Ihrem CRM erfassten Firmen und Personen anhand vertrauenswürdiger Geschäftsquellen an, damit eine Person sie genehmigen kann. | CRM Suite Growth |
+| [Duplicate Agent][13] | Findet doppelte Firmen und Personen und verbindet verwaiste Personen wieder mit ihrer Firma, damit eine Person sie genehmigen kann. | CRM Suite Growth |
+| [Lead Agent][9] | Findet, recherchiert und qualifiziert neue Interessenten aus konfigurierten Nachrichtenquellen und bewertet sie anhand Ihres idealen Kundenprofils, damit eine Person sie genehmigen kann. | CRM Suite Plus |
+| [MCP Connect][14] | Verbindet SuperOffice CRM als Live-Datenquelle mit Claude, Microsoft Copilot oder ChatGPT zum Lesen und Aktualisieren. | CRM Suite Plus zum Lesen, CRM Suite Super zum Aktualisieren |
+| [Reply Assist][8] | Schlägt eine Antwort auf eine eingehende Anfrage basierend auf Ihren CRM-Daten vor, die Sie prüfen und senden können. | CRM Suite Plus |
+| [Request Insight][1] | Analysiert das Sentiment einer eingehenden Anfrage, damit Sie Ihre Antwort priorisieren können. | Text Services oder CRM Suite Core |
+| [Summary Assist][15] | Fasst die Nachrichten einer Anfrage zusammen, damit Sie handeln können, ohne den gesamten Verlauf zu lesen. | Text Services oder CRM Suite Core |
+| [SuperNotes][5] | KI-gestützter Besprechungsassistent, der Besprechungen aufzeichnet, transkribiert und zusammenfasst und die Erkenntnisse mit SuperOffice verknüpft. | Separate Integration (nicht Teil der AI-Plattform) |
+| [Translation Assist][16] | Erkennt die Sprache einer eingehenden Anfrage und übersetzt sie in Ihre Sprache. | Text Services oder CRM Suite Core |
+| [Workspace Assist][4] | Nutzt generative KI zur Unterstützung von Benutzern bei der Inhaltserstellung und Aufgabenführung. | CRM Suite Core oder AI Lab (An-/Abmeldung in Einstellungen und Verwaltung) |
+| Writing Assist | Entwirft E-Mails, Notizen und Folgeaufgaben, die Sie bearbeiten und senden können. | CRM Suite Starter |
 
-![Übersicht KI-Services -screenshot][img1]
+<Note>
+Request Insight, Summary Assist und Translation Assist erfordern die SuperOffice AI Platform und eine Text Services-Lizenz oder CRM Suite Core. Ein Administrator muss die [Textanalyse aktivieren][17], bevor diese Funktionen in der Anfragenansicht erscheinen. Endbenutzer müssen nichts konfigurieren.
 
-[1]: /de/ai/learn/text-analysis
-[2]: /de/ai/learn/categorization
+Category Insight erfordert die SuperOffice AI Platform und eine Categorization-Lizenz oder CRM Suite Growth. Ein Administrator muss das [Modell trainieren und Vorschläge aktivieren][18], bevor Bearbeiter [vorgeschlagene Kategorien verwenden][2] können.
+</Note>
+
+## Insight, Assist und Agent
+
+Neuere KI-Funktionen folgen einem Namensmuster, das zeigt, wie sie jeweils funktionieren:
+
+* **Insight** schlägt externe Daten direkt bei der Arbeit vor, ohne dass etwas geöffnet oder verwaltet werden muss. [Company Insight][7] ist ein Insight-Service.
+* **Assist** nutzt generative KI, um Ihnen bei der Inhaltserstellung zu helfen oder den nächsten Schritt vorzuschlagen, direkt in Ihrem gewohnten Arbeitsablauf. [Workspace Assist][4] und [Reply Assist][8] sind Assist-Services.
+* **Agent** läuft im Hintergrund nach eigenem Zeitplan und schlägt Ergebnisse zur Genehmigung durch eine Person vor, im eigenen Bereich **Agenten**. [Lead Agent][9], [Data Quality Agent][12] und [Duplicate Agent][13] sind Agent-Services.
+
+### Credits und Abrechnung
+
+Einige KI-Aktionen verbrauchen KI-Credits, insbesondere Aktionen von Agenten wie dem Data Quality Agent. Credits werden abgezogen, wenn eine entsprechende Aktion ausgelöst wird. Ihre CRM Suite enthält ein jährliches Credit-Kontingent, das mit der Teamgröße skaliert. Zusätzliche Kontingente können erworben werden. Die [CRM Suite-Preisliste][20] zeigt aktuelle Kontingente, Credit-Kosten pro Aktion und die Preise für zusätzliche Nutzung.
+
+## Bereich Agenten öffnen {#goto-agents}
+
+1. Wählen Sie <i class="ph ph-robot" aria-label="Agenten-Symbol"></i> **Agenten** im Navigator aus.
+
+    <Tip>
+    Sehen Sie **Agenten** nicht im Navigator? Bitten Sie Ihren Administrator, [die KI-Funktionen zu aktivieren][10].
+    </Tip>
+
+1. Klicken Sie beim ersten Mal auf **Anmelden** und genehmigen Sie den Zugriff, wenn Sie dazu aufgefordert werden: Wählen Sie **Ich stimme zu**.
+
+    ![Öffnen des Bereichs Agenten: Agenten-Symbol auswählen, dann Anmelden -screenshot][img1]
+
+    ![Genehmigung des Zugriffs von AI Agents auf Ihre SuperOffice-Installation -screenshot][img2]
+
+1. Fahren Sie fort, um [Ihre Agenten auszuwählen, zu aktivieren und einzurichten][10].
+
+[1]: /de/request/learn/handle-request-ai#sentiment
+[2]: /de/request/learn/handle-request-ai#categorization
 [3]: /de/chat/admin/channel-create#chatbot
 [4]: /de/ai/learn/workspace-assist
 [5]: /integrations/supernotes/index
 [6]: /integrations/superoffice-for-teams/ai-summary
 [7]: /de/company/learn/create#company-insight
+[8]: /de/request/learn/handle-request-ai#reply-assist
+[9]: /de/ai/learn/lead-agent
+[10]: /de/ai/learn/set-up-ai-agents
+[12]: /de/ai/learn/data-quality-agent
+[13]: /de/ai/learn/duplicate-agent
+[14]: /de/ai/learn/mcp
 
-[img1]: /media/loc/en/ai/ai-services.png
+[15]: /de/request/learn/handle-request-ai#summary
+[16]: /de/request/learn/handle-request-ai#translate
+[17]: /de/ai/admin/index#enable-text-analysis
+[18]: /de/ai/admin/set-up-categorization
+[20]: https://community.superoffice.com/en/product-releases/prices-customer/crm-suite-prices/
+
+[img1]: /media/loc/en/ai/open-agents-area.png
+[img2]: /media/loc/en/ai/approve-ai-agents.png

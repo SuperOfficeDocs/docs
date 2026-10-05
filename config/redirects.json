@@ -1137,10 +1137,6 @@
     "destination": "/da/admin/user-management/user-groups"
   },
   {
-    "source": "/da/ai/admin/index",
-    "destination": "/da/ai/admin/set-up-categorization"
-  },
-  {
     "source": "/da/ai/admin/set-up-categorization.html",
     "destination": "/da/ai/admin/set-up-categorization"
   },
@@ -1149,16 +1145,16 @@
     "destination": "/da/ai/learn/index"
   },
   {
-    "source": "/da/ai/learn/categorization.html",
-    "destination": "/da/ai/learn/categorization"
+    "source": "/da/ai/learn/categorization*",
+    "destination": "/da/ai/learn/index"
   },
   {
-    "source": "/da/ai/learn/copilot.html",
+    "source": "/da/ai/learn/copilot*",
     "destination": "/da/ai/learn/workspace-assist"
   },
   {
-    "source": "/da/ai/learn/text-analysis.html",
-    "destination": "/da/ai/learn/text-analysis"
+    "source": "/da/ai/learn/text-analysis*",
+    "destination": "/da/ai/learn/index"
   },
   {
     "source": "/da/automation/crmscript/learn/create-folder",
@@ -5513,10 +5509,6 @@
     "destination": "/de/admin/user-management/user-groups"
   },
   {
-    "source": "/de/ai/admin/index",
-    "destination": "/de/ai/admin/set-up-categorization"
-  },
-  {
     "source": "/de/ai/admin/set-up-categorization.html",
     "destination": "/de/ai/admin/set-up-categorization"
   },
@@ -5525,16 +5517,16 @@
     "destination": "/de/ai/learn/index"
   },
   {
-    "source": "/de/ai/learn/categorization.html",
-    "destination": "/de/ai/learn/categorization"
+    "source": "/de/ai/learn/categorization*",
+    "destination": "/de/ai/learn/index"
   },
   {
-    "source": "/de/ai/learn/copilot.html",
+    "source": "/de/ai/learn/copilot*",
     "destination": "/de/ai/learn/workspace-assist"
   },
   {
-    "source": "/de/ai/learn/text-analysis.html",
-    "destination": "/de/ai/learn/text-analysis"
+    "source": "/de/ai/learn/text-analysis*",
+    "destination": "/de/ai/learn/index"
   },
   {
     "source": "/de/automation/crmscript/learn/create-folder",
@@ -10065,10 +10057,6 @@
     "destination": "/en/admin/user-preferences/reference/visual"
   },
   {
-    "source": "/en/ai/admin/index",
-    "destination": "/en/ai/admin/set-up-categorization"
-  },
-  {
     "source": "/en/ai/admin/set-up-categorization.html",
     "destination": "/en/ai/admin/set-up-categorization"
   },
@@ -10081,8 +10069,8 @@
     "destination": "/en/ai/admin/set-up-categorization"
   },
   {
-    "source": "/en/ai/configuration-ai/index",
-    "destination": "/en/ai/learn/categorization"
+    "source": "/en/ai/configuration-ai/index*",
+    "destination": "/en/ai/learn/index"
   },
   {
     "source": "/en/ai/copilot/index",
@@ -10093,20 +10081,20 @@
     "destination": "/en/ai/learn/index"
   },
   {
-    "source": "/en/ai/learn/categorization.html",
-    "destination": "/en/ai/learn/categorization"
+    "source": "/en/ai/learn/categorization*",
+    "destination": "/en/ai/learn/index"
   },
   {
-    "source": "/en/ai/learn/copilot.html",
+    "source": "/en/ai/learn/copilot*",
     "destination": "/en/ai/learn/workspace-assist"
   },
   {
-    "source": "/en/ai/learn/text-analysis.html",
-    "destination": "/en/ai/learn/text-analysis"
+    "source": "/en/ai/learn/text-analysis*",
+    "destination": "/en/ai/learn/index"
   },
   {
     "source": "/en/ai/text-analysis/index",
-    "destination": "/en/ai/learn/text-analysis"
+    "destination": "/en/ai/learn/index"
   },
   {
     "source": "/en/api/archive-providers/add-columns.html",
@@ -20309,10 +20297,6 @@
     "destination": "/nl/admin/user-management/user-groups"
   },
   {
-    "source": "/nl/ai/admin/index",
-    "destination": "/nl/ai/admin/set-up-categorization"
-  },
-  {
     "source": "/nl/ai/admin/set-up-categorization.html",
     "destination": "/nl/ai/admin/set-up-categorization"
   },
@@ -20321,16 +20305,16 @@
     "destination": "/nl/ai/learn/index"
   },
   {
-    "source": "/nl/ai/learn/categorization.html",
-    "destination": "/nl/ai/learn/categorization"
+    "source": "/nl/ai/learn/categorization*",
+    "destination": "/nl/ai/learn/index"
   },
   {
-    "source": "/nl/ai/learn/copilot.html",
+    "source": "/nl/ai/learn/copilot*",
     "destination": "/nl/ai/learn/workspace-assist"
   },
   {
-    "source": "/nl/ai/learn/text-analysis.html",
-    "destination": "/nl/ai/learn/text-analysis"
+    "source": "/nl/ai/learn/text-analysis*",
+    "destination": "/nl/ai/learn/index"
   },
   {
     "source": "/nl/automation/crmscript/learn/create-folder",
@@ -24673,10 +24657,6 @@
     "destination": "/no/admin/user-management/user-groups"
   },
   {
-    "source": "/no/ai/admin/index",
-    "destination": "/no/ai/admin/set-up-categorization"
-  },
-  {
     "source": "/no/ai/admin/set-up-categorization.html",
     "destination": "/no/ai/admin/set-up-categorization"
   },
@@ -24685,16 +24665,16 @@
     "destination": "/no/ai/learn/index"
   },
   {
-    "source": "/no/ai/learn/categorization.html",
-    "destination": "/no/ai/learn/categorization"
+    "source": "/no/ai/learn/categorization*",
+    "destination": "/no/ai/learn/index"
   },
   {
-    "source": "/no/ai/learn/copilot.html",
+    "source": "/no/ai/learn/copilot*",
     "destination": "/no/ai/learn/workspace-assist"
   },
   {
-    "source": "/no/ai/learn/text-analysis.html",
-    "destination": "/no/ai/learn/text-analysis"
+    "source": "/no/ai/learn/text-analysis*",
+    "destination": "/no/ai/learn/index"
   },
   {
     "source": "/no/automation/crmscript/learn/create-folder",
@@ -29553,10 +29533,6 @@
     "destination": "/sv/admin/user-management/user-groups"
   },
   {
-    "source": "/sv/ai/admin/index",
-    "destination": "/sv/ai/admin/set-up-categorization"
-  },
-  {
     "source": "/sv/ai/admin/set-up-categorization.html",
     "destination": "/sv/ai/admin/set-up-categorization"
   },
@@ -29565,16 +29541,16 @@
     "destination": "/sv/ai/learn/index"
   },
   {
-    "source": "/sv/ai/learn/categorization.html",
-    "destination": "/sv/ai/learn/categorization"
+    "source": "/sv/ai/learn/categorization*",
+    "destination": "/sv/ai/learn/index"
   },
   {
-    "source": "/sv/ai/learn/copilot.html",
+    "source": "/sv/ai/learn/copilot*",
     "destination": "/sv/ai/learn/workspace-assist"
   },
   {
-    "source": "/sv/ai/learn/text-analysis.html",
-    "destination": "/sv/ai/learn/text-analysis"
+    "source": "/sv/ai/learn/text-analysis*",
+    "destination": "/sv/ai/learn/index"
   },
   {
     "source": "/sv/automation/crmscript/learn/create-folder",
@@ -32931,29 +32907,5 @@
   {
     "source": "/downloads/cloud-office/cloud-office-superoffice.app",
     "destination": "/downloads/cloud-office/cloud-office-superoffice.zip"
-  },
-  {
-    "source": "/en/ai/learn/copilot",
-    "destination": "/en/ai/learn/workspace-assist"
-  },
-  {
-    "source": "/da/ai/learn/copilot",
-    "destination": "/da/ai/learn/workspace-assist"
-  },
-  {
-    "source": "/de/ai/learn/copilot",
-    "destination": "/de/ai/learn/workspace-assist"
-  },
-  {
-    "source": "/nl/ai/learn/copilot",
-    "destination": "/nl/ai/learn/workspace-assist"
-  },
-  {
-    "source": "/no/ai/learn/copilot",
-    "destination": "/no/ai/learn/workspace-assist"
-  },
-  {
-    "source": "/sv/ai/learn/copilot",
-    "destination": "/sv/ai/learn/workspace-assist"
   }
 ]

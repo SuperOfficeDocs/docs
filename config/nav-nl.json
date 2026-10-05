@@ -96,11 +96,15 @@
         "icon": "wand-magic-sparkles",
         "root": "nl/ai/learn/index",
         "pages": [
-          "nl/ai/learn/text-analysis",
-          "nl/ai/learn/categorization",
           "nl/ai/learn/workspace-assist",
+          "nl/ai/learn/data-quality-agent",
+          "nl/ai/learn/duplicate-agent",
+          "nl/ai/learn/lead-agent",
+          "nl/ai/learn/set-up-ai-agents",
+          "nl/ai/learn/mcp",
           {
             "group": "Voor beheerders",
+            "root": "nl/ai/admin/index",
             "pages": [
               "nl/ai/admin/set-up-categorization"
             ]
@@ -491,6 +495,8 @@
         "root": "nl/lead/learn/index",
         "pages": [
           "nl/lead/learn/work-with-leads",
+          "nl/lead/learn/set-up-lead-agent",
+          "nl/lead/learn/work-with-lead-agent",
           {
             "group": "Voor beheerders",
             "root": "nl/lead/admin/index",

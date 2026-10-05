@@ -2,19 +2,18 @@
 uid: help-de-request-ai
 title: Effizientes Bearbeiten von Anfragen mithilfe von KI
 sidebarTitle: "Bearbeitung mit KI"
-description: Die Einführung von Künstlicher Intelligenz (KI) in SuperOffice 10 bietet Bearbeitern von Anfragen/Supportmitarbeitern ein neues Set intelligenter Tools für einen effizienteren Arbeitstag.
-keywords: ['Anfrage', 'KI', 'effizient']
+description: Die Einführung von Künstlicher Intelligenz (KI) in SuperOffice bietet Bearbeitern von Anfragen/Supportmitarbeitern ein neues Set intelligenter Tools für einen effizienteren Arbeitstag.
+keywords: ['Anfrage', 'KI', 'effizient', 'Reply Assist', 'Antwortvorschlag']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 10.01.2026
+so_version: 12.4
 content_type: concept
 tier: core
 audience: person
 audience_tooltip: SuperOffice Service
 related:
-  - Wie man KI-Dienste verwendet: /de/ai/learn/index
-  - Textanalyse von Anfragen: /de/ai/learn/text-analysis
-  - Klassifikation von Anfragen: /de/ai/learn/categorization
+  - Wie man KI-Services verwendet: /de/ai/learn/index
+  - KI-basierte Kategorisierung einrichten: /de/ai/admin/set-up-categorization
 language: de
 ---
 
@@ -22,26 +21,83 @@ language: de
 Für KI Services ist eine separate Lizenz erforderlich. SuperOffice AI steht nur in der Cloud zur Verfügung und ist ein separates Add-on.
 </Note>
 
-Die Einführung von Künstlicher Intelligenz (KI) in SuperOffice 10 bietet Bearbeitern von Anfragen/Supportmitarbeitern ein neues Set intelligenter Tools für einen effizienteren Arbeitstag.
+Die Einführung von Künstlicher Intelligenz (KI) in SuperOffice bietet Bearbeitern von Anfragen/Supportmitarbeitern ein neues Set intelligenter Tools für einen effizienteren Arbeitstag.
 
-## Spracherkennung
+<Tip>
+Sehen Sie diese Funktionen nicht in einer Anfrage? Bitten Sie Ihren Administrator, [die Textanalyse zu aktivieren][17].
+</Tip>
 
-Mit dieser Funktion wird die Sprache einer eingehenden Anfrage automatisch erkannt. Die erkannte Sprache wird unter der Nachricht angezeigt.
+## Request Insight {#sentiment}
 
-## Übersetzung
+Request Insight analysiert das Sentiment einer eingehenden Anfrage, damit Sie den Kunden priorisieren können, der Sie am dringendsten braucht.
 
-Wenn Sie eine Mitteilung in einer Sprache erhalten, die Sie nicht lesen können, können Sie unter der Mitteilung auf **Übersetzen aus** ***Sprache*** klicken. Betreff und Text der Nachricht werden übersetzt und unter der ursprünglichen Nachricht hinzugefügt.
+<Note>
+Request Insight erfordert eine Text Services-Lizenz oder CRM Suite Core.
+</Note>
 
-## Sentiment-Analyse
-
-Ist die Person glücklich oder wütend?
+Ist die Person glücklich oder wütend? Wenn diese Funktion aktiv ist, werden eingehende E-Mail-Anfragen analysiert, um die Stimmung der Person festzustellen. Ein Emoticon unter der Nachricht zeigt die erkannte Stimmung an:
 
 * Negatives <i class="ph ph-smiley-sad" aria-hidden="true"></i>
 * Neutrales <i class="ph ph-smiley-meh" aria-hidden="true"></i>
 * Positives <i class="ph ph-smiley" aria-hidden="true"></i>
 
-Wenn diese Funktion aktiv ist, werden eingehende E-Mail-Anfragen analysiert, um die Stimmung der Person festzustellen. Ein Emoticon unter der Nachricht zeigt die erkannte Stimmung (zufrieden, unzufrieden oder neutral) an.
+## Summary Assist {#summary}
 
-### Automatische Kategorisierung
+Summary Assist fasst die Nachrichten einer Anfrage zusammen, damit Sie handeln können, ohne den gesamten Verlauf zu lesen. Die Funktion erscheint als Aktion im selben Bereich wie Reply Assist.
 
-Lassen Sie das System Anfragen für Sie kategorisieren und sparen Sie damit Zeit. Wenn diese Funktion aktiv ist, werden eingehende E-Mail-Anfragen analysiert, um für jede Anfrage die beste Kategorie zu ermitteln. In der Fußzeile einer Anfrage wird die vom System vorgeschlagene Kategorie angezeigt. Klicken Sie auf den Link für die Kategorie, um die Anfrage mit der vorgeschlagenen Kategorie zu aktualisieren.
+<Note>
+Summary Assist erfordert eine Text Services-Lizenz oder CRM Suite Core.
+</Note>
+
+1. Wählen Sie im Anfragenbereich **Zusammenfassen** aus.
+2. Prüfen Sie die generierte Zusammenfassung der Nachrichten der Anfrage.
+3. Wählen Sie **Zurück**, um zum Bereich zurückzukehren.
+
+## Translation Assist {#translate}
+
+Translation Assist erkennt die Sprache einer eingehenden Anfrage und bietet eine Übersetzung an, damit Sie Anfragen in jeder Sprache lesen und beantworten können.
+
+<Note>
+Translation Assist erfordert eine Text Services-Lizenz oder CRM Suite Core.
+</Note>
+
+Mit dieser Funktion wird die Sprache einer eingehenden Anfrage automatisch erkannt. Die erkannte Sprache wird unter der Nachricht angezeigt.
+
+Wenn Sie eine Mitteilung in einer Sprache erhalten, die Sie nicht lesen können, können Sie unter der Mitteilung auf **Übersetzen aus** ***Sprache*** klicken. Betreff und Text der Nachricht werden übersetzt und unter der ursprünglichen Nachricht hinzugefügt.
+
+## Category Insight {#categorization}
+
+Category Insight analysiert eingehende E-Mail-Anfragen und schlägt anhand ihres Inhalts eine Kategorie vor. Die Kategorie wird nicht automatisch angewendet.
+
+<Note>
+Category Insight erfordert die SuperOffice AI Platform und eine Categorization-Lizenz oder CRM Suite Growth.
+</Note>
+
+Sehen Sie keine Vorschläge? Bitten Sie Ihren Administrator, [das Modell zu trainieren und Vorschläge zu aktivieren][18].
+
+1. Öffnen Sie eine eingehende E-Mail-Anfrage und suchen Sie in der Fußzeile der Anfrage nach einer vorgeschlagenen Kategorie.
+1. Prüfen Sie den Vorschlag. Passt er zur Anfrage, wählen Sie den Kategorielink aus, um ihn anzuwenden.
+1. Prüfen Sie die Kategorie der Anfrage. Nach dem Anwenden verschwindet der Vorschlag.
+
+![Vorgeschlagene Kategorie in der Fußzeile einer Anfrage -screenshot][img2]
+
+Wenn keine Kategorie passt, wird kein Vorschlag angezeigt. Sie können die Kategorie weiterhin selbst auswählen.
+
+## Reply Assist {#reply-assist}
+
+Anstatt einer leeren Seite schlägt Reply Assist eine passende Antwort auf eine eingehende Anfrage vor. Der Entwurf basiert auf Ihren eigenen CRM-Daten: frühere Anfragen, Antwortvorlagen, FAQ-Einträge, Dokumente und optional Webinhalte.
+
+Wie bei jeder SuperOffice KI-Funktion handelt es sich um einen Vorschlag, den Sie genehmigen müssen. Es wird nichts automatisch gespeichert oder gesendet.
+
+<Note>
+Reply Assist erfordert [CRM Suite Plus][8] oder höher.
+</Note>
+
+![Von Reply Assist vorgeschlagene Antwort auf eine Anfrage -screenshot][img1]
+
+[8]: ../../admin/license/crm-suite#plans
+[17]: ../../ai/admin/index#enable-text-analysis
+[18]: ../../ai/admin/set-up-categorization
+
+[img1]: /media/loc/en/request/reply-assist.png
+[img2]: /media/loc/en/request/suggested-category-demo.png
