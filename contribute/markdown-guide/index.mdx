@@ -297,21 +297,21 @@ Here are requirements and considerations for snippet files.
 
 * A relative link inside a snippet resolves against the snippet's own location, not the page that imports it, so a topic-local snippet can follow that topic's normal relative-link rule, but a repository-root snippet reused across different topics or languages should use root-relative links, since it has no single "close by" tree to be relative to. See [page links][6] for the general rule.
 
-### Reference labels in snippets
+### Reference labels in snippets {#snippet-labels}
 
 A reference-style link label defined in a snippet overrides the same label on the page that imports it, so a snippet that defines `[1]` silently changes where the page's own `[1]` points. To prevent that, every top-level folder owns a reserved block of numbers for the labels in its snippets, and pages never use them:
 
 | Where the snippet lives | Labels |
 |---|---|
 | Pages, anywhere | 1 to 999 |
-| Repository-root */snippets* | 1000 to 1099 |
-| */en* | 1100 to 1299 |
-| */da* | 1300 to 1399 |
-| */de* | 1400 to 1499 |
-| */nl* | 1500 to 1599 |
-| */no* | 1600 to 1699 |
-| */sv* | 1700 to 1799 |
-| */integrations* | 1800 to 1899 |
+| Repository-root /snippets | 1000 to 1099 |
+| /en | 1100 to 1299 |
+| /da | 1300 to 1399 |
+| /de | 1400 to 1499 |
+| /nl | 1500 to 1599 |
+| /no | 1600 to 1699 |
+| /sv | 1700 to 1799 |
+| /integrations | 1800 to 1899 |
 
 * Link labels are plain numbers, for example `[1100]`. Image labels keep the `img` prefix, for example `[img1101]`.
 * Take the next label from the `next` value for your folder in *tools/ci/snippet-label-ranges.json*, and raise that value in the same pull request.
