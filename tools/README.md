@@ -38,7 +38,6 @@ Scripts that convert, generate, or verify content for this repo. Not published t
 | `process-redirects.ps1` | migration | Deletes `redirect_url` files, updates `config/redirects.json` | No |
 | `reformat-keywords.py` | migration | One-time reformat of `keywords:` frontmatter to a flow array | No — rollout complete |
 | `remove-html-comments.ps1` | migration | Strips HTML comment lines | No |
-| `renumber-snippet-labels.py` | migration | One-time renumbering of every snippet reference label into its top folder's reserved block (#552) | No — rollout complete |
 | `rename-userflow-index.py` | migration | One-time rename of `index:` frontmatter to `userflow_index:` | No — rollout complete |
 | `rename-version-property.py` | migration | One-time bulk rename of `version:` frontmatter to `so_version:` | No — rollout complete |
 | `sanitize-markup.ps1` | migration | Broad markup cleanup (br tags, unicode, blank lines, `.md`→`.mdx`) | No |
