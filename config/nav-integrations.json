@@ -101,14 +101,16 @@
           "integrations/superoffice-for-outlook/archive-email",
           "integrations/superoffice-for-outlook/send-and-archive",
           "integrations/superoffice-for-outlook/save-attachments",
-          "integrations/superoffice-for-outlook/shared-mailboxes"
+          "integrations/superoffice-for-outlook/shared-mailboxes",
+          "integrations/superoffice-for-outlook/email-archive-status"
         ]
       },
       "integrations/superoffice-for-outlook/add-crm-data-to-event",
       "integrations/superoffice-for-outlook/archive-reminder",
       "integrations/superoffice-for-outlook/create-follow-up",
       "integrations/superoffice-for-outlook/create-request",
-      "integrations/superoffice-for-outlook/create-sale"
+      "integrations/superoffice-for-outlook/create-sale",
+      "integrations/superoffice-for-outlook/troubleshooting"
     ]
   },
   {
