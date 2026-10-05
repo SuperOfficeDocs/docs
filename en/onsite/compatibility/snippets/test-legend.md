@@ -1,15 +1,15 @@
-![yes][1] **Tested successful**
+![yes][1167] **Tested successful**
 
 The product is part of our test procedures and you may obtain support for this configuration.
 
-![no][2] **Not working**
+![no][1168] **Not working**
 
 This product is known not to work with this version of our software.
 
-![not yet][3] **Not part of test procedures**
+![not yet][1169] **Not part of test procedures**
 
 This product is not part of our test procedures and may not be fully compatible with this version of our software. There is currently no official support for this configuration. If this is a newer version of other vendors' software then we may have to add support for this in our code first, see compatibility reports for more information.
 
-[1]: /en/media/icons/testedyes.png
-[2]: /en/media/icons/testedno.png
-[3]: /en/media/icons/testednotyet.png
+[1167]: /en/media/icons/testedyes.png
+[1168]: /en/media/icons/testedno.png
+[1169]: /en/media/icons/testednotyet.png

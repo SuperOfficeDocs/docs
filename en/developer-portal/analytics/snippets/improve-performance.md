@@ -1,11 +1,11 @@
-Leverage our [best practices for online app development][2] to both boost your application's performance and reduce its API usage. Both [caching][3] and [search][4] have a huge impact.
+Leverage our [best practices for online app development][1121] to both boost your application's performance and reduce its API usage. Both [caching][1122] and [search][1123] have a huge impact.
 
 Additional columns from SuperOffice version 10.5.1
 
 | Column | Description |
 |---|---|
 | NsApiSlow | True if API call is higher than treshold. You will find tresholds for methods in our documentation. |
-| providerName | The [archive provider][5] used in the request (e.g., contact, sale, project). Knowing the provider helps identify the data source and optimize queries accordingly. |
+| providerName | The [archive provider][1124] used in the request (e.g., contact, sale, project). Knowing the provider helps identify the data source and optimize queries accordingly. |
 | columns | Specifies which columns are requested from the archive provider. Best practice: Limit the number of columns to only those needed to reduce payload size and improve performance.  |
 | restriction | Filters applied to the search query. Tip: Use indexed fields and avoid complex expressions to enhance query speed. |
 | pageSize| Number of items returned per page. Default is 1000.  |
@@ -14,7 +14,7 @@ Additional columns from SuperOffice version 10.5.1
 | itemCount | Number of similar API calls made in the past 24 hours. Can be used to identify high-traffic endpoints and optimize caching or batching strategies. |
 | url | The full URL of the API request. Useful for debugging and reproducing queries. |
 
-[2]: /en/developer-portal/best-practices/index
-[3]: /en/developer-portal/best-practices/index#caching
-[4]: /en/developer-portal/best-practices/index#searching
-[5]: /en/api/archive-providers/reference/index
+[1121]: /en/developer-portal/best-practices/index
+[1122]: /en/developer-portal/best-practices/index#caching
+[1123]: /en/developer-portal/best-practices/index#searching
+[1124]: /en/api/archive-providers/reference/index

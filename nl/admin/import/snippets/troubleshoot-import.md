@@ -10,6 +10,6 @@ Rijen zonder pictogrammen worden niet geïmporteerd. Als u ziet dat veel contact
     2. Klik op de lijst **Als geen bedrijfsnaam** onder **Contactpersoon**.
     3. Selecteer **Bedrijf maken op basis van contactnaam**.
     4. Klik op **Opslaan**.
-    5. Klik op **Volgende** en controleer of het pictogram [Nieuw bedrijf][img1] naast de contactpersoon wordt weergegeven. De persoon wordt geregistreerd als bedrijf in SuperOffice CRM, met zichzelf als enige contactpersoon.
+    5. Klik op **Volgende** en controleer of het pictogram [Nieuw bedrijf][img1505] naast de contactpersoon wordt weergegeven. De persoon wordt geregistreerd als bedrijf in SuperOffice CRM, met zichzelf als enige contactpersoon.
 
-[img1]: /media/icons/admin/import-preview-icon-company-new.png
+[img1505]: /media/icons/admin/import-preview-icon-company-new.png

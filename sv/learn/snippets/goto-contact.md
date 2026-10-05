@@ -1,3 +1,3 @@
-Gå till önskad kontakt i fönstret Kontakt. (Se [Använd fönstret Sök][1].)
+Gå till önskad kontakt i fönstret Kontakt. (Se [Använd fönstret Sök][1710].)
 
-[1]: /sv/search-options/learn/find-screen
+[1710]: /sv/search-options/learn/find-screen

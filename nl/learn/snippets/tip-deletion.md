@@ -1,3 +1,3 @@
-Zie [Items verwijderen in SuperOffice CRM][1] voor meer informatie.
+Zie [Items verwijderen in SuperOffice CRM][1513] voor meer informatie.
 
-[1]: /nl/learn/basics/deleting-elements
+[1513]: /nl/learn/basics/deleting-elements

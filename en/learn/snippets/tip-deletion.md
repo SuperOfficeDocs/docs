@@ -1,3 +1,3 @@
-For details, see [Delete items in SuperOffice CRM][1].
+For details, see [Delete items in SuperOffice CRM][1145].
 
-[1]: /en/learn/basics/deleting-elements
+[1145]: /en/learn/basics/deleting-elements

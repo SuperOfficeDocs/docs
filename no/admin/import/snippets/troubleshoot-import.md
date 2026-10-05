@@ -10,6 +10,6 @@ Rader uten ikoner importeres ikke. Hvis du ser at mange personer ikke blir impor
     2. Klikk på listen **Hvis ingen firmanavn** under **Person**.
     3. Velg **Opprett firma med personens navn**.
     4. Klikk på **Lagre**.
-    5. Klikk på **Neste**, og kontroller at ikonet [Nytt firma][img1] vises ved siden av personen. Personen registreres som et firma i SuperOffice CRM med seg selv som eneste person.
+    5. Klikk på **Neste**, og kontroller at ikonet [Nytt firma][img1605] vises ved siden av personen. Personen registreres som et firma i SuperOffice CRM med seg selv som eneste person.
 
-[img1]: /media/icons/admin/import-preview-icon-company-new.png
+[img1605]: /media/icons/admin/import-preview-icon-company-new.png

@@ -1,5 +1,5 @@
 * ALL users with user plan must use **Sign in with Microsoft** (Microsoft Entra ID, formerly AAD) in SuperOffice Online.
-  * Microsoft Entra authentication of users. For more info, see [IDP authentication][2].
+  * Microsoft Entra authentication of users. For more info, see [IDP authentication][1800].
 * ALL users with user plan must be in the same Microsoft Entra subscription as the one used during set up.
 
-[2]: /en/online/identity/federated-id-and-identity-providers
+[1800]: /en/online/identity/federated-id-and-identity-providers

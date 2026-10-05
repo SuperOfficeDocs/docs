@@ -6,13 +6,13 @@ Du kan välja om du vill skicka ditt utskick direkt eller om du vill schemalägg
 
 Skärmen Bekräfta ger dig en sammanfattning av de tidigare stegen du har tagit och låter dig antingen skicka eller schemalägga ditt utskick:
 
-![Skärmen Bekräfta ger dig en sammanfattning av de tidigare stegen du har tagit och låter dig antingen skicka eller schemalägga ditt utskick -screenshot][img4]
+![Skärmen Bekräfta ger dig en sammanfattning av de tidigare stegen du har tagit och låter dig antingen skicka eller schemalägga ditt utskick -screenshot][img1728]
 
 ### Skicka utskicket nu
 
 Klicka på **Skicka nu** om du vill skicka utskicket omedelbart. Arbetsflödet stängs och du kommer tillbaka till fliken **Utskick**.
 
-Klicka på utskicket i listan om du vill visa skickningsstatus och statistik för utskicket. [Så här spårar du utskick och visar statistik][1].
+Klicka på utskicket i listan om du vill visa skickningsstatus och statistik för utskicket. [Så här spårar du utskick och visar statistik][1727].
 
 ### Schemalägga för utskick
 
@@ -26,10 +26,10 @@ För att inte överbelasta servrarna under arbetstid kan det vara en bra idé at
 
 ### Vad händer nu?
 
-Du kan klicka på utskicket i listan om du vill [visa sändningsstatus och statistik för utskicket][1].
+Du kan klicka på utskicket i listan om du vill [visa sändningsstatus och statistik för utskicket][1727].
 
 Om du vill stoppa utskicket eller starta ett schemalagt utskick före den planerade tidpunkten kan du klicka på knappen **Stopp** respektive **Start**.
 
-[1]: /sv/marketing/mailing/learn/view-statistics
+[1727]: /sv/marketing/mailing/learn/view-statistics
 
-[img4]: /media/loc/en/marketing/send-or-schedule.png
+[img1728]: /media/loc/en/marketing/send-or-schedule.png

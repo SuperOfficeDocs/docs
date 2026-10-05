@@ -1,3 +1,3 @@
-Gå til det ønskede firma på skærmbilledet Firma. (Se [Brug skærmbilledet Søg][1].)
+Gå til det ønskede firma på skærmbilledet Firma. (Se [Brug skærmbilledet Søg][1309].)
 
-[1]: /da/search-options/learn/find-screen
+[1309]: /da/search-options/learn/find-screen
