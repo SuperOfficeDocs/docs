@@ -1,0 +1,45 @@
+{
+  "_comment": "Reserved numeric reference-label ranges for snippets (#552). Host pages keep 1 to 999. Take labels from `next` and bump it in the same PR. Link labels are plain numbers (`[1100]`), image labels keep the `imgNN` form (`[img1101]`); both draw from the same counter so a number is never reused.",
+  "ranges": {
+    "snippets": {
+      "start": 1000,
+      "end": 1099,
+      "next": 1026
+    },
+    "en": {
+      "start": 1100,
+      "end": 1299,
+      "next": 1176
+    },
+    "da": {
+      "start": 1300,
+      "end": 1399,
+      "next": 1334
+    },
+    "de": {
+      "start": 1400,
+      "end": 1499,
+      "next": 1434
+    },
+    "nl": {
+      "start": 1500,
+      "end": 1599,
+      "next": 1534
+    },
+    "no": {
+      "start": 1600,
+      "end": 1699,
+      "next": 1634
+    },
+    "sv": {
+      "start": 1700,
+      "end": 1799,
+      "next": 1734
+    },
+    "integrations": {
+      "start": 1800,
+      "end": 1899,
+      "next": 1808
+    }
+  }
+}
