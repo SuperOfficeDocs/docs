@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword"></a> Class AuthorizationUsernamePassword
+# Class AuthorizationUsernamePassword {#SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword}
 
 Namespace: [SuperOffice.WebApi.Authorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization)  
 Assembly: SuperOffice.WebApi.Authorization.dll  
@@ -30,7 +30,7 @@ public class AuthorizationUsernamePassword : IAuthorization
 
 ## Constructors
 
-### <a id="SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword__ctor_System_String_System_String_"></a> AuthorizationUsernamePassword\(string, string\)
+### AuthorizationUsernamePassword\(string, string\) {#SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword__ctor_System_String_System_String_}
 
 UserNamePasswordAuthorization Constructor
 
@@ -50,7 +50,7 @@ Users password.
 
 ## Properties
 
-### <a id="SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword_RefreshAuthorizationAsync"></a> RefreshAuthorizationAsync
+### RefreshAuthorizationAsync {#SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword_RefreshAuthorizationAsync}
 
 Try to refresh this [IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization) instance.
 
@@ -60,11 +60,11 @@ public Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync
 
 #### Property Value
 
- [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)<[ReAuthorizationArgs](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.ReAuthorizationArgs), [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization)\>\>
+ [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)&lt;[ReAuthorizationArgs](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.ReAuthorizationArgs), [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization)\&gt;\&gt;
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword_GetAuthorization"></a> GetAuthorization\(\)
+### GetAuthorization\(\) {#SuperOffice_WebApi_Authorization_AuthorizationUsernamePassword_GetAuthorization}
 
 Gets a tuple that represents authorization scheme and parameter for a base64 encoded username:password.
 

@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_Agents_LicenseAgent"></a> Class LicenseAgent
+# Class LicenseAgent {#SuperOffice_WebApi_Agents_LicenseAgent}
 
 Namespace: [SuperOffice.WebApi.Agents](/en/api/reference/webapi/SuperOffice.WebApi.Agents)  
 Assembly: SuperOffice.WebApi.dll  
@@ -38,7 +38,7 @@ public class LicenseAgent : AgentBase, ILicenseAgent, IAgentBase, IDisposable
 [AgentBase.SendRequestObjectWithStream\(HttpMethod, string, object, Stream, WebApiOptions, string\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequestObjectWithStream_System_Net_Http_HttpMethod_System_String_System_Object_System_IO_Stream_SuperOffice_WebApi_WebApiOptions_System_String_), 
 [AgentBase.SendRequest\(HttpRequestMessage, RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_SendRequest_System_Net_Http_HttpRequestMessage_SuperOffice_WebApi_RequestOptions_), 
 [AgentBase.ThrowOnResponseErrorAsync\(HttpRequestMessage, HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ThrowOnResponseErrorAsync_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpResponseMessage_), 
-[AgentBase.ParseResponse<T\>\(HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseResponse__1_System_Net_Http_HttpResponseMessage_), 
+[AgentBase.ParseResponse&lt;T\&gt;\(HttpResponseMessage\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_ParseResponse__1_System_Net_Http_HttpResponseMessage_), 
 [AgentBase.Finally\(RequestOptions\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Finally_SuperOffice_WebApi_RequestOptions_), 
 [AgentBase.Dispose\(\)](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Dispose), 
 [AgentBase.Configuration](/en/api/reference/webapi/SuperOffice.WebApi.Agents.AgentBase#SuperOffice_WebApi_Agents_AgentBase_Configuration), 
@@ -57,19 +57,19 @@ public class LicenseAgent : AgentBase, ILicenseAgent, IAgentBase, IDisposable
 
 ## Examples
 
-<pre><code class="lang-csharp">using SuperOffice.WebApi;
+&lt;pre&gt;&lt;code class="lang-csharp"&gt;using SuperOffice.WebApi;
 using SuperOffice.WebApi.Agents;
 
 var mySession = new WebApiOptions("http://example.com/super/api");
 mySession.Authorization = new AuthorizationUsernamePassword("user", "pass");
 using (LicenseAgent agent = new LicenseAgent(mySession))
-{
+\{
       // call methods on agent here...
-}</code></pre>
+\}&lt;/code&gt;&lt;/pre&gt;
 
 ## Constructors
 
-### <a id="SuperOffice_WebApi_Agents_LicenseAgent__ctor_System_Net_Http_HttpClient_"></a> LicenseAgent\(HttpClient\)
+### LicenseAgent\(HttpClient\) {#SuperOffice_WebApi_Agents_LicenseAgent__ctor_System_Net_Http_HttpClient_}
 
 Constructor: License query, download, activation
 
@@ -83,7 +83,7 @@ public LicenseAgent(HttpClient httpClient)
 
 Use this HTTP client instead of making own HttpClient instance.
 
-### <a id="SuperOffice_WebApi_Agents_LicenseAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_"></a> LicenseAgent\(WebApiOptions, HttpClient\)
+### LicenseAgent\(WebApiOptions, HttpClient\) {#SuperOffice_WebApi_Agents_LicenseAgent__ctor_SuperOffice_WebApi_WebApiOptions_System_Net_Http_HttpClient_}
 
 Constructor: License query, download, activation
 
@@ -103,7 +103,7 @@ Optional: Use this HTTP client instead of making a new one.
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Agents_LicenseAgent_ActivateLicenseInfoAsync_SuperOffice_WebApi_Data_ExtendedLicenseInfo_SuperOffice_WebApi_RequestOptions_"></a> ActivateLicenseInfoAsync\(ExtendedLicenseInfo, RequestOptions\)
+### ActivateLicenseInfoAsync\(ExtendedLicenseInfo, RequestOptions\) {#SuperOffice_WebApi_Agents_LicenseAgent_ActivateLicenseInfoAsync_SuperOffice_WebApi_Data_ExtendedLicenseInfo_SuperOffice_WebApi_RequestOptions_}
 
 Save a new license to the database.
 
@@ -123,9 +123,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LicenseResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.LicenseResult)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LicenseResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.LicenseResult)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_LicenseAgent_AddLicenseFromFileAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> AddLicenseFromFileAsync\(string, RequestOptions\)
+### AddLicenseFromFileAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_LicenseAgent_AddLicenseFromFileAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Load and activate a new license from file/string if the new license is valid.
 
@@ -145,11 +145,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ExtendedLicenseInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtendedLicenseInfo)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ExtendedLicenseInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtendedLicenseInfo)\&gt;
 
 Activated license
 
-### <a id="SuperOffice_WebApi_Agents_LicenseAgent_AssignThirdPartyLicensesAsync_System_Int32_System_String_System_String___SuperOffice_WebApi_RequestOptions_"></a> AssignThirdPartyLicensesAsync\(int, string, string\[\], RequestOptions\)
+### AssignThirdPartyLicensesAsync\(int, string, string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_LicenseAgent_AssignThirdPartyLicensesAsync_System_Int32_System_String_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Assign third party licenses
 
@@ -177,11 +177,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ModuleLicenseLink](/en/api/reference/webapi/SuperOffice.WebApi.Data.ModuleLicenseLink)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ModuleLicenseLink](/en/api/reference/webapi/SuperOffice.WebApi.Data.ModuleLicenseLink)\[\]\&gt;
 
 All module license names assigned
 
-### <a id="SuperOffice_WebApi_Agents_LicenseAgent_ChangeSerialNumberAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> ChangeSerialNumberAsync\(string, string, RequestOptions\)
+### ChangeSerialNumberAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_LicenseAgent_ChangeSerialNumberAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Change the new serial number for the installation. Requests a new license from SuperLicense, checks if change is authorized.
 
@@ -205,11 +205,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LicenseResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.LicenseResult)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LicenseResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.LicenseResult)\&gt;
 
 License after serial number/name change
 
-### <a id="SuperOffice_WebApi_Agents_LicenseAgent_GetCentralLicenseAsync_SuperOffice_WebApi_RequestOptions_"></a> GetCentralLicenseAsync\(RequestOptions\)
+### GetCentralLicenseAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_LicenseAgent_GetCentralLicenseAsync_SuperOffice_WebApi_RequestOptions_}
 
 ```csharp
 public Task<LicenseOwner[]> GetCentralLicenseAsync(RequestOptions requestOptions = null)
@@ -223,9 +223,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LicenseOwner](/en/api/reference/webapi/SuperOffice.WebApi.Data.LicenseOwner)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LicenseOwner](/en/api/reference/webapi/SuperOffice.WebApi.Data.LicenseOwner)\[\]\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_LicenseAgent_GetFencingInfoAsync_SuperOffice_WebApi_RequestOptions_"></a> GetFencingInfoAsync\(RequestOptions\)
+### GetFencingInfoAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_LicenseAgent_GetFencingInfoAsync_SuperOffice_WebApi_RequestOptions_}
 
 Returns fencinginfo if license fence is near or reached
 
@@ -241,11 +241,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[FencingInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.FencingInfo)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[FencingInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.FencingInfo)\&gt;
 
 The info of which license fence that is reached or near
 
-### <a id="SuperOffice_WebApi_Agents_LicenseAgent_GetLicenseForAllOwnersFromDBAsync_SuperOffice_WebApi_RequestOptions_"></a> GetLicenseForAllOwnersFromDBAsync\(RequestOptions\)
+### GetLicenseForAllOwnersFromDBAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_LicenseAgent_GetLicenseForAllOwnersFromDBAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get all licenses, with usage, from all module owners as they are stored in the database
 
@@ -261,9 +261,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ExtendedLicenseInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtendedLicenseInfo)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ExtendedLicenseInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtendedLicenseInfo)\[\]\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_LicenseAgent_GetLicenseFromDBAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetLicenseFromDBAsync\(string, RequestOptions\)
+### GetLicenseFromDBAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_LicenseAgent_GetLicenseFromDBAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get license, with usage, as it is stored in the database for one particular module owner.
 
@@ -283,11 +283,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ExtendedLicenseInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtendedLicenseInfo)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ExtendedLicenseInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtendedLicenseInfo)\&gt;
 
 License, with usage, as it is stored in the database.
 
-### <a id="SuperOffice_WebApi_Agents_LicenseAgent_GetLicenseFromFileAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetLicenseFromFileAsync\(string, RequestOptions\)
+### GetLicenseFromFileAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_LicenseAgent_GetLicenseFromFileAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Load a new license from file
 
@@ -307,9 +307,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ExtendedLicenseInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtendedLicenseInfo)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ExtendedLicenseInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtendedLicenseInfo)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_LicenseAgent_GetLicenseFromLicenseServerAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetLicenseFromLicenseServerAsync\(string, RequestOptions\)
+### GetLicenseFromLicenseServerAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_LicenseAgent_GetLicenseFromLicenseServerAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 ```csharp
 public Task<ExtendedLicenseInfo> GetLicenseFromLicenseServerAsync(string ownerName, RequestOptions requestOptions = null)
@@ -325,9 +325,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ExtendedLicenseInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtendedLicenseInfo)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ExtendedLicenseInfo](/en/api/reference/webapi/SuperOffice.WebApi.Data.ExtendedLicenseInfo)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_LicenseAgent_GetLicenseStatusFromLicenseServerAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetLicenseStatusFromLicenseServerAsync\(string, RequestOptions\)
+### GetLicenseStatusFromLicenseServerAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_LicenseAgent_GetLicenseStatusFromLicenseServerAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get License from the license server for a particular module owner.
 
@@ -347,11 +347,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[CheckLicenseStatusResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CheckLicenseStatusResult)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[CheckLicenseStatusResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.CheckLicenseStatusResult)\&gt;
 
 License from the database, from the license server and with usage.
 
-### <a id="SuperOffice_WebApi_Agents_LicenseAgent_GetModuleLicenseFromDBAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetModuleLicenseFromDBAsync\(string, string, RequestOptions\)
+### GetModuleLicenseFromDBAsync\(string, string, RequestOptions\) {#SuperOffice_WebApi_Agents_LicenseAgent_GetModuleLicenseFromDBAsync_System_String_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get license information for one particular license module.
 
@@ -375,11 +375,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ModuleLicense](/en/api/reference/webapi/SuperOffice.WebApi.Data.ModuleLicense)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ModuleLicense](/en/api/reference/webapi/SuperOffice.WebApi.Data.ModuleLicense)\&gt;
 
 Module License details, as it is stored in the database. NULL if not found.
 
-### <a id="SuperOffice_WebApi_Agents_LicenseAgent_GetModuleLicenseHistoryFromLicenseServerAsync_SuperOffice_WebApi_Data_ExtendedLicenseInfo_SuperOffice_WebApi_Data_ExtendedModuleLicense_SuperOffice_WebApi_RequestOptions_"></a> GetModuleLicenseHistoryFromLicenseServerAsync\(ExtendedLicenseInfo, ExtendedModuleLicense, RequestOptions\)
+### GetModuleLicenseHistoryFromLicenseServerAsync\(ExtendedLicenseInfo, ExtendedModuleLicense, RequestOptions\) {#SuperOffice_WebApi_Agents_LicenseAgent_GetModuleLicenseHistoryFromLicenseServerAsync_SuperOffice_WebApi_Data_ExtendedLicenseInfo_SuperOffice_WebApi_Data_ExtendedModuleLicense_SuperOffice_WebApi_RequestOptions_}
 
 Get details about a license from the license server.
 
@@ -403,11 +403,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 Information about a particular license module.
 
-### <a id="SuperOffice_WebApi_Agents_LicenseAgent_GetSatelliteLicensesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetSatelliteLicensesAsync\(int, RequestOptions\)
+### GetSatelliteLicensesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_LicenseAgent_GetSatelliteLicensesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Obtain information about satellite module licenses
 
@@ -427,11 +427,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LicenseOwner](/en/api/reference/webapi/SuperOffice.WebApi.Data.LicenseOwner)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LicenseOwner](/en/api/reference/webapi/SuperOffice.WebApi.Data.LicenseOwner)\[\]\&gt;
 
 Satellite module licenses grouped by owners.
 
-### <a id="SuperOffice_WebApi_Agents_LicenseAgent_GetShopUrlAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetShopUrlAsync\(string, RequestOptions\)
+### GetShopUrlAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_LicenseAgent_GetShopUrlAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get the shop URL for the specified module owner. This can be used to redirect user to the web shop.
 
@@ -451,11 +451,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[string](https://learn.microsoft.com/dotnet/api/system.string)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[string](https://learn.microsoft.com/dotnet/api/system.string)\&gt;
 
 The URL which contains the shop for the specified module owner.
 
-### <a id="SuperOffice_WebApi_Agents_LicenseAgent_GetThirdPartyLicenseAssignmentsAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_"></a> GetThirdPartyLicenseAssignmentsAsync\(int, string, RequestOptions\)
+### GetThirdPartyLicenseAssignmentsAsync\(int, string, RequestOptions\) {#SuperOffice_WebApi_Agents_LicenseAgent_GetThirdPartyLicenseAssignmentsAsync_System_Int32_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Get license assignments for an associate for licenses belonging to an other module owner than SuperOffice
 
@@ -479,11 +479,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ModuleLicenseLink](/en/api/reference/webapi/SuperOffice.WebApi.Data.ModuleLicenseLink)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ModuleLicenseLink](/en/api/reference/webapi/SuperOffice.WebApi.Data.ModuleLicenseLink)\[\]\&gt;
 
 Module license names
 
-### <a id="SuperOffice_WebApi_Agents_LicenseAgent_GetUserAndInstallationLicenceStatusAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetUserAndInstallationLicenceStatusAsync\(int, RequestOptions\)
+### GetUserAndInstallationLicenceStatusAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_LicenseAgent_GetUserAndInstallationLicenceStatusAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Get status values for user licenses and installation license that can be used for feedback to the user.
 
@@ -503,11 +503,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[UserAndInstallationLicenceStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserAndInstallationLicenceStatus)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[UserAndInstallationLicenceStatus](/en/api/reference/webapi/SuperOffice.WebApi.Data.UserAndInstallationLicenceStatus)\&gt;
 
 An object that holds information for producing license status feedback to the user.
 
-### <a id="SuperOffice_WebApi_Agents_LicenseAgent_GetUserLicensesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_"></a> GetUserLicensesAsync\(int, RequestOptions\)
+### GetUserLicensesAsync\(int, RequestOptions\) {#SuperOffice_WebApi_Agents_LicenseAgent_GetUserLicensesAsync_System_Int32_SuperOffice_WebApi_RequestOptions_}
 
 Obtain information about associate module licenses
 
@@ -527,11 +527,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LicenseOwner](/en/api/reference/webapi/SuperOffice.WebApi.Data.LicenseOwner)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LicenseOwner](/en/api/reference/webapi/SuperOffice.WebApi.Data.LicenseOwner)\[\]\&gt;
 
 Associate module licenses grouped by owners.
 
-### <a id="SuperOffice_WebApi_Agents_LicenseAgent_GetUserLicensesMDOListAsync_SuperOffice_WebApi_RequestOptions_"></a> GetUserLicensesMDOListAsync\(RequestOptions\)
+### GetUserLicensesMDOListAsync\(RequestOptions\) {#SuperOffice_WebApi_Agents_LicenseAgent_GetUserLicensesMDOListAsync_SuperOffice_WebApi_RequestOptions_}
 
 Get all licenses in a MDOListItem structure.
 
@@ -547,11 +547,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[SelectableMDOListItem](/en/api/reference/webapi/SuperOffice.WebApi.Data.SelectableMDOListItem)\[\]\&gt;
 
 Hierarchical structure of user licenses.
 
-### <a id="SuperOffice_WebApi_Agents_LicenseAgent_RemoveLicenseFromDBAsync_System_String_SuperOffice_WebApi_RequestOptions_"></a> RemoveLicenseFromDBAsync\(string, RequestOptions\)
+### RemoveLicenseFromDBAsync\(string, RequestOptions\) {#SuperOffice_WebApi_Agents_LicenseAgent_RemoveLicenseFromDBAsync_System_String_SuperOffice_WebApi_RequestOptions_}
 
 Remove the license from a particular module owner from the database.  It is not permitted to remove licenses from SuperOffice
 
@@ -571,9 +571,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LicenseResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.LicenseResult)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LicenseResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.LicenseResult)\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_LicenseAgent_SaveCentralLicenseAsync_SuperOffice_WebApi_Data_LicenseOwner___SuperOffice_WebApi_RequestOptions_"></a> SaveCentralLicenseAsync\(LicenseOwner\[\], RequestOptions\)
+### SaveCentralLicenseAsync\(LicenseOwner\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_LicenseAgent_SaveCentralLicenseAsync_SuperOffice_WebApi_Data_LicenseOwner___SuperOffice_WebApi_RequestOptions_}
 
 ```csharp
 public Task<LicenseOwner[]> SaveCentralLicenseAsync(LicenseOwner[] license, RequestOptions requestOptions = null)
@@ -589,9 +589,9 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LicenseOwner](/en/api/reference/webapi/SuperOffice.WebApi.Data.LicenseOwner)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LicenseOwner](/en/api/reference/webapi/SuperOffice.WebApi.Data.LicenseOwner)\[\]\&gt;
 
-### <a id="SuperOffice_WebApi_Agents_LicenseAgent_UnassignThirdPartyLicensesAsync_System_Int32_System_String_System_String___SuperOffice_WebApi_RequestOptions_"></a> UnassignThirdPartyLicensesAsync\(int, string, string\[\], RequestOptions\)
+### UnassignThirdPartyLicensesAsync\(int, string, string\[\], RequestOptions\) {#SuperOffice_WebApi_Agents_LicenseAgent_UnassignThirdPartyLicensesAsync_System_Int32_System_String_System_String___SuperOffice_WebApi_RequestOptions_}
 
 Unassign (remove) third party licenses
 
@@ -619,11 +619,11 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[ModuleLicenseLink](/en/api/reference/webapi/SuperOffice.WebApi.Data.ModuleLicenseLink)\[\]\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[ModuleLicenseLink](/en/api/reference/webapi/SuperOffice.WebApi.Data.ModuleLicenseLink)\[\]\&gt;
 
 All module license names assigned
 
-### <a id="SuperOffice_WebApi_Agents_LicenseAgent_ValidateLicenseInfoAsync_SuperOffice_WebApi_Data_ExtendedLicenseInfo_SuperOffice_WebApi_RequestOptions_"></a> ValidateLicenseInfoAsync\(ExtendedLicenseInfo, RequestOptions\)
+### ValidateLicenseInfoAsync\(ExtendedLicenseInfo, RequestOptions\) {#SuperOffice_WebApi_Agents_LicenseAgent_ValidateLicenseInfoAsync_SuperOffice_WebApi_Data_ExtendedLicenseInfo_SuperOffice_WebApi_RequestOptions_}
 
 Validate that a license is consistant.
 
@@ -643,5 +643,5 @@ Override language/culture codes on this request.
 
 #### Returns
 
- [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[LicenseResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.LicenseResult)\>
+ [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[LicenseResult](/en/api/reference/webapi/SuperOffice.WebApi.Data.LicenseResult)\&gt;
 

@@ -1,4 +1,4 @@
-# <a id="SuperOffice_WebApi_Authorization_AuthorizationTicket"></a> Class AuthorizationTicket
+# Class AuthorizationTicket {#SuperOffice_WebApi_Authorization_AuthorizationTicket}
 
 Namespace: [SuperOffice.WebApi.Authorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization)  
 Assembly: SuperOffice.WebApi.Authorization.dll  
@@ -30,7 +30,7 @@ public class AuthorizationTicket : IAuthorization
 
 ## Constructors
 
-### <a id="SuperOffice_WebApi_Authorization_AuthorizationTicket__ctor_System_String_"></a> AuthorizationTicket\(string\)
+### AuthorizationTicket\(string\) {#SuperOffice_WebApi_Authorization_AuthorizationTicket__ctor_System_String_}
 
 Ticket Authorization constructor used in CRM onsite scenario's.
 
@@ -46,7 +46,7 @@ SOTicket string: "7T:abc123=="
 
 ## Properties
 
-### <a id="SuperOffice_WebApi_Authorization_AuthorizationTicket_RefreshAuthorizationAsync"></a> RefreshAuthorizationAsync
+### RefreshAuthorizationAsync {#SuperOffice_WebApi_Authorization_AuthorizationTicket_RefreshAuthorizationAsync}
 
 Try to refresh this [IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization) instance.
 
@@ -56,9 +56,9 @@ public Func<ReAuthorizationArgs, Task<IAuthorization>> RefreshAuthorizationAsync
 
 #### Property Value
 
- [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)<[ReAuthorizationArgs](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.ReAuthorizationArgs), [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)<[IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization)\>\>
+ [Func](https://learn.microsoft.com/dotnet/api/system.func\-2)&lt;[ReAuthorizationArgs](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.ReAuthorizationArgs), [Task](https://learn.microsoft.com/dotnet/api/system.threading.tasks.task\-1)&lt;[IAuthorization](/en/api/reference/webapi/SuperOffice.WebApi.Authorization.IAuthorization)\&gt;\&gt;
 
-### <a id="SuperOffice_WebApi_Authorization_AuthorizationTicket_Ticket"></a> Ticket
+### Ticket {#SuperOffice_WebApi_Authorization_AuthorizationTicket_Ticket}
 
 The SOTicket value.
 
@@ -72,7 +72,7 @@ protected string Ticket { get; set; }
 
 ## Methods
 
-### <a id="SuperOffice_WebApi_Authorization_AuthorizationTicket_GetAuthorization"></a> GetAuthorization\(\)
+### GetAuthorization\(\) {#SuperOffice_WebApi_Authorization_AuthorizationTicket_GetAuthorization}
 
 Gets a tuple that represents authorization scheme and parameter for an SOTicket.
 
