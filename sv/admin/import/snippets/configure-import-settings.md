@@ -1,3 +1,3 @@
-Klicka på **Konfigurera importinställningar** och [justera importinställningarna][1].
+Klicka på **Konfigurera importinställningar** och [justera importinställningarna][1700].
 
-[1]: /sv/admin/import/settings
+[1700]: /sv/admin/import/settings

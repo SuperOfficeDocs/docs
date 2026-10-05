@@ -6,13 +6,13 @@ Du kan velge om du vil sende utsendelsen med det samme, eller om du vil planlegg
 
 På Bekreft-bildet finner du et sammendrag av trinnene du har gjennomført så langt, og du kan velge mellom å sende eller planlegge utsendelsen:
 
-![På Bekreft-bildet finner du et sammendrag av trinnene du har gjennomført så langt, og du kan velge mellom å sende eller planlegge utsendelsen -screenshot][img4]
+![På Bekreft-bildet finner du et sammendrag av trinnene du har gjennomført så langt, og du kan velge mellom å sende eller planlegge utsendelsen -screenshot][img1628]
 
 ### Sende utsendelsen nå
 
 Klikk på **Send nå** for å sende utsendelsen med det samme. Arbeidsflyten lukkes, og du returneres til fanen **Utsendelser**.
 
-Klikk på utsendelsen i listen for å vise sendestatus og statistikk. [Slik sporer du utsendelsen og viser statistikk][1].
+Klikk på utsendelsen i listen for å vise sendestatus og statistikk. [Slik sporer du utsendelsen og viser statistikk][1627].
 
 ### Planlegge utsendelse
 
@@ -26,10 +26,10 @@ For ikke å overbelaste serverne i arbeidstiden kan det være hensiktsmessig å 
 
 ### Hva skjer nå?
 
-Du kan klikke på utsendelsen i listen for å [vise sendestatus og statistikk][1].
+Du kan klikke på utsendelsen i listen for å [vise sendestatus og statistikk][1627].
 
 Hvis du vil stoppe utsendelsen eller starte en planlagt utsendelse før planen, klikker du på henholdsvis **Stopp**- eller **Start**-knappen.
 
-[1]: /no/marketing/mailing/learn/view-statistics
+[1627]: /no/marketing/mailing/learn/view-statistics
 
-[img4]: /media/loc/en/marketing/send-or-schedule.png
+[img1628]: /media/loc/en/marketing/send-or-schedule.png

@@ -1,3 +1,3 @@
-Klicken Sie auf **Importeinstellungen konfigurieren** und [Importeinstellungen anpassen][1].
+Klicken Sie auf **Importeinstellungen konfigurieren** und [Importeinstellungen anpassen][1400].
 
-[1]: /de/admin/import/settings
+[1400]: /de/admin/import/settings

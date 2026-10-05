@@ -10,6 +10,6 @@ Rækker uden ikoner importeres ikke. Hvis du ser, at mange kontakter ikke import
     2. Klik på listen **Hvis intet firmanavn** under **Kontakt**.
     3. Vælg **Brug personens navn**.
     4. Klik på **Gem**.
-    5. Klik på **Næste**, og kontroller, at ikonet [Nyt firma][img1] vises ved siden af personen. Personen registreres som firma i SuperOffice CRM med sig selv som eneste kontaktperson.
+    5. Klik på **Næste**, og kontroller, at ikonet [Nyt firma][img1305] vises ved siden af personen. Personen registreres som firma i SuperOffice CRM med sig selv som eneste kontaktperson.
 
-[img1]: /media/icons/admin/import-preview-icon-company-new.png
+[img1305]: /media/icons/admin/import-preview-icon-company-new.png

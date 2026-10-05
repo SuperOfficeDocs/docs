@@ -1,3 +1,3 @@
-Ga naar de gewenste persoon in het scherm Persoon. (Zie [Het scherm Zoeken gebruiken][1].)
+Ga naar de gewenste persoon in het scherm Persoon. (Zie [Het scherm Zoeken gebruiken][1510].)
 
-[1]: /nl/search-options/learn/find-screen
+[1510]: /nl/search-options/learn/find-screen

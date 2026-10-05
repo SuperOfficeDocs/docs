@@ -1,0 +1,41 @@
+name: Snippet label guard
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+    paths:
+      - '**/*.md'
+      - '**/*.mdx'
+      - 'tools/ci/snippet-label-ranges.json'
+      - 'tools/ci/check-snippet-labels.py'
+      - 'tools/ci/lib/**'
+      - '.github/workflows/snippet-label-guard.yml'
+
+# Automatically cancel in-progress runs on the same branch
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  snippet-label-guard:
+    name: "Check snippet reference labels stay in their reserved ranges"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # Checks every tracked page and snippet rather than only the changed files, so a clash that
+      # only appears once two PRs are combined (both took the same `next` value) is still caught.
+      # No PR-supplied value reaches the shell here.
+      - name: "Check snippet labels"
+        run: python tools/ci/check-snippet-labels.py --all

@@ -6,13 +6,13 @@ U kunt kiezen of u uw mailing direct wilt versturen of dat u de mailing wilt inp
 
 Het scherm Bevestigen geeft u een overzicht van de vorige stappen die u hebt gezet en laat u uw mailing verzenden of plannen:
 
-![Het scherm Bevestigen geeft u een overzicht van de vorige stappen die u hebt gezet en laat u uw mailing verzenden of plannen -screenshot][img4]
+![Het scherm Bevestigen geeft u een overzicht van de vorige stappen die u hebt gezet en laat u uw mailing verzenden of plannen -screenshot][img1528]
 
 ## De mailing nu verzenden
 
 Klik op **Nu verzenden** om de mailing onmiddellijk te verzenden. De workflow wordt gesloten en u gaat terug naar het tabblad **Mailings**.
 
-Klik op de mailing in de lijst om de verzendstatus en de statistieken weer te geven. [De mailing traceren en statistieken weergeven][1].
+Klik op de mailing in de lijst om de verzendstatus en de statistieken weer te geven. [De mailing traceren en statistieken weergeven][1527].
 
 ## Plannen voor verzenden
 
@@ -26,10 +26,10 @@ Om uw servers niet te overbelasten tijdens werkuren, is het een goed idee om een
 
 ## Wat gebeurt er nu?
 
-U kunt klikken op de mailing in de lijst om de [verzendstatus en de statistieken weer te geven][1].
+U kunt klikken op de mailing in de lijst om de [verzendstatus en de statistieken weer te geven][1527].
 
 Als u de mailing wilt stoppen of een geplande mailing eerder dan gepland wilt starten, klikt u respectievelijk op de knop **Stoppen** of **Starten**.
 
-[1]: /nl/marketing/mailing/learn/view-statistics
+[1527]: /nl/marketing/mailing/learn/view-statistics
 
-[img4]: /media/loc/en/marketing/send-or-schedule.png
+[img1528]: /media/loc/en/marketing/send-or-schedule.png

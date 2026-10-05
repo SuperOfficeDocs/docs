@@ -2,6 +2,6 @@ Klicken Sie auf die Schaltfläche **Suchen** unter der Registerkarte **Kriterien
 
 * Alle Ergebnisse, die den angegebenen Suchkriterien entsprechen, werden auf der Registerkarte **Ergebnisse** angezeigt.
 * Wenn Sie zu viele oder zu wenig Treffer erzielen, können Sie die Suchkriterien anpassen, indem Sie in den verschiedenen Listenfeldern andere Werte auswählen.
-* Öffnen, Vorschau anzeigen, oder speichern wie oben beschrieben in [Arbeiten mit Suchergebnissen][1].
+* Öffnen, Vorschau anzeigen, oder speichern wie oben beschrieben in [Arbeiten mit Suchergebnissen][1429].
 
-[1]: /de/search-options/learn/find-screen#results
+[1429]: /de/search-options/learn/find-screen#results

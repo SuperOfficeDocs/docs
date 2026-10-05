@@ -6,13 +6,13 @@ Du kan vælge, om du vil sende din mail med det samme, eller om du vil tidsindst
 
 I skærmbilledet Bekræft får du en oversigt over de forudgående trin, du har gennemført, og du får mulighed for enten at afsende eller tidsindstille din mail:
 
-![I skærmbilledet Bekræft får du en oversigt over de forudgående trin, du har gennemført, og du får mulighed for enten at afsende eller tidsindstille din mail -screenshot][img4]
+![I skærmbilledet Bekræft får du en oversigt over de forudgående trin, du har gennemført, og du får mulighed for enten at afsende eller tidsindstille din mail -screenshot][img1328]
 
 ### Sende udsendelsen med det samme
 
 Klik på **Send nu** for at afsende udsendelsen med det samme. Workflowet lukker, og du kommer tilbage til fanebladet **Udsendelser**.
 
-Klik på udsendelsen på listen for at se status og statistik for din afsendelse. [Spor udsendelsen og få vist statistik][1].
+Klik på udsendelsen på listen for at se status og statistik for din afsendelse. [Spor udsendelsen og få vist statistik][1327].
 
 ### Tidsindstilling af udsendelsen
 
@@ -26,10 +26,10 @@ For ikke at overbelaste serverne i arbejdstiden kan det være en god idé at væ
 
 ### Hvad sker der så nu?
 
-Klik på udsendelsen på listen for at [se status og statistik for din afsendelse][1].
+Klik på udsendelsen på listen for at [se status og statistik for din afsendelse][1327].
 
 For at standse udsendelsen eller påbegynde en planlagt udsendelse før planlagt tid, skal du klikke på de respektive **Stop** eller **Start** - knapper.
 
-[1]: /da/marketing/mailing/learn/view-statistics
+[1327]: /da/marketing/mailing/learn/view-statistics
 
-[img4]: /media/loc/en/marketing/send-or-schedule.png
+[img1328]: /media/loc/en/marketing/send-or-schedule.png

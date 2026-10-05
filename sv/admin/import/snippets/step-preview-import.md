@@ -4,13 +4,13 @@
 
     | Ikon | Beskrivning |
     |:-:|---|
-    | ![Ikon - nytt företag][img1] | Företaget finns inte och kommer att läggas till. |
-    | ![Ikon - företag ändrat][img2] | Företaget finns redan och kommer att uppdateras. |
-    | ![Ikon - ny kontakt][img3] | Kontakten finns inte och kommer att läggas till. |
-    | ![Ikon - kontakt ändrad][img4] | Kontakten finns redan och kommer att uppdateras. |
+    | ![Ikon - nytt företag][img1701] | Företaget finns inte och kommer att läggas till. |
+    | ![Ikon - företag ändrat][img1702] | Företaget finns redan och kommer att uppdateras. |
+    | ![Ikon - ny kontakt][img1703] | Kontakten finns inte och kommer att läggas till. |
+    | ![Ikon - kontakt ändrad][img1704] | Kontakten finns redan och kommer att uppdateras. |
     | tom | Ingen uppdatering. |
 
-[img1]: /media/icons/admin/import-preview-icon-company-new.png
-[img2]: /media/icons/admin/import-preview-icon-company-changed.png
-[img3]: /media/icons/admin/import-preview-icon-person-new.png
-[img4]: /media/icons/admin/import-preview-icon-person-changed.png
+[img1701]: /media/icons/admin/import-preview-icon-company-new.png
+[img1702]: /media/icons/admin/import-preview-icon-company-changed.png
+[img1703]: /media/icons/admin/import-preview-icon-person-new.png
+[img1704]: /media/icons/admin/import-preview-icon-person-changed.png

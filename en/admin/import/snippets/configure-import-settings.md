@@ -1,3 +1,3 @@
-Click **Configure import settings** and [adjust the import settings][1].
+Click **Configure import settings** and [adjust the import settings][1100].
 
-[1]: /en/admin/import/settings
+[1100]: /en/admin/import/settings

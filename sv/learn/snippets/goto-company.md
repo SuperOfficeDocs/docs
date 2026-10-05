@@ -1,3 +1,3 @@
-Öppna företaget i fönstret Företag. (Se [Använd fönstret Sök][1].)
+Öppna företaget i fönstret Företag. (Se [Använd fönstret Sök][1709].)
 
-[1]: /sv/search-options/learn/find-screen
+[1709]: /sv/search-options/learn/find-screen

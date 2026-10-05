@@ -6,13 +6,13 @@ You can choose whether you want to send your mailing straight away or if you wan
 
 The Confirm screen will give you a summary of the previous steps you have taken and let you either send or schedule your mailing:
 
-![The Confirm screen will give you a summary of the previous steps you have taken and let you either send or schedule your mailing -screenshot][img4]
+![The Confirm screen will give you a summary of the previous steps you have taken and let you either send or schedule your mailing -screenshot][img1160]
 
 ### Send the mailing now
 
 Click **Send now** to send the mailing immediately. The workflow closes and you are returned to the **Mailings** tab.
 
-Click the mailing in the list to view sending status and statistics. [How to track the mailing and view statistics][1].
+Click the mailing in the list to view sending status and statistics. [How to track the mailing and view statistics][1159].
 
 ### Schedule to send
 
@@ -26,10 +26,10 @@ To not overload your servers during working hours, it would be a good idea to ch
 
 ### What happens now?
 
-You can click the mailing in the list to [view sending status and statistics][1].
+You can click the mailing in the list to [view sending status and statistics][1159].
 
 To stop the mailing or start a planned mailing ahead of schedule, click the **Stop** or **Start** button respectively.
 
-[1]: /en/marketing/mailing/learn/view-statistics
+[1159]: /en/marketing/mailing/learn/view-statistics
 
-[img4]: /media/loc/en/marketing/send-or-schedule.png
+[img1160]: /media/loc/en/marketing/send-or-schedule.png

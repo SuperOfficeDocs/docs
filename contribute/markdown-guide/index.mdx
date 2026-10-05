@@ -4,7 +4,7 @@ title: Markdown guide
 description: This Markdown style guide is intended to ensure that the markup of SuperOfficeDocs has a consistent style, and is easy to navigate and maintain.
 keywords: ['markdown guide', 'callouts', 'headings', 'links', 'lists', 'tables', 'metadata', 'snippets', 'Phosphor']
 author: digitaldiina
-date: 09.08.2026
+date: 05.10.2026
 content_type: reference
 related:
   - /contribute/markdown-guide/docfx-to-mintlify-cheat-sheet
@@ -296,6 +296,30 @@ Here are requirements and considerations for snippet files.
 * Don't add metadata or HTML comments at the top of a snippet file.
 
 * A relative link inside a snippet resolves against the snippet's own location, not the page that imports it, so a topic-local snippet can follow that topic's normal relative-link rule, but a repository-root snippet reused across different topics or languages should use root-relative links, since it has no single "close by" tree to be relative to. See [page links][6] for the general rule.
+
+### Reference labels in snippets {#snippet-labels}
+
+A reference-style link label defined in a snippet overrides the same label on the page that imports it, so a snippet that defines `[1]` silently changes where the page's own `[1]` points. To prevent that, every top-level folder owns a reserved block of numbers for the labels in its snippets, and pages never use them:
+
+| Where the snippet lives | Labels |
+|---|---|
+| Pages, anywhere | 1 to 999 |
+| Repository-root /snippets | 1000 to 1099 |
+| /en | 1100 to 1299 |
+| /da | 1300 to 1399 |
+| /de | 1400 to 1499 |
+| /nl | 1500 to 1599 |
+| /no | 1600 to 1699 |
+| /sv | 1700 to 1799 |
+| /integrations | 1800 to 1899 |
+
+* Link labels are plain numbers, for example `[1100]`. Image labels keep the `img` prefix, for example `[img1101]`.
+* Take the next label from the `next` value for your folder in *tools/ci/snippet-label-ranges.json*, and raise that value in the same pull request.
+* Never reuse a number, and never use a letter prefix.
+* A snippet defines every label it uses. Don't rely on the importing page to supply one.
+* *contribute* and *release-notes* snippets are outside this scheme.
+
+A pull request check fails when a snippet label is outside its folder's block, when two snippets define the same label, or when a page uses a number from a snippet block. It warns when `next` is out of date.
 
 ### Local versus repository-root snippets
 

@@ -2,6 +2,6 @@ Klikk på **Finn**-knappen under fanen **Kriterier**.
 
 * Alle resultatene som samsvarer med søkekriteriene du har angitt, vises i fanen **Resultater**.
 * Hvis du får for få eller for mange treff, kan du justere søkekriteriene ved å velge noe annet i de ulike listeboksene.
-* Åpne, forhåndsvis eller lagre resultatene som beskrevet over i [Arbeid med søkeresultat][1].
+* Åpne, forhåndsvis eller lagre resultatene som beskrevet over i [Arbeid med søkeresultat][1629].
 
-[1]: /no/search-options/learn/find-screen#results
+[1629]: /no/search-options/learn/find-screen#results

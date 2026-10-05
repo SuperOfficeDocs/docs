@@ -1,3 +1,3 @@
-Klik på **Konfigurer importindstillinger**, og [juster importindstillingerne][1].
+Klik på **Konfigurer importindstillinger**, og [juster importindstillingerne][1300].
 
-[1]: /da/admin/import/settings
+[1300]: /da/admin/import/settings

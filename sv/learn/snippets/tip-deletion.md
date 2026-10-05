@@ -1,3 +1,3 @@
-Mer information finns under [Ta bort poster i SuperOffice CRM][1].
+Mer information finns under [Ta bort poster i SuperOffice CRM][1713].
 
-[1]: /sv/learn/basics/deleting-elements
+[1713]: /sv/learn/basics/deleting-elements

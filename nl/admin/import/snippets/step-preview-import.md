@@ -4,13 +4,13 @@
 
     | Pictogram | Beschrijving |
     |:-:|---|
-    | ![Pictogram - nieuw bedrijf][img1] | Het bedrijf bestaat niet en wordt toegevoegd. |
-    | ![Pictogram - bedrijf gewijzigd][img2] | Het bedrijf bestaat al en wordt bijgewerkt. |
-    | ![Pictogram - nieuwe contactpersoon][img3] | De contactpersoon bestaat niet en wordt toegevoegd. |
-    | ![Pictogram - contactpersoon gewijzigd][img4] | De contactpersoon bestaat al en wordt bijgewerkt. |
+    | ![Pictogram - nieuw bedrijf][img1501] | Het bedrijf bestaat niet en wordt toegevoegd. |
+    | ![Pictogram - bedrijf gewijzigd][img1502] | Het bedrijf bestaat al en wordt bijgewerkt. |
+    | ![Pictogram - nieuwe contactpersoon][img1503] | De contactpersoon bestaat niet en wordt toegevoegd. |
+    | ![Pictogram - contactpersoon gewijzigd][img1504] | De contactpersoon bestaat al en wordt bijgewerkt. |
     | leeg | Geen update. |
 
-[img1]: /media/icons/admin/import-preview-icon-company-new.png
-[img2]: /media/icons/admin/import-preview-icon-company-changed.png
-[img3]: /media/icons/admin/import-preview-icon-person-new.png
-[img4]: /media/icons/admin/import-preview-icon-person-changed.png
+[img1501]: /media/icons/admin/import-preview-icon-company-new.png
+[img1502]: /media/icons/admin/import-preview-icon-company-changed.png
+[img1503]: /media/icons/admin/import-preview-icon-person-new.png
+[img1504]: /media/icons/admin/import-preview-icon-person-changed.png

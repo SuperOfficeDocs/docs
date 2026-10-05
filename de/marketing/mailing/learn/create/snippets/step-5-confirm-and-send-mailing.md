@@ -6,13 +6,13 @@ Sie können wählen, ob Sie Ihre Kampagne sofort versenden oder die Kampagne pla
 
 Auf der Anzeige Bestätigen erhalten Sie eine Zusammenfassung der vorherigen unternommenen Schritte und Sie können Ihre Kampagne entweder versenden oder planen:
 
-![Auf der Anzeige Bestätigen erhalten Sie eine Zusammenfassung der vorherigen unternommenen Schritte und Sie können Ihre Kampagne entweder versenden oder planen -screenshot][img4]
+![Auf der Anzeige Bestätigen erhalten Sie eine Zusammenfassung der vorherigen unternommenen Schritte und Sie können Ihre Kampagne entweder versenden oder planen -screenshot][img1428]
 
 ### Kampagne jetzt senden
 
 Klicken Sie auf **Jetzt senden**, um die Kampagne sofort zu senden. Der Workflow wird abgeschlossen und Sie gelangen wieder zur Registerkarte **Kampagnen**.
 
-Klicken Sie auf die Kampagne in der Liste, um sich den Sendestatus und die Statistiken anzeigen zu lassen. [Wie man die Kampagne überwacht und Statistiken anzeigt][1].
+Klicken Sie auf die Kampagne in der Liste, um sich den Sendestatus und die Statistiken anzeigen zu lassen. [Wie man die Kampagne überwacht und Statistiken anzeigt][1427].
 
 ### Geplanter Versand
 
@@ -26,10 +26,10 @@ Um Ihre E-Mail-Server während der Arbeitszeit nicht zu überlasten, wird empfoh
 
 ### Was geschieht jetzt?
 
-Durch einen Klick auf die Kampagne in der Liste können sich den [Sendestatus und die Statistiken anzeigen][1] lassen.
+Durch einen Klick auf die Kampagne in der Liste können sich den [Sendestatus und die Statistiken anzeigen][1427] lassen.
 
 Klicken Sie auf **Stopp** oder **Start**, um die geplante Kampagne anzuhalten oder vorzeitig zu starten.
 
-[1]: /de/marketing/mailing/learn/view-statistics
+[1427]: /de/marketing/mailing/learn/view-statistics
 
-[img4]: /media/loc/en/marketing/send-or-schedule.png
+[img1428]: /media/loc/en/marketing/send-or-schedule.png

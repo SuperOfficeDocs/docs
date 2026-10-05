@@ -1,3 +1,3 @@
-Klik op **Importinstellingen configureren** en [pas de importinstellingen aan][1].
+Klik op **Importinstellingen configureren** en [pas de importinstellingen aan][1500].
 
-[1]: /nl/admin/import/settings
+[1500]: /nl/admin/import/settings

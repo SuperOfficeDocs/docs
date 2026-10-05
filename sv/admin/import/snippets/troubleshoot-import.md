@@ -10,6 +10,6 @@ Rader utan ikoner importeras inte. Om du ser att många kontakter inte importera
     2. Klicka på listan **Om inget företagsnamn** under **Kontakt**.
     3. Välj **Skapa företag med kontaktens namn**.
     4. Klicka på **Spara**.
-    5. Klicka på **Nästa** och kontrollera att ikonen [Nytt företag][img1] visas bredvid kontakten. Personen registreras som ett företag i SuperOffice CRM med sig själv som enda kontakt.
+    5. Klicka på **Nästa** och kontrollera att ikonen [Nytt företag][img1705] visas bredvid kontakten. Personen registreras som ett företag i SuperOffice CRM med sig själv som enda kontakt.
 
-[img1]: /media/icons/admin/import-preview-icon-company-new.png
+[img1705]: /media/icons/admin/import-preview-icon-company-new.png

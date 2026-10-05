@@ -1,21 +1,21 @@
-* [Google Workspace Integration][fa1]
-* [SharePoint Documents][fa2]
-* [SuperOffice for Mailchimp][fa6]
-* [SuperOffice for Outlook][fa3]
-* [SuperOffice for Teams][fa4]
-* [SuperOffice for Trello][fa7]
-* [SuperOffice for WordPress][fa8]
-* [SuperOffice Gmail Link][fa5]
-* [Teams Notify][fa9]
-* [Webex Notify][fa10]
+* [Google Workspace Integration][1000]
+* [SharePoint Documents][1001]
+* [SuperOffice for Mailchimp][1005]
+* [SuperOffice for Outlook][1002]
+* [SuperOffice for Teams][1003]
+* [SuperOffice for Trello][1006]
+* [SuperOffice for WordPress][1007]
+* [SuperOffice Gmail Link][1004]
+* [Teams Notify][1008]
+* [Webex Notify][1009]
 
-[fa1]: /integrations/g-suite/index
-[fa2]: /integrations/sharepoint-documents/index
-[fa3]: /integrations/superoffice-for-outlook/index
-[fa4]: /integrations/superoffice-for-teams/index
-[fa5]: /integrations/gmail-link/index
-[fa6]: https://appstore.superoffice.com/superoffice-as/superoffice-for-mailchimp
-[fa7]: https://appstore.superoffice.com/superoffice-as/superoffice-for-trello
-[fa8]: https://appstore.superoffice.com/superoffice-as/superoffice-for-wordpress
-[fa9]: https://appstore.superoffice.com/superoffice-as/superoffice-for-microsoft-teams
-[fa10]: https://appstore.superoffice.com/superoffice-as/superoffice-for-webex
+[1000]: /integrations/g-suite/index
+[1001]: /integrations/sharepoint-documents/index
+[1002]: /integrations/superoffice-for-outlook/index
+[1003]: /integrations/superoffice-for-teams/index
+[1004]: /integrations/gmail-link/index
+[1005]: https://appstore.superoffice.com/superoffice-as/superoffice-for-mailchimp
+[1006]: https://appstore.superoffice.com/superoffice-as/superoffice-for-trello
+[1007]: https://appstore.superoffice.com/superoffice-as/superoffice-for-wordpress
+[1008]: https://appstore.superoffice.com/superoffice-as/superoffice-for-microsoft-teams
+[1009]: https://appstore.superoffice.com/superoffice-as/superoffice-for-webex

@@ -1,6 +1,6 @@
 * **Alle links traceren**: selecteer deze optie om alle links in de mailing te traceren. Dit betekent dat ook links worden opgenomen die niet als gevolgde links zijn geregistreerd in SuperOffice Marketing, bijvoorbeeld ongeregistreerde links uit sjablonen of oude mailings of links die rechtstreeks zijn ingevoerd in de bron/HTML-code.
 
-* **Google Analytics gebruiken**: Selecteer deze optie om de mailing te traceren en te linken aan [Google Analytics][1] (als dat is ingesteld voor uw website). Voer in de onderstaande velden de gegevens in die moeten worden toegevoegd als parameters in de gevolgde URL's.
+* **Google Analytics gebruiken**: Selecteer deze optie om de mailing te traceren en te linken aan [Google Analytics][1516] (als dat is ingesteld voor uw website). Voer in de onderstaande velden de gegevens in die moeten worden toegevoegd als parameters in de gevolgde URL's.
 
   * **Medium**: Dit veld is standaard ingesteld op **E-mail**. U kunt dit veld niet bewerken.
 
@@ -8,4 +8,4 @@
 
   * **Campagne**: Voer het type mailing in, zoals "nieuwsbrief" of 'lead-nurturing', of voer een specifieke campagnenaam in, zoals "lente-uitverkoop-juni-21" of "upgrade-campagne-v9".
 
-[1]: /nl/marketing/tracked-links/learn/index#google
+[1516]: /nl/marketing/tracked-links/learn/index#google

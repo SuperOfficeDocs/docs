@@ -52,6 +52,7 @@ Scripts that convert, generate, or verify content for this repo. Not published t
 | `fix-docfx-see-cref.py` | ci | Auto-fixes: resolves dead DocFX `<see cref="T:...">` XML-doc references in `archive-providers`/`mdo-providers`/`webapi` to a real link, or falls back to plain text, commits back to the PR — see #407 | Yes |
 | `check-landing-page-templates.py` | ci | Warns (never fails) if a `mode: "custom"` page mixes category-landing and subcategory template markup | Yes |
 | `check-release-notes-api-structure.py` | ci | Warns (never fails) if a changed file sits in a subfolder under `release-notes/{major}/api/` | Yes |
+| `check-snippet-labels.py` | ci | Fails the PR if a snippet label is non-numeric, outside its folder's reserved range (`snippet-label-ranges.json`) or duplicated, or if a page uses a snippet-range label; warns on a stale `next` — see #548/#552 | Yes |
 | `check-index-relative-links.py` | ci | Warns (never fails) if a changed `index.md`/`index.mdx` page has a relative (`./`/`../`) link — see #375/#377/#378 | Yes |
 | `check-no-new-docfx-see-cref.py` | ci | Fails the PR if it adds a new `<see cref="T:...">` DocFX XML-doc reference (added diff lines only, doesn't re-flag the 797 pre-existing files) — see #407 | Yes |
 | `check-no-new-docfx-xref.py` | ci | Fails the PR if it adds a new DocFX `<xref:...>` or `<xref href="...">` cross-reference (added diff lines only) — catches both hand-authored edits and a content drop regenerating a page that reintroduces an already-fixed occurrence, see #312/#404 | Yes |
