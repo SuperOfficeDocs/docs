@@ -2,10 +2,10 @@
 uid: help-de-document-update
 title: Dokumente bearbeiten
 description: Dokumente bearbeiten
-keywords: ['Dokument bearbeiten', 'Dokumenteigenschaften', 'Dokument', 'herunterladen']
+keywords: ['Dokument bearbeiten', 'Dokumenteigenschaften', 'Dokument', 'herunterladen', 'E-Mail herunterladen', 'E-Mail öffnen']
 author: digitaldiina
-date: 18.09.2026
-so_version: 12.2
+date: 06.10.2026
+so_version: 12.4
 content_type: howto
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
@@ -90,7 +90,7 @@ In diesem Verfahren wird beschrieben, wie Sie mit einem Desktop-Textbearbeitungs
 </Tab>
 </Tabs>
 
-### Browser-Sicherheitsfrage beim Öffnen von Dateien {#allow}
+## Browser-Sicherheitsfrage beim Öffnen von Dateien {#allow}
 
 Wenn Sie auf ein Dokument, eine Datei oder eine E-Mail in SuperOffice zugreifen und diese bearbeiten, fordert Ihr Browser Sie mit einer *Sicherheitsfrage* zur Dateiherunterladung auf.
 
@@ -99,21 +99,31 @@ Wenn Sie auf ein Dokument, eine Datei oder eine E-Mail in SuperOffice zugreifen 
 
 Die Dialogbox sieht in Chrome, Edge, Firefox und Safari etwas anders aus.
 
-**Chrome:** Wählen Sie **Öffnen URL:SuperOffice-Extensions** aus.
+<Tabs>
+<Tab title="Chrome">
+Wählen Sie **Öffnen URL:SuperOffice-Extensions** aus.
 
 ![Chrome: Öffnen URL:SuperOffice-Extensions button -screenshot][img5]
+</Tab>
 
-**Edge:** Wählen Sie **Öffnen** aus.
+<Tab title="Edge">
+Wählen Sie **Öffnen** aus.
 
 ![Edge: Öffnen button -screenshot][img2]
+</Tab>
 
-**Firefox:** Wählen Sie **Link öffnen** aus.
+<Tab title="Firefox">
+Wählen Sie **Link öffnen** aus.
 
 ![Firefox: Link öffnen button -screenshot][img3]
+</Tab>
 
-**Safari:** Wählen Sie **Immer erlauben** oder **Erlauben** aus.
+<Tab title="Safari">
+Wählen Sie **Immer erlauben** oder **Erlauben** aus.
 
 ![Safari: Immer erlauben oder Erlauben button -screenshot][img4]
+</Tab>
+</Tabs>
 
 ## Dokumente löschen {#delete}
 
@@ -133,18 +143,88 @@ Beim Anzeigen eines bestimmten Dokuments:
 2. Wählen Sie **Löschen**.
 3. Bestätigen oder abbrechen Sie die Löschung im Bestätigungsdialog.
 
-## Dokument herunterladen {#download}
+## Dokument oder E-Mail herunterladen {#download}
 
-Beim Herunterladen eines Dokuments wird eine Kopie der Dokumentdatei auf Ihrem Gerät gespeichert.
+Beim Herunterladen wird eine Kopie der Datei auf Ihrem Gerät gespeichert. In SuperOffice ist [eine gespeicherte E-Mail ein Dokument][6]. Sie laden eine E-Mail daher genauso herunter wie jedes andere Dokument.
 
-1. Klicken Sie auf die Schaltfläche **Aufgabe** (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>) im **Dokument**-Dialog.
+1. Klicken Sie auf die Schaltfläche **Aufgabe** (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>). Die Schaltfläche ist im **Dokument**-Dialog, im E-Mail-Dialog und in der E-Mail-Vorschau verfügbar.
 2. Wählen Sie **Herunterladen**.
 
 ![E-Mail oder Dokument über die Schaltfläche Aufgabe herunterladen -screenshot][img6]
 
 <Tip>
-Sie können ein Dokument auch direkt über die [Bereichsregisterkarte Aktivitäten][4] herunterladen, indem Sie mit der rechten Maustaste darauf klicken und **Herunterladen** wählen.
+Sie können ein Dokument oder eine E-Mail auch direkt über die [Bereichsregisterkarte Aktivitäten][4] herunterladen, indem Sie mit der rechten Maustaste darauf klicken und **Herunterladen** wählen.
 </Tip>
+
+### Heruntergeladene E-Mails ohne Abfrage des Dateinamens speichern {#download-no-prompt}
+
+Wenn Sie eine E-Mail herunterladen, sendet SuperOffice die Datei, und Ihr Browser entscheidet, ob er nach einem Dateinamen fragt. Um E-Mails direkt im Ordner *Downloads* zu speichern, schalten Sie die Abfrage in Ihrem Browser aus.
+
+<Tabs>
+<Tab title="Chrome">
+1. Wählen Sie **Einstellungen** und dann **Downloads**.
+
+1. Schalten Sie **Vor dem Download von Dateien nach dem Speicherort fragen** aus.
+
+Sie können auch direkt `chrome://settings/downloads` aufrufen.
+</Tab>
+
+<Tab title="Edge">
+1. Wählen Sie **Einstellungen** und dann **Downloads**.
+
+1. Schalten Sie **Fragen, wie mit jedem Download verfahren werden soll** und **Vor dem Download von Dateien nach dem Speicherort fragen** aus.
+
+Sie können auch direkt `edge://settings/downloads` aufrufen.
+</Tab>
+
+<Tab title="Firefox">
+1. Wählen Sie **Einstellungen**, dann **Allgemein** > **Dateien und Anwendungen**.
+
+1. Wählen Sie **Alle Dateien in folgendem Ordner abspeichern**, und schalten Sie **Jedes Mal nachfragen, wo eine Datei gespeichert werden soll** aus.
+
+</Tab>
+
+<Tab title="Safari (Mac)">
+1. Wählen Sie **Einstellungen** und dann **Allgemein**.
+
+1. Stellen Sie **Speicherort für Downloads** auf einen Ordner ein, zum Beispiel *Downloads*, statt auf **Bei jedem Download nachfragen**.
+
+</Tab>
+</Tabs>
+
+<Note>
+Danach werden E-Mails direkt unter ihrem eigenen Namen im Ordner *Downloads* gespeichert. Wenn Ihr PC von der IT verwaltet wird, kann diese Einstellung gesperrt sein. Bitten Sie in diesem Fall die IT, sie zu ändern.
+</Note>
+
+### Heruntergeladene E-Mails in Ihrer E-Mail-App öffnen {#download-open}
+
+Damit eine heruntergeladene E-Mail direkt in der auf Ihrem PC installierten E-Mail-App geöffnet wird, ändern Sie Einstellungen in Windows und in Ihrem Browser. Diese Einstellungen befinden sich nicht in SuperOffice.
+
+1. Legen Sie in Windows fest, welche App E-Mail-Dateien öffnet. Wählen Sie **Einstellungen**, dann **Apps** > **Standard-Apps**. Suchen Sie nach `.eml` (und `.msg`, falls Sie dieses Format verwenden), und wählen Sie Ihre E-Mail-App, zum Beispiel Outlook.
+
+1. Legen Sie im Browser fest, dass die Datei nach dem Herunterladen geöffnet wird.
+
+<Tabs>
+<Tab title="Chrome oder Edge">
+1. Laden Sie eine E-Mail herunter.
+
+1. Öffnen Sie die Downloadliste (das Download-Symbol in der Symbolleiste), und klicken Sie neben der Datei auf **⋯**.
+
+1. Wählen Sie **Dateien dieses Typs immer öffnen**.
+
+Danach wird jede E-Mail, die Sie herunterladen, in Ihrer E-Mail-App geöffnet.
+
+Um dies rückgängig zu machen, rufen Sie die Seite mit den Download-Einstellungen auf (`chrome://settings/downloads` oder `edge://settings/downloads`) und klicken Sie neben **Bestimmte Dateitypen nach dem Herunterladen automatisch öffnen** auf **Löschen**.
+</Tab>
+
+<Tab title="Firefox">
+Wählen Sie **Einstellungen**, dann **Allgemein** > **Anwendungen**. Suchen Sie den Dateityp für E-Mails, und stellen Sie die Aktion auf **Windows-Standardanwendung verwenden** oder auf Ihre E-Mail-App ein.
+</Tab>
+</Tabs>
+
+<Note>
+Wenn die Option fehlt oder ausgegraut ist, hat Ihre IT-Abteilung sie wahrscheinlich gesperrt.
+</Note>
 
 ## Fehlerbehebung
 
@@ -158,6 +238,7 @@ Wenn Sie auf ein Dokument doppelklicken und nichts geschieht, klicken Sie mit de
 [2]: ./create
 [3]: ./create#fields
 [4]: ../../learn/section-tabs/activities-tab
+[6]: ../../learn/basics/activity
 [img2]: ../../../media/loc/en/webtools/webtools-edge-security-question.png
 [img3]: ../../../media/loc/en/webtools/webtools-firefox-security-question.png
 [img4]: ../../../media/loc/en/webtools/webtools-safari-security-question.png

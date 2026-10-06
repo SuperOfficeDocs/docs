@@ -2,10 +2,10 @@
 uid: help-no-document-update
 title: Redigere dokument
 description: Redigere dokument
-keywords: ['dokument', 'laste ned']
+keywords: ['dokument', 'laste ned', 'laste ned e-post', 'åpne e-post']
 author: digitaldiina
-date: 18.09.2026
-so_version: 12.2
+date: 06.10.2026
+so_version: 12.4
 content_type: howto
 tier: starter
 audience: person
@@ -87,7 +87,7 @@ Denne fremgangsmåten beskriver hvordan du oppretter nye dokumenter hvis du bruk
 </Tab>
 </Tabs>
 
-### Nettlesersikkerhetsspørsmål ved åpning av filer {#allow}
+## Nettlesersikkerhetsspørsmål ved åpning av filer {#allow}
 
 Når du får tilgang til og redigerer et dokument, fil eller e-post i SuperOffice, gir nettleseren din deg en *sikkerhetsspørsmål* angående nedlasting av filen.
 
@@ -96,21 +96,31 @@ Når du får tilgang til og redigerer et dokument, fil eller e-post i SuperOffic
 
 Dialogboksen er litt annerledes i Chrome, Edge, Firefox og Safari.
 
-**Chrome:** Velg **Åpne URL:SuperOffice-Extensions**.
+<Tabs>
+<Tab title="Chrome">
+Velg **Åpne URL:SuperOffice-Extensions**.
 
 ![Chrome: Åpne URL:SuperOffice-Extensions knapp -screenshot][img5]
+</Tab>
 
-**Edge:** Velg **Åpne**.
+<Tab title="Edge">
+Velg **Åpne**.
 
 ![Edge: Åpne knapp -screenshot][img2]
+</Tab>
 
-**Firefox:** Velg **Åpne lenke**.
+<Tab title="Firefox">
+Velg **Åpne lenke**.
 
 ![Firefox: Åpne lenke knapp -screenshot][img3]
+</Tab>
 
-**Safari:** Velg **Alltid tillat** eller **Tillat**.
+<Tab title="Safari">
+Velg **Alltid tillat** eller **Tillat**.
 
 ![Safari: Alltid tillat eller Tillat knapp -screenshot][img4]
+</Tab>
+</Tabs>
 
 ## Slette dokumenter {#delete}
 
@@ -130,18 +140,88 @@ Når du ser et spesifikt dokument:
 2. Velg **Slett**.
 3. Bekreft eller avbryt slettingen i bekreftelsesdialogen.
 
-## Laste ned et dokument {#download}
+## Laste ned et dokument eller en e-post {#download}
 
-Når du laster ned et dokument, lagres en kopi av dokumentfilen på enheten din.
+Når du laster ned, lagres en kopi av filen på enheten din. I SuperOffice er [en lagret e-post et dokument][6], så du laster ned en e-post på samme måte som andre dokumenter.
 
-1. Klikk på **Oppgave**-knappen (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>) i **Dokument**-dialogen.
+1. Klikk på **Oppgave**-knappen (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>). Knappen finnes i **Dokument**-dialogen, i e-postdialogen og i e-postforhåndsvisningen.
 2. Velg **Last ned**.
 
 ![Last ned e-posten eller dokumentet fra Oppgave-knappen -screenshot][img6]
 
 <Tip>
-Du kan også laste ned et dokument direkte fra [detaljkortet Aktiviteter][5] ved å høyreklikke på det og velge **Last ned**.
+Du kan også laste ned et dokument eller en e-post direkte fra [detaljkortet Aktiviteter][5] ved å høyreklikke på det og velge **Last ned**.
 </Tip>
+
+### Lagre nedlastede e-poster uten å bli spurt om filnavn {#download-no-prompt}
+
+Når du laster ned en e-post, sender SuperOffice filen, og nettleseren avgjør om den skal spørre om filnavn. Hvis du vil lagre e-poster direkte i mappen *Nedlastinger*, slår du av spørsmålet i nettleseren.
+
+<Tabs>
+<Tab title="Chrome">
+1. Velg **Innstillinger** og deretter **Nedlastinger**.
+
+1. Slå av **Spør før nedlasting hvor hver fil skal lagres**.
+
+Du kan også gå direkte til `chrome://settings/downloads`.
+</Tab>
+
+<Tab title="Edge">
+1. Velg **Innstillinger** og deretter **Nedlastinger**.
+
+1. Slå av **Spør meg hva jeg skal gjøre med hver nedlasting** og **Spør før nedlasting hvor hver fil skal lagres**.
+
+Du kan også gå direkte til `edge://settings/downloads`.
+</Tab>
+
+<Tab title="Firefox">
+1. Velg **Innstillinger**, deretter **Generelt** > **Filer og programmer**.
+
+1. Velg **Lagre filer i**, og slå av **Spør hvor filer skal lagres før nedlasting**.
+
+</Tab>
+
+<Tab title="Safari (Mac)">
+1. Velg **Innstillinger** og deretter **Generelt**.
+
+1. Sett **Plassering for nedlastinger** til en mappe, for eksempel *Downloads*, i stedet for **Spør for hver nedlasting**.
+
+</Tab>
+</Tabs>
+
+<Note>
+Etter dette lagres e-poster direkte i mappen *Nedlastinger* under sitt eget navn. Hvis PC-en din administreres av IT, kan denne innstillingen være låst. Be i så fall IT om å endre den.
+</Note>
+
+### Åpne nedlastede e-poster i e-postappen din {#download-open}
+
+Hvis du vil at en nedlastet e-post skal åpnes direkte i e-postappen som er installert på PC-en din, endrer du innstillinger i Windows og i nettleseren. Disse innstillingene finnes ikke i SuperOffice.
+
+1. Fortell Windows hvilken app som skal åpne e-postfiler. Velg **Innstillinger**, deretter **Apper** > **Standardapper**. Søk etter `.eml` (og `.msg` hvis du bruker det), og velg e-postappen din, for eksempel Outlook.
+
+1. Fortell nettleseren at filen skal åpnes etter nedlasting.
+
+<Tabs>
+<Tab title="Chrome eller Edge">
+1. Last ned én e-post.
+
+1. Åpne nedlastingslisten (nedlastingsikonet i verktøylinjen), og klikk på **⋯** ved siden av filen.
+
+1. Velg **Åpne alltid filer av denne typen**.
+
+Etter dette åpnes hver e-post du laster ned, i e-postappen din.
+
+Hvis du vil angre, går du til siden med nedlastingsinnstillinger (`chrome://settings/downloads` eller `edge://settings/downloads`) og klikker på **Slett** ved siden av **Åpne visse filtyper automatisk når de lastes ned**.
+</Tab>
+
+<Tab title="Firefox">
+Velg **Innstillinger**, deretter **Generelt** > **Program**. Finn filtypen for e-post, og sett handlingen til **Bruk Windows-standardprogrammet** eller til e-postappen din.
+</Tab>
+</Tabs>
+
+<Note>
+Hvis alternativet mangler eller er nedtonet, har IT-avdelingen sannsynligvis sperret det.
+</Note>
 
 ## Feilsøking
 
@@ -160,6 +240,7 @@ Hvis du dobbeltklikker på et dokument og ingenting skjer, kan du prøve å høy
 [3]: ./create#fields
 [4]: ../../diary/learn/change-completed-status
 [5]: ../../learn/section-tabs/activities-tab
+[6]: ../../learn/basics/activity
 
 [img2]: ../../../media/loc/en/webtools/webtools-edge-security-question.png
 [img3]: ../../../media/loc/en/webtools/webtools-firefox-security-question.png

@@ -2,10 +2,10 @@
 uid: help-en-document-update
 title: Edit documents
 description: Editing documents; Deleting documents
-keywords: ['document', 'edit mode', 'read mode', 'completed', 'document properties', 'document content', 'SharePoint', 'download']
+keywords: ['document', 'edit mode', 'read mode', 'completed', 'document properties', 'document content', 'SharePoint', 'download', 'download email', 'open email']
 author: digitaldiina
-date: 18.09.2026
-so_version: 12.2
+date: 06.10.2026
+so_version: 12.4
 content_type: howto
 tier: starter
 audience: person
@@ -96,21 +96,31 @@ When you access and edit a document, file, or email in SuperOffice, your browser
 
 The dialog is slightly different in Chrome, Edge, Firefox, and Safari.
 
-**Chrome:** Select **Open URL:SuperOffice-Extensions**.
+<Tabs>
+<Tab title="Chrome">
+Select **Open URL:SuperOffice-Extensions**.
 
 ![Chrome: Open URL:SuperOffice-Extensions button -screenshot][img5]
+</Tab>
 
-**Edge:** Select **Open**.
+<Tab title="Edge">
+Select **Open**.
 
 ![Edge: Open button -screenshot][img2]
+</Tab>
 
-**Firefox:** Select **Open Link**.
+<Tab title="Firefox">
+Select **Open Link**.
 
 ![Firefox: Open Link button -screenshot][img3]
+</Tab>
 
-**Safari:** Select **Always Allow** or **Allow**.
+<Tab title="Safari">
+Select **Always Allow** or **Allow**.
 
 ![Safari: Always Allow or Allow button -screenshot][img4]
+</Tab>
+</Tabs>
 
 ## Delete document {#delete}
 
@@ -130,18 +140,88 @@ When viewing a specific document:
 2. Choose **Delete**.
 3. Confirm or cancel the deletion in the confirmation dialog.
 
-## Download a document {#download}
+## Download a document or email {#download}
 
-Downloading a document saves a copy of the document file to your device.
+Downloading saves a copy of the file to your device. In SuperOffice, [a saved email is a document][6], so you download an email the same way as any other document.
 
-1. Click the **Task** button (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>) in the **Document** dialog.
+1. Click the **Task** button (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>). The button is available in the **Document** dialog, in the email dialog, and in the email preview.
 2. Choose **Download**.
 
 ![Download the email or document from Task button -screenshot][img6]
 
 <Tip>
-You can also download a document directly from the [Activities section tab][4] by right-clicking it and choosing **Download**.
+You can also download a document or email directly from the [Activities section tab][4] by right-clicking it and choosing **Download**.
 </Tip>
+
+### Save downloaded emails without a file name prompt {#download-no-prompt}
+
+When you download an email, SuperOffice sends the file and your browser decides whether to ask for a file name. To save emails straight to your *Downloads* folder, turn off the prompt in your browser.
+
+<Tabs>
+<Tab title="Chrome">
+1. Select **Settings**, then **Downloads**.
+
+1. Turn off **Ask where to save each file before downloading**.
+
+You can also go straight to `chrome://settings/downloads`.
+</Tab>
+
+<Tab title="Edge">
+1. Select **Settings**, then **Downloads**.
+
+1. Turn off **Ask me what to do with each download** and **Ask where to save each file before downloading**.
+
+You can also go straight to `edge://settings/downloads`.
+</Tab>
+
+<Tab title="Firefox">
+1. Select **Settings**, then **General** > **Files and Applications**.
+
+1. Choose **Save files to**, and turn off **Ask where to save files before downloading**.
+
+</Tab>
+
+<Tab title="Safari (Mac)">
+1. Select **Settings**, then **General**.
+
+1. Set **File download location** to a folder, for example *Downloads*, instead of **Ask for each download**.
+
+</Tab>
+</Tabs>
+
+<Note>
+After this, emails are saved straight to your *Downloads* folder under their own name. If your PC is managed by IT, they may have locked this setting. Ask IT to change it.
+</Note>
+
+### Open downloaded emails in your email app {#download-open}
+
+To open a downloaded email directly in the email app installed on your PC, change the settings in Windows and in your browser. These settings are not in SuperOffice.
+
+1. Tell Windows which app opens email files. Select **Settings**, then **Apps** > **Default apps**. Search for `.eml` (and `.msg` if you use that), and choose your email app, for example Outlook.
+
+1. Tell your browser to open the file after download.
+
+<Tabs>
+<Tab title="Chrome or Edge">
+1. Download one email.
+
+1. Open the downloads list (the download icon in the toolbar), and click **⋯** next to the file.
+
+1. Choose **Always open files of this type**.
+
+After this, every email you download opens in your email app.
+
+To undo it, go to the downloads settings page (`chrome://settings/downloads` or `edge://settings/downloads`) and click **Delete** next to **Open certain file types automatically after downloading**.
+</Tab>
+
+<Tab title="Firefox">
+Select **Settings**, then **General** > **Applications**. Find the email file type and set its action to **Use Windows default application**, or to your email app.
+</Tab>
+</Tabs>
+
+<Note>
+If the option is missing or greyed out, your IT department has probably blocked it.
+</Note>
 
 ## Troubleshooting
 
@@ -155,6 +235,7 @@ If you double-click a document and nothing happens, try to right-click it and se
 [2]: ./create
 [3]: ./create#fields
 [4]: ../../learn/section-tabs/activities-tab
+[6]: ../../learn/basics/activity
 [img2]: /media/loc/en/webtools/webtools-edge-security-question.png
 [img3]: /media/loc/en/webtools/webtools-firefox-security-question.png
 [img4]: /media/loc/en/webtools/webtools-safari-security-question.png

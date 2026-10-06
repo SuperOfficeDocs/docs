@@ -2,10 +2,10 @@
 uid: help-nl-document-update
 title: Documenten bewerken
 description: Documenten bewerken
-keywords: ['document', 'downloaden']
+keywords: ['document', 'downloaden', 'e-mail downloaden', 'e-mail openen']
 author: digitaldiina
-date: 18.09.2026
-so_version: 12.2
+date: 06.10.2026
+so_version: 12.4
 content_type: howto
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
@@ -90,7 +90,7 @@ In deze procedure wordt beschreven hoe u nieuwe documenten maakt als u een burea
 </Tab>
 </Tabs>
 
-### Beveiligingsvraag van de browser bij het openen van bestanden {#allow}
+## Beveiligingsvraag van de browser bij het openen van bestanden {#allow}
 
 Wanneer u toegang krijgt tot en een document, bestand of e-mail bewerkt in SuperOffice, vraagt uw browser u om een *beveiligingsvraag* met betrekking tot het downloaden van het bestand.
 
@@ -99,21 +99,31 @@ Wanneer u toegang krijgt tot en een document, bestand of e-mail bewerkt in Super
 
 De dialoog is enigszins verschillend in Chrome, Edge, Firefox en Safari.
 
-**Chrome:** Selecteer **Openen URL:SuperOffice-Extensions**.
+<Tabs>
+<Tab title="Chrome">
+Selecteer **Openen URL:SuperOffice-Extensions**.
 
 ![Chrome: Openen URL:SuperOffice-Extensions -screenshot][img5]
+</Tab>
 
-**Edge:** Selecteer **Openen**.
+<Tab title="Edge">
+Selecteer **Openen**.
 
 ![Edge: Openen -screenshot][img2]
+</Tab>
 
-**Firefox:** Selecteer **Link openen**.
+<Tab title="Firefox">
+Selecteer **Link openen**.
 
 ![Firefox: Link openen -screenshot][img3]
+</Tab>
 
-**Safari:** Selecteer **Altijd toestaan** of **Toestaan**.
+<Tab title="Safari">
+Selecteer **Altijd toestaan** of **Toestaan**.
 
 ![Safari: Altijd toestaan of Toestaan -screenshot][img4]
+</Tab>
+</Tabs>
 
 ## Documenten verwijderen {#delete}
 
@@ -133,18 +143,88 @@ Bij het bekijken van een specifiek document:
 2. Kies **Verwijderen**.
 3. Bevestig of annuleer de verwijdering in het bevestigingsdialoogvenster.
 
-## Een document downloaden {#download}
+## Een document of e-mail downloaden {#download}
 
-Als u een document downloadt, wordt een kopie van het documentbestand op uw apparaat opgeslagen.
+Bij het downloaden wordt een kopie van het bestand op uw apparaat opgeslagen. In SuperOffice is [een opgeslagen e-mail een document][6], dus u downloadt een e-mail op dezelfde manier als elk ander document.
 
-1. Klik op de knop **Taak** (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>) in het **Document**-dialoogvenster.
+1. Klik op de knop **Taak** (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>). De knop is beschikbaar in het **Document**-dialoogvenster, in het e-maildialoogvenster en in het e-mailvoorbeeld.
 2. Kies **Downloaden**.
 
 ![Download de e-mail of het document via de knop Taak -screenshot][img6]
 
 <Tip>
-U kunt een document ook rechtstreeks downloaden vanuit het [sectietabblad Activiteiten][4] door er met de rechtermuisknop op te klikken en **Downloaden** te kiezen.
+U kunt een document of e-mail ook rechtstreeks downloaden vanuit het [sectietabblad Activiteiten][4] door er met de rechtermuisknop op te klikken en **Downloaden** te kiezen.
 </Tip>
+
+### Gedownloade e-mails opslaan zonder naar een bestandsnaam te vragen {#download-no-prompt}
+
+Wanneer u een e-mail downloadt, verstuurt SuperOffice het bestand en bepaalt uw browser of er om een bestandsnaam wordt gevraagd. Schakel de vraag in uw browser uit om e-mails rechtstreeks in de map *Downloads* op te slaan.
+
+<Tabs>
+<Tab title="Chrome">
+1. Kies **Instellingen** en vervolgens **Downloads**.
+
+1. Schakel **Voorafgaand aan een download vragen waar een bestand moet worden opgeslagen** uit.
+
+U kunt ook rechtstreeks naar `chrome://settings/downloads` gaan.
+</Tab>
+
+<Tab title="Edge">
+1. Kies **Instellingen** en vervolgens **Downloads**.
+
+1. Schakel **Vragen wat ik met elke download wil doen** en **Voorafgaand aan een download vragen waar een bestand moet worden opgeslagen** uit.
+
+U kunt ook rechtstreeks naar `edge://settings/downloads` gaan.
+</Tab>
+
+<Tab title="Firefox">
+1. Kies **Instellingen**, vervolgens **Algemeen** > **Bestanden en Toepassingen**.
+
+1. Kies **Bestanden opslaan in** en schakel **Vragen waar bestanden moeten worden opgeslagen voor het downloaden** uit.
+
+</Tab>
+
+<Tab title="Safari (Mac)">
+1. Kies **Instellingen** en vervolgens **Algemeen**.
+
+1. Stel **Downloadlocatie** in op een map, bijvoorbeeld *Downloads*, in plaats van **Vragen bij elke download**.
+
+</Tab>
+</Tabs>
+
+<Note>
+Daarna worden e-mails onder hun eigen naam rechtstreeks in de map *Downloads* opgeslagen. Als uw pc door de IT-afdeling wordt beheerd, kan deze instelling vergrendeld zijn. Vraag de IT-afdeling dan om de instelling te wijzigen.
+</Note>
+
+### Gedownloade e-mails openen in uw e-mailapp {#download-open}
+
+Als u een gedownloade e-mail rechtstreeks wilt openen in de e-mailapp die op uw pc is geïnstalleerd, wijzigt u instellingen in Windows en in uw browser. Deze instellingen staan niet in SuperOffice.
+
+1. Geef in Windows aan welke app e-mailbestanden opent. Kies **Instellingen**, vervolgens **Apps** > **Standaard-apps**. Zoek naar `.eml` (en `.msg`, als u dat gebruikt) en kies uw e-mailapp, bijvoorbeeld Outlook.
+
+1. Geef in uw browser aan dat het bestand na het downloaden wordt geopend.
+
+<Tabs>
+<Tab title="Chrome of Edge">
+1. Download één e-mail.
+
+1. Open de lijst met downloads (het downloadpictogram op de werkbalk) en klik op **⋯** naast het bestand.
+
+1. Kies **Altijd bestanden van dit type openen**.
+
+Daarna wordt elke e-mail die u downloadt, geopend in uw e-mailapp.
+
+Om dit ongedaan te maken, gaat u naar de pagina met downloadinstellingen (`chrome://settings/downloads` of `edge://settings/downloads`) en klikt u naast **Bepaalde bestandstypen na downloaden automatisch openen** op **Verwijderen**.
+</Tab>
+
+<Tab title="Firefox">
+Kies **Instellingen**, vervolgens **Algemeen** > **Toepassingen**. Zoek het bestandstype voor e-mail en stel de actie in op **Standaardtoepassing in Windows gebruiken** of op uw e-mailapp.
+</Tab>
+</Tabs>
+
+<Note>
+Als de optie ontbreekt of grijs is, heeft uw IT-afdeling deze waarschijnlijk geblokkeerd.
+</Note>
 
 ## Probleemoplossing
 
@@ -158,6 +238,7 @@ Als u dubbelklikt op een document en er gebeurt niets, klikt u er met de rechter
 [2]: ./create
 [3]: ./create#fields
 [4]: ../../learn/section-tabs/activities-tab
+[6]: ../../learn/basics/activity
 [img2]: ../../../media/loc/en/webtools/webtools-edge-security-question.png
 [img3]: ../../../media/loc/en/webtools/webtools-firefox-security-question.png
 [img4]: ../../../media/loc/en/webtools/webtools-safari-security-question.png

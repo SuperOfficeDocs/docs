@@ -2,10 +2,10 @@
 uid: help-sv-document-update
 title: Redigera dokument
 description: Redigera dokument
-keywords: ['redigera dokument', 'dokumentegenskaper', 'dokument', 'ladda ned']
+keywords: ['redigera dokument', 'dokumentegenskaper', 'dokument', 'ladda ned', 'ladda ned e-postmeddelande', 'öppna e-postmeddelande']
 author: digitaldiina
-date: 18.09.2026
-so_version: 12.2
+date: 06.10.2026
+so_version: 12.4
 content_type: howto
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
@@ -90,7 +90,7 @@ Den här proceduren beskriver hur du skapar dokument om du använder ett desktop
 </Tab>
 </Tabs>
 
-### Webbläsarsäkerhetsfråga vid öppning av filer {#allow}
+## Webbläsarsäkerhetsfråga vid öppning av filer {#allow}
 
 När du får tillgång till och redigerar ett dokument, fil eller e-post i SuperOffice, uppmanar din webbläsare dig med en *säkerhetsfråga* angående filnedladdningen.
 
@@ -99,21 +99,31 @@ När du får tillgång till och redigerar ett dokument, fil eller e-post i Super
 
 Dialogen ser något annorlunda ut i Chrome, Edge, Firefox och Safari.
 
-**Chrome:** Välj **Öppna URL:SuperOffice-Extensions**.
+<Tabs>
+<Tab title="Chrome">
+Välj **Öppna URL:SuperOffice-Extensions**.
 
 ![Chrome: Öppna URL:SuperOffice-Extensions -screenshot][img5]
+</Tab>
 
-**Edge:** Välj **Öppna**.
+<Tab title="Edge">
+Välj **Öppna**.
 
 ![Edge: Öppna -screenshot][img2]
+</Tab>
 
-**Firefox:** Välj **Öppna länk**.
+<Tab title="Firefox">
+Välj **Öppna länk**.
 
 ![Firefox: Öppna länk -screenshot][img3]
+</Tab>
 
-**Safari:** Välj **Alltid tillåt** eller **Tillåt**.
+<Tab title="Safari">
+Välj **Alltid tillåt** eller **Tillåt**.
 
 ![Safari: Alltid tillåt eller Tillåt -screenshot][img4]
+</Tab>
+</Tabs>
 
 ## Ta bort dokument {#delete}
 
@@ -133,18 +143,88 @@ När du visar ett specifikt dokument:
 2. Välj **Ta bort**.
 3. Bekräfta eller avbryt borttagningen i bekräftelsedialogen.
 
-## Ladda ned ett dokument {#download}
+## Ladda ned ett dokument eller ett e-postmeddelande {#download}
 
-När du laddar ned ett dokument sparas en kopia av dokumentfilen på din enhet.
+När du laddar ned sparas en kopia av filen på din enhet. I SuperOffice är [ett sparat e-postmeddelande ett dokument][6], så du laddar ned ett e-postmeddelande på samma sätt som andra dokument.
 
-1. Klicka på **Uppgift**-knappen (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>) i **Dokument**-dialogen.
+1. Klicka på **Uppgift**-knappen (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>). Knappen finns i **Dokument**-dialogen, i e-postdialogen och i e-postförhandsgranskningen.
 2. Välj **Ladda ned**.
 
 ![Ladda ned e-postmeddelandet eller dokumentet från Uppgift-knappen -screenshot][img6]
 
 <Tip>
-Du kan också ladda ned ett dokument direkt från [detaljkortet Aktiviteter][4] genom att högerklicka på det och välja **Ladda ned**.
+Du kan också ladda ned ett dokument eller ett e-postmeddelande direkt från [detaljkortet Aktiviteter][4] genom att högerklicka på det och välja **Ladda ned**.
 </Tip>
+
+### Spara nedladdade e-postmeddelanden utan fråga om filnamn {#download-no-prompt}
+
+När du laddar ned ett e-postmeddelande skickar SuperOffice filen, och webbläsaren avgör om den ska fråga efter ett filnamn. Om du vill spara e-postmeddelanden direkt i mappen *Hämtade filer* stänger du av frågan i webbläsaren.
+
+<Tabs>
+<Tab title="Chrome">
+1. Välj **Inställningar** och sedan **Nedladdningar**.
+
+1. Stäng av **Fråga var filerna ska sparas före nedladdning**.
+
+Du kan också gå direkt till `chrome://settings/downloads`.
+</Tab>
+
+<Tab title="Edge">
+1. Välj **Inställningar** och sedan **Nedladdningar**.
+
+1. Stäng av **Fråga vad jag vill göra med varje nedladdning** och **Fråga var filerna ska sparas före nedladdning**.
+
+Du kan också gå direkt till `edge://settings/downloads`.
+</Tab>
+
+<Tab title="Firefox">
+1. Välj **Inställningar**, sedan **Allmänt** > **Filer och program**.
+
+1. Välj **Spara filer till**, och stäng av **Fråga var du vill spara filerna innan du hämtar**.
+
+</Tab>
+
+<Tab title="Safari (Mac)">
+1. Välj **Inställningar** och sedan **Allmänt**.
+
+1. Ställ in **Plats för nedladdade filer** på en mapp, till exempel *Downloads*, i stället för **Fråga för varje nedladdning**.
+
+</Tab>
+</Tabs>
+
+<Note>
+Därefter sparas e-postmeddelanden direkt i mappen *Hämtade filer* under sitt eget namn. Om din dator hanteras av IT kan den här inställningen vara låst. Be i så fall IT att ändra den.
+</Note>
+
+### Öppna nedladdade e-postmeddelanden i din e-postapp {#download-open}
+
+Om du vill att ett nedladdat e-postmeddelande ska öppnas direkt i den e-postapp som är installerad på din dator ändrar du inställningar i Windows och i webbläsaren. Dessa inställningar finns inte i SuperOffice.
+
+1. Tala om för Windows vilken app som ska öppna e-postfiler. Välj **Inställningar**, sedan **Appar** > **Standardappar**. Sök efter `.eml` (och `.msg` om du använder det) och välj din e-postapp, till exempel Outlook.
+
+1. Tala om för webbläsaren att filen ska öppnas efter nedladdning.
+
+<Tabs>
+<Tab title="Chrome eller Edge">
+1. Ladda ned ett e-postmeddelande.
+
+1. Öppna nedladdningslistan (nedladdningsikonen i verktygsfältet) och klicka på **⋯** bredvid filen.
+
+1. Välj **Öppna alltid filer av denna typ**.
+
+Därefter öppnas varje e-postmeddelande som du laddar ned i din e-postapp.
+
+Om du vill ångra det går du till sidan med nedladdningsinställningar (`chrome://settings/downloads` eller `edge://settings/downloads`) och klickar på **Radera** bredvid **Öppna vissa filtyper automatiskt efter att de har laddats ned**.
+</Tab>
+
+<Tab title="Firefox">
+Välj **Inställningar**, sedan **Allmänt** > **Program**. Hitta filtypen för e-post och ställ in åtgärden på **Använd Windows standardapplikation** eller på din e-postapp.
+</Tab>
+</Tabs>
+
+<Note>
+Om alternativet saknas eller är nedtonat har din IT-avdelning troligen spärrat det.
+</Note>
 
 ## Felsökning
 
@@ -158,6 +238,7 @@ Om du dubbelklickar på ett dokument och ingenting händer, kan du testa att hö
 [2]: ./create
 [3]: ./create#fields
 [4]: ../../learn/section-tabs/activities-tab
+[6]: ../../learn/basics/activity
 [img2]: ../../../media/loc/en/webtools/webtools-edge-security-question.png
 [img3]: ../../../media/loc/en/webtools/webtools-firefox-security-question.png
 [img4]: ../../../media/loc/en/webtools/webtools-safari-security-question.png
