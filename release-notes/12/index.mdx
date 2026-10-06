@@ -4,7 +4,7 @@ title: What's new in SuperOffice 12
 description: Release notes. What's new in SuperOffice 12
 keywords: ['SuperOffice CRM 12']
 author: kirstiaa
-date: 09.17.2026
+date: 10.13.2026
 so_version: 12
 content_type: release-note
 audience: person
@@ -27,27 +27,34 @@ From this version, all feature updates are available to SuperOffice Online custo
 
 ## Feature updates
 
+<Update label="12.5" description="13.10.2026" tags={["Core", "Marketing"]}>
+<a id="12.5"></a>
+
 ### Navigation - Recent navigation <Badge icon="user" color="blue">Core CRM</Badge>
 
 Get back to any record or view you've worked with, in one click. Moving between companies, contacts, sales, projects, requests and others is part of everyday CRM work, and retracing your steps takes time.
 
 You'll find the **Back** and **Forward** buttons and the **Recent navigation** button, shown as a clock icon, on the left side of the top bar.
 
-![Top bar with Back, Forward and Recent navigation buttons -screenshot][img1]
+![Top bar with Back, Forward and Recent navigation buttons -screenshot][img18]
 
 Select the clock icon to see the places you've visited, with the most recent at the top. Select an entry and you're taken straight there, with the tabs, side panel and list or board view restored as you left them. Each place appears only once, so revisiting a company moves it to the top instead of adding a duplicate. **Back** and **Forward** step through your visits in order, and the browser's own Back and Forward buttons work the same way.
 
-![Recent navigation list with recent companies, contacts and sales -screenshot][img2]
+![Recent navigation list with recent companies, contacts and sales -screenshot][img19]
 
 For example, you review a company, open one of its sales, then check your diary. Select the clock icon, choose the company, and you're back on the same tab with the same side panel open. You decide how many places the list keeps with the **Recent navigation list size** preference.
 
-Learn more about [Recent navigation][?].
+Learn more about [Recent navigation][21].
 
-[1]: /en/PLACEHOLDER-learn-link
+### Forms - Message when a form is too large to save <Badge icon="bullseye" color="purple">Marketing</Badge>
 
-[img1]: /media/loc/en/PLACEHOLDER-recent-navigation-header.png
+Be sure every submission from your visitors reaches SuperOffice. A form that grows beyond the size the system can process, usually because of large images, can't register submissions, and without a warning you would not know until responses were missing.
 
-[img2]: /media/loc/en/PLACEHOLDER-recent-navigation-list.png
+![Form builder with the thank-you page open and a large image added -screenshot][img20]
+
+Go to Marketing → Forms, open your form in the form builder, and select Save. The form size is checked against the maximum allowed, which is 10 MB for the whole form. If the form is too large, saving stops with the message **File is too large**. Swap, for example, a high-resolution photo on the thank-you page for a smaller version, and save again.
+
+Learn more about [forms - Thank you page][20].
 
 <Update label="12.4" description="17.09.2026" tags={["Service", "Marketing"]}>
 <a id="12.4"></a>
@@ -64,6 +71,10 @@ You'll find **Quick reply** whenever you preview a request from a request list o
 
 * If you cancel or move to another request with unsent text, you're asked before it's discarded.
 * **Quick reply** isn't shown on requests marked as spam, deleted, or merged, so you're only ever offered an action that applies.
+
+### Mailings - AI features in email editor are being temporarily removed <Badge icon="bullseye" color="purple">Marketing</Badge>
+
+The current AI features for generating images and text will be temporarily removed. These capabilities are based on older technology and will be replaced over time with more modern AI solution. We will share more information as these improvements become available.
 
 ### Forms - Conditional fields in Forms <Badge icon="bullseye" color="purple">Marketing</Badge>
 
@@ -295,6 +306,8 @@ Some features are available to selected customers as part of ongoing pilots. See
 [17]: /en/marketing/forms/learn/create#custom-style
 [18]: /en/email/learn/index#preview
 [19]: /en/document/learn/edit#download
+[20]: /en/marketing/forms/learn/create#thank-you-page
+[21]: /en/search-options/learn
 
 [img1]: /media/loc/en/dashboard/dashboard-sale-sycle-tiles.png
 [img2]: /media/loc/en/dashboard/dashboard-edit-sale-cycle-tile.png
@@ -313,3 +326,6 @@ Some features are available to selected customers as part of ongoing pilots. See
 [img15]: /media/loc/en/request/request-preview-quick-reply.png
 [img16]: /media/loc/en/marketing/marketing-form-field-properties.png
 [img17]: /media/loc/en/marketing/marketing-form-field-properties-add-releated-field.png
+[img18]: /media/loc/en/learn/top-bar-recent-navigation-buttons.png
+[img19]: /media/loc/en/learn/top-bar-recent-navigation-drop-down.png
+[img20]: /media/loc/en/marketing/marketing-form-upload-large-image.png
