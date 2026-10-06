@@ -4,7 +4,7 @@ title: Redigering af dokumenter
 description: Redigering af dokumenter
 keywords: ['dokument', 'download']
 author: digitaldiina
-date: 18.09.2026
+date: 06.10.2026
 so_version: 12.2
 content_type: howto
 license: salesessentials, serviceessentials, marketingessentials
@@ -135,18 +135,88 @@ Når du ser et specifikt dokument:
 2. Vælg **Slet**.
 3. Bekræft eller annullér sletningen i bekræftelsesdialogen.
 
-## Download af et dokument {#download}
+## Download af et dokument eller en e-mail {#download}
 
-Når du downloader et dokument, gemmes en kopi af dokumentfilen på din enhed.
+Når du downloader, gemmes en kopi af filen på din enhed. I SuperOffice er en gemt e-mail et [dokument][6], så du downloader en e-mail på samme måde som alle andre dokumenter.
 
-1. Klik på **Opgave**-knappen (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>) i **Dokument**-dialogen.
+1. Klik på **Opgave**-knappen (<i class="ph ph-dots-three-circle-vertical" aria-hidden="true"></i>). Knappen findes i **Dokument**-dialogen, i e-mail-dialogen og i e-mailvisningen.
 2. Vælg **Download**.
 
 ![Download e-mailen eller dokumentet fra Opgave-knappen -screenshot][img6]
 
 <Tip>
-Du kan også downloade et dokument direkte fra [detaljekortet Aktiviteter][4] ved at højreklikke på det og vælge **Download**.
+Du kan også downloade et dokument eller en e-mail direkte fra [detaljekortet Aktiviteter][4] ved at højreklikke på det og vælge **Download**.
 </Tip>
+
+### Gem downloadede e-mails uden spørgsmål om filnavn {#download-no-prompt}
+
+Når du downloader en e-mail, sender SuperOffice filen, og din browser afgør, om den skal spørge efter et filnavn. Hvis du vil gemme e-mails direkte i mappen Downloads, skal du slå spørgsmålet fra i din browser.
+
+<Tabs>
+<Tab title="Chrome">
+1. Vælg **Settings** og derefter **Downloads**.
+
+1. Slå **Ask where to save each file before downloading** fra.
+
+Du kan også gå direkte til `chrome://settings/downloads`.
+</Tab>
+
+<Tab title="Edge">
+1. Vælg **Settings** og derefter **Downloads**.
+
+1. Slå **Ask me what to do with each download** og **Ask where to save each file before downloading** fra.
+
+Du kan også gå direkte til `edge://settings/downloads`.
+</Tab>
+
+<Tab title="Firefox">
+1. Vælg **Settings**, derefter **General**, **Files and Applications** og **Downloads**.
+
+1. Vælg **Save files to** i stedet for **Always ask you where to save files**.
+
+</Tab>
+
+<Tab title="Safari (Mac)">
+1. Vælg **Settings** og derefter **General**.
+
+1. Sæt **File download location** til en mappe, for eksempel Downloads, i stedet for **Ask for each download**.
+
+</Tab>
+</Tabs>
+
+<Note>
+Herefter gemmes e-mails direkte i mappen Downloads under deres eget navn. Hvis din pc administreres af IT, kan indstillingen være låst. Bed i så fald IT om at ændre den.
+</Note>
+
+### Åbn downloadede e-mails i din mailapp {#download-open}
+
+Hvis en downloadet e-mail skal åbnes direkte i den mailapp, der er installeret på din pc, skal du ændre indstillinger i Windows og i din browser. Disse indstillinger findes ikke i SuperOffice.
+
+1. Fortæl Windows, hvilken app der åbner e-mailfiler. Vælg **Settings**, derefter **Apps** og **Default apps**. Søg efter `.eml` (og `.msg`, hvis du bruger det), og vælg din mailapp, for eksempel Outlook.
+
+1. Fortæl din browser, at filen skal åbnes efter download.
+
+<Tabs>
+<Tab title="Chrome eller Edge">
+1. Download én e-mail.
+
+1. Åbn listen over downloads (download-ikonet på værktøjslinjen), og klik på **⋯** ud for filen.
+
+1. Vælg **Always open files of this type**.
+
+Herefter åbnes alle e-mails, du downloader, i din mailapp.
+
+Hvis du vil fortryde, skal du gå til siden med downloadindstillinger (`chrome://settings/downloads` eller `edge://settings/downloads`) og klikke på **Clear** ud for **Auto-opened file types**.
+</Tab>
+
+<Tab title="Firefox">
+Vælg **Settings**, derefter **General** og **Applications**. Find filtypen for e-mail, og sæt den til **Open in system viewer** eller til din mailapp.
+</Tab>
+</Tabs>
+
+<Note>
+Hvis indstillingen mangler eller er nedtonet, har din it-afdeling sandsynligvis spærret for den.
+</Note>
 
 ## Fejlfinding
 
@@ -160,6 +230,7 @@ Hvis du dobbeltklikker på et dokument, og der ikke sker noget, kan du prøve at
 [2]: ./create
 [3]: ./create#fields
 [4]: ../../learn/section-tabs/activities-tab
+[6]: ../../learn/basics/activity
 [img2]: ../../../media/loc/en/webtools/webtools-edge-security-question.png
 [img3]: ../../../media/loc/en/webtools/webtools-firefox-security-question.png
 [img4]: ../../../media/loc/en/webtools/webtools-safari-security-question.png
