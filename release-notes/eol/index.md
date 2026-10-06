@@ -22,6 +22,8 @@ Stay informed, stay prepared, and feel empowered as we navigate these transition
 
 | Product/Feature | EOL status | Timeline or date for discontinuation | Relevant details |
 |---|---|---|---|
+| Exchange Online Synchronizer (onsite) | Phase-out initiated | 31 December, 2026 | For Microsoft 365 (Exchange Online): switch to  [Synchronizer for SuperOffice][6]. For Exchange Onsite there is no replacement. Contact your SuperOffice partner. |
+| Places for SuperOffice | Phase-out initiated | 31 March, 2027 | The CRM Suite Growth includes Company Completion to help creating companies. |
 | [SuperOffice Service CompactMode][16] | No longer supported | January 13, 2026 (11.8) | Switch to [SuperOffice Mobile CRM][17]. |
 | [Pagebuilder][12] | No longer supported | The last supported version is 10.2.9 | Switch to [Screen Designer][22]. |
 
@@ -30,7 +32,6 @@ Stay informed, stay prepared, and feel empowered as we navigate these transition
 | Product/Feature | EOL status | Timeline or date for discontinuation | Relevant details |
 |---|---|---|---|
 | [SOAP proxy client and web service endpoints][13] | Phase-out initiated | Version 13 | Switch to [SuperOffice.WebApi][23] (REST). |
-| Exchange Online Synchronizer (onsite) | Phase-out initiated | Version 3.x | Switch to [Synchronizer for SuperOffice][6] (REST). |
 | Business Card Scanner for Mobile CRM (onsite) | Phase-out initiated | September 1, 2026 | The underlying Microsoft technology is being deprecated. Switch to the new AI-powered Business Card Scanner in Mobile CRM Online. |
 
 ## Archived end-of-life notices
