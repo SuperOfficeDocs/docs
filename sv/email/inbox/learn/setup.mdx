@@ -4,7 +4,7 @@ title: Konfigurera inkorgen i SuperOffice
 description: Läs om hur du konfigurerar och loggar in på inkorgen i SuperOffice, med antingen Microsoft Graph eller manuella IMAP/SMTP-inställningar. Den här funktionen är ett alternativ till SuperOffice för Outlook eller SuperOffice Gmail Link för att koppla din e-post till SuperOffice CRM.
 keywords: ['SuperOffice Inkorg', 'inkorgen i SuperOffice', 'konfigurera inkorg', 'e-postinställningar', 'SMTP', 'IMAP', 'e-postanslutning', 'applösenord', 'Microsoft Graph', 'on-premise Exchange-server']
 author: digitaldiina
-date: 09.24.2026
+date: 10.06.2026
 so_version: 12.5
 content_type: concept
 license: salesessentials, serviceessentials, marketingessentials
@@ -25,10 +25,12 @@ language: sv
 
 Inkorgen i SuperOffice är ett alternativt sätt att koppla din e-post till SuperOffice CRM. Den är avsedd för användare som inte kan installera [SuperOffice för Outlook][9] (Microsoft 365) eller [SuperOffice Gmail Link][13] (Google Workspace) på sin enhet.
 
-Inkorgen i SuperOffice stöder två sätt att ansluta ditt e-postkonto:
+Inkorgen i SuperOffice ansluter till ditt e-postkonto på ett av två sätt, beroende på din leverantör:
 
-* **Microsoft 365, med Microsoft Graph (rekommenderas för Microsoft 365-konton):** Anslut via [guiden Användarinställningar][10] i stället för inifrån inkorgen. När anslutningen sker på det här sättet går skickande och mottagande av e-post, mappar samt uppföljningsinbjudningar och avbokningar via Microsoft Graph i stället för IMAP/SMTP.
-* **IMAP och SMTP (Gmail, en on-premise Exchange-server eller en annan leverantör):** Anslut manuellt inifrån inkorgen, enligt beskrivningen nedan.
+* **Microsoft Graph (Microsoft 365):** Om din e-postadress redan är godkänd för Microsoft Graph konfigurerar SuperOffice kontot automatiskt.
+* **IMAP och SMTP (Gmail, en on-premise Exchange-server eller en annan leverantör):** Du loggar in med ditt lösenord, eller anger serverinställningarna manuellt under **Avancerade inställningar**.
+
+Du börjar på samma sätt för båda. Du kan också ansluta från steg 2 i [guiden Användarinställningar][10].
 
 <Note>
 Inkorgen i SuperOffice stöder endast **ett** e-postkonto per användare. Om SuperOffice för Outlook eller SuperOffice Gmail Link är installerat och anslutet till din e-post är funktionen Inkorg inte tillgänglig.
@@ -38,34 +40,38 @@ Inkorgen i SuperOffice stöder endast **ett** e-postkonto per användare. Om Sup
 
 * Kontrollera att **SuperOffice CRM** är vald som [standard e-postklient][8] i **Lokala inställningar**.
 
-* Kontrollera att **IMAP är aktiverat** i din e-postklient.
+* Om du ansluter med IMAP, kontrollera att **IMAP är aktiverat** i din e-postklient.
 
 * Bekräfta att **e-postadressen** du vill använda matchar den primära e-postadressen som är registrerad på ditt [kontaktkort][1] i SuperOffice.
 
-## Anslut ditt e-postkonto
-
-Använd den här metoden för ett Gmail-konto, en on-premise Exchange-server eller en annan IMAP/SMTP-leverantör. Om du har ett Microsoft 365-konto använder du i stället [guiden Användarinställningar][10].
+## Anslut ditt e-postkonto {#connect-your-email-account}
 
 1. Klicka på <i class="ph ph-at" aria-hidden="true"></i> **Inkorg** i navigatorn.
 
-    Första gången du öppnar inkorgen visas dialogrutan **Konfigurera e-postkonto**.
+    Om inget e-postkonto är anslutet visas skärmbilden **Anslut din e-post**.
 
-    ![Dialogrutan Konfigurera e-postkonto med fältet för e-postadress och knappen Nästa -screenshot][img1]
+    ![Skärmbilden Anslut din e-post med knappen Anslut -screenshot][img1]
 
-1. Ange den e-postadress du vill använda i fältet **E-postkonto**.
+1. Klicka på **Anslut**.
 
-1. Klicka på **Nästa**.
+    Fönstret **E-postinställning** öppnas.
 
-    * SuperOffice försöker identifiera din e-postleverantör och omdirigerar dig till inloggning.
-    * Om lösenordet är sparat hos leverantören kan autentiseringen slutföras automatiskt.
-    * Om inte, ombeds du att ange lösenordet direkt hos leverantören (till exempel Microsoft eller Google).
-    * När autentiseringen har slutförts visas inkorgen i SuperOffice.
+    ![Fönstret E-postinställning med fältet för e-postadress och knappen Nästa -screenshot][img2]
 
-1. Om autentiseringen misslyckas eller leverantören inte kan identifieras visas dialogrutan **Avancerade inställningar**. Du kan då ange serverinställningar manuellt.
+1. Ange din e-postadress och klicka på **Nästa**.
+
+    * Om din e-postadress redan är godkänd för Microsoft Graph konfigureras kontot automatiskt och inkorgen öppnas.
+    * Om din leverantör använder IMAP, till exempel Gmail, ombeds du ange ditt lösenord. Ange det och klicka på **Logga in**.
+
+1. Om autentiseringen misslyckas eller leverantören inte kan identifieras klickar du på **Avancerade inställningar** för att ange serverinställningarna manuellt.
 
 ## Konfigurera avancerade inställningar
 
 Om automatisk konfiguration misslyckas måste du ange inställningarna för e-postservern manuellt. Alla obligatoriska fält måste fyllas i för att inkorgen i SuperOffice ska fungera korrekt.
+
+1. Klicka på **Avancerade inställningar** i fönstret **E-postinställning**.
+
+1. Kontrollera att din e-postadress är korrekt i fältet **E-postadress**.
 
 1. Ange inställningar för inkommande e-post (IMAP):
 
@@ -73,13 +79,15 @@ Om automatisk konfiguration misslyckas måste du ange inställningarna för e-po
     * **Standardport:** Lämna tomt för att använda leverantörens standardport, eller ange en anpassad port om din leverantör kräver det.
     * **Användarnamn:** Vanligtvis din fullständiga e-postadress.
     * **Lösenord:** Lösenordet till din e-post.
-    * **Använd SSL/TLS:** Lämna detta aktiverat om inte din leverantör anger något annat.
+    * **Använd SSL/TLS (rekommenderas):** Lämna detta aktiverat om inte din leverantör anger något annat.
 
 1. Ange inställningar för utgående e-post (SMTP):
 
-    * **Server**, **Standardport**, **Användarnamn**, **Lösenord** och **Använd SSL/TLS**: samma som för inkommande.
+    * **Server**, **Standardport**, **Användarnamn**, **Lösenord** och **Använd SSL/TLS (rekommenderas)**: samma som för inkommande.
 
 1. Klicka på **Spara** för att koppla kontot.
+
+    Om du vill gå tillbaka till föregående skärmbild utan att spara klickar du på **Tillbaka**.
 
 ![Avancerade inställningar för e-postkonto -screenshot][img4]
 
@@ -87,22 +95,22 @@ Dessa inställningar finns i din e-postleverantörs dokumentation. För Gmail, s
 
 ## Koppla från eller ändra ditt e-postkonto
 
-Du kan koppla bort det aktuella e-postkontot och valfritt ansluta ett nytt konto.
+Banderollen högst upp i **Alternativ för e-post** visar om ett e-postkonto är anslutet.
 
 1. Klicka på <i class="ph ph-user-circle" aria-label="Personliga inställningar"></i> i toppraden och välj **Alternativ för e-post**.
 
-1. Gå till fliken **E-postkonto**.
+1. Kontrollera banderollen högst upp under fliken **Allmänt**. När ett konto är anslutet visas **Inloggad med** och din e-postadress.
 
-    ![Fliken E-postkonto med knappen Redigera/ta bort -screenshot][img6]
+    ![Alternativ för e-post som visar det inloggade kontot och länken Logga ut -screenshot][img6]
 
-1. Klicka på **Redigera/ta bort** för att koppla från kontot.
+1. Klicka på **Logga ut** för att koppla från det aktuella e-postkontot.
 
-    * Detta öppnar samma dialogruta som används vid första anslutningen.
-    * Stäng dialogen för att endast koppla bort kontot.
-    * Ange en ny e-postadress och följ stegen för att återansluta.
+1. Om du vill ansluta igen klickar du på **Anslut** i banderollen och följer stegen i [Anslut ditt e-postkonto][2].
+
+    ![Alternativ för e-post som visar banderollen Anslut till din önskade e-posttjänst -screenshot][img7]
 
 <Note>
-Att ta bort ett konto raderar **inte** själva e-postkontot (till exempel ditt Gmail- eller Outlook-konto). Det kopplas endast bort från SuperOffice.
+Att logga ut raderar **inte** själva e-postkontot (till exempel ditt Gmail- eller Outlook-konto). Det kopplas endast bort från SuperOffice.
 </Note>
 
 ## Felsökningstips
@@ -122,12 +130,15 @@ För att justera layout, teckensnitt eller beteende för meddelanden, gå till <
 </Tip>
 
 [1]: ../../../contact/learn/index
+[2]: #connect-your-email-account
 [8]: ../../learn/change-default-mail-client
 [9]: ../../../../../integrations/superoffice-for-outlook/index
 [10]: ../../../learn/getting-started/connect-your-accounts#email
 [11]: https://support.google.com/mail/answer/185833?hl=en
 [12]: https://knowledge.workspace.google.com/admin/sync/turn-pop-and-imap-on-or-off-for-users
 [13]: ../../../../../integrations/gmail-link/index
-[img1]: ../../../../media/loc/en/email/inbox-setup-dialog.png
+[img1]: ../../../../media/loc/en/email/inbox-connect-your-email.png
+[img2]: ../../../../media/loc/en/email/inbox-email-setup-popup.png
 [img4]: ../../../../media/loc/en/email/so-inbox-advanced-settings.png
-[img6]: ../../../../media/loc/en/email/email-options-account.png
+[img6]: ../../../../media/loc/en/email/email-options-general.png
+[img7]: ../../../../media/loc/en/email/email-options-not-connected.png
