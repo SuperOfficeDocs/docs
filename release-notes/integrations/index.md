@@ -67,6 +67,17 @@ Current version: For the latest version numbers and release details for all prod
 
 See all the [new or updated apps][2]
 
+* 21.sept: [Finago by Syncify](https://appstore.superoffice.com/syncify-ab/finago-by-syncify) from Syncify AB
+* 21.sept: [Xledger by Syncify](https://appstore.superoffice.com/syncify-ab/xledger-by-syncify) from Syncify AB
+* 21.sept: [Places for SuperOffice](https://appstore.superoffice.com/superoffice-as/places-for-superoffice) from SuperOffice AS
+* 1.oct: [Teams Notify](https://appstore.superoffice.com/superoffice-as/superoffice-for-microsoft-teams) from SuperOffice AS
+* 1.oct: [SuperOffice for WordPress](https://appstore.superoffice.com/superoffice-as/superoffice-for-wordpress) from SuperOffice AS
+* 1.oct: [SuperOffice for Trello](https://appstore.superoffice.com/superoffice-as/superoffice-for-trello) from SuperOffice AS
+* 1.oct: [Zapier Integration](https://appstore.superoffice.com/superoffice-as/zapier-integration) from SuperOffice AS
+* 1.oct: [SuperOffice for Outlook](https://appstore.superoffice.com/superoffice-as/superoffice-for-outlook) from SuperOffice AS
+* 1.oct: [SharePoint Documents](https://appstore.superoffice.com/superoffice-as/sharepoint-documents) from SuperOffice AS
+* 1.oct: [SharePoint Documents](https://appstore.superoffice.com/superoffice-as/sharepoint-documents) from SuperOffice AS
+
 * [ezSync][68] from Schneider & Wulf EDV-Beratung GmbH & Co KG (27.08.2026)
 * [Harmoniser][69] from Synergy Technology Ltd (27.08.2026)
 * [Dealfront Connect (formerly Echobot Connect)][66] from SP Softwarepartner GmbH/Dealfront (20.08.2026)
