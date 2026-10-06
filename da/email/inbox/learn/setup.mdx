@@ -4,7 +4,7 @@ title: Opsætning af SuperOffice Indbakke
 description: Lær, hvordan du opsætter og logger ind i SuperOffice Indbakke ved hjælp af enten Microsoft Graph eller manuelle IMAP/SMTP-indstillinger. Denne funktion er et alternativ til SuperOffice for Outlook eller SuperOffice Gmail Link til at forbinde din e-mailkonto til SuperOffice CRM.
 keywords: ['SuperOffice Indbakke', 'opsæt indbakke', 'e-mailopsætning', 'IMAP', 'SMTP', 'e-mailforbindelse', 'appadgangskoder', 'Microsoft Graph', 'on-premise Exchange-server']
 author: digitaldiina
-date: 09.24.2026
+date: 10.06.2026
 so_version: 12.5
 content_type: concept
 license: salesessentials, serviceessentials, marketingessentials
@@ -25,10 +25,12 @@ language: da
 
 SuperOffice Indbakke er en alternativ metode til at forbinde din e-mailkonto med SuperOffice CRM. Den er designet til brugere, der ikke kan installere [SuperOffice for Outlook][9] (Microsoft 365) eller [SuperOffice Gmail Link][13] (Google Workspace) på deres enhed.
 
-SuperOffice Indbakke understøtter to måder at forbinde din e-mailkonto på:
+SuperOffice Indbakke forbinder til din e-mailkonto på én af to måder, afhængigt af din udbyder:
 
-* **Microsoft 365 med Microsoft Graph (anbefales til Microsoft 365-konti):** Tilslut via [guiden Brugeropsætning][10] i stedet for fra selve indbakken. Når du tilslutter på denne måde, går afsendelse og modtagelse af e-mail, mapper samt mødeforslagsindkaldelser og -afbud alle via Microsoft Graph i stedet for IMAP/SMTP.
-* **IMAP og SMTP (Gmail, en on-premise Exchange-server eller en anden udbyder):** Tilslut manuelt fra selve indbakken, som beskrevet nedenfor.
+* **Microsoft Graph (Microsoft 365):** Hvis din e-mailadresse allerede er godkendt til Microsoft Graph, opsætter SuperOffice kontoen automatisk.
+* **IMAP og SMTP (Gmail, en on-premise Exchange-server eller en anden udbyder):** Du logger ind med din adgangskode eller indtaster serveroplysningerne manuelt under **Avancerede indstillinger**.
+
+Du starter på samme måde for begge. Du kan også tilslutte fra trin 2 i [guiden Brugeropsætning][10].
 
 <Note>
 SuperOffice Indbakke understøtter kun **én** e-mailkonto pr. bruger. Hvis SuperOffice for Outlook eller SuperOffice Gmail Link er installeret og forbundet til din e-mail, er Indbakke-funktionen ikke tilgængelig.
@@ -38,34 +40,38 @@ SuperOffice Indbakke understøtter kun **én** e-mailkonto pr. bruger. Hvis Supe
 
 * Kontrollér, at **SuperOffice CRM** er valgt som din [foretrukne e-mailklient][8] under **Lokale indstillinger**.
 
-* Sørg for, at **IMAP er aktiveret** i din e-mailklient.
+* Hvis du tilslutter via IMAP, skal du sørge for, at **IMAP er aktiveret** i din e-mailklient.
 
 * Bekræft, at den **e-mailadresse**, du vil bruge, matcher den primære e-mailadresse, der er registreret på dit [personkort][1] i SuperOffice.
 
-## Tilslut din e-mailkonto
-
-Brug denne metode til en Gmail-konto, en on-premise Exchange-server eller en anden IMAP/SMTP-udbyder. Har du en Microsoft 365-konto, skal du i stedet bruge [guiden Brugeropsætning][10].
+## Tilslut din e-mailkonto {#connect-your-email-account}
 
 1. Klik på <i class="ph ph-at" aria-hidden="true"></i> **Indbakke** i navigatoren.
 
-    Første gang du åbner indbakken, vises dialogboksen **Konfigurer e-mailkonto**.
+    Hvis der ikke er tilsluttet en e-mailkonto, vises skærmbilledet **Tilslut din e-mail**.
 
-    ![Dialogboksen Konfigurer e-mailkonto med e-mailfelt og Næste-knap -screenshot][img1]
+    ![Skærmbilledet Tilslut din e-mail med knappen Tilslut -screenshot][img1]
 
-1. Indtast den e-mailadresse, du vil bruge, i feltet **E-mailkonto**.
+1. Klik på **Tilslut**.
 
-1. Klik på **Næste**.
+    Vinduet **E-mailopsætning** åbnes.
 
-    * SuperOffice forsøger at identificere din e-mailudbyder og viderestille dig til login.
-    * Hvis din adgangskode er gemt hos udbyderen, kan godkendelsen gennemføres automatisk.
-    * Hvis ikke, bliver du bedt om at indtaste adgangskoden direkte hos udbyderen (f.eks. Microsoft eller Google).
-    * Efter vellykket godkendelse returneres du til SuperOffice, og indbakken åbnes.
+    ![Vinduet E-mailopsætning med e-mailadressefeltet og knappen Næste -screenshot][img2]
 
-1. Hvis godkendelsen mislykkes, eller udbyderen ikke kan identificeres, vises dialogboksen **Avancerede indstillinger**. Du kan så indtaste serveroplysninger manuelt.
+1. Indtast din e-mailadresse, og klik på **Næste**.
+
+    * Hvis din e-mailadresse allerede er godkendt til Microsoft Graph, opsættes kontoen automatisk, og indbakken åbnes.
+    * Hvis din udbyder bruger IMAP, for eksempel Gmail, bliver du bedt om din adgangskode. Indtast den, og klik på **Log på**.
+
+1. Hvis godkendelsen mislykkes, eller din udbyder ikke kan identificeres, skal du klikke på **Avancerede indstillinger** for at indtaste serveroplysningerne manuelt.
 
 ## Konfigurer avancerede indstillinger
 
 Hvis automatisk opsætning mislykkes, skal du indtaste dine e-mailserveroplysninger manuelt. Alle påkrævede felter skal udfyldes for at sikre, at e-mail kan sendes og modtages via SuperOffice Indbakke.
+
+1. Klik på **Avancerede indstillinger** i vinduet **E-mailopsætning**.
+
+1. Kontrollér, at din e-mailadresse er korrekt i feltet **E-mailadresse**.
 
 1. Indtast indstillinger for indgående e-mail (IMAP):
 
@@ -73,13 +79,15 @@ Hvis automatisk opsætning mislykkes, skal du indtaste dine e-mailserveroplysnin
     * **Standardport:** Lad feltet stå tomt for at bruge din udbyders standardport, eller angiv en brugerdefineret port, hvis din udbyder kræver det.
     * **Brugernavn:** Normalt din fulde e-mailadresse.
     * **Adgangskode:** Adgangskoden til din e-mailkonto.
-    * **Brug SSL/TLS:** Lad denne indstilling være aktiveret, medmindre din udbyder anviser andet.
+    * **Brug SSL/TLS (anbefalet):** Lad denne indstilling være aktiveret, medmindre din udbyder anviser andet.
 
 1. Indtast indstillinger for udgående e-mail (SMTP):
 
-    * **Server**, **Standardport**, **Brugernavn**, **Adgangskode** og **Brug SSL/TLS**: som ved indgående e-mail.
+    * **Server**, **Standardport**, **Brugernavn**, **Adgangskode** og **Brug SSL/TLS (anbefalet)**: som ved indgående e-mail.
 
 1. Klik på **Gem** for at tilslutte din konto.
+
+    Klik på **Tilbage** for at vende tilbage til det forrige skærmbillede uden at gemme.
 
 ![Avancerede indstillinger for e-mailkonto -screenshot][img4]
 
@@ -87,22 +95,22 @@ Disse indstillinger findes i din e-mailudbyders dokumentation. For Gmail kan du 
 
 ## Fjern eller skift din e-mailkonto
 
-Du kan fjerne din nuværende e-mailkonto og eventuelt opdatere den ved at oprette forbindelse igen.
+Banneret øverst i **E-mailindstillinger** viser, om der er tilsluttet en e-mailkonto.
 
 1. Klik på <i class="ph ph-user-circle" aria-label="Personlige indstillinger"></i> i toplinjen og vælg **E-mailindstillinger**.
 
-1. Gå til fanen **E-mailkonto**.
+1. Se banneret øverst under fanen **Generelt**. Når en konto er tilsluttet, vises **Logget på med** og din e-mailadresse.
 
-    ![Fanen E-mailkonto med knappen Rediger/fjern -screenshot][img6]
+    ![E-mailindstillinger med den tilsluttede konto og linket Log af -screenshot][img6]
 
-1. Klik på **Rediger/fjern** for at afbryde forbindelsen til den aktuelle e-mailkonto.
+1. Klik på **Log af** for at afbryde forbindelsen til den aktuelle e-mailkonto.
 
-    * Dette åbner den samme opsætningsdialog som ved første tilslutning.
-    * Hvis du blot vil fjerne forbindelsen, skal du lukke dialogen.
-    * For at oprette forbindelse igen skal du indtaste en ny e-mailadresse og følge opsætningsvejledningen.
+1. For at oprette forbindelse igen skal du klikke på **Tilslut** i banneret og følge trinnene i [Tilslut din e-mailkonto][2].
+
+    ![E-mailindstillinger med banneret Opret forbindelse til din foretrukne e-mailtjeneste -screenshot][img7]
 
 <Note>
-Fjernelse af e-mailkontoen sletter **ikke** din faktiske e-mailkonto (f.eks. din Gmail- eller Outlook-konto). Den afbryder kun forbindelsen til SuperOffice.
+Når du logger ud, slettes din faktiske e-mailkonto (f.eks. din Gmail- eller Outlook-konto) **ikke**. Forbindelsen til SuperOffice afbrydes kun.
 </Note>
 
 ## Fejlfinding
@@ -122,12 +130,15 @@ Hvis du vil justere layout, skrifttype eller opførsel for meddelelser, skal du 
 </Tip>
 
 [1]: ../../../contact/learn/index
+[2]: #connect-your-email-account
 [8]: ../../learn/change-default-mail-client
 [9]: ../../../../../integrations/superoffice-for-outlook/index
 [10]: ../../../learn/getting-started/connect-your-accounts#email
 [11]: https://support.google.com/mail/answer/185833?hl=en
 [12]: https://knowledge.workspace.google.com/admin/sync/turn-pop-and-imap-on-or-off-for-users
 [13]: ../../../../../integrations/gmail-link/index
-[img1]: ../../../../media/loc/en/email/inbox-setup-dialog.png
+[img1]: ../../../../media/loc/en/email/inbox-connect-your-email.png
+[img2]: ../../../../media/loc/en/email/inbox-email-setup-popup.png
 [img4]: ../../../../media/loc/en/email/so-inbox-advanced-settings.png
-[img6]: ../../../../media/loc/en/email/email-options-account.png
+[img6]: ../../../../media/loc/en/email/email-options-general.png
+[img7]: ../../../../media/loc/en/email/email-options-not-connected.png

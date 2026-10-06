@@ -4,7 +4,7 @@ title: Set up SuperOffice Inbox
 description: Learn how to set up and log in to the SuperOffice Inbox, using either Microsoft Graph or manual IMAP/SMTP settings. This feature is an alternative to SuperOffice for Outlook or SuperOffice Gmail Link for connecting your email account to SuperOffice CRM.
 keywords: ['email setup', 'IMAP', 'SMTP', 'email connection', 'app passwords', 'Microsoft Graph', 'on-premise Exchange server']
 author: digitaldiina
-date: 09.24.2026
+date: 10.06.2026
 so_version: 12.5
 content_type: concept
 license: salesessentials, serviceessentials, marketingessentials
@@ -25,10 +25,12 @@ language: en
 
 The SuperOffice Inbox is an alternative method for connecting your email account to SuperOffice CRM. It is designed for users who cannot install [SuperOffice for Outlook][9] (Microsoft 365) or [SuperOffice Gmail Link][13] (Google Workspace) on their device.
 
-SuperOffice Inbox supports two ways of connecting your email account:
+SuperOffice Inbox connects to your email account in one of two ways, depending on your provider:
 
-* **Microsoft 365, using Microsoft Graph (recommended for Microsoft 365 accounts):** Connect from the [User setup wizard][10] instead of from within the inbox itself. Once connected this way, sending and receiving email, folders, and follow-up invitations and cancellations, all go through Microsoft Graph instead of IMAP/SMTP.
-* **IMAP and SMTP (Gmail, an on-premise Exchange server, or another provider):** Connect manually from within the inbox, as described below.
+* **Microsoft Graph (Microsoft 365):** If your email address is already authorized for Microsoft Graph, SuperOffice sets up the account automatically.
+* **IMAP and SMTP (Gmail, an on-premise Exchange server, or another provider):** You sign in with your password, or enter the server settings manually under **Advanced settings**.
+
+You start the same way for both. You can also connect from step 2 of the [User setup wizard][10].
 
 <Note>
 SuperOffice Inbox supports only **one** email account per user. If SuperOffice for Outlook or SuperOffice Gmail Link is installed and connected to your email, the Inbox feature is not available.
@@ -38,34 +40,38 @@ SuperOffice Inbox supports only **one** email account per user. If SuperOffice f
 
 * Check that **SuperOffice CRM** is selected as your [preferred email client][8] in **Local settings**.
 
-* Ensure that **IMAP is enabled** in your email client.
+* If you connect using IMAP, ensure that **IMAP is enabled** in your email client.
 
 * Confirm that the **email address** you intend to use matches the primary email address registered on your [contact card][1] in SuperOffice.
 
 ## Connect your email account
 
-Use this method for a Gmail account, an on-premise Exchange server, or another IMAP/SMTP provider. If you have a Microsoft 365 account, use the [User setup wizard][10] instead.
-
 1. Click <i class="ph ph-at" aria-hidden="true"></i> **Inbox** in the navigator.
 
-    The first time you open the inbox, the **Set up email account** dialog appears.
+    If no email account is connected, the **Connect your e-mail** screen appears.
 
-    ![Set up email account dialog showing email field and Next button -screenshot][img1]
+    ![Connect your e-mail screen with the Connect button -screenshot][img1]
 
-1. In the **E-mail account** field, enter the email address you want to use.
+1. Click **Connect**.
 
-1. Click **Next**.
+    The **E-mail setup** window opens.
 
-    * SuperOffice will try to detect your email provider and redirect you to sign in.
-    * If your password is saved with the provider, authentication may complete automatically.
-    * If not, you will be prompted to enter your password directly with the provider (for example, Microsoft or Google).
-    * After successful authentication, you are returned to SuperOffice and the inbox opens.
+    ![E-mail setup window with the e-mail address field and Next button -screenshot][img2]
 
-1. If authentication fails or the provider cannot be detected, the **Advanced settings** dialog appears. You can then enter server settings manually.
+1. Enter your email address and click **Next**.
+
+    * If your email address is already authorized for Microsoft Graph, the account is set up automatically and the inbox opens.
+    * If your provider uses IMAP, for example Gmail, you are asked for your password. Enter it and click **Log in**.
+
+1. If authentication fails or your provider cannot be detected, click **Advanced settings** to enter the server settings manually.
 
 ## Configure advanced settings
 
 If automatic setup fails, you must enter your email server details manually. All required fields must be filled in to ensure that email can be received and sent using SuperOffice Inbox.
+
+1. Click **Advanced settings** in the **E-mail setup** window.
+
+1. Check that your email address is correct in the **E-mail address** field.
 
 1. Enter incoming email (IMAP) settings:
 
@@ -73,13 +79,15 @@ If automatic setup fails, you must enter your email server details manually. All
     * **Default port:** Leave blank to use your provider's default port, or enter a custom port if your provider requires one.
     * **User name:** Usually your full email address.
     * **Password:** Your email account password.
-    * **Use SSL/TLS:** Leave this on unless your provider tells you otherwise.
+    * **Use SSL/TLS (Recommended):** Leave this on unless your provider tells you otherwise.
 
 1. Enter outgoing email (SMTP) settings:
 
-    * **Server**, **Default port**, **User name**, **Password**, and **Use SSL/TLS**: similar to incoming.
+    * **Server**, **Default port**, **User name**, **Password**, and **Use SSL/TLS (Recommended)**: similar to incoming.
 
 1. Click **Save** to connect your account.
+
+    To return to the previous screen without saving, click **Back**.
 
 ![Advanced settings for email account -screenshot][img4]
 
@@ -87,22 +95,22 @@ These settings can be found in your email provider's documentation. For Gmail, s
 
 ## Disconnect or change your email account
 
-You can disconnect your current email account and optionally update it by reconnecting.
+The banner at the top of **Email options** shows whether an email account is connected.
 
 1. Click <i class="ph ph-user-circle" aria-label="Personal settings"></i> in the top bar and select **Email options**.
 
-1. Go to the **E-mail account** tab.
+1. Check the banner at the top of the **General** tab. When an account is connected, it shows **Logged in with** and your email address.
 
-    ![Email account tab with Edit/remove button -screenshot][img6]
+    ![Email options showing the logged-in account and the Sign out link -screenshot][img6]
 
-1. Click **Edit/remove** to disconnect the current email account.
+1. Click **Sign out** to disconnect the current email account.
 
-    * This opens the same setup dialog used when first connecting your email account.
-    * To remove the connection, simply close the dialog.
-    * To reconnect, enter a new email address and follow the setup steps.
+1. To reconnect, click **Connect** in the banner and follow the steps in [Connect your email account][2].
+
+    ![Email options showing the banner Please connect to your preferred e-mail service -screenshot][img7]
 
 <Note>
-Removing the email account does **not** delete your actual email account (for example, your Gmail or Outlook account). It only disconnects it from SuperOffice.
+Signing out does **not** delete your actual email account (for example, your Gmail or Outlook account). It only disconnects it from SuperOffice.
 </Note>
 
 ## Troubleshooting tips
@@ -122,12 +130,15 @@ To adjust layout, font, or behavior for messages, go to <i class="ph ph-user-cir
 </Tip>
 
 [1]: ../../../contact/learn/index
+[2]: #connect-your-email-account
 [8]: ../../learn/change-default-mail-client
 [9]: /integrations/superoffice-for-outlook/index
 [10]: ../../../learn/getting-started/connect-your-accounts#email
 [11]: https://support.google.com/mail/answer/185833?hl=en
 [12]: https://knowledge.workspace.google.com/admin/sync/turn-pop-and-imap-on-or-off-for-users
 [13]: /integrations/gmail-link/index
-[img1]: /media/loc/en/email/inbox-setup-dialog.png
+[img1]: /media/loc/en/email/inbox-connect-your-email.png
+[img2]: /media/loc/en/email/inbox-email-setup-popup.png
 [img4]: /media/loc/en/email/so-inbox-advanced-settings.png
-[img6]: /media/loc/en/email/email-options-account.png
+[img6]: /media/loc/en/email/email-options-general.png
+[img7]: /media/loc/en/email/email-options-not-connected.png

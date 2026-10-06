@@ -4,7 +4,7 @@ title: SuperOffice Posteingang einrichten
 description: Erfahren Sie, wie Sie den SuperOffice Posteingang einrichten und sich anmelden, entweder über Microsoft Graph oder mit manuellen IMAP-/SMTP-Einstellungen. Diese Funktion ist eine Alternative zu SuperOffice für Outlook oder SuperOffice Gmail Link, um Ihr E-Mail-Konto mit SuperOffice CRM zu verbinden.
 keywords: ['SuperOffice Posteingang', 'Posteingang einrichten', 'E-Mail-Konfiguration', 'IMAP', 'E-Mail-Verbindung', 'App-Passwörter', 'Microsoft Graph', 'On-Premises-Exchange-Server']
 author: digitaldiina
-date: 09.24.2026
+date: 10.06.2026
 so_version: 12.5
 content_type: concept
 license: salesessentials, serviceessentials, marketingessentials
@@ -25,10 +25,12 @@ language: de
 
 Der SuperOffice Posteingang ist eine alternative Methode, um Ihr E-Mail-Konto mit SuperOffice CRM zu verbinden. Diese Funktion wurde für Benutzer entwickelt, die [SuperOffice für Outlook][9] (Microsoft 365) oder [SuperOffice Gmail Link][13] (Google Workspace) nicht auf ihrem Gerät installieren können.
 
-Der SuperOffice Posteingang unterstützt zwei Verbindungsarten für Ihr E-Mail-Konto:
+Der SuperOffice Posteingang verbindet sich je nach Anbieter auf eine von zwei Arten mit Ihrem E-Mail-Konto:
 
-* **Microsoft 365 über Microsoft Graph (empfohlen für Microsoft 365-Konten):** Verbinden Sie sich über den [Assistenten Benutzereinrichtung][10] statt direkt im Posteingang. Nach dieser Verbindung laufen das Senden und Empfangen von E-Mails, Ordner sowie Besprechungseinladungen und -absagen über Microsoft Graph statt über IMAP/SMTP.
-* **IMAP und SMTP (Gmail, ein On-Premises-Exchange-Server oder ein anderer Anbieter):** Verbinden Sie sich manuell im Posteingang, wie unten beschrieben.
+* **Microsoft Graph (Microsoft 365):** Wenn Ihre E-Mail-Adresse bereits für Microsoft Graph autorisiert ist, richtet SuperOffice das Konto automatisch ein.
+* **IMAP und SMTP (Gmail, ein On-Premises-Exchange-Server oder ein anderer Anbieter):** Sie melden sich mit Ihrem Passwort an oder geben die Servereinstellungen manuell unter **Erweiterte Einstellungen** ein.
+
+Sie beginnen in beiden Fällen auf dieselbe Weise. Sie können sich auch in Schritt 2 des [Assistenten Benutzereinrichtung][10] verbinden.
 
 <Note>
 Der SuperOffice Posteingang unterstützt nur **ein** E-Mail-Konto pro Benutzer. Wenn SuperOffice für Outlook oder SuperOffice Gmail Link installiert und mit Ihrem E-Mail-Konto verbunden ist, steht die Posteingangsfunktion nicht zur Verfügung.
@@ -38,34 +40,38 @@ Der SuperOffice Posteingang unterstützt nur **ein** E-Mail-Konto pro Benutzer. 
 
 * Stellen Sie sicher, dass **SuperOffice CRM** in den **lokalen Einstellungen** als [bevorzugter E-Mail-Client][8] ausgewählt ist.
 
-* Vergewissern Sie sich, dass **IMAP in Ihrem E-Mail-Client aktiviert** ist.
+* Wenn Sie sich per IMAP verbinden, vergewissern Sie sich, dass **IMAP in Ihrem E-Mail-Client aktiviert** ist.
 
 * Die **E-Mail-Adresse**, die Sie verwenden möchten, muss mit der primären E-Mail-Adresse auf Ihrer [Personenkarte][1] in SuperOffice übereinstimmen.
 
-## E-Mail-Konto verbinden
-
-Verwenden Sie diese Methode für ein Gmail-Konto, einen On-Premises-Exchange-Server oder einen anderen IMAP-/SMTP-Anbieter. Wenn Sie ein Microsoft 365-Konto haben, verwenden Sie stattdessen den [Assistenten Benutzereinrichtung][10].
+## E-Mail-Konto verbinden {#connect-your-email-account}
 
 1. Klicken Sie im Navigator auf <i class="ph ph-at" aria-hidden="true"></i> **Posteingang**.
 
-    Beim ersten Öffnen erscheint der Dialog **E-Mail-Konto einrichten**.
+    Wenn kein E-Mail-Konto verbunden ist, erscheint der Bildschirm **E-Mail verbinden**.
 
-    ![Dialog E-Mail-Konto einrichten mit E-Mail-Feld und Weiter-Schaltfläche -screenshot][img1]
+    ![Bildschirm E-Mail verbinden mit Schaltfläche Verbinden -screenshot][img1]
 
-1. Geben Sie im Feld **E-Mail-Konto** die gewünschte E-Mail-Adresse ein.
+1. Klicken Sie auf **Verbinden**.
 
-1. Klicken Sie auf **Weiter**.
+    Das Fenster **E-Mail-Einrichtung** wird geöffnet.
 
-    * SuperOffice erkennt Ihren E-Mail-Anbieter und leitet Sie zur Anmeldung weiter.
-    * Falls Ihr Passwort beim Anbieter gespeichert ist, wird die Authentifizierung automatisch abgeschlossen.
-    * Andernfalls werden Sie zur Eingabe Ihres Passworts beim Anbieter (z. B. Microsoft oder Google) aufgefordert.
-    * Nach erfolgreicher Anmeldung kehren Sie zu SuperOffice zurück und der Posteingang wird geöffnet.
+    ![Fenster E-Mail-Einrichtung mit E-Mail-Adressfeld und Schaltfläche Weiter -screenshot][img2]
 
-1. Schlägt die Anmeldung fehl oder kann der Anbieter nicht erkannt werden, erscheint der Dialog **Erweiterte Einstellungen**, in dem Sie die Serverdaten manuell eingeben können.
+1. Geben Sie Ihre E-Mail-Adresse ein und klicken Sie auf **Weiter**.
+
+    * Wenn Ihre E-Mail-Adresse bereits für Microsoft Graph autorisiert ist, wird das Konto automatisch eingerichtet und der Posteingang wird geöffnet.
+    * Wenn Ihr Anbieter IMAP verwendet, z. B. Gmail, werden Sie nach Ihrem Passwort gefragt. Geben Sie es ein und klicken Sie auf **Anmelden**.
+
+1. Schlägt die Authentifizierung fehl oder kann Ihr Anbieter nicht erkannt werden, klicken Sie auf **Erweiterte Einstellungen**, um die Serverdaten manuell einzugeben.
 
 ## Erweiterte Einstellungen konfigurieren
 
 Wenn die automatische Einrichtung fehlschlägt, müssen Sie die Serverinformationen manuell eintragen. Alle Felder sind erforderlich, um den E-Mail-Verkehr über den SuperOffice Posteingang sicherzustellen.
+
+1. Klicken Sie im Fenster **E-Mail-Einrichtung** auf **Erweiterte Einstellungen**.
+
+1. Prüfen Sie, ob Ihre E-Mail-Adresse im Feld **E-Mail-Adresse** korrekt ist.
 
 1. Geben Sie die Einstellungen für eingehende E-Mails ein:
 
@@ -73,13 +79,15 @@ Wenn die automatische Einrichtung fehlschlägt, müssen Sie die Serverinformatio
     * **Standardport:** Leer lassen, um den Standardport Ihres Anbieters zu verwenden, oder einen benutzerdefinierten Port eingeben, falls Ihr Anbieter dies erfordert.
     * **Benutzername:** In der Regel Ihre vollständige E-Mail-Adresse.
     * **Passwort:** Passwort Ihres E-Mail-Kontos.
-    * **SSL/TLS verwenden:** Lassen Sie dies aktiviert, sofern Ihr Anbieter nichts anderes vorgibt.
+    * **SSL/TLS verwenden (empfohlen):** Lassen Sie dies aktiviert, sofern Ihr Anbieter nichts anderes vorgibt.
 
 1. Geben Sie die Einstellungen für ausgehende E-Mails ein:
 
-    * **Server**, **Standardport**, **Benutzername**, **Passwort** und **SSL/TLS verwenden**: analog zu den eingehenden Einstellungen.
+    * **Server**, **Standardport**, **Benutzername**, **Passwort** und **SSL/TLS verwenden (empfohlen)**: analog zu den eingehenden Einstellungen.
 
 1. Klicken Sie auf **Speichern**, um das Konto zu verbinden.
+
+    Um ohne Speichern zum vorherigen Bildschirm zurückzukehren, klicken Sie auf **Zurück**.
 
 ![Erweiterte Einstellungen für E-Mail-Konto -screenshot][img4]
 
@@ -87,22 +95,22 @@ Diese Einstellungen finden Sie in der Dokumentation Ihres E-Mail-Anbieters. Für
 
 ## E-Mail-Konto trennen oder ändern
 
-Sie können Ihr aktuelles E-Mail-Konto trennen und bei Bedarf ein neues Konto verbinden.
+Das Banner oben in den **E-Mail-Optionen** zeigt an, ob ein E-Mail-Konto verbunden ist.
 
 1. Klicken Sie in der oberen Leiste auf <i class="ph ph-user-circle" aria-label="Persönliche Einstellungen"></i> und wählen Sie **E-Mail-Optionen**.
 
-1. Wechseln Sie zur Registerkarte **E-Mail-Konto**.
+1. Prüfen Sie das Banner oben auf der Registerkarte **Allgemein**. Wenn ein Konto verbunden ist, zeigt es **Angemeldet mit** und Ihre E-Mail-Adresse.
 
-    ![Registerkarte E-Mail-Konto mit Schaltfläche Bearbeiten/Entfernen -screenshot][img6]
+    ![E-Mail-Optionen mit angemeldetem Konto und dem Link Abmelden -screenshot][img6]
 
-1. Klicken Sie auf **Bearbeiten/Entfernen**, um das Konto zu trennen.
+1. Klicken Sie auf **Abmelden**, um das aktuelle E-Mail-Konto zu trennen.
 
-    * Dadurch wird der gleiche Dialog wie bei der ersten Einrichtung geöffnet.
-    * Zum Entfernen schließen Sie einfach den Dialog.
-    * Um erneut zu verbinden, geben Sie eine neue E-Mail-Adresse ein und folgen den Einrichtungsschritten.
+1. Um erneut zu verbinden, klicken Sie im Banner auf **Verbinden** und folgen Sie den Schritten unter [E-Mail-Konto verbinden][2].
+
+    ![E-Mail-Optionen mit dem Banner Bitte verbinden Sie sich mit Ihrem bevorzugten E-Mail-Dienst -screenshot][img7]
 
 <Note>
-Das Entfernen eines E-Mail-Kontos löscht **nicht** Ihr tatsächliches Konto (z. B. bei Gmail oder Outlook), sondern nur die Verbindung zu SuperOffice.
+Das Abmelden löscht **nicht** Ihr tatsächliches Konto (z. B. bei Gmail oder Outlook), sondern nur die Verbindung zu SuperOffice.
 </Note>
 
 ## Tipps zur Fehlerbehebung
@@ -122,12 +130,15 @@ Um Layout, Schriftart oder Verhalten von Nachrichten anzupassen, gehen Sie zu <i
 </Tip>
 
 [1]: ../../../contact/learn/index
+[2]: #connect-your-email-account
 [8]: ../../learn/change-default-mail-client
 [9]: ../../../../../integrations/superoffice-for-outlook/index
 [10]: ../../../learn/getting-started/connect-your-accounts#email
 [11]: https://support.google.com/mail/answer/185833?hl=en
 [12]: https://knowledge.workspace.google.com/admin/sync/turn-pop-and-imap-on-or-off-for-users
 [13]: ../../../../../integrations/gmail-link/index
-[img1]: ../../../../media/loc/en/email/inbox-setup-dialog.png
+[img1]: ../../../../media/loc/en/email/inbox-connect-your-email.png
+[img2]: ../../../../media/loc/en/email/inbox-email-setup-popup.png
 [img4]: ../../../../media/loc/en/email/so-inbox-advanced-settings.png
-[img6]: ../../../../media/loc/en/email/email-options-account.png
+[img6]: ../../../../media/loc/en/email/email-options-general.png
+[img7]: ../../../../media/loc/en/email/email-options-not-connected.png
