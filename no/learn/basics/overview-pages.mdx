@@ -2,8 +2,8 @@
 uid: help-no-overview-pages
 title: Arbeid med oversiktssider
 sidebarTitle: "Oversiktssider"
-description: Oversiktssider kombinerer et venstrepanel med aktive og festede poster, utvalg i liste- eller tavlevisning og posten du jobber med.
-keywords: ['oversiktsside', 'landingsside', 'Salgsskjermen', 'Sale screen', 'ny Sale screen', 'salgsskjerm', 'venstrepanel', 'sidefelt', 'festet', 'aktiv', 'feste', 'løsne', 'utvalg', 'tavlevisning', 'listevisning', 'filter', 'gjeldende', 'historikk', 'nylig', 'favoritter', 'navigator', 'søk', 'skjul', 'salgsoversikt']
+description: Oversiktssider kombinerer et venstrepanel med vertikale faner, utvalg i liste- eller tavlevisning og posten du jobber med.
+keywords: ['oversiktsside', 'landingsside', 'Salgsskjermen', 'Sale screen', 'ny Sale screen', 'salgsskjerm', 'venstrepanel', 'vertikale faner', 'faner', 'søk i faner', 'sidefelt', 'festet', 'aktiv', 'feste', 'løsne', 'utvalg', 'tavlevisning', 'listevisning', 'filter', 'gjeldende', 'historikk', 'nylig', 'favoritter', 'navigator', 'søk', 'skjul', 'salgsoversikt']
 author: digitaldiina
 date: 10.13.2026
 so_version: 12.5
@@ -21,10 +21,10 @@ related:
 language: no
 ---
 
-En oversiktsside er en skjerm der du kan se utvalgene dine, velge en post og jobbe med den uten å forlate siden. I stedet for å søke etter en post hver gang, har du postene du jobber mest med i et venstrepanel og bytter mellom dem med ett klikk.
+En oversiktsside er en skjerm der du kan se utvalgene dine, velge en post og jobbe med den uten å forlate siden. I stedet for å søke etter en post hver gang, har du utvalgene og postene du jobber mest med som vertikale faner i et venstrepanel og bytter mellom dem med ett klikk.
 
 <Note>
-Oversiktssider innføres gradvis, med Salgsskjermen først ut, og flere skjermer følger. Hvis du ikke ser Salgsskjermen ennå, åpnes salg på sitt eget kort som før.
+Oversiktssider innføres gradvis, med Salgsskjermen først ut, og flere skjermer følger. Hvis du ikke ser Salgsskjermen ennå, åpnes salg på sitt eget kort som før. Det finnes ikke noe venstrepanel, men du finner en tavlevisning av salgene dine under **Utvalg**.
 </Note>
 
 ## Hva en oversiktsside inneholder {#areas}
@@ -33,7 +33,7 @@ Oversiktssider innføres gradvis, med Salgsskjermen først ut, og flere skjermer
 
 | Nummer | Område | Beskrivelse |
 |:-:|---|---|
-| 1 | **Venstrepanel** | Et søkefelt, samt lister over utvalgene og postene du har åpne eller festet. Panelet er oppkalt etter skjermen, for eksempel **Salg**. |
+| 1 | **Venstrepanel** | Et søkefelt, samt vertikale faner for utvalgene og postene du har åpne eller festet. Panelet er oppkalt etter skjermen, for eksempel **Salg**. |
 | 2 | **Hovedområde** | Viser et utvalg i tavlevisning eller listevisning når et utvalg er åpent. Viser posten med detaljkortene når en post er åpen. |
 | 3 | **Sidepanel** | [Sidepanelet][1] til høyre, med en forhåndsvisning av den valgte posten eller visningen du har valgt. |
 
@@ -45,7 +45,7 @@ Oversiktssider innføres gradvis, med Salgsskjermen først ut, og flere skjermer
 
 ## Åpne en oversiktsside {#open}
 
-* **Velg ikonet i navigatoren.** Oversiktssiden åpnes med innholdet du så på sist. Posten du jobbet med sist, vises som den aktive posten.
+* **Velg ikonet i navigatoren.** Oversiktssiden åpnes med innholdet du så på sist. Posten du jobbet med sist, vises i den aktive fanen.
 
 * **Velg navnet i navigatoren.** Alternativene for historikk, favoritter og søk åpnes, som før. Velg en post eller et utvalg, så åpnes det i oversiktssiden.
 
@@ -55,7 +55,7 @@ Oversiktssider innføres gradvis, med Salgsskjermen først ut, og flere skjermer
 
 ## Bruke venstrepanelet {#left-panel}
 
-Venstrepanelet har en gruppe for utvalg og en gruppe for poster, for eksempel **Utvalg** og **Salg** i Salgsskjermen. Hver gruppe har en liste over aktive og festede elementer.
+Venstrepanelet viser utvalgene og postene dine som vertikale faner. Det har en gruppe for utvalg og en gruppe for poster, for eksempel **Utvalg** og **Salg** i Salgsskjermen. Hver gruppe har én aktiv fane og en liste over festede faner.
 
 ![Venstrepanelet med gruppene Utvalg og Salg -screenshot][img2]
 
@@ -69,61 +69,61 @@ Bruk søkefeltet øverst til å finne utvalg og poster samtidig.
 
 1. Velg et utvalg eller en post. Det åpnes i hovedområdet, listen lukkes, og søkefeltet tømmes.
 
-Poster vises før utvalg. Velg **Vis alle** for å utvide en liste. Hold musepekeren over et element for å se en forhåndsvisning, som i navigatoren.
+Poster vises før utvalg. Velg **Vis alle** for å utvide en liste. Hold musepekeren over et element for å se en forhåndsvisning, som i navigatoren. For å søke bare i fanene du allerede har åpne eller festet, se [Finne en fane i en gruppe](#group-menu).
 
-### Aktive og festede elementer {#active-pinned}
+### Aktive og festede faner {#active-pinned}
 
-Hver gruppe har to typer elementer.
+Hver gruppe har to typer faner.
 
-* **Aktiv:** Elementet du åpnet sist. Det finnes bare ett aktivt element i hver gruppe. Det blir stående til du fjerner det eller åpner et annet element.
+* **Aktiv:** Fanen du åpnet sist. Det finnes bare én aktiv fane i hver gruppe. Den blir stående til du lukker den eller åpner en annen fane.
 
-* **Festet:** Elementer du beholder i listen til du fjerner dem. Antall festede elementer vises ved siden av overskriften **Festet**. Velg overskriften for å skjule eller vise listen.
+* **Festet:** Faner du beholder i listen til du lukker dem. Antall festede faner vises ved siden av overskriften **Festet**. Velg overskriften for å skjule eller vise listen.
 
-Hold musepekeren over et element for å jobbe med det. De tre prikkene vises. Et aktivt element viser også et nålesymbol (<i class="ph ph-push-pin" aria-label="Nålesymbol"></i>), og et festet element viser en **X**.
+Hold musepekeren over en fane for å jobbe med den. De tre prikkene vises. En aktiv fane viser også et nålesymbol (<i class="ph ph-push-pin" aria-label="Nålesymbol"></i>), og en festet fane viser en **X**.
 
-* **Aktivt element:** Velg nålesymbolet for å flytte elementet øverst i listen over festede elementer, eller velg de tre prikkene for å åpne menyen.
+* **Aktiv fane:** Velg nålesymbolet for å flytte fanen øverst i listen over festede faner, eller velg de tre prikkene for å åpne menyen.
 
-  * **Fest:** Flytter elementet øverst i listen over festede elementer.
+  * **Fest:** Flytter fanen øverst i listen over festede faner.
 
-  * **Lukk:** Fjerner elementet fra listen.
+  * **Lukk:** Lukker fanen.
 
-  ![Menyen for et aktivt element med alternativene Fest og Lukk -screenshot][img4]
+  ![Menyen for en aktiv fane med alternativene Fest og Lukk -screenshot][img4]
 
-* **Festet element:** Velg **X** for å fjerne elementet fra listen, eller velg de tre prikkene for å åpne menyen.
+* **Festet fane:** Velg **X** for å lukke fanen, eller velg de tre prikkene for å åpne menyen.
 
-  * **Løsne og lukk:** Fjerner elementet fra listen.
+  * **Løsne og lukk:** Lukker fanen.
 
-  * **Løsne og lukk alle:** Fjerner alle festede elementer i gruppen.
+  * **Løsne og lukk alle:** Lukker alle festede faner i gruppen.
 
-  * **Løsne og lukk alle unntatt denne:** Fjerner alle festede elementer i gruppen unntatt dette.
+  * **Løsne og lukk alle unntatt denne:** Lukker alle festede faner i gruppen unntatt denne.
 
-  ![Menyen for et festet element med alternativene Løsne og lukk, Løsne og lukk alle og Løsne og lukk alle unntatt denne -screenshot][img3]
+  ![Menyen for en festet fane med alternativene Løsne og lukk, Løsne og lukk alle og Løsne og lukk alle unntatt denne -screenshot][img3]
 
-Menyen for et utvalg, aktivt eller festet, har to alternativer til:
+Menyen for en utvalgsfane, aktiv eller festet, har to alternativer til:
 
 * **Vis datasett:** Åpner datasettet til utvalget.
 
 * **Åpne i utvalgspanelet:** Åpner det samme utvalget i utvalgspanelet.
 
-Når du fjerner elementet som er åpent, åpnes det neste elementet i listen. Hvis det ikke er flere festede elementer igjen, åpnes det aktive elementet.
+Når du lukker fanen som er åpen, åpnes den neste fanen i listen. Hvis det ikke er flere festede faner igjen, åpnes den aktive fanen.
 
-Du kan dra og slippe elementer i listen over festede elementer, og mellom det aktive elementet og listen over festede elementer.
+Du kan dra og slippe faner i listen over festede faner, og mellom den aktive fanen og listen over festede faner.
 
 <Note>
-Festede elementer er atskilt fra [favorittene dine][3].
+Festede faner er atskilt fra [favorittene dine][3].
 </Note>
 
-### Finne et element i en gruppe {#group-menu}
+### Finne en fane i en gruppe {#group-menu}
 
-Velg de tre prikkene ved siden av gruppeoverskriften, for eksempel **Utvalg** eller **Salg**, for å åpne en meny med et søkefelt. Menyen viser de aktive og festede elementene i gruppen. Skriv inn tekst i **Søk i faner** for å begrense listen, og velg et element for å åpne det.
+Velg de tre prikkene ved siden av gruppeoverskriften, for eksempel **Utvalg** eller **Salg**, for å åpne en meny med et søkefelt. Menyen viser de aktive og festede fanene i gruppen. Skriv inn tekst i **Søk i faner** for å begrense listen, og velg en fane for å åpne den.
 
-![Menyen for gruppen Utvalg med de aktive og festede utvalgene -screenshot][img5]
+![Menyen for gruppen Utvalg med fanene i gruppen -screenshot][img5]
 
 ### Vise eller skjule venstrepanelet {#collapse}
 
 Velg ikonet (<i class="ph ph-sidebar-simple" aria-label="Sidepanel-ikon"></i>) øverst i venstrepanelet for å skjule eller vise det. Det samme ikonet brukes for navigatoren og sidepanelet. Panelet åpnes ikke når du holder musepekeren over det.
 
-Når panelet er skjult, velger du ikonet for en gruppe for å åpne den samme typen meny, med et søkefelt og dine aktive og festede elementer.
+Når panelet er skjult, velger du ikonet for en gruppe for å åpne den samme typen meny, med et søkefelt og dine aktive og festede faner.
 
 ## Arbeide med utvalg i hovedområdet {#selections}
 
@@ -145,9 +145,9 @@ For å redigere selve utvalget, eller for å bruke knappene **Rediger** og **Opp
 
 ## Åpne en post {#open-record}
 
-I tavlevisning dobbeltklikker du på et kort eller velger tittelen for å åpne posten i hovedområdet. Posten vises som det aktive elementet i venstrepanelet.
+I tavlevisning dobbeltklikker du på et kort eller velger tittelen for å åpne posten i hovedområdet. Posten vises som den aktive fanen i venstrepanelet.
 
-Hvis du velger et kort for å forhåndsvise det i sidepanelet, endres ikke det aktive elementet. For å gå tilbake til utvalget velger du det i venstrepanelet.
+Hvis du velger et kort for å forhåndsvise det i sidepanelet, endres ikke den aktive fanen. For å gå tilbake til utvalget velger du det i venstrepanelet.
 
 ## Hva du ser første gang {#first-time}
 
@@ -159,7 +159,7 @@ Første gang du åpner en oversiktsside:
 
 * Standardutvalgene dine er festet i venstrepanelet. Du kan flytte eller fjerne dem.
 
-* Posten du jobbet med sist, er den aktive posten.
+* Posten du jobbet med sist, er den aktive fanen.
 
 For de nøyaktige utvalgene og standardinnstillingene for hver skjerm, se veiledningen for skjermen.
 

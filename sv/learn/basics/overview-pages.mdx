@@ -2,8 +2,8 @@
 uid: help-sv-overview-pages
 title: Arbeta med översiktssidor
 sidebarTitle: "Översiktssidor"
-description: Översiktssidor kombinerar en vänsterpanel med aktiva och fastnålade poster, urval i list- eller tavlevy och posten du arbetar med.
-keywords: ['översiktssida', 'startsida', 'Försäljningsskärmen', 'Sale screen', 'ny försäljningsskärm', 'vänsterpanel', 'sidopanel', 'fastnålad', 'aktiv', 'fastnålade', 'ta bort fastnålning', 'urval', 'tavlevy', 'listvy', 'filter', 'aktuell', 'historik', 'senaste', 'favoriter', 'navigator', 'sök', 'dölja', 'försäljningsöversikt']
+description: Översiktssidor kombinerar en vänsterpanel med vertikala flikar, urval i list- eller tavlevy och posten du arbetar med.
+keywords: ['översiktssida', 'startsida', 'Försäljningsskärmen', 'Sale screen', 'ny försäljningsskärm', 'vänsterpanel', 'vertikala flikar', 'flikar', 'sök i flikar', 'sidopanel', 'fastnålad', 'aktiv', 'fastnålade', 'ta bort fastnålning', 'urval', 'tavlevy', 'listvy', 'filter', 'aktuell', 'historik', 'senaste', 'favoriter', 'navigator', 'sök', 'dölja', 'försäljningsöversikt']
 author: digitaldiina
 date: 10.13.2026
 so_version: 12.5
@@ -21,10 +21,10 @@ related:
 language: sv
 ---
 
-En översiktssida är en skärm där du kan se dina urval, välja en post och arbeta med den utan att lämna sidan. I stället för att söka efter en post varje gång behåller du de poster du arbetar mest med i en vänsterpanel och växlar mellan dem med ett klick.
+En översiktssida är en skärm där du kan se dina urval, välja en post och arbeta med den utan att lämna sidan. I stället för att söka efter en post varje gång behåller du de urval och poster du arbetar mest med som vertikala flikar i en vänsterpanel och växlar mellan dem med ett klick.
 
 <Note>
-Översiktssidor introduceras gradvis, med början i Försäljningsskärmen, och fler skärmar följer. Om du inte ser Försäljningsskärmen ännu öppnas försäljningar på sitt eget kort som tidigare.
+Översiktssidor introduceras gradvis, med början i Försäljningsskärmen, och fler skärmar följer. Om du inte ser Försäljningsskärmen ännu öppnas försäljningar på sitt eget kort som tidigare. Det finns ingen vänsterpanel, men du hittar en tavlevy över dina försäljningar genom att gå till **Urval**.
 </Note>
 
 ## Vad en översiktssida innehåller {#areas}
@@ -33,7 +33,7 @@ En översiktssida är en skärm där du kan se dina urval, välja en post och ar
 
 | Nummer | Område | Beskrivning |
 |:-:|---|---|
-| 1 | **Vänsterpanel** | Ett sökfält samt listor över urval och de poster du har öppna eller fastnålade. Panelen är uppkallad efter skärmen, till exempel **Försäljning**. |
+| 1 | **Vänsterpanel** | Ett sökfält samt vertikala flikar för urval och de poster du har öppna eller fastnålade. Panelen är uppkallad efter skärmen, till exempel **Försäljning**. |
 | 2 | **Huvudområde** | Visar ett urval i tavlevy eller listvy när ett urval är öppet. Visar posten med dess detaljkort när en post är öppen. |
 | 3 | **Sidopanel** | [Sidopanelen][1] till höger, med en förhandsgranskning av den markerade posten eller den vy du har valt. |
 
@@ -45,7 +45,7 @@ En översiktssida är en skärm där du kan se dina urval, välja en post och ar
 
 ## Öppna en översiktssida {#open}
 
-* **Välj ikonen i navigatorn.** Översiktssidan öppnas med det innehåll du senast tittade på. Posten du senast arbetade med visas som den aktiva posten.
+* **Välj ikonen i navigatorn.** Översiktssidan öppnas med det innehåll du senast tittade på. Posten du senast arbetade med visas i den aktiva fliken.
 
 * **Välj namnet i navigatorn.** Alternativen för historik, favoriter och sök öppnas som tidigare. Välj en post eller ett urval så öppnas det i översiktssidan.
 
@@ -55,7 +55,7 @@ En översiktssida är en skärm där du kan se dina urval, välja en post och ar
 
 ## Använd vänsterpanelen {#left-panel}
 
-Vänsterpanelen har en grupp för urval och en grupp för poster, till exempel **Urval** och **Försäljning** i Försäljningsskärmen. Varje grupp har en lista med aktiva och fastnålade objekt.
+Vänsterpanelen visar dina urval och poster som vertikala flikar. Den har en grupp för urval och en grupp för poster, till exempel **Urval** och **Försäljning** i Försäljningsskärmen. Varje grupp har en aktiv flik och en lista med fastnålade flikar.
 
 ![Vänsterpanelen med grupperna Urval och Försäljningar -screenshot][img2]
 
@@ -69,61 +69,61 @@ Använd sökfältet högst upp för att hitta urval och poster samtidigt.
 
 1. Välj ett urval eller en post. Det öppnas i huvudområdet, listan stängs och sökfältet töms.
 
-Poster visas före urval. Välj **Visa alla** för att expandera en lista. Håll muspekaren över ett objekt för att se en förhandsgranskning, som i navigatorn.
+Poster visas före urval. Välj **Visa alla** för att expandera en lista. Håll muspekaren över ett resultat för att se en förhandsgranskning, som i navigatorn. Om du bara vill söka bland de flikar du redan har öppna eller fastnålade, se [Hitta en flik i en grupp](#group-menu).
 
-### Aktiva och fastnålade objekt {#active-pinned}
+### Aktiva och fastnålade flikar {#active-pinned}
 
-Varje grupp har två typer av objekt.
+Varje grupp har två typer av flikar.
 
-* **Aktiv:** Objektet du öppnade senast. Det finns bara ett aktivt objekt i varje grupp. Det ligger kvar tills du tar bort det eller öppnar ett annat objekt.
+* **Aktiv:** Fliken du öppnade senast. Det finns bara en aktiv flik i varje grupp. Den ligger kvar tills du stänger den eller öppnar en annan flik.
 
-* **Fastnålad:** Objekt som du behåller i listan tills du tar bort dem. Antalet fastnålade objekt visas bredvid rubriken **Fastnålad**. Välj rubriken för att dölja eller visa listan.
+* **Fastnålad:** Flikar som du behåller i listan tills du stänger dem. Antalet fastnålade flikar visas bredvid rubriken **Fastnålad**. Välj rubriken för att dölja eller visa listan.
 
-Håll muspekaren över ett objekt för att arbeta med det. De tre punkterna visas. Ett aktivt objekt visar också en nålikon (<i class="ph ph-push-pin" aria-label="Nålikon"></i>), och ett fastnålat objekt visar ett **X**.
+Håll muspekaren över en flik för att arbeta med den. De tre punkterna visas. En aktiv flik visar också en nålikon (<i class="ph ph-push-pin" aria-label="Nålikon"></i>), och en fastnålad flik visar ett **X**.
 
-* **Aktivt objekt:** Välj nålikonen för att flytta objektet överst i listan över fastnålade objekt, eller välj de tre punkterna för att öppna menyn.
+* **Aktiv flik:** Välj nålikonen för att flytta fliken överst i listan över fastnålade flikar, eller välj de tre punkterna för att öppna menyn.
 
-  * **Nåla fast:** Flyttar objektet överst i listan över fastnålade objekt.
+  * **Nåla fast:** Flyttar fliken överst i listan över fastnålade flikar.
 
-  * **Stäng:** Tar bort objektet från listan.
+  * **Stäng:** Stänger fliken.
 
-  ![Menyn för ett aktivt objekt med alternativen Nåla fast och Stäng -screenshot][img4]
+  ![Menyn för en aktiv flik med alternativen Nåla fast och Stäng -screenshot][img4]
 
-* **Fastnålat objekt:** Välj **X** för att ta bort objektet från listan, eller välj de tre punkterna för att öppna menyn.
+* **Fastnålad flik:** Välj **X** för att stänga fliken, eller välj de tre punkterna för att öppna menyn.
 
-  * **Ta bort fastnålning och stäng:** Tar bort objektet från listan.
+  * **Ta bort fastnålning och stäng:** Stänger fliken.
 
-  * **Ta bort alla fastnålningar och stäng alla:** Tar bort alla fastnålade objekt i gruppen.
+  * **Ta bort alla fastnålningar och stäng alla:** Stänger alla fastnålade flikar i gruppen.
 
-  * **Ta bort alla fastnålningar och stäng alla fönster utom det här:** Tar bort alla fastnålade objekt i gruppen utom detta.
+  * **Ta bort alla fastnålningar och stäng alla fönster utom det här:** Stänger alla fastnålade flikar i gruppen utom denna.
 
-  ![Menyn för ett fastnålat objekt med alternativen Ta bort fastnålning och stäng, Ta bort alla fastnålningar och stäng alla samt Ta bort alla fastnålningar och stäng alla fönster utom det här -screenshot][img3]
+  ![Menyn för en fastnålad flik med alternativen Ta bort fastnålning och stäng, Ta bort alla fastnålningar och stäng alla samt Ta bort alla fastnålningar och stäng alla fönster utom det här -screenshot][img3]
 
-Menyn för ett urval, aktivt eller fastnålat, har två alternativ till:
+Menyn för en urvalsflik, aktiv eller fastnålad, har två alternativ till:
 
 * **Visa dataset:** Öppnar urvalets dataset.
 
 * **Öppna i urvalspanel:** Öppnar samma urval i urvalspanelet.
 
-När du tar bort objektet som är öppet öppnas nästa objekt i listan. Om inga fastnålade objekt finns kvar öppnas det aktiva objektet.
+När du stänger fliken som är öppen öppnas nästa flik i listan. Om inga fastnålade flikar finns kvar öppnas den aktiva fliken.
 
-Du kan dra och släppa objekt i listan över fastnålade objekt, samt mellan det aktiva objektet och listan över fastnålade objekt.
+Du kan dra och släppa flikar i listan över fastnålade flikar, samt mellan den aktiva fliken och listan över fastnålade flikar.
 
 <Note>
-Fastnålade objekt är separata från dina [favoriter][3].
+Fastnålade flikar är separata från dina [favoriter][3].
 </Note>
 
-### Hitta ett objekt i en grupp {#group-menu}
+### Hitta en flik i en grupp {#group-menu}
 
-Välj de tre punkterna bredvid en gruppsrubrik, till exempel **Urval** eller **Försäljning**, för att öppna en meny med ett sökfält. Menyn visar de aktiva och fastnålade objekten i gruppen. Ange text i **Sök i flikar** för att begränsa listan och välj ett objekt för att öppna det.
+Välj de tre punkterna bredvid en gruppsrubrik, till exempel **Urval** eller **Försäljning**, för att öppna en meny med ett sökfält. Menyn visar de aktiva och fastnålade flikarna i gruppen. Ange text i **Sök i flikar** för att begränsa listan och välj en flik för att öppna den.
 
-![Menyn för gruppen Urval med de aktiva och fastnålade urvalen -screenshot][img5]
+![Menyn för gruppen Urval med dess flikar -screenshot][img5]
 
 ### Visa eller dölj vänsterpanelen {#collapse}
 
 Välj ikonen (<i class="ph ph-sidebar-simple" aria-label="Sidofältsikon"></i>) högst upp i vänsterpanelen för att dölja eller visa den. Samma ikon används för navigatorn och sidopanelen. Panelen öppnas inte när du håller muspekaren över den.
 
-När panelen är dold väljer du ikonen för en grupp för att öppna samma typ av meny, med ett sökfält och dina aktiva och fastnålade objekt.
+När panelen är dold väljer du ikonen för en grupp för att öppna samma typ av meny, med ett sökfält och dina aktiva och fastnålade flikar.
 
 ## Arbeta med urval i huvudområdet {#selections}
 
@@ -145,9 +145,9 @@ Om du vill redigera själva urvalet, eller använda knapparna **Redigera** och *
 
 ## Öppna en post {#open-record}
 
-I tavlevy dubbelklickar du på ett kort eller väljer dess titel för att öppna posten i huvudområdet. Posten visas som det aktiva objektet i vänsterpanelen.
+I tavlevy dubbelklickar du på ett kort eller väljer dess titel för att öppna posten i huvudområdet. Posten visas som den aktiva fliken i vänsterpanelen.
 
-Om du väljer ett kort för att förhandsgranska det i sidopanelen ändras inte det aktiva objektet. Om du vill gå tillbaka till urvalet väljer du det i vänsterpanelen.
+Om du väljer ett kort för att förhandsgranska det i sidopanelen ändras inte den aktiva fliken. Om du vill gå tillbaka till urvalet väljer du det i vänsterpanelen.
 
 ## Vad du ser första gången {#first-time}
 
@@ -159,7 +159,7 @@ Första gången du öppnar en översiktssida:
 
 * Dina standardurval är fastnålade i vänsterpanelen. Du kan flytta eller ta bort dem.
 
-* Posten du senast arbetade med är den aktiva posten.
+* Posten du senast arbetade med är den aktiva fliken.
 
 Se guiden för respektive skärm för exakta urval och standardinställningar.
 
