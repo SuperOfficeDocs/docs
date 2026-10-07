@@ -2,10 +2,10 @@
 uid: help-de-sale
 title: Verkauf
 description: SuperOffice Sales hilft Vertriebsteams, die Kontrolle über ihre Vertriebspipelines und -prozesse zu behalten.
-keywords: ['Verkaufskarte', 'Verkaufsansicht', 'Verkauf', 'Lead']
+keywords: ['Verkaufsansicht', 'Sale screen', 'neue Verkaufsansicht', 'Verkaufskarte', 'linkes Panel', 'angeheftete Verkäufe', 'Meine offenen Verkäufe', 'Board-Ansicht', 'Verkaufsselektionen', 'Verkauf', 'Lead']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 10.07.2026
+so_version: 12.5
 content_type: concept
 license: salesessentials
 tier: starter
@@ -17,6 +17,8 @@ redirect_from:
   - /de/sale/learn/screen/index
 boost: 1.5
 related:
+  - Mit Übersichtsseiten arbeiten: /de/learn/basics/overview-pages
+  - Board-Ansicht in Selektionen verwenden: /de/search-options/selection/learn/board-view
   - Verkauf als Favorit hinzufügen: /de/learn/basics/fav
   - /de/sale/learn/create
   - /de/sale/learn/stakeholders/create
@@ -33,17 +35,55 @@ import MoreTab from "../../learn/snippets/more-tab.md";
 
 Die **Verkauf**-Funktion in SuperOffice CRM hilft Ihnen, Verkaufschancen effizient zu verwalten, indem alle relevanten Informationen, Folgeaufgaben und Dokumente an einem Ort erfasst werden. Durch strukturierte Verkaufsprozesse stellen Sie sicher, dass keine Chancen verpasst werden und Ihr Team sich auf die wichtigsten Aufgaben konzentriert - mehr Abschlüsse erzielen und Zielvorgaben erreichen.
 
-![Verkaufsansicht -screenshot][img1]
+![Die Verkaufsansicht mit geöffnetem Verkauf -screenshot][img1]
 
 Sie können Verkäufe mit Firmen, Personen und Projekten verknüpfen, um die Zusammenarbeit zwischen Teams zu optimieren. Verkäufe können zudem durch Verkaufsleitfäden gesteuert werden, sofern der gewählte Verkaufstyp einen definierten Leitfaden enthält.
 
-Die Verkaufsansicht organisiert Verkäufe wie Karteikarten und bietet eine detaillierte Übersicht über jede Verkaufschance. Navigieren Sie zwischen Verkäufen mit den Schaltflächen **Zurück** und **Weiter** (<i class="ph ph-caret-circle-left" aria-hidden="true"></i><i class="ph ph-caret-circle-right" aria-hidden="true"></i>) unten rechts in der Verkaufskarte. Standardmäßig werden alle Verkäufe angezeigt. Wenn Sie abgeschlossene Verkäufe (verkauft oder verloren) ausblenden möchten, klicken Sie auf <i class="ph ph-dots-three-circle-vertical" aria-label="Task button"></i> und wählen Sie **Abgeschlossene Verkäufe überspringen**. Diese Option ist auch als Einstellung verfügbar unter <i class="ph ph-user-circle" aria-hidden="true"></i> **Persönliche Einstellungen** > **Einstellungen** > **Verkauf**.
+## Die Verkaufsansicht {#sale-screen}
 
-<Tip>
-Verkäufe sind auch in der [Bereichsregisterkarte Verkäufe][13] in den Ansichten Firma, Person, Projekt und Kalender sichtbar. Doppelklicken Sie auf einen Verkauf in diesen Ansichten, um ihn in der Verkaufsansicht zu öffnen.
-</Tip>
+In der Verkaufsansicht arbeiten Sie mit Ihren Verkäufen und Verkaufsselektionen. Sie besteht aus drei Bereichen:
 
-## Registerkarten in der Verkaufskarte
+* **Linkes Panel:** Listet Ihre Verkaufsselektionen und Verkäufe auf und enthält ein Suchfeld für beide. Heften Sie die an, die Sie täglich verwenden. Informationen zur Funktionsweise des linken Panels finden Sie unter [Mit Übersichtsseiten arbeiten][22].
+
+* **Hauptbereich:** Zeigt eine Selektion von Verkäufen in der Board-Ansicht oder Listenansicht, oder einen Verkauf als Verkaufskarte mit den Bereichsregisterkarten darunter.
+
+* **Seitenleiste:** Die [Seitenleiste][20] auf der rechten Seite zeigt eine Vorschau der Firma, die mit dem ausgewählten Verkauf verknüpft ist, oder die von Ihnen gewählte Ansicht.
+
+<Note>
+Die Verkaufsansicht wird schrittweise eingeführt. Wenn Sie sie noch nicht sehen, wird ein Verkauf in einer eigenen Karte geöffnet, mit den Bereichsregisterkarten darunter.
+</Note>
+
+### Die Verkaufsansicht öffnen {#open}
+
+* Klicken Sie im [Navigator][24] auf das Symbol **Verkauf**. Die Verkaufsansicht wird mit dem Inhalt geöffnet, den Sie zuletzt angezeigt haben.
+
+* Öffnen Sie einen Verkauf von einer beliebigen Stelle in SuperOffice CRM, z. B. durch Doppelklicken in der [Bereichsregisterkarte Verkäufe][13] in den Ansichten Firma, Person, Projekt und Kalender. Der Verkauf wird in der Verkaufsansicht geöffnet und zu Ihrem aktuellen Verkauf.
+
+* Klicken Sie auf **Neu** > **Verkauf**. Der neue Verkauf wird in der Verkaufsansicht geöffnet. Wenn Sie ihn speichern, wird er zum aktiven Verkauf.
+
+### Was Sie beim ersten Mal sehen {#first-time}
+
+Wenn Sie die Verkaufsansicht zum ersten Mal öffnen:
+
+* Die Selektion **Meine offenen Verkäufe** wird in der Board-Ansicht angezeigt.
+
+* **Meine offenen Verkäufe** und **Die offenen Verkäufe meiner Gruppe** sind im linken Panel angeheftet. Ihre Gruppe ist Ihre primäre Gruppe.
+
+* Die Seitenleiste ist eingeklappt.
+
+* Ihr aktueller Verkauf wird als aktiver Verkauf angezeigt. Wenn Sie keinen aktuellen Verkauf haben, wird ein Beispielverkauf angezeigt.
+
+Sie können angeheftete Selektionen und Verkäufe verschieben, entfernen oder hinzufügen. Siehe [Mit Übersichtsseiten arbeiten][22].
+
+### Mit Verkaufsselektionen arbeiten {#selections}
+
+Wählen Sie im linken Panel eine Selektion aus, um ihre Verkäufe in der [Board-Ansicht][23] oder Listenansicht zu sehen. In der Board-Ansicht sind die Spalten standardmäßig die Verkaufsstufen, und jede Karte ist ein Verkauf. Doppelklicken Sie auf eine Karte, um den Verkauf in der Verkaufsansicht zu öffnen.
+
+## Die Verkaufskarte {#sale-card}
+
+Die Verkaufskarte zeigt jeweils einen Verkauf an. Navigieren Sie zwischen Verkäufen mit den Schaltflächen **Zurück** und **Weiter** (<i class="ph ph-caret-circle-left" aria-hidden="true"></i><i class="ph ph-caret-circle-right" aria-hidden="true"></i>) unten rechts in der Verkaufskarte. Standardmäßig werden alle Verkäufe angezeigt. Wenn Sie abgeschlossene Verkäufe (verkauft oder verloren) ausblenden möchten, klicken Sie auf <i class="ph ph-dots-three-circle-vertical" aria-label="Task button"></i> und wählen Sie **Abgeschlossene Verkäufe überspringen**. Diese Option ist auch als Einstellung verfügbar unter <i class="ph ph-user-circle" aria-hidden="true"></i> **Persönliche Einstellungen** > **Einstellungen** > **Verkauf**.
+
+### Registerkarten in der Verkaufskarte
 
 | Registerkarte | Beschreibung |
 |---|---|
@@ -57,7 +97,7 @@ Jede Registerkarte hat eine spezifische Funktion, um Verkaufsinformationen struk
 
 ## Bereichsregisterkarten in der Verkaufsansicht {#section-tabs}
 
-Der untere Bereich der Verkaufsansicht enthält Bereichsregisterkarten.
+Wenn ein Verkauf geöffnet ist, enthält der untere Bereich der Verkaufsansicht Bereichsregisterkarten.
 
 * [Aktivitäten][14]
 * [Verkaufsleitfaden][16] (erfordert eine **Sales Premium**-Lizenz oder den **Growth**-Plan)
@@ -83,27 +123,33 @@ Im Feld **Stufe** auf der Registerkarte **Verkauf** können Sie:
 | <i class="ph ph-x" aria-label="X icon"></i> | Verloren |
 | <i class="ph ph-triangle" aria-label="Red triangle icon"></i> | Aufgeschoben (Verzögert) |
 
-## Verkaufsübersicht nutzen, um Prioritäten zu setzen
+## Prioritäten für Ihre Verkäufe setzen {#prioritize}
 
 Halten Sie Ihre Verkäufe organisiert, damit Sie sich immer auf die wichtigsten Verkaufschancen konzentrieren können.
 
-Sobald Sie Ihre Verkäufe in SuperOffice CRM erfasst haben, erscheinen sie in Ihrer persönlichen Verkaufsübersicht in der Registerkarte **Verkäufe** und in Ihrem Kalender. Sie können Ihre Verkaufsliste organisieren, indem Sie [Spalten filtern, gruppieren und hinzufügen][3], die für Sie am wichtigsten sind. Die am häufigsten verwendeten Spalten sind Verkaufsbetrag, Verkaufsdatum und Verkaufsstufe.
+* **Heften Sie Ihre täglichen Selektionen an.** Lassen Sie Selektionen wie **Meine offenen Verkäufe** im linken Panel angeheftet und zeigen Sie sie in der Board-Ansicht an, um zu sehen, wo sich jeder Verkauf in Ihrer Pipeline befindet.
 
-Die Registerkarte **Verkäufe** fungiert auch als Verkaufssekretariat, indem sie alle geplanten Aktivitäten im Feld **Nächste Aktivität** anzeigt und überfällige Aufgaben in roter Schrift hervorhebt.
+* **Filtern Sie nach dem, was Aufmerksamkeit braucht.** Verwenden Sie die Schaltfläche **Filter**, um das Board z. B. nach **Verkaufsdatum**, **Nächste Aktivität** oder **Eigentümer** einzugrenzen.
+
+* **Überfällige Verkäufe überprüfen.** In **Rot** markierte Verkäufe haben überfällige Aktivitäten oder Verkaufsdaten. Prüfen und aktualisieren Sie diese zuerst.
+
+* **Das Feld Nächste Aktivität nutzen.** Es zeigt Ihre geplanten Aktivitäten an und hebt solche, die Sie möglicherweise vergessen haben, in roter Schrift hervor.
+
+Verkäufe werden auch in Ihrem Kalender und in der Bereichsregisterkarte **Verkäufe** der Ansichten Firma, Person und Projekt aufgeführt. Sie können diese Listen organisieren, indem Sie [Spalten filtern, gruppieren und hinzufügen][3], die für Sie am wichtigsten sind. Die am häufigsten verwendeten Spalten sind Verkaufsbetrag, Verkaufsdatum und Verkaufsstufe.
 
 ![Gehen Sie zum Kalender und verschaffen Sie sich einen Überblick über alle noch nicht abgeschlossenen Verkäufe -screenshot][img3]
 
 ## Seitenleiste für Verkäufe nutzen {#side-panel}
 
-Wenn die **Verkaufsansicht** geöffnet ist, können Sie die **Selektionsmitglieder**-[Seitenleiste][20] nutzen, um Verkaufschancen anzuzeigen. Wählen Sie eine Verkaufschance aus, um sie detailliert in der **Verkaufsansicht** zu öffnen.
+Wenn in der Verkaufsansicht eine Selektion geöffnet ist, können Sie die **Selektionsmitglieder**-Ansicht der [Seitenleiste][20] nutzen, um die Verkäufe der Selektion anzuzeigen. Wählen Sie einen Verkauf aus, um ihn detailliert anzuzeigen.
 
-![Seitenleiste in der Verkaufsansicht zur Anzeige von Selektionsmitgliedern und Verkaufsselektion nutzen -screenshot][img2]
+![Seitenleiste zur Anzeige von Selektionsmitgliedern und Verkaufsselektion nutzen -screenshot][img2]
 
-### Tipps für mehr Effizienz
+Tipps für mehr Effizienz:
 
-* **Überfällige Verkäufe überprüfen**: In **Rot** markierte Verkaufschancen in der **Selektionsmitglieder**-Liste weisen auf überfällige Aktivitäten oder Verkaufsdaten hin. Prüfen und aktualisieren Sie diese rechtzeitig.
-* **Verkäufe nacheinander durchgehen**: Nutzen Sie die Seitenleiste, um Verkäufe durchzuklicken und den aktuellen Status zu prüfen.
-* **Ähnliche Workflows nutzen**: Verwenden Sie Selektionen für Kontakte als Anrufliste oder verfolgen Sie ausstehende Verkaufsangebote nach, um sicherzustellen, dass keine Gelegenheit verpasst wird.
+* **Verkäufe nacheinander durchgehen:** Klicken Sie Ihre Verkäufe nacheinander durch, damit Sie den aktuellen Status jedes Verkaufs kennen und eine passende Folgeaufgabe eingeplant haben.
+
+* **Ähnliche Workflows nutzen:** Verwenden Sie Selektionen für Personen als Anrufliste oder verfolgen Sie ausstehende Verkaufsangebote nach, um sicherzustellen, dass keine Gelegenheit verpasst wird.
 
 Weitere Details zur Einrichtung von Verkaufschancen finden Sie im [Leitfaden zur Verkaufsprognose][21].
 
@@ -119,6 +165,9 @@ Weitere Details zur Einrichtung von Verkaufschancen finden Sie im [Leitfaden zur
 [20]: /de/learn/getting-started/main-screen/side-panel
 [12]: /de/custom-objects/learn/more-tab
 [17]: /de/sale/learn/quote/index#quote-tab
-[img1]: /media/loc/en/sale/sales-screen.png
+[22]: /de/learn/basics/overview-pages
+[23]: /de/search-options/selection/learn/board-view
+[24]: /de/learn/getting-started/main-screen/navigator
+[img1]: /media/loc/en/sale/sale-screen-open-sale.png
 [img2]: /media/loc/en/sale/getstarted-sidepanel-saleselection.png
 [img3]: /media/loc/en/sale/user-diary-sales.png

@@ -2,10 +2,10 @@
 uid: help-no-sale
 title: Salg
 description: SuperOffice Salg hjelper salgsteam med å holde kontroll over salgspipeliner og -prosesser.
-keywords: ['salg', 'salgskort', 'salgsskjerm']
+keywords: ['Salgsskjermen', 'Sale screen', 'ny Sale screen', 'salgsskjerm', 'salgskort', 'venstrepanel', 'festede salg', 'Mine åpne salg', 'tavlevisning', 'salgsutvalg', 'salg', 'lead']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 10.07.2026
+so_version: 12.5
 content_type: concept
 license: salesessentials
 tier: starter
@@ -16,6 +16,18 @@ redirect_from:
   - /no/sale/learn/use-side-panel
   - /no/sale/learn/screen/index
 boost: 1.5
+related:
+  - Arbeid med oversiktssider: /no/learn/basics/overview-pages
+  - Bruk tavlevisning i utvalg: /no/search-options/selection/learn/board-view
+  - Legg til salg som favoritt: /no/learn/basics/fav
+  - /no/sale/learn/create
+  - /no/sale/learn/stakeholders/create
+  - Merk salg som utsatt, tapt eller solgt: /no/sale/learn/update#stalled
+  - /no/sale/learn/quote/create
+  - Arbeid med salgsguider: /no/sale/learn/tutorial
+  - Arbeid med salgsprognoser: /no/sale/learn/sales-targets/index
+  - /no/lead/learn/index
+  - Skriv ut informasjon om et salg: /no/learn/basics/print
 language: no
 ---
 
@@ -23,17 +35,55 @@ import MoreTab from "../../learn/snippets/more-tab.md";
 
 Salgsfunksjonen i SuperOffice CRM hjelper deg med å administrere salgsmuligheter effektivt ved å holde oversikt over all relevant informasjon, aktiviteter og dokumenter på ett sted. Ved å strukturere salgsprosessene dine sikrer du at ingen muligheter går tapt, og at teamet ditt alltid fokuserer på det viktigste - å lukke flere avtaler og nå sine mål.
 
-![Salgsskjerm -screenshot][img1]
+![Salgsskjermen med et salg åpent -screenshot][img1]
 
 Du kan knytte salg til firmaer, personer og prosjekter, noe som legger til rette for sømløst samarbeid mellom team. Salg kan også styres ved hjelp av salgsguider, forutsatt at salgstypen du har valgt har en definert guide.
 
-Salgsskjermen organiserer salg som arkivkort, som gir en detaljert oversikt over hver mulighet. Naviger mellom salg ved å bruke **Forrige**- og **Neste**-knappene (<i class="ph ph-caret-circle-left" aria-hidden="true"></i><i class="ph ph-caret-circle-right" aria-hidden="true"></i>) nederst til høyre på kortene. Som standard vises alle salg. Hvis du ikke vil vise fullførte salg (solgte eller tapte), klikk på <i class="ph ph-dots-three-circle-vertical" aria-label="Oppgave-knapp"></i> og velg **Hopp over utførte salg**. Dette valget er også tilgjengelig som en innstilling under <i class="ph ph-user-circle" aria-hidden="true"></i> **Personlige innstillinger** > **Preferanser** > **Salg**.
+## Salgsskjermen {#sale-screen}
 
-<Tip>
-Salg vises også i [detaljkortet Salg][13] i Firma-, Person-, Prosjekt- og Dagbok-skjermene. Dobbeltklikk et salg i disse visningene for å åpne det i salgsskjermen.
-</Tip>
+Salgsskjermen er stedet der du jobber med salgene og salgsutvalgene dine. Den har tre områder:
 
-## Faner på salgskortet
+* **Venstrepanel:** Viser salgsutvalgene og salgene dine, og har et søkefelt for begge. Fest de du bruker hver dag. Se [Arbeid med oversiktssider][22] for hvordan venstrepanelet fungerer.
+
+* **Hovedområde:** Viser et utvalg av salg i tavlevisning eller listevisning, eller viser ett salg som et salgskort med detaljkort under.
+
+* **Sidepanel:** [Sidepanelet][20] til høyre viser en forhåndsvisning av firmaet som er knyttet til det valgte salget, eller visningen du har valgt.
+
+<Note>
+Salgsskjermen innføres gradvis. Hvis du ikke ser den ennå, åpnes et salg på sitt eget kort, med detaljkortene under.
+</Note>
+
+### Åpne Salgsskjermen {#open}
+
+* Velg **Salg**-ikonet i [navigatoren][24]. Salgsskjermen åpnes med innholdet du så på sist.
+
+* Åpne et salg fra et hvilket som helst sted i SuperOffice CRM, for eksempel ved å dobbeltklikke på det i [detaljkortet Salg][13] i Firma-, Person-, Prosjekt- og Dagbok-skjermene. Salget åpnes i Salgsskjermen og blir ditt gjeldende salg.
+
+* Velg **Ny** > **Salg**. Det nye salget åpnes i Salgsskjermen. Når du lagrer det, blir det det aktive salget.
+
+### Hva du ser første gang {#first-time}
+
+Første gang du åpner Salgsskjermen:
+
+* Utvalget **Mine åpne salg** vises i tavlevisning.
+
+* **Mine åpne salg** og **Min gruppes åpne salg** er festet i venstrepanelet. Gruppen din er din primærgruppe.
+
+* Sidepanelet er skjult.
+
+* Ditt gjeldende salg vises som det aktive salget. Hvis du ikke har et gjeldende salg, vises et eksempelsalg.
+
+Du kan flytte, fjerne eller legge til festede utvalg og salg. Se [Arbeid med oversiktssider][22].
+
+### Arbeide med salgsutvalg {#selections}
+
+Velg et utvalg i venstrepanelet for å se salgene i det i [tavlevisning][23] eller listevisning. I tavlevisning er kolonnene som standard salgsfasene, og hvert kort er et salg. Dobbeltklikk på et kort for å åpne salget i Salgsskjermen.
+
+## Salgskortet {#sale-card}
+
+Salgskortet viser ett salg om gangen. Naviger mellom salg ved å bruke **Forrige**- og **Neste**-knappene (<i class="ph ph-caret-circle-left" aria-hidden="true"></i><i class="ph ph-caret-circle-right" aria-hidden="true"></i>) nederst til høyre på kortet. Som standard vises alle salg. Hvis du ikke vil vise fullførte salg (solgte eller tapte), klikk på <i class="ph ph-dots-three-circle-vertical" aria-label="Oppgave-knapp"></i> og velg **Hopp over utførte salg**. Dette valget er også tilgjengelig som en innstilling under <i class="ph ph-user-circle" aria-hidden="true"></i> **Personlige innstillinger** > **Preferanser** > **Salg**.
+
+### Faner på salgskortet
 
 | Fane | Beskrivelse |
 |---|---|
@@ -45,9 +95,9 @@ Salg vises også i [detaljkortet Salg][13] i Firma-, Person-, Prosjekt- og Dagbo
 
 Hver fane har en spesifikk funksjon for å holde salgsinformasjonen organisert og lett tilgjengelig.
 
-## Detaljkortene i Salg-bildet {#section-tabs}
+## Detaljkortene i Salgsskjermen {#section-tabs}
 
-Den nedre delen av Salg-bildet består av detaljkort.
+Når et salg er åpent, består den nedre delen av Salgsskjermen av detaljkort.
 
 * [Aktiviteter][14]
 * [Salgsguide][16] (krever en **Sales Premium**-lisens eller **Growth**-planen)
@@ -72,63 +122,51 @@ I feltet **Fase** i **Salg**-fanen kan du:
 | <i class="ph ph-x" aria-label="X-ikon"></i> | Tapt |
 | <i class="ph ph-triangle" aria-label="Rødt trekant-ikon"></i> | Utsatt |
 
-## Bruk salgsoversikt til å prioritere
+## Prioriter salgene dine {#prioritize}
 
 Hold salgene dine organisert slik at du alltid fokuserer på de viktigste mulighetene.
 
-Når du har registrert alle salgene dine i SuperOffice CRM, vises de i din personlige salgsoversikt i **Salg**-fanen og i Dagboken. Du kan organisere salgslisten din ved [å filtrere, gruppere og legge til kolonner][3] som er viktigst for deg. De mest brukte kolonnene er salgsbeløp, salgsdato og salgsfase.
+* **Fest utvalgene du bruker daglig.** Hold utvalg som **Mine åpne salg** festet i venstrepanelet og vis dem i tavlevisning for å se hvor hvert salg er i pipelinen din.
 
-Fanen **Salg** fungerer også som en salgssekretær ved å fremheve kommende planlagte aktiviteter i feltet **Neste aktivitet**, samt trekke oppmerksomheten din til forsinkede aktiviteter ved å vise dem med rød skrift.
+* **Filtrer til det som trenger oppmerksomhet.** Bruk **Filter**-knappen for å avgrense tavlen etter for eksempel **Salgsdato**, **Neste aktivitet** eller **Eier**.
+
+* **Sjekk forfalte salg.** Salg merket med **rødt** har forfalte aktiviteter eller salgsdatoer. Gjennomgå og oppdater disse først.
+
+* **Bruk feltet Neste aktivitet.** Det fremhever kommende planlagte aktiviteter, og viser de du kanskje har glemt, i rødt.
+
+Salg vises også i Dagboken din og i detaljkortet **Salg** i Firma-, Person- og Prosjekt-skjermene. Du kan organisere disse listene ved [å filtrere, gruppere og legge til kolonner][3] som er viktigst for deg. De mest brukte kolonnene er salgsbeløp, salgsdato og salgsfase.
 
 ![Gå til Dagboken og få en oversikt over alle salg som ennå ikke er fullført -screenshot][img3]
 
 ## Bruke sidepanelet for salg {#side-panel}
 
-Når salgsskjermen er åpen, kan du bruke [sidepanelet][20] til å vise **Utvalgsmedlemmer** og navigere mellom salgsmulighetene dine. Klikk på en salgsmulighet for å vise den i detalj i salgsskjermen.
+Når et utvalg er åpent i Salgsskjermen, kan du bruke **Utvalgsmedlemmer**-visningen i [sidepanelet][20] til å se salgene i utvalget. Velg et salg for å se det i detalj.
 
-![Bruk sidepanelet på salgskortet til å vise utvalgsmedlemmer og salgsutvalget -screenshot][img2]
+![Bruk sidepanelet til å vise utvalgsmedlemmer og salgsutvalget -screenshot][img2]
 
-### Tips for effektivitet
+Tips for effektivitet:
 
-* **Sjekk forfalte salg:** Salg som er merket i **rødt** i **Utvalgsmedlemmer**-listen har enten en forfalt aktivitet eller salgsdato. Sørg for å oppdatere disse.
-* **Gjennomgå salg sekvensielt:** Bruk sidepanelet til å bla gjennom salg ett etter ett og sikre at oppfølgingsaktiviteter er på plass.
-* **Bruk utvalg som ringeliste:** Utvalg kan brukes til å følge opp kontakter eller åpne salgsmuligheter systematisk.
+* **Gjennomgå salg sekvensielt:** Klikk deg gjennom salgene dine ett etter ett, slik at du vet den nåværende statusen til hvert salg og har en passende oppfølgingsaktivitet på plass.
+
+* **Lignende arbeidsflyter:** Du kan bruke utvalg til å følge opp personer som en ringeliste eller åpne salgsforslag systematisk, slik at ingen mulighet går tapt.
 
 For mer informasjon om oppsett av salgsmuligheter, se [veiledningen for salgsprognoser][21].
 
-## Aktuelt innhold
-
-* [Legg til salg som favoritt][10]
-* [Registrer et salg][4]
-* [Legg til interessenter][5]
-* [Merk salg som utsatt, tapt eller solgt][2]
-* [Opprett et tilbud][1]
-* [Arbeid med salgsguider][6]
-* [Arbeid med salgsprognoser][7]
-* [Leadhåndtering][8]
-* [Skriv ut informasjon om et salg][11]
-
-[1]: /no/sale/learn/quote/create
-[2]: /no/sale/learn/update#stalled
 [3]: /no/learn/section-tabs/index
-[4]: /no/sale/learn/create
-[5]: /no/sale/learn/stakeholders/create
-[6]: /no/sale/learn/tutorial
-[7]: /no/sale/learn/sales-targets/index
-[8]: /no/lead/learn/index
-[21]: /no/sale/learn/forecasting
-[10]: /no/learn/basics/fav
-[11]: /no/learn/basics/print
-[12]: /no/custom-objects/learn/more-tab
 [13]: /no/learn/section-tabs/sales-tab
 [14]: /no/learn/section-tabs/activities-tab
+[4]: /no/sale/learn/create
 [15]: /no/sale/learn/stakeholders/index
 [16]: /no/sale/learn/sales-guides
-[17]: /no/sale/learn/quote/index#quote-tab
+[21]: /no/sale/learn/forecasting
 [18]: /no/learn/basics/links
 [19]: /no/learn/basics/notes
 [20]: /no/learn/getting-started/main-screen/side-panel
-
-[img1]: /media/loc/en/sale/sales-screen.png
+[12]: /no/custom-objects/learn/more-tab
+[17]: /no/sale/learn/quote/index#quote-tab
+[22]: /no/learn/basics/overview-pages
+[23]: /no/search-options/selection/learn/board-view
+[24]: /no/learn/getting-started/main-screen/navigator
+[img1]: /media/loc/en/sale/sale-screen-open-sale.png
 [img2]: /media/loc/en/sale/getstarted-sidepanel-saleselection.png
 [img3]: /media/loc/en/sale/user-diary-sales.png
