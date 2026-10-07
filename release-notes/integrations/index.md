@@ -15,7 +15,7 @@ language: en
 
 ## Product integrations updates
 
-* [SuperOffice for Outlook][3] - 6.4.8 (01.10.2026)
+* [SuperOffice for Outlook][3] - 6.4.7 (28.09.2026)
   * Email archive status
 * [SuperOffice for Outlook][3] - 6.4.4 (20.08.2026)
   * Stay informed with in-app announcements
@@ -42,54 +42,49 @@ Current version: For the latest version numbers and release details for all prod
 
 | Product | Version | Date |
 | --- | --- | --- |
-| ConnectERP | 161.0 | 28.08.2026 |
-| DataBridge | 161.0 | 28.08.2026 |
-| Panels | 72.0 | 11.08.2026 |
-| SharePoint Documents | 3.9 | 24.06.2026 |
-| Slack Notify | 12.0 | 06.07.2026 |
+| ConnectERP | 163.0 | 05.10.2026 |
+| DataBridge | 163.0 | 05.10.2026 |
+| Panels | 73.0 | 14.09.2026 |
+| SharePoint Documents | 3.10 | 01.10.2026 |
+| Slack Notify | 14.0 | 01.10.2026 |
 | SuperOffice Copilot | 2.0 | 02.09.2026 |
 | SuperOffice for Gmail | 3.0 | 24.02.2026 |
-| SuperOffice for Mailchimp | 12.0 | 06.07.2026 |
-| SuperOffice for Outlook | 6.4.5 | 27.08.2026 |
-| SuperOffice for Teams | 1.0.0 | 06.07.2026 |
-| SuperOffice for Trello | 11.0 | 21.11.2025 |
-| SuperOffice for Wordpress | 12.0 | 06.07.2026 |
+| SuperOffice for Mailchimp | 14.0 | 01.10.2026 |
+| SuperOffice for Outlook | 6.4.8 | 01.10.2026 |
+| SuperOffice for Teams | 1.0.2 | 01.10.2026 |
+| SuperOffice for Trello | 15.0 | 01.10.2026 |
+| SuperOffice for Wordpress | 14.0 | 01.10.2026 |
 | SuperOffice MailLink | 13.1.61 | 30.01.2026 |
 | Synchronizer | 131.0 | 01.09.2026 |
-| Teams Notify | 12.0 | 06.07.2026 |
+| Teams Notify | 14.0 | 01.10.2026 |
 | Video Meetings | 2.12 | 26.05.2026 |
-| Webex Notify | 12.0 | 06.07.2026 |
-| WebTools for Mac | 13.3.3 | 06.06.2026 |
+| Webex Notify | 14.0 | 01.10.2026 |
+| WebTools for Mac | 13.5 | 25.09.2026 |
 | WebTools for Windows | 13.2.3 | 24.03.2026 |
-| Zapier | 3.5.10 | 24.07.2026 |
+| Zapier | 3.5.11 | 01.10.2026 |
 
 ## SuperOffice App Store
 
 See all the [new or updated apps][2]
 
-* 21.sept: [Finago by Syncify](https://appstore.superoffice.com/syncify-ab/finago-by-syncify) from Syncify AB
-* 21.sept: [Xledger by Syncify](https://appstore.superoffice.com/syncify-ab/xledger-by-syncify) from Syncify AB
-* 21.sept: [Places for SuperOffice](https://appstore.superoffice.com/superoffice-as/places-for-superoffice) from SuperOffice AS
-* 1.oct: [Teams Notify](https://appstore.superoffice.com/superoffice-as/superoffice-for-microsoft-teams) from SuperOffice AS
-* 1.oct: [SuperOffice for WordPress](https://appstore.superoffice.com/superoffice-as/superoffice-for-wordpress) from SuperOffice AS
-* 1.oct: [SuperOffice for Trello](https://appstore.superoffice.com/superoffice-as/superoffice-for-trello) from SuperOffice AS
-* 1.oct: [Zapier Integration](https://appstore.superoffice.com/superoffice-as/zapier-integration) from SuperOffice AS
-* 1.oct: [SuperOffice for Outlook](https://appstore.superoffice.com/superoffice-as/superoffice-for-outlook) from SuperOffice AS
-* 1.oct: [SharePoint Documents](https://appstore.superoffice.com/superoffice-as/sharepoint-documents) from SuperOffice AS
-* 1.oct: [SharePoint Documents](https://appstore.superoffice.com/superoffice-as/sharepoint-documents) from SuperOffice AS
-
+* [Teams Notify][74] from SuperOffice AS (01.10.2026)
+* [SuperOffice for WordPress][70] from SuperOffice AS (01.10.2026)
+* [SuperOffice for WordPress][75] from SuperOffice AS (01.10.2026)
+* [Zapier Integration][71] from SuperOffice AS (01.10.2026)
+* [SuperOffice for Outlook][63] from SuperOffice AS (01.10.2026)
+* [SharePoint Documents][46] from SuperOffice AS (01.10.2026)
+* [Finago by Syncify][49] from Syncify AB (21.09.2026)
+* [Xledger by Syncify][40] from Syncify AB (21.09.2026)
+* [Places for SuperOffice][73] from SuperOffice AS (21.09.2026) on the [EOL list][7]
 * [ezSync][68] from Schneider & Wulf EDV-Beratung GmbH & Co KG (27.08.2026)
 * [Harmoniser][69] from Synergy Technology Ltd (27.08.2026)
 * [Dealfront Connect (formerly Echobot Connect)][66] from SP Softwarepartner GmbH/Dealfront (20.08.2026)
 * [Send to Signant][72] from Maestro Soft AS (18.08.2026)
 * [Panels for SuperOffice][35] from SuperOffice AS (11.08.2026)
-* [Zapier Integration][71] from SuperOffice AS (24.07.2026)
 * [e-Boekhouden for SuperOffice][67] from All-CRM (10.07.2026)
-* [SuperOffice for WordPress][70] from SuperOffice AS (06.07.2026)
 * [InZynk for SuperOffice][65] from InZynk (12.06.2026)
 * [Synchronizer for SuperOffice][47] from SuperOffice AS (20.05.2026)
 * [Database Mirroring Service][62] from SuperOffice AS (05.06.2026)
-* [SuperOffice for Outlook][63] from SuperOffice AS (03.06.2026)
 * [SuperOffice for Teams][64] from SuperOffice AS (01.06.2026)
 * [DataBridge for SuperOffice][45] from SuperOffice AS (20.05.2026)
 * [Lyyti & SuperOffice integration][61] from Lyyti (16.03.2026)
@@ -102,7 +97,6 @@ See all the [new or updated apps][2]
 * [ConnectERP for Visma Net][16] from SuperOffice AS (21.04.2026)
 * [e-conomic by Syncify][56] from Syncify AB (21.04.2026)
 * [Exact Online by Syncify][48] from Syncify AB (21.04.2026)
-* [Finago by Syncify][49] from Syncify AB (21.04.2026)
 * [Microsoft Business Central by Syncify][58] from Syncify AB (21.04.2026)
 * [Microsoft Dynamics Navision by Syncify][55] from Syncify AB (21.04.2026)
 * [Monitor by Syncify][50] from Syncify AB (21.04.2026)
@@ -111,8 +105,6 @@ See all the [new or updated apps][2]
 * [Uniconta by Syncify][52] from Syncify AB (21.04.2026)
 * [Visma Administration by Syncify][53] from Syncify AB (21.04.2026)
 * [Visma Global by Syncify][54] from Syncify AB (21.04.2026)
-* [Xledger by Syncify][40] from Syncify AB (21.04.2026)
-* [SharePoint Documents][46] from SuperOffice AS (19.03.2026)
 * [Oneflow for SuperOffice][33] from Oneflow AB (04.03.2026)
 * [LeadX 360 AI][42] from LeadX Software GmbH (01.02.2026)
 * [Fortnox by Syncify][36] from Syncify AB (18.12.2025)
@@ -123,6 +115,7 @@ See all the [new or updated apps][2]
 [2]: https://appstore.superoffice.com/Category/new-and-updated
 [3]: /release-notes/integrations/sofo
 [6]: https://community.superoffice.com/en/product-releases/release-notes/
+[7]: /release-notes/eol/index.md
 [13]: /release-notes/integrations/video-meetings
 [15]: https://community.superoffice.com/en/support-faqs/faq/zapier-integration-version-3.5-changes-in-request-properties?utm_medium=docs&utm_source=release%20notes&utm_campaign=integration
 [16]: https://appstore.superoffice.com/superoffice-as/connecterp-for-visma-net
@@ -169,3 +162,6 @@ See all the [new or updated apps][2]
 [70]: https://appstore.superoffice.com/superoffice-as/superoffice-for-wordpress
 [71]: https://appstore.superoffice.com/superoffice-as/zapier-integration
 [72]: https://appstore.superoffice.com/maestro-soft-as/send-to-signant
+[73]: https://appstore.superoffice.com/superoffice-as/places-for-superoffice
+[74]: https://appstore.superoffice.com/superoffice-as/superoffice-for-microsoft-teams
+[75]: https://appstore.superoffice.com/superoffice-as/superoffice-for-wordpress
