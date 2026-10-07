@@ -4,7 +4,7 @@ title: End-of-life notifications
 description: This section provides crucial notifications and information about products reaching their end-of-life stage. Stay informed about the status of services, features, and products as they transition or are phased out.
 keywords: ['end-of-life', 'EOL', 'phased out', 'discontinued', 'deprecated', 'legacy']
 author: digitaldiina
-date: 07.06.2026
+date: 10.13.2026
 so_version: 12.2
 content_type: release-note
 language: en
@@ -22,8 +22,8 @@ Stay informed, stay prepared, and feel empowered as we navigate these transition
 
 | Product/Feature | EOL status | Timeline or date for discontinuation | Relevant details |
 |---|---|---|---|
-| Exchange Online Synchronizer (onsite) | Phase-out initiated | 31 December, 2026 | For Microsoft 365 (Exchange Online): switch to  [Synchronizer for SuperOffice][6]. For Exchange Onsite there is no replacement. Contact your SuperOffice partner. |
-| Places for SuperOffice | Phase-out initiated | 31 March, 2027 | The CRM Suite Growth includes Company Completion to help creating companies. |
+| Exchange Online Synchronizer (Onsite) | Phase-out initiated | 31 December, 2026 | For Microsoft 365 (Exchange Online): switch to  [Synchronizer for SuperOffice][6]. For Exchange Onsite there is no replacement. Contact your SuperOffice partner. |
+| [Places for SuperOffice][7] | Phase-out initiated | 31 March, 2027 | From CRM Suite Growth  Company Insight is included to help creating companies. |
 | [SuperOffice Service CompactMode][16] | No longer supported | January 13, 2026 (11.8) | Switch to [SuperOffice Mobile CRM][17]. |
 | [Pagebuilder][12] | No longer supported | The last supported version is 10.2.9 | Switch to [Screen Designer][22]. |
 
@@ -57,6 +57,7 @@ Stay informed, stay prepared, and feel empowered as we navigate these transition
 [4]: https://community.superoffice.com/en/support-faqs/
 [5]: https://community.superoffice.com/en/technical/forums/general-forums/announcements/-have-you-created-web-customizations-breaking-changes-ahead/
 [6]: https://appstore.superoffice.com/superoffice-as/synchronizer-for-superoffice
+[7]: https://appstore.superoffice.com/superoffice-as/places-for-superoffice
 [11]: /release-notes/eol/lotus
 [12]: /release-notes/eol/pagebuilder
 [13]: /release-notes/eol/soap
