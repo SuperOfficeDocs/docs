@@ -26,7 +26,7 @@ language: de
 
 Die Board-Ansicht zeigt Ihre [Selektion][2] in einem spaltenbasierten Layout mit Karten an. Sie können die Selektionsmitglieder (Datensätze auf dem Board) gruppieren und filtern sowie Karten per Drag-and-Drop zwischen Gruppen verschieben.
 
-Für Verkäufe wird die Board-Ansicht auch in der Verkaufsansicht angezeigt, in der Sie im linken Panel eine Selektion auswählen können. Dort befinden sich die Filter in der Schaltfläche **Filter** statt im Dialogfeld **Einstellungen**, und die Schaltflächen **Bearbeiten** und **Aufgabe** für die Selektion sind nicht verfügbar. Siehe [Mit Übersichtsseiten arbeiten][15].
+Für Verkäufe wird die Board-Ansicht auch in der Verkaufsansicht angezeigt, in der Sie im linken Panel eine Selektion auswählen können. Dort befinden sich die Filter in der Schaltfläche **Filter** statt im Einstellungsdialog (<i class="ph ph-gear-six" aria-label="Einstellungen"></i>), und die Schaltflächen **Bearbeiten** und **Aufgabe** für die Selektion sind nicht verfügbar. Siehe [Mit Übersichtsseiten arbeiten][15].
 
 Die Funktionalität ist für alle unterstützten Selektionstypen gleich: Sie können Karten ziehen, Aufgabenmenüs öffnen und Board-Einstellungen anpassen. Die verfügbaren Gruppierungs- und Filterfelder unterscheiden sich je nachdem, ob Sie mit Firmen, Personen, Verkäufen, Projekten oder Anfragen arbeiten.
 

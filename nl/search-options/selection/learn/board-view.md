@@ -26,7 +26,7 @@ language: nl
 
 De boardweergave toont je [selectie][2] in een kolomindeling met kaarten. Je kunt de selectieleden (records op het board) groeperen en filteren en kaarten verplaatsen tussen groepen via drag-and-drop.
 
-Voor verkopen wordt de boardweergave ook getoond in het Verkoopscherm, waar je een selectie kiest in het linkerpaneel. In dat geval staan de filters achter de knop **Filter** in plaats van in het dialoogvenster **Instellingen**, en zijn de knoppen **Bewerken** en **Taak** voor de selectie niet beschikbaar. Zie [Werken met overzichtspagina's][15].
+Voor verkopen wordt de boardweergave ook getoond in het Verkoopscherm, waar je een selectie kiest in het linkerpaneel. In dat geval staan de filters achter de knop **Filter** in plaats van in het instellingendialoogvenster (<i class="ph ph-gear-six" aria-label="Instellingen"></i>), en zijn de knoppen **Bewerken** en **Taak** voor de selectie niet beschikbaar. Zie [Werken met overzichtspagina's][15].
 
 De functionaliteit is identiek voor alle ondersteunde entiteiten: je kunt kaarten slepen, taakmenu's openen en boardinstellingen aanpassen. De beschikbare velden voor groepering en filtering verschillen afhankelijk van of je werkt met bedrijven, personen, verkopen, projecten of verzoeken.
 

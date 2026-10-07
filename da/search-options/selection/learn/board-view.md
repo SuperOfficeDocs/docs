@@ -26,7 +26,7 @@ language: da
 
 Tavlevisning viser dit [udvalg][2] i et kolonnebaseret layout med kort. Du kan gruppere og filtrere udvalgsmedlemmerne (de poster, der vises på tavlen), og bruge træk-og-slip til at flytte kort mellem grupper.
 
-For salg vises tavlevisning også på Salgsskærmen, hvor du kan vælge et udvalg i venstrepanelet. I så fald findes filtrene under knappen **Filter** i stedet for i dialogboksen **Indstillinger**, og knapperne **Rediger** og **Opgave** til udvalget er ikke tilgængelige. Se [Arbejd med oversigtssider][15].
+For salg vises tavlevisning også på Salgsskærmen, hvor du kan vælge et udvalg i venstrepanelet. I så fald findes filtrene under knappen **Filter** i stedet for i indstillingsdialogen (<i class="ph ph-gear-six" aria-label="Indstillinger"></i>), og knapperne **Rediger** og **Opgave** til udvalget er ikke tilgængelige. Se [Arbejd med oversigtssider][15].
 
 Funktionaliteten er den samme på tværs af understøttede poster: Du kan trække kort, åbne opgavemenuer og justere tavleindstillinger. De tilgængelige grupperings- og filterfelter varierer afhængigt af, om du arbejder med firma, person, salg, projekter eller sager.
 

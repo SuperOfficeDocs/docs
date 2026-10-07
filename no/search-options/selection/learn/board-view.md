@@ -26,7 +26,7 @@ language: no
 
 Tavlevisning viser ditt [utvalg][2] i et kolonnebasert oppsett med kort. Du kan gruppere og filtrere utvalgsmedlemmene (postene som vises på tavlen), og bruke dra-og-slipp for å flytte kort mellom grupper.
 
-For salg vises tavlevisning også i Salgsskjermen, der du kan velge et utvalg i venstrepanelet. I så fall ligger filtrene i **Filter**-knappen i stedet for i **Innstillinger**-dialogboksen, og knappene **Rediger** og **Oppgave** for utvalget er ikke tilgjengelige. Se [Arbeid med oversiktssider][15].
+For salg vises tavlevisning også i Salgsskjermen, der du kan velge et utvalg i venstrepanelet. I så fall ligger filtrene i **Filter**-knappen i stedet for i innstillingsdialogboksen (<i class="ph ph-gear-six" aria-label="Innstillinger"></i>), og knappene **Rediger** og **Oppgave** for utvalget er ikke tilgjengelige. Se [Arbeid med oversiktssider][15].
 
 Funksjonaliteten er lik på tvers av støttede posttyper: Du kan dra kort, åpne oppgavemenyer og justere tavleinnstillinger. Tilgjengelige grupperings- og filterfelter varierer avhengig av om du jobber med firma, personm, salg, prosjekter eller saker.
 
