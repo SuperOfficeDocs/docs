@@ -40,7 +40,7 @@ Oversigtssider bliver introduceret gradvist, startende med [Salgsskærmen][2], o
 
 * **Vælg et link til en post et vilkårligt sted i SuperOffice CRM.** F.eks. i tavlevisningen, i en detaljefane eller i sidepanelet. Posten åbnes i oversigtssiden og bliver din aktuelle post.
 
-* **Vælg Ny for at oprette en post af den type, skærmbilledet er til.** Den nye post åbnes i oversigtssiden. Når du gemmer den, bliver den den aktive og aktuelle post.
+* **Vælg Ny for at oprette en post af den type, skærmbilledet er til.** Den nye post åbnes i oversigtssiden. Når du gemmer den, åbnes den i den senest viste fane og bliver din aktuelle post.
 
 ## Oversigtssidens layout {#areas}
 
@@ -52,13 +52,25 @@ Oversigtssider bliver introduceret gradvist, startende med [Salgsskærmen][2], o
 | 2 | **Hovedområde** | Viser et udvalg i tavlevisning eller listevisning, når et udvalg er åbent. Viser posten med dens detaljefaner, når en post er åben. |
 | 3 | **Sidepanel** | [Sidepanelet][1] til højre med et eksempel på den valgte post eller den visning, du har valgt. |
 
+### Venstrepanelet {#left-panel}
+
+Venstrepanelet viser dine udvalg og poster som lodrette faner. Fanerne er organiseret i grupper. På salgsskærmen er grupperne **Udvalg** og **Salg**.
+
+![Venstrepanelet med grupperne Udvalg og Salg -screenshot][img2]
+
+Hver gruppe kan have én senest viste fane og lige så mange fastgjorte faner, som du vil. Den senest viste fane står lige under gruppeoverskriften og har ingen etiket. Den indeholder det udvalg eller den post, du åbnede sidst, og som ikke er fastgjort, og den erstattes, når du åbner et andet udvalg eller en anden post, der ikke er fastgjort. Når du åbner en fastgjort fane, erstattes den ikke.
+
+Fastgjorte faner står under overskriften **Fastgjort**, som viser antallet af fastgjorte faner. Vælg overskriften for at skjule eller udvide listen. Fastgjorte faner forbliver, indtil du lukker dem, og de er ikke sorteret, så brug **Søg i faner** for at finde den, du vil have. Træk og slip faner på listen over fastgjorte faner og mellem den senest viste fane og listen over fastgjorte faner.
+
+Vælg et fanenavn for at åbne det i hovedområdet. Fanen for det udvalg eller den post, der vises i hovedområdet, er fremhævet.
+
 ### Vis eller skjul venstrepanelet {#collapse}
 
 1. Vælg ikonet (<i class="ph ph-sidebar-simple" aria-label="Sidebar icon"></i>) øverst i venstrepanelet.
 
 1. Vælg ikonet igen for at vise panelet. Panelet åbnes ikke, når du peger på det.
 
-Når panelet er skjult, kan du vælge ikonet for en gruppe for at åbne den samme slags menu, med et søgefelt og dine aktive og fastgjorte faner.
+Når panelet er skjult, kan du vælge ikonet for en gruppe for at åbne den samme slags menu, med et søgefelt og dine senest viste og fastgjorte faner.
 
 Sidepanelet har også en knap til at vise og skjule det, øverst til højre på skærmen. Det samme ikon bruges til Navigatoren, venstrepanelet og sidepanelet.
 
@@ -96,19 +108,9 @@ Sådan søger du kun i fanerne i én gruppe, f.eks. fanerne i **Udvalg** eller *
 
 ![Menuen for gruppen Salg med feltet Søg i faner og fanerne i gruppen -screenshot][img5]
 
-## Hav udvalg og poster ved hånden {#active-pinned}
+## Fastgør og frigør faner {#pin-unpin}
 
-Venstrepanelet viser dine udvalg og poster som lodrette faner, med en gruppe til udvalg og en gruppe til poster, hver med sin egen overskrift, f.eks. **Udvalg** og **Salg** på salgsskærmen.
-
-![Venstrepanelet med grupperne Udvalg og Salg -screenshot][img2]
-
-Hver gruppe har to slags faner:
-
-* **Den aktive fane:** Fanen lige under gruppeoverskriften. Den har ingen etiket. Den indeholder det udvalg eller den post, du åbnede sidst, og som ikke er fastgjort, og den erstattes, når du åbner et andet udvalg eller en anden post, der ikke er fastgjort. Når du åbner en fastgjort fane, erstattes den aktive fane ikke.
-
-* **Fastgjorte faner:** Fanerne under overskriften **Fastgjort**, som viser antallet af fastgjorte faner. De forbliver, indtil du lukker dem. Vælg overskriften for at skjule eller udvide listen.
-
-Fanen for det udvalg eller den post, der vises i hovedområdet, er fremhævet, uanset om det er den aktive fane eller en fastgjort fane. Fastgør den aktive fane for at beholde den.
+Fastgør de udvalg og poster, du bruger mest, så de bliver i venstrepanelet, indtil du lukker dem.
 
 <Note>
 
@@ -118,13 +120,13 @@ Fastgjorte faner er adskilt fra dine [favoritter][3].
 
 ### Fastgør en fane {#pin}
 
-1. Peg på den aktive fane.
+1. Peg på den senest viste fane.
 
 1. Vælg nålesymbolet (<i class="ph ph-push-pin" aria-label="Pin icon"></i>), eller vælg <i class="ph ph-dots-three-vertical" aria-label="More options"></i> og derefter **Fastgør**.
 
 Fanen flyttes til toppen af listen over fastgjorte faner.
 
-![Menuen for en aktiv fane med valgmulighederne Fastgør og Luk -screenshot][img4]
+![Menuen for den senest viste fane med valgmulighederne Fastgør og Luk -screenshot][img4]
 
 ### Luk en fane {#close}
 
@@ -132,7 +134,7 @@ Fanen flyttes til toppen af listen over fastgjorte faner.
 
 1. Vælg **X**, eller vælg <i class="ph ph-dots-three-vertical" aria-label="More options"></i> og vælg en valgmulighed.
 
-    * **Luk:** Lukker den aktive fane.
+    * **Luk:** Lukker den senest viste fane.
 
     * **Frigør og luk:** Lukker den fastgjorte fane.
 
@@ -142,19 +144,15 @@ Fanen flyttes til toppen af listen over fastgjorte faner.
 
 ![Menuen for en fastgjort fane med valgmulighederne Frigør og luk, Frigør og luk alle og Frigør og luk alle undtagen denne -screenshot][img3]
 
-Når du lukker den fane, der er åben, åbnes den næste fane på listen. Hvis der ikke er flere fastgjorte faner, åbnes den aktive fane.
+Når du lukker den fane, der er åben, åbnes den næste fane på listen. Hvis der ikke er flere fastgjorte faner, åbnes den senest viste fane.
 
 ### Åbn et udvalg i valgpanelet, eller vis dets datasæt {#selection-menu}
 
-1. Peg på udvalgsfanen, aktiv eller fastgjort.
+1. Peg på udvalgsfanen, senest viste eller fastgjort.
 
 1. Vælg <i class="ph ph-dots-three-vertical" aria-label="More options"></i> og derefter **Åbn i valgpanelet** eller **Vis datasæt**.
 
 **Åbn i valgpanelet** åbner det samme udvalg i valgpanelet. **Vis datasæt** åbner udvalgets datasæt.
-
-### Skift rækkefølgen på fanerne {#reorder}
-
-Træk og slip faner på listen over fastgjorte faner og mellem den aktive fane og listen over fastgjorte faner.
 
 ## Skift, hvordan du ser et udvalg {#selections}
 
@@ -176,11 +174,11 @@ Hvis du vil redigere selve udvalget eller bruge knapperne **Rediger** og **Opgav
 
 ## Åbn en post fra et udvalg {#open-record}
 
-1. Dobbeltklik på et kort i tavlevisning, eller vælg dets titel. Posten åbnes i hovedområdet. Hvis posten ikke er fastgjort, vises den i den aktive fane i venstrepanelet. Hvis den er fastgjort, er dens fastgjorte fane fremhævet.
+1. Dobbeltklik på et kort i tavlevisning, eller vælg dets titel. Posten åbnes i hovedområdet. Hvis posten ikke er fastgjort, vises den i den senest viste fane i venstrepanelet. Hvis den er fastgjort, er dens fastgjorte fane fremhævet.
 
 1. Du kommer tilbage til udvalget ved at vælge det i venstrepanelet.
 
-Hvis du vælger et kort for at få vist et eksempel i sidepanelet, ændres den aktive fane ikke.
+Hvis du vælger et kort for at få vist et eksempel i sidepanelet, ændres den senest viste fane ikke.
 
 [1]: /da/learn/getting-started/main-screen/side-panel
 [2]: /da/sale/learn/index

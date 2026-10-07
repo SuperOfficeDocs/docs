@@ -40,7 +40,7 @@ En översiktssida är en skärm där du kan se dina urval, välja en post och ar
 
 * **Välj en länk till en post var som helst i SuperOffice CRM.** Till exempel i tavlevyn, på ett detaljkort eller i sidopanelen. Posten öppnas i översiktssidan och blir din aktuella post.
 
-* **Välj Ny för att skapa en post av den typ som skärmen gäller.** Den nya posten öppnas i översiktssidan. När du sparar den blir den den aktiva och aktuella posten.
+* **Välj Ny för att skapa en post av den typ som skärmen gäller.** Den nya posten öppnas i översiktssidan. När du sparar den öppnas den på den senast visade fliken och blir din aktuella post.
 
 ## Layout för en översiktssida {#areas}
 
@@ -52,13 +52,25 @@ En översiktssida är en skärm där du kan se dina urval, välja en post och ar
 | 2 | **Huvudområde** | Visar ett urval i tavlevy eller listvy när ett urval är öppet. Visar posten med dess detaljkort när en post är öppen. |
 | 3 | **Sidopanel** | [Sidopanelen][1] till höger, med en förhandsgranskning av den markerade posten eller den vy du har valt. |
 
+### Vänsterpanelen {#left-panel}
+
+Vänsterpanelen visar dina urval och poster som vertikala flikar. Flikarna är ordnade i grupper. På försäljningsskärmen är grupperna **Urval** och **Försäljning**.
+
+![Vänsterpanelen med grupperna Urval och Försäljning -screenshot][img2]
+
+Varje grupp kan ha en senast visad flik och så många fastnålade flikar du vill. Den senast visade fliken ligger direkt under gruppsrubriken och har ingen etikett. Den innehåller det urval eller den post du öppnade senast som inte är fastnålad, och ersätts när du öppnar ett annat som inte är fastnålat. När du öppnar en fastnålad flik ersätts den inte.
+
+Fastnålade flikar visas under rubriken **Fastnålad**, som visar antalet. Välj rubriken för att dölja eller visa listan. Fastnålade flikar ligger kvar tills du stänger dem, och de är inte sorterade, så använd **Sök i flikar** för att hitta den du vill ha. Dra och släpp flikar i listan över fastnålade flikar, eller mellan den senast visade fliken och listan över fastnålade flikar.
+
+Välj ett fliknamn för att öppna det i huvudområdet. Fliken för det urval eller den post som visas i huvudområdet är markerad.
+
 ### Visa eller dölj vänsterpanelen {#collapse}
 
 1. Välj ikonen (<i class="ph ph-sidebar-simple" aria-label="Sidebar icon"></i>) högst upp i vänsterpanelen.
 
 1. Välj ikonen igen för att visa panelen. Panelen öppnas inte när du håller muspekaren över den.
 
-När panelen är dold väljer du ikonen för en grupp för att öppna samma typ av meny, med ett sökfält och dina aktiva och fastnålade flikar.
+När panelen är dold väljer du ikonen för en grupp för att öppna samma typ av meny, med ett sökfält och dina senast visade och fastnålade flikar.
 
 Sidopanelen har också en knapp för att visa och dölja den, längst upp till höger på skärmen. Samma ikon används för navigatorn, vänsterpanelen och sidopanelen.
 
@@ -96,19 +108,9 @@ Så här söker du bara bland flikarna i en grupp, till exempel flikarna i **Urv
 
 ![Menyn för gruppen Försäljning med fältet Sök i flikar och flikarna i gruppen -screenshot][img5]
 
-## Ha urval och poster nära till hands {#active-pinned}
+## Nåla fast och ta bort fastnålning {#pin-unpin}
 
-Vänsterpanelen visar dina urval och poster som vertikala flikar, i en grupp för urval och en grupp för poster. Varje grupp har en rubrik, till exempel **Urval** och **Försäljning** på försäljningsskärmen.
-
-![Vänsterpanelen med grupperna Urval och Försäljning -screenshot][img2]
-
-Varje grupp har två slags flikar:
-
-* **Den aktiva fliken:** Fliken direkt under gruppsrubriken. Den har ingen etikett. Den innehåller det urval eller den post du öppnade senast som inte är fastnålad, och ersätts när du öppnar ett annat urval eller en annan post som inte är fastnålad. När du öppnar en fastnålad flik ersätts inte den aktiva fliken.
-
-* **Fastnålade flikar:** Flikarna under rubriken **Fastnålad**, som visar antalet fastnålade flikar. De ligger kvar tills du stänger dem. Välj rubriken för att dölja eller visa listan.
-
-Fliken för det urval eller den post som visas i huvudområdet är markerad, oavsett om det är den aktiva fliken eller en fastnålad flik. Nåla fast den aktiva fliken om du vill behålla den.
+Nåla fast de urval och poster du använder mest, så att de ligger kvar i vänsterpanelen tills du stänger dem.
 
 <Note>
 
@@ -118,13 +120,13 @@ Fastnålade flikar är separata från dina [favoriter][3].
 
 ### Nåla fast en flik {#pin}
 
-1. Håll muspekaren över den aktiva fliken.
+1. Håll muspekaren över den senast visade fliken.
 
 1. Välj nålikonen (<i class="ph ph-push-pin" aria-label="Pin icon"></i>), eller välj <i class="ph ph-dots-three-vertical" aria-label="More options"></i> och sedan **Nåla fast**.
 
 Fliken flyttas överst i listan över fastnålade flikar.
 
-![Menyn för en aktiv flik med alternativen Nåla fast och Stäng -screenshot][img4]
+![Menyn för den senast visade fliken med alternativen Nåla fast och Stäng -screenshot][img4]
 
 ### Stäng en flik {#close}
 
@@ -132,7 +134,7 @@ Fliken flyttas överst i listan över fastnålade flikar.
 
 1. Välj **X**, eller välj <i class="ph ph-dots-three-vertical" aria-label="More options"></i> och välj ett alternativ.
 
-    * **Stäng:** Stänger den aktiva fliken.
+    * **Stäng:** Stänger den senast visade fliken.
 
     * **Ta bort fastnålning och stäng:** Stänger den fastnålade fliken.
 
@@ -142,19 +144,15 @@ Fliken flyttas överst i listan över fastnålade flikar.
 
 ![Menyn för en fastnålad flik med alternativen Ta bort fastnålning och stäng, Ta bort alla fastnålningar och stäng alla samt Ta bort alla fastnålningar och stäng alla fönster utom det här -screenshot][img3]
 
-När du stänger fliken som är öppen öppnas nästa flik i listan. Om inga fastnålade flikar finns kvar öppnas den aktiva fliken.
+När du stänger fliken som är öppen öppnas nästa flik i listan. Om inga fastnålade flikar finns kvar öppnas den senast visade fliken.
 
 ### Öppna ett urval i urvalspanelen eller visa dess dataset {#selection-menu}
 
-1. Håll muspekaren över urvalsfliken, aktiv eller fastnålad.
+1. Håll muspekaren över urvalsfliken, senast visad eller fastnålad.
 
 1. Välj <i class="ph ph-dots-three-vertical" aria-label="More options"></i> och sedan **Öppna i urvalspanel** eller **Visa dataset**.
 
 **Öppna i urvalspanel** öppnar samma urval i urvalspanelen. **Visa dataset** öppnar urvalets dataset.
-
-### Ändra ordningen på flikarna {#reorder}
-
-Dra och släpp flikar i listan över fastnålade flikar, eller mellan den aktiva fliken och listan över fastnålade flikar.
 
 ## Ändra hur du visar ett urval {#selections}
 
@@ -176,11 +174,11 @@ Om du vill redigera själva urvalet, eller använda knapparna **Redigera** och *
 
 ## Öppna en post från ett urval {#open-record}
 
-1. I tavlevy dubbelklickar du på ett kort eller väljer dess titel. Posten öppnas i huvudområdet. Om posten inte är fastnålad visas den i den aktiva fliken i vänsterpanelen. Om den är fastnålad är dess fastnålade flik markerad.
+1. I tavlevy dubbelklickar du på ett kort eller väljer dess titel. Posten öppnas i huvudområdet. Om posten inte är fastnålad visas den i den senast visade fliken i vänsterpanelen. Om den är fastnålad är dess fastnålade flik markerad.
 
 1. Om du vill gå tillbaka till urvalet väljer du det i vänsterpanelen.
 
-Om du väljer ett kort för att förhandsgranska det i sidopanelen ändras inte den aktiva fliken.
+Om du väljer ett kort för att förhandsgranska det i sidopanelen ändras inte den senast visade fliken.
 
 [1]: /sv/learn/getting-started/main-screen/side-panel
 [2]: /sv/sale/learn/index

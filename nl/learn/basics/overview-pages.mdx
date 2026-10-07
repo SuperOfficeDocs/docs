@@ -40,7 +40,7 @@ Overzichtspagina's worden geleidelijk geïntroduceerd, te beginnen met het [Verk
 
 * **Selecteer ergens in SuperOffice CRM een koppeling naar een record.** Bijvoorbeeld in de boardweergave, een sectietabblad of het zijpaneel. Het record wordt geopend in de overzichtspagina en wordt uw huidige record.
 
-* **Selecteer Nieuw om een record te maken van het type waarvoor het scherm is bedoeld.** Het nieuwe record wordt geopend in de overzichtspagina. Wanneer u het opslaat, wordt het het actieve en huidige record.
+* **Selecteer Nieuw om een record te maken van het type waarvoor het scherm is bedoeld.** Het nieuwe record wordt geopend in de overzichtspagina. Wanneer u het opslaat, wordt het geopend in het laatst bekeken tabblad en wordt het uw huidige record.
 
 ## Indeling van een overzichtspagina {#areas}
 
@@ -52,13 +52,25 @@ Overzichtspagina's worden geleidelijk geïntroduceerd, te beginnen met het [Verk
 | 2 | **Hoofdgebied** | Toont een selectie in boardweergave of lijstweergave wanneer een selectie is geopend. Toont het record met de bijbehorende sectietabbladen wanneer een record is geopend. |
 | 3 | **Zijpaneel** | Het [zijpaneel][1] aan de rechterkant, met een voorbeeld van het geselecteerde record of de weergave die u hebt gekozen. |
 
+### Het linkerpaneel {#left-panel}
+
+Het linkerpaneel toont uw selecties en records als verticale tabbladen. De tabbladen zijn geordend in groepen. Op het Verkoopscherm zijn de groepen **Selecties** en **Verkopen**.
+
+![Het linkerpaneel met de groepen Selecties en Verkopen -screenshot][img2]
+
+Elke groep kan één laatst bekeken tabblad en zoveel vastgemaakte tabbladen hebben als u wilt. Het laatst bekeken tabblad staat direct onder de groepskop en heeft geen label. Het bevat de selectie of het record dat u het laatst hebt geopend en dat niet is vastgemaakt, en wordt vervangen wanneer u een andere opent die niet is vastgemaakt. Als u een vastgemaakt tabblad opent, wordt het niet vervangen.
+
+Vastgemaakte tabbladen staan onder de kop **Vastgemaakt**, die het aantal toont. Selecteer de kop om de lijst samen te vouwen of uit te vouwen. Vastgemaakte tabbladen blijven staan totdat u ze sluit en ze worden niet gesorteerd, dus gebruik **Zoeken in tabbladen** om het gewenste tabblad te vinden. Sleep tabbladen en zet ze neer in de lijst met vastgemaakte tabbladen, of tussen het laatst bekeken tabblad en de lijst met vastgemaakte tabbladen.
+
+Selecteer de naam van een tabblad om het te openen in het hoofdgebied. Het tabblad van de selectie of het record dat in het hoofdgebied wordt getoond, is gemarkeerd.
+
 ### Het linkerpaneel tonen of verbergen {#collapse}
 
 1. Selecteer het pictogram (<i class="ph ph-sidebar-simple" aria-label="Sidebar icon"></i>) bovenaan het linkerpaneel.
 
 1. Selecteer het pictogram opnieuw om het paneel te tonen. Het paneel wordt niet geopend wanneer u de muisaanwijzer erop plaatst.
 
-Wanneer het paneel is verborgen, selecteert u het pictogram van een groep om hetzelfde soort menu te openen, met een zoekveld en uw actieve en vastgemaakte tabbladen.
+Wanneer het paneel is verborgen, selecteert u het pictogram van een groep om hetzelfde soort menu te openen, met een zoekveld en uw laatst bekeken en vastgemaakte tabbladen.
 
 Het zijpaneel heeft ook een knop om het te tonen of te verbergen, rechtsboven in het scherm. Hetzelfde pictogram wordt gebruikt voor de Navigator, het linkerpaneel en het zijpaneel.
 
@@ -96,19 +108,9 @@ Zo zoekt u alleen in de tabbladen van één groep, bijvoorbeeld de tabbladen in 
 
 ![Het menu van de groep Verkopen met het veld Zoeken in tabbladen en de tabbladen in de groep -screenshot][img5]
 
-## Selecties en records binnen handbereik houden {#active-pinned}
+## Tabbladen vastmaken en losmaken {#pin-unpin}
 
-Het linkerpaneel toont uw selecties en records als verticale tabbladen, in één groep voor selecties en één voor records. Elke groep heeft een eigen kop, bijvoorbeeld **Selecties** en **Verkopen** op het Verkoopscherm.
-
-![Het linkerpaneel met de groepen Selecties en Verkopen -screenshot][img2]
-
-Elke groep heeft twee soorten tabbladen:
-
-* **Het actieve tabblad:** Het tabblad direct onder de groepskop. Het heeft geen label. Het bevat de selectie of het record dat u het laatst hebt geopend en dat niet is vastgemaakt, en wordt vervangen wanneer u een andere selectie of een ander record opent dat niet is vastgemaakt. Als u een vastgemaakt tabblad opent, wordt het actieve tabblad niet vervangen.
-
-* **Vastgemaakte tabbladen:** De tabbladen onder de kop **Vastgemaakt**, die het aantal vastgemaakte tabbladen toont. Ze blijven staan totdat u ze sluit. Selecteer de kop om de lijst samen te vouwen of uit te vouwen.
-
-Het tabblad van de selectie of het record dat in het hoofdgebied wordt getoond, is gemarkeerd, of het nu het actieve tabblad of een vastgemaakt tabblad is. Maak het actieve tabblad vast om het te behouden.
+Maak de selecties en records die u het vaakst gebruikt vast, zodat ze in het linkerpaneel blijven staan totdat u ze sluit.
 
 <Note>
 
@@ -118,13 +120,13 @@ Vastgemaakte tabbladen staan los van uw [favorieten][3].
 
 ### Een tabblad vastmaken {#pin}
 
-1. Plaats de muisaanwijzer op het actieve tabblad.
+1. Plaats de muisaanwijzer op het laatst bekeken tabblad.
 
 1. Selecteer het speldpictogram (<i class="ph ph-push-pin" aria-label="Pin icon"></i>), of selecteer <i class="ph ph-dots-three-vertical" aria-label="More options"></i> en vervolgens **Vastmaken**.
 
 Het tabblad wordt bovenaan de lijst met vastgemaakte tabbladen geplaatst.
 
-![Het menu voor een actief tabblad met de opties Vastmaken en Sluiten -screenshot][img4]
+![Het menu voor het laatst bekeken tabblad met de opties Vastmaken en Sluiten -screenshot][img4]
 
 ### Een tabblad sluiten {#close}
 
@@ -132,7 +134,7 @@ Het tabblad wordt bovenaan de lijst met vastgemaakte tabbladen geplaatst.
 
 1. Selecteer de **X**, of selecteer <i class="ph ph-dots-three-vertical" aria-label="More options"></i> en kies een optie.
 
-    * **Sluiten:** Sluit het actieve tabblad.
+    * **Sluiten:** Sluit het laatst bekeken tabblad.
 
     * **Losmaken en sluiten:** Sluit het vastgemaakte tabblad.
 
@@ -142,19 +144,15 @@ Het tabblad wordt bovenaan de lijst met vastgemaakte tabbladen geplaatst.
 
 ![Het menu voor een vastgemaakt tabblad met de opties Losmaken en sluiten, Alles losmaken en sluiten en Alles behalve dit losmaken en sluiten -screenshot][img3]
 
-Wanneer u het tabblad sluit dat is geopend, wordt het volgende tabblad in de lijst geopend. Als er geen vastgemaakte tabbladen meer zijn, wordt het actieve tabblad geopend.
+Wanneer u het tabblad sluit dat is geopend, wordt het volgende tabblad in de lijst geopend. Als er geen vastgemaakte tabbladen meer zijn, wordt het laatst bekeken tabblad geopend.
 
 ### Een selectie openen in het selectievenster of de dataset weergeven {#selection-menu}
 
-1. Plaats de muisaanwijzer op het selectietabblad, actief of vastgemaakt.
+1. Plaats de muisaanwijzer op het selectietabblad, laatst bekeken of vastgemaakt.
 
 1. Selecteer <i class="ph ph-dots-three-vertical" aria-label="More options"></i> en vervolgens **Openen in selectievenster** of **Dataset weergeven**.
 
 **Openen in selectievenster** opent dezelfde selectie in het selectievenster. **Dataset weergeven** opent de dataset van de selectie.
-
-### De volgorde van de tabbladen wijzigen {#reorder}
-
-Sleep tabbladen en zet ze neer in de lijst met vastgemaakte tabbladen, of tussen het actieve tabblad en de lijst met vastgemaakte tabbladen.
 
 ## Wijzigen hoe u een selectie bekijkt {#selections}
 
@@ -176,11 +174,11 @@ Als u de selectie zelf wilt bewerken of de knoppen **Bewerken** en **Taak** wilt
 
 ## Een record openen vanuit een selectie {#open-record}
 
-1. Dubbelklik in de boardweergave op een kaart of selecteer de titel ervan. Het record wordt geopend in het hoofdgebied Als het record niet is vastgemaakt, verschijnt het in het actieve tabblad in het linkerpaneel. Als het is vastgemaakt, is het bijbehorende vastgemaakte tabblad gemarkeerd.
+1. Dubbelklik in de boardweergave op een kaart of selecteer de titel ervan. Het record wordt geopend in het hoofdgebied Als het record niet is vastgemaakt, verschijnt het in het laatst bekeken tabblad in het linkerpaneel. Als het is vastgemaakt, is het bijbehorende vastgemaakte tabblad gemarkeerd.
 
 1. Als u terug wilt naar de selectie, kiest u deze in het linkerpaneel.
 
-Als u een kaart selecteert om een voorbeeld ervan te bekijken in het zijpaneel, verandert het actieve tabblad niet.
+Als u een kaart selecteert om een voorbeeld ervan te bekijken in het zijpaneel, verandert het laatst bekeken tabblad niet.
 
 [1]: /nl/learn/getting-started/main-screen/side-panel
 [2]: /nl/sale/learn/index

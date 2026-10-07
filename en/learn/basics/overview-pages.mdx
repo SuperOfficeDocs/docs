@@ -40,7 +40,7 @@ Overview pages are being introduced gradually, starting with the [Sale screen][2
 
 * **Select a link to a record anywhere in SuperOffice CRM.** For example, in the board view, a section tab, or the side panel. The record opens in the overview page and becomes your current record.
 
-* **Select New to create a record of the type the screen is for.** The new record opens in the overview page. When you save it, it becomes the active and current record.
+* **Select New to create a record of the type the screen is for.** The new record opens in the overview page. When you save it, it opens in the last-viewed tab and becomes your current record.
 
 ## Overview page layout {#areas}
 
@@ -52,13 +52,25 @@ Overview pages are being introduced gradually, starting with the [Sale screen][2
 | 2 | **Main area** | Shows a selection in board view or list view when a selection is open. Shows the record with its section tabs when a record is open. |
 | 3 | **Side panel** | The [side panel][1] on the right, with a preview of the selected record or the view you have chosen. |
 
+### The left panel {#left-panel}
+
+The left panel shows your selections and records as vertical tabs. The tabs are organized in groups. On the Sale screen, the groups are **Selections** and **Sales**.
+
+![The left panel with the Selections and Sales groups -screenshot][img2]
+
+Each group can have one last-viewed tab and as many pinned tabs as you want. The last-viewed tab is right below the group heading and has no label. It holds the selection or record you opened last that is not pinned, and it is replaced when you open another one that is not pinned. Opening a pinned tab does not replace it.
+
+Pinned tabs are listed under the **Pinned** heading, which shows how many there are. Select the heading to collapse or expand the list. Pinned tabs stay until you close them, and they are not sorted, so use **Search in tabs** to find the one you want. Drag and drop tabs to change their order in the pinned list, or to move a tab between the last-viewed tab and the pinned list.
+
+Select a tab name to open it in the main area. The tab for the selection or record shown in the main area is highlighted.
+
 ### Show or hide the left panel {#collapse}
 
 1. Select the icon (<i class="ph ph-sidebar-simple" aria-label="Sidebar icon"></i>) at the top of the left panel.
 
 1. Select the icon again to show the panel. The panel does not open when you point to it.
 
-When the panel is hidden, select the icon for a group to open the same kind of menu, with a search field and your active and pinned tabs.
+When the panel is hidden, select the icon for a group to open the same kind of menu, with a search field and your last-viewed and pinned tabs.
 
 The side panel also has a button for showing and hiding it, in the upper-right corner of the screen. The same icon is used for the Navigator, the left panel, and the side panel.
 
@@ -96,19 +108,9 @@ To search only the tabs in one group, for example the tabs in **Selections** or 
 
 ![The Sales group menu with the Search in tabs field and the tabs in the group -screenshot][img5]
 
-## Keep selections and records at hand {#active-pinned}
+## Pin and unpin tabs {#pin-unpin}
 
-The left panel shows your selections and records as vertical tabs. It has a group for selections and a group for records, each with its own heading, for example **Selections** and **Sales** on the Sale screen.
-
-![The left panel with the Selections and Sales groups -screenshot][img2]
-
-Each group has two kinds of tabs:
-
-* **The active tab:** The tab right below the group heading. It has no label. It holds the selection or record you opened last that is not pinned, and it is replaced when you open another selection or record that is not pinned. Opening a pinned tab does not replace it.
-
-* **Pinned tabs:** The tabs under the **Pinned** heading, which shows the number of pinned tabs. They stay until you close them. Select the heading to collapse or expand the list.
-
-The tab for the selection or record shown in the main area is highlighted, whether it is the active tab or a pinned tab. To keep the active tab, pin it.
+Pin the selections and records you use most, so that they stay in the left panel until you close them.
 
 <Note>
 
@@ -118,13 +120,13 @@ Pinned tabs are separate from your [favorites][3].
 
 ### Pin a tab {#pin}
 
-1. Point to the active tab.
+1. Point to the last-viewed tab.
 
 1. Select the pin icon (<i class="ph ph-push-pin" aria-label="Pin icon"></i>), or select <i class="ph ph-dots-three-vertical" aria-label="More options"></i> and then **Pin**.
 
 The tab moves to the top of the pinned list.
 
-![The menu for an active tab with the options Pin and Close -screenshot][img4]
+![The menu for the last-viewed tab with the options Pin and Close -screenshot][img4]
 
 ### Close a tab {#close}
 
@@ -132,7 +134,7 @@ The tab moves to the top of the pinned list.
 
 1. Select the **X**, or select <i class="ph ph-dots-three-vertical" aria-label="More options"></i> and choose an option.
 
-    * **Close:** Closes the active tab.
+    * **Close:** Closes the last-viewed tab.
 
     * **Unpin and close:** Closes the pinned tab.
 
@@ -142,19 +144,15 @@ The tab moves to the top of the pinned list.
 
 ![The menu for a pinned tab with the options Unpin and close, Unpin and close all, and Unpin and close all but this -screenshot][img3]
 
-When you close the tab that is open, the next tab in the list opens. If no pinned tabs are left, the active tab opens.
+When you close the tab that is open, the next tab in the list opens. If no pinned tabs are left, the last-viewed tab opens.
 
 ### Open a selection in the selection panel or show its dataset {#selection-menu}
 
-1. Point to the selection tab, active or pinned.
+1. Point to the selection tab, last-viewed or pinned.
 
 1. Select <i class="ph ph-dots-three-vertical" aria-label="More options"></i>, and then **Open in selection panel** or **Show dataset**.
 
 **Open in selection panel** opens the same selection in the selection panel. **Show dataset** opens the dataset of the selection.
-
-### Change the order of the tabs {#reorder}
-
-Drag and drop tabs in the pinned list, or between the active tab and the pinned list.
 
 ## Change how you view a selection {#selections}
 
@@ -176,11 +174,11 @@ To edit the selection itself, or to use the **Edit** and **Task** buttons, go to
 
 ## Open a record from a selection {#open-record}
 
-1. In board view, double-click a card or select its title. The record opens in the main area. If the record is not pinned, it appears in the active tab in the left panel. If it is pinned, its pinned tab is highlighted.
+1. In board view, double-click a card or select its title. The record opens in the main area. If the record is not pinned, it appears in the last-viewed tab in the left panel. If it is pinned, its pinned tab is highlighted.
 
 1. To go back to the selection, choose it in the left panel.
 
-Selecting a card to preview it in the side panel does not change the active tab.
+Selecting a card to preview it in the side panel does not change the last-viewed tab.
 
 [1]: /en/learn/getting-started/main-screen/side-panel
 [2]: /en/sale/learn/index

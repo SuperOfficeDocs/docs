@@ -2,7 +2,7 @@
 title: Arbeid med oversiktssider
 sidebarTitle: "Oversiktssider"
 description: Oversiktssider kombinerer et venstrepanel med vertikale faner, utvalg i liste- eller tavlevisning og posten du jobber med.
-keywords: ['oversiktsside', 'salgsoversikt', 'landingsside', 'Sale screen', 'salgsskjerm', 'ny Salgsskjerm', 'venstrepanel', 'vertikale faner', 'søk i faner', 'sidefelt', 'festet', 'feste', 'løsne', 'utvalg', 'tavlevisning', 'listevisning', 'filter', 'gjeldende', 'nylig', 'aktiv']
+keywords: ['oversiktsside', 'salgsoversikt', 'landingsside', 'Sale screen', 'salgsskjerm', 'ny Salgsskjerm', 'venstrepanel', 'vertikale faner', 'søk i faner', 'sidefelt', 'festet', 'feste', 'løsne', 'utvalg', 'tavlevisning', 'listevisning', 'filter', 'gjeldende', 'nylig', 'sist vist']
 author: digitaldiina
 date: 10.13.2026
 so_version: 12.5
@@ -40,7 +40,7 @@ Oversiktssider innføres gradvis, med [Salgsskjermen][2] først ut, og flere skj
 
 * **Velg en lenke til en post et sted i SuperOffice CRM.** For eksempel i tavlevisningen, et detaljkort eller sidepanelet. Posten åpnes i oversiktssiden og blir din gjeldende post.
 
-* **Velg Ny for å opprette en post av typen skjermen er for.** Den nye posten åpnes i oversiktssiden. Når du lagrer den, blir den den aktive og gjeldende posten.
+* **Velg Ny for å opprette en post av typen skjermen er for.** Den nye posten åpnes i oversiktssiden. Når du lagrer den, åpnes den i den sist viste fanen og blir din gjeldende post.
 
 ## Layout for en oversiktsside {#areas}
 
@@ -52,13 +52,25 @@ Oversiktssider innføres gradvis, med [Salgsskjermen][2] først ut, og flere skj
 | 2 | **Hovedområde** | Viser et utvalg i tavlevisning eller listevisning når et utvalg er åpent. Viser posten med detaljkortene når en post er åpen. |
 | 3 | **Sidepanel** | [Sidepanelet][1] til høyre, med en forhåndsvisning av den valgte posten eller visningen du har valgt. |
 
+### Venstrepanelet {#left-panel}
+
+Venstrepanelet viser utvalgene og postene dine som vertikale faner. Fanene er ordnet i grupper. På Salgsskjermen er gruppene **Utvalg** og **Salg**.
+
+![Venstrepanelet med gruppene Utvalg og Salg -screenshot][img2]
+
+Hver gruppe kan ha én sist vist fane og så mange festede faner du vil. Den sist viste fanen ligger rett under gruppeoverskriften og har ingen etikett. Den inneholder utvalget eller posten du åpnet sist som ikke er festet, og den erstattes når du åpner et annet utvalg eller en annen post som ikke er festet. Når du åpner en festet fane, blir den ikke erstattet.
+
+Festede faner står under overskriften **Festet**, som viser antall festede faner. Velg overskriften for å skjule eller vise listen. Festede faner blir stående til du lukker dem, og de er ikke sortert, så bruk **Søk i faner** for å finne den du vil ha. Dra og slipp faner i listen over festede faner, og mellom den sist viste fanen og listen over festede faner.
+
+Velg et fanenavn for å åpne det i hovedområdet. Fanen for utvalget eller posten som vises i hovedområdet, er uthevet.
+
 ### Vise eller skjule venstrepanelet {#collapse}
 
 1. Velg ikonet (<i class="ph ph-sidebar-simple" aria-label="Sidebar icon"></i>) øverst i venstrepanelet.
 
 1. Velg ikonet igjen for å vise panelet. Panelet åpnes ikke når du holder musepekeren over det.
 
-Når panelet er skjult, velger du ikonet for en gruppe for å åpne den samme typen meny, med et søkefelt og dine aktive og festede faner.
+Når panelet er skjult, velger du ikonet for en gruppe for å åpne den samme typen meny, med et søkefelt og dine sist viste og festede faner.
 
 Sidepanelet har også en knapp for å vise og skjule det, øverst til høyre på skjermen. Det samme ikonet brukes for navigatoren, venstrepanelet og sidepanelet.
 
@@ -96,19 +108,9 @@ For å søke bare i fanene i én gruppe, for eksempel fanene i **Utvalg** eller 
 
 ![Menyen for gruppen Salg med feltet Søk i faner og fanene i gruppen -screenshot][img5]
 
-## Ha utvalg og poster for hånden {#active-pinned}
+## Fest og løsne faner {#pin-unpin}
 
-Venstrepanelet viser utvalgene og postene dine som vertikale faner, i én gruppe for utvalg og én for poster. Hver gruppe har en gruppeoverskrift, for eksempel **Utvalg** og **Salg** på Salg-skjermbildet.
-
-![Venstrepanelet med gruppene Utvalg og Salg -screenshot][img2]
-
-Hver gruppe har to typer faner:
-
-* **Den aktive fanen:** Fanen rett under gruppeoverskriften. Den har ingen etikett. Den inneholder utvalget eller posten du åpnet sist som ikke er festet, og den erstattes når du åpner et annet utvalg eller en annen post som ikke er festet. Når du åpner en festet fane, blir ikke den aktive fanen erstattet.
-
-* **Festede faner:** Fanene under overskriften **Festet**, som viser antall festede faner. De blir stående til du lukker dem. Velg overskriften for å skjule eller vise listen.
-
-Fanen for utvalget eller posten som vises i hovedområdet, er uthevet, enten det er den aktive fanen eller en festet fane. Fest den aktive fanen for å beholde den.
+Fest utvalgene og postene du bruker mest, slik at de blir stående i venstrepanelet til du lukker dem.
 
 <Note>
 
@@ -118,13 +120,13 @@ Festede faner er atskilt fra [favorittene dine][3].
 
 ### Feste en fane {#pin}
 
-1. Hold musepekeren over den aktive fanen.
+1. Hold musepekeren over den sist viste fanen.
 
 1. Velg nålesymbolet (<i class="ph ph-push-pin" aria-label="Pin icon"></i>), eller velg <i class="ph ph-dots-three-vertical" aria-label="More options"></i> og deretter **Fest**.
 
 Fanen flyttes øverst i listen over festede faner.
 
-![Menyen for en aktiv fane med alternativene Fest og Lukk -screenshot][img4]
+![Menyen for den sist viste fanen med alternativene Fest og Lukk -screenshot][img4]
 
 ### Lukke en fane {#close}
 
@@ -132,7 +134,7 @@ Fanen flyttes øverst i listen over festede faner.
 
 1. Velg **X**, eller velg <i class="ph ph-dots-three-vertical" aria-label="More options"></i> og velg et alternativ.
 
-    * **Lukk:** Lukker den aktive fanen.
+    * **Lukk:** Lukker den sist viste fanen.
 
     * **Løsne og lukk:** Lukker den festede fanen.
 
@@ -142,19 +144,15 @@ Fanen flyttes øverst i listen over festede faner.
 
 ![Menyen for en festet fane med alternativene Løsne og lukk, Løsne og lukk alle og Løsne og lukk alle unntatt denne -screenshot][img3]
 
-Når du lukker fanen som er åpen, åpnes den neste fanen i listen. Hvis det ikke er flere festede faner igjen, åpnes den aktive fanen.
+Når du lukker fanen som er åpen, åpnes den neste fanen i listen. Hvis det ikke er flere festede faner igjen, åpnes den sist viste fanen.
 
 ### Åpne et utvalg i utvalgspanelet eller vise datasettet {#selection-menu}
 
-1. Hold musepekeren over utvalgsfanen, aktiv eller festet.
+1. Hold musepekeren over utvalgsfanen, sist vist eller festet.
 
 1. Velg <i class="ph ph-dots-three-vertical" aria-label="More options"></i>, og deretter **Åpne i utvalgspanelet** eller **Vis datasett**.
 
 **Åpne i utvalgspanelet** åpner det samme utvalget i utvalgspanelet. **Vis datasett** åpner datasettet til utvalget.
-
-### Endre rekkefølgen på fanene {#reorder}
-
-Dra og slipp faner i listen over festede faner, og mellom den aktive fanen og listen over festede faner.
 
 ## Endre hvordan du ser et utvalg {#selections}
 
@@ -176,11 +174,11 @@ For å redigere selve utvalget, eller for å bruke knappene **Rediger** og **Opp
 
 ## Åpne en post fra et utvalg {#open-record}
 
-1. I tavlevisning dobbeltklikker du på et kort eller velger tittelen. Posten åpnes i hovedområdet Hvis posten ikke er festet, vises den i den aktive fanen i venstrepanelet. Hvis den er festet, er den festede fanen uthevet.
+1. I tavlevisning dobbeltklikker du på et kort eller velger tittelen. Posten åpnes i hovedområdet Hvis posten ikke er festet, vises den i den sist viste fanen i venstrepanelet. Hvis den er festet, er den festede fanen uthevet.
 
 1. For å gå tilbake til utvalget velger du det i venstrepanelet.
 
-Hvis du velger et kort for å forhåndsvise det i sidepanelet, endres ikke den aktive fanen.
+Hvis du velger et kort for å forhåndsvise det i sidepanelet, endres ikke den sist viste fanen.
 
 [1]: /no/learn/getting-started/main-screen/side-panel
 [2]: /no/sale/learn/index
