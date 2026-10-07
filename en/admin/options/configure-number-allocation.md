@@ -3,9 +3,9 @@ uid: help-en-number-allocation-configure
 title: Specifying number allocation
 description: Specifying number allocation
 keywords: ['counter', 'company number']
-author: digitaldiina
+author: Bergfrid Skaara Dias
 date: 10.07.2026
-so_version: 11.5
+so_version: 12.5
 content_type: howto
 tier: starter
 category: Settings and maintenance

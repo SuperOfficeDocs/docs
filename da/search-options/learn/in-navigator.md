@@ -3,19 +3,13 @@ uid: help-da-fastsearcher-navigator
 title: Brug af hurtigsøgning i navigatoren
 description: Brug af hurtigsøgning i navigatoren
 keywords: ['søge', 'FastSearcher', 'navigator']
-author: Bergfrid Dias
+author: Bergfrid Skaara Dias
 date: 10.07.2026
 so_version: 12.5
 content_type: howto
 tier: starter
 language: da
 ---
-
-<Note>
-
-På skærmbilleder med en [oversigtsside][2], f.eks. Salgsskærmen, søger søgefeltet i venstrepanelet i udvalg og poster på samme tid. Søgningen starter, når du har indtastet to tegn.
-
-</Note>
 
 1. Klik på ordet **Firma**, **Person**, **Salg**, **Projekt** eller **Udvalg** i navigatoren til venstre i vinduet. Der vises et tomt felt øverst. nedenunder dette er der en [liste over poster, du tidligere har arbejdet med][1].
 
@@ -25,13 +19,19 @@ På skærmbilleder med en [oversigtsside][2], f.eks. Salgsskærmen, søger søge
 
 3. Klik på den nødvendige post for at åbne den.
 
-## How it works
+<Note>
 
-The Navigator FastSearcher runs two parallel searches:
+For Salg søger [søgefeltet i venstrepanelet][2] i udvalg og salg på samme tid. Søgningen starter, når du har indtastet to tegn.
 
-* A standard *begins-with* search with optional wildcard (%). In a phrase, the longest word is looked up first.
+</Note>
 
-* An *exact-match* *sounds-like* (SoundEx) search. If the phrase contains short words, multiple words are needed before look-up starts. The result is shown only if the standard search has 0 matches.
+## Sådan fungerer det
+
+Navigatorens hurtigsøgning kører to parallelle søgninger:
+
+* En standardsøgning af typen *begynder med* med valgfri jokertegn (%). I en frase slås det længste ord op først.
+
+* En *eksakt* søgning af typen *lyder som* (SoundEx). Hvis frasen indeholder korte ord, kræves der flere ord, før opslaget starter. Resultatet vises kun, hvis standardsøgningen giver 0 resultater.
 
 ## Eksempler
 

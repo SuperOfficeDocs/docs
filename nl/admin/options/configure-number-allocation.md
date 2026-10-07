@@ -3,9 +3,9 @@ uid: help-nl-number-allocation-configure
 title: Nummertoewijzing opgeven
 description: Nummertoewijzing opgeven
 keywords: ['nummertoewijzing', 'teller', 'bedrijfsnummer']
-author: digitaldiina
+author: Bergfrid Skaara Dias
 date: 10.07.2026
-so_version: 11.5
+so_version: 12.5
 content_type: howto
 tier: starter
 category: Settings and maintenance

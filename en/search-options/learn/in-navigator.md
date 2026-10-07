@@ -3,7 +3,7 @@ uid: help-en-fastsearcher-navigator
 title: Using FastSearcher in the Navigator
 description: How to use FastSearcher in the Navigator in SuperOffice
 keywords: ['search']
-author: Bergfrid Dias
+author: Bergfrid Skaara Dias
 date: 10.07.2026
 so_version: 12.5
 content_type: howto
@@ -23,7 +23,7 @@ language: en
 
 <Note>
 
-On screens with an [overview page][2], such as the Sale screen, the search field in the left panel searches selections and records at the same time. It starts after you enter two characters.
+For Sale, the [search field in the left panel][2] searches selections and sales at the same time. It starts after you enter two characters.
 
 </Note>
 

@@ -3,9 +3,9 @@ uid: help-en-links
 title: Links
 description: Links
 keywords: ['add Link', 'Links tab', 'link']
-author: Bergfrid Dias
+author: Bergfrid Skaara Dias
 date: 10.07.2026
-so_version: 10.5
+so_version: 12.5
 content_type: howto
 tier: starter
 audience: person

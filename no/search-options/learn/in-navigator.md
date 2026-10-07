@@ -3,7 +3,7 @@ uid: help-no-fastsearcher-navigator
 title: Bruke hurtigsøk i Navigator
 description: Hvordan bruke hurtigsøk i navigatoren in SuperOffice
 keywords: ['søk', 'hurtigsøk']
-author: Bergfrid Dias
+author: Bergfrid Skaara Dias
 date: 10.07.2026
 so_version: 12.5
 content_type: howto
@@ -21,7 +21,7 @@ language: no
 
 <Note>
 
-På skjermer med en [oversiktsside][2], som Salgsskjermen, søker søkefeltet i venstrepanelet i utvalg og poster samtidig. Søket starter når du har skrevet inn to tegn.
+For Salg søker [søkefeltet i venstrepanelet][2] i utvalg og salg samtidig. Søket starter når du har skrevet inn to tegn.
 
 </Note>
 
