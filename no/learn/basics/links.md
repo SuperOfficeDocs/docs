@@ -4,7 +4,7 @@ title: Koblinger
 description: Koblinger
 keywords: ['Legg til kobling', 'fanen Koblinger', 'kobling', 'lenke', 'link']
 author: digitaldiina
-date: 10.07.2026
+date: 10.13.2026
 so_version: 12.5
 content_type: howto
 tier: starter

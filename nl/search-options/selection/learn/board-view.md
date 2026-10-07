@@ -4,7 +4,7 @@ title: Boardweergave gebruiken in selecties
 description: Visualiseer selecties met de boardweergave met groepering, filters en drag-and-drop-kaarten
 keywords: ['boardweergave', 'board-weergave', 'selectieoverzicht', 'selectie', 'verkoopboard', 'projectboard', 'verzoekboard', 'kanban', 'groeperen op', 'filterwerkbalk', 'verkoopdatum badge', 'dagen in fase', 'dagen sinds registratie']
 author: digitaldiina
-date: 10.07.2026
+date: 10.13.2026
 so_version: 12.5
 content_type: howto
 license: salespremium, servicepremium, marketingessentials

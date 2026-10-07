@@ -4,7 +4,7 @@ title: Board-Ansicht in Selektionen verwenden
 description: Selektionen mit der Board-Ansicht visualisieren - mit Gruppierung, Filtern und Drag-and-Drop-Karten
 keywords: ['Board-Ansicht', 'Selektionsansicht', 'Selektion', 'Verkaufsboard', 'Projektboard', 'Anfrageboard', 'Kanban', 'gruppieren nach', 'Filterleiste', 'Verkaufsdatum-Badge', 'Tage in Phase', 'Tage seit Registrierung']
 author: digitaldiina
-date: 10.07.2026
+date: 10.13.2026
 so_version: 12.5
 content_type: howto
 license: salespremium, servicepremium, marketingessentials

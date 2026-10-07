@@ -4,7 +4,7 @@ title: Brug tavlevisning i udvalg
 description: Visualiser udvalg med tavlevisning med gruppering, filtre og træk-og-slip-kort
 keywords: ['tavlevisning', 'udvalgsvisning', 'udvalg', 'salgstavle', 'projekttavle', 'sagstavle', 'kanban', 'gruppér efter', 'filter-værktøjslinje', 'salgsdato-badge', 'dage i fase', 'dage siden registrering']
 author: digitaldiina
-date: 10.07.2026
+date: 10.13.2026
 so_version: 12.5
 content_type: howto
 license: salespremium, servicepremium, marketingessentials

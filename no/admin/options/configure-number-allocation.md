@@ -4,7 +4,7 @@ title: Angi nummertildeling
 description: Angi nummertildeling
 keywords: ['nummertildeling', 'teller', 'firmanummer']
 author: digitaldiina
-date: 10.07.2026
+date: 10.13.2026
 so_version: 12.5
 content_type: howto
 tier: starter
