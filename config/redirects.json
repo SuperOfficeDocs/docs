@@ -4042,11 +4042,11 @@
   },
   {
     "source": "/da/sale/learn/use-side-panel",
-    "destination": "/da/sale/learn/index"
+    "destination": "/da/learn/getting-started/main-screen/side-panel"
   },
   {
     "source": "/da/sale/learn/use-side-panel.html",
-    "destination": "/da/sale/learn/index"
+    "destination": "/da/learn/getting-started/main-screen/side-panel"
   },
   {
     "source": "/da/sale/saint/learn/admin/*",
@@ -8406,11 +8406,11 @@
   },
   {
     "source": "/de/sale/learn/use-side-panel",
-    "destination": "/de/sale/learn/index"
+    "destination": "/de/learn/getting-started/main-screen/side-panel"
   },
   {
     "source": "/de/sale/learn/use-side-panel.html",
-    "destination": "/de/sale/learn/index"
+    "destination": "/de/learn/getting-started/main-screen/side-panel"
   },
   {
     "source": "/de/sale/saint/learn/admin/*",
@@ -17686,11 +17686,11 @@
   },
   {
     "source": "/en/sale/learn/use-side-panel",
-    "destination": "/en/sale/learn/index"
+    "destination": "/en/learn/getting-started/main-screen/side-panel"
   },
   {
     "source": "/en/sale/learn/use-side-panel.html",
-    "destination": "/en/sale/learn/index"
+    "destination": "/en/learn/getting-started/main-screen/side-panel"
   },
   {
     "source": "/en/sale/overview",
@@ -23194,11 +23194,11 @@
   },
   {
     "source": "/nl/sale/learn/use-side-panel",
-    "destination": "/nl/sale/learn/index"
+    "destination": "/nl/learn/getting-started/main-screen/side-panel"
   },
   {
     "source": "/nl/sale/learn/use-side-panel.html",
-    "destination": "/nl/sale/learn/index"
+    "destination": "/nl/learn/getting-started/main-screen/side-panel"
   },
   {
     "source": "/nl/sale/saint/learn/admin/*",
@@ -27558,11 +27558,11 @@
   },
   {
     "source": "/no/sale/learn/use-side-panel",
-    "destination": "/no/sale/learn/index"
+    "destination": "/no/learn/getting-started/main-screen/side-panel"
   },
   {
     "source": "/no/sale/learn/use-side-panel.html",
-    "destination": "/no/sale/learn/index"
+    "destination": "/no/learn/getting-started/main-screen/side-panel"
   },
   {
     "source": "/no/sale/saint/learn/admin/*",
@@ -32430,11 +32430,11 @@
   },
   {
     "source": "/sv/sale/learn/use-side-panel",
-    "destination": "/sv/sale/learn/index"
+    "destination": "/sv/learn/getting-started/main-screen/side-panel"
   },
   {
     "source": "/sv/sale/learn/use-side-panel.html",
-    "destination": "/sv/sale/learn/index"
+    "destination": "/sv/learn/getting-started/main-screen/side-panel"
   },
   {
     "source": "/sv/sale/saint/learn/admin/*",
