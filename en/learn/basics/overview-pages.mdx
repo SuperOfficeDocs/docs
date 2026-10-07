@@ -2,7 +2,7 @@
 title: Work with overview pages
 sidebarTitle: "Overview pages"
 description: Overview pages combine a left panel of vertical tabs, selections in list or board view, and the record you are working on.
-keywords: ['overview page', 'sales overview', 'landing page', 'Sale screen', 'sales screen', 'new Sale screen', 'left panel', 'vertical tabs', 'search in tabs', 'sidebar', 'pinned', 'pin', 'unpin', 'selection', 'board view', 'list view', 'filter', 'current', 'recent', 'active']
+keywords: ['overview page', 'sales overview', 'landing page', 'Sale screen', 'sales screen', 'new Sale screen', 'left panel', 'vertical tabs', 'search in tabs', 'sidebar', 'pinned', 'pin', 'unpin', 'selection', 'board view', 'list view', 'filter', 'current', 'recent', 'last-viewed tab']
 author: digitaldiina
 date: 10.13.2026
 so_version: 12.5
@@ -20,10 +20,10 @@ related:
 language: en
 ---
 
-An overview page is a screen where you can see your selections, pick a record, and work on it without leaving the page. Instead of searching for a record each time, you can pin the ones you work with most as vertical tabs in the left panel and switch between them with one click.
+An overview page is a screen where you can see your selections, pick a record, and work on it without leaving the page. You can pin the selections and records you work with most as vertical tabs in the left panel and switch between them with one click.
 
 <Note>
-Overview pages are being introduced gradually, starting with the [Sale screen][2], and more screens will follow. If you do not see the Sale screen yet, sales open on their own card as before without a left panel, and you can find a board view of your sales by going to **Selections**.
+Overview pages are being introduced gradually, starting with the [Sale screen][2]. If you do not see the Sale screen yet, sales open on their own card, without a left panel. You can find a board view of your sales under **Selections**.
 </Note>
 
 ## Available overview pages
@@ -60,7 +60,7 @@ The left panel shows your selections and records as vertical tabs. The tabs are 
 
 Each group can have one last-viewed tab and as many pinned tabs as you want. The last-viewed tab is right below the group heading and has no label. It holds the selection or record you opened last that is not pinned, and it is replaced when you open another one that is not pinned. Opening a pinned tab does not replace it.
 
-Pinned tabs are listed under the **Pinned** heading, which shows how many there are. Select the heading to collapse or expand the list. Pinned tabs stay until you close them, and they are not sorted, so use **Search in tabs** to find the one you want. Drag and drop tabs to change their order in the pinned list, or to move a tab between the last-viewed tab and the pinned list.
+Pinned tabs are listed under the **Pinned** heading, which shows how many there are. Select the heading to collapse or expand the list. Pinned tabs stay until you close them and are not sorted, so use **Search in tabs** to find the one you want. Drag and drop tabs to change their order, or to move a tab between the last-viewed tab and the pinned list.
 
 Select a tab name to open it in the main area. The tab for the selection or record shown in the main area is highlighted.
 
@@ -70,7 +70,7 @@ Select a tab name to open it in the main area. The tab for the selection or reco
 
 1. Select the icon again to show the panel. The panel does not open when you point to it.
 
-When the panel is hidden, select the icon for a group to open the same kind of menu, with a search field and your last-viewed and pinned tabs.
+When the panel is hidden, select the icon for a group to open its tab menu, with a search field and your last-viewed and pinned tabs.
 
 The side panel also has a button for showing and hiding it, in the upper-right corner of the screen. The same icon is used for the Navigator, the left panel, and the side panel.
 
@@ -128,7 +128,7 @@ The tab moves to the top of the pinned list.
 
 ### Close a tab {#close}
 
-1. Point to the tab. A pinned tab shows an **X**, and both kinds of tab show <i class="ph ph-dots-three-vertical" aria-label="More options"></i>.
+1. Point to the tab. <i class="ph ph-dots-three-vertical" aria-label="More options"></i> appears, and a pinned tab also shows an **X**.
 
 1. Select the **X**, or click <i class="ph ph-dots-three-vertical" aria-label="More options"></i> and choose an option.
 
@@ -142,7 +142,7 @@ The tab moves to the top of the pinned list.
 
 ![The menu for a pinned tab with the options Unpin and close, Unpin and close all, and Unpin and close all but this -screenshot][img3]
 
-When you close the tab that is open, the next tab in the list opens. If no pinned tabs are left, the last-viewed tab opens.
+When you close the tab that is open, the next tab opens: the one below it in the pinned list, or the one above if there is none below. When you close the last-viewed tab, the first pinned tab opens.
 
 ## Selections {#selections}
 
@@ -154,9 +154,9 @@ Use the controls in the header to change the view.
 
 * **Switch between list view and board view:** Select the list (<i class="ph ph-list" aria-label="List view"></i>) or board (<i class="ph ph-kanban" aria-label="Board view"></i>) button.
 
-* **Choose which filters to show:** Select **Filter**, and then select the filters you want in the filter toolbar, for example **Owner** or **Stage**. Use the **Toggle toolbar** switch to show or hide the toolbar, and select **Done** to close the menu. The filters are not in the **Settings** dialog.
+* **Choose which filters to show:** Select **Filter**, and then select the filters you want in the filter toolbar, for example **Owner** or **Stage**. Use the **Toggle toolbar** switch to show or hide the toolbar, and select **Done** to close the menu.
 
-* **Reload the selection:** Select the refresh icon.
+* **Reload the selection:** Select the refresh icon (<i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i>).
 
 * **Group, sort, and summarize the cards:** Select **Settings** to set grouping, sorting, summaries, the sale date badge, and whether closed sales are hidden. Available in board view only.
 
@@ -172,7 +172,7 @@ To edit the selection itself, or to use the **Edit** and **Task** buttons, go to
 
 1. Click <i class="ph ph-dots-three-vertical" aria-label="More options"></i>, and then **Open in selection panel** or **Show dataset**.
 
-**Open in selection panel** opens the same selection in the Selection screen, the same as when you select **Selections** in the [Navigator][7] and choose the selection. **Show dataset** opens the dataset of the selection.
+**Open in selection panel** opens the selection in the Selection screen, as if you had selected **Selections** in the [Navigator][7] and chosen the selection. **Show dataset** shows the dataset of the selection.
 
 ![The menu for a pinned selection tab with the options Show dataset and Open in selection panel -screenshot][img4]
 

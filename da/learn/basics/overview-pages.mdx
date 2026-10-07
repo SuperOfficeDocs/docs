@@ -2,7 +2,7 @@
 title: Arbejd med oversigtssider
 sidebarTitle: "Oversigtssider"
 description: Oversigtssider kombinerer et venstrepanel med lodrette faner, udvalg i liste- eller tavlevisning og den post, du arbejder med.
-keywords: ['oversigtsside', 'salgsoversigt', 'startside', 'Sale screen', 'salgsskærm', 'ny Salgsskærm', 'venstrepanel', 'lodrette faner', 'søg i faner', 'sidebjælke', 'fastgjort', 'fastgør', 'frigør', 'udvalg', 'tavlevisning', 'listevisning', 'filter', 'aktuel', 'seneste', 'aktiv']
+keywords: ['oversigtsside', 'salgsoversigt', 'startside', 'Sale screen', 'salgsskærm', 'ny Salgsskærm', 'venstrepanel', 'lodrette faner', 'søg i faner', 'sidebjælke', 'fastgjort', 'fastgør', 'frigør', 'udvalg', 'tavlevisning', 'listevisning', 'filter', 'aktuel', 'seneste', 'senest viste fane']
 author: digitaldiina
 date: 10.13.2026
 so_version: 12.5
@@ -20,10 +20,10 @@ related:
 language: da
 ---
 
-En oversigtsside er et skærmbillede, hvor du kan se dine udvalg, vælge en post og arbejde med den uden at forlade siden. I stedet for at søge efter en post hver gang kan du fastgøre de poster, du arbejder mest med, som lodrette faner i venstrepanelet og skifte mellem dem med ét klik.
+En oversigtsside er et skærmbillede, hvor du kan se dine udvalg, vælge en post og arbejde med den uden at forlade siden. Du kan fastgøre de udvalg og poster, du arbejder mest med, som lodrette faner i venstrepanelet og skifte mellem dem med ét klik.
 
 <Note>
-Oversigtssider bliver introduceret gradvist, startende med [Salgsskærmen][2], og flere skærmbilleder følger. Hvis du endnu ikke kan se Salgsskærmen, åbnes salg stadig på deres eget kort som før uden venstrepanel, og du kan finde en tavlevisning af dine salg ved at gå til **Udvalg**.
+Oversigtssider bliver introduceret gradvist, startende med [Salgsskærmen][2]. Hvis du endnu ikke kan se Salgsskærmen, åbnes salg på deres eget kort, uden venstrepanel. Du kan finde en tavlevisning af dine salg under **Udvalg**.
 </Note>
 
 ## Tilgængelige oversigtssider
@@ -60,7 +60,7 @@ Venstrepanelet viser dine udvalg og poster som lodrette faner. Fanerne er organi
 
 Hver gruppe kan have én senest viste fane og lige så mange fastgjorte faner, som du vil. Den senest viste fane står lige under gruppeoverskriften og har ingen etiket. Den indeholder det udvalg eller den post, du åbnede sidst, og som ikke er fastgjort, og den erstattes, når du åbner et andet udvalg eller en anden post, der ikke er fastgjort. Når du åbner en fastgjort fane, erstattes den ikke.
 
-Fastgjorte faner står under overskriften **Fastgjort**, som viser antallet af fastgjorte faner. Vælg overskriften for at skjule eller udvide listen. Fastgjorte faner forbliver, indtil du lukker dem, og de er ikke sorteret, så brug **Søg i faner** for at finde den, du vil have. Træk og slip faner på listen over fastgjorte faner og mellem den senest viste fane og listen over fastgjorte faner.
+Fastgjorte faner står under overskriften **Fastgjort**, som viser antallet af fastgjorte faner. Vælg overskriften for at skjule eller udvide listen. Fastgjorte faner forbliver, indtil du lukker dem, og er ikke sorteret, så brug **Søg i faner** for at finde den, du vil have. Træk og slip faner for at ændre deres rækkefølge, eller for at flytte en fane mellem den senest viste fane og listen over fastgjorte faner.
 
 Vælg et fanenavn for at åbne det i hovedområdet. Fanen for det udvalg eller den post, der vises i hovedområdet, er fremhævet.
 
@@ -70,7 +70,7 @@ Vælg et fanenavn for at åbne det i hovedområdet. Fanen for det udvalg eller d
 
 1. Vælg ikonet igen for at vise panelet. Panelet åbnes ikke, når du peger på det.
 
-Når panelet er skjult, kan du vælge ikonet for en gruppe for at åbne den samme slags menu, med et søgefelt og dine senest viste og fastgjorte faner.
+Når panelet er skjult, kan du vælge ikonet for en gruppe for at åbne gruppens fanemenu, med et søgefelt og dine senest viste og fastgjorte faner.
 
 Sidepanelet har også en knap til at vise og skjule det, øverst til højre på skærmen. Det samme ikon bruges til Navigatoren, venstrepanelet og sidepanelet.
 
@@ -128,7 +128,7 @@ Fanen flyttes til toppen af listen over fastgjorte faner.
 
 ### Luk en fane {#close}
 
-1. Peg på fanen. En fastgjort fane viser et **X**, og begge slags faner viser <i class="ph ph-dots-three-vertical" aria-label="More options"></i>.
+1. Peg på fanen. <i class="ph ph-dots-three-vertical" aria-label="More options"></i> vises, og en fastgjort fane viser også et **X**.
 
 1. Vælg **X**, eller klik på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> og vælg en valgmulighed.
 
@@ -142,7 +142,7 @@ Fanen flyttes til toppen af listen over fastgjorte faner.
 
 ![Menuen for en fastgjort fane med valgmulighederne Frigør og luk, Frigør og luk alle og Frigør og luk alle undtagen denne -screenshot][img3]
 
-Når du lukker den fane, der er åben, åbnes den næste fane på listen. Hvis der ikke er flere fastgjorte faner, åbnes den senest viste fane.
+Når du lukker den fane, der er åben, åbnes den næste fane: den under den på listen over fastgjorte faner, eller den over, hvis der ikke er nogen under. Når du lukker den senest viste fane, åbnes den første fastgjorte fane.
 
 ## Udvalg {#selections}
 
@@ -154,9 +154,9 @@ Brug knapperne i overskriften til at skifte visning.
 
 * **Skift mellem listevisning og tavlevisning:** Vælg listeknappen (<i class="ph ph-list" aria-label="List view"></i>) eller tavleknappen (<i class="ph ph-kanban" aria-label="Board view"></i>).
 
-* **Vælg, hvilke filtre der vises:** Vælg **Filter**, og vælg derefter de filtre, du vil have i filterværktøjslinjen, f.eks. **Ejer** eller **Fase**. Brug kontakten **Vis/skjul værktøjslinje** til at vise eller skjule værktøjslinjen, og vælg **Færdig** for at lukke menuen. Filtrene findes ikke i dialogboksen **Indstillinger**.
+* **Vælg, hvilke filtre der vises:** Vælg **Filter**, og vælg derefter de filtre, du vil have i filterværktøjslinjen, f.eks. **Ejer** eller **Fase**. Brug kontakten **Vis/skjul værktøjslinje** til at vise eller skjule værktøjslinjen, og vælg **Færdig** for at lukke menuen.
 
-* **Genindlæs udvalget:** Vælg opdateringsikonet.
+* **Genindlæs udvalget:** Vælg opdateringsikonet (<i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i>).
 
 * **Gruppér, sortér og opsummér kortene:** Vælg **Indstillinger** for at angive gruppering, sortering, opsummeringer, salgsdato-badge og om lukkede salg skjules. Kun tilgængelig i tavlevisning.
 
@@ -172,7 +172,7 @@ Hvis du vil redigere selve udvalget eller bruge knapperne **Rediger** og **Opgav
 
 1. Klik på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> og derefter **Åbn i valgpanelet** eller **Vis datasæt**.
 
-**Åbn i valgpanelet** åbner det samme udvalg i Udvalgsskærmen, på samme måde som når du vælger **Udvalg** i [Navigatoren][7] og vælger udvalget. **Vis datasæt** åbner udvalgets datasæt.
+**Åbn i valgpanelet** åbner udvalget i Udvalgsskærmen, som hvis du havde valgt **Udvalg** i [Navigatoren][7] og valgt udvalget. **Vis datasæt** viser udvalgets datasæt.
 
 ![Menuen for en fastgjort udvalgsfane med valgmulighederne Vis datasæt og Åbn i valgpanelet -screenshot][img4]
 

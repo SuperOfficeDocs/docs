@@ -2,7 +2,7 @@
 title: Arbeta med översiktssidor
 sidebarTitle: "Översiktssidor"
 description: Översiktssidor kombinerar en vänsterpanel med vertikala flikar, urval i list- eller tavlevy och posten du arbetar med.
-keywords: ['översiktssida', 'försäljningsöversikt', 'startsida', 'Sale screen', 'försäljningsskärm', 'ny försäljningsskärm', 'vänsterpanel', 'vertikala flikar', 'sök i flikar', 'sidofält', 'fastnålad', 'nåla fast', 'ta bort fastnålning', 'urval', 'tavlevy', 'listvy', 'filter', 'aktuell', 'senaste', 'aktiv']
+keywords: ['översiktssida', 'försäljningsöversikt', 'startsida', 'Sale screen', 'försäljningsskärm', 'ny försäljningsskärm', 'vänsterpanel', 'vertikala flikar', 'sök i flikar', 'sidofält', 'fastnålad', 'nåla fast', 'ta bort fastnålning', 'urval', 'tavlevy', 'listvy', 'filter', 'aktuell', 'senaste', 'senast visad flik']
 author: digitaldiina
 date: 10.13.2026
 so_version: 12.5
@@ -20,10 +20,10 @@ related:
 language: sv
 ---
 
-En översiktssida är en skärm där du kan se dina urval, välja en post och arbeta med den utan att lämna sidan. I stället för att söka efter en post varje gång kan du nåla fast de poster du arbetar mest med som vertikala flikar i vänsterpanelen och växla mellan dem med ett klick.
+En översiktssida är en skärm där du kan se dina urval, välja en post och arbeta med den utan att lämna sidan. Du kan nåla fast de urval och poster du arbetar mest med som vertikala flikar i vänsterpanelen och växla mellan dem med ett klick.
 
 <Note>
-Översiktssidor introduceras gradvis, med början i [Försäljningsskärmen][2], och fler skärmar följer. Om du inte ser Försäljningsskärmen ännu öppnas försäljningar på sitt eget kort som tidigare utan vänsterpanel, och du hittar en tavlevy över dina försäljningar genom att gå till **Urval**.
+Översiktssidor introduceras gradvis, med början i [Försäljningsskärmen][2]. Om du inte ser Försäljningsskärmen ännu öppnas försäljningar på sitt eget kort, utan vänsterpanel. Du hittar en tavlevy över dina försäljningar under **Urval**.
 </Note>
 
 ## Tillgängliga översiktssidor
@@ -60,7 +60,7 @@ Vänsterpanelen visar dina urval och poster som vertikala flikar. Flikarna är o
 
 Varje grupp kan ha en senast visad flik och så många fastnålade flikar du vill. Den senast visade fliken ligger direkt under gruppsrubriken och har ingen etikett. Den innehåller det urval eller den post du öppnade senast som inte är fastnålad, och ersätts när du öppnar ett annat som inte är fastnålat. När du öppnar en fastnålad flik ersätts den inte.
 
-Fastnålade flikar visas under rubriken **Fastnålad**, som visar antalet. Välj rubriken för att dölja eller visa listan. Fastnålade flikar ligger kvar tills du stänger dem, och de är inte sorterade, så använd **Sök i flikar** för att hitta den du vill ha. Dra och släpp flikar i listan över fastnålade flikar, eller mellan den senast visade fliken och listan över fastnålade flikar.
+Fastnålade flikar visas under rubriken **Fastnålad**, som visar antalet. Välj rubriken för att dölja eller visa listan. Fastnålade flikar ligger kvar tills du stänger dem och är inte sorterade, så använd **Sök i flikar** för att hitta den du vill ha. Dra och släpp flikar för att ändra deras ordning, eller för att flytta en flik mellan den senast visade fliken och listan över fastnålade flikar.
 
 Välj ett fliknamn för att öppna det i huvudområdet. Fliken för det urval eller den post som visas i huvudområdet är markerad.
 
@@ -70,7 +70,7 @@ Välj ett fliknamn för att öppna det i huvudområdet. Fliken för det urval el
 
 1. Välj ikonen igen för att visa panelen. Panelen öppnas inte när du håller muspekaren över den.
 
-När panelen är dold väljer du ikonen för en grupp för att öppna samma typ av meny, med ett sökfält och dina senast visade och fastnålade flikar.
+När panelen är dold väljer du ikonen för en grupp för att öppna dess flikmeny, med ett sökfält och dina senast visade och fastnålade flikar.
 
 Sidopanelen har också en knapp för att visa och dölja den, längst upp till höger på skärmen. Samma ikon används för navigatorn, vänsterpanelen och sidopanelen.
 
@@ -128,7 +128,7 @@ Fliken flyttas överst i listan över fastnålade flikar.
 
 ### Stäng en flik {#close}
 
-1. Håll muspekaren över fliken. En fastnålad flik visar ett **X**, och båda typerna av flikar visar <i class="ph ph-dots-three-vertical" aria-label="More options"></i>.
+1. Håll muspekaren över fliken. <i class="ph ph-dots-three-vertical" aria-label="More options"></i> visas, och en fastnålad flik visar också ett **X**.
 
 1. Välj **X**, eller klicka på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> och välj ett alternativ.
 
@@ -142,7 +142,7 @@ Fliken flyttas överst i listan över fastnålade flikar.
 
 ![Menyn för en fastnålad flik med alternativen Ta bort fastnålning och stäng, Ta bort alla fastnålningar och stäng alla samt Ta bort alla fastnålningar och stäng alla fönster utom det här -screenshot][img3]
 
-När du stänger fliken som är öppen öppnas nästa flik i listan. Om inga fastnålade flikar finns kvar öppnas den senast visade fliken.
+När du stänger fliken som är öppen öppnas nästa flik: den under den i listan över fastnålade flikar, eller den ovanför om det inte finns någon under. När du stänger den senast visade fliken öppnas den första fastnålade fliken.
 
 ## Urval {#selections}
 
@@ -154,9 +154,9 @@ Använd kontrollerna i rubriken för att ändra vyn.
 
 * **Växla mellan listvy och tavlevy:** Välj knappen för lista (<i class="ph ph-list" aria-label="List view"></i>) eller tavla (<i class="ph ph-kanban" aria-label="Board view"></i>).
 
-* **Välj vilka filter som ska visas:** Välj **Filter** och välj sedan de filter du vill ha i filterverktygsfältet, till exempel **Ägare** eller **Fas**. Använd omkopplaren **Växla verktygsfält** för att visa eller dölja verktygsfältet, och välj **Klar** för att stänga menyn. Filtren finns inte i dialogrutan **Inställningar**.
+* **Välj vilka filter som ska visas:** Välj **Filter** och välj sedan de filter du vill ha i filterverktygsfältet, till exempel **Ägare** eller **Fas**. Använd omkopplaren **Växla verktygsfält** för att visa eller dölja verktygsfältet, och välj **Klar** för att stänga menyn.
 
-* **Läs in urvalet på nytt:** Välj uppdateringsikonen.
+* **Läs in urvalet på nytt:** Välj uppdateringsikonen (<i class="ph ph-arrow-clockwise" aria-label="Refresh icon"></i>).
 
 * **Gruppera, sortera och summera korten:** Välj **Inställningar** för att ange gruppering, sortering, summeringar, försäljningsdatumbrickan och om avslutade försäljningar ska döljas. Endast tillgängligt i tavlevy.
 
@@ -172,7 +172,7 @@ Om du vill redigera själva urvalet, eller använda knapparna **Redigera** och *
 
 1. Klicka på <i class="ph ph-dots-three-vertical" aria-label="More options"></i> och sedan **Öppna i urvalspanel** eller **Visa dataset**.
 
-**Öppna i urvalspanel** öppnar samma urval i urvalsskärmen, på samma sätt som när du väljer **Urval** i [Navigatorn][7] och väljer urvalet. **Visa dataset** öppnar urvalets dataset.
+**Öppna i urvalspanel** öppnar urvalet i urvalsskärmen, som om du hade valt **Urval** i [Navigatorn][7] och valt urvalet. **Visa dataset** visar urvalets dataset.
 
 ![Menyn för en fastnålad urvalsflik med alternativen Visa dataset och Öppna i urvalspanel -screenshot][img4]
 
