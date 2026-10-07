@@ -31,9 +31,11 @@ From this version, all feature updates are available to SuperOffice Online custo
 
     * Navigation - Recent navigation
     * Follow-ups - Automatic complete of attendees' follow-ups when owner completes
+    * Follow-ups - Administrative cleanup of externally owned follow-ups
     * Forms - Message when a form is too large to save
     * Requests - Oldest request becomes the main request when merging
     * System design - Extra fields - URLs shown as clickable links - Settings and maintenance
+    * Licences - See your available apps in App store - Settings and maintenance
  
     **Version 12.4:**
 
@@ -87,6 +89,12 @@ For example, you review a company, open one of its sales, then check your diary.
 Keeping your checklist clean is a task that is easily forgotten. Many of your meetings are invitations from colleagues, and when the owner marks the meeting as completed, your follow-up, and those of any other attendees, are completed as well.
 
 This means that when the owner of a follow-up completes it, all linked follow-ups are marked as completed too. That is less work for everyone, and you only need to remember to complete the follow-ups where you have invited others. Your **To-do list** is found in the Diary, either at the bottom or as a section tab at the top.
+
+### Follow-ups - Administrative cleanup of externally owned follow-ups <Badge icon="user" color="blue">Core CRM</Badge>
+
+Administrators can remove orphaned, duplicate or obsolete follow-ups that come from an external calendar, without database intervention. Follow-ups synchronised from an external calendar are read-only in SuperOffice, so they can't be cleaned up when the source calendar no longer manages them, for example after a migration or a synchronisation issue.
+
+Assign the functional right **Delete externally owned follow-ups** to the roles that need it. Users with the right can delete these follow-ups with the standard **Delete** action, and the deletion is logged like any other. The right doesn't allow editing, so externally owned follow-ups remain read-only. The external calendar remains the source of truth: if the original item still exists and is within the synchronisation scope, the follow-up is recreated at the next synchronisation. This works for all supported external calendar systems.
 
 ### Forms - Message when a form is too large to save <Badge icon="bullseye" color="purple">Marketing</Badge>
 
