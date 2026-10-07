@@ -4,8 +4,8 @@ title: Board-Ansicht in Selektionen verwenden
 description: Selektionen mit der Board-Ansicht visualisieren - mit Gruppierung, Filtern und Drag-and-Drop-Karten
 keywords: ['Board-Ansicht', 'Selektionsansicht', 'Selektion', 'Verkaufsboard', 'Projektboard', 'Anfrageboard', 'Kanban', 'gruppieren nach', 'Filterleiste', 'Verkaufsdatum-Badge', 'Tage in Phase', 'Tage seit Registrierung']
 author: digitaldiina
-date: 12.02.2025
-so_version: 11.7
+date: 10.07.2026
+so_version: 12.5
 content_type: howto
 license: salespremium, servicepremium, marketingessentials
 tier: core
@@ -25,6 +25,8 @@ language: de
 ---
 
 Die Board-Ansicht zeigt Ihre [Selektion][2] in einem spaltenbasierten Layout mit Karten an. Sie können die Selektionsmitglieder (Datensätze auf dem Board) gruppieren und filtern sowie Karten per Drag-and-Drop zwischen Gruppen verschieben.
+
+Für Verkäufe wird die Board-Ansicht auch in der Verkaufsansicht angezeigt, in der Sie im linken Panel eine Selektion auswählen können. Dort befinden sich die Filter in der Schaltfläche **Filter** statt im Dialogfeld **Einstellungen**, und die Schaltflächen **Bearbeiten** und **Aufgabe** für die Selektion sind nicht verfügbar. Siehe [Mit Übersichtsseiten arbeiten][15].
 
 Die Funktionalität ist für alle unterstützten Selektionstypen gleich: Sie können Karten ziehen, Aufgabenmenüs öffnen und Board-Einstellungen anpassen. Die verfügbaren Gruppierungs- und Filterfelder unterscheiden sich je nachdem, ob Sie mit Firmen, Personen, Verkäufen, Projekten oder Anfragen arbeiten.
 
@@ -236,6 +238,7 @@ Nutzen Sie Gruppierung kreativ, um Daten effizient zu organisieren und zu nutzen
 * **Layout pro Anwendungsfall speichern:** Wählen Sie **Einstellungen nur für diese Selektion speichern**, wenn Sie ein bestimmtes Board-Layout, Filter oder Gruppierung nur für eine Selektion beibehalten möchten.
 
 [2]: ./index
+[15]: ../../../learn/basics/overview-pages
 [11]: ../../../learn/getting-started/main-screen/side-panel
 [img1]: ../../../../media/loc/en/search-options/board-view-toggle.png
 [img2]: ../../../../media/loc/en/search-options/board-view.png

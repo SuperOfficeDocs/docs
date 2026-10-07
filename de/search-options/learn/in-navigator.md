@@ -4,7 +4,8 @@ title: Schnellsuche im Navigator verwenden
 description: Schnellsuche im Navigator verwenden im SuperOffice
 keywords: ['suche', 'Schnellsuche']
 author: Bergfrid Dias
-date: 05.25.2023
+date: 10.07.2026
+so_version: 12.5
 content_type: howto
 tier: starter
 language: de
@@ -17,6 +18,12 @@ language: de
 2. Geben Sie im Feld den Namen des zu suchenden Datensatzes ein. Während der Eingabe werden in der folgenden Liste alle übereinstimmenden Datensätze angezeigt.
 
 3. Klicken Sie zum Öffnen auf den gewünschten Datensatz.
+
+<Note>
+
+In Ansichten mit einer [Übersichtsseite][2], z. B. der Verkaufsansicht, durchsucht das Suchfeld im linken Panel Selektionen und Datensätze gleichzeitig. Die Suche startet, nachdem Sie zwei Zeichen eingegeben haben.
+
+</Note>
 
 ## How it works
 
@@ -33,5 +40,6 @@ The Navigator FastSearcher runs two parallel searches:
 * Sie können im Schnellsuchfeld für **Firmen** im Navigator nach einer Person suchen.
 
 [1]: ../../learn/basics/history
+[2]: ../../learn/basics/overview-pages
 
 [img1]: ../../../media/loc/en/search-options/search-find-fastsearcher.png

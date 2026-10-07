@@ -4,7 +4,7 @@ title: Links
 description: Links
 keywords: ['Tilføj link', 'fanen Links', 'Links-fanen', 'link']
 author: Bergfrid Dias
-date: 02.25.2025
+date: 10.07.2026
 so_version: 10.5.2
 content_type: howto
 tier: starter
@@ -27,13 +27,13 @@ Brug fanen **Links** til at tilføje relevante aktiviteter, salg, projekter, dok
 Fanen **Links** er tilgængelig i:
 
 * [Projektskærmen][1]
-* [Salgsskærmen][2]
+* [Salgskortet][2]
 * [Opfølgningsdialogen][3]
 * [Dokumentdialogen][4]
 
 En prik vises på faneoverskriften **Links**, når fanen indeholder et eller flere links.
 
-## Tilføj et link i Projekt- eller Salgsskærmen
+## Tilføj et link til et projekt eller salg
 
 1. Gå til det projekt eller salg, du ønsker at tilføje et link til. (Se [Brug Find-skærmen][8].)
 

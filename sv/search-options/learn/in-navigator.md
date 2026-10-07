@@ -4,7 +4,8 @@ title: Använda snabbsökning i navigatorn
 description: Använda snabbsökning i navigatorn
 keywords: ['söka', 'Snabbsökning', 'navigatorn']
 author: Bergfrid Dias
-date: 05.25.2023
+date: 10.07.2026
+so_version: 12.5
 content_type: howto
 tier: starter
 language: sv
@@ -17,6 +18,12 @@ language: sv
 2. I rutan anger du namnet på posten som du söker efter. Medan du skriver visas alla matchande poster i listan nedan.
 
 3. Klicka på den önskade posten för att öppna den.
+
+<Note>
+
+På skärmar med en [översiktssida][2], till exempel Försäljningsskärmen, söker sökfältet i vänsterpanelen i urval och poster samtidigt. Sökningen startar när du har angett två tecken.
+
+</Note>
 
 ## How it works
 
@@ -33,5 +40,6 @@ The Navigator FastSearcher runs two parallel searches:
 * Du kan söka efter en kontakt i snabbsökningsfältet för **Företag** i navigatorn.
 
 [1]: ../../learn/basics/history
+[2]: ../../learn/basics/overview-pages
 
 [img1]: ../../../media/loc/en/search-options/search-find-fastsearcher.png

@@ -4,7 +4,7 @@ title: Koblinger
 description: Koblinger
 keywords: ['Legg til kobling', 'fanen Koblinger', 'kobling', 'lenke', 'link']
 author: Bergfrid Dias
-date: 01.29.2025
+date: 10.07.2026
 so_version: 10.5
 content_type: howto
 tier: starter
@@ -27,13 +27,13 @@ Bruk fanen **Koblinger** for å koble relevante aktiviteter, salg, prosjekter, d
 Fanen **Koblinger** finnes i:
 
 * [Prosjektskjermen][1]
-* [Salgsskjermen][2]
+* [Salgskortet][2]
 * [Oppfølgingsdialogen][3]
 * [Dokumentdialogen][4]
 
 En prikk vises ved siden av fanen når den inneholder én eller flere koblinger.
 
-## Legg til en kobling i Prosjekt- eller Salgsskjermen
+## Legg til en kobling til et prosjekt eller salg
 
 1. Gå til prosjektet eller salget du ønsker å legge til en kobling for. (Se [Bruk Finn-skjermen][8].)
 

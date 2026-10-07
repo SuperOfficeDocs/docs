@@ -4,12 +4,18 @@ title: Snel zoeken gebruiken in de navigator
 description: De functie Snel zoeken gebruiken
 keywords: ['zoeken', 'Snel zoeken', 'navigator']
 author: Bergfrid Dias
-date: 03.14.2025
-so_version: 10.5.2
+date: 10.07.2026
+so_version: 12.5
 content_type: howto
 tier: starter
 language: nl
 ---
+
+<Note>
+
+Op schermen met een [overzichtspagina][2], zoals het Verkoopscherm, doorzoekt het zoekveld in het linkerpaneel selecties en records tegelijk. Het zoeken begint nadat u twee tekens hebt ingevoerd.
+
+</Note>
 
 1. Klik op het woord **Bedrijf**, **Persoon**, **Verkoop**, **Project** of **Selectie** in de navigator (links in het venster). Bovenin het venster wordt een leeg veld weergegeven. Onder het veld staat een [lijst met records waarmee u eerder hebt gewerkt][1].
 
@@ -34,5 +40,6 @@ The Navigator FastSearcher runs two parallel searches:
 * U kunt zoeken naar een contactpersoon in het veld Snel zoeken voor **Bedrijven** in de navigator.
 
 [1]: ../../learn/basics/history
+[2]: ../../learn/basics/overview-pages
 
 [img1]: ../../../media/loc/en/search-options/search-find-fastsearcher.png

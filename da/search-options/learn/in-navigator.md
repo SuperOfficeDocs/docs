@@ -4,11 +4,18 @@ title: Brug af hurtigsøgning i navigatoren
 description: Brug af hurtigsøgning i navigatoren
 keywords: ['søge', 'FastSearcher', 'navigator']
 author: Bergfrid Dias
-date: 06.29.2022
+date: 10.07.2026
+so_version: 12.5
 content_type: howto
 tier: starter
 language: da
 ---
+
+<Note>
+
+På skærmbilleder med en [oversigtsside][2], f.eks. Salgsskærmen, søger søgefeltet i venstrepanelet i udvalg og poster på samme tid. Søgningen starter, når du har indtastet to tegn.
+
+</Note>
 
 1. Klik på ordet **Firma**, **Person**, **Salg**, **Projekt** eller **Udvalg** i navigatoren til venstre i vinduet. Der vises et tomt felt øverst. nedenunder dette er der en [liste over poster, du tidligere har arbejdet med][1].
 
@@ -33,5 +40,6 @@ The Navigator FastSearcher runs two parallel searches:
 * Du kan søge efter en person i hurtigsøgningsfeltet for **Firma** i navigatoren.
 
 [1]: ../../learn/basics/history
+[2]: ../../learn/basics/overview-pages
 
 [img1]: ../../../media/loc/en/search-options/search-find-fastsearcher.png

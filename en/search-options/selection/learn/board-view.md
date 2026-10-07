@@ -4,8 +4,8 @@ title: Use board view in selections
 description: Visualize selections using board view with grouping, filters, and drag-and-drop cards
 keywords: ['selection view', 'selection', 'sales board', 'project board', 'request board', 'kanban', 'group by', 'filter toolbar', 'sale date badge', 'days in stage', 'days since registered']
 author: digitaldiina
-date: 12.02.2025
-so_version: 11.7
+date: 10.07.2026
+so_version: 12.5
 content_type: howto
 license: salespremium, servicepremium, marketingessentials
 tier: core
@@ -25,6 +25,8 @@ language: en
 ---
 
 Board view presents your [selection][2] in a column-based layout using cards. You can group and filter the selection members (records shown on the board), and use drag-and-drop to move cards between groups.
+
+For sales, board view is also shown in the Sale screen, where you can select a selection in the left panel. In that case the filters are in the **Filter** button instead of the **Settings** dialog, and the **Edit** and **Task** buttons for the selection are not available. See [Work with overview pages][15].
 
 The functionality is the same across supported entities: you can drag cards, open task menus, and adjust board settings. The available grouping and filtering fields vary depending on whether you are working with company, contact, sales, projects, or requests.
 
@@ -236,6 +238,7 @@ Use grouping creatively to organize and act on data efficiently.
 * **Save layout per use case:** Select **Save settings for current selection only** if you want to preserve a specific board layout, filters, or grouping for one selection only.
 
 [2]: ./index
+[15]: ../../../learn/basics/overview-pages
 [11]: ../../../learn/getting-started/main-screen/side-panel
 [img1]: /media/loc/en/search-options/board-view-toggle.png
 [img2]: /media/loc/en/search-options/board-view.png

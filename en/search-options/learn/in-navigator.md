@@ -4,8 +4,8 @@ title: Using FastSearcher in the Navigator
 description: How to use FastSearcher in the Navigator in SuperOffice
 keywords: ['search']
 author: Bergfrid Dias
-date: 01.20.2025
-so_version: 10.5
+date: 10.07.2026
+so_version: 12.5
 content_type: howto
 tier: starter
 audience: person
@@ -20,6 +20,12 @@ language: en
 2. In the box, enter the name of the record to search for. While you type, the list below displays all matching records.
 
 3. Click the required record to open it.
+
+<Note>
+
+On screens with an [overview page][2], such as the Sale screen, the search field in the left panel searches selections and records at the same time. It starts after you enter two characters.
+
+</Note>
 
 ## How it works
 
@@ -36,5 +42,6 @@ The Navigator FastSearcher runs two parallel searches:
 * You can search for a contact in the FastSearcher field for **Companies** in the Navigator.
 
 [1]: ../../learn/basics/history
+[2]: ../../learn/basics/overview-pages
 
 [img1]: /media/loc/en/search-options/search-find-fastsearcher.png

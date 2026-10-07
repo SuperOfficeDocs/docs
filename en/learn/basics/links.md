@@ -4,7 +4,7 @@ title: Links
 description: Links
 keywords: ['add Link', 'Links tab', 'link']
 author: Bergfrid Dias
-date: 01.20.2025
+date: 10.07.2026
 so_version: 10.5
 content_type: howto
 tier: starter
@@ -27,13 +27,13 @@ Use the **Links** tab to connect relevant activities, sales, projects, documents
 The **Links** tab can be found in:
 
 * [Project screen][1]
-* [Sale screen][2]
+* [Sale card][2]
 * [Follow-up dialog][3]
 * [Document dialog][4]
 
 A dot appears next to the **Links** tab when it contains one or more links.
 
-## Add a link in the Project or Sale screen
+## Add a link to a project or sale
 
 1. Go to the project or sale you wish to add a link to. (See [Use the Find screen][8].)
 

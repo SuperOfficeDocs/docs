@@ -4,8 +4,8 @@ title: Brug tavlevisning i udvalg
 description: Visualiser udvalg med tavlevisning med gruppering, filtre og træk-og-slip-kort
 keywords: ['tavlevisning', 'udvalgsvisning', 'udvalg', 'salgstavle', 'projekttavle', 'sagstavle', 'kanban', 'gruppér efter', 'filter-værktøjslinje', 'salgsdato-badge', 'dage i fase', 'dage siden registrering']
 author: digitaldiina
-date: 12.02.2025
-so_version: 11.7
+date: 10.07.2026
+so_version: 12.5
 content_type: howto
 license: salespremium, servicepremium, marketingessentials
 tier: core
@@ -25,6 +25,8 @@ language: da
 ---
 
 Tavlevisning viser dit [udvalg][2] i et kolonnebaseret layout med kort. Du kan gruppere og filtrere udvalgsmedlemmerne (de poster, der vises på tavlen), og bruge træk-og-slip til at flytte kort mellem grupper.
+
+For salg vises tavlevisning også på Salgsskærmen, hvor du kan vælge et udvalg i venstrepanelet. I så fald findes filtrene under knappen **Filter** i stedet for i dialogboksen **Indstillinger**, og knapperne **Rediger** og **Opgave** til udvalget er ikke tilgængelige. Se [Arbejd med oversigtssider][15].
 
 Funktionaliteten er den samme på tværs af understøttede poster: Du kan trække kort, åbne opgavemenuer og justere tavleindstillinger. De tilgængelige grupperings- og filterfelter varierer afhængigt af, om du arbejder med firma, person, salg, projekter eller sager.
 
@@ -236,6 +238,7 @@ Brug gruppering kreativt for effektiv databehandling.
 * **Gem layout pr. anvendelse:** Vælg **Gem kun kolonner for det aktuelle udvalg** for at bevare en specifik opsætning for ét udvalg.
 
 [2]: ./index
+[15]: ../../../learn/basics/overview-pages
 [11]: ../../../learn/getting-started/main-screen/side-panel
 [img1]: ../../../../media/loc/en/search-options/board-view-toggle.png
 [img2]: ../../../../media/loc/en/search-options/board-view.png

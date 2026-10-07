@@ -4,7 +4,7 @@ title: Angi nummertildeling
 description: Angi nummertildeling
 keywords: ['nummertildeling', 'teller', 'firmanummer']
 author: digitaldiina
-date: 10.21.2025
+date: 10.07.2026
 so_version: 11.5
 content_type: howto
 tier: starter
@@ -25,7 +25,7 @@ En teller fungerer slik at verdien i feltet øker med 1 for hver gang det regist
 
 Tellere kan gjelde for følgende felt:
 
-* **Nummer**-feltene i Firma-bildet, Prosjekt-bildet, Salg-bildet og Person-bildet.
+* **Nummer**-feltene i Firma-bildet, Prosjekt-bildet, Salgskortet og Person-bildet.
 * **Vår ref**-feltet i Dokument-skjermen, hvis det er definert for den aktuelle malen.
 * Det kan også brukes tellere fra tredjepartsleverandører.
 

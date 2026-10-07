@@ -4,7 +4,7 @@ title: Verknüpfungen
 description: Verknüpfungen
 keywords: ['Link hinzufügen', 'Registerkarte Verknüpfungen', 'Verknüpfung', 'Link']
 author: Bergfrid Dias
-date: 02.11.2025
+date: 10.07.2026
 so_version: 10.5.2
 content_type: howto
 tier: starter
@@ -27,13 +27,13 @@ Verwenden Sie die Registerkarte **Verknüpfungen**, um relevante Aktivitäten, V
 Die Registerkarte **Verknüpfungen** ist verfügbar in:
 
 * [Projektbildschirm][1]
-* [Verkaufsbildschirm][2]
+* [Verkaufskarte][2]
 * [Dialogfeld für Folgeaufgaben][3]
 * [Dialogfeld für Dokumente][4]
 
 Ein Punkt erscheint neben der Registerkarte **Verknüpfungen**, wenn sie einen oder mehrere Links enthält.
 
-## Link im Projekt- oder Verkaufsbildschirm hinzufügen
+## Link zu einem Projekt oder Verkauf hinzufügen
 
 1. Gehen Sie zu dem Projekt oder Verkauf, zu dem Sie einen Link hinzufügen möchten. (Siehe [Suchansicht verwenden][8].)
 

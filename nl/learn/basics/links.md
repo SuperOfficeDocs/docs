@@ -4,7 +4,7 @@ title: Koppelingen
 description: Koppelingen
 keywords: ['Koppeling toevoegen', 'tabblad Koppelingen', 'Koppeling']
 author: Bergfrid Dias
-date: 03.14.2025
+date: 10.07.2026
 so_version: 10.5.2
 content_type: howto
 tier: starter
@@ -23,13 +23,13 @@ Gebruik het tabblad **Koppelingen** om relevante activiteiten, verkopen, project
 Het tabblad **Koppelingen** is beschikbaar in:
 
 * [Het scherm Project][1]
-* [Het scherm Verkoop][2]
+* [De verkoopkaart][2]
 * [Het dialoogvenster Vervolgactiviteit][3]
 * [Het dialoogvenster Document][4]
 
 Een punt verschijnt naast het tabblad **Koppelingen** wanneer het een of meer koppelingen bevat.
 
-## Een koppeling toevoegen in het Project- of Verkoopscherm
+## Een koppeling toevoegen aan een project of verkoop
 
 1. Ga naar het project of de verkoop waar u een koppeling aan wilt toevoegen. (Zie [Het scherm Zoeken gebruiken][8].)
 
