@@ -3,7 +3,7 @@ uid: help-sv-number-allocation-configure
 title: Ange nummertilldelning
 description: Ange nummertilldelning
 keywords: ['nummertilldelning', 'räknare', 'företagsnummer']
-author: Bergfrid Skaara Dias
+author: digitaldiina
 date: 10.07.2026
 so_version: 12.5
 content_type: howto

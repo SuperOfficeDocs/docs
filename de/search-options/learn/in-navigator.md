@@ -3,7 +3,7 @@ uid: help-de-fastsearcher-navigator
 title: Schnellsuche im Navigator verwenden
 description: Schnellsuche im Navigator verwenden im SuperOffice
 keywords: ['suche', 'Schnellsuche']
-author: Bergfrid Skaara Dias
+author: digitaldiina
 date: 10.07.2026
 so_version: 12.5
 content_type: howto

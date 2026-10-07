@@ -3,7 +3,7 @@ uid: help-da-fastsearcher-navigator
 title: Brug af hurtigsøgning i navigatoren
 description: Brug af hurtigsøgning i navigatoren
 keywords: ['søge', 'FastSearcher', 'navigator']
-author: Bergfrid Skaara Dias
+author: digitaldiina
 date: 10.07.2026
 so_version: 12.5
 content_type: howto

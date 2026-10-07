@@ -3,7 +3,7 @@ uid: help-en-links
 title: Links
 description: Links
 keywords: ['add Link', 'Links tab', 'link']
-author: Bergfrid Skaara Dias
+author: digitaldiina
 date: 10.07.2026
 so_version: 12.5
 content_type: howto

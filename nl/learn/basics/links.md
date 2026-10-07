@@ -3,7 +3,7 @@ uid: help-nl-links
 title: Koppelingen
 description: Koppelingen
 keywords: ['Koppeling toevoegen', 'tabblad Koppelingen', 'Koppeling']
-author: Bergfrid Skaara Dias
+author: digitaldiina
 date: 10.07.2026
 so_version: 12.5
 content_type: howto

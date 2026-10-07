@@ -3,7 +3,7 @@ uid: help-de-links
 title: Verknüpfungen
 description: Verknüpfungen
 keywords: ['Link hinzufügen', 'Registerkarte Verknüpfungen', 'Verknüpfung', 'Link']
-author: Bergfrid Skaara Dias
+author: digitaldiina
 date: 10.07.2026
 so_version: 12.5
 content_type: howto

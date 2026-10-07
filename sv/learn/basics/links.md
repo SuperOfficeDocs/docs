@@ -3,7 +3,7 @@ uid: help-sv-links
 title: Länkar
 description: Länkar
 keywords: ['Lägg till länk', 'fliken Länkar', 'Länkar-fliken', 'länk']
-author: Bergfrid Skaara Dias
+author: digitaldiina
 date: 10.07.2026
 so_version: 12.5
 content_type: howto

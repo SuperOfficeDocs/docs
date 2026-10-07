@@ -3,7 +3,7 @@ uid: help-no-number-allocation-configure
 title: Angi nummertildeling
 description: Angi nummertildeling
 keywords: ['nummertildeling', 'teller', 'firmanummer']
-author: Bergfrid Skaara Dias
+author: digitaldiina
 date: 10.07.2026
 so_version: 12.5
 content_type: howto

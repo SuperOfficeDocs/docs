@@ -3,7 +3,7 @@ uid: help-no-links
 title: Koblinger
 description: Koblinger
 keywords: ['Legg til kobling', 'fanen Koblinger', 'kobling', 'lenke', 'link']
-author: Bergfrid Skaara Dias
+author: digitaldiina
 date: 10.07.2026
 so_version: 12.5
 content_type: howto

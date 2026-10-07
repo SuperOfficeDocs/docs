@@ -3,7 +3,7 @@ uid: help-da-number-allocation-configure
 title: Angivelse af nummertildeling
 description: Angivelse af nummertildeling
 keywords: ['nummerallokering', 'tæller', 'firmanummer']
-author: Bergfrid Skaara Dias
+author: digitaldiina
 date: 10.07.2026
 so_version: 12.5
 content_type: howto
