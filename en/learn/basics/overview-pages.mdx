@@ -1,9 +1,8 @@
 ---
-uid: help-en-overview-pages
 title: Work with overview pages
 sidebarTitle: "Overview pages"
 description: Overview pages combine a left panel of vertical tabs, selections in list or board view, and the record you are working on.
-keywords: ['overview page', 'landing page', 'Sale screen', 'sales screen', 'new Sale screen', 'left panel', 'vertical tabs', 'tabs', 'search in tabs', 'sidebar', 'pinned', 'active', 'pin', 'unpin', 'selection', 'selections', 'board view', 'list view', 'filter', 'current', 'history', 'recent', 'favorites', 'navigator', 'search', 'collapse', 'sales overview']
+keywords: ['overview page', 'sales overview', 'landing page', 'Sale screen', 'sales screen', 'new Sale screen', 'left panel', 'vertical tabs', 'search in tabs', 'sidebar', 'pinned', 'pin', 'unpin', 'selection', 'board view', 'list view', 'filter', 'current', 'recent', 'active']
 author: digitaldiina
 date: 10.13.2026
 so_version: 12.5
@@ -21,10 +20,10 @@ related:
 language: en
 ---
 
-An overview page is a screen where you can see your selections, pick a record, and work on it without leaving the page. Instead of searching for a record each time, you keep the selections and records you work with most as vertical tabs in a left panel and switch between them with one click.
+An overview page is a screen where you can see your selections, pick a record, and work on it without leaving the page. Instead of searching for a record each time, you can pin the ones you work with most as vertical tabs in the left panel and switch between them with one click.
 
 <Note>
-Overview pages are being introduced gradually, starting with the Sale screen, and more screens will follow. If you do not see the Sale screen yet, sales open on their own card as before. There is no left panel, but you can find a board view of your sales by going to **Selections**.
+Overview pages are being introduced gradually, starting with the [Sale screen][2], and more screens will follow. If you do not see the Sale screen yet, sales open on their own card as before without a left panel, and you can find a board view of your sales by going to **Selections**.
 </Note>
 
 ## What an overview page contains {#areas}
@@ -37,7 +36,7 @@ Overview pages are being introduced gradually, starting with the Sale screen, an
 | 2 | **Main area** | Shows a selection in board view or list view when a selection is open. Shows the record with its section tabs when a record is open. |
 | 3 | **Side panel** | The [side panel][1] on the right, with a preview of the selected record or the view you have chosen. |
 
-## Screens with an overview page {#screens}
+## Available overview pages {#screens}
 
 | Screen | Guide |
 |---|---|
@@ -53,15 +52,9 @@ Overview pages are being introduced gradually, starting with the Sale screen, an
 
 * **Select New to create a record of the type the screen is for.** The new record opens in the overview page. When you save it, it becomes the active and current record.
 
-## Use the left panel {#left-panel}
+## Find a selection or record {#search}
 
-The left panel shows your selections and records as vertical tabs. It has a group for selections and a group for records, for example **Selections** and **Sales** on the Sale screen. Each group has one active tab and a list of pinned tabs.
-
-![The left panel with the Selections and Sales groups -screenshot][img2]
-
-### Search {#search}
-
-Use the search field at the top to find selections and records at the same time.
+Use the search field at the top of the left panel to find selections and records at the same time.
 
 1. Select the search field. Your history is shown in a list below it, and the field is ready for typing.
 
@@ -69,73 +62,95 @@ Use the search field at the top to find selections and records at the same time.
 
 1. Choose a selection or a record. It opens in the main area, the list closes, and the search field is cleared.
 
-Records are listed before selections. Select **Show all** to expand a list. Point to a result to see a preview, as in the Navigator. To search only the tabs you already have open or pinned, see [Find a tab in a group](#group-menu).
+Records are listed before selections. Select **Show all** to expand a list. Point to a result to see a preview, as in the Navigator.
 
-### Active and pinned tabs {#active-pinned}
+### Find a tab you already have open {#group-menu}
 
-Each group has two kinds of tabs.
+To search only the tabs in one group, for example the tabs in **Selections** or **Sales**:
 
-* **Active:** The tab you opened last. There is only one active tab in each group. It stays until you close it or open another tab.
+1. Select the three dots next to the group heading.
 
-* **Pinned:** Tabs you keep in the list until you close them. The number of pinned tabs is shown next to the **Pinned** heading. Select the heading to collapse or expand the list.
+1. Enter text in **Search in tabs** to narrow the list.
 
-To work with a tab, point to it. The three dots appear. An active tab also shows a pin icon (<i class="ph ph-push-pin" aria-label="Pin icon"></i>), and a pinned tab shows an **X**.
-
-* **Active tab:** Select the pin icon to move the tab to the top of the pinned list, or select the three dots to open the menu.
-
-  * **Pin:** Moves the tab to the top of the pinned list.
-
-  * **Close:** Closes the tab.
-
-  ![The menu for an active tab with the options Pin and Close -screenshot][img4]
-
-* **Pinned tab:** Select the **X** to close the tab, or select the three dots to open the menu.
-
-  * **Unpin and close:** Closes the tab.
-
-  * **Unpin and close all:** Closes all pinned tabs in the group.
-
-  * **Unpin and close all but this:** Closes all pinned tabs in the group except this one.
-
-  ![The menu for a pinned tab with the options Unpin and close, Unpin and close all, and Unpin and close all but this -screenshot][img3]
-
-The menu for a selection tab, active or pinned, has two more options:
-
-* **Show dataset:** Opens the dataset of the selection.
-
-* **Open in selection panel:** Opens the same selection in the selection panel.
-
-When you close the tab that is open, the next tab in the list opens. If no pinned tabs are left, the active tab opens.
-
-You can drag and drop tabs in the pinned list, and between the active tab and the pinned list.
-
-<Note>
-Pinned tabs are separate from your [favorites][3].
-</Note>
-
-### Find a tab in a group {#group-menu}
-
-Select the three dots next to a group heading, such as **Selections** or **Sales**, to open a menu with a search field. The menu lists the active and pinned tabs in the group. Enter text in **Search in tabs** to narrow the list, and select a tab to open it.
+1. Select a tab to open it.
 
 ![The menu for the Selections group, listing its tabs -screenshot][img5]
 
-### Show or hide the left panel {#collapse}
+## Keep selections and records at hand {#active-pinned}
 
-Select the icon (<i class="ph ph-sidebar-simple" aria-label="Sidebar icon"></i>) at the top of the left panel to hide or show it. The same icon is used for the Navigator and the side panel. The panel does not open when you point to it.
+The left panel shows your selections and records as vertical tabs, in one group for selections and one for records. Each group has one active tab and a list of pinned tabs.
 
-When the panel is hidden, select the icon for a group to open the same kind of menu, with a search field and your active and pinned tabs.
+![The left panel with the Selections and Sales groups -screenshot][img2]
 
-## Work with selections in the main area {#selections}
+* **Active:** The tab you opened last. It stays until you close it or open another tab.
 
-When you choose a selection in the left panel, it opens in the last view you used. The header has these controls:
+* **Pinned:** Tabs you keep in the list until you close them. The number of pinned tabs is shown next to the **Pinned** heading. Select the heading to collapse or expand the list.
 
-* **List and board buttons:** Switch between list view and board view.
+<Note>
 
-* **Filter:** Opens a menu where you select which filters are shown in the filter toolbar, for example **Owner** or **Stage**. Use the **Toggle toolbar** switch to show or hide the toolbar, and select **Done** to close the menu. The filters are not in the **Settings** dialog.
+Pinned tabs are separate from your [favorites][3].
 
-* **Refresh:** Reloads the selection.
+</Note>
 
-* **Settings:** Grouping, sorting, summaries, the sale date badge, and whether closed sales are hidden. Available in board view only.
+### Pin a tab {#pin}
+
+1. Point to the active tab.
+
+1. Select the pin icon (<i class="ph ph-push-pin" aria-label="Pin icon"></i>), or select the three dots and then **Pin**.
+
+The tab moves to the top of the pinned list.
+
+![The menu for an active tab with the options Pin and Close -screenshot][img4]
+
+### Close a tab {#close}
+
+1. Point to the tab. A pinned tab shows an **X**, and both kinds of tab show the three dots.
+
+1. Select the **X**, or select the three dots and choose an option.
+
+    * **Close:** Closes the active tab.
+
+    * **Unpin and close:** Closes the pinned tab.
+
+    * **Unpin and close all:** Closes all pinned tabs in the group.
+
+    * **Unpin and close all but this:** Closes all pinned tabs in the group except this one.
+
+![The menu for a pinned tab with the options Unpin and close, Unpin and close all, and Unpin and close all but this -screenshot][img3]
+
+When you close the tab that is open, the next tab in the list opens. If no pinned tabs are left, the active tab opens.
+
+### Open a selection in the selection panel or show its dataset {#selection-menu}
+
+1. Point to the selection tab, active or pinned.
+
+1. Select the three dots, and then **Open in selection panel** or **Show dataset**.
+
+**Open in selection panel** opens the same selection in the selection panel. **Show dataset** opens the dataset of the selection.
+
+### Change the order of the tabs {#reorder}
+
+Drag and drop tabs in the pinned list, or between the active tab and the pinned list.
+
+## Show or hide the left panel {#collapse}
+
+1. Select the icon (<i class="ph ph-sidebar-simple" aria-label="Sidebar icon"></i>) at the top of the left panel. The same icon is used for the Navigator and the side panel.
+
+1. Select the icon again to show the panel. The panel does not open when you point to it.
+
+When the panel is hidden, select the icon for a group to open the same kind of menu as in [Find a tab you already have open][5], with a search field and your active and pinned tabs.
+
+## Change how you view a selection {#selections}
+
+When you choose a selection in the left panel, it opens in the last view you used. Use the controls in the header to change the view.
+
+* **Switch between list view and board view:** Select the list or board button.
+
+* **Choose which filters to show:** Select **Filter**, and then select the filters you want in the filter toolbar, for example **Owner** or **Stage**. Use the **Toggle toolbar** switch to show or hide the toolbar, and select **Done** to close the menu. The filters are not in the **Settings** dialog.
+
+* **Reload the selection:** Select the refresh icon.
+
+* **Group, sort, and summarize the cards:** Select **Settings** to set grouping, sorting, summaries, the sale date badge, and whether closed sales are hidden. Available in board view only.
 
 All the board features, such as dragging cards between columns, task menus, and summaries, work as described in [Use board view in selections][4].
 
@@ -143,39 +158,19 @@ All the board features, such as dragging cards between columns, task menus, and 
 To edit the selection itself, or to use the **Edit** and **Task** buttons, go to the selection panel. These buttons are not available on the overview page.
 </Note>
 
-## Open a record {#open-record}
+## Open a record from a selection {#open-record}
 
-In board view, double-click a card or select its title to open the record in the main area. The record appears as the active tab in the left panel.
+1. In board view, double-click a card or select its title. The record opens in the main area, and appears as the active tab in the left panel.
 
-Selecting a card to preview it in the side panel does not change the active tab. To go back to the selection, choose it in the left panel.
+1. To go back to the selection, choose it in the left panel.
 
-## What you see the first time {#first-time}
-
-The first time you open an overview page:
-
-* Your selection of open records, for example **My open sales**, is shown in board view.
-
-* The side panel is hidden.
-
-* Your standard selections are pinned in the left panel. You can move or remove them.
-
-* The record you worked with last is the active tab.
-
-For the exact selections and defaults of each screen, see the guide for the screen.
-
-## Related content {#related-content}
-
-* [Use board view in selections][4]
-* [The Navigator][5]
-* [The History list][6]
-* [Favorites in SuperOffice CRM][3]
+Selecting a card to preview it in the side panel does not change the active tab.
 
 [1]: /en/learn/getting-started/main-screen/side-panel
 [2]: /en/sale/learn/index
 [3]: /en/learn/basics/fav
 [4]: /en/search-options/selection/learn/board-view
-[5]: /en/learn/getting-started/main-screen/navigator
-[6]: /en/learn/basics/history
+[5]: #group-menu
 
 [img1]: /media/loc/en/learn/overview-page-areas.png
 [img2]: /media/loc/en/learn/overview-page-left-panel.png
