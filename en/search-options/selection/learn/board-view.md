@@ -26,7 +26,7 @@ language: en
 
 Board view presents your [selection][2] in a column-based layout using cards. You can group and filter the selection members (records shown on the board), and use drag-and-drop to move cards between groups.
 
-For sales, board view is also shown in the Sale screen, where you can select a selection in the left panel. In that case the filters are in the **Filter** button instead of the settings dialog (<i class="ph ph-gear-six" aria-label="Settings"></i>), and the **Edit** and **Task** buttons for the selection are not available. See [Work with overview pages][15].
+For sales, board view is also shown in the Sale screen, where you can choose a selection in the left panel. In that case the filters are in the **Filter** button instead of the settings dialog (<i class="ph ph-gear-six" aria-label="Settings"></i>), and the **Edit** and **Task** buttons for the selection are not available. See [Work with overview pages][15].
 
 The functionality is the same across supported entities: you can drag cards, open task menus, and adjust board settings. The available grouping and filtering fields vary depending on whether you are working with company, contact, sales, projects, or requests.
 
