@@ -4,7 +4,7 @@ title: What's new in SuperOffice 12
 description: Release notes. What's new in SuperOffice 12
 keywords: ['SuperOffice CRM 12']
 author: kirstiaa
-date: 09.17.2026
+date: 10.13.2026
 so_version: 12
 content_type: release-note
 audience: person
@@ -25,9 +25,106 @@ language: en
 
 From this version, all feature updates are available to SuperOffice Online customers only. Onsite installations will receive security updates only.
 
+<Accordion title="Features released in Version 12">
+
+* Version 12.5
+  * Navigation - Recent navigation
+  * Follow-ups - Automatic complete of attendees' follow-ups when owner completes
+  * Follow-ups - Administrative cleanup of externally owned follow-ups
+  * Forms - Message when a form is too large to save
+  * Requests - Oldest request becomes the main request when merging
+  * System design - Extra fields - URLs shown as clickable links - Settings and maintenance
+  * Licences - See your available apps in App store - Settings and maintenance
+* Version 12.4
+  * Requests - Reply to requests directly from the preview
+  * Forms - Conditional fields in Forms
+  * Forms - Default checked state for the Custom checkbox field
+  * Forms - AI styling of form
+  * Flows - Expanded trigger conditions for custom fields
+* Version 12.3
+  * Multiple DKIM for Mailgun - Settings and maintenance
+* Version 12.2
+  * Dashboard - Measure sale cycles
+  * Email and Document - Download the email or document file
+  * Mailing - View numbers with two decimal in Summary
+* Version 12.1
+  * System design - Webhooks management panel - Settings and maintenance
+* Version 12.0
+  * Spam classification on requests
+</Accordion>
+
 ## Feature updates
 
-<Update label="12.4" description="17.09.2026" tags={["Service", "Marketing"]}>
+<Update label="12.5" description="10.13.2026" tags={["Marketing", "Service", "Settings and maintenance"]}>
+<a id="12.5"></a>
+
+### Navigation - Recent navigation
+
+Get back to any record or view you've worked with, in one click. Moving between companies, contacts, sales, projects, requests, and the Diary is part of everyday CRM work, and retracing your steps takes time.
+
+You'll find the **Back** and **Forward** buttons and the **Recent navigation** button, shown as a clock icon, on the left side of the top bar.
+
+![Top bar with Back, Forward, and Recent navigation buttons -screenshot][img18]
+
+Select the clock icon (<i class="ph ph-clock" aria-label="Clock icon"></i>) to see the places you've visited, with the most recent at the top. Select an entry and you're taken straight there, with the tabs, side panel, and list or board view restored as you left them. Each place appears only once, so revisiting a company moves it to the top instead of adding a duplicate. <i class="ph ph-caret-circle-left" aria-label="Back"></i> (**Back**) and <i class="ph ph-caret-circle-right" aria-label="Forward"></i> (**Forward**) step through your visits in order, and the browser's own **Back** and **Forward** buttons work the same way.
+
+![Recent navigation list with recent companies, contacts, and sales -screenshot][img19]
+
+For example, you review a company, open one of its sales, then check your diary. Select the clock icon (<i class="ph ph-clock" aria-label="Clock icon"></i>), choose the company, and you're back on the same tab with the same side panel open. You decide how many places the list keeps with the **Recent navigation list size** preference.
+
+### Follow-ups - Automatic complete of attendees' follow-ups when owner completes
+
+Keeping your Todo list clean is a task that is easily forgotten. Many of your meetings are invitations from colleagues, and when the owner marks the meeting as completed, your follow-up, and those of any other attendees, are completed as well.
+
+This means that when the owner of a follow-up completes it, all linked follow-ups are marked as completed too. That is less work for everyone, and you only need to remember to complete the follow-ups where you have invited others. Your **Todo list** is found in the Diary, either at the bottom or as a section tab at the top.
+
+### Follow-ups - Administrative cleanup of externally owned follow-ups
+
+Administrators can remove orphaned, duplicate, or obsolete follow-ups that come from an external calendar, without database intervention. Follow-ups synchronized from an external calendar are read-only in SuperOffice, so they can't be cleaned up when the source calendar no longer manages them, for example after a migration or a synchronization issue.
+
+Assign the functional right **Delete externally owned follow-ups** to the roles that need it. Users with the right can delete these follow-ups with the standard **Delete** action, and the deletion is logged like any other. The right doesn't allow editing, so externally owned follow-ups remain read-only. The external calendar remains the source of truth: if the original item still exists and is within the synchronization scope, the follow-up is recreated at the next synchronization. This works for all supported external calendar systems.
+
+### Forms - Message when a form is too large to save <Badge icon="bullseye" color="purple">Marketing</Badge>
+
+Be sure every submission from your visitors reaches SuperOffice. A form that grows beyond the size the system can process, usually because of large images, can't register submissions, and without a warning you would not know until responses were missing.
+
+To check if the form is too large, go to **Marketing** > **Forms**, open your form in the form builder, and select **Save**. The form size is checked against the maximum allowed, which is 10 MB for the whole form. If the form is too large, saving stops with the message **File is too large**. Swap, for example, a high-resolution photo on the thank-you page for a smaller version, and save again.
+
+Learn more about [forms - Thank you page][20].
+
+### Requests - Oldest request becomes the main request when merging <Badge icon="ticket" color="green">Service</Badge>
+
+The request with the earliest Registered date is automatically chosen as the main request, and the others are merged into it.
+
+Customers and colleagues refer to the original request number, so it matters which request survives a merge. Choosing the main request by click order would force agents to correct the result by hand.
+
+Mark two or more requests in a request list and select **Merge**. The **Merge request** window opens. Use the arrow icon in the window to reverse the direction, so the newest request becomes the main request.
+
+![Merge request window where lowest id is selected as main -screenshot][img20]
+
+The behavior is controlled by the preference **Use the oldest request as the main request when merging**, which is enabled by default.
+
+![Request Preferences to use the oldest request as main request when merging -screenshot][img21]
+
+### System design - Extra fields - URLs in extra fields are shown as clickable links <Badge icon="gear" color="orange">Settings and maintenance</Badge>
+
+URLs stored in extra fields are displayed as **clickable links in read mode**, so it's easy to open a record in an external system with one click, straight from the request, message, or custom object card. Customers and partners often store a unique URL for each record, such as an order or case in another system, in a text extra field, and the Screen Designer link function only covers a fixed URL plus a variable, not a different link for each record.
+
+The links are available in **Short text** and **Long text** extra fields on requests, messages, and custom object cards. Only Extra fields created in System design can be used: the user-defined fields on Company, Contact, Project, and Sale cannot be used for links.
+
+Type or paste a URL that starts with `www.` or `http(s)://` into the field and save. In read mode, the URL is displayed as a clickable link that opens in a new tab. In edit mode, the field is a normal text field. For example, an extra field named **Order link** containing `https://erp.example.com/orders/48213` opens that order in your ERP system.
+
+![Request showing a URL in an extra field displayed as a clickable link -screenshot][img22]
+
+### Licences - See your available apps in App store <Badge icon="gear" color="orange">Settings and maintenance</Badge>
+
+See all the apps available for your CRM Suite license in one overview. Select **My Apps** on the **Licences** screen in **Settings and maintenance** to open SuperOffice App Store, where you can also compare your installed apps with what is available for your SuperOffice installation.
+
+![In Settings and maintenance Licences screen shows a button for My Apps -screenshot][img23]
+
+</Update>
+
+<Update label="12.4" description="09.17.2026" tags={["Service", "Marketing"]}>
 <a id="12.4"></a>
 
 ### Requests - Reply to requests directly from the preview <Badge icon="ticket" color="green">Service</Badge>
@@ -42,6 +139,10 @@ You'll find **Quick reply** whenever you preview a request from a request list o
 
 * If you cancel or move to another request with unsent text, you're asked before it's discarded.
 * **Quick reply** isn't shown on requests marked as spam, deleted, or merged, so you're only ever offered an action that applies.
+
+### Mailings - AI features in email editor are being temporarily removed <Badge icon="bullseye" color="purple">Marketing</Badge>
+
+The current AI features for generating images and text will be temporarily removed. These capabilities are based on older technology and will be replaced over time with more modern AI solution. We will share more information as these improvements become available.
 
 ### Forms - Conditional fields in Forms <Badge icon="bullseye" color="purple">Marketing</Badge>
 
@@ -95,7 +196,7 @@ Select a dropdown-type extra field as a condition on a Form-submission trigger, 
 
 </Update>
 
-<Update label="12.3" description="27.08.2026" tags={["Settings and maintenance"]}>
+<Update label="12.3" description="08.27.2026" tags={["Settings and maintenance"]}>
 <a id="12.3"></a>
 
 ### Multiple DKIM for Mailgun <Badge icon="gear" color="orange">Settings and maintenance</Badge>
@@ -116,7 +217,7 @@ Learn more about [multiple DKIM records][12].
 
 </Update>
 
-<Update label="12.2" description="09.07.2026" tags={["Core CRM", "Marketing"]}>
+<Update label="12.2" description="07.09.2026" tags={["Marketing"]}>
 <a id="12.2"></a>
 
 ### Dashboard - Measure sale cycles <Badge icon="user" color="blue">Sales</Badge> {#12.2-core-1}
@@ -150,7 +251,7 @@ Adding **Sale cycle** as a column in your sale selections gives you a quick view
 The **Sale cycle** shows 0 days until the sale is set to **Sold** or **Lost**. For **open** sales, use the **Days in stage** field instead.
 </Note>
 
-### Email and Document - Download the email or document file <Badge icon="user" color="blue">Core CRM</Badge> {#12.2-core-2}
+### Email and Document - Download the email or document file {#12.2-core-2}
 
 Sometimes you need a copy of an email or document outside SuperOffice - to forward it another way, archive it locally, or open it in a different tool. You can now [**download** the email or document file][18] from any archive where you see it, and from the [document dialog][19].
 
@@ -190,7 +291,7 @@ You can also set up the **Dashboard tiles** (Mailing - Average xx tiles) with de
 
 </Update>
 
-<Update label="12.1" description="16.06.2026" tags={["Settings and maintenance"]}>
+<Update label="12.1" description="06.16.2026" tags={["Settings and maintenance"]}>
 <a id="12.1"></a>
 
 ### System design - Webhooks management panel <Badge icon="gear" color="orange">Settings and maintenance</Badge> {#12.1-admin-1}
@@ -221,7 +322,7 @@ Read more about [managing webhooks][7].
 
 </Update>
 
-<Update label="12.0" description="01.06.2026" tags={["Service"]}>
+<Update label="12.0" description="06.01.2026" tags={["Service"]}>
 <a id="12.0"></a>
 
 ### Spam classification on requests <Badge icon="ticket" color="green">Service</Badge> {#12.0-service-1}
@@ -273,6 +374,7 @@ Some features are available to selected customers as part of ongoing pilots. See
 [17]: /en/marketing/forms/learn/create#custom-style
 [18]: /en/email/learn/index#preview
 [19]: /en/document/learn/edit#download
+[20]: /en/marketing/forms/learn/create#thank-you-page
 
 [img1]: /media/loc/en/dashboard/dashboard-sale-sycle-tiles.png
 [img2]: /media/loc/en/dashboard/dashboard-edit-sale-cycle-tile.png
@@ -291,3 +393,9 @@ Some features are available to selected customers as part of ongoing pilots. See
 [img15]: /media/loc/en/request/request-preview-quick-reply.png
 [img16]: /media/loc/en/marketing/marketing-form-field-properties.png
 [img17]: /media/loc/en/marketing/marketing-form-field-properties-add-releated-field.png
+[img18]: /media/loc/en/learn/top-bar-recent-navigation-buttons.png
+[img19]: /media/loc/en/learn/top-bar-recent-navigation-drop-down.png
+[img20]: /media/loc/en/request/request-merge-dialog.png
+[img21]: /media/loc/en/request/preferences-request-merge-keep-oldest.png
+[img22]: /media/loc/en/request/request-field-with-url-link.png
+[img23]: /media/loc/en/admin/admin-licences-my-apps.png
