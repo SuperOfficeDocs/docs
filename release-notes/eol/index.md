@@ -22,8 +22,6 @@ Stay informed, stay prepared, and feel empowered as we navigate these transition
 
 | Product/Feature | EOL status | Timeline or date for discontinuation | Relevant details |
 |---|---|---|---|
-| Exchange Online Synchronizer (Onsite) | Phase-out initiated | 31 December, 2026 | For Microsoft 365 (Exchange Online): switch to  [Synchronizer for SuperOffice][6]. For Exchange Onsite there is no replacement. Contact your SuperOffice partner. |
-| [Places for SuperOffice][7] | Phase-out initiated | 31 March, 2027 | From CRM Suite Growth  Company Insight is included to help creating companies. |
 | [SuperOffice Service CompactMode][16] | No longer supported | January 13, 2026 (11.8) | Switch to [SuperOffice Mobile CRM][17]. |
 | [Pagebuilder][12] | No longer supported | The last supported version is 10.2.9 | Switch to [Screen Designer][22]. |
 
@@ -31,6 +29,8 @@ Stay informed, stay prepared, and feel empowered as we navigate these transition
 
 | Product/Feature | EOL status | Timeline or date for discontinuation | Relevant details |
 |---|---|---|---|
+| Exchange Online Synchronizer (Onsite) | Phase-out initiated | 31 December, 2026 | For Microsoft 365 (Exchange Online): switch to [Synchronizer for SuperOffice][6]. For Exchange Onsite there is no replacement. Contact your SuperOffice partner. |
+| [Places for SuperOffice][7] | Phase-out initiated | 31 March, 2027 | Company Insight, included in CRM Suite Growth, helps you create companies. See [Company Insight][8]. |
 | [SOAP proxy client and web service endpoints][13] | Phase-out initiated | Version 13 | Switch to [SuperOffice.WebApi][23] (REST). |
 | Business Card Scanner for Mobile CRM (onsite) | Phase-out initiated | September 1, 2026 | The underlying Microsoft technology is being deprecated. Switch to the new AI-powered Business Card Scanner in Mobile CRM Online. |
 
@@ -58,6 +58,7 @@ Stay informed, stay prepared, and feel empowered as we navigate these transition
 [5]: https://community.superoffice.com/en/technical/forums/general-forums/announcements/-have-you-created-web-customizations-breaking-changes-ahead/
 [6]: https://appstore.superoffice.com/superoffice-as/synchronizer-for-superoffice
 [7]: https://appstore.superoffice.com/superoffice-as/places-for-superoffice
+[8]: /en/company/learn/create#company-insight
 [11]: /release-notes/eol/lotus
 [12]: /release-notes/eol/pagebuilder
 [13]: /release-notes/eol/soap

@@ -15,7 +15,7 @@ language: en
 
 ## Product integrations updates
 
-* [SuperOffice for Outlook][3] - 6.4.7 (28.09.2026)
+* [SuperOffice for Outlook][3] - 6.4.7 (01.10.2026)
   * Email archive status
 * [SuperOffice for Outlook][3] - 6.4.4 (20.08.2026)
   * Stay informed with in-app announcements
@@ -50,7 +50,7 @@ Current version: For the latest version numbers and release details for all prod
 | SuperOffice Copilot | 2.0 | 02.09.2026 |
 | SuperOffice for Gmail | 3.0 | 24.02.2026 |
 | SuperOffice for Mailchimp | 14.0 | 01.10.2026 |
-| SuperOffice for Outlook | 6.4.8 | 01.10.2026 |
+| SuperOffice for Outlook | 6.4.7 | 01.10.2026 |
 | SuperOffice for Teams | 1.0.2 | 01.10.2026 |
 | SuperOffice for Trello | 15.0 | 01.10.2026 |
 | SuperOffice for Wordpress | 14.0 | 01.10.2026 |
@@ -69,7 +69,6 @@ See all the [new or updated apps][2]
 
 * [Teams Notify][74] from SuperOffice AS (01.10.2026)
 * [SuperOffice for WordPress][70] from SuperOffice AS (01.10.2026)
-* [SuperOffice for WordPress][75] from SuperOffice AS (01.10.2026)
 * [Zapier Integration][71] from SuperOffice AS (01.10.2026)
 * [SuperOffice for Outlook][63] from SuperOffice AS (01.10.2026)
 * [SharePoint Documents][46] from SuperOffice AS (01.10.2026)
@@ -115,7 +114,7 @@ See all the [new or updated apps][2]
 [2]: https://appstore.superoffice.com/Category/new-and-updated
 [3]: /release-notes/integrations/sofo
 [6]: https://community.superoffice.com/en/product-releases/release-notes/
-[7]: /release-notes/eol/index.md
+[7]: /release-notes/eol/index
 [13]: /release-notes/integrations/video-meetings
 [15]: https://community.superoffice.com/en/support-faqs/faq/zapier-integration-version-3.5-changes-in-request-properties?utm_medium=docs&utm_source=release%20notes&utm_campaign=integration
 [16]: https://appstore.superoffice.com/superoffice-as/connecterp-for-visma-net
@@ -164,4 +163,3 @@ See all the [new or updated apps][2]
 [72]: https://appstore.superoffice.com/maestro-soft-as/send-to-signant
 [73]: https://appstore.superoffice.com/superoffice-as/places-for-superoffice
 [74]: https://appstore.superoffice.com/superoffice-as/superoffice-for-microsoft-teams
-[75]: https://appstore.superoffice.com/superoffice-as/superoffice-for-wordpress
