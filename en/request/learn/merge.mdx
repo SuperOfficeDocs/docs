@@ -2,10 +2,10 @@
 uid: help-en-request-merge
 title: Merge requests
 description: Merge requests
-keywords: ['request']
+keywords: ['request', 'oldest request', 'main request', 'primary request']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -42,4 +42,24 @@ You can also search for and select requests to merge from the search results scr
 
 The request IDs that were overwritten will no longer be available in favorites and history lists and regular search. If you enter an overwritten request ID in the search field, you are redirected to the merged request.
 
+## Primary request {#primary-request}
+
+The request with the earliest registered date is automatically the primary request, and the other requests are merged into it. Customers and colleagues refer to the original request number, so this keeps the request number they know.
+
+![Merge requests window where the oldest request is selected as the primary request -screenshot][img1]
+
+In the **Merge requests** window, click the arrow icon to reverse the direction, so the newest request becomes the primary request.
+
+The behavior is controlled by the preference **Use the oldest request as the main request when merging**, which is enabled by default. To change it:
+
+1. Go to <i class="ph ph-user-circle" aria-hidden="true"></i> **Personal settings** > **Preferences**.
+
+1. Select **Request**, and set **Use the oldest request as the main request when merging** to **Yes** or **No**.
+
+1. Click **Save** to apply your changes.
+
+![Request preferences with the option to use the oldest request as the main request when merging -screenshot][img2]
+
 [1]: ./index#open
+[img1]: /media/loc/en/request/request-merge-dialog.png
+[img2]: /media/loc/en/request/preferences-request-merge-keep-oldest.png

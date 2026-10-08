@@ -2,10 +2,10 @@
 uid: help-no-request-merge
 title: Slå sammen saker
 description: Slå sammen saker
-keywords: ['slå sammen saker', 'sak']
+keywords: ['slå sammen saker', 'sak', 'eldste sak', 'hovedsak', 'primærsak']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 license: serviceessentials
 tier: starter
@@ -42,4 +42,24 @@ Du kan også søke etter og velge saker å slå sammen fra søkeresultater eller
 
 Saks-ID-ene som er overskrevet, er ikke lenger tilgjengelige i favoritt- og historikklister eller i vanlig søk. Hvis du angir en overskrevet saks-ID i søkefeltet, blir du omdirigert til den sammenslåtte saken.
 
+## Primærsak {#primary-request}
+
+Saken med tidligste registreringsdato er automatisk primærsaken, og de andre sakene slås sammen med den. Kunder og kolleger refererer til det opprinnelige saksnummeret, så på den måten beholdes saksnummeret de kjenner.
+
+![Vinduet Slå sammen saker der den eldste saken er valgt som primærsak -screenshot][img1]
+
+I vinduet **Slå sammen saker** klikker du på pilikonet for å snu retningen, slik at den nyeste saken blir primærsaken.
+
+Oppførselen styres av preferansen **Bruk den eldste saken som hovedsak ved sammenslåing**, som er aktivert som standard. Slik endrer du den:
+
+1. Gå til <i class="ph ph-user-circle" aria-hidden="true"></i> **Personlige innstillinger** > **Preferanser**.
+
+1. Velg **Sak**, og sett **Bruk den eldste saken som hovedsak ved sammenslåing** til **Ja** eller **Nei**.
+
+1. Klikk **Lagre** for å bruke endringene.
+
+![Preferanser for saker med valget om å bruke den eldste saken som hovedsak ved sammenslåing -screenshot][img2]
+
 [1]: ./index#open
+[img1]: /media/loc/en/request/request-merge-dialog.png
+[img2]: /media/loc/en/request/preferences-request-merge-keep-oldest.png
