@@ -2,10 +2,10 @@
 uid: help-da-add-lead-status
 title: Administrér leadstatusser
 description: Tilføj, rediger eller fjern leadstatusser for at spore fremskridtet i kvalificeringsprocessen.
-keywords: ['leadstatus', 'leadkvalificering', 'diskvalificeret', 'kvalificeret', 'potentiel kunde', 'liste']
+keywords: ['leadstatus', 'leadkvalificering', 'diskvalificeret', 'kvalificeret', 'potentiel kunde', 'liste', 'standardleadstatus', 'omdøb leadstatus']
 author: digitaldiina
-date: 12.11.2025
-so_version: 11.6
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 license: salesessentials
 tier: core
@@ -52,7 +52,7 @@ Gruppering og filtrering efter brugergruppe er ikke tilgængelig for denne liste
 <Note>
 Gennemgå brugen af statusser grundigt, før du foretager ændringer.
 Sletning eller ændring af statusser, der er i brug, kan føre til inkonsekvente data.
-Statussen **Åben** er standard for nye leads og bør ikke slettes.
+Nye leads starter med listens standardværdi, som er **Åben**, medmindre den er omdøbt. Standardværdien kan ikke slettes, men du kan omdøbe den.
 </Note>
 
 1. Åbn listen **Person - Leadstatus**.
@@ -67,6 +67,8 @@ Statussen **Åben** er standard for nye leads og bør ikke slettes.
 
     1. Vælg status i listen.
     1. Klik **Slet**.
+
+    Standardværdien kan ikke slettes. Hvis du forsøger, vises der en meddelelse. Du kan omdøbe den i stedet.
 
 ## Gendan slettede leadstatusser
 
