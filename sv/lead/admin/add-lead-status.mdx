@@ -2,10 +2,10 @@
 uid: help-sv-add-lead-status
 title: Hantera leadstatusar
 description: Lägg till, redigera eller ta bort leadstatusar för att spåra framstegen i leadkvalificeringsprocessen.
-keywords: ['leadstatus', 'leadkvalificering', 'diskvalificerad', 'kvalificerad', 'potentiell kund', 'lista']
+keywords: ['leadstatus', 'leadkvalificering', 'diskvalificerad', 'kvalificerad', 'potentiell kund', 'lista', 'standardleadstatus', 'byt namn på leadstatus']
 author: digitaldiina
-date: 12.11.2025
-so_version: 11.6
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 license: salesessentials
 tier: core
@@ -52,7 +52,7 @@ Gruppering och filtrering efter användargrupp är inte tillgängligt för denna
 <Note>
 Granska statusens användning noggrant innan du gör ändringar.
 Att ta bort eller ändra statusar som används kan leda till inkonsekventa data.
-Statusen **Öppen** är standard för nya leads och bör inte tas bort.
+Nya leads startar med listans standardvärde, som är **Öppen** om det inte har bytt namn. Standardvärdet kan inte tas bort, men du kan byta namn på det.
 </Note>
 
 1. Öppna listan **Kontakt - Leadstatus**.
@@ -67,6 +67,8 @@ Statusen **Öppen** är standard för nya leads och bör inte tas bort.
 
     1. Välj statusen i listan.
     1. Klicka **Ta bort**.
+
+    Standardvärdet kan inte tas bort. Om du försöker ta bort det visas ett meddelande. Du kan byta namn på det i stället.
 
 ## Återställ borttagna leadstatusar
 
