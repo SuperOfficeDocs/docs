@@ -4,8 +4,8 @@ title: Bruk tavlevisning i utvalg
 description: Visualiser utvalg med tavlevisning med gruppering, filtre og dra-og-slipp-kort
 keywords: ['tavlevisning', 'utvalgsvisning', 'utvalg', 'salgstavle', 'prosjekttavle', 'sakstavle', 'kanban', 'gruppér etter', 'verktøylinje for filter', 'salgsdato-merke', 'dager i fase', 'dager siden registrert']
 author: digitaldiina
-date: 12.02.2025
-so_version: 11.7
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 license: salespremium, servicepremium, marketingessentials
 tier: core
@@ -25,6 +25,8 @@ language: no
 ---
 
 Tavlevisning viser ditt [utvalg][2] i et kolonnebasert oppsett med kort. Du kan gruppere og filtrere utvalgsmedlemmene (postene som vises på tavlen), og bruke dra-og-slipp for å flytte kort mellom grupper.
+
+For salg vises tavlevisning også i Salgsskjermen, der du kan velge et utvalg i venstrepanelet. I så fall ligger filtrene i **Filter**-knappen i stedet for i innstillingsdialogboksen (<i class="ph ph-gear-six" aria-label="Innstillinger"></i>), og knappene **Rediger** og **Oppgave** for utvalget er ikke tilgjengelige. Se [Arbeid med oversiktssider][15].
 
 Funksjonaliteten er lik på tvers av støttede posttyper: Du kan dra kort, åpne oppgavemenyer og justere tavleinnstillinger. Tilgjengelige grupperings- og filterfelter varierer avhengig av om du jobber med firma, personm, salg, prosjekter eller saker.
 
@@ -237,6 +239,7 @@ Bruk gruppering kreativt for å organisere og handle effektivt på data.
 
 [2]: ./index
 [11]: ../../../learn/getting-started/main-screen/side-panel
+[15]: ../../../learn/basics/overview-pages
 [img1]: ../../../../media/loc/en/search-options/board-view-toggle.png
 [img2]: ../../../../media/loc/en/search-options/board-view.png
 [img3]: ../../../../media/loc/en/search-options/board-view-preview-contact-on-hover.png

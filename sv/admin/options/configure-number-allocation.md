@@ -4,8 +4,8 @@ title: Ange nummertilldelning
 description: Ange nummertilldelning
 keywords: ['nummertilldelning', 'räknare', 'företagsnummer']
 author: digitaldiina
-date: 10.21.2025
-so_version: 11.5
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 tier: starter
 category: Settings and maintenance
@@ -25,7 +25,7 @@ Räknaren ökar värdet i fältet med 1 varje gång en ny förekomst används. E
 
 Räknare kan tillämpas på följande fält:
 
-* **Nummer**-fälten i fönstren Företag, Projekt, Försäljning och Kontakt.
+* **Nummer**-fälten i fönstren Företag och Projekt samt på försäljningskortet och kontaktkortet.
 * Fältet **Vår ref.** i dialogrutan Dokument om det har definierats för den aktuella mallen.
 * Räknare från tredjepartsleverantörer kan också användas.
 

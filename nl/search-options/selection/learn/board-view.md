@@ -4,8 +4,8 @@ title: Boardweergave gebruiken in selecties
 description: Visualiseer selecties met de boardweergave met groepering, filters en drag-and-drop-kaarten
 keywords: ['boardweergave', 'board-weergave', 'selectieoverzicht', 'selectie', 'verkoopboard', 'projectboard', 'verzoekboard', 'kanban', 'groeperen op', 'filterwerkbalk', 'verkoopdatum badge', 'dagen in fase', 'dagen sinds registratie']
 author: digitaldiina
-date: 12.02.2025
-so_version: 11.7
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 license: salespremium, servicepremium, marketingessentials
 tier: core
@@ -25,6 +25,8 @@ language: nl
 ---
 
 De boardweergave toont je [selectie][2] in een kolomindeling met kaarten. Je kunt de selectieleden (records op het board) groeperen en filteren en kaarten verplaatsen tussen groepen via drag-and-drop.
+
+Voor verkopen wordt de boardweergave ook getoond in het Verkoopscherm, waar je een selectie kiest in het linkerpaneel. In dat geval staan de filters achter de knop **Filter** in plaats van in het instellingendialoogvenster (<i class="ph ph-gear-six" aria-label="Instellingen"></i>), en zijn de knoppen **Bewerken** en **Taak** voor de selectie niet beschikbaar. Zie [Werken met overzichtspagina's][15].
 
 De functionaliteit is identiek voor alle ondersteunde entiteiten: je kunt kaarten slepen, taakmenu's openen en boardinstellingen aanpassen. De beschikbare velden voor groepering en filtering verschillen afhankelijk van of je werkt met bedrijven, personen, verkopen, projecten of verzoeken.
 
@@ -236,6 +238,7 @@ Gebruik groepering creatief om efficiënt met gegevens te werken.
 * **Layout per toepassing opslaan:** Kies **Instellingen alleen voor deze selectie opslaan** als je een specifieke boardindeling, filters of groepering wilt bewaren voor één selectie.
 
 [2]: ./index
+[15]: ../../../learn/basics/overview-pages
 [11]: ../../../learn/getting-started/main-screen/side-panel
 [img1]: ../../../../media/loc/en/search-options/board-view-toggle.png
 [img2]: ../../../../media/loc/en/search-options/board-view.png

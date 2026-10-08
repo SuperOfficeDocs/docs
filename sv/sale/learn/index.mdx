@@ -1,11 +1,12 @@
 ---
 uid: help-sv-sale
 title: Försäljning
+sidebarTitle: "Försäljning"
 description: SuperOffice Sales hjälper säljteam att hålla koll på sina försäljningspipelines och processer.
-keywords: ['fönstret Försäljning', 'försäljningskort', 'försäljningsskärm', 'försäljning', 'affärsmöjlighet', 'sälj']
+keywords: ['Försäljningsskärmen', 'Sale screen', 'ny försäljningsskärm', 'försäljningskort', 'Sale card', 'vänsterpanel', 'fastnålade försäljningar', 'Min öppna försäljning', 'tavlevy', 'försäljningsurval', 'affärsmöjlighet', 'sälj', 'lead', 'active sale']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 10.13.2026
+so_version: 12.5
 content_type: concept
 license: salesessentials
 tier: starter
@@ -13,10 +14,11 @@ audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from:
   - /sv/sale/learn/stages
-  - /sv/sale/learn/use-side-panel
   - /sv/sale/learn/screen/index
 boost: 1.5
 related:
+  - Arbeta med översiktssidor: /sv/learn/basics/overview-pages
+  - Använd tavlevy i urval: /sv/search-options/selection/learn/board-view
   - Lägg till försäljning i favoriter: /sv/learn/basics/fav
   - /sv/sale/learn/create
   - /sv/sale/learn/stakeholders/create
@@ -33,17 +35,59 @@ import MoreTab from "../../learn/snippets/more-tab.md";
 
 Funktionen **Försäljning** i SuperOffice CRM hjälper dig att hantera dina affärsmöjligheter genom att samla all relevant information, aktiviteter och dokument på ett och samma ställe. Genom att strukturera försäljningsprocesserna säkerställer du att inga möjligheter missas och att ditt team fokuserar på de viktigaste uppgifterna - att stänga fler affärer och nå sina mål.
 
-![Fönstret Försäljning -screenshot][img1]
+![Försäljningsskärmen med ett urval i tavlevy -screenshot][img1]
 
-Du kan länka försäljningar till företag, personer och projekt, vilket gör det enkelt att samarbeta mellan olika team. Försäljningar kan också styras med hjälp av säljguider, förutsatt att den valda försäljningstypen har en definierad guide.
+Du kan länka försäljningar till företag, kontakter och projekt, vilket gör det enkelt att samarbeta mellan olika team. Försäljningar kan också styras med hjälp av säljguider, förutsatt att den valda försäljningstypen har en definierad guide.
 
-Fönstret Försäljning organiserar försäljningar som indexkort och ger en detaljerad översikt över varje affärsmöjlighet. Navigera mellan försäljningar med knapparna **Föregående** och **Nästa** (<i class="ph ph-caret-circle-left" aria-hidden="true"></i><i class="ph ph-caret-circle-right" aria-hidden="true"></i>) längst ner till höger på korten. Som standard visas alla försäljningar. Om du inte vill visa slutförda försäljningar (sålda eller förlorade), klicka på <i class="ph ph-dots-three-circle-vertical" aria-label="Uppgiftsknapp"></i> och välj **Hoppa över slutförd försäljning**. Detta alternativ finns också som en inställning under <i class="ph ph-user-circle" aria-hidden="true"></i> **Personliga inställningar** > **Inställningar** > **Försäljning**.
+## Försäljningsskärmen {#sale-screen}
 
-<Tip>
-Försäljningar visas också på [detaljkortet Försäljning][13] i fönstren Företag, Kontakt, Projekt och Kalender. Dubbelklicka på en försäljning i dessa vyer för att öppna den i fönstret Försäljning.
-</Tip>
+Försäljningsskärmen är där du arbetar med dina försäljningar och försäljningsurval. Den har tre områden:
 
-## Flikar på försäljningskortet
+* **Vänsterpanel:** Vertikala flikar för de urval och försäljningar du arbetar med, och ett sökfält för att hitta andra. Nåla fast de flikar du använder varje dag. Se [Arbeta med översiktssidor][22] för hur vänsterpanelen fungerar.
+
+* **Huvudområde:** Visar ett urval av försäljningar i tavlevy eller listvy, eller visar en försäljning som ett försäljningskort med detaljkort under.
+
+* **Sidopanel:** [Sidopanelen][20] till höger visar en förhandsgranskning av företaget som är kopplat till den markerade försäljningen, eller den vy du har valt.
+
+<Note>
+Försäljningsskärmen introduceras gradvis. Om du inte ser den ännu öppnas en försäljning på sitt eget kort, med detaljkorten under och ingen vänsterpanel. Du hittar en tavlevy över dina försäljningar under **Urval**.
+</Note>
+
+### Öppna Försäljningsskärmen {#open}
+
+* Välj ikonen **Försäljning** i [navigatorn][24]. Försäljningsskärmen öppnas med det innehåll du senast tittade på.
+
+* Öppna en försäljning var som helst i SuperOffice CRM, till exempel genom att dubbelklicka på den på [detaljkortet Försäljning][13] i fönstren Företag, Kontakt, Projekt och Kalender. Försäljningen öppnas i Försäljningsskärmen och blir din aktuella försäljning.
+
+* Välj **Ny** > **Försäljning**. Den nya försäljningen öppnas i Försäljningsskärmen. När du sparar den öppnas den på den senast visade fliken och blir din aktuella försäljning.
+
+### Vad du ser första gången {#first-time}
+
+Första gången du öppnar Försäljningsskärmen:
+
+* Urvalet **Min öppna försäljning** visas i tavlevy.
+
+* **Min öppna försäljning** och **Min grupps öppna försäljning** är fastnålade i vänsterpanelen.
+
+* Sidopanelen är dold.
+
+* Din aktuella försäljning visas på den senast visade fliken.
+
+Du kan flytta, ta bort eller lägga till fastnålade urval och försäljningar. Se [Arbeta med översiktssidor][22].
+
+### Arbeta med urval av försäljningar {#selections}
+
+Välj ett urval i vänsterpanelen för att se dess försäljningar i [tavlevy][23] eller listvy. I tavlevy är kolumnerna som standard försäljningsfaserna, och varje kort är en försäljning. Dubbelklicka på ett kort för att öppna försäljningen.
+
+## Försäljningskortet {#sale-card}
+
+Försäljningskortet visar en försäljning i taget. Navigera mellan försäljningar med knapparna **Föregående** och **Nästa** (<i class="ph ph-caret-circle-left" aria-hidden="true"></i><i class="ph ph-caret-circle-right" aria-hidden="true"></i>) längst ner till höger på kortet.
+
+Som standard visas alla försäljningar. Om du inte vill visa slutförda försäljningar (sålda eller förlorade), klicka på <i class="ph ph-dots-three-circle-vertical" aria-label="Uppgiftsknapp"></i> och välj **Hoppa över slutförd försäljning**. Detta alternativ finns också som en inställning under <i class="ph ph-user-circle" aria-hidden="true"></i> **Personliga inställningar** > **Inställningar** > **Försäljning**.
+
+![En försäljning öppnad i Försäljningsskärmen, med försäljningskortet och detaljkorten -screenshot][img2]
+
+### Flikar på försäljningskortet
 
 | Flik | Beskrivning |
 |---|---|
@@ -55,16 +99,16 @@ Försäljningar visas också på [detaljkortet Försäljning][13] i fönstren F�
 
 Varje flik har ett specifikt syfte och hjälper till att organisera och göra försäljningsinformationen lättillgänglig.
 
-## Detaljkorten i fönstret Försäljning {#section-tabs}
+### Detaljkort under försäljningskortet {#section-tabs}
 
-Den nedre delen av fönstret Försäljning består av detaljkort.
+När en försäljning är öppen visas detaljkort under försäljningskortet.
 
 * [Aktiviteter][14]
 * [Säljguide][16] (kräver en **Sales Premium**-licens eller **Growth**-planen)
 * [Intressenter][15] (kräver en **Sales Premium**-licens eller **Growth**-planen)
 * [Offert][17] (kräver en **Sales Premium**-licens eller **Growth**-planen)
 
-[Säljguider][3] visas endast för specifika försäljningstyper (definieras i Inställningar och underhåll). Om du väljer en försäljningstyp med en definierad säljguide visas detaljkortet **Säljguide**.
+[Säljguider][16] visas endast för specifika försäljningstyper (definieras i Inställningar och underhåll). Om du väljer en försäljningstyp med en definierad säljguide visas detaljkortet **Säljguide**.
 
 <MoreTab />
 
@@ -82,29 +126,25 @@ I fältet **Fas** på fliken **Försäljning** kan du:
 | <i class="ph ph-x" aria-label="X"></i> | Förlorad |
 | <i class="ph ph-triangle" aria-label="Röd triangel"></i> | Uppskjuten |
 
-## Använd försäljningsöversikt för att prioritera
+## Tips {#tips}
 
-Håll din försäljning organiserad så att du alltid är fokuserad på de affärer som är viktigast för dig.
+Håll din försäljning organiserad så att du alltid är fokuserad på de försäljningar som är viktigast för dig.
 
-När du har registrerat dina försäljningar i SuperOffice CRM visas de i din personliga försäljningsöversikt på fliken **Försäljning** och i din Kalender. Du kan organisera din försäljningslista genom att [filtrera, gruppera och lägga till de kolumner][3] som är viktigast för dig. De mest använda kolumnerna är försäljningsbelopp, försäljningsdatum och försäljningsfas.
+* **Nåla fast dina dagliga urval.** Håll urval som **Min öppna försäljning** fastnålade i vänsterpanelen och visa dem i tavlevy för att se var varje försäljning befinner sig i din pipeline.
 
-Detaljkortet **Försäljning** fungerar också som en försäljningsassistent genom att markera alla dina kommande planerade aktiviteter i fältet **Nästa aktivitet** och uppmärksamma sådana du kanske har glömt genom att markera dem i rött.
+* **Filtrera till det som behöver uppmärksamhet.** Använd knappen **Filter** för att begränsa tavlan efter till exempel **Försäljningsdatum**, **Nästa aktivitet** eller **Ägare**.
+
+* **Kontrollera förfallna försäljningar.** Försäljningar markerade i **rött** har förfallna aktiviteter eller försäljningsdatum. Granska och uppdatera dessa först.
+
+* **Använd fältet Nästa aktivitet.** Det markerar dina kommande planerade aktiviteter och uppmärksammar sådana du kanske har glömt genom att markera dem i rött.
+
+* **Gå igenom dina försäljningar en i taget.** Klicka dig igenom dem, så att du känner till den aktuella statusen för var och en och har rätt uppföljningsaktivitet planerad.
+
+* **Använd urval för uppföljning.** Använd ett urval av kontakter som ringlista, eller följ upp utestående försäljningsförslag, så att inga möjligheter missas.
+
+Försäljningar visas också i din Kalender och på detaljkortet **Försäljning** i fönstren Företag, Kontakt och Projekt. Du kan organisera dessa listor genom att [filtrera, gruppera och lägga till de kolumner][3] som är viktigast för dig. De mest använda kolumnerna är försäljningsbelopp, försäljningsdatum och försäljningsfas.
 
 ![Gå till Kalendern och få en översikt över alla försäljningar som ännu inte är slutförda -screenshot][img3]
-
-## Använda sidopanelen för försäljningar {#side-panel}
-
-När du har fönstret Försäljning öppen kan du använda [sidopanelen][20] **Urvalsmedlemmar** för att granska dina affärsmöjligheter. Klicka på en försäljning för att visa den i detalj i försäljningskortet.
-
-![Använd sidopanelen på försäljningskortet för att visa urvalsmedlemmar och försäljningsurval -screenshot][img2]
-
-### Tips för effektivitet
-
-* **Granska förfallna försäljningar**: Försäljningar markerade i **rött** i listan över **Urvalsmedlemmar** har förfallna aktiviteter eller försäljningsdatum. Se till att granska och uppdatera dessa.
-
-* **Genomgång i sekvens**: Använd sidopanelen för att klicka dig igenom försäljningarna en i taget och säkerställa att rätt uppföljningar är planerade.
-
-* **Liknande arbetsflöden**: Du kan använda urval för kontakter som en ringlista eller följa upp utestående försäljningsförslag för att säkerställa att inga möjligheter missas.
 
 Läs mer om hur du kan förbättra din försäljningsplanering i [guiden till försäljningsprognoser][21].
 
@@ -120,6 +160,9 @@ Läs mer om hur du kan förbättra din försäljningsplanering i [guiden till f�
 [20]: /sv/learn/getting-started/main-screen/side-panel
 [12]: /sv/custom-objects/learn/more-tab
 [17]: /sv/sale/learn/quote/index#quote-tab
-[img1]: /media/loc/en/sale/sales-screen.png
-[img2]: /media/loc/en/sale/getstarted-sidepanel-saleselection.png
+[22]: /sv/learn/basics/overview-pages
+[23]: /sv/search-options/selection/learn/board-view
+[24]: /sv/learn/getting-started/main-screen/navigator
+[img1]: /media/loc/en/sale/sale-screen-selection.png
+[img2]: /media/loc/en/sale/sale-screen-card.png
 [img3]: /media/loc/en/sale/user-diary-sales.png

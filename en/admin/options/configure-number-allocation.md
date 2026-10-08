@@ -4,8 +4,8 @@ title: Specifying number allocation
 description: Specifying number allocation
 keywords: ['counter', 'company number']
 author: digitaldiina
-date: 10.21.2025
-so_version: 11.5
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 tier: starter
 category: Settings and maintenance
@@ -25,7 +25,7 @@ The way a counter works is to increase the value of the field by 1 each time a n
 
 Counters can apply to the following fields:
 
-* **Number** fields in the Company screen, the Project screen, the Sale screen, and the Contact screen.
+* **Number** fields in the Company screen, the Project screen, the Sale card, and the Contact screen.
 
 * The **Our Ref.** field in the **Document** dialog if it is defined for the relevant template.
 

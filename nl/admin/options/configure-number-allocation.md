@@ -4,8 +4,8 @@ title: Nummertoewijzing opgeven
 description: Nummertoewijzing opgeven
 keywords: ['nummertoewijzing', 'teller', 'bedrijfsnummer']
 author: digitaldiina
-date: 10.21.2025
-so_version: 11.5
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 tier: starter
 category: Settings and maintenance
@@ -25,7 +25,7 @@ Tellers zorgen ervoor dat telkens wanneer een nieuw exemplaar van een veld wordt
 
 Tellers kunnen van toepassing zijn op de volgende velden:
 
-* Het veld **Nummer** in het scherm Bedrijf, het scherm Project, het scherm Verkoop en het scherm Contactpersoon.
+* Het veld **Nummer** in het scherm Bedrijf, het scherm Project, de verkoopkaart en het scherm Contactpersoon.
 * Het veld **Onze ref.** in het venster Document als dat is gedefinieerd voor de desbetreffende sjabloon.
 * U kunt ook tellers van andere leveranciers gebruiken.
 

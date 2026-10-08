@@ -3,8 +3,9 @@ uid: help-no-fastsearcher-navigator
 title: Bruke hurtigsøk i Navigator
 description: Hvordan bruke hurtigsøk i navigatoren in SuperOffice
 keywords: ['søk', 'hurtigsøk']
-author: Bergfrid Dias
-date: 05.25.2023
+author: digitaldiina
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 tier: starter
 language: no
@@ -17,6 +18,12 @@ language: no
 2. I boksen skriver du inn navnet på posten du vil søke etter. Mens du skriver, viser listen nedenfor alle samsvarende poster.
 
 3. Klikk på ønsket oppføring for å åpne den.
+
+<Note>
+
+For Salg søker [søkefeltet i venstrepanelet][2] i utvalg og salg samtidig. Søket starter når du har skrevet inn to tegn.
+
+</Note>
 
 ## Hvordan virker det
 
@@ -33,5 +40,6 @@ Navigatorens hurtigsøk utfører to parallelle søk.
 * Du kan søke etter en person i hurtigsøkfeltet for **Firma** i navigatoren.
 
 [1]: ../../learn/basics/history
+[2]: ../../learn/basics/overview-pages
 
 [img1]: ../../../media/loc/en/search-options/search-find-fastsearcher.png

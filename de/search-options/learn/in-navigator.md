@@ -3,8 +3,9 @@ uid: help-de-fastsearcher-navigator
 title: Schnellsuche im Navigator verwenden
 description: Schnellsuche im Navigator verwenden im SuperOffice
 keywords: ['suche', 'Schnellsuche']
-author: Bergfrid Dias
-date: 05.25.2023
+author: digitaldiina
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 tier: starter
 language: de
@@ -18,13 +19,19 @@ language: de
 
 3. Klicken Sie zum Öffnen auf den gewünschten Datensatz.
 
-## How it works
+<Note>
 
-The Navigator FastSearcher runs two parallel searches:
+Für Verkauf durchsucht das [Suchfeld im linken Panel][2] Selektionen und Verkäufe gleichzeitig. Die Suche startet, nachdem Sie zwei Zeichen eingegeben haben.
 
-* A standard *begins-with* search with optional wildcard (%). In a phrase, the longest word is looked up first.
+</Note>
 
-* An *exact-match* *sounds-like* (SoundEx) search. If the phrase contains short words, multiple words are needed before look-up starts. The result is shown only if the standard search has 0 matches.
+## So funktioniert es
+
+Die Schnellsuche im Navigator führt zwei parallele Suchen aus:
+
+* Eine Standardsuche *beginnt mit* mit optionalem Platzhalter (%). Bei einer Wortfolge wird zuerst das längste Wort gesucht.
+
+* Eine *Exakt-Treffer*-Suche nach *klingt-wie* (SoundEx). Enthält die Wortfolge kurze Wörter, sind mehrere Wörter nötig, bevor die Suche startet. Das Ergebnis wird nur angezeigt, wenn die Standardsuche 0 Treffer liefert.
 
 ## Beispiele
 
@@ -33,5 +40,6 @@ The Navigator FastSearcher runs two parallel searches:
 * Sie können im Schnellsuchfeld für **Firmen** im Navigator nach einer Person suchen.
 
 [1]: ../../learn/basics/history
+[2]: ../../learn/basics/overview-pages
 
 [img1]: ../../../media/loc/en/search-options/search-find-fastsearcher.png

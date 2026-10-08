@@ -4,8 +4,8 @@ title: Nummernzuweisung festlegen
 description: Nummernzuweisung festlegen
 keywords: ['nummernzuweisung', 'zähler', 'firmennummer']
 author: digitaldiina
-date: 10.21.2025
-so_version: 11.5
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 tier: starter
 category: Settings and maintenance
@@ -25,7 +25,7 @@ Mit einem Zähler wird der Wert des Felds bei jeder Registrierung um 1 erhöht. 
 
 Die Zähler können für folgende Felder übernommen werden:
 
-* Die Felder **Nummer** in den Ansichten Firma, Projekt, Verkauf und die Ansicht Person.
+* Die Felder **Nummer** in den Ansichten Firma und Projekt, auf der Verkaufskarte und in der Ansicht Person.
 * Das Feld **Unser Zeichen** im Dialogfeld Dokument, wenn es für die relevante Vorlage definiert ist.
 * Es können auch Zähler von Drittherstellern verwendet werden.
 

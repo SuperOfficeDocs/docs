@@ -3,8 +3,9 @@ uid: help-sv-fastsearcher-navigator
 title: Använda snabbsökning i navigatorn
 description: Använda snabbsökning i navigatorn
 keywords: ['söka', 'Snabbsökning', 'navigatorn']
-author: Bergfrid Dias
-date: 05.25.2023
+author: digitaldiina
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 tier: starter
 language: sv
@@ -18,13 +19,19 @@ language: sv
 
 3. Klicka på den önskade posten för att öppna den.
 
-## How it works
+<Note>
 
-The Navigator FastSearcher runs two parallel searches:
+För Försäljning söker [sökfältet i vänsterpanelen][2] i urval och försäljningar samtidigt. Sökningen startar när du har angett två tecken.
 
-* A standard *begins-with* search with optional wildcard (%). In a phrase, the longest word is looked up first.
+</Note>
 
-* An *exact-match* *sounds-like* (SoundEx) search. If the phrase contains short words, multiple words are needed before look-up starts. The result is shown only if the standard search has 0 matches.
+## Så fungerar det
+
+Navigatorns snabbsökning kör två parallella sökningar:
+
+* En standardsökning av typen *börjar med*, med valfritt jokertecken (%). I en fras slås det längsta ordet upp först.
+
+* En *exakt matchning* av typen *låter som* (SoundEx). Om frasen innehåller korta ord krävs flera ord innan uppslagningen startar. Resultatet visas bara om standardsökningen har 0 träffar.
 
 ## Exempel
 
@@ -33,5 +40,6 @@ The Navigator FastSearcher runs two parallel searches:
 * Du kan söka efter en kontakt i snabbsökningsfältet för **Företag** i navigatorn.
 
 [1]: ../../learn/basics/history
+[2]: ../../learn/basics/overview-pages
 
 [img1]: ../../../media/loc/en/search-options/search-find-fastsearcher.png

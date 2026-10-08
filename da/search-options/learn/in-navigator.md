@@ -3,8 +3,9 @@ uid: help-da-fastsearcher-navigator
 title: Brug af hurtigsøgning i navigatoren
 description: Brug af hurtigsøgning i navigatoren
 keywords: ['søge', 'FastSearcher', 'navigator']
-author: Bergfrid Dias
-date: 06.29.2022
+author: digitaldiina
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 tier: starter
 language: da
@@ -18,13 +19,19 @@ language: da
 
 3. Klik på den nødvendige post for at åbne den.
 
-## How it works
+<Note>
 
-The Navigator FastSearcher runs two parallel searches:
+For Salg søger [søgefeltet i venstrepanelet][2] i udvalg og salg på samme tid. Søgningen starter, når du har indtastet to tegn.
 
-* A standard *begins-with* search with optional wildcard (%). In a phrase, the longest word is looked up first.
+</Note>
 
-* An *exact-match* *sounds-like* (SoundEx) search. If the phrase contains short words, multiple words are needed before look-up starts. The result is shown only if the standard search has 0 matches.
+## Sådan fungerer det
+
+Navigatorens hurtigsøgning kører to parallelle søgninger:
+
+* En standardsøgning af typen *begynder med* med valgfri jokertegn (%). I en frase slås det længste ord op først.
+
+* En *eksakt* søgning af typen *lyder som* (SoundEx). Hvis frasen indeholder korte ord, kræves der flere ord, før opslaget starter. Resultatet vises kun, hvis standardsøgningen giver 0 resultater.
 
 ## Eksempler
 
@@ -33,5 +40,6 @@ The Navigator FastSearcher runs two parallel searches:
 * Du kan søge efter en person i hurtigsøgningsfeltet for **Firma** i navigatoren.
 
 [1]: ../../learn/basics/history
+[2]: ../../learn/basics/overview-pages
 
 [img1]: ../../../media/loc/en/search-options/search-find-fastsearcher.png

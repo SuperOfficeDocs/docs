@@ -1,11 +1,12 @@
 ---
 uid: help-nl-sale
 title: Verkoop
+sidebarTitle: "Verkoop"
 description: SuperOffice Sales helpt verkoopteams grip te hebben op hun verkooppijplijnen en -processen.
-keywords: ['scherm Verkoop', 'verkoopkaart', 'verkoopkansen', 'verkoop']
+keywords: ['Verkoopscherm', 'Sale screen', 'nieuw Verkoopscherm', 'new Sale screen', 'verkoopkaart', 'Sale card', 'linkerpaneel', 'vastgemaakte verkopen', 'Mijn openstaande verkopen', 'boardweergave', 'verkoopselecties', 'verkoopkansen', 'verkoop', 'lead', 'active sale']
 author: digitaldiina
-date: 06.10.2026
-so_version: 12.0
+date: 10.13.2026
+so_version: 12.5
 content_type: concept
 license: salesessentials
 tier: starter
@@ -13,10 +14,11 @@ audience: person
 audience_tooltip: SuperOffice CRM
 redirect_from:
   - /nl/sale/learn/stages
-  - /nl/sale/learn/use-side-panel
   - /nl/sale/learn/screen/index
 boost: 1.5
 related:
+  - Werken met overzichtspagina's: /nl/learn/basics/overview-pages
+  - Boardweergave gebruiken in selecties: /nl/search-options/selection/learn/board-view
   - Een verkoop toevoegen aan favorieten: /nl/learn/basics/fav
   - /nl/sale/learn/create
   - /nl/sale/learn/stakeholders/create
@@ -33,17 +35,59 @@ import MoreTab from "../../learn/snippets/more-tab.md";
 
 De functie **Verkoop** in SuperOffice CRM helpt u om verkoopkansen efficiënt te beheren door alle gerelateerde informatie, activiteiten en documenten op één plek bij te houden. Door uw verkoopprocessen te structureren, zorgt u ervoor dat geen enkele kans verloren gaat en dat uw team zich altijd richt op de belangrijkste taken: meer deals sluiten en hun doelen behalen.
 
-![Scherm Verkoop -screenshot][img1]
+![Het Verkoopscherm met een selectie in boardweergave -screenshot][img1]
 
 U kunt verkopen koppelen aan bedrijven, personen en projecten, zodat teams eenvoudig kunnen samenwerken. Als het geselecteerde verkooptype een verkoopgids heeft, kunt u de verkoop ook met een gids stroomlijnen.
 
-Het scherm **Verkoop** toont verkopen als indexkaarten en geeft een gedetailleerd overzicht van elke kans. U kunt door verkopen bladeren met de knoppen **Vorige** en **Volgende** (<i class="ph ph-caret-circle-left" aria-hidden="true"></i><i class="ph ph-caret-circle-right" aria-hidden="true"></i>) rechtsonder op de kaarten. Standaard worden alle verkopen weergegeven. Als u voltooide verkopen (verkocht of verloren) wilt verbergen, klikt u op <i class="ph ph-dots-three-circle-vertical" aria-label="Taakknop"></i> en selecteert u **Voltooide verkopen overslaan**. Deze optie is ook beschikbaar als instelling onder <i class="ph ph-user-circle" aria-hidden="true"></i> **Persoonlijke instellingen** > **Voorkeuren** > **Verkoop**.
+## Het Verkoopscherm {#sale-screen}
 
-<Tip>
-Verkopen zijn ook zichtbaar op het [sectietabblad Verkoop][13] in de schermen Bedrijf, Persoon, Project en Agenda. Dubbelklik op een verkoop om deze te openen in het scherm Verkoop.
-</Tip>
+Het Verkoopscherm is de plek waar u werkt met uw verkopen en verkoopselecties. Het heeft drie gebieden:
 
-## Tabbladen op de verkoopkaart
+* **Linkerpaneel:** Verticale tabbladen voor de selecties en verkopen waarmee u werkt, en een zoekveld om andere te vinden. Maak de tabbladen die u dagelijks gebruikt vast. Zie [Werken met overzichtspagina's][22] voor hoe het linkerpaneel werkt.
+
+* **Hoofdgebied:** Toont een selectie van verkopen in boardweergave of lijstweergave, of toont één verkoop als verkoopkaart met sectietabbladen eronder.
+
+* **Zijpaneel:** Het [zijpaneel][20] aan de rechterkant toont een voorbeeld van het bedrijf dat is gekoppeld aan de geselecteerde verkoop, of de weergave die u hebt gekozen.
+
+<Note>
+Het Verkoopscherm wordt geleidelijk geïntroduceerd. Als u het nog niet ziet, wordt een verkoop geopend op zijn eigen kaart, met de sectietabbladen eronder en zonder linkerpaneel. U vindt een boardweergave van uw verkopen via **Selecties**.
+</Note>
+
+### Het Verkoopscherm openen {#open}
+
+* Selecteer het pictogram **Verkoop** in de [Navigator][24]. Het Verkoopscherm wordt geopend met de inhoud die u het laatst hebt bekeken.
+
+* Open een verkoop vanuit een willekeurige plek in SuperOffice CRM, bijvoorbeeld door erop te dubbelklikken op het [sectietabblad Verkoop][13] in de schermen Bedrijf, Persoon, Project en Agenda. De verkoop wordt geopend in het Verkoopscherm en wordt uw huidige verkoop.
+
+* Selecteer **Nieuw** > **Verkoop**. De nieuwe verkoop wordt geopend in het Verkoopscherm. Wanneer u de verkoop opslaat, wordt deze geopend in het laatst bekeken tabblad en wordt het uw huidige verkoop.
+
+### Wat u de eerste keer ziet {#first-time}
+
+De eerste keer dat u het Verkoopscherm opent:
+
+* De selectie **Mijn openstaande verkopen** wordt weergegeven in boardweergave.
+
+* **Mijn openstaande verkopen** en **Openstaande verkopen van mijn groep** zijn vastgemaakt in het linkerpaneel.
+
+* Het zijpaneel is verborgen.
+
+* Uw huidige verkoop wordt weergegeven in het laatst bekeken tabblad.
+
+U kunt vastgemaakte selecties en verkopen verplaatsen, verwijderen of toevoegen. Zie [Werken met overzichtspagina's][22].
+
+### Werken met selecties van verkopen {#selections}
+
+Kies een selectie in het linkerpaneel om de bijbehorende verkopen te zien in [boardweergave][23] of lijstweergave. In de boardweergave zijn de kolommen standaard de verkoopfasen en is elke kaart een verkoop. Dubbelklik op een kaart om de verkoop te openen.
+
+## De verkoopkaart {#sale-card}
+
+De verkoopkaart toont telkens één verkoop. U kunt door verkopen bladeren met de knoppen **Vorige** en **Volgende** (<i class="ph ph-caret-circle-left" aria-hidden="true"></i><i class="ph ph-caret-circle-right" aria-hidden="true"></i>) rechtsonder op de kaart.
+
+Standaard worden alle verkopen weergegeven. Als u voltooide verkopen (verkocht of verloren) wilt verbergen, klikt u op <i class="ph ph-dots-three-circle-vertical" aria-label="Taakknop"></i> en selecteert u **Voltooide verkopen overslaan**. Deze optie is ook beschikbaar als instelling onder <i class="ph ph-user-circle" aria-hidden="true"></i> **Persoonlijke instellingen** > **Voorkeuren** > **Verkoop**.
+
+![Een verkoop geopend in het Verkoopscherm, met de verkoopkaart en de sectietabbladen -screenshot][img2]
+
+### Tabbladen op de verkoopkaart
 
 | Tabblad | Beschrijving |
 |---|---|
@@ -55,16 +99,16 @@ Verkopen zijn ook zichtbaar op het [sectietabblad Verkoop][13] in de schermen Be
 
 Elk tabblad heeft een specifieke functie, zodat verkoopinformatie georganiseerd en eenvoudig toegankelijk blijft.
 
-## Sectietabbladen in het scherm Verkoop {#section-tabs}
+### Sectietabbladen onder de verkoopkaart {#section-tabs}
 
-Het onderste deel van het scherm **Verkoop** bestaat uit sectietabbladen.
+Wanneer een verkoop is geopend, verschijnen er sectietabbladen onder de verkoopkaart.
 
 * [Activiteiten][14]
 * [Verkoopgids][16] (vereist een **Sales Premium**-licentie of het **Growth**-plan)
 * [Belanghebbenden][15] (vereist een **Sales Premium**-licentie of het **Growth**-plan)
 * [Offerte][17] (vereist een **Sales Premium**-licentie of het **Growth**-plan)
 
-[Verkoopgidsen][3] worden alleen weergegeven voor specifieke verkooptypen (gedefinieerd in Instellingen en onderhoud). Als u een verkooptype selecteert waarvoor een verkoopgids is gedefinieerd, wordt het tabblad **Verkoopgids** weergegeven.
+[Verkoopgidsen][16] worden alleen weergegeven voor specifieke verkooptypen (gedefinieerd in Instellingen en onderhoud). Als u een verkooptype selecteert waarvoor een verkoopgids is gedefinieerd, wordt het sectietabblad **Verkoopgids** weergegeven.
 
 <MoreTab />
 
@@ -82,44 +126,43 @@ In het veld **Fase** op het tabblad **Verkoop** kunt u:
 | <i class="ph ph-x" aria-label="X icoon"></i> | Verloren |
 | <i class="ph ph-triangle" aria-label="Driehoek icoon"></i> | Vastgelopen |
 
-## Gebruik verkoopoverzicht om prioriteiten te stellen
+## Tips {#tips}
 
 Houd uw verkoop georganiseerd, zodat u altijd gefocust bent op de verkopen die voor u het belangrijkst zijn.
 
-Nadat u al uw verkopen in SuperOffice CRM hebt geregistreerd, verschijnen ze in uw persoonlijke verkoopoverzicht op het tabblad **Verkoop** en in uw Agenda. U kunt uw verkooplijst organiseren door [de kolommen die voor u het belangrijkst zijn te filteren][3], te groeperen en toe te voegen. De meest gebruikte kolommen zijn: verkoopbedrag, verkoopdatum en verkoopfase.
+* **Maak uw dagelijkse selecties vast.** Houd selecties zoals **Mijn openstaande verkopen** vastgemaakt in het linkerpaneel en bekijk ze in boardweergave om te zien waar elke verkoop zich in uw pijplijn bevindt.
 
-Het tabblad **Verkoop** fungeert ook als assistent door al uw geplande activiteiten in het veld **Volgende activiteit** te markeren en u te waarschuwen voor vergeten activiteiten in rode tekst.
+* **Filter op wat aandacht nodig heeft.** Gebruik de knop **Filter** om het board te beperken op bijvoorbeeld **Verkoopdatum**, **Volgende activiteit** of **Eigenaar**.
+
+* **Controleer achterstallige verkopen.** Verkopen die in **rood** worden weergegeven, hebben achterstallige activiteiten of verkoopdata. Controleer en werk deze eerst bij.
+
+* **Gebruik het veld Volgende activiteit.** Dit markeert uw geplande activiteiten en toont vergeten activiteiten in rood.
+
+* **Loop uw verkopen één voor één door.** Loop ze door, zodat u de huidige status van elke verkoop kent en een passende opvolgactiviteit hebt ingepland.
+
+* **Gebruik selecties voor opvolging.** Gebruik een selectie van personen als bellijst, of volg lopende verkoopvoorstellen op, zodat geen enkele kans verloren gaat.
+
+Verkopen staan ook in uw Agenda en op het sectietabblad **Verkoop** van de schermen Bedrijf, Persoon en Project. U kunt deze lijsten organiseren door [de kolommen die voor u het belangrijkst zijn te filteren, te groeperen en toe te voegen][3]. De meest gebruikte kolommen zijn: verkoopbedrag, verkoopdatum en verkoopfase.
 
 ![Ga naar de Agenda en krijg een overzicht van alle openstaande verkopen -screenshot][img3]
-
-## Het zijpaneel gebruiken voor verkoop {#side-panel}
-
-Wanneer het scherm **Verkoop** is geopend, kunt u via het **Selectieleden** [zijpaneel][20] verkoopkansen bekijken. Selecteer een verkoopkans om deze gedetailleerd te bekijken in het scherm **Verkoop**.
-
-![Gebruik het zijpaneel op de verkoopkaart om selectieleden en de verkoopselectie te bekijken -screenshot][img2]
-
-### Tips voor efficiëntie
-
-* **Controleer achterstallige verkopen**: Verkoopkansen die in **rood** worden weergegeven in de lijst **Selectieleden** hebben achterstallige activiteiten of verkoopdata. Zorg ervoor dat u deze bijwerkt.
-
-* **Sequentiële beoordeling**: Gebruik het zijpaneel om uw verkopen één voor één te doorlopen en zorg ervoor dat elke kans een passende opvolgactiviteit heeft.
-
-* **Vergelijkbare workflows**: U kunt selecties gebruiken als een bellijst of om lopende verkoopvoorstellen op te volgen, zodat geen enkele kans verloren gaat.
 
 Voor meer informatie over het instellen van uw verkoopkansen, zie de [handleiding voor verkoopprognoses][21].
 
 [3]: /nl/learn/section-tabs/index
-[4]: /nl/sale/learn/create
-[12]: /nl/custom-objects/learn/more-tab
 [13]: /nl/learn/section-tabs/sales-tab
 [14]: /nl/learn/section-tabs/activities-tab
+[4]: /nl/sale/learn/create
 [15]: /nl/sale/learn/stakeholders/index
 [16]: /nl/sale/learn/sales-guides
-[17]: /nl/sale/learn/quote/index#quote-tab
+[21]: /nl/sale/learn/forecasting
 [18]: /nl/learn/basics/links
 [19]: /nl/learn/basics/notes
 [20]: /nl/learn/getting-started/main-screen/side-panel
-[21]: /nl/sale/learn/forecasting
-[img1]: /media/loc/en/sale/sales-screen.png
-[img2]: /media/loc/en/sale/getstarted-sidepanel-saleselection.png
+[12]: /nl/custom-objects/learn/more-tab
+[17]: /nl/sale/learn/quote/index#quote-tab
+[22]: /nl/learn/basics/overview-pages
+[23]: /nl/search-options/selection/learn/board-view
+[24]: /nl/learn/getting-started/main-screen/navigator
+[img1]: /media/loc/en/sale/sale-screen-selection.png
+[img2]: /media/loc/en/sale/sale-screen-card.png
 [img3]: /media/loc/en/sale/user-diary-sales.png

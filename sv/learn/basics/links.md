@@ -3,9 +3,9 @@ uid: help-sv-links
 title: Länkar
 description: Länkar
 keywords: ['Lägg till länk', 'fliken Länkar', 'Länkar-fliken', 'länk']
-author: Bergfrid Skaara Dias
-date: 02.25.2025
-so_version: 10.5.2
+author: digitaldiina
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 tier: starter
 audience: person
@@ -27,13 +27,13 @@ Använd fliken **Länkar** för att koppla relevanta aktiviteter, försäljninga
 Fliken **Länkar** finns i:
 
 * [Fönstret Projekt][1]
-* [Fönstret Försäljning][2]
+* [Försäljningskort][2]
 * [Dialogrutan Händelse][3]
 * [Dialogrutan Dokument][4]
 
 En punkt visas bredvid **Länkar**-fliken när den innehåller en eller flera länkar.
 
-## Lägg till en länk i Projekt- eller Försäljningsfönstret
+## Lägg till en länk till ett projekt eller en försäljning
 
 1. Gå till projektet eller försäljningen där du vill lägga till en länk. (Se [Använd fönstret Sök][8].)
 

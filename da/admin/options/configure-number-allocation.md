@@ -4,8 +4,8 @@ title: Angivelse af nummertildeling
 description: Angivelse af nummertildeling
 keywords: ['nummerallokering', 'tæller', 'firmanummer']
 author: digitaldiina
-date: 10.21.2025
-so_version: 11.5
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 tier: starter
 category: Settings and maintenance
@@ -25,7 +25,7 @@ Den måde, en tæller fungerer på, er at øge værdien af feltet med 1, hver ga
 
 Tællere kan anvendes på følgende felter:
 
-* **Nummer**-felter på skærmbilledet Firma, skærmbilledet Projekt, skærmbilledet Salg og skærmbilledet Person.
+* **Nummer**-felter på skærmbilledet Firma, skærmbilledet Projekt, salgskortet og skærmbilledet Person.
 * Feltet **Vores ref.** på dialogboksen Dokument, hvis det er defineret for den relevante skabelon.
 * Tællere fra tredjepartsleverandører kan også bruges.
 
