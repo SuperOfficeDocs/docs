@@ -4,7 +4,7 @@ title: Konfigurera inkorgen i SuperOffice
 description: Läs om hur du konfigurerar och loggar in på inkorgen i SuperOffice, med antingen Microsoft Graph eller manuella IMAP/SMTP-inställningar. Den här funktionen är ett alternativ till SuperOffice för Outlook eller SuperOffice Gmail Link för att koppla din e-post till SuperOffice CRM.
 keywords: ['SuperOffice Inkorg', 'inkorgen i SuperOffice', 'konfigurera inkorg', 'e-postinställningar', 'SMTP', 'IMAP', 'e-postanslutning', 'applösenord', 'Microsoft Graph', 'on-premise Exchange-server']
 author: digitaldiina
-date: 10.06.2026
+date: 10.08.2026
 so_version: 12.5
 content_type: concept
 license: salesessentials, serviceessentials, marketingessentials
@@ -33,7 +33,7 @@ Inkorgen i SuperOffice ansluter till ditt e-postkonto på ett av två sätt, ber
 Du börjar på samma sätt för båda. Du kan också ansluta från steg 2 i [guiden Användarinställningar][10].
 
 <Note>
-Inkorgen i SuperOffice stöder endast **ett** e-postkonto per användare. Om SuperOffice för Outlook eller SuperOffice Gmail Link är installerat och anslutet till din e-post är funktionen Inkorg inte tillgänglig.
+Inkorgen i SuperOffice stöder endast **ett** e-postkonto per användare.
 </Note>
 
 ## Innan du börjar
@@ -61,7 +61,7 @@ Inkorgen i SuperOffice stöder endast **ett** e-postkonto per användare. Om Sup
 1. Ange din e-postadress och klicka på **Nästa**.
 
     * Om din e-postadress redan är godkänd för Microsoft Graph konfigureras kontot automatiskt och inkorgen öppnas.
-    * Om din leverantör använder IMAP, till exempel Gmail, ombeds du ange ditt lösenord. Ange det och klicka på **Logga in**.
+    * Om din leverantör använder IMAP, till exempel Gmail, ombeds du ange ditt lösenord. Ange det och klicka på **Logga in**. För Gmail använder du ett applösenord i stället för ditt vanliga lösenord. Se [Skapa och använda applösenord i Gmail][11].
 
 1. Om autentiseringen misslyckas eller leverantören inte kan identifieras klickar du på **Avancerade inställningar** för att ange serverinställningarna manuellt.
 
@@ -97,9 +97,9 @@ Dessa inställningar finns i din e-postleverantörs dokumentation. För Gmail, s
 
 Banderollen högst upp i **Alternativ för e-post** visar om ett e-postkonto är anslutet.
 
-1. Klicka på <i class="ph ph-user-circle" aria-label="Personliga inställningar"></i> i toppraden och välj **Alternativ för e-post**.
+1. Klicka på **Personliga inställningar** (<i class="ph ph-user-circle" aria-hidden="true"></i>) i toppraden och välj sedan **Alternativ för e-post**.
 
-1. Kontrollera banderollen högst upp under fliken **Allmänt**. När ett konto är anslutet visas **Inloggad med** och din e-postadress.
+1. Kontrollera banderollen högst upp i dialogrutan **Alternativ för e-post**. När ett konto är anslutet visas **Inloggad med** och din e-postadress.
 
     ![Alternativ för e-post som visar det inloggade kontot och länken Logga ut -screenshot][img6]
 
@@ -115,7 +115,7 @@ Att logga ut raderar **inte** själva e-postkontot (till exempel ditt Gmail- ell
 
 ## Felsökningstips
 
-* Inkorgen i SuperOffice stöder **inte POP3**. Endast IMAP är tillåtet.
+* Inkorgen i SuperOffice stöder **IMAP** och **Microsoft Graph**. **POP3**-konton stöds inte.
 
 * Om inkorgen inte uppdateras kan det bero på att din e-postleverantör blockerar anslutningen.
   * Kontrollera om du har fått ett meddelande om ett blockerat eller obehörigt inloggningsförsök.
@@ -126,7 +126,7 @@ Att logga ut raderar **inte** själva e-postkontot (till exempel ditt Gmail- ell
 * **Microsoft 365-användare:** Om inkorgen ansluter utan problem men e-post inte kan skickas, be administratören aktivera **Authenticated SMTP** för din brevlåda i Microsoft 365 administrationscenter. Det är en inställning som Microsoft kan ha inaktiverat som standard.
 
 <Tip>
-För att justera layout, teckensnitt eller beteende för meddelanden, gå till <i class="ph ph-user-circle" aria-hidden="true"></i> **Personliga inställningar** > **Alternativ för e-post** > fliken **Allmänt**.
+För att justera layout, teckensnitt eller beteende för meddelanden, gå till <i class="ph ph-user-circle" aria-hidden="true"></i> **Personliga inställningar** > **Alternativ för e-post**.
 </Tip>
 
 [1]: ../../../contact/learn/index

@@ -4,7 +4,7 @@ title: Set up SuperOffice Inbox
 description: Learn how to set up and log in to the SuperOffice Inbox, using either Microsoft Graph or manual IMAP/SMTP settings. This feature is an alternative to SuperOffice for Outlook or SuperOffice Gmail Link for connecting your email account to SuperOffice CRM.
 keywords: ['email setup', 'IMAP', 'SMTP', 'email connection', 'app passwords', 'Microsoft Graph', 'on-premise Exchange server']
 author: digitaldiina
-date: 10.06.2026
+date: 10.08.2026
 so_version: 12.5
 content_type: concept
 license: salesessentials, serviceessentials, marketingessentials
@@ -33,7 +33,7 @@ SuperOffice Inbox connects to your email account in one of two ways, depending o
 You start the same way for both. You can also connect from step 2 of the [User setup wizard][10].
 
 <Note>
-SuperOffice Inbox supports only **one** email account per user. If SuperOffice for Outlook or SuperOffice Gmail Link is installed and connected to your email, the Inbox feature is not available.
+SuperOffice Inbox supports only **one** email account per user.
 </Note>
 
 ## Before you begin
@@ -61,7 +61,7 @@ SuperOffice Inbox supports only **one** email account per user. If SuperOffice f
 1. Enter your email address and click **Next**.
 
     * If your email address is already authorized for Microsoft Graph, the account is set up automatically and the inbox opens.
-    * If your provider uses IMAP, for example Gmail, you are asked for your password. Enter it and click **Log in**.
+    * If your provider uses IMAP, for example Gmail, you are asked for your password. Enter it and click **Log in**. For Gmail, use an app password instead of your regular password. See [Create and use app passwords in Gmail][11].
 
 1. If authentication fails or your provider cannot be detected, click **Advanced settings** to enter the server settings manually.
 
@@ -97,9 +97,9 @@ These settings can be found in your email provider's documentation. For Gmail, s
 
 The banner at the top of **Email options** shows whether an email account is connected.
 
-1. Click <i class="ph ph-user-circle" aria-label="Personal settings"></i> in the top bar and select **Email options**.
+1. Click **Personal settings** (<i class="ph ph-user-circle" aria-hidden="true"></i>) in the top bar, and then select **Email options**.
 
-1. Check the banner at the top of the **General** tab. When an account is connected, it shows **Logged in with** and your email address.
+1. Check the banner at the top of the **Email options** dialog. When an account is connected, it shows **Logged in with** and your email address.
 
     ![Email options showing the logged-in account and the Sign out link -screenshot][img6]
 
@@ -115,7 +115,7 @@ Signing out does **not** delete your actual email account (for example, your Gma
 
 ## Troubleshooting tips
 
-* The SuperOffice Inbox does not support **POP3** email accounts. Only IMAP is supported.
+* The SuperOffice Inbox supports **IMAP** and **Microsoft Graph**. **POP3** email accounts are not supported.
 
 * If your inbox is not updating, your email provider may be blocking the connection.
   * Check your email account for a message about a blocked or unauthorized login attempt.
@@ -126,7 +126,7 @@ Signing out does **not** delete your actual email account (for example, your Gma
 * **Microsoft 365 users:** If your inbox connects fine but email won't send, ask your admin to enable **Authenticated SMTP** for your mailbox in the Microsoft 365 admin center. This is a setting Microsoft can disable by default.
 
 <Tip>
-To adjust layout, font, or behavior for messages, go to <i class="ph ph-user-circle" aria-hidden="true"></i> **Personal settings** > **Email options** > **General** tab.
+To adjust layout, font, or behavior for messages, go to <i class="ph ph-user-circle" aria-hidden="true"></i> **Personal settings** > **Email options**.
 </Tip>
 
 [1]: ../../../contact/learn/index

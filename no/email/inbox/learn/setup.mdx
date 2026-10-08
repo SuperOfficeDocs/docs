@@ -4,7 +4,7 @@ title: Konfigurer SuperOffice-innboksen
 description: Lær hvordan du konfigurerer og logger på SuperOffice-innboksen, ved å bruke enten Microsoft Graph eller manuelle IMAP/SMTP-innstillinger. Denne funksjonen er et alternativ til SuperOffice for Outlook eller SuperOffice Gmail Link for å koble e-postkontoen din til SuperOffice CRM.
 keywords: ['SuperOffice-innboks', 'konfigurer innboks', 'e-postoppsett', 'IMAP', 'SMTP', 'e-posttilkobling', 'apppassord', 'Microsoft Graph', 'lokal Exchange-server']
 author: digitaldiina
-date: 10.06.2026
+date: 10.08.2026
 so_version: 12.5
 content_type: concept
 license: salesessentials, serviceessentials, marketingessentials
@@ -33,7 +33,7 @@ SuperOffice-innboksen kobler til e-postkontoen din på én av to måter, avhengi
 Du starter på samme måte for begge. Du kan også koble til fra trinn 2 i [veiviseren Brukeroppsett][10].
 
 <Note>
-SuperOffice-innboksen støtter kun **én** e-postkonto per bruker. Hvis SuperOffice for Outlook eller SuperOffice Gmail Link er installert og tilkoblet e-posten din, er ikke innboksfunksjonen tilgjengelig.
+SuperOffice-innboksen støtter kun **én** e-postkonto per bruker.
 </Note>
 
 ## Før du begynner
@@ -61,7 +61,7 @@ SuperOffice-innboksen støtter kun **én** e-postkonto per bruker. Hvis SuperOff
 1. Skriv inn e-postadressen din og klikk på **Neste**.
 
     * Hvis e-postadressen din allerede er autorisert for Microsoft Graph, settes kontoen opp automatisk og innboksen åpnes.
-    * Hvis leverandøren din bruker IMAP, for eksempel Gmail, blir du bedt om passordet ditt. Skriv det inn og klikk på **Logg på**.
+    * Hvis leverandøren din bruker IMAP, for eksempel Gmail, blir du bedt om passordet ditt. Skriv det inn og klikk på **Logg på**. For Gmail bruker du et app-passord i stedet for det vanlige passordet. Se [Opprette og bruke apppassord i Gmail][11].
 
 1. Hvis autentisering mislykkes eller leverandøren din ikke blir gjenkjent, klikker du på **Avanserte innstillinger** for å skrive inn serverinnstillingene manuelt.
 
@@ -97,9 +97,9 @@ Disse innstillingene finner du i e-postleverandørens dokumentasjon. For Gmail, 
 
 Banneret øverst i **E-postalternativer** viser om en e-postkonto er tilkoblet.
 
-1. Klikk på <i class="ph ph-user-circle" aria-label="Personal settings"></i> øverst og velg **E-postalternativer**.
+1. Klikk på **Personlige innstillinger** (<i class="ph ph-user-circle" aria-hidden="true"></i>) øverst, og velg deretter **E-postalternativer**.
 
-1. Se på banneret øverst i fanen **Generelt**. Når en konto er tilkoblet, vises **Logget på med** og e-postadressen din.
+1. Se på banneret øverst i dialogboksen **E-postalternativer**. Når en konto er tilkoblet, vises **Logget på med** og e-postadressen din.
 
     ![E-postalternativer med innlogget konto og Logg av-lenken -screenshot][img6]
 
@@ -115,7 +115,7 @@ Utlogging sletter **ikke** den faktiske kontoen din (for eksempel Gmail eller Ou
 
 ## Feilsøkingstips
 
-* SuperOffice-innboksen støtter ikke **POP3**-kontoer. Kun IMAP er støttet.
+* SuperOffice-innboksen støtter **IMAP** og **Microsoft Graph**. **POP3**-kontoer støttes ikke.
 
 * Hvis innboksen ikke oppdateres, kan det være at e-postleverandøren blokkerer tilkoblingen.
   * Sjekk e-posten for melding om blokkert eller uautorisert påloggingsforsøk.
@@ -126,7 +126,7 @@ Utlogging sletter **ikke** den faktiske kontoen din (for eksempel Gmail eller Ou
 * **Microsoft 365-brukere:** Hvis innboksen kobler til uten problemer, men e-post ikke kan sendes, be administratoren aktivere **Authenticated SMTP** for postboksen din i Microsoft 365 admin-senter. Dette er en innstilling Microsoft kan ha deaktivert som standard.
 
 <Tip>
-For å tilpasse utseende, skrift eller oppførsel for meldinger, gå til <i class="ph ph-user-circle" aria-hidden="true"></i> **Personlige innstillinger** > **E-postalternativer** > fanen **Generelt**.
+For å tilpasse utseende, skrift eller oppførsel for meldinger, gå til <i class="ph ph-user-circle" aria-hidden="true"></i> **Personlige innstillinger** > **E-postalternativer**.
 </Tip>
 
 [1]: ../../../contact/learn/index

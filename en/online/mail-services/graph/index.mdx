@@ -3,7 +3,7 @@ title: Microsoft Graph
 description: How a Microsoft 365 Global Administrator grants tenant-wide consent for SuperOffice's Microsoft Graph email connection.
 keywords: ['admin consent', 'Microsoft 365', 'Entra ID', 'IMAP', 'SMTP', 'Global Administrator']
 author: digitaldiina
-date: 10.06.2026
+date: 10.08.2026
 so_version: 12.5
 content_type: howto
 category: email
@@ -30,7 +30,7 @@ Consent can be granted in three ways:
 * Using a URL that a user copies from the permission dialog they encounter when they try to connect their own mailbox.
 * Directly from the sign-in prompt, using a Global Administrator account.
 
-If a user without admin rights reaches the sign-in prompt, they can select **Return to the application without granting consent**, then copy a link to share with their Microsoft 365 Global Administrator. See [Connect your accounts][1] for what this looks like from the user's side.
+If a user without admin rights tries to connect their mailbox, SuperOffice shows a dialog with a **Copy admin link** button. They copy the link and share it with their Microsoft 365 Global Administrator. See [Connect your accounts][1] for what this looks like from the user's side.
 
 The generic authorization URL and the link a user shares both open the same Microsoft sign-in page. From there:
 

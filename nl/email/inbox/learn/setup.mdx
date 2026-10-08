@@ -4,7 +4,7 @@ title: SuperOffice Postvak IN instellen
 description: Leer hoe u SuperOffice Postvak IN instelt en inlogt, met Microsoft Graph of handmatige IMAP/SMTP-instellingen. Deze functie is een alternatief voor SuperOffice voor Outlook of SuperOffice Gmail Link om uw e-mailaccount te koppelen aan SuperOffice CRM.
 keywords: ['SuperOffice Postvak IN', 'postvak instellen', 'e-mailinstellingen', 'IMAP', 'SMTP', 'e-mailverbinding', 'app-wachtwoorden', 'Microsoft Graph', 'on-premise Exchange-server']
 author: digitaldiina
-date: 10.06.2026
+date: 10.08.2026
 so_version: 12.5
 content_type: howto
 license: salesessentials, serviceessentials, marketingessentials
@@ -33,7 +33,7 @@ SuperOffice Postvak IN maakt op een van twee manieren verbinding met uw e-mailac
 U begint voor beide op dezelfde manier. U kunt ook koppelen via stap 2 van de [wizard Gebruikersinstellingen][10].
 
 <Note>
-SuperOffice Postvak IN ondersteunt slechts **één** e-mailaccount per gebruiker. Als SuperOffice voor Outlook of SuperOffice Gmail Link is geïnstalleerd en verbonden met uw e-mail, is Postvak IN niet beschikbaar.
+SuperOffice Postvak IN ondersteunt slechts **één** e-mailaccount per gebruiker.
 </Note>
 
 ## Voordat u begint
@@ -61,7 +61,7 @@ SuperOffice Postvak IN ondersteunt slechts **één** e-mailaccount per gebruiker
 1. Voer uw e-mailadres in en klik op **Volgende**.
 
     * Als uw e-mailadres al is geautoriseerd voor Microsoft Graph, wordt het account automatisch ingesteld en wordt het postvak geopend.
-    * Als uw provider IMAP gebruikt, bijvoorbeeld Gmail, wordt u om uw wachtwoord gevraagd. Voer dit in en klik op **Aanmelden**.
+    * Als uw provider IMAP gebruikt, bijvoorbeeld Gmail, wordt u om uw wachtwoord gevraagd. Voer dit in en klik op **Aanmelden**. Gebruik voor Gmail een app-wachtwoord in plaats van uw gewone wachtwoord. Zie [App-wachtwoorden maken en gebruiken in Gmail][11].
 
 1. Als verificatie mislukt of uw provider niet wordt herkend, klik dan op **Geavanceerde instellingen** om de serverinstellingen handmatig in te voeren.
 
@@ -97,9 +97,9 @@ Deze instellingen zijn te vinden in de documentatie van uw e-mailprovider. Voor 
 
 De banner boven aan **E-mailopties** laat zien of er een e-mailaccount is gekoppeld.
 
-1. Klik op <i class="ph ph-user-circle" aria-label="Persoonlijke instellingen"></i> in de bovenste balk en kies **E-mailopties**.
+1. Klik in de bovenste balk op **Persoonlijke instellingen** (<i class="ph ph-user-circle" aria-hidden="true"></i>) en kies vervolgens **E-mailopties**.
 
-1. Bekijk de banner boven aan het tabblad **Algemeen**. Als er een account is gekoppeld, ziet u **Aangemeld met** en uw e-mailadres.
+1. Bekijk de banner boven aan het dialoogvenster **E-mailopties**. Als er een account is gekoppeld, ziet u **Aangemeld met** en uw e-mailadres.
 
     ![E-mailopties met het aangemelde account en de koppeling Afmelden -screenshot][img6]
 
@@ -115,7 +115,7 @@ Afmelden verwijdert **niet** uw eigenlijke e-mailaccount (zoals Gmail of Outlook
 
 ## Tips voor probleemoplossing
 
-* SuperOffice Postvak IN ondersteunt **geen POP3**-accounts. Alleen IMAP wordt ondersteund.
+* SuperOffice Postvak IN ondersteunt **IMAP** en **Microsoft Graph**. **POP3**-accounts worden niet ondersteund.
 
 * Als het postvak niet wordt bijgewerkt, blokkeert uw e-mailprovider mogelijk de verbinding.
   * Controleer uw e-mailaccount op berichten over een geblokkeerde of ongeautoriseerde aanmeldpoging.
@@ -126,7 +126,7 @@ Afmelden verwijdert **niet** uw eigenlijke e-mailaccount (zoals Gmail of Outlook
 * **Microsoft 365-gebruikers:** Als uw postvak zonder problemen verbinding maakt, maar er geen e-mail kan worden verzonden, vraag dan uw beheerder om **Authenticated SMTP** in te schakelen voor uw mailbox in het Microsoft 365-beheercentrum. Dit is een instelling die Microsoft standaard kan hebben uitgeschakeld.
 
 <Tip>
-Ga naar <i class="ph ph-user-circle" aria-hidden="true"></i> **Persoonlijke instellingen** > **E-mailopties** > tabblad **Algemeen** om de lay-out, het lettertype of gedrag van berichten aan te passen.
+Ga naar <i class="ph ph-user-circle" aria-hidden="true"></i> **Persoonlijke instellingen** > **E-mailopties** om de lay-out, het lettertype of gedrag van berichten aan te passen.
 </Tip>
 
 [1]: ../../../contact/learn/index
