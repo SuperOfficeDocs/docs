@@ -2,10 +2,10 @@
 uid: help-sv-extra-field
 title: Extrafält
 description: Extrafält
-keywords: ['extrafält', 'anpassead fält', 'Service']
+keywords: ['extrafält', 'anpassead fält', 'Service', 'url', 'klickbar länk', 'länk i extrafält']
 author: Bergfrid Dias
-date: 06.10.2026
-so_version: 12.0
+date: 10.13.2026
+so_version: 12.5
 content_type: concept
 tier: core
 audience: person
@@ -55,6 +55,22 @@ Dessutom har varje enhet en relations typ. Till exempel *kontaktrelationen*.
 
 Till skillnad från användardefinierade fält läggs extrafält till som faktiska fält i databastabellerna. Det finns inga fördefinierade platser du behöver ta hänsyn till, och i princip inga begränsningar.
 
+### URL:er i textfält {#urls}
+
+URL:er som lagras i extrafält av typen **Kort text** och **Lång text** visas som klickbara länkar i läsläge. Länken öppnas i en ny flik. I redigeringsläge är fältet ett vanligt textfält.
+
+Det här är användbart när varje post har sin egen URL, till exempel en order eller ett ärende i ett annat system. Länkfunktionen i [Skärmdesigner][7] täcker bara en fast URL plus en variabel.
+
+Så här använder du en URL som länk:
+
+* Extrafältet måste vara ett fält av typen **Kort text** eller **Lång text** på ärenden, meddelanden eller kort för anpassade objekt.
+* Extrafältet måste ha skapats i **Systemdesign**. De användardefinierade fälten på Företag, Kontakt, Projekt och Försäljning kan inte användas för länkar.
+* URL:en måste börja med `www.` eller `http(s)://`.
+
+Ett extrafält med namnet **Orderlänk** som innehåller `https://erp.example.com/orders/48213` öppnar till exempel den ordern i ditt ERP-system.
+
+![Ärende med en URL i ett extrafält som visas som en klickbar länk -screenshot][img3]
+
 ### Relationer (förnyckel, FK) {#relation}
 
 Databastabeller är kopplade med *förnyckel* (FK). Dessa är fälttyper som slutar på *relation*.
@@ -94,5 +110,7 @@ För att visa detaljerna för objekt i denna lista utan att behöva öppna varje
 Extrafält kan till exempel användas som sökkriterier och kolumner i försäljningar i SuperOffice CRM.
 
 [6]: ./extra-table
+[7]: /sv/customization/screen-designer/admin/add-button
 [img1]: ../../../media/loc/en/automation/section-tab-for-relation.png
 [img2]: ../../../media/loc/en/automation/preview-custom-object-from-side-panel.png
+[img3]: /media/loc/en/request/request-field-with-url-link.png

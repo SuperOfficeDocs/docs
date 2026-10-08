@@ -2,10 +2,10 @@
 uid: help-de-extra-field
 title: Zusatzfeld
 description: Zusatzfeld
-keywords: ['Zusatzfeld']
+keywords: ['Zusatzfeld', 'url', 'anklickbarer Link', 'Link im Zusatzfeld']
 author: Bergfrid Dias
-date: 06.10.2026
-so_version: 12.0
+date: 10.13.2026
+so_version: 12.5
 content_type: concept
 tier: core
 audience: user
@@ -55,6 +55,22 @@ Darüber hinaus hat jede Entität einen Beziehungstyp. Zum Beispiel die *Beziehu
 
 Im Gegensatz zu benutzerdefinierten Feldern werden Zusatzfelder als tatsächliche Felder zu den Datenbanktabellen hinzugefügt. Es gibt keine vordefinierten Slots, die Sie berücksichtigen müssen, und im Wesentlichen keine Einschränkungen.
 
+### URLs in Textfeldern {#urls}
+
+URLs, die in Zusatzfeldern vom Typ **Kurzer Text** und **Langer Text** gespeichert sind, werden im Lesemodus als anklickbare Links angezeigt. Der Link wird in einem neuen Tab geöffnet. Im Bearbeitungsmodus ist das Feld ein normales Textfeld.
+
+Das ist nützlich, wenn jeder Datensatz eine eigene URL hat, zum Beispiel einen Auftrag oder Fall in einem anderen System. Die Linkfunktion im [Ansichtsdesigner][7] deckt nur eine feste URL plus eine Variable ab.
+
+So verwenden Sie eine URL als Link:
+
+* Das Zusatzfeld muss ein Feld vom Typ **Kurzer Text** oder **Langer Text** bei Anfragen, Nachrichten oder Karten von Zusatzobjekten sein.
+* Das Zusatzfeld muss im **Systemdesign** erstellt worden sein. Die benutzerdefinierten Felder bei Unternehmen, Kontakt, Projekt und Verkauf können nicht für Links verwendet werden.
+* Die URL muss mit `www.` oder `http(s)://` beginnen.
+
+Ein Zusatzfeld mit dem Namen **Bestelllink**, das `https://erp.example.com/orders/48213` enthält, öffnet zum Beispiel diese Bestellung in Ihrem ERP-System.
+
+![Anfrage mit einer URL in einem Zusatzfeld, die als anklickbarer Link angezeigt wird -screenshot][img3]
+
 ### Beziehungen (Fremdschlüssel, FK) {#relation}
 
 Datenbanktabellen sind mit *Fremdschlüssel* (FK) verbunden. Diese sind Feldtypen, die auf *Beziehung* anfangen.
@@ -94,5 +110,7 @@ Um die Details der Elemente in dieser Liste anzuzeigen, ohne jedes einzelne Obje
 Zusatzfelder können beispielsweise als Suchkriterien und Spalten im Verkauf in SuperOffice CRM verwendet werden.
 
 [6]: ./extra-table
+[7]: /de/customization/screen-designer/admin/add-button
 [img1]: ../../../media/loc/en/automation/section-tab-for-relation.png
 [img2]: ../../../media/loc/en/automation/preview-custom-object-from-side-panel.png
+[img3]: /media/loc/en/request/request-field-with-url-link.png

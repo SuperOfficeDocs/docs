@@ -2,10 +2,10 @@
 uid: help-nl-extra-field
 title: Extra veld
 description: Extra veld
-keywords: ['extra veld', 'aangepast', 'databasetabel']
+keywords: ['extra veld', 'aangepast', 'databasetabel', 'url', 'klikbare link', 'link in extra veld']
 author: Bergfrid Dias
-date: 06.10.2026
-so_version: 12.0
+date: 10.13.2026
+so_version: 12.5
 content_type: concept
 tier: core
 audience: person
@@ -55,6 +55,22 @@ Bovendien heeft elke entiteit een relatie type. Bijvoorbeeld de *contactrelatie*
 
 In tegenstelling tot door de gebruiker gedefinieerde velden worden extra velden toegevoegd als daadwerkelijke velden aan de databasetabellen. Er zijn geen vooraf gedefinieerde slots waarmee je rekening moet houden, en in wezen geen beperkingen.
 
+### URL's in tekstvelden {#urls}
+
+URL's die zijn opgeslagen in extra velden van het type **Korte tekst** en **Lange tekst** worden in leesmodus weergegeven als klikbare links. De link wordt geopend in een nieuw tabblad. In bewerkmodus is het veld een gewoon tekstveld.
+
+Dit is handig als elk record een eigen URL heeft, bijvoorbeeld een order of dossier in een ander systeem. De linkfunctie in de [Schermontwerper][7] dekt alleen een vaste URL plus een variabele.
+
+Zo gebruik je een URL als link:
+
+* Het extra veld moet een veld van het type **Korte tekst** of **Lange tekst** zijn bij verzoeken, berichten of kaarten van aangepaste objecten.
+* Het extra veld moet zijn aangemaakt in **Systeemontwerp**. De door de gebruiker gedefinieerde velden bij Bedrijf, Contact, Project en Verkoop kunnen niet voor links worden gebruikt.
+* De URL moet beginnen met `www.` of `http(s)://`.
+
+Een extra veld met de naam **Orderlink** dat `https://erp.example.com/orders/48213` bevat, opent bijvoorbeeld die order in je ERP-systeem.
+
+![Verzoek met een URL in een extra veld die wordt weergegeven als klikbare link -screenshot][img3]
+
 ### Relaties (vreemde sleutel, FK) {#relation}
 
 Databasetabellen zijn verbonden met *vreemde sleutel* (FK). Dit zijn veldtypen die eindigen op *relation*.
@@ -94,5 +110,7 @@ Om de details van items in deze lijst te bekijken zonder elke entiteit afzonderl
 Extra velden kunnen bijvoorbeeld worden gebruikt als zoekcriteria en kolommen in de verkoop in SuperOffice CRM.
 
 [6]: ./extra-table
+[7]: /nl/customization/screen-designer/admin/add-button
 [img1]: ../../../media/loc/en/automation/section-tab-for-relation.png
 [img2]: ../../../media/loc/en/automation/preview-custom-object-from-side-panel.png
+[img3]: /media/loc/en/request/request-field-with-url-link.png
