@@ -4,7 +4,7 @@ title: SuperOffice Posteingang einrichten
 description: Erfahren Sie, wie Sie den SuperOffice Posteingang einrichten und sich anmelden, entweder über Microsoft Graph oder mit manuellen IMAP-/SMTP-Einstellungen. Diese Funktion ist eine Alternative zu SuperOffice für Outlook oder SuperOffice Gmail Link, um Ihr E-Mail-Konto mit SuperOffice CRM zu verbinden.
 keywords: ['SuperOffice Posteingang', 'Posteingang einrichten', 'E-Mail-Konfiguration', 'IMAP', 'E-Mail-Verbindung', 'App-Passwörter', 'Microsoft Graph', 'On-Premises-Exchange-Server']
 author: digitaldiina
-date: 10.06.2026
+date: 10.08.2026
 so_version: 12.5
 content_type: concept
 license: salesessentials, serviceessentials, marketingessentials
@@ -33,7 +33,7 @@ Der SuperOffice Posteingang verbindet sich je nach Anbieter auf eine von zwei Ar
 Sie beginnen in beiden Fällen auf dieselbe Weise. Sie können sich auch in Schritt 2 des [Assistenten Benutzereinrichtung][10] verbinden.
 
 <Note>
-Der SuperOffice Posteingang unterstützt nur **ein** E-Mail-Konto pro Benutzer. Wenn SuperOffice für Outlook oder SuperOffice Gmail Link installiert und mit Ihrem E-Mail-Konto verbunden ist, steht die Posteingangsfunktion nicht zur Verfügung.
+Der SuperOffice Posteingang unterstützt nur **ein** E-Mail-Konto pro Benutzer.
 </Note>
 
 ## Vorbereitungen
@@ -61,7 +61,7 @@ Der SuperOffice Posteingang unterstützt nur **ein** E-Mail-Konto pro Benutzer. 
 1. Geben Sie Ihre E-Mail-Adresse ein und klicken Sie auf **Weiter**.
 
     * Wenn Ihre E-Mail-Adresse bereits für Microsoft Graph autorisiert ist, wird das Konto automatisch eingerichtet und der Posteingang wird geöffnet.
-    * Wenn Ihr Anbieter IMAP verwendet, z. B. Gmail, werden Sie nach Ihrem Passwort gefragt. Geben Sie es ein und klicken Sie auf **Anmelden**.
+    * Wenn Ihr Anbieter IMAP verwendet, z. B. Gmail, werden Sie nach Ihrem Passwort gefragt. Geben Sie es ein und klicken Sie auf **Anmelden**. Für Gmail verwenden Sie ein App-Passwort statt Ihres regulären Passworts. Siehe [App-Passwörter in Gmail erstellen und verwenden][11].
 
 1. Schlägt die Authentifizierung fehl oder kann Ihr Anbieter nicht erkannt werden, klicken Sie auf **Erweiterte Einstellungen**, um die Serverdaten manuell einzugeben.
 
@@ -97,9 +97,9 @@ Diese Einstellungen finden Sie in der Dokumentation Ihres E-Mail-Anbieters. Für
 
 Das Banner oben in den **E-Mail-Optionen** zeigt an, ob ein E-Mail-Konto verbunden ist.
 
-1. Klicken Sie in der oberen Leiste auf <i class="ph ph-user-circle" aria-label="Persönliche Einstellungen"></i> und wählen Sie **E-Mail-Optionen**.
+1. Klicken Sie in der oberen Leiste auf **Persönliche Einstellungen** (<i class="ph ph-user-circle" aria-hidden="true"></i>) und wählen Sie dann **E-Mail-Optionen**.
 
-1. Prüfen Sie das Banner oben auf der Registerkarte **Allgemein**. Wenn ein Konto verbunden ist, zeigt es **Angemeldet mit** und Ihre E-Mail-Adresse.
+1. Prüfen Sie das Banner oben im Dialogfeld **E-Mail-Optionen**. Wenn ein Konto verbunden ist, zeigt es **Angemeldet mit** und Ihre E-Mail-Adresse.
 
     ![E-Mail-Optionen mit angemeldetem Konto und dem Link Abmelden -screenshot][img6]
 
@@ -115,7 +115,7 @@ Das Abmelden löscht **nicht** Ihr tatsächliches Konto (z. B. bei Gmail oder 
 
 ## Tipps zur Fehlerbehebung
 
-* Der SuperOffice Posteingang unterstützt **keine POP3-Konten**. Nur IMAP wird unterstützt.
+* Der SuperOffice Posteingang unterstützt **IMAP** und **Microsoft Graph**. **POP3**-Konten werden nicht unterstützt.
 
 * Wenn der Posteingang nicht aktualisiert wird, blockiert Ihr Anbieter möglicherweise die Verbindung.
   * Überprüfen Sie Ihr E-Mail-Konto auf Benachrichtigungen zu blockierten oder nicht autorisierten Anmeldeversuchen.
@@ -126,7 +126,7 @@ Das Abmelden löscht **nicht** Ihr tatsächliches Konto (z. B. bei Gmail oder 
 * **Microsoft 365-Nutzer:** Wenn Ihr Posteingang problemlos verbindet, aber keine E-Mails gesendet werden können, bitten Sie Ihren Administrator, **Authenticated SMTP** für Ihr Postfach im Microsoft 365 Admin Center zu aktivieren. Diese Einstellung kann von Microsoft standardmäßig deaktiviert sein.
 
 <Tip>
-Um Layout, Schriftart oder Verhalten von Nachrichten anzupassen, gehen Sie zu <i class="ph ph-user-circle" aria-hidden="true"></i> **Persönliche Einstellungen** > **E-Mail-Optionen** > Registerkarte **Allgemein**.
+Um Layout, Schriftart oder Verhalten von Nachrichten anzupassen, gehen Sie zu <i class="ph ph-user-circle" aria-hidden="true"></i> **Persönliche Einstellungen** > **E-Mail-Optionen**.
 </Tip>
 
 [1]: ../../../contact/learn/index
