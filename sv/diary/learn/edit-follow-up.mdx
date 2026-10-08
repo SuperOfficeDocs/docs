@@ -2,10 +2,10 @@
 uid: help-sv-follow-up-edit
 title: Redigera händelse
 description: Hur du öppnar, redigerar eller tar bort en händelse. Ändra sluttid för en händelse i kalendern. Redigera eller ta bort en inbjudan. Redigera återkommande händelse.
-keywords: ['redigera händelse', 'uppdatera händelse', 'förläng möte', 'förkorta möte', 'ändra endast denna förekomst', 'ta bort händelse', 'avboka möte', 'kalender', 'händelse', 'bokning', 'möte', 'uppgift', 'att göra', 'samtal', 'telefon', 'inbjudan']
+keywords: ['redigera händelse', 'uppdatera händelse', 'förläng möte', 'förkorta möte', 'ändra endast denna förekomst', 'ta bort händelse', 'avboka möte', 'kalender', 'händelse', 'bokning', 'möte', 'uppgift', 'att göra', 'samtal', 'telefon', 'inbjudan', 'externt ägd händelse', 'ta bort synkroniserad händelse']
 author: digitaldiina
-date: 03.27.2026
-so_version: 11.11
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
@@ -38,7 +38,7 @@ Om du redigerar tid, datum eller plats för en händelse - eller tar bort en inb
 
     <NoteRepetition />
 
-    **Med Synchronizer:** Om händelsen skapades i Outlook eller Gmail och synkroniserades till SuperOffice via Synchronizer är de flesta fält skrivskyddade. Du kan bara redigera dessa SuperOffice-specifika fält: **Alarm**, **Typ**, **Företag**, **Upptagen/ledig**, **Försäljning**, **Projekt**, **Interna anteckningar**, **Prioritet** och **Utförd**. Allt annat förblir skrivskyddat för att undvika att ändringar skrivs över under nästa synkronisering.
+    **Med Synchronizer:** Om händelsen skapades i Outlook eller Gmail och synkroniserades till SuperOffice via Synchronizer är de flesta fält skrivskyddade. Du kan bara redigera dessa SuperOffice-specifika fält: **Alarm**, **Typ**, **Företag**, **Upptagen/ledig**, **Försäljning**, **Projekt**, **Interna anteckningar**, **Prioritet** och **Utförd**. Allt annat förblir skrivskyddat för att undvika att ändringar skrivs över under nästa synkronisering. Användare med den funktionella behörigheten **Delete externally owned follow-ups** kan ta bort dessa händelser. Läs mer under [Ta bort händelse i Kalendern](#delete).
 
 3. Klicka på **Spara**.
 
@@ -91,7 +91,10 @@ Om du ändrar starttiden för ett enskilt möte påverkas inte återkomstregeln.
 
 Du kan ta bort möten som skapats i Outlook eller Gmail i SuperOffice när de är mer än 7 dagar gamla.
 
+Användare med den [funktionella behörigheten][7] **Delete externally owned follow-ups**, vanligtvis administratörer, kan ta bort händelser som har synkroniserats från en extern kalender, till exempel överblivna, dubbla eller föråldrade händelser, med standardåtgärden **Ta bort**. Borttagningen loggas. Behörigheten ger inte möjlighet att redigera, så dessa händelser förblir skrivskyddade. Den externa kalendern är fortfarande den styrande källan: Om det ursprungliga objektet fortfarande finns och ligger inom synkroniseringens omfattning skapas händelsen på nytt vid nästa synkronisering. Detta gäller för alla externa kalendersystem som stöds.
+
 <TipDeletion />
 
 [3]: ./create-follow-up#fields
+[7]: /sv/admin/user-management/role/functional-rights
 [img1]: ../../../media/loc/en/diary/change-repeating-fo.png

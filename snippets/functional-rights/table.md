@@ -26,6 +26,7 @@
 | Create new tags directly | The user may create tags directly, without using SuperOffice Settings and maintenance. | |
 | Create selections | The user may create and edit selections. | **Legacy Service client only** |
 | Dashboard administrator | The user may pin dashboards to other associates. | |
+| Delete externally owned follow-ups | The user may delete follow-ups synchronized from an external calendar. The follow-ups remain read-only. | |
 | Edit FAQ entries | The user may create and edit FAQ entries. | |
 | Edit all requests | The user may edit all requests. | |
 | Edit own synchronization settings | Grants limited access to SuperOffice Intellisync Server Maintenance. The user may change own settings only. | **Obsolete** |

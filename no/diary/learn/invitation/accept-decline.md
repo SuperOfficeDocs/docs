@@ -4,8 +4,8 @@ title: Oppfølginger du er invitert til
 description: Vise oppfølginger du er invitert til; Godta eller avslå invitasjoner
 keywords: ['dagbok', 'oppfølging', 'invitasjon']
 author: Bergfrid Dias
-date: 02.05.2025
-so_version: 10.5.2
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
@@ -34,7 +34,7 @@ Deltakere som er blitt invitert til en oppfølging, får et varsel.
 
 * Hvis du først godtar en invitasjon og deretter sletter oppfølgingen fra dagboken, regnes det som at du avslår den. Oppfølgingen forsvinner da fra dagboken, og navnet ditt merkes med et rødt kryss i deltakerlisten.
 
-* Hvis du godtar en invitasjon og deretter åpner dialogboksen **Oppfølging**, kan du ikke endre annen informasjon om oppfølgingen enn det som står i feltene **Prioritet**, **Utført** og **Alarm**. Andre endringer kan bare gjøres av den som har sendt invitasjonen. Du kan ikke legge til deltakere. Derfor er **Legg til**-knappen i fanen **Deltakere** deaktivert.
+* Hvis du godtar en invitasjon og deretter åpner dialogboksen **Oppfølging**, kan du ikke endre annen informasjon om oppfølgingen enn det som står i feltene **Prioritet**, **Utført** og **Alarm**. Når eieren merker oppfølgingen som utført, blir den også utført for deg automatisk. Andre endringer kan bare gjøres av den som har sendt invitasjonen. Du kan ikke legge til deltakere. Derfor er **Legg til**-knappen i fanen **Deltakere** deaktivert.
 
 * Hvis du tilordner en oppfølging til en annen bruker (endrer eier), og mottakeren avslår den, blir oppfølgingen tildelt deg igjen.
 

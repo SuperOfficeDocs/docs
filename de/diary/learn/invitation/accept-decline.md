@@ -5,8 +5,8 @@ sidebarTitle: "Eingeladene Folgeaufgaben"
 description: Folgeaufgaben anzeigen, zu denen Sie eingeladen sind; Einladungen annehmen oder ablehnen
 keywords: ['Kalender', 'Folgeaufgabe', 'Einladung', 'Teilnehmer', 'eingeladen', 'annehmen', 'ablehnen']
 author: Bergfrid Dias
-date: 02.11.2025
-so_version: 10.5.2
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
@@ -35,7 +35,7 @@ Teilnehmer, die zu einer Folgeaufgabe eingeladen sind, werden eine Benachrichtig
 
 * Wenn Sie eine Einladung annehmen und anschließend die Folgeaufgabe aus dem Kalender löschen, wird dies als Ablehnung angesehen. Die Folgeaufgabe wird aus dem Kalender entfernt und Ihr Name wird mit einem roten Kreuz in der Teilnehmerliste markiert.
 
-* Wenn Sie eine Einladung annehmen und anschließend das Dialogfeld **Folgeaufgabe** öffnen, können Sie ausschließlich die Felder **Priorität**, **Abgeschlossen** und **Alarm** der Folgeaufgabe bearbeiten. Alle anderen Änderungen können nur von der Person vorgenommen werden, die die Einladung gesendet hat. Sie können nicht Teilnehmer hinzufügen. Daher ist die Schaltfläche **Hinzufügen** auf der Registerkarte **Teilnehmer** deaktiviert.
+* Wenn Sie eine Einladung annehmen und anschließend das Dialogfeld **Folgeaufgabe** öffnen, können Sie ausschließlich die Felder **Priorität**, **Abgeschlossen** und **Alarm** der Folgeaufgabe bearbeiten. Wenn der Eigentümer die Folgeaufgabe als abgeschlossen markiert, wird sie automatisch auch für Sie abgeschlossen. Alle anderen Änderungen können nur von der Person vorgenommen werden, die die Einladung gesendet hat. Sie können nicht Teilnehmer hinzufügen. Daher ist die Schaltfläche **Hinzufügen** auf der Registerkarte **Teilnehmer** deaktiviert.
 
 * Wenn Sie einem anderen Benutzer eine Folgeaufgabe zuweisen (Eigentümer ändern) und der Empfänger diese ablehnt, wird die Folgeaufgabe erneut Ihnen zugewiesen.
 

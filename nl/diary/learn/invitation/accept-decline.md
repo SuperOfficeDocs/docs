@@ -5,8 +5,8 @@ sidebarTitle: "Uitgenodigde vervolgactiviteiten"
 description: Vervolgactiviteiten weergeven waarvoor u bent uitgenodigd
 keywords: ['agenda', 'vervolgactiviteit', 'uitnodiging']
 author: Bergfrid Dias
-date: 02.21.2025
-so_version: 10.5.2
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
@@ -35,7 +35,7 @@ Deelnemers die worden uitgenodigd voor een vervolgactiviteit ontvangen een meldi
 
 * Als u een uitnodiging eerst accepteert en vervolgens de vervolgactiviteit uit de agenda verwijdert, wordt de uitnodiging verwerkt alsof u deze hebt geweigerd. De vervolgactiviteit verdwijnt uit de Agenda en uw naam wordt gemarkeerd met een rood kruis in de deelnemerslijst.
 
-* Als u een uitnodiging accepteert en vervolgens het dialoogvenster **Vervolgactiviteit** opent, kunt u geen informatie over vervolgactiviteiten bewerken behalve voor de velden **Prioriteit**, **Voltooid** en **Alarm**. Andere wijzigingen kunnen alleen worden aangebracht door de persoon die de uitnodiging heeft verzonden. U kunt niet deelnemers toevoegen, dus de knop **Toevoegen** op het tabblad **Deelnemers**is uitgeschakeld.
+* Als u een uitnodiging accepteert en vervolgens het dialoogvenster **Vervolgactiviteit** opent, kunt u geen informatie over vervolgactiviteiten bewerken behalve voor de velden **Prioriteit**, **Voltooid** en **Alarm**. Wanneer de eigenaar de vervolgactiviteit als voltooid markeert, wordt deze automatisch ook voor u voltooid. Andere wijzigingen kunnen alleen worden aangebracht door de persoon die de uitnodiging heeft verzonden. U kunt niet deelnemers toevoegen, dus de knop **Toevoegen** op het tabblad **Deelnemers**is uitgeschakeld.
 
 * Als u een vervolgactiviteit toewijst aan een andere gebruiker (eigenaar wijzigen) en de ontvanger deze weigert, wordt de vervolgactiviteit opnieuw aan u toegewezen.
 

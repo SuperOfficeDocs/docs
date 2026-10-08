@@ -2,10 +2,10 @@
 uid: help-en-follow-up-edit
 title: Edit follow-up
 description: How to open, edit, or delete a follow-up; Change the end time for a follow-up in the Diary; Edit or delete invitation; Edit repeating follow-up
-keywords: ['update follow-up', 'extend meeting', 'shorten meeting', 'change only this instance', 'delete follow-up', 'cancel meeting', 'diary', 'appointment', 'meeting', 'task', 'to-do', 'call', 'phone', 'invitation']
+keywords: ['update follow-up', 'extend meeting', 'shorten meeting', 'change only this instance', 'delete follow-up', 'cancel meeting', 'diary', 'appointment', 'meeting', 'task', 'to-do', 'call', 'phone', 'invitation', 'externally owned follow-up', 'delete synchronized follow-up']
 author: digitaldiina
-date: 03.27.2026
-so_version: 11.11
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
@@ -38,7 +38,7 @@ If you edit the time, date, or location of a follow-up - or delete an invitation
 
     <NoteRepetition />
 
-    **Using Synchronizer:** If the meeting originates in Outlook or Gmail and is synced to SuperOffice via Synchronizer, most fields are read-only. You can edit only these SuperOffice-specific fields: **Alarm**, **Type**, **Company**, **Busy/Free**, **Sale**, **Project**, **Internal notes**, **Priority**, and **Completed**. Everything else stays read-only to avoid changes being overwritten during the next sync.
+    **Using Synchronizer:** If the meeting originates in Outlook or Gmail and is synced to SuperOffice via Synchronizer, most fields are read-only. You can edit only these SuperOffice-specific fields: **Alarm**, **Type**, **Company**, **Busy/Free**, **Sale**, **Project**, **Internal notes**, **Priority**, and **Completed**. Everything else stays read-only to avoid changes being overwritten during the next sync. Users with the functional right **Delete externally owned follow-ups** can delete these follow-ups. Learn more in [Delete follow-up using the Diary](#delete).
 
 3. Click **Save**.
 
@@ -91,7 +91,10 @@ If you change the start time for a single meeting, the rule is not affected. The
 
 You can delete meetings created in Outlook or Gmail in SuperOffice once they are more than 7 days old.
 
+Users with the [functional right][7] **Delete externally owned follow-ups**, typically administrators, can delete follow-ups synchronized from an external calendar, for example orphaned, duplicate, or obsolete ones, with the standard **Delete** action. The deletion is logged. The right does not allow editing, so these follow-ups remain read-only. The external calendar remains the source of truth: if the original item still exists and is within the synchronization scope, the follow-up is recreated at the next synchronization. This works for all supported external calendar systems.
+
 <TipDeletion />
 
 [3]: ./create-follow-up#fields
+[7]: /en/admin/user-management/role/functional-rights
 [img1]: /media/loc/en/diary/change-repeating-fo.png

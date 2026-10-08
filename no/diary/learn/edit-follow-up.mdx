@@ -2,10 +2,10 @@
 uid: help-no-follow-up-edit
 title: Redigere oppfølging
 description: Hvordan åpne, redigere eller slette en oppfølging; endre sluttidspunktet for en oppfølging i dagboken; redigere eller slette invitasjon; redigere repeterende oppfølging.
-keywords: ['redigere oppfølging', 'oppdatere oppfølging', 'forlenge møte', 'forkorte møte', 'endre kun denne forekomsten', 'slette oppfølging', 'avlyse møte', 'dagbok', 'oppfølging', 'avtale', 'møte', 'oppgave', 'gjøremål', 'samtale', 'telefon', 'invitasjon', 'gjenta']
+keywords: ['redigere oppfølging', 'oppdatere oppfølging', 'forlenge møte', 'forkorte møte', 'endre kun denne forekomsten', 'slette oppfølging', 'avlyse møte', 'dagbok', 'oppfølging', 'avtale', 'møte', 'oppgave', 'gjøremål', 'samtale', 'telefon', 'invitasjon', 'gjenta', 'eksternt eid oppfølging', 'slette synkronisert oppfølging']
 author: digitaldiina
-date: 03.27.2026
-so_version: 11.11
+date: 10.13.2026
+so_version: 12.5
 content_type: howto
 license: salesessentials, serviceessentials, marketingessentials
 tier: starter
@@ -38,7 +38,7 @@ Hvis du redigerer tid, dato eller sted for en oppfølging - eller sletter en inv
 
     <NoteRepetition />
 
-    **Bruker Synchronizer:** Hvis møtet er opprettet i Outlook eller Gmail og synkronisert til SuperOffice via Synchronizer, er de fleste felt skrivebeskyttet. Du kan bare redigere disse SuperOffice-spesifikke feltene: **Alarm**, **Type**, **Firma**, **Opptatt/Fri**, **Salg**, **Prosjekt**, **Interne notater**, **Prioritet** og **Utført**. Alt annet forblir skrivebeskyttet for å unngå at endringer overskrives under neste synkronisering.
+    **Bruker Synchronizer:** Hvis møtet er opprettet i Outlook eller Gmail og synkronisert til SuperOffice via Synchronizer, er de fleste felt skrivebeskyttet. Du kan bare redigere disse SuperOffice-spesifikke feltene: **Alarm**, **Type**, **Firma**, **Opptatt/Fri**, **Salg**, **Prosjekt**, **Interne notater**, **Prioritet** og **Utført**. Alt annet forblir skrivebeskyttet for å unngå at endringer overskrives under neste synkronisering. Brukere med den funksjonelle rettigheten **Delete externally owned follow-ups** kan slette disse oppfølgingene. Les mer under [Slette oppfølging via dagboken](#delete).
 
 3. Klikk på **Lagre**.
 
@@ -87,7 +87,10 @@ Hvis du endrer starttidspunktet for ett møte, påvirkes ikke regelen. Møtet be
 
 Du kan slette møter opprettet i Outlook eller Gmail i SuperOffice når de er mer enn 7 dager gamle.
 
+Brukere med den [funksjonelle rettigheten][7] **Delete externally owned follow-ups**, vanligvis administratorer, kan slette oppfølginger som er synkronisert fra en ekstern kalender, for eksempel foreldreløse, doble eller utdaterte oppfølginger, med standardhandlingen **Slett**. Slettingen logges. Rettigheten gir ikke tilgang til å redigere, så disse oppfølgingene forblir skrivebeskyttet. Den eksterne kalenderen er fortsatt kilden som gjelder: Hvis det opprinnelige elementet fortsatt finnes og ligger innenfor synkroniseringsomfanget, opprettes oppfølgingen på nytt ved neste synkronisering. Dette fungerer for alle støttede eksterne kalendersystemer.
+
 <TipDeletion />
 
 [3]: ./create-follow-up#fields
+[7]: /no/admin/user-management/role/functional-rights
 [img1]: ../../../media/loc/en/diary/change-repeating-fo.png
